@@ -1,0 +1,1680 @@
+[
+  {
+    "bankVersion": 1,
+    "stored": {
+      "version": 1,
+      "profile": {
+        "name": "Oyuncu",
+        "avatar": 0,
+        "reduceMotion": false,
+        "theme": "system"
+      },
+      "games": [
+        {
+          "id": "quiz-frozen-v1-baseline",
+          "bankVersion": 1,
+          "mode": "mixed",
+          "questionIds": [
+            "quran-001",
+            "quran-002",
+            "quran-003",
+            "quran-004",
+            "quran-005",
+            "prophets-001",
+            "prophets-002",
+            "prophets-003",
+            "prophets-004",
+            "prophets-005"
+          ],
+          "startedAt": 1800000000000,
+          "completedAt": 1800000010000,
+          "answers": [
+            {
+              "questionId": "quran-001",
+              "option": 1,
+              "at": 1800000001000
+            },
+            {
+              "questionId": "quran-002",
+              "option": 2,
+              "at": 1800000002000
+            },
+            {
+              "questionId": "quran-003",
+              "option": 3,
+              "at": 1800000003000
+            },
+            {
+              "questionId": "quran-004",
+              "option": 0,
+              "at": 1800000004000
+            },
+            {
+              "questionId": "quran-005",
+              "option": 1,
+              "at": 1800000005000
+            },
+            {
+              "questionId": "prophets-001",
+              "option": 2,
+              "at": 1800000006000
+            },
+            {
+              "questionId": "prophets-002",
+              "option": 1,
+              "at": 1800000007000
+            },
+            {
+              "questionId": "prophets-003",
+              "option": 0,
+              "at": 1800000008000
+            },
+            {
+              "questionId": "prophets-004",
+              "option": 2,
+              "at": 1800000009000
+            },
+            {
+              "questionId": "prophets-005",
+              "option": 3,
+              "at": 1800000010000
+            }
+          ]
+        }
+      ]
+    },
+    "views": [
+      {
+        "id": "quran-001",
+        "category": "quran",
+        "text": "Kur’an’da kaç sure vardır?",
+        "options": ["30", "114", "99", "7"],
+        "correct": 1,
+        "explanation": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın tertibi, sûre ve cüz yapısı"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "quran-002",
+        "category": "quran",
+        "text": "Mushaf sıralamasında ilk sure hangisidir?",
+        "options": ["Nâs", "İhlâs", "Fâtiha", "Kevser"],
+        "correct": 2,
+        "explanation": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın tertibi, sûre ve cüz yapısı"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "quran-003",
+        "category": "quran",
+        "text": "Kur’an kaç cüze ayrılmıştır?",
+        "options": ["20", "40", "114", "30"],
+        "correct": 3,
+        "explanation": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın tertibi, sûre ve cüz yapısı"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "quran-004",
+        "category": "quran",
+        "text": "Mushaf sıralamasında son sure hangisidir?",
+        "options": ["Nâs", "Bakara", "Fâtiha", "Yâsîn"],
+        "correct": 0,
+        "explanation": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın tertibi, sûre ve cüz yapısı"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "quran-005",
+        "category": "quran",
+        "text": "Kur’an’da ayetlerden oluşan bölümlere ne denir?",
+        "options": ["Cilt", "Sure", "Sayfa", "Dizin"],
+        "correct": 1,
+        "explanation": "Ayetlerin bir araya geldiği bağımsız bölümlere sure denir.",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın tertibi, sûre ve cüz yapısı"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "prophets-001",
+        "category": "prophets",
+        "text": "Hz. Muhammed hangi şehirde doğmuştur?",
+        "options": ["Medine", "Kudüs", "Mekke", "Şam"],
+        "correct": 2,
+        "explanation": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "Doğumu, çocukluğu ve gençliği"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "prophets-002",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in annesinin adı nedir?",
+        "options": ["Âmine", "Havvâ", "Meryem", "Hâcer"],
+        "correct": 0,
+        "explanation": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "Ailesi ve doğumu"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "prophets-003",
+        "category": "prophets",
+        "text": "Tufan ve gemi kıssasıyla anılan peygamber kimdir?",
+        "options": ["Hz. Yûsuf", "Hz. Dâvûd", "Hz. Süleyman", "Hz. Nûh"],
+        "correct": 3,
+        "explanation": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Nûh",
+          "url": "https://islamansiklopedisi.org.tr/nuh",
+          "locator": "Kur’an’da Nûh kıssası"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "prophets-004",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in hayatını konu alan alana ne denir?",
+        "options": ["Coğrafya", "Siyer", "Hat sanatı", "Astronomi"],
+        "correct": 1,
+        "explanation": "Siyer, Hz. Muhammed’in hayatını ele alan ilim dalıdır.",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Siyer ve Megāzî",
+          "url": "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+          "locator": "Terimin tanımı"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      },
+      {
+        "id": "prophets-005",
+        "category": "prophets",
+        "text": "İlk vahyin geldiği mağaranın adı nedir?",
+        "options": ["Sevr", "Ashâb-ı Kehf", "Hira", "İnsuyu"],
+        "correct": 2,
+        "explanation": "İlk vahyin gelişi, Mekke yakınlarındaki Hira mağarasıyla ilişkilidir.",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Hira",
+          "url": "https://islamansiklopedisi.org.tr/hira",
+          "locator": "İlk vahiy"
+        },
+        "difficulty": "easy",
+        "version": 1,
+        "reviewStatus": "draft",
+        "updatedAt": "2026-10-18"
+      }
+    ],
+    "stats": {
+      "correct": 6,
+      "wrong": 4,
+      "score": 600,
+      "seconds": 10
+    },
+    "progress": {
+      "xp": 60,
+      "level": 1,
+      "levelXp": 60,
+      "nextLevelXp": 190,
+      "title": "Yeni yolcu",
+      "best": 600,
+      "badges": [
+        {
+          "id": "first",
+          "title": "İlk adım",
+          "description": "İlk yarışmanı tamamla.",
+          "earned": true,
+          "symbol": "flag"
+        },
+        {
+          "id": "five",
+          "title": "Bilgi ışığı",
+          "description": "Toplam 5 doğru cevaba ulaş.",
+          "earned": true,
+          "symbol": "check-circle"
+        },
+        {
+          "id": "perfect",
+          "title": "Kusursuz tur",
+          "description": "Bir yarışmada 10 soruyu da doğru yanıtla.",
+          "earned": false,
+          "symbol": "star"
+        },
+        {
+          "id": "explorer",
+          "title": "Meraklı kâşif",
+          "description": "4 farklı kategoride odaklı tur tamamla.",
+          "earned": false,
+          "symbol": "compass"
+        }
+      ],
+      "correct": 6
+    }
+  },
+  {
+    "bankVersion": 13,
+    "stored": {
+      "version": 1,
+      "profile": {
+        "name": "Oyuncu",
+        "avatar": 0,
+        "reduceMotion": false,
+        "theme": "system"
+      },
+      "games": [
+        {
+          "id": "quiz-frozen-v13-baseline",
+          "bankVersion": 13,
+          "mode": "mixed",
+          "questionIds": [
+            "quran-001",
+            "quran-002",
+            "quran-003",
+            "quran-004",
+            "quran-005",
+            "prophets-001",
+            "prophets-002",
+            "prophets-003",
+            "prophets-004",
+            "prophets-005"
+          ],
+          "startedAt": 1800000000000,
+          "completedAt": 1800000010000,
+          "answers": [
+            {
+              "questionId": "quran-001",
+              "option": 2,
+              "at": 1800000001000
+            },
+            {
+              "questionId": "quran-002",
+              "option": 1,
+              "at": 1800000002000
+            },
+            {
+              "questionId": "quran-003",
+              "option": 0,
+              "at": 1800000003000
+            },
+            {
+              "questionId": "quran-004",
+              "option": 3,
+              "at": 1800000004000
+            },
+            {
+              "questionId": "quran-005",
+              "option": 2,
+              "at": 1800000005000
+            },
+            {
+              "questionId": "prophets-001",
+              "option": 1,
+              "at": 1800000006000
+            },
+            {
+              "questionId": "prophets-002",
+              "option": 0,
+              "at": 1800000007000
+            },
+            {
+              "questionId": "prophets-003",
+              "option": 1,
+              "at": 1800000008000
+            },
+            {
+              "questionId": "prophets-004",
+              "option": 3,
+              "at": 1800000009000
+            },
+            {
+              "questionId": "prophets-005",
+              "option": 2,
+              "at": 1800000010000
+            }
+          ],
+          "optionOrders": {
+            "quran-001": ["o4", "o3", "o2", "o1"],
+            "quran-002": ["o4", "o3", "o2", "o1"],
+            "quran-003": ["o4", "o3", "o2", "o1"],
+            "quran-004": ["o4", "o3", "o2", "o1"],
+            "quran-005": ["o4", "o3", "o2", "o1"],
+            "prophets-001": ["o4", "o3", "o2", "o1"],
+            "prophets-002": ["o4", "o3", "o2", "o1"],
+            "prophets-003": ["o4", "o3", "o2", "o1"],
+            "prophets-004": ["o4", "o3", "o2", "o1"],
+            "prophets-005": ["o4", "o3", "o2", "o1"]
+          }
+        }
+      ]
+    },
+    "views": [
+      {
+        "id": "quran-001",
+        "category": "quran",
+        "text": "Kur’an’da kaç sure vardır?",
+        "options": ["113", "99", "114", "30"],
+        "correct": 2,
+        "explanation": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın yapısı, 114 sure bilgisi",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-002",
+        "category": "quran",
+        "text": "Mushaf sıralamasında ilk sure hangisidir?",
+        "options": ["Kevser", "Fâtiha", "İhlâs", "Nâs"],
+        "correct": 1,
+        "explanation": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Fâtiha ile başlaması",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-003",
+        "category": "quran",
+        "text": "Kur’an kaç cüze ayrılmıştır?",
+        "options": ["30", "114", "60", "20"],
+        "correct": 0,
+        "explanation": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın otuz cüze ayrılması",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-004",
+        "category": "quran",
+        "text": "Mushaf sıralamasında son sure hangisidir?",
+        "options": ["Yâsîn", "Fâtiha", "Bakara", "Nâs"],
+        "correct": 3,
+        "explanation": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Nâs ile sona ermesi",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-005",
+        "category": "quran",
+        "text": "Kur’an’da ayetlerin oluşturduğu bağımsız ve adlandırılmış her bölüme ne denir?",
+        "options": ["Hizip", "Ayet", "Sure", "Cüz"],
+        "correct": 2,
+        "explanation": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Ayet ve sure tanımları",
+          "publisher": "TÜBİTAK",
+          "supports": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-001",
+        "category": "prophets",
+        "text": "Hz. Muhammed hangi şehirde doğmuştur?",
+        "options": ["Şam", "Mekke", "Kudüs", "Medine"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Mekke’de doğumu",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-002",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in annesinin adı nedir?",
+        "options": ["Fâtıma", "Halîme", "Hatice", "Âmine"],
+        "correct": 3,
+        "explanation": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Âmine bint Vehb",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-003",
+        "category": "prophets",
+        "text": "Kur’an’da tufan sırasında gemi yapması anlatılan peygamber kimdir?",
+        "options": ["Hz. Nûh", "Hz. Süleyman", "Hz. Dâvûd", "Hz. Yûsuf"],
+        "correct": 0,
+        "explanation": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Nûh",
+          "url": "https://islamansiklopedisi.org.tr/nuh",
+          "locator": "Kur’an’daki Nûh anlatısı; Hûd 11/36–39 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-004",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in hayatını konu alan alana ne denir?",
+        "options": ["Kelâm", "Fıkıh", "Siyer", "Tefsir"],
+        "correct": 2,
+        "explanation": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Siyer ve Megāzî",
+          "url": "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+          "locator": "Madde tanımı ve siyer teriminin kapsamı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-005",
+        "category": "prophets",
+        "text": "Hz. Muhammed’e ilk vahyin geldiği yer hangisidir?",
+        "options": ["Akabe", "Hira mağarası", "Kubâ", "Sevr mağarası"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Hira",
+          "url": "https://islamansiklopedisi.org.tr/hira",
+          "locator": "Hira’da ilk vahiy; Alak 96/1–5 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      }
+    ],
+    "stats": {
+      "correct": 6,
+      "wrong": 4,
+      "score": 600,
+      "seconds": 10
+    },
+    "progress": {
+      "xp": 60,
+      "level": 1,
+      "levelXp": 60,
+      "nextLevelXp": 190,
+      "title": "Yeni yolcu",
+      "best": 600,
+      "badges": [
+        {
+          "id": "first",
+          "title": "İlk adım",
+          "description": "İlk yarışmanı tamamla.",
+          "earned": true,
+          "symbol": "flag"
+        },
+        {
+          "id": "five",
+          "title": "Bilgi ışığı",
+          "description": "Toplam 5 doğru cevaba ulaş.",
+          "earned": true,
+          "symbol": "check-circle"
+        },
+        {
+          "id": "perfect",
+          "title": "Kusursuz tur",
+          "description": "Bir yarışmada 10 soruyu da doğru yanıtla.",
+          "earned": false,
+          "symbol": "star"
+        },
+        {
+          "id": "explorer",
+          "title": "Meraklı kâşif",
+          "description": "4 farklı kategoride odaklı tur tamamla.",
+          "earned": false,
+          "symbol": "compass"
+        }
+      ],
+      "correct": 6
+    }
+  },
+  {
+    "bankVersion": 31,
+    "stored": {
+      "version": 1,
+      "profile": {
+        "name": "Oyuncu",
+        "avatar": 0,
+        "reduceMotion": false,
+        "theme": "system"
+      },
+      "games": [
+        {
+          "id": "quiz-frozen-v31-baseline",
+          "bankVersion": 31,
+          "mode": "mixed",
+          "questionIds": [
+            "quran-001",
+            "quran-002",
+            "quran-003",
+            "quran-004",
+            "quran-005",
+            "prophets-001",
+            "prophets-002",
+            "prophets-003",
+            "prophets-004",
+            "prophets-005"
+          ],
+          "startedAt": 1800000000000,
+          "completedAt": 1800000010000,
+          "answers": [
+            {
+              "questionId": "quran-001",
+              "option": 2,
+              "at": 1800000001000
+            },
+            {
+              "questionId": "quran-002",
+              "option": 1,
+              "at": 1800000002000
+            },
+            {
+              "questionId": "quran-003",
+              "option": 0,
+              "at": 1800000003000
+            },
+            {
+              "questionId": "quran-004",
+              "option": 3,
+              "at": 1800000004000
+            },
+            {
+              "questionId": "quran-005",
+              "option": 2,
+              "at": 1800000005000
+            },
+            {
+              "questionId": "prophets-001",
+              "option": 1,
+              "at": 1800000006000
+            },
+            {
+              "questionId": "prophets-002",
+              "option": 0,
+              "at": 1800000007000
+            },
+            {
+              "questionId": "prophets-003",
+              "option": 1,
+              "at": 1800000008000
+            },
+            {
+              "questionId": "prophets-004",
+              "option": 3,
+              "at": 1800000009000
+            },
+            {
+              "questionId": "prophets-005",
+              "option": 2,
+              "at": 1800000010000
+            }
+          ],
+          "optionOrders": {
+            "quran-001": ["o4", "o3", "o2", "o1"],
+            "quran-002": ["o4", "o3", "o2", "o1"],
+            "quran-003": ["o4", "o3", "o2", "o1"],
+            "quran-004": ["o4", "o3", "o2", "o1"],
+            "quran-005": ["o4", "o3", "o2", "o1"],
+            "prophets-001": ["o4", "o3", "o2", "o1"],
+            "prophets-002": ["o4", "o3", "o2", "o1"],
+            "prophets-003": ["o4", "o3", "o2", "o1"],
+            "prophets-004": ["o4", "o3", "o2", "o1"],
+            "prophets-005": ["o4", "o3", "o2", "o1"]
+          }
+        }
+      ]
+    },
+    "views": [
+      {
+        "id": "quran-001",
+        "category": "quran",
+        "text": "Kur’an’da kaç sure vardır?",
+        "options": ["113", "99", "114", "30"],
+        "correct": 2,
+        "explanation": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın yapısı, 114 sure bilgisi",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-002",
+        "category": "quran",
+        "text": "Mushaf sıralamasında ilk sure hangisidir?",
+        "options": ["Kevser", "Fâtiha", "İhlâs", "Nâs"],
+        "correct": 1,
+        "explanation": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Fâtiha ile başlaması",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-003",
+        "category": "quran",
+        "text": "Kur’an kaç cüze ayrılmıştır?",
+        "options": ["30", "114", "60", "20"],
+        "correct": 0,
+        "explanation": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın otuz cüze ayrılması",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-004",
+        "category": "quran",
+        "text": "Mushaf sıralamasında son sure hangisidir?",
+        "options": ["Yâsîn", "Fâtiha", "Bakara", "Nâs"],
+        "correct": 3,
+        "explanation": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Nâs ile sona ermesi",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-005",
+        "category": "quran",
+        "text": "Kur’an’da ayetlerin oluşturduğu bağımsız ve adlandırılmış her bölüme ne denir?",
+        "options": ["Hizip", "Ayet", "Sure", "Cüz"],
+        "correct": 2,
+        "explanation": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Ayet ve sure tanımları",
+          "publisher": "TÜBİTAK",
+          "supports": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-001",
+        "category": "prophets",
+        "text": "Hz. Muhammed hangi şehirde doğmuştur?",
+        "options": ["Şam", "Mekke", "Kudüs", "Medine"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Mekke’de doğumu",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-002",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in annesinin adı nedir?",
+        "options": ["Fâtıma", "Halîme", "Hatice", "Âmine"],
+        "correct": 3,
+        "explanation": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Âmine bint Vehb",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-003",
+        "category": "prophets",
+        "text": "Kur’an’da tufan sırasında gemi yapması anlatılan peygamber kimdir?",
+        "options": ["Hz. Nûh", "Hz. Süleyman", "Hz. Dâvûd", "Hz. Yûsuf"],
+        "correct": 0,
+        "explanation": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Nûh",
+          "url": "https://islamansiklopedisi.org.tr/nuh",
+          "locator": "Kur’an’daki Nûh anlatısı; Hûd 11/36–39 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-004",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in hayatını konu alan alana ne denir?",
+        "options": ["Kelâm", "Fıkıh", "Siyer", "Tefsir"],
+        "correct": 2,
+        "explanation": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Siyer ve Megāzî",
+          "url": "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+          "locator": "Madde tanımı ve siyer teriminin kapsamı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-005",
+        "category": "prophets",
+        "text": "Hz. Muhammed’e ilk vahyin geldiği yer hangisidir?",
+        "options": ["Akabe", "Hira mağarası", "Kubâ", "Sevr mağarası"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Hira",
+          "url": "https://islamansiklopedisi.org.tr/hira",
+          "locator": "Hira’da ilk vahiy; Alak 96/1–5 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      }
+    ],
+    "stats": {
+      "correct": 6,
+      "wrong": 4,
+      "score": 600,
+      "seconds": 10
+    },
+    "progress": {
+      "xp": 60,
+      "level": 1,
+      "levelXp": 60,
+      "nextLevelXp": 190,
+      "title": "Yeni yolcu",
+      "best": 600,
+      "badges": [
+        {
+          "id": "first",
+          "title": "İlk adım",
+          "description": "İlk yarışmanı tamamla.",
+          "earned": true,
+          "symbol": "flag"
+        },
+        {
+          "id": "five",
+          "title": "Bilgi ışığı",
+          "description": "Toplam 5 doğru cevaba ulaş.",
+          "earned": true,
+          "symbol": "check-circle"
+        },
+        {
+          "id": "perfect",
+          "title": "Kusursuz tur",
+          "description": "Bir yarışmada 10 soruyu da doğru yanıtla.",
+          "earned": false,
+          "symbol": "star"
+        },
+        {
+          "id": "explorer",
+          "title": "Meraklı kâşif",
+          "description": "4 farklı kategoride odaklı tur tamamla.",
+          "earned": false,
+          "symbol": "compass"
+        }
+      ],
+      "correct": 6
+    }
+  },
+  {
+    "bankVersion": 41,
+    "stored": {
+      "version": 1,
+      "profile": {
+        "name": "Oyuncu",
+        "avatar": 0,
+        "reduceMotion": false,
+        "theme": "system"
+      },
+      "games": [
+        {
+          "id": "quiz-frozen-v41-baseline",
+          "bankVersion": 41,
+          "mode": "mixed",
+          "questionIds": [
+            "quran-001",
+            "quran-002",
+            "quran-003",
+            "quran-004",
+            "quran-005",
+            "prophets-001",
+            "prophets-002",
+            "prophets-003",
+            "prophets-004",
+            "prophets-005"
+          ],
+          "startedAt": 1800000000000,
+          "completedAt": 1800000010000,
+          "answers": [
+            {
+              "questionId": "quran-001",
+              "option": 2,
+              "at": 1800000001000
+            },
+            {
+              "questionId": "quran-002",
+              "option": 1,
+              "at": 1800000002000
+            },
+            {
+              "questionId": "quran-003",
+              "option": 0,
+              "at": 1800000003000
+            },
+            {
+              "questionId": "quran-004",
+              "option": 3,
+              "at": 1800000004000
+            },
+            {
+              "questionId": "quran-005",
+              "option": 2,
+              "at": 1800000005000
+            },
+            {
+              "questionId": "prophets-001",
+              "option": 1,
+              "at": 1800000006000
+            },
+            {
+              "questionId": "prophets-002",
+              "option": 0,
+              "at": 1800000007000
+            },
+            {
+              "questionId": "prophets-003",
+              "option": 1,
+              "at": 1800000008000
+            },
+            {
+              "questionId": "prophets-004",
+              "option": 3,
+              "at": 1800000009000
+            },
+            {
+              "questionId": "prophets-005",
+              "option": 2,
+              "at": 1800000010000
+            }
+          ],
+          "optionOrders": {
+            "quran-001": ["o4", "o3", "o2", "o1"],
+            "quran-002": ["o4", "o3", "o2", "o1"],
+            "quran-003": ["o4", "o3", "o2", "o1"],
+            "quran-004": ["o4", "o3", "o2", "o1"],
+            "quran-005": ["o4", "o3", "o2", "o1"],
+            "prophets-001": ["o4", "o3", "o2", "o1"],
+            "prophets-002": ["o4", "o3", "o2", "o1"],
+            "prophets-003": ["o4", "o3", "o2", "o1"],
+            "prophets-004": ["o4", "o3", "o2", "o1"],
+            "prophets-005": ["o4", "o3", "o2", "o1"]
+          }
+        }
+      ]
+    },
+    "views": [
+      {
+        "id": "quran-001",
+        "category": "quran",
+        "text": "Kur’an’da kaç sure vardır?",
+        "options": ["113", "99", "114", "30"],
+        "correct": 2,
+        "explanation": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın yapısı, 114 sure bilgisi",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-002",
+        "category": "quran",
+        "text": "Mushaf sıralamasında ilk sure hangisidir?",
+        "options": ["Kevser", "Fâtiha", "İhlâs", "Nâs"],
+        "correct": 1,
+        "explanation": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Fâtiha ile başlaması",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-003",
+        "category": "quran",
+        "text": "Kur’an kaç cüze ayrılmıştır?",
+        "options": ["30", "114", "60", "20"],
+        "correct": 0,
+        "explanation": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın otuz cüze ayrılması",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 3,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-004",
+        "category": "quran",
+        "text": "Mushaf sıralamasında son sure hangisidir?",
+        "options": ["Yâsîn", "Fâtiha", "Bakara", "Nâs"],
+        "correct": 3,
+        "explanation": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Nâs ile sona ermesi",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-005",
+        "category": "quran",
+        "text": "Kur’an’da ayetlerin oluşturduğu bağımsız ve adlandırılmış her bölüme ne denir?",
+        "options": ["Hizip", "Ayet", "Sure", "Cüz"],
+        "correct": 2,
+        "explanation": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Ayet ve sure tanımları",
+          "publisher": "TÜBİTAK",
+          "supports": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-001",
+        "category": "prophets",
+        "text": "Hz. Muhammed hangi şehirde doğmuştur?",
+        "options": ["Şam", "Mekke", "Kudüs", "Medine"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Mekke’de doğumu",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-002",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in annesinin adı nedir?",
+        "options": ["Fâtıma", "Halîme", "Hatice", "Âmine"],
+        "correct": 3,
+        "explanation": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Âmine bint Vehb",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-003",
+        "category": "prophets",
+        "text": "Kur’an’da tufan sırasında gemi yapması anlatılan peygamber kimdir?",
+        "options": ["Hz. Nûh", "Hz. Süleyman", "Hz. Dâvûd", "Hz. Yûsuf"],
+        "correct": 0,
+        "explanation": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Nûh",
+          "url": "https://islamansiklopedisi.org.tr/nuh",
+          "locator": "Kur’an’daki Nûh anlatısı; Hûd 11/36–39 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-004",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in hayatını konu alan alana ne denir?",
+        "options": ["Kelâm", "Fıkıh", "Siyer", "Tefsir"],
+        "correct": 2,
+        "explanation": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Siyer ve Megāzî",
+          "url": "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+          "locator": "Madde tanımı ve siyer teriminin kapsamı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-005",
+        "category": "prophets",
+        "text": "Hz. Muhammed’e ilk vahyin geldiği yer hangisidir?",
+        "options": ["Akabe", "Hira mağarası", "Kubâ", "Sevr mağarası"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Hira",
+          "url": "https://islamansiklopedisi.org.tr/hira",
+          "locator": "Hira’da ilk vahiy; Alak 96/1–5 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      }
+    ],
+    "stats": {
+      "correct": 6,
+      "wrong": 4,
+      "score": 600,
+      "seconds": 10
+    },
+    "progress": {
+      "xp": 60,
+      "level": 1,
+      "levelXp": 60,
+      "nextLevelXp": 190,
+      "title": "Yeni yolcu",
+      "best": 600,
+      "badges": [
+        {
+          "id": "first",
+          "title": "İlk adım",
+          "description": "İlk yarışmanı tamamla.",
+          "earned": true,
+          "symbol": "flag"
+        },
+        {
+          "id": "five",
+          "title": "Bilgi ışığı",
+          "description": "Toplam 5 doğru cevaba ulaş.",
+          "earned": true,
+          "symbol": "check-circle"
+        },
+        {
+          "id": "perfect",
+          "title": "Kusursuz tur",
+          "description": "Bir yarışmada 10 soruyu da doğru yanıtla.",
+          "earned": false,
+          "symbol": "star"
+        },
+        {
+          "id": "explorer",
+          "title": "Meraklı kâşif",
+          "description": "4 farklı kategoride odaklı tur tamamla.",
+          "earned": false,
+          "symbol": "compass"
+        }
+      ],
+      "correct": 6
+    }
+  },
+  {
+    "bankVersion": 71,
+    "stored": {
+      "version": 1,
+      "profile": {
+        "name": "Oyuncu",
+        "avatar": 0,
+        "reduceMotion": false,
+        "theme": "system"
+      },
+      "games": [
+        {
+          "id": "quiz-frozen-v71-baseline",
+          "bankVersion": 71,
+          "mode": "mixed",
+          "questionIds": [
+            "quran-001",
+            "quran-002",
+            "quran-003",
+            "quran-004",
+            "quran-005",
+            "prophets-001",
+            "prophets-002",
+            "prophets-003",
+            "prophets-004",
+            "prophets-005"
+          ],
+          "startedAt": 1800000000000,
+          "completedAt": 1800000010000,
+          "answers": [
+            {
+              "questionId": "quran-001",
+              "option": 2,
+              "at": 1800000001000
+            },
+            {
+              "questionId": "quran-002",
+              "option": 1,
+              "at": 1800000002000
+            },
+            {
+              "questionId": "quran-003",
+              "option": 0,
+              "at": 1800000003000
+            },
+            {
+              "questionId": "quran-004",
+              "option": 3,
+              "at": 1800000004000
+            },
+            {
+              "questionId": "quran-005",
+              "option": 2,
+              "at": 1800000005000
+            },
+            {
+              "questionId": "prophets-001",
+              "option": 1,
+              "at": 1800000006000
+            },
+            {
+              "questionId": "prophets-002",
+              "option": 0,
+              "at": 1800000007000
+            },
+            {
+              "questionId": "prophets-003",
+              "option": 1,
+              "at": 1800000008000
+            },
+            {
+              "questionId": "prophets-004",
+              "option": 3,
+              "at": 1800000009000
+            },
+            {
+              "questionId": "prophets-005",
+              "option": 2,
+              "at": 1800000010000
+            }
+          ],
+          "optionOrders": {
+            "quran-001": ["o4", "o3", "o2", "o1"],
+            "quran-002": ["o4", "o3", "o2", "o1"],
+            "quran-003": ["o4", "o3", "o2", "o1"],
+            "quran-004": ["o4", "o3", "o2", "o1"],
+            "quran-005": ["o4", "o3", "o2", "o1"],
+            "prophets-001": ["o4", "o3", "o2", "o1"],
+            "prophets-002": ["o4", "o3", "o2", "o1"],
+            "prophets-003": ["o4", "o3", "o2", "o1"],
+            "prophets-004": ["o4", "o3", "o2", "o1"],
+            "prophets-005": ["o4", "o3", "o2", "o1"]
+          }
+        }
+      ]
+    },
+    "views": [
+      {
+        "id": "quran-001",
+        "category": "quran",
+        "text": "Kur’an’da kaç sure vardır?",
+        "options": ["113", "99", "114", "30"],
+        "correct": 2,
+        "explanation": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın yapısı, 114 sure bilgisi",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an-ı Kerim 114 sureden oluşur. Sureler farklı uzunluklarda bölümlerdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-002",
+        "category": "quran",
+        "text": "Mushaf sıralamasında ilk sure hangisidir?",
+        "options": ["Kevser", "Fâtiha", "İhlâs", "Nâs"],
+        "correct": 1,
+        "explanation": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Fâtiha ile başlaması",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf, Fâtiha suresiyle başlar. Burada sorulan, vahyin geliş sırası değil, kitaptaki sıralamadır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-003",
+        "category": "quran",
+        "text": "Kur’an kaç cüze ayrılmıştır?",
+        "options": ["30", "114", "60", "20"],
+        "correct": 0,
+        "explanation": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın otuz cüze ayrılması",
+          "publisher": "TÜBİTAK",
+          "supports": "Kur’an 30 cüze ayrılır. Cüz, okumayı bölümlere ayırmaya yardımcı olan bir birimdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 3,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-004",
+        "category": "quran",
+        "text": "Mushaf sıralamasında son sure hangisidir?",
+        "options": ["Yâsîn", "Fâtiha", "Bakara", "Nâs"],
+        "correct": 3,
+        "explanation": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Mushafın Nâs ile sona ermesi",
+          "publisher": "TÜBİTAK",
+          "supports": "Mushaf sıralamasında 114. ve son sure Nâs suresidir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "quran-005",
+        "category": "quran",
+        "text": "Kur’an’da ayetlerin oluşturduğu bağımsız ve adlandırılmış her bölüme ne denir?",
+        "options": ["Hizip", "Ayet", "Sure", "Cüz"],
+        "correct": 2,
+        "explanation": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TÜBİTAK Ansiklopedi · Kur’ân-ı Kerîm",
+          "url": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+          "locator": "Ayet ve sure tanımları",
+          "publisher": "TÜBİTAK",
+          "supports": "Sure, ayetlerin oluşturduğu bağımsız bölümdür. Cüz ise okuma düzenini kolaylaştıran ayrı bir bölümlemedir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-001",
+        "category": "prophets",
+        "text": "Hz. Muhammed hangi şehirde doğmuştur?",
+        "options": ["Şam", "Mekke", "Kudüs", "Medine"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Mekke’de doğumu",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed Mekke’de doğmuştur. Çocukluk ve gençlik yılları da bu şehirde geçmiştir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-002",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in annesinin adı nedir?",
+        "options": ["Fâtıma", "Halîme", "Hatice", "Âmine"],
+        "correct": 3,
+        "explanation": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Muhammed",
+          "url": "https://islamansiklopedisi.org.tr/muhammed",
+          "locator": "A) Nübüvvet Öncesi, Âmine bint Vehb",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’in annesi Âmine bint Vehb’dir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-003",
+        "category": "prophets",
+        "text": "Kur’an’da tufan sırasında gemi yapması anlatılan peygamber kimdir?",
+        "options": ["Hz. Nûh", "Hz. Süleyman", "Hz. Dâvûd", "Hz. Yûsuf"],
+        "correct": 0,
+        "explanation": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Nûh",
+          "url": "https://islamansiklopedisi.org.tr/nuh",
+          "locator": "Kur’an’daki Nûh anlatısı; Hûd 11/36–39 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Nûh, Kur’an’da tufan ve gemi kıssasıyla anlatılan peygamberdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-004",
+        "category": "prophets",
+        "text": "Hz. Muhammed’in hayatını konu alan alana ne denir?",
+        "options": ["Kelâm", "Fıkıh", "Siyer", "Tefsir"],
+        "correct": 2,
+        "explanation": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Siyer ve Megāzî",
+          "url": "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+          "locator": "Madde tanımı ve siyer teriminin kapsamı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Siyer, Hz. Muhammed’in hayatını ve tebliğ faaliyetlerini inceler. Kur’an ayetlerini açıklayan alan ise tefsirdir.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "prophets-005",
+        "category": "prophets",
+        "text": "Hz. Muhammed’e ilk vahyin geldiği yer hangisidir?",
+        "options": ["Akabe", "Hira mağarası", "Kubâ", "Sevr mağarası"],
+        "correct": 1,
+        "explanation": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+        "difficulty": "easy",
+        "source": {
+          "title": "TDV İslâm Ansiklopedisi · Hira",
+          "url": "https://islamansiklopedisi.org.tr/hira",
+          "locator": "Hira’da ilk vahiy; Alak 96/1–5 referansı",
+          "publisher": "TDV İslâm Araştırmaları Merkezi",
+          "supports": "Hz. Muhammed’e ilk vahiy Hira mağarasında gelmiştir. Kaynak, Alak suresinin ilk beş ayetinin gelişini bu mekânla birlikte anlatır.",
+          "checkedAt": "2026-10-18",
+          "checkStatus": "supported"
+        },
+        "version": 2,
+        "reviewStatus": "approved"
+      }
+    ],
+    "stats": {
+      "correct": 6,
+      "wrong": 4,
+      "score": 600,
+      "seconds": 10
+    },
+    "progress": {
+      "xp": 60,
+      "level": 1,
+      "levelXp": 60,
+      "nextLevelXp": 190,
+      "title": "Yeni yolcu",
+      "best": 600,
+      "badges": [
+        {
+          "id": "first",
+          "title": "İlk adım",
+          "description": "İlk yarışmanı tamamla.",
+          "earned": true,
+          "symbol": "flag"
+        },
+        {
+          "id": "five",
+          "title": "Bilgi ışığı",
+          "description": "Toplam 5 doğru cevaba ulaş.",
+          "earned": true,
+          "symbol": "check-circle"
+        },
+        {
+          "id": "perfect",
+          "title": "Kusursuz tur",
+          "description": "Bir yarışmada 10 soruyu da doğru yanıtla.",
+          "earned": false,
+          "symbol": "star"
+        },
+        {
+          "id": "explorer",
+          "title": "Meraklı kâşif",
+          "description": "4 farklı kategoride odaklı tur tamamla.",
+          "earned": false,
+          "symbol": "compass"
+        }
+      ],
+      "correct": 6
+    }
+  }
+]

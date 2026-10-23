@@ -1,0 +1,46 @@
+name: Ozel donem kaynak ve tekrar denetimi
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/audit-special-collections.ts"
+      - "scripts/audit-seasonal-candidates.ts"
+      - "scripts/audit-seasonal-reviewed.ts"
+      - "scripts/audit-kurban-eid-v2.ts"
+      - "src/content/questions/kurban-eid-drafts-v2.ts"
+      - "src/content/questions/kurban-eid-editorial-v2.ts"
+      - "tests/kurban-eid-editorial-v2.test.ts"
+      - "src/content/questions/seasonal-questions-drafts-v1.ts"
+      - "src/content/questions/seasonal-review-catalog-v1.ts"
+      - "tests/seasonal-content.test.ts"
+      - "tests/special-collections-readiness.test.ts"
+      - "src/content/questions/learning-topics-v1.ts"
+      - ".github/workflows/special-collections-audit.yml"
+permissions:
+  contents: read
+jobs:
+  special-audit:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable
+      - run: corepack pnpm install --frozen-lockfile
+      - name: Generate source review checklist and independent-10 feasibility
+        run: pnpm exec tsx scripts/audit-special-collections.ts
+      - name: Discover seasonally relevant questions (triage only)
+        run: pnpm exec tsx scripts/audit-seasonal-candidates.ts
+      - name: Curate editorial review checklist (never publishes)
+        run: pnpm exec tsx scripts/audit-seasonal-reviewed.ts
+      - name: Build Eid al-Adha editorial review packet (locked)
+        run: pnpm exec tsx scripts/audit-kurban-eid-v2.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: special-collections-readiness
+          path: artifacts/special-collections-audit/*.json
+          if-no-files-found: error

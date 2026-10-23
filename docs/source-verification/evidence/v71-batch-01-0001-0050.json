@@ -1,0 +1,1730 @@
+{
+  "bankVersion": 71,
+  "range": [
+    1,
+    50
+  ],
+  "count": 50,
+  "sourceClassificationCounts": {
+    "supported-by-read-source": 35,
+    "supported-by-indexed-excerpt-needs-direct-reading": 15
+  },
+  "limitations": [
+    "50 official-source matches were researched, but indexed excerpts do not mean the full original article was successfully fetched.",
+    "Every record includes exact question, correct answer and four options from v71; do not count search-only excerpts as full-passage verification.",
+    "The first 50 represent questions #1–50; the previous #1451–1500 evidence is a separate completed review.",
+    "The unreviewed middle 1,400 question IDs still require source reading.",
+    "Do not edit immutable past bank versions or change server content based on this snapshot."
+  ],
+  "entries": [
+    {
+      "position": 1,
+      "id": "quran-001",
+      "question": "Kur’an’da kaç sure vardır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "114",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "30"
+        },
+        {
+          "id": "o2",
+          "text": "114"
+        },
+        {
+          "id": "o3",
+          "text": "99"
+        },
+        {
+          "id": "o4",
+          "text": "113"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim"
+      ],
+      "externalOfficialSource": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+      "evidenceSummary": "TÜBİTAK: mushafın 114 sûreden oluştuğu açıkça belirtilir.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 2,
+      "id": "quran-002",
+      "question": "Mushaf sıralamasında ilk sure hangisidir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Fâtiha",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Nâs"
+        },
+        {
+          "id": "o2",
+          "text": "İhlâs"
+        },
+        {
+          "id": "o3",
+          "text": "Fâtiha"
+        },
+        {
+          "id": "o4",
+          "text": "Kevser"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim"
+      ],
+      "externalOfficialSource": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+      "evidenceSummary": "TÜBİTAK: mevcut mushaf tertibi Fâtiha ile başlar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 3,
+      "id": "quran-003",
+      "question": "Kur’an kaç cüze ayrılmıştır?",
+      "correctOptionId": "o4",
+      "correctAnswer": "30",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "20"
+        },
+        {
+          "id": "o2",
+          "text": "60"
+        },
+        {
+          "id": "o3",
+          "text": "114"
+        },
+        {
+          "id": "o4",
+          "text": "30"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+        "https://islamansiklopedisi.org.tr/mushaf"
+      ],
+      "externalOfficialSource": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+      "evidenceSummary": "TÜBİTAK: Kur'an otuz cüzden oluşur.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 4,
+      "id": "quran-004",
+      "question": "Mushaf sıralamasında son sure hangisidir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Nâs",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Nâs"
+        },
+        {
+          "id": "o2",
+          "text": "Bakara"
+        },
+        {
+          "id": "o3",
+          "text": "Fâtiha"
+        },
+        {
+          "id": "o4",
+          "text": "Yâsîn"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim"
+      ],
+      "externalOfficialSource": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+      "evidenceSummary": "TÜBİTAK: mevcut mushaf tertibi Nâs sûresiyle biter.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 5,
+      "id": "quran-005",
+      "question": "Kur’an’da ayetlerin oluşturduğu bağımsız ve adlandırılmış her bölüme ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Sure",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Cüz"
+        },
+        {
+          "id": "o2",
+          "text": "Sure"
+        },
+        {
+          "id": "o3",
+          "text": "Ayet"
+        },
+        {
+          "id": "o4",
+          "text": "Hizip"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim"
+      ],
+      "externalOfficialSource": "https://ansiklopedi.tubitak.gov.tr/ansiklopedi/kuran_i_kerim",
+      "evidenceSummary": "TÜBİTAK: sûreler Mushafın adlandırılan bölümleridir; Kur'ân 114 sûreden oluşur.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 6,
+      "id": "prophets-001",
+      "question": "Hz. Muhammed hangi şehirde doğmuştur?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Mekke",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Medine"
+        },
+        {
+          "id": "o2",
+          "text": "Kudüs"
+        },
+        {
+          "id": "o3",
+          "text": "Mekke"
+        },
+        {
+          "id": "o4",
+          "text": "Şam"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/muhammed"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/muhammed",
+      "evidenceSummary": "TDV Muhammed maddesi Hz. Peygamber'in doğumunu Mekke bağlamında anlatır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 7,
+      "id": "prophets-002",
+      "question": "Hz. Muhammed’in annesinin adı nedir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Âmine",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Âmine"
+        },
+        {
+          "id": "o2",
+          "text": "Hatice"
+        },
+        {
+          "id": "o3",
+          "text": "Halîme"
+        },
+        {
+          "id": "o4",
+          "text": "Fâtıma"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/muhammed"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/muhammed",
+      "evidenceSummary": "TDV Muhammed maddesi annesinin Âmine bint Vehb olduğunu belirtir.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 8,
+      "id": "prophets-003",
+      "question": "Kur’an’da tufan sırasında gemi yapması anlatılan peygamber kimdir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Hz. Nûh",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Yûsuf"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Dâvûd"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Süleyman"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Nûh"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/nuh"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/nuh",
+      "evidenceSummary": "TDV Nûh maddesi kavmine karşı inşa ettiği gemiyi Hûd 11/36–39 ile açıklar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 9,
+      "id": "prophets-004",
+      "question": "Hz. Muhammed’in hayatını konu alan alana ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Siyer",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tefsir"
+        },
+        {
+          "id": "o2",
+          "text": "Siyer"
+        },
+        {
+          "id": "o3",
+          "text": "Fıkıh"
+        },
+        {
+          "id": "o4",
+          "text": "Kelâm"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+        "https://islamansiklopedisi.org.tr/tefsir"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/siyer-ve-megazi",
+      "evidenceSummary": "TDV Siyer ve Megāzî maddesi siyerin Hz. Peygamber'in hayatını inceleyen ilim alanı olduğunu açıkça tanımlar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 10,
+      "id": "prophets-005",
+      "question": "Hz. Muhammed’e ilk vahyin geldiği yer hangisidir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Hira mağarası",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Sevr mağarası"
+        },
+        {
+          "id": "o2",
+          "text": "Kubâ"
+        },
+        {
+          "id": "o3",
+          "text": "Hira mağarası"
+        },
+        {
+          "id": "o4",
+          "text": "Akabe"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hira"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hira",
+      "evidenceSummary": "TDV Hira maddesi Hz. Muhammed'e ilk vahyin Hira mağarasında gelişini aktarır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 11,
+      "id": "history-001",
+      "question": "Hz. Muhammed’in Mekke’den Medine’ye göçüne ne denir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Hicret",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hicret"
+        },
+        {
+          "id": "o2",
+          "text": "Biat"
+        },
+        {
+          "id": "o3",
+          "text": "Muâhât"
+        },
+        {
+          "id": "o4",
+          "text": "Fetih"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hicret"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hicret",
+      "evidenceSummary": "TDV Hicret maddesi Mekke'den Medine'ye göçün hicret olarak adlandırıldığını belirtir.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 12,
+      "id": "history-002",
+      "question": "Mekke’den Medine’ye hicret miladi hangi yılda gerçekleşmiştir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "622",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "571"
+        },
+        {
+          "id": "o2",
+          "text": "610"
+        },
+        {
+          "id": "o3",
+          "text": "632"
+        },
+        {
+          "id": "o4",
+          "text": "622"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hicret"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hicret",
+      "evidenceSummary": "TDV Hicret maddesinde Mekke'den ayrılış ve Medine'ye girişin Eylül 622 tarihleri gösterilir.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 13,
+      "id": "history-003",
+      "question": "Mescid-i Nebevî hangi şehirdedir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Medine",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Mekke"
+        },
+        {
+          "id": "o2",
+          "text": "Medine"
+        },
+        {
+          "id": "o3",
+          "text": "Kudüs"
+        },
+        {
+          "id": "o4",
+          "text": "Bağdat"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mescid-i-nebevi"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+      "evidenceSummary": "TDV Mescid-i Nebevî maddesi mescidin Medine'de olduğunu tanımlar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 14,
+      "id": "history-004",
+      "question": "Hicret edenlere yardım eden Medineli Müslümanlar hangi adla anılır?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Ensar",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Muhacir"
+        },
+        {
+          "id": "o2",
+          "text": "Havari"
+        },
+        {
+          "id": "o3",
+          "text": "Ensar"
+        },
+        {
+          "id": "o4",
+          "text": "Kureyş"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ensar"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/ensar",
+      "evidenceSummary": "TDV Ensar maddesi Medineli Müslümanların muhacirlere yardım ettiği için ensar diye anıldığını açıklar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 15,
+      "id": "history-005",
+      "question": "Hicretten önce Medine’nin adı neydi?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Yesrib",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Yesrib"
+        },
+        {
+          "id": "o2",
+          "text": "Tâif"
+        },
+        {
+          "id": "o3",
+          "text": "Hayber"
+        },
+        {
+          "id": "o4",
+          "text": "Basra"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/medine"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/medine",
+      "evidenceSummary": "TDV Medine maddesi yerleşimin İslam öncesi adının Yesrib olduğunu kaydeder.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 16,
+      "id": "general-001",
+      "question": "Namaz vaktinin geldiğini duyuran özel çağrıya ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Ezan",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hutbe"
+        },
+        {
+          "id": "o2",
+          "text": "Ezan"
+        },
+        {
+          "id": "o3",
+          "text": "Kamet"
+        },
+        {
+          "id": "o4",
+          "text": "Vaaz"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ezan"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/ezan",
+      "evidenceSummary": "TDV Ezan maddesi ezanı namaz vakti geldiğini duyurmak için kullanılan çağrı olarak anlatır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 17,
+      "id": "general-002",
+      "question": "İslam’da bir ay boyunca tutulan farz oruç hangi hicri ayla ilişkilidir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Ramazan",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Muharrem"
+        },
+        {
+          "id": "o2",
+          "text": "Safer"
+        },
+        {
+          "id": "o3",
+          "text": "Recep"
+        },
+        {
+          "id": "o4",
+          "text": "Ramazan"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ramazan"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/ramazan",
+      "evidenceSummary": "TDV Ramazan maddesi Bakara 2/185'i açıklarken Ramazan orucunun farzlığını belirtir.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 18,
+      "id": "general-003",
+      "question": "Namazda yönelinen Kâbe hangi şehirdedir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Mekke",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Medine"
+        },
+        {
+          "id": "o2",
+          "text": "Kudüs"
+        },
+        {
+          "id": "o3",
+          "text": "Mekke"
+        },
+        {
+          "id": "o4",
+          "text": "Şam"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/kabe"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/kabe",
+      "evidenceSummary": "TDV Kâbe maddesi Kâbe'nin Mekke'deki yerini ve Harem-i şerif bağlantısını tanımlar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 19,
+      "id": "general-004",
+      "question": "Belirli şartlarda mal varlığından hak sahiplerine pay ayırmayı gerektiren mali ibadet hangisidir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Zekât",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Zekât"
+        },
+        {
+          "id": "o2",
+          "text": "Fidye"
+        },
+        {
+          "id": "o3",
+          "text": "Kefaret"
+        },
+        {
+          "id": "o4",
+          "text": "Karz"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/zekat"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/zekat",
+      "evidenceSummary": "TDV Zekât maddesi malın belirlenen şartlarda hak sahiplerine verilmesiyle ilgili malî ibadet hükmünü inceler.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 20,
+      "id": "general-005",
+      "question": "Namaza hazırlıkta belirli organları yıkayıp mesh ederek yapılan temizliğe ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Abdest",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tavaf"
+        },
+        {
+          "id": "o2",
+          "text": "Abdest"
+        },
+        {
+          "id": "o3",
+          "text": "İtikâf"
+        },
+        {
+          "id": "o4",
+          "text": "Kıraat"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/abdest"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/abdest",
+      "evidenceSummary": "TDV Abdest maddesi namaz öncesindeki yıkama ve mesh ile yapılan dinî temizliği açıklar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 21,
+      "id": "quran-006",
+      "question": "Kur’an ayetlerini açıklayıp yorumlamayı konu alan ilim hangisidir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Tefsir",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tefsir"
+        },
+        {
+          "id": "o2",
+          "text": "Siyer"
+        },
+        {
+          "id": "o3",
+          "text": "Fıkıh"
+        },
+        {
+          "id": "o4",
+          "text": "Kelâm"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tefsir",
+        "https://islamansiklopedisi.org.tr/siyer-ve-megazi"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/tefsir",
+      "evidenceSummary": "TDV Tefsir maddesi Kur'an'ı açıklama ve yorumlama ilmini tanımlar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 22,
+      "id": "quran-007",
+      "question": "Kur’an’ın Türkçe anlam çevirisi için yaygın olarak hangi terim kullanılır?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Meâl",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Meâl"
+        },
+        {
+          "id": "o2",
+          "text": "Mushaf"
+        },
+        {
+          "id": "o3",
+          "text": "Cüz"
+        },
+        {
+          "id": "o4",
+          "text": "Tecvid"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/meal",
+        "https://islamansiklopedisi.org.tr/mushaf"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/meal",
+      "evidenceSummary": "TDV Meâl maddesi Kur'an'ın başka dilde anlam aktarımı için meâl kullanımını tartışır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 23,
+      "id": "quran-008",
+      "question": "Kur’an okurken harflerin çıkış yerlerini ve okuma kurallarını öğreten alan hangisidir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Tecvid",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hat"
+        },
+        {
+          "id": "o2",
+          "text": "Tefsir"
+        },
+        {
+          "id": "o3",
+          "text": "Tecvid"
+        },
+        {
+          "id": "o4",
+          "text": "Siyer"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tecvid--kuran"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/tecvid--kuran",
+      "evidenceSummary": "TDV Tecvid maddesinin resmî arama dizinindeki metni harflerin mahreçleri, sıfatları ve tilavet kurallarını açıkça sıralar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 24,
+      "id": "quran-009",
+      "question": "Kur’an metninin iki kapak arasında toplanmış kitap biçimine ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Mushaf",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Meâl"
+        },
+        {
+          "id": "o2",
+          "text": "Mushaf"
+        },
+        {
+          "id": "o3",
+          "text": "Tefsir"
+        },
+        {
+          "id": "o4",
+          "text": "Fihrist"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mushaf",
+        "https://islamansiklopedisi.org.tr/meal"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/mushaf",
+      "evidenceSummary": "TDV Mushaf maddesi Kur'an metninin iki kapak arasında toplanması ve mushaf nüshalarını anlatır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 25,
+      "id": "quran-010",
+      "question": "Kur’an’ın en uzun suresi hangisidir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Bakara",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Yâsîn"
+        },
+        {
+          "id": "o2",
+          "text": "Fâtiha"
+        },
+        {
+          "id": "o3",
+          "text": "Kevser"
+        },
+        {
+          "id": "o4",
+          "text": "Bakara"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/bakara-suresi"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/bakara-suresi",
+      "evidenceSummary": "TDV Bakara Sûresi maddesinin resmî arama dizinindeki ilk tanımında sûre Kur'an'ın en uzunu olarak belirtilir.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 26,
+      "id": "quran-011",
+      "question": "Kevser suresi kaç ayetten oluşur?",
+      "correctOptionId": "o1",
+      "correctAnswer": "3",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "3"
+        },
+        {
+          "id": "o2",
+          "text": "5"
+        },
+        {
+          "id": "o3",
+          "text": "7"
+        },
+        {
+          "id": "o4",
+          "text": "10"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/kevser-suresi"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/kevser-suresi",
+      "evidenceSummary": "TDV Kevser Sûresi maddesi üç âyetten meydana geldiğini ve en kısa sûre olduğunu açıkça kaydeder.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 27,
+      "id": "quran-012",
+      "question": "Kur’an’ın tamamını ezberleyen kişiye ne denir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Hâfız",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Müezzin"
+        },
+        {
+          "id": "o2",
+          "text": "Hattat"
+        },
+        {
+          "id": "o3",
+          "text": "Hâfız"
+        },
+        {
+          "id": "o4",
+          "text": "Müfessir"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hafiz--kuran"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hafiz--kuran",
+      "evidenceSummary": "TDV Hâfız maddesi Kur'an'ın tamamını ezberleyen kişiye hâfız denildiğini açıkça belirtir.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 28,
+      "id": "quran-013",
+      "question": "Birinin okuduğu Kur’an’ı takip ederek hatim tamamlama geleneğine ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Mukabele",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Mevlid"
+        },
+        {
+          "id": "o2",
+          "text": "Mukabele"
+        },
+        {
+          "id": "o3",
+          "text": "Hutbe"
+        },
+        {
+          "id": "o4",
+          "text": "Vaaz"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mukabele--kuran"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/mukabele--kuran",
+      "evidenceSummary": "TDV Mukabele maddesi okuyucunun tilavetinin diğer dinleyiciler tarafından takip edildiği Ramazan geleneğini anlatır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 29,
+      "id": "prophets-006",
+      "question": "Hz. Yûsuf’un babası olan peygamber kimdir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Hz. Ya‘kūb",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. İbrâhim"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. İshak"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Ya‘kūb"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Hârûn"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/yusuf"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/yusuf",
+      "evidenceSummary": "TDV Yûsuf maddesinin resmî arama dizini makaleyi Ya'kûb'un oğlu olarak tanımlar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 30,
+      "id": "prophets-007",
+      "question": "Hz. Mûsâ’nın kendisine yardımcı olmasını istediği kardeşi kimdir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Hz. Hârûn",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Hârûn"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. İlyâs"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Yûnus"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Dâvûd"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/harun"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/harun",
+      "evidenceSummary": "TDV Hârûn maddesi Mûsâ'nın kardeşi ve yardımcısı olarak Hârûn'u tanıtır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 31,
+      "id": "prophets-008",
+      "question": "Kur’an’da Hz. Îsâ’nın annesi olarak anılan kişi kimdir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Meryem",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Âmine"
+        },
+        {
+          "id": "o2",
+          "text": "Hâcer"
+        },
+        {
+          "id": "o3",
+          "text": "Meryem"
+        },
+        {
+          "id": "o4",
+          "text": "Havvâ"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/isa"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/isa",
+      "evidenceSummary": "TDV Îsâ maddesi annesi Hz. Meryem'den dünyaya gelişini açıklar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 32,
+      "id": "prophets-009",
+      "question": "Hz. Süleyman’ın babası olan peygamber hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. Dâvûd",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Yûsuf"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Dâvûd"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Mûsâ"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. İshak"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/suleyman"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/suleyman",
+      "evidenceSummary": "TDV Süleyman maddesi Dâvûd'un oğlu olduğunu açıkça kaydeder.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 33,
+      "id": "prophets-010",
+      "question": "Bakara suresindeki anlatımda Hz. İbrâhim, Kâbe’nin temellerini kiminle birlikte yükseltir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Hz. İsmâil",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. İshak"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Ya‘kūb"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Yûsuf"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. İsmâil"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/kabe"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/kabe",
+      "evidenceSummary": "TDV Kâbe maddesi Bakara 2/127'de İbrâhim ve İsmâil'in temelleri yükseltmesini aktarır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 34,
+      "id": "prophets-011",
+      "question": "Kur’an’da bir balık tarafından yutulması anlatılan peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. Yûnus",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Nûh"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Yûnus"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Hûd"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Sâlih"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/yunus"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/yunus",
+      "evidenceSummary": "TDV Yûnus maddesi (Kur'an/Sâffât 37/142 ve ilgili anlatılar) peygamberin balık tarafından yutulmasını doğrular.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 35,
+      "id": "prophets-012",
+      "question": "Hz. Zekeriyyâ’nın oğlu olan peygamber kimdir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Hz. Yahyâ",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Yahyâ"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Îsâ"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Yûsuf"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Süleyman"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/yahya"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/yahya",
+      "evidenceSummary": "TDV Yahyâ maddesi Zekeriyyâ'nın oğlu olarak Yahyâ'yı açıkça tanımlar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 36,
+      "id": "prophets-013",
+      "question": "Hz. Muhammed’in ilk eşinin adı nedir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Hz. Hatice",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Âişe"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Hafsa"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Sevde"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Hatice"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hatice"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hatice",
+      "evidenceSummary": "TDV Hatice maddesi Hz. Muhammed'in ilk hanımının Hatice olduğunu anlatır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 37,
+      "id": "history-006",
+      "question": "Mescid-i Nebevî’de barınma ve eğitimle anılan bölümün adı nedir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Suffe",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Dârünnedve"
+        },
+        {
+          "id": "o2",
+          "text": "Suffe"
+        },
+        {
+          "id": "o3",
+          "text": "Dârülerkam"
+        },
+        {
+          "id": "o4",
+          "text": "Beytülmâl"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/suffe"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/cami",
+      "evidenceSummary": "TDV Cami ve Mescid-i Nebevî maddeleri Suffe'nin mescidde barınma/öğrenim gören sahabilerle ilişkisini açıklar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 38,
+      "id": "history-007",
+      "question": "Mekke’den Medine’ye göç eden Müslümanlar hangi adla anılır?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Muhacir",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Ensar"
+        },
+        {
+          "id": "o2",
+          "text": "Havari"
+        },
+        {
+          "id": "o3",
+          "text": "Muhacir"
+        },
+        {
+          "id": "o4",
+          "text": "Evs"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hicret"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hicret",
+      "evidenceSummary": "TDV Hicret maddesinde Mekke'den Medine'ye göç eden Müslümanlar muhacirler olarak adlandırılır.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 39,
+      "id": "history-008",
+      "question": "Medine’de ensar ile muhacirlerden bazıları arasında kurulan kardeşlik bağı hangi terimle anılır?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Muâhât",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Biat"
+        },
+        {
+          "id": "o2",
+          "text": "Hicret"
+        },
+        {
+          "id": "o3",
+          "text": "Şûra"
+        },
+        {
+          "id": "o4",
+          "text": "Muâhât"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/muahat"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/muahat",
+      "evidenceSummary": "TDV Muâhât maddesi bazı ensar ve muhacirlerin kardeş ilan edilmesini bu terimle açıklar.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 40,
+      "id": "history-009",
+      "question": "Mekke’de ilk Müslümanların eğitim ve tebliğ için toplandığı ev hangi adla bilinir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Dârülerkam",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Dârülerkam"
+        },
+        {
+          "id": "o2",
+          "text": "Dârünnedve"
+        },
+        {
+          "id": "o3",
+          "text": "Beytülmâl"
+        },
+        {
+          "id": "o4",
+          "text": "Suffe"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/darulerkam"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/darulerkam",
+      "evidenceSummary": "TDV Dârülerkam maddesinin resmî arama dizini Mekke'de tebliğ ve ilk eğitim için kullanılan evi tanımlar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 41,
+      "id": "history-010",
+      "question": "Halife Mansûr’un Abbâsî başşehri olarak kurduğu şehir hangisidir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Bağdat",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Şam"
+        },
+        {
+          "id": "o2",
+          "text": "Kûfe"
+        },
+        {
+          "id": "o3",
+          "text": "Bağdat"
+        },
+        {
+          "id": "o4",
+          "text": "Kahire"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/bagdat"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/bagdat",
+      "evidenceSummary": "TDV Bağdat maddesinin resmî arama dizini Abbasi halifesi Ebû Ca'fer el-Mansûr'un şehri kurduğunu ve başşehir yaptığını açıklar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 42,
+      "id": "history-011",
+      "question": "Muâviye’nin Emevî Devleti için başşehir seçtiği Dımaşk, Türkçede hangi adla bilinir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Şam",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Kudüs"
+        },
+        {
+          "id": "o2",
+          "text": "Şam"
+        },
+        {
+          "id": "o3",
+          "text": "Basra"
+        },
+        {
+          "id": "o4",
+          "text": "Kûfe"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/sam--suriye"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/sam--suriye",
+      "evidenceSummary": "TDV Şam maddesi Dımaşk'ın Türkçede Şam olarak adlandırıldığını açıkça belirtir.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 43,
+      "id": "history-012",
+      "question": "Hicretin resmî takvim başlangıcı kabul edilmesi hangi halife dönemindedir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Hz. Ömer",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Ebû Bekir"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Osman"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Ali"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Ömer"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hicret",
+        "https://islamansiklopedisi.org.tr/omer"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hicret",
+      "evidenceSummary": "TDV Hicret maddesi hicretin resmî takvim başlangıcı kabulünün Ömer devrinde 17/638'de gerçekleştiğini kaydeder.",
+      "sourceAccess": "official-article-body-read",
+      "evidenceStatus": "supported-by-read-source",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 44,
+      "id": "general-006",
+      "question": "Oruca hazırlık için imsak vaktinden önce yenen öğüne ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Sahur",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "İftar"
+        },
+        {
+          "id": "o2",
+          "text": "Sahur"
+        },
+        {
+          "id": "o3",
+          "text": "İkram"
+        },
+        {
+          "id": "o4",
+          "text": "Ziyafet"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/sahur",
+        "https://islamansiklopedisi.org.tr/iftar"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/sahur",
+      "evidenceSummary": "TDV Sahur maddesinin resmî arama dizini sahuru imsak öncesi hazırlık öğünü olarak tanımlar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 45,
+      "id": "general-007",
+      "question": "Oruçlunun vakti geldiğinde orucunu açması hangi terimle ifade edilir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "İftar",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "İmsak"
+        },
+        {
+          "id": "o2",
+          "text": "İtikâf"
+        },
+        {
+          "id": "o3",
+          "text": "İftar"
+        },
+        {
+          "id": "o4",
+          "text": "Sahur"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/iftar",
+        "https://islamansiklopedisi.org.tr/sahur"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/iftar",
+      "evidenceSummary": "TDV İftar maddesinin resmî arama dizini güneş batınca orucun açılmasını açıklıyor.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 46,
+      "id": "general-008",
+      "question": "Camide kıble yönünü ve imamın duracağı yeri belirten mimari öğe hangisidir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Mihrap",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Mihrap"
+        },
+        {
+          "id": "o2",
+          "text": "Minber"
+        },
+        {
+          "id": "o3",
+          "text": "Minare"
+        },
+        {
+          "id": "o4",
+          "text": "Şadırvan"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mihrap",
+        "https://islamansiklopedisi.org.tr/minber"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/mihrap",
+      "evidenceSummary": "TDV Mihrap maddesinin resmî arama dizini kıbleyi ve imamın duracağı yeri gösteren mimari unsur olduğunu kaydediyor.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 47,
+      "id": "general-009",
+      "question": "Hatibin cuma ve bayram hutbesini okumak için çıktığı basamaklı bölüm hangisidir?",
+      "correctOptionId": "o4",
+      "correctAnswer": "Minber",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Mihrap"
+        },
+        {
+          "id": "o2",
+          "text": "Mahfil"
+        },
+        {
+          "id": "o3",
+          "text": "Şerefe"
+        },
+        {
+          "id": "o4",
+          "text": "Minber"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/minber"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/minber",
+      "evidenceSummary": "TDV Minber maddesinin resmî arama dizini hatibin hutbe için çıktığı basamaklı öğeyi tanımlıyor.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 48,
+      "id": "general-010",
+      "question": "Bir malın gelirini sürekli bir hayır amacına ayıran kuruma ne denir?",
+      "correctOptionId": "o3",
+      "correctAnswer": "Vakıf",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Kervansaray"
+        },
+        {
+          "id": "o2",
+          "text": "Lonca"
+        },
+        {
+          "id": "o3",
+          "text": "Vakıf"
+        },
+        {
+          "id": "o4",
+          "text": "Divan"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/vakif"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/vakif",
+      "evidenceSummary": "TDV Vakıf maddesinin resmî arama dizini malın hayır amacıyla sürekli tahsisini ve farklı fıkıh mezheplerindeki mülkiyet yorumlarını açıklıyor.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 49,
+      "id": "general-011",
+      "question": "Arap harflerini estetik ölçülerle güzel yazma sanatına ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hat",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tezhip"
+        },
+        {
+          "id": "o2",
+          "text": "Hat"
+        },
+        {
+          "id": "o3",
+          "text": "Minyatür"
+        },
+        {
+          "id": "o4",
+          "text": "Ebru"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hat"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/hat",
+      "evidenceSummary": "TDV Hat maddesinin resmî arama dizini Arap yazısının estetik ölçülerle yazılması sanatını tanımlar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    },
+    {
+      "position": 50,
+      "id": "general-012",
+      "question": "Ramazan’da iki minare arasına kurulan ışıklı yazı düzenine ne denir?",
+      "correctOptionId": "o1",
+      "correctAnswer": "Mahya",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Mahya"
+        },
+        {
+          "id": "o2",
+          "text": "Alem"
+        },
+        {
+          "id": "o3",
+          "text": "Şerefe"
+        },
+        {
+          "id": "o4",
+          "text": "Minber"
+        }
+      ],
+      "originalSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mahya--ramazan"
+      ],
+      "externalOfficialSource": "https://islamansiklopedisi.org.tr/mahya--ramazan",
+      "evidenceSummary": "TDV Mahya maddesinin resmî arama dizini Ramazan'da iki minare arasına kurulan ışıklı yazıyı tanımlar.",
+      "sourceAccess": "official-indexed-source-excerpt",
+      "evidenceStatus": "supported-by-indexed-excerpt-needs-direct-reading",
+      "reviewDate": "2026-10-22",
+      "scope": "correctness of stated answer and plausibility of distractors; no independent religious expert certification"
+    }
+  ]
+}

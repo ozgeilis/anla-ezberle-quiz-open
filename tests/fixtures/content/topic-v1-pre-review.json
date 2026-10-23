@@ -1,0 +1,194 @@
+{
+  "stored": {
+    "version": 1,
+    "profile": {
+      "name": "Oyuncu",
+      "avatar": 0,
+      "reduceMotion": false,
+      "theme": "system"
+    },
+    "games": [
+      {
+        "id": "quiz-pr77-frozen-taxonomy-v1",
+        "bankVersion": 71,
+        "mode": "mixed",
+        "learningTopic": "fikih",
+        "learningTopicVersion": 1,
+        "difficulty": "easy",
+        "questionIds": [
+          "v11-general-002",
+          "general-001",
+          "general-002",
+          "general-003",
+          "general-004",
+          "general-005",
+          "general-006",
+          "general-007",
+          "general-008",
+          "general-009"
+        ],
+        "optionOrders": {
+          "v11-general-002": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-001": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-002": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-003": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-004": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-005": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-006": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-007": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-008": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ],
+          "general-009": [
+            "o4",
+            "o3",
+            "o2",
+            "o1"
+          ]
+        },
+        "startedAt": 1800000000000,
+        "completedAt": 1800000010000,
+        "answers": [
+          {
+            "questionId": "v11-general-002",
+            "option": 2,
+            "at": 1800000001000
+          },
+          {
+            "questionId": "general-001",
+            "option": 2,
+            "at": 1800000002000
+          },
+          {
+            "questionId": "general-002",
+            "option": 0,
+            "at": 1800000003000
+          },
+          {
+            "questionId": "general-003",
+            "option": 1,
+            "at": 1800000004000
+          },
+          {
+            "questionId": "general-004",
+            "option": 3,
+            "at": 1800000005000
+          },
+          {
+            "questionId": "general-005",
+            "option": 2,
+            "at": 1800000006000
+          },
+          {
+            "questionId": "general-006",
+            "option": 3,
+            "at": 1800000007000
+          },
+          {
+            "questionId": "general-007",
+            "option": 2,
+            "at": 1800000008000
+          },
+          {
+            "questionId": "general-008",
+            "option": 0,
+            "at": 1800000009000
+          },
+          {
+            "questionId": "general-009",
+            "option": 1,
+            "at": 1800000010000
+          }
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "correct": 6,
+    "wrong": 4,
+    "score": 600,
+    "seconds": 10
+  },
+  "progress": {
+    "xp": 60,
+    "level": 1,
+    "levelXp": 60,
+    "nextLevelXp": 190,
+    "title": "Yeni yolcu",
+    "best": 600,
+    "badges": [
+      {
+        "id": "first",
+        "title": "İlk adım",
+        "description": "İlk yarışmanı tamamla.",
+        "earned": true,
+        "symbol": "flag"
+      },
+      {
+        "id": "five",
+        "title": "Bilgi ışığı",
+        "description": "Toplam 5 doğru cevaba ulaş.",
+        "earned": true,
+        "symbol": "check-circle"
+      },
+      {
+        "id": "perfect",
+        "title": "Kusursuz tur",
+        "description": "Bir yarışmada 10 soruyu da doğru yanıtla.",
+        "earned": false,
+        "symbol": "star"
+      },
+      {
+        "id": "explorer",
+        "title": "Meraklı kâşif",
+        "description": "4 farklı kategoride odaklı tur tamamla.",
+        "earned": false,
+        "symbol": "compass"
+      }
+    ],
+    "correct": 6
+  }
+}

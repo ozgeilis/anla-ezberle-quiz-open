@@ -1,0 +1,90 @@
+# Local development only. Applying remote migrations/functions requires separate approval.
+# CLI 2.121.0; isolated ports avoid other Supabase projects on this computer.
+project_id = "anla-ezberle-quiz-dev-local"
+
+[api]
+enabled = true
+port = 55431
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 100
+# New objects require explicit grants. Answer keys will live in a private schema.
+auto_expose_new_tables = false
+
+[db]
+port = 55432
+shadow_port = 55430
+major_version = 17
+
+[db.pooler]
+enabled = false
+
+[db.migrations]
+enabled = true
+schema_paths = []
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[realtime]
+enabled = true
+
+[studio]
+enabled = false
+port = 55433
+api_url = "http://127.0.0.1"
+
+[local_smtp]
+enabled = false
+port = 55434
+
+[storage]
+enabled = false
+
+[storage.s3_protocol]
+enabled = false
+
+[storage.vector]
+enabled = false
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:8121/online/auth"
+additional_redirect_urls = ["anla-ezberle-quiz://online", "anla-ezberle-quiz://online/auth", "http://127.0.0.1:8121/online/auth", "http://localhost:8121/online/auth"]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+refresh_token_reuse_interval = 10
+# Closed test: provision testers through an authorized admin workflow only.
+enable_signup = false
+enable_anonymous_sign_ins = false
+enable_manual_linking = false
+minimum_password_length = 12
+password_requirements = "lower_upper_letters_digits_symbols"
+
+[auth.rate_limit]
+email_sent = 2
+sign_in_sign_ups = 30
+token_refresh = 150
+
+[auth.email]
+# Enable the email provider for login; global auth.enable_signup stays false.
+enable_signup = true
+enable_confirmations = true
+double_confirm_changes = true
+secure_password_change = true
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
+inspector_port = 55435
+deno_version = 2
+
+[analytics]
+enabled = false
+port = 55437
+
+[functions.online-duel]
+# Gateway legacy-JWT verification is replaced by Auth getUser(JWT) in the handler.
+# This does NOT make the handler public: every command requires a verified user.
+verify_jwt = false

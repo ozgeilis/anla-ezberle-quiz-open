@@ -1,0 +1,89 @@
+name: Dogrulanmis siralama kabulü
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/features/ranking/**"
+      - "src/features/online/**"
+      - "src/app/(tabs)/**"
+      - "supabase/**"
+      - "tests/sql/leaderboard.sql"
+      - "scripts/leaderboard-*.mjs"
+      - "scripts/fixtures/leaderboard-http.mjs"
+      - ".github/workflows/leaderboard.yml"
+permissions:
+  contents: read
+jobs:
+  leaderboard-ui:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable && pnpm install --frozen-lockfile
+      - name: Isolated web export
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: http://127.0.0.1:55431
+          EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: sb_publishable_ci_fixture_not_real
+        run: pnpm export:web
+      - name: Real Chromium
+        run: |
+          npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Ranking acceptance
+        run: |
+          pnpm preview > /tmp/ranking-preview.log 2>&1 &
+          sleep 3
+          node scripts/leaderboard-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: leaderboard-ui
+          path: artifacts/leaderboard-ui/
+          if-no-files-found: ignore
+  leaderboard-sql-edge:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable && pnpm install --frozen-lockfile
+      - uses: supabase/setup-cli@v1
+        with:
+          version: 2.121.0
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - run: deno check --no-config supabase/functions/online-duel/index.ts
+      - name: Fresh ephemeral local Supabase (never a hosted target)
+        run: supabase start --exclude studio,storage-api,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
+      - name: Rollback-only SQL acceptance
+        run: docker exec -i supabase_db_anla-ezberle-quiz-dev-local psql -U postgres -d postgres -v ON_ERROR_STOP=1 < tests/sql/leaderboard.sql
+      - name: Ephemeral local identities
+        run: |
+          supabase status --output json > "$RUNNER_TEMP/ranking-local-status.json"
+          node scripts/leaderboard-ci-accounts.mjs "$RUNNER_TEMP/ranking-local-status.json"
+      - name: Existing social and duel regression
+        run: |
+          node scripts/social-integration.mjs --local
+          node scripts/direct-challenge-integration.mjs --local
+      - name: Real Auth, Edge and SQL ranking acceptance
+        env:
+          LEADERBOARD_REPORT: artifacts/leaderboard-server/results.json
+        run: |
+          mkdir -p artifacts/leaderboard-server
+          supabase functions serve online-duel > /tmp/ranking-edge.log 2>&1 &
+          node scripts/leaderboard-edge-ready.mjs
+          node scripts/leaderboard-edge-integration.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: leaderboard-server
+          path: artifacts/leaderboard-server/
+          if-no-files-found: ignore

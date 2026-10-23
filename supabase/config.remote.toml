@@ -1,0 +1,42 @@
+# Development project: email-confirmed enrollment. Not production release approval.
+# Intentionally omit unrelated services, MFA and provider settings.
+# Apply via a temporary workdir whose supabase/config.toml is this file.
+project_id = "anla-ezberle-quiz-dev"
+
+[api]
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 100
+auto_expose_new_tables = false
+
+[auth]
+site_url = "http://127.0.0.1:8121/online/auth"
+additional_redirect_urls = ["anla-ezberle-quiz://online", "anla-ezberle-quiz://online/auth", "http://127.0.0.1:8121/online/auth", "http://localhost:8121/online/auth"]
+jwt_expiry = 3600
+enable_refresh_token_rotation = true
+refresh_token_reuse_interval = 10
+enable_signup = true
+enable_anonymous_sign_ins = false
+enable_manual_linking = false
+minimum_password_length = 12
+password_requirements = "lower_upper_letters_digits_symbols"
+
+[auth.rate_limit]
+sign_in_sign_ups = 30
+token_refresh = 150
+
+[auth.email]
+# Confirmation is mandatory before online profile provisioning.
+enable_signup = true
+enable_confirmations = true
+double_confirm_changes = true
+secure_password_change = true
+
+# Gmail SMTP credentials are managed only in the Supabase dashboard.
+[auth.email.template.confirmation]
+subject = "E-posta adresini doğrula"
+content_path = "./supabase/templates/confirmation.html"
+
+[auth.email.template.recovery]
+subject = "Şifreni sıfırla"
+content_path = "./supabase/templates/recovery.html"

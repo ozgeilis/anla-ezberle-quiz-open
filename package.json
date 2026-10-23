@@ -1,0 +1,63 @@
+{
+  "name": "anla-ezberle-quiz",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "EXPO_PUBLIC_CONTENT_CHANNEL=prototype expo start --port 8107",
+    "web": "EXPO_PUBLIC_CONTENT_CHANNEL=prototype expo start --web --port 8107",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "test": "tsx --test tests/*.test.ts",
+    "export:web": "EXPO_PUBLIC_CONTENT_CHANNEL=prototype expo export --platform web",
+    "export:web:test": "node scripts/export-web-test.mjs",
+    "preview": "node scripts/preview.mjs",
+    "format": "prettier --write src tests scripts *.json *.js *.yaml docs/*.md README.md",
+    "check": "pnpm questions:check && pnpm typecheck && pnpm lint && pnpm test",
+    "questions:generate": "tsx scripts/consolidate-questions.ts --write",
+    "questions:check": "tsx scripts/consolidate-questions.ts --check",
+    "export:online-content": "tsx scripts/export-online-content.ts",
+    "start:device": "EXPO_PUBLIC_CONTENT_CHANNEL=prototype expo start --dev-client --lan --port 8111"
+  },
+  "dependencies": {
+    "@expo-google-fonts/manrope": "^0.4.2",
+    "@expo/vector-icons": "^15.1.1",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@supabase/supabase-js": "^2.118.0",
+    "expo": "~58.0.14",
+    "expo-asset": "~58.0.16",
+    "expo-clipboard": "~58.0.3",
+    "expo-constants": "~58.0.12",
+    "expo-crypto": "~58.0.7",
+    "expo-dev-client": "~58.0.14",
+    "expo-font": "~58.0.8",
+    "expo-linear-gradient": "~58.0.3",
+    "expo-linking": "~58.0.13",
+    "expo-router": "~58.0.23",
+    "expo-secure-store": "~58.0.2",
+    "expo-splash-screen": "~58.0.10",
+    "expo-status-bar": "~58.0.3",
+    "expo-system-ui": "~58.0.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "react-native-svg": "15.16.0",
+    "react-native-url-polyfill": "^4.0.0",
+    "react-native-web": "~0.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "~58.0.4",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.0",
+    "typescript": "~6.0.3"
+  }
+}

@@ -1,0 +1,72 @@
+name: Kategori arayuzu web kontrolu
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/features/categories/**"
+      - "src/features/home/**"
+      - "src/features/quiz/**"
+      - "src/domain/game/**"
+      - "src/storage/**"
+      - "src/components/game/**"
+      - "src/components/ui/**"
+      - "src/app/(tabs)/_layout.tsx"
+      - "scripts/home-polish-smoke.mjs"
+      - "src/features/profile/**"
+      - "src/features/achievements/**"
+      - "src/theme/**"
+      - "assets/images/reference-ui/**"
+      - "scripts/reference-ui-smoke.mjs"
+      - "scripts/visual-categories-smoke.mjs"
+      - "scripts/category-flow-smoke.mjs"
+      - ".github/workflows/category-ui-smoke.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  visual-smoke:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable
+      - run: corepack pnpm install --frozen-lockfile
+      - name: Export web preview
+        run: pnpm export:web
+      - name: Install headless browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Capture unchanged base home for comparison
+        env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/home-before"
+          git fetch --no-tags --depth=1 origin "$BASE_REVISION"
+          git archive "$BASE_REVISION" | tar -x -C "$RUNNER_TEMP/home-before"
+          (cd "$RUNNER_TEMP/home-before" && pnpm install --frozen-lockfile && pnpm export:web)
+          (cd "$RUNNER_TEMP/home-before" && exec node scripts/preview.mjs) > /tmp/home-before-preview.log 2>&1 &
+          before_pid=$!
+          trap 'kill "$before_pid" 2>/dev/null || true' EXIT
+          sleep 3
+          node scripts/home-polish-smoke.mjs --baseline
+          kill "$before_pid"
+          wait "$before_pid" || true
+          trap - EXIT
+      - name: Check category layouts and capture screenshots
+        run: |
+          pnpm preview > /tmp/category-preview.log 2>&1 &
+          sleep 5
+          node scripts/visual-categories-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: category-visual-smoke
+          path: artifacts/unified-categories-ui/
+          if-no-files-found: ignore

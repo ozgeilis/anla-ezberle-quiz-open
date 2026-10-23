@@ -1,0 +1,16 @@
+.git
+.env*
+.expo
+.local
+.vercel
+node_modules
+artifacts
+design
+docs/*
+!docs/licenses
+!docs/licenses/**
+supabase
+tests
+ios
+android
+*.log

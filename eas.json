@@ -1,0 +1,34 @@
+{
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "environment": "development",
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "prototype"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "environment": "preview",
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "developmentClient": false
+    },
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "environment": "development",
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "prototype"
+      },
+      "ios": {
+        "simulator": true
+      }
+    }
+  }
+}

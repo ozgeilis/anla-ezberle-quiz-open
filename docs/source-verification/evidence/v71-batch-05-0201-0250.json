@@ -1,0 +1,1727 @@
+{
+  "bankVersion": 71,
+  "range": [
+    201,
+    250
+  ],
+  "count": 50,
+  "sourceAccessCounts": {
+    "tdv-direct-source-reading": 44,
+    "tdv-official-indexed-full-text-direct-url-rate-limited": 3,
+    "official-diyanet-original-verse": 3
+  },
+  "conclusionCounts": {
+    "source-supports-recorded-answer": 46,
+    "supported-by-indexed-text-direct-open-pending": 3,
+    "supported-mainstream-interpretation-other-readings-exist": 1
+  },
+  "reviewDate": "2026-10-22",
+  "limitations": [
+    "Original TDV article text/official Diyanet translated Quran passages were consulted; the self-copied metadata `supports` was not used as verification.",
+    "Three official TDV articles returned HTTP429 on direct open; cached index text is less decisive and marked for recheck.",
+    "Âdiyât animals question is deliberately qualified by 'genellikle'; alternative meanings require care.",
+    "All canonical v71 IDs and answer choices frozen. Another 1,200 IDs remain outside already researched batches #1–5 and #30."
+  ],
+  "entries": [
+    {
+      "position": 201,
+      "id": "e150-general-020",
+      "question": "Su bulunmadığında belirli şartlarda yapılan toprakla temizlik hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Teyemmüm",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tavaf"
+        },
+        {
+          "id": "o2",
+          "text": "Teyemmüm"
+        },
+        {
+          "id": "o3",
+          "text": "İtikâf"
+        },
+        {
+          "id": "o4",
+          "text": "Teravih"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/teyemmum"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/teyemmum",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Teyemmüm maddesi su bulunmadığında ya da kullanılamadığında temiz toprak cinsinden maddeyle yapılan ibadet temizliğini tarif eder.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 202,
+      "id": "e150-general-021",
+      "question": "Hac ibadeti hangi şehir ve çevresindeki belirli mekânlarda yerine getirilir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Mekke",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Medine"
+        },
+        {
+          "id": "o2",
+          "text": "Mekke"
+        },
+        {
+          "id": "o3",
+          "text": "Kudüs"
+        },
+        {
+          "id": "o4",
+          "text": "Şam"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hac"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/hac",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Hac: menâsik Mekke, Kâbe ve çevresindeki Arafat, Mina, Müzdelife gibi mekânlarda yerine getirilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 203,
+      "id": "e150-general-022",
+      "question": "Hac ve umrede belli yasakların başladığı özel hâle ne ad verilir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "İhram",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "İftar"
+        },
+        {
+          "id": "o2",
+          "text": "İhram"
+        },
+        {
+          "id": "o3",
+          "text": "Teravih"
+        },
+        {
+          "id": "o4",
+          "text": "Zekât"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ihram"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/ihram",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV İhram: hac/umreye başlanırken belirli yasaklara girilen dinî durumun adıdır; yalnız kıyafet değildir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 204,
+      "id": "e150-general-023",
+      "question": "Tavafta şavtların başlangıç ve bitiş hizasında hangi taş bulunur?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hacerülesved",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Makam-ı İbrâhim taşı"
+        },
+        {
+          "id": "o2",
+          "text": "Hacerülesved"
+        },
+        {
+          "id": "o3",
+          "text": "Safa taşı"
+        },
+        {
+          "id": "o4",
+          "text": "Merve taşı"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tavaf"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/tavaf",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Tavaf: şavtın başlangıç-bitiş noktası Kâbe'nin Hacerülesved hizasıdır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 205,
+      "id": "e150-general-024",
+      "question": "Bir tavafta Kâbe etrafında kaç tur tamamlanır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "7",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "3"
+        },
+        {
+          "id": "o2",
+          "text": "7"
+        },
+        {
+          "id": "o3",
+          "text": "5"
+        },
+        {
+          "id": "o4",
+          "text": "10"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tavaf"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/tavaf",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Tavaf: Kâbe çevresinde yedi şavt bir tavafı oluşturur.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 206,
+      "id": "e150-general-025",
+      "question": "Sa'y ibadetinde ilk yürüyüş hangi tepeden başlar?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Safâ",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Merve"
+        },
+        {
+          "id": "o2",
+          "text": "Safâ"
+        },
+        {
+          "id": "o3",
+          "text": "Arafat"
+        },
+        {
+          "id": "o4",
+          "text": "Uhud"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/say"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/say",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Sa'y: sa'y ibadetine Safâ tarafından başlanır, Merve'de sona erilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 207,
+      "id": "e150-general-026",
+      "question": "Sa'y toplam kaç şavttan oluşur?",
+      "correctOptionId": "o2",
+      "correctAnswer": "7",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "2"
+        },
+        {
+          "id": "o2",
+          "text": "7"
+        },
+        {
+          "id": "o3",
+          "text": "4"
+        },
+        {
+          "id": "o4",
+          "text": "10"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/say"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/say",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Sa'y: Safâ-Merve arasında yedi şavt tamamlanır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 208,
+      "id": "e150-general-027",
+      "question": "Hacda Arafat'ta belirli vakitte bulunma ibadeti hangi adla anılır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Vakfe",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tavaf"
+        },
+        {
+          "id": "o2",
+          "text": "Vakfe"
+        },
+        {
+          "id": "o3",
+          "text": "Sa'y"
+        },
+        {
+          "id": "o4",
+          "text": "Tilâvet"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/arafat"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/arafat",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Arafat: hacda belirli zaman diliminde Arafat'ta durmaya vakfe adı verilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 209,
+      "id": "e150-general-028",
+      "question": "Hac sırasında cemrelere taş atma uygulamasının yapıldığı yer hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Mina",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Safa"
+        },
+        {
+          "id": "o2",
+          "text": "Mina"
+        },
+        {
+          "id": "o3",
+          "text": "Hira"
+        },
+        {
+          "id": "o4",
+          "text": "Sevr"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mina"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/mina",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Mina: şeytan taşlama cemreleri Mina mevkisinde bulunur.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 210,
+      "id": "e150-general-029",
+      "question": "Mekke'deki meşhur kutsal su kaynağının adı hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Zemzem",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Kevser"
+        },
+        {
+          "id": "o2",
+          "text": "Zemzem"
+        },
+        {
+          "id": "o3",
+          "text": "Selsebîl"
+        },
+        {
+          "id": "o4",
+          "text": "Fırat"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/zemzem"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/zemzem",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Zemzem: Kâbe yakınındaki kutsal su kaynağının Zemzem olduğu anlatılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 211,
+      "id": "e150-general-030",
+      "question": "Kâbe'nin yer aldığı büyük mescidin adı hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Mescid-i Harâm",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Mescid-i Nebevî"
+        },
+        {
+          "id": "o2",
+          "text": "Mescid-i Harâm"
+        },
+        {
+          "id": "o3",
+          "text": "Mescid-i Aksâ"
+        },
+        {
+          "id": "o4",
+          "text": "Kuba Mescidi"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mescid-i-haram"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/mescid-i-haram",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Mescid-i Harâm: Mekke'de Kâbe'yi içinde barındıran büyük mesciddir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 212,
+      "id": "e150-general-031",
+      "question": "Mushaf sözcüğü hangi tür nesneyle ilişkilidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Bir araya getirilmiş sayfalar",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Çadır direkleri"
+        },
+        {
+          "id": "o2",
+          "text": "Bir araya getirilmiş sayfalar"
+        },
+        {
+          "id": "o3",
+          "text": "Su kuyuları"
+        },
+        {
+          "id": "o4",
+          "text": "Ticaret kervanları"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mushaf"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/mushaf",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Mushaf: sözlükte bir araya getirilmiş sayfalar anlamındaki mushaf Kur'an'ın kitap halindeki bütününü ifade eder.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 213,
+      "id": "e150-general-032",
+      "question": "Meâl neden Kur'an'ın harfiyen aynısı olarak görülmez?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Anlamı aktaran bir çeviri olduğu için",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Arap harfi içermediği için"
+        },
+        {
+          "id": "o2",
+          "text": "Anlamı aktaran bir çeviri olduğu için"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece şiir olduğu için"
+        },
+        {
+          "id": "o4",
+          "text": "Sure sayısını değiştirdiği için"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/meal"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/meal",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Meâl: Kur'an'ın anlamını başka dilde karşılayan çeviri yorumsal bir aktarımdır, Arapça aslın lafzı değildir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 214,
+      "id": "e150-general-033",
+      "question": "Kur'an âyetlerini tefsir eden âlime ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Müfessir",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hattat"
+        },
+        {
+          "id": "o2",
+          "text": "Müfessir"
+        },
+        {
+          "id": "o3",
+          "text": "Müezzin"
+        },
+        {
+          "id": "o4",
+          "text": "Mütevelli"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tefsir"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/tefsir",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Tefsir: ayetleri açıklayan/yorumlayan alime müfessir denir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 215,
+      "id": "e150-general-034",
+      "question": "Hat sanatıyla uğraşan sanatçıya ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hattat",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Müfessir"
+        },
+        {
+          "id": "o2",
+          "text": "Hattat"
+        },
+        {
+          "id": "o3",
+          "text": "Müezzin"
+        },
+        {
+          "id": "o4",
+          "text": "Mütevelli"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hat"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/hat",
+      "sourceAccess": "tdv-official-indexed-full-text-direct-url-rate-limited",
+      "passageSummary": "TDV Hat: Arap harfleriyle güzel yazı sanatının icracısı hattat olarak adlandırılır.",
+      "conclusion": "supported-by-indexed-text-direct-open-pending",
+      "checkedOn": "2026-10-22",
+      "notes": "Official TDV entry available as search-index article text; direct open returned HTTP429."
+    },
+    {
+      "position": 216,
+      "id": "e150-general-035",
+      "question": "Mahya geleneği özellikle hangi kültürde gelişmiştir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Osmanlı cami kültürü",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Endülüs saray kültürü"
+        },
+        {
+          "id": "o2",
+          "text": "Osmanlı cami kültürü"
+        },
+        {
+          "id": "o3",
+          "text": "Pers saray mimarisi"
+        },
+        {
+          "id": "o4",
+          "text": "Roma tapınak kültürü"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mahya--ramazan"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/mahya--ramazan",
+      "sourceAccess": "tdv-official-indexed-full-text-direct-url-rate-limited",
+      "passageSummary": "TDV Mahya: iki minare arasında ışıklı yazı kurma geleneğinin tarihsel Osmanlı cami ve kandil uygulamalarıyla ilişkisi anlatılır.",
+      "conclusion": "supported-by-indexed-text-direct-open-pending",
+      "checkedOn": "2026-10-22",
+      "notes": "Official TDV entry available as search-index article text; direct open returned HTTP429."
+    },
+    {
+      "position": 217,
+      "id": "v7-quran-001",
+      "question": "Mushaflarda başında besmele bulunmayan sûre hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Tevbe",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Enfâl"
+        },
+        {
+          "id": "o2",
+          "text": "Tevbe"
+        },
+        {
+          "id": "o3",
+          "text": "Yûnus"
+        },
+        {
+          "id": "o4",
+          "text": "Hûd"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tevbe-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/tevbe-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Tevbe sûresi: mushaflarda başına besmele yazılmayan sûredir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 218,
+      "id": "v7-quran-002",
+      "question": "Kur'an'da adı 'bal arısı' anlamına gelen sûre hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Nahl",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Neml"
+        },
+        {
+          "id": "o2",
+          "text": "Nahl"
+        },
+        {
+          "id": "o3",
+          "text": "Ankebût"
+        },
+        {
+          "id": "o4",
+          "text": "Fil"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/nahl-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/nahl-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Nahl sûresi: en-Nahl adı Arapçada bal arısı demektir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 219,
+      "id": "v7-quran-003",
+      "question": "Yaygın kabule göre ilk vahyin başlangıcı hangi sûrenin ilk beş âyetidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Alak",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Müddessir"
+        },
+        {
+          "id": "o2",
+          "text": "Alak"
+        },
+        {
+          "id": "o3",
+          "text": "Fâtiha"
+        },
+        {
+          "id": "o4",
+          "text": "Kadr"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/alak-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/alak-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Alak sûresi: ilk beş âyet yaygın kabulde nâzil olan ilk vahiy pasajıdır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 220,
+      "id": "v7-quran-004",
+      "question": "Kadir gecesinin bin aydan daha hayırlı olduğu hangi sûrede bildirilir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Kadr",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Duhân"
+        },
+        {
+          "id": "o2",
+          "text": "Kadr"
+        },
+        {
+          "id": "o3",
+          "text": "Mülk"
+        },
+        {
+          "id": "o4",
+          "text": "İhlâs"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/kadir-gecesi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/kadir-gecesi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Kadir Gecesi: Kadr sûresi 97/3'te Kadir gecesinin bin aydan hayırlı olduğu bildirilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 221,
+      "id": "v7-quran-005",
+      "question": "Kadr sûresi 97/4'te bu gecede Allah'ın izniyle indikleri bildirilenler kimlerdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Melekler ve Ruh (Cebrâil)",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Sadece insanlar"
+        },
+        {
+          "id": "o2",
+          "text": "Melekler ve Ruh (Cebrâil)"
+        },
+        {
+          "id": "o3",
+          "text": "Peygamberler ve krallar"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız hükümdarlar"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=97&ayet=4&mode=meal"
+      ],
+      "sourceEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "sourceAccess": "official-diyanet-original-verse",
+      "passageSummary": "Diyanet Kur'an Meâli, Kadr 97/4: meleklerin ve Ruh'un/Cebrâil'in Allah'ın izniyle o gecede indiği bildirilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 222,
+      "id": "v7-prophets-001",
+      "question": "Kur'an'da Hz. Meryem'in himayesini üstlenen peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. Zekeriyyâ",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Eyyûb"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Zekeriyyâ"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Hârûn"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Yûnus"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/zekeriyya"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/zekeriyya",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Zekeriyyâ: Meryem'e koruyuculuk/nezaret vazifesini üstlenmiştir (Âl-i İmrân 3/37).",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 223,
+      "id": "v7-prophets-002",
+      "question": "İslâmî kaynaklarda Ninova halkıyla ilişkilendirilen peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. Yûnus",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Hûd"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Yûnus"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Sâlih"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. İdrîs"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/yunus"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/yunus",
+      "sourceAccess": "tdv-official-indexed-full-text-direct-url-rate-limited",
+      "passageSummary": "TDV Yûnus: İslâmî gelenekte Ninova halkına gönderilmiş peygamber olarak tanınır.",
+      "conclusion": "supported-by-indexed-text-direct-open-pending",
+      "checkedOn": "2026-10-22",
+      "notes": "Official TDV entry available as search-index article text; direct open returned HTTP429."
+    },
+    {
+      "position": 224,
+      "id": "v7-prophets-003",
+      "question": "Enbiyâ sûresi 21/69'da ateşin serin ve esenlikli kılındığı peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. İbrâhim",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. İsmâil"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. İbrâhim"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Mûsâ"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Şuayb"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=21&ayet=69&mode=meal"
+      ],
+      "sourceEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "sourceAccess": "official-diyanet-original-verse",
+      "passageSummary": "Diyanet Kur'an Meâli, Enbiyâ 21/69: ateşin İbrâhim için serin ve selâmetli olması emredilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 225,
+      "id": "v7-prophets-004",
+      "question": "Sebe' sûresi 34/10'a göre kendisine demiri işleme kolaylığı verilen peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. Dâvûd",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Süleyman"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Dâvûd"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Yûsuf"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Nûh"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=34&ayet=10&mode=meal"
+      ],
+      "sourceEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "sourceAccess": "official-diyanet-original-verse",
+      "passageSummary": "Diyanet Kur'an Meâli, Sebe' 34/10: Davud için demirin yumuşatıldığı anlatılır (34/10–11).",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 226,
+      "id": "v7-prophets-005",
+      "question": "İslâmî rivayetlerde Hz. İsmâil'in annesi olarak bilinen kişi kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hâcer",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Sâre"
+        },
+        {
+          "id": "o2",
+          "text": "Hâcer"
+        },
+        {
+          "id": "o3",
+          "text": "Âsiye"
+        },
+        {
+          "id": "o4",
+          "text": "Belkıs"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/zemzem"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/zemzem",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Zemzem: İsmâil'in annesi Hâcer'in çabası ve Zemzem suyu anlatılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 227,
+      "id": "v7-history-001",
+      "question": "Hendek Gazvesi'nde savunma amacıyla hendek kazılması fikri hangi sahâbîyle ilişkilendirilir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Selmân-ı Fârisî",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Bilâl-i Habeşî"
+        },
+        {
+          "id": "o2",
+          "text": "Selmân-ı Fârisî"
+        },
+        {
+          "id": "o3",
+          "text": "Ebû Hüreyre"
+        },
+        {
+          "id": "o4",
+          "text": "Zeyd b. Sâbit"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hendek-gazvesi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Hendek Gazvesi: hendek kazılması fikrinin gelenekte Selmân-ı Fârisî'ye atfedildiği belirtilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 228,
+      "id": "v7-history-002",
+      "question": "Mûte Savaşı öncesinde tayin edilen ilk kumandan kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Zeyd b. Hârise",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hâlid b. Velîd"
+        },
+        {
+          "id": "o2",
+          "text": "Zeyd b. Hârise"
+        },
+        {
+          "id": "o3",
+          "text": "Abdullah b. Revâha"
+        },
+        {
+          "id": "o4",
+          "text": "Ca‘fer b. Ebû Tâlib"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/mute-savasi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/mute-savasi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Mûte Savaşı: Resûlullah ilk komutan olarak Zeyd b. Hârise'yi tayin etmiştir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 229,
+      "id": "v7-history-003",
+      "question": "Hayber seferi hicretin kaçıncı yılında gerçekleşmiştir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "7",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "5"
+        },
+        {
+          "id": "o2",
+          "text": "7"
+        },
+        {
+          "id": "o3",
+          "text": "6"
+        },
+        {
+          "id": "o4",
+          "text": "9"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hayber"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/hayber",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Hayber: Hayber seferi hicretin 7. yılında gerçekleşmiştir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 230,
+      "id": "v7-history-004",
+      "question": "Kaynaklarda 'Güçlük Seferi' diye de anılan gazve hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Tebük Gazvesi",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Bedir Gazvesi"
+        },
+        {
+          "id": "o2",
+          "text": "Tebük Gazvesi"
+        },
+        {
+          "id": "o3",
+          "text": "Uhud Gazvesi"
+        },
+        {
+          "id": "o4",
+          "text": "Hayber Seferi"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tebuk-gazvesi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Tebük Gazvesi: Gazvetü'l-usre, büyük zorluklar ve güçlüklerle yapılan Tebük seferinin diğer adıdır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 231,
+      "id": "v7-history-005",
+      "question": "Hz. Peygamber'in Vedâ haccı hicrî kaçıncı yılda gerçekleşmiştir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "10",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "6"
+        },
+        {
+          "id": "o2",
+          "text": "10"
+        },
+        {
+          "id": "o3",
+          "text": "8"
+        },
+        {
+          "id": "o4",
+          "text": "9"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/veda-hacci"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/veda-hacci",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Vedâ Haccı: Hz. Muhammed'in bu haccı hicretin 10. yılında gerçekleştirdiği belirtilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 232,
+      "id": "v7-general-001",
+      "question": "Ramazan gecelerinde yatsı namazından sonra kılınan namazın adı nedir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Teravih",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "İstiskā"
+        },
+        {
+          "id": "o2",
+          "text": "Teravih"
+        },
+        {
+          "id": "o3",
+          "text": "Cenaze namazı"
+        },
+        {
+          "id": "o4",
+          "text": "Küsûf"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/teravih"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/teravih",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Teravih: Ramazan gecelerinde yatsıdan sonra kılınan özel namaza teravih denilir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 233,
+      "id": "v7-general-002",
+      "question": "Ramazan sonunda gücü yeten Müslümanın vermekle yükümlü olduğu sadakaya ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Fitre",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Adak"
+        },
+        {
+          "id": "o2",
+          "text": "Fitre"
+        },
+        {
+          "id": "o3",
+          "text": "Kefaret"
+        },
+        {
+          "id": "o4",
+          "text": "Nezir"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/fitre"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/fitre",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Fitre: ramazan sonunda eda edilen sadaka-i fıtır olarak tanımlanır; malî yükümlülük için yeterlilik şartı vardır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 234,
+      "id": "v7-general-003",
+      "question": "Özellikle ramazanın son on gününde ibadete yoğunlaşarak yapılan uygulamaya ne denir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "İtikâf",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Tavaf"
+        },
+        {
+          "id": "o2",
+          "text": "İtikâf"
+        },
+        {
+          "id": "o3",
+          "text": "Sa‘y"
+        },
+        {
+          "id": "o4",
+          "text": "Kunut"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/itikaf"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/itikaf",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV İ'tikâf: Ramazan'ın son on gününde mescidde ibadete yoğunlaşma uygulaması anlatılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 235,
+      "id": "v7-general-004",
+      "question": "Yeni doğan çocuk için şükür amacıyla kesilen kurbana ne ad verilir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Akîka",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hedy"
+        },
+        {
+          "id": "o2",
+          "text": "Akîka"
+        },
+        {
+          "id": "o3",
+          "text": "Udhiyye"
+        },
+        {
+          "id": "o4",
+          "text": "Nezir"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/akika"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/akika",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Akīka: yeni doğan çocuk sebebiyle şükür amacıyla kesilen kurban olarak tanımlanır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 236,
+      "id": "v7-general-005",
+      "question": "Cibrîl hadisindeki 'Allah'ı görür gibi ibadet etmek' tanımı hangi kavrama aittir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "İhsan",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "İkrar"
+        },
+        {
+          "id": "o2",
+          "text": "İhsan"
+        },
+        {
+          "id": "o3",
+          "text": "Tevekkül"
+        },
+        {
+          "id": "o4",
+          "text": "Hicret"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ihsan--iyilik"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/ihsan--iyilik",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV İhsan: Cibrîl hadisine göre Allah'ı görür gibi ibadet etmeyi ifade eder.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 237,
+      "id": "v8-quran-001",
+      "question": "Tîn sûresine adını veren 'tîn' sözcüğünün Türkçe karşılığı hangisidir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "İncir",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hurma"
+        },
+        {
+          "id": "o2",
+          "text": "İncir"
+        },
+        {
+          "id": "o3",
+          "text": "Zeytin"
+        },
+        {
+          "id": "o4",
+          "text": "Üzüm"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/tin-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/tin-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Tîn sûresi: adını ilk âyetteki tîn/incir kelimesinden almıştır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 238,
+      "id": "v8-quran-002",
+      "question": "Mâûn sûresi adını hangi âyetinde geçen kelimeden alır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Son âyet",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "İlk âyet"
+        },
+        {
+          "id": "o2",
+          "text": "Son âyet"
+        },
+        {
+          "id": "o3",
+          "text": "Üçüncü âyet"
+        },
+        {
+          "id": "o4",
+          "text": "Beşinci âyet"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/maun-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/maun-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Mâûn sûresi: adını son âyetindeki mâûn kelimesinden aldığı açıkça belirtilmiştir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 239,
+      "id": "v8-quran-003",
+      "question": "Kâfirûn sûresinde özellikle hangi inanç ilkesi vurgulanır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Allah'a ortak koşmama (tevhid)",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Atalara övgü"
+        },
+        {
+          "id": "o2",
+          "text": "Allah'a ortak koşmama (tevhid)"
+        },
+        {
+          "id": "o3",
+          "text": "Dünyevî servet biriktirme"
+        },
+        {
+          "id": "o4",
+          "text": "Soy üstünlüğü"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/kafirun-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/kafirun-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Kâfirûn sûresi: başka ilahlara ibadeti reddederek tevhid ve şirkten ayrışmayı vurgular.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 240,
+      "id": "v8-quran-004",
+      "question": "Âdiyât sûresinin başında genellikle hangi hayvanların soluk soluğa koşması anlatılır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Savaş atları",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Develer"
+        },
+        {
+          "id": "o2",
+          "text": "Savaş atları"
+        },
+        {
+          "id": "o3",
+          "text": "Filler"
+        },
+        {
+          "id": "o4",
+          "text": "Koyunlar"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/adiyat-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/adiyat-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Âdiyât sûresi: ilk âyetlerde savaşa koşan atlar yaygın tefsirdir; aynı maddede deve ve mecazi yorumların da bulunduğu açıklanır.",
+      "conclusion": "supported-mainstream-interpretation-other-readings-exist",
+      "checkedOn": "2026-10-22",
+      "notes": "Source explicitly discusses alternative camel/metaphorical interpretations; the question already says 'genellikle' to avoid overstating uniqueness."
+    },
+    {
+      "position": 241,
+      "id": "v8-quran-005",
+      "question": "Kur'an'daki 'es-seb'u'l-mesânî' ifadesi yaygın yoruma göre hangi sûreyi anlatır?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Fâtiha",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Yâsîn"
+        },
+        {
+          "id": "o2",
+          "text": "Fâtiha"
+        },
+        {
+          "id": "o3",
+          "text": "Kehf"
+        },
+        {
+          "id": "o4",
+          "text": "Mülk"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/fatiha-suresi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/fatiha-suresi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Fâtiha sûresi: es-seb'u'l-mesânî (Hicr 15/87) genel olarak Fâtiha diye anlaşılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 242,
+      "id": "v8-prophets-001",
+      "question": "Kur'an'da Ba'l inancıyla mücadele ettiği belirtilen peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. İlyâs",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Hûd"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. İlyâs"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Sâlih"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Lût"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ilyas"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/ilyas",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV İlyâs: Ba'l putuna karşı tevhid çağrısında bulunması Sâffât kıssasıyla açıklanır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 243,
+      "id": "v8-prophets-002",
+      "question": "Hz. İbrâhim'in oğlu İshak'ın annesi kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Sâre",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hâcer"
+        },
+        {
+          "id": "o2",
+          "text": "Sâre"
+        },
+        {
+          "id": "o3",
+          "text": "Meryem"
+        },
+        {
+          "id": "o4",
+          "text": "Âmine"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ishak"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/ishak",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV İshak: İbrâhim'in Sâre'den olan oğlu İshak'tır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 244,
+      "id": "v8-prophets-003",
+      "question": "Kur'an'a göre tufandan sonra Hz. Nûh'un gemisinin üzerine oturduğu dağın adı nedir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Cûdî",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Sînâ"
+        },
+        {
+          "id": "o2",
+          "text": "Cûdî"
+        },
+        {
+          "id": "o3",
+          "text": "Uhud"
+        },
+        {
+          "id": "o4",
+          "text": "Arafat"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/cudi-dagi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/cudi-dagi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Cûdî Dağı: Hûd 11/44'te geminin Cûdî üzerine oturması anlatılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 245,
+      "id": "v8-prophets-004",
+      "question": "Meryem sûresi 19/54'te sözünde durmasıyla övülen peygamber kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. İsmâil",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Yûnus"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. İsmâil"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. İshak"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Eyyûb"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/ismail--peygamber"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/ismail--peygamber",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV İsmâil: Meryem 19/54'e göre sözünün eri olarak anılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 246,
+      "id": "v8-prophets-005",
+      "question": "Enbiyâ sûresi 21/85'te İsmâil ve İdrîs ile birlikte sabredenlerden sayılan isim kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Zülkifl",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Yahyâ"
+        },
+        {
+          "id": "o2",
+          "text": "Zülkifl"
+        },
+        {
+          "id": "o3",
+          "text": "Hârûn"
+        },
+        {
+          "id": "o4",
+          "text": "Şuayb"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/zulkifl"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/zulkifl",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Zülkifl: Enbiyâ 21/85'te İsmâil ve İdrîs'le birlikte sabredenlerden sayılır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 247,
+      "id": "v8-history-001",
+      "question": "Hz. Peygamber'in şairi olarak tanınan sahâbî kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hassân b. Sâbit",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Zeyd b. Sâbit"
+        },
+        {
+          "id": "o2",
+          "text": "Hassân b. Sâbit"
+        },
+        {
+          "id": "o3",
+          "text": "Selmân-ı Fârisî"
+        },
+        {
+          "id": "o4",
+          "text": "Bilâl-i Habeşî"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/hassan-b-sabit"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/hassan-b-sabit",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Hassân b. Sâbit: Hz. Peygamber'in şairi olarak ünlenmiştir.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 248,
+      "id": "v8-history-002",
+      "question": "Hz. Peygamber'in 'Seyfullah' unvanıyla andığı meşhur kumandan kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hâlid b. Velîd",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Sa'd b. Muâz"
+        },
+        {
+          "id": "o2",
+          "text": "Hâlid b. Velîd"
+        },
+        {
+          "id": "o3",
+          "text": "Ebû Ubeyde b. Cerrâh"
+        },
+        {
+          "id": "o4",
+          "text": "Mus'ab b. Umeyr"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/halid-b-velid"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/halid-b-velid",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Hâlid b. Velîd: Seyfullah unvanı verilen askerî kumandandır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 249,
+      "id": "v8-history-003",
+      "question": "Fârûk lakabıyla tanınan râşid halife kimdir?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Hz. Ömer",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Hz. Osman"
+        },
+        {
+          "id": "o2",
+          "text": "Hz. Ömer"
+        },
+        {
+          "id": "o3",
+          "text": "Hz. Ali"
+        },
+        {
+          "id": "o4",
+          "text": "Hz. Ebû Bekir"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/faruk--omer"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/faruk--omer",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Fârûk: hak ile batılı ayıran Hz. Ömer'in lakabıdır.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    },
+    {
+      "position": 250,
+      "id": "v8-history-004",
+      "question": "İslâm'ın Medine'deki ilk öğretmenlerinden Mus'ab b. Umeyr hangi savaşta şehit olmuştur?",
+      "correctOptionId": "o2",
+      "correctAnswer": "Uhud",
+      "allOptions": [
+        {
+          "id": "o1",
+          "text": "Bedir"
+        },
+        {
+          "id": "o2",
+          "text": "Uhud"
+        },
+        {
+          "id": "o3",
+          "text": "Hendek"
+        },
+        {
+          "id": "o4",
+          "text": "Huneyn"
+        }
+      ],
+      "existingSourceUrls": [
+        "https://islamansiklopedisi.org.tr/uhud-gazvesi"
+      ],
+      "sourceEvidenceUrl": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+      "sourceAccess": "tdv-direct-source-reading",
+      "passageSummary": "TDV Uhud Gazvesi: Mus'ab b. Umeyr savaşta şehid düşmüştür.",
+      "conclusion": "source-supports-recorded-answer",
+      "checkedOn": "2026-10-22",
+      "notes": null
+    }
+  ]
+}

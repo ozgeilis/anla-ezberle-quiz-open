@@ -1,0 +1,1408 @@
+// Quran-focused v72 release candidates. Source-linked, owner-authorized.
+// v71 questions are immutable; replacements apply only to v72.
+// Each retired ID corresponds positionally to a new question ID.
+import type { Question } from "./model";
+
+export const retiredQuestionIdsV72 = [
+  "e150-quran-001",
+  "e150-quran-002",
+  "e150-quran-003",
+  "e150-quran-004",
+  "e150-quran-005",
+  "e150-quran-006",
+  "e150-quran-007",
+  "e150-quran-008",
+  "e150-quran-009",
+  "e150-quran-010",
+  "e150-quran-011",
+  "e150-quran-012",
+  "e150-quran-013",
+  "e150-quran-014",
+  "e150-quran-015",
+  "e150-quran-016",
+  "e150-quran-017",
+  "e150-quran-018",
+  "e150-quran-019",
+  "e150-quran-020",
+  "e150-quran-021",
+  "e150-quran-022",
+  "e150-quran-023",
+  "e150-quran-024",
+  "e150-quran-025",
+  "e150-quran-026",
+  "e150-quran-027",
+  "e150-quran-028",
+  "e150-quran-029",
+  "e150-quran-030",
+] as const;
+
+export const approvedNewQuestionsV72: readonly Question[] = [
+  {
+    id: "quran-meaning-v72-001",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Bir arkadaşınıza hatasını hatırlatırken Bakara 2/83'ün özellikle vurguladığı konuşma ilkesi hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Konuşmadan önce sözü kısa ve açık tutmak",
+      },
+      {
+        id: "o2",
+        text: "İnsanlara güzel söz söylemek",
+      },
+      {
+        id: "o3",
+        text: "Konuyu uygun bir zamanda ele almak",
+      },
+      {
+        id: "o4",
+        text: "Karşı tarafın görüşünü sonuna kadar dinlemek",
+      },
+    ],
+    correctOptionId: "o2",
+    explanation:
+      "Âyette ana babaya, yakınlara, yetimlere ve yoksullara iyilikle birlikte insanlara güzel söz söylemek de anılır. Güzel iletişim, ahlâkî sorumluluğun bir parçasıdır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/2/ayet/83?kaynak=1",
+        locator: "2/83; Diyanet meal/tefsir kontrolü",
+        supports:
+          "İsrâiloğulları’na verilen öğütler içinde insanlara güzel söz söylemek açıkça geçer.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-2-83",
+  },
+  {
+    id: "quran-meaning-v72-002",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Bakara 2/153'te Allah'tan yardım isteme konusunda birlikte anılan iki tutum hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Sabır ve namaz",
+      },
+      {
+        id: "o2",
+        text: "Şükür ve sadaka",
+      },
+      {
+        id: "o3",
+        text: "Tövbe ve zikir",
+      },
+      {
+        id: "o4",
+        text: "Tefekkür ve infak",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyet, sabır ve namazla Allah'tan yardım istemeyi öğütler. Sabır, zorluk karşısında doğru tutumu sürdürmeye yöneliktir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/2/ayet/153?kaynak=1",
+        locator: "2/153; Diyanet meal/tefsir kontrolü",
+        supports: "Yardım istemek için sabır ve namaz birlikte emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-2-153",
+  },
+  {
+    id: "quran-meaning-v72-004",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Bakara 2/263'te incitici bir yardım yerine daha hayırlı sayılan tutum hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "İhtiyaç sahibinin isteğini önce dinlemek",
+      },
+      {
+        id: "o2",
+        text: "Yardımı belirli aralıklarla sürdürmek",
+      },
+      {
+        id: "o3",
+        text: "Yardım için başka kişileri harekete geçirmek",
+      },
+      {
+        id: "o4",
+        text: "Güzel söz ve bağışlayıcı tutum göstermek",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet, başa kakılan ve incitici davranışla birlikte yapılan yardım yerine güzel sözü ve bağışlamayı üstün tutar. Yardımın yöntemi de önemlidir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/2/ayet/263?kaynak=1",
+        locator: "2/263; Diyanet meal/tefsir kontrolü",
+        supports: "Güzel söz ve bağışlama, incitici sadakadan üstün tutulur.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-2-263",
+  },
+  {
+    id: "quran-meaning-v72-006",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Âl-i İmrân 3/134'te öfkelendiğinde hangi tutumu gösterenler övülür?",
+    options: [
+      {
+        id: "o1",
+        text: "Öfkesini denetleyip insanları affedenler",
+      },
+      {
+        id: "o2",
+        text: "Sorunu ortak bir arabulucuyla çözmeye çalışanlar",
+      },
+      {
+        id: "o3",
+        text: "Konuşmadan önce sakinleşmek için ara verenler",
+      },
+      {
+        id: "o4",
+        text: "Duygularını uygun zamanda açıkça anlatanlar",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyette bollukta ve darlıkta paylaşmak, öfkeyi kontrol etmek ve insanları affetmek takvâ sahiplerinin özellikleri arasında sayılır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/3/ayet/134?kaynak=1",
+        locator: "3/134; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Takvâ sahiplerinin öfkelerini yenmeleri ve insanları affetmeleri övülür.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-3-134",
+  },
+  {
+    id: "quran-meaning-v72-007",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Âl-i İmrân 3/159'da Hz. Peygamber'e çevresindekilerle ilişkisi konusunda hangi davranış dizisi öğütlenir?",
+    options: [
+      {
+        id: "o1",
+        text: "Önce ayrıntılı bilgi toplamak, sonra karar vermek",
+      },
+      {
+        id: "o2",
+        text: "Görevleri kişilere dağıtıp sonuçlarını izlemek",
+      },
+      {
+        id: "o3",
+        text: "Affetmek, onlar için bağışlanma dilemek ve danışmak",
+      },
+      {
+        id: "o4",
+        text: "Ortak hedef belirlemek, sonra görevleri planlamak",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyette kaba ve katı yürekli bir yaklaşımın insanları uzaklaştıracağı belirtilir. Affetme, danışma ve karar sonrası tevekkül de öğütlenir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/3/ayet/159?kaynak=1",
+        locator: "3/159; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Hz. Peygamber'e affetmek, bağışlanma dilemek ve iş konusunda danışmak öğütlenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-3-159",
+  },
+  {
+    id: "quran-meaning-v72-008",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Bir satıcı müşterisini istemediği sözleşmeyi imzalamaya zorluyor. Nisâ 4/29'un ticaret için vurguladığı hangi şart yerine gelmemiştir?",
+    options: [
+      {
+        id: "o1",
+        text: "Sözleşme şartlarının yazılı kayda geçirilmesi",
+      },
+      {
+        id: "o2",
+        text: "Tarafların karşılıklı rızası",
+      },
+      {
+        id: "o3",
+        text: "Ürünün teslim tarihinin belirlenmesi",
+      },
+      {
+        id: "o4",
+        text: "Fiyatın piyasa ortalamasına uygunluğu",
+      },
+    ],
+    correctOptionId: "o2",
+    explanation:
+      "Âyet, malları haksız yollarla yememeyi ve karşılıklı rızaya dayalı ticareti istisna olarak belirtir. Rıza, haksız kazancı meşrulaştırmaz.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/4/ayet/29?kaynak=1",
+        locator: "4/29; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Haksız mal edinme yasaklanır; karşılıklı rızaya dayalı ticaret ayrı tutulur.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-4-29",
+  },
+  {
+    id: "quran-meaning-v72-009",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Nisâ 4/58'in 'emanetleri ehline verme' öğüdüne göre bir görevli seçerken hangi ölçü önceliklidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Adayların eşit söz hakkına sahip olması",
+      },
+      {
+        id: "o2",
+        text: "Karar sürecinin gerekçesinin açıklanması",
+      },
+      {
+        id: "o3",
+        text: "Görev tanımının önceden hazırlanması",
+      },
+      {
+        id: "o4",
+        text: "Adayın görevi hakkıyla yapabilecek yeterlilikte olması",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet emanetin ehline verilmesini ve adaletle hükmedilmesini emreder. Görevlendirme yapılırken kişisel yakınlık değil, göreve uygunluk ve hakkaniyet gözetilmelidir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/4/ayet/58?kaynak=1",
+        locator: "4/58; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Emanetleri ehline teslim etmek ve adaletle hükmetmek açıkça emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-4-58",
+  },
+  {
+    id: "quran-meaning-v72-011",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "hard",
+    question:
+      "Bir olayda tanıklığınız yakınınızın aleyhine sonuç doğurabilir. Nisâ 4/135'in doğrudan istediği davranış hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Olayı anlatmadan önce taraflarla ayrı ayrı görüşmek",
+      },
+      {
+        id: "o2",
+        text: "Önce bir uzlaşma zemini aramak",
+      },
+      {
+        id: "o3",
+        text: "Yakınının aleyhine olsa da adil ve doğru tanıklık etmek",
+      },
+      {
+        id: "o4",
+        text: "Tanıklığın sorumluluğunu yetkin birine danışmak",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyet, kişinin kendisi, ana babası ve yakınları aleyhine bile olsa adil şahitlik yapmayı öğütler; zenginlik ya da yoksulluk adaleti değiştirmemelidir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/4/ayet/135?kaynak=1",
+        locator: "4/135; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Kişi kendisi veya yakınlarının aleyhine olsa dahi adil şahitlik emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-4-135",
+  },
+  {
+    id: "quran-meaning-v72-012",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question: "Mâide 5/8'de adalet hakkında hangi ilke özellikle vurgulanır?",
+    options: [
+      {
+        id: "o1",
+        text: "Karşıt görüşü yeterince dinlemek",
+      },
+      {
+        id: "o2",
+        text: "Bir topluluğa duyulan kinin adalete engel olmaması",
+      },
+      {
+        id: "o3",
+        text: "Uyuşmazlıkta yazılı belgelere başvurmak",
+      },
+      {
+        id: "o4",
+        text: "Taraflar arasında uzlaştırıcı çözüm aramak",
+      },
+    ],
+    correctOptionId: "o2",
+    explanation:
+      "Âyet, bir topluluğa duyulan öfke veya kin yüzünden adaletten ayrılmamayı vurgular. Adalet yalnızca sevilen kişilere karşı uygulanmaz.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/5/ayet/8?kaynak=1",
+        locator: "5/8; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Bir topluluğa duyulan kinin adaletsizliğe yol açmaması istenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-5-8",
+  },
+  {
+    id: "quran-meaning-v72-014",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Mâide 5/90'da sakınılması gerekenler arasında birlikte sayılan iki şey hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Sarhoş edici içki ve kumar",
+      },
+      {
+        id: "o2",
+        text: "Gıybet ve kötü zan",
+      },
+      {
+        id: "o3",
+        text: "Ölçüde hile ve rüşvet",
+      },
+      {
+        id: "o4",
+        text: "Savurganlık ve kibir",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyet, sarhoş edici içkiyi ve kumarı sakınılması gereken davranışlar arasında sayar. Bu uyarı bireysel ve toplumsal zararlarla ilişkilidir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/5/ayet/90?kaynak=1",
+        locator: "5/90; Diyanet meal/tefsir kontrolü",
+        supports:
+          "İçki ve kumar, uzak durulması istenenler arasında birlikte anılır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-5-90",
+  },
+  {
+    id: "quran-meaning-v72-015",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "En'âm 6/141'de hasat edilen ürünlerle ilgili hangi iki ilke birlikte vurgulanır?",
+    options: [
+      {
+        id: "o1",
+        text: "Ürünü adil fiyatla satmak ve işçiye hakkını vermek",
+      },
+      {
+        id: "o2",
+        text: "Ürünü saklayacak yer hazırlamak ve zamanında paylaşmak",
+      },
+      {
+        id: "o3",
+        text: "Gıda kaynaklarını komşularla kullanmak ve ortak üretmek",
+      },
+      {
+        id: "o4",
+        text: "Hasat günü hakkını vermek ve israf etmemek",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet, ürünün hasat günü hakkını vermeyi ve israf etmemeyi birlikte hatırlatır. Paylaşma ile ölçülülük birbirini tamamlar.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/6/ayet/141?kaynak=1",
+        locator: "6/141; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Hasat gününde ürünün hakkını verme ve israf etmeme birlikte emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-6-141",
+  },
+  {
+    id: "quran-meaning-v72-017",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Tevbe 9/119'da inananlara özellikle kimlerle beraber olmaları öğütlenir?",
+    options: [
+      {
+        id: "o1",
+        text: "Sabredenlerle",
+      },
+      {
+        id: "o2",
+        text: "Yardımseverlerle",
+      },
+      {
+        id: "o3",
+        text: "Bilgili olanlarla",
+      },
+      {
+        id: "o4",
+        text: "Doğru olanlarla",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet, Allah'a karşı sorumluluk bilinciyle davranmayı ve doğrularla birlikte olmayı öğütler. Çevre seçimi davranışları etkileyebilir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/9/ayet/119?kaynak=1",
+        locator: "9/119; Diyanet meal/tefsir kontrolü",
+        supports: "Doğrularla beraber olmak öğütlenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-9-119",
+  },
+  {
+    id: "quran-meaning-v72-019",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Ra'd 13/28'de kalplerin huzur bulması özellikle neyle ilişkilendirilir?",
+    options: [
+      {
+        id: "o1",
+        text: "İhtiyaç sahiplerine yardım etmekle",
+      },
+      {
+        id: "o2",
+        text: "Çevresindekilerle barış içinde yaşamakla",
+      },
+      {
+        id: "o3",
+        text: "Allah'ı anmakla",
+      },
+      {
+        id: "o4",
+        text: "İşini özenle yapıp emek vermekle",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyette gönüllerin Allah'ı anmakla huzur bulduğu belirtilir. Bu, âyetin dinî ve manevî vurgusudur.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/13/ayet/28?kaynak=1",
+        locator: "13/28; Diyanet meal/tefsir kontrolü",
+        supports: "Gönüllerin Allah'ı anmakla huzura kavuşması ifade edilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-13-28",
+  },
+  {
+    id: "quran-meaning-v72-020",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Nahl 16/125, insanları Allah'ın yoluna çağırmada hangi yöntemi öne çıkarır?",
+    options: [
+      {
+        id: "o1",
+        text: "Hikmet ve güzel öğütle yaklaşmayı",
+      },
+      {
+        id: "o2",
+        text: "Muhatabın sorularını yazılı yanıtlamayı",
+      },
+      {
+        id: "o3",
+        text: "Günlük hayattan çok sayıda örnek vermeyi",
+      },
+      {
+        id: "o4",
+        text: "Önce ortak hedefleri belirleyip toplantı yapmayı",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyet, davetin hikmet ve güzel öğütle yapılmasını, tartışmanın da en güzel üslupla yürütülmesini öğütler. Farklı düşünene baskı uygulamak bu üslupla bağdaşmaz.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/16/ayet/125?kaynak=1",
+        locator: "16/125; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Hikmet ve güzel öğütle davet ve en güzel yöntemle tartışma öğütlenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-16-125",
+  },
+  {
+    id: "quran-meaning-v72-021",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "İsrâ 17/26'da haklarının verilmesi birlikte hatırlatılan gruplar hangileridir?",
+    options: [
+      {
+        id: "o1",
+        text: "Ana babalar, komşular ve misafirler",
+      },
+      {
+        id: "o2",
+        text: "Yaşlılar, hastalar ve öğrenciler",
+      },
+      {
+        id: "o3",
+        text: "Öğretmenler, yolcular ve esnaf",
+      },
+      {
+        id: "o4",
+        text: "Yakınlar, yoksullar ve yolda kalmışlar",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet, yakınların, yoksulların ve yolda kalmışların haklarının verilmesini ister; savurganlıktan da sakındırır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/17/ayet/26?kaynak=1",
+        locator: "17/26; Diyanet meal/tefsir kontrolü",
+        supports: "Yakın, yoksul ve yolcunun hakları anılır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-17-26",
+  },
+  {
+    id: "quran-meaning-v72-022",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "İsrâ 17/27'de özellikle ağır biçimde eleştirilen davranış hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Savurganlık",
+      },
+      {
+        id: "o2",
+        text: "Kibirli yürümek",
+      },
+      {
+        id: "o3",
+        text: "İnsanlara kötü lakap takmak",
+      },
+      {
+        id: "o4",
+        text: "Alışverişte hile yapmak",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyette savurganlık sert biçimde kınanır. İhtiyaçları gözetmek, kaynakları sorumsuzca tüketmekten farklıdır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/17/ayet/27?kaynak=1",
+        locator: "17/27; Diyanet meal/tefsir kontrolü",
+        supports: "Savurganlık özellikle kınanır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-17-27",
+  },
+  {
+    id: "quran-meaning-v72-023",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Tâhâ 20/44'te Hz. Mûsâ ve Hz. Hârûn'a Firavun'la konuşurken özellikle hangi üslup öğütlenir?",
+    options: [
+      {
+        id: "o1",
+        text: "Karşı tarafı dikkatle dinleyerek konuşmak",
+      },
+      {
+        id: "o2",
+        text: "Somut delilleri sırayla açıklamak",
+      },
+      {
+        id: "o3",
+        text: "Yumuşak söz kullanmak",
+      },
+      {
+        id: "o4",
+        text: "Sakin bir ortam seçerek konuşmak",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyette, Firavun'a bile yumuşak söz söylenmesi istenir. Mesajı aktarırken kullanılan üslubun önemi vurgulanır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/20/ayet/44?kaynak=1",
+        locator: "20/44; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Hz. Mûsâ ve Hz. Hârûn'a Firavun karşısında bile yumuşak söz emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-20-44",
+  },
+  {
+    id: "quran-meaning-v72-024",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Mü'minûn 23/3'te kurtuluşa eren müminlerin özellikle hangi şeyden yüz çevirdiği belirtilir?",
+    options: [
+      {
+        id: "o1",
+        text: "Haksız kazanç arayışından",
+      },
+      {
+        id: "o2",
+        text: "Boş ve yararsız işlerden",
+      },
+      {
+        id: "o3",
+        text: "Kırıcı konuşmalardan",
+      },
+      {
+        id: "o4",
+        text: "Gereksiz harcamalardan",
+      },
+    ],
+    correctOptionId: "o2",
+    explanation:
+      "Âyet, kurtuluşa eren müminlerin faydasız ve boş işlerden yüz çevirdiğini belirtir. Zamanı ve sözü anlamlı kullanmak öne çıkar.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/23/ayet/3?kaynak=1",
+        locator: "23/3; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Lağiv, anlamsız/yararsız söz ve davranışlar olarak açıklanır; bunlardan yüz çevrilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-23-3",
+  },
+  {
+    id: "quran-meaning-v72-025",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Nûr 24/22'de kırgınlıkların ardından hangi tutum açıkça öğütlenir?",
+    options: [
+      {
+        id: "o1",
+        text: "Sorunun nedenlerini araştırmak",
+      },
+      {
+        id: "o2",
+        text: "Arayı düzeltmek için görüşme ayarlamak",
+      },
+      {
+        id: "o3",
+        text: "Her iki tarafın görüşünü dinlemek",
+      },
+      {
+        id: "o4",
+        text: "Affetmek ve hoşgörülü davranmak",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet, yakınlara ve ihtiyaç sahiplerine yardımın kesilmemesi bağlamında affetmeyi ve hoşgörüyü hatırlatır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/24/ayet/22?kaynak=1",
+        locator: "24/22; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Affetme ve hoşgörü, yardımı kesme eğilimi bağlamında hatırlatılır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-24-22",
+  },
+  {
+    id: "quran-meaning-v72-026",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Nûr 24/27'de başkasının evine girmeden önce birlikte belirtilen iki davranış hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Ziyaret saatini önceden kararlaştırmak ve sözünü tutmak",
+      },
+      {
+        id: "o2",
+        text: "İzin istemek ve selam vermek",
+      },
+      {
+        id: "o3",
+        text: "Hediye götürmek ve hâl hatır sormak",
+      },
+      {
+        id: "o4",
+        text: "Kapıyı çalmak ve ev sahibinin müsaitliğini sormak",
+      },
+    ],
+    correctOptionId: "o2",
+    explanation:
+      "Âyet, başkasına ait eve girmeden önce izin almayı ve ev halkına selam vermeyi öğütler. Mahremiyete saygı öne çıkar.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/24/ayet/27?kaynak=1",
+        locator: "24/27; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Başkasının evine girişte izin istemek ve selam vermek öğütlenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-24-27",
+  },
+  {
+    id: "quran-meaning-v72-027",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Ahzâb 33/70'te inananlara hangi konuşma ilkesi özellikle öğütlenir?",
+    options: [
+      {
+        id: "o1",
+        text: "Konuşmadan önce düşünmek",
+      },
+      {
+        id: "o2",
+        text: "Söz verirken ölçülü olmak",
+      },
+      {
+        id: "o3",
+        text: "Doğru ve sağlam söz söylemek",
+      },
+      {
+        id: "o4",
+        text: "Muhatabın sözünü kesmemek",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyet, Allah'a karşı sorumluluk bilinciyle davranıp doğru söz söylemeyi öğütler. Konuşmanın güvenilirliği ahlâkî bir yükümlülüktür.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/33/ayet/70?kaynak=1",
+        locator: "33/70; Diyanet meal/tefsir kontrolü",
+        supports: "Doğru söz söylemek emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-33-70",
+  },
+  {
+    id: "quran-meaning-v72-028",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Fussilet 41/34'te kötülüğe karşı hangi tutumun düşmanlığı dostluğa çevirebileceği anlatılır?",
+    options: [
+      {
+        id: "o1",
+        text: "Sorunu karşılıklı uzlaşmayla çözmeye çalışmak",
+      },
+      {
+        id: "o2",
+        text: "Haksızlıkta arabulucu yardımı istemek",
+      },
+      {
+        id: "o3",
+        text: "Gerilimi azaltmak için konuşmaya ara vermek",
+      },
+      {
+        id: "o4",
+        text: "Kötülüğü daha güzel bir davranışla savmak",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyet, kötülüğü en güzel davranışla savuşturmayı öğütler. İyilikle karşılık verme çağrısı, kişinin güvenliğini veya meşru haklarını korumaktan vazgeçmesini gerektirmez.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/41/ayet/34?kaynak=1",
+        locator: "41/34; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Kötülüğü en güzel davranışla savmak ve muhtemel dostluğa dönüşüm anlatılır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-41-34",
+  },
+  {
+    id: "quran-meaning-v72-029",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Şûrâ 42/38'de topluluğu ilgilendiren işlerin yürütülmesinde hangi yöntem övülür?",
+    options: [
+      {
+        id: "o1",
+        text: "İşleri kendi aralarında danışarak yürütmek",
+      },
+      {
+        id: "o2",
+        text: "Görüşü uzmanlardan almaya öncelik vermek",
+      },
+      {
+        id: "o3",
+        text: "Karar öncesi verileri yazılı toplamak",
+      },
+      {
+        id: "o4",
+        text: "Görevleri iş bölümüne göre planlamak",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyette müminlerin işlerini kendi aralarında danışarak yürüttükleri anlatılır. Ortak akıl aramak önemli bir toplumsal erdemdir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/42/ayet/38?kaynak=1",
+        locator: "42/38; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Ortak işlerin aralarında danışma ile yürütülmesi, Diyanet mealindeki 42/38 pasajında açıkça anılır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-42-38",
+  },
+  {
+    id: "quran-meaning-v72-030",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Hucurât 49/10'da inananlar arasındaki anlaşmazlık için hangi sorumluluk doğrudan hatırlatılır?",
+    options: [
+      {
+        id: "o1",
+        text: "Olayı taraflardan ayrı ayrı dinlemek",
+      },
+      {
+        id: "o2",
+        text: "Zarar görenlerin ihtiyaçlarını belirlemek",
+      },
+      {
+        id: "o3",
+        text: "Aralarını düzeltip barışı sağlamak",
+      },
+      {
+        id: "o4",
+        text: "Birlikte görüşmek için uygun zaman seçmek",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyet, müminlerin kardeş olduğunu hatırlatır ve aralarının düzeltilmesini öğütler. Uzlaşma toplumsal sorumluluk olarak sunulur.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/49/ayet/10?kaynak=1",
+        locator: "49/10; Diyanet meal/tefsir kontrolü",
+        supports: "Müminlerin kardeşliği ve aralarını düzeltme öğütlenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-49-10",
+  },
+  {
+    id: "quran-meaning-v72-032",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "hard",
+    question:
+      "Necm 53/39'da insanın emeği ve çabasıyla ilgili hangi ilke dile getirilir?",
+    options: [
+      {
+        id: "o1",
+        text: "Bilgiyi toplum yararına kullanmanın önemi",
+      },
+      {
+        id: "o2",
+        text: "İnsanın ancak kendi çabasının karşılığını bulması",
+      },
+      {
+        id: "o3",
+        text: "İnsanların sahip olduklarını başkalarıyla paylaşması",
+      },
+      {
+        id: "o4",
+        text: "Herkesin işini dürüstçe yerine getirmesi",
+      },
+    ],
+    correctOptionId: "o2",
+    explanation:
+      "Âyet, insanın çalışıp çabalamasına dikkat çeker. Metnin bağlamı hesap ve karşılıkla ilgilidir; bunun dünyevî başarıyı garanti ettiği iddia edilmez.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/53/ayet/39?kaynak=1",
+        locator: "53/39; Diyanet meal/tefsir kontrolü",
+        supports:
+          "İnsan ancak çabasının sonucunu elde eder; takip eden ayetlerde karşılığının görüleceği söylenir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-53-39",
+  },
+  {
+    id: "quran-meaning-v72-033",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question: "Rahmân 55/9'da ölçü ve tartıyla ilgili açık öğüt hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Ölçüm araçlarını düzenli aralıklarla denetlemek",
+      },
+      {
+        id: "o2",
+        text: "Alışverişi yazılı belgeyle doğrulamak",
+      },
+      {
+        id: "o3",
+        text: "Ürünün niteliğini alıcıya açıkça anlatmak",
+      },
+      {
+        id: "o4",
+        text: "Ölçüyü adaletle gözetip tartıyı eksiltmemek",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyette ölçüyü adaletle tutmak ve tartıyı eksik yapmamak öğütlenir. Doğruluk, ekonomik ilişkilerin önemli bir parçasıdır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/55/ayet/9?kaynak=1",
+        locator: "55/9; Diyanet meal/tefsir kontrolü",
+        supports: "Ölçü ve tartıda adalet ve eksiltmeme emredilir.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-55-9",
+  },
+  {
+    id: "quran-meaning-v72-035",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Haşr 59/9'da kendisi ihtiyaç içindeyken başkasını öncelemek hangi erdeme örnektir?",
+    options: [
+      {
+        id: "o1",
+        text: "Kanaatkârlık",
+      },
+      {
+        id: "o2",
+        text: "Tevazu",
+      },
+      {
+        id: "o3",
+        text: "Özgecilik",
+      },
+      {
+        id: "o4",
+        text: "Sabır",
+      },
+    ],
+    correctOptionId: "o3",
+    explanation:
+      "Âyet, Medineli yardımcıların kendileri ihtiyaç duydukları hâlde diğerlerini kendilerine tercih etmelerini över. Bu tutum özgecilik (îsâr) olarak anılır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/59/ayet/9?kaynak=1",
+        locator: "59/9; Diyanet meal/tefsir kontrolü",
+        supports:
+          "İhtiyaçları varken başkalarını kendilerine tercih edenler övülür.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-59-9",
+  },
+  {
+    id: "quran-meaning-v72-036",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question:
+      "Mümtehine 60/8, din yüzünden savaşmayan ve insanları yurtlarından çıkarmayanlara karşı hangi iki değeri açıkça birlikte anar?",
+    options: [
+      {
+        id: "o1",
+        text: "İyilik ve adalet",
+      },
+      {
+        id: "o2",
+        text: "Nezaket ve sabır",
+      },
+      {
+        id: "o3",
+        text: "Yardımlaşma ve güven",
+      },
+      {
+        id: "o4",
+        text: "Bilgi ve hikmet",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Âyet, belirtilen koşullardaki insanlara iyilik ve adaletle davranmayı yasaklamaz; Allah'ın adaletli davrananları sevdiğini belirtir.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/60/ayet/8?kaynak=1",
+        locator: "60/8; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Din yüzünden savaşmayan ve yurtlarından çıkarmayanlara iyilik ve adalet yasaklanmaz.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-60-8",
+  },
+  {
+    id: "quran-meaning-v72-037",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "medium",
+    question: "Saff 61/2-3'te hangi tutarsızlık özellikle kınanır?",
+    options: [
+      {
+        id: "o1",
+        text: "Emanet edilen işi geciktirmek",
+      },
+      {
+        id: "o2",
+        text: "İhtiyaç sahibine yapılacak yardımı ertelemek",
+      },
+      {
+        id: "o3",
+        text: "Topluluğun ortak görüşünü dinlememek",
+      },
+      {
+        id: "o4",
+        text: "Kişinin yapmadığı bir şeyi söylemesi",
+      },
+    ],
+    correctOptionId: "o4",
+    explanation:
+      "Âyetler, kişinin yapmadığı şeyleri söylemesini kınar. Söz ile davranış arasında tutarlılık gerektiği hatırlatılır.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/61/ayet/2?kaynak=1",
+        locator: "61/2-3; Diyanet meal/tefsir kontrolü",
+        supports:
+          "Yapılmayan bir şeyi söylemek ve söz-eylem tutarsızlığı kınanır.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-61-2",
+  },
+  {
+    id: "quran-meaning-v72-038",
+    version: 72,
+    categoryId: "quran",
+    difficulty: "easy",
+    question:
+      "Asr suresi 103/3'te birbirlerine öğütlenmesi vurgulanan iki değer hangisidir?",
+    options: [
+      {
+        id: "o1",
+        text: "Hak ve sabır",
+      },
+      {
+        id: "o2",
+        text: "İlim ve hikmet",
+      },
+      {
+        id: "o3",
+        text: "Adalet ve merhamet",
+      },
+      {
+        id: "o4",
+        text: "Şükür ve tevekkül",
+      },
+    ],
+    correctOptionId: "o1",
+    explanation:
+      "Sure, iman edip iyi işler yapan ve birbirine hakkı ve sabrı öğütleyenleri genel kayıp durumundan ayrı tutar.",
+    sources: [
+      {
+        title: "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        publisher: "Diyanet İşleri Başkanlığı",
+        url: "https://kuran.diyanet.gov.tr/tefsir/sure/103/ayet/3?kaynak=1",
+        locator: "103/3; Diyanet meal/tefsir kontrolü",
+        supports:
+          "İman ve salih amel yanında hakkı ve sabrı tavsiye etmek övülür.",
+        checkStatus: "supported",
+        checkedAt: "2026-10-22",
+      },
+    ],
+    reviewStatus: "approved",
+    reviewNotes:
+      "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
+    updatedAt: "2026-10-22",
+    conceptGroup: "quran-meaning-103-3",
+  },
+];

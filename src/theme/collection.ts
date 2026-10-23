@@ -1,0 +1,57 @@
+/** Original vector medals and jewel surfaces; no raster or third-party artwork. */
+export const collection = {
+  card: ["#075950", "#06494F", "#04353E"],
+  earnedCard: ["#086451", "#075449", "#063B3E"],
+  edge: "#19B6A3",
+  text: "#FFFFFF",
+  secondary: "#CCEAE8",
+  gold: "#FFD65A",
+  mint: "#3AF2CF",
+  ice: "#B9E6FF",
+  track: "#315D65",
+  darkInk: "#07383D",
+  locked: "#124C60",
+  earned: "#245638",
+  glass: "rgba(255,255,255,0.07)",
+  glow: "0px 8px 24px rgba(0,89,79,0.20)",
+  earnedGlow: "0px 7px 25px rgba(223,164,31,0.23)",
+} as const;
+
+export const badgeMetals = {
+  bronze: {
+    name: "Bronz",
+    light: "#FFE3A8",
+    rim: "#FFAF50",
+    base: "#E77D2C",
+    shade: "#A53D14",
+    face: "#B94D1C",
+    ink: "#FFF1CA",
+  },
+  silver: {
+    name: "Gümüş",
+    light: "#F3FDFF",
+    rim: "#C5ECFF",
+    base: "#88BADF",
+    shade: "#3F689E",
+    face: "#436D9B",
+    ink: "#F0FCFF",
+  },
+  gold: {
+    name: "Altın",
+    light: "#FFF5AE",
+    rim: "#FFE269",
+    base: "#F5B91E",
+    shade: "#AC6100",
+    face: "#B97105",
+    ink: "#FFF9D1",
+  },
+  diamond: {
+    name: "Elmas",
+    light: "#E1FFF5",
+    rim: "#8CFFE7",
+    base: "#20D8BD",
+    shade: "#007B79",
+    face: "#007C78",
+    ink: "#E4FFF7",
+  },
+} as const;

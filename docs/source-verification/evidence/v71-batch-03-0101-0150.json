@@ -1,0 +1,1855 @@
+{
+  "bankVersion": 71,
+  "range": [
+    101,
+    150
+  ],
+  "count": 50,
+  "officialSourceComparisonCounts": {
+    "diyanet-pdf-fihrist-direct": 6,
+    "diyanet-pdf-verse-passage-direct": 40,
+    "tdv-original-entry-body": 4
+  },
+  "verdictTotals": {
+    "supports-current-answer": 50
+  },
+  "primaryDiyanetPDF": {
+    "url": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+    "pdfIndexPage": 63,
+    "fihristPrintedPage": "LXIII"
+  },
+  "specialDirectQuranYoluCheck": "e150-prophets-035 = Meryem 19/7, https://kuran.diyanet.gov.tr/tefsir/Meryem-suresi/2257/7-ayet-tefsiri",
+  "limitations": [
+    "Sources read externally; not a rubber-stamp of question supports fields.",
+    "Review still has 1,300 middle questions not covered by batches 01,02,03,30.",
+    "All original v71 IDs, answers and text preserved; do not mutate historic records.",
+    "Differences in Qur'an translation variants should be examined for future questions when they materially affect meaning."
+  ],
+  "entries": [
+    {
+      "position": 101,
+      "id": "e150-quran-035",
+      "question": "Tâhâ suresi kaç âyetten oluşur?",
+      "answerId": "o2",
+      "answerText": "135",
+      "options": [
+        {
+          "id": "o1",
+          "text": "121"
+        },
+        {
+          "id": "o2",
+          "text": "135"
+        },
+        {
+          "id": "o3",
+          "text": "129"
+        },
+        {
+          "id": "o4",
+          "text": "133"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/taha-suresi"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-fihrist-direct",
+      "sourceLocation": "Diyanet Kur'an Meâli PDF page index 63, printed LXIII, surah fihrist",
+      "independentlyReadPassageSummary": "Fihrist: 20. sûre Tâhâ, 135 âyet; âyet sayısı cevabı birebir karşılaştırıldı.",
+      "fihristEntry": {
+        "n": 20,
+        "name": "Tâhâ",
+        "verses": 135
+      },
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 102,
+      "id": "e150-quran-036",
+      "question": "Mushaf sıralamasında 20. sûre hangisidir?",
+      "answerId": "o2",
+      "answerText": "Tâhâ",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Enbiyâ"
+        },
+        {
+          "id": "o2",
+          "text": "Tâhâ"
+        },
+        {
+          "id": "o3",
+          "text": "Hac"
+        },
+        {
+          "id": "o4",
+          "text": "Mü'minûn"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/taha-suresi"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-fihrist-direct",
+      "sourceLocation": "Diyanet Kur'an Meâli PDF page index 63, printed LXIII, surah fihrist",
+      "independentlyReadPassageSummary": "Fihrist: 20. sûre Tâhâ, 135 âyet; sıra cevabı birebir karşılaştırıldı.",
+      "fihristEntry": {
+        "n": 20,
+        "name": "Tâhâ",
+        "verses": 135
+      },
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 103,
+      "id": "e150-quran-037",
+      "question": "Enbiyâ suresi kaç âyetten oluşur?",
+      "answerId": "o2",
+      "answerText": "112",
+      "options": [
+        {
+          "id": "o1",
+          "text": "101"
+        },
+        {
+          "id": "o2",
+          "text": "112"
+        },
+        {
+          "id": "o3",
+          "text": "107"
+        },
+        {
+          "id": "o4",
+          "text": "120"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/enbiya-suresi"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-fihrist-direct",
+      "sourceLocation": "Diyanet Kur'an Meâli PDF page index 63, printed LXIII, surah fihrist",
+      "independentlyReadPassageSummary": "Fihrist: 21. sûre Enbiyâ, 112 âyet; âyet sayısı cevabı birebir karşılaştırıldı.",
+      "fihristEntry": {
+        "n": 21,
+        "name": "Enbiyâ",
+        "verses": 112
+      },
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 104,
+      "id": "e150-quran-038",
+      "question": "Mushaf sıralamasında 21. sûre hangisidir?",
+      "answerId": "o2",
+      "answerText": "Enbiyâ",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Hac"
+        },
+        {
+          "id": "o2",
+          "text": "Enbiyâ"
+        },
+        {
+          "id": "o3",
+          "text": "Mü'minûn"
+        },
+        {
+          "id": "o4",
+          "text": "Nûr"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/enbiya-suresi"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-fihrist-direct",
+      "sourceLocation": "Diyanet Kur'an Meâli PDF page index 63, printed LXIII, surah fihrist",
+      "independentlyReadPassageSummary": "Fihrist: 21. sûre Enbiyâ, 112 âyet; sıra cevabı birebir karşılaştırıldı.",
+      "fihristEntry": {
+        "n": 21,
+        "name": "Enbiyâ",
+        "verses": 112
+      },
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 105,
+      "id": "e150-quran-039",
+      "question": "Hac suresi kaç âyetten oluşur?",
+      "answerId": "o2",
+      "answerText": "78",
+      "options": [
+        {
+          "id": "o1",
+          "text": "72"
+        },
+        {
+          "id": "o2",
+          "text": "78"
+        },
+        {
+          "id": "o3",
+          "text": "85"
+        },
+        {
+          "id": "o4",
+          "text": "96"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/hac-suresi"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-fihrist-direct",
+      "sourceLocation": "Diyanet Kur'an Meâli PDF page index 63, printed LXIII, surah fihrist",
+      "independentlyReadPassageSummary": "Fihrist: 22. sûre Hac, 78 âyet; âyet sayısı cevabı birebir karşılaştırıldı.",
+      "fihristEntry": {
+        "n": 22,
+        "name": "Hac",
+        "verses": 78
+      },
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 106,
+      "id": "e150-quran-040",
+      "question": "Mushaf sıralamasında 22. sûre hangisidir?",
+      "answerId": "o2",
+      "answerText": "Hac",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mü'minûn"
+        },
+        {
+          "id": "o2",
+          "text": "Hac"
+        },
+        {
+          "id": "o3",
+          "text": "Nûr"
+        },
+        {
+          "id": "o4",
+          "text": "Fâtiha"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/hac-suresi"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-fihrist-direct",
+      "sourceLocation": "Diyanet Kur'an Meâli PDF page index 63, printed LXIII, surah fihrist",
+      "independentlyReadPassageSummary": "Fihrist: 22. sûre Hac, 78 âyet; sıra cevabı birebir karşılaştırıldı.",
+      "fihristEntry": {
+        "n": 22,
+        "name": "Hac",
+        "verses": 78
+      },
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 107,
+      "id": "e150-prophets-001",
+      "question": "Hz. Yûsuf rüyasında kaç yıldız gördüğünü söyler?",
+      "answerId": "o2",
+      "answerText": "11",
+      "options": [
+        {
+          "id": "o1",
+          "text": "7"
+        },
+        {
+          "id": "o2",
+          "text": "11"
+        },
+        {
+          "id": "o3",
+          "text": "10"
+        },
+        {
+          "id": "o4",
+          "text": "12"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=4&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/4 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/4: Rüyada on bir yıldızla birlikte güneş ve ay görülür.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 108,
+      "id": "e150-prophets-002",
+      "question": "Hz. Yûsuf rüyasını öncelikle kime anlatır?",
+      "answerId": "o2",
+      "answerText": "Babasına",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Kral'a"
+        },
+        {
+          "id": "o2",
+          "text": "Babasına"
+        },
+        {
+          "id": "o3",
+          "text": "Kardeşlerine"
+        },
+        {
+          "id": "o4",
+          "text": "Arkadaşına"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=4&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/4 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/4: Rüyasını doğrudan babasına anlatır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 109,
+      "id": "e150-prophets-003",
+      "question": "Hz. Yûsuf'un kardeşleri onu nereye bırakmayı planlar?",
+      "answerId": "o2",
+      "answerText": "Bir kuyunun dibine",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Çöle"
+        },
+        {
+          "id": "o2",
+          "text": "Bir kuyunun dibine"
+        },
+        {
+          "id": "o3",
+          "text": "Bir mağaraya"
+        },
+        {
+          "id": "o4",
+          "text": "Deniz kıyısına"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=10&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/10 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/10: Kardeşlerden biri onu kuyunun dibine bırakmayı önerir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 110,
+      "id": "e150-prophets-004",
+      "question": "Hz. Yûsuf'un kardeşleri babalarına hangi giysiyi kanlı getirir?",
+      "answerId": "o2",
+      "answerText": "Gömleğini",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Sarığını"
+        },
+        {
+          "id": "o2",
+          "text": "Gömleğini"
+        },
+        {
+          "id": "o3",
+          "text": "Cübbesini"
+        },
+        {
+          "id": "o4",
+          "text": "Hırkasını"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=18&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/18 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/18: Babaya sahte kan sürülmüş gömlek getirilir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 111,
+      "id": "e150-prophets-005",
+      "question": "Hz. Yûsuf kuyudan hangi yolcular tarafından çıkarılır?",
+      "answerId": "o2",
+      "answerText": "Bir kervan",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Bir ordu"
+        },
+        {
+          "id": "o2",
+          "text": "Bir kervan"
+        },
+        {
+          "id": "o3",
+          "text": "Bir avcı grubu"
+        },
+        {
+          "id": "o4",
+          "text": "Balıkçılar"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=19&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/19 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/19: Su almak için kuyunun başına gelen kervanın sucuğu onu bulur.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 112,
+      "id": "e150-prophets-006",
+      "question": "Hz. Yûsuf az bir bedelle hangi şey karşılığında satılır?",
+      "answerId": "o2",
+      "answerText": "Gümüş para",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Altın külçe"
+        },
+        {
+          "id": "o2",
+          "text": "Gümüş para"
+        },
+        {
+          "id": "o3",
+          "text": "Buğday"
+        },
+        {
+          "id": "o4",
+          "text": "Deve"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=20&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/20 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/20: Yûsuf birkaç dirheme, yani gümüş sikkeye satılır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 113,
+      "id": "e150-prophets-007",
+      "question": "Hz. Yûsuf'u satın alan kişi onu hangi ülkede evine götürür?",
+      "answerId": "o2",
+      "answerText": "Mısır",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Yemen"
+        },
+        {
+          "id": "o2",
+          "text": "Mısır"
+        },
+        {
+          "id": "o3",
+          "text": "Şam"
+        },
+        {
+          "id": "o4",
+          "text": "Habeşistan"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=21&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/21 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/21: Onu satın alan kişi Mısırlıdır; orada evine alır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 114,
+      "id": "e150-prophets-008",
+      "question": "Hz. Yûsuf suçsuzluğuna rağmen bir süre nerede kalır?",
+      "answerId": "o2",
+      "answerText": "Zindanda",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Dağda"
+        },
+        {
+          "id": "o2",
+          "text": "Zindanda"
+        },
+        {
+          "id": "o3",
+          "text": "Gemide"
+        },
+        {
+          "id": "o4",
+          "text": "Çadırda"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=35&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/35 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/35: Suçsuzluğuna dair delillere rağmen zindana konulur.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 115,
+      "id": "e150-prophets-009",
+      "question": "Hükümdarın rüyasında görülen semiz inek sayısı kaçtır?",
+      "answerId": "o2",
+      "answerText": "7",
+      "options": [
+        {
+          "id": "o1",
+          "text": "3"
+        },
+        {
+          "id": "o2",
+          "text": "7"
+        },
+        {
+          "id": "o3",
+          "text": "5"
+        },
+        {
+          "id": "o4",
+          "text": "12"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=43&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/43 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/43: Kral yedi semiz ineğin görüldüğü rüyayı anlatır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 116,
+      "id": "e150-prophets-010",
+      "question": "Hükümdarın rüyasında semiz inekleri yiyen inekler nasıldır?",
+      "answerId": "o2",
+      "answerText": "Zayıf",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Benekli"
+        },
+        {
+          "id": "o2",
+          "text": "Zayıf"
+        },
+        {
+          "id": "o3",
+          "text": "Beyaz"
+        },
+        {
+          "id": "o4",
+          "text": "Çok küçük"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=43&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/43 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/43: Rüyada semizleri yiyen yedi zayıf inek bulunur.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 117,
+      "id": "e150-prophets-011",
+      "question": "Hz. Yûsuf'un tarımla ilgili yorumunda kaç yıl ekin ekilmesi önerilir?",
+      "answerId": "o2",
+      "answerText": "7",
+      "options": [
+        {
+          "id": "o1",
+          "text": "3"
+        },
+        {
+          "id": "o2",
+          "text": "7"
+        },
+        {
+          "id": "o3",
+          "text": "10"
+        },
+        {
+          "id": "o4",
+          "text": "40"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=47&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/47 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/47: Yedi yıl ekim yapılması ve başakların korunması öğütlenir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 118,
+      "id": "e150-prophets-012",
+      "question": "Hz. Ya'kūb'un gözlerinin ağarması hangi oğlunun ayrılığıyla ilgilidir?",
+      "answerId": "o2",
+      "answerText": "Yûsuf",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mûsâ"
+        },
+        {
+          "id": "o2",
+          "text": "Yûsuf"
+        },
+        {
+          "id": "o3",
+          "text": "İsmâil"
+        },
+        {
+          "id": "o4",
+          "text": "Hârûn"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=84&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/84 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/84: Ya'kūb Yûsuf için üzülür ve gözleri ağarır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 119,
+      "id": "e150-prophets-013",
+      "question": "Hz. Yûsuf babasının yüzüne sürülmesini istediği şeyi ne olarak belirtir?",
+      "answerId": "o2",
+      "answerText": "Gömleği",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mührü"
+        },
+        {
+          "id": "o2",
+          "text": "Gömleği"
+        },
+        {
+          "id": "o3",
+          "text": "Asası"
+        },
+        {
+          "id": "o4",
+          "text": "Yüzüğü"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=93&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "12/93 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Yûsuf 12/93: Yûsuf gömleğinin babasının yüzüne götürülmesini ister.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 120,
+      "id": "e150-prophets-014",
+      "question": "Hz. Mûsâ bebekken hangi şeyin içine konularak suya bırakılır?",
+      "answerId": "o2",
+      "answerText": "Sandık",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Beşik"
+        },
+        {
+          "id": "o2",
+          "text": "Sandık"
+        },
+        {
+          "id": "o3",
+          "text": "Küfe"
+        },
+        {
+          "id": "o4",
+          "text": "Testi"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=20&ayet=39&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "20/39 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Tâhâ 20/39: Bebek Mûsâ sandığa konularak suya bırakılır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 121,
+      "id": "e150-prophets-015",
+      "question": "Hz. Mûsâ, Tâhâ 20/31'de kardeşi Hârûn'un yardımıyla neyin pekişmesini diler?",
+      "answerId": "o2",
+      "answerText": "Gücünün",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Servetinin"
+        },
+        {
+          "id": "o2",
+          "text": "Gücünün"
+        },
+        {
+          "id": "o3",
+          "text": "Sarayının"
+        },
+        {
+          "id": "o4",
+          "text": "Yolculuğunun"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=20&ayet=31&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "20/31 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Tâhâ 20/31: Mûsâ Hârûn sayesinde gücünün artırılmasını diler.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 122,
+      "id": "e150-prophets-016",
+      "question": "Hz. Mûsâ Tâhâ sûresindeki duasında ilk olarak ne ister?",
+      "answerId": "o2",
+      "answerText": "Göğsünün ferahlatılmasını",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Gemi yapılmasını"
+        },
+        {
+          "id": "o2",
+          "text": "Göğsünün ferahlatılmasını"
+        },
+        {
+          "id": "o3",
+          "text": "Rüzgârın emrine verilmesini"
+        },
+        {
+          "id": "o4",
+          "text": "Bir şehir kurulmasını"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=20&ayet=25&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "20/25 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Tâhâ 20/25: Mûsâ'nın duası gönlüne ferahlık istemesiyle başlar.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 123,
+      "id": "e150-prophets-017",
+      "question": "Hz. Mûsâ hangi hükümdara gidip tebliğde bulunmakla görevlendirilir?",
+      "answerId": "o2",
+      "answerText": "Firavun",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Nemrud"
+        },
+        {
+          "id": "o2",
+          "text": "Firavun"
+        },
+        {
+          "id": "o3",
+          "text": "Kisrâ"
+        },
+        {
+          "id": "o4",
+          "text": "Kayser"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=20&ayet=43&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "20/43 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Tâhâ 20/43: Mûsâ ve Hârûn Firavun'a gitmekle görevlendirilir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 124,
+      "id": "e150-prophets-018",
+      "question": "Hz. Mûsâ asasıyla denize vurduğunda ne olur?",
+      "answerId": "o2",
+      "answerText": "Deniz yarılır",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Deniz kurur"
+        },
+        {
+          "id": "o2",
+          "text": "Deniz yarılır"
+        },
+        {
+          "id": "o3",
+          "text": "Deniz donar"
+        },
+        {
+          "id": "o4",
+          "text": "Deniz yükselir"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=26&ayet=63&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "26/63 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Şuarâ 26/63: Asa ile denize vurulması üzerine deniz yarılır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 125,
+      "id": "e150-prophets-019",
+      "question": "Hz. Mûsâ'nın taşa vurmasıyla kaç pınar fışkırır?",
+      "answerId": "o2",
+      "answerText": "12",
+      "options": [
+        {
+          "id": "o1",
+          "text": "7"
+        },
+        {
+          "id": "o2",
+          "text": "12"
+        },
+        {
+          "id": "o3",
+          "text": "10"
+        },
+        {
+          "id": "o4",
+          "text": "40"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=60&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "2/60 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Bakara 2/60: Taştan on iki pınar çıkar.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 126,
+      "id": "e150-prophets-020",
+      "question": "Hz. Mûsâ'ya öğüt ve açıklamaların yazıldığı ne verilir?",
+      "answerId": "o2",
+      "answerText": "Levhalar",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Bir taç"
+        },
+        {
+          "id": "o2",
+          "text": "Levhalar"
+        },
+        {
+          "id": "o3",
+          "text": "Bir gemi"
+        },
+        {
+          "id": "o4",
+          "text": "Bir mühür"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=7&ayet=145&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "7/145 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "A'râf 7/145: Mûsâ için öğüt ve açıklamaların levhalarda yazıldığı belirtilir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 127,
+      "id": "e150-prophets-021",
+      "question": "Hz. Süleyman'ın ordusunun geçtiği vadide hangi canlılardan söz edilir?",
+      "answerId": "o2",
+      "answerText": "Karıncalar",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Arılar"
+        },
+        {
+          "id": "o2",
+          "text": "Karıncalar"
+        },
+        {
+          "id": "o3",
+          "text": "Develer"
+        },
+        {
+          "id": "o4",
+          "text": "Balıklar"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=18&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "27/18 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Neml 27/18: Süleyman'ın orduları karınca vadisine gelir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 128,
+      "id": "e150-prophets-022",
+      "question": "Hz. Süleyman hangi kuşu yokladığında göremediğini söyler?",
+      "answerId": "o2",
+      "answerText": "Hüdhüd",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Karga"
+        },
+        {
+          "id": "o2",
+          "text": "Hüdhüd"
+        },
+        {
+          "id": "o3",
+          "text": "Güvercin"
+        },
+        {
+          "id": "o4",
+          "text": "Turna"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=20&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "27/20 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Neml 27/20: Süleyman kuşları yokladığında Hüdhüd'ü göremez.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 129,
+      "id": "e150-prophets-023",
+      "question": "Hüdhüd kuşu Hz. Süleyman'a hangi ülkeden haber getirir?",
+      "answerId": "o2",
+      "answerText": "Sebe'",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mısır"
+        },
+        {
+          "id": "o2",
+          "text": "Sebe'"
+        },
+        {
+          "id": "o3",
+          "text": "Habeşistan"
+        },
+        {
+          "id": "o4",
+          "text": "Bizans"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=22&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "27/22 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Neml 27/22: Hüdhüd Sebe'den bir haber getirdiğini söyler.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 130,
+      "id": "e150-prophets-024",
+      "question": "Hz. Süleyman'ın huzuruna getirilen nesne hangisidir?",
+      "answerId": "o2",
+      "answerText": "Bir taht",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Bir gemi"
+        },
+        {
+          "id": "o2",
+          "text": "Bir taht"
+        },
+        {
+          "id": "o3",
+          "text": "Bir çadır"
+        },
+        {
+          "id": "o4",
+          "text": "Bir sancak"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=40&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "27/40 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Neml 27/38–40: Süleyman'ın yanına kraliçenin tahtı getirilir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 131,
+      "id": "e150-prophets-025",
+      "question": "Kur'an'a göre rüzgâr hangi peygamberin emrine verilmiştir?",
+      "answerId": "o2",
+      "answerText": "Süleyman",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Yûsuf"
+        },
+        {
+          "id": "o2",
+          "text": "Süleyman"
+        },
+        {
+          "id": "o3",
+          "text": "İdrîs"
+        },
+        {
+          "id": "o4",
+          "text": "Eyyûb"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=34&ayet=12&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "34/12 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Sebe 34/12: Rüzgâr Süleyman'ın emrine verilmiştir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 132,
+      "id": "e150-prophets-026",
+      "question": "Hz. Nûh'a yapması emredilen büyük taşıt hangisidir?",
+      "answerId": "o2",
+      "answerText": "Gemi",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Araba"
+        },
+        {
+          "id": "o2",
+          "text": "Gemi"
+        },
+        {
+          "id": "o3",
+          "text": "Atlı araba"
+        },
+        {
+          "id": "o4",
+          "text": "Sal"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=11&ayet=37&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "11/37 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Hûd 11/37: Nûh'a gözetim ve vahiy altında gemi yapması söylenir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 133,
+      "id": "e150-prophets-027",
+      "question": "Hz. Nûh'un gemiye binmeyi reddeden yakını kimdir?",
+      "answerId": "o2",
+      "answerText": "Oğlu",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Kardeşi"
+        },
+        {
+          "id": "o2",
+          "text": "Oğlu"
+        },
+        {
+          "id": "o3",
+          "text": "Babası"
+        },
+        {
+          "id": "o4",
+          "text": "Dayısı"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=11&ayet=42&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "11/42 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Hûd 11/42–43: Gemiye katılmayan kişi Nûh'un oğludur.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 134,
+      "id": "e150-prophets-028",
+      "question": "Ankebût sûresinde Hz. Nûh'un kavmi arasında kaldığı süre kaç yıl olarak verilir?",
+      "answerId": "o2",
+      "answerText": "950",
+      "options": [
+        {
+          "id": "o1",
+          "text": "100"
+        },
+        {
+          "id": "o2",
+          "text": "950"
+        },
+        {
+          "id": "o3",
+          "text": "500"
+        },
+        {
+          "id": "o4",
+          "text": "1000"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=29&ayet=14&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "29/14 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Ankebût 29/14: Nûh'un kavmi arasında dokuz yüz elli yıl kaldığı bildirilir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 135,
+      "id": "e150-prophets-029",
+      "question": "Hz. İbrâhim'e diriltme örneğinde kaç kuş alması söylenir?",
+      "answerId": "o2",
+      "answerText": "4",
+      "options": [
+        {
+          "id": "o1",
+          "text": "2"
+        },
+        {
+          "id": "o2",
+          "text": "4"
+        },
+        {
+          "id": "o3",
+          "text": "3"
+        },
+        {
+          "id": "o4",
+          "text": "7"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=260&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "2/260 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Bakara 2/260: Diriltme örneğinde İbrâhim'e dört kuş alması emredilir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 136,
+      "id": "e150-prophets-030",
+      "question": "Kâbe'nin temellerini yükseltirken Hz. İbrâhim ve İsmâil hangi dilekte bulunur?",
+      "answerId": "o2",
+      "answerText": "Yaptıklarının kabul edilmesi",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Savaş kazanmak"
+        },
+        {
+          "id": "o2",
+          "text": "Yaptıklarının kabul edilmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Uzun bir yolculuk"
+        },
+        {
+          "id": "o4",
+          "text": "Bir hükümdarlık"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=127&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "2/127 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Bakara 2/127: İbrâhim ve İsmâil Kâbe'nin temellerini yükseltirken kabul duası eder.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 137,
+      "id": "e150-prophets-031",
+      "question": "Hz. İbrâhim'in misafirlerine ikram ettiği hayvanın türü nedir?",
+      "answerId": "o2",
+      "answerText": "Buzağı",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Kuzu"
+        },
+        {
+          "id": "o2",
+          "text": "Buzağı"
+        },
+        {
+          "id": "o3",
+          "text": "Keçi"
+        },
+        {
+          "id": "o4",
+          "text": "Deve"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=11&ayet=69&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "11/69 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Hûd 11/69: İbrâhim gelen misafirlere kızartılmış buzağı sunar.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 138,
+      "id": "e150-prophets-032",
+      "question": "Güneşin doğuş yönünü tartışmada delil olarak kullanan peygamber kimdir?",
+      "answerId": "o2",
+      "answerText": "İbrâhim",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mûsâ"
+        },
+        {
+          "id": "o2",
+          "text": "İbrâhim"
+        },
+        {
+          "id": "o3",
+          "text": "Yûnus"
+        },
+        {
+          "id": "o4",
+          "text": "Hârûn"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=258&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "2/258 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Bakara 2/258: İbrâhim güneşin doğudan getirilmesini örnek gösterir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 139,
+      "id": "e150-prophets-033",
+      "question": "Putları parçalayarak büyük putu bırakan peygamber kimdir?",
+      "answerId": "o2",
+      "answerText": "İbrâhim",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Şuayb"
+        },
+        {
+          "id": "o2",
+          "text": "İbrâhim"
+        },
+        {
+          "id": "o3",
+          "text": "Sâlih"
+        },
+        {
+          "id": "o4",
+          "text": "İdrîs"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=21&ayet=58&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "21/58 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Enbiyâ 21/58: Putları parçalayarak büyük putu yerinde bırakan İbrâhim'dir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 140,
+      "id": "e150-prophets-034",
+      "question": "Hz. Yûnus sıkıntı içinde Rabbine seslenirken kendi durumunu nasıl ifade eder?",
+      "answerId": "o2",
+      "answerText": "Haksızlık edenlerden oldum",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Bir hükümdar oldum"
+        },
+        {
+          "id": "o2",
+          "text": "Haksızlık edenlerden oldum"
+        },
+        {
+          "id": "o3",
+          "text": "Her şeyi bildim"
+        },
+        {
+          "id": "o4",
+          "text": "Hiç yolculuk etmedim"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=21&ayet=87&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "21/87 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Enbiyâ 21/87: Zünnûn/Yûnus duasında nefsine zulmedenlerden olduğunu söyler.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 141,
+      "id": "e150-prophets-035",
+      "question": "Diyanet Kur’an Yolu mealinde Meryem 19/7'de Yahyâ adıyla ilgili hangi özellik belirtilir?",
+      "answerId": "o2",
+      "answerText": "Daha önce kimseye verilmediği",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Bir şehir adı olduğu"
+        },
+        {
+          "id": "o2",
+          "text": "Daha önce kimseye verilmediği"
+        },
+        {
+          "id": "o3",
+          "text": "Bir kitabın adı olduğu"
+        },
+        {
+          "id": "o4",
+          "text": "Bir dağın adı olduğu"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=7&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://kuran.diyanet.gov.tr/tefsir/Meryem-suresi/2257/7-ayet-tefsiri",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "Kur'an Yolu tefsiri, Meryem 19/7",
+      "independentlyReadPassageSummary": "Meryem 19/7: Yahyâ adının daha önce kimseye verilmediği belirtilir; ayrıca Diyanet Kur'an Yolu Tefsiri 19/7 tam metniyle karşılaştırıldı.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 142,
+      "id": "e150-prophets-036",
+      "question": "Kur'an'a göre beşikteyken konuşan peygamber kimdir?",
+      "answerId": "o2",
+      "answerText": "Îsâ",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Mûsâ"
+        },
+        {
+          "id": "o2",
+          "text": "Îsâ"
+        },
+        {
+          "id": "o3",
+          "text": "Nûh"
+        },
+        {
+          "id": "o4",
+          "text": "İsmâil"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=29&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "19/29 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Meryem 19/29–30: Beşikte konuşan bebek Allah'ın kulu ve peygamberi olan Îsâ'dır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 143,
+      "id": "e150-prophets-037",
+      "question": "Semûd kavmine gönderilen ve dişi deveyi işaret olarak gösteren peygamber kimdir?",
+      "answerId": "o2",
+      "answerText": "Sâlih",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Hûd"
+        },
+        {
+          "id": "o2",
+          "text": "Sâlih"
+        },
+        {
+          "id": "o3",
+          "text": "Yûnus"
+        },
+        {
+          "id": "o4",
+          "text": "Lût"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=7&ayet=73&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "7/73 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "A'râf 7/73: Sâlih Semûd'a gönderilir ve bir dişi deve işaret olarak anılır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 144,
+      "id": "e150-prophets-038",
+      "question": "Âd kavmine gönderilen peygamber kimdir?",
+      "answerId": "o2",
+      "answerText": "Hûd",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Sâlih"
+        },
+        {
+          "id": "o2",
+          "text": "Hûd"
+        },
+        {
+          "id": "o3",
+          "text": "Şuayb"
+        },
+        {
+          "id": "o4",
+          "text": "Zekeriyyâ"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=7&ayet=65&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "7/65 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "A'râf 7/65: Âd kavmine gönderilen peygamber Hûd'dur.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 145,
+      "id": "e150-prophets-039",
+      "question": "Hz. Eyyûb'ün sıkıntısını Allah'a arz ettiği kıssa hangi surede yer alır?",
+      "answerId": "o2",
+      "answerText": "Enbiyâ",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Yûsuf"
+        },
+        {
+          "id": "o2",
+          "text": "Enbiyâ"
+        },
+        {
+          "id": "o3",
+          "text": "Fil"
+        },
+        {
+          "id": "o4",
+          "text": "Kadr"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=21&ayet=83&mode=meal"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "21/83 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Enbiyâ 21/83: Derdini Allah'a arz eden peygamber Eyyûb'dür.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 146,
+      "id": "e150-prophets-040",
+      "question": "Meryem sûresinde Allah'ın kendisini yüksek bir makama yükselttiği peygamber kimdir?",
+      "answerId": "o2",
+      "answerText": "İdrîs",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Hârûn"
+        },
+        {
+          "id": "o2",
+          "text": "İdrîs"
+        },
+        {
+          "id": "o3",
+          "text": "Yûnus"
+        },
+        {
+          "id": "o4",
+          "text": "Lût"
+        }
+      ],
+      "sourceUrls": [
+        "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=57&mode=meal",
+        "https://islamansiklopedisi.org.tr/idris"
+      ],
+      "externalOfficialEvidenceUrl": "https://webdosya.diyanet.gov.tr/kuran/kuranikerim/dosyalar/document/kuran_meal.pdf",
+      "evidenceKind": "diyanet-pdf-verse-passage-direct",
+      "sourceLocation": "19/57 (Diyanet PDF, ilgili sûre meal bölümü)",
+      "independentlyReadPassageSummary": "Meryem 19/56–57: Allah'ın yüce makama yükselttiği peygamber İdrîs'tir.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 147,
+      "id": "e150-history-001",
+      "question": "Hz. Muhammed'in ilk vahyi aldığı yer hangisidir?",
+      "answerId": "o2",
+      "answerText": "Hira Mağarası",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Sevr Mağarası"
+        },
+        {
+          "id": "o2",
+          "text": "Hira Mağarası"
+        },
+        {
+          "id": "o3",
+          "text": "Kuba Mescidi"
+        },
+        {
+          "id": "o4",
+          "text": "Mescid-i Nebevî"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/hira"
+      ],
+      "externalOfficialEvidenceUrl": "https://islamansiklopedisi.org.tr/hira",
+      "evidenceKind": "tdv-original-entry-body",
+      "sourceLocation": "TDV söz konusu makalenin tarihî yer ve olay bölümü",
+      "independentlyReadPassageSummary": "HİRA maddesi ilk vahyin Mekke yakınındaki Hira mağarasına geldiğini açıklar.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 148,
+      "id": "e150-history-002",
+      "question": "Hira Mağarası Mekke yakınında hangi dağdadır?",
+      "answerId": "o2",
+      "answerText": "Nur Dağı",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Uhud Dağı"
+        },
+        {
+          "id": "o2",
+          "text": "Nur Dağı"
+        },
+        {
+          "id": "o3",
+          "text": "Arafat Dağı"
+        },
+        {
+          "id": "o4",
+          "text": "Safa Tepesi"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/hira"
+      ],
+      "externalOfficialEvidenceUrl": "https://islamansiklopedisi.org.tr/hira",
+      "evidenceKind": "tdv-original-entry-body",
+      "sourceLocation": "TDV söz konusu makalenin tarihî yer ve olay bölümü",
+      "independentlyReadPassageSummary": "TDV HİRA maddesi mağaranın bulunduğu dağı Cebelinur/Nur dağı diye adlandırır.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 149,
+      "id": "e150-history-003",
+      "question": "TDV’nin genel Hicaz coğrafyası anlatımına göre Mekke, Arap yarımadasının hangi tarihî bölgesinde yer alır?",
+      "answerId": "o2",
+      "answerText": "Hicaz",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Yemen"
+        },
+        {
+          "id": "o2",
+          "text": "Hicaz"
+        },
+        {
+          "id": "o3",
+          "text": "Umman"
+        },
+        {
+          "id": "o4",
+          "text": "Hadramevt"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/hicaz"
+      ],
+      "externalOfficialEvidenceUrl": "https://islamansiklopedisi.org.tr/hicaz",
+      "evidenceKind": "tdv-original-entry-body",
+      "sourceLocation": "TDV söz konusu makalenin tarihî yer ve olay bölümü",
+      "independentlyReadPassageSummary": "TDV HİCAZ maddesi Mekke'nin de içinde olduğu Kızıldeniz doğusu Hicaz tarihî bölgesini tanımlar.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    },
+    {
+      "position": 150,
+      "id": "e150-history-004",
+      "question": "Hicret sırasında Hz. Peygamber ve Ebû Bekir'in bir süre saklandığı mağara hangisidir?",
+      "answerId": "o2",
+      "answerText": "Sevr Mağarası",
+      "options": [
+        {
+          "id": "o1",
+          "text": "Hira Mağarası"
+        },
+        {
+          "id": "o2",
+          "text": "Sevr Mağarası"
+        },
+        {
+          "id": "o3",
+          "text": "Ashâb-ı Kehf Mağarası"
+        },
+        {
+          "id": "o4",
+          "text": "Damlataş Mağarası"
+        }
+      ],
+      "sourceUrls": [
+        "https://islamansiklopedisi.org.tr/hicret"
+      ],
+      "externalOfficialEvidenceUrl": "https://islamansiklopedisi.org.tr/hicret",
+      "evidenceKind": "tdv-original-entry-body",
+      "sourceLocation": "TDV söz konusu makalenin tarihî yer ve olay bölümü",
+      "independentlyReadPassageSummary": "TDV HİCRET maddesi Hz. Peygamber ve Ebû Bekir'in gizlendikleri Sevr mağarasını açıklar.",
+      "fihristEntry": null,
+      "verdict": "supports-current-answer",
+      "checkedOn": "2026-10-22",
+      "limitations": "Doğru cevabın gösterilen resmî pasajla uyumu; münferit ilahiyat uzmanı onayı değildir."
+    }
+  ]
+}

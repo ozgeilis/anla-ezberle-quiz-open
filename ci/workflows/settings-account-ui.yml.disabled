@@ -1,0 +1,48 @@
+name: Ayarlar ve hesap arayuzu
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/features/settings/**"
+      - "src/features/profile/**"
+      - "src/features/online/**"
+      - "src/features/home/**"
+      - "src/components/**"
+      - "assets/images/category-gems/**"
+      - "src/app/**"
+      - "scripts/settings-account-smoke.mjs"
+      - ".github/workflows/settings-account-ui.yml"
+permissions:
+  contents: read
+jobs:
+  settings-account-smoke:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - name: Export isolated account fixture build
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: http://127.0.0.1:55431
+          EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: sb_publishable_ci_fixture_not_real
+        run: pnpm export:web
+      - name: Install real browser
+        run: |
+          npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Exercise settings and account flows
+        run: |
+          pnpm preview > /tmp/settings-preview.log 2>&1 &
+          sleep 3
+          node scripts/settings-account-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: settings-account-ui
+          path: artifacts/settings-account-ui/
+          if-no-files-found: ignore
