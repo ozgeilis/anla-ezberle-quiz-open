@@ -1,3 +1,5 @@
+import { useSound } from "../../features/audio/SoundProvider";
+import type { SoundEffect } from "../../features/audio/catalog";
 import Feather from "@expo/vector-icons/Feather";
 import { LinearGradient } from "expo-linear-gradient";
 import React, { ComponentProps, useEffect, useRef, useState } from "react";
@@ -99,8 +101,10 @@ export function Tap({
   selected,
   role = "button",
   fill = false,
+  sound,
 }: React.PropsWithChildren<{
   onPress: () => void;
+  sound?: SoundEffect | false;
   disabled?: boolean;
   label: string;
   selected?: boolean;
@@ -108,6 +112,7 @@ export function Tap({
   fill?: boolean;
   style?: StyleProp<ViewStyle>;
 }>) {
+  const audio = useSound();
   const [scale] = useState(() => new Animated.Value(1));
   const [focused, setFocused] = useState(false);
   const theme = useTheme();
@@ -143,7 +148,12 @@ export function Tap({
         disabled={disabled}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
-        onPress={onPress}
+        onPress={() => {
+          audio.activate();
+          if (sound !== false)
+            audio.play(sound ?? (role === "radio" ? "select" : "tap"));
+          onPress();
+        }}
         onPressIn={() => animate(0.98)}
         onPressOut={() => animate(1)}
         style={({ pressed }) => [

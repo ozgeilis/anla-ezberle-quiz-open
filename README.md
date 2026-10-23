@@ -37,7 +37,7 @@ Güncel banka v72 ve 1.500 soru, cevaplar, açıklamalar, kaynaklar ve eski bank
 
 ## GitHub Actions
 
-Başlangıçta depo PRIVATE ve Actions devre dışıdır. İş akışları `.github/workflows` yerine `ci/workflows/*.yml.disabled` altında tutulur; ilk push CI başlatmaz. Her iş ayrıca yalnız PUBLIC depoda çalışma koşuluna sahiptir. Yayın denetimi tamamlandıktan sonraki etkinleştirme adımları [ci/README.md](ci/README.md) içindedir. Bu taşıma işlemi depoyu otomatik PUBLIC yapmaz.
+Bu yeni ana depo PUBLIC olarak doğrulandıktan sonra Actions etkinleştirildi. Altı workflow yalnız standart GitHub-hosted Ubuntu runner, read-only token ve sentetik yerel test verisi kullanır. Üretim sırları veya dağıtım adımı bulunmaz. Kapsam ve güvenlik kuralları [ci/README.md](ci/README.md) içindedir. Eski PRIVATE depo ve Vercel bağlantısı değiştirilmez.
 
 ## Görseller ve kullanım hakları
 

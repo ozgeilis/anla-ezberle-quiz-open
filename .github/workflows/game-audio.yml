@@ -1,0 +1,75 @@
+name: Oyun ici ses kabulü
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    paths:
+      - "src/features/audio/**"
+      - "src/features/quiz/**"
+      - "src/features/achievements/**"
+      - "src/features/live/**"
+      - "src/features/online/**"
+      - "src/components/ui/**"
+      - "src/app/**"
+      - "assets/audio/**"
+      - "app.json"
+      - "pnpm-lock.yaml"
+      - "scripts/audio-*.mjs"
+      - "scripts/audio-*.ts"
+      - "scripts/check-audio-config.mjs"
+      - "scripts/fixtures/audio-probe.mjs"
+      - ".github/workflows/game-audio.yml"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  audio-browser:
+    if: ${{ github.event.repository.private == false }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          version: 11.25.0
+      - run: pnpm install --frozen-lockfile
+      - name: Generated native permission and background audit
+        run: node scripts/check-audio-config.mjs
+      - name: Isolated web export and private fixture
+        env:
+          EXPO_NO_DOTENV: "1"
+        run: |
+          pnpm export:web
+          pnpm exec tsx scripts/audio-ci-fixtures.ts /tmp/anla-audio-fixture.json
+      - name: Real browser runtime
+        run: |
+          npm install --prefix "$RUNNER_TEMP/audio-node" --no-save playwright@1.56.1
+          "$RUNNER_TEMP/audio-node/node_modules/.bin/playwright" install --with-deps ${{ matrix.browser }}
+      - name: Actual AudioContext, game events, storage and UI
+        env:
+          AUDIO_BROWSER: ${{ matrix.browser }}
+        run: |
+          pnpm preview > /tmp/audio-preview.log 2>&1 &
+          sleep 3
+          node scripts/audio-smoke.mjs
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: audio-${{ matrix.browser }}
+          path: artifacts/audio-${{ matrix.browser }}/
+          retention-days: 1
+          if-no-files-found: ignore

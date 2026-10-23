@@ -1,3 +1,4 @@
+import { useSound } from "../audio/SoundProvider";
 import React, {
   createContext,
   useCallback,
@@ -28,7 +29,8 @@ interface Value {
 }
 const Context = createContext<Value | null>(null);
 export function AchievementProvider({ children }: React.PropsWithChildren) {
-  const { data, ready } = useGame(),
+  const { play } = useSound();
+  const { data, ready, result } = useGame(),
     { session } = useOnlineAuth(),
     inbox = useInbox();
   const actor = session?.user.id;
@@ -114,6 +116,19 @@ export function AchievementProvider({ children }: React.PropsWithChildren) {
       remoteSeen.current = { actor, ids: new Set(online.map((b) => b.id)) };
     } else remoteSeen.current = null;
     if (fresh.length) {
+      const audible = fresh.filter(
+        (b) =>
+          b.group === "social" ||
+          (result && data.games.some((g) => g.id === result.id)),
+      );
+      if (audible.length)
+        play(
+          "badge",
+          `badges:${actor ?? "device"}:${audible
+            .map((b) => b.id)
+            .sort()
+            .join(":")}`,
+        );
       const timer = setTimeout(
         () =>
           setReward((old) => ({
@@ -124,7 +139,7 @@ export function AchievementProvider({ children }: React.PropsWithChildren) {
       );
       return () => clearTimeout(timer);
     }
-  }, [badges, ready, actor, social]);
+  }, [badges, ready, actor, social, result, data.games, play]);
   const saveSharing = async (shared: boolean, showcase: string[]) => {
     if (!actor) throw new Error("Önce doğrulanmış hesabınla giriş yap.");
     if (settingsBusy.current)

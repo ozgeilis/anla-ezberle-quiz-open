@@ -14,6 +14,7 @@ const types = {
   ".jpg": "image/jpeg",
   ".svg": "image/svg+xml",
   ".ico": "image/x-icon",
+  ".wav": "audio/wav",
 };
 createServer(async (request, response) => {
   try {

@@ -1,3 +1,5 @@
+import { useAudioObservation } from "../audio/useAudioObservation";
+import { duelAudioCues } from "../audio/events";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { passwordError, validEmail } from "./account";
 import { useInbox } from "./InboxProvider";
@@ -92,6 +94,18 @@ function OnlineAccountScreen() {
   const [review, setReview] = useState(false);
   const lock = useRef(false);
   const actor = auth.session?.user.id;
+  useAudioObservation(
+    match
+      ? {
+          id: `${actor}:${match.id}`,
+          answers: match.answers.length,
+          completed: match.state === "completed",
+          perfect:
+            match.players.find((p) => p.slot === match.slot)?.correct === 10,
+        }
+      : null,
+    duelAudioCues,
+  );
   const actorRef = useRef(actor);
 
   const run = async (action: () => Promise<void>, accountAction = false) => {

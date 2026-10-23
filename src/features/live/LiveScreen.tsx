@@ -1,3 +1,5 @@
+import { useAudioObservation } from "../audio/useAudioObservation";
+import { liveAudioCues } from "../audio/events";
 import React, { useEffect, useState } from "react";
 import {
   AccessibilityInfo,
@@ -217,6 +219,25 @@ function LiveController({
     [showSettings, setShowSettings] = useState(false),
     [goHome, setGoHome] = useState(false);
   const completed = room?.state === "completed";
+  useAudioObservation(
+    room
+      ? {
+          id: `${actor}:${room.id}`,
+          position: room.position,
+          phase: room.phase,
+          state: room.state,
+          reviewed: !!room.review,
+          correct:
+            room.answer && room.review
+              ? room.answer.optionId === room.review.correctOptionId
+              : null,
+          perfect:
+            room.players.find((p) => p.id === actor)?.correct ===
+            room.settings.count,
+        }
+      : null,
+    liveAudioCues,
+  );
   useEffect(() => {
     if (completed) void refreshAchievements();
   }, [completed, refreshAchievements]);

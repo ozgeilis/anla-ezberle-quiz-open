@@ -1,3 +1,4 @@
+import { SoundSettings } from "../audio/SoundSettings";
 import React, { useState } from "react";
 import { ScrollView, TextInput, View } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
@@ -385,6 +386,7 @@ function AccountSettings({
             ile uygulanır.
           </Txt>
         </Card>
+        <SoundSettings />
         <Card style={{ gap: 12 }}>
           <Txt accessibilityRole="header" weight="heavy" size={21}>
             Bildirimler
