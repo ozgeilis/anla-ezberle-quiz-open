@@ -45,3 +45,27 @@ docs/local/
 design/references/
 .idea/
 .vscode/
+
+# Browser sessions and request captures can contain cookies, JWTs and reset URLs.
+.auth/
+playwright/.auth/
+auth-state*.json
+storage-state*.json
+*-storage-state.json
+*.har
+*.heapsnapshot
+
+# Private database exports and local backups; migration/seed SQL remains tracked.
+backups/
+*.dump
+*.private.sql
+*.private.json
+.pgpass
+*.pgpass
+
+# Credentials without a file extension and local environment-tool configuration.
+id_rsa
+id_ed25519
+.npmrc
+.netrc
+.envrc
