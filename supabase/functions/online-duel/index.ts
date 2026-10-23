@@ -113,8 +113,9 @@ Deno.serve(async (request: Request) => {
         auth: { persistSession: false, autoRefreshToken: false },
       },
     );
-    // A real Auth server round trip verifies identity and revocation. Never trust
-    // a decoded JWT, getSession(), or a user id supplied in the request body.
+    // Auth verifies the current user and token. Access JWTs can remain valid
+    // until expiry after sign-out; this is not immediate session revocation.
+    // Never trust a decoded JWT, getSession(), or a body-supplied user id.
     const {
       data: { user },
       error: authError,
