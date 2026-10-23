@@ -4,13 +4,13 @@
 
 ## Build ve kimlik
 
-- Expo 58.0.14, React Native 0.88.0, expo-audio ~58.0.10 korunur. Kurulu RN version catalog ve Expo root Gradle plugin varsayılanı target SDK 36 / compile SDK 37'dir. Google Play'in 31 Ağustos 2026'dan itibaren yeni telefon uygulamaları için API 36+ şartını karşılayan kaynak yapılandırmasıdır; **gerçek APK manifesti ayrıca incelenmelidir**.
+- Expo 58.0.17, React Native 0.88.0, expo-audio ~58.0.10 kullanılır. Kurulu RN version catalog ve Expo root Gradle plugin varsayılanı target SDK 36 / compile SDK 37'dir. Google Play'in 31 Ağustos 2026'dan itibaren yeni telefon uygulamaları için API 36+ şartını karşılayan kaynak yapılandırmasıdır; **gerçek APK manifesti ayrıca incelenmelidir**.
 - Mevcut `preview`: internal, APK, developmentClient=false; Metro'suz açılan bağımsız uygulama. Üretim içerik kanalı ve yalnız mevcut Frankfurt URL/publishable istemci anahtarı kullanılır.
 - `production`: store, app-bundle, autoIncrement=true. **Şimdilik engelli:** `eas-build-pre-install` fiziksel APK kabulünün SHA-256'sı ve kalıcı paket kimliği için kullanıcı onayı olmadan store AAB'yi reddeder. `config/android-store-approval.json` varsayılan onaysızdır. Submit profili veya otomatik gönderim eklenmez.
 - Mevcut Android kimliği `com.anlaezberle.quiz.prototype` yalnız preview için korunur. Mağazada bunu kalıcılaştırmak veya farklı bir kimlik seçmek kullanıcı kararıdır. Yeni kimlik Android'de ayrı uygulama/veri alanı oluşturur; yerel geçmişin kendiliğinden taşındığı iddia edilemez. Kimlik değişimi ayrıca mevcut auth scheme, veri koruma ve yeni APK kabulüyle ele alınır.
 - EAS proje bilgisi app.json'a eklenmiştir. `.easignore` gizli dosyaları, test/CI raporlarını, sunucu kaynaklarını ve native/build çıktısını build arşivinden dışlar. Bu, bu dosyaları Git'ten silmez. İmzalama anahtarları Git'e veya uygulama paketine konmaz.
 
-`expo install --check`, mevcut kilitli Expo 58 paketleri için dokuz yeni patch önerisi verdi (örneğin Expo ~58.0.17, Router ~58.0.25). Bu kontrol temiz geçmiş sayılmaz. İlk APK mevcut kilitli 58.0.14 sürümünden denenmektedir; paketler bu sırada otomatik yükseltilmedi. Patch güncellemesi yapılırsa native APK ve cihaz kabulü yeniden çalıştırılmalıdır. Android Hermes export başarılı olması gerçek cihaz kabulünün yerini tutmaz.
+İlk APK 58.0.14 kaynağından başarıyla derlendi; EAS doktoru 19/20 kontrol ve dokuz patch uyumsuzluğu bildirdi. Bunun üzerine yalnız önerilen dokuz Expo 58 patch'i uyumlandı (Expo ~58.0.17, Router ~58.0.25 dahil). İlk indirme zaman aşımından sonra düşük eşzamanlılıkla kurulum tamamlandı. `expo install --check` artık temiz; soru bütünlüğü, TypeScript, lint ve 296 test tekrar başarılı. Güncel APK bu ikinci kaynaktan yeniden derlenir; ilk binary güncel patch'li APK olarak sunulmaz. Android Hermes export ve başarılı build gerçek cihaz kabulünün yerine geçmez.
 
 ## Yayın engelleri
 
