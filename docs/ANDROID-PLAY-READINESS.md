@@ -28,6 +28,12 @@
 | Mağaza listeleme            | Başlık taslağı: **Anla & Ezberle: İslami Quiz** (30 karakter sınırı içinde). Kısa açıklama: **Kur’an, siyer ve daha fazlasında bilgini sına; öğren, yarış, rozet kazan!** (80 içinde). Tam açıklama, gerçek Android ekran görüntüleri, 512×512 ikon, 1024×500 feature graphic, kategori, destek iletişimi ve ülke/dağıtım tercihleri hazırlanmalı. Mevcut görseller yeniden tasarlanmaz. |
 | Görsel hakları / içerik     | Mevcut assetler ve 1.500 soru değişmedi. Referans görsellerin yeniden dağıtım haklarına dair önceki belirsizlik devam eder. Kodda onay durumu bağımsız dinî kaynak/yaş uygunluğu denetimi yerine geçmez.                                                                                                                                                                                 |
 
+## Gerçek APK sonucu ve manifest izinleri
+
+23 Ekim'de tamamlanan ikinci build ve 24 Ekim teknik incelemesi: [APK raporu](ANDROID-PREVIEW-BUILD-20261023.md). target API 36 / compile API 37, imza ve 11 WAV doğrulandı. Fiziksel kabul hâlâ yapılmadı.
+
+İlk gerçek manifest incelemesi, SDK'lardan devralınan `SYSTEM_ALERT_WINDOW`, API 32 ile sınırlı `READ_EXTERNAL_STORAGE` / `WRITE_EXTERNAL_STORAGE` ve biyometrik izinleri de gösterdi. Uygulamada overlay, dosya seçme veya biyometrik giriş akışı bulunmadı. Bu izinleri mağazada gerekliymiş gibi beyan etmek yerine üretim öncesi kullanım/bağımlılık incelemesiyle daraltmak ve değişen manifestle yeni APK kabulü yapmak gerekir. Bunlar bu ilk test APK'sında duruyor; mikrofon ve ses foreground servis izinleri yok. Özel overlay/biometrik yetki kullanımı veya cihaz verisi erişimi test edilmedi.
+
 ## Sonraki sıra
 
 1. Preview APK build sonucu, kurulum URL'si, imza ve gerçek manifest SDK seviyesini build raporunda kaydet.
