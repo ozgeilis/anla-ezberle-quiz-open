@@ -1,6 +1,6 @@
 # Güvenli yerel çalışma
 
-Bu depo PRIVATE kalır. Görünürlüğü değiştirmek veya CI'ı etkinleştirmek ayrı depo sahibi onayı gerektirir. Görsellerin yeniden dağıtım izinleri henüz doğrulanmamıştır; [görsel provenansı](docs/ASSET-PROVENANCE.md) bir PUBLIC yayın veya hukuki uygunluk onayı değildir.
+Bu yeni ana depo PUBLIC olarak doğrulanmıştır; yalnız depo sahibinin talimatıyla sınırlı Actions kontrolleri etkinleştirilir. Üretim, dağıtım ve gizli verilere erişim bu yetkinin kapsamında değildir. Görsellerin yeniden dağıtım izinleri henüz doğrulanmamıştır; [görsel provenansı](docs/ASSET-PROVENANCE.md) bir PUBLIC yayın veya hukuki uygunluk onayı değildir.
 
 ## Gizli bilgiler ve kişisel kayıtlar
 
@@ -14,4 +14,4 @@ Bu depo PRIVATE kalır. Görünürlüğü değiştirmek veya CI'ı etkinleştirm
 
 Çevrimdışı soru cevapları içerik verisidir; sunucu yetkilendirmesi yerine kullanılmaz. Dinî içerikte `approved` etiketi bağımsız uzman doğrulaması anlamına gelmez. Bu güvenlik çalışması soru bankasını, kayıtları, skor kurallarını veya Supabase yapılandırmasını değiştirmez.
 
-Actions depo ayarında kapalıdır. Şablonlar `ci/workflows/*.yml.disabled` altında tutulur; `.github/workflows` içine kopyalanmaz. PRIVATE depoda kota tüketen workflow başlatmayın. Gelecekteki ayrı etkinleştirme planı [CI belgesindedir](ci/README.md).
+Actions yalnız PUBLIC depo koşuluyla `.github/workflows` altındaki incelenmiş kontrolleri çalıştırır. Üretim sırları eklenmez; geçici yerel Supabase anahtarları yalnız runner ömründe kullanılır ve yüklenmez. PRIVATE depoda runner ayırmayın. Güncel sınırlar [CI belgesindedir](ci/README.md).

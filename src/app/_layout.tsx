@@ -1,3 +1,5 @@
+import { SoundProvider } from "../features/audio/SoundProvider";
+import { GameAudioEvents } from "../features/audio/GameAudioEvents";
 import { AchievementProvider } from "../features/achievements/AchievementProvider";
 import { RewardBanner } from "../features/achievements/RewardBanner";
 import { SocialIdentityProvider } from "../features/online/SocialIdentityProvider";
@@ -80,17 +82,20 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <GameProvider>
-        <OnlineProvider>
-          <InboxProvider>
-            <SocialIdentityProvider>
-              <AchievementProvider>
-                <DuelProvider>
-                  <AppShell />
-                </DuelProvider>
-              </AchievementProvider>
-            </SocialIdentityProvider>
-          </InboxProvider>
-        </OnlineProvider>
+        <SoundProvider>
+          <OnlineProvider>
+            <InboxProvider>
+              <SocialIdentityProvider>
+                <AchievementProvider>
+                  <DuelProvider>
+                    <GameAudioEvents />
+                    <AppShell />
+                  </DuelProvider>
+                </AchievementProvider>
+              </SocialIdentityProvider>
+            </InboxProvider>
+          </OnlineProvider>
+        </SoundProvider>
       </GameProvider>
     </SafeAreaProvider>
   );

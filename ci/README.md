@@ -1,16 +1,29 @@
-# PUBLIC sonrası CI etkinleştirme
+# PUBLIC depoda GitHub Actions
 
-Şimdiki durum: repo PRIVATE; GitHub Actions depo ayarında kapalı; çalışabilir workflow dosyası yok. `workflows/*.yml.disabled` yalnız incelenebilir şablonlardır. Her işin `github.event.repository.private == false` koşulu, şablon yanlışlıkla PRIVATE depoda etkinleştirilse bile runner ayırmasını engeller.
+`ozgeilis/anla-ezberle-quiz-open` PUBLIC olarak doğrulandıktan sonra Actions etkinleştirilmiştir. Önceki beş `.yml.disabled` şablonu `.github/workflows/` altına taşındı; altıncı workflow PR #89'dan taşınan ses kabulüdür. Eski PRIVATE depoda Actions veya PR durumu değiştirilmez.
 
-Şablonlar standart `ubuntu-latest` kullanır. `contents: read` izinleri, süre sınırları, yerel test/fixture yaklaşımı ve Supabase'in yalnız geçici yerel örneğini kullanma kuralları korunur. Üretim gizli değerlerine, eski deponun secrets/env/loglarına veya deploy izinlerine ihtiyaç duymazlar. Tarihsel dal filtreleri kaldırılmıştır.
+## Kapsam ve güvenlik
 
-Güvenlik ve görsel yeniden dağıtım denetimi onaylanmadan görünürlüğü değiştirmeyin. Aşağıdaki adımlar bu taşıma sırasında çalıştırılmamıştır:
+- Her job `github.event.repository.private == false` koşulunu korur ve yalnız standart `ubuntu-latest` GitHub-hosted runner kullanır. Self-hosted, GPU veya larger runner yoktur.
+- Node.js 24 ve projeyle sabit pnpm 11.25.0 kullanılır. Action'lar incelenen resmî release commit SHA'larına sabitlenmiştir. Repo allowlist'i GitHub'a ait Action'lar ile sabitlenmiş pnpm, Supabase CLI ve Deno kurucularını kapsar.
+- `contents: read`, checkout `persist-credentials: false`, varsayılan read-only token ve PR onaylama yetkisinin kapalı olması korunur. `pull_request_target`, üretim sırları, Vercel veya Supabase yönetici anahtarı yoktur.
+- UI testleri yapılandırılmamış veya `127.0.0.1` sentetik bağlantı kullanır; dış HTTPS isteklerini tarayıcı bağlamında engeller. Sunucu kabulü yalnız runner'da sıfırdan açılan geçici yerel Supabase ve sentetik hesaplarla yapılır.
+- Yerel geçici Supabase, kendi geçici yönetici/anon anahtarlarını üretir. Bunlar üretim anahtarı değildir; status ve oturum fixture'ları `$RUNNER_TEMP`/özel `/tmp` dosyalarında tutulur, Git'e/loglara/artifact'lara yazılmaz.
+- Artifact yolları test çıktılarıyla sınırlı; saklama süresi bir gün. Üretim logları, `.env`, local-status veya tester dosyaları yüklenmez. Aynı PR/daldaki eski koşular concurrency ile durdurulur.
 
-1. Hak/güvenlik denetimini tamamlayın ve bu yeni deponun PUBLIC geçişini ayrıca gerçekleştirin; eski depoya dokunmayın.
-2. Şu kontrol `PUBLIC` döndürmelidir:
-   `gh repo view ozgeilis/anla-ezberle-quiz-open --json visibility --jq .visibility`
-3. Yalnız bu yeni deponun çalışma klasöründe `.github/workflows/` oluşturup `.disabled` uzantısını kaldırarak şablonları oraya kopyalayın. Bu değişiklik PUBLIC geçişinden sonra yeni bir commit olur.
-4. Yalnız bu yeni depoda Actions'ı etkinleştirin. Dış katkılar için workflow onayını koruyun; Secrets, write token, `pull_request_target`, ücretli larger runner veya self-hosted runner eklemeyin.
-5. Yeni bir PR üzerinden standart runner testlerini gözlemleyin. Başarıyla çalışmamış testleri geçmiş saymayın.
+## Çalışan kontroller
 
-Standart GitHub-hosted runner kullanımı PUBLIC depolarda ücretsizdir; larger runner ve depolama ücretleri ayrı kurallara tabidir. [GitHub'ın resmî faturalama açıklaması](https://docs.github.com/en/billing/concepts/product-billing/github-actions).
+| Workflow                  | Kabul                                                                                                     |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| content-main-check        | Soru bütünlüğü, TypeScript, lint, tüm testler, içerik denetimi                                            |
+| category-ui-smoke         | Referans ana sayfayla karşılaştırma, kategoriler, gerçek tur, profil/rozet/tema                           |
+| settings-account-ui       | İzole bildirim, profil ve hesap arayüzü                                                                   |
+| leaderboard               | İzole sıralama UI; geçici Auth/Edge/PostgreSQL, sosyal/düello ve kullanıcı verisi izolasyonu              |
+| special-collections-audit | Hazırlık durumundaki özel setlerin kaynak/tekrar/uygunluk kontrolleri; yayın açmaz                        |
+| game-audio                | Chromium + WebKit gerçek AudioContext, ses dosyaları, oyun olayları, tercihler ve üretilen native izinler |
+
+Hepsi PR ve manuel tetiklemeyi destekler. İçerik ve ses kontrolleri main push'unda da çalışır; diğerleri ilgili PR dosya yollarına göre çalışır. Başarılı bir PR kontrolü, fiziksel iPhone/Android dinleme veya canlı Supabase kabulü olarak sunulmaz.
+
+Standart GitHub-hosted runner kullanımı PUBLIC depolarda ücretsizdir; larger runner ve artifact saklama ayrı ücret kurallarına tabidir. [GitHub resmî açıklaması](https://docs.github.com/en/billing/concepts/product-billing/github-actions).
+
+Vercel dağıtımı bu workflow'ların parçası değildir. Bağlantı veya canlı yayın değişikliği ayrıca depo sahibinin onayını gerektirir.

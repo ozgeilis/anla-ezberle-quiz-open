@@ -1,3 +1,4 @@
+import { useSound } from "../audio/SoundProvider";
 import { stageDefinition } from "../../domain/game/stages";
 import React, { useEffect, useState } from "react";
 import {
@@ -35,6 +36,14 @@ import {
 } from "../../theme/tokens";
 export function ResultsScreen() {
   const { data, result, start, saving, saveResult } = useGame();
+  const { play } = useSound();
+  useEffect(() => {
+    if (result)
+      play(
+        stats(result).correct === 10 ? "perfect" : "completed",
+        `result:${result.id}`,
+      );
+  }, [result, play]);
   const theme = useTheme();
   const { width, fontScale } = useWindowDimensions();
   const compact = width < 360;

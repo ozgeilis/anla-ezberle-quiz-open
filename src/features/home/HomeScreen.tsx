@@ -153,6 +153,7 @@ export function HomeScreen() {
             {categoryOptions(availableQuestions).map((category, index) => (
               <View key={category.id} style={{ width: "48%", flexGrow: 1 }}>
                 <Tap
+                  sound="select"
                   label={`${category.title}, ${category.count} soru, yarışmanı hazırla`}
                   onPress={() =>
                     router.push({

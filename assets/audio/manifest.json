@@ -1,0 +1,85 @@
+{
+  "sampleRate": 24000,
+  "channels": 1,
+  "format": "PCM16 WAV",
+  "origin": "Original project synthesis; no third-party samples",
+  "files": {
+    "tap": {
+      "duration": 0.1,
+      "bytes": 4844,
+      "peak": 0.0896,
+      "rms": 0.0278,
+      "sha256": "9b531596bd2a6aad5c1921e0ca6795fff5fe37114a357c9a7fa9452891d79aab"
+    },
+    "select": {
+      "duration": 0.24,
+      "bytes": 11564,
+      "peak": 0.1868,
+      "rms": 0.0568,
+      "sha256": "7e297c65d157072dc915e52e2f712c1bf11dcd7f9efcba208fd1bcb322557982"
+    },
+    "correct": {
+      "duration": 0.68,
+      "bytes": 32684,
+      "peak": 0.3818,
+      "rms": 0.1099,
+      "sha256": "1e1b9f0c51e80fcf6d4490522025f4b987dd952a1377ef0fa27f2b45c0a4d347"
+    },
+    "wrong": {
+      "duration": 0.42,
+      "bytes": 20204,
+      "peak": 0.276,
+      "rms": 0.0838,
+      "sha256": "30ea690ff9fc3d0c97bb5e116a0f03c4ebcf742b8c99290a7e0d59854c9aca34"
+    },
+    "next": {
+      "duration": 0.26,
+      "bytes": 12524,
+      "peak": 0.1528,
+      "rms": 0.0495,
+      "sha256": "97ce64d53e435b5cbe6807265bef8625622306a77c037976271e18cb9ae2a431"
+    },
+    "timeout": {
+      "duration": 0.52,
+      "bytes": 25004,
+      "peak": 0.2119,
+      "rms": 0.0624,
+      "sha256": "8fc907b21a16f4c2c8eb9a62e08cc34b77220bb9bab57f9fcfbbbc7538057d21"
+    },
+    "completed": {
+      "duration": 1.38,
+      "bytes": 66284,
+      "peak": 0.4456,
+      "rms": 0.0981,
+      "sha256": "dadf851c465c1f09e2a2322f4ee88fb6990173062b527a2b4afb86b2cf7f3243"
+    },
+    "perfect": {
+      "duration": 1.88,
+      "bytes": 90284,
+      "peak": 0.4628,
+      "rms": 0.0982,
+      "sha256": "84a99e74a9df77c6470d7079a0a5693250a304b9249fdf534b2e37a54e6f5771"
+    },
+    "badge": {
+      "duration": 0.93,
+      "bytes": 44684,
+      "peak": 0.3141,
+      "rms": 0.0848,
+      "sha256": "fb753cfac5303f3719b55a10acc04bef23e271c8f604a04d33699eb6871915c4"
+    },
+    "levelUp": {
+      "duration": 1.45,
+      "bytes": 69644,
+      "peak": 0.4067,
+      "rms": 0.1011,
+      "sha256": "f1326ca86d471b556899f69075438999c236338a2d99ffdd7e5d82af804e8235"
+    },
+    "music": {
+      "duration": 24.0,
+      "bytes": 1152044,
+      "peak": 0.18,
+      "rms": 0.0423,
+      "sha256": "1fc284948f85d42749de97b53a6b7328768ae851c1b29954b5a58dc37ed14afa"
+    }
+  }
+}

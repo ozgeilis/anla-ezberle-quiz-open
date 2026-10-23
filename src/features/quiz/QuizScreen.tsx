@@ -1,3 +1,6 @@
+import { useSound } from "../audio/SoundProvider";
+import { useAudioObservation } from "../audio/useAudioObservation";
+import { quizAudioCues } from "../audio/events";
 import { brand } from "../../branding/identity";
 import { stageDefinition } from "../../domain/game/stages";
 import React, {
@@ -51,6 +54,7 @@ import {
 } from "../../theme/tokens";
 
 export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
+  const { play } = useSound();
   const solo = useGame();
   const duel = useDuel();
   const role = duel.match?.activeRole;
@@ -90,6 +94,17 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
     [session],
   );
   const chosen = session?.answers.find((a) => a.questionId === question?.id);
+  useAudioObservation(
+    session && question
+      ? {
+          id: `${session.id}:${demo ? role : "solo"}`,
+          cursor: session.cursor,
+          answer: chosen ? chosen.option === question.correct : null,
+          hidden: demo,
+        }
+      : null,
+    quizAudioCues,
+  );
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(timer);
@@ -133,6 +148,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
           setFinishing(false);
           return;
         }
+        play("completed", `demo:${session.id}:${role}:result`);
       } else await solo.finish();
       disablePrevention();
       router.replace(demo ? "/duel" : "/results");
@@ -338,6 +354,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                 label={`${"ABCD"[i]}. ${option}${chosen && !demo ? (correct ? ", doğru cevap" : wrong ? ", yanlış seçimin" : "") : ""}`}
                 disabled={!!chosen}
                 selected={chosen?.option === i}
+                sound={false}
                 onPress={() => answer(i)}
                 style={{ opacity: 1, borderRadius: radius.md }}
               >
