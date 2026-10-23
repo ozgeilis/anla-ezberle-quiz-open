@@ -8,6 +8,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
+    "eas-build-pre-install": "node scripts/eas-pre-install.mjs",
     "start": "EXPO_PUBLIC_CONTENT_CHANNEL=prototype expo start --port 8107",
     "web": "EXPO_PUBLIC_CONTENT_CHANNEL=prototype expo start --web --port 8107",
     "typecheck": "tsc --noEmit",

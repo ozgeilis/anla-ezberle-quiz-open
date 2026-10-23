@@ -1,4 +1,8 @@
 {
+  "cli": {
+    "version": ">=25.3.0",
+    "appVersionSource": "remote"
+  },
   "build": {
     "development": {
       "developmentClient": true,
@@ -18,6 +22,18 @@
         "buildType": "apk"
       },
       "developmentClient": false
+    },
+    "production": {
+      "distribution": "store",
+      "environment": "production",
+      "developmentClient": false,
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
     },
     "development-simulator": {
       "developmentClient": true,
