@@ -1,12 +1,12 @@
 # Android APK: gerçek cihaz ses kabulü
 
-Durum: **BEKLİYOR**. Kullanıcı 23 Ekim 2026 tarihinde fiziksel Android telefonu olmadığını belirtti; ADB listesi boş. Web/CI testleri, native konfigürasyon veya APK'nın derlenmesi cihazda ses duyulduğu anlamına gelmez.
+Durum: **BEKLİYOR**. Kullanıcı 24 Ekim 2026 tarihinde fiziksel Android telefona erişimi olduğunu, USB kablosu bulunmadığını belirtti. Kablosuz APK kurulumu yeterlidir; cihazda ses kabulü henüz yapılmadı. ADB listesinde bağlı cihaz yok. Web/CI testleri, native konfigürasyon veya APK'nın derlenmesi cihazda ses duyulduğu anlamına gelmez.
 
 Bu form gerçek APK kurulumu ve kullanıcı dinlemesiyle doldurulur. Model, Android sürümü, APK SHA-256 ve test tarihi kaydedilmeli; e-posta, parola, JWT veya özel maç bilgileri rapora eklenmemeli. Mevcut uygulama/kayıtlar silinmemeli. İmza uyuşmazlığında uygulamayı kaldırmak yerine durulmalı.
 
 ## Kurulum
 
-EAS preview build sayfasındaki Install bağlantısını telefonda aç. APK'yı yalnız verilen resmî build adresinden indir; gerekiyorsa yalnız bu indirme için ilgili tarayıcının uygulama yükleme onayını kendin ver. Kurulumdan sonra uygulama Metro veya bilgisayar bağlantısı olmadan açılmalı. Bu bir Google Play yayını değildir. Kullanıcı 24 Ekim’de `com.kovynelstudio.anlaezberle` kimliğini onayladı; yeni kabul APK’sı bu kimlikle üretilir. Önceki `.prototype` APK’ları yeni kimliğin cihaz kabulü sayılmaz. Eski uygulamayı kaldırmayın; iki kimlik ayrı yerel veri alanı kullanır ve otomatik ilerleme aktarımı yoktur.
+[24 Ekim onaylı kimlik APK’sının kurulum sayfasını](https://expo.dev/accounts/ozgeilis/projects/anla-ezberle-quiz/builds/e729151d-6bf7-4d9a-bb95-5139eda2effa) telefonda aç veya bilgisayardaki Install QR kodunu tara. USB, Android Studio, Expo Go veya Metro gerekmez. APK'yı yalnız verilen resmî build adresinden indir; gerekiyorsa yalnız bu indirme için ilgili tarayıcının uygulama yükleme onayını kendin ver. Kurulumdan sonra uygulama Metro veya bilgisayar bağlantısı olmadan açılmalı. Bu bir Google Play yayını değildir. Kullanıcı 24 Ekim’de `com.kovynelstudio.anlaezberle` kimliğini onayladı; yeni kabul APK’sı bu kimlikle üretilir. Önceki `.prototype` APK’ları yeni kimliğin cihaz kabulü sayılmaz. Eski uygulamayı kaldırmayın; iki kimlik ayrı yerel veri alanı kullanır ve otomatik ilerleme aktarımı yoktur.
 
 ## Efektler (her satır henüz cihazda test edilmedi)
 
@@ -39,7 +39,8 @@ Sonuç/rozet/seviye aynı anda gelirse gerçek kutlamalar kısa sırayla çalabi
 ## Kabul kaydı
 
 - Cihaz / Android: bekliyor
-- APK build kimliği / SHA-256: build raporuna göre doldurulacak
+- APK build kimliği: `e729151d-6bf7-4d9a-bb95-5139eda2effa`
+- APK SHA-256: `d8aecea2889314276f4328ea57cf44fc4dc103d88fe374578316319d53136439`
 - 10 efekt: test edilmedi
 - Müzik / medya düzeyi / arka plan / yeniden açma: test edilmedi
 - Kayıtlar / tercih kalıcılığı: cihazda test edilmedi
