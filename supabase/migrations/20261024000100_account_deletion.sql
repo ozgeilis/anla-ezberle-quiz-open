@@ -103,23 +103,20 @@ END $$;
 REVOKE ALL ON FUNCTION public.delete_player_account(uuid) FROM public,anon,authenticated;
 GRANT EXECUTE ON FUNCTION public.delete_player_account(uuid) TO service_role;
 REVOKE ALL ON FUNCTION quiz_private.immutable_content(),quiz_private.guard_match(),quiz_private.live_guard_room() FROM public,anon,authenticated;
-CREATE OR REPLACE FUNCTION quiz_private.match_view(actor uuid, match_uuid uuid)
- RETURNS jsonb
- LANGUAGE sql
- STABLE SECURITY DEFINER
- SET search_path TO ''
-AS $function$
-select jsonb_build_object(
- 'direct',exists(select 1 from quiz_private.direct_challenges d where d.match_id=m.id and d.state='accepted'),'id',m.id,'state',m.state,'revision',m.revision,'createdAt',m.created_at,'expiresAt',m.expires_at,
- 'manifestHash',m.manifest_hash,'ruleVersion',m.rule_version,'scope',m.content_scope,
- 'slot',mp.slot,'started',s.started_at is not null,'finished',s.completed_at is not null,
- 'questions',case when s.started_at is not null then m.question_set else '[]'::jsonb end,
- 'answers',coalesce((select jsonb_agg(jsonb_build_object('position',a.position,'optionId',a.option_id,'requestId',a.request_id) order by a.position) from quiz_private.quiz_attempts a where a.session_id=s.id),'[]'::jsonb),
- 'players',(select jsonb_agg(jsonb_build_object('slot',p.slot,'name',coalesce(pr.display_name,'Silinmiş Oyuncu'),'finished',ps.completed_at is not null,'correct',case when m.state='completed' then ps.correct_count end,'wrong',case when m.state='completed' then 10-ps.correct_count end,'score',case when m.state='completed' then ps.correct_count*100 end) order by p.slot) from quiz_private.match_players p left join quiz_private.player_profiles pr on pr.id=p.player_id left join quiz_private.quiz_sessions ps on ps.id=p.session_id where p.match_id=m.id),
- 'result',case when m.state='completed' then m.result end,
- 'review',case when m.state='completed' then (select jsonb_agg(jsonb_build_object('id',q.value->>'id','version',(q.value->>'version')::integer,'correctOptionId',k.correct_option_id,'explanation',k.explanation) || case when m.content_scope='bank_v71' then jsonb_build_object('sources',(select md.sources from quiz_private.async_v71_metadata md where md.id=k.question_id and md.version=k.question_version)) else '{}'::jsonb end order by q.ordinality) from jsonb_array_elements(m.question_set) with ordinality q(value,ordinality) join quiz_private.quiz_answer_keys k on k.question_id=q.value->>'id' and k.question_version=(q.value->>'version')::integer) else '[]'::jsonb end
-)
-from quiz_private.matches m join quiz_private.match_players mp on mp.match_id=m.id and mp.player_id=actor join quiz_private.quiz_sessions s on s.id=mp.session_id where m.id=match_uuid;
-$function$;
-
+-- Preserve the installed version's content-scope/review behavior. Redact only
+-- the erased slot; do not copy an unrelated local/staged content protocol.
+DO $redact$
+DECLARE definition text;
+BEGIN
+ SELECT pg_get_functiondef('quiz_private.match_view(uuid,uuid)'::regprocedure) INTO definition;
+ IF position('quiz_private.player_profiles pr on pr.id=p.player_id' in definition)=0 OR position('quiz_private.quiz_sessions ps on ps.id=p.session_id' in definition)=0 THEN RAISE EXCEPTION 'Unsupported match view; review before account erasure rollout'; END IF;
+ definition=replace(definition,'''name'',pr.display_name','''name'',coalesce(pr.display_name,''Silinmiş Oyuncu'')');
+ IF position('left join quiz_private.player_profiles pr on pr.id=p.player_id' in definition)=0 THEN
+  definition=replace(definition,'join quiz_private.player_profiles pr on pr.id=p.player_id','left join quiz_private.player_profiles pr on pr.id=p.player_id');
+ END IF;
+ IF position('left join quiz_private.quiz_sessions ps on ps.id=p.session_id' in definition)=0 THEN
+  definition=replace(definition,'join quiz_private.quiz_sessions ps on ps.id=p.session_id','left join quiz_private.quiz_sessions ps on ps.id=p.session_id');
+ END IF;
+ EXECUTE definition;
+END $redact$;
 COMMIT;

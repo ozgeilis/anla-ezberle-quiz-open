@@ -56,6 +56,7 @@ async function open(p, path) {
   await p.waitForFunction(() => window.__soundProbe.decoded === 11);
 }
 async function choose(p, correct = true) {
+  await p.getByRole("button", { name: /^A\. / }).waitFor({ state: "visible" });
   const texts = await p.getByRole("heading").allTextContents();
   const question = texts.find((text) => fixture.questionOracle[text]);
   const answer = fixture.questionOracle[question];
