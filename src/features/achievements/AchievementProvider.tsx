@@ -48,7 +48,10 @@ export function AchievementProvider({ children }: React.PropsWithChildren) {
     actor: string | undefined;
     badges: BadgeState[];
   }>({ actor: undefined, badges: [] });
-  const reward = rewardState.actor === actor ? rewardState.badges : [];
+  const reward = useMemo(
+    () => (rewardState.actor === actor ? rewardState.badges : []),
+    [rewardState, actor],
+  );
   const dismiss = useCallback(
     () => setReward({ actor: currentActor.current, badges: [] }),
     [],
@@ -140,39 +143,32 @@ export function AchievementProvider({ children }: React.PropsWithChildren) {
       return () => clearTimeout(timer);
     }
   }, [badges, ready, actor, social, result, data.games, play]);
-  const saveSharing = async (shared: boolean, showcase: string[]) => {
-    if (!actor) throw new Error("Önce doğrulanmış hesabınla giriş yap.");
-    if (settingsBusy.current)
-      throw new Error("Ayar kaydediliyor. Biraz bekle.");
-    settingsBusy.current = true;
-    ++revision.current;
-    try {
-      const next = await onlineRequest<SocialAchievements>(
-        "achievement_settings",
-        { shared, showcase },
-        actor,
-      );
-      if (currentActor.current === actor) setSnapshot({ actor, data: next });
-    } finally {
-      settingsBusy.current = false;
-    }
-  };
-
-  return (
-    <Context.Provider
-      value={{
-        badges,
-        social,
-        error,
-        reward,
-        dismiss,
-        refresh,
-        saveSharing,
-      }}
-    >
-      {children}
-    </Context.Provider>
+  const saveSharing = useCallback(
+    async (shared: boolean, showcase: string[]) => {
+      if (!actor) throw new Error("Önce doğrulanmış hesabınla giriş yap.");
+      if (settingsBusy.current)
+        throw new Error("Ayar kaydediliyor. Biraz bekle.");
+      settingsBusy.current = true;
+      ++revision.current;
+      try {
+        const next = await onlineRequest<SocialAchievements>(
+          "achievement_settings",
+          { shared, showcase },
+          actor,
+        );
+        if (currentActor.current === actor) setSnapshot({ actor, data: next });
+      } finally {
+        settingsBusy.current = false;
+      }
+    },
+    [actor],
   );
+
+  const value = useMemo(
+    () => ({ badges, social, error, reward, dismiss, refresh, saveSharing }),
+    [badges, social, error, reward, dismiss, refresh, saveSharing],
+  );
+  return <Context.Provider value={value}>{children}</Context.Provider>;
 }
 export function useAchievements() {
   const context = useContext(Context);

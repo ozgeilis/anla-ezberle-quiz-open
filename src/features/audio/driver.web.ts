@@ -91,7 +91,7 @@ export function createSoundDriver(): SoundDriver {
             const node = context.createBufferSource();
             source = node;
             node.buffer = buffer;
-            node.loop = name === "music";
+            node.loop = false;
             node.connect(gain);
             started = context.currentTime;
             node.onended = () => {

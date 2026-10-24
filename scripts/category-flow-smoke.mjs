@@ -12,9 +12,7 @@ export async function categoryFlowSmoke(page, root) {
   const round = async (capture = false, replay = false, failSave = false) => {
     for (let i = 1; i <= 10; i++) {
       await page.getByText(`Soru ${i} / 10`, { exact: true }).waitFor();
-      const code = (await page.getByText(/^Soru kodu: /).textContent())
-        .replace("Soru kodu: ", "")
-        .trim();
+      const code = await page.getByRole("heading").last().textContent();
       if (!replay) {
         assert(!seen.has(code), `Completed history repeated question ${code}`);
         seen.add(code);
@@ -26,7 +24,7 @@ export async function categoryFlowSmoke(page, root) {
           quality: 65,
         });
       await page.getByRole("button", { name: /^A\. / }).click();
-      await page.getByText("Açıklama", { exact: true }).waitFor();
+      await page.getByTestId("answer-feedback").waitFor();
       if (capture && i === 1)
         await page.screenshot({
           path: join(root, "flow-explanation.jpg"),
@@ -45,12 +43,8 @@ export async function categoryFlowSmoke(page, root) {
             return original.call(this, key, value);
           };
         });
-      await page
-        .getByRole("button", {
-          name: i === 10 ? "Sonucumu Gör" : "Sonraki Soru",
-          exact: true,
-        })
-        .click();
+      if (i < 10)
+        await page.getByText(`Soru ${i + 1} / 10`, { exact: true }).waitFor();
     }
     if (failSave) {
       await page

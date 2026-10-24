@@ -7,7 +7,7 @@ import React, {
   useState,
 } from "react";
 import { AppState, Platform } from "react-native";
-import { useGame } from "../../storage/GameProvider";
+import { useGameLibrary } from "../../storage/GameProvider";
 import { useInbox } from "./InboxProvider";
 import { useOnlineAuth } from "./OnlineProvider";
 import { onlineMessage, onlineRequest } from "./client";
@@ -29,7 +29,7 @@ interface IdentityValue {
 const Context = createContext<IdentityValue | null>(null);
 export function SocialIdentityProvider({ children }: React.PropsWithChildren) {
   const { session } = useOnlineAuth(),
-    { data } = useGame(),
+    { data } = useGameLibrary(),
     inbox = useInbox();
   const actor = session?.user.id;
   const current = useRef(actor);

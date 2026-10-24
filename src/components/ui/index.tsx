@@ -19,7 +19,7 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { Pattern } from "../game/Artwork";
-import { useGame } from "../../storage/GameProvider";
+import { useGame, useGameDisplay } from "../../storage/GameProvider";
 import {
   colors as c,
   fonts,
@@ -80,7 +80,7 @@ export function Txt({
   );
 }
 export function useReducedMotion() {
-  const { data } = useGame();
+  const { profile } = useGameDisplay();
   const [system, setSystem] = useState(true);
   useEffect(() => {
     void AccessibilityInfo.isReduceMotionEnabled().then(setSystem);
@@ -90,7 +90,7 @@ export function useReducedMotion() {
     );
     return () => listener.remove();
   }, []);
-  return system || data.profile.reduceMotion;
+  return system || profile.reduceMotion;
 }
 export function Tap({
   children,
@@ -149,10 +149,18 @@ export function Tap({
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         onPress={() => {
-          audio.activate();
-          if (sound !== false)
-            audio.play(sound ?? (role === "radio" ? "select" : "tap"));
+          // Gameplay/selection owns the gesture. Audio runs after the visual
+          // commit; native player creation must never sit before onPress.
           onPress();
+          if (sound !== false) {
+            const cue = sound ?? (role === "radio" ? "select" : "tap");
+            requestAnimationFrame(() =>
+              setTimeout(() => {
+                audio.activate();
+                audio.play(cue);
+              }, 0),
+            );
+          }
         }}
         onPressIn={() => animate(0.98)}
         onPressOut={() => animate(1)}
@@ -406,7 +414,7 @@ export function Page({
       ref={scroll}
       style={{ flex: 1, backgroundColor: theme.background }}
       contentContainerStyle={{
-        padding: compact ? 16 : 24,
+        padding: compact ? 14 : 18,
         paddingBottom: 32,
         width: "100%",
         maxWidth: 900,
@@ -430,13 +438,13 @@ export function Page({
       <View
         style={[
           s.row,
-          { marginTop: 12, marginBottom: 24, justifyContent: "space-between" },
+          { marginTop: 8, marginBottom: 18, justifyContent: "space-between" },
         ]}
       >
         <View style={{ flex: 1, minWidth: 0 }}>
           <Txt
             accessibilityRole="header"
-            size={compact ? 27 : 30}
+            size={compact ? 24 : 27}
             weight="heavy"
           >
             {title}
@@ -536,7 +544,7 @@ export const s = StyleSheet.create({
     boxShadow: shadows.card,
   },
   button: {
-    minHeight: 60,
+    minHeight: 52,
     borderRadius: radius.lg,
     borderWidth: 2,
     overflow: "hidden",
@@ -545,8 +553,8 @@ export const s = StyleSheet.create({
   },
   buttonContent: {
     paddingHorizontal: space.lg,
-    paddingVertical: space.lg,
-    minHeight: 60,
+    paddingVertical: space.md,
+    minHeight: 52,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",

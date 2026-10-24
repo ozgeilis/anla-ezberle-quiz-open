@@ -10,5 +10,5 @@ export const soundAssets: Record<SoundName, number> = {
   perfect: require("../../../assets/audio/perfect.wav"),
   badge: require("../../../assets/audio/badge.wav"),
   levelUp: require("../../../assets/audio/levelUp.wav"),
-  music: require("../../../assets/audio/music.wav"),
+  tick: require("../../../assets/audio/tick.wav"),
 };

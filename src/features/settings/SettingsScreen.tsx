@@ -322,6 +322,13 @@ function AccountSettings({
                 </Txt>
               </View>
               <Button
+                title="Hesabımı Sil"
+                icon="trash-2"
+                variant="outline"
+                disabled={busy}
+                onPress={() => router.push("/account-delete")}
+              />
+              <Button
                 title="Hesaptan Çık"
                 icon="log-out"
                 variant="outline"
@@ -406,6 +413,11 @@ function AccountSettings({
           <Txt accessibilityRole="header" weight="heavy" size={21}>
             Gizlilik
           </Txt>
+          <Button
+            title="Gizlilik ve verilerin"
+            variant="outline"
+            onPress={() => router.push("/privacy")}
+          />
           <Txt size={13}>
             {auth.session
               ? "Oyuncu aramasında görünürlüğünü yukarıdaki Kullanıcı Adı ve Gizlilik kartından yönetebilirsin. Değişiklik aynı profil kaydıyla uygulanır."

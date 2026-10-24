@@ -10,7 +10,7 @@ export async function referenceUiSmoke(browser, root) {
       "--import",
       "tsx",
       "-e",
-      'import { questions } from "./src/content/questions/index.ts"; process.stdout.write(JSON.stringify(Object.fromEntries(questions.map(q=>[q.id,q.options.find(o=>o.id===q.correctOptionId).text]))));',
+      'import { questions } from "./src/content/questions/index.ts"; process.stdout.write(JSON.stringify(Object.fromEntries(questions.map(q=>[q.question,q.options.find(o=>o.id===q.correctOptionId).text]))));',
     ],
     { encoding: "utf8" },
   );
@@ -75,9 +75,9 @@ export async function referenceUiSmoke(browser, root) {
       .click();
     for (let i = 1; i <= 10; i++) {
       await page.getByText(`Soru ${i} / 10`, { exact: true }).waitFor();
-      const code = (await page.getByText(/^Soru kodu: /).textContent())
-        .replace("Soru kodu: ", "")
-        .trim();
+      const headings = await page.getByRole("heading").allTextContents();
+      const code = headings.find((text) => correctText[text]);
+      assert(code, "Real question text must match private fixture");
       const options = page.getByRole("button", { name: /^[ABCD]\. / });
       const labels = await options.allTextContents();
       const correct = labels.findIndex(
@@ -86,23 +86,10 @@ export async function referenceUiSmoke(browser, root) {
       assert(correct >= 0, "Current shuffled correct text must exist");
       if (i === 1) await shot("quiz");
       await options.nth(i === 2 ? (correct + 1) % 4 : correct).click();
-      await page.getByText("Açıklama", { exact: true }).waitFor();
-      if (i <= 2) {
-        await page
-          .getByText("Açıklama", { exact: true })
-          .scrollIntoViewIfNeeded();
-        await shot(i === 1 ? "correct-explanation" : "wrong-explanation");
-        assert.equal(
-          await page.getByRole("button", { name: /Kaynağı aç:/ }).count(),
-          1,
-        );
-      }
-      await page
-        .getByRole("button", {
-          name: i === 10 ? "Sonucumu Gör" : "Sonraki Soru",
-          exact: true,
-        })
-        .click();
+      await page.getByTestId("answer-feedback").waitFor();
+      if (i <= 2) await shot(i === 1 ? "correct-feedback" : "wrong-feedback");
+      if (i < 10)
+        await page.getByText(`Soru ${i + 1} / 10`, { exact: true }).waitFor();
     }
     await page
       .getByText("Sonucun bu cihazda kaydedildi. ✓", { exact: true })
@@ -115,6 +102,22 @@ export async function referenceUiSmoke(browser, root) {
       .getByRole("heading", { name: "Tebrikler!", exact: true })
       .scrollIntoViewIfNeeded();
     await shot("results");
+    await page
+      .getByRole("button", { name: "Yanlış cevapları incele", exact: true })
+      .click();
+    await page
+      .getByRole("button", { name: /Kaynağı aç,/ })
+      .first()
+      .waitFor();
+    await shot("wrong-explanation-source");
+    await page
+      .getByRole("button", { name: "Tüm cevapları göster", exact: true })
+      .click();
+    assert.equal(
+      await page.getByRole("button", { name: /Kaynağı aç,/ }).count(),
+      10,
+    );
+    await page.getByRole("button", { name: "Sonuca dön", exact: true }).click();
     const saved = await page.evaluate(
       (k) => JSON.parse(localStorage.getItem(k)),
       key,

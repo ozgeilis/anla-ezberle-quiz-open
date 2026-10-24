@@ -8,7 +8,7 @@ import { SettingsButton, NotificationsButton } from "../ui/SettingsButton";
 import { usePlayerIdentity } from "../../features/online/SocialIdentityProvider";
 import { ProgressMeter } from "../ui/visuals";
 import { progress } from "../../domain/scoring/progress";
-import { useGame } from "../../storage/GameProvider";
+import { useGameLibrary } from "../../storage/GameProvider";
 import { colors as c, useTheme } from "../../theme/tokens";
 
 /** Shared edge-to-edge illustrated scene, with a native curved surface below. */
@@ -25,7 +25,7 @@ export function ReferenceHero({
         colors={["rgba(0,66,72,0.55)", "transparent", "rgba(0,66,72,0.15)"]}
         style={{ position: "absolute", inset: 0 }}
       />
-      <View style={{ padding: 18, paddingBottom: 36 }}>{children}</View>
+      <View style={{ padding: 14, paddingBottom: 28 }}>{children}</View>
       <View
         pointerEvents="none"
         style={{
@@ -50,21 +50,21 @@ export function PlayerHeader({
   notifications?: boolean;
 }) {
   const { displayName } = usePlayerIdentity();
-  const { data } = useGame(),
+  const { data } = useGameLibrary(),
     p = progress(data.games),
     compact = useWindowDimensions().width < 430;
   const xp = (
     <View
       style={{
-        width: compact && notifications ? "100%" : compact ? 104 : 120,
-        padding: 8,
+        width: notifications ? "100%" : compact ? 104 : 120,
+        padding: 7,
         borderRadius: 18,
         backgroundColor: "rgba(0,89,83,0.90)",
         borderWidth: 1,
         borderColor: "#22C3AC",
         gap: 4,
-        flexDirection: compact && notifications ? "row" : "column",
-        alignItems: compact && notifications ? "center" : undefined,
+        flexDirection: notifications ? "row" : "column",
+        alignItems: notifications ? "center" : undefined,
       }}
     >
       <View style={[s.row, { gap: 5, justifyContent: "center" }]}>
@@ -73,7 +73,7 @@ export function PlayerHeader({
           Seviye {p.level}
         </Txt>
       </View>
-      <View style={{ flex: compact && notifications ? 1 : undefined }}>
+      <View style={{ flex: notifications ? 1 : undefined }}>
         <ProgressMeter
           label="Seviye ilerlemesi"
           value={p.levelXp}
@@ -88,14 +88,14 @@ export function PlayerHeader({
     </View>
   );
   return (
-    <View style={{ gap: 10, marginBottom: 18 }}>
+    <View style={{ gap: 8, marginBottom: 10 }}>
       <View style={[s.row, { justifyContent: "space-between", gap: 8 }]}>
         <Tap
           label="Profilini aç"
           onPress={() => router.push("/profile")}
           style={[s.row, { gap: 8, flexShrink: 1, flexGrow: 1 }]}
         >
-          <Avatar variant={data.profile.avatar} size={compact ? 42 : 50} />
+          <Avatar variant={data.profile.avatar} size={compact ? 40 : 44} />
           <View
             style={{
               flexShrink: 1,
@@ -105,25 +105,25 @@ export function PlayerHeader({
             <Txt size={12} color={c.white}>
               Merhaba
             </Txt>
-            <Txt numberOfLines={1} weight="heavy" size={17} color={c.white}>
+            <Txt numberOfLines={1} weight="heavy" size={16} color={c.white}>
               {displayName}
             </Txt>
           </View>
         </Tap>
-        {!(compact && notifications) && xp}
+        {!notifications && xp}
         <View style={[s.row, { gap: 6 }]}>
           {notifications && <NotificationsButton />}
           <SettingsButton />
         </View>
       </View>
-      {compact && notifications && xp}
+      {notifications && xp}
     </View>
   );
 }
 
 export function GoldHeading({
   children,
-  size = 42,
+  size = 34,
 }: React.PropsWithChildren<{ size?: number }>) {
   return (
     <Txt

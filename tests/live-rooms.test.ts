@@ -146,3 +146,20 @@ test("new live badges require server award IDs; local metric claims cannot grant
   assert(badges.find((b) => b.id === "live_first")!.earned);
   assert(!badges.find((b) => b.id === "live_win")!.earned);
 });
+
+test("10-second rooms follow the server rule while historical 15-second rooms keep their timeline", () => {
+  const start = 10000;
+  assert.equal(liveClock(start, start + 9999, 5, 10).phase, "answer");
+  assert.deepEqual(liveClock(start, start + 10000, 5, 10), {
+    phase: "reveal",
+    position: 1,
+    seconds: 5,
+  });
+  assert.deepEqual(liveClock(start, start + 15000, 5, 10), {
+    phase: "answer",
+    position: 2,
+    seconds: 10,
+  });
+  assert.equal(liveClock(start, start + 75000, 5, 10).phase, "completed");
+  assert.equal(liveClock(start, start + 10000, 5, 15).phase, "answer");
+});

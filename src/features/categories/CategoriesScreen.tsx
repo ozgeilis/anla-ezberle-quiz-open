@@ -14,7 +14,7 @@ import {
   DifficultyTile,
   IllustratedPanel,
 } from "../../components/ui/visuals";
-import React, { useMemo, useState } from "react";
+import React, { useDeferredValue, useMemo, useState } from "react";
 import { View, useWindowDimensions } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { TopicArtwork } from "../../components/game/TopicArtwork";
@@ -53,29 +53,52 @@ export function CategoriesScreen() {
 
 function PreparationScreen({ initial }: { initial: PreparationSelection }) {
   const [selection, setSelection] = useState(initial);
+  const assessedSelection = useDeferredValue(selection);
+  const assessing = selection !== assessedSelection;
   const [attempted, setAttempted] = useState(false);
   const { start, startError, ready, session, data, storageError } = useGame();
   const topics = useMemo(
     () =>
       categoryOptions(
         availableQuestions,
-        selection.difficulty,
-        selection.stage,
+        assessedSelection.difficulty,
+        assessedSelection.stage,
         data.games,
       ),
-    [selection.difficulty, selection.stage, data.games],
+    [assessedSelection.difficulty, assessedSelection.stage, data.games],
   );
   const theme = useTheme();
   const { width, fontScale } = useWindowDimensions();
   const compact = width < 360;
   const status = useMemo(
-    () => preparationStatus(availableQuestions, selection, data.games),
-    [selection, data.games],
+    () => preparationStatus(availableQuestions, assessedSelection, data.games),
+    [assessedSelection, data.games],
   );
   const update = (next: Partial<PreparationSelection>) => {
     setSelection((current) => ({ ...current, ...next }));
     setAttempted(false);
   };
+  const stageAvailability = useMemo(() => {
+    const pool = assessedSelection.playCategory
+      ? categoryPool(availableQuestions, assessedSelection.playCategory)
+      : assessedSelection.topic
+        ? learningTopicPool(availableQuestions, assessedSelection.topic)
+        : availableQuestions;
+    return Object.fromEntries(
+      gameStages.map((stage) => {
+        const status = preparationStatus(
+          pool,
+          { category: "mixed", stage: stage.id },
+          data.games,
+        );
+        return [
+          stage.id,
+          status.canStart ||
+            ("canReplay" in status && status.canReplay === true),
+        ];
+      }),
+    );
+  }, [assessedSelection.playCategory, assessedSelection.topic, data.games]);
   const categoryTitle = selection.playCategory
     ? playCategoryName(selection.playCategory)
     : selection.topic
@@ -107,8 +130,8 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
       >
         <View style={{ gap: 24 }}>
           <IllustratedPanel
-            minHeight={146}
-            artwork={<TopicArtwork id="quran" size={compact ? 66 : 90} />}
+            minHeight={120}
+            artwork={<TopicArtwork id="quran" size={compact ? 58 : 74} />}
           >
             <Txt size={11} weight="heavy" color={c.gold}>
               SENİN TURUN, SENİN SEÇİMİN
@@ -168,20 +191,7 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
             </Txt>
             <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
               {gameStages.map((stage) => {
-                const pool = selection.playCategory
-                  ? categoryPool(availableQuestions, selection.playCategory)
-                  : selection.topic
-                    ? learningTopicPool(availableQuestions, selection.topic)
-                    : availableQuestions;
-                const stageStatus = preparationStatus(
-                  pool,
-                  { category: "mixed", stage: stage.id },
-                  data.games,
-                );
-                const supported =
-                  stageStatus.canStart ||
-                  ("canReplay" in stageStatus &&
-                    stageStatus.canReplay === true);
+                const supported = stageAvailability[stage.id];
                 const selected = selection.stage === stage.id;
                 return (
                   <View
@@ -197,8 +207,8 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
                         update({ stage: stage.id, difficulty: undefined })
                       }
                       style={{
-                        minHeight: 170,
-                        padding: 14,
+                        minHeight: 146,
+                        padding: 12,
                         gap: 8,
                         borderRadius: 20,
                         borderWidth: 2,
@@ -328,14 +338,19 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
             >
               <Button
                 style={{ minHeight: 54 }}
-                title="Oyuna Başla"
+                title={assessing ? "Sorular hazırlanıyor…" : "Oyuna Başla"}
                 icon="play"
                 variant="mustard"
                 disabled={
-                  !status.canStart || !ready || !!session || !!storageError
+                  assessing ||
+                  !status.canStart ||
+                  !ready ||
+                  !!session ||
+                  !!storageError
                 }
                 onPress={() => {
                   if (
+                    assessing ||
                     !status.canStart ||
                     (!selection.category &&
                       !selection.topic &&
@@ -364,7 +379,7 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
               title="Görülen sorularla yeniden oyna"
               icon="rotate-cw"
               variant="outline"
-              disabled={!ready || !!storageError}
+              disabled={assessing || !ready || !!storageError}
               onPress={() => {
                 if (
                   start(

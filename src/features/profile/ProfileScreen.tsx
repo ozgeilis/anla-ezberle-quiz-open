@@ -40,7 +40,7 @@ export function ProfileScreen() {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "space-between",
-            marginBottom: 18,
+            marginBottom: 10,
           }}
         >
           <Tap
@@ -52,7 +52,7 @@ export function ProfileScreen() {
           </Tap>
           <Txt
             accessibilityRole="header"
-            size={26}
+            size={23}
             weight="heavy"
             color={c.white}
           >
@@ -82,10 +82,10 @@ export function ProfileScreen() {
               boxShadow: shadows.reward,
             }}
           >
-            <Avatar variant={data.profile.avatar} size={compact ? 104 : 116} />
+            <Avatar variant={data.profile.avatar} size={compact ? 80 : 92} />
           </Tap>
           <Txt
-            size={compact ? 32 : 36}
+            size={compact ? 26 : 30}
             weight="heavy"
             color={c.white}
             style={{

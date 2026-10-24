@@ -6,7 +6,8 @@ declare actor uuid=gen_random_uuid(); players uuid[]='{}'; other uuid; unverifie
 begin
  select count(*) into before_scores from quiz_private.score_ledger;
  begin
-  assert (select count(*) from quiz_private.achievement_rules)=6,'six server rules';
+  assert (select jsonb_agg(jsonb_build_array(id,metric,target) order by id) from quiz_private.achievement_rules) =
+   '[["duel_first","opponents",1],["duel_five","opponents",5],["duel_perfect","perfect",1],["duel_win","wins",1],["friend_first","friends",1],["friend_five","friends",5],["live_first","liveRounds",1],["live_friends","liveFriends",3],["live_perfect","livePerfect",1],["live_win","liveWins",1],["live_wins20","liveWins",20],["live_wins5","liveWins",5]]'::jsonb,'exact twelve current server rules';
   assert not has_function_privilege('authenticated','public.player_achievement_command(uuid,text,jsonb)','EXECUTE'),'service-only RPC';
   assert not has_table_privilege('authenticated','quiz_private.achievement_awards','INSERT'),'no client awards';
   assert (select relforcerowsecurity from pg_class where oid='quiz_private.achievement_awards'::regclass),'forced RLS';

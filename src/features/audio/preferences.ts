@@ -1,17 +1,14 @@
 export interface SoundPreferences {
-  version: 1;
+  version: 2;
   effectsEnabled: boolean;
-  musicEnabled: boolean;
   effectsVolume: number;
-  musicVolume: number;
 }
+// Keep the storage key so v1 users retain their effect/mute choices.
 export const SOUND_STORAGE_KEY = "@anla-ezberle-quiz/preferences/audio/v1";
 export const defaultSoundPreferences: SoundPreferences = {
-  version: 1,
+  version: 2,
   effectsEnabled: true,
-  musicEnabled: false,
   effectsVolume: 0.5,
-  musicVolume: 0.5,
 };
 export function parseSoundPreferences(raw: string | null): SoundPreferences {
   if (raw === null) return { ...defaultSoundPreferences };
@@ -20,31 +17,17 @@ export function parseSoundPreferences(raw: string | null): SoundPreferences {
     throw Error("Invalid audio preferences");
   const p = v as Record<string, unknown>;
   if (
-    p.version !== 1 ||
+    (p.version !== 1 && p.version !== 2) ||
     typeof p.effectsEnabled !== "boolean" ||
-    typeof p.musicEnabled !== "boolean" ||
-    ![p.effectsVolume, p.musicVolume].every(
-      (n) => typeof n === "number" && Number.isFinite(n) && n >= 0 && n <= 1,
-    )
+    typeof p.effectsVolume !== "number" ||
+    !Number.isFinite(p.effectsVolume) ||
+    p.effectsVolume < 0 ||
+    p.effectsVolume > 1
   )
     throw Error("Invalid audio preferences");
   return {
-    version: 1,
+    version: 2,
     effectsEnabled: p.effectsEnabled,
-    musicEnabled: p.musicEnabled,
-    effectsVolume: p.effectsVolume as number,
-    musicVolume: p.musicVolume as number,
+    effectsVolume: p.effectsVolume,
   };
-}
-export function menuMusicAllowed(path: string) {
-  return [
-    "/",
-    "/categories",
-    "/achievements",
-    "/profile",
-    "/ranking",
-    "/settings",
-    "/online/players",
-    "/online/inbox",
-  ].includes(path);
 }

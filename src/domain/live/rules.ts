@@ -41,7 +41,13 @@ export function liveQuotas(
     .forEach((k) => result[k]++);
   return result;
 }
-export function liveClock(startAt: number, serverNow: number, count: number) {
+export function liveClock(
+  startAt: number,
+  serverNow: number,
+  count: number,
+  answerSeconds: 10 | 15 = ANSWER_SECONDS,
+) {
+  const cycle = answerSeconds + REVEAL_SECONDS;
   const elapsed = (serverNow - startAt) / 1000;
   if (elapsed < 0)
     return {
@@ -49,13 +55,15 @@ export function liveClock(startAt: number, serverNow: number, count: number) {
       position: 0,
       seconds: Math.ceil(-elapsed),
     };
-  if (elapsed >= count * (ANSWER_SECONDS + REVEAL_SECONDS))
+  if (elapsed >= count * cycle)
     return { phase: "completed" as const, position: count, seconds: 0 };
-  const position = Math.floor(elapsed / 20) + 1,
-    within = elapsed % 20;
+  const position = Math.floor(elapsed / cycle) + 1,
+    within = elapsed % cycle;
   return {
-    phase: within < 15 ? ("answer" as const) : ("reveal" as const),
+    phase: within < answerSeconds ? ("answer" as const) : ("reveal" as const),
     position,
-    seconds: Math.ceil((within < 15 ? 15 : 20) - within),
+    seconds: Math.ceil(
+      (within < answerSeconds ? answerSeconds : cycle) - within,
+    ),
   };
 }

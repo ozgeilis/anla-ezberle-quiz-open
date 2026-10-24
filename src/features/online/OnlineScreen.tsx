@@ -784,16 +784,7 @@ function OnlineAccountScreen() {
                             }}
                           >
                             <Txt
-                              color={c.darkGold}
-                              size={12}
-                              style={{ textAlign: "center", marginBottom: 12 }}
-                            >
-                              {match.scope === "owner_approved_v13"
-                                ? "KAYNAKLI SORU"
-                                : "SENTETİK GELİŞTİRME SORUSU"}
-                            </Txt>
-                            <Txt
-                              size={25}
+                              size={19}
                               weight="heavy"
                               style={{ textAlign: "center" }}
                             >
@@ -816,7 +807,7 @@ function OnlineAccountScreen() {
                                 )
                               }
                               style={{
-                                minHeight: 64,
+                                minHeight: 48,
                                 borderWidth: 1,
                                 borderRadius: radius.md,
                                 borderColor:
@@ -824,7 +815,7 @@ function OnlineAccountScreen() {
                                     ? c.blue
                                     : theme.border,
                                 backgroundColor: theme.card,
-                                padding: 17,
+                                padding: 10,
                               }}
                             >
                               <View style={s.row}>
@@ -835,7 +826,7 @@ function OnlineAccountScreen() {
                                   {String.fromCharCode(65 + i)}
                                 </Txt>
                                 <Txt
-                                  size={19}
+                                  size={15}
                                   weight="bold"
                                   style={{ flex: 1, minWidth: 0 }}
                                 >

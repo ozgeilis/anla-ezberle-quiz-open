@@ -35,7 +35,7 @@ BEGIN
     IF question_ids && previous_ids THEN
       RAISE EXCEPTION 'Repeated question within the previous five rounds, round %',round_number;
     END IF;
-    room_code='HIST'||(20+round_number)::text;
+    room_code='HIST'||(21+round_number)::text; -- six valid A-Z/2-9 invitation codes (22..27)
     fingerprint=encode(extensions.digest(array_to_string(question_ids,'|'),'sha256'),'hex');
     INSERT INTO quiz_private.live_rooms(
       code,host_id,request_id,dataset,topic,level,question_count,

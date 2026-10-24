@@ -20,7 +20,7 @@ export function SoundSettings() {
     title: string,
     enabled: boolean,
     change: (v: boolean) => void,
-    icon: "volume-2" | "music",
+    icon: "volume-2",
   ) => (
     <View
       style={{
@@ -55,11 +55,7 @@ export function SoundSettings() {
       />
     </View>
   );
-  const volume = (
-    title: string,
-    value: number,
-    key: "effectsVolume" | "musicVolume",
-  ) => {
+  const volume = (title: string, value: number, key: "effectsVolume") => {
     const adjust = (by: number) => {
       activate();
       void save({
@@ -130,7 +126,7 @@ export function SoundSettings() {
                 width: `${value * 100}%`,
                 height: "100%",
                 borderRadius: 8,
-                backgroundColor: key === "effectsVolume" ? c.emerald : c.gold,
+                backgroundColor: c.emerald,
               }}
             />
           </View>
@@ -155,7 +151,7 @@ export function SoundSettings() {
   return (
     <Card style={{ gap: 10 }}>
       <Txt accessibilityRole="header" size={21} weight="heavy">
-        Ses ve Müzik
+        Ses Efektleri
       </Txt>
       <Txt size={13} color={t.muted}>
         Küçük sesler, keyifli keşifler. Tercihlerin yalnız bu cihazda saklanır.
@@ -169,15 +165,6 @@ export function SoundSettings() {
         "volume-2",
       )}
       {volume("Efekt Ses Seviyesi", p.effectsVolume, "effectsVolume")}
-      {toggle(
-        "Arka Plan Müziği",
-        p.musicEnabled,
-        (v) => {
-          void save({ musicEnabled: v });
-        },
-        "music",
-      )}
-      {volume("Müzik Ses Seviyesi", p.musicVolume, "musicVolume")}
       <Button
         title="Efekti dene"
         variant="outline"
@@ -212,8 +199,7 @@ export function SoundSettings() {
         />
       )}
       <Txt size={12} color={t.muted}>
-        Müzik başlangıçta kapalıdır; soru ekranlarında ve uygulama arka
-        plandayken durur.{" "}
+        Kısa oyun efektleri ve zamanlayıcı sesi uygulama arka plandayken durur.{" "}
         {Platform.OS === "web"
           ? "Web’de ses, tarayıcının izin verdiği kullanıcı etkileşiminden sonra başlar; cihazın sessiz modundaki davranış tarayıcıya bağlıdır."
           : "Telefonun sessiz modu aşılmaz."}

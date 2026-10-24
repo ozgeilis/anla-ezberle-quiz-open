@@ -56,9 +56,10 @@ async function open(p, path) {
   await p.waitForFunction(() => window.__soundProbe.decoded === 11);
 }
 async function choose(p, correct = true) {
-  const text = await p.getByText(/^Soru kodu: /).innerText(),
-    id = text.replace("Soru kodu: ", "").trim(),
-    answer = fixture.oracle[id];
+  await p.getByRole("button", { name: /^A\. / }).waitFor({ state: "visible" });
+  const texts = await p.getByRole("heading").allTextContents();
+  const question = texts.find((text) => fixture.questionOracle[text]);
+  const answer = fixture.questionOracle[question];
   assert(answer, "Private local question oracle");
   const options = p.getByRole("button", { name: /^[ABCD]\. / });
   const names = await options.evaluateAll((es) =>
@@ -67,9 +68,7 @@ async function choose(p, correct = true) {
   const i = names.findIndex((n) => n.slice(3) === answer);
   assert(i >= 0);
   await options.nth(correct ? i : (i + 1) % 4).click();
-  await btn(p, "Sonraki Soru")
-    .or(btn(p, "Sonucumu Gör"))
-    .waitFor({ state: "visible" });
+  await p.getByTestId("answer-feedback").waitFor({ state: "visible" });
 }
 try {
   for (const width of [320, 390, 1024])
@@ -101,8 +100,8 @@ try {
       assert.equal(
         await p
           .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .isChecked(),
-        false,
+          .count(),
+        0,
       );
       await shot(p, `${theme}-${width}-settings`);
       await btn(p, "Efekti dene").click();
@@ -149,29 +148,12 @@ try {
       await p.evaluate(() => {
         window.__soundProbe.failWrite = false;
       });
-      await p
-        .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-        .click();
-      await untilPreference(p, "musicEnabled", true);
-      await p.waitForFunction(() =>
-        window.__soundProbe.starts.some((x) => x.loop),
-      );
-      await p.waitForTimeout(300);
-      s = await state(p);
-      const music = s.starts.find((x) => x.loop);
-      assert(s.gains[music.gain] > 0 && s.gains[music.gain] < 0.3);
       await p.reload({ waitUntil: "networkidle" });
       await p.waitForFunction(() => window.__soundProbe.decoded === 11);
       assert.equal(
         (await state(p)).starts.length,
         0,
-        "Saved music never bypasses autoplay on reload",
-      );
-      assert.equal(
-        await p
-          .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .isChecked(),
-        true,
+        "No audio replay on reload",
       );
       assert.equal((await pref(p)).effectsVolume, 0.6);
       // Only one context per browser exercises complete games; layout/preferences cover every size/theme.
@@ -204,10 +186,6 @@ try {
           .getByRole("switch", { name: "Ses Efektleri", exact: true })
           .click();
         await untilPreference(p, "effectsEnabled", true);
-        await p
-          .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .click();
-        await untilPreference(p, "musicEnabled", false);
         // Preloaded buffers remain playable with the actual browser network offline.
         await context.setOffline(true);
         await btn(p, "Efekti dene").click();
@@ -217,10 +195,6 @@ try {
           ),
         );
         await context.setOffline(false);
-        await p
-          .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .click();
-        await untilPreference(p, "musicEnabled", true);
         await btn(p, "Ayarlardan geri dön").click();
         // A directly opened Settings screen returns to Profile, not Home.
         await p.getByRole("tab", { name: /Ana Sayfa/ }).click();
@@ -231,23 +205,11 @@ try {
           })
           .click();
         await p.waitForURL(/\/quiz$/);
-        await p.getByText(/^Soru kodu: /).waitFor();
-        await p.waitForFunction(
-          () => {
-            const { starts, stops } = window.__soundProbe;
-            return starts
-              .filter((x) => x.loop)
-              .every((x) => stops.includes(x.id));
-          },
-          undefined,
-          { timeout: 2000 },
-        );
+        await p.getByRole("button", { name: /^A\. / }).waitFor();
         const beforeGame = await state(p);
         assert(
-          beforeGame.starts
-            .filter((x) => x.loop)
-            .every((x) => beforeGame.stops.includes(x.id)),
-          "Question route pauses music",
+          beforeGame.starts.every((x) => !x.loop),
+          "No background music voice",
         );
         const marker = beforeGame.starts.length;
         for (let i = 0; i < 10; i++) {
@@ -268,7 +230,8 @@ try {
           assert.equal(answerCount, i + 1, "Accepted answer once");
           if (i === 0) await shot(p, "accepted-correct-answer");
           await p.waitForTimeout(740);
-          await btn(p, i === 9 ? "Sonucumu Gör" : "Sonraki Soru").click();
+          if (i < 9)
+            await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
         await p.getByText("Tebrikler!", { exact: true }).waitFor();
         await p.waitForTimeout(5500);
@@ -310,7 +273,8 @@ try {
         for (let i = 0; i < 10; i++) {
           await choose(p, i !== 0);
           await p.waitForTimeout(740);
-          await btn(p, i === 9 ? "Sonucumu Gör" : "Sonraki Soru").click();
+          if (i < 9)
+            await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
         await p.getByText("Tebrikler!", { exact: true }).waitFor();
         await p.waitForTimeout(5500);
@@ -327,7 +291,7 @@ try {
         assert(s.maxEffects <= 1, "No overlapping effect voices");
         await shot(p, "ordinary-result");
         checks.push(
-          `${kind}: actual perfect/ordinary games, accepted correct/wrong, new badge, true level-up, source waveform, offline buffers, music question gating, immutable old records`,
+          `${kind}: actual perfect/ordinary games, accepted correct/wrong, new badge, true level-up, source waveform, offline buffers, no music, timed question gating, immutable old records`,
         );
       }
       s = await state(p);

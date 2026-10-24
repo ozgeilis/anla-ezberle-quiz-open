@@ -1,5 +1,5 @@
 import { useColorScheme } from "react-native";
-import { useGame } from "../storage/GameProvider";
+import { useGameDisplay } from "../storage/GameProvider";
 import { colors, themePalette } from "./palette";
 export {
   colors,
@@ -18,11 +18,11 @@ export const space = { xs: 4, sm: 8, md: 12, lg: 16, xl: 24, xxl: 32 };
 export const typeScale = {
   caption: 11,
   body: 14,
-  option: 17,
-  action: 18,
-  section: 21,
-  question: 24,
-  score: 68,
+  option: 15,
+  action: 16,
+  section: 19,
+  question: 20,
+  score: 56,
 };
 export const shadows = {
   card: "0px 4px 14px rgba(72, 45, 10, 0.08)",
@@ -48,11 +48,11 @@ export const gradients = {
   daily: [colors.dailyRed, colors.deepCoral, colors.dailyOrange],
 } as const;
 export function useTheme() {
-  const { data } = useGame();
+  const { profile } = useGameDisplay();
   const system = useColorScheme();
   const dark =
-    data.profile.theme === "dark" ||
-    (data.profile.theme === "system" && system === "dark");
+    profile.theme === "dark" ||
+    (profile.theme === "system" && system === "dark");
   return themePalette(dark);
 }
 export const categoryGradients = {

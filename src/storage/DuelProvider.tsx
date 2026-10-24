@@ -1,3 +1,4 @@
+import { QuestionClock } from "../domain/game/question-clock";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, {
   createContext,
@@ -22,6 +23,7 @@ import {
 export const DEMO_STORAGE_KEY = "@anla-ezberle-quiz/demo-duel/v1";
 interface DuelContext {
   match: DemoMatch | null;
+  questionClock: QuestionClock | null;
   ready: boolean;
   error: string | null;
   create: () => boolean;
@@ -30,6 +32,9 @@ interface DuelContext {
 }
 const Context = createContext<DuelContext | null>(null);
 export function DuelProvider({ children }: React.PropsWithChildren) {
+  const questionClock = useRef<QuestionClock | null>(null);
+  const [displayClock, setDisplayClock] = useState<QuestionClock | null>(null);
+  const activeKey = useRef("");
   const [match, setMatch] = useState<DemoMatch | null>(null);
   const [ready, setReady] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -55,9 +60,30 @@ export function DuelProvider({ children }: React.PropsWithChildren) {
       }
     });
   };
+  const show = (doc: DuelDocument | null, restoring = false) => {
+    const value = doc ? restoreDemo(doc) : null;
+    const player = value?.activeRole
+      ? value.players[value.activeRole]
+      : undefined;
+    const s = player?.session;
+    const key = s ? `${s.id}:${s.cursor}` : "";
+    if (activeKey.current !== key) {
+      questionClock.current =
+        s?.timingVersion === 1 && s.questionOpenedAt !== undefined
+          ? new QuestionClock(
+              s.questionOpenedAt,
+              undefined,
+              restoring ? Math.max(0, Date.now() - s.questionOpenedAt) : 0,
+            )
+          : null;
+      setDisplayClock(questionClock.current);
+      activeKey.current = key;
+    }
+    setMatch(value);
+  };
   const accept = (next: DuelDocument) => {
     documentRef.current = next;
-    setMatch(restoreDemo(next));
+    show(next);
     persist(next);
   };
   const retry = async () => {
@@ -73,7 +99,7 @@ export function DuelProvider({ children }: React.PropsWithChildren) {
     try {
       const next = parseDemo(await AsyncStorage.getItem(DEMO_STORAGE_KEY));
       documentRef.current = next;
-      setMatch(next ? restoreDemo(next) : null);
+      show(next, true);
       writable.current = true;
       setError(null);
     } catch {
@@ -118,7 +144,14 @@ export function DuelProvider({ children }: React.PropsWithChildren) {
     return () => clearInterval(timer);
   }, [ready]); // eslint-disable-line react-hooks/exhaustive-deps
   const act = (command: DuelCommand) =>
-    dispatch({ ...command, at: Date.now() });
+    dispatch({
+      ...command,
+      at:
+        questionClock.current &&
+        ["answer", "timeout", "next", "finish"].includes(command.type)
+          ? Math.floor(questionClock.current.now())
+          : Date.now(),
+    });
   const create = () => {
     if (!ready || !writable.current || CONTENT_CHANNEL !== "prototype")
       return false;
@@ -138,7 +171,17 @@ export function DuelProvider({ children }: React.PropsWithChildren) {
     }
   };
   return (
-    <Context.Provider value={{ match, ready, error, create, act, retry }}>
+    <Context.Provider
+      value={{
+        match,
+        questionClock: displayClock,
+        ready,
+        error,
+        create,
+        act,
+        retry,
+      }}
+    >
       {children}
     </Context.Provider>
   );

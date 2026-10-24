@@ -36,8 +36,8 @@ export function BadgeCard({
       style={{
         flex: 1,
         borderRadius: 24,
-        padding: 12,
-        gap: 8,
+        padding: 10,
+        gap: 6,
         overflow: "hidden",
         borderWidth: b.earned ? 2 : 1,
         borderColor: b.earned ? c.gold : theme.border,
@@ -74,9 +74,9 @@ export function BadgeCard({
         </Txt>
       </View>
       <View style={{ alignItems: "center" }}>
-        <BadgeArt badge={b} earned={b.earned} size={104} />
+        <BadgeArt badge={b} earned={b.earned} size={88} />
       </View>
-      <Txt size={15} weight="heavy">
+      <Txt size={14} weight="heavy">
         {b.title}
       </Txt>
       <Txt size={12} color={theme.muted}>

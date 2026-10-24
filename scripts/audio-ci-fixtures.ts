@@ -43,9 +43,23 @@ const oracle = Object.fromEntries(
   ]),
 );
 mkdirSync(resolve(out, ".."), { recursive: true, mode: 0o700 });
-writeFileSync(out, JSON.stringify({ storageKey: STORAGE_KEY, data, oracle }), {
-  mode: 0o600,
-});
+writeFileSync(
+  out,
+  JSON.stringify({
+    storageKey: STORAGE_KEY,
+    data,
+    oracle,
+    questionOracle: Object.fromEntries(
+      availableQuestions.map((q) => [
+        q.question,
+        q.options.find((o) => o.id === q.correctOptionId)!.text,
+      ]),
+    ),
+  }),
+  {
+    mode: 0o600,
+  },
+);
 console.log(
   "Isolated audio fixture prepared outside Expo; no accounts or scores sent to a hosted server.",
 );

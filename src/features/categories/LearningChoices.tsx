@@ -65,9 +65,9 @@ function PaintedCategory({
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
         style={{
-          minHeight: wide ? 218 : 306,
+          minHeight: wide ? 184 : 232,
           flex: 1,
-          padding: compact ? 16 : 15,
+          padding: compact ? 12 : 12,
           justifyContent: "space-between",
           gap: 10,
         }}
@@ -93,14 +93,14 @@ function PaintedCategory({
         />
         <View
           style={{
-            minHeight: wide ? 106 : 110,
+            minHeight: wide ? 80 : 84,
             justifyContent: "center",
             alignItems: wide ? "flex-start" : "center",
           }}
         >
           <TopicArtwork
             id={illustration}
-            size={wide ? 122 : compact ? 100 : 102}
+            size={wide ? 92 : compact ? 76 : 82}
           />
           <View style={{ position: "absolute", top: -3, right: -3 }}>
             {selected ? (
@@ -156,10 +156,10 @@ function PaintedCategory({
         <View
           style={{ flex: 1, justifyContent: "flex-end", gap: 6, padding: 1 }}
         >
-          <Txt size={20} weight="heavy" color={c.white}>
+          <Txt size={16} weight="heavy" color={c.white}>
             {title}
           </Txt>
-          <Txt size={14} color={c.white}>
+          <Txt size={12} color={c.white}>
             {subtitle}
           </Txt>
         </View>
@@ -175,7 +175,7 @@ function PaintedCategory({
             borderWidth: 1,
             borderColor: disabled ? "rgba(255,255,255,0.2)" : c.paleGold,
             paddingHorizontal: 11,
-            paddingVertical: 7,
+            paddingVertical: 5,
             borderRadius: radius.pill,
           }}
         >
@@ -186,7 +186,7 @@ function PaintedCategory({
               color={disabled ? c.white : c.navy}
             />
             <Txt
-              size={14}
+              size={12}
               weight="heavy"
               color={disabled ? c.white : c.navy}
               style={{ flexShrink: 1 }}
