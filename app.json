@@ -12,14 +12,12 @@
       "bundleIdentifier": "com.anlaezberle.quiz.prototype"
     },
     "android": {
-      "package": "com.anlaezberle.quiz.prototype",
+      "package": "com.kovynelstudio.anlaezberle",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-foreground.png",
         "backgroundColor": "#005F65"
       },
-      "permissions": [
-        "android.permission.MODIFY_AUDIO_SETTINGS"
-      ]
+      "permissions": ["android.permission.MODIFY_AUDIO_SETTINGS"]
     },
     "web": {
       "bundler": "metro",

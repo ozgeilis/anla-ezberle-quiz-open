@@ -7,12 +7,12 @@ import {
 import config from "../app.json";
 import eas from "../eas.json";
 
-test("prototype identifiers still block store readiness despite a prepared AAB profile", () => {
+test("iOS prototype remains blocked while the approved Android identifier passes metadata checks", () => {
   const items = checkReleaseConfig(config, eas);
   assert.equal(releaseReport(items).readyForStoreSubmission, false);
   assert.deepEqual(
     items.filter((i) => !i.pass).map((i) => i.id),
-    ["ios-identifier", "android-identifier"],
+    ["ios-identifier"],
   );
 });
 test("complete production metadata passes the static gate", () => {

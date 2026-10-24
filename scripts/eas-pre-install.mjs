@@ -36,6 +36,7 @@ if (android && profile === "production") {
   );
   assert(
     approval.approved === true &&
+      approval.packageApproved === true &&
       approval.packageId === expo.android.package &&
       /^[a-f0-9]{64}$/.test(approval.acceptedApkSha256 ?? ""),
     "Store AAB blocked: owner must approve permanent package ID and accept a physical Android APK first (config/android-store-approval.json).",

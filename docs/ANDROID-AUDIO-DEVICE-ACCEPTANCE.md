@@ -6,7 +6,7 @@ Bu form gerçek APK kurulumu ve kullanıcı dinlemesiyle doldurulur. Model, Andr
 
 ## Kurulum
 
-EAS preview build sayfasındaki Install bağlantısını telefonda aç. APK'yı yalnız verilen resmî build adresinden indir; gerekiyorsa yalnız bu indirme için ilgili tarayıcının uygulama yükleme onayını kendin ver. Kurulumdan sonra uygulama Metro veya bilgisayar bağlantısı olmadan açılmalı. Bu bir Google Play yayını değildir; `com.anlaezberle.quiz.prototype` test kimliğidir.
+EAS preview build sayfasındaki Install bağlantısını telefonda aç. APK'yı yalnız verilen resmî build adresinden indir; gerekiyorsa yalnız bu indirme için ilgili tarayıcının uygulama yükleme onayını kendin ver. Kurulumdan sonra uygulama Metro veya bilgisayar bağlantısı olmadan açılmalı. Bu bir Google Play yayını değildir. Kullanıcı 24 Ekim’de `com.kovynelstudio.anlaezberle` kimliğini onayladı; yeni kabul APK’sı bu kimlikle üretilir. Önceki `.prototype` APK’ları yeni kimliğin cihaz kabulü sayılmaz. Eski uygulamayı kaldırmayın; iki kimlik ayrı yerel veri alanı kullanır ve otomatik ilerleme aktarımı yoktur.
 
 ## Efektler (her satır henüz cihazda test edilmedi)
 
