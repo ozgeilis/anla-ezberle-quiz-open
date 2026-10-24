@@ -4,7 +4,7 @@ import { sourceAuditConceptKey } from "../../content/questions/source-audit-conc
 // Farklı ID'lerin aynı bilgiyi tekrar sormasını ve çok benzer şablonları
 // bir turda peş peşe getirmesini engelleyen ek seçim anahtarları.
 // Bu yalnız yeni tur seçiminde kullanılır; eski kayıtların soru/cevapları değişmez.
-export function selectionConceptKeys(
+function computeConceptKeys(
   q: Pick<Question, "id" | "question" | "conceptGroup" | "categoryId">,
 ): string[] {
   const prompt = q.question.normalize("NFKC").toLocaleLowerCase("tr-TR");
@@ -45,4 +45,26 @@ export function selectionConceptKeys(
     keys.push("template:city-region");
   }
   return keys;
+}
+
+// Cache by object and source fields: historical snapshots and edited test clones
+// cannot collide. Return copies so callers cannot mutate shared selection keys.
+const conceptCache = new WeakMap<
+  object,
+  { signature: string; keys: string[] }
+>();
+export function selectionConceptKeys(
+  q: Parameters<typeof computeConceptKeys>[0],
+): string[] {
+  const signature = JSON.stringify([
+    q.id,
+    q.question,
+    q.conceptGroup,
+    q.categoryId,
+  ]);
+  const cached = conceptCache.get(q);
+  if (cached?.signature === signature) return [...cached.keys];
+  const keys = computeConceptKeys(q);
+  conceptCache.set(q, { signature, keys });
+  return [...keys];
 }

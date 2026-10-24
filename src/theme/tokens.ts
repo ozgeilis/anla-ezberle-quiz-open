@@ -1,5 +1,5 @@
 import { useColorScheme } from "react-native";
-import { useGame } from "../storage/GameProvider";
+import { useGameDisplay } from "../storage/GameProvider";
 import { colors, themePalette } from "./palette";
 export {
   colors,
@@ -48,11 +48,11 @@ export const gradients = {
   daily: [colors.dailyRed, colors.deepCoral, colors.dailyOrange],
 } as const;
 export function useTheme() {
-  const { data } = useGame();
+  const { profile } = useGameDisplay();
   const system = useColorScheme();
   const dark =
-    data.profile.theme === "dark" ||
-    (data.profile.theme === "system" && system === "dark");
+    profile.theme === "dark" ||
+    (profile.theme === "system" && system === "dark");
   return themePalette(dark);
 }
 export const categoryGradients = {

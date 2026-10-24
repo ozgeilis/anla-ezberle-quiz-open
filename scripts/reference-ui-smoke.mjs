@@ -10,7 +10,7 @@ export async function referenceUiSmoke(browser, root) {
       "--import",
       "tsx",
       "-e",
-      'import { questions } from "./src/content/questions/index.ts"; process.stdout.write(JSON.stringify(Object.fromEntries(questions.map(q=>[q.id,q.options.find(o=>o.id===q.correctOptionId).text]))));',
+      'import { questions } from "./src/content/questions/index.ts"; process.stdout.write(JSON.stringify(Object.fromEntries(questions.map(q=>[q.question,q.options.find(o=>o.id===q.correctOptionId).text]))));',
     ],
     { encoding: "utf8" },
   );
@@ -75,9 +75,9 @@ export async function referenceUiSmoke(browser, root) {
       .click();
     for (let i = 1; i <= 10; i++) {
       await page.getByText(`Soru ${i} / 10`, { exact: true }).waitFor();
-      const code = (await page.getByText(/^Soru kodu: /).textContent())
-        .replace("Soru kodu: ", "")
-        .trim();
+      const headings = await page.getByRole("heading").allTextContents();
+      const code = headings.find((text) => correctText[text]);
+      assert(code, "Real question text must match private fixture");
       const options = page.getByRole("button", { name: /^[ABCD]\. / });
       const labels = await options.allTextContents();
       const correct = labels.findIndex(

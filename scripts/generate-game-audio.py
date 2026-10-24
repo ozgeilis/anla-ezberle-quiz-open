@@ -24,9 +24,8 @@ def mallet(t, f, length):
     return env*(math.sin(2*math.pi*f*t)+.19*math.sin(2*math.pi*f*2*t)*math.exp(-t/.10)+.065*math.sin(2*math.pi*f*3.01*t)*math.exp(-t/.055))
 def write(name, samples):
     peak=max(abs(v) for v in samples) or 1
-    # No normalization to loudness: music remains much quieter than feedback.
-    ceiling=.56 if name!='music' else .20
-    scale=(.18/peak) if name=="music" else min(1,ceiling/peak)
+    # Quiet, bounded short effects; never normalize upward.
+    scale=min(1,.56/peak)
     data=b''.join(struct.pack('<h',round(max(-1,min(1,v*scale))*32767))for v in samples)
     path=ROOT/(name+'.wav')
     with wave.open(str(path),'wb')as f:
@@ -38,16 +37,15 @@ def generate():
     for name,(duration,notes) in CUES.items():
         a=[sum(g*mallet(i/RATE-start,f,length)for start,f,length,g in notes)for i in range(round(duration*RATE))]
         manifest[name]=write(name,a)
-    # Original 24-second seamless instrumental loop, periodic pads and soft sparse mallets.
-    length=24; n=length*RATE; a=[]
-    for i in range(n):
+    # Original clock escapement: two damped inharmonic impulses, no samples.
+    duration=.065
+    a=[]
+    for i in range(round(duration*RATE)):
         t=i/RATE
-        # Integer cycle counts ensure waveform continuity at the loop boundary.
-        pad=sum(.017*math.sin(2*math.pi*round(f*length)*t/length)*(0.72+.28*math.cos(2*math.pi*t/length+phase))for f,phase in [(D/2,0),(A/2,1),(D,2),(FS,3)])
-        notes=[(0,D,.046),(3,A,.038),(6,B,.040),(9,FS,.035),(12,E,.035),(15,A,.037),(18,FS,.038),(21,D,.043)]
-        sparkle=sum(g*mallet((t-start)%length,f*2,2.4)for start,f,g in notes)
-        a.append(pad+sparkle)
-    manifest['music']=write('music',a)
+        def impulse(x, f):
+            return 0 if x<0 else .12*(1-math.exp(-x/.0008))*math.exp(-x/.007)*(math.sin(2*math.pi*f*x)+.25*math.sin(2*math.pi*f*2.71*x))
+        a.append(impulse(t,1250)+.55*impulse(t-.014,930))
+    manifest['tick']=write('tick',a)
     (ROOT/'manifest.json').write_text(json.dumps({'sampleRate':RATE,'channels':1,'format':'PCM16 WAV','origin':'Original project synthesis; no third-party samples','files':manifest},indent=2)+'\n')
     print('Generated',len(manifest),'original files;',sum(v['bytes']for v in manifest.values()),'bytes; no clipping.')
 if __name__=='__main__':generate()

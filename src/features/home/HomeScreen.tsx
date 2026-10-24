@@ -28,11 +28,11 @@ import {
   difficultyName,
 } from "../../content/questions";
 import { dateKey, stats } from "../../domain/game/engine";
-import { useGame } from "../../storage/GameProvider";
+import { useGameLibrary } from "../../storage/GameProvider";
 import { colors as c, shadows, space, useTheme } from "../../theme/tokens";
 
 export function HomeScreen() {
-  const { data, start } = useGame();
+  const { data, start } = useGameLibrary();
   const theme = useTheme();
   const { width } = useWindowDimensions();
   const compact = width < 360;
@@ -328,7 +328,8 @@ export function HomeScreen() {
       >
         <Txt>
           Her yarışmada 10 farklı soru var. Doğru yanıt 100, yanlış yanıt 0
-          puan. Süre bonusu ve süre sınırı yok.
+          puan. Her soru için 10 saniye var; süre dolarsa cevapsız ve 0 puan
+          sayılır. Açıklama sırasında sayaç durur. Süre bonusu yok.
         </Txt>
         <Txt>
           Yeni soru setindeki her doğru cevap 10 yerel XP kazandırır. Her 250

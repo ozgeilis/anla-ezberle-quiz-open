@@ -15,7 +15,7 @@ export function createSoundDriver(): SoundDriver {
       keepAudioSessionActive: false,
       updateInterval: 500,
     });
-    audio.loop = name === "music";
+    audio.loop = false;
     let released = false,
       revision = 0;
     const wrapper: SoundPlayer = {

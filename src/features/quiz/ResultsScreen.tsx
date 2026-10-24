@@ -239,6 +239,7 @@ export function ResultsScreen() {
           <View
             style={{
               flexDirection: largeText ? "column" : "row",
+              flexWrap: "wrap",
               gap: space.sm,
             }}
           >
@@ -255,6 +256,16 @@ export function ResultsScreen() {
                 value: summary.wrong.toString(),
                 label: "Yanlış",
               },
+              ...(summary.unanswered
+                ? [
+                    {
+                      icon: "minus-circle" as const,
+                      color: theme.goldInk,
+                      value: summary.unanswered.toString(),
+                      label: "Cevapsız",
+                    },
+                  ]
+                : []),
               {
                 icon: "clock" as const,
                 color: theme.goldInk,

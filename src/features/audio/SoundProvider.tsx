@@ -140,7 +140,7 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
       setSaving(true);
       try {
         const next = parseSoundPreferences(
-          JSON.stringify({ ...prefs.current, ...change, version: 1 }),
+          JSON.stringify({ ...prefs.current, ...change, version: 2 }),
         );
         await AsyncStorage.setItem(SOUND_STORAGE_KEY, JSON.stringify(next));
         if (!mounted.current) return false;

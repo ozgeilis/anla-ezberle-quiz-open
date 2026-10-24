@@ -1,6 +1,7 @@
 import {
   createSession,
   answerQuestion,
+  expireQuestion,
   advanceQuestion,
   finishSession,
   stats,
@@ -24,7 +25,7 @@ export const demoPlayers = {
 } as const;
 export type DuelCommand =
   | { type: "invite" | "resolve" | "cancel" | "expire" }
-  | { type: "start" | "next" | "finish"; playerId: string }
+  | { type: "start" | "next" | "finish" | "timeout"; playerId: string }
   | { type: "answer"; playerId: string; option: number };
 export type DuelEvent = DuelCommand & { at: number };
 export interface DuelDocument {
@@ -40,6 +41,7 @@ export interface DemoMatch {
   updatedAt: number;
   expiresAt: number;
   manifest: {
+    timingVersion?: 1;
     bankVersion: number;
     questionIds: string[];
     questionVersions: Record<string, number>;
@@ -105,6 +107,7 @@ function initialMatch(document: DuelDocument): DemoMatch {
     updatedAt: seed.startedAt,
     expiresAt: seed.startedAt + 24 * 60 * 60 * 1000,
     manifest: {
+      ...(seed.timingVersion === 1 ? { timingVersion: 1 as const } : {}),
       bankVersion: seed.bankVersion,
       questionIds: [...seed.questionIds],
       questionVersions: { ...questionVersions },
@@ -124,6 +127,7 @@ export function createDemoDocument(
 ): DuelDocument {
   const seed = createSession("mixed", undefined, now, {
     channel: "prototype",
+    timed: true,
     recentIds,
   });
   return {
@@ -227,6 +231,9 @@ export function applyDuelEvent(match: DemoMatch, event: DuelEvent): DemoMatch {
           [...order],
         ]),
       ),
+      ...(manifest.timingVersion === 1
+        ? { timingVersion: 1 as const, questionOpenedAt: event.at }
+        : {}),
       startedAt: event.at,
       cursor: 0,
       answers: [],
@@ -242,6 +249,10 @@ export function applyDuelEvent(match: DemoMatch, event: DuelEvent): DemoMatch {
     !player.session
   )
     throw new Error("Oyuncunun aktif turu yok.");
+  if (event.type === "timeout") {
+    const session = expireQuestion(player.session, event.at);
+    return session === player.session ? match : updatePlayer({ session });
+  }
   if (event.type === "answer") {
     if (!Number.isInteger(event.option) || event.option < 0 || event.option > 3)
       throw new Error("Cevap seçeneği geçersiz.");
@@ -249,7 +260,7 @@ export function applyDuelEvent(match: DemoMatch, event: DuelEvent): DemoMatch {
     return session === player.session ? match : updatePlayer({ session });
   }
   if (event.type === "next") {
-    const session = advanceQuestion(player.session);
+    const session = advanceQuestion(player.session, event.at);
     if (session === player.session)
       throw new Error("Önce soruyu yanıtlamalısın.");
     return updatePlayer({ session });

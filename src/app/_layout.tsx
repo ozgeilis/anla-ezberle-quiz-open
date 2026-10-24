@@ -16,7 +16,7 @@ import { Manrope_400Regular } from "@expo-google-fonts/manrope/400Regular";
 import { Manrope_500Medium } from "@expo-google-fonts/manrope/500Medium";
 import { Manrope_700Bold } from "@expo-google-fonts/manrope/700Bold";
 import { Manrope_800ExtraBold } from "@expo-google-fonts/manrope/800ExtraBold";
-import { GameProvider, useGame } from "../storage/GameProvider";
+import { GameProvider, useGameDisplay } from "../storage/GameProvider";
 import { DuelProvider } from "../storage/DuelProvider";
 import { colors as c, useTheme } from "../theme/tokens";
 import { StorageNotice } from "../components/ui";
@@ -29,7 +29,7 @@ if (Platform.OS !== "web")
   void SplashScreen.preventAutoHideAsync().catch(() => undefined);
 
 function AppShell() {
-  const { ready } = useGame();
+  const { ready } = useGameDisplay();
   const theme = useTheme();
   useEffect(() => {
     // Fonts are ready when this shell mounts. Show storage/retry UI even if

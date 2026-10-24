@@ -2,7 +2,7 @@ import { useSound } from "../audio/SoundProvider";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { quizAudioCues } from "../audio/events";
 import { brand } from "../../branding/identity";
-import { stageDefinition } from "../../domain/game/stages";
+import { QuestionCountdown } from "./QuestionCountdown";
 import React, {
   ComponentRef,
   useEffect,
@@ -12,6 +12,8 @@ import React, {
 } from "react";
 import {
   AccessibilityInfo,
+  AppState,
+  Platform,
   Linking,
   ScrollView,
   StyleSheet,
@@ -19,7 +21,7 @@ import {
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { router, Stack, usePreventRemove } from "expo-router";
-import { Book, CardCorners, Pattern } from "../../components/game/Artwork";
+import { CardCorners, Pattern } from "../../components/game/Artwork";
 import {
   Button,
   Card,
@@ -32,15 +34,7 @@ import {
   Txt,
   useReducedMotion,
 } from "../../components/ui";
-import {
-  categoryName,
-  CONTENT_CHANNEL,
-  difficultyName,
-} from "../../content/questions";
 import { gameQuestion } from "../../content/questions/registry";
-import { playCategoryName } from "../../domain/game/play-categories";
-import { learningTopicName } from "../../domain/game/learning";
-import { formatTime } from "../../domain/game/engine";
 import { useDuel } from "../../storage/DuelProvider";
 import { useGame } from "../../storage/GameProvider";
 import {
@@ -49,7 +43,6 @@ import {
   radius,
   shadows,
   space,
-  typeScale,
   useTheme,
 } from "../../theme/tokens";
 
@@ -83,7 +76,6 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const [leave, setLeave] = useState(false);
   const [sourceError, setSourceError] = useState(false);
-  const [now, setNow] = useState(() => Date.now());
   const [finishing, setFinishing] = useState(false);
   const disablePrevention = usePreventRemove(!!session, () => setLeave(true));
   const question = useMemo(
@@ -94,27 +86,51 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
     [session],
   );
   const chosen = session?.answers.find((a) => a.questionId === question?.id);
+  const openQuestion = solo.openQuestion;
+  useEffect(() => {
+    if (
+      demo ||
+      !session ||
+      chosen ||
+      session.timingVersion !== 1 ||
+      session.questionOpenedAt !== undefined
+    )
+      return;
+    const open = () => {
+      if (
+        AppState.currentState === "active" &&
+        (Platform.OS !== "web" || document.visibilityState !== "hidden")
+      )
+        openQuestion(session.id, session.cursor);
+    };
+    open();
+    const listener = AppState.addEventListener("change", open);
+    if (Platform.OS === "web")
+      document.addEventListener("visibilitychange", open);
+    return () => {
+      listener.remove();
+      if (Platform.OS === "web")
+        document.removeEventListener("visibilitychange", open);
+    };
+  }, [demo, session, chosen, openQuestion]);
   useAudioObservation(
     session && question
       ? {
           id: `${session.id}:${demo ? role : "solo"}`,
           cursor: session.cursor,
           answer: chosen ? chosen.option === question.correct : null,
+          timedOut: chosen?.timedOut === true,
           hidden: demo,
         }
       : null,
     quizAudioCues,
   );
   useEffect(() => {
-    const timer = setInterval(() => setNow(Date.now()), 1000);
-    return () => clearInterval(timer);
-  }, []);
-  useEffect(() => {
     if (chosen && question)
       AccessibilityInfo.announceForAccessibility(
         demo
           ? "Yanıtın kilitlendi. Maç sonunda iki skor karşılaştırılacak."
-          : `${chosen.option === question.correct ? "Doğru cevap!" : "Yanlış cevap."} Doğru yanıt: ${question.options[question.correct]}. ${question.explanation}`,
+          : `${chosen.timedOut ? "Süre doldu. Soru cevapsız." : chosen.option === question.correct ? "Doğru cevap!" : "Yanlış cevap."} Doğru yanıt: ${question.options[question.correct]}. ${question.explanation}`,
       );
   }, [chosen, question, demo]);
   if (!session || !question)
@@ -134,11 +150,6 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
         />
       </View>
     );
-  const elapsed = Math.floor(
-    ((session.answers.length === 10 ? session.answers[9]!.at : now) -
-      session.startedAt) /
-      1000,
-  );
   const goNext = async () => {
     if (!chosen || finishing) return;
     if (session.cursor === 9) {
@@ -219,23 +230,26 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                 ? "Aynı soru seti · Çevrimiçi değil"
                 : "Her cevap yeni bir keşif"}
             </Txt>
-            {!demo && CONTENT_CHANNEL === "prototype" && (
-              <Txt size={10} color={theme.muted} selectable>
-                Soru kodu: {question.id}
-              </Txt>
-            )}
           </View>
-          <View style={styles.timer}>
-            <Icon name="clock" size={19} color={c.darkGold} />
-            <View>
-              <Txt size={9} weight="bold" color={c.darkGold}>
-                GEÇEN SÜRE
-              </Txt>
-              <Txt size={16} weight="heavy" color={c.navy}>
-                {formatTime(Math.max(0, elapsed))}
-              </Txt>
-            </View>
-          </View>
+          {(demo ? duel.questionClock : solo.questionClock) ? (
+            <QuestionCountdown
+              key={`${session.id}:${session.cursor}`}
+              clock={(demo ? duel.questionClock : solo.questionClock)!}
+              stopped={!!chosen}
+              onExpire={
+                demo
+                  ? () => {
+                      if (player)
+                        duel.act({ type: "timeout", playerId: player.id });
+                    }
+                  : solo.expire
+              }
+            />
+          ) : (
+            <Txt size={12} color={theme.muted}>
+              Yerel demo
+            </Txt>
+          )}
         </View>
         <View
           accessibilityRole="progressbar"
@@ -279,54 +293,18 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             style={StyleSheet.absoluteFill}
           />
           <CardCorners />
-          <View style={{ marginBottom: 8 }}>
-            <Book size={40} />
-          </View>
-
-          <View style={styles.category}>
-            <Txt size={12} weight="heavy" color={c.teal}>
-              {session.playCategory
-                ? playCategoryName(session.playCategory)
-                : session.learningTopic
-                  ? learningTopicName(session.learningTopic)
-                  : categoryName(question.category)}
-            </Txt>
-            <Txt size={12} color={c.muted}>
-              ·
-            </Txt>
-            <Txt size={12} weight="heavy" color={c.teal}>
-              {session.stage
-                ? `${stageDefinition(session.stage).title} · `
-                : ""}
-              {difficultyName[question.difficulty]}
-            </Txt>
-          </View>
           <Txt
             accessibilityRole="header"
             accessibilityLiveRegion="polite"
-            size={typeScale.question}
+            size={19}
             weight="heavy"
             color={c.ink}
-            style={{ textAlign: "center", lineHeight: 33 }}
+            style={{ textAlign: "center", lineHeight: 28 }}
           >
             {question.text}
           </Txt>
-          <Txt
-            size={12}
-            color={c.teal}
-            style={{ textAlign: "center", marginTop: 12 }}
-          >
-            Kaynak: {question.source.title}
-          </Txt>
-          <Txt
-            size={12}
-            color={c.muted}
-            style={{ textAlign: "center", marginTop: 4 }}
-          >
-            {question.source.locator}
-          </Txt>
         </View>
-        <View style={{ gap: space.md }}>
+        <View style={{ gap: space.sm }}>
           {question.options.map((option, i) => {
             const correct = !demo && !!chosen && i === question.correct;
             const wrong = !demo && !!chosen && chosen.option === i && !correct;
@@ -352,7 +330,11 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
               <Tap
                 key={`${question.id}-${i}`}
                 label={`${"ABCD"[i]}. ${option}${chosen && !demo ? (correct ? ", doğru cevap" : wrong ? ", yanlış seçimin" : "") : ""}`}
-                disabled={!!chosen}
+                disabled={
+                  !!chosen ||
+                  (session.timingVersion === 1 &&
+                    session.questionOpenedAt === undefined)
+                }
                 selected={chosen?.option === i}
                 sound={false}
                 onPress={() => answer(i)}
@@ -382,7 +364,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                     ]}
                   >
                     <Txt
-                      size={18}
+                      size={14}
                       weight="heavy"
                       color={correct || wrong ? c.white : theme.muted}
                     >
@@ -390,7 +372,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                     </Txt>
                   </View>
                   <Txt
-                    size={typeScale.option}
+                    size={15}
                     weight="bold"
                     color={textColor}
                     style={{ flex: 1, minWidth: 0 }}
@@ -443,7 +425,9 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                 >
                   {chosen.option === question.correct
                     ? "Harika, doğru cevap!"
-                    : "Birlikte öğrenelim"}
+                    : chosen.timedOut
+                      ? "Süre doldu · Cevapsız"
+                      : "Birlikte öğrenelim"}
                 </Txt>
               </View>
             </View>
@@ -477,11 +461,6 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                 Kaynak açılamadı. İnternet bağlantını kontrol edebilirsin.
               </Txt>
             )}
-            <Txt size={10} color={c.darkGold}>
-              {question.reviewStatus === "approved"
-                ? `Ürün sahibi onaylı · Sürüm ${question.version} · Bağımsız uzman teyidi yok`
-                : `Taslak · Sürüm ${question.version} · Onay bekliyor`}
-            </Txt>
           </Card>
         ) : (
           <Txt
@@ -520,8 +499,8 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             {demo
               ? "Yerel demo · Test içeriği"
               : question.reviewStatus === "approved"
-                ? "Süre sınırı yok · Onaylı içerik"
-                : "Süre sınırı yok · Deneme içeriği"}
+                ? "Her soru 10 saniye"
+                : "Her soru 10 saniye"}
           </Txt>
         </View>
         <Button
@@ -590,7 +569,7 @@ const styles = StyleSheet.create({
   },
   content: { padding: space.lg, paddingBottom: space.xl },
   question: {
-    minHeight: 210,
+    minHeight: 100,
     borderRadius: radius.card,
     borderWidth: 1,
     borderColor: c.creamBorder,
@@ -613,14 +592,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: space.md,
-    minHeight: 66,
+    minHeight: 48,
     padding: 10,
     borderRadius: radius.md,
     boxShadow: shadows.answer,
   },
   letter: {
-    width: 40,
-    minHeight: 40,
+    width: 30,
+    minHeight: 30,
     borderRadius: radius.pill,
     alignItems: "center",
     justifyContent: "center",

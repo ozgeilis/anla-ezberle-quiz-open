@@ -12,9 +12,7 @@ export async function categoryFlowSmoke(page, root) {
   const round = async (capture = false, replay = false, failSave = false) => {
     for (let i = 1; i <= 10; i++) {
       await page.getByText(`Soru ${i} / 10`, { exact: true }).waitFor();
-      const code = (await page.getByText(/^Soru kodu: /).textContent())
-        .replace("Soru kodu: ", "")
-        .trim();
+      const code = await page.getByRole("heading").last().textContent();
       if (!replay) {
         assert(!seen.has(code), `Completed history repeated question ${code}`);
         seen.add(code);

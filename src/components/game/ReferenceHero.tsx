@@ -8,7 +8,7 @@ import { SettingsButton, NotificationsButton } from "../ui/SettingsButton";
 import { usePlayerIdentity } from "../../features/online/SocialIdentityProvider";
 import { ProgressMeter } from "../ui/visuals";
 import { progress } from "../../domain/scoring/progress";
-import { useGame } from "../../storage/GameProvider";
+import { useGameLibrary } from "../../storage/GameProvider";
 import { colors as c, useTheme } from "../../theme/tokens";
 
 /** Shared edge-to-edge illustrated scene, with a native curved surface below. */
@@ -50,7 +50,7 @@ export function PlayerHeader({
   notifications?: boolean;
 }) {
   const { displayName } = usePlayerIdentity();
-  const { data } = useGame(),
+  const { data } = useGameLibrary(),
     p = progress(data.games),
     compact = useWindowDimensions().width < 430;
   const xp = (

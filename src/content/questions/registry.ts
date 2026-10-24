@@ -73,78 +73,78 @@ import { questionsV72 } from "./questions-v72";
 import type { Question } from "./model";
 
 // Banka sürümleri bağımsız çözülür: yeni soru eklemek eski cevapları değiştirmez.
-const catalogs: Readonly<Record<number, ReadonlyMap<string, Question>>> = {
-  2: new Map(bankV2.map((q) => [q.id, q])),
-  3: new Map(bankV3.map((q) => [q.id, q])),
-  4: new Map(bankV4.map((q) => [q.id, q])),
-  5: new Map(bankV5.map((q) => [q.id, q])),
-  6: new Map(bankV6.map((q) => [q.id, q])),
-  7: new Map(bankV7.map((q) => [q.id, q])),
-  8: new Map(bankV8.map((q) => [q.id, q])),
-  9: new Map(bankV9.map((q) => [q.id, q])),
-  10: new Map(bankV10.map((q) => [q.id, q])),
-  11: new Map(bankV11.map((q) => [q.id, q])),
-  12: new Map(bankV12.map((q) => [q.id, q])),
-  13: new Map(bankV13.map((q) => [q.id, q])),
-  14: new Map(bankV14.map((q) => [q.id, q])),
-  15: new Map(bankV15.map((q) => [q.id, q])),
-  16: new Map(bankV16.map((q) => [q.id, q])),
-  17: new Map(bankV17.map((q) => [q.id, q])),
-  18: new Map(bankV18.map((q) => [q.id, q])),
-  19: new Map(bankV19.map((q) => [q.id, q])),
-  20: new Map(bankV20.map((q) => [q.id, q])),
-  21: new Map(bankV21.map((q) => [q.id, q])),
-  22: new Map(bankV22.map((q) => [q.id, q])),
-  23: new Map(bankV23.map((q) => [q.id, q])),
-  24: new Map(bankV24.map((q) => [q.id, q])),
-  25: new Map(bankV25.map((q) => [q.id, q])),
-  26: new Map(bankV26.map((q) => [q.id, q])),
-  27: new Map(bankV27.map((q) => [q.id, q])),
-  28: new Map(bankV28.map((q) => [q.id, q])),
-  29: new Map(bankV29.map((q) => [q.id, q])),
-  30: new Map(bankV30.map((q) => [q.id, q])),
-  31: new Map(bankV31.map((q) => [q.id, q])),
-  32: new Map(bankV32.map((q) => [q.id, q])),
-  33: new Map(bankV33.map((q) => [q.id, q])),
-  34: new Map(bankV34.map((q) => [q.id, q])),
-  35: new Map(bankV35.map((q) => [q.id, q])),
-  36: new Map(bankV36.map((q) => [q.id, q])),
-  37: new Map(bankV37.map((q) => [q.id, q])),
-  38: new Map(bankV38.map((q) => [q.id, q])),
-  39: new Map(bankV39.map((q) => [q.id, q])),
-  40: new Map(bankV40.map((q) => [q.id, q])),
-  41: new Map(bankV41.map((q) => [q.id, q])),
-  42: new Map(bankV42.map((q) => [q.id, q])),
-  43: new Map(bankV43.map((q) => [q.id, q])),
-  44: new Map(bankV44.map((q) => [q.id, q])),
-  45: new Map(bankV45.map((q) => [q.id, q])),
-  46: new Map(bankV46.map((q) => [q.id, q])),
-  47: new Map(bankV47.map((q) => [q.id, q])),
-  48: new Map(bankV48.map((q) => [q.id, q])),
-  49: new Map(bankV49.map((q) => [q.id, q])),
-  50: new Map(bankV50.map((q) => [q.id, q])),
-  51: new Map(bankV51.map((q) => [q.id, q])),
-  52: new Map(bankV52.map((q) => [q.id, q])),
-  53: new Map(bankV53.map((q) => [q.id, q])),
-  54: new Map(bankV54.map((q) => [q.id, q])),
-  55: new Map(bankV55.map((q) => [q.id, q])),
-  56: new Map(bankV56.map((q) => [q.id, q])),
-  57: new Map(bankV57.map((q) => [q.id, q])),
-  58: new Map(bankV58.map((q) => [q.id, q])),
-  59: new Map(bankV59.map((q) => [q.id, q])),
-  60: new Map(bankV60.map((q) => [q.id, q])),
-  61: new Map(bankV61.map((q) => [q.id, q])),
-  62: new Map(bankV62.map((q) => [q.id, q])),
-  63: new Map(bankV63.map((q) => [q.id, q])),
-  64: new Map(bankV64.map((q) => [q.id, q])),
-  65: new Map(bankV65.map((q) => [q.id, q])),
-  66: new Map(bankV66.map((q) => [q.id, q])),
-  67: new Map(bankV67.map((q) => [q.id, q])),
-  68: new Map(bankV68.map((q) => [q.id, q])),
-  69: new Map(bankV69.map((q) => [q.id, q])),
-  70: new Map(bankV70.map((q) => [q.id, q])),
-  71: new Map(questions1500.map((q) => [q.id, q])),
-  72: new Map(questionsV72.map((q) => [q.id, q])),
+const snapshots: Readonly<Record<number, readonly Question[]>> = {
+  2: bankV2,
+  3: bankV3,
+  4: bankV4,
+  5: bankV5,
+  6: bankV6,
+  7: bankV7,
+  8: bankV8,
+  9: bankV9,
+  10: bankV10,
+  11: bankV11,
+  12: bankV12,
+  13: bankV13,
+  14: bankV14,
+  15: bankV15,
+  16: bankV16,
+  17: bankV17,
+  18: bankV18,
+  19: bankV19,
+  20: bankV20,
+  21: bankV21,
+  22: bankV22,
+  23: bankV23,
+  24: bankV24,
+  25: bankV25,
+  26: bankV26,
+  27: bankV27,
+  28: bankV28,
+  29: bankV29,
+  30: bankV30,
+  31: bankV31,
+  32: bankV32,
+  33: bankV33,
+  34: bankV34,
+  35: bankV35,
+  36: bankV36,
+  37: bankV37,
+  38: bankV38,
+  39: bankV39,
+  40: bankV40,
+  41: bankV41,
+  42: bankV42,
+  43: bankV43,
+  44: bankV44,
+  45: bankV45,
+  46: bankV46,
+  47: bankV47,
+  48: bankV48,
+  49: bankV49,
+  50: bankV50,
+  51: bankV51,
+  52: bankV52,
+  53: bankV53,
+  54: bankV54,
+  55: bankV55,
+  56: bankV56,
+  57: bankV57,
+  58: bankV58,
+  59: bankV59,
+  60: bankV60,
+  61: bankV61,
+  62: bankV62,
+  63: bankV63,
+  64: bankV64,
+  65: bankV65,
+  66: bankV66,
+  67: bankV67,
+  68: bankV68,
+  69: bankV69,
+  70: bankV70,
+  71: questions1500,
+  72: questionsV72,
 };
 export const SUPPORTED_BANK_VERSIONS = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
@@ -157,12 +157,17 @@ export interface GameContent {
   bankVersion: number;
   optionOrders?: Record<string, string[]>;
 }
+// Build only the indexes a player actually reads. Loading every historical
+// map up front adds avoidable Android startup/GC work; snapshots remain frozen.
+const loadedCatalogs = new Map<number, ReadonlyMap<string, Question>>();
 function catalog(version: number): ReadonlyMap<string, Question> | undefined {
-  return Number.isInteger(version) &&
-    version >= 2 &&
-    SUPPORTED_BANK_VERSIONS.some((v) => v === version)
-    ? catalogs[version]
-    : undefined;
+  if (!Number.isInteger(version) || version < 2 || !snapshots[version])
+    return undefined;
+  const loaded = loadedCatalogs.get(version);
+  if (loaded) return loaded;
+  const index = new Map(snapshots[version]!.map((q) => [q.id, q]));
+  loadedCatalogs.set(version, index);
+  return index;
 }
 // Ekranlara sunulan görünüm, o oturumun banka sürümü ve seçenek sırasına bağlıdır.
 export function gameQuestion(game: GameContent, id: string) {
@@ -202,7 +207,14 @@ export function knownQuestion(bankVersion: number, id: string) {
 export function historicalQuestion(bankVersion: number, id: string) {
   if (bankVersion === 1) {
     const q = legacy.get(id);
-    return q ? { id, question: q.text, categoryId: q.category, conceptGroup: `legacy:${id}` } : undefined;
+    return q
+      ? {
+          id,
+          question: q.text,
+          categoryId: q.category,
+          conceptGroup: `legacy:${id}`,
+        }
+      : undefined;
   }
   return catalog(bankVersion)?.get(id);
 }

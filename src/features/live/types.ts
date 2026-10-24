@@ -25,12 +25,12 @@ export interface LiveSettings {
   topic: string;
   level: string;
   count: number;
-  seconds: 15;
+  seconds: 10 | 15;
 }
 export interface LiveRoom {
   id: string;
   code: string;
-  hostId: string;
+  hostId: string | null;
   state:
     "lobby" | "countdown" | "playing" | "completed" | "cancelled" | "expired";
   phase:

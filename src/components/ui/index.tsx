@@ -19,7 +19,7 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { Pattern } from "../game/Artwork";
-import { useGame } from "../../storage/GameProvider";
+import { useGame, useGameDisplay } from "../../storage/GameProvider";
 import {
   colors as c,
   fonts,
@@ -80,7 +80,7 @@ export function Txt({
   );
 }
 export function useReducedMotion() {
-  const { data } = useGame();
+  const { profile } = useGameDisplay();
   const [system, setSystem] = useState(true);
   useEffect(() => {
     void AccessibilityInfo.isReduceMotionEnabled().then(setSystem);
@@ -90,7 +90,7 @@ export function useReducedMotion() {
     );
     return () => listener.remove();
   }, []);
-  return system || data.profile.reduceMotion;
+  return system || profile.reduceMotion;
 }
 export function Tap({
   children,
@@ -149,10 +149,18 @@ export function Tap({
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         onPress={() => {
-          audio.activate();
-          if (sound !== false)
-            audio.play(sound ?? (role === "radio" ? "select" : "tap"));
+          // Gameplay/selection owns the gesture. Audio runs after the visual
+          // commit; native player creation must never sit before onPress.
           onPress();
+          if (sound !== false) {
+            const cue = sound ?? (role === "radio" ? "select" : "tap");
+            requestAnimationFrame(() =>
+              setTimeout(() => {
+                audio.activate();
+                audio.play(cue);
+              }, 0),
+            );
+          }
         }}
         onPressIn={() => animate(0.98)}
         onPressOut={() => animate(1)}

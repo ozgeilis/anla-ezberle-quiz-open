@@ -288,7 +288,12 @@ function LiveController({
     active =
       room && !["completed", "cancelled", "expired"].includes(room.state);
   const remaining = room?.startAt
-    ? liveClock(Date.parse(room.startAt), live.now, room.settings.count)
+    ? liveClock(
+        Date.parse(room.startAt),
+        live.now,
+        room.settings.count,
+        room.settings.seconds,
+      )
     : null;
   const change = (next: LiveSettings) =>
     void live.run("room_settings", {
@@ -355,8 +360,8 @@ function LiveController({
               </Txt>
             </View>
             <Txt color={c.white}>
-              2–8 arkadaşınla özel bir odada yarış. Her soru için 15 saniye, her
-              doğru cevap için 100 puan.
+              2–8 arkadaşınla özel bir odada yarış. Soru süresi sunucudan
+              belirlenir; her doğru cevap için 100 puan.
             </Txt>
             {code && (
               <Txt color={c.gold}>
@@ -623,7 +628,8 @@ function LiveController({
                     {host ? "Yarışmayı hazırla" : "Oda ayarları"}
                   </Txt>
                   <Txt color={theme.muted}>
-                    15 saniye / soru · {room.players.length} / 8 oyuncu
+                    {room.settings.seconds} saniye / soru ·{" "}
+                    {room.players.length} / 8 oyuncu
                   </Txt>
                   {host && (
                     <Button
@@ -842,14 +848,10 @@ function LiveController({
                     padding: 22,
                   }}
                 >
-                  <Txt color={c.teal} size={13} weight="bold">
-                    {topicTitle(room.settings.topic)} ·{" "}
-                    {levelTitle(room.settings.level)}
-                  </Txt>
                   <Txt
                     accessibilityRole="header"
                     color={c.ink}
-                    size={width < 360 ? 21 : 25}
+                    size={19}
                     weight="heavy"
                     style={{ textAlign: "center" }}
                   >
@@ -897,8 +899,8 @@ function LiveController({
                             correct ? gradients.green : liveAnswerGradients[i]!
                           }
                           style={{
-                            padding: 17,
-                            minHeight: 70,
+                            padding: 10,
+                            minHeight: 48,
                             flexDirection: "row",
                             alignItems: "center",
                             gap: 13,
@@ -914,14 +916,14 @@ function LiveController({
                               backgroundColor: "rgba(0,15,35,.24)",
                             }}
                           >
-                            <Txt color={c.white} size={18} weight="heavy">
+                            <Txt color={c.white} size={14} weight="heavy">
                               {String.fromCharCode(65 + i)}
                             </Txt>
                           </View>
                           <Txt
                             color={c.white}
                             weight="bold"
-                            size={19}
+                            size={15}
                             style={{ flex: 1 }}
                           >
                             {option.text}

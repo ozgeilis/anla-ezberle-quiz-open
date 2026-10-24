@@ -1,3 +1,4 @@
+import { QUESTION_LIMIT_MS } from "./question-clock";
 import {
   DifficultyCounts,
   GameStage,
@@ -37,8 +38,12 @@ export interface Answer {
   questionId: string;
   option: number;
   at: number;
+  timedOut?: true;
+  openedAt?: number;
 }
 export interface Session extends GameContent {
+  timingVersion?: 1;
+  questionOpenedAt?: number;
   playCategory?: PlayCategoryId;
   playCategoryVersion?: PlayCategoryVersion;
   replay?: true;
@@ -56,7 +61,10 @@ export interface Session extends GameContent {
   cursor: number;
   answers: Answer[];
 }
-export interface GameRecord extends Omit<Session, "cursor"> {
+export interface GameRecord extends Omit<
+  Session,
+  "cursor" | "questionOpenedAt"
+> {
   completedAt: number;
 }
 export function shuffle<T>(items: readonly T[], random = Math.random): T[] {
@@ -376,6 +384,7 @@ export function createSession(
   focus?: CategoryId,
   now = Date.now(),
   options: {
+    timed?: boolean;
     channel?: ContentChannel;
     recentIds?: readonly string[];
     random?: () => number;
@@ -488,6 +497,9 @@ export function createSession(
         }
       : {}),
     ...(replay ? { replay: true as const } : {}),
+    ...(options.timed
+      ? { timingVersion: 1 as const, questionOpenedAt: now }
+      : {}),
     rewardVersion: 1,
     id: `quiz-${now}-${++sequence}-${Math.random().toString(36).slice(2, 10)}`,
     mode,
@@ -524,6 +536,16 @@ export function answerQuestion(
 ): Session {
   const id = session.questionIds[session.cursor];
   if (
+    session.timingVersion === 1 &&
+    (session.questionOpenedAt === undefined || now < session.questionOpenedAt)
+  )
+    return session;
+  if (
+    session.timingVersion === 1 &&
+    now >= (session.questionOpenedAt ?? Infinity) + QUESTION_LIMIT_MS
+  )
+    return expireQuestion(session, now);
+  if (
     !id ||
     !Number.isInteger(option) ||
     option < 0 ||
@@ -538,12 +560,43 @@ export function answerQuestion(
       {
         questionId: id,
         option,
+        ...(session.timingVersion === 1
+          ? { openedAt: session.questionOpenedAt }
+          : {}),
         at: Math.max(now, session.startedAt, session.answers.at(-1)?.at ?? 0),
       },
     ],
   };
 }
-export function advanceQuestion(session: Session): Session {
+export function expireQuestion(session: Session, now = Date.now()): Session {
+  const id = session.questionIds[session.cursor];
+  const openedAt = session.questionOpenedAt;
+  if (
+    session.timingVersion !== 1 ||
+    !id ||
+    openedAt === undefined ||
+    now < openedAt + QUESTION_LIMIT_MS ||
+    session.answers.some((a) => a.questionId === id)
+  )
+    return session;
+  return {
+    ...session,
+    answers: [
+      ...session.answers,
+      {
+        questionId: id,
+        option: -1,
+        timedOut: true,
+        openedAt,
+        at: Math.max(
+          openedAt + QUESTION_LIMIT_MS,
+          session.answers.at(-1)?.at ?? 0,
+        ),
+      },
+    ],
+  };
+}
+export function advanceQuestion(session: Session, now = Date.now()): Session {
   if (
     session.cursor >= 9 ||
     !session.answers.some(
@@ -551,12 +604,18 @@ export function advanceQuestion(session: Session): Session {
     )
   )
     return session;
-  return { ...session, cursor: session.cursor + 1 };
+  return {
+    ...session,
+    cursor: session.cursor + 1,
+    ...(session.timingVersion === 1
+      ? { questionOpenedAt: Math.max(now, session.answers.at(-1)!.at) }
+      : {}),
+  };
 }
 export function finishSession(session: Session): GameRecord {
   if (session.answers.length !== 10 || new Set(session.questionIds).size !== 10)
     throw new Error("Yarışma henüz tamamlanmadı.");
-  const { cursor: _cursor, ...record } = session;
+  const { cursor: _cursor, questionOpenedAt: _openedAt, ...record } = session;
   return { ...record, completedAt: session.answers[9]!.at };
 }
 export function stats(
@@ -565,9 +624,11 @@ export function stats(
   const correct = game.answers.filter(
     (a) => gameQuestion(game, a.questionId)?.correct === a.option,
   ).length;
+  const unanswered = game.answers.filter((a) => a.timedOut === true).length;
   return {
     correct,
-    wrong: game.answers.length - correct,
+    wrong: game.answers.length - correct - unanswered,
+    ...(unanswered ? { unanswered } : {}),
     score: correct * 100,
     seconds: Math.max(
       0,

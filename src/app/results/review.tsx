@@ -17,11 +17,11 @@ export default function Review() {
       title="Birlikte öğrenelim"
       subtitle={
         result
-          ? `${wrong.length} yanlış yanıt · Her yanıt yeni bir fırsat`
+          ? `${wrong.length} yanlış veya cevapsız soru · Her yanıt yeni bir fırsat`
           : "Bu oturumda incelenecek sonuç yok."
       }
     >
-      <Chip icon="edit-3">Taslak içerik · Editoryal onay bekliyor</Chip>
+      <Chip icon="edit-3">Kaynaklı açıklamalar</Chip>
       {result && wrong.length === 0 && (
         <Card style={{ marginVertical: 20, gap: 10 }}>
           <Txt size={25} weight="heavy">
@@ -41,7 +41,11 @@ export default function Review() {
               <Txt size={19} weight="heavy">
                 {q.text}
               </Txt>
-              <Txt color={c.danger}>Yanıtın: {q.options[answer.option]}</Txt>
+              <Txt color={c.danger}>
+                {answer.timedOut
+                  ? "Süre doldu · Cevapsız"
+                  : `Yanıtın: ${q.options[answer.option]}`}
+              </Txt>
               <Txt
                 color={theme.dark ? c.tealLight : c.successInk}
                 weight="bold"

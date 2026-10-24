@@ -1,4 +1,5 @@
 export const effectDuration = {
+  tick: 65,
   tap: 100,
   select: 240,
   correct: 680,
@@ -11,7 +12,7 @@ export const effectDuration = {
   levelUp: 1450,
 } as const;
 export type SoundEffect = keyof typeof effectDuration;
-export type SoundName = SoundEffect | "music";
+export type SoundName = SoundEffect;
 export const isCelebration = (name: SoundEffect) =>
   ["completed", "perfect", "badge", "levelUp"].includes(name);
 export const effectPriority = (name: SoundEffect) =>
