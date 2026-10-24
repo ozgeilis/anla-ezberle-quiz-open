@@ -75,14 +75,14 @@ export function HomeScreen() {
             trailing="chevron-right"
             variant="orange"
             onPress={play}
-            style={{ minHeight: 70, borderRadius: 36 }}
+            style={{ minHeight: 54, borderRadius: 28 }}
           />
         </ReferenceHero>
         <View
           style={{
-            gap: 16,
+            gap: 12,
             marginTop: 6,
-            paddingHorizontal: compact ? 14 : 20,
+            paddingHorizontal: compact ? 12 : 16,
           }}
         >
           <Tap
@@ -105,7 +105,7 @@ export function HomeScreen() {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 12,
-                padding: 12,
+                padding: 10,
                 backgroundColor: theme.card,
                 borderColor: theme.goldBorder,
               }}
@@ -117,7 +117,7 @@ export function HomeScreen() {
                   padding: 5,
                 }}
               >
-                <Cup size={38} />
+                <Cup size={34} />
               </View>
               <View style={{ flex: 1, gap: 3 }}>
                 <Txt size={16} weight="heavy">
@@ -144,7 +144,7 @@ export function HomeScreen() {
             onPress={() => router.push("/categories")}
             style={[s.row, { justifyContent: "space-between" }]}
           >
-            <Txt size={21} weight="heavy" accessibilityRole="header">
+            <Txt size={19} weight="heavy" accessibilityRole="header">
               Kategorileri Keşfet
             </Txt>
             <Icon name="chevron-right" size={20} color={theme.accent} />
@@ -178,8 +178,8 @@ export function HomeScreen() {
                           : ["#FFBF35", "#B95F08"]
                     }
                     style={{
-                      padding: 12,
-                      minHeight: 168,
+                      padding: 10,
+                      minHeight: 142,
                       justifyContent: "flex-end",
                     }}
                   >
@@ -199,12 +199,13 @@ export function HomeScreen() {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </View>
-                    <TopicArtwork id={category.artwork} size={92} />
+                    <TopicArtwork id={category.artwork} size={72} />
 
                     <Txt
                       weight="heavy"
-                      size={compact ? 14 : 16}
+                      size={compact ? 12 : 14}
                       color={c.white}
+                      style={{ minHeight: 40 }}
                     >
                       {category.title}
                     </Txt>
@@ -235,7 +236,7 @@ export function HomeScreen() {
             onPress={() => router.push("/live")}
           />
           <View style={{ gap: 8 }}>
-            <Txt accessibilityRole="header" size={21} weight="heavy">
+            <Txt accessibilityRole="header" size={19} weight="heavy">
               Zorluk Seç
             </Txt>
             <Txt size={12} color={theme.muted}>

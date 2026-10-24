@@ -143,11 +143,11 @@ try {
       .filter({ has: page.getByText(q.answer, { exact: true }) })
       .click();
     await page
-      .getByRole("button", {
-        name: i === 9 ? "Sonucumu Gör" : "Sonraki Soru",
-        exact: true,
-      })
-      .click();
+      .getByText(
+        i === 9 ? "Sonucun bu cihazda kaydedildi. ✓" : `Soru ${i + 2} / 10`,
+        { exact: true },
+      )
+      .waitFor();
   }
   await page
     .getByRole("button", { name: "Rozet ödül bildirimini kapat", exact: true })

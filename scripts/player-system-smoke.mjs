@@ -292,11 +292,11 @@ try {
       }
     assert(picked, "Correct shuffled option found");
     await a
-      .getByRole("button", {
-        name: i === 9 ? "Sonucumu Gör" : "Sonraki Soru",
-        exact: true,
-      })
-      .click();
+      .getByText(
+        i === 9 ? "Sonucun bu cihazda kaydedildi. ✓" : `Soru ${i + 2} / 10`,
+        { exact: true },
+      )
+      .waitFor();
   }
   await a
     .getByText("Seviye atladın! Seviye 2 · Yeni yolcu", { exact: true })

@@ -68,9 +68,7 @@ async function choose(p, correct = true) {
   const i = names.findIndex((n) => n.slice(3) === answer);
   assert(i >= 0);
   await options.nth(correct ? i : (i + 1) % 4).click();
-  await btn(p, "Sonraki Soru")
-    .or(btn(p, "Sonucumu Gör"))
-    .waitFor({ state: "visible" });
+  await p.getByTestId("answer-feedback").waitFor({ state: "visible" });
 }
 try {
   for (const width of [320, 390, 1024])
@@ -232,7 +230,8 @@ try {
           assert.equal(answerCount, i + 1, "Accepted answer once");
           if (i === 0) await shot(p, "accepted-correct-answer");
           await p.waitForTimeout(740);
-          await btn(p, i === 9 ? "Sonucumu Gör" : "Sonraki Soru").click();
+          if (i < 9)
+            await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
         await p.getByText("Tebrikler!", { exact: true }).waitFor();
         await p.waitForTimeout(5500);
@@ -274,7 +273,8 @@ try {
         for (let i = 0; i < 10; i++) {
           await choose(p, i !== 0);
           await p.waitForTimeout(740);
-          await btn(p, i === 9 ? "Sonucumu Gör" : "Sonraki Soru").click();
+          if (i < 9)
+            await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
         await p.getByText("Tebrikler!", { exact: true }).waitFor();
         await p.waitForTimeout(5500);

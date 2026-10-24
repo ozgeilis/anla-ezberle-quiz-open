@@ -27,15 +27,15 @@ export function HomeTitlePlaque() {
       testID="home-title-plaque"
       style={{
         width: "100%",
-        maxWidth: 420,
+        maxWidth: 340,
         alignSelf: "center",
         marginTop: -6,
         marginBottom: 10,
         paddingHorizontal: 16,
-        paddingTop: 81,
-        paddingBottom: 17,
+        paddingTop: 58,
+        paddingBottom: 13,
         alignItems: "center",
-        minHeight: 294,
+        minHeight: 238,
       }}
     >
       <View
@@ -117,11 +117,11 @@ export function HomeTitlePlaque() {
       <Txt
         accessibilityRole="header"
         weight="heavy"
-        size={compact ? 39 : 45}
+        size={compact ? 32 : 36}
         color={c.white}
         style={{
           textAlign: "center",
-          lineHeight: compact ? 49 : 55,
+          lineHeight: compact ? 40 : 44,
           textShadowColor: "#002F37",
           textShadowOffset: { width: 0, height: 3 },
           textShadowRadius: 1,
@@ -132,7 +132,7 @@ export function HomeTitlePlaque() {
       {fontScale > 1.2 ? (
         <Txt
           weight="heavy"
-          size={compact ? 51 : 60}
+          size={compact ? 42 : 48}
           color={palette.goldLight}
           style={{ textAlign: "center" }}
         >
@@ -143,7 +143,7 @@ export function HomeTitlePlaque() {
           accessible
           accessibilityRole="header"
           accessibilityLabel="Ezberle"
-          style={{ width: "100%", height: compact ? 68 : 76 }}
+          style={{ width: "100%", height: compact ? 54 : 60 }}
         >
           <Svg
             width="100%"
@@ -191,7 +191,7 @@ export function HomeTitlePlaque() {
         </View>
       )}
       <Txt
-        size={compact ? 16 : 18}
+        size={compact ? 13 : 15}
         weight="heavy"
         color={c.white}
         style={{
@@ -210,13 +210,13 @@ export function HomeTitlePlaque() {
           borderColor: "#2E9D98",
           backgroundColor: palette.plaqueDeep,
           paddingHorizontal: 10,
-          paddingVertical: 7,
+          paddingVertical: 5,
           marginTop: 9,
           maxWidth: "100%",
         }}
       >
         <Txt
-          size={compact ? 12 : 13}
+          size={compact ? 11 : 12}
           weight="bold"
           color={c.white}
           style={{ textAlign: "center" }}

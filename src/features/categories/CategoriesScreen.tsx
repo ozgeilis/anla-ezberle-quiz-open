@@ -130,8 +130,8 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
       >
         <View style={{ gap: 24 }}>
           <IllustratedPanel
-            minHeight={146}
-            artwork={<TopicArtwork id="quran" size={compact ? 66 : 90} />}
+            minHeight={120}
+            artwork={<TopicArtwork id="quran" size={compact ? 58 : 74} />}
           >
             <Txt size={11} weight="heavy" color={c.gold}>
               SENİN TURUN, SENİN SEÇİMİN
@@ -207,8 +207,8 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
                         update({ stage: stage.id, difficulty: undefined })
                       }
                       style={{
-                        minHeight: 170,
-                        padding: 14,
+                        minHeight: 146,
+                        padding: 12,
                         gap: 8,
                         borderRadius: 20,
                         borderWidth: 2,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Linking, View } from "react-native";
 import { router } from "expo-router";
 import { Button, Card, Chip, Page, Tap, Txt } from "../../components/ui";
@@ -8,6 +8,7 @@ import { colors as c, useTheme } from "../../theme/tokens";
 export default function Review() {
   const { result } = useGame();
   const theme = useTheme();
+  const [all, setAll] = useState(false);
   const wrong =
     result?.answers.filter(
       (a) => gameQuestion(result, a.questionId)?.correct !== a.option,
@@ -22,7 +23,14 @@ export default function Review() {
       }
     >
       <Chip icon="edit-3">Kaynaklı açıklamalar</Chip>
-      {result && wrong.length === 0 && (
+      {result && (
+        <Button
+          title={all ? "Yanlış ve cevapsızları göster" : "Tüm cevapları göster"}
+          variant="outline"
+          onPress={() => setAll(!all)}
+        />
+      )}
+      {result && wrong.length === 0 && !all && (
         <Card style={{ marginVertical: 20, gap: 10 }}>
           <Txt size={25} weight="heavy">
             Kusursuz tur! ★
@@ -34,7 +42,7 @@ export default function Review() {
         </Card>
       )}
       <View style={{ gap: 16, marginVertical: 20 }}>
-        {wrong.map((answer) => {
+        {(all ? (result?.answers ?? []) : wrong).map((answer) => {
           const q = gameQuestion(result!, answer.questionId)!;
           return (
             <Card key={q.id} style={{ gap: 12 }}>

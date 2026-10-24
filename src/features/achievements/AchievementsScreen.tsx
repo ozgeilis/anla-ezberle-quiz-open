@@ -61,7 +61,7 @@ export function AchievementsScreen() {
     >
       <ReferenceHero>
         <PlayerHeader />
-        <GoldHeading size={width < 360 ? 40 : 48}>Rozetler</GoldHeading>
+        <GoldHeading size={width < 360 ? 32 : 38}>Rozetler</GoldHeading>
         <Txt
           color={c.white}
           size={14}
@@ -76,7 +76,7 @@ export function AchievementsScreen() {
           Başarılarını topla, keşif yolculuğunda ilerle!
         </Txt>
         <View style={{ alignItems: "center", marginTop: 4 }}>
-          <Medal size={width < 360 ? 144 : 160} />
+          <Medal size={width < 360 ? 112 : 128} />
         </View>
       </ReferenceHero>
       <View style={{ paddingHorizontal: width < 360 ? 14 : 20 }}>
@@ -91,7 +91,7 @@ export function AchievementsScreen() {
           <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
             <Medal size={50} />
             <View style={{ flex: 1 }}>
-              <Txt size={22} weight="heavy">
+              <Txt size={19} weight="heavy">
                 {earned.length}/{badges.length} Rozet
               </Txt>
               <Txt size={12} color={theme.muted}>

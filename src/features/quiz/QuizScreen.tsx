@@ -2,6 +2,7 @@ import { useSound } from "../audio/SoundProvider";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { quizAudioCues } from "../audio/events";
 import { brand } from "../../branding/identity";
+import { useFeedbackAdvance } from "./useFeedbackAdvance";
 import { QuestionCountdown } from "./QuestionCountdown";
 import React, {
   ComponentRef,
@@ -14,17 +15,20 @@ import {
   AccessibilityInfo,
   AppState,
   Platform,
-  Linking,
   ScrollView,
   StyleSheet,
   View,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { router, Stack, usePreventRemove } from "expo-router";
-import { CardCorners, Pattern } from "../../components/game/Artwork";
+import {
+  Book,
+  Scene,
+  CardCorners,
+  Pattern,
+} from "../../components/game/Artwork";
 import {
   Button,
-  Card,
   Chip,
   Dialog,
   Icon,
@@ -39,7 +43,6 @@ import { useDuel } from "../../storage/DuelProvider";
 import { useGame } from "../../storage/GameProvider";
 import {
   colors as c,
-  gradients,
   radius,
   shadows,
   space,
@@ -75,7 +78,6 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const reduced = useReducedMotion();
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const [leave, setLeave] = useState(false);
-  const [sourceError, setSourceError] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const disablePrevention = usePreventRemove(!!session, () => setLeave(true));
   const question = useMemo(
@@ -130,9 +132,34 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
       AccessibilityInfo.announceForAccessibility(
         demo
           ? "Yanıtın kilitlendi. Maç sonunda iki skor karşılaştırılacak."
-          : `${chosen.timedOut ? "Süre doldu. Soru cevapsız." : chosen.option === question.correct ? "Doğru cevap!" : "Yanlış cevap."} Doğru yanıt: ${question.options[question.correct]}. ${question.explanation}`,
+          : `${chosen.timedOut ? "Süre doldu. Soru cevapsız." : chosen.option === question.correct ? "Doğru cevap!" : "Yanlış cevap."} Doğru yanıt: ${question.options[question.correct]}. Birazdan sonraki soru.`,
       );
   }, [chosen, question, demo]);
+  const goNext = async () => {
+    if (!session || !chosen || finishing) return;
+    if (session.cursor === 9) {
+      setFinishing(true);
+      if (demo) {
+        if (!command("finish")) {
+          setFinishing(false);
+          return;
+        }
+        play("completed", `demo:${session.id}:${role}:result`);
+      } else await solo.finish();
+      disablePrevention();
+      router.replace(demo ? "/duel" : "/results");
+    } else {
+      next();
+      scroll.current?.scrollTo({ y: 0, animated: !reduced });
+    }
+  };
+  useFeedbackAdvance(
+    session && chosen
+      ? `${session.id}:${session.cursor}:${demo ? role : "solo"}`
+      : null,
+    leave || finishing,
+    () => void goNext(),
+  );
   if (!session || !question)
     return (
       <View style={{ padding: 24, flex: 1, justifyContent: "center", gap: 20 }}>
@@ -150,33 +177,18 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
         />
       </View>
     );
-  const goNext = async () => {
-    if (!chosen || finishing) return;
-    if (session.cursor === 9) {
-      setFinishing(true);
-      if (demo) {
-        if (!command("finish")) {
-          setFinishing(false);
-          return;
-        }
-        play("completed", `demo:${session.id}:${role}:result`);
-      } else await solo.finish();
-      disablePrevention();
-      router.replace(demo ? "/duel" : "/results");
-    } else {
-      next();
-      setSourceError(false);
-      scroll.current?.scrollTo({ y: 0, animated: !reduced });
-    }
-  };
   const score =
     session.answers.filter(
       (a) => gameQuestion(session, a.questionId)?.correct === a.option,
     ).length * 100;
   return (
     <View style={{ flex: 1, backgroundColor: theme.background }}>
+      <Scene />
       <Stack.Screen options={{ gestureEnabled: false }} />
-      <LinearGradient colors={gradients.hero} style={styles.header}>
+      <LinearGradient
+        colors={["rgba(0,83,89,.92)", "rgba(0,83,89,.70)"]}
+        style={styles.header}
+      >
         <View pointerEvents="none" style={StyleSheet.absoluteFill}>
           <Pattern opacity={0.09} />
         </View>
@@ -188,7 +200,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             onPress={() => setLeave(true)}
           />
           <Txt
-            size={17}
+            size={15}
             weight="heavy"
             color={c.white}
             style={{ flex: 1, textAlign: "center" }}
@@ -208,7 +220,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
       <View
         style={[
           styles.progressDeck,
-          { backgroundColor: theme.background, borderColor: theme.border },
+          { backgroundColor: theme.card, borderColor: theme.goldBorder },
         ]}
       >
         <View
@@ -216,7 +228,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             s.row,
             {
               justifyContent: "space-between",
-              marginBottom: space.md,
+              marginBottom: space.sm,
               flexWrap: "wrap",
             },
           ]}
@@ -224,11 +236,6 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
           <View>
             <Txt weight="heavy" size={18}>
               Soru {session.cursor + 1} / 10
-            </Txt>
-            <Txt size={10} color={theme.muted}>
-              {demo
-                ? "Aynı soru seti · Çevrimiçi değil"
-                : "Her cevap yeni bir keşif"}
             </Txt>
           </View>
           {(demo ? duel.questionClock : solo.questionClock) ? (
@@ -293,13 +300,20 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             style={StyleSheet.absoluteFill}
           />
           <CardCorners />
+          <View
+            pointerEvents="none"
+            accessible={false}
+            style={{ marginBottom: 6 }}
+          >
+            <Book size={40} />
+          </View>
           <Txt
             accessibilityRole="header"
             accessibilityLiveRegion="polite"
             size={19}
             weight="heavy"
             color={c.ink}
-            style={{ textAlign: "center", lineHeight: 28 }}
+            style={{ textAlign: "center", lineHeight: 27 }}
           >
             {question.text}
           </Txt>
@@ -313,14 +327,16 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
               ? c.mint
               : wrong
                 ? c.dangerBg
-                : theme.card;
+                : theme.dark
+                  ? theme.card
+                  : c.cream;
             const border = correct
               ? c.emerald
               : wrong
                 ? c.danger
                 : demoSelected
                   ? c.deepBlue
-                  : theme.border;
+                  : theme.goldBorder;
             const textColor = correct
               ? c.successInk
               : wrong
@@ -396,82 +412,43 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             {duel.error}
           </Txt>
         )}
-        {demo && chosen ? (
-          <Card style={styles.explanation}>
-            <Txt color={c.darkGold} weight="heavy">
-              Yanıtın kilitlendi.
-            </Txt>
-            <Txt color={c.ink}>
-              Doğru cevap ve açıklama iki tur tamamlanana kadar gösterilmez. Bu,
-              aynı cihazdaki yerel demodur.
-            </Txt>
-          </Card>
-        ) : chosen ? (
-          <Card style={styles.explanation}>
-            <View style={[s.row, { alignItems: "flex-start" }]}>
-              <View style={styles.explanationIcon}>
-                <Icon name="sun" size={24} color={c.darkGold} />
-              </View>
-              <View style={{ flex: 1, gap: space.xs }}>
-                <Txt size={18} weight="heavy" color={c.darkGold}>
-                  Açıklama
-                </Txt>
-                <Txt
-                  size={12}
-                  weight="bold"
-                  color={
-                    chosen.option === question.correct ? c.successInk : c.danger
-                  }
-                >
-                  {chosen.option === question.correct
-                    ? "Harika, doğru cevap!"
-                    : chosen.timedOut
-                      ? "Süre doldu · Cevapsız"
-                      : "Birlikte öğrenelim"}
-                </Txt>
-              </View>
-            </View>
-            {chosen.option !== question.correct && (
-              <Txt weight="heavy" color={c.ink}>
-                Doğru yanıt: {question.options[question.correct]}
-              </Txt>
-            )}
-            <Txt color={c.ink} size={14}>
-              {question.explanation}
-            </Txt>
-            <Tap
-              label={`Kaynağı aç: ${question.source.title}`}
-              onPress={() => {
-                void Linking.openURL(question.source.url).catch(() =>
-                  setSourceError(true),
-                );
-              }}
-              style={styles.source}
-            >
-              <View style={s.row}>
-                <Icon name="book-open" size={16} color={c.teal} />
-                <Txt color={c.teal} size={11} weight="bold" style={{ flex: 1 }}>
-                  {question.source.title} · {question.source.locator}
-                </Txt>
-                <Icon name="external-link" size={15} color={c.teal} />
-              </View>
-            </Tap>
-            {sourceError && (
-              <Txt color={c.danger} size={12}>
-                Kaynak açılamadı. İnternet bağlantını kontrol edebilirsin.
-              </Txt>
-            )}
-          </Card>
-        ) : (
-          <Txt
-            size={12}
-            color={theme.muted}
-            style={{ textAlign: "center", paddingTop: space.xl }}
+        {chosen && (
+          <View
+            accessibilityLiveRegion="polite"
+            testID="answer-feedback"
+            style={{
+              marginTop: 12,
+              padding: 12,
+              borderRadius: 18,
+              backgroundColor: theme.card,
+              borderWidth: 1,
+              borderColor: theme.goldBorder,
+              flexDirection: "row",
+              gap: 8,
+              alignItems: "center",
+            }}
           >
-            {demo
-              ? "Bir yanıt seç. Açıklamalar maç tamamlanınca açılır."
-              : "Bir yanıt seç, ardından açıklamayı keşfet."}
-          </Txt>
+            <Icon
+              name={
+                chosen.timedOut
+                  ? "clock"
+                  : chosen.option === question.correct && !demo
+                    ? "check-circle"
+                    : "info"
+              }
+              color={chosen.timedOut ? theme.goldInk : theme.accent}
+              size={20}
+            />
+            <Txt size={13} weight="bold" style={{ flex: 1 }}>
+              {demo
+                ? "Yanıtın kilitlendi"
+                : chosen.timedOut
+                  ? "Süre doldu · Cevapsız"
+                  : chosen.option === question.correct
+                    ? "Harika, doğru cevap!"
+                    : "Yanlış cevap · Doğru yanıt yeşille gösterildi"}
+            </Txt>
+          </View>
         )}
       </ScrollView>
       <View
@@ -503,20 +480,17 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                 : "Her soru 10 saniye"}
           </Txt>
         </View>
-        <Button
-          title={
-            finishing
-              ? "Sonuç kaydediliyor…"
-              : session.cursor === 9
-                ? demo
-                  ? "Turumu Bitir"
-                  : "Sonucumu Gör"
-                : "Sonraki Soru"
-          }
-          trailing="chevron-right"
-          onPress={() => void goNext()}
-          disabled={!chosen || finishing}
-        />
+        <Txt
+          size={11}
+          color={theme.muted}
+          style={{ textAlign: "center", paddingVertical: 4 }}
+        >
+          {finishing
+            ? "Sonuç kaydediliyor…"
+            : chosen
+              ? "Birazdan otomatik devam…"
+              : "Cevabını seç · Her soru 10 saniye"}
+        </Txt>
       </View>
       <Dialog
         visible={leave}
@@ -547,16 +521,17 @@ const styles = StyleSheet.create({
   header: {
     paddingHorizontal: space.md,
     paddingTop: space.md,
-    paddingBottom: 25,
+    paddingBottom: 12,
   },
   progressDeck: {
     paddingHorizontal: space.lg,
     paddingTop: space.md,
     paddingBottom: space.lg,
-    marginTop: -14,
-    borderTopLeftRadius: radius.lg,
-    borderTopRightRadius: radius.lg,
-    borderBottomWidth: 1,
+    marginTop: 0,
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    marginHorizontal: 14,
+    marginBottom: 10,
   },
   timer: {
     flexDirection: "row",
@@ -567,17 +542,24 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     borderRadius: radius.pill,
   },
-  content: { padding: space.lg, paddingBottom: space.xl },
+  content: {
+    paddingHorizontal: 14,
+    paddingBottom: 16,
+    width: "100%",
+    maxWidth: 680,
+    alignSelf: "center",
+  },
   question: {
-    minHeight: 100,
+    minHeight: 154,
     borderRadius: radius.card,
     borderWidth: 1,
     borderColor: c.creamBorder,
     padding: space.lg,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: space.lg,
+    marginBottom: space.md,
     overflow: "hidden",
+    backgroundColor: c.cream,
     boxShadow: shadows.card,
   },
   category: {

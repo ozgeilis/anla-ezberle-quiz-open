@@ -104,7 +104,7 @@ export function QuestionCountdown({
           {stopped ? "KİLİTLENDİ" : "KALAN SÜRE"}
         </Txt>
         <Txt size={17} weight="heavy" color={theme.text}>
-          {seconds} sn
+          00:{String(seconds).padStart(2, "0")}
         </Txt>
       </View>
     </View>

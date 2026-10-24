@@ -127,7 +127,7 @@ export function ResultsScreen() {
         }}
       >
         <ReferenceHero night>
-          <View style={{ alignItems: "center", paddingBottom: 32 }}>
+          <View style={{ alignItems: "center", paddingBottom: 20 }}>
             <Celebration enabled={summary.correct >= 5 || levelUp} />
             <Chip icon="check-circle">Yarışma tamamlandı</Chip>
             {levelUp && (
@@ -144,12 +144,12 @@ export function ResultsScreen() {
             <Animated.View
               style={{ transform: [{ scale }], marginTop: 2, marginBottom: -6 }}
             >
-              <Medal size={compact ? 200 : 238} />
+              <Medal size={compact ? 156 : 180} />
             </Animated.View>
             <Txt
               accessibilityRole="header"
               color={c.gold}
-              size={compact ? 37 : 42}
+              size={compact ? 31 : 36}
               weight="heavy"
               style={{
                 textShadowColor: c.deepOrange,
@@ -203,7 +203,7 @@ export function ResultsScreen() {
               weight="heavy"
               color={c.navy}
               style={{
-                lineHeight: 82,
+                lineHeight: 68,
                 letterSpacing: -3,
                 width: "100%",
                 textAlign: "center",
@@ -339,7 +339,7 @@ export function ResultsScreen() {
           <Button
             title="Tekrar Oyna"
             icon="rotate-cw"
-            style={{ minHeight: 66, borderColor: c.tealLight }}
+            style={{ minHeight: 54, borderColor: c.tealLight }}
             disabled={saving || !saved}
             onPress={() => {
               const started = start(

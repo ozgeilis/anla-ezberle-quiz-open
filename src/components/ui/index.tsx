@@ -414,7 +414,7 @@ export function Page({
       ref={scroll}
       style={{ flex: 1, backgroundColor: theme.background }}
       contentContainerStyle={{
-        padding: compact ? 16 : 24,
+        padding: compact ? 14 : 18,
         paddingBottom: 32,
         width: "100%",
         maxWidth: 900,
@@ -438,13 +438,13 @@ export function Page({
       <View
         style={[
           s.row,
-          { marginTop: 12, marginBottom: 24, justifyContent: "space-between" },
+          { marginTop: 8, marginBottom: 18, justifyContent: "space-between" },
         ]}
       >
         <View style={{ flex: 1, minWidth: 0 }}>
           <Txt
             accessibilityRole="header"
-            size={compact ? 27 : 30}
+            size={compact ? 24 : 27}
             weight="heavy"
           >
             {title}
@@ -544,7 +544,7 @@ export const s = StyleSheet.create({
     boxShadow: shadows.card,
   },
   button: {
-    minHeight: 60,
+    minHeight: 52,
     borderRadius: radius.lg,
     borderWidth: 2,
     overflow: "hidden",
@@ -553,8 +553,8 @@ export const s = StyleSheet.create({
   },
   buttonContent: {
     paddingHorizontal: space.lg,
-    paddingVertical: space.lg,
-    minHeight: 60,
+    paddingVertical: space.md,
+    minHeight: 52,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",

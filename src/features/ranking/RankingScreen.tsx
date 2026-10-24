@@ -377,7 +377,7 @@ function OnlineRanking({
       {!!player && (
         <Dialog visible title="Oyuncu Profili" onClose={() => setPlayer(null)}>
           <View style={{ alignItems: "center", gap: 12 }}>
-            <Avatar variant={player.avatar} size={78} />
+            <Avatar variant={player.avatar} size={64} />
             <Txt size={23} weight="heavy">
               {player.name}
             </Txt>
@@ -456,7 +456,7 @@ function Podium({
                 </Txt>
                 <Avatar
                   variant={e.player.avatar}
-                  size={width < 360 ? 45 : 58}
+                  size={width < 360 ? 38 : 48}
                 />
               </LinearGradient>
               <View style={{ padding: 9, gap: 4, alignItems: "center" }}>
@@ -503,7 +503,7 @@ function RankRow({
         alignItems: "center",
         gap: 10,
         padding: 12,
-        minHeight: 82,
+        minHeight: 72,
         borderRadius: 20,
         borderWidth: own ? 2 : 1,
         borderColor: own ? c.gold : t.border,
