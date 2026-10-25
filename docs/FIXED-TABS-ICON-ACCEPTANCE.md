@@ -54,18 +54,23 @@ hazırlanmıştır. PR #2 ve #3 değiştirilmemiştir. Başlangıçta kontrol ed
   native görsel kabul yapılmamıştır. Yerel Android Studio sync ayrıca IDE PATH'i
   node'u bulamadığı için başarısızdır; başarılı EAS build'i bununla karıştırılmaz.
 
-## Açık kabul ve Git sınırı
+## Cihaz kabulü ve Git sınırı
 
-Samsung A04 / Android 14 üzerinde mevcut uygulamayı kaldırmadan APK'yı güncelle.
-Ana ekran ve uygulama çekmecesinde ikonu; açık/koyu duvar kâğıdını; 100/150/200%
-sistem yazı ayarlarında beş sekmeyi, safe area'yı ve soru metninin büyümeye devam
-etmesini kontrol et. iOS gerçek launcher, TalkBack ve VoiceOver kabulü açıktır.
+25 Ekim 2026 tarihinde kullanıcı, Samsung A04 / Android 14 için gönderilen APK,
+yeni ikon ve 100/150/200% sistem yazı boyutunda beş alt sekmenin kontrolü sorusuna
+"Test ettim, GitHub'a aktarımı onaylıyorum" yanıtını vermiştir. Bu, kullanıcı
+tarafından bildirilen cihaz kabulüdür; bağımsız araç ölçümü veya yeni native ekran
+görüntüsü olarak sunulmaz. iOS gerçek launcher, TalkBack ve VoiceOver kabulü
+açıktır. Diğer içeriklerin font ölçeği bu görevde değiştirilmemiştir.
 
-Kullanıcının test ve onay koşulu nedeniyle bu dal GitHub'a push/merge edilmemiştir.
+Kullanıcının test ve onay koşulu karşılandığından dal GitHub'a aktarılıp mevcut
+PR #3 dalını hedefleyen dar kapsamlı bir PR ile sunulur. Main'e merge veya üretim
+dağıtımı bu aktarımın parçası değildir.
 Main ile PR #2/#3 arasında özellikle hesap silme dosyalarında mevcut çakışmalar
 vardır; bu dar görevde çözülmemiş, eski sürümleri main üzerine taşınmamıştır.
 APK devam eden PR #3 tabanını test eder; güncel production main'in yerini almaz.
-Onay sonrası yalnız bu dar diff uygun güncel dala taşınıp tekrar doğrulanmalıdır.
+Entegrasyon sırasında yalnız bu dar diff uygun güncel dala taşınıp tekrar
+doğrulanmalıdır; PR #2/#3'ün tamamı bu onayla main'e alınmaz.
 Üretim, Vercel, Supabase ve Google Play Console değişmemiştir.
 
 Ham test logları, ekran görüntüleri, ikon maske önizlemeleri, APK ve QR yerel
