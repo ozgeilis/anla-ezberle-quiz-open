@@ -19,7 +19,7 @@ All 15 illustrated cards use the same component, contained image viewport, corne
 | 390 | 165 | 246.83 |
 | 768 | 354 | 270 |
 
-Nine category mappings were checked in each of eight theme/size combinations (72 genuine screen captures). Additional normal/special comparisons were captured at 320, 360 and 390 px. No white rectangles or horizontal overflow were observed. The image viewport preserves composition with `contain`; labels are real text. The content list reserves the measured bottom-panel height plus spacing. Ready-question technical copy is hidden when a round can start; true unavailability/error messages remain.
+Nine category mappings were checked in each of eight theme/size combinations (72 genuine screen captures). Additional normal/special comparisons were captured at 320, 360 and 390 px. No white rectangles or horizontal overflow were observed. The image viewport preserves composition with `contain`; labels are real text. The content list and action panel occupy separate flex rows above the safe-area/tab layout. The scroll viewport uses `minHeight: 0` and 24 px of end clearance, so the last card stays reachable without a large empty tail. Ready-question technical copy is hidden when a round can start; true unavailability/error messages remain.
 
 Preview buttons now open a read-only explanation rather than a quiz. They are informational buttons, never selectable radios. The child preview was opened and closed in the browser; the existing `Karma · Kolay` selection remained unchanged. No content publication gate is changed. CI checks the same behavior for all nine previews and checks equal card dimensions and last-card clearance above the start panel.
 

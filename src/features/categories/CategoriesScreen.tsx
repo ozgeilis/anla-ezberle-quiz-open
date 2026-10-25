@@ -53,7 +53,6 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
   const assessedSelection = useDeferredValue(selection);
   const assessing = selection !== assessedSelection;
   const [attempted, setAttempted] = useState(false);
-  const [footerHeight, setFooterHeight] = useState(110);
   const { start, startError, ready, session, data, storageError } = useGame();
   const topics = useMemo(
     () =>
@@ -119,12 +118,13 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
     <View style={{ flex: 1 }}>
       <ScrollView
         testID="category-scroll"
-        style={{ flex: 1, backgroundColor: theme.background }}
+        style={{ flex: 1, minHeight: 0, backgroundColor: theme.background }}
         contentContainerStyle={{
           width: "100%",
           maxWidth: 860,
           alignSelf: "center",
-          paddingBottom: footerHeight + 24,
+          // Footer and tab bar occupy their own flex rows, not an overlay.
+          paddingBottom: 24,
         }}
         keyboardShouldPersistTaps="handled"
       >
@@ -331,9 +331,6 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
       </ScrollView>
       <View
         testID="category-start-panel"
-        onLayout={(event) =>
-          setFooterHeight(Math.round(event.nativeEvent.layout.height))
-        }
         style={{
           gap: 6,
           paddingHorizontal: compact ? 16 : 24,
