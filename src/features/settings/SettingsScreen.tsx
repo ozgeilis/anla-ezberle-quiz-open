@@ -322,6 +322,12 @@ function AccountSettings({
                 </Txt>
               </View>
               <Button
+                title="Hesabımı Sil"
+                icon="trash-2"
+                variant="outline"
+                onPress={() => router.push("/account-delete")}
+              />
+              <Button
                 title="Hesaptan Çık"
                 icon="log-out"
                 variant="outline"
@@ -370,6 +376,11 @@ function AccountSettings({
             </>
           )}
         </Card>
+        <Button
+          title="Gizlilik ve hesap silme"
+          variant="outline"
+          onPress={() => router.push("/privacy")}
+        />
         {!!auth.session && <SocialProfile />}
         <Card style={{ gap: 12 }}>
           <Txt accessibilityRole="header" weight="heavy" size={21}>

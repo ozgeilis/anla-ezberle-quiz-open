@@ -61,7 +61,10 @@ export function OnlineScreen() {
     invite?: string;
     match?: string;
   }>();
-  // A fixed internal return target; legacy asynchronous invitations keep priority.
+  // Fixed internal return targets only; never redirect to an arbitrary URL.
+  if (session && returnTo === "account-delete" && !invite && !match)
+    return <Redirect href="/account-delete" />;
+  // Legacy asynchronous invitations keep priority.
   if (session && returnTo === "live" && !invite && !match)
     return <Redirect href="/live" />;
   return <OnlineAccountScreen key={session?.user.id ?? "guest"} />;
