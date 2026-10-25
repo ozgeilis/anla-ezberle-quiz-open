@@ -1,11 +1,12 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import { Tabs } from "expo-router";
 import type { BottomTabBarProps } from "expo-router/js-tabs";
 import { tr } from "../../localization/tr";
-import { Icon, Tap, Txt } from "../../components/ui";
+import { Icon, Tap } from "../../components/ui";
 import {
   colors as c,
+  fonts,
   homePalette,
   shadows,
   useTheme,
@@ -22,6 +23,9 @@ function PremiumTabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
         backgroundColor: homePalette(theme.dark).nav,
         borderTopWidth: 1,
         borderColor: theme.border,
+        // AppShell's SafeAreaView already reserves the device's bottom inset.
+        // Only this 48dp touch row and its 8dp padding belong to the tab bar.
+        height: 57,
         paddingVertical: 4,
         paddingHorizontal: 4,
         boxShadow: shadows.dock,
@@ -53,7 +57,7 @@ function PremiumTabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
               style={{
                 alignItems: "center",
                 justifyContent: "center",
-                minHeight: 48,
+                height: 48,
                 gap: 2,
                 borderRadius: 15,
                 paddingHorizontal: 1,
@@ -65,16 +69,19 @@ function PremiumTabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
                 size={20}
                 color={active ? theme.accent : theme.muted}
               />
-              <Txt
-                size={10}
-                weight={active ? "heavy" : "medium"}
-                color={active ? theme.accent : theme.muted}
+              <Text
+                allowFontScaling={false}
                 numberOfLines={1}
-                adjustsFontSizeToFit
-                minimumFontScale={0.85}
+                style={{
+                  fontFamily: fonts[active ? "heavy" : "medium"],
+                  fontSize: 10,
+                  lineHeight: 14,
+                  textAlign: "center",
+                  color: active ? theme.accent : theme.muted,
+                }}
               >
                 {tab.label}
-              </Txt>
+              </Text>
               {active && (
                 <View
                   pointerEvents="none"
