@@ -1,6 +1,6 @@
-# Account deletion — verified candidate, production approval pending
+# Account deletion — live acceptance record
 
-Updated 25 October 2026. This document does not authorize production changes.
+Updated 25 October 2026. The owner explicitly approved the deployment plan before any hosted migration or deletion. The approved rollout is now complete for the web/backend path.
 Public support/privacy contact supplied by the owner: **kovynelstudio@gmail.com**.
 
 ## Scope and coordination
@@ -16,23 +16,23 @@ protocol is changed. Two obsolete SQL fixture assumptions are corrected: the
 catalog now contains six duel plus six live award rules, and room codes cannot
 contain digits 0/1. The assertions are not disabled.
 
-## Hosted read-only evidence
+## Pre-installation hosted read-only evidence
 
 Target: **anla-ezberle-quiz-dev**, `mqyuihiobkomjfipxehj`, Frankfurt `eu-central-1`.
 Dashboard SQL was run inside `BEGIN READ ONLY … ROLLBACK`. No live user rows were
-exported. No production mutation or deletion request has been sent.
+exported. These observations preceded the owner-approved installation and synthetic acceptance described below.
 
-| Check                     | Result        | Evidence                                                                          |
-| ------------------------- | ------------- | --------------------------------------------------------------------------------- |
-| Correct existing target   | PASS          | Project name, ref and Central EU region visible in Dashboard                      |
-| Why deletion is disabled  | CONFIRMED     | Account migration/RPC absent; capability field absent; earlier endpoint probe 404 |
-| App baseline              | PASS          | Eight installed versions, listed below                                            |
-| Auth operations permitted | PASS          | `postgres` has Auth user TRIGGER, audit UPDATE, refresh/flow DELETE privileges    |
-| Storage                   | PASS          | 0 buckets, 0 objects, 0 policies, 0 owned buckets                                 |
-| Enterprise identity       | PASS          | 0 linked SCIM users; new flow fails closed for SCIM/enrolled MFA                  |
-| Baseline aggregate counts | RECORDED      | 13 Auth users, 12 profiles, 23 matches, 32 ledger rows, 9 rooms                   |
-| Backups                   | LIMITATION    | Free Dashboard shows no scheduled database backups                                |
-| Deployed erasure          | NOT PERFORMED | Requires explicit approval below                                                  |
+| Check                           | Result        | Evidence                                                                          |
+| ------------------------------- | ------------- | --------------------------------------------------------------------------------- |
+| Correct existing target         | PASS          | Project name, ref and Central EU region visible in Dashboard                      |
+| Pre-installation disabled state | CONFIRMED     | Account migration/RPC absent; capability field absent; earlier endpoint probe 404 |
+| App baseline                    | PASS          | Eight installed versions, listed below                                            |
+| Auth operations permitted       | PASS          | `postgres` has Auth user TRIGGER, audit UPDATE, refresh/flow DELETE privileges    |
+| Storage                         | PASS          | 0 buckets, 0 objects, 0 policies, 0 owned buckets                                 |
+| Enterprise identity             | PASS          | 0 linked SCIM users; new flow fails closed for SCIM/enrolled MFA                  |
+| Baseline aggregate counts       | RECORDED      | 13 Auth users, 12 profiles, 23 matches, 32 ledger rows, 9 rooms                   |
+| Backups                         | LIMITATION    | Free Dashboard shows no scheduled database backups                                |
+| Pre-installation erasure        | NOT PERFORMED | Owner approval was obtained before rollout                                        |
 
 Registered app versions: `20261019000100`, `20261019000200`, `20261021000100`,
 `20261021000200`, `20261021000300`, `20261021000400`, `20261021000500`,
@@ -101,9 +101,49 @@ uploads solely from a now-deleted JWT subject.
   confirmation; 320px light and 390px dark screenshots. No physical Android/iOS
   deletion acceptance has been claimed.
 
-No hosted/staging-account deletion acceptance has been performed yet. The local
-isolated services are the staging-equivalent evidence; final hosted acceptance
-must occur behind the tester allowlist after approved installation.
+## Hosted completion — owner-approved rollout
+
+- Applied only `20261024000100_account_deletion.sql` with approved SHA-256
+  `de71ec6a9c43fa98e6f212243432ee8f321e431cc4b7bf55c6bb9f19ae2f7c0e`.
+  Registered version 9; the two unrelated history migrations remain unapplied.
+- Deployed `account-delete` with all three exact reviewed source files. Legacy JWT
+  gate is off; actual Auth `getUser` plus same-actor fresh password verification
+  are on. Invalid JWT requests are rejected by the function.
+- Global flag stayed false during the three-account synthetic allowlist test.
+  Two new accounts completed a real 10-question asynchronous match; one was
+  erased while the opponent's Auth/profile/score/answers were fingerprint-checked.
+  The opponent could still retrieve the redacted completed match and its real
+  counts/score. The second synthetic account was then erased.
+- PR #4 merged as `3eef199a8b241ea2621e5fb486a9a2e79320ff4b`. All seven Actions
+  jobs and Vercel checks passed. Existing Production domain served the new routes;
+  no Vercel project, domain or environment setting was changed.
+- Enabled global `accountDeletionEnabled:true`, emptied `test_actors`, then used
+  the third synthetic account on the **actual Production HTTPS UI**. Login return,
+  two confirmations, wrong-password rejection, successful deletion, local sign-out
+  and server-confirmed success were observed. That account's old credentials,
+  refresh token and repeated deletion request are rejected.
+- Final SQL checks show zero remaining synthetic Auth identities, profiles, sessions, refresh tokens, scores, notifications and deletion intents; the tester list is empty.
+- **61 hosted HTTP checks passed**, including idempotent service postflight after
+  all three synthetic accounts were deleted. No pre-existing real account was a
+  deletion test subject. No additional account was created.
+- Before/after server-side fingerprints match for all pre-existing **13 Auth
+  users, 12 profiles, 23 matches, 32 ledger entries and 323 answers**. Existing
+  rooms also match. One newly created synthetic match remains as anonymous shared
+  history; its own two deleted players' scores and answers were erased. This is
+  expected test evidence, not an additional real user's record.
+- The deployed first-party script responses were scanned for the current server
+  key and all synthetic passwords/JWTs/refresh tokens; none were present. Public
+  publishable configuration remains the only client credential.
+
+Live pages:
+
+- https://anla-ezberle-quiz.vercel.app/account-delete
+- https://anla-ezberle-quiz.vercel.app/privacy
+
+Native exports compile, but physical Android/iOS deletion acceptance and an updated
+installed binary were **not** verified. A backend/web rollout does not update an
+old APK. Provider-internal log/support-mail retention remains unverified; this
+record is not a general Google Play release certification.
 
 ## Public policy and remaining release limits
 
@@ -118,11 +158,10 @@ support-mail retention still need owner/provider confirmation.** Free panel log
 visibility is not proof that all internal logs have physically expired. No blanket
 legal or Google Play approval is claimed. Do not invent retention durations.
 
-## Concrete approval and deployment plan
+## Approved deployment plan and rollback
 
 See [ACCOUNT-DELETION-DEPLOYMENT-PLAN.md](ACCOUNT-DELETION-DEPLOYMENT-PLAN.md).
-Do not apply the live migration, deploy the function, enable the global flag or
-publish the client until the owner explicitly approves that plan.
+The owner approved that exact plan before execution. Its immediate rollback remains global flag false plus an empty tester list; do not restore erased personal data or reverse compatible schema on populated production tables.
 
 Primary references:
 
