@@ -72,11 +72,24 @@ try {
     );
     const children = page.getByRole("button", { name: /^Çocuklar İçin\./ });
     assert.equal(await children.count(), 1);
-    assert.equal(await children.isDisabled(), true);
+    assert.equal(await children.getAttribute("role"), "button");
+    await children.click();
+    const preview = page.getByRole("dialog", {
+      name: "Çocuklar İçin",
+      exact: true,
+    });
+    await preview.waitFor();
+    assert.equal(
+      await preview
+        .getByRole("button", { name: "Oyuna Başla", exact: true })
+        .count(),
+      0,
+    );
+    await preview.getByRole("button", { name: "Anladım", exact: true }).click();
     assert.equal(
       await page
         .getByText(
-          "Kaynak ve yaş uygunluğu incelenmiş en az 100 bağımsız kolay soru henüz hazır değil. İnceleme tamamlanınca açılacak.",
+          "Kaynak ve yaş uygunluğu incelemesi tamamlanınca açılacak.",
           { exact: true },
         )
         .count(),

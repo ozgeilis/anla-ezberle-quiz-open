@@ -1,16 +1,13 @@
-import React from "react";
+import { LinearGradient } from "expo-linear-gradient";
+import React, { useState } from "react";
 import {
   childrenCategory,
   type PlayCategoryId,
 } from "../../domain/game/play-categories";
-import { View, useWindowDimensions } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
-import { Icon, Tap, Txt, s } from "../../components/ui";
-import {
-  TopicArtwork,
-  type TopicArtworkId,
-} from "../../components/game/TopicArtwork";
-import { Difficulty, difficultyName } from "../../content/questions";
+import { Image, StyleSheet, View, useWindowDimensions } from "react-native";
+import { CategoryArtwork, type CategoryArtworkId } from "./CategoryArtwork";
+import { Button, Dialog, Icon, Tap, Txt, s } from "../../components/ui";
+import { Difficulty } from "../../content/questions";
 import type { LearningTopicId } from "../../content/questions/learning-topics-v1";
 import { colors as c, radius, shadows, useTheme } from "../../theme/tokens";
 import { topicVisuals, specialTimes } from "./category-visuals";
@@ -25,178 +22,123 @@ function PaintedCategory({
   selected = false,
   disabled = false,
   onPress,
-  wide = false,
   upcoming = false,
   statusLabel,
 }: {
   title: string;
   subtitle: string;
-  illustration: TopicArtworkId;
+  illustration: CategoryArtworkId;
   colors: readonly [string, string, string];
   footer: string;
   selected?: boolean;
   disabled?: boolean;
   onPress: () => void;
-  wide?: boolean;
   upcoming?: boolean;
   statusLabel?: string;
 }) {
   const theme = useTheme();
-  const compact = useWindowDimensions().width < 360;
+  const { width, fontScale } = useWindowDimensions();
+  const [details, setDetails] = useState(false);
+  const status = statusLabel ?? (upcoming ? "Yakında" : "Seviye kapalı");
   return (
-    <Tap
-      fill
-      role={disabled ? "button" : "radio"}
-      label={`${title}. ${subtitle}. ${footer}${selected ? ". Seçili" : ""}`}
-      selected={selected}
-      disabled={disabled}
-      onPress={onPress}
-      style={{
-        borderRadius: radius.md,
-        overflow: "hidden",
-        opacity: 1, // Preserve bright artwork for the locked seasonal preview cards.
-        borderWidth: 3,
-        borderColor: selected ? c.mustard : theme.dark ? "#385C68" : "#FFFFFF",
-        boxShadow: selected ? shadows.categorySelected : shadows.card,
-      }}
-    >
-      <LinearGradient
-        colors={colors}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
+    <>
+      <Tap
+        fill
+        role={disabled ? "button" : "radio"}
+        label={`${title}. ${subtitle}. ${footer}${disabled ? `. ${status}. Bilgi için aç` : selected ? ". Seçili" : ""}`}
+        selected={selected}
+        onPress={() => (disabled ? setDetails(true) : onPress())}
         style={{
-          minHeight: wide ? 184 : 232,
-          flex: 1,
-          padding: compact ? 12 : 12,
-          justifyContent: "space-between",
-          gap: 10,
+          borderRadius: 22,
+          overflow: "hidden",
+          borderWidth: 2,
+          borderColor: selected ? c.mustard : theme.goldBorder,
+          boxShadow: selected ? shadows.categorySelected : shadows.card,
         }}
       >
-        {upcoming && (
-          <LinearGradient
-            pointerEvents="none"
-            colors={["rgba(0,72,78,0.24)", "rgba(0,72,78,0.84)"]}
-            style={{ position: "absolute", inset: 0 }}
-          />
-        )}
-        <View
-          pointerEvents="none"
-          style={{
-            width: 110,
-            height: 110,
-            borderRadius: 55,
-            backgroundColor: "rgba(255,255,255,0.05)",
-            position: "absolute",
-            top: -40,
-            right: -35,
-          }}
-        />
-        <View
-          style={{
-            minHeight: wide ? 80 : 84,
-            justifyContent: "center",
-            alignItems: wide ? "flex-start" : "center",
-          }}
+        <LinearGradient
+          colors={[colors[0], "#00595B", "#003D43"]}
+          style={{ flex: 1, padding: 8, paddingTop: 10, gap: 4 }}
         >
-          <TopicArtwork
-            id={illustration}
-            size={wide ? 92 : compact ? 76 : 82}
+          <Image
+            source={require("../../../assets/images/reference-ui/mosque-garden.webp")}
+            resizeMode="cover"
+            style={[
+              StyleSheet.absoluteFill,
+              { width: "100%", height: "100%", opacity: 0.08 },
+            ]}
           />
-          <View style={{ position: "absolute", top: -3, right: -3 }}>
-            {selected ? (
+          <CategoryArtwork id={illustration} />
+          <Txt
+            testID={`category-title-${illustration}`}
+            size={width < 360 ? 13 : 14}
+            weight="heavy"
+            color={c.white}
+            style={{
+              minHeight: fontScale > 1.3 ? undefined : 44,
+              textShadowColor: "#002D35",
+              textShadowRadius: 3,
+              textShadowOffset: { width: 0, height: 1 },
+            }}
+          >
+            {title}
+          </Txt>
+          <View style={{ position: "absolute", top: 8, right: 8 }}>
+            {disabled ? (
               <View
                 style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: 15,
-                  backgroundColor: c.gold,
-                  borderWidth: 2,
-                  borderColor: c.cream,
-                  alignItems: "center",
-                  justifyContent: "center",
+                  paddingHorizontal: 7,
+                  paddingVertical: 4,
+                  borderRadius: 14,
+                  backgroundColor: c.paleGold,
+                  borderWidth: 1,
+                  borderColor: c.gold,
                 }}
               >
-                <Icon name="check" size={21} color={c.deepTeal} />
-              </View>
-            ) : disabled ? (
-              <View
-                style={[
-                  s.row,
-                  {
-                    gap: 4,
-                    paddingHorizontal: 8,
-                    paddingVertical: 5,
-                    borderRadius: radius.pill,
-                    backgroundColor: upcoming
-                      ? c.paleGold
-                      : "rgba(0,22,40,0.74)",
-                    borderWidth: 1,
-                    borderColor: upcoming ? c.gold : "rgba(255,255,255,0.24)",
-                  },
-                ]}
-              >
-                <Icon
-                  name={upcoming ? "clock" : "info"}
-                  size={13}
-                  color={upcoming ? c.darkGold : c.white}
-                />
-                <Txt
-                  size={12}
-                  weight="heavy"
-                  color={upcoming ? c.darkGold : c.white}
-                >
-                  {statusLabel ?? (upcoming ? "Yakında" : "Seviye kapalı")}
+                <Txt size={10} weight="heavy" color={c.darkGold}>
+                  {status}
                 </Txt>
               </View>
             ) : (
-              <Icon name="circle" size={22} color={c.white} />
+              <View
+                style={{
+                  width: 26,
+                  height: 26,
+                  borderRadius: 13,
+                  backgroundColor: selected ? c.gold : "rgba(0,48,56,.7)",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderWidth: 1,
+                  borderColor: selected ? c.gold : "#FFE09B88",
+                }}
+              >
+                <Icon
+                  name={selected ? "check" : "chevron-right"}
+                  color={selected ? c.deepTeal : c.white}
+                  size={17}
+                />
+              </View>
             )}
           </View>
-        </View>
-        <View
-          style={{ flex: 1, justifyContent: "flex-end", gap: 6, padding: 1 }}
-        >
-          <Txt size={16} weight="heavy" color={c.white}>
-            {title}
+        </LinearGradient>
+      </Tap>
+      <Dialog visible={details} title={title} onClose={() => setDetails(false)}>
+        <View style={{ gap: 14 }}>
+          <Txt weight="heavy" color={theme.accent}>
+            {status}
           </Txt>
-          <Txt size={12} color={c.white}>
-            {subtitle}
+          <Txt>{subtitle}</Txt>
+          <Txt color={theme.muted}>
+            {upcoming
+              ? illustration === "children"
+                ? "Kaynak, içerik ve yaş uygunluğu incelemesi tamamlanmadan bu kategori oyuna açılmayacak."
+                : "İçerik incelemesi tamamlandığında bu koleksiyon oyuna açılacak. Şimdilik yalnızca ön izleme sunuluyor."
+              : "Bu seçim için yeterli bağımsız soru yok. Başka bir zorluk veya kategori seçebilirsin."}
           </Txt>
+          <Button title="Anladım" onPress={() => setDetails(false)} />
         </View>
-        <View
-          style={{
-            alignSelf: "flex-start",
-            maxWidth: "100%",
-            backgroundColor: disabled
-              ? "rgba(0,22,40,0.54)"
-              : selected
-                ? c.gold
-                : c.cream,
-            borderWidth: 1,
-            borderColor: disabled ? "rgba(255,255,255,0.2)" : c.paleGold,
-            paddingHorizontal: 11,
-            paddingVertical: 5,
-            borderRadius: radius.pill,
-          }}
-        >
-          <View style={[s.row, { gap: 5 }]}>
-            <Icon
-              name={disabled ? "clock" : "bar-chart-2"}
-              size={13}
-              color={disabled ? c.white : c.navy}
-            />
-            <Txt
-              size={12}
-              weight="heavy"
-              color={disabled ? c.white : c.navy}
-              style={{ flexShrink: 1 }}
-            >
-              {footer}
-            </Txt>
-          </View>
-        </View>
-      </LinearGradient>
-    </Tap>
+      </Dialog>
+    </>
   );
 }
 
@@ -204,7 +146,6 @@ export function LearningChoices({
   topics,
   selected,
   selectedMixed,
-  difficulty,
   onSelect,
   onSelectMixed,
 }: {
@@ -216,22 +157,13 @@ export function LearningChoices({
   onSelectMixed: () => void;
 }) {
   const theme = useTheme();
-  const { width } = useWindowDimensions();
-  const narrow = width < 600;
-  const columns = width >= 900 ? "30%" : narrow ? "100%" : "46%";
+  const columns = useWindowDimensions().fontScale > 1.6 ? "100%" : "46%";
   return (
     <View
       accessibilityRole="radiogroup"
       accessibilityLabel="Kategori seçimi"
       style={{ gap: 12 }}
     >
-      {!!difficulty && (
-        <Txt size={12} color={theme.muted}>
-          {difficultyName[difficulty]} seviyesinde 10 bağımsız sorusu olan
-          kategoriler oynanabilir. Diğer seviyelerdeki soru sayılarını da
-          görebilirsin.
-        </Txt>
-      )}
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
         {topics.map((topic) => (
           <View
@@ -239,7 +171,6 @@ export function LearningChoices({
             style={{ flexBasis: columns, flexGrow: 1, minWidth: 0 }}
           >
             <PaintedCategory
-              wide={narrow}
               title={topic.title}
               subtitle={topic.subtitle}
               illustration={topic.artwork}
@@ -253,20 +184,24 @@ export function LearningChoices({
         ))}
       </View>
       <View style={{ gap: 8 }}>
-        <PaintedCategory
-          title={childrenCategory.title}
-          subtitle={childrenCategory.subtitle}
-          illustration="children"
-          colors={["#127F95", "#126B73", "#034D60"]}
-          footer="İçerik incelemesi sürüyor"
-          statusLabel="Hazırlanıyor"
-          disabled
-          upcoming
-          onPress={() => {}}
-          wide
-        />
-        <Txt size={13} color={theme.muted}>
-          {childrenCategory.reason}
+        <View style={{ flexDirection: "row", gap: 10 }}>
+          <View style={{ flex: 1 }}>
+            <PaintedCategory
+              title={childrenCategory.title}
+              subtitle={childrenCategory.subtitle}
+              illustration="children"
+              colors={["#127F95", "#126B73", "#034D60"]}
+              footer="İçerik incelemesi sürüyor"
+              statusLabel="Hazırlanıyor"
+              disabled
+              upcoming
+              onPress={() => {}}
+            />
+          </View>
+          {columns !== "100%" && <View style={{ flex: 1 }} />}
+        </View>
+        <Txt size={12} color={theme.muted}>
+          Kaynak ve yaş uygunluğu incelemesi tamamlanınca açılacak.
         </Txt>
       </View>
       <Tap
@@ -319,9 +254,7 @@ export function UpcomingLearning({
   collections: typeof upcomingCollections;
 }) {
   const theme = useTheme();
-  const { width } = useWindowDimensions();
-  const narrow = width < 360;
-  const columns = width >= 760 ? "30%" : narrow ? "100%" : "46%";
+  const columns = useWindowDimensions().fontScale > 1.6 ? "100%" : "46%";
   const others = collections.filter(
     (collection) => collection.id !== "ramazan",
   );
@@ -335,25 +268,8 @@ export function UpcomingLearning({
           Ramazan, bayramlar ve özel günler için tematik sorular burada olacak.
         </Txt>
         <View style={{ gap: 10 }}>
-          {specialTimes.map((season, index) =>
-            index === 0 ? (
-              <View key={season.id}>
-                <PaintedCategory
-                  title={season.title}
-                  subtitle={season.subtitle}
-                  illustration={season.id}
-                  colors={season.colors}
-                  footer="Yeni bir keşif yakında"
-                  disabled
-                  upcoming
-                  onPress={() => {}}
-                  wide
-                />
-              </View>
-            ) : null,
-          )}
           <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-            {specialTimes.slice(1).map((season) => (
+            {specialTimes.map((season) => (
               <View
                 key={season.id}
                 style={{ flexBasis: columns, flexGrow: 1, minWidth: 0 }}
@@ -392,7 +308,7 @@ export function UpcomingLearning({
                 <PaintedCategory
                   title={collection.title}
                   subtitle={collection.reason}
-                  illustration={art}
+                  illustration={collection.id}
                   colors={topicVisuals[art].colors}
                   footer="Yeni bir keşif yakında"
                   disabled

@@ -8,16 +8,13 @@ import {
   learningTopicPool,
   learningTopicName,
 } from "../../domain/game/learning";
-import { Tap, Button, Icon, Page, Txt, s } from "../../components/ui";
-import {
-  IconMedallion,
-  DifficultyTile,
-  IllustratedPanel,
-} from "../../components/ui/visuals";
+import { Tap, Button, Icon, Txt, s } from "../../components/ui";
+import { IconMedallion } from "../../components/ui/visuals";
 import React, { useDeferredValue, useMemo, useState } from "react";
-import { View, useWindowDimensions } from "react-native";
+import { ScrollView, View, useWindowDimensions } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
-import { TopicArtwork } from "../../components/game/TopicArtwork";
+import { ReferenceHero } from "../../components/game/ReferenceHero";
+import { CategoryDifficulty } from "./CategoryDifficulty";
 import {
   Difficulty,
   difficultyName,
@@ -56,6 +53,7 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
   const assessedSelection = useDeferredValue(selection);
   const assessing = selection !== assessedSelection;
   const [attempted, setAttempted] = useState(false);
+  const [footerHeight, setFooterHeight] = useState(110);
   const { start, startError, ready, session, data, storageError } = useGame();
   const topics = useMemo(
     () =>
@@ -112,37 +110,109 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
     (width < 600 &&
       (categoryTitle.length > 24 ||
         ("canReplay" in status && status.canReplay === true)));
-  const difficulties: {
-    id: Difficulty;
-    hint: string;
-    icon: "sun" | "trending-up" | "zap";
-  }[] = [
-    { id: "easy", hint: "İlk adım", icon: "sun" },
-    { id: "medium", hint: "Biraz keşif", icon: "trending-up" },
-    { id: "hard", hint: "Kendini sına", icon: "zap" },
+  const difficulties: { id: Difficulty }[] = [
+    { id: "easy" },
+    { id: "medium" },
+    { id: "hard" },
   ];
   return (
     <View style={{ flex: 1 }}>
-      <Page
-        title="Kategoriler"
-        right={<SettingsButton />}
-        subtitle="Bütün konular ve özel zamanlar tek yerde."
+      <ScrollView
+        testID="category-scroll"
+        style={{ flex: 1, backgroundColor: theme.background }}
+        contentContainerStyle={{
+          width: "100%",
+          maxWidth: 860,
+          alignSelf: "center",
+          paddingBottom: footerHeight + 24,
+        }}
+        keyboardShouldPersistTaps="handled"
       >
-        <View style={{ gap: 24 }}>
-          <IllustratedPanel
-            minHeight={120}
-            artwork={<TopicArtwork id="quran" size={compact ? 58 : 74} />}
+        <ReferenceHero>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: 8,
+              paddingVertical: 6,
+            }}
           >
-            <Txt size={11} weight="heavy" color={c.gold}>
-              SENİN TURUN, SENİN SEÇİMİN
+            <Tap
+              label="Ana sayfaya dön"
+              onPress={() => router.replace("/")}
+              style={{
+                width: 44,
+                height: 44,
+                borderRadius: 22,
+                backgroundColor: "#004748",
+                borderWidth: 1,
+                borderColor: c.gold,
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Icon name="chevron-left" color={c.white} size={24} />
+            </Tap>
+            <View
+              style={{
+                flex: 1,
+                paddingVertical: 10,
+                borderRadius: 22,
+                borderWidth: 1,
+                borderColor: c.gold,
+                backgroundColor: "rgba(0,71,72,.94)",
+              }}
+            >
+              <Txt
+                accessibilityRole="header"
+                size={compact ? 23 : 27}
+                color={c.white}
+                weight="heavy"
+                style={{ textAlign: "center" }}
+              >
+                Kategoriler
+              </Txt>
+            </View>
+            <SettingsButton />
+          </View>
+        </ReferenceHero>
+        <View
+          style={{
+            gap: 20,
+            padding: compact ? 12 : 16,
+            borderRadius: 28,
+            borderWidth: 1,
+            borderColor: theme.goldBorder,
+            backgroundColor: theme.card,
+            marginHorizontal: 8,
+            marginTop: -12,
+          }}
+        >
+          <View style={{ gap: 12 }}>
+            <Txt accessibilityRole="header" size={20} weight="heavy">
+              Oyun Kategorileri
             </Txt>
-            <Txt size={compact ? 21 : 23} weight="heavy" color={c.white}>
-              Hangi konudan başlayalım?
+            <Txt size={14} color={theme.muted}>
+              Resimli kategorileri keşfet, istersen Karma oyna.
             </Txt>
-            <Txt size={13} color={c.white}>
-              10 soru · Her doğruya 100 puan
-            </Txt>
-          </IllustratedPanel>
+            <LearningChoices
+              topics={topics}
+              selected={selection.playCategory}
+              selectedMixed={selection.category === "mixed"}
+              difficulty={selection.difficulty}
+              onSelect={(playCategory) =>
+                update({ playCategory, topic: undefined, category: undefined })
+              }
+              onSelectMixed={() =>
+                update({
+                  category: "mixed",
+                  topic: undefined,
+                  playCategory: undefined,
+                })
+              }
+            />
+          </View>
 
           <View
             accessibilityRole="radiogroup"
@@ -161,11 +231,16 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
               {difficulties.map((level) => {
                 const selected = selection.difficulty === level.id;
                 return (
-                  <View key={level.id} style={{ flexBasis: 88, flexGrow: 1 }}>
-                    <DifficultyTile
-                      title={difficultyName[level.id]}
-                      icon={level.icon}
-                      hint={level.hint}
+                  <View
+                    key={level.id}
+                    style={{
+                      flexBasis: fontScale > 1.4 ? "100%" : 0,
+                      flexGrow: 1,
+                      minWidth: 0,
+                    }}
+                  >
+                    <CategoryDifficulty
+                      level={level.id}
                       selected={selected}
                       onPress={() =>
                         update({ difficulty: level.id, stage: undefined })
@@ -251,38 +326,18 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
             </View>
           </View>
 
-          <View style={{ gap: 12 }}>
-            <Txt accessibilityRole="header" size={20} weight="heavy">
-              Oyun Kategorileri
-            </Txt>
-            <Txt size={14} color={theme.muted}>
-              Resimli kategorileri keşfet, istersen Karma oyna.
-            </Txt>
-            <LearningChoices
-              topics={topics}
-              selected={selection.playCategory}
-              selectedMixed={selection.category === "mixed"}
-              difficulty={selection.difficulty}
-              onSelect={(playCategory) =>
-                update({ playCategory, topic: undefined, category: undefined })
-              }
-              onSelectMixed={() =>
-                update({
-                  category: "mixed",
-                  topic: undefined,
-                  playCategory: undefined,
-                })
-              }
-            />
-          </View>
           <UpcomingLearning collections={upcomingCollections} />
         </View>
-      </Page>
+      </ScrollView>
       <View
+        testID="category-start-panel"
+        onLayout={(event) =>
+          setFooterHeight(Math.round(event.nativeEvent.layout.height))
+        }
         style={{
-          gap: 8,
+          gap: 6,
           paddingHorizontal: compact ? 16 : 24,
-          paddingVertical: 12,
+          paddingVertical: 8,
           backgroundColor: theme.dark ? "rgba(0,72,78,0.98)" : c.cream,
           boxShadow: shadows.dock,
           borderTopWidth: 1,
@@ -295,7 +350,7 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
           <View
             style={{
               flexDirection: stackedFooter ? "column" : "row",
-              gap: 12,
+              gap: 6,
               alignItems: stackedFooter ? "stretch" : "center",
             }}
           >
@@ -306,7 +361,7 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
                   color={theme.dark ? c.tealLight : c.teal}
                   size={20}
                 />
-                <Txt size={15} weight="heavy" style={{ flex: 1 }}>
+                <Txt size={13} weight="heavy" style={{ flex: 1 }}>
                   {categoryTitle} ·{" "}
                   {selection.stage
                     ? stageDefinition(selection.stage).title
@@ -315,13 +370,15 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
                       : "Zorluk seç"}
                 </Txt>
               </View>
-              <Txt
-                size={12}
-                accessibilityLiveRegion="polite"
-                color={theme.muted}
-              >
-                {status.message}
-              </Txt>
+              {!status.canStart && (
+                <Txt
+                  size={12}
+                  accessibilityLiveRegion="polite"
+                  color={theme.muted}
+                >
+                  {status.message}
+                </Txt>
+              )}
               {attempted && startError && (
                 <Txt
                   color={theme.dark ? c.softCoral : c.danger}
@@ -337,7 +394,7 @@ function PreparationScreen({ initial }: { initial: PreparationSelection }) {
               }}
             >
               <Button
-                style={{ minHeight: 54 }}
+                style={{ minHeight: 48 }}
                 title={assessing ? "Sorular hazırlanıyor…" : "Oyuna Başla"}
                 icon="play"
                 variant="mustard"

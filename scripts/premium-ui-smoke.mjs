@@ -105,7 +105,21 @@ try {
           });
           const season = page.getByRole("button", { name: /^Ramazan\./ });
           await season.scrollIntoViewIfNeeded();
-          assert.equal(await season.isDisabled(), true);
+          await season.click();
+          const preview = page.getByRole("dialog", {
+            name: "Ramazan",
+            exact: true,
+          });
+          await preview.waitFor();
+          assert.equal(
+            await preview
+              .getByRole("button", { name: "Oyuna Başla", exact: true })
+              .count(),
+            0,
+          );
+          await preview
+            .getByRole("button", { name: "Anladım", exact: true })
+            .click();
           await page.screenshot({
             path: join(output, `special-${width}-${theme}.jpg`),
             type: "jpeg",

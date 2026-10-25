@@ -1,3 +1,4 @@
+import { RoundResultBadge } from "../results/RoundResultBadge";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { duelAudioCues } from "../audio/events";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
@@ -10,7 +11,7 @@ import * as Linking from "expo-linking";
 import { randomUUID } from "expo-crypto";
 import { Redirect, router, useLocalSearchParams } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Avatar, Medal, Pattern } from "../../components/game/Artwork";
+import { Avatar, Pattern } from "../../components/game/Artwork";
 import {
   Button,
   Card,
@@ -872,7 +873,19 @@ function OnlineAccountScreen() {
                             gap: 12,
                           }}
                         >
-                          <Medal size={110} />
+                          {match.players
+                            .filter(
+                              (p) =>
+                                p.slot === match.slot &&
+                                typeof p.correct === "number",
+                            )
+                            .map((p) => (
+                              <RoundResultBadge
+                                key={match.id}
+                                correct={p.correct!}
+                                total={match.questions.length}
+                              />
+                            ))}
                           <Txt weight="heavy" size={28} color={c.gold}>
                             {match.result?.winner === "tie"
                               ? "Berabere!"

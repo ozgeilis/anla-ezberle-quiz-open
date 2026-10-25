@@ -233,7 +233,9 @@ try {
           if (i < 9)
             await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
-        await p.getByText("Tebrikler!", { exact: true }).waitFor();
+        await p
+          .getByRole("heading", { name: "Mükemmel!", exact: true })
+          .waitFor();
         await p.waitForTimeout(5500);
         const events = (await state(p)).starts.slice(marker),
           count = (d) =>
@@ -276,7 +278,9 @@ try {
           if (i < 9)
             await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
-        await p.getByText("Tebrikler!", { exact: true }).waitFor();
+        await p
+          .getByRole("heading", { name: "Harika!", exact: true })
+          .waitFor();
         await p.waitForTimeout(5500);
         s = await state(p);
         assert(

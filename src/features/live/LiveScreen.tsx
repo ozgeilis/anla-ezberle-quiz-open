@@ -24,6 +24,7 @@ import {
   s,
 } from "../../components/ui";
 import { Avatar, Cup, Medal, Pattern } from "../../components/game/Artwork";
+import { RoundResultBadge } from "../results/RoundResultBadge";
 import { Celebration } from "../../components/game/Celebration";
 import {
   colors as c,
@@ -980,11 +981,22 @@ function LiveController({
               </>
             ) : completed ? (
               <>
-                <Celebration enabled />
+                <Celebration
+                  enabled={
+                    typeof me?.correct === "number" &&
+                    me.correct / room.settings.count >= 0.8
+                  }
+                />
                 <Jewel>
                   <View style={{ alignItems: "center" }}>
-                    <Cup size={80} />
-                    <Txt color={c.gold} size={30} weight="heavy">
+                    {typeof me?.correct === "number" && (
+                      <RoundResultBadge
+                        key={room.id}
+                        correct={me.correct}
+                        total={room.settings.count}
+                      />
+                    )}
+                    <Txt color={c.gold} size={17} weight="heavy">
                       {me?.won
                         ? "Harika bir zafer!"
                         : me?.rank === 1

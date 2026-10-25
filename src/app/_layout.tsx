@@ -6,7 +6,7 @@ import { SocialIdentityProvider } from "../features/online/SocialIdentityProvide
 import { InboxProvider } from "../features/online/InboxProvider";
 import { InboxBanner } from "../features/online/InboxBanner";
 import { OnlineProvider } from "../features/online/OnlineProvider";
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Platform, View } from "react-native";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -23,6 +23,7 @@ import { StorageNotice } from "../components/ui";
 import { Pattern } from "../components/game/Artwork";
 
 import * as SplashScreen from "expo-splash-screen";
+import { StudioIntro } from "../branding/StudioIntro";
 import { BrandLoadingScreen } from "../branding/BrandLoadingScreen";
 
 if (Platform.OS !== "web")
@@ -72,12 +73,15 @@ function AppShell() {
   );
 }
 export default function RootLayout() {
+  const [introDone, setIntroDone] = useState(false);
+  const finishIntro = useCallback(() => setIntroDone(true), []);
   const [loaded, error] = useFonts({
     Manrope_400Regular,
     Manrope_500Medium,
     Manrope_700Bold,
     Manrope_800ExtraBold,
   });
+  if (!introDone) return <StudioIntro onDone={finishIntro} />;
   if (!loaded && !error) return <BrandLoadingScreen />;
   return (
     <SafeAreaProvider>

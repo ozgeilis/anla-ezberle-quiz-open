@@ -99,7 +99,7 @@ export async function referenceUiSmoke(browser, root) {
     });
     if (await reward.count()) await reward.click();
     await page
-      .getByRole("heading", { name: "Tebrikler!", exact: true })
+      .getByRole("heading", { name: "Harika!", exact: true })
       .scrollIntoViewIfNeeded();
     await shot("results");
     await page
