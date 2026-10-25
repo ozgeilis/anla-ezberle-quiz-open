@@ -1,6 +1,8 @@
-# Account deletion — production approval request
+# Account deletion — approved production plan
 
-## Exact changes to approve
+Owner approved this plan on 25 October 2026 before execution. For observed live results see [ACCOUNT-DELETION-READINESS.md](ACCOUNT-DELETION-READINESS.md). The following is the approved plan, retained as an audit record.
+
+## Exact approved changes
 
 Target **only** `mqyuihiobkomjfipxehj` (`anla-ezberle-quiz-dev`, Frankfurt).
 No Seoul, old GitHub repo, unrelated migration, seed or existing real-user
@@ -92,6 +94,4 @@ erased person's data, force-push history, DROP tables or reverse nullable fields
 with new production nulls. Leave compatible schema installed; investigate and fix
 forward. Other games continue through their existing endpoints.
 
-No production step above has been performed in this change. Owner approval must
-cover this exact migration, endpoint, synthetic hosted acceptance, focused main
-merge/Vercel publication and final capability activation before execution begins.
+Owner approval covered this exact migration, endpoint, three-account synthetic hosted acceptance, focused main merge/Vercel publication and final capability activation. Those steps were completed and their results are recorded in the readiness report. No real account was deleted for testing.
