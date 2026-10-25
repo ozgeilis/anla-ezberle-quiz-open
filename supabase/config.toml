@@ -88,3 +88,7 @@ port = 55437
 # Gateway legacy-JWT verification is replaced by Auth getUser(JWT) in the handler.
 # This does NOT make the handler public: every command requires a verified user.
 verify_jwt = false
+
+[functions.account-delete]
+# Auth getUser(JWT), verified identity and fresh same-actor password are mandatory.
+verify_jwt = false
