@@ -55,19 +55,19 @@ OS izni, sunucudaki tercih ve mevcut cihaz kaydı ayrı değerlendirilir.
 
 ## Gerçekleştirilen kontroller
 
-| Kontrol                               | Sonuç          | Kapsam                                                                      |
-| ------------------------------------- | -------------- | --------------------------------------------------------------------------- |
-| `pnpm check`                          | PASS: 309/309  | Soru bütünlüğü, TypeScript, lint; 299 mevcut + 10 yeni test                 |
-| İzole yerel PostgreSQL kabulü         | PASS: 23       | Gerçek SQL/RLS/RPC; sentetik hesap/oturum satırları; sonunda ROLLBACK       |
-| Ayarlar/hesap tarayıcı smoke          | PASS: 27 grup  | İzole sentetik HTTP fixture; gerçek Chrome ve uygulama bileşenleri          |
-| Açık/koyu responsive ekranlar         | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                                |
-| Android/iOS/web Expo export           | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                         |
-| Android/iOS prebuild                  | PASS           | Bildirim plugin'i, Android channel/izin ve iOS entitlement üretimi          |
-| Android Firebase/EAS kurulumu         | PASS           | Onaylı package için FCM V1 anahtarı atandı; yalnız preview file env         |
-| Gerçek Firebase dosyasıyla prebuild   | PASS           | İzole Android fixture; Google Services dosyası ve Gradle plugin'i           |
-| Gerçek Android token/teslim/tıklama   | DOĞRULANAMADI  | Yeni kabul APK'sı hazırlanıyor; fiziksel test bekleniyor                    |
-| Gerçek iOS token/teslim/tıklama       | DOĞRULANAMADI  | Ücretli Apple Developer üyeliği yok                                         |
-| Frankfurt kapalı test endpoint/kuyruk | PASS           | Yalnız onaylı migration + push-dispatch v1; genel kapalı, zamanlayıcı pasif |
+| Kontrol                               | Sonuç          | Kapsam                                                                                                     |
+| ------------------------------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
+| `pnpm check`                          | PASS: 309/309  | Soru bütünlüğü, TypeScript, lint; 299 mevcut + 10 yeni test                                                |
+| İzole yerel PostgreSQL kabulü         | PASS: 23       | Gerçek SQL/RLS/RPC; sentetik hesap/oturum satırları; sonunda ROLLBACK                                      |
+| Ayarlar/hesap tarayıcı smoke          | PASS: 27 grup  | İzole sentetik HTTP fixture; gerçek Chrome ve uygulama bileşenleri                                         |
+| Açık/koyu responsive ekranlar         | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                                                               |
+| Android/iOS/web Expo export           | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                                                        |
+| Android/iOS prebuild                  | PASS           | Bildirim plugin'i, Android channel/izin ve iOS entitlement üretimi                                         |
+| Android Firebase/EAS kurulumu         | PASS           | Onaylı package için FCM V1 anahtarı atandı; yalnız preview file env                                        |
+| Gerçek Firebase dosyasıyla prebuild   | PASS           | İzole Android fixture; Google Services dosyası ve Gradle plugin'i                                          |
+| Gerçek Android token/teslim/tıklama   | DOĞRULANAMADI  | Yeni APK başarıyla üretildi; fiziksel test bekleniyor                                                      |
+| Gerçek iOS token/teslim/tıklama       | DOĞRULANAMADI  | Ücretli Apple Developer üyeliği yok                                                                        |
+| Frankfurt kapalı test endpoint/kuyruk | PASS           | Yalnız onaylı migration + push-dispatch v1; genel kapalı, yalnız iki sentetik hesap; zamanlayıcı çalışıyor |
 
 SQL testi: RLS/izin sınırları, rollout kapalı durum, çok cihaz, hesap izolasyonu,
 alt tercihlerin korunması, gerçek olay trigger'ı, yinelenme, tercih tekrar kontrolü,
@@ -115,9 +115,10 @@ olarak işaretlenmedi.
 
 - `push-dispatch` ACTIVE v1. Eksik/yanlış dispatcher bearer 401, doğru bearer
   200 ve sıfır gönderim/receipt verdi. İki mevcut Edge Function değiştirilmedi.
-- `push_config.enabled=false`; henüz test hesabı allowlist'i veya cihaz tokenı
-  yok. Yeni `anla-push-dispatch-v1` dakika zamanlayıcısı **pasif**. Mevcut diğer
-  zamanlayıcı korunuyor. Cron komutunda düz metin anahtar yok; Vault kullanılıyor.
+- `push_config.enabled=false`; yalnız iki sentetik hesap allowlist'te, cihaz
+  tokenı henüz yok. Yeni `anla-push-dispatch-v1` dakika zamanlayıcısı kapalı test
+  kapsamında **etkin**. İlk üç gerçek çalışma HTTP 200, sıfır hata/gönderim verdi.
+  Mevcut diğer zamanlayıcı korunuyor. Cron komutunda düz metin anahtar yok; Vault kullanılıyor.
 - Expo Viewer robotu ve yalnız sunucu tarafında iki sır kullanıldı. Hesap çapında
   Enhanced push security kullanıcı onayıyla etkinleştirildi. Viewer tokenıyla
   gerçek Expo boş receipt isteği kabul edildi; bu, telefon teslim testi değildir.
@@ -128,11 +129,14 @@ olarak işaretlenmedi.
 - İki yeni sentetik hesapla **10 hosted Auth/RPC kontrolü** geçti: gerçek oturum,
   anonim/worker reddi, tercihler/hesap izolasyonu, kapalı rollout ve iptal edilmiş
   oturumun reddi. İkinci hesap mevcut canlı hesap-silme akışında kendi parolasıyla
-  silindi; Auth yokluğu ve yeniden girişin reddi doğrulandı. Üçüncü hesap açılmadı.
-  Gerçek hesap silinmedi. İlk test hesabı fiziksel kabul için korunuyor.
+  silindi; Auth yokluğu ve yeniden girişin reddi doğrulandı. Kullanıcı daha sonra yalnız bir yeni geçici karşı hesabı ayrıca onayladı;
+  silinen hesabın yerine bu hesap oluşturuldu. İki etkin sentetik hesabın gerçek
+  oturumla kapalı rollout erişimi ve alt tercihleri tekrar doğrulandı. Gerçek
+  hesap silinmedi. Bu hesaplar fiziksel kabul için korunuyor.
 - Migration öncesi 29 mevcut tablonun yalnız toplu satır sayısı/içerik özeti
   alındı; migration sonrasında tamamı aynıydı. Kullanıcı/cevap satırı dışarı
-  aktarılmadı. Son testler sonrası karşılaştırma ayrıca saklanır.
+  aktarılmadı. Son testler ve iki yeni sentetik profil hazırlandıktan sonra yalnız bu yeni
+  profiller dışlanarak 29 tablonun özeti yeniden aynı bulundu.
 
 ### pg_net platform sınırı
 
@@ -145,8 +149,9 @@ Bununla birlikte doğrudan DB bağlantısı kurabilen güvenilen platform/DB rol
 bekleyen HTTP başlıklarını okuyabilir. Vault bu geçici başlığı gizlemez.
 Yalnız sınırlı dispatcher bearer kullanılır; Expo tokenı kuyrukta yer almaz.
 `net` hiçbir zaman API'ye açılmamalı; yeni doğrudan DB LOGIN rolleri güvenlik
-incelemesi gerektirir. Bu platform sınırı nedeniyle pasif zamanlayıcıya güvenlik
-kapısı kondu; gerçek cihaz kabulü öncesinde etkin gönderim iddia edilmez.
+incelemesi gerektirir. Bu platform sınırı API/NOLOGIN denetimleriyle değerlendirildi. Zamanlayıcı
+yalnız iki test hesabı için çalışır; kayıtlı cihaz olmadığından gerçek telefon
+gönderimi veya teslimi henüz iddia edilmez.
 Kaynaklar: [Supabase pg_net izinleri](https://supabase.com/docs/guides/database/extensions/pg_net),
 [REVOKE sınırı](https://supabase.com/kb/troubleshooting/revoking-access-to-pg_net-objects-has-no-effect),
 [HTTP başlıkları](https://supabase.com/kb/troubleshooting/database-roles-can-read-request-headers-queued-by-pg_net).
@@ -229,3 +234,53 @@ Resmî kaynaklar:
 [FCM V1](https://docs.expo.dev/push-notifications/fcm-credentials/),
 [ticket/receipt ve teslim sınırları](https://docs.expo.dev/push-notifications/sending-notifications/),
 [Supabase sunucu sırları](https://supabase.com/docs/guides/functions/secrets).
+
+## Ayrı Android kabul adayı
+
+`integration/settings-push-preview-20261026` dalındaki `31928a4` merge commit'i,
+kullanıcının cihazda kabul ettiği PR #2/#3/#6 yığınını odaklı bu çalışmayla
+birleştirir. Main ve PR #6 değiştirilmedi. Kabul edilmiş Home, alt navigasyon,
+assets, içerik ve oyun alanlarında bu yığına göre diff sıfır. Bu adayda frozen
+install, `pnpm check` **319/319**, 27 ayarlar tarayıcı grubu, 7 gerçek Chrome ses
+grubu, web/Android/iOS export ve native ses izin kontrolü geçti. Yerel ses
+runner'ında yalnız tarayıcı başlatıcısı mevcut Chrome'a yönlendirildi; test
+assertion'ları değiştirilmedi. 159 web/Android çıktı dosyasında mevcut beş özel
+kimlik bilgisiyle birebir eşleşme yoktu.
+
+Preview APK EAS build kimliği `dc4dd4cc-453a-4440-8d79-ce966ff4a75a`.
+EAS **FINISHED** (26 Ekim 15:50:49 UTC). APK indirildi; `apksigner verify`
+geçti, önceki kabul APK'sıyla imza aynı. Package
+`com.kovynelstudio.anlaezberle`, target SDK **36**. Expo Notifications/FCM
+servisleri ve POST_NOTIFICATIONS izni mevcut; mikrofon izni yok. 1.717 APK
+girdisinde bilinen özel sunucu/FCM anahtarı eşleşmesi yok. İki mevcut cami/madalya
+assetinin özgün dosya özeti APK içinde eşleşti. APK SHA-256:
+`5eae29c74f7fbbf1b6b37c6456cd301025693f2a7b539f0d0b03866d4ff3a7b9`.
+Kurulum: https://expo.dev/accounts/ozgeilis/projects/anla-ezberle-quiz/builds/dc4dd4cc-453a-4440-8d79-ce966ff4a75a
+
+Bu, telefon izni/token kaydı/gerçek teslim kanıtı değildir. Samsung A04 /
+Android 14 cihaz kabulü bekleniyor; token veya parola rapora yazılmayacak.
+
+## Fiziksel Android kabulü — kullanıcı doğrulaması, 26 Ekim
+
+Samsung A04 / Android 14, APK commit `31928a4`:
+
+- Gerçek cihazdan Expo token kaydı sunucuda bir aktif cihaz olarak doğrulandı;
+  token değeri dışarı aktarılmadı. Ana ve dört alt tercih açık kaydedildi.
+- Karşı sentetik hesabın mevcut Edge API üzerinden gönderdiği gerçek arkadaşlık
+  isteği arka plandaki telefona geldi; bildirime dokununca doğru istek ayrıntısı
+  açıldı. Kullanıcı cihazda doğruladı; sunucu Inbox okundu kaydını doğruladı.
+- Kullanıcı arkadaşlığı kabul edip uygulamayı son uygulamalardan kapattı.
+  Gerçek oyun daveti bildirimi geldi ve soğuk açılışta ilgili davet ayrıntısı
+  açıldı. Kullanıcı cihazda doğruladı; sunucuda okundu durumu mevcut.
+- Kullanıcı daveti kabul edince maç ekranı ve “Oyuna Başla” düğmesini gördü.
+  Salt okunur sunucu kontrolü davetin kabul edildiğini ve maç oluşturulduğunu
+  doğruladı. Bu, maçın oynanıp tamamlandığı anlamına gelmez.
+- İki gönderim için Expo ticket alındı ve gönderim hatası yoktu. Ticket tek
+  başına teslim kanıtı sayılmadı; teslim kanıtı yukarıdaki kullanıcı cihaz
+  doğrulamasıdır. Receipt durumu ayrıca izlenir.
+
+Telefon artık kullanıcının yanında olmadığı için isteği üzerine fiziksel
+testlere ara verildi. Yeni davet/olay gönderilmeyecek. Kapatılan alt tercih, ana
+anahtar kapama/yeniden açma, maç sonucu/oda bildirimi, OS izin iptali, çıkış ve
+fiziksel hesap silme kabulü hâlâ bekliyor; yapılmış sayılmaz. Genel push kapalı
+ve yalnız iki sentetik hesap test listesinde; main/Production değişmedi.
