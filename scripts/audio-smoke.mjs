@@ -361,16 +361,27 @@ try {
   );
   console.log(checks.length + " " + kind + " audio/browser groups passed.");
 } catch (e) {
+  // Preserve the original failure even when a crashed browser cannot produce diagnostics.
+  await writeFile(
+    join(root, "failure.txt"),
+    String(e) + "\n" + (e.stack ?? ""),
+  );
   if (last && !last.isClosed()) {
-    await last.screenshot({ path: join(root, "failure.png") });
-    await writeFile(
-      join(root, "failure-probe.json"),
-      JSON.stringify(await state(last), null, 2),
-    );
-    await writeFile(
-      join(root, "failure.txt"),
-      String(e) + "\n" + (await last.locator("body").innerText()),
-    );
+    try {
+      await last.screenshot({ path: join(root, "failure.png") });
+      await writeFile(
+        join(root, "failure-probe.json"),
+        JSON.stringify(await state(last), null, 2),
+      );
+      await writeFile(
+        join(root, "failure-dom.txt"),
+        await last.locator("body").innerText(),
+      );
+    } catch {
+      console.error(
+        "Browser diagnostics unavailable; original test failure retained.",
+      );
+    }
   }
   throw e;
 } finally {
