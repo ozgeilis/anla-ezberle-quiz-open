@@ -92,3 +92,7 @@ verify_jwt = false
 [functions.account-delete]
 # Auth getUser(JWT), verified identity and fresh same-actor password are mandatory.
 verify_jwt = false
+
+# Only a server scheduler may call this worker; it validates its private secret.
+[functions.push-dispatch]
+verify_jwt = false

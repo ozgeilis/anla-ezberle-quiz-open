@@ -1,3 +1,4 @@
+import { PushProvider } from "../features/notifications/PushProvider";
 import { SoundProvider } from "../features/audio/SoundProvider";
 import { GameAudioEvents } from "../features/audio/GameAudioEvents";
 import { AchievementProvider } from "../features/achievements/AchievementProvider";
@@ -84,16 +85,18 @@ export default function RootLayout() {
       <GameProvider>
         <SoundProvider>
           <OnlineProvider>
-            <InboxProvider>
-              <SocialIdentityProvider>
-                <AchievementProvider>
-                  <DuelProvider>
-                    <GameAudioEvents />
-                    <AppShell />
-                  </DuelProvider>
-                </AchievementProvider>
-              </SocialIdentityProvider>
-            </InboxProvider>
+            <PushProvider>
+              <InboxProvider>
+                <SocialIdentityProvider>
+                  <AchievementProvider>
+                    <DuelProvider>
+                      <GameAudioEvents />
+                      <AppShell />
+                    </DuelProvider>
+                  </AchievementProvider>
+                </SocialIdentityProvider>
+              </InboxProvider>
+            </PushProvider>
           </OnlineProvider>
         </SoundProvider>
       </GameProvider>

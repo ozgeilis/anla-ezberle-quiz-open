@@ -48,11 +48,32 @@ export default function PrivacyScreen() {
           erişim kayıtları güvenlik, hata inceleme ve hizmet sunumu amacıyla bu
           sağlayıcılar tarafından işlenebilir. Kullanıcı verilerini satmayız.
         </Txt>
+        <Txt weight="heavy">Telefon bildirimleri</Txt>
+        <Txt>
+          Gerçek push gönderimi bu sürümün hazırlık aşamasındadır; FCM/APNs ve
+          fiziksel cihaz kabulü tamamlanmadan etkinleştirilmez.
+          Etkinleştirildiğinde yalnız isteğin ve telefon izninle cihaz bildirim
+          tokenı, bağlı oturum kimliği, platform ve hesap bazlı bildirim
+          tercihleri saklanır. Gönderim için token ve genel olay mesajı Expo
+          Push Service üzerinden Google FCM veya Apple APNs ile işlenir;
+          e-posta, parola ve soru cevapları push mesajına eklenmez. Bu
+          sağlayıcıların kendi kayıt saklama süreleri ayrıca incelenmelidir. Ana
+          anahtarı kapatmak alt tercihlerini silmez; sistem izni ayrıca telefon
+          ayarlarından yönetilir.
+        </Txt>
+        <Txt>
+          Hesaptan çıkışta bu cihazın push kaydı kapatılır; hesap silmede bağlı
+          tokenlar ve tercihler sunucudan kaldırılır. Etkin gönderici bakımı, 90
+          gündür görülmeyen veya oturumu geçersiz cihaz kayıtlarını ve 7 günü
+          aşan push işlem kayıtlarını temizler. Gönderilmiş bir telefon
+          bildirimi uzaktan geri çağrılamaz. Yalnız sağlayıcı alındısı gerçek
+          cihaz teslimi garantisi değildir.
+        </Txt>
         <Txt weight="heavy">Hesabını silmek</Txt>
         <Txt>
-          Profil → Ayarlar → Hesabımı Sil yolunu veya aşağıdaki web sayfasını
-          kullanabilirsin. Uygulamayı yeniden yüklemek gerekmez. İki onay ve
-          güncel hesap parolası istenir. Otomatik silme e-posta/parola
+          Profil → Ayarlar → Hesap → Hesabımı Sil yolunu veya aşağıdaki web
+          sayfasını kullanabilirsin. Uygulamayı yeniden yüklemek gerekmez. İki
+          onay ve güncel hesap parolası istenir. Otomatik silme e-posta/parola
           hesaplarını destekler; ek kimlik doğrulaması gereken hesaplarda destek
           üzerinden sahiplik doğrulaması gerekir. Servis durumu ve işlem sonucu
           silme sayfasında gösterilir. Destek talebi göndermek hesabın hemen

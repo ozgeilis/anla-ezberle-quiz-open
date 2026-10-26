@@ -28,12 +28,88 @@ import { progress } from "../../domain/scoring/progress";
 
 export type PersonalizationKind = "avatar" | "appearance";
 
-function ThemePreview({ dark }: { dark: boolean }) {
+function ThemePreview({
+  dark,
+  compact = false,
+}: {
+  dark: boolean;
+  compact?: boolean;
+}) {
   const palette = themePalette(dark);
   const { data } = useGame();
   const { displayName } = usePlayerIdentity();
   const p = progress(data.games);
   const caption = { fontFamily: fonts.bold, fontSize: 10, color: palette.text };
+  if (compact)
+    return (
+      <View
+        accessible={false}
+        aria-hidden
+        importantForAccessibility="no-hide-descendants"
+        style={{
+          width: 92,
+          height: 96,
+          borderRadius: 12,
+          padding: 7,
+          gap: 5,
+          backgroundColor: palette.background,
+          borderWidth: 1,
+          borderColor: palette.border,
+          overflow: "hidden",
+        }}
+      >
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 4 }}>
+          <Avatar variant={data.profile.avatar} size={17} />
+          <View style={{ flex: 1 }}>
+            <Text numberOfLines={1} style={{ ...caption, fontSize: 7 }}>
+              {displayName}
+            </Text>
+            <Text style={{ ...caption, fontSize: 6, color: palette.accent }}>
+              Seviye {p.level}
+            </Text>
+          </View>
+        </View>
+        <View
+          style={{
+            height: 44,
+            borderRadius: 7,
+            overflow: "hidden",
+            backgroundColor: palette.accent,
+            justifyContent: "flex-end",
+            padding: 4,
+          }}
+        >
+          <View pointerEvents="none" style={{ position: "absolute", inset: 0 }}>
+            <Scene />
+          </View>
+          <Text
+            numberOfLines={1}
+            style={{
+              fontFamily: fonts.heavy,
+              fontSize: 8,
+              color: c.white,
+              textShadowColor: c.deepTeal,
+              textShadowRadius: 2,
+            }}
+          >
+            Anla & Ezberle
+          </Text>
+        </View>
+        <View
+          style={{
+            height: 10,
+            borderRadius: 4,
+            backgroundColor: c.gold,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Text style={{ fontFamily: fonts.bold, fontSize: 5, color: c.navy }}>
+            Oyuna Başla
+          </Text>
+        </View>
+      </View>
+    );
   return (
     <View
       accessible={false}
@@ -146,9 +222,11 @@ function ThemePreview({ dark }: { dark: boolean }) {
 export function PersonalizationDialog({
   kind,
   onClose,
+  presentation = "modal",
 }: {
   kind: PersonalizationKind;
   onClose: () => void;
+  presentation?: "modal" | "screen";
 }) {
   const { data, updateProfile } = useGame();
   const theme = useTheme();
@@ -188,24 +266,20 @@ export function PersonalizationDialog({
       setBusy(false);
     }
   };
-  return (
-    <Modal
-      visible
-      transparent
-      animationType="none"
-      onRequestClose={close}
-      statusBarTranslucent
+  const content = (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor:
+          presentation === "screen" ? theme.background : "rgba(1,24,30,0.78)",
+        justifyContent: "center",
+        paddingHorizontal: dimensions.width < 360 ? 10 : 18,
+        paddingTop: presentation === "screen" ? 12 : Math.max(12, insets.top),
+        paddingBottom:
+          presentation === "screen" ? 12 : Math.max(12, insets.bottom),
+      }}
     >
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: "rgba(1,24,30,0.78)",
-          justifyContent: "center",
-          paddingHorizontal: dimensions.width < 360 ? 10 : 18,
-          paddingTop: Math.max(12, insets.top),
-          paddingBottom: Math.max(12, insets.bottom),
-        }}
-      >
+      {presentation === "modal" && (
         <Pressable
           accessibilityLabel="Pencereyi kapat"
           accessibilityRole="button"
@@ -213,26 +287,57 @@ export function PersonalizationDialog({
           disabled={busy}
           style={{ position: "absolute", inset: 0 }}
         />
-        <View
-          accessibilityViewIsModal
-          role="dialog"
-          aria-modal
-          accessibilityLabel={
-            kind === "avatar" ? "Avatar seçimi" : "Görünüm ayarları"
-          }
-          style={{
-            width: "100%",
-            maxWidth: 760,
-            maxHeight: "100%",
-            alignSelf: "center",
-            backgroundColor: theme.background,
-            borderRadius: 28,
-            borderWidth: 1,
-            borderColor: theme.goldBorder,
-            overflow: "hidden",
-            boxShadow: shadows.button,
-          }}
-        >
+      )}
+      <View
+        accessibilityViewIsModal={presentation === "modal"}
+        role={presentation === "modal" ? "dialog" : undefined}
+        aria-modal={presentation === "modal" || undefined}
+        accessibilityLabel={
+          kind === "avatar" ? "Avatar seçimi" : "Görünüm ayarları"
+        }
+        style={{
+          width: "100%",
+          maxWidth: 760,
+          maxHeight: "100%",
+          alignSelf: "center",
+          backgroundColor: theme.background,
+          borderRadius: 28,
+          borderWidth: 1,
+          borderColor: theme.goldBorder,
+          overflow: "hidden",
+          boxShadow: shadows.button,
+        }}
+      >
+        {presentation === "screen" ? (
+          <View
+            style={{
+              padding: 14,
+              flexDirection: "row",
+              gap: 10,
+              alignItems: "center",
+              backgroundColor: theme.mintSurface,
+            }}
+          >
+            <Tap
+              label="Geri dön"
+              disabled={busy}
+              onPress={close}
+              style={{
+                width: 44,
+                minHeight: 44,
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: theme.card,
+                borderRadius: 14,
+              }}
+            >
+              <Icon name="chevron-left" color={theme.accent} />
+            </Tap>
+            <Txt accessibilityRole="header" size={23} weight="heavy">
+              Tema
+            </Txt>
+          </View>
+        ) : (
           <LinearGradient
             colors={gradients.hero}
             style={{ padding: 18, gap: 8 }}
@@ -284,301 +389,384 @@ export function PersonalizationDialog({
                 : "Önce keşfet. Beğendiğinde kaydet."}
             </Txt>
           </LinearGradient>
-          <ScrollView
-            contentContainerStyle={{ padding: 16, gap: 16 }}
-            keyboardShouldPersistTaps="handled"
+        )}
+        <ScrollView
+          contentContainerStyle={{ padding: 16, gap: 16 }}
+          keyboardShouldPersistTaps="handled"
+        >
+          <View
+            style={{
+              padding: 12,
+              borderRadius: 14,
+              backgroundColor: theme.mintSurface,
+              borderWidth: 1,
+              borderColor: theme.border,
+              flexDirection: "row",
+              gap: 9,
+              alignItems: "center",
+            }}
           >
-            <View
-              style={{
-                padding: 12,
-                borderRadius: 14,
-                backgroundColor: theme.mintSurface,
-                borderWidth: 1,
-                borderColor: theme.border,
-                flexDirection: "row",
-                gap: 9,
-                alignItems: "center",
-              }}
-            >
-              <Icon name="eye" size={19} color={theme.accent} />
-              <Txt size={12} color={theme.accent} style={{ flex: 1 }}>
-                Bu bir ön izleme. Tercihin yalnızca Kaydet ile uygulanır.
-              </Txt>
-            </View>
-            {kind === "avatar" ? (
-              <>
-                <LinearGradient
-                  colors={gradients.hero}
-                  style={{
-                    padding: 16,
-                    borderRadius: 21,
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: 14,
-                  }}
-                >
-                  <View
-                    style={{
-                      padding: 4,
-                      borderRadius: 50,
-                      borderWidth: 2,
-                      borderColor: c.gold,
-                      backgroundColor: "rgba(255,255,255,.12)",
-                    }}
-                  >
-                    <Avatar variant={draft.avatar} size={76} />
-                  </View>
-                  <View style={{ flex: 1, gap: 3 }}>
-                    <Txt size={10} color={c.tealLight} weight="bold">
-                      SEÇTİĞİN KARAKTER
-                    </Txt>
-                    <Txt size={18} color={c.white} weight="heavy">
-                      {avatarName(draft.avatar)}
-                    </Txt>
-                    <Txt size={12} color={c.gold}>
-                      Seçim tamamen senin.
-                    </Txt>
-                  </View>
-                </LinearGradient>
+            <Icon name="eye" size={19} color={theme.accent} />
+            <Txt size={12} color={theme.accent} style={{ flex: 1 }}>
+              Bu bir ön izleme. Tercihin yalnızca Kaydet ile uygulanır.
+            </Txt>
+          </View>
+          {kind === "avatar" ? (
+            <>
+              <LinearGradient
+                colors={gradients.hero}
+                style={{
+                  padding: 16,
+                  borderRadius: 21,
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 14,
+                }}
+              >
                 <View
-                  accessibilityRole="radiogroup"
-                  accessibilityLabel="Avatar seçimi"
                   style={{
-                    flexDirection: "row",
-                    flexWrap: "wrap",
-                    gap: 10,
-                    justifyContent: "center",
+                    padding: 4,
+                    borderRadius: 50,
+                    borderWidth: 2,
+                    borderColor: c.gold,
+                    backgroundColor: "rgba(255,255,255,.12)",
                   }}
                 >
-                  {avatarCatalog.map((avatar) => {
-                    const selected = draft.avatar === avatar.id;
+                  <Avatar variant={draft.avatar} size={76} />
+                </View>
+                <View style={{ flex: 1, gap: 3 }}>
+                  <Txt size={10} color={c.tealLight} weight="bold">
+                    SEÇTİĞİN KARAKTER
+                  </Txt>
+                  <Txt size={18} color={c.white} weight="heavy">
+                    {avatarName(draft.avatar)}
+                  </Txt>
+                  <Txt size={12} color={c.gold}>
+                    Seçim tamamen senin.
+                  </Txt>
+                </View>
+              </LinearGradient>
+              <View
+                accessibilityRole="radiogroup"
+                accessibilityLabel="Avatar seçimi"
+                style={{
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                  gap: 10,
+                  justifyContent: "center",
+                }}
+              >
+                {avatarCatalog.map((avatar) => {
+                  const selected = draft.avatar === avatar.id;
+                  return (
+                    <Tap
+                      key={avatar.id}
+                      role="radio"
+                      label={avatar.name}
+                      selected={selected}
+                      disabled={busy}
+                      onPress={() => {
+                        setDraft({ ...draft, avatar: avatar.id });
+                        setError("");
+                      }}
+                      style={{
+                        width: wide ? 102 : 78,
+                        height: wide ? 102 : 78,
+                        borderRadius: 20,
+                        padding: 6,
+                        alignItems: "center",
+                        justifyContent: "center",
+                        backgroundColor: selected
+                          ? theme.goldSurface
+                          : theme.card,
+                        borderColor: selected ? theme.goldBorder : theme.border,
+                        borderWidth: 2,
+                        boxShadow: selected ? shadows.selected : shadows.card,
+                      }}
+                    >
+                      <Avatar variant={avatar.id} size={wide ? 74 : 62} />
+                      {selected && (
+                        <View
+                          style={{
+                            position: "absolute",
+                            top: 3,
+                            right: 3,
+                            backgroundColor: c.gold,
+                            borderRadius: 12,
+                            padding: 3,
+                          }}
+                        >
+                          <Icon name="check" size={13} color={c.navy} />
+                        </View>
+                      )}
+                    </Tap>
+                  );
+                })}
+              </View>
+              <Txt size={12} color={theme.muted}>
+                Çevrimiçi arkadaşların da görsün istersen, kaydettikten sonra
+                Ayarlar’daki “Avatarını çevrimiçi eşitle” ile uygula.
+              </Txt>
+            </>
+          ) : (
+            <>
+              <View
+                accessibilityRole="radiogroup"
+                accessibilityLabel="Tema ön izlemesi"
+                style={{ gap: 14 }}
+              >
+                {presentation === "screen" ? (
+                  (["light", "dark", "system"] as const).map((value) => {
+                    const selected = draft.theme === value;
+                    const label =
+                      value === "light"
+                        ? "Açık Tema ön izlemesi"
+                        : value === "dark"
+                          ? "Koyu Tema ön izlemesi"
+                          : "Sistem temasını izle";
                     return (
                       <Tap
-                        key={avatar.id}
+                        key={value}
                         role="radio"
-                        label={avatar.name}
+                        label={label}
                         selected={selected}
                         disabled={busy}
                         onPress={() => {
-                          setDraft({ ...draft, avatar: avatar.id });
+                          setDraft({ ...draft, theme: value });
                           setError("");
                         }}
                         style={{
-                          width: wide ? 102 : 78,
-                          height: wide ? 102 : 78,
-                          borderRadius: 20,
-                          padding: 6,
-                          alignItems: "center",
-                          justifyContent: "center",
+                          minHeight: 112,
+                          padding: 10,
+                          borderRadius: 16,
+                          borderWidth: selected ? 2 : 1,
+                          borderColor: selected ? theme.accent : theme.border,
                           backgroundColor: selected
-                            ? theme.goldSurface
+                            ? theme.mintSurface
                             : theme.card,
-                          borderColor: selected
-                            ? theme.goldBorder
-                            : theme.border,
-                          borderWidth: 2,
-                          boxShadow: selected ? shadows.selected : shadows.card,
+                          flexDirection: "row",
+                          alignItems: "center",
+                          gap: 12,
                         }}
                       >
-                        <Avatar variant={avatar.id} size={wide ? 74 : 62} />
-                        {selected && (
-                          <View
-                            style={{
-                              position: "absolute",
-                              top: 3,
-                              right: 3,
-                              backgroundColor: c.gold,
-                              borderRadius: 12,
-                              padding: 3,
-                            }}
-                          >
-                            <Icon name="check" size={13} color={c.navy} />
-                          </View>
-                        )}
+                        <ThemePreview
+                          dark={
+                            value === "dark" ||
+                            (value === "system" && system === "dark")
+                          }
+                          compact
+                        />
+                        <View style={{ flex: 1, minWidth: 0, gap: 4 }}>
+                          <Txt weight="bold" size={15}>
+                            {value === "light"
+                              ? "Açık"
+                              : value === "dark"
+                                ? "Koyu"
+                                : "Sistem"}
+                          </Txt>
+                          <Txt size={12} color={theme.muted}>
+                            {value === "system"
+                              ? "Telefonun tema ayarını takip et"
+                              : value === "light"
+                                ? "Ferah krem ve zümrüt tonları"
+                                : "Derin teal ve sıcak altın detaylar"}
+                          </Txt>
+                        </View>
+                        <Icon
+                          size={18}
+                          name={selected ? "check-circle" : "circle"}
+                          color={selected ? theme.accent : theme.muted}
+                        />
                       </Tap>
                     );
-                  })}
-                </View>
-                <Txt size={12} color={theme.muted}>
-                  Çevrimiçi arkadaşların da görsün istersen, kaydettikten sonra
-                  Ayarlar’daki “Avatarını çevrimiçi eşitle” ile uygula.
-                </Txt>
-              </>
-            ) : (
-              <>
-                <View
-                  accessibilityRole="radiogroup"
-                  accessibilityLabel="Tema ön izlemesi"
-                  style={{ gap: 14 }}
-                >
-                  <View
-                    style={{ flexDirection: wide ? "row" : "column", gap: 14 }}
-                  >
-                    {(["light", "dark"] as const).map((value) => {
-                      const selected = draft.theme === value;
-                      return (
-                        <Tap
-                          key={value}
-                          fill={wide}
-                          role="radio"
-                          label={
-                            value === "light"
-                              ? "Açık Tema ön izlemesi"
-                              : "Koyu Tema ön izlemesi"
-                          }
-                          selected={selected}
-                          disabled={busy}
-                          onPress={() => {
-                            setDraft({ ...draft, theme: value });
-                            setError("");
-                          }}
-                          style={{
-                            padding: 10,
-                            gap: 10,
-                            borderRadius: 24,
-                            borderWidth: 2,
-                            borderColor: selected
-                              ? theme.goldBorder
-                              : theme.border,
-                            backgroundColor: selected
-                              ? theme.goldSurface
-                              : theme.card,
-                            boxShadow: selected
-                              ? shadows.selected
-                              : shadows.card,
-                          }}
-                        >
-                          <ThemePreview dark={value === "dark"} />
-                          <View
+                  })
+                ) : (
+                  <>
+                    <View
+                      style={{
+                        flexDirection: wide ? "row" : "column",
+                        gap: 14,
+                      }}
+                    >
+                      {(["light", "dark"] as const).map((value) => {
+                        const selected = draft.theme === value;
+                        return (
+                          <Tap
+                            key={value}
+                            fill={wide}
+                            role="radio"
+                            label={
+                              value === "light"
+                                ? "Açık Tema ön izlemesi"
+                                : "Koyu Tema ön izlemesi"
+                            }
+                            selected={selected}
+                            disabled={busy}
+                            onPress={() => {
+                              setDraft({ ...draft, theme: value });
+                              setError("");
+                            }}
                             style={{
-                              flexDirection: "row",
-                              alignItems: "center",
-                              gap: 8,
-                              padding: 3,
+                              padding: 10,
+                              gap: 10,
+                              borderRadius: 24,
+                              borderWidth: 2,
+                              borderColor: selected
+                                ? theme.goldBorder
+                                : theme.border,
+                              backgroundColor: selected
+                                ? theme.goldSurface
+                                : theme.card,
+                              boxShadow: selected
+                                ? shadows.selected
+                                : shadows.card,
                             }}
                           >
-                            <Icon
-                              name={value === "light" ? "sun" : "moon"}
-                              color={selected ? theme.goldInk : theme.accent}
-                            />
-                            <Txt
-                              size={16}
-                              weight="heavy"
-                              style={{ flex: 1 }}
-                              color={selected ? theme.goldInk : theme.text}
+                            <ThemePreview dark={value === "dark"} />
+                            <View
+                              style={{
+                                flexDirection: "row",
+                                alignItems: "center",
+                                gap: 8,
+                                padding: 3,
+                              }}
                             >
-                              {value === "light" ? "Açık Tema" : "Koyu Tema"}
-                            </Txt>
-                            <Icon
-                              name={selected ? "check-circle" : "circle"}
-                              size={21}
-                              color={selected ? theme.goldInk : theme.muted}
-                            />
-                          </View>
-                        </Tap>
-                      );
-                    })}
-                  </View>
-                  <Tap
-                    label="Sistem temasını izle"
-                    role="radio"
-                    selected={draft.theme === "system"}
-                    disabled={busy}
-                    onPress={() => {
-                      setDraft({ ...draft, theme: "system" });
-                      setError("");
-                    }}
-                    style={{
-                      borderRadius: 16,
-                      borderWidth: 1,
-                      borderColor:
-                        draft.theme === "system"
-                          ? theme.goldBorder
-                          : theme.border,
-                      padding: 12,
-                      gap: 5,
-                      backgroundColor: theme.card,
-                    }}
-                  >
-                    <View style={[s.row, { gap: 8 }]}>
-                      <Icon name="monitor" size={19} color={theme.accent} />
-                      <Txt weight="bold" style={{ flex: 1 }}>
-                        Sistem temasını izle
-                      </Txt>
-                      <Icon
-                        name={
-                          draft.theme === "system" ? "check-circle" : "circle"
-                        }
-                        color={theme.goldInk}
-                        size={21}
-                      />
+                              <Icon
+                                name={value === "light" ? "sun" : "moon"}
+                                color={selected ? theme.goldInk : theme.accent}
+                              />
+                              <Txt
+                                size={16}
+                                weight="heavy"
+                                style={{ flex: 1 }}
+                                color={selected ? theme.goldInk : theme.text}
+                              >
+                                {value === "light" ? "Açık Tema" : "Koyu Tema"}
+                              </Txt>
+                              <Icon
+                                name={selected ? "check-circle" : "circle"}
+                                size={21}
+                                color={selected ? theme.goldInk : theme.muted}
+                              />
+                            </View>
+                          </Tap>
+                        );
+                      })}
                     </View>
-                    <Txt size={12} color={theme.muted}>
-                      Cihazına göre {system === "dark" ? "koyu" : "açık"}{" "}
-                      görünüm. Kaydet ile uygulanır.
-                    </Txt>
-                  </Tap>
-                </View>
-                <View
-                  style={[
-                    s.row,
-                    { gap: 12, justifyContent: "space-between", padding: 4 },
-                  ]}
-                >
-                  <View style={{ flex: 1 }}>
-                    <Txt weight="bold">Hareketi azalt</Txt>
-                    <Txt size={12} color={theme.muted}>
-                      Sistem tercihin her zaman gözetilir.
-                    </Txt>
-                  </View>
-                  <Switch
-                    disabled={busy}
-                    accessibilityLabel="Hareketi azalt"
-                    value={draft.reduceMotion}
-                    onValueChange={(reduceMotion) =>
-                      setDraft({ ...draft, reduceMotion })
-                    }
-                    trackColor={{ true: c.emerald, false: theme.border }}
-                  />
-                </View>
-              </>
-            )}
-            {!!error && (
-              <Txt
-                accessibilityRole="alert"
-                accessibilityLiveRegion="assertive"
-                color={theme.danger}
+                    <Tap
+                      label="Sistem temasını izle"
+                      role="radio"
+                      selected={draft.theme === "system"}
+                      disabled={busy}
+                      onPress={() => {
+                        setDraft({ ...draft, theme: "system" });
+                        setError("");
+                      }}
+                      style={{
+                        borderRadius: 16,
+                        borderWidth: 1,
+                        borderColor:
+                          draft.theme === "system"
+                            ? theme.goldBorder
+                            : theme.border,
+                        padding: 12,
+                        gap: 5,
+                        backgroundColor: theme.card,
+                      }}
+                    >
+                      <View style={[s.row, { gap: 8 }]}>
+                        <Icon name="monitor" size={19} color={theme.accent} />
+                        <Txt weight="bold" style={{ flex: 1 }}>
+                          Sistem temasını izle
+                        </Txt>
+                        <Icon
+                          name={
+                            draft.theme === "system" ? "check-circle" : "circle"
+                          }
+                          color={theme.goldInk}
+                          size={21}
+                        />
+                      </View>
+                      <Txt size={12} color={theme.muted}>
+                        Cihazına göre {system === "dark" ? "koyu" : "açık"}{" "}
+                        görünüm. Kaydet ile uygulanır.
+                      </Txt>
+                    </Tap>
+                  </>
+                )}
+              </View>
+              <View
+                style={[
+                  s.row,
+                  { gap: 12, justifyContent: "space-between", padding: 4 },
+                ]}
               >
-                {error}
-              </Txt>
-            )}
-          </ScrollView>
-          <View
-            style={{
-              padding: 16,
-              paddingTop: 12,
-              gap: 10,
-              backgroundColor: theme.panel,
-              borderTopWidth: 1,
-              borderColor: theme.border,
-            }}
-          >
-            <Button
-              title={busy ? "Kaydediliyor…" : "Kaydet"}
-              icon="save"
-              variant="mustard"
-              disabled={busy}
-              onPress={() => void save()}
-            />
-            <Button
-              title="Vazgeç"
-              variant="outline"
-              disabled={busy}
-              onPress={close}
-            />
-          </View>
+                <View style={{ flex: 1 }}>
+                  <Txt weight="bold">Hareketi azalt</Txt>
+                  <Txt size={12} color={theme.muted}>
+                    Sistem tercihin her zaman gözetilir.
+                  </Txt>
+                </View>
+                <Switch
+                  disabled={busy}
+                  accessibilityLabel="Hareketi azalt"
+                  value={draft.reduceMotion}
+                  onValueChange={(reduceMotion) =>
+                    setDraft({ ...draft, reduceMotion })
+                  }
+                  trackColor={{ true: c.emerald, false: theme.border }}
+                />
+              </View>
+            </>
+          )}
+          {!!error && (
+            <Txt
+              accessibilityRole="alert"
+              accessibilityLiveRegion="assertive"
+              color={theme.danger}
+            >
+              {error}
+            </Txt>
+          )}
+        </ScrollView>
+        <View
+          style={{
+            padding: 16,
+            paddingTop: 12,
+            gap: 10,
+            backgroundColor: theme.panel,
+            borderTopWidth: 1,
+            borderColor: theme.border,
+          }}
+        >
+          <Button
+            title={busy ? "Kaydediliyor…" : "Kaydet"}
+            icon="save"
+            variant="mustard"
+            disabled={busy}
+            onPress={() => void save()}
+          />
+          <Button
+            title="Vazgeç"
+            variant="outline"
+            disabled={busy}
+            onPress={close}
+          />
         </View>
       </View>
+    </View>
+  );
+  return presentation === "screen" ? (
+    content
+  ) : (
+    <Modal
+      visible
+      transparent
+      animationType="none"
+      onRequestClose={close}
+      statusBarTranslucent
+    >
+      {content}
     </Modal>
   );
 }

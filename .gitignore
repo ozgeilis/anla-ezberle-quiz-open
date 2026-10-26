@@ -69,3 +69,9 @@ id_ed25519
 .npmrc
 .netrc
 .envrc
+
+# Native push credentials must stay outside source control.
+google-services*.json
+GoogleService-Info*.plist
+*.p8
+*firebase-adminsdk*.json

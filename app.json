@@ -49,10 +49,25 @@
           "enableBackgroundPlayback": false,
           "enableBackgroundRecording": false
         }
-      ]
+      ],
+      [
+        "expo-notifications",
+        {
+          "defaultChannel": "game-updates",
+          "color": "#005F65",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      "expo-asset",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5106d534-5a91-4d21-8e65-5f7db23f4dee"
+      }
     }
   }
 }

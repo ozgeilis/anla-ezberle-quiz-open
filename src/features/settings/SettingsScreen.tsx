@@ -1,470 +1,562 @@
-import { SoundSettings } from "../audio/SoundSettings";
 import React, { useState } from "react";
-import { ScrollView, TextInput, View } from "react-native";
+import { Linking, ScrollView, TextInput, View } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
-import { LinearGradient } from "expo-linear-gradient";
-import { Avatar, Pattern } from "../../components/game/Artwork";
-import {
-  Button,
-  Card,
-  Dialog,
-  Icon,
-  IconName,
-  Tap,
-  Txt,
-} from "../../components/ui";
+import { Avatar } from "../../components/game/Artwork";
+import { Button, Card, Icon, IconName, Tap, Txt } from "../../components/ui";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { useGame } from "../../storage/GameProvider";
-import { colors as c, fonts, gradients, useTheme } from "../../theme/tokens";
+import { fonts, useTheme } from "../../theme/tokens";
+import { progress } from "../../domain/scoring/progress";
 import { useOnlineAuth } from "../online/OnlineProvider";
 import { usePlayerIdentity } from "../online/SocialIdentityProvider";
 import { displayNameError } from "../online/identity";
 import { SocialProfile } from "../online/SocialProfile";
-import {
-  PersonalizationDialog,
-  PersonalizationKind,
-} from "../profile/Personalization";
+import { PersonalizationDialog } from "../profile/Personalization";
+import { SoundSettings } from "../audio/SoundSettings";
+import { NotificationSettings } from "../notifications/NotificationSettings";
 import { brand } from "../../branding/identity";
-export function SettingsScreen() {
-  const { session } = useOnlineAuth();
+
+export const settingSections = {
+  profile: {
+    title: "Profil",
+    subtitle: "Profilini ve avatarını düzenle",
+    icon: "user",
+  },
+  sound: {
+    title: "Ses",
+    subtitle: "Desteklenen müzik ve ses efektlerini ayarla",
+    icon: "volume-2",
+  },
+  theme: {
+    title: "Tema",
+    subtitle: "Açık, koyu veya sistem temasını seç",
+    icon: "sun",
+  },
+  account: {
+    title: "Hesap",
+    subtitle: "Giriş, hesap güvenliği ve hesap silme",
+    icon: "shield",
+  },
+  notifications: {
+    title: "Bildirimler",
+    subtitle: "Bildirim tercihlerini yönet",
+    icon: "bell",
+  },
+  privacy: {
+    title: "Gizlilik",
+    subtitle: "Gizlilik politikası ve veri tercihleri",
+    icon: "lock",
+  },
+  help: {
+    title: "Yardım",
+    subtitle: "Destek ve uygulama hakkında",
+    icon: "help-circle",
+  },
+} as const;
+export type SettingSection = keyof typeof settingSections;
+const back = () =>
+  router.canGoBack() ? router.back() : router.replace("/settings");
+export function SettingRow({
+  title,
+  subtitle,
+  icon,
+  onPress,
+}: {
+  title: string;
+  subtitle: string;
+  icon: IconName;
+  onPress: () => void;
+}) {
+  const t = useTheme();
+  return (
+    <Tap
+      label={title}
+      onPress={onPress}
+      style={{
+        minHeight: 68,
+        padding: 12,
+        borderRadius: 16,
+        borderWidth: 1,
+        borderColor: t.border,
+        backgroundColor: t.card,
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 12,
+      }}
+    >
+      <View
+        style={{
+          width: 36,
+          height: 36,
+          borderRadius: 12,
+          backgroundColor: t.mintSurface,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Icon name={icon} size={19} color={t.accent} />
+      </View>
+      <View style={{ flex: 1, minWidth: 0, gap: 3 }}>
+        <Txt size={15} weight="bold">
+          {title}
+        </Txt>
+        <Txt size={12} color={t.muted}>
+          {subtitle}
+        </Txt>
+      </View>
+      <Icon name="chevron-right" size={18} color={t.muted} />
+    </Tap>
+  );
+}
+export function SettingsFrame({
+  title,
+  children,
+}: React.PropsWithChildren<{ title: string }>) {
+  const t = useTheme();
+  return (
+    <View style={{ flex: 1, backgroundColor: t.background }}>
+      <View
+        style={{
+          padding: 16,
+          flexDirection: "row",
+          gap: 10,
+          alignItems: "center",
+          backgroundColor: t.mintSurface,
+          borderBottomWidth: 1,
+          borderColor: t.border,
+        }}
+      >
+        <Tap
+          label="Ayarlardan geri dön"
+          onPress={() =>
+            router.canGoBack()
+              ? router.back()
+              : router.replace(title === "Ayarlar" ? "/profile" : "/settings")
+          }
+          style={{
+            width: 44,
+            minHeight: 44,
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 14,
+            backgroundColor: t.card,
+          }}
+        >
+          <Icon name="chevron-left" color={t.accent} />
+        </Tap>
+        <Txt
+          size={23}
+          weight="heavy"
+          accessibilityRole="header"
+          style={{ flex: 1 }}
+        >
+          {title}
+        </Txt>
+      </View>
+      <ScrollView
+        keyboardShouldPersistTaps="handled"
+        contentContainerStyle={{
+          padding: 16,
+          paddingBottom: 32,
+          gap: 14,
+          width: "100%",
+          maxWidth: 720,
+          alignSelf: "center",
+        }}
+      >
+        {children}
+      </ScrollView>
+    </View>
+  );
+}
+export function SettingsScreen({ section }: { section?: string }) {
   const [feedback, setFeedback] = useState<Feedback | null>(null);
+  const { session } = useOnlineAuth();
+  const { edit } = useLocalSearchParams<{ edit?: string }>();
+  const selected = section ?? (edit === "avatar" ? "profile" : undefined);
   return (
     <>
-      <AccountSettings
-        key={session?.user.id ?? "guest"}
+      <SettingsContent
+        key={`${session?.user.id ?? "guest"}:${selected ?? "menu"}`}
+        section={selected}
         setFeedback={setFeedback}
       />
       <FeedbackDialog feedback={feedback} onClose={() => setFeedback(null)} />
     </>
   );
 }
-function AccountSettings({
+function SettingsContent({
+  section,
   setFeedback,
 }: {
+  section?: string;
   setFeedback: React.Dispatch<React.SetStateAction<Feedback | null>>;
 }) {
+  const { data } = useGame(),
+    auth = useOnlineAuth(),
+    identity = usePlayerIdentity(),
+    t = useTheme();
+  const p = progress(data.games);
+  const [busy, setBusy] = useState(false);
+  if (section === "theme")
+    return (
+      <PersonalizationDialog
+        kind="appearance"
+        presentation="screen"
+        onClose={back}
+      />
+    );
+  if (section === "profile") return <ProfileDetails />;
+  if (section === "notifications")
+    return (
+      <SettingsFrame title="Bildirim Ayarları">
+        <NotificationSettings />
+      </SettingsFrame>
+    );
+  if (section === "sound")
+    return (
+      <SettingsFrame title="Ses Ayarları">
+        <SoundSettings />
+      </SettingsFrame>
+    );
+  const heading =
+    section && section in settingSections
+      ? settingSections[section as SettingSection].title
+      : "Ayarlar";
+  const navigate = (s: SettingSection) =>
+    router.push({ pathname: "/settings/[section]", params: { section: s } });
+  return (
+    <SettingsFrame title={heading}>
+      {!section && (
+        <>
+          <Tap
+            label="Profil detaylarını aç"
+            onPress={() => navigate("profile")}
+            style={{
+              padding: 16,
+              borderRadius: 20,
+              backgroundColor: t.mintSurface,
+              flexDirection: "row",
+              alignItems: "center",
+              gap: 12,
+            }}
+          >
+            <Avatar variant={data.profile.avatar} size={52} />
+            <View style={{ flex: 1, gap: 4, minWidth: 0 }}>
+              <Txt weight="heavy" size={20}>
+                {identity.displayName}
+              </Txt>
+              <Txt size={12} color={t.accent}>
+                Seviye {p.level} · {p.xp} XP
+              </Txt>
+              <View
+                style={{
+                  height: 5,
+                  borderRadius: 4,
+                  backgroundColor: t.border,
+                  overflow: "hidden",
+                }}
+              >
+                <View
+                  style={{
+                    width: `${(p.levelXp / 250) * 100}%`,
+                    height: 5,
+                    backgroundColor: t.accent,
+                  }}
+                />
+              </View>
+            </View>
+            <Icon name="chevron-right" color={t.accent} />
+          </Tap>
+          <Txt size={13} weight="bold" color={t.muted}>
+            Hesap ve Uygulama
+          </Txt>
+          {(["profile", "sound", "theme", "account"] as const).map((s) => (
+            <SettingRow
+              key={s}
+              {...settingSections[s]}
+              onPress={() => navigate(s)}
+            />
+          ))}
+          <Txt size={13} weight="bold" color={t.muted} style={{ marginTop: 8 }}>
+            Diğer
+          </Txt>
+          {(["notifications", "privacy", "help"] as const).map((s) => (
+            <SettingRow
+              key={s}
+              {...settingSections[s]}
+              onPress={() => navigate(s)}
+            />
+          ))}
+        </>
+      )}
+      {section === "account" && (
+        <>
+          <Card style={{ gap: 12 }}>
+            <Txt weight="bold">
+              {auth.session ? "Çevrimiçi hesabın" : "Misafir Oyuncu"}
+            </Txt>
+            {auth.session ? (
+              <>
+                <Txt>{auth.session.user.email}</Txt>
+                <Txt size={12} color={t.muted}>
+                  {auth.session.user.email_confirmed_at
+                    ? "E-posta doğrulandı"
+                    : "E-posta doğrulamanı tamamla"}
+                </Txt>
+                <Button
+                  title="Şifremi sıfırla"
+                  variant="outline"
+                  onPress={() => router.push("/online/forgot-password")}
+                />
+                <Button
+                  title={busy ? "Çıkış yapılıyor…" : "Hesaptan Çık"}
+                  variant="outline"
+                  disabled={busy}
+                  onPress={() => {
+                    setBusy(true);
+                    void auth
+                      .signOut()
+                      .then(() =>
+                        setFeedback({
+                          tone: "information",
+                          title: "Oturum Kapatıldı",
+                          message:
+                            "Yerel oyun kayıtların, XP ve rozetlerin korunuyor.",
+                        }),
+                      )
+                      .catch(() =>
+                        setFeedback({
+                          tone: "error",
+                          title: "Çıkış tamamlanamadı",
+                          message: "Bağlantını kontrol edip yeniden dene.",
+                        }),
+                      )
+                      .finally(() => setBusy(false));
+                  }}
+                />
+              </>
+            ) : (
+              <>
+                <Txt size={13}>
+                  Yerel oyun geçmişin bu cihazda korunur. Çevrimiçi özellikler
+                  için hesabını bağla.
+                </Txt>
+                <Button
+                  title="Hesap Oluştur / Giriş Yap"
+                  onPress={() => router.push("/online")}
+                />
+              </>
+            )}
+            <Button
+              title="E-posta doğrulama"
+              variant="outline"
+              onPress={() => router.push("/online/verify-email")}
+            />
+          </Card>
+          <Card style={{ gap: 10, borderColor: t.danger }}>
+            <Txt weight="bold" color={t.danger}>
+              Hesap silme
+            </Txt>
+            <Txt size={13}>
+              Kalıcı silme ve güvenli kimlik doğrulaması için mevcut hesap silme
+              ekranına geç.
+            </Txt>
+            <Button
+              title="Hesabımı Sil"
+              icon="trash-2"
+              variant="outline"
+              onPress={() => router.push("/account-delete")}
+            />
+          </Card>
+        </>
+      )}
+      {section === "privacy" && (
+        <>
+          <Card style={{ gap: 12 }}>
+            <Txt weight="bold">Verilerin ve gizlilik</Txt>
+            <Txt size={13}>
+              Yerel tek oyunculu ilerlemen bu cihazda; çevrimiçi profilin
+              hesabında saklanır. Oyuncu arama görünürlüğünü mevcut profil
+              düzenleyicisinden yönetebilirsin.
+            </Txt>
+            <Button
+              title="Gizlilik Politikasını Aç"
+              variant="outline"
+              onPress={() => router.push("/privacy")}
+            />
+            <Button
+              title="Profil görünürlüğünü yönet"
+              variant="outline"
+              onPress={() => navigate("profile")}
+            />
+          </Card>
+        </>
+      )}
+      {section === "help" && (
+        <Card style={{ gap: 12 }}>
+          <Txt size={19} weight="heavy">
+            Anla & Ezberle
+          </Txt>
+          <Txt>{brand.developer}</Txt>
+          <Txt size={13}>
+            Kategori ve zorluğu seç, yarışmanı tamamla. Çevrimiçi oyun için
+            doğrulanmış hesabınla giriş yap. Hesap silme ve gizlilik bilgileri
+            uygulama kurulmadan da web sitemizde açılabilir.
+          </Txt>
+          <Button
+            title="kovynelstudio@gmail.com"
+            icon="mail"
+            variant="outline"
+            onPress={() =>
+              void Linking.openURL("mailto:kovynelstudio@gmail.com").catch(() =>
+                setFeedback({
+                  tone: "information",
+                  title: "Destek",
+                  message:
+                    "kovynelstudio@gmail.com adresine e-posta gönderebilirsin.",
+                }),
+              )
+            }
+          />
+        </Card>
+      )}
+      {section && !(section in settingSections) && (
+        <>
+          <Txt>Böyle bir ayar bölümü bulunamadı.</Txt>
+          <Button
+            title="Ayarlara Dön"
+            onPress={() => router.replace("/settings")}
+          />
+        </>
+      )}
+    </SettingsFrame>
+  );
+}
+function ProfileDetails() {
   const { data, updateProfile } = useGame(),
     auth = useOnlineAuth(),
     identity = usePlayerIdentity(),
-    theme = useTheme();
-  const params = useLocalSearchParams<{ edit?: string }>();
-  const [editor, setEditor] = useState<PersonalizationKind | null>(
-    params.edit === "avatar" ? "avatar" : null,
-  );
-  const [name, setName] = useState(data.profile.name),
-    [onlineName, setOnlineName] = useState<string | null>(null),
+    t = useTheme();
+  const { edit } = useLocalSearchParams<{ edit?: string }>();
+  const [avatar, setAvatar] = useState(edit === "avatar"),
+    [nameInput, setName] = useState<string | null>(null),
     [busy, setBusy] = useState(false),
-    [info, setInfo] = useState<"help" | "about" | null>(null);
-  const draftName = onlineName ?? identity.self?.profile.name ?? "";
-  const back = () =>
-    router.canGoBack() ? router.back() : router.replace("/profile");
-  const row = (
-    label: string,
-    subtitle: string,
-    icon: IconName,
-    action: () => void,
-  ) => (
-    <Tap
-      label={label}
-      onPress={action}
-      style={{
-        flexDirection: "row",
-        alignItems: "center",
-        gap: 12,
-        padding: 14,
-        borderRadius: 18,
-        backgroundColor: theme.mintSurface,
-        borderWidth: 1,
-        borderColor: theme.border,
-      }}
-    >
-      <View
-        style={{
-          width: 44,
-          height: 44,
-          borderRadius: 15,
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: theme.card,
-        }}
-      >
-        <Icon name={icon} color={theme.accent} />
-      </View>
-      <View style={{ flex: 1, gap: 3 }}>
-        <Txt weight="heavy" size={16}>
-          {label}
-        </Txt>
-        <Txt size={12} color={theme.muted}>
-          {subtitle}
-        </Txt>
-      </View>
-      <Icon name="chevron-right" size={18} color={theme.accent} />
-    </Tap>
-  );
+    [feedback, setFeedback] = useState<Feedback | null>(null);
+  const name = nameInput ?? identity.displayName;
+  const validation = auth.session
+    ? displayNameError(name)
+    : !name.trim() || /[\u0000-\u001f]/.test(name)
+      ? "Geçerli bir oyuncu adı yaz."
+      : null;
   return (
-    <View style={{ flex: 1, backgroundColor: theme.background }}>
-      <LinearGradient colors={gradients.hero} style={{ padding: 18, gap: 8 }}>
-        <View pointerEvents="none" style={{ position: "absolute", inset: 0 }}>
-          <Pattern opacity={0.08} />
-        </View>
+    <SettingsFrame title="Profil Detayları">
+      <Card style={{ gap: 12 }}>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-          <Tap
-            label="Ayarlardan geri dön"
-            onPress={back}
-            style={{
-              width: 44,
-              minHeight: 44,
-              borderRadius: 22,
-              backgroundColor: "rgba(0,40,48,.5)",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon name="chevron-left" color={c.white} />
-          </Tap>
+          <Avatar variant={data.profile.avatar} size={64} />
           <View style={{ flex: 1 }}>
-            <Txt
-              accessibilityRole="header"
-              size={28}
-              weight="heavy"
-              color={c.white}
-            >
-              Ayarlar
+            <Txt size={21} weight="heavy">
+              {identity.displayName}
             </Txt>
-            <Txt size={12} color={c.tealLight}>
-              Profilin, görünümün ve hesabın tek yerde.
+            <Txt size={12} color={t.muted}>
+              {identity.self?.profile.username
+                ? `@${identity.self.profile.username}`
+                : "Misafir Oyuncu"}
             </Txt>
           </View>
         </View>
-      </LinearGradient>
-      <ScrollView
-        contentContainerStyle={{
-          padding: 16,
-          gap: 16,
-          width: "100%",
-          maxWidth: 760,
-          alignSelf: "center",
-          paddingBottom: 32,
-        }}
-        keyboardShouldPersistTaps="handled"
-      >
-        <Card style={{ gap: 14 }}>
-          <Txt accessibilityRole="header" weight="heavy" size={21}>
-            Profil ve Hesap
-          </Txt>
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-            <Avatar variant={data.profile.avatar} size={58} />
-            <View style={{ flex: 1 }}>
-              <Txt size={21} weight="heavy">
-                {identity.displayName}
-              </Txt>
-              <Txt size={12} color={theme.muted}>
-                {identity.self?.profile.username
-                  ? `@${identity.self.profile.username}`
-                  : auth.session
-                    ? "Kullanıcı adını oluştur"
-                    : "Misafir Oyuncu"}
-              </Txt>
-            </View>
-          </View>
-          {row(
-            "Avatarını değiştir",
-            "Karakterini ön izle, Kaydet ile uygula.",
-            "user",
-            () => setEditor("avatar"),
-          )}
-          {!auth.session && (
-            <>
-              <Txt weight="bold">Bu cihazdaki oyuncu adın</Txt>
-              <TextInput
-                accessibilityLabel="Yerel oyuncu adı"
-                value={name}
-                onChangeText={setName}
-                maxLength={24}
-                placeholder="Oyuncu"
-                placeholderTextColor={theme.muted}
-                style={{
-                  fontFamily: fonts.medium,
-                  minHeight: 52,
-                  borderRadius: 14,
-                  padding: 14,
-                  borderWidth: 1,
-                  borderColor: theme.border,
-                  color: theme.text,
-                  backgroundColor: theme.background,
-                  fontSize: 16,
-                }}
-              />
-              <Button
-                title={busy ? "Kaydediliyor…" : "Oyuncu Adını Kaydet"}
-                icon="save"
-                disabled={busy || !name.trim() || /[\u0000-\u001f]/.test(name)}
-                onPress={() => {
-                  setBusy(true);
-                  void updateProfile({ name: name.trim() })
-                    .then((saved) =>
-                      setFeedback({
-                        tone: saved ? "success" : "error",
-                        title: saved
-                          ? "Oyuncu Adın Kaydedildi"
-                          : "Profil Kaydedilemedi",
-                        message: saved
-                          ? "Bu cihazdaki adın güncellendi. Oyun kayıtların korundu."
-                          : "Mevcut profilin korundu. Yeniden dene.",
-                      }),
-                    )
-                    .finally(() => setBusy(false));
-                }}
-              />
-            </>
-          )}
-          {auth.session ? (
-            <>
-              <Txt weight="bold">İsim / Görünen Ad</Txt>
-              <TextInput
-                accessibilityLabel="Görünen ad"
-                value={draftName}
-                onChangeText={setOnlineName}
-                maxLength={24}
-                placeholder="Görünen adın"
-                placeholderTextColor={theme.muted}
-                style={{
-                  fontFamily: fonts.medium,
-                  minHeight: 52,
-                  borderRadius: 14,
-                  padding: 14,
-                  borderWidth: 1,
-                  borderColor: theme.border,
-                  color: theme.text,
-                  backgroundColor: theme.background,
-                  fontSize: 16,
-                }}
-              />
-              {!!displayNameError(draftName) && (
-                <Txt size={12} color={theme.muted}>
-                  {displayNameError(draftName)}
-                </Txt>
-              )}
-              <Button
-                title={busy ? "Kaydediliyor…" : "Görünen Adı Kaydet"}
-                icon="save"
-                disabled={
-                  busy || !identity.self || !!displayNameError(draftName)
-                }
-                onPress={() => {
-                  setBusy(true);
-                  void identity
-                    .saveName(draftName)
-                    .then(() => {
-                      setOnlineName(null);
-                      setFeedback({
-                        tone: "success",
-                        title: "Görünen Adın Kaydedildi",
-                        message:
-                          "Profilin ve ana sayfadaki ismin güncellendi. @kullanıcı_adın değişmedi.",
-                      });
-                    })
-                    .catch((e) =>
-                      setFeedback({
-                        tone: "error",
-                        title: "İsim Kaydedilemedi",
-                        message:
-                          e instanceof Error && !("code" in e)
-                            ? e.message
-                            : "İsim kaydedilemedi. Önceki bilgilerin korundu; yeniden dene.",
-                      }),
-                    )
-                    .finally(() => setBusy(false));
-                }}
-              />
-              <Txt size={12} color={theme.muted}>
-                Benzersiz olması gerekmez. Arkadaşların seni aşağıdaki
-                @kullanıcı_adın ile arar.
-              </Txt>
-              {identity.self?.profile.username &&
-                identity.self.profile.avatar !== data.profile.avatar && (
-                  <Button
-                    title="Avatarını çevrimiçi eşitle"
-                    icon="user-check"
-                    variant="outline"
-                    disabled={busy}
-                    onPress={() => {
-                      setBusy(true);
-                      void identity
-                        .syncAvatar()
-                        .then(() =>
-                          setFeedback({
-                            tone: "success",
-                            title: "Avatarın Eşitlendi",
-                            message:
-                              "Çevrimiçi avatarın güncellendi. İsmin, kullanıcı adın ve gizlilik seçimin korundu.",
-                          }),
-                        )
-                        .catch(() =>
-                          setFeedback({
-                            tone: "error",
-                            title: "Avatar Eşitlenemedi",
-                            message:
-                              "Önceki çevrimiçi avatarın korundu. Yeniden dene.",
-                          }),
-                        )
-                        .finally(() => setBusy(false));
-                    }}
-                  />
-                )}
-              <Txt size={13}>{auth.session.user.email}</Txt>
-              <View
-                style={{ flexDirection: "row", gap: 7, alignItems: "center" }}
-              >
-                <Icon name="check-circle" color={theme.success} size={18} />
-                <Txt size={13} color={theme.success}>
-                  E-posta doğrulandı
-                </Txt>
-              </View>
-              <Button
-                title="Hesabımı Sil"
-                icon="trash-2"
-                variant="outline"
-                onPress={() => router.push("/account-delete")}
-              />
-              <Button
-                title="Hesaptan Çık"
-                icon="log-out"
-                variant="outline"
-                disabled={busy}
-                onPress={() => {
-                  setBusy(true);
-                  void auth
-                    .signOut()
-                    .then(() =>
-                      setFeedback({
-                        tone: "information",
-                        title: "Oturum Kapatıldı",
-                        message:
-                          "Yerel oyun kayıtların, XP ve rozetlerin korunuyor.",
-                      }),
-                    )
-                    .catch(() =>
-                      setFeedback({
-                        tone: "error",
-                        title: "Çıkış Tamamlanamadı",
-                        message: "Bağlantını kontrol edip yeniden dene.",
-                      }),
-                    )
-                    .finally(() => setBusy(false));
-                }}
-              />
-            </>
-          ) : (
-            <>
-              <Txt size={13} color={theme.muted}>
-                Çevrimiçi özellikler için doğrulanmış hesabınla giriş yap.
-                Cihazındaki ilerlemen korunur; bulut hesabına otomatik
-                aktarılmaz.
-              </Txt>
-              <Button
-                title="Hesap Oluştur / Giriş Yap"
-                icon="log-in"
-                onPress={() => router.push("/online")}
-              />
-              {row(
-                "E-posta doğrulama bağlantısı iste",
-                "Doğrulama bekleyen hesabın için.",
-                "mail",
-                () => router.push("/online/verify-email"),
-              )}
-            </>
-          )}
-        </Card>
         <Button
-          title="Gizlilik ve hesap silme"
+          title="Avatarını değiştir"
+          icon="user"
           variant="outline"
-          onPress={() => router.push("/privacy")}
+          onPress={() => setAvatar(true)}
         />
-        {!!auth.session && <SocialProfile />}
-        <Card style={{ gap: 12 }}>
-          <Txt accessibilityRole="header" weight="heavy" size={21}>
-            Görünüm
-          </Txt>
-          {row(
-            "Görünüm ayarlarını aç",
-            `${data.profile.theme === "system" ? "Sistem teması" : data.profile.theme === "dark" ? "Koyu tema" : "Açık tema"} · Ön izleyerek seç`,
-            "sun",
-            () => setEditor("appearance"),
-          )}
-          <Txt size={12} color={theme.muted}>
-            Açık, koyu veya sistem temasını ön izle. Değişiklik yalnızca Kaydet
-            ile uygulanır.
-          </Txt>
-        </Card>
-        <SoundSettings />
-        <Card style={{ gap: 12 }}>
-          <Txt accessibilityRole="header" weight="heavy" size={21}>
-            Bildirimler
-          </Txt>
-          {row(
-            "Bildirimleri görüntüle",
-            "Davetler, arkadaşlık istekleri ve maç sonuçları.",
-            "bell",
-            () => router.push("/online/inbox"),
-          )}
-          <Txt size={12} color={theme.muted}>
-            Uygulama içi bildirimler desteklenir. Kilit ekranına push bildirimi
-            bu sürümde gönderilmez.
-          </Txt>
-        </Card>
-        <Card style={{ gap: 10 }}>
-          <Txt accessibilityRole="header" weight="heavy" size={21}>
-            Gizlilik
-          </Txt>
-          <Txt size={13}>
-            {auth.session
-              ? "Oyuncu aramasında görünürlüğünü yukarıdaki Kullanıcı Adı ve Gizlilik kartından yönetebilirsin. Değişiklik aynı profil kaydıyla uygulanır."
-              : "Oyuncu aramasında görünürlüğünü hesabınla giriş yaptıktan sonra yönetebilirsin."}
-          </Txt>
-          <Txt size={12} color={theme.muted}>
-            Çevrimiçi rozet paylaşımı ve vitrin tercihlerin Profilim →
-            Başarılarım bölümünde korunur. Sıralama sekmesindeki ayrı katılım
-            tercihin varsayılan kapalıdır; genel listede görünmek için oyuncu
-            aramasında bulunma da açık olmalı.
-          </Txt>
-        </Card>
-        <Card style={{ gap: 12 }}>
-          <Txt accessibilityRole="header" weight="heavy" size={21}>
-            Diğer
-          </Txt>
-          {row("Uygulama hakkında", brand.developer, "info", () =>
-            setInfo("about"),
-          )}
-          {row(
-            "Yardım",
-            "Oyun, hesap ve kayıtların hakkında.",
-            "help-circle",
-            () => setInfo("help"),
-          )}
-        </Card>
-      </ScrollView>
-      {editor && (
-        <PersonalizationDialog
-          key={editor}
-          kind={editor}
-          onClose={() => setEditor(null)}
+        <Txt weight="bold">İsim / Görünen Ad</Txt>
+        <TextInput
+          accessibilityLabel={auth.session ? "Görünen ad" : "Yerel oyuncu adı"}
+          maxLength={24}
+          value={name}
+          onChangeText={setName}
+          style={{
+            fontFamily: fonts.medium,
+            fontSize: 16,
+            padding: 12,
+            minHeight: 48,
+            borderRadius: 12,
+            borderWidth: 1,
+            borderColor: t.border,
+            color: t.text,
+            backgroundColor: t.background,
+          }}
         />
+        {!!validation && (
+          <Txt size={12} color={t.muted}>
+            {validation}
+          </Txt>
+        )}
+        <Button
+          title={
+            busy
+              ? "Kaydediliyor…"
+              : auth.session
+                ? "Görünen Adı Kaydet"
+                : "Oyuncu Adını Kaydet"
+          }
+          disabled={busy || !!validation || (!!auth.session && !identity.self)}
+          onPress={() => {
+            setBusy(true);
+            void (async () => {
+              try {
+                if (auth.session) await identity.saveName(name);
+                else if (!(await updateProfile({ name: name.trim() })))
+                  throw Error();
+                setFeedback({
+                  tone: "success",
+                  title: auth.session
+                    ? "Görünen Adın Kaydedildi"
+                    : "Oyuncu Adın Kaydedildi",
+                  message:
+                    "Profilin ve ana sayfadaki ismin güncellendi. Diğer bilgilerin korundu.",
+                });
+              } catch {
+                setFeedback({
+                  tone: "error",
+                  title: "İsim Kaydedilemedi",
+                  message: "Önceki bilgilerin korundu. Yeniden dene.",
+                });
+              } finally {
+                setBusy(false);
+              }
+            })();
+          }}
+        />
+        {auth.session &&
+          identity.self?.profile.avatar !== data.profile.avatar && (
+            <Button
+              title="Avatarını çevrimiçi eşitle"
+              variant="outline"
+              disabled={busy}
+              onPress={() => {
+                setBusy(true);
+                void identity
+                  .syncAvatar()
+                  .catch(() =>
+                    setFeedback({
+                      tone: "error",
+                      title: "Eşitlenemedi",
+                      message: "Önceki avatarın korundu. Yeniden dene.",
+                    }),
+                  )
+                  .finally(() => setBusy(false));
+              }}
+            />
+          )}
+      </Card>
+      {auth.session && <SocialProfile />}
+      {avatar && (
+        <PersonalizationDialog kind="avatar" onClose={() => setAvatar(false)} />
       )}
-      <Dialog
-        visible={!!info}
-        title={
-          info === "about" ? "Anla & Ezberle" : "Nasıl yardımcı olabiliriz?"
-        }
-        onClose={() => setInfo(null)}
-      >
-        <Txt>
-          {info === "about"
-            ? `İslami Bilgi Oyunu · ${brand.developer}\nBilgini sına, öğren, ilerle!`
-            : "Kategori ve zorluğu seçerek 10 soruluk yarışmaya başlayabilirsin. Yerel ilerlemen bu cihazda saklanır. Çevrimiçi oyun için e-postanı doğrula ve benzersiz kullanıcı adını oluştur. Doğrulama e-postası gelmezse spam klasörünü kontrol et; yeni bağlantı istemeden önce 60 saniye bekle."}
-        </Txt>
-        <Button title="Tamam" onPress={() => setInfo(null)} />
-      </Dialog>
-    </View>
+      <FeedbackDialog feedback={feedback} onClose={() => setFeedback(null)} />
+    </SettingsFrame>
   );
 }
