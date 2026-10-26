@@ -129,7 +129,12 @@ BEGIN
     UPDATE quiz_private.push_outbox SET state='suppressed' WHERE id=q.id; CONTINUE;
    END IF;
    IF q.kind='room_started' AND EXISTS(SELECT 1 FROM quiz_private.live_rooms WHERE id=q.reference_id AND start_at>now()) THEN CONTINUE; END IF;
-   IF (SELECT count(*) FROM quiz_private.push_outbox WHERE device_id=d.id AND submitted_at>now()-interval '15 minutes')>=6 OR (SELECT count(*) FROM quiz_private.push_outbox WHERE device_id=d.id AND submitted_at>now()-interval '1 day')>=40 THEN CONTINUE; END IF;
+   -- Serialize each device's rate budget across overlapping scheduler invocations.
+   IF NOT pg_try_advisory_xact_lock(hashtextextended(d.id::text,83825)) THEN CONTINUE; END IF;
+   IF (SELECT count(*) FROM quiz_private.push_outbox WHERE device_id=d.id AND submitted_at>now()-interval '15 minutes')>=6 OR (SELECT count(*) FROM quiz_private.push_outbox WHERE device_id=d.id AND submitted_at>now()-interval '1 day')>=40 THEN
+    -- Suppress excess rather than letting the oldest rate-limited jobs starve everyone.
+    UPDATE quiz_private.push_outbox SET state='suppressed',error_code='RateLimited' WHERE id=q.id; CONTINUE;
+   END IF;
    UPDATE quiz_private.push_outbox SET state='submitting',submitted_at=now(),token_hash=encode(extensions.digest(d.token,'sha256'),'hex') WHERE id=q.id;
    result:=result||jsonb_build_array(jsonb_build_object('id',q.id,'token',d.token,'kind',q.kind,'notificationId',coalesce(q.notification_id,q.reference_id),'source',CASE WHEN q.kind='room_started' THEN 'room' ELSE 'inbox' END,'recipientId',q.user_id));
   END LOOP;

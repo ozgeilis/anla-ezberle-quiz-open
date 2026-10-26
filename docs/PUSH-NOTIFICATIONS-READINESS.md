@@ -31,7 +31,8 @@ OS izni, sunucudaki tercih ve mevcut cihaz kaydı ayrı değerlendirilir.
   bir Inbox türü eklenmez; mevcut Inbox tablosu/kısıtı/API biçimi korunur.
 - İzin ve tercihler claim sırasında ve Expo çağrısından hemen önce tekrar
   denetlenir. Kuyrukta benzersiz olay/cihaz anahtarları, kilitli claim ve hız
-  sınırları vardır: cihaz başına 15 dakikada 6, günde 40 gönderim.
+  sınırları vardır: cihaz başına 15 dakikada 6, günde 40 gönderim. Eşzamanlı worker cihaz bütçesini kilitler;
+  limiti aşan işler ortak kuyruğu bloke etmek yerine bastırılır.
 - Worker en fazla 30 işi, beş eşzamanlı istekte işler. Expo'nun idempotency
   anahtarı olmadığı için belirsiz HTTP sonuçları otomatik tekrar gönderilmez;
   `unknown` olarak kalır. Bu bilinçli tercih yinelenmeyi azaltırken bazı
@@ -57,7 +58,7 @@ OS izni, sunucudaki tercih ve mevcut cihaz kaydı ayrı değerlendirilir.
 | Kontrol                             | Sonuç          | Kapsam                                                                |
 | ----------------------------------- | -------------- | --------------------------------------------------------------------- |
 | `pnpm check`                        | PASS: 309/309  | Soru bütünlüğü, TypeScript, lint; 299 mevcut + 10 yeni test           |
-| İzole yerel PostgreSQL kabulü       | PASS: 22       | Gerçek SQL/RLS/RPC; sentetik hesap/oturum satırları; sonunda ROLLBACK |
+| İzole yerel PostgreSQL kabulü       | PASS: 23       | Gerçek SQL/RLS/RPC; sentetik hesap/oturum satırları; sonunda ROLLBACK |
 | Ayarlar/hesap tarayıcı smoke        | PASS: 27 grup  | İzole sentetik HTTP fixture; gerçek Chrome ve uygulama bileşenleri    |
 | Açık/koyu responsive ekranlar       | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                          |
 | Android/iOS/web Expo export         | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                   |
@@ -132,7 +133,7 @@ arkadaşlık/davet/maç/oda/Inbox tabloları mevcut. Inbox RLS/FORCE RLS açık.
    **yalnız** aşağıdaki migration'ı göstermeli; başka pending migration görünürse
    dur. Onay kapsamı bu dosya ve `push-dispatch` dağıtımıyla sınırlı olmalıdır:
    `20261025000100_push_notifications.sql`, SHA-256
-   `5b6eaca20bcd2f3adbf0a56ace75668409a641146f87006a2cd527b165a8c0d8`.
+   `446488aa4a72e7deb92ef80b934108b9282a6ca73d640bc1a38ea30f9ed832f7`.
    Migration dört yeni özel tablo, yardımcı/RPC fonksiyonları ve iki trigger
    ekler; eski tablo/satır/kısıt silmez. Hesap silme fonksiyonuna dokunmaz.
 6. Onaydan sonra migration + Edge Function dağıtılır. Varsayılan `enabled=false`

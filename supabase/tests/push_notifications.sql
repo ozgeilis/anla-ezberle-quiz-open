@@ -6,7 +6,7 @@ DO $$
 DECLARE a uuid:='10000000-0000-4000-8000-000000000001'; b uuid:='10000000-0000-4000-8000-000000000002'; c uuid:='10000000-0000-4000-8000-000000000003';
  sa uuid:='20000000-0000-4000-8000-000000000001'; sb uuid:='20000000-0000-4000-8000-000000000002'; sc uuid:='20000000-0000-4000-8000-000000000003';
  da uuid:='30000000-0000-4000-8000-000000000001'; da2 uuid:='30000000-0000-4000-8000-000000000002'; dc uuid:='30000000-0000-4000-8000-000000000003';
- room1 uuid:=gen_random_uuid(); room2 uuid:=gen_random_uuid(); friendship uuid; n uuid; v jsonb; jobs jsonb; job1 uuid; job2 uuid; rejected boolean;
+ room1 uuid:=gen_random_uuid(); room2 uuid:=gen_random_uuid(); room3 uuid:=gen_random_uuid(); friendship uuid; n uuid; v jsonb; jobs jsonb; job1 uuid; job2 uuid; rejected boolean;
 BEGIN
  PERFORM pg_temp.check_push(NOT has_function_privilege('anon','public.push_settings(text,jsonb)','EXECUTE') AND has_function_privilege('authenticated','public.push_settings(text,jsonb)','EXECUTE') AND NOT has_function_privilege('authenticated','public.push_worker(text,jsonb)','EXECUTE'),'RPC grants separate client and worker');
  PERFORM pg_temp.check_push(NOT has_table_privilege('authenticated','quiz_private.push_devices','SELECT') AND NOT has_table_privilege('anon','quiz_private.push_preferences','SELECT') AND (SELECT count(*)=4 FROM pg_class WHERE relnamespace='quiz_private'::regnamespace AND relname IN('push_config','push_preferences','push_devices','push_outbox') AND relrowsecurity AND relforcerowsecurity),'tokens and preferences have forced RLS and no client table grants');
@@ -80,6 +80,14 @@ BEGIN
  PERFORM set_config('request.jwt.claims','{"role":"service_role"}',true);
  jobs:=public.push_worker('claim','{}');
  PERFORM pg_temp.check_push(jsonb_array_length(jobs)=1 AND jobs->0->>'source'='room' AND public.push_worker('authorize',jsonb_build_object('id',jobs->0->>'id'))='true'::jsonb,'real room event claims a single valid internal push target');
+ -- Exhaust one device's rate budget; those rows must not block later recipients.
+ INSERT INTO quiz_private.push_outbox(user_id,device_id,kind,reference_id,state,submitted_at)
+ SELECT a,da,'room_started',gen_random_uuid(),'failed',now() FROM generate_series(1,6);
+ INSERT INTO quiz_private.live_rooms(id,code,host_id,request_id,dataset) VALUES(room3,'PUSHCZ',b,gen_random_uuid(),'local-push-fixture');
+ INSERT INTO quiz_private.live_members(room_id,player_id) VALUES(room3,a),(room3,b);
+ UPDATE quiz_private.live_rooms SET state='countdown',start_at=now()-interval '1 second' WHERE id=room3;
+ jobs:=public.push_worker('claim','{}');
+ PERFORM pg_temp.check_push(jsonb_array_length(jobs)=0 AND EXISTS(SELECT 1 FROM quiz_private.push_outbox WHERE reference_id=room3 AND state='suppressed' AND error_code='RateLimited') AND NOT EXISTS(SELECT 1 FROM quiz_private.push_outbox WHERE state='queued'),'rate limited events are suppressed rather than starving the shared queue');
  DELETE FROM auth.sessions WHERE id=sa;
  PERFORM public.push_worker('claim','{}');
  PERFORM pg_temp.check_push(NOT EXISTS(SELECT 1 FROM quiz_private.push_devices WHERE user_id=a),'revoked session suppresses and cleans its devices');
