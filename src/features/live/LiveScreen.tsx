@@ -539,6 +539,7 @@ function LiveController({
                     />
                   </View>
                   <TextAction
+                    color="#D9F3E9"
                     title="WhatsApp ile Davet Et"
                     onPress={() => void whatsapp()}
                   />

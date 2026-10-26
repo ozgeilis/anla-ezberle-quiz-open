@@ -472,25 +472,19 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
               ? `${session.answers.length}/10 yanıt · Demo`
               : `${score} puan`}
           </Chip>
-          <Txt size={10} color={theme.muted}>
-            {demo
-              ? "Yerel demo · Test içeriği"
-              : question.reviewStatus === "approved"
-                ? "Her soru 10 saniye"
-                : "Her soru 10 saniye"}
+          <Txt
+            size={11}
+            color={theme.muted}
+            accessibilityLiveRegion="polite"
+            style={{ flexShrink: 1 }}
+          >
+            {finishing
+              ? "Sonuç kaydediliyor…"
+              : chosen
+                ? "Birazdan otomatik devam…"
+                : "Cevabını seç"}
           </Txt>
         </View>
-        <Txt
-          size={11}
-          color={theme.muted}
-          style={{ textAlign: "center", paddingVertical: 4 }}
-        >
-          {finishing
-            ? "Sonuç kaydediliyor…"
-            : chosen
-              ? "Birazdan otomatik devam…"
-              : "Cevabını seç · Her soru 10 saniye"}
-        </Txt>
       </View>
       <Dialog
         visible={leave}

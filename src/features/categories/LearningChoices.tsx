@@ -194,7 +194,7 @@ export function LearningChoices({
               subtitle={childrenCategory.subtitle}
               illustration="children"
               colors={["#127F95", "#126B73", "#034D60"]}
-              footer="Hazırlanıyor"
+              footer="Ön izleme"
               statusLabel="Hazırlanıyor"
               disabled
               upcoming
@@ -282,7 +282,7 @@ export function UpcomingLearning({
                   subtitle={season.subtitle}
                   illustration={season.id}
                   colors={season.colors}
-                  footer="Yakında"
+                  footer="Ön izleme"
                   disabled
                   upcoming
                   onPress={() => {}}
@@ -313,7 +313,7 @@ export function UpcomingLearning({
                   subtitle={collection.reason}
                   illustration={collection.id}
                   colors={topicVisuals[art].colors}
-                  footer="Yakında"
+                  footer="Ön izleme"
                   disabled
                   upcoming
                   onPress={() => {}}
