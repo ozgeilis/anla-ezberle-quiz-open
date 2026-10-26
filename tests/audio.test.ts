@@ -126,6 +126,17 @@ test("audio preferences preserve explicit mute, validate values and do not share
     assert.throws(() => parseSoundPreferences(raw));
   for (const path of ["/quiz", "/duel/play", "/results", "/live", "/online"])
     assert.equal(menuMusicAllowed(path), false);
+  for (const section of [
+    "profile",
+    "sound",
+    "theme",
+    "account",
+    "notifications",
+    "privacy",
+    "help",
+  ])
+    assert(menuMusicAllowed(`/settings/${section}`));
+  assert.equal(menuMusicAllowed("/settings/quiz"), false);
   assert(menuMusicAllowed("/settings"));
   assert(menuMusicAllowed("/"));
 });

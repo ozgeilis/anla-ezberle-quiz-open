@@ -44,6 +44,13 @@ export function menuMusicAllowed(path: string) {
     "/profile",
     "/ranking",
     "/settings",
+    "/settings/profile",
+    "/settings/sound",
+    "/settings/theme",
+    "/settings/account",
+    "/settings/notifications",
+    "/settings/privacy",
+    "/settings/help",
     "/online/players",
     "/online/inbox",
   ].includes(path);

@@ -199,7 +199,10 @@ export async function referenceUiSmoke(browser, root) {
         };
       });
       await dialog.getByRole("button", { name: "Kaydet", exact: true }).click();
-      await dialog.getByRole("alert").waitFor();
+      await dialog
+        .getByRole("alert")
+        .filter({ hasText: /^Kaydedilemedi\./ })
+        .waitFor();
       assert.equal(
         (
           await page.evaluate(
