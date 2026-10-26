@@ -9,7 +9,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(
   join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
 );
-const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8173";
+const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117";
 const root = "artifacts/mobile-game-ui";
 await mkdir(root, { recursive: true });
 const browser = await chromium.launch({
@@ -241,9 +241,12 @@ try {
     await p.waitForTimeout(1800);
     assert(await p.getByTestId("studio-intro").isVisible());
     assert.equal(await button(p, "Oyuna Başla").count(), 0);
-    await p.screenshot({
-      path: join(root, "slow-fonts-one-studio-screen.png"),
-    });
+    assert.equal(
+      await p
+        .getByTestId("studio-intro")
+        .evaluate((el) => getComputedStyle(el).backgroundColor),
+      "rgb(0, 0, 0)",
+    );
     releaseFonts();
     await button(p, "Oyuna Başla").waitFor();
     assert.equal(await p.getByTestId("studio-intro").count(), 0);
@@ -267,7 +270,9 @@ try {
   );
 } catch (error) {
   if (current && !current.isClosed()) {
-    await current.screenshot({ path: join(root, "failure.png") });
+    await current
+      .screenshot({ path: join(root, "failure.png"), timeout: 5000 })
+      .catch(() => {});
     await writeFile(
       join(root, "failure.txt"),
       String(error) + "\n" + (await current.locator("body").innerText()),
