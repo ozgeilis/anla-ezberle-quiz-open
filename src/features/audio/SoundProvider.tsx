@@ -106,7 +106,10 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
     const visibility = () => sound.setActive(active());
     // Stop the audio graph before a full document navigation tears WebKit down.
     // pagehide also handles BFCache; pageshow restores only the existing saved policy.
-    const pagehide = () => sound.setActive(false);
+    const pagehide = (event: PageTransitionEvent) => {
+      sound.setActive(false);
+      if (!event.persisted) sound.dispose();
+    };
     const gesture = (event: Event) => {
       if (event.isTrusted) sound.activate();
     };
