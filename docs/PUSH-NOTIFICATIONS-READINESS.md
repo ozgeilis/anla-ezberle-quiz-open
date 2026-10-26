@@ -91,6 +91,14 @@ Yerel SQL runner ayrı bir boş veritabanına yalnız şemayı kopyalar; kaynak
 veritabanını resetlemez ve hosted bağlantı kullanmaz. Sağlayıcıya ait `pg_cron`
 nesneleri bu izole fixture'a alınmaz. Test sonrasında şema fixture'ı yerelde kalır.
 
+Ses CI'sinde mevcut tam sayfa geçişleri ve gerçek AudioContext kontrolleri
+korunur. Playwright 1.56'da upstream tarafından belgelenen reload çökmesi
+nedeniyle yalnız ses runner'ı 1.59.0'a sabitlendi; test atlama/otomatik retry
+ya da başarısızlığı başarıya çevirme yoktur. İlgili upstream kayıt:
+[WebKit reload regression #37766](https://github.com/microsoft/playwright/issues/37766).
+Aynı zamanda tam sayfa kapanışında web ses kaynakları bırakılır; BFCache için
+saklanan sayfa ise yalnız duraklatılır. Bu kontroller fiziksel Safari/iOS kabulü değildir.
+
 ## Salt okunur canlı inceleme
 
 Kaynak ağacının redakte edilmiş gizli bilgi taramasında yeni değişikliklerde
