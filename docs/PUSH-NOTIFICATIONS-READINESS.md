@@ -1,6 +1,6 @@
 # Ayarlar ve push bildirimleri — 25 Ekim 2026
 
-**Durum: kod ve yerel kabul hazır; gerçek telefon push'u etkin veya doğrulanmış değildir.**
+**Durum (26 Ekim): kod/yerel kabul hazır, onaylı Frankfurt kapalı test backend'i dağıtıldı; genel gönderim kapalı, gerçek telefon teslimi doğrulanmadı.**
 Bu belge bir üretim dağıtım onayı değildir. Ana sayfa, kategoriler, alt navigasyon,
 görseller, soru bankası ve hesap silme sunucu işlemleri değiştirilmedi.
 
@@ -55,19 +55,19 @@ OS izni, sunucudaki tercih ve mevcut cihaz kaydı ayrı değerlendirilir.
 
 ## Gerçekleştirilen kontroller
 
-| Kontrol                             | Sonuç          | Kapsam                                                                |
-| ----------------------------------- | -------------- | --------------------------------------------------------------------- |
-| `pnpm check`                        | PASS: 309/309  | Soru bütünlüğü, TypeScript, lint; 299 mevcut + 10 yeni test           |
-| İzole yerel PostgreSQL kabulü       | PASS: 23       | Gerçek SQL/RLS/RPC; sentetik hesap/oturum satırları; sonunda ROLLBACK |
-| Ayarlar/hesap tarayıcı smoke        | PASS: 27 grup  | İzole sentetik HTTP fixture; gerçek Chrome ve uygulama bileşenleri    |
-| Açık/koyu responsive ekranlar       | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                          |
-| Android/iOS/web Expo export         | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                   |
-| Android/iOS prebuild                | PASS           | Bildirim plugin'i, Android channel/izin ve iOS entitlement üretimi    |
-| Android Firebase/EAS kurulumu      | PASS          | Onaylı package için FCM V1 anahtarı atandı; yalnız preview file env |
-| Gerçek Firebase dosyasıyla prebuild | PASS          | İzole Android fixture; Google Services dosyası ve Gradle plugin'i |
-| Gerçek Android token/teslim/tıklama | DOĞRULANAMADI  | Yeni push APK'sı ve sunucu rollout'u henüz yok                     |
-| Gerçek iOS token/teslim/tıklama     | DOĞRULANAMADI  | Ücretli Apple Developer üyeliği yok                                   |
-| Canlı push endpoint/kuyruk          | MEVCUT DEĞİL   | Üretim migration/function uygulanmadı                                 |
+| Kontrol                               | Sonuç          | Kapsam                                                                      |
+| ------------------------------------- | -------------- | --------------------------------------------------------------------------- |
+| `pnpm check`                          | PASS: 309/309  | Soru bütünlüğü, TypeScript, lint; 299 mevcut + 10 yeni test                 |
+| İzole yerel PostgreSQL kabulü         | PASS: 23       | Gerçek SQL/RLS/RPC; sentetik hesap/oturum satırları; sonunda ROLLBACK       |
+| Ayarlar/hesap tarayıcı smoke          | PASS: 27 grup  | İzole sentetik HTTP fixture; gerçek Chrome ve uygulama bileşenleri          |
+| Açık/koyu responsive ekranlar         | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                                |
+| Android/iOS/web Expo export           | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                         |
+| Android/iOS prebuild                  | PASS           | Bildirim plugin'i, Android channel/izin ve iOS entitlement üretimi          |
+| Android Firebase/EAS kurulumu         | PASS           | Onaylı package için FCM V1 anahtarı atandı; yalnız preview file env         |
+| Gerçek Firebase dosyasıyla prebuild   | PASS           | İzole Android fixture; Google Services dosyası ve Gradle plugin'i           |
+| Gerçek Android token/teslim/tıklama   | DOĞRULANAMADI  | Yeni kabul APK'sı hazırlanıyor; fiziksel test bekleniyor                    |
+| Gerçek iOS token/teslim/tıklama       | DOĞRULANAMADI  | Ücretli Apple Developer üyeliği yok                                         |
+| Frankfurt kapalı test endpoint/kuyruk | PASS           | Yalnız onaylı migration + push-dispatch v1; genel kapalı, zamanlayıcı pasif |
 
 SQL testi: RLS/izin sınırları, rollout kapalı durum, çok cihaz, hesap izolasyonu,
 alt tercihlerin korunması, gerçek olay trigger'ı, yinelenme, tercih tekrar kontrolü,
@@ -101,25 +101,65 @@ ya da başarısızlığı başarıya çevirme yoktur. İlgili upstream kayıt:
 Aynı zamanda tam sayfa kapanışında web ses kaynakları bırakılır; BFCache için
 saklanan sayfa ise yalnız duraklatılır. Bu kontroller fiziksel Safari/iOS kabulü değildir.
 
-## Salt okunur canlı inceleme
+## Frankfurt kapalı test uygulaması — 26 Ekim
 
-Kaynak ağacının redakte edilmiş gizli bilgi taramasında yeni değişikliklerde
-bulgu yok. Tüm dosya taramasındaki tek bulgu, mevcut içerik denetimindeki
-`dedup_key` konu anahtarıdır; kimlik bilgisi değildir ve değiştirilmedi.
-Web JavaScript ve çözülmüş Android/iOS Hermes string'lerinde özel anahtar
-örüntüsü bulunmadı. Ham Hermes dosyasındaki SDK'nın `sb_secret_` sabiti bitişik
-string tablosu nedeniyle yanlış eşleşti; derleyicinin bytecode dökümüyle ayrıldı.
-Bu statik tarama gerçek push teslimi veya bağımsız kapsamlı güvenlik denetimi
-yerine geçmez. Native büyük yazı ve ekran okuyucu kabulü açık kalır.
+Kullanıcı PR #7 kapalı test planını açıkça onayladı. Yalnız Frankfurt
+`mqyuihiobkomjfipxehj` hedeflendi. İlk dry-run iki ilgisiz eski migration da
+listediği için durduruldu. Orijinal dosyalara veya migration geçmişine müdahale
+edilmeden ayrı dağıtım klasöründeki kapsam daraltıldı. İkinci dry-run yalnız
+onaylı `20261025000100_push_notifications.sql` dosyasını gösterdi; SHA-256
+`446488aa4a72e7deb92ef80b934108b9282a6ca73d640bc1a38ea30f9ed832f7`
+doğrulandı ve yalnız bu migration uygulandı. Seed/role dosyası çalıştırılmadı.
+İlgisiz 20261021000600/20261021000700 dosyaları uygulanmadı veya uygulanmış
+olarak işaretlenmedi.
 
-Frankfurt `mqyuihiobkomjfipxehj` projesinde yalnız schema/migration metaverisi
-salt okunur transaction ile incelendi; kullanıcı satırı dışarı aktarılmadı.
-Hesap silme migration'ı mevcut ve `accountDeletionEnabled=true`. Gereken
-arkadaşlık/davet/maç/oda/Inbox tabloları mevcut. Inbox RLS/FORCE RLS açık.
-`push_config` ve `push_settings` yok; Edge Functions listesinde yalnız mevcut
-`account-delete` ve `online-duel` var. Canlı veri/izin/function/ayar değiştirilmedi.
+- `push-dispatch` ACTIVE v1. Eksik/yanlış dispatcher bearer 401, doğru bearer
+  200 ve sıfır gönderim/receipt verdi. İki mevcut Edge Function değiştirilmedi.
+- `push_config.enabled=false`; henüz test hesabı allowlist'i veya cihaz tokenı
+  yok. Yeni `anla-push-dispatch-v1` dakika zamanlayıcısı **pasif**. Mevcut diğer
+  zamanlayıcı korunuyor. Cron komutunda düz metin anahtar yok; Vault kullanılıyor.
+- Expo Viewer robotu ve yalnız sunucu tarafında iki sır kullanıldı. Hesap çapında
+  Enhanced push security kullanıcı onayıyla etkinleştirildi. Viewer tokenıyla
+  gerçek Expo boş receipt isteği kabul edildi; bu, telefon teslim testi değildir.
+- İlk Expo tokenı oluşturulurken özel araç çıktısında görünmesi nedeniyle iptal
+  edildi. Yerine oluşturulan Viewer tokenı çıktıya yazılmadan özel dosyaya alındı,
+  pano temizlendi ve sayfa hemen yenilendi. Yalnız yeni token sunucuya yüklendi;
+  ilk token yeniden etkinleştirilmemeli. Git/uygulama/CI'ye token eklenmedi.
+- İki yeni sentetik hesapla **10 hosted Auth/RPC kontrolü** geçti: gerçek oturum,
+  anonim/worker reddi, tercihler/hesap izolasyonu, kapalı rollout ve iptal edilmiş
+  oturumun reddi. İkinci hesap mevcut canlı hesap-silme akışında kendi parolasıyla
+  silindi; Auth yokluğu ve yeniden girişin reddi doğrulandı. Üçüncü hesap açılmadı.
+  Gerçek hesap silinmedi. İlk test hesabı fiziksel kabul için korunuyor.
+- Migration öncesi 29 mevcut tablonun yalnız toplu satır sayısı/içerik özeti
+  alındı; migration sonrasında tamamı aynıydı. Kullanıcı/cevap satırı dışarı
+  aktarılmadı. Son testler sonrası karşılaştırma ayrıca saklanır.
 
-## Üretime geçiş planı — ayrıca açık onay gerekir
+### pg_net platform sınırı
+
+Yönetilen `supabase_admin` sahipliği nedeniyle proje `postgres` rolüyle
+`REVOKE` komutları etkili olmadı; kaldırılmış izin gibi raporlanmıyor. `net`
+kuyruk tabloları PUBLIC SQL grant taşır. **Data API üzerinden net şeması
+406/PGRST106 ile reddedildi**, `anon`/`authenticated` NOLOGIN ve platform dışı
+LOGIN rolü yok. Vault decrypted-secret okuma uygulama rollerine kapalıdır.
+Bununla birlikte doğrudan DB bağlantısı kurabilen güvenilen platform/DB rolleri
+bekleyen HTTP başlıklarını okuyabilir. Vault bu geçici başlığı gizlemez.
+Yalnız sınırlı dispatcher bearer kullanılır; Expo tokenı kuyrukta yer almaz.
+`net` hiçbir zaman API'ye açılmamalı; yeni doğrudan DB LOGIN rolleri güvenlik
+incelemesi gerektirir. Bu platform sınırı nedeniyle pasif zamanlayıcıya güvenlik
+kapısı kondu; gerçek cihaz kabulü öncesinde etkin gönderim iddia edilmez.
+Kaynaklar: [Supabase pg_net izinleri](https://supabase.com/docs/guides/database/extensions/pg_net),
+[REVOKE sınırı](https://supabase.com/kb/troubleshooting/revoking-access-to-pg_net-objects-has-no-effect),
+[HTTP başlıkları](https://supabase.com/kb/troubleshooting/database-roles-can-read-request-headers-queued-by-pg_net).
+
+### Kod/paket taraması
+
+Değişen dosyaların redakte taramasında kimlik bilgisi bulgusu yoktu. Tüm ağaçtaki
+eski `dedup_key` konu anahtarı kimlik bilgisi değildir. Önceki web JS ve çözülmüş
+Hermes string taramaları özel anahtar örüntüsü bulmadı. Her yeni APK ayrıca
+incelenmeli. Bunlar bağımsız kapsamlı güvenlik denetimi, gerçek telefon teslimi,
+TalkBack/VoiceOver veya native büyük yazı kabulünün yerine geçmez.
+
+## Kalan kabul ve genel yayına geçiş planı — genel yayın için ayrıca açık onay gerekir
 
 1. Mevcut açık PR #2/#3/#6 ile entegrasyon sırasını çöz. Bu dal main tabanlıdır;
    onların görsel/oyun değişikliklerini içermez. Bu dalın Android package değeri,
