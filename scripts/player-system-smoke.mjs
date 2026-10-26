@@ -189,7 +189,7 @@ try {
     cb = await context(390, "dark", users[1]);
   const a = await ca.newPage(),
     b = await cb.newPage();
-  await a.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await a.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   const username = a.getByLabel("Benzersiz kullanıcı adı", { exact: true });
   await username.fill("admin");
   await a

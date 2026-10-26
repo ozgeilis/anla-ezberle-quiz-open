@@ -136,11 +136,13 @@ export async function referenceUiSmoke(browser, root) {
     await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
     await page.getByRole("heading", { name: "Ayarlar", exact: true }).waitFor();
     // Draft appearance must not change stored theme; back discards it.
-    await page
-      .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-      .click();
-    const dialog = page.getByRole("dialog", { name: "Görünüm ayarları" });
-    await dialog.waitFor();
+    await page.getByRole("button", { name: "Tema", exact: true }).click();
+    const dialog = page;
+    const themeHeading = page.getByRole("heading", {
+      name: "Tema",
+      exact: true,
+    });
+    await themeHeading.waitFor();
     const before = await page.evaluate(
       (k) => JSON.parse(localStorage.getItem(k)).profile,
       key,
@@ -173,10 +175,8 @@ export async function referenceUiSmoke(browser, root) {
       ).theme,
       before.theme,
     );
-    await page
-      .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-      .click();
-    await dialog.waitFor();
+    await page.getByRole("button", { name: "Tema", exact: true }).click();
+    await themeHeading.waitFor();
     await dialog
       .getByRole("radio", {
         name:
@@ -213,7 +213,7 @@ export async function referenceUiSmoke(browser, root) {
       await page.evaluate(() => window.__restoreReferenceStorage());
     }
     await dialog.getByRole("button", { name: "Kaydet", exact: true }).click();
-    await dialog.waitFor({ state: "hidden" });
+    await themeHeading.waitFor({ state: "hidden" });
     const expected = state.colorScheme === "light" ? "dark" : "light";
     assert.equal(
       (
@@ -225,14 +225,13 @@ export async function referenceUiSmoke(browser, root) {
       expected,
     );
     await page.reload({ waitUntil: "networkidle" });
-    await page
-      .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-      .click();
+    await page.getByRole("button", { name: "Tema", exact: true }).click();
     await dialog
       .getByRole("radio", { name: "Sistem temasını izle", exact: true })
       .click();
     await dialog.getByRole("button", { name: "Kaydet", exact: true }).click();
-    await dialog.waitFor({ state: "hidden" });
+    await themeHeading.waitFor({ state: "hidden" });
+    await page.getByRole("button", { name: "Profil", exact: true }).click();
     await page
       .getByRole("button", { name: "Avatarını değiştir", exact: true })
       .click();
