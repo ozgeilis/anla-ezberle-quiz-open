@@ -3,7 +3,7 @@ import { stageDefinition } from "../../domain/game/stages";
 import React, { useEffect, useState } from "react";
 import { Platform, Share, View } from "react-native";
 import { router } from "expo-router";
-import { Button, Chip, Dialog, Txt } from "../../components/ui";
+import { Button, Chip, Dialog, TextAction, Txt } from "../../components/ui";
 import { resultPresentation } from "../results/presentation";
 import { ResultExperience } from "../results/ResultExperience";
 import { formatTime, stats } from "../../domain/game/engine";
@@ -16,6 +16,7 @@ export function ResultsScreen() {
   const { play } = useSound();
   const theme = useTheme();
   const [shareOpen, setShareOpen] = useState(false),
+    [optionsOpen, setOptionsOpen] = useState(false),
     [shareMessage, setShareMessage] = useState("");
   useEffect(() => {
     if (result)
@@ -172,39 +173,47 @@ export function ResultsScreen() {
               ? "Sonucun bu cihazda kaydedildi. ✓"
               : "Sonucun henüz kaydedilmedi."}
         </Txt>
-        <Button
+        <TextAction
+          color="#D9F3E9"
           title="Yanlış cevapları incele"
-          icon="book-open"
-          variant="outline"
           onPress={() => router.push("/results/review")}
         />
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-          <View style={{ flexGrow: 1, flexBasis: 140 }}>
-            <Button
-              title="Paylaş"
-              icon="share-2"
-              variant="outline"
-              compact
-              onPress={() => setShareOpen(true)}
-            />
-          </View>
-          <View style={{ flexGrow: 1, flexBasis: 140 }}>
-            <Button
-              title="Sıralamaya Bak"
-              icon="bar-chart-2"
-              variant="outline"
-              compact
-              onPress={() => router.push("/ranking")}
-            />
-          </View>
-        </View>
-        <Button
-          title="Arkadaşına Meydan Oku"
-          icon="users"
-          variant="blue"
-          onPress={() => router.push("/online/players")}
+        <TextAction
+          color="#D9F3E9"
+          title="Diğer işlemler"
+          onPress={() => setOptionsOpen(true)}
         />
       </ResultExperience>
+      <Dialog
+        visible={optionsOpen}
+        title="Sonuç İşlemleri"
+        onClose={() => setOptionsOpen(false)}
+      >
+        <Button
+          title="Paylaş"
+          icon="share-2"
+          onPress={() => {
+            setOptionsOpen(false);
+            setShareOpen(true);
+          }}
+        />
+        <Button
+          title="Sıralamaya Bak"
+          variant="outline"
+          onPress={() => {
+            setOptionsOpen(false);
+            router.push("/ranking");
+          }}
+        />
+        <Button
+          title="Arkadaşına Meydan Oku"
+          variant="outline"
+          onPress={() => {
+            setOptionsOpen(false);
+            router.push("/online/players");
+          }}
+        />
+      </Dialog>
       <Dialog
         visible={shareOpen}
         title="Skorunu paylaş"

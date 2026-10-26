@@ -20,9 +20,15 @@ const oracle = spawnSync(
 );
 assert.equal(oracle.status, 0);
 const answers = JSON.parse(oracle.stdout);
+const origin = process.env.RESULT_ORIGIN ?? "http://127.0.0.1:8117";
 const root = "artifacts/result-experience";
 await mkdir(root, { recursive: true });
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.SETTINGS_BROWSER_CHANNEL
+    ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
+    : {}),
+});
 try {
   const ctx = await browser.newContext({
     viewport: { width: 390, height: 844 },
@@ -33,7 +39,7 @@ try {
   const page = await ctx.newPage(),
     errors = [];
   page.on("pageerror", (e) => errors.push(e.message));
-  await page.goto("http://127.0.0.1:8117/", { waitUntil: "domcontentloaded" });
+  await page.goto(`${origin}/`, { waitUntil: "domcontentloaded" });
   await page.getByTestId("studio-intro").waitFor();
   await page.screenshot({ path: join(root, "studio-cold-start.png") });
   await page
@@ -47,10 +53,9 @@ try {
     [4, "İyi bir başlangıç!", "beginning"],
     [2, "Pes etme!", "learning"],
   ]) {
-    await page.goto(
-      "http://127.0.0.1:8117/categories?category=mixed&difficulty=easy",
-      { waitUntil: "networkidle" },
-    );
+    await page.goto(`${origin}/categories?category=mixed&difficulty=easy`, {
+      waitUntil: "networkidle",
+    });
     await page
       .getByRole("button", { name: "Oyuna Başla", exact: true })
       .click();
@@ -125,16 +130,21 @@ try {
     "Tab return must not replay studio intro",
   );
   await page.getByRole("tab", { name: "Kategoriler", exact: true }).click();
-  await page.getByText("Oyun Kategorileri", { exact: true }).waitFor();
+  await page
+    .getByRole("heading", { name: "Kategoriler", exact: true })
+    .waitFor();
   const cards = page.getByRole("radio", {
     name: /^(Kur'an ve Dualar|Peygamberimizin Hayatı ve Sahabe|Peygamber Kıssaları|İbadet ve Fıkıh|İman ve Ahlak|İslam Tarihi ve Medeniyeti)\./,
   });
   assert.equal(await cards.count(), 6);
-  for (const text of await cards.allTextContents())
-    assert(
-      !/\d+\s*soru/.test(text),
-      "Counts remain in data, not visual card labels",
-    );
+  assert.equal(
+    (await cards.allTextContents()).reduce(
+      (sum, text) => sum + Number(text.match(/(\d+) soru/)[1]),
+      0,
+    ),
+    1500,
+    "The six current category counts partition the bank",
+  );
   await page.waitForFunction(() =>
     Array.from(document.images).every((i) => i.complete && i.naturalWidth > 0),
   );
@@ -265,10 +275,15 @@ try {
   const lastCard = page.getByRole("button", { name: /^Kadın Sahabeler\./ });
   await lastCard.evaluate((el) => el.scrollIntoView({ block: "center" }));
   const lastBox = await lastCard.boundingBox();
-  const panel = await page.getByTestId("category-start-panel").boundingBox();
+  assert.equal(
+    await page.getByTestId("category-start-panel").count(),
+    0,
+    "Catalog has no obstructing fixed game panel",
+  );
+  const nav = await page.getByRole("tablist").boundingBox();
   assert(
-    lastBox.y + lastBox.height <= panel.y,
-    "Last card can scroll fully above the reserved start panel",
+    lastBox.y + lastBox.height <= nav.y,
+    "Last card scrolls above the navigation",
   );
   assert.deepEqual(errors, []);
   await writeFile(

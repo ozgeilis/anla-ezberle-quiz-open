@@ -8,9 +8,14 @@ const require = createRequire(import.meta.url),
     join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
   );
 const root = "artifacts/leaderboard-ui",
-  origin = "http://127.0.0.1:8117";
+  origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117";
 await mkdir(root, { recursive: true });
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.SETTINGS_BROWSER_CHANNEL
+    ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
+    : {}),
+});
 const checks = [];
 let lastPage;
 const button = (p, name) => p.getByRole("button", { name, exact: true });

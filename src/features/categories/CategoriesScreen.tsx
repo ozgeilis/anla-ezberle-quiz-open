@@ -1,34 +1,15 @@
-import { SettingsButton } from "../../components/ui/SettingsButton";
-import { gameStages, stageDefinition } from "../../domain/game/stages";
-import {
-  categoryPool,
-  playCategoryName,
-} from "../../domain/game/play-categories";
-import {
-  learningTopicPool,
-  learningTopicName,
-} from "../../domain/game/learning";
-import { Tap, Button, Icon, Txt, s } from "../../components/ui";
-import { IconMedallion } from "../../components/ui/visuals";
-import React, { useDeferredValue, useMemo, useState } from "react";
-import { ScrollView, View, useWindowDimensions } from "react-native";
+import React, { useEffect, useRef, useState } from "react";
+import { View } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
-import { ReferenceHero } from "../../components/game/ReferenceHero";
-import { CategoryDifficulty } from "./CategoryDifficulty";
-import {
-  Difficulty,
-  difficultyName,
-  availableQuestions,
-} from "../../content/questions";
-import { useGame } from "../../storage/GameProvider";
-import { colors as c, shadows, useTheme } from "../../theme/tokens";
-import {
-  PreparationSelection,
-  broadPreparationFromParams,
-  preparationStatus,
-} from "./preparation";
+import { Page, TextAction, Txt } from "../../components/ui";
+import { SettingsButton } from "../../components/ui/SettingsButton";
+import { availableQuestions, type Difficulty } from "../../content/questions";
+import { useGameLibrary } from "../../storage/GameProvider";
+import { broadPreparationFromParams } from "./preparation";
 import { categoryOptions, upcomingCollections } from "./learning-options";
 import { LearningChoices, UpcomingLearning } from "./LearningChoices";
+import { CategoryDifficulty } from "./CategoryDifficulty";
+import type { PreparationSelection } from "./preparation";
 
 export function CategoriesScreen() {
   const params = useLocalSearchParams<{
@@ -39,434 +20,100 @@ export function CategoriesScreen() {
     playCategory?: string;
   }>();
   const initial = broadPreparationFromParams(params);
-  // A new home entry must preselect its own filter, even if this tab was visited.
+  // Existing bookmarked category links still open a preparation, never start a game.
+  if (initial.playCategory || initial.topic || initial.category)
+    return <LegacyPreparationLink initial={initial} />;
   return (
-    <PreparationScreen
-      key={`${initial.playCategory ?? ""}:${initial.category ?? ""}:${initial.topic ?? ""}:${initial.difficulty ?? ""}:${initial.stage ?? ""}`}
-      initial={initial}
+    <CategoryCatalogue
+      key={initial.difficulty ?? "all"}
+      initialDifficulty={initial.difficulty}
     />
   );
 }
-
-function PreparationScreen({ initial }: { initial: PreparationSelection }) {
-  const [selection, setSelection] = useState(initial);
-  const assessedSelection = useDeferredValue(selection);
-  const assessing = selection !== assessedSelection;
-  const [attempted, setAttempted] = useState(false);
-  const { start, startError, ready, session, data, storageError } = useGame();
-  const topics = useMemo(
-    () =>
-      categoryOptions(
-        availableQuestions,
-        assessedSelection.difficulty,
-        assessedSelection.stage,
-        data.games,
-      ),
-    [assessedSelection.difficulty, assessedSelection.stage, data.games],
-  );
-  const theme = useTheme();
-  const { width, fontScale } = useWindowDimensions();
-  const compact = width < 360;
-  const status = useMemo(
-    () => preparationStatus(availableQuestions, assessedSelection, data.games),
-    [assessedSelection, data.games],
-  );
-  const update = (next: Partial<PreparationSelection>) => {
-    setSelection((current) => ({ ...current, ...next }));
-    setAttempted(false);
-  };
-  const stageAvailability = useMemo(() => {
-    const pool = assessedSelection.playCategory
-      ? categoryPool(availableQuestions, assessedSelection.playCategory)
-      : assessedSelection.topic
-        ? learningTopicPool(availableQuestions, assessedSelection.topic)
-        : availableQuestions;
-    return Object.fromEntries(
-      gameStages.map((stage) => {
-        const status = preparationStatus(
-          pool,
-          { category: "mixed", stage: stage.id },
-          data.games,
-        );
-        return [
-          stage.id,
-          status.canStart ||
-            ("canReplay" in status && status.canReplay === true),
-        ];
-      }),
-    );
-  }, [assessedSelection.playCategory, assessedSelection.topic, data.games]);
-  const categoryTitle = selection.playCategory
-    ? playCategoryName(selection.playCategory)
-    : selection.topic
-      ? learningTopicName(selection.topic)
-      : selection.category === "mixed"
-        ? "Karma"
-        : "Kategori seç";
-  const stackedFooter =
-    compact ||
-    fontScale > 1.2 ||
-    (width < 600 &&
-      (categoryTitle.length > 24 ||
-        ("canReplay" in status && status.canReplay === true)));
-  const difficulties: { id: Difficulty }[] = [
-    { id: "easy" },
-    { id: "medium" },
-    { id: "hard" },
-  ];
+// Consume historical links once; returning to the tab must show the catalogue.
+function LegacyPreparationLink({ initial }: { initial: PreparationSelection }) {
+  const opened = useRef(false);
+  useEffect(() => {
+    if (opened.current) return;
+    opened.current = true;
+    router.setParams({
+      category: undefined,
+      topic: undefined,
+      stage: undefined,
+      playCategory: undefined,
+      difficulty: undefined,
+    });
+    router.push({ pathname: "/prepare", params: { ...initial } });
+  }, [initial]);
   return (
-    <View style={{ flex: 1 }}>
-      <ScrollView
-        testID="category-scroll"
-        style={{ flex: 1, minHeight: 0, backgroundColor: theme.background }}
-        contentContainerStyle={{
-          width: "100%",
-          maxWidth: 860,
-          alignSelf: "center",
-          // Footer and tab bar occupy their own flex rows, not an overlay.
-          paddingBottom: 24,
-        }}
-        keyboardShouldPersistTaps="handled"
-      >
-        <ReferenceHero>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: 8,
-              paddingVertical: 6,
-            }}
-          >
-            <Tap
-              label="Ana sayfaya dön"
-              onPress={() => router.replace("/")}
-              style={{
-                width: 44,
-                height: 44,
-                borderRadius: 22,
-                backgroundColor: "#004748",
-                borderWidth: 1,
-                borderColor: c.gold,
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Icon name="chevron-left" color={c.white} size={24} />
-            </Tap>
+    <Page title="Oyun Hazırlığı">
+      <Txt>Seçimin açılıyor…</Txt>
+    </Page>
+  );
+}
+function CategoryCatalogue({
+  initialDifficulty,
+}: {
+  initialDifficulty?: Difficulty;
+}) {
+  const { data } = useGameLibrary();
+  const [difficulty, setDifficulty] = useState(initialDifficulty),
+    [filters, setFilters] = useState(!!initialDifficulty);
+  const topics = categoryOptions(
+    availableQuestions,
+    difficulty,
+    undefined,
+    data.games,
+  );
+  const open = (params: { playCategory?: string; category?: string }) =>
+    router.push({
+      pathname: "/prepare",
+      params: { ...params, ...(difficulty ? { difficulty } : {}) },
+    });
+  return (
+    <Page title="Kategoriler" right={<SettingsButton />}>
+      <View testID="category-scroll" style={{ gap: 20 }}>
+        <TextAction
+          title={filters ? "Zorluk filtresini gizle" : "Zorluğa göre filtrele"}
+          onPress={() => setFilters(!filters)}
+        />
+        {filters && (
+          <View style={{ gap: 8 }}>
             <View
-              style={{
-                flex: 1,
-                paddingVertical: 10,
-                borderRadius: 22,
-                borderWidth: 1,
-                borderColor: c.gold,
-                backgroundColor: "rgba(0,71,72,.94)",
-              }}
+              accessibilityRole="radiogroup"
+              accessibilityLabel="Zorluk filtresi"
+              style={{ flexDirection: "row", gap: 8 }}
             >
-              <Txt
-                accessibilityRole="header"
-                size={compact ? 23 : 27}
-                color={c.white}
-                weight="heavy"
-                style={{ textAlign: "center" }}
-              >
-                Kategoriler
-              </Txt>
+              {(["easy", "medium", "hard"] as const).map((level) => (
+                <View key={level} style={{ flex: 1 }}>
+                  <CategoryDifficulty
+                    level={level}
+                    selected={difficulty === level}
+                    onPress={() => setDifficulty(level)}
+                  />
+                </View>
+              ))}
             </View>
-            <SettingsButton />
-          </View>
-        </ReferenceHero>
-        <View
-          style={{
-            gap: 20,
-            padding: compact ? 12 : 16,
-            borderRadius: 28,
-            borderWidth: 1,
-            borderColor: theme.goldBorder,
-            backgroundColor: theme.card,
-            marginHorizontal: 8,
-            marginTop: -12,
-          }}
-        >
-          <View style={{ gap: 12 }}>
-            <Txt accessibilityRole="header" size={20} weight="heavy">
-              Oyun Kategorileri
-            </Txt>
-            <Txt size={14} color={theme.muted}>
-              Resimli kategorileri keşfet, istersen Karma oyna.
-            </Txt>
-            <LearningChoices
-              topics={topics}
-              selected={selection.playCategory}
-              selectedMixed={selection.category === "mixed"}
-              difficulty={selection.difficulty}
-              onSelect={(playCategory) =>
-                update({ playCategory, topic: undefined, category: undefined })
-              }
-              onSelectMixed={() =>
-                update({
-                  category: "mixed",
-                  topic: undefined,
-                  playCategory: undefined,
-                })
-              }
-            />
-          </View>
-
-          <View
-            accessibilityRole="radiogroup"
-            accessibilityLabel="Zorluk seçimi"
-            style={{ gap: 12 }}
-          >
-            <View style={[s.row, { justifyContent: "space-between" }]}>
-              <Txt accessibilityRole="header" size={20} weight="heavy">
-                Zorluk
-              </Txt>
-              <Txt size={12} color={theme.muted}>
-                {selection.difficulty ? "Seçildi ✓" : "Birini seç"}
-              </Txt>
-            </View>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-              {difficulties.map((level) => {
-                const selected = selection.difficulty === level.id;
-                return (
-                  <View
-                    key={level.id}
-                    style={{
-                      flexBasis: fontScale > 1.4 ? "100%" : 0,
-                      flexGrow: 1,
-                      minWidth: 0,
-                    }}
-                  >
-                    <CategoryDifficulty
-                      level={level.id}
-                      selected={selected}
-                      onPress={() =>
-                        update({ difficulty: level.id, stage: undefined })
-                      }
-                    />
-                  </View>
-                );
-              })}
-            </View>
-          </View>
-
-          <View
-            accessibilityRole="radiogroup"
-            accessibilityLabel="Oyun aşaması seçimi"
-            style={{ gap: 12 }}
-          >
-            <Txt accessibilityRole="header" size={20} weight="heavy">
-              Beş aşamada keşfet
-            </Txt>
-            <Txt size={13} color={theme.muted}>
-              Tek zorluk yerine karışık bir aşama seçebilirsin. Her turda 10
-              bağımsız bilgi.
-            </Txt>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-              {gameStages.map((stage) => {
-                const supported = stageAvailability[stage.id];
-                const selected = selection.stage === stage.id;
-                return (
-                  <View
-                    key={stage.id}
-                    style={{ flexBasis: compact ? 120 : 145, flexGrow: 1 }}
-                  >
-                    <Tap
-                      label={`${stage.title} aşaması · ${stage.hint}${supported ? "" : " · Yetersiz bağımsız soru"}`}
-                      role="radio"
-                      selected={selected}
-                      disabled={!supported}
-                      onPress={() =>
-                        update({ stage: stage.id, difficulty: undefined })
-                      }
-                      style={{
-                        minHeight: 146,
-                        padding: 12,
-                        gap: 8,
-                        borderRadius: 20,
-                        borderWidth: 2,
-                        borderColor: selected ? theme.goldBorder : theme.border,
-                        backgroundColor: selected
-                          ? theme.goldSurface
-                          : stage.tone === "rose"
-                            ? theme.roseSurface
-                            : stage.tone === "violet"
-                              ? theme.violetSurface
-                              : theme.mintSurface,
-                        opacity: 1,
-                        boxShadow: selected ? shadows.selected : shadows.card,
-                      }}
-                    >
-                      <IconMedallion
-                        name={stage.icon}
-                        tone={stage.tone}
-                        size={40}
-                      />
-                      <Txt weight="heavy">
-                        {stage.title}
-                        {selected ? " ✓" : ""}
-                      </Txt>
-                      <Txt size={12} color={theme.muted}>
-                        {stage.hint}
-                      </Txt>
-                      {!supported && (
-                        <View style={[s.row, { gap: 5 }]}>
-                          <Icon name="lock" size={12} color={theme.accent} />
-                          <Txt size={11} style={{ flex: 1 }}>
-                            Yeterli bağımsız soru yok
-                          </Txt>
-                        </View>
-                      )}
-                    </Tap>
-                  </View>
-                );
-              })}
-            </View>
-          </View>
-
-          <UpcomingLearning collections={upcomingCollections} />
-        </View>
-      </ScrollView>
-      <View
-        testID="category-start-panel"
-        style={{
-          gap: 6,
-          paddingHorizontal: compact ? 16 : 24,
-          paddingVertical: 8,
-          backgroundColor: theme.dark ? "rgba(0,72,78,0.98)" : c.cream,
-          boxShadow: shadows.dock,
-          borderTopWidth: 1,
-          borderColor: theme.dark ? c.turquoise : c.paleGold,
-        }}
-      >
-        <View
-          style={{ width: "100%", maxWidth: 852, alignSelf: "center", gap: 8 }}
-        >
-          <View
-            style={{
-              flexDirection: stackedFooter ? "column" : "row",
-              gap: 6,
-              alignItems: stackedFooter ? "stretch" : "center",
-            }}
-          >
-            <View style={{ flex: 1, minWidth: 0, gap: 6 }}>
-              <View style={[s.row, { gap: 8 }]}>
-                <Icon
-                  name={status.canStart ? "check-circle" : "info"}
-                  color={theme.dark ? c.tealLight : c.teal}
-                  size={20}
-                />
-                <Txt size={13} weight="heavy" style={{ flex: 1 }}>
-                  {categoryTitle} ·{" "}
-                  {selection.stage
-                    ? stageDefinition(selection.stage).title
-                    : selection.difficulty
-                      ? difficultyName[selection.difficulty]
-                      : "Zorluk seç"}
-                </Txt>
-              </View>
-              {!status.canStart && (
-                <Txt
-                  size={12}
-                  accessibilityLiveRegion="polite"
-                  color={theme.muted}
-                >
-                  {status.message}
-                </Txt>
-              )}
-              {attempted && startError && (
-                <Txt
-                  color={theme.dark ? c.softCoral : c.danger}
-                  accessibilityRole="alert"
-                >
-                  {startError}
-                </Txt>
-              )}
-            </View>
-            <View
-              style={{
-                width: stackedFooter ? "100%" : width >= 760 ? 240 : 190,
-              }}
-            >
-              <Button
-                style={{ minHeight: 48 }}
-                title={assessing ? "Sorular hazırlanıyor…" : "Oyuna Başla"}
-                icon="play"
-                variant="mustard"
-                disabled={
-                  assessing ||
-                  !status.canStart ||
-                  !ready ||
-                  !!session ||
-                  !!storageError
-                }
-                onPress={() => {
-                  if (
-                    assessing ||
-                    !status.canStart ||
-                    (!selection.category &&
-                      !selection.topic &&
-                      !selection.playCategory) ||
-                    (!selection.difficulty && !selection.stage)
-                  )
-                    return;
-                  if (
-                    start(
-                      "mixed",
-                      undefined,
-                      selection.difficulty,
-                      selection.topic,
-                      selection.stage,
-                      { playCategory: selection.playCategory },
-                    )
-                  )
-                    router.push("/quiz");
-                  else setAttempted(true);
-                }}
+            {difficulty && (
+              <TextAction
+                title="Tüm zorlukları göster"
+                onPress={() => setDifficulty(undefined)}
               />
-            </View>
+            )}
           </View>
-          {"canReplay" in status && status.canReplay === true && !session && (
-            <Button
-              title="Görülen sorularla yeniden oyna"
-              icon="rotate-cw"
-              variant="outline"
-              disabled={assessing || !ready || !!storageError}
-              onPress={() => {
-                if (
-                  start(
-                    "mixed",
-                    undefined,
-                    selection.difficulty,
-                    undefined,
-                    selection.stage,
-                    { playCategory: selection.playCategory, allowReplay: true },
-                  )
-                )
-                  router.push("/quiz");
-                else setAttempted(true);
-              }}
-            />
-          )}
-          {!!storageError && (
-            <Txt accessibilityRole="alert" size={12}>
-              {storageError}
-            </Txt>
-          )}
-          {session ? (
-            <>
-              <Txt>Devam eden bir yarışman var.</Txt>
-              <Button
-                title="Yarışmana dön"
-                variant="outline"
-                onPress={() => router.push("/quiz")}
-              />
-            </>
-          ) : null}
-        </View>
+        )}
+        <LearningChoices
+          topics={topics}
+          selectedMixed={false}
+          difficulty={difficulty}
+          onSelect={(playCategory) => open({ playCategory })}
+          onSelectMixed={() => open({ category: "mixed" })}
+        />
+        <UpcomingLearning collections={upcomingCollections} />
+        <Txt size={12}>
+          Hazırlanıyor olarak işaretlenen koleksiyonlar henüz oynanamaz.
+        </Txt>
       </View>
-    </View>
+    </Page>
   );
 }

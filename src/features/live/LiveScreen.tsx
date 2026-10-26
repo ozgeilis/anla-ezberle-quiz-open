@@ -20,6 +20,7 @@ import {
   Icon,
   Page,
   Tap,
+  TextAction,
   Txt,
   s,
 } from "../../components/ui";
@@ -58,9 +59,9 @@ function Jewel({ children }: { children: React.ReactNode }) {
     <LinearGradient
       colors={gradients.hero}
       style={{
-        padding: 22,
+        padding: 16,
         borderRadius: radius.card,
-        gap: 15,
+        gap: 12,
         overflow: "hidden",
         borderWidth: 1,
         borderColor: c.turquoise,
@@ -172,7 +173,7 @@ function Podium({ players }: { players: LivePlayer[] }) {
             <Txt size={11} color={c.navy}>
               @{p.username}
             </Txt>
-            <Txt size={22} weight="heavy" color={c.navy}>
+            <Txt size={18} weight="heavy" color={c.navy}>
               {p.score}
             </Txt>
             <Txt weight="heavy" color={c.navy}>
@@ -355,8 +356,8 @@ function LiveController({
         {!actor ? (
           <Jewel>
             <View style={s.row}>
-              <Cup size={54} />
-              <Txt size={27} weight="heavy" color={c.gold} style={{ flex: 1 }}>
+              <Cup size={36} />
+              <Txt size={18} weight="heavy" color={c.gold} style={{ flex: 1 }}>
                 Bilgiyi paylaş, heyecanı yaşa!
               </Txt>
             </View>
@@ -398,9 +399,9 @@ function LiveController({
           <>
             <Jewel>
               <View style={[s.row, { gap: 12 }]}>
-                <Cup size={62} />
+                <Cup size={36} />
                 <View style={{ flex: 1 }}>
-                  <Txt size={26} color={c.white} weight="heavy">
+                  <Txt size={18} color={c.white} weight="heavy">
                     Bilgi buluşması
                   </Txt>
                   <Txt color={c.gold}>Özel oda · 2–8 oyuncu</Txt>
@@ -423,7 +424,7 @@ function LiveController({
               </Txt>
             </Jewel>
             <Card style={{ gap: 13, borderColor: theme.accent }}>
-              <Txt size={22} weight="heavy">
+              <Txt size={18} weight="heavy">
                 Davet kodun var mı?
               </Txt>
               <Txt color={theme.muted}>
@@ -441,9 +442,9 @@ function LiveController({
                   setJoin(v.toUpperCase().replace(/[^A-Z2-9]/g, ""))
                 }
                 style={{
-                  fontSize: 27,
+                  fontSize: 20,
                   fontWeight: "800",
-                  letterSpacing: 6,
+                  letterSpacing: 4,
                   textAlign: "center",
                   padding: 16,
                   color: theme.goldInk,
@@ -463,7 +464,7 @@ function LiveController({
             </Card>
             {!!live.rooms.length && (
               <Card style={{ gap: 10 }}>
-                <Txt size={20} weight="heavy">
+                <Txt size={18} weight="heavy">
                   Son odaların
                 </Txt>
                 {live.rooms.slice(0, 6).map((item) => (
@@ -496,7 +497,7 @@ function LiveController({
                       },
                     ]}
                   >
-                    <Txt color={c.white} weight="heavy" size={21}>
+                    <Txt color={c.white} weight="heavy" size={18}>
                       Senin bilgi odan
                     </Txt>
                     <Txt color={c.tealLight} size={12}>
@@ -505,10 +506,10 @@ function LiveController({
                   </View>
                   <Txt
                     accessibilityLabel={`Oda kodu ${room.code.split("").join(" ")}`}
-                    size={width < 360 ? 34 : 44}
+                    size={24}
                     weight="heavy"
                     color={c.gold}
-                    style={{ textAlign: "center", letterSpacing: 5 }}
+                    style={{ textAlign: "center", letterSpacing: 3 }}
                   >
                     {room.code}
                   </Txt>
@@ -524,7 +525,7 @@ function LiveController({
                       style={{ flex: 1 }}
                       title="Kopyala"
                       icon="copy"
-                      variant="mustard"
+                      variant="outline"
                       onPress={() => void copy()}
                     />
                     <Button
@@ -533,15 +534,12 @@ function LiveController({
                       style={{ flex: 1 }}
                       title="Paylaş"
                       icon="share-2"
-                      variant="blue"
+                      variant="outline"
                       onPress={() => void share()}
                     />
                   </View>
-                  <Button
-                    compact
+                  <TextAction
                     title="WhatsApp ile Davet Et"
-                    icon="message-circle"
-                    variant="green"
                     onPress={() => void whatsapp()}
                   />
                   <Txt color={c.white} size={11}>
@@ -551,7 +549,7 @@ function LiveController({
                   </Txt>
                 </Jewel>
                 <Card style={{ gap: 12 }}>
-                  <Txt size={22} weight="heavy">
+                  <Txt size={18} weight="heavy">
                     Bekleme odası
                   </Txt>
                   {room.players.map((p) => (
@@ -571,7 +569,7 @@ function LiveController({
                         },
                       ]}
                     >
-                      <Avatar variant={p.avatar} size={48} />
+                      <Avatar variant={p.avatar} size={36} />
                       <View style={{ flex: 1, minWidth: 0, gap: 2 }}>
                         <Txt weight="heavy" size={16}>
                           {p.name}
@@ -605,7 +603,7 @@ function LiveController({
                     <Button
                       title="Yarışmayı Başlat"
                       icon="play"
-                      variant="mustard"
+                      variant="green"
                       disabled={
                         live.busy ||
                         room.players.length < 2 ||
@@ -624,8 +622,8 @@ function LiveController({
                         : "Herkes hazır! Oda sahibi yarışmayı başlatabilir."}
                   </Txt>
                 </Card>
-                <Card style={{ gap: 15 }}>
-                  <Txt size={21} weight="heavy">
+                <Card style={{ gap: 12 }}>
+                  <Txt size={18} weight="heavy">
                     {host ? "Yarışmayı hazırla" : "Oda ayarları"}
                   </Txt>
                   <Txt color={theme.muted}>
@@ -764,7 +762,7 @@ function LiveController({
                       </Txt>
                     </>
                   ) : (
-                    <Txt size={20} weight="heavy" color={theme.accent}>
+                    <Txt size={18} weight="heavy" color={theme.accent}>
                       {topicTitle(room.settings.topic)} ·{" "}
                       {levelTitle(room.settings.level)} · {room.settings.count}{" "}
                       soru
@@ -774,7 +772,7 @@ function LiveController({
               </>
             ) : room.state === "countdown" ? (
               <Jewel>
-                <Txt color={c.white} size={26} weight="heavy">
+                <Txt color={c.white} size={18} weight="heavy">
                   Herkes hazır!
                 </Txt>
                 <View style={{ alignItems: "center" }}>
@@ -818,7 +816,7 @@ function LiveController({
                       ]}
                     >
                       <Icon name="clock" color={c.gold} />
-                      <Txt size={26} weight="heavy" color={c.gold}>
+                      <Txt size={18} weight="heavy" color={c.gold}>
                         {room.phase === "answer"
                           ? Math.max(
                               0,
@@ -846,7 +844,7 @@ function LiveController({
                     backgroundColor: c.cream,
                     borderColor: c.gold,
                     gap: 14,
-                    padding: 22,
+                    padding: 16,
                   }}
                 >
                   <Txt
@@ -1048,7 +1046,7 @@ function LiveController({
                   ))}
                 </Card>
                 <Card style={{ gap: 13 }}>
-                  <Txt size={22} weight="heavy">
+                  <Txt size={18} weight="heavy">
                     Sonuç tablosu
                   </Txt>
                   {[...room.players]
@@ -1067,7 +1065,7 @@ function LiveController({
                           },
                         ]}
                       >
-                        <Txt size={22} color={theme.goldInk} weight="heavy">
+                        <Txt size={18} color={theme.goldInk} weight="heavy">
                           {p.rank}.
                         </Txt>
                         <Avatar variant={p.avatar} size={42} />
@@ -1078,7 +1076,7 @@ function LiveController({
                             / {p.unanswered} boş
                           </Txt>
                         </View>
-                        <Txt weight="heavy" size={20}>
+                        <Txt weight="heavy" size={18}>
                           {p.score}
                         </Txt>
                       </View>
@@ -1124,7 +1122,7 @@ function LiveController({
             ) : (
               <Jewel>
                 <Icon name="lock" color={c.gold} size={44} />
-                <Txt color={c.white} size={26} weight="heavy">
+                <Txt color={c.white} size={18} weight="heavy">
                   {room.state === "expired"
                     ? "Odanın süresi doldu"
                     : "Oda kapatıldı"}

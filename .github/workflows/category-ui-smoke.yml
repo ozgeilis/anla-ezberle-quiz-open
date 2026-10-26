@@ -52,22 +52,6 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
           "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
-      - name: Capture unchanged base home for comparison
-        env:
-          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
-        run: |
-          mkdir -p "$RUNNER_TEMP/home-before"
-          git fetch --no-tags --depth=1 origin "$BASE_REVISION"
-          git archive "$BASE_REVISION" | tar -x -C "$RUNNER_TEMP/home-before"
-          (cd "$RUNNER_TEMP/home-before" && pnpm install --frozen-lockfile && pnpm export:web)
-          (cd "$RUNNER_TEMP/home-before" && exec node scripts/preview.mjs) > /tmp/home-before-preview.log 2>&1 &
-          before_pid=$!
-          trap 'kill "$before_pid" 2>/dev/null || true' EXIT
-          sleep 3
-          node scripts/home-polish-smoke.mjs --baseline
-          kill "$before_pid"
-          wait "$before_pid" || true
-          trap - EXIT
       - name: Check category layouts and capture screenshots
         run: |
           pnpm preview > /tmp/category-preview.log 2>&1 &

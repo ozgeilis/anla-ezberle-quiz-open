@@ -37,8 +37,8 @@ export function CategoryArtwork({ id }: { id: CategoryArtworkId }) {
       }}
       style={{
         width: "100%",
-        aspectRatio: 0.82,
-        maxHeight: 200,
+        aspectRatio: 1.35,
+        maxHeight: 128,
         alignItems: "center",
         justifyContent: "center",
       }}

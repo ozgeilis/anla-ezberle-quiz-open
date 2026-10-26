@@ -41,7 +41,7 @@ export function ResultExperience({
   const outcome = resultPresentation(correct, total),
     theme = useTheme(),
     reduced = useReducedMotion();
-  const { width, fontScale } = useWindowDimensions();
+  const { fontScale } = useWindowDimensions();
   const hasPlayed = useRef(false);
   const [entrance] = useState(() => new Animated.Value(0));
   const [fill] = useState(() => new Animated.Value(0));
@@ -82,9 +82,9 @@ export function ResultExperience({
     animation.start();
     return () => animation.stop();
   }, [reduced, entrance, fill, burst]);
-  const ink = "#F4FFF9",
-    muted = "#C9E4DC";
-  const panel = theme.dark ? "rgba(18,39,56,.94)" : "rgba(0,54,56,.84)";
+  const ink = theme.dark ? "#F4FFF9" : "#17343A",
+    muted = theme.dark ? "#C9E4DC" : "#64748B";
+  const panel = theme.dark ? "rgba(18,39,56,.94)" : "#FFFDF8";
   return (
     <LinearGradient colors={outcome.background} style={{ flex: 1 }}>
       <ScrollView
@@ -93,7 +93,7 @@ export function ResultExperience({
           width: "100%",
           maxWidth: 620,
           alignSelf: "center",
-          padding: width < 360 ? 14 : 20,
+          padding: 16,
           paddingBottom: 28,
         }}
       >
@@ -106,7 +106,7 @@ export function ResultExperience({
           />
         </View>
         <View
-          style={{ alignItems: "center", marginTop: -16, paddingBottom: 18 }}
+          style={{ alignItems: "center", marginTop: -16, paddingBottom: 12 }}
         >
           <View
             pointerEvents="none"
@@ -214,14 +214,14 @@ export function ResultExperience({
               accessibilityLabel={outcome.label}
               resizeMode="contain"
               style={{
-                width: width < 360 ? 172 : 198,
-                height: width < 360 ? 172 : 198,
+                width: 144,
+                height: 144,
               }}
             />
           </Animated.View>
           <Txt
             accessibilityRole="header"
-            size={width < 360 ? 29 : 33}
+            size={28}
             weight="heavy"
             color="#FFFFFF"
             style={{
@@ -265,7 +265,7 @@ export function ResultExperience({
                 </Txt>
               </Txt>
               <Txt size={12} color={muted} weight="bold">
-                {correct}/{total} doğru · {xp} XP
+                {xp} XP
               </Txt>
             </View>
             {isRecord && (
@@ -394,34 +394,6 @@ export function ResultExperience({
               </Animated.View>
             </View>
           </View>
-          <View
-            style={[
-              styles.panel,
-              {
-                backgroundColor: theme.dark ? "#0E4549" : "#075A55",
-                borderColor: `${outcome.accent}65`,
-                flexDirection: "row",
-                gap: 10,
-                alignItems: "center",
-              },
-            ]}
-          >
-            <LinearGradient
-              colors={[outcome.accent, outcome.fill]}
-              style={{
-                width: 36,
-                height: 36,
-                borderRadius: 18,
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <Icon name="sun" color="#173D42" size={21} />
-            </LinearGradient>
-            <Txt size={12} color="#ECFFF7" style={{ flex: 1 }}>
-              {outcome.advice}
-            </Txt>
-          </View>
           {children}
         </View>
       </ScrollView>
@@ -431,9 +403,9 @@ export function ResultExperience({
 const styles = StyleSheet.create({
   panel: {
     borderWidth: 1,
-    borderRadius: 23,
-    padding: 14,
-    boxShadow: "0px 8px 20px rgba(0,12,21,.15)",
+    borderRadius: 18,
+    padding: 12,
+    boxShadow: "0px 3px 8px rgba(0,12,21,.08)",
   },
   statIcon: {
     width: 30,

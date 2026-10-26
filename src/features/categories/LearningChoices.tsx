@@ -49,16 +49,16 @@ function PaintedCategory({
         selected={selected}
         onPress={() => (disabled ? setDetails(true) : onPress())}
         style={{
-          borderRadius: 22,
+          borderRadius: 18,
           overflow: "hidden",
-          borderWidth: 2,
+          borderWidth: 1,
           borderColor: selected ? c.mustard : theme.goldBorder,
           boxShadow: selected ? shadows.categorySelected : shadows.card,
         }}
       >
         <LinearGradient
-          colors={[colors[0], "#00595B", "#003D43"]}
-          style={{ flex: 1, padding: 8, paddingTop: 10, gap: 4 }}
+          colors={colors}
+          style={{ flex: 1, padding: 8, paddingTop: 8, gap: 4 }}
         >
           <Image
             source={require("../../../assets/images/reference-ui/mosque-garden.webp")}
@@ -71,17 +71,20 @@ function PaintedCategory({
           <CategoryArtwork id={illustration} />
           <Txt
             testID={`category-title-${illustration}`}
-            size={width < 360 ? 13 : 14}
+            size={width < 360 ? 14 : 16}
             weight="heavy"
             color={c.white}
             style={{
-              minHeight: fontScale > 1.3 ? undefined : 44,
+              minHeight: fontScale > 1.3 ? undefined : width < 360 ? 60 : 44,
               textShadowColor: "#002D35",
               textShadowRadius: 3,
               textShadowOffset: { width: 0, height: 1 },
             }}
           >
             {title}
+          </Txt>
+          <Txt size={11} color="#E5F5ED">
+            {footer}
           </Txt>
           <View style={{ position: "absolute", top: 8, right: 8 }}>
             {disabled ? (
@@ -115,7 +118,7 @@ function PaintedCategory({
                 <Icon
                   name={selected ? "check" : "chevron-right"}
                   color={selected ? c.deepTeal : c.white}
-                  size={17}
+                  size={16}
                 />
               </View>
             )}
@@ -191,7 +194,7 @@ export function LearningChoices({
               subtitle={childrenCategory.subtitle}
               illustration="children"
               colors={["#127F95", "#126B73", "#034D60"]}
-              footer="İçerik incelemesi sürüyor"
+              footer="Hazırlanıyor"
               statusLabel="Hazırlanıyor"
               disabled
               upcoming
@@ -210,24 +213,24 @@ export function LearningChoices({
         selected={selectedMixed}
         onPress={onSelectMixed}
         style={{
-          minHeight: 70,
-          padding: 15,
+          minHeight: 56,
+          padding: 12,
           borderRadius: radius.md,
           backgroundColor: selectedMixed ? theme.goldSurface : theme.card,
           boxShadow: selectedMixed ? shadows.categorySelected : shadows.card,
-          borderWidth: 3,
+          borderWidth: 1,
           borderColor: selectedMixed ? c.mustard : theme.border,
         }}
       >
         <View style={[s.row, { gap: 12 }]}>
           <Icon
             name="shuffle"
-            size={27}
+            size={20}
             color={selectedMixed ? theme.goldInk : theme.accent}
           />
           <View style={{ flex: 1 }}>
             <Txt
-              size={17}
+              size={16}
               weight="heavy"
               color={selectedMixed ? theme.goldInk : theme.text}
             >
@@ -259,9 +262,9 @@ export function UpcomingLearning({
     (collection) => collection.id !== "ramazan",
   );
   return (
-    <View style={{ gap: 22 }}>
+    <View style={{ gap: 24 }}>
       <View style={{ gap: 10 }}>
-        <Txt accessibilityRole="header" size={21} weight="heavy">
+        <Txt accessibilityRole="header" size={18} weight="bold">
           Özel Zamanlar
         </Txt>
         <Txt color={theme.muted} size={12}>
@@ -279,7 +282,7 @@ export function UpcomingLearning({
                   subtitle={season.subtitle}
                   illustration={season.id}
                   colors={season.colors}
-                  footer="Yeni bir keşif yakında"
+                  footer="Yakında"
                   disabled
                   upcoming
                   onPress={() => {}}
@@ -290,7 +293,7 @@ export function UpcomingLearning({
         </View>
       </View>
       <View style={{ gap: 10 }}>
-        <Txt accessibilityRole="header" size={21} weight="heavy">
+        <Txt accessibilityRole="header" size={18} weight="bold">
           Diğer özel koleksiyonlar
         </Txt>
         <Txt size={12} color={theme.muted}>
@@ -310,7 +313,7 @@ export function UpcomingLearning({
                   subtitle={collection.reason}
                   illustration={collection.id}
                   colors={topicVisuals[art].colors}
-                  footer="Yeni bir keşif yakında"
+                  footer="Yakında"
                   disabled
                   upcoming
                   onPress={() => {}}

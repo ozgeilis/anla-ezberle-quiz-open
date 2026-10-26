@@ -11,7 +11,7 @@ export function SettingsButton() {
       onPress={() => router.push("/settings")}
       style={headerButton}
     >
-      <Icon name="settings" color={c.white} size={23} />
+      <Icon name="settings" color={c.white} size={20} />
     </Tap>
   );
 }
@@ -23,7 +23,7 @@ export function NotificationsButton() {
       onPress={() => router.push("/online/inbox")}
       style={headerButton}
     >
-      <Icon name="bell" color={c.paleGold} size={22} />
+      <Icon name="bell" color={c.paleGold} size={20} />
       {unreadCount > 0 && (
         <View
           pointerEvents="none"

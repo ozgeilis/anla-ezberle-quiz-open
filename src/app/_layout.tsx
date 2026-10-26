@@ -15,6 +15,7 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import { Manrope_400Regular } from "@expo-google-fonts/manrope/400Regular";
 import { Manrope_500Medium } from "@expo-google-fonts/manrope/500Medium";
+import { Manrope_600SemiBold } from "@expo-google-fonts/manrope/600SemiBold";
 import { Manrope_700Bold } from "@expo-google-fonts/manrope/700Bold";
 import { Manrope_800ExtraBold } from "@expo-google-fonts/manrope/800ExtraBold";
 import { GameProvider, useGameDisplay } from "../storage/GameProvider";
@@ -25,20 +26,29 @@ import { Pattern } from "../components/game/Artwork";
 
 import * as SplashScreen from "expo-splash-screen";
 import { StudioIntro } from "../branding/StudioIntro";
-import { BrandLoadingScreen } from "../branding/BrandLoadingScreen";
 
 if (Platform.OS !== "web")
   void SplashScreen.preventAutoHideAsync().catch(() => undefined);
 
-function AppShell() {
+function AppShell({
+  fontsReady,
+  introDone,
+  finishIntro,
+}: {
+  fontsReady: boolean;
+  introDone: boolean;
+  finishIntro: () => void;
+}) {
   const { ready } = useGameDisplay();
   const theme = useTheme();
   useEffect(() => {
-    // Fonts are ready when this shell mounts. Show storage/retry UI even if
-    // reading local progress fails; never hold the OS splash over that UI.
-    if (Platform.OS !== "web")
+    if (fontsReady && ready && introDone && Platform.OS !== "web")
       void SplashScreen.hideAsync().catch(() => undefined);
-  }, []);
+  }, [fontsReady, ready, introDone]);
+  // Load fonts and local progress behind the same Studio view. No second brand
+  // interstitial and no blank game shell; failed storage reads expose retry UI.
+  if (!introDone || !fontsReady || !ready)
+    return <StudioIntro onDone={finishIntro} />;
   return (
     <View style={{ flex: 1, backgroundColor: theme.dark ? c.navy : c.canvas }}>
       <View pointerEvents="none" style={{ position: "absolute", inset: 0 }}>
@@ -58,17 +68,14 @@ function AppShell() {
         <StorageNotice />
         <InboxBanner />
         <RewardBanner />
-        {ready ? (
-          <Stack
-            screenOptions={{
-              headerShown: false,
-              animation: "none",
-              contentStyle: { backgroundColor: theme.background },
-            }}
-          />
-        ) : (
-          <BrandLoadingScreen fontsReady dark={theme.dark} />
-        )}
+        <GameAudioEvents />
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            animation: "none",
+            contentStyle: { backgroundColor: theme.background },
+          }}
+        />
       </SafeAreaView>
     </View>
   );
@@ -79,11 +86,10 @@ export default function RootLayout() {
   const [loaded, error] = useFonts({
     Manrope_400Regular,
     Manrope_500Medium,
+    Manrope_600SemiBold,
     Manrope_700Bold,
     Manrope_800ExtraBold,
   });
-  if (!introDone) return <StudioIntro onDone={finishIntro} />;
-  if (!loaded && !error) return <BrandLoadingScreen />;
   return (
     <SafeAreaProvider>
       <GameProvider>
@@ -94,8 +100,11 @@ export default function RootLayout() {
                 <SocialIdentityProvider>
                   <AchievementProvider>
                     <DuelProvider>
-                      <GameAudioEvents />
-                      <AppShell />
+                      <AppShell
+                        fontsReady={loaded || !!error}
+                        introDone={introDone}
+                        finishIntro={finishIntro}
+                      />
                     </DuelProvider>
                   </AchievementProvider>
                 </SocialIdentityProvider>

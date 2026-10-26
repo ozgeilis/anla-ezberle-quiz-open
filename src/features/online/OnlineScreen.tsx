@@ -370,14 +370,14 @@ function OnlineAccountScreen() {
               <Pattern opacity={0.08} />
             </View>
             <View style={[s.row, { justifyContent: "center", gap: 24 }]}>
-              <Avatar size={54} variant={1} />
-              <Txt size={26} weight="heavy" color={c.gold}>
+              <Avatar size={40} variant={1} />
+              <Txt size={22} weight="heavy" color={c.gold}>
                 VS
               </Txt>
-              <Avatar size={54} variant={2} />
+              <Avatar size={40} variant={2} />
             </View>
             <Txt
-              size={25}
+              size={22}
               weight="heavy"
               color={c.white}
               style={{ textAlign: "center" }}
@@ -418,7 +418,7 @@ function OnlineAccountScreen() {
         )}
         {!onlineConfigured ? (
           <Card style={{ gap: 12 }}>
-            <Txt weight="heavy" size={20}>
+            <Txt weight="heavy" size={18}>
               Çevrimiçi servis hazır değil
             </Txt>
             <Txt>
@@ -545,7 +545,7 @@ function OnlineAccountScreen() {
                   variant="orange"
                   onPress={() => router.push("/online/inbox")}
                 />
-                <Txt weight="heavy" size={20}>
+                <Txt weight="heavy" size={18}>
                   Çevrimiçi profil
                 </Txt>
                 <Txt size={12}>
@@ -603,7 +603,7 @@ function OnlineAccountScreen() {
                       onPress={() => void run(createMatch)}
                     />
                     <Card style={{ gap: 12 }}>
-                      <Txt size={20} weight="heavy">
+                      <Txt size={18} weight="heavy">
                         Arkadaşının davetine katıl
                       </Txt>
                       {field(
@@ -634,7 +634,7 @@ function OnlineAccountScreen() {
                     </Card>
                     {self.matches.length > 0 && (
                       <Card style={{ gap: 12 }}>
-                        <Txt size={20} weight="heavy">
+                        <Txt size={18} weight="heavy">
                           Çevrimiçi maçların
                         </Txt>
                         {self.matches.map((item, index) => (
@@ -670,7 +670,7 @@ function OnlineAccountScreen() {
                       </View>
                     ) : (
                       <Card style={{ gap: 10 }}>
-                        <Txt size={21} weight="heavy">
+                        <Txt size={18} weight="heavy">
                           {stateLabel[match.state]}
                         </Txt>
                         <Txt>
@@ -695,7 +695,7 @@ function OnlineAccountScreen() {
                       !playing &&
                       !terminal && (
                         <Card style={{ gap: 12 }}>
-                          <Txt weight="heavy" size={20}>
+                          <Txt weight="heavy" size={18}>
                             Güvenli arkadaş daveti
                           </Txt>
                           <Txt>
@@ -856,7 +856,7 @@ function OnlineAccountScreen() {
                     )}
                     {!terminal && match.finished && (
                       <Card>
-                        <Txt size={21} weight="heavy">
+                        <Txt size={18} weight="heavy">
                           Turun tamamlandı!
                         </Txt>
                         <Txt>
@@ -889,7 +889,7 @@ function OnlineAccountScreen() {
                                 total={match.questions.length}
                               />
                             ))}
-                          <Txt weight="heavy" size={28} color={c.gold}>
+                          <Txt weight="heavy" size={22} color={c.gold}>
                             {match.result?.winner === "tie"
                               ? "Berabere!"
                               : `Oyuncu ${match.result?.winner.toUpperCase()} kazandı!`}
@@ -903,7 +903,7 @@ function OnlineAccountScreen() {
                             <Txt weight="heavy" size={19}>
                               {p.name} · Oyuncu {p.slot.toUpperCase()}
                             </Txt>
-                            <Txt size={32} weight="heavy">
+                            <Txt size={24} weight="heavy">
                               {p.score} puan
                             </Txt>
                             <Txt>

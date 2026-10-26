@@ -43,8 +43,15 @@ function OwnedNotification({ id }: { id: string }) {
   }, [actor, id, validId, attempt]);
   const close = () =>
     router.canGoBack() ? router.back() : router.replace("/online/inbox");
+  if (actor && notification)
+    return (
+      <NotificationDetail
+        selection={{ kind: "notification", notification }}
+        onClose={close}
+      />
+    );
   return (
-    <Page title="Bildirim Ayrıntısı">
+    <Page title="Bildirimler">
       <Button title="Geri Dön" variant="outline" onPress={close} />
       {!actor ? (
         <>

@@ -52,7 +52,8 @@ export function PlayerHeader({
   const { displayName } = usePlayerIdentity();
   const { data } = useGameLibrary(),
     p = progress(data.games),
-    compact = useWindowDimensions().width < 430;
+    { width, fontScale } = useWindowDimensions(),
+    compact = width < 430;
   const xp = (
     <View
       style={{
@@ -63,7 +64,7 @@ export function PlayerHeader({
         borderWidth: 1,
         borderColor: "#22C3AC",
         gap: 4,
-        flexDirection: notifications ? "row" : "column",
+        flexDirection: notifications && fontScale <= 1.4 ? "row" : "column",
         alignItems: notifications ? "center" : undefined,
       }}
     >
@@ -73,7 +74,12 @@ export function PlayerHeader({
           Seviye {p.level}
         </Txt>
       </View>
-      <View style={{ flex: notifications ? 1 : undefined }}>
+      <View
+        style={{
+          flex: notifications && fontScale <= 1.4 ? 1 : undefined,
+          width: fontScale > 1.4 ? "100%" : undefined,
+        }}
+      >
         <ProgressMeter
           label="Seviye ilerlemesi"
           value={p.levelXp}

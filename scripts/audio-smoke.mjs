@@ -10,11 +10,16 @@ const require = createRequire(import.meta.url),
   );
 const kind = process.env.AUDIO_BROWSER ?? "chromium",
   fixture = JSON.parse(await readFile("/tmp/anla-audio-fixture.json", "utf8"));
-const origin = "http://127.0.0.1:8117",
+const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117",
   root = "artifacts/audio-" + kind,
   key = "@anla-ezberle-quiz/preferences/audio/v1";
 await mkdir(root, { recursive: true });
-const browser = await pw[kind].launch({ headless: true }),
+const browser = await pw[kind].launch({
+    headless: true,
+    ...(kind === "chromium" && process.env.SETTINGS_BROWSER_CHANNEL
+      ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
+      : {}),
+  }),
   checks = [];
 let last;
 const btn = (p, name) => p.getByRole("button", { name, exact: true });
@@ -276,9 +281,9 @@ try {
           "Rerender does not repeat result",
         );
         // A second real round with one wrong answer must use the ordinary completion cue.
-        await p.goto(origin + "/", { waitUntil: "networkidle" });
+        await p.goto(origin + "/categories", { waitUntil: "networkidle" });
         await p.waitForFunction(() => window.__soundProbe.decoded === 11);
-        await p.getByRole("button", { name: /^Kur['’]an ve Dualar,/ }).click();
+        await p.getByRole("radio", { name: /^Kur['’]an ve Dualar\./ }).click();
         await p.getByRole("radio", { name: /^Zorluk: Kolay$/ }).click();
         await btn(p, "Oyuna Başla").click();
         for (let i = 0; i < 10; i++) {

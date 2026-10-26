@@ -6,7 +6,11 @@ import { useTheme } from "../../theme/tokens";
 import { useGame } from "../../storage/GameProvider";
 import { useAchievements } from "./AchievementProvider";
 import { BadgeArt } from "./BadgeArt";
-export function ProfileAchievements() {
+export function ProfileAchievements({
+  editable = false,
+}: {
+  editable?: boolean;
+}) {
   const { data } = useGame(),
     { badges, social, saveSharing, error } = useAchievements(),
     theme = useTheme();
@@ -34,10 +38,10 @@ export function ProfileAchievements() {
   };
   return (
     <Card
-      style={{ gap: 14, marginBottom: 20, backgroundColor: theme.mintSurface }}
+      style={{ gap: 12, marginBottom: 0, backgroundColor: theme.mintSurface }}
     >
-      <Txt size={20} weight="heavy">
-        Başarılarım · {earned.length} / {badges.length}
+      <Txt size={18} weight="bold">
+        Rozet Vitrini · {earned.length} / {badges.length}
       </Txt>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12 }}>
         {preview.map((b) => (
@@ -62,7 +66,7 @@ export function ProfileAchievements() {
         variant="outline"
         onPress={() => router.push("/achievements")}
       />
-      {social && (
+      {social && editable && (
         <>
           <Txt weight="bold">Arkadaşlarına açık çevrimiçi koleksiyon</Txt>
           <Txt size={12} color={theme.muted}>

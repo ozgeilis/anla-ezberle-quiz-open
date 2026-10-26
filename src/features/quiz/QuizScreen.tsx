@@ -234,7 +234,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
           ]}
         >
           <View>
-            <Txt weight="heavy" size={18}>
+            <Txt weight="heavy" size={14}>
               Soru {session.cursor + 1} / 10
             </Txt>
           </View>
@@ -296,7 +296,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
       >
         <View style={styles.question}>
           <LinearGradient
-            colors={[c.cream, c.white]}
+            colors={[theme.card, theme.card]}
             style={StyleSheet.absoluteFill}
           />
           <CardCorners />
@@ -305,14 +305,14 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
             accessible={false}
             style={{ marginBottom: 6 }}
           >
-            <Book size={40} />
+            <Book size={32} />
           </View>
           <Txt
             accessibilityRole="header"
             accessibilityLiveRegion="polite"
             size={19}
             weight="heavy"
-            color={c.ink}
+            color={theme.text}
             style={{ textAlign: "center", lineHeight: 27 }}
           >
             {question.text}
@@ -530,7 +530,7 @@ const styles = StyleSheet.create({
     marginTop: 0,
     borderRadius: radius.lg,
     borderWidth: 1,
-    marginHorizontal: 14,
+    marginHorizontal: 16,
     marginBottom: 10,
   },
   timer: {
@@ -543,14 +543,14 @@ const styles = StyleSheet.create({
     borderRadius: radius.pill,
   },
   content: {
-    paddingHorizontal: 14,
+    paddingHorizontal: 16,
     paddingBottom: 16,
     width: "100%",
     maxWidth: 680,
     alignSelf: "center",
   },
   question: {
-    minHeight: 154,
+    minHeight: 128,
     borderRadius: radius.card,
     borderWidth: 1,
     borderColor: c.creamBorder,

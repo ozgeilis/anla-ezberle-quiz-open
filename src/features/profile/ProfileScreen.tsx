@@ -1,123 +1,104 @@
-import { brand } from "../../branding/identity";
+import React, { useState } from "react";
+import { ScrollView, View } from "react-native";
+import { router } from "expo-router";
 import { ProfileAchievements } from "../achievements/ProfileAchievements";
 import { usePlayerIdentity } from "../online/SocialIdentityProvider";
 import { SettingsButton } from "../../components/ui/SettingsButton";
-import React from "react";
-import { ScrollView, View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
 import { ReferenceHero } from "../../components/game/ReferenceHero";
+import { Avatar } from "../../components/game/Artwork";
+import {
+  Button,
+  Card,
+  Dialog,
+  Icon,
+  Tap,
+  TextAction,
+  Txt,
+} from "../../components/ui";
+import { ProgressMeter } from "../../components/ui/visuals";
+import { progress } from "../../domain/scoring/progress";
+import { useGameLibrary } from "../../storage/GameProvider";
+import { colors as c, useTheme } from "../../theme/tokens";
 import { profileSummary } from "./summary";
 import { useAchievements } from "../achievements/AchievementProvider";
-import { Avatar } from "../../components/game/Artwork";
-import { Card, Chip, Icon, Tap, Txt } from "../../components/ui";
-import { progress } from "../../domain/scoring/progress";
-import { useGame } from "../../storage/GameProvider";
-import { ProgressMeter } from "../../components/ui/visuals";
-import { colors as c, shadows, useTheme } from "../../theme/tokens";
+
 export function ProfileScreen() {
-  const { data } = useGame();
-  const { displayName, self } = usePlayerIdentity();
-  const theme = useTheme();
-  const compact = useWindowDimensions().width < 360;
-  const { badges } = useAchievements();
-  const summary = profileSummary(data.games);
-  const earned = badges.filter((b) => b.earned).length;
-  const p = progress(data.games);
+  const { data } = useGameLibrary(),
+    { displayName, self } = usePlayerIdentity(),
+    t = useTheme();
+  const { social } = useAchievements(),
+    p = progress(data.games),
+    summary = profileSummary(data.games);
+  const [details, setDetails] = useState(false);
+  const stats = [
+    { title: "Oynanan Oyun", value: String(summary.games) },
+    {
+      title: "Doğruluk Oranı",
+      value: summary.accuracy === null ? "Henüz yok" : `%${summary.accuracy}`,
+    },
+    { title: "Toplam Skor", value: summary.totalScore.toLocaleString("tr-TR") },
+  ];
   return (
-    <ScrollView
-      style={{ flex: 1, backgroundColor: theme.background }}
-      contentContainerStyle={{
-        width: "100%",
-        maxWidth: 760,
-        alignSelf: "center",
-        paddingBottom: 32,
-      }}
-      keyboardShouldPersistTaps="handled"
-    >
-      <ReferenceHero>
-        <View
-          style={{
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-            marginBottom: 10,
-          }}
-        >
-          <Tap
-            label="Ana sayfaya dön"
-            onPress={() => router.replace("/")}
-            style={{ padding: 10 }}
-          >
-            <Icon name="chevron-left" color={c.white} />
-          </Tap>
-          <Txt
-            accessibilityRole="header"
-            size={23}
-            weight="heavy"
-            color={c.white}
-          >
-            Profilim
-          </Txt>
-          <SettingsButton />
-        </View>
-        <View
-          style={{
-            alignItems: "center",
-            gap: 7,
-            paddingTop: 0,
-            paddingBottom: 12,
-          }}
-        >
-          <Tap
-            label="Profil avatarını düzenle"
-            onPress={() =>
-              router.push({ pathname: "/settings", params: { edit: "avatar" } })
-            }
+    <>
+      <ScrollView
+        style={{ flex: 1, backgroundColor: t.background }}
+        contentContainerStyle={{
+          width: "100%",
+          maxWidth: 760,
+          alignSelf: "center",
+          paddingBottom: 24,
+        }}
+      >
+        <ReferenceHero>
+          <View
             style={{
-              borderRadius: 90,
-              padding: 6,
-              borderWidth: 4,
-              borderColor: c.gold,
-              backgroundColor: c.emerald,
-              boxShadow: shadows.reward,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginBottom: 12,
             }}
           >
-            <Avatar variant={data.profile.avatar} size={compact ? 80 : 92} />
-          </Tap>
-          <Txt
-            size={compact ? 26 : 30}
-            weight="heavy"
-            color={c.white}
-            style={{
-              textAlign: "center",
-              textShadowColor: c.deepTeal,
-              textShadowOffset: { width: 0, height: 3 },
-              textShadowRadius: 2,
-            }}
-          >
-            {displayName}
-          </Txt>
-          {!!self?.profile.username && (
             <Txt
-              size={15}
+              size={22}
               weight="bold"
-              color={c.tealLight}
-              style={{
-                backgroundColor: "rgba(0,60,65,.88)",
-                borderRadius: 14,
-                paddingHorizontal: 12,
-                paddingVertical: 5,
-              }}
+              accessibilityRole="header"
+              color={c.white}
             >
-              @{self.profile.username}
+              Profilim
             </Txt>
-          )}
-          <Chip icon="star" style={{ alignSelf: "center" }}>
-            <Txt weight="heavy" size={17} color={c.teal}>
-              Seviye {p.level} · {p.title}
-            </Txt>
-          </Chip>
-          <View style={{ width: "75%", maxWidth: 320, marginTop: 4 }}>
+            <SettingsButton />
+          </View>
+          <View
+            style={{
+              backgroundColor: "rgba(0,52,55,.92)",
+              padding: 16,
+              borderRadius: 20,
+              gap: 12,
+            }}
+          >
+            <View
+              style={{ flexDirection: "row", gap: 12, alignItems: "center" }}
+            >
+              <Tap
+                label="Profil avatarını düzenle"
+                onPress={() => router.push("/settings/profile")}
+              >
+                <Avatar variant={data.profile.avatar} size={64} />
+              </Tap>
+              <View style={{ flex: 1, minWidth: 0, gap: 4 }}>
+                <Txt size={22} weight="bold" color={c.white}>
+                  {displayName}
+                </Txt>
+                <Txt size={12} color={c.tealLight}>
+                  {self?.profile.username
+                    ? `@${self.profile.username}`
+                    : "Misafir Oyuncu"}
+                </Txt>
+                <Txt size={12} color={c.white}>
+                  Seviye {p.level} · {p.xp} XP
+                </Txt>
+              </View>
+            </View>
             <ProgressMeter
               label="Seviye ilerlemesi"
               value={p.levelXp}
@@ -125,146 +106,86 @@ export function ProfileScreen() {
               onJewel
               tone="gold"
             />
+            <Txt size={11} color={c.tealLight}>
+              {p.level === 100 ? "En üst seviye" : `${p.levelXp} / 250 XP`} · Bu
+              cihazdaki ilerlemen
+            </Txt>
           </View>
-          <Txt
-            size={14}
-            weight="bold"
-            color={c.white}
-            style={{
-              backgroundColor: "rgba(0,60,65,0.88)",
-              padding: 6,
-              borderRadius: 12,
-            }}
-          >
-            {p.levelXp} / 250 XP · {p.xp} toplam XP
-          </Txt>
-          <Txt
-            size={11}
-            color={c.white}
-            style={{
-              backgroundColor: "rgba(0,60,65,0.85)",
-              padding: 6,
-              borderRadius: 12,
-            }}
-          >
-            Bu cihazdaki ilerlemen
-          </Txt>
-        </View>
-      </ReferenceHero>
-      <View style={{ paddingHorizontal: compact ? 14 : 20, gap: 16 }}>
-        <Card
-          style={{
-            borderColor: theme.goldBorder,
-            alignItems: "center",
-            marginTop: -8,
-          }}
-        >
-          <Txt size={14} weight="bold" style={{ textAlign: "center" }}>
-            Her soru yeni bir şey öğrenmek için fırsat.
-          </Txt>
-        </Card>
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 10 }}>
-          {[
-            {
-              title: "Toplam Skor",
-              value: summary.totalScore.toLocaleString("tr-TR"),
-              icon: "award" as const,
-              color: c.orange,
-            },
-            {
-              title: "Oynanan Oyun",
-              value: String(summary.games),
-              icon: "play" as const,
-              color: c.emerald,
-            },
-            {
-              title: "Doğruluk Oranı",
-              value:
-                summary.accuracy === null
-                  ? "Henüz yok"
-                  : `%${summary.accuracy}`,
-              icon: "target" as const,
-              color: c.coral,
-            },
-            {
-              title: "Günlük Seri",
-              value: `${summary.streak} gün`,
-              icon: "zap" as const,
-              color: c.deepOrange,
-            },
-            {
-              title: "Başarı Yüzdesi",
-              value: `%${badges.length ? Math.round((earned / badges.length) * 100) : 0}`,
-              icon: "bar-chart-2" as const,
-              color: "#8055C9",
-            },
-            {
-              title: "Favori Kategori",
-              value: summary.favorite ?? "Henüz yok",
-              icon: "book-open" as const,
-              color: c.blue,
-            },
-          ].map((stat) => (
-            <Card
-              key={stat.title}
-              style={{
-                width: "47%",
-                flexGrow: 1,
-                padding: 12,
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 9,
-                minHeight: 100,
-              }}
-            >
-              <View
-                style={{
-                  width: compact ? 34 : 44,
-                  height: compact ? 40 : 52,
-                  borderRadius: 15,
-                  backgroundColor: stat.color,
-                  alignItems: "center",
-                  justifyContent: "center",
-                  boxShadow: shadows.card,
-                }}
+        </ReferenceHero>
+        <View style={{ paddingHorizontal: 16, gap: 20 }}>
+          <ProfileAchievements />
+          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+            {stats.map((item) => (
+              <Card
+                key={item.title}
+                style={{ flexGrow: 1, flexBasis: 80, gap: 4, padding: 12 }}
               >
-                <Icon
-                  name={stat.icon}
-                  color={c.white}
-                  size={compact ? 23 : 29}
-                />
-              </View>
-              <View style={{ flex: 1, minWidth: 0 }}>
-                <Txt size={11} weight="medium">
-                  {stat.title}
+                <Txt size={16} weight="semibold">
+                  {item.value}
                 </Txt>
-                <Txt
-                  size={
-                    stat.title === "Favori Kategori" ? 13 : compact ? 20 : 24
-                  }
-                  weight="heavy"
-                >
-                  {stat.value}
+                <Txt size={11} color={t.muted}>
+                  {item.title}
                 </Txt>
-              </View>
+              </Card>
+            ))}
+          </View>
+          <TextAction
+            title="İstatistikleri Gör"
+            onPress={() => setDetails(true)}
+          />
+          <Tap
+            label="Arkadaşlar"
+            onPress={() => router.push("/online/players")}
+          >
+            <Card
+              style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
+            >
+              <Icon name="users" size={20} color={t.accent} />
+              <Txt size={16} weight="semibold" style={{ flex: 1 }}>
+                Arkadaşlar
+              </Txt>
+              {social && (
+                <Txt size={12} color={t.muted}>
+                  {social.metrics.friends}
+                </Txt>
+              )}
+              <Icon name="chevron-right" size={16} color={t.muted} />
             </Card>
-          ))}
+          </Tap>
+          <Button
+            title="Profili Düzenle"
+            variant="outline"
+            onPress={() => router.push("/settings/profile")}
+          />
         </View>
-        <ProfileAchievements />
-        <Txt size={11} color={theme.muted} style={{ marginTop: 20 }}>
-          Yalnızca tamamlanan bilgi yarışmaları XP ve rozet kazandırır. Yerel
-          kayıtlar bu cihazda tutulur; çevrimiçi sosyal başarılar sunucuda
-          doğrulanır. Eski tamamlanmış oyunların korunur.
+      </ScrollView>
+      <Dialog
+        visible={details}
+        title="İstatistiklerin"
+        onClose={() => setDetails(false)}
+      >
+        {stats.map((item) => (
+          <View
+            key={item.title}
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              gap: 12,
+            }}
+          >
+            <Txt size={14} style={{ flex: 1 }}>
+              {item.title}
+            </Txt>
+            <Txt weight="semibold">{item.value}</Txt>
+          </View>
+        ))}
+        <Txt>Günlük Seri · {summary.streak} gün</Txt>
+        <Txt>Favori Kategori · {summary.favorite ?? "Henüz yok"}</Txt>
+        <Txt size={12} color={t.muted}>
+          Yerel istatistikler yalnız tamamlanmış yarışmalarından hesaplanır.
+          Çevrimiçi başarılar sunucuda ayrı doğrulanır.
         </Txt>
-        <Txt
-          size={12}
-          weight="bold"
-          color={theme.accent}
-          style={{ marginTop: 16, textAlign: "center" }}
-        >
-          {brand.developer}
-        </Txt>
-      </View>
-    </ScrollView>
+      </Dialog>
+    </>
   );
 }

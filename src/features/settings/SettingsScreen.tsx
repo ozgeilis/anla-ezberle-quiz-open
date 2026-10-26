@@ -14,6 +14,7 @@ import { SocialProfile } from "../online/SocialProfile";
 import { PersonalizationDialog } from "../profile/Personalization";
 import { SoundSettings } from "../audio/SoundSettings";
 import { NotificationSettings } from "../notifications/NotificationSettings";
+import { ProfileAchievements } from "../achievements/ProfileAchievements";
 import { brand } from "../../branding/identity";
 
 export const settingSections = {
@@ -24,7 +25,7 @@ export const settingSections = {
   },
   sound: {
     title: "Ses",
-    subtitle: "Desteklenen müzik ve ses efektlerini ayarla",
+    subtitle: "Ses efektlerini ayarla",
     icon: "volume-2",
   },
   theme: {
@@ -73,7 +74,7 @@ export function SettingRow({
       label={title}
       onPress={onPress}
       style={{
-        minHeight: 68,
+        minHeight: 64,
         padding: 12,
         borderRadius: 16,
         borderWidth: 1,
@@ -94,10 +95,10 @@ export function SettingRow({
           justifyContent: "center",
         }}
       >
-        <Icon name={icon} size={19} color={t.accent} />
+        <Icon name={icon} size={20} color={t.accent} />
       </View>
-      <View style={{ flex: 1, minWidth: 0, gap: 3 }}>
-        <Txt size={15} weight="bold">
+      <View style={{ flex: 1, minWidth: 0, gap: 4 }}>
+        <Txt size={16} weight="semibold">
           {title}
         </Txt>
         <Txt size={12} color={t.muted}>
@@ -145,7 +146,7 @@ export function SettingsFrame({
           <Icon name="chevron-left" color={t.accent} />
         </Tap>
         <Txt
-          size={23}
+          size={22}
           weight="heavy"
           accessibilityRole="header"
           style={{ flex: 1 }}
@@ -157,8 +158,8 @@ export function SettingsFrame({
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{
           padding: 16,
-          paddingBottom: 32,
-          gap: 14,
+          paddingBottom: 24,
+          gap: 12,
           width: "100%",
           maxWidth: 720,
           alignSelf: "center",
@@ -365,7 +366,7 @@ function SettingsContent({
             <Button
               title="Hesabımı Sil"
               icon="trash-2"
-              variant="outline"
+              variant="danger"
               onPress={() => router.push("/account-delete")}
             />
           </Card>
@@ -373,6 +374,7 @@ function SettingsContent({
       )}
       {section === "privacy" && (
         <>
+          <ProfileAchievements editable />
           <Card style={{ gap: 12 }}>
             <Txt weight="bold">Verilerin ve gizlilik</Txt>
             <Txt size={13}>

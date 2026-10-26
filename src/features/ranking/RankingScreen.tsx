@@ -44,10 +44,10 @@ export function RankingScreen() {
       <LinearGradient
         colors={gradients.hero}
         style={{
-          borderRadius: 28,
-          padding: 22,
+          borderRadius: 18,
+          padding: 12,
           overflow: "hidden",
-          minHeight: 156,
+          minHeight: 96,
           borderWidth: 1,
           borderColor: c.gold,
           marginBottom: 18,
@@ -67,14 +67,14 @@ export function RankingScreen() {
             <Txt color={c.gold} size={12} weight="heavy">
               BİLGİNİN YILDIZLARI
             </Txt>
-            <Txt color={c.white} size={25} weight="heavy">
+            <Txt color={c.white} size={18} weight="heavy">
               Her turda biraz daha ileri.
             </Txt>
             <Txt color={c.white} size={12}>
               Gerçek sonuçlar · İsteğe bağlı katılım
             </Txt>
           </View>
-          <Medal size={85} />
+          <Medal size={48} />
         </View>
       </LinearGradient>
       <View
@@ -90,7 +90,7 @@ export function RankingScreen() {
             onPress={() => router.setParams({ section: key })}
             style={{
               flex: 1,
-              minHeight: 52,
+              minHeight: 48,
               paddingHorizontal: 5,
               paddingVertical: 9,
               borderRadius: 17,
@@ -311,16 +311,18 @@ function OnlineRanking({
               </Txt>
             </Tap>
           </View>
-          {scope === "global" && value.self.entry && (
-            <Card style={{ backgroundColor: t.mintSurface, gap: 5 }}>
-              <Txt weight="heavy" color={t.accent}>
-                Senin Sıran · {value.self.entry.rank}
-              </Txt>
-              <Txt>
-                {value.self.xp} doğrulanmış XP · {value.self.games} maç
-              </Txt>
-            </Card>
-          )}
+          {scope === "global" &&
+            value.self.entry &&
+            !value.entries.some((e) => e.player.id === actor) && (
+              <Card style={{ backgroundColor: t.mintSurface, gap: 5 }}>
+                <Txt weight="heavy" color={t.accent}>
+                  Senin Sıran · {value.self.entry.rank}
+                </Txt>
+                <Txt>
+                  {value.self.xp} doğrulanmış XP · {value.self.games} maç
+                </Txt>
+              </Card>
+            )}
           {!value.self.optIn && (
             <Txt size={12} color={t.muted}>
               Katılımın kapalı. Listeleri inceleyebilir, kişisel rekorlarını
@@ -334,7 +336,7 @@ function OnlineRanking({
                 size={36}
                 color={t.goldInk}
               />
-              <Txt weight="heavy" size={19} style={{ textAlign: "center" }}>
+              <Txt weight="heavy" size={16} style={{ textAlign: "center" }}>
                 {scope === "friends"
                   ? "Henüz sıralamada arkadaşın yok."
                   : "İlk sıralama sonuçları bekleniyor."}
@@ -433,7 +435,7 @@ function Podium({
               style={{
                 flex: 1,
                 minWidth: 0,
-                borderRadius: 24,
+                borderRadius: 18,
                 borderWidth: 2,
                 borderColor: paint[1],
                 overflow: "hidden",
@@ -445,19 +447,16 @@ function Podium({
                 colors={paint}
                 style={{
                   alignItems: "center",
-                  paddingVertical: e.rank === 1 ? 22 : 14,
+                  paddingVertical: e.rank === 1 ? 12 : 8,
                   paddingHorizontal: 6,
                   gap: 10,
                 }}
               >
-                <Icon name="award" color="#613500" size={26} />
-                <Txt weight="heavy" size={19} color="#173B46">
+                <Icon name="award" color="#613500" size={20} />
+                <Txt weight="heavy" size={16} color="#173B46">
                   {e.rank}.
                 </Txt>
-                <Avatar
-                  variant={e.player.avatar}
-                  size={width < 360 ? 38 : 48}
-                />
+                <Avatar variant={e.player.avatar} size={36} />
               </LinearGradient>
               <View style={{ padding: 9, gap: 4, alignItems: "center" }}>
                 <Txt
@@ -471,7 +470,7 @@ function Podium({
                 <Txt size={10} color={t.muted} numberOfLines={1}>
                   @{e.player.username}
                 </Txt>
-                <Txt size={17} weight="heavy" color={t.accent}>
+                <Txt size={14} weight="semibold" color={t.accent}>
                   {e.player.xp} XP
                 </Txt>
                 <Txt size={10} color={t.muted}>
@@ -503,8 +502,8 @@ function RankRow({
         alignItems: "center",
         gap: 10,
         padding: 12,
-        minHeight: 72,
-        borderRadius: 20,
+        minHeight: 64,
+        borderRadius: 16,
         borderWidth: own ? 2 : 1,
         borderColor: own ? c.gold : t.border,
         backgroundColor: own ? t.mintSurface : t.card,
@@ -513,16 +512,13 @@ function RankRow({
       <Txt weight="heavy" size={16} style={{ minWidth: 26 }}>
         {e.rank}
       </Txt>
-      <Avatar variant={e.player.avatar} size={42} />
+      <Avatar variant={e.player.avatar} size={36} />
       <View style={{ flex: 1, minWidth: 0 }}>
         <Txt weight="heavy" numberOfLines={1}>
           {e.player.name}
         </Txt>
         <Txt size={11} color={t.muted} numberOfLines={1}>
           @{e.player.username} · Seviye {e.player.level}
-        </Txt>
-        <Txt size={11} color={t.muted}>
-          {e.games} doğrulanmış maç
         </Txt>
       </View>
       <Txt size={14} weight="heavy" color={t.accent}>

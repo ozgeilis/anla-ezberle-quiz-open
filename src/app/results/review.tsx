@@ -31,8 +31,8 @@ export default function Review() {
         />
       )}
       {result && wrong.length === 0 && !all && (
-        <Card style={{ marginVertical: 20, gap: 10 }}>
-          <Txt size={25} weight="heavy">
+        <Card style={{ marginVertical: 16, gap: 10 }}>
+          <Txt size={22} weight="heavy">
             Kusursuz tur! ★
           </Txt>
           <Txt>
@@ -41,12 +41,12 @@ export default function Review() {
           </Txt>
         </Card>
       )}
-      <View style={{ gap: 16, marginVertical: 20 }}>
+      <View style={{ gap: 16, marginVertical: 16 }}>
         {(all ? (result?.answers ?? []) : wrong).map((answer) => {
           const q = gameQuestion(result!, answer.questionId)!;
           return (
             <Card key={q.id} style={{ gap: 12 }}>
-              <Txt size={19} weight="heavy">
+              <Txt size={18} weight="heavy">
                 {q.text}
               </Txt>
               <Txt color={c.danger}>
