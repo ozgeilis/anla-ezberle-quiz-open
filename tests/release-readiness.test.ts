@@ -4,10 +4,14 @@ import { checkReleaseConfig, releaseReport } from "../scripts/check-release-read
 import config from "../app.json";
 import eas from "../eas.json";
 
-test("prototype identifiers and absent EAS block store readiness", () => {
+test("approved Android identity does not bypass remaining store gates or prototype rejection", () => {
  const items = checkReleaseConfig(config, eas);
  assert.equal(releaseReport(items).readyForStoreSubmission, false);
- assert.deepEqual(items.filter(i => !i.pass).map(i => i.id), ["ios-identifier", "android-identifier", "production-build-profile"]);
+ assert.deepEqual(items.filter(i => !i.pass).map(i => i.id), ["ios-identifier", "production-build-profile"]);
+ assert.equal(items.find(i => i.id === "android-identifier")?.pass, true);
+ const prototype = checkReleaseConfig({expo: {...config.expo, android: {...config.expo.android, package: "com.anlaezberle.quiz.prototype"}}}, eas);
+ assert.equal(prototype.find(i => i.id === "android-identifier")?.pass, false);
+ assert.equal(releaseReport(prototype).readyForStoreSubmission, false);
 });
 test("complete production metadata passes the static gate", () => {
  const items = checkReleaseConfig({

@@ -63,7 +63,7 @@ OS izni, sunucudaki tercih ve mevcut cihaz kaydı ayrı değerlendirilir.
 | Açık/koyu responsive ekranlar       | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                          |
 | Android/iOS/web Expo export         | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                   |
 | Android/iOS prebuild                | PASS           | Bildirim plugin'i, Android channel/izin ve iOS entitlement üretimi    |
-| Gerçek Android token/teslim/tıklama | DOĞRULANAMADI  | Firebase/FCM henüz kurulmamış                                         |
+| Gerçek Android token/teslim/tıklama | DOĞRULANAMADI  | Firebase projesi/FCM V1 açık; EAS kimlik bilgisi ve yeni APK henüz yok |
 | Gerçek iOS token/teslim/tıklama     | DOĞRULANAMADI  | Ücretli Apple Developer üyeliği yok                                   |
 | Canlı push endpoint/kuyruk          | MEVCUT DEĞİL   | Üretim migration/function uygulanmadı                                 |
 
@@ -120,13 +120,20 @@ arkadaşlık/davet/maç/oda/Inbox tabloları mevcut. Inbox RLS/FORCE RLS açık.
 ## Üretime geçiş planı — ayrıca açık onay gerekir
 
 1. Mevcut açık PR #2/#3/#6 ile entegrasyon sırasını çöz. Bu dal main tabanlıdır;
-   onların görsel/oyun değişikliklerini içermez. Main hâlen
-   `com.anlaezberle.quiz.prototype` kullanır. Kullanıcının önceden onayladığı
-   `com.kovynelstudio.anlaezberle` kimliği PR #2'de beklemektedir. Firebase
-   kaydından önce seçilen build'in package kimliğini kesin doğrula; yanlış
-   package için kimlik bilgisi oluşturma. EAS projectId mevcut projeye aittir.
-2. Kullanıcı Firebase projesini oluşturur/erişim verir. Tam Android package
-   adına uygulama kaydedilir. `google-services.json` yalnız EAS file environment
+   onların görsel/oyun değişikliklerini içermez. Bu dalın Android package değeri,
+   kullanıcının önceden onayladığı ve kabul ettiği APK'daki
+   `com.kovynelstudio.anlaezberle` kimliğine hizalandı (PR #2 ile aynı).
+   iOS bundle kimliği değiştirilmedi. Yeni kabul APK'sı hazırlanırken önceki
+   kabul edilen özellikler korunmalı. EAS projectId mevcut projeye aittir.
+2. Kullanıcının açık onayıyla ücretsiz Spark planında `anla-ezberle-push`
+   Firebase projesi oluşturuldu; Analytics, Gemini ve ücretli deneme açılmadı.
+   Android uygulaması `com.kovynelstudio.anlaezberle` adına kaydedildi ve FCM V1
+   etkin görüldü. Ayrı `expo-push-sender` hesabına yalnız kullanıcının ayrıca
+   onayladığı Firebase Cloud Messaging API Admin rolü verildi. Kullanıcı JSON
+   özel anahtarını kendisi oluşturdu; Cloud konsolunda etkin anahtar görüldü.
+   Yerel dosya yolu henüz bulunamadığından içerik kontrolü/EAS yüklemesi yapılmadı.
+   Android istemci yapılandırması indirimi de henüz doğrulanmadı.
+   `google-services.json` yalnız EAS file environment
    `GOOGLE_SERVICES_JSON` olarak tutulur. `app.config.ts` package uyumunu denetler.
    FCM V1 servis hesabı özel anahtarı yalnız EAS Credentials'a yüklenir;
    uygulama paketine, Git'e, Metro'ya veya CI'ye konulmaz. Ücretli plan başlatılmaz.
