@@ -63,7 +63,9 @@ OS izni, sunucudaki tercih ve mevcut cihaz kaydı ayrı değerlendirilir.
 | Açık/koyu responsive ekranlar       | PASS: 48 ekran | 320/360/390 × sekiz görünüm; yatay taşma yok                          |
 | Android/iOS/web Expo export         | PASS           | JS/Hermes/web çıktısı; imzalı native build değildir                   |
 | Android/iOS prebuild                | PASS           | Bildirim plugin'i, Android channel/izin ve iOS entitlement üretimi    |
-| Gerçek Android token/teslim/tıklama | DOĞRULANAMADI  | Firebase projesi/FCM V1 açık; EAS kimlik bilgisi ve yeni APK henüz yok |
+| Android Firebase/EAS kurulumu      | PASS          | Onaylı package için FCM V1 anahtarı atandı; yalnız preview file env |
+| Gerçek Firebase dosyasıyla prebuild | PASS          | İzole Android fixture; Google Services dosyası ve Gradle plugin'i |
+| Gerçek Android token/teslim/tıklama | DOĞRULANAMADI  | Yeni push APK'sı ve sunucu rollout'u henüz yok                     |
 | Gerçek iOS token/teslim/tıklama     | DOĞRULANAMADI  | Ücretli Apple Developer üyeliği yok                                   |
 | Canlı push endpoint/kuyruk          | MEVCUT DEĞİL   | Üretim migration/function uygulanmadı                                 |
 
@@ -130,13 +132,18 @@ arkadaşlık/davet/maç/oda/Inbox tabloları mevcut. Inbox RLS/FORCE RLS açık.
    Android uygulaması `com.kovynelstudio.anlaezberle` adına kaydedildi ve FCM V1
    etkin görüldü. Ayrı `expo-push-sender` hesabına yalnız kullanıcının ayrıca
    onayladığı Firebase Cloud Messaging API Admin rolü verildi. Kullanıcı JSON
-   özel anahtarını kendisi oluşturdu; Cloud konsolunda etkin anahtar görüldü.
-   Yerel dosya yolu henüz bulunamadığından içerik kontrolü/EAS yüklemesi yapılmadı.
-   Android istemci yapılandırması indirimi de henüz doğrulanmadı.
-   `google-services.json` yalnız EAS file environment
-   `GOOGLE_SERVICES_JSON` olarak tutulur. `app.config.ts` package uyumunu denetler.
-   FCM V1 servis hesabı özel anahtarı yalnız EAS Credentials'a yüklenir;
-   uygulama paketine, Git'e, Metro'ya veya CI'ye konulmaz. Ücretli plan başlatılmaz.
+   özel anahtarını kendisi oluşturdu. İlk indirilemeyen anahtarı kullanıcı iptal
+   edip yenisini oluşturdu; Cloud'da yalnız yeni etkin anahtar görüldü. Yerel
+   JSON'un proje/servis hesabı/RSA anahtar türü doğrulandı ve mevcut EAS projesinde
+   doğru Android kimliğinin yalnız FCM V1 alanına atandı. Play Store gönderim
+   kimlik bilgisi eklenmedi; imzalama anahtarı değiştirilmedi.
+   `google-services.json` proje/package eşleşmesi doğrulanarak yalnız **preview**
+   ortamında EAS secret file environment `GOOGLE_SERVICES_JSON` olarak yüklendi.
+   `app.config.ts` gerçek dosyayı çözdü; izole Android prebuild Google Services
+   dosyasını ve Gradle plugin'ini üretti. Bu, APK build veya cihaz testi değildir.
+   İki dosyanın özel yerel kopyaları proje dışında tutulur; özel servis hesabı
+   anahtarı uygulama paketine, Git'e, Metro'ya veya CI'ye konulmaz. Ücretli plan
+   başlatılmadı; Supabase'e FCM anahtarı yüklenmedi.
 3. iOS için ücretli Developer üyeliği edinilmeden APNs tamamlanmış sayılmaz.
    Kullanıcı üyeliği sağladıktan sonra EAS Credentials'ta doğru bundle için APNs
    anahtarı/provisioning hazırlanır. Sertifika/özel anahtar Git'e eklenmez.
