@@ -259,3 +259,28 @@ Kurulum: https://expo.dev/accounts/ozgeilis/projects/anla-ezberle-quiz/builds/dc
 
 Bu, telefon izni/token kaydı/gerçek teslim kanıtı değildir. Samsung A04 /
 Android 14 cihaz kabulü bekleniyor; token veya parola rapora yazılmayacak.
+
+## Fiziksel Android kabulü — kullanıcı doğrulaması, 26 Ekim
+
+Samsung A04 / Android 14, APK commit `31928a4`:
+
+- Gerçek cihazdan Expo token kaydı sunucuda bir aktif cihaz olarak doğrulandı;
+  token değeri dışarı aktarılmadı. Ana ve dört alt tercih açık kaydedildi.
+- Karşı sentetik hesabın mevcut Edge API üzerinden gönderdiği gerçek arkadaşlık
+  isteği arka plandaki telefona geldi; bildirime dokununca doğru istek ayrıntısı
+  açıldı. Kullanıcı cihazda doğruladı; sunucu Inbox okundu kaydını doğruladı.
+- Kullanıcı arkadaşlığı kabul edip uygulamayı son uygulamalardan kapattı.
+  Gerçek oyun daveti bildirimi geldi ve soğuk açılışta ilgili davet ayrıntısı
+  açıldı. Kullanıcı cihazda doğruladı; sunucuda okundu durumu mevcut.
+- Kullanıcı daveti kabul edince maç ekranı ve “Oyuna Başla” düğmesini gördü.
+  Salt okunur sunucu kontrolü davetin kabul edildiğini ve maç oluşturulduğunu
+  doğruladı. Bu, maçın oynanıp tamamlandığı anlamına gelmez.
+- İki gönderim için Expo ticket alındı ve gönderim hatası yoktu. Ticket tek
+  başına teslim kanıtı sayılmadı; teslim kanıtı yukarıdaki kullanıcı cihaz
+  doğrulamasıdır. Receipt durumu ayrıca izlenir.
+
+Telefon artık kullanıcının yanında olmadığı için isteği üzerine fiziksel
+testlere ara verildi. Yeni davet/olay gönderilmeyecek. Kapatılan alt tercih, ana
+anahtar kapama/yeniden açma, maç sonucu/oda bildirimi, OS izin iptali, çıkış ve
+fiziksel hesap silme kabulü hâlâ bekliyor; yapılmış sayılmaz. Genel push kapalı
+ve yalnız iki sentetik hesap test listesinde; main/Production değişmedi.
