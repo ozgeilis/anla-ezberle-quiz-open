@@ -14,6 +14,10 @@ test("iOS prototype remains blocked while the approved Android identifier passes
     items.filter((i) => !i.pass).map((i) => i.id),
     ["ios-identifier"],
   );
+  assert.equal(items.find((i) => i.id === "android-identifier")?.pass, true);
+  const prototype = checkReleaseConfig({ expo: { ...config.expo, android: { ...config.expo.android, package: "com.anlaezberle.quiz.prototype" } } }, eas);
+  assert.equal(prototype.find((i) => i.id === "android-identifier")?.pass, false);
+  assert.equal(releaseReport(prototype).readyForStoreSubmission, false);
 });
 test("complete production metadata passes the static gate", () => {
   const items = checkReleaseConfig(

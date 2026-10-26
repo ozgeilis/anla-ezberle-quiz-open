@@ -50,7 +50,17 @@
           "enableBackgroundPlayback": false,
           "enableBackgroundRecording": false
         }
-      ]
+      ],
+      [
+        "expo-notifications",
+        {
+          "defaultChannel": "game-updates",
+          "color": "#005F65",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      "expo-asset",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true

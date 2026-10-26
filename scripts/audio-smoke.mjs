@@ -86,11 +86,12 @@ try {
       const errors = [];
       p.on("pageerror", (e) => errors.push(e.message));
       await open(p, "/settings");
+      let s = await state(p);
+      assert.equal(s.starts.length, 0, "No autoplay before gesture");
+      await btn(p, "Ses").click();
       await p
         .getByRole("switch", { name: "Ses Efektleri", exact: true })
         .waitFor();
-      let s = await state(p);
-      assert.equal(s.starts.length, 0, "No autoplay before gesture");
       assert.equal(
         await p
           .getByRole("switch", { name: "Ses Efektleri", exact: true })
@@ -182,6 +183,7 @@ try {
         await btn(p, "Turdan ayrıl").click();
         await p.goto(origin + "/settings", { waitUntil: "networkidle" });
         await p.waitForFunction(() => window.__soundProbe.decoded === 11);
+        await btn(p, "Ses").click();
         await p
           .getByRole("switch", { name: "Ses Efektleri", exact: true })
           .click();
@@ -196,7 +198,14 @@ try {
         );
         await context.setOffline(false);
         await btn(p, "Ayarlardan geri dön").click();
-        // A directly opened Settings screen returns to Profile, not Home.
+        await p
+          .getByRole("heading", { name: "Ayarlar", exact: true })
+          .waitFor();
+        await btn(p, "Ayarlardan geri dön").click();
+        await p
+          .getByRole("heading", { name: "Profilim", exact: true })
+          .waitFor();
+        // Sound returns to Settings; a directly opened Settings menu returns to Profile.
         await p.getByRole("tab", { name: /Ana Sayfa/ }).click();
         await p
           .getByRole("button", {
@@ -320,16 +329,27 @@ try {
   );
   console.log(checks.length + " " + kind + " audio/browser groups passed.");
 } catch (e) {
+  // Preserve the original failure even when a crashed browser cannot produce diagnostics.
+  await writeFile(
+    join(root, "failure.txt"),
+    String(e) + "\n" + (e.stack ?? ""),
+  );
   if (last && !last.isClosed()) {
-    await last.screenshot({ path: join(root, "failure.png") });
-    await writeFile(
-      join(root, "failure-probe.json"),
-      JSON.stringify(await state(last), null, 2),
-    );
-    await writeFile(
-      join(root, "failure.txt"),
-      String(e) + "\n" + (await last.locator("body").innerText()),
-    );
+    try {
+      await last.screenshot({ path: join(root, "failure.png") });
+      await writeFile(
+        join(root, "failure-probe.json"),
+        JSON.stringify(await state(last), null, 2),
+      );
+      await writeFile(
+        join(root, "failure-dom.txt"),
+        await last.locator("body").innerText(),
+      );
+    } catch {
+      console.error(
+        "Browser diagnostics unavailable; original test failure retained.",
+      );
+    }
   }
   throw e;
 } finally {

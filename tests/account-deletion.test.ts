@@ -89,3 +89,96 @@ test("unverified, anonymous, expired, malformed and failed deletion never report
     400,
   );
 });
+
+test("Storage batches, Auth hard-delete and verification never turn a partial failure into success", async () => {
+  const { eraseAccount } =
+    await import("../supabase/functions/account-delete/erase");
+  const calls: string[] = [];
+  let files = [{ bucket: "avatars", name: "a/avatar.png" }];
+  const admin = {
+    files: async () => files,
+    remove: async (_bucket: string, names: string[]) => {
+      calls.push("storage");
+      assert.deepEqual(names, ["a/avatar.png"]);
+      files = [];
+    },
+    prepare: async () => {
+      calls.push("prepare");
+      return true;
+    },
+    deleteAuth: async (id: string) => {
+      assert.equal(id, "a");
+      calls.push("auth-admin-hard-delete");
+      return true;
+    },
+    verify: async () => {
+      calls.push("verify");
+      return true;
+    },
+  };
+  assert.equal(
+    await eraseAccount(admin, "a", "synthetic-a@example.invalid"),
+    true,
+  );
+  assert.deepEqual(calls, [
+    "storage",
+    "prepare",
+    "auth-admin-hard-delete",
+    "verify",
+  ]);
+  calls.length = 0;
+  files = [{ bucket: "avatars", name: "a/avatar.png" }];
+  await assert.rejects(
+    eraseAccount(
+      {
+        ...admin,
+        remove: async () => {
+          throw Error("offline");
+        },
+      },
+      "a",
+      "synthetic-a@example.invalid",
+    ),
+  );
+  assert.deepEqual(calls, []);
+  files = [];
+  assert.equal(
+    await eraseAccount(
+      { ...admin, deleteAuth: async () => false },
+      "a",
+      "synthetic-a@example.invalid",
+    ),
+    false,
+  );
+  assert.equal(calls.join(",").includes("verify"), false);
+  assert.equal(
+    await eraseAccount(
+      { ...admin, verify: async () => false },
+      "a",
+      "synthetic-a@example.invalid",
+    ),
+    false,
+  );
+});
+test("deleted-actor cache cleanup preserves other accounts and every solo-history key", async () => {
+  const { deletionCacheKeys } =
+    await import("../src/features/online/deletionLocal");
+  const a = "00000000-0000-4000-8000-000000000001",
+    b = "00000000-0000-4000-8000-000000000002";
+  const own = [
+    `@anla-quiz-online/pending/v1/${a}/match`,
+    `@anla-quiz-online/challenge/v1/${a}/${b}`,
+    `@anla-quiz-online/create/v1/${a}`,
+    `anla-live-v1:${a}:room`,
+    `anla-live-v1:${a}:create`,
+    `anla-live-v1:${a}:match:answer`,
+  ];
+  const keep = [
+    "@anla-ezberle-quiz/progress/v1",
+    `anla-live-v1:${b}:room`,
+    `@anla-quiz-online/create/v1/${b}`,
+    "anla-live-pending-invite-v1",
+  ];
+  assert.deepEqual(deletionCacheKeys([...own, ...keep], a), own);
+  assert.throws(() => deletionCacheKeys(keep, ""));
+});

@@ -6,7 +6,7 @@ import listing from "../store/google-play/tr-TR/listing.json";
 import { brand } from "../src/branding/identity";
 import { tr } from "../src/localization/tr";
 
-test("launcher and store names stay separate with the approved Android package and unchanged callbacks", () => {
+test("launcher and store identity stay separate with the approved Android identity and unchanged callbacks", () => {
   assert.equal(config.expo.name, brand.title);
   assert.equal(config.expo.web.name, brand.title);
   assert.equal(config.expo.slug, "anla-ezberle-quiz");

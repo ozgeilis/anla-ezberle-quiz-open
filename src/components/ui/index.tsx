@@ -6,6 +6,7 @@ import React, { ComponentProps, useEffect, useRef, useState } from "react";
 import {
   AccessibilityInfo,
   Animated,
+  KeyboardAvoidingView,
   Modal,
   Platform,
   Pressable,
@@ -466,10 +467,12 @@ export function Dialog({
   title,
   children,
   onClose,
+  scrollable = false,
 }: React.PropsWithChildren<{
   visible: boolean;
   title: string;
   onClose: () => void;
+  scrollable?: boolean;
 }>) {
   const theme = useTheme();
   const reduced = useReducedMotion();
@@ -480,12 +483,20 @@ export function Dialog({
       animationType={reduced ? "none" : "fade"}
       onRequestClose={onClose}
     >
-      <View style={s.backdrop}>
+      <KeyboardAvoidingView
+        style={s.backdrop}
+        enabled={scrollable}
+        behavior={Platform.OS === "ios" ? "padding" : undefined}
+      >
         <View
           accessibilityViewIsModal
           role="dialog"
           accessibilityLabel={title}
-          style={[s.dialog, { backgroundColor: theme.background }]}
+          style={[
+            s.dialog,
+            { backgroundColor: theme.background },
+            scrollable && { maxHeight: "90%" },
+          ]}
         >
           <View
             style={[
@@ -503,9 +514,19 @@ export function Dialog({
             </Txt>
             <IconButton name="x" label="Pencereyi kapat" onPress={onClose} />
           </View>
-          {children}
+          {scrollable ? (
+            <ScrollView
+              keyboardShouldPersistTaps="handled"
+              style={{ flexShrink: 1 }}
+              contentContainerStyle={{ gap: 14, paddingBottom: 4 }}
+            >
+              {children}
+            </ScrollView>
+          ) : (
+            children
+          )}
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </Modal>
   );
 }

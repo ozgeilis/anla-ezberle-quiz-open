@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { TextInput } from "react-native";
+import { Linking, TextInput } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { deletionCacheKeys } from "./deletionLocal";
+import { useGame } from "../../storage/GameProvider";
 import { router } from "expo-router";
 import { Button, Card, Dialog, Page, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
@@ -7,29 +10,39 @@ import { useOnlineAuth } from "./OnlineProvider";
 import { onlineClient } from "./client";
 export function AccountDeletionScreen() {
   const auth = useOnlineAuth();
-  const [deleted, setDeleted] = useState(false);
-  if (deleted)
-    return (
-      <Page title="Hesabın Silindi">
-        <Card style={{ gap: 14 }}>
-          <Txt>
-            Sunucu hesabın ve ilişkili kişisel verilerin silindi. Bu cihazdaki
-            tek oyunculu kayıtların ve ayarların korundu.
-          </Txt>
-          <Button title="Ana sayfaya dön" onPress={() => router.replace("/")} />
-        </Card>
-      </Page>
-    );
+  const [confirmedActor, setConfirmedActor] = useState<string | null>(null);
   return (
     <AccountDeletionForm
-      key={auth.session?.user.id ?? "guest"}
-      onDeleted={() => setDeleted(true)}
+      key={confirmedActor ?? auth.session?.user.id ?? "guest"}
+      onServerDeleted={setConfirmedActor}
     />
   );
 }
-function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
+function AccountDeletionForm({
+  onServerDeleted,
+}: {
+  onServerDeleted: (actor: string) => void;
+}) {
   const auth = useOnlineAuth(),
     theme = useTheme();
+  const { updateProfile } = useGame();
+  const [serverDeleted, setServerDeleted] = useState<string | null>(null);
+  const finishLocal = async (actorId: string) => {
+    const client = onlineClient();
+    const current = await client?.auth.getSession();
+    if (!client || current?.error)
+      throw Error("Cihaz oturumu okunamadı. Yerel temizliği yeniden dene.");
+    if (current?.data.session && current.data.session.user.id !== actorId)
+      throw Error("Aktif hesap değişti; yeni hesabının verileri temizlenmedi.");
+    const keys = deletionCacheKeys(await AsyncStorage.getAllKeys(), actorId);
+    if (keys.length) await AsyncStorage.multiRemove(keys);
+    if (!(await updateProfile({ name: "Oyuncu" })))
+      throw Error(
+        "Sunucu hesabın silindi; cihazındaki profil adı temizlenemedi. Yeniden dene.",
+      );
+    await auth.completeAccountDeletion(actorId);
+    router.replace("/online");
+  };
   const [stage, setStage] = useState<0 | 1 | 2>(0),
     [password, setPassword] = useState(""),
     [confirmation, setConfirmation] = useState("");
@@ -44,9 +57,21 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
     currentActor.current = actor;
     const client = onlineClient();
     if (client)
-      void client.rpc("online_service_capabilities").then(({ data }) => {
-        if (alive) setAvailable(data?.accountDeletionEnabled === true);
-      });
+      void Promise.resolve(client.rpc("online_service_capabilities"))
+        .then(({ data, error }) => {
+          if (!alive) return;
+          setAvailable(!error && data?.accountDeletionEnabled === true);
+          if (error)
+            setMessage(
+              "Servis durumuna ulaşılamadı. Yeniden açıp tekrar dene.",
+            );
+        })
+        .catch(() => {
+          if (alive) {
+            setAvailable(false);
+            setMessage("Servis durumuna ulaşılamadı.");
+          }
+        });
     else
       void Promise.resolve().then(() => {
         if (alive) setAvailable(false);
@@ -80,19 +105,15 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
       });
       if (error || data?.deleted !== true)
         throw Error(
-          "Silme tamamlandığı doğrulanamadı. Şifreni ve bağlantını kontrol et. Sunucu onayı olmadan hesabın silindi sayılmaz.",
+          "Silme tamamlandığı doğrulanamadı. Şifreni ve bağlantını kontrol et. Dosya temizliği başlamış olabilir; giriş yapamıyorsan destek adresine ulaş. Sunucu onayı olmadan tamamlandı denmez.",
         );
       if (currentActor.current !== deletingActor) return;
       setPassword("");
       setConfirmation("");
       setStage(0);
-      // Auth account/related rows are already atomically removed. Local solo
-      // history/preferences intentionally remain; never clear all AsyncStorage.
-      onDeleted();
-      await client.auth.signOut({ scope: "local" });
-      setMessage(
-        "Sunucu hesabın ve ilişkili kişisel oyun verilerin silindi. Bu cihazdaki tek oyunculu geçmişin, XP, rozetler ve görünüm tercihlerin korundu.",
-      );
+      onServerDeleted(deletingActor);
+      setServerDeleted(deletingActor);
+      await finishLocal(deletingActor);
     } catch (e) {
       if (currentActor.current === deletingActor)
         setMessage(e instanceof Error ? e.message : "Silme doğrulanamadı.");
@@ -119,9 +140,10 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
           edilir.
         </Txt>
         <Txt>
-          Bu cihazdaki tek oyunculu geçmiş, XP, rozetler, avatar ve ayarlar ayrı
-          yerel kayıtlardır; bu işlem onları silmez. Başka cihazlardaki yerel
-          kayıtları da silemez.
+          Bu cihazdaki tek oyunculu geçmiş, XP, rozetler, avatar ve ayarlar
+          korunur. Profil adı Oyuncu olarak sıfırlanır; hesabına ait çevrimiçi
+          bekleyen yanıt/davet kayıtları ve oturum temizlenir. Başka
+          cihazlardaki yerel kayıtları bu işlem silemez.
         </Txt>
         {available === null ? (
           <Txt>Servis durumu kontrol ediliyor…</Txt>
@@ -131,19 +153,70 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
             bekleniyor; hesabında işlem yapılmadı.
           </Txt>
         ) : null}
-        {!actor ? (
+        {serverDeleted ? (
+          <>
+            <Txt accessibilityRole="alert">
+              Sunucu hesabın silindi. Bu cihazdaki oturum temizliği
+              tamamlanmadan çıkış başarılı sayılmayacak.
+            </Txt>
+            <Button
+              title="Cihaz oturumunu temizlemeyi yeniden dene"
+              disabled={busy}
+              onPress={() => {
+                setBusy(true);
+                void finishLocal(serverDeleted)
+                  .catch((e) =>
+                    setMessage(
+                      e instanceof Error
+                        ? e.message
+                        : "Yerel temizlik tamamlanamadı.",
+                    ),
+                  )
+                  .finally(() => setBusy(false));
+              }}
+            />
+          </>
+        ) : !actor ? (
           <Button
             title="Hesabımla giriş yap"
-            onPress={() => router.push("/online")}
+            onPress={() =>
+              router.push({
+                pathname: "/online",
+                params: { returnTo: "account-delete" },
+              })
+            }
           />
         ) : (
           <Button
             title="Hesabımı silme adımlarını aç"
             icon="trash-2"
             disabled={!available || busy}
-            onPress={() => setStage(1)}
+            onPress={() => {
+              setPassword("");
+              setConfirmation("");
+              setMessage("");
+              setStage(1);
+            }}
           />
         )}
+        <Txt size={12}>
+          Anla & Ezberle hesabını bu web sayfasından, uygulamayı kurmadan
+          silebilirsin. Silme talebinin durumu işlem sırasında ve sunucu
+          yanıtından sonra gösterilir.
+        </Txt>
+        <Button
+          title="Destek üzerinden silme talebi"
+          variant="outline"
+          onPress={() =>
+            void Linking.openURL(
+              "mailto:kovynelstudio@gmail.com?subject=Anla%20%26%20Ezberle%20hesap%20silme%20talebi",
+            ).catch(() =>
+              setMessage(
+                "E-posta uygulaması açılamadı. kovynelstudio@gmail.com adresine yazabilirsin; parola veya kod gönderme.",
+              ),
+            )
+          }
+        />
         <Button
           title="Gizlilik bilgisini oku"
           variant="outline"
@@ -152,6 +225,7 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
         {!!message && <Txt accessibilityRole="alert">{message}</Txt>}
       </Card>
       <Dialog
+        scrollable
         visible={stage === 1}
         title="Kalıcı hesap silme"
         onClose={() => !busy && setStage(0)}
@@ -164,18 +238,21 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
         <Button title="Anladım, ikinci onaya geç" onPress={() => setStage(2)} />
       </Dialog>
       <Dialog
+        scrollable
         visible={stage === 2}
         title="Son onay ve kimlik doğrulama"
         onClose={() => {
           if (!busy) {
             setStage(0);
             setPassword("");
+            setConfirmation("");
           }
         }}
       >
         <Txt>
           Yalnız giriş yaptığın hesap silinebilir. Devam etmek için güncel
-          parolanı gir ve SİL yaz.
+          parolanı gir ve SİL yaz. Dosyalar önce temizlenir; bir hata oluşursa
+          hesabın açık kalırken bazı dosyalar silinmiş olabilir.
         </Txt>
         <TextInput
           accessibilityLabel="Hesap silme için güncel parola"
@@ -216,6 +293,7 @@ function AccountDeletionForm({ onDeleted }: { onDeleted: () => void }) {
           disabled={busy}
           onPress={() => {
             setPassword("");
+            setConfirmation("");
             setStage(0);
           }}
         />

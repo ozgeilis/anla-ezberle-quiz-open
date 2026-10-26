@@ -1,4 +1,8 @@
 import {
+  clearPushNavigation,
+  revokePushBeforeSignOut,
+} from "../notifications/api";
+import {
   authFailureMessage,
   passwordError,
   validEmail,
@@ -29,6 +33,7 @@ interface AuthValue {
   resetPassword: (email: string) => Promise<void>;
   updatePassword: (password: string) => Promise<void>;
   registrationEnabled: boolean;
+  completeAccountDeletion: (actor: string) => Promise<void>;
 }
 const Context = createContext<AuthValue | null>(null);
 export function OnlineProvider({ children }: React.PropsWithChildren) {
@@ -175,9 +180,36 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     if (error) throw new Error(authFailureMessage(error));
   };
   const signOut = async () => {
+    if (session) {
+      await revokePushBeforeSignOut(session.user.id);
+      await clearPushNavigation(session.user.id).catch(() => {});
+    }
     const { error } = await onlineClient()!.auth.signOut({ scope: "local" });
     if (error) throw new Error("Çıkış tamamlanamadı. Bağlantını kontrol et.");
     setSession(null);
+  };
+  const completeAccountDeletion = async (actor: string) => {
+    // Push navigation metadata must never block the existing secure auth cleanup.
+    await clearPushNavigation(actor).catch(() => {});
+    const client = onlineClient();
+    if (!client) throw new Error("Servis yapılandırılmadı.");
+    const { data, error: readError } = await client.auth.getSession();
+    if (readError)
+      throw new Error(
+        "Cihaz oturumu okunamadı. Oturum temizliğini yeniden dene.",
+      );
+    if (data.session && data.session.user.id !== actor)
+      throw new Error("Aktif hesap değişti. Yeni hesabında işlem yapılmadı.");
+    const { error } = await client.auth.signOut({ scope: "local" });
+    if (error)
+      throw new Error(
+        "Sunucu hesabın silindi; cihaz oturumu temizlenemedi. Yeniden dene.",
+      );
+    setSession(null);
+    setNeedsVerification(false);
+    setNotice(
+      "Hesabın ve çevrimiçi kişisel verilerin sunucudan silindi. Yerel tek oyunculu geçmişin korunuyor.",
+    );
   };
   return (
     <Context.Provider
@@ -193,6 +225,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
         resendVerification,
         updatePassword,
         registrationEnabled,
+        completeAccountDeletion,
       }}
     >
       {children}

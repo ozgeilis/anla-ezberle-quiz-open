@@ -57,7 +57,7 @@ jobs:
           pnpm exec tsx scripts/audio-ci-fixtures.ts /tmp/anla-audio-fixture.json
       - name: Real browser runtime
         run: |
-          npm install --prefix "$RUNNER_TEMP/audio-node" --no-save playwright@1.56.1
+          npm install --prefix "$RUNNER_TEMP/audio-node" --no-save playwright@1.59.0
           "$RUNNER_TEMP/audio-node/node_modules/.bin/playwright" install --with-deps ${{ matrix.browser }}
       - name: Actual AudioContext, game events, storage and UI
         env:

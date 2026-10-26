@@ -1,8 +1,6 @@
 // Independently testable HTTP boundary. Never trusts an actor/email in input.
 export interface DeletionDependencies {
-  user(
-    jwt: string,
-  ): Promise<{
+  user(jwt: string): Promise<{
     id: string;
     email?: string;
     verified: boolean;
@@ -16,6 +14,8 @@ export function deletionHandler(deps: DeletionDependencies) {
     "https://anla-ezberle-quiz.vercel.app",
     "http://localhost:8121",
     "http://127.0.0.1:8121",
+    "http://localhost:8165",
+    "http://127.0.0.1:8165",
   ]);
   return async (req: Request) => {
     const origin = req.headers.get("Origin");

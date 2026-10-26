@@ -9,11 +9,16 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(
   join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
 );
-const origin = "http://127.0.0.1:8117",
+const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117",
   api = "http://127.0.0.1:55431",
   root = "artifacts/settings-account-ui";
 await mkdir(root, { recursive: true });
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.SETTINGS_BROWSER_CHANNEL
+    ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
+    : {}),
+});
 const checks = [];
 let latestPage;
 const userA = "11111111-1111-4111-8111-111111111111",
@@ -80,6 +85,17 @@ function setup() {
           headers: { "access-control-allow-origin": "*" },
         });
       if (req.method() === "OPTIONS") return reply({});
+      if (path === "/rest/v1/rpc/push_settings")
+        return reply({
+          available: false,
+          preferences: {
+            enabled: false,
+            friends: true,
+            invites: true,
+            results: true,
+            rooms: true,
+          },
+        });
       if (path.includes("online_service_capabilities"))
         return reply({ registrationEnabled: true });
       if (path === "/auth/v1/signup")
@@ -383,8 +399,14 @@ try {
           await p.getByText("Ayşe", { exact: true }).waitFor();
           await p.getByText("@ayse_34", { exact: true }).waitFor();
         }
-        if (path === "/settings")
-          await p.getByLabel("Görünen ad", { exact: true }).waitFor();
+        if (path === "/settings") {
+          await button(p, "Profil").waitFor();
+          assert.equal(
+            await p.getByLabel("Görünen ad", { exact: true }).count(),
+            0,
+          );
+          await button(p, "Bildirimler").waitFor();
+        }
         if (path === "/") {
           const first = p
             .getByRole("button", { name: /Kur’an ve Dualar|Kur'an ve Dualar/ })
@@ -622,7 +644,7 @@ try {
   state.failEmail = false;
   await login(page);
   state.unread = 3;
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   await page
     .getByLabel("Benzersiz kullanıcı adı", { exact: true })
     .fill("bilgiyolcusu");
@@ -659,7 +681,7 @@ try {
   await page.getByText("Henüz bildirim yok.", { exact: true }).waitFor();
   await page.goto(origin, { waitUntil: "networkidle" });
   await button(page, "Davetler ve Bildirimler").waitFor();
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   state.failSave = true;
   await page
     .getByLabel("Benzersiz kullanıcı adı", { exact: true })
@@ -674,7 +696,7 @@ try {
   await closeFeedback(page);
   await page.goto(`${origin}/profile`, { waitUntil: "networkidle" });
   await page.getByText("Ayşe", { exact: true }).waitFor();
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   await page.getByLabel("Görünen ad", { exact: true }).fill("Ayşe Nur");
   await button(page, "Görünen Adı Kaydet").click();
   await page.getByRole("dialog", { name: "Görünen Adın Kaydedildi" }).waitFor();
@@ -692,8 +714,9 @@ try {
   await shot(page, "profile-separate-identity");
   await page.goto(origin, { waitUntil: "networkidle" });
   await page.getByText("Ayşe Nur", { exact: true }).waitFor();
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   await shot(page, "settings-separate-fields");
+  await page.goto(`${origin}/settings/account`, { waitUntil: "networkidle" });
   await button(page, "Hesaptan Çık").click();
   await page.getByRole("dialog", { name: "Oturum Kapatıldı" }).waitFor();
   await closeFeedback(page);
@@ -758,6 +781,111 @@ try {
     }
     checks.push(
       `callback ${variant}: sanitized URL, persistent truthful result`,
+    );
+    await context.close();
+  }
+  // New menu hierarchy and transactional theme persistence on real rendering.
+  {
+    const context = await browser.newContext({
+      viewport: { width: 320, height: 844 },
+      colorScheme: "light",
+    });
+    const fixture = setup();
+    await fixture.install(context);
+    const page = await context.newPage();
+    latestPage = page;
+    await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+    for (const name of [
+      "Profil",
+      "Ses",
+      "Tema",
+      "Hesap",
+      "Bildirimler",
+      "Gizlilik",
+      "Yardım",
+    ])
+      await button(page, name).waitFor();
+    assert.equal(await page.getByRole("textbox").count(), 0);
+    assert.equal(await page.getByRole("switch").count(), 0);
+    await button(page, "Bildirimler").click();
+    await page
+      .getByRole("heading", { name: "Bildirim Ayarları", exact: true })
+      .waitFor();
+    assert.equal(await page.getByRole("switch").count(), 5);
+    assert.equal(
+      await page
+        .getByRole("button", { name: "Bildirimleri görüntüle", exact: true })
+        .count(),
+      0,
+    );
+    await shot(page, "notification-preferences-web-unsupported");
+    await button(page, "Ayarlardan geri dön").click();
+    await button(page, "Tema").click();
+    await page.getByRole("heading", { name: "Tema", exact: true }).waitFor();
+    assert.equal(await page.getByRole("radio").count(), 3);
+    const color = await page
+      .getByRole("heading", { name: "Tema", exact: true })
+      .evaluate((el) => getComputedStyle(el).color);
+    await page
+      .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+      .click();
+    assert.equal(
+      await page
+        .getByRole("heading", { name: "Tema", exact: true })
+        .evaluate((el) => getComputedStyle(el).color),
+      color,
+    );
+    await button(page, "Vazgeç").click();
+    await button(page, "Tema").click();
+    assert.equal(
+      await page
+        .getByRole("radio", { name: "Sistem temasını izle", exact: true })
+        .getAttribute("aria-checked"),
+      "true",
+    );
+    await page
+      .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+      .click();
+    await button(page, "Kaydet").click();
+    await page.getByRole("heading", { name: "Ayarlar", exact: true }).waitFor();
+    await page.reload({ waitUntil: "networkidle" });
+    await button(page, "Tema").click();
+    assert.equal(
+      await page
+        .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+        .getAttribute("aria-checked"),
+      "true",
+    );
+    await page
+      .getByRole("radio", { name: "Açık Tema ön izlemesi", exact: true })
+      .click();
+    await page.evaluate(() => {
+      window.__settingsOriginalWrite = Storage.prototype.setItem;
+      Storage.prototype.setItem = function () {
+        throw new DOMException("Synthetic test quota", "QuotaExceededError");
+      };
+    });
+    await button(page, "Kaydet").click();
+    await page.getByText(/Kaydedilemedi. Önceki tercihin korundu/).waitFor();
+    await shot(page, "theme-save-failure-keeps-old-theme");
+    await page.evaluate(() => {
+      Storage.prototype.setItem = window.__settingsOriginalWrite;
+      delete window.__settingsOriginalWrite;
+    });
+    await button(page, "Vazgeç").click();
+    await button(page, "Tema").click();
+    assert.equal(
+      await page
+        .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+        .getAttribute("aria-checked"),
+      "true",
+    );
+    await page
+      .getByRole("radio", { name: "Sistem temasını izle", exact: true })
+      .click();
+    await button(page, "Kaydet").click();
+    checks.push(
+      "settings menu: seven real detail routes, preference-only notifications, three theme previews, cancel/reopen, persistence, storage failure rollback",
     );
     await context.close();
   }
