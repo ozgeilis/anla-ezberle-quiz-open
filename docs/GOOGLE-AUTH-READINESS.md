@@ -60,7 +60,8 @@ Yeni yol ancak sunucuda `GOOGLE_ACCOUNT_DELETION_ENABLED=true` ve private config
 ### Yönlendirmeler
 
 - Google Web client authorized redirect URI: `https://mqyuihiobkomjfipxehj.supabase.co/auth/v1/callback`
-- Supabase redirect izinleri: `anla-ezberle-quiz://online/auth?**`, **yalnız doğrulanmış Preview origin** `/online/auth?**`, `http://127.0.0.1:8189/online/auth?**` (kontrollü yerel test). Üretim `https://anla-ezberle-quiz.vercel.app/online/auth?**` ancak yayın onayıyla.
+- Supabase redirect izinleri: `anla-ezberle-quiz://online/auth?**`, **yalnız doğrulanmış Preview origin** `/online/auth?**`, `http://127.0.0.1:8165/online/auth?**` (kontrollü yerel test). Üretim `https://anla-ezberle-quiz.vercel.app/online/auth?**` ancak yayın onayıyla.
+- Canlı `account-delete` CORS listesi Preview origin’lerini kabul etmez. Bu güvenlik sınırı bu PR’da genişletilmedi. Gerçek silme deneyi mevcut izinli yerel `http://127.0.0.1:8165` veya native istemcide yürütülür; Preview’deki silme arayüzü sentetik HTTP ile incelenir. Üretim origin’i zaten izinlidir. Preview üzerinden gerçek silme ayrıca istenirse yalnız o tam origin için ayrı onay ve dar sunucu değişikliği gerekir.
 - Uygulama başlangıçta `flow=google&attempt=<rastgele-nonce>` ekler. Tam Google callback’i yalnız mevcut origin/scheme ile kabul eder. Keyfî Vercel alt alanı wildcard’ı eklenmez. EAS Update/Production kanalına yayın yok.
 
 ### Geri dönüş
