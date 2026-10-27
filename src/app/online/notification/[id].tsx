@@ -51,8 +51,7 @@ function OwnedNotification({ id }: { id: string }) {
       />
     );
   return (
-    <Page title="Bildirimler">
-      <Button title="Geri Dön" variant="outline" onPress={close} />
+    <Page title="Bildirimler" onBack={close}>
       {!actor ? (
         <>
           <Txt>Bu bildirimi görmek için ilgili hesabınla giriş yap.</Txt>

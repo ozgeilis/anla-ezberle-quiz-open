@@ -3,14 +3,8 @@ import { View, useWindowDimensions } from "react-native";
 import { router } from "expo-router";
 import { Button, Card, Page, TextAction, Txt } from "../../components/ui";
 import { availableQuestions, difficultyName } from "../../content/questions";
-import {
-  categoryPool,
-  playCategoryName,
-} from "../../domain/game/play-categories";
-import {
-  learningTopicName,
-  learningTopicPool,
-} from "../../domain/game/learning";
+import { playCategoryName } from "../../domain/game/play-categories";
+import { learningTopicName } from "../../domain/game/learning";
 import { stageDefinition } from "../../domain/game/stages";
 import { useGame } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
@@ -45,14 +39,6 @@ export function PreparationScreen({
       : selection.category === "mixed"
         ? "Karma"
         : "Kategori seç";
-  const pool = selection.playCategory
-    ? categoryPool(availableQuestions, selection.playCategory)
-    : selection.topic
-      ? learningTopicPool(availableQuestions, selection.topic)
-      : availableQuestions;
-  const count = pool.filter(
-    (q) => !selection.difficulty || q.difficulty === selection.difficulty,
-  ).length;
   const chooseCategory = () =>
     router.push({
       pathname: "/categories",
@@ -111,7 +97,7 @@ export function PreparationScreen({
                 {title}
               </Txt>
               <Txt size={12} color={t.muted}>
-                {count} mevcut soru · Tur başına 10 soru
+                Seçimini yap, yarışmaya başla
               </Txt>
             </View>
           </View>

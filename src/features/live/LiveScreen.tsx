@@ -321,6 +321,15 @@ function LiveController({
             ? "Yarışma Sonucu"
             : "Arkadaşlarınla Oyna"
       }
+      onBack={() => {
+        if (active) {
+          setGoHome(true);
+          setConfirm(true);
+          return;
+        }
+        if (router.canGoBack()) router.back();
+        else router.replace("/");
+      }}
       subtitle="Aynı anda, aynı sorular. Birlikte keşfet!"
       scrollResetKey={`${room?.id ?? "entry"}:${room?.state}:${room?.position}`}
     >

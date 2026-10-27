@@ -1,3 +1,5 @@
+import { router, useLocalSearchParams } from "expo-router";
+import { BackButton } from "../../components/ui/BackButton";
 import React, { useState } from "react";
 import { FlatList, View, useWindowDimensions } from "react-native";
 import { Button, Card, Dialog, TextAction, Txt } from "../../components/ui";
@@ -15,12 +17,17 @@ export function AchievementsScreen() {
   const { data, updateShowcase } = useGame(),
     { badges, error, refresh } = useAchievements(),
     t = useTheme();
+  const { badge: badgeId } = useLocalSearchParams<{ badge?: string }>();
   const { fontScale, width } = useWindowDimensions();
   const [selected, setSelected] = useState<string | null>(null),
     [notice, setNotice] = useState(""),
     [saving, setSaving] = useState(false);
+  const closeDetail = () => {
+    setSelected(null);
+    router.setParams({ badge: undefined });
+  };
   const earned = badges.filter((b) => b.earned),
-    badge = badges.find((b) => b.id === selected);
+    badge = badges.find((b) => b.id === (selected ?? badgeId));
   const visible = [...badges].sort(
     (a, b) =>
       Number(b.earned) - Number(a.earned) ||
@@ -74,6 +81,7 @@ export function AchievementsScreen() {
             <View
               style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
             >
+              <BackButton />
               <Txt
                 size={22}
                 weight="bold"
@@ -140,7 +148,7 @@ export function AchievementsScreen() {
         }
       />
       {badge && (
-        <Dialog visible title={badge.title} onClose={() => setSelected(null)}>
+        <Dialog visible title={badge.title} onClose={closeDetail}>
           <View style={{ alignItems: "center", gap: 12 }}>
             <BadgeArt badge={badge} earned={badge.earned} size={104} />
             <Txt size={14} style={{ textAlign: "center" }}>

@@ -18,11 +18,13 @@ export function Dialog({
   children,
   onClose,
   scrollable = true,
+  back = false,
 }: React.PropsWithChildren<{
   visible: boolean;
   title: string;
   onClose: () => void;
   scrollable?: boolean;
+  back?: boolean;
 }>) {
   const theme = useTheme();
   const reduced = useReducedMotion();
@@ -64,6 +66,13 @@ export function Dialog({
               { justifyContent: "space-between", marginBottom: 8 },
             ]}
           >
+            {back && (
+              <IconButton
+                name="chevron-left"
+                label="Geri Dön"
+                onPress={onClose}
+              />
+            )}
             <Txt
               accessibilityRole="header"
               size={18}

@@ -29,7 +29,7 @@ function PaintedCategory({
   subtitle: string;
   illustration: CategoryArtworkId;
   colors: readonly [string, string, string];
-  footer: string;
+  footer?: string;
   selected?: boolean;
   disabled?: boolean;
   onPress: () => void;
@@ -45,7 +45,7 @@ function PaintedCategory({
       <Tap
         fill
         role={disabled ? "button" : "radio"}
-        label={`${title}. ${subtitle}. ${footer}${disabled ? `. ${status}. Bilgi için aç` : selected ? ". Seçili" : ""}`}
+        label={`${title}. ${subtitle}${footer ? `. ${footer}` : ""}${disabled ? `. ${status}. Bilgi için aç` : selected ? ". Seçili" : ""}`}
         selected={selected}
         onPress={() => (disabled ? setDetails(true) : onPress())}
         style={{
@@ -83,9 +83,11 @@ function PaintedCategory({
           >
             {title}
           </Txt>
-          <Txt size={11} color="#E5F5ED">
-            {footer}
-          </Txt>
+          {!!footer && (
+            <Txt size={11} color="#E5F5ED">
+              {footer}
+            </Txt>
+          )}
           <View style={{ position: "absolute", top: 8, right: 8 }}>
             {disabled ? (
               <View
@@ -181,7 +183,13 @@ export function LearningChoices({
               selected={selected === topic.id}
               disabled={!topic.available}
               onPress={() => onSelect(topic.id)}
-              footer={`${topic.count} soru${topic.exhausted ? " · Yeni tur tamamlandı" : !topic.available ? " · Tur için yetersiz" : ""}`}
+              footer={
+                topic.exhausted
+                  ? "Yeni tur tamamlandı"
+                  : !topic.available
+                    ? "Bu seçim kullanılamıyor"
+                    : undefined
+              }
             />
           </View>
         ))}

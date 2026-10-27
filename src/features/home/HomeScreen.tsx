@@ -17,7 +17,6 @@ import {
   Txt,
 } from "../../components/ui";
 import { useAchievements } from "../achievements/AchievementProvider";
-import { availableQuestions } from "../../content/questions";
 import { dateKey, stats } from "../../domain/game/engine";
 import { useGameLibrary } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
@@ -178,9 +177,7 @@ export function HomeScreen() {
           XP’de bir seviye ilerlersin. Yalnız biten turlar kaydedilir.
         </Txt>
         <Txt size={12} color={theme.muted}>
-          {availableQuestions.length} soru kullanım için ürün sahibi tarafından
-          onaylandı. Kaynaklar korunur; bağımsız uzman incelemesi tamamlandı
-          iddiası değildir.
+          Yanıtlarını sonuç ekranından açıklamalarıyla inceleyebilirsin.
         </Txt>
         <Button title="Anladım" onPress={() => setHelp(false)} />
       </Dialog>

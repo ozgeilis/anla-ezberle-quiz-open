@@ -173,9 +173,9 @@ export function preparationStatus(
   return {
     ...status,
     message: status.canStart
-      ? "10 farklı soru hazır. Her doğru cevap 100 puan!"
+      ? "Yarışmaya hazırsın!"
       : "exhausted" in status && status.exhausted
-        ? "Bu kategorideki yeni soruları tamamladın. Kalan yeni sorularla bu seviyede 10 bağımsız soru oluşmuyor. Başka seçim yapabilir veya isteğe bağlı yeniden oynayabilirsin."
-        : "Bu seçimde henüz 10 farklı konuyu kapsayan soru yok. Benzer soruları tekrarlamamak için başka kategori veya zorluk seç.",
+        ? "Bu kategorideki yeni soruları tamamladın. Başka seçim yapabilir veya isteğe bağlı yeniden oynayabilirsin."
+        : "Bu seçim şu anda oynanamıyor. Benzer soruları tekrarlamamak için başka kategori veya zorluk seç.",
   };
 }
