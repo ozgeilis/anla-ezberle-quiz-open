@@ -7,19 +7,16 @@ import React, {
   useState,
 } from "react";
 import { AppState } from "react-native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { router, useRootNavigationState } from "expo-router";
+import { useRootNavigationState } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { useOnlineAuth } from "../online/OnlineProvider";
 import { pushRequest } from "./api";
 import * as device from "./device";
+import { usePendingPush } from "./usePendingPush";
 import {
   defaultPushPreferences,
   enableOnDevice,
   effectivePush,
-  pushEnvelope,
-  safePushTarget,
-  PushEnvelope,
   PushPermission,
   PushPreferences,
   PushSettingsSnapshot,
@@ -84,9 +81,7 @@ const PushController = React.memo(function PushController({
     [available, setAvailable] = useState(false),
     [ready, setReady] = useState(false),
     [busy, setBusy] = useState(false),
-    [error, setError] = useState(""),
-    [notice, setNotice] = useState(""),
-    [pending, setPending] = useState<PushEnvelope | null>(null);
+    [error, setError] = useState("");
   const [registered, setRegistered] = useState(false);
   const alive = useRef(true),
     lock = useRef(false),
@@ -142,111 +137,13 @@ const PushController = React.memo(function PushController({
     });
     return () => sub.remove();
   }, [refresh]);
-  useEffect(() => {
-    let cleanup = () => {};
-    let cancelled = false;
-    void device
-      .startPushListeners(
-        (value, id) => {
-          const v = pushEnvelope(value);
-          if (!v) return;
-          void (async () => {
-            const last = await AsyncStorage.getItem("@anla-quiz/push-last");
-            if (last === id) return;
-            await AsyncStorage.multiSet([
-              ["@anla-quiz/push-pending", JSON.stringify(v)],
-              ["@anla-quiz/push-last", id],
-            ]);
-            if (!cancelled) setPending(v);
-          })().catch(() => {
-            if (!cancelled) {
-              setPending(v);
-              setNotice(
-                "Bildirim hedefi bu cihazda kaydedilemedi. Yeniden girişte bildirimi tekrar açman gerekebilir.",
-              );
-            }
-          });
-        },
-        () => void refresh(),
-      )
-      .then((fn) => {
-        if (cancelled) fn();
-        else cleanup = fn;
-      })
-      .catch(() => {
-        if (!cancelled)
-          setNotice("Bildirim bağlantısı kurulamadı. Ayarlardan yeniden dene.");
-      });
-    void AsyncStorage.getItem("@anla-quiz/push-pending")
-      .then((raw) => {
-        try {
-          const v = raw ? pushEnvelope(JSON.parse(raw)) : null;
-          if (!cancelled) setPending(v);
-        } catch {
-          if (!cancelled) setPending(null);
-        }
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-      cleanup();
-    };
-  }, [refresh]);
-  useEffect(() => {
-    if (!pending || !authReady || !gameReady || !navigation?.key) return;
-    if (!actor) {
-      router.push("/online");
-      return;
-    }
-    if (pending.recipientId !== actor) {
-      let cancelled = false;
-      void AsyncStorage.removeItem("@anla-quiz/push-pending")
-        .catch(() => {})
-        .then(() => {
-          if (!cancelled) {
-            setNotice(
-              "Bu bildirim farklı bir hesaba ait. İlgili hesabınla giriş yapıp bildirimi yeniden açabilirsin.",
-            );
-            setPending(null);
-          }
-        });
-      return () => {
-        cancelled = true;
-      };
-    }
-    let cancelled = false;
-    void pushRequest<unknown>(actor, "target", {
-      notificationId: pending.notificationId,
-      source: pending.source,
-    })
-      .then((value) => {
-        const target = safePushTarget(value);
-        if (cancelled) return;
-        const destination =
-          target ??
-          safePushTarget({
-            kind: pending.source === "room" ? "room" : "notification",
-            id: pending.notificationId,
-          });
-        if (destination) router.push(destination);
-        setPending(null);
-        void AsyncStorage.removeItem("@anla-quiz/push-pending");
-      })
-      .catch(() => {
-        if (!cancelled) {
-          const destination = safePushTarget({
-            kind: pending.source === "room" ? "room" : "notification",
-            id: pending.notificationId,
-          });
-          if (destination) router.push(destination);
-          setPending(null);
-          void AsyncStorage.removeItem("@anla-quiz/push-pending");
-        }
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [pending, actor, authReady, gameReady, navigation?.key]);
+  const notice = usePendingPush({
+    actor,
+    authReady,
+    gameReady,
+    navigationKey: navigation?.key,
+    refresh,
+  });
   const save = async (
     patch: Partial<PushPreferences>,
     requestPermission = false,
@@ -300,10 +197,7 @@ const PushController = React.memo(function PushController({
         registered,
         busy,
         error,
-        notice:
-          pending && actor && pending.recipientId !== actor
-            ? "Bu bildirim başka bir hesabına ait. İlgili hesabınla giriş yap."
-            : notice,
+        notice,
         refresh,
         save,
       },

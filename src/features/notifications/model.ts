@@ -96,6 +96,17 @@ export function safePushTarget(
   }
 }
 
+// Both a server response and a failed lookup use the same allowlisted fallback.
+export function resolvePushDestination(value: unknown, pending: PushEnvelope) {
+  return (
+    safePushTarget(value) ??
+    safePushTarget({
+      kind: pending.source === "room" ? "room" : "notification",
+      id: pending.notificationId,
+    })
+  );
+}
+
 export interface PushEnableDeps {
   permission: () => Promise<PushPermission>;
   registration: () => Promise<{

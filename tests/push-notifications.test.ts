@@ -6,6 +6,7 @@ import {
   patchPreferences,
   pushEnvelope,
   safePushTarget,
+  resolvePushDestination,
 } from "../src/features/notifications/model";
 import {
   pushDispatchHandler,
@@ -60,6 +61,38 @@ test("push envelopes never accept arbitrary URLs, foreign payload fields or malf
     null,
   ])
     assert.equal(safePushTarget(value), null);
+});
+test("push lookup success and failure keep destinations allowlisted and source-specific", () => {
+  const pending = pushEnvelope({
+    version: 1,
+    source: "inbox",
+    notificationId: id,
+    recipientId: actor,
+  })!;
+  assert.deepEqual(
+    resolvePushDestination({ kind: "match", id: actor }, pending),
+    {
+      pathname: "/online",
+      params: { match: actor },
+    },
+  );
+  for (const invalid of [
+    null,
+    { url: "https://evil.invalid" },
+    { kind: "room", id: "../account-delete" },
+  ]) {
+    assert.deepEqual(resolvePushDestination(invalid, pending), {
+      pathname: "/online/notification/[id]",
+      params: { id },
+    });
+    assert.deepEqual(
+      resolvePushDestination(invalid, { ...pending, source: "room" }),
+      {
+        pathname: "/live",
+        params: { room: id },
+      },
+    );
+  }
 });
 function fixture(
   result: unknown = { data: { status: "ok", id: "ticket-id" } },
