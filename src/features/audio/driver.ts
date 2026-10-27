@@ -1,6 +1,7 @@
 // Native iOS/Android. Web resolves driver.web.ts for Safari-compatible gain control.
 import type { AudioPlayer } from "expo-audio";
 import { soundAssets } from "./assets";
+import { wrapNativePlayer } from "./native-player";
 import type { SoundName } from "./catalog";
 import type { SoundDriver, SoundPlayer } from "./driver.types";
 export function createSoundDriver(): SoundDriver {
@@ -16,39 +17,7 @@ export function createSoundDriver(): SoundDriver {
       updateInterval: 500,
     });
     audio.loop = false;
-    let released = false,
-      revision = 0;
-    const wrapper: SoundPlayer = {
-      get volume() {
-        return audio.volume;
-      },
-      set volume(v) {
-        audio.volume = v;
-      },
-      get playing() {
-        return audio.playing;
-      },
-      play(restart = false) {
-        const id = ++revision;
-        if (restart)
-          void audio
-            .seekTo(0)
-            .then(() => {
-              if (!released && id === revision) audio.play();
-            })
-            .catch(() => {});
-        else audio.play();
-      },
-      pause() {
-        ++revision;
-        audio.pause();
-      },
-      release() {
-        released = true;
-        ++revision;
-        audio.remove();
-      },
-    };
+    const wrapper = wrapNativePlayer(audio);
     players.set(name, wrapper);
     return wrapper;
   };
@@ -66,7 +35,15 @@ export function createSoundDriver(): SoundDriver {
         interruptionMode: "mixWithOthers",
       });
       if (disposed) return;
-      for (const name of ["tap", "select", "correct", "wrong"] as const)
+      for (const name of [
+        "tick",
+        "tap",
+        "select",
+        "correct",
+        "wrong",
+        "next",
+        "timeout",
+      ] as const)
         player(name);
     },
     unlock() {},

@@ -157,8 +157,7 @@ export class SoundController {
   private start(cue: Cue) {
     try {
       const player = this.driver.player(cue.name);
-      player.volume =
-        this.preferences.effectsVolume * (cue.name === "tick" ? 0.3 : 0.8);
+      player.volume = this.preferences.effectsVolume * 0.8;
       player.play(true);
       this.current = { cue, player };
       this.effectTimer = this.time.set(() => {

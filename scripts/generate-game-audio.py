@@ -1,51 +1,81 @@
-"""Original deterministic synthesis. No recordings, samples, religious audio or external compositions."""
+"""Original quiz cues: procedural oscillators/transients, no recordings or borrowed themes."""
 from pathlib import Path
 import math, wave, struct, json, hashlib
+
 ROOT = Path(__file__).resolve().parent.parent / 'assets/audio'
 RATE = 24000
-# Shared D major pentatonic palette; gentle mallets with inharmonic crystal partials.
-D, E, FS, A, B = 293.6648, 329.6276, 369.9944, 440.0, 493.8833
+TAU = 2 * math.pi
+# A warm struck-wood palette; original short signals, no background composition.
+C, E, G, A = 261.6256, 329.6276, 391.9954, 440.0
 CUES = {
-    'tap': (.10, [(0, A, .075, .22)]),
-    'select': (.24, [(0, D*2, .16, .32), (.055, A*2, .16, .18)]),
-    'correct': (.68, [(0, D*2, .38, .44), (.105, FS*2, .40, .35), (.21, A*2, .43, .32)]),
-    'wrong': (.42, [(0, E, .34, .34), (.09, D, .29, .28)]),
-    'next': (.26, [(0, A, .17, .25), (.07, B, .17, .20)]),
-    'timeout': (.52, [(0, FS, .34, .29), (.18, D, .30, .22)]),
-    'completed': (1.38, [(0, D, .55, .32), (0, D*2, .47, .30), (.19, FS*2, .48, .32), (.38, A*2, .58, .31), (.67, B*2, .65, .25)]),
-    'perfect': (1.88, [(0, D, .72, .27), (0, D*2, .49, .33), (.17, FS*2, .48, .29), (.34, A*2, .52, .28), (.55, B*2, .48, .24), (.79, D*3, .88, .31), (.79, FS*2, .88, .18)]),
-    'badge': (.93, [(0, A*2, .43, .28), (.11, D*3, .65, .32), (.22, FS*2, .62, .22)]),
-    'levelUp': (1.45, [(0, D, .77, .24), (0, D*2, .55, .30), (.19, A*2, .56, .31), (.4, B*2, .57, .26), (.62, D*3, .73, .28), (.62, A, .73, .17)]),
+    'tap': (.08, [(0, 340, .065, 1)]),
+    'select': (.14, [(0, G, .10, 1), (.045, C*2, .09, .65)]),
+    'correct': (.46, [(0, G, .19, .85), (.10, C*2, .35, 1), (.10, E, .32, .28)]),
+    'wrong': (.32, [(0, 170, .14, 1), (.13, 135, .18, .9)]),
+    'next': (.16, [(0, E, .10, .65), (.045, G, .11, .8)]),
+    'timeout': (.44, [(0, 230, .12, 1), (.14, 230, .12, .9), (.28, 160, .15, 1)]),
+    'completed': (1.10, [(0, C, .23, .85), (.13, E, .23, .8), (.26, G, .26, .85), (.43, C*2, .65, 1), (.43, E, .62, .35)]),
+    'perfect': (1.55, [(0, C, .22, .8), (.12, E, .22, .8), (.24, G, .24, .85), (.38, A, .24, .8), (.55, C*2, .98, 1), (.55, E, .93, .35), (.55, G, .93, .3)]),
+    'badge': (.75, [(0, E, .21, .8), (.12, G, .22, .8), (.27, C*2, .46, 1)]),
+    'levelUp': (1.15, [(0, C, .22, .8), (.12, E, .22, .8), (.24, G, .25, .8), (.39, C*2, .74, 1), (.39, G, .70, .3)]),
 }
-def mallet(t, f, length):
-    if t < 0 or t >= length: return 0
-    env = (1-math.exp(-t/0.009)) * math.exp(-t/(length*.25)) * min(1, (length-t)/.045)
-    # Soft high partials, low-pass by construction. No harsh noise transients.
-    return env*(math.sin(2*math.pi*f*t)+.19*math.sin(2*math.pi*f*2*t)*math.exp(-t/.10)+.065*math.sin(2*math.pi*f*3.01*t)*math.exp(-t/.055))
+
+def tone(t, frequency, length, warm=False):
+    if t < 0 or t >= length:
+        return 0
+    # Damped resonant bodies, not sustained electronic beeps. Higher modes decay quickly.
+    attack = min(1, t / .002)
+    release = min(1, (length - t) / .035)
+    envelope = attack * release * math.exp(-t / (length * .40))
+    if warm:
+        # Soft low drum with a small initial pitch drop, no harsh buzzer waveform.
+        phase = TAU * frequency * (t + .0018 * (1-math.exp(-t/.012)))
+        return envelope * (math.sin(phase) + .28*math.sin(phase*.50)*math.exp(-t/.08)
+                           + .10*math.sin(phase*2.13)*math.exp(-t/.018))
+    phase = TAU * frequency * t
+    return envelope * (math.sin(phase) + .42*math.sin(phase*.50)*math.exp(-t/.14)
+                       + .25*math.sin(phase*2.76)*math.exp(-t/.024)
+                       + .08*math.sin(phase*5.40)*math.exp(-t/.009))
+
+def tick(t):
+    # Original clock escapement: a wooden body and a softer mechanical return.
+    def impulse(x, frequency, decay):
+        if x < 0:
+            return 0
+        envelope = (1-math.exp(-x/.001)) * math.exp(-x/decay)
+        return envelope * (math.sin(TAU*frequency*x) + .32*math.sin(TAU*frequency*2.37*x))
+    return impulse(t, 720, .024) + .62*impulse(t-.027, 490, .020)
+
 def write(name, samples):
-    peak=max(abs(v) for v in samples) or 1
-    # Quiet, bounded short effects; never normalize upward.
-    scale=min(1,.56/peak)
-    data=b''.join(struct.pack('<h',round(max(-1,min(1,v*scale))*32767))for v in samples)
-    path=ROOT/(name+'.wav')
-    with wave.open(str(path),'wb')as f:
-        f.setnchannels(1);f.setsampwidth(2);f.setframerate(RATE);f.writeframes(data)
-    rms=math.sqrt(sum((v*scale)**2 for v in samples)/len(samples))
-    return {'duration':len(samples)/RATE,'bytes':path.stat().st_size,'peak':round(peak*scale,4),'rms':round(rms,4),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+    # Remove DC; taper both endpoints and normalize each cue to a bounded level.
+    mean = sum(samples) / len(samples)
+    samples = [(v-mean)*min(1, i/(RATE*.001), (len(samples)-1-i)/(RATE*.006))
+               for i, v in enumerate(samples)]
+    scale = (.50 if name == 'tick' else .56) / (max(abs(v) for v in samples) or 1)
+    pcm = [round(v * scale * 32767) for v in samples]
+    data = struct.pack('<'+'h'*len(pcm), *pcm)
+    path = ROOT / (name+'.wav')
+    with wave.open(str(path), 'wb') as f:
+        f.setnchannels(1); f.setsampwidth(2); f.setframerate(RATE); f.writeframes(data)
+    return {'duration': len(pcm)/RATE, 'bytes': path.stat().st_size,
+            'peak': round(max(abs(v) for v in pcm)/32767, 4),
+            'rms': round(math.sqrt(sum((v/32767)**2 for v in pcm)/len(pcm)), 4),
+            'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+
 def generate():
-    ROOT.mkdir(parents=True,exist_ok=True);manifest={}
-    for name,(duration,notes) in CUES.items():
-        a=[sum(g*mallet(i/RATE-start,f,length)for start,f,length,g in notes)for i in range(round(duration*RATE))]
-        manifest[name]=write(name,a)
-    # Original clock escapement: two damped inharmonic impulses, no samples.
-    duration=.065
-    a=[]
-    for i in range(round(duration*RATE)):
-        t=i/RATE
-        def impulse(x, f):
-            return 0 if x<0 else .12*(1-math.exp(-x/.0008))*math.exp(-x/.007)*(math.sin(2*math.pi*f*x)+.25*math.sin(2*math.pi*f*2.71*x))
-        a.append(impulse(t,1250)+.55*impulse(t-.014,930))
-    manifest['tick']=write('tick',a)
-    (ROOT/'manifest.json').write_text(json.dumps({'sampleRate':RATE,'channels':1,'format':'PCM16 WAV','origin':'Original project synthesis; no third-party samples','files':manifest},indent=2)+'\n')
-    print('Generated',len(manifest),'original files;',sum(v['bytes']for v in manifest.values()),'bytes; no clipping.')
-if __name__=='__main__':generate()
+    ROOT.mkdir(parents=True, exist_ok=True)
+    manifest = {}
+    for name, (duration, notes) in CUES.items():
+        samples = [sum(g * tone(i/RATE-start, f, length, name in ('wrong', 'timeout'))
+                       for start, f, length, g in notes)
+                   for i in range(round(duration*RATE))]
+        manifest[name] = write(name, samples)
+    manifest['tick'] = write('tick', [tick(i/RATE) for i in range(round(.12*RATE))])
+    (ROOT/'manifest.json').write_text(json.dumps({
+        'sampleRate': RATE, 'channels': 1, 'format': 'PCM16 WAV',
+        'origin': 'Original project synthesis; no third-party samples', 'files': manifest,
+    }, indent=2)+'\n')
+    print('Generated', len(manifest), 'original cues;', sum(v['bytes'] for v in manifest.values()), 'bytes')
+
+if __name__ == '__main__':
+    generate()

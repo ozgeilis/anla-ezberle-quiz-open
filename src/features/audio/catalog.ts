@@ -1,15 +1,15 @@
 export const effectDuration = {
-  tick: 65,
-  tap: 100,
-  select: 240,
-  correct: 680,
-  wrong: 420,
-  next: 260,
-  timeout: 520,
-  completed: 1380,
-  perfect: 1880,
-  badge: 930,
-  levelUp: 1450,
+  tick: 120,
+  tap: 80,
+  select: 140,
+  correct: 460,
+  wrong: 320,
+  next: 160,
+  timeout: 440,
+  completed: 1100,
+  perfect: 1550,
+  badge: 750,
+  levelUp: 1150,
 } as const;
 export type SoundEffect = keyof typeof effectDuration;
 export type SoundName = SoundEffect;

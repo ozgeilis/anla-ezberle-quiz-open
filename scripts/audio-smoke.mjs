@@ -113,7 +113,7 @@ try {
       await btn(p, "Efekti dene").click();
       await p.waitForFunction(() =>
         window.__soundProbe.starts.some(
-          (x) => Math.abs(x.duration - 0.68) < 0.01,
+          (x) => Math.abs(x.duration - 0.46) < 0.01,
         ),
       );
       await p.waitForFunction(() => window.__soundProbe.peak > 0.001);
@@ -198,7 +198,7 @@ try {
         await btn(p, "Efekti dene").click();
         await p.waitForFunction(() =>
           window.__soundProbe.starts.some(
-            (x) => Math.abs(x.duration - 0.68) < 0.01,
+            (x) => Math.abs(x.duration - 0.46) < 0.01,
           ),
         );
         await context.setOffline(false);
@@ -220,6 +220,22 @@ try {
           .click();
         await p.waitForURL(/\/quiz$/);
         await p.getByRole("button", { name: /^A\. / }).waitFor();
+        await p.waitForFunction(
+          () =>
+            window.__soundProbe.starts.filter(
+              (x) =>
+                Math.abs(x.duration - 0.12) < 0.001 &&
+                x.peak > 0.03 &&
+                x.rms > 0.008,
+            ).length >= 2,
+        );
+        const ticks = (await state(p)).starts.filter(
+          (x) => Math.abs(x.duration - 0.12) < 0.001,
+        );
+        assert(
+          ticks[1].at - ticks[0].at >= 800,
+          "Clock ticks do not stack or catch up",
+        );
         const beforeGame = await state(p);
         assert(
           beforeGame.starts.every((x) => !x.loop),
@@ -232,17 +248,27 @@ try {
             ({ marker, count }) =>
               window.__soundProbe.starts
                 .slice(marker)
-                .filter((x) => Math.abs(x.duration - 0.68) < 0.01).length ===
+                .filter((x) => Math.abs(x.duration - 0.46) < 0.01).length ===
               count,
             { marker, count: i + 1 },
           );
           const after = await state(p),
             answerCount = after.starts.filter(
               (x, index) =>
-                index >= marker && Math.abs(x.duration - 0.68) < 0.01,
+                index >= marker && Math.abs(x.duration - 0.46) < 0.01,
             ).length;
           assert.equal(answerCount, i + 1, "Accepted answer once");
-          if (i === 0) await shot(p, "accepted-correct-answer");
+          if (i === 0) {
+            const acceptedAt = after.starts.at(-1).at;
+            await p.waitForTimeout(500);
+            assert(
+              !(await state(p)).starts.some(
+                (x) => x.at > acceptedAt && Math.abs(x.duration - 0.12) < 0.001,
+              ),
+              "Tick stops after an accepted answer",
+            );
+            await shot(p, "accepted-correct-answer");
+          }
           await p.waitForTimeout(740);
           if (i < 9)
             await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
@@ -254,9 +280,9 @@ try {
         const events = (await state(p)).starts.slice(marker),
           count = (d) =>
             events.filter((x) => Math.abs(x.duration - d) < 0.01).length;
-        assert.equal(count(1.88), 1, "Perfect result once");
-        assert.equal(count(1.45), 1, "Actual saved 240→340 XP level-up once");
-        assert(count(0.93) >= 1, "New badge chime");
+        assert.equal(count(1.55), 1, "Perfect result once");
+        assert.equal(count(1.15), 1, "Actual saved 240→340 XP level-up once");
+        assert(count(0.75) >= 1, "New badge chime");
         await shot(p, "perfect-result");
         const saved = await p.evaluate(
           (k) => JSON.parse(localStorage.getItem(k)),
@@ -268,7 +294,7 @@ try {
           fixture.data.games,
           "Historical records unchanged",
         );
-        const oldCount = count(1.88);
+        const oldCount = count(1.55);
         await p.setViewportSize({ width: 430, height: 844 });
         await p.waitForTimeout(100);
         await p.setViewportSize({ width: 390, height: 844 });
@@ -276,7 +302,7 @@ try {
         assert.equal(
           (await state(p)).starts
             .slice(marker)
-            .filter((x) => Math.abs(x.duration - 1.88) < 0.01).length,
+            .filter((x) => Math.abs(x.duration - 1.55) < 0.01).length,
           oldCount,
           "Rerender does not repeat result",
         );
@@ -298,18 +324,18 @@ try {
         await p.waitForTimeout(5500);
         s = await state(p);
         assert(
-          s.starts.some((x) => Math.abs(x.duration - 0.42) < 0.01),
+          s.starts.some((x) => Math.abs(x.duration - 0.32) < 0.01),
           "Wrong answer feedback",
         );
         assert.equal(
-          s.starts.filter((x) => Math.abs(x.duration - 1.38) < 0.01).length,
+          s.starts.filter((x) => Math.abs(x.duration - 1.1) < 0.01).length,
           1,
           "Ordinary completion once",
         );
         assert(s.maxEffects <= 1, "No overlapping effect voices");
         await shot(p, "ordinary-result");
         checks.push(
-          `${kind}: actual perfect/ordinary games, accepted correct/wrong, new badge, true level-up, source waveform, offline buffers, no music, timed question gating, immutable old records`,
+          `${kind}: actual perfect/ordinary games, accepted correct/wrong, measured audible clock ticks and answer stop, new badge, true level-up, source waveform, offline buffers, no music, timed question gating, immutable old records`,
         );
       }
       s = await state(p);

@@ -5,81 +5,81 @@
   "origin": "Original project synthesis; no third-party samples",
   "files": {
     "tap": {
-      "duration": 0.1,
-      "bytes": 4844,
-      "peak": 0.0896,
-      "rms": 0.0278,
-      "sha256": "9b531596bd2a6aad5c1921e0ca6795fff5fe37114a357c9a7fa9452891d79aab"
+      "duration": 0.08,
+      "bytes": 3884,
+      "peak": 0.56,
+      "rms": 0.1301,
+      "sha256": "744e92ac708408e4c27fde5fc852c009c1da899fcfec60aecdf858a2479e75fd"
     },
     "select": {
-      "duration": 0.24,
-      "bytes": 11564,
-      "peak": 0.1868,
-      "rms": 0.0568,
-      "sha256": "7e297c65d157072dc915e52e2f712c1bf11dcd7f9efcba208fd1bcb322557982"
+      "duration": 0.14,
+      "bytes": 6764,
+      "peak": 0.56,
+      "rms": 0.1346,
+      "sha256": "bdd349d209229da100ac2b1fdd68de00ddebef67821ee103588f7bb2ee5a4818"
     },
     "correct": {
-      "duration": 0.68,
-      "bytes": 32684,
-      "peak": 0.3818,
-      "rms": 0.1099,
-      "sha256": "1e1b9f0c51e80fcf6d4490522025f4b987dd952a1377ef0fa27f2b45c0a4d347"
+      "duration": 0.46,
+      "bytes": 22124,
+      "peak": 0.56,
+      "rms": 0.1181,
+      "sha256": "7559445985f24568d52e3366bbf692b0fc75bdd9539c1fa97ecf75f56bba6fd2"
     },
     "wrong": {
-      "duration": 0.42,
-      "bytes": 20204,
-      "peak": 0.276,
-      "rms": 0.0838,
-      "sha256": "30ea690ff9fc3d0c97bb5e116a0f03c4ebcf742b8c99290a7e0d59854c9aca34"
+      "duration": 0.32,
+      "bytes": 15404,
+      "peak": 0.56,
+      "rms": 0.1564,
+      "sha256": "9964d111dab301c42ac8b633a1ff0af215eb53646bbb997918650540ea99606d"
     },
     "next": {
-      "duration": 0.26,
-      "bytes": 12524,
-      "peak": 0.1528,
-      "rms": 0.0495,
-      "sha256": "97ce64d53e435b5cbe6807265bef8625622306a77c037976271e18cb9ae2a431"
+      "duration": 0.16,
+      "bytes": 7724,
+      "peak": 0.56,
+      "rms": 0.1549,
+      "sha256": "be609f580e1a8b89a47bfcaed6d4acbeaceacab1fadde7244906e846b37a5bd5"
     },
     "timeout": {
-      "duration": 0.52,
-      "bytes": 25004,
-      "peak": 0.2119,
-      "rms": 0.0624,
-      "sha256": "8fc907b21a16f4c2c8eb9a62e08cc34b77220bb9bab57f9fcfbbbc7538057d21"
+      "duration": 0.44,
+      "bytes": 21164,
+      "peak": 0.56,
+      "rms": 0.1452,
+      "sha256": "5f290adb03f496de8142eae96b417aea58d8c40ff13f1202a772c8b932c05384"
     },
     "completed": {
-      "duration": 1.38,
-      "bytes": 66284,
-      "peak": 0.4456,
-      "rms": 0.0981,
-      "sha256": "dadf851c465c1f09e2a2322f4ee88fb6990173062b527a2b4afb86b2cf7f3243"
+      "duration": 1.1,
+      "bytes": 52844,
+      "peak": 0.56,
+      "rms": 0.1061,
+      "sha256": "1b4eb8139560432feaef2c5a9512474fb71d6b15fc2a1c47cb3610b6e3a65be0"
     },
     "perfect": {
-      "duration": 1.88,
-      "bytes": 90284,
-      "peak": 0.4628,
-      "rms": 0.0982,
-      "sha256": "84a99e74a9df77c6470d7079a0a5693250a304b9249fdf534b2e37a54e6f5771"
+      "duration": 1.55,
+      "bytes": 74444,
+      "peak": 0.56,
+      "rms": 0.1041,
+      "sha256": "af119e6985e7ac0aa509eb26852f78592e875e2d3ff2774e3eaf87d699cbf8e4"
     },
     "badge": {
-      "duration": 0.93,
-      "bytes": 44684,
-      "peak": 0.3141,
-      "rms": 0.0848,
-      "sha256": "fb753cfac5303f3719b55a10acc04bef23e271c8f604a04d33699eb6871915c4"
+      "duration": 0.75,
+      "bytes": 36044,
+      "peak": 0.56,
+      "rms": 0.1169,
+      "sha256": "01c6fb8a82bba32f81b9f8072a564fce6f33bd33ed435b58046112de428a527c"
     },
     "levelUp": {
-      "duration": 1.45,
-      "bytes": 69644,
-      "peak": 0.4067,
-      "rms": 0.1011,
-      "sha256": "f1326ca86d471b556899f69075438999c236338a2d99ffdd7e5d82af804e8235"
+      "duration": 1.15,
+      "bytes": 55244,
+      "peak": 0.56,
+      "rms": 0.1206,
+      "sha256": "e17dce6463fcf733ee7e14fc56035e00c9caea3d068ba31c9a09eac409b86994"
     },
     "tick": {
-      "duration": 0.065,
-      "bytes": 3164,
-      "peak": 0.1003,
-      "rms": 0.0199,
-      "sha256": "2fff2e7e26b5bee6a3e7662d26f361279318fa055f766d3f052799ad5a5ecce8"
+      "duration": 0.12,
+      "bytes": 5804,
+      "peak": 0.5,
+      "rms": 0.116,
+      "sha256": "361035476e8985d542b57445b9c08554472dc895e2a3521ee01a239116e640c9"
     }
   }
 }
