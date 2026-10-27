@@ -10,7 +10,7 @@ begin
  assert not has_function_privilege('authenticated','public.claim_google_deletion(uuid,uuid)','execute'),'client cannot claim';
  assert not has_function_privilege('authenticated','public.before_google_user_created(jsonb)','execute'),'client cannot forge hook';
  assert has_function_privilege('supabase_auth_admin','public.before_google_user_created(jsonb)','execute'),'Auth may invoke hook';
- assert not has_table_privilege('authenticated','quiz_private.google_signup_allowlist','select'),'allowlist private';
+ assert not has_table_privilege('authenticated','quiz_private.google_auth_config','select'),'config private';
  assert public.before_google_user_created('{"user":{"email":"fixture@example.invalid","app_metadata":{"provider":"email"}}}'::jsonb)='{}','email policy unchanged';
  assert public.before_google_user_created('{"user":{"email":"fixture@example.invalid","app_metadata":{"provider":"google"}}}'::jsonb)?'error','Google closed';
  begin
@@ -19,18 +19,23 @@ begin
  exception when raise_exception then if sqlerrm<>'NOT_ENABLED' then raise; end if; end;
 end $$;
 update quiz_private.google_auth_config set oauth_enabled=true,deletion_enabled=true;
-insert into quiz_private.google_signup_allowlist values
- (encode(sha256(convert_to('fixture@example.invalid','UTF8')),'hex'),now()+interval '1 hour');
 set local role supabase_auth_admin;
 do $$ begin
- assert public.before_google_user_created('{"user":{"email":" FIXTURE@example.invalid ","app_metadata":{"provider":"google"}}}'::jsonb)='{}','normalized allowlist';
- assert public.before_google_user_created('{"user":{"email":"other@example.invalid","app_metadata":{"provider":"google"}}}'::jsonb)?'error','not allowed';
+ assert public.before_google_user_created('{"user":{"email":"fixture@example.invalid","app_metadata":{"provider":"google"}}}'::jsonb)?'error','closed test forbids every new Google signup';
 end $$;
 reset role;
-update quiz_private.google_signup_allowlist set expires_at=now()-interval '1 second';
+update quiz_private.google_auth_config set signup_enabled=true;
+update quiz_private.player_service_config set public_enrollment_enabled=false;
 do $$ begin
- assert public.before_google_user_created('{"user":{"email":"fixture@example.invalid","app_metadata":{"provider":"google"}}}'::jsonb)?'error','expired allowlist';
+ assert public.before_google_user_created('{"user":{"email":"fixture@example.invalid","app_metadata":{"provider":"google"}}}'::jsonb)?'error','existing signup policy cannot be bypassed';
 end $$;
+update quiz_private.player_service_config set public_enrollment_enabled=true;
+set local role supabase_auth_admin;
+do $$ begin
+ assert public.before_google_user_created('{"user":{"email":"fixture@example.invalid","app_metadata":{"provider":"google"}}}'::jsonb)='{}','future Google enrollment requires both independent approvals';
+end $$;
+reset role;
+update quiz_private.google_auth_config set signup_enabled=false;
 set local role service_role;
 do $$
 declare c uuid;
