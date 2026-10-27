@@ -176,6 +176,7 @@ export function NotificationDetail({
   };
   return (
     <Dialog
+      back
       visible
       title={showProfile ? "Oyuncu Profili" : title}
       onClose={onClose}

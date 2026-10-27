@@ -3,7 +3,7 @@ import { ScrollView, StyleProp, View, ViewStyle } from "react-native";
 import { Pattern } from "../game/Artwork";
 import { colors as c, useTheme } from "../../theme/tokens";
 import { Icon, IconName, Txt } from "./primitives";
-import { IconButton } from "./Button";
+import { BackButton } from "./BackButton";
 import { s } from "./styles";
 export function Chip({
   children,
@@ -91,9 +91,7 @@ export function Page({
           { marginTop: 0, marginBottom: 20, justifyContent: "space-between" },
         ]}
       >
-        {onBack && (
-          <IconButton name="chevron-left" label="Geri Dön" onPress={onBack} />
-        )}
+        <BackButton onPress={onBack} />
         <View style={{ flex: 1, minWidth: 0 }}>
           <Txt accessibilityRole="header" size={22} weight="heavy">
             {title}

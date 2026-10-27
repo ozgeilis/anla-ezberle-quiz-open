@@ -12,6 +12,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import Svg, { Defs, Ellipse, RadialGradient, Stop } from "react-native-svg";
 import { Icon, IconButton, Txt, useReducedMotion } from "../../components/ui";
+import { BackButton } from "../../components/ui/BackButton";
 import { resultArtwork } from "./artwork";
 import { resultPresentation } from "./presentation";
 import { useTheme } from "../../theme/tokens";
@@ -97,7 +98,15 @@ export function ResultExperience({
           paddingBottom: 28,
         }}
       >
-        <View style={{ alignItems: "flex-end", height: 44 }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            minHeight: 44,
+          }}
+        >
+          <BackButton onPress={onHome} />
           <IconButton
             name="x"
             label="Sonucu kapat ve ana sayfaya dön"

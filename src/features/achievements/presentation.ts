@@ -30,3 +30,16 @@ export function matchesCollection(badge: BadgeState, filter: CollectionFilter) {
       return badge.tier === "gold" || badge.tier === "diamond";
   }
 }
+
+/** An explicit showcase may never expose unearned or more than three awards. */
+export function showcaseBadges(
+  badges: readonly BadgeState[],
+  ids: readonly string[],
+) {
+  const earned = badges.filter((b) => b.earned);
+  const selected = [...new Set(ids)]
+    .map((id) => earned.find((b) => b.id === id))
+    .filter((b): b is BadgeState => !!b)
+    .slice(0, 3);
+  return selected.length ? selected : earned.slice(0, 3);
+}

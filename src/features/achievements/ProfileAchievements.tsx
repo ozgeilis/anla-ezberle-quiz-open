@@ -5,6 +5,7 @@ import { Button, Card, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useGame } from "../../storage/GameProvider";
 import { useAchievements } from "./AchievementProvider";
+import { showcaseBadges } from "./presentation";
 import { BadgeArt } from "./BadgeArt";
 export function ProfileAchievements({
   editable = false,
@@ -17,11 +18,8 @@ export function ProfileAchievements({
   const [busy, setBusy] = useState(false),
     [message, setMessage] = useState("");
   const lock = useRef(false);
-  const earned = badges.filter((b) => b.earned),
-    showcase = (data.showcase ?? [])
-      .map((id) => earned.find((b) => b.id === id))
-      .filter((b) => !!b);
-  const preview = showcase.length ? showcase : earned.slice(0, 3);
+  const preview = showcaseBadges(badges, data.showcase ?? []);
+  const earned = badges.filter((b) => b.earned);
   const save = async (shared: boolean, ids: string[]) => {
     if (lock.current) return;
     lock.current = true;

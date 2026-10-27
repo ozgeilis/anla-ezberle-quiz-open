@@ -35,8 +35,8 @@ import { OnlineMatch, OnlineSelf, PendingAnswer } from "./types";
 
 const contentScopeLabel: Record<OnlineMatch["scope"], string> = {
   synthetic_test: "Geliştirme soru havuzu",
-  owner_approved_v13: "Tarihsel sunucu soru havuzu · 500 soru",
-  "bank-v72": "Sunucu soru havuzu · 1500 soru",
+  owner_approved_v13: "Sunucuda doğrulanan yarışma",
+  "bank-v72": "Sunucuda doğrulanan yarışma",
 };
 
 const pendingKey = (actor: string, match: string) =>

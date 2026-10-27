@@ -475,8 +475,7 @@ export function DuelScreen() {
           </>
         )}
         <Txt color={theme.muted} size={12}>
-          50 sorunun tamamı taslak; editör onayı bekliyor. Demo ilerlemesi bu
-          cihazda ayrı tutulur. Yeni demo oluşturunca önceki demo değiştirilir;
+          Demo ilerlemesi bu cihazda ayrı tutulur. Yeni demo oluşturunca önceki demo değiştirilir;
           tek oyunculu geçmişin korunur.
         </Txt>
       </View>
