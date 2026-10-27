@@ -138,13 +138,20 @@ try {
   });
   assert.equal(await cards.count(), 6);
   assert.equal(
-    (await cards.allTextContents()).reduce(
-      (sum, text) => sum + Number(text.match(/(\d+) soru/)[1]),
-      0,
-    ),
+    Object.keys(answers).length,
     1500,
-    "The six current category counts partition the bank",
+    "Canonical bank remains complete",
   );
+  for (const card of await cards.all()) {
+    assert(
+      !/\d[\d.,]*\s*soru/i.test(await card.innerText()),
+      "No visible category pool count",
+    );
+    assert(
+      !/\d[\d.,]*\s*soru/i.test(await card.getAttribute("aria-label")),
+      "No pool count in accessible name",
+    );
+  }
   await page.waitForFunction(() =>
     Array.from(document.images).every((i) => i.complete && i.naturalWidth > 0),
   );

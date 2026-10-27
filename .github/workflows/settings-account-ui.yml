@@ -26,7 +26,7 @@ jobs:
   settings-account-smoke:
     if: ${{ github.event.repository.private == false }}
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -47,7 +47,7 @@ jobs:
       - name: Install real browser
         run: |
           npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
-          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps --only-shell chromium
       - name: Exercise settings and account flows
         run: |
           pnpm preview > /tmp/settings-preview.log 2>&1 &

@@ -56,12 +56,32 @@ try {
         categories.reduce((sum, c) => sum + c.questions.length, 0),
         1500,
       );
-      for (let i = 0; i < cards.length; i++)
-        assert(
-          (await cards[i].getAttribute("aria-label")).includes(
-            categories[i].questions.length + " soru",
-          ),
-        );
+      async function verifyCards(level) {
+        for (let i = 0; i < cards.length; i++) {
+          const label = await cards[i].getAttribute("aria-label");
+          assert(
+            !/\d[\d.,]*\s*soru/i.test(label),
+            "No pool count in accessible name",
+          );
+          assert(
+            !/\d[\d.,]*\s*soru/i.test(await cards[i].innerText()),
+            "No visible pool count",
+          );
+          const playable = level
+            ? categories[i].available[level]
+            : Object.values(categories[i].available).some(Boolean);
+          assert.equal(
+            await cards[i].getAttribute("role"),
+            playable ? "radio" : "button",
+          );
+          if (!playable)
+            assert(
+              label.includes("Seviye kapalı"),
+              "Unavailable levels stay explicit",
+            );
+        }
+      }
+      await verifyCards();
       const boxes = await Promise.all(cards.map((c) => c.boundingBox()));
       assert(Math.abs(boxes[0].y - boxes[1].y) < 1);
       assert(boxes[0].x < boxes[1].x);
@@ -76,13 +96,7 @@ try {
         await p
           .getByRole("radio", { name: "Zorluk: " + label, exact: true })
           .click();
-        for (let i = 0; i < cards.length; i++)
-          assert(
-            (await cards[i].getAttribute("aria-label")).includes(
-              categories[i].questions.filter((q) => q.difficulty === level)
-                .length + " soru",
-            ),
-          );
+        await verifyCards(level);
       }
       await btn(p, "Tüm zorlukları göster").click();
       for (const title of [
@@ -205,7 +219,7 @@ try {
     ),
   );
   console.log(
-    "PASS catalog: eight layouts, real counts for all difficulty filters, nine locked collections, 18 category/difficulty eligibility checks, corrupted history preserved.",
+    "PASS catalog: eight layouts, hidden pool counts and accurate availability for all difficulty filters, nine locked collections, 18 category/difficulty eligibility checks, corrupted history preserved.",
   );
 } finally {
   await browser.close();
