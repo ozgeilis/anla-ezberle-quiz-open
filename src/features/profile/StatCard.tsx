@@ -4,10 +4,10 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Txt } from "../../components/ui";
 import { StatGlyph, type StatIcon } from "./StatGlyph";
 const palettes = {
-  green: ["#00A583", "#007D6C", "#075D59"],
-  blue: ["#168BCC", "#0874B8", "#105B9B"],
+  green: ["#008069", "#007D6C", "#075D59"],
+  blue: ["#0874B8", "#086BAA", "#105B9B"],
   gold: ["#FFE08A", "#F4BC4B", "#D59124"],
-  purple: ["#9471F1", "#7650D0", "#51349A"],
+  purple: ["#8055CD", "#7650D0", "#51349A"],
   coral: ["#FFB281", "#FF9A70", "#F1815F"],
 } as const;
 export function StatCard({
