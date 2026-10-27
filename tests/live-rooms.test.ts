@@ -62,14 +62,14 @@ test("5/10/15 live stage quotas preserve ratios and never silently widen the lev
   assert.throws(() => liveQuotas("easy", 12));
   assert.equal(WIN_BONUS_XP, 20);
 });
-test("live export preserves all 600 published questions, sources and answers without editing the bank", () => {
+test("live export preserves all 1500 canonical questions, sources and answers without editing the bank", () => {
   const { rows, pools, version } = liveContent();
-  assert.equal(rows.length, 600);
-  assert.equal(version, 41);
+  assert.equal(rows.length, 1500);
+  assert.equal(version, 72);
   assert.equal(questions.length, 1500);
   assert.deepEqual(questions1500.slice(0, bankV41.length), bankV41);
   assert.equal(pools.length, 264);
-  for (const q of bankV41) {
+  for (const q of questions) {
     const row = rows.find((r) => r.id === q.id)!;
     assert(
       row.public.prompt === q.question &&

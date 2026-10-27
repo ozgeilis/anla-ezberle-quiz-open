@@ -13,7 +13,7 @@ async function main() {
   const destination = outFlag < 0 ? "" : (args[outFlag + 1] ?? "");
   if (args.length !== 2 || outFlag !== 0 || !isAbsolute(destination)) {
     throw new Error(
-      "Usage: pnpm export:online-content --out /absolute/private/path/v13-seed.sql",
+      "Usage: pnpm export:online-content --out /absolute/private/path/v72-seed.sql",
     );
   }
   const path = resolve(destination);
@@ -24,10 +24,10 @@ async function main() {
   const rows = buildOnlineContentRows();
   await writeFile(path, buildOnlineSeedSql(rows), { flag: "wx", mode: 0o600 });
   console.log(
-    `Created private v13 staging SQL for ${rows.length} questions (0600, new file only).`,
+    `Created private v72 staging SQL for ${rows.length} questions (0600, new file only).`,
   );
   console.log(
-    "The online content switch remains synthetic_test; no database changes were made.",
+    "The online content switch is unchanged; no database changes were made.",
   );
 }
 

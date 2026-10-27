@@ -33,6 +33,12 @@ import {
 import { useOnlineAuth } from "./OnlineProvider";
 import { OnlineMatch, OnlineSelf, PendingAnswer } from "./types";
 
+const contentScopeLabel: Record<OnlineMatch["scope"], string> = {
+  synthetic_test: "Geliştirme soru havuzu",
+  owner_approved_v13: "Tarihsel sunucu soru havuzu · 500 soru",
+  "bank-v72": "Sunucu soru havuzu · 1500 soru",
+};
+
 const pendingKey = (actor: string, match: string) =>
   `@anla-quiz-online/pending/v1/${actor}/${match}`;
 function parseInvite(value: string) {
@@ -348,9 +354,7 @@ function OnlineAccountScreen() {
       <View style={{ gap: 18 }}>
         <Chip icon="shield">
           {match
-            ? match.scope === "owner_approved_v13"
-              ? "Sunucu soru havuzu · 500 soru"
-              : "Geliştirme soru havuzu"
+            ? contentScopeLabel[match.scope]
             : "Sunucuda doğrulanan çevrimiçi düello"}
         </Chip>
         {!match && (

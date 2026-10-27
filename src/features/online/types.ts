@@ -19,7 +19,7 @@ export interface OnlineMatch {
   expiresAt: string;
   manifestHash: string;
   ruleVersion: number;
-  scope: "synthetic_test" | "owner_approved_v13";
+  scope: "synthetic_test" | "owner_approved_v13" | "bank-v72";
   slot: "a" | "b";
   started: boolean;
   finished: boolean;
