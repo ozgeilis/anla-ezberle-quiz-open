@@ -85,9 +85,27 @@ BEGIN
  v=quiz_private.live_view(a,rid);
  IF v->>'state'<>'completed' OR jsonb_array_length(v->'history')<>5 OR NOT EXISTS(SELECT 1 FROM quiz_private.live_rewards WHERE room_id=rid AND player_id=a AND correct=0 AND unanswered=5) THEN RAISE EXCEPTION 'V72 timeout completion/review invalid';END IF;
  RAISE NOTICE 'PASS v72 live server grading, answer privacy, timeout completion and final review';
+ -- A pending old duel must still finish against its original keys after cutover.
+ SELECT (value#>>'{}')::uuid INTO rid FROM quiz_private.v72_test_state WHERE key='pending';
+ FOREACH u IN ARRAY ARRAY[a,b] LOOP
+  v=public.online_duel_command(u,'start',jsonb_build_object('matchId',rid));
+  FOR i IN 1..10 LOOP
+   SELECT k.correct_option_id INTO opt FROM quiz_private.matches x CROSS JOIN LATERAL jsonb_array_elements(x.question_set) WITH ORDINALITY item(value,n) JOIN quiz_private.quiz_answer_keys k ON k.question_id=item.value->>'id' AND k.question_version=(item.value->>'version')::integer WHERE x.id=rid AND item.n=i;
+   v=public.online_duel_command(u,'answer',jsonb_build_object('matchId',rid,'position',i,'optionId',opt,'requestId',gen_random_uuid()));
+  END LOOP;
+ END LOOP;
+ IF v->>'scope'<>'owner_approved_v13' OR v->>'state'<>'completed' OR v->'players'->0->>'score'<>'1000' THEN RAISE EXCEPTION 'Pending historical duel failed after cutover';END IF;
+ RAISE NOTICE 'PASS pending historical v13 duel completes after v72 activation with original server keys';
  -- Old lobby stays pinned even if its host starts after activation.
  SELECT (value#>>'{}')::uuid INTO rid FROM quiz_private.v72_test_state WHERE key='room';
  IF (SELECT dataset FROM quiz_private.live_rooms WHERE id=rid)<>'bank-v41' THEN RAISE EXCEPTION 'Old room retagged';END IF;
+ v=public.live_room_command(a,'room_settings',jsonb_build_object('roomId',rid,'topic','mixed','level','easy','count',5));
+ v=public.live_room_command(a,'room_ready',jsonb_build_object('roomId',rid,'ready',true));
+ v=public.live_room_command(b,'room_ready',jsonb_build_object('roomId',rid,'ready',true));
+ v=public.live_room_command(a,'room_start',jsonb_build_object('roomId',rid));
+ IF NOT EXISTS(SELECT 1 FROM quiz_private.live_rooms WHERE id=rid AND dataset='bank-v41' AND jsonb_array_length(manifest)=5) THEN RAISE EXCEPTION 'Old lobby cannot start after activation';END IF;
+ RAISE NOTICE 'PASS historical v41 lobby starts after activation on its original dataset';
+
  UPDATE quiz_private.online_content_config SET active_scope='owner_approved_v13';
  UPDATE quiz_private.live_config SET dataset='bank-v41';
  v=public.online_duel_command(a,'get',jsonb_build_object('matchId',m->>'id'));IF v->>'scope'<>'bank-v72' OR v->>'state'<>'completed' THEN RAISE EXCEPTION 'Rollback corrupted new match';END IF;

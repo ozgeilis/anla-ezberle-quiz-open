@@ -220,8 +220,16 @@ const privateKeys = sql(
 );
 const oracle =
   typeof privateKeys === "string" ? JSON.parse(privateKeys) : privateKeys;
+const oracleDataset = sql(
+  "select dataset from quiz_private.live_config where singleton;",
+);
+const expectedOracleCount = { "bank-v41": 600, "bank-v72": 1500 }[
+  oracleDataset
+];
 assert(
-  oracle && Object.keys(oracle).length === 600,
+  oracle &&
+    expectedOracleCount &&
+    Object.keys(oracle).length === expectedOracleCount,
   "Complete private test oracle required",
 );
 const requestId = randomUUID();
