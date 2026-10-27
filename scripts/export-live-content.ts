@@ -13,7 +13,7 @@ async function main() {
   await writeFile(file, liveContentSql(), { flag: "wx", mode: 0o600 });
   await chmod(file, 0o600);
   console.log(
-    "Private live SQL generated outside project; 600 unchanged published questions. No answer keys printed.",
+    "Private live SQL generated outside project; 1500 unchanged canonical questions. No answer keys printed.",
   );
 }
 main().catch(() => {
