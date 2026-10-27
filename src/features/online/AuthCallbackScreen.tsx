@@ -1,3 +1,4 @@
+import { completeGoogleAuth, hasGoogleAttempt } from "./googleAuth";
 import React, { useEffect, useRef, useState } from "react";
 import { Platform, TextInput, View } from "react-native";
 import * as Linking from "expo-linking";
@@ -72,6 +73,15 @@ export function AuthCallbackScreen() {
       setMessage("Doğrulama bağlantısı kontrol ediliyor…");
       const client = onlineClient();
       if (!client) throw new Error("Servis yapılandırılmadı.");
+      if (
+        candidate?.searchParams.get("flow") === "google" ||
+        (await hasGoogleAttempt())
+      ) {
+        await completeGoogleAuth(value);
+        if (mounted.current && generation.current === revision)
+          router.replace("/profile");
+        return;
+      }
       const { recovery: recovering } = await verifyEmailLink(
         value,
         client.auth,

@@ -11,14 +11,19 @@ export function verifiedAccount(
 ) {
   return !!user?.email_confirmed_at && user.is_anonymous !== true;
 }
+export const PASSWORD_MIN_LENGTH = 8;
+export const PASSWORD_MAX_LENGTH = 128;
+export const PASSWORD_GUIDANCE =
+  "Şifre en az 8 karakter olmalı; büyük harf, küçük harf, rakam ve özel karakter içermeli.";
 export function passwordError(password: string) {
-  return password.length < 12 ||
-    password.length > 128 ||
+  if (password.length > PASSWORD_MAX_LENGTH)
+    return "Şifre en fazla 128 karakter olmalı.";
+  return password.length < PASSWORD_MIN_LENGTH ||
     !/[a-z]/.test(password) ||
     !/[A-Z]/.test(password) ||
     !/[0-9]/.test(password) ||
     !/[^a-zA-Z0-9]/.test(password)
-    ? "Şifre 12–128 karakter; büyük/küçük harf, rakam ve simge içermeli."
+    ? PASSWORD_GUIDANCE
     : null;
 }
 export function authMessage(code: string | undefined) {
