@@ -83,11 +83,6 @@ function PaintedCategory({
           >
             {title}
           </Txt>
-          {!!footer && (
-            <Txt size={11} color="#E5F5ED">
-              {footer}
-            </Txt>
-          )}
           <View style={{ position: "absolute", top: 8, right: 8 }}>
             {disabled ? (
               <View
