@@ -42,7 +42,7 @@ Passwordless girişin eklediği `email` identity, kullanıcının uygulama şifr
 
 Bu, Google şifresini istemek yerine doğrulanmış hesaba ait e-posta sahipliğini yeniden doğrulayan passwordless akıştır. **Gerçek posta teslimi ve Google hesabının uçtan uca silinmesi henüz test edilmedi.** Bu nedenle Google ile yeni hesap kaydı genel kullanıma açılamaz.
 
-Yeni yol ancak sunucuda `GOOGLE_ACCOUNT_DELETION_ENABLED=true` ve private config `deletion_enabled=true` ise açılır. Mevcut canlı parola yolu bu bayraktan bağımsızdır.
+Yeni yol ancak sunucuda `GOOGLE_ACCOUNT_DELETION_ENABLED=true` ve `quiz_private` config `deletion_enabled=true` ise açılır. Mevcut canlı parola yolu bu bayraktan bağımsızdır.
 
 ## Açılmadan önce uygulanması gereken, onay bekleyen plan
 
@@ -82,3 +82,5 @@ Yeni yol ancak sunucuda `GOOGLE_ACCOUNT_DELETION_ENABLED=true` ve private config
 [Supabase Google](https://supabase.com/docs/guides/auth/social-login/auth-google), [kimlik bağlama](https://supabase.com/docs/guides/auth/auth-identity-linking), [native deep link](https://supabase.com/docs/guides/auth/native-mobile-deep-linking), [Before User Created](https://supabase.com/docs/guides/auth/auth-hooks/before-user-created-hook), [passwordless e-posta](https://supabase.com/docs/guides/auth/auth-email-passwordless), [Expo Authentication](https://docs.expo.dev/guides/authentication/), [Expo WebBrowser](https://docs.expo.dev/versions/latest/sdk/webbrowser/).
 
 SDK sürüm kontrolü: Yeni WebBrowser paketi Expo’nun önerdiği 58.0.7 sürümünde. Mevcut Expo 58.0.19 / dev-client 58.0.15 / router 58.0.26 için sırasıyla .20 / .16 / .27 yama önerisi görüldü; kapsam dışı toplu native yükseltme yapılmadı. Mevcut pnpm sürüm yaş politikası küresel olarak değiştirilmedi; kurucunun eklediği istisna yalnız resmî `expo-web-browser@58.0.7` sürümüne bağlıdır.
+
+CI düzeltmesi: Yeni tablolar mevcut `quiz_private` şemasına eklenir; ayrı `private` şeması varsayımı kaldırıldı. GitHub’ın temiz Supabase kurulumunda tüm migration zinciri, `supabase_admin` ile rollback-only Google SQL testi ve `account-delete/index.ts` Deno tip kontrolü çalıştırılır.

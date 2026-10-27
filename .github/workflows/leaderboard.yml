@@ -78,10 +78,13 @@ jobs:
         with:
           deno-version: v2.x
       - run: deno check --no-config supabase/functions/online-duel/index.ts
+      - run: deno check --no-config supabase/functions/account-delete/index.ts
       - name: Fresh ephemeral local Supabase (never a hosted target)
         run: supabase start --exclude studio,storage-api,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
       - name: Rollback-only SQL acceptance
         run: docker exec -i supabase_db_anla-ezberle-quiz-dev-local psql -U postgres -d postgres -v ON_ERROR_STOP=1 < tests/sql/leaderboard.sql
+      - name: Rollback-only Google hook and reauthentication SQL
+        run: docker exec -i supabase_db_anla-ezberle-quiz-dev-local psql -U supabase_admin -d postgres -v ON_ERROR_STOP=1 < supabase/tests/google_auth.sql
       - name: Ephemeral local identities
         run: |
           supabase status --output json > "$RUNNER_TEMP/ranking-local-status.json"
