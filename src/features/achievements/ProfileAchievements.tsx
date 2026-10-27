@@ -5,19 +5,21 @@ import { Button, Card, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useGame } from "../../storage/GameProvider";
 import { useAchievements } from "./AchievementProvider";
+import { showcaseBadges } from "./presentation";
 import { BadgeArt } from "./BadgeArt";
-export function ProfileAchievements() {
+export function ProfileAchievements({
+  editable = false,
+}: {
+  editable?: boolean;
+}) {
   const { data } = useGame(),
     { badges, social, saveSharing, error } = useAchievements(),
     theme = useTheme();
   const [busy, setBusy] = useState(false),
     [message, setMessage] = useState("");
   const lock = useRef(false);
-  const earned = badges.filter((b) => b.earned),
-    showcase = (data.showcase ?? [])
-      .map((id) => earned.find((b) => b.id === id))
-      .filter((b) => !!b);
-  const preview = showcase.length ? showcase : earned.slice(0, 3);
+  const preview = showcaseBadges(badges, data.showcase ?? []);
+  const earned = badges.filter((b) => b.earned);
   const save = async (shared: boolean, ids: string[]) => {
     if (lock.current) return;
     lock.current = true;
@@ -34,10 +36,10 @@ export function ProfileAchievements() {
   };
   return (
     <Card
-      style={{ gap: 14, marginBottom: 20, backgroundColor: theme.mintSurface }}
+      style={{ gap: 12, marginBottom: 0, backgroundColor: theme.mintSurface }}
     >
-      <Txt size={20} weight="heavy">
-        Başarılarım · {earned.length} / {badges.length}
+      <Txt size={18} weight="bold">
+        Rozet Vitrini · {earned.length} / {badges.length}
       </Txt>
       <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 12 }}>
         {preview.map((b) => (
@@ -62,7 +64,7 @@ export function ProfileAchievements() {
         variant="outline"
         onPress={() => router.push("/achievements")}
       />
-      {social && (
+      {social && editable && (
         <>
           <Txt weight="bold">Arkadaşlarına açık çevrimiçi koleksiyon</Txt>
           <Txt size={12} color={theme.muted}>

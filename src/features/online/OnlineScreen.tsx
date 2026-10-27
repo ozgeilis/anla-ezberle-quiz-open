@@ -1,3 +1,4 @@
+import { RoundResultBadge } from "../results/RoundResultBadge";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { duelAudioCues } from "../audio/events";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
@@ -10,7 +11,7 @@ import * as Linking from "expo-linking";
 import { randomUUID } from "expo-crypto";
 import { Redirect, router, useLocalSearchParams } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Avatar, Medal, Pattern } from "../../components/game/Artwork";
+import { Avatar, Pattern } from "../../components/game/Artwork";
 import {
   Button,
   Card,
@@ -31,6 +32,12 @@ import {
 } from "./client";
 import { useOnlineAuth } from "./OnlineProvider";
 import { OnlineMatch, OnlineSelf, PendingAnswer } from "./types";
+
+const contentScopeLabel: Record<OnlineMatch["scope"], string> = {
+  synthetic_test: "Geliştirme soru havuzu",
+  owner_approved_v13: "Sunucuda doğrulanan yarışma",
+  "bank-v72": "Sunucuda doğrulanan yarışma",
+};
 
 const pendingKey = (actor: string, match: string) =>
   `@anla-quiz-online/pending/v1/${actor}/${match}`;
@@ -347,9 +354,7 @@ function OnlineAccountScreen() {
       <View style={{ gap: 18 }}>
         <Chip icon="shield">
           {match
-            ? match.scope === "owner_approved_v13"
-              ? "Sunucu soru havuzu · 500 soru"
-              : "Geliştirme soru havuzu"
+            ? contentScopeLabel[match.scope]
             : "Sunucuda doğrulanan çevrimiçi düello"}
         </Chip>
         {!match && (
@@ -369,14 +374,14 @@ function OnlineAccountScreen() {
               <Pattern opacity={0.08} />
             </View>
             <View style={[s.row, { justifyContent: "center", gap: 24 }]}>
-              <Avatar size={54} variant={1} />
-              <Txt size={26} weight="heavy" color={c.gold}>
+              <Avatar size={40} variant={1} />
+              <Txt size={22} weight="heavy" color={c.gold}>
                 VS
               </Txt>
-              <Avatar size={54} variant={2} />
+              <Avatar size={40} variant={2} />
             </View>
             <Txt
-              size={25}
+              size={22}
               weight="heavy"
               color={c.white}
               style={{ textAlign: "center" }}
@@ -417,7 +422,7 @@ function OnlineAccountScreen() {
         )}
         {!onlineConfigured ? (
           <Card style={{ gap: 12 }}>
-            <Txt weight="heavy" size={20}>
+            <Txt weight="heavy" size={18}>
               Çevrimiçi servis hazır değil
             </Txt>
             <Txt>
@@ -544,7 +549,7 @@ function OnlineAccountScreen() {
                   variant="orange"
                   onPress={() => router.push("/online/inbox")}
                 />
-                <Txt weight="heavy" size={20}>
+                <Txt weight="heavy" size={18}>
                   Çevrimiçi profil
                 </Txt>
                 <Txt size={12}>
@@ -602,7 +607,7 @@ function OnlineAccountScreen() {
                       onPress={() => void run(createMatch)}
                     />
                     <Card style={{ gap: 12 }}>
-                      <Txt size={20} weight="heavy">
+                      <Txt size={18} weight="heavy">
                         Arkadaşının davetine katıl
                       </Txt>
                       {field(
@@ -633,7 +638,7 @@ function OnlineAccountScreen() {
                     </Card>
                     {self.matches.length > 0 && (
                       <Card style={{ gap: 12 }}>
-                        <Txt size={20} weight="heavy">
+                        <Txt size={18} weight="heavy">
                           Çevrimiçi maçların
                         </Txt>
                         {self.matches.map((item, index) => (
@@ -669,7 +674,7 @@ function OnlineAccountScreen() {
                       </View>
                     ) : (
                       <Card style={{ gap: 10 }}>
-                        <Txt size={21} weight="heavy">
+                        <Txt size={18} weight="heavy">
                           {stateLabel[match.state]}
                         </Txt>
                         <Txt>
@@ -694,7 +699,7 @@ function OnlineAccountScreen() {
                       !playing &&
                       !terminal && (
                         <Card style={{ gap: 12 }}>
-                          <Txt weight="heavy" size={20}>
+                          <Txt weight="heavy" size={18}>
                             Güvenli arkadaş daveti
                           </Txt>
                           <Txt>
@@ -787,16 +792,7 @@ function OnlineAccountScreen() {
                             }}
                           >
                             <Txt
-                              color={c.darkGold}
-                              size={12}
-                              style={{ textAlign: "center", marginBottom: 12 }}
-                            >
-                              {match.scope === "owner_approved_v13"
-                                ? "KAYNAKLI SORU"
-                                : "SENTETİK GELİŞTİRME SORUSU"}
-                            </Txt>
-                            <Txt
-                              size={25}
+                              size={19}
                               weight="heavy"
                               style={{ textAlign: "center" }}
                             >
@@ -819,7 +815,7 @@ function OnlineAccountScreen() {
                                 )
                               }
                               style={{
-                                minHeight: 64,
+                                minHeight: 48,
                                 borderWidth: 1,
                                 borderRadius: radius.md,
                                 borderColor:
@@ -827,7 +823,7 @@ function OnlineAccountScreen() {
                                     ? c.blue
                                     : theme.border,
                                 backgroundColor: theme.card,
-                                padding: 17,
+                                padding: 10,
                               }}
                             >
                               <View style={s.row}>
@@ -838,7 +834,7 @@ function OnlineAccountScreen() {
                                   {String.fromCharCode(65 + i)}
                                 </Txt>
                                 <Txt
-                                  size={19}
+                                  size={15}
                                   weight="bold"
                                   style={{ flex: 1, minWidth: 0 }}
                                 >
@@ -864,7 +860,7 @@ function OnlineAccountScreen() {
                     )}
                     {!terminal && match.finished && (
                       <Card>
-                        <Txt size={21} weight="heavy">
+                        <Txt size={18} weight="heavy">
                           Turun tamamlandı!
                         </Txt>
                         <Txt>
@@ -884,8 +880,20 @@ function OnlineAccountScreen() {
                             gap: 12,
                           }}
                         >
-                          <Medal size={110} />
-                          <Txt weight="heavy" size={28} color={c.gold}>
+                          {match.players
+                            .filter(
+                              (p) =>
+                                p.slot === match.slot &&
+                                typeof p.correct === "number",
+                            )
+                            .map((p) => (
+                              <RoundResultBadge
+                                key={match.id}
+                                correct={p.correct!}
+                                total={match.questions.length}
+                              />
+                            ))}
+                          <Txt weight="heavy" size={22} color={c.gold}>
                             {match.result?.winner === "tie"
                               ? "Berabere!"
                               : `Oyuncu ${match.result?.winner.toUpperCase()} kazandı!`}
@@ -899,7 +907,7 @@ function OnlineAccountScreen() {
                             <Txt weight="heavy" size={19}>
                               {p.name} · Oyuncu {p.slot.toUpperCase()}
                             </Txt>
-                            <Txt size={32} weight="heavy">
+                            <Txt size={24} weight="heavy">
                               {p.score} puan
                             </Txt>
                             <Txt>

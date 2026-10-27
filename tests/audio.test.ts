@@ -7,11 +7,11 @@ import type {
   SoundDriver,
   SoundPlayer,
 } from "../src/features/audio/driver.types";
-import type { SoundName } from "../src/features/audio/catalog";
+import { effectDuration, type SoundName } from "../src/features/audio/catalog";
+import { wrapNativePlayer } from "../src/features/audio/native-player";
 import {
   defaultSoundPreferences as defaults,
   parseSoundPreferences,
-  menuMusicAllowed,
 } from "../src/features/audio/preferences";
 import {
   quizAudioCues,
@@ -65,14 +65,11 @@ function harness(web = false) {
           return playing;
         },
         play() {
-          if (name !== "music")
-            assert.equal(
-              [...players.entries()].filter(
-                ([n, p]) => n !== "music" && p.playing,
-              ).length,
-              0,
-              "only one effect voice",
-            );
+          assert.equal(
+            [...players.entries()].filter(([, p]) => p.playing).length,
+            0,
+            "only one effect voice",
+          );
           starts.push(name);
           playing = true;
         },
@@ -105,9 +102,21 @@ function harness(web = false) {
 test("audio preferences preserve explicit mute, validate values and do not share the game store", () => {
   assert.deepEqual(parseSoundPreferences(null), defaults);
   assert.equal(defaults.effectsEnabled, true);
-  assert.equal(defaults.musicEnabled, false);
+  assert.equal("musicEnabled" in defaults, false);
   assert.equal(defaults.effectsVolume, 0.5);
-  assert.equal(defaults.musicVolume, 0.5);
+  assert.equal("musicVolume" in defaults, false);
+  assert.deepEqual(
+    parseSoundPreferences(
+      JSON.stringify({
+        version: 1,
+        effectsEnabled: false,
+        effectsVolume: 0.3,
+        musicEnabled: true,
+        musicVolume: 0.7,
+      }),
+    ),
+    { version: 2, effectsEnabled: false, effectsVolume: 0.3 },
+  );
   assert.deepEqual(
     parseSoundPreferences(
       JSON.stringify({ ...defaults, effectsEnabled: false }),
@@ -119,15 +128,10 @@ test("audio preferences preserve explicit mute, validate values and do not share
     "null",
     "[]",
     JSON.stringify({ ...defaults, effectsVolume: 2 }),
-    JSON.stringify({ ...defaults, musicVolume: -1 }),
     JSON.stringify({ ...defaults, effectsEnabled: "true" }),
-    JSON.stringify({ ...defaults, version: 2 }),
+    JSON.stringify({ ...defaults, version: 3 }),
   ])
     assert.throws(() => parseSoundPreferences(raw));
-  for (const path of ["/quiz", "/duel/play", "/results", "/live", "/online"])
-    assert.equal(menuMusicAllowed(path), false);
-  assert(menuMusicAllowed("/settings"));
-  assert(menuMusicAllowed("/"));
 });
 test("accepted effects deduplicate across renders, throttle rapid taps, and consume muted events", async () => {
   const h = harness();
@@ -173,44 +177,25 @@ test("celebration queue is bounded, serial, and survives only the quiz-to-result
   assert.equal(h.released(), h.players.size);
   assert.equal(h.clock.jobs.size, 0);
 });
-test("music requires saved opt-in and browser gesture, fades, pauses for quiz/background, and errors never escape", async () => {
+test("no music voice exists; ticks share effect mute, priority and failure isolation", async () => {
   const h = harness(true);
   await h.engine.prepare();
   h.engine.configure(defaults);
-  h.engine.setRoute("/");
+  assert.equal(h.engine.play("tick"), false);
   h.engine.activate();
-  assert.equal(h.starts.length, 0);
-  h.engine.configure({ ...defaults, musicEnabled: true });
-  h.clock.advance(300);
-  assert.deepEqual(h.starts, ["music"]);
-  assert.equal(h.players.get("music")!.volume, 0.175);
-  h.engine.setRoute("/quiz");
-  assert.equal(h.players.get("music")!.playing, false);
-  h.engine.setActive(false);
-  h.engine.setRoute("/");
-  h.clock.advance(300);
-  assert.equal(h.starts.length, 1);
-  h.engine.setActive(true);
-  h.clock.advance(300);
-  assert.equal(h.starts.length, 2);
+  assert(h.engine.play("tick"));
+  h.clock.advance(100);
+  assert(h.engine.play("correct", "answer"));
+  assert.equal(h.engine.play("tick"), false);
+  h.engine.configure({ ...defaults, effectsEnabled: false });
+  assert.equal(h.engine.play("tick"), false);
   h.engine.configure(defaults);
-  h.clock.advance(300);
-  assert.equal(h.players.get("music")!.playing, false);
   h.fail();
-  assert.doesNotThrow(() => h.engine.play("correct", "broken"));
-  assert.equal(h.engine.play("wrong", "broken-2"), false);
+  assert.doesNotThrow(() => h.engine.play("tick"));
   h.engine.suspendPreferences();
-  assert.equal(h.engine.play("tap", "storage-unreadable"), false);
+  assert.equal(h.engine.play("tap"), false);
   h.engine.dispose();
-  h.clock.advance(10000);
   assert.equal(h.clock.jobs.size, 0);
-  const cold = harness(true);
-  await cold.engine.prepare();
-  cold.engine.setRoute("/");
-  cold.engine.configure({ ...defaults, musicEnabled: true });
-  cold.clock.advance(1000);
-  assert.equal(cold.starts.length, 0);
-  cold.engine.dispose();
 });
 test("hidden/background feedback is dropped and cannot be replayed after resume", async () => {
   const h = harness();
@@ -228,6 +213,66 @@ test("hidden/background feedback is dropped and cannot be replayed after resume"
   assert.equal(h.starts.length, 1);
   h.engine.dispose();
   assert.equal(h.engine.play("tap"), false);
+});
+test("tick keeps the same audible gain when preferences change and stops immediately on mute", async () => {
+  const h = harness();
+  await h.engine.prepare();
+  h.engine.configure(defaults);
+  h.engine.play("tick");
+  assert.equal(h.players.get("tick")!.volume, 0.4);
+  h.engine.configure({ ...defaults, effectsVolume: 0.6 });
+  assert.equal(h.players.get("tick")!.volume, 0.48);
+  h.engine.configure({ ...defaults, effectsEnabled: false });
+  assert.equal(h.players.get("tick")!.playing, false);
+  assert.equal(h.clock.jobs.size, 0);
+  h.engine.dispose();
+});
+test("native first cue plays without a seek and cancelled asynchronous replays stay silent", async () => {
+  let plays = 0,
+    seeks = 0,
+    removes = 0;
+  let finishSeek = () => {};
+  const native = {
+    volume: 0.4,
+    playing: false,
+    currentTime: 0,
+    play() {
+      plays++;
+    },
+    pause() {},
+    remove() {
+      removes++;
+    },
+    seekTo() {
+      seeks++;
+      return new Promise<void>((resolve) => {
+        finishSeek = resolve;
+      });
+    },
+  };
+  const player = wrapNativePlayer(native);
+  player.play(true);
+  assert.equal(plays, 1);
+  assert.equal(seeks, 0);
+  native.currentTime = 0.12;
+  player.play(true);
+  assert.equal(seeks, 1);
+  player.pause();
+  finishSeek();
+  await Promise.resolve();
+  assert.equal(plays, 1, "mute/background pause cancels a late seek");
+  player.play(true);
+  finishSeek();
+  await Promise.resolve();
+  assert.equal(plays, 2, "a valid replay still rewinds and plays");
+  player.play(true);
+  player.release();
+  finishSeek();
+  await Promise.resolve();
+  player.play(true);
+  player.release();
+  assert.equal(plays, 2);
+  assert.equal(removes, 1);
 });
 test("quiz, async duel and live cues use accepted/revealed state and never disclose hidden answer keys", () => {
   const q = { id: "game", cursor: 0, answer: null, hidden: false };
@@ -311,6 +356,8 @@ test("original audio files match reproducible manifest, stay bounded and contain
     ),
   );
   assert.equal(Object.keys(manifest.files).length, 11);
+  assert.equal("music" in manifest.files, false);
+  assert(manifest.files.tick.duration <= 0.15, "tick remains a short impulse");
   let total = 0;
   for (const [name, item] of Object.entries(manifest.files) as [
     string,
@@ -326,24 +373,19 @@ test("original audio files match reproducible manifest, stay bounded and contain
     assert.equal(wav.readUInt32LE(24), 24000);
     assert.equal(wav.readUInt16LE(34), 16);
     let peak = 0;
-    for (let i = 44; i < wav.length; i += 2)
-      peak = Math.max(peak, Math.abs(wav.readInt16LE(i)) / 32767);
-    assert(peak <= 0.561);
-    if (name !== "music") assert(item.duration < 2);
-    if (name === "music") {
-      // Adjacent PCM samples need not be identical: compare first derivatives
-      // across the join to its neighbors, detecting a click rather than a tone.
-      const first = wav.readInt16LE(44),
-        second = wav.readInt16LE(46);
-      const last = wav.readInt16LE(wav.length - 2),
-        penultimate = wav.readInt16LE(wav.length - 4);
-      const join = first - last;
-      assert(
-        Math.abs(join - (last - penultimate)) < 80 &&
-          Math.abs(second - first - join) < 80,
-        "continuous loop waveform and slope",
-      );
+    let squares = 0;
+    for (let i = 44; i < wav.length; i += 2) {
+      const sample = wav.readInt16LE(i) / 32767;
+      peak = Math.max(peak, Math.abs(sample));
+      squares += sample * sample;
     }
+    assert(peak <= 0.561);
+    assert.equal(item.duration * 1000, effectDuration[name as SoundName]);
+    if (name === "tick") {
+      assert(peak >= 0.49, "tick must not regress to the quiet source asset");
+      assert(Math.sqrt(squares / ((wav.length - 44) / 2)) >= 0.1);
+    }
+    assert(item.duration < 2);
   }
   assert(total < 2_000_000);
 });

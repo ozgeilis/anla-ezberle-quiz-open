@@ -10,7 +10,7 @@ export async function referenceUiSmoke(browser, root) {
       "--import",
       "tsx",
       "-e",
-      'import { questions } from "./src/content/questions/index.ts"; process.stdout.write(JSON.stringify(Object.fromEntries(questions.map(q=>[q.id,q.options.find(o=>o.id===q.correctOptionId).text]))));',
+      'import { questions } from "./src/content/questions/index.ts"; process.stdout.write(JSON.stringify(Object.fromEntries(questions.map(q=>[q.question,q.options.find(o=>o.id===q.correctOptionId).text]))));',
     ],
     { encoding: "utf8" },
   );
@@ -75,9 +75,9 @@ export async function referenceUiSmoke(browser, root) {
       .click();
     for (let i = 1; i <= 10; i++) {
       await page.getByText(`Soru ${i} / 10`, { exact: true }).waitFor();
-      const code = (await page.getByText(/^Soru kodu: /).textContent())
-        .replace("Soru kodu: ", "")
-        .trim();
+      const headings = await page.getByRole("heading").allTextContents();
+      const code = headings.find((text) => correctText[text]);
+      assert(code, "Real question text must match private fixture");
       const options = page.getByRole("button", { name: /^[ABCD]\. / });
       const labels = await options.allTextContents();
       const correct = labels.findIndex(
@@ -86,23 +86,10 @@ export async function referenceUiSmoke(browser, root) {
       assert(correct >= 0, "Current shuffled correct text must exist");
       if (i === 1) await shot("quiz");
       await options.nth(i === 2 ? (correct + 1) % 4 : correct).click();
-      await page.getByText("Açıklama", { exact: true }).waitFor();
-      if (i <= 2) {
-        await page
-          .getByText("Açıklama", { exact: true })
-          .scrollIntoViewIfNeeded();
-        await shot(i === 1 ? "correct-explanation" : "wrong-explanation");
-        assert.equal(
-          await page.getByRole("button", { name: /Kaynağı aç:/ }).count(),
-          1,
-        );
-      }
-      await page
-        .getByRole("button", {
-          name: i === 10 ? "Sonucumu Gör" : "Sonraki Soru",
-          exact: true,
-        })
-        .click();
+      await page.getByTestId("answer-feedback").waitFor();
+      if (i <= 2) await shot(i === 1 ? "correct-feedback" : "wrong-feedback");
+      if (i < 10)
+        await page.getByText(`Soru ${i + 1} / 10`, { exact: true }).waitFor();
     }
     await page
       .getByText("Sonucun bu cihazda kaydedildi. ✓", { exact: true })
@@ -112,9 +99,25 @@ export async function referenceUiSmoke(browser, root) {
     });
     if (await reward.count()) await reward.click();
     await page
-      .getByRole("heading", { name: "Tebrikler!", exact: true })
+      .getByRole("heading", { name: "Harika!", exact: true })
       .scrollIntoViewIfNeeded();
     await shot("results");
+    await page
+      .getByRole("button", { name: "Yanlış cevapları incele", exact: true })
+      .click();
+    await page
+      .getByRole("button", { name: /Kaynağı aç,/ })
+      .first()
+      .waitFor();
+    await shot("wrong-explanation-source");
+    await page
+      .getByRole("button", { name: "Tüm cevapları göster", exact: true })
+      .click();
+    assert.equal(
+      await page.getByRole("button", { name: /Kaynağı aç,/ }).count(),
+      10,
+    );
+    await page.getByRole("button", { name: "Sonuca dön", exact: true }).click();
     const saved = await page.evaluate(
       (k) => JSON.parse(localStorage.getItem(k)),
       key,
@@ -136,11 +139,13 @@ export async function referenceUiSmoke(browser, root) {
     await page.getByRole("button", { name: "Ayarlar", exact: true }).click();
     await page.getByRole("heading", { name: "Ayarlar", exact: true }).waitFor();
     // Draft appearance must not change stored theme; back discards it.
-    await page
-      .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-      .click();
-    const dialog = page.getByRole("dialog", { name: "Görünüm ayarları" });
-    await dialog.waitFor();
+    await page.getByRole("button", { name: "Tema", exact: true }).click();
+    const dialog = page;
+    const themeHeading = page.getByRole("heading", {
+      name: "Tema",
+      exact: true,
+    });
+    await themeHeading.waitFor();
     const before = await page.evaluate(
       (k) => JSON.parse(localStorage.getItem(k)).profile,
       key,
@@ -173,10 +178,8 @@ export async function referenceUiSmoke(browser, root) {
       ).theme,
       before.theme,
     );
-    await page
-      .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-      .click();
-    await dialog.waitFor();
+    await page.getByRole("button", { name: "Tema", exact: true }).click();
+    await themeHeading.waitFor();
     await dialog
       .getByRole("radio", {
         name:
@@ -199,7 +202,10 @@ export async function referenceUiSmoke(browser, root) {
         };
       });
       await dialog.getByRole("button", { name: "Kaydet", exact: true }).click();
-      await dialog.getByRole("alert").waitFor();
+      await dialog
+        .getByRole("alert")
+        .filter({ hasText: /^Kaydedilemedi\./ })
+        .waitFor();
       assert.equal(
         (
           await page.evaluate(
@@ -213,7 +219,7 @@ export async function referenceUiSmoke(browser, root) {
       await page.evaluate(() => window.__restoreReferenceStorage());
     }
     await dialog.getByRole("button", { name: "Kaydet", exact: true }).click();
-    await dialog.waitFor({ state: "hidden" });
+    await themeHeading.waitFor({ state: "hidden" });
     const expected = state.colorScheme === "light" ? "dark" : "light";
     assert.equal(
       (
@@ -225,14 +231,13 @@ export async function referenceUiSmoke(browser, root) {
       expected,
     );
     await page.reload({ waitUntil: "networkidle" });
-    await page
-      .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-      .click();
+    await page.getByRole("button", { name: "Tema", exact: true }).click();
     await dialog
       .getByRole("radio", { name: "Sistem temasını izle", exact: true })
       .click();
     await dialog.getByRole("button", { name: "Kaydet", exact: true }).click();
-    await dialog.waitFor({ state: "hidden" });
+    await themeHeading.waitFor({ state: "hidden" });
+    await page.getByRole("button", { name: "Profil", exact: true }).click();
     await page
       .getByRole("button", { name: "Avatarını değiştir", exact: true })
       .click();

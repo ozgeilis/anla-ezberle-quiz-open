@@ -90,6 +90,8 @@ export function audioProbe({ fixture, theme, preferences }) {
           gain,
           state: ctx.state,
           at: performance.now(),
+          peak: 0,
+          rms: 0,
         };
         probe.starts.push(event);
         active.set(nodeId, event);
@@ -102,7 +104,13 @@ export function audioProbe({ fixture, theme, preferences }) {
           if (a) {
             const data = new Float32Array(a.fftSize);
             a.getFloatTimeDomainData(data);
-            probe.peak = Math.max(probe.peak, ...data.map(Math.abs));
+            let squares = 0;
+            for (const value of data) {
+              event.peak = Math.max(event.peak, Math.abs(value));
+              squares += value * value;
+            }
+            event.rms = Math.max(event.rms, Math.sqrt(squares / data.length));
+            probe.peak = Math.max(probe.peak, event.peak);
           }
         };
         for (const delay of [30, 70, 150, 280]) setTimeout(sample, delay);

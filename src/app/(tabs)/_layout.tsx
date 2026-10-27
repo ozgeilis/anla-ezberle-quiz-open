@@ -1,85 +1,128 @@
 import React from "react";
-import { View } from "react-native";
-import { Slot, router, usePathname } from "expo-router";
+import { Text, View } from "react-native";
+import { Tabs } from "expo-router";
+import type { BottomTabBarProps } from "expo-router/js-tabs";
 import { tr } from "../../localization/tr";
-import { Icon, Tap, Txt } from "../../components/ui";
+import { Icon, Tap } from "../../components/ui";
 import {
   colors as c,
+  fonts,
   homePalette,
   shadows,
   useTheme,
 } from "../../theme/tokens";
-export default function TabLayout() {
-  const path = usePathname();
+
+function PremiumTabBar({ state, emitter, navigateToTab }: BottomTabBarProps) {
   const theme = useTheme();
   return (
-    <View style={{ flex: 1 }}>
-      <View style={{ flex: 1 }}>
-        <Slot />
-      </View>
-      <View
-        accessibilityRole="tablist"
-        accessibilityLabel="Ana gezinme"
-        style={{
-          flexDirection: "row",
-          backgroundColor: homePalette(theme.dark).nav,
-          borderTopWidth: 1,
-          borderColor: theme.border,
-          paddingVertical: 7,
-          boxShadow: shadows.dock,
-          borderTopLeftRadius: 24,
-          borderTopRightRadius: 24,
-          paddingHorizontal: 6,
-        }}
-      >
-        {tr.tabs.map((tab) => {
-          const active = path === tab.href;
-          return (
-            <View key={tab.href} style={{ flex: 1 }}>
-              <Tap
-                role="tab"
-                label={tab.label}
-                selected={active}
-                onPress={() => router.replace(tab.href)}
+    <View
+      accessibilityRole="tablist"
+      accessibilityLabel="Ana gezinme"
+      style={{
+        flexDirection: "row",
+        backgroundColor: homePalette(theme.dark).nav,
+        borderTopWidth: 1,
+        borderColor: theme.border,
+        // AppShell's SafeAreaView already reserves the device's bottom inset.
+        // Only this 48dp touch row and its 8dp padding belong to the tab bar.
+        height: 57,
+        paddingVertical: 4,
+        paddingHorizontal: 4,
+        boxShadow: shadows.dock,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+      }}
+    >
+      {tr.tabs.map((tab) => {
+        const name = tab.href === "/" ? "index" : tab.href.slice(1);
+        const route = state.routes.find((r) => r.name === name);
+        if (!route) return null;
+        const active = state.routes[state.index]?.key === route.key;
+        return (
+          <View key={route.key} style={{ flex: 1, minWidth: 0 }}>
+            <Tap
+              role="tab"
+              label={tab.label}
+              selected={active}
+              sound={false}
+              onPress={() => {
+                const event = emitter.emit({
+                  type: "tabPress",
+                  target: route.key,
+                  canPreventDefault: true,
+                });
+                if (!active && !event.defaultPrevented)
+                  navigateToTab(route.key);
+              }}
+              style={{
+                alignItems: "center",
+                justifyContent: "center",
+                height: 48,
+                gap: 2,
+                borderRadius: 15,
+                paddingHorizontal: 1,
+                backgroundColor: active ? theme.mintSurface : "transparent",
+              }}
+            >
+              <Icon
+                name={tab.icon}
+                size={20}
+                color={active ? theme.accent : theme.muted}
+              />
+              <Text
+                allowFontScaling={false}
+                numberOfLines={1}
                 style={{
-                  alignItems: "center",
-                  minHeight: 54,
-                  justifyContent: "center",
-                  gap: 4,
-                  minWidth: 0,
-                  borderRadius: 18,
-                  paddingHorizontal: 2,
-                  backgroundColor: active ? theme.mintSurface : "transparent",
+                  fontFamily: fonts[active ? "heavy" : "medium"],
+                  fontSize: 10,
+                  lineHeight: 14,
+                  textAlign: "center",
+                  color: active ? theme.accent : theme.muted,
                 }}
               >
-                <Icon
-                  name={tab.icon}
-                  size={22}
-                  color={active ? theme.accent : theme.muted}
-                />
-                <Txt
-                  size={10}
-                  weight={active ? "heavy" : "medium"}
-                  color={active ? theme.accent : theme.muted}
-                >
-                  {tab.label}
-                </Txt>
+                {tab.label}
+              </Text>
+              {active && (
                 <View
                   pointerEvents="none"
                   style={{
                     position: "absolute",
                     bottom: 0,
-                    width: active ? 16 : 0,
-                    height: 3,
+                    width: 15,
+                    height: 2,
                     borderRadius: 2,
                     backgroundColor: c.gold,
                   }}
                 />
-              </Tap>
-            </View>
-          );
-        })}
-      </View>
+              )}
+            </Tap>
+          </View>
+        );
+      })}
     </View>
+  );
+}
+
+export default function TabLayout() {
+  const theme = useTheme();
+  // Lazy first mount; thereafter retain each screen/scroll/selection instead of
+  // replacing the route on every tap. No audio, storage, or network awaits here.
+  return (
+    <Tabs
+      tabBar={(props) => <PremiumTabBar {...props} />}
+      screenOptions={{
+        headerShown: false,
+        lazy: true,
+        animation: "none",
+        freezeOnBlur: true,
+        sceneStyle: { backgroundColor: theme.background },
+      }}
+    >
+      <Tabs.Screen name="index" />
+      <Tabs.Screen name="categories" />
+      <Tabs.Screen name="ranking" />
+      <Tabs.Screen name="achievements" />
+      <Tabs.Screen name="profile" />
+    </Tabs>
   );
 }

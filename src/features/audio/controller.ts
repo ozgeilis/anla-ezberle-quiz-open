@@ -5,11 +5,7 @@ import {
   type SoundEffect,
 } from "./catalog";
 import type { SoundDriver, SoundPlayer } from "./driver.types";
-import {
-  defaultSoundPreferences,
-  menuMusicAllowed,
-  type SoundPreferences,
-} from "./preferences";
+import { defaultSoundPreferences, type SoundPreferences } from "./preferences";
 interface Clock {
   now(): number;
   set(fn: () => void, ms: number): unknown;
@@ -24,7 +20,7 @@ interface Cue {
   name: SoundEffect;
   id?: string;
 }
-// One effect voice + one quiet music voice. No timer here affects game time/state.
+// One short effect voice. No audio timer affects game time or state.
 export class SoundController {
   private preferences = { ...defaultSoundPreferences };
   private prefsReady = false;
@@ -37,8 +33,6 @@ export class SoundController {
   private queue: Cue[] = [];
   private current: { cue: Cue; player: SoundPlayer } | null = null;
   private effectTimer: unknown = null;
-  private fadeTimer: unknown = null;
-  private music: SoundPlayer | null = null;
   private lastUiAt = -Infinity;
   constructor(
     private driver: SoundDriver,
@@ -52,7 +46,6 @@ export class SoundController {
     if (this.disposed) return;
     this.backendReady = true;
     this.warmQuiz();
-    this.syncMusic();
   }
   configure(preferences: SoundPreferences) {
     this.preferences = { ...preferences };
@@ -64,20 +57,17 @@ export class SoundController {
         this.current!.player.volume = preferences.effectsVolume * 0.8;
       });
     this.warmQuiz();
-    this.syncMusic();
   }
   suspendPreferences() {
     this.prefsReady = false;
     this.stopEffects();
-    this.stopMusic();
   }
   activate() {
     if (this.disposed) return;
     this.unlocked = true;
     try {
       const resumed = this.driver.unlock();
-      if (resumed) void resumed.then(() => this.syncMusic()).catch(() => {});
-      else this.syncMusic();
+      if (resumed) void resumed.catch(() => {});
     } catch {
       /* Unsupported audio never interrupts a gesture or game. */
     }
@@ -86,8 +76,7 @@ export class SoundController {
     this.active = active;
     if (!active) {
       this.stopEffects();
-      this.stopMusic();
-    } else this.syncMusic();
+    }
   }
   setRoute(route: string) {
     if (route === this.route) return;
@@ -104,8 +93,6 @@ export class SoundController {
     this.queue = rewards;
     this.route = route;
     this.warmQuiz();
-    if (!menuMusicAllowed(route)) this.stopMusic();
-    else this.syncMusic();
     this.drain();
   }
   play(name: SoundEffect, id?: string): boolean {
@@ -173,13 +160,11 @@ export class SoundController {
       player.volume = this.preferences.effectsVolume * 0.8;
       player.play(true);
       this.current = { cue, player };
-      this.syncMusic();
       this.effectTimer = this.time.set(() => {
         this.effectTimer = null;
         this.safe(() => player.pause());
         this.current = null;
         this.drain();
-        this.syncMusic();
       }, effectDuration[cue.name] + 30);
       return true;
     } catch {
@@ -198,64 +183,9 @@ export class SoundController {
     this.current = null;
     this.queue = [];
   }
-  private stopMusic() {
-    if (this.fadeTimer !== null) this.time.clear(this.fadeTimer);
-    this.fadeTimer = null;
-    if (this.music)
-      this.safe(() => {
-        this.music!.volume = 0;
-        this.music!.pause();
-      });
-  }
-  private syncMusic() {
-    if (this.disposed || !this.active || !menuMusicAllowed(this.route)) {
-      this.stopMusic();
-      return;
-    }
-    const on =
-      this.backendReady &&
-      this.prefsReady &&
-      this.unlocked &&
-      this.preferences.musicEnabled &&
-      this.preferences.musicVolume > 0;
-    if (!on && !this.music) return;
-    if (this.fadeTimer !== null) this.time.clear(this.fadeTimer);
-    this.fadeTimer = null;
-    try {
-      if (!this.music && on) {
-        this.music = this.driver.player("music");
-        this.music.volume = 0;
-      }
-      const music = this.music;
-      if (!music) return;
-      if (on && !music.playing) music.play();
-      const from = music.volume,
-        duck =
-          this.current && effectPriority(this.current.cue.name) > 1 ? 0.4 : 1;
-      const target = on ? this.preferences.musicVolume * 0.35 * duck : 0;
-      let step = 0;
-      const fade = () => {
-        if (this.disposed || !this.active) return;
-        try {
-          music.volume = from + (target - from) * (++step / 6);
-          if (step < 6) this.fadeTimer = this.time.set(fade, 40);
-          else {
-            this.fadeTimer = null;
-            if (!on) music.pause();
-          }
-        } catch {
-          this.fadeTimer = null;
-        }
-      };
-      this.fadeTimer = this.time.set(fade, 40);
-    } catch {
-      /* e.g. browser autoplay denial: wait for a real user gesture. */
-    }
-  }
   dispose() {
     this.disposed = true;
     this.stopEffects();
-    this.stopMusic();
     this.safe(() => this.driver.dispose());
     this.seen.clear();
   }

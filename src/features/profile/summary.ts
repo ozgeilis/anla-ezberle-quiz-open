@@ -5,10 +5,14 @@ import { playCategoryName } from "../../domain/game/play-categories";
 
 /** Presentation only: reads completed records without changing rewards/history. */
 export function profileSummary(games: readonly GameRecord[], now = new Date()) {
-  const summaries = games.map(stats);
-  const answers = summaries.reduce((n, g) => n + g.correct + g.wrong, 0);
+  const records = [...new Map(games.map((g) => [g.id, g])).values()];
+  const summaries = records.map(stats);
+  const answers = summaries.reduce(
+    (n, g) => n + g.correct + g.wrong + (g.unanswered ?? 0),
+    0,
+  );
   const correct = summaries.reduce((n, g) => n + g.correct, 0);
-  const days = new Set(games.map((g) => dateKey(new Date(g.completedAt))));
+  const days = new Set(records.map((g) => dateKey(new Date(g.completedAt))));
   const day = new Date(`${dateKey(now)}T12:00:00+03:00`);
   if (!days.has(dateKey(day))) day.setUTCDate(day.getUTCDate() - 1);
   let streak = 0;
@@ -17,7 +21,7 @@ export function profileSummary(games: readonly GameRecord[], now = new Date()) {
     day.setUTCDate(day.getUTCDate() - 1);
   }
   const categories = new Map<string, number>();
-  for (const g of games) {
+  for (const g of records) {
     const label = g.playCategory
       ? playCategoryName(g.playCategory)
       : g.learningTopic
@@ -30,7 +34,7 @@ export function profileSummary(games: readonly GameRecord[], now = new Date()) {
   const favorite = [...categories].sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
   return {
     totalScore: summaries.reduce((n, g) => n + g.score, 0),
-    games: games.length,
+    games: records.length,
     accuracy: answers ? Math.round((correct / answers) * 100) : null,
     streak,
     favorite,

@@ -98,7 +98,7 @@ function NotificationList({ invitations }: { invitations: boolean }) {
       }
     >
       {!session ? (
-        <Card style={{ gap: 12 }}>
+        <Card style={{ gap: 8 }}>
           <Txt>
             Bildirimlerini ve davetlerini görmek için doğrulanmış hesabınla
             giriş yap. Yerel oyun ilerlemen korunur.
@@ -109,7 +109,7 @@ function NotificationList({ invitations }: { invitations: boolean }) {
           />
         </Card>
       ) : (
-        <View style={{ gap: 12 }}>
+        <View style={{ gap: 8 }}>
           <View
             style={{
               flexDirection: "row",
@@ -124,16 +124,18 @@ function NotificationList({ invitations }: { invitations: boolean }) {
               : smallLink("Davetlerim", "send", () =>
                   router.push("/online/invitations"),
                 )}
-            {smallLink(
-              "Bildirimleri yenile",
-              "refresh-cw",
-              () => void inbox.refresh(),
-            )}
           </View>
           {!!inbox.error && (
-            <Txt accessibilityRole="alert" color={theme.danger}>
-              {inbox.error}
-            </Txt>
+            <View>
+              <Txt accessibilityRole="alert" color={theme.danger}>
+                {inbox.error}
+              </Txt>
+              {smallLink(
+                "Bildirimleri yenile",
+                "refresh-cw",
+                () => void inbox.refresh(),
+              )}
+            </View>
           )}
           {!inbox.ready && !inbox.error && (
             <Txt color={theme.muted}>Bildirimlerin yükleniyor…</Txt>
@@ -143,7 +145,7 @@ function NotificationList({ invitations }: { invitations: boolean }) {
               ? inbox.challenges.length === 0
               : inbox.notifications.length === 0) && (
               <View
-                style={{ paddingVertical: 36, alignItems: "center", gap: 12 }}
+                style={{ paddingVertical: 36, alignItems: "center", gap: 8 }}
               >
                 <View
                   style={{
@@ -183,7 +185,7 @@ function NotificationList({ invitations }: { invitations: boolean }) {
                       setSelection({ kind: "notification", notification: n })
                     }
                     style={{
-                      minHeight: 80,
+                      minHeight: 72,
                       padding: 12,
                       borderRadius: 16,
                       flexDirection: "row",
@@ -266,7 +268,7 @@ function NotificationList({ invitations }: { invitations: boolean }) {
                     setSelection({ kind: "challenge", challengeId: c.id })
                   }
                   style={{
-                    minHeight: 80,
+                    minHeight: 72,
                     padding: 12,
                     borderRadius: 16,
                     flexDirection: "row",

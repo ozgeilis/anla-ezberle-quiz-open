@@ -6,12 +6,16 @@ on:
     paths:
       - "src/features/settings/**"
       - "src/features/profile/**"
+      - "src/features/notifications/**"
       - "src/features/online/**"
       - "src/features/home/**"
       - "src/components/**"
       - "assets/images/category-gems/**"
       - "src/app/**"
       - "scripts/settings-account-smoke.mjs"
+      - "scripts/mobile-game-ui-smoke.mjs"
+      - "scripts/push-navigation-smoke.mjs"
+      - "scripts/fixtures/account-http.mjs"
       - ".github/workflows/settings-account-ui.yml"
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
@@ -22,7 +26,7 @@ jobs:
   settings-account-smoke:
     if: ${{ github.event.repository.private == false }}
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -43,16 +47,21 @@ jobs:
       - name: Install real browser
         run: |
           npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
-          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps --only-shell chromium
       - name: Exercise settings and account flows
         run: |
           pnpm preview > /tmp/settings-preview.log 2>&1 &
           sleep 3
           node scripts/settings-account-smoke.mjs
+          node scripts/mobile-game-ui-smoke.mjs
+          node scripts/push-navigation-smoke.mjs
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
           name: settings-account-ui
-          path: artifacts/settings-account-ui/
+          path: |
+            artifacts/settings-account-ui/
+            artifacts/mobile-game-ui/
+            artifacts/push-navigation/
           retention-days: 1
           if-no-files-found: ignore

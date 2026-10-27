@@ -104,11 +104,19 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
       sound.setActive(active()),
     );
     const visibility = () => sound.setActive(active());
+    // Stop the audio graph before a full document navigation tears WebKit down.
+    // pagehide also handles BFCache; pageshow restores only the existing saved policy.
+    const pagehide = (event: PageTransitionEvent) => {
+      sound.setActive(false);
+      if (!event.persisted) sound.dispose();
+    };
     const gesture = (event: Event) => {
       if (event.isTrusted) sound.activate();
     };
     if (Platform.OS === "web") {
       document.addEventListener("visibilitychange", visibility);
+      window.addEventListener("pagehide", pagehide);
+      window.addEventListener("pageshow", visibility);
       document.addEventListener("pointerdown", gesture, true);
       document.addEventListener("keydown", gesture, true);
     }
@@ -118,6 +126,8 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
       listener.remove();
       if (Platform.OS === "web") {
         document.removeEventListener("visibilitychange", visibility);
+        window.removeEventListener("pagehide", pagehide);
+        window.removeEventListener("pageshow", visibility);
         document.removeEventListener("pointerdown", gesture, true);
         document.removeEventListener("keydown", gesture, true);
       }
@@ -140,7 +150,7 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
       setSaving(true);
       try {
         const next = parseSoundPreferences(
-          JSON.stringify({ ...prefs.current, ...change, version: 1 }),
+          JSON.stringify({ ...prefs.current, ...change, version: 2 }),
         );
         await AsyncStorage.setItem(SOUND_STORAGE_KEY, JSON.stringify(next));
         if (!mounted.current) return false;

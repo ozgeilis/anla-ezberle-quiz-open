@@ -234,3 +234,36 @@ test("demo kaydı yeniden çözülür; bozuk manifest/geçiş reddedilir, sahte 
   ])
     assert.throws(() => parseDemo(bad));
 });
+
+test("new demo turns use ten-second timeouts without changing legacy demo event logs", () => {
+  let doc = invited();
+  doc = start(doc, "a");
+  for (let i = 0; i < 10; i++) {
+    const s = restoreDemo(doc).players.a.session!;
+    const expiry = s.questionOpenedAt! + 10000;
+    const early = appendDuelEvent(doc, {
+      type: "timeout",
+      playerId: demoPlayers.a.id,
+      at: expiry - 1,
+    });
+    assert.equal(early, doc);
+    doc = appendDuelEvent(doc, {
+      type: "timeout",
+      playerId: demoPlayers.a.id,
+      at: expiry,
+    });
+    assert.equal(
+      restoreDemo(doc).players.a.session!.answers.at(-1)!.timedOut,
+      true,
+    );
+    if (i < 9) doc = send(doc, { type: "next", playerId: demoPlayers.a.id });
+  }
+  doc = send(doc, { type: "finish", playerId: demoPlayers.a.id });
+  assert.equal(stats(restoreDemo(doc).players.a.result!).unanswered, 10);
+  assert.deepEqual(parseDemo(JSON.stringify(doc)), doc);
+  const legacy = createDemoDocument(time);
+  delete legacy.seed.timingVersion;
+  delete legacy.seed.questionOpenedAt;
+  const frozen = JSON.stringify(legacy);
+  assert.equal(JSON.stringify(parseDemo(frozen)), frozen);
+});

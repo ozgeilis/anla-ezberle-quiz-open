@@ -78,4 +78,4 @@ release never authorizes an online content rollout.
 - The 30 retired IDs are `e150-quran-001` through `e150-quran-030`. v71 snapshots and saved rounds retain their original wording, answer keys and XP.
 - Source-check evidence and 38 candidate draft records: `docs/content-editorial/quran-38-kaynak-dogrulama-2026-10-22.md` and `docs/content-editorial/quran-anlam-odakli-38-taslak.json`.
 - Authorisation here is owner/source-based and is **not independent religious-expert certification**. Current v72 content uses `reviewStatus = approved` in the owner-authorized editorial channel.
-- The older private live exporter still references v41 / 600 and has **not** been migrated. Publishing this code to web does not migrate Supabase online rooms.
+- Both private online exporters now use the canonical v72 / 1,500 bank. Exports stage data only; they never activate a scope. Historical v13/v41 rows remain immutable. The live Supabase switch is a separately approved operation; see `docs/CANONICAL-V72-ROLLOUT.md`.

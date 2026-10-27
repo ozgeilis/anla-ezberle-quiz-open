@@ -99,8 +99,8 @@ if (result.status === 0) {
     }
   };
   visit("dist/assets/node_modules");
-  if (manifest.filter((a) => a.path.endsWith(".ttf")).length !== 5)
-    throw new Error("Expected four Manrope fonts and Feather icons");
+  if (manifest.filter((a) => a.path.endsWith(".ttf")).length !== 6)
+    throw new Error("Expected five Manrope fonts and Feather icons");
   writeFileSync("dist/web-assets.json", JSON.stringify(manifest));
   mkdirSync("dist/licenses", { recursive: true });
   for (const file of readdirSync("docs/licenses"))

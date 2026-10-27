@@ -1,5 +1,6 @@
 // Private SQL export only. Never imported by the client application.
-import { bankV41 as questions } from "../src/content/questions/archive/bank-v41";
+import { questions, BANK_VERSION } from "../src/content/questions";
+import { buildOnlineContentRows } from "./online-content-export";
 import { learningTopicsV1 } from "../src/content/questions/learning-topics-v1";
 import { learningTopicPool } from "../src/domain/game/learning";
 import {
@@ -7,23 +8,24 @@ import {
   selectionConceptKeys,
 } from "../src/domain/game/engine";
 import { liveLevels, liveCounts, liveQuotas } from "../src/domain/live/rules";
-const LIVE_BANK_VERSION = 41; // Keep the staged server export pinned to the validated 600-question snapshot.
+const LIVE_BANK_VERSION = BANK_VERSION;
 const quote = (s: string) => "'" + s.replaceAll("'", "''") + "'";
 const json = (v: unknown) => quote(JSON.stringify(v)) + "::jsonb";
 export function liveContent() {
+  buildOnlineContentRows(); // Shared canonical integrity gate; no content approval is inferred.
   if (
-    questions.length !== 600 ||
+    questions.length !== 1500 ||
     questions.some(
       (q) =>
         q.reviewStatus !== "approved" ||
         q.sources.some((s) => s.checkStatus !== "supported"),
     )
   )
-    throw new Error("Published 600-question bank required");
+    throw new Error("Canonical 1500-question bank required");
   const topics = new Map(
     learningTopicsV1.map((t) => [
       t.id,
-      new Set(learningTopicPool(questions, t.id, 1).map((q) => q.id)),
+      new Set(learningTopicPool(questions, t.id).map((q) => q.id)),
     ]),
   );
   const rows = questions.map((q) => ({
@@ -79,6 +81,6 @@ ${data.rows.map((q) => `(${quote(dataset)},${quote(q.id)},${quote(q.correct)},${
 INSERT INTO quiz_private.live_pools(dataset,topic,level,question_count,quotas,candidates,sample) VALUES
 ${data.pools.map((p) => `(${quote(dataset)},${quote(p.topic)},${quote(p.level)},${p.count},${json(p.quotas)},${json(p.candidates)},${json(p.sample)})`).join(",\n")};
 SELECT quiz_private.live_validate_dataset(${quote(dataset)});
-UPDATE quiz_private.live_config SET dataset=${quote(dataset)},enabled=true WHERE singleton;
+-- Staging only: active dataset and enabled flag are deliberately untouched.
 COMMIT;`;
 }

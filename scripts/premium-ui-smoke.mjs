@@ -105,7 +105,21 @@ try {
           });
           const season = page.getByRole("button", { name: /^Ramazan\./ });
           await season.scrollIntoViewIfNeeded();
-          assert.equal(await season.isDisabled(), true);
+          await season.click();
+          const preview = page.getByRole("dialog", {
+            name: "Ramazan",
+            exact: true,
+          });
+          await preview.waitFor();
+          assert.equal(
+            await preview
+              .getByRole("button", { name: "Oyuna Başla", exact: true })
+              .count(),
+            0,
+          );
+          await preview
+            .getByRole("button", { name: "Anladım", exact: true })
+            .click();
           await page.screenshot({
             path: join(output, `special-${width}-${theme}.jpg`),
             type: "jpeg",
@@ -161,7 +175,9 @@ try {
           runtimeErrors: errors.length,
         });
       }
-      await page.goto(origin + "/settings", { waitUntil: "networkidle" });
+      await page.goto(origin + "/settings/profile", {
+        waitUntil: "networkidle",
+      });
       await page
         .getByRole("button", { name: "Avatarını değiştir", exact: true })
         .click();
@@ -169,9 +185,8 @@ try {
         .getByRole("radio", { name: "Mercan Yolcu", exact: true })
         .click();
       await page.getByRole("button", { name: "Kaydet", exact: true }).click();
-      await page
-        .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-        .click();
+      await page.goto(origin + "/settings", { waitUntil: "networkidle" });
+      await page.getByRole("button", { name: "Tema", exact: true }).click();
       const alternate =
         theme === "light" ? "Koyu Tema ön izlemesi" : "Açık Tema ön izlemesi";
       await page.getByRole("radio", { name: alternate, exact: true }).click();
@@ -181,9 +196,8 @@ try {
       );
       assert.equal(beforeSave, theme, "Preview changed persisted theme");
       await page.getByRole("button", { name: "Vazgeç", exact: true }).click();
-      await page
-        .getByRole("button", { name: "Görünüm ayarlarını aç", exact: true })
-        .click();
+      await page.goto(origin + "/settings", { waitUntil: "networkidle" });
+      await page.getByRole("button", { name: "Tema", exact: true }).click();
       assert.equal(
         await page
           .getByRole("radio", { name: alternate, exact: true })

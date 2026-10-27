@@ -1,7 +1,7 @@
 // Real Chromium rendering against isolated HTTP fixtures, never a hosted account.
 // All auth tokens/addresses below are synthetic and have no server authority.
 import assert from "node:assert/strict";
-import { Buffer } from "node:buffer";
+import { setup, userA, userB, token } from "./fixtures/account-http.mjs";
 import { createRequire } from "node:module";
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -9,252 +9,17 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(
   join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
 );
-const origin = "http://127.0.0.1:8117",
-  api = "http://127.0.0.1:55431",
+const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117",
   root = "artifacts/settings-account-ui";
 await mkdir(root, { recursive: true });
-const browser = await chromium.launch({ headless: true });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.SETTINGS_BROWSER_CHANNEL
+    ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
+    : {}),
+});
 const checks = [];
 let latestPage;
-const userA = "11111111-1111-4111-8111-111111111111",
-  userB = "22222222-2222-4222-8222-222222222222";
-const token = (id) =>
-  `${Buffer.from('{"alg":"HS256","typ":"JWT"}').toString("base64url")}.${Buffer.from(JSON.stringify({ sub: id, exp: Math.floor(Date.now() / 1000) + 3600, role: "authenticated" })).toString("base64url")}.ci-not-a-signature`;
-function setup() {
-  const state = {
-    actor: userA,
-    username: null,
-    name: "Ayşe",
-    failName: false,
-    failRead: false,
-    failInbox: false,
-    failAfterChallenge: false,
-    readWrites: 0,
-    nameWrites: 0,
-    friendState: "pending",
-    notifications: null,
-    challenges: [],
-    unread: 0,
-    failSave: false,
-    failEmail: false,
-    failSignup: false,
-    failUser: false,
-    unconfirmed: false,
-    writes: 0,
-    usernameChecks: 0,
-    userChecks: 0,
-  };
-  const user = () => ({
-    id: state.actor,
-    aud: "authenticated",
-    role: "authenticated",
-    email:
-      state.actor === userA
-        ? "player-a@example.invalid"
-        : "player-b@example.invalid",
-    email_confirmed_at: state.unconfirmed ? undefined : "2026-10-22T10:00:00Z",
-    created_at: "2026-10-22T10:00:00Z",
-    app_metadata: { provider: "email" },
-    user_metadata: {},
-    is_anonymous: false,
-  });
-  const session = () => ({
-    access_token: token(state.actor),
-    refresh_token: "ci-fixture-only",
-    token_type: "bearer",
-    expires_in: 3600,
-    expires_at: Math.floor(Date.now() / 1000) + 3600,
-    user: user(),
-  });
-  const install = async (context) => {
-    await context.route("https://**/*", (r) => r.abort());
-    await context.routeWebSocket("**", (ws) => ws.close());
-    await context.route(`${api}/**`, async (route) => {
-      const req = route.request(),
-        path = new URL(req.url()).pathname;
-      const reply = (body, status = 200) =>
-        route.fulfill({
-          status,
-          contentType: "application/json",
-          body: JSON.stringify(body),
-          headers: { "access-control-allow-origin": "*" },
-        });
-      if (req.method() === "OPTIONS") return reply({});
-      if (path.includes("online_service_capabilities"))
-        return reply({ registrationEnabled: true });
-      if (path === "/auth/v1/signup")
-        return state.failSignup
-          ? reply(
-              { code: "unexpected_failure", msg: "private backend detail" },
-              500,
-            )
-          : reply({
-              user: { ...user(), email_confirmed_at: undefined },
-              session: null,
-            });
-      if (path === "/auth/v1/resend" || path === "/auth/v1/recover")
-        return state.failEmail === "network"
-          ? route.abort()
-          : state.failEmail
-            ? reply(
-                { code: "over_email_send_rate_limit", msg: "private detail" },
-                429,
-              )
-            : reply({});
-      if (path === "/auth/v1/token") {
-        const body = req.postDataJSON();
-        state.actor = body.email?.startsWith("player-b") ? userB : state.actor;
-        return reply(session());
-      }
-      if (path === "/auth/v1/user") {
-        state.userChecks++;
-        return state.failUser ? route.abort() : reply(user());
-      }
-      if (path === "/auth/v1/logout") return reply({});
-      if (path === "/functions/v1/online-duel") {
-        const { operation, body } = req.postDataJSON();
-        if (operation === "account_bootstrap") return reply({ ready: true });
-        if (operation === "inbox" && state.failInbox)
-          return reply({ error: "SERVER_ERROR" }, 500);
-        if (operation === "inbox")
-          return reply({
-            notifications:
-              state.notifications ??
-              (state.unread
-                ? [
-                    {
-                      id: "ci-notification",
-                      kind: "friend_request",
-                      referenceId: "ci-friend",
-                      createdAt: "2026-10-22T10:00:00Z",
-                      read: false,
-                    },
-                  ]
-                : []),
-            challenges: state.challenges,
-            unreadCount: state.unread,
-          });
-        if (operation === "notification_read") {
-          state.readWrites++;
-          if (state.failRead) return reply({ error: "SERVER_ERROR" }, 500);
-          if (state.notifications)
-            state.notifications = state.notifications.map((n) =>
-              body.notificationId === "all" || n.id === body.notificationId
-                ? { ...n, read: true }
-                : n,
-            );
-          state.unread = state.notifications
-            ? state.notifications.filter((n) => !n.read).length
-            : 0;
-          return reply({ saved: true });
-        }
-        if (operation === "self")
-          return reply({
-            profile: { name: state.actor === userB ? "Zeynep" : state.name },
-            matches: [],
-          });
-        if (operation === "social_self")
-          return reply({
-            profile: {
-              name: state.actor === userB ? "Zeynep" : state.name,
-              username:
-                state.actor === userB ? "ikinci_oyuncu" : state.username,
-              avatar: 0,
-              discoverable: false,
-            },
-            player: null,
-          });
-        if (operation === "username_check") {
-          state.usernameChecks++;
-          return reply({ available: true });
-        }
-        if (operation === "social_profile") {
-          state.writes++;
-          if (state.failSave) return reply({ error: "USERNAME_TAKEN" }, 409);
-          state.username = body.username;
-          assert.equal(body.name, state.name);
-          assert.equal(body.avatar, 0);
-          assert.equal(body.discoverable, false);
-          return reply({ saved: true });
-        }
-        if (operation === "profile") {
-          state.nameWrites++;
-          if (state.failName) return reply({ error: "SERVER_ERROR" }, 500);
-          assert.deepEqual(Object.keys(body), ["name"]);
-          state.name = body.name;
-          return reply({ profile: { name: state.name } });
-        }
-        if (operation === "friends")
-          return reply({
-            friendships: state.friendState
-              ? [
-                  {
-                    id: "ci-friend",
-                    state: state.friendState,
-                    incoming: true,
-                    player: {
-                      id: userB,
-                      name: "Deniz",
-                      username: "deniz_bilgi",
-                      avatar: 12,
-                      xp: 300,
-                      level: 2,
-                    },
-                  },
-                ]
-              : [],
-          });
-        if (operation === "friend_accept" || operation === "friend_remove") {
-          assert.equal(body.friendshipId, "ci-friend");
-          state.friendState = operation === "friend_accept" ? "accepted" : null;
-          return reply({ saved: true });
-        }
-        if (operation === "challenge_reply") {
-          const c = state.challenges.find((c) => c.id === body.challengeId);
-          assert(
-            c && c.state === "pending" && Date.parse(c.expiresAt) > Date.now(),
-          );
-          c.state =
-            body.action === "accept"
-              ? "accepted"
-              : body.action === "decline"
-                ? "declined"
-                : "cancelled";
-          if (c.state === "accepted") {
-            c.matchId = "ci-match";
-            c.matchState = "waiting_for_opponent";
-          }
-          if (state.failAfterChallenge) state.failInbox = true;
-          return reply({ challenge: c });
-        }
-        if (operation === "get")
-          return reply({
-            id: "ci-match",
-            state: "completed",
-            createdAt: new Date().toISOString(),
-            players: [
-              { slot: "a", name: "Ayşe", score: 900 },
-              { slot: "b", name: "Deniz", score: 800 },
-            ],
-            questions: [],
-            answers: [],
-            review: [],
-            result: { winner: "a" },
-          });
-        if (operation === "achievement_self")
-          return reply({
-            earned: [],
-            metrics: { friends: 0, opponents: 0, wins: 0, perfect: 0 },
-            shared: false,
-            showcase: [],
-          });
-        return reply({ error: "UNEXPECTED_FIXTURE_OPERATION" }, 400);
-      }
-      return reply({ error: "UNEXPECTED_FIXTURE_ROUTE" }, 400);
-    });
-  };
-  return { state, install };
-}
 async function shot(page, name) {
   latestPage = page;
   await page.evaluate(async () => {
@@ -294,7 +59,7 @@ async function login(page, email = "player-a@example.invalid") {
 }
 try {
   // Authenticated screenshots/actions use only disposable in-memory HTTP fixtures.
-  for (const width of [320, 390, 430, 1024])
+  for (const width of [320, 360, 390, 430, 1024])
     for (const mode of ["light", "dark"]) {
       const context = await browser.newContext({
         viewport: { width, height: width > 600 ? 1000 : 844 },
@@ -383,20 +148,25 @@ try {
           await p.getByText("Ayşe", { exact: true }).waitFor();
           await p.getByText("@ayse_34", { exact: true }).waitFor();
         }
-        if (path === "/settings")
-          await p.getByLabel("Görünen ad", { exact: true }).waitFor();
+        if (path === "/settings") {
+          await button(p, "Profil").waitFor();
+          assert.equal(
+            await p.getByLabel("Görünen ad", { exact: true }).count(),
+            0,
+          );
+          await button(p, "Bildirimler").waitFor();
+        }
         if (path === "/") {
-          const first = p
-            .getByRole("button", { name: /Kur’an ve Dualar|Kur'an ve Dualar/ })
-            .first();
-          await first.scrollIntoViewIfNeeded();
-          await shot(p, `${mode}-${width}-home-category-top`);
-          await p
-            .getByRole("button", {
-              name: /İslam Tarihi ve Medeniyeti.*yarışmanı hazırla/,
-            })
-            .scrollIntoViewIfNeeded();
-          await shot(p, `${mode}-${width}-home-category-bottom`);
+          assert.equal(
+            await p.getByRole("button", { name: /yarışmanı hazırla/ }).count(),
+            0,
+          );
+          const cta = await button(p, "Oyuna Başla").boundingBox();
+          assert(
+            cta.y + cta.height <= 844,
+            "Primary play action must fit first screen",
+          );
+          await button(p, "Arkadaşlarınla Oyna").waitFor();
         }
         await shot(
           p,
@@ -429,11 +199,20 @@ try {
         .getByText(/Okundu bilgisi güncellenemedi/)
         .waitFor({ state: "hidden" });
       assert.equal(f.state.unread, 2);
+      await shot(p, `${mode}-${width}-notification-detail`);
+      const modal = await p
+        .getByRole("dialog", { name: "Yeni arkadaşlık isteği", exact: true })
+        .boundingBox();
+      assert(
+        modal.width <= 380 && modal.height < 650,
+        "Friend dialog must remain compact",
+      );
       await button(p, "Profili Gör").click();
       await p
         .getByText("Seviye 2 · 300 çevrimiçi XP", { exact: true })
         .waitFor();
-      await shot(p, `${mode}-${width}-notification-detail`);
+      await shot(p, `${mode}-${width}-notification-profile`);
+      await button(p, "Bildirime Dön").click();
       await button(p, "Kabul Et").dblclick();
       await p
         .getByText("Arkadaşlık isteği kabul edildi.", { exact: true })
@@ -468,8 +247,8 @@ try {
       assert.equal(await button(p, "Düelloyu Reddet").count(), 0);
       f.state.failInbox = false;
       f.state.failAfterChallenge = false;
-      await button(p, "Durumu yenile").click();
       await button(p, "Pencereyi kapat").click();
+      await p.goto(origin + "/online/inbox", { waitUntil: "networkidle" });
       await p.getByRole("button", { name: /Düellonun sonucu hazır/ }).click();
       await p.getByText("Deniz · 800 puan", { exact: true }).waitFor();
       await button(p, "Sonuçları Gör").waitFor();
@@ -484,7 +263,7 @@ try {
       await p.goto(origin, { waitUntil: "networkidle" });
       await button(p, "Davetler ve Bildirimler").waitFor();
       checks.push(
-        `${mode}-${width}: six topic art, separate identity/settings, compact list, read failure/retry/idempotency, friend accept, expired/accepted invite, real DTO scores, missing record`,
+        `${mode}-${width}: short home, separate identity/settings, compact list, read failure/retry/idempotency, friend accept, expired/accepted invite, real DTO scores, missing record`,
       );
       await context.close();
     }
@@ -622,7 +401,7 @@ try {
   state.failEmail = false;
   await login(page);
   state.unread = 3;
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   await page
     .getByLabel("Benzersiz kullanıcı adı", { exact: true })
     .fill("bilgiyolcusu");
@@ -659,7 +438,7 @@ try {
   await page.getByText("Henüz bildirim yok.", { exact: true }).waitFor();
   await page.goto(origin, { waitUntil: "networkidle" });
   await button(page, "Davetler ve Bildirimler").waitFor();
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   state.failSave = true;
   await page
     .getByLabel("Benzersiz kullanıcı adı", { exact: true })
@@ -674,7 +453,7 @@ try {
   await closeFeedback(page);
   await page.goto(`${origin}/profile`, { waitUntil: "networkidle" });
   await page.getByText("Ayşe", { exact: true }).waitFor();
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   await page.getByLabel("Görünen ad", { exact: true }).fill("Ayşe Nur");
   await button(page, "Görünen Adı Kaydet").click();
   await page.getByRole("dialog", { name: "Görünen Adın Kaydedildi" }).waitFor();
@@ -692,8 +471,9 @@ try {
   await shot(page, "profile-separate-identity");
   await page.goto(origin, { waitUntil: "networkidle" });
   await page.getByText("Ayşe Nur", { exact: true }).waitFor();
-  await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+  await page.goto(`${origin}/settings/profile`, { waitUntil: "networkidle" });
   await shot(page, "settings-separate-fields");
+  await page.goto(`${origin}/settings/account`, { waitUntil: "networkidle" });
   await button(page, "Hesaptan Çık").click();
   await page.getByRole("dialog", { name: "Oturum Kapatıldı" }).waitFor();
   await closeFeedback(page);
@@ -758,6 +538,111 @@ try {
     }
     checks.push(
       `callback ${variant}: sanitized URL, persistent truthful result`,
+    );
+    await context.close();
+  }
+  // New menu hierarchy and transactional theme persistence on real rendering.
+  {
+    const context = await browser.newContext({
+      viewport: { width: 320, height: 844 },
+      colorScheme: "light",
+    });
+    const fixture = setup();
+    await fixture.install(context);
+    const page = await context.newPage();
+    latestPage = page;
+    await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
+    for (const name of [
+      "Profil",
+      "Ses",
+      "Tema",
+      "Hesap",
+      "Bildirimler",
+      "Gizlilik",
+      "Yardım",
+    ])
+      await button(page, name).waitFor();
+    assert.equal(await page.getByRole("textbox").count(), 0);
+    assert.equal(await page.getByRole("switch").count(), 0);
+    await button(page, "Bildirimler").click();
+    await page
+      .getByRole("heading", { name: "Bildirim Ayarları", exact: true })
+      .waitFor();
+    assert.equal(await page.getByRole("switch").count(), 5);
+    assert.equal(
+      await page
+        .getByRole("button", { name: "Bildirimleri görüntüle", exact: true })
+        .count(),
+      0,
+    );
+    await shot(page, "notification-preferences-web-unsupported");
+    await button(page, "Ayarlardan geri dön").click();
+    await button(page, "Tema").click();
+    await page.getByRole("heading", { name: "Tema", exact: true }).waitFor();
+    assert.equal(await page.getByRole("radio").count(), 3);
+    const color = await page
+      .getByRole("heading", { name: "Tema", exact: true })
+      .evaluate((el) => getComputedStyle(el).color);
+    await page
+      .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+      .click();
+    assert.equal(
+      await page
+        .getByRole("heading", { name: "Tema", exact: true })
+        .evaluate((el) => getComputedStyle(el).color),
+      color,
+    );
+    await button(page, "Vazgeç").click();
+    await button(page, "Tema").click();
+    assert.equal(
+      await page
+        .getByRole("radio", { name: "Sistem temasını izle", exact: true })
+        .getAttribute("aria-checked"),
+      "true",
+    );
+    await page
+      .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+      .click();
+    await button(page, "Kaydet").click();
+    await page.getByRole("heading", { name: "Ayarlar", exact: true }).waitFor();
+    await page.reload({ waitUntil: "networkidle" });
+    await button(page, "Tema").click();
+    assert.equal(
+      await page
+        .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+        .getAttribute("aria-checked"),
+      "true",
+    );
+    await page
+      .getByRole("radio", { name: "Açık Tema ön izlemesi", exact: true })
+      .click();
+    await page.evaluate(() => {
+      window.__settingsOriginalWrite = Storage.prototype.setItem;
+      Storage.prototype.setItem = function () {
+        throw new DOMException("Synthetic test quota", "QuotaExceededError");
+      };
+    });
+    await button(page, "Kaydet").click();
+    await page.getByText(/Kaydedilemedi. Önceki tercihin korundu/).waitFor();
+    await shot(page, "theme-save-failure-keeps-old-theme");
+    await page.evaluate(() => {
+      Storage.prototype.setItem = window.__settingsOriginalWrite;
+      delete window.__settingsOriginalWrite;
+    });
+    await button(page, "Vazgeç").click();
+    await button(page, "Tema").click();
+    assert.equal(
+      await page
+        .getByRole("radio", { name: "Koyu Tema ön izlemesi", exact: true })
+        .getAttribute("aria-checked"),
+      "true",
+    );
+    await page
+      .getByRole("radio", { name: "Sistem temasını izle", exact: true })
+      .click();
+    await button(page, "Kaydet").click();
+    checks.push(
+      "settings menu: seven real detail routes, preference-only notifications, three theme previews, cancel/reopen, persistence, storage failure rollback",
     );
     await context.close();
   }

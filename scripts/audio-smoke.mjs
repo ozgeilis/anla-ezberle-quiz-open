@@ -10,11 +10,16 @@ const require = createRequire(import.meta.url),
   );
 const kind = process.env.AUDIO_BROWSER ?? "chromium",
   fixture = JSON.parse(await readFile("/tmp/anla-audio-fixture.json", "utf8"));
-const origin = "http://127.0.0.1:8117",
+const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117",
   root = "artifacts/audio-" + kind,
   key = "@anla-ezberle-quiz/preferences/audio/v1";
 await mkdir(root, { recursive: true });
-const browser = await pw[kind].launch({ headless: true }),
+const browser = await pw[kind].launch({
+    headless: true,
+    ...(kind === "chromium" && process.env.SETTINGS_BROWSER_CHANNEL
+      ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
+      : {}),
+  }),
   checks = [];
 let last;
 const btn = (p, name) => p.getByRole("button", { name, exact: true });
@@ -56,9 +61,10 @@ async function open(p, path) {
   await p.waitForFunction(() => window.__soundProbe.decoded === 11);
 }
 async function choose(p, correct = true) {
-  const text = await p.getByText(/^Soru kodu: /).innerText(),
-    id = text.replace("Soru kodu: ", "").trim(),
-    answer = fixture.oracle[id];
+  await p.getByRole("button", { name: /^A\. / }).waitFor({ state: "visible" });
+  const texts = await p.getByRole("heading").allTextContents();
+  const question = texts.find((text) => fixture.questionOracle[text]);
+  const answer = fixture.questionOracle[question];
   assert(answer, "Private local question oracle");
   const options = p.getByRole("button", { name: /^[ABCD]\. / });
   const names = await options.evaluateAll((es) =>
@@ -67,9 +73,7 @@ async function choose(p, correct = true) {
   const i = names.findIndex((n) => n.slice(3) === answer);
   assert(i >= 0);
   await options.nth(correct ? i : (i + 1) % 4).click();
-  await btn(p, "Sonraki Soru")
-    .or(btn(p, "Sonucumu Gör"))
-    .waitFor({ state: "visible" });
+  await p.getByTestId("answer-feedback").waitFor({ state: "visible" });
 }
 try {
   for (const width of [320, 390, 1024])
@@ -87,11 +91,12 @@ try {
       const errors = [];
       p.on("pageerror", (e) => errors.push(e.message));
       await open(p, "/settings");
+      let s = await state(p);
+      assert.equal(s.starts.length, 0, "No autoplay before gesture");
+      await btn(p, "Ses").click();
       await p
         .getByRole("switch", { name: "Ses Efektleri", exact: true })
         .waitFor();
-      let s = await state(p);
-      assert.equal(s.starts.length, 0, "No autoplay before gesture");
       assert.equal(
         await p
           .getByRole("switch", { name: "Ses Efektleri", exact: true })
@@ -101,14 +106,14 @@ try {
       assert.equal(
         await p
           .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .isChecked(),
-        false,
+          .count(),
+        0,
       );
       await shot(p, `${theme}-${width}-settings`);
       await btn(p, "Efekti dene").click();
       await p.waitForFunction(() =>
         window.__soundProbe.starts.some(
-          (x) => Math.abs(x.duration - 0.68) < 0.01,
+          (x) => Math.abs(x.duration - 0.46) < 0.01,
         ),
       );
       await p.waitForFunction(() => window.__soundProbe.peak > 0.001);
@@ -149,29 +154,12 @@ try {
       await p.evaluate(() => {
         window.__soundProbe.failWrite = false;
       });
-      await p
-        .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-        .click();
-      await untilPreference(p, "musicEnabled", true);
-      await p.waitForFunction(() =>
-        window.__soundProbe.starts.some((x) => x.loop),
-      );
-      await p.waitForTimeout(300);
-      s = await state(p);
-      const music = s.starts.find((x) => x.loop);
-      assert(s.gains[music.gain] > 0 && s.gains[music.gain] < 0.3);
       await p.reload({ waitUntil: "networkidle" });
       await p.waitForFunction(() => window.__soundProbe.decoded === 11);
       assert.equal(
         (await state(p)).starts.length,
         0,
-        "Saved music never bypasses autoplay on reload",
-      );
-      assert.equal(
-        await p
-          .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .isChecked(),
-        true,
+        "No audio replay on reload",
       );
       assert.equal((await pref(p)).effectsVolume, 0.6);
       // Only one context per browser exercises complete games; layout/preferences cover every size/theme.
@@ -200,29 +188,29 @@ try {
         await btn(p, "Turdan ayrıl").click();
         await p.goto(origin + "/settings", { waitUntil: "networkidle" });
         await p.waitForFunction(() => window.__soundProbe.decoded === 11);
+        await btn(p, "Ses").click();
         await p
           .getByRole("switch", { name: "Ses Efektleri", exact: true })
           .click();
         await untilPreference(p, "effectsEnabled", true);
-        await p
-          .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .click();
-        await untilPreference(p, "musicEnabled", false);
         // Preloaded buffers remain playable with the actual browser network offline.
         await context.setOffline(true);
         await btn(p, "Efekti dene").click();
         await p.waitForFunction(() =>
           window.__soundProbe.starts.some(
-            (x) => Math.abs(x.duration - 0.68) < 0.01,
+            (x) => Math.abs(x.duration - 0.46) < 0.01,
           ),
         );
         await context.setOffline(false);
-        await p
-          .getByRole("switch", { name: "Arka Plan Müziği", exact: true })
-          .click();
-        await untilPreference(p, "musicEnabled", true);
         await btn(p, "Ayarlardan geri dön").click();
-        // A directly opened Settings screen returns to Profile, not Home.
+        await p
+          .getByRole("heading", { name: "Ayarlar", exact: true })
+          .waitFor();
+        await btn(p, "Ayarlardan geri dön").click();
+        await p
+          .getByRole("heading", { name: "Profilim", exact: true })
+          .waitFor();
+        // Sound returns to Settings; a directly opened Settings menu returns to Profile.
         await p.getByRole("tab", { name: /Ana Sayfa/ }).click();
         await p
           .getByRole("button", {
@@ -231,23 +219,27 @@ try {
           })
           .click();
         await p.waitForURL(/\/quiz$/);
-        await p.getByText(/^Soru kodu: /).waitFor();
+        await p.getByRole("button", { name: /^A\. / }).waitFor();
         await p.waitForFunction(
-          () => {
-            const { starts, stops } = window.__soundProbe;
-            return starts
-              .filter((x) => x.loop)
-              .every((x) => stops.includes(x.id));
-          },
-          undefined,
-          { timeout: 2000 },
+          () =>
+            window.__soundProbe.starts.filter(
+              (x) =>
+                Math.abs(x.duration - 0.12) < 0.001 &&
+                x.peak > 0.03 &&
+                x.rms > 0.008,
+            ).length >= 2,
+        );
+        const ticks = (await state(p)).starts.filter(
+          (x) => Math.abs(x.duration - 0.12) < 0.001,
+        );
+        assert(
+          ticks[1].at - ticks[0].at >= 800,
+          "Clock ticks do not stack or catch up",
         );
         const beforeGame = await state(p);
         assert(
-          beforeGame.starts
-            .filter((x) => x.loop)
-            .every((x) => beforeGame.stops.includes(x.id)),
-          "Question route pauses music",
+          beforeGame.starts.every((x) => !x.loop),
+          "No background music voice",
         );
         const marker = beforeGame.starts.length;
         for (let i = 0; i < 10; i++) {
@@ -256,28 +248,41 @@ try {
             ({ marker, count }) =>
               window.__soundProbe.starts
                 .slice(marker)
-                .filter((x) => Math.abs(x.duration - 0.68) < 0.01).length ===
+                .filter((x) => Math.abs(x.duration - 0.46) < 0.01).length ===
               count,
             { marker, count: i + 1 },
           );
           const after = await state(p),
             answerCount = after.starts.filter(
               (x, index) =>
-                index >= marker && Math.abs(x.duration - 0.68) < 0.01,
+                index >= marker && Math.abs(x.duration - 0.46) < 0.01,
             ).length;
           assert.equal(answerCount, i + 1, "Accepted answer once");
-          if (i === 0) await shot(p, "accepted-correct-answer");
+          if (i === 0) {
+            const acceptedAt = after.starts.at(-1).at;
+            await p.waitForTimeout(500);
+            assert(
+              !(await state(p)).starts.some(
+                (x) => x.at > acceptedAt && Math.abs(x.duration - 0.12) < 0.001,
+              ),
+              "Tick stops after an accepted answer",
+            );
+            await shot(p, "accepted-correct-answer");
+          }
           await p.waitForTimeout(740);
-          await btn(p, i === 9 ? "Sonucumu Gör" : "Sonraki Soru").click();
+          if (i < 9)
+            await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
-        await p.getByText("Tebrikler!", { exact: true }).waitFor();
+        await p
+          .getByRole("heading", { name: "Mükemmel!", exact: true })
+          .waitFor();
         await p.waitForTimeout(5500);
         const events = (await state(p)).starts.slice(marker),
           count = (d) =>
             events.filter((x) => Math.abs(x.duration - d) < 0.01).length;
-        assert.equal(count(1.88), 1, "Perfect result once");
-        assert.equal(count(1.45), 1, "Actual saved 240→340 XP level-up once");
-        assert(count(0.93) >= 1, "New badge chime");
+        assert.equal(count(1.55), 1, "Perfect result once");
+        assert.equal(count(1.15), 1, "Actual saved 240→340 XP level-up once");
+        assert(count(0.75) >= 1, "New badge chime");
         await shot(p, "perfect-result");
         const saved = await p.evaluate(
           (k) => JSON.parse(localStorage.getItem(k)),
@@ -289,7 +294,7 @@ try {
           fixture.data.games,
           "Historical records unchanged",
         );
-        const oldCount = count(1.88);
+        const oldCount = count(1.55);
         await p.setViewportSize({ width: 430, height: 844 });
         await p.waitForTimeout(100);
         await p.setViewportSize({ width: 390, height: 844 });
@@ -297,37 +302,40 @@ try {
         assert.equal(
           (await state(p)).starts
             .slice(marker)
-            .filter((x) => Math.abs(x.duration - 1.88) < 0.01).length,
+            .filter((x) => Math.abs(x.duration - 1.55) < 0.01).length,
           oldCount,
           "Rerender does not repeat result",
         );
         // A second real round with one wrong answer must use the ordinary completion cue.
-        await p.goto(origin + "/", { waitUntil: "networkidle" });
+        await p.goto(origin + "/categories", { waitUntil: "networkidle" });
         await p.waitForFunction(() => window.__soundProbe.decoded === 11);
-        await p.getByRole("button", { name: /^Kur['’]an ve Dualar,/ }).click();
+        await p.getByRole("radio", { name: /^Kur['’]an ve Dualar\./ }).click();
         await p.getByRole("radio", { name: /^Zorluk: Kolay$/ }).click();
         await btn(p, "Oyuna Başla").click();
         for (let i = 0; i < 10; i++) {
           await choose(p, i !== 0);
           await p.waitForTimeout(740);
-          await btn(p, i === 9 ? "Sonucumu Gör" : "Sonraki Soru").click();
+          if (i < 9)
+            await p.getByText(`Soru ${i + 2} / 10`, { exact: true }).waitFor();
         }
-        await p.getByText("Tebrikler!", { exact: true }).waitFor();
+        await p
+          .getByRole("heading", { name: "Harika!", exact: true })
+          .waitFor();
         await p.waitForTimeout(5500);
         s = await state(p);
         assert(
-          s.starts.some((x) => Math.abs(x.duration - 0.42) < 0.01),
+          s.starts.some((x) => Math.abs(x.duration - 0.32) < 0.01),
           "Wrong answer feedback",
         );
         assert.equal(
-          s.starts.filter((x) => Math.abs(x.duration - 1.38) < 0.01).length,
+          s.starts.filter((x) => Math.abs(x.duration - 1.1) < 0.01).length,
           1,
           "Ordinary completion once",
         );
         assert(s.maxEffects <= 1, "No overlapping effect voices");
         await shot(p, "ordinary-result");
         checks.push(
-          `${kind}: actual perfect/ordinary games, accepted correct/wrong, new badge, true level-up, source waveform, offline buffers, music question gating, immutable old records`,
+          `${kind}: actual perfect/ordinary games, accepted correct/wrong, measured audible clock ticks and answer stop, new badge, true level-up, source waveform, offline buffers, no music, timed question gating, immutable old records`,
         );
       }
       s = await state(p);
@@ -352,16 +360,27 @@ try {
   );
   console.log(checks.length + " " + kind + " audio/browser groups passed.");
 } catch (e) {
+  // Preserve the original failure even when a crashed browser cannot produce diagnostics.
+  await writeFile(
+    join(root, "failure.txt"),
+    String(e) + "\n" + (e.stack ?? ""),
+  );
   if (last && !last.isClosed()) {
-    await last.screenshot({ path: join(root, "failure.png") });
-    await writeFile(
-      join(root, "failure-probe.json"),
-      JSON.stringify(await state(last), null, 2),
-    );
-    await writeFile(
-      join(root, "failure.txt"),
-      String(e) + "\n" + (await last.locator("body").innerText()),
-    );
+    try {
+      await last.screenshot({ path: join(root, "failure.png") });
+      await writeFile(
+        join(root, "failure-probe.json"),
+        JSON.stringify(await state(last), null, 2),
+      );
+      await writeFile(
+        join(root, "failure-dom.txt"),
+        await last.locator("body").innerText(),
+      );
+    } catch {
+      console.error(
+        "Browser diagnostics unavailable; original test failure retained.",
+      );
+    }
   }
   throw e;
 } finally {

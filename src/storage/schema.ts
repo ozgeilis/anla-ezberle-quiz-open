@@ -201,6 +201,7 @@ export function validRecord(value: unknown): value is GameRecord {
         return false;
     }
   }
+  if (g.timingVersion !== undefined && g.timingVersion !== 1) return false;
   if (!Array.isArray(g.answers) || g.answers.length !== 10) return false;
   let last = g.startedAt;
   for (const [i, a] of g.answers.entries()) {
@@ -208,11 +209,28 @@ export function validRecord(value: unknown): value is GameRecord {
       !object(a) ||
       a.questionId !== g.questionIds[i] ||
       !Number.isInteger(a.option) ||
-      Number(a.option) < 0 ||
+      Number(a.option) <
+        (g.timingVersion === 1 && a.timedOut === true ? -1 : 0) ||
       Number(a.option) > 3 ||
       !timestamp(a.at) ||
       a.at < last ||
       a.at > g.completedAt
+    )
+      return false;
+    if (g.timingVersion === 1) {
+      if (
+        !timestamp(a.openedAt) ||
+        a.openedAt < last ||
+        a.at < a.openedAt ||
+        (a.timedOut === true
+          ? a.option !== -1 || a.at !== a.openedAt + 10000
+          : a.option === -1 || a.at >= a.openedAt + 10000)
+      )
+        return false;
+    } else if (
+      a.timedOut !== undefined ||
+      a.openedAt !== undefined ||
+      a.option === -1
     )
       return false;
     last = a.at;

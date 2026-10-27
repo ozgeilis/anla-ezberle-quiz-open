@@ -183,14 +183,14 @@ test("repo-wide static and literal dynamic import graph has no broken local path
     edges.some(
       (e) =>
         e.from === "scripts/live-content.ts" &&
-        e.to === "src/content/questions/archive/bank-v41.ts",
+        e.to === "src/content/questions/index.ts",
     ),
   );
   assert.ok(
     edges.some(
       (e) =>
         e.from === "scripts/online-content-export.ts" &&
-        e.to === "src/content/questions/archive/bank-v13.ts",
+        e.to === "src/content/questions/index.ts",
     ),
   );
 });

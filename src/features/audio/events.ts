@@ -8,6 +8,7 @@ export interface QuizAudioState {
   cursor: number;
   answer: boolean | null;
   hidden: boolean;
+  timedOut?: boolean;
 }
 export function quizAudioCues(
   old: QuizAudioState | null,
@@ -19,7 +20,13 @@ export function quizAudioCues(
   if (old.answer === null && next.answer !== null)
     return [
       {
-        name: next.hidden ? "select" : next.answer ? "correct" : "wrong",
+        name: next.timedOut
+          ? "timeout"
+          : next.hidden
+            ? "select"
+            : next.answer
+              ? "correct"
+              : "wrong",
         id: `quiz:${next.id}:answer:${next.cursor}`,
       },
     ];

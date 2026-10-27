@@ -67,7 +67,7 @@ export function createSoundDriver(): SoundDriver {
         set volume(v) {
           gain.gain.cancelScheduledValues(context.currentTime);
           gain.gain.setValueAtTime(gain.gain.value, context.currentTime);
-          gain.gain.linearRampToValueAtTime(v, context.currentTime + 0.035);
+          gain.gain.linearRampToValueAtTime(v, context.currentTime + 0.008);
         },
         get playing() {
           return !!source && context.state === "running";
@@ -91,7 +91,7 @@ export function createSoundDriver(): SoundDriver {
             const node = context.createBufferSource();
             source = node;
             node.buffer = buffer;
-            node.loop = name === "music";
+            node.loop = false;
             node.connect(gain);
             started = context.currentTime;
             node.onended = () => {

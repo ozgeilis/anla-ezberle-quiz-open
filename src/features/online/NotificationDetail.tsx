@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { ScrollView, View, useWindowDimensions } from "react-native";
+import { View, useWindowDimensions } from "react-native";
 import { router } from "expo-router";
 import { Avatar } from "../../components/game/Artwork";
-import { Button, Dialog, Icon, Txt } from "../../components/ui";
+import { Button, Dialog, TextAction, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { PublicAchievements } from "../achievements/PublicAchievements";
 import { useOnlineAuth } from "./OnlineProvider";
@@ -21,7 +21,7 @@ export function NotificationDetail({
   selection: InboxSelection;
   onClose: () => void;
 }) {
-  const { height } = useWindowDimensions();
+  const { fontScale } = useWindowDimensions();
   const { session } = useOnlineAuth(),
     inbox = useInbox(),
     theme = useTheme();
@@ -170,243 +170,229 @@ export function NotificationDetail({
         );
       await inbox.refresh();
     });
-  const date = n?.createdAt ?? challenge?.createdAt;
+  const actionRow = {
+    flexDirection: fontScale > 1.5 ? ("column" as const) : ("row" as const),
+    gap: 8,
+  };
   return (
-    <Dialog visible title={title} onClose={onClose}>
-      <ScrollView
-        style={{ maxHeight: Math.max(180, height - 210) }}
-        contentContainerStyle={{ gap: 14 }}
-        keyboardShouldPersistTaps="handled"
-      >
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
-          <View
-            style={{
-              width: 50,
-              height: 50,
-              borderRadius: 18,
-              backgroundColor: theme.goldSurface,
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Icon
-              name={n ? notificationCopy[n.kind].icon : "zap"}
-              size={27}
-              color={theme.goldInk}
-            />
-          </View>
-          <View style={{ flex: 1 }}>
-            <Txt size={14} weight="bold">
-              {n
-                ? notificationCopy[n.kind].summary
-                : "10 ortak soru · Her doğruya 100 puan"}
-            </Txt>
-            {date && (
-              <Txt size={12} color={theme.muted}>
-                {new Date(date).toLocaleString("tr-TR", {
-                  timeZone: "Europe/Istanbul",
-                })}
-              </Txt>
-            )}
-          </View>
-        </View>
-        {readState === "pending" && (
-          <Txt size={12} color={theme.muted}>
-            Okundu bilgisi güncelleniyor…
+    <Dialog
+      back
+      visible
+      title={showProfile ? "Oyuncu Profili" : title}
+      onClose={onClose}
+      scrollable
+    >
+      {showProfile && player ? (
+        <View style={{ gap: 12, alignItems: "center" }}>
+          <Avatar variant={player.avatar} size={64} />
+          <Txt size={18} weight="bold" style={{ textAlign: "center" }}>
+            {player.name}
           </Txt>
-        )}
-        {readState === "failed" && (
-          <>
-            <Txt accessibilityRole="alert" color={theme.danger}>
-              Okundu bilgisi güncellenemedi. Bildirim sayısı henüz doğrulanmadı.
+          <Txt size={12} color={theme.muted}>
+            @{player.username}
+          </Txt>
+          <Txt size={14}>
+            Seviye {player.level} · {player.xp} çevrimiçi XP
+          </Txt>
+          <PublicAchievements player={player} />
+          <TextAction
+            title="Bildirime Dön"
+            onPress={() => setShowProfile(false)}
+          />
+        </View>
+      ) : (
+        <View style={{ gap: 12 }}>
+          {loading && (
+            <Txt size={14} color={theme.muted}>
+              Ayrıntılar yükleniyor…
             </Txt>
-            <Button
-              title="Okundu bilgisini yeniden dene"
-              variant="outline"
-              onPress={() => {
-                if (!n) return;
-                setRead("pending");
-                void read(n.id).then((ok) => {
-                  if (alive.current) setRead(ok ? "done" : "failed");
-                });
-              }}
-            />
-          </>
-        )}
-        {loading && <Txt>Güvenli ayrıntılar yükleniyor…</Txt>}
-        {!!player && (
-          <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
-            <Avatar variant={player.avatar} size={48} />
-            <View style={{ flex: 1 }}>
-              <Txt size={18} weight="heavy">
+          )}
+          {!!player && (
+            <View style={{ alignItems: "center", gap: 4 }}>
+              <Avatar variant={player.avatar} size={60} />
+              <Txt size={18} weight="bold" style={{ textAlign: "center" }}>
                 {player.name}
               </Txt>
-              <Txt size={13} color={theme.accent}>
+              <Txt size={12} color={theme.muted}>
                 @{player.username}
               </Txt>
             </View>
-          </View>
-        )}
-        {friendKind && !loading && !friend && !notice && !error && (
-          <Txt color={theme.muted}>
-            Arkadaşlık kaydı artık bulunamıyor veya bu hesaba açık değil. Bu
-            bildirimden işlem yapılamaz.
-          </Txt>
-        )}
-        {friend && (
-          <Txt>
-            {friend.state === "accepted"
-              ? "Arkadaşlık isteği kabul edilmiş."
-              : friend.incoming
-                ? "Sana bir arkadaşlık isteği gönderdi."
-                : "Gönderdiğin istek yanıt bekliyor."}
-          </Txt>
-        )}
-        {friend?.state === "pending" && friend.incoming && (
-          <>
-            <Button
-              title="Kabul Et"
-              icon="user-check"
-              disabled={busy || loading}
-              onPress={() => void friendReply(true)}
-            />
-            <Button
-              title="Reddet"
-              variant="outline"
-              disabled={busy || loading}
-              onPress={() => void friendReply(false)}
-            />
-          </>
-        )}
-        {!!challengeId && !challenge && (
-          <Txt color={theme.muted}>
-            Davet artık listede bulunamıyor veya bu hesaba açık değil. Yenileyip
-            tekrar kontrol edebilirsin.
-          </Txt>
-        )}
-        {!!status && <Txt weight="bold">{status.title}</Txt>}
-        {status?.canReply && (
-          <>
-            <Button
-              title="Düelloyu Kabul Et"
-              icon="play"
-              disabled={busy || inbox.busy}
-              onPress={() => void challengeReply("accept")}
-            />
-            <Button
-              title="Düelloyu Reddet"
-              variant="outline"
-              disabled={busy || inbox.busy}
-              onPress={() => void challengeReply("decline")}
-            />
-          </>
-        )}
-        {status?.canCancel && (
-          <Button
-            title="Düello Davetini İptal Et"
-            variant="outline"
-            disabled={busy || inbox.busy}
-            onPress={() => void challengeReply("cancel")}
-          />
-        )}
-        {challenge?.matchId && (
-          <Button
-            title={
-              challenge.matchState === "completed"
-                ? "Sonuçları Gör"
-                : "Maçı Gör"
-            }
-            icon="arrow-right"
-            disabled={busy}
-            onPress={() => {
-              onClose();
-              router.push({
-                pathname: "/online",
-                params: { match: challenge.matchId! },
-              });
-            }}
-          />
-        )}
-        {match && (
-          <>
-            <Txt weight="bold">
-              {match.state === "completed"
-                ? "Yarışma tamamlandı."
-                : match.state === "expired"
-                  ? "Maçın süresi doldu."
-                  : match.state === "cancelled"
-                    ? "Maç iptal edildi."
-                    : "Maç henüz tamamlanmadı."}
+          )}
+          {friendKind && !loading && !friend && !notice && !error && (
+            <Txt size={14} color={theme.muted}>
+              Arkadaşlık kaydı artık bulunamıyor veya bu hesaba açık değil. Bu
+              bildirimden işlem yapılamaz.
             </Txt>
-            {match.players.map((p) => (
-              <Txt key={p.slot}>
-                {p.name}
-                {match.state === "completed" && p.score !== null
-                  ? ` · ${p.score} puan`
-                  : ""}
-              </Txt>
-            ))}
+          )}
+          {friend && (
+            <Txt size={14} style={{ textAlign: "center" }}>
+              {friend.state === "accepted"
+                ? "Arkadaşlık isteği kabul edilmiş."
+                : friend.incoming
+                  ? "Sana arkadaşlık isteği gönderdi."
+                  : "Gönderdiğin istek yanıt bekliyor."}
+            </Txt>
+          )}
+          {friend?.state === "pending" && friend.incoming && (
+            <View style={actionRow}>
+              <Button
+                fill
+                title="Reddet"
+                variant="outline"
+                disabled={busy || loading}
+                onPress={() => void friendReply(false)}
+              />
+              <Button
+                fill
+                title="Kabul Et"
+                disabled={busy || loading}
+                loading={busy}
+                onPress={() => void friendReply(true)}
+              />
+            </View>
+          )}
+          {!!challengeId && !challenge && (
+            <Txt size={14} color={theme.muted}>
+              Davet artık listede bulunamıyor veya bu hesaba açık değil.
+              Yenileyip tekrar kontrol edebilirsin.
+            </Txt>
+          )}
+          {!!status && (
+            <Txt size={14} weight="semibold" style={{ textAlign: "center" }}>
+              {status.title}
+            </Txt>
+          )}
+          {status?.canReply && (
+            <View style={actionRow}>
+              <Button
+                fill
+                title="Reddet"
+                accessibilityLabel="Düelloyu Reddet"
+                variant="outline"
+                disabled={busy || inbox.busy}
+                onPress={() => void challengeReply("decline")}
+              />
+              <Button
+                fill
+                title="Kabul Et"
+                accessibilityLabel="Düelloyu Kabul Et"
+                disabled={busy || inbox.busy}
+                loading={busy || inbox.busy}
+                onPress={() => void challengeReply("accept")}
+              />
+            </View>
+          )}
+          {status?.canCancel && (
+            <TextAction
+              title="Düello Davetini İptal Et"
+              disabled={busy || inbox.busy}
+              onPress={() => void challengeReply("cancel")}
+            />
+          )}
+          {challenge?.matchId && (
             <Button
-              title={match.state === "completed" ? "Sonuçları Gör" : "Maçı Gör"}
+              title={
+                challenge.matchState === "completed"
+                  ? "Sonuçları Gör"
+                  : "Maçı Gör"
+              }
               disabled={busy}
               onPress={() => {
                 onClose();
                 router.push({
                   pathname: "/online",
-                  params: { match: match.id },
+                  params: { match: challenge.matchId! },
                 });
               }}
             />
-          </>
-        )}
-        {!!player && (
-          <>
-            <Button
-              title={showProfile ? "Profil bilgilerini gizle" : "Profili Gör"}
-              variant="outline"
-              disabled={busy}
-              onPress={() => setShowProfile(!showProfile)}
-            />
-            {showProfile && (
-              <View
-                style={{
-                  padding: 12,
-                  borderRadius: 16,
-                  backgroundColor: theme.mintSurface,
-                  gap: 8,
-                }}
-              >
-                <Txt size={13}>
-                  Seviye {player.level} · {player.xp} çevrimiçi XP
+          )}
+          {match && (
+            <View style={{ gap: 12 }}>
+              <Txt size={14} weight="semibold">
+                {match.state === "completed"
+                  ? "Yarışma tamamlandı."
+                  : match.state === "expired"
+                    ? "Maçın süresi doldu."
+                    : match.state === "cancelled"
+                      ? "Maç iptal edildi."
+                      : "Maç henüz tamamlanmadı."}
+              </Txt>
+              {match.players.map((p) => (
+                <Txt size={14} key={p.slot}>
+                  {p.name}
+                  {match.state === "completed" && p.score !== null
+                    ? ` · ${p.score} puan`
+                    : ""}
                 </Txt>
-                <PublicAchievements player={player} />
-              </View>
-            )}
-          </>
-        )}
-        {!!notice && (
-          <Txt accessibilityLiveRegion="polite" color={theme.success}>
-            {notice}
-          </Txt>
-        )}
-        {!!error && (
-          <Txt accessibilityRole="alert" color={theme.danger}>
-            {error}
-          </Txt>
-        )}
-        <Button
-          title="Durumu yenile"
-          icon="refresh-cw"
-          variant="outline"
-          disabled={busy || loading}
-          onPress={() =>
-            void action(async () => {
-              await inbox.refresh();
-              await load();
-            })
-          }
-        />
-      </ScrollView>
+              ))}
+              <Button
+                title={
+                  match.state === "completed" ? "Sonuçları Gör" : "Maçı Gör"
+                }
+                disabled={busy}
+                onPress={() => {
+                  onClose();
+                  router.push({
+                    pathname: "/online",
+                    params: { match: match.id },
+                  });
+                }}
+              />
+            </View>
+          )}
+          {!!player && (
+            <TextAction
+              title="Profili Gör"
+              disabled={busy}
+              onPress={() => setShowProfile(true)}
+            />
+          )}
+          {!!notice && (
+            <Txt
+              size={13}
+              accessibilityLiveRegion="polite"
+              color={theme.success}
+            >
+              {notice}
+            </Txt>
+          )}
+          {!!error && (
+            <View style={{ gap: 4 }}>
+              <Txt size={13} accessibilityRole="alert" color={theme.danger}>
+                {error}
+              </Txt>
+              <TextAction
+                title="Durumu yenile"
+                disabled={busy || loading}
+                onPress={() =>
+                  void action(async () => {
+                    await inbox.refresh();
+                    await load();
+                  })
+                }
+              />
+            </View>
+          )}
+          {readState === "failed" && (
+            <View style={{ gap: 4 }}>
+              <Txt size={12} accessibilityRole="alert" color={theme.danger}>
+                Okundu bilgisi güncellenemedi. Bildirim sayısı henüz
+                doğrulanmadı.
+              </Txt>
+              <TextAction
+                title="Okundu bilgisini yeniden dene"
+                onPress={() => {
+                  if (!n) return;
+                  setRead("pending");
+                  void read(n.id).then((ok) => {
+                    if (alive.current) setRead(ok ? "done" : "failed");
+                  });
+                }}
+              />
+            </View>
+          )}
+        </View>
+      )}
     </Dialog>
   );
 }

@@ -1,4 +1,8 @@
 import {
+  clearPushNavigation,
+  revokePushBeforeSignOut,
+} from "../notifications/api";
+import {
   authFailureMessage,
   passwordError,
   validEmail,
@@ -176,11 +180,17 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     if (error) throw new Error(authFailureMessage(error));
   };
   const signOut = async () => {
+    if (session) {
+      await revokePushBeforeSignOut(session.user.id);
+      await clearPushNavigation(session.user.id).catch(() => {});
+    }
     const { error } = await onlineClient()!.auth.signOut({ scope: "local" });
     if (error) throw new Error("Çıkış tamamlanamadı. Bağlantını kontrol et.");
     setSession(null);
   };
   const completeAccountDeletion = async (actor: string) => {
+    // Push navigation metadata must never block the existing secure auth cleanup.
+    await clearPushNavigation(actor).catch(() => {});
     const client = onlineClient();
     if (!client) throw new Error("Servis yapılandırılmadı.");
     const { data, error: readError } = await client.auth.getSession();

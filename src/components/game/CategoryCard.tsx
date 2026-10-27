@@ -1,13 +1,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { useWindowDimensions, View } from "react-native";
-import {
-  categories,
-  CategoryId,
-  Difficulty,
-  availableQuestions,
-  CONTENT_CHANNEL,
-} from "../../content/questions";
+import { categories, CategoryId, Difficulty } from "../../content/questions";
 import { categoryGradients, colors as c } from "../../theme/tokens";
 import { Icon, Tap, Txt } from "../ui";
 import { CategoryArt, Pattern } from "./Artwork";
@@ -16,7 +10,6 @@ export function CategoryCard({
   onPress,
   large = false,
   selected = false,
-  difficulty,
 }: {
   category: CategoryId;
   onPress: () => void;
@@ -26,15 +19,10 @@ export function CategoryCard({
 }) {
   const info = categories.find((item) => item.id === category)!;
   const compact = useWindowDimensions().width < 360;
-  const count = availableQuestions.filter(
-    (q) => q.categoryId === category && (!difficulty || q.difficulty === difficulty),
-  ).length;
-  const status =
-    CONTENT_CHANNEL === "prototype" ? "taslak soru" : "onaylı soru";
   const textColor = category === "history" ? c.navy : c.white;
   return (
     <Tap
-      label={`${info.title}, ${count} ${status}${selected ? ", seçili" : ""}`}
+      label={`${info.title}${selected ? ", seçili" : ""}`}
       onPress={onPress}
       selected={selected}
       style={{
@@ -77,9 +65,6 @@ export function CategoryCard({
             gap: 2,
           }}
         >
-          <Txt size={12} color={textColor}>
-            {count} {status}
-          </Txt>
           <View
             style={{
               borderRadius: 20,

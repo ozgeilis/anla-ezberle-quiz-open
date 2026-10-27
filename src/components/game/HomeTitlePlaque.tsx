@@ -17,7 +17,7 @@ const arch =
   "M180 5 C169 23 124 25 114 51 C94 40 62 48 58 71 C35 65 17 82 20 104 C6 110 5 126 10 140 L10 285 Q10 309 34 309 H326 Q350 309 350 285 V140 C355 126 354 110 340 104 C343 82 325 65 302 71 C298 48 266 40 246 51 C236 25 191 23 180 5 Z";
 
 /** Native content over a local SVG ornament; the existing city stays visible around it. */
-export function HomeTitlePlaque() {
+export function HomeTitlePlaque({ dense = false }: { dense?: boolean }) {
   const id = `home-arch-${useId().replace(/[^a-zA-Z0-9]/g, "")}`;
   const { width, fontScale } = useWindowDimensions();
   const compact = width < 360;
@@ -27,15 +27,15 @@ export function HomeTitlePlaque() {
       testID="home-title-plaque"
       style={{
         width: "100%",
-        maxWidth: 420,
+        maxWidth: dense ? 300 : 340,
         alignSelf: "center",
         marginTop: -6,
         marginBottom: 10,
         paddingHorizontal: 16,
-        paddingTop: 81,
-        paddingBottom: 17,
+        paddingTop: dense ? 28 : 58,
+        paddingBottom: 13,
         alignItems: "center",
-        minHeight: 294,
+        minHeight: dense ? 170 : 238,
       }}
     >
       <View
@@ -117,11 +117,11 @@ export function HomeTitlePlaque() {
       <Txt
         accessibilityRole="header"
         weight="heavy"
-        size={compact ? 39 : 45}
+        size={dense ? 28 : compact ? 32 : 36}
         color={c.white}
         style={{
           textAlign: "center",
-          lineHeight: compact ? 49 : 55,
+          lineHeight: dense ? 34 : compact ? 40 : 44,
           textShadowColor: "#002F37",
           textShadowOffset: { width: 0, height: 3 },
           textShadowRadius: 1,
@@ -129,10 +129,10 @@ export function HomeTitlePlaque() {
       >
         Anla &
       </Txt>
-      {fontScale > 1.2 ? (
+      {dense || fontScale > 1.2 ? (
         <Txt
           weight="heavy"
-          size={compact ? 51 : 60}
+          size={dense ? 28 : compact ? 42 : 48}
           color={palette.goldLight}
           style={{ textAlign: "center" }}
         >
@@ -143,7 +143,7 @@ export function HomeTitlePlaque() {
           accessible
           accessibilityRole="header"
           accessibilityLabel="Ezberle"
-          style={{ width: "100%", height: compact ? 68 : 76 }}
+          style={{ width: "100%", height: compact ? 54 : 60 }}
         >
           <Svg
             width="100%"
@@ -191,7 +191,7 @@ export function HomeTitlePlaque() {
         </View>
       )}
       <Txt
-        size={compact ? 16 : 18}
+        size={dense ? 12 : compact ? 13 : 15}
         weight="heavy"
         color={c.white}
         style={{
@@ -210,13 +210,13 @@ export function HomeTitlePlaque() {
           borderColor: "#2E9D98",
           backgroundColor: palette.plaqueDeep,
           paddingHorizontal: 10,
-          paddingVertical: 7,
-          marginTop: 9,
+          paddingVertical: 5,
+          marginTop: dense ? 4 : 9,
           maxWidth: "100%",
         }}
       >
         <Txt
-          size={compact ? 12 : 13}
+          size={compact ? 11 : 12}
           weight="bold"
           color={c.white}
           style={{ textAlign: "center" }}
