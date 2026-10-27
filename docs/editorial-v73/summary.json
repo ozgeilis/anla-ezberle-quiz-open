@@ -1,0 +1,42 @@
+{
+  "activeVersion": 72,
+  "candidateVersion": 73,
+  "total": 1500,
+  "imanReviewed": 260,
+  "imanRevised": 251,
+  "imanRetained": 9,
+  "otherRevised": 20,
+  "stemsChanged": 48,
+  "onlyOptionsChanged": 203,
+  "distractorsOnlyChanged": 118,
+  "correctWordingChanged": 128,
+  "explanationsChanged": 8,
+  "automaticFlagsByCategory": {
+    "quran_dualar": 40,
+    "siyer_sahabe": 42,
+    "peygamberler": 65,
+    "fikih": 36,
+    "iman_ahlak": 79,
+    "tarih_medeniyet": 37
+  },
+  "sourceCompared": 280,
+  "editedSourceCompared": 271,
+  "independentExpertApproved": 0,
+  "independentExpertPending": 271,
+  "otherSuspicious": 220,
+  "oldPositionHistogram": [
+    162,
+    1026,
+    158,
+    154
+  ],
+  "candidatePositionHistogram": [
+    204,
+    893,
+    204,
+    199
+  ],
+  "humanApproval": false,
+  "releaseEnabled": false,
+  "v72FileSha256": "d1dcd3e92f4d331d187fcbf4c3459a1837ef979413a743c0d3ec4a43d7023115"
+}
