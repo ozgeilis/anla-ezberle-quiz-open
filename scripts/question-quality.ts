@@ -55,6 +55,7 @@ const semanticSets = [
   ["böbürlenmek", "kibirlenmek"],
   ["adak", "nezir"],
   ["fitre", "sadaka i fıtr"],
+  ["direk", "sütun", "direkler", "sütunlar", "direklere", "sütunlara"],
 ];
 /** Review signals, never an approval/rejection or a theological truth engine. */
 export function qualityWarnings(q: Question): QualityFlag[] {

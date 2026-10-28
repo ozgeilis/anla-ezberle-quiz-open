@@ -89,6 +89,22 @@ test("Known synonymous options enter review even when both are distractors", () 
   assert(
     !qualityWarnings(candidate).some((f) => f.kind === "possible-synonyms"),
   );
+  const previousNebeOptions = probe([
+    "Direklere",
+    "Sütunlara",
+    "Köklere",
+    "Kazıklara",
+  ]);
+  assert(
+    qualityWarnings(previousNebeOptions).some(
+      (f) => f.kind === "possible-synonyms",
+    ),
+  );
+  assert(
+    !qualityWarnings(
+      questionsV73Candidate.find((q) => q.id === "q43-nebe-6")!,
+    ).some((f) => f.kind === "possible-synonyms"),
+  );
   assert(
     qualityWarnings(probe(["FİTRE", "Sadaka-i fıtr", "Zekât", "Fidye"])).some(
       (f) => f.kind === "possible-synonyms",

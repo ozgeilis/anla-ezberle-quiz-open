@@ -3,18 +3,18 @@
   "activeBankVersion": 72,
   "candidateBankVersion": 73,
   "total": 1500,
-  "individuallyReviewed": 621,
-  "pendingReview": 879,
-  "sourceComparedThisRound": 515,
+  "individuallyReviewed": 771,
+  "pendingReview": 729,
+  "sourceComparedThisRound": 665,
   "blocked": 1,
   "flaggedBefore": 336,
-  "flaggedAfter": 147,
+  "flaggedAfter": 148,
   "previousPriorityCount": 220,
-  "revisedAgainstV72": 548,
-  "stemsChangedAgainstV72": 225,
-  "correctAnswerWordingChangedAgainstV72": 275,
-  "explanationsChangedAgainstV72": 138,
-  "distractorsOnlyChangedAgainstV72": 184,
+  "revisedAgainstV72": 614,
+  "stemsChangedAgainstV72": 260,
+  "correctAnswerWordingChangedAgainstV72": 306,
+  "explanationsChangedAgainstV72": 154,
+  "distractorsOnlyChangedAgainstV72": 204,
   "automaticPatternCounts": {
     "three-restrictive-distractors": {
       "before": 25,
@@ -56,86 +56,86 @@
   "byCategory": {
     "quran_dualar": {
       "total": 213,
-      "individuallyReviewed": 133,
-      "pendingReview": 80,
-      "sourceComparedThisRound": 106,
+      "individuallyReviewed": 152,
+      "pendingReview": 61,
+      "sourceComparedThisRound": 125,
       "blocked": 1,
       "flaggedBefore": 47,
-      "flaggedAfter": 22
+      "flaggedAfter": 21
     },
     "siyer_sahabe": {
       "total": 313,
-      "individuallyReviewed": 98,
-      "pendingReview": 215,
-      "sourceComparedThisRound": 74,
+      "individuallyReviewed": 124,
+      "pendingReview": 189,
+      "sourceComparedThisRound": 100,
       "blocked": 0,
       "flaggedBefore": 45,
       "flaggedAfter": 25
     },
     "peygamberler": {
       "total": 271,
-      "individuallyReviewed": 156,
-      "pendingReview": 115,
-      "sourceComparedThisRound": 146,
+      "individuallyReviewed": 165,
+      "pendingReview": 106,
+      "sourceComparedThisRound": 155,
       "blocked": 0,
       "flaggedBefore": 81,
-      "flaggedAfter": 45
+      "flaggedAfter": 46
     },
     "fikih": {
       "total": 161,
-      "individuallyReviewed": 95,
-      "pendingReview": 66,
-      "sourceComparedThisRound": 81,
+      "individuallyReviewed": 104,
+      "pendingReview": 57,
+      "sourceComparedThisRound": 90,
       "blocked": 0,
       "flaggedBefore": 40,
       "flaggedAfter": 16
     },
     "iman_ahlak": {
       "total": 260,
-      "individuallyReviewed": 45,
-      "pendingReview": 215,
-      "sourceComparedThisRound": 38,
+      "individuallyReviewed": 102,
+      "pendingReview": 158,
+      "sourceComparedThisRound": 95,
       "blocked": 0,
       "flaggedBefore": 85,
-      "flaggedAfter": 25
+      "flaggedAfter": 24
     },
     "tarih_medeniyet": {
       "total": 282,
-      "individuallyReviewed": 94,
-      "pendingReview": 188,
-      "sourceComparedThisRound": 70,
+      "individuallyReviewed": 124,
+      "pendingReview": 158,
+      "sourceComparedThisRound": 100,
       "blocked": 0,
       "flaggedBefore": 38,
-      "flaggedAfter": 14
+      "flaggedAfter": 16
     }
   },
   "byDifficulty": {
     "easy": {
       "total": 475,
-      "individuallyReviewed": 222,
-      "pendingReview": 253,
-      "sourceComparedThisRound": 188,
+      "individuallyReviewed": 263,
+      "pendingReview": 212,
+      "sourceComparedThisRound": 229,
       "blocked": 1,
       "flaggedBefore": 113,
-      "flaggedAfter": 39
+      "flaggedAfter": 40
     },
     "medium": {
       "total": 789,
-      "individuallyReviewed": 293,
-      "pendingReview": 496,
-      "sourceComparedThisRound": 242,
+      "individuallyReviewed": 379,
+      "pendingReview": 410,
+      "sourceComparedThisRound": 328,
       "blocked": 0,
       "flaggedBefore": 186,
-      "flaggedAfter": 88
+      "flaggedAfter": 86
     },
     "hard": {
       "total": 236,
-      "individuallyReviewed": 106,
-      "pendingReview": 130,
-      "sourceComparedThisRound": 85,
+      "individuallyReviewed": 129,
+      "pendingReview": 107,
+      "sourceComparedThisRound": 108,
       "blocked": 0,
       "flaggedBefore": 37,
-      "flaggedAfter": 20
+      "flaggedAfter": 22
     }
   },
   "styleOnlyGuesser": {

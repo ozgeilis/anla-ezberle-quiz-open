@@ -746,8 +746,8 @@
   },
   {
     "id": "user200-107",
-    "disposition": "retained",
-    "reason": "Mevcut kavram ailesindeki dört seçenek ve tek kaynak ayrımı korundu.",
+    "disposition": "revised",
+    "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
@@ -792,12 +792,7 @@
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
-    "newFlags": [
-      {
-        "kind": "grammar-shape",
-        "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-      }
-    ]
+    "newFlags": []
   },
   {
     "id": "learn-akaid-016",
