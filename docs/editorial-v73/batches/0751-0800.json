@@ -1,0 +1,4310 @@
+{
+  "batch": 16,
+  "start": 751,
+  "end": 800,
+  "total": 50,
+  "individuallyReviewed": 0,
+  "pendingReview": 50,
+  "sourceComparedThisRound": 0,
+  "blocked": 0,
+  "flaggedBefore": 13,
+  "flaggedAfter": 3,
+  "records": [
+    {
+      "sequence": 751,
+      "sourceSequence": 603,
+      "id": "q42-lokman-20",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/20'de insanlara sunulan nimetler hangi iki yönüyle anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız maddî ve ticari nimetler"
+          },
+          {
+            "id": "o2",
+            "text": "Yalnız gece ve gündüz"
+          },
+          {
+            "id": "o3",
+            "text": "Eskiden ve ileride verilecek nimetler"
+          },
+          {
+            "id": "o4",
+            "text": "Açık ve gizli nimetler"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Açık ve gizli nimetler",
+        "explanation": "Lokmân 31/20'de göklerde ve yerde bulunanların insanın hizmetine sunulması ve nimetlerin açık-gizli biçimde verilmesi hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=20&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/20",
+            "supports": "Lokmân 31/20'de göklerde ve yerde bulunanların insanın hizmetine sunulması ve nimetlerin açık-gizli biçimde verilmesi hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/20'de insanlara sunulan nimetler hangi iki yönüyle anılır?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Geçmiş ve gelecek nimetler"
+          },
+          {
+            "id": "o4",
+            "text": "Açık ve gizli nimetler"
+          },
+          {
+            "id": "o1",
+            "text": "Gece ve gündüz nimetleri"
+          },
+          {
+            "id": "o2",
+            "text": "Maddî ve ticari nimetler"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Açık ve gizli nimetler",
+        "explanation": "Lokmân 31/20'de göklerde ve yerde bulunanların insanın hizmetine sunulması ve nimetlerin açık-gizli biçimde verilmesi hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/20; PDF sayfa 434 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Açık ve gizli nimetler (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 752,
+      "sourceSequence": 604,
+      "id": "q42-lokman-27",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/27'de ağaçlar kalem, denizler mürekkep olsa da tükenmeyecek olan nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Allah'ın sözleri"
+          },
+          {
+            "id": "o2",
+            "text": "Yeryüzündeki suyun miktarı"
+          },
+          {
+            "id": "o3",
+            "text": "Dünyadaki ağaç sayısı"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanların yolculukları"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Allah'ın sözleri",
+        "explanation": "Lokmân 31/27, ağaçların kalem ve denizlerin mürekkep olması örneğiyle Allah'ın sözlerinin tükenmezliğini vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=27&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/27",
+            "supports": "Lokmân 31/27, ağaçların kalem ve denizlerin mürekkep olması örneğiyle Allah'ın sözlerinin tükenmezliğini vurgular.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/27'de ağaçlar kalem, denizler mürekkep olsa da tükenmeyecek olan nedir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Allah'ın yarattığı gök cisimleri"
+          },
+          {
+            "id": "o1",
+            "text": "Allah'ın sözleri"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'ın yarattığı denizler"
+          },
+          {
+            "id": "o3",
+            "text": "Allah'ın yarattığı ağaçlar"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Allah'ın sözleri",
+        "explanation": "Lokmân 31/27, ağaçların kalem ve denizlerin mürekkep olması örneğiyle Allah'ın sözlerinin tükenmezliğini vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/27; PDF sayfa 435 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Allah'ın sözleri (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 753,
+      "sourceSequence": 605,
+      "id": "q42-lokman-28",
+      "category": "iman_ahlak",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/28'de bütün insanların yaratılıp yeniden diriltilmesi neye benzetilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir nehrin kuruyup yeniden akmasına"
+          },
+          {
+            "id": "o2",
+            "text": "Bir dağın yükselmesine"
+          },
+          {
+            "id": "o3",
+            "text": "Tek bir kişinin yaratılıp diriltilmesine"
+          },
+          {
+            "id": "o4",
+            "text": "Bir yıldızın gece görünmesine"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Tek bir kişinin yaratılıp diriltilmesine",
+        "explanation": "Lokmân 31/28, insanların tümünün yaratılması ve yeniden diriltilmesini Allah'ın kudreti açısından tek bir kişinin yaratılması ve diriltilmesi gibi anlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=28&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/28",
+            "supports": "Lokmân 31/28, insanların tümünün yaratılması ve yeniden diriltilmesini Allah'ın kudreti açısından tek bir kişinin yaratılması ve diriltilmesi gibi anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/28'de bütün insanların yaratılıp yeniden diriltilmesi neye benzetilir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Yapraklarını döken ağacın yeşermesine"
+          },
+          {
+            "id": "o4",
+            "text": "Gece karanlığından sonra gün doğmasına"
+          },
+          {
+            "id": "o3",
+            "text": "Tek bir kişinin yaratılıp diriltilmesine"
+          },
+          {
+            "id": "o1",
+            "text": "Kuruyan toprağın yağmurla canlanmasına"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Tek bir kişinin yaratılıp diriltilmesine",
+        "explanation": "Lokmân 31/28, insanların tümünün yaratılması ve yeniden diriltilmesini Allah'ın kudreti açısından tek bir kişinin yaratılması ve diriltilmesi gibi anlatır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/28; PDF sayfa 435 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Tek bir kişinin yaratılıp diriltilmesine (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 754,
+      "sourceSequence": 606,
+      "id": "q42-lokman-29",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/29'da belirli süreye kadar hareket ettirildiği bildirilen iki gök cismi hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Güneş ve ay"
+          },
+          {
+            "id": "o2",
+            "text": "Dünya ve Mars"
+          },
+          {
+            "id": "o3",
+            "text": "Ay ve Venüs"
+          },
+          {
+            "id": "o4",
+            "text": "Satürn ve Jüpiter"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Güneş ve ay",
+        "explanation": "Lokmân 31/29'da gece ile gündüzün birbirine katılması anlatılır; güneş ve ayın da belirli bir süreye kadar hareket ettiği bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/29",
+            "supports": "Lokmân 31/29'da gece ile gündüzün birbirine katılması anlatılır; güneş ve ayın da belirli bir süreye kadar hareket ettiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/29'da belirli süreye kadar hareket ettirildiği bildirilen iki gök cismi hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Güneş ve ay"
+          },
+          {
+            "id": "o2",
+            "text": "Dünya ve Mars"
+          },
+          {
+            "id": "o3",
+            "text": "Ay ve Venüs"
+          },
+          {
+            "id": "o4",
+            "text": "Satürn ve Jüpiter"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Güneş ve ay",
+        "explanation": "Lokmân 31/29'da gece ile gündüzün birbirine katılması anlatılır; güneş ve ayın da belirli bir süreye kadar hareket ettiği bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/29",
+            "supports": "Lokmân 31/29'da gece ile gündüzün birbirine katılması anlatılır; güneş ve ayın da belirli bir süreye kadar hareket ettiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 755,
+      "sourceSequence": 607,
+      "id": "q42-lokman-31",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/31'e göre denizde gemilerin yüzmesi özellikle kimler için ibretler barındırır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız gemi yapanlar için"
+          },
+          {
+            "id": "o2",
+            "text": "Çok sabreden ve çok şükredenler için"
+          },
+          {
+            "id": "o3",
+            "text": "Sadece denizde yaşayanlar için"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnız tüccarlar için"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Çok sabreden ve çok şükredenler için",
+        "explanation": "Lokmân 31/31'de gemilerin Allah'ın lütfuyla denizde hareket etmesi, sabır ve şükür sahibi kimseler için ilâhî işaretlerden biri olarak anılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=31&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/31",
+            "supports": "Lokmân 31/31'de gemilerin Allah'ın lütfuyla denizde hareket etmesi, sabır ve şükür sahibi kimseler için ilâhî işaretlerden biri olarak anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/31'e göre denizde gemilerin yüzmesi özellikle kimler için ibretler barındırır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Hakkı söyleyen ve adaletle hükmedenler"
+          },
+          {
+            "id": "o2",
+            "text": "Çok sabreden ve çok şükredenler"
+          },
+          {
+            "id": "o1",
+            "text": "Çok bağışlayan ve çok infak edenler"
+          },
+          {
+            "id": "o3",
+            "text": "İlim öğrenen ve öğretenler"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Çok sabreden ve çok şükredenler",
+        "explanation": "Lokmân 31/31'de gemilerin Allah'ın lütfuyla denizde hareket etmesi, sabır ve şükür sahibi kimseler için ilâhî işaretlerden biri olarak anılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/31; PDF sayfa 436 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Çok sabreden ve çok şükredenler (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 756,
+      "sourceSequence": 608,
+      "id": "q42-lokman-34",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/34'te hiç kimsenin kesin biçimde bilemeyeceği durumlar arasında hangisi sayılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Geçmişte yaşadığı şehir"
+          },
+          {
+            "id": "o2",
+            "text": "Bugün gördüğü hava durumu"
+          },
+          {
+            "id": "o3",
+            "text": "Kaç kardeşi olduğu"
+          },
+          {
+            "id": "o4",
+            "text": "Nerede öleceği"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Nerede öleceği",
+        "explanation": "Lokmân 31/34, kıyamet saatinin bilgisine değinir; insanın ertesi gün ne elde edeceğini ve hangi yerde öleceğini kesin olarak bilemeyeceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=34&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/34",
+            "supports": "Lokmân 31/34, kıyamet saatinin bilgisine değinir; insanın ertesi gün ne elde edeceğini ve hangi yerde öleceğini kesin olarak bilemeyeceğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/34'te hiç kimsenin kesin biçimde bilemeyeceği durumlar arasında hangisi sayılır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Bugün nerede bulunduğu"
+          },
+          {
+            "id": "o3",
+            "text": "Dün hangi yoldan geçtiği"
+          },
+          {
+            "id": "o4",
+            "text": "Nerede öleceği"
+          },
+          {
+            "id": "o1",
+            "text": "Hangi şehirde doğduğu"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Nerede öleceği",
+        "explanation": "Lokmân 31/34, kıyamet saatinin bilgisine değinir; insanın ertesi gün ne elde edeceğini ve hangi yerde öleceğini kesin olarak bilemeyeceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/34; PDF sayfa 436 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Nerede öleceği (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 757,
+      "sourceSequence": 609,
+      "id": "q43-mulk-3",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/3'te göklerin yaratılışında öne çıkan özellik hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Her birinin farklı tanrıya ait olması"
+          },
+          {
+            "id": "o2",
+            "text": "Birbiriyle uyumlu oluşları"
+          },
+          {
+            "id": "o3",
+            "text": "İnsanların göklere hükmetmesi"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnız gündüz görünmeleri"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Birbiriyle uyumlu oluşları",
+        "explanation": "Âyet, yedi göğün birbiriyle uyumlu yaratıldığını ve bu yaratılışta bir uyumsuzluk görülmeyeceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mülk sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=67",
+            "locator": "Mülk 67/3",
+            "supports": "Âyet, yedi göğün birbiriyle uyumlu yaratıldığını ve bu yaratılışta bir uyumsuzluk görülmeyeceğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/3'te göklerin yaratılışında öne çıkan özellik hangisidir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Birbirinden ayrı zamanlarda görünmeleri"
+          },
+          {
+            "id": "o2",
+            "text": "Birbiriyle uyumlu olmaları"
+          },
+          {
+            "id": "o1",
+            "text": "Birbirinden farklı renk taşımaları"
+          },
+          {
+            "id": "o3",
+            "text": "Birbirinden ayrı malzemeden yaratılmaları"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Birbiriyle uyumlu olmaları",
+        "explanation": "Âyet, yedi göğün birbiriyle uyumlu yaratıldığını ve bu yaratılışta bir uyumsuzluk görülmeyeceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/3; PDF sayfa 603 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Birbiriyle uyumlu olmaları (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 758,
+      "sourceSequence": 610,
+      "id": "q43-mulk-8",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/8'de cehenneme gelenlere görevliler ne sorar?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hangi ülkede yaşadınız?"
+          },
+          {
+            "id": "o2",
+            "text": "Size bir uyarıcı gelmedi mi?"
+          },
+          {
+            "id": "o3",
+            "text": "Ne kadar mal kazandınız?"
+          },
+          {
+            "id": "o4",
+            "text": "Neden yolculuk ettiniz?"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Size bir uyarıcı gelmedi mi?",
+        "explanation": "Âyette cehenneme atılan her gruba daha önce kendilerini uyaran bir peygamber gelip gelmediğinin sorulduğu anlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mülk sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=67",
+            "locator": "Mülk 67/8",
+            "supports": "Âyette cehenneme atılan her gruba daha önce kendilerini uyaran bir peygamber gelip gelmediğinin sorulduğu anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/8'de cehenneme gelenlere görevliler ne sorar?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Amel defterinizi sağdan aldınız mı?"
+          },
+          {
+            "id": "o3",
+            "text": "Malınızı nerelere harcadınız?"
+          },
+          {
+            "id": "o4",
+            "text": "Birbirinize hakkı tavsiye ettiniz mi?"
+          },
+          {
+            "id": "o2",
+            "text": "Size bir uyarıcı gelmedi mi?"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Size bir uyarıcı gelmedi mi?",
+        "explanation": "Âyette cehenneme atılan her gruba daha önce kendilerini uyaran bir peygamber gelip gelmediğinin sorulduğu anlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/8; PDF sayfa 604 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Size bir uyarıcı gelmedi mi? (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 759,
+      "sourceSequence": 611,
+      "id": "q43-mulk-10",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/10'da pişmanlık duyanlar hangi iki imkânı kullanmadıklarını söyler?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yazmak ve ticaret yapmak"
+          },
+          {
+            "id": "o2",
+            "text": "Dinlemek ve aklı kullanmak"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuk etmek ve eğlenmek"
+          },
+          {
+            "id": "o4",
+            "text": "Yemek ve uyumak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dinlemek ve aklı kullanmak",
+        "explanation": "Âyette uyarıyı dinlememenin ve aklı kullanmamanın sonuçlarına dikkat çekilir; pişmanlık bu iki imkân üzerinedir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mülk sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=10&mode=kuran-meal&sure=67",
+            "locator": "Mülk 67/10",
+            "supports": "Âyette uyarıyı dinlememenin ve aklı kullanmamanın sonuçlarına dikkat çekilir; pişmanlık bu iki imkân üzerinedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/10'da pişmanlık duyanlar hangi iki imkânı kullanmadıklarını söyler?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Gözlemek ve yolculuk etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Dinlemek ve aklı kullanmak"
+          },
+          {
+            "id": "o1",
+            "text": "Görmek ve şahitlik etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yazmak ve ezberlemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dinlemek ve aklı kullanmak",
+        "explanation": "Âyette uyarıyı dinlememenin ve aklı kullanmamanın sonuçlarına dikkat çekilir; pişmanlık bu iki imkân üzerinedir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/10; PDF sayfa 604 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Dinlemek ve aklı kullanmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 760,
+      "sourceSequence": 612,
+      "id": "q43-mulk-13",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/13'e göre Allah, insanların sözlerini hangi hâllerde bilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız yüksek sesle söylenince"
+          },
+          {
+            "id": "o2",
+            "text": "Gizli ve açık söylenince"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız başkaları duyunca"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece gündüz söylenince"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Gizli ve açık söylenince",
+        "explanation": "Âyette sözün gizlenmesi ya da açığa vurulmasının Allah'ın bilgisi bakımından fark oluşturmadığı, kalplerdekinin de bilindiği hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mülk sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=13&mode=kuran-meal&sure=67",
+            "locator": "Mülk 67/13",
+            "supports": "Âyette sözün gizlenmesi ya da açığa vurulmasının Allah'ın bilgisi bakımından fark oluşturmadığı, kalplerdekinin de bilindiği hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/13'te sözle ilgili hangi iki tutum karşılaştırılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yazmak ve okumak"
+          },
+          {
+            "id": "o3",
+            "text": "Sormak ve cevaplamak"
+          },
+          {
+            "id": "o4",
+            "text": "Hatırlamak ve unutmak"
+          },
+          {
+            "id": "o2",
+            "text": "Gizlemek ve açığa vurmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Gizlemek ve açığa vurmak",
+        "explanation": "Âyette sözün gizlenmesi ya da açığa vurulmasının Allah'ın bilgisi bakımından fark oluşturmadığı, kalplerdekinin de bilindiği hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/13; PDF sayfa 604 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Gizlemek ve açığa vurmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 761,
+      "sourceSequence": 613,
+      "id": "q43-mulk-15",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/15'te yeryüzünde dolaşırken hangi nimetten yararlanmak öğütlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sadece deniz suyundan"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'ın rızkından"
+          },
+          {
+            "id": "o3",
+            "text": "Başkalarının hakkından"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnız madenlerden"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'ın rızkından",
+        "explanation": "Âyet, yeryüzünün insanların kullanımına elverişli kılındığını, üzerinde dolaşıp Allah'ın rızkından yararlanmayı ve dönüşü hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mülk sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=15&mode=kuran-meal&sure=67",
+            "locator": "Mülk 67/15",
+            "supports": "Âyet, yeryüzünün insanların kullanımına elverişli kılındığını, üzerinde dolaşıp Allah'ın rızkından yararlanmayı ve dönüşü hatırlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/15'te yararlanılması istenen nimet hangi kavramla anılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Sekînet"
+          },
+          {
+            "id": "o2",
+            "text": "Rızık"
+          },
+          {
+            "id": "o1",
+            "text": "Hidayet"
+          },
+          {
+            "id": "o3",
+            "text": "Hikmet"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rızık",
+        "explanation": "Âyet, yeryüzünün insanların kullanımına elverişli kılındığını, üzerinde dolaşıp Allah'ın rızkından yararlanmayı ve dönüşü hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/15; PDF sayfa 604 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Rızık (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 762,
+      "sourceSequence": 614,
+      "id": "q43-mulk-30",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/30'da çekilen su örneğiyle insana ne düşündürülür?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çölün yaşını ölçmek"
+          },
+          {
+            "id": "o2",
+            "text": "Akarsuyu geri getirecek kudret"
+          },
+          {
+            "id": "o3",
+            "text": "Deniz suyunun tadını belirlemek"
+          },
+          {
+            "id": "o4",
+            "text": "Yağmurun mevsimsel adları"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Akarsuyu geri getirecek kudret",
+        "explanation": "Âyet, suyun çekilip gitmesi halinde tekrar akarsu getirecek kudretin kimde olduğunu sorarak su nimeti üzerinde düşünmeye çağırır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mülk sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=30&mode=kuran-meal&sure=67",
+            "locator": "Mülk 67/30",
+            "supports": "Âyet, suyun çekilip gitmesi halinde tekrar akarsu getirecek kudretin kimde olduğunu sorarak su nimeti üzerinde düşünmeye çağırır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/30'da su çekildiğinde geri getirilmesi sorulan su nasıl nitelenir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Denizde tuzlu olan"
+          },
+          {
+            "id": "o2",
+            "text": "Yerden kaynayan"
+          },
+          {
+            "id": "o1",
+            "text": "Yağmur olarak yağan"
+          },
+          {
+            "id": "o3",
+            "text": "Göllerde biriken"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yerden kaynayan",
+        "explanation": "Âyet, suyun çekilip gitmesi halinde tekrar akarsu getirecek kudretin kimde olduğunu sorarak su nimeti üzerinde düşünmeye çağırır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/30; PDF sayfa 606 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Yerden kaynayan (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 763,
+      "sourceSequence": 615,
+      "id": "q43-insan-3",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnsân 76/3'te gösterilen yol karşısında insanın iki tutumu nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Gezmek veya yerleşmek"
+          },
+          {
+            "id": "o2",
+            "text": "Şükretmek veya nankörlük etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Konuşmak veya susmak"
+          },
+          {
+            "id": "o4",
+            "text": "Uyanmak veya uyumak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şükretmek veya nankörlük etmek",
+        "explanation": "Âyet, insana doğru yolun gösterildiğini; insanın bu imkân karşısında şükreden ya da nankör olabileceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnsân sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=76",
+            "locator": "İnsân 76/3",
+            "supports": "Âyet, insana doğru yolun gösterildiğini; insanın bu imkân karşısında şükreden ya da nankör olabileceğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnsân 76/3'te gösterilen yol karşısında insanın iki tutumu nedir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Şükretmek veya nankörlük etmek"
+          },
+          {
+            "id": "o1",
+            "text": "Sabretmek veya acele etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Bağışlamak veya karşılık vermek"
+          },
+          {
+            "id": "o4",
+            "text": "Danışmak veya tek başına karar vermek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şükretmek veya nankörlük etmek",
+        "explanation": "Âyet, insana doğru yolun gösterildiğini; insanın bu imkân karşısında şükreden ya da nankör olabileceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 76/3; PDF sayfa 624 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Şükretmek veya nankörlük etmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 764,
+      "sourceSequence": 616,
+      "id": "q43-insan-7",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnsân 76/7'de iyi kulların yerine getirdiği söz türü nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ticaret sözleşmeleri"
+          },
+          {
+            "id": "o2",
+            "text": "Adakları"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuk planları"
+          },
+          {
+            "id": "o4",
+            "text": "Günlük konuşmalar"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Adakları",
+        "explanation": "Âyette iyi kulların adaklarını yerine getirdikleri ve zorlukları her yana yayılan bir günden çekindikleri anlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnsân sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=7&mode=kuran-meal&sure=76",
+            "locator": "İnsân 76/7",
+            "supports": "Âyette iyi kulların adaklarını yerine getirdikleri ve zorlukları her yana yayılan bir günden çekindikleri anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnsân 76/7'de iyi kulların yerine getirdiği söz türü nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ticaret sözleşmeleri"
+          },
+          {
+            "id": "o2",
+            "text": "Adakları"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuk planları"
+          },
+          {
+            "id": "o4",
+            "text": "Günlük konuşmalar"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Adakları",
+        "explanation": "Âyette iyi kulların adaklarını yerine getirdikleri ve zorlukları her yana yayılan bir günden çekindikleri anlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnsân sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=7&mode=kuran-meal&sure=76",
+            "locator": "İnsân 76/7",
+            "supports": "Âyette iyi kulların adaklarını yerine getirdikleri ve zorlukları her yana yayılan bir günden çekindikleri anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 765,
+      "sourceSequence": 617,
+      "id": "q43-insan-8",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnsân 76/8'de yiyecek ikram edilenler arasında hangisi vardır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız zenginler"
+          },
+          {
+            "id": "o2",
+            "text": "Yetimler"
+          },
+          {
+            "id": "o3",
+            "text": "Sadece hükümdarlar"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece tüccarlar"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetimler",
+        "explanation": "Âyette kişinin kendisi de yiyeceği sevdiği halde yoksula, yetime ve esire ikram etmesi güzel davranış olarak anılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnsân sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=76",
+            "locator": "İnsân 76/8",
+            "supports": "Âyette kişinin kendisi de yiyeceği sevdiği halde yoksula, yetime ve esire ikram etmesi güzel davranış olarak anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnsân 76/8'de yoksul ve yetimle birlikte kim doyurulur?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Esir"
+          },
+          {
+            "id": "o1",
+            "text": "Komşu"
+          },
+          {
+            "id": "o3",
+            "text": "Yolcu"
+          },
+          {
+            "id": "o4",
+            "text": "Borçlu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Esir",
+        "explanation": "Âyette kişinin kendisi de yiyeceği sevdiği halde yoksula, yetime ve esire ikram etmesi güzel davranış olarak anılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 76/8; PDF sayfa 624 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Esir (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        },
+        {
+          "kind": "domain-mismatch",
+          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 766,
+      "sourceSequence": 618,
+      "id": "q43-insan-9",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnsân 76/9'da yardım edenlerin insanlardan beklemediği nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İyilik ve barış"
+          },
+          {
+            "id": "o2",
+            "text": "Karşılık ve teşekkür"
+          },
+          {
+            "id": "o3",
+            "text": "Emek ve sabır"
+          },
+          {
+            "id": "o4",
+            "text": "Bilgi ve hikmet"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Karşılık ve teşekkür",
+        "explanation": "Âyette yardımın Allah rızası için yapıldığı; yardım edilenlerden ne maddî karşılık ne de teşekkür beklendiği belirtilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnsân sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=76",
+            "locator": "İnsân 76/9",
+            "supports": "Âyette yardımın Allah rızası için yapıldığı; yardım edilenlerden ne maddî karşılık ne de teşekkür beklendiği belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnsân 76/9'da yardım edenlerin insanlardan beklemediği nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hediye ve ziyaret"
+          },
+          {
+            "id": "o3",
+            "text": "Ün ve makam"
+          },
+          {
+            "id": "o4",
+            "text": "Mal ve kazanç"
+          },
+          {
+            "id": "o2",
+            "text": "Karşılık ve teşekkür"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Karşılık ve teşekkür",
+        "explanation": "Âyette yardımın Allah rızası için yapıldığı; yardım edilenlerden ne maddî karşılık ne de teşekkür beklendiği belirtilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 76/9; PDF sayfa 625 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Karşılık ve teşekkür (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 767,
+      "sourceSequence": 619,
+      "id": "q43-insan-12",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnsân 76/12'de sabredenlere verileceği bildirilen ödül nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Dünyada hükümdarlık"
+          },
+          {
+            "id": "o2",
+            "text": "Cennet ve ipekli giysiler"
+          },
+          {
+            "id": "o3",
+            "text": "Sınırsız mal"
+          },
+          {
+            "id": "o4",
+            "text": "Sınavsız bir hayat"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cennet ve ipekli giysiler",
+        "explanation": "Âyette sabredenlerin cennet ve ipekli giysilerle ödüllendirileceği belirtilir; karşılığın âhiretle ilgili olduğu vurgulanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnsân sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=12&mode=kuran-meal&sure=76",
+            "locator": "İnsân 76/12",
+            "supports": "Âyette sabredenlerin cennet ve ipekli giysilerle ödüllendirileceği belirtilir; karşılığın âhiretle ilgili olduğu vurgulanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnsân 76/12'de sabredenlere verileceği bildirilen ödül nedir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Rahmet ve doğru yola erişme"
+          },
+          {
+            "id": "o4",
+            "text": "Güvenlik ve korkudan kurtulma"
+          },
+          {
+            "id": "o2",
+            "text": "Cennet ve ipekli giysiler"
+          },
+          {
+            "id": "o1",
+            "text": "Bağışlanma ve güzel rızık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cennet ve ipekli giysiler",
+        "explanation": "Âyette sabredenlerin cennet ve ipekli giysilerle ödüllendirileceği belirtilir; karşılığın âhiretle ilgili olduğu vurgulanır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 76/12; PDF sayfa 625 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Cennet ve ipekli giysiler (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 768,
+      "sourceSequence": 620,
+      "id": "q43-nebe-6",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nebe 78/6-7'de dağlar neye benzetilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yıldızlara"
+          },
+          {
+            "id": "o2",
+            "text": "Kazıklara"
+          },
+          {
+            "id": "o3",
+            "text": "Kuş kanatlarına"
+          },
+          {
+            "id": "o4",
+            "text": "Bulutlara"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kazıklara",
+        "explanation": "Nebe 78/6-7'de yeryüzü bir döşek, dağlar ise kazıklar olarak anlatılır. Böylece yaratılıştaki düzen hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Nebe sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=6&mode=kuran-meal&sure=78",
+            "locator": "Nebe 78/6-7",
+            "supports": "Nebe 78/6-7'de yeryüzü bir döşek, dağlar ise kazıklar olarak anlatılır. Böylece yaratılıştaki düzen hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nebe 78/6-7'de dağlar neye benzetilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Direklere"
+          },
+          {
+            "id": "o3",
+            "text": "Köklere"
+          },
+          {
+            "id": "o4",
+            "text": "Sütunlara"
+          },
+          {
+            "id": "o2",
+            "text": "Kazıklara"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kazıklara",
+        "explanation": "Nebe 78/6-7'de yeryüzü bir döşek, dağlar ise kazıklar olarak anlatılır. Böylece yaratılıştaki düzen hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 78/6; PDF sayfa 628 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Kazıklara (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 769,
+      "sourceSequence": 621,
+      "id": "q43-nebe-8",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nebe 78/8'e göre insanlar nasıl yaratılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kanatlı olarak"
+          },
+          {
+            "id": "o2",
+            "text": "Çiftler hâlinde"
+          },
+          {
+            "id": "o3",
+            "text": "Tek bir nesil olarak"
+          },
+          {
+            "id": "o4",
+            "text": "Aynı yaşta"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Çiftler hâlinde",
+        "explanation": "Âyette insanların çiftler hâlinde yaratıldığı belirtilir; insanın var oluşu ve yaratılış düzeni hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Nebe sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=78",
+            "locator": "Nebe 78/8",
+            "supports": "Âyette insanların çiftler hâlinde yaratıldığı belirtilir; insanın var oluşu ve yaratılış düzeni hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nebe 78/8'e göre insanlar nasıl yaratılmıştır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Birbirinden farklı renklerde"
+          },
+          {
+            "id": "o2",
+            "text": "Çiftler hâlinde"
+          },
+          {
+            "id": "o1",
+            "text": "Farklı dilleri konuşur hâlde"
+          },
+          {
+            "id": "o3",
+            "text": "Birbirini tanıyan topluluklar hâlinde"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Çiftler hâlinde",
+        "explanation": "Âyette insanların çiftler hâlinde yaratıldığı belirtilir; insanın var oluşu ve yaratılış düzeni hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 78/8; PDF sayfa 628 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Çiftler hâlinde (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 770,
+      "sourceSequence": 622,
+      "id": "q43-nebe-9",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nebe 78/9'da uykunun ne işe yaradığı anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ticarete"
+          },
+          {
+            "id": "o2",
+            "text": "Dinlenmeye"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuğa"
+          },
+          {
+            "id": "o4",
+            "text": "Konuşmaya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dinlenmeye",
+        "explanation": "Âyette uyku bir dinlenme vesilesi olarak tanıtılır; insana verilen düzenli dinlenme nimeti hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Nebe sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=78",
+            "locator": "Nebe 78/9",
+            "supports": "Âyette uyku bir dinlenme vesilesi olarak tanıtılır; insana verilen düzenli dinlenme nimeti hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nebe 78/9'da uykunun ne işe yaradığı anlatılır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Dinlenmeye"
+          },
+          {
+            "id": "o1",
+            "text": "Öğrenmeye"
+          },
+          {
+            "id": "o3",
+            "text": "Hatırlamaya"
+          },
+          {
+            "id": "o4",
+            "text": "Gözlemlemeye"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dinlenmeye",
+        "explanation": "Âyette uyku bir dinlenme vesilesi olarak tanıtılır; insana verilen düzenli dinlenme nimeti hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 78/9; PDF sayfa 628 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Dinlenmeye (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 771,
+      "sourceSequence": 623,
+      "id": "q43-nebe-10",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nebe 78/10'da gece hangi imgeyle anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bahçe"
+          },
+          {
+            "id": "o2",
+            "text": "Örtü"
+          },
+          {
+            "id": "o3",
+            "text": "Kitap"
+          },
+          {
+            "id": "o4",
+            "text": "Deniz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Örtü",
+        "explanation": "Âyette gece bir örtü olarak tasvir edilir; bu ifade geceyle ilişkili sükûnet ve korunma anlamını hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Nebe sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=10&mode=kuran-meal&sure=78",
+            "locator": "Nebe 78/10",
+            "supports": "Âyette gece bir örtü olarak tasvir edilir; bu ifade geceyle ilişkili sükûnet ve korunma anlamını hatırlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nebe 78/10'da gece hangi imgeyle anlatılır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Örtü"
+          },
+          {
+            "id": "o1",
+            "text": "Döşek"
+          },
+          {
+            "id": "o3",
+            "text": "Kandil"
+          },
+          {
+            "id": "o4",
+            "text": "Tavan"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Örtü",
+        "explanation": "Âyette gece bir örtü olarak tasvir edilir; bu ifade geceyle ilişkili sükûnet ve korunma anlamını hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 78/10; PDF sayfa 628 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Örtü (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 772,
+      "sourceSequence": 624,
+      "id": "q43-abese-1",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Abese sûresinin ilk âyetindeki 'abese' fiilinin anlamı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sevinçle gülümsemek"
+          },
+          {
+            "id": "o2",
+            "text": "Yüzünü ekşitmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuğa çıkmak"
+          },
+          {
+            "id": "o4",
+            "text": "Söz vermek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yüzünü ekşitmek",
+        "explanation": "Abese 80/1'de geçen fiil 'yüzünü ekşitti' anlamını taşır; sûrenin başlangıcı insanlara gösterilen özenle ilgilidir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/1",
+            "supports": "Abese 80/1'de geçen fiil 'yüzünü ekşitti' anlamını taşır; sûrenin başlangıcı insanlara gösterilen özenle ilgilidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Abese sûresinin ilk âyetindeki 'abese' fiilinin anlamı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sevinçle gülümsemek"
+          },
+          {
+            "id": "o2",
+            "text": "Yüzünü ekşitmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuğa çıkmak"
+          },
+          {
+            "id": "o4",
+            "text": "Söz vermek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yüzünü ekşitmek",
+        "explanation": "Abese 80/1'de geçen fiil 'yüzünü ekşitti' anlamını taşır; sûrenin başlangıcı insanlara gösterilen özenle ilgilidir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/1",
+            "supports": "Abese 80/1'de geçen fiil 'yüzünü ekşitti' anlamını taşır; sûrenin başlangıcı insanlara gösterilen özenle ilgilidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 773,
+      "sourceSequence": 625,
+      "id": "q43-abese-24",
+      "category": "quran_dualar",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Abese 80/24'te insandan neye bakıp düşünmesi istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Gittiği ülkeye"
+          },
+          {
+            "id": "o2",
+            "text": "Yediği yiyeceğe"
+          },
+          {
+            "id": "o3",
+            "text": "Evinin şekline"
+          },
+          {
+            "id": "o4",
+            "text": "Giysisinin rengine"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yediği yiyeceğe",
+        "explanation": "Âyet insanı yediği yiyeceği düşünmeye çağırır; devamında su, toprak ve bitkilerin yetişmesi anlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=24&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/24",
+            "supports": "Âyet insanı yediği yiyeceği düşünmeye çağırır; devamında su, toprak ve bitkilerin yetişmesi anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Abese 80/24'te insandan neye bakıp düşünmesi istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Gittiği ülkeye"
+          },
+          {
+            "id": "o2",
+            "text": "Yediği yiyeceğe"
+          },
+          {
+            "id": "o3",
+            "text": "Evinin şekline"
+          },
+          {
+            "id": "o4",
+            "text": "Giysisinin rengine"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yediği yiyeceğe",
+        "explanation": "Âyet insanı yediği yiyeceği düşünmeye çağırır; devamında su, toprak ve bitkilerin yetişmesi anlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=24&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/24",
+            "supports": "Âyet insanı yediği yiyeceği düşünmeye çağırır; devamında su, toprak ve bitkilerin yetişmesi anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 774,
+      "sourceSequence": 626,
+      "id": "q43-abese-25",
+      "category": "quran_dualar",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Abese 80/25'te hangi nimet indirildiği söylenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Altın yağmuru"
+          },
+          {
+            "id": "o2",
+            "text": "Bolca su"
+          },
+          {
+            "id": "o3",
+            "text": "Gümüş"
+          },
+          {
+            "id": "o4",
+            "text": "Tuz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bolca su",
+        "explanation": "Âyet bolca su indirildiğini bildirir; izleyen âyetler toprağın yarılması ve çeşitli ürünlerin yetişmesini sıralar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=25&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/25",
+            "supports": "Âyet bolca su indirildiğini bildirir; izleyen âyetler toprağın yarılması ve çeşitli ürünlerin yetişmesini sıralar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Abese 80/25'te hangi nimet indirildiği söylenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Altın yağmuru"
+          },
+          {
+            "id": "o2",
+            "text": "Bolca su"
+          },
+          {
+            "id": "o3",
+            "text": "Gümüş"
+          },
+          {
+            "id": "o4",
+            "text": "Tuz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bolca su",
+        "explanation": "Âyet bolca su indirildiğini bildirir; izleyen âyetler toprağın yarılması ve çeşitli ürünlerin yetişmesini sıralar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=25&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/25",
+            "supports": "Âyet bolca su indirildiğini bildirir; izleyen âyetler toprağın yarılması ve çeşitli ürünlerin yetişmesini sıralar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 775,
+      "sourceSequence": 627,
+      "id": "q43-abese-29",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Abese 80/29'da hangi iki ağaç birlikte anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çam ve ladin"
+          },
+          {
+            "id": "o2",
+            "text": "Zeytin ve hurma"
+          },
+          {
+            "id": "o3",
+            "text": "Söğüt ve kavak"
+          },
+          {
+            "id": "o4",
+            "text": "Meşe ve kestane"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zeytin ve hurma",
+        "explanation": "Âyet, insanın faydalandığı nimetler arasında zeytin ve hurma ağaçlarını özellikle sayar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/29",
+            "supports": "Âyet, insanın faydalandığı nimetler arasında zeytin ve hurma ağaçlarını özellikle sayar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Abese 80/29'da hangi iki ağaç birlikte anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çam ve ladin"
+          },
+          {
+            "id": "o2",
+            "text": "Zeytin ve hurma"
+          },
+          {
+            "id": "o3",
+            "text": "Söğüt ve kavak"
+          },
+          {
+            "id": "o4",
+            "text": "Meşe ve kestane"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zeytin ve hurma",
+        "explanation": "Âyet, insanın faydalandığı nimetler arasında zeytin ve hurma ağaçlarını özellikle sayar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=kuran-meal&sure=80",
+            "locator": "Abese 80/29",
+            "supports": "Âyet, insanın faydalandığı nimetler arasında zeytin ve hurma ağaçlarını özellikle sayar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 776,
+      "sourceSequence": 629,
+      "id": "q43-mutaffifin-1",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mutaffifîn 83/1'de hangi haksız davranış kınanır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Misafir ağırlama"
+          },
+          {
+            "id": "o2",
+            "text": "Ölçü ve tartıda eksiltme"
+          },
+          {
+            "id": "o3",
+            "text": "Emaneti koruma"
+          },
+          {
+            "id": "o4",
+            "text": "Yoksula yardım etme"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ölçü ve tartıda eksiltme",
+        "explanation": "Âyet, ölçü ve tartıda eksiltme yaparak başkalarının hakkını ihlâl edenleri açık biçimde kınar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mutaffifîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=83",
+            "locator": "Mutaffifîn 83/1",
+            "supports": "Âyet, ölçü ve tartıda eksiltme yaparak başkalarının hakkını ihlâl edenleri açık biçimde kınar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mutaffifîn 83/1'de hangi haksız davranış kınanır?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Şahitlikte gerçeği gizleme"
+          },
+          {
+            "id": "o4",
+            "text": "Yetim malını haksızca yeme"
+          },
+          {
+            "id": "o2",
+            "text": "Ölçü ve tartıda eksiltme"
+          },
+          {
+            "id": "o1",
+            "text": "Yapılan yardımı başa kakma"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ölçü ve tartıda eksiltme",
+        "explanation": "Âyet, ölçü ve tartıda eksiltme yaparak başkalarının hakkını ihlâl edenleri açık biçimde kınar.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 83/1; PDF sayfa 636 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Ölçü ve tartıda eksiltme (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 777,
+      "sourceSequence": 630,
+      "id": "q43-mutaffifin-2",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mutaffifîn 83/2-3'te hile yapan kişinin çifte standardı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Herkese eşit ölçü vermek"
+          },
+          {
+            "id": "o2",
+            "text": "Alırken tam ölçüp verirken eksiltmek"
+          },
+          {
+            "id": "o3",
+            "text": "Alırken ve verirken adil olmak"
+          },
+          {
+            "id": "o4",
+            "text": "Ölçü araçlarını doğru kullanmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Alırken tam ölçüp verirken eksiltmek",
+        "explanation": "Âyetler, kendi alacağını tam alıp başkasına verirken ölçüyü eksilten kişinin adaletsiz davranışını örnek verir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mutaffifîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=2&mode=kuran-meal&sure=83",
+            "locator": "Mutaffifîn 83/2-3",
+            "supports": "Âyetler, kendi alacağını tam alıp başkasına verirken ölçüyü eksilten kişinin adaletsiz davranışını örnek verir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mutaffifîn 83/2-3'te hile yapan kişinin çifte standardı nedir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Alırken tam ölçü isteyip verirken eksiltmek"
+          },
+          {
+            "id": "o1",
+            "text": "Borcu zamanında ödemeyip vadeyi uzatmak"
+          },
+          {
+            "id": "o3",
+            "text": "Aynı mala farklı pazarlarda fiyat biçmek"
+          },
+          {
+            "id": "o4",
+            "text": "Kazancı arttıkça yardımı azaltmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Alırken tam ölçü isteyip verirken eksiltmek",
+        "explanation": "Âyetler, kendi alacağını tam alıp başkasına verirken ölçüyü eksilten kişinin adaletsiz davranışını örnek verir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 83/2; PDF sayfa 636 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Alırken tam ölçü isteyip verirken eksiltmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 778,
+      "sourceSequence": 631,
+      "id": "q43-mutaffifin-4",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mutaffifîn 83/4-6'da ölçüde hile yapanlara ne hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir panayır günü"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'ın huzuruna çıkacakları hesap günü"
+          },
+          {
+            "id": "o3",
+            "text": "Bir ticaret bayramı"
+          },
+          {
+            "id": "o4",
+            "text": "Hasat vakti"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'ın huzuruna çıkacakları hesap günü",
+        "explanation": "Âyetler, insanların âlemlerin Rabbi huzurunda duracağı büyük günü hatırlatarak ticarette dürüstlüğü vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mutaffifîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=kuran-meal&sure=83",
+            "locator": "Mutaffifîn 83/4-6",
+            "supports": "Âyetler, insanların âlemlerin Rabbi huzurunda duracağı büyük günü hatırlatarak ticarette dürüstlüğü vurgular.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mutaffifîn 83/4-6'da ölçüde hile yapanlara ne hatırlatılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Bayram sevincinin paylaşılacağı gün"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'ın huzuruna çıkılacak gün"
+          },
+          {
+            "id": "o1",
+            "text": "Cuma namazı için toplanılacak gün"
+          },
+          {
+            "id": "o3",
+            "text": "Arefe vakfesinde beklenilecek gün"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'ın huzuruna çıkılacak gün",
+        "explanation": "Âyetler, insanların âlemlerin Rabbi huzurunda duracağı büyük günü hatırlatarak ticarette dürüstlüğü vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 83/4; PDF sayfa 636 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Allah'ın huzuruna çıkılacak gün (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "length-outlier",
+          "detail": "Tek belirgin uzun/kısa seçenek"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 779,
+      "sourceSequence": 632,
+      "id": "q43-mutaffifin-9",
+      "category": "iman_ahlak",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mutaffifîn 83/7-9'da 'siccîn' için nasıl bir açıklama yapılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizlerdeki bir ada"
+          },
+          {
+            "id": "o2",
+            "text": "Amellerin kaydedildiği bir defter"
+          },
+          {
+            "id": "o3",
+            "text": "Mekke'deki bir pazar"
+          },
+          {
+            "id": "o4",
+            "text": "Gökteki bir yıldız"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Amellerin kaydedildiği bir defter",
+        "explanation": "Âyetlerde günahkârların kaydının siccînde olduğu söylenir ve bu, amellerin yazıldığı bir defter olarak açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Mutaffifîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=83",
+            "locator": "Mutaffifîn 83/7-9",
+            "supports": "Âyetlerde günahkârların kaydının siccînde olduğu söylenir ve bu, amellerin yazıldığı bir defter olarak açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mutaffifîn 83/9'da kitap/kayıt için hangi niteleme kullanılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Yeniden düzenlenmiş"
+          },
+          {
+            "id": "o2",
+            "text": "Yazılıp kayda geçirilmiş"
+          },
+          {
+            "id": "o1",
+            "text": "Mühürlenip kapatılmış"
+          },
+          {
+            "id": "o3",
+            "text": "Silinip yok edilmiş"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yazılıp kayda geçirilmiş",
+        "explanation": "Mutaffifîn 83/9'da kayıt, yazılıp kayda geçirilmiş olarak nitelenir. Soru siccînin mahiyeti hakkındaki farklı yorumları tek bir hükme indirgemez.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 83/9; PDF sayfa 637 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Yazılıp kayda geçirilmiş (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 780,
+      "sourceSequence": 633,
+      "id": "q44-leyl-5",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Leyl 92/5'te olumlu tutum olarak hangi iki davranış birlikte anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Cimrilik ve kibir"
+          },
+          {
+            "id": "o2",
+            "text": "Cömert davranmak ve sakınmak"
+          },
+          {
+            "id": "o3",
+            "text": "Gösteriş ve israf"
+          },
+          {
+            "id": "o4",
+            "text": "Yalan ve hile"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cömert davranmak ve sakınmak",
+        "explanation": "Leyl 92/5, Allah'a karşı sorumluluk taşıyarak cömert davranan insanı anlatır; sonraki âyetlerde bu kişiye iyilik yolunun kolaylaştırılacağı bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Leyl sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=5&mode=kuran-meal&sure=92",
+            "locator": "Leyl 92/5",
+            "supports": "Leyl 92/5, Allah'a karşı sorumluluk taşıyarak cömert davranan insanı anlatır; sonraki âyetlerde bu kişiye iyilik yolunun kolaylaştırılacağı bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Leyl 92/5'te olumlu tutum olarak hangi iki davranış birlikte anılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Bağışlamak ve uzlaşmak"
+          },
+          {
+            "id": "o2",
+            "text": "Vermek ve Allah'tan sakınmak"
+          },
+          {
+            "id": "o1",
+            "text": "Sabretmek ve namaz kılmak"
+          },
+          {
+            "id": "o3",
+            "text": "Anmak ve şükretmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Vermek ve Allah'tan sakınmak",
+        "explanation": "Leyl 92/5, Allah'a karşı sorumluluk taşıyarak cömert davranan insanı anlatır; sonraki âyetlerde bu kişiye iyilik yolunun kolaylaştırılacağı bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 92/5; PDF sayfa 647 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Vermek ve Allah'tan sakınmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 781,
+      "sourceSequence": 634,
+      "id": "q44-leyl-8",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Leyl 92/8'de olumsuz örnek olarak hangi iki tutum eleştirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Paylaşmak ve şükretmek"
+          },
+          {
+            "id": "o2",
+            "text": "Cimrilik ve kendini ihtiyaçsız görmek"
+          },
+          {
+            "id": "o3",
+            "text": "Sabır ve merhamet"
+          },
+          {
+            "id": "o4",
+            "text": "Emek ve dayanışma"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cimrilik ve kendini ihtiyaçsız görmek",
+        "explanation": "Leyl 92/8'de cimrilik edip kendisini ihtiyaçsız sayan kişinin tutumu eleştirilir; sonraki âyetlerde bunun sonucu açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Leyl sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=92",
+            "locator": "Leyl 92/8",
+            "supports": "Leyl 92/8'de cimrilik edip kendisini ihtiyaçsız sayan kişinin tutumu eleştirilir; sonraki âyetlerde bunun sonucu açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Leyl 92/8'de olumsuz örnek olarak hangi iki tutum eleştirilir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Ölçüde eksiltmek ve emanete ihanet etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Cimrilik etmek ve kendini ihtiyaçsız görmek"
+          },
+          {
+            "id": "o1",
+            "text": "Gösteriş yapmak ve yardımı başa kakmak"
+          },
+          {
+            "id": "o3",
+            "text": "Gizli hâlleri araştırmak ve arkadan çekiştirmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cimrilik etmek ve kendini ihtiyaçsız görmek",
+        "explanation": "Leyl 92/8'de cimrilik edip kendisini ihtiyaçsız sayan kişinin tutumu eleştirilir; sonraki âyetlerde bunun sonucu açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 92/8; PDF sayfa 647 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Cimrilik etmek ve kendini ihtiyaçsız görmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 782,
+      "sourceSequence": 635,
+      "id": "q44-leyl-11",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Leyl 92/11'e göre insan düştüğü zaman ona fayda vermeyecek şey nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İyilikleri"
+          },
+          {
+            "id": "o2",
+            "text": "Biriktirdiği malı"
+          },
+          {
+            "id": "o3",
+            "text": "Tövbesi"
+          },
+          {
+            "id": "o4",
+            "text": "Öğrendiği ilim"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Biriktirdiği malı",
+        "explanation": "Leyl 92/11, dünyada biriktirilen malın kişinin kaçınılmaz sonuyla karşılaştığında kurtuluş sağlamayacağını hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Leyl sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=11&mode=kuran-meal&sure=92",
+            "locator": "Leyl 92/11",
+            "supports": "Leyl 92/11, dünyada biriktirilen malın kişinin kaçınılmaz sonuyla karşılaştığında kurtuluş sağlamayacağını hatırlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Leyl 92/11'e göre insan düştüğü zaman ona fayda vermeyecek şey nedir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Gücü"
+          },
+          {
+            "id": "o2",
+            "text": "Malı"
+          },
+          {
+            "id": "o1",
+            "text": "Yakınları"
+          },
+          {
+            "id": "o3",
+            "text": "Makamı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Malı",
+        "explanation": "Leyl 92/11, dünyada biriktirilen malın kişinin kaçınılmaz sonuyla karşılaştığında kurtuluş sağlamayacağını hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 92/11; PDF sayfa 647 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Malı (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 783,
+      "sourceSequence": 636,
+      "id": "q44-leyl-12",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Leyl 92/12'ye göre doğru yolu göstermek kime aittir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tüccarlara"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'a"
+          },
+          {
+            "id": "o3",
+            "text": "Devletlere"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece zenginlere"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'a",
+        "explanation": "Leyl 92/12, doğru yolun gösterilmesini Allah'a nispet eder; insanın yönelişi ve sorumluluğu sonraki âyetlerle bağlantılıdır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Leyl sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=12&mode=kuran-meal&sure=92",
+            "locator": "Leyl 92/12",
+            "supports": "Leyl 92/12, doğru yolun gösterilmesini Allah'a nispet eder; insanın yönelişi ve sorumluluğu sonraki âyetlerle bağlantılıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Leyl 92/12'de Allah'ın kendisine ait olduğunu bildirdiği görev hangisidir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Sûra üflemek"
+          },
+          {
+            "id": "o2",
+            "text": "Doğru yolu göstermek"
+          },
+          {
+            "id": "o1",
+            "text": "Amelleri yazmak"
+          },
+          {
+            "id": "o3",
+            "text": "Vahyi ulaştırmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Doğru yolu göstermek",
+        "explanation": "Leyl 92/12, doğru yolun gösterilmesini Allah'a nispet eder; insanın yönelişi ve sorumluluğu sonraki âyetlerle bağlantılıdır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 92/12; PDF sayfa 647 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Doğru yolu göstermek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 784,
+      "sourceSequence": 637,
+      "id": "q44-leyl-18",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Leyl 92/17-18'de ateşten uzak tutulacak kişinin malını vermesindeki amaç nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şöhret kazanmak"
+          },
+          {
+            "id": "o2",
+            "text": "Arınmak"
+          },
+          {
+            "id": "o3",
+            "text": "Borç vermek"
+          },
+          {
+            "id": "o4",
+            "text": "Daha çok mal biriktirmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Arınmak",
+        "explanation": "Leyl 92/17-18, takvâ sahibinin malını Allah yolunda vererek arınmayı amaçladığını ve bu sebeple ateşten uzak tutulacağını belirtir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Leyl sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=18&mode=kuran-meal&sure=92",
+            "locator": "Leyl 92/17-18",
+            "supports": "Leyl 92/17-18, takvâ sahibinin malını Allah yolunda vererek arınmayı amaçladığını ve bu sebeple ateşten uzak tutulacağını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Leyl 92/17-18'de ateşten uzak tutulacak kişinin malını vermesindeki amaç nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şifa bulmak"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuk etmek"
+          },
+          {
+            "id": "o4",
+            "text": "Borçlanmak"
+          },
+          {
+            "id": "o2",
+            "text": "Arınmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Arınmak",
+        "explanation": "Leyl 92/17-18, takvâ sahibinin malını Allah yolunda vererek arınmayı amaçladığını ve bu sebeple ateşten uzak tutulacağını belirtir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 92/18; PDF sayfa 648 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Arınmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 785,
+      "sourceSequence": 638,
+      "id": "q44-leyl-20",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Leyl 92/19-20'ye göre iyilik yapan kişinin öncelikli amacı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Herkesten alkış almak"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbinin rızasını istemek"
+          },
+          {
+            "id": "o3",
+            "text": "Ün kazanmak"
+          },
+          {
+            "id": "o4",
+            "text": "Bir ödül belgesi edinmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rabbinin rızasını istemek",
+        "explanation": "Leyl 92/19-20, gerçek iyiliğin insanlardan karşılık almak için değil, yüce Rabbin rızasını kazanmak için yapılması gerektiğini vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Leyl sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=20&mode=kuran-meal&sure=92",
+            "locator": "Leyl 92/19-20",
+            "supports": "Leyl 92/19-20, gerçek iyiliğin insanlardan karşılık almak için değil, yüce Rabbin rızasını kazanmak için yapılması gerektiğini vurgular.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Leyl 92/19-20'ye göre iyilik yapan kişinin öncelikli amacı nedir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Bir anlaşmayı yerine getirmek"
+          },
+          {
+            "id": "o4",
+            "text": "Kendisine yapılan yardımı iade etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbinin rızasını istemek"
+          },
+          {
+            "id": "o1",
+            "text": "Yaptığı bir iyiliğin karşılığını almak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rabbinin rızasını istemek",
+        "explanation": "Leyl 92/19-20, gerçek iyiliğin insanlardan karşılık almak için değil, yüce Rabbin rızasını kazanmak için yapılması gerektiğini vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 92/20; PDF sayfa 648 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Rabbinin rızasını istemek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 786,
+      "sourceSequence": 639,
+      "id": "q44-duha-3",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Duhâ 93/3'te Hz. Peygamber'e hangi güvence verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Peygamberliğinin sona erdiği"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbinin onu bırakmadığı ve darılmadığı"
+          },
+          {
+            "id": "o3",
+            "text": "Kimsenin onu dinlemeyeceği"
+          },
+          {
+            "id": "o4",
+            "text": "Her şeyin hemen biteceği"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rabbinin onu bırakmadığı ve darılmadığı",
+        "explanation": "Duhâ 93/3, Hz. Peygamber'in terk edilmediğini ve Rabb'inin ona darılmadığını bildirir; bu ifade bir teselli ve güvence niteliğindedir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=93",
+            "locator": "Duhâ 93/3",
+            "supports": "Duhâ 93/3, Hz. Peygamber'in terk edilmediğini ve Rabb'inin ona darılmadığını bildirir; bu ifade bir teselli ve güvence niteliğindedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Duhâ 93/3'te Hz. Peygamber'e hangi güvence verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Peygamberliğinin sona erdiği"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbinin onu bırakmadığı ve darılmadığı"
+          },
+          {
+            "id": "o3",
+            "text": "Kimsenin onu dinlemeyeceği"
+          },
+          {
+            "id": "o4",
+            "text": "Her şeyin hemen biteceği"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rabbinin onu bırakmadığı ve darılmadığı",
+        "explanation": "Duhâ 93/3, Hz. Peygamber'in terk edilmediğini ve Rabb'inin ona darılmadığını bildirir; bu ifade bir teselli ve güvence niteliğindedir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=93",
+            "locator": "Duhâ 93/3",
+            "supports": "Duhâ 93/3, Hz. Peygamber'in terk edilmediğini ve Rabb'inin ona darılmadığını bildirir; bu ifade bir teselli ve güvence niteliğindedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 787,
+      "sourceSequence": 641,
+      "id": "q44-duha-6",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Duhâ 93/6'da Hz. Peygamber'in hangi hâlde bulunup barındırıldığı hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hükümdar olarak"
+          },
+          {
+            "id": "o2",
+            "text": "Yetim olarak"
+          },
+          {
+            "id": "o3",
+            "text": "Yolcu komutan olarak"
+          },
+          {
+            "id": "o4",
+            "text": "Denizci olarak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetim olarak",
+        "explanation": "Duhâ 93/6'da Hz. Peygamber'in yetim oluşu ve Allah'ın kendisine barınma imkânı sağlaması hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=6&mode=kuran-meal&sure=93",
+            "locator": "Duhâ 93/6",
+            "supports": "Duhâ 93/6'da Hz. Peygamber'in yetim oluşu ve Allah'ın kendisine barınma imkânı sağlaması hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Duhâ 93/6'da Hz. Peygamber'in hangi hâlde bulunup barındırıldığı hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hükümdar olarak"
+          },
+          {
+            "id": "o2",
+            "text": "Yetim olarak"
+          },
+          {
+            "id": "o3",
+            "text": "Yolcu komutan olarak"
+          },
+          {
+            "id": "o4",
+            "text": "Denizci olarak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetim olarak",
+        "explanation": "Duhâ 93/6'da Hz. Peygamber'in yetim oluşu ve Allah'ın kendisine barınma imkânı sağlaması hatırlatılır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=6&mode=kuran-meal&sure=93",
+            "locator": "Duhâ 93/6",
+            "supports": "Duhâ 93/6'da Hz. Peygamber'in yetim oluşu ve Allah'ın kendisine barınma imkânı sağlaması hatırlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 788,
+      "sourceSequence": 642,
+      "id": "q44-duha-9",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Duhâ 93/9'da yetimlere karşı hangi davranış yasaklanır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Onlara yardım etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Onları ezmek"
+          },
+          {
+            "id": "o3",
+            "text": "Haklarını gözetmek"
+          },
+          {
+            "id": "o4",
+            "text": "Onlara merhamet etmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Onları ezmek",
+        "explanation": "Duhâ 93/9, yetimin ezilmemesini öğütler. Yetimlerin haklarını ve onurunu koruma, sûrenin toplumsal mesajlarından biridir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=93",
+            "locator": "Duhâ 93/9",
+            "supports": "Duhâ 93/9, yetimin ezilmemesini öğütler. Yetimlerin haklarını ve onurunu koruma, sûrenin toplumsal mesajlarından biridir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Duhâ 93/9'da yetimlere karşı hangi davranış yasaklanır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Yetimi ezmek"
+          },
+          {
+            "id": "o1",
+            "text": "Yardımı başa kakmak"
+          },
+          {
+            "id": "o3",
+            "text": "Yetime yalan söylemek"
+          },
+          {
+            "id": "o4",
+            "text": "Yetim hakkında kötü lakap kullanmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetimi ezmek",
+        "explanation": "Duhâ 93/9, yetimin ezilmemesini öğütler. Yetimlerin haklarını ve onurunu koruma, sûrenin toplumsal mesajlarından biridir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 93/9; PDF sayfa 649 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Yetimi ezmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 789,
+      "sourceSequence": 643,
+      "id": "q44-duha-10",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Duhâ 93/10'da yardım isteyene karşı hangi davranıştan sakınılması öğütlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yardım yollarını araştırmak"
+          },
+          {
+            "id": "o2",
+            "text": "Azarlamak"
+          },
+          {
+            "id": "o3",
+            "text": "Nazikçe dinlemek"
+          },
+          {
+            "id": "o4",
+            "text": "İlgilenmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Azarlamak",
+        "explanation": "Duhâ 93/10'da isteyeni azarlamamak ve incitmemek öğütlenir. Diyanet'in Kur'an Yolu tefsiri, ihtiyaç sahibini imkânlar ölçüsünde destekleme ve kötü karşılamama mesajını vurgular.",
+        "sources": [
+          {
+            "title": "Diyanet İşleri Başkanlığı — Duhâ 93/9-11 Kur'an Yolu Tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Duh%C3%A2-suresi/6088/9-11-ayet-tefsiri",
+            "locator": "Duhâ 93/10, Kur'an Yolu tefsiri",
+            "supports": "El açıp isteyeni azarlamama, incitmeme ve imkân ölçüsünde yardımcı olma öğütlenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Duhâ 93/10'da yardım isteyene karşı hangi davranıştan sakınılması öğütlenir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Yardım isteyeni boş çevirmek"
+          },
+          {
+            "id": "o1",
+            "text": "Yardımı başa kakmak"
+          },
+          {
+            "id": "o3",
+            "text": "Yardım isteyenin sırrını yaymak"
+          },
+          {
+            "id": "o4",
+            "text": "Verilen yardım sözünden dönmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yardım isteyeni boş çevirmek",
+        "explanation": "Kur’an Yolu meâlinde Duhâ 93/10, el açıp isteyeni boş çevirmemeyi öğütler. Şık, bu kaynakta kullanılan ifadeye göre düzenlenmiştir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 93/10; PDF sayfa 649 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Yardım isteyeni boş çevirmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 790,
+      "sourceSequence": 644,
+      "id": "q44-duha-11",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Duhâ 93/11'de verilen nimetlere karşı nasıl bir tutum istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kibirlenmek"
+          },
+          {
+            "id": "o2",
+            "text": "Şükranla anmak"
+          },
+          {
+            "id": "o3",
+            "text": "Nankörlük etmek"
+          },
+          {
+            "id": "o4",
+            "text": "Nimetleri küçümsemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şükranla anmak",
+        "explanation": "Duhâ 93/11, Rabbinin lütuflarını şükranla anmayı emreder; böylece sûrenin teselli ve sorumluluk mesajı tamamlanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=11&mode=kuran-meal&sure=93",
+            "locator": "Duhâ 93/11",
+            "supports": "Duhâ 93/11, Rabbinin lütuflarını şükranla anmayı emreder; böylece sûrenin teselli ve sorumluluk mesajı tamamlanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Duhâ 93/11'de verilen nimetlere karşı nasıl bir tutum istenir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Nimeti yazıyla kaydetmek"
+          },
+          {
+            "id": "o4",
+            "text": "Nimeti başkasıyla takas etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Nimeti anıp dile getirmek"
+          },
+          {
+            "id": "o1",
+            "text": "Nimetin bir kısmını borç vermek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nimeti anıp dile getirmek",
+        "explanation": "Duhâ 93/11, Rabbinin lütuflarını şükranla anmayı emreder; böylece sûrenin teselli ve sorumluluk mesajı tamamlanır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 93/11; PDF sayfa 649 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Nimeti anıp dile getirmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "tone-3-negative",
+          "detail": "Üç olumsuz, bir olumlu sözcük kümesi"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 791,
+      "sourceSequence": 645,
+      "id": "q44-insirah-1",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnşirâh 94/1'de Hz. Peygamber'e verilen hangi manevî ferahlık hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizlerin yarılması"
+          },
+          {
+            "id": "o2",
+            "text": "Göğsünün genişletilmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Yüksek dağların kaldırılması"
+          },
+          {
+            "id": "o4",
+            "text": "Zamanda yolculuk etmesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Göğsünün genişletilmesi",
+        "explanation": "İnşirâh 94/1, Resûlullah'ın gönlünün genişletilmesini hatırlatarak peygamberlik görevinde kendisine verilen mânevî desteği anlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/1",
+            "supports": "İnşirâh 94/1, Resûlullah'ın gönlünün genişletilmesini hatırlatarak peygamberlik görevinde kendisine verilen mânevî desteği anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnşirâh 94/1'de Hz. Peygamber'e verilen hangi manevî ferahlık hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizlerin yarılması"
+          },
+          {
+            "id": "o2",
+            "text": "Göğsünün genişletilmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Yüksek dağların kaldırılması"
+          },
+          {
+            "id": "o4",
+            "text": "Zamanda yolculuk etmesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Göğsünün genişletilmesi",
+        "explanation": "İnşirâh 94/1, Resûlullah'ın gönlünün genişletilmesini hatırlatarak peygamberlik görevinde kendisine verilen mânevî desteği anlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/1",
+            "supports": "İnşirâh 94/1, Resûlullah'ın gönlünün genişletilmesini hatırlatarak peygamberlik görevinde kendisine verilen mânevî desteği anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 792,
+      "sourceSequence": 646,
+      "id": "q44-insirah-4",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnşirâh 94/4'te Resûlullah'a yönelik hangi lütuf hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir hazine bulması"
+          },
+          {
+            "id": "o2",
+            "text": "Şanının ve ününün yüceltilmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Bir gemi yapılması"
+          },
+          {
+            "id": "o4",
+            "text": "Bir şehrin kurulması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şanının ve ününün yüceltilmesi",
+        "explanation": "İnşirâh 94/4, Hz. Peygamber'in şanının yükseltildiğini hatırlatır; tefsirde bu, isminin ve tebliğ ettiği mesajın yüceltilmesiyle ilişkilendirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/4",
+            "supports": "İnşirâh 94/4, Hz. Peygamber'in şanının yükseltildiğini hatırlatır; tefsirde bu, isminin ve tebliğ ettiği mesajın yüceltilmesiyle ilişkilendirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnşirâh 94/4'te Resûlullah'a yönelik hangi lütuf hatırlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir hazine bulması"
+          },
+          {
+            "id": "o2",
+            "text": "Şanının ve ününün yüceltilmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Bir gemi yapılması"
+          },
+          {
+            "id": "o4",
+            "text": "Bir şehrin kurulması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şanının ve ününün yüceltilmesi",
+        "explanation": "İnşirâh 94/4, Hz. Peygamber'in şanının yükseltildiğini hatırlatır; tefsirde bu, isminin ve tebliğ ettiği mesajın yüceltilmesiyle ilişkilendirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/4",
+            "supports": "İnşirâh 94/4, Hz. Peygamber'in şanının yükseltildiğini hatırlatır; tefsirde bu, isminin ve tebliğ ettiği mesajın yüceltilmesiyle ilişkilendirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 793,
+      "sourceSequence": 647,
+      "id": "q44-insirah-5",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnşirâh 94/5-6'da güçlükle ilgili hangi müjde tekrarlanır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Her güçlüğün sonsuza kadar sürmesi"
+          },
+          {
+            "id": "o2",
+            "text": "Güçlükle birlikte kolaylığın bulunması"
+          },
+          {
+            "id": "o3",
+            "text": "Bütün çabanın anlamsız olması"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece zenginlerin kolaylık görmesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Güçlükle birlikte kolaylığın bulunması",
+        "explanation": "İnşirâh 94/5-6'da güçlükle birlikte bir kolaylığın bulunduğu iki kez vurgulanır; âyetler sıkıntı zamanlarında umudu canlı tutar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=5&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/5-6",
+            "supports": "İnşirâh 94/5-6'da güçlükle birlikte bir kolaylığın bulunduğu iki kez vurgulanır; âyetler sıkıntı zamanlarında umudu canlı tutar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnşirâh 94/5-6'da güçlükle ilgili hangi müjde tekrarlanır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Allah'ı anmak kalbe huzur verir"
+          },
+          {
+            "id": "o2",
+            "text": "Güçlükle birlikte kolaylık vardır"
+          },
+          {
+            "id": "o1",
+            "text": "Her can ölümü tadacaktır"
+          },
+          {
+            "id": "o3",
+            "text": "Her insan yaptığını görecektir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Güçlükle birlikte kolaylık vardır",
+        "explanation": "İnşirâh 94/5-6'da güçlükle birlikte bir kolaylığın bulunduğu iki kez vurgulanır; âyetler sıkıntı zamanlarında umudu canlı tutar.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 94/5; PDF sayfa 649 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Güçlükle birlikte kolaylık vardır (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 794,
+      "sourceSequence": 648,
+      "id": "q44-insirah-7",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnşirâh 94/7'de bir işi bitiren kimseye ne öğütlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bütün sorumlulukları bırakmak"
+          },
+          {
+            "id": "o2",
+            "text": "Diğer bir işe koyulmak"
+          },
+          {
+            "id": "o3",
+            "text": "İyiliği terk etmek"
+          },
+          {
+            "id": "o4",
+            "text": "Sürekli beklemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Diğer bir işe koyulmak",
+        "explanation": "İnşirâh 94/7, bir işten boşalınca yeni bir gayret ve çabaya yönelmeyi öğütler; devamlı sorumluluk bilincini hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=7&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/7",
+            "supports": "İnşirâh 94/7, bir işten boşalınca yeni bir gayret ve çabaya yönelmeyi öğütler; devamlı sorumluluk bilincini hatırlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnşirâh 94/7'de bir işi bitiren kimseye ne öğütlenir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Yaptığı işi kayda geçirmek"
+          },
+          {
+            "id": "o4",
+            "text": "İşini başkasına devretmek"
+          },
+          {
+            "id": "o2",
+            "text": "Yeniden bir işe koyulmak"
+          },
+          {
+            "id": "o1",
+            "text": "İşini insanlara danışmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yeniden bir işe koyulmak",
+        "explanation": "İnşirâh 94/7, bir işten boşalınca yeni bir gayret ve çabaya yönelmeyi öğütler; devamlı sorumluluk bilincini hatırlatır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 94/7; PDF sayfa 649 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Yeniden bir işe koyulmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 795,
+      "sourceSequence": 649,
+      "id": "q44-insirah-8",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İnşirâh 94/8'de yönelişin kime olması istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız servete"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbine"
+          },
+          {
+            "id": "o3",
+            "text": "Şöhrete"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanların övgüsüne"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rabbine",
+        "explanation": "İnşirâh 94/8, insanın Rabbine yönelmesini ve isteğini O'na arz etmesini öğütleyerek sûrenin ana mesajını tamamlar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/8",
+            "supports": "İnşirâh 94/8, insanın Rabbine yönelmesini ve isteğini O'na arz etmesini öğütleyerek sûrenin ana mesajını tamamlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İnşirâh 94/8'de yönelişin kime olması istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız servete"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbine"
+          },
+          {
+            "id": "o3",
+            "text": "Şöhrete"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanların övgüsüne"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rabbine",
+        "explanation": "İnşirâh 94/8, insanın Rabbine yönelmesini ve isteğini O'na arz etmesini öğütleyerek sûrenin ana mesajını tamamlar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=94",
+            "locator": "İnşirâh 94/8",
+            "supports": "İnşirâh 94/8, insanın Rabbine yönelmesini ve isteğini O'na arz etmesini öğütleyerek sûrenin ana mesajını tamamlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 796,
+      "sourceSequence": 650,
+      "id": "q44-tin-2",
+      "category": "quran_dualar",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tîn 95/2'de üzerine yemin edilen dağ hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ağrı Dağı"
+          },
+          {
+            "id": "o2",
+            "text": "Sînâ Dağı"
+          },
+          {
+            "id": "o3",
+            "text": "Erciyes Dağı"
+          },
+          {
+            "id": "o4",
+            "text": "Uludağ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Sînâ Dağı",
+        "explanation": "Tîn 95/2'de Sînâ Dağı üzerine yemin edilir. Âyet, sûrenin başındaki yaratılış ve ilâhî nimetleri hatırlatan ifadelerdendir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=2&mode=kuran-meal&sure=95",
+            "locator": "Tîn 95/2",
+            "supports": "Tîn 95/2'de Sînâ Dağı üzerine yemin edilir. Âyet, sûrenin başındaki yaratılış ve ilâhî nimetleri hatırlatan ifadelerdendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tîn 95/2'de üzerine yemin edilen dağ hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ağrı Dağı"
+          },
+          {
+            "id": "o2",
+            "text": "Sînâ Dağı"
+          },
+          {
+            "id": "o3",
+            "text": "Erciyes Dağı"
+          },
+          {
+            "id": "o4",
+            "text": "Uludağ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Sînâ Dağı",
+        "explanation": "Tîn 95/2'de Sînâ Dağı üzerine yemin edilir. Âyet, sûrenin başındaki yaratılış ve ilâhî nimetleri hatırlatan ifadelerdendir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=2&mode=kuran-meal&sure=95",
+            "locator": "Tîn 95/2",
+            "supports": "Tîn 95/2'de Sînâ Dağı üzerine yemin edilir. Âyet, sûrenin başındaki yaratılış ve ilâhî nimetleri hatırlatan ifadelerdendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 797,
+      "sourceSequence": 651,
+      "id": "q44-tin-3",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tîn 95/3'te 'güvenli belde' ifadesiyle hangi şehir anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Medine"
+          },
+          {
+            "id": "o2",
+            "text": "Mekke"
+          },
+          {
+            "id": "o3",
+            "text": "Kûfe"
+          },
+          {
+            "id": "o4",
+            "text": "Şam"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mekke",
+        "explanation": "Tîn 95/3'te güvenli şehir üzerine yemin edilir; Diyanet tefsirinde bu ifadenin Mekke'yi anlattığı açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=95",
+            "locator": "Tîn 95/3",
+            "supports": "Tîn 95/3'te güvenli şehir üzerine yemin edilir; Diyanet tefsirinde bu ifadenin Mekke'yi anlattığı açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tîn 95/3'te 'güvenli belde' ifadesiyle hangi şehir anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Medine"
+          },
+          {
+            "id": "o2",
+            "text": "Mekke"
+          },
+          {
+            "id": "o3",
+            "text": "Kûfe"
+          },
+          {
+            "id": "o4",
+            "text": "Şam"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mekke",
+        "explanation": "Tîn 95/3'te güvenli şehir üzerine yemin edilir; Diyanet tefsirinde bu ifadenin Mekke'yi anlattığı açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=95",
+            "locator": "Tîn 95/3",
+            "supports": "Tîn 95/3'te güvenli şehir üzerine yemin edilir; Diyanet tefsirinde bu ifadenin Mekke'yi anlattığı açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 798,
+      "sourceSequence": 652,
+      "id": "q44-tin-6",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tîn 95/6'da kimlere kesintisiz mükâfat olduğu bildirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Başkalarının hakkını yiyenlere"
+          },
+          {
+            "id": "o2",
+            "text": "İman edip iyi işler yapanlara"
+          },
+          {
+            "id": "o3",
+            "text": "Zulümde ısrar edenlere"
+          },
+          {
+            "id": "o4",
+            "text": "Emanete ihanet edenlere"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İman edip iyi işler yapanlara",
+        "explanation": "Tîn 95/6'da iman edip salih ameller işleyenler için kesintisiz bir karşılık bulunduğu bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=6&mode=kuran-meal&sure=95",
+            "locator": "Tîn 95/6",
+            "supports": "Tîn 95/6'da iman edip salih ameller işleyenler için kesintisiz bir karşılık bulunduğu bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tîn 95/6'da kimlere kesintisiz mükâfat olduğu bildirilir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Namazında devamlı olanlara"
+          },
+          {
+            "id": "o4",
+            "text": "Öfkesini yenip insanları bağışlayanlara"
+          },
+          {
+            "id": "o2",
+            "text": "İman edip iyi işler yapanlara"
+          },
+          {
+            "id": "o1",
+            "text": "Mal verip temizlenmeye çalışanlara"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İman edip iyi işler yapanlara",
+        "explanation": "Tîn 95/6'da iman edip salih ameller işleyenler için kesintisiz bir karşılık bulunduğu bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 95/6; PDF sayfa 650 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: İman edip iyi işler yapanlara (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 799,
+      "sourceSequence": 653,
+      "id": "q45-haldun-mukaddime",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İbn Haldûn'un Mukaddime adlı eseri hangi büyük eserin girişidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Kānûn fi't-Tıb"
+          },
+          {
+            "id": "o2",
+            "text": "Kitâbü'l-İber"
+          },
+          {
+            "id": "o3",
+            "text": "el-Cebr ve'l-Mukābele"
+          },
+          {
+            "id": "o4",
+            "text": "Kutadgu Bilig"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kitâbü'l-İber",
+        "explanation": "Mukaddime, İbn Haldûn'un dünya tarihi niteliğindeki Kitâbü'l-İber adlı eserine giriş olarak kaleme alınmış, sonradan bağımsız bir eser gibi de değerlendirilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İbn Haldûn ile ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+            "locator": "Giriş ve eser tanımı",
+            "supports": "Mukaddime, İbn Haldûn'un dünya tarihi niteliğindeki Kitâbü'l-İber adlı eserine giriş olarak kaleme alınmış, sonradan bağımsız bir eser gibi de değerlendirilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İbn Haldûn'un Mukaddime adlı eseri hangi büyük eserin girişidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Kānûn fi't-Tıb"
+          },
+          {
+            "id": "o2",
+            "text": "Kitâbü'l-İber"
+          },
+          {
+            "id": "o3",
+            "text": "el-Cebr ve'l-Mukābele"
+          },
+          {
+            "id": "o4",
+            "text": "Kutadgu Bilig"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kitâbü'l-İber",
+        "explanation": "Mukaddime, İbn Haldûn'un dünya tarihi niteliğindeki Kitâbü'l-İber adlı eserine giriş olarak kaleme alınmış, sonradan bağımsız bir eser gibi de değerlendirilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İbn Haldûn ile ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+            "locator": "Giriş ve eser tanımı",
+            "supports": "Mukaddime, İbn Haldûn'un dünya tarihi niteliğindeki Kitâbü'l-İber adlı eserine giriş olarak kaleme alınmış, sonradan bağımsız bir eser gibi de değerlendirilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 800,
+      "sourceSequence": 655,
+      "id": "q45-haldun-bedevi",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mukaddime'nin ikinci ve üçüncü bölümlerinde hangi hayat biçimleri tartışılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizcilik ve balıkçılık"
+          },
+          {
+            "id": "o2",
+            "text": "Bedevîlik ve hadarîlik"
+          },
+          {
+            "id": "o3",
+            "text": "Hayvancılık ve hekimlik"
+          },
+          {
+            "id": "o4",
+            "text": "Maden ve kimya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bedevîlik ve hadarîlik",
+        "explanation": "Mukaddime'nin ikinci ve üçüncü bölümleri, insan topluluklarının bedevî ve hadarî hayat biçimlerini ve aralarındaki dönüşümü ele alır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İbn Haldûn ile ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+            "locator": "İkinci ve üçüncü bölüm",
+            "supports": "Mukaddime'nin ikinci ve üçüncü bölümleri, insan topluluklarının bedevî ve hadarî hayat biçimlerini ve aralarındaki dönüşümü ele alır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mukaddime'nin ikinci ve üçüncü bölümlerinde hangi hayat biçimleri tartışılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizcilik ve balıkçılık"
+          },
+          {
+            "id": "o2",
+            "text": "Bedevîlik ve hadarîlik"
+          },
+          {
+            "id": "o3",
+            "text": "Hayvancılık ve hekimlik"
+          },
+          {
+            "id": "o4",
+            "text": "Maden ve kimya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bedevîlik ve hadarîlik",
+        "explanation": "Mukaddime'nin ikinci ve üçüncü bölümleri, insan topluluklarının bedevî ve hadarî hayat biçimlerini ve aralarındaki dönüşümü ele alır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İbn Haldûn ile ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+            "locator": "İkinci ve üçüncü bölüm",
+            "supports": "Mukaddime'nin ikinci ve üçüncü bölümleri, insan topluluklarının bedevî ve hadarî hayat biçimlerini ve aralarındaki dönüşümü ele alır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    }
+  ]
+}

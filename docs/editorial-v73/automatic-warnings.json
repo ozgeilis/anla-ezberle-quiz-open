@@ -484,6 +484,14 @@
     "category": "quran_dualar",
     "flags": [
       {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "only-correct-restrictive",
+        "detail": "Doğru cevap tek sınırlayıcı/mutlak ifade; ifade tek başına hata değildir"
+      },
+      {
         "kind": "grammar-shape",
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
       }
@@ -677,7 +685,12 @@
   {
     "id": "e150-prophets-020",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "e150-prophets-021",
@@ -762,7 +775,12 @@
   {
     "id": "e150-prophets-035",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "e150-prophets-036",
@@ -878,6 +896,10 @@
     "id": "e150-history-011",
     "category": "siyer_sahabe",
     "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
       {
         "kind": "semantic-overlap",
         "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
@@ -1080,6 +1102,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
@@ -1551,6 +1577,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -1576,6 +1606,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -1666,6 +1700,10 @@
       {
         "kind": "length-outlier",
         "detail": "Tek belirgin uzun/kısa seçenek"
+      },
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
       }
     ]
   },
@@ -1731,6 +1769,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -1753,6 +1795,10 @@
     "id": "v10-quran-009",
     "category": "quran_dualar",
     "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
       {
         "kind": "domain-mismatch",
         "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
@@ -1792,7 +1838,12 @@
   {
     "id": "v10-prophets-003",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v10-prophets-004",
@@ -1801,6 +1852,10 @@
       {
         "kind": "length-outlier",
         "detail": "Tek belirgin uzun/kısa seçenek"
+      },
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
       },
       {
         "kind": "domain-mismatch",
@@ -1908,6 +1963,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
@@ -2157,7 +2216,12 @@
   {
     "id": "v11-prophets-003",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v11-prophets-004",
@@ -2177,7 +2241,12 @@
   {
     "id": "v11-prophets-007",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v11-prophets-008",
@@ -2201,7 +2270,12 @@
   {
     "id": "v11-prophets-010",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v11-prophets-011",
@@ -2351,7 +2425,12 @@
   {
     "id": "v12-quran-001",
     "category": "fikih",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "v12-quran-002",
@@ -2367,6 +2446,10 @@
     "id": "v12-quran-004",
     "category": "iman_ahlak",
     "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
       {
         "kind": "grammar-shape",
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
@@ -2404,6 +2487,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -2435,7 +2522,12 @@
   {
     "id": "v12-quran-012",
     "category": "iman_ahlak",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v12-quran-013",
@@ -2469,7 +2561,12 @@
   {
     "id": "v12-prophets-004",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v12-prophets-005",
@@ -2479,12 +2576,22 @@
   {
     "id": "v12-prophets-006",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v12-prophets-007",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v12-prophets-008",
@@ -2725,6 +2832,10 @@
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
       },
       {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+      },
+      {
         "kind": "domain-mismatch",
         "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
       }
@@ -2753,7 +2864,12 @@
   {
     "id": "v13-quran-010",
     "category": "iman_ahlak",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "v13-quran-011",
@@ -2790,6 +2906,10 @@
     "category": "quran_dualar",
     "flags": [
       {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
+      {
         "kind": "semantic-overlap",
         "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
       }
@@ -2798,12 +2918,22 @@
   {
     "id": "v13-prophets-004",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v13-prophets-005",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v13-prophets-006",
@@ -2823,7 +2953,12 @@
   {
     "id": "v13-prophets-009",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v13-prophets-010",
@@ -2832,6 +2967,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -3157,6 +3296,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -3332,7 +3475,12 @@
   {
     "id": "learn-dua-021",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "learn-dua-023",
@@ -3400,6 +3548,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -3502,6 +3654,10 @@
     "category": "quran_dualar",
     "flags": [
       {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
         "kind": "grammar-shape",
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
       }
@@ -3510,7 +3666,12 @@
   {
     "id": "learn-dua-020",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "learn-akaid-010",
@@ -3578,6 +3739,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -3634,7 +3799,12 @@
   {
     "id": "q42-lokman-28",
     "category": "iman_ahlak",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q42-lokman-29",
@@ -3648,6 +3818,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -3678,6 +3852,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -3713,6 +3891,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
@@ -3782,6 +3964,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
@@ -3902,12 +4088,22 @@
   {
     "id": "q44-insirah-4",
     "category": "siyer_sahabe",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q44-insirah-5",
     "category": "iman_ahlak",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q44-insirah-7",
@@ -3946,6 +4142,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -4733,6 +4933,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -5300,7 +5504,12 @@
   {
     "id": "q52-kurban-022",
     "category": "fikih",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q52-kurban-023",
@@ -5772,7 +5981,12 @@
   {
     "id": "q55-tekvir-010",
     "category": "iman_ahlak",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q55-infitar-011",
@@ -5994,7 +6208,16 @@
   {
     "id": "q57-nuhcift",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+      }
+    ]
   },
   {
     "id": "q57-nuhogul",
@@ -6014,7 +6237,12 @@
   {
     "id": "q57-yunuskura",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q57-yunusbitki",
@@ -6161,7 +6389,12 @@
   {
     "id": "q57-tebukmuh",
     "category": "siyer_sahabe",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q57-hayberdate",
@@ -6179,6 +6412,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -6370,7 +6607,12 @@
   {
     "id": "q58-tecvid-med",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q58-tecvid-kasir",
@@ -6801,7 +7043,16 @@
   {
     "id": "q61-salihpeygamber-birlik",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "only-correct-restrictive",
+        "detail": "Doğru cevap tek sınırlayıcı/mutlak ifade; ifade tek başına hata değildir"
+      }
+    ]
   },
   {
     "id": "q61-salihpeygamber-son",
@@ -6836,6 +7087,10 @@
     "id": "q61-meryem-ruya",
     "category": "peygamberler",
     "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
       {
         "kind": "semantic-overlap",
         "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
@@ -6876,6 +7131,10 @@
     "id": "q61-isa-besik",
     "category": "peygamberler",
     "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
       {
         "kind": "domain-mismatch",
         "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
@@ -7092,7 +7351,12 @@
   {
     "id": "q62-zekat-borclu",
     "category": "fikih",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q62-fitre-zaman",
@@ -7131,6 +7395,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -7620,7 +7888,12 @@
   {
     "id": "q65-furkan-74",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q65-furkan-75",
@@ -7714,6 +7987,10 @@
       {
         "kind": "length-outlier",
         "detail": "Tek belirgin uzun/kısa seçenek"
+      },
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
       }
     ]
   },
@@ -7858,7 +8135,12 @@
   {
     "id": "q66-kehf-39",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q66-kehf-45",
@@ -7903,6 +8185,10 @@
     "id": "q66-kehf-77",
     "category": "peygamberler",
     "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
       {
         "kind": "grammar-shape",
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
@@ -7961,6 +8247,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -8017,7 +8307,12 @@
   {
     "id": "q66-neml-39",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q66-neml-40",
@@ -8116,7 +8411,12 @@
   {
     "id": "q67-kasas-4",
     "category": "peygamberler",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q67-kasas-7",
@@ -8285,7 +8585,12 @@
   {
     "id": "q67-ankebut-3",
     "category": "iman_ahlak",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q67-ankebut-6",
@@ -8468,6 +8773,10 @@
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
       },
       {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+      },
+      {
         "kind": "domain-mismatch",
         "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
       }
@@ -8496,7 +8805,12 @@
   {
     "id": "q67-rum-42",
     "category": "quran_dualar",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q67-rum-48",
@@ -8525,6 +8839,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
@@ -8581,6 +8899,10 @@
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
       },
       {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+      },
+      {
         "kind": "domain-mismatch",
         "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
       }
@@ -8619,7 +8941,12 @@
   {
     "id": "q68-zayif-tanim",
     "category": "tarih_medeniyet",
-    "flags": []
+    "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ]
   },
   {
     "id": "q68-zayif-sebep",
@@ -8762,6 +9089,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ]
   },
@@ -8978,7 +9309,12 @@
   {
     "id": "q69-ebueyyubelensari-kabile",
     "category": "siyer_sahabe",
-    "flags": []
+    "flags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q69-ebueyyubelensari-akabe",
@@ -9394,6 +9730,10 @@
     "category": "fikih",
     "flags": [
       {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
         "kind": "grammar-shape",
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
       }
@@ -9432,6 +9772,10 @@
     "id": "q71-kurban-sahip",
     "category": "fikih",
     "flags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
       {
         "kind": "semantic-overlap",
         "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"

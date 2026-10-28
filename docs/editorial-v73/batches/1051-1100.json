@@ -1,0 +1,4252 @@
+{
+  "batch": 22,
+  "start": 1051,
+  "end": 1100,
+  "total": 50,
+  "individuallyReviewed": 0,
+  "pendingReview": 50,
+  "sourceComparedThisRound": 0,
+  "blocked": 0,
+  "flaggedBefore": 3,
+  "flaggedAfter": 3,
+  "records": [
+    {
+      "sequence": 1051,
+      "sourceSequence": 959,
+      "id": "q56-akabe-yil1",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "610"
+          },
+          {
+            "id": "o2",
+            "text": "621"
+          },
+          {
+            "id": "o3",
+            "text": "622"
+          },
+          {
+            "id": "o4",
+            "text": "632"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "621",
+        "explanation": "TDV İslâm Ansiklopedisi, Birinci Akabe Biatı'nın 621 yılında Medineli Müslümanlarla Hz. Peygamber arasında yapıldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "Birinci Akabe Biatı tarihi",
+            "supports": "TDV İslâm Ansiklopedisi, Birinci Akabe Biatı'nın 621 yılında Medineli Müslümanlarla Hz. Peygamber arasında yapıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "610"
+          },
+          {
+            "id": "o2",
+            "text": "621"
+          },
+          {
+            "id": "o3",
+            "text": "622"
+          },
+          {
+            "id": "o4",
+            "text": "632"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "621",
+        "explanation": "TDV İslâm Ansiklopedisi, Birinci Akabe Biatı'nın 621 yılında Medineli Müslümanlarla Hz. Peygamber arasında yapıldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "Birinci Akabe Biatı tarihi",
+            "supports": "TDV İslâm Ansiklopedisi, Birinci Akabe Biatı'nın 621 yılında Medineli Müslümanlarla Hz. Peygamber arasında yapıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1052,
+      "sourceSequence": 960,
+      "id": "q56-akabe-egitmen",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Birinci Akabe Biatı sonrasında Yesrib'e Kur'an ve İslam'ı öğretmesi için kim gönderildi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zeyd b. Sâbit"
+          },
+          {
+            "id": "o2",
+            "text": "Mus'ab b. Umeyr"
+          },
+          {
+            "id": "o3",
+            "text": "Bilâl-i Habeşî"
+          },
+          {
+            "id": "o4",
+            "text": "Ebû Hüreyre"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mus'ab b. Umeyr",
+        "explanation": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "Birinci Akabe Biatı sonrası eğitim",
+            "supports": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Birinci Akabe Biatı sonrasında Yesrib'e Kur'an ve İslam'ı öğretmesi için kim gönderildi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zeyd b. Sâbit"
+          },
+          {
+            "id": "o2",
+            "text": "Mus'ab b. Umeyr"
+          },
+          {
+            "id": "o3",
+            "text": "Bilâl-i Habeşî"
+          },
+          {
+            "id": "o4",
+            "text": "Ebû Hüreyre"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mus'ab b. Umeyr",
+        "explanation": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "Birinci Akabe Biatı sonrası eğitim",
+            "supports": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1053,
+      "sourceSequence": 961,
+      "id": "q56-akabe-ikinci",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İkinci Akabe Biatı'nın 'Bey'atü'l-harb' olarak anılmasının nedeni nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sadece ticareti konu alması"
+          },
+          {
+            "id": "o2",
+            "text": "Savunma ve savaşla ilgili yükümlülükler içermesi"
+          },
+          {
+            "id": "o3",
+            "text": "Miras taksimini düzenlemesi"
+          },
+          {
+            "id": "o4",
+            "text": "Bir yolculuk sözleşmesi olması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Savunma ve savaşla ilgili yükümlülükler içermesi",
+        "explanation": "TDV maddesi İkinci Akabe Biatı'nın savaşla ilgili hususları da kapsadığı için Bey'atü'l-harb diye anıldığını bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "İkinci Akabe Biatı ve Bey'atü'l-harb",
+            "supports": "TDV maddesi İkinci Akabe Biatı'nın savaşla ilgili hususları da kapsadığı için Bey'atü'l-harb diye anıldığını bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İkinci Akabe Biatı'nın 'Bey'atü'l-harb' olarak anılmasının nedeni nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sadece ticareti konu alması"
+          },
+          {
+            "id": "o2",
+            "text": "Savunma ve savaşla ilgili yükümlülükler içermesi"
+          },
+          {
+            "id": "o3",
+            "text": "Miras taksimini düzenlemesi"
+          },
+          {
+            "id": "o4",
+            "text": "Bir yolculuk sözleşmesi olması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Savunma ve savaşla ilgili yükümlülükler içermesi",
+        "explanation": "TDV maddesi İkinci Akabe Biatı'nın savaşla ilgili hususları da kapsadığı için Bey'atü'l-harb diye anıldığını bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "İkinci Akabe Biatı ve Bey'atü'l-harb",
+            "supports": "TDV maddesi İkinci Akabe Biatı'nın savaşla ilgili hususları da kapsadığı için Bey'atü'l-harb diye anıldığını bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1054,
+      "sourceSequence": 962,
+      "id": "q56-akabe-konum",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Akabe biatlarının gerçekleştiği yer Mekke'de hangi bölgeye yakındır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Safa tepesi"
+          },
+          {
+            "id": "o2",
+            "text": "Cemre-i Akabe"
+          },
+          {
+            "id": "o3",
+            "text": "Hira mağarası"
+          },
+          {
+            "id": "o4",
+            "text": "Sevr dağı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cemre-i Akabe",
+        "explanation": "TDV'ye göre Akabe biatlarının yeri Mina sınırları içindeki Cemre-i Akabe'ye yakın kuytu bir vadidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "Akabe mevkiinin coğrafî konumu",
+            "supports": "TDV'ye göre Akabe biatlarının yeri Mina sınırları içindeki Cemre-i Akabe'ye yakın kuytu bir vadidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Akabe biatlarının gerçekleştiği yer Mekke'de hangi bölgeye yakındır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Safa tepesi"
+          },
+          {
+            "id": "o2",
+            "text": "Cemre-i Akabe"
+          },
+          {
+            "id": "o3",
+            "text": "Hira mağarası"
+          },
+          {
+            "id": "o4",
+            "text": "Sevr dağı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cemre-i Akabe",
+        "explanation": "TDV'ye göre Akabe biatlarının yeri Mina sınırları içindeki Cemre-i Akabe'ye yakın kuytu bir vadidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+            "locator": "Akabe mevkiinin coğrafî konumu",
+            "supports": "TDV'ye göre Akabe biatlarının yeri Mina sınırları içindeki Cemre-i Akabe'ye yakın kuytu bir vadidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1055,
+      "sourceSequence": 963,
+      "id": "q56-hicret-konak",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hicret sırasında Hz. Peygamber Medine'ye girmeden önce hangi köyde konakladı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tâif"
+          },
+          {
+            "id": "o2",
+            "text": "Kubâ"
+          },
+          {
+            "id": "o3",
+            "text": "Hayber"
+          },
+          {
+            "id": "o4",
+            "text": "Bedir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kubâ",
+        "explanation": "TDV'nin Kubâ maddesi, köyü hicret sırasında Hz. Peygamber'in misafir olduğu ve mescid yaptığı yer olarak tanıtır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kuba--medine",
+            "locator": "Kubâ ve hicret",
+            "supports": "TDV'nin Kubâ maddesi, köyü hicret sırasında Hz. Peygamber'in misafir olduğu ve mescid yaptığı yer olarak tanıtır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hicret sırasında Hz. Peygamber Medine'ye girmeden önce hangi köyde konakladı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tâif"
+          },
+          {
+            "id": "o2",
+            "text": "Kubâ"
+          },
+          {
+            "id": "o3",
+            "text": "Hayber"
+          },
+          {
+            "id": "o4",
+            "text": "Bedir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kubâ",
+        "explanation": "TDV'nin Kubâ maddesi, köyü hicret sırasında Hz. Peygamber'in misafir olduğu ve mescid yaptığı yer olarak tanıtır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kuba--medine",
+            "locator": "Kubâ ve hicret",
+            "supports": "TDV'nin Kubâ maddesi, köyü hicret sırasında Hz. Peygamber'in misafir olduğu ve mescid yaptığı yer olarak tanıtır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1056,
+      "sourceSequence": 964,
+      "id": "q56-hicret-mescid",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mescid-i Kubâ'nın ilk bulunduğu yer hangi amaçla kullanılıyordu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kervan pazarı"
+          },
+          {
+            "id": "o2",
+            "text": "Hurma kurutma yeri"
+          },
+          {
+            "id": "o3",
+            "text": "At ahırı"
+          },
+          {
+            "id": "o4",
+            "text": "Kale avlusu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hurma kurutma yeri",
+        "explanation": "TDV Mescid-i Kubâ maddesinde ilk muhacirlerin Amr b. Avf oğullarına ait bir hurma kurutma yerini mescide dönüştürdüğü belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mescid-i-kuba",
+            "locator": "Mescid-i Kubâ'nın ilk kuruluşu",
+            "supports": "TDV Mescid-i Kubâ maddesinde ilk muhacirlerin Amr b. Avf oğullarına ait bir hurma kurutma yerini mescide dönüştürdüğü belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mescid-i Kubâ'nın ilk bulunduğu yer hangi amaçla kullanılıyordu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kervan pazarı"
+          },
+          {
+            "id": "o2",
+            "text": "Hurma kurutma yeri"
+          },
+          {
+            "id": "o3",
+            "text": "At ahırı"
+          },
+          {
+            "id": "o4",
+            "text": "Kale avlusu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hurma kurutma yeri",
+        "explanation": "TDV Mescid-i Kubâ maddesinde ilk muhacirlerin Amr b. Avf oğullarına ait bir hurma kurutma yerini mescide dönüştürdüğü belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mescid-i-kuba",
+            "locator": "Mescid-i Kubâ'nın ilk kuruluşu",
+            "supports": "TDV Mescid-i Kubâ maddesinde ilk muhacirlerin Amr b. Avf oğullarına ait bir hurma kurutma yerini mescide dönüştürdüğü belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1057,
+      "sourceSequence": 965,
+      "id": "q56-hicret-donus",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Peygamber hicretten sonra Mekke'nin fethine rağmen hangi şehirde yaşamayı sürdürdü?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tâif"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
+          },
+          {
+            "id": "o3",
+            "text": "Şam"
+          },
+          {
+            "id": "o4",
+            "text": "Kûfe"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Medine",
+        "explanation": "TDV'nin Hicret maddesi, Hz. Peygamber'in Mekke'nin fethinden sonra da ensara vefa göstererek Medine'de kaldığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hicret",
+            "locator": "Mekke'nin fethinden sonra Medine",
+            "supports": "TDV'nin Hicret maddesi, Hz. Peygamber'in Mekke'nin fethinden sonra da ensara vefa göstererek Medine'de kaldığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Peygamber hicretten sonra Mekke'nin fethine rağmen hangi şehirde yaşamayı sürdürdü?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tâif"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
+          },
+          {
+            "id": "o3",
+            "text": "Şam"
+          },
+          {
+            "id": "o4",
+            "text": "Kûfe"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Medine",
+        "explanation": "TDV'nin Hicret maddesi, Hz. Peygamber'in Mekke'nin fethinden sonra da ensara vefa göstererek Medine'de kaldığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hicret",
+            "locator": "Mekke'nin fethinden sonra Medine",
+            "supports": "TDV'nin Hicret maddesi, Hz. Peygamber'in Mekke'nin fethinden sonra da ensara vefa göstererek Medine'de kaldığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1058,
+      "sourceSequence": 967,
+      "id": "q57-nuh950",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ankebût 29/14'e göre Hz. Nûh kavmi arasında kaç yıl kalmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "950 yıl"
+          },
+          {
+            "id": "o2",
+            "text": "500 yıl"
+          },
+          {
+            "id": "o3",
+            "text": "100 yıl"
+          },
+          {
+            "id": "o4",
+            "text": "70 yıl"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "950 yıl",
+        "explanation": "Ankebût 29/14, Hz. Nûh'un kavmi arasında 950 yıl kaldığını bildirir; âyet bunun bütün ömrü olduğunu söylemez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Ankebût 29/14",
+            "supports": "Ankebût 29/14, Hz. Nûh'un kavmi arasında 950 yıl kaldığını bildirir; âyet bunun bütün ömrü olduğunu söylemez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ankebût 29/14'e göre Hz. Nûh kavmi arasında kaç yıl kalmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "950 yıl"
+          },
+          {
+            "id": "o2",
+            "text": "500 yıl"
+          },
+          {
+            "id": "o3",
+            "text": "100 yıl"
+          },
+          {
+            "id": "o4",
+            "text": "70 yıl"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "950 yıl",
+        "explanation": "Ankebût 29/14, Hz. Nûh'un kavmi arasında 950 yıl kaldığını bildirir; âyet bunun bütün ömrü olduğunu söylemez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Ankebût 29/14",
+            "supports": "Ankebût 29/14, Hz. Nûh'un kavmi arasında 950 yıl kaldığını bildirir; âyet bunun bütün ömrü olduğunu söylemez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1059,
+      "sourceSequence": 968,
+      "id": "q57-nuhalay",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Nûh gemisini inşa ederken kavminin inkârcıları nasıl tepki vermiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Birlikte çalışmışlardır"
+          },
+          {
+            "id": "o2",
+            "text": "Gemiyi satın almışlardır"
+          },
+          {
+            "id": "o3",
+            "text": "Hemen gemiye binmişlerdir"
+          },
+          {
+            "id": "o4",
+            "text": "Onunla alay etmişlerdir"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Onunla alay etmişlerdir",
+        "explanation": "Hûd 11/38'de Hz. Nûh'un gemi yapımı sırasında inkârcılar tarafından alaya alındığı anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Hûd 11/38",
+            "supports": "Hûd 11/38'de Hz. Nûh'un gemi yapımı sırasında inkârcılar tarafından alaya alındığı anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Nûh gemisini inşa ederken kavminin inkârcıları nasıl tepki vermiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Birlikte çalışmışlardır"
+          },
+          {
+            "id": "o2",
+            "text": "Gemiyi satın almışlardır"
+          },
+          {
+            "id": "o3",
+            "text": "Hemen gemiye binmişlerdir"
+          },
+          {
+            "id": "o4",
+            "text": "Onunla alay etmişlerdir"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Onunla alay etmişlerdir",
+        "explanation": "Hûd 11/38'de Hz. Nûh'un gemi yapımı sırasında inkârcılar tarafından alaya alındığı anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Hûd 11/38",
+            "supports": "Hûd 11/38'de Hz. Nûh'un gemi yapımı sırasında inkârcılar tarafından alaya alındığı anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1060,
+      "sourceSequence": 969,
+      "id": "q57-nuhcift",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tûfan öncesi Hz. Nûh'un gemiye alması istenen hayvanlar hakkında hangi ifade geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sadece balıklar"
+          },
+          {
+            "id": "o2",
+            "text": "Yalnızca sürüngenler"
+          },
+          {
+            "id": "o3",
+            "text": "Her türden birer çift"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnızca kuşlar"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Her türden birer çift",
+        "explanation": "Hûd 11/40'ta Nûh'a hayvan türlerinden çiftler, bazı aile fertleri ve iman edenleri gemiye alması emredilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Hûd 11/40",
+            "supports": "Hûd 11/40'ta Nûh'a hayvan türlerinden çiftler, bazı aile fertleri ve iman edenleri gemiye alması emredilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tûfan öncesi Hz. Nûh'un gemiye alması istenen hayvanlar hakkında hangi ifade geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sadece balıklar"
+          },
+          {
+            "id": "o2",
+            "text": "Yalnızca sürüngenler"
+          },
+          {
+            "id": "o3",
+            "text": "Her türden birer çift"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnızca kuşlar"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Her türden birer çift",
+        "explanation": "Hûd 11/40'ta Nûh'a hayvan türlerinden çiftler, bazı aile fertleri ve iman edenleri gemiye alması emredilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Hûd 11/40",
+            "supports": "Hûd 11/40'ta Nûh'a hayvan türlerinden çiftler, bazı aile fertleri ve iman edenleri gemiye alması emredilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1061,
+      "sourceSequence": 970,
+      "id": "q57-nuhogul",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hûd 11/42-43'e göre gemiye binmeyen Nûh'un oğlunun sonu ne olmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Başka bir gemi yapmıştır"
+          },
+          {
+            "id": "o2",
+            "text": "Suda boğulmuştur"
+          },
+          {
+            "id": "o3",
+            "text": "Gemiye sonradan binmiştir"
+          },
+          {
+            "id": "o4",
+            "text": "Yurduna dönmüştür"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Suda boğulmuştur",
+        "explanation": "Hûd 11/42-43, Nûh'un oğlunun dağa sığınacağını söylemesine rağmen dalgalar arasında boğulduğunu anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Hûd 11/42-43",
+            "supports": "Hûd 11/42-43, Nûh'un oğlunun dağa sığınacağını söylemesine rağmen dalgalar arasında boğulduğunu anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hûd 11/42-43'e göre gemiye binmeyen Nûh'un oğlunun sonu ne olmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Başka bir gemi yapmıştır"
+          },
+          {
+            "id": "o2",
+            "text": "Suda boğulmuştur"
+          },
+          {
+            "id": "o3",
+            "text": "Gemiye sonradan binmiştir"
+          },
+          {
+            "id": "o4",
+            "text": "Yurduna dönmüştür"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Suda boğulmuştur",
+        "explanation": "Hûd 11/42-43, Nûh'un oğlunun dağa sığınacağını söylemesine rağmen dalgalar arasında boğulduğunu anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — nuh",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/nuh",
+            "locator": "Hûd 11/42-43",
+            "supports": "Hûd 11/42-43, Nûh'un oğlunun dağa sığınacağını söylemesine rağmen dalgalar arasında boğulduğunu anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1062,
+      "sourceSequence": 972,
+      "id": "q57-yunuskura",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Sâffât 37/140-142'ye göre Hz. Yûnus gemide neye katılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir yarışa"
+          },
+          {
+            "id": "o2",
+            "text": "Bir ticaret ihalesine"
+          },
+          {
+            "id": "o3",
+            "text": "Bir düğüne"
+          },
+          {
+            "id": "o4",
+            "text": "Kura çekimine"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Kura çekimine",
+        "explanation": "Sâffât 37/140-142'de Yûnus'un gemiye bindiği, kura çekildiği ve ardından balık tarafından yutulduğu anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yunus",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yunus",
+            "locator": "Sâffât 37/140-142",
+            "supports": "Sâffât 37/140-142'de Yûnus'un gemiye bindiği, kura çekildiği ve ardından balık tarafından yutulduğu anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Sâffât 37/140-142'ye göre Hz. Yûnus gemide neye katılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir yarışa"
+          },
+          {
+            "id": "o2",
+            "text": "Bir ticaret ihalesine"
+          },
+          {
+            "id": "o3",
+            "text": "Bir düğüne"
+          },
+          {
+            "id": "o4",
+            "text": "Kura çekimine"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Kura çekimine",
+        "explanation": "Sâffât 37/140-142'de Yûnus'un gemiye bindiği, kura çekildiği ve ardından balık tarafından yutulduğu anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yunus",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yunus",
+            "locator": "Sâffât 37/140-142",
+            "supports": "Sâffât 37/140-142'de Yûnus'un gemiye bindiği, kura çekildiği ve ardından balık tarafından yutulduğu anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1063,
+      "sourceSequence": 973,
+      "id": "q57-yunusbitki",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Sâffât 37/146'da Hz. Yûnus'un yanında bitirildiği bildirilen bitki hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zakkum"
+          },
+          {
+            "id": "o2",
+            "text": "Tûbâ"
+          },
+          {
+            "id": "o3",
+            "text": "Yaktîn"
+          },
+          {
+            "id": "o4",
+            "text": "Sidre"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Yaktîn",
+        "explanation": "Sâffât 37/146'da Yûnus'un gölgelenmesi için geniş yapraklı yaktîn bitkisinin yetiştirildiği bildirilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yunus",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yunus",
+            "locator": "Sâffât 37/146",
+            "supports": "Sâffât 37/146'da Yûnus'un gölgelenmesi için geniş yapraklı yaktîn bitkisinin yetiştirildiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Sâffât 37/146'da Hz. Yûnus'un yanında bitirildiği bildirilen bitki hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zakkum"
+          },
+          {
+            "id": "o2",
+            "text": "Tûbâ"
+          },
+          {
+            "id": "o3",
+            "text": "Yaktîn"
+          },
+          {
+            "id": "o4",
+            "text": "Sidre"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Yaktîn",
+        "explanation": "Sâffât 37/146'da Yûnus'un gölgelenmesi için geniş yapraklı yaktîn bitkisinin yetiştirildiği bildirilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yunus",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yunus",
+            "locator": "Sâffât 37/146",
+            "supports": "Sâffât 37/146'da Yûnus'un gölgelenmesi için geniş yapraklı yaktîn bitkisinin yetiştirildiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1064,
+      "sourceSequence": 974,
+      "id": "q57-yunuskavim",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yûnus 10/98'e göre Yûnus'un kavmi ne yapınca azaptan kurtulmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yeni bir kral seçince"
+          },
+          {
+            "id": "o2",
+            "text": "İman edince"
+          },
+          {
+            "id": "o3",
+            "text": "Başka ülkeye taşınınca"
+          },
+          {
+            "id": "o4",
+            "text": "Gemi yapınca"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İman edince",
+        "explanation": "Yûnus 10/98'de Yûnus kavminin iman etmesi üzerine başlarına gelmekte olan azabın kaldırıldığı anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yunus",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yunus",
+            "locator": "Yûnus 10/98",
+            "supports": "Yûnus 10/98'de Yûnus kavminin iman etmesi üzerine başlarına gelmekte olan azabın kaldırıldığı anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yûnus 10/98'e göre Yûnus'un kavmi ne yapınca azaptan kurtulmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yeni bir kral seçince"
+          },
+          {
+            "id": "o2",
+            "text": "İman edince"
+          },
+          {
+            "id": "o3",
+            "text": "Başka ülkeye taşınınca"
+          },
+          {
+            "id": "o4",
+            "text": "Gemi yapınca"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İman edince",
+        "explanation": "Yûnus 10/98'de Yûnus kavminin iman etmesi üzerine başlarına gelmekte olan azabın kaldırıldığı anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yunus",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yunus",
+            "locator": "Yûnus 10/98",
+            "supports": "Yûnus 10/98'de Yûnus kavminin iman etmesi üzerine başlarına gelmekte olan azabın kaldırıldığı anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1065,
+      "sourceSequence": 975,
+      "id": "q57-yusufruya",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yûsuf 12/4'e göre Hz. Yûsuf rüyasında kaç yıldız görmüştür?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On bir"
+          },
+          {
+            "id": "o2",
+            "text": "Yedi"
+          },
+          {
+            "id": "o3",
+            "text": "On iki"
+          },
+          {
+            "id": "o4",
+            "text": "Dokuz"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "On bir",
+        "explanation": "Yûsuf 12/4'te on bir yıldızın yanı sıra güneş ve ayın kendisine yöneldiği rüya anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/4",
+            "supports": "Yûsuf 12/4'te on bir yıldızın yanı sıra güneş ve ayın kendisine yöneldiği rüya anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yûsuf 12/4'e göre Hz. Yûsuf rüyasında kaç yıldız görmüştür?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On bir"
+          },
+          {
+            "id": "o2",
+            "text": "Yedi"
+          },
+          {
+            "id": "o3",
+            "text": "On iki"
+          },
+          {
+            "id": "o4",
+            "text": "Dokuz"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "On bir",
+        "explanation": "Yûsuf 12/4'te on bir yıldızın yanı sıra güneş ve ayın kendisine yöneldiği rüya anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/4",
+            "supports": "Yûsuf 12/4'te on bir yıldızın yanı sıra güneş ve ayın kendisine yöneldiği rüya anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1066,
+      "sourceSequence": 976,
+      "id": "q57-yusufzindan",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir"
+          },
+          {
+            "id": "o2",
+            "text": "Üç"
+          },
+          {
+            "id": "o3",
+            "text": "Dört"
+          },
+          {
+            "id": "o4",
+            "text": "İki"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "İki",
+        "explanation": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/36",
+            "supports": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir"
+          },
+          {
+            "id": "o2",
+            "text": "Üç"
+          },
+          {
+            "id": "o3",
+            "text": "Dört"
+          },
+          {
+            "id": "o4",
+            "text": "İki"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "İki",
+        "explanation": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/36",
+            "supports": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1067,
+      "sourceSequence": 977,
+      "id": "q57-yusufgomlek",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yûsuf 12/93-96'ya göre gönderilen gömlek babası Ya‘kūb'a ne sağlamıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kral olmasını"
+          },
+          {
+            "id": "o2",
+            "text": "Bir gemi"
+          },
+          {
+            "id": "o3",
+            "text": "Yeniden görmesini"
+          },
+          {
+            "id": "o4",
+            "text": "Yeni bir ev"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Yeniden görmesini",
+        "explanation": "Yûsuf'un gömleği yüzüne konulduğunda babası Ya‘kūb'un görmesi geri gelir; olay Yûsuf sûresinde anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/93-96",
+            "supports": "Yûsuf'un gömleği yüzüne konulduğunda babası Ya‘kūb'un görmesi geri gelir; olay Yûsuf sûresinde anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yûsuf 12/93-96'ya göre gönderilen gömlek babası Ya‘kūb'a ne sağlamıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kral olmasını"
+          },
+          {
+            "id": "o2",
+            "text": "Bir gemi"
+          },
+          {
+            "id": "o3",
+            "text": "Yeniden görmesini"
+          },
+          {
+            "id": "o4",
+            "text": "Yeni bir ev"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Yeniden görmesini",
+        "explanation": "Yûsuf'un gömleği yüzüne konulduğunda babası Ya‘kūb'un görmesi geri gelir; olay Yûsuf sûresinde anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/93-96",
+            "supports": "Yûsuf'un gömleği yüzüne konulduğunda babası Ya‘kūb'un görmesi geri gelir; olay Yûsuf sûresinde anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1068,
+      "sourceSequence": 978,
+      "id": "q57-yusufbagis",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yûsuf 12/92'de Hz. Yûsuf kardeşlerine hangi karşılığı vermiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Onlarla görüşmeyi reddetmiştir"
+          },
+          {
+            "id": "o2",
+            "text": "Kınamayı bırakıp bağışlanmalarını dilemiştir"
+          },
+          {
+            "id": "o3",
+            "text": "Sürgün cezası vermiştir"
+          },
+          {
+            "id": "o4",
+            "text": "Hepsini hapsetmiştir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kınamayı bırakıp bağışlanmalarını dilemiştir",
+        "explanation": "Yûsuf 12/92'de kardeşlerini kınamayacağını bildirir ve Allah'ın onları bağışlamasını diler.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/92",
+            "supports": "Yûsuf 12/92'de kardeşlerini kınamayacağını bildirir ve Allah'ın onları bağışlamasını diler.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yûsuf 12/92'de Hz. Yûsuf kardeşlerine hangi karşılığı vermiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Onlarla görüşmeyi reddetmiştir"
+          },
+          {
+            "id": "o2",
+            "text": "Kınamayı bırakıp bağışlanmalarını dilemiştir"
+          },
+          {
+            "id": "o3",
+            "text": "Sürgün cezası vermiştir"
+          },
+          {
+            "id": "o4",
+            "text": "Hepsini hapsetmiştir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kınamayı bırakıp bağışlanmalarını dilemiştir",
+        "explanation": "Yûsuf 12/92'de kardeşlerini kınamayacağını bildirir ve Allah'ın onları bağışlamasını diler.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+            "locator": "Yûsuf 12/92",
+            "supports": "Yûsuf 12/92'de kardeşlerini kınamayacağını bildirir ve Allah'ın onları bağışlamasını diler.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1069,
+      "sourceSequence": 980,
+      "id": "q57-suaybolcu",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Şuayb kavmine alışverişte özellikle hangi davranıştan sakınmayı öğütlemiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Deniz ticaretinden"
+          },
+          {
+            "id": "o2",
+            "text": "Pazar kurmaktan"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuk yapmaktan"
+          },
+          {
+            "id": "o4",
+            "text": "Ölçü ve tartıda hileden"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Ölçü ve tartıda hileden",
+        "explanation": "Hûd 11/84-85'te Medyen halkına ölçü ve tartıda haksızlık yapmamaları, insanların hakkını eksiltmemeleri öğütlenir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — suayb",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suayb",
+            "locator": "Hûd 11/84-85",
+            "supports": "Hûd 11/84-85'te Medyen halkına ölçü ve tartıda haksızlık yapmamaları, insanların hakkını eksiltmemeleri öğütlenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Şuayb kavmine alışverişte özellikle hangi davranıştan sakınmayı öğütlemiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Deniz ticaretinden"
+          },
+          {
+            "id": "o2",
+            "text": "Pazar kurmaktan"
+          },
+          {
+            "id": "o3",
+            "text": "Yolculuk yapmaktan"
+          },
+          {
+            "id": "o4",
+            "text": "Ölçü ve tartıda hileden"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Ölçü ve tartıda hileden",
+        "explanation": "Hûd 11/84-85'te Medyen halkına ölçü ve tartıda haksızlık yapmamaları, insanların hakkını eksiltmemeleri öğütlenir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — suayb",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suayb",
+            "locator": "Hûd 11/84-85",
+            "supports": "Hûd 11/84-85'te Medyen halkına ölçü ve tartıda haksızlık yapmamaları, insanların hakkını eksiltmemeleri öğütlenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1070,
+      "sourceSequence": 982,
+      "id": "q57-musaasa",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Mûsâ'nın Firavun karşısındaki mucizelerinden biri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kayadan deve çıkarılması"
+          },
+          {
+            "id": "o2",
+            "text": "Asânın yılana dönüşmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Ayın ikiye ayrılması"
+          },
+          {
+            "id": "o4",
+            "text": "Çamurdan kuş yaratılması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Asânın yılana dönüşmesi",
+        "explanation": "Tâhâ 20/17-21'de asânın Hz. Mûsâ'ya verilen delillerden biri olarak değişmesi anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Tâhâ 20/17-21",
+            "supports": "Tâhâ 20/17-21'de asânın Hz. Mûsâ'ya verilen delillerden biri olarak değişmesi anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Mûsâ'nın Firavun karşısındaki mucizelerinden biri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kayadan deve çıkarılması"
+          },
+          {
+            "id": "o2",
+            "text": "Asânın yılana dönüşmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Ayın ikiye ayrılması"
+          },
+          {
+            "id": "o4",
+            "text": "Çamurdan kuş yaratılması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Asânın yılana dönüşmesi",
+        "explanation": "Tâhâ 20/17-21'de asânın Hz. Mûsâ'ya verilen delillerden biri olarak değişmesi anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Tâhâ 20/17-21",
+            "supports": "Tâhâ 20/17-21'de asânın Hz. Mûsâ'ya verilen delillerden biri olarak değişmesi anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1071,
+      "sourceSequence": 983,
+      "id": "q57-musayed",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Mûsâ'nın 'yed-i beyzâ' mucizesi bedeninin hangi kısmıyla ilgilidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Eli"
+          },
+          {
+            "id": "o2",
+            "text": "Ayağı"
+          },
+          {
+            "id": "o3",
+            "text": "Kulağı"
+          },
+          {
+            "id": "o4",
+            "text": "Gözü"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Eli",
+        "explanation": "Kasas 28/32'de elini koynuna koyup çıkardığında beyaz ve parlak görünmesi Hz. Mûsâ'ya verilen işaretler arasında yer alır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Kasas 28/32",
+            "supports": "Kasas 28/32'de elini koynuna koyup çıkardığında beyaz ve parlak görünmesi Hz. Mûsâ'ya verilen işaretler arasında yer alır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Mûsâ'nın 'yed-i beyzâ' mucizesi bedeninin hangi kısmıyla ilgilidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Eli"
+          },
+          {
+            "id": "o2",
+            "text": "Ayağı"
+          },
+          {
+            "id": "o3",
+            "text": "Kulağı"
+          },
+          {
+            "id": "o4",
+            "text": "Gözü"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Eli",
+        "explanation": "Kasas 28/32'de elini koynuna koyup çıkardığında beyaz ve parlak görünmesi Hz. Mûsâ'ya verilen işaretler arasında yer alır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Kasas 28/32",
+            "supports": "Kasas 28/32'de elini koynuna koyup çıkardığında beyaz ve parlak görünmesi Hz. Mûsâ'ya verilen işaretler arasında yer alır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1072,
+      "sourceSequence": 984,
+      "id": "q57-musaharun",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Mûsâ'ya tebliğinde yardım eden kardeşi hangi peygamberdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yûnus"
+          },
+          {
+            "id": "o2",
+            "text": "İlyâs"
+          },
+          {
+            "id": "o3",
+            "text": "Zekeriyyâ"
+          },
+          {
+            "id": "o4",
+            "text": "Hârûn"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Hârûn",
+        "explanation": "Tâhâ 20/29-35'te Mûsâ, kardeşi Hârûn'un kendisine yardımcı kılınması için dua eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Tâhâ 20/29-35",
+            "supports": "Tâhâ 20/29-35'te Mûsâ, kardeşi Hârûn'un kendisine yardımcı kılınması için dua eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Mûsâ'ya tebliğinde yardım eden kardeşi hangi peygamberdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yûnus"
+          },
+          {
+            "id": "o2",
+            "text": "İlyâs"
+          },
+          {
+            "id": "o3",
+            "text": "Zekeriyyâ"
+          },
+          {
+            "id": "o4",
+            "text": "Hârûn"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Hârûn",
+        "explanation": "Tâhâ 20/29-35'te Mûsâ, kardeşi Hârûn'un kendisine yardımcı kılınması için dua eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Tâhâ 20/29-35",
+            "supports": "Tâhâ 20/29-35'te Mûsâ, kardeşi Hârûn'un kendisine yardımcı kılınması için dua eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1073,
+      "sourceSequence": 985,
+      "id": "q57-musadeniz",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Mûsâ'nın önderliğinde denizi geçen topluluk hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kureyşliler"
+          },
+          {
+            "id": "o2",
+            "text": "Semûdlular"
+          },
+          {
+            "id": "o3",
+            "text": "İsrâiloğulları"
+          },
+          {
+            "id": "o4",
+            "text": "Âd halkı"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "İsrâiloğulları",
+        "explanation": "Şuarâ 26/52-66'da Mûsâ ile İsrâiloğulları'nın denizden geçişi ve Firavun'un ordusunun boğulması anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Şuarâ 26/52-66",
+            "supports": "Şuarâ 26/52-66'da Mûsâ ile İsrâiloğulları'nın denizden geçişi ve Firavun'un ordusunun boğulması anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Mûsâ'nın önderliğinde denizi geçen topluluk hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kureyşliler"
+          },
+          {
+            "id": "o2",
+            "text": "Semûdlular"
+          },
+          {
+            "id": "o3",
+            "text": "İsrâiloğulları"
+          },
+          {
+            "id": "o4",
+            "text": "Âd halkı"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "İsrâiloğulları",
+        "explanation": "Şuarâ 26/52-66'da Mûsâ ile İsrâiloğulları'nın denizden geçişi ve Firavun'un ordusunun boğulması anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — musa--peygamber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/musa--peygamber",
+            "locator": "Şuarâ 26/52-66",
+            "supports": "Şuarâ 26/52-66'da Mûsâ ile İsrâiloğulları'nın denizden geçişi ve Firavun'un ordusunun boğulması anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1074,
+      "sourceSequence": 986,
+      "id": "q57-davudzebur",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Dâvûd'a verildiği bildirilen ilâhî kitap hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Furkān"
+          },
+          {
+            "id": "o2",
+            "text": "Zebûr"
+          },
+          {
+            "id": "o3",
+            "text": "İncil"
+          },
+          {
+            "id": "o4",
+            "text": "Tevrat"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zebûr",
+        "explanation": "Nisâ 4/163 ve İsrâ 17/55, Hz. Dâvûd'a Zebûr verildiğini açıkça ifade eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — davud",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/davud",
+            "locator": "İsrâ 17/55",
+            "supports": "Nisâ 4/163 ve İsrâ 17/55, Hz. Dâvûd'a Zebûr verildiğini açıkça ifade eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Dâvûd'a verildiği bildirilen ilâhî kitap hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Furkān"
+          },
+          {
+            "id": "o2",
+            "text": "Zebûr"
+          },
+          {
+            "id": "o3",
+            "text": "İncil"
+          },
+          {
+            "id": "o4",
+            "text": "Tevrat"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zebûr",
+        "explanation": "Nisâ 4/163 ve İsrâ 17/55, Hz. Dâvûd'a Zebûr verildiğini açıkça ifade eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — davud",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/davud",
+            "locator": "İsrâ 17/55",
+            "supports": "Nisâ 4/163 ve İsrâ 17/55, Hz. Dâvûd'a Zebûr verildiğini açıkça ifade eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1075,
+      "sourceSequence": 987,
+      "id": "q57-davudcalut",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bakara 2/251'e göre Hz. Dâvûd'un öldürdüğü kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Câlût"
+          },
+          {
+            "id": "o2",
+            "text": "Firavun"
+          },
+          {
+            "id": "o3",
+            "text": "Kārûn"
+          },
+          {
+            "id": "o4",
+            "text": "Nemrûd"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Câlût",
+        "explanation": "Bakara 2/251'de Hz. Dâvûd'un Câlût'u öldürdüğü, ardından kendisine hükümdarlık ve hikmet verildiği bildirilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — davud",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/davud",
+            "locator": "Bakara 2/251",
+            "supports": "Bakara 2/251'de Hz. Dâvûd'un Câlût'u öldürdüğü, ardından kendisine hükümdarlık ve hikmet verildiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bakara 2/251'e göre Hz. Dâvûd'un öldürdüğü kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Câlût"
+          },
+          {
+            "id": "o2",
+            "text": "Firavun"
+          },
+          {
+            "id": "o3",
+            "text": "Kārûn"
+          },
+          {
+            "id": "o4",
+            "text": "Nemrûd"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Câlût",
+        "explanation": "Bakara 2/251'de Hz. Dâvûd'un Câlût'u öldürdüğü, ardından kendisine hükümdarlık ve hikmet verildiği bildirilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — davud",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/davud",
+            "locator": "Bakara 2/251",
+            "supports": "Bakara 2/251'de Hz. Dâvûd'un Câlût'u öldürdüğü, ardından kendisine hükümdarlık ve hikmet verildiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1076,
+      "sourceSequence": 988,
+      "id": "q57-hudyer",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hudeybiye mevkii Mekke'nin hangi yönünde bulunmaktadır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Doğusunda"
+          },
+          {
+            "id": "o2",
+            "text": "Kuzeyinde"
+          },
+          {
+            "id": "o3",
+            "text": "Güneydoğusunda"
+          },
+          {
+            "id": "o4",
+            "text": "Batısında"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Batısında",
+        "explanation": "TDV'ye göre Hudeybiye Mekke'nin 17 kilometre batısında, eski Cidde yolu üzerinde bulunur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hudeybiye-antlasmasi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+            "locator": "Hudeybiye'nin coğrafi konumu",
+            "supports": "TDV'ye göre Hudeybiye Mekke'nin 17 kilometre batısında, eski Cidde yolu üzerinde bulunur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hudeybiye mevkii Mekke'nin hangi yönünde bulunmaktadır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Doğusunda"
+          },
+          {
+            "id": "o2",
+            "text": "Kuzeyinde"
+          },
+          {
+            "id": "o3",
+            "text": "Güneydoğusunda"
+          },
+          {
+            "id": "o4",
+            "text": "Batısında"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Batısında",
+        "explanation": "TDV'ye göre Hudeybiye Mekke'nin 17 kilometre batısında, eski Cidde yolu üzerinde bulunur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hudeybiye-antlasmasi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+            "locator": "Hudeybiye'nin coğrafi konumu",
+            "supports": "TDV'ye göre Hudeybiye Mekke'nin 17 kilometre batısında, eski Cidde yolu üzerinde bulunur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1077,
+      "sourceSequence": 989,
+      "id": "q57-hudumre",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hudeybiye'ye yönelen Müslümanların yolculuğunun asıl amacı neydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Suriye'ye göç etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Hayber'i fethetmek"
+          },
+          {
+            "id": "o3",
+            "text": "Umre yapmak"
+          },
+          {
+            "id": "o4",
+            "text": "Bizans'la savaşmak"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Umre yapmak",
+        "explanation": "Hz. Peygamber ve ashabı hicrî 6. yılda umre niyetiyle Mekke'ye gitmiş, Hudeybiye'de barış antlaşması yapılmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hudeybiye-antlasmasi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+            "locator": "Umre niyetli yolculuk",
+            "supports": "Hz. Peygamber ve ashabı hicrî 6. yılda umre niyetiyle Mekke'ye gitmiş, Hudeybiye'de barış antlaşması yapılmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hudeybiye'ye yönelen Müslümanların yolculuğunun asıl amacı neydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Suriye'ye göç etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Hayber'i fethetmek"
+          },
+          {
+            "id": "o3",
+            "text": "Umre yapmak"
+          },
+          {
+            "id": "o4",
+            "text": "Bizans'la savaşmak"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Umre yapmak",
+        "explanation": "Hz. Peygamber ve ashabı hicrî 6. yılda umre niyetiyle Mekke'ye gitmiş, Hudeybiye'de barış antlaşması yapılmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hudeybiye-antlasmasi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+            "locator": "Umre niyetli yolculuk",
+            "supports": "Hz. Peygamber ve ashabı hicrî 6. yılda umre niyetiyle Mekke'ye gitmiş, Hudeybiye'de barış antlaşması yapılmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1078,
+      "sourceSequence": 992,
+      "id": "q57-hendeksav",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hendek Gazvesi'nde Medine'yi korumak için hangi savunma tekniği kullanılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizden donanma göndermek"
+          },
+          {
+            "id": "o2",
+            "text": "Şehir surlarını yıkmak"
+          },
+          {
+            "id": "o3",
+            "text": "Kentten bütünüyle çekilmek"
+          },
+          {
+            "id": "o4",
+            "text": "Hendek kazmak"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Hendek kazmak",
+        "explanation": "Medine'nin savunulması için açılan hendekler savaşa adını vermiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hendek-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+            "locator": "Hendek savunma hattı",
+            "supports": "Medine'nin savunulması için açılan hendekler savaşa adını vermiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hendek Gazvesi'nde Medine'yi korumak için hangi savunma tekniği kullanılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizden donanma göndermek"
+          },
+          {
+            "id": "o2",
+            "text": "Şehir surlarını yıkmak"
+          },
+          {
+            "id": "o3",
+            "text": "Kentten bütünüyle çekilmek"
+          },
+          {
+            "id": "o4",
+            "text": "Hendek kazmak"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Hendek kazmak",
+        "explanation": "Medine'nin savunulması için açılan hendekler savaşa adını vermiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hendek-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+            "locator": "Hendek savunma hattı",
+            "supports": "Medine'nin savunulması için açılan hendekler savaşa adını vermiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1079,
+      "sourceSequence": 993,
+      "id": "q57-hendektarih",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hendek Gazvesi hicretin kaçıncı yılına tarihlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üçüncü"
+          },
+          {
+            "id": "o2",
+            "text": "Dokuzuncu"
+          },
+          {
+            "id": "o3",
+            "text": "Beşinci"
+          },
+          {
+            "id": "o4",
+            "text": "Birinci"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Beşinci",
+        "explanation": "TDV Hendek maddesi savaşı hicrî 5, milâdî 627 yılına tarihler.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hendek-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+            "locator": "Hicrî 5 / 627",
+            "supports": "TDV Hendek maddesi savaşı hicrî 5, milâdî 627 yılına tarihler.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hendek Gazvesi hicretin kaçıncı yılına tarihlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üçüncü"
+          },
+          {
+            "id": "o2",
+            "text": "Dokuzuncu"
+          },
+          {
+            "id": "o3",
+            "text": "Beşinci"
+          },
+          {
+            "id": "o4",
+            "text": "Birinci"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Beşinci",
+        "explanation": "TDV Hendek maddesi savaşı hicrî 5, milâdî 627 yılına tarihler.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hendek-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+            "locator": "Hicrî 5 / 627",
+            "supports": "TDV Hendek maddesi savaşı hicrî 5, milâdî 627 yılına tarihler.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1080,
+      "sourceSequence": 994,
+      "id": "q57-tebukusre",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tebük Seferi'nin zorlukları nedeniyle sefere katılan ordu nasıl anılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ehl-i Suffe"
+          },
+          {
+            "id": "o2",
+            "text": "Ceyşü'l-usre"
+          },
+          {
+            "id": "o3",
+            "text": "Ashâb-ı Kehf"
+          },
+          {
+            "id": "o4",
+            "text": "Dârü'l-Erkam"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ceyşü'l-usre",
+        "explanation": "Tebük yolculuğunun sıkıntıları sebebiyle orduya güçlük ordusu anlamında Ceyşü'l-usre denilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — tebuk-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+            "locator": "Ceyşü'l-usre adı",
+            "supports": "Tebük yolculuğunun sıkıntıları sebebiyle orduya güçlük ordusu anlamında Ceyşü'l-usre denilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tebük Seferi'nin zorlukları nedeniyle sefere katılan ordu nasıl anılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ehl-i Suffe"
+          },
+          {
+            "id": "o2",
+            "text": "Ceyşü'l-usre"
+          },
+          {
+            "id": "o3",
+            "text": "Ashâb-ı Kehf"
+          },
+          {
+            "id": "o4",
+            "text": "Dârü'l-Erkam"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ceyşü'l-usre",
+        "explanation": "Tebük yolculuğunun sıkıntıları sebebiyle orduya güçlük ordusu anlamında Ceyşü'l-usre denilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — tebuk-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+            "locator": "Ceyşü'l-usre adı",
+            "supports": "Tebük yolculuğunun sıkıntıları sebebiyle orduya güçlük ordusu anlamında Ceyşü'l-usre denilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1081,
+      "sourceSequence": 995,
+      "id": "q57-tebukmuh",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tebük Gazvesi'nde Bizans kuvvetleriyle doğrudan büyük bir savaş yaşanmış mıdır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hayır, doğrudan çatışma olmamıştır"
+          },
+          {
+            "id": "o2",
+            "text": "Evet, Mekke'de yapılmıştır"
+          },
+          {
+            "id": "o3",
+            "text": "Evet, Medine kuşatılmıştır"
+          },
+          {
+            "id": "o4",
+            "text": "Evet, deniz savaşı olmuştur"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Hayır, doğrudan çatışma olmamıştır",
+        "explanation": "TDV Tebük maddesi, bu sefer sırasında doğrudan bir çarpışma meydana gelmediğini açıkça belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — tebuk-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+            "locator": "Doğrudan çatışma olmaması",
+            "supports": "TDV Tebük maddesi, bu sefer sırasında doğrudan bir çarpışma meydana gelmediğini açıkça belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tebük Gazvesi'nde Bizans kuvvetleriyle doğrudan büyük bir savaş yaşanmış mıdır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hayır, doğrudan çatışma olmamıştır"
+          },
+          {
+            "id": "o2",
+            "text": "Evet, Mekke'de yapılmıştır"
+          },
+          {
+            "id": "o3",
+            "text": "Evet, Medine kuşatılmıştır"
+          },
+          {
+            "id": "o4",
+            "text": "Evet, deniz savaşı olmuştur"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Hayır, doğrudan çatışma olmamıştır",
+        "explanation": "TDV Tebük maddesi, bu sefer sırasında doğrudan bir çarpışma meydana gelmediğini açıkça belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — tebuk-gazvesi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+            "locator": "Doğrudan çatışma olmaması",
+            "supports": "TDV Tebük maddesi, bu sefer sırasında doğrudan bir çarpışma meydana gelmediğini açıkça belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1082,
+      "sourceSequence": 996,
+      "id": "q57-hayberdate",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hayber seferi hicretin kaçıncı yılında yapılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üçüncü"
+          },
+          {
+            "id": "o2",
+            "text": "Beşinci"
+          },
+          {
+            "id": "o3",
+            "text": "Onuncu"
+          },
+          {
+            "id": "o4",
+            "text": "Yedinci"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Yedinci",
+        "explanation": "TDV Hayber maddesine göre sefer hicrî 7, milâdî 628 yılına tarihlenir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hayber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hayber",
+            "locator": "Hicrî 7 / 628",
+            "supports": "TDV Hayber maddesine göre sefer hicrî 7, milâdî 628 yılına tarihlenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hayber seferi hicretin kaçıncı yılında yapılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üçüncü"
+          },
+          {
+            "id": "o2",
+            "text": "Beşinci"
+          },
+          {
+            "id": "o3",
+            "text": "Onuncu"
+          },
+          {
+            "id": "o4",
+            "text": "Yedinci"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Yedinci",
+        "explanation": "TDV Hayber maddesine göre sefer hicrî 7, milâdî 628 yılına tarihlenir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hayber",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hayber",
+            "locator": "Hicrî 7 / 628",
+            "supports": "TDV Hayber maddesine göre sefer hicrî 7, milâdî 628 yılına tarihlenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1083,
+      "sourceSequence": 998,
+      "id": "q57-vakifgay",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Vakıf kurumunun en temel özelliği hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız ticaret karı elde etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Bir mal veya gelirini hayır hizmetine ayırmak"
+          },
+          {
+            "id": "o3",
+            "text": "Bireysel serveti gizlemek"
+          },
+          {
+            "id": "o4",
+            "text": "Savaşı finanse etmeye mecbur olmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir mal veya gelirini hayır hizmetine ayırmak",
+        "explanation": "TDV Vakıf maddesi kurumu, bir malın veya gelirinin toplumsal, dinî ya da hayrî amaçlara kalıcı biçimde tahsisi olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakif",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Vakıf tanımı",
+            "supports": "TDV Vakıf maddesi kurumu, bir malın veya gelirinin toplumsal, dinî ya da hayrî amaçlara kalıcı biçimde tahsisi olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Vakıf kurumunun en temel özelliği hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız ticaret karı elde etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Bir mal veya gelirini hayır hizmetine ayırmak"
+          },
+          {
+            "id": "o3",
+            "text": "Bireysel serveti gizlemek"
+          },
+          {
+            "id": "o4",
+            "text": "Savaşı finanse etmeye mecbur olmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir mal veya gelirini hayır hizmetine ayırmak",
+        "explanation": "TDV Vakıf maddesi kurumu, bir malın veya gelirinin toplumsal, dinî ya da hayrî amaçlara kalıcı biçimde tahsisi olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakif",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Vakıf tanımı",
+            "supports": "TDV Vakıf maddesi kurumu, bir malın veya gelirinin toplumsal, dinî ya da hayrî amaçlara kalıcı biçimde tahsisi olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1084,
+      "sourceSequence": 999,
+      "id": "q57-vakfiyeterim",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bir vakfın kuruluş şartlarını ve idaresini açıklayan resmi belgeye ne denir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Vakfiye"
+          },
+          {
+            "id": "o2",
+            "text": "Fetva"
+          },
+          {
+            "id": "o3",
+            "text": "Şecere"
+          },
+          {
+            "id": "o4",
+            "text": "İcâzet"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Vakfiye",
+        "explanation": "TDV Vakfiye maddesine göre vakfiye, vakfedilen malların yönetim ve harcama şartlarını belirleyen belgedir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakfiye",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakfiye",
+            "locator": "Vakfiye kavramı",
+            "supports": "TDV Vakfiye maddesine göre vakfiye, vakfedilen malların yönetim ve harcama şartlarını belirleyen belgedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bir vakfın kuruluş şartlarını ve idaresini açıklayan resmi belgeye ne denir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Vakfiye"
+          },
+          {
+            "id": "o2",
+            "text": "Fetva"
+          },
+          {
+            "id": "o3",
+            "text": "Şecere"
+          },
+          {
+            "id": "o4",
+            "text": "İcâzet"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Vakfiye",
+        "explanation": "TDV Vakfiye maddesine göre vakfiye, vakfedilen malların yönetim ve harcama şartlarını belirleyen belgedir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakfiye",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakfiye",
+            "locator": "Vakfiye kavramı",
+            "supports": "TDV Vakfiye maddesine göre vakfiye, vakfedilen malların yönetim ve harcama şartlarını belirleyen belgedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1085,
+      "sourceSequence": 1000,
+      "id": "q57-vakfiyepersonel",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tarihî vakfiyelerde çalışanlarla ilgili hangi bilgiye yer verilebilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çalışanların burçları"
+          },
+          {
+            "id": "o2",
+            "text": "Denizlerin derinliği"
+          },
+          {
+            "id": "o3",
+            "text": "Silahların üretim tarihi"
+          },
+          {
+            "id": "o4",
+            "text": "Personel sayısı ve ücretleri"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Personel sayısı ve ücretleri",
+        "explanation": "TDV Vakfiye maddesi, görevli personelin sayısı ve ödenecek maaşların vakfiye belgesinde düzenlenebildiğini kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakfiye",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakfiye",
+            "locator": "Personel ve maaş",
+            "supports": "TDV Vakfiye maddesi, görevli personelin sayısı ve ödenecek maaşların vakfiye belgesinde düzenlenebildiğini kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tarihî vakfiyelerde çalışanlarla ilgili hangi bilgiye yer verilebilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çalışanların burçları"
+          },
+          {
+            "id": "o2",
+            "text": "Denizlerin derinliği"
+          },
+          {
+            "id": "o3",
+            "text": "Silahların üretim tarihi"
+          },
+          {
+            "id": "o4",
+            "text": "Personel sayısı ve ücretleri"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Personel sayısı ve ücretleri",
+        "explanation": "TDV Vakfiye maddesi, görevli personelin sayısı ve ödenecek maaşların vakfiye belgesinde düzenlenebildiğini kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakfiye",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakfiye",
+            "locator": "Personel ve maaş",
+            "supports": "TDV Vakfiye maddesi, görevli personelin sayısı ve ödenecek maaşların vakfiye belgesinde düzenlenebildiğini kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1086,
+      "sourceSequence": 1001,
+      "id": "q57-vakifdukk",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Vakıf külliyelerindeki dükkân ve hanların başlıca amacı ne olmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şehir kapılarını kapatmak"
+          },
+          {
+            "id": "o2",
+            "text": "Asker yetiştirmek"
+          },
+          {
+            "id": "o3",
+            "text": "Hayır hizmetlerine sürekli gelir sağlamak"
+          },
+          {
+            "id": "o4",
+            "text": "Kitapları yakmak"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Hayır hizmetlerine sürekli gelir sağlamak",
+        "explanation": "TDV Vakıf maddesinde han, hamam ve dükkân gibi yapılar vakfın sosyal hizmetlerine finansman sağlayan gelir kaynakları olarak açıklanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakif",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Külliyenin gelir getirici birimleri",
+            "supports": "TDV Vakıf maddesinde han, hamam ve dükkân gibi yapılar vakfın sosyal hizmetlerine finansman sağlayan gelir kaynakları olarak açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Vakıf külliyelerindeki dükkân ve hanların başlıca amacı ne olmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şehir kapılarını kapatmak"
+          },
+          {
+            "id": "o2",
+            "text": "Asker yetiştirmek"
+          },
+          {
+            "id": "o3",
+            "text": "Hayır hizmetlerine sürekli gelir sağlamak"
+          },
+          {
+            "id": "o4",
+            "text": "Kitapları yakmak"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Hayır hizmetlerine sürekli gelir sağlamak",
+        "explanation": "TDV Vakıf maddesinde han, hamam ve dükkân gibi yapılar vakfın sosyal hizmetlerine finansman sağlayan gelir kaynakları olarak açıklanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — vakif",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Külliyenin gelir getirici birimleri",
+            "supports": "TDV Vakıf maddesinde han, hamam ve dükkân gibi yapılar vakfın sosyal hizmetlerine finansman sağlayan gelir kaynakları olarak açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1087,
+      "sourceSequence": 1002,
+      "id": "q57-ezanbilal",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İlk ezanı okumasıyla tanınan sahâbî kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ebû Hüreyre"
+          },
+          {
+            "id": "o2",
+            "text": "Bilâl-i Habeşî"
+          },
+          {
+            "id": "o3",
+            "text": "Mus'ab b. Umeyr"
+          },
+          {
+            "id": "o4",
+            "text": "Hâlid b. Velîd"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bilâl-i Habeşî",
+        "explanation": "TDV Ezan maddesi, ilk ezanın Bilâl tarafından okunduğunu ve bunun Medine döneminde uygulamaya konulduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ezan",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ezan",
+            "locator": "Bilâl ve ilk ezan",
+            "supports": "TDV Ezan maddesi, ilk ezanın Bilâl tarafından okunduğunu ve bunun Medine döneminde uygulamaya konulduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İlk ezanı okumasıyla tanınan sahâbî kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ebû Hüreyre"
+          },
+          {
+            "id": "o2",
+            "text": "Bilâl-i Habeşî"
+          },
+          {
+            "id": "o3",
+            "text": "Mus'ab b. Umeyr"
+          },
+          {
+            "id": "o4",
+            "text": "Hâlid b. Velîd"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bilâl-i Habeşî",
+        "explanation": "TDV Ezan maddesi, ilk ezanın Bilâl tarafından okunduğunu ve bunun Medine döneminde uygulamaya konulduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ezan",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ezan",
+            "locator": "Bilâl ve ilk ezan",
+            "supports": "TDV Ezan maddesi, ilk ezanın Bilâl tarafından okunduğunu ve bunun Medine döneminde uygulamaya konulduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1088,
+      "sourceSequence": 1003,
+      "id": "q57-ezanruya",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ezan sözlerini rüyasında gördüğünü Hz. Peygamber'e anlatan sahâbî kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Abdullah b. Zeyd"
+          },
+          {
+            "id": "o2",
+            "text": "Selmân-ı Fârisî"
+          },
+          {
+            "id": "o3",
+            "text": "Sa'd b. Ebû Vakkās"
+          },
+          {
+            "id": "o4",
+            "text": "Zeyd b. Hârise"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Abdullah b. Zeyd",
+        "explanation": "TDV Ezan maddesinde Abdullah b. Zeyd b. Sa'lebe'nin rüyasında ezan sözlerini duyduğu ve Hz. Peygamber'e bildirdiği anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ezan",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ezan",
+            "locator": "Abdullah b. Zeyd'in rüyası",
+            "supports": "TDV Ezan maddesinde Abdullah b. Zeyd b. Sa'lebe'nin rüyasında ezan sözlerini duyduğu ve Hz. Peygamber'e bildirdiği anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ezan sözlerini rüyasında gördüğünü Hz. Peygamber'e anlatan sahâbî kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Abdullah b. Zeyd"
+          },
+          {
+            "id": "o2",
+            "text": "Selmân-ı Fârisî"
+          },
+          {
+            "id": "o3",
+            "text": "Sa'd b. Ebû Vakkās"
+          },
+          {
+            "id": "o4",
+            "text": "Zeyd b. Hârise"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Abdullah b. Zeyd",
+        "explanation": "TDV Ezan maddesinde Abdullah b. Zeyd b. Sa'lebe'nin rüyasında ezan sözlerini duyduğu ve Hz. Peygamber'e bildirdiği anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ezan",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ezan",
+            "locator": "Abdullah b. Zeyd'in rüyası",
+            "supports": "TDV Ezan maddesinde Abdullah b. Zeyd b. Sa'lebe'nin rüyasında ezan sözlerini duyduğu ve Hz. Peygamber'e bildirdiği anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1089,
+      "sourceSequence": 1006,
+      "id": "q57-oruclft",
+      "category": "fikih",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Oruç ibadetinde 'iftar' neyi ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zekât miktarını hesaplamayı"
+          },
+          {
+            "id": "o2",
+            "text": "Vakti gelince orucu açmayı"
+          },
+          {
+            "id": "o3",
+            "text": "Oruç için niyet etmeyi"
+          },
+          {
+            "id": "o4",
+            "text": "Sabah namazını kılmayı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Vakti gelince orucu açmayı",
+        "explanation": "TDV Oruç maddesi, vakti gelince orucun usulünce sona erdirilmesini iftar olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — oruc",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/oruc",
+            "locator": "İftar tanımı",
+            "supports": "TDV Oruç maddesi, vakti gelince orucun usulünce sona erdirilmesini iftar olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Oruç ibadetinde 'iftar' neyi ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zekât miktarını hesaplamayı"
+          },
+          {
+            "id": "o2",
+            "text": "Vakti gelince orucu açmayı"
+          },
+          {
+            "id": "o3",
+            "text": "Oruç için niyet etmeyi"
+          },
+          {
+            "id": "o4",
+            "text": "Sabah namazını kılmayı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Vakti gelince orucu açmayı",
+        "explanation": "TDV Oruç maddesi, vakti gelince orucun usulünce sona erdirilmesini iftar olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — oruc",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/oruc",
+            "locator": "İftar tanımı",
+            "supports": "TDV Oruç maddesi, vakti gelince orucun usulünce sona erdirilmesini iftar olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1090,
+      "sourceSequence": 1007,
+      "id": "q57-imsakkoken",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmsak kelimesinin sözlük anlamı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kendini tutmak ve alıkoymak"
+          },
+          {
+            "id": "o2",
+            "text": "Yeni bir sefere çıkmak"
+          },
+          {
+            "id": "o3",
+            "text": "Ticaret yapmak"
+          },
+          {
+            "id": "o4",
+            "text": "Haber duyurmak"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Kendini tutmak ve alıkoymak",
+        "explanation": "İmsak sözcüğü kendini tutmak ve bir şeyden uzak durmak anlamlarına gelir; oruçtaki kullanımı bununla ilişkilidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — imsak",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/imsak",
+            "locator": "İmsakın sözlük anlamı",
+            "supports": "İmsak sözcüğü kendini tutmak ve bir şeyden uzak durmak anlamlarına gelir; oruçtaki kullanımı bununla ilişkilidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmsak kelimesinin sözlük anlamı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kendini tutmak ve alıkoymak"
+          },
+          {
+            "id": "o2",
+            "text": "Yeni bir sefere çıkmak"
+          },
+          {
+            "id": "o3",
+            "text": "Ticaret yapmak"
+          },
+          {
+            "id": "o4",
+            "text": "Haber duyurmak"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Kendini tutmak ve alıkoymak",
+        "explanation": "İmsak sözcüğü kendini tutmak ve bir şeyden uzak durmak anlamlarına gelir; oruçtaki kullanımı bununla ilişkilidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — imsak",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/imsak",
+            "locator": "İmsakın sözlük anlamı",
+            "supports": "İmsak sözcüğü kendini tutmak ve bir şeyden uzak durmak anlamlarına gelir; oruçtaki kullanımı bununla ilişkilidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1091,
+      "sourceSequence": 1008,
+      "id": "q58-esma-kunye",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "'Zâtü'n-nitâkayn' lakabıyla tanınan kadın sahâbî kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Esmâ bint Ebû Bekir"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o3",
+            "text": "Hafsa bint Ömer"
+          },
+          {
+            "id": "o4",
+            "text": "Ümmü Habîbe"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Esmâ bint Ebû Bekir",
+        "explanation": "Hicret yolculuğu için hazırlanan azık ve su kaplarını bağlamak üzere kuşağını ikiye ayıran Esmâ bu sebeple iki kuşaklı anlamındaki lakabı almıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+            "locator": "Hicret ve iki kuşak",
+            "supports": "Hicret yolculuğu için hazırlanan azık ve su kaplarını bağlamak üzere kuşağını ikiye ayıran Esmâ bu sebeple iki kuşaklı anlamındaki lakabı almıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "'Zâtü'n-nitâkayn' lakabıyla tanınan kadın sahâbî kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Esmâ bint Ebû Bekir"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o3",
+            "text": "Hafsa bint Ömer"
+          },
+          {
+            "id": "o4",
+            "text": "Ümmü Habîbe"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Esmâ bint Ebû Bekir",
+        "explanation": "Hicret yolculuğu için hazırlanan azık ve su kaplarını bağlamak üzere kuşağını ikiye ayıran Esmâ bu sebeple iki kuşaklı anlamındaki lakabı almıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+            "locator": "Hicret ve iki kuşak",
+            "supports": "Hicret yolculuğu için hazırlanan azık ve su kaplarını bağlamak üzere kuşağını ikiye ayıran Esmâ bu sebeple iki kuşaklı anlamındaki lakabı almıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1092,
+      "sourceSequence": 1011,
+      "id": "q58-esma-kardes",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Esmâ bint Ebû Bekir, Hz. Âişe ile nasıl akrabadır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kız kardeşinin kızıdır"
+          },
+          {
+            "id": "o2",
+            "text": "Baba bir kardeştir"
+          },
+          {
+            "id": "o3",
+            "text": "Anneannesidir"
+          },
+          {
+            "id": "o4",
+            "text": "Halasının kızıdır"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Baba bir kardeştir",
+        "explanation": "TDV Esmâ maddesi, Hz. Ebû Bekir'in kızı Esmâ'nın Hz. Âişe ile baba bir kardeş olduğunu açıkça bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+            "locator": "Esmâ ile Âişe'nin yakınlığı",
+            "supports": "TDV Esmâ maddesi, Hz. Ebû Bekir'in kızı Esmâ'nın Hz. Âişe ile baba bir kardeş olduğunu açıkça bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Esmâ bint Ebû Bekir, Hz. Âişe ile nasıl akrabadır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kız kardeşinin kızıdır"
+          },
+          {
+            "id": "o2",
+            "text": "Baba bir kardeştir"
+          },
+          {
+            "id": "o3",
+            "text": "Anneannesidir"
+          },
+          {
+            "id": "o4",
+            "text": "Halasının kızıdır"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Baba bir kardeştir",
+        "explanation": "TDV Esmâ maddesi, Hz. Ebû Bekir'in kızı Esmâ'nın Hz. Âişe ile baba bir kardeş olduğunu açıkça bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+            "locator": "Esmâ ile Âişe'nin yakınlığı",
+            "supports": "TDV Esmâ maddesi, Hz. Ebû Bekir'in kızı Esmâ'nın Hz. Âişe ile baba bir kardeş olduğunu açıkça bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1093,
+      "sourceSequence": 1012,
+      "id": "q58-seleme-asli",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ümmü Seleme künyesiyle tanınan sahâbînin asıl adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hind"
+          },
+          {
+            "id": "o2",
+            "text": "Rukıyye"
+          },
+          {
+            "id": "o3",
+            "text": "Rümeysâ"
+          },
+          {
+            "id": "o4",
+            "text": "Safiyye"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Hind",
+        "explanation": "TDV Ümmü Seleme maddesi onun Hind bint Ebû Ümeyye olduğunu ve ismi yerine yaygın biçimde Ümmü Seleme künyesiyle tanındığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Ümmü Seleme'nin adı",
+            "supports": "TDV Ümmü Seleme maddesi onun Hind bint Ebû Ümeyye olduğunu ve ismi yerine yaygın biçimde Ümmü Seleme künyesiyle tanındığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ümmü Seleme künyesiyle tanınan sahâbînin asıl adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hind"
+          },
+          {
+            "id": "o2",
+            "text": "Rukıyye"
+          },
+          {
+            "id": "o3",
+            "text": "Rümeysâ"
+          },
+          {
+            "id": "o4",
+            "text": "Safiyye"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Hind",
+        "explanation": "TDV Ümmü Seleme maddesi onun Hind bint Ebû Ümeyye olduğunu ve ismi yerine yaygın biçimde Ümmü Seleme künyesiyle tanındığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Ümmü Seleme'nin adı",
+            "supports": "TDV Ümmü Seleme maddesi onun Hind bint Ebû Ümeyye olduğunu ve ismi yerine yaygın biçimde Ümmü Seleme künyesiyle tanındığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1094,
+      "sourceSequence": 1013,
+      "id": "q58-seleme-kabile",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ümmü Seleme, Kureyş'in hangi koluna mensuptur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Benî Hâşim"
+          },
+          {
+            "id": "o2",
+            "text": "Benî Temîm"
+          },
+          {
+            "id": "o3",
+            "text": "Benî Sâide"
+          },
+          {
+            "id": "o4",
+            "text": "Benî Mahzûm"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Benî Mahzûm",
+        "explanation": "TDV Ümmü Seleme maddesi kendisinin Kureyş'in Benî Mahzûm koluna mensup olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Benî Mahzûm kolu",
+            "supports": "TDV Ümmü Seleme maddesi kendisinin Kureyş'in Benî Mahzûm koluna mensup olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ümmü Seleme, Kureyş'in hangi koluna mensuptur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Benî Hâşim"
+          },
+          {
+            "id": "o2",
+            "text": "Benî Temîm"
+          },
+          {
+            "id": "o3",
+            "text": "Benî Sâide"
+          },
+          {
+            "id": "o4",
+            "text": "Benî Mahzûm"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Benî Mahzûm",
+        "explanation": "TDV Ümmü Seleme maddesi kendisinin Kureyş'in Benî Mahzûm koluna mensup olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Benî Mahzûm kolu",
+            "supports": "TDV Ümmü Seleme maddesi kendisinin Kureyş'in Benî Mahzûm koluna mensup olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1095,
+      "sourceSequence": 1014,
+      "id": "q58-seleme-hud",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hudeybiye'de sahâbîler üzgünken Hz. Peygamber'e kurban kesip tıraş olarak örnek olmasını tavsiye eden kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Esmâ bint Ebû Bekir"
+          },
+          {
+            "id": "o2",
+            "text": "Şifâ bint Abdullah"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o4",
+            "text": "Ümmü Süleym"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Ümmü Seleme",
+        "explanation": "Ümmü Seleme'nin tavsiyesi üzerine Resûlullah kurbanını kesip tıraş olmuş ve sahâbîler de bu davranışı izlemiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Hudeybiye sırasında isabetli tavsiye",
+            "supports": "Ümmü Seleme'nin tavsiyesi üzerine Resûlullah kurbanını kesip tıraş olmuş ve sahâbîler de bu davranışı izlemiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hudeybiye'de sahâbîler üzgünken Hz. Peygamber'e kurban kesip tıraş olarak örnek olmasını tavsiye eden kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Esmâ bint Ebû Bekir"
+          },
+          {
+            "id": "o2",
+            "text": "Şifâ bint Abdullah"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o4",
+            "text": "Ümmü Süleym"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Ümmü Seleme",
+        "explanation": "Ümmü Seleme'nin tavsiyesi üzerine Resûlullah kurbanını kesip tıraş olmuş ve sahâbîler de bu davranışı izlemiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Hudeybiye sırasında isabetli tavsiye",
+            "supports": "Ümmü Seleme'nin tavsiyesi üzerine Resûlullah kurbanını kesip tıraş olmuş ve sahâbîler de bu davranışı izlemiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1096,
+      "sourceSequence": 1015,
+      "id": "q58-seleme-sefer",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "TDV'ye göre Ümmü Seleme Hz. Peygamber ile hangi iki sefere katılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mûte ve Kadisiye"
+          },
+          {
+            "id": "o2",
+            "text": "Hayber ve Tâif"
+          },
+          {
+            "id": "o3",
+            "text": "Bedir ve Uhud"
+          },
+          {
+            "id": "o4",
+            "text": "Hendek ve Tebük"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hayber ve Tâif",
+        "explanation": "TDV Ümmü Seleme maddesinde kendisinin Hz. Peygamber'le birlikte Hayber ve Tâif seferlerine iştirak ettiği kaydedilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Hayber ve Tâif seferleri",
+            "supports": "TDV Ümmü Seleme maddesinde kendisinin Hz. Peygamber'le birlikte Hayber ve Tâif seferlerine iştirak ettiği kaydedilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "TDV'ye göre Ümmü Seleme Hz. Peygamber ile hangi iki sefere katılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mûte ve Kadisiye"
+          },
+          {
+            "id": "o2",
+            "text": "Hayber ve Tâif"
+          },
+          {
+            "id": "o3",
+            "text": "Bedir ve Uhud"
+          },
+          {
+            "id": "o4",
+            "text": "Hendek ve Tebük"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hayber ve Tâif",
+        "explanation": "TDV Ümmü Seleme maddesinde kendisinin Hz. Peygamber'le birlikte Hayber ve Tâif seferlerine iştirak ettiği kaydedilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Hayber ve Tâif seferleri",
+            "supports": "TDV Ümmü Seleme maddesinde kendisinin Hz. Peygamber'le birlikte Hayber ve Tâif seferlerine iştirak ettiği kaydedilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1097,
+      "sourceSequence": 1016,
+      "id": "q58-suleym-anne",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Enes b. Mâlik"
+          },
+          {
+            "id": "o2",
+            "text": "Ebû Hüreyre"
+          },
+          {
+            "id": "o3",
+            "text": "Abdullah b. Abbas"
+          },
+          {
+            "id": "o4",
+            "text": "Zeyd b. Sâbit"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Enes b. Mâlik",
+        "explanation": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Enes b. Mâlik'in annesi",
+            "supports": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Enes b. Mâlik"
+          },
+          {
+            "id": "o2",
+            "text": "Ebû Hüreyre"
+          },
+          {
+            "id": "o3",
+            "text": "Abdullah b. Abbas"
+          },
+          {
+            "id": "o4",
+            "text": "Zeyd b. Sâbit"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Enes b. Mâlik",
+        "explanation": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Enes b. Mâlik'in annesi",
+            "supports": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1098,
+      "sourceSequence": 1017,
+      "id": "q58-suleym-kardes",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kıbrıs seferiyle tanınan Ümmü Harâm, Ümmü Süleym'in nesidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Annesi"
+          },
+          {
+            "id": "o2",
+            "text": "Kızı"
+          },
+          {
+            "id": "o3",
+            "text": "Gelinidir"
+          },
+          {
+            "id": "o4",
+            "text": "Kız kardeşi"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Kız kardeşi",
+        "explanation": "TDV Ümmü Süleym maddesi, Kıbrıs seferi sırasında şehit olan Ümmü Harâm'ın Ümmü Süleym'in kardeşi olduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Ümmü Harâm'la kardeşliği",
+            "supports": "TDV Ümmü Süleym maddesi, Kıbrıs seferi sırasında şehit olan Ümmü Harâm'ın Ümmü Süleym'in kardeşi olduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kıbrıs seferiyle tanınan Ümmü Harâm, Ümmü Süleym'in nesidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Annesi"
+          },
+          {
+            "id": "o2",
+            "text": "Kızı"
+          },
+          {
+            "id": "o3",
+            "text": "Gelinidir"
+          },
+          {
+            "id": "o4",
+            "text": "Kız kardeşi"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Kız kardeşi",
+        "explanation": "TDV Ümmü Süleym maddesi, Kıbrıs seferi sırasında şehit olan Ümmü Harâm'ın Ümmü Süleym'in kardeşi olduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Ümmü Harâm'la kardeşliği",
+            "supports": "TDV Ümmü Süleym maddesi, Kıbrıs seferi sırasında şehit olan Ümmü Harâm'ın Ümmü Süleym'in kardeşi olduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1099,
+      "sourceSequence": 1018,
+      "id": "q58-suleym-ogul",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ümmü Süleym'in oğlu Enes, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Beş yıl"
+          },
+          {
+            "id": "o2",
+            "text": "Yirmi yıl"
+          },
+          {
+            "id": "o3",
+            "text": "On yıl"
+          },
+          {
+            "id": "o4",
+            "text": "İki yıl"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "On yıl",
+        "explanation": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Enes'in hizmet süresi",
+            "supports": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ümmü Süleym'in oğlu Enes, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Beş yıl"
+          },
+          {
+            "id": "o2",
+            "text": "Yirmi yıl"
+          },
+          {
+            "id": "o3",
+            "text": "On yıl"
+          },
+          {
+            "id": "o4",
+            "text": "İki yıl"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "On yıl",
+        "explanation": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Enes'in hizmet süresi",
+            "supports": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1100,
+      "sourceSequence": 1019,
+      "id": "q58-suleym-rivayet",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yüz"
+          },
+          {
+            "id": "o2",
+            "text": "On dört"
+          },
+          {
+            "id": "o3",
+            "text": "Dört"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On dört",
+        "explanation": "TDV Ümmü Süleym maddesi onun Hz. Peygamber'den on dört hadis rivayet ettiğini kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Ümmü Süleym'in rivayetleri",
+            "supports": "TDV Ümmü Süleym maddesi onun Hz. Peygamber'den on dört hadis rivayet ettiğini kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yüz"
+          },
+          {
+            "id": "o2",
+            "text": "On dört"
+          },
+          {
+            "id": "o3",
+            "text": "Dört"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On dört",
+        "explanation": "TDV Ümmü Süleym maddesi onun Hz. Peygamber'den on dört hadis rivayet ettiğini kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+            "locator": "Ümmü Süleym'in rivayetleri",
+            "supports": "TDV Ümmü Süleym maddesi onun Hz. Peygamber'den on dört hadis rivayet ettiğini kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    }
+  ]
+}

@@ -1,0 +1,4214 @@
+{
+  "batch": 30,
+  "start": 1451,
+  "end": 1500,
+  "total": 50,
+  "individuallyReviewed": 0,
+  "pendingReview": 50,
+  "sourceComparedThisRound": 0,
+  "blocked": 0,
+  "flaggedBefore": 0,
+  "flaggedAfter": 0,
+  "records": [
+    {
+      "sequence": 1451,
+      "sourceSequence": 1443,
+      "id": "q70-safii-anne",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Şâfiî'nin babası vefat edince annesi onu hangi şehre götürmüştür?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şam"
+          },
+          {
+            "id": "o2",
+            "text": "Mekke"
+          },
+          {
+            "id": "o3",
+            "text": "Bağdat"
+          },
+          {
+            "id": "o4",
+            "text": "Kurtuba"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mekke",
+        "explanation": "TDV maddesi Şâfiî'nin annesi Fâtıma'nın onu iki yaşındayken Gazze'den Mekke'ye götürdüğünü anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "İki yaşında Mekke’ye taşınma",
+            "supports": "TDV maddesi Şâfiî'nin annesi Fâtıma'nın onu iki yaşındayken Gazze'den Mekke'ye götürdüğünü anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Şâfiî'nin babası vefat edince annesi onu hangi şehre götürmüştür?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şam"
+          },
+          {
+            "id": "o2",
+            "text": "Mekke"
+          },
+          {
+            "id": "o3",
+            "text": "Bağdat"
+          },
+          {
+            "id": "o4",
+            "text": "Kurtuba"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mekke",
+        "explanation": "TDV maddesi Şâfiî'nin annesi Fâtıma'nın onu iki yaşındayken Gazze'den Mekke'ye götürdüğünü anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "İki yaşında Mekke’ye taşınma",
+            "supports": "TDV maddesi Şâfiî'nin annesi Fâtıma'nın onu iki yaşındayken Gazze'den Mekke'ye götürdüğünü anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1452,
+      "sourceSequence": 1445,
+      "id": "q70-safii-huzeyl",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Şâfiî Arap şiiri ve dilini öğrenmek için hangi kabile arasında yaşamıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Benî Neccâr"
+          },
+          {
+            "id": "o2",
+            "text": "Benî Sâide"
+          },
+          {
+            "id": "o3",
+            "text": "Benî Mahzûm"
+          },
+          {
+            "id": "o4",
+            "text": "Benî Hüzeyl"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Benî Hüzeyl",
+        "explanation": "TDV biyografisi Şâfiî'nin Benî Hüzeyl arasında bir süre yaşayarak dil, şiir ve sözlü kültür öğrendiğini kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "Benî Hüzeyl ve dil eğitimi",
+            "supports": "TDV biyografisi Şâfiî'nin Benî Hüzeyl arasında bir süre yaşayarak dil, şiir ve sözlü kültür öğrendiğini kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Şâfiî Arap şiiri ve dilini öğrenmek için hangi kabile arasında yaşamıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Benî Neccâr"
+          },
+          {
+            "id": "o2",
+            "text": "Benî Sâide"
+          },
+          {
+            "id": "o3",
+            "text": "Benî Mahzûm"
+          },
+          {
+            "id": "o4",
+            "text": "Benî Hüzeyl"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Benî Hüzeyl",
+        "explanation": "TDV biyografisi Şâfiî'nin Benî Hüzeyl arasında bir süre yaşayarak dil, şiir ve sözlü kültür öğrendiğini kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "Benî Hüzeyl ve dil eğitimi",
+            "supports": "TDV biyografisi Şâfiî'nin Benî Hüzeyl arasında bir süre yaşayarak dil, şiir ve sözlü kültür öğrendiğini kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1453,
+      "sourceSequence": 1446,
+      "id": "q70-safii-risale",
+      "category": "fikih",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Şâfiî'nin fıkıh usulü konusunda kaleme aldığı temel eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Müsned"
+          },
+          {
+            "id": "o2",
+            "text": "Seyahatnâme"
+          },
+          {
+            "id": "o3",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o4",
+            "text": "el-Muvaṭṭaʾ"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "er-Risâle",
+        "explanation": "TDV er-Risâle maddesi bu eseri İmam Şâfiî'nin günümüze ulaşan erken dönem fıkıh usulü kitabı olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "er-Risâle ve fıkıh usulü",
+            "supports": "TDV er-Risâle maddesi bu eseri İmam Şâfiî'nin günümüze ulaşan erken dönem fıkıh usulü kitabı olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Şâfiî'nin fıkıh usulü konusunda kaleme aldığı temel eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Müsned"
+          },
+          {
+            "id": "o2",
+            "text": "Seyahatnâme"
+          },
+          {
+            "id": "o3",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o4",
+            "text": "el-Muvaṭṭaʾ"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "er-Risâle",
+        "explanation": "TDV er-Risâle maddesi bu eseri İmam Şâfiî'nin günümüze ulaşan erken dönem fıkıh usulü kitabı olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "er-Risâle ve fıkıh usulü",
+            "supports": "TDV er-Risâle maddesi bu eseri İmam Şâfiî'nin günümüze ulaşan erken dönem fıkıh usulü kitabı olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1454,
+      "sourceSequence": 1447,
+      "id": "q70-safii-cedid",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Şâfiî'nin görüşlerinin son biçimini temsil eden 'cedîd' döneminin merkezi hangi ülkedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Endülüs"
+          },
+          {
+            "id": "o2",
+            "text": "Mısır"
+          },
+          {
+            "id": "o3",
+            "text": "İran"
+          },
+          {
+            "id": "o4",
+            "text": "Fas"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mısır",
+        "explanation": "TDV er-Risâle maddesi Şâfiî'nin cedîd diye anılan son yaklaşımını 814-820 arasındaki Mısır dönemine yerleştirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "Mısır’da cedîd dönemi",
+            "supports": "TDV er-Risâle maddesi Şâfiî'nin cedîd diye anılan son yaklaşımını 814-820 arasındaki Mısır dönemine yerleştirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Şâfiî'nin görüşlerinin son biçimini temsil eden 'cedîd' döneminin merkezi hangi ülkedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Endülüs"
+          },
+          {
+            "id": "o2",
+            "text": "Mısır"
+          },
+          {
+            "id": "o3",
+            "text": "İran"
+          },
+          {
+            "id": "o4",
+            "text": "Fas"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mısır",
+        "explanation": "TDV er-Risâle maddesi Şâfiî'nin cedîd diye anılan son yaklaşımını 814-820 arasındaki Mısır dönemine yerleştirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "Mısır’da cedîd dönemi",
+            "supports": "TDV er-Risâle maddesi Şâfiî'nin cedîd diye anılan son yaklaşımını 814-820 arasındaki Mısır dönemine yerleştirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1455,
+      "sourceSequence": 1448,
+      "id": "q70-safii-beyan",
+      "category": "fikih",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Şâfiî er-Risâle'de kuramsal çerçeveyi oluştururken hangi kavramı merkeze alır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Beyân"
+          },
+          {
+            "id": "o2",
+            "text": "Mîkāt"
+          },
+          {
+            "id": "o3",
+            "text": "Müteşâbih"
+          },
+          {
+            "id": "o4",
+            "text": "İstiâre"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Beyân",
+        "explanation": "TDV er-Risâle maddesi Şâfiî'nin eserin başında beyân kavramıyla hükümlerin açıklanış biçimini tasnif ettiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "er-Risâle’de beyân kavramı",
+            "supports": "TDV er-Risâle maddesi Şâfiî'nin eserin başında beyân kavramıyla hükümlerin açıklanış biçimini tasnif ettiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Şâfiî er-Risâle'de kuramsal çerçeveyi oluştururken hangi kavramı merkeze alır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Beyân"
+          },
+          {
+            "id": "o2",
+            "text": "Mîkāt"
+          },
+          {
+            "id": "o3",
+            "text": "Müteşâbih"
+          },
+          {
+            "id": "o4",
+            "text": "İstiâre"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Beyân",
+        "explanation": "TDV er-Risâle maddesi Şâfiî'nin eserin başında beyân kavramıyla hükümlerin açıklanış biçimini tasnif ettiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/safii",
+            "locator": "er-Risâle’de beyân kavramı",
+            "supports": "TDV er-Risâle maddesi Şâfiî'nin eserin başında beyân kavramıyla hükümlerin açıklanış biçimini tasnif ettiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1456,
+      "sourceSequence": 1449,
+      "id": "q70-malik-b-enes-dogum",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Mâlik'in TDV'de ağırlık verilen doğum yılı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "699"
+          },
+          {
+            "id": "o2",
+            "text": "767"
+          },
+          {
+            "id": "o3",
+            "text": "780"
+          },
+          {
+            "id": "o4",
+            "text": "712"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "712",
+        "explanation": "TDV Mâlik biyografisi tercih edilen doğum yılını hicrî 93, milâdî 712 olarak verir; farklı rivayetlerin bulunduğunu da kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "93/712 yılına dair rivayet",
+            "supports": "TDV Mâlik biyografisi tercih edilen doğum yılını hicrî 93, milâdî 712 olarak verir; farklı rivayetlerin bulunduğunu da kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Mâlik'in TDV'de ağırlık verilen doğum yılı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "699"
+          },
+          {
+            "id": "o2",
+            "text": "767"
+          },
+          {
+            "id": "o3",
+            "text": "780"
+          },
+          {
+            "id": "o4",
+            "text": "712"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "712",
+        "explanation": "TDV Mâlik biyografisi tercih edilen doğum yılını hicrî 93, milâdî 712 olarak verir; farklı rivayetlerin bulunduğunu da kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "93/712 yılına dair rivayet",
+            "supports": "TDV Mâlik biyografisi tercih edilen doğum yılını hicrî 93, milâdî 712 olarak verir; farklı rivayetlerin bulunduğunu da kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1457,
+      "sourceSequence": 1450,
+      "id": "q70-malik-b-enes-egitim",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Mâlik hangi şehirde ilim hayatını geliştirmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Gazze"
+          },
+          {
+            "id": "o2",
+            "text": "İstanbul"
+          },
+          {
+            "id": "o3",
+            "text": "Medine"
+          },
+          {
+            "id": "o4",
+            "text": "Kûfe"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Medine",
+        "explanation": "İmam Mâlik, hadis ve fıkıh ilimlerini döneminin önemli merkezi Medine'de tahsil etmiş ve öğretmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "Medine’de yetişmesi",
+            "supports": "İmam Mâlik, hadis ve fıkıh ilimlerini döneminin önemli merkezi Medine'de tahsil etmiş ve öğretmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Mâlik hangi şehirde ilim hayatını geliştirmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Gazze"
+          },
+          {
+            "id": "o2",
+            "text": "İstanbul"
+          },
+          {
+            "id": "o3",
+            "text": "Medine"
+          },
+          {
+            "id": "o4",
+            "text": "Kûfe"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Medine",
+        "explanation": "İmam Mâlik, hadis ve fıkıh ilimlerini döneminin önemli merkezi Medine'de tahsil etmiş ve öğretmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "Medine’de yetişmesi",
+            "supports": "İmam Mâlik, hadis ve fıkıh ilimlerini döneminin önemli merkezi Medine'de tahsil etmiş ve öğretmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1458,
+      "sourceSequence": 1452,
+      "id": "q70-malik-b-enes-eser",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Mâlik'in rivayetleri derlediği ve fıkha da kaynaklık eden ünlü eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Muvaṭṭaʾ"
+          },
+          {
+            "id": "o2",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o3",
+            "text": "İhyâʾü Ulûmi'd-Dîn"
+          },
+          {
+            "id": "o4",
+            "text": "el-Müsned"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "el-Muvaṭṭaʾ",
+        "explanation": "TDV İmam Mâlik maddesi el-Muvaṭṭaʾı hadislerin tasnifinin erken dönem önemli örneklerinden biri sayar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "el-Muvaṭṭaʾ",
+            "supports": "TDV İmam Mâlik maddesi el-Muvaṭṭaʾı hadislerin tasnifinin erken dönem önemli örneklerinden biri sayar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Mâlik'in rivayetleri derlediği ve fıkha da kaynaklık eden ünlü eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Muvaṭṭaʾ"
+          },
+          {
+            "id": "o2",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o3",
+            "text": "İhyâʾü Ulûmi'd-Dîn"
+          },
+          {
+            "id": "o4",
+            "text": "el-Müsned"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "el-Muvaṭṭaʾ",
+        "explanation": "TDV İmam Mâlik maddesi el-Muvaṭṭaʾı hadislerin tasnifinin erken dönem önemli örneklerinden biri sayar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "el-Muvaṭṭaʾ",
+            "supports": "TDV İmam Mâlik maddesi el-Muvaṭṭaʾı hadislerin tasnifinin erken dönem önemli örneklerinden biri sayar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1459,
+      "sourceSequence": 1453,
+      "id": "q70-malik-b-enes-amel",
+      "category": "fikih",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mâlikî hukuk düşüncesinde Medine halkının uygulamasına verilen özel öneme ne denir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ceyşü'l-usre"
+          },
+          {
+            "id": "o2",
+            "text": "Bey'atürrıdvân"
+          },
+          {
+            "id": "o3",
+            "text": "Senedü'l-feth"
+          },
+          {
+            "id": "o4",
+            "text": "Amel-i ehl-i Medîne"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Amel-i ehl-i Medîne",
+        "explanation": "TDV, İmam Mâlik'in hadis ve sünnet mirasının yaşadığı yer olan Medine halkının uygulamasına özel önem verdiğini açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "Amel-i ehl-i Medîne",
+            "supports": "TDV, İmam Mâlik'in hadis ve sünnet mirasının yaşadığı yer olan Medine halkının uygulamasına özel önem verdiğini açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mâlikî hukuk düşüncesinde Medine halkının uygulamasına verilen özel öneme ne denir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ceyşü'l-usre"
+          },
+          {
+            "id": "o2",
+            "text": "Bey'atürrıdvân"
+          },
+          {
+            "id": "o3",
+            "text": "Senedü'l-feth"
+          },
+          {
+            "id": "o4",
+            "text": "Amel-i ehl-i Medîne"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Amel-i ehl-i Medîne",
+        "explanation": "TDV, İmam Mâlik'in hadis ve sünnet mirasının yaşadığı yer olan Medine halkının uygulamasına özel önem verdiğini açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "Amel-i ehl-i Medîne",
+            "supports": "TDV, İmam Mâlik'in hadis ve sünnet mirasının yaşadığı yer olan Medine halkının uygulamasına özel önem verdiğini açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1460,
+      "sourceSequence": 1454,
+      "id": "q70-malik-b-enes-vefat",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Mâlik hangi şehirde vefat etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şam"
+          },
+          {
+            "id": "o2",
+            "text": "İsfahan"
+          },
+          {
+            "id": "o3",
+            "text": "Medine"
+          },
+          {
+            "id": "o4",
+            "text": "Gazze"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Medine",
+        "explanation": "TDV biyografisine göre İmam Mâlik 179/795'te Medine'de vefat etmiş ve Bakī Mezarlığı'na defnedilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "179/795 Medine’de vefat",
+            "supports": "TDV biyografisine göre İmam Mâlik 179/795'te Medine'de vefat etmiş ve Bakī Mezarlığı'na defnedilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Mâlik hangi şehirde vefat etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şam"
+          },
+          {
+            "id": "o2",
+            "text": "İsfahan"
+          },
+          {
+            "id": "o3",
+            "text": "Medine"
+          },
+          {
+            "id": "o4",
+            "text": "Gazze"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Medine",
+        "explanation": "TDV biyografisine göre İmam Mâlik 179/795'te Medine'de vefat etmiş ve Bakī Mezarlığı'na defnedilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "179/795 Medine’de vefat",
+            "supports": "TDV biyografisine göre İmam Mâlik 179/795'te Medine'de vefat etmiş ve Bakī Mezarlığı'na defnedilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1461,
+      "sourceSequence": 1455,
+      "id": "q70-malik-b-enes-tazi",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İmam Mâlik hangi mezhebin kurucu imamı olarak anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hanbelî"
+          },
+          {
+            "id": "o2",
+            "text": "Mâlikî"
+          },
+          {
+            "id": "o3",
+            "text": "Hanefî"
+          },
+          {
+            "id": "o4",
+            "text": "Şâfiî"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mâlikî",
+        "explanation": "TDV, Mâlik b. Enes'i Mâlikî mezhebinin imamı, büyük müctehid ve hadis âlimi olarak tanıtır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "Mâlikî mezhebi",
+            "supports": "TDV, Mâlik b. Enes'i Mâlikî mezhebinin imamı, büyük müctehid ve hadis âlimi olarak tanıtır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İmam Mâlik hangi mezhebin kurucu imamı olarak anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hanbelî"
+          },
+          {
+            "id": "o2",
+            "text": "Mâlikî"
+          },
+          {
+            "id": "o3",
+            "text": "Hanefî"
+          },
+          {
+            "id": "o4",
+            "text": "Şâfiî"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mâlikî",
+        "explanation": "TDV, Mâlik b. Enes'i Mâlikî mezhebinin imamı, büyük müctehid ve hadis âlimi olarak tanıtır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
+            "locator": "Mâlikî mezhebi",
+            "supports": "TDV, Mâlik b. Enes'i Mâlikî mezhebinin imamı, büyük müctehid ve hadis âlimi olarak tanıtır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1462,
+      "sourceSequence": 1456,
+      "id": "q70-ahmed-b-hanbel-dogum",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahmed b. Hanbel'in TDV'de verilen doğum şehri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bağdat"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
+          },
+          {
+            "id": "o3",
+            "text": "Tûs"
+          },
+          {
+            "id": "o4",
+            "text": "Gazze"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Bağdat",
+        "explanation": "TDV Ahmed b. Hanbel biyografisi onun hicrî 164, milâdî 780 yılında Bağdat'ta doğduğunu belirtir; Merv rivayetine de işaret eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "164/780 Bağdat doğumu",
+            "supports": "TDV Ahmed b. Hanbel biyografisi onun hicrî 164, milâdî 780 yılında Bağdat'ta doğduğunu belirtir; Merv rivayetine de işaret eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahmed b. Hanbel'in TDV'de verilen doğum şehri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bağdat"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
+          },
+          {
+            "id": "o3",
+            "text": "Tûs"
+          },
+          {
+            "id": "o4",
+            "text": "Gazze"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Bağdat",
+        "explanation": "TDV Ahmed b. Hanbel biyografisi onun hicrî 164, milâdî 780 yılında Bağdat'ta doğduğunu belirtir; Merv rivayetine de işaret eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "164/780 Bağdat doğumu",
+            "supports": "TDV Ahmed b. Hanbel biyografisi onun hicrî 164, milâdî 780 yılında Bağdat'ta doğduğunu belirtir; Merv rivayetine de işaret eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1463,
+      "sourceSequence": 1457,
+      "id": "q70-ahmed-b-hanbel-annesinin-adi",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahmed b. Hanbel'in annesinin adı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ümmü'l-Fazl Lübâbe"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o3",
+            "text": "Hamâme"
+          },
+          {
+            "id": "o4",
+            "text": "Safiyye bint Meymûne"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Safiyye bint Meymûne",
+        "explanation": "TDV Ahmed b. Hanbel biyografisi annesini Safiyye bint Meymûne olarak tanıtır ve çocukluğunu onun himayesinde geçirdiğini söyler.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "Annesi Safiyye bint Meymûne",
+            "supports": "TDV Ahmed b. Hanbel biyografisi annesini Safiyye bint Meymûne olarak tanıtır ve çocukluğunu onun himayesinde geçirdiğini söyler.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahmed b. Hanbel'in annesinin adı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ümmü'l-Fazl Lübâbe"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o3",
+            "text": "Hamâme"
+          },
+          {
+            "id": "o4",
+            "text": "Safiyye bint Meymûne"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Safiyye bint Meymûne",
+        "explanation": "TDV Ahmed b. Hanbel biyografisi annesini Safiyye bint Meymûne olarak tanıtır ve çocukluğunu onun himayesinde geçirdiğini söyler.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "Annesi Safiyye bint Meymûne",
+            "supports": "TDV Ahmed b. Hanbel biyografisi annesini Safiyye bint Meymûne olarak tanıtır ve çocukluğunu onun himayesinde geçirdiğini söyler.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1464,
+      "sourceSequence": 1458,
+      "id": "q70-ahmed-b-hanbel-hoca",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahmed b. Hanbel hangi âlimden fıkıh ve usul eğitimi almıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kâtib Çelebi"
+          },
+          {
+            "id": "o2",
+            "text": "Bîrûnî"
+          },
+          {
+            "id": "o3",
+            "text": "İmam Şâfiî"
+          },
+          {
+            "id": "o4",
+            "text": "İbn Battûta"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "İmam Şâfiî",
+        "explanation": "TDV, Ahmed b. Hanbel'in İmam Şâfiî'den fıkıh ve usûl-i fıkıh öğrenmiş olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "Şâfiî’den fıkıh öğrenmesi",
+            "supports": "TDV, Ahmed b. Hanbel'in İmam Şâfiî'den fıkıh ve usûl-i fıkıh öğrenmiş olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahmed b. Hanbel hangi âlimden fıkıh ve usul eğitimi almıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kâtib Çelebi"
+          },
+          {
+            "id": "o2",
+            "text": "Bîrûnî"
+          },
+          {
+            "id": "o3",
+            "text": "İmam Şâfiî"
+          },
+          {
+            "id": "o4",
+            "text": "İbn Battûta"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "İmam Şâfiî",
+        "explanation": "TDV, Ahmed b. Hanbel'in İmam Şâfiî'den fıkıh ve usûl-i fıkıh öğrenmiş olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "Şâfiî’den fıkıh öğrenmesi",
+            "supports": "TDV, Ahmed b. Hanbel'in İmam Şâfiî'den fıkıh ve usûl-i fıkıh öğrenmiş olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1465,
+      "sourceSequence": 1459,
+      "id": "q70-ahmed-b-hanbel-yemen",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahmed b. Hanbel, Abdürrezzâk b. Hemmâm'dan hadis öğrenmek için hangi bölgeye seyahat etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mısır"
+          },
+          {
+            "id": "o2",
+            "text": "Yemen"
+          },
+          {
+            "id": "o3",
+            "text": "Endülüs"
+          },
+          {
+            "id": "o4",
+            "text": "Anadolu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yemen",
+        "explanation": "TDV maddesi Ahmed b. Hanbel'in hadis hocası Abdürrezzâk b. Hemmâm için zorlu bir Yemen yolculuğu yaptığını aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "198/813 Yemen yolculuğu",
+            "supports": "TDV maddesi Ahmed b. Hanbel'in hadis hocası Abdürrezzâk b. Hemmâm için zorlu bir Yemen yolculuğu yaptığını aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahmed b. Hanbel, Abdürrezzâk b. Hemmâm'dan hadis öğrenmek için hangi bölgeye seyahat etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mısır"
+          },
+          {
+            "id": "o2",
+            "text": "Yemen"
+          },
+          {
+            "id": "o3",
+            "text": "Endülüs"
+          },
+          {
+            "id": "o4",
+            "text": "Anadolu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yemen",
+        "explanation": "TDV maddesi Ahmed b. Hanbel'in hadis hocası Abdürrezzâk b. Hemmâm için zorlu bir Yemen yolculuğu yaptığını aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "198/813 Yemen yolculuğu",
+            "supports": "TDV maddesi Ahmed b. Hanbel'in hadis hocası Abdürrezzâk b. Hemmâm için zorlu bir Yemen yolculuğu yaptığını aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1466,
+      "sourceSequence": 1460,
+      "id": "q70-ahmed-b-hanbel-eser",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahmed b. Hanbel'in geniş hadis derlemesinin adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Müsned"
+          },
+          {
+            "id": "o2",
+            "text": "el-Muvaṭṭaʾ"
+          },
+          {
+            "id": "o3",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o4",
+            "text": "Cihannümâ"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "el-Müsned",
+        "explanation": "Ahmed b. Hanbel'in hadis rivayetlerini içeren el-Müsned adlı eseri onun en tanınan eserleri arasındadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "el-Müsned hadis derlemesi",
+            "supports": "Ahmed b. Hanbel'in hadis rivayetlerini içeren el-Müsned adlı eseri onun en tanınan eserleri arasındadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahmed b. Hanbel'in geniş hadis derlemesinin adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Müsned"
+          },
+          {
+            "id": "o2",
+            "text": "el-Muvaṭṭaʾ"
+          },
+          {
+            "id": "o3",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o4",
+            "text": "Cihannümâ"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "el-Müsned",
+        "explanation": "Ahmed b. Hanbel'in hadis rivayetlerini içeren el-Müsned adlı eseri onun en tanınan eserleri arasındadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "el-Müsned hadis derlemesi",
+            "supports": "Ahmed b. Hanbel'in hadis rivayetlerini içeren el-Müsned adlı eseri onun en tanınan eserleri arasındadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1467,
+      "sourceSequence": 1461,
+      "id": "q70-ahmed-b-hanbel-vefat",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahmed b. Hanbel hangi şehirde vefat etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kûfe"
+          },
+          {
+            "id": "o2",
+            "text": "Şam"
+          },
+          {
+            "id": "o3",
+            "text": "Kahire"
+          },
+          {
+            "id": "o4",
+            "text": "Bağdat"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Bağdat",
+        "explanation": "TDV biyografisi Ahmed b. Hanbel'in hicrî 241, milâdî 855 yılında Bağdat'ta vefat ettiğini bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "241/855 Bağdat vefatı",
+            "supports": "TDV biyografisi Ahmed b. Hanbel'in hicrî 241, milâdî 855 yılında Bağdat'ta vefat ettiğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahmed b. Hanbel hangi şehirde vefat etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kûfe"
+          },
+          {
+            "id": "o2",
+            "text": "Şam"
+          },
+          {
+            "id": "o3",
+            "text": "Kahire"
+          },
+          {
+            "id": "o4",
+            "text": "Bağdat"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Bağdat",
+        "explanation": "TDV biyografisi Ahmed b. Hanbel'in hicrî 241, milâdî 855 yılında Bağdat'ta vefat ettiğini bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+            "locator": "241/855 Bağdat vefatı",
+            "supports": "TDV biyografisi Ahmed b. Hanbel'in hicrî 241, milâdî 855 yılında Bağdat'ta vefat ettiğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1468,
+      "sourceSequence": 1462,
+      "id": "q70-gazzali-dogum",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî hangi Horasan şehrinde doğmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kûfe"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
+          },
+          {
+            "id": "o3",
+            "text": "Tûs"
+          },
+          {
+            "id": "o4",
+            "text": "Gazze"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Tûs",
+        "explanation": "TDV Gazzâlî biyografisi onun 450/1058 yılında Horasan bölgesinin Tûs şehrinde doğduğunu aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "450/1058 Tûs doğumu",
+            "supports": "TDV Gazzâlî biyografisi onun 450/1058 yılında Horasan bölgesinin Tûs şehrinde doğduğunu aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî hangi Horasan şehrinde doğmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kûfe"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
+          },
+          {
+            "id": "o3",
+            "text": "Tûs"
+          },
+          {
+            "id": "o4",
+            "text": "Gazze"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Tûs",
+        "explanation": "TDV Gazzâlî biyografisi onun 450/1058 yılında Horasan bölgesinin Tûs şehrinde doğduğunu aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "450/1058 Tûs doğumu",
+            "supports": "TDV Gazzâlî biyografisi onun 450/1058 yılında Horasan bölgesinin Tûs şehrinde doğduğunu aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1469,
+      "sourceSequence": 1463,
+      "id": "q70-gazzali-kunye",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî'nin meşhur künyesi hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ebü'l-Fazl"
+          },
+          {
+            "id": "o2",
+            "text": "Ebû Hâmid"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Hanîfe"
+          },
+          {
+            "id": "o4",
+            "text": "Ebû Hüreyre"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ebû Hâmid",
+        "explanation": "TDV biyografisinde Gazzâlî Ebû Hâmid künyesi ve Hüccetülislâm lakabıyla anılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Ebû Hâmid künyesi",
+            "supports": "TDV biyografisinde Gazzâlî Ebû Hâmid künyesi ve Hüccetülislâm lakabıyla anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî'nin meşhur künyesi hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ebü'l-Fazl"
+          },
+          {
+            "id": "o2",
+            "text": "Ebû Hâmid"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Hanîfe"
+          },
+          {
+            "id": "o4",
+            "text": "Ebû Hüreyre"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ebû Hâmid",
+        "explanation": "TDV biyografisinde Gazzâlî Ebû Hâmid künyesi ve Hüccetülislâm lakabıyla anılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Ebû Hâmid künyesi",
+            "supports": "TDV biyografisinde Gazzâlî Ebû Hâmid künyesi ve Hüccetülislâm lakabıyla anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1470,
+      "sourceSequence": 1464,
+      "id": "q70-gazzali-lakap",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî'nin dinî ilimler tarihindeki ünlü lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hüccetülislâm"
+          },
+          {
+            "id": "o2",
+            "text": "Zünnûn"
+          },
+          {
+            "id": "o3",
+            "text": "Hâdimü'n-Nebî"
+          },
+          {
+            "id": "o4",
+            "text": "Zâtü'n-nitâkayn"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Hüccetülislâm",
+        "explanation": "TDV Gazzâlî maddesi, ona verilen unvanlar arasında Hüccetülislâm lakabını sayar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Hüccetülislâm lakabı",
+            "supports": "TDV Gazzâlî maddesi, ona verilen unvanlar arasında Hüccetülislâm lakabını sayar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî'nin dinî ilimler tarihindeki ünlü lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hüccetülislâm"
+          },
+          {
+            "id": "o2",
+            "text": "Zünnûn"
+          },
+          {
+            "id": "o3",
+            "text": "Hâdimü'n-Nebî"
+          },
+          {
+            "id": "o4",
+            "text": "Zâtü'n-nitâkayn"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Hüccetülislâm",
+        "explanation": "TDV Gazzâlî maddesi, ona verilen unvanlar arasında Hüccetülislâm lakabını sayar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Hüccetülislâm lakabı",
+            "supports": "TDV Gazzâlî maddesi, ona verilen unvanlar arasında Hüccetülislâm lakabını sayar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1471,
+      "sourceSequence": 1465,
+      "id": "q70-gazzali-ihya",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî'nin ahlâk, dinî ilimler ve tasavvufu işlediği büyük eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Muvaṭṭaʾ"
+          },
+          {
+            "id": "o2",
+            "text": "Seyahatnâme"
+          },
+          {
+            "id": "o3",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o4",
+            "text": "İhyâʾü Ulûmi'd-Dîn"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "İhyâʾü Ulûmi'd-Dîn",
+        "explanation": "TDV Gazzâlî maddesi İhyâʾü Ulûmi'd-Dîn'i onun en etkili ahlâk eserlerinden biri olarak anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "İhyâʾü Ulûmi’d-Dîn",
+            "supports": "TDV Gazzâlî maddesi İhyâʾü Ulûmi'd-Dîn'i onun en etkili ahlâk eserlerinden biri olarak anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî'nin ahlâk, dinî ilimler ve tasavvufu işlediği büyük eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Muvaṭṭaʾ"
+          },
+          {
+            "id": "o2",
+            "text": "Seyahatnâme"
+          },
+          {
+            "id": "o3",
+            "text": "er-Risâle"
+          },
+          {
+            "id": "o4",
+            "text": "İhyâʾü Ulûmi'd-Dîn"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "İhyâʾü Ulûmi'd-Dîn",
+        "explanation": "TDV Gazzâlî maddesi İhyâʾü Ulûmi'd-Dîn'i onun en etkili ahlâk eserlerinden biri olarak anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "İhyâʾü Ulûmi’d-Dîn",
+            "supports": "TDV Gazzâlî maddesi İhyâʾü Ulûmi'd-Dîn'i onun en etkili ahlâk eserlerinden biri olarak anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1472,
+      "sourceSequence": 1466,
+      "id": "q70-gazzali-sam",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî, Bağdat'tan ayrıldıktan sonra yaklaşık iki yıl inzivâ yaşamak için hangi şehre gitmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kurtuba"
+          },
+          {
+            "id": "o2",
+            "text": "Tanca"
+          },
+          {
+            "id": "o3",
+            "text": "Şam"
+          },
+          {
+            "id": "o4",
+            "text": "Kûfe"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Şam",
+        "explanation": "TDV, Gazzâlî'nin Bağdat'tan Şam'a gittiğini ve yaklaşık iki yıl burada ibadet ve nefis terbiyesiyle meşgul olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "İnziva dönemi Şam",
+            "supports": "TDV, Gazzâlî'nin Bağdat'tan Şam'a gittiğini ve yaklaşık iki yıl burada ibadet ve nefis terbiyesiyle meşgul olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî, Bağdat'tan ayrıldıktan sonra yaklaşık iki yıl inzivâ yaşamak için hangi şehre gitmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kurtuba"
+          },
+          {
+            "id": "o2",
+            "text": "Tanca"
+          },
+          {
+            "id": "o3",
+            "text": "Şam"
+          },
+          {
+            "id": "o4",
+            "text": "Kûfe"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Şam",
+        "explanation": "TDV, Gazzâlî'nin Bağdat'tan Şam'a gittiğini ve yaklaşık iki yıl burada ibadet ve nefis terbiyesiyle meşgul olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "İnziva dönemi Şam",
+            "supports": "TDV, Gazzâlî'nin Bağdat'tan Şam'a gittiğini ve yaklaşık iki yıl burada ibadet ve nefis terbiyesiyle meşgul olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1473,
+      "sourceSequence": 1467,
+      "id": "q70-gazzali-kudus",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî Şam'dan sonra bir süre hangi kutsal şehirde inzivâ hayatı yaşamıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Taif"
+          },
+          {
+            "id": "o2",
+            "text": "Kudüs"
+          },
+          {
+            "id": "o3",
+            "text": "Mekke"
+          },
+          {
+            "id": "o4",
+            "text": "Medine"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kudüs",
+        "explanation": "TDV Gazzâlî maddesi onun Şam'dan sonra Kudüs'e giderek burada inzivâ hayatına devam ettiğini aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Kudüs’te inzivâ",
+            "supports": "TDV Gazzâlî maddesi onun Şam'dan sonra Kudüs'e giderek burada inzivâ hayatına devam ettiğini aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî Şam'dan sonra bir süre hangi kutsal şehirde inzivâ hayatı yaşamıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Taif"
+          },
+          {
+            "id": "o2",
+            "text": "Kudüs"
+          },
+          {
+            "id": "o3",
+            "text": "Mekke"
+          },
+          {
+            "id": "o4",
+            "text": "Medine"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kudüs",
+        "explanation": "TDV Gazzâlî maddesi onun Şam'dan sonra Kudüs'e giderek burada inzivâ hayatına devam ettiğini aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Kudüs’te inzivâ",
+            "supports": "TDV Gazzâlî maddesi onun Şam'dan sonra Kudüs'e giderek burada inzivâ hayatına devam ettiğini aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1474,
+      "sourceSequence": 1468,
+      "id": "q70-gazzali-kimya",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî'nin Farsça kaleme aldığı ahlâk ve dinî hayatla ilgili eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kimyâ-yı Saâdet"
+          },
+          {
+            "id": "o2",
+            "text": "el-Müsned"
+          },
+          {
+            "id": "o3",
+            "text": "er-Rihle"
+          },
+          {
+            "id": "o4",
+            "text": "Kitâbü'l-İber"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Kimyâ-yı Saâdet",
+        "explanation": "TDV Gazzâlî maddesinde Kimyâ-yı Saâdet'in Farsça kaleme alındığı ve İhyâ ile konu planı açısından ilişkili olduğu belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Farsça Kimyâ-yı Saâdet",
+            "supports": "TDV Gazzâlî maddesinde Kimyâ-yı Saâdet'in Farsça kaleme alındığı ve İhyâ ile konu planı açısından ilişkili olduğu belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî'nin Farsça kaleme aldığı ahlâk ve dinî hayatla ilgili eseri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kimyâ-yı Saâdet"
+          },
+          {
+            "id": "o2",
+            "text": "el-Müsned"
+          },
+          {
+            "id": "o3",
+            "text": "er-Rihle"
+          },
+          {
+            "id": "o4",
+            "text": "Kitâbü'l-İber"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Kimyâ-yı Saâdet",
+        "explanation": "TDV Gazzâlî maddesinde Kimyâ-yı Saâdet'in Farsça kaleme alındığı ve İhyâ ile konu planı açısından ilişkili olduğu belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/gazzali",
+            "locator": "Farsça Kimyâ-yı Saâdet",
+            "supports": "TDV Gazzâlî maddesinde Kimyâ-yı Saâdet'in Farsça kaleme alındığı ve İhyâ ile konu planı açısından ilişkili olduğu belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1475,
+      "sourceSequence": 1469,
+      "id": "q71-sure-114",
+      "category": "quran_dualar",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur'an-ı Kerîm'in tamamında kaç sûre bulunur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "114"
+          },
+          {
+            "id": "o2",
+            "text": "100"
+          },
+          {
+            "id": "o3",
+            "text": "110"
+          },
+          {
+            "id": "o4",
+            "text": "120"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "114",
+        "explanation": "TDV Sûre maddesi Kur'an-ı Kerîm'in 114 bölümden oluştuğunu, bu bölümlerden her birine sûre dendiğini açıkça belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Kur'an'ın sûre sayısı 114",
+            "supports": "TDV Sûre maddesi Kur'an-ı Kerîm'in 114 bölümden oluştuğunu, bu bölümlerden her birine sûre dendiğini açıkça belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur'an-ı Kerîm'in tamamında kaç sûre bulunur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "114"
+          },
+          {
+            "id": "o2",
+            "text": "100"
+          },
+          {
+            "id": "o3",
+            "text": "110"
+          },
+          {
+            "id": "o4",
+            "text": "120"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "114",
+        "explanation": "TDV Sûre maddesi Kur'an-ı Kerîm'in 114 bölümden oluştuğunu, bu bölümlerden her birine sûre dendiğini açıkça belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Kur'an'ın sûre sayısı 114",
+            "supports": "TDV Sûre maddesi Kur'an-ı Kerîm'in 114 bölümden oluştuğunu, bu bölümlerden her birine sûre dendiğini açıkça belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1476,
+      "sourceSequence": 1470,
+      "id": "q71-sure-medenim",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "En yaygın sınıflandırmaya göre hicretten sonra inen âyetler hangi adla anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mekkî"
+          },
+          {
+            "id": "o2",
+            "text": "Hazarî"
+          },
+          {
+            "id": "o3",
+            "text": "Leylî"
+          },
+          {
+            "id": "o4",
+            "text": "Medenî"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Medenî",
+        "explanation": "Mekkî-Medenî ayırımında yaygın ölçüt vahyin indiği yer değil, hicretten önce mi sonra mı indirildiğidir; sonrası Medenî kabul edilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Hicretten sonra inen vahyin Medenî sayılması",
+            "supports": "Mekkî-Medenî ayırımında yaygın ölçüt vahyin indiği yer değil, hicretten önce mi sonra mı indirildiğidir; sonrası Medenî kabul edilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "En yaygın sınıflandırmaya göre hicretten sonra inen âyetler hangi adla anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mekkî"
+          },
+          {
+            "id": "o2",
+            "text": "Hazarî"
+          },
+          {
+            "id": "o3",
+            "text": "Leylî"
+          },
+          {
+            "id": "o4",
+            "text": "Medenî"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Medenî",
+        "explanation": "Mekkî-Medenî ayırımında yaygın ölçüt vahyin indiği yer değil, hicretten önce mi sonra mı indirildiğidir; sonrası Medenî kabul edilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Hicretten sonra inen vahyin Medenî sayılması",
+            "supports": "Mekkî-Medenî ayırımında yaygın ölçüt vahyin indiği yer değil, hicretten önce mi sonra mı indirildiğidir; sonrası Medenî kabul edilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1477,
+      "sourceSequence": 1471,
+      "id": "q71-sure-28",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yaygın sûre tasnifine göre Kur'an'da kaç Medenî sûre vardır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "52"
+          },
+          {
+            "id": "o2",
+            "text": "86"
+          },
+          {
+            "id": "o3",
+            "text": "28"
+          },
+          {
+            "id": "o4",
+            "text": "17"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "28",
+        "explanation": "TDV Sûre maddesi konudaki ilmî görüşlerin farklılaştığını ancak yaygın telakkinin 86 Mekkî ve 28 Medenî sûre olduğu yönünde bulunduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Yaygın telakkide 28 Medenî sûre",
+            "supports": "TDV Sûre maddesi konudaki ilmî görüşlerin farklılaştığını ancak yaygın telakkinin 86 Mekkî ve 28 Medenî sûre olduğu yönünde bulunduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yaygın sûre tasnifine göre Kur'an'da kaç Medenî sûre vardır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "52"
+          },
+          {
+            "id": "o2",
+            "text": "86"
+          },
+          {
+            "id": "o3",
+            "text": "28"
+          },
+          {
+            "id": "o4",
+            "text": "17"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "28",
+        "explanation": "TDV Sûre maddesi konudaki ilmî görüşlerin farklılaştığını ancak yaygın telakkinin 86 Mekkî ve 28 Medenî sûre olduğu yönünde bulunduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Yaygın telakkide 28 Medenî sûre",
+            "supports": "TDV Sûre maddesi konudaki ilmî görüşlerin farklılaştığını ancak yaygın telakkinin 86 Mekkî ve 28 Medenî sûre olduğu yönünde bulunduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1478,
+      "sourceSequence": 1472,
+      "id": "q71-sure-besmele",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mushaf sıralamasında hangi iki sûre arasına besmele yazılmaz?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kehf ile Meryem"
+          },
+          {
+            "id": "o2",
+            "text": "Enfâl ile Tevbe"
+          },
+          {
+            "id": "o3",
+            "text": "Fâtiha ile Bakara"
+          },
+          {
+            "id": "o4",
+            "text": "Nâs ile Felak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Enfâl ile Tevbe",
+        "explanation": "TDV Sûre maddesi ve mushaf geleneği Enfâl ile Tevbe sûreleri arasında diğer sûrelerdeki gibi besmele bulunmadığını kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Enfâl ile Tevbe arasında besmele bulunmaması",
+            "supports": "TDV Sûre maddesi ve mushaf geleneği Enfâl ile Tevbe sûreleri arasında diğer sûrelerdeki gibi besmele bulunmadığını kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mushaf sıralamasında hangi iki sûre arasına besmele yazılmaz?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kehf ile Meryem"
+          },
+          {
+            "id": "o2",
+            "text": "Enfâl ile Tevbe"
+          },
+          {
+            "id": "o3",
+            "text": "Fâtiha ile Bakara"
+          },
+          {
+            "id": "o4",
+            "text": "Nâs ile Felak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Enfâl ile Tevbe",
+        "explanation": "TDV Sûre maddesi ve mushaf geleneği Enfâl ile Tevbe sûreleri arasında diğer sûrelerdeki gibi besmele bulunmadığını kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — sure",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sure",
+            "locator": "Enfâl ile Tevbe arasında besmele bulunmaması",
+            "supports": "TDV Sûre maddesi ve mushaf geleneği Enfâl ile Tevbe sûreleri arasında diğer sûrelerdeki gibi besmele bulunmadığını kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1479,
+      "sourceSequence": 1473,
+      "id": "q71-mushaf-ilk",
+      "category": "quran_dualar",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mushafların standart tertibinde ilk sırada hangi sûre yer alır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fâtiha"
+          },
+          {
+            "id": "o2",
+            "text": "Alak"
+          },
+          {
+            "id": "o3",
+            "text": "Nâs"
+          },
+          {
+            "id": "o4",
+            "text": "Bakara"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Fâtiha",
+        "explanation": "Mushaf tertibinin ilk sûresi Fâtiha'dır; sıralama sûrelerin tarihsel iniş sırasıyla aynı değildir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — mushaf",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mushaf",
+            "locator": "Mushafın Fâtiha ile başlaması",
+            "supports": "Mushaf tertibinin ilk sûresi Fâtiha'dır; sıralama sûrelerin tarihsel iniş sırasıyla aynı değildir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mushafların standart tertibinde ilk sırada hangi sûre yer alır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fâtiha"
+          },
+          {
+            "id": "o2",
+            "text": "Alak"
+          },
+          {
+            "id": "o3",
+            "text": "Nâs"
+          },
+          {
+            "id": "o4",
+            "text": "Bakara"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Fâtiha",
+        "explanation": "Mushaf tertibinin ilk sûresi Fâtiha'dır; sıralama sûrelerin tarihsel iniş sırasıyla aynı değildir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — mushaf",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mushaf",
+            "locator": "Mushafın Fâtiha ile başlaması",
+            "supports": "Mushaf tertibinin ilk sûresi Fâtiha'dır; sıralama sûrelerin tarihsel iniş sırasıyla aynı değildir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1480,
+      "sourceSequence": 1474,
+      "id": "q71-mushaf-cuz",
+      "category": "quran_dualar",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mushafın geleneksel olarak bölündüğü otuz bölümden her birine ne denir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şavt"
+          },
+          {
+            "id": "o2",
+            "text": "Hizb-i Bahr"
+          },
+          {
+            "id": "o3",
+            "text": "Fâsıla"
+          },
+          {
+            "id": "o4",
+            "text": "Cüz"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Cüz",
+        "explanation": "TDV Mushaf maddesinde en yaygın bölümlemenin Kur'an'ı otuz kısma ayırmak olduğu ve bunlardan her birine cüz denildiği belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — mushaf",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mushaf",
+            "locator": "Otuz cüz düzeni",
+            "supports": "TDV Mushaf maddesinde en yaygın bölümlemenin Kur'an'ı otuz kısma ayırmak olduğu ve bunlardan her birine cüz denildiği belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mushafın geleneksel olarak bölündüğü otuz bölümden her birine ne denir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Şavt"
+          },
+          {
+            "id": "o2",
+            "text": "Hizb-i Bahr"
+          },
+          {
+            "id": "o3",
+            "text": "Fâsıla"
+          },
+          {
+            "id": "o4",
+            "text": "Cüz"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Cüz",
+        "explanation": "TDV Mushaf maddesinde en yaygın bölümlemenin Kur'an'ı otuz kısma ayırmak olduğu ve bunlardan her birine cüz denildiği belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — mushaf",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mushaf",
+            "locator": "Otuz cüz düzeni",
+            "supports": "TDV Mushaf maddesinde en yaygın bölümlemenin Kur'an'ı otuz kısma ayırmak olduğu ve bunlardan her birine cüz denildiği belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1481,
+      "sourceSequence": 1475,
+      "id": "q71-ayet-fasila",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Âyetin son kelimesine ya da son harfine, iki âyeti ayırdığı için ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mîkāt"
+          },
+          {
+            "id": "o2",
+            "text": "Med"
+          },
+          {
+            "id": "o3",
+            "text": "Fâsıla"
+          },
+          {
+            "id": "o4",
+            "text": "Siyak"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Fâsıla",
+        "explanation": "TDV Âyet maddesi iki âyeti ayıran son kelime veya son harfin fâsıla diye adlandırıldığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ayet",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ayet",
+            "locator": "Âyet sonuna fâsıla adı verilmesi",
+            "supports": "TDV Âyet maddesi iki âyeti ayıran son kelime veya son harfin fâsıla diye adlandırıldığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Âyetin son kelimesine ya da son harfine, iki âyeti ayırdığı için ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mîkāt"
+          },
+          {
+            "id": "o2",
+            "text": "Med"
+          },
+          {
+            "id": "o3",
+            "text": "Fâsıla"
+          },
+          {
+            "id": "o4",
+            "text": "Siyak"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Fâsıla",
+        "explanation": "TDV Âyet maddesi iki âyeti ayıran son kelime veya son harfin fâsıla diye adlandırıldığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ayet",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ayet",
+            "locator": "Âyet sonuna fâsıla adı verilmesi",
+            "supports": "TDV Âyet maddesi iki âyeti ayıran son kelime veya son harfin fâsıla diye adlandırıldığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1482,
+      "sourceSequence": 1476,
+      "id": "q71-mushaf-osmani",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mesâhif-i Osmâniyye tabiri hangi çalışmanın nüshalarını ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İbn Battûta seyahatlerini"
+          },
+          {
+            "id": "o2",
+            "text": "Hz. Osman döneminde çoğaltılan mushafları"
+          },
+          {
+            "id": "o3",
+            "text": "Hz. Ömer'in divan defterlerini"
+          },
+          {
+            "id": "o4",
+            "text": "İlk hadis kitaplarını"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hz. Osman döneminde çoğaltılan mushafları",
+        "explanation": "TDV Mushaf maddesi Mesâhif-i Osmâniyye adını Hz. Osman'ın yönetiminde istinsah edilen ve belli merkezlere gönderilen mushaf nüshaları için kullanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — mushaf",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mushaf",
+            "locator": "Mesâhif-i Osmâniyye ve Hz. Osman",
+            "supports": "TDV Mushaf maddesi Mesâhif-i Osmâniyye adını Hz. Osman'ın yönetiminde istinsah edilen ve belli merkezlere gönderilen mushaf nüshaları için kullanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mesâhif-i Osmâniyye tabiri hangi çalışmanın nüshalarını ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İbn Battûta seyahatlerini"
+          },
+          {
+            "id": "o2",
+            "text": "Hz. Osman döneminde çoğaltılan mushafları"
+          },
+          {
+            "id": "o3",
+            "text": "Hz. Ömer'in divan defterlerini"
+          },
+          {
+            "id": "o4",
+            "text": "İlk hadis kitaplarını"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hz. Osman döneminde çoğaltılan mushafları",
+        "explanation": "TDV Mushaf maddesi Mesâhif-i Osmâniyye adını Hz. Osman'ın yönetiminde istinsah edilen ve belli merkezlere gönderilen mushaf nüshaları için kullanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — mushaf",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mushaf",
+            "locator": "Mesâhif-i Osmâniyye ve Hz. Osman",
+            "supports": "TDV Mushaf maddesi Mesâhif-i Osmâniyye adını Hz. Osman'ın yönetiminde istinsah edilen ve belli merkezlere gönderilen mushaf nüshaları için kullanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1483,
+      "sourceSequence": 1477,
+      "id": "q71-ilyas-baal",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. İlyâs Kur'an'daki kıssasında özellikle hangi puta tapılmasını eleştirir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ba‘l"
+          },
+          {
+            "id": "o2",
+            "text": "Lât"
+          },
+          {
+            "id": "o3",
+            "text": "Menât"
+          },
+          {
+            "id": "o4",
+            "text": "Hübel"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Ba‘l",
+        "explanation": "TDV İlyâs maddesi Sâffât 37/125'te İlyâs'ın Ba‘l putuna tapınmaya karşı kavmini tevhid inancına davet ettiğini bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilyas",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ilyas",
+            "locator": "Sâffât 37/125 ve Ba‘l",
+            "supports": "TDV İlyâs maddesi Sâffât 37/125'te İlyâs'ın Ba‘l putuna tapınmaya karşı kavmini tevhid inancına davet ettiğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. İlyâs Kur'an'daki kıssasında özellikle hangi puta tapılmasını eleştirir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ba‘l"
+          },
+          {
+            "id": "o2",
+            "text": "Lât"
+          },
+          {
+            "id": "o3",
+            "text": "Menât"
+          },
+          {
+            "id": "o4",
+            "text": "Hübel"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Ba‘l",
+        "explanation": "TDV İlyâs maddesi Sâffât 37/125'te İlyâs'ın Ba‘l putuna tapınmaya karşı kavmini tevhid inancına davet ettiğini bildirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilyas",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ilyas",
+            "locator": "Sâffât 37/125 ve Ba‘l",
+            "supports": "TDV İlyâs maddesi Sâffât 37/125'te İlyâs'ın Ba‘l putuna tapınmaya karşı kavmini tevhid inancına davet ettiğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1484,
+      "sourceSequence": 1478,
+      "id": "q71-ilyas-saffat",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. İlyâs'ın peygamber olarak anıldığı ve kıssasına yer verilen sûre hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kehf"
+          },
+          {
+            "id": "o2",
+            "text": "Hucurât"
+          },
+          {
+            "id": "o3",
+            "text": "İhlâs"
+          },
+          {
+            "id": "o4",
+            "text": "Sâffât"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Sâffât",
+        "explanation": "Sâffât 37/123-132'de İlyâs peygamberin kavmine tebliğinden ve inkârcılarla mücadelesinden söz edilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilyas",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ilyas",
+            "locator": "Sâffât 37/123-132",
+            "supports": "Sâffât 37/123-132'de İlyâs peygamberin kavmine tebliğinden ve inkârcılarla mücadelesinden söz edilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. İlyâs'ın peygamber olarak anıldığı ve kıssasına yer verilen sûre hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kehf"
+          },
+          {
+            "id": "o2",
+            "text": "Hucurât"
+          },
+          {
+            "id": "o3",
+            "text": "İhlâs"
+          },
+          {
+            "id": "o4",
+            "text": "Sâffât"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Sâffât",
+        "explanation": "Sâffât 37/123-132'de İlyâs peygamberin kavmine tebliğinden ve inkârcılarla mücadelesinden söz edilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilyas",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ilyas",
+            "locator": "Sâffât 37/123-132",
+            "supports": "Sâffât 37/123-132'de İlyâs peygamberin kavmine tebliğinden ve inkârcılarla mücadelesinden söz edilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1485,
+      "sourceSequence": 1479,
+      "id": "q71-ilyas-ilyasin",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Sâffât 37/130'da İlyâs peygamber için geçen başka okunuş biçimi hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zülkarneyn"
+          },
+          {
+            "id": "o2",
+            "text": "İsrâîl"
+          },
+          {
+            "id": "o3",
+            "text": "İlyâsîn"
+          },
+          {
+            "id": "o4",
+            "text": "Zünnûn"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "İlyâsîn",
+        "explanation": "TDV İlyâs maddesi Sâffât 37/130'da İlyâs isminin İlyâsîn şeklinde de geçtiğini belirtir; bu farklı bir peygamber adı sayılmamalıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilyas",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ilyas",
+            "locator": "Sâffât 37/130 İlyâsîn",
+            "supports": "TDV İlyâs maddesi Sâffât 37/130'da İlyâs isminin İlyâsîn şeklinde de geçtiğini belirtir; bu farklı bir peygamber adı sayılmamalıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Sâffât 37/130'da İlyâs peygamber için geçen başka okunuş biçimi hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zülkarneyn"
+          },
+          {
+            "id": "o2",
+            "text": "İsrâîl"
+          },
+          {
+            "id": "o3",
+            "text": "İlyâsîn"
+          },
+          {
+            "id": "o4",
+            "text": "Zünnûn"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "İlyâsîn",
+        "explanation": "TDV İlyâs maddesi Sâffât 37/130'da İlyâs isminin İlyâsîn şeklinde de geçtiğini belirtir; bu farklı bir peygamber adı sayılmamalıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ilyas",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ilyas",
+            "locator": "Sâffât 37/130 İlyâsîn",
+            "supports": "TDV İlyâs maddesi Sâffât 37/130'da İlyâs isminin İlyâsîn şeklinde de geçtiğini belirtir; bu farklı bir peygamber adı sayılmamalıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1486,
+      "sourceSequence": 1480,
+      "id": "q71-elyesa-elisa",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Elyesa‘, Ahd-i Atîk geleneğinde hangi adla tanınır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Davud"
+          },
+          {
+            "id": "o2",
+            "text": "Elişa"
+          },
+          {
+            "id": "o3",
+            "text": "Yahya"
+          },
+          {
+            "id": "o4",
+            "text": "Yeşaya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Elişa",
+        "explanation": "TDV Elyesa‘ maddesi Kur'an'da anılan Elyesa‘ peygamberin Ahd-i Atîk'te Elişa olarak geçtiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — elyesa",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/elyesa",
+            "locator": "Elyesa‘ adı ve Ahd-i Atîk'teki Elişa",
+            "supports": "TDV Elyesa‘ maddesi Kur'an'da anılan Elyesa‘ peygamberin Ahd-i Atîk'te Elişa olarak geçtiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Elyesa‘, Ahd-i Atîk geleneğinde hangi adla tanınır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Davud"
+          },
+          {
+            "id": "o2",
+            "text": "Elişa"
+          },
+          {
+            "id": "o3",
+            "text": "Yahya"
+          },
+          {
+            "id": "o4",
+            "text": "Yeşaya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Elişa",
+        "explanation": "TDV Elyesa‘ maddesi Kur'an'da anılan Elyesa‘ peygamberin Ahd-i Atîk'te Elişa olarak geçtiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — elyesa",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/elyesa",
+            "locator": "Elyesa‘ adı ve Ahd-i Atîk'teki Elişa",
+            "supports": "TDV Elyesa‘ maddesi Kur'an'da anılan Elyesa‘ peygamberin Ahd-i Atîk'te Elişa olarak geçtiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1487,
+      "sourceSequence": 1481,
+      "id": "q71-elyesa-sad",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur'an'da Elyesa‘ peygamberin adı geçen sûrelerden biri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sâd"
+          },
+          {
+            "id": "o2",
+            "text": "Fâtiha"
+          },
+          {
+            "id": "o3",
+            "text": "Tekâsür"
+          },
+          {
+            "id": "o4",
+            "text": "Asr"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Sâd",
+        "explanation": "Elyesa‘ peygamberin adı Kur'an'da En'âm 6/86 ve Sâd 38/48'de geçer; Sâd sûresinde seçkin kişiler arasında anılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — elyesa",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/elyesa",
+            "locator": "Sâd 38/48 ve Elyesa‘",
+            "supports": "Elyesa‘ peygamberin adı Kur'an'da En'âm 6/86 ve Sâd 38/48'de geçer; Sâd sûresinde seçkin kişiler arasında anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur'an'da Elyesa‘ peygamberin adı geçen sûrelerden biri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sâd"
+          },
+          {
+            "id": "o2",
+            "text": "Fâtiha"
+          },
+          {
+            "id": "o3",
+            "text": "Tekâsür"
+          },
+          {
+            "id": "o4",
+            "text": "Asr"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Sâd",
+        "explanation": "Elyesa‘ peygamberin adı Kur'an'da En'âm 6/86 ve Sâd 38/48'de geçer; Sâd sûresinde seçkin kişiler arasında anılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — elyesa",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/elyesa",
+            "locator": "Sâd 38/48 ve Elyesa‘",
+            "supports": "Elyesa‘ peygamberin adı Kur'an'da En'âm 6/86 ve Sâd 38/48'de geçer; Sâd sûresinde seçkin kişiler arasında anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1488,
+      "sourceSequence": 1482,
+      "id": "q71-idris-iki",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. İdrîs'in adı Kur'an'da doğrudan kaç ayrı sûrede geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir"
+          },
+          {
+            "id": "o2",
+            "text": "Dört"
+          },
+          {
+            "id": "o3",
+            "text": "Yedi"
+          },
+          {
+            "id": "o4",
+            "text": "İki"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "İki",
+        "explanation": "TDV İdrîs maddesi bu peygamberin Kur'an'da doğrudan Meryem ve Enbiyâ sûrelerinde anıldığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — idris",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/idris",
+            "locator": "Meryem 19/56-57 ve Enbiyâ 21/85-86",
+            "supports": "TDV İdrîs maddesi bu peygamberin Kur'an'da doğrudan Meryem ve Enbiyâ sûrelerinde anıldığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. İdrîs'in adı Kur'an'da doğrudan kaç ayrı sûrede geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir"
+          },
+          {
+            "id": "o2",
+            "text": "Dört"
+          },
+          {
+            "id": "o3",
+            "text": "Yedi"
+          },
+          {
+            "id": "o4",
+            "text": "İki"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "İki",
+        "explanation": "TDV İdrîs maddesi bu peygamberin Kur'an'da doğrudan Meryem ve Enbiyâ sûrelerinde anıldığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — idris",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/idris",
+            "locator": "Meryem 19/56-57 ve Enbiyâ 21/85-86",
+            "supports": "TDV İdrîs maddesi bu peygamberin Kur'an'da doğrudan Meryem ve Enbiyâ sûrelerinde anıldığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1489,
+      "sourceSequence": 1484,
+      "id": "q71-idris-sabir",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Enbiyâ 21/85-86'da Hz. İdrîs hangi iki peygamberle birlikte sabredenler arasında sayılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yûnus ve Dâvûd"
+          },
+          {
+            "id": "o2",
+            "text": "İsmâil ve Zülkifl"
+          },
+          {
+            "id": "o3",
+            "text": "Yûsuf ve Mûsâ"
+          },
+          {
+            "id": "o4",
+            "text": "Hûd ve Sâlih"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İsmâil ve Zülkifl",
+        "explanation": "Enbiyâ 21/85-86'da İsmâil, İdrîs ve Zülkifl'in sabreden ve Allah'ın rahmetine kabul edilen iyi kimseler oldukları belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — idris",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/idris",
+            "locator": "Enbiyâ 21/85-86 üç peygamber",
+            "supports": "Enbiyâ 21/85-86'da İsmâil, İdrîs ve Zülkifl'in sabreden ve Allah'ın rahmetine kabul edilen iyi kimseler oldukları belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Enbiyâ 21/85-86'da Hz. İdrîs hangi iki peygamberle birlikte sabredenler arasında sayılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yûnus ve Dâvûd"
+          },
+          {
+            "id": "o2",
+            "text": "İsmâil ve Zülkifl"
+          },
+          {
+            "id": "o3",
+            "text": "Yûsuf ve Mûsâ"
+          },
+          {
+            "id": "o4",
+            "text": "Hûd ve Sâlih"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İsmâil ve Zülkifl",
+        "explanation": "Enbiyâ 21/85-86'da İsmâil, İdrîs ve Zülkifl'in sabreden ve Allah'ın rahmetine kabul edilen iyi kimseler oldukları belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — idris",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/idris",
+            "locator": "Enbiyâ 21/85-86 üç peygamber",
+            "supports": "Enbiyâ 21/85-86'da İsmâil, İdrîs ve Zülkifl'in sabreden ve Allah'ın rahmetine kabul edilen iyi kimseler oldukları belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1490,
+      "sourceSequence": 1485,
+      "id": "q71-hatice-anne",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Hatice'nin annesinin adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fâtıma bint Zâide"
+          },
+          {
+            "id": "o2",
+            "text": "Nevvâr bint Mâlik"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Rûmân"
+          },
+          {
+            "id": "o4",
+            "text": "Hamâme"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Fâtıma bint Zâide",
+        "explanation": "TDV Hatice biyografisi Hz. Hatice'nin annesini Fâtıma bint Zâide b. Cündeb olarak tanıtır; bu kişi Hz. Muhammed'in kızı Fâtıma değildir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hatice",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hatice",
+            "locator": "Annesi Fâtıma bint Zâide",
+            "supports": "TDV Hatice biyografisi Hz. Hatice'nin annesini Fâtıma bint Zâide b. Cündeb olarak tanıtır; bu kişi Hz. Muhammed'in kızı Fâtıma değildir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Hatice'nin annesinin adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fâtıma bint Zâide"
+          },
+          {
+            "id": "o2",
+            "text": "Nevvâr bint Mâlik"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Rûmân"
+          },
+          {
+            "id": "o4",
+            "text": "Hamâme"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Fâtıma bint Zâide",
+        "explanation": "TDV Hatice biyografisi Hz. Hatice'nin annesini Fâtıma bint Zâide b. Cündeb olarak tanıtır; bu kişi Hz. Muhammed'in kızı Fâtıma değildir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hatice",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hatice",
+            "locator": "Annesi Fâtıma bint Zâide",
+            "supports": "TDV Hatice biyografisi Hz. Hatice'nin annesini Fâtıma bint Zâide b. Cündeb olarak tanıtır; bu kişi Hz. Muhammed'in kızı Fâtıma değildir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1491,
+      "sourceSequence": 1486,
+      "id": "q71-hatice-tahire",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Hatice'nin İslâm öncesindeki iffetini anlatan lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zâtü'n-nitâkayn"
+          },
+          {
+            "id": "o2",
+            "text": "Betûl"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Ebîhâ"
+          },
+          {
+            "id": "o4",
+            "text": "Tâhire"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Tâhire",
+        "explanation": "TDV Hatice maddesinde iffetli karakteri nedeniyle İslâm'dan önce Tâhire diye anıldığı kaydedilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hatice",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hatice",
+            "locator": "İslâm öncesi Tâhire lakabı",
+            "supports": "TDV Hatice maddesinde iffetli karakteri nedeniyle İslâm'dan önce Tâhire diye anıldığı kaydedilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Hatice'nin İslâm öncesindeki iffetini anlatan lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zâtü'n-nitâkayn"
+          },
+          {
+            "id": "o2",
+            "text": "Betûl"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Ebîhâ"
+          },
+          {
+            "id": "o4",
+            "text": "Tâhire"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Tâhire",
+        "explanation": "TDV Hatice maddesinde iffetli karakteri nedeniyle İslâm'dan önce Tâhire diye anıldığı kaydedilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hatice",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hatice",
+            "locator": "İslâm öncesi Tâhire lakabı",
+            "supports": "TDV Hatice maddesinde iffetli karakteri nedeniyle İslâm'dan önce Tâhire diye anıldığı kaydedilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1492,
+      "sourceSequence": 1487,
+      "id": "q71-hatice-meysere",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Hatice, Hz. Muhammed'in Şam ticaret yolculuğunda yanına hangi hizmetlisini vermiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zeyd b. Sâbit"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Harâm"
+          },
+          {
+            "id": "o3",
+            "text": "Meysere"
+          },
+          {
+            "id": "o4",
+            "text": "Enes b. Mâlik"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Meysere",
+        "explanation": "TDV Hatice biyografisi genç Muhammed'in Şam'a gönderildiği ticaret yolculuğunda yanında Hz. Hatice'nin hizmetlisi Meysere'nin bulunduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hatice",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hatice",
+            "locator": "Şam ticaretinde hizmetli Meysere",
+            "supports": "TDV Hatice biyografisi genç Muhammed'in Şam'a gönderildiği ticaret yolculuğunda yanında Hz. Hatice'nin hizmetlisi Meysere'nin bulunduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Hatice, Hz. Muhammed'in Şam ticaret yolculuğunda yanına hangi hizmetlisini vermiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zeyd b. Sâbit"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Harâm"
+          },
+          {
+            "id": "o3",
+            "text": "Meysere"
+          },
+          {
+            "id": "o4",
+            "text": "Enes b. Mâlik"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Meysere",
+        "explanation": "TDV Hatice biyografisi genç Muhammed'in Şam'a gönderildiği ticaret yolculuğunda yanında Hz. Hatice'nin hizmetlisi Meysere'nin bulunduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — hatice",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hatice",
+            "locator": "Şam ticaretinde hizmetli Meysere",
+            "supports": "TDV Hatice biyografisi genç Muhammed'in Şam'a gönderildiği ticaret yolculuğunda yanında Hz. Hatice'nin hizmetlisi Meysere'nin bulunduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1493,
+      "sourceSequence": 1488,
+      "id": "q71-fatima-zehra",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Fâtıma'nın aydınlık ve parlak anlamlarıyla açıklanan lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zâtü'n-nitâkayn"
+          },
+          {
+            "id": "o2",
+            "text": "Zehrâ"
+          },
+          {
+            "id": "o3",
+            "text": "Tâhire"
+          },
+          {
+            "id": "o4",
+            "text": "Sıddîka"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zehrâ",
+        "explanation": "TDV Fâtıma maddesi onun Zehrâ lakabını parlak ve aydınlık yüzlü anlamıyla açıklar; Betûl de diğer lakaplarındandır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — fatima",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/fatima",
+            "locator": "Zehrâ lakabının anlamı",
+            "supports": "TDV Fâtıma maddesi onun Zehrâ lakabını parlak ve aydınlık yüzlü anlamıyla açıklar; Betûl de diğer lakaplarındandır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Fâtıma'nın aydınlık ve parlak anlamlarıyla açıklanan lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zâtü'n-nitâkayn"
+          },
+          {
+            "id": "o2",
+            "text": "Zehrâ"
+          },
+          {
+            "id": "o3",
+            "text": "Tâhire"
+          },
+          {
+            "id": "o4",
+            "text": "Sıddîka"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zehrâ",
+        "explanation": "TDV Fâtıma maddesi onun Zehrâ lakabını parlak ve aydınlık yüzlü anlamıyla açıklar; Betûl de diğer lakaplarındandır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — fatima",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/fatima",
+            "locator": "Zehrâ lakabının anlamı",
+            "supports": "TDV Fâtıma maddesi onun Zehrâ lakabını parlak ve aydınlık yüzlü anlamıyla açıklar; Betûl de diğer lakaplarındandır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1494,
+      "sourceSequence": 1489,
+      "id": "q71-fatima-betul",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Fâtıma'nın iffetini vurgulayan diğer lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Betûl"
+          },
+          {
+            "id": "o2",
+            "text": "Hâdimü'n-Nebî"
+          },
+          {
+            "id": "o3",
+            "text": "Zünnûn"
+          },
+          {
+            "id": "o4",
+            "text": "Zülkarneyn"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Betûl",
+        "explanation": "TDV Fâtıma biyografisi Hz. Fâtıma'nın iffete ilişkin anlam taşıyan Betûl lakabıyla anıldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — fatima",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/fatima",
+            "locator": "Betûl lakabı",
+            "supports": "TDV Fâtıma biyografisi Hz. Fâtıma'nın iffete ilişkin anlam taşıyan Betûl lakabıyla anıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Fâtıma'nın iffetini vurgulayan diğer lakabı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Betûl"
+          },
+          {
+            "id": "o2",
+            "text": "Hâdimü'n-Nebî"
+          },
+          {
+            "id": "o3",
+            "text": "Zünnûn"
+          },
+          {
+            "id": "o4",
+            "text": "Zülkarneyn"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Betûl",
+        "explanation": "TDV Fâtıma biyografisi Hz. Fâtıma'nın iffete ilişkin anlam taşıyan Betûl lakabıyla anıldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — fatima",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/fatima",
+            "locator": "Betûl lakabı",
+            "supports": "TDV Fâtıma biyografisi Hz. Fâtıma'nın iffete ilişkin anlam taşıyan Betûl lakabıyla anıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1495,
+      "sourceSequence": 1490,
+      "id": "q71-aise-anne",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Âişe'nin annesi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ümmü Süleym"
+          },
+          {
+            "id": "o2",
+            "text": "Fâtıma bint Zâide"
+          },
+          {
+            "id": "o3",
+            "text": "Nevvâr bint Mâlik"
+          },
+          {
+            "id": "o4",
+            "text": "Ümmü Rûmân"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Ümmü Rûmân",
+        "explanation": "TDV Âişe maddesi annesini Ümmü Rûmân bint Âmir olarak tanımlar; babası Hz. Ebû Bekir'dir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — aise",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/aise",
+            "locator": "Annesi Ümmü Rûmân",
+            "supports": "TDV Âişe maddesi annesini Ümmü Rûmân bint Âmir olarak tanımlar; babası Hz. Ebû Bekir'dir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Âişe'nin annesi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ümmü Süleym"
+          },
+          {
+            "id": "o2",
+            "text": "Fâtıma bint Zâide"
+          },
+          {
+            "id": "o3",
+            "text": "Nevvâr bint Mâlik"
+          },
+          {
+            "id": "o4",
+            "text": "Ümmü Rûmân"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Ümmü Rûmân",
+        "explanation": "TDV Âişe maddesi annesini Ümmü Rûmân bint Âmir olarak tanımlar; babası Hz. Ebû Bekir'dir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — aise",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/aise",
+            "locator": "Annesi Ümmü Rûmân",
+            "supports": "TDV Âişe maddesi annesini Ümmü Rûmân bint Âmir olarak tanımlar; babası Hz. Ebû Bekir'dir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1496,
+      "sourceSequence": 1492,
+      "id": "q71-aise-ifk",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Âişe'ye yönelik iftirayı reddeden âyetler hangi sûrededir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fil"
+          },
+          {
+            "id": "o2",
+            "text": "Nûr"
+          },
+          {
+            "id": "o3",
+            "text": "İhlâs"
+          },
+          {
+            "id": "o4",
+            "text": "Kevser"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nûr",
+        "explanation": "TDV Âişe maddesi İfk hadisesinin ardından Nûr sûresi 11-21. âyetlerde onun suçsuzluğunu açıklayan vahiy geldiğini aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — aise",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/aise",
+            "locator": "İfk hadisesi Nûr 24/11-21",
+            "supports": "TDV Âişe maddesi İfk hadisesinin ardından Nûr sûresi 11-21. âyetlerde onun suçsuzluğunu açıklayan vahiy geldiğini aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Âişe'ye yönelik iftirayı reddeden âyetler hangi sûrededir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fil"
+          },
+          {
+            "id": "o2",
+            "text": "Nûr"
+          },
+          {
+            "id": "o3",
+            "text": "İhlâs"
+          },
+          {
+            "id": "o4",
+            "text": "Kevser"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nûr",
+        "explanation": "TDV Âişe maddesi İfk hadisesinin ardından Nûr sûresi 11-21. âyetlerde onun suçsuzluğunu açıklayan vahiy geldiğini aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — aise",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/aise",
+            "locator": "İfk hadisesi Nûr 24/11-21",
+            "supports": "TDV Âişe maddesi İfk hadisesinin ardından Nûr sûresi 11-21. âyetlerde onun suçsuzluğunu açıklayan vahiy geldiğini aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1497,
+      "sourceSequence": 1494,
+      "id": "q71-kurban-kalb",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kurban ibadetinde niyetin geçerli olması için hangi şart asıldır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Niyeti mutlaka yazıya geçirmek"
+          },
+          {
+            "id": "o2",
+            "text": "Bir tanığa imzalatmak"
+          },
+          {
+            "id": "o3",
+            "text": "Niyeti yüksek sesle söylemek"
+          },
+          {
+            "id": "o4",
+            "text": "Kalpten niyet etmek"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Kalpten niyet etmek",
+        "explanation": "TDV Kurban maddesi niyette asıl olanın kalpte niyet bulunduğunu, dil ile ayrıca söylemenin şart olmadığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Niyette asıl olanın kalp olması",
+            "supports": "TDV Kurban maddesi niyette asıl olanın kalpte niyet bulunduğunu, dil ile ayrıca söylemenin şart olmadığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kurban ibadetinde niyetin geçerli olması için hangi şart asıldır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Niyeti mutlaka yazıya geçirmek"
+          },
+          {
+            "id": "o2",
+            "text": "Bir tanığa imzalatmak"
+          },
+          {
+            "id": "o3",
+            "text": "Niyeti yüksek sesle söylemek"
+          },
+          {
+            "id": "o4",
+            "text": "Kalpten niyet etmek"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Kalpten niyet etmek",
+        "explanation": "TDV Kurban maddesi niyette asıl olanın kalpte niyet bulunduğunu, dil ile ayrıca söylemenin şart olmadığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Niyette asıl olanın kalp olması",
+            "supports": "TDV Kurban maddesi niyette asıl olanın kalpte niyet bulunduğunu, dil ile ayrıca söylemenin şart olmadığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1498,
+      "sourceSequence": 1496,
+      "id": "q71-kurban-koyun",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yaygın fıkıh uygulamasında bir koyun kaç kişinin kurbanı olarak kesilebilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On"
+          },
+          {
+            "id": "o2",
+            "text": "Bir"
+          },
+          {
+            "id": "o3",
+            "text": "İki"
+          },
+          {
+            "id": "o4",
+            "text": "Yedi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir",
+        "explanation": "TDV Kurban maddesine göre koyun ve keçi bir kişinin kurbanı olabilir; büyükbaş hayvanlardaki ortaklık şartları farklıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Koyun ve keçi için bir kişi",
+            "supports": "TDV Kurban maddesine göre koyun ve keçi bir kişinin kurbanı olabilir; büyükbaş hayvanlardaki ortaklık şartları farklıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yaygın fıkıh uygulamasında bir koyun kaç kişinin kurbanı olarak kesilebilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On"
+          },
+          {
+            "id": "o2",
+            "text": "Bir"
+          },
+          {
+            "id": "o3",
+            "text": "İki"
+          },
+          {
+            "id": "o4",
+            "text": "Yedi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir",
+        "explanation": "TDV Kurban maddesine göre koyun ve keçi bir kişinin kurbanı olabilir; büyükbaş hayvanlardaki ortaklık şartları farklıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Koyun ve keçi için bir kişi",
+            "supports": "TDV Kurban maddesine göre koyun ve keçi bir kişinin kurbanı olabilir; büyükbaş hayvanlardaki ortaklık şartları farklıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1499,
+      "sourceSequence": 1497,
+      "id": "q71-kurban-buyuk",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hanefî, Şâfiî ve Hanbelî mezheplerinin ortak uygulamasında sığır kurbanına en fazla kaç kişi katılabilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yedi"
+          },
+          {
+            "id": "o2",
+            "text": "Üç"
+          },
+          {
+            "id": "o3",
+            "text": "On"
+          },
+          {
+            "id": "o4",
+            "text": "On iki"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Yedi",
+        "explanation": "TDV Kurban maddesi bu mezheplere göre sığır, manda ve devenin yedi kişiye kadar ortak kesilebildiğini; Mâlikî mezhebinin farklı hükmü olduğunu kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Büyükbaş ortaklıkta yedi kişi ve mezhep farkı",
+            "supports": "TDV Kurban maddesi bu mezheplere göre sığır, manda ve devenin yedi kişiye kadar ortak kesilebildiğini; Mâlikî mezhebinin farklı hükmü olduğunu kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hanefî, Şâfiî ve Hanbelî mezheplerinin ortak uygulamasında sığır kurbanına en fazla kaç kişi katılabilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yedi"
+          },
+          {
+            "id": "o2",
+            "text": "Üç"
+          },
+          {
+            "id": "o3",
+            "text": "On"
+          },
+          {
+            "id": "o4",
+            "text": "On iki"
+          }
+        ],
+        "correctOptionId": "o1",
+        "correctAnswer": "Yedi",
+        "explanation": "TDV Kurban maddesi bu mezheplere göre sığır, manda ve devenin yedi kişiye kadar ortak kesilebildiğini; Mâlikî mezhebinin farklı hükmü olduğunu kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Büyükbaş ortaklıkta yedi kişi ve mezhep farkı",
+            "supports": "TDV Kurban maddesi bu mezheplere göre sığır, manda ve devenin yedi kişiye kadar ortak kesilebildiğini; Mâlikî mezhebinin farklı hükmü olduğunu kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 1500,
+      "sourceSequence": 1498,
+      "id": "q71-kurban-tur",
+      "category": "fikih",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Aşağıdaki hayvanlardan hangisi dinen kurbanlık olarak kabul edilen türler arasındadır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tavuk"
+          },
+          {
+            "id": "o2",
+            "text": "Kaz"
+          },
+          {
+            "id": "o3",
+            "text": "Ceylan"
+          },
+          {
+            "id": "o4",
+            "text": "Keçi"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Keçi",
+        "explanation": "TDV Kurban maddesi kurbanlık hayvanları koyun, keçi, sığır, manda ve deve olarak sıralar; tavuk ve kaz bu kapsama girmez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Kurbanlık hayvan türleri",
+            "supports": "TDV Kurban maddesi kurbanlık hayvanları koyun, keçi, sığır, manda ve deve olarak sıralar; tavuk ve kaz bu kapsama girmez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Aşağıdaki hayvanlardan hangisi dinen kurbanlık olarak kabul edilen türler arasındadır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tavuk"
+          },
+          {
+            "id": "o2",
+            "text": "Kaz"
+          },
+          {
+            "id": "o3",
+            "text": "Ceylan"
+          },
+          {
+            "id": "o4",
+            "text": "Keçi"
+          }
+        ],
+        "correctOptionId": "o4",
+        "correctAnswer": "Keçi",
+        "explanation": "TDV Kurban maddesi kurbanlık hayvanları koyun, keçi, sığır, manda ve deve olarak sıralar; tavuk ve kaz bu kapsama girmez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — kurban",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kurban",
+            "locator": "Kurbanlık hayvan türleri",
+            "supports": "TDV Kurban maddesi kurbanlık hayvanları koyun, keçi, sığır, manda ve deve olarak sıralar; tavuk ve kaz bu kapsama girmez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    }
+  ]
+}

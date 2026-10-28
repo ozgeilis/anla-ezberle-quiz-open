@@ -1,0 +1,4332 @@
+{
+  "batch": 15,
+  "start": 701,
+  "end": 750,
+  "total": 50,
+  "individuallyReviewed": 0,
+  "pendingReview": 50,
+  "sourceComparedThisRound": 0,
+  "blocked": 0,
+  "flaggedBefore": 10,
+  "flaggedAfter": 6,
+  "records": [
+    {
+      "sequence": 701,
+      "sourceSequence": 544,
+      "id": "learn-history-011",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hicaz Demiryolu'nun yapımını destekleyen Osmanlı padişahı kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "I. Mahmud"
+          },
+          {
+            "id": "o2",
+            "text": "II. Abdülhamid"
+          },
+          {
+            "id": "o3",
+            "text": "II. Mehmed"
+          },
+          {
+            "id": "o4",
+            "text": "III. Selim"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "II. Abdülhamid",
+        "explanation": "Hicaz Demiryolu girişimi II. Abdülhamid döneminde hayata geçirilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hicaz-demiryolu",
+            "locator": "II. Abdülhamid devri Hicaz Demiryolu girişimi",
+            "supports": "Hicaz Demiryolu girişimi II. Abdülhamid döneminde hayata geçirilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hicaz Demiryolu'nun yapımını destekleyen Osmanlı padişahı kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "I. Mahmud"
+          },
+          {
+            "id": "o2",
+            "text": "II. Abdülhamid"
+          },
+          {
+            "id": "o3",
+            "text": "II. Mehmed"
+          },
+          {
+            "id": "o4",
+            "text": "III. Selim"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "II. Abdülhamid",
+        "explanation": "Hicaz Demiryolu girişimi II. Abdülhamid döneminde hayata geçirilmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hicaz-demiryolu",
+            "locator": "II. Abdülhamid devri Hicaz Demiryolu girişimi",
+            "supports": "Hicaz Demiryolu girişimi II. Abdülhamid döneminde hayata geçirilmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 702,
+      "sourceSequence": 545,
+      "id": "learn-history-012",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Endülüslü filozof ve kadı İbn Rüşd hangi şehirde doğdu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bağdat"
+          },
+          {
+            "id": "o2",
+            "text": "Kurtuba (Córdoba)"
+          },
+          {
+            "id": "o3",
+            "text": "İsfahan"
+          },
+          {
+            "id": "o4",
+            "text": "Kahire"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kurtuba (Córdoba)",
+        "explanation": "İbn Rüşd, Endülüs'ün ilim merkezlerinden Kurtuba'da doğmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ibn-rusd--torun",
+            "locator": "Kurtuba'da doğumu",
+            "supports": "İbn Rüşd, Endülüs'ün ilim merkezlerinden Kurtuba'da doğmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Endülüslü filozof ve kadı İbn Rüşd hangi şehirde doğdu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bağdat"
+          },
+          {
+            "id": "o2",
+            "text": "Kurtuba (Córdoba)"
+          },
+          {
+            "id": "o3",
+            "text": "İsfahan"
+          },
+          {
+            "id": "o4",
+            "text": "Kahire"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kurtuba (Córdoba)",
+        "explanation": "İbn Rüşd, Endülüs'ün ilim merkezlerinden Kurtuba'da doğmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ibn-rusd--torun",
+            "locator": "Kurtuba'da doğumu",
+            "supports": "İbn Rüşd, Endülüs'ün ilim merkezlerinden Kurtuba'da doğmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 703,
+      "sourceSequence": 546,
+      "id": "learn-history-013",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Fâtımîler döneminde Kahire'yi kuran kumandan kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Târık b. Ziyâd"
+          },
+          {
+            "id": "o2",
+            "text": "Cevher es-Sıkıllî"
+          },
+          {
+            "id": "o3",
+            "text": "Hâlid b. Velîd"
+          },
+          {
+            "id": "o4",
+            "text": "Kuteybe b. Müslim"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cevher es-Sıkıllî",
+        "explanation": "Fâtımî kumandanı Cevher es-Sıkıllî, Kahire'nin kuruluşunda belirleyici rol oynamıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/cevher-es-sikilli",
+            "locator": "Mısır seferi ve Kahire'nin kuruluşu",
+            "supports": "Fâtımî kumandanı Cevher es-Sıkıllî, Kahire'nin kuruluşunda belirleyici rol oynamıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Fâtımîler döneminde Kahire'yi kuran kumandan kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Târık b. Ziyâd"
+          },
+          {
+            "id": "o2",
+            "text": "Cevher es-Sıkıllî"
+          },
+          {
+            "id": "o3",
+            "text": "Hâlid b. Velîd"
+          },
+          {
+            "id": "o4",
+            "text": "Kuteybe b. Müslim"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cevher es-Sıkıllî",
+        "explanation": "Fâtımî kumandanı Cevher es-Sıkıllî, Kahire'nin kuruluşunda belirleyici rol oynamıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/cevher-es-sikilli",
+            "locator": "Mısır seferi ve Kahire'nin kuruluşu",
+            "supports": "Fâtımî kumandanı Cevher es-Sıkıllî, Kahire'nin kuruluşunda belirleyici rol oynamıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 704,
+      "sourceSequence": 547,
+      "id": "learn-history-014",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mihne olarak bilinen dinî-siyasî sorgulama uygulamasını başlatan Abbâsî halifesi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hârûnürreşîd"
+          },
+          {
+            "id": "o2",
+            "text": "Me'mûn"
+          },
+          {
+            "id": "o3",
+            "text": "Mansûr"
+          },
+          {
+            "id": "o4",
+            "text": "Mu'tasım"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Me'mûn",
+        "explanation": "Mihne uygulaması Abbâsî Halifesi Me'mûn döneminde başlatılmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mihne",
+            "locator": "Me'mûn devrinde mihne",
+            "supports": "Mihne uygulaması Abbâsî Halifesi Me'mûn döneminde başlatılmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mihne olarak bilinen dinî-siyasî sorgulama uygulamasını başlatan Abbâsî halifesi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hârûnürreşîd"
+          },
+          {
+            "id": "o2",
+            "text": "Me'mûn"
+          },
+          {
+            "id": "o3",
+            "text": "Mansûr"
+          },
+          {
+            "id": "o4",
+            "text": "Mu'tasım"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Me'mûn",
+        "explanation": "Mihne uygulaması Abbâsî Halifesi Me'mûn döneminde başlatılmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mihne",
+            "locator": "Me'mûn devrinde mihne",
+            "supports": "Mihne uygulaması Abbâsî Halifesi Me'mûn döneminde başlatılmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 705,
+      "sourceSequence": 548,
+      "id": "learn-history-015",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Osmanlı Türkçesinde basılı eserler yayımlayan ilk Türk matbaasının kurucularından olan kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kâtip Çelebi"
+          },
+          {
+            "id": "o2",
+            "text": "İbrâhim Müteferrika"
+          },
+          {
+            "id": "o3",
+            "text": "Evliya Çelebi"
+          },
+          {
+            "id": "o4",
+            "text": "Pîrî Reis"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İbrâhim Müteferrika",
+        "explanation": "İbrâhim Müteferrika, Osmanlı'da Türkçe kitap basımıyla tanınır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ibrahim-muteferrika",
+            "locator": "Matbaacılık faaliyetleri",
+            "supports": "İbrâhim Müteferrika, Osmanlı'da Türkçe kitap basımıyla tanınır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Osmanlı Türkçesinde basılı eserler yayımlayan ilk Türk matbaasının kurucularından olan kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kâtip Çelebi"
+          },
+          {
+            "id": "o2",
+            "text": "İbrâhim Müteferrika"
+          },
+          {
+            "id": "o3",
+            "text": "Evliya Çelebi"
+          },
+          {
+            "id": "o4",
+            "text": "Pîrî Reis"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İbrâhim Müteferrika",
+        "explanation": "İbrâhim Müteferrika, Osmanlı'da Türkçe kitap basımıyla tanınır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ibrahim-muteferrika",
+            "locator": "Matbaacılık faaliyetleri",
+            "supports": "İbrâhim Müteferrika, Osmanlı'da Türkçe kitap basımıyla tanınır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 706,
+      "sourceSequence": 549,
+      "id": "learn-history-016",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Vesîletü'n-Necât adıyla bilinen Mevlid adlı eseri yazan şair kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yûnus Emre"
+          },
+          {
+            "id": "o2",
+            "text": "Süleyman Çelebi"
+          },
+          {
+            "id": "o3",
+            "text": "Âşık Paşa"
+          },
+          {
+            "id": "o4",
+            "text": "Fuzûlî"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Süleyman Çelebi",
+        "explanation": "Süleyman Çelebi'nin Vesîletü'n-Necât'ı Türkçe mevlid geleneğinin temel eserlerindendir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mevlid--suleyman-celebi",
+            "locator": "Vesîletü'n-Necât (Mevlid) adlı eser",
+            "supports": "Süleyman Çelebi'nin Vesîletü'n-Necât'ı Türkçe mevlid geleneğinin temel eserlerindendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Vesîletü'n-Necât adıyla bilinen Mevlid adlı eseri yazan şair kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yûnus Emre"
+          },
+          {
+            "id": "o2",
+            "text": "Süleyman Çelebi"
+          },
+          {
+            "id": "o3",
+            "text": "Âşık Paşa"
+          },
+          {
+            "id": "o4",
+            "text": "Fuzûlî"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Süleyman Çelebi",
+        "explanation": "Süleyman Çelebi'nin Vesîletü'n-Necât'ı Türkçe mevlid geleneğinin temel eserlerindendir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mevlid--suleyman-celebi",
+            "locator": "Vesîletü'n-Necât (Mevlid) adlı eser",
+            "supports": "Süleyman Çelebi'nin Vesîletü'n-Necât'ı Türkçe mevlid geleneğinin temel eserlerindendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 707,
+      "sourceSequence": 550,
+      "id": "learn-history-017",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Karahanlı hükümdarları içinde İslâmiyet'i kabulüyle anılan kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Alparslan"
+          },
+          {
+            "id": "o2",
+            "text": "Satuk Buğra Han"
+          },
+          {
+            "id": "o3",
+            "text": "Tuğrul Bey"
+          },
+          {
+            "id": "o4",
+            "text": "Gazneli Mahmud"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Satuk Buğra Han",
+        "explanation": "Satuk Buğra Han, Karahanlı hükümdarları içinde Müslüman oluşuyla tanınmaktadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/satuk-bugra-han",
+            "locator": "İslâmiyet'i kabul etmesi ve Karahanlılar",
+            "supports": "Satuk Buğra Han, Karahanlı hükümdarları içinde Müslüman oluşuyla tanınmaktadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Karahanlı hükümdarları içinde İslâmiyet'i kabulüyle anılan kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Alparslan"
+          },
+          {
+            "id": "o2",
+            "text": "Satuk Buğra Han"
+          },
+          {
+            "id": "o3",
+            "text": "Tuğrul Bey"
+          },
+          {
+            "id": "o4",
+            "text": "Gazneli Mahmud"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Satuk Buğra Han",
+        "explanation": "Satuk Buğra Han, Karahanlı hükümdarları içinde Müslüman oluşuyla tanınmaktadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/satuk-bugra-han",
+            "locator": "İslâmiyet'i kabul etmesi ve Karahanlılar",
+            "supports": "Satuk Buğra Han, Karahanlı hükümdarları içinde Müslüman oluşuyla tanınmaktadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 708,
+      "sourceSequence": 551,
+      "id": "learn-history-018",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tolunoğulları Devleti hangi bölgede kurulmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Endülüs"
+          },
+          {
+            "id": "o2",
+            "text": "Mısır"
+          },
+          {
+            "id": "o3",
+            "text": "Hindistan"
+          },
+          {
+            "id": "o4",
+            "text": "Horasan"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mısır",
+        "explanation": "Tolunoğulları Devleti dokuzuncu yüzyılda Mısır merkezli olarak kurulmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/tolunogullari",
+            "locator": "Mısır'daki Tolunoğulları hânedanı",
+            "supports": "Tolunoğulları Devleti dokuzuncu yüzyılda Mısır merkezli olarak kurulmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tolunoğulları Devleti hangi bölgede kurulmuştur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Endülüs"
+          },
+          {
+            "id": "o2",
+            "text": "Mısır"
+          },
+          {
+            "id": "o3",
+            "text": "Hindistan"
+          },
+          {
+            "id": "o4",
+            "text": "Horasan"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Mısır",
+        "explanation": "Tolunoğulları Devleti dokuzuncu yüzyılda Mısır merkezli olarak kurulmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/tolunogullari",
+            "locator": "Mısır'daki Tolunoğulları hânedanı",
+            "supports": "Tolunoğulları Devleti dokuzuncu yüzyılda Mısır merkezli olarak kurulmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 709,
+      "sourceSequence": 552,
+      "id": "learn-history-020",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Osmanlı tarihindeki Çaldıran Savaşı hangi yıl yapılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "1453"
+          },
+          {
+            "id": "o2",
+            "text": "1514"
+          },
+          {
+            "id": "o3",
+            "text": "1526"
+          },
+          {
+            "id": "o4",
+            "text": "1571"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "1514",
+        "explanation": "Çaldıran Savaşı Osmanlılarla Safevîler arasında 1514 yılında yapılmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/caldiran-savasi",
+            "locator": "1514 Çaldıran Savaşı",
+            "supports": "Çaldıran Savaşı Osmanlılarla Safevîler arasında 1514 yılında yapılmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Osmanlı tarihindeki Çaldıran Savaşı hangi yıl yapılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "1453"
+          },
+          {
+            "id": "o2",
+            "text": "1514"
+          },
+          {
+            "id": "o3",
+            "text": "1526"
+          },
+          {
+            "id": "o4",
+            "text": "1571"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "1514",
+        "explanation": "Çaldıran Savaşı Osmanlılarla Safevîler arasında 1514 yılında yapılmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/caldiran-savasi",
+            "locator": "1514 Çaldıran Savaşı",
+            "supports": "Çaldıran Savaşı Osmanlılarla Safevîler arasında 1514 yılında yapılmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 710,
+      "sourceSequence": 553,
+      "id": "learn-women-015",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ümmü Habîbe'nin babası olarak bilinen Kureyşli kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ebû Tâlib"
+          },
+          {
+            "id": "o2",
+            "text": "Ebû Süfyân"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Bekir"
+          },
+          {
+            "id": "o4",
+            "text": "Abbas"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ebû Süfyân",
+        "explanation": "Ümmü Habîbe, Ebû Süfyân'ın kızıdır; asıl adı Remle'dir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-habibe",
+            "locator": "Aile kökeni, Ebû Süfyân'ın kızı",
+            "supports": "Ümmü Habîbe, Ebû Süfyân'ın kızıdır; asıl adı Remle'dir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ümmü Habîbe'nin babası olarak bilinen Kureyşli kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ebû Tâlib"
+          },
+          {
+            "id": "o2",
+            "text": "Ebû Süfyân"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Bekir"
+          },
+          {
+            "id": "o4",
+            "text": "Abbas"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ebû Süfyân",
+        "explanation": "Ümmü Habîbe, Ebû Süfyân'ın kızıdır; asıl adı Remle'dir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-habibe",
+            "locator": "Aile kökeni, Ebû Süfyân'ın kızı",
+            "supports": "Ümmü Habîbe, Ebû Süfyân'ın kızıdır; asıl adı Remle'dir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 711,
+      "sourceSequence": 554,
+      "id": "learn-women-016",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ümmü Habîbe Müslümanların erken dönem hicretlerinde nereye gitmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Horasan'a"
+          },
+          {
+            "id": "o2",
+            "text": "Habeşistan'a"
+          },
+          {
+            "id": "o3",
+            "text": "Endülüs'e"
+          },
+          {
+            "id": "o4",
+            "text": "Bağdat'a"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Habeşistan'a",
+        "explanation": "Ümmü Habîbe, ilk Müslümanlardan olup eşiyle Habeşistan'a hicret etmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-habibe",
+            "locator": "Habeşistan'a göçü",
+            "supports": "Ümmü Habîbe, ilk Müslümanlardan olup eşiyle Habeşistan'a hicret etmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ümmü Habîbe Müslümanların erken dönem hicretlerinde nereye gitmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Horasan'a"
+          },
+          {
+            "id": "o2",
+            "text": "Habeşistan'a"
+          },
+          {
+            "id": "o3",
+            "text": "Endülüs'e"
+          },
+          {
+            "id": "o4",
+            "text": "Bağdat'a"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Habeşistan'a",
+        "explanation": "Ümmü Habîbe, ilk Müslümanlardan olup eşiyle Habeşistan'a hicret etmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-habibe",
+            "locator": "Habeşistan'a göçü",
+            "supports": "Ümmü Habîbe, ilk Müslümanlardan olup eşiyle Habeşistan'a hicret etmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 712,
+      "sourceSequence": 555,
+      "id": "learn-women-019",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Peygamber’le evlenmeden önce Zeyd b. Hârise ile evli olan ve el emeği kazancını ihtiyaç sahipleriyle paylaşan hanımı kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sevde bint Zem'a"
+          },
+          {
+            "id": "o2",
+            "text": "Zeyneb bint Cahş"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Külsûm"
+          },
+          {
+            "id": "o4",
+            "text": "Rukıyye"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zeyneb bint Cahş",
+        "explanation": "Zeyneb bint Cahş, Hz. Peygamber’le evlenmeden önce Zeyd b. Hârise ile evliydi. TDV maddesi onun el işlerinden kazandıklarını hayır yolunda harcadığını da belirtir. Sevde de el emeği kazancıyla yoksullara yardım ettiği için yalnız cömertlik özelliği Zeyneb’i ayırt etmez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zeyneb-bint-cahs",
+            "locator": "ZEYNEB bint CAHŞ, Zeyd ile evlilik ve cömertlik paragrafları",
+            "supports": "Zeyd ile önceki evlilik ve el işinden hayır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          },
+          {
+            "title": "TDV İslâm Ansiklopedisi — Sevde",
+            "publisher": "TDV",
+            "url": "https://islamansiklopedisi.org.tr/sevde",
+            "locator": "El emeği ve yardımları",
+            "supports": "Sevde de kazancıyla ihtiyaç sahiplerine yardım eder; tek başına bu özellik ayırt edici değildir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Peygamber’le evlenmeden önce Zeyd b. Hârise ile evli olan ve el emeği kazancını ihtiyaç sahipleriyle paylaşan hanımı kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sevde bint Zem'a"
+          },
+          {
+            "id": "o2",
+            "text": "Zeyneb bint Cahş"
+          },
+          {
+            "id": "o3",
+            "text": "Ümmü Külsûm"
+          },
+          {
+            "id": "o4",
+            "text": "Rukıyye"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zeyneb bint Cahş",
+        "explanation": "Zeyneb bint Cahş, Hz. Peygamber’le evlenmeden önce Zeyd b. Hârise ile evliydi. TDV maddesi onun el işlerinden kazandıklarını hayır yolunda harcadığını da belirtir. Sevde de el emeği kazancıyla yoksullara yardım ettiği için yalnız cömertlik özelliği Zeyneb’i ayırt etmez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zeyneb-bint-cahs",
+            "locator": "ZEYNEB bint CAHŞ, Zeyd ile evlilik ve cömertlik paragrafları",
+            "supports": "Zeyd ile önceki evlilik ve el işinden hayır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          },
+          {
+            "title": "TDV İslâm Ansiklopedisi — Sevde",
+            "publisher": "TDV",
+            "url": "https://islamansiklopedisi.org.tr/sevde",
+            "locator": "El emeği ve yardımları",
+            "supports": "Sevde de kazancıyla ihtiyaç sahiplerine yardım eder; tek başına bu özellik ayırt edici değildir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 713,
+      "sourceSequence": 556,
+      "id": "learn-women-024",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Peygamber'in eşi Cüveyriye'nin mensup olduğu kabile grubu hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Evs"
+          },
+          {
+            "id": "o2",
+            "text": "Benî Mustalik"
+          },
+          {
+            "id": "o3",
+            "text": "Benî Nadîr"
+          },
+          {
+            "id": "o4",
+            "text": "Sakīf"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Benî Mustalik",
+        "explanation": "Cüveyriye bint Hâris, Benî Mustalik reisi Hâris b. Ebû Dırâr'ın kızıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/cuveyriye-bint-haris",
+            "locator": "Mustalikoğulları'na mensup olması",
+            "supports": "Cüveyriye bint Hâris, Benî Mustalik reisi Hâris b. Ebû Dırâr'ın kızıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Peygamber'in eşi Cüveyriye'nin mensup olduğu kabile grubu hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Evs"
+          },
+          {
+            "id": "o2",
+            "text": "Benî Mustalik"
+          },
+          {
+            "id": "o3",
+            "text": "Benî Nadîr"
+          },
+          {
+            "id": "o4",
+            "text": "Sakīf"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Benî Mustalik",
+        "explanation": "Cüveyriye bint Hâris, Benî Mustalik reisi Hâris b. Ebû Dırâr'ın kızıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/cuveyriye-bint-haris",
+            "locator": "Mustalikoğulları'na mensup olması",
+            "supports": "Cüveyriye bint Hâris, Benî Mustalik reisi Hâris b. Ebû Dırâr'ın kızıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 714,
+      "sourceSequence": 557,
+      "id": "learn-women-025",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Cüveyriye bint Hâris'in Müslüman olmadan önceki adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Rümeysâ"
+          },
+          {
+            "id": "o2",
+            "text": "Berre"
+          },
+          {
+            "id": "o3",
+            "text": "Leylâ"
+          },
+          {
+            "id": "o4",
+            "text": "Habîbe"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Berre",
+        "explanation": "Cüveyriye'nin daha önceki adı Berre idi; Hz. Peygamber kendisine Cüveyriye adını vermiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/cuveyriye-bint-haris",
+            "locator": "Eski adı Berre, adının değiştirilmesi",
+            "supports": "Cüveyriye'nin daha önceki adı Berre idi; Hz. Peygamber kendisine Cüveyriye adını vermiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Cüveyriye bint Hâris'in Müslüman olmadan önceki adı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Rümeysâ"
+          },
+          {
+            "id": "o2",
+            "text": "Berre"
+          },
+          {
+            "id": "o3",
+            "text": "Leylâ"
+          },
+          {
+            "id": "o4",
+            "text": "Habîbe"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Berre",
+        "explanation": "Cüveyriye'nin daha önceki adı Berre idi; Hz. Peygamber kendisine Cüveyriye adını vermiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/cuveyriye-bint-haris",
+            "locator": "Eski adı Berre, adının değiştirilmesi",
+            "supports": "Cüveyriye'nin daha önceki adı Berre idi; Hz. Peygamber kendisine Cüveyriye adını vermiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 715,
+      "sourceSequence": 559,
+      "id": "learn-women-027",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Peygamber'in son evlendiği hanım olarak bilinen kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hafsa bint Ömer"
+          },
+          {
+            "id": "o2",
+            "text": "Meymûne bint Hâris"
+          },
+          {
+            "id": "o3",
+            "text": "Rukıyye"
+          },
+          {
+            "id": "o4",
+            "text": "Şifâ bint Abdullah"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Meymûne bint Hâris",
+        "explanation": "Meymûne bint Hâris, Hz. Peygamber'in son olarak evlendiği hanımıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/meymune",
+            "locator": "Son evliliği",
+            "supports": "Meymûne bint Hâris, Hz. Peygamber'in son olarak evlendiği hanımıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Peygamber'in son evlendiği hanım olarak bilinen kişi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hafsa bint Ömer"
+          },
+          {
+            "id": "o2",
+            "text": "Meymûne bint Hâris"
+          },
+          {
+            "id": "o3",
+            "text": "Rukıyye"
+          },
+          {
+            "id": "o4",
+            "text": "Şifâ bint Abdullah"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Meymûne bint Hâris",
+        "explanation": "Meymûne bint Hâris, Hz. Peygamber'in son olarak evlendiği hanımıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/meymune",
+            "locator": "Son evliliği",
+            "supports": "Meymûne bint Hâris, Hz. Peygamber'in son olarak evlendiği hanımıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 716,
+      "sourceSequence": 562,
+      "id": "learn-dua-021",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Yûnus 10/85'te Hz. Mûsâ'ya inananlar zalimlerle ilgili ne diler?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zalimlerin malına ortak olmayı"
+          },
+          {
+            "id": "o2",
+            "text": "Zalimler için bir imtihan aracı olmamayı"
+          },
+          {
+            "id": "o3",
+            "text": "Zalimlerin ordusuna katılmayı"
+          },
+          {
+            "id": "o4",
+            "text": "Zalimlerin yönetimini devralmayı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zalimler için bir imtihan aracı olmamayı",
+        "explanation": "Bu âyette iman edenler Allah'a güvenip zalimler için bir imtihan aracı kılınmamayı diler; devamındaki âyette kurtuluş ister.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Y%C3%BBnus-suresi/1448/84-86-ayet-tefsiri",
+            "locator": "Yûnus 10/85",
+            "supports": "Bu âyette iman edenler Allah'a güvenip zalimler için bir imtihan aracı kılınmamayı diler; devamındaki âyette kurtuluş ister.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Yûnus 10/85'te Hz. Mûsâ'ya inananlar zalimlerle ilgili ne diler?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zalimlerin malına ortak olmayı"
+          },
+          {
+            "id": "o2",
+            "text": "Zalimler için bir imtihan aracı olmamayı"
+          },
+          {
+            "id": "o3",
+            "text": "Zalimlerin ordusuna katılmayı"
+          },
+          {
+            "id": "o4",
+            "text": "Zalimlerin yönetimini devralmayı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zalimler için bir imtihan aracı olmamayı",
+        "explanation": "Bu âyette iman edenler Allah'a güvenip zalimler için bir imtihan aracı kılınmamayı diler; devamındaki âyette kurtuluş ister.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Y%C3%BBnus-suresi/1448/84-86-ayet-tefsiri",
+            "locator": "Yûnus 10/85",
+            "supports": "Bu âyette iman edenler Allah'a güvenip zalimler için bir imtihan aracı kılınmamayı diler; devamındaki âyette kurtuluş ister.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 717,
+      "sourceSequence": 563,
+      "id": "learn-dua-023",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İsrâ 17/80'de öğretilen duada hangi iki işin doğrulukla gerçekleşmesi istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız alışveriş ve ticaret"
+          },
+          {
+            "id": "o2",
+            "text": "Bir yere giriş ve bir yerden çıkış"
+          },
+          {
+            "id": "o3",
+            "text": "Uyuma ve uyanma"
+          },
+          {
+            "id": "o4",
+            "text": "Yeme ve içme"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir yere giriş ve bir yerden çıkış",
+        "explanation": "İsrâ 17/80'de doğru bir giriş ve doğru bir çıkış istenir. Tefsirde bunun hicretle ve işlere dürüstçe başlayıp bitirmeyle ilişkisi açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/%C4%B0sr%C3%A2-suresi/2109/80-ayet-tefsiri",
+            "locator": "İsrâ 17/80",
+            "supports": "İsrâ 17/80'de doğru bir giriş ve doğru bir çıkış istenir. Tefsirde bunun hicretle ve işlere dürüstçe başlayıp bitirmeyle ilişkisi açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "İsrâ 17/80'de öğretilen duada hangi iki işin doğrulukla gerçekleşmesi istenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız alışveriş ve ticaret"
+          },
+          {
+            "id": "o2",
+            "text": "Bir yere giriş ve bir yerden çıkış"
+          },
+          {
+            "id": "o3",
+            "text": "Uyuma ve uyanma"
+          },
+          {
+            "id": "o4",
+            "text": "Yeme ve içme"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir yere giriş ve bir yerden çıkış",
+        "explanation": "İsrâ 17/80'de doğru bir giriş ve doğru bir çıkış istenir. Tefsirde bunun hicretle ve işlere dürüstçe başlayıp bitirmeyle ilişkisi açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/%C4%B0sr%C3%A2-suresi/2109/80-ayet-tefsiri",
+            "locator": "İsrâ 17/80",
+            "supports": "İsrâ 17/80'de doğru bir giriş ve doğru bir çıkış istenir. Tefsirde bunun hicretle ve işlere dürüstçe başlayıp bitirmeyle ilişkisi açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 718,
+      "sourceSequence": 564,
+      "id": "learn-dua-026",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mü’minûn 23/29'da Hz. Nûh'un duasında nasıl bir yere inmeyi istemesi öğretilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız tenha bir dağa"
+          },
+          {
+            "id": "o2",
+            "text": "Bereketli bir yere"
+          },
+          {
+            "id": "o3",
+            "text": "Çok uzak bir kaleye"
+          },
+          {
+            "id": "o4",
+            "text": "Terk edilmiş bir şehre"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bereketli bir yere",
+        "explanation": "Bu âyetin duasında Allah'tan bereketli bir yere indirmesi istenir. Tefsir, duayı Hz. Nûh'un gemi yolculuğuyla ilişkilendirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/kuran-meal-1/muminun-suresi-23/ayet-29/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Mü’minûn 23/29",
+            "supports": "Bu âyetin duasında Allah'tan bereketli bir yere indirmesi istenir. Tefsir, duayı Hz. Nûh'un gemi yolculuğuyla ilişkilendirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mü’minûn 23/29'da Hz. Nûh'un duasında nasıl bir yere inmeyi istemesi öğretilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız tenha bir dağa"
+          },
+          {
+            "id": "o2",
+            "text": "Bereketli bir yere"
+          },
+          {
+            "id": "o3",
+            "text": "Çok uzak bir kaleye"
+          },
+          {
+            "id": "o4",
+            "text": "Terk edilmiş bir şehre"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bereketli bir yere",
+        "explanation": "Bu âyetin duasında Allah'tan bereketli bir yere indirmesi istenir. Tefsir, duayı Hz. Nûh'un gemi yolculuğuyla ilişkilendirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/kuran-meal-1/muminun-suresi-23/ayet-29/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Mü’minûn 23/29",
+            "supports": "Bu âyetin duasında Allah'tan bereketli bir yere indirmesi istenir. Tefsir, duayı Hz. Nûh'un gemi yolculuğuyla ilişkilendirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 719,
+      "sourceSequence": 567,
+      "id": "learn-dua-030",
+      "category": "quran_dualar",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tahrîm 66/8'de müminler kendi nurları için hangi istekte bulunur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Nurlarının gizlenmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Nurlarının tamamlanmasını"
+          },
+          {
+            "id": "o3",
+            "text": "Nurlarının söndürülmesini"
+          },
+          {
+            "id": "o4",
+            "text": "Nurlarının ellerinden alınmasını"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nurlarının tamamlanmasını",
+        "explanation": "Tahrîm 66/8'de müminlerin nurlarının tamamlanmasını ve bağışlanmayı istedikleri anlatılır. Âyet, içtenlikle tövbe çağrısıyla başlar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/kuran-meal-2/tahrim-suresi-66/ayet-8/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Tahrîm 66/8",
+            "supports": "Tahrîm 66/8'de müminlerin nurlarının tamamlanmasını ve bağışlanmayı istedikleri anlatılır. Âyet, içtenlikle tövbe çağrısıyla başlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tahrîm 66/8'de müminler kendi nurları için hangi istekte bulunur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Nurlarının gizlenmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Nurlarının tamamlanmasını"
+          },
+          {
+            "id": "o3",
+            "text": "Nurlarının söndürülmesini"
+          },
+          {
+            "id": "o4",
+            "text": "Nurlarının ellerinden alınmasını"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nurlarının tamamlanmasını",
+        "explanation": "Tahrîm 66/8'de müminlerin nurlarının tamamlanmasını ve bağışlanmayı istedikleri anlatılır. Âyet, içtenlikle tövbe çağrısıyla başlar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/kuran-meal-2/tahrim-suresi-66/ayet-8/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Tahrîm 66/8",
+            "supports": "Tahrîm 66/8'de müminlerin nurlarının tamamlanmasını ve bağışlanmayı istedikleri anlatılır. Âyet, içtenlikle tövbe çağrısıyla başlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 720,
+      "sourceSequence": 568,
+      "id": "learn-akaid-005",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kehf 18/110'da Hz. Muhammed'in insan oluşu ve vahiy hakkında ne bildirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir melek olduğu"
+          },
+          {
+            "id": "o2",
+            "text": "Vahiy alan bir insan olduğu"
+          },
+          {
+            "id": "o3",
+            "text": "Bütün gaybı kendiliğinden bildiği"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanlardan farklı bir ilah olduğu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Vahiy alan bir insan olduğu",
+        "explanation": "Bu âyette Hz. Muhammed'in insanlar gibi bir insan olduğu, kendisine Allah'ın birliği hakkında vahiy geldiği bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Kehf-suresi/2250/110-ayet-tefsiri",
+            "locator": "Kehf 18/110",
+            "supports": "Bu âyette Hz. Muhammed'in insanlar gibi bir insan olduğu, kendisine Allah'ın birliği hakkında vahiy geldiği bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kehf 18/110'da Hz. Muhammed'in insan oluşu ve vahiy hakkında ne bildirilir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Vahiy alan bir insan olduğu"
+          },
+          {
+            "id": "o1",
+            "text": "İnsanların bütününden gizlenen bir elçi olduğu"
+          },
+          {
+            "id": "o3",
+            "text": "Her topluma ayrı ayrı gönderilmiş bir elçi olduğu"
+          },
+          {
+            "id": "o4",
+            "text": "Önceki kitapları kendi diliyle tercüme eden bir insan olduğu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Vahiy alan bir insan olduğu",
+        "explanation": "Bu âyette Hz. Muhammed'in insanlar gibi bir insan olduğu, kendisine Allah'ın birliği hakkında vahiy geldiği bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 18/110; PDF sayfa 319 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Vahiy alan bir insan olduğu (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 721,
+      "sourceSequence": 569,
+      "id": "learn-akaid-011",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Fâtır 35/1'de Allah'ın elçileri olarak hangi varlıklar açıkça anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Dağlar"
+          },
+          {
+            "id": "o2",
+            "text": "Melekler"
+          },
+          {
+            "id": "o3",
+            "text": "Yıldızlar"
+          },
+          {
+            "id": "o4",
+            "text": "Denizler"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Melekler",
+        "explanation": "Fâtır sûresinin ilk âyetinde Allah'ın melekleri elçiler kıldığı ve onları dilediği niteliklerde yarattığı ifade edilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/F%C3%A2t%C4%B1r-suresi/3661/1-4-ayet-tefsiri",
+            "locator": "Fâtır 35/1",
+            "supports": "Fâtır sûresinin ilk âyetinde Allah'ın melekleri elçiler kıldığı ve onları dilediği niteliklerde yarattığı ifade edilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Fâtır 35/1'de Allah'ın elçileri olarak hangi varlıklar açıkça anılır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Melekler"
+          },
+          {
+            "id": "o1",
+            "text": "İnsanlar"
+          },
+          {
+            "id": "o3",
+            "text": "Cinler"
+          },
+          {
+            "id": "o4",
+            "text": "Kuşlar"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Melekler",
+        "explanation": "Fâtır sûresinin ilk âyetinde Allah'ın melekleri elçiler kıldığı ve onları dilediği niteliklerde yarattığı ifade edilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 35/1; PDF sayfa 457 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Melekler (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 722,
+      "sourceSequence": 570,
+      "id": "learn-akaid-013",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Şûrâ 42/11 Allah'ın yaratılmışlara benzerliği hakkında ne söyler?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yaratılanlarla aynı olduğunu"
+          },
+          {
+            "id": "o2",
+            "text": "O'nun benzerinin bulunmadığını"
+          },
+          {
+            "id": "o3",
+            "text": "Sadece bir yerde bulunduğunu"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnız bir topluluğa ait olduğunu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "O'nun benzerinin bulunmadığını",
+        "explanation": "Şûrâ 42/11'de Allah'ın benzeri hiçbir şey olmadığı, O'nun işiten ve gören olduğu anlatılarak yaratılmışlarla özdeş tutulamayacağı vurgulanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/kuran-tefsir-1/%C5%9E%C3%BBr%C3%A2-S%C3%BBresi-42/ayet-11/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Şûrâ 42/11",
+            "supports": "Şûrâ 42/11'de Allah'ın benzeri hiçbir şey olmadığı, O'nun işiten ve gören olduğu anlatılarak yaratılmışlarla özdeş tutulamayacağı vurgulanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Şûrâ 42/11'de yaratıcı ile yaratılmışlar arasındaki ilişki nasıl ifade edilir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "O'nun benzeri hiçbir şey yoktur"
+          },
+          {
+            "id": "o1",
+            "text": "Göklerde ve yerde olanları bilir"
+          },
+          {
+            "id": "o3",
+            "text": "Dilediğini yaratır ve seçer"
+          },
+          {
+            "id": "o4",
+            "text": "Dönüş sonunda O'nadır"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "O'nun benzeri hiçbir şey yoktur",
+        "explanation": "Şûrâ 42/11'de Allah'ın benzeri hiçbir şey olmadığı, O'nun işiten ve gören olduğu anlatılarak yaratılmışlarla özdeş tutulamayacağı vurgulanır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 42/11; PDF sayfa 512 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: O'nun benzeri hiçbir şey yoktur (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 723,
+      "sourceSequence": 571,
+      "id": "learn-akaid-014",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kâf 50/16 Allah'ın insanın hangi durumunu da bildiğini belirtir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız yüksek sesle söylediklerini"
+          },
+          {
+            "id": "o2",
+            "text": "İçinden geçirdiklerini"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız yaptığı alışverişi"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece doğum yerini"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İçinden geçirdiklerini",
+        "explanation": "Kâf 50/16 Allah'ın insanı yarattığını, içinden geçirdiklerini bildiğini ve insana şah damarından daha yakın olduğunu bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal/tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=tefsir&sure=50",
+            "locator": "Kâf 50/16",
+            "supports": "Kâf 50/16 Allah'ın insanı yarattığını, içinden geçirdiklerini bildiğini ve insana şah damarından daha yakın olduğunu bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kâf 50/16 Allah'ın insanın hangi durumunu da bildiğini belirtir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Yarın kazanacağı rızkı"
+          },
+          {
+            "id": "o4",
+            "text": "Öleceği yeri"
+          },
+          {
+            "id": "o2",
+            "text": "İçinden geçirdiklerini"
+          },
+          {
+            "id": "o1",
+            "text": "Doğmadan önceki hâlini"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İçinden geçirdiklerini",
+        "explanation": "Kâf 50/16 Allah'ın insanı yarattığını, içinden geçirdiklerini bildiğini ve insana şah damarından daha yakın olduğunu bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 50/16; PDF sayfa 552 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: İçinden geçirdiklerini (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 724,
+      "sourceSequence": 572,
+      "id": "user200-103",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahlâk terimi olarak 'sıdk' neyi ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İnsanlar hakkında asılsız konuşmayı"
+          },
+          {
+            "id": "o2",
+            "text": "Niyette, sözde ve davranışta doğruluğu"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız maddî yardımda bulunmayı"
+          },
+          {
+            "id": "o4",
+            "text": "Öfkeliyken intikam almayı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Niyette, sözde ve davranışta doğruluğu",
+        "explanation": "Sıdk, sözün gerçeğe uygun olmasının yanında niyette ve davranışta dürüstlüğü de içerir; yalanın karşıtı bir ahlâk erdemidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sidk",
+            "locator": "TDV SIDK: terim tanımı",
+            "supports": "Sıdk, sözün gerçeğe uygun olmasının yanında niyette ve davranışta dürüstlüğü de içerir; yalanın karşıtı bir ahlâk erdemidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahlâk terimi olarak 'sıdk' neyi ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Öfke anında yumuşaklık ve vakar"
+          },
+          {
+            "id": "o3",
+            "text": "Nimet karşısında minnettarlık"
+          },
+          {
+            "id": "o4",
+            "text": "İşleri başkalarına danışarak yürütme"
+          },
+          {
+            "id": "o2",
+            "text": "Niyet, söz ve davranışta doğruluk"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Niyet, söz ve davranışta doğruluk",
+        "explanation": "Sıdk, sözün gerçeğe uygun olmasının yanında niyette ve davranışta dürüstlüğü de içerir; yalanın karşıtı bir ahlâk erdemidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/sidk",
+            "locator": "TDV SIDK: terim tanımı",
+            "supports": "Karşılaştırılan cevap kavramı: Niyet, söz ve davranışta doğruluk (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 725,
+      "sourceSequence": 573,
+      "id": "user200-106",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İftira ile kastedilen ahlâkî yanlış davranış hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Birine teşekkür etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Birine işlemediği suçu asılsız olarak yüklemek"
+          },
+          {
+            "id": "o3",
+            "text": "Doğru bir bilgiyi araştırarak paylaşmak"
+          },
+          {
+            "id": "o4",
+            "text": "Bir hatayı sahibine nazikçe söylemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Birine işlemediği suçu asılsız olarak yüklemek",
+        "explanation": "İftira, bir kimseye gerçekte işlemediği bir suç, günah veya kusuru isnat etmektir. Gıybetten farklı olarak iddia asılsızdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/iftira",
+            "locator": "TDV İFTİRA: tanım ve başkasına asılsız isnat",
+            "supports": "İftira, bir kimseye gerçekte işlemediği bir suç, günah veya kusuru isnat etmektir. Gıybetten farklı olarak iddia asılsızdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "İftira ile kastedilen ahlâkî yanlış davranış hangisidir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Birinin nimetinin elinden gitmesini istemek"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanlar arasında söz taşıyıp aralarını bozmak"
+          },
+          {
+            "id": "o2",
+            "text": "İşlemediği suçu birine asılsız yüklemek"
+          },
+          {
+            "id": "o1",
+            "text": "Gerçek bir kusuru kişinin arkasından anlatmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İşlemediği suçu birine asılsız yüklemek",
+        "explanation": "İftira, bir kimseye gerçekte işlemediği bir suç, günah veya kusuru isnat etmektir. Gıybetten farklı olarak iddia asılsızdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/iftira",
+            "locator": "TDV İFTİRA: tanım ve başkasına asılsız isnat",
+            "supports": "Karşılaştırılan cevap kavramı: İşlemediği suçu birine asılsız yüklemek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 726,
+      "sourceSequence": 574,
+      "id": "user200-107",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bir başkasının sahip olduğu nimetin elinden gitmesini istemeye ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tevekkül"
+          },
+          {
+            "id": "o2",
+            "text": "Haset"
+          },
+          {
+            "id": "o3",
+            "text": "Şükür"
+          },
+          {
+            "id": "o4",
+            "text": "İstişare"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Haset",
+        "explanation": "Haset, bir başkasının sahip olduğu nimeti çekememek ve o nimetten mahrum olmasını istemektir; yalnızca iyiye özenmekten ayrılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/haset",
+            "locator": "TDV HASET: başkasının nimetinden mahrum olmasını isteme",
+            "supports": "Haset, bir başkasının sahip olduğu nimeti çekememek ve o nimetten mahrum olmasını istemektir; yalnızca iyiye özenmekten ayrılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bir başkasının sahip olduğu nimetin elinden gitmesini istemeye ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tevekkül"
+          },
+          {
+            "id": "o2",
+            "text": "Haset"
+          },
+          {
+            "id": "o3",
+            "text": "Şükür"
+          },
+          {
+            "id": "o4",
+            "text": "İstişare"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Haset",
+        "explanation": "Haset, bir başkasının sahip olduğu nimeti çekememek ve o nimetten mahrum olmasını istemektir; yalnızca iyiye özenmekten ayrılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/haset",
+            "locator": "TDV HASET: başkasının nimetinden mahrum olmasını isteme",
+            "supports": "Haset, bir başkasının sahip olduğu nimeti çekememek ve o nimetten mahrum olmasını istemektir; yalnızca iyiye özenmekten ayrılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 727,
+      "sourceSequence": 575,
+      "id": "user200-115",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İslam ahlakında 'sıla-i rahim' hangi davranışla ilgilidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız bayramlarda hediye almak"
+          },
+          {
+            "id": "o2",
+            "text": "Akrabalık bağlarını korumak ve yakınları gözetmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız ticaret ortaklarıyla görüşmek"
+          },
+          {
+            "id": "o4",
+            "text": "Yabancılardan daima uzak durmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Akrabalık bağlarını korumak ve yakınları gözetmek",
+        "explanation": "Sıla-i rahim, yakınlarla ilişkiyi sürdürmek, haklarını gözetmek, ziyaret etmek ve gerektiğinde yardımlaşmak anlamındadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sila-i-rahim",
+            "locator": "TDV SILA-i RAHİM: akrabalık bağlarını sürdürme",
+            "supports": "Sıla-i rahim, yakınlarla ilişkiyi sürdürmek, haklarını gözetmek, ziyaret etmek ve gerektiğinde yardımlaşmak anlamındadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "İslam ahlakında 'sıla-i rahim' hangi davranışla ilgilidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Komşuların ihtiyaçlarını öğrenip yardım etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yolcuları ağırlayıp güvenliklerini sağlamak"
+          },
+          {
+            "id": "o4",
+            "text": "İhtiyaç sahiplerine düzenli sadaka vermek"
+          },
+          {
+            "id": "o2",
+            "text": "Akrabalık bağlarını koruyup yakınları gözetmek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Akrabalık bağlarını koruyup yakınları gözetmek",
+        "explanation": "Sıla-i rahim, yakınlarla ilişkiyi sürdürmek, haklarını gözetmek, ziyaret etmek ve gerektiğinde yardımlaşmak anlamındadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/sila-i-rahim",
+            "locator": "TDV SILA-i RAHİM: akrabalık bağlarını sürdürme",
+            "supports": "Karşılaştırılan cevap kavramı: Akrabalık bağlarını koruyup yakınları gözetmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 728,
+      "sourceSequence": 576,
+      "id": "user200-118",
+      "category": "iman_ahlak",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahlâk literatüründe 'tebzîr' özellikle hangi harcama davranışını anlatır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İhtiyaç sahiplerine ölçülü yardım etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Malı yanlış veya meşru olmayan yerlere harcamak"
+          },
+          {
+            "id": "o3",
+            "text": "Gerektiğinde tasarruf etmek"
+          },
+          {
+            "id": "o4",
+            "text": "Helâl kazancın hesabını tutmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Malı yanlış veya meşru olmayan yerlere harcamak",
+        "explanation": "TDV İSRAF maddesinde aktarılan ayırıma göre israf ölçüsüz harcamayla, tebzîr ise parayı miktarından bağımsız olarak uygunsuz yerlere harcamayla ilgilidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/israf",
+            "locator": "TDV İSRAF: tebzîr ve israf farkı (Mâverdî)",
+            "supports": "TDV İSRAF maddesinde aktarılan ayırıma göre israf ölçüsüz harcamayla, tebzîr ise parayı miktarından bağımsız olarak uygunsuz yerlere harcamayla ilgilidir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahlâk literatüründe 'tebzîr' özellikle hangi harcama davranışını anlatır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Malı meşru olmayan yerlere harcamak"
+          },
+          {
+            "id": "o1",
+            "text": "Harcama gücü varken malı paylaşmamak"
+          },
+          {
+            "id": "o3",
+            "text": "Yaptığı yardımı söyleyip kişiyi incitmek"
+          },
+          {
+            "id": "o4",
+            "text": "Ölçüyü eksilterek haksız kazanç sağlamak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Malı meşru olmayan yerlere harcamak",
+        "explanation": "TDV İSRAF maddesinde aktarılan ayırıma göre israf ölçüsüz harcamayla, tebzîr ise parayı miktarından bağımsız olarak uygunsuz yerlere harcamayla ilgilidir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/israf",
+            "locator": "TDV İSRAF: tebzîr ve israf farkı (Mâverdî)",
+            "supports": "Karşılaştırılan cevap kavramı: Malı meşru olmayan yerlere harcamak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 729,
+      "sourceSequence": 577,
+      "id": "user200-119",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "'Hilim' erdemini gösteren bir kişi öfkelendiğinde nasıl davranır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Öfkesini başkalarından çıkarmaya çalışır"
+          },
+          {
+            "id": "o2",
+            "text": "Öfkesini denetleyip vakarını ve yumuşaklığını korur"
+          },
+          {
+            "id": "o3",
+            "text": "Kendisini kızdırana hemen intikamla karşılık verir"
+          },
+          {
+            "id": "o4",
+            "text": "Karşısındakini dinlemeyi tamamen bırakır"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Öfkesini denetleyip vakarını ve yumuşaklığını korur",
+        "explanation": "Hilim; sabır, ağırbaşlılık ve öfkeye hâkimiyet gibi tutumları birleştirir. Gücü varken bağışlayabilmek bu erdemin örneklerindendir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hilim",
+            "locator": "TDV HİLİM: öfke anında itidal ve sükûnet",
+            "supports": "Hilim; sabır, ağırbaşlılık ve öfkeye hâkimiyet gibi tutumları birleştirir. Gücü varken bağışlayabilmek bu erdemin örneklerindendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "'Hilim' erdemini gösteren bir kişi öfkelendiğinde nasıl davranır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Gördüğü nimetten dolayı minnettarlık gösterir"
+          },
+          {
+            "id": "o3",
+            "text": "Ortak bir işte başkalarının görüşünü alır"
+          },
+          {
+            "id": "o4",
+            "text": "Gelecek için çalışıp Allah'a güven duyar"
+          },
+          {
+            "id": "o2",
+            "text": "Öfkesini denetleyip yumuşaklığını korur"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Öfkesini denetleyip yumuşaklığını korur",
+        "explanation": "Hilim; sabır, ağırbaşlılık ve öfkeye hâkimiyet gibi tutumları birleştirir. Gücü varken bağışlayabilmek bu erdemin örneklerindendir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/hilim",
+            "locator": "TDV HİLİM: öfke anında itidal ve sükûnet",
+            "supports": "Karşılaştırılan cevap kavramı: Öfkesini denetleyip yumuşaklığını korur (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 730,
+      "sourceSequence": 578,
+      "id": "learn-akaid-008",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hac 22/7'de kıyametle ilgili hangisi açıkça bildirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kıyametin hiç yaşanmayacağı"
+          },
+          {
+            "id": "o2",
+            "text": "Kıyametin geleceği ve ölülerin diriltileceği"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız dağların diriltileceği"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanların hesapla hiç karşılaşmayacağı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kıyametin geleceği ve ölülerin diriltileceği",
+        "explanation": "Hac 22/7 kıyametin geleceğini ve Allah'ın kabirlerdekileri dirilteceğini bildirir. Böylece ölümden sonraki diriliş konusuna dikkat çeker.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Hac-suresi/2600/5-7-ayet-tefsiri",
+            "locator": "Hac 22/7",
+            "supports": "Hac 22/7 kıyametin geleceğini ve Allah'ın kabirlerdekileri dirilteceğini bildirir. Böylece ölümden sonraki diriliş konusuna dikkat çeker.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hac 22/7'de kıyametin kesinliği yanında hangi olay bildirilir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "İnsanların farklı dillere ayrılması"
+          },
+          {
+            "id": "o2",
+            "text": "Kabirdekilerin yeniden diriltilmesi"
+          },
+          {
+            "id": "o1",
+            "text": "Gök cisimlerinin yörüngede hareketi"
+          },
+          {
+            "id": "o3",
+            "text": "Yağmurla bitkilerin yeşermesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kabirdekilerin yeniden diriltilmesi",
+        "explanation": "Hac 22/7 kıyametin geleceğini ve Allah'ın kabirlerdekileri dirilteceğini bildirir. Böylece ölümden sonraki diriliş konusuna dikkat çeker.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 22/7; PDF sayfa 349 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Kabirdekilerin yeniden diriltilmesi (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 731,
+      "sourceSequence": 579,
+      "id": "learn-akaid-016",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mülk 67/2'de hayat ve ölümün yaratılışının hangi amacı anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız mal biriktirilmesi"
+          },
+          {
+            "id": "o2",
+            "text": "İnsanların güzel işler bakımından sınanması"
+          },
+          {
+            "id": "o3",
+            "text": "İnsanların birbirinden üstün soy sayılması"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece seyahat etmeleri"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İnsanların güzel işler bakımından sınanması",
+        "explanation": "Mülk 67/2, ölüm ve hayatın insanların hangisinin daha güzel amel işleyeceğinin sınanması için yaratıldığını belirtir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?sure=67&ayet=2&mode=meal",
+            "locator": "Mülk 67/2",
+            "supports": "Mülk 67/2, ölüm ve hayatın insanların hangisinin daha güzel amel işleyeceğinin sınanması için yaratıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mülk 67/2'de hayat ve ölümün yaratılışının hangi amacı anlatılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Geçmiş toplumların izlerini görmek"
+          },
+          {
+            "id": "o2",
+            "text": "Güzel işler bakımından sınanmak"
+          },
+          {
+            "id": "o1",
+            "text": "Farklı toplumlar hâlinde tanışmak"
+          },
+          {
+            "id": "o3",
+            "text": "Yeryüzünün nimetlerinden yararlanmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Güzel işler bakımından sınanmak",
+        "explanation": "Mülk 67/2, ölüm ve hayatın insanların hangisinin daha güzel amel işleyeceğinin sınanması için yaratıldığını belirtir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 67/2; PDF sayfa 603 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Güzel işler bakımından sınanmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 732,
+      "sourceSequence": 580,
+      "id": "learn-akaid-020",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İhlâs 112/3 Allah hakkında hangi temel ifadeyi içerir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yaratılmışlardan yardım almaya muhtaçtır"
+          },
+          {
+            "id": "o2",
+            "text": "Doğurmamış ve doğurulmamıştır"
+          },
+          {
+            "id": "o3",
+            "text": "Bir soyun üyesidir"
+          },
+          {
+            "id": "o4",
+            "text": "Doğumla var olmuştur"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Doğurmamış ve doğurulmamıştır",
+        "explanation": "İhlâs sûresinin üçüncü âyeti Allah'ın doğurmadığını ve doğurulmadığını bildirir; tefsirde yaratılmışlara özgü soy bağlarından münezzeh olduğu açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/%C4%B0hl%C3%A2s-suresi/6224/3-ayet-tefsiri",
+            "locator": "İhlâs 112/3",
+            "supports": "İhlâs sûresinin üçüncü âyeti Allah'ın doğurmadığını ve doğurulmadığını bildirir; tefsirde yaratılmışlara özgü soy bağlarından münezzeh olduğu açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "İhlâs 112/3 Allah hakkında hangi temel ifadeyi içerir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "O'nun ilmi her şeyi kuşatmıştır"
+          },
+          {
+            "id": "o4",
+            "text": "O, kullarına çok merhametlidir"
+          },
+          {
+            "id": "o2",
+            "text": "Doğurmamış ve doğurulmamıştır"
+          },
+          {
+            "id": "o1",
+            "text": "O'nu uyuklama ve uyku tutmaz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Doğurmamış ve doğurulmamıştır",
+        "explanation": "İhlâs sûresinin üçüncü âyeti Allah'ın doğurmadığını ve doğurulmadığını bildirir; tefsirde yaratılmışlara özgü soy bağlarından münezzeh olduğu açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 112/3; PDF sayfa 660 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Doğurmamış ve doğurulmamıştır (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 733,
+      "sourceSequence": 581,
+      "id": "learn-dua-017",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Âl-i İmrân 3/147'de zorluklar karşısında edilen duada hangi istek özellikle geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Savaşmadan zafer kazanma vaadi"
+          },
+          {
+            "id": "o2",
+            "text": "Ayakların sağlam tutulması ve yardım"
+          },
+          {
+            "id": "o3",
+            "text": "Dünya malının iki katına çıkması"
+          },
+          {
+            "id": "o4",
+            "text": "Her sıkıntıdan sonsuza dek uzak kalma"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ayakların sağlam tutulması ve yardım",
+        "explanation": "Âyette önce günah ve aşırılıklardan dolayı bağışlanma, ardından ayakların sabit tutulması ve yardım istenir. Tefsir bu duayı güçlük karşısında sabır ve sebatla açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/tefsir-2/al-i-imran-suresi-3/ayet-147/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Âl-i İmrân 3/147",
+            "supports": "Âyette önce günah ve aşırılıklardan dolayı bağışlanma, ardından ayakların sabit tutulması ve yardım istenir. Tefsir bu duayı güçlük karşısında sabır ve sebatla açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Âl-i İmrân 3/147'de zorluklar karşısında edilen duada hangi istek özellikle geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Savaşmadan zafer kazanma vaadi"
+          },
+          {
+            "id": "o2",
+            "text": "Ayakların sağlam tutulması ve yardım"
+          },
+          {
+            "id": "o3",
+            "text": "Dünya malının iki katına çıkması"
+          },
+          {
+            "id": "o4",
+            "text": "Her sıkıntıdan sonsuza dek uzak kalma"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ayakların sağlam tutulması ve yardım",
+        "explanation": "Âyette önce günah ve aşırılıklardan dolayı bağışlanma, ardından ayakların sabit tutulması ve yardım istenir. Tefsir bu duayı güçlük karşısında sabır ve sebatla açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/tefsir-2/al-i-imran-suresi-3/ayet-147/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Âl-i İmrân 3/147",
+            "supports": "Âyette önce günah ve aşırılıklardan dolayı bağışlanma, ardından ayakların sabit tutulması ve yardım istenir. Tefsir bu duayı güçlük karşısında sabır ve sebatla açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 734,
+      "sourceSequence": 582,
+      "id": "learn-akaid-003",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nisâ 4/136'da iman esasları sayılırken hangi gün özellikle anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız bayram günü"
+          },
+          {
+            "id": "o2",
+            "text": "Âhiret günü"
+          },
+          {
+            "id": "o3",
+            "text": "Yılın ilk günü"
+          },
+          {
+            "id": "o4",
+            "text": "Hasat günü"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Âhiret günü",
+        "explanation": "Nisâ 4/136; Allah'a, meleklere, kitaplara, peygamberlere ve âhiret gününe imanı sayar. Sorudaki 'gün' ifadesi âhiret gününe işaret eder.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Nis%C3%A2-suresi/629/136-ayet-tefsiri",
+            "locator": "Nisâ 4/136",
+            "supports": "Nisâ 4/136; Allah'a, meleklere, kitaplara, peygamberlere ve âhiret gününe imanı sayar. Sorudaki 'gün' ifadesi âhiret gününe işaret eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nisâ 4/136'da iman esasları sayılırken hangi gün özellikle anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Cuma günü"
+          },
+          {
+            "id": "o3",
+            "text": "Arefe günü"
+          },
+          {
+            "id": "o4",
+            "text": "Kadir gecesi"
+          },
+          {
+            "id": "o2",
+            "text": "Âhiret günü"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Âhiret günü",
+        "explanation": "Nisâ 4/136; Allah'a, meleklere, kitaplara, peygamberlere ve âhiret gününe imanı sayar. Sorudaki 'gün' ifadesi âhiret gününe işaret eder.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 4/136; PDF sayfa 107 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Âhiret günü (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 735,
+      "sourceSequence": 583,
+      "id": "learn-akaid-015",
+      "category": "iman_ahlak",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hadîd 57/3'te Allah hangi sıfatlarla tanıtılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız güçlü ve zengin"
+          },
+          {
+            "id": "o2",
+            "text": "Evvel, âhir, zâhir ve bâtın"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız görünen ve sonradan olan"
+          },
+          {
+            "id": "o4",
+            "text": "Yaratılmış ve sınırlı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Evvel, âhir, zâhir ve bâtın",
+        "explanation": "Hadîd 57/3'te Allah evvel, âhir, zâhir ve bâtın olarak nitelenir; tefsir O'nun zamandan ve mekândan münezzeh olduğunu ve ilminin her şeyi kuşattığını açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Had%C3%AEd-suresi/5078/3-ayet-tefsiri",
+            "locator": "Hadîd 57/3",
+            "supports": "Hadîd 57/3'te Allah evvel, âhir, zâhir ve bâtın olarak nitelenir; tefsir O'nun zamandan ve mekândan münezzeh olduğunu ve ilminin her şeyi kuşattığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hadîd 57/3'te Allah hangi sıfatlarla tanıtılır?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Evvel, âhir, zâhir, bâtın"
+          },
+          {
+            "id": "o1",
+            "text": "Rahmân, rahîm, melik, kuddûs"
+          },
+          {
+            "id": "o3",
+            "text": "Azîz, cebbâr, mütekebbir, hâlik"
+          },
+          {
+            "id": "o4",
+            "text": "Gafûr, vedûd, hakîm, alîm"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Evvel, âhir, zâhir, bâtın",
+        "explanation": "Hadîd 57/3'te Allah evvel, âhir, zâhir ve bâtın olarak nitelenir; tefsir O'nun zamandan ve mekândan münezzeh olduğunu ve ilminin her şeyi kuşattığını açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 57/3; PDF sayfa 575 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Evvel, âhir, zâhir, bâtın (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 736,
+      "sourceSequence": 584,
+      "id": "learn-dua-027",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Mü’minûn 23/97-98'de hangi tehlikeden Allah'a sığınmak öğretilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hayırlı işler için çaba göstermekten"
+          },
+          {
+            "id": "o2",
+            "text": "Şeytanların kışkırtmaları ve yanımızda bulunmaları"
+          },
+          {
+            "id": "o3",
+            "text": "Anne babaya iyilik etmekten"
+          },
+          {
+            "id": "o4",
+            "text": "Doğru söz söylemekten"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şeytanların kışkırtmaları ve yanımızda bulunmaları",
+        "explanation": "Mü'minûn 23/97-98'de şeytanların gizli kışkırtmalarından ve insanın yanında bulunmalarından Allah'a sığınma duası yer alır; tefsir bu kışkırtmaları kötülüğe yönelten etkiler olarak açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/M%C3%BC%27min%C3%BBn-suresi/2770/97-98-ayet-tefsiri",
+            "locator": "Mü'minûn 23/97-98",
+            "supports": "Mü'minûn 23/97-98'de şeytanların gizli kışkırtmalarından ve insanın yanında bulunmalarından Allah'a sığınma duası yer alır; tefsir bu kışkırtmaları kötülüğe yönelten etkiler olarak açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Mü’minûn 23/97-98'de hangi tehlikeden Allah'a sığınmak öğretilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hayırlı işler için çaba göstermekten"
+          },
+          {
+            "id": "o2",
+            "text": "Şeytanların kışkırtmaları ve yanımızda bulunmaları"
+          },
+          {
+            "id": "o3",
+            "text": "Anne babaya iyilik etmekten"
+          },
+          {
+            "id": "o4",
+            "text": "Doğru söz söylemekten"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Şeytanların kışkırtmaları ve yanımızda bulunmaları",
+        "explanation": "Mü'minûn 23/97-98'de şeytanların gizli kışkırtmalarından ve insanın yanında bulunmalarından Allah'a sığınma duası yer alır; tefsir bu kışkırtmaları kötülüğe yönelten etkiler olarak açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/M%C3%BC%27min%C3%BBn-suresi/2770/97-98-ayet-tefsiri",
+            "locator": "Mü'minûn 23/97-98",
+            "supports": "Mü'minûn 23/97-98'de şeytanların gizli kışkırtmalarından ve insanın yanında bulunmalarından Allah'a sığınma duası yer alır; tefsir bu kışkırtmaları kötülüğe yönelten etkiler olarak açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 737,
+      "sourceSequence": 585,
+      "id": "learn-akaid-004",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nahl 16/36'da tüm ümmetlere gönderilen peygamberlerin ortak çağrısı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kendi kavimlerini üstün ilan etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'a kulluk etmek ve tâğûttan kaçınmak"
+          },
+          {
+            "id": "o3",
+            "text": "Mülk biriktirmeyi emretmek"
+          },
+          {
+            "id": "o4",
+            "text": "Birden çok ilâha kulluğu öğütlemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'a kulluk etmek ve tâğûttan kaçınmak",
+        "explanation": "Nahl 16/36, her ümmete Allah'a kulluk etmeyi ve tâğûttan kaçınmayı duyurmak üzere peygamber gönderildiğini belirtir; doğru yolu izleme ve uyarıya kulak verme vurgulanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?sure=16&ayet=36&mode=meal",
+            "locator": "Nahl 16/36",
+            "supports": "Nahl 16/36, her ümmete Allah'a kulluk etmeyi ve tâğûttan kaçınmayı duyurmak üzere peygamber gönderildiğini belirtir; doğru yolu izleme ve uyarıya kulak verme vurgulanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nahl 16/36'da tüm ümmetlere gönderilen peygamberlerin ortak çağrısı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ölçüyü tam tutmak ve doğru tartmak"
+          },
+          {
+            "id": "o3",
+            "text": "Yetimi gözetmek ve yoksulu doyurmak"
+          },
+          {
+            "id": "o4",
+            "text": "Sözü yerine getirmek ve emaneti korumak"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'a kulluk etmek ve tâğûttan kaçınmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'a kulluk etmek ve tâğûttan kaçınmak",
+        "explanation": "Nahl 16/36, her ümmete Allah'a kulluk etmeyi ve tâğûttan kaçınmayı duyurmak üzere peygamber gönderildiğini belirtir; doğru yolu izleme ve uyarıya kulak verme vurgulanır.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 16/36; PDF sayfa 283 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Allah'a kulluk etmek ve tâğûttan kaçınmak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 738,
+      "sourceSequence": 586,
+      "id": "learn-dua-018",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Âl-i İmrân 3/191'de göklerin ve yerin yaratılışını düşünenler Allah'tan ne ister?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kendilerine yeni bir kitap indirilmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Cehennem azabından korunmayı"
+          },
+          {
+            "id": "o3",
+            "text": "Gece ile gündüzün durmasını"
+          },
+          {
+            "id": "o4",
+            "text": "Yaratılışın bütün sırlarını bilmeyi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cehennem azabından korunmayı",
+        "explanation": "Âyette insanlar ayakta, otururken ve yatarken Allah'ı anar; göklerin ve yerin yaratılışını düşünürken yaratılışın boşuna olmadığını dile getirip ateş azabından korunmayı ister.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/%C3%82l-i%20%C4%B0mr%C3%A2n-suresi/483/190-191-ayet-tefsiri",
+            "locator": "Âl-i İmrân 3/191",
+            "supports": "Âyette insanlar ayakta, otururken ve yatarken Allah'ı anar; göklerin ve yerin yaratılışını düşünürken yaratılışın boşuna olmadığını dile getirip ateş azabından korunmayı ister.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Âl-i İmrân 3/191'de göklerin ve yerin yaratılışını düşünenler Allah'tan ne ister?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kendilerine yeni bir kitap indirilmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Cehennem azabından korunmayı"
+          },
+          {
+            "id": "o3",
+            "text": "Gece ile gündüzün durmasını"
+          },
+          {
+            "id": "o4",
+            "text": "Yaratılışın bütün sırlarını bilmeyi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Cehennem azabından korunmayı",
+        "explanation": "Âyette insanlar ayakta, otururken ve yatarken Allah'ı anar; göklerin ve yerin yaratılışını düşünürken yaratılışın boşuna olmadığını dile getirip ateş azabından korunmayı ister.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/%C3%82l-i%20%C4%B0mr%C3%A2n-suresi/483/190-191-ayet-tefsiri",
+            "locator": "Âl-i İmrân 3/191",
+            "supports": "Âyette insanlar ayakta, otururken ve yatarken Allah'ı anar; göklerin ve yerin yaratılışını düşünürken yaratılışın boşuna olmadığını dile getirip ateş azabından korunmayı ister.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 739,
+      "sourceSequence": 588,
+      "id": "learn-dua-020",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "A‘râf 7/89'da Hz. Şuayb, kavmiyle arasında Allah'tan ne ister?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kavminin bütün mallarının kendisine verilmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Adaletli hüküm verilmesini"
+          },
+          {
+            "id": "o3",
+            "text": "Bütün tartışmaların unutulmasını"
+          },
+          {
+            "id": "o4",
+            "text": "Şehrin hükümdarı yapılmasını"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Adaletli hüküm verilmesini",
+        "explanation": "Hz. Şuayb, inançlarından vazgeçmeye zorlanmaları karşısında Allah'a tevekkül eder ve kavmiyle aralarında adaletli hüküm vermesini ister.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/A%27r%C3%A2f-suresi/1042/88-89-ayet-tefsiri",
+            "locator": "A‘râf 7/89",
+            "supports": "Hz. Şuayb, inançlarından vazgeçmeye zorlanmaları karşısında Allah'a tevekkül eder ve kavmiyle aralarında adaletli hüküm vermesini ister.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "A‘râf 7/89'da Hz. Şuayb, kavmiyle arasında Allah'tan ne ister?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kavminin bütün mallarının kendisine verilmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Adaletli hüküm verilmesini"
+          },
+          {
+            "id": "o3",
+            "text": "Bütün tartışmaların unutulmasını"
+          },
+          {
+            "id": "o4",
+            "text": "Şehrin hükümdarı yapılmasını"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Adaletli hüküm verilmesini",
+        "explanation": "Hz. Şuayb, inançlarından vazgeçmeye zorlanmaları karşısında Allah'a tevekkül eder ve kavmiyle aralarında adaletli hüküm vermesini ister.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/A%27r%C3%A2f-suresi/1042/88-89-ayet-tefsiri",
+            "locator": "A‘râf 7/89",
+            "supports": "Hz. Şuayb, inançlarından vazgeçmeye zorlanmaları karşısında Allah'a tevekkül eder ve kavmiyle aralarında adaletli hüküm vermesini ister.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 740,
+      "sourceSequence": 589,
+      "id": "learn-akaid-010",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ahzâb 33/40'da Hz. Muhammed hangi iki özellikle tanıtılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Meleklerin ilki ve hükümdarların sonuncusu"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'ın elçisi ve peygamberlerin sonuncusu"
+          },
+          {
+            "id": "o3",
+            "text": "İlk insan ve ilk peygamber"
+          },
+          {
+            "id": "o4",
+            "text": "Bir kavmin hükümdarı ve şairi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'ın elçisi ve peygamberlerin sonuncusu",
+        "explanation": "Ahzâb sûresinin kırkıncı âyetinde Hz. Muhammed'in Allah'ın elçisi ve peygamberlerin sonuncusu olduğu ifade edilir. Tefsir bu ifadeyi evlât edinmeyle ilgili âyetin bağlamında da açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Ahz%C3%A2b-suresi/3573/40-ayet-tefsiri",
+            "locator": "Ahzâb 33/40",
+            "supports": "Ahzâb sûresinin kırkıncı âyetinde Hz. Muhammed'in Allah'ın elçisi ve peygamberlerin sonuncusu olduğu ifade edilir. Tefsir bu ifadeyi evlât edinmeyle ilgili âyetin bağlamında da açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ahzâb 33/40'da Hz. Muhammed hangi iki özellikle tanıtılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Elçi ve âlemlere rahmet olarak gönderilen"
+          },
+          {
+            "id": "o3",
+            "text": "Müjdeleyici ve uyarıcı olarak gönderilen"
+          },
+          {
+            "id": "o4",
+            "text": "Güzel örnek ve üstün ahlâk sahibi olan"
+          },
+          {
+            "id": "o2",
+            "text": "Allah'ın elçisi ve peygamberlerin sonuncusu"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Allah'ın elçisi ve peygamberlerin sonuncusu",
+        "explanation": "Ahzâb sûresinin kırkıncı âyetinde Hz. Muhammed'in Allah'ın elçisi ve peygamberlerin sonuncusu olduğu ifade edilir. Tefsir bu ifadeyi evlât edinmeyle ilgili âyetin bağlamında da açıklar.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 33/40; PDF sayfa 445 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Allah'ın elçisi ve peygamberlerin sonuncusu (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "domain-mismatch",
+          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 741,
+      "sourceSequence": 590,
+      "id": "learn-dua-011",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bakara 2/127'ye göre Kâbe'nin temellerini yükselten Hz. İbrâhim ve Hz. İsmâil'in duasındaki istek nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Dünya servetlerinin artması"
+          },
+          {
+            "id": "o2",
+            "text": "Yaptıkları ibadetin Allah tarafından kabul edilmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Kendilerine ayrı bir ülke verilmesi"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanların onları hükümdar seçmesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yaptıkları ibadetin Allah tarafından kabul edilmesi",
+        "explanation": "Bakara 2/127, Hz. İbrâhim ile Hz. İsmâil'in Kâbe'nin temellerini yükseltirken yaptıkları işin Allah tarafından kabul edilmesi için dua ettiklerini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=127&mode=tefsir&sure=2",
+            "locator": "Bakara 2/127",
+            "supports": "Bakara 2/127, Hz. İbrâhim ile Hz. İsmâil'in Kâbe'nin temellerini yükseltirken yaptıkları işin Allah tarafından kabul edilmesi için dua ettiklerini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bakara 2/127'ye göre Kâbe'nin temellerini yükselten Hz. İbrâhim ve Hz. İsmâil'in duasındaki istek nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Dünya servetlerinin artması"
+          },
+          {
+            "id": "o2",
+            "text": "Yaptıkları ibadetin Allah tarafından kabul edilmesi"
+          },
+          {
+            "id": "o3",
+            "text": "Kendilerine ayrı bir ülke verilmesi"
+          },
+          {
+            "id": "o4",
+            "text": "İnsanların onları hükümdar seçmesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yaptıkları ibadetin Allah tarafından kabul edilmesi",
+        "explanation": "Bakara 2/127, Hz. İbrâhim ile Hz. İsmâil'in Kâbe'nin temellerini yükseltirken yaptıkları işin Allah tarafından kabul edilmesi için dua ettiklerini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=127&mode=tefsir&sure=2",
+            "locator": "Bakara 2/127",
+            "supports": "Bakara 2/127, Hz. İbrâhim ile Hz. İsmâil'in Kâbe'nin temellerini yükseltirken yaptıkları işin Allah tarafından kabul edilmesi için dua ettiklerini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 742,
+      "sourceSequence": 591,
+      "id": "learn-akaid-002",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bakara 2/285'te müminlerin Allah'ın elçilerine karşı hangi tutumu dile getirdikleri anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yalnız bir peygambere inanmak"
+          },
+          {
+            "id": "o2",
+            "text": "Peygamberler arasında iman bakımından ayrım yapmamak"
+          },
+          {
+            "id": "o3",
+            "text": "Peygamberleri ilâh saymak"
+          },
+          {
+            "id": "o4",
+            "text": "Peygamberlerin hiçbirine inanmamak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Peygamberler arasında iman bakımından ayrım yapmamak",
+        "explanation": "Bakara 2/285'te müminlerin Allah'a, meleklerine, kitaplarına ve peygamberlerine iman ettikleri, peygamberleri arasında ayrım yapmadıkları ve bağışlanma diledikleri bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Bakara-suresi/292/285-286-ayet-tefsiri",
+            "locator": "Bakara 2/285",
+            "supports": "Bakara 2/285'te müminlerin Allah'a, meleklerine, kitaplarına ve peygamberlerine iman ettikleri, peygamberleri arasında ayrım yapmadıkları ve bağışlanma diledikleri bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bakara 2/285'te müminlerin Allah'ın elçilerine karşı hangi tutumu dile getirdikleri anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Elçilerin kıssalarını birlikte öğrenmek"
+          },
+          {
+            "id": "o3",
+            "text": "Elçilerin öğütlerini yazıyla kaydetmek"
+          },
+          {
+            "id": "o4",
+            "text": "Elçilerin yaşadığı yerleri ziyaret etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Elçiler arasında iman yönünden ayrım yapmamak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Elçiler arasında iman yönünden ayrım yapmamak",
+        "explanation": "Bakara 2/285'te müminlerin Allah'a, meleklerine, kitaplarına ve peygamberlerine iman ettikleri, peygamberleri arasında ayrım yapmadıkları ve bağışlanma diledikleri bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 2/285; PDF sayfa 56 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Elçiler arasında iman yönünden ayrım yapmamak (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 743,
+      "sourceSequence": 592,
+      "id": "learn-akaid-001",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bakara 2/163'te Allah'ın birliğiyle birlikte hangi iki ismi anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Azîz ve Hakîm"
+          },
+          {
+            "id": "o2",
+            "text": "Rahmân ve Rahîm"
+          },
+          {
+            "id": "o3",
+            "text": "Gafûr ve Vedûd"
+          },
+          {
+            "id": "o4",
+            "text": "Evvel ve Âhir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rahmân ve Rahîm",
+        "explanation": "Bakara 2/163 Allah'ın tek ilah olduğunu, O'ndan başka ilah bulunmadığını ve Rahmân ile Rahîm isimlerini bildirir. Tefsirde bu iki ismin Allah'ın geniş merhametine işaret ettiği açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=163&mode=meal",
+            "locator": "Bakara 2/163",
+            "supports": "Bakara 2/163 Allah'ın tek ilah olduğunu, O'ndan başka ilah bulunmadığını ve Rahmân ile Rahîm isimlerini bildirir. Tefsirde bu iki ismin Allah'ın geniş merhametine işaret ettiği açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bakara 2/163'te Allah'ın birliğiyle birlikte hangi iki ismi anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Azîz ve Hakîm"
+          },
+          {
+            "id": "o2",
+            "text": "Rahmân ve Rahîm"
+          },
+          {
+            "id": "o3",
+            "text": "Gafûr ve Vedûd"
+          },
+          {
+            "id": "o4",
+            "text": "Evvel ve Âhir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Rahmân ve Rahîm",
+        "explanation": "Bakara 2/163 Allah'ın tek ilah olduğunu, O'ndan başka ilah bulunmadığını ve Rahmân ile Rahîm isimlerini bildirir. Tefsirde bu iki ismin Allah'ın geniş merhametine işaret ettiği açıklanır.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=163&mode=meal",
+            "locator": "Bakara 2/163",
+            "supports": "Bakara 2/163 Allah'ın tek ilah olduğunu, O'ndan başka ilah bulunmadığını ve Rahmân ile Rahîm isimlerini bildirir. Tefsirde bu iki ismin Allah'ın geniş merhametine işaret ettiği açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 744,
+      "sourceSequence": 594,
+      "id": "learn-women-028",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Peygamber'in hanımlarından Meymûne bint Hâris'in önceki adı neydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Remle"
+          },
+          {
+            "id": "o2",
+            "text": "Berre"
+          },
+          {
+            "id": "o3",
+            "text": "Rümeysâ"
+          },
+          {
+            "id": "o4",
+            "text": "Leylâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Berre",
+        "explanation": "TDV İslâm Ansiklopedisi'ne göre Meymûne bint Hâris'in Hz. Peygamber ile evlenmeden önceki adı Berre idi. Hz. Peygamber bu adı Meymûne olarak değiştirdi.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/meymune",
+            "locator": "Meymûne maddesi, giriş",
+            "supports": "TDV İslâm Ansiklopedisi'ne göre Meymûne bint Hâris'in Hz. Peygamber ile evlenmeden önceki adı Berre idi. Hz. Peygamber bu adı Meymûne olarak değiştirdi.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Peygamber'in hanımlarından Meymûne bint Hâris'in önceki adı neydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Remle"
+          },
+          {
+            "id": "o2",
+            "text": "Berre"
+          },
+          {
+            "id": "o3",
+            "text": "Rümeysâ"
+          },
+          {
+            "id": "o4",
+            "text": "Leylâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Berre",
+        "explanation": "TDV İslâm Ansiklopedisi'ne göre Meymûne bint Hâris'in Hz. Peygamber ile evlenmeden önceki adı Berre idi. Hz. Peygamber bu adı Meymûne olarak değiştirdi.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/meymune",
+            "locator": "Meymûne maddesi, giriş",
+            "supports": "TDV İslâm Ansiklopedisi'ne göre Meymûne bint Hâris'in Hz. Peygamber ile evlenmeden önceki adı Berre idi. Hz. Peygamber bu adı Meymûne olarak değiştirdi.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 745,
+      "sourceSequence": 595,
+      "id": "learn-history-019",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Edirne'deki Selimiye Camii hangi Osmanlı padişahı tarafından yaptırılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kanûnî Sultan Süleyman"
+          },
+          {
+            "id": "o2",
+            "text": "II. Selim"
+          },
+          {
+            "id": "o3",
+            "text": "III. Murad"
+          },
+          {
+            "id": "o4",
+            "text": "II. Bayezid"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "II. Selim",
+        "explanation": "TDV İslâm Ansiklopedisi'ne göre Edirne Selimiye Camii ve külliyesini Sultan II. Selim yaptırmış, ana yapıları Mimar Sinan inşa etmiştir. Banisi II. Selim'dir; mimarıyla karıştırılmamalıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/selimiye-camii-ve-kulliyesi--edirne",
+            "locator": "Selimiye Camii ve Külliyesi maddesi, giriş",
+            "supports": "TDV İslâm Ansiklopedisi'ne göre Edirne Selimiye Camii ve külliyesini Sultan II. Selim yaptırmış, ana yapıları Mimar Sinan inşa etmiştir. Banisi II. Selim'dir; mimarıyla karıştırılmamalıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Edirne'deki Selimiye Camii hangi Osmanlı padişahı tarafından yaptırılmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kanûnî Sultan Süleyman"
+          },
+          {
+            "id": "o2",
+            "text": "II. Selim"
+          },
+          {
+            "id": "o3",
+            "text": "III. Murad"
+          },
+          {
+            "id": "o4",
+            "text": "II. Bayezid"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "II. Selim",
+        "explanation": "TDV İslâm Ansiklopedisi'ne göre Edirne Selimiye Camii ve külliyesini Sultan II. Selim yaptırmış, ana yapıları Mimar Sinan inşa etmiştir. Banisi II. Selim'dir; mimarıyla karıştırılmamalıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/selimiye-camii-ve-kulliyesi--edirne",
+            "locator": "Selimiye Camii ve Külliyesi maddesi, giriş",
+            "supports": "TDV İslâm Ansiklopedisi'ne göre Edirne Selimiye Camii ve külliyesini Sultan II. Selim yaptırmış, ana yapıları Mimar Sinan inşa etmiştir. Banisi II. Selim'dir; mimarıyla karıştırılmamalıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 746,
+      "sourceSequence": 597,
+      "id": "learn-akaid-007",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Enbiyâ 21/35'te insanların hangi iki durumla sınandığı bildirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sadece servet ve makamla"
+          },
+          {
+            "id": "o2",
+            "text": "Hayır ve şer ile"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız açlık ve susuzlukla"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece başarı ve şöhretle"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hayır ve şer ile",
+        "explanation": "Enbiyâ 21/35 herkesin ölümü tadacağını, insanların hayır ve şer ile imtihan edildiğini ve sonunda Allah'a döndürüleceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur'an Yolu meal ve tefsiri",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/mushaf/tefsir-2/enbiya-suresi-21/ayet-35/diyanet-isleri-baskanligi-meali-1",
+            "locator": "Enbiyâ 21/35",
+            "supports": "Enbiyâ 21/35 herkesin ölümü tadacağını, insanların hayır ve şer ile imtihan edildiğini ve sonunda Allah'a döndürüleceğini bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Enbiyâ 21/35'te insanların hangi iki durumla sınandığı bildirilir?",
+        "options": [
+          {
+            "id": "o2",
+            "text": "Hayır ve şer"
+          },
+          {
+            "id": "o1",
+            "text": "Açlık ve susuzluk"
+          },
+          {
+            "id": "o3",
+            "text": "Mal ve evlât"
+          },
+          {
+            "id": "o4",
+            "text": "Korku ve can kaybı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hayır ve şer",
+        "explanation": "Enbiyâ 21/35 herkesin ölümü tadacağını, insanların hayır ve şer ile imtihan edildiğini ve sonunda Allah'a döndürüleceğini bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 21/35; PDF sayfa 341 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Hayır ve şer (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        },
+        {
+          "kind": "three-restrictive-distractors",
+          "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 747,
+      "sourceSequence": 598,
+      "id": "learn-women-007",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "TDV İslâm Ansiklopedisi'ne göre Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ümmü Habîbe"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o3",
+            "text": "Hafsa bint Ömer"
+          },
+          {
+            "id": "o4",
+            "text": "Zeyneb bint Cahş"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ümmü Seleme",
+        "explanation": "TDV'ye göre Ümmü Seleme, Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kişidir. Kendisine nispet edilen 378 rivayet bulunur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Ümmü Seleme, hadis rivayetleri",
+            "supports": "TDV'ye göre Ümmü Seleme, Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kişidir. Kendisine nispet edilen 378 rivayet bulunur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "TDV İslâm Ansiklopedisi'ne göre Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ümmü Habîbe"
+          },
+          {
+            "id": "o2",
+            "text": "Ümmü Seleme"
+          },
+          {
+            "id": "o3",
+            "text": "Hafsa bint Ömer"
+          },
+          {
+            "id": "o4",
+            "text": "Zeyneb bint Cahş"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ümmü Seleme",
+        "explanation": "TDV'ye göre Ümmü Seleme, Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kişidir. Kendisine nispet edilen 378 rivayet bulunur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+            "locator": "Ümmü Seleme, hadis rivayetleri",
+            "supports": "TDV'ye göre Ümmü Seleme, Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kişidir. Kendisine nispet edilen 378 rivayet bulunur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 748,
+      "sourceSequence": 600,
+      "id": "learn-akaid-017",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Zilzâl 99/7'ye göre zerre kadar hayır işleyen kimse hakkında ne bildirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İyiliğinin unutulacağı"
+          },
+          {
+            "id": "o2",
+            "text": "Yaptığı iyiliğin karşılığını göreceği"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnız büyük iyiliklerin sayılacağı"
+          },
+          {
+            "id": "o4",
+            "text": "İyiliğin sadece insanlarca değerlendirileceği"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yaptığı iyiliğin karşılığını göreceği",
+        "explanation": "Zilzâl sûresinin 7. âyetinde küçücük bir hayrın dahi karşılıksız kalmayacağı belirtilir. 8. âyette ise en küçük kötülüğün de görüleceği hatırlatılır. Böylece her davranışın sorumluluk taşıdığı öğretilir.",
+        "sources": [
+          {
+            "title": "Kur'an Yolu Tefsiri — Zilzâl 99/7-8",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/tefsir/Zilz%C3%A2l-suresi/6145/7-8-ayet-tefsiri",
+            "locator": "Zilzâl 99/7-8",
+            "supports": "En küçük hayrın ve şerrin karşılığının görüleceği ifade edilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-20"
+          }
+        ]
+      },
+      "after": {
+        "question": "Zilzâl 99/7'de hayır için kullanılan miktar ifadesi hangisidir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Bir avuç"
+          },
+          {
+            "id": "o2",
+            "text": "Zerre ağırlığı"
+          },
+          {
+            "id": "o1",
+            "text": "Hardal tanesi"
+          },
+          {
+            "id": "o3",
+            "text": "Bir dinar"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zerre ağırlığı",
+        "explanation": "Zilzâl sûresinin 7. âyetinde küçücük bir hayrın dahi karşılıksız kalmayacağı belirtilir. 8. âyette ise en küçük kötülüğün de görüleceği hatırlatılır. Böylece her davranışın sorumluluk taşıdığı öğretilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 99/7; PDF sayfa 653 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Zerre ağırlığı (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [
+        {
+          "kind": "absolute-language",
+          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+        }
+      ],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 749,
+      "sourceSequence": 601,
+      "id": "q42-lokman-16",
+      "category": "iman_ahlak",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/16'da yapılan en küçük iş hangi örnekle anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Koca bir dağın büyüklüğünde bir iş"
+          },
+          {
+            "id": "o2",
+            "text": "Bir hardal tanesi ağırlığındaki iş"
+          },
+          {
+            "id": "o3",
+            "text": "Bir şehir dolusu insanın yaptığı iş"
+          },
+          {
+            "id": "o4",
+            "text": "Bir yıl boyunca süren yolculuk"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir hardal tanesi ağırlığındaki iş",
+        "explanation": "Lokmân 31/16, hardal tanesi ağırlığındaki bir iş kaya içinde ya da başka bir yerde gizli kalsa bile Allah'ın onu açığa çıkaracağını bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/16",
+            "supports": "Lokmân 31/16, hardal tanesi ağırlığındaki bir iş kaya içinde ya da başka bir yerde gizli kalsa bile Allah'ın onu açığa çıkaracağını bildirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/16'da yapılan en küçük iş hangi örnekle anlatılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Bir buğday tanesi ağırlığındaki iş"
+          },
+          {
+            "id": "o2",
+            "text": "Hardal tanesi ağırlığındaki iş"
+          },
+          {
+            "id": "o1",
+            "text": "Bir hurma çekirdeği ağırlığındaki iş"
+          },
+          {
+            "id": "o3",
+            "text": "Bir arpa tanesi ağırlığındaki iş"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hardal tanesi ağırlığındaki iş",
+        "explanation": "Lokmân 31/16, hardal tanesi ağırlığındaki bir iş kaya içinde ya da başka bir yerde gizli kalsa bile Allah'ın onu açığa çıkaracağını bildirir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/16; PDF sayfa 434 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Hardal tanesi ağırlığındaki iş (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 750,
+      "sourceSequence": 602,
+      "id": "q42-lokman-17",
+      "category": "iman_ahlak",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Lokmân 31/17'de başa gelen sıkıntılar karşısında hangi tutum öğütlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Başkalarını suçlamak"
+          },
+          {
+            "id": "o2",
+            "text": "Her türlü sorumluluktan kaçmak"
+          },
+          {
+            "id": "o3",
+            "text": "Sabırlı olmak"
+          },
+          {
+            "id": "o4",
+            "text": "İyilikten vazgeçmek"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Sabırlı olmak",
+        "explanation": "Lokmân'ın oğluna öğütleri arasında namazı özenle kılmak, iyiliği emretmek, kötülükten sakındırmak ve başa gelenlere sabretmek vardır (31/17).",
+        "sources": [
+          {
+            "title": "Diyanet Kur’an Platformu — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=17&mode=tefsir&sure=31",
+            "locator": "Lokmân 31/17",
+            "supports": "Lokmân'ın oğluna öğütleri arasında namazı özenle kılmak, iyiliği emretmek, kötülükten sakındırmak ve başa gelenlere sabretmek vardır (31/17).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Lokmân 31/17'de namaz ve iyiliği öğütlemeyle birlikte hangi tutum emredilir?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Emaneti teslim etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Sıkıntılara sabretmek"
+          },
+          {
+            "id": "o1",
+            "text": "Haberi doğrulamak"
+          },
+          {
+            "id": "o2",
+            "text": "Akrabayı gözetmek"
+          }
+        ],
+        "correctOptionId": "o3",
+        "correctAnswer": "Sıkıntılara sabretmek",
+        "explanation": "Lokmân'ın oğluna öğütleri arasında namazı özenle kılmak, iyiliği emretmek, kötülükten sakındırmak ve başa gelenlere sabretmek vardır (31/17).",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kur’an Yolu Meali, 31/17; PDF sayfa 434 (1 tabanlı)",
+            "supports": "Karşılaştırılan cevap kavramı: Sıkıntılara sabretmek (doğrudan kaynak alıntısı değildir).",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-27"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    }
+  ]
+}

@@ -1,0 +1,4214 @@
+{
+  "batch": 19,
+  "start": 901,
+  "end": 950,
+  "total": 50,
+  "individuallyReviewed": 0,
+  "pendingReview": 50,
+  "sourceComparedThisRound": 0,
+  "blocked": 0,
+  "flaggedBefore": 0,
+  "flaggedAfter": 0,
+  "records": [
+    {
+      "sequence": 901,
+      "sourceSequence": 778,
+      "id": "q49-ihya-017",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İhyâü ulûmi'd-dîn adlı eserin müellifi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bîrûnî"
+          },
+          {
+            "id": "o2",
+            "text": "Gazzâlî"
+          },
+          {
+            "id": "o3",
+            "text": "İbn Haldûn"
+          },
+          {
+            "id": "o4",
+            "text": "Taberî"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Gazzâlî",
+        "explanation": "TDV, İhyâü ulûmi'd-dîn'i Gazzâlî'nin ahlâk ve tasavvuf başta olmak üzere dinî ilimlere yaklaşımını anlattığı eser olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "Gazzâlî'nin İhyâ eseri",
+            "supports": "TDV, İhyâü ulûmi'd-dîn'i Gazzâlî'nin ahlâk ve tasavvuf başta olmak üzere dinî ilimlere yaklaşımını anlattığı eser olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İhyâü ulûmi'd-dîn adlı eserin müellifi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bîrûnî"
+          },
+          {
+            "id": "o2",
+            "text": "Gazzâlî"
+          },
+          {
+            "id": "o3",
+            "text": "İbn Haldûn"
+          },
+          {
+            "id": "o4",
+            "text": "Taberî"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Gazzâlî",
+        "explanation": "TDV, İhyâü ulûmi'd-dîn'i Gazzâlî'nin ahlâk ve tasavvuf başta olmak üzere dinî ilimlere yaklaşımını anlattığı eser olarak tanımlar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "Gazzâlî'nin İhyâ eseri",
+            "supports": "TDV, İhyâü ulûmi'd-dîn'i Gazzâlî'nin ahlâk ve tasavvuf başta olmak üzere dinî ilimlere yaklaşımını anlattığı eser olarak tanımlar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 902,
+      "sourceSequence": 779,
+      "id": "q49-ihya-018",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İhyâü ulûmi'd-dîn daha çok hangi iki alanı bir arada ele alır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Jeodezi ve astronomi"
+          },
+          {
+            "id": "o2",
+            "text": "Tasavvuf ve ahlâk"
+          },
+          {
+            "id": "o3",
+            "text": "Tıp ve eczacılık"
+          },
+          {
+            "id": "o4",
+            "text": "Savaş ve denizcilik"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Tasavvuf ve ahlâk",
+        "explanation": "Gazzâlî'nin İhyâ adlı kitabı özellikle dinî yaşayışın ahlâkî ve tasavvufî boyutlarını ele almasıyla tanınır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İhyâ'da tasavvuf ve ahlâk",
+            "supports": "Gazzâlî'nin İhyâ adlı kitabı özellikle dinî yaşayışın ahlâkî ve tasavvufî boyutlarını ele almasıyla tanınır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İhyâü ulûmi'd-dîn daha çok hangi iki alanı bir arada ele alır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Jeodezi ve astronomi"
+          },
+          {
+            "id": "o2",
+            "text": "Tasavvuf ve ahlâk"
+          },
+          {
+            "id": "o3",
+            "text": "Tıp ve eczacılık"
+          },
+          {
+            "id": "o4",
+            "text": "Savaş ve denizcilik"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Tasavvuf ve ahlâk",
+        "explanation": "Gazzâlî'nin İhyâ adlı kitabı özellikle dinî yaşayışın ahlâkî ve tasavvufî boyutlarını ele almasıyla tanınır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İhyâ'da tasavvuf ve ahlâk",
+            "supports": "Gazzâlî'nin İhyâ adlı kitabı özellikle dinî yaşayışın ahlâkî ve tasavvufî boyutlarını ele almasıyla tanınır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 903,
+      "sourceSequence": 780,
+      "id": "q49-ihya-019",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İhyâü ulûmi'd-dîn eseri kaç ana ciltten oluşur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İki"
+          },
+          {
+            "id": "o2",
+            "text": "Dört"
+          },
+          {
+            "id": "o3",
+            "text": "Altı"
+          },
+          {
+            "id": "o4",
+            "text": "On iki"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dört",
+        "explanation": "TDV İhyâ maddesi eserin dört ciltten oluştuğunu, her ciltte on ayrı konunun işlendiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İhyâ'nın dört cildi",
+            "supports": "TDV İhyâ maddesi eserin dört ciltten oluştuğunu, her ciltte on ayrı konunun işlendiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İhyâü ulûmi'd-dîn eseri kaç ana ciltten oluşur?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İki"
+          },
+          {
+            "id": "o2",
+            "text": "Dört"
+          },
+          {
+            "id": "o3",
+            "text": "Altı"
+          },
+          {
+            "id": "o4",
+            "text": "On iki"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dört",
+        "explanation": "TDV İhyâ maddesi eserin dört ciltten oluştuğunu, her ciltte on ayrı konunun işlendiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İhyâ'nın dört cildi",
+            "supports": "TDV İhyâ maddesi eserin dört ciltten oluştuğunu, her ciltte on ayrı konunun işlendiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 904,
+      "sourceSequence": 782,
+      "id": "q49-ihya-021",
+      "category": "fikih",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî İhyâ'da ibadetleri değerlendirirken hangi içsel özelliklere önem verir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ganimet miktarına"
+          },
+          {
+            "id": "o2",
+            "text": "İhlâs ve huşû"
+          },
+          {
+            "id": "o3",
+            "text": "Savaş tecrübesine"
+          },
+          {
+            "id": "o4",
+            "text": "Ticaret hacmine"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İhlâs ve huşû",
+        "explanation": "TDV İhyâ maddesi, eserde ibadetlerin dış kuralları yanında ihlâs ve huşû gibi kalbin amellerinin vurgulandığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İbadetin manevî yönü",
+            "supports": "TDV İhyâ maddesi, eserde ibadetlerin dış kuralları yanında ihlâs ve huşû gibi kalbin amellerinin vurgulandığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî İhyâ'da ibadetleri değerlendirirken hangi içsel özelliklere önem verir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Ganimet miktarına"
+          },
+          {
+            "id": "o2",
+            "text": "İhlâs ve huşû"
+          },
+          {
+            "id": "o3",
+            "text": "Savaş tecrübesine"
+          },
+          {
+            "id": "o4",
+            "text": "Ticaret hacmine"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İhlâs ve huşû",
+        "explanation": "TDV İhyâ maddesi, eserde ibadetlerin dış kuralları yanında ihlâs ve huşû gibi kalbin amellerinin vurgulandığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İbadetin manevî yönü",
+            "supports": "TDV İhyâ maddesi, eserde ibadetlerin dış kuralları yanında ihlâs ve huşû gibi kalbin amellerinin vurgulandığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 905,
+      "sourceSequence": 783,
+      "id": "q49-ihya-022",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Gazzâlî'nin İhyâ'yı hangi hayat döneminde kaleme aldığı kabul edilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çocukluk çağı"
+          },
+          {
+            "id": "o2",
+            "text": "İnzivâ dönemi"
+          },
+          {
+            "id": "o3",
+            "text": "Son yolculuğu"
+          },
+          {
+            "id": "o4",
+            "text": "Doğumundan önce"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İnzivâ dönemi",
+        "explanation": "TDV'ye göre İhyâü ulûmi'd-dîn, Gazzâlî'nin 1095-1105 yılları arasındaki inzivâ döneminde yazdığı eserlerdendir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İhyâ'nın telif edildiği inzivâ dönemi",
+            "supports": "TDV'ye göre İhyâü ulûmi'd-dîn, Gazzâlî'nin 1095-1105 yılları arasındaki inzivâ döneminde yazdığı eserlerdendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Gazzâlî'nin İhyâ'yı hangi hayat döneminde kaleme aldığı kabul edilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Çocukluk çağı"
+          },
+          {
+            "id": "o2",
+            "text": "İnzivâ dönemi"
+          },
+          {
+            "id": "o3",
+            "text": "Son yolculuğu"
+          },
+          {
+            "id": "o4",
+            "text": "Doğumundan önce"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İnzivâ dönemi",
+        "explanation": "TDV'ye göre İhyâü ulûmi'd-dîn, Gazzâlî'nin 1095-1105 yılları arasındaki inzivâ döneminde yazdığı eserlerdendir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İhyâ'nın telif edildiği inzivâ dönemi",
+            "supports": "TDV'ye göre İhyâü ulûmi'd-dîn, Gazzâlî'nin 1095-1105 yılları arasındaki inzivâ döneminde yazdığı eserlerdendir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 906,
+      "sourceSequence": 784,
+      "id": "q49-ihya-023",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İhyâ'yı yazmasının sebepleri arasında Gazzâlî hangi soruna özellikle dikkat çeker?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Coğrafya haritalarının eksikliği"
+          },
+          {
+            "id": "o2",
+            "text": "Dinî ilimlerde amaçtan uzaklaşma"
+          },
+          {
+            "id": "o3",
+            "text": "Madenlerin yanlış adlandırılması"
+          },
+          {
+            "id": "o4",
+            "text": "Tarım vergilerinin artması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dinî ilimlerde amaçtan uzaklaşma",
+        "explanation": "TDV maddesi İhyâ'nın dinî ve ahlâkî yozlaşma, ilimlerde içeriğin kaybolması gibi sorunlara karşı bir ıslah amacıyla yazıldığını anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İlim ve ahlâkta ıslah fikri",
+            "supports": "TDV maddesi İhyâ'nın dinî ve ahlâkî yozlaşma, ilimlerde içeriğin kaybolması gibi sorunlara karşı bir ıslah amacıyla yazıldığını anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İhyâ'yı yazmasının sebepleri arasında Gazzâlî hangi soruna özellikle dikkat çeker?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Coğrafya haritalarının eksikliği"
+          },
+          {
+            "id": "o2",
+            "text": "Dinî ilimlerde amaçtan uzaklaşma"
+          },
+          {
+            "id": "o3",
+            "text": "Madenlerin yanlış adlandırılması"
+          },
+          {
+            "id": "o4",
+            "text": "Tarım vergilerinin artması"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Dinî ilimlerde amaçtan uzaklaşma",
+        "explanation": "TDV maddesi İhyâ'nın dinî ve ahlâkî yozlaşma, ilimlerde içeriğin kaybolması gibi sorunlara karşı bir ıslah amacıyla yazıldığını anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "İlim ve ahlâkta ıslah fikri",
+            "supports": "TDV maddesi İhyâ'nın dinî ve ahlâkî yozlaşma, ilimlerde içeriğin kaybolması gibi sorunlara karşı bir ıslah amacıyla yazıldığını anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 907,
+      "sourceSequence": 785,
+      "id": "q49-ihya-024",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İhyâ'nın ilk cildinde 'kitâb' başlığıyla kaç temel konu ele alınır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üç"
+          },
+          {
+            "id": "o2",
+            "text": "On"
+          },
+          {
+            "id": "o3",
+            "text": "Yirmi"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On",
+        "explanation": "TDV'nin yapısal tanımına göre İhyâ dört ciltten oluşur ve her ciltte kitâb başlığı altında on konu incelenir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "Her ciltte on konu",
+            "supports": "TDV'nin yapısal tanımına göre İhyâ dört ciltten oluşur ve her ciltte kitâb başlığı altında on konu incelenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İhyâ'nın ilk cildinde 'kitâb' başlığıyla kaç temel konu ele alınır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üç"
+          },
+          {
+            "id": "o2",
+            "text": "On"
+          },
+          {
+            "id": "o3",
+            "text": "Yirmi"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On",
+        "explanation": "TDV'nin yapısal tanımına göre İhyâ dört ciltten oluşur ve her ciltte kitâb başlığı altında on konu incelenir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+            "locator": "Her ciltte on konu",
+            "supports": "TDV'nin yapısal tanımına göre İhyâ dört ciltten oluşur ve her ciltte kitâb başlığı altında on konu incelenir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 908,
+      "sourceSequence": 786,
+      "id": "q49-kutub-025",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kütüb-i Sitte adı kaç hadis kitabını ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üç"
+          },
+          {
+            "id": "o2",
+            "text": "Altı"
+          },
+          {
+            "id": "o3",
+            "text": "Beş"
+          },
+          {
+            "id": "o4",
+            "text": "Yedi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Altı",
+        "explanation": "Kütüb-i Sitte terimi, hadis literatüründe genel olarak yaygın kabul gören altı temel hadis kitabını ifade eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Altı temel hadis kitabı",
+            "supports": "Kütüb-i Sitte terimi, hadis literatüründe genel olarak yaygın kabul gören altı temel hadis kitabını ifade eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kütüb-i Sitte adı kaç hadis kitabını ifade eder?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Üç"
+          },
+          {
+            "id": "o2",
+            "text": "Altı"
+          },
+          {
+            "id": "o3",
+            "text": "Beş"
+          },
+          {
+            "id": "o4",
+            "text": "Yedi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Altı",
+        "explanation": "Kütüb-i Sitte terimi, hadis literatüründe genel olarak yaygın kabul gören altı temel hadis kitabını ifade eder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Altı temel hadis kitabı",
+            "supports": "Kütüb-i Sitte terimi, hadis literatüründe genel olarak yaygın kabul gören altı temel hadis kitabını ifade eder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 909,
+      "sourceSequence": 787,
+      "id": "q49-kutub-026",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hadis alanında 'Sahîhayn' ifadesi hangi iki eseri belirtir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mâlik ve Ahmed'in tefsirleri"
+          },
+          {
+            "id": "o2",
+            "text": "Buhârî ve Müslim'in sahihleri"
+          },
+          {
+            "id": "o3",
+            "text": "Taberî ve İbn Haldûn'un tarihleri"
+          },
+          {
+            "id": "o4",
+            "text": "Bîrûnî ve İbn Sînâ'nın tıp eserleri"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Buhârî ve Müslim'in sahihleri",
+        "explanation": "TDV'ye göre Sahîhayn adı, hadis seçiminde yüksek titizlikle tanınan Buhârî ve Müslim'in el-Câmiʿu's-sahîh eserleri için kullanılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Buhârî ve Müslim'in Sahîhaynı",
+            "supports": "TDV'ye göre Sahîhayn adı, hadis seçiminde yüksek titizlikle tanınan Buhârî ve Müslim'in el-Câmiʿu's-sahîh eserleri için kullanılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hadis alanında 'Sahîhayn' ifadesi hangi iki eseri belirtir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mâlik ve Ahmed'in tefsirleri"
+          },
+          {
+            "id": "o2",
+            "text": "Buhârî ve Müslim'in sahihleri"
+          },
+          {
+            "id": "o3",
+            "text": "Taberî ve İbn Haldûn'un tarihleri"
+          },
+          {
+            "id": "o4",
+            "text": "Bîrûnî ve İbn Sînâ'nın tıp eserleri"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Buhârî ve Müslim'in sahihleri",
+        "explanation": "TDV'ye göre Sahîhayn adı, hadis seçiminde yüksek titizlikle tanınan Buhârî ve Müslim'in el-Câmiʿu's-sahîh eserleri için kullanılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Buhârî ve Müslim'in Sahîhaynı",
+            "supports": "TDV'ye göre Sahîhayn adı, hadis seçiminde yüksek titizlikle tanınan Buhârî ve Müslim'in el-Câmiʿu's-sahîh eserleri için kullanılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 910,
+      "sourceSequence": 788,
+      "id": "q49-kutub-027",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kütüb-i Sitte'de genel kabul gören altıncı kitabın müellifi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İbn Haldûn"
+          },
+          {
+            "id": "o2",
+            "text": "İbn Mâce"
+          },
+          {
+            "id": "o3",
+            "text": "Bîrûnî"
+          },
+          {
+            "id": "o4",
+            "text": "İbn Sînâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İbn Mâce",
+        "explanation": "TDV Kütüb-i Sitte maddesi, altıncı kitap konusunda başka tercihler bulunmakla birlikte yaygın tertipte İbn Mâce'nin Sünen'inin yer aldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "İbn Mâce'nin altıncı kitap sayılması",
+            "supports": "TDV Kütüb-i Sitte maddesi, altıncı kitap konusunda başka tercihler bulunmakla birlikte yaygın tertipte İbn Mâce'nin Sünen'inin yer aldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kütüb-i Sitte'de genel kabul gören altıncı kitabın müellifi kimdir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İbn Haldûn"
+          },
+          {
+            "id": "o2",
+            "text": "İbn Mâce"
+          },
+          {
+            "id": "o3",
+            "text": "Bîrûnî"
+          },
+          {
+            "id": "o4",
+            "text": "İbn Sînâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İbn Mâce",
+        "explanation": "TDV Kütüb-i Sitte maddesi, altıncı kitap konusunda başka tercihler bulunmakla birlikte yaygın tertipte İbn Mâce'nin Sünen'inin yer aldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "İbn Mâce'nin altıncı kitap sayılması",
+            "supports": "TDV Kütüb-i Sitte maddesi, altıncı kitap konusunda başka tercihler bulunmakla birlikte yaygın tertipte İbn Mâce'nin Sünen'inin yer aldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 911,
+      "sourceSequence": 789,
+      "id": "q49-kutub-028",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bazı âlimler Kütüb-i Sitte'nin altıncı kitabı yerine hangi eseri tercih etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İbn Haldûn'un Mukaddime'sini"
+          },
+          {
+            "id": "o2",
+            "text": "İmam Mâlik'in el-Muvatta'ını"
+          },
+          {
+            "id": "o3",
+            "text": "Cezerî'nin mekanik kitabını"
+          },
+          {
+            "id": "o4",
+            "text": "Bîrûnî'nin el-Cemâhir'ini"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İmam Mâlik'in el-Muvatta'ını",
+        "explanation": "TDV, bazı tertiplerde İbn Mâce'nin Sünen'i yerine İmam Mâlik'in el-Muvatta'ının tercih edildiğini aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Kütüb-i Sitte'nin alternatif tertibi",
+            "supports": "TDV, bazı tertiplerde İbn Mâce'nin Sünen'i yerine İmam Mâlik'in el-Muvatta'ının tercih edildiğini aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bazı âlimler Kütüb-i Sitte'nin altıncı kitabı yerine hangi eseri tercih etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İbn Haldûn'un Mukaddime'sini"
+          },
+          {
+            "id": "o2",
+            "text": "İmam Mâlik'in el-Muvatta'ını"
+          },
+          {
+            "id": "o3",
+            "text": "Cezerî'nin mekanik kitabını"
+          },
+          {
+            "id": "o4",
+            "text": "Bîrûnî'nin el-Cemâhir'ini"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "İmam Mâlik'in el-Muvatta'ını",
+        "explanation": "TDV, bazı tertiplerde İbn Mâce'nin Sünen'i yerine İmam Mâlik'in el-Muvatta'ının tercih edildiğini aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Kütüb-i Sitte'nin alternatif tertibi",
+            "supports": "TDV, bazı tertiplerde İbn Mâce'nin Sünen'i yerine İmam Mâlik'in el-Muvatta'ının tercih edildiğini aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 912,
+      "sourceSequence": 790,
+      "id": "q49-kutub-029",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Nesâî'nin es-Sünenü'l-kübrâ'dan seçerek oluşturduğu eserin diğer adı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Mukaddime"
+          },
+          {
+            "id": "o2",
+            "text": "el-Müctebâ"
+          },
+          {
+            "id": "o3",
+            "text": "el-Cemâhir"
+          },
+          {
+            "id": "o4",
+            "text": "el-Kānûn"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "el-Müctebâ",
+        "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'nin büyük süneninden seçtiği eserinin el-Müctebâ adıyla da anıldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Nesâî'nin el-Müctebâ eseri",
+            "supports": "TDV Kütüb-i Sitte maddesi Nesâî'nin büyük süneninden seçtiği eserinin el-Müctebâ adıyla da anıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Nesâî'nin es-Sünenü'l-kübrâ'dan seçerek oluşturduğu eserin diğer adı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "el-Mukaddime"
+          },
+          {
+            "id": "o2",
+            "text": "el-Müctebâ"
+          },
+          {
+            "id": "o3",
+            "text": "el-Cemâhir"
+          },
+          {
+            "id": "o4",
+            "text": "el-Kānûn"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "el-Müctebâ",
+        "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'nin büyük süneninden seçtiği eserinin el-Müctebâ adıyla da anıldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Nesâî'nin el-Müctebâ eseri",
+            "supports": "TDV Kütüb-i Sitte maddesi Nesâî'nin büyük süneninden seçtiği eserinin el-Müctebâ adıyla da anıldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 913,
+      "sourceSequence": 791,
+      "id": "q49-kutub-030",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kütüb-i Sitte'nin Ebû Dâvûd ve Nesâî'ye ait eserleri hangi türe girer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tarih"
+          },
+          {
+            "id": "o2",
+            "text": "Sünen"
+          },
+          {
+            "id": "o3",
+            "text": "Siyer"
+          },
+          {
+            "id": "o4",
+            "text": "Coğrafya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Sünen",
+        "explanation": "Ebû Dâvûd ve Nesâî'nin Kütüb-i Sitte'ye dahil olan eserleri hadislerin fıkhî konulara göre düzenlendiği Sünen kitaplarıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Ebû Dâvûd ve Nesâî'nin Sünenleri",
+            "supports": "Ebû Dâvûd ve Nesâî'nin Kütüb-i Sitte'ye dahil olan eserleri hadislerin fıkhî konulara göre düzenlendiği Sünen kitaplarıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kütüb-i Sitte'nin Ebû Dâvûd ve Nesâî'ye ait eserleri hangi türe girer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tarih"
+          },
+          {
+            "id": "o2",
+            "text": "Sünen"
+          },
+          {
+            "id": "o3",
+            "text": "Siyer"
+          },
+          {
+            "id": "o4",
+            "text": "Coğrafya"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Sünen",
+        "explanation": "Ebû Dâvûd ve Nesâî'nin Kütüb-i Sitte'ye dahil olan eserleri hadislerin fıkhî konulara göre düzenlendiği Sünen kitaplarıdır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Ebû Dâvûd ve Nesâî'nin Sünenleri",
+            "supports": "Ebû Dâvûd ve Nesâî'nin Kütüb-i Sitte'ye dahil olan eserleri hadislerin fıkhî konulara göre düzenlendiği Sünen kitaplarıdır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 914,
+      "sourceSequence": 792,
+      "id": "q49-kutub-031",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Tirmizî hadis seçiminde rivayetlerin hangi yönünü özellikle tartışmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Astronomik koordinatları"
+          },
+          {
+            "id": "o2",
+            "text": "Râvilerin güvenilirliği ve sened tenkidi"
+          },
+          {
+            "id": "o3",
+            "text": "Madenlerin ağırlığı"
+          },
+          {
+            "id": "o4",
+            "text": "Hukukî vergi oranları"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Râvilerin güvenilirliği ve sened tenkidi",
+        "explanation": "TDV, Tirmizî'nin zayıf rivayetlerin râvilerinin güvenilirliğini ve sened tenkidini eserinde öne çıkardığını aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Tirmizî'nin sened değerlendirmesi",
+            "supports": "TDV, Tirmizî'nin zayıf rivayetlerin râvilerinin güvenilirliğini ve sened tenkidini eserinde öne çıkardığını aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Tirmizî hadis seçiminde rivayetlerin hangi yönünü özellikle tartışmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Astronomik koordinatları"
+          },
+          {
+            "id": "o2",
+            "text": "Râvilerin güvenilirliği ve sened tenkidi"
+          },
+          {
+            "id": "o3",
+            "text": "Madenlerin ağırlığı"
+          },
+          {
+            "id": "o4",
+            "text": "Hukukî vergi oranları"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Râvilerin güvenilirliği ve sened tenkidi",
+        "explanation": "TDV, Tirmizî'nin zayıf rivayetlerin râvilerinin güvenilirliğini ve sened tenkidini eserinde öne çıkardığını aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Tirmizî'nin sened değerlendirmesi",
+            "supports": "TDV, Tirmizî'nin zayıf rivayetlerin râvilerinin güvenilirliğini ve sened tenkidini eserinde öne çıkardığını aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 915,
+      "sourceSequence": 793,
+      "id": "q49-kutub-032",
+      "category": "tarih_medeniyet",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kütüb-i Sitte içinde bulunmayan rivayetleri başka eserlerden toplama çalışmalarına ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Vakfe"
+          },
+          {
+            "id": "o2",
+            "text": "Zevâid"
+          },
+          {
+            "id": "o3",
+            "text": "Mîkāt"
+          },
+          {
+            "id": "o4",
+            "text": "Sa‘y"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zevâid",
+        "explanation": "Kütüb-i Sitte'de bulunmayan hadisleri farklı eserlerden bir araya getirme çalışmalarının hadis literatüründe zevâid türünü geliştirdiği belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Zevâid çalışmalarının tanımı",
+            "supports": "Kütüb-i Sitte'de bulunmayan hadisleri farklı eserlerden bir araya getirme çalışmalarının hadis literatüründe zevâid türünü geliştirdiği belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kütüb-i Sitte içinde bulunmayan rivayetleri başka eserlerden toplama çalışmalarına ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Vakfe"
+          },
+          {
+            "id": "o2",
+            "text": "Zevâid"
+          },
+          {
+            "id": "o3",
+            "text": "Mîkāt"
+          },
+          {
+            "id": "o4",
+            "text": "Sa‘y"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Zevâid",
+        "explanation": "Kütüb-i Sitte'de bulunmayan hadisleri farklı eserlerden bir araya getirme çalışmalarının hadis literatüründe zevâid türünü geliştirdiği belirtilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+            "locator": "Zevâid çalışmalarının tanımı",
+            "supports": "Kütüb-i Sitte'de bulunmayan hadisleri farklı eserlerden bir araya getirme çalışmalarının hadis literatüründe zevâid türünü geliştirdiği belirtilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 916,
+      "sourceSequence": 794,
+      "id": "q50-hud-001",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Hûd'un kavmi hangi bölgede yaşardı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hicaz'ın kuzeyi"
+          },
+          {
+            "id": "o2",
+            "text": "Ahkāf"
+          },
+          {
+            "id": "o3",
+            "text": "Harran"
+          },
+          {
+            "id": "o4",
+            "text": "Horasan"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ahkāf",
+        "explanation": "Kur’an'ın Ahkāf 46/21 âyetine göre Hz. Hûd'un kavmi Âd'ın yerleştiği yer Ahkāf bölgesidir; TDV maddesi de bunu aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Ahkāf 46/21, Âd'ın yurdu",
+            "supports": "Kur’an'ın Ahkāf 46/21 âyetine göre Hz. Hûd'un kavmi Âd'ın yerleştiği yer Ahkāf bölgesidir; TDV maddesi de bunu aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Hûd'un kavmi hangi bölgede yaşardı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hicaz'ın kuzeyi"
+          },
+          {
+            "id": "o2",
+            "text": "Ahkāf"
+          },
+          {
+            "id": "o3",
+            "text": "Harran"
+          },
+          {
+            "id": "o4",
+            "text": "Horasan"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ahkāf",
+        "explanation": "Kur’an'ın Ahkāf 46/21 âyetine göre Hz. Hûd'un kavmi Âd'ın yerleştiği yer Ahkāf bölgesidir; TDV maddesi de bunu aktarır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Ahkāf 46/21, Âd'ın yurdu",
+            "supports": "Kur’an'ın Ahkāf 46/21 âyetine göre Hz. Hûd'un kavmi Âd'ın yerleştiği yer Ahkāf bölgesidir; TDV maddesi de bunu aktarır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 917,
+      "sourceSequence": 795,
+      "id": "q50-hud-002",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Âd kavmi gördüğü felâket bulutunu başlangıçta ne sandı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir ticaret kervanı"
+          },
+          {
+            "id": "o2",
+            "text": "Yağmur bulutu"
+          },
+          {
+            "id": "o3",
+            "text": "Bir deprem işareti"
+          },
+          {
+            "id": "o4",
+            "text": "Yeni ay"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yağmur bulutu",
+        "explanation": "Ahkāf 46/24'te Âd kavmi yaklaşan azap bulutunu yağmur taşıyan bulut sanmıştır; ancak felâket getiren kasırga yaklaşmaktadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Ahkāf 46/24, yağmur sanılan bulut",
+            "supports": "Ahkāf 46/24'te Âd kavmi yaklaşan azap bulutunu yağmur taşıyan bulut sanmıştır; ancak felâket getiren kasırga yaklaşmaktadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Âd kavmi gördüğü felâket bulutunu başlangıçta ne sandı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir ticaret kervanı"
+          },
+          {
+            "id": "o2",
+            "text": "Yağmur bulutu"
+          },
+          {
+            "id": "o3",
+            "text": "Bir deprem işareti"
+          },
+          {
+            "id": "o4",
+            "text": "Yeni ay"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yağmur bulutu",
+        "explanation": "Ahkāf 46/24'te Âd kavmi yaklaşan azap bulutunu yağmur taşıyan bulut sanmıştır; ancak felâket getiren kasırga yaklaşmaktadır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Ahkāf 46/24, yağmur sanılan bulut",
+            "supports": "Ahkāf 46/24'te Âd kavmi yaklaşan azap bulutunu yağmur taşıyan bulut sanmıştır; ancak felâket getiren kasırga yaklaşmaktadır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 918,
+      "sourceSequence": 796,
+      "id": "q50-hud-003",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur’an'a göre Âd kavmini etkileyen felâket ne kadar sürdü?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir gün bir gece"
+          },
+          {
+            "id": "o2",
+            "text": "Yedi gece sekiz gün"
+          },
+          {
+            "id": "o3",
+            "text": "Bir ay"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk gün"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yedi gece sekiz gün",
+        "explanation": "Hâkka 69/6-7'de Âd kavmini yıkan kasırganın yedi gece ve sekiz gün sürdüğü anlatılır; inananlar kurtulmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Hâkka 69/6-7, fırtınanın süresi",
+            "supports": "Hâkka 69/6-7'de Âd kavmini yıkan kasırganın yedi gece ve sekiz gün sürdüğü anlatılır; inananlar kurtulmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur’an'a göre Âd kavmini etkileyen felâket ne kadar sürdü?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir gün bir gece"
+          },
+          {
+            "id": "o2",
+            "text": "Yedi gece sekiz gün"
+          },
+          {
+            "id": "o3",
+            "text": "Bir ay"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk gün"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yedi gece sekiz gün",
+        "explanation": "Hâkka 69/6-7'de Âd kavmini yıkan kasırganın yedi gece ve sekiz gün sürdüğü anlatılır; inananlar kurtulmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Hâkka 69/6-7, fırtınanın süresi",
+            "supports": "Hâkka 69/6-7'de Âd kavmini yıkan kasırganın yedi gece ve sekiz gün sürdüğü anlatılır; inananlar kurtulmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 919,
+      "sourceSequence": 798,
+      "id": "q50-hud-005",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Şuarâ 26/128-129'da Âd kavminin hangi alışkanlığı eleştirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yoksullara yardım etmeleri"
+          },
+          {
+            "id": "o2",
+            "text": "Yüksek yerlere gösteriş yapıları dikmeleri"
+          },
+          {
+            "id": "o3",
+            "text": "Ticaret yapmaları"
+          },
+          {
+            "id": "o4",
+            "text": "Bahçe yetiştirmeleri"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yüksek yerlere gösteriş yapıları dikmeleri",
+        "explanation": "Şuarâ 26/128-129, Âd kavminin her yüksek yerde boş yere anıtlar yapmasını ve kalıcı kalacakmış gibi sağlam yapılar kurmasını eleştirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Şuarâ 26/128-129, gösteriş yapıları",
+            "supports": "Şuarâ 26/128-129, Âd kavminin her yüksek yerde boş yere anıtlar yapmasını ve kalıcı kalacakmış gibi sağlam yapılar kurmasını eleştirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Şuarâ 26/128-129'da Âd kavminin hangi alışkanlığı eleştirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Yoksullara yardım etmeleri"
+          },
+          {
+            "id": "o2",
+            "text": "Yüksek yerlere gösteriş yapıları dikmeleri"
+          },
+          {
+            "id": "o3",
+            "text": "Ticaret yapmaları"
+          },
+          {
+            "id": "o4",
+            "text": "Bahçe yetiştirmeleri"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yüksek yerlere gösteriş yapıları dikmeleri",
+        "explanation": "Şuarâ 26/128-129, Âd kavminin her yüksek yerde boş yere anıtlar yapmasını ve kalıcı kalacakmış gibi sağlam yapılar kurmasını eleştirir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — HÛD",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/hud",
+            "locator": "Şuarâ 26/128-129, gösteriş yapıları",
+            "supports": "Şuarâ 26/128-129, Âd kavminin her yüksek yerde boş yere anıtlar yapmasını ve kalıcı kalacakmış gibi sağlam yapılar kurmasını eleştirir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 920,
+      "sourceSequence": 799,
+      "id": "q50-suayb-006",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur’an'da Hz. Şuayb'ın adı kaç yerde geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Altı"
+          },
+          {
+            "id": "o2",
+            "text": "On bir"
+          },
+          {
+            "id": "o3",
+            "text": "Yirmi üç"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk üç"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On bir",
+        "explanation": "TDV Şuayb maddesi Hz. Şuayb'ın isminin Kur’an'da on bir yerde geçtiğini ayet referanslarıyla belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ŞUAYB",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suayb",
+            "locator": "Kur’an'da on bir yerde anılması",
+            "supports": "TDV Şuayb maddesi Hz. Şuayb'ın isminin Kur’an'da on bir yerde geçtiğini ayet referanslarıyla belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur’an'da Hz. Şuayb'ın adı kaç yerde geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Altı"
+          },
+          {
+            "id": "o2",
+            "text": "On bir"
+          },
+          {
+            "id": "o3",
+            "text": "Yirmi üç"
+          },
+          {
+            "id": "o4",
+            "text": "Kırk üç"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On bir",
+        "explanation": "TDV Şuayb maddesi Hz. Şuayb'ın isminin Kur’an'da on bir yerde geçtiğini ayet referanslarıyla belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ŞUAYB",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suayb",
+            "locator": "Kur’an'da on bir yerde anılması",
+            "supports": "TDV Şuayb maddesi Hz. Şuayb'ın isminin Kur’an'da on bir yerde geçtiğini ayet referanslarıyla belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 921,
+      "sourceSequence": 802,
+      "id": "q50-suayb-009",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Şuayb'a güzel konuşması sebebiyle verilen lakap hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zü'n-nûreyn"
+          },
+          {
+            "id": "o2",
+            "text": "Hatîbü'l-enbiyâ"
+          },
+          {
+            "id": "o3",
+            "text": "Seyfullah"
+          },
+          {
+            "id": "o4",
+            "text": "Emîrü'l-müminîn"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hatîbü'l-enbiyâ",
+        "explanation": "Bazı İslâmî kaynaklar Hz. Şuayb'ı sözünün güzelliği ve etkili tebliği nedeniyle 'peygamberlerin hatibi' anlamında hatîbü'l-enbiyâ diye anar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ŞUAYB",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suayb",
+            "locator": "Hatîbü'l-enbiyâ lakabı, rivayet",
+            "supports": "Bazı İslâmî kaynaklar Hz. Şuayb'ı sözünün güzelliği ve etkili tebliği nedeniyle 'peygamberlerin hatibi' anlamında hatîbü'l-enbiyâ diye anar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Şuayb'a güzel konuşması sebebiyle verilen lakap hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zü'n-nûreyn"
+          },
+          {
+            "id": "o2",
+            "text": "Hatîbü'l-enbiyâ"
+          },
+          {
+            "id": "o3",
+            "text": "Seyfullah"
+          },
+          {
+            "id": "o4",
+            "text": "Emîrü'l-müminîn"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hatîbü'l-enbiyâ",
+        "explanation": "Bazı İslâmî kaynaklar Hz. Şuayb'ı sözünün güzelliği ve etkili tebliği nedeniyle 'peygamberlerin hatibi' anlamında hatîbü'l-enbiyâ diye anar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ŞUAYB",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suayb",
+            "locator": "Hatîbü'l-enbiyâ lakabı, rivayet",
+            "supports": "Bazı İslâmî kaynaklar Hz. Şuayb'ı sözünün güzelliği ve etkili tebliği nedeniyle 'peygamberlerin hatibi' anlamında hatîbü'l-enbiyâ diye anar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 922,
+      "sourceSequence": 805,
+      "id": "q50-lut-012",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur’an'da meleklerin Hz. Lût'un yanına gelişleri hangi görünümde anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Dağ biçiminde"
+          },
+          {
+            "id": "o2",
+            "text": "Misafir insanlar gibi"
+          },
+          {
+            "id": "o3",
+            "text": "Gemi filosu olarak"
+          },
+          {
+            "id": "o4",
+            "text": "Ağaç suretinde"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Misafir insanlar gibi",
+        "explanation": "Hûd 11/77-81'de görevli meleklerin Hz. Lût'a misafir olarak geldiği; Hz. Lût'un da kavminin onlara zarar vermesinden endişe ettiği aktarılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — LÛT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/lut",
+            "locator": "Hûd 11/77, misafir elçiler",
+            "supports": "Hûd 11/77-81'de görevli meleklerin Hz. Lût'a misafir olarak geldiği; Hz. Lût'un da kavminin onlara zarar vermesinden endişe ettiği aktarılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur’an'da meleklerin Hz. Lût'un yanına gelişleri hangi görünümde anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Dağ biçiminde"
+          },
+          {
+            "id": "o2",
+            "text": "Misafir insanlar gibi"
+          },
+          {
+            "id": "o3",
+            "text": "Gemi filosu olarak"
+          },
+          {
+            "id": "o4",
+            "text": "Ağaç suretinde"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Misafir insanlar gibi",
+        "explanation": "Hûd 11/77-81'de görevli meleklerin Hz. Lût'a misafir olarak geldiği; Hz. Lût'un da kavminin onlara zarar vermesinden endişe ettiği aktarılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — LÛT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/lut",
+            "locator": "Hûd 11/77, misafir elçiler",
+            "supports": "Hûd 11/77-81'de görevli meleklerin Hz. Lût'a misafir olarak geldiği; Hz. Lût'un da kavminin onlara zarar vermesinden endişe ettiği aktarılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 923,
+      "sourceSequence": 808,
+      "id": "q50-lut-015",
+      "category": "peygamberler",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur’an kıssasında Hz. Lût'un ailesinden kim kurtulma istisnası dışında kalır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kızı"
+          },
+          {
+            "id": "o2",
+            "text": "Eşi"
+          },
+          {
+            "id": "o3",
+            "text": "Babası"
+          },
+          {
+            "id": "o4",
+            "text": "Yeğeni"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Eşi",
+        "explanation": "Hûd 11/81'de Hz. Lût'un ailesinin kurtarılacağı ancak eşinin helâk olanlardan olacağı bildirilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — LÛT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/lut",
+            "locator": "Hûd 11/81, eşinin istisna oluşu",
+            "supports": "Hûd 11/81'de Hz. Lût'un ailesinin kurtarılacağı ancak eşinin helâk olanlardan olacağı bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur’an kıssasında Hz. Lût'un ailesinden kim kurtulma istisnası dışında kalır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kızı"
+          },
+          {
+            "id": "o2",
+            "text": "Eşi"
+          },
+          {
+            "id": "o3",
+            "text": "Babası"
+          },
+          {
+            "id": "o4",
+            "text": "Yeğeni"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Eşi",
+        "explanation": "Hûd 11/81'de Hz. Lût'un ailesinin kurtarılacağı ancak eşinin helâk olanlardan olacağı bildirilir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — LÛT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/lut",
+            "locator": "Hûd 11/81, eşinin istisna oluşu",
+            "supports": "Hûd 11/81'de Hz. Lût'un ailesinin kurtarılacağı ancak eşinin helâk olanlardan olacağı bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 924,
+      "sourceSequence": 813,
+      "id": "q50-zekeriyya-020",
+      "category": "quran_dualar",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kalabalığa bağırarak"
+          },
+          {
+            "id": "o2",
+            "text": "Alçak sesle"
+          },
+          {
+            "id": "o3",
+            "text": "Bir mektup yazarak"
+          },
+          {
+            "id": "o4",
+            "text": "Bir elçi göndererek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Alçak sesle",
+        "explanation": "Meryem 19/3, Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle yalvardığını anlatır; Diyanet bu ifade üzerinden duanın tevazusunu vurgular.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+            "locator": "Meryem 19/3, alçak sesle yalvarış",
+            "supports": "Meryem 19/3, Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle yalvardığını anlatır; Diyanet bu ifade üzerinden duanın tevazusunu vurgular.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kalabalığa bağırarak"
+          },
+          {
+            "id": "o2",
+            "text": "Alçak sesle"
+          },
+          {
+            "id": "o3",
+            "text": "Bir mektup yazarak"
+          },
+          {
+            "id": "o4",
+            "text": "Bir elçi göndererek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Alçak sesle",
+        "explanation": "Meryem 19/3, Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle yalvardığını anlatır; Diyanet bu ifade üzerinden duanın tevazusunu vurgular.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+            "locator": "Meryem 19/3, alçak sesle yalvarış",
+            "supports": "Meryem 19/3, Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle yalvardığını anlatır; Diyanet bu ifade üzerinden duanın tevazusunu vurgular.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 925,
+      "sourceSequence": 815,
+      "id": "q50-zekeriyya-022",
+      "category": "peygamberler",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İki"
+          },
+          {
+            "id": "o2",
+            "text": "Altı"
+          },
+          {
+            "id": "o3",
+            "text": "On bir"
+          },
+          {
+            "id": "o4",
+            "text": "Yirmi yedi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Altı",
+        "explanation": "TDV Zekeriyyâ maddesi, onun adının Kur’an'ın altı yerinde zikredildiğini ve ilgili sûreleri belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+            "locator": "Kur’an'da altı defa anılması",
+            "supports": "TDV Zekeriyyâ maddesi, onun adının Kur’an'ın altı yerinde zikredildiğini ve ilgili sûreleri belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "İki"
+          },
+          {
+            "id": "o2",
+            "text": "Altı"
+          },
+          {
+            "id": "o3",
+            "text": "On bir"
+          },
+          {
+            "id": "o4",
+            "text": "Yirmi yedi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Altı",
+        "explanation": "TDV Zekeriyyâ maddesi, onun adının Kur’an'ın altı yerinde zikredildiğini ve ilgili sûreleri belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+            "locator": "Kur’an'da altı defa anılması",
+            "supports": "TDV Zekeriyyâ maddesi, onun adının Kur’an'ın altı yerinde zikredildiğini ve ilgili sûreleri belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 926,
+      "sourceSequence": 816,
+      "id": "q50-zekeriyya-023",
+      "category": "peygamberler",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Bir hadis rivayetine göre Hz. Zekeriyyâ hangi meslekle uğraşmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizcilik"
+          },
+          {
+            "id": "o2",
+            "text": "Marangozluk"
+          },
+          {
+            "id": "o3",
+            "text": "Maden dökümcülüğü"
+          },
+          {
+            "id": "o4",
+            "text": "Dokumacılık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Marangozluk",
+        "explanation": "TDV Zekeriyyâ maddesi, Müslim'de nakledilen bir hadise göre Zekeriyyâ'nın marangozluk yaptığını belirtir; bu bilgi Kur’an'da değil rivayet kaynağında yer alır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+            "locator": "Hadiste marangozluk rivayeti",
+            "supports": "TDV Zekeriyyâ maddesi, Müslim'de nakledilen bir hadise göre Zekeriyyâ'nın marangozluk yaptığını belirtir; bu bilgi Kur’an'da değil rivayet kaynağında yer alır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Bir hadis rivayetine göre Hz. Zekeriyyâ hangi meslekle uğraşmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizcilik"
+          },
+          {
+            "id": "o2",
+            "text": "Marangozluk"
+          },
+          {
+            "id": "o3",
+            "text": "Maden dökümcülüğü"
+          },
+          {
+            "id": "o4",
+            "text": "Dokumacılık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Marangozluk",
+        "explanation": "TDV Zekeriyyâ maddesi, Müslim'de nakledilen bir hadise göre Zekeriyyâ'nın marangozluk yaptığını belirtir; bu bilgi Kur’an'da değil rivayet kaynağında yer alır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+            "locator": "Hadiste marangozluk rivayeti",
+            "supports": "TDV Zekeriyyâ maddesi, Müslim'de nakledilen bir hadise göre Zekeriyyâ'nın marangozluk yaptığını belirtir; bu bilgi Kur’an'da değil rivayet kaynağında yer alır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 927,
+      "sourceSequence": 817,
+      "id": "q51-ensar-001",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ensarı oluşturan Medineli iki ana kabile hangileriydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kureyş ve Sakīf"
+          },
+          {
+            "id": "o2",
+            "text": "Evs ve Hazrec"
+          },
+          {
+            "id": "o3",
+            "text": "Temîm ve Tay"
+          },
+          {
+            "id": "o4",
+            "text": "Kindî ve Gassân"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Evs ve Hazrec",
+        "explanation": "TDV Ensar maddesinde ensarın Evs ve Hazrec kabilelerinden Müslüman olan Medineliler için kullanılan ad olduğu açıklanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Ensarın Evs ve Hazrec kabilelerinden oluşması",
+            "supports": "TDV Ensar maddesinde ensarın Evs ve Hazrec kabilelerinden Müslüman olan Medineliler için kullanılan ad olduğu açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ensarı oluşturan Medineli iki ana kabile hangileriydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kureyş ve Sakīf"
+          },
+          {
+            "id": "o2",
+            "text": "Evs ve Hazrec"
+          },
+          {
+            "id": "o3",
+            "text": "Temîm ve Tay"
+          },
+          {
+            "id": "o4",
+            "text": "Kindî ve Gassân"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Evs ve Hazrec",
+        "explanation": "TDV Ensar maddesinde ensarın Evs ve Hazrec kabilelerinden Müslüman olan Medineliler için kullanılan ad olduğu açıklanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Ensarın Evs ve Hazrec kabilelerinden oluşması",
+            "supports": "TDV Ensar maddesinde ensarın Evs ve Hazrec kabilelerinden Müslüman olan Medineliler için kullanılan ad olduğu açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 928,
+      "sourceSequence": 818,
+      "id": "q51-ensar-002",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ensar kelimesi Arapçadaki hangi kökten türemiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Salât (namaz)"
+          },
+          {
+            "id": "o2",
+            "text": "Nasr (yardım)"
+          },
+          {
+            "id": "o3",
+            "text": "Savm (oruç)"
+          },
+          {
+            "id": "o4",
+            "text": "Hicret (göç)"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nasr (yardım)",
+        "explanation": "Ensar sözü yardım etmek anlamındaki nasr kökünden gelir; TDV maddesi çoğul yapısını ve ensârî nisbesini açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Nasr kökü ve yardım anlamı",
+            "supports": "Ensar sözü yardım etmek anlamındaki nasr kökünden gelir; TDV maddesi çoğul yapısını ve ensârî nisbesini açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ensar kelimesi Arapçadaki hangi kökten türemiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Salât (namaz)"
+          },
+          {
+            "id": "o2",
+            "text": "Nasr (yardım)"
+          },
+          {
+            "id": "o3",
+            "text": "Savm (oruç)"
+          },
+          {
+            "id": "o4",
+            "text": "Hicret (göç)"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nasr (yardım)",
+        "explanation": "Ensar sözü yardım etmek anlamındaki nasr kökünden gelir; TDV maddesi çoğul yapısını ve ensârî nisbesini açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Nasr kökü ve yardım anlamı",
+            "supports": "Ensar sözü yardım etmek anlamındaki nasr kökünden gelir; TDV maddesi çoğul yapısını ve ensârî nisbesini açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 929,
+      "sourceSequence": 819,
+      "id": "q51-ensar-003",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ensar Kur’an'da hangi iki Tevbe sûresi âyetinde adıyla anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "9/1 ve 9/2"
+          },
+          {
+            "id": "o2",
+            "text": "9/100 ve 9/117"
+          },
+          {
+            "id": "o3",
+            "text": "9/29 ve 9/30"
+          },
+          {
+            "id": "o4",
+            "text": "9/80 ve 9/81"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "9/100 ve 9/117",
+        "explanation": "TDV Ensar maddesi, ensar isminin Tevbe 9/100 ile 9/117'de muhacirlerle birlikte yer aldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Tevbe 9/100 ve 9/117",
+            "supports": "TDV Ensar maddesi, ensar isminin Tevbe 9/100 ile 9/117'de muhacirlerle birlikte yer aldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ensar Kur’an'da hangi iki Tevbe sûresi âyetinde adıyla anılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "9/1 ve 9/2"
+          },
+          {
+            "id": "o2",
+            "text": "9/100 ve 9/117"
+          },
+          {
+            "id": "o3",
+            "text": "9/29 ve 9/30"
+          },
+          {
+            "id": "o4",
+            "text": "9/80 ve 9/81"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "9/100 ve 9/117",
+        "explanation": "TDV Ensar maddesi, ensar isminin Tevbe 9/100 ile 9/117'de muhacirlerle birlikte yer aldığını belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Tevbe 9/100 ve 9/117",
+            "supports": "TDV Ensar maddesi, ensar isminin Tevbe 9/100 ile 9/117'de muhacirlerle birlikte yer aldığını belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 930,
+      "sourceSequence": 820,
+      "id": "q51-ensar-004",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Evs ve Hazrec arasındaki son büyük Câhiliye dönemi çarpışması hangi adla bilinir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bedir Gazvesi"
+          },
+          {
+            "id": "o2",
+            "text": "Buâs Harbi"
+          },
+          {
+            "id": "o3",
+            "text": "Tebük Seferi"
+          },
+          {
+            "id": "o4",
+            "text": "Yermük Savaşı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Buâs Harbi",
+        "explanation": "TDV Ensar maddesi, iki kabile arasında İslâm öncesi dönemde yaşanan son büyük savaşın Buâs Harbi olduğunu kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Buâs Harbi",
+            "supports": "TDV Ensar maddesi, iki kabile arasında İslâm öncesi dönemde yaşanan son büyük savaşın Buâs Harbi olduğunu kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Evs ve Hazrec arasındaki son büyük Câhiliye dönemi çarpışması hangi adla bilinir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bedir Gazvesi"
+          },
+          {
+            "id": "o2",
+            "text": "Buâs Harbi"
+          },
+          {
+            "id": "o3",
+            "text": "Tebük Seferi"
+          },
+          {
+            "id": "o4",
+            "text": "Yermük Savaşı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Buâs Harbi",
+        "explanation": "TDV Ensar maddesi, iki kabile arasında İslâm öncesi dönemde yaşanan son büyük savaşın Buâs Harbi olduğunu kaydeder.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Buâs Harbi",
+            "supports": "TDV Ensar maddesi, iki kabile arasında İslâm öncesi dönemde yaşanan son büyük savaşın Buâs Harbi olduğunu kaydeder.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 931,
+      "sourceSequence": 821,
+      "id": "q51-ensar-005",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "İkinci Akabe Biatı'na TDV'nin anlatımında kaç Medineli katıldı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On iki"
+          },
+          {
+            "id": "o2",
+            "text": "Yetmiş beş"
+          },
+          {
+            "id": "o3",
+            "text": "Kırk"
+          },
+          {
+            "id": "o4",
+            "text": "Yüz elli"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetmiş beş",
+        "explanation": "TDV Ensar maddesine göre İkinci Akabe Biatı'na toplam yetmiş beş Medineli katılmış, Hz. Peygamber'i koruyacaklarına söz vermişlerdir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "İkinci Akabe Biatı'na katılanlar",
+            "supports": "TDV Ensar maddesine göre İkinci Akabe Biatı'na toplam yetmiş beş Medineli katılmış, Hz. Peygamber'i koruyacaklarına söz vermişlerdir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "İkinci Akabe Biatı'na TDV'nin anlatımında kaç Medineli katıldı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On iki"
+          },
+          {
+            "id": "o2",
+            "text": "Yetmiş beş"
+          },
+          {
+            "id": "o3",
+            "text": "Kırk"
+          },
+          {
+            "id": "o4",
+            "text": "Yüz elli"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetmiş beş",
+        "explanation": "TDV Ensar maddesine göre İkinci Akabe Biatı'na toplam yetmiş beş Medineli katılmış, Hz. Peygamber'i koruyacaklarına söz vermişlerdir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "İkinci Akabe Biatı'na katılanlar",
+            "supports": "TDV Ensar maddesine göre İkinci Akabe Biatı'na toplam yetmiş beş Medineli katılmış, Hz. Peygamber'i koruyacaklarına söz vermişlerdir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 932,
+      "sourceSequence": 822,
+      "id": "q51-ensar-006",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Birinci Akabe Biatı'nda Medineli heyet kaç kişiden oluşuyordu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Altı"
+          },
+          {
+            "id": "o2",
+            "text": "On iki"
+          },
+          {
+            "id": "o3",
+            "text": "Yetmiş beş"
+          },
+          {
+            "id": "o4",
+            "text": "Yüz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On iki",
+        "explanation": "TDV Ensar maddesi Birinci Akabe Biatı'na, onu Hazrec ve ikisi Evs mensubu toplam on iki kişinin geldiğini anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Birinci Akabe Biatı on iki kişi",
+            "supports": "TDV Ensar maddesi Birinci Akabe Biatı'na, onu Hazrec ve ikisi Evs mensubu toplam on iki kişinin geldiğini anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Birinci Akabe Biatı'nda Medineli heyet kaç kişiden oluşuyordu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Altı"
+          },
+          {
+            "id": "o2",
+            "text": "On iki"
+          },
+          {
+            "id": "o3",
+            "text": "Yetmiş beş"
+          },
+          {
+            "id": "o4",
+            "text": "Yüz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "On iki",
+        "explanation": "TDV Ensar maddesi Birinci Akabe Biatı'na, onu Hazrec ve ikisi Evs mensubu toplam on iki kişinin geldiğini anlatır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Birinci Akabe Biatı on iki kişi",
+            "supports": "TDV Ensar maddesi Birinci Akabe Biatı'na, onu Hazrec ve ikisi Evs mensubu toplam on iki kişinin geldiğini anlatır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 933,
+      "sourceSequence": 823,
+      "id": "q51-ensar-007",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ensar ve muhacir arasındaki geçici kardeşlik mirası hangi âyetle sona erdi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fîl 105/1"
+          },
+          {
+            "id": "o2",
+            "text": "Enfâl 8/75"
+          },
+          {
+            "id": "o3",
+            "text": "İhlâs 112/4"
+          },
+          {
+            "id": "o4",
+            "text": "Nûh 71/4"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Enfâl 8/75",
+        "explanation": "Kardeşlik akdinden doğan geçici miras uygulamasına Bedir'den sonra inen Enfâl 8/75 ile son verildiği TDV'de açıklanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Enfâl 8/75, miras düzenlemesi",
+            "supports": "Kardeşlik akdinden doğan geçici miras uygulamasına Bedir'den sonra inen Enfâl 8/75 ile son verildiği TDV'de açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ensar ve muhacir arasındaki geçici kardeşlik mirası hangi âyetle sona erdi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Fîl 105/1"
+          },
+          {
+            "id": "o2",
+            "text": "Enfâl 8/75"
+          },
+          {
+            "id": "o3",
+            "text": "İhlâs 112/4"
+          },
+          {
+            "id": "o4",
+            "text": "Nûh 71/4"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Enfâl 8/75",
+        "explanation": "Kardeşlik akdinden doğan geçici miras uygulamasına Bedir'den sonra inen Enfâl 8/75 ile son verildiği TDV'de açıklanır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Enfâl 8/75, miras düzenlemesi",
+            "supports": "Kardeşlik akdinden doğan geçici miras uygulamasına Bedir'den sonra inen Enfâl 8/75 ile son verildiği TDV'de açıklanır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 934,
+      "sourceSequence": 824,
+      "id": "q51-ensar-008",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ensar, muhacirlerin tarımsal geçimine destek olmak için özellikle hangi üründen paylaştı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Pamuk tarlalarından"
+          },
+          {
+            "id": "o2",
+            "text": "Hurma bahçelerinin ürünlerinden"
+          },
+          {
+            "id": "o3",
+            "text": "Zeytinyağı fabrikalarından"
+          },
+          {
+            "id": "o4",
+            "text": "Maden ocaklarından"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hurma bahçelerinin ürünlerinden",
+        "explanation": "Medineli ensarın hurma bahçelerinde çalışan muhacirlerin emeği karşılığında ürüne ortak olması, mülkiyetin ensarda kalması esasına dayanıyordu.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Hurma bahçelerinde emek ve ürün ortaklığı",
+            "supports": "Medineli ensarın hurma bahçelerinde çalışan muhacirlerin emeği karşılığında ürüne ortak olması, mülkiyetin ensarda kalması esasına dayanıyordu.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ensar, muhacirlerin tarımsal geçimine destek olmak için özellikle hangi üründen paylaştı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Pamuk tarlalarından"
+          },
+          {
+            "id": "o2",
+            "text": "Hurma bahçelerinin ürünlerinden"
+          },
+          {
+            "id": "o3",
+            "text": "Zeytinyağı fabrikalarından"
+          },
+          {
+            "id": "o4",
+            "text": "Maden ocaklarından"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hurma bahçelerinin ürünlerinden",
+        "explanation": "Medineli ensarın hurma bahçelerinde çalışan muhacirlerin emeği karşılığında ürüne ortak olması, mülkiyetin ensarda kalması esasına dayanıyordu.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — ENSAR",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/ensar",
+            "locator": "Hurma bahçelerinde emek ve ürün ortaklığı",
+            "supports": "Medineli ensarın hurma bahçelerinde çalışan muhacirlerin emeği karşılığında ürüne ortak olması, mülkiyetin ensarda kalması esasına dayanıyordu.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 935,
+      "sourceSequence": 826,
+      "id": "q51-muahat-010",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Muâhât hangi sosyal ihtiyaca özellikle cevap vermek için düzenlendi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mekke'ye yeni vergi koymak"
+          },
+          {
+            "id": "o2",
+            "text": "Yurtlarından ayrılan muhacirleri desteklemek"
+          },
+          {
+            "id": "o3",
+            "text": "Kervanların yolunu değiştirmek"
+          },
+          {
+            "id": "o4",
+            "text": "Denizcilik eğitimi vermek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yurtlarından ayrılan muhacirleri desteklemek",
+        "explanation": "Kardeşlik uygulaması Mekke'de evini ve malını bırakmış göçmenlerin maddî ve mânevî ihtiyaçlarını karşılamayı hedefliyordu.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Muhacirlerin yeni hayata uyumu",
+            "supports": "Kardeşlik uygulaması Mekke'de evini ve malını bırakmış göçmenlerin maddî ve mânevî ihtiyaçlarını karşılamayı hedefliyordu.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Muâhât hangi sosyal ihtiyaca özellikle cevap vermek için düzenlendi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Mekke'ye yeni vergi koymak"
+          },
+          {
+            "id": "o2",
+            "text": "Yurtlarından ayrılan muhacirleri desteklemek"
+          },
+          {
+            "id": "o3",
+            "text": "Kervanların yolunu değiştirmek"
+          },
+          {
+            "id": "o4",
+            "text": "Denizcilik eğitimi vermek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yurtlarından ayrılan muhacirleri desteklemek",
+        "explanation": "Kardeşlik uygulaması Mekke'de evini ve malını bırakmış göçmenlerin maddî ve mânevî ihtiyaçlarını karşılamayı hedefliyordu.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Muhacirlerin yeni hayata uyumu",
+            "supports": "Kardeşlik uygulaması Mekke'de evini ve malını bırakmış göçmenlerin maddî ve mânevî ihtiyaçlarını karşılamayı hedefliyordu.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 936,
+      "sourceSequence": 827,
+      "id": "q51-muahat-011",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "TDV'nin aktardığı yaygın rivayete göre Medine muâhâtında yaklaşık kaç kişi kardeşleştirildi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On"
+          },
+          {
+            "id": "o2",
+            "text": "Doksan-yüz"
+          },
+          {
+            "id": "o3",
+            "text": "Bin"
+          },
+          {
+            "id": "o4",
+            "text": "Beş yüz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Doksan-yüz",
+        "explanation": "Muâhât konusunda sayılar farklı rivayet edilse de TDV maddesi yaygın görüşün doksan ile yüz sahâbî arasında olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Rivayetlere göre 90-100 kişi",
+            "supports": "Muâhât konusunda sayılar farklı rivayet edilse de TDV maddesi yaygın görüşün doksan ile yüz sahâbî arasında olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "TDV'nin aktardığı yaygın rivayete göre Medine muâhâtında yaklaşık kaç kişi kardeşleştirildi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "On"
+          },
+          {
+            "id": "o2",
+            "text": "Doksan-yüz"
+          },
+          {
+            "id": "o3",
+            "text": "Bin"
+          },
+          {
+            "id": "o4",
+            "text": "Beş yüz"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Doksan-yüz",
+        "explanation": "Muâhât konusunda sayılar farklı rivayet edilse de TDV maddesi yaygın görüşün doksan ile yüz sahâbî arasında olduğunu belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Rivayetlere göre 90-100 kişi",
+            "supports": "Muâhât konusunda sayılar farklı rivayet edilse de TDV maddesi yaygın görüşün doksan ile yüz sahâbî arasında olduğunu belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 937,
+      "sourceSequence": 828,
+      "id": "q51-muahat-012",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Muâhâtta kardeşlik bağı kurulurken hangi eski Câhiliye uygulamasının yerine din kardeşliği vurgulandı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sa‘y"
+          },
+          {
+            "id": "o2",
+            "text": "Hilf"
+          },
+          {
+            "id": "o3",
+            "text": "Vakfe"
+          },
+          {
+            "id": "o4",
+            "text": "İtikâf"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hilf",
+        "explanation": "TDV Muâhât maddesi, eski Câhiliye ittifakları olan hilf anlayışının yerine Müslümanlar arasındaki kardeşliğin esas alındığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Hilf yerine din kardeşliği",
+            "supports": "TDV Muâhât maddesi, eski Câhiliye ittifakları olan hilf anlayışının yerine Müslümanlar arasındaki kardeşliğin esas alındığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Muâhâtta kardeşlik bağı kurulurken hangi eski Câhiliye uygulamasının yerine din kardeşliği vurgulandı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sa‘y"
+          },
+          {
+            "id": "o2",
+            "text": "Hilf"
+          },
+          {
+            "id": "o3",
+            "text": "Vakfe"
+          },
+          {
+            "id": "o4",
+            "text": "İtikâf"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Hilf",
+        "explanation": "TDV Muâhât maddesi, eski Câhiliye ittifakları olan hilf anlayışının yerine Müslümanlar arasındaki kardeşliğin esas alındığını açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Hilf yerine din kardeşliği",
+            "supports": "TDV Muâhât maddesi, eski Câhiliye ittifakları olan hilf anlayışının yerine Müslümanlar arasındaki kardeşliğin esas alındığını açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 938,
+      "sourceSequence": 830,
+      "id": "q51-muahat-014",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Muâhât sonrasında hukuken kaldırılan miras uygulamasının yerini hangi kalıcı değerler aldı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kabileler arası üstünlük"
+          },
+          {
+            "id": "o2",
+            "text": "Yardımlaşma ve öğütleşme"
+          },
+          {
+            "id": "o3",
+            "text": "Tek taraflı yükümlülük"
+          },
+          {
+            "id": "o4",
+            "text": "Ticarî zorunlu ortaklık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yardımlaşma ve öğütleşme",
+        "explanation": "Kardeşlik akdinin mirasa ilişkin hükmü sona ermiş olsa da yardımlaşma, destek olma ve öğütleşme ilişkileri devam etmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Miras sonrası devam eden dayanışma",
+            "supports": "Kardeşlik akdinin mirasa ilişkin hükmü sona ermiş olsa da yardımlaşma, destek olma ve öğütleşme ilişkileri devam etmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Muâhât sonrasında hukuken kaldırılan miras uygulamasının yerini hangi kalıcı değerler aldı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kabileler arası üstünlük"
+          },
+          {
+            "id": "o2",
+            "text": "Yardımlaşma ve öğütleşme"
+          },
+          {
+            "id": "o3",
+            "text": "Tek taraflı yükümlülük"
+          },
+          {
+            "id": "o4",
+            "text": "Ticarî zorunlu ortaklık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yardımlaşma ve öğütleşme",
+        "explanation": "Kardeşlik akdinin mirasa ilişkin hükmü sona ermiş olsa da yardımlaşma, destek olma ve öğütleşme ilişkileri devam etmiştir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Miras sonrası devam eden dayanışma",
+            "supports": "Kardeşlik akdinin mirasa ilişkin hükmü sona ermiş olsa da yardımlaşma, destek olma ve öğütleşme ilişkileri devam etmiştir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 939,
+      "sourceSequence": 832,
+      "id": "q51-muahat-016",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Muâhâta göre sahâbîlerden biri sefere çıkınca şehirde kalan kardeşin aileye ilişkin görevi neydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Savaşmak üzere mecburen ayrılmak"
+          },
+          {
+            "id": "o2",
+            "text": "Diğerinin ailesinin işleriyle ilgilenmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnızca vergi toplamak"
+          },
+          {
+            "id": "o4",
+            "text": "Mescidin kapısını kilitlemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Diğerinin ailesinin işleriyle ilgilenmek",
+        "explanation": "Kardeşlik uygulaması, askerî seferde bulunan sahâbînin ailesinin şehirde kalan kardeşi tarafından desteklenmesine yardımcı olmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Sefere çıkanın ailesine destek",
+            "supports": "Kardeşlik uygulaması, askerî seferde bulunan sahâbînin ailesinin şehirde kalan kardeşi tarafından desteklenmesine yardımcı olmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Muâhâta göre sahâbîlerden biri sefere çıkınca şehirde kalan kardeşin aileye ilişkin görevi neydi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Savaşmak üzere mecburen ayrılmak"
+          },
+          {
+            "id": "o2",
+            "text": "Diğerinin ailesinin işleriyle ilgilenmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnızca vergi toplamak"
+          },
+          {
+            "id": "o4",
+            "text": "Mescidin kapısını kilitlemek"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Diğerinin ailesinin işleriyle ilgilenmek",
+        "explanation": "Kardeşlik uygulaması, askerî seferde bulunan sahâbînin ailesinin şehirde kalan kardeşi tarafından desteklenmesine yardımcı olmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "Sefere çıkanın ailesine destek",
+            "supports": "Kardeşlik uygulaması, askerî seferde bulunan sahâbînin ailesinin şehirde kalan kardeşi tarafından desteklenmesine yardımcı olmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 940,
+      "sourceSequence": 833,
+      "id": "q51-suffe-017",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Suffe başlangıçta Mescid-i Nebevî'de hangi amaçla kurulmuştu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Devlet hazinesini saklamak"
+          },
+          {
+            "id": "o2",
+            "text": "Barınacak yeri olmayan sahâbîleri ağırlamak"
+          },
+          {
+            "id": "o3",
+            "text": "Silah üretmek"
+          },
+          {
+            "id": "o4",
+            "text": "Ticaret mallarını satmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Barınacak yeri olmayan sahâbîleri ağırlamak",
+        "explanation": "Suffe, Mescid-i Nebevî'nin yanında barınacak evi ve yakınları bulunmayan yoksul sahâbîlere ayrılan bir gölgelik olarak kurulmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "İlk barınma amacı",
+            "supports": "Suffe, Mescid-i Nebevî'nin yanında barınacak evi ve yakınları bulunmayan yoksul sahâbîlere ayrılan bir gölgelik olarak kurulmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Suffe başlangıçta Mescid-i Nebevî'de hangi amaçla kurulmuştu?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Devlet hazinesini saklamak"
+          },
+          {
+            "id": "o2",
+            "text": "Barınacak yeri olmayan sahâbîleri ağırlamak"
+          },
+          {
+            "id": "o3",
+            "text": "Silah üretmek"
+          },
+          {
+            "id": "o4",
+            "text": "Ticaret mallarını satmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Barınacak yeri olmayan sahâbîleri ağırlamak",
+        "explanation": "Suffe, Mescid-i Nebevî'nin yanında barınacak evi ve yakınları bulunmayan yoksul sahâbîlere ayrılan bir gölgelik olarak kurulmuştur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "İlk barınma amacı",
+            "supports": "Suffe, Mescid-i Nebevî'nin yanında barınacak evi ve yakınları bulunmayan yoksul sahâbîlere ayrılan bir gölgelik olarak kurulmuştur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 941,
+      "sourceSequence": 834,
+      "id": "q51-suffe-018",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Suffe sözcüğünün sözlükteki anlamı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kuyu"
+          },
+          {
+            "id": "o2",
+            "text": "Gölgelik"
+          },
+          {
+            "id": "o3",
+            "text": "Taş köprü"
+          },
+          {
+            "id": "o4",
+            "text": "Kütüphane"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Gölgelik",
+        "explanation": "TDV Suffe maddesi bu kelimenin gölgelik anlamına geldiğini ve Mescid-i Nebevî yakınındaki barınma yerine ad olduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Gölgelik anlamı",
+            "supports": "TDV Suffe maddesi bu kelimenin gölgelik anlamına geldiğini ve Mescid-i Nebevî yakınındaki barınma yerine ad olduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Suffe sözcüğünün sözlükteki anlamı nedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kuyu"
+          },
+          {
+            "id": "o2",
+            "text": "Gölgelik"
+          },
+          {
+            "id": "o3",
+            "text": "Taş köprü"
+          },
+          {
+            "id": "o4",
+            "text": "Kütüphane"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Gölgelik",
+        "explanation": "TDV Suffe maddesi bu kelimenin gölgelik anlamına geldiğini ve Mescid-i Nebevî yakınındaki barınma yerine ad olduğunu açıklar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Gölgelik anlamı",
+            "supports": "TDV Suffe maddesi bu kelimenin gölgelik anlamına geldiğini ve Mescid-i Nebevî yakınındaki barınma yerine ad olduğunu açıklar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 942,
+      "sourceSequence": 835,
+      "id": "q51-suffe-019",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Ashâb-ı Suffe'ye ihtiyaçlarının karşılanması nedeniyle hangi lakap verilmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zü'n-nûreyn"
+          },
+          {
+            "id": "o2",
+            "text": "Adyâfü'l-İslâm"
+          },
+          {
+            "id": "o3",
+            "text": "Seyfullah"
+          },
+          {
+            "id": "o4",
+            "text": "Hatîbü'l-enbiyâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Adyâfü'l-İslâm",
+        "explanation": "Ashâb-ı Suffe, ihtiyaçlarının Peygamber ve varlıklı sahâbîlerce giderilmesi dolayısıyla 'Müslümanların misafirleri' anlamındaki adyâfü'l-İslâm diye anılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Adyâfü'l-İslâm lakabı",
+            "supports": "Ashâb-ı Suffe, ihtiyaçlarının Peygamber ve varlıklı sahâbîlerce giderilmesi dolayısıyla 'Müslümanların misafirleri' anlamındaki adyâfü'l-İslâm diye anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Ashâb-ı Suffe'ye ihtiyaçlarının karşılanması nedeniyle hangi lakap verilmiştir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Zü'n-nûreyn"
+          },
+          {
+            "id": "o2",
+            "text": "Adyâfü'l-İslâm"
+          },
+          {
+            "id": "o3",
+            "text": "Seyfullah"
+          },
+          {
+            "id": "o4",
+            "text": "Hatîbü'l-enbiyâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Adyâfü'l-İslâm",
+        "explanation": "Ashâb-ı Suffe, ihtiyaçlarının Peygamber ve varlıklı sahâbîlerce giderilmesi dolayısıyla 'Müslümanların misafirleri' anlamındaki adyâfü'l-İslâm diye anılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Adyâfü'l-İslâm lakabı",
+            "supports": "Ashâb-ı Suffe, ihtiyaçlarının Peygamber ve varlıklı sahâbîlerce giderilmesi dolayısıyla 'Müslümanların misafirleri' anlamındaki adyâfü'l-İslâm diye anılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 943,
+      "sourceSequence": 836,
+      "id": "q51-suffe-020",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Kıblenin Kâbe'ye çevrilmesinden sonra Suffe gölgeliği mescidin hangi tarafına alındı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Güney"
+          },
+          {
+            "id": "o2",
+            "text": "Kuzey"
+          },
+          {
+            "id": "o3",
+            "text": "Doğu"
+          },
+          {
+            "id": "o4",
+            "text": "Batı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kuzey",
+        "explanation": "TDV Suffe maddesine göre başlangıçta mescidin güney tarafında bulunan gölgelik, kıble Kâbe'ye çevrilince kuzeye taşınmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Kıble değişiminden sonra kuzeye alınması",
+            "supports": "TDV Suffe maddesine göre başlangıçta mescidin güney tarafında bulunan gölgelik, kıble Kâbe'ye çevrilince kuzeye taşınmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Kıblenin Kâbe'ye çevrilmesinden sonra Suffe gölgeliği mescidin hangi tarafına alındı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Güney"
+          },
+          {
+            "id": "o2",
+            "text": "Kuzey"
+          },
+          {
+            "id": "o3",
+            "text": "Doğu"
+          },
+          {
+            "id": "o4",
+            "text": "Batı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kuzey",
+        "explanation": "TDV Suffe maddesine göre başlangıçta mescidin güney tarafında bulunan gölgelik, kıble Kâbe'ye çevrilince kuzeye taşınmıştır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Kıble değişiminden sonra kuzeye alınması",
+            "supports": "TDV Suffe maddesine göre başlangıçta mescidin güney tarafında bulunan gölgelik, kıble Kâbe'ye çevrilince kuzeye taşınmıştır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 944,
+      "sourceSequence": 837,
+      "id": "q51-suffe-021",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "TDV maddesinde Suffe'de aynı anda kalanlara ilişkin hangi sayı rivayet edilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Beş"
+          },
+          {
+            "id": "o2",
+            "text": "Yetmiş"
+          },
+          {
+            "id": "o3",
+            "text": "İki yüz"
+          },
+          {
+            "id": "o4",
+            "text": "Bin"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetmiş",
+        "explanation": "Suffe'de kalanların sayısı değişmekle birlikte kaynaklarda aynı anda yaklaşık yetmiş kişinin kaldığına dair rivayet bulunur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Suffe'de aynı anda yetmiş kişi rivayeti",
+            "supports": "Suffe'de kalanların sayısı değişmekle birlikte kaynaklarda aynı anda yaklaşık yetmiş kişinin kaldığına dair rivayet bulunur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "TDV maddesinde Suffe'de aynı anda kalanlara ilişkin hangi sayı rivayet edilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Beş"
+          },
+          {
+            "id": "o2",
+            "text": "Yetmiş"
+          },
+          {
+            "id": "o3",
+            "text": "İki yüz"
+          },
+          {
+            "id": "o4",
+            "text": "Bin"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Yetmiş",
+        "explanation": "Suffe'de kalanların sayısı değişmekle birlikte kaynaklarda aynı anda yaklaşık yetmiş kişinin kaldığına dair rivayet bulunur.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Suffe'de aynı anda yetmiş kişi rivayeti",
+            "supports": "Suffe'de kalanların sayısı değişmekle birlikte kaynaklarda aynı anda yaklaşık yetmiş kişinin kaldığına dair rivayet bulunur.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 945,
+      "sourceSequence": 838,
+      "id": "q51-suffe-022",
+      "category": "siyer_sahabe",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Suffe'deki eğitim faaliyetleri hangi iki konuya özellikle odaklanırdı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizcilik ve mühendislik"
+          },
+          {
+            "id": "o2",
+            "text": "Kur’an ve hadis öğrenimi"
+          },
+          {
+            "id": "o3",
+            "text": "At yarışı ve ticaret"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece mimarlık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kur’an ve hadis öğrenimi",
+        "explanation": "Suffe ehli, Resûlullah'ın derslerini dinliyor, Kur’an ve hadis öğreniyor; öğrendiklerini başka Müslümanlara aktarıyordu.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Kur’an ve hadis eğitimi",
+            "supports": "Suffe ehli, Resûlullah'ın derslerini dinliyor, Kur’an ve hadis öğreniyor; öğrendiklerini başka Müslümanlara aktarıyordu.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Suffe'deki eğitim faaliyetleri hangi iki konuya özellikle odaklanırdı?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizcilik ve mühendislik"
+          },
+          {
+            "id": "o2",
+            "text": "Kur’an ve hadis öğrenimi"
+          },
+          {
+            "id": "o3",
+            "text": "At yarışı ve ticaret"
+          },
+          {
+            "id": "o4",
+            "text": "Sadece mimarlık"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Kur’an ve hadis öğrenimi",
+        "explanation": "Suffe ehli, Resûlullah'ın derslerini dinliyor, Kur’an ve hadis öğreniyor; öğrendiklerini başka Müslümanlara aktarıyordu.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Kur’an ve hadis eğitimi",
+            "supports": "Suffe ehli, Resûlullah'ın derslerini dinliyor, Kur’an ve hadis öğreniyor; öğrendiklerini başka Müslümanlara aktarıyordu.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 946,
+      "sourceSequence": 839,
+      "id": "q51-suffe-023",
+      "category": "siyer_sahabe",
+      "difficulty": "hard",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Suffe'de yazı ve Kur’an öğretimi için görevlendirilen sahâbîlerden biri kimdi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Süheyl b. Amr"
+          },
+          {
+            "id": "o2",
+            "text": "Ubâde b. Sâmit"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Cehil"
+          },
+          {
+            "id": "o4",
+            "text": "Kisrâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ubâde b. Sâmit",
+        "explanation": "TDV Suffe maddesi Hz. Peygamber'in Suffe ehline yazı ve Kur’an öğretmek üzere Ubâde b. Sâmit gibi hocalar tayin ettiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Ubâde b. Sâmit'in öğretim görevi",
+            "supports": "TDV Suffe maddesi Hz. Peygamber'in Suffe ehline yazı ve Kur’an öğretmek üzere Ubâde b. Sâmit gibi hocalar tayin ettiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Suffe'de yazı ve Kur’an öğretimi için görevlendirilen sahâbîlerden biri kimdi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Süheyl b. Amr"
+          },
+          {
+            "id": "o2",
+            "text": "Ubâde b. Sâmit"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Cehil"
+          },
+          {
+            "id": "o4",
+            "text": "Kisrâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Ubâde b. Sâmit",
+        "explanation": "TDV Suffe maddesi Hz. Peygamber'in Suffe ehline yazı ve Kur’an öğretmek üzere Ubâde b. Sâmit gibi hocalar tayin ettiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Ubâde b. Sâmit'in öğretim görevi",
+            "supports": "TDV Suffe maddesi Hz. Peygamber'in Suffe ehline yazı ve Kur’an öğretmek üzere Ubâde b. Sâmit gibi hocalar tayin ettiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 947,
+      "sourceSequence": 840,
+      "id": "q51-suffe-024",
+      "category": "siyer_sahabe",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Hz. Peygamber kendisine gelen sadakaları Suffe ehli için nasıl değerlendirirdi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Biriktirip dağıtmazdı"
+          },
+          {
+            "id": "o2",
+            "text": "Tamamını onlara gönderirdi"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnızca yöneticilere ayırırdı"
+          },
+          {
+            "id": "o4",
+            "text": "Şehir dışına atardı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Tamamını onlara gönderirdi",
+        "explanation": "TDV Suffe maddesinde Resûlullah'ın kendisine getirilen sadakaları Suffe'de kalan ihtiyaç sahiplerine gönderdiği anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Sadakaların Suffe ehline gönderilmesi",
+            "supports": "TDV Suffe maddesinde Resûlullah'ın kendisine getirilen sadakaları Suffe'de kalan ihtiyaç sahiplerine gönderdiği anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Hz. Peygamber kendisine gelen sadakaları Suffe ehli için nasıl değerlendirirdi?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Biriktirip dağıtmazdı"
+          },
+          {
+            "id": "o2",
+            "text": "Tamamını onlara gönderirdi"
+          },
+          {
+            "id": "o3",
+            "text": "Yalnızca yöneticilere ayırırdı"
+          },
+          {
+            "id": "o4",
+            "text": "Şehir dışına atardı"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Tamamını onlara gönderirdi",
+        "explanation": "TDV Suffe maddesinde Resûlullah'ın kendisine getirilen sadakaları Suffe'de kalan ihtiyaç sahiplerine gönderdiği anlatılır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — SUFFE",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/suffe",
+            "locator": "Sadakaların Suffe ehline gönderilmesi",
+            "supports": "TDV Suffe maddesinde Resûlullah'ın kendisine getirilen sadakaları Suffe'de kalan ihtiyaç sahiplerine gönderdiği anlatılır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 948,
+      "sourceSequence": 841,
+      "id": "q52-vakif-001",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Vakıf kelimesi sözlükte hangi eylemle ilişkilidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hızla yürümek"
+          },
+          {
+            "id": "o2",
+            "text": "Durdurmak veya alıkoymak"
+          },
+          {
+            "id": "o3",
+            "text": "Deniz aşmak"
+          },
+          {
+            "id": "o4",
+            "text": "Bağırmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Durdurmak veya alıkoymak",
+        "explanation": "TDV Vakıf maddesi, vakf sözcüğünün durmak, durdurmak ve alıkoymak anlamlarından geldiğini; hukukta bir malın hayra tahsisini ifade ettiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — VAKIF",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Vakfın kelime anlamı",
+            "supports": "TDV Vakıf maddesi, vakf sözcüğünün durmak, durdurmak ve alıkoymak anlamlarından geldiğini; hukukta bir malın hayra tahsisini ifade ettiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Vakıf kelimesi sözlükte hangi eylemle ilişkilidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hızla yürümek"
+          },
+          {
+            "id": "o2",
+            "text": "Durdurmak veya alıkoymak"
+          },
+          {
+            "id": "o3",
+            "text": "Deniz aşmak"
+          },
+          {
+            "id": "o4",
+            "text": "Bağırmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Durdurmak veya alıkoymak",
+        "explanation": "TDV Vakıf maddesi, vakf sözcüğünün durmak, durdurmak ve alıkoymak anlamlarından geldiğini; hukukta bir malın hayra tahsisini ifade ettiğini belirtir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — VAKIF",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Vakfın kelime anlamı",
+            "supports": "TDV Vakıf maddesi, vakf sözcüğünün durmak, durdurmak ve alıkoymak anlamlarından geldiğini; hukukta bir malın hayra tahsisini ifade ettiğini belirtir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 949,
+      "sourceSequence": 842,
+      "id": "q52-vakif-002",
+      "category": "tarih_medeniyet",
+      "difficulty": "easy",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Vakıf işleminin temel amacı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir malı zorla ele geçirmek"
+          },
+          {
+            "id": "o2",
+            "text": "Bir malın yararını hayır işine tahsis etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Tüm malları ticarette satmak"
+          },
+          {
+            "id": "o4",
+            "text": "Vergiden kaçınmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir malın yararını hayır işine tahsis etmek",
+        "explanation": "Vakıf, malın sahibince dinî, toplumsal veya hayrî bir gaye için devamlı şekilde tahsis edilmesini sağlayan müessesedir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — VAKIF",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Hayır amacıyla kalıcı tahsis",
+            "supports": "Vakıf, malın sahibince dinî, toplumsal veya hayrî bir gaye için devamlı şekilde tahsis edilmesini sağlayan müessesedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Vakıf işleminin temel amacı hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Bir malı zorla ele geçirmek"
+          },
+          {
+            "id": "o2",
+            "text": "Bir malın yararını hayır işine tahsis etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Tüm malları ticarette satmak"
+          },
+          {
+            "id": "o4",
+            "text": "Vergiden kaçınmak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Bir malın yararını hayır işine tahsis etmek",
+        "explanation": "Vakıf, malın sahibince dinî, toplumsal veya hayrî bir gaye için devamlı şekilde tahsis edilmesini sağlayan müessesedir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — VAKIF",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Hayır amacıyla kalıcı tahsis",
+            "supports": "Vakıf, malın sahibince dinî, toplumsal veya hayrî bir gaye için devamlı şekilde tahsis edilmesini sağlayan müessesedir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    },
+    {
+      "sequence": 950,
+      "sourceSequence": 844,
+      "id": "q52-vakif-004",
+      "category": "tarih_medeniyet",
+      "difficulty": "medium",
+      "priorityFromRound1": false,
+      "before": {
+        "question": "Vakıf mütevellisinin işlemlerini denetleyen kişi veya kuruma ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sipahi"
+          },
+          {
+            "id": "o2",
+            "text": "Nâzır"
+          },
+          {
+            "id": "o3",
+            "text": "Müezzin"
+          },
+          {
+            "id": "o4",
+            "text": "Muhacir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nâzır",
+        "explanation": "TDV Vakıf maddesine göre nâzır, özellikle Osmanlı uygulamasında mütevellinin vakıfla ilgili işlerini gözeten ve ona danışmanlık yapabilen kişi veya organ için kullanılan addır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — VAKIF",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Mütevelli işlemlerini denetleyen nâzır",
+            "supports": "TDV Vakıf maddesine göre nâzır, özellikle Osmanlı uygulamasında mütevellinin vakıfla ilgili işlerini gözeten ve ona danışmanlık yapabilen kişi veya organ için kullanılan addır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "after": {
+        "question": "Vakıf mütevellisinin işlemlerini denetleyen kişi veya kuruma ne ad verilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Sipahi"
+          },
+          {
+            "id": "o2",
+            "text": "Nâzır"
+          },
+          {
+            "id": "o3",
+            "text": "Müezzin"
+          },
+          {
+            "id": "o4",
+            "text": "Muhacir"
+          }
+        ],
+        "correctOptionId": "o2",
+        "correctAnswer": "Nâzır",
+        "explanation": "TDV Vakıf maddesine göre nâzır, özellikle Osmanlı uygulamasında mütevellinin vakıfla ilgili işlerini gözeten ve ona danışmanlık yapabilen kişi veya organ için kullanılan addır.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi — VAKIF",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/vakif",
+            "locator": "Mütevelli işlemlerini denetleyen nâzır",
+            "supports": "TDV Vakıf maddesine göre nâzır, özellikle Osmanlı uygulamasında mütevellinin vakıfla ilgili işlerini gözeten ve ona danışmanlık yapabilen kişi veya organ için kullanılan addır.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-21"
+          }
+        ]
+      },
+      "automaticBefore": [],
+      "automaticAfter": [],
+      "semanticReview": "pending",
+      "decision": null,
+      "independentExpertApproval": false,
+      "publicationApproval": false
+    }
+  ]
+}

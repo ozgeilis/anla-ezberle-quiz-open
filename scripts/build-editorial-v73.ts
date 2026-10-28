@@ -10,10 +10,11 @@ import { questionSnapshot } from "./question-snapshot";
 import { qualityWarnings } from "./question-quality";
 import type { Question } from "../src/content/questions/model";
 const folder = "src/content/questions/editorial-v73";
-const lines = ["iman-edits.txt", "other-edits.txt"].flatMap((file) =>
-  readFileSync(`${folder}/${file}`, "utf8")
-    .split("\n")
-    .filter((l) => l && !l.startsWith("#")),
+const lines = ["iman-edits.txt", "other-edits.txt", "round2-edits.txt"].flatMap(
+  (file) =>
+    readFileSync(`${folder}/${file}`, "utf8")
+      .split("\n")
+      .filter((l) => l && !l.startsWith("#")),
 );
 const explanations: Record<string, string> = JSON.parse(
   readFileSync(`${folder}/explanations.json`, "utf8"),
@@ -26,6 +27,8 @@ interface Evidence {
   sourceSha256: string;
   humanApproval: boolean;
   claimParaphrase: string;
+  checkedAt?: string;
+  representation?: string;
 }
 const sources: Evidence[] = JSON.parse(
   readFileSync(`${folder}/sources.json`, "utf8"),
@@ -73,14 +76,14 @@ const candidate = questionsV72.map((q): Question => {
         locator: proof.locator,
         supports: proof.claimParaphrase,
         checkStatus: "supported",
-        checkedAt: "2026-10-27",
+        checkedAt: proof.checkedAt ?? "2026-10-27",
       },
     ],
     reviewStatus: "draft",
     reviewNotes:
       "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
     reviewedAt: undefined,
-    updatedAt: "2026-10-27",
+    updatedAt: proof.checkedAt ?? "2026-10-27",
   };
 });
 for (const id of edits.keys())

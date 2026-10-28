@@ -104,9 +104,18 @@
       {
         "kind": "length-outlier",
         "detail": "Tek belirgin uzun/kısa seçenek"
+      },
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
       }
     ],
-    "newFlags": []
+    "newFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "v9-general-006",
@@ -243,6 +252,10 @@
     "sourceStatus": "source-compared",
     "oldFlags": [
       {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
         "kind": "grammar-shape",
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
       }
@@ -315,7 +328,12 @@
     "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
-    "oldFlags": [],
+    "oldFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ],
     "newFlags": []
   },
   {
@@ -494,6 +512,10 @@
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
       },
       {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
+      },
+      {
         "kind": "domain-mismatch",
         "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
       }
@@ -542,7 +564,12 @@
     "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
-    "oldFlags": [],
+    "oldFlags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ],
     "newFlags": []
   },
   {
@@ -691,6 +718,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ],
     "newFlags": []
@@ -793,7 +824,12 @@
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
-    "newFlags": []
+    "newFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "learn-akaid-003",
@@ -848,7 +884,12 @@
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
-    "newFlags": []
+    "newFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "learn-akaid-001",
@@ -869,6 +910,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ],
     "newFlags": []
@@ -895,6 +940,10 @@
     "sourceStatus": "source-compared",
     "oldFlags": [],
     "newFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      },
       {
         "kind": "semantic-overlap",
         "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
@@ -943,7 +992,12 @@
     "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
-    "oldFlags": [],
+    "oldFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ],
     "newFlags": []
   },
   {
@@ -965,6 +1019,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ],
     "newFlags": []
@@ -985,7 +1043,12 @@
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
-    "newFlags": []
+    "newFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q43-mulk-8",
@@ -1015,6 +1078,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ],
     "newFlags": []
@@ -1061,6 +1128,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
@@ -1271,7 +1342,12 @@
     "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
-    "oldFlags": [],
+    "oldFlags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ],
     "newFlags": [
       {
         "kind": "grammar-shape",
@@ -1763,7 +1839,12 @@
     "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
-    "oldFlags": [],
+    "oldFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ],
     "newFlags": []
   },
   {
@@ -2073,6 +2154,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       }
     ],
     "newFlags": []
@@ -2400,7 +2485,12 @@
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
       }
     ],
-    "newFlags": []
+    "newFlags": [
+      {
+        "kind": "correct-prefix-outlier",
+        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      }
+    ]
   },
   {
     "id": "q65-hucurat-14",
@@ -2440,6 +2530,10 @@
       {
         "kind": "length-outlier",
         "detail": "Tek belirgin uzun/kısa seçenek"
+      },
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
       }
     ],
     "newFlags": []
@@ -2660,7 +2754,12 @@
     "reason": "Tahmin ipucunu azaltmak için konuya bağlı, dil/uzunluğu dengeli seçenekler ve gerektiğinde kesin kaynak bağlamı.",
     "humanApproval": false,
     "sourceStatus": "source-compared",
-    "oldFlags": [],
+    "oldFlags": [
+      {
+        "kind": "absolute-language",
+        "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      }
+    ],
     "newFlags": []
   },
   {
@@ -2841,6 +2940,10 @@
       {
         "kind": "absolute-language",
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      },
+      {
+        "kind": "three-restrictive-distractors",
+        "detail": "Üç yanlış seçenekte ortak sınırlayıcı/mutlaklık, doğru seçenekte yok; anlamsal inceleme gerekir"
       },
       {
         "kind": "domain-mismatch",
