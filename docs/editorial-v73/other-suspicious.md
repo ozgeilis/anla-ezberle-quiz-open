@@ -34,6 +34,7 @@ Uyarılar kesin kusur veya birden fazla doğru cevabın kanıtı değildir. Bu k
 |e150-general-035|tarih_medeniyet|Mahya geleneği özellikle hangi kültürde gelişmiştir?|domain-mismatch|
 |v7-quran-005|quran_dualar|Kadr sûresi 97/4'te bu gecede Allah'ın izniyle indikleri bildirilenler kimlerdir?|absolute-language|
 |v7-history-004|siyer_sahabe|Kaynaklarda 'Güçlük Seferi' diye de anılan gazve hangisidir?|semantic-overlap, semantic-overlap|
+|v7-general-002|fikih|Ramazan sonunda gücü yeten Müslümanın vermekle yükümlü olduğu sadakaya ne denir?|possible-synonyms|
 |v8-history-001|siyer_sahabe|Hz. Peygamber'in şairi olarak tanınan sahâbî kimdir?|semantic-overlap|
 |v9-quran-002|quran_dualar|Kureyş sûresinde Kureyşlilerin hangi iki mevsimde yaptıkları yolculuklar anılır?|semantic-overlap, semantic-overlap|
 |v9-quran-007|quran_dualar|Fecr sûresinin başında üzerine yemin edilen 'fecr' ne anlama gelir?|grammar-shape|

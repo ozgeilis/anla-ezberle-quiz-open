@@ -7,7 +7,10 @@ import { questionsV72 } from "../src/content/questions/questions-v72";
 import { questionsV73Candidate } from "../src/content/questions/questions-v73.candidate";
 import { approvedNewQuestionsV72 } from "../src/content/questions/release-v72-meaning";
 import { BANK_VERSION, questions } from "../src/content/questions";
-import { SUPPORTED_BANK_VERSIONS } from "../src/content/questions/registry";
+import {
+  SUPPORTED_BANK_VERSIONS,
+  historicalQuestion,
+} from "../src/content/questions/registry";
 import { createSession } from "../src/domain/game/engine";
 import { qualityWarnings } from "../scripts/question-quality";
 import summary from "../docs/editorial-v73/summary.json";
@@ -73,6 +76,25 @@ test("v73 stays unpublished; frozen v72 and historical registry are untouched; e
     ["--import", "tsx", "scripts/build-editorial-v73.ts", "--check"],
     { stdio: "pipe" },
   );
+});
+test("new candidate content revisions never reuse an occupied id/version from local v2–v72 snapshots", () => {
+  const revised = questionsV73Candidate.filter(
+    (q) => q.version !== original.get(q.id)!.version,
+  );
+  assert(revised.length > 0);
+  for (const bank of SUPPORTED_BANK_VERSIONS) {
+    // v1 predates the versioned Question model; its replay has separate tests.
+    if (bank === 1) continue;
+    for (const q of revised) {
+      const saved = historicalQuestion(bank, q.id);
+      if (!saved || !("version" in saved)) continue;
+      assert.notEqual(
+        saved.version,
+        q.version,
+        `${q.id}@${q.version} already belongs to bank ${bank}`,
+      );
+    }
+  }
 });
 test("answer positions use actual runtime shuffling, not the historically biased raw option array", () => {
   const counts = [0, 0, 0, 0];

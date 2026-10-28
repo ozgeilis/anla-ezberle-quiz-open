@@ -1,6 +1,6 @@
 # İkinci tur açık kontroller
 
-Bireysel inceleme bekleyen: **1128**. İncelenmiş ama bu tur kaynak karşılaştırması bekleyen: **43**. Bu liste yayın onayı değildir.
+Bireysel inceleme bekleyen: **879**. İncelenmiş ama bu tur kaynak karşılaştırması bekleyen: **106**. Bu liste yayın onayı değildir.
 
 ## Bloke kararlar
 
@@ -51,5 +51,68 @@ Bireysel inceleme bekleyen: **1128**. İncelenmiş ama bu tur kaynak karşılaş
 - pilot-history-004: [kaynak](https://islamansiklopedisi.org.tr/mekke) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
 - e150-history-003: [kaynak](https://islamansiklopedisi.org.tr/hicaz) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
 - e150-history-022: [kaynak](https://islamansiklopedisi.org.tr/uhud-gazvesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-history-030: [kaynak](https://islamansiklopedisi.org.tr/ebu-bekir) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-history-031: [kaynak](https://islamansiklopedisi.org.tr/omer) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-general-005: [kaynak](https://islamansiklopedisi.org.tr/sahur) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-general-028: [kaynak](https://islamansiklopedisi.org.tr/mina) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-general-029: [kaynak](https://islamansiklopedisi.org.tr/zemzem) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-general-034: [kaynak](https://islamansiklopedisi.org.tr/hat) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-quran-001: [kaynak](https://islamansiklopedisi.org.tr/tevbe-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-quran-002: [kaynak](https://islamansiklopedisi.org.tr/nahl-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-prophets-002: [kaynak](https://islamansiklopedisi.org.tr/yunus) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-prophets-005: [kaynak](https://islamansiklopedisi.org.tr/zemzem) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-history-002: [kaynak](https://islamansiklopedisi.org.tr/mute-savasi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-history-003: [kaynak](https://islamansiklopedisi.org.tr/hayber) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-history-005: [kaynak](https://islamansiklopedisi.org.tr/veda-hacci) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-general-001: [kaynak](https://islamansiklopedisi.org.tr/teravih) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v7-general-004: [kaynak](https://islamansiklopedisi.org.tr/akika) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-quran-004: [kaynak](https://islamansiklopedisi.org.tr/adiyat-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-quran-005: [kaynak](https://islamansiklopedisi.org.tr/fatiha-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-prophets-002: [kaynak](https://islamansiklopedisi.org.tr/ishak) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-history-002: [kaynak](https://islamansiklopedisi.org.tr/halid-b-velid) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-history-003: [kaynak](https://islamansiklopedisi.org.tr/faruk--omer) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-history-004: [kaynak](https://islamansiklopedisi.org.tr/uhud-gazvesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-history-005: [kaynak](https://islamansiklopedisi.org.tr/abdullah-b-abbas) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-general-002: [kaynak](https://islamansiklopedisi.org.tr/tilavet-secdesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-general-004: [kaynak](https://islamansiklopedisi.org.tr/zikir) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v8-general-005: [kaynak](https://islamansiklopedisi.org.tr/tesbih--allah) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-quran-001: [kaynak](https://islamansiklopedisi.org.tr/duha-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-prophets-001: [kaynak](https://islamansiklopedisi.org.tr/yakub) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-prophets-002: [kaynak](https://islamansiklopedisi.org.tr/bunyamin) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-prophets-003: [kaynak](https://islamansiklopedisi.org.tr/ismail--peygamber) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-001: [kaynak](https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-002: [kaynak](https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-003: [kaynak](https://islamansiklopedisi.org.tr/musab-b-umeyr) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-004: [kaynak](https://islamansiklopedisi.org.tr/ebu-zer-el-gifari) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-005: [kaynak](https://islamansiklopedisi.org.tr/abdurrahman-b-avf) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-006: [kaynak](https://islamansiklopedisi.org.tr/ebul-abbas-es-seffah) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-history-008: [kaynak](https://islamansiklopedisi.org.tr/beytulhikme) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-general-003: [kaynak](https://islamansiklopedisi.org.tr/vahiy) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v9-general-006: [kaynak](https://islamansiklopedisi.org.tr/takva) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-quran-001: [kaynak](https://islamansiklopedisi.org.tr/neml-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-quran-004: [kaynak](https://islamansiklopedisi.org.tr/ankebut-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-quran-008: [kaynak](https://islamansiklopedisi.org.tr/nur-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-history-001: [kaynak](https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-history-003: [kaynak](https://islamansiklopedisi.org.tr/ebu-ubeyde-b-cerrah) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-history-013: [kaynak](https://islamansiklopedisi.org.tr/eyup-sultan-kulliyesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-general-003: [kaynak](https://islamansiklopedisi.org.tr/vakfiye) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-general-004: [kaynak](https://islamansiklopedisi.org.tr/tevekkul) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-general-005: [kaynak](https://islamansiklopedisi.org.tr/sukur) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-general-006: [kaynak](https://islamansiklopedisi.org.tr/tovbe) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-general-007: [kaynak](https://islamansiklopedisi.org.tr/vaaz) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-general-013: [kaynak](https://islamansiklopedisi.org.tr/muderris) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-quran-001: [kaynak](https://islamansiklopedisi.org.tr/fatiha-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-quran-010: [kaynak](https://islamansiklopedisi.org.tr/cuma-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-003: [kaynak](https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-005: [kaynak](https://islamansiklopedisi.org.tr/kitab-i-bahriyye) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-006: [kaynak](https://islamansiklopedisi.org.tr/piri-reis) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-009: [kaynak](https://islamansiklopedisi.org.tr/ibn-battuta) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-010: [kaynak](https://islamansiklopedisi.org.tr/kesfuz-zunun) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-011: [kaynak](https://islamansiklopedisi.org.tr/sinan) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-history-012: [kaynak](https://islamansiklopedisi.org.tr/sinan) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-general-006: [kaynak](https://islamansiklopedisi.org.tr/muezzin) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v11-general-010: [kaynak](https://islamansiklopedisi.org.tr/sadirvan) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v12-history-006: [kaynak](https://islamansiklopedisi.org.tr/sahn-i-seman) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v12-history-007: [kaynak](https://islamansiklopedisi.org.tr/sahn-i-seman) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
 
 İncelenmemiş sorular ve her sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.

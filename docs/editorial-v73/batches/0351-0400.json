@@ -3,12 +3,12 @@
   "start": 351,
   "end": 400,
   "total": 50,
-  "individuallyReviewed": 20,
-  "pendingReview": 30,
-  "sourceComparedThisRound": 18,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 45,
   "blocked": 0,
   "flaggedBefore": 0,
-  "flaggedAfter": 1,
+  "flaggedAfter": 3,
   "records": [
     {
       "sequence": 351,
@@ -2253,37 +2253,63 @@
             "text": "Medine"
           },
           {
-            "id": "o2",
-            "text": "Mekke"
-          },
-          {
             "id": "o3",
-            "text": "Kûfe"
+            "text": "Tâif"
           },
           {
             "id": "o4",
-            "text": "Basra"
+            "text": "Hayber"
+          },
+          {
+            "id": "o2",
+            "text": "Mekke"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Mekke",
-        "explanation": "Hudeybiye, Mekke yakınlarında bulunan bir bölgedir.",
+        "explanation": "Hudeybiye, Mekke yakınlarında bulunan ve antlaşmaya adını veren bölgedir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
-            "locator": "Coğrafî konum",
-            "supports": "Hudeybiye, Mekke yakınlarında bulunan bir bölgedir.",
+            "locator": "Hudeybiye’nin Mekke sınırındaki yeri",
+            "supports": "Hudeybiye, Mekke yakınlarında bulunan ve antlaşmaya adını veren bölgedir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-024",
+        "reviewedCandidateSha256": "26c42d786fb7cea8de4e6f50973ed53bc8d907ab76636708c042ad8caed06780",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İki anakronik Irak şehri yerine dönemin yerleşimleri kullanıldı.",
+        "optionReview": {
+          "o1": "Ayrıldıkları şehir.",
+          "o3": "Dönemin başka şehri.",
+          "o4": "Dönemin başka yerleşimi.",
+          "o2": "Antlaşmanın yakınındaki şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+          "locator": "Hudeybiye’nin Mekke sınırındaki yeri",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "ee4a69384cfce068b572728f6766c4bd4bad01bbc4edee7339806c3f4e1b523d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2333,41 +2359,67 @@
         "question": "Hudeybiye Antlaşması'nın başlıca tarafları kimlerdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Müslümanlar ve Bizanslılar"
+            "id": "o2",
+            "text": "Medineli Müslümanlar ve Mekkeli Kureyşliler"
           },
           {
-            "id": "o2",
-            "text": "Medineli Müslümanlar ve Mekke Kureyşlileri"
+            "id": "o1",
+            "text": "Medineli Müslümanlar ve Hayberli Yahudiler"
           },
           {
             "id": "o3",
-            "text": "Müslümanlar ve Persler"
+            "text": "Mekkeli Kureyşliler ve Tâifli Sakīfliler"
           },
           {
             "id": "o4",
-            "text": "Evs ve Hazrec"
+            "text": "Medineli Müslümanlar ve Gassânî Araplar"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Medineli Müslümanlar ve Mekke Kureyşlileri",
-        "explanation": "Hudeybiye Antlaşması Müslümanlarla Mekkeli Kureyşliler arasında yapıldı.",
+        "correctAnswer": "Medineli Müslümanlar ve Mekkeli Kureyşliler",
+        "explanation": "Hudeybiye Antlaşması, Medine’deki müslümanlarla Mekke’deki Kureyş temsilcileri arasında yapıldı.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
-            "locator": "Antlaşmanın tarafları",
-            "supports": "Hudeybiye Antlaşması Müslümanlarla Mekkeli Kureyşliler arasında yapıldı.",
+            "locator": "69, 101–103. satırlar; iki siyasî taraf",
+            "supports": "Hudeybiye Antlaşması, Medine’deki müslümanlarla Mekke’deki Kureyş temsilcileri arasında yapıldı.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-025",
+        "reviewedCandidateSha256": "949f0b46c45f4560358bf6c5c828b6ca7553162f0104ca06f617dacbb080d9e3",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek uzun ve ayrıntılı şık giderildi; dört çağdaş topluluk çifti benzer biçimde sunuldu.",
+        "optionReview": {
+          "o2": "Kaynağın iki tarafı.",
+          "o1": "Farklı tarihî ilişkideki iki taraf.",
+          "o3": "Farklı iki kabile.",
+          "o4": "Farklı tarihî ilişkideki iki taraf."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+          "locator": "69, 101–103. satırlar; iki siyasî taraf",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "ee4a69384cfce068b572728f6766c4bd4bad01bbc4edee7339806c3f4e1b523d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2450,8 +2502,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-026",
+        "reviewedCandidateSha256": "8e0ecc0fcf72049037501fc03fdce9f1ed3b0d59c276a651a5b8184a0b1742c0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört tarih makul siyer dönüm noktaları; ilk biat yılı 621 kaynakta açık.",
+        "optionReview": {
+          "o1": "İlk vahiy yılı.",
+          "o2": "100. satırdaki yıl.",
+          "o3": "İkinci biat yılı.",
+          "o4": "Fetih yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+          "locator": "Dört tarih makul siyer dönüm noktaları; ilk biat yılı 621 kaynakta açık.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "5c47e06ab41e11877c113716a9906a0ec0fbb7c4ed2eb1038cfd539972675646"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2534,8 +2610,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-027",
+        "reviewedCandidateSha256": "7a179d5fbc6acf2391b979e8ae62264669364aec74f817b74f120fb627f6474e",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "İki Akabe biatı ayrı yıllarda; dört tarih aynı biçimde.",
+        "optionReview": {
+          "o1": "İlk biat yılı.",
+          "o2": "102. satırdaki yıl.",
+          "o3": "Bedir yılı.",
+          "o4": "Hudeybiye yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+          "locator": "İki Akabe biatı ayrı yıllarda; dört tarih aynı biçimde.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "5c47e06ab41e11877c113716a9906a0ec0fbb7c4ed2eb1038cfd539972675646"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2582,44 +2682,70 @@
         ]
       },
       "after": {
-        "question": "Birinci Akabe Biatı'nın ardından Medine'de Kur'an öğretmekle görevlendirilen sahâbî kimdir?",
+        "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ebû Hüreyre"
+            "id": "o4",
+            "text": "Bilâl b. Rebâh"
           },
           {
             "id": "o2",
-            "text": "Mus'ab b. Umeyr"
+            "text": "Mus‘ab b. Umeyr"
+          },
+          {
+            "id": "o1",
+            "text": "Abdullah b. Mes‘ûd"
           },
           {
             "id": "o3",
-            "text": "Hâlid b. Velîd"
-          },
-          {
-            "id": "o4",
-            "text": "Bilâl"
+            "text": "Zeyd b. Hârise"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Mus'ab b. Umeyr",
-        "explanation": "Mus'ab b. Umeyr Birinci Akabe Biatı'nın ardından Medine'ye öğretici olarak gönderilmiştir.",
+        "correctAnswer": "Mus‘ab b. Umeyr",
+        "explanation": "Mus‘ab b. Umeyr, Birinci Akabe Biatı’nın ardından Hz. Peygamber tarafından Medine’ye Kur’an ve İslâm’ı öğretmek üzere gönderildi.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-            "locator": "Medine'ye gönderilen öğretici",
-            "supports": "Mus'ab b. Umeyr Birinci Akabe Biatı'nın ardından Medine'ye öğretici olarak gönderilmiştir.",
+            "locator": "100. satır; Mus‘ab’ın öğretici olarak gönderilmesi",
+            "supports": "Mus‘ab b. Umeyr, Birinci Akabe Biatı’nın ardından Hz. Peygamber tarafından Medine’ye Kur’an ve İslâm’ı öğretmek üzere gönderildi.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-028",
+        "reviewedCandidateSha256": "12d148cae3db3479d01aefd31f31c93ea29549b1317d564cef7c7789664f91ca",
+        "disposition": "revised",
+        "defects": [
+          "anachronistic-distractor"
+        ],
+        "reason": "Daha sonra katılmış Ebû Hüreyre gibi kolay elenen çeldiriciler, aynı dönemin sahâbîleriyle değiştirildi. Dört ad benzer biçimde; soru belirli görev/teklif bilgisini gerektiriyor.",
+        "optionReview": {
+          "o4": "Dönemin sahâbîsi; bu görev/teklifin kaynakta anılan sahibi değil.",
+          "o2": "Kaynağın görevi/teklifi ilişkilendirdiği kişi.",
+          "o1": "Dönemin sahâbîsi; bu görev/teklifin kaynakta anılan sahibi değil.",
+          "o3": "Dönemin sahâbîsi; bu görev/teklifin kaynakta anılan sahibi değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+          "locator": "100. satır; Mus‘ab’ın öğretici olarak gönderilmesi",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "5c47e06ab41e11877c113716a9906a0ec0fbb7c4ed2eb1038cfd539972675646"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2666,44 +2792,70 @@
         ]
       },
       "after": {
-        "question": "İkinci Akabe Biatı'nda Medineliler Hz. Peygamber'i hangi şehre davet etmiştir?",
+        "question": "İkinci Akabe Biatı'na katılan Evs ve Hazrec mensupları, Hz. Peygamber'i hangi şehre davet etmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Taif"
+            "id": "o4",
+            "text": "Hayber"
           },
           {
             "id": "o2",
             "text": "Medine"
           },
           {
-            "id": "o3",
-            "text": "Kûfe"
+            "id": "o1",
+            "text": "Mekke"
           },
           {
-            "id": "o4",
-            "text": "Basra"
+            "id": "o3",
+            "text": "Tâif"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Medine",
-        "explanation": "Medineliler Hz. Peygamber'i Medine'ye davet etmişlerdir.",
+        "explanation": "İkinci Akabe Biatı’nda Evs ve Hazrec’e mensup müslümanlar Hz. Peygamber’i Medine’ye davet ederek koruma sözü verdiler.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-            "locator": "İkinci biatin amacı",
-            "supports": "Medineliler Hz. Peygamber'i Medine'ye davet etmişlerdir.",
+            "locator": "102–104. satırlar; Medine’ye davet",
+            "supports": "İkinci Akabe Biatı’nda Evs ve Hazrec’e mensup müslümanlar Hz. Peygamber’i Medine’ye davet ederek koruma sözü verdiler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-029",
+        "reviewedCandidateSha256": "9994c0144a04282497703d5252cba2b6ff63a1d4bc97f1b15ae4d8ea8e33a2f1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Medineliler sözcüğü kökten çıkarılarak cevap tekrarı giderildi; Basra/Kûfe yerine çağdaş yerler seçildi.",
+        "optionReview": {
+          "o4": "Başka yerleşim.",
+          "o2": "Davetin varış yeri.",
+          "o1": "Toplantının yapıldığı şehir.",
+          "o3": "Başka Hicaz şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+          "locator": "102–104. satırlar; Medine’ye davet",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "5c47e06ab41e11877c113716a9906a0ec0fbb7c4ed2eb1038cfd539972675646"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2786,8 +2938,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-030",
+        "reviewedCandidateSha256": "a6693765c392e64bda2f515b7fbeeb464235f5d94c5f7f6895bc5c3f8059f8a7",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört halife adı aynı biçimde; ilk halifelik sırasını bilmek gerekir.",
+        "optionReview": {
+          "o1": "İkinci halife.",
+          "o2": "İlk halife.",
+          "o3": "Üçüncü halife.",
+          "o4": "Dördüncü halife."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ebu-bekir",
+          "locator": "Hilâfetin başlangıcı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2870,8 +3044,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-031",
+        "reviewedCandidateSha256": "aa1ad2a75256f79c7394cee80ebba074d4f103d2669b1b2fe06d6f443489ba0a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört halife adı aynı türde; ikinci sıra bilgisi gerekir.",
+        "optionReview": {
+          "o1": "İlk halife.",
+          "o2": "İkinci halife.",
+          "o3": "Üçüncü halife.",
+          "o4": "Dördüncü halife."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/omer",
+          "locator": "Hilâfet sırası",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2921,41 +3117,67 @@
         "question": "Hz. Osman döneminde çoğaltılan Mushaf nüshaları hangi amaçla merkezlere gönderilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yeni sûre eklemek"
+            "id": "o4",
+            "text": "Âyetlerin kronolojik sırasını tespit etmek"
           },
           {
             "id": "o2",
-            "text": "Okuma birliğini korumak"
+            "text": "Bölgesel okuyuş ihtilâflarını gidermek"
+          },
+          {
+            "id": "o1",
+            "text": "Âyetlerin anlamını başka dillere aktarmak"
           },
           {
             "id": "o3",
-            "text": "Âyetleri azaltmak"
-          },
-          {
-            "id": "o4",
-            "text": "Sıralamayı rastgele değiştirmek"
+            "text": "Sûrelerin iniş sebeplerini belgelemek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Okuma birliğini korumak",
-        "explanation": "Hz. Osman döneminde Mushaf nüshaları okuma birliğine katkı için çoğaltılıp merkezlere gönderilmiştir.",
+        "correctAnswer": "Bölgesel okuyuş ihtilâflarını gidermek",
+        "explanation": "Hz. Osman, kıraat farklarından doğan tartışmaları önlemek amacıyla mushaf nüshalarını çoğalttırıp merkezlere gönderdi. Bu soru bütün kıraat farklılıklarının ortadan kaldırıldığını ileri sürmez.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/osman",
-            "locator": "Mushafların çoğaltılması",
-            "supports": "Hz. Osman döneminde Mushaf nüshaları okuma birliğine katkı için çoğaltılıp merkezlere gönderilmiştir.",
+            "locator": "173–174. satırlar; kıraat farklarının tartışmaya dönüşmesini önleme",
+            "supports": "Hz. Osman, kıraat farklarından doğan tartışmaları önlemek amacıyla mushaf nüshalarını çoğalttırıp merkezlere gönderdi. Bu soru bütün kıraat farklılıklarının ortadan kaldırıldığını ileri sürmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-033",
+        "reviewedCandidateSha256": "2ede6182b465fe36df1b4e89525b6578bace1a4583d0d301584b9dfebec344ac",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç açıkça yıkıcı işlem yerine dört olumlu Kur’an çalışması amacı kullanıldı.",
+        "optionReview": {
+          "o4": "Nüzûl sırasını belirleme çalışması.",
+          "o2": "173–174’teki tarihî amaç.",
+          "o1": "Meâl/tercüme çalışması.",
+          "o3": "Esbâb-ı nüzûl çalışması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/osman",
+          "locator": "173–174. satırlar; kıraat farklarının tartışmaya dönüşmesini önleme",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "1b850412e75d8aade490fad7e527269f7ab1a18bf5101c5c9f2bd1b5cbac7cbb"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3009,37 +3231,63 @@
             "text": "Mekke"
           },
           {
-            "id": "o2",
-            "text": "Medine"
-          },
-          {
             "id": "o3",
-            "text": "Bağdat"
+            "text": "Tâif"
           },
           {
             "id": "o4",
-            "text": "Kûfe"
+            "text": "Hayber"
+          },
+          {
+            "id": "o2",
+            "text": "Medine"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Medine",
-        "explanation": "Kıblenin Kâbe'ye çevrilmesi hicretten sonra Medine döneminde gerçekleşmiştir.",
+        "explanation": "Diyanet Kur’an Yolu Meali’nin Bakara 2/142 dipnotunda Hz. Peygamber’in Medine’de on altı-on yedi ay Kudüs’e yönelerek namaz kıldığı, ardından Kâbe’nin kıble olduğu anlatılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kible",
-            "locator": "Kıble değişimi",
-            "supports": "Kıblenin Kâbe'ye çevrilmesi hicretten sonra Medine döneminde gerçekleşmiştir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Bakara 2/142 dipnotu; PDF sayfa 28",
+            "supports": "Diyanet Kur’an Yolu Meali’nin Bakara 2/142 dipnotunda Hz. Peygamber’in Medine’de on altı-on yedi ay Kudüs’e yönelerek namaz kıldığı, ardından Kâbe’nin kıble olduğu anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-034",
+        "reviewedCandidateSha256": "2d77045259728be8169521a6872932a6a509e26d3738193d7aaacdfdf8f66894",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Bağdat/Kûfe anakronizmi yerine aynı dönem şehirleri kullanıldı.",
+        "optionReview": {
+          "o1": "Önceki ikamet şehri.",
+          "o3": "Başka yerleşim.",
+          "o4": "Başka yerleşim.",
+          "o2": "Dipnotta belirtilen dönem şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "Bakara 2/142 dipnotu; PDF sayfa 28",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3122,8 +3370,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-001",
+        "reviewedCandidateSha256": "0519fc9caff6edfb7be607af3634cef1bd1b70d2e175ecbcfe4420de5e85df60",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört oruç/Ramazan terimi; başlangıç sınırı imsakla belirlenir.",
+        "optionReview": {
+          "o1": "Bitiş.",
+          "o2": "Başlangıç sınırı.",
+          "o3": "Önceki öğün.",
+          "o4": "Bayram günü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/imsak",
+          "locator": "Dört oruç/Ramazan terimi; başlangıç sınırı imsakla belirlenir.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "3b61e839f374c8bd29abd0acbc9457ed222c7a91567e9580191453814113750a"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3206,8 +3478,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-002",
+        "reviewedCandidateSha256": "b92b429cc1197cc90b77373f3bc89215f284deaad0ce9052b0f26933e7e4791e",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gün içi zaman aynı türde; oruç bitişi gün batımıdır, saat keyfî verilmiyor.",
+        "optionReview": {
+          "o1": "Başlangıçtan sonraki zaman.",
+          "o2": "Günlük bitiş.",
+          "o3": "Gündüz ortası.",
+          "o4": "Bitişten sonraki zaman."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/imsak",
+          "locator": "Dört gün içi zaman aynı türde; oruç bitişi gün batımıdır, saat keyfî verilmiyor.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "3b61e839f374c8bd29abd0acbc9457ed222c7a91567e9580191453814113750a"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3290,8 +3586,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-003",
+        "reviewedCandidateSha256": "22bd6d31912e0bfd0f87016baa71c3e5c2d3a4d20c1c8ac91af7c7f83f54af12",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ay sıra sayısı; Ramazan dokuzuncu ay kaynak başlığında.",
+        "optionReview": {
+          "o1": "Receb sırası.",
+          "o2": "Ramazan sırası.",
+          "o3": "Şevval sırası.",
+          "o4": "Zilhicce sırası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ramazan",
+          "locator": "Dört ay sıra sayısı; Ramazan dokuzuncu ay kaynak başlığında.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "11c62f98a369ae4534e3dafc6a1e79728a5075a03acb79960af9f6efd5b8ef88"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3374,8 +3694,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-005",
+        "reviewedCandidateSha256": "7943030b9526a5bf8d94ac4aafb4ba990856216d221b07609a688c7809369218",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört öğün zamanı aynı dilde; imsak öncesi sahur belirleyici.",
+        "optionReview": {
+          "o1": "Oruç devam zamanı.",
+          "o2": "Sahurun zamanı.",
+          "o3": "Oruç devam zamanı.",
+          "o4": "İftar sınırı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/sahur",
+          "locator": "Sahur tanımı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3458,8 +3800,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-006",
+        "reviewedCandidateSha256": "deb1e6255802bdd880f3c673e88b1c1082eec3a3ec2fad4c746fce7ad5492542",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sure adı; 183–185’teki farz oruç düzenlemesi Bakara’ya ait.",
+        "optionReview": {
+          "o1": "Bu ayetlerin suresi değil.",
+          "o2": "2/183–185’in suresi.",
+          "o3": "Bu ayetlerin suresi değil.",
+          "o4": "Bu ayetlerin suresi değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "2/183; PDF sayfa 34 (1 tabanlı), basılı sayfa 33",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3506,44 +3872,70 @@
         ]
       },
       "after": {
-        "question": "Zekât esas olarak hangi alanla ilgili bir ibadettir?",
+        "question": "Zekât terimi, aşağıdaki malî ibadetlerden hangisini ifade eder?",
         "options": [
           {
             "id": "o1",
-            "text": "Yalnız dua okumak"
-          },
-          {
-            "id": "o2",
-            "text": "Maldan belirli pay ayırmak"
+            "text": "Kalıcı oruç mazereti için fidye vermek"
           },
           {
             "id": "o3",
-            "text": "Namazı kısaltmak"
+            "text": "Bozulan yemin için malî kefâret vermek"
           },
           {
             "id": "o4",
-            "text": "Mescit inşa etmek"
+            "text": "Adakla bir hayır harcaması üstlenmek"
+          },
+          {
+            "id": "o2",
+            "text": "Nisaba ulaşan maldan farz pay vermek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Maldan belirli pay ayırmak",
-        "explanation": "Zekât malî bir ibadettir.",
+        "correctAnswer": "Nisaba ulaşan maldan farz pay vermek",
+        "explanation": "Zekât, şartları oluştuğunda maldan belirlenmiş hak sahiplerine ayrılan farz paydır. Fidye, kefâret ve adakla üstlenilen harcama farklı sebeplere bağlı malî yükümlülüklerdir; soru kişisel yükümlülük hesabını konu almaz.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zekat",
-            "locator": "Zekâtın mali niteliği",
-            "supports": "Zekât malî bir ibadettir.",
+            "locator": "111–112. satırlar; dinen zengin müslümanın malından farz pay",
+            "supports": "Zekât, şartları oluştuğunda maldan belirlenmiş hak sahiplerine ayrılan farz paydır. Fidye, kefâret ve adakla üstlenilen harcama farklı sebeplere bağlı malî yükümlülüklerdir; soru kişisel yükümlülük hesabını konu almaz.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-007",
+        "reviewedCandidateSha256": "9ab65085af28bfcbccb270cc0a457757c249eb9012b1134d072a62112f278068",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ayrı ibadet alanı yerine dört gerçek malî dinî işlem kullanıldı; tek malî seçenek ipucu giderildi.",
+        "optionReview": {
+          "o1": "Fidye türü; zekât değil.",
+          "o3": "Yemin kefâreti; zekât değil.",
+          "o4": "Nezir türü; zekât değil.",
+          "o2": "Zekât tanımındaki pay."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zekat",
+          "locator": "111–112. satırlar; dinen zengin müslümanın malından farz pay",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "63a6db4cafe75e94ce590340e0ddb5b61c9c92751142f2e8897b39d62d711eaa"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3626,8 +4018,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-009",
+        "reviewedCandidateSha256": "ba09ecc9f25c85d67e2978ae7b1541f7a8c179455f0ea5c6dd1a0ee4581a3372",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sayı aynı biçimde; beş günlük farz vakit sayısı kaynakta açık.",
+        "optionReview": {
+          "o1": "Eksik vakit sayısı.",
+          "o2": "128 ve 138’deki sayı.",
+          "o3": "Eksik vakit sayısı.",
+          "o4": "Fazla vakit sayısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/namaz",
+          "locator": "Dört sayı aynı biçimde; beş günlük farz vakit sayısı kaynakta açık.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4ba75f5e45cc526abef32a8874dca1d1913bc5ffa20a1a2b05a3469b1e8a03ff"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3710,8 +4126,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-010",
+        "reviewedCandidateSha256": "81a843420e82d4fa5d98cb40a8106c77cf17aa24b8dd525cc5e8cf0e8b727627",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört namaz duruşu aynı türde; kıyamın ayakta oluşu kaynakta açık.",
+        "optionReview": {
+          "o1": "Eğilme.",
+          "o2": "174’teki ayakta duruş.",
+          "o3": "Yere kapanma.",
+          "o4": "Oturuş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/namaz",
+          "locator": "Dört namaz duruşu aynı türde; kıyamın ayakta oluşu kaynakta açık.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4ba75f5e45cc526abef32a8874dca1d1913bc5ffa20a1a2b05a3469b1e8a03ff"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3761,41 +4201,67 @@
         "question": "Namazda eğilme hareketi hangi adla bilinir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kıyam"
+            "id": "o3",
+            "text": "Secde"
+          },
+          {
+            "id": "o4",
+            "text": "Ka‘de"
           },
           {
             "id": "o2",
             "text": "Rükû"
           },
           {
-            "id": "o3",
-            "text": "Selâm"
-          },
-          {
-            "id": "o4",
-            "text": "Sahur"
+            "id": "o1",
+            "text": "Kıyam"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Rükû",
-        "explanation": "Rükû namazın eğilme bölümüdür.",
+        "explanation": "Rükû, namazda sırtın eller dizlere varacak derecede eğilmesidir. Kıyam ayakta durmayı, secde yere kapanmayı, ka‘de oturuşu ifade eder.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/namaz",
-            "locator": "Namazın rükünleri: rükû",
-            "supports": "Rükû namazın eğilme bölümüdür.",
+            "locator": "177–179. satırlar; rükû/secde/ka‘de tanımları",
+            "supports": "Rükû, namazda sırtın eller dizlere varacak derecede eğilmesidir. Kıyam ayakta durmayı, secde yere kapanmayı, ka‘de oturuşu ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-011",
+        "reviewedCandidateSha256": "37283024d4989ec921add64f0e8d2b4ec91495090e7f09f1f7316fc4c4737fe7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Namaz dışı sahur yerine aynı ibadetin dört beden duruşu kullanıldı.",
+        "optionReview": {
+          "o3": "Yere kapanış.",
+          "o4": "Oturuş.",
+          "o2": "Namazda eğilme.",
+          "o1": "Ayakta duruş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/namaz",
+          "locator": "177–179. satırlar; rükû/secde/ka‘de tanımları",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4ba75f5e45cc526abef32a8874dca1d1913bc5ffa20a1a2b05a3469b1e8a03ff"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3845,41 +4311,67 @@
         "question": "Namazda alın ve burnun yere konduğu bölüme ne denir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İhram"
+            "id": "o4",
+            "text": "Ka‘de"
           },
           {
             "id": "o2",
             "text": "Secde"
           },
           {
-            "id": "o3",
-            "text": "Tavaf"
+            "id": "o1",
+            "text": "Rükû"
           },
           {
-            "id": "o4",
-            "text": "İmsak"
+            "id": "o3",
+            "text": "Kıyam"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Secde",
-        "explanation": "Secde namazın yere kapanma bölümüdür.",
+        "explanation": "Secde, namazda yere kapanma bölümüdür. Soru organların asgari temasının mezheplere göre hükmünü değil duruşun adını sorar.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/namaz",
-            "locator": "Namazın rükünleri: secde",
-            "supports": "Secde namazın yere kapanma bölümüdür.",
+            "locator": "178–179 ve 205. satırlar; secde duruşu",
+            "supports": "Secde, namazda yere kapanma bölümüdür. Soru organların asgari temasının mezheplere göre hükmünü değil duruşun adını sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-012",
+        "reviewedCandidateSha256": "9fc2646dfe77ab9537f257a0950323b4094c01a5115a62e409f293072f59842f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İhram/tavaf/imsak yerine dört namaz duruşu getirildi.",
+        "optionReview": {
+          "o4": "Oturuş.",
+          "o2": "Yere kapanış.",
+          "o1": "Eğilme.",
+          "o3": "Ayakta duruş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/namaz",
+          "locator": "178–179 ve 205. satırlar; secde duruşu",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4ba75f5e45cc526abef32a8874dca1d1913bc5ffa20a1a2b05a3469b1e8a03ff"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3929,41 +4421,67 @@
         "question": "İslâm'ın ilk döneminde ezan uygulaması hangi şehirde başlamıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mekke"
+            "id": "o4",
+            "text": "Hayber"
           },
           {
             "id": "o2",
             "text": "Medine"
           },
           {
-            "id": "o3",
-            "text": "Bağdat"
+            "id": "o1",
+            "text": "Mekke"
           },
           {
-            "id": "o4",
-            "text": "Şam"
+            "id": "o3",
+            "text": "Tâif"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Medine",
-        "explanation": "Ezan namaza çağrı olarak Medine'de uygulanmaya başlanmıştır.",
+        "explanation": "Ezan, Hz. Peygamber’in Medine döneminde namaz vakitlerini duyurma yöntemi olarak uygulanmaya başladı. Başlangıç yılıyla ilgili rivayet farklılığı bu sorunun kapsamında değildir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ezan",
-            "locator": "Ezanın tarihçesi",
-            "supports": "Ezan namaza çağrı olarak Medine'de uygulanmaya başlanmıştır.",
+            "locator": "119–122. satırlar; Medine’de ezanın başlaması",
+            "supports": "Ezan, Hz. Peygamber’in Medine döneminde namaz vakitlerini duyurma yöntemi olarak uygulanmaya başladı. Başlangıç yılıyla ilgili rivayet farklılığı bu sorunun kapsamında değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-013",
+        "reviewedCandidateSha256": "34dcc237daef3093ab17b83d21654604ac7566cb728ebefacff7791f2f67c857",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Sonraki Bağdat kuruluşu yerine dönemin yerleşimleri kullanıldı.",
+        "optionReview": {
+          "o4": "Başka yerleşim.",
+          "o2": "Ezanın başladığı şehir.",
+          "o1": "Önceki ikamet.",
+          "o3": "Başka yerleşim."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ezan",
+          "locator": "119–122. satırlar; Medine’de ezanın başlaması",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "17e94849b769aa698cb058d0a29a19ab15b4883aaeea45e0b63c88347a6c77ed"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4046,8 +4564,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-014",
+        "reviewedCandidateSha256": "5c697b277a9de33d3b98b65c28389880ce4118d2febdb265e275c3dfafdfa930",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî tam adı yakın uzunlukta; Bilâl ilk müezzinlerden. Sadece tek ilk kişi diye genellenmiyor.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "121’de ezanı okuyan.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ezan",
+          "locator": "Dört sahâbî tam adı yakın uzunlukta; Bilâl ilk müezzinlerden. Sadece tek ilk kişi diye genellenmiyor.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "ce2d890f912a5d1297f388109150bddd533112ccf58b5a6510826d63dc1b6922"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4097,41 +4639,67 @@
         "question": "Namaz için yönelinen istikamete ne denir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İhram"
+            "id": "o4",
+            "text": "Minber"
           },
           {
             "id": "o2",
             "text": "Kıble"
           },
           {
-            "id": "o3",
-            "text": "Suffe"
+            "id": "o1",
+            "text": "Mihrap"
           },
           {
-            "id": "o4",
-            "text": "Miqat"
+            "id": "o3",
+            "text": "Saf"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Kıble",
-        "explanation": "Kıble Müslümanların namazda yöneldiği istikamettir.",
+        "explanation": "Kıble, namazda yönelinen istikamettir. Mihrap bu yönü belirten mimarî öğedir; yönün kendisine verilen ad değildir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kible",
-            "locator": "Kıble tanımı",
-            "supports": "Kıble Müslümanların namazda yöneldiği istikamettir.",
+            "locator": "Kıble terim tanımı",
+            "supports": "Kıble, namazda yönelinen istikamettir. Mihrap bu yönü belirten mimarî öğedir; yönün kendisine verilen ad değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-015",
+        "reviewedCandidateSha256": "c674e77fb8a773f5985bf23df160ad5ad72b68d5a90a8f8ec9c0460528c3e73b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Suffe/mîkāt/ihram yerine namaz mekânıyla ilgili yakın terimler kullanıldı.",
+        "optionReview": {
+          "o4": "Hutbe basamakları.",
+          "o2": "Yönün terim adı.",
+          "o1": "Yönü gösteren mimarî öğe.",
+          "o3": "Cemaat dizisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kible",
+          "locator": "Kıble terim tanımı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6892c37a352ff942e960bd7eee6bf091a3936960bc4ee8770d21963dfa561a23"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4178,44 +4746,75 @@
         ]
       },
       "after": {
-        "question": "Mihrap caminin hangi yönündeki duvarda yer alır?",
+        "question": "Bir camide ana mihrabın genellikle bulunduğu duvar hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Giriş kapısının üstü"
-          },
-          {
-            "id": "o2",
-            "text": "Kıble yönündeki duvar"
-          },
-          {
             "id": "o3",
-            "text": "Avlu duvarı"
+            "text": "Kıblenin sağındaki yan duvarda"
           },
           {
             "id": "o4",
-            "text": "Minarenin içi"
+            "text": "Kıblenin solundaki yan duvarda"
+          },
+          {
+            "id": "o2",
+            "text": "Kıble duvarında"
+          },
+          {
+            "id": "o1",
+            "text": "Kıblenin karşısındaki duvarda"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kıble yönündeki duvar",
-        "explanation": "Mihrap caminin kıble duvarında yer alır.",
+        "correctAnswer": "Kıble duvarında",
+        "explanation": "Ana mihrap genellikle caminin kıble duvarında bulunur. Büyük yapılarda başka mihrapların da bulunabilmesi bu genel yerleşim bilgisinden ayrıdır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mihrap",
-            "locator": "Mihrap ve kıble duvarı",
-            "supports": "Mihrap caminin kıble duvarında yer alır.",
+            "locator": "105–108. satırlar; ana mihrabın genellikle kıble duvarında olması",
+            "supports": "Ana mihrap genellikle caminin kıble duvarında bulunur. Büyük yapılarda başka mihrapların da bulunabilmesi bu genel yerleşim bilgisinden ayrıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-017",
+        "reviewedCandidateSha256": "35c9760eccc38b73a5a8fe60de61e6b3260ca1ce8c0a58d76e46174ea2e34a7d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Minare içi/kapı üstü gibi farklı nesne/konum yapısı giderildi; dört duvar konumu aynı dilde verildi. Genellikle kaydı istisnaları dışlamaz.",
+        "optionReview": {
+          "o3": "Yan duvar; genel yerleşim değil.",
+          "o4": "Yan duvar; genel yerleşim değil.",
+          "o2": "107’deki genel yerleşim.",
+          "o1": "Karşı duvar; genel yerleşim değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mihrap",
+          "locator": "105–108. satırlar; ana mihrabın genellikle kıble duvarında olması",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "1b850412e75d8aade490fad7e527269f7ab1a18bf5101c5c9f2bd1b5cbac7cbb"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4298,8 +4897,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-018",
+        "reviewedCandidateSha256": "1df081ae13e979e468691640357d0c8dac95ab020cf25e0fbc437d432a089496",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört dinî görev/sıfat; hutbeyi okuyan hatip belirli.",
+        "optionReview": {
+          "o1": "Ezan görevlisi.",
+          "o2": "Minberde hutbe okuyan.",
+          "o3": "Ezber sıfatı.",
+          "o4": "Yorumcu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/minber",
+          "locator": "Dört dinî görev/sıfat; hutbeyi okuyan hatip belirli.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "63a6db4cafe75e94ce590340e0ddb5b61c9c92751142f2e8897b39d62d711eaa"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4382,8 +5005,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-019",
+        "reviewedCandidateSha256": "4c59e1271f0f97eb6aee59b6c83a60a16a6938c7c8817847468db927876eef64",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört beden bölümü aynı türde. Saçta mesh ile yüzde yıkama ayrımı gerekir, omuz/sırt gusülle ilişkilidir.",
+        "optionReview": {
+          "o1": "Saçta mesh/yıkama ayrımı.",
+          "o2": "122’de yıkanan yüz.",
+          "o3": "Gusülle ilişkili başka bölüm.",
+          "o4": "Gusülle ilişkili başka bölüm."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdest",
+          "locator": "Dört beden bölümü aynı türde. Saçta mesh ile yüzde yıkama ayrımı gerekir, omuz/sırt gusülle ilişkilidir.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "a095b13aaede09cd85e09d9aab30e23de67de2d9c44dee18e737486b70ab9608"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4430,44 +5077,70 @@
         ]
       },
       "after": {
-        "question": "Su bulunmadığında belirli şartlarda yapılan toprakla temizlik hangisidir?",
+        "question": "Abdest veya gusül yapılamadığında, temiz toprak cinsiyle yüz ve kolların meshedildiği hükmî temizlik hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Tavaf"
+            "text": "Gusül"
+          },
+          {
+            "id": "o3",
+            "text": "Mesh"
+          },
+          {
+            "id": "o4",
+            "text": "İstincâ"
           },
           {
             "id": "o2",
             "text": "Teyemmüm"
-          },
-          {
-            "id": "o3",
-            "text": "İtikâf"
-          },
-          {
-            "id": "o4",
-            "text": "Teravih"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Teyemmüm",
-        "explanation": "Teyemmüm uygun şartlarda su yerine temiz toprak cinsinden maddeyle yapılır.",
+        "explanation": "Teyemmüm, abdest alınamadığı veya gusül yapılamadığı durumlarda temiz toprak ya da yer cinsinden maddeyle yüzü ve kolları meshetmektir. Her su yokluğu otomatik ruhsat sayılmaz; gerekli şartlar saklıdır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/teyemmum",
-            "locator": "Teyemmüm tanımı",
-            "supports": "Teyemmüm uygun şartlarda su yerine temiz toprak cinsinden maddeyle yapılır.",
+            "locator": "71. satır; abdest/gusül yerine yüz ve kolların meshi",
+            "supports": "Teyemmüm, abdest alınamadığı veya gusül yapılamadığı durumlarda temiz toprak ya da yer cinsinden maddeyle yüzü ve kolları meshetmektir. Her su yokluğu otomatik ruhsat sayılmaz; gerekli şartlar saklıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-020",
+        "reviewedCandidateSha256": "a6deab734f74b24f709d7643b45f36dd6401ef76c1609c10a9252469f69e9ce2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilgisiz ibadet yerine dört temizlik terimi kullanıldı; taşla istincâ ile örtüşmemesi için abdest/gusül yerine ve yüz/kollar bağlamı kesinleştirildi.",
+        "optionReview": {
+          "o1": "Su ile beden temizliği.",
+          "o3": "Genel meshetme işlemi; burada bütün özel temizliğin adı değil.",
+          "o4": "Necaseti giderme; bu hükmî temizlik değil.",
+          "o2": "Abdest/gusül yerine bu yüz/kol temizliği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/teyemmum",
+          "locator": "71. satır; abdest/gusül yerine yüz ve kolların meshi",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "1b850412e75d8aade490fad7e527269f7ab1a18bf5101c5c9f2bd1b5cbac7cbb"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4550,8 +5223,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-021",
+        "reviewedCandidateSha256": "03d9cdef98d107e11ab4f872a8af7521cb2245f1d1be070d016347f9b7f8e3da",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört dinî tarih şehri, hac mekânlarının Mekke çevresinde bulunması belirli.",
+        "optionReview": {
+          "o1": "Ziyaret edilebilen başka şehir.",
+          "o2": "Hac merkezi.",
+          "o3": "Başka kutsal şehir.",
+          "o4": "Başka tarihî şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hac",
+          "locator": "Dört dinî tarih şehri, hac mekânlarının Mekke çevresinde bulunması belirli.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "ed1084ea31b2df901ff5ff4ddec513c6dac82fde687973bb77690f0e5929d31b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4601,41 +5298,67 @@
         "question": "Hac ve umrede belli yasakların başladığı özel hâle ne ad verilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İftar"
-          },
-          {
             "id": "o2",
             "text": "İhram"
           },
           {
+            "id": "o1",
+            "text": "Tavaf"
+          },
+          {
             "id": "o3",
-            "text": "Teravih"
+            "text": "Sa‘y"
           },
           {
             "id": "o4",
-            "text": "Zekât"
+            "text": "Vakfe"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "İhram",
-        "explanation": "İhram, hac ve umreyle ilişkili özel ibadet hâlidir.",
+        "explanation": "İhram, hac veya umreye niyet eden kişinin belirli yasak ve kısıtlamalara girdiği özel hâldir; yalnız kıyafetin adı olarak düşünülmemelidir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ihram",
-            "locator": "İhram tanımı",
-            "supports": "İhram, hac ve umreyle ilişkili özel ibadet hâlidir.",
+            "locator": "71 ve 96–102. satırlar; hac/umre yasaklarına giriş",
+            "supports": "İhram, hac veya umreye niyet eden kişinin belirli yasak ve kısıtlamalara girdiği özel hâldir; yalnız kıyafetin adı olarak düşünülmemelidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-022",
+        "reviewedCandidateSha256": "99ff19b9e0f95e7b7d9d4701fdf39ebd438beffb6ceca9461e233b7f41bf8399",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İftar/teravih/zekât yerine dört hac terimi getirildi.",
+        "optionReview": {
+          "o2": "Özel yasaklara giriş hâli.",
+          "o1": "Kâbe çevresinde dolaşma.",
+          "o3": "Safâ–Merve gidiş gelişi.",
+          "o4": "Belirli yerde bekleyiş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihram",
+          "locator": "71 ve 96–102. satırlar; hac/umre yasaklarına giriş",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "7b0122e3ee8e8bbdc631bd56bcc6151ce1f60d2272b1b726827cfa775b4f60f0"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4682,44 +5405,91 @@
         ]
       },
       "after": {
-        "question": "Tavafta şavtların başlangıç ve bitiş hizasında hangi taş bulunur?",
+        "question": "Tavaftaki her şavtın başlangıç ve bitişi Kâbe'nin hangi köşesi hizasındadır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Makam-ı İbrâhim taşı"
+            "id": "o4",
+            "text": "Irak köşesi"
           },
           {
             "id": "o2",
-            "text": "Hacerülesved"
+            "text": "Hacerülesved köşesi"
+          },
+          {
+            "id": "o1",
+            "text": "Yemen köşesi"
           },
           {
             "id": "o3",
-            "text": "Safa taşı"
-          },
-          {
-            "id": "o4",
-            "text": "Merve taşı"
+            "text": "Şam köşesi"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hacerülesved",
-        "explanation": "Tavafta her şavt Hacerülesved hizasından başlar ve orada tamamlanır.",
+        "correctAnswer": "Hacerülesved köşesi",
+        "explanation": "Tavafın her şavtı Hacerülesved’in bulunduğu köşe hizasında başlar ve tamamlanır. Kâbe’nin diğer köşelerine ilişkin coğrafî adlandırmalar kaynaklarda değişebilse de başlangıç noktası Hacerülesved’dir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/tavaf",
-            "locator": "Tavafta Hacerülesved köşesi",
-            "supports": "Tavafta her şavt Hacerülesved hizasından başlar ve orada tamamlanır.",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/kabe",
+            "locator": "119–121. satırlar; köşeler ve Hacerülesved başlangıcı",
+            "supports": "Tavafın her şavtı Hacerülesved’in bulunduğu köşe hizasında başlar ve tamamlanır. Kâbe’nin diğer köşelerine ilişkin coğrafî adlandırmalar kaynaklarda değişebilse de başlangıç noktası Hacerülesved’dir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-general-023",
+        "reviewedCandidateSha256": "927a65223fedb6ce460aebfac0de7993f3fcfe16d0ff5034199f32f927eb1ecb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Safâ/Merve taşı gibi standart olmayan adlar yerine Kâbe’nin dört köşesi seçildi. Yön adlandırmasındaki kaynak farklılıkları doğru köşeyi değiştirmez.",
+        "optionReview": {
+          "o4": "Başlangıç değil.",
+          "o2": "121’deki başlangıç/bitiş.",
+          "o1": "Başlangıç değil.",
+          "o3": "Başlangıç değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kabe",
+          "locator": "119–121. satırlar; köşeler ve Hacerülesved başlangıcı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4ba75f5e45cc526abef32a8874dca1d1913bc5ffa20a1a2b05a3469b1e8a03ff"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

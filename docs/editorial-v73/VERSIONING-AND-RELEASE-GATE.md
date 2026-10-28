@@ -11,6 +11,8 @@ Bu dal içerik adayıdır; aktif banka sürümü 72’dir. `questions-v72.ts`, v
 
 Bunlar depodaki şema/exporter incelemesidir. Bu görevde canlı Supabase’e bağlanılmadı; orada yeni sürüm anahtarı için boşluk bulunduğu iddia edilmiyor.
 
+Yerel v2–v72 arşivleri ayrıca adayda değişen soruların `(id, version)` kimlikleriyle karşılaştırılır. `editorial-v73.test.ts` bu kimliklerden biri herhangi bir eski snapshot’ta kullanılmışsa başarısız olur. Bu kontrol noktasındaki 548 yeni içerik sürümünde yerel çakışma yoktur. Bu test canlı tabloları kontrol etmez; yayından önce aşağıdaki salt okunur hedef denetimi yine zorunludur. v1’in farklı eski veri modeli ve kayıt gösterimi ayrı geçmiş regresyon testleriyle korunur.
+
 ## Ayrı yayın PR’ında gereken strateji
 
 1. Düzenlenen her soru mevcut v72 soru sürümünden bir yüksek içerik sürümüyle hazırlanır. Bu dalın henüz yayımlanmayan v73 revizyonları aynı aday kimliği altında gelişebilir; yayımlanmış bir içerik sürümü bu şekilde değiştirilemez.

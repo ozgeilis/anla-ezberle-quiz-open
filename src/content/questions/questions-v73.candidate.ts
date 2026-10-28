@@ -7225,7 +7225,7 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-history-024",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "easy",
     "question": "Hudeybiye Antlaşması hangi şehir yakınında yapılmıştır?",
@@ -7235,77 +7235,79 @@ export const questionsV73Candidate: readonly Question[] = [
         "text": "Medine"
       },
       {
-        "id": "o2",
-        "text": "Mekke"
-      },
-      {
         "id": "o3",
-        "text": "Kûfe"
+        "text": "Tâif"
       },
       {
         "id": "o4",
-        "text": "Basra"
+        "text": "Hayber"
+      },
+      {
+        "id": "o2",
+        "text": "Mekke"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hudeybiye, Mekke yakınlarında bulunan bir bölgedir.",
+    "explanation": "Hudeybiye, Mekke yakınlarında bulunan ve antlaşmaya adını veren bölgedir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
-        "locator": "Coğrafî konum",
-        "supports": "Hudeybiye, Mekke yakınlarında bulunan bir bölgedir.",
+        "locator": "Hudeybiye’nin Mekke sınırındaki yeri",
+        "supports": "Hudeybiye, Mekke yakınlarında bulunan ve antlaşmaya adını veren bölgedir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "hudaybiyya-place"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "hudaybiyya-place",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-025",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hudeybiye Antlaşması'nın başlıca tarafları kimlerdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Müslümanlar ve Bizanslılar"
+        "id": "o2",
+        "text": "Medineli Müslümanlar ve Mekkeli Kureyşliler"
       },
       {
-        "id": "o2",
-        "text": "Medineli Müslümanlar ve Mekke Kureyşlileri"
+        "id": "o1",
+        "text": "Medineli Müslümanlar ve Hayberli Yahudiler"
       },
       {
         "id": "o3",
-        "text": "Müslümanlar ve Persler"
+        "text": "Mekkeli Kureyşliler ve Tâifli Sakīfliler"
       },
       {
         "id": "o4",
-        "text": "Evs ve Hazrec"
+        "text": "Medineli Müslümanlar ve Gassânî Araplar"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hudeybiye Antlaşması Müslümanlarla Mekkeli Kureyşliler arasında yapıldı.",
+    "explanation": "Hudeybiye Antlaşması, Medine’deki müslümanlarla Mekke’deki Kureyş temsilcileri arasında yapıldı.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
-        "locator": "Antlaşmanın tarafları",
-        "supports": "Hudeybiye Antlaşması Müslümanlarla Mekkeli Kureyşliler arasında yapıldı.",
+        "locator": "69, 101–103. satırlar; iki siyasî taraf",
+        "supports": "Hudeybiye Antlaşması, Medine’deki müslümanlarla Mekke’deki Kureyş temsilcileri arasında yapıldı.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "hudaybiyya-parties"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "hudaybiyya-parties",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-026",
@@ -7393,87 +7395,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-history-028",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Birinci Akabe Biatı'nın ardından Medine'de Kur'an öğretmekle görevlendirilen sahâbî kimdir?",
+    "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Ebû Hüreyre"
+        "id": "o4",
+        "text": "Bilâl b. Rebâh"
       },
       {
         "id": "o2",
-        "text": "Mus'ab b. Umeyr"
+        "text": "Mus‘ab b. Umeyr"
+      },
+      {
+        "id": "o1",
+        "text": "Abdullah b. Mes‘ûd"
       },
       {
         "id": "o3",
-        "text": "Hâlid b. Velîd"
-      },
-      {
-        "id": "o4",
-        "text": "Bilâl"
+        "text": "Zeyd b. Hârise"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Mus'ab b. Umeyr Birinci Akabe Biatı'nın ardından Medine'ye öğretici olarak gönderilmiştir.",
+    "explanation": "Mus‘ab b. Umeyr, Birinci Akabe Biatı’nın ardından Hz. Peygamber tarafından Medine’ye Kur’an ve İslâm’ı öğretmek üzere gönderildi.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-        "locator": "Medine'ye gönderilen öğretici",
-        "supports": "Mus'ab b. Umeyr Birinci Akabe Biatı'nın ardından Medine'ye öğretici olarak gönderilmiştir.",
+        "locator": "100. satır; Mus‘ab’ın öğretici olarak gönderilmesi",
+        "supports": "Mus‘ab b. Umeyr, Birinci Akabe Biatı’nın ardından Hz. Peygamber tarafından Medine’ye Kur’an ve İslâm’ı öğretmek üzere gönderildi.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "akaba-musab"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "akaba-musab",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-029",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "easy",
-    "question": "İkinci Akabe Biatı'nda Medineliler Hz. Peygamber'i hangi şehre davet etmiştir?",
+    "question": "İkinci Akabe Biatı'na katılan Evs ve Hazrec mensupları, Hz. Peygamber'i hangi şehre davet etmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Taif"
+        "id": "o4",
+        "text": "Hayber"
       },
       {
         "id": "o2",
         "text": "Medine"
       },
       {
-        "id": "o3",
-        "text": "Kûfe"
+        "id": "o1",
+        "text": "Mekke"
       },
       {
-        "id": "o4",
-        "text": "Basra"
+        "id": "o3",
+        "text": "Tâif"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Medineliler Hz. Peygamber'i Medine'ye davet etmişlerdir.",
+    "explanation": "İkinci Akabe Biatı’nda Evs ve Hazrec’e mensup müslümanlar Hz. Peygamber’i Medine’ye davet ederek koruma sözü verdiler.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-        "locator": "İkinci biatin amacı",
-        "supports": "Medineliler Hz. Peygamber'i Medine'ye davet etmişlerdir.",
+        "locator": "102–104. satırlar; Medine’ye davet",
+        "supports": "İkinci Akabe Biatı’nda Evs ve Hazrec’e mensup müslümanlar Hz. Peygamber’i Medine’ye davet ederek koruma sözü verdiler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "akaba-invitation"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "akaba-invitation",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-030",
@@ -7603,49 +7607,50 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-history-033",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hz. Osman döneminde çoğaltılan Mushaf nüshaları hangi amaçla merkezlere gönderilmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yeni sûre eklemek"
+        "id": "o4",
+        "text": "Âyetlerin kronolojik sırasını tespit etmek"
       },
       {
         "id": "o2",
-        "text": "Okuma birliğini korumak"
+        "text": "Bölgesel okuyuş ihtilâflarını gidermek"
+      },
+      {
+        "id": "o1",
+        "text": "Âyetlerin anlamını başka dillere aktarmak"
       },
       {
         "id": "o3",
-        "text": "Âyetleri azaltmak"
-      },
-      {
-        "id": "o4",
-        "text": "Sıralamayı rastgele değiştirmek"
+        "text": "Sûrelerin iniş sebeplerini belgelemek"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hz. Osman döneminde Mushaf nüshaları okuma birliğine katkı için çoğaltılıp merkezlere gönderilmiştir.",
+    "explanation": "Hz. Osman, kıraat farklarından doğan tartışmaları önlemek amacıyla mushaf nüshalarını çoğalttırıp merkezlere gönderdi. Bu soru bütün kıraat farklılıklarının ortadan kaldırıldığını ileri sürmez.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/osman",
-        "locator": "Mushafların çoğaltılması",
-        "supports": "Hz. Osman döneminde Mushaf nüshaları okuma birliğine katkı için çoğaltılıp merkezlere gönderilmiştir.",
+        "locator": "173–174. satırlar; kıraat farklarının tartışmaya dönüşmesini önleme",
+        "supports": "Hz. Osman, kıraat farklarından doğan tartışmaları önlemek amacıyla mushaf nüshalarını çoğalttırıp merkezlere gönderdi. Bu soru bütün kıraat farklılıklarının ortadan kaldırıldığını ileri sürmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "quran-standardization"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "quran-standardization",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-034",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Kıblenin Kudüs'ten Kâbe'ye çevrilmesi hangi şehirde yaşayan Müslümanlar döneminde olmuştur?",
@@ -7655,35 +7660,36 @@ export const questionsV73Candidate: readonly Question[] = [
         "text": "Mekke"
       },
       {
-        "id": "o2",
-        "text": "Medine"
-      },
-      {
         "id": "o3",
-        "text": "Bağdat"
+        "text": "Tâif"
       },
       {
         "id": "o4",
-        "text": "Kûfe"
+        "text": "Hayber"
+      },
+      {
+        "id": "o2",
+        "text": "Medine"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Kıblenin Kâbe'ye çevrilmesi hicretten sonra Medine döneminde gerçekleşmiştir.",
+    "explanation": "Diyanet Kur’an Yolu Meali’nin Bakara 2/142 dipnotunda Hz. Peygamber’in Medine’de on altı-on yedi ay Kudüs’e yönelerek namaz kıldığı, ardından Kâbe’nin kıble olduğu anlatılır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kible",
-        "locator": "Kıble değişimi",
-        "supports": "Kıblenin Kâbe'ye çevrilmesi hicretten sonra Medine döneminde gerçekleşmiştir.",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Bakara 2/142 dipnotu; PDF sayfa 28",
+        "supports": "Diyanet Kur’an Yolu Meali’nin Bakara 2/142 dipnotunda Hz. Peygamber’in Medine’de on altı-on yedi ay Kudüs’e yönelerek namaz kıldığı, ardından Kâbe’nin kıble olduğu anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "qibla-change"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "qibla-change",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-035",
@@ -7983,45 +7989,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-007",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Zekât esas olarak hangi alanla ilgili bir ibadettir?",
+    "question": "Zekât terimi, aşağıdaki malî ibadetlerden hangisini ifade eder?",
     "options": [
       {
         "id": "o1",
-        "text": "Yalnız dua okumak"
-      },
-      {
-        "id": "o2",
-        "text": "Maldan belirli pay ayırmak"
+        "text": "Kalıcı oruç mazereti için fidye vermek"
       },
       {
         "id": "o3",
-        "text": "Namazı kısaltmak"
+        "text": "Bozulan yemin için malî kefâret vermek"
       },
       {
         "id": "o4",
-        "text": "Mescit inşa etmek"
+        "text": "Adakla bir hayır harcaması üstlenmek"
+      },
+      {
+        "id": "o2",
+        "text": "Nisaba ulaşan maldan farz pay vermek"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Zekât malî bir ibadettir.",
+    "explanation": "Zekât, şartları oluştuğunda maldan belirlenmiş hak sahiplerine ayrılan farz paydır. Fidye, kefâret ve adakla üstlenilen harcama farklı sebeplere bağlı malî yükümlülüklerdir; soru kişisel yükümlülük hesabını konu almaz.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zekat",
-        "locator": "Zekâtın mali niteliği",
-        "supports": "Zekât malî bir ibadettir.",
+        "locator": "111–112. satırlar; dinen zengin müslümanın malından farz pay",
+        "supports": "Zekât, şartları oluştuğunda maldan belirlenmiş hak sahiplerine ayrılan farz paydır. Fidye, kefâret ve adakla üstlenilen harcama farklı sebeplere bağlı malî yükümlülüklerdir; soru kişisel yükümlülük hesabını konu almaz.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "zakat-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "zakat-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-008",
@@ -8152,129 +8159,132 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-011",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Namazda eğilme hareketi hangi adla bilinir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kıyam"
+        "id": "o3",
+        "text": "Secde"
+      },
+      {
+        "id": "o4",
+        "text": "Ka‘de"
       },
       {
         "id": "o2",
         "text": "Rükû"
       },
       {
-        "id": "o3",
-        "text": "Selâm"
-      },
-      {
-        "id": "o4",
-        "text": "Sahur"
+        "id": "o1",
+        "text": "Kıyam"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Rükû namazın eğilme bölümüdür.",
+    "explanation": "Rükû, namazda sırtın eller dizlere varacak derecede eğilmesidir. Kıyam ayakta durmayı, secde yere kapanmayı, ka‘de oturuşu ifade eder.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/namaz",
-        "locator": "Namazın rükünleri: rükû",
-        "supports": "Rükû namazın eğilme bölümüdür.",
+        "locator": "177–179. satırlar; rükû/secde/ka‘de tanımları",
+        "supports": "Rükû, namazda sırtın eller dizlere varacak derecede eğilmesidir. Kıyam ayakta durmayı, secde yere kapanmayı, ka‘de oturuşu ifade eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "prayer-positions"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "prayer-positions",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-012",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Namazda alın ve burnun yere konduğu bölüme ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İhram"
+        "id": "o4",
+        "text": "Ka‘de"
       },
       {
         "id": "o2",
         "text": "Secde"
       },
       {
-        "id": "o3",
-        "text": "Tavaf"
+        "id": "o1",
+        "text": "Rükû"
       },
       {
-        "id": "o4",
-        "text": "İmsak"
+        "id": "o3",
+        "text": "Kıyam"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Secde namazın yere kapanma bölümüdür.",
+    "explanation": "Secde, namazda yere kapanma bölümüdür. Soru organların asgari temasının mezheplere göre hükmünü değil duruşun adını sorar.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/namaz",
-        "locator": "Namazın rükünleri: secde",
-        "supports": "Secde namazın yere kapanma bölümüdür.",
+        "locator": "178–179 ve 205. satırlar; secde duruşu",
+        "supports": "Secde, namazda yere kapanma bölümüdür. Soru organların asgari temasının mezheplere göre hükmünü değil duruşun adını sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "prayer-positions"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "prayer-positions",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-013",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "İslâm'ın ilk döneminde ezan uygulaması hangi şehirde başlamıştır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mekke"
+        "id": "o4",
+        "text": "Hayber"
       },
       {
         "id": "o2",
         "text": "Medine"
       },
       {
-        "id": "o3",
-        "text": "Bağdat"
+        "id": "o1",
+        "text": "Mekke"
       },
       {
-        "id": "o4",
-        "text": "Şam"
+        "id": "o3",
+        "text": "Tâif"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Ezan namaza çağrı olarak Medine'de uygulanmaya başlanmıştır.",
+    "explanation": "Ezan, Hz. Peygamber’in Medine döneminde namaz vakitlerini duyurma yöntemi olarak uygulanmaya başladı. Başlangıç yılıyla ilgili rivayet farklılığı bu sorunun kapsamında değildir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ezan",
-        "locator": "Ezanın tarihçesi",
-        "supports": "Ezan namaza çağrı olarak Medine'de uygulanmaya başlanmıştır.",
+        "locator": "119–122. satırlar; Medine’de ezanın başlaması",
+        "supports": "Ezan, Hz. Peygamber’in Medine döneminde namaz vakitlerini duyurma yöntemi olarak uygulanmaya başladı. Başlangıç yılıyla ilgili rivayet farklılığı bu sorunun kapsamında değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "adhan-history"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "adhan-history",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-014",
@@ -8320,45 +8330,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-015",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Namaz için yönelinen istikamete ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İhram"
+        "id": "o4",
+        "text": "Minber"
       },
       {
         "id": "o2",
         "text": "Kıble"
       },
       {
-        "id": "o3",
-        "text": "Suffe"
+        "id": "o1",
+        "text": "Mihrap"
       },
       {
-        "id": "o4",
-        "text": "Miqat"
+        "id": "o3",
+        "text": "Saf"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Kıble Müslümanların namazda yöneldiği istikamettir.",
+    "explanation": "Kıble, namazda yönelinen istikamettir. Mihrap bu yönü belirten mimarî öğedir; yönün kendisine verilen ad değildir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kible",
-        "locator": "Kıble tanımı",
-        "supports": "Kıble Müslümanların namazda yöneldiği istikamettir.",
+        "locator": "Kıble terim tanımı",
+        "supports": "Kıble, namazda yönelinen istikamettir. Mihrap bu yönü belirten mimarî öğedir; yönün kendisine verilen ad değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "qibla-definition"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "qibla-definition",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-016",
@@ -8405,45 +8416,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-017",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Mihrap caminin hangi yönündeki duvarda yer alır?",
+    "question": "Bir camide ana mihrabın genellikle bulunduğu duvar hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Giriş kapısının üstü"
-      },
-      {
-        "id": "o2",
-        "text": "Kıble yönündeki duvar"
-      },
-      {
         "id": "o3",
-        "text": "Avlu duvarı"
+        "text": "Kıblenin sağındaki yan duvarda"
       },
       {
         "id": "o4",
-        "text": "Minarenin içi"
+        "text": "Kıblenin solundaki yan duvarda"
+      },
+      {
+        "id": "o2",
+        "text": "Kıble duvarında"
+      },
+      {
+        "id": "o1",
+        "text": "Kıblenin karşısındaki duvarda"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Mihrap caminin kıble duvarında yer alır.",
+    "explanation": "Ana mihrap genellikle caminin kıble duvarında bulunur. Büyük yapılarda başka mihrapların da bulunabilmesi bu genel yerleşim bilgisinden ayrıdır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mihrap",
-        "locator": "Mihrap ve kıble duvarı",
-        "supports": "Mihrap caminin kıble duvarında yer alır.",
+        "locator": "105–108. satırlar; ana mihrabın genellikle kıble duvarında olması",
+        "supports": "Ana mihrap genellikle caminin kıble duvarında bulunur. Büyük yapılarda başka mihrapların da bulunabilmesi bu genel yerleşim bilgisinden ayrıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "mosque-mihrab"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "mosque-mihrab",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-018",
@@ -8531,45 +8543,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-020",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Su bulunmadığında belirli şartlarda yapılan toprakla temizlik hangisidir?",
+    "question": "Abdest veya gusül yapılamadığında, temiz toprak cinsiyle yüz ve kolların meshedildiği hükmî temizlik hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Tavaf"
+        "text": "Gusül"
+      },
+      {
+        "id": "o3",
+        "text": "Mesh"
+      },
+      {
+        "id": "o4",
+        "text": "İstincâ"
       },
       {
         "id": "o2",
         "text": "Teyemmüm"
-      },
-      {
-        "id": "o3",
-        "text": "İtikâf"
-      },
-      {
-        "id": "o4",
-        "text": "Teravih"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Teyemmüm uygun şartlarda su yerine temiz toprak cinsinden maddeyle yapılır.",
+    "explanation": "Teyemmüm, abdest alınamadığı veya gusül yapılamadığı durumlarda temiz toprak ya da yer cinsinden maddeyle yüzü ve kolları meshetmektir. Her su yokluğu otomatik ruhsat sayılmaz; gerekli şartlar saklıdır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/teyemmum",
-        "locator": "Teyemmüm tanımı",
-        "supports": "Teyemmüm uygun şartlarda su yerine temiz toprak cinsinden maddeyle yapılır.",
+        "locator": "71. satır; abdest/gusül yerine yüz ve kolların meshi",
+        "supports": "Teyemmüm, abdest alınamadığı veya gusül yapılamadığı durumlarda temiz toprak ya da yer cinsinden maddeyle yüzü ve kolları meshetmektir. Her su yokluğu otomatik ruhsat sayılmaz; gerekli şartlar saklıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "tayammum-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "tayammum-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-021",
@@ -8615,87 +8628,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-022",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Hac ve umrede belli yasakların başladığı özel hâle ne ad verilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İftar"
-      },
-      {
         "id": "o2",
         "text": "İhram"
       },
       {
+        "id": "o1",
+        "text": "Tavaf"
+      },
+      {
         "id": "o3",
-        "text": "Teravih"
+        "text": "Sa‘y"
       },
       {
         "id": "o4",
-        "text": "Zekât"
+        "text": "Vakfe"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "İhram, hac ve umreyle ilişkili özel ibadet hâlidir.",
+    "explanation": "İhram, hac veya umreye niyet eden kişinin belirli yasak ve kısıtlamalara girdiği özel hâldir; yalnız kıyafetin adı olarak düşünülmemelidir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ihram",
-        "locator": "İhram tanımı",
-        "supports": "İhram, hac ve umreyle ilişkili özel ibadet hâlidir.",
+        "locator": "71 ve 96–102. satırlar; hac/umre yasaklarına giriş",
+        "supports": "İhram, hac veya umreye niyet eden kişinin belirli yasak ve kısıtlamalara girdiği özel hâldir; yalnız kıyafetin adı olarak düşünülmemelidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ihram-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ihram-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-023",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Tavafta şavtların başlangıç ve bitiş hizasında hangi taş bulunur?",
+    "question": "Tavaftaki her şavtın başlangıç ve bitişi Kâbe'nin hangi köşesi hizasındadır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Makam-ı İbrâhim taşı"
+        "id": "o4",
+        "text": "Irak köşesi"
       },
       {
         "id": "o2",
-        "text": "Hacerülesved"
+        "text": "Hacerülesved köşesi"
+      },
+      {
+        "id": "o1",
+        "text": "Yemen köşesi"
       },
       {
         "id": "o3",
-        "text": "Safa taşı"
-      },
-      {
-        "id": "o4",
-        "text": "Merve taşı"
+        "text": "Şam köşesi"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Tavafta her şavt Hacerülesved hizasından başlar ve orada tamamlanır.",
+    "explanation": "Tavafın her şavtı Hacerülesved’in bulunduğu köşe hizasında başlar ve tamamlanır. Kâbe’nin diğer köşelerine ilişkin coğrafî adlandırmalar kaynaklarda değişebilse de başlangıç noktası Hacerülesved’dir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/tavaf",
-        "locator": "Tavafta Hacerülesved köşesi",
-        "supports": "Tavafta her şavt Hacerülesved hizasından başlar ve orada tamamlanır.",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/kabe",
+        "locator": "119–121. satırlar; köşeler ve Hacerülesved başlangıcı",
+        "supports": "Tavafın her şavtı Hacerülesved’in bulunduğu köşe hizasında başlar ve tamamlanır. Kâbe’nin diğer köşelerine ilişkin coğrafî adlandırmalar kaynaklarda değişebilse de başlangıç noktası Hacerülesved’dir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "tavaf-hacerulesved"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "tavaf-hacerulesved",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-024",
@@ -8741,45 +8756,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-025",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Sa'y ibadetinde ilk yürüyüş hangi tepeden başlar?",
+    "question": "Sa‘y ibadetinin ilk şavtı hangi noktadan başlar?",
     "options": [
       {
-        "id": "o1",
-        "text": "Merve"
+        "id": "o3",
+        "text": "Mina"
+      },
+      {
+        "id": "o4",
+        "text": "Arafat"
       },
       {
         "id": "o2",
         "text": "Safâ"
       },
       {
-        "id": "o3",
-        "text": "Arafat"
-      },
-      {
-        "id": "o4",
-        "text": "Uhud"
+        "id": "o1",
+        "text": "Merve"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Sa'y Safâ tepesinden başlar ve Merve yönünde devam eder.",
+    "explanation": "Sa‘ye Safâ’dan başlanır ve Merve’ye doğru gidilir. Safâ’dan başlayış, Hz. Peygamber’in uygulamasıyla açıklanır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/say",
-        "locator": "Sa'yın başlangıcı",
-        "supports": "Sa'y Safâ tepesinden başlar ve Merve yönünde devam eder.",
+        "locator": "96 ve 101–102. satırlar; Safâ’dan başlangıç",
+        "supports": "Sa‘ye Safâ’dan başlanır ve Merve’ye doğru gidilir. Safâ’dan başlayış, Hz. Peygamber’in uygulamasıyla açıklanır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "say-safa"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "say-safa",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-026",
@@ -8993,87 +9009,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-general-031",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Mushaf sözcüğü hangi tür nesneyle ilişkilidir?",
+    "question": "Mushaf kelimesinin sözlük anlamıyla ilişkili betimleme hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Çadır direkleri"
+        "id": "o4",
+        "text": "Söyleyiş kurallarını gösteren işaretler"
       },
       {
         "id": "o2",
-        "text": "Bir araya getirilmiş sayfalar"
+        "text": "Birbirine bağlanmış yazılı sayfalar"
+      },
+      {
+        "id": "o1",
+        "text": "Satır altına yazılmış anlam notları"
       },
       {
         "id": "o3",
-        "text": "Su kuyuları"
-      },
-      {
-        "id": "o4",
-        "text": "Ticaret kervanları"
+        "text": "Bölüm sonuna eklenmiş konu dizinleri"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Mushaf, yazılı sayfaların bir araya getirildiği kitap biçimiyle ilişkilidir.",
+    "explanation": "Mushaf kelimesi bir araya getirilip bağlanmış yazılı sayfalarla ilişkilidir. Terim olarak Kur’an âyetlerinin iki kapak arasında toplanmış kitabını belirtir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mushaf",
-        "locator": "Mushaf terimi ve kökeni",
-        "supports": "Mushaf, yazılı sayfaların bir araya getirildiği kitap biçimiyle ilişkilidir.",
+        "locator": "71 ve 115–119. satırlar; bağlı yazılı sayfalar",
+        "supports": "Mushaf kelimesi bir araya getirilip bağlanmış yazılı sayfalarla ilişkilidir. Terim olarak Kur’an âyetlerinin iki kapak arasında toplanmış kitabını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "mushaf-etymology"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "mushaf-etymology",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-032",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Meâl neden Kur'an'ın harfiyen aynısı olarak görülmez?",
+    "question": "Meâlin Kur’an’ın Arapça metninden farkını doğru açıklayan ifade hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Arap harfi içermediği için"
+        "id": "o4",
+        "text": "Âyetlerdeki kelime köklerini listeleyen dizindir"
       },
       {
         "id": "o2",
-        "text": "Anlamı aktaran bir çeviri olduğu için"
+        "text": "Arapça metnin başka dile anlam çevirisidir"
+      },
+      {
+        "id": "o1",
+        "text": "Metnin başka yazıyla okunuş gösterimidir"
       },
       {
         "id": "o3",
-        "text": "Sadece şiir olduğu için"
-      },
-      {
-        "id": "o4",
-        "text": "Sure sayısını değiştirdiği için"
+        "text": "Sûreleri iniş sırasına göre düzenleyen metindir"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Meâl Kur'an metninin kendisi değil, anlamın başka dile aktarımıdır.",
+    "explanation": "Meâl, Kur’an’ın anlamını başka dile aktaran çeviridir. Arapça metnin farklı harflerle okunuşunu göstermek, nüzûl sırasını düzenlemek veya kök dizini hazırlamak meâlin tanımı değildir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/meal",
-        "locator": "Meâl çevirisinin niteliği",
-        "supports": "Meâl Kur'an metninin kendisi değil, anlamın başka dile aktarımıdır.",
+        "locator": "71, 97–98. satırlar; anlam/mefhum çevirisi",
+        "supports": "Meâl, Kur’an’ın anlamını başka dile aktaran çeviridir. Arapça metnin farklı harflerle okunuşunu göstermek, nüzûl sırasını düzenlemek veya kök dizini hazırlamak meâlin tanımı değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "meal-distinction"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "meal-distinction",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-general-033",
@@ -9330,18 +9348,18 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v7-quran-004",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Kadir gecesinin bin aydan daha hayırlı olduğu hangi sûrede bildirilir?",
+    "question": "Kur’an’da özel bir gecenin bin aydan daha hayırlı olduğunu bildiren sûre hangisidir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Duhân"
-      },
       {
         "id": "o2",
         "text": "Kadr"
+      },
+      {
+        "id": "o1",
+        "text": "Duhân"
       },
       {
         "id": "o3",
@@ -9353,22 +9371,23 @@ export const questionsV73Candidate: readonly Question[] = [
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Kadr sûresinde Kadir gecesinin bin aydan daha hayırlı olduğu belirtilir.",
+    "explanation": "Kadr 97/3’te Kadir gecesinin bin aydan daha hayırlı olduğu bildirilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kadir-gecesi",
-        "locator": "Kadr sûresinin fazilet anlatımı",
-        "supports": "Kadr sûresinde Kadir gecesinin bin aydan daha hayırlı olduğu belirtilir.",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Kadr 97/3; PDF sayfa 652",
+        "supports": "Kadr 97/3’te Kadir gecesinin bin aydan daha hayırlı olduğu bildirilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu onayı kapsamında kullanıma kabul edildi. Bağımsız editör veya dinî uzman incelemesi yapıldığı iddia edilmez.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "kadr-gecesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "kadr-gecesi",
+    "reviewedAt": undefined
   },
   {
     "id": "v7-quran-005",
@@ -9625,45 +9644,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v7-history-001",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hendek Gazvesi'nde savunma amacıyla hendek kazılması fikri hangi sahâbîyle ilişkilendirilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Bilâl-i Habeşî"
+        "text": "Zeyd b. Hârise"
+      },
+      {
+        "id": "o3",
+        "text": "Sa‘d b. Ubâde"
+      },
+      {
+        "id": "o4",
+        "text": "Sa‘d b. Muâz"
       },
       {
         "id": "o2",
         "text": "Selmân-ı Fârisî"
-      },
-      {
-        "id": "o3",
-        "text": "Ebû Hüreyre"
-      },
-      {
-        "id": "o4",
-        "text": "Zeyd b. Sâbit"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Tarih kaynakları, Medine çevresine hendek kazılması önerisini genellikle Selmân-ı Fârisî'ye nispet eder.",
+    "explanation": "TDV’nin aktardığı tarih kaynaklarında savunma amacıyla hendek kazılması teklifinin genellikle Selmân-ı Fârisî’ye nispet edildiği belirtilir. Diğer seçeneklerde de aynı dönemin sahâbîleri bulunur.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
-        "locator": "Medine savunması ve hendek önerisi",
-        "supports": "Tarih kaynakları, Medine çevresine hendek kazılması önerisini genellikle Selmân-ı Fârisî'ye nispet eder.",
+        "locator": "108, 110 ve 125. satırlar; teklif ve dönemin sahâbîleri",
+        "supports": "TDV’nin aktardığı tarih kaynaklarında savunma amacıyla hendek kazılması teklifinin genellikle Selmân-ı Fârisî’ye nispet edildiği belirtilir. Diğer seçeneklerde de aynı dönemin sahâbîleri bulunur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu onayı kapsamında kullanıma kabul edildi. Bağımsız editör veya dinî uzman incelemesi yapıldığı iddia edilmez.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "hendek-selman"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "hendek-selman",
+    "reviewedAt": undefined
   },
   {
     "id": "v7-history-002",
@@ -9877,68 +9897,69 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v7-general-002",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Ramazan sonunda gücü yeten Müslümanın vermekle yükümlü olduğu sadakaya ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Adak"
+        "id": "o3",
+        "text": "Fidye"
+      },
+      {
+        "id": "o4",
+        "text": "Kefâret"
       },
       {
         "id": "o2",
         "text": "Fitre"
       },
       {
-        "id": "o3",
-        "text": "Kefaret"
-      },
-      {
-        "id": "o4",
-        "text": "Nezir"
+        "id": "o1",
+        "text": "Zekât"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Fitre veya sadaka-i fıtr, ramazanın sonunda verilen malî yardımdır.",
+    "explanation": "Fitre veya sadaka-i fıtr, ramazanın sonunda gerekli şartları taşıyanların verdiği malî yardımdır. Zekât, fidye ve kefâretin sebepleri farklıdır; bu soru kişisel yükümlülük miktarını hesaplatmaz.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fitre",
-        "locator": "Sadaka-i fıtr tanımı",
-        "supports": "Fitre veya sadaka-i fıtr, ramazanın sonunda verilen malî yardımdır.",
+        "locator": "113–114. satırlar; fıtır sadakasının Ramazan sonuyla ilişkisi",
+        "supports": "Fitre veya sadaka-i fıtr, ramazanın sonunda gerekli şartları taşıyanların verdiği malî yardımdır. Zekât, fidye ve kefâretin sebepleri farklıdır; bu soru kişisel yükümlülük miktarını hesaplatmaz.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu onayı kapsamında kullanıma kabul edildi. Bağımsız editör veya dinî uzman incelemesi yapıldığı iddia edilmez.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "fitre-tanimi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fitre-tanimi",
+    "reviewedAt": undefined
   },
   {
     "id": "v7-general-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Özellikle ramazanın son on gününde ibadete yoğunlaşarak yapılan uygulamaya ne denir?",
+    "question": "Ramazan’ın son on gününde, ibadet niyetiyle camide kalma uygulamasına ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Tavaf"
+        "id": "o3",
+        "text": "Teheccüd"
+      },
+      {
+        "id": "o4",
+        "text": "Mukabele"
       },
       {
         "id": "o2",
         "text": "İtikâf"
       },
       {
-        "id": "o3",
-        "text": "Sa‘y"
-      },
-      {
-        "id": "o4",
-        "text": "Kunut"
+        "id": "o1",
+        "text": "Teravih"
       }
     ],
     "correctOptionId": "o2",
@@ -9946,18 +9967,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/itikaf",
-        "locator": "Madde tanımı; ilk iki paragraf",
+        "locator": "96–106. satırlar; tanım, son on gün ve mezhep farkları",
         "supports": "İ‘tikâfın genel fıkıh tanımı, ibadet niyetiyle belirli şartlar içinde camide kalmaktır. Ramazanın son on gününde Hz. Peygamber'in uygulamasıyla öne çıkar. Yer ve süre şartları mezheplere göre farklılaşır; Hanefîler kadınların evin uygun bir yerinde i‘tikâfa girmesini tercih eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kapsamında kaynak metni, cevap ve dört seçenek karşılaştırıldı. Ürün sahibinin doğrudan yayın talimatıyla sürümlü düzeltme. İnsan dinî uzman onayı değildir; eski oyunlar v31 metnini kullanır.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "itikaf"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "itikaf",
+    "reviewedAt": undefined
   },
   {
     "id": "v7-general-004",
@@ -10003,45 +10025,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v7-general-005",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Cibrîl hadisindeki 'Allah'ı görür gibi ibadet etmek' tanımı hangi kavrama aittir?",
+    "question": "Cibrîl hadisinde ‘Allah’ı görür gibi ibadet etmek’ hangi kavramın açıklamasıdır?",
     "options": [
       {
-        "id": "o1",
-        "text": "İkrar"
+        "id": "o3",
+        "text": "İslâm"
+      },
+      {
+        "id": "o4",
+        "text": "Tevekkül"
       },
       {
         "id": "o2",
         "text": "İhsan"
       },
       {
-        "id": "o3",
-        "text": "Tevekkül"
-      },
-      {
-        "id": "o4",
-        "text": "Hicret"
+        "id": "o1",
+        "text": "İman"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Cibrîl hadisinde ihsan, Allah'ı görür gibi ibadet etmek ifadesiyle açıklanır.",
+    "explanation": "Cibrîl hadisinde ihsan, Allah’ı görür gibi ibadet etmekle açıklanır. Soru kelimenin bütün ahlâkî kullanımlarını değil hadiste açıklanan kavramın adını sorar.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ihsan--iyilik",
-        "locator": "Cibrîl hadisinde ihsan tarifi",
-        "supports": "Cibrîl hadisinde ihsan, Allah'ı görür gibi ibadet etmek ifadesiyle açıklanır.",
+        "locator": "105–107. satırlar; Cibrîl hadisi ve ihlâs/takvâ ilişkisi",
+        "supports": "Cibrîl hadisinde ihsan, Allah’ı görür gibi ibadet etmekle açıklanır. Soru kelimenin bütün ahlâkî kullanımlarını değil hadiste açıklanan kavramın adını sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu onayı kapsamında kullanıma kabul edildi. Bağımsız editör veya dinî uzman incelemesi yapıldığı iddia edilmez.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ihsan-kavrami"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ihsan-kavrami",
+    "reviewedAt": undefined
   },
   {
     "id": "v8-quran-001",
@@ -10676,45 +10699,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v8-general-001",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Zekât için esas alınan asgarî zenginlik ölçüsüne ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İmsak"
+        "id": "o4",
+        "text": "Öşür"
       },
       {
         "id": "o2",
         "text": "Nisab"
       },
       {
-        "id": "o3",
-        "text": "İcma"
+        "id": "o1",
+        "text": "Havl"
       },
       {
-        "id": "o4",
-        "text": "İhram"
+        "id": "o3",
+        "text": "Nemâ"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Nisab, zekâta tâbi malın belirli asgarî düzeye ulaşmasını ifade eden fıkıh terimidir.",
+    "explanation": "Nisab, zekâta tâbi mal için belirlenen asgarî zenginlik sınırıdır. Havl yılın geçmesiyle, nemâ artıcılıkla, öşür ise tarım ürünlerinin payıyla ilişkilidir; farklı malların ayrıntılı hükümleri bu tanım sorusunun dışında kalır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/nisab",
-        "locator": "Tanım: zekât yükümlülüğünde zenginlik ölçüsü",
-        "supports": "Nisab, zekâta tâbi malın belirli asgarî düzeye ulaşmasını ifade eden fıkıh terimidir.",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/zekat",
+        "locator": "111–113 ve 155–161. satırlar; nisab, nemâ, havl ve ürün payı",
+        "supports": "Nisab, zekâta tâbi mal için belirlenen asgarî zenginlik sınırıdır. Havl yılın geçmesiyle, nemâ artıcılıkla, öşür ise tarım ürünlerinin payıyla ilişkilidir; farklı malların ayrıntılı hükümleri bu tanım sorusunun dışında kalır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu kullanım onayı uygulanmıştır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "nisab-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "nisab-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "v8-general-002",
@@ -10971,45 +10995,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-quran-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Nasr sûresinin adındaki 'nasr' kelimesi hangi anlamı taşır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yolculuk"
-      },
-      {
         "id": "o2",
         "text": "Yardım"
       },
       {
+        "id": "o1",
+        "text": "Antlaşma"
+      },
+      {
         "id": "o3",
-        "text": "Sabah"
+        "text": "Göç"
       },
       {
         "id": "o4",
-        "text": "Kuşluk"
+        "text": "Danışma"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Nasr kelimesi yardım anlamındadır; sûrede ilâhî yardımın ve fethin gelişi anlatılır.",
+    "explanation": "Nasr, yardım anlamına gelir. Sûrenin başında Allah’ın yardımının ve fethin gelişi birlikte anılır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/nasr-suresi",
-        "locator": "Sûrenin ilk âyetindeki nasr sözcüğü",
-        "supports": "Nasr kelimesi yardım anlamındadır; sûrede ilâhî yardımın ve fethin gelişi anlatılır.",
+        "locator": "96–98. satırlar; nasr kelimesinin anlamı",
+        "supports": "Nasr, yardım anlamına gelir. Sûrenin başında Allah’ın yardımının ve fethin gelişi birlikte anılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "surah-nasr-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "surah-nasr-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-quran-004",
@@ -11227,45 +11252,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-quran-009",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Beyyine sûresine adını veren 'beyyine' sözcüğü ne anlama gelir?",
     "options": [
       {
         "id": "o1",
-        "text": "Gizli yolculuk"
+        "text": "Güvenilir haber"
+      },
+      {
+        "id": "o3",
+        "text": "Kesin hüküm"
+      },
+      {
+        "id": "o4",
+        "text": "Yerleşik gelenek"
       },
       {
         "id": "o2",
         "text": "Apaçık delil"
-      },
-      {
-        "id": "o3",
-        "text": "Yüksek dağ"
-      },
-      {
-        "id": "o4",
-        "text": "Sabah serinliği"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Beyyine kelimesi apaçık ve kesin delil anlamı taşır; Beyyine sûresi bu adla anılır.",
+    "explanation": "Beyyine, apaçık delil veya kesin belge anlamındadır. Haber, hüküm ve gelenek kavramları bu kelimenin sözlük karşılığı değildir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/beyyine",
-        "locator": "Beyyinenin sözlük ve terim anlamı",
-        "supports": "Beyyine kelimesi apaçık ve kesin delil anlamı taşır; Beyyine sûresi bu adla anılır.",
+        "locator": "111–114. satırlar; açık delil ve belge tanımı",
+        "supports": "Beyyine, apaçık delil veya kesin belge anlamındadır. Haber, hüküm ve gelenek kavramları bu kelimenin sözlük karşılığı değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "surah-bayyina-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "surah-bayyina-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-quran-010",
@@ -12072,68 +12098,69 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-history-009",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Büyük Selçuklu dönemindeki Nizâmiye medreseleri hangi devlet adamının adıyla anılır?",
+    "question": "Bağdat’ta 1067’de öğretime açılan medreseyi kuran Selçuklu veziri kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İbn Sînâ"
+        "id": "o3",
+        "text": "Tâcülmülk"
+      },
+      {
+        "id": "o4",
+        "text": "Müeyyidülmülk"
       },
       {
         "id": "o2",
         "text": "Nizâmülmülk"
       },
       {
-        "id": "o3",
-        "text": "Hârûnürreşîd"
-      },
-      {
-        "id": "o4",
-        "text": "Selmân-ı Fârisî"
+        "id": "o1",
+        "text": "Kündürî"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Nizâmiye medreseleri adını bu kurumları açtıran Büyük Selçuklu veziri Nizâmülmülk'ten alır.",
+    "explanation": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-        "locator": "Medreselerin Nizâmülmülk tarafından kurulması",
-        "supports": "Nizâmiye medreseleri adını bu kurumları açtıran Büyük Selçuklu veziri Nizâmülmülk'ten alır.",
+        "locator": "Nizâmiye 97–99; diğer vezir maddelerinin 71 ve 96–108. satırları",
+        "supports": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "nizamiyya-schools"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "nizamiyya-schools",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-history-010",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Mescid-i Nebevî'nin yeşil kubbesi hangi adla bilinir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kubbetü's-sahra"
-      },
-      {
-        "id": "o2",
-        "text": "Kubbetü'l-hadrâ"
-      },
-      {
         "id": "o3",
-        "text": "Kubbetü'l-hazîne"
+        "text": "Kubbetü’l-hazne"
       },
       {
         "id": "o4",
-        "text": "Kubbetü'l-mahmûd"
+        "text": "Kubbetü Zeynelâbidîn"
+      },
+      {
+        "id": "o2",
+        "text": "Kubbetü’l-hadrâ"
+      },
+      {
+        "id": "o1",
+        "text": "Kubbetü’n-nesr"
       }
     ],
     "correctOptionId": "o2",
@@ -12141,41 +12168,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-        "locator": "Osmanlı imarında yeşile boyanan kubbenin adı",
-        "supports": "Mescid-i Nebevî'nin yeşile boyanmış ve simgeleşmiş kubbesine Kubbetü'l-hadrâ adı verilir.",
+        "locator": "Mescid-i Nebevî 128; Emeviyye Camii 114–119 (https://islamansiklopedisi.org.tr/emeviyye-camii)",
+        "supports": "Medine’deki yeşil kubbenin adı Kubbetü’l-hadrâdır. Diğer üç seçenek TDV’nin Emeviyye Camii maddesinde Şam’daki kubbelerin adları olarak yer alır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "nebevi-green-dome"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "nebevi-green-dome",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-001",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Bir dinî-hukukî sorunun hükmünü açıklayan cevaba ne denir?",
+    "question": "Müftünün sorulan dinî-hukukî meseleye verdiği cevabın adı nedir?",
     "options": [
       {
         "id": "o1",
-        "text": "Kıraat"
+        "text": "Kazâ"
+      },
+      {
+        "id": "o3",
+        "text": "İçtihat"
+      },
+      {
+        "id": "o4",
+        "text": "İcmâ"
       },
       {
         "id": "o2",
         "text": "Fetva"
-      },
-      {
-        "id": "o3",
-        "text": "Hatim"
-      },
-      {
-        "id": "o4",
-        "text": "Mahya"
       }
     ],
     "correctOptionId": "o2",
@@ -12183,41 +12211,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fetva",
-        "locator": "Giriş: fetva teriminin tanımı",
+        "locator": "96–98. satırlar",
         "supports": "Fetva, dinî-hukukî bir konuda yetkin kişinin açıkladığı cevap veya hükümdür.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "fatwa-concept"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fatwa-concept",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-002",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Fıkhî sorulara fetva veren yetkili kişiye ne denir?",
+    "question": "Fetva verme görevini üstlenen kişinin bu görevle ilgili özel unvanı nedir?",
     "options": [
       {
         "id": "o1",
-        "text": "Müfessir"
+        "text": "Kadı"
+      },
+      {
+        "id": "o3",
+        "text": "Müderris"
+      },
+      {
+        "id": "o4",
+        "text": "Muhaddis"
       },
       {
         "id": "o2",
         "text": "Müftü"
-      },
-      {
-        "id": "o3",
-        "text": "Müezzin"
-      },
-      {
-        "id": "o4",
-        "text": "Müstensih"
       }
     ],
     "correctOptionId": "o2",
@@ -12225,18 +12254,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fetva",
-        "locator": "Giriş: müftî teriminin açıklaması",
+        "locator": "97. satır",
         "supports": "Müftü, kendisine yöneltilen dinî-hukukî sorulara fetva veren kişidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "fatwa-concept"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fatwa-concept",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-003",
@@ -12283,26 +12313,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-general-004",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Bir kulun Allah'a yönelip istekte bulunmasını ifade eden ibadet hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kıyas"
+        "id": "o3",
+        "text": "Tesbih"
+      },
+      {
+        "id": "o4",
+        "text": "Tehlil"
       },
       {
         "id": "o2",
         "text": "Dua"
       },
       {
-        "id": "o3",
-        "text": "İcma"
-      },
-      {
-        "id": "o4",
-        "text": "Tefsir"
+        "id": "o1",
+        "text": "Zikir"
       }
     ],
     "correctOptionId": "o2",
@@ -12310,41 +12340,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/dua",
-        "locator": "Giriş: dua teriminin tanımı",
+        "locator": "71 ve 118–121. satırlar",
         "supports": "Dua, Allah'a saygı ve yönelişle O'ndan yardım ve iyilik istemeyi ifade eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "dua-definition"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "dua-definition",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-005",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "İslâm'ın amelî hükümlerini ele alan ilim dalına ne ad verilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Astronomi"
+        "id": "o3",
+        "text": "Tefsir"
+      },
+      {
+        "id": "o4",
+        "text": "Hadis"
       },
       {
         "id": "o2",
         "text": "Fıkıh"
       },
       {
-        "id": "o3",
-        "text": "Coğrafya"
-      },
-      {
-        "id": "o4",
-        "text": "Hat sanatı"
+        "id": "o1",
+        "text": "Kelâm"
       }
     ],
     "correctOptionId": "o2",
@@ -12352,18 +12383,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fikih",
-        "locator": "Giriş: amelî hükümlerle ilgili ilim",
+        "locator": "115–117. satırlar",
         "supports": "Fıkıh, İslâmî kaynaklara dayanarak ibadet ve toplumsal ilişkiler gibi amelî hükümleri inceleyen ilimdir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "fiqh-discipline"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fiqh-discipline",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-006",
@@ -12410,26 +12442,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-general-007",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Fıkıh usulünde Hz. Peygamber'in söz, fiil ve onaylarını kapsayan terim hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Meâl"
+        "id": "o3",
+        "text": "Kıyas"
+      },
+      {
+        "id": "o4",
+        "text": "İstihsan"
       },
       {
         "id": "o2",
         "text": "Sünnet"
       },
       {
-        "id": "o3",
-        "text": "İcma"
-      },
-      {
-        "id": "o4",
-        "text": "Mushaf"
+        "id": "o1",
+        "text": "İcmâ"
       }
     ],
     "correctOptionId": "o2",
@@ -12437,41 +12469,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/sunnet--peygamber",
-        "locator": "Giriş: kavlî, fiilî ve takrirî sünnet",
+        "locator": "71 ve 111–112. satırlar",
         "supports": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "sunna-term"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sunna-term",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Hz. Peygamber'e nispet edilen söz ve haberlerin nakline dayanan bilgi türü hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mahya"
+        "id": "o3",
+        "text": "Fetva"
+      },
+      {
+        "id": "o4",
+        "text": "Meâl"
       },
       {
         "id": "o2",
         "text": "Hadis"
       },
       {
-        "id": "o3",
-        "text": "Mihrap"
-      },
-      {
-        "id": "o4",
-        "text": "Mukabele"
+        "id": "o1",
+        "text": "Tefsir"
       }
     ],
     "correctOptionId": "o2",
@@ -12479,41 +12512,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hadis",
-        "locator": "Giriş: hadis tanımı",
+        "locator": "109–117. satırlar",
         "supports": "Hadis, Hz. Peygamber'e nispet edilen söz, fiil ve onaylara dair rivayetleri ifade eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "hadith-term"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "hadith-term",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-009",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Fıkıh terminolojisinde bir konunun hükmünü fetva yoluyla sormaya ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İtikâf"
-      },
-      {
         "id": "o2",
         "text": "İstiftâ"
       },
       {
+        "id": "o1",
+        "text": "İftâ"
+      },
+      {
         "id": "o3",
-        "text": "Tesbih"
+        "text": "İçtihat"
       },
       {
         "id": "o4",
-        "text": "Tilâvet"
+        "text": "Kazâ"
       }
     ],
     "correctOptionId": "o2",
@@ -12521,41 +12555,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fetva",
-        "locator": "Fetva maddesi: istiftâ teriminin anlamı",
+        "locator": "96–98. satırlar",
         "supports": "İstiftâ, dinî-hukukî bir konuda yetkili kişiden fetva isteme işlemidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "fatwa-concept"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fatwa-concept",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-general-010",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "İslâm'da genel anlamıyla Allah'ın rızasını gözeterek yapılan davranışlara ne denir?",
+    "question": "Namaz, oruç ve hac gibi kulluk görevlerinin ortak üst kavramı hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Seyahat"
+        "id": "o3",
+        "text": "Ahlâk"
+      },
+      {
+        "id": "o4",
+        "text": "Hukuk"
       },
       {
         "id": "o2",
         "text": "İbadet"
       },
       {
-        "id": "o3",
-        "text": "Müzakere"
-      },
-      {
-        "id": "o4",
-        "text": "Ticaret"
+        "id": "o1",
+        "text": "İtikat"
       }
     ],
     "correctOptionId": "o2",
@@ -12563,18 +12598,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ibadet",
-        "locator": "İbadetin genel anlamı: Allah rızasına uygun davranma",
+        "locator": "449–453. satırlar",
         "supports": "İbadet yalnız belli ritüellerle sınırlı değildir; Allah'ın rızasını gözeterek yapılan iyi davranışları da kapsayabilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "ibadah-general"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ibadah-general",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-quran-001",
@@ -12620,26 +12656,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-quran-002",
-    "version": 3,
+    "version": 4,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas sûresinin adındaki 'kasas' sözcüğü Türkçede ne anlama gelir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Dilekler"
+        "id": "o3",
+        "text": "Öğütler"
+      },
+      {
+        "id": "o4",
+        "text": "Hükümler"
       },
       {
         "id": "o2",
         "text": "Kıssalar"
       },
       {
-        "id": "o3",
-        "text": "Geceler"
-      },
-      {
-        "id": "o4",
-        "text": "Dağlar"
+        "id": "o1",
+        "text": "Dualar"
       }
     ],
     "correctOptionId": "o2",
@@ -12647,41 +12683,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kasas-suresi",
-        "locator": "KASAS SÛRESİ, ilk paragraf",
+        "locator": "96–100. satırlar",
         "supports": "Kasas kıssalar anlamındadır; sûrenin önemli bir bölümünde Hz. Mûsâ'nın hayatından olaylar anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "qasas-name"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "qasas-name",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-quran-003",
-    "version": 3,
+    "version": 4,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kehf sûresinin adındaki 'kehf' kelimesi ne demektir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Deniz"
+        "id": "o4",
+        "text": "Ova"
       },
       {
         "id": "o2",
         "text": "Mağara"
       },
       {
-        "id": "o3",
-        "text": "Yıldız"
+        "id": "o1",
+        "text": "Vadi"
       },
       {
-        "id": "o4",
-        "text": "Şehir"
+        "id": "o3",
+        "text": "Tepe"
       }
     ],
     "correctOptionId": "o2",
@@ -12689,18 +12726,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kehf-suresi",
-        "locator": "KEHF SÛRESİ, ilk paragraf",
+        "locator": "97. satır",
         "supports": "Kehf mağara anlamına gelir; sûrede inançları için bir mağaraya sığınan gençlerin kıssası bulunur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "kahf-name"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "kahf-name",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-quran-004",
@@ -13003,26 +13041,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-quran-011",
-    "version": 2,
+    "version": 3,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Yûsuf 12/3’teki “ahsen-i kasas” terkibinin yaygın Türkçe karşılıklarından biri hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "En uzun dua"
-      },
-      {
         "id": "o2",
         "text": "Kıssaların en güzeli"
       },
       {
+        "id": "o1",
+        "text": "Anlatıların en kısası"
+      },
+      {
         "id": "o3",
-        "text": "En kısa sûre"
+        "text": "Olayların en eskisi"
       },
       {
         "id": "o4",
-        "text": "İlk hicret"
+        "text": "Haberlerin en yenisi"
       }
     ],
     "correctOptionId": "o2",
@@ -13030,41 +13068,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
-        "locator": "YÛSUF SÛRESİ, ahsen-i kasas yorumları",
+        "locator": "98–101. satırlar",
         "supports": "Ahsen-i kasas yaygın biçimde “kıssaların en güzeli” diye çevrilir; “kıssanın en güzel anlatımı” ve “en doğru kıssa” yorumları da vardır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yusuf-best-story"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yusuf-best-story",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-quran-012",
-    "version": 3,
+    "version": 4,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Asr sûresinin adındaki 'asr' kelimesi hangi kavramı da ifade eder?",
     "options": [
       {
-        "id": "o1",
-        "text": "Dağ"
-      },
-      {
         "id": "o2",
         "text": "Zaman"
       },
       {
+        "id": "o1",
+        "text": "Mekân"
+      },
+      {
         "id": "o3",
-        "text": "Gemi"
+        "text": "Sayı"
       },
       {
         "id": "o4",
-        "text": "Hurma"
+        "text": "Yön"
       }
     ],
     "correctOptionId": "o2",
@@ -13072,18 +13111,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/asr-suresi",
-        "locator": "ASR SÛRESİ, sözlük ve muhteva",
+        "locator": "96–100. satırlar",
         "supports": "Asr kelimesi çağ ve zaman anlamlarını taşır; sûrede insanın hüsrandan kurtuluşunun ilkeleri anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "asr-time"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "asr-time",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-001",
@@ -13172,45 +13212,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-prophets-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Kehf 18/82'de onarılan duvarın altında kimin hazinesi bulunuyordu?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir tüccarın"
+        "id": "o4",
+        "text": "İki yolcu ailenin"
       },
       {
         "id": "o2",
         "text": "İki yetim çocuğun"
       },
       {
-        "id": "o3",
-        "text": "Bir kumandanın"
+        "id": "o1",
+        "text": "İki genç tüccarın"
       },
       {
-        "id": "o4",
-        "text": "Bir kralın"
+        "id": "o3",
+        "text": "İki saray görevlisinin"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kehf sûresinde onarılan duvarın altında iki yetimin hazinesinin bulunduğu anlatılır.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=18&ayet=82&mode=meal",
-        "locator": "Kehf 18/82, Diyanet meal metni",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Kehf 18/82; PDF sayfa 317",
         "supports": "Kehf sûresinde onarılan duvarın altında iki yetimin hazinesinin bulunduğu anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "musa-khidr-wall"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "musa-khidr-wall",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-004",
@@ -13299,87 +13340,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-prophets-006",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Neml 27/24'te hüdhüd, Sebe halkının hangi gök cismine secde ettiğini bildirir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Aya"
+        "id": "o4",
+        "text": "Sirius'a"
       },
       {
         "id": "o2",
         "text": "Güneşe"
       },
       {
-        "id": "o3",
-        "text": "Yıldıza"
+        "id": "o1",
+        "text": "Aya"
       },
       {
-        "id": "o4",
-        "text": "Dünyaya"
+        "id": "o3",
+        "text": "Venüs'e"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Hüdhüd, Sebe halkının Allah yerine güneşe secde ettiğini Hz. Süleyman'a haber verir.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=24&mode=meal",
-        "locator": "Neml 27/24, Kur’an Yolu metni",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Neml 27/24; PDF sayfa 399",
         "supports": "Hüdhüd, Sebe halkının Allah yerine güneşe secde ettiğini Hz. Süleyman'a haber verir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "sulayman-sheba-belief"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sulayman-sheba-belief",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-007",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Hz. Süleyman'ın Sebe hükümdarına gönderdiği mektup hangi ifadeyle başlar?",
     "options": [
       {
-        "id": "o1",
-        "text": "Selâm duasıyla"
+        "id": "o3",
+        "text": "Salveleyle"
+      },
+      {
+        "id": "o4",
+        "text": "Tekbirle"
       },
       {
         "id": "o2",
         "text": "Besmeleyle"
       },
       {
-        "id": "o3",
-        "text": "Bir tarih notuyla"
-      },
-      {
-        "id": "o4",
-        "text": "Bir savaş şiiriyle"
+        "id": "o1",
+        "text": "Hamdeleyle"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Neml 27/30'da Süleyman'ın mektubunun rahmân ve rahîm olan Allah'ın adıyla başladığı aktarılır.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=30&mode=meal",
-        "locator": "Neml 27/30, Kur’an Yolu metni",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Neml 27/30; PDF sayfa 400",
         "supports": "Neml 27/30'da Süleyman'ın mektubunun rahmân ve rahîm olan Allah'ın adıyla başladığı aktarılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "sulayman-letter"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sulayman-letter",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-008",
@@ -13468,45 +13511,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-prophets-010",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Kasas 28/13'te bebek Hz. Mûsâ kime geri kavuşturulur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Firavun'a"
+        "id": "o4",
+        "text": "Erkek kardeşine"
       },
       {
         "id": "o2",
         "text": "Annesine"
       },
       {
-        "id": "o3",
-        "text": "Kardeşi Hârûn'a"
+        "id": "o1",
+        "text": "Babasına"
       },
       {
-        "id": "o4",
-        "text": "Bir tüccara"
+        "id": "o3",
+        "text": "Kız kardeşine"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kasas sûresinde bebeğin annesine geri döndürülmesiyle annesinin gönlünün yatıştırıldığı anlatılır.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=28&ayet=13&mode=meal",
-        "locator": "Kasas 28/13, Diyanet indekslenmiş meal",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Kasas 28/13; PDF sayfa 407",
         "supports": "Kasas sûresinde bebeğin annesine geri döndürülmesiyle annesinin gönlünün yatıştırıldığı anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "musa-reunion-mother"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "musa-reunion-mother",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-011",
@@ -13806,26 +13850,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-history-004",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Kuzey Afrika'da Kayrevan şehrini kuran Emevî kumandanı kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Târık b. Ziyâd"
-      },
-      {
         "id": "o2",
         "text": "Ukbe b. Nâfi‘"
       },
       {
+        "id": "o1",
+        "text": "Mûsâ b. Nusayr"
+      },
+      {
         "id": "o3",
-        "text": "Hâlid b. Velîd"
+        "text": "Hassân b. Nu‘mân"
       },
       {
         "id": "o4",
-        "text": "Sa'd b. Ebû Vakkās"
+        "text": "Züheyr b. Kays"
       }
     ],
     "correctOptionId": "o2",
@@ -13833,18 +13877,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ukbe-b-nafi",
-        "locator": "50/670 Kayrevan'ın kuruluşu",
+        "locator": "101–104. satırlar",
         "supports": "Ukbe b. Nâfi‘ Kuzey Afrika'daki Kayrevan'ı askerî üs olarak kurmuştur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "qayrawan-founder"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "qayrawan-founder",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-history-005",
@@ -13932,26 +13977,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-history-007",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Endülüs seferinde Târık b. Ziyâd'ı kumandan olarak görevlendiren vali kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Ukbe b. Nâfi‘"
+        "id": "o4",
+        "text": "Züheyr b. Kays"
       },
       {
         "id": "o2",
         "text": "Mûsâ b. Nusayr"
       },
       {
-        "id": "o3",
-        "text": "Haccâc b. Yûsuf"
+        "id": "o1",
+        "text": "Ukbe b. Nâfi‘"
       },
       {
-        "id": "o4",
-        "text": "Ebü'l-Abbas es-Seffâh"
+        "id": "o3",
+        "text": "Hassân b. Nu‘mân"
       }
     ],
     "correctOptionId": "o2",
@@ -13959,83 +14004,85 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/tarik-b-ziyad",
-        "locator": "Kumandanlık görevi ve Mûsâ b. Nusayr",
+        "locator": "96–99. satırlar",
         "supports": "Kuzey Afrika valisi Mûsâ b. Nusayr, Endülüs seferinin kumandanlığını Târık b. Ziyâd'a verdi.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "tariq-iberia"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "tariq-iberia",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-history-008",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "İslâm matematik tarihinde cebir ilminin kurucularından sayılan âlim kimdir?",
+    "question": "“el-Muhtasar fî hisâbi’l-cebr ve’l-mukābele” adlı matematik eserinin yazarı kimdir?",
     "options": [
       {
         "id": "o1",
-        "text": "İbn Battûta"
+        "text": "Ebü’l-Vefâ el-Bûzcânî"
+      },
+      {
+        "id": "o3",
+        "text": "Sâbit b. Kurre"
+      },
+      {
+        "id": "o4",
+        "text": "Ömer Hayyâm"
       },
       {
         "id": "o2",
         "text": "Muhammed b. Mûsâ el-Hârizmî"
-      },
-      {
-        "id": "o3",
-        "text": "Hassân b. Sâbit"
-      },
-      {
-        "id": "o4",
-        "text": "Ebû Eyyûb el-Ensârî"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hârizmî, cebir çalışmalarıyla tanınan önemli bir matematikçi ve astronomdur.",
+    "explanation": "Hârizmî, Cebir ve Mukabele diye tanınan matematik eserini kaleme almıştır. Sonraki cebirciler bu çalışmadan yararlanmıştır; soru cebre katkı yapan tek kişinin o olduğunu ileri sürmez.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/harizmi-muhammed-b-musa",
-        "locator": "Giriş: cebir ilminin kurucusu kabul edilen matematikçi",
-        "supports": "Hârizmî, cebir çalışmalarıyla tanınan önemli bir matematikçi ve astronomdur.",
+        "locator": "117 ve 128–131. satırlar",
+        "supports": "Hârizmî, Cebir ve Mukabele diye tanınan matematik eserini kaleme almıştır. Sonraki cebirciler bu çalışmadan yararlanmıştır; soru cebre katkı yapan tek kişinin o olduğunu ileri sürmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "khwarizmi-algebra"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "khwarizmi-algebra",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-history-009",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Su saatleri ve otomatik düzeneklerle tanınan İslâm mühendisi kimdir?",
+    "question": "Artuklu sarayında çalışıp su saatleri ve otomatik düzenekler üzerine eser yazan bilgin kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İbn Haldûn"
+        "id": "o3",
+        "text": "Bîrûnî"
+      },
+      {
+        "id": "o4",
+        "text": "Uluğ Bey"
       },
       {
         "id": "o2",
         "text": "Cezerî"
       },
       {
-        "id": "o3",
-        "text": "İmam Mâlik"
-      },
-      {
-        "id": "o4",
-        "text": "Bîrûnî"
+        "id": "o1",
+        "text": "Hârizmî"
       }
     ],
     "correctOptionId": "o2",
@@ -14043,41 +14090,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/cezeri-ismail-b-rezzaz",
-        "locator": "Mekanik sistemler ve su saatleri",
+        "locator": "96–99. satırlar",
         "supports": "Cezerî su saatleri, otomatik düzenekler ve pompalar tasarlayan ünlü mühendistir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "jazari-machines"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "jazari-machines",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-history-010",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Uluğ Bey'in astronomi çalışmalarının merkezindeki rasathane hangi şehirdeydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mekke"
-      },
-      {
         "id": "o2",
         "text": "Semerkant"
       },
       {
+        "id": "o1",
+        "text": "Merâga"
+      },
+      {
         "id": "o3",
-        "text": "Kûfe"
+        "text": "Rey"
       },
       {
         "id": "o4",
-        "text": "Medine"
+        "text": "Bağdat"
       }
     ],
     "correctOptionId": "o2",
@@ -14085,41 +14133,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ulug-bey",
-        "locator": "Semerkant Rasathânesi ve Zîc-i Uluğ Bey",
+        "locator": "104–109. satırlar",
         "supports": "Uluğ Bey, Semerkant'ta büyük bir rasathane kurarak astronomi gözlemleri ve tablolar hazırlattı.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ulughbeg-samarkand"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ulughbeg-samarkand",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-history-011",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Yermük Savaşı'nda Müslüman ordularının karşısındaki büyük güç hangisiydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Moğol İmparatorluğu"
+        "id": "o4",
+        "text": "Göktürk Kağanlığı"
       },
       {
         "id": "o2",
         "text": "Bizans İmparatorluğu"
       },
       {
-        "id": "o3",
-        "text": "Haçlı kontlukları"
+        "id": "o1",
+        "text": "Sâsânî İmparatorluğu"
       },
       {
-        "id": "o4",
-        "text": "Abbâsî Devleti"
+        "id": "o3",
+        "text": "Aksum Krallığı"
       }
     ],
     "correctOptionId": "o2",
@@ -14127,18 +14176,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/yermuk-savasi",
-        "locator": "15/636, Bizans ordusuyla savaş",
+        "locator": "71 ve 96–101. satırlar",
         "supports": "Yermük Savaşı, Müslüman ordularıyla Bizans ordusu arasında gerçekleşti.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "yarmuk-byzantium"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yarmuk-byzantium",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-history-012",
@@ -14226,26 +14276,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-history-014",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Osmanlıların ilk döneminde İznik'te dârülhadis yaptıran devlet adamı kimdi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Sokullu Mehmed Paşa"
+        "id": "o4",
+        "text": "Bayezid Paşa"
       },
       {
         "id": "o2",
         "text": "Çandarlı Hayreddin Paşa"
       },
       {
-        "id": "o3",
-        "text": "Nizâmülmülk"
+        "id": "o1",
+        "text": "Çandarlı Ali Paşa"
       },
       {
-        "id": "o4",
-        "text": "Lala Mustafa Paşa"
+        "id": "o3",
+        "text": "Kara Timurtaş Paşa"
       }
     ],
     "correctOptionId": "o2",
@@ -14253,18 +14303,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/darulhadis",
-        "locator": "Osmanlı döneminin ilk dârülhadisleri",
+        "locator": "Dârülhadis 259–260; Çandarlı Ali 95–98; Bayezid 94–102. satırlar",
         "supports": "TDV maddesi, Osmanlıların ilk dârülhadis yapısının I. Murad döneminde Çandarlı Hayreddin Paşa tarafından İznik'te yaptırıldığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ottoman-first-darulhadis"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ottoman-first-darulhadis",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-general-001",
@@ -14566,26 +14617,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-general-008",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "Bir hadis rivayetinde aktarıcıların sırasını belirterek sözü ilk kaynağına götürme işlemine ne denir?",
+    "question": "Hadis metninden önce râvileri nakil sırasıyla zikrederek rivayeti ilk söyleyene bağlama işlemine ne denir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Hutbe"
-      },
       {
         "id": "o2",
         "text": "İsnad"
       },
       {
+        "id": "o1",
+        "text": "Tahrîc"
+      },
+      {
         "id": "o3",
-        "text": "İstiftâ"
+        "text": "Cerh"
       },
       {
         "id": "o4",
-        "text": "Teyemmüm"
+        "text": "Ta‘dîl"
       }
     ],
     "correctOptionId": "o2",
@@ -14593,41 +14644,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/isnad--hadis",
-        "locator": "Hadis terimi olarak isnadın tanımı",
+        "locator": "İsnad 96–101; Tahrîc 96–101; Cerh ve Ta‘dîl tanımları",
         "supports": "İsnad, hadis metnini aktaran râvilerin isimlerini sıralayıp rivayeti ilk söyleyene ulaştırma yöntemidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "isnad-term"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "isnad-term",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-general-009",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Hadis aktarımında 'râvi' sözü kimi ifade eder?",
+    "question": "Hadis ilminde ‘râvi’ terimi hangi temel görevi yapan kişiyi belirtir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Namazı yöneten imamı"
+        "id": "o4",
+        "text": "Hadisin kaynaklarını araştıran muharrici"
       },
       {
         "id": "o2",
-        "text": "Hadisi rivayet eden kişiyi"
+        "text": "Hadisi öğrenip nakleden kişiyi"
+      },
+      {
+        "id": "o1",
+        "text": "Hadis metnini açıklayan şârihi"
       },
       {
         "id": "o3",
-        "text": "Cami mimarını"
-      },
-      {
-        "id": "o4",
-        "text": "Vakıf yöneticisini"
+        "text": "Hadisleri kitapta toplayan musannifi"
       }
     ],
     "correctOptionId": "o2",
@@ -14635,41 +14687,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/isnad--hadis",
-        "locator": "İsnad tanımında râvilerin sıralanması",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/ravi",
+        "locator": "96–98 ve 112–113. satırlar; Tahrîc 97’de muharric",
         "supports": "Râvi, rivayeti kendinden sonraki kişiye nakleden kişidir; isnad bu aktarıcıların zincirini gösterir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "ravi-chain"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ravi-chain",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-general-010",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "Fıkıhta benzer iki meselede ortak gerekçeden hareketle hüküm belirleme yöntemine ne denir?",
+    "question": "Fıkıhta, ortak illet nedeniyle hükmü bilinen meseleden yeni meseleye hüküm aktarma yöntemi hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hatim"
+        "id": "o4",
+        "text": "İstihsan"
       },
       {
         "id": "o2",
         "text": "Kıyas"
       },
       {
-        "id": "o3",
-        "text": "Mahya"
+        "id": "o1",
+        "text": "İcmâ"
       },
       {
-        "id": "o4",
-        "text": "İkamet"
+        "id": "o3",
+        "text": "İstishâb"
       }
     ],
     "correctOptionId": "o2",
@@ -14677,41 +14730,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kiyas",
-        "locator": "Fıkıh bölümünde kıyas tanımı",
+        "locator": "283–285. satırlar",
         "supports": "Kıyas, hükmü açık bir meseleyle ortak özelliği bulunan yeni mesele için hüküm belirleme yöntemidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "qiyas-method"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "qiyas-method",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-general-011",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "İslâm hukukunda dinî delillerden hüküm çıkarma yöntemlerini inceleyen ilim hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Siyer"
+        "id": "o3",
+        "text": "Usûl-i hadis"
+      },
+      {
+        "id": "o4",
+        "text": "Usûl-i tefsir"
       },
       {
         "id": "o2",
         "text": "Usûl-i fıkıh"
       },
       {
-        "id": "o3",
-        "text": "Hat sanatı"
-      },
-      {
-        "id": "o4",
-        "text": "Coğrafya"
+        "id": "o1",
+        "text": "Fürû-i fıkıh"
       }
     ],
     "correctOptionId": "o2",
@@ -14719,41 +14773,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/usul-i-fikih",
-        "locator": "İlim dalının tanımı",
+        "locator": "71 ve 96–98. satırlar",
         "supports": "Usûl-i fıkıh, fıkhın kaynaklarını ve bu kaynaklardan nasıl hüküm çıkarılacağını inceleyen ilimdir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "usul-fiqh-method"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "usul-fiqh-method",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-general-012",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "Fıkıh usulünde yetkin âlimlerin bir hükümde görüş birliği yapması hangi kavramdır?",
+    "question": "Hz. Peygamber’in vefatından sonra bir dönemin müctehidlerinin dinî hükümde görüş birliğine ne denir?",
     "options": [
       {
         "id": "o1",
-        "text": "İhram"
+        "text": "Kıyas"
+      },
+      {
+        "id": "o3",
+        "text": "İstihsan"
+      },
+      {
+        "id": "o4",
+        "text": "İstishâb"
       },
       {
         "id": "o2",
         "text": "İcmâ"
-      },
-      {
-        "id": "o3",
-        "text": "İtikâf"
-      },
-      {
-        "id": "o4",
-        "text": "Mihrap"
       }
     ],
     "correctOptionId": "o2",
@@ -14761,18 +14816,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/icma",
-        "locator": "Terim tanımı, müctehidlerin ittifakı",
+        "locator": "96–100. satırlar",
         "supports": "İcmâ, fıkıh usulünde gerekli şartları taşıyan müctehidlerin bir dinî hükümde ittifak etmesini ifade eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ijma-term"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ijma-term",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-general-013",
@@ -14818,45 +14874,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-general-014",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "Vakıf belgelerinde gelirlerin toplanması ve işletmenin yönetimi için görevlendirilen yönetici hangi adla anılabilir?",
+    "question": "Eşrefiyye Dârülhadisi vakfiyesinde kurumun gelir ve giderlerinden sorumlu yönetici hangi adla anılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Müezzin"
+        "id": "o3",
+        "text": "Mukrî"
+      },
+      {
+        "id": "o4",
+        "text": "Hadis kārii"
       },
       {
         "id": "o2",
         "text": "Nâzır"
       },
       {
-        "id": "o3",
-        "text": "Müfessir"
-      },
-      {
-        "id": "o4",
-        "text": "Kāri"
+        "id": "o1",
+        "text": "Hâzin"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Dârülhadis vakfiyelerinde nâzırın vakıf gelirlerini toplama, idare ve harcamaları takip etme görevi anlatılır.",
+    "explanation": "TDV’nin aktardığı Eşrefiyye Dârülhadisi vakfiyesinde nâzır kurumun idaresi, gelirlerinin toplanması ve gerekli yerlere harcanmasıyla görevlidir. Vakıflardaki bütün yönetici unvanlarının daima aynı olduğu ileri sürülmez.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/darulhadis",
-        "locator": "Dârülhadis vakfiyesi, nâzırın görevleri",
-        "supports": "Dârülhadis vakfiyelerinde nâzırın vakıf gelirlerini toplama, idare ve harcamaları takip etme görevi anlatılır.",
+        "locator": "136–142. satırlar",
+        "supports": "TDV’nin aktardığı Eşrefiyye Dârülhadisi vakfiyesinde nâzır kurumun idaresi, gelirlerinin toplanması ve gerekli yerlere harcanmasıyla görevlidir. Vakıflardaki bütün yönetici unvanlarının daima aynı olduğu ileri sürülmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynakla doğrulama koşullu kullanım izni esas alınmıştır. Bağımsız editör veya dinî uzman kontrolü yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "waqf-nazir"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "waqf-nazir",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-quran-001",
@@ -15158,68 +15215,69 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-quran-008",
-    "version": 3,
+    "version": 4,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Felak sûresinin başlangıcında hangi varlığın Rabbine sığınılır?",
+    "question": "Felak 113/1’de geçen ‘felak’ kelimesi Diyanet mealinde neyle karşılanır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Denizlerin"
+        "id": "o4",
+        "text": "Akşam"
       },
       {
         "id": "o2",
-        "text": "Sabah aydınlığının"
+        "text": "Sabah"
+      },
+      {
+        "id": "o1",
+        "text": "Gece"
       },
       {
         "id": "o3",
-        "text": "Dağların"
-      },
-      {
-        "id": "o4",
-        "text": "Rüzgârların"
+        "text": "Öğle"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Felak kelimesi sabah aydınlığıyla ilişkilendirilir; sûrede onun Rabbine sığınma ifadesi geçer.",
+    "explanation": "Diyanet Kur’an Yolu Meali’nde Felak sûresinin ilk âyetindeki ifade sabahın Rabbine sığınmayı anlatır. Kelimeyle ilgili diğer tefsir yorumları bu meale bağlı sorunun dışında tutulur.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=113&ayet=1&mode=meal",
-        "locator": "Felak 113/1, resmî indekslenmiş Kur’an Yolu meal",
-        "supports": "Felak kelimesi sabah aydınlığıyla ilişkilendirilir; sûrede onun Rabbine sığınma ifadesi geçer.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Felak 113/1; PDF sayfa 661",
+        "supports": "Diyanet Kur’an Yolu Meali’nde Felak sûresinin ilk âyetindeki ifade sabahın Rabbine sığınmayı anlatır. Kelimeyle ilgili diğer tefsir yorumları bu meale bağlı sorunun dışında tutulur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "falaq-daybreak"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "falaq-daybreak",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-quran-009",
-    "version": 2,
+    "version": 3,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Saf sûresinin adındaki 'saf' sözcüğü hangi kavrama işaret eder?",
     "options": [
       {
         "id": "o1",
-        "text": "Hac yolculuğuna"
+        "text": "Daire biçiminde toplanmaya"
+      },
+      {
+        "id": "o3",
+        "text": "Dağınık biçimde ilerlemeye"
+      },
+      {
+        "id": "o4",
+        "text": "Küçük gruplara ayrılmaya"
       },
       {
         "id": "o2",
         "text": "Sıra hâlinde dizilmeye"
-      },
-      {
-        "id": "o3",
-        "text": "Bir kuş türüne"
-      },
-      {
-        "id": "o4",
-        "text": "Bir şehir kapısına"
       }
     ],
     "correctOptionId": "o2",
@@ -15227,18 +15285,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/saf-suresi",
-        "locator": "SAF, ilk paragraf",
+        "locator": "96–99. satırlar",
         "supports": "Saf sûresi adını Allah yolunda kenetlenmiş bir yapı gibi saf tutanlardan söz eden âyetten alır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "saff-name"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "saff-name",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-quran-010",
@@ -15330,66 +15389,66 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 3,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Tîn sûresi 95/4'te insanın yaratılışı hangi ifadeyle nitelenir?",
+    "question": "Tîn 95/4’te insanın yaratılışını nitelemek için hangi ifade kullanılır?",
     "options": [
       {
         "id": "o4",
-        "text": "Zayıf bir tabiatta"
+        "text": "Temiz fıtrat"
       },
       {
         "id": "o2",
-        "text": "En güzel biçimde"
+        "text": "En güzel biçim"
       },
       {
         "id": "o1",
-        "text": "Aceleci bir yapıda"
+        "text": "Doğru yol"
       },
       {
         "id": "o3",
-        "text": "Zorluk ve meşakkat içinde"
+        "text": "Yüce makam"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Tîn sûresi 4. âyette insanın en güzel biçimde yaratıldığını bildirir.",
+    "explanation": "Tîn 95/4’te insanın en güzel biçimde yaratıldığı bildirilir. Soru diğer olumlu kavramların dinî değerini değil bu ayetteki ifadenin karşılığını sorar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "Türkiye Diyanet Vakfı",
-        "url": "https://islamansiklopedisi.org.tr/tin-suresi",
-        "locator": "TÎN, muhteva 4. ayet",
-        "supports": "Karşılaştırılan cevap kavramı: En güzel biçimde (doğrudan kaynak alıntısı değildir).",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Tîn 95/4; PDF sayfa 650",
+        "supports": "Tîn 95/4’te insanın en güzel biçimde yaratıldığı bildirilir. Soru diğer olumlu kavramların dinî değerini değil bu ayetteki ifadenin karşılığını sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-28"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-28",
     "conceptGroup": "tin-human-creation",
     "reviewedAt": undefined
   },
   {
     "id": "v11-quran-013",
-    "version": 3,
+    "version": 4,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Nebe' sûresinin adındaki 'nebe' sözcüğü ne anlama gelir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Işık"
+        "id": "o3",
+        "text": "Soru"
+      },
+      {
+        "id": "o4",
+        "text": "Cevap"
       },
       {
         "id": "o2",
         "text": "Haber"
       },
       {
-        "id": "o3",
-        "text": "Deniz"
-      },
-      {
-        "id": "o4",
-        "text": "Kapı"
+        "id": "o1",
+        "text": "Emir"
       }
     ],
     "correctOptionId": "o2",
@@ -15397,186 +15456,191 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/nebe-suresi",
-        "locator": "NEBE’, ilk paragraf",
+        "locator": "97–100. satırlar",
         "supports": "Nebe' kelimesi haber anlamına gelir; sûrede 'büyük haber' ifadesi yer alır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "naba-name"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "naba-name",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-001",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Yûsuf 12/18'e göre kardeşleri babalarına Hz. Yûsuf'un gömleğini nasıl getirir?",
     "options": [
       {
         "id": "o1",
-        "text": "Kuru ve temiz olarak"
-      },
-      {
-        "id": "o2",
-        "text": "Üzerinde sahte kanla"
+        "text": "Etekleri yırtılmış olarak"
       },
       {
         "id": "o3",
-        "text": "İkiye kesilmiş hâlde"
+        "text": "Çamura bulanmış olarak"
       },
       {
         "id": "o4",
-        "text": "Altınla süslenmiş olarak"
+        "text": "Suya batırılmış olarak"
+      },
+      {
+        "id": "o2",
+        "text": "Üzerine kan sürülmüş olarak"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Yûsuf sûresine göre kardeşler Hz. Yûsuf'un gömleğini üzerinde uydurma bir kan iziyle babalarına getirir.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=18&mode=meal",
-        "locator": "Yûsuf 12/18, önceki canlı Kur’an Yolu okuması",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Yûsuf 12/18; PDF sayfa 249",
         "supports": "Yûsuf sûresine göre kardeşler Hz. Yûsuf'un gömleğini üzerinde uydurma bir kan iziyle babalarına getirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yusuf-shirt-blood"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yusuf-shirt-blood",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-002",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Yûsuf 12/21’de Hz. Yûsuf’u satın alan kişi hangi ülkedendir?",
+    "question": "Yûsuf 12/21’de onu satın alan kişinin nereli olduğu belirtilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yemen'e"
-      },
-      {
-        "id": "o2",
-        "text": "Mısır'a"
-      },
-      {
         "id": "o3",
-        "text": "Habeşistan'a"
+        "text": "Habeşistanlı"
       },
       {
         "id": "o4",
-        "text": "Şam'a"
+        "text": "Şamlı"
+      },
+      {
+        "id": "o2",
+        "text": "Mısırlı"
+      },
+      {
+        "id": "o1",
+        "text": "Yemenli"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Yûsuf sûresinde onu Mısır'da satın alan kişinin eşine kendisine iyi bakmasını söylediği anlatılır.",
+    "explanation": "Yûsuf 12/21’de onu satın alan kişi Mısırlı olarak tanıtılır ve eşinden ona iyi bakmasını ister.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=21&mode=meal",
-        "locator": "Yûsuf 12/21, önceki canlı Kur’an Yolu okuması",
-        "supports": "Yûsuf sûresinde onu Mısır'da satın alan kişinin eşine kendisine iyi bakmasını söylediği anlatılır.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Yûsuf 12/21; PDF sayfa 249",
+        "supports": "Yûsuf 12/21’de onu satın alan kişi Mısırlı olarak tanıtılır ve eşinden ona iyi bakmasını ister.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yusuf-egypt"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yusuf-egypt",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Hz. Yûsuf hükümdarın rüyasını yorumlamadan önce hangi yerde bulunuyordu?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir gemide"
+        "id": "o4",
+        "text": "Şehir kapısında"
       },
       {
         "id": "o2",
         "text": "Hapishanede"
       },
       {
-        "id": "o3",
-        "text": "Bir medresede"
+        "id": "o1",
+        "text": "Hükümdarın sarayında"
       },
       {
-        "id": "o4",
-        "text": "Bir çadırda"
+        "id": "o3",
+        "text": "Bir tüccarın evinde"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Hz. Yûsuf, zindanda bulunduğu sırada rüya yorumlarıyla tanınmış ve hükümdarın rüyası hakkında da görüş bildirmiştir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
-        "locator": "YÛSUF SÛRESİ, zindan ve hükümdarın rüyası",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Yûsuf 12/36 ve 12/43–46; PDF sayfa 250–252",
         "supports": "Hz. Yûsuf, zindanda bulunduğu sırada rüya yorumlarıyla tanınmış ve hükümdarın rüyası hakkında da görüş bildirmiştir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yusuf-prison"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yusuf-prison",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-004",
-    "version": 3,
+    "version": 4,
     "categoryId": "prophets",
     "difficulty": "hard",
     "question": "Yûsuf 12/47'de ürünlerin büyük kısmının nasıl saklanması öğütlenir?",
     "options": [
       {
         "id": "o1",
-        "text": "Tuzlu suya yatırılarak"
+        "text": "Tanelerine ayrılıp kurutularak"
+      },
+      {
+        "id": "o3",
+        "text": "Öğütülüp un hâline getirilerek"
+      },
+      {
+        "id": "o4",
+        "text": "Kavrulup kaplara doldurularak"
       },
       {
         "id": "o2",
         "text": "Başaklarında bırakılarak"
-      },
-      {
-        "id": "o3",
-        "text": "Taze tüketilerek"
-      },
-      {
-        "id": "o4",
-        "text": "Nehirde bekletilerek"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Hz. Yûsuf bolluk yıllarında biçilen ürünlerin yalnızca az bir kısmının yenmesini, kalanının başağında korunmasını öğütler.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=47&mode=meal",
-        "locator": "Yûsuf 12/47, önceki canlı Kur’an Yolu okuması",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Yûsuf 12/47; PDF sayfa 252",
         "supports": "Hz. Yûsuf bolluk yıllarında biçilen ürünlerin yalnızca az bir kısmının yenmesini, kalanının başağında korunmasını öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yusuf-storing-harvest"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yusuf-storing-harvest",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-005",
@@ -15791,45 +15855,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-prophets-010",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "easy",
     "question": "Sâffât 37/142'ye göre Hz. Yûnus'u hangi canlı yutar?",
     "options": [
       {
         "id": "o1",
-        "text": "Bir aslan"
-      },
-      {
-        "id": "o2",
-        "text": "Büyük bir balık"
+        "text": "Bir fok"
       },
       {
         "id": "o3",
-        "text": "Bir deve"
+        "text": "Bir deniz kaplumbağası"
       },
       {
         "id": "o4",
-        "text": "Bir yılan"
+        "text": "Bir ahtapot"
+      },
+      {
+        "id": "o2",
+        "text": "Bir balık"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Sâffât sûresinde Hz. Yûnus'un bir balık tarafından yutulduğu anlatılır.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=37&ayet=142&mode=meal",
-        "locator": "Sâffât 37/142, resmî indekslenmiş meal",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Sâffât 37/142; PDF sayfa 475",
         "supports": "Sâffât sûresinde Hz. Yûnus'un bir balık tarafından yutulduğu anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yunus-fish"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yunus-fish",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-011",
@@ -15917,68 +15982,69 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-prophets-013",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Hûd 11/64'te Hz. Sâlih'in kavmine Allah'ın işareti olarak gösterdiği hayvan hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "At"
+        "id": "o3",
+        "text": "Dişi koyun"
+      },
+      {
+        "id": "o4",
+        "text": "Dişi geyik"
       },
       {
         "id": "o2",
         "text": "Dişi deve"
       },
       {
-        "id": "o3",
-        "text": "Koç"
-      },
-      {
-        "id": "o4",
-        "text": "Geyik"
+        "id": "o1",
+        "text": "Dişi at"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Hz. Sâlih kavmine Allah'ın devesini bir işaret olarak gösterir ve ona zarar vermemelerini ister.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=11&ayet=64&mode=meal",
-        "locator": "Hûd 11/64–65, resmî indekslenmiş meal",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Hûd 11/64; PDF sayfa 240",
         "supports": "Hz. Sâlih kavmine Allah'ın devesini bir işaret olarak gösterir ve ona zarar vermemelerini ister.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "salih-shecamel"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "salih-shecamel",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-history-001",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "İslâm felsefesinde 'Muallim-i Sânî' unvanıyla tanınan düşünür kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İbn Battûta"
+        "id": "o3",
+        "text": "İbn Rüşd"
+      },
+      {
+        "id": "o4",
+        "text": "Kindî"
       },
       {
         "id": "o2",
         "text": "Fârâbî"
       },
       {
-        "id": "o3",
-        "text": "Pîrî Reis"
-      },
-      {
-        "id": "o4",
-        "text": "İbn Haldûn"
+        "id": "o1",
+        "text": "İbn Sînâ"
       }
     ],
     "correctOptionId": "o2",
@@ -15986,41 +16052,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/farabi",
-        "locator": "Felsefe ve mûsiki bölümünde Muallim-i Sânî",
+        "locator": "708. satır; felsefe dünyasındaki unvan",
         "supports": "Fârâbî, Aristoteles'ten sonra 'İkinci Öğretmen' anlamına gelen Muallim-i Sânî diye anılmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "farabi-title"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "farabi-title",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-history-002",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Fârâbî'nin erdemli toplum anlayışıyla ilişkilendirilen ünlü eseri hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Kitâb-ı Bahriyye"
-      },
-      {
-        "id": "o2",
-        "text": "el-Medînetü'l-fâzıla"
+        "text": "Tehâfütü’l-felâsife"
       },
       {
         "id": "o3",
-        "text": "Mukaddime"
+        "text": "Hay b. Yakzân"
       },
       {
         "id": "o4",
-        "text": "Keşfü'z-zunûn"
+        "text": "Faslü’l-makāl"
+      },
+      {
+        "id": "o2",
+        "text": "el-Medînetü’l-fâzıla"
       }
     ],
     "correctOptionId": "o2",
@@ -16028,18 +16095,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/farabi",
-        "locator": "Fârâbî'nin siyaset felsefesi ve eserleri",
+        "locator": "334–339. satırlar; temel eserler",
         "supports": "Fârâbî'nin el-Medînetü'l-fâzıla adlı eseri erdemli şehir ve toplum düşüncesiyle ilişkilidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "farabi-ideal-city"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "farabi-ideal-city",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-history-003",
@@ -16085,26 +16153,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-history-004",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "İbn Haldûn'un toplum hayatını incelemek üzere geliştirdiği ilim anlayışı hangi adla bilinir?",
+    "question": "İbn Haldûn’un tarihî ve toplumsal hayatı inceleyen yeni bilimine verdiği ad nedir?",
     "options": [
       {
         "id": "o1",
-        "text": "Kıraat ilmi"
+        "text": "Siyaset ilmi"
+      },
+      {
+        "id": "o3",
+        "text": "Ahlâk ilmi"
+      },
+      {
+        "id": "o4",
+        "text": "Mantık ilmi"
       },
       {
         "id": "o2",
         "text": "Umran ilmi"
-      },
-      {
-        "id": "o3",
-        "text": "Hat sanatı"
-      },
-      {
-        "id": "o4",
-        "text": "Arûz ilmi"
       }
     ],
     "correctOptionId": "o2",
@@ -16112,18 +16180,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ibn-haldun",
-        "locator": "Görüşleri: umran ilmi",
+        "locator": "289–295 ve 318–322. satırlar",
         "supports": "İbn Haldûn toplumların yapılarını ve değişimlerini açıklamaya yönelik yaklaşımını umran ilmiyle temellendirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ibn-khaldun-umran"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ibn-khaldun-umran",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-history-005",
@@ -16253,26 +16322,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-history-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "İbn Sînâ'nın tıp alanındaki meşhur eserinin adı hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Keşfü'z-zunûn"
+        "id": "o2",
+        "text": "el-Kānûn fi’t-tıbb"
       },
       {
-        "id": "o2",
-        "text": "el-Kānûn fi't-tıbb"
+        "id": "o1",
+        "text": "el-Hâvî fi’t-tıbb"
       },
       {
         "id": "o3",
-        "text": "Kitâb-ı Bahriyye"
+        "text": "et-Tasrîf"
       },
       {
         "id": "o4",
-        "text": "Mukaddime"
+        "text": "Kâmilü’s-sınâati’t-tıbbiyye"
       }
     ],
     "correctOptionId": "o2",
@@ -16280,18 +16349,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ibn-sina",
-        "locator": "Tıp eserleri: el-Kānûn fi't-tıbb",
+        "locator": "İbn Sînâ 543–548; Zehrâvî 97–98. satırlar",
         "supports": "İbn Sînâ'nın el-Kānûn fi't-tıbb adlı eseri yüzyıllar boyunca tıp eğitiminde etkili olmuştur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ibn-sina-canon"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ibn-sina-canon",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-history-009",
@@ -16506,13 +16576,17 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-general-002",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Kur'an harflerinin doğru telaffuzunu ve okunuş kurallarını inceleyen ilim hangisidir?",
     "options": [
       {
-        "id": "o1",
+        "id": "o3",
+        "text": "Hadis"
+      },
+      {
+        "id": "o4",
         "text": "Fıkıh"
       },
       {
@@ -16520,12 +16594,8 @@ export const questionsV73Candidate: readonly Question[] = [
         "text": "Tecvid"
       },
       {
-        "id": "o3",
-        "text": "Siyer"
-      },
-      {
-        "id": "o4",
-        "text": "Coğrafya"
+        "id": "o1",
+        "text": "Tefsir"
       }
     ],
     "correctOptionId": "o2",
@@ -16533,41 +16603,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-        "locator": "Tecvid ilminin tanımı: mahreç, sıfat ve tilâvet kuralları",
+        "locator": "96–102. satırlar",
         "supports": "Tecvid ilmi Kur'an harflerinin doğru telaffuzunu, durakları ve diğer okuyuş kurallarını ele alır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "tajwid-rules"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "tajwid-rules",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-general-003",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Cuma ve bayram namazlarıyla ilişkili dinî konuşmanın adı nedir?",
+    "question": "Cuma ve bayram namazlarında hatibin yaptığı, ibadetin bir bölümü olan dinî konuşmaya ne denir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Mukabele"
-      },
       {
         "id": "o2",
         "text": "Hutbe"
       },
       {
+        "id": "o1",
+        "text": "Vaaz"
+      },
+      {
         "id": "o3",
-        "text": "Tilâvet secdesi"
+        "text": "Ders"
       },
       {
         "id": "o4",
-        "text": "İtikâf"
+        "text": "Sohbet"
       }
     ],
     "correctOptionId": "o2",
@@ -16575,18 +16646,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hutbe",
-        "locator": "Madde tanımı, cuma ve bayram konuşmaları",
+        "locator": "71 ve 96–103. satırlar",
         "supports": "Hutbe, özellikle cuma ve bayram namazları sırasında topluluğa yöneltilen dinî konuşmadır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "hutbe-definition"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "hutbe-definition",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-general-004",
@@ -16632,26 +16704,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-general-005",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Tecvidde bir harfin ağız veya boğazdaki çıkış yerine ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kıble"
-      },
-      {
         "id": "o2",
         "text": "Mahreç"
       },
       {
+        "id": "o1",
+        "text": "Sıfat"
+      },
+      {
         "id": "o3",
-        "text": "Minber"
+        "text": "Med"
       },
       {
         "id": "o4",
-        "text": "Mushaf"
+        "text": "Vakf"
       }
     ],
     "correctOptionId": "o2",
@@ -16659,18 +16731,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-        "locator": "Tecvidin harflerin mahreç ve sıfatlarını ele alması",
+        "locator": "96 ve 101–102. satırlar",
         "supports": "Tecvid ilminde mahreç, harfin ses olarak çıktığı yeri ifade eder; doğru telaffuzda önemlidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "tajwid-rules"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "tajwid-rules",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-general-006",
@@ -16758,26 +16831,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-general-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Türkçede Kur'an âyetlerinin anlamlarını aktarmaya yönelik çeviriye ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İsnad"
-      },
-      {
         "id": "o2",
         "text": "Meâl"
       },
       {
+        "id": "o1",
+        "text": "Tefsir"
+      },
+      {
         "id": "o3",
-        "text": "Kıyas"
+        "text": "Tecvid"
       },
       {
         "id": "o4",
-        "text": "Vakfiye"
+        "text": "Kıraat"
       }
     ],
     "correctOptionId": "o2",
@@ -16785,41 +16858,42 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/meal",
-        "locator": "Meâl: Türkçede Kur'an çevirileri terimi",
+        "locator": "71 ve 97–98. satırlar",
         "supports": "Meâl, Türkiye'de Kur'an âyetlerinin anlamını aktarmayı amaçlayan çeviriler için kullanılan addır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "meal-term"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "meal-term",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-general-009",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Kur'an âyetlerini açıklama ve yorumlama faaliyetine ne ad verilir?",
+    "question": "Âyetlerin dilini, bağlamını ve anlamını ayrıntılı biçimde açıklayan ilim dalı hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İstiftâ"
+        "id": "o3",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o4",
+        "text": "Tecvid"
       },
       {
         "id": "o2",
         "text": "Tefsir"
       },
       {
-        "id": "o3",
-        "text": "Mukabele"
-      },
-      {
-        "id": "o4",
-        "text": "Nisab"
+        "id": "o1",
+        "text": "Meâl"
       }
     ],
     "correctOptionId": "o2",
@@ -16827,18 +16901,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/tefsir",
-        "locator": "Tefsir ilminin konusu ve tanımı",
+        "locator": "111–113. satırlar",
         "supports": "Tefsir, Kur'an âyetlerinin anlamlarını, bağlamlarını ve yorumlarını inceleyen ilim alanıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "tafsir-definition"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "tafsir-definition",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-general-010",
@@ -16884,26 +16959,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-general-011",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Özellikle ramazanda bir kişinin Kur'an okuyup diğerlerinin takip ettiği gelenek hangisidir?",
+    "question": "Ramazanda bir kişinin Kur’an okuyup diğerlerinin mushaflarından takip ettiği gelenek hangi adla anılır?",
     "options": [
-      {
-        "id": "o1",
-        "text": "İstiftâ"
-      },
       {
         "id": "o2",
         "text": "Mukabele"
       },
       {
+        "id": "o1",
+        "text": "Hatim"
+      },
+      {
         "id": "o3",
-        "text": "Tavaf"
+        "text": "Tilâvet"
       },
       {
         "id": "o4",
-        "text": "Akîka"
+        "text": "Mevlid"
       }
     ],
     "correctOptionId": "o2",
@@ -16911,102 +16986,105 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mukabele--kuran",
-        "locator": "Kur'an'ı okuyanın takip edilmesi geleneği",
+        "locator": "71 ve 96–100. satırlar",
         "supports": "Mukabele, okunan Kur'an'ı dinleyip takip etmeye dayalı; ramazanda yaygın olan kıraat geleneğidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "muqabala-tradition"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "muqabala-tradition",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-general-012",
-    "version": 3,
+    "version": 4,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Kur’an’ın başından sonuna kadar okunup tamamlanmasına ne denir?",
     "options": [
       {
         "id": "o1",
-        "text": "Mahya"
+        "text": "Mukabele"
+      },
+      {
+        "id": "o3",
+        "text": "Tilâvet"
+      },
+      {
+        "id": "o4",
+        "text": "Tecvid"
       },
       {
         "id": "o2",
         "text": "Hatim"
-      },
-      {
-        "id": "o3",
-        "text": "Tevbe"
-      },
-      {
-        "id": "o4",
-        "text": "Mihrap"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kur'an'ın başından sonuna okunup tamamlanmasına hatim denir; mukabele geleneğinde de hatim yapılır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Hatim",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hatim--kuran",
-        "locator": "HATİM, tanım paragrafı",
+        "locator": "111. satır",
         "supports": "Kur'an'ın başından sonuna okunup tamamlanmasına hatim denir; mukabele geleneğinde de hatim yapılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kapanış kaynak/seçenek düzeltmesi; ürün sahibi yayın talimatı. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "hatim-complete"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "hatim-complete",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-quran-001",
-    "version": 3,
+    "version": 4,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Bakara 2/183'te orucun farz kılınması hangi amaçla ilişkilendirilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Ticaret yollarını genişletmek"
+        "id": "o4",
+        "text": "İstişare yoluyla uzlaşmak"
       },
       {
         "id": "o2",
         "text": "Takvâ bilincine ulaşmak"
       },
       {
-        "id": "o3",
-        "text": "Sadece beden gücünü artırmak"
+        "id": "o1",
+        "text": "İnfak alışkanlığı kazanmak"
       },
       {
-        "id": "o4",
-        "text": "Yalnızca seyahat etmek"
+        "id": "o3",
+        "text": "Emanet bilincini geliştirmek"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Bakara 2/183 mealinde oruç, korunma ve sakınmayla ilişkilendirilir. Tefsir bunu takvâ, yani Allah’a karşı sorumluluk bilinciyle açıklar; “takvâ bilinci” bu anlamın açıklamasıdır.",
+    "explanation": "Bakara 2/183’te oruç emri sakınmayla ilişkilendirilir. Takvâ, Allah’ın emirlerine uyup yasaklarından sakınma bilinciyle ilgilidir; bu kelime açıklayıcı bir karşılıktır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=183&mode=tefsir&sure=2",
-        "locator": "Bakara 2/183",
-        "supports": "Bakara 2/183 mealinde oruç, korunma ve sakınmayla ilişkilendirilir. Tefsir bunu takvâ, yani Allah’a karşı sorumluluk bilinciyle açıklar; “takvâ bilinci” bu anlamın açıklamasıdır.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Bakara 2/183, PDF sayfa 34; TDV TAKVÂ 96–97 ile sakınma kavramı karşılaştırıldı",
+        "supports": "Bakara 2/183’te oruç emri sakınmayla ilişkilendirilir. Takvâ, Allah’ın emirlerine uyup yasaklarından sakınma bilinciyle ilgilidir; bu kelime açıklayıcı bir karşılıktır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kapanış kaynak/seçenek düzeltmesi; ürün sahibi yayın talimatı. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fasting-purpose"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fasting-purpose",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-quran-002",
@@ -17052,45 +17130,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-quran-003",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Bakara 2/261'de Allah yolunda harcamanın bereketi hangi ürünle örneklendirilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Dört yapraklı bir ağaç"
+        "id": "o3",
+        "text": "Yedi sürgün veren bir fidan"
+      },
+      {
+        "id": "o4",
+        "text": "Yedi çiçek veren bir bitki"
       },
       {
         "id": "o2",
         "text": "Yedi başak veren bir tane"
       },
       {
-        "id": "o3",
-        "text": "Bir küp su"
-      },
-      {
-        "id": "o4",
-        "text": "Üç taşlı bir dağ"
+        "id": "o1",
+        "text": "Yedi meyve veren bir dal"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Bakara 2/261'de tek taneden yedi başak çıkması örneği, Allah yolunda harcamanın karşılığını anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=261&mode=tefsir&sure=2",
-        "locator": "Bakara 2/261",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Bakara 2/261; PDF sayfa 51",
         "supports": "Bakara 2/261'de tek taneden yedi başak çıkması örneği, Allah yolunda harcamanın karşılığını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "infak-seven-ears"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "infak-seven-ears",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-quran-004",
@@ -17137,45 +17216,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-quran-005",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Bakara 2/282'de vadeli borç ilişkilerinde ne yapılması öğütlenir?",
     "options": [
       {
         "id": "o1",
-        "text": "Her kaydın yakılması"
-      },
-      {
-        "id": "o2",
-        "text": "Borcun yazıyla kayıt altına alınması"
+        "text": "Borç için rehin alınması"
       },
       {
         "id": "o3",
-        "text": "Şahitlerin dışlanması"
+        "text": "Borcun vadesinin uzatılması"
       },
       {
         "id": "o4",
-        "text": "Vadenin tamamen gizlenmesi"
+        "text": "Borcun bir kısmının bağışlanması"
+      },
+      {
+        "id": "o2",
+        "text": "Borcun yazıyla belgelenmesi"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kur'an'ın borçlanmayla ilgili bu âyetinde vadeli borçların yazıyla belgelenmesi vurgulanır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=282&mode=tefsir&sure=2",
-        "locator": "Bakara 2/282",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Bakara 2/282; PDF sayfa 55",
         "supports": "Kur'an'ın borçlanmayla ilgili bu âyetinde vadeli borçların yazıyla belgelenmesi vurgulanır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "debts-writing"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "debts-writing",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-quran-006",
@@ -17440,7 +17520,7 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 3,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Kāria 101/6-9'da kurtuluşla ilişkilendirilen tartı özelliği hangisidir?",
+    "question": "Kāria 101/6–9’da hoşnutluk veren hayat hangi durumla ilişkilendirilir?",
     "options": [
       {
         "id": "o2",
@@ -17466,15 +17546,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 101/6; PDF sayfa 655 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: İyilik tartısının ağır gelmesi (doğrudan kaynak alıntısı değildir).",
+        "locator": "Kāria 101/6–9; PDF sayfa 655",
+        "supports": "Kāria sûresinde tartıları ağır gelenlerin hoşnutluk veren bir hayata erişecekleri belirtilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-28"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-28",
     "conceptGroup": "qaria-heavy-scales",
     "reviewedAt": undefined
   },
@@ -17566,265 +17646,275 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-prophets-002",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "easy",
     "question": "Enbiyâ 21/83'te Hz. Eyyûb Allah'a hangi durumunu arz eder?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yeni bir ülke fethettiğini"
+        "id": "o2",
+        "text": "Uğradığı dert ve sıkıntıyı"
       },
       {
-        "id": "o2",
-        "text": "Bir sıkıntıya uğradığını"
+        "id": "o1",
+        "text": "Yaşlılıkta çocuk özlemini"
       },
       {
         "id": "o3",
-        "text": "Denizde kaybolduğunu"
+        "text": "Kavminin tepkisine üzüntüyü"
       },
       {
         "id": "o4",
-        "text": "Zenginleştiğini"
+        "text": "Ailesinden uzak kalmanın acısını"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Hz. Eyyûb, sıkıntıya uğradığını belirterek Allah'ın merhametine sığınır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=83&mode=tefsir&sure=21",
-        "locator": "Enbiyâ 21/83: Eyyûb'un yakarışı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Enbiyâ 21/83; PDF sayfa 345",
         "supports": "Hz. Eyyûb, sıkıntıya uğradığını belirterek Allah'ın merhametine sığınır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "eyyub-dua"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "eyyub-dua",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "easy",
     "question": "Enbiyâ 21/69'a göre Hz. İbrâhim için ateşe ne olması emredilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Daha çok alevlenmesi"
-      },
-      {
-        "id": "o2",
-        "text": "Serin ve esenlik olması"
+        "text": "Işık ve aydınlık vermesi"
       },
       {
         "id": "o3",
-        "text": "Denize dönüşmesi"
+        "text": "Sönerek küle dönüşmesi"
       },
       {
         "id": "o4",
-        "text": "Gökten yağması"
+        "text": "Kıvılcım ve duman saçması"
+      },
+      {
+        "id": "o2",
+        "text": "Serinlik ve esenlik olması"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Enbiyâ 21/69'da ateşe Hz. İbrâhim için serinlik ve esenlik olması emredilir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=69&mode=tefsir&sure=21",
-        "locator": "Enbiyâ 21/69",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Enbiyâ 21/69; PDF sayfa 344",
         "supports": "Enbiyâ 21/69'da ateşe Hz. İbrâhim için serinlik ve esenlik olması emredilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "ibrahim-fire"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ibrahim-fire",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-004",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "hard",
     "question": "Neml 27/39'da Sebe hükümdarının tahtını getirmeyi teklif eden varlık kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir balıkçı"
+        "id": "o4",
+        "text": "Meleklerden bir elçi"
       },
       {
         "id": "o2",
         "text": "Cinlerden bir ifrit"
       },
       {
-        "id": "o3",
-        "text": "Bir kervancı"
+        "id": "o1",
+        "text": "İnsanlardan bir bilgin"
       },
       {
-        "id": "o4",
-        "text": "Bir çoban"
+        "id": "o3",
+        "text": "Kuşlardan bir haberci"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Neml 27/39'da cinlerden bir ifrit, tahtı Hz. Süleyman yerinden kalkmadan önce getirebileceğini söyler.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=39&mode=tefsir&sure=27",
-        "locator": "Neml 27/39",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Neml 27/39–40; PDF sayfa 401",
         "supports": "Neml 27/39'da cinlerden bir ifrit, tahtı Hz. Süleyman yerinden kalkmadan önce getirebileceğini söyler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "sulayman-throne-offer"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sulayman-throne-offer",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-005",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "hard",
     "question": "Neml 27/40'ta tahtın çok kısa sürede getirilişini üstlenen kişi nasıl tanımlanır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Genç bir asker"
-      },
-      {
         "id": "o2",
         "text": "Kitaptan bilgi sahibi biri"
       },
       {
+        "id": "o1",
+        "text": "Savaşta deneyim sahibi biri"
+      },
+      {
         "id": "o3",
-        "text": "Denizci bir tüccar"
+        "text": "Ticarette servet sahibi biri"
       },
       {
         "id": "o4",
-        "text": "Bir bahçıvan"
+        "text": "Yönetimde yetki sahibi biri"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Neml 27/40'da kitaptan bilgi sahibi bir kişinin tahtı göz açıp kapamadan getirebileceği anlatılır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=40&mode=tefsir&sure=27",
-        "locator": "Neml 27/40",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Neml 27/40; PDF sayfa 401",
         "supports": "Neml 27/40'da kitaptan bilgi sahibi bir kişinin tahtı göz açıp kapamadan getirebileceği anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "sulayman-throne-knowledge"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sulayman-throne-knowledge",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-006",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Neml 27/44'te Sebe hükümdarı sarayın zeminini ilk bakışta ne sanır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir kum tepesi"
+        "id": "o3",
+        "text": "Parlak bir gümüş"
+      },
+      {
+        "id": "o4",
+        "text": "Cilalı bir ahşap"
       },
       {
         "id": "o2",
         "text": "Derin bir su"
       },
       {
-        "id": "o3",
-        "text": "Bir altın tarlası"
-      },
-      {
-        "id": "o4",
-        "text": "Bir taş duvar"
+        "id": "o1",
+        "text": "Parlak bir mermer"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Sebe hükümdarı camdan yapılmış saray zeminini su zannedince Hz. Süleyman bunun cam olduğunu açıklar.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=44&mode=tefsir&sure=27",
-        "locator": "Neml 27/44",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Neml 27/44; PDF sayfa 401",
         "supports": "Sebe hükümdarı camdan yapılmış saray zeminini su zannedince Hz. Süleyman bunun cam olduğunu açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "sulayman-glass-palace"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sulayman-glass-palace",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-007",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Yûsuf 12/100'e göre Hz. Yûsuf annesiyle babasını nereye çıkarır?",
+    "question": "Yûsuf 12/100’ün Diyanet mealinde anne babasını nereye çıkardığı söylenir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir geminin güvertesine"
-      },
-      {
-        "id": "o2",
-        "text": "Tahtın üzerine"
-      },
-      {
         "id": "o3",
-        "text": "Bir dağın tepesine"
+        "text": "Şehrin meydanına"
       },
       {
         "id": "o4",
-        "text": "Bir kuyu kenarına"
+        "text": "Sarayın bahçesine"
+      },
+      {
+        "id": "o2",
+        "text": "Kendi makamına"
+      },
+      {
+        "id": "o1",
+        "text": "Sarayın balkonuna"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Yûsuf 12/100'de Hz. Yûsuf'un anne ve babasını tahtın üzerine çıkardığı anlatılır.",
+    "explanation": "Diyanet Kur’an Yolu Meali, Yûsuf 12/100’ün başında anne babasını makamına çıkardığını belirtir. Soru bu mealdeki karşılığa bağlıdır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=100&mode=tefsir&sure=12",
-        "locator": "Yûsuf 12/100: anne babasını tahtın üzerine çıkarır",
-        "supports": "Yûsuf 12/100'de Hz. Yûsuf'un anne ve babasını tahtın üzerine çıkardığı anlatılır.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Yûsuf 12/100 başlangıç cümlesi; PDF sayfa 257",
+        "supports": "Diyanet Kur’an Yolu Meali, Yûsuf 12/100’ün başında anne babasını makamına çıkardığını belirtir. Soru bu mealdeki karşılığa bağlıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "yusuf-parents-throne"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yusuf-parents-throne",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Yûsuf 12/84'te Hz. Ya‘kūb'un hangi organının hüzünden ağardığı anlatılır?",
+    "question": "Yûsuf 12/84’te üzüntü nedeniyle ağardığı anlatılan yer neresidir?",
     "options": [
       {
-        "id": "o1",
+        "id": "o3",
+        "text": "Elleri"
+      },
+      {
+        "id": "o4",
         "text": "Saçları"
       },
       {
@@ -17832,73 +17922,71 @@ export const questionsV73Candidate: readonly Question[] = [
         "text": "Gözleri"
       },
       {
-        "id": "o3",
-        "text": "Elleri"
-      },
-      {
-        "id": "o4",
-        "text": "Sakalı"
+        "id": "o1",
+        "text": "Yüzü"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Yûsuf 12/84'te Hz. Ya‘kūb'un Yûsuf'a duyduğu üzüntü sebebiyle gözlerinin ağardığı belirtilir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=84&mode=tefsir&sure=12",
-        "locator": "Yûsuf 12/84",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Yûsuf 12/84; PDF sayfa 256",
         "supports": "Yûsuf 12/84'te Hz. Ya‘kūb'un Yûsuf'a duyduğu üzüntü sebebiyle gözlerinin ağardığı belirtilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "yaqub-grief"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "yaqub-grief",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-009",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Meryem 19/4'te Hz. Zekeriyyâ yaşlılığını hangi beden değişimiyle anlatır?",
+    "question": "Meryem 19/4’te Zekeriyyâ’nın açıkça söylediği yaşlılık belirtisi hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Boyunun uzaması"
-      },
-      {
-        "id": "o2",
-        "text": "Saçlarının beyazlaması"
+        "text": "Yüzünün kırışması"
       },
       {
         "id": "o3",
-        "text": "Gözlerinin yeşermesi"
+        "text": "İşitmesinin azalması"
       },
       {
         "id": "o4",
-        "text": "Sesinin tamamen susması"
+        "text": "Boyunun kısalması"
+      },
+      {
+        "id": "o2",
+        "text": "Saçlarının ağarması"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Hz. Zekeriyyâ duasında yaşlılığını kemiklerinin zayıflaması ve başının ağarmasıyla anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=tefsir&sure=19",
-        "locator": "Meryem 19/4",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Meryem 19/4; PDF sayfa 320",
         "supports": "Hz. Zekeriyyâ duasında yaşlılığını kemiklerinin zayıflaması ve başının ağarmasıyla anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "zakariya-old-age"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "zakariya-old-age",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-010",
@@ -17944,152 +18032,155 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-prophets-011",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "hard",
     "question": "A‘râf 7/143'te Hz. Mûsâ'nın yanında dağa tecelli edildiğinde ne olur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Dağ denize dönüşür"
+        "id": "o4",
+        "text": "Dağ yeşilliğe bürünür"
       },
       {
         "id": "o2",
         "text": "Dağ parçalanır"
       },
       {
-        "id": "o3",
-        "text": "Dağ yükselir"
+        "id": "o1",
+        "text": "Dağ yerinden yükselir"
       },
       {
-        "id": "o4",
-        "text": "Dağ üzerinde saray belirir"
+        "id": "o3",
+        "text": "Dağ sisle kaplanır"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "A‘râf 7/143'te ilâhî tecelli karşısında dağın parçalandığı ve Hz. Mûsâ'nın bayıldığı aktarılır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=143&mode=tefsir&sure=7",
-        "locator": "A‘râf 7/143",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "A‘râf 7/143; PDF sayfa 177",
         "supports": "A‘râf 7/143'te ilâhî tecelli karşısında dağın parçalandığı ve Hz. Mûsâ'nın bayıldığı aktarılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "musa-mountain"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "musa-mountain",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-012",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Enbiyâ 21/80'de Hz. Dâvûd'a hangi el sanatının öğretildiği belirtilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Cam üfleme"
+        "id": "o3",
+        "text": "Miğfer yapımı"
+      },
+      {
+        "id": "o4",
+        "text": "Kalkan yapımı"
       },
       {
         "id": "o2",
         "text": "Zırh yapımı"
       },
       {
-        "id": "o3",
-        "text": "Halı dokuma"
-      },
-      {
-        "id": "o4",
-        "text": "Gemi boyama"
+        "id": "o1",
+        "text": "Kılıç yapımı"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Enbiyâ 21/80'de Hz. Dâvûd'a insanların korunması için zırh yapmanın öğretildiği belirtilir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=80&mode=tefsir&sure=21",
-        "locator": "Enbiyâ 21/80",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Enbiyâ 21/80; PDF sayfa 345",
         "supports": "Enbiyâ 21/80'de Hz. Dâvûd'a insanların korunması için zırh yapmanın öğretildiği belirtilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "davud-armor"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "davud-armor",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-prophets-013",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "easy",
     "question": "Sebe' 34/12'ye göre Hz. Süleyman'ın emrine hangi tabiat olayı verilmiştir?",
     "options": [
       {
         "id": "o1",
-        "text": "Yağmur damlaları"
+        "text": "Yağmur"
+      },
+      {
+        "id": "o3",
+        "text": "Şimşek"
+      },
+      {
+        "id": "o4",
+        "text": "Sis"
       },
       {
         "id": "o2",
         "text": "Rüzgâr"
-      },
-      {
-        "id": "o3",
-        "text": "Deprem"
-      },
-      {
-        "id": "o4",
-        "text": "Kar yağışı"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Sebe' sûresinde rüzgârın Hz. Süleyman'ın emrine verildiği anlatılır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=12&mode=tefsir&sure=34",
-        "locator": "Sebe' 34/12",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Sebe’ 34/12; PDF sayfa 452",
         "supports": "Sebe' sûresinde rüzgârın Hz. Süleyman'ın emrine verildiği anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "sulayman-wind"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sulayman-wind",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-001",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Ortaçağ optik çalışmalarına büyük katkıda bulunan İbnü'l-Heysem'in meşhur eseri hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mukaddime"
+        "id": "o2",
+        "text": "Kitâbü’l-Menâzır"
       },
       {
-        "id": "o2",
-        "text": "Kitâbü'l-Menâzır"
+        "id": "o1",
+        "text": "Tenkīhu’l-Menâzır"
       },
       {
         "id": "o3",
-        "text": "Kitâb-ı Bahriyye"
+        "text": "el-Mecistî"
       },
       {
         "id": "o4",
-        "text": "Keşfü'z-zunûn"
+        "text": "el-Cebr ve’l-mukābele"
       }
     ],
     "correctOptionId": "o2",
@@ -18097,18 +18188,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ibnul-heysem",
-        "locator": "İbnü'l-Heysem, Kitâbü'l-Menâzır ve optik",
+        "locator": "115–120 ve 135–139. satırlar",
         "supports": "Kitâbü'l-Menâzır, İbnü'l-Heysem'in ışık, görme ve yansıma üzerine araştırmalarını içeren önemli optik eseridir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "ibn-haytham-book"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "ibn-haytham-book",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-002",
@@ -18155,45 +18247,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-history-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Bîrûnî'nin eserlerinde yer verdiği bilim alanlarından biri hangisidir?",
+    "question": "Bîrûnî’nin el-Kānûnü’l-Mes‘ûdî adlı eseri öncelikle hangi alanın ansiklopedisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Çağdaş bilgisayar bilimi"
+        "id": "o4",
+        "text": "Botanik"
       },
       {
         "id": "o2",
         "text": "Astronomi"
       },
       {
-        "id": "o3",
-        "text": "Uçak mühendisliği"
+        "id": "o1",
+        "text": "Tıp"
       },
       {
-        "id": "o4",
-        "text": "Elektronik devre tasarımı"
+        "id": "o3",
+        "text": "Kimya"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Bîrûnî astronomi, matematik, coğrafya ve başka birçok alanda eserler vermiştir.",
+    "explanation": "Bîrûnî’nin el-Kānûnü’l-Mes‘ûdî’si başka bilimlerden de bilgiler içermekle birlikte öncelikle bir astronomi ansiklopedisidir. Soru Bîrûnî’nin yalnız bu alanla çalıştığını ileri sürmez.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/biruni",
-        "locator": "TDV Bîrûnî maddesi: astronomi ve matematik",
-        "supports": "Bîrûnî astronomi, matematik, coğrafya ve başka birçok alanda eserler vermiştir.",
+        "locator": "144–145 ve 223–225. satırlar",
+        "supports": "Bîrûnî’nin el-Kānûnü’l-Mes‘ûdî’si başka bilimlerden de bilgiler içermekle birlikte öncelikle bir astronomi ansiklopedisidir. Soru Bîrûnî’nin yalnız bu alanla çalıştığını ileri sürmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "biruni-astronomy"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "biruni-astronomy",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-004",
@@ -18239,26 +18332,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-history-005",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
-    "question": "Seyahatnâme'de gezilerini anlatan ünlü Osmanlı seyyahı kimdir?",
+    "question": "On ciltlik Seyahatnâme’nin müellifi olan Osmanlı gezgini kimdir?",
     "options": [
       {
         "id": "o1",
-        "text": "İbnü'l-Heysem"
+        "text": "Seydi Ali Reis"
+      },
+      {
+        "id": "o3",
+        "text": "Âşık Mehmed"
+      },
+      {
+        "id": "o4",
+        "text": "Kâtib Çelebi"
       },
       {
         "id": "o2",
         "text": "Evliya Çelebi"
-      },
-      {
-        "id": "o3",
-        "text": "Bîrûnî"
-      },
-      {
-        "id": "o4",
-        "text": "Ebû Hanîfe"
       }
     ],
     "correctOptionId": "o2",
@@ -18266,18 +18359,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-        "locator": "TDV madde tanımı: Evliya Çelebi'nin eseri",
+        "locator": "96–100. satırlar",
         "supports": "Evliya Çelebi, Osmanlı coğrafyası ve çevresine yaptığı yolculukları Seyahatnâme'de anlatmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "evliya-author"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "evliya-author",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-006",
@@ -18365,26 +18459,26 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-history-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Sahn-ı Semân'a öğrenci hazırlamak amacıyla kurulan medreselere ne ad verilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Dârüşşifâlar"
-      },
-      {
         "id": "o2",
         "text": "Tetimme medreseleri"
       },
       {
+        "id": "o1",
+        "text": "Dârülhadis medreseleri"
+      },
+      {
         "id": "o3",
-        "text": "Zâviyeler"
+        "text": "Dârülkurrâ medreseleri"
       },
       {
         "id": "o4",
-        "text": "Rasathaneler"
+        "text": "Tıp medreseleri"
       }
     ],
     "correctOptionId": "o2",
@@ -18392,18 +18486,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fatih-tetimmeleri",
-        "locator": "TDV Fâtih Tetimmeleri tanımı",
+        "locator": "70–73. satırlar",
         "supports": "Fâtih Tetimmeleri, Sahn-ı Semân'a öğrenci yetiştirmek üzere kurulmuş hazırlık medreseleridir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "fatih-tetimme"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "fatih-tetimme",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-009",
@@ -18493,68 +18588,69 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-history-011",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hanefî mezhebinin kurucu imamı olarak tanınan âlim kimdir?",
+    "question": "Kûfe’de Irak fıkhını öğrencileriyle sistemleştiren, İmâm-ı Âzam diye anılan âlim kimdir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "İbnü'l-Heysem"
-      },
       {
         "id": "o2",
         "text": "Ebû Hanîfe"
       },
       {
+        "id": "o1",
+        "text": "Mâlik b. Enes"
+      },
+      {
         "id": "o3",
-        "text": "Evliya Çelebi"
+        "text": "Muhammed eş-Şâfiî"
       },
       {
         "id": "o4",
-        "text": "Pîrî Reis"
+        "text": "Ahmed b. Hanbel"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Ebû Hanîfe, Hanefî fıkıh geleneğinin kurucu imamı ve büyük müctehid olarak tanınır.",
+    "explanation": "Ebû Hanîfe ve öğrencileri Kûfe merkezli Irak fıkhını sistemleştirmiştir. Hanefî mezhebi bu mirasa nispet edilir; mezhebin sonradan teşekkülü ile imamın yaşadığı dönemdeki ilmî faaliyet ayrıdır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-        "locator": "TDV Ebû Hanîfe madde tanımı",
-        "supports": "Ebû Hanîfe, Hanefî fıkıh geleneğinin kurucu imamı ve büyük müctehid olarak tanınır.",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/hanefi-mezhebi",
+        "locator": "123–135 ve 149–160. satırlar",
+        "supports": "Ebû Hanîfe ve öğrencileri Kûfe merkezli Irak fıkhını sistemleştirmiştir. Hanefî mezhebi bu mirasa nispet edilir; mezhebin sonradan teşekkülü ile imamın yaşadığı dönemdeki ilmî faaliyet ayrıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "abu-hanifa-founder"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "abu-hanifa-founder",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-012",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "756'da Endülüs'te bağımsız Emevî emirliğini kuran kişi kimdir?",
     "options": [
       {
         "id": "o1",
-        "text": "Ukbe b. Nâfi‘"
+        "text": "I. Hişâm"
+      },
+      {
+        "id": "o3",
+        "text": "I. Hakem"
+      },
+      {
+        "id": "o4",
+        "text": "II. Abdurrahman"
       },
       {
         "id": "o2",
         "text": "I. Abdurrahman"
-      },
-      {
-        "id": "o3",
-        "text": "Abbâsî Seffâh"
-      },
-      {
-        "id": "o4",
-        "text": "Târık b. Ziyâd"
       }
     ],
     "correctOptionId": "o2",
@@ -18562,18 +18658,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdurrahman-i",
-        "locator": "Endülüs Emevîleri 756 kuruluşu",
+        "locator": "71 ve 100–102. satırlar",
         "supports": "I. Abdurrahman, Endülüs'e geçerek 756 yılında bağımsız Endülüs Emevî Emirliği'ni kurmuştur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "andalus-founder"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "andalus-founder",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-general-001",
@@ -18835,110 +18932,112 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-general-007",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Bakara 2/43'te namazla birlikte yerine getirilmesi emredilen malî ibadet hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "İtikâf"
+        "text": "Sadaka"
+      },
+      {
+        "id": "o3",
+        "text": "Fidye"
+      },
+      {
+        "id": "o4",
+        "text": "Kefâret"
       },
       {
         "id": "o2",
         "text": "Zekât"
-      },
-      {
-        "id": "o3",
-        "text": "Tilâvet secdesi"
-      },
-      {
-        "id": "o4",
-        "text": "Umre"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Bakara 2/43'te namaz kılma ve zekât verme birlikte emredilir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=43&mode=tefsir&sure=2",
-        "locator": "Bakara 2/43",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Bakara 2/43; PDF sayfa 12",
         "supports": "Bakara 2/43'te namaz kılma ve zekât verme birlikte emredilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "namaz-zakat"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "namaz-zakat",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-general-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Oruç ibadetinde gün batımında orucu açma eylemine ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Sahur"
+        "id": "o4",
+        "text": "Fecir"
       },
       {
         "id": "o2",
         "text": "İftar"
       },
       {
-        "id": "o3",
-        "text": "İhram"
+        "id": "o1",
+        "text": "Sahur"
       },
       {
-        "id": "o4",
-        "text": "Hutbe"
+        "id": "o3",
+        "text": "İmsak"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Oruç süresinin sona ermesiyle gün batımında orucun açılmasına iftar denir.",
+    "explanation": "İftar, oruçlunun vakti gelince orucunu açmasıdır. Güneşin batmasıyla iftar vakti girer. Terim adı ile Bakara 2/187’deki vakit sınırı ayrı bilgilerdir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu",
-        "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=187&mode=tefsir&sure=2",
-        "locator": "Bakara 2/187: orucun geceye kadar tamamlanması",
-        "supports": "Oruç süresinin sona ermesiyle gün batımında orucun açılmasına iftar denir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/iftar",
+        "locator": "111–117. satırlar",
+        "supports": "İftar, oruçlunun vakti gelince orucunu açmasıdır. Güneşin batmasıyla iftar vakti girer. Terim adı ile Bakara 2/187’deki vakit sınırı ayrı bilgilerdir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "iftar-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "iftar-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-general-009",
-    "version": 2,
+    "version": 3,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Ramazan orucuna hazırlanmak için imsak öncesinde yenilen öğün hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İftar"
-      },
-      {
         "id": "o2",
         "text": "Sahur"
       },
       {
+        "id": "o1",
+        "text": "İftar"
+      },
+      {
         "id": "o3",
-        "text": "Akîka"
+        "text": "Kahvaltı"
       },
       {
         "id": "o4",
-        "text": "Kefaret"
+        "text": "Öğle yemeği"
       }
     ],
     "correctOptionId": "o2",
@@ -18946,18 +19045,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/sahur",
-        "locator": "Madde tanımı ve ilk paragraf",
+        "locator": "71 ve 96–103. satırlar",
         "supports": "İmsaktan önce, oruca hazırlanmak için yenen öğüne sahur denir. Bu terimin tanımı TDV SAHUR maddesinde açıkça yer alır. Bakara 2/187'deki yeme-içme sınırı ve tefsirdeki sahur açıklaması, terim tanımından ayrı konumlardır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-28"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kapsamında kaynak metni, cevap ve dört seçenek karşılaştırıldı. Ürün sahibinin doğrudan yayın talimatıyla sürümlü düzeltme. İnsan dinî uzman onayı değildir; eski oyunlar v31 metnini kullanır.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "sahur-meaning"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-28",
+    "conceptGroup": "sahur-meaning",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-general-010",
@@ -19179,41 +19279,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Bakara 2/148'de yarışılması istenen alan hangisidir?",
+    "question": "Bakara 2/148’deki yarışma çağrısı mealde hangi ifadeyle geçer?",
     "options": [
       {
         "id": "o4",
-        "text": "Soy ve akrabalık"
+        "text": "Bağışlamada yarışın"
       },
       {
         "id": "o2",
-        "text": "Hayırlı işler"
+        "text": "Hayırlarda yarışın"
       },
       {
         "id": "o1",
-        "text": "Dünya nimetleri"
+        "text": "Sabırda yarışın"
       },
       {
         "id": "o3",
-        "text": "Toplumsal itibar"
+        "text": "Şükürde yarışın"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Bakara 2/148'de iyi ve hayırlı işlerde öne geçmeye çalışılması öğütlenir.",
+    "explanation": "Bakara 2/148’de hayırlarda yarışma çağrısı yapılır. Diğer seçenekler olumlu çağrılar olsa da bu ayetin mealinde kullanılan ifade değildir.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 2/148; PDF sayfa 29 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Hayırlı işler (doğrudan kaynak alıntısı değildir).",
+        "locator": "Bakara 2/148; PDF sayfa 29",
+        "supports": "Bakara 2/148’de hayırlarda yarışma çağrısı yapılır. Diğer seçenekler olumlu çağrılar olsa da bu ayetin mealinde kullanılan ifade değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-28"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-28",
     "conceptGroup": "race-goodness",
     "reviewedAt": undefined
   },

@@ -80,6 +80,26 @@ test("Absolute and reversed cues are review warnings; balanced use is not a thre
   assert(!qualityWarnings(balanced).some((f) => f.kind.startsWith("three-")));
   assert.equal(styleOnlyGuess(balanced), null);
 });
+test("Known synonymous options enter review even when both are distractors", () => {
+  const old = questionsV72.find((q) => q.id === "v7-general-002")!;
+  const candidate = questionsV73Candidate.find(
+    (q) => q.id === "v7-general-002",
+  )!;
+  assert(qualityWarnings(old).some((f) => f.kind === "possible-synonyms"));
+  assert(
+    !qualityWarnings(candidate).some((f) => f.kind === "possible-synonyms"),
+  );
+  assert(
+    qualityWarnings(probe(["FİTRE", "Sadaka-i fıtr", "Zekât", "Fidye"])).some(
+      (f) => f.kind === "possible-synonyms",
+    ),
+  );
+  assert(
+    !qualityWarnings(probe(["Adak", "Nezîr", "Zekât", "Fidye"])).some(
+      (f) => f.kind === "possible-synonyms",
+    ),
+  );
+});
 test("The style-only heuristic never reads the answer key and abstains on conflicting signals", () => {
   const q = probe([
     "Yalnız sabır",

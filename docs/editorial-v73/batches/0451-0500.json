@@ -3,12 +3,12 @@
   "start": 451,
   "end": 500,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 33,
   "blocked": 0,
   "flaggedBefore": 2,
-  "flaggedAfter": 3,
+  "flaggedAfter": 5,
   "records": [
     {
       "sequence": 451,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-quran-005",
+        "reviewedCandidateSha256": "33d970962708121c7f153a56a065f2c21593b16330f9ba227a8f7ffdcebc49f1",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumsuz davranış dengeli, tek iyi seçenek yok. Çekiştirme/küçümseme 104/1 bağlamına ait.",
+        "optionReview": {
+          "o3": "Başka kötü davranış.",
+          "o4": "Başka kötü davranış.",
+          "o2": "104/1’in uyarısı.",
+          "o1": "Başka sûrenin konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "104/1; PDF sayfa 656 (1 tabanlı), basılı sayfa 655",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -173,8 +197,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-quran-006",
+        "reviewedCandidateSha256": "6ac152630367c50a54fff7203125c681cc139dad1665c96d1e32611f44435c27",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört âhiret kavramı; sûre bağlamı kıyamet gününü belirler. Kelimenin başka ayette musibet anlamı açıklamadaki bağlama aykırı değil.",
+        "optionReview": {
+          "o2": "Sûre bağlamındaki gün.",
+          "o1": "Daha dar ve farklı aşama.",
+          "o3": "Sûrede ayrıca geçen tartı, başlıktaki kavram değil.",
+          "o4": "Sonuç mekânına giriş, başlık değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/karia-suresi",
+          "locator": "Kāria sözcüğünün kıyamet gününe işareti",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6393cc2193c56752efb4f5d2e4ff03d51899694f12948716a355e2ecb48dbe6a"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -257,8 +305,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-quran-008",
+        "reviewedCandidateSha256": "1679e7289526e16052f832ceef6d67198c89c2f7e8c3bc503619d183b40d70e0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu ayet mesajı; tekrar edilen cümle 94/5–6’ya bağlı. Eski v73 düzenlemesi yeniden incelendi.",
+        "optionReview": {
+          "o1": "Başka ayetin mesajı.",
+          "o3": "Başka ayetin mesajı.",
+          "o4": "Başka ayetin mesajı.",
+          "o2": "İki ayette yinelenen mesaj."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "94/5; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -309,40 +381,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Gizli yolculuk"
+            "text": "Güvenilir haber"
+          },
+          {
+            "id": "o3",
+            "text": "Kesin hüküm"
+          },
+          {
+            "id": "o4",
+            "text": "Yerleşik gelenek"
           },
           {
             "id": "o2",
             "text": "Apaçık delil"
-          },
-          {
-            "id": "o3",
-            "text": "Yüksek dağ"
-          },
-          {
-            "id": "o4",
-            "text": "Sabah serinliği"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Apaçık delil",
-        "explanation": "Beyyine kelimesi apaçık ve kesin delil anlamı taşır; Beyyine sûresi bu adla anılır.",
+        "explanation": "Beyyine, apaçık delil veya kesin belge anlamındadır. Haber, hüküm ve gelenek kavramları bu kelimenin sözlük karşılığı değildir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beyyine",
-            "locator": "Beyyinenin sözlük ve terim anlamı",
-            "supports": "Beyyine kelimesi apaçık ve kesin delil anlamı taşır; Beyyine sûresi bu adla anılır.",
+            "locator": "111–114. satırlar; açık delil ve belge tanımı",
+            "supports": "Beyyine, apaçık delil veya kesin belge anlamındadır. Haber, hüküm ve gelenek kavramları bu kelimenin sözlük karşılığı değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-quran-009",
+        "reviewedCandidateSha256": "b298baf92c58e1d6ac306830617dfab4ac2c73bdc3ffb80932700841d80f53f1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dağ/yolculuk/serinlik gibi konu dışı şıklar yerine dört bilgi ve delillendirme kavramı kullanıldı.",
+        "optionReview": {
+          "o1": "Bir bilgi türü; delilin kendisi değil.",
+          "o3": "Yargı sonucu; kelimenin karşılığı değil.",
+          "o4": "Örfle ilişkili bilgi; kelimenin karşılığı değil.",
+          "o2": "Sözlükteki açık delil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beyyine",
+          "locator": "111–114. satırlar; açık delil ve belge tanımı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "13408f02593a2ab0919aa253a0b1eb0ee1230053c4c0c82d48ff98fcfed1b941"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -425,8 +523,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-quran-010",
+        "reviewedCandidateSha256": "94f9340303de7f2e9c240204474aaf449641400d10e1206ce5f6831682746338",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört toplumsal olumsuz davranış; yetim/yoksul ilişkisi 107/1–3’le belirli. Başka seçenek de genel ahlâken yanlış diye ikinci anahtar olmuyor.",
+        "optionReview": {
+          "o1": "Mutaffifîn bağlamı.",
+          "o3": "Tekâsür bağlamı.",
+          "o4": "Hümeze/Hucurât bağlamı.",
+          "o2": "Mâûn’un giriş bağlamı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/maun-suresi",
+          "locator": "İlk üç âyet, yetime ve yoksula tutum",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6393cc2193c56752efb4f5d2e4ff03d51899694f12948716a355e2ecb48dbe6a"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -509,8 +631,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-001",
+        "reviewedCandidateSha256": "55383be3406ca3f2ee013dbe127ed4022eb5b8e729675f0d8c13bb35937ebf91",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber; diğer adı bilme hedefi. Bu turda İsrâil adının kaynak pasajı henüz bağlanmadı.",
+        "optionReview": {
+          "o1": "Başka peygamber.",
+          "o2": "Diğer adın sahibi.",
+          "o3": "Başka peygamber.",
+          "o4": "Başka peygamber."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/yakub",
+          "locator": "Giriş: Ya‘kūb'un İsrâil adı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -593,8 +737,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-002",
+        "reviewedCandidateSha256": "13b77d83b4b288fffe2b0e1677661950e13d187c2f414d75306ff1707832c5d6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört aynı geleneğin kişi adı; Bünyâmin’in öz kardeşliği belirleyici. Diğerleri kardeş sayılmıyor.",
+        "optionReview": {
+          "o1": "Mûsâ’nın kardeşi.",
+          "o2": "Yûsuf’un öz kardeşi.",
+          "o3": "Başka kişi.",
+          "o4": "Yûsuf’un atalarından."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/bunyamin",
+          "locator": "Madde tanımı; Hz. Yûsuf'un öz kardeşi",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -677,8 +843,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-003",
+        "reviewedCandidateSha256": "d6deb1392cfedddd7c134c6ddda660c5012740eff56a5f80c760624cc54b3620",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber. Diyanet mealindeki halkına ile kökteki ailesine ifadeleri farklı kapsam verebildiğinden tefsir karşılaştırması bekliyor.",
+        "optionReview": {
+          "o1": "Başka kıssa.",
+          "o2": "19/55’in kişisi.",
+          "o3": "Başka kıssa.",
+          "o4": "Başka kıssa."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "19/55 mealindeki halkına karşılığının aile/halk kapsamı tefsirden karşılaştırılmadan yeni kaynak doğrulaması verilmedi. Anahtar kişi açık olsa da açıklamanın kapsam incelemesi bekler.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ismail--peygamber",
+          "locator": "Meryem 19/54-55: namaz ve zekât",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -761,8 +949,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-005",
+        "reviewedCandidateSha256": "cb3d23ecc2bb70b2ac0cc8a6b58470d3a9e67ec73133b3981652b3e198b3b618",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber; 34/10’daki dağ/kuş tesbihi Davud’a bağlı.",
+        "optionReview": {
+          "o1": "Başka kıssa.",
+          "o2": "Ayetin kişisi.",
+          "o3": "Başka kıssa.",
+          "o4": "Başka kıssa."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "34/10; PDF sayfa 451 (1 tabanlı), basılı sayfa 450",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -845,8 +1057,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-008",
+        "reviewedCandidateSha256": "d0f69a01c847b5ab5cc50cfcdf978f31e518698123f3a38ea03b4f28b3b8af48",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber; 27/16’nın doğrudan hitabı belirleyici.",
+        "optionReview": {
+          "o1": "Önceki ayetlerde anılan babası.",
+          "o2": "Kuş dilini bildiren kişi.",
+          "o3": "Başka kıssa.",
+          "o4": "Başka kıssa."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/16; PDF sayfa 398 (1 tabanlı), basılı sayfa 397",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -929,8 +1165,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-009",
+        "reviewedCandidateSha256": "637539c5fb88a9a52c60e1cf61d5406e5ca4f282b729d72a55ee5302d07916cb",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber; yıldız/ay/güneş sırası En‘âm’daki belirli bağlam.",
+        "optionReview": {
+          "o1": "Başka kıssa.",
+          "o2": "6/76–79’un kişisi.",
+          "o3": "Başka kıssa.",
+          "o4": "Başka kıssa."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "6/76; PDF sayfa 146 (1 tabanlı), basılı sayfa 145",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1013,8 +1273,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-prophets-010",
+        "reviewedCandidateSha256": "b7f2b6e5c7aa2a2318499ad539890027862bb53092a5196a776a77d96dce77cb",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört aile bağı aynı biçimde; 7/83’te eşi açıkça ayrılır. Bütün bu kişilerin tarihî varlığı iddia edilmiyor.",
+        "optionReview": {
+          "o1": "Ayette istisna değil.",
+          "o2": "Ayette istisna edilen.",
+          "o3": "Ayette istisna değil.",
+          "o4": "Ayette istisna değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "7/83; PDF sayfa 170 (1 tabanlı), basılı sayfa 169",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1097,8 +1381,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-001",
+        "reviewedCandidateSha256": "f5eb3685fcd7ebc1be5695677904e679094bf356a09b561b80df3fe05bac5a2d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî adı; hicret ev sahipliği farklı rollerdeki isimlerden seçiliyor.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Medine’deki ev sahibi.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "Medine'ye hicret, evinde misafir kalması",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1181,8 +1487,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-002",
+        "reviewedCandidateSha256": "6bbbceabc7aeb0072559bcd35b4be1b59a0f4535e9a58f2412ef984cfdf1804d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî adı. Eyüp/Eyyûb dilsel benzerliği temel kültür bilgisinin parçası; doğru seçeneğin uzunluğu tekil ipucu değil.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Türkiye’deki adın sahibi.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "Giriş: Eyüp Sultan unvanı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1265,8 +1593,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-003",
+        "reviewedCandidateSha256": "d5ba7f46bd15bb010729a271d55da766f9bd37521865e7c3da0daa1b87a12137",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Eski v73 değişikliği yeniden değerlendirildi: Habeşistan geçmişi ve Medine öğretimi birlikte kesinleştiriliyor. Dört sahâbî aynı türde.",
+        "optionReview": {
+          "o1": "Medineli Evsli.",
+          "o2": "İki görevi birleştiren kişi.",
+          "o3": "Başka sahâbî.",
+          "o4": "Medineli kâtip."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/musab-b-umeyr",
+          "locator": "Peygamberliğin beşinci yılında Habeşistan hicreti",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1349,8 +1699,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-004",
+        "reviewedCandidateSha256": "71409f1659cb79da7beb4e0d1ddf649c12a73c38d9ea44896b4816a2d887d41c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî; tarihî tutumu ölçüyor. Evrensel ekonomik dinî hüküm veya bütün servet birikimi yasağı çıkarılmamalı.",
+        "optionReview": {
+          "o1": "Kumandan.",
+          "o2": "Bu tutumuyla tanınan kişi.",
+          "o3": "İlim yönüyle tanınan kişi.",
+          "o4": "Şair."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ebu-zer-el-gifari",
+          "locator": "Madde tanımı: servet terakümüne yönelik görüşleri",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1433,8 +1805,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-005",
+        "reviewedCandidateSha256": "8e03dca21f9210087f1d8bfd6acedbb36b4169c2e01af444325aa4a1a27e6e83",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî; erken müslüman oluşu ve tüccarlığı birlikte ayırt ediyor. Bilâl’in farklı hayat hikâyesi bilgiye dayalı ayrım.",
+        "optionReview": {
+          "o1": "Başka erken müslüman.",
+          "o2": "Tüccar ve davetin muhatabı.",
+          "o3": "Başka erken müslüman.",
+          "o4": "Medineli sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/abdurrahman-b-avf",
+          "locator": "Giriş: Ebû Bekir vasıtasıyla Müslüman oluşu",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1517,8 +1911,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-006",
+        "reviewedCandidateSha256": "1d2724a0f29f96fb243f7bd302fa8788f2fbfe7633972525fd1f84172cd1a69d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Abbâsî halifesi, uzun unvan doğruya özgü değil; kronoloji gerekir.",
+        "optionReview": {
+          "o1": "Daha sonraki halife.",
+          "o2": "İlk halife.",
+          "o3": "Daha sonraki halife.",
+          "o4": "Daha sonraki halife."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ebul-abbas-es-seffah",
+          "locator": "Giriş: ilk Abbâsî halifesi (750-754)",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1601,8 +2017,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-008",
+        "reviewedCandidateSha256": "debebafdf082cd39bbe7f64d55d6b268254c3344b38623ec7a0c303bcee4341a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört şehir. Kahire’nin daha geç kuruluşu zayıf bir çeldirici; diğer iki Irak şehri gerçekçi. Üç saçma seçenek kalıbı yok.",
+        "optionReview": {
+          "o1": "Başka Irak şehri.",
+          "o2": "Kurumun bulunduğu şehir.",
+          "o3": "Başka Irak şehri.",
+          "o4": "Daha geç kurulan Mısır şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "Bağdat Beytülhikme'sinin kuruluşu ve ilmî faaliyetleri",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1649,44 +2087,70 @@
         ]
       },
       "after": {
-        "question": "Büyük Selçuklu dönemindeki Nizâmiye medreseleri hangi devlet adamının adıyla anılır?",
+        "question": "Bağdat’ta 1067’de öğretime açılan medreseyi kuran Selçuklu veziri kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İbn Sînâ"
+            "id": "o3",
+            "text": "Tâcülmülk"
+          },
+          {
+            "id": "o4",
+            "text": "Müeyyidülmülk"
           },
           {
             "id": "o2",
             "text": "Nizâmülmülk"
           },
           {
-            "id": "o3",
-            "text": "Hârûnürreşîd"
-          },
-          {
-            "id": "o4",
-            "text": "Selmân-ı Fârisî"
+            "id": "o1",
+            "text": "Kündürî"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Nizâmülmülk",
-        "explanation": "Nizâmiye medreseleri adını bu kurumları açtıran Büyük Selçuklu veziri Nizâmülmülk'ten alır.",
+        "explanation": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "Medreselerin Nizâmülmülk tarafından kurulması",
-            "supports": "Nizâmiye medreseleri adını bu kurumları açtıran Büyük Selçuklu veziri Nizâmülmülk'ten alır.",
+            "locator": "Nizâmiye 97–99; diğer vezir maddelerinin 71 ve 96–108. satırları",
+            "supports": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-009",
+        "reviewedCandidateSha256": "a83c9fdabcb7f024629b6e57b77552fb14d342039ba49bc93486992a5e853791",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Nizâmiye/Nizâm ad yankısı kökten çıkarıldı; farklı asır ve meslekler yerine dört Selçuklu veziri kullanıldı.",
+        "optionReview": {
+          "o3": "Tâciyye’yi yaptıran başka vezir.",
+          "o4": "Nizâmülmülk’ün vezirlik yapmış oğlu; bu kurumun kurucusu değil.",
+          "o2": "1067 Bağdat medresesinin kurucusu.",
+          "o1": "Önceki Selçuklu veziri; bu kurumun kurucusu değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
+          "locator": "Nizâmiye 97–99; diğer vezir maddelerinin 71 ve 96–108. satırları",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6b7ee5a0fd347de0885e93a4078a14ecc8372c76f184021224d279b84a63b703"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1736,41 +2200,80 @@
         "question": "Mescid-i Nebevî'nin yeşil kubbesi hangi adla bilinir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kubbetü's-sahra"
-          },
-          {
-            "id": "o2",
-            "text": "Kubbetü'l-hadrâ"
-          },
-          {
             "id": "o3",
-            "text": "Kubbetü'l-hazîne"
+            "text": "Kubbetü’l-hazne"
           },
           {
             "id": "o4",
-            "text": "Kubbetü'l-mahmûd"
+            "text": "Kubbetü Zeynelâbidîn"
+          },
+          {
+            "id": "o2",
+            "text": "Kubbetü’l-hadrâ"
+          },
+          {
+            "id": "o1",
+            "text": "Kubbetü’n-nesr"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kubbetü'l-hadrâ",
+        "correctAnswer": "Kubbetü’l-hadrâ",
         "explanation": "Mescid-i Nebevî'nin yeşile boyanmış ve simgeleşmiş kubbesine Kubbetü'l-hadrâ adı verilir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-            "locator": "Osmanlı imarında yeşile boyanan kubbenin adı",
-            "supports": "Mescid-i Nebevî'nin yeşile boyanmış ve simgeleşmiş kubbesine Kubbetü'l-hadrâ adı verilir.",
+            "locator": "Mescid-i Nebevî 128; Emeviyye Camii 114–119 (https://islamansiklopedisi.org.tr/emeviyye-camii)",
+            "supports": "Medine’deki yeşil kubbenin adı Kubbetü’l-hadrâdır. Diğer üç seçenek TDV’nin Emeviyye Camii maddesinde Şam’daki kubbelerin adları olarak yer alır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-history-010",
+        "reviewedCandidateSha256": "15ffb20496e9c1733f05d1059bd841ea69c2d85f777978e50b6521fd1bdd6e63",
+        "disposition": "revised",
+        "defects": [
+          "unverified-distractor-name"
+        ],
+        "reason": "Doğrulanamayan Kubbetü’l-mahmûd seçeneği çıkarıldı. Medine’nin yeşil kubbesi, TDV’de adları ve konumları belirtilen üç Şam kubbesiyle aynı adlandırma türünde karşılaştırılıyor; hazne yazımı kaynakla eşleştirildi.",
+        "optionReview": {
+          "o3": "Şam avlusunda vakıf gelirlerinin korunduğu yapı; 119. satır.",
+          "o4": "Şam avlusundaki diğer kubbeli yapı; 119. satır.",
+          "o2": "Medine’deki yeşil kubbe; 128. satır.",
+          "o1": "Şam’daki merkez kubbe; 114 ve 117. satırlar."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört adın hepsi belgelenmiş farklı kubbe adlarıdır. Ortak kubbetü sözcüğü otomatik semantic-overlap uyarısı üretebilir; bu sözcük kubbe türünü anlatır ve tek başına eş anlam/ikinci doğru kanıtı değildir. Medine’deki yeşil kubbe anahtarı 128. satırla, Şam’daki diğer adlar Emeviyye maddesiyle karşılaştırıldı.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+          "locator": "Mescid-i Nebevî 128; Emeviyye Camii 114–119 (https://islamansiklopedisi.org.tr/emeviyye-camii)",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "c94004867cd8e605e31866e7a996300b85ac67d6b92fcf3fc6df2c450e0c3307"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1817,23 +2320,23 @@
         ]
       },
       "after": {
-        "question": "Bir dinî-hukukî sorunun hükmünü açıklayan cevaba ne denir?",
+        "question": "Müftünün sorulan dinî-hukukî meseleye verdiği cevabın adı nedir?",
         "options": [
           {
             "id": "o1",
-            "text": "Kıraat"
+            "text": "Kazâ"
+          },
+          {
+            "id": "o3",
+            "text": "İçtihat"
+          },
+          {
+            "id": "o4",
+            "text": "İcmâ"
           },
           {
             "id": "o2",
             "text": "Fetva"
-          },
-          {
-            "id": "o3",
-            "text": "Hatim"
-          },
-          {
-            "id": "o4",
-            "text": "Mahya"
           }
         ],
         "correctOptionId": "o2",
@@ -1842,19 +2345,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/fetva",
-            "locator": "Giriş: fetva teriminin tanımı",
+            "locator": "96–98. satırlar",
             "supports": "Fetva, dinî-hukukî bir konuda yetkin kişinin açıkladığı cevap veya hükümdür.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-001",
+        "reviewedCandidateSha256": "4a3ee76f71cea1b9fdac240239b6c63b577cc58de1790485ce03919f38d62dbb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İlgisiz okuma/süsleme terimleri yerine dört hukuk kavramı kullanıldı; cevap verme bağlamı kesinleştirildi.",
+        "optionReview": {
+          "o1": "Yargı faaliyeti.",
+          "o3": "Hüküm çıkarmak için ilmî çaba.",
+          "o4": "Görüş birliği delili.",
+          "o2": "Müftünün cevabı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/fetva",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "37925c38b5e0c7c5021be594f09516757f78a410b0f0d50321c98c3a30648d54"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1901,23 +2430,23 @@
         ]
       },
       "after": {
-        "question": "Fıkhî sorulara fetva veren yetkili kişiye ne denir?",
+        "question": "Fetva verme görevini üstlenen kişinin bu görevle ilgili özel unvanı nedir?",
         "options": [
           {
             "id": "o1",
-            "text": "Müfessir"
+            "text": "Kadı"
+          },
+          {
+            "id": "o3",
+            "text": "Müderris"
+          },
+          {
+            "id": "o4",
+            "text": "Muhaddis"
           },
           {
             "id": "o2",
             "text": "Müftü"
-          },
-          {
-            "id": "o3",
-            "text": "Müezzin"
-          },
-          {
-            "id": "o4",
-            "text": "Müstensih"
           }
         ],
         "correctOptionId": "o2",
@@ -1926,19 +2455,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/fetva",
-            "locator": "Giriş: müftî teriminin açıklaması",
+            "locator": "97. satır",
             "supports": "Müftü, kendisine yöneltilen dinî-hukukî sorulara fetva veren kişidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-002",
+        "reviewedCandidateSha256": "9138535139cc3e2c0bbee6a828a93d53ac3577029c004cb26176aeb78d03d551",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kopyacı/müezzin yerine yakın ilmî görevler seçildi; başka âlimlerin fetva verebilmesiyle özel unvan karıştırılmadı.",
+        "optionReview": {
+          "o1": "Yargı görevi.",
+          "o3": "Öğretim görevi.",
+          "o4": "Hadis ilmi uzmanlığı.",
+          "o2": "İftâ görevinin unvanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/fetva",
+          "locator": "97. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "37925c38b5e0c7c5021be594f09516757f78a410b0f0d50321c98c3a30648d54"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2035,8 +2590,30 @@
           "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-003",
+        "reviewedCandidateSha256": "3c5f54b3c72a44be0a74a62a239552874fab8547fd189e5b82c171009978aeff",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Önceki v73 düzenlemesi yeniden incelendi. Dört olumlu iletişim/bilgi edinme cümlesi aynı yapıda; vahyin faili ve yönü ayırt edici.",
+        "optionReview": {
+          "o3": "Kuldan Allah’a dua.",
+          "o4": "İstişareyle karar.",
+          "o2": "Allah’tan peygambere bildirim.",
+          "o1": "Âlimin içtihadı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/vahiy",
+          "locator": "Giriş: vahyin terim anlamı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2086,20 +2663,20 @@
         "question": "Bir kulun Allah'a yönelip istekte bulunmasını ifade eden ibadet hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kıyas"
+            "id": "o3",
+            "text": "Tesbih"
+          },
+          {
+            "id": "o4",
+            "text": "Tehlil"
           },
           {
             "id": "o2",
             "text": "Dua"
           },
           {
-            "id": "o3",
-            "text": "İcma"
-          },
-          {
-            "id": "o4",
-            "text": "Tefsir"
+            "id": "o1",
+            "text": "Zikir"
           }
         ],
         "correctOptionId": "o2",
@@ -2108,19 +2685,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/dua",
-            "locator": "Giriş: dua teriminin tanımı",
+            "locator": "71 ve 118–121. satırlar",
             "supports": "Dua, Allah'a saygı ve yönelişle O'ndan yardım ve iyilik istemeyi ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-004",
+        "reviewedCandidateSha256": "02835b86651bbedef74bfb69db79d6e37df459b016c03152b15f8353fb557e01",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hukuk/yorum terimi yerine Allah’a yönelişle ilgili dört ibadet terimi kullanıldı.",
+        "optionReview": {
+          "o3": "Tenzih ederek anma.",
+          "o4": "Tevhid sözünü söyleme.",
+          "o2": "İstek ve niyaz.",
+          "o1": "Genel anma."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/dua",
+          "locator": "71 ve 118–121. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "37925c38b5e0c7c5021be594f09516757f78a410b0f0d50321c98c3a30648d54"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2170,20 +2773,20 @@
         "question": "İslâm'ın amelî hükümlerini ele alan ilim dalına ne ad verilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Astronomi"
+            "id": "o3",
+            "text": "Tefsir"
+          },
+          {
+            "id": "o4",
+            "text": "Hadis"
           },
           {
             "id": "o2",
             "text": "Fıkıh"
           },
           {
-            "id": "o3",
-            "text": "Coğrafya"
-          },
-          {
-            "id": "o4",
-            "text": "Hat sanatı"
+            "id": "o1",
+            "text": "Kelâm"
           }
         ],
         "correctOptionId": "o2",
@@ -2192,19 +2795,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/fikih",
-            "locator": "Giriş: amelî hükümlerle ilgili ilim",
+            "locator": "115–117. satırlar",
             "supports": "Fıkıh, İslâmî kaynaklara dayanarak ibadet ve toplumsal ilişkiler gibi amelî hükümleri inceleyen ilimdir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-005",
+        "reviewedCandidateSha256": "877c333a56fad0240d6e8795c9994f9f342e3f3583ded01158ea19a54125b6c6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Astronomi/coğrafya/sanat yerine dört dinî ilim dalı kullanıldı.",
+        "optionReview": {
+          "o3": "Kur’an yorumlama dalı.",
+          "o4": "Rivayetleri inceleyen dal.",
+          "o2": "Amelî hükümleri inceleyen dal.",
+          "o1": "İnanç esasları dalı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/fikih",
+          "locator": "115–117. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "37925c38b5e0c7c5021be594f09516757f78a410b0f0d50321c98c3a30648d54"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2287,8 +2916,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-006",
+        "reviewedCandidateSha256": "9cdc25535c16ba9c6ec0aa4a270a2e55e7461db58b8763b3f36cbe760afea9ad",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu ahlâk kavramı. Uymak/sakınmak özeni takvâ; tek olumlu şık veya mutlaklık ipucu yok.",
+        "optionReview": {
+          "o4": "Düşünme.",
+          "o2": "Bilinçli korunma.",
+          "o1": "Güvenme.",
+          "o3": "Alçakgönüllülük."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/takva",
+          "locator": "Giriş: takvâ teriminin tanımı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2338,20 +2989,20 @@
         "question": "Fıkıh usulünde Hz. Peygamber'in söz, fiil ve onaylarını kapsayan terim hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Meâl"
+            "id": "o3",
+            "text": "Kıyas"
+          },
+          {
+            "id": "o4",
+            "text": "İstihsan"
           },
           {
             "id": "o2",
             "text": "Sünnet"
           },
           {
-            "id": "o3",
-            "text": "İcma"
-          },
-          {
-            "id": "o4",
-            "text": "Mushaf"
+            "id": "o1",
+            "text": "İcmâ"
           }
         ],
         "correctOptionId": "o2",
@@ -2360,19 +3011,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/sunnet--peygamber",
-            "locator": "Giriş: kavlî, fiilî ve takrirî sünnet",
+            "locator": "71 ve 111–112. satırlar",
             "supports": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-007",
+        "reviewedCandidateSha256": "a0bc251617f2b981a6fe4cd2e6bac8df2c72506b69e5a15e097a82b502e6570e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Meâl/mushaf nesneleri yerine dört usul delili kullanıldı. Hadis eş anlamlı olabildiği için yanlış seçenek yapılmadı.",
+        "optionReview": {
+          "o3": "İllet benzerliğiyle hüküm aktarımı.",
+          "o4": "Usuldeki tercih/delil yöntemi.",
+          "o2": "Peygamber’in söz, fiil, takrirleri.",
+          "o1": "Müctehidlerin görüş birliği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sunnet--peygamber",
+          "locator": "71 ve 111–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "2f1b05989c1de33a1133e765b0a79f3f05f81b597d336b10793c0d125932c851"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2422,20 +3099,20 @@
         "question": "Hz. Peygamber'e nispet edilen söz ve haberlerin nakline dayanan bilgi türü hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mahya"
+            "id": "o3",
+            "text": "Fetva"
+          },
+          {
+            "id": "o4",
+            "text": "Meâl"
           },
           {
             "id": "o2",
             "text": "Hadis"
           },
           {
-            "id": "o3",
-            "text": "Mihrap"
-          },
-          {
-            "id": "o4",
-            "text": "Mukabele"
+            "id": "o1",
+            "text": "Tefsir"
           }
         ],
         "correctOptionId": "o2",
@@ -2444,19 +3121,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hadis",
-            "locator": "Giriş: hadis tanımı",
+            "locator": "109–117. satırlar",
             "supports": "Hadis, Hz. Peygamber'e nispet edilen söz, fiil ve onaylara dair rivayetleri ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-008",
+        "reviewedCandidateSha256": "bbca508acd08915a643424b7c772a391d185aa73a5d3aa10a8950de8c64d85d5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Mimari/dekorasyon yerine dört dinî bilgi ürünü kullanıldı. Sünnet/haber/eser kapsam örtüşmesi yaratabileceğinden çeldirici seçilmedi.",
+        "optionReview": {
+          "o3": "Dinî-hukukî sorunun cevabı.",
+          "o4": "Anlam çevirisi.",
+          "o2": "Nispet edilen söz/fiil/takrir haberi.",
+          "o1": "Kur’an yorumu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hadis",
+          "locator": "109–117. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "41791d870a05449b634d02e1f08f6b77cec0a43df9f3efac2e7fdb3db5b9f272"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2506,20 +3209,20 @@
         "question": "Fıkıh terminolojisinde bir konunun hükmünü fetva yoluyla sormaya ne denir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İtikâf"
-          },
-          {
             "id": "o2",
             "text": "İstiftâ"
           },
           {
+            "id": "o1",
+            "text": "İftâ"
+          },
+          {
             "id": "o3",
-            "text": "Tesbih"
+            "text": "İçtihat"
           },
           {
             "id": "o4",
-            "text": "Tilâvet"
+            "text": "Kazâ"
           }
         ],
         "correctOptionId": "o2",
@@ -2528,19 +3231,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/fetva",
-            "locator": "Fetva maddesi: istiftâ teriminin anlamı",
+            "locator": "96–98. satırlar",
             "supports": "İstiftâ, dinî-hukukî bir konuda yetkili kişiden fetva isteme işlemidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-009",
+        "reviewedCandidateSha256": "3f98fc3aa469a358b9a0fc0910ce5ed3c9823a25d3e190cb172ca9f96909b46a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilgisiz ibadet yerine soru sorma/cevap verme/yargı kavramları ayrıştırıldı.",
+        "optionReview": {
+          "o2": "Fetva isteme.",
+          "o1": "Fetva verme.",
+          "o3": "Hüküm çıkarma çabası.",
+          "o4": "Yargılama faaliyeti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/fetva",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "37925c38b5e0c7c5021be594f09516757f78a410b0f0d50321c98c3a30648d54"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2587,23 +3316,23 @@
         ]
       },
       "after": {
-        "question": "İslâm'da genel anlamıyla Allah'ın rızasını gözeterek yapılan davranışlara ne denir?",
+        "question": "Namaz, oruç ve hac gibi kulluk görevlerinin ortak üst kavramı hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Seyahat"
+            "id": "o3",
+            "text": "Ahlâk"
+          },
+          {
+            "id": "o4",
+            "text": "Hukuk"
           },
           {
             "id": "o2",
             "text": "İbadet"
           },
           {
-            "id": "o3",
-            "text": "Müzakere"
-          },
-          {
-            "id": "o4",
-            "text": "Ticaret"
+            "id": "o1",
+            "text": "İtikat"
           }
         ],
         "correctOptionId": "o2",
@@ -2612,19 +3341,46 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ibadet",
-            "locator": "İbadetin genel anlamı: Allah rızasına uygun davranma",
+            "locator": "449–453. satırlar",
             "supports": "İbadet yalnız belli ritüellerle sınırlı değildir; Allah'ın rızasını gözeterek yapılan iyi davranışları da kapsayabilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v9-general-010",
+        "reviewedCandidateSha256": "610b1e4ceeeef4d157cb47facbdf8448c88d05c02be0cf7e0050aa09195ca972",
+        "disposition": "revised",
+        "defects": [
+          "broad-stem",
+          "possible-multiple-correct"
+        ],
+        "reason": "Ticaret/seyahat iyi niyetle ibadet olabileceğinden belirsiz eylem seçimi kaldırılıp üst kavram soruldu.",
+        "optionReview": {
+          "o3": "Ahlâkî tutum alanı.",
+          "o4": "Hak ve hükümler alanı.",
+          "o2": "İbadet tanımı.",
+          "o1": "İnanç alanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibadet",
+          "locator": "449–453. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "eddfcc322841fbc40a8b7c8a135975790935069fe63e5939f47aee360fbf99d4"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2707,8 +3463,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-001",
+        "reviewedCandidateSha256": "ec9392b67099de6770a952d238f4c9498a7d5b72367489ed82fb8bb926cc2d00",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört canlı türü; neml kelimesini bilme hedefi. Hüdhüd gibi farklı sahneyle karışan kuş da gerçek çeldirici.",
+        "optionReview": {
+          "o1": "Nahl’ın karşılığı.",
+          "o2": "Neml’in karşılığı.",
+          "o3": "Ankebût’un karşılığı.",
+          "o4": "Kıssadaki başka canlı türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/neml-suresi",
+          "locator": "NEML SÛRESİ, ilk paragraf ve 27/18",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2758,20 +3536,20 @@
         "question": "Kasas sûresinin adındaki 'kasas' sözcüğü Türkçede ne anlama gelir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Dilekler"
+            "id": "o3",
+            "text": "Öğütler"
+          },
+          {
+            "id": "o4",
+            "text": "Hükümler"
           },
           {
             "id": "o2",
             "text": "Kıssalar"
           },
           {
-            "id": "o3",
-            "text": "Geceler"
-          },
-          {
-            "id": "o4",
-            "text": "Dağlar"
+            "id": "o1",
+            "text": "Dualar"
           }
         ],
         "correctOptionId": "o2",
@@ -2780,19 +3558,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kasas-suresi",
-            "locator": "KASAS SÛRESİ, ilk paragraf",
+            "locator": "96–100. satırlar",
             "supports": "Kasas kıssalar anlamındadır; sûrenin önemli bir bölümünde Hz. Mûsâ'nın hayatından olaylar anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-002",
+        "reviewedCandidateSha256": "dbcbfc7cfb0e0378d68438d9b8cd8b0f4255a35dd67d771ca8fac22e59465f7e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Gece/dağ yerine Kur’an anlatımı ve içerik türleriyle ilgili dört çoğul isim kullanıldı.",
+        "optionReview": {
+          "o3": "İbret mesajı, kelimenin karşılığı değil.",
+          "o4": "Dinî/hukukî ilkeler, kelimenin karşılığı değil.",
+          "o2": "Kasas karşılığı.",
+          "o1": "Başka içerik türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kasas-suresi",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6a8b48fc41e3a879fb2c29e428f11c83031f1627e92f98b4021e2dc17a99ab60"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2842,20 +3646,20 @@
         "question": "Kehf sûresinin adındaki 'kehf' kelimesi ne demektir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Deniz"
+            "id": "o4",
+            "text": "Ova"
           },
           {
             "id": "o2",
             "text": "Mağara"
           },
           {
-            "id": "o3",
-            "text": "Yıldız"
+            "id": "o1",
+            "text": "Vadi"
           },
           {
-            "id": "o4",
-            "text": "Şehir"
+            "id": "o3",
+            "text": "Tepe"
           }
         ],
         "correctOptionId": "o2",
@@ -2864,19 +3668,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kehf-suresi",
-            "locator": "KEHF SÛRESİ, ilk paragraf",
+            "locator": "97. satır",
             "supports": "Kehf mağara anlamına gelir; sûrede inançları için bir mağaraya sığınan gençlerin kıssası bulunur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-003",
+        "reviewedCandidateSha256": "91be94a7ff30262a72f11e5da97e51c61367e6c39da6373247a94af5d8ea93de",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Şehir/yıldız yerine dört doğal yer şekli kullanıldı.",
+        "optionReview": {
+          "o4": "Başka yer şekli.",
+          "o2": "Kehf kelimesinin anlamı.",
+          "o1": "Başka yer şekli.",
+          "o3": "Başka yer şekli."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kehf-suresi",
+          "locator": "97. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "eddfcc322841fbc40a8b7c8a135975790935069fe63e5939f47aee360fbf99d4"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2959,8 +3789,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-004",
+        "reviewedCandidateSha256": "4eb0a0853987d38501ad726493a45ce0b13ef746648e2bd5ab2fba4fb0b6d928",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört böcek/eklembacaklı türü; örümcek anlamını bilmek gerekir. Biyolojik sınıfın aynı olması iddia edilmiyor.",
+        "optionReview": {
+          "o1": "Neml karşılığı.",
+          "o2": "Ankebût karşılığı.",
+          "o3": "Nahl karşılığı.",
+          "o4": "Başka canlı adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ankebut-suresi",
+          "locator": "ANKEBÛT SÛRESİ, ad paragrafı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3043,8 +3895,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-006",
+        "reviewedCandidateSha256": "bd129ef21019fc11a662c5bc27b3e1dd1084a47e3335cfbee9478ea9a87e67c8",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Önceki v73 düzenlemesi yeniden kontrol edildi: dört Kur’an ilkesi, Lokmân’ın ilk öğüdü 31/13 ile belirli.",
+        "optionReview": {
+          "o2": "31/13’teki öğüt.",
+          "o1": "Başka ayetteki öğüt.",
+          "o3": "Başka ayetteki öğüt.",
+          "o4": "Başka ayetteki işlem."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "31/13; PDF sayfa 434 (1 tabanlı), basılı sayfa 433",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3127,8 +4003,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-007",
+        "reviewedCandidateSha256": "3ac7c045a7e51044d0e05d6b97e7850f18d4cb87a04c8c4435ad076c87d0eb1f",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Hucurât öğüdü. Haber incelemesi 49/6’nın bağlamı; diğerleri de iyi fakat farklı ayetler.",
+        "optionReview": {
+          "o3": "49/12 bağlamı.",
+          "o4": "49/9 bağlamı.",
+          "o2": "49/6’nın öğüdü.",
+          "o1": "49/11 bağlamı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/6; PDF sayfa 548 (1 tabanlı), basılı sayfa 547",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3211,8 +4111,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-008",
+        "reviewedCandidateSha256": "f5108ab4de49c4b790a2de8b273380d0a27e27185b5ddf7edb1cd52354a5f976",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört âyet sıra sayısı; 24/35’te nûr ifadesi açık, sûre adının bu ayetten alınması ayrıca madde incelemesi bekliyor.",
+        "optionReview": {
+          "o1": "Adın alındığı ayet değil.",
+          "o2": "Nûr ifadesini içeren anahtar ayet.",
+          "o3": "Adın alındığı ayet değil.",
+          "o4": "Adın alındığı ayet değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/nur-suresi",
+          "locator": "NÛR SÛRESİ, ilk paragraf",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3300,8 +4222,32 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-010",
+        "reviewedCandidateSha256": "e8c9761d753d0ba7774ea2f611096ea7321934aa40442b4281018a6f550142d4",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Önceki v73 düzenlemesi yeniden ele alındı: dört dinî konu; Mülk 67/1 hükümranlığı açıkça bildiriyor.",
+        "optionReview": {
+          "o3": "Başka surelerin hukuk konusu.",
+          "o4": "Bakara’daki hukuk konusu.",
+          "o2": "67/1’in teması.",
+          "o1": "Nisâ’daki hukuk konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "67/1; PDF sayfa 603 (1 tabanlı), basılı sayfa 602",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3351,20 +4297,20 @@
         "question": "Yûsuf 12/3’teki “ahsen-i kasas” terkibinin yaygın Türkçe karşılıklarından biri hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "En uzun dua"
-          },
-          {
             "id": "o2",
             "text": "Kıssaların en güzeli"
           },
           {
+            "id": "o1",
+            "text": "Anlatıların en kısası"
+          },
+          {
             "id": "o3",
-            "text": "En kısa sûre"
+            "text": "Olayların en eskisi"
           },
           {
             "id": "o4",
-            "text": "İlk hicret"
+            "text": "Haberlerin en yenisi"
           }
         ],
         "correctOptionId": "o2",
@@ -3373,19 +4319,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
-            "locator": "YÛSUF SÛRESİ, ahsen-i kasas yorumları",
+            "locator": "98–101. satırlar",
             "supports": "Ahsen-i kasas yaygın biçimde “kıssaların en güzeli” diye çevrilir; “kıssanın en güzel anlatımı” ve “en doğru kıssa” yorumları da vardır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-011",
+        "reviewedCandidateSha256": "10cb797df4cd98068cf4ef93d72763bdcef033c1831d1789cc5c5387abbf3a30",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dua/sure/hicret karışımı yerine dört benzer üstünlük tamlaması kullanıldı. Alternatif doğru çeviriler yanlış seçenek yapılmadı.",
+        "optionReview": {
+          "o2": "Yaygın karşılık.",
+          "o1": "Uzunluk üstünlüğü değil.",
+          "o3": "Eskilik üstünlüğü değil.",
+          "o4": "Yenilik üstünlüğü değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
+          "locator": "98–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6a8b48fc41e3a879fb2c29e428f11c83031f1627e92f98b4021e2dc17a99ab60"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3435,20 +4407,20 @@
         "question": "Asr sûresinin adındaki 'asr' kelimesi hangi kavramı da ifade eder?",
         "options": [
           {
-            "id": "o1",
-            "text": "Dağ"
-          },
-          {
             "id": "o2",
             "text": "Zaman"
           },
           {
+            "id": "o1",
+            "text": "Mekân"
+          },
+          {
             "id": "o3",
-            "text": "Gemi"
+            "text": "Sayı"
           },
           {
             "id": "o4",
-            "text": "Hurma"
+            "text": "Yön"
           }
         ],
         "correctOptionId": "o2",
@@ -3457,19 +4429,45 @@
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/asr-suresi",
-            "locator": "ASR SÛRESİ, sözlük ve muhteva",
+            "locator": "96–100. satırlar",
             "supports": "Asr kelimesi çağ ve zaman anlamlarını taşır; sûrede insanın hüsrandan kurtuluşunun ilkeleri anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-quran-012",
+        "reviewedCandidateSha256": "0951e7dde55c1732477fb0292e1354e9968c5399b58bcee021f94b2638e98bad",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dağ/gemi/hurma yerine aynı düzeyde dört soyut kavram kullanıldı. İkindi/gece gibi kaynakta anlamları bulunan şıklar yanlış yapılmadı.",
+        "optionReview": {
+          "o2": "Asrın zaman anlamı.",
+          "o1": "Yer kavramı.",
+          "o3": "Nicelik kavramı.",
+          "o4": "İstikamet kavramı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/asr-suresi",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "6a8b48fc41e3a879fb2c29e428f11c83031f1627e92f98b4021e2dc17a99ab60"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3552,8 +4550,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-001",
+        "reviewedCandidateSha256": "3db35612f1fc04b309014aaaba75dafa7e81d312f60ceff490eca0e27efc2b18",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört taşıma aracı/canlısı. Deniz bağlamı kökte doğrudan verilmediğinden olay bilgisi gerekir; zarar verilen gemi 18/71’de açık.",
+        "optionReview": {
+          "o1": "Başka binek.",
+          "o2": "18/71’deki araç.",
+          "o3": "Başka binek.",
+          "o4": "Başka taşıma aracı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/71; PDF sayfa 316 (1 tabanlı), basılı sayfa 315",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3603,20 +4625,20 @@
         "question": "Kehf 18/82'de onarılan duvarın altında kimin hazinesi bulunuyordu?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bir tüccarın"
+            "id": "o4",
+            "text": "İki yolcu ailenin"
           },
           {
             "id": "o2",
             "text": "İki yetim çocuğun"
           },
           {
-            "id": "o3",
-            "text": "Bir kumandanın"
+            "id": "o1",
+            "text": "İki genç tüccarın"
           },
           {
-            "id": "o4",
-            "text": "Bir kralın"
+            "id": "o3",
+            "text": "İki saray görevlisinin"
           }
         ],
         "correctOptionId": "o2",
@@ -3624,13 +4646,13 @@
         "explanation": "Kehf sûresinde onarılan duvarın altında iki yetimin hazinesinin bulunduğu anlatılır.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=18&ayet=82&mode=meal",
-            "locator": "Kehf 18/82, Diyanet meal metni",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kehf 18/82; PDF sayfa 317",
             "supports": "Kehf sûresinde onarılan duvarın altında iki yetimin hazinesinin bulunduğu anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -3642,12 +4664,38 @@
       ],
       "automaticAfter": [
         {
-          "kind": "correct-prefix-outlier",
-          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+          "kind": "domain-mismatch",
+          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-003",
+        "reviewedCandidateSha256": "dc120c61cad47435052296fff437c66f665cd49ac6984a22d14b5993a5c26648",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Doğru cevabın tek çoğul/iki kişili seçenek olması giderildi; dört sahiplik ifadesi benzer yapıya getirildi.",
+        "optionReview": {
+          "o4": "Ayetteki sahipler değil.",
+          "o2": "Ayetteki sahipler.",
+          "o1": "Ayetteki sahipler değil.",
+          "o3": "Ayetteki sahipler değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "Kehf 18/82; PDF sayfa 317",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3730,8 +4778,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-005",
+        "reviewedCandidateSha256": "cb5b762112a3ffb2d4d3843df425a9fa0ea881f6bffd3ba801d72ba398847c15",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört canlı; karıncanın kendi türüne seslenişi 27/18’de açık. Hüdhüd kıssadaki başka kuştur.",
+        "optionReview": {
+          "o1": "Başka sahnenin kuşu.",
+          "o2": "27/18’de konuşan.",
+          "o3": "Başka böcek.",
+          "o4": "Başka böcek."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/18; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3781,20 +4853,20 @@
         "question": "Neml 27/24'te hüdhüd, Sebe halkının hangi gök cismine secde ettiğini bildirir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Aya"
+            "id": "o4",
+            "text": "Sirius'a"
           },
           {
             "id": "o2",
             "text": "Güneşe"
           },
           {
-            "id": "o3",
-            "text": "Yıldıza"
+            "id": "o1",
+            "text": "Aya"
           },
           {
-            "id": "o4",
-            "text": "Dünyaya"
+            "id": "o3",
+            "text": "Venüs'e"
           }
         ],
         "correctOptionId": "o2",
@@ -3802,20 +4874,47 @@
         "explanation": "Hüdhüd, Sebe halkının Allah yerine güneşe secde ettiğini Hz. Süleyman'a haber verir.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=24&mode=meal",
-            "locator": "Neml 27/24, Kur’an Yolu metni",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Neml 27/24; PDF sayfa 399",
             "supports": "Hüdhüd, Sebe halkının Allah yerine güneşe secde ettiğini Hz. Süleyman'a haber verir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-006",
+        "reviewedCandidateSha256": "54c8085ca4773542cbbd5c6032cad426416c7a9d5ad3646c7747d28bb92eea57",
+        "disposition": "revised",
+        "defects": [
+          "possible-multiple-correct",
+          "overlapping-options"
+        ],
+        "reason": "Güneş de yıldız olduğundan genel yıldıza şıkkındaki kapsama ihtimali kaldırıldı; dört ayrı gök cismi adı verildi.",
+        "optionReview": {
+          "o4": "Ayrı yıldız.",
+          "o2": "Ayette belirtilen gök cismi.",
+          "o1": "Ayrı gök cismi.",
+          "o3": "Ayrı gezegen."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "Neml 27/24; PDF sayfa 399",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3865,20 +4964,20 @@
         "question": "Hz. Süleyman'ın Sebe hükümdarına gönderdiği mektup hangi ifadeyle başlar?",
         "options": [
           {
-            "id": "o1",
-            "text": "Selâm duasıyla"
+            "id": "o3",
+            "text": "Salveleyle"
+          },
+          {
+            "id": "o4",
+            "text": "Tekbirle"
           },
           {
             "id": "o2",
             "text": "Besmeleyle"
           },
           {
-            "id": "o3",
-            "text": "Bir tarih notuyla"
-          },
-          {
-            "id": "o4",
-            "text": "Bir savaş şiiriyle"
+            "id": "o1",
+            "text": "Hamdeleyle"
           }
         ],
         "correctOptionId": "o2",
@@ -3886,20 +4985,46 @@
         "explanation": "Neml 27/30'da Süleyman'ın mektubunun rahmân ve rahîm olan Allah'ın adıyla başladığı aktarılır.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=30&mode=meal",
-            "locator": "Neml 27/30, Kur’an Yolu metni",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Neml 27/30; PDF sayfa 400",
             "supports": "Neml 27/30'da Süleyman'ın mektubunun rahmân ve rahîm olan Allah'ın adıyla başladığı aktarılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-007",
+        "reviewedCandidateSha256": "d78b152055edaacb745a8477e453243497b0684595d59caab3bf949cdffef768",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tarih notu/savaş şiiri yerine dört dinî açış ve anma ifadesi kullanıldı.",
+        "optionReview": {
+          "o3": "Peygamber’e salât ifadesi.",
+          "o4": "Allah’ın büyüklüğünü anma.",
+          "o2": "Rahmân ve rahîm Allah’ın adıyla.",
+          "o1": "Allah’a hamd ifadesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı terim/olay önceki sorularda da işlendiğinden öğrenme hedefi tekrarı not edildi. Bu kayıtta sorular birleştirilmedi veya çıkarılmadı; conceptGroup ve nihai banka dengesi ayrıca kontrol edilecek.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "Neml 27/30; PDF sayfa 400",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3949,20 +5074,20 @@
         "question": "Kasas 28/13'te bebek Hz. Mûsâ kime geri kavuşturulur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Firavun'a"
+            "id": "o4",
+            "text": "Erkek kardeşine"
           },
           {
             "id": "o2",
             "text": "Annesine"
           },
           {
-            "id": "o3",
-            "text": "Kardeşi Hârûn'a"
+            "id": "o1",
+            "text": "Babasına"
           },
           {
-            "id": "o4",
-            "text": "Bir tüccara"
+            "id": "o3",
+            "text": "Kız kardeşine"
           }
         ],
         "correctOptionId": "o2",
@@ -3970,20 +5095,51 @@
         "explanation": "Kasas sûresinde bebeğin annesine geri döndürülmesiyle annesinin gönlünün yatıştırıldığı anlatılır.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=28&ayet=13&mode=meal",
-            "locator": "Kasas 28/13, Diyanet indekslenmiş meal",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "Kasas 28/13; PDF sayfa 407",
             "supports": "Kasas sûresinde bebeğin annesine geri döndürülmesiyle annesinin gönlünün yatıştırıldığı anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-010",
+        "reviewedCandidateSha256": "159f85826dd3ab7607820934f65bffcbc136c7b3dced0d0f0895a91025f9c881",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek anne/aile şıkkına karşı tüccar/hükümdar yerine dört aile bağı kullanıldı; ayetteki geri veriliş soruluyor.",
+        "optionReview": {
+          "o4": "Bu ayette geri verildiği kişi değil.",
+          "o2": "Ayetteki geri kavuşma.",
+          "o1": "Ayette bu dönüşün alıcısı değil.",
+          "o3": "Bebeği takip eden; geri verildiği kişi değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "Kasas 28/13; PDF sayfa 407",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4066,8 +5222,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-prophets-011",
+        "reviewedCandidateSha256": "58328e351769bededb26d3858a17a13db9c6a473bc5f32786f23415f99938246",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört süre aynı biçimde. En az kaydı sekiz teklif/on gönüllü ayrımını kesinleştiriyor.",
+        "optionReview": {
+          "o1": "Teklif süresi değil.",
+          "o2": "Asgarî teklif.",
+          "o3": "Teklif süresi değil.",
+          "o4": "Teklif süresi değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "28/27; PDF sayfa 409 (1 tabanlı), basılı sayfa 408",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4150,8 +5330,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-history-001",
+        "reviewedCandidateSha256": "daa7885d0c39979a711ef201171edaa1d8db2822cc696ada8dcf68f1feb67566",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kadın sahâbî adı, kuşağın ikiye bölünmesiyle lakap bağlantısını bilmek gerekir.",
+        "optionReview": {
+          "o1": "Başka kadın sahâbî.",
+          "o2": "Lakap sahibi.",
+          "o3": "Başka kadın sahâbî.",
+          "o4": "Başka kadın sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "Hicret hazırlığı, iki kuşak lakabı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4234,8 +5436,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "v10-history-003",
+        "reviewedCandidateSha256": "37f2bc84a635bed1b90bf397a7ac58f369e686231e9eaadeb0ddeef6247056df",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî; aşere içinde oluş ve kumandanlık birlikte seçiliyor. Sonraki muharebe kumandanlarını tümden dışlamıyor.",
+        "optionReview": {
+          "o1": "Şair sahâbî.",
+          "o2": "Aşerede olan kumandan.",
+          "o3": "Hadis rivayetiyle tanınan.",
+          "o4": "Sancaktar; aşerede sayılmıyor."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/ebu-ubeyde-b-cerrah",
+          "locator": "Giriş: aşere-i mübeşşereden kumandan sahâbî",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

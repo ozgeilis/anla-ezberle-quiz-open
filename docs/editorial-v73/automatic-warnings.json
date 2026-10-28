@@ -1364,7 +1364,12 @@
   {
     "id": "v7-general-002",
     "category": "fikih",
-    "flags": []
+    "flags": [
+      {
+        "kind": "possible-synonyms",
+        "detail": "Yakın anlamlı kavramlar birden fazla cevaba işaret edebilir"
+      }
+    ]
   },
   {
     "id": "v7-general-003",
