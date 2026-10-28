@@ -32,7 +32,9 @@ export function googleCallbackCode(
     u.searchParams.getAll("attempt").length !== 1 ||
     u.hash
   )
-    throw Error("Google dönüş bağlantısı bu girişe ait değil.");
+    throw Error(
+      "Google girişini doğrulayamadık. Giriş ekranından yeniden dene.",
+    );
   if (u.searchParams.has("error"))
     throw Error("Google girişi tamamlanmadı. Yeniden deneyebilirsin.");
   const code = u.searchParams.get("code");

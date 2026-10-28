@@ -47,8 +47,11 @@ function AccountDeletionForm({
     [password, setPassword] = useState(""),
     [confirmation, setConfirmation] = useState("");
   const [available, setAvailable] = useState<boolean | null>(null),
-    [busy, setBusy] = useState(false),
+    [pendingAction, setPendingAction] = useState<
+      "code" | "delete" | "cleanup" | null
+    >(null),
     [message, setMessage] = useState("");
+  const busy = pendingAction !== null;
   // A passwordless email identity does NOT prove that an app password exists.
   const hasGoogleIdentity =
     auth.session?.user.identities?.some((i) => i.provider === "google") ===
@@ -101,7 +104,7 @@ function AccountDeletionForm({
     if (!client) return;
     const deletingActor = actor;
     lock.current = true;
-    setBusy(true);
+    setPendingAction("delete");
     setMessage("");
     try {
       const { data: sessionData } = await client.auth.getSession();
@@ -132,7 +135,7 @@ function AccountDeletionForm({
       setPassword("");
       if (useGoogleCode) setChallenge("");
       lock.current = false;
-      setBusy(false);
+      setPendingAction(null);
     }
   };
   return (
@@ -175,7 +178,7 @@ function AccountDeletionForm({
               title="Cihaz oturumunu temizlemeyi yeniden dene"
               disabled={busy}
               onPress={() => {
-                setBusy(true);
+                setPendingAction("cleanup");
                 void finishLocal(serverDeleted)
                   .catch((e) =>
                     setMessage(
@@ -184,7 +187,7 @@ function AccountDeletionForm({
                         : "Yerel temizlik tamamlanamadı.",
                     ),
                   )
-                  .finally(() => setBusy(false));
+                  .finally(() => setPendingAction(null));
               }}
             />
           </>
@@ -291,12 +294,16 @@ function AccountDeletionForm({
         )}
         {useGoogleCode && (
           <Button
-            title="Doğrulama kodu gönder"
+            title={
+              pendingAction === "code"
+                ? "Doğrulama kodu gönderiliyor…"
+                : "Doğrulama kodu gönder"
+            }
             disabled={busy}
             onPress={() => {
               if (lock.current || !actor) return;
               lock.current = true;
-              setBusy(true);
+              setPendingAction("code");
               setMessage("");
               const requestedActor = actor;
               void onlineClient()!
@@ -323,7 +330,7 @@ function AccountDeletionForm({
                 })
                 .finally(() => {
                   lock.current = false;
-                  setBusy(false);
+                  setPendingAction(null);
                 });
             }}
           />
@@ -378,7 +385,7 @@ function AccountDeletionForm({
         />
         <Button
           title={
-            busy
+            pendingAction === "delete"
               ? "Sunucudan silme onayı bekleniyor…"
               : "Hesabımı kalıcı olarak sil"
           }

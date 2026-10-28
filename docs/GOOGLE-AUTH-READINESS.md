@@ -1,6 +1,30 @@
 # Google girişi ve 8 karakter parola — kapalı test adayı
 
-**27.10.2026: Kod ve yerel kontroller hazır; gerçek Google OAuth, Android/iPhone kabulü ve canlı etkinleştirme tamamlanmadı.** Bu dal main, Vercel Production, Supabase Auth/provider ayarları ve canlı `account-delete` fonksiyonunu değiştirmedi. Google, migration uygulanmadığında veya iki hazırlık bayrağından biri kapalıysa istemcide kapalı kalır.
+**28.10.2026: Kullanıcının açık onayıyla kapalı test backend’i kuruldu.** Main, Vercel Production, genel push ve soru bankası değişmedi. Gerçek web Google girişi, oturumun yeniden yüklemede korunması, çıkış, geri dönerek iptal, tekrar giriş ve e-posta koduyla Google hesabı silme kabulü geçti. Fiziksel Android/iPhone testleri bekliyor. Google üzerinden yeni Auth hesabı kaydı sunucuda kapalıdır.
+
+## Onaylı kapalı test — gerçekleşen durum
+
+| Kontrol                 | Sonuç ve kanıt                                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| PR #13 kod kontrolleri  | Önceki `2afa335` kontrolleri ve Preview başarılı; son kapalı test düzeltmeleri aynı PR’da incelenir. Güncel CI sonucu PR kontrol listesinden izlenmelidir.                                                                                                                                                                                                                                                |
+| Migration               | `20261027000200`, SHA-256 `d1966ee733ef3855c423661136b99f3260177d64044b3685e5adf1ebd29de8e5`, yalnız Frankfurt’a uygulandı ve migration geçmişine kaydedildi. İki yeni private tabloda forced RLS doğrulandı.                                                                                                                                                                                             |
+| Auth hook               | Dashboard’da `public.before_google_user_created` etkin. Anon/authenticated çağrı yetkisi yok; Auth admin yetkili. Salt okunur SQL denemesinde yeni Google kaydı 403, eski e-posta yolu değişmeden `{}` döndü. Silinen test hesabıyla gerçek Google yeniden giriş denemesinde yeni Auth hesabı oluşmadığı ayrıca doğrulandı; uygulama oturum açmadı.                                                       |
+| Google Cloud            | Marka `Anla & Ezberle`, onaylı iş destek adresi; OAuth Web client yalnız Supabase broker callback’i. External / Testing, tek onaylı test kimliği. İş hesabına yalnız OAuth Config Editor verildi; ek genel okuma/yönetici rolü verilmedi.                                                                                                                                                                 |
+| Google provider         | Kullanıcı client secret’ını doğrudan Dashboard’a girdi; etkin durum yeniden okunarak doğrulandı. Secret Git’e/istemciye alınmadı. Nonce atlama ve e-postasız giriş kapalı.                                                                                                                                                                                                                                |
+| Callback’ler            | Önceki beş izin korundu; yalnız native Google query callback’i, yerel 8165 ve bu PR’ın tam Preview branch adresi eklendi. Genel Vercel wildcard’ı yok; Site URL değişmedi.                                                                                                                                                                                                                                |
+| Kapalı test bayrakları  | `googleOAuthEnabled=true`, `googleDeletionEnabled=true`, **`googleSignupEnabled=false`**. Sunucu `GOOGLE_ACCOUNT_DELETION_ENABLED=true`; yeni Google kayıtları açık değildir.                                                                                                                                                                                                                             |
+| Canlı parola politikası | Minimum 12→8. Diğer sınıflar, e-posta doğrulama, güvenli değişim ayarları ve limitler korunur. Yeni geçici hesapta 7 ret, 8 ile güncelleme/giriş, 24 karakterle giriş ve gerçek recovery tokenı üzerinden 8 karaktere sıfırlama geçti. Gerçek sıfırlama postası teslimi test edilmedi.                                                                                                                    |
+| Hesap silme regresyonu  | Önceki çalışan fonksiyonun kaynak yedeği alındı; sürüm 6 dağıtıldı. Yeni geçici parola hesabı gerçek Edge akışıyla silindi; tekrar giriş, eski JWT/refresh ve tekrarlı istek reddedildi. Yanlış parola ve istemciden actor değiştirme reddedildi.                                                                                                                                                         |
+| Diğer kullanıcılar      | Silme testinin öncesi/sonrası sunucuda hesaplanan özetler: diğer Auth hesapları, profiller, arkadaşlıklar, maçlar, bildirimler ve skor defteri değişmedi. Ham kullanıcı satırları dışarı aktarılmadı.                                                                                                                                                                                                     |
+| E-posta şablonu         | Tek kullanımlık kod eklendi; mevcut `ConfirmationURL` giriş seçeneği korundu. Kullanıcı gerçek e-postadaki kodu yalnız uygulamaya girerek silmeyi tamamladı; gerçek OTP teslimi **PASS**.                                                                                                                                                                                                                 |
+| Google gerçek kabulü    | Gerçek Google izin ekranı → Supabase PKCE → uygulama oturumu başarılı. Önceden hazırlanan aynı UID’ye Google identity bağlandı; ikinci hesap oluşmadı, uygulama şifresi gerekmedi. Yeniden yükleme, çıkış, geri dönerek iptal ve tekrar giriş geçti. İkinci onay + e-posta kodu + SİL ile kullanıcı son silmeyi yaptı; Auth Admin ve silme doğrulama RPC’si hesabın/ilişkili verinin yokluğunu doğruladı. |
+| Fiziksel cihazlar       | Android/iPhone gerçek OAuth kabulü **DOĞRULANAMADI**. Mevcut iPhone build’inde WebBrowser modülü olmadığı için aynı kimlik/imzayla yeni native build gerekir; uygulama silinmedi.                                                                                                                                                                                                                         |
+
+Onaylı iki geçici Supabase test hesabı da test sonunda silindi; yeni test hesabı kalmadı. İş Google hesabının kendisi korunur. Özel test kimlikleri, parolalar, oturumlar ve ham denetim çıktıları Git dışında erişimi kısıtlı klasörde tutulur.
+
+Preview: https://anla-ezberle-quiz-git-feat-google-auth-pas-fcc27e-ozgeilis-6528.vercel.app/online
+
+Yerel gerçek Auth kabulü: `http://127.0.0.1:8165/online`. Bu kaynak mevcut Edge CORS listesinde zaten izinliydi; Preview için hesap silme CORS sınırı genişletilmedi.
 
 ## Hazırlanan akış
 
@@ -11,7 +35,7 @@
 - Google için uygulama şifresi istenmez. Aynı doğrulanmış e-postadaki kimlik eşleşmesini Supabase yönetir; istemci e-posta eşitliğine göre profil/kayıt birleştirmez. Elle kimlik bağlama açılmaz. Gerçek aynı UID testi tamamlanana kadar bu davranış PASS sayılmaz.
 - Google ile giriş, mevcut çevrimiçi servis izin listesine/oda yetkilerine ayrıcalık vermez. Sunucu erişim kontrolleri korunur. Hesap değişimi ve çıkışta Google giriş taslağı temizlenir.
 
-## Salt okunur canlı gözlem
+## 27.10.2026 başlangıç gözlemi — değişikliklerden önce
 
 Frankfurt `mqyuihiobkomjfipxehj` Dashboard ve public Auth settings üzerinden:
 
@@ -30,7 +54,7 @@ Frankfurt `mqyuihiobkomjfipxehj` Dashboard ve public Auth settings üzerinden:
 | Sızmış parola koruması             | Mevcut Free planda kapalı; bu çalışma değiştirmedi |
 | Google Cloud `anla-ezberle-push`   | “Google Auth Platform not configured yet”          |
 
-`config.toml` ve `config.remote.toml` içindeki 8 değeri **aday yapılandırmadır**, canlıya uygulandığı anlamına gelmez. Diğer Auth güvenlik ayarlarına dokunulmadı.
+Bu tablo 27.10 başlangıç durumunu gösterir. 28.10 onaylı işlemde canlı minimum yalnız 8 olarak değiştirildi; uygulama kodu henüz PR dalındadır, main/Production yayımlanmadı. Diğer Auth güvenlik ayarlarına dokunulmadı.
 
 ## Google kullanıcılarında güvenli hesap silme
 
@@ -40,11 +64,13 @@ Google kimliği bulunan hesapta ikinci onay ekranı sunucudan **8 haneli e-posta
 
 Passwordless girişin eklediği `email` identity, kullanıcının uygulama şifresi bulunduğunun kanıtı sayılmaz. Google kimliği varsa kod yolu sunulur; kullanıcı isterse mevcut şifresini kullanan eski doğrulama yolunu ayrıca seçebilir. Google kimliği olmayan e-posta/şifre hesaplarının akışı aynı kalır.
 
-Bu, Google şifresini istemek yerine doğrulanmış hesaba ait e-posta sahipliğini yeniden doğrulayan passwordless akıştır. **Gerçek posta teslimi ve Google hesabının uçtan uca silinmesi henüz test edilmedi.** Bu nedenle Google ile yeni hesap kaydı genel kullanıma açılamaz.
+Bu, Google şifresini istemek yerine doğrulanmış hesaba ait e-posta sahipliğini yeniden doğrulayan passwordless akıştır. **28.10: Gerçek posta teslimi ve Google bağlantılı geçici hesabın uçtan uca silinmesi web üzerinde geçti.** Google hesabının kendisi silinmedi. Fiziksel cihaz kabulü ve ayrı genel yayın onayı olmadığı için Google ile yeni hesap kaydı kapalı kalır.
 
 Yeni yol ancak sunucuda `GOOGLE_ACCOUNT_DELETION_ENABLED=true` ve `quiz_private` config `deletion_enabled=true` ise açılır. Mevcut canlı parola yolu bu bayraktan bağımsızdır.
 
-## Açılmadan önce uygulanması gereken, onay bekleyen plan
+## Kontrollü dağıtım planı
+
+Aşağıdaki planın kapalı test kapsamı onaylandı. Gerçekleşen adımlar ve kalan kabul engelleri yukarıdaki tabloda ayrılmıştır; bu liste körlemesine yeniden uygulanmamalıdır.
 
 1. Mevcut Auth ayarları, redirect listesi, hook ve magic-link şablonunun güvenli yedeği alınır. Başka mevcut hook varsa **üzerine yazılmaz**; politikalar birleştirilip yeniden test edilir.
 2. Google Cloud’da mevcut proje içinde yalnız OAuth Web client hazırlanır. Supabase broker’ı kullanan sistem tarayıcısı akışında Android/iOS için ayrı native Google SDK veya SHA-1 client gerekmez. Consent Audience **External / Testing**, kapsam yalnız `openid`, `email`, `profile`. Uygulama adı Anla & Ezberle, destek/mahremiyet adresi kullanıcı tarafından onaylanan `kovynelstudio@gmail.com`. Destek adresinin Cloud’da seçilebilir sahipliği doğrulanmalı; kişisel adres sessizce yayımlanmamalı. FCM servis hesabı, rolü ve anahtarı bu iş için kullanılmaz. Client secret sadece Supabase Google provider’da tutulur, istemci/Vercel public env/Git’e konulmaz. Credential oluşturmanın son UI adımı kullanıcıya bırakılır.
@@ -72,10 +98,13 @@ Yeni yol ancak sunucuda `GOOGLE_ACCOUNT_DELETION_ENABLED=true` ve `quiz_private`
 
 - `pnpm check`: TypeScript, lint, soru bütünlüğü, **332/332 test** başarılı.
 - İzole Postgres 17 konteyneri, ağ/port/volume yok: `supabase/tests/google_auth.sql` başarılı. Kapalı varsayılan, rol izinleri, Google yeni kayıt kapısı, diğer e-posta politikası, UID ayrımı, cooldown, replay, expiry ve Auth FK cascade denetlendi. Bu test hosted Auth hook kaydının yapıldığı anlamına gelmez.
-- Gerçek Chromium, sentetik HTTP: **12 Google/parola grubu**; 320/360/390 açık/koyu, 7/8/12 sınırları, eski recovery callback’i, PKCE S256, nonce, yabancı UID ve iptal. **Mock provider gerçek Google başarısı değildir.**
+- Gerçek Chromium, sentetik HTTP: **13 Google/parola grubu**; 320/360/390 açık/koyu, 7/8/12 sınırları, eski recovery callback’i, PKCE S256, nonce, yabancı UID, iptal ve tarayıcıdan geri dönülen Google denemesinden sonra eski e-posta recovery akışı. **Mock provider gerçek Google başarısı değildir.**
 - Mevcut ayarlar/hesap tarayıcı regresyonu: **29 grup** başarılı. Gerçek e-posta veya canlı kullanıcı mutasyonu yok.
 - Web export başarılı. Android ve iOS Hermes bytecode export başarılı; JS export imzalı native build değildir.
-- Gerçek Google Cloud OAuth client, gerçek Google login/same-email linking, posta teslimi, Google-only hesap silme, fiziksel Android/iPhone callback: **DOĞRULANAMADI / onaylı yapılandırma ve cihaz testi bekliyor**.
+- Gerçek Google Cloud Web client, Google login/same-email aynı UID, posta teslimi, şifresiz Google bağlantılı hesap silme: **web PASS**. İlk izin ekranında bekleme süre aşımına uğradı (`bad_oauth_state`); yeni kısa deneme geçti. Fiziksel Android/iPhone callback: **DOĞRULANAMADI / yeni build ve cihaz kabulü bekliyor**.
+- Gerçek silme sonrası eski Google girişine dönüldüğünde yeni hesap oluşmadı. Sağlayıcı hata dönüşü nonce sınırında güvenli reddedildi; ham hata/kod/token gösterilmedi. Google hata ekranı e-posta doğrulama veya şifre sıfırlamaya yönlendirmez, doğrudan giriş ekranına döner. Web giriş ekranına geri dönüşte (bfcache dahil) ve açık e-posta giriş/posta isteğinde terk edilen Google nonce/verifier temizlenir; aktif Google callback’inin PKCE sınırı korunur.
+- Kod gönderimi, silme ve yerel temizlik ayrı bekleme durumlarıdır. Kod gönderilirken silme işlemi başlamış gibi metin gösterilmez; gerçek tarayıcı testinde yanıt bekletilerek doğrulanır.
+- Google consent ekranı testte Supabase proje alan adını gösterdi. Genel yayın öncesinde marka/domain bağlantıları ve gerekiyorsa Google marka doğrulaması tamamlanmalıdır; ücretli custom-domain veya Production değişikliği yapılmadı.
 
 ## Kaynaklar
 

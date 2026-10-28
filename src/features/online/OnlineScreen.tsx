@@ -1,4 +1,5 @@
 import { GoogleSignInButton } from "./GoogleSignInButton";
+import { clearGoogleAttempt } from "./googleAuth";
 import { RoundResultBadge } from "../results/RoundResultBadge";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { duelAudioCues } from "../audio/events";
@@ -6,7 +7,7 @@ import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { passwordError, validEmail } from "./account";
 import { useInbox } from "./InboxProvider";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Share, TextInput, View } from "react-native";
+import { Platform, Share, TextInput, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import * as Linking from "expo-linking";
 import { randomUUID } from "expo-crypto";
@@ -63,6 +64,15 @@ const stateLabel: Record<OnlineMatch["state"], string> = {
 };
 
 export function OnlineScreen() {
+  useEffect(() => {
+    if (Platform.OS !== "web") return;
+    // Returning from the provider (including the browser's back/forward cache)
+    // cancels its verifier before a different email authentication flow starts.
+    const cancel = () => void clearGoogleAttempt().catch(() => {});
+    cancel();
+    window.addEventListener("pageshow", cancel);
+    return () => window.removeEventListener("pageshow", cancel);
+  }, []);
   const { session } = useOnlineAuth();
   const { returnTo, invite, match } = useLocalSearchParams<{
     returnTo?: string;

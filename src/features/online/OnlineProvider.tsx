@@ -113,6 +113,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
   const signIn = async (email: string, password: string) => {
     const client = onlineClient();
     if (!client) throw new Error("Servis yapılandırılmadı.");
+    await clearGoogleAttempt();
     const { error } = await client.auth.signInWithPassword({
       email: email.trim(),
       password,
@@ -135,6 +136,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
       key,
       Date.now() + AUTH_EMAIL_COOLDOWN_SECONDS * 1000,
     );
+    await clearGoogleAttempt();
     await action();
   };
   const signUp = async (email: string, password: string) => {

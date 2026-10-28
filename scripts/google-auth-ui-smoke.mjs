@@ -133,10 +133,16 @@ try {
     await context.route("**/rest/v1/rpc/online_service_capabilities", (r) =>
       reply(r, { registrationEnabled: true, accountDeletionEnabled: true }),
     );
+    let releaseCode;
+    const codeResponseGate = new Promise((resolve) => {
+      releaseCode = resolve;
+    });
     await context.route("**/functions/v1/account-delete", async (r) => {
       const body = r.request().postDataJSON();
-      if (body.operation === "google-code")
+      if (body.operation === "google-code") {
+        await codeResponseGate;
         return reply(r, { challenge: "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa" });
+      }
       assert.deepEqual(Object.keys(body).sort(), [
         "challenge",
         "confirmation",
@@ -199,7 +205,8 @@ try {
       await p
         .getByText("Kovynel Studio", { exact: true })
         .waitFor({ state: "hidden" });
-    if (scenario === "success") await button(p,"Google ile Devam Et").click({trial:true});
+    if (scenario === "success")
+      await button(p, "Google ile Devam Et").click({ trial: true });
     if (scenario === "success")
       await p.screenshot({
         path: `${root}/google-enabled-390.png`,
@@ -226,6 +233,14 @@ try {
         0,
       );
       await button(p, "Doğrulama kodu gönder").click();
+      await button(p, "Doğrulama kodu gönderiliyor…").waitFor();
+      assert(await button(p, "Doğrulama kodu gönderiliyor…").isDisabled());
+      assert(await button(p, "Hesabımı kalıcı olarak sil").isDisabled());
+      assert.equal(
+        await button(p, "Sunucudan silme onayı bekleniyor…").count(),
+        0,
+      );
+      releaseCode();
       await p
         .getByRole("dialog")
         .getByText("Kod e-postana gönderildi. Beş dakika içinde kullan.", {
@@ -250,7 +265,7 @@ try {
         fullPage: true,
       });
       checks.push(
-        "Google-linked deletion UI (email identity is not proof of a password): two confirmations, OTP instead of password, rejected proof cannot claim success (mock)",
+        "Google-linked deletion UI (email identity is not proof of a password): two confirmations, OTP instead of password, code-send status never implies erasure, rejected proof cannot claim success (mock)",
       );
     } else {
       await p
@@ -264,9 +279,84 @@ try {
         ),
       );
       assert.equal(exchange, scenario === "foreign-identity" ? 1 : 0);
+      assert.equal(
+        await button(p, "Yeni Doğrulama Bağlantısı İste").count(),
+        0,
+      );
+      assert.equal(
+        await button(p, "Şifre Sıfırlama Bağlantısı İste").count(),
+        0,
+      );
+      await p
+        .getByRole("dialog")
+        .getByRole("button", { name: "Giriş Ekranına Dön", exact: true })
+        .click();
+      await p.waitForURL("**/online");
+      await button(p, "Google ile Devam Et").waitFor();
     }
     checks.push(
       `Mock provider: ${scenario}; PKCE/nonce/server identity boundary`,
+    );
+    await context.close();
+  }
+  {
+    const context = await browser.newContext({
+      viewport: { width: 320, height: 844 },
+      reducedMotion: "reduce",
+    });
+    await setup().install(context);
+    await context.route("**/rest/v1/rpc/google_auth_capabilities", (r) =>
+      r.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify({
+          googleOAuthEnabled: true,
+          googleDeletionEnabled: true,
+        }),
+      }),
+    );
+    await context.route("**/auth/v1/authorize**", (r) =>
+      r.fulfill({
+        contentType: "text/html",
+        body: "<h1>Synthetic account chooser</h1>",
+      }),
+    );
+    const p = await context.newPage();
+    await p.goto(origin + "/online", { waitUntil: "networkidle" });
+    await p
+      .getByText("Kovynel Studio", { exact: true })
+      .waitFor({ state: "hidden" });
+    await button(p, "Google ile Devam Et").click();
+    await p
+      .getByRole("heading", { name: "Synthetic account chooser" })
+      .waitFor();
+    await p.goBack({ waitUntil: "networkidle" });
+    await button(p, "Google ile Devam Et").waitFor();
+    assert.deepEqual(
+      await p.evaluate(() =>
+        Object.keys(sessionStorage).filter((k) =>
+          k.startsWith("anla-google-pkce"),
+        ),
+      ),
+      [],
+      "browser Back cancels the abandoned Google attempt and verifier",
+    );
+    await p.goto(
+      origin +
+        "/online/auth#access_token=" +
+        token(userA) +
+        "&refresh_token=synthetic-refresh&type=recovery",
+      { waitUntil: "networkidle" },
+    );
+    await p
+      .getByRole("dialog", { name: "Bağlantı Doğrulandı", exact: true })
+      .waitFor();
+    await p
+      .getByRole("dialog")
+      .getByRole("button", { name: "Tamam", exact: true })
+      .click();
+    await p.getByLabel("Yeni şifre", { exact: true }).waitFor();
+    checks.push(
+      "Browser Back cancels Google attempt; existing email recovery still opens (mock)",
     );
     await context.close();
   }
