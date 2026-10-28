@@ -4,14 +4,16 @@ Aktif banka **v72 / 1.500 soru**. Bu dal yalnız incelemeye hazır v73 dosyası 
 
 ## İkinci tur: 1.500 soruya genişletme — devam ediyor
 
-**1.500 soru için 30 × 50 kayıt oluşturuldu; kayıt oluşturmak inceleme tamamlamak değildir.** Bu aşamada ilk **220** öncelikli soru ayrı ayrı yeniden değerlendirildi; **1.280** soru ikinci tur anlam incelemesini bekliyor. Önceki 260 İman/Ahlak kaydı bu yeni sayıya otomatik eklenmedi.
+**1.500 soru için 30 × 50 kayıt oluşturuldu; kayıt oluşturmak inceleme tamamlamak değildir.** Bu kontrol noktasında **372** soru kök, dört şık ve açıklamasıyla ayrı ayrı yeniden değerlendirildi; **1.128** soru ikinci tur anlam incelemesini bekliyor. Önceki 260 İman/Ahlak kaydı bu yeni sayıya otomatik eklenmedi.
 
-- Bu turda **101 yeni soru düzeltmesi** mevcut tek v73 adayına eklendi. Önceki 271 kayıt kaybolmadı; yeniden incelenenlerde gerekli açıklama düzeltmeleri de yapıldı. Adayın v72’ye göre toplam değişen soru sayısı **372**.
-- Yeniden incelenen 220 sorunun **148** kaynak pasajı bu turda açılıp okundu. **51** soruda henüz giderilmemiş içerik kusuru var; kaynak okuması bekleyen kararlar ayrıca işaretli.
-- İlk turdaki özgün **220** öncelikli ID `round2-priority.json` ile donduruldu. Bu 220 sorunun tamamına ayrı karar verildi; 51 açık kusur için düzeltme/kanıt işi sürüyor. Genişletilmiş kuralların yeni uyarıları bu kuyruğun yerini almıyor.
-- **Yayın uygunluğu verilmedi.** Kalan 1.280 inceleme, açık düzeltmeler, kaynak karşılaştırmaları, banka çapında anlamsal tekrar kontrolü ve oyuncu kabulü tamamlanmadı.
+- Bu turda **177 yeni soru düzeltmesi** mevcut tek v73 adayına eklendi. Önceki 271 kayıt kaybolmadı. Adayın v72’ye göre toplam değişen soru sayısı **448**.
+- Yeniden incelenen 372 sorunun **329** kaynak pasajı bu turda okunarak karşılaştırıldı. **43** kararın kaynak karşılaştırması bekliyor. Korunan `quran-meaning-v72-024` kaydında geniş kavramın alt-kümesi olabilen çeldiriciler için ayrı anlam belirsizliği kaydı var; bu kayıt bloke, yayın onayı yok. 30 korunan anlam sorusunun içeriği değiştirilmedi.
+- İlk turdaki özgün **220** öncelikli ID `round2-priority.json` ile donduruldu. Bu 220 sorunun tamamına ayrı karar verildi; bu grupta önceki açık içerik kusurları kaynaklı yeniden yazımla giderildi. Bu ifade banka çapında kabul veya bu 220 kaydın bütün kaynak işlerinin bittiği anlamına gelmez.
+- Otomatik uyarı alan soru sayısı **335 → 142**. Üç sınırlayıcı yanlış şık kalıbı **25 → 0**. Yalnız seçenek üslubuna bakan sezgisel araç **80 → 1** soruda tahmin üretiyor; kalan 1.499 soruda çekimser. Kalan `v11-quran-011` uyarısında dört şık da olumsuzdur: “iman etmiş görünerek ikiyüzlü davranma” ifadesindeki “iman” kelimesi pozitif işaret sayıldığı için araç yanlış alarm verir. Bu karar kaynakla karşılaştırılarak kaydedildi; aracın uyarısı gizlenmedi.
+- Yeni paketlerdeki gerçek kusurlar arasında Hudeybiye’de Abbâsî/Selçuklu anakronizmi, Fil ve Uhud sorularında kökün cevabı aynen söylemesi, tek yazı yüzeyine karşı taç/gemi/mühür ve Yûnus duasında üç ilgisiz ifade bulundu. Bunlar anlamca ilgili seçeneklerle yeniden yazıldı.
+- **Yayın uygunluğu verilmedi.** Kalan bireysel incelemeler, kaynak karşılaştırmaları, banka çapında anlamsal tekrar kontrolü, bağımsız uzman incelemesi ve oyuncu kabulü tamamlanmadı. Otomatik uyarı azalması bu kontrollerin yerine geçmez.
 
-Güncel, üretilebilir sayılar: [ikinci tur özeti](audit-round2-summary.json). [İndeks](audit-round2-index.json), [50’şer soruluk paketler](batches/), [ilk 30 önemli düzeltme](round2-top30.md) ve [bu turdaki tam değişiklik karşılaştırması](round2-comparison.md). Her karar dört şık için ayrı yorum ve incelenen adayın SHA-256 özetini içerir; aday içeriği değişirse karar yeniden inceleme olmadan geçmez.
+Güncel, üretilebilir sayılar: [ikinci tur özeti](audit-round2-summary.json). [İndeks](audit-round2-index.json), [50’şer soruluk paketler](batches/), [ilk 30 önemli düzeltme](round2-top30.md) ve [bu turdaki tam değişiklik karşılaştırması](round2-comparison.md) ve [açık kontroller](round2-open-items.md). Her karar dört şık için ayrı yorum ve incelenen adayın SHA-256 özetini içerir; aday içeriği değişirse karar yeniden inceleme olmadan geçmez.
 
 ```sh
 pnpm exec tsx scripts/build-editorial-v73.ts --check
@@ -80,7 +82,7 @@ pnpm test
 pnpm export:web
 ```
 
-Önceki ilk turda `pnpm check` **333/333 test**, TypeScript, lint ve soru bütünlüğüyle geçti; web export başarılı. İkinci tur 220 soruluk kontrol noktasında `pnpm check` **339/339**, TypeScript, lint ve soru bütünlüğüyle geçti; aday ve 30 paket üretimi `--check` ile doğrulandı. `pnpm export:web` bu kontrol noktasında yeniden başarıyla tamamlandı. Staged diff Gitleaks taramasında gizli anahtar bulunmadı. Tarihsel v1–v72 kayıtları ve mevcut günlük/çevrimiçi banka testleri başarılı. **v73 ile canlı günlük/çevrimiçi oyun veya fiziksel cihaz testi yapılmadı:** aday registry’ye bağlanmadı ve sunucuya yüklenmedi.
+Önceki ilk turda `pnpm check` **333/333 test**, TypeScript, lint ve soru bütünlüğüyle geçti; web export başarılı. İkinci tur 372 soruluk kontrol noktasında `pnpm check` **340/340**, TypeScript, lint ve soru bütünlüğüyle geçti; aday ve 30 paket üretimi `--check` ile doğrulandı. `pnpm export:web` bu kontrol noktasında yeniden başarıyla tamamlandı. Staged diff Gitleaks taramasında gizli anahtar bulunmadı. Tarihsel v1–v72 kayıtları ve mevcut günlük/çevrimiçi banka testleri başarılı. **v73 ile canlı günlük/çevrimiçi oyun veya fiziksel cihaz testi yapılmadı:** aday registry’ye bağlanmadı ve sunucuya yüklenmedi.
 
 ## Yayın kapısı
 

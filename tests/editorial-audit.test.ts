@@ -177,3 +177,29 @@ test("A source correction changes only the draft text; historical v72 still reso
   assert.equal(replay.options[replay.correct], "Şiddetli sarsıntı");
   assert.equal(replay.text, old.question);
 });
+
+test("The Nuh three-restrictive-option regression is removed in the draft without rewriting its historical question", () => {
+  const id = "q57-nuhcift";
+  const old = questionsV72.find((q) => q.id === id)!;
+  const candidate = questionsV73Candidate.find((q) => q.id === id)!;
+  assert(
+    qualityWarnings(old).some(
+      (warning) => warning.kind === "three-restrictive-distractors",
+    ),
+  );
+  assert(
+    !qualityWarnings(candidate).some(
+      (warning) => warning.kind === "three-restrictive-distractors",
+    ),
+  );
+  assert.equal(styleOnlyGuess(candidate), null);
+  assert.equal(candidate.correctOptionId, old.correctOptionId);
+  assert.equal(candidate.version, old.version + 1);
+  const savedOrder = old.options.map((option) => option.id).reverse();
+  const replay = gameQuestion(
+    { bankVersion: 72, optionOrders: { [id]: savedOrder } },
+    id,
+  )!;
+  assert.equal(replay.text, old.question);
+  assert(replay.options.includes("Her türden birer çift"));
+});

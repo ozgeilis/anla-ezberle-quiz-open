@@ -5,10 +5,10 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 33,
-  "blocked": 6,
+  "sourceComparedThisRound": 39,
+  "blocked": 0,
   "flaggedBefore": 50,
-  "flaggedAfter": 30,
+  "flaggedAfter": 27,
   "records": [
     {
       "sequence": 1,
@@ -1231,37 +1231,37 @@
         ]
       },
       "after": {
-        "question": "Hz. Nûh'a yapması emredilen büyük taşıt hangisidir?",
+        "question": "Hûd 11/38'de Nûh gemiyi yaparken kavminin ileri gelenleri nasıl davranır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Araba"
+            "id": "o4",
+            "text": "Onu sessizce izlerler"
           },
           {
             "id": "o2",
-            "text": "Gemi"
+            "text": "Onunla alay ederler"
+          },
+          {
+            "id": "o1",
+            "text": "Onu merakla dinlerler"
           },
           {
             "id": "o3",
-            "text": "Atlı araba"
-          },
-          {
-            "id": "o4",
-            "text": "Sal"
+            "text": "Ondan korkup uzaklaşırlar"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Gemi",
-        "explanation": "Hûd 11/37'de Nûh'a gemi yapması emredilir.",
+        "correctAnswer": "Onunla alay ederler",
+        "explanation": "Hûd 11/38’de Nûh gemiyi yaparken kavminin ileri gelenlerinin yanına uğrayıp onunla alay ettikleri anlatılır. Nûh bu alaya karşılık verir.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=11&ayet=37&mode=meal",
-            "locator": "11/37; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-            "supports": "Hûd 11/37'de Nûh'a gemi yapması emredilir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "11/38; PDF sayfa 237 (1 tabanlı), basılı sayfa 236",
+            "supports": "11/38 bağlamında sorulan ifade: Onunla alay ederler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1271,37 +1271,34 @@
           "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-prophets-026",
-        "reviewedCandidateSha256": "d6e1e2e75df2a58a9243aa1e2cd5af8b189d5388a5feb83dce767a6a76cf30bf",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "23d490c3d7e2e11a89c20febaf9d7c4591dfcc127cbfb3988a44fc883899d18b",
+        "disposition": "revised",
         "defects": [
           "near-duplicate-options",
           "unrelated-distractors"
         ],
-        "reason": "Araba ile atlı araba kapsam bakımından çakışıyor; sal/gemi su taşıtı iken iki kara aracı zayıf kalıyor. Kaynak açılmadan yeni taşıt ayrıntısı uydurulmadı.",
+        "reason": "Taşıt türlerinin örtüşmesi ve aynı gemi bilgisinin tekrarı yerine 11/38’de ileri gelenlerin tepkisi soruldu.",
         "optionReview": {
-          "o1": "Atlı araba ile alt küme ilişkisi vardır.",
-          "o2": "Anahtardaki emredilen taşıttır; kaynak tekrar okuması bekler.",
-          "o3": "Arabanın alt türüdür; bağımsız çeldirici kalitesi zayıf.",
-          "o4": "Aynı su taşıtı alanında makul çeldiricidir."
+          "o4": "Sessizce izleme bu âyette yok.",
+          "o2": "Kaynakta anlatılan tepki alaydır.",
+          "o1": "Merakla dinleme bu âyette yok.",
+          "o3": "Korkup kaçma bu âyette yok."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Nûh/gemi sorularıyla hedef tekrarını ayrıca denetlemek gerekiyor.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=11&ayet=37&mode=meal",
-          "locator": "11/37; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "11/38; PDF sayfa 237 (1 tabanlı), basılı sayfa 236",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -1350,37 +1347,37 @@
         ]
       },
       "after": {
-        "question": "Kâbe'nin temellerini yükseltirken Hz. İbrâhim ve İsmâil hangi dilekte bulunur?",
+        "question": "Bakara 2/127'de İbrâhim ve İsmâil, Kâbe'nin temellerini yükseltirken hangi isteği dile getirir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Savaş kazanmak"
-          },
-          {
-            "id": "o2",
-            "text": "Yaptıklarının kabul edilmesi"
-          },
-          {
             "id": "o3",
-            "text": "Uzun bir yolculuk"
+            "text": "İbadet usullerinin gösterilmesini"
           },
           {
             "id": "o4",
-            "text": "Bir hükümdarlık"
+            "text": "Şehirlerine bol rızık verilmesini"
+          },
+          {
+            "id": "o2",
+            "text": "Yaptıkları işin kabul edilmesini"
+          },
+          {
+            "id": "o1",
+            "text": "Soylarının huzur içinde yaşamasını"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yaptıklarının kabul edilmesi",
+        "correctAnswer": "Yaptıkları işin kabul edilmesini",
         "explanation": "Bakara 2/127'de İbrâhim ile İsmâil Rablerinden yaptıklarını kabul etmesini diler.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=127&mode=meal",
-            "locator": "2/127; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-            "supports": "Bakara 2/127'de İbrâhim ile İsmâil Rablerinden yaptıklarını kabul etmesini diler.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
+            "supports": "2/127 bağlamında sorulan ifade: Yaptıkları işin kabul edilmesini.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1390,37 +1387,34 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-prophets-030",
-        "reviewedCandidateSha256": "4184dab81339cd2876a6c39732e7e0b5ce246ca56588be9a20202c875d65e958",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "c01ffd36dba2df35889be1f0762b24887cea09c287b1a4eda91f5f8d29c0797b",
+        "disposition": "revised",
         "defects": [
           "unrelated-distractors",
           "duplicate-target"
         ],
-        "reason": "Savaş, yolculuk ve hükümdarlık, ibadet inşasının kabulü bağlamında zayıf kalıyor. Dört dua aynı bağlama getirilmeli; kaynak henüz tekrar okunmadı.",
+        "reason": "Dört olumlu ve aynı dua bağlamındaki istek verildi; 2/127 açık kabul dileğiyle sınırlandı.",
         "optionReview": {
-          "o1": "Kök bağlamından uzak bir dilektir.",
-          "o2": "Kabul duasını anlatır; kaynak tekrar okuması bekler.",
-          "o3": "Anlamsal açıdan bağlam dışıdır.",
-          "o4": "Başka kıssa ve dua bağlamına aittir."
+          "o3": "128’de ibadet usulleri istenir; 127 değil.",
+          "o4": "126’da rızık duası var; 127 değil.",
+          "o2": "127’de doğrudan kabul istenir.",
+          "o1": "Soyla ilgili olumlu dilek; 127’nin talebi değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "v11-prophets-008 aynı Bakara 2/127 bilgisini soruyor; iki soru birlikte ele alınmalı.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=127&mode=meal",
-          "locator": "2/127; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -3162,37 +3156,37 @@
         ]
       },
       "after": {
-        "question": "Kadr sûresi 97/4'te bu gecede Allah'ın izniyle indikleri bildirilenler kimlerdir?",
+        "question": "Kadr 97/4'te Allah'ın izniyle indikleri açıkça bildirilen ikili hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sadece insanlar"
-          },
-          {
-            "id": "o2",
-            "text": "Melekler ve Ruh (Cebrâil)"
-          },
-          {
             "id": "o3",
-            "text": "Peygamberler ve krallar"
+            "text": "İnsanlar ve cinler"
           },
           {
             "id": "o4",
-            "text": "Yalnız hükümdarlar"
+            "text": "Peygamberler ve cinler"
+          },
+          {
+            "id": "o2",
+            "text": "Melekler ve ruh"
+          },
+          {
+            "id": "o1",
+            "text": "Melekler ve peygamberler"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Melekler ve Ruh (Cebrâil)",
-        "explanation": "Âyette melekler ve Ruh anılır. Ruh'un Cebrâil olarak açıklanması, meal ve tefsirlerdeki anlamlandırmadır; Arapça metindeki kavram Ruh'tur.",
+        "correctAnswer": "Melekler ve ruh",
+        "explanation": "Kadr 97/4’te melekler ve ruh anılır. Kur’an Yolu mealinin dipnotu ruhu Cebrâil olarak açıklar; soru doğrudan âyette kullanılan ikiliyi sorar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — ayet hedefi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=97&ayet=4&mode=meal",
-            "locator": "Kadr sûresi 97/4; doğrudan ayet hedefi; Ruh ve Cebrâil parantezi",
-            "supports": "Âyette melekler ve Ruh anılır. Ruh'un Cebrâil olarak açıklanması, meal ve tefsirlerdeki anlamlandırmadır; Arapça metindeki kavram Ruh'tur.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "97/4; PDF sayfa 652 (1 tabanlı), basılı sayfa 651",
+            "supports": "97/4 bağlamında sorulan ifade: Melekler ve ruh.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -3204,36 +3198,38 @@
       ],
       "automaticAfter": [
         {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v7-quran-005",
-        "reviewedCandidateSha256": "392f6977d626c7ca02d7cabdc97b84f3ff4445fcbfbf55fc9b5f5740c9389129",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "a60a4844fa8c53902c85c5d2fbfd58b58cb32c85f0f7c40b0668b5dcfa8e14a1",
+        "disposition": "revised",
         "defects": [
           "restrictive-distractors",
           "unrelated-distractors",
           "interpretation-scope"
         ],
-        "reason": "Yalnız/sadece ifadeleri iki yanlışta; krallar ve insanlar gibi bağlam dışı şıklar var. Ruh-Cebrâil açıklaması kaynak bağlamıyla korunarak yeniden yazılmalı.",
+        "reason": "Dört isim çifti aynı biçime getirildi; kök âyette açıkça sayılan ikiliyi sorar. Ruhun Cebrâil yorumu açıklamada ayrıldı.",
         "optionReview": {
-          "o1": "Hem sınırlayıcı hem âyetin melek/Ruh bağlamından uzak.",
-          "o2": "Anahtardaki ifade; Ruh’un Cebrâil açıklaması tefsir olarak belirtilmiş, yeni pasaj okuması bekler.",
-          "o3": "Kral ile peygamber çifti bağlam dışıdır.",
-          "o4": "Kolay elenen sınırlayıcı ve konu dışı ifade."
+          "o3": "İnsan-cin ikilisi bu âyette yok.",
+          "o4": "Peygamber-cin ikilisi bu âyette yok.",
+          "o2": "Pasajda melekler ve ruh anılır.",
+          "o1": "Peygamberler bu âyette sayılmaz."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Kadir gecesi konusundaki farklı sorularla aynı iniş ifadesi ayrıca karşılaştırılmalı.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=97&ayet=4&mode=meal",
-          "locator": "Kadr sûresi 97/4; doğrudan ayet hedefi; Ruh ve Cebrâil parantezi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "97/4; PDF sayfa 652 (1 tabanlı), basılı sayfa 651",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -4855,37 +4851,37 @@
         ]
       },
       "after": {
-        "question": "Kasas 28/23-24'te Hz. Mûsâ Medyen'de kimlere yardım eder?",
+        "question": "Kasas 28/23-24'te Mûsâ'nın Medyen suyunda yardım ettiği kişiler kimlerdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Denizdeki balıkçılara"
+            "id": "o2",
+            "text": "Sürülerini sulamak için bekleyen iki kadın"
           },
           {
-            "id": "o2",
-            "text": "Sürülerini sulamak isteyen iki kadına"
+            "id": "o1",
+            "text": "Kervan hayvanlarını sulayan iki tüccar"
           },
           {
             "id": "o3",
-            "text": "Çöldeki asker grubuna"
+            "text": "Halka su dağıtan iki yaşlı görevli"
           },
           {
             "id": "o4",
-            "text": "Saraydaki görevlilere"
+            "text": "Kuyunun başında hayvan bekleyen iki çoban"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Sürülerini sulamak isteyen iki kadına",
+        "correctAnswer": "Sürülerini sulamak için bekleyen iki kadın",
         "explanation": "Hz. Mûsâ Medyen'de sürülerini sulamak için bekleyen iki kadına yardım ederek hayvanlarını sular.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=28&ayet=23&mode=meal",
-            "locator": "Kasas 28/23–24, Diyanet indekslenmiş meal",
-            "supports": "Hz. Mûsâ Medyen'de sürülerini sulamak için bekleyen iki kadına yardım ederek hayvanlarını sular.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "28/23; PDF sayfa 409 (1 tabanlı), basılı sayfa 408",
+            "supports": "28/23 bağlamında sorulan ifade: Sürülerini sulamak için bekleyen iki kadın.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -4901,10 +4897,6 @@
       ],
       "automaticAfter": [
         {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        },
-        {
           "kind": "grammar-shape",
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
@@ -4912,28 +4904,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v10-prophets-009",
-        "reviewedCandidateSha256": "d21d0344d554e13d0ef7139c8de1e594fd56034833539f33e99f12f5eae3c65c",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "a76f6662289a41c9fc19781efa53ed3345d1050e5449073648af4c7e5020988f",
+        "disposition": "revised",
         "defects": [
           "unrelated-distractors",
           "length-cue"
         ],
-        "reason": "Tek kuyubaşı grubu ayrıntılı doğru; diğerleri deniz/çöl/sarayda. Dört kuyubaşı kişi-eylem çifti veya bağlamı kesin başka bir ayrıntı kullanılmalı.",
+        "reason": "Deniz/saray/çöl yerine dört kuyubaşı kişi ve iş grubu kullanıldı; iki kadın kesin kıssa bağlamıdır.",
         "optionReview": {
-          "o1": "Kuyu başı bağlamından uzak.",
-          "o2": "Anahtardaki yardım edilen grup; kaynak tekrar okuması bekler.",
-          "o3": "Kuyu başı eylemiyle ilişkisi zayıf.",
-          "o4": "Medyen suyu bağlamından uzak."
+          "o2": "23–24’te bekleyen iki kadının sürüsü sulanır.",
+          "o1": "Tüccar kervanı değil.",
+          "o3": "Yaşlı su dağıtıcıları değil.",
+          "o4": "İki çoban diye anılmıyor."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Mûsâ’nın Medyen’e varışıyla ilgili diğer sorularla olay hedefi denetlenecek.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=28&ayet=23&mode=meal",
-          "locator": "Kasas 28/23–24, Diyanet indekslenmiş meal",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "28/23; PDF sayfa 409 (1 tabanlı), basılı sayfa 408",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -5130,37 +5124,37 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/25'te Hz. Meryem'den neyi kendisine doğru silkelemesi istenir?",
+        "question": "Meryem 19/25'te Meryem'den hangi ağacı kendine doğru silkelemesi istenir?",
         "options": [
           {
             "id": "o1",
-            "text": "Zeytin dalını"
-          },
-          {
-            "id": "o2",
-            "text": "Hurma ağacının gövdesini"
+            "text": "Zeytin ağacını"
           },
           {
             "id": "o3",
-            "text": "Üzüm asmasını"
+            "text": "İncir ağacını"
           },
           {
             "id": "o4",
             "text": "Nar ağacını"
+          },
+          {
+            "id": "o2",
+            "text": "Hurma ağacını"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hurma ağacının gövdesini",
+        "correctAnswer": "Hurma ağacını",
         "explanation": "Hz. Meryem'e hurma ağacının gövdesini silkelemesi söylenir; böylece taze hurmalar dökülür.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=25&mode=meal",
-            "locator": "Meryem 19/25, açılan Kur’an Yolu meal/tefsir sayfası",
-            "supports": "Hz. Meryem'e hurma ağacının gövdesini silkelemesi söylenir; böylece taze hurmalar dökülür.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/25; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+            "supports": "19/25 bağlamında sorulan ifade: Hurma ağacını.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -5172,35 +5166,45 @@
       ],
       "automaticAfter": [
         {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v10-prophets-013",
-        "reviewedCandidateSha256": "33384b536c9664795f0b1e34758804cc062b1ce611753067029fffdbe246cf31",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "98b83d6352d63eef4eae24e2a0ea5bdd1cbcf93c031193b84d642ba0a1e1ebbb",
+        "disposition": "revised",
         "defects": [
           "length-cue",
           "part-whole-mismatch"
         ],
-        "reason": "Doğru şık gövdeyi, diğerleri dal/asma/ağaç gibi farklı parça düzeylerini kullanıyor. Dört eş yapıda ağaç-gövde ifadesine dönüştürmek için pasaj tekrar okunmalı.",
+        "reason": "Dört ağaç adı aynı parça düzeyinde verildi; tek gövde/dal biçim farkı kaldırıldı.",
         "optionReview": {
-          "o1": "Dal ifadesi gövdeyle biçim bakımından eş değil.",
-          "o2": "Anahtardaki ağaç gövdesi; kaynak tekrar okuması bekler.",
-          "o3": "Asma ile ağaç gövdesi farklı ifade düzeyleri.",
-          "o4": "Ağaç adı doğrudan gövde ifadesiyle dengeli değil."
+          "o1": "Zeytin ağacı burada yok.",
+          "o3": "İncir ağacı burada yok.",
+          "o4": "Nar ağacı burada yok.",
+          "o2": "25’te hurma ağacı anılır."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Meryem’in yiyecek bulması sorularından silkeleme nesnesiyle ayrılmalı.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=25&mode=meal",
-          "locator": "Meryem 19/25, açılan Kur’an Yolu meal/tefsir sayfası",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/25; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -5717,37 +5721,37 @@
         ]
       },
       "after": {
-        "question": "Bakara 2/127'de Hz. İbrâhim ve Hz. İsmâil Kâbe'nin temellerini yükseltirken ne için dua eder?",
+        "question": "Bakara 2/127'de İbrâhim ve İsmâil'in duasının sonunda Allah'ın hangi iki sıfatı birlikte anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yağmur yağmaması için"
+            "id": "o4",
+            "text": "Yüce ve büyük"
           },
           {
             "id": "o2",
-            "text": "Yaptıklarının Allah tarafından kabulü için"
+            "text": "İşiten ve bilen"
+          },
+          {
+            "id": "o1",
+            "text": "Güçlü ve hikmet sahibi"
           },
           {
             "id": "o3",
-            "text": "Yolculuğun bitmesi için"
-          },
-          {
-            "id": "o4",
-            "text": "Altın bulunması için"
+            "text": "Bağışlayan ve esirgeyen"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yaptıklarının Allah tarafından kabulü için",
-        "explanation": "Bakara 2/127'de Hz. İbrâhim ve Hz. İsmâil Kâbe'nin temellerini yükseltirken yaptıkları işi Allah'ın kabul etmesini dilerler.",
+        "correctAnswer": "İşiten ve bilen",
+        "explanation": "Bakara 2/127’de kabul duasının sonunda Allah, işiten ve bilen olarak anılır. Komşu âyetlerdeki farklı sıfat çiftleri bu âyetin sonundaki ifadeyle karıştırılmamalıdır.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=127&mode=meal",
-            "locator": "Bakara 2/127, önceki canlı Kur’an Yolu okuması",
-            "supports": "Bakara 2/127'de Hz. İbrâhim ve Hz. İsmâil Kâbe'nin temellerini yükseltirken yaptıkları işi Allah'ın kabul etmesini dilerler.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
+            "supports": "2/127 bağlamında sorulan ifade: İşiten ve bilen.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -5761,42 +5765,35 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        },
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v11-prophets-008",
-        "reviewedCandidateSha256": "c8c1679bffd623a09e2cd6f714bb2a0d8e9b6ac5b9192b8723b80dd7cfc17ee4",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "259ef81ddeb69fb0b03009a78f42fdc4616c4490186350592100594d00b5f54e",
+        "disposition": "revised",
         "defects": [
           "unrelated-distractors",
           "length-cue",
           "duplicate-target"
         ],
-        "reason": "Yağmur yağmaması, altın bulma ve yolculuk bitmesi bağlam dışı; tek uzun doğru kalmış. Önce aynı ayetin tekrar sorusuyla birlikte yeniden hedef belirlenmeli.",
+        "reason": "Aynı 2/127 kabul duasını tekrar sormak yerine duanın sonunda birlikte kullanılan iki sıfat soruldu.",
         "optionReview": {
-          "o1": "Kâbe’nin inşasının kabulü bağlamından uzak ve olumsuz talep.",
-          "o2": "Anahtardaki kabul duası; yeni pasaj okuması bekler.",
-          "o3": "Bağlam dışı dilek.",
-          "o4": "Bağlam dışı maddî talep."
+          "o4": "Başka ilâhî sıfat çifti; 127’nin sonu değil.",
+          "o2": "127’nin sonunda işiten/bilen sıfatları.",
+          "o1": "129’un sonuna yakın başka sıfat çifti.",
+          "o3": "128’in sonuna yakın başka sıfat çifti."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "e150-prophets-030 ile aynı 2/127 kabul duasını sorar; ikisinden biri farklı kaynak bağlı hedefe ayrılmalı.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=2&ayet=127&mode=meal",
-          "locator": "Bakara 2/127, önceki canlı Kur’an Yolu okuması",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,

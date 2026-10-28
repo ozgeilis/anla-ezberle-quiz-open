@@ -5,10 +5,10 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 36,
-  "blocked": 11,
+  "sourceComparedThisRound": 47,
+  "blocked": 0,
   "flaggedBefore": 50,
-  "flaggedAfter": 27,
+  "flaggedAfter": 19,
   "records": [
     {
       "sequence": 151,
@@ -53,37 +53,37 @@
         ]
       },
       "after": {
-        "question": "Kur'an'a göre Hz. Hûd'u dinlemeyen Âd kavmi hangi felâketle cezalandırılmıştır?",
+        "question": "Hâkka 69/6-7'de Âd kavmini yok eden felâket hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yerden çıkan deveyle"
-          },
-          {
             "id": "o2",
-            "text": "Denizin ikiye ayrılmasıyla"
-          },
-          {
-            "id": "o3",
-            "text": "Şiddetli kasırgayla"
+            "text": "Yıkıcı deprem"
           },
           {
             "id": "o4",
-            "text": "Tûfan sularıyla"
+            "text": "Volkan patlaması"
+          },
+          {
+            "id": "o3",
+            "text": "Şiddetli kasırga"
+          },
+          {
+            "id": "o1",
+            "text": "Büyük sel baskını"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Şiddetli kasırgayla",
+        "correctAnswer": "Şiddetli kasırga",
         "explanation": "Hâkka 69/6-7, Âd kavminin çok şiddetli bir rüzgârla helâk edildiğini anlatır; Hûd ve inananlar kurtulur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Hûd",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Hâkka 69/6-7, Âd kavminin çok şiddetli bir rüzgârla helâk edildiğini anlatır; Hûd ve inananlar kurtulur",
-            "supports": "Hâkka 69/6-7, Âd kavminin çok şiddetli bir rüzgârla helâk edildiğini anlatır; Hûd ve inananlar kurtulur.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "69/6; PDF sayfa 609 (1 tabanlı), basılı sayfa 608",
+            "supports": "69/6 bağlamında sorulan ifade: Şiddetli kasırga.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -102,27 +102,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-hud-firtina",
-        "reviewedCandidateSha256": "42fe90f9ed28f7dba03e4ddd70530012a1f1a34be487f474f2624ac9b693839e",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "4d0079399e2cc966c40e364a2ba3d69518680a580d9c627145236b4797a171cd",
+        "disposition": "revised",
         "defects": [
           "option-domain-mismatch"
         ],
-        "reason": "Kasırga, tûfan, mûcize deve ve kurtuluş için yarılan deniz aynı felâket türleri değil; dört gerçek yıkıcı olay gerekir.",
+        "reason": "Deve/yarılan deniz yerine dört gerçek doğal felâket kullanıldı; 69/6–7 kasırgayı açıkça belirtir.",
         "optionReview": {
-          "o1": "Deve bir felâket türü değil.",
-          "o2": "Başka kıssada kurtuluş olayı; doğal ceza türüyle denk değil.",
-          "o3": "Anahtar; 69/6–7 pasajı yeniden okunmalı.",
-          "o4": "Aynı alanda felâket; makul çeldirici."
+          "o2": "Başka gerçek felâket; bu kavim için burada söylenmez.",
+          "o4": "Başka gerçek felâket; bu kavim için burada söylenmez.",
+          "o3": "Âyetin belirttiği felâket.",
+          "o1": "Başka gerçek felâket; bu kavim için burada söylenmez."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/hud",
-          "locator": "Hâkka 69/6-7, Âd kavminin çok şiddetli bir rüzgârla helâk edildiğini anlatır; Hûd ve inananlar kurtulur",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "69/6; PDF sayfa 609 (1 tabanlı), basılı sayfa 608",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -663,37 +665,37 @@
         ]
       },
       "after": {
-        "question": "Âl-i İmrân 3/35'e göre Meryem'in annesi doğacak çocuğunu neye adamıştır?",
+        "question": "Âl-i İmrân 3/35'te doğacak çocuğunu Allah'a adayan kişi nasıl tanıtılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Allah'a ibadete ve mâbed hizmetine"
+            "text": "İmrân'ın eşi"
           },
           {
             "id": "o2",
-            "text": "Saray yönetimine"
+            "text": "Zekeriyyâ'nın eşi"
           },
           {
             "id": "o3",
-            "text": "Ticaret kervanlarına"
+            "text": "Hârûn'un eşi"
           },
           {
             "id": "o4",
-            "text": "Ordu hizmetine"
+            "text": "Ya‘kūb'un eşi"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Allah'a ibadete ve mâbed hizmetine",
-        "explanation": "Âl-i İmrân 3/35-37, Meryem'in annesinin doğacak çocuğunu Allah'a adadığı ve çocuğunun himaye edildiğini bildirir.",
+        "correctAnswer": "İmrân'ın eşi",
+        "explanation": "Âl-i İmrân 3/35’te doğacak çocuğunu Allah’a adayan kişi İmrân’ın karısı olarak tanıtılır. Sonraki âyette çocuğuna Meryem adını verdiği anlatılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Meryem ve Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/meryem",
-            "locator": "Âl-i İmrân 3/35-37, Meryem'in annesinin doğacak çocuğunu Allah'a adadığı ve çocuğunun himaye edildiğini bildirir",
-            "supports": "Âl-i İmrân 3/35-37, Meryem'in annesinin doğacak çocuğunu Allah'a adadığı ve çocuğunun himaye edildiğini bildirir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "3/35; PDF sayfa 61 (1 tabanlı), basılı sayfa 60",
+            "supports": "3/35 bağlamında sorulan ifade: İmrân'ın eşi.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -707,41 +709,34 @@
           "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "domain-mismatch",
-          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-meryem-annesi",
-        "reviewedCandidateSha256": "8cb204cc6d66859e5bdd3e808122e7214a600744a2c302a49d9550d2317b98ee",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "d8a0549914b10deecc8a1953e96cc5d7883f4f4565a1c8632a68d754412aee93",
+        "disposition": "revised",
         "defects": [
           "single-religious-option",
           "length-cue"
         ],
-        "reason": "Adama sorusunda tek ibadet ve mâbed seçeneği üç dünyevî meslek arasından kolay bulunuyor; dinî adama çeşitleriyle kesin âyet bağlamı gerekir.",
+        "reason": "Tek dinî adama amacı yerine adakta bulunanın âyetteki aile kimliği soruldu. Dört eş bağı aynı yapıda.",
         "optionReview": {
-          "o1": "Tek dinî ve belirgin uzun cevap.",
-          "o2": "Başka meslek; bağlam dışı.",
-          "o3": "Başka meslek; bağlam dışı.",
-          "o4": "Başka hizmet alanı; dinî adama değil."
+          "o1": "35 İmrân’ın karısı der.",
+          "o2": "Meryem’in himayesiyle ilişkili başka aile; adayan değil.",
+          "o3": "Başka peygamberin eşi; bu kişi değil.",
+          "o4": "Başka peygamberin eşi; bu kişi değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/meryem",
-          "locator": "Âl-i İmrân 3/35-37, Meryem'in annesinin doğacak çocuğunu Allah'a adadığı ve çocuğunun himaye edildiğini bildirir",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/35; PDF sayfa 61 (1 tabanlı), basılı sayfa 60",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -790,37 +785,37 @@
         ]
       },
       "after": {
-        "question": "Kur'an'da Meryem'e bir çocuk müjdeleyen elçi hangi görünüşle gelmiştir?",
+        "question": "Meryem 19/17'de Meryem'e gönderilen varlık mealde hangi kelimeyle anılır?",
         "options": [
           {
+            "id": "o3",
+            "text": "Ruh"
+          },
+          {
             "id": "o1",
-            "text": "Bir dağ şeklinde"
+            "text": "Nur"
           },
           {
             "id": "o2",
-            "text": "Bir gemiyle"
-          },
-          {
-            "id": "o3",
-            "text": "Düzgün bir insan görünüşünde"
+            "text": "Nefs"
           },
           {
             "id": "o4",
-            "text": "Bir deniz dalgası şeklinde"
+            "text": "Emir"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Düzgün bir insan görünüşünde",
-        "explanation": "Meryem 19/17-21, Meryem'e gelen elçinin düzgün bir insan görünüşünde belirdiğini ve çocuk müjdesi verdiğini anlatır.",
+        "correctAnswer": "Ruh",
+        "explanation": "Meryem 19/17’de Meryem’e gönderilen varlık için ruh kelimesi kullanılır ve onun tam bir insan sûretinde göründüğü anlatılır. Soru meâldeki adlandırmayı sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Meryem ve Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/meryem",
-            "locator": "Meryem 19/17-21, Meryem'e gelen elçinin düzgün bir insan görünüşünde belirdiğini ve çocuk müjdesi verdiğini anlatır",
-            "supports": "Meryem 19/17-21, Meryem'e gelen elçinin düzgün bir insan görünüşünde belirdiğini ve çocuk müjdesi verdiğini anlatır.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/17; PDF sayfa 321 (1 tabanlı), basılı sayfa 320",
+            "supports": "19/17 bağlamında sorulan ifade: Ruh.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -834,41 +829,34 @@
           "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "correct-prefix-outlier",
-          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-meryem-ruya",
-        "reviewedCandidateSha256": "aadcc7e5b28b469cd98a9f5f005b9ff17db1401f748927fad235530a4224ca9f",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "689324369561521dd8c116d539589f26e66cba9648ff44989624a732cdabc37b",
+        "disposition": "revised",
         "defects": [
           "implausible-distractors",
           "single-realistic-option"
         ],
-        "reason": "Bir insan görünüşüne karşı dağ/gemi/dalga hem türdeş değil hem saçma görünüyor. Elçinin tanıtımı gibi daha kesin kıssa ayrıntısı sorulmalı.",
+        "reason": "İnsan/dağ/gemi/dalga biçimlerinden kaçınılarak 19/17’de gönderilen varlığın meâldeki adı soruldu. Dört Kur’an terimi aynı bilgi alanında.",
         "optionReview": {
-          "o1": "İnsanla görüşme bağlamında ilişkisiz şekil.",
-          "o2": "Geliş aracı; görünüş türüyle aynı değil.",
-          "o3": "Tek gerçekçi görünüş.",
-          "o4": "İlişkisiz doğal şekil."
+          "o3": "Pasaj ruh kelimesini kullanır.",
+          "o1": "Nur bu pasajdaki ad değil.",
+          "o2": "Nefs bu pasajdaki ad değil.",
+          "o4": "Emir bu pasajdaki ad değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/meryem",
-          "locator": "Meryem 19/17-21, Meryem'e gelen elçinin düzgün bir insan görünüşünde belirdiğini ve çocuk müjdesi verdiğini anlatır",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/17; PDF sayfa 321 (1 tabanlı), basılı sayfa 320",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -917,37 +905,37 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/26'da Meryem'in insanlarla konuşmama kararı hangi davranışla ilişkilendirilir?",
+        "question": "Kur'an Yolu mealinde Meryem 19/26'da Meryem'in adadığı davranış hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Susma adağıyla"
+            "text": "İnsanlarla konuşmamak"
           },
           {
             "id": "o2",
-            "text": "Ticaret anlaşmasıyla"
+            "text": "Yemek ve içmekten kaçınmak"
           },
           {
             "id": "o3",
-            "text": "Savaş yeminiyle"
+            "text": "Gece boyu ayakta durmak"
           },
           {
             "id": "o4",
-            "text": "Miras paylaşımıyla"
+            "text": "Yoksullara yemek dağıtmak"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Susma adağıyla",
-        "explanation": "Meryem 19/26'da Meryem'in Rahmân'a susma adağında bulunduğunu ve insanlarla konuşmayacağını bildirmesi istenir.",
+        "correctAnswer": "İnsanlarla konuşmamak",
+        "explanation": "Kur’an Yolu mealinde Meryem 19/26, Meryem’in o gün insanlarla konuşmama adağını anlatır. Öncesinde kendisine yiyip içmesi söylendiği için soru bu meâlin açık davranışına bağlıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Meryem ve Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/meryem",
-            "locator": "Meryem 19/26'da Meryem'in Rahmân'a susma adağında bulunduğunu ve insanlarla konuşmayacağını bildirmesi istenir",
-            "supports": "Meryem 19/26'da Meryem'in Rahmân'a susma adağında bulunduğunu ve insanlarla konuşmayacağını bildirmesi istenir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/26; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+            "supports": "19/26 bağlamında sorulan ifade: İnsanlarla konuşmamak.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -957,37 +945,34 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-meryem-sus",
-        "reviewedCandidateSha256": "c1e4f1884b1193ab450faa4963a4a94a58b4f7836932f4f09143f2bc5f3df17a",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "562ae399db41c3da096d6480f90704f33f0b98dae8283d3511621a5dc4fb5490",
+        "disposition": "revised",
         "defects": [
           "stem-answer-echo",
           "unrelated-distractors"
         ],
-        "reason": "Kökte konuşmama yazınca susma adağı kendini ele veriyor. Dört dinî adak/kaçınma uygulaması veya ilgili âyetin özel şartı gerekir.",
+        "reason": "Kök cevabı artık vermiyor. Dört makul dinî adak/kaçınma davranışı arasında kullanılan meâlin açık davranışı seçilir.",
         "optionReview": {
-          "o1": "Kökün doğrudan tekrarı.",
-          "o2": "Dinî kaçınma davranışı değil.",
-          "o3": "Bağlamdan uzak.",
-          "o4": "Bağlamdan uzak."
+          "o1": "26’da o gün insanlarla konuşmama belirtilir.",
+          "o2": "Yeme-içme önce emredilir; burada adanan davranış değil.",
+          "o3": "Ayakta geceleme burada belirtilmez.",
+          "o4": "Yemek dağıtma burada belirtilmez."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/meryem",
-          "locator": "Meryem 19/26'da Meryem'in Rahmân'a susma adağında bulunduğunu ve insanlarla konuşmayacağını bildirmesi istenir",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/26; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -1036,23 +1021,23 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/30'a göre Hz. Îsâ beşikte konuştuğunda kendisini nasıl tanıtır?",
+        "question": "Meryem 19/30'da Îsâ'nın kendini tanıtırken kullandığı ilk ifade hangisidir?",
         "options": [
+          {
+            "id": "o4",
+            "text": "Mâbedin görevlisi"
+          },
           {
             "id": "o1",
             "text": "Allah'ın kulu"
           },
           {
             "id": "o2",
-            "text": "Bir hükümdar"
+            "text": "Allah'ın dostu"
           },
           {
             "id": "o3",
-            "text": "Bir tüccar"
-          },
-          {
-            "id": "o4",
-            "text": "Bir savaşçı"
+            "text": "Kavminin önderi"
           }
         ],
         "correctOptionId": "o1",
@@ -1060,13 +1045,13 @@
         "explanation": "Meryem 19/30'da Îsâ'nın beşikte konuşarak kendisini Allah'ın kulu olarak tanıttığı ve kendisine kitap verildiğini söylediği belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/isa",
-            "locator": "Meryem 19/30'da Îsâ'nın beşikte konuşarak kendisini Allah'ın kulu olarak tanıttığı ve kendisine kitap verildiğini söylediği belirtilir",
-            "supports": "Meryem 19/30'da Îsâ'nın beşikte konuşarak kendisini Allah'ın kulu olarak tanıttığı ve kendisine kitap verildiğini söylediği belirtilir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/30; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+            "supports": "19/30 bağlamında sorulan ifade: Allah'ın kulu.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1082,38 +1067,36 @@
       ],
       "automaticAfter": [
         {
-          "kind": "correct-prefix-outlier",
-          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
-        },
-        {
-          "kind": "domain-mismatch",
-          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-isa-besik",
-        "reviewedCandidateSha256": "130149295d9d0c9e3652e33574d8394d2e2a9f584ca059e9be74568cde09ed36",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "cf0dde1ae2ef5d4ba2a0207e35ff103bf49332764c9c41565d425bbab9c512f3",
+        "disposition": "revised",
         "defects": [
           "single-religious-option"
         ],
-        "reason": "Üç dünyevî görev karşısında tek Allah’ın kulu ifadesi kolay seçiliyor. Belirli âyetteki dört anlamlı dinî unvan/nitelik düşünülmeli.",
+        "reason": "Tüccar/savaşçı/hükümdar yerine dört saygılı kimlik ifadesi kullanıldı. Genel peygamber niteliği değil 19/30’un ilk tanıtıcı ifadesi soruluyor.",
         "optionReview": {
-          "o1": "Tek dinî tanım; anahtarı ele veriyor.",
-          "o2": "Farklı toplumsal görev.",
-          "o3": "Bağlam dışı meslek.",
-          "o4": "Bağlam dışı meslek."
+          "o4": "Mâbed görevlisi ifadesiyle başlamaz.",
+          "o1": "Çocuğun cevabı Allah’ın kulu ifadesiyle başlar.",
+          "o2": "Dost ifadesiyle başlamaz.",
+          "o3": "Önder ifadesiyle başlamaz."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/isa",
-          "locator": "Meryem 19/30'da Îsâ'nın beşikte konuşarak kendisini Allah'ın kulu olarak tanıttığı ve kendisine kitap verildiğini söylediği belirtilir",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/30; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -1162,37 +1145,37 @@
         ]
       },
       "after": {
-        "question": "Kur'an'a göre Hz. Îsâ'nın Allah'ın izniyle gösterdiği şifa mûcizesi hangisidir?",
+        "question": "Kur'an Yolu mealinde Âl-i İmrân 3/49'da Îsâ'nın iyileştirdiği hangi iki rahatsızlık açıkça anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kaya oyup ev yapmak"
-          },
-          {
-            "id": "o2",
-            "text": "Denizi ikiye ayırmak"
+            "id": "o4",
+            "text": "Ateş ve yürüme güçlüğü"
           },
           {
             "id": "o3",
-            "text": "Doğuştan körü ve alacalıyı iyileştirmek"
+            "text": "Körlük ve cüzzam hastalığı"
           },
           {
-            "id": "o4",
-            "text": "Güneşi durdurmak"
+            "id": "o1",
+            "text": "Sağırlık ve konuşma güçlüğü"
+          },
+          {
+            "id": "o2",
+            "text": "Hafıza kaybı ve uykusuzluk"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Doğuştan körü ve alacalıyı iyileştirmek",
-        "explanation": "Âl-i İmrân 3/49 ve Mâide 5/110, Îsâ'nın Allah'ın izniyle doğuştan körü ve alacalıyı iyileştirdiğini anlatır.",
+        "correctAnswer": "Körlük ve cüzzam hastalığı",
+        "explanation": "Kur’an Yolu mealinde Âl-i İmrân 3/49’da Îsâ’nın Allah’ın izniyle körü ve cüzzamlıyı iyileştirdiği belirtilir. Soru bu meâlde açıkça anılan rahatsızlık çiftini sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/isa",
-            "locator": "Âl-i İmrân 3/49 ve Mâide 5/110, Îsâ'nın Allah'ın izniyle doğuştan körü ve alacalıyı iyileştirdiğini anlatır",
-            "supports": "Âl-i İmrân 3/49 ve Mâide 5/110, Îsâ'nın Allah'ın izniyle doğuştan körü ve alacalıyı iyileştirdiğini anlatır.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "3/49; PDF sayfa 63 (1 tabanlı), basılı sayfa 62",
+            "supports": "3/49 bağlamında sorulan ifade: Körlük ve cüzzam hastalığı.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1202,38 +1185,35 @@
           "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-isa-hekim",
-        "reviewedCandidateSha256": "a87378f8ce5607d3a095dc9bf222b9bab43e257e3dac27a6bede4f744173c58d",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "bcff053af20ffbe0df80bc832700c40d2edd7fd1d61fc5d4cc2cf31d7351d91e",
+        "disposition": "revised",
         "defects": [
           "stem-answer-echo",
           "length-cue",
           "unrelated-distractors"
         ],
-        "reason": "Kökte şifa deniyor; yalnız bir seçenek iyileştirme içeriyor. Dört gerçek şifa durumunun kaynakta açıkça anılan çifti gerekir.",
+        "reason": "Üç şifayla ilgisiz olay yerine dört rahatsızlık çifti verildi. Mealin kör/cüzzamlı terminolojisi açıkça bağlama alındı; genel bütün hastalıkları iyileştirme iddiası sorulmuyor.",
         "optionReview": {
-          "o1": "Şifa değil.",
-          "o2": "Şifa değil.",
-          "o3": "Tek tıbbî ve uzun seçenek.",
-          "o4": "Şifa değil; kaynağı da belirtilmiyor."
+          "o4": "Bu âyette bu çift sayılmaz.",
+          "o3": "Kur’an Yolu mealinde iki rahatsızlık böyle karşılanır.",
+          "o1": "Bu âyette bu çift sayılmaz.",
+          "o2": "Bu âyette bu çift sayılmaz."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/isa",
-          "locator": "Âl-i İmrân 3/49 ve Mâide 5/110, Îsâ'nın Allah'ın izniyle doğuştan körü ve alacalıyı iyileştirdiğini anlatır",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/49; PDF sayfa 63 (1 tabanlı), basılı sayfa 62",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -1282,37 +1262,37 @@
         ]
       },
       "after": {
-        "question": "Mâide 5/112-115'te havârilerin Hz. Îsâ'dan istediği işaret nedir?",
+        "question": "Mâide 5/114'te Îsâ'nın sofra duasında hangi amaç açıkça anılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Bir şehrin inşası"
-          },
-          {
-            "id": "o2",
-            "text": "Gökten sofra indirilmesi"
+            "text": "Yolculuk için bir azık ve destek olması"
           },
           {
             "id": "o3",
-            "text": "Denizin yarılması"
+            "text": "Fakirler için bir yardım ve ikram olması"
           },
           {
             "id": "o4",
-            "text": "Hurma ağacının konuşması"
+            "text": "Hastalar için bir şifa ve güç olması"
+          },
+          {
+            "id": "o2",
+            "text": "Herkes için bir şölen ve işaret olması"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Gökten sofra indirilmesi",
-        "explanation": "Mâide 5/112-115'te havârilerin gökten bir sofra indirilmesini istedikleri ve Îsâ'nın dua ettiği anlatılır.",
+        "correctAnswer": "Herkes için bir şölen ve işaret olması",
+        "explanation": "Mâide 5/114’te Îsâ, indirilecek sofranın ilk gelenden son gelene herkes için bir şölen ve Allah’tan bir işaret olmasını diler. Soru bu duanın açık amaç çiftini sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/isa",
-            "locator": "Mâide 5/112-115'te havârilerin gökten bir sofra indirilmesini istedikleri ve Îsâ'nın dua ettiği anlatılır",
-            "supports": "Mâide 5/112-115'te havârilerin gökten bir sofra indirilmesini istedikleri ve Îsâ'nın dua ettiği anlatılır.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "5/114; PDF sayfa 135 (1 tabanlı), basılı sayfa 134",
+            "supports": "5/114 bağlamında sorulan ifade: Herkes için bir şölen ve işaret olması.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1324,34 +1304,36 @@
       ],
       "automaticAfter": [
         {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+          "kind": "only-correct-absolute",
+          "detail": "Doğru cevap tek sınırlayıcı/mutlak ifade; ifade tek başına hata değildir"
         }
       ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-isa-sofra",
-        "reviewedCandidateSha256": "be048f41aeebc588f88390845b70b407ee52900184edbd6fb5f5a854d81269df",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "e181c48ed4543c0b48dcee401872925fb33dcca02d884f51ba37441083b7a879",
+        "disposition": "revised",
         "defects": [
           "implausible-distractor"
         ],
-        "reason": "Sofra/şehir/deniz/konuşan hurma arasında konu eşliği zayıf; bazı seçenekler kaynak dışı mûcize icadı izlenimi veriyor. Dört gerçek talep/işaret bağlamı hazırlanmalı.",
+        "reason": "Kaynak dışı konuşan ağaç gibi işaretler kaldırıldı. Dört olumlu sofra amacı karşılaştırılıyor; 5/114’te açıkça anılan şölen/işaret ayrımı gerekir.",
         "optionReview": {
-          "o1": "Talep olabilir; bağlamı uzak.",
-          "o2": "Anahtar; 5/112–115 pasajı yeniden okunmalı.",
-          "o3": "Başka kıssanın işareti.",
-          "o4": "Kaynak verilmemiş konuşan ağaç iddiası."
+          "o1": "Azık/destek bu duanın açık amacı değil.",
+          "o3": "Yardım/ikram bu duanın açık çifti değil.",
+          "o4": "Şifa/güç bu duanın açık çifti değil.",
+          "o2": "114’te şölen ve Allah’tan işaret dileği."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/isa",
-          "locator": "Mâide 5/112-115'te havârilerin gökten bir sofra indirilmesini istedikleri ve Îsâ'nın dua ettiği anlatılır",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "5/114; PDF sayfa 135 (1 tabanlı), basılı sayfa 134",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -2282,37 +2264,37 @@
         ]
       },
       "after": {
-        "question": "Karatay Medresesi'nin kubbesi hangi sanat dalının zengin örneğiyle ünlüdür?",
+        "question": "Karatay Medresesi'nin kubbe içindeki geometrik süslemesinde hangi teknik kullanılmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Çini süsleme"
-          },
-          {
             "id": "o2",
-            "text": "Ahşap minyatür"
+            "text": "Kalem işi"
           },
           {
             "id": "o3",
-            "text": "Ebru"
+            "text": "Ahşap kakma"
           },
           {
             "id": "o4",
-            "text": "Cam vitray"
+            "text": "Taş kabartma"
+          },
+          {
+            "id": "o1",
+            "text": "Mozaik çini"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Çini süsleme",
-        "explanation": "Karatay Medresesi'nin kubbesi fîrûze ve lâcivert çini düzeniyle Selçuklu çini sanatının dikkat çekici örneklerinden biridir.",
+        "correctAnswer": "Mozaik çini",
+        "explanation": "Karatay Medresesi’nin kubbe yüzeyindeki geometrik düzen mozaik çini tekniğiyle oluşturulmuştur. Fîrûze ve lâcivert çinilerle beyaz alçı şeritler kompozisyona katılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — karatay-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
-            "locator": "Karatay kubbe çinileri",
-            "supports": "Karatay Medresesi'nin kubbesi fîrûze ve lâcivert çini düzeniyle Selçuklu çini sanatının dikkat çekici örneklerinden biridir.",
+            "locator": "Kubbe yüzeyi ve geometrik düzen, mozaik çini tekniği",
+            "supports": "Karatay Medresesi’nin kubbe yüzeyindeki geometrik düzen mozaik çini tekniğiyle oluşturulmuştur. Fîrûze ve lâcivert çinilerle beyaz alçı şeritler kompozisyona katılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2322,36 +2304,33 @@
           "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q63-karatay-cini",
-        "reviewedCandidateSha256": "ef09a3091a0dc63396964cc5391113230c730cf7f3d79de2b1ea49038756649f",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "5bba14cf01f6923c094536e71991d13e7d636e466474cec592baebbeb1b6c87a",
+        "disposition": "revised",
         "defects": [
           "invalid-distractor-term"
         ],
-        "reason": "Ahşap minyatür burada standart eşdeğer mimarî yüzey sanatı adı gibi kullanılmış. Çini/kalem işi/taş oymacılığı/mozaik gibi gerçek alanlar denenmeli.",
+        "reason": "Ahşap minyatür/ebru yerine dört gerçek mimarî bezeme tekniği verildi. Mozaik tek başına ikinci doğru oluşturmasın diye çiniyle tam adlandırıldı.",
         "optionReview": {
-          "o1": "Anahtar; kubbenin ilgili kaynak pasajı bekler.",
-          "o2": "Ahşap minyatür terimi bu bağlamda güvenilir değil.",
-          "o3": "Kâğıt sanatı; kubbe süslemesiyle daha uzak.",
-          "o4": "Gerçek mimarî teknik; makul çeldirici."
+          "o2": "Gerçek bezeme tekniği; sorulan kubbe düzeni değil.",
+          "o3": "Gerçek bezeme tekniği; sorulan kubbe düzeni değil.",
+          "o4": "Gerçek bezeme tekniği; sorulan kubbe düzeni değil.",
+          "o1": "Kaynağın kubbe için belirttiği teknik."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
-          "locator": "Karatay kubbe çinileri",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kubbe yüzeyi ve geometrik düzen, mozaik çini tekniği",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "43943d02a3f91ef4d8aaa2ad62911bdd3b09f3f9c7aa835f3a7f4e081d4997d7"
         }
       },
       "independentExpertApproval": false,
@@ -2516,37 +2495,37 @@
         ]
       },
       "after": {
-        "question": "Bağdat Nizâmiye Medresesi Dicle Nehri'nin hangi kıyısında inşa edilmiştir?",
+        "question": "Bağdat Nizâmiye Medresesi hangi nehrin doğu yakasında inşa edilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kuzey kıyısında"
-          },
-          {
             "id": "o2",
-            "text": "Güney kıyısında"
-          },
-          {
-            "id": "o3",
-            "text": "Doğu yakasında"
+            "text": "Nil"
           },
           {
             "id": "o4",
-            "text": "Batı yakasında"
+            "text": "Ceyhun"
+          },
+          {
+            "id": "o3",
+            "text": "Dicle"
+          },
+          {
+            "id": "o1",
+            "text": "Fırat"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Doğu yakasında",
-        "explanation": "TDV Nizâmiye Medresesi maddesi yapının Bağdat'ta Dicle'nin doğu yakasındaki arazi üzerine kurulduğunu ifade eder.",
+        "correctAnswer": "Dicle",
+        "explanation": "TDV, Bağdat Nizâmiye Medresesi için Dicle’nin doğu yakasında uygun bir yer seçildiğini anlatır. Soru dört nehir arasında bu konumu sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nizamiye-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "Dicle'nin doğu yakası",
-            "supports": "TDV Nizâmiye Medresesi maddesi yapının Bağdat'ta Dicle'nin doğu yakasındaki arazi üzerine kurulduğunu ifade eder.",
+            "locator": "Bağdat Nizâmiye Medresesi, Dicle doğu yakası",
+            "supports": "TDV, Bağdat Nizâmiye Medresesi için Dicle’nin doğu yakasında uygun bir yer seçildiğini anlatır. Soru dört nehir arasında bu konumu sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2556,36 +2535,33 @@
           "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q63-nizamiye-nehir",
-        "reviewedCandidateSha256": "a85c008e9393749fe7b2ccc64dddea0cdc5a4fa6a6cb4f9a113ff9994b1bf312",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "37ff6393363a1db815c9496e3ffea1a311e6e42eb42d8fc1eac2204146ec0f07",
+        "disposition": "revised",
         "defects": [
           "geographic-option-ambiguity"
         ],
-        "reason": "Akarsu yakası için doğu/batı ve kuzey/güney kıyısı aynı sabit referansla verilmemiş; Bağdat konumu net çerçeve gerektiriyor.",
+        "reason": "Kuzey/güney kıyısı belirsizliği kaldırıldı; dört nehir aynı ölçek ve yapıda verildi.",
         "optionReview": {
-          "o1": "Hangi nehir kesimine göre sorulduğu açık değil.",
-          "o2": "Aynı yön referansı sorunu.",
-          "o3": "Anahtar; plan/konum pasajı okunmalı.",
-          "o4": "Doğuya göre karşı yaka; makul çeldirici."
+          "o2": "Başka İslâm coğrafyası nehri.",
+          "o4": "Başka İslâm coğrafyası nehri.",
+          "o3": "Kaynak Dicle’nin doğu yakasını belirtir.",
+          "o1": "Yakın bölgenin başka nehri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-          "locator": "Dicle'nin doğu yakası",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Bağdat Nizâmiye Medresesi, Dicle doğu yakası",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "059602b640c81681b79d457a2d7d492aba84dfe068d7d83ac580ab556c0be108"
         }
       },
       "independentExpertApproval": false,
@@ -2790,37 +2766,37 @@
         ]
       },
       "after": {
-        "question": "Huneyn sonrasında Hevâzin heyeti geri verilen iki şeyden özellikle hangisini tercih etmiştir?",
+        "question": "Huneyn sonrasında Hevâzin kabilesine âmil olarak tayin edilen kişi kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kervan yollarını"
+            "id": "o4",
+            "text": "Hâlid b. Velîd"
           },
           {
             "id": "o2",
-            "text": "Esirlerin iadesini"
+            "text": "Mâlik b. Avf"
+          },
+          {
+            "id": "o1",
+            "text": "Züheyr b. Surad"
           },
           {
             "id": "o3",
-            "text": "Sadece savaş silahlarını"
-          },
-          {
-            "id": "o4",
-            "text": "Yeni bir hükümdarlığı"
+            "text": "Düreyd b. Sımme"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Esirlerin iadesini",
-        "explanation": "TDV Huneyn Gazvesi maddesi Hevâzin heyetinin esirlerini geri almayı tercih ettiğini ve birçok esirin serbest bırakıldığını kaydeder.",
+        "correctAnswer": "Mâlik b. Avf",
+        "explanation": "Hevâzin’in İslâmiyet’i kabul ettiğini bildirmesinin ardından Hz. Peygamber Mâlik b. Avf’ı kabileye âmil tayin eder. Esir/mal tercihi sahnesiyle aynı paragrafta bu görevlendirme anlatılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-            "locator": "Hevâzin esirlerinin geri verilmesi",
-            "supports": "TDV Huneyn Gazvesi maddesi Hevâzin heyetinin esirlerini geri almayı tercih ettiğini ve birçok esirin serbest bırakıldığını kaydeder.",
+            "locator": "Savaş sonrası Hevâzin’in İslâmiyet’i kabulü ve âmil tayini",
+            "supports": "Hevâzin’in İslâmiyet’i kabul ettiğini bildirmesinin ardından Hz. Peygamber Mâlik b. Avf’ı kabileye âmil tayin eder. Esir/mal tercihi sahnesiyle aynı paragrafta bu görevlendirme anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2830,37 +2806,34 @@
           "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "domain-mismatch",
-          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q64-huneyn-esir",
-        "reviewedCandidateSha256": "42fa24d39190ca793a88db82cb599a7dc8ea2ece3f9e4a29982ac73ca94684c5",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "ec751a6ec9ec788eda95ac0a1d46d80ec05fcbfb8a584590e892f8be22763462",
+        "disposition": "revised",
         "defects": [
           "restrictive-distractor",
           "unrelated-distractors"
         ],
-        "reason": "İki geri verme seçeneğinin ne olduğu kökte belirsiz; yol/hükümdarlık/sadece silah zayıf. Mal-esir tercihi açık bağlama alınmalı.",
+        "reason": "Bir tek makul iade konusu yerine dört dönem kişisi arasında savaş sonrası tayin soruldu.",
         "optionReview": {
-          "o1": "İade edilen insan/malla türdeş değil.",
-          "o2": "Anahtar; olayın tam pasajı bekler.",
-          "o3": "Sınırlayıcı; diğer seçeneklerle dengesiz.",
-          "o4": "İade konusu değil."
+          "o4": "Savaş öncü birliğinin komutanı; kabileye tayin edilen değil.",
+          "o2": "Kaynakta âmil tayin edilen kişi.",
+          "o1": "Heyetin bağışlanma şiiriyle anılan şair; tayin edilen değil.",
+          "o3": "Huneyn’de öldüğü belirtilen kişi; tayin edilen değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-          "locator": "Hevâzin esirlerinin geri verilmesi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Savaş sonrası Hevâzin’in İslâmiyet’i kabulü ve âmil tayini",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "3c9aaa7cff22ad92dc76c404b984e4f7b551589513fe31d5d86b5db0bcb7205c"
         }
       },
       "independentExpertApproval": false,
@@ -2909,37 +2882,37 @@
         ]
       },
       "after": {
-        "question": "Vedâ Hutbesi'nde câhiliye dönemindeki hangi mali uygulama kaldırıldığı açıklanır?",
+        "question": "Vedâ Hutbesi'nde kaldırıldığı ilk olarak belirtilen faiz alacağı kime aittir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İhtiyaca yardım"
-          },
-          {
-            "id": "o2",
-            "text": "Ribâ (faiz)"
-          },
-          {
             "id": "o3",
-            "text": "Hayır için bağış"
+            "text": "Ömer b. Hattâb"
           },
           {
             "id": "o4",
-            "text": "Mirasın korunması"
+            "text": "Osman b. Affân"
+          },
+          {
+            "id": "o2",
+            "text": "Abbas b. Abdülmuttalib"
+          },
+          {
+            "id": "o1",
+            "text": "Ebû Bekir es-Sıddîk"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Ribâ (faiz)",
-        "explanation": "TDV Vedâ Hutbesi maddesi Hz. Peygamber'in câhiliye faizi uygulamasını kaldırdığını ve ilk olarak Abbas'ın faizini andığını kaydeder.",
+        "correctAnswer": "Abbas b. Abdülmuttalib",
+        "explanation": "Vedâ Hutbesi’nin TDV’de derlenen metninde kaldırıldığı ilk olarak belirtilen faiz alacağı Abbas b. Abdülmuttalib’e aittir. Soru genel iyi/kötü davranışı değil bu somut ayrıntıyı sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — veda-hutbesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/veda-hutbesi",
-            "locator": "Vedâ Hutbesi ribânın kaldırılması",
-            "supports": "TDV Vedâ Hutbesi maddesi Hz. Peygamber'in câhiliye faizi uygulamasını kaldırdığını ve ilk olarak Abbas'ın faizini andığını kaydeder.",
+            "locator": "Hutbe metni; ilk kaldırılan faiz alacağı",
+            "supports": "Vedâ Hutbesi’nin TDV’de derlenen metninde kaldırıldığı ilk olarak belirtilen faiz alacağı Abbas b. Abdülmuttalib’e aittir. Soru genel iyi/kötü davranışı değil bu somut ayrıntıyı sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2949,36 +2922,33 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q64-veda-faiz",
-        "reviewedCandidateSha256": "15beaede414b74d6b472ea15f614f6b26cea917fc15f7997d33c464cab6eacdf",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "68df5dbd1f6551f58f0fbd2cd569f3750445b8867d35c06593ccee337e24104f",
+        "disposition": "revised",
         "defects": [
           "single-negative"
         ],
-        "reason": "Üç olumlu korunacak davranış arasında tek yasak malî uygulama var. Hutbedeki somut malî hüküm dört hukukî uygulama arasından sorulmalı.",
+        "reason": "Üç olumlu davranış karşısındaki tek faiz kaldırıldı; dört sahâbî aynı biçimde sunuldu.",
         "optionReview": {
-          "o1": "Olumlu yardım; kaldırılması beklenmez.",
-          "o2": "Tek yasak/olumsuz finans terimi.",
-          "o3": "Olumlu bağış; kolay elenir.",
-          "o4": "Olumlu korunma; kolay elenir."
+          "o3": "Bu cümlede adı anılan kişi değil.",
+          "o4": "Bu cümlede adı anılan kişi değil.",
+          "o2": "Kaynakta adı açıkça anılan alacak sahibi.",
+          "o1": "Bu cümlede adı anılan kişi değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/veda-hutbesi",
-          "locator": "Vedâ Hutbesi ribânın kaldırılması",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Hutbe metni; ilk kaldırılan faiz alacağı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "8ed553fc56ab8f13e6fe965600c32d9450c0f04a8523a018b706cd086aec674c"
         }
       },
       "independentExpertApproval": false,

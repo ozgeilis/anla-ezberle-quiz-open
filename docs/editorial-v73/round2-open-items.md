@@ -1,0 +1,55 @@
+# İkinci tur açık kontroller
+
+Bireysel inceleme bekleyen: **1128**. İncelenmiş ama bu tur kaynak karşılaştırması bekleyen: **43**. Bu liste yayın onayı değildir.
+
+## Bloke kararlar
+
+- **quran-meaning-v72-024** (quran_dualar): Alt-küme çeldirici riski: kırıcı konuşma ve haksız kazanç lagvın geniş yorumuna girebilir. Ayetteki doğrudan karşılık soruluyor; bağımsız editörün bu nüansı ayrıca değerlendirmesi gerekir. Diğer olumsuz davranışlar yararsız davranışın altına girebilir; kökte özellikle ve ayet referansı bulunduğundan geniş lagv ifadesi hedefleniyor. Alt-küme çeldiriciler editör kabulünde ayrıca izlenecek.
+
+## İncelenenlerde kaynak karşılaştırması bekleyenler
+
+- quran-meaning-v72-008: [kaynak](https://kuran.diyanet.gov.tr/tefsir/sure/4/ayet/29?kaynak=1) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-meaning-v72-012: [kaynak](https://kuran.diyanet.gov.tr/tefsir/sure/5/ayet/8?kaynak=1) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-meaning-v72-019: [kaynak](https://kuran.diyanet.gov.tr/tefsir/sure/13/ayet/28?kaynak=1) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-meaning-v72-022: [kaynak](https://kuran.diyanet.gov.tr/tefsir/sure/17/ayet/27?kaynak=1) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-meaning-v72-032: [kaynak](https://kuran.diyanet.gov.tr/tefsir/sure/53/ayet/39?kaynak=1) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-meaning-v72-037: [kaynak](https://kuran.diyanet.gov.tr/tefsir/sure/61/ayet/2?kaynak=1) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-prophets-016: [kaynak](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-general-008: [kaynak](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-prophets-008: [kaynak](https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=22&mode=meal) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-prophets-012: [kaynak](https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=16&mode=meal) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v10-prophets-014: [kaynak](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- v12-prophets-001: [kaynak](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- learn-dua-016: [kaynak](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q47-beyat-017: [kaynak](https://islamansiklopedisi.org.tr/beyaturridvan) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q49-ihya-020: [kaynak](https://islamansiklopedisi.org.tr/ihyau-ulumid-din) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q52-zekat-012: [kaynak](https://islamansiklopedisi.org.tr/zekat) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q56-hicret-vesika: [kaynak](https://islamansiklopedisi.org.tr/hicret) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q57-yunuszun: [kaynak](https://islamansiklopedisi.org.tr/yunus) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q57-ezansebep: [kaynak](https://islamansiklopedisi.org.tr/ezan) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q60-aksa-beyt: [kaynak](https://islamansiklopedisi.org.tr/mescid-i-aksa) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q60-aksa-isra: [kaynak](https://islamansiklopedisi.org.tr/mescid-i-aksa) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q61-hud-ad: [kaynak](https://islamansiklopedisi.org.tr/hud) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q62-hac-konu: [kaynak](https://islamansiklopedisi.org.tr/hac) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q63-bursa-ulucami: [kaynak](https://islamansiklopedisi.org.tr/ulucami) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q64-bedir-irmak: [kaynak](https://islamansiklopedisi.org.tr/bedir-gazvesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- q70-safii-ilk: [kaynak](https://islamansiklopedisi.org.tr/safii) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- general-003: [kaynak](https://islamansiklopedisi.org.tr/kabe) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-008: [kaynak](https://islamansiklopedisi.org.tr/tecvid--kuran) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-010: [kaynak](https://islamansiklopedisi.org.tr/bakara-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-011: [kaynak](https://islamansiklopedisi.org.tr/kevser-suresi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-012: [kaynak](https://islamansiklopedisi.org.tr/hafiz--kuran) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- quran-013: [kaynak](https://islamansiklopedisi.org.tr/mukabele--kuran) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- history-010: [kaynak](https://islamansiklopedisi.org.tr/bagdat) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- history-011: [kaynak](https://islamansiklopedisi.org.tr/sam--suriye) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- history-012: [kaynak](https://islamansiklopedisi.org.tr/hicret) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- general-006: [kaynak](https://islamansiklopedisi.org.tr/sahur) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- general-007: [kaynak](https://islamansiklopedisi.org.tr/iftar) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- general-011: [kaynak](https://islamansiklopedisi.org.tr/hat) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- pilot-quran-001: [kaynak](https://islamansiklopedisi.org.tr/ayetul-kursi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- pilot-history-001: [kaynak](https://islamansiklopedisi.org.tr/bedir-gazvesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- pilot-history-004: [kaynak](https://islamansiklopedisi.org.tr/mekke) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-history-003: [kaynak](https://islamansiklopedisi.org.tr/hicaz) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+- e150-history-022: [kaynak](https://islamansiklopedisi.org.tr/uhud-gazvesi) — Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı.
+
+İncelenmemiş sorular ve her sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.

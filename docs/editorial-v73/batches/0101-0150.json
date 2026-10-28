@@ -5,10 +5,10 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 34,
-  "blocked": 12,
+  "sourceComparedThisRound": 43,
+  "blocked": 0,
   "flaggedBefore": 50,
-  "flaggedAfter": 31,
+  "flaggedAfter": 20,
   "records": [
     {
       "sequence": 101,
@@ -948,37 +948,37 @@
         ]
       },
       "after": {
-        "question": "Hz. Meryem'in mâbette kimin himayesinde kalacağı TDV'nin aktardığına göre nasıl belirlenmiştir?",
+        "question": "Âl-i İmrân 3/44'te Meryem'in himayesini üstlenecek kişiyi belirlemek için hangi yöntem kullanılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Bir savaşla"
-          },
-          {
-            "id": "o2",
-            "text": "Kura ile"
+            "text": "Adaylar arasında oylama yapmak"
           },
           {
             "id": "o3",
-            "text": "Ticaret anlaşmasıyla"
+            "text": "Adayların yaşlarını karşılaştırmak"
           },
           {
             "id": "o4",
-            "text": "Deniz yolculuğuyla"
+            "text": "Ailelerin ortak kararını beklemek"
+          },
+          {
+            "id": "o2",
+            "text": "Kura çekmek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kura ile",
-        "explanation": "TDV Zekeriyyâ maddesinde Meryem'in himayesinin kime verileceğini belirlemek üzere kura çekildiği, kuranın Hz. Zekeriyyâ'ya çıktığı belirtilir.",
+        "correctAnswer": "Kura çekmek",
+        "explanation": "Âl-i İmrân 3/44, Meryem’in himayesini kimin üstleneceğini belirlemek için kalemlerle kura çekilmesini anlatır. Kur’an Yolu dipnotu himayenin Zekeriyyâ’ya nasip olduğunu açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
-            "locator": "Meryem'e himaye görevinin kura ile belirlenmesi",
-            "supports": "TDV Zekeriyyâ maddesinde Meryem'in himayesinin kime verileceğini belirlemek üzere kura çekildiği, kuranın Hz. Zekeriyyâ'ya çıktığı belirtilir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "3/44; PDF sayfa 62 (1 tabanlı), basılı sayfa 61",
+            "supports": "3/44 bağlamında sorulan ifade: Kura çekmek.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -990,34 +990,36 @@
       ],
       "automaticAfter": [
         {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+          "kind": "length-outlier",
+          "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q50-zekeriyya-018",
-        "reviewedCandidateSha256": "a687b50f473a89a52cd50b99634292b63ad87c5159c0f7b6b4aea814604628f7",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "f2dfae95143b658be9d70fe36e4d403757c5ea5ebab062503beaf0c71b711a36",
+        "disposition": "revised",
         "defects": [
           "unrelated-distractors"
         ],
-        "reason": "Bir himaye seçiminin yöntemleri karşılaştırılmalı; savaş ve deniz yolculuğu makul seçim usulleri değil.",
+        "reason": "Savaş/deniz/ticaret yerine dört himaye belirleme yöntemi verildi. Kaynak 3/44 ve dipnotla kesinleştirildi.",
         "optionReview": {
-          "o1": "Himaye belirleme yöntemi olarak zayıf.",
-          "o2": "Anahtar; TDV’de ilgili Kur’an paragrafı bekliyor.",
-          "o3": "Satış anlaşması himaye kurasıyla aynı tür değil.",
-          "o4": "Seçim yöntemi değil."
+          "o1": "Oylama anlatılmıyor.",
+          "o3": "Yaşa göre sıralama anlatılmıyor.",
+          "o4": "Ailelerin anlaşması anlatılmıyor.",
+          "o2": "Kalemlerle kura âyette ve dipnotta açık."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/zekeriyya",
-          "locator": "Meryem'e himaye görevinin kura ile belirlenmesi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/44; PDF sayfa 62 (1 tabanlı), basılı sayfa 61",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -1303,37 +1305,37 @@
         ]
       },
       "after": {
-        "question": "Muâhât kavramı hicretten sonraki hangi uygulamanın adıdır?",
+        "question": "TDV'nin aktardığı rivayette Medine'deki muâhât için muhacir ve ensar hangi sahâbînin evine çağrılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ticaret vergisi anlaşması"
-          },
-          {
-            "id": "o2",
-            "text": "Ensar ve muhacir arasında kardeşlik akdi"
-          },
-          {
             "id": "o3",
-            "text": "Savaş ganimeti dağıtımı"
+            "text": "Sa‘d b. Hayseme"
           },
           {
             "id": "o4",
-            "text": "Takvim başlatma kararı"
+            "text": "Ebû Bekir"
+          },
+          {
+            "id": "o2",
+            "text": "Enes b. Mâlik"
+          },
+          {
+            "id": "o1",
+            "text": "Ebû Eyyûb el-Ensârî"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Ensar ve muhacir arasında kardeşlik akdi",
-        "explanation": "Muâhât, Hz. Peygamber'in Medine'de Ensar ve Muhacir sahâbîleri karşılıklı kardeş ilan ettiği dayanışma uygulamasına verilen addır.",
+        "correctAnswer": "Enes b. Mâlik",
+        "explanation": "TDV’nin aktardığı rivayette muhacir ve ensar Enes b. Mâlik’in evine çağrılır. Kardeşliğe katılanların sayısı için farklı rivayetler bulunduğundan soru sayıyı değil bu rivayetteki evi sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/muahat",
-            "locator": "Muâhât teriminin anlamı",
-            "supports": "Muâhât, Hz. Peygamber'in Medine'de Ensar ve Muhacir sahâbîleri karşılıklı kardeş ilan ettiği dayanışma uygulamasına verilen addır.",
+            "locator": "Enes b. Mâlik’in evinde muâhât, Buhârî rivayeti",
+            "supports": "TDV’nin aktardığı rivayette muhacir ve ensar Enes b. Mâlik’in evine çağrılır. Kardeşliğe katılanların sayısı için farklı rivayetler bulunduğundan soru sayıyı değil bu rivayetteki evi sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1343,35 +1345,30 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q51-muahat-009",
-        "reviewedCandidateSha256": "30bed29109c88fa85290f5723441ed3816ea560c9ef3e5f7c69c3707474aefa6",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "872293f8b077efae340f423abae0eda6720b91bb5bfed62d8d8d2d573a9351a0",
+        "disposition": "revised",
         "defects": [
           "knowledge-target-duplicate"
         ],
-        "reason": "Şıklar dört ayrı Medine uygulaması olsa da e150-history-014 ile aynı kardeşleştirme bilgisini yeniden ölçüyor. Kaynak doğru; tekrar kararı açık.",
+        "reason": "Aynı kardeşlik tanımını tekrar etmek yerine kaynakta belirtilen ev sahibi soruldu.",
         "optionReview": {
-          "o1": "Malî anlaşma; kardeşleştirme değil.",
-          "o2": "Muâhâtın kaynakta anlatılan uygulaması.",
-          "o3": "Ganimet taksimi; muâhât değil.",
-          "o4": "Daha sonraki takvim kararı; muâhât değil."
+          "o3": "Hicret günlerindeki ev sahiplerinden; bu rivayetteki ev değil.",
+          "o4": "Bu rivayette ev sahibi diye anılmıyor.",
+          "o2": "Kaynakta adı geçen ev sahibi.",
+          "o1": "Hicrette ev sahipliğiyle bilinir; bu rivayetteki ev değil."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
-        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "e150-history-014 ile aynı ensar-muhacir kardeşleştirme hedefi. Kimlik korunarak farklı bir kaynak ayrıntısına dönüştürme bekliyor.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut etiket korundu. Yeni kaynak ayrıntısı eski genel tanımdan daha özeldir; medium/hard yönünde editör/ürün değerlendirmesi bekler, otomatik seviye değişikliği yapılmadı.",
+        "duplicateReview": "e150-history-014 ile eski tanım tekrarı yerine Enes’in evi ayrıntısı kullanıldı; sonraki paketlerle karşılaştırma bekliyor.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/muahat",
-          "locator": "Şıklar dört ayrı Medine uygulaması olsa da e150-history-014 ile aynı kardeşleştirme bilgisini yeniden ölçüyor. Kaynak doğru; tekrar kararı açık.",
+          "locator": "Enes b. Mâlik’in evinde muâhât, Buhârî rivayeti",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-28",
           "sourceSha256": "bc4ceddf0331edccf91c995f408daa90fc3a0c84d20c33cef1793517a518464c"
@@ -1661,34 +1658,34 @@
         "question": "Hanefî fakih Ebû Hanîfe'nin vakıf tanımında malın mülkiyeti kimin üzerinde kalır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kiracının"
-          },
-          {
-            "id": "o2",
-            "text": "Vakfedenin"
-          },
-          {
             "id": "o3",
-            "text": "İdarecinin kişisel hesabının"
+            "text": "Vakıftan yararlanan kişinin"
           },
           {
             "id": "o4",
-            "text": "Alıcının"
+            "text": "Vakfı tescil eden hâkimin"
+          },
+          {
+            "id": "o2",
+            "text": "Malı vakfeden kişinin"
+          },
+          {
+            "id": "o1",
+            "text": "Vakfı yöneten kişinin"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Vakfedenin",
-        "explanation": "TDV'nin aktardığı Ebû Hanîfe görüşünde vakfedilen malın mülkiyeti hükmen malı vakfeden kişide kalır; İmâmeyn farklı düşünür.",
+        "correctAnswer": "Malı vakfeden kişinin",
+        "explanation": "Ebû Hanîfe’nin tanımında vakfedilen malın mülkiyeti hükmen malı vakfedende kalır. İmâmeyn’in farklı görüşü bütün Hanefîlere tek görüş atfedilmemesi için ayrıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — VAKIF",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/vakif",
-            "locator": "Ebû Hanîfe'nin mülkiyet yaklaşımı",
-            "supports": "TDV'nin aktardığı Ebû Hanîfe görüşünde vakfedilen malın mülkiyeti hükmen malı vakfeden kişide kalır; İmâmeyn farklı düşünür.",
+            "locator": "Ebû Hanîfe ve İmâmeyn’in vakıf tanımları",
+            "supports": "Ebû Hanîfe’nin tanımında vakfedilen malın mülkiyeti hükmen malı vakfedende kalır. İmâmeyn’in farklı görüşü bütün Hanefîlere tek görüş atfedilmemesi için ayrıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1698,37 +1695,34 @@
           "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q52-vakif-003",
-        "reviewedCandidateSha256": "9d6747fbe2307d1626f600ea0b3cf8adb7f16300cba89b928226e0293040582a",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "829036e85c65276bb1f3df000aa06d73be964fd45fbb48b5fad0499bc1827a1d",
+        "disposition": "revised",
         "defects": [
           "option-format-mismatch",
           "weak-distractor"
         ],
-        "reason": "Ebû Hanîfe görüşü kaynakta açık; fakat idarecinin kişisel hesabı kişi/mülkiyet rolüyle aynı yapıda değil. Dört hukukî rol ile dengelenmeli.",
+        "reason": "Dört kişi/rol aynı yapıya getirildi; kişisel hesap gibi türdeş olmayan seçenek çıkarıldı.",
         "optionReview": {
-          "o1": "Kullanan kişi; kurucu mülkiyeti değil.",
-          "o2": "TDV’de Ebû Hanîfe tanımına uygun.",
-          "o3": "Kişisel hesap, diğer kişi adlarıyla türdeş değil.",
-          "o4": "Satış varsayımı; vakıf tanımına yakın değil."
+          "o3": "Yararlanan kişi bu tanımda malik olmaz.",
+          "o4": "Tescil eden hâkim bu tanımda malik olmaz.",
+          "o2": "Ebû Hanîfe tanımındaki hükmî mülkiyet sahibi.",
+          "o1": "Mütevelli yönetir; bu tanımda malik olmaz."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/vakif",
-          "locator": "Ebû Hanîfe'nin mülkiyet yaklaşımı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Ebû Hanîfe ve İmâmeyn’in vakıf tanımları",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "3b61e839f374c8bd29abd0acbc9457ed222c7a91567e9580191453814113750a"
         }
       },
       "independentExpertApproval": false,
@@ -1777,37 +1771,37 @@
         ]
       },
       "after": {
-        "question": "TDV'ye göre sadaka, dinî yükümlülüklerin dışında hangi yardım türünü de kapsar?",
+        "question": "TDV'de hem gönüllü hem de dinen zorunlu maddî yardımları kapsayacak şekilde tanımlanan kavram hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Yalnız devlet vergisini"
-          },
-          {
-            "id": "o2",
-            "text": "Gönüllü yapılan maddî yardım"
+            "text": "Zekât"
           },
           {
             "id": "o3",
-            "text": "Zorunlu askerliği"
+            "text": "Fitre"
           },
           {
             "id": "o4",
-            "text": "Sadece ticaret kârını"
+            "text": "Fidye"
+          },
+          {
+            "id": "o2",
+            "text": "Sadaka"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Gönüllü yapılan maddî yardım",
-        "explanation": "Sadaka İslâmî literatürde farz ve vâcip yardımlar yanında kişinin kendi isteğiyle yaptığı hayrî maddî yardımları da kapsar.",
+        "correctAnswer": "Sadaka",
+        "explanation": "TDV sadakayı gönüllü veya dinen zorunlu maddî yardımları kapsayan genel kavram olarak tanımlar. Zekât ve fitre gibi yükümlülükler bu geniş kavramın türleridir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SADAKA",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/sadaka",
-            "locator": "Gönüllü ve zorunlu sadaka ayrımı",
-            "supports": "Sadaka İslâmî literatürde farz ve vâcip yardımlar yanında kişinin kendi isteğiyle yaptığı hayrî maddî yardımları da kapsar.",
+            "locator": "Giriş tanımı; gönüllü ve zorunlu maddî yardımlar",
+            "supports": "TDV sadakayı gönüllü veya dinen zorunlu maddî yardımları kapsayan genel kavram olarak tanımlar. Zekât ve fitre gibi yükümlülükler bu geniş kavramın türleridir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1817,37 +1811,34 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q52-sadaka-008",
-        "reviewedCandidateSha256": "02bf4c35eaca17af4f974044aa8361aa143cc427a3cba732c11344fcdff85ef5",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "4d77bf97dc21b0ca5b5fb00d9ee88d20e250291767d9daadb3fe27c83ae5e1a6",
+        "disposition": "revised",
         "defects": [
           "restrictive-distractors",
           "unrelated-distractors"
         ],
-        "reason": "Üç devlet/askerlik/ticaret alternatifi yardım türü değil. Sadaka genel kavramı yerine sadaka tasnifinde belirli bağlam gerekir.",
+        "reason": "Devlet vergisi/askerlik gibi ilgisiz şıklar dört yakın malî dinî kavramla değiştirildi. Kök geniş kapsamı açıkça belirtir.",
         "optionReview": {
-          "o1": "Vergi ile sadaka karışıyor; sınırlayıcı.",
-          "o2": "Kökte yükümlülük dışı denerek zaten yönlendiriliyor.",
-          "o3": "Maddî yardım türü değil.",
-          "o4": "Ticaret kârı yardım değil."
+          "o1": "Dinen zorunlu tür; gönüllü yardımların tamamını kapsayan ad değil.",
+          "o3": "Belirli fıtır yükümlülüğü; genel üst kavram değil.",
+          "o4": "Belirli telafi ödemesi; genel üst kavram değil.",
+          "o2": "Tanımın geniş üst kavramı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/sadaka",
-          "locator": "Gönüllü ve zorunlu sadaka ayrımı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Giriş tanımı; gönüllü ve zorunlu maddî yardımlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir. Hash görüntülenmiş pasajın elle tutulan kısa okuma notuna aittir; tam web sayfasının hash’i değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "14a3e86c477c659c9818d050325821fa623f44ce1bcdf967494968d5cfeb5e9d"
         }
       },
       "independentExpertApproval": false,
@@ -1896,37 +1887,37 @@
         ]
       },
       "after": {
-        "question": "TDV'nin sadaka tasnifinde kişinin kendi isteğiyle üstlendiği hangi yükümlülük yer alır?",
+        "question": "Kişinin hayrî harcama yapmayı taahhüt ederek kendi iradesiyle dinî bir yükümlülük üstlenmesi hangi kavramla ifade edilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Tavaf-ı kudûm"
+            "id": "o2",
+            "text": "Nezir (adak)"
           },
           {
-            "id": "o2",
-            "text": "Nezir, yani adak"
+            "id": "o1",
+            "text": "Zekât"
           },
           {
             "id": "o3",
-            "text": "Hac yolculuğu"
+            "text": "Fitre"
           },
           {
             "id": "o4",
-            "text": "İhramlı bulunmak"
+            "text": "Kefâret"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Nezir, yani adak",
-        "explanation": "TDV Sadaka maddesinde kişinin adak (nezir) yoluyla üzerine aldığı hayrî harcama vâcip bir sadaka türü olarak açıklanır.",
+        "correctAnswer": "Nezir (adak)",
+        "explanation": "TDV’nin tasnifinde kişinin kendi iradesiyle üstlendiği nezir, yani adak sebebiyle vâcip hale gelen hayrî harcama ayrı bir sadaka türüdür. Soru bu kişisel taahhüdün adını sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SADAKA",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/sadaka",
-            "locator": "Adak sebebiyle yapılan sadaka",
-            "supports": "TDV Sadaka maddesinde kişinin adak (nezir) yoluyla üzerine aldığı hayrî harcama vâcip bir sadaka türü olarak açıklanır.",
+            "locator": "Beşli sadaka tasnifi, 3. madde; nezir",
+            "supports": "TDV’nin tasnifinde kişinin kendi iradesiyle üstlendiği nezir, yani adak sebebiyle vâcip hale gelen hayrî harcama ayrı bir sadaka türüdür. Soru bu kişisel taahhüdün adını sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -1936,36 +1927,33 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q52-sadaka-010",
-        "reviewedCandidateSha256": "9d686b18c5a84fb4fb13fb827c620405f0ec97bcd4558d2e7026396cd8768711",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "42db1cf58384df611dc7870d0a2533b407a143e290599d03c4309c38b31a6f1b",
+        "disposition": "revised",
         "defects": [
           "unrelated-distractors"
         ],
-        "reason": "Adak kaynakta var; kudûm tavafı ve ihram sadaka tasnifiyle aynı tür değil. Malî yükümlülük doğuran sebepler arasından sorulmalı.",
+        "reason": "Tavaf/ihram yerine dört malî yükümlülük kavramı kullanıldı; kişinin yeni yükümlülüğü kendi taahhüdüyle doğurması ayrımı kesinleştirildi.",
         "optionReview": {
-          "o1": "Sadaka türü değil.",
-          "o2": "Kaynak tasnifindeki kişinin üstlendiği yükümlülük.",
-          "o3": "Kendi başına sadaka türü değil.",
-          "o4": "Bir durum; malî tasnif değil."
+          "o2": "İradî taahhütle üstlenilen adak.",
+          "o1": "Mala ilişkin genel dinî yükümlülük; sorulan taahhüt türü değil.",
+          "o3": "Ramazan sonu yükümlülüğü; sorulan taahhüt türü değil.",
+          "o4": "İhlâl sebebiyle telafi yükümlülüğü; sorulan taahhüt değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/sadaka",
-          "locator": "Adak sebebiyle yapılan sadaka",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Beşli sadaka tasnifi, 3. madde; nezir",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir. Hash görüntülenmiş pasajın elle tutulan kısa okuma notuna aittir; tam web sayfasının hash’i değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "14a3e86c477c659c9818d050325821fa623f44ce1bcdf967494968d5cfeb5e9d"
         }
       },
       "independentExpertApproval": false,
@@ -2017,34 +2005,34 @@
         "question": "Zekât kelimesinin sözlük anlamlarından biri hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Göç ve yolculuk"
+            "id": "o3",
+            "text": "Dua ve yakarış"
+          },
+          {
+            "id": "o4",
+            "text": "Niyet ve yönelme"
           },
           {
             "id": "o2",
             "text": "Arınma ve artma"
           },
           {
-            "id": "o3",
-            "text": "Korku ve pişmanlık"
-          },
-          {
-            "id": "o4",
-            "text": "Yolun kısalması"
+            "id": "o1",
+            "text": "Yakınlık ve yaklaşma"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Arınma ve artma",
-        "explanation": "TDV Zekât maddesi, zekât sözcüğünün artma ve arınma anlamlarıyla ilişkili olduğunu belirtir; dinen belli mallardan alınan payı ifade eder.",
+        "explanation": "Zekât kelimesinin sözlük anlamları arasında artma ve arınma yer alır. Terim olarak belirli şartlarda maldan ayrılan dinî payı ifade eder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ZEKÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zekat",
-            "locator": "Artma ve arınma",
-            "supports": "TDV Zekât maddesi, zekât sözcüğünün artma ve arınma anlamlarıyla ilişkili olduğunu belirtir; dinen belli mallardan alınan payı ifade eder.",
+            "locator": "Girişte zekâtın sözlük anlamları",
+            "supports": "Zekât kelimesinin sözlük anlamları arasında artma ve arınma yer alır. Terim olarak belirli şartlarda maldan ayrılan dinî payı ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2054,37 +2042,34 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q52-zekat-011",
-        "reviewedCandidateSha256": "6f9982e2c861857d00295201bf3d78f1f39083a5a3e088e2934d2d7296a9527e",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "2cdb956ec7e8d56b96e533b7601d218b277f6e1df46cc66cdfd9473003ddac38",
+        "disposition": "revised",
         "defects": [
           "unrelated-distractors",
           "option-format-mismatch"
         ],
-        "reason": "Etimoloji sorusunda dört dinî kavramın yakın sözlük anlamları kullanılabilir. Yolun kısalması diğer ikililerden dil olarak da ayrılıyor.",
+        "reason": "Dört anlam çifti aynı dil yapısına ve dinî sözlük alanına getirildi; kısa tek yol ifadesi kaldırıldı.",
         "optionReview": {
-          "o1": "Hicret alanına ait; zekât kökü değil.",
-          "o2": "Okunan girişte destekleniyor; tam kanıt kaydı henüz bağlanmadı.",
-          "o3": "Başka duygu çifti; zayıf.",
-          "o4": "Diğer masdar çiftlerinden yapısal olarak farklı."
+          "o3": "Dua alanı; zekâtın bu anlam çifti değil.",
+          "o4": "Niyet/yönelme alanı; zekâtın bu anlam çifti değil.",
+          "o2": "Kaynakta verilen anlam çifti.",
+          "o1": "Kurb/yakınlık alanı; zekâtın burada verilen anlamı değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/zekat",
-          "locator": "Artma ve arınma",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Girişte zekâtın sözlük anlamları",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir. Hash görüntülenmiş pasajın elle tutulan kısa okuma notuna aittir; tam web sayfasının hash’i değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "34cfa9c50cfe93771b7a2c8d632e0c536b7e903a12e634afe145cb9ece7e534a"
         }
       },
       "independentExpertApproval": false,
@@ -2364,37 +2349,37 @@
         ]
       },
       "after": {
-        "question": "Hanefîler'in bazı eserlerde kabul ettiği fitre ödeme biçimi hangisidir?",
+        "question": "Fitrenin gıda bedelinin nakit ödenmesini benimseyenler arasında TDV'de özellikle kim anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hiçbir şey vermemek"
+            "id": "o2",
+            "text": "Ebû Hanîfe"
           },
           {
-            "id": "o2",
-            "text": "Gıda bedelini para olarak vermek"
+            "id": "o1",
+            "text": "İmam Mâlik"
           },
           {
             "id": "o3",
-            "text": "Yalnız elbise vermek"
+            "text": "İmam Şâfiî"
           },
           {
             "id": "o4",
-            "text": "Sadece su dağıtmak"
+            "text": "Ahmed b. Hanbel"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Gıda bedelini para olarak vermek",
-        "explanation": "TDV Fitre maddesinde başta Ebû Hanîfe olmak üzere bazı fakihlerin fitrenin gıda değeri üzerinden nakit olarak verilmesini geçerli kabul ettikleri açıklanır.",
+        "correctAnswer": "Ebû Hanîfe",
+        "explanation": "TDV Fitre maddesi, gıda maddelerinin değeri üzerinden nakit ödeme görüşünü benimseyenler arasında başta Ebû Hanîfe’yi anar. Başka fakihlerin azınlık görüşleri yok sayılmamakta; soru bu maddedeki özel adlandırmaya bağlıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — FİTRE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/fitre",
-            "locator": "Hanefî görüşünde nakit bedel",
-            "supports": "TDV Fitre maddesinde başta Ebû Hanîfe olmak üzere bazı fakihlerin fitrenin gıda değeri üzerinden nakit olarak verilmesini geçerli kabul ettikleri açıklanır.",
+            "locator": "Nakit ödeme görüşü, Ebû Hanîfe’nin özellikle anılması",
+            "supports": "TDV Fitre maddesi, gıda maddelerinin değeri üzerinden nakit ödeme görüşünü benimseyenler arasında başta Ebû Hanîfe’yi anar. Başka fakihlerin azınlık görüşleri yok sayılmamakta; soru bu maddedeki özel adlandırmaya bağlıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2404,36 +2389,31 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q52-fitre-020",
-        "reviewedCandidateSha256": "01f606269d6880985f8c9dd652075a47e1f0c7f5a72d0244fe9eabb5121aaac3",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "e383de00b794eb425e71739dc201b8ced1f1b884f56cc5789930435a53b1a602",
+        "disposition": "revised",
         "defects": [
           "restrictive-distractors",
           "implausible-distractors"
         ],
-        "reason": "Nakit ödemeye izin kaynakta açık. Hiçbir şey vermemek/sadece su/yalnız elbise kolay eleniyor; aynî-kıymet ayrımı daha iyi sorulmalı.",
+        "reason": "Hiçbir şey/yalnız elbise gibi zayıf şıklar dört fakih adıyla değiştirildi; mezhepler üstü tek hüküm iddiası yerine kaynak atfı soruldu.",
         "optionReview": {
-          "o1": "Ödeme yok; gerçek bir ödeme biçimi değil.",
-          "o2": "Kaynak 113–114’te destekler.",
-          "o3": "Sınırlayıcı ve bedel ilişkisi belirsiz.",
-          "o4": "Sınırlayıcı ve eksik."
+          "o2": "Nakit görüşü anlatılırken özellikle adı verilen fakih.",
+          "o1": "Nakit paragrafında bu görüşle adı verilen kişi değil.",
+          "o3": "Nakit paragrafında bu görüşle adı verilen kişi değil.",
+          "o4": "Nakit paragrafında bu görüşle adı verilen kişi değil."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/fitre",
-          "locator": "Nakit ödemeye izin kaynakta açık. Hiçbir şey vermemek/sadece su/yalnız elbise kolay eleniyor; aynî-kıymet ayrımı daha iyi sorulmalı.",
+          "locator": "Nakit ödeme görüşü, Ebû Hanîfe’nin özellikle anılması",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-28",
           "sourceSha256": "784320ea0147f17dbf362e60bf8368d1d3a4a3b103bc13c420c1bf1d8a796ff8"
@@ -2604,37 +2584,37 @@
         ]
       },
       "after": {
-        "question": "Kurbanı yalnız et için yapılan hayvan kesiminden ayıran temel unsur hangisidir?",
+        "question": "Hac 22/36'da kurban etinden yararlandırılacak yoksullar hangi özellikleriyle birlikte anılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Kesim yerinin büyüklüğü"
-          },
-          {
-            "id": "o2",
-            "text": "Allah rızası için ibadet niyeti"
+            "text": "Yolculukta olanlar ve yerleşik yaşayanlar"
           },
           {
             "id": "o3",
-            "text": "Hayvanın renkli olması"
+            "text": "Ailesi olanlar ve tek başına yaşayanlar"
           },
           {
             "id": "o4",
-            "text": "Pazar fiyatı"
+            "text": "Genç olanlar ve yaşça ilerlemiş olanlar"
+          },
+          {
+            "id": "o2",
+            "text": "İhtiyacını gizleyenler ve gizlemeyenler"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Allah rızası için ibadet niyeti",
-        "explanation": "TDV Kurban maddesi ibadet niyetini, kurbanı sıradan et amaçlı hayvan kesiminden ayıran temel vasıf olarak açıklar.",
+        "correctAnswer": "İhtiyacını gizleyenler ve gizlemeyenler",
+        "explanation": "Hac 22/36’da kurban etinden hem ihtiyacını gizleyen hem de gizlemeyen yoksulların yararlandırılması söylenir. Soru âyette kullanılan bu nitelik çiftini sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KURBAN",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kurban",
-            "locator": "Kurbanın ibadet niyeti",
-            "supports": "TDV Kurban maddesi ibadet niyetini, kurbanı sıradan et amaçlı hayvan kesiminden ayıran temel vasıf olarak açıklar.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "22/36; PDF sayfa 353 (1 tabanlı), basılı sayfa 352",
+            "supports": "22/36 bağlamında sorulan ifade: İhtiyacını gizleyenler ve gizlemeyenler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2644,37 +2624,34 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q52-kurban-025",
-        "reviewedCandidateSha256": "1c3347a56a850531d3e17dd913d75c58392e1f0cb76d618306fdeb0e35cbfd29",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "aa0fe129cb2b6001ac725961874dec33a39a654166614c05f8729d8f8af5f4b7",
+        "disposition": "revised",
         "defects": [
           "single-religious-option",
           "implausible-distractors"
         ],
-        "reason": "İbadeti sorarken yalnız bir ibadet niyeti kullanılması kolay tahmin sağlar. Niyet bağlamı veya kurban terimleriyle daha kesin bir kök gerekir.",
+        "reason": "Aynı ibadet niyeti hedefi yerine 22/36’daki yoksul grubu tasviri soruldu. Dört toplumsal nitelik çifti aynı yapıda ve olumlu/nötr.",
         "optionReview": {
-          "o1": "Yer büyüklüğü niyetle aynı tür değil.",
-          "o2": "Tek dinî gerekçe; kaynak girişinde doğru.",
-          "o3": "Renk, amaç sorusuyla ilgisiz.",
-          "o4": "Fiyat niyet değil."
+          "o1": "Makul grup ayrımı; bu âyette kullanılan değil.",
+          "o3": "Makul grup ayrımı; bu âyette kullanılan değil.",
+          "o4": "Makul grup ayrımı; bu âyette kullanılan değil.",
+          "o2": "Âyet ihtiyacını gizleyen ve gizlemeyenleri birlikte anar."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/kurban",
-          "locator": "Kurbanın ibadet niyeti",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "22/36; PDF sayfa 353 (1 tabanlı), basılı sayfa 352",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -4374,37 +4351,37 @@
         ]
       },
       "after": {
-        "question": "İmsak vakti hangi olayın başlamasıyla ilişkilidir?",
+        "question": "İmsakın başlangıcını belirleyen olay hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Ayın dolunay olmasıyla"
+            "text": "Fecr-i kâzibin belirmesi"
           },
           {
             "id": "o2",
-            "text": "Öğle gölgesiyle"
-          },
-          {
-            "id": "o3",
-            "text": "Fecr-i sâdıkın doğmasıyla"
+            "text": "Güneşin ufuktan yükselmesi"
           },
           {
             "id": "o4",
-            "text": "Güneşin batmasıyla"
+            "text": "Güneşin ufukta batması"
+          },
+          {
+            "id": "o3",
+            "text": "Fecr-i sâdıkın doğması"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Fecr-i sâdıkın doğmasıyla",
-        "explanation": "TDV İmsak maddesi, imsakın gerçek tan yeri ağarması diye bilinen fecr-i sâdıkla başladığını açıklar.",
+        "correctAnswer": "Fecr-i sâdıkın doğması",
+        "explanation": "İmsak, ikinci fecir denilen fecr-i sâdıkın doğuşuyla başlar. Gün doğumu ve güneşin batışı bu başlangıçla aynı an değildir; vakit hesabına ilişkin ayrıntılı görüşler soru kapsamına sokulmamıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — imsak",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/imsak",
-            "locator": "Fecr-i sâdık",
-            "supports": "TDV İmsak maddesi, imsakın gerçek tan yeri ağarması diye bilinen fecr-i sâdıkla başladığını açıklar.",
+            "locator": "İmsak tanımı; fecr-i sâdık ve iftar karşılaştırması",
+            "supports": "İmsak, ikinci fecir denilen fecr-i sâdıkın doğuşuyla başlar. Gün doğumu ve güneşin batışı bu başlangıçla aynı an değildir; vakit hesabına ilişkin ayrıntılı görüşler soru kapsamına sokulmamıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -4414,36 +4391,33 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q57-imsakfecr",
-        "reviewedCandidateSha256": "103b136cc87c9b82f04aa57c1ab33022eac93fc2113c048e143ba163d496524e",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "91d79676c506b1e30fe1bfe2b3ca29e28e8b4529ce5bfe7ab430e47669b5a2c4",
+        "disposition": "revised",
         "defects": [
           "option-domain-mismatch"
         ],
-        "reason": "İmsak tanımında dolunay karşısında tek ayrıntılı fecr terimi anahtarı öne çıkarıyor. Fecr-i kâzib/sâdık ve güneş olayları gibi yakın ayrım gerekir.",
+        "reason": "Dolunay/öğle yerine dört gün içi astronomik olay kullanıldı; iki fecir arasındaki gerçek terim ayrımı gerekir.",
         "optionReview": {
-          "o1": "Ay evresi; günlük imsak vaktiyle türdeş değil.",
-          "o2": "Gün içi olay ama zaman oldukça uzak.",
-          "o3": "Tek teknik tanım; kaynak erişimi başarısız.",
-          "o4": "İftar sınırı; yakın karşılaştırma imkânı var."
+          "o1": "İlk/yalancı fecir; imsak başlangıcı değil.",
+          "o2": "Gün doğumu; başlangıçtan sonra.",
+          "o4": "İftar sınırı; başlangıç değil.",
+          "o3": "Kaynağın başlangıç diye belirttiği ikinci fecir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/imsak",
-          "locator": "Fecr-i sâdık",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "İmsak tanımı; fecr-i sâdık ve iftar karşılaştırması",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "3b61e839f374c8bd29abd0acbc9457ed222c7a91567e9580191453814113750a"
         }
       },
       "independentExpertApproval": false,
@@ -4840,37 +4814,37 @@
         ]
       },
       "after": {
-        "question": "Evliya Çelebi'nin Seyahatnâme'sinin asıl adı hangisidir?",
+        "question": "Seyahatnâme'nin birer şehre ayrılan I. ve X. ciltleri sırasıyla hangi şehirleri anlatır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Târîh-i Seyyâh Evliyâ Efendi"
-          },
-          {
-            "id": "o2",
-            "text": "Cihannümâ"
-          },
-          {
             "id": "o3",
-            "text": "Keşfü'z-Zunûn"
+            "text": "Şam ve Medine"
           },
           {
             "id": "o4",
-            "text": "Kitâbü'l-İber"
+            "text": "İzmir ve Bağdat"
+          },
+          {
+            "id": "o1",
+            "text": "İstanbul ve Kahire"
+          },
+          {
+            "id": "o2",
+            "text": "Bursa ve Mekke"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Târîh-i Seyyâh Evliyâ Efendi",
-        "explanation": "TDV'ye göre Seyahatnâme'nin asıl adı Târîh-i Seyyâh Evliyâ Efendi'dir; sonraki literatürde Seyahatnâme adı yaygınlaşmıştır.",
+        "correctAnswer": "İstanbul ve Kahire",
+        "explanation": "Seyahatnâme’nin I. cildinin bütünü İstanbul’a, X. cildinin bütünü Kahire’ye ayrılmıştır. TDV iki şehrin eserin genel düzenine çerçeve oluşturduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — seyahatname--evliya-celebi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-            "locator": "Seyahatnâme'nin asıl adı",
-            "supports": "TDV'ye göre Seyahatnâme'nin asıl adı Târîh-i Seyyâh Evliyâ Efendi'dir; sonraki literatürde Seyahatnâme adı yaygınlaşmıştır.",
+            "locator": "Cilt düzeni; I. cilt İstanbul ve X. cilt Kahire",
+            "supports": "Seyahatnâme’nin I. cildinin bütünü İstanbul’a, X. cildinin bütünü Kahire’ye ayrılmıştır. TDV iki şehrin eserin genel düzenine çerçeve oluşturduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -4880,37 +4854,34 @@
           "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q59-evliya-asli",
-        "reviewedCandidateSha256": "0cff0207a2c3155a2c15f742de3f8a597538043f3f951e7271c4b5f1ec95862c",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "13d521ea9255aedfe8fcb13309b589b99005623e1e2f6b6df5e7d08bd30f7451",
+        "disposition": "revised",
         "defects": [
           "correct-title-author-echo",
           "length-cue"
         ],
-        "reason": "Doğru başlık yazarın adını aynen içeriyor; üç diğer kısa eser adıyla cevap bilgi olmadan seçilebiliyor. Kaynağa dayalı farklı ayrıntı veya dengeli başlıklar gerekir.",
+        "reason": "Yazar adı içeren uzun başlık ipucu yerine dört şehir çifti kullanıldı; zaten iki ayrı ID’de tekrar edilen on cilt bilgisi eklenmedi.",
         "optionReview": {
-          "o1": "Hem tek uzun başlık hem kökteki yazar adını taşıyor.",
-          "o2": "Gerçek başka eser; yazar adı içermiyor.",
-          "o3": "Gerçek başka eser; dil/uzunluk dengesiz.",
-          "o4": "Gerçek başka eser; daha kısa ve ad ipucu yok."
+          "o3": "Kaynakta I/X çifti değil.",
+          "o4": "Kaynakta I/X çifti değil.",
+          "o1": "İki cildin kaynakta açık şehirleri.",
+          "o2": "Kaynakta I/X çifti değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-          "locator": "Seyahatnâme'nin asıl adı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Cilt düzeni; I. cilt İstanbul ve X. cilt Kahire",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "059602b640c81681b79d457a2d7d492aba84dfe068d7d83ac580ab556c0be108"
         }
       },
       "independentExpertApproval": false,
@@ -4959,37 +4930,37 @@
         ]
       },
       "after": {
-        "question": "İslâm'ın ilk yıllarında Dârülerkam'ın başlıca işlevi ne olmuştur?",
+        "question": "Dârülerkam Mekke'de hangi tepenin eteklerinde bulunuyordu?",
         "options": [
           {
-            "id": "o1",
-            "text": "Vergi toplamak"
-          },
-          {
-            "id": "o2",
-            "text": "Devlet hazinesini saklamak"
+            "id": "o4",
+            "text": "Sevr"
           },
           {
             "id": "o3",
-            "text": "Eğitim ve İslâm'a davet"
+            "text": "Safâ"
           },
           {
-            "id": "o4",
-            "text": "Donanma hazırlamak"
+            "id": "o1",
+            "text": "Merve"
+          },
+          {
+            "id": "o2",
+            "text": "Hira"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Eğitim ve İslâm'a davet",
-        "explanation": "Hz. Peygamber Dârülerkam'da sahâbîlere dinî bilgi öğretmiş, Kur'an okumuş ve ziyaretçileri İslâm'a davet etmiştir.",
+        "correctAnswer": "Safâ",
+        "explanation": "Dârülerkam, Mekke’de Safâ tepesinin eteklerinde yer alıyordu. Hz. Peygamber’in ilk yıllardaki eğitim ve davet faaliyetlerine ev sahipliği yaptı.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — darulerkam",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/darulerkam",
-            "locator": "Dârülerkam'daki eğitim",
-            "supports": "Hz. Peygamber Dârülerkam'da sahâbîlere dinî bilgi öğretmiş, Kur'an okumuş ve ziyaretçileri İslâm'a davet etmiştir.",
+            "locator": "İlk paragraf; Safâ tepesinin etekleri",
+            "supports": "Dârülerkam, Mekke’de Safâ tepesinin eteklerinde yer alıyordu. Hz. Peygamber’in ilk yıllardaki eğitim ve davet faaliyetlerine ev sahipliği yaptı.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -4999,37 +4970,34 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q60-erkam-hizmet",
-        "reviewedCandidateSha256": "f35debf292806da231779f8ec2ad4cf11777e9049729d453ce457809f5739627",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "91b41b67b22af86da68be2ec3375af0a49c256c54eb8c5c21963b3ecf04ec46a",
+        "disposition": "revised",
         "defects": [
           "anachronistic-distractors",
           "single-religious-option"
         ],
-        "reason": "Mekke’de ilk eğitim toplantılarına karşı donanma/devlet hazinesi bariz uyumsuz; aynı dönem sosyal faaliyetler arasında kesin bağlam sorulmalı.",
+        "reason": "Üç anakronik göreve karşı tek davet cevabı yerine dört Mekke tepesi/dağı arasında kaynak konumu soruldu.",
         "optionReview": {
-          "o1": "İlk Mekke daveti bağlamına oturmuyor.",
-          "o2": "Medine devlet hazinesiyle dönem karışıyor.",
-          "o3": "Tek gerçekçi dinî faaliyet.",
-          "o4": "Deniz kuvveti ilk Mekke bağlamında anakronik."
+          "o4": "Hicret mağarası dağı; Dârülerkam’ın konumu değil.",
+          "o3": "TDV’nin verdiği konum.",
+          "o1": "Mekke’de başka tepe; evin kaynaktaki konumu değil.",
+          "o2": "İlk vahiy dağı; Dârülerkam’ın konumu değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
-        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut etiket korundu. Yeni kaynak ayrıntısı eski genel tanımdan daha özeldir; medium/hard yönünde editör/ürün değerlendirmesi bekler, otomatik seviye değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/darulerkam",
-          "locator": "Dârülerkam'daki eğitim",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "İlk paragraf; Safâ tepesinin etekleri",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "059602b640c81681b79d457a2d7d492aba84dfe068d7d83ac580ab556c0be108"
         }
       },
       "independentExpertApproval": false,
@@ -5434,37 +5402,37 @@
         ]
       },
       "after": {
-        "question": "Mescid-i Harâm hangi yapıyı çevreleyen büyük mesciddir?",
+        "question": "Muâviye döneminde Mescid-i Harâm'a konulan minber hangi şehirden getirilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Emeviyye Camii'ni"
+            "id": "o2",
+            "text": "Şam"
           },
           {
-            "id": "o2",
-            "text": "Kâbe'yi"
+            "id": "o1",
+            "text": "Kûfe"
           },
           {
             "id": "o3",
-            "text": "Kubbetü's-Sahre'yi"
+            "text": "Basra"
           },
           {
             "id": "o4",
-            "text": "Mescid-i Nebevî'yi"
+            "text": "Fustat"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kâbe'yi",
-        "explanation": "TDV Mescid-i Harâm maddesi Mekke'deki Kâbe'yi çevreleyen kutsal mescid alanını anlatır.",
+        "correctAnswer": "Şam",
+        "explanation": "TDV, Muâviye döneminde Şam’dan getirilen üç basamaklı minberin Makām-ı İbrâhim’in sağ tarafına konulduğunu anlatır. Soru getirildiği şehri sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — mescid-i-haram",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mescid-i-haram",
-            "locator": "Kâbe'yi kuşatan mescid",
-            "supports": "TDV Mescid-i Harâm maddesi Mekke'deki Kâbe'yi çevreleyen kutsal mescid alanını anlatır.",
+            "locator": "Hutbe ve minber paragrafı; Muâviye devrinde Şam’dan gelen minber",
+            "supports": "TDV, Muâviye döneminde Şam’dan getirilen üç basamaklı minberin Makām-ı İbrâhim’in sağ tarafına konulduğunu anlatır. Soru getirildiği şehri sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -5474,35 +5442,30 @@
           "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q60-haram-konum",
-        "reviewedCandidateSha256": "64930c78bdbe8bb2ac682e51731cb1248e35fa2c30f48630a57a815eb98d6bc9",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "0e4251fbbc85704e2412c3db8e6054eb5491ba7efb23da611eaa0edb20f24774",
+        "disposition": "revised",
         "defects": [
           "knowledge-target-duplicate"
         ],
-        "reason": "Dört mimarî yapı makul; fakat e150-general-030 ile Kâbe-Harâm ilişkisi aynı yönde/ters yönde yeniden soruluyor. Yeni kaynak ayrıntısı bekler.",
+        "reason": "Kâbe’yi çevreleyen mescid bilgisinin tekrarı yerine kaynakta doğrulanan minber ayrıntısı kullanıldı; dört çağdaş İslâm şehri seçildi.",
         "optionReview": {
-          "o1": "Şam’da yapı; Harâm’ın çevrelediği değil.",
-          "o2": "Kaynağın doğrudan tanımı.",
-          "o3": "Kudüs’te yapı; Mekke’de değil.",
-          "o4": "Medine’de; Harâm’ın içinde değil."
+          "o2": "Kaynak minberin Şam’dan getirildiğini belirtir.",
+          "o1": "Dönemin şehri; kaynakta getirildiği yer değil.",
+          "o3": "Dönemin şehri; kaynakta getirildiği yer değil.",
+          "o4": "Dönemin şehri; kaynakta getirildiği yer değil."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Belirtilen kusurlar çözülmeden kabul verilemez.",
-        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "e150-general-030 ile aynı Kâbe’yi çevreleme bilgisi. Sadece yönü çevirmek yeni bilgi sayılmadı; açık tekrar kararı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut etiket korundu. Yeni kaynak ayrıntısı eski genel tanımdan daha özeldir; medium/hard yönünde editör/ürün değerlendirmesi bekler, otomatik seviye değişikliği yapılmadı.",
+        "duplicateReview": "Kâbe-Harâm ilişkisi ve mevcut metâf sorusu tekrar edilmedi; minberin getirildiği şehir ayrıntısı seçildi. Banka çapında ikinci tekrar turu bekliyor.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/mescid-i-haram",
-          "locator": "Dört mimarî yapı makul; fakat e150-general-030 ile Kâbe-Harâm ilişkisi aynı yönde/ters yönde yeniden soruluyor. Yeni kaynak ayrıntısı bekler.",
+          "locator": "Hutbe ve minber paragrafı; Muâviye devrinde Şam’dan gelen minber",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-28",
           "sourceSha256": "4894a5e7411da07fa51615c05cf838bf6c2a4313f05131b6bab2bfb944633f89"

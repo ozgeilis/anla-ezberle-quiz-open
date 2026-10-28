@@ -3,20 +3,22 @@
   "activeBankVersion": 72,
   "candidateBankVersion": 73,
   "total": 1500,
-  "individuallyReviewed": 220,
-  "pendingReview": 1280,
-  "sourceComparedThisRound": 148,
-  "blocked": 51,
+  "individuallyReviewed": 372,
+  "pendingReview": 1128,
+  "sourceComparedThisRound": 329,
+  "blocked": 1,
   "flaggedBefore": 335,
-  "flaggedAfter": 180,
+  "flaggedAfter": 142,
   "previousPriorityCount": 220,
-  "revisedAgainstV72": 372,
-  "stemsChangedAgainstV72": 127,
+  "revisedAgainstV72": 448,
+  "stemsChangedAgainstV72": 188,
+  "correctAnswerWordingChangedAgainstV72": 252,
+  "explanationsChangedAgainstV72": 101,
   "distractorsOnlyChangedAgainstV72": 146,
   "automaticPatternCounts": {
     "three-restrictive-distractors": {
       "before": 25,
-      "after": 5
+      "after": 0
     },
     "only-correct-restrictive": {
       "before": 2,
@@ -28,7 +30,7 @@
     },
     "only-correct-absolute": {
       "before": 0,
-      "after": 0
+      "after": 1
     },
     "tone-3-negative": {
       "before": 4,
@@ -40,7 +42,7 @@
     },
     "length-outlier": {
       "before": 85,
-      "after": 24
+      "after": 13
     },
     "possible-synonyms": {
       "before": 0,
@@ -54,86 +56,86 @@
   "byCategory": {
     "quran_dualar": {
       "total": 213,
-      "individuallyReviewed": 40,
-      "pendingReview": 173,
-      "sourceComparedThisRound": 15,
-      "blocked": 15,
+      "individuallyReviewed": 92,
+      "pendingReview": 121,
+      "sourceComparedThisRound": 76,
+      "blocked": 1,
       "flaggedBefore": 47,
-      "flaggedAfter": 33
+      "flaggedAfter": 22
     },
     "siyer_sahabe": {
       "total": 313,
-      "individuallyReviewed": 42,
-      "pendingReview": 271,
-      "sourceComparedThisRound": 33,
-      "blocked": 6,
+      "individuallyReviewed": 74,
+      "pendingReview": 239,
+      "sourceComparedThisRound": 66,
+      "blocked": 0,
       "flaggedBefore": 45,
-      "flaggedAfter": 28
+      "flaggedAfter": 25
     },
     "peygamberler": {
       "total": 271,
-      "individuallyReviewed": 65,
-      "pendingReview": 206,
-      "sourceComparedThisRound": 46,
-      "blocked": 16,
+      "individuallyReviewed": 110,
+      "pendingReview": 161,
+      "sourceComparedThisRound": 106,
+      "blocked": 0,
       "flaggedBefore": 81,
-      "flaggedAfter": 56
+      "flaggedAfter": 46
     },
     "fikih": {
       "total": 161,
-      "individuallyReviewed": 36,
-      "pendingReview": 125,
-      "sourceComparedThisRound": 25,
-      "blocked": 9,
+      "individuallyReviewed": 47,
+      "pendingReview": 114,
+      "sourceComparedThisRound": 40,
+      "blocked": 0,
       "flaggedBefore": 39,
-      "flaggedAfter": 24
+      "flaggedAfter": 15
     },
     "iman_ahlak": {
       "total": 260,
-      "individuallyReviewed": 0,
-      "pendingReview": 260,
-      "sourceComparedThisRound": 0,
+      "individuallyReviewed": 3,
+      "pendingReview": 257,
+      "sourceComparedThisRound": 3,
       "blocked": 0,
       "flaggedBefore": 85,
       "flaggedAfter": 25
     },
     "tarih_medeniyet": {
       "total": 282,
-      "individuallyReviewed": 37,
-      "pendingReview": 245,
-      "sourceComparedThisRound": 29,
-      "blocked": 5,
+      "individuallyReviewed": 46,
+      "pendingReview": 236,
+      "sourceComparedThisRound": 38,
+      "blocked": 0,
       "flaggedBefore": 38,
-      "flaggedAfter": 14
+      "flaggedAfter": 9
     }
   },
   "byDifficulty": {
     "easy": {
       "total": 475,
-      "individuallyReviewed": 62,
-      "pendingReview": 413,
-      "sourceComparedThisRound": 44,
-      "blocked": 12,
+      "individuallyReviewed": 126,
+      "pendingReview": 349,
+      "sourceComparedThisRound": 111,
+      "blocked": 1,
       "flaggedBefore": 112,
-      "flaggedAfter": 50
+      "flaggedAfter": 39
     },
     "medium": {
       "total": 789,
-      "individuallyReviewed": 127,
-      "pendingReview": 662,
-      "sourceComparedThisRound": 82,
-      "blocked": 35,
+      "individuallyReviewed": 189,
+      "pendingReview": 600,
+      "sourceComparedThisRound": 167,
+      "blocked": 0,
       "flaggedBefore": 186,
-      "flaggedAfter": 110
+      "flaggedAfter": 87
     },
     "hard": {
       "total": 236,
-      "individuallyReviewed": 31,
-      "pendingReview": 205,
-      "sourceComparedThisRound": 22,
-      "blocked": 4,
+      "individuallyReviewed": 57,
+      "pendingReview": 179,
+      "sourceComparedThisRound": 51,
+      "blocked": 0,
       "flaggedBefore": 37,
-      "flaggedAfter": 20
+      "flaggedAfter": 16
     }
   },
   "styleOnlyGuesser": {
@@ -145,10 +147,10 @@
       "limitation": "Lexical cues only, no religious knowledge; not a correctness or editorial approval test"
     },
     "after": {
-      "guessed": 15,
-      "correct": 14,
-      "abstained": 1485,
-      "conditionalAccuracy": 0.9333333333333333,
+      "guessed": 1,
+      "correct": 1,
+      "abstained": 1499,
+      "conditionalAccuracy": 1,
       "limitation": "Lexical cues only, no religious knowledge; not a correctness or editorial approval test"
     }
   },

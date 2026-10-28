@@ -189,6 +189,12 @@ const summary = {
   stemsChangedAgainstV72: records.filter(
     (r) => r.before.question !== r.after.question,
   ).length,
+  correctAnswerWordingChangedAgainstV72: records.filter(
+    (r) => r.before.correctAnswer !== r.after.correctAnswer,
+  ).length,
+  explanationsChangedAgainstV72: records.filter(
+    (r) => r.before.explanation !== r.after.explanation,
+  ).length,
   distractorsOnlyChangedAgainstV72: records.filter(
     (r) =>
       optionTextChanged(r.id) &&
@@ -314,7 +320,13 @@ const weight = (r: (typeof records)[number]) =>
   r.automaticBefore.reduce(
     (n, f) => n + (/three-|tone-|length-outlier/.test(f.kind) ? 3 : 1),
     0,
-  ) + (r.decision?.defects.length ?? 0);
+  ) +
+  (r.decision?.defects.length ?? 0) +
+  (r.decision?.defects.some((defect) =>
+    /answer-source-mismatch|multiple-correct|ambiguous-context/.test(defect),
+  )
+    ? 20
+    : 0);
 outputs["docs/editorial-v73/round2-top30.md"] =
   reportHeader +
   table(
@@ -322,6 +334,26 @@ outputs["docs/editorial-v73/round2-top30.md"] =
       .sort((a, b) => weight(b) - weight(a) || a.sequence - b.sequence)
       .slice(0, 30),
   );
+outputs["docs/editorial-v73/round2-open-items.md"] =
+  "# İkinci tur açık kontroller\n\n" +
+  `Bireysel inceleme bekleyen: **${summary.pendingReview}**. İncelenmiş ama bu tur kaynak karşılaştırması bekleyen: **${summary.individuallyReviewed - summary.sourceComparedThisRound}**. Bu liste yayın onayı değildir.\n\n` +
+  "## Bloke kararlar\n\n" +
+  records
+    .filter((r) => r.decision?.disposition === "blocked")
+    .map(
+      (r) =>
+        `- **${r.id}** (${r.category}): ${r.decision!.ambiguityReview} ${r.decision!.reason}\n`,
+    )
+    .join("") +
+  "\n## İncelenenlerde kaynak karşılaştırması bekleyenler\n\n" +
+  records
+    .filter((r) => r.decision?.source.status === "pending")
+    .map(
+      (r) =>
+        `- ${r.id}: [kaynak](${r.decision!.source.url}) — ${r.decision!.source.note}\n`,
+    )
+    .join("") +
+  "\nİncelenmemiş sorular ve her sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.\n";
 for (const [path, value] of Object.entries(outputs)) {
   if (process.argv.includes("--check")) {
     if (readFileSync(path, "utf8") !== value)

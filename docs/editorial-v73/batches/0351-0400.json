@@ -3,12 +3,12 @@
   "start": 351,
   "end": 400,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 20,
+  "pendingReview": 30,
+  "sourceComparedThisRound": 18,
   "blocked": 0,
   "flaggedBefore": 0,
-  "flaggedAfter": 0,
+  "flaggedAfter": 1,
   "records": [
     {
       "sequence": 351,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-prophets-037",
+        "reviewedCandidateSha256": "81de64f29eccea25c45e06e9bf1f8accbc8413099f466c5a6ed9ba72d65508cf",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber aynı türde; Semûd ve deve birlikte Sâlih’i kesinleştirir.",
+        "optionReview": {
+          "o1": "Âd peygamberi.",
+          "o2": "7/73’teki peygamber.",
+          "o3": "Balık kıssası.",
+          "o4": "Başka kavim kıssası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "7/73; PDF sayfa 169 (1 tabanlı), basılı sayfa 168",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -173,8 +197,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-prophets-038",
+        "reviewedCandidateSha256": "88d699ac040cdcab460deb4b4e03a3e00f1353a34c9f2d08f5ff622643fc602c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber; Âd/Hûd eşleştirmesi gerekir, dil/uzunluk farkı yok.",
+        "optionReview": {
+          "o1": "Semûd peygamberi.",
+          "o2": "7/65’teki peygamber.",
+          "o3": "Medyen peygamberi.",
+          "o4": "Başka kıssa."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "7/65; PDF sayfa 168 (1 tabanlı), basılı sayfa 167",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -221,44 +269,70 @@
         ]
       },
       "after": {
-        "question": "Hz. Eyyûb'ün sıkıntısını Allah'a arz ettiği kıssa hangi surede yer alır?",
+        "question": "Hz. Eyyûb’ün derdini Allah'a arz ederek rahmet dilediği dua hangi sûrenin 83. âyetindedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yûsuf"
+            "id": "o3",
+            "text": "Yûnus"
+          },
+          {
+            "id": "o4",
+            "text": "A‘râf"
           },
           {
             "id": "o2",
             "text": "Enbiyâ"
           },
           {
-            "id": "o3",
-            "text": "Fil"
-          },
-          {
-            "id": "o4",
-            "text": "Kadr"
+            "id": "o1",
+            "text": "Hûd"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Enbiyâ",
-        "explanation": "Enbiyâ 21/83'te Eyyûb'ün duasına yer verilir.",
+        "explanation": "Enbiyâ 21/83’te Eyyûb, uğradığı derdi Allah’a arz eder ve O’nun merhametini anar. Sâd sûresinde de Eyyûb’a dair ayrı bir dua anlatısı vardır; bu sorudaki 83. âyet Enbiyâ’ya aittir.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=21&ayet=83&mode=meal",
-            "locator": "21/83; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-            "supports": "Enbiyâ 21/83'te Eyyûb'ün duasına yer verilir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "21:83; PDF sayfa 345",
+            "supports": "Enbiyâ 21/83’te Eyyûb, uğradığı derdi Allah’a arz eder ve O’nun merhametini anar. Sâd sûresinde de Eyyûb’a dair ayrı bir dua anlatısı vardır; bu sorudaki 83. âyet Enbiyâ’ya aittir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-prophets-039",
+        "reviewedCandidateSha256": "b5070f06e681298f95b7fa7e37f80a45c0e5435bff88657f1613209582a57e69",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Fil/Kadr yerine peygamber kıssaları içeren sûreler seçildi. Sâd’daki başka Eyyûb duasıyla karışmaması için âyet numarası verildi.",
+        "optionReview": {
+          "o3": "83. ayeti bu dua değil.",
+          "o4": "83. ayeti bu dua değil.",
+          "o2": "21/83’ün suresi.",
+          "o1": "83. ayeti bu dua değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "21/83; PDF sayfa 345 (1 tabanlı), basılı sayfa 344",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -359,8 +433,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-prophets-040",
+        "reviewedCandidateSha256": "932524c3d8f49a13832e13ea043e961f7e1dacc4fd836b8c6cb97bc707801484",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber; yüksek konuma yükseltme ifadesi 19/56–57’de İdrîs’e bağlı, makamın fizikî gök katı olduğu iddia edilmiyor.",
+        "optionReview": {
+          "o1": "Başka peygamber.",
+          "o2": "56–57’deki peygamber.",
+          "o3": "Başka peygamber.",
+          "o4": "Başka peygamber."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/57; PDF sayfa 324 (1 tabanlı), basılı sayfa 323",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -443,8 +541,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-002",
+        "reviewedCandidateSha256": "6f7db487985a79d22d051e302b226fbc352313e6c05b749389826d98acba0d3c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört dağ/tepe; Hira-Nur bilgisini sorgular. e150-history-001 ile aynı olgu ters yönden soruluyor; kavram tekrarı kaydedildi.",
+        "optionReview": {
+          "o1": "Medine dağı.",
+          "o2": "Hira’nın bulunduğu dağ.",
+          "o3": "Hac coğrafyası.",
+          "o4": "Mekke tepesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hira/Nur veya Suffe topluluğu konusundaki yakın hedefli diğer ID’lerle ortak olgu riski var. Mevcut seçim filtresi ve conceptGroup eşleşmesi banka çapındaki son turda ayrıca kontrol edilecek; bu not tekrarın giderildiği iddiası değildir.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hira",
+          "locator": "Dört dağ/tepe; Hira-Nur bilgisini sorgular. e150-history-001 ile aynı olgu ters yönden soruluyor; kavram tekrarı kaydedildi.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "a48707b903448aef6b9b8a92dece66e4d074360cb3e498e1edc535fce59911c6"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -527,8 +649,30 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-003",
+        "reviewedCandidateSha256": "ddc73e54a9bb5943a86efcaac3125dfb3fd7e2a38faa8ae02f4f3ad36f601798",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört tarihî Arabistan bölgesi; kök TDV coğrafî çerçevesine bağlı, tartışmalı sınırlar kesin çizgi sayılmıyor.",
+        "optionReview": {
+          "o1": "Güney bölgesi.",
+          "o2": "Mekke’nin bölgesi.",
+          "o3": "Güneydoğu bölgesi.",
+          "o4": "Güney bölgesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/hicaz",
+          "locator": "HİCAZ, coğrafî sınırlar paragrafı",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -579,40 +723,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Bağdat"
+            "text": "Mekke"
+          },
+          {
+            "id": "o3",
+            "text": "Tâif"
+          },
+          {
+            "id": "o4",
+            "text": "Hayber"
           },
           {
             "id": "o2",
             "text": "Medine"
-          },
-          {
-            "id": "o3",
-            "text": "Kûfe"
-          },
-          {
-            "id": "o4",
-            "text": "Şam"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Medine",
-        "explanation": "Muhacirler Mekke'den Medine'ye göç eden Müslümanlardır.",
+        "explanation": "Muhacirler Mekke’den Medine’ye göç eden müslümanlardır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hicret",
-            "locator": "HİCRET, Medine’ye göç tanımı",
-            "supports": "Muhacirler Mekke'den Medine'ye göç eden Müslümanlardır.",
+            "locator": "Medine’ye hicret tanımı",
+            "supports": "Muhacirler Mekke’den Medine’ye göç eden müslümanlardır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-005",
+        "reviewedCandidateSha256": "a20f965af41c6ccc4665d7fcbfa6abfae52764e9a4671de7e5c99ed2f6dd39bf",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Bağdat/Kûfe anakronizmi yerine dönemin yerleşimleri kullanıldı.",
+        "optionReview": {
+          "o1": "Ayrıldıkları şehir.",
+          "o3": "Dönemin başka yerleşimi.",
+          "o4": "Dönemin başka yerleşimi.",
+          "o2": "Göçün varış şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "Medine’ye hicret tanımı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4dade7e7b517451ed219026ddfda88e36870eda5a826a5261520cfe5224be1f3"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -662,41 +832,72 @@
         "question": "Ensar kelimesinin dayandığı Arapça kök hangi anlamla ilişkilidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yolculuk etmek"
+            "id": "o3",
+            "text": "Antlaşma yapmak"
+          },
+          {
+            "id": "o4",
+            "text": "Danışmak"
           },
           {
             "id": "o2",
             "text": "Yardım etmek"
           },
           {
-            "id": "o3",
-            "text": "Yazmak"
-          },
-          {
-            "id": "o4",
-            "text": "Saymak"
+            "id": "o1",
+            "text": "Göç etmek"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Yardım etmek",
-        "explanation": "Ensar, yardım etmek anlamındaki nasr köküne dayanır.",
+        "explanation": "Ensar kelimesi, yardım etmek anlamındaki nasr kökünden türemiştir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Ensar kelimesinin kökeni",
-            "supports": "Ensar, yardım etmek anlamındaki nasr köküne dayanır.",
+            "locator": "96. satır; nasr kökü",
+            "supports": "Ensar kelimesi, yardım etmek anlamındaki nasr kökünden türemiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-006",
+        "reviewedCandidateSha256": "3ec8b100ca57790cbed49935baed89181995080ad768bbbe42474ad95a3cca21",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yazmak/saymak yerine tarihî-toplumsal eylemler getirildi; hepsi olumlu veya nötr.",
+        "optionReview": {
+          "o3": "Ahd/muahede alanı.",
+          "o4": "Şûra alanı.",
+          "o2": "Nasrın kaynak anlamı.",
+          "o1": "Hicretin anlamına yakın."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "96. satır; nasr kökü",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "17e94849b769aa698cb058d0a29a19ab15b4883aaeea45e0b63c88347a6c77ed"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -779,8 +980,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-007",
+        "reviewedCandidateSha256": "671d92c0b09a8cad7f89abd8dfb7fcb070f93aa126502626fd2b608506263963",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kavim/kabile çifti; yalnız Evs-Hazrec Medine ensarının iki temel kabilesidir. Âd/Semûd eski dönem alternatifi olsa da aynı tarihî insan grubu türünde.",
+        "optionReview": {
+          "o1": "Mekke/Tâif kabileleri.",
+          "o2": "96. satırdaki iki kabile.",
+          "o3": "Daha eski kavimler.",
+          "o4": "Başka Arap kabileleri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "Dört kavim/kabile çifti; yalnız Evs-Hazrec Medine ensarının iki temel kabilesidir. Âd/Semûd eski dönem alternatifi olsa da aynı tarihî insan grubu türünde.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "17e94849b769aa698cb058d0a29a19ab15b4883aaeea45e0b63c88347a6c77ed"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -863,8 +1088,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-008",
+        "reviewedCandidateSha256": "ffbdf490c98d5b3cbe5e97ebc99421e1539fc5f097e55fcef578baed894419af",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Arabistan bölgesi aynı yapıda; Medine’nin Hicaz konumu kaynakta açık.",
+        "optionReview": {
+          "o1": "Güney bölgesi.",
+          "o2": "111. satırdaki konum.",
+          "o3": "Güney bölgesi.",
+          "o4": "Güneydoğu bölgesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/medine",
+          "locator": "Dört Arabistan bölgesi aynı yapıda; Medine’nin Hicaz konumu kaynakta açık.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "a095b13aaede09cd85e09d9aab30e23de67de2d9c44dee18e737486b70ab9608"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -947,8 +1196,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-009",
+        "reviewedCandidateSha256": "f5bdb780efa621eab9e8e3d05b7a21af766fe4fda9db241c49d56f3e549a6f04",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî adı, refakat bilgisi gerekir; görevlendirilmiş yol kılavuzu refakatçinin yerine konmuyor.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Hicret refakatçisi.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "Dört sahâbî adı, refakat bilgisi gerekir; görevlendirilmiş yol kılavuzu refakatçinin yerine konmuyor.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "4dade7e7b517451ed219026ddfda88e36870eda5a826a5261520cfe5224be1f3"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -995,44 +1268,70 @@
         ]
       },
       "after": {
-        "question": "Suffe'de kalan ve ilim öğrenen sahâbîlere ne ad verilir?",
+        "question": "Mescid-i Nebevî’de barınıp eğitim faaliyetleriyle anılan sahâbî topluluğunun adı hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ensâr-ı Bedir"
+            "id": "o4",
+            "text": "Ehl-i beyt"
           },
           {
             "id": "o2",
             "text": "Ashâb-ı Suffe"
           },
           {
-            "id": "o3",
-            "text": "Müellefe-i kulûb"
+            "id": "o1",
+            "text": "Ashâb-ı Bedir"
           },
           {
-            "id": "o4",
-            "text": "Ehl-i Beyt"
+            "id": "o3",
+            "text": "Müellefe-i kulûb"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Ashâb-ı Suffe",
-        "explanation": "Suffe'de kalanlar Ashâb-ı Suffe diye anılır.",
+        "explanation": "Mescid-i Nebevî’nin bitişiğindeki bölümde barınan ve öğrenimle meşgul olan sahâbîler Ashâb-ı Suffe veya Ehl-i Suffe diye anılır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Ashâb-ı Suffe",
-            "supports": "Suffe'de kalanlar Ashâb-ı Suffe diye anılır.",
+            "locator": "96–99. satırlar; topluluğun adları ve eğitimi",
+            "supports": "Mescid-i Nebevî’nin bitişiğindeki bölümde barınan ve öğrenimle meşgul olan sahâbîler Ashâb-ı Suffe veya Ehl-i Suffe diye anılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-013",
+        "reviewedCandidateSha256": "c9aa0d1d09ea9bbdb16815c32cd311e5084cbdf6a6358721d7793b83043f97cc",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Suffe sözcüğü kökten kaldırıldı; dört gerçek topluluk adı kullanıldı.",
+        "optionReview": {
+          "o4": "Başka gerçek aile topluluğu.",
+          "o2": "Kaynağın topluluk adı.",
+          "o1": "Başka gerçek sahâbî grubu.",
+          "o3": "Başka gerçek yararlanıcı grubu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hira/Nur veya Suffe topluluğu konusundaki yakın hedefli diğer ID’lerle ortak olgu riski var. Mevcut seçim filtresi ve conceptGroup eşleşmesi banka çapındaki son turda ayrıca kontrol edilecek; bu not tekrarın giderildiği iddiası değildir.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "96–99. satırlar; topluluğun adları ve eğitimi",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "282b35dc210c78d502a637fc30dae5e40278385e563cf372219e977465c46a58"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1115,8 +1414,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-016",
+        "reviewedCandidateSha256": "2f448be271438741a22cfdc1e50dc8edf46cb7835e809cbf651f06d36f9ef2b5",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek eş adı; ilk vahiy zamanındaki eş belirli. Olumlu/olumsuz ipucu yok.",
+        "optionReview": {
+          "o1": "Sonraki eş.",
+          "o2": "İlk vahiyde destek veren.",
+          "o3": "Sonraki eş.",
+          "o4": "Sonraki eş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "Dört gerçek eş adı; ilk vahiy zamanındaki eş belirli. Olumlu/olumsuz ipucu yok.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "ff6c1df1d45b658ab838db99b3e183f5004fc99ce8cda34ef1501f8caff0d7a8"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1199,8 +1522,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-017",
+        "reviewedCandidateSha256": "4b16d7f4c10fbec67214b990f8283b360be6caa625988a4b914d9fd2b9b14652",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hicrî ay aynı türde; tarihte farklı günler rivayet edilse de Ramazan ortak.",
+        "optionReview": {
+          "o1": "Başka ay.",
+          "o2": "111. satırdaki ay.",
+          "o3": "Başka ay.",
+          "o4": "Uhud’la karışan ay."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "Dört hicrî ay aynı türde; tarihte farklı günler rivayet edilse de Ramazan ortak.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "8570fe27244a298fd9ce874e8070d9c1b7557c702588a485d4a4be8251f0c1e6"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1283,8 +1630,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-018",
+        "reviewedCandidateSha256": "95b81a92a2f337186013f6cd7f8fcaec9987fe80af41e2e155223bd90e79bf62",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört tarihî milâdî yıl; 624 kaynakta açık. Hard etiketi temel siyer bilgisi için yüksek olabilir, öneri olarak kaldı.",
+        "optionReview": {
+          "o1": "Hicret yılı.",
+          "o2": "Bedir yılı.",
+          "o3": "Uhud yılı.",
+          "o4": "Fetih yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "Dört tarihî milâdî yıl; 624 kaynakta açık. Hard etiketi temel siyer bilgisi için yüksek olabilir, öneri olarak kaldı.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "8570fe27244a298fd9ce874e8070d9c1b7557c702588a485d4a4be8251f0c1e6"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1334,41 +1705,67 @@
         "question": "Bedir Gazvesi'nde Müslümanların karşısındaki başlıca güç nereden gelmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bizans"
+            "id": "o4",
+            "text": "San‘a"
           },
           {
             "id": "o2",
             "text": "Mekke"
           },
           {
-            "id": "o3",
-            "text": "İran"
+            "id": "o1",
+            "text": "Tâif"
           },
           {
-            "id": "o4",
-            "text": "Habeşistan"
+            "id": "o3",
+            "text": "Kudüs"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Mekke",
-        "explanation": "Bedir, Müslümanlarla Mekkeli müşrikler arasında gerçekleşmiştir.",
+        "explanation": "Bedir’de müslümanların karşısındaki Kureyş ordusu Mekke’den gelmiştir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Savaşın tarafları",
-            "supports": "Bedir, Müslümanlarla Mekkeli müşrikler arasında gerçekleşmiştir.",
+            "locator": "71 ve 106. satırlar; Mekke’den gelen Kureyş ordusu",
+            "supports": "Bedir’de müslümanların karşısındaki Kureyş ordusu Mekke’den gelmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-019",
+        "reviewedCandidateSha256": "03abd0d40972068ba3d49790dd6693711f6b51852a182cda5518a0f87527db91",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek şehir/üç ülke yapısı dört şehirle eşitlendi.",
+        "optionReview": {
+          "o4": "Dönemin başka şehri.",
+          "o2": "Kureyş ordusunun çıkış yeri.",
+          "o1": "Dönemin başka şehri.",
+          "o3": "Dönemin başka şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "71 ve 106. satırlar; Mekke’den gelen Kureyş ordusu",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "8570fe27244a298fd9ce874e8070d9c1b7557c702588a485d4a4be8251f0c1e6"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1451,8 +1848,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-020",
+        "reviewedCandidateSha256": "75bb89a3172b7fe51cf503b0c45bf5c9ab4ab203f62a81849761c1bcd7313c53",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hicrî yıl; 3/625 kaynakta açık.",
+        "optionReview": {
+          "o1": "Bedir yılı.",
+          "o2": "Uhud yılı.",
+          "o3": "Hendek yılı.",
+          "o4": "Fetih yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "Dört hicrî yıl; 3/625 kaynakta açık.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "8570fe27244a298fd9ce874e8070d9c1b7557c702588a485d4a4be8251f0c1e6"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1499,44 +1920,70 @@
         ]
       },
       "after": {
-        "question": "Uhud Gazvesi adını hangi coğrafî unsurdan alır?",
+        "question": "3/625'te Medine yakınlarında Mekkeli müşriklerle yapılan gazve hangi dağın çevresinde gerçekleşmiştir?",
         "options": [
           {
             "id": "o1",
             "text": "Nur Dağı"
           },
           {
-            "id": "o2",
-            "text": "Uhud Dağı"
-          },
-          {
             "id": "o3",
-            "text": "Safa Tepesi"
+            "text": "Sevr Dağı"
           },
           {
             "id": "o4",
-            "text": "Sevr Dağı"
+            "text": "Arafat Dağı"
+          },
+          {
+            "id": "o2",
+            "text": "Uhud Dağı"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Uhud Dağı",
-        "explanation": "Uhud Gazvesi, Medine yakınındaki Uhud Dağı çevresinde gerçekleşmiştir.",
+        "explanation": "Hicretin üçüncü yılında, 625’te yapılan Uhud Gazvesi, Medine’nin kuzeyindeki Uhud dağı çevresinde gerçekleşmiştir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
-            "locator": "Savaşın yeri",
-            "supports": "Uhud Gazvesi, Medine yakınındaki Uhud Dağı çevresinde gerçekleşmiştir.",
+            "locator": "71 ve 102–115. satırlar; 3/625 ve Uhud dağı",
+            "supports": "Hicretin üçüncü yılında, 625’te yapılan Uhud Gazvesi, Medine’nin kuzeyindeki Uhud dağı çevresinde gerçekleşmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-021",
+        "reviewedCandidateSha256": "a90661e1167a6e0ff2223cece8396fb2deab8a8060fbe5b3b9550d511b396d3c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Uhud adı kökten kaldırıldı; adını sorarken cevabı tekrar etme ipucu giderildi.",
+        "optionReview": {
+          "o1": "İlk vahiy coğrafyası.",
+          "o3": "Hicret mağarası coğrafyası.",
+          "o4": "Hac coğrafyası.",
+          "o2": "Bu gazvenin dağı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "71 ve 102–115. satırlar; 3/625 ve Uhud dağı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "8570fe27244a298fd9ce874e8070d9c1b7557c702588a485d4a4be8251f0c1e6"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1619,8 +2066,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-022",
+        "reviewedCandidateSha256": "a987d917ce094785b793b6df24d6163bd8998fcbdb1571155a080d3c477d79ab",
+        "disposition": "retained",
+        "defects": [
+          "source-passage-pending"
+        ],
+        "reason": "Dört gerçek savaş adı; Hamza’nın şehitliğiyle eşleşme gerekir.",
+        "optionReview": {
+          "o1": "Önceki savaş.",
+          "o2": "Şehit olduğu savaş.",
+          "o3": "Sonraki savaş.",
+          "o4": "Sonraki savaş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "pending",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "Şehitler",
+          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1703,8 +2174,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "e150-history-023",
+        "reviewedCandidateSha256": "3270b4d58b9367776a4119695006750dc21b7bc611cb8d34275156237e9289a0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hicrî yıl; antlaşma 6/628. Rakamlar eş uzunlukta, doğru konumun ham B olması runtime sırası demek değil.",
+        "optionReview": {
+          "o1": "Daha önceki yıl.",
+          "o2": "Kaynak başlığındaki yıl.",
+          "o3": "Daha önceki yıl.",
+          "o4": "Fetih yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+          "locator": "Dört hicrî yıl; antlaşma 6/628. Rakamlar eş uzunlukta, doğru konumun ham B olması runtime sırası demek değil.",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "ee4a69384cfce068b572728f6766c4bd4bad01bbc4edee7339806c3f4e1b523d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
