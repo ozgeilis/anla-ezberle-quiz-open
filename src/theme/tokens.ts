@@ -63,6 +63,14 @@ export const gradients = {
   warm: [colors.cream, colors.paleGold],
   daily: [colors.dailyRed, colors.deepCoral, colors.dailyOrange],
 } as const;
+/** Shared game-card colors, originally approved for the profile statistics. */
+export const colorCardPalettes = {
+  green: ["#008069", "#007D6C", "#075D59"],
+  blue: ["#0874B8", "#086BAA", "#105B9B"],
+  gold: ["#FFE08A", "#F4BC4B", "#D59124"],
+  purple: ["#8055CD", "#7650D0", "#51349A"],
+  coral: ["#FFB281", "#FF9A70", "#F1815F"],
+} as const;
 export function useTheme() {
   const { profile } = useGameDisplay();
   const system = useColorScheme();

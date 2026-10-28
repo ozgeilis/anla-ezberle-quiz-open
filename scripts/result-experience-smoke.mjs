@@ -106,6 +106,22 @@ try {
           scroll: document.documentElement.scrollWidth,
         }));
         assert(size.scroll <= size.width + 1);
+        const scoreValue = page.getByTestId("result-score-value");
+        assert.equal(
+          await scoreValue.innerText(),
+          (right * 100).toLocaleString("tr-TR"),
+        );
+        assert(
+          await scoreValue.evaluate((e) => {
+            const style = getComputedStyle(e);
+            return (
+              parseFloat(style.lineHeight) >=
+                parseFloat(style.fontSize) * 1.3 &&
+              e.scrollHeight <= e.clientHeight + 1
+            );
+          }),
+          "Score has its own full-height text line, independent of the smaller label",
+        );
         await page.screenshot({
           path: join(root, `result-${tier}-${colorScheme}-${width}.png`),
         });
