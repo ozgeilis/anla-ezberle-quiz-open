@@ -3,9 +3,9 @@
   "start": 751,
   "end": 800,
   "total": 50,
-  "individuallyReviewed": 20,
-  "pendingReview": 30,
-  "sourceComparedThisRound": 20,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 13,
   "flaggedAfter": 3,
@@ -2324,8 +2324,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-nebe-10",
+        "reviewedCandidateSha256": "e797c77ecdd482e5d99786455337ae22f46a78a3991f1a60bfc4a00456fdbb73",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ev/aydınlatma imgesi. 78/10 geceyi örtü diye tanımlar; döşek yeryüzüyle karışabilir. Aynı anlamlı örtü/perde iki ayrı şık değil.",
+        "optionReview": {
+          "o2": "Gece imgesi.",
+          "o1": "78/6 ile karışabilir.",
+          "o3": "Başka imge.",
+          "o4": "Başka imge."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "78/10; PDF sayfa 628 (1 tabanlı), basılı sayfa 627",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2375,20 +2399,20 @@
         "question": "Abese sûresinin ilk âyetindeki 'abese' fiilinin anlamı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sevinçle gülümsemek"
-          },
-          {
             "id": "o2",
             "text": "Yüzünü ekşitmek"
           },
           {
+            "id": "o1",
+            "text": "Gözlerini yummak"
+          },
+          {
             "id": "o3",
-            "text": "Yolculuğa çıkmak"
+            "text": "Başını eğmek"
           },
           {
             "id": "o4",
-            "text": "Söz vermek"
+            "text": "Sevinçle gülmek"
           }
         ],
         "correctOptionId": "o2",
@@ -2396,20 +2420,46 @@
         "explanation": "Abese 80/1'de geçen fiil 'yüzünü ekşitti' anlamını taşır; sûrenin başlangıcı insanlara gösterilen özenle ilgilidir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=80",
-            "locator": "Abese 80/1",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "80/1; Kur’an Yolu Meal PDF pasajı",
             "supports": "Abese 80/1'de geçen fiil 'yüzünü ekşitti' anlamını taşır; sûrenin başlangıcı insanlara gösterilen özenle ilgilidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-abese-1",
+        "reviewedCandidateSha256": "5342a348372f665bb2fe2137b30d7e8d7cc3863e01302dfa046542bec28b627d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı eylem alanı yerine dört yüz/baş ifadesi. Ayetin diğer fiili başını çevirmek ikinci doğru olarak eklenmedi.",
+        "optionReview": {
+          "o2": "Abese fiilinin karşılığı.",
+          "o1": "Başka yüz hareketi.",
+          "o3": "Başka baş hareketi.",
+          "o4": "Karşıt yüz ifadesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "80/1; PDF sayfa 632 (1 tabanlı), basılı sayfa 631",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2456,44 +2506,70 @@
         ]
       },
       "after": {
-        "question": "Abese 80/24'te insandan neye bakıp düşünmesi istenir?",
+        "question": "Abese 80/24’te insanın bakıp düşünmesi istenen nimet hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Gittiği ülkeye"
-          },
-          {
-            "id": "o2",
-            "text": "Yediği yiyeceğe"
+            "text": "İçtiği su"
           },
           {
             "id": "o3",
-            "text": "Evinin şekline"
+            "text": "Giydiği elbise"
           },
           {
             "id": "o4",
-            "text": "Giysisinin rengine"
+            "text": "Kaldığı ev"
+          },
+          {
+            "id": "o2",
+            "text": "Yediği yiyecek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yediği yiyeceğe",
+        "correctAnswer": "Yediği yiyecek",
         "explanation": "Âyet insanı yediği yiyeceği düşünmeye çağırır; devamında su, toprak ve bitkilerin yetişmesi anlatılır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=24&mode=kuran-meal&sure=80",
-            "locator": "Abese 80/24",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "80/24; Kur’an Yolu Meal PDF pasajı",
             "supports": "Âyet insanı yediği yiyeceği düşünmeye çağırır; devamında su, toprak ve bitkilerin yetişmesi anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-abese-24",
+        "reviewedCandidateSha256": "2e9bb1399f773fb647fccceb35a0d343cf6a6609559199d263ad7c7e2a8089c7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ülke/şekil/renk yerine dört temel ihtiyaç nimeti. 24’te yiyecek, 25’te su ayrı anlatılır; kök bu ayete bağlıdır.",
+        "optionReview": {
+          "o1": "25’te anlatılan farklı nimet.",
+          "o3": "Başka temel ihtiyaç.",
+          "o4": "Başka temel ihtiyaç.",
+          "o2": "24’ün konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "80/24; PDF sayfa 633 (1 tabanlı), basılı sayfa 632",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2540,23 +2616,23 @@
         ]
       },
       "after": {
-        "question": "Abese 80/25'te hangi nimet indirildiği söylenir?",
+        "question": "Abese 80/25’in mealinde indirilen su hangi nitelemeyle anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Altın yağmuru"
+            "id": "o4",
+            "text": "Durgun su"
           },
           {
             "id": "o2",
             "text": "Bolca su"
           },
           {
-            "id": "o3",
-            "text": "Gümüş"
+            "id": "o1",
+            "text": "Tatlı su"
           },
           {
-            "id": "o4",
-            "text": "Tuz"
+            "id": "o3",
+            "text": "Soğuk su"
           }
         ],
         "correctOptionId": "o2",
@@ -2564,20 +2640,46 @@
         "explanation": "Âyet bolca su indirildiğini bildirir; izleyen âyetler toprağın yarılması ve çeşitli ürünlerin yetişmesini sıralar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=25&mode=kuran-meal&sure=80",
-            "locator": "Abese 80/25",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "80/25; Kur’an Yolu Meal PDF pasajı",
             "supports": "Âyet bolca su indirildiğini bildirir; izleyen âyetler toprağın yarılması ve çeşitli ürünlerin yetişmesini sıralar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-abese-25",
+        "reviewedCandidateSha256": "8169967d598d5806bd44f0d2b2acea84a587c901ab1931c18dc324be4f4197a6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Altın/gümüş/tuz gibi gökten yağması makul olmayan üç nesne yerine dört su niteliği. Soru meale bağlı açık niteleme sorusudur.",
+        "optionReview": {
+          "o4": "Başka su niteliği.",
+          "o2": "Mealdeki miktar niteliği.",
+          "o1": "Başka su niteliği.",
+          "o3": "Başka su niteliği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "80/25; PDF sayfa 633 (1 tabanlı), basılı sayfa 632",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2627,20 +2729,20 @@
         "question": "Abese 80/29'da hangi iki ağaç birlikte anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Çam ve ladin"
-          },
-          {
             "id": "o2",
             "text": "Zeytin ve hurma"
           },
           {
+            "id": "o1",
+            "text": "İncir ve nar"
+          },
+          {
             "id": "o3",
-            "text": "Söğüt ve kavak"
+            "text": "Elma ve armut"
           },
           {
             "id": "o4",
-            "text": "Meşe ve kestane"
+            "text": "Badem ve ceviz"
           }
         ],
         "correctOptionId": "o2",
@@ -2648,20 +2750,46 @@
         "explanation": "Âyet, insanın faydalandığı nimetler arasında zeytin ve hurma ağaçlarını özellikle sayar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Abese sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=kuran-meal&sure=80",
-            "locator": "Abese 80/29",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "80/29; Kur’an Yolu Meal PDF pasajı",
             "supports": "Âyet, insanın faydalandığı nimetler arasında zeytin ve hurma ağaçlarını özellikle sayar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-abese-29",
+        "reviewedCandidateSha256": "a4df4d1feaf83b90aae12fbd94cd019e2054dd78316298c87e8d711418edc513",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç orman ağacı çiftine karşı tek nimet/meyve çifti yerine dört yenilebilir ürün veren ağaç çifti. Üzüm asması ağaçmış gibi sunulmadı.",
+        "optionReview": {
+          "o2": "29’da birlikte anılan ağaçlar.",
+          "o1": "Başka meyve ağaçları.",
+          "o3": "Başka meyve ağaçları.",
+          "o4": "Başka yemiş ağaçları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "80/29; PDF sayfa 633 (1 tabanlı), basılı sayfa 632",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2744,8 +2872,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-mutaffifin-1",
+        "reviewedCandidateSha256": "2cd59eec377ff327a7e417f82ee56df1428cc248dda647a5e206b99291bec8f0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumsuz ahlâk davranışı. 83/1’in doğrudan ölçü/tartı konusu; diğerleri de kötü olsa da bu ayetin fiili değil.",
+        "optionReview": {
+          "o3": "Başka hak ihlâli.",
+          "o4": "Başka hak ihlâli.",
+          "o2": "83/1’in fiili.",
+          "o1": "Başka kötü davranış."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "83/1; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2800,15 +2952,15 @@
           },
           {
             "id": "o1",
-            "text": "Borcu zamanında ödemeyip vadeyi uzatmak"
+            "text": "Alırken kusur arayıp satarken kusuru gizlemek"
           },
           {
             "id": "o3",
-            "text": "Aynı mala farklı pazarlarda fiyat biçmek"
+            "text": "Kendi borcunu geciktirip alacağını hemen istemek"
           },
           {
             "id": "o4",
-            "text": "Kazancı arttıkça yardımı azaltmak"
+            "text": "Kendi malını överken başkasınınkini kötülemek"
           }
         ],
         "correctOptionId": "o2",
@@ -2819,17 +2971,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 83/2; PDF sayfa 636 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Alırken tam ölçü isteyip verirken eksiltmek (doğrudan kaynak alıntısı değildir).",
+            "locator": "83/2; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Âyetler, kendi alacağını tam alıp başkasına verirken ölçüyü eksilten kişinin adaletsiz davranışını örnek verir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-mutaffifin-2",
+        "reviewedCandidateSha256": "be56fad45987e7cfd2e5df4177c4dc84c4d40c430decb7f385caa36489a5a6ce",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Diğer pazarda başka fiyat belirlemek gibi meşru olabilecek işlemler yerine dört gerçek çifte standart/hile davranışı. 2–3’ün belirli örneği ölçme farkıdır.",
+        "optionReview": {
+          "o2": "2–3’teki açık hile.",
+          "o1": "Başka alışveriş hilesi.",
+          "o3": "Başka ödeme çifte standardı.",
+          "o4": "Başka ticaret çifte standardı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "83/2; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2876,37 +3054,37 @@
         ]
       },
       "after": {
-        "question": "Mutaffifîn 83/4-6'da ölçüde hile yapanlara ne hatırlatılır?",
+        "question": "Mutaffifîn 83/4–6’daki büyük gün hangi olayla açıkça tasvir edilir?",
         "options": [
           {
             "id": "o4",
-            "text": "Bayram sevincinin paylaşılacağı gün"
+            "text": "Cennetliklerin selâmla karşılanması"
           },
           {
             "id": "o2",
-            "text": "Allah'ın huzuruna çıkılacak gün"
+            "text": "İnsanların Rablerinin huzurunda durması"
           },
           {
             "id": "o1",
-            "text": "Cuma namazı için toplanılacak gün"
+            "text": "İyilerin amel defterini sağdan alması"
           },
           {
             "id": "o3",
-            "text": "Arefe vakfesinde beklenilecek gün"
+            "text": "Cehennemin kapılarının açılması"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Allah'ın huzuruna çıkılacak gün",
+        "correctAnswer": "İnsanların Rablerinin huzurunda durması",
         "explanation": "Âyetler, insanların âlemlerin Rabbi huzurunda duracağı büyük günü hatırlatarak ticarette dürüstlüğü vurgular.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 83/4; PDF sayfa 636 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Allah'ın huzuruna çıkılacak gün (doğrudan kaynak alıntısı değildir).",
+            "locator": "83/4; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Âyetler, insanların âlemlerin Rabbi huzurunda duracağı büyük günü hatırlatarak ticarette dürüstlüğü vurgular.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -2917,8 +3095,34 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-mutaffifin-4",
+        "reviewedCandidateSha256": "d9964b422cb94177892062c159018fbe469763312949d36289c571c4bb64b24f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç bayram/ibadet gününe karşı tek âhiret günü yerine dört âhiret sahnesi. Büyük günün bütün olayları değil ayetin açık tasviri sorulur.",
+        "optionReview": {
+          "o4": "Başka âhiret sahnesi.",
+          "o2": "4–6’nın açık sahnesi.",
+          "o1": "Başka âhiret sahnesi.",
+          "o3": "Başka âhiret sahnesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "83/4; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3001,8 +3205,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q43-mutaffifin-9",
+        "reviewedCandidateSha256": "df90194bc82cfc284e2c15916ca3dc0720db3aa4c07f8227db039562c12cf2aa",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kayıt niteliği eş dilde. 83/9 kaydedilmiş defter; siccînin yer/defter mahiyeti tartışması önceki v73 kökünde bilinçli ayrılmış ve yeniden kontrol edildi.",
+        "optionReview": {
+          "o4": "Farklı kayıt niteliği.",
+          "o2": "83/9’un kaydı.",
+          "o1": "Farklı kayıt niteliği.",
+          "o3": "Farklı kayıt niteliği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "83/9; PDF sayfa 637 (1 tabanlı), basılı sayfa 636",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3090,8 +3318,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-leyl-5",
+        "reviewedCandidateSha256": "6fce9b0a9f4aee53bc9299a52e69f29f606276bdd9bf7b843efcddd81b65d3d6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu emir çifti. 92/5 vermek/sakınmak; 42/40 af/uzlaşma, 2/153 sabır/namaz, 2/152 anma/şükürle kaynak ayrımı.",
+        "optionReview": {
+          "o4": "Başka ayetin çifti.",
+          "o2": "92/5’in çifti.",
+          "o1": "Başka ayetin çifti.",
+          "o3": "Başka ayetin çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "92/5; PDF sayfa 647 (1 tabanlı), basılı sayfa 646",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3179,8 +3431,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-leyl-8",
+        "reviewedCandidateSha256": "d284aec56c65cf6c93af9f45f32781785879fe911fc4a337fd543378cd7a3e80",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumsuz davranış çifti. Cimrilik/kendini ihtiyaçsız görme 92/8’de, diğerleri başka ayetlerdedir. Ahlâk tonu tek doğruyu söylemez.",
+        "optionReview": {
+          "o4": "Başka olumsuz çift.",
+          "o2": "92/8’in çifti.",
+          "o1": "Başka olumsuz çift.",
+          "o3": "Başka olumsuz çift."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "92/8; PDF sayfa 647 (1 tabanlı), basılı sayfa 646",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3263,8 +3539,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-leyl-11",
+        "reviewedCandidateSha256": "974a928f55a9625820e529c263a63d6d1fa08fd78a3d979f18021377c27786f7",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört dünyevî dayanak. 92/11’de mal açıkça var; güç/yakın/makamın âhirette yararlı olduğu iddia edilmiyor, ayetin adı soruluyor.",
+        "optionReview": {
+          "o4": "Başka dayanak.",
+          "o2": "92/11’in açık adı.",
+          "o1": "Başka dayanak.",
+          "o3": "Başka dayanak."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "92/11; PDF sayfa 647 (1 tabanlı), basılı sayfa 646",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3311,11 +3611,11 @@
         ]
       },
       "after": {
-        "question": "Leyl 92/12'de Allah'ın kendisine ait olduğunu bildirdiği görev hangisidir?",
+        "question": "Leyl 92/12'ye göre doğru yolu göstermek kime aittir?",
         "options": [
           {
             "id": "o4",
-            "text": "Sûra üflemek"
+            "text": "Ölüleri diriltmek"
           },
           {
             "id": "o2",
@@ -3323,11 +3623,11 @@
           },
           {
             "id": "o1",
-            "text": "Amelleri yazmak"
+            "text": "Dilediğine rızık vermek"
           },
           {
             "id": "o3",
-            "text": "Vahyi ulaştırmak"
+            "text": "Her varlığı yaratmak"
           }
         ],
         "correctOptionId": "o2",
@@ -3338,17 +3638,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 92/12; PDF sayfa 647 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Doğru yolu göstermek (doğrudan kaynak alıntısı değildir).",
+            "locator": "92/12; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Leyl 92/12, doğru yolun gösterilmesini Allah'a nispet eder; insanın yönelişi ve sorumluluğu sonraki âyetlerle bağlantılıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-leyl-12",
+        "reviewedCandidateSha256": "af490b8dafca2b92fbd44954563e17c3ba172e9c03c5ed071fb88239fe1ffce1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç melek görevine karşı tek ilâhî eylem ipucu kaldırıldı. Dört eylem de Allah’a nispet edilebilir; 92/12’nin açık hedefi soruluyor.",
+        "optionReview": {
+          "o4": "Başka ilâhî eylem.",
+          "o2": "92/12’nin eylemi.",
+          "o1": "Başka ilâhî eylem.",
+          "o3": "Başka ilâhî eylem."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "92/12; PDF sayfa 647 (1 tabanlı), basılı sayfa 646",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3399,15 +3725,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "Şifa bulmak"
+            "text": "Şükretmek"
           },
           {
             "id": "o3",
-            "text": "Yolculuk etmek"
+            "text": "Barıştırmak"
           },
           {
             "id": "o4",
-            "text": "Borçlanmak"
+            "text": "Dayanışmak"
           },
           {
             "id": "o2",
@@ -3422,17 +3748,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 92/18; PDF sayfa 648 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Arınmak (doğrudan kaynak alıntısı değildir).",
+            "locator": "92/18; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Leyl 92/17-18, takvâ sahibinin malını Allah yolunda vererek arınmayı amaçladığını ve bu sebeple ateşten uzak tutulacağını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-leyl-18",
+        "reviewedCandidateSha256": "456ca4d1c0f62a455b3757bb0611bb00a84e1581c86eda9aecfa3b0548ed3846",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Borçlanmak/yolculuk gibi başka türden amaçlar yerine dört olumlu sosyal/mânevî amaç. 17–18’de mal verme ve arınma açıkça bağlanır.",
+        "optionReview": {
+          "o1": "Başka olumlu amaç.",
+          "o3": "Başka olumlu amaç.",
+          "o4": "Başka olumlu amaç.",
+          "o2": "17–18’in açık amacı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "92/18; PDF sayfa 648 (1 tabanlı), basılı sayfa 647",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3479,15 +3831,15 @@
         ]
       },
       "after": {
-        "question": "Leyl 92/19-20'ye göre iyilik yapan kişinin öncelikli amacı nedir?",
+        "question": "Leyl 92/20’de iyilik yapanın doğrudan belirtilen amacı nedir?",
         "options": [
           {
             "id": "o3",
-            "text": "Bir anlaşmayı yerine getirmek"
+            "text": "Toplumun dirliğini korumak"
           },
           {
             "id": "o4",
-            "text": "Kendisine yapılan yardımı iade etmek"
+            "text": "Akrabalık bağını güçlendirmek"
           },
           {
             "id": "o2",
@@ -3495,7 +3847,7 @@
           },
           {
             "id": "o1",
-            "text": "Yaptığı bir iyiliğin karşılığını almak"
+            "text": "İhtiyaç sahibini sevindirmek"
           }
         ],
         "correctOptionId": "o2",
@@ -3506,17 +3858,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 92/20; PDF sayfa 648 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Rabbinin rızasını istemek (doğrudan kaynak alıntısı değildir).",
+            "locator": "92/20; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Leyl 92/19-20, gerçek iyiliğin insanlardan karşılık almak için değil, yüce Rabbin rızasını kazanmak için yapılması gerektiğini vurgular.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-leyl-20",
+        "reviewedCandidateSha256": "61a619419acb88c034722cc9311420df87959d25f4051baa0508ee759a6e070e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç kişisel karşılık hesabına karşı tek dinî amaç yerine dört olumlu iyilik amacı. Soru bütün hayır amaçlarını değil 20. ayetin açık amacını sorar.",
+        "optionReview": {
+          "o3": "Başka olumlu hayır amacı.",
+          "o4": "Başka olumlu hayır amacı.",
+          "o2": "20’deki açık amaç.",
+          "o1": "Başka olumlu hayır amacı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "92/20; PDF sayfa 648 (1 tabanlı), basılı sayfa 647",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3566,20 +3944,20 @@
         "question": "Duhâ 93/3'te Hz. Peygamber'e hangi güvence verilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Peygamberliğinin sona erdiği"
-          },
-          {
             "id": "o2",
             "text": "Rabbinin onu bırakmadığı ve darılmadığı"
           },
           {
+            "id": "o1",
+            "text": "İşinin gelecekte kolaylaştırılacağı"
+          },
+          {
             "id": "o3",
-            "text": "Kimsenin onu dinlemeyeceği"
+            "text": "Yükünün omzundan kaldırıldığı"
           },
           {
             "id": "o4",
-            "text": "Her şeyin hemen biteceği"
+            "text": "Şanının insanlar içinde yüceltildiği"
           }
         ],
         "correctOptionId": "o2",
@@ -3587,20 +3965,46 @@
         "explanation": "Duhâ 93/3, Hz. Peygamber'in terk edilmediğini ve Rabb'inin ona darılmadığını bildirir; bu ifade bir teselli ve güvence niteliğindedir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=93",
-            "locator": "Duhâ 93/3",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "93/3; Kur’an Yolu Meal PDF pasajı",
             "supports": "Duhâ 93/3, Hz. Peygamber'in terk edilmediğini ve Rabb'inin ona darılmadığını bildirir; bu ifade bir teselli ve güvence niteliğindedir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-duha-3",
+        "reviewedCandidateSha256": "f5b5d9a2026126b381c9738606c623d5c42e5b3acc935081b646a9057523032c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç karamsar/son verme ifadesine karşı tek güvence yerine dört olumlu ilâhî destek anlatımı; 93/3 ile İnşirâh’ın yakın temaları ayrılır.",
+        "optionReview": {
+          "o2": "93/3’ün güvencesi.",
+          "o1": "Başka destek anlatımı.",
+          "o3": "94/2–3 ile karışabilir.",
+          "o4": "94/4 ile karışabilir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "93/3; PDF sayfa 648 (1 tabanlı), basılı sayfa 647",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3650,20 +4054,20 @@
         "question": "Duhâ 93/6'da Hz. Peygamber'in hangi hâlde bulunup barındırıldığı hatırlatılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hükümdar olarak"
-          },
-          {
             "id": "o2",
             "text": "Yetim olarak"
           },
           {
+            "id": "o1",
+            "text": "Yoksul olarak"
+          },
+          {
             "id": "o3",
-            "text": "Yolcu komutan olarak"
+            "text": "Yolcu olarak"
           },
           {
             "id": "o4",
-            "text": "Denizci olarak"
+            "text": "Esir olarak"
           }
         ],
         "correctOptionId": "o2",
@@ -3671,20 +4075,59 @@
         "explanation": "Duhâ 93/6'da Hz. Peygamber'in yetim oluşu ve Allah'ın kendisine barınma imkânı sağlaması hatırlatılır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Duhâ sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=6&mode=kuran-meal&sure=93",
-            "locator": "Duhâ 93/6",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "93/6; Kur’an Yolu Meal PDF pasajı",
             "supports": "Duhâ 93/6'da Hz. Peygamber'in yetim oluşu ve Allah'ın kendisine barınma imkânı sağlaması hatırlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-duha-6",
+        "reviewedCandidateSha256": "248d5fc89bfa143daa111323b28bdf7788608d6cd858d2c6732a2c04eba41d09",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hükümdar/denizci/komutan gibi konudan uzak roller yerine dört destek ihtiyacı durumu. Yetim ve yoksul 6 ile 8’de ayrı nimet bağlamlarıdır.",
+        "optionReview": {
+          "o2": "6. ayetteki hâl.",
+          "o1": "8. ayetle karışabilir.",
+          "o3": "Başka ihtiyaç hâli.",
+          "o4": "Başka ihtiyaç hâli."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "93/6; PDF sayfa 648 (1 tabanlı), basılı sayfa 647",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3731,7 +4174,7 @@
         ]
       },
       "after": {
-        "question": "Duhâ 93/9'da yetimlere karşı hangi davranış yasaklanır?",
+        "question": "Duhâ 93/9’un Diyanet mealinde yetimle ilgili yasak hangi fiille ifade edilir?",
         "options": [
           {
             "id": "o2",
@@ -3739,15 +4182,15 @@
           },
           {
             "id": "o1",
-            "text": "Yardımı başa kakmak"
+            "text": "Yetimi aldatmak"
           },
           {
             "id": "o3",
-            "text": "Yetime yalan söylemek"
+            "text": "Yetimi küçümsemek"
           },
           {
             "id": "o4",
-            "text": "Yetim hakkında kötü lakap kullanmak"
+            "text": "Yetimi dışlamak"
           }
         ],
         "correctOptionId": "o2",
@@ -3758,17 +4201,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 93/9; PDF sayfa 649 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Yetimi ezmek (doğrudan kaynak alıntısı değildir).",
+            "locator": "93/9; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Duhâ 93/9, yetimin ezilmemesini öğütler. Yetimlerin haklarını ve onurunu koruma, sûrenin toplumsal mesajlarından biridir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-duha-9",
+        "reviewedCandidateSha256": "ee0c87d6a55b9fd139d9953ba55a4c4732d18fc9a84ab19201302e09f5500045",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ezmek geniş anlamıyla diğer zararları da kapsayabilir. Yeni kök doğrudan mealde kullanılan fiile bağlı; dört şık aynı nesne+fiil yapısında ve olumsuz ahlâk tonunda.",
+        "optionReview": {
+          "o2": "Kur’an Yolu mealinin fiili.",
+          "o1": "Ezme kapsamına girebilir ama ayetteki fiil değil.",
+          "o3": "Ezme kapsamına girebilir ama ayetteki fiil değil.",
+          "o4": "Ezme kapsamına girebilir ama ayetteki fiil değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Güçlendirilen şıklarda birden fazla genel doğru oluşmaması için kök açık meal fiiline, belirli nitelik çiftine, ilk kitap kısmına veya başmüzakereci rolüne bağlandı. Diğer bağlamdaki bilgiler yanlış ilan edilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "93/9; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3851,8 +4320,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-duha-10",
+        "reviewedCandidateSha256": "07c2f77cf78d93e2d5666c17da79a111fb75f1268a54d136dd2361cb72d257f3",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumsuz yardım davranışı. Kur’an Yolu 93/10 el açıp isteyeni boş çevirme ifadesini kullanır. Açıklamanın başka meallerdeki azarlama yerine bu kaynağa bağlı olduğu korunuyor.",
+        "optionReview": {
+          "o2": "Mealdeki belirli ifade.",
+          "o1": "Başka ayetin eleştirisi.",
+          "o3": "Başka kötü davranış.",
+          "o4": "Başka kötü davranış."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "93/10; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3899,37 +4392,37 @@
         ]
       },
       "after": {
-        "question": "Duhâ 93/11'de verilen nimetlere karşı nasıl bir tutum istenir?",
+        "question": "Duhâ 93/11’de nimetle ilgili hangi davranış açıkça istenir?",
         "options": [
           {
             "id": "o3",
-            "text": "Nimeti yazıyla kaydetmek"
+            "text": "Nimeti muhtaçlara ulaştırmak"
           },
           {
             "id": "o4",
-            "text": "Nimeti başkasıyla takas etmek"
+            "text": "Nimeti güzel işlerde kullanmak"
           },
           {
             "id": "o2",
-            "text": "Nimeti anıp dile getirmek"
+            "text": "Nimeti şükranla anmak"
           },
           {
             "id": "o1",
-            "text": "Nimetin bir kısmını borç vermek"
+            "text": "Nimeti yakınlarla paylaşmak"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Nimeti anıp dile getirmek",
+        "correctAnswer": "Nimeti şükranla anmak",
         "explanation": "Duhâ 93/11, Rabbinin lütuflarını şükranla anmayı emreder; böylece sûrenin teselli ve sorumluluk mesajı tamamlanır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 93/11; PDF sayfa 649 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Nimeti anıp dile getirmek (doğrudan kaynak alıntısı değildir).",
+            "locator": "93/11; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Duhâ 93/11, Rabbinin lütuflarını şükranla anmayı emreder; böylece sûrenin teselli ve sorumluluk mesajı tamamlanır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -3940,8 +4433,34 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-duha-11",
+        "reviewedCandidateSha256": "4decafc9ea05cfee8de30f1666b24bef4468f144754399cf882e08c1e2dc1fc8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Takas/borç/kayıt gibi farklı işlemler yerine dört olumlu nimet değerlendirme yolu. Ayetin şükranla anma ifadesiyle sınırlı soru.",
+        "optionReview": {
+          "o3": "Başka olumlu değerlendirme yolu.",
+          "o4": "Başka olumlu değerlendirme yolu.",
+          "o2": "93/11’in açık emri.",
+          "o1": "Başka olumlu değerlendirme yolu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "93/11; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3991,20 +4510,20 @@
         "question": "İnşirâh 94/1'de Hz. Peygamber'e verilen hangi manevî ferahlık hatırlatılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Denizlerin yarılması"
+            "id": "o4",
+            "text": "Yükünün kaldırılması"
           },
           {
             "id": "o2",
             "text": "Göğsünün genişletilmesi"
           },
           {
-            "id": "o3",
-            "text": "Yüksek dağların kaldırılması"
+            "id": "o1",
+            "text": "Şanının yüceltilmesi"
           },
           {
-            "id": "o4",
-            "text": "Zamanda yolculuk etmesi"
+            "id": "o3",
+            "text": "Güçlükle kolaylığın verilmesi"
           }
         ],
         "correctOptionId": "o2",
@@ -4012,20 +4531,46 @@
         "explanation": "İnşirâh 94/1, Resûlullah'ın gönlünün genişletilmesini hatırlatarak peygamberlik görevinde kendisine verilen mânevî desteği anlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=94",
-            "locator": "İnşirâh 94/1",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "94/1; Kur’an Yolu Meal PDF pasajı",
             "supports": "İnşirâh 94/1, Resûlullah'ın gönlünün genişletilmesini hatırlatarak peygamberlik görevinde kendisine verilen mânevî desteği anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-insirah-1",
+        "reviewedCandidateSha256": "d092b2318a231a7eed4e0e2bb12ef24dd2a9ab5ed3bf0b3597004986baccbfc5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Zamanda yolculuk/dağların kaldırılması gibi tuhaf olaylar yerine aynı sûredeki dört ilâhî lütuf. 1. ayetin göğsün açılması mecazı hedefleniyor.",
+        "optionReview": {
+          "o4": "2–3. ayetin lütfu.",
+          "o2": "1. ayetin lütfu.",
+          "o1": "4. ayetin lütfu.",
+          "o3": "5–6. ayetin lütfu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "94/1; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4075,20 +4620,20 @@
         "question": "İnşirâh 94/4'te Resûlullah'a yönelik hangi lütuf hatırlatılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bir hazine bulması"
-          },
-          {
             "id": "o2",
             "text": "Şanının ve ününün yüceltilmesi"
           },
           {
+            "id": "o1",
+            "text": "Göğsünün açılıp genişletilmesi"
+          },
+          {
             "id": "o3",
-            "text": "Bir gemi yapılması"
+            "text": "Belini büken yükünün kaldırılması"
           },
           {
             "id": "o4",
-            "text": "Bir şehrin kurulması"
+            "text": "Güçlükle birlikte kolaylık verilmesi"
           }
         ],
         "correctOptionId": "o2",
@@ -4096,13 +4641,13 @@
         "explanation": "İnşirâh 94/4, Hz. Peygamber'in şanının yükseltildiğini hatırlatır; tefsirde bu, isminin ve tebliğ ettiği mesajın yüceltilmesiyle ilişkilendirilir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=kuran-meal&sure=94",
-            "locator": "İnşirâh 94/4",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "94/4; Kur’an Yolu Meal PDF pasajı",
             "supports": "İnşirâh 94/4, Hz. Peygamber'in şanının yükseltildiğini hatırlatır; tefsirde bu, isminin ve tebliğ ettiği mesajın yüceltilmesiyle ilişkilendirilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
@@ -4112,14 +4657,35 @@
           "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "correct-prefix-outlier",
-          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-insirah-4",
+        "reviewedCandidateSha256": "d88c9c26e1b179018a67f5c774f4837afb1d2667991f121bd967a277539445ba",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hazine/gemi/şehir yerine aynı sûrenin dört lütfu benzer uzunlukta. 4. ayetin özel ifadesi soruluyor.",
+        "optionReview": {
+          "o2": "4. ayetin lütfu.",
+          "o1": "1. ayetin lütfu.",
+          "o3": "2–3. ayetin lütfu.",
+          "o4": "5–6. ayetin lütfu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "94/4; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4212,8 +4778,32 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-insirah-5",
+        "reviewedCandidateSha256": "3ff7a089a27834260b24def48da26c690045b6f658ab4b271bf1f1b74822f186",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört doğru Kur’an bildirimi; 94/5–6’daki tekrar kolaylık haberidir. Ölüm/karşılık/kalp huzuru doğru olsa da bu ayetlerin müjdesi değil.",
+        "optionReview": {
+          "o4": "Başka ayetin bildirimi.",
+          "o2": "94/5–6’nın müjdesi.",
+          "o1": "Başka ayetin bildirimi.",
+          "o3": "Başka ayetin bildirimi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "94/5; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4296,8 +4886,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-insirah-7",
+        "reviewedCandidateSha256": "141bdd24215a55d9733ddb6bfd77e41d13b3cb9724c4a2c5e7364a5355d1c2db",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört makul iş davranışı aynı mastar yapısında. 94/7 iş bitince yeni gayret çağrısı; başka iş yönetimi yolları dinen yanlış sayılmıyor.",
+        "optionReview": {
+          "o3": "Başka iş davranışı.",
+          "o4": "Başka iş davranışı.",
+          "o2": "94/7’nin çağrısı.",
+          "o1": "Başka iş davranışı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "94/7; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4348,19 +4962,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Yalnız servete"
+            "text": "Yakınlarına"
+          },
+          {
+            "id": "o3",
+            "text": "Dostlarına"
+          },
+          {
+            "id": "o4",
+            "text": "Önderlerine"
           },
           {
             "id": "o2",
             "text": "Rabbine"
-          },
-          {
-            "id": "o3",
-            "text": "Şöhrete"
-          },
-          {
-            "id": "o4",
-            "text": "İnsanların övgüsüne"
           }
         ],
         "correctOptionId": "o2",
@@ -4368,20 +4982,46 @@
         "explanation": "İnşirâh 94/8, insanın Rabbine yönelmesini ve isteğini O'na arz etmesini öğütleyerek sûrenin ana mesajını tamamlar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — İnşirâh sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=8&mode=kuran-meal&sure=94",
-            "locator": "İnşirâh 94/8",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "94/8; Kur’an Yolu Meal PDF pasajı",
             "supports": "İnşirâh 94/8, insanın Rabbine yönelmesini ve isteğini O'na arz etmesini öğütleyerek sûrenin ana mesajını tamamlar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-insirah-8",
+        "reviewedCandidateSha256": "909fea91f24150eaf35ec586e4da71e3ad59c5a46d303d237cb0b267807dc364",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Servet/şöhret/övgü gibi üç açık dünyevî hedef yerine yardım için yönelinebilecek dört muhatap. Ayetin Rabbine yönel emri belirleyici; akraba veya dostla ilişki kurmak yanlış sayılmıyor.",
+        "optionReview": {
+          "o1": "Başka yardım muhatabı.",
+          "o3": "Başka yardım muhatabı.",
+          "o4": "Başka yardım muhatabı.",
+          "o2": "94/8’in muhatabı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "94/8; PDF sayfa 649 (1 tabanlı), basılı sayfa 648",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4431,20 +5071,20 @@
         "question": "Tîn 95/2'de üzerine yemin edilen dağ hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ağrı Dağı"
-          },
-          {
             "id": "o2",
             "text": "Sînâ Dağı"
           },
           {
+            "id": "o1",
+            "text": "Cûdî Dağı"
+          },
+          {
             "id": "o3",
-            "text": "Erciyes Dağı"
+            "text": "Uhud Dağı"
           },
           {
             "id": "o4",
-            "text": "Uludağ"
+            "text": "Nûr Dağı"
           }
         ],
         "correctOptionId": "o2",
@@ -4452,20 +5092,46 @@
         "explanation": "Tîn 95/2'de Sînâ Dağı üzerine yemin edilir. Âyet, sûrenin başındaki yaratılış ve ilâhî nimetleri hatırlatan ifadelerdendir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=2&mode=kuran-meal&sure=95",
-            "locator": "Tîn 95/2",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "95/2; Kur’an Yolu Meal PDF pasajı",
             "supports": "Tîn 95/2'de Sînâ Dağı üzerine yemin edilir. Âyet, sûrenin başındaki yaratılış ve ilâhî nimetleri hatırlatan ifadelerdendir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-tin-2",
+        "reviewedCandidateSha256": "f209ac7eb8a824cc56b1051bee79e81823567c3313bbfb320987b56f4595c947",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç Türkiye dağına karşı tek vahiy coğrafyası dağı yerine dört dinî kıssa/siyer mekânı. Tîn 95/2’deki dağın adı gerekir.",
+        "optionReview": {
+          "o2": "95/2’nin dağı.",
+          "o1": "Nûh kıssasıyla karışabilir.",
+          "o3": "Siyer mekânı.",
+          "o4": "Hira ile ilişkili mekân."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "95/2; PDF sayfa 650 (1 tabanlı), basılı sayfa 649",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4515,41 +5181,67 @@
         "question": "Tîn 95/3'te 'güvenli belde' ifadesiyle hangi şehir anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Medine"
+            "id": "o4",
+            "text": "Şam"
           },
           {
             "id": "o2",
             "text": "Mekke"
           },
           {
-            "id": "o3",
-            "text": "Kûfe"
+            "id": "o1",
+            "text": "Medine"
           },
           {
-            "id": "o4",
-            "text": "Şam"
+            "id": "o3",
+            "text": "Kûfe"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Mekke",
-        "explanation": "Tîn 95/3'te güvenli şehir üzerine yemin edilir; Diyanet tefsirinde bu ifadenin Mekke'yi anlattığı açıklanır.",
+        "explanation": "Tîn 95/3 güvenli belde üzerine yemini içerir. TDV Tîn Sûresi maddesi bu beldeyi Mekke-i Mükerreme olarak açıklar. Sorunun şehir anahtarı bu açıklamaya dayanır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Platformu — Tîn sûresi Kur'an Yolu meali",
-            "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=95",
-            "locator": "Tîn 95/3",
-            "supports": "Tîn 95/3'te güvenli şehir üzerine yemin edilir; Diyanet tefsirinde bu ifadenin Mekke'yi anlattığı açıklanır.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/tin-suresi",
+            "locator": "98–99. satırlar",
+            "supports": "Tîn 95/3 güvenli belde üzerine yemini içerir. TDV Tîn Sûresi maddesi bu beldeyi Mekke-i Mükerreme olarak açıklar. Sorunun şehir anahtarı bu açıklamaya dayanır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-tin-3",
+        "reviewedCandidateSha256": "90500f7a94491cd27bab0226adf7798f4fb122198bac2f14c4a23019c5fab72a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Meal ayeti tek başına beldenin adını vermiyor. TDV’nin açık Mekke-i Mükerreme açıklaması okundu ve açıklamanın kaynak atfı onunla eşleştirildi.",
+        "optionReview": {
+          "o4": "Başka şehir.",
+          "o2": "TDV’nin beled-i emîn açıklaması.",
+          "o1": "Başka şehir.",
+          "o3": "Başka şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tin-suresi",
+          "locator": "98–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "05ebe49a0a88fcded18bf0d2f6af0338a11d80dda2e9c8f2e3f8ad925be0d122"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4596,44 +5288,70 @@
         ]
       },
       "after": {
-        "question": "Tîn 95/6'da kimlere kesintisiz mükâfat olduğu bildirilir?",
+        "question": "Tîn 95/6’da kesintisiz ödül kazananlar hangi iki özellikle birlikte anılır?",
         "options": [
           {
             "id": "o3",
-            "text": "Namazında devamlı olanlara"
+            "text": "Öfkesini yenmek ve insanları bağışlamak"
           },
           {
             "id": "o4",
-            "text": "Öfkesini yenip insanları bağışlayanlara"
+            "text": "Malını vermek ve arınmaya çalışmak"
           },
           {
             "id": "o2",
-            "text": "İman edip iyi işler yapanlara"
+            "text": "İman etmek ve iyi işler yapmak"
           },
           {
             "id": "o1",
-            "text": "Mal verip temizlenmeye çalışanlara"
+            "text": "Namaza devam etmek ve zekât vermek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İman edip iyi işler yapanlara",
+        "correctAnswer": "İman etmek ve iyi işler yapmak",
         "explanation": "Tîn 95/6'da iman edip salih ameller işleyenler için kesintisiz bir karşılık bulunduğu bildirilir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 95/6; PDF sayfa 650 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: İman edip iyi işler yapanlara (doğrudan kaynak alıntısı değildir).",
+            "locator": "95/6; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Tîn 95/6'da iman edip salih ameller işleyenler için kesintisiz bir karşılık bulunduğu bildirilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q44-tin-6",
+        "reviewedCandidateSha256": "03692ffcf5e9fe704c777e5fb00a779bb5ed367e65ab558243a57718f8ac8ada",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İyi davranışların bütün sahiplerine ilişkin geniş kök ayetin açık iki niteliğine bağlandı. Dört olumlu nitelik çifti; diğer iyi işleri dışlayan bir hüküm değil.",
+        "optionReview": {
+          "o3": "Başka ayetin olumlu çifti.",
+          "o4": "Leyl bağlamındaki olumlu çift.",
+          "o2": "95/6’nın açık çifti.",
+          "o1": "Başka ayetlerin olumlu çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Güçlendirilen şıklarda birden fazla genel doğru oluşmaması için kök açık meal fiiline, belirli nitelik çiftine, ilk kitap kısmına veya başmüzakereci rolüne bağlandı. Diğer bağlamdaki bilgiler yanlış ilan edilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "95/6; PDF sayfa 650 (1 tabanlı), basılı sayfa 649",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4683,41 +5401,67 @@
         "question": "İbn Haldûn'un Mukaddime adlı eseri hangi büyük eserin girişidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "el-Kānûn fi't-Tıb"
+            "id": "o4",
+            "text": "Mürûcü’z-zeheb"
           },
           {
             "id": "o2",
-            "text": "Kitâbü'l-İber"
+            "text": "Kitâbü’l-İber"
+          },
+          {
+            "id": "o1",
+            "text": "Târîhu’r-rusül ve’l-mülûk"
           },
           {
             "id": "o3",
-            "text": "el-Cebr ve'l-Mukābele"
-          },
-          {
-            "id": "o4",
-            "text": "Kutadgu Bilig"
+            "text": "el-Kâmil fi’t-târîh"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kitâbü'l-İber",
+        "correctAnswer": "Kitâbü’l-İber",
         "explanation": "Mukaddime, İbn Haldûn'un dünya tarihi niteliğindeki Kitâbü'l-İber adlı eserine giriş olarak kaleme alınmış, sonradan bağımsız bir eser gibi de değerlendirilmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — İbn Haldûn ile ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
-            "locator": "Giriş ve eser tanımı",
+            "locator": "96–101 ve 114. satırlar",
             "supports": "Mukaddime, İbn Haldûn'un dünya tarihi niteliğindeki Kitâbü'l-İber adlı eserine giriş olarak kaleme alınmış, sonradan bağımsız bir eser gibi de değerlendirilmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q45-haldun-mukaddime",
+        "reviewedCandidateSha256": "03297e9c8cabf33b47d3025e1103f965387e4b95e265cda817d2161a4ded9a05",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp/cebir/öğüt kitapları yerine dört tarih eseri. Mukaddime’nin belirli Kitâbü’l-İber’e giriş oluşu, sonradan bağımsız kullanımıyla birlikte kontrol edildi.",
+        "optionReview": {
+          "o4": "Başka tarih eseri.",
+          "o2": "İbn Haldûn’un ilgili dünya tarihi.",
+          "o1": "Başka tarih eseri.",
+          "o3": "Başka tarih eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+          "locator": "96–101 ve 114. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "05ebe49a0a88fcded18bf0d2f6af0338a11d80dda2e9c8f2e3f8ad925be0d122"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4764,23 +5508,23 @@
         ]
       },
       "after": {
-        "question": "Mukaddime'nin ikinci ve üçüncü bölümlerinde hangi hayat biçimleri tartışılır?",
+        "question": "Mukaddime’nin ikinci ve üçüncü bölümlerinde hangi kavram çifti merkezdedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Denizcilik ve balıkçılık"
+            "id": "o4",
+            "text": "İlimler ve öğretim"
           },
           {
             "id": "o2",
             "text": "Bedevîlik ve hadarîlik"
           },
           {
-            "id": "o3",
-            "text": "Hayvancılık ve hekimlik"
+            "id": "o1",
+            "text": "Zanaatlar ve kazançlar"
           },
           {
-            "id": "o4",
-            "text": "Maden ve kimya"
+            "id": "o3",
+            "text": "Şehirler ve pazarlar"
           }
         ],
         "correctOptionId": "o2",
@@ -4788,20 +5532,46 @@
         "explanation": "Mukaddime'nin ikinci ve üçüncü bölümleri, insan topluluklarının bedevî ve hadarî hayat biçimlerini ve aralarındaki dönüşümü ele alır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — İbn Haldûn ile ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
-            "locator": "İkinci ve üçüncü bölüm",
+            "locator": "102–112. satırlar",
             "supports": "Mukaddime'nin ikinci ve üçüncü bölümleri, insan topluluklarının bedevî ve hadarî hayat biçimlerini ve aralarındaki dönüşümü ele alır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-28"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q45-haldun-bedevi",
+        "reviewedCandidateSha256": "22a9a22cedadc79e33e8a04042ca98f0fa79e818598e623896bb90006bb96481",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilgisiz meslek çifti yerine eserin kendi konuları kullanıldı. Kök hayat biçimi diyerek tek yaşam biçimi şıkkını ele vermiyor.",
+        "optionReview": {
+          "o4": "Altıncı bölüm konuları.",
+          "o2": "İkinci/üçüncü bölümlerin merkezi çifti.",
+          "o1": "İktisadî bölüm konuları.",
+          "o3": "Dördüncü bölüm konuları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre, kitap, Bedir/Hudeybiye olayı ve önceki paketlerdeki yakın hedefler karşılaştırıldı. Özellikle kısa sûre ve kitap bölüm sorularının yoğunluğu son banka çapındaki sıklık/öğrenme hedefi incelemesinde tekrar ele alınmalı. Mevcut conceptGroup, tarihsel kayıtlar ve toplam sayı korunuyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+          "locator": "102–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-28",
+          "sourceSha256": "05ebe49a0a88fcded18bf0d2f6af0338a11d80dda2e9c8f2e3f8ad925be0d122"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

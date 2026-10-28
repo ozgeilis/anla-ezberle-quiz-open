@@ -3,12 +3,12 @@
   "start": 851,
   "end": 900,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 0,
-  "flaggedAfter": 0,
+  "flaggedAfter": 4,
   "records": [
     {
       "sequence": 851,
@@ -57,19 +57,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Sa‘y"
+            "text": "Namâz"
+          },
+          {
+            "id": "o3",
+            "text": "Niyâz"
+          },
+          {
+            "id": "o4",
+            "text": "Perhîz"
           },
           {
             "id": "o2",
             "text": "Rûze"
-          },
-          {
-            "id": "o3",
-            "text": "Vakfe"
-          },
-          {
-            "id": "o4",
-            "text": "Takvâ"
           }
         ],
         "correctOptionId": "o2",
@@ -77,20 +77,46 @@
         "explanation": "TDV Oruç maddesi Türkçe oruç kelimesinin, Arapça savmın Farsça karşılığı olan rûze sözcüğünden geldiğini açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ORUÇ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/oruc",
-            "locator": "Rûze kelimesinin Farsça kökeni",
+            "locator": "109–111. satırlar",
             "supports": "TDV Oruç maddesi Türkçe oruç kelimesinin, Arapça savmın Farsça karşılığı olan rûze sözcüğünden geldiğini açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q47-oruç-050",
+        "reviewedCandidateSha256": "ce2ef0897822b45a494cb450be6a847623cd48d653c8b99c307aab76bbf6338f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek Farsça sözcüğe karşı üç Arapça terim yerine Farsça kökenli dinî/perhiz bağlamında kelimeler. Perhîz kavramsal yakınlıktır, Türkçe orucun kökü olduğu ileri sürülmez.",
+        "optionReview": {
+          "o1": "Başka ibadet adı.",
+          "o3": "Başka dinî söz.",
+          "o4": "İlgili kaçınma kavramı.",
+          "o2": "TDV’nin verdiği köken."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/oruc",
+          "locator": "109–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -137,23 +163,23 @@
         ]
       },
       "after": {
-        "question": "Esmâ bint Ebû Bekir, hicret hazırlığında hangi iki malzemenin taşınmasına yardım etti?",
+        "question": "TDV’nin hicret hazırlığı anlatımında Esmâ hangi iki kabı bağlar?",
         "options": [
           {
             "id": "o1",
-            "text": "Kılıç ve kalkan"
+            "text": "Yem torbası ve yağ tulumu"
+          },
+          {
+            "id": "o3",
+            "text": "Hurma sepeti ve süt tulumu"
+          },
+          {
+            "id": "o4",
+            "text": "Un çuvalı ve bal tulumu"
           },
           {
             "id": "o2",
             "text": "Azık torbası ve su tulumu"
-          },
-          {
-            "id": "o3",
-            "text": "Sancak ve miğfer"
-          },
-          {
-            "id": "o4",
-            "text": "Yalnız yazı levhaları"
           }
         ],
         "correctOptionId": "o2",
@@ -161,20 +187,51 @@
         "explanation": "TDV Esmâ bint Ebû Bekir maddesinde hicret hazırlığında azık torbası ile su tulumunun düzenlendiği; Esmâ'nın kapları bağlamak için kuşağını kullandığı aktarılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ESMÂ bint EBÛ BEKİR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
-            "locator": "Hicret hazırlığındaki azık ve su",
+            "locator": "104–107. satırlar",
             "supports": "TDV Esmâ bint Ebû Bekir maddesinde hicret hazırlığında azık torbası ile su tulumunun düzenlendiği; Esmâ'nın kapları bağlamak için kuşağını kullandığı aktarılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-001",
+        "reviewedCandidateSha256": "d50f9389f4f17540e6f9c032af5f53acfbbb5d366e98bfd96b7ab4da1d97ba56",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Silâh/sancak ve yalnız yazı levhası yerine dört yolculuk/yiyecek kabı çifti. İki farklı hazırlık rivayeti yer bilgisiyle tekleştirilmedi; ortak kap bilgisi hedefleniyor.",
+        "optionReview": {
+          "o1": "Başka yiyecek kapları.",
+          "o3": "Başka yiyecek kapları.",
+          "o4": "Başka yiyecek kapları.",
+          "o2": "Kaynakta kuşakla bağlanan kaplar."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "104–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -224,20 +281,20 @@
         "question": "Hicret sırasında Ebû Cehil babasının yerini sorunca Esmâ bint Ebû Bekir ne karşılık verdi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sevr'in zirvesinde"
+            "id": "o3",
+            "text": "Soracağım"
+          },
+          {
+            "id": "o4",
+            "text": "Araştıracağım"
           },
           {
             "id": "o2",
             "text": "Bilmiyorum"
           },
           {
-            "id": "o3",
-            "text": "Medine'ye ulaştı"
-          },
-          {
-            "id": "o4",
-            "text": "Mekke pazarında"
+            "id": "o1",
+            "text": "Söylemeyeceğim"
           }
         ],
         "correctOptionId": "o2",
@@ -245,20 +302,46 @@
         "explanation": "TDV Esmâ maddesinde Kureyşlilerin evine gelip babası Ebû Bekir'in nerede olduğunu sorduklarında Esmâ'nın 'Bilmiyorum' dediği aktarılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ESMÂ bint EBÛ BEKİR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
-            "locator": "Ebû Bekir'in yeri sorulduğunda Esmâ'nın cevabı",
+            "locator": "107. satır",
             "supports": "TDV Esmâ maddesinde Kureyşlilerin evine gelip babası Ebû Bekir'in nerede olduğunu sorduklarında Esmâ'nın 'Bilmiyorum' dediği aktarılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-002",
+        "reviewedCandidateSha256": "491fbf9ce648e4a9d2ca7dd87bc7f9c5dcfdefa470b801e3760debfd1f03773a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yer adlarından oluşan iki fragman ve tek uygun cevap yerine dört kişi ağzından makul cevap. Sorulan, olay anlatımında nakledilen sözdür.",
+        "optionReview": {
+          "o3": "Başka muhtemel cevap.",
+          "o4": "Başka muhtemel cevap.",
+          "o2": "Nakledilen kısa cevap.",
+          "o1": "Başka muhtemel cevap."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "107. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -341,8 +424,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-003",
+        "reviewedCandidateSha256": "dd8ecfbacd11a998b11dec237b8462580bc244d21c951c97efa7e05f32fe0968",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî adı, bilinen erkek kişiler. Eş adı ve beş oğul sayısı farklı hedefler; eş Zübeyr kaynakta açık.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Eşi.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "102–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -425,8 +532,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-004",
+        "reviewedCandidateSha256": "39b51e14ff44df6b4cb2ade02795f73b263caf5298ec15ac9534d8f426948620",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört erkek çocuk sayısı. Kaynak beş oğul ile üç kızı ayrı listeler; toplam çocuk sayısı sorulmuyor.",
+        "optionReview": {
+          "o1": "Eksik oğul sayısı.",
+          "o2": "Beş oğul.",
+          "o3": "Kız sayısıyla karışabilir.",
+          "o4": "Fazla oğul sayısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "103. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -473,23 +604,23 @@
         ]
       },
       "after": {
-        "question": "Esmâ bint Ebû Bekir'in annesi Kuteyle'nin ziyaretiyle ilgili hangi âyet hatırlatılır?",
+        "question": "TDV’nin Esmâ maddesinde annesi Kuteyle’nin ziyaretiyle ilişkilendirilen âyet hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Nûh 71/1"
+            "text": "Lokman 31/15"
+          },
+          {
+            "id": "o3",
+            "text": "İsrâ 17/23"
+          },
+          {
+            "id": "o4",
+            "text": "Nisâ 4/36"
           },
           {
             "id": "o2",
             "text": "Mümtehine 60/8"
-          },
-          {
-            "id": "o3",
-            "text": "Kehf 18/60"
-          },
-          {
-            "id": "o4",
-            "text": "Yâsîn 36/12"
           }
         ],
         "correctOptionId": "o2",
@@ -497,20 +628,46 @@
         "explanation": "Esmâ'nın Müslüman olmayan annesiyle iyi ilişki kurması konusu TDV'de Mümtehine 60/8'in iyilik ve adalet ilkesiyle birlikte aktarılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ESMÂ bint EBÛ BEKİR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
-            "locator": "Kuteyle'nin ziyareti ve Mümtehine 60/8",
+            "locator": "119–121. satırlar",
             "supports": "Esmâ'nın Müslüman olmayan annesiyle iyi ilişki kurması konusu TDV'de Mümtehine 60/8'in iyilik ve adalet ilkesiyle birlikte aktarılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-005",
+        "reviewedCandidateSha256": "909b0307709b9bc5d82793a34de6b3dafd71fce261699bda66482a59cd181155",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilgisiz ayet yerine anne-baba/akraba iyiliğiyle ilgili dört ayet. Genel iyilik emri değil TDV’nin bu ziyaretle ilişkilendirdiği ayet soruluyor; rivayet bağı kaynağa nispet edildi.",
+        "optionReview": {
+          "o1": "Anne-babaya iyi ilişki bağlamı.",
+          "o3": "Anne-babaya iyilik bağlamı.",
+          "o4": "Akraba ve anne-babaya iyilik bağlamı.",
+          "o2": "TDV’nin ziyarete bağladığı ayet."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "119–121. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -560,41 +717,67 @@
         "question": "Esmâ bint Ebû Bekir hangi sahâbî hanımla baba bir kardeşti?",
         "options": [
           {
+            "id": "o4",
+            "text": "Sevde"
+          },
+          {
+            "id": "o2",
+            "text": "Âişe"
+          },
+          {
             "id": "o1",
             "text": "Ümmü Habîbe"
           },
           {
-            "id": "o2",
-            "text": "Hz. Âişe"
-          },
-          {
             "id": "o3",
             "text": "Ümmü Seleme"
-          },
-          {
-            "id": "o4",
-            "text": "Sevde bint Zem‘a"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hz. Âişe",
+        "correctAnswer": "Âişe",
         "explanation": "Esmâ bint Ebû Bekir, Hz. Ebû Bekir'in kızı ve Hz. Âişe'nin baba bir kardeşidir; kaynak aralarında yaklaşık yirmi yaş bulunduğunu yazar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ESMÂ bint EBÛ BEKİR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
-            "locator": "Âişe ile baba bir kardeşliği",
+            "locator": "102–104. satırlar",
             "supports": "Esmâ bint Ebû Bekir, Hz. Ebû Bekir'in kızı ve Hz. Âişe'nin baba bir kardeşidir; kaynak aralarında yaklaşık yirmi yaş bulunduğunu yazar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-006",
+        "reviewedCandidateSha256": "5b516608292fe7b8be7ea0d691635accb011eeb4d7a57267558f2fcbc60b0f57",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yalnız doğru şıktaki Hz. unvanı ve farklı ad biçimleri eşitlendi. Dört hanım adı; baba bir kardeşlik bilgisi gerekir.",
+        "optionReview": {
+          "o4": "Başka müminlerin annesi.",
+          "o2": "Baba bir kardeşi.",
+          "o1": "Başka müminlerin annesi.",
+          "o3": "Başka müminlerin annesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+          "locator": "102–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -641,44 +824,70 @@
         ]
       },
       "after": {
-        "question": "Esmâ bint Ebû Bekir'in oğlu Urve hangi alanda tanınan bir isimdir?",
+        "question": "Esmâ’nın oğlu Urve b. Zübeyr, İslâm tarih yazıcılığının hangi alanındaki öncülerdendir?",
         "options": [
           {
             "id": "o1",
-            "text": "Maden mühendisliği"
-          },
-          {
-            "id": "o2",
-            "text": "Hadis ve tarih rivayetleri"
+            "text": "Hânedan tarihleri"
           },
           {
             "id": "o3",
-            "text": "Astronomi aletleri yapımı"
+            "text": "Şehir tarihleri"
           },
           {
             "id": "o4",
-            "text": "Kâbe mimarisi"
+            "text": "Dinler tarihi"
+          },
+          {
+            "id": "o2",
+            "text": "Siyer ve megāzî"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hadis ve tarih rivayetleri",
-        "explanation": "Esmâ'dan rivayet aktaran isimler arasında oğlu Urve b. Zübeyr vardır; o, sahâbe hayatına dair çok sayıda rivayetle tanınır.",
+        "correctAnswer": "Siyer ve megāzî",
+        "explanation": "Urve b. Zübeyr hadis ve fıkıhta da tanınır. TDV, onun Hz. Peygamber’in hayatına dair rivayetleri derleyen siyer ve megāzî alanının öncülerinden olduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ESMÂ bint EBÛ BEKİR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
-            "locator": "Urve'nin Esmâ'dan rivayeti",
-            "supports": "Esmâ'dan rivayet aktaran isimler arasında oğlu Urve b. Zübeyr vardır; o, sahâbe hayatına dair çok sayıda rivayetle tanınır.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/urve-b-zubeyr",
+            "locator": "113–120. satırlar",
+            "supports": "Urve b. Zübeyr hadis ve fıkıhta da tanınır. TDV, onun Hz. Peygamber’in hayatına dair rivayetleri derleyen siyer ve megāzî alanının öncülerinden olduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-esma-007",
+        "reviewedCandidateSha256": "5e7aa0984ca955cad679b0c294428c42595e83ea948c35c986b734d3e8fe1f67",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç modern meslek/alet işi yerine dört tarih yazıcılığı alanı. Urve’nin ayrıca uzman olduğu fıkıh veya hadis yanlış şık yapılmadı.",
+        "optionReview": {
+          "o1": "Başka tarih yazıcılığı alanı.",
+          "o3": "Başka tarih yazıcılığı alanı.",
+          "o4": "Başka tarih yazıcılığı alanı.",
+          "o2": "Öncülük ettiği alan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/urve-b-zubeyr",
+          "locator": "113–120. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -729,40 +938,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mus‘ab b. Umeyr"
-          },
-          {
-            "id": "o2",
-            "text": "Ebû Seleme el-Mahzûmî"
+            "text": "Ubeydullah b. Cahş"
           },
           {
             "id": "o3",
-            "text": "Ebû Süfyân"
+            "text": "Zeyd b. Hârise"
           },
           {
             "id": "o4",
-            "text": "Zeyd b. Hârise"
+            "text": "Sekrân b. Amr"
+          },
+          {
+            "id": "o2",
+            "text": "Abdullah b. Abdülesed"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Ebû Seleme el-Mahzûmî",
-        "explanation": "TDV'ye göre Ümmü Seleme ilk olarak Ebû Seleme el-Mahzûmî ile evlendi; birlikte Habeşistan'a hicret etmişlerdi.",
+        "correctAnswer": "Abdullah b. Abdülesed",
+        "explanation": "Ümmü Seleme’nin Hz. Peygamber’den önceki eşi, Ebû Seleme el-Mahzûmî künyesiyle tanınan Abdullah b. Abdülesed’dir. Birlikte Habeşistan’a hicret etmişlerdir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ÜMMÜ SELEME",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
-            "locator": "Ebû Seleme ile evliliği",
-            "supports": "TDV'ye göre Ümmü Seleme ilk olarak Ebû Seleme el-Mahzûmî ile evlendi; birlikte Habeşistan'a hicret etmişlerdi.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/ebu-seleme-el-mahzumi",
+            "locator": "69 ve 98–102. satırlar; Ümmü Seleme 97–103. satırlar",
+            "supports": "Ümmü Seleme’nin Hz. Peygamber’den önceki eşi, Ebû Seleme el-Mahzûmî künyesiyle tanınan Abdullah b. Abdülesed’dir. Birlikte Habeşistan’a hicret etmişlerdir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ummu-seleme-008",
+        "reviewedCandidateSha256": "24ebf66d6fad7232ed2e2445af3ee485c0bbb143e090f56e75415230f8fb9fe2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ümmü Seleme/Ebû Seleme ortak künyesi ipucu yerine ilk eşin gerçek adı. Dört çağdaş kişi adı; başka müminlerin annelerinin önceki eşleri makul karışma oluşturur.",
+        "optionReview": {
+          "o1": "Ümmü Habîbe’nin önceki eşi.",
+          "o3": "Zeyneb’in önceki eşi.",
+          "o4": "Sevde’nin önceki eşi.",
+          "o2": "Ebû Seleme’nin asıl adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-seleme-el-mahzumi",
+          "locator": "69 ve 98–102. satırlar; Ümmü Seleme 97–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -845,8 +1080,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ummu-seleme-010",
+        "reviewedCandidateSha256": "00449a8a84189a01d2175b224f21750287c2ccfc5aee77b6b6c3a278a245a09b",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört çağdaş erkek adı. Osman b. Talha’nın henüz Müslüman olmadığı sırada refakati açık; dinî durum yardım etmesini imkânsız kılan ipucu değil.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Refakatçi.",
+          "o3": "Başka Mekke kişisi.",
+          "o4": "Başka Mekke kişisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+          "locator": "98–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -897,19 +1156,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mekke'ye yeniden yürüyerek"
+            "text": "Namaz kılıp dua ederek"
+          },
+          {
+            "id": "o3",
+            "text": "Sadaka verip iftar ederek"
+          },
+          {
+            "id": "o4",
+            "text": "Telbiye getirip ihrama girerek"
           },
           {
             "id": "o2",
             "text": "Kurban kesip tıraş olarak"
-          },
-          {
-            "id": "o3",
-            "text": "Yeni bir sefer ilan ederek"
-          },
-          {
-            "id": "o4",
-            "text": "Sancağı şehre dikerek"
           }
         ],
         "correctOptionId": "o2",
@@ -917,20 +1176,46 @@
         "explanation": "Antlaşma sonrası ashabın üzüntüsü üzerine Ümmü Seleme, Resûlullah'a önce kendi kurbanını kesip tıraş olmasını, ashabın da onu izleyeceğini söyledi.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ÜMMÜ SELEME",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
-            "locator": "Hudeybiye'de Ümmü Seleme'nin tavsiyesi",
+            "locator": "105–107. satırlar",
             "supports": "Antlaşma sonrası ashabın üzüntüsü üzerine Ümmü Seleme, Resûlullah'a önce kendi kurbanını kesip tıraş olmasını, ashabın da onu izleyeceğini söyledi.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ummu-seleme-011",
+        "reviewedCandidateSha256": "097673a0bf24f8aa10bc4bb42e522562e474f1cf0f46bfd1fa92dfe98983152d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç askerî harekete karşı tek ibadet yerine dört makul ibadet çifti. Genel örnek olma değil belirli istişarede önerilen uygulama hedefleniyor.",
+        "optionReview": {
+          "o1": "Başka ibadet çifti.",
+          "o3": "Başka ibadet çifti.",
+          "o4": "Yolculuğun önceki aşamasıyla karışabilir.",
+          "o2": "Kaynağın naklettiği öneri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+          "locator": "105–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1013,8 +1298,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ummu-seleme-012",
+        "reviewedCandidateSha256": "02744e5143a500e2a10601776867c9a6e504bcdf26f57fa58079b1249a6f25e2",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört askerî kişi adı. Çok geniş akraba kelimesi yerine amca oğlu ilişkisi açıklamada kontrol edildi; TDV burada Hâlid’i özel olarak anar.",
+        "optionReview": {
+          "o1": "Başka kumandan.",
+          "o2": "Amcasının oğlu.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka kumandan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1068,37 +1377,63 @@
             "text": "Ebû Basîr"
           },
           {
-            "id": "o2",
-            "text": "Dihye b. Halîfe el-Kelbî"
-          },
-          {
             "id": "o3",
             "text": "Süheyl b. Amr"
           },
           {
             "id": "o4",
             "text": "Abdullah b. Revâha"
+          },
+          {
+            "id": "o2",
+            "text": "Dihye el-Kelbî"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Dihye b. Halîfe el-Kelbî",
+        "correctAnswer": "Dihye el-Kelbî",
         "explanation": "Bir rivayete göre Ümmü Seleme gördüğü kişiyi Dihye el-Kelbî sanmış, Hz. Peygamber onun Cebrâil olduğunu bildirmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ÜMMÜ SELEME",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
-            "locator": "Cebrâil'in Dihye suretinde görülmesi",
+            "locator": "107. satır",
             "supports": "Bir rivayete göre Ümmü Seleme gördüğü kişiyi Dihye el-Kelbî sanmış, Hz. Peygamber onun Cebrâil olduğunu bildirmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ummu-seleme-013",
+        "reviewedCandidateSha256": "952821e282672d0b41b297401c29f2927e60011a8b563dc0d50a5cbeb204b9d1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Doğru kişinin gereksiz uzun patronimi, kaynakta tanınan kısa adıyla dengelendi. Dört gerçek çağdaş kişi; insan sureti rivayeti kaynak nispetiyle korunuyor.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî.",
+          "o2": "Kaynakta ilk sanılan kişi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+          "locator": "107. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1148,20 +1483,20 @@
         "question": "Ümmü Seleme'nin Medine'de defnedildiği mezarlık hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Karacaahmet"
+            "id": "o4",
+            "text": "Bâbüssagīr Mezarlığı"
           },
           {
             "id": "o2",
             "text": "Bakī‘ Kabristanı"
           },
           {
-            "id": "o3",
-            "text": "Cennetü'l-Muallâ"
+            "id": "o1",
+            "text": "Uhud Şehitliği"
           },
           {
-            "id": "o4",
-            "text": "Eyüp Mezarlığı"
+            "id": "o3",
+            "text": "Cennetü’l-Muallâ"
           }
         ],
         "correctOptionId": "o2",
@@ -1169,20 +1504,46 @@
         "explanation": "TDV maddesi Ümmü Seleme'nin Medine'de vefat ettiğini ve Bakī‘ Kabristanı'na defnedildiğini bildirir; ölüm tarihi için farklı rivayetler vardır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ÜMMÜ SELEME",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
-            "locator": "Bakī‘ Kabristanı",
+            "locator": "107–109. satırlar",
             "supports": "TDV maddesi Ümmü Seleme'nin Medine'de vefat ettiğini ve Bakī‘ Kabristanı'na defnedildiğini bildirir; ölüm tarihi için farklı rivayetler vardır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ummu-seleme-014",
+        "reviewedCandidateSha256": "69d3d539218952a01741685566ec3ce1765e71431e4a815ce70fdefa92418614",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İki İstanbul mezarlığı yerine erken İslâm coğrafyasındaki dört defin yeri; iki Medine seçeneği vardır. Vefat yılı ihtilafı yerine belgelenen defin yeri soruluyor.",
+        "optionReview": {
+          "o4": "Dımaşk’ta başka defin yeri.",
+          "o2": "TDV’nin belirttiği defin yeri.",
+          "o1": "Medine çevresinde başka defin yeri.",
+          "o3": "Mekke’de başka defin yeri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+          "locator": "107–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1265,8 +1626,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hicret-016",
+        "reviewedCandidateSha256": "ef4e8f747af14fbfa80275b5cbf0338d6e62324539966a82de6bf152f5e9c517",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gün süresi aynı yapıda. Sevr’de üç gün kalma ile yolculuğun toplam süresi karışmıyor; sonraki haber/kılavuz hedefleri ayrı.",
+        "optionReview": {
+          "o1": "Eksik kalış süresi.",
+          "o2": "Üç gün.",
+          "o3": "Fazla kalış süresi.",
+          "o4": "Fazla kalış süresi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "150–155. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1316,20 +1701,20 @@
         "question": "Sevr Mağarası'nda kalınan üç gün boyunca haber getiren kimdi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Enes b. Mâlik"
+            "id": "o4",
+            "text": "Mus‘ab b. Umeyr"
           },
           {
             "id": "o2",
             "text": "Abdullah b. Ebû Bekir"
           },
           {
-            "id": "o3",
-            "text": "Üsâme b. Zeyd"
+            "id": "o1",
+            "text": "Âmir b. Füheyre"
           },
           {
-            "id": "o4",
-            "text": "Muâz b. Cebel"
+            "id": "o3",
+            "text": "Abdullah b. Uraykıt"
           }
         ],
         "correctOptionId": "o2",
@@ -1337,20 +1722,46 @@
         "explanation": "TDV Hicret maddesi, Ebû Bekir'in oğlu Abdullah'ın geceleri Sevr Mağarası'na gelip Mekke'deki gelişmeleri aktardığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HİCRET",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hicret",
-            "locator": "Mağaraya bilgi getirilmesi",
+            "locator": "150–155. satırlar",
             "supports": "TDV Hicret maddesi, Ebû Bekir'in oğlu Abdullah'ın geceleri Sevr Mağarası'na gelip Mekke'deki gelişmeleri aktardığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hicret-017",
+        "reviewedCandidateSha256": "4e14979180ede823362fd16073bec7eb20ba627240bb29e03660a61a685cb2a6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Medine’deki çocuk/genç rollerinden daha makul hicret yardımcıları. Abdullah haber, Uraykıt kılavuz, Âmir kafile desteği; Mus‘ab önceki tebliğ göreviyle ayrılır.",
+        "optionReview": {
+          "o4": "Önce Medine’ye gönderilen tebliğci.",
+          "o2": "Geceleri haber getiren.",
+          "o1": "Kafileye katılan başka yardımcı.",
+          "o3": "Yol kılavuzu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "150–155. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1397,44 +1808,70 @@
         ]
       },
       "after": {
-        "question": "Hicret gecesi Hz. Peygamber'in yatağında kalarak hangi görevi üstlenen sahâbî kimdi?",
+        "question": "Hicret gecesi Hz. Peygamber’in yatağında kalan ve emanetleri iade eden sahâbî kimdi?",
         "options": [
           {
             "id": "o1",
-            "text": "Hz. Bilâl"
-          },
-          {
-            "id": "o2",
-            "text": "Hz. Ali"
+            "text": "Ebû Ubeyde b. Cerrâh"
           },
           {
             "id": "o3",
-            "text": "Ebû Ubeyde"
+            "text": "Zübeyr b. Avvâm"
           },
           {
             "id": "o4",
-            "text": "Câbir b. Abdullah"
+            "text": "Mus‘ab b. Umeyr"
+          },
+          {
+            "id": "o2",
+            "text": "Ali b. Ebû Tâlib"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hz. Ali",
+        "correctAnswer": "Ali b. Ebû Tâlib",
         "explanation": "Resûlullah, Mekke'den ayrılırken emanet bırakılmış eşyaların sahiplerine iadesi ve ayrılışını gizlemek amacıyla Hz. Ali'yi görevlendirdi.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HİCRET",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hicret",
-            "locator": "Emanetleri geri verme görevi",
+            "locator": "150–154. satırlar",
             "supports": "Resûlullah, Mekke'den ayrılırken emanet bırakılmış eşyaların sahiplerine iadesi ve ayrılışını gizlemek amacıyla Hz. Ali'yi görevlendirdi.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hicret-018",
+        "reviewedCandidateSha256": "68dbcd5567f007b89bb7b8f4d72b5a7963e11d995eb0358e820cc7b822774205",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hangi görevi üstlenen sahâbî kimdi biçimindeki bozuk kök düzeltildi. Dört sahâbî adı aynı tam ad biçiminde; emanet görevi belirli.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî.",
+          "o2": "İki görevi üstlenen."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "150–154. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1485,40 +1922,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Hz. Osman"
-          },
-          {
-            "id": "o2",
-            "text": "Hz. Ömer"
+            "text": "Osman b. Affân"
           },
           {
             "id": "o3",
-            "text": "Ebû Hüreyre"
+            "text": "Abdurrahman b. Avf"
           },
           {
             "id": "o4",
-            "text": "Selmân-ı Fârisî"
+            "text": "Zübeyr b. Avvâm"
+          },
+          {
+            "id": "o2",
+            "text": "Ömer b. Hattâb"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hz. Ömer",
-        "explanation": "Hicret yolculuğunun çoğu gizlice yapılmasına karşılık Hz. Ömer'in Kâbe'yi tavaf edip meydan okuyarak alenen yola çıktığı aktarılır.",
+        "correctAnswer": "Ömer b. Hattâb",
+        "explanation": "TDV Hicret maddesi Ömer’in alenen yola çıktığını anlatır. Ömer maddesi ise yirmi kişilik kafileyle göçünü kaydeder. Soru açık çıkış rivayetinin kime nispet edildiğini sorar; bağımsız rivayet tenkidi onayı verilmemiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HİCRET",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hicret",
-            "locator": "Ömer'in alenî hicreti",
-            "supports": "Hicret yolculuğunun çoğu gizlice yapılmasına karşılık Hz. Ömer'in Kâbe'yi tavaf edip meydan okuyarak alenen yola çıktığı aktarılır.",
+            "locator": "145–150. satırlar; Ömer maddesi 120. satır",
+            "supports": "TDV Hicret maddesi Ömer’in alenen yola çıktığını anlatır. Ömer maddesi ise yirmi kişilik kafileyle göçünü kaydeder. Soru açık çıkış rivayetinin kime nispet edildiğini sorar; bağımsız rivayet tenkidi onayı verilmemiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hicret-019",
+        "reviewedCandidateSha256": "4c7643568191d0f6dc23e55b28c444321252fb4df04a11d016166d85617d2b3b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Daha geç İslâm’a giren iki kişiye karşı tek erken muhacir yerine dört erken muhacir. Açık çıkış anlatımı kökte TDV’ye nispetli rivayet olarak tutuldu; bağımsız tarihsel kesinlik iddia edilmez.",
+        "optionReview": {
+          "o1": "Başka erken muhacir.",
+          "o3": "Başka erken muhacir.",
+          "o4": "Başka erken muhacir.",
+          "o2": "TDV Hicret’in açık çıkış anlatımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Açık hicret anlatımı TDV Hicret 147’de mevcut; Ömer 120’de yirmi kişilik kafile anlatımı var. Ayrıntıların isnad/rivayet tenkidi bağımsız uzman incelemesi bekler. Kök TDV’ye nispetli rivayet olduğundan tarihsel kesinlik iddiası eklenmedi.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "145–150. satırlar; Ömer maddesi 120. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1601,8 +2064,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hicret-020",
+        "reviewedCandidateSha256": "4f6e9e1e9cf1a51c4e7bd2a1766a656721d6d59dd701a2c895e5e506226c4d25",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hanım tam adı. Kök ilk çiftlerden diyerek hicretin bütün ilklerini tek kişi saymıyor; İkinci Akabe sonrası izin bağlamında Leylâ kaynakta açık.",
+        "optionReview": {
+          "o1": "Başka muhacir hanım.",
+          "o2": "Âmir’in eşi.",
+          "o3": "Başka muhacir hanım.",
+          "o4": "Daha önceki göç bağlamındaki hanım."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "145–147. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1649,44 +2136,70 @@
         ]
       },
       "after": {
-        "question": "Hicrette yol kılavuzluğu yapan Abdullah b. Uraykıt'ın o sıradaki dinî durumu neydi?",
+        "question": "TDV’ye göre hicret yolunda henüz Müslüman değilken kılavuz tutulan kimdi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ashâb-ı Suffe üyesiydi"
+            "id": "o2",
+            "text": "Abdullah b. Uraykıt"
           },
           {
-            "id": "o2",
-            "text": "Henüz Müslüman değildi"
+            "id": "o1",
+            "text": "Âmir b. Füheyre"
           },
           {
             "id": "o3",
-            "text": "Medine'de imamlık yapıyordu"
+            "text": "Abdullah b. Ebû Bekir"
           },
           {
             "id": "o4",
-            "text": "Mescid-i Nebevî'de müezzindi"
+            "text": "Abdullah b. Revâha"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Henüz Müslüman değildi",
+        "correctAnswer": "Abdullah b. Uraykıt",
         "explanation": "TDV Hicret maddesi, güvenilir kılavuz Abdullah b. Uraykıt'ın o sırada Müslüman olmadığını, buna rağmen yol bilgisine güvenilerek görevlendirildiğini kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HİCRET",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hicret",
-            "locator": "Kılavuzun o sıradaki dinî durumu",
+            "locator": "150–155. satırlar",
             "supports": "TDV Hicret maddesi, güvenilir kılavuz Abdullah b. Uraykıt'ın o sırada Müslüman olmadığını, buna rağmen yol bilgisine güvenilerek görevlendirildiğini kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hicret-021",
+        "reviewedCandidateSha256": "fa1d9623c471fe59f63c90fbc861ef7836416d0ba16da545d79659faa7ccff14",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üçü de hicret öncesi bağlama aykırı Medine/Suffe görevi olan şıklar kaldırıldı. Dört çağdaş kişi adı; aynı dinî durum bilgisi belirli kılavuz üzerinden soruluyor.",
+        "optionReview": {
+          "o2": "Kaynağın belirttiği kılavuz.",
+          "o1": "Kafiledeki diğer yardımcı.",
+          "o3": "Haber getiren yardımcı.",
+          "o4": "Başka Medineli sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bu pakette Hudeybiye/Rıdvan, Nûh, Hârûn ve hicret hedefleri önceki paketlerdeki yakın olaylarla karşılaştırıldı. İsim tekrar sayıları ve aynı tarihî olayın yoğunluğu banka çapındaki sıklık incelemesinde tekrar ele alınmalı. Soru ID, conceptGroup, kategori ve zorluk korunuyor; benzerlikten otomatik yayın onayı çıkarılmadı.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hicret",
+          "locator": "150–155. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1733,23 +2246,23 @@
         ]
       },
       "after": {
-        "question": "Ebû Hüreyre hangi İslâm ilmine yaptığı katkıyla tanınır?",
+        "question": "TDV’ye göre Ebû Hüreyre’nin rivayet sayısıyla sahâbe arasında ilk sırada olduğu alan hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Geometri"
+            "text": "Kıraat nakli"
+          },
+          {
+            "id": "o3",
+            "text": "Nesep bilgisi"
+          },
+          {
+            "id": "o4",
+            "text": "Şiir nakli"
           },
           {
             "id": "o2",
             "text": "Hadis rivayeti"
-          },
-          {
-            "id": "o3",
-            "text": "Tıp cerrahisi"
-          },
-          {
-            "id": "o4",
-            "text": "Coğrafya haritaları"
           }
         ],
         "correctOptionId": "o2",
@@ -1757,20 +2270,51 @@
         "explanation": "TDV Ebû Hüreyre maddesi, onun Resûlullah'tan çok sayıda hadis rivayet etmesiyle tanınan sahâbî olduğunu bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — EBÛ HÜREYRE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
-            "locator": "Çok hadis rivayet etmesi",
+            "locator": "127–140. satırlar",
             "supports": "TDV Ebû Hüreyre maddesi, onun Resûlullah'tan çok sayıda hadis rivayet etmesiyle tanınan sahâbî olduğunu bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ebu-hureyre-022",
+        "reviewedCandidateSha256": "e6a42f5979ad0027b57a8d9d60d42bfb2e08c721f600f74643f7c990fb336d12",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek İslâm ilmine karşı üç ilgisiz alan kaldırıldı. Ebû Hüreyre kıraat ve fetvada da katkı sahibi olduğundan genel hangi ilim sorusu rivayet sayısında ilk sıraya daraltıldı.",
+        "optionReview": {
+          "o1": "130’da katkısı var; sayıdaki ilk sıra bu değil.",
+          "o3": "Başka sözlü bilgi alanı.",
+          "o4": "Başka sözlü aktarım alanı.",
+          "o2": "136’da ilk sırada anılan alan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Ebû Hüreyre kıraat öğretmiş ve fetva da vermiştir. Bunları genel olarak katkı yapmadığı alanlar diye yanlış saymak doğru olmaz; kök rivayet sayısında ilk sıraya bağlıdır.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
+          "locator": "127–140. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1853,8 +2397,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ebu-hureyre-023",
+        "reviewedCandidateSha256": "621bb6adfa8ed0f352ebcd52c446bece63aabf0316dfc5f56bc60a3beac29c9f",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek kabile adı. Devs, Yemen’deki Ezd’in koludur; Evs ve Hazrec de yakın kabile bilgisi çeldiricisidir.",
+        "optionReview": {
+          "o1": "Başka kabile.",
+          "o2": "Devs kolu.",
+          "o3": "Başka kabile.",
+          "o4": "Başka kabile."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1901,23 +2469,23 @@
         ]
       },
       "after": {
-        "question": "Ebû Hüreyre'nin künyesinin 'küçük kedicik' anlamıyla ilişkilendirilmesinin sebebi nedir?",
+        "question": "TDV’deki rivayete göre Ebû Hüreyre künyesi hangi davranışıyla ilişkilendirilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kuş yetiştirmesi"
+            "id": "o3",
+            "text": "Koyun sürüsünü sulaması"
+          },
+          {
+            "id": "o4",
+            "text": "Yaralı atların bakımını yapması"
           },
           {
             "id": "o2",
             "text": "Kedi yavrularıyla ilgilenmesi"
           },
           {
-            "id": "o3",
-            "text": "Deve sürüsüyle dolaşması"
-          },
-          {
-            "id": "o4",
-            "text": "At yarışlarına katılması"
+            "id": "o1",
+            "text": "Kuş yavrularını beslemesi"
           }
         ],
         "correctOptionId": "o2",
@@ -1925,20 +2493,46 @@
         "explanation": "Ebû Hüreyre künyesi, koyun otlatırken kedi yavrularını elbisesinin eteğine koyup onlarla ilgilenmesi rivayetiyle açıklanır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — EBÛ HÜREYRE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
-            "locator": "Hüreyre künyesinin kökeni",
+            "locator": "96–99. satırlar",
             "supports": "Ebû Hüreyre künyesi, koyun otlatırken kedi yavrularını elbisesinin eteğine koyup onlarla ilgilenmesi rivayetiyle açıklanır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ebu-hureyre-024",
+        "reviewedCandidateSha256": "17db53d34880ea883b8155a734352bfcbd84253fb6d6d6c9f2e73d6540f1bb1b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kök cevabı küçük kedicik diye çevirmiyordu artık. Dört hayvan bakım davranışı aynı olumlu tonda; künyenin kelime anlamını bilen yine gerçek dil bilgisiyle yanıtlayabilir.",
+        "optionReview": {
+          "o3": "Koyun otlatmasıyla karışabilir; künye sebebi değil.",
+          "o4": "Başka hayvan bakım davranışı.",
+          "o2": "Künye sebebi olarak nakledilen.",
+          "o1": "Başka hayvan bakım davranışı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1989,19 +2583,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Havârîler"
+            "text": "Ehl-i Bedir"
+          },
+          {
+            "id": "o3",
+            "text": "Ashâb-ı Şecere"
+          },
+          {
+            "id": "o4",
+            "text": "Habeşistan muhacirleri"
           },
           {
             "id": "o2",
             "text": "Ashâb-ı Suffe"
-          },
-          {
-            "id": "o3",
-            "text": "Ehl-i Bedir"
-          },
-          {
-            "id": "o4",
-            "text": "Mekkeli tüccarlar"
           }
         ],
         "correctOptionId": "o2",
@@ -2009,20 +2603,46 @@
         "explanation": "Ebû Hüreyre, Resûlullah'a yakın olmak ve öğrenmek amacıyla Mescid-i Nebevî'deki Suffe'de kaldığı dönemle anılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — EBÛ HÜREYRE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
-            "locator": "Suffe'de kalışı",
+            "locator": "100–106 ve 138–140. satırlar",
             "supports": "Ebû Hüreyre, Resûlullah'a yakın olmak ve öğrenmek amacıyla Mescid-i Nebevî'deki Suffe'de kaldığı dönemle anılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ebu-hureyre-025",
+        "reviewedCandidateSha256": "73e501ca980207c1613d64156208d94272acf1e3564faf27e71f61794adb5886",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Havârîler ve tüccarlar yerine erken İslâm’daki dört gerçek özel topluluk. Eğitim/barınma bağlamı Suffe’yi belirler; aynı dönemdeki her topluluğa ait olduğu iddia edilmez.",
+        "optionReview": {
+          "o1": "Bedir’e katılanların grubu.",
+          "o3": "Rıdvan biatına katılanların grubu.",
+          "o4": "Habeşistan’a göç edenler.",
+          "o2": "Barındığı ve öğrendiği topluluk."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
+          "locator": "100–106 ve 138–140. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2072,20 +2692,20 @@
         "question": "TDV madde başlığında Ebû Hüreyre'nin ismi hangi biçimde kaydedilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ömer b. Hattâb"
+            "id": "o4",
+            "text": "Abdullah b. Mes‘ûd"
           },
           {
             "id": "o2",
             "text": "Abdurrahmân b. Sahr"
           },
           {
-            "id": "o3",
-            "text": "Muhammed b. İdrîs"
+            "id": "o1",
+            "text": "Abdurrahman b. Avf"
           },
           {
-            "id": "o4",
-            "text": "Hâlid b. Velîd"
+            "id": "o3",
+            "text": "Abdullah b. Amr"
           }
         ],
         "correctOptionId": "o2",
@@ -2093,20 +2713,51 @@
         "explanation": "TDV İslâm Ansiklopedisi, Ebû Hüreyre'yi Abdurrahmân b. Sahr ed-Devsî adıyla tanıtır; erken dönem adları için farklı rivayetler de bulunmaktadır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — EBÛ HÜREYRE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
-            "locator": "Abdurrahmân b. Sahr ed-Devsî adı",
+            "locator": "69 ve 96–99. satırlar",
             "supports": "TDV İslâm Ansiklopedisi, Ebû Hüreyre'yi Abdurrahmân b. Sahr ed-Devsî adıyla tanıtır; erken dönem adları için farklı rivayetler de bulunmaktadır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ebu-hureyre-027",
+        "reviewedCandidateSha256": "13fa19ce1e7f9a9dfa8351aec0fa53e3ca6eb13584d5884bf6fd405a4525b9ed",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İki yüzyıl sonraki Şâfiî yerine çağdaş sahâbî adları. Kök TDV başlığına bağlı; farklı ad rivayetlerinde geçen Abdullah b. Sahr yanlış şık yapılmadı.",
+        "optionReview": {
+          "o4": "Başka sahâbî adı.",
+          "o2": "TDV madde başlığı.",
+          "o1": "Başka sahâbî adı.",
+          "o3": "Başka sahâbî adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
+          "locator": "69 ve 96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2153,23 +2804,23 @@
         ]
       },
       "after": {
-        "question": "Ebû Hüreyre'nin kısmen iştirak ettiği fetih hangi bölgeyle ilgilidir?",
+        "question": "Ebû Hüreyre Medine’ye ilk geldiğinde Hz. Peygamber’in bulunduğu hangi yere giderek fethe katıldı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Endülüs"
+            "id": "o4",
+            "text": "Huneyn"
           },
           {
             "id": "o2",
             "text": "Hayber"
           },
           {
-            "id": "o3",
-            "text": "İstanbul"
+            "id": "o1",
+            "text": "Mekke"
           },
           {
-            "id": "o4",
-            "text": "Horasan"
+            "id": "o3",
+            "text": "Tâif"
           }
         ],
         "correctOptionId": "o2",
@@ -2177,20 +2828,46 @@
         "explanation": "TDV, Ebû Hüreyre'nin Hayber fethine kısmen katıldığını, ardından gerçekleşen gazvelerde de bulunduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — EBÛ HÜREYRE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
-            "locator": "Hayber fethine katılışı",
+            "locator": "100–105. satırlar",
             "supports": "TDV, Ebû Hüreyre'nin Hayber fethine kısmen katıldığını, ardından gerçekleşen gazvelerde de bulunduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-ebu-hureyre-028",
+        "reviewedCandidateSha256": "61bf707856982fd041d91918109c233fe594b2b6d0509bd8dea8cd45b0044dc9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Endülüs/İstanbul gibi sonraki yüzyıl fetihleri yerine dört yakın siyer mekânı. Sonradan katıldığı başka seferler ikinci doğru olmasın diye ilk geliş ve Peygamber’in bulunduğu yer soruldu.",
+        "optionReview": {
+          "o4": "Daha sonraki sefer yeri.",
+          "o2": "İlk gelişteki fetih.",
+          "o1": "Daha sonraki sefer yeri.",
+          "o3": "Daha sonraki sefer yeri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hureyre",
+          "locator": "100–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2273,8 +2950,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-yusuf-030",
+        "reviewedCandidateSha256": "c06d8d35b2138b58e263e46f5b5b5e48c3f9672b34940af4d59e8c33f8819e43",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört anılma sayısı aynı nicelikte. 25’i Yûsuf sûresinde, ikisi başka sûrelerde olduğundan toplam 27; Tevrat’taki yaşlar kullanılmadı.",
+        "optionReview": {
+          "o1": "Başka sayı.",
+          "o2": "Toplam ismen anılma.",
+          "o3": "Başka sayı.",
+          "o4": "Başka sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/yusuf",
+          "locator": "149–151. satırlar, Kur’an bölümü",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2324,41 +3025,67 @@
         "question": "Kur’an kıssasında Hz. Yûsuf'un babası rüyasını duyunca ona ne öğütler?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mısır'a hemen gitmesini"
+            "id": "o4",
+            "text": "Rüyasını yeniden görünce anlatmasını"
           },
           {
             "id": "o2",
-            "text": "Rüyasını kardeşlerine anlatmamasını"
+            "text": "Rüyasını kardeşlerinden saklamasını"
+          },
+          {
+            "id": "o1",
+            "text": "Rüyasını annesiyle paylaşmasını"
           },
           {
             "id": "o3",
-            "text": "Kralın huzuruna çıkmasını"
-          },
-          {
-            "id": "o4",
-            "text": "Yeni bir kuyu kazmasını"
+            "text": "Rüyasını güvenilir biriyle yorumlamasını"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Rüyasını kardeşlerine anlatmamasını",
+        "correctAnswer": "Rüyasını kardeşlerinden saklamasını",
         "explanation": "Yûsuf 12/5-6'da Hz. Ya‘kūb oğluna rüyasını kardeşlerine anlatmamasını öğütler; kıskançlıkla kurulabilecek tuzaklara dikkat çeker.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — YÛSUF",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/yusuf",
-            "locator": "Yûsuf 12/5-6, babasının öğüdü",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "12/5; Kur’an Yolu Meal PDF pasajı",
             "supports": "Yûsuf 12/5-6'da Hz. Ya‘kūb oğluna rüyasını kardeşlerine anlatmamasını öğütler; kıskançlıkla kurulabilecek tuzaklara dikkat çeker.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-yusuf-031",
+        "reviewedCandidateSha256": "f0df5e64e89a54930ac8b19c6827119fdecb9e59d743594d07889385b5db02d1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yeni kuyu ve hemen Mısır’a gitme gibi bağlam dışı eylemler yerine dört rüya davranışı. Rüyayı yorumlamak başka bağlamda uygun olabilir; kök babasının belirli öğüdüne bağlı.",
+        "optionReview": {
+          "o4": "Başka zamanlama davranışı.",
+          "o2": "12/5’teki uyarı.",
+          "o1": "Başka paylaşım davranışı.",
+          "o3": "Başka değerlendirme davranışı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "12/5; PDF sayfa 247 (1 tabanlı), basılı sayfa 246",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2441,8 +3168,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-yusuf-032",
+        "reviewedCandidateSha256": "8fd3ac4692a45995a3d8819c049cf96732d9ab6afcb35dd5cb5b86668462b12d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört yönetici unvanı aynı bilgi alanında. 12/21’in dipnotu ve 28/30 metni aziz adını açıklar; şahsın özel adı diye sunulmadı.",
+        "optionReview": {
+          "o1": "Başka devlet unvanı.",
+          "o2": "Satın alan şahsın unvanı.",
+          "o3": "Başka devlet unvanı.",
+          "o4": "Başka devlet unvanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "12/28; PDF sayfa 250 (1 tabanlı), basılı sayfa 249",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2492,20 +3243,20 @@
         "question": "Hz. Yûsuf'a yönelik suçlamanın değerlendirilmesinde gömleğin hangi yönden yırtılması önemlidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sağdan veya soldan"
+            "id": "o4",
+            "text": "Yakadan veya etekten"
           },
           {
             "id": "o2",
             "text": "Önden veya arkadan"
           },
           {
-            "id": "o3",
-            "text": "Üstten veya alttan"
+            "id": "o1",
+            "text": "Sağdan veya soldan"
           },
           {
-            "id": "o4",
-            "text": "Sadece omuzdan"
+            "id": "o3",
+            "text": "Üstten veya alttan"
           }
         ],
         "correctOptionId": "o2",
@@ -2513,20 +3264,46 @@
         "explanation": "Kur’an'ın Yûsuf kıssasında gömleğin önden ya da arkadan yırtılmış olması, olayın kimin anlatımıyla uyumlu olduğunun anlaşılmasında delildir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — YÛSUF",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/yusuf",
-            "locator": "Yûsuf'un gömleğiyle ilgili delil",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "12/26; Kur’an Yolu Meal PDF pasajı",
             "supports": "Kur’an'ın Yûsuf kıssasında gömleğin önden ya da arkadan yırtılmış olması, olayın kimin anlatımıyla uyumlu olduğunun anlaşılmasında delildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-yusuf-033",
+        "reviewedCandidateSha256": "9ede3173b3bf116ab60c039f3c71c8e597a198f6c50356dd21cf7e41d8170430",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç eş yön çifti karşısında yalnız omuzdan ifadesi yerine dört gömlek yönü/konumu çifti. Ayetteki önden/arkadan karşılaştırması belirli.",
+        "optionReview": {
+          "o4": "Başka gömlek konumu çifti.",
+          "o2": "26–28’in delil ayrımı.",
+          "o1": "Başka yön çifti.",
+          "o3": "Başka yön çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "12/26; PDF sayfa 250 (1 tabanlı), basılı sayfa 249",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2609,8 +3386,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-yusuf-034",
+        "reviewedCandidateSha256": "f1e9e3a653adb6505e47be32cdb6092305a4d73b005cc9a3b0ae31cf0717bbe0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört genç sayısı. 12/36 iki rüya sahibini ayırır; rüyalardaki kuş/ekmek sayısıyla karıştırılmaz.",
+        "optionReview": {
+          "o1": "Eksik genç sayısı.",
+          "o2": "İki genç.",
+          "o3": "Fazla genç sayısı.",
+          "o4": "Fazla genç sayısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "12/36; PDF sayfa 250 (1 tabanlı), basılı sayfa 249",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2693,8 +3494,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hatice-036",
+        "reviewedCandidateSha256": "4ca3ffd4d439c2acf5960afd264d9c5fd2a63ddf73376c11ab6ead115f14ffd8",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört çağdaş Mekke kişisi. İlk vahiyden sonra Hatice’nin götürdüğü akraba Varaka kaynakta açık; daha önce evlenme önerisi gerçekleşmemiştir.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Görüşülen akraba.",
+          "o3": "Başka Mekke kişisi.",
+          "o4": "Başka Mekke kişisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "116–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2777,8 +3602,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hatice-037",
+        "reviewedCandidateSha256": "23c663112879d6bbfe23ee94f2c727593338631b19c46c728245c8db1f638e59",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hanım adı aynı biçimde. Nefîse’nin aracılığı kaynakta ikinci ihtimal/rivayet olarak aktarılır; kök aktarılan diyerek kesin tek evlenme anlatımı iddia etmez.",
+        "optionReview": {
+          "o1": "Başka hanım.",
+          "o2": "Aracılığı rivayet edilen.",
+          "o3": "Başka hanım.",
+          "o4": "Başka hanım."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "108–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2825,16 +3674,8 @@
         ]
       },
       "after": {
-        "question": "Hz. Hatice'nin ilk evliliğinden olan ve Hz. Peygamber'in terbiyesinde yetişen oğlunun adı nedir?",
+        "question": "TDV’ye göre Hatice’nin Ebû Hâle ile evliliğinden doğan ve Hz. Peygamber’in yanında yetişen oğlu kimdir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "İsmâil"
-          },
-          {
-            "id": "o2",
-            "text": "Hind"
-          },
           {
             "id": "o3",
             "text": "Zeyd"
@@ -2842,27 +3683,61 @@
           {
             "id": "o4",
             "text": "Yahyâ"
+          },
+          {
+            "id": "o2",
+            "text": "Hind"
+          },
+          {
+            "id": "o1",
+            "text": "İsmâil"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Hind",
-        "explanation": "TDV Hatice maddesi, ilk evliliğinden Hind adlı oğlunun doğduğunu ve Hz. Peygamber'in yanında yetiştiğini belirtir.",
+        "explanation": "TDV, Hatice’nin Ebû Hâle ile evliliğinden doğan Hind’in Hz. Peygamber’in yanında yetiştiğini kaydeder. Önceki evliliklerin sıralamasına ilişkin farklı rivayetler vardır; sorunun anahtarı bu sıraya dayanmaz.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HATİCE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hatice",
-            "locator": "Hind b. Ebû Hâle",
-            "supports": "TDV Hatice maddesi, ilk evliliğinden Hind adlı oğlunun doğduğunu ve Hz. Peygamber'in yanında yetiştiğini belirtir.",
+            "locator": "106–107. satırlar",
+            "supports": "TDV, Hatice’nin Ebû Hâle ile evliliğinden doğan Hind’in Hz. Peygamber’in yanında yetiştiğini kaydeder. Önceki evliliklerin sıralamasına ilişkin farklı rivayetler vardır; sorunun anahtarı bu sıraya dayanmaz.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hatice-038",
+        "reviewedCandidateSha256": "d8b22e7ab86b704e57f51556d4f13a679cd1c7bf49a84a82bd2956603c508562",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Önceki iki evliliğin sırası kaynaklarda farklı veriliyor. Sıra yerine babanın adıyla kesin bağlam kuruldu; dört kişi adı korunuyor.",
+        "optionReview": {
+          "o3": "Farklı kişi adı.",
+          "o4": "Farklı kişi adı.",
+          "o2": "Ebû Hâle’den doğan oğul.",
+          "o1": "Farklı kişi adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Hatice 106–107 iki önceki eşin sırası için farklı rivayetler kaydeder. İlk eş ifadesi, tek tartışmasız tarihsel sıra gibi kullanılamaz. Anahtar sıra dışındaki açık kimlik bilgisine bağlandı.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "106–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2912,20 +3787,20 @@
         "question": "Hz. Hatice'nin vefatıyla birlikte aynı dönemde ölen ve Hüzün Yılı'yla anılan aile büyüğü kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Abbâs b. Abdülmuttalib"
+            "id": "o3",
+            "text": "Hamza"
+          },
+          {
+            "id": "o4",
+            "text": "Ebû Leheb"
           },
           {
             "id": "o2",
             "text": "Ebû Tâlib"
           },
           {
-            "id": "o3",
-            "text": "Zeyd b. Hârise"
-          },
-          {
-            "id": "o4",
-            "text": "Osman b. Affân"
+            "id": "o1",
+            "text": "Abbâs"
           }
         ],
         "correctOptionId": "o2",
@@ -2933,20 +3808,46 @@
         "explanation": "Hz. Hatice ve Ebû Tâlib'in vefat ettiği nübüvvetin onuncu yılı İslâm tarihinde Senetü'l-hüzn, yani Hüzün Yılı olarak anılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HATİCE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hatice",
-            "locator": "Hüzün Yılı, Hatice ve Ebû Tâlib",
+            "locator": "122–123. satırlar",
             "supports": "Hz. Hatice ve Ebû Tâlib'in vefat ettiği nübüvvetin onuncu yılı İslâm tarihinde Senetü'l-hüzn, yani Hüzün Yılı olarak anılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hatice-039",
+        "reviewedCandidateSha256": "534888018b23ad89c5d1101a524c7118c500eb14d91f085b5c238c6958813235",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İki farklı aile rolü yerine dört amca adı. Hüzün yılıyla birlikte anılan amca Ebû Tâlib’dir; vefatların kesin önce-sonrası ihtilafı sorulmuyor.",
+        "optionReview": {
+          "o3": "Başka amca.",
+          "o4": "Başka amca.",
+          "o2": "Aynı dönemde vefat eden amca.",
+          "o1": "Başka amca."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "122–123. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2993,15 +3894,15 @@
         ]
       },
       "after": {
-        "question": "Hz. Hatice'nin Hz. Peygamber'den önceki ilk eşinin adı nedir?",
+        "question": "Hatice’nin önceki eşlerinden et-Temîmî nisbesiyle anılan kimdir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Ebû Süfyân"
-          },
           {
             "id": "o2",
             "text": "Ebû Hâle"
+          },
+          {
+            "id": "o1",
+            "text": "Atîk b. Âbid"
           },
           {
             "id": "o3",
@@ -3009,28 +3910,54 @@
           },
           {
             "id": "o4",
-            "text": "Hâris b. Abdülmuttalib"
+            "text": "Ebû Süfyân"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Ebû Hâle",
-        "explanation": "TDV Hatice maddesi, Hz. Hatice'nin ilk evliliğini Ebû Hâle Hind b. Zürâre ile yaptığını kaydeder; bu evlilikten Hind adlı oğlu olmuştur.",
+        "explanation": "TDV, Hatice’nin önceki eşlerinden Ebû Hâle’yi Hind b. Zürâre et-Temîmî olarak anar. Diğer eşi Atîk b. Âbid el-Mahzûmî’dir. Evliliklerin sırasına ilişkin farklı rivayetler bulunduğundan soru sıra yerine nisbeyi sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HATİCE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hatice",
-            "locator": "Ebû Hâle ile ilk evliliği",
-            "supports": "TDV Hatice maddesi, Hz. Hatice'nin ilk evliliğini Ebû Hâle Hind b. Zürâre ile yaptığını kaydeder; bu evlilikten Hind adlı oğlu olmuştur.",
+            "locator": "106–107. satırlar",
+            "supports": "TDV, Hatice’nin önceki eşlerinden Ebû Hâle’yi Hind b. Zürâre et-Temîmî olarak anar. Diğer eşi Atîk b. Âbid el-Mahzûmî’dir. Evliliklerin sırasına ilişkin farklı rivayetler bulunduğundan soru sıra yerine nisbeyi sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hatice-040",
+        "reviewedCandidateSha256": "1cc3d1ac8728f894a3a812e31d924affabcf98cd10bdfec59fc098aa85f145f5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Önceki eşlerin sırası ihtilaflı olduğundan ilk eş hükmü kaldırıldı. Kaynağın Temîmî nisbesi belirli; Atîk gerçek diğer eştir, yanlış olan kökteki nisbe eşleşmesidir.",
+        "optionReview": {
+          "o2": "Temîmî diye anılan eş.",
+          "o1": "Mahzûmî diye anılan diğer eş.",
+          "o3": "Başka Mekke büyüğü.",
+          "o4": "Başka Mekke büyüğü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Hatice 106–107 iki önceki eşin sırası için farklı rivayetler kaydeder. İlk eş ifadesi, tek tartışmasız tarihsel sıra gibi kullanılamaz. Anahtar sıra dışındaki açık kimlik bilgisine bağlandı.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "106–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3113,8 +4040,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q48-hatice-042",
+        "reviewedCandidateSha256": "0d9b1b4ee779c7d69cbf78c7b3777da9417be618bc847a03e96667be4ec80375",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört yıl. Kök TDV madde başlığına bağlı ve gövde 122’de de 620 veriliyor. Vefatların birbirine göre gün sırası ihtilafı anahtar yapılmadı.",
+        "optionReview": {
+          "o1": "Daha sonraki yıl.",
+          "o2": "TDV’deki vefat yılı.",
+          "o3": "Daha sonraki yıl.",
+          "o4": "Daha önceki yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hatice",
+          "locator": "122–123. satırlar; başlıktaki tarihle aynı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3161,23 +4112,23 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî'nin doğum yeri olarak TDV maddesinde hangi Hârizm şehri verilir?",
+        "question": "Bîrûnî’nin doğduğu şehir hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Buhara"
+            "text": "Gazne"
+          },
+          {
+            "id": "o3",
+            "text": "Cürcân"
+          },
+          {
+            "id": "o4",
+            "text": "Rey"
           },
           {
             "id": "o2",
             "text": "Kâs"
-          },
-          {
-            "id": "o3",
-            "text": "Kahire"
-          },
-          {
-            "id": "o4",
-            "text": "Tebriz"
           }
         ],
         "correctOptionId": "o2",
@@ -3185,20 +4136,46 @@
         "explanation": "TDV Bîrûnî maddesine göre Bîrûnî 4 Eylül 973 tarihinde Hârizm'in merkezi Kâs şehrinde dünyaya gelmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "Hârizm'in merkezi Kâs'ta doğum",
+            "locator": "100–101 ve 114–121. satırlar",
             "supports": "TDV Bîrûnî maddesine göre Bîrûnî 4 Eylül 973 tarihinde Hârizm'in merkezi Kâs şehrinde dünyaya gelmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-001",
+        "reviewedCandidateSha256": "ecae96a305756aa515dc03d4936ba4104574f6fb238b913237da3f41e533cad8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dört uzak şehirden yalnız Hârizm’deki şehri seçme yerine Bîrûnî’nin hayatındaki dört gerçek şehir. Kök doğum yerini soruyor; dışarılı nisbesinin yorumu tek köken iddiasına çevrilmedi.",
+        "optionReview": {
+          "o1": "Sonraki çalışma şehri.",
+          "o3": "Sonraki çalışma şehri.",
+          "o4": "Sonraki uğrak şehri.",
+          "o2": "Doğum yeri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "100–101 ve 114–121. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3245,44 +4222,75 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî'nin Tahkīku mâ li'l-Hind adlı eserinin temel konusu nedir?",
+        "question": "TDV’ye göre Bîrûnî’nin Tahkīku mâ li’l-Hind’de öne çıkan inceleme yöntemi hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Roma hukuk sistemi"
-          },
-          {
-            "id": "o2",
-            "text": "Hint dinleri ve kültürü"
+            "text": "Hanedanlara göre yıllık kronik"
           },
           {
             "id": "o3",
-            "text": "Mısır mimarisi"
+            "text": "Sikke ve yazıtların kataloglanması"
           },
           {
             "id": "o4",
-            "text": "Endülüs denizciliği"
+            "text": "Hükümdar antlaşmalarının dökümü"
+          },
+          {
+            "id": "o2",
+            "text": "Karşılaştırmalı gözlem ve tasvir"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hint dinleri ve kültürü",
-        "explanation": "Bîrûnî, Tahkīku mâ li'l-Hind eserinde Hindistan'ın inançlarını, bilimlerini, kültürünü ve toplumsal hayatını karşılaştırmalı biçimde incelemiştir.",
+        "correctAnswer": "Karşılaştırmalı gözlem ve tasvir",
+        "explanation": "TDV, Bîrûnî’nin Tahkīku mâ li’l-Hind’de Hint din ve kültürünü tanımaya, olguları tespit etmeye ve karşılaştırmaya yöneldiğini anlatır. Bu, eserin her değerlendirmesinin tarafsız olduğu veya başka konuları işlemediği iddiası değildir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "Hindistan üzerine araştırma",
-            "supports": "Bîrûnî, Tahkīku mâ li'l-Hind eserinde Hindistan'ın inançlarını, bilimlerini, kültürünü ve toplumsal hayatını karşılaştırmalı biçimde incelemiştir.",
+            "locator": "194–196 ve 221. satırlar",
+            "supports": "TDV, Bîrûnî’nin Tahkīku mâ li’l-Hind’de Hint din ve kültürünü tanımaya, olguları tespit etmeye ve karşılaştırmaya yöneldiğini anlatır. Bu, eserin her değerlendirmesinin tarafsız olduğu veya başka konuları işlemediği iddiası değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-002",
+        "reviewedCandidateSha256": "0d77fe3331863cc1c4042cda786b3d778abede02507d9897af4b85ac5d7f58e8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kitabın adındaki Hind’e karşı üç başka ülke ipucu kaldırıldı. Kitap din, kültür ve bilim gibi birçok alanı içerdiğinden bunlar birbirine yanlış şık yapılmadı. Dört gerçek araştırma yaklaşımı içinde TDV’nin öne çıkardığı yöntem soruluyor.",
+        "optionReview": {
+          "o1": "Başka tarih yazım yöntemi.",
+          "o3": "Başka maddî kaynak araştırma yöntemi.",
+          "o4": "Başka siyasî belge inceleme yöntemi.",
+          "o2": "Kaynağın tasvir ettiği karşılaştırmalı tespit."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Bîrûnî eserleri birden fazla bilim alanı içerir. Kök yöntem, modern alan adı, TDV’nin giriş tanımı, asıl ikinci bölüm veya öne çıkan tıp dalına bağlıdır. İçeriğin başka konular içermediği iddia edilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "194–196 ve 221. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3329,23 +4337,23 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî'nin Tahdîdü nihâyâti'l-emâkin adlı eseri hangi bilim dalının gelişimiyle ilişkilidir?",
+        "question": "TDV’ye göre Bîrûnî’nin Tahdîdü nihâyâti’l-emâkin’de geliştirdiği ölçüm alanının günümüzdeki adı nedir?",
         "options": [
           {
             "id": "o1",
-            "text": "Dilbilgisi"
+            "text": "Astronomi"
+          },
+          {
+            "id": "o3",
+            "text": "Optik"
+          },
+          {
+            "id": "o4",
+            "text": "Mekanik"
           },
           {
             "id": "o2",
             "text": "Jeodezi"
-          },
-          {
-            "id": "o3",
-            "text": "Hadis usulü"
-          },
-          {
-            "id": "o4",
-            "text": "Fıkıh usulü"
           }
         ],
         "correctOptionId": "o2",
@@ -3353,20 +4361,46 @@
         "explanation": "TDV'ye göre Bîrûnî'nin mesafeler, coğrafî konum ve enlem-boylam ölçümleriyle ilgili bu eseri bugün jeodezi adı verilen alanla ilişkilidir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "Tahdîd ve jeodezi",
+            "locator": "218–219. satırlar",
             "supports": "TDV'ye göre Bîrûnî'nin mesafeler, coğrafî konum ve enlem-boylam ölçümleriyle ilgili bu eseri bugün jeodezi adı verilen alanla ilişkilidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-003",
+        "reviewedCandidateSha256": "1ef67021708a857391d5b3fd09025c810f48896a343e1f83eb4e283d02cb5e88",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç dil/hukuk ilmine karşı tek matematik bilimi yerine dört matematik/tabiat bilimi. Eser astronomik bilgiler de içerdiği için hangi konu var kökü değil geliştirilen alanın adı soruldu.",
+        "optionReview": {
+          "o1": "Eserde de bilgiler var; adı sorulan yeni alan değil.",
+          "o3": "Başka matematik/tabiat alanı.",
+          "o4": "Başka matematik/tabiat alanı.",
+          "o2": "TDV’nin modern karşılığı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Bîrûnî eserleri birden fazla bilim alanı içerir. Kök yöntem, modern alan adı, TDV’nin giriş tanımı, asıl ikinci bölüm veya öne çıkan tıp dalına bağlıdır. İçeriğin başka konular içermediği iddia edilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "218–219. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3413,44 +4447,70 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî'nin et-Tefhîm eseri hangi bilgi alanına giriş niteliğindedir?",
+        "question": "TDV’nin Bîrûnî maddesinde et-Tefhîm nasıl bir giriş eseri olarak nitelendirilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Siyer ve hadis rivayeti"
+            "id": "o2",
+            "text": "Astronomik bilimlere giriş"
           },
           {
-            "id": "o2",
-            "text": "Astronomi ve ilgili matematik"
+            "id": "o1",
+            "text": "Eczacılık mesleğine giriş"
           },
           {
             "id": "o3",
-            "text": "Tarihî şiir sanatı"
+            "text": "Mineraloji araştırmalarına giriş"
           },
           {
             "id": "o4",
-            "text": "Tıp cerrahisi"
+            "text": "Tarih yazıcılığına giriş"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Astronomi ve ilgili matematik",
+        "correctAnswer": "Astronomik bilimlere giriş",
         "explanation": "Bîrûnî'nin et-Tefhîm adlı eseri astronomik bilimlere giriş niteliğindedir; matematik, coğrafya ve dönemin astroloji kavramlarını da içerir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "et-Tefhîm'in konusu",
+            "locator": "173 ve 220. satırlar",
             "supports": "Bîrûnî'nin et-Tefhîm adlı eseri astronomik bilimlere giriş niteliğindedir; matematik, coğrafya ve dönemin astroloji kavramlarını da içerir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-004",
+        "reviewedCandidateSha256": "1997cf9d1dcffc7257ce06fb3bf6b4047d00414a7e58d2953aa47eb7446ea6f9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç alan dışı iş yerine Bîrûnî’nin çalışmalarına yakın dört alan. Eser matematik, coğrafya ve astroloji de içerir; bu konular yanlış şık yapılmadı. TDV’nin astronomik bilimlere giriş tanımı hedefleniyor.",
+        "optionReview": {
+          "o2": "Maddedeki giriş niteliği.",
+          "o1": "Başka eserinin alanı.",
+          "o3": "Başka eserinin alanı.",
+          "o4": "Başka çalışma alanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Bîrûnî eserleri birden fazla bilim alanı içerir. Kök yöntem, modern alan adı, TDV’nin giriş tanımı, asıl ikinci bölüm veya öne çıkan tıp dalına bağlıdır. İçeriğin başka konular içermediği iddia edilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "173 ve 220. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3497,44 +4557,70 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî el-Kānûnü'l-Mes‘ûdî eserini hangi hükümdara ithaf etti?",
+        "question": "Bîrûnî ünlü astronomi ansiklopedisini Gazneli hükümdarlardan hangisine ithaf etmiştir?",
         "options": [
           {
             "id": "o1",
-            "text": "Selçuklu Sultanı Alparslan'a"
-          },
-          {
-            "id": "o2",
-            "text": "Gazneli Sultan Mesud'a"
+            "text": "Mahmud"
           },
           {
             "id": "o3",
-            "text": "Fâtih Sultan Mehmed'e"
+            "text": "Sebük Tegin"
           },
           {
             "id": "o4",
-            "text": "Abbâsî Halifesi Me'mûn'a"
+            "text": "Mevdûd"
+          },
+          {
+            "id": "o2",
+            "text": "Mesud"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Gazneli Sultan Mesud'a",
+        "correctAnswer": "Mesud",
         "explanation": "TDV maddesi Bîrûnî'nin el-Kānûnü'l-Mes‘ûdî adlı astronomi eserini Gazne Hükümdarı Mesud'a ithaf ettiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "Mesud'a ithaf edilen eser",
+            "locator": "144–147 ve 223. satırlar",
             "supports": "TDV maddesi Bîrûnî'nin el-Kānûnü'l-Mes‘ûdî adlı astronomi eserini Gazne Hükümdarı Mesud'a ithaf ettiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-005",
+        "reviewedCandidateSha256": "31f63bb1e7ac6818d331b2ade1b3173bcbce20009d2feb943821930752963095",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Fatih/Me’mûn/Alparslan anakronizmleri ve Mes‘ûdî adının cevabı söylemesi giderildi. Dört Gazneli hükümdar; doğru ithaf kaynakta belirli.",
+        "optionReview": {
+          "o1": "Önceki hâmisi.",
+          "o3": "Hanedanın önceki hükümdarı.",
+          "o4": "El-Cemâhir’in ithafıyla karışabilir.",
+          "o2": "Astronomi ansiklopedisinin ithafı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "144–147 ve 223. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3581,23 +4667,23 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî'nin el-Cemâhir fi'l-cevâhir adlı eserinin ağırlıklı olarak ilişkili olduğu alan nedir?",
+        "question": "Bîrûnî’nin el-Cemâhir’inin ikinci bölümündeki asıl konu hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Savaş taktikleri"
+            "text": "Bitkiler ve ilâçlar"
+          },
+          {
+            "id": "o3",
+            "text": "Yıldızlar ve yörüngeler"
+          },
+          {
+            "id": "o4",
+            "text": "Şehirler ve koordinatlar"
           },
           {
             "id": "o2",
             "text": "Değerli taşlar ve mineraller"
-          },
-          {
-            "id": "o3",
-            "text": "Hac menâsiki"
-          },
-          {
-            "id": "o4",
-            "text": "Arap şiir vezinleri"
           }
         ],
         "correctOptionId": "o2",
@@ -3605,20 +4691,46 @@
         "explanation": "Bîrûnî'nin el-Cemâhir adlı eseri mineraloji ve değerli taşlar üzerine bilgiler içerir; TDV bunu temel eserleri arasında sayar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "el-Cemâhir ve mineraloji",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/el-cemahir",
+            "locator": "98 ve 104–110. satırlar",
             "supports": "Bîrûnî'nin el-Cemâhir adlı eseri mineraloji ve değerli taşlar üzerine bilgiler içerir; TDV bunu temel eserleri arasında sayar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-006",
+        "reviewedCandidateSha256": "b8efec80f57ee426d268506310351497357f29c4b5d063e8a335a0313352c14e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Savaş/hac/vezin yerine dört bilimsel inceleme konusu. Eserin ilk bölümünde ahlâk ve tıp da bulunduğundan geniş kitap konusu kökü ikinci bölüme daraltıldı.",
+        "optionReview": {
+          "o1": "Başka Bîrûnî eserinin odağı.",
+          "o3": "Başka Bîrûnî eserinin odağı.",
+          "o4": "Başka Bîrûnî eserinin odağı.",
+          "o2": "İkinci bölümdeki asıl inceleme."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Bîrûnî eserleri birden fazla bilim alanı içerir. Kök yöntem, modern alan adı, TDV’nin giriş tanımı, asıl ikinci bölüm veya öne çıkan tıp dalına bağlıdır. İçeriğin başka konular içermediği iddia edilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/el-cemahir",
+          "locator": "98 ve 104–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3665,44 +4777,70 @@
         ]
       },
       "after": {
-        "question": "Bîrûnî'nin ömrünün sonlarında kaleme aldığı es-Ṣaydele fi't-tıb hangi alanla ilgilidir?",
+        "question": "Bîrûnî’nin es-Saydele fi’t-tıb adlı eserinde öne çıkan tıp alanı hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Gemilerin deniz haritaları"
+            "id": "o4",
+            "text": "Anatomi"
           },
           {
             "id": "o2",
-            "text": "Eczacılık ve tıp"
+            "text": "Eczacılık"
+          },
+          {
+            "id": "o1",
+            "text": "Cerrahi"
           },
           {
             "id": "o3",
-            "text": "Mimarlık çizimleri"
-          },
-          {
-            "id": "o4",
-            "text": "Abbâsî divan kayıtları"
+            "text": "Göz hekimliği"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Eczacılık ve tıp",
+        "correctAnswer": "Eczacılık",
         "explanation": "Bîrûnî'nin son önemli eserlerinden es-Ṣaydele fi't-tıb eczacılık, tıp ve bitkilerle ilgili bilgileri bir araya getirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "es-Saydele'nin konusu",
+            "locator": "192–193 ve 225. satırlar",
             "supports": "Bîrûnî'nin son önemli eserlerinden es-Ṣaydele fi't-tıb eczacılık, tıp ve bitkilerle ilgili bilgileri bir araya getirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-007",
+        "reviewedCandidateSha256": "e9ee5d404475ab3ae6d264ffe9e62dd5fa0d2acf89a0434f4c13b4918fd28ab6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp kelimesine karşı üç tıp dışı iş ipucu yerine dört tıbbî alan. Botanik ve filoloji de eserde yer aldığından bunlar yanlış şık yapılmadı. Ayrı Saydele URL’si erişilemedi; doğrulama gerçekten okunan Bîrûnî pasajına dayanır.",
+        "optionReview": {
+          "o4": "Başka tıbbî alan.",
+          "o2": "Eserin öne çıkan farmakoloji alanı.",
+          "o1": "Başka tıbbî alan.",
+          "o3": "Başka tıbbî alan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Bîrûnî eserleri birden fazla bilim alanı içerir. Kök yöntem, modern alan adı, TDV’nin giriş tanımı, asıl ikinci bölüm veya öne çıkan tıp dalına bağlıdır. İçeriğin başka konular içermediği iddia edilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "192–193 ve 225. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3752,20 +4890,20 @@
         "question": "Bîrûnî'nin Hindistan'ı konu alan kitabı yaklaşık hangi milâdî yılda tamamlanmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "711"
+            "id": "o3",
+            "text": "1040"
+          },
+          {
+            "id": "o4",
+            "text": "1050"
           },
           {
             "id": "o2",
             "text": "1030"
           },
           {
-            "id": "o3",
-            "text": "1258"
-          },
-          {
-            "id": "o4",
-            "text": "1453"
+            "id": "o1",
+            "text": "1020"
           }
         ],
         "correctOptionId": "o2",
@@ -3773,20 +4911,46 @@
         "explanation": "TDV Bîrûnî maddesi Tahkīku mâ li'l-Hind'in hicrî 421, milâdî 1030 yılında tamamlandığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — BÎRÛNÎ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/biruni",
-            "locator": "Tahkīku mâ li'l-Hind, 1030",
+            "locator": "221–222. satırlar",
             "supports": "TDV Bîrûnî maddesi Tahkīku mâ li'l-Hind'in hicrî 421, milâdî 1030 yılında tamamlandığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-biruni-008",
+        "reviewedCandidateSha256": "63f72871148e89764b35ba7f3f7fd5b1d9cddabb04e3f5dba7a63eccb84d8d08",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "711/1258/1453 gibi yazarın yaşamı dışındaki üç ünlü tarih yerine aynı ömür dönemindeki yakın yıllar. 421/1030 kaynakta açık.",
+        "optionReview": {
+          "o3": "Yakın geç yıl.",
+          "o4": "Yakın geç yıl.",
+          "o2": "Telifin tamamlandığı yıl.",
+          "o1": "Yakın erken yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/biruni",
+          "locator": "221–222. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3836,41 +5000,67 @@
         "question": "Târîhu'l-ümem ve'l-mülûk eserinin yaygın diğer adı hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "el-Kānûn fi't-Tıb"
+            "id": "o2",
+            "text": "Târîhu’t-Taberî"
           },
           {
-            "id": "o2",
-            "text": "Târîhu't-Taberî"
+            "id": "o1",
+            "text": "el-Kâmil fi’t-târîh"
           },
           {
             "id": "o3",
-            "text": "Kitâbü'l-Hiyel"
+            "text": "Mürûcü’z-zeheb"
           },
           {
             "id": "o4",
-            "text": "el-Muvatta'"
+            "text": "el-Bidâye ve’n-nihâye"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Târîhu't-Taberî",
+        "correctAnswer": "Târîhu’t-Taberî",
         "explanation": "TDV'ye göre Târîhu'l-ümem ve'l-mülûk, Târîhu't-Taberî adıyla da tanınan bir genel tarih eseridir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — TÂRÎHU'l-ÜMEM ve'l-MÜLÛK",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
-            "locator": "Târîhu't-Taberî adı",
+            "locator": "96–103. satırlar",
             "supports": "TDV'ye göre Târîhu'l-ümem ve'l-mülûk, Târîhu't-Taberî adıyla da tanınan bir genel tarih eseridir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-taberi-010",
+        "reviewedCandidateSha256": "2ed525db2f6d37745a1f306c72dbc0d7db4019afc787f4a5c51d9702bd835cce",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp/mekanik/hadis eserleri yerine dört gerçek tarih kitabı. Eserin alternatif adı ile başka tarihçilerin eserleri ayrılır.",
+        "optionReview": {
+          "o2": "Sorulan eserin diğer adı.",
+          "o1": "İbnü’l-Esîr’in tarih eseri.",
+          "o3": "Mes‘ûdî’nin tarih eseri.",
+          "o4": "İbn Kesîr’in tarih eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3921,19 +5111,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "622"
+            "text": "893"
+          },
+          {
+            "id": "o3",
+            "text": "913"
+          },
+          {
+            "id": "o4",
+            "text": "923"
           },
           {
             "id": "o2",
             "text": "903"
-          },
-          {
-            "id": "o3",
-            "text": "1000"
-          },
-          {
-            "id": "o4",
-            "text": "1258"
           }
         ],
         "correctOptionId": "o2",
@@ -3941,20 +5131,46 @@
         "explanation": "TDV maddesinde Taberî'nin tefsirini tamamladıktan sonra hicrî 290, milâdî 903 yılında tarih eserini yazmaya başladığı belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — TÂRÎHU'l-ÜMEM ve'l-MÜLÛK",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
-            "locator": "Eserin yazımına başlama, 903",
+            "locator": "96. satır",
             "supports": "TDV maddesinde Taberî'nin tefsirini tamamladıktan sonra hicrî 290, milâdî 903 yılında tarih eserini yazmaya başladığı belirtilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-taberi-011",
+        "reviewedCandidateSha256": "2b9b77e9ea5ca76d15b30a86275cd322783f601a4322e27a52ab0c9f11675f0a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yüzyıllarca uzak tarihler yerine Taberî’nin hayatı içindeki yakın yıllar. 290/903 başlangıç, 303/915–16 bitiş olarak ayrı kontrol edildi.",
+        "optionReview": {
+          "o1": "Yakın erken yıl.",
+          "o3": "Yakın geç yıl.",
+          "o4": "Yakın geç yıl.",
+          "o2": "Başlangıç yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
+          "locator": "96. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4005,40 +5221,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "750-751"
-          },
-          {
-            "id": "o2",
-            "text": "915-916"
+            "text": "905–906"
           },
           {
             "id": "o3",
-            "text": "1000-1001"
+            "text": "910–911"
           },
           {
             "id": "o4",
-            "text": "1453-1454"
+            "text": "920–921"
+          },
+          {
+            "id": "o2",
+            "text": "915–916"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "915-916",
+        "correctAnswer": "915–916",
         "explanation": "Taberî'nin tarihi hicrî 303, milâdî 915-916 yıllarında bitirdiği TDV maddesinde kaydedilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — TÂRÎHU'l-ÜMEM ve'l-MÜLÛK",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
-            "locator": "Tarihin tamamlanışı, 915-916",
+            "locator": "96. satır",
             "supports": "Taberî'nin tarihi hicrî 303, milâdî 915-916 yıllarında bitirdiği TDV maddesinde kaydedilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-taberi-012",
+        "reviewedCandidateSha256": "eb8205ec394d956ef883c952d5e2030b601d5acf6a2cd51d15bb339eaabc2541",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Birbirinden yüzyıllarca uzak yıl çiftleri yerine aynı hayat dönemindeki yakın çiftler. Tarihin son anlattığı olay ile telifin bitişi ayrılır.",
+        "optionReview": {
+          "o1": "Yakın erken yıl çifti.",
+          "o3": "Yakın erken yıl çifti.",
+          "o4": "Yakın geç yıl çifti.",
+          "o2": "303 hicrînin bitiş karşılığı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
+          "locator": "96. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4085,44 +5327,70 @@
         ]
       },
       "after": {
-        "question": "Taberî'nin tarih rivayetlerini aktarırken özellikle dikkat ettiği unsur nedir?",
+        "question": "Taberî’nin tarihinde bir haberin kimlerden nakledildiğini gösteren yapının adı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Şiirin vezni"
+            "id": "o4",
+            "text": "Hâşiye"
           },
           {
             "id": "o2",
-            "text": "İsnad zinciri"
+            "text": "İsnad"
+          },
+          {
+            "id": "o1",
+            "text": "Metin"
           },
           {
             "id": "o3",
-            "text": "Haritanın rengi"
-          },
-          {
-            "id": "o4",
-            "text": "İklimin sıcaklığı"
+            "text": "Şerh"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İsnad zinciri",
-        "explanation": "TDV'ye göre Taberî tarihindeki rivayetlerin doğruluğuna ilişkin değerlendirmeyi çoğunlukla okuyucuya bırakırken haberlerin isnad zincirine dikkat eder.",
+        "correctAnswer": "İsnad",
+        "explanation": "TDV, Taberî’nin naklettiği haberlerin isnad zincirine dikkat ettiğini belirtir. İsnad, haberin kimler aracılığıyla aktarıldığını gösteren râviler dizisidir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — TÂRÎHU'l-ÜMEM ve'l-MÜLÛK",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
-            "locator": "İsnad zincirine verilen önem",
-            "supports": "TDV'ye göre Taberî tarihindeki rivayetlerin doğruluğuna ilişkin değerlendirmeyi çoğunlukla okuyucuya bırakırken haberlerin isnad zincirine dikkat eder.",
+            "locator": "97–103. satırlar",
+            "supports": "TDV, Taberî’nin naklettiği haberlerin isnad zincirine dikkat ettiğini belirtir. İsnad, haberin kimler aracılığıyla aktarıldığını gösteren râviler dizisidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-taberi-015",
+        "reviewedCandidateSha256": "169cc45ad4d6ccaa43018d99110a52a118ff3a3c85015d0bf829bde91af0498f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Vezin/harita rengi/iklim gibi alakasız ipuçları yerine dört metin ve rivayet terimi. Kronoloji de eserin gerçek özelliği olduğundan yanlış seçenek yapılmadı; aktarım zincirinin adı soruldu.",
+        "optionReview": {
+          "o4": "Metne düşülen ek not.",
+          "o2": "Haberi nakledenler dizisi.",
+          "o1": "Rivayetin sözlü içeriği.",
+          "o3": "Metnin açıklaması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu. Yeni kök isnad teriminin anlaşılmasına daha doğrudan bağlı olduğundan medium önerisi bağımsız editör/ürün sahibi değerlendirmesi bekler; otomatik zorluk değişmedi.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
+          "locator": "97–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4169,23 +5437,23 @@
         ]
       },
       "after": {
-        "question": "Taberî'nin tarih eserindeki birçok rivayeti aktarırken değerlendirmeyi kime bıraktığı belirtilir?",
+        "question": "TDV’ye göre Taberî, rivayetlerin kabul edilip edilmemesine ilişkin kararı çoğunlukla kime bırakır?",
         "options": [
           {
             "id": "o1",
-            "text": "Saray mimarına"
+            "text": "Nakledene"
+          },
+          {
+            "id": "o3",
+            "text": "İlk tanığa"
+          },
+          {
+            "id": "o4",
+            "text": "Derleyene"
           },
           {
             "id": "o2",
             "text": "Okuyucuya"
-          },
-          {
-            "id": "o3",
-            "text": "Kervan başına"
-          },
-          {
-            "id": "o4",
-            "text": "Tercümana"
           }
         ],
         "correctOptionId": "o2",
@@ -4193,20 +5461,46 @@
         "explanation": "TDV Taberî tarihi maddesi onun haberleri kaydederken genelde kendi hükmünü öne çıkarmadığını; rivayetleri değerlendirmeyi okuyucuya bıraktığını anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — TÂRÎHU'l-ÜMEM ve'l-MÜLÛK",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
-            "locator": "Rivayet değerlendirmesinde tutumu",
+            "locator": "97–98. satırlar",
             "supports": "TDV Taberî tarihi maddesi onun haberleri kaydederken genelde kendi hükmünü öne çıkarmadığını; rivayetleri değerlendirmeyi okuyucuya bıraktığını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-taberi-016",
+        "reviewedCandidateSha256": "adf2c8b5c97aee472141972f2b22e005b91b0bcaa397591fa48a74e3dbecc28f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Saray mimarı/kervan başı gibi ilgisiz roller yerine rivayet ve metin değerlendirmesindeki dört gerçek muhatap. Haber naklinin sorumluluğu râviye, kabul kararı okuyucuya ayrımı kökte korunuyor. İkinci okumada doğru kısa kelime karşısındaki üç uzun tamlama da dengelendi; dört muhatap kısa ve eş yapıda yazıldı.",
+        "optionReview": {
+          "o1": "Kaynakta haberin sorumluluğu verilen kişi; kabul kararı değil.",
+          "o3": "Rivayetin ilk gözlemcisi; TDV’deki kabul muhatabı değil.",
+          "o4": "Eseri derleyen; TDV’ye göre genelde hükmünü öne çıkarmaz.",
+          "o2": "TDV’nin kabul kararını bıraktığı muhatap."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tarihul-umem-vel-muluk",
+          "locator": "97–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

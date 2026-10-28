@@ -3,12 +3,12 @@
   "start": 901,
   "end": 950,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 20,
+  "pendingReview": 30,
+  "sourceComparedThisRound": 20,
   "blocked": 0,
   "flaggedBefore": 0,
-  "flaggedAfter": 0,
+  "flaggedAfter": 2,
   "records": [
     {
       "sequence": 901,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-017",
+        "reviewedCandidateSha256": "34c38a77e7646d991b436511765cd7c10772c7aff42a03fe0adf9a47412b7f59",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek İslâm ilim/tarih müellifi. İhyâ’nın belirli yazarı Gazzâlî; kitabı yazmadıkları için yanlış, başka alanlarda başarısız sayılmıyorlar.",
+        "optionReview": {
+          "o1": "Başka müellif.",
+          "o2": "İhyâ müellifi.",
+          "o3": "Başka müellif.",
+          "o4": "Başka müellif."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "71 ve 98–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -137,23 +161,23 @@
         ]
       },
       "after": {
-        "question": "İhyâü ulûmi'd-dîn daha çok hangi iki alanı bir arada ele alır?",
+        "question": "TDV’nin tanıtımında İhyâ’nın başta ilişkilendirildiği iki alan hangisidir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Jeodezi ve astronomi"
-          },
           {
             "id": "o2",
             "text": "Tasavvuf ve ahlâk"
           },
           {
+            "id": "o1",
+            "text": "Fıkıh usulü ve kelâm"
+          },
+          {
             "id": "o3",
-            "text": "Tıp ve eczacılık"
+            "text": "Hadis usulü ve ricâl"
           },
           {
             "id": "o4",
-            "text": "Savaş ve denizcilik"
+            "text": "Tefsir usulü ve kıraat"
           }
         ],
         "correctOptionId": "o2",
@@ -161,20 +185,46 @@
         "explanation": "Gazzâlî'nin İhyâ adlı kitabı özellikle dinî yaşayışın ahlâkî ve tasavvufî boyutlarını ele almasıyla tanınır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
-            "locator": "İhyâ'da tasavvuf ve ahlâk",
+            "locator": "71 ve 98–104. satırlar",
             "supports": "Gazzâlî'nin İhyâ adlı kitabı özellikle dinî yaşayışın ahlâkî ve tasavvufî boyutlarını ele almasıyla tanınır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-018",
+        "reviewedCandidateSha256": "60378083d767143f2997a7b6b9bf3328dbdfa6e54c9145bcda2012e23bd988bb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç tabiat/meslek konusuna karşı tek dinî çift yerine dört dinî ilim çifti. İhyâ fıkıh ve kelâmı da işlediğinden tanıtımda başta vurgulanan iki alan soruluyor.",
+        "optionReview": {
+          "o2": "Tanıtımda başta verilen çift.",
+          "o1": "Eserde ilgili yönler var; tanıtımın baştaki çifti değil.",
+          "o3": "Başka dinî ilim çifti.",
+          "o4": "Başka dinî ilim çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "71 ve 98–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -257,8 +307,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-019",
+        "reviewedCandidateSha256": "c2640440e4b11c870faf9001b6714ced597b8b4b7f802cc15e6ac22c267e3f8c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ana cilt sayısı. TDV’nin dört ana cilt/rub‘ düzeni esas; farklı baskıların fiziksel cilt sayısı için evrensel hüküm çıkarılmadı.",
+        "optionReview": {
+          "o1": "Eksik ana cilt sayısı.",
+          "o2": "Dört ana cilt.",
+          "o3": "Fazla ana cilt sayısı.",
+          "o4": "Fazla ana cilt sayısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "101–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -305,23 +379,23 @@
         ]
       },
       "after": {
-        "question": "Gazzâlî İhyâ'da ibadetleri değerlendirirken hangi içsel özelliklere önem verir?",
+        "question": "İhyâ’nın ilk cildinde ibadetlerin dış kuralları yanında hangi iki mânevî şart özellikle örneklenir?",
         "options": [
           {
             "id": "o1",
-            "text": "Ganimet miktarına"
+            "text": "İffet ve kanaat"
+          },
+          {
+            "id": "o3",
+            "text": "Cömertlik ve şefkat"
+          },
+          {
+            "id": "o4",
+            "text": "Hilim ve tevazu"
           },
           {
             "id": "o2",
             "text": "İhlâs ve huşû"
-          },
-          {
-            "id": "o3",
-            "text": "Savaş tecrübesine"
-          },
-          {
-            "id": "o4",
-            "text": "Ticaret hacmine"
           }
         ],
         "correctOptionId": "o2",
@@ -329,20 +403,46 @@
         "explanation": "TDV İhyâ maddesi, eserde ibadetlerin dış kuralları yanında ihlâs ve huşû gibi kalbin amellerinin vurgulandığını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
-            "locator": "İbadetin manevî yönü",
+            "locator": "101–104. satırlar",
             "supports": "TDV İhyâ maddesi, eserde ibadetlerin dış kuralları yanında ihlâs ve huşû gibi kalbin amellerinin vurgulandığını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-021",
+        "reviewedCandidateSha256": "f5e9883a64d95dd055037a03ddf83be02fc506f72b325073ae34fc90a5c8c21c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Mânevî özellik sorusundaki üç malî/askerî miktar yerine dört olumlu iç özellik çifti. İlk cildin mânevî şart örneğine bağlandı; diğer erdemlerin dinen yanlış olduğu söylenmiyor.",
+        "optionReview": {
+          "o1": "Başka erdem çifti.",
+          "o3": "Başka erdem çifti.",
+          "o4": "Başka erdem çifti.",
+          "o2": "TDV’nin ilk cilt için verdiği örnek."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "101–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -392,41 +492,67 @@
         "question": "Gazzâlî'nin İhyâ'yı hangi hayat döneminde kaleme aldığı kabul edilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Çocukluk çağı"
+            "id": "o2",
+            "text": "İnzivâ yılları"
           },
           {
-            "id": "o2",
-            "text": "İnzivâ dönemi"
+            "id": "o1",
+            "text": "Bağdat müderrisliği"
           },
           {
             "id": "o3",
-            "text": "Son yolculuğu"
+            "text": "Nîşâbur öğrenciliği"
           },
           {
             "id": "o4",
-            "text": "Doğumundan önce"
+            "text": "Tûs’taki ilk eğitimi"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İnzivâ dönemi",
+        "correctAnswer": "İnzivâ yılları",
         "explanation": "TDV'ye göre İhyâü ulûmi'd-dîn, Gazzâlî'nin 1095-1105 yılları arasındaki inzivâ döneminde yazdığı eserlerdendir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
-            "locator": "İhyâ'nın telif edildiği inzivâ dönemi",
+            "locator": "98–101. satırlar; Gazzâlî 141–150. satırlar",
             "supports": "TDV'ye göre İhyâü ulûmi'd-dîn, Gazzâlî'nin 1095-1105 yılları arasındaki inzivâ döneminde yazdığı eserlerdendir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-022",
+        "reviewedCandidateSha256": "d533e759ffe14d18d51767ccdde873b036040b987a1c76ac785a0591a9096423",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Doğumundan önce gibi imkânsız dönem ve çocukluk ipucu yerine dört gerçek hayat evresi. İnzivânın 1095–1105 aralığı telifin kesin tek yılı gibi sunulmuyor.",
+        "optionReview": {
+          "o2": "Telifin ait olduğu dönem.",
+          "o1": "İnzivâ öncesi müderrislik.",
+          "o3": "Daha önceki öğrencilik.",
+          "o4": "İlk eğitim evresi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "98–101. satırlar; Gazzâlî 141–150. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -473,44 +599,70 @@
         ]
       },
       "after": {
-        "question": "İhyâ'yı yazmasının sebepleri arasında Gazzâlî hangi soruna özellikle dikkat çeker?",
+        "question": "İhyâ’nın önsözünde Gazzâlî’nin ilim anlayışına yönelttiği temel eleştiri nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Coğrafya haritalarının eksikliği"
+            "id": "o4",
+            "text": "Âlimlerin uzak beldelere gidip ders verememesi"
           },
           {
             "id": "o2",
-            "text": "Dinî ilimlerde amaçtan uzaklaşma"
+            "text": "İlmin âhiret amacından uzaklaşıp şekle indirgenmesi"
+          },
+          {
+            "id": "o1",
+            "text": "İlim öğretiminin seçkin ailelerle sınırlandırılması"
           },
           {
             "id": "o3",
-            "text": "Madenlerin yanlış adlandırılması"
-          },
-          {
-            "id": "o4",
-            "text": "Tarım vergilerinin artması"
+            "text": "Dinî eserlerin çevirisinde asıl anlamın kaybolması"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Dinî ilimlerde amaçtan uzaklaşma",
+        "correctAnswer": "İlmin âhiret amacından uzaklaşıp şekle indirgenmesi",
         "explanation": "TDV maddesi İhyâ'nın dinî ve ahlâkî yozlaşma, ilimlerde içeriğin kaybolması gibi sorunlara karşı bir ıslah amacıyla yazıldığını anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — İHYÂÜ ULÛMİ'd-DÎN",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
-            "locator": "İlim ve ahlâkta ıslah fikri",
+            "locator": "98–100. satırlar",
             "supports": "TDV maddesi İhyâ'nın dinî ve ahlâkî yozlaşma, ilimlerde içeriğin kaybolması gibi sorunlara karşı bir ıslah amacıyla yazıldığını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-023",
+        "reviewedCandidateSha256": "2534875b56110514d1fe68876af664e542fbe0721ff4b3dee2f6aa1592423f36",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Harita/maden/tarım gibi başka alan sorunları yerine dört makul ilim ve öğretim sorunu. Dördü de eleştiri niteliğinde; tek olumsuz seçenek yok.",
+        "optionReview": {
+          "o4": "Başka öğretim sorunu.",
+          "o2": "Önsözün açık eleştirisi.",
+          "o1": "Başka eğitim erişimi sorunu.",
+          "o3": "Başka aktarım sorunu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "98–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -593,8 +745,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-ihya-024",
+        "reviewedCandidateSha256": "53a056796e7134cc538d9df356430eea180e771856aa6d71a2efdf94b42df34d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kitâb/konu sayısı. İlk ana ciltte on konu, bütün eserde kırk konu ayrımı kontrol edildi.",
+        "optionReview": {
+          "o1": "Eksik konu sayısı.",
+          "o2": "Bir ciltteki on konu.",
+          "o3": "Fazla konu sayısı.",
+          "o4": "Bütün eserdeki toplamla karışabilir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+          "locator": "101. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -677,8 +853,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-025",
+        "reviewedCandidateSha256": "4efc00bf0ec345990221da597d532fa68ae1a884b4089b98119627893a5474ea",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kitap sayısı. Altılı kitapların seçimi tarih içinde değişse de sitte teriminin altı anlamı değişmez.",
+        "optionReview": {
+          "o1": "Eksik kitap sayısı.",
+          "o2": "Altılı terimin sayısı.",
+          "o3": "Önceki beşli tertip.",
+          "o4": "Başka yedili tertip."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -728,41 +928,67 @@
         "question": "Hadis alanında 'Sahîhayn' ifadesi hangi iki eseri belirtir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mâlik ve Ahmed'in tefsirleri"
-          },
-          {
-            "id": "o2",
-            "text": "Buhârî ve Müslim'in sahihleri"
-          },
-          {
             "id": "o3",
-            "text": "Taberî ve İbn Haldûn'un tarihleri"
+            "text": "Mâlik’in Muvatta’ı ve Ahmed’in Müsned’i"
           },
           {
             "id": "o4",
-            "text": "Bîrûnî ve İbn Sînâ'nın tıp eserleri"
+            "text": "Tirmizî’nin Câmi‘i ve İbn Mâce’nin Sünen’i"
+          },
+          {
+            "id": "o2",
+            "text": "Buhârî ve Müslim’in sahihleri"
+          },
+          {
+            "id": "o1",
+            "text": "Ebû Dâvûd ve Nesâî’nin sünenleri"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Buhârî ve Müslim'in sahihleri",
+        "correctAnswer": "Buhârî ve Müslim’in sahihleri",
         "explanation": "TDV'ye göre Sahîhayn adı, hadis seçiminde yüksek titizlikle tanınan Buhârî ve Müslim'in el-Câmiʿu's-sahîh eserleri için kullanılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Buhârî ve Müslim'in Sahîhaynı",
+            "locator": "96–98 ve 113–118. satırlar",
             "supports": "TDV'ye göre Sahîhayn adı, hadis seçiminde yüksek titizlikle tanınan Buhârî ve Müslim'in el-Câmiʿu's-sahîh eserleri için kullanılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-026",
+        "reviewedCandidateSha256": "04c1d3afaaea0d2dec7f6bbf84837cd5e4bc8ba3a6b2143c9e8580c1c4521671",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tarih/tıp ve gerçekte bu adla tanınmayan tefsir çiftleri yerine dört gerçek hadis kitabı çifti. Sahîhayn, iki belirli sahih eser için kullanılan özel addır.",
+        "optionReview": {
+          "o3": "Başka iki hadis eseri.",
+          "o4": "Başka iki hadis eseri.",
+          "o2": "Sahîhaynın iki eseri.",
+          "o1": "Başka iki hadis eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–98 ve 113–118. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -813,19 +1039,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "İbn Haldûn"
+            "text": "Dârimî"
+          },
+          {
+            "id": "o3",
+            "text": "Mâlik b. Enes"
+          },
+          {
+            "id": "o4",
+            "text": "Ahmed b. Hanbel"
           },
           {
             "id": "o2",
             "text": "İbn Mâce"
-          },
-          {
-            "id": "o3",
-            "text": "Bîrûnî"
-          },
-          {
-            "id": "o4",
-            "text": "İbn Sînâ"
           }
         ],
         "correctOptionId": "o2",
@@ -833,20 +1059,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi, altıncı kitap konusunda başka tercihler bulunmakla birlikte yaygın tertipte İbn Mâce'nin Sünen'inin yer aldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "İbn Mâce'nin altıncı kitap sayılması",
+            "locator": "97–106. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi, altıncı kitap konusunda başka tercihler bulunmakla birlikte yaygın tertipte İbn Mâce'nin Sünen'inin yer aldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-027",
+        "reviewedCandidateSha256": "e1ab8fba5902bf72073a869498f15c39300a71499d7a516c0c3f0a371df0f9e0",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hadis dışı müellif yerine dört muhaddis. Genel kabul gören tertip kaydı korunarak Mâlik/Dârimî’nin alternatif tercihlerinin ikinci doğru sayılması önlendi.",
+        "optionReview": {
+          "o1": "Başka önerilen tertibin müellifi.",
+          "o3": "Başka önerilen tertibin müellifi.",
+          "o4": "Başka büyük hadis müellifi.",
+          "o2": "Yaygın altılı tertibin altıncı müellifi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "97–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -893,44 +1145,70 @@
         ]
       },
       "after": {
-        "question": "Bazı âlimler Kütüb-i Sitte'nin altıncı kitabı yerine hangi eseri tercih etmiştir?",
+        "question": "Rezîn b. Muâviye beş temel hadis kitabına altıncı olarak hangi eseri eklemiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İbn Haldûn'un Mukaddime'sini"
+            "id": "o2",
+            "text": "Mâlik’in el-Muvatta’ı"
           },
           {
-            "id": "o2",
-            "text": "İmam Mâlik'in el-Muvatta'ını"
+            "id": "o1",
+            "text": "Dârimî’nin es-Sünen’i"
           },
           {
             "id": "o3",
-            "text": "Cezerî'nin mekanik kitabını"
+            "text": "Ahmed b. Hanbel’in el-Müsned’i"
           },
           {
             "id": "o4",
-            "text": "Bîrûnî'nin el-Cemâhir'ini"
+            "text": "Abdürrezzâk’ın el-Musannef’i"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İmam Mâlik'in el-Muvatta'ını",
-        "explanation": "TDV, bazı tertiplerde İbn Mâce'nin Sünen'i yerine İmam Mâlik'in el-Muvatta'ının tercih edildiğini aktarır.",
+        "correctAnswer": "Mâlik’in el-Muvatta’ı",
+        "explanation": "TDV, Rezîn b. Muâviye’nin beş temel kitaba Mâlik’in el-Muvatta’ını eklediğini, İbnü’l-Esîr’in de bu tertibi benimsediğini anlatır. Başka âlimlerin Dârimî’nin Sünen’ini önerdiği de kaydedilir; soru Rezîn’in tercihini sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Kütüb-i Sitte'nin alternatif tertibi",
-            "supports": "TDV, bazı tertiplerde İbn Mâce'nin Sünen'i yerine İmam Mâlik'in el-Muvatta'ının tercih edildiğini aktarır.",
+            "locator": "101–106. satırlar",
+            "supports": "TDV, Rezîn b. Muâviye’nin beş temel kitaba Mâlik’in el-Muvatta’ını eklediğini, İbnü’l-Esîr’in de bu tertibi benimsediğini anlatır. Başka âlimlerin Dârimî’nin Sünen’ini önerdiği de kaydedilir; soru Rezîn’in tercihini sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-028",
+        "reviewedCandidateSha256": "a914be7c1d3ccadb960a141e9f6b05d65389dfee6bb23fb54784bd901afa2498",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hadis dışı kitap yerine dört hadis eseri. Dârimî de başka âlimlerin tercihidir; kök Rezîn’in belirli altılı tertibine daraltıldı.",
+        "optionReview": {
+          "o2": "Rezîn’in eklediği eser.",
+          "o1": "Başka âlimlerin tercih ettiği eser.",
+          "o3": "Başka hadis derlemesi.",
+          "o4": "Başka hadis derlemesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Muvatta‘ ve Dârimî’nin Sünen’i farklı altılı tertiplerde bulunabilir. Rezîn’e bağlı açık kök, bu iki gerçek tercihin iki doğruya dönüşmesini önler.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "101–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -981,19 +1259,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "el-Mukaddime"
+            "text": "el-Edebü’l-müfred"
+          },
+          {
+            "id": "o3",
+            "text": "el-Müstedrek"
+          },
+          {
+            "id": "o4",
+            "text": "el-Muvatta’"
           },
           {
             "id": "o2",
             "text": "el-Müctebâ"
-          },
-          {
-            "id": "o3",
-            "text": "el-Cemâhir"
-          },
-          {
-            "id": "o4",
-            "text": "el-Kānûn"
           }
         ],
         "correctOptionId": "o2",
@@ -1001,20 +1279,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'nin büyük süneninden seçtiği eserinin el-Müctebâ adıyla da anıldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Nesâî'nin el-Müctebâ eseri",
+            "locator": "114–116. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi Nesâî'nin büyük süneninden seçtiği eserinin el-Müctebâ adıyla da anıldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-029",
+        "reviewedCandidateSha256": "ad5171f5ecc805b0674cb62648a7debbedf0bf1b25ec8e2607576a5f1b7240bb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç tıp/tarih/maden kitabı yerine dört hadis kitabı. Nesâî’nin büyük süneninden seçtiği küçük sünenin özel adı kaynakta açık.",
+        "optionReview": {
+          "o1": "Başka müellifin hadis kitabı.",
+          "o3": "Başka müellifin hadis kitabı.",
+          "o4": "Başka müellifin hadis kitabı.",
+          "o2": "Nesâî’nin seçme eserinin adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "114–116. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1064,20 +1368,20 @@
         "question": "Kütüb-i Sitte'nin Ebû Dâvûd ve Nesâî'ye ait eserleri hangi türe girer?",
         "options": [
           {
-            "id": "o1",
-            "text": "Tarih"
-          },
-          {
             "id": "o2",
             "text": "Sünen"
           },
           {
+            "id": "o1",
+            "text": "Câmi‘"
+          },
+          {
             "id": "o3",
-            "text": "Siyer"
+            "text": "Müsned"
           },
           {
             "id": "o4",
-            "text": "Coğrafya"
+            "text": "Mu‘cem"
           }
         ],
         "correctOptionId": "o2",
@@ -1085,20 +1389,46 @@
         "explanation": "Ebû Dâvûd ve Nesâî'nin Kütüb-i Sitte'ye dahil olan eserleri hadislerin fıkhî konulara göre düzenlendiği Sünen kitaplarıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Ebû Dâvûd ve Nesâî'nin Sünenleri",
+            "locator": "96–98 ve 114–118. satırlar",
             "supports": "Ebû Dâvûd ve Nesâî'nin Kütüb-i Sitte'ye dahil olan eserleri hadislerin fıkhî konulara göre düzenlendiği Sünen kitaplarıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-030",
+        "reviewedCandidateSha256": "19f704a40f624135dac44ea02ba4002a86841bebc8850df62f30d228e1f5201f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hadise karşı üç başka bilgi alanı yerine dört hadis kitabı türü. İçlerinde fıkhî rivayet bulunması değil iki eserin tür adı soruluyor.",
+        "optionReview": {
+          "o2": "Ebû Dâvûd ve Nesâî’nin eser türü.",
+          "o1": "Başka hadis türü.",
+          "o3": "Başka hadis türü.",
+          "o4": "Başka hadis türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–98 ve 114–118. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1145,44 +1475,75 @@
         ]
       },
       "after": {
-        "question": "Tirmizî hadis seçiminde rivayetlerin hangi yönünü özellikle tartışmıştır?",
+        "question": "Tirmizî’nin râvilerin güvenilirliğini tartışması hangi incelemenin parçasıdır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Astronomik koordinatları"
-          },
-          {
-            "id": "o2",
-            "text": "Râvilerin güvenilirliği ve sened tenkidi"
-          },
-          {
             "id": "o3",
-            "text": "Madenlerin ağırlığı"
+            "text": "Konu tasnifi"
           },
           {
             "id": "o4",
-            "text": "Hukukî vergi oranları"
+            "text": "Nüsha karşılaştırması"
+          },
+          {
+            "id": "o2",
+            "text": "Sened tenkidi"
+          },
+          {
+            "id": "o1",
+            "text": "Metin şerhi"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Râvilerin güvenilirliği ve sened tenkidi",
-        "explanation": "TDV, Tirmizî'nin zayıf rivayetlerin râvilerinin güvenilirliğini ve sened tenkidini eserinde öne çıkardığını aktarır.",
+        "correctAnswer": "Sened tenkidi",
+        "explanation": "TDV, Tirmizî’nin özellikle zayıf hadislerin râvilerinin ne ölçüde güvenilir olduğunu belirttiğini ve sened tenkidine ağırlık verdiğini açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Tirmizî'nin sened değerlendirmesi",
-            "supports": "TDV, Tirmizî'nin zayıf rivayetlerin râvilerinin güvenilirliğini ve sened tenkidini eserinde öne çıkardığını aktarır.",
+            "locator": "116–119. satırlar",
+            "supports": "TDV, Tirmizî’nin özellikle zayıf hadislerin râvilerinin ne ölçüde güvenilir olduğunu belirttiğini ve sened tenkidine ağırlık verdiğini açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-031",
+        "reviewedCandidateSha256": "77f5bb402a6fe3532b0246925438c5ea3bb2c5a8180745205c3facdcc123ad70",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç astronomi/maden/vergi konusu yerine dört ilmî metin çalışma yöntemi. Tirmizî’nin başka yaptığı fıkhî değerlendirmeler de olabileceğinden belirli râvi güvenilirliği işi soruldu.",
+        "optionReview": {
+          "o3": "Bölümlere düzenleme yöntemi.",
+          "o4": "Yazma metin karşılaştırma yöntemi.",
+          "o2": "Kaynakta öne çıkan sened değerlendirmesi.",
+          "o1": "Metin açıklama yöntemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "116–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1229,23 +1590,23 @@
         ]
       },
       "after": {
-        "question": "Kütüb-i Sitte içinde bulunmayan rivayetleri başka eserlerden toplama çalışmalarına ne ad verilir?",
+        "question": "Başka hadis kitaplarının Kütüb-i Sitte’ye göre ilâve rivayetlerini belirleyen derleme türü hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Vakfe"
+            "id": "o3",
+            "text": "Müstedrek"
+          },
+          {
+            "id": "o4",
+            "text": "Müstehreç"
           },
           {
             "id": "o2",
             "text": "Zevâid"
           },
           {
-            "id": "o3",
-            "text": "Mîkāt"
-          },
-          {
-            "id": "o4",
-            "text": "Sa‘y"
+            "id": "o1",
+            "text": "Etrâf"
           }
         ],
         "correctOptionId": "o2",
@@ -1253,20 +1614,46 @@
         "explanation": "Kütüb-i Sitte'de bulunmayan hadisleri farklı eserlerden bir araya getirme çalışmalarının hadis literatüründe zevâid türünü geliştirdiği belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — KÜTÜB-i SİTTE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Zevâid çalışmalarının tanımı",
+            "locator": "120–126. satırlar",
             "supports": "Kütüb-i Sitte'de bulunmayan hadisleri farklı eserlerden bir araya getirme çalışmalarının hadis literatüründe zevâid türünü geliştirdiği belirtilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q49-kutub-032",
+        "reviewedCandidateSha256": "06c81bd1fefbbcee6e571777bb685b4b3b04fd7dd88965b0a5dbd28a0c2e8f7b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hac terimi yerine dört hadis literatürü terimi. Müstedrekle karışma için belirli sıhhat şartlarına göre eksik tamamlama değil başka kitapların altılıya göre fazlalıkları tanımı kullanılıyor.",
+        "optionReview": {
+          "o3": "Belirli müelliflerin şartlarına göre tamamlama.",
+          "o4": "Aynı rivayetleri başka isnadlarla aktarma.",
+          "o2": "Ana derlemeye göre ilâve rivayetler.",
+          "o1": "Hadis başlangıçları ve isnad düzeni."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "120–126. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1349,8 +1736,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-hud-001",
+        "reviewedCandidateSha256": "0b67560ee128916173d9e0765662e8eb3b822571ce2bba7a93a4e4b199675d13",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört coğrafî yer/bölge adı. Ahkāf’ın sınırlarına ilişkin farklı coğrafî yorumlar yerine Kur’an ve TDV’nin verdiği bölge adı soruluyor.",
+        "optionReview": {
+          "o1": "Başka bölge.",
+          "o2": "TDV’nin 46/21’e bağladığı yer.",
+          "o3": "Başka şehir.",
+          "o4": "Başka bölge."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hud",
+          "locator": "101–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1401,19 +1812,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Bir ticaret kervanı"
+            "text": "Toz bulutu"
+          },
+          {
+            "id": "o3",
+            "text": "Duman bulutu"
+          },
+          {
+            "id": "o4",
+            "text": "Kül bulutu"
           },
           {
             "id": "o2",
             "text": "Yağmur bulutu"
-          },
-          {
-            "id": "o3",
-            "text": "Bir deprem işareti"
-          },
-          {
-            "id": "o4",
-            "text": "Yeni ay"
           }
         ],
         "correctOptionId": "o2",
@@ -1421,20 +1832,67 @@
         "explanation": "Ahkāf 46/24'te Âd kavmi yaklaşan azap bulutunu yağmur taşıyan bulut sanmıştır; ancak felâket getiren kasırga yaklaşmaktadır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HÛD",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Ahkāf 46/24, yağmur sanılan bulut",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "46/24; Kur’an Yolu Meal PDF pasajı",
             "supports": "Ahkāf 46/24'te Âd kavmi yaklaşan azap bulutunu yağmur taşıyan bulut sanmıştır; ancak felâket getiren kasırga yaklaşmaktadır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-hud-002",
+        "reviewedCandidateSha256": "b2554dd97bdcbd520445ac58eda0d2150b5d8d1fa829df5475f179bae95f299b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kervan/yeni ay/deprem gibi farklı nesneler yerine dört bulut görünümü. Ayet yağmur taşıyacağını sanmalarını söyler; felâketin gerçekte kasırga olması ilk algıyla karıştırılmıyor.",
+        "optionReview": {
+          "o1": "Başka görünüm.",
+          "o3": "Başka görünüm.",
+          "o4": "Başka görünüm.",
+          "o2": "Kavmin ilk sandığı görünüm."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "46/24; PDF sayfa 536 (1 tabanlı), basılı sayfa 535",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1484,20 +1942,20 @@
         "question": "Kur’an'a göre Âd kavmini etkileyen felâket ne kadar sürdü?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bir gün bir gece"
+            "id": "o4",
+            "text": "Dokuz gece on gün"
           },
           {
             "id": "o2",
             "text": "Yedi gece sekiz gün"
           },
           {
-            "id": "o3",
-            "text": "Bir ay"
+            "id": "o1",
+            "text": "Üç gece dört gün"
           },
           {
-            "id": "o4",
-            "text": "Kırk gün"
+            "id": "o3",
+            "text": "Beş gece altı gün"
           }
         ],
         "correctOptionId": "o2",
@@ -1505,20 +1963,46 @@
         "explanation": "Hâkka 69/6-7'de Âd kavmini yıkan kasırganın yedi gece ve sekiz gün sürdüğü anlatılır; inananlar kurtulmuştur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HÛD",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Hâkka 69/6-7, fırtınanın süresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "69/7; Kur’an Yolu Meal PDF pasajı",
             "supports": "Hâkka 69/6-7'de Âd kavmini yıkan kasırganın yedi gece ve sekiz gün sürdüğü anlatılır; inananlar kurtulmuştur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-hud-003",
+        "reviewedCandidateSha256": "524596049ef89e72a945d0a8fe9dc73ee1d7242c816eba19bbafdb67909eb6e0",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek gece-gün ayrıntılı cevaba karşı üç kısa süre yerine dört benzer uzunlukta gece/gün çifti. Kesin süre Hâkka 69/7’de.",
+        "optionReview": {
+          "o4": "Farklı uzun süre.",
+          "o2": "Ayetin süresi.",
+          "o1": "Farklı kısa süre.",
+          "o3": "Farklı kısa süre."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "69/7; PDF sayfa 609 (1 tabanlı), basılı sayfa 608",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1565,44 +2049,70 @@
         ]
       },
       "after": {
-        "question": "Şuarâ 26/128-129'da Âd kavminin hangi alışkanlığı eleştirilir?",
+        "question": "Şuarâ 26/128’in “her yüksek yere” ifadesiyle eleştirdiği davranış hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yoksullara yardım etmeleri"
-          },
-          {
-            "id": "o2",
-            "text": "Yüksek yerlere gösteriş yapıları dikmeleri"
-          },
-          {
             "id": "o3",
-            "text": "Ticaret yapmaları"
+            "text": "Başkalarının malına el koymak"
           },
           {
             "id": "o4",
-            "text": "Bahçe yetiştirmeleri"
+            "text": "Sözleşmelerde hileye başvurmak"
+          },
+          {
+            "id": "o2",
+            "text": "Boş yere anıtlar dikmek"
+          },
+          {
+            "id": "o1",
+            "text": "Güçsüzleri zorla çalıştırmak"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yüksek yerlere gösteriş yapıları dikmeleri",
-        "explanation": "Şuarâ 26/128-129, Âd kavminin her yüksek yerde boş yere anıtlar yapmasını ve kalıcı kalacakmış gibi sağlam yapılar kurmasını eleştirir.",
+        "correctAnswer": "Boş yere anıtlar dikmek",
+        "explanation": "Şuarâ 26/128’de yüksek yerlere boş yere anıt dikmek eleştirilir. 129. ayette ise kalıcı kalacakmış gibi büyük konaklar yapma anlayışı sorgulanır; soru ilk ayetteki belirli davranışı sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — HÛD",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Şuarâ 26/128-129, gösteriş yapıları",
-            "supports": "Şuarâ 26/128-129, Âd kavminin her yüksek yerde boş yere anıtlar yapmasını ve kalıcı kalacakmış gibi sağlam yapılar kurmasını eleştirir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "26/128; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Şuarâ 26/128’de yüksek yerlere boş yere anıt dikmek eleştirilir. 129. ayette ise kalıcı kalacakmış gibi büyük konaklar yapma anlayışı sorgulanır; soru ilk ayetteki belirli davranışı sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-29"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-hud-005",
+        "reviewedCandidateSha256": "6096fb8c2269da06f85a41c33a6ef6c27664fda83b29ec437f17c9a148d960e5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek kötü davranışa karşı üç iyi/meşru iş yerine dört kötü davranış. 129’daki konaklar ve 130’daki zorbalık da var; kök özellikle 128’in açık davranışına bağlandı.",
+        "optionReview": {
+          "o3": "Başka haksız davranış.",
+          "o4": "Başka haksız davranış.",
+          "o2": "128’deki eleştiri.",
+          "o1": "Başka haksız davranış."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "26/128; PDF sayfa 392 (1 tabanlı), basılı sayfa 391",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1685,8 +2195,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-suayb-006",
+        "reviewedCandidateSha256": "51678bc7b5a4ba531a70c0ad78502abd9d6e29f44cb41e1889aa75245f75d1f6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört tekrar sayısı. Şuayb maddesi 104, 7/92’de iki anılma dahil referansları listeler; Mûsâ’nın kayınpederiyle özdeşlik tartışması sorulmuyor.",
+        "optionReview": {
+          "o1": "Eksik anılma sayısı.",
+          "o2": "On bir ismen anılma.",
+          "o3": "Fazla anılma sayısı.",
+          "o4": "Nûh’un sayısıyla karışabilir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ebû Hüreyre, Hatice, Bîrûnî, İhyâ ve Kütüb-i Sitte soruları önceki paketlerdeki yakın hedeflerle karşılaştırıldı. Özellikle müellif/eser adı ve sayım sorularının banka içindeki yoğunluğu son anlamsal tekrar incelemesinde değerlendirilmelidir. Soru sayısı, ID, conceptGroup, kategori ve zorluk korunuyor; benzerlik otomatik kabul sayılmaz.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suayb",
+          "locator": "104–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-29",
+          "sourceSha256": "e3c9db96dc4a0d43ef1228001e50a1c74b6a355574df35d2dabe7c8060833cda"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
