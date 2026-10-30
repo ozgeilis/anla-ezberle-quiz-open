@@ -124,7 +124,7 @@ export function AuthCallbackScreen() {
         });
       }
     });
-  }, [incoming, webUrl]);
+  }, [incoming, webUrl, router]);
   return (
     <Page
       title={recovery ? "Yeni Şifre Oluştur" : "Hesabını doğrula"}
