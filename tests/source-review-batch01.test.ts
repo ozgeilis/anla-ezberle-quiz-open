@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { questions } from "../src/content/questions";
+import { questions1500 as questions } from "../src/content/questions/questions-1500";
 import evidence from "../docs/source-verification/evidence/v71-batch-01-0001-0050.json";
 
 test("first 50 canonical questions have correctly attributed external source evidence", () => {

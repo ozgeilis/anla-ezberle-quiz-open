@@ -10,7 +10,7 @@ import { createSession,answerQuestion,advanceQuestion,finishSession } from "../s
 import { appendGame,emptyData,parseData } from "../src/storage/schema";
 
 test("six TDV-checked original user200 morality facts add to immutable v19",()=>{
- assert.equal(BANK_VERSION, 72);
+ assert.equal(BANK_VERSION, 73);
  assert.equal(bankV19.length,571);
  assert.equal(bankV20.length,577);
  assert.equal(publishedNewQuestionsV20.length,6);
@@ -50,7 +50,7 @@ test("six TDV-checked original user200 morality facts add to immutable v19",()=>
 test("v20 topic record persists; old v19 historical answers unchanged",()=>{
  const time=1800000000000;
  let session=createSession("mixed",undefined,time,{difficulty:"medium"});
- assert.equal(session.bankVersion, 72);
+ assert.equal(session.bankVersion, 73);
  for(let i=0;i<10;i++){
   session=answerQuestion(session,0,time+1000*(i+1));
   if(i<9)session=advanceQuestion(session);

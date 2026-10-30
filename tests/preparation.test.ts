@@ -112,7 +112,7 @@ test("v14 preparation and actual selection agree for every category/difficulty a
           1234,
           { channel: "prototype", difficulty, random: random(seed) },
         );
-        assert.equal(session.bankVersion, 72);
+        assert.equal(session.bankVersion, 73);
         independent(
           session.questionIds.map((id) => bank.find((q) => q.id === id)!),
         );

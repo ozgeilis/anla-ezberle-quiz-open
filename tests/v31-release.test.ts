@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v31 appends exactly one unique verified question without rewriting v30",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV30.length,599);assert.equal(bankV31.length,600);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV30.length,599);assert.equal(bankV31.length,600);
  assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);assert.equal(publishedNewQuestionsV31.length,1);
  assert.ok(bankV30.every((q,i)=>q===bankV31[i]));assert.equal(new Set(bankV31.map(q=>q.id)).size,600);
  const q=publishedNewQuestionsV31[0]!;
@@ -25,7 +25,7 @@ test("v31 appends exactly one unique verified question without rewriting v30",()
  assert.equal(item.options[item.correct],q.options.find(o=>o.id===q.correctOptionId)!.text);
 });
 test("v31 new games and historical v30 questions preserve scoring",()=>{
- const t=1800000000000;let s=createSession("mixed",undefined,t,{difficulty:"medium"});assert.equal(s.bankVersion, 72);
+ const t=1800000000000;let s=createSession("mixed",undefined,t,{difficulty:"medium"});assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,t+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const record=finishSession(s);
  assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);

@@ -10,7 +10,7 @@ import { createSession,answerQuestion,advanceQuestion,finishSession } from "../s
 import { appendGame,emptyData,parseData } from "../src/storage/schema";
 
 test("v19 has ten independently sourced new verses and leaves 561 v18 questions immutable",()=>{
- assert.equal(BANK_VERSION, 72);
+ assert.equal(BANK_VERSION, 73);
  assert.equal(bankV18.length,561);
  assert.equal(bankV19.length,571);
  assert.equal(publishedNewQuestionsV19.length,10);
@@ -48,7 +48,7 @@ test("v19 has ten independently sourced new verses and leaves 561 v18 questions 
 test("v19 topic round saves and v18 historical scoring is untouched",()=>{
  const time=1800000000000;
  let s=createSession("mixed",undefined,time,{learningTopic:"dualar",difficulty:"medium"});
- assert.equal(s.bankVersion, 72);
+ assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,time+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const rec=finishSession(s);
  assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),rec))).games[0],rec);

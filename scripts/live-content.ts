@@ -1,6 +1,10 @@
 // Private SQL export only. Never imported by the client application.
-import { questions, BANK_VERSION } from "../src/content/questions";
-import { buildOnlineContentRows } from "./online-content-export";
+import { BANK_VERSION } from "../src/content/questions";
+import {
+  buildOnlineContentRows,
+  canonicalBankForExport,
+  type ExportBankVersion,
+} from "./online-content-export";
 import { learningTopicsV1 } from "../src/content/questions/learning-topics-v1";
 import { learningTopicPool } from "../src/domain/game/learning";
 import {
@@ -8,11 +12,11 @@ import {
   selectionConceptKeys,
 } from "../src/domain/game/engine";
 import { liveLevels, liveCounts, liveQuotas } from "../src/domain/live/rules";
-const LIVE_BANK_VERSION = BANK_VERSION;
 const quote = (s: string) => "'" + s.replaceAll("'", "''") + "'";
 const json = (v: unknown) => quote(JSON.stringify(v)) + "::jsonb";
-export function liveContent() {
-  buildOnlineContentRows(); // Shared canonical integrity gate; no content approval is inferred.
+export function liveContent(bankVersion: ExportBankVersion = BANK_VERSION) {
+  const questions = canonicalBankForExport(bankVersion);
+  buildOnlineContentRows(questions, bankVersion); // Shared exact-release integrity gate.
   if (
     questions.length !== 1500 ||
     questions.some(
@@ -68,10 +72,10 @@ export function liveContent() {
           sample: sample?.map((q) => q.id) ?? [],
         });
       }
-  return { rows, pools, version: LIVE_BANK_VERSION };
+  return { rows, pools, version: bankVersion };
 }
-export function liveContentSql() {
-  const data = liveContent(),
+export function liveContentSql(bankVersion: ExportBankVersion = BANK_VERSION) {
+  const data = liveContent(bankVersion),
     dataset = `bank-v${data.version}`;
   return `BEGIN;
 INSERT INTO quiz_private.live_questions(dataset,id,version,question,difficulty,topic,concept_keys) VALUES

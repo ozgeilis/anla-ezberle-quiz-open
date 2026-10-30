@@ -42,6 +42,7 @@ const timestamp = (v: unknown): v is number =>
 export function validRecord(value: unknown): value is GameRecord {
   if (!object(value)) return false;
   const g = value;
+  const currentTaxonomy = g.bankVersion === 72 || g.bankVersion === 73;
   if (g.replay !== undefined && (g.replay !== true || g.mode === "daily"))
     return false;
   if (g.playCategory === undefined && g.playCategoryVersion !== undefined)
@@ -53,7 +54,7 @@ export function validRecord(value: unknown): value is GameRecord {
       !(
         (g.playCategoryVersion === 1 &&
           (g.bankVersion === 71 || g.bankVersion === 72)) ||
-        (g.playCategoryVersion === 2 && g.bankVersion === 72)
+        (g.playCategoryVersion === 2 && currentTaxonomy)
       ) ||
       g.mode !== "mixed" ||
       g.learningTopic !== undefined ||
@@ -94,7 +95,7 @@ export function validRecord(value: unknown): value is GameRecord {
       (g.learningTopicVersion === 2 &&
         g.bankVersion !== 71 &&
         g.bankVersion !== 72) ||
-      (g.learningTopicVersion === 3 && g.bankVersion !== 72) ||
+      (g.learningTopicVersion === 3 && !currentTaxonomy) ||
       !(typeof g.bankVersion === "number" && g.bankVersion >= 14) ||
       g.mode !== "mixed" ||
       (g.difficulty === undefined && g.stage === undefined))
@@ -118,7 +119,7 @@ export function validRecord(value: unknown): value is GameRecord {
         !belongsToPlayCategory(
           String(id),
           g.playCategory as import("../domain/game/play-categories").PlayCategoryId,
-          g.bankVersion === 72 ? 2 : 1,
+          currentTaxonomy ? 2 : 1,
         ),
     )
   )

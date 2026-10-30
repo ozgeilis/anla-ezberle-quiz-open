@@ -8,7 +8,7 @@ import { knownQuestion, gameQuestion } from "../src/content/questions/registry";
 const normalize=(s:string)=>s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
 
 test("v71: preserves 1468 previous records and has 1500 questions",()=>{
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(playableQuestions().length,1500);
   assert.equal(bankV70.length,1468);
   assert.equal(questions.length,1500);

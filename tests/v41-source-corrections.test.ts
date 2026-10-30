@@ -8,7 +8,7 @@ import { publishedCorrectionsV41 } from "../src/content/questions/published-v41"
 import { gameQuestion } from "../src/content/questions/registry";
 
 test("v41 publishes 5 source corrections and preserves all old answer IDs", () => {
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.deepEqual(questions.slice(0, bankV41.length), bankV41);
   assert.equal(bankV41.length, 600);
   assert.equal(publishedCorrectionsV41.length, 5);

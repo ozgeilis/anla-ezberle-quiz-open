@@ -1,5 +1,12 @@
 # v73 seçenek kalitesi — yayımlanmamış aday
 
+**Tarihsel inceleme kontrol noktası:** Aşağıdaki aday raporu PR #12 / `fa81d1c`
+öncesindeki durumu kaydeder. Ürün sahibi daha sonra 30.10.2026 tarihinde v73’ün
+aktif banka yapılmasını istedi. Ayrı yayın izni, uygulamadaki etkinleştirme ve canlı
+sunucu geçişinin güncel kapsamı [v73 geçiş belgesindedir](../CANONICAL-V73-ROLLOUT.md).
+Bu adayın `releaseEnabled=false` raporları bağımsız uzman kabulü diye değiştirilmez;
+yayın manifesti `src/content/questions/releases/v73.json` içindedir.
+
 Aktif banka **v72 / 1.500 soru**. Bu PR tek v73 adayını geliştirir. Main, Vercel Production, canlı Supabase, aktif index/registry, eski bankalar, puan, XP ve kullanıcı kayıtları değiştirilmedi. **Yayın uygunluğu verilmedi.**
 
 ## Güncel inceleme sonucu

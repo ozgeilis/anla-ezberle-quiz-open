@@ -48,7 +48,7 @@ test("v32 applies six source corrections and leaves all v31 answers and option I
 test("current and a saved v31 round retain scoring, XP and their original text after serialization", () => {
   const time = 1800000000000;
   let session = createSession("mixed", undefined, time, { difficulty: "easy" });
-  assert.equal(session.bankVersion, 72);
+  assert.equal(session.bankVersion, 73);
   for (let i = 0; i < 10; i++) {
     session = answerQuestion(session, 0, time + 1000 * (i + 1));
     if (i < 9) session = advanceQuestion(session);

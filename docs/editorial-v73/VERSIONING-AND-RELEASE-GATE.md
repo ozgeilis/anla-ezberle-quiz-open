@@ -1,5 +1,10 @@
 # v73: geçmiş kimliği ve yayın kapısı
 
+Bu belge PR #12’nin yayımlanmamış aday hazırlığına aittir. Ürün sahibinin sonraki
+30.10.2026 etkinleştirme talimatı ve güncel uygulama/sunucu dağıtım adımları
+[v73 geçiş belgesinde](../CANONICAL-V73-ROLLOUT.md) kayıtlıdır. Bağımsız uzman
+onayı hâlâ yoktur; yeni yayın izni bununla karıştırılmaz.
+
 Bu dal içerik adayıdır; aktif banka sürümü 72’dir. `questions-v72.ts`, v1–v72 arşivleri, registry, günlük seçim, puan/XP ve çevrimiçi exporter değiştirilmedi.
 
 ## Doğrulanan mevcut yapı

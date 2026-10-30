@@ -55,7 +55,7 @@ assert.deepEqual(
   JSON.parse(readFileSync("dist/topic-manifest.json", "utf8")),
   "Production must serve the topic counts from this tested build",
 );
-assert.equal(deployedTopics.bankVersion, 72);
+assert.equal(deployedTopics.bankVersion, 73);
 assert.equal(deployedTopics.topicVersion, 3);
 assert.equal(deployedTopics.topics.length, 6);
 assert.equal(deployedTopics.categoryVersion, 2);
@@ -66,7 +66,7 @@ assert.equal(
   deployedTopics.topics.reduce((sum, t) => sum + t.count, 0),
   1500,
 );
-assert.equal(assetManifest.filter((a) => a.path.endsWith(".ttf")).length, 5);
+assert.equal(assetManifest.filter((a) => a.path.endsWith(".ttf")).length, 6);
 for (const asset of assetManifest) {
   for (const path of [asset.path, asset.destination]) {
     const response = await fetch(new URL(path, origin));

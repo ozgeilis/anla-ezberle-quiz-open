@@ -13,7 +13,7 @@ import { appendGame, emptyData, parseData } from "../src/storage/schema";
 const normalize=(v:string)=>v.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[\\s\\p{P}\\p{S}]+/gu," ").trim();
 
 test("v15 includes exactly 31 approved source-checked questions; v13 and v14 snapshots are unchanged", () => {
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(bankV13.length, 500);
   assert.equal(bankV14.length, 500);
   assert.equal(bankV15.length, 531);
@@ -80,10 +80,10 @@ test("old v13/v14 game records preserve their answers, scores and XP alongside v
   let session=createSession("mixed",undefined,time+20000,{difficulty:"easy"});
   for(let i=0;i<10;i++){session=answerQuestion(session,0,time+20000+(i+1)*1000);if(i<9)session=advanceQuestion(session);}
   const latest=finishSession(session);
-  assert.equal(latest.bankVersion, 72);
+  assert.equal(latest.bankVersion, 73);
   const loaded=parseData(JSON.stringify(appendGame(data,latest)));
   assert.deepEqual(loaded.games.slice(0,2),[old13,old14]);
   assert.deepEqual(loaded.games.slice(0,2).map(x=>stats(x).score),before);
   assert.equal(JSON.stringify(data),untouched);
-  assert.equal(loaded.games[2]?.bankVersion,72);
+  assert.equal(loaded.games[2]?.bankVersion,73);
 });

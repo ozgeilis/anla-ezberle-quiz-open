@@ -1,4 +1,4 @@
-import { questionsV72 } from "./questions-v72";
+import { questionsV73 } from "./questions-v73";
 import type { Question } from "./model";
 export type {
   CategoryId,
@@ -9,13 +9,13 @@ export type {
 } from "./model";
 export { difficultyName } from "./model";
 export { categories, categoryName } from "./archive/bank-v1";
-export const BANK_VERSION = 72;
-export const questions: readonly Question[] = questionsV72;
+export const BANK_VERSION = 73;
+export const questions: readonly Question[] = questionsV73;
 export const questionById: ReadonlyMap<string, Question> = new Map(
   questions.map((q) => [q.id, q]),
 );
 export type ContentChannel = "prototype" | "production";
-// v72: 30 Quran meaning questions replace 30 rote questions; v71 and older games are frozen.
+// v73: owner-authorized option-quality release; v72 and older games are frozen.
 // Onaysız adaylar yalnızca kaynak kontrolü varsa ve prototype açıkça seçilmişse oynatılır.
 export const CONTENT_CHANNEL: ContentChannel =
   process.env.EXPO_PUBLIC_CONTENT_CHANNEL === "prototype"

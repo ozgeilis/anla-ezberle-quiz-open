@@ -139,7 +139,7 @@ test("all 30 topic/level options use the real independent selector, without out-
         const session = createSession("mixed", undefined, time, settings);
         assert.equal(session.learningTopic, topic.id);
         assert.equal(session.learningTopicVersion, 3);
-        assert.equal(session.bankVersion, 72);
+        assert.equal(session.bankVersion, 73);
         assert.equal(session.focus, undefined);
         assert.equal(new Set(session.questionIds).size, 10);
         const selected = session.questionIds.map((id) =>

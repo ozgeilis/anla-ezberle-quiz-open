@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { questions } from "../src/content/questions";
+import { questions1500 as questions } from "../src/content/questions/questions-1500";
 import evidence from "../docs/source-verification/evidence/v71-batch-05-0201-0250.json";
 test("v71 canonical positions 201–250 keep direct TDV/Diyanet source comparisons and qualifiers", () => {
  assert.equal(evidence.count, 50);

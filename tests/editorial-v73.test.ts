@@ -5,6 +5,7 @@ import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { questionsV72 } from "../src/content/questions/questions-v72";
 import { questionsV73Candidate } from "../src/content/questions/questions-v73.candidate";
+import { questionsV73 } from "../src/content/questions/questions-v73";
 import { approvedNewQuestionsV72 } from "../src/content/questions/release-v72-meaning";
 import { BANK_VERSION, questions } from "../src/content/questions";
 import {
@@ -109,12 +110,14 @@ test("The approved candidate amendment cannot replace a saved v72 question, disp
   assert.equal(displayed.explanation, old.explanation);
   assert.equal(displayed.version, 72);
   assert.equal(stats(saved).score, 100);
-  assert.equal(gameQuestion({ ...saved, bankVersion: 73 }, id), undefined);
+  const current = gameQuestion({ ...saved, bankVersion: 73 }, id)!;
+  assert.equal(current.text, next.question);
+  assert.notEqual(current.options[1], displayed.options[1]);
 });
-test("v73 stays unpublished; frozen v72 and historical registry are untouched; evidence does not imply human approval", () => {
-  assert.equal(BANK_VERSION, 72);
-  assert.equal(questions, questionsV72);
-  assert(!(SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
+test("released v73 uses the owner-authorized snapshot; frozen v72 and draft evidence never imply expert approval", () => {
+  assert.equal(BANK_VERSION, 73);
+  assert.equal(questions, questionsV73);
+  assert((SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
   assert.equal(
     createHash("sha256")
       .update(readFileSync("src/content/questions/questions-v72.ts"))
@@ -144,7 +147,7 @@ test("new candidate content revisions never reuse an occupied id/version from lo
   assert(revised.length > 0);
   for (const bank of SUPPORTED_BANK_VERSIONS) {
     // v1 predates the versioned Question model; its replay has separate tests.
-    if (bank === 1) continue;
+    if (bank === 1 || bank > 72) continue;
     for (const q of revised) {
       const saved = historicalQuestion(bank, q.id);
       if (!saved || !("version" in saved)) continue;
@@ -230,8 +233,8 @@ test("Inactive candidate preserves category/difficulty availability and prepares
     }
   for (const n of counts)
     assert(n >= 1000 && n <= 1250, JSON.stringify(counts));
-  assert.equal(BANK_VERSION, 72);
-  assert(!(SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
+  assert.equal(BANK_VERSION, 73);
+  assert((SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
 });
 test("quality warnings flag tone, length, duplication, grammar, absolutes, synonyms and ambiguity without approving truth", () => {
   const q = questionsV72[0]!;

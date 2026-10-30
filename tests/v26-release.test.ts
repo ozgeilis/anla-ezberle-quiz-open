@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v26 appends two source-verified facts and preserves 589 historical questions",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV25.length,589);assert.equal(bankV26.length,591);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV25.length,589);assert.equal(bankV26.length,591);
  assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);assert.equal(publishedNewQuestionsV26.length,2);
  assert.ok(bankV25.every((q,i)=>q===bankV26[i]));assert.equal(new Set(bankV26.map(q=>q.id)).size,591);
  const norm=(s:string)=>s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -28,7 +28,7 @@ test("v26 appends two source-verified facts and preserves 589 historical questio
  }
 });
 test("v26 saved game restoration and legacy v25 scoring remain compatible",()=>{
- const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 72);
+ const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,start+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const record=finishSession(s);assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);
  const old=bankV25[0]!,order={[old.id]:old.options.map(o=>o.id)};

@@ -10,7 +10,7 @@ import { answerQuestion, advanceQuestion, createSession, finishSession } from ".
 import { appendGame, emptyData, parseData } from "../src/storage/schema";
 
 test("v17 adds nine distinct checked history questions without changing v16",()=>{
- assert.equal(BANK_VERSION, 72);
+ assert.equal(BANK_VERSION, 73);
  assert.equal(bankV16.length,543);
  assert.equal(bankV17.length,552);
  assert.equal(publishedNewQuestionsV17.length,9);
@@ -43,7 +43,7 @@ test("v17 adds nine distinct checked history questions without changing v16",()=
 test("v17 game can be saved and v16 historic answers are retained",()=>{
  const time=1800000000000;
  let session=createSession("mixed",undefined,time,{difficulty:"medium",learningTopic:"medeniyet"});
- assert.equal(session.bankVersion, 72);
+ assert.equal(session.bankVersion, 73);
  for(let i=0;i<10;i++){
   session=answerQuestion(session,0,time+(i+1)*1000);
   if(i<9)session=advanceQuestion(session);

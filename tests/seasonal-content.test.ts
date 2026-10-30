@@ -143,7 +143,7 @@ test("All nine seasonal questions are sourced, distinctly worded, and unpublishe
     new Set(seasonalQuestionsDraftsV1.map((q) => q.conceptGroup)).size,
     9,
   );
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(questions.length, 1500);
   assert.equal(playableQuestions("production").length, 1500);
   assert.equal(playableQuestions("prototype").length, 1500);

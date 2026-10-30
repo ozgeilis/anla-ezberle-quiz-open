@@ -20,7 +20,7 @@ const complete = (session: ReturnType<typeof createSession>) => {
 };
 
 test("v16, 531 unchanged v15 questions plus 12 Diyanet-checked questions; no hidden drafts",()=>{
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(bankV14.length,500);
   assert.equal(bankV15.length,531);
   assert.equal(bankV16.length,543);
@@ -78,7 +78,7 @@ test("v16 new questions display correctly, while historic v15 question IDs remai
 
 test("new v16 topic records and old v15 round preserve score, metadata, and save validity",()=>{
   const now=complete(createSession("mixed",undefined,clock,{difficulty:"easy",learningTopic:"dualar"}));
-  assert.equal(now.bankVersion, 72);
+  assert.equal(now.bankVersion, 73);
   assert.equal(now.learningTopic,"dualar");
   assert.equal(now.learningTopicVersion,3);
   assert.equal(now.questionIds.length,10);
