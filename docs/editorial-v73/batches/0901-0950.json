@@ -3,12 +3,12 @@
   "start": 901,
   "end": 950,
   "total": 50,
-  "individuallyReviewed": 20,
-  "pendingReview": 30,
-  "sourceComparedThisRound": 20,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 0,
-  "flaggedAfter": 2,
+  "flaggedAfter": 4,
   "records": [
     {
       "sequence": 901,
@@ -2271,40 +2271,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Zü'n-nûreyn"
-          },
-          {
-            "id": "o2",
-            "text": "Hatîbü'l-enbiyâ"
+            "text": "Halîlullah"
           },
           {
             "id": "o3",
-            "text": "Seyfullah"
+            "text": "Kelîmullah"
           },
           {
             "id": "o4",
-            "text": "Emîrü'l-müminîn"
+            "text": "Rûhullah"
+          },
+          {
+            "id": "o2",
+            "text": "Hatîbü’l-enbiyâ"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hatîbü'l-enbiyâ",
+        "correctAnswer": "Hatîbü’l-enbiyâ",
         "explanation": "Bazı İslâmî kaynaklar Hz. Şuayb'ı sözünün güzelliği ve etkili tebliği nedeniyle 'peygamberlerin hatibi' anlamında hatîbü'l-enbiyâ diye anar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ŞUAYB",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suayb",
-            "locator": "Hatîbü'l-enbiyâ lakabı, rivayet",
+            "locator": "114–116. satırlar",
             "supports": "Bazı İslâmî kaynaklar Hz. Şuayb'ı sözünün güzelliği ve etkili tebliği nedeniyle 'peygamberlerin hatibi' anlamında hatîbü'l-enbiyâ diye anar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-suayb-009",
+        "reviewedCandidateSha256": "9fe5b26ade04774ff631515043ba1c34b1c4f25d0071351f2e7cad13c7bf0db5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç sahâbî/yönetici unvanına karşı tek peygamber lakabı yerine dört peygamberle ilişkilendirilen unvan. Güzel anlatım lakabının bazı kaynaklardaki nispeti korunuyor.",
+        "optionReview": {
+          "o1": "İbrâhim ile ilişkilendirilen.",
+          "o3": "Mûsâ ile ilişkilendirilen.",
+          "o4": "Îsâ ile ilişkilendirilen.",
+          "o2": "Şuayb için bazı kaynaklarda kullanılan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suayb",
+          "locator": "114–116. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2351,44 +2377,70 @@
         ]
       },
       "after": {
-        "question": "Kur’an'da meleklerin Hz. Lût'un yanına gelişleri hangi görünümde anlatılır?",
+        "question": "TDV’nin Lût kıssası anlatımında melekler hangi insan görünümüyle misafir olur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Dağ biçiminde"
-          },
-          {
-            "id": "o2",
-            "text": "Misafir insanlar gibi"
-          },
-          {
             "id": "o3",
-            "text": "Gemi filosu olarak"
+            "text": "Kadın ziyaretçiler"
           },
           {
             "id": "o4",
-            "text": "Ağaç suretinde"
+            "text": "Küçük çocuklar"
+          },
+          {
+            "id": "o2",
+            "text": "Genç erkek misafirler"
+          },
+          {
+            "id": "o1",
+            "text": "Yaşlı erkek yolcular"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Misafir insanlar gibi",
-        "explanation": "Hûd 11/77-81'de görevli meleklerin Hz. Lût'a misafir olarak geldiği; Hz. Lût'un da kavminin onlara zarar vermesinden endişe ettiği aktarılır.",
+        "correctAnswer": "Genç erkek misafirler",
+        "explanation": "TDV Lût maddesi melekleri genç erkekler suretinde gelen misafirler olarak anlatır. Hûd 11/77’de Lût’un elçiler sebebiyle huzursuz olduğu bildirilir; sorudaki görünüm ayrıntısı TDV anlatımına bağlıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — LÛT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/lut",
-            "locator": "Hûd 11/77, misafir elçiler",
-            "supports": "Hûd 11/77-81'de görevli meleklerin Hz. Lût'a misafir olarak geldiği; Hz. Lût'un da kavminin onlara zarar vermesinden endişe ettiği aktarılır.",
+            "locator": "125–133. satırlar",
+            "supports": "TDV Lût maddesi melekleri genç erkekler suretinde gelen misafirler olarak anlatır. Hûd 11/77’de Lût’un elçiler sebebiyle huzursuz olduğu bildirilir; sorudaki görünüm ayrıntısı TDV anlatımına bağlıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-lut-012",
+        "reviewedCandidateSha256": "eac09613981c1aa60b186875cff8d1560ef7073c7300aa4c3a3740a615a44879",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dağ/ağaç/gemi gibi üç ilgisiz suret yerine dört insan grubu. Genç erkek ayrıntısı TDV anlatımına nispetli; ayetin kendisinde bu yaş sıfatının lafzen geçtiği iddia edilmiyor.",
+        "optionReview": {
+          "o3": "Başka insan grubu.",
+          "o4": "Başka insan yaş grubu.",
+          "o2": "TDV’nin insan sureti anlatımı.",
+          "o1": "Başka insan yaş grubu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/lut",
+          "locator": "125–133. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2435,15 +2487,11 @@
         ]
       },
       "after": {
-        "question": "Kur’an kıssasında Hz. Lût'un ailesinden kim kurtulma istisnası dışında kalır?",
+        "question": "Hûd 11/81’e göre Lût’un ailesinden kim helâk edilenler arasında kalır?",
         "options": [
           {
             "id": "o1",
             "text": "Kızı"
-          },
-          {
-            "id": "o2",
-            "text": "Eşi"
           },
           {
             "id": "o3",
@@ -2452,6 +2500,10 @@
           {
             "id": "o4",
             "text": "Yeğeni"
+          },
+          {
+            "id": "o2",
+            "text": "Eşi"
           }
         ],
         "correctOptionId": "o2",
@@ -2459,20 +2511,46 @@
         "explanation": "Hûd 11/81'de Hz. Lût'un ailesinin kurtarılacağı ancak eşinin helâk olanlardan olacağı bildirilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — LÛT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/lut",
-            "locator": "Hûd 11/81, eşinin istisna oluşu",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "11/81; Kur’an Yolu Meal PDF pasajı",
             "supports": "Hûd 11/81'de Hz. Lût'un ailesinin kurtarılacağı ancak eşinin helâk olanlardan olacağı bildirilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-lut-015",
+        "reviewedCandidateSha256": "dfb4eb8916053602c96917537ab5b2b0896959132be55fbede98e539942b497f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kurtulma istisnası dışında kalır biçimindeki çift olumsuz kök sadeleştirildi. Dört aile ilişkisi; eşin durumu ayette açık.",
+        "optionReview": {
+          "o1": "Başka aile ilişkisi.",
+          "o3": "Başka aile ilişkisi.",
+          "o4": "Başka aile ilişkisi.",
+          "o2": "Ayette istisna edilen."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "11/81; PDF sayfa 242 (1 tabanlı), basılı sayfa 241",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2522,20 +2600,20 @@
         "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kalabalığa bağırarak"
+            "id": "o4",
+            "text": "Bir ezgi eşliğinde"
           },
           {
             "id": "o2",
             "text": "Alçak sesle"
           },
           {
-            "id": "o3",
-            "text": "Bir mektup yazarak"
+            "id": "o1",
+            "text": "Yüksek sesle"
           },
           {
-            "id": "o4",
-            "text": "Bir elçi göndererek"
+            "id": "o3",
+            "text": "Topluca seslenerek"
           }
         ],
         "correctOptionId": "o2",
@@ -2543,20 +2621,46 @@
         "explanation": "Meryem 19/3, Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle yalvardığını anlatır; Diyanet bu ifade üzerinden duanın tevazusunu vurgular.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
-            "locator": "Meryem 19/3, alçak sesle yalvarış",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/3; Kur’an Yolu Meal PDF pasajı",
             "supports": "Meryem 19/3, Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle yalvardığını anlatır; Diyanet bu ifade üzerinden duanın tevazusunu vurgular.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-zekeriyya-020",
+        "reviewedCandidateSha256": "84685f55a04247f44c85dc64216e80e4aac7989c6eaf9e19c21bd06313a10f0f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Mektup/elçi gibi ses dışı iletişim araçları yerine dört dua/seslendirme biçimi. Üç kötü davranış karşısında tek iyi davranış kurulmadı; meale bağlı ses niteliği soruluyor.",
+        "optionReview": {
+          "o4": "Başka seslendirme biçimi.",
+          "o2": "Mealin belirttiği biçim.",
+          "o1": "Başka ses düzeyi.",
+          "o3": "Başka katılım biçimi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/3; PDF sayfa 320 (1 tabanlı), basılı sayfa 319",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2639,8 +2743,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-zekeriyya-022",
+        "reviewedCandidateSha256": "9ff393398fb39853638d78a66279c3d9a2191b60511cefeae03f70e8b3a71441",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört anılma adedi. Zekeriyyâ 112’de altı yerin tamamı listelenir; başka kaynaklardaki yaş/süre rivayetleri sayıya karıştırılmıyor.",
+        "optionReview": {
+          "o1": "Eksik anılma.",
+          "o2": "Altı ismen anılma.",
+          "o3": "Şuayb’la karışabilir.",
+          "o4": "Yûsuf/Lût ile karışabilir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+          "locator": "112–114. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2690,20 +2818,20 @@
         "question": "Bir hadis rivayetine göre Hz. Zekeriyyâ hangi meslekle uğraşmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Denizcilik"
-          },
-          {
             "id": "o2",
             "text": "Marangozluk"
           },
           {
+            "id": "o1",
+            "text": "Dokumacılık"
+          },
+          {
             "id": "o3",
-            "text": "Maden dökümcülüğü"
+            "text": "Dericilik"
           },
           {
             "id": "o4",
-            "text": "Dokumacılık"
+            "text": "Çömlekçilik"
           }
         ],
         "correctOptionId": "o2",
@@ -2711,20 +2839,46 @@
         "explanation": "TDV Zekeriyyâ maddesi, Müslim'de nakledilen bir hadise göre Zekeriyyâ'nın marangozluk yaptığını belirtir; bu bilgi Kur’an'da değil rivayet kaynağında yer alır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ZEKERİYYÂ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zekeriyya",
-            "locator": "Hadiste marangozluk rivayeti",
+            "locator": "112–114. satırlar",
             "supports": "TDV Zekeriyyâ maddesi, Müslim'de nakledilen bir hadise göre Zekeriyyâ'nın marangozluk yaptığını belirtir; bu bilgi Kur’an'da değil rivayet kaynağında yer alır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q50-zekeriyya-023",
+        "reviewedCandidateSha256": "6a288f74a9db09bd2b5049db47eefd6f9b5812f33875e1790b1ef4f1ab22ccfc",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Aynı dönemde mümkün dört el zanaatı. Meslek bilgisi Müslim’deki hadise nispetli; Kur’an lafzı diye sunulmuyor.",
+        "optionReview": {
+          "o2": "Hadiste bildirilen meslek.",
+          "o1": "Başka el zanaatı.",
+          "o3": "Başka el zanaatı.",
+          "o4": "Başka el zanaatı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zekeriyya",
+          "locator": "112–114. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2774,20 +2928,20 @@
         "question": "Ensarı oluşturan Medineli iki ana kabile hangileriydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kureyş ve Sakīf"
+            "id": "o3",
+            "text": "Temîm ve Tay"
+          },
+          {
+            "id": "o4",
+            "text": "Kinde ve Gassân"
           },
           {
             "id": "o2",
             "text": "Evs ve Hazrec"
           },
           {
-            "id": "o3",
-            "text": "Temîm ve Tay"
-          },
-          {
-            "id": "o4",
-            "text": "Kindî ve Gassân"
+            "id": "o1",
+            "text": "Kureyş ve Sakīf"
           }
         ],
         "correctOptionId": "o2",
@@ -2795,20 +2949,46 @@
         "explanation": "TDV Ensar maddesinde ensarın Evs ve Hazrec kabilelerinden Müslüman olan Medineliler için kullanılan ad olduğu açıklanır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ENSAR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Ensarın Evs ve Hazrec kabilelerinden oluşması",
+            "locator": "96–101. satırlar",
             "supports": "TDV Ensar maddesinde ensarın Evs ve Hazrec kabilelerinden Müslüman olan Medineliler için kullanılan ad olduğu açıklanır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-001",
+        "reviewedCandidateSha256": "c2c437675b6d05a392c295d7e3e1b3d0aaec13033d40128ced163208bdbc0fd5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dört gerçek kabile çifti korunuyor; yanlış şıktaki Kindî nisbesi kabile adı Kinde olarak düzeltildi. Ensarın bütün Evs/Hazrec mensupları değil Müslümanları olduğu açıklamada korunuyor.",
+        "optionReview": {
+          "o3": "Başka kabile çifti.",
+          "o4": "Başka kabile çifti.",
+          "o2": "Ensarı oluşturan iki ana kabile.",
+          "o1": "Başka kabile çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2858,20 +3038,20 @@
         "question": "Ensar kelimesi Arapçadaki hangi kökten türemiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Salât (namaz)"
+            "id": "o4",
+            "text": "Hicret (göç)"
           },
           {
             "id": "o2",
             "text": "Nasr (yardım)"
           },
           {
-            "id": "o3",
-            "text": "Savm (oruç)"
+            "id": "o1",
+            "text": "Sulh (barış)"
           },
           {
-            "id": "o4",
-            "text": "Hicret (göç)"
+            "id": "o3",
+            "text": "Adl (adalet)"
           }
         ],
         "correctOptionId": "o2",
@@ -2879,20 +3059,46 @@
         "explanation": "Ensar sözü yardım etmek anlamındaki nasr kökünden gelir; TDV maddesi çoğul yapısını ve ensârî nisbesini açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ENSAR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Nasr kökü ve yardım anlamı",
+            "locator": "96–99. satırlar",
             "supports": "Ensar sözü yardım etmek anlamındaki nasr kökünden gelir; TDV maddesi çoğul yapısını ve ensârî nisbesini açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-002",
+        "reviewedCandidateSha256": "8eec87df061f7c8fd499b63b3110bfac41d9414f446b3b3a8e31b4b517b29ef7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ibadet terimine karşı tek yardım anlamı yerine dört toplumsal/dinî kavram. Soru kavramların iyi olup olmadığını değil ensarın türediği kökü soruyor.",
+        "optionReview": {
+          "o4": "Başka toplumsal kavram.",
+          "o2": "Ensarın kökü.",
+          "o1": "Başka toplumsal kavram.",
+          "o3": "Başka toplumsal kavram."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2943,19 +3149,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "9/1 ve 9/2"
+            "text": "9/20 ve 9/40"
+          },
+          {
+            "id": "o3",
+            "text": "9/60 ve 9/80"
+          },
+          {
+            "id": "o4",
+            "text": "9/88 ve 9/120"
           },
           {
             "id": "o2",
             "text": "9/100 ve 9/117"
-          },
-          {
-            "id": "o3",
-            "text": "9/29 ve 9/30"
-          },
-          {
-            "id": "o4",
-            "text": "9/80 ve 9/81"
           }
         ],
         "correctOptionId": "o2",
@@ -2963,20 +3169,46 @@
         "explanation": "TDV Ensar maddesi, ensar isminin Tevbe 9/100 ile 9/117'de muhacirlerle birlikte yer aldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ENSAR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Tevbe 9/100 ve 9/117",
+            "locator": "96–98. satırlar",
             "supports": "TDV Ensar maddesi, ensar isminin Tevbe 9/100 ile 9/117'de muhacirlerle birlikte yer aldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-003",
+        "reviewedCandidateSha256": "c0a5a5feb4b47edd6751425ec07f82d7f01dc4c61a203f30bb251d46bc093d75",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ardışık ayet çiftine karşı tek uzak ayet çifti biçimsel ipucu kaldırıldı. Dördü de aynı sûrede birbirinden ayrı iki ayet; adın açıkça geçtiği çift gerekir.",
+        "optionReview": {
+          "o1": "Başka Tevbe ayetleri.",
+          "o3": "Başka Tevbe ayetleri.",
+          "o4": "Medine/ashap bağlamı olabilir; ensar adının geçtiği çift değil.",
+          "o2": "Ensar adının açıkça geçtiği çift."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3026,41 +3258,67 @@
         "question": "Evs ve Hazrec arasındaki son büyük Câhiliye dönemi çarpışması hangi adla bilinir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bedir Gazvesi"
-          },
-          {
-            "id": "o2",
-            "text": "Buâs Harbi"
-          },
-          {
             "id": "o3",
-            "text": "Tebük Seferi"
+            "text": "Besûs"
           },
           {
             "id": "o4",
-            "text": "Yermük Savaşı"
+            "text": "Dâhis"
+          },
+          {
+            "id": "o2",
+            "text": "Buâs"
+          },
+          {
+            "id": "o1",
+            "text": "Ficâr"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Buâs Harbi",
+        "correctAnswer": "Buâs",
         "explanation": "TDV Ensar maddesi, iki kabile arasında İslâm öncesi dönemde yaşanan son büyük savaşın Buâs Harbi olduğunu kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ENSAR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Buâs Harbi",
+            "locator": "99–101. satırlar",
             "supports": "TDV Ensar maddesi, iki kabile arasında İslâm öncesi dönemde yaşanan son büyük savaşın Buâs Harbi olduğunu kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-004",
+        "reviewedCandidateSha256": "9bff0a6cdd59136e9139e8935e63ab8d73b15e9c2ebac85c8f603d24370de004",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hicret sonrası savaşa karşı tek Câhiliye savaşı yerine dört gerçek Câhiliye savaş adı. Evs-Hazrec arasındaki son büyük çarpışma bilgisi gerekir.",
+        "optionReview": {
+          "o3": "Başka Câhiliye savaşı.",
+          "o4": "Başka Câhiliye savaşı.",
+          "o2": "Evs-Hazrec mücadelesi.",
+          "o1": "Başka Câhiliye çarpışmaları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "99–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3143,8 +3401,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-005",
+        "reviewedCandidateSha256": "38f5a49a252b06b639b0a1c7e7c4568c039419d97aacfe5fbf2316f492e69507",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört katılımcı sayısı aynı yapıda. Ensar 102’nin toplam 75 anlatımına nispet; erkek sayısı ve toplam ayrımı korunuyor.",
+        "optionReview": {
+          "o1": "Birinci Akabe ile karışabilir.",
+          "o2": "TDV’nin toplamı.",
+          "o3": "Daha düşük toplam.",
+          "o4": "Daha yüksek toplam."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "101–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3227,8 +3509,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-006",
+        "reviewedCandidateSha256": "b444f152af399ea9791694d61ff8bc92a1afa5120e61cf017a96c306744fce09",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört katılımcı sayısı. On Hazrec ve iki Evs toplam 12; sonraki 75 kişilik heyet farklı biat.",
+        "optionReview": {
+          "o1": "İlk altılı görüşmeyle karışabilir.",
+          "o2": "Birinci Akabe toplamı.",
+          "o3": "İkinci Akabe ile karışabilir.",
+          "o4": "Farklı sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "101–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3275,23 +3581,23 @@
         ]
       },
       "after": {
-        "question": "Ensar ve muhacir arasındaki geçici kardeşlik mirası hangi âyetle sona erdi?",
+        "question": "TDV Ensar maddesine göre kardeşlik akdinin geçici miras hükmü hangi âyetle kaldırıldı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Fîl 105/1"
+            "id": "o4",
+            "text": "Nisâ 4/176"
           },
           {
             "id": "o2",
             "text": "Enfâl 8/75"
           },
           {
-            "id": "o3",
-            "text": "İhlâs 112/4"
+            "id": "o1",
+            "text": "Nisâ 4/11"
           },
           {
-            "id": "o4",
-            "text": "Nûh 71/4"
+            "id": "o3",
+            "text": "Nisâ 4/12"
           }
         ],
         "correctOptionId": "o2",
@@ -3299,20 +3605,51 @@
         "explanation": "Kardeşlik akdinden doğan geçici miras uygulamasına Bedir'den sonra inen Enfâl 8/75 ile son verildiği TDV'de açıklanır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ENSAR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Enfâl 8/75, miras düzenlemesi",
+            "locator": "104–106. satırlar",
             "supports": "Kardeşlik akdinden doğan geçici miras uygulamasına Bedir'den sonra inen Enfâl 8/75 ile son verildiği TDV'de açıklanır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "correct-prefix-outlier",
+          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-007",
+        "reviewedCandidateSha256": "1ce81273839110876bcb36c572ec313490e4db62314ce1a8f60655ebf5227bf4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilgisiz kısa sûre ayeti yerine mirasla ilgili dört ayet. Ahzâb 33/6 da akraba önceliğini anlattığından yanlış şık yapılmadı; kaynak nispeti açık.",
+        "optionReview": {
+          "o4": "Başka miras hükümleri.",
+          "o2": "TDV’nin hükmün sonuna bağladığı ayet.",
+          "o1": "Başka miras hükümleri.",
+          "o3": "Başka miras hükümleri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "104–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3359,44 +3696,70 @@
         ]
       },
       "after": {
-        "question": "Ensar, muhacirlerin tarımsal geçimine destek olmak için özellikle hangi üründen paylaştı?",
+        "question": "TDV’ye göre ensarla muhacirlerin ürüne ortak olduğu başlıca bahçe mahsulü hangisiydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Pamuk tarlalarından"
+            "id": "o4",
+            "text": "İncir"
           },
           {
             "id": "o2",
-            "text": "Hurma bahçelerinin ürünlerinden"
+            "text": "Hurma"
+          },
+          {
+            "id": "o1",
+            "text": "Üzüm"
           },
           {
             "id": "o3",
-            "text": "Zeytinyağı fabrikalarından"
-          },
-          {
-            "id": "o4",
-            "text": "Maden ocaklarından"
+            "text": "Nar"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hurma bahçelerinin ürünlerinden",
+        "correctAnswer": "Hurma",
         "explanation": "Medineli ensarın hurma bahçelerinde çalışan muhacirlerin emeği karşılığında ürüne ortak olması, mülkiyetin ensarda kalması esasına dayanıyordu.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ENSAR",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ensar",
-            "locator": "Hurma bahçelerinde emek ve ürün ortaklığı",
+            "locator": "104–106. satırlar",
             "supports": "Medineli ensarın hurma bahçelerinde çalışan muhacirlerin emeği karşılığında ürüne ortak olması, mülkiyetin ensarda kalması esasına dayanıyordu.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-ensar-008",
+        "reviewedCandidateSha256": "6f114c92c36625bdd4af0e1af6078afa38453b709ec11456f6f18d6f506f43c8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Zeytinyağı fabrikası/maden ocağı gibi alan dışı ve dönemle uyumsuz işler yerine dört bölgesel meyve. Mülkiyet ortaklığı değil emek karşılığı ürün ortaklığı korunuyor.",
+        "optionReview": {
+          "o4": "Başka bahçe ürünü.",
+          "o2": "Kaynakta anlatılan hurmalık ürünü.",
+          "o1": "Başka bahçe ürünü.",
+          "o3": "Başka bahçe ürünü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ensar",
+          "locator": "104–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3446,41 +3809,67 @@
         "question": "Muâhât hangi sosyal ihtiyaca özellikle cevap vermek için düzenlendi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mekke'ye yeni vergi koymak"
+            "id": "o2",
+            "text": "Muhacirlerin yeni yurtlarına uyumunu sağlamak"
           },
           {
-            "id": "o2",
-            "text": "Yurtlarından ayrılan muhacirleri desteklemek"
+            "id": "o1",
+            "text": "Savaş esirlerinin ailelerine dönüşünü sağlamak"
           },
           {
             "id": "o3",
-            "text": "Kervanların yolunu değiştirmek"
+            "text": "Hac yolcularının konaklamasını düzenlemek"
           },
           {
             "id": "o4",
-            "text": "Denizcilik eğitimi vermek"
+            "text": "Ziyaretçi heyetlerin görüşmelerini düzenlemek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yurtlarından ayrılan muhacirleri desteklemek",
+        "correctAnswer": "Muhacirlerin yeni yurtlarına uyumunu sağlamak",
         "explanation": "Kardeşlik uygulaması Mekke'de evini ve malını bırakmış göçmenlerin maddî ve mânevî ihtiyaçlarını karşılamayı hedefliyordu.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/muahat",
-            "locator": "Muhacirlerin yeni hayata uyumu",
+            "locator": "99–103. satırlar",
             "supports": "Kardeşlik uygulaması Mekke'de evini ve malını bırakmış göçmenlerin maddî ve mânevî ihtiyaçlarını karşılamayı hedefliyordu.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-muahat-010",
+        "reviewedCandidateSha256": "bb6d2b0d1273ae0ff3bfab6e8e88e8c722a37b5240b217eed216b718d31ae9c7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Vergi/yol değiştirme/denizcilik yerine dört makul ve olumlu toplumsal destek amacı. Muâhâtın öncelikli ihtiyacı muhacirlerin maddî-mânevî bütünleşmesidir.",
+        "optionReview": {
+          "o2": "Muâhâtın öncelikli sosyal amacı.",
+          "o1": "Başka sosyal destek amacı.",
+          "o3": "Başka sosyal destek amacı.",
+          "o4": "Başka sosyal destek amacı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/muahat",
+          "locator": "99–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3530,41 +3919,67 @@
         "question": "TDV'nin aktardığı yaygın rivayete göre Medine muâhâtında yaklaşık kaç kişi kardeşleştirildi?",
         "options": [
           {
-            "id": "o1",
-            "text": "On"
+            "id": "o2",
+            "text": "Doksan–yüz"
           },
           {
-            "id": "o2",
-            "text": "Doksan-yüz"
+            "id": "o1",
+            "text": "Kırk–elli"
           },
           {
             "id": "o3",
-            "text": "Bin"
+            "text": "Yetmiş–seksen"
           },
           {
             "id": "o4",
-            "text": "Beş yüz"
+            "text": "Yüz yirmi–yüz otuz"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Doksan-yüz",
+        "correctAnswer": "Doksan–yüz",
         "explanation": "Muâhât konusunda sayılar farklı rivayet edilse de TDV maddesi yaygın görüşün doksan ile yüz sahâbî arasında olduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/muahat",
-            "locator": "Rivayetlere göre 90-100 kişi",
+            "locator": "99–101. satırlar",
             "supports": "Muâhât konusunda sayılar farklı rivayet edilse de TDV maddesi yaygın görüşün doksan ile yüz sahâbî arasında olduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-muahat-011",
+        "reviewedCandidateSha256": "6c6efef536063a6e9f35f2042db5550df5df7003e7afebd9ffa2f66e22e3b9f1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek aralıklı cevaba karşı üç tek sayı kaldırıldı; dört aralık aynı yapıda. Yaygın rivayet kaydı korunuyor; 44/82/186 gibi başka tespit ve rivayetler yok sayılmıyor.",
+        "optionReview": {
+          "o2": "Kaynağın yaygın dediği aralık.",
+          "o1": "44 kişilik tespitle karışabilir.",
+          "o3": "Daha düşük aralık.",
+          "o4": "Daha yüksek aralık."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/muahat",
+          "locator": "99–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3614,20 +4029,20 @@
         "question": "Muâhâtta kardeşlik bağı kurulurken hangi eski Câhiliye uygulamasının yerine din kardeşliği vurgulandı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sa‘y"
-          },
-          {
             "id": "o2",
             "text": "Hilf"
           },
           {
+            "id": "o1",
+            "text": "Velâ"
+          },
+          {
             "id": "o3",
-            "text": "Vakfe"
+            "text": "Civâr"
           },
           {
             "id": "o4",
-            "text": "İtikâf"
+            "text": "Nesep"
           }
         ],
         "correctOptionId": "o2",
@@ -3635,20 +4050,46 @@
         "explanation": "TDV Muâhât maddesi, eski Câhiliye ittifakları olan hilf anlayışının yerine Müslümanlar arasındaki kardeşliğin esas alındığını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/muahat",
-            "locator": "Hilf yerine din kardeşliği",
+            "locator": "99–104. satırlar",
             "supports": "TDV Muâhât maddesi, eski Câhiliye ittifakları olan hilf anlayışının yerine Müslümanlar arasındaki kardeşliğin esas alındığını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-muahat-012",
+        "reviewedCandidateSha256": "e015633c8b46185e132490719ed8ce6ed902abe6e65cf2a3f577d57bb641c356",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ibadet adına karşı tek toplumsal bağ yerine dört sosyal/hukukî bağ terimi. Kök Câhiliye ittifakını soruyor; biyolojik nesep bağlarının kaldırıldığı iddia edilmiyor.",
+        "optionReview": {
+          "o2": "Câhiliye ittifak terimi.",
+          "o1": "Başka bağlılık ilişkisi.",
+          "o3": "Komşuluk/himaye ilişkisi.",
+          "o4": "Soy ilişkisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/muahat",
+          "locator": "99–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3695,44 +4136,70 @@
         ]
       },
       "after": {
-        "question": "Muâhât sonrasında hukuken kaldırılan miras uygulamasının yerini hangi kalıcı değerler aldı?",
+        "question": "Hucurât 49/10’da müminler arasındaki ilişki hangi kavramla ifade edilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kabileler arası üstünlük"
+            "id": "o4",
+            "text": "Ortaklık"
           },
           {
             "id": "o2",
-            "text": "Yardımlaşma ve öğütleşme"
+            "text": "Kardeşlik"
+          },
+          {
+            "id": "o1",
+            "text": "Komşuluk"
           },
           {
             "id": "o3",
-            "text": "Tek taraflı yükümlülük"
-          },
-          {
-            "id": "o4",
-            "text": "Ticarî zorunlu ortaklık"
+            "text": "Hısımlık"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yardımlaşma ve öğütleşme",
-        "explanation": "Kardeşlik akdinin mirasa ilişkin hükmü sona ermiş olsa da yardımlaşma, destek olma ve öğütleşme ilişkileri devam etmiştir.",
+        "correctAnswer": "Kardeşlik",
+        "explanation": "Hucurât 49/10 müminleri kardeş olarak tanımlar ve aralarını düzeltmeyi öğütler. Bu bağ soy esaslı hısımlık veya malî ortaklıkla aynı şey değildir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/muahat",
-            "locator": "Miras sonrası devam eden dayanışma",
-            "supports": "Kardeşlik akdinin mirasa ilişkin hükmü sona ermiş olsa da yardımlaşma, destek olma ve öğütleşme ilişkileri devam etmiştir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "49/10; Kur’an Yolu Meal PDF pasajı",
+            "supports": "Hucurât 49/10 müminleri kardeş olarak tanımlar ve aralarını düzeltmeyi öğütler. Bu bağ soy esaslı hısımlık veya malî ortaklıkla aynı şey değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-muahat-014",
+        "reviewedCandidateSha256": "9f6210914a0a9c9c7ae0149e625903a97cd1a9e3ba624486ccc00f8cd15cb561",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç olumsuz/zorunlu bağa karşı tek iyi değer ipucu kaldırıldı. Muâhâtın devam eden boyutuna kaynakta bağlanan ayetin açık kavramı soruluyor; dört olumlu/nötr sosyal ilişki aynı yapıda.",
+        "optionReview": {
+          "o4": "Başka sosyal ilişki.",
+          "o2": "Ayetin açık ilişki kavramı.",
+          "o1": "Başka sosyal ilişki.",
+          "o3": "Başka sosyal ilişki."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/10; PDF sayfa 549 (1 tabanlı), basılı sayfa 548",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3779,23 +4246,23 @@
         ]
       },
       "after": {
-        "question": "Muâhâta göre sahâbîlerden biri sefere çıkınca şehirde kalan kardeşin aileye ilişkin görevi neydi?",
+        "question": "Muâhâtın sefer düzeninde Medine’de kalan kardeşin sorumluluğu hangisidir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Savaşmak üzere mecburen ayrılmak"
-          },
           {
             "id": "o2",
             "text": "Diğerinin ailesinin işleriyle ilgilenmek"
           },
           {
+            "id": "o1",
+            "text": "Seferin güzergâhını önceden belirlemek"
+          },
+          {
             "id": "o3",
-            "text": "Yalnızca vergi toplamak"
+            "text": "Ordudaki erzak dağıtımını yapmak"
           },
           {
             "id": "o4",
-            "text": "Mescidin kapısını kilitlemek"
+            "text": "Sefer haberlerini diğer kabilelere iletmek"
           }
         ],
         "correctOptionId": "o2",
@@ -3803,20 +4270,46 @@
         "explanation": "Kardeşlik uygulaması, askerî seferde bulunan sahâbînin ailesinin şehirde kalan kardeşi tarafından desteklenmesine yardımcı olmuştur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — MUÂHÂT",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/muahat",
-            "locator": "Sefere çıkanın ailesine destek",
+            "locator": "102–103. satırlar",
             "supports": "Kardeşlik uygulaması, askerî seferde bulunan sahâbînin ailesinin şehirde kalan kardeşi tarafından desteklenmesine yardımcı olmuştur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-muahat-016",
+        "reviewedCandidateSha256": "e55aa5e73e1c57116fdabe809650c317420f25d1cf023279872ceed8366a7a6f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yalnız vergi/mescidi kilitleme gibi ilgisiz ve kötü eylemler yerine seferle ilişkili dört makul destek görevi. Kaynağın belirttiği aile desteği belirli.",
+        "optionReview": {
+          "o2": "Kaynakta kardeşe verilen sorumluluk.",
+          "o1": "Başka sefer hazırlık görevi.",
+          "o3": "Başka sefer destek görevi.",
+          "o4": "Başka haberleşme görevi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/muahat",
+          "locator": "102–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3866,41 +4359,67 @@
         "question": "Suffe başlangıçta Mescid-i Nebevî'de hangi amaçla kurulmuştu?",
         "options": [
           {
-            "id": "o1",
-            "text": "Devlet hazinesini saklamak"
+            "id": "o2",
+            "text": "Yakını olmayan sahâbîlere barınak sağlamak"
           },
           {
-            "id": "o2",
-            "text": "Barınacak yeri olmayan sahâbîleri ağırlamak"
+            "id": "o1",
+            "text": "Sefer hazırlıkları için erzak depolamak"
           },
           {
             "id": "o3",
-            "text": "Silah üretmek"
+            "text": "Yabancı heyetlerin yazışmalarını yürütmek"
           },
           {
             "id": "o4",
-            "text": "Ticaret mallarını satmak"
+            "text": "Şehir pazarındaki tartıları denetlemek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Barınacak yeri olmayan sahâbîleri ağırlamak",
+        "correctAnswer": "Yakını olmayan sahâbîlere barınak sağlamak",
         "explanation": "Suffe, Mescid-i Nebevî'nin yanında barınacak evi ve yakınları bulunmayan yoksul sahâbîlere ayrılan bir gölgelik olarak kurulmuştur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SUFFE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "İlk barınma amacı",
+            "locator": "96–106. satırlar",
             "supports": "Suffe, Mescid-i Nebevî'nin yanında barınacak evi ve yakınları bulunmayan yoksul sahâbîlere ayrılan bir gölgelik olarak kurulmuştur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-017",
+        "reviewedCandidateSha256": "138ec0499f503dba45425e7cea3e894a131d82607ffef50bf784e3e37a9a5ea3",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Silâh üretimi gibi uzak işler yerine Medine toplumu için dört gerçek ihtiyaç türü. Başlangıç amacı barınmadır; sonradan eğitim ve heyet ağırlama gelişmesi ikinci doğru gibi sunulmadı.",
+        "optionReview": {
+          "o2": "Başlangıçtaki amaç.",
+          "o1": "Başka kamusal ihtiyaç.",
+          "o3": "Başka kamusal ihtiyaç.",
+          "o4": "Başka kamusal ihtiyaç."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "96–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3951,19 +4470,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Kuyu"
+            "text": "Avlu"
+          },
+          {
+            "id": "o3",
+            "text": "Kemer"
+          },
+          {
+            "id": "o4",
+            "text": "Kubbe"
           },
           {
             "id": "o2",
             "text": "Gölgelik"
-          },
-          {
-            "id": "o3",
-            "text": "Taş köprü"
-          },
-          {
-            "id": "o4",
-            "text": "Kütüphane"
           }
         ],
         "correctOptionId": "o2",
@@ -3971,20 +4490,46 @@
         "explanation": "TDV Suffe maddesi bu kelimenin gölgelik anlamına geldiğini ve Mescid-i Nebevî yakınındaki barınma yerine ad olduğunu açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SUFFE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Gölgelik anlamı",
+            "locator": "96–98. satırlar",
             "supports": "TDV Suffe maddesi bu kelimenin gölgelik anlamına geldiğini ve Mescid-i Nebevî yakınındaki barınma yerine ad olduğunu açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-018",
+        "reviewedCandidateSha256": "e87deec1e80472d303bbede21ca91e0af1cc7055a377c5348ff5175fc8d24f3a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kuyu/köprü/kütüphane yerine dört yapı-mimari kavramı. Kelimenin sözlük karşılığı soruluyor; işlevinden hareketle okul veya kütüphane denmiyor.",
+        "optionReview": {
+          "o1": "Başka yapı alanı.",
+          "o3": "Başka yapı unsuru.",
+          "o4": "Başka yapı unsuru.",
+          "o2": "Kelimenin sözlük anlamı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4034,41 +4579,67 @@
         "question": "Ashâb-ı Suffe'ye ihtiyaçlarının karşılanması nedeniyle hangi lakap verilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Zü'n-nûreyn"
+            "id": "o4",
+            "text": "Ashâb-ı Şecere"
           },
           {
             "id": "o2",
-            "text": "Adyâfü'l-İslâm"
+            "text": "Adyâfü’l-İslâm"
+          },
+          {
+            "id": "o1",
+            "text": "Evfâd"
           },
           {
             "id": "o3",
-            "text": "Seyfullah"
-          },
-          {
-            "id": "o4",
-            "text": "Hatîbü'l-enbiyâ"
+            "text": "Ehl-i Bedir"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Adyâfü'l-İslâm",
+        "correctAnswer": "Adyâfü’l-İslâm",
         "explanation": "Ashâb-ı Suffe, ihtiyaçlarının Peygamber ve varlıklı sahâbîlerce giderilmesi dolayısıyla 'Müslümanların misafirleri' anlamındaki adyâfü'l-İslâm diye anılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SUFFE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Adyâfü'l-İslâm lakabı",
+            "locator": "96–100. satırlar",
             "supports": "Ashâb-ı Suffe, ihtiyaçlarının Peygamber ve varlıklı sahâbîlerce giderilmesi dolayısıyla 'Müslümanların misafirleri' anlamındaki adyâfü'l-İslâm diye anılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-019",
+        "reviewedCandidateSha256": "f75d4992daf460a5cb0ab5ceee6229fcf7290c1d22af0b3c289d3de44dd56daf",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç tek kişi lakabı yerine dört topluluk adı. Evfâd da Suffe ehli için kullanılır, fakat sebebi farklı kabilelerden gelmeleridir; kökte ihtiyaçların karşılanması sebebi belirli.",
+        "optionReview": {
+          "o4": "Başka sahâbî topluluğu.",
+          "o2": "İhtiyaçları karşılanan misafirler adı.",
+          "o1": "Suffe için başka sebeple kullanılan ad.",
+          "o3": "Başka sahâbî topluluğu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Genel isim/işlevler ve farklı mezhep-kullanım bağlamları ayrı ayrı karşılaştırıldı. Üç tek kişi lakabı yerine dört topluluk adı. Evfâd da Suffe ehli için kullanılır, fakat sebebi farklı kabilelerden gelmeleridir; kökte ihtiyaçların karşılanması sebebi belirli.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4151,8 +4722,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-020",
+        "reviewedCandidateSha256": "fa7abb36722a8e3c3c088f50ba6daa01066ae2235ff2668cbdcb93b7c0f8f089",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ana yön. Başlangıç güneyden kıble değişimi sonrası kuzeye geçiş belirli; kıblenin kendisi yerine gölgeliğin yeri soruluyor.",
+        "optionReview": {
+          "o1": "Başlangıç konumu.",
+          "o2": "Sonraki gölgelik konumu.",
+          "o3": "Başka yön.",
+          "o4": "Başka yön."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "98–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4235,8 +4830,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-021",
+        "reviewedCandidateSha256": "ce83ba6b9a6cd02727bc536e82b25ed3d8f456ee0d306958ab460345cbe38182",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kişi sayısı. Kaynak yaklaşık 70 kişinin aynı anda kaldığını, 400’ün farklı zamanlardaki toplam olduğunu ayırır; evrensel sabit kapasite ilan edilmez.",
+        "optionReview": {
+          "o1": "Düşük sayı.",
+          "o2": "Aynı anda kalanlara dair rivayet.",
+          "o3": "Başka sayı.",
+          "o4": "Başka sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "99–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4283,44 +4902,70 @@
         ]
       },
       "after": {
-        "question": "Suffe'deki eğitim faaliyetleri hangi iki konuya özellikle odaklanırdı?",
+        "question": "TDV Suffe maddesinde eğitim konuları olarak özellikle örneklenen ikili hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Denizcilik ve mühendislik"
-          },
-          {
-            "id": "o2",
-            "text": "Kur’an ve hadis öğrenimi"
+            "text": "Fıkıh ve ferâiz"
           },
           {
             "id": "o3",
-            "text": "At yarışı ve ticaret"
+            "text": "Siyer ve ensâb"
           },
           {
             "id": "o4",
-            "text": "Sadece mimarlık"
+            "text": "Şiir ve hitabet"
+          },
+          {
+            "id": "o2",
+            "text": "Kur’an ve hadis"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kur’an ve hadis öğrenimi",
+        "correctAnswer": "Kur’an ve hadis",
         "explanation": "Suffe ehli, Resûlullah'ın derslerini dinliyor, Kur’an ve hadis öğreniyor; öğrendiklerini başka Müslümanlara aktarıyordu.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SUFFE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Kur’an ve hadis eğitimi",
+            "locator": "103–110. satırlar",
             "supports": "Suffe ehli, Resûlullah'ın derslerini dinliyor, Kur’an ve hadis öğreniyor; öğrendiklerini başka Müslümanlara aktarıyordu.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-022",
+        "reviewedCandidateSha256": "f242f092b91db36980d7b18d2e4301b2392681662b316e555c195c79137009eb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç denizcilik/ticaret/mimari konusuna karşı tek dinî öğrenim çifti yerine dört dönemsel öğrenim alanı. Suffe’nin başka ilimlere etkisi inkâr edilmiyor; maddede öne çıkan doğrudan öğrenim örneği soruluyor.",
+        "optionReview": {
+          "o1": "Başka dinî öğrenim alanları.",
+          "o3": "Başka İslâmî bilgi alanları.",
+          "o4": "Başka sözlü öğrenim alanları.",
+          "o2": "105–107’de öne çıkan öğrenim."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "103–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4367,23 +5012,23 @@
         ]
       },
       "after": {
-        "question": "Suffe'de yazı ve Kur’an öğretimi için görevlendirilen sahâbîlerden biri kimdi?",
+        "question": "TDV Suffe maddesinde yazı ve Kur’an öğretmek üzere görevlendirildiği adıyla anılan sahâbî kimdir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Süheyl b. Amr"
-          },
           {
             "id": "o2",
             "text": "Ubâde b. Sâmit"
           },
           {
+            "id": "o1",
+            "text": "Zeyd b. Sâbit"
+          },
+          {
             "id": "o3",
-            "text": "Ebû Cehil"
+            "text": "Abdullah b. Mes‘ûd"
           },
           {
             "id": "o4",
-            "text": "Kisrâ"
+            "text": "Mus‘ab b. Umeyr"
           }
         ],
         "correctOptionId": "o2",
@@ -4391,20 +5036,46 @@
         "explanation": "TDV Suffe maddesi Hz. Peygamber'in Suffe ehline yazı ve Kur’an öğretmek üzere Ubâde b. Sâmit gibi hocalar tayin ettiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SUFFE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Ubâde b. Sâmit'in öğretim görevi",
+            "locator": "105–110. satırlar",
             "supports": "TDV Suffe maddesi Hz. Peygamber'in Suffe ehline yazı ve Kur’an öğretmek üzere Ubâde b. Sâmit gibi hocalar tayin ettiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-023",
+        "reviewedCandidateSha256": "ac6e564b11326b04a44c85babac204b634c7934d860254e31770a94712ba1b4f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ebû Cehil/Kisrâ gibi öğretmen olması imkânsız kişiler yerine dört gerçek okuryazar/öğretici sahâbî. İbn Mes‘ûd da Suffe bağlantılıdır; kök maddede açık görevlendirme adı verilen kişiye bağlı.",
+        "optionReview": {
+          "o2": "105–106’daki görevli hoca.",
+          "o1": "Başka yazıcı/öğretici sahâbî.",
+          "o3": "Suffe’de yetişen ve öğreten başka isim.",
+          "o4": "Medine’ye önceden gönderilen öğretici."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "105–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4451,44 +5122,75 @@
         ]
       },
       "after": {
-        "question": "Hz. Peygamber kendisine gelen sadakaları Suffe ehli için nasıl değerlendirirdi?",
+        "question": "TDV Suffe maddesinde Hz. Peygamber’in sadaka ve hediyeye uyguladığı fark nasıl anlatılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Biriktirip dağıtmazdı"
-          },
-          {
-            "id": "o2",
-            "text": "Tamamını onlara gönderirdi"
+            "text": "Hediyeyi Suffe’ye gönderir, sadakayı paylaşırdı"
           },
           {
             "id": "o3",
-            "text": "Yalnızca yöneticilere ayırırdı"
+            "text": "İkisini de bütünüyle Suffe’ye gönderirdi"
           },
           {
             "id": "o4",
-            "text": "Şehir dışına atardı"
+            "text": "İkisinden de kendisine pay ayırıp paylaşırdı"
+          },
+          {
+            "id": "o2",
+            "text": "Sadakayı Suffe’ye gönderir, hediyeyi paylaşırdı"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Tamamını onlara gönderirdi",
-        "explanation": "TDV Suffe maddesinde Resûlullah'ın kendisine getirilen sadakaları Suffe'de kalan ihtiyaç sahiplerine gönderdiği anlatılır.",
+        "correctAnswer": "Sadakayı Suffe’ye gönderir, hediyeyi paylaşırdı",
+        "explanation": "TDV Suffe maddesi, Hz. Peygamber’in kendisine getirilen sadakaların tamamını Suffe ehline gönderdiğini, hediyeleri ise onlarla paylaştığını anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — SUFFE",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Sadakaların Suffe ehline gönderilmesi",
-            "supports": "TDV Suffe maddesinde Resûlullah'ın kendisine getirilen sadakaları Suffe'de kalan ihtiyaç sahiplerine gönderdiği anlatılır.",
+            "locator": "101–102. satırlar",
+            "supports": "TDV Suffe maddesi, Hz. Peygamber’in kendisine getirilen sadakaların tamamını Suffe ehline gönderdiğini, hediyeleri ise onlarla paylaştığını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q51-suffe-024",
+        "reviewedCandidateSha256": "1f8d7226322a56424c723a44499bf1d27e0b083df6831aebe38bc4a556be7818",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç açıkça kötü davranış yerine dört olumlu dağıtım modeli. İlk iki şık iki gelir türünün yerini, son ikisi tamamını gönderme/kendine pay ayırma ayrımını karşılaştırır. Tek olumlu veya tek uzun cevap yok.",
+        "optionReview": {
+          "o1": "Kaynakta iki türün uygulaması ters çevrilmiş.",
+          "o3": "Hediyeden paylaşma farkını kaldırır.",
+          "o4": "Sadakayı tamamıyla gönderme farkını kaldırır.",
+          "o2": "Kaynakta verilen dağıtım farkı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "101–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4538,41 +5240,67 @@
         "question": "Vakıf kelimesi sözlükte hangi eylemle ilişkilidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hızla yürümek"
+            "id": "o2",
+            "text": "Durdurmak"
           },
           {
-            "id": "o2",
-            "text": "Durdurmak veya alıkoymak"
+            "id": "o1",
+            "text": "Bağışlamak"
           },
           {
             "id": "o3",
-            "text": "Deniz aşmak"
+            "text": "Paylaştırmak"
           },
           {
             "id": "o4",
-            "text": "Bağırmak"
+            "text": "Birleştirmek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Durdurmak veya alıkoymak",
+        "correctAnswer": "Durdurmak",
         "explanation": "TDV Vakıf maddesi, vakf sözcüğünün durmak, durdurmak ve alıkoymak anlamlarından geldiğini; hukukta bir malın hayra tahsisini ifade ettiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — VAKIF",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/vakif",
-            "locator": "Vakfın kelime anlamı",
+            "locator": "111–116. satırlar",
             "supports": "TDV Vakıf maddesi, vakf sözcüğünün durmak, durdurmak ve alıkoymak anlamlarından geldiğini; hukukta bir malın hayra tahsisini ifade ettiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q52-vakif-001",
+        "reviewedCandidateSha256": "3f9faf5736eefa04b6198e90b612038a6b30d6259f8252e1e3367cd1fe2bb019",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç uzak eyleme karşı tek uzun tanım yerine mal tasarrufuyla ilişkili dört mastar. Sözlük anlamı ile hukukî hayra tahsis tanımı birbirine eşitlenmedi.",
+        "optionReview": {
+          "o2": "Vakf kökünün sözlük anlamı.",
+          "o1": "Başka mal tasarrufu eylemi.",
+          "o3": "Başka mal tasarrufu eylemi.",
+          "o4": "Başka mal tasarrufu eylemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakif",
+          "locator": "111–116. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4619,44 +5347,70 @@
         ]
       },
       "after": {
-        "question": "Vakıf işleminin temel amacı hangisidir?",
+        "question": "Ebû Hanîfe’ye nispet edilen vakıf tanımı hangi tasarrufu anlatır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bir malı zorla ele geçirmek"
-          },
-          {
-            "id": "o2",
-            "text": "Bir malın yararını hayır işine tahsis etmek"
-          },
-          {
             "id": "o3",
-            "text": "Tüm malları ticarette satmak"
+            "text": "Malı bir bedel karşılığında başkasına satmak"
           },
           {
             "id": "o4",
-            "text": "Vergiden kaçınmak"
+            "text": "Malı bir borcun teminatı olarak alıkoymak"
+          },
+          {
+            "id": "o2",
+            "text": "Malın aslını tutup menfaatini hayra ayırmak"
+          },
+          {
+            "id": "o1",
+            "text": "Malın mülkiyetini karşılıksız bir kişiye devretmek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Bir malın yararını hayır işine tahsis etmek",
-        "explanation": "Vakıf, malın sahibince dinî, toplumsal veya hayrî bir gaye için devamlı şekilde tahsis edilmesini sağlayan müessesedir.",
+        "correctAnswer": "Malın aslını tutup menfaatini hayra ayırmak",
+        "explanation": "TDV’ye göre Ebû Hanîfe vakfı, malın aslını vakfedenin mülkiyetinde tutup menfaatini fakirlere veya hayır amacına ayırmak olarak tanımlar. Başka fakihler vakfedilen malın mülkiyetini farklı açıklar; soru bu görüşe bağlıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — VAKIF",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/vakif",
-            "locator": "Hayır amacıyla kalıcı tahsis",
-            "supports": "Vakıf, malın sahibince dinî, toplumsal veya hayrî bir gaye için devamlı şekilde tahsis edilmesini sağlayan müessesedir.",
+            "locator": "111–116. satırlar",
+            "supports": "TDV’ye göre Ebû Hanîfe vakfı, malın aslını vakfedenin mülkiyetinde tutup menfaatini fakirlere veya hayır amacına ayırmak olarak tanımlar. Başka fakihler vakfedilen malın mülkiyetini farklı açıklar; soru bu görüşe bağlıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q52-vakif-002",
+        "reviewedCandidateSha256": "a428ac51d344536a41edeb4f8a91f9ad6cc5d3a1352dac28efc87868b2f24ac2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek iyi hayır cevabına karşı üç kötü davranış kaldırıldı. Vakıf/hibe/satış/rehin gibi dört meşru tasarruf; vakfın mülkiyetinde mezhep ve fakih farkı nedeniyle kök Ebû Hanîfe’nin tanımına bağlı.",
+        "optionReview": {
+          "o3": "Satış türü işlem.",
+          "o4": "Rehin türü işlem.",
+          "o2": "Ebû Hanîfe’nin aslın mülkiyetini tutan tanımı.",
+          "o1": "Hibe türü mülkiyet devri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Genel isim/işlevler ve farklı mezhep-kullanım bağlamları ayrı ayrı karşılaştırıldı. Tek iyi hayır cevabına karşı üç kötü davranış kaldırıldı. Vakıf/hibe/satış/rehin gibi dört meşru tasarruf; vakfın mülkiyetinde mezhep ve fakih farkı nedeniyle kök Ebû Hanîfe’nin tanımına bağlı.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakif",
+          "locator": "111–116. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4703,23 +5457,23 @@
         ]
       },
       "after": {
-        "question": "Vakıf mütevellisinin işlemlerini denetleyen kişi veya kuruma ne ad verilir?",
+        "question": "Osmanlı uygulamasında mütevellinin vakıf işlemlerini kontrol eden görevin adı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sipahi"
+            "id": "o3",
+            "text": "Vâkıf"
+          },
+          {
+            "id": "o4",
+            "text": "Mevkūfün aleyh"
           },
           {
             "id": "o2",
             "text": "Nâzır"
           },
           {
-            "id": "o3",
-            "text": "Müezzin"
-          },
-          {
-            "id": "o4",
-            "text": "Muhacir"
+            "id": "o1",
+            "text": "Mütevelli"
           }
         ],
         "correctOptionId": "o2",
@@ -4727,20 +5481,46 @@
         "explanation": "TDV Vakıf maddesine göre nâzır, özellikle Osmanlı uygulamasında mütevellinin vakıfla ilgili işlerini gözeten ve ona danışmanlık yapabilen kişi veya organ için kullanılan addır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — VAKIF",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/vakif",
-            "locator": "Mütevelli işlemlerini denetleyen nâzır",
+            "locator": "163–168. satırlar",
             "supports": "TDV Vakıf maddesine göre nâzır, özellikle Osmanlı uygulamasında mütevellinin vakıfla ilgili işlerini gözeten ve ona danışmanlık yapabilen kişi veya organ için kullanılan addır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q52-vakif-004",
+        "reviewedCandidateSha256": "dc89413a1b6d583a335f0e42de7cbc3758a0db86255f486da88f019db23ba19e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilişkisiz asker/ibadet/göç rolü yerine dört vakıf tarafı/görevi. Nâzır ve mütevelli genel kullanımlarda yakın anlamlı olabildiğinden Osmanlı’daki mütevelliyi kontrol görevi belirli.",
+        "optionReview": {
+          "o3": "Vakfı kuran.",
+          "o4": "Vakfın menfaatinden yararlanan.",
+          "o2": "Mütevelliyi gözeten görev.",
+          "o1": "İşleri yürüten yönetici."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Genel isim/işlevler ve farklı mezhep-kullanım bağlamları ayrı ayrı karşılaştırıldı. Üç ilişkisiz asker/ibadet/göç rolü yerine dört vakıf tarafı/görevi. Nâzır ve mütevelli genel kullanımlarda yakın anlamlı olabildiğinden Osmanlı’daki mütevelliyi kontrol görevi belirli.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakif",
+          "locator": "163–168. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2432700f715abeb018318909c6911822c5cffd3af939127407e978973326841e"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

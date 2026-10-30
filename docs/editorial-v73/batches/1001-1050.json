@@ -3,9 +3,9 @@
   "start": 1001,
   "end": 1050,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 20,
+  "pendingReview": 30,
+  "sourceComparedThisRound": 20,
   "blocked": 0,
   "flaggedBefore": 17,
   "flaggedAfter": 4,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-buruc-005",
+        "reviewedCandidateSha256": "6e9922f48cedcff8a672a1f983fecd9277c30aabe873b69bc7386bc060d508a4",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu ilâhî sıfat çifti. 14. âyette bağış ve geniş sevgi birlikte; diğer sıfatların doğruluğu reddedilmiyor.",
+        "optionReview": {
+          "o4": "Başka ilâhî sıfat çifti.",
+          "o2": "14. âyetin çifti.",
+          "o1": "Başka ilâhî sıfat çifti.",
+          "o3": "Başka ilâhî sıfat çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "85/14; PDF sayfa 640 (1 tabanlı), basılı sayfa 639",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -140,20 +164,20 @@
         "question": "Burûc 85/17-18'de ibret olarak hangi iki topluluk anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Evs ve Hazrec"
+            "id": "o3",
+            "text": "Nûh kavmi ve Sebe halkı"
+          },
+          {
+            "id": "o4",
+            "text": "Lût kavmi ve Ashâbü’r-res"
           },
           {
             "id": "o2",
             "text": "Firavun ve Semûd"
           },
           {
-            "id": "o3",
-            "text": "Ensar ve Muhacir"
-          },
-          {
-            "id": "o4",
-            "text": "Medine ve Mekke"
+            "id": "o1",
+            "text": "Âd ve Medyen"
           }
         ],
         "correctOptionId": "o2",
@@ -161,20 +185,46 @@
         "explanation": "Burûc 85/17-18, geçmiş ordular olarak Firavun ve Semûd'u hatırlatır; inkâr ve zulmün âkıbetine dikkat çeker.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Burûc sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=18&mode=kuran-meal&sure=85",
-            "locator": "Burûc 85/18",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "85/17; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Burûc 85/17-18, geçmiş ordular olarak Firavun ve Semûd'u hatırlatır; inkâr ve zulmün âkıbetine dikkat çeker.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-buruc-006",
+        "reviewedCandidateSha256": "02cb2b354f9393f5b4a7a8716df81669f82447a3324b18d313dce729ecfbe318",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Sahâbî grupları ve şehir çifti yerine dört geçmiş topluluk çifti. Firavun adı ordusu/topluluğu bağlamındadır; diğer kavimler de gerçektir fakat bu iki âyetteki çift değildir.",
+        "optionReview": {
+          "o3": "Başka Kur’an toplulukları.",
+          "o4": "Başka Kur’an toplulukları.",
+          "o2": "17–18’in örneklediği topluluklar.",
+          "o1": "Başka Kur’an toplulukları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "85/17; PDF sayfa 640 (1 tabanlı), basılı sayfa 639",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -221,44 +271,70 @@
         ]
       },
       "after": {
-        "question": "Burûc 85/22'de Kur’an'ın bulunduğu yer nasıl anılır?",
+        "question": "Burûc 85/22’de Kur’an’la ilişkili olarak hangi terim geçer?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sevr Mağarası"
+            "id": "o4",
+            "text": "Amel defteri"
           },
           {
             "id": "o2",
             "text": "Levh-i mahfûz"
           },
           {
-            "id": "o3",
-            "text": "Arafat"
+            "id": "o1",
+            "text": "Siccîn"
           },
           {
-            "id": "o4",
-            "text": "Mescid-i Nebevî"
+            "id": "o3",
+            "text": "İlliyyîn"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Levh-i mahfûz",
-        "explanation": "Burûc 85/21-22, şanı yüce Kur’an'ın levh-i mahfûzda bulunduğunu bildirir.",
+        "explanation": "Burûc 85/22’de levh-i mahfûz terimi geçer. Kur’an Yolu notunda bunun mahiyetine ilişkin farklı yorumlar aktarılır; soru bunlardan birini kesin fiziksel tasvir olarak benimsetmez.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Burûc sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=22&mode=kuran-meal&sure=85",
-            "locator": "Burûc 85/22",
-            "supports": "Burûc 85/21-22, şanı yüce Kur’an'ın levh-i mahfûzda bulunduğunu bildirir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "85/22; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Burûc 85/22’de levh-i mahfûz terimi geçer. Kur’an Yolu notunda bunun mahiyetine ilişkin farklı yorumlar aktarılır; soru bunlardan birini kesin fiziksel tasvir olarak benimsetmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-buruc-007",
+        "reviewedCandidateSha256": "ae50b268e222414df0d970a847137e50ea1f8e18fd6fe9e86f071a02dcf29d68",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç dünya mekânına karşı tek metafizik kayıt yerine dört kayıt kavramı. PDF dipnotundaki mahiyet yorumları nedeniyle fiziksel yer diye kesinleştiren kök daraltıldı; levh ile yakın anlamlı ümmü’l-kitâb yanlış şık yapılmadı.",
+        "optionReview": {
+          "o4": "Hesap kayıtlarının genel adı.",
+          "o2": "22. âyetin terimi.",
+          "o1": "Mutaffifîn’de geçen başka kayıt terimi.",
+          "o3": "Mutaffifîn’de geçen başka kayıt terimi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "85/22; PDF sayfa 640 (1 tabanlı), basılı sayfa 639",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -305,23 +381,23 @@
         ]
       },
       "after": {
-        "question": "Târık 86/1-3'te târık sözcüğü hangi varlıkla açıklanır?",
+        "question": "Târık 86/1–3’te târık hangi ifadeyle açıklanır?",
         "options": [
           {
             "id": "o1",
-            "text": "Gemi"
+            "text": "Ufukta büyüyen hilâl"
+          },
+          {
+            "id": "o3",
+            "text": "Göğü aydınlatan şimşek"
+          },
+          {
+            "id": "o4",
+            "text": "Gökte uzanan Samanyolu"
           },
           {
             "id": "o2",
             "text": "Karanlığı delen yıldız"
-          },
-          {
-            "id": "o3",
-            "text": "Akarsu"
-          },
-          {
-            "id": "o4",
-            "text": "Dağ"
           }
         ],
         "correctOptionId": "o2",
@@ -329,20 +405,46 @@
         "explanation": "Târık 86/1-3'te gece çakıp görünen târık, karanlığı delen yıldız olarak açıklanır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Târık sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=86",
-            "locator": "Târık 86/1",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "86/3; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Târık 86/1-3'te gece çakıp görünen târık, karanlığı delen yıldız olarak açıklanır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-008",
+        "reviewedCandidateSha256": "15a3c4ea348d7a17f1ae954b3d8c698eaf20dcd69e7d1ba9374dc63876173590",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Gemi/akarsu/dağ yerine dört göksel ışık görünümü. Güneş ve kayan yıldız gibi yıldızla örtüşen seçenekler eklenmedi; 3. âyetin açıklaması soruluyor.",
+        "optionReview": {
+          "o1": "Başka göksel görünüm.",
+          "o3": "Başka gökteki ışık olayı.",
+          "o4": "Başka göksel ışık görünümü.",
+          "o2": "3. âyetin açıklaması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/3; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -430,8 +532,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-009",
+        "reviewedCandidateSha256": "f9b8b2f9f0ab61ed73707913f7f13a2569a87fbbf1d32ff6f9ef510890a0083d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört görev/gözetim ifadesi. Kaynak dipnotunda koruyucu/kaydedici melekler veya Allah yorumları bulunduğu için önceki aday kimliği seçtirmiyor; mealin gözetleyici ifadesiyle sınırlı.",
+        "optionReview": {
+          "o1": "Başka yardım rolü.",
+          "o3": "Başka rehberlik rolü.",
+          "o4": "Başka tanıklık grubu.",
+          "o2": "4. âyetin gözetleyicisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/4; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -514,8 +640,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-010",
+        "reviewedCandidateSha256": "43c9b6258840fcdb1eea82663765ef8bdb947b90181edca127cf120977879b5b",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört insanın başlangıç/iş/sonuna ilişkin soru. 5. âyet yaratıldığı maddeyi düşünmeye çağırır, diğerleri saçma değil farklı hedeflerdir.",
+        "optionReview": {
+          "o1": "Başka diriliş sorusu.",
+          "o3": "Başka hayat sorusu.",
+          "o4": "Başka hesap sorusu.",
+          "o2": "5. âyetin başlangıç sorusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/5; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -603,8 +753,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-011",
+        "reviewedCandidateSha256": "a95e2367f7e89e85e42167a82a63791036574e0cf12ef43136ec932f5bbcf0cc",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört insan hayatı/toplumu konusu. İlk yaratılıştan yeniden diriltmeye geçiş 8. âyette; ötekiler farklı Kur’an konuları.",
+        "optionReview": {
+          "o1": "Başka insan konusu.",
+          "o3": "Başka insan konusu.",
+          "o4": "Başka toplum konusu.",
+          "o2": "8. âyetin delillendirdiği diriliş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/8; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -655,7 +829,7 @@
         "options": [
           {
             "id": "o4",
-            "text": "Borç senetlerinin"
+            "text": "Davaların"
           },
           {
             "id": "o2",
@@ -663,11 +837,11 @@
           },
           {
             "id": "o1",
-            "text": "Amel defterlerinin"
+            "text": "Hakların"
           },
           {
             "id": "o3",
-            "text": "Miras paylarının"
+            "text": "Borçların"
           }
         ],
         "correctOptionId": "o2",
@@ -678,17 +852,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 86/9; PDF sayfa 641 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Sırların (doğrudan kaynak alıntısı değildir).",
+            "locator": "86/9; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Târık 86/9'da gizlenen sırların açığa çıkarılacağı gün hatırlatılır; bu ifade âhiret hesabına ilişkindir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-012",
+        "reviewedCandidateSha256": "cfc9211532b748df0ef2669d3544fd79bf51daf30b1f9ea347685f9c30e92dc0",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek kısa soyut cevaba karşı üç uzun belge tamlaması kaldırıldı. Dört hesap konusuna ait soyut çoğul aynı dilbilgisiyle kullanıldı; diğerlerinin hiç hesap edilmeyeceği iddia edilmez.",
+        "optionReview": {
+          "o4": "Başka yargı konusu.",
+          "o2": "9. âyette açığa çıkarılan.",
+          "o1": "Başka yargı konusu.",
+          "o3": "Başka yargı konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/9; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -735,23 +935,23 @@
         ]
       },
       "after": {
-        "question": "Târık 86/13'te Kur’an nasıl bir söz olarak tanımlanır?",
+        "question": "Târık 86/13’te Kur’an’ın hangi işlevi açıkça vurgulanır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Eğlence amaçlı"
+            "id": "o4",
+            "text": "Gerçeği doğrulayan"
           },
           {
             "id": "o2",
             "text": "Hak ile bâtılı ayıran"
           },
           {
-            "id": "o3",
-            "text": "Unutulmuş söylenti"
+            "id": "o1",
+            "text": "İnsanlara öğüt veren"
           },
           {
-            "id": "o4",
-            "text": "Sıradan bir efsane"
+            "id": "o3",
+            "text": "Geçmişten haber veren"
           }
         ],
         "correctOptionId": "o2",
@@ -759,20 +959,46 @@
         "explanation": "Târık 86/13, Kur’an'ın hak ile bâtılı ayıran kesin bir söz olduğunu açıkça bildirir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Târık sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=13&mode=kuran-meal&sure=86",
-            "locator": "Târık 86/13",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "86/13; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Târık 86/13, Kur’an'ın hak ile bâtılı ayıran kesin bir söz olduğunu açıkça bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-013",
+        "reviewedCandidateSha256": "ecde398881644a2b1a79fb875e745da96719e2ca3ef3759c4cb1813f04d8d15e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç küçültücü/olumsuz tanıma karşı tek olumlu seçenek kaldırıldı. Dört olumlu Kur’an işlevinden 13. âyetin fasl anlamı istenir.",
+        "optionReview": {
+          "o4": "Başka Kur’an işlevi.",
+          "o2": "13. âyetin fasl niteliği.",
+          "o1": "Başka Kur’an işlevi.",
+          "o3": "Başka Kur’an işlevi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/13; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -823,19 +1049,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Ciddi bir mesaj olması"
+            "text": "Bir şairin sözü olması"
+          },
+          {
+            "id": "o3",
+            "text": "Bir kâhinin sözü olması"
+          },
+          {
+            "id": "o4",
+            "text": "Öncekilerin masalı olması"
           },
           {
             "id": "o2",
             "text": "Şaka ve eğlence olması"
-          },
-          {
-            "id": "o3",
-            "text": "Öğüt vermesi"
-          },
-          {
-            "id": "o4",
-            "text": "Doğruya yöneltmesi"
           }
         ],
         "correctOptionId": "o2",
@@ -843,20 +1069,46 @@
         "explanation": "Târık 86/14, Kur’an'ın boş bir eğlence değil ciddi bir ilâhî mesaj olduğunu vurgular.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Târık sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=14&mode=kuran-meal&sure=86",
-            "locator": "Târık 86/14",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "86/14; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Târık 86/14, Kur’an'ın boş bir eğlence değil ciddi bir ilâhî mesaj olduğunu vurgular.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-tarik-014",
+        "reviewedCandidateSha256": "806ee5122ffa2c81ec894ab338af7782979c2303480ee25870b26b9568aecded",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek reddedilecek olumsuz niteliğe karşı üç olumlu işlev kaldırıldı. Dördü de reddedilen iddia türü: 69/41–42 ve 68/15 ayrıca okundu; hedef 86/14’teki hezldir.",
+        "optionReview": {
+          "o1": "69/41’in reddettiği isnat.",
+          "o3": "69/42’nin reddettiği isnat.",
+          "o4": "68/15’te inkârcının isnadı.",
+          "o2": "86/14’ün reddettiği hezl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "86/14; PDF sayfa 641 (1 tabanlı), basılı sayfa 640",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -906,41 +1158,67 @@
         "question": "A‘lâ 87/1'de hangi ibadet çağrısı yer alır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mal biriktirmek"
-          },
-          {
-            "id": "o2",
-            "text": "Yüce Rabbin adını tesbih etmek"
-          },
-          {
             "id": "o3",
-            "text": "Yarışma düzenlemek"
+            "text": "Yoksula malından pay vermek"
           },
           {
             "id": "o4",
-            "text": "Yolculuk etmek"
+            "text": "Hac yolculuğuna niyet etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Rabbin adını tesbih etmek"
+          },
+          {
+            "id": "o1",
+            "text": "Kıbleye dönüp namaz kılmak"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yüce Rabbin adını tesbih etmek",
+        "correctAnswer": "Rabbin adını tesbih etmek",
         "explanation": "A‘lâ 87/1, en yüce Rabbin adını tesbih etme çağrısıyla açılır; sûre adını bu âyetteki a‘lâ kelimesinden alır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — A‘lâ sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=87",
-            "locator": "A‘lâ 87/1",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "87/1; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "A‘lâ 87/1, en yüce Rabbin adını tesbih etme çağrısıyla açılır; sûre adını bu âyetteki a‘lâ kelimesinden alır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-015",
+        "reviewedCandidateSha256": "b443b0c8ecf33eeba00563880e4d318bea37e7911ef3555614b8b748815bbf01",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç gündelik/ilgisiz işe karşı tek ibadet kaldırıldı. Dört gerçek ibadet davranışı aynı mastar yapısında; tesbih bu âyetin takdis-tenzih ifadesine karşılık.",
+        "optionReview": {
+          "o3": "Başka ibadet davranışı.",
+          "o4": "Başka ibadet davranışı.",
+          "o2": "1. âyetin çağrısı.",
+          "o1": "Başka ibadet davranışı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/1; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1028,8 +1306,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-016",
+        "reviewedCandidateSha256": "773804121307fae552c539afaf664497df531a5c9f3de840932b86b73bdf8be2",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört doğru ilâhî fiil. Düzen verme 2. âyette yaratmanın yanındadır; rehberlik 3. âyet olduğu için aynı kökte ikinci doğru sayılmaz.",
+        "optionReview": {
+          "o4": "Başka ilâhî fiil.",
+          "o2": "2. âyetin düzenlemesi.",
+          "o1": "Başka ilâhî fiil.",
+          "o3": "3. âyetteki fiil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/2; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1112,8 +1414,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-017",
+        "reviewedCandidateSha256": "d0af92c6a09b4f179c9fee66e48838be4fbbb05f82d0510cdf504f153f12e993",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört doğru ilâhî fiil. 3. âyet ölçü ve rehberliği birlikte anar; iyi/kötü ton ayrımı yok.",
+        "optionReview": {
+          "o3": "Başka ilâhî fiil.",
+          "o4": "Başka ilâhî fiil.",
+          "o2": "3. âyetin rehberliği.",
+          "o1": "Başka ilâhî fiil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/3; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1160,44 +1486,70 @@
         ]
       },
       "after": {
-        "question": "A‘lâ 87/4'te Allah'ın çıkardığı şeylerden hangisi anılır?",
+        "question": "A‘lâ 87/4–5’te bitkilerin hangi iki hâli art arda anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Gemi"
-          },
-          {
-            "id": "o2",
-            "text": "Yeşil ot"
-          },
-          {
             "id": "o3",
-            "text": "Dağdan maden"
+            "text": "Filizlenme ve tohum dökme"
           },
           {
             "id": "o4",
-            "text": "Deniz tuzu"
+            "text": "Köklenme ve dallanma"
+          },
+          {
+            "id": "o2",
+            "text": "Yeşerme ve kararma"
+          },
+          {
+            "id": "o1",
+            "text": "Çiçeklenme ve meyvelenme"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yeşil ot",
-        "explanation": "A‘lâ 87/4'te yeşil bitkilerin çıkarıldığı anlatılır; sonraki âyette zamanla kuruyup kararmaları hatırlatılır.",
+        "correctAnswer": "Yeşerme ve kararma",
+        "explanation": "Kur’an Yolu mealinde A‘lâ 87/4–5 yeşil bitkilerin çıkarılmasını, ardından kapkara bitki kalıntısı hâline getirilmesini anlatır. Dipnotta farklı açıklamalar anılır; soru bu iki hâlin sırasına bağlıdır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — A‘lâ sûresi",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=kuran-meal&sure=87",
-            "locator": "A‘lâ 87/4",
-            "supports": "A‘lâ 87/4'te yeşil bitkilerin çıkarıldığı anlatılır; sonraki âyette zamanla kuruyup kararmaları hatırlatılır.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "87/4; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Kur’an Yolu mealinde A‘lâ 87/4–5 yeşil bitkilerin çıkarılmasını, ardından kapkara bitki kalıntısı hâline getirilmesini anlatır. Dipnotta farklı açıklamalar anılır; soru bu iki hâlin sırasına bağlıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-018",
+        "reviewedCandidateSha256": "836c07f843608928f20cceb2077f7e04266b4e36c065d536285888e813d7f61e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ilgisiz nesneye karşı tek bitki yerine dört bitki değişimi çifti. Yeşil bitkilerden kapkara kalıntıya geçiş kaynaktan; dipnotun kömürleşme yorumunu kesin bilimsel hüküm yapmıyor.",
+        "optionReview": {
+          "o3": "Başka bitki gelişim sırası.",
+          "o4": "Başka bitki gelişim sırası.",
+          "o2": "4–5. âyetlerin renk/hâl sırası.",
+          "o1": "Başka bitki gelişim sırası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/4; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1244,44 +1596,70 @@
         ]
       },
       "after": {
-        "question": "A‘lâ 87/14'te kimlerin kurtuluşa ereceği bildirilir?",
+        "question": "A‘lâ 87/14’ün Kur’an Yolu mealinde kurtuluşla doğrudan ilişkilendirilen fiil hangisidir?",
         "options": [
           {
             "id": "o2",
-            "text": "Arınanların"
+            "text": "Arınmak"
           },
           {
             "id": "o1",
-            "text": "İnfak edenlerin"
+            "text": "İnfak etmek"
           },
           {
             "id": "o3",
-            "text": "Şükredenlerin"
+            "text": "Şükretmek"
           },
           {
             "id": "o4",
-            "text": "Danışanların"
+            "text": "Danışmak"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Arınanların",
+        "correctAnswer": "Arınmak",
         "explanation": "A‘lâ 87/14, kendini arındıranların kurtuluşa ereceğini bildirir; ahlâkî arınma öne çıkar.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 87/14; PDF sayfa 642 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Arınanların (doğrudan kaynak alıntısı değildir).",
+            "locator": "87/14; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "A‘lâ 87/14, kendini arındıranların kurtuluşa ereceğini bildirir; ahlâkî arınma öne çıkar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-021",
+        "reviewedCandidateSha256": "2e0c5d683d5de89c4ea140c2c2dcb34f241bf7650eee38fc1d124703d44d4d63",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Önceki adayın dört olumlu eylemi korundu; arınmanın farklı tefsir kapsamları ikinci doğruya dönüşmesin diye kök doğrudan mealdeki fiile daraltıldı.",
+        "optionReview": {
+          "o2": "Mealin açık arınma fiili.",
+          "o1": "Başka olumlu eylem; arınma yorumuyla genel eşitleme yapılmaz.",
+          "o3": "Başka olumlu eylem.",
+          "o4": "Başka olumlu eylem."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/14; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1364,8 +1742,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-022",
+        "reviewedCandidateSha256": "e522388c52068f771acf76c98087816f7b8d852145049b8716fbe841d1b9474c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ibadet. Allah’ı anmanın ardından namaz 15. âyette açık; diğer ibadetler değersiz veya yanlış sayılmaz.",
+        "optionReview": {
+          "o1": "Başka ibadet.",
+          "o2": "15. âyetin ibadeti.",
+          "o3": "Başka ibadet.",
+          "o4": "Başka ibadet."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/15; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1412,11 +1814,11 @@
         ]
       },
       "after": {
-        "question": "A‘lâ 87/17'ye göre âhiret nasıl nitelenir?",
+        "question": "A‘lâ 87/17’de dünya hayatıyla karşılaştırılan âhiret için hangi iki nitelik açıkça kullanılır?",
         "options": [
           {
             "id": "o4",
-            "text": "Daha gizli ve daha belirsiz"
+            "text": "Daha aydınlık ve daha ferah"
           },
           {
             "id": "o2",
@@ -1424,11 +1826,11 @@
           },
           {
             "id": "o1",
-            "text": "Daha yakın ve daha görünür"
+            "text": "Daha huzurlu ve daha güvenli"
           },
           {
             "id": "o3",
-            "text": "Daha kısa ve daha sınırlı"
+            "text": "Daha bol nimetli ve daha geniş"
           }
         ],
         "correctOptionId": "o2",
@@ -1439,17 +1841,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 87/17; PDF sayfa 642 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Daha hayırlı ve daha kalıcı (doğrudan kaynak alıntısı değildir).",
+            "locator": "87/17; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "A‘lâ 87/17, âhiretin dünya hayatından daha hayırlı ve kalıcı olduğunu söyler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-023",
+        "reviewedCandidateSha256": "4d634cd10cf679d0feb4c13b835bb6aedbbcfc4e1fab4530f99e58c8202bd241",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç olumsuz/belirsiz tasvire karşı tek olumlu çift kaldırıldı. Dört olumlu çift; sorulan bu âyetin lafzı, diğerleri hakkında genel âhiret hükmü değil.",
+        "optionReview": {
+          "o4": "Başka olumlu tasvir.",
+          "o2": "17. âyetin hayır ve süreklilik karşılaştırması.",
+          "o1": "Başka olumlu tasvir.",
+          "o3": "Başka olumlu tasvir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/17; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1532,8 +1960,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q54-ala-024",
+        "reviewedCandidateSha256": "5c0b85a102813c0b8e41441f681cc638a250e88317cce11d3f562d5017841c38",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Kur’an peygamber çifti. 18–19. âyetlerin sahifeleri İbrâhim ve Mûsâ’ya nispetli; başka çiftlerin peygamberliği inkâr edilmiyor.",
+        "optionReview": {
+          "o1": "Başka peygamber çifti.",
+          "o2": "19. âyetin peygamberleri.",
+          "o3": "Başka peygamber çifti.",
+          "o4": "Başka peygamber çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "87/19; PDF sayfa 642 (1 tabanlı), basılı sayfa 641",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1580,11 +2032,11 @@
         ]
       },
       "after": {
-        "question": "Tekvîr 81/1'de kıyamet tasvirinde güneşe ne olacağı anlatılır?",
+        "question": "Tekvîr 81/1’de güneş için hangi değişim anlatılır?",
         "options": [
           {
             "id": "o4",
-            "text": "Işığının güçlenmesi"
+            "text": "Işığının giderek artması"
           },
           {
             "id": "o2",
@@ -1592,11 +2044,11 @@
           },
           {
             "id": "o1",
-            "text": "Yörüngesinin genişlemesi"
+            "text": "Ay ile bir araya gelmesi"
           },
           {
             "id": "o3",
-            "text": "Doğuş vaktinin değişmesi"
+            "text": "Genişleyip kızarması"
           }
         ],
         "correctOptionId": "o2",
@@ -1607,17 +2059,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 81/1; PDF sayfa 634 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Dürülüp kararması (doğrudan kaynak alıntısı değildir).",
+            "locator": "81/1; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Tekvîr 81/1, kıyamette güneşin dürülüp kararmasını tasvir ederek evrenin düzeninde büyük değişiklik olacağını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q55-tekvir-001",
+        "reviewedCandidateSha256": "b17f3093b8ca2b4afca4be216b9004ac8420849a8936d2ed8f7532e4c6f33647",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç artış/normal olay yerine farklı göksel değişimler. Kıyâme 75/9’daki birleşme de gerçek başka kıyamet tasviridir; belirli 81/1 ifadesi sorularak iki doğru önlenir.",
+        "optionReview": {
+          "o4": "Başka göksel değişim varsayımı.",
+          "o2": "81/1’in tekvîr tasviri.",
+          "o1": "75/9’daki başka tasvir.",
+          "o3": "Başka göksel değişim varsayımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "81/1; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1668,7 +2146,7 @@
         "options": [
           {
             "id": "o4",
-            "text": "Parlaklıklarının çoğalması"
+            "text": "Yörüngelerinin daralması"
           },
           {
             "id": "o2",
@@ -1676,11 +2154,11 @@
           },
           {
             "id": "o1",
-            "text": "Görünürlüklerinin artması"
+            "text": "Bir araya toplanmaları"
           },
           {
             "id": "o3",
-            "text": "Yörüngelerinin genişlemesi"
+            "text": "Yoğunlaşıp parlamaları"
           }
         ],
         "correctOptionId": "o2",
@@ -1691,10 +2169,10 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 81/2; PDF sayfa 634 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Dökülüp sönmeleri (doğrudan kaynak alıntısı değildir).",
+            "locator": "81/2; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Tekvîr 81/2, yıldızların dökülüp sönmesini kıyamet sahnelerinden biri olarak zikreder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1705,8 +2183,34 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q55-tekvir-002",
+        "reviewedCandidateSha256": "f6548f2885ad7783fda2d302e564216384f54006afae8e82f15aced8d0a2431c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç parlaklık/artış ifadesine karşı tek yok oluş ipucu kaldırıldı. Dört farklı göksel değişim; sönmeyle eş anlamlı savrulma/dağılma ikinci doğru yapılmadı.",
+        "optionReview": {
+          "o4": "Başka göksel değişim varsayımı.",
+          "o2": "81/2’nin inkidâr tasviri.",
+          "o1": "Başka göksel değişim varsayımı.",
+          "o3": "Başka göksel değişim varsayımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Aynı sûre içindeki ardışık ayet hedefleri ve önceki paketlerin arınma/hesap/yaratılış sorularıyla karşılaştırıldı. Kökler hangi ayetin hangi ifadesi olduğunu ayırır; yakın ayet ezberi sorularının yoğunluğu son öğrenme hedefi/tekrar incelemesinde ayrıca değerlendirilmeli. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "81/2; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },

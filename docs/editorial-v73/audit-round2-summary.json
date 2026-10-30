@@ -3,18 +3,18 @@
   "activeBankVersion": 72,
   "candidateBankVersion": 73,
   "total": 1500,
-  "individuallyReviewed": 921,
-  "pendingReview": 579,
-  "sourceComparedThisRound": 815,
+  "individuallyReviewed": 1021,
+  "pendingReview": 479,
+  "sourceComparedThisRound": 915,
   "blocked": 1,
   "flaggedBefore": 336,
-  "flaggedAfter": 156,
+  "flaggedAfter": 157,
   "previousPriorityCount": 220,
-  "revisedAgainstV72": 710,
-  "stemsChangedAgainstV72": 305,
-  "correctAnswerWordingChangedAgainstV72": 343,
-  "explanationsChangedAgainstV72": 170,
-  "distractorsOnlyChangedAgainstV72": 241,
+  "revisedAgainstV72": 760,
+  "stemsChangedAgainstV72": 336,
+  "correctAnswerWordingChangedAgainstV72": 364,
+  "explanationsChangedAgainstV72": 179,
+  "distractorsOnlyChangedAgainstV72": 254,
   "automaticPatternCounts": {
     "three-restrictive-distractors": {
       "before": 25,
@@ -56,54 +56,54 @@
   "byCategory": {
     "quran_dualar": {
       "total": 213,
-      "individuallyReviewed": 159,
-      "pendingReview": 54,
-      "sourceComparedThisRound": 132,
+      "individuallyReviewed": 173,
+      "pendingReview": 40,
+      "sourceComparedThisRound": 146,
       "blocked": 1,
       "flaggedBefore": 47,
       "flaggedAfter": 21
     },
     "siyer_sahabe": {
       "total": 313,
-      "individuallyReviewed": 175,
-      "pendingReview": 138,
-      "sourceComparedThisRound": 151,
+      "individuallyReviewed": 197,
+      "pendingReview": 116,
+      "sourceComparedThisRound": 173,
       "blocked": 0,
       "flaggedBefore": 45,
-      "flaggedAfter": 28
+      "flaggedAfter": 30
     },
     "peygamberler": {
       "total": 271,
-      "individuallyReviewed": 188,
-      "pendingReview": 83,
-      "sourceComparedThisRound": 178,
+      "individuallyReviewed": 197,
+      "pendingReview": 74,
+      "sourceComparedThisRound": 187,
       "blocked": 0,
       "flaggedBefore": 81,
       "flaggedAfter": 47
     },
     "fikih": {
       "total": 161,
-      "individuallyReviewed": 116,
-      "pendingReview": 45,
-      "sourceComparedThisRound": 102,
+      "individuallyReviewed": 129,
+      "pendingReview": 32,
+      "sourceComparedThisRound": 115,
       "blocked": 0,
       "flaggedBefore": 40,
-      "flaggedAfter": 17
+      "flaggedAfter": 16
     },
     "iman_ahlak": {
       "total": 260,
-      "individuallyReviewed": 119,
-      "pendingReview": 141,
-      "sourceComparedThisRound": 112,
+      "individuallyReviewed": 157,
+      "pendingReview": 103,
+      "sourceComparedThisRound": 150,
       "blocked": 0,
       "flaggedBefore": 85,
       "flaggedAfter": 24
     },
     "tarih_medeniyet": {
       "total": 282,
-      "individuallyReviewed": 164,
-      "pendingReview": 118,
-      "sourceComparedThisRound": 140,
+      "individuallyReviewed": 168,
+      "pendingReview": 114,
+      "sourceComparedThisRound": 144,
       "blocked": 0,
       "flaggedBefore": 38,
       "flaggedAfter": 19
@@ -112,30 +112,30 @@
   "byDifficulty": {
     "easy": {
       "total": 475,
-      "individuallyReviewed": 303,
-      "pendingReview": 172,
-      "sourceComparedThisRound": 269,
+      "individuallyReviewed": 339,
+      "pendingReview": 136,
+      "sourceComparedThisRound": 305,
       "blocked": 1,
       "flaggedBefore": 113,
-      "flaggedAfter": 45
+      "flaggedAfter": 44
     },
     "medium": {
       "total": 789,
-      "individuallyReviewed": 449,
-      "pendingReview": 340,
-      "sourceComparedThisRound": 398,
+      "individuallyReviewed": 501,
+      "pendingReview": 288,
+      "sourceComparedThisRound": 450,
       "blocked": 0,
       "flaggedBefore": 186,
-      "flaggedAfter": 88
+      "flaggedAfter": 89
     },
     "hard": {
       "total": 236,
-      "individuallyReviewed": 169,
-      "pendingReview": 67,
-      "sourceComparedThisRound": 148,
+      "individuallyReviewed": 181,
+      "pendingReview": 55,
+      "sourceComparedThisRound": 160,
       "blocked": 0,
       "flaggedBefore": 37,
-      "flaggedAfter": 23
+      "flaggedAfter": 24
     }
   },
   "styleOnlyGuesser": {
