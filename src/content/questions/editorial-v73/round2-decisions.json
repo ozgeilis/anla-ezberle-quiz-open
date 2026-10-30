@@ -26432,30 +26432,2613 @@
     }
   },
   {
-    "id": "q57-nuhcift",
-    "reviewedCandidateSha256": "a874b8598bb3b07b3a2ea41122ba84895855b0a0ad049b0f8e14c8280f6f7ff7",
+    "id": "q55-tekvir-003",
+    "reviewedCandidateSha256": "561855242f0eb2c71f1abf5fc8293358da12fae03ad4206255ee7cc576649610",
     "disposition": "revised",
     "defects": [
       "context-or-distractor-clue"
     ],
-    "reason": "Üç yalnız/sadece hayvan şıkkı kaldırıldı. Çift sayısını soran v13-prophets-010 ile tekrar etmek yerine aynı âyetin zaman işareti soruldu.",
+    "reason": "Üç gündelik olumlu dağ değişimine karşı tek kıyamet sahnesi yerine dört büyük fiziksel değişim. Dağların başka âyetlerdeki ufalanması burada ikinci doğru sayılmaz; belirli meal hedeflenir.",
     "optionReview": {
-      "o3": "Mealdeki zaman işareti.",
-      "o1": "Makul felâket belirtisi; bu mealin ifadesi değil.",
-      "o2": "Makul çevre olayı; bu mealin ifadesi değil.",
-      "o4": "Makul çevre olayı; bu mealin ifadesi değil."
+      "o1": "Başka büyük fiziksel değişim.",
+      "o3": "Başka âyetlerdeki ufalanma sahnesi.",
+      "o4": "Başka fiziksel değişim.",
+      "o2": "81/3’teki yürütülme."
     },
     "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
     "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
     "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-    "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/3; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-004",
+    "reviewedCandidateSha256": "18067a05aed9b692dd5f29477ddc309528b2066f25fc76f6685847db32905ae5",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört hayvan topluluğu aynı alanda. 81/5 yabani hayvanları açıkça belirtir; evcil sürü ve binekler 4. âyetle karıştırılmamalı.",
+    "optionReview": {
+      "o1": "Başka hayvan topluluğu.",
+      "o3": "Başka hayvan topluluğu.",
+      "o4": "Başka hayvan topluluğu.",
+      "o2": "5. âyetin topluluğu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/5; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-005",
+    "reviewedCandidateSha256": "1c65df8efb646a2ff3e9283a269b208b7f678c6c8ef13fffd7c1eb3d5fef60c3",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört denizin fiziksel değişimi. 81/6 kaynatmayı söyler; hiçbiri alakasız ahlâk davranışı değil.",
+    "optionReview": {
+      "o1": "Başka deniz hâli.",
+      "o3": "Başka deniz hâli.",
+      "o4": "Başka deniz hâli.",
+      "o2": "6. âyetin kaynatılması."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/6; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-006",
+    "reviewedCandidateSha256": "0cfce5a5456e09d467a7be6e9ed036646cff19b1c96ce58c04525be0a0a71c49",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek haksızlık aynı olumsuz tonda. 8–9 kız çocuğuna yönelen belirli zulmü sorar; tek kötü şık ipucu yok.",
+    "optionReview": {
+      "o2": "8–9’un eleştirdiği zulüm.",
+      "o1": "Başka zulüm.",
+      "o3": "Başka zulüm.",
+      "o4": "Başka zulüm."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/8; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-007",
+    "reviewedCandidateSha256": "9d90ce5c3bfd6e41d98a68f794368e8a0db4081706aa2272c25ff268cd58822f",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört kayıt/defter türü. Kıyamet bağlamındaki defterlerin amel kayıtları olduğu 10 ve 14’ün birlikte okunmasıyla açık; diğerleri gündelik gerçek kayıtlar.",
+    "optionReview": {
+      "o1": "Başka kayıt.",
+      "o3": "Başka kayıt.",
+      "o4": "Başka kayıt.",
+      "o2": "10. âyetin amel kayıtları."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/10; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-008",
+    "reviewedCandidateSha256": "ec9f12f60b529a80cc552078a2195cdd4741627f3ac43a794cb260118a3ff33a",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Tek bir kelimelik cevaba karşı üç uzun iyelik tamlaması kaldırıldı. Dört olumlu cennet tasviri aynı mastar yapısında; 13. âyetteki hareket gerekir.",
+    "optionReview": {
+      "o1": "Başka olumlu tasvir.",
+      "o3": "Başka olumlu tasvir.",
+      "o4": "Başka olumlu tasvir.",
+      "o2": "13. âyetteki yaklaştırma."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/13; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-009",
+    "reviewedCandidateSha256": "4c67e7872fba1b8103b1845798303f64c1a1541f5923168a5a38351480c1f76a",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Akşam yemeği gibi vakit olmayan öğe yerine dört ışık/zaman betimlemesi. Kararan gece önceki 17. âyette geçer; kök 18. âyete bağlı.",
+    "optionReview": {
+      "o4": "Başka gün vakti.",
+      "o2": "18. âyetteki sabah.",
+      "o1": "17. âyetteki gece.",
+      "o3": "Başka gün vakti."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/18; PDF sayfa 634 (1 tabanlı), basılı sayfa 633",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-tekvir-010",
+    "reviewedCandidateSha256": "680ea7c05f119f9888caad36c367516e3727ef1664e117aaa0aab2794b7baef7",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "19–20 dipnotunda değerli elçi için Cebrâil ve Peygamber yorumları var. Tek görüş diye sunan kök yerine 23. âyet dipnotundaki açık vahiy meleği açıklaması soruldu; dört melek adı korundu.",
+    "optionReview": {
+      "o3": "Başka melek adı.",
+      "o4": "Başka melek adı.",
+      "o2": "23. âyet dipnotunun vahiy meleği.",
+      "o1": "Başka melek adı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/23; PDF sayfa 635 (1 tabanlı), basılı sayfa 634",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-011",
+    "reviewedCandidateSha256": "596d16bf839f79db273128cafcd3f5fb125d35dc095fc2f54061897c1d32fa17",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gök hâli aynı fiziksel alanda. 82/1 yarılmayı belirtir; duman/renk/karanlık farklı tasvirlerdir.",
+    "optionReview": {
+      "o2": "1. âyetin yarılması.",
+      "o1": "Başka gök hâli.",
+      "o3": "Başka gök hâli.",
+      "o4": "Başka gök hâli."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/1; PDF sayfa 635 (1 tabanlı), basılı sayfa 634",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-012",
+    "reviewedCandidateSha256": "92c2490e5d91b1cf78bb82a7379c14e3d34a7c8884a2bceff990a032a08a3fb8",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört yıldız hareket/görünüm hâli. Saçılma 82/2’nin fiili, diğerleri fiziksel varsayımlar; ahlâk tonu ipucu yok.",
+    "optionReview": {
+      "o1": "Başka yıldız hâli.",
+      "o3": "Başka yıldız hâli.",
+      "o4": "Başka yıldız hâli.",
+      "o2": "2. âyetin saçılması."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/2; PDF sayfa 635 (1 tabanlı), basılı sayfa 634",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-013",
+    "reviewedCandidateSha256": "e1a4e7184d17c4d335a9482cedae362ee294c15f146e110099fd878e3df4a276",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Önceki adayın dört fiziksel su hâli yeniden okundu. Mealin taşma tercihi açık; farklı çeviri tercihleri genel ret olarak sunulmuyor.",
+    "optionReview": {
+      "o3": "Başka deniz hâli.",
+      "o4": "Başka deniz hâli.",
+      "o2": "Bu mealin 3. âyet karşılığı.",
+      "o1": "Başka deniz hâli."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/3; PDF sayfa 635 (1 tabanlı), basılı sayfa 634",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-014",
+    "reviewedCandidateSha256": "e9e197e282b902d2fd1be5dc57b6002707ccbfe92dc8d4bedbb8a4f7715f166d",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç düzenli mezarlık bakımı karşısında tek yıkıcı uzun cevap yerine dört fiziksel değişim. Ayetin altüst etme ifadesi belirli; genel kabir hayatı hükmü değil.",
+    "optionReview": {
+      "o3": "Başka fiziksel değişim.",
+      "o4": "Başka fiziksel değişim.",
+      "o2": "4. âyetin altüst edilmesi.",
+      "o1": "Başka fiziksel değişim."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/4; PDF sayfa 635 (1 tabanlı), basılı sayfa 634",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-015",
+    "reviewedCandidateSha256": "c38bfaa3d6303a4076e643be8201647ba7e53038384e05dbc312817da82322e9",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Mal/kişi/ziyaret gibi eylem alt-kümeleri ve tek uzun cevap yerine dört kısa karşıt fiil çifti. Doğrudan bu mealin ifade ettiği karşıtlık soruluyor.",
+    "optionReview": {
+      "o2": "5. âyetin yapılan/yapılmayan işleri.",
+      "o1": "Başka karşıt bilgi çifti.",
+      "o3": "Başka karşıt deneyim çifti.",
+      "o4": "Başka karşıt tutum çifti."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/5; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-016",
+    "reviewedCandidateSha256": "68cf970cb378b3be35e2e4f2041bd8dde94c5998afa34586e5c607194b89e8b4",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört doğru ilâhî sıfat. Kerîm sözcüğü başka meallerde cömert diye çevrilebilir; kök özellikle Kur’an Yolu’nun yüce çevirisini sorar.",
+    "optionReview": {
+      "o3": "Başka doğru sıfat.",
+      "o4": "Başka doğru sıfat.",
+      "o2": "Bu mealdeki sıfat.",
+      "o1": "Başka doğru sıfat."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/6; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-017",
+    "reviewedCandidateSha256": "ef9ca3ca3eac25a71d50cfaeafc1ca2b219419fb5a5f303c86399d6f132acdb6",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört melek/görevli sıfatı aynı alanda. 10–11’in kirâmen kâtibîn karşılığı değerli yazıcılardır; yalnız melek adını ayırt ettiren bir şık değil.",
+    "optionReview": {
+      "o3": "Başka görevli betimlemesi.",
+      "o4": "Başka elçi betimlemesi.",
+      "o2": "10–11’in yazıcı niteliği.",
+      "o1": "Başka makam betimlemesi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/11; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-infitar-018",
+    "reviewedCandidateSha256": "c1521b4a429e1f235e9414398660203d07c98a2dd0ed8737e36910aa886bf32e",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Yörünge/dil/maden gibi üç ilgisiz bilgi alanına karşı tek ahlâk cevabı yerine dört insanla ilişkili melek görevi iddiası. Genel bütün meleklerin değil, bu âyetteki yazıcıların işlevi sorulur.",
+    "optionReview": {
+      "o2": "12. âyetteki bilme.",
+      "o1": "Bu âyette bildirilmeyen başka işlev.",
+      "o3": "Bu âyette bildirilmeyen başka işlev.",
+      "o4": "Bu âyette bildirilmeyen başka işlev."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "82/12; PDF sayfa 636 (1 tabanlı), basılı sayfa 635",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-019",
+    "reviewedCandidateSha256": "489e3432c94512036531a3f2ed1b446ae4341ef85e48b871a99cdd4b38ea30be",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gök olayı. 84/1–2’nin yarılma ve itaat sırası, bulut/süs/duman gibi diğer mümkün tasvirlerden ayrıdır.",
+    "optionReview": {
+      "o2": "1–2’nin yarılması.",
+      "o1": "Başka gök hâli.",
+      "o3": "Başka gök hâli.",
+      "o4": "Başka gök hâli."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/1; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-020",
+    "reviewedCandidateSha256": "b5bc6237bf373960777ff0fa958c50c9bcc4ec22800ca037ade571910f4d346e",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört yeryüzü biçimlenmesi. 3–4 dümdüz edilme ve boşalmayı söyler; diğerleri başka yaratılış tasvirleri, saçma seçenek değiller.",
+    "optionReview": {
+      "o3": "Başka yeryüzü tasviri.",
+      "o4": "Başka yeryüzü tasviri.",
+      "o2": "3–4’ün dümdüz edilmesi.",
+      "o1": "Başka yeryüzü tasviri."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/3; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-021",
+    "reviewedCandidateSha256": "bb5db5e3af1ceefd50cd23215d16b072b4c3aecaf4653c88fc36fe3d10a9fc35",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört dinî/toplumsal karşılaşma öznesi. 84/6’daki Rabbine yöneliş açık; mahlûkla Allah arasındaki fark bu temel inanç sorusunun konusu, ilgisiz nesne şıkları değil.",
+    "optionReview": {
+      "o2": "6. âyetin yöneldiği Rabbi.",
+      "o1": "Başka hesap görevlisi.",
+      "o3": "Başka uyarıcı.",
+      "o4": "Başka insan grubu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/6; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-022",
+    "reviewedCandidateSha256": "3ef926f5d760d1e16c841342cf9d7cbf23ee0933e0567a50d693b15c0070d4b0",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört yön aynı kısa dil yapısında. 7. âyette sağ, 10’da arka ayrı hedef; kolay hesabın tarafı karıştırılmaz.",
+    "optionReview": {
+      "o3": "10. âyetteki taraf.",
+      "o4": "Başka yön.",
+      "o2": "7. âyetin sağı.",
+      "o1": "Başka yön."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/7; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-023",
+    "reviewedCandidateSha256": "f35d381dde16f63019e93c4f2e64dcdbedf7b2e7c7d0d3397d0b300377bddeb3",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Şahitlerin tartışması gibi farklı kategori yerine dört hesap niteliği eşit yapıda. Kolaylık belirli 8. âyetin nitelemesi; diğerleri hakkında genel ahiret hükmü verilmez.",
+    "optionReview": {
+      "o2": "8. âyetin kolaylığı.",
+      "o1": "Başka hesap niteliği.",
+      "o3": "Başka hesap niteliği.",
+      "o4": "Başka hesap niteliği."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/8; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-024",
+    "reviewedCandidateSha256": "2bebd34df7b4d27810a7bf439437a40fc6beba84cc8b82958a8ecdb4eed38ce7",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört yön. 10. âyet arkasından der; sol başka ayet bağlamında bulunduğundan burada kök 10’la açık sınırlandırılır.",
+    "optionReview": {
+      "o1": "7. âyetin tarafı.",
+      "o3": "Başka yön.",
+      "o4": "Başka yön.",
+      "o2": "10. âyetin arkası."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/10; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-025",
+    "reviewedCandidateSha256": "8144e200c57edc1121268e955c50d96f42cd5ecf7fcb54eee9af0618c36cae33",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç cennet nimetine karşı tek cehennem cezası kaldırıldı. Dört azap tasviri; 12. âyetteki alevli ateş gerekir.",
+    "optionReview": {
+      "o1": "Başka azap tasviri.",
+      "o3": "Başka azap tasviri.",
+      "o4": "Başka azap tasviri.",
+      "o2": "12. âyetteki ateş."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/12; PDF sayfa 638 (1 tabanlı), basılı sayfa 637",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-insikak-026",
+    "reviewedCandidateSha256": "eb5351bc7140c33d89062c1d59a760847d4b6eb72e6dbdb51c8c7b78a98128d7",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört olumlu mümin eylem grubu. 25. âyet iman ve yararlı işleri açıkça birleştirir; diğer davranışları ödülsüz ilan eden genel soru değil.",
+    "optionReview": {
+      "o3": "Başka olumlu davranış grubu.",
+      "o4": "Başka olumlu davranış grubu.",
+      "o2": "25. âyetin birleşimi.",
+      "o1": "Başka olumlu davranış grubu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "84/25; PDF sayfa 639 (1 tabanlı), basılı sayfa 638",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-kiyamet-027",
+    "reviewedCandidateSha256": "2b9aa6bfc7610de8b477af377e67e10c98eee15f04a57490e0c257f418d5cd5e",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Sûre adı kıyameti aynen doğru cevapta tekrarlatma yerine kavramın inanç anlamı soruldu. Dört temel iman konusu; rastgele bayram adı seçtirilmez.",
+    "optionReview": {
+      "o3": "Başka temel inanç konusu.",
+      "o4": "Başka temel inanç konusu.",
+      "o2": "Kıyamet/diriliş inancı.",
+      "o1": "Başka temel inanç konusu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "75/1; PDF sayfa 622 (1 tabanlı), basılı sayfa 621",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-kiyamet-028",
+    "reviewedCandidateSha256": "0c74471b91d52f138849168902a6b09b491ff866a03c7e53dfb38bb806e6d6b6",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kendini beğenen gibi nitelik yerine dört Kur’an nefis tasviri. Levvâme dipnotta pişmanlık ve kendini düzeltme yönelişi olarak açıklanır, aşağılayıcı ceza etiketi değildir.",
+    "optionReview": {
+      "o1": "89/27’nin mutmainnesi.",
+      "o3": "12/53’ün emmâresi.",
+      "o4": "89/28’in râzıyesi.",
+      "o2": "75/2’nin levvâmesi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "75/2; PDF sayfa 622 (1 tabanlı), basılı sayfa 621",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-kiyamet-029",
+    "reviewedCandidateSha256": "fd16d17ac8d8daabae6427b4a4afb958a4a7014198708c7049214bca4367b6a1",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç doğa/kozmoloji olayına karşı tek insan bedeni yerine dört bedensel yeniden yaratılış tasviri. 3. âyet kemikleri açıkça adlandırır.",
+    "optionReview": {
+      "o1": "Başka bedensel tasvir.",
+      "o3": "Başka bedensel tasvir.",
+      "o4": "Başka bedensel tasvir.",
+      "o2": "3. âyetin kemikleri."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "75/3; PDF sayfa 622 (1 tabanlı), basılı sayfa 621",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-kiyamet-030",
+    "reviewedCandidateSha256": "bfcffdfca485de2691207863fe25f8b3c057234a1f6e531c3a6f490f15f7ad28",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört küçük beden ayrıntısı. 75/4 parmakların yeniden yapılışına bağlanır; modern parmak izi bilimi hakkında ayette olmayan kesin iddia eklenmedi.",
+    "optionReview": {
+      "o2": "4. âyetin parmak ayrıntısı.",
+      "o1": "Başka beden ayrıntısı.",
+      "o3": "Başka beden ayrıntısı.",
+      "o4": "Başka beden ayrıntısı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "75/4; PDF sayfa 622 (1 tabanlı), basılı sayfa 621",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-kiyamet-031",
+    "reviewedCandidateSha256": "55741828a2f15d17b8c4560335889f1106b75a49ad5fe1f4a84ab45fe5f1a76a",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kaçış sözcüğüyle yalnız sığınma cevabını ele veren kök daraltıldı. Dört aynı tür kurtulma imkânı; 11. âyetin sığınak reddi belirli.",
+    "optionReview": {
+      "o2": "11. âyetin reddettiği imkân.",
+      "o1": "Başka kurtulma imkânı.",
+      "o3": "Başka kurtulma imkânı.",
+      "o4": "Başka kurtulma imkânı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "75/11; PDF sayfa 623 (1 tabanlı), basılı sayfa 622",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q55-kiyamet-032",
+    "reviewedCandidateSha256": "7b220e827f288e0a1a3860dd482fb9ac4817dea274c0758ccd6545292ebd66b5",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört hesap/mahşer yeri ifadesi. 12. âyetin Rabbin huzuru lafzı hedef; diğer yerleri mahşerle ilgisiz diye sunmuyor.",
+    "optionReview": {
+      "o3": "Başka hesap yeri.",
+      "o4": "Başka kayıt yeri.",
+      "o2": "12. âyetin ifadesi.",
+      "o1": "Başka mahşer tasviri."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "75/12; PDF sayfa 623 (1 tabanlı), basılı sayfa 622",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q56-akabe-yil1",
+    "reviewedCandidateSha256": "a99f84cbbe20e79bbb7007aa940f4a7b8ed96076454ecd89bcdc36b61e6e48ff",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört dönemin önemli milâdî yılı. TDV 621 olarak verir; 622 ikinci biat, 610 ilk vahiy, 632 vefatla karışabilir.",
+    "optionReview": {
+      "o1": "İlk vahiy dönemi.",
+      "o2": "Birinci biat.",
+      "o3": "İkinci biat.",
+      "o4": "Vefat yılı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+      "locator": "96–106. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q56-akabe-egitmen",
+    "reviewedCandidateSha256": "532963bb5bf4f61ec5eeaf5a9e5545db12ba8737b23af78ad41e2009a295b78a",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek sahâbî aynı tür adlarda. Mus‘ab açıkça görevlendirilen; diğerlerinin okuyuculuk/öğretim bağlantısı bu somut görevlendirmeyi değiştirmez.",
+    "optionReview": {
+      "o1": "Başka sahâbî.",
+      "o2": "100. satırın görevlisi.",
+      "o3": "Başka sahâbî.",
+      "o4": "Başka sahâbî."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+      "locator": "99–101. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q56-akabe-ikinci",
+    "reviewedCandidateSha256": "1ec9f6a64ff499e5ca588a98950c137d23bcb8137843099559fc0c52e846b7d4",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Harb sözcüğünün savaş cevabıyla eşleşmesi ve üç ilgisiz sözleşme türü yerine biatın belirli korunacak kişisi soruldu. Dört gerçek kişi; diğerlerinin genel olarak korunmayacağı iddia edilmez.",
+    "optionReview": {
+      "o4": "Başka önemli sahâbî.",
+      "o2": "Biatın açık korunacak kişisi.",
+      "o1": "Görüşmede konuşan amca.",
+      "o3": "Başka önemli sahâbî."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+      "locator": "102–106. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q56-akabe-konum",
+    "reviewedCandidateSha256": "be8d3004ba229f0a08711f3d939507583339ce249c6b0ecb27a370cb75808b54",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kökte Akabe adını tekrarlayıp tek Akabe şıkkına yönlendirme kaldırıldı. Dört Mina yeri; dar kaynak tarifinin Cemre-i Akabe referansı sorulur, diğerlerinin metre cinsinden uzaklığı iddia edilmez.",
+    "optionReview": {
+      "o3": "Mina’da başka cemre.",
+      "o4": "Mina’da başka yer.",
+      "o2": "Maddedeki açık konum referansı.",
+      "o1": "Mina’da başka cemre."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
+      "locator": "96. satır",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q56-hicret-konak",
+    "reviewedCandidateSha256": "ac975ba3e81267642966689a686ff044e83fc3507968220126db408c7553265f",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Köy kelimesiyle tek küçük yerleşimi seçtiren ayrım yerine dört gerçek Hicaz yerleşimi. Konaklama süresi rivayetlerinin biri kesinleştirilmedi.",
+    "optionReview": {
+      "o2": "Hicrette konaklanan.",
+      "o1": "Başka Hicaz yerleşimi.",
+      "o3": "Başka Hicaz yerleşimi.",
+      "o4": "Başka Hicaz yerleşimi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/kuba--medine",
+      "locator": "96–100. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q56-hicret-mescid",
+    "reviewedCandidateSha256": "1bb373d9c6f9b38a11c008d058e465d3711ae0ad689ae6527150c50c697b87cf",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Arsanın sonraki sahipliği/yer tespiti rivayetleri farklı. Kök, ilk muhacirlerin hurma kurutma alanına dair kaynak anlatımına daraltıldı; dört dönemsel mekân korunuyor.",
+    "optionReview": {
+      "o3": "Başka dönemsel kullanım.",
+      "o4": "Başka dönemsel kullanım.",
+      "o2": "111. satırın ilk alanı.",
+      "o1": "Başka dönemsel kullanım."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/mescid-i-kuba",
+      "locator": "111–115. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q56-hicret-donus",
+    "reviewedCandidateSha256": "749bd5da5e45cc7fcfc6ee474c0cc262cbe8b4facc8657bd1661e89d849e9c91",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Peygamber’den sonra kurulan Kûfe anakronizmi ve uzak Şam yerine dört gerçek Hicaz yerleşimi. Fetihten sonra Medine’de kalma bilgisi gerekir.",
+    "optionReview": {
+      "o2": "Kaynağın vefaya bağladığı devam eden ikamet.",
+      "o1": "Fethedilen eski şehir.",
+      "o3": "Başka Hicaz şehri.",
+      "o4": "Başka Hicaz yerleşimi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/hicret",
+      "locator": "169–175. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q57-nuh950",
+    "reviewedCandidateSha256": "817913aa3675d5c95288bf8114eff1035477f27dd20a103bd1faafc06945a26c",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört süre aynı yıl biriminde. Kaynak bin eksi elli yıl der, bütün ömrü diye kesinleştirmez; açıklamadaki bu ayrım korunur.",
+    "optionReview": {
+      "o1": "29/14’ün kavim içindeki süresi.",
+      "o2": "Başka süre.",
+      "o3": "Başka süre.",
+      "o4": "Başka süre."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "29/14; PDF sayfa 418 (1 tabanlı), basılı sayfa 417",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-nuhalay",
+    "reviewedCandidateSha256": "ca67d14290fd036ed7f8d4c08f5ec79a27ffdd231acb3a4a652c923b2b7e8d11",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç yardım/kurtulma tepkisine karşı tek inkârcı davranış kaldırıldı. Dört olumsuz toplumsal tepki; 38. âyetteki alay belirli.",
+    "optionReview": {
+      "o4": "38. âyetteki tepki.",
+      "o1": "Başka olumsuz tepki.",
+      "o2": "Başka olumsuz tepki.",
+      "o3": "Başka olumsuz tepki."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "11/38; PDF sayfa 237 (1 tabanlı), basılı sayfa 236",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-nuhcift",
+    "reviewedCandidateSha256": "a874b8598bb3b07b3a2ea41122ba84895855b0a0ad049b0f8e14c8280f6f7ff7",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Önceki adayın dört doğa sahnesi yeniden karşılaştırıldı. Tennûr farklı çevrildiği için kök bu mealdeki coşan sulara bağlı; dipnotun gazap/sabah çevirileri yok sayılmaz.",
+    "optionReview": {
+      "o3": "Bu mealin 11/40 karşılığı.",
+      "o1": "Başka doğa sahnesi.",
+      "o2": "Başka doğa sahnesi.",
+      "o4": "Başka doğa sahnesi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
     "source": {
       "status": "compared",
       "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
       "locator": "11/40; PDF sayfa 237 (1 tabanlı), basılı sayfa 236",
       "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-      "readAt": "2026-10-28",
+      "readAt": "2026-10-30",
       "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-nuhogul",
+    "reviewedCandidateSha256": "da05b0a79431d560f2764a2969659e40f895946659dccf79c44ced3a799defed",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç kurtuluş senaryosuna karşı tek boğulma yerine dört makul sığınak düşüncesi. Oğlun kendi planı soruluyor; kurtulduğu iddia edilmiyor.",
+    "optionReview": {
+      "o3": "Başka sığınma yeri.",
+      "o4": "Başka sığınma yeri.",
+      "o2": "43. âyetteki planı.",
+      "o1": "Başka sığınma yeri."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "11/43; PDF sayfa 238 (1 tabanlı), basılı sayfa 237",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-yunuskura",
+    "reviewedCandidateSha256": "ce81e2edaa48916b82bbe5e676a7510bc26ae55bebf75058e5ad6ec521924927",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Gemide düğün/ihale gibi ilgisiz olaylar yerine dört karar/işlem yöntemi. Kura âyetin açık eylemi; olayın sonucu açıklamada korunuyor.",
+    "optionReview": {
+      "o3": "Başka sorumluluk işlemi.",
+      "o4": "141. âyetin kurası.",
+      "o1": "Başka karar yöntemi.",
+      "o2": "Başka anlaşma işlemi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "37/141; PDF sayfa 475 (1 tabanlı), basılı sayfa 474",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-yunusbitki",
+    "reviewedCandidateSha256": "91e99bfcd75cd493efd11dd7c61f1f7d362ce0946e23901e83e19e64758eb3b3",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek dinî bitki terimi. TDV’nin İslâmî anlatım bölümünde 121. satır yaktîni kabak cinsi geniş yapraklı bitki olarak açıklar; önceki Yahudi efsaneleri kanıt alınmadı.",
+    "optionReview": {
+      "o1": "Başka Kur’an bitki terimi.",
+      "o2": "Başka dinî bitki terimi.",
+      "o3": "121. satırın yaktîni.",
+      "o4": "Başka Kur’an bitki terimi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/yunus",
+      "locator": "119–122. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+    }
+  },
+  {
+    "id": "q57-yunuskavim",
+    "reviewedCandidateSha256": "67d66059e113002a5fc7cb27ce8e6d3233d8eb8be413334aa17e3ebdb1973f67",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kral seçme/göç/gemi gibi üç dünyevî çözüm yerine dört olumlu dinî davranış. Tövbe de iman bağlamıyla örtüşebileceğinden yanlış şık yapılmadı; 98. âyetin açık sebebi iman.",
+    "optionReview": {
+      "o2": "98. âyetin açık sebebi.",
+      "o1": "Başka dinî davranış.",
+      "o3": "Başka dinî davranış.",
+      "o4": "Başka dinî davranış."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "10/98; PDF sayfa 231 (1 tabanlı), basılı sayfa 230",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-yusufruya",
+    "reviewedCandidateSha256": "440094d326f5e474565622921f31788774be575bbf946ffb826e2b3cb741f851",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört yıldız sayısı, aynı sayı türünde. 12/4 on bir yıldızı güneş/aydan ayrı sayar; gök cisimlerinin toplamı 13 diye anahtar değiştirilmez.",
+    "optionReview": {
+      "o1": "4. âyetin yıldız sayısı.",
+      "o2": "Başka sayı.",
+      "o3": "Başka sayı.",
+      "o4": "Başka sayı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "12/4; PDF sayfa 247 (1 tabanlı), basılı sayfa 246",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-yusufzindan",
+    "reviewedCandidateSha256": "9caa81b296951198408b34390cc70d91789c353a67f31c93b39d9d032aec5546",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört yakın kişi sayısı. İki genç Yûsuf’a ek girer; toplam üç mahkûm ifadesiyle karıştırılmaz.",
+    "optionReview": {
+      "o1": "Başka genç sayısı.",
+      "o2": "Yûsuf dahil sayı olabilir; sorulan ek iki genç.",
+      "o3": "Başka genç sayısı.",
+      "o4": "36. âyetin iki genci."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "12/36; PDF sayfa 250 (1 tabanlı), basılı sayfa 249",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-yusufgomlek",
+    "reviewedCandidateSha256": "af2a9518296185b5b54fbcd2d4e723ebb4ca2379cd835c72425bafc277d3cf58",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kral/gemi/ev gibi üç uzak sonuç yerine dört insan duyusu. 94. âyette koku alması geçer; koklama duyusu kaybolmuş veya gömlekle geri gelmiş denmez.",
+    "optionReview": {
+      "o1": "Başka duyu.",
+      "o2": "94. âyette zaten bulunan duyu.",
+      "o4": "Başka duyu.",
+      "o3": "96. âyette geri gelen duyu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "12/96; PDF sayfa 257 (1 tabanlı), basılı sayfa 256",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-yusufbagis",
+    "reviewedCandidateSha256": "bcd660a91c7cfb2fd4e353c65f2ce5c515934567af500400ba01255d17834cda",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç cezalandırma/kötü davranışa karşı tek bağışlama yerine dört toplumsal/hukukî karşılık. Tam ayetin kınamama ve Allah’tan af dileme içeriği gerekir.",
+    "optionReview": {
+      "o2": "92. âyetin iki yönlü karşılığı.",
+      "o1": "Başka uzlaşma biçimi.",
+      "o3": "Başka güvence/serbestlik işlemi.",
+      "o4": "Başka karar usulü."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "12/92; PDF sayfa 257 (1 tabanlı), basılı sayfa 256",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-suaybolcu",
+    "reviewedCandidateSha256": "7115660a968ea8942c54f81fe42edb02314805851ef2f8d6246eb21e1349c413",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç olağan ticaret davranışına karşı tek hile kaldırıldı. Dört ticaret/hak eksikliği; 85. âyetteki geniş insan hakkı kavramı yerine 84. âyetin açık ölçü-tartı hedefi sorulur.",
+    "optionReview": {
+      "o3": "Başka hak eksikliği.",
+      "o4": "84. âyetin açık yasağı.",
+      "o1": "Başka işlem eksikliği.",
+      "o2": "Başka işlem eksikliği."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "11/84; PDF sayfa 242 (1 tabanlı), basılı sayfa 241",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-musaasa",
+    "reviewedCandidateSha256": "1e66c37bd80794a8ad0acb0f8988915823566f9393f55b0b6b7303aee7a0d180",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Dört peygamber mucizesi korunuyor. Önceki açıklamanın dayandığı Tâhâ sahnesi Firavun’dan önceki hitap olduğundan doğrudan Firavun huzurunu anlatan 7/106–107 kaynağına bağlandı.",
+    "optionReview": {
+      "o2": "106–107’deki Mûsâ mucizesi.",
+      "o1": "Sâlih kıssasıyla ilişkilendirilen başka mucize.",
+      "o3": "Başka peygamberle ilişkilendirilen mucize.",
+      "o4": "Îsâ ile ilişkilendirilen mucize."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "7/107; PDF sayfa 174 (1 tabanlı), basılı sayfa 173",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-musayed",
+    "reviewedCandidateSha256": "83ac6c6db547c41c3309eb38832d0abc4ad6793736b13d96a7b9f22a4d0c5b95",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört beden organı aynı türde. 28/32 elin hastalık sebebiyle olmadan beyaz çıkışını anlatır; renk değişimi albinizm veya bilimsel hastalık iddiası yapılmadı.",
+    "optionReview": {
+      "o1": "32. âyetin eli.",
+      "o2": "Başka organ.",
+      "o3": "Başka organ.",
+      "o4": "Başka organ."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "28/32; PDF sayfa 410 (1 tabanlı), basılı sayfa 409",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-musaharun",
+    "reviewedCandidateSha256": "94c34daa6dd1882ef2173723314a43a74b72376400663b9335d1c1b25696de7f",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek peygamber. Mûsâ’nın kardeşi ve yardımcı Hârûn 20/29–35’te açık; tek dinî isme karşı üç ilgisiz kişi yok.",
+    "optionReview": {
+      "o1": "Başka peygamber.",
+      "o2": "Başka peygamber.",
+      "o3": "Başka peygamber.",
+      "o4": "30. âyetin kardeşi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "20/30; PDF sayfa 329 (1 tabanlı), basılı sayfa 328",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-musadeniz",
+    "reviewedCandidateSha256": "f8a99250b5037c214686a6f8e0dd3882a3204df90ce88adb7ea72bbf9bd7ebfe",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek Kur’an topluluğu. Şuarâ 26/59 ve 63–66 ile dipnot denizi geçenleri İsrâiloğulları olarak belirler; Kureyş/Âd/Semûd başka kıssalarla ilişkili.",
+    "optionReview": {
+      "o1": "Başka tarihî topluluk.",
+      "o2": "Başka Kur’an topluluğu.",
+      "o3": "Kıssadaki kurtulan topluluk.",
+      "o4": "Başka Kur’an topluluğu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "26/63; PDF sayfa 389 (1 tabanlı), basılı sayfa 388",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-davudzebur",
+    "reviewedCandidateSha256": "24cb3a39830c139a12dbf6a73fd3ef9508da0e8998a28040fa41c747fc904b73",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört vahiy/kitap adı aynı alanda. Zebûr İsrâ 17/55’te Dâvûd’a verilir; Furkān adının bağlama göre farklı kullanımları doğru anahtarı etkilemez.",
+    "optionReview": {
+      "o1": "Başka kitap/vahiy adı.",
+      "o2": "55. âyetin kitabı.",
+      "o3": "Başka ilâhî kitap.",
+      "o4": "Başka ilâhî kitap."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "17/55; PDF sayfa 300 (1 tabanlı), basılı sayfa 299",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-davudcalut",
+    "reviewedCandidateSha256": "3ea9df2089151300a0759751db0bccba683f2c7c05a44e50032ee805a9aa9609",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört Kur’an kıssası şahsiyeti. 2/251 öldürme eylemini Câlût’a bağlar; Kārûn hükümdar diye yanlış tanımlanmadı.",
+    "optionReview": {
+      "o1": "251. âyetin şahsı.",
+      "o2": "Başka kıssa şahsı.",
+      "o3": "Başka kıssa şahsı.",
+      "o4": "Başka kıssa şahsı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "2/251; PDF sayfa 48 (1 tabanlı), basılı sayfa 47",
+      "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+    }
+  },
+  {
+    "id": "q57-hudyer",
+    "reviewedCandidateSha256": "6dd15212c4c44985b45bdd0f506afbaf8c638b2aa82c7d16ff4b1b88685015a5",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç ana yöne karşı tek ara yön yerine dört ana yön aynı biçimde. Eski Cidde yolundaki batı konumu kaynakla karşılaştırıldı.",
+    "optionReview": {
+      "o2": "Başka ana yön.",
+      "o3": "Başka ana yön.",
+      "o4": "Kaynağın belirttiği yön.",
+      "o1": "Başka ana yön."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "locator": "98–101. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-hudumre",
+    "reviewedCandidateSha256": "27a0bfc4ab97ee9109851ccf939e372d5514f636e9ed17faa0c9cf3d9ff94373",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç askerî/göç hedefine karşı tek ibadet yerine dört olumlu ziyaret amacı. Bu yolculuğun somut umre niyeti sorulur; tebliğin bütün seferlerdeki genel rolüyle karışmaz.",
+    "optionReview": {
+      "o1": "Başka hac ibadeti.",
+      "o2": "Başka ziyaret amacı.",
+      "o4": "Başka ziyaret amacı.",
+      "o3": "Bu yolculuğun umre niyeti."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "locator": "100–103. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-hendeksav",
+    "reviewedCandidateSha256": "99e98f4ad88530bed810bb82a551f24558505613f286b420bd6b4d6c76fab3cf",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kökteki Hendek sözcüğü cevabı tekrarlıyordu. Deniz donanması/şehri terk etme gibi üç uygunsuz yöntem yerine dört makul savunma yapısı; savaşa ad veren özellik belirli.",
+    "optionReview": {
+      "o3": "Başka savunma yapısı.",
+      "o4": "Savaşa diğer adını veren yöntem.",
+      "o1": "Başka savunma yapısı.",
+      "o2": "Başka savunma yapısı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+      "locator": "100–101. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-hendektarih",
+    "reviewedCandidateSha256": "05b5c1550791f960c9d04141d7df06897e9a800283a7a6e8aff43ba4f007c9a2",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört hicrî yıl aynı sayı yapısında. TDV 5/627 verir; Uhud’un 3. yılıyla ayrım bilgi gerektirir.",
+    "optionReview": {
+      "o1": "Uhud dönemi yılı.",
+      "o2": "Başka hicrî yıl.",
+      "o3": "Kaynağın Hendek yılı.",
+      "o4": "Başka hicrî yıl."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/hendek-gazvesi",
+      "locator": "100–103. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-tebukusre",
+    "reviewedCandidateSha256": "558116f60f9d612dd2691708a2e7de8af2663a4e17b676470a7369cc54bbf221",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Mağara ehli ve bir ev adı gibi alan dışı seçenekler yerine dört ordu tanımı. Hepsi makul askerî unvan olabilir; bu adın usre anlamı gerekir.",
+    "optionReview": {
+      "o4": "Başka ordu işlevi.",
+      "o2": "Usrenin güçlük anlamı.",
+      "o1": "Başka ordu niteliği.",
+      "o3": "Başka ordu işlevi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+      "locator": "102–106. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-tebukmuh",
+    "reviewedCandidateSha256": "5c1fa89618d77380d06c7ed345db60c63cfe9ad4f04f6ab916d4a8d396b2d4c7",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç evet/bir hayır ve ilgisiz deniz savaşı kaldırıldı. İki gerçek boyutun dört birleşimi aynı dilde; olumsuzluk yalnız doğru cevaba ait değil.",
+    "optionReview": {
+      "o2": "Çarpışma var/yok ve diplomasi ters.",
+      "o3": "Çarpışma var kısmı kaynakla çelişir.",
+      "o4": "Antlaşma yok kısmı kaynakla çelişir.",
+      "o1": "Doğrudan savaş yok; bölgesel ahidnâmeler var."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tebuk-gazvesi",
+      "locator": "120–124. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-hayberdate",
+    "reviewedCandidateSha256": "e19aab90d9ee4255d782193223c95cf4e5c0d18700b1b2cca67c3ecc9b957fa1",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört hicrî yıl. Hayber 7/628 olarak açık; farklı olaylara ait yakın yıllar doğruyu tonundan ele vermez.",
+    "optionReview": {
+      "o1": "Başka hicrî yıl.",
+      "o2": "Başka hicrî yıl.",
+      "o3": "Başka hicrî yıl.",
+      "o4": "112. satırın Hayber yılı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/hayber",
+      "locator": "112–119. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-vakifgay",
+    "reviewedCandidateSha256": "5741e9b9eec31225dd4fce07f91d2273ee51fafe0b56a24eaaac1468284defc6",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç bencil/kötü veya mecburi amaca karşı tek hayır cevabı yerine dört gerçek mal tasarrufu. Genel kurum tarifi, mülkiyetin kime ait olduğu konusundaki mezhep farkını kesinleştirmiyor.",
+    "optionReview": {
+      "o3": "Bedel karşılığı kullanım işlemi.",
+      "o4": "Borcun güvencesi işlemi.",
+      "o2": "Kaynağın temel kurum tanımı.",
+      "o1": "Karşılıksız devir işlemi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/vakif",
+      "locator": "111–116. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-vakfiyeterim",
+    "reviewedCandidateSha256": "53f601c2c7e780c61de4a08b46e675614b89fb93ca8a7dd766dd8ded11097804",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek belge türü. Vakfiye kuruluş ve işletim koşullarını belirler; fetva görüş, şecere soy, icazet yetki belgesidir.",
+    "optionReview": {
+      "o1": "Vakfın şart senedi.",
+      "o2": "Hukukî görüş belgesi.",
+      "o3": "Soy belgesi.",
+      "o4": "Yetki/öğrenim belgesi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/vakfiye",
+      "locator": "111–114. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-vakfiyepersonel",
+    "reviewedCandidateSha256": "d64f41064a6a24fd11cdf89bd5b520a40ca72aa1c58db5a3ef3fafcf2b11f3ec",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Burç/deniz derinliği/silah tarihi yerine dört makul personel bilgisi çifti. Vakfiyelerde öteki veriler hiç bulunmaz iddiası değil; genel tanımda açıkça sayılan ikili sorulur.",
+    "optionReview": {
+      "o4": "112. satırın saydığı ikili.",
+      "o1": "Başka personel bilgileri.",
+      "o2": "Başka personel bilgileri.",
+      "o3": "Başka personel bilgileri."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/vakfiye",
+      "locator": "111–114. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-vakifdukk",
+    "reviewedCandidateSha256": "a048554b03f38335f9bf5d3ec84cef3ce99ddc526dde84dff3169645b8d0f5d8",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kitap yakmak/kapıları kapatmak gibi saçma kötü eylemler yerine dört dönemsel yapı işlevi. Külliyenin hayrat bölümünü sürdüren gelir ilişkisi kaynakta açık.",
+    "optionReview": {
+      "o3": "343 ve 346–347’nin hayrat giderleri.",
+      "o1": "Başka yapı işlevi.",
+      "o2": "Başka yapı işlevi.",
+      "o4": "Başka yapı işlevi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/vakif",
+      "locator": "342–348. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-ezanbilal",
+    "reviewedCandidateSha256": "b897f2a6cbc87d7cf69a8414c28e49b86fcd3bcd128b5a021ed835ecdb41910b",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek sahâbî. Kaynak ilk sabah ezanını Bilâl’in okuduğunu söyler; meşrulaşma yılı farklı rivayetleri soru dışında bırakılmış.",
+    "optionReview": {
+      "o1": "Başka sahâbî.",
+      "o2": "İlk ezanı okuyan.",
+      "o3": "Başka sahâbî.",
+      "o4": "Başka sahâbî."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ezan",
+      "locator": "119–122. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-ezanruya",
+    "reviewedCandidateSha256": "04c552995f07f361edd473fa9ce7744c85fd052ca59c1ea696e8011152a1615a",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek sahâbî adı. Ömer de aynı rüyayı gördüğünü bildirir ama seçenek yapılmadığından ikinci doğru yok; Abdullah b. Zeyd b. Sa‘lebe, diğer adaşla karışmamalı.",
+    "optionReview": {
+      "o1": "Rüyayı önce haber veren.",
+      "o2": "Başka sahâbî.",
+      "o3": "Başka sahâbî.",
+      "o4": "Başka Zeyd adlı sahâbî."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ezan",
+      "locator": "120–122. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-oruclft",
+    "reviewedCandidateSha256": "12fdd0e0a468c970cb8c6ba9fcb48fd76fb82a1db79997f846957201200e0833",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek ibadet işlemi. İftarın vakti gelince orucu meşru bitirme anlamı imsak maddesinin 97. satırıyla açık; orucu gün içinde bozma geniş anlamıyla karıştırılmaz.",
+    "optionReview": {
+      "o1": "Başka mali ibadet işlemi.",
+      "o2": "Dar anlamdaki meşru iftar.",
+      "o3": "İmsak/niyetle ilgili başka işlem.",
+      "o4": "Başka ibadet."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/imsak",
+      "locator": "96–100. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q57-imsakkoken",
+    "reviewedCandidateSha256": "95a68b298ca0f6554e95b6e5874fb28cf2516d1856f77c3dc23d0423fb954ed6",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç ilgisiz tek eyleme karşı uzun çift cevap yerine dört kısa fiil çifti. İmsakın sözlük anlamıyla terim başlangıç anı ayrımı açıklamada korunur.",
+    "optionReview": {
+      "o2": "Başka sosyal eylem çifti.",
+      "o3": "Başka sosyal eylem çifti.",
+      "o4": "Başka hareket çifti.",
+      "o1": "96. satırın tutma anlamı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/imsak",
+      "locator": "96–100. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-esma-kunye",
+    "reviewedCandidateSha256": "eb90f148323371bb8009bf38439764984d342d012dc7455b49cbe856f2a21ff9",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört kadın sahâbî aynı ad yapısında. İki kap bağlamasına ilişkin iki rivayet var; ikisi de Esmâ’nın lakabını destekler, olay ayrıntılarının biri zorunlu tutulmaz.",
+    "optionReview": {
+      "o1": "105–106’nın iki kuşaklısı.",
+      "o2": "Başka kadın sahâbî.",
+      "o3": "Başka kadın sahâbî.",
+      "o4": "Başka kadın sahâbî."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+      "locator": "102–107. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-esma-kardes",
+    "reviewedCandidateSha256": "04951165da603ff0e05f038aa4f107c2d7c6a3c0e96face75ae1fbb5b45d38df",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Anneanne/yeğen gibi uzak nesil ipuçları yerine yakın aile ilişkileri. Kaynak baba bir kardeş olduklarını ve Esmâ’nın daha büyük olduğunu belirtir; tartışmalı kesin yaş eklenmedi.",
+    "optionReview": {
+      "o3": "İki ebeveyn ortaklığını yanlış kurar.",
+      "o4": "Başka yakın aile ilişkisi.",
+      "o2": "Kaynağın baba bir kardeşliği.",
+      "o1": "Anne ortaklığını yanlış kurar."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+      "locator": "102–106. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-seleme-asli",
+    "reviewedCandidateSha256": "78179db8f2fa140ede2471882a4744274ce50163e8a9244bc6f4a42019ac7b7d",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek kadın adı. Kaynak Hind’i açıkça belirtir, Remle rivayetini yanlış sayar; Remle alternatif olarak kullanılmadı.",
+    "optionReview": {
+      "o1": "96. satırın asıl adı.",
+      "o2": "Başka kadın adı.",
+      "o3": "Başka kadın adı.",
+      "o4": "Başka kadın adı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+      "locator": "96–100. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-seleme-kabile",
+    "reviewedCandidateSha256": "112bd8caf89a9d7d317e2802781efc59fb52f469693f2bac1da2155c580cebc3",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Kureyş dışında Temîm ve Sâide seçenekleri yerine dört gerçek Kureyş kolu. Ümmü Seleme’nin Mahzûm aidiyeti gerekir.",
+    "optionReview": {
+      "o3": "Başka Kureyş kolu.",
+      "o4": "Kaynağın belirttiği kol.",
+      "o1": "Başka Kureyş kolu.",
+      "o2": "Başka Kureyş kolu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+      "locator": "96–100. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-seleme-hud",
+    "reviewedCandidateSha256": "2eb1821a8c7d593e43530dd6ec85711201a6d5343a18e197e3f13aa509d1b96c",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek kadın sahâbî. 106–107’de kurban ve tıraş tavsiyesi Ümmü Seleme’ye nispetli; hiçbiri konu dışı erkek hükümdar değil.",
+    "optionReview": {
+      "o1": "Başka kadın sahâbî.",
+      "o2": "Başka kadın sahâbî.",
+      "o3": "Kaynağın tavsiye sahibi.",
+      "o4": "Başka kadın sahâbî."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+      "locator": "105–107. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-seleme-sefer",
+    "reviewedCandidateSha256": "9e876e2229a1728a19aabb2dd88530c67c468701ef19567d7f0f8675df2b4096",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Peygamber’den sonraki Kadisiye anakronizmi kaldırıldı. Dört erken dönem sefer çifti; maddede adı verilen çift soruluyor, listede olmayan her katılımın kesin yokluğu iddia edilmiyor. Mûte Peygamber’in bizzat yönetmediği sefer olarak çeldiricidir.",
+    "optionReview": {
+      "o1": "Bedir bu açık çiftte yok.",
+      "o3": "Bu açık çiftte iki ad da yok.",
+      "o4": "Bu açık çift değil; Peygamber Mûte’ye katılmadı.",
+      "o2": "104. satırın verdiği çift."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+      "locator": "103–107. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-suleym-anne",
+    "reviewedCandidateSha256": "d23b829ab524f8d10dfde54dcba9fd7b6693e4c3ea2f08fae57afcbe4066370b",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek râvi aynı tür adlarda. Enes’in annesi 96–98’de açık, küçük yaşta hizmetiyle bağ tutarlı.",
+    "optionReview": {
+      "o1": "Kaynağın belirttiği oğlu.",
+      "o2": "Başka râvi.",
+      "o3": "Başka râvi.",
+      "o4": "Başka râvi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+      "locator": "96–98. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-suleym-kardes",
+    "reviewedCandidateSha256": "b497a1f1bc5d7ecccfdfa02ea4ced3afe314e570c631b84c1da521f92c132d66",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört aile ilişkisi. 96. satır Ümmü Harâm’ı kardeşler arasında sayar; anlatıdaki süt/soy teyzelik farklı kişilere ilişkindir ve bu kardeşliği değiştirmez.",
+    "optionReview": {
+      "o1": "Başka aile ilişkisi.",
+      "o2": "Başka aile ilişkisi.",
+      "o3": "Başka aile ilişkisi.",
+      "o4": "96. satırın kardeşi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+      "locator": "96–100. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-suleym-ogul",
+    "reviewedCandidateSha256": "2696f86770c3f41d30e6aa23ecd7633064cd5cce5c251bc3b3d7f2ef3801fdd0",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört hizmet yılı. Hicretten vefata on yıl 98’de açık; Enes’in yaklaşık yaşıyla hizmet süresi karıştırılmaz.",
+    "optionReview": {
+      "o1": "Başka süre.",
+      "o2": "Başka süre.",
+      "o3": "98. satırın hizmet süresi.",
+      "o4": "Başka süre."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+      "locator": "97–99. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-suleym-rivayet",
+    "reviewedCandidateSha256": "6f2d160325ac4e5712def16ff3a4bf008b3cc31ffa0d1a060a9085746916e778",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç yuvarlak/uç sayıya karşı tek ara sayı yerine dört yakın çift sayı. Kaynağın on dört sayısı rivayet envanterine nispetli, evrensel sayım iddiası değil.",
+    "optionReview": {
+      "o1": "Başka yakın sayı.",
+      "o3": "Başka yakın sayı.",
+      "o4": "Başka yakın sayı.",
+      "o2": "Kaynağın verdiği sayım."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
+      "locator": "111–112. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tefsir-tanim",
+    "reviewedCandidateSha256": "fcd08ceb7e9498edcfb91fc96c8cd33560faee2de3a11ea768f18721a04bc7c0",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Miras/cebir gibi uzak ilimler yerine Kur’an’la ilgili dört gerçek ilim. Anlam açıklama ile seslendirme/okuyuş/yazım ayrımı gerekir.",
+    "optionReview": {
+      "o1": "Anlamı açıklayan ilim.",
+      "o2": "Seslendirme kuralları.",
+      "o3": "Okuyuş vecihleri.",
+      "o4": "Mushaf yazımı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tefsir",
+      "locator": "111–115. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tefsir-rivayet",
+    "reviewedCandidateSha256": "2bed58fd218d982c344dc03fc00d2cb910f5ce598bb6b88810ed7016a91cc519",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Hendese/cetvel gibi biçim ve alan dışı çeldiriciler yerine dört tefsir yaklaşımı. Başka yöntemlerin rivayet hiç kullanmadığı iddia edilmez; temel kaynak tercihi sorulur.",
+    "optionReview": {
+      "o1": "Aklî muhakemeyi de öne alan yöntem.",
+      "o2": "Sezgisel işaretleri öne alan yaklaşım.",
+      "o4": "İlmî yorum teması.",
+      "o3": "191. satırın me’sûr/rivayet yöntemi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tefsir",
+      "locator": "187–199. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tefsir-dirayet",
+    "reviewedCandidateSha256": "629fad70bf94b7dacc85d250c34afd4adc696280b7f1ac0d9b15ea0aa515653d",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Tek gerçek tefsir terimine karşı ilgisiz alanlar kaldırıldı. Diğer yaklaşımlar dirâyet unsuru taşıyabileceğinden kök tematik türü değil rivayetin karşısındaki genel yöntem adını sorar.",
+    "optionReview": {
+      "o1": "Dil ağırlıklı yaklaşım.",
+      "o3": "Hüküm temalı yaklaşım.",
+      "o4": "İlmî temalı yaklaşım.",
+      "o2": "199. satırın re’y/aklî yöntemi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tefsir",
+      "locator": "187–203. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tefsir-ilk",
+    "reviewedCandidateSha256": "60e3b5d68f20ef5ab9b5144dd3526ec0ad4061a46c6b56b04820610a90d824f8",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç çok sonraki farklı ilim adamına karşı tek ilk dönem kişi yerine dört gerçek erken Kur’an açıklayıcısı. İlk açıklayan Peygamber, sonraki sahâbî tefsir katkılarından ayrılır.",
+    "optionReview": {
+      "o4": "Başka sahâbî Kur’an bilgini.",
+      "o1": "401. satırın ilk açıklayıcısı.",
+      "o2": "Sonraki sahâbî müfessir.",
+      "o3": "Başka sahâbî müfessir."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tefsir",
+      "locator": "401–404. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-ana",
+    "reviewedCandidateSha256": "40fb0c1278493fe2ededee6c42a70c7d7b23f9ee19d7011fe1dbe963794bfc6c",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Savaş/miras/arazi gibi üç uzak konunun yerine dört Kur’an çalışma alanı. Mahreç, sıfat ve okuyuş kuralları tecvidin doğru seslendirme hedefini belirler.",
+    "optionReview": {
+      "o3": "Esbâb-ı nüzûl konusu.",
+      "o4": "Tecvidin temel hedefi.",
+      "o1": "Tefsirin hedefi.",
+      "o2": "Resm-i mushafın konusu."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
+      "locator": "96–104. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-mahrec",
+    "reviewedCandidateSha256": "53c7494200390ddec5ccf61a95f4e4c0510ed7aecc4f1f149306a8d5e3e2acd1",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Cilt/okul/kâğıt gibi ses dışı nesneler yerine dört seslendirme özelliği. Mahreç ile sıfat/med/idgamın tanımsal farkı gerekir.",
+    "optionReview": {
+      "o2": "Ses sıfatı.",
+      "o4": "İdgam türü ses ilişkisi.",
+      "o3": "Mahrecin çıkış yeri.",
+      "o1": "Med süresi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
+      "locator": "96–104. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-vakf",
+    "reviewedCandidateSha256": "16598275fcdc79978446d7369de3b6201b784a12b2b57a54f312eb160826b463",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Harfleri ters çevirme/kopyalama yerine dört gerçek okuyuş eylemi. Vakf nefes alacak süre duruş, vasl bağlayış; sekte nefessiz duruştur, yanlış şıkta eş anlamlı verilmedi.",
+    "optionReview": {
+      "o3": "İdgamın katması.",
+      "o4": "Vaslın sürdürmesi.",
+      "o2": "Vakfın duruşu.",
+      "o1": "Medin uzatması."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+      "locator": "96–103. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-vasl",
+    "reviewedCandidateSha256": "1f667fb537ffa6804ab41a07175f2e94ce7820b763f7d6999ff7583478b2d04b",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Fısıltı/ters okuma/hiç durmama gibi uç çeldiriciler yerine dört gerçek tilavet işlemi. Vaslın sesi-nefesi kesmeden kelime bağlaması, her harfi kaynaştırma değildir.",
+    "optionReview": {
+      "o2": "Vakfın duruşu.",
+      "o3": "Medin uzatması.",
+      "o4": "İdgamın iki harfi birleştirmesi.",
+      "o1": "Vaslın kelimeler arasında bağlaması."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+      "locator": "96–103. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-idgam",
+    "reviewedCandidateSha256": "9a5e95dfaf276f99e1aebd18db8ae6843885af7f7f9191258f0a6a2d82633be0",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Sayfa değiştirme/sözü terk etme gibi ilgisiz işlemler yerine dört ses işlemi. Gunne bazı idgamda eşlik eder fakat idgamın tanımı değildir; çift doğru oluşturulmadı.",
+    "optionReview": {
+      "o3": "Gunne; bazı idgama eşlik edebilir.",
+      "o4": "İdgamın tanımı.",
+      "o1": "Medin işlemi.",
+      "o2": "Vakfın işlemi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/idgam",
+      "locator": "96–99 ve 112. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-med",
+    "reviewedCandidateSha256": "fd957a9c97e11276857dc3972051d7c697d86a4793d36a5bf39507f12eaaf3ac",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Harf silme/nokta değiştirme gibi üç ilgisiz veya kötü işlem yerine dört gerçek tilavet uygulaması. Medin uzatması, kasr/idgam/vakf ayrımını gerektirir.",
+    "optionReview": {
+      "o2": "İdgamın kaynaştırması.",
+      "o4": "Vakfın nefesli duruşu.",
+      "o3": "Medin uzatması.",
+      "o1": "Kasrın sınırlandırması."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/med",
+      "locator": "96–103. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q58-tecvid-kasir",
+    "reviewedCandidateSha256": "f5f3da960de3cf51f922f0cdfd6331aba4b96d7055841da50acdb260f52e18bb",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç bozucu ilgisiz işleme karşı tek çok uzun açıklama kaldırıldı. Önceki açıklamanın uzatma olmadan sözü tabii meddi de sıfırlar izlenimi verdiğinden düzeltildi: kasr tabii uzunluğa ilave yapmamak olabilir.",
+    "optionReview": {
+      "o2": "97. satırın tabii med/kasr ilişkisi.",
+      "o1": "Gunne.",
+      "o3": "İdgam.",
+      "o4": "Vakf."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/med",
+      "locator": "96–103. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-amac",
+    "reviewedCandidateSha256": "c7198384e617e01b4b71b744145b794f1f0d5c720d48b1f99f548a4dc2e23f04",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "İlmî faaliyet diye sorup üç askerî/ticarî alan vermek yerine dört gerçek ilim/öğretim faaliyeti. Kurumun tercüme ve araştırma niteliği hedef; diğer ilimler değersiz sayılmaz.",
+    "optionReview": {
+      "o2": "Başka ilmî faaliyetler.",
+      "o3": "Başka öğretim faaliyetleri.",
+      "o4": "Başka ilmî/kamusal faaliyetler.",
+      "o1": "Kurumun belirgin faaliyetleri."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "96–117. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-sehir",
+    "reviewedCandidateSha256": "1103c507fecb0e85b56fbb65d98f3b55d8b486b86979905a9508e30f1de1d305",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek İslâm şehri. Bağdat kurumu Kûfe/Kurtuba ile karışabilir; Kayrevan’daki başka Beytülhikme bu açık Bağdat kurumu sorusuna ikinci doğru değildir.",
+    "optionReview": {
+      "o1": "Başka şehir.",
+      "o2": "Başka şehir.",
+      "o3": "Başka şehir.",
+      "o4": "96–103’ün Bağdat merkezi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "96–110. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-mamun",
+    "reviewedCandidateSha256": "fd37bb3adf81c9032906db9f167bc99eadc863f2707a6c294d2dfbfb076912e6",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört gerçek Abbâsî halifesi. Kuruluşun tartışması 96’da korunur; 107’de daha ileri akademi niteliğine kavuşturan Me’mûn’dur.",
+    "optionReview": {
+      "o1": "Başka Abbâsî halifesi.",
+      "o2": "Başka Abbâsî halifesi.",
+      "o3": "107. satırın geliştiricisi.",
+      "o4": "Başka Abbâsî halifesi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "96 ve 103–109. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-mansur",
+    "reviewedCandidateSha256": "6ed892c5cf7159a162f1d66b58f3f312596d278ab06cd4af52a4a55187675850",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Emevî/Fâtımî halifelerine karşı tek erken Abbâsî yerine dört erken Abbâsî halifesi. İlk kuruluş tartışması ile çekirdek saray kütüphanesi birbirinden ayrılır.",
+    "optionReview": {
+      "o1": "Mansûr’dan sonraki halife.",
+      "o3": "Kütüphaneyi büyüten sonraki halife.",
+      "o4": "Akademi niteliğini geliştiren halife.",
+      "o2": "103. satırın çekirdeği kuran halifesi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "100–107. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-gorev",
+    "reviewedCandidateSha256": "1180a5e4c505048bc8390dd3537bc143621364b79157258297471c59725fee4e",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç ibadet/asker/kamu rolü yerine dört kitap üretim görevi. Verrâk da istinsah edebildiğinden yanlış şık yapılmadı; yazarı/çevirmeni/ciltçiyi müstensihten ayırır.",
+    "optionReview": {
+      "o1": "Kopyalayan görevli.",
+      "o2": "Çeviren görevli.",
+      "o3": "Ciltleyen görevli.",
+      "o4": "Yazan/telif eden görevli."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "110–112. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-benimusa",
+    "reviewedCandidateSha256": "cf3ee32505f388b84abbb0f58a281c9607ac6380509418d07c1e1fc1e97b3b4d",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört Benî adlı gerçek topluluk. Benî Mûsâ’nın Muhammed/Ahmed/Hasan adlı üç bilim kardeşi olduğu 108’de açık; Benî Şâkir aynı aileyle örtüşebileceğinden yeni yanlış şık olarak eklenmedi.",
+    "optionReview": {
+      "o1": "Başka aile/topluluk.",
+      "o2": "Başka aile/topluluk.",
+      "o3": "Başka aile/topluluk.",
+      "o4": "108. satırın üç kardeşi."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "107–111. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-yikil",
+    "reviewedCandidateSha256": "a307ad9947a972a6568d064b77c158fd4fe58a8c720577351a39cb50328ec5ca",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Üç çok farklı çağ dönüm noktasına karşı tek Moğol çağı yılı yerine dört yakın 13. yüzyıl yılı. 1258 doğrudan kaynaktaki yıkılış yılı.",
+    "optionReview": {
+      "o1": "Başka yakın yıl.",
+      "o2": "Başka yakın yıl.",
+      "o4": "Başka yakın yıl.",
+      "o3": "Kaynağın yıkılış yılı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "117. satır",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-beyt-diller",
+    "reviewedCandidateSha256": "e67f53af3faab9a4ab3d30020f5ed4f4b48d04f9dbf08b29a3f9685cb87c9f11",
+    "disposition": "revised",
+    "defects": [
+      "context-or-distractor-clue"
+    ],
+    "reason": "Fince/Japonca/İsveççe gibi üç ilgisiz seçenek yerine dönemin dört gerçek yazı/ilim dili. Süryânîce ara dil de olabildiğinden hedef dil açıkça ağırlıklı nihai Arapça çeviridir.",
+    "optionReview": {
+      "o1": "Kaynak olarak kullanılan başka ilim dili.",
+      "o3": "Dönemin başka yazı/ilim dili.",
+      "o4": "Dönemin başka yazı/ilim dili.",
+      "o2": "98, 103 ve 112’nin hedef dili."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+      "locator": "98–112. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+    }
+  },
+  {
+    "id": "q59-evliya-cilt",
+    "reviewedCandidateSha256": "0d2f3a6c1042db9d8ebb4ace1826f7589d5bc15c8dfa2e0e83450ff3e8c9c02d",
+    "disposition": "retained",
+    "defects": [],
+    "reason": "Dört cilt sayısı. Kaynak I İstanbul ve X Kahire uç ciltleri ile ara ciltlerin tümünü sayar; bütün eser on cilt, bir kısım baskının fizikî fasikül sayısıyla karıştırılmaz.",
+    "optionReview": {
+      "o1": "Eserin on cildi.",
+      "o2": "Başka cilt sayısı.",
+      "o3": "Başka cilt sayısı.",
+      "o4": "Başka cilt sayısı."
+    },
+    "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+    "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+    "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+    "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+    "source": {
+      "status": "compared",
+      "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
+      "locator": "96–104. satırlar",
+      "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+      "readAt": "2026-10-30",
+      "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
     }
   },
   {

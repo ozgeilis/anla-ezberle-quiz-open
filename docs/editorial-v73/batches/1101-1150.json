@@ -3,12 +3,12 @@
   "start": 1101,
   "end": 1150,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 20,
+  "pendingReview": 30,
+  "sourceComparedThisRound": 20,
   "blocked": 0,
   "flaggedBefore": 1,
-  "flaggedAfter": 1,
+  "flaggedAfter": 3,
   "records": [
     {
       "sequence": 1101,
@@ -61,15 +61,15 @@
           },
           {
             "id": "o2",
-            "text": "Sarf"
+            "text": "Tecvid"
           },
           {
             "id": "o3",
-            "text": "Feraiz"
+            "text": "Kıraat"
           },
           {
             "id": "o4",
-            "text": "Cebir"
+            "text": "Resm-i mushaf"
           }
         ],
         "correctOptionId": "o1",
@@ -77,20 +77,46 @@
         "explanation": "TDV Tefsir maddesi tefsiri Kur'an âyetlerinin anlamlarını açıklama ve yorumlama ilmi olarak tanımlar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tefsir",
-            "locator": "Tefsir tanımı",
+            "locator": "111–115. satırlar",
             "supports": "TDV Tefsir maddesi tefsiri Kur'an âyetlerinin anlamlarını açıklama ve yorumlama ilmi olarak tanımlar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tefsir-tanim",
+        "reviewedCandidateSha256": "fcd08ceb7e9498edcfb91fc96c8cd33560faee2de3a11ea768f18721a04bc7c0",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Miras/cebir gibi uzak ilimler yerine Kur’an’la ilgili dört gerçek ilim. Anlam açıklama ile seslendirme/okuyuş/yazım ayrımı gerekir.",
+        "optionReview": {
+          "o1": "Anlamı açıklayan ilim.",
+          "o2": "Seslendirme kuralları.",
+          "o3": "Okuyuş vecihleri.",
+          "o4": "Mushaf yazımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tefsir",
+          "locator": "111–115. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -137,44 +163,75 @@
         ]
       },
       "after": {
-        "question": "Hz. Peygamber, sahâbe ve tâbiînden gelen aktarımlarla yapılan tefsire ne denir?",
+        "question": "Peygamber, sahâbe ve tâbiînden aktarılan açıklamaları esas alan genel tefsir yöntemi hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Mantık kıyası"
+            "text": "Dirâyet tefsiri"
           },
           {
             "id": "o2",
-            "text": "Hendese"
+            "text": "İşârî tefsir"
+          },
+          {
+            "id": "o4",
+            "text": "İlmî tefsir"
           },
           {
             "id": "o3",
             "text": "Rivayet tefsiri"
-          },
-          {
-            "id": "o4",
-            "text": "Astronomik cetvel"
           }
         ],
         "correctOptionId": "o3",
         "correctAnswer": "Rivayet tefsiri",
-        "explanation": "TDV'nin Kur'an ve Tefsir maddelerinde ilk dönemden nakledilen açıklamalara dayanan yaklaşım rivayet tefsiri olarak tanıtılır.",
+        "explanation": "TDV Tefsir maddesi rivayet tefsirini, Kur’an’ın yanı sıra Peygamber, sahâbe ve tâbiînden gelen açıklamaları temel alan yöntem diye anlatır. Tek bir eser rivayet ve dirâyet özelliklerini birlikte taşıyabilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kuran",
-            "locator": "Kur'an'ın açıklanması ve rivayet tefsiri",
-            "supports": "TDV'nin Kur'an ve Tefsir maddelerinde ilk dönemden nakledilen açıklamalara dayanan yaklaşım rivayet tefsiri olarak tanıtılır.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/tefsir",
+            "locator": "187–199. satırlar",
+            "supports": "TDV Tefsir maddesi rivayet tefsirini, Kur’an’ın yanı sıra Peygamber, sahâbe ve tâbiînden gelen açıklamaları temel alan yöntem diye anlatır. Tek bir eser rivayet ve dirâyet özelliklerini birlikte taşıyabilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tefsir-rivayet",
+        "reviewedCandidateSha256": "2bed58fd218d982c344dc03fc00d2cb910f5ce598bb6b88810ed7016a91cc519",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hendese/cetvel gibi biçim ve alan dışı çeldiriciler yerine dört tefsir yaklaşımı. Başka yöntemlerin rivayet hiç kullanmadığı iddia edilmez; temel kaynak tercihi sorulur.",
+        "optionReview": {
+          "o1": "Aklî muhakemeyi de öne alan yöntem.",
+          "o2": "Sezgisel işaretleri öne alan yaklaşım.",
+          "o4": "İlmî yorum teması.",
+          "o3": "191. satırın me’sûr/rivayet yöntemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tefsir",
+          "locator": "187–199. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -221,44 +278,79 @@
         ]
       },
       "after": {
-        "question": "Kur'an yorumunda akıl yürütme, dil ve diğer ilimlerin yöntemlerinden yararlanan yaklaşım hangisidir?",
+        "question": "Rivayetin karşısında, re’y ve içtihada dayalı genel tefsir yöntemi hangi adla anılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Nesep ilmî"
+            "text": "Lugavî tefsir"
+          },
+          {
+            "id": "o3",
+            "text": "Fıkhî tefsir"
+          },
+          {
+            "id": "o4",
+            "text": "İlmî tefsir"
           },
           {
             "id": "o2",
             "text": "Dirâyet tefsiri"
-          },
-          {
-            "id": "o3",
-            "text": "Rivayet zinciri"
-          },
-          {
-            "id": "o4",
-            "text": "Sadece ezber"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Dirâyet tefsiri",
-        "explanation": "TDV'nin Kur'an'ın yorumlanması bölümünde tefsir ilminin zamanla farklı ilmî yöntem ve değerlendirmeleri kullanan dirâyet boyutunun geliştiği belirtilir.",
+        "explanation": "Dirâyet tefsiri, re’y veya aklî tefsir diye de anılır; müfessir rivayet kaynaklarını kullanmanın yanında akıl yürütme ve içtihatla değerlendirme yapar. Lugavî, fıkhî ve ilmî gibi nitelemeler eserlerde bu yöntemle birlikte bulunabilir; soru genel yöntem adını sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kuran",
-            "locator": "Dirâyet tefsiri",
-            "supports": "TDV'nin Kur'an'ın yorumlanması bölümünde tefsir ilminin zamanla farklı ilmî yöntem ve değerlendirmeleri kullanan dirâyet boyutunun geliştiği belirtilir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/tefsir",
+            "locator": "187–203. satırlar",
+            "supports": "Dirâyet tefsiri, re’y veya aklî tefsir diye de anılır; müfessir rivayet kaynaklarını kullanmanın yanında akıl yürütme ve içtihatla değerlendirme yapar. Lugavî, fıkhî ve ilmî gibi nitelemeler eserlerde bu yöntemle birlikte bulunabilir; soru genel yöntem adını sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tefsir-dirayet",
+        "reviewedCandidateSha256": "629fad70bf94b7dacc85d250c34afd4adc696280b7f1ac0d9b15ea0aa515653d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek gerçek tefsir terimine karşı ilgisiz alanlar kaldırıldı. Diğer yaklaşımlar dirâyet unsuru taşıyabileceğinden kök tematik türü değil rivayetin karşısındaki genel yöntem adını sorar.",
+        "optionReview": {
+          "o1": "Dil ağırlıklı yaklaşım.",
+          "o3": "Hüküm temalı yaklaşım.",
+          "o4": "İlmî temalı yaklaşım.",
+          "o2": "199. satırın re’y/aklî yöntemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tefsir",
+          "locator": "187–203. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -308,20 +400,20 @@
         "question": "İslâm tefsir geleneğinde Kur'an'ı ilk açıklayan kişi kim kabul edilir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Übey b. Kâ‘b"
+          },
+          {
             "id": "o1",
             "text": "Hz. Muhammed"
           },
           {
             "id": "o2",
-            "text": "İbn Haldûn"
+            "text": "Abdullah b. Abbas"
           },
           {
             "id": "o3",
-            "text": "Cezerî"
-          },
-          {
-            "id": "o4",
-            "text": "Kâşgarlı Mahmud"
+            "text": "Abdullah b. Mes‘ûd"
           }
         ],
         "correctOptionId": "o1",
@@ -329,20 +421,51 @@
         "explanation": "TDV Tefsir maddesine göre Kur'an'ı açıklayan ilk kişi Hz. Peygamber'dir; sonraki nesiller açıklamaları aktarıp geliştirmişlerdir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tefsir",
-            "locator": "İlk tefsir kaynağı",
+            "locator": "401–404. satırlar",
             "supports": "TDV Tefsir maddesine göre Kur'an'ı açıklayan ilk kişi Hz. Peygamber'dir; sonraki nesiller açıklamaları aktarıp geliştirmişlerdir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tefsir-ilk",
+        "reviewedCandidateSha256": "60e3b5d68f20ef5ab9b5144dd3526ec0ad4061a46c6b56b04820610a90d824f8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç çok sonraki farklı ilim adamına karşı tek ilk dönem kişi yerine dört gerçek erken Kur’an açıklayıcısı. İlk açıklayan Peygamber, sonraki sahâbî tefsir katkılarından ayrılır.",
+        "optionReview": {
+          "o4": "Başka sahâbî Kur’an bilgini.",
+          "o1": "401. satırın ilk açıklayıcısı.",
+          "o2": "Sonraki sahâbî müfessir.",
+          "o3": "Başka sahâbî müfessir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tefsir",
+          "locator": "401–404. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -392,41 +515,67 @@
         "question": "Tecvid ilminin temel konusu nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Tarihî savaşları yazmak"
-          },
-          {
-            "id": "o2",
-            "text": "Miras oranlarını hesaplamak"
-          },
-          {
             "id": "o3",
-            "text": "Arazileri ölçmek"
+            "text": "Âyetlerin iniş sebeplerini araştırmak"
           },
           {
             "id": "o4",
-            "text": "Kur'an harflerini usulüne uygun okumak"
+            "text": "Kur’an harflerini doğru seslendirmek"
+          },
+          {
+            "id": "o1",
+            "text": "Âyetlerin anlamlarını açıklamak"
+          },
+          {
+            "id": "o2",
+            "text": "Mushafın yazımını belirlemek"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Kur'an harflerini usulüne uygun okumak",
+        "correctAnswer": "Kur’an harflerini doğru seslendirmek",
         "explanation": "TDV Tecvid maddesi Kur'an harflerini doğru mahreç ve sıfatlarıyla, belirlenmiş okuma kurallarına uygun seslendirmeyi ele alır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "Tecvid ilminin kapsamı",
+            "locator": "96–104. satırlar",
             "supports": "TDV Tecvid maddesi Kur'an harflerini doğru mahreç ve sıfatlarıyla, belirlenmiş okuma kurallarına uygun seslendirmeyi ele alır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-ana",
+        "reviewedCandidateSha256": "40fb0c1278493fe2ededee6c42a70c7d7b23f9ee19d7011fe1dbe963794bfc6c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Savaş/miras/arazi gibi üç uzak konunun yerine dört Kur’an çalışma alanı. Mahreç, sıfat ve okuyuş kuralları tecvidin doğru seslendirme hedefini belirler.",
+        "optionReview": {
+          "o3": "Esbâb-ı nüzûl konusu.",
+          "o4": "Tecvidin temel hedefi.",
+          "o1": "Tefsirin hedefi.",
+          "o2": "Resm-i mushafın konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
+          "locator": "96–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -476,20 +625,20 @@
         "question": "Tecvidde 'mahreç' neyle ilgilidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kitapların cildiyle"
+            "id": "o2",
+            "text": "Harflerin kalınlık sıfatıyla"
           },
           {
-            "id": "o2",
-            "text": "Bir okulun binasıyla"
+            "id": "o4",
+            "text": "Harflerin birleşme biçimiyle"
           },
           {
             "id": "o3",
             "text": "Harflerin çıkış yeriyle"
           },
           {
-            "id": "o4",
-            "text": "Âyetlerin yazıldığı kağıtla"
+            "id": "o1",
+            "text": "Harflerin uzatma süresiyle"
           }
         ],
         "correctOptionId": "o3",
@@ -497,20 +646,46 @@
         "explanation": "Tecvid ilmi harflerin mahreç ve sıfatlarını inceler; mahreç, sesin ağız ve boğaz gibi ses organlarından çıkış yerini ifade eder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "Mahreç ve sıfat",
+            "locator": "96–104. satırlar",
             "supports": "Tecvid ilmi harflerin mahreç ve sıfatlarını inceler; mahreç, sesin ağız ve boğaz gibi ses organlarından çıkış yerini ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-mahrec",
+        "reviewedCandidateSha256": "53c7494200390ddec5ccf61a95f4e4c0510ed7aecc4f1f149306a8d5e3e2acd1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Cilt/okul/kâğıt gibi ses dışı nesneler yerine dört seslendirme özelliği. Mahreç ile sıfat/med/idgamın tanımsal farkı gerekir.",
+        "optionReview": {
+          "o2": "Ses sıfatı.",
+          "o4": "İdgam türü ses ilişkisi.",
+          "o3": "Mahrecin çıkış yeri.",
+          "o1": "Med süresi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
+          "locator": "96–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -560,41 +735,67 @@
         "question": "Kur'an okuyuşunda 'vakf' terimi neye işaret eder?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mushaf sayfasını çoğaltmaya"
-          },
-          {
-            "id": "o2",
-            "text": "Okumayı uygun yerde durdurmaya"
-          },
-          {
             "id": "o3",
-            "text": "Harfleri uzatmadan okumaya"
+            "text": "Harfleri kaynaştırmak"
           },
           {
             "id": "o4",
-            "text": "Harfleri ters çevirmeye"
+            "text": "Okuyuşu bağlayarak sürdürmek"
+          },
+          {
+            "id": "o2",
+            "text": "Uygun yerde durmak"
+          },
+          {
+            "id": "o1",
+            "text": "Sesi ölçülü uzatmak"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Okumayı uygun yerde durdurmaya",
+        "correctAnswer": "Uygun yerde durmak",
         "explanation": "TDV Tecvid maddesi vakf ve vaslı doğru okuyuşa ait kurallar arasında sayar; vakf okumada duraklamayı ifade eder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "Vakf ve vasl",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+            "locator": "96–103. satırlar",
             "supports": "TDV Tecvid maddesi vakf ve vaslı doğru okuyuşa ait kurallar arasında sayar; vakf okumada duraklamayı ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-vakf",
+        "reviewedCandidateSha256": "16598275fcdc79978446d7369de3b6201b784a12b2b57a54f312eb160826b463",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Harfleri ters çevirme/kopyalama yerine dört gerçek okuyuş eylemi. Vakf nefes alacak süre duruş, vasl bağlayış; sekte nefessiz duruştur, yanlış şıkta eş anlamlı verilmedi.",
+        "optionReview": {
+          "o3": "İdgamın katması.",
+          "o4": "Vaslın sürdürmesi.",
+          "o2": "Vakfın duruşu.",
+          "o1": "Medin uzatması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -644,20 +845,20 @@
         "question": "Kur'an tilavetinde 'vasl' kavramı neyi anlatır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Okuyuşu bağlayarak sürdürmek"
-          },
-          {
             "id": "o2",
-            "text": "Sadece fısıldamak"
+            "text": "Uygun yerde duraklayarak okumak"
           },
           {
             "id": "o3",
-            "text": "Geriye doğru okumak"
+            "text": "Sesi ölçüsünce uzatarak okumak"
           },
           {
             "id": "o4",
-            "text": "Hiç durmadan ezberlemek"
+            "text": "Harfleri kaynaştırarak okumak"
+          },
+          {
+            "id": "o1",
+            "text": "Okuyuşu bağlayarak sürdürmek"
           }
         ],
         "correctOptionId": "o1",
@@ -665,20 +866,46 @@
         "explanation": "Tecvidde vakf ve vasl kavramları duruş ve bağlayarak okumaya ilişkin kurallardır; vasl devam ederek okumayı belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "Vakf ile vasl",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+            "locator": "96–103. satırlar",
             "supports": "Tecvidde vakf ve vasl kavramları duruş ve bağlayarak okumaya ilişkin kurallardır; vasl devam ederek okumayı belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-vasl",
+        "reviewedCandidateSha256": "1f667fb537ffa6804ab41a07175f2e94ce7820b763f7d6999ff7583478b2d04b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Fısıltı/ters okuma/hiç durmama gibi uç çeldiriciler yerine dört gerçek tilavet işlemi. Vaslın sesi-nefesi kesmeden kelime bağlaması, her harfi kaynaştırma değildir.",
+        "optionReview": {
+          "o2": "Vakfın duruşu.",
+          "o3": "Medin uzatması.",
+          "o4": "İdgamın iki harfi birleştirmesi.",
+          "o1": "Vaslın kelimeler arasında bağlaması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -725,44 +952,70 @@
         ]
       },
       "after": {
-        "question": "Tecvidde idgam genel olarak hangi olayı ifade eder?",
+        "question": "Tecvidde idgamın temel anlamı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sözü tamamen terk etmek"
-          },
-          {
-            "id": "o2",
-            "text": "Harfleri sırasından çıkarmak"
-          },
-          {
             "id": "o3",
-            "text": "Sayfa numarasını değiştirmek"
+            "text": "Bir harfi genizden seslendirmek"
           },
           {
             "id": "o4",
-            "text": "Bir harfi diğerine katıp kaynaştırmak"
+            "text": "Bir harfi diğerine kaynaştırmak"
+          },
+          {
+            "id": "o1",
+            "text": "Bir harfin sesini uzatmak"
+          },
+          {
+            "id": "o2",
+            "text": "Bir yerde okuyuşu durdurmak"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Bir harfi diğerine katıp kaynaştırmak",
+        "correctAnswer": "Bir harfi diğerine kaynaştırmak",
         "explanation": "TDV Tecvid maddesi idgamı seslendirmeyle ilgili kurallar arasında anar; idgam uygun şartlarda iki harfin kaynaştırılarak okunmasıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "İdgam konusu",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/idgam",
+            "locator": "96–99 ve 112. satırlar",
             "supports": "TDV Tecvid maddesi idgamı seslendirmeyle ilgili kurallar arasında anar; idgam uygun şartlarda iki harfin kaynaştırılarak okunmasıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-idgam",
+        "reviewedCandidateSha256": "9a5e95dfaf276f99e1aebd18db8ae6843885af7f7f9191258f0a6a2d82633be0",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Sayfa değiştirme/sözü terk etme gibi ilgisiz işlemler yerine dört ses işlemi. Gunne bazı idgamda eşlik eder fakat idgamın tanımı değildir; çift doğru oluşturulmadı.",
+        "optionReview": {
+          "o3": "Gunne; bazı idgama eşlik edebilir.",
+          "o4": "İdgamın tanımı.",
+          "o1": "Medin işlemi.",
+          "o2": "Vakfın işlemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/idgam",
+          "locator": "96–99 ve 112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -812,20 +1065,20 @@
         "question": "Kur'an okuyuşunda 'med' terimi hangi uygulamayla ilgilidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Noktaları değiştirmek"
+            "id": "o2",
+            "text": "İki sesi kaynaştırarak okumak"
           },
           {
-            "id": "o2",
-            "text": "Sadece alçak sesle okumak"
+            "id": "o4",
+            "text": "Durak yerinde soluklanmak"
           },
           {
             "id": "o3",
             "text": "Sesi uzatarak okumak"
           },
           {
-            "id": "o4",
-            "text": "Bütün harfleri silmek"
+            "id": "o1",
+            "text": "Sesi kısa tutarak okumak"
           }
         ],
         "correctOptionId": "o3",
@@ -833,13 +1086,13 @@
         "explanation": "Tecvid ilminin konuları arasında med ve kasr yer alır; med belirli harflerde sesin ölçülü uzatılmasını anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "Med ve kasr",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/med",
+            "locator": "96–103. satırlar",
             "supports": "Tecvid ilminin konuları arasında med ve kasr yer alır; med belirli harflerde sesin ölçülü uzatılmasını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -849,14 +1102,35 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-med",
+        "reviewedCandidateSha256": "fd957a9c97e11276857dc3972051d7c697d86a4793d36a5bf39507f12eaaf3ac",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Harf silme/nokta değiştirme gibi üç ilgisiz veya kötü işlem yerine dört gerçek tilavet uygulaması. Medin uzatması, kasr/idgam/vakf ayrımını gerektirir.",
+        "optionReview": {
+          "o2": "İdgamın kaynaştırması.",
+          "o4": "Vakfın nefesli duruşu.",
+          "o3": "Medin uzatması.",
+          "o1": "Kasrın sınırlandırması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/med",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -903,44 +1177,70 @@
         ]
       },
       "after": {
-        "question": "Tecvidde 'kasr' kavramı 'med' ile ilişkili olarak neyi anlatır?",
+        "question": "Tecvidde kasr, tabii medle ilişkili olarak nasıl bir okuyuşu anlatır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sûreleri ters sıralamak"
+            "id": "o2",
+            "text": "Tabii medde ilave yapmadan okumak"
           },
           {
-            "id": "o2",
-            "text": "Uzatmayı sınırlı tutmak veya kısa okumak"
+            "id": "o1",
+            "text": "Harflerin sesini genizden vermek"
           },
           {
             "id": "o3",
-            "text": "Kelimenin harflerini değiştirmek"
+            "text": "İki harfi birbirine kaynaştırmak"
           },
           {
             "id": "o4",
-            "text": "Okuyuşu bütünüyle bırakmak"
+            "text": "Kelime sonunda nefes alıp durmak"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Uzatmayı sınırlı tutmak veya kısa okumak",
-        "explanation": "Med uzatmayı, kasr ise uzatma olmadan veya kısa miktarda okumayı anlatan ilgili terimlerdir.",
+        "correctAnswer": "Tabii medde ilave yapmadan okumak",
+        "explanation": "TDV Med maddesi, ilave med sebebi olmadığında tabii medle yapılan okuyuşu kasr diye de adlandırır. Burada kasr, tabii med uzunluğuna ilave yapmadan okumaktır; uzun sesin bütünüyle silinmesi anlamına gelmez.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-            "locator": "Kasr kavramı",
-            "supports": "Med uzatmayı, kasr ise uzatma olmadan veya kısa miktarda okumayı anlatan ilgili terimlerdir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/med",
+            "locator": "96–103. satırlar",
+            "supports": "TDV Med maddesi, ilave med sebebi olmadığında tabii medle yapılan okuyuşu kasr diye de adlandırır. Burada kasr, tabii med uzunluğuna ilave yapmadan okumaktır; uzun sesin bütünüyle silinmesi anlamına gelmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q58-tecvid-kasir",
+        "reviewedCandidateSha256": "f5f3da960de3cf51f922f0cdfd6331aba4b96d7055841da50acdb260f52e18bb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç bozucu ilgisiz işleme karşı tek çok uzun açıklama kaldırıldı. Önceki açıklamanın uzatma olmadan sözü tabii meddi de sıfırlar izlenimi verdiğinden düzeltildi: kasr tabii uzunluğa ilave yapmamak olabilir.",
+        "optionReview": {
+          "o2": "97. satırın tabii med/kasr ilişkisi.",
+          "o1": "Gunne.",
+          "o3": "İdgam.",
+          "o4": "Vakf."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/med",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -987,23 +1287,23 @@
         ]
       },
       "after": {
-        "question": "Beytülhikme hangi ilmî faaliyetleriyle tanınır?",
+        "question": "TDV’de Beytülhikme’nin tanımında hangi iki faaliyet öne çıkar?",
         "options": [
           {
-            "id": "o1",
-            "text": "Tercüme ve araştırma"
-          },
-          {
             "id": "o2",
-            "text": "Deniz ticareti"
+            "text": "Hadis rivayeti ve fetva"
           },
           {
             "id": "o3",
-            "text": "Madencilik"
+            "text": "Şiir öğretimi ve hitabet"
           },
           {
             "id": "o4",
-            "text": "Ordu komutanlığı"
+            "text": "Fıkıh öğretimi ve yargılama"
+          },
+          {
+            "id": "o1",
+            "text": "Tercüme ve araştırma"
           }
         ],
         "correctOptionId": "o1",
@@ -1011,20 +1311,46 @@
         "explanation": "TDV Beytülhikme maddesi bu kurumu farklı dillerdeki eserlerin tercüme edildiği ve yüksek düzeyde araştırmaların yürütüldüğü merkez olarak tanıtır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — beytulhikme",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-            "locator": "Beytülhikme tanımı",
+            "locator": "96–117. satırlar",
             "supports": "TDV Beytülhikme maddesi bu kurumu farklı dillerdeki eserlerin tercüme edildiği ve yüksek düzeyde araştırmaların yürütüldüğü merkez olarak tanıtır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-amac",
+        "reviewedCandidateSha256": "c7198384e617e01b4b71b744145b794f1f0d5c720d48b1f99f548a4dc2e23f04",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İlmî faaliyet diye sorup üç askerî/ticarî alan vermek yerine dört gerçek ilim/öğretim faaliyeti. Kurumun tercüme ve araştırma niteliği hedef; diğer ilimler değersiz sayılmaz.",
+        "optionReview": {
+          "o2": "Başka ilmî faaliyetler.",
+          "o3": "Başka öğretim faaliyetleri.",
+          "o4": "Başka ilmî/kamusal faaliyetler.",
+          "o1": "Kurumun belirgin faaliyetleri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "96–117. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1107,8 +1433,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-sehir",
+        "reviewedCandidateSha256": "1103c507fecb0e85b56fbb65d98f3b55d8b486b86979905a9508e30f1de1d305",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek İslâm şehri. Bağdat kurumu Kûfe/Kurtuba ile karışabilir; Kayrevan’daki başka Beytülhikme bu açık Bağdat kurumu sorusuna ikinci doğru değildir.",
+        "optionReview": {
+          "o1": "Başka şehir.",
+          "o2": "Başka şehir.",
+          "o3": "Başka şehir.",
+          "o4": "96–103’ün Bağdat merkezi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "96–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1191,8 +1541,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-mamun",
+        "reviewedCandidateSha256": "fd37bb3adf81c9032906db9f167bc99eadc863f2707a6c294d2dfbfb076912e6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Abbâsî halifesi. Kuruluşun tartışması 96’da korunur; 107’de daha ileri akademi niteliğine kavuşturan Me’mûn’dur.",
+        "optionReview": {
+          "o1": "Başka Abbâsî halifesi.",
+          "o2": "Başka Abbâsî halifesi.",
+          "o3": "107. satırın geliştiricisi.",
+          "o4": "Başka Abbâsî halifesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "96 ve 103–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1243,19 +1617,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mu'tezıd"
+            "text": "Mehdî"
+          },
+          {
+            "id": "o3",
+            "text": "Hârûnürreşîd"
+          },
+          {
+            "id": "o4",
+            "text": "Me’mûn"
           },
           {
             "id": "o2",
             "text": "Mansûr"
-          },
-          {
-            "id": "o3",
-            "text": "Ömer b. Abdülazîz"
-          },
-          {
-            "id": "o4",
-            "text": "Hâkim-Biemrillâh"
           }
         ],
         "correctOptionId": "o2",
@@ -1263,20 +1637,46 @@
         "explanation": "TDV Beytülhikme maddesine göre Mansûr'un saray kütüphanesi Hizânetü'l-hikme, sonraki Beytülhikme'nin çekirdeğini oluşturmuştur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — beytulhikme",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-            "locator": "Mansûr'un Hizânetü'l-hikme'si",
+            "locator": "100–107. satırlar",
             "supports": "TDV Beytülhikme maddesine göre Mansûr'un saray kütüphanesi Hizânetü'l-hikme, sonraki Beytülhikme'nin çekirdeğini oluşturmuştur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-mansur",
+        "reviewedCandidateSha256": "6ed892c5cf7159a162f1d66b58f3f312596d278ab06cd4af52a4a55187675850",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Emevî/Fâtımî halifelerine karşı tek erken Abbâsî yerine dört erken Abbâsî halifesi. İlk kuruluş tartışması ile çekirdek saray kütüphanesi birbirinden ayrılır.",
+        "optionReview": {
+          "o1": "Mansûr’dan sonraki halife.",
+          "o3": "Kütüphaneyi büyüten sonraki halife.",
+          "o4": "Akademi niteliğini geliştiren halife.",
+          "o2": "103. satırın çekirdeği kuran halifesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "100–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1331,15 +1731,15 @@
           },
           {
             "id": "o2",
-            "text": "Müezzin"
+            "text": "Mütercim"
           },
           {
             "id": "o3",
-            "text": "Muhtesip"
+            "text": "Mücellit"
           },
           {
             "id": "o4",
-            "text": "Mücâhid"
+            "text": "Müellif"
           }
         ],
         "correctOptionId": "o1",
@@ -1347,20 +1747,46 @@
         "explanation": "TDV Beytülhikme maddesi yazılan metinleri kopyalayan müstensihleri, mütercim ve mücellitlerle birlikte kurumun kadrosunda sayar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — beytulhikme",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-            "locator": "Beytülhikme'de müstensihler",
+            "locator": "110–112. satırlar",
             "supports": "TDV Beytülhikme maddesi yazılan metinleri kopyalayan müstensihleri, mütercim ve mücellitlerle birlikte kurumun kadrosunda sayar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-gorev",
+        "reviewedCandidateSha256": "1180a5e4c505048bc8390dd3537bc143621364b79157258297471c59725fee4e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç ibadet/asker/kamu rolü yerine dört kitap üretim görevi. Verrâk da istinsah edebildiğinden yanlış şık yapılmadı; yazarı/çevirmeni/ciltçiyi müstensihten ayırır.",
+        "optionReview": {
+          "o1": "Kopyalayan görevli.",
+          "o2": "Çeviren görevli.",
+          "o3": "Ciltleyen görevli.",
+          "o4": "Yazan/telif eden görevli."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "110–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1443,8 +1869,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-benimusa",
+        "reviewedCandidateSha256": "cf3ee32505f388b84abbb0f58a281c9607ac6380509418d07c1e1fc1e97b3b4d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Benî adlı gerçek topluluk. Benî Mûsâ’nın Muhammed/Ahmed/Hasan adlı üç bilim kardeşi olduğu 108’de açık; Benî Şâkir aynı aileyle örtüşebileceğinden yeni yanlış şık olarak eklenmedi.",
+        "optionReview": {
+          "o1": "Başka aile/topluluk.",
+          "o2": "Başka aile/topluluk.",
+          "o3": "Başka aile/topluluk.",
+          "o4": "108. satırın üç kardeşi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "107–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1495,19 +1945,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "1453"
+            "text": "1219"
           },
           {
             "id": "o2",
-            "text": "1517"
+            "text": "1243"
+          },
+          {
+            "id": "o4",
+            "text": "1260"
           },
           {
             "id": "o3",
             "text": "1258"
-          },
-          {
-            "id": "o4",
-            "text": "1071"
           }
         ],
         "correctOptionId": "o3",
@@ -1515,20 +1965,46 @@
         "explanation": "TDV Beytülhikme maddesi kurumun 1258 yılında Hülâgû'nun Bağdat'ı ele geçirmesi sırasında yıkıldığını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — beytulhikme",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-            "locator": "Beytülhikme'nin yıkılışı",
+            "locator": "117. satır",
             "supports": "TDV Beytülhikme maddesi kurumun 1258 yılında Hülâgû'nun Bağdat'ı ele geçirmesi sırasında yıkıldığını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-yikil",
+        "reviewedCandidateSha256": "a307ad9947a972a6568d064b77c158fd4fe58a8c720577351a39cb50328ec5ca",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç çok farklı çağ dönüm noktasına karşı tek Moğol çağı yılı yerine dört yakın 13. yüzyıl yılı. 1258 doğrudan kaynaktaki yıkılış yılı.",
+        "optionReview": {
+          "o1": "Başka yakın yıl.",
+          "o2": "Başka yakın yıl.",
+          "o4": "Başka yakın yıl.",
+          "o3": "Kaynağın yıkılış yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "117. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1575,44 +2051,70 @@
         ]
       },
       "after": {
-        "question": "Beytülhikme çevresindeki tercüme faaliyetlerinde aşağıdaki dillerden hangisi kullanılmıştır?",
+        "question": "Beytülhikme çevresinde Grekçe, Süryânîce ve Farsça eserler ağırlıklı olarak hangi dile çevrildi?",
         "options": [
           {
             "id": "o1",
-            "text": "Fince"
-          },
-          {
-            "id": "o2",
-            "text": "Grekçe"
+            "text": "Sanskritçe"
           },
           {
             "id": "o3",
-            "text": "Japonca"
+            "text": "Latince"
           },
           {
             "id": "o4",
-            "text": "İsveççe"
+            "text": "Kıptîce"
+          },
+          {
+            "id": "o2",
+            "text": "Arapça"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Grekçe",
-        "explanation": "TDV Beytülhikme maddesi Grekçe, Süryânîce, Farsça ve Sanskritçe gibi dillerden Arapçaya tercümeler yapıldığını bildirir.",
+        "correctAnswer": "Arapça",
+        "explanation": "Beytülhikme çevresinde Grekçe, Süryânîce, Farsça ve Sanskritçe gibi dillerdeki eserler Arapça’ya çevrildi. Bazı Grekçe eserler önce Süryânîce’ye, sonra Arapça’ya aktarılıyordu; soru başlıca hedef dili sorar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — beytulhikme",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-            "locator": "Tercüme dilleri",
-            "supports": "TDV Beytülhikme maddesi Grekçe, Süryânîce, Farsça ve Sanskritçe gibi dillerden Arapçaya tercümeler yapıldığını bildirir.",
+            "locator": "98–112. satırlar",
+            "supports": "Beytülhikme çevresinde Grekçe, Süryânîce, Farsça ve Sanskritçe gibi dillerdeki eserler Arapça’ya çevrildi. Bazı Grekçe eserler önce Süryânîce’ye, sonra Arapça’ya aktarılıyordu; soru başlıca hedef dili sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-beyt-diller",
+        "reviewedCandidateSha256": "e67f53af3faab9a4ab3d30020f5ed4f4b48d04f9dbf08b29a3f9685cb87c9f11",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Fince/Japonca/İsveççe gibi üç ilgisiz seçenek yerine dönemin dört gerçek yazı/ilim dili. Süryânîce ara dil de olabildiğinden hedef dil açıkça ağırlıklı nihai Arapça çeviridir.",
+        "optionReview": {
+          "o1": "Kaynak olarak kullanılan başka ilim dili.",
+          "o3": "Dönemin başka yazı/ilim dili.",
+          "o4": "Dönemin başka yazı/ilim dili.",
+          "o2": "98, 103 ve 112’nin hedef dili."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/beytulhikme",
+          "locator": "98–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1695,8 +2197,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-evliya-cilt",
+        "reviewedCandidateSha256": "0d2f3a6c1042db9d8ebb4ace1826f7589d5bc15c8dfa2e0e83450ff3e8c9c02d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört cilt sayısı. Kaynak I İstanbul ve X Kahire uç ciltleri ile ara ciltlerin tümünü sayar; bütün eser on cilt, bir kısım baskının fizikî fasikül sayısıyla karıştırılmaz.",
+        "optionReview": {
+          "o1": "Eserin on cildi.",
+          "o2": "Başka cilt sayısı.",
+          "o3": "Başka cilt sayısı.",
+          "o4": "Başka cilt sayısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
+          "locator": "96–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },

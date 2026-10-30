@@ -3,18 +3,18 @@
   "activeBankVersion": 72,
   "candidateBankVersion": 73,
   "total": 1500,
-  "individuallyReviewed": 1021,
-  "pendingReview": 479,
-  "sourceComparedThisRound": 915,
+  "individuallyReviewed": 1120,
+  "pendingReview": 380,
+  "sourceComparedThisRound": 1014,
   "blocked": 1,
   "flaggedBefore": 336,
-  "flaggedAfter": 157,
+  "flaggedAfter": 161,
   "previousPriorityCount": 220,
-  "revisedAgainstV72": 760,
-  "stemsChangedAgainstV72": 336,
-  "correctAnswerWordingChangedAgainstV72": 364,
-  "explanationsChangedAgainstV72": 179,
-  "distractorsOnlyChangedAgainstV72": 254,
+  "revisedAgainstV72": 803,
+  "stemsChangedAgainstV72": 366,
+  "correctAnswerWordingChangedAgainstV72": 386,
+  "explanationsChangedAgainstV72": 190,
+  "distractorsOnlyChangedAgainstV72": 266,
   "automaticPatternCounts": {
     "three-restrictive-distractors": {
       "before": 25,
@@ -56,54 +56,54 @@
   "byCategory": {
     "quran_dualar": {
       "total": 213,
-      "individuallyReviewed": 173,
-      "pendingReview": 40,
-      "sourceComparedThisRound": 146,
+      "individuallyReviewed": 185,
+      "pendingReview": 28,
+      "sourceComparedThisRound": 158,
       "blocked": 1,
       "flaggedBefore": 47,
-      "flaggedAfter": 21
+      "flaggedAfter": 23
     },
     "siyer_sahabe": {
       "total": 313,
-      "individuallyReviewed": 197,
-      "pendingReview": 116,
-      "sourceComparedThisRound": 173,
+      "individuallyReviewed": 223,
+      "pendingReview": 90,
+      "sourceComparedThisRound": 199,
       "blocked": 0,
       "flaggedBefore": 45,
-      "flaggedAfter": 30
+      "flaggedAfter": 34
     },
     "peygamberler": {
       "total": 271,
-      "individuallyReviewed": 197,
-      "pendingReview": 74,
-      "sourceComparedThisRound": 187,
+      "individuallyReviewed": 213,
+      "pendingReview": 58,
+      "sourceComparedThisRound": 203,
       "blocked": 0,
       "flaggedBefore": 81,
-      "flaggedAfter": 47
+      "flaggedAfter": 46
     },
     "fikih": {
       "total": 161,
-      "individuallyReviewed": 129,
-      "pendingReview": 32,
-      "sourceComparedThisRound": 115,
+      "individuallyReviewed": 131,
+      "pendingReview": 30,
+      "sourceComparedThisRound": 117,
       "blocked": 0,
       "flaggedBefore": 40,
       "flaggedAfter": 16
     },
     "iman_ahlak": {
       "total": 260,
-      "individuallyReviewed": 157,
-      "pendingReview": 103,
-      "sourceComparedThisRound": 150,
+      "individuallyReviewed": 187,
+      "pendingReview": 73,
+      "sourceComparedThisRound": 180,
       "blocked": 0,
       "flaggedBefore": 85,
-      "flaggedAfter": 24
+      "flaggedAfter": 23
     },
     "tarih_medeniyet": {
       "total": 282,
-      "individuallyReviewed": 168,
-      "pendingReview": 114,
-      "sourceComparedThisRound": 144,
+      "individuallyReviewed": 181,
+      "pendingReview": 101,
+      "sourceComparedThisRound": 157,
       "blocked": 0,
       "flaggedBefore": 38,
       "flaggedAfter": 19
@@ -112,30 +112,30 @@
   "byDifficulty": {
     "easy": {
       "total": 475,
-      "individuallyReviewed": 339,
-      "pendingReview": 136,
-      "sourceComparedThisRound": 305,
+      "individuallyReviewed": 387,
+      "pendingReview": 88,
+      "sourceComparedThisRound": 353,
       "blocked": 1,
       "flaggedBefore": 113,
       "flaggedAfter": 44
     },
     "medium": {
       "total": 789,
-      "individuallyReviewed": 501,
-      "pendingReview": 288,
-      "sourceComparedThisRound": 450,
+      "individuallyReviewed": 544,
+      "pendingReview": 245,
+      "sourceComparedThisRound": 493,
       "blocked": 0,
       "flaggedBefore": 186,
-      "flaggedAfter": 89
+      "flaggedAfter": 91
     },
     "hard": {
       "total": 236,
-      "individuallyReviewed": 181,
-      "pendingReview": 55,
-      "sourceComparedThisRound": 160,
+      "individuallyReviewed": 189,
+      "pendingReview": 47,
+      "sourceComparedThisRound": 168,
       "blocked": 0,
       "flaggedBefore": 37,
-      "flaggedAfter": 24
+      "flaggedAfter": 26
     }
   },
   "styleOnlyGuesser": {
