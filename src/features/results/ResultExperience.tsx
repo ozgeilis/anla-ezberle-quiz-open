@@ -261,18 +261,33 @@ export function ResultExperience({
             <View
               style={{
                 flexDirection: "row",
+                flexWrap: "wrap",
                 justifyContent: "space-between",
                 gap: 6,
                 alignItems: "center",
                 marginBottom: 12,
               }}
             >
-              <Txt size={14} color={ink} weight="heavy">
-                Skorun{" "}
-                <Txt size={24} weight="heavy" color={ink}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                  alignItems: "baseline",
+                  gap: 6,
+                }}
+              >
+                <Txt size={14} color={ink} weight="heavy">
+                  Skorun
+                </Txt>
+                <Txt
+                  testID="result-score-value"
+                  size={24}
+                  weight="heavy"
+                  color={ink}
+                >
                   {score.toLocaleString("tr-TR")}
                 </Txt>
-              </Txt>
+              </View>
               <Txt size={12} color={muted} weight="bold">
                 {xp} XP
               </Txt>
