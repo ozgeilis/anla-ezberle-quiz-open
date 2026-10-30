@@ -22,7 +22,7 @@ Parola özel oyun tablosunda veya uygulama logunda tutulmaz; doğrulama Auth sa�
 - **Deletion:** mevcut güvenli akış Auth/ilişkili kişisel verileri siler; diğer oyuncunun puanını korur. Bağımsız yerel solo geçmişi ayrıca korunur ve açıklanır.
 - **Religious beliefs:** kullanıcının inancı için form alanı yok. Quiz yanıtlarından böyle bir profil çıkarılmadığı işletme açısından teyit edilmeli; uygulamanın dinî konusu bu verileri beyan dışı bırakmaz.
 - **Advertising ID / microphone / location:** reklam veya kayıt işlevi yok; devralınan izinler gerçek release manifestinde ayrıca kontrol edilmeli.
-- **Children:** yaş ayrımı, yetişkin sosyal kontrolü ve kişisel bilgi paylaşımı öncesi yetişkin işlemi doğrulanmadı. Eksikler giderilmeden Families uygunluğu veya çocuk verisi işlemenin onaylı olduğu beyan edilmez.
+- **Hedef kitle:** ürün sahibinin son açıklaması ana hedefin yetişkinler olduğu, uygulamanın çocuklara yönelik tasarlanmadığı ve okuyabilen çocukların da oynayabileceğidir. Bu açıklama otomatik çocuk-hedefli beyanına dönüştürülmez. Play yaş grupları ve mevcut çocuk kategorisi/görsellerinin beyanla uyumu henüz kesinleştirilmedi. Çocuk yaş grupları ayrıca hedeflenecekse yaş ayrımı, uygun SDK/veri işleme ve sosyal yetişkin kontrolleri doğrulanmadan Families uygunluğu beyan edilmez.
 
 ## Canlı kontrol ve iletişim
 

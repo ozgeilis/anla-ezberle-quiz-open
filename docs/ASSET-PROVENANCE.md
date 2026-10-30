@@ -14,3 +14,5 @@ Uygulama için gerekli yerel assetler korunur. `design/references/quiz-ui-refere
 Üretim kaydı, üçüncü taraf hakları bakımından münhasırlık veya bağımsız hukuki doğrulama garantisi değildir. Bu taşıma yeni bir proje lisansı ya da görsel yeniden dağıtım izni üretmez. İnceleme tamamlanmadan PUBLIC uygunluk onayı verilmemelidir.
 
 - `assets/images/auth/google-g.png`: Google’ın resmî G işareti, yalnız Google ile Giriş düğmesinde. Renk/oranlar değiştirilmedi. Kaynak ve ticari marka kullanım sınırı `docs/licenses/Google-sign-in-mark.md` içinde; mevcut marka/kategori görselleri değişmedi.
+
+- `store/google-play/tr-TR/feature-graphic-1024x500.png`: 30 Ekim 2026 kapalı test hazırlığında mevcut onaylı mağaza ikonu değiştirilmeden kullanılarak hazırlanan tanıtım kompozisyonu. Manrope, ortak teal/zümrüt/altın renkleri ve gerçek uygulama adıyla kod üzerinden yerleştirildi; yeni illüstrasyon, oyun ekranı veya lisans onayı değildir. Orijinal ikon ve uygulamadaki resimler değişmedi; Console'a gönderilmedi.
