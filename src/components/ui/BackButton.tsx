@@ -1,7 +1,8 @@
 import React from "react";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { IconButton } from "./Button";
 export function BackButton({ onPress }: { onPress?: () => void }) {
+  const router = useRouter();
   const back = () => {
     if (router.canGoBack()) router.back();
     else router.replace("/");

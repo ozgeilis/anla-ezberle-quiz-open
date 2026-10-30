@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Linking, View } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { Avatar } from "../../components/game/Artwork";
 import { Button, Card, Icon, Tap, Txt } from "../../components/ui";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
@@ -57,8 +57,6 @@ export const settingSections = {
   },
 } as const;
 export type SettingSection = keyof typeof settingSections;
-const back = () =>
-  router.canGoBack() ? router.back() : router.replace("/settings");
 export function SettingsScreen({ section }: { section?: string }) {
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const { session } = useOnlineAuth();
@@ -82,9 +80,12 @@ function SettingsContent({
   section?: string;
   setFeedback: React.Dispatch<React.SetStateAction<Feedback | null>>;
 }) {
+  const router = useRouter();
   const { data } = useGame(),
     identity = usePlayerIdentity(),
     t = useTheme();
+  const back = () =>
+    router.canGoBack() ? router.back() : router.replace("/settings");
   const p = progress(data.games);
   if (section === "theme")
     return (

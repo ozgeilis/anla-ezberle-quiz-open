@@ -1,27 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { ScrollView, View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { HomeTitlePlaque } from "../../components/game/HomeTitlePlaque";
-import { Cup } from "../../components/game/Artwork";
 import {
   PlayerHeader,
   ReferenceHero,
 } from "../../components/game/ReferenceHero";
-import {
-  Button,
-  Card,
-  Dialog,
-  Icon,
-  Tap,
-  TextAction,
-  Txt,
-} from "../../components/ui";
+import { Button, Dialog, TextAction, Txt } from "../../components/ui";
 import { useAchievements } from "../achievements/AchievementProvider";
 import { dateKey, stats } from "../../domain/game/engine";
 import { useGameLibrary } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
+import { HomeActionCard, HomePlayButton } from "./HomeActionCard";
 
 export function HomeScreen() {
+  const router = useRouter();
   const { data, start } = useGameLibrary(),
     theme = useTheme(),
     { fontScale } = useWindowDimensions();
@@ -49,23 +42,25 @@ export function HomeScreen() {
         <ReferenceHero>
           <PlayerHeader notifications />
           <HomeTitlePlaque dense />
-          <Button
-            title="Oyuna Başla"
-            icon="play"
-            trailing="chevron-right"
-            variant="mustard"
-            onPress={() => router.push("/categories")}
-          />
+          <HomePlayButton onPress={() => router.push("/categories")} />
         </ReferenceHero>
         <View style={{ paddingHorizontal: 16, gap: 20 }}>
           <View
             style={{
-              flexDirection: fontScale > 1.5 ? "column" : "row",
+              flexDirection: fontScale > 1.3 ? "column" : "row",
               gap: 12,
             }}
           >
-            <Tap
-              fill
+            <HomeActionCard
+              id="daily"
+              title="Günün Yarışması"
+              icon="calendar"
+              tone="gold"
+              description={
+                daily
+                  ? `${stats(daily).score} puan · Tamamlandı`
+                  : "Bugünün yarışmasına katıl"
+              }
               label={
                 daily
                   ? "Günün Yarışması tamamlandı, skor geçmişini gör"
@@ -79,41 +74,16 @@ export function HomeScreen() {
                   });
                 else if (start("daily")) router.push("/quiz");
               }}
-            >
-              <Card style={{ flex: 1, gap: 8, padding: 12 }}>
-                <Cup size={28} />
-                <Txt size={14} weight="semibold">
-                  Günün Yarışması
-                </Txt>
-                <Txt size={11} color={theme.muted}>
-                  {daily
-                    ? `${stats(daily).score} puan · Tamamlandı`
-                    : "10 soru · Günlük keşif"}
-                </Txt>
-              </Card>
-            </Tap>
-            <Tap
-              fill
+            />
+            <HomeActionCard
+              id="social"
+              title="Arkadaşlarınla Oyna"
+              icon="users"
+              tone="blue"
+              description="Oda kur veya katıl"
               label="Arkadaşlarınla Oyna"
               onPress={() => router.push("/live")}
-            >
-              <Card
-                style={{
-                  flex: 1,
-                  gap: 8,
-                  padding: 12,
-                  backgroundColor: theme.mintSurface,
-                }}
-              >
-                <Icon name="users" size={24} color={theme.accent} />
-                <Txt size={14} weight="semibold">
-                  Arkadaşlarınla Oyna
-                </Txt>
-                <Txt size={11} color={theme.muted}>
-                  Oda kur veya katıl
-                </Txt>
-              </Card>
-            </Tap>
+            />
           </View>
           <View style={{ gap: 8 }}>
             <Txt size={18} weight="bold" accessibilityRole="header">
@@ -121,12 +91,16 @@ export function HomeScreen() {
             </Txt>
             <View
               style={{
-                flexDirection: fontScale > 1.5 ? "column" : "row",
+                flexDirection: fontScale > 1.3 ? "column" : "row",
                 gap: 12,
               }}
             >
-              <Tap
-                fill
+              <HomeActionCard
+                id="score"
+                title="Son Skor"
+                icon="target"
+                tone="green"
+                value={last ? String(stats(last).score) : "—"}
                 label="Son skor ve kişisel geçmiş"
                 onPress={() =>
                   router.push({
@@ -134,30 +108,16 @@ export function HomeScreen() {
                     params: { section: "personal" },
                   })
                 }
-              >
-                <Card style={{ gap: 4, padding: 12 }}>
-                  <Txt size={12} color={theme.muted}>
-                    Son skor
-                  </Txt>
-                  <Txt size={18} weight="bold">
-                    {last ? stats(last).score : "—"}
-                  </Txt>
-                </Card>
-              </Tap>
-              <Tap
-                fill
+              />
+              <HomeActionCard
+                id="badges"
+                title="Rozetler"
+                icon="award"
+                tone="purple"
+                value={`${badges.filter((b) => b.earned).length} / ${badges.length}`}
                 label="Kazanılan rozetler"
                 onPress={() => router.push("/achievements")}
-              >
-                <Card style={{ gap: 4, padding: 12 }}>
-                  <Txt size={12} color={theme.muted}>
-                    Rozetler
-                  </Txt>
-                  <Txt size={18} weight="bold">
-                    {badges.filter((b) => b.earned).length} / {badges.length}
-                  </Txt>
-                </Card>
-              </Tap>
+              />
             </View>
           </View>
           <TextAction title="Nasıl oynanır?" onPress={() => setHelp(true)} />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Linking, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Avatar, Medal, Pattern } from "../../components/game/Artwork";
 import {
   Button,
@@ -23,6 +23,7 @@ import { useDuel } from "../../storage/DuelProvider";
 import { colors as c, gradients, radius, useTheme } from "../../theme/tokens";
 
 export function DuelScreen() {
+  const router = useRouter();
   const { match, ready, error, create, act, retry } = useDuel();
   const theme = useTheme();
   const [cancel, setCancel] = useState(false);

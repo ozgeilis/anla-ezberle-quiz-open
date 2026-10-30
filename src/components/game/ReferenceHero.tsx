@@ -1,6 +1,6 @@
 import React from "react";
 import { View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Avatar, Scene } from "./Artwork";
 import { Icon, Tap, Txt, s } from "../ui";
@@ -49,6 +49,7 @@ export function PlayerHeader({
 }: {
   notifications?: boolean;
 }) {
+  const router = useRouter();
   const { displayName } = usePlayerIdentity();
   const { data } = useGameLibrary(),
     p = progress(data.games),

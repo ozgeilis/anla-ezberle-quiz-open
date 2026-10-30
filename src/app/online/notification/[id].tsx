@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { Button, Page, Txt } from "../../../components/ui";
 import { NotificationDetail } from "../../../features/online/NotificationDetail";
 import { useOnlineAuth } from "../../../features/online/OnlineProvider";
@@ -13,6 +13,7 @@ export default function PushNotificationRoute() {
   );
 }
 function OwnedNotification({ id }: { id: string }) {
+  const router = useRouter();
   const { session } = useOnlineAuth();
   const actor = session?.user.id;
   const [notification, setNotification] = useState<PlayerNotification | null>(
