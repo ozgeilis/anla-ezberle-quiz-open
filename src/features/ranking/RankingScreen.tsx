@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Switch, useWindowDimensions } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { Avatar, Scene, Pattern, Medal } from "../../components/game/Artwork";
 import {
@@ -26,6 +26,7 @@ const sections = [
   ["personal", "Kişisel Rekorlarım"],
 ] as const;
 export function RankingScreen() {
+  const router = useRouter();
   const params = useLocalSearchParams<{ section?: string }>(),
     theme = useTheme();
   const section =
@@ -161,6 +162,7 @@ function Gate({
   text: string;
   action?: boolean;
 }) {
+  const router = useRouter();
   const t = useTheme();
   return (
     <Card style={{ gap: 14, alignItems: "center", padding: 24 }}>
@@ -195,6 +197,7 @@ function OnlineRanking({
   actor: string;
   scope: "global" | "friends";
 }) {
+  const router = useRouter();
   const { value, status, error, load, preference, busy } = useLeaderboard(
       actor,
       scope,

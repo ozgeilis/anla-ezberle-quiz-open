@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Linking, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Chip, Page, Tap, Txt } from "../../components/ui";
 import { gameQuestion } from "../../content/questions/registry";
 import { useGame } from "../../storage/GameProvider";
 import { colors as c, useTheme } from "../../theme/tokens";
 export default function Review() {
+  const router = useRouter();
   const { result } = useGame();
   const theme = useTheme();
   const [all, setAll] = useState(false);

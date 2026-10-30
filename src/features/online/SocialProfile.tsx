@@ -1,7 +1,7 @@
 import { useInbox } from "./InboxProvider";
 import React, { useEffect, useRef, useState } from "react";
 import { Switch, TextInput, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Icon, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { usePlayerIdentity } from "./SocialIdentityProvider";
@@ -15,6 +15,7 @@ export function SocialProfile() {
   return <AccountProfile key={session?.user.id ?? "guest"} />;
 }
 function AccountProfile() {
+  const router = useRouter();
   const theme = useTheme();
   const inbox = useInbox();
   const { session } = useOnlineAuth();

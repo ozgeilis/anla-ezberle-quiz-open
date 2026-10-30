@@ -1,6 +1,6 @@
 import React, { useDeferredValue, useMemo, useState } from "react";
 import { View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Page, TextAction, Txt } from "../../components/ui";
 import { availableQuestions, difficultyName } from "../../content/questions";
 import { playCategoryName } from "../../domain/game/play-categories";
@@ -18,6 +18,7 @@ export function PreparationScreen({
 }: {
   initial: PreparationSelection;
 }) {
+  const router = useRouter();
   const [selection, setSelection] = useState(initial),
     [attempted, setAttempted] = useState(false);
   const assessed = useDeferredValue(selection),

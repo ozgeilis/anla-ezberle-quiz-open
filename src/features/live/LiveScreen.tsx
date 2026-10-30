@@ -12,7 +12,7 @@ import {
 } from "react-native";
 import * as Clipboard from "expo-clipboard";
 import { LinearGradient } from "expo-linear-gradient";
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import {
   Button,
   Card,
@@ -206,6 +206,7 @@ function LiveController({
   code?: string;
   initialRoom?: string;
 }) {
+  const router = useRouter();
   const { session, ready: authReady } = useOnlineAuth(),
     inbox = useInbox(),
     { refresh: refreshAchievements } = useAchievements(),

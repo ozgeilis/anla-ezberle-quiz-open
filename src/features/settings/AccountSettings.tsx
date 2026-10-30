@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Txt } from "../../components/ui";
 import type { Feedback } from "../../components/ui/FeedbackDialog";
 import { useTheme } from "../../theme/tokens";
@@ -10,6 +10,7 @@ export function AccountSettings({
 }: {
   setFeedback: React.Dispatch<React.SetStateAction<Feedback | null>>;
 }) {
+  const router = useRouter();
   const auth = useOnlineAuth(),
     t = useTheme();
   const [busy, setBusy] = useState(false);

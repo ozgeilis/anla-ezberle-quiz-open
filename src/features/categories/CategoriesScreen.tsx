@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { View } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { Page, TextAction, Txt } from "../../components/ui";
 import { SettingsButton } from "../../components/ui/SettingsButton";
 import { availableQuestions, type Difficulty } from "../../content/questions";
@@ -32,6 +32,7 @@ export function CategoriesScreen() {
 }
 // Consume historical links once; returning to the tab must show the catalogue.
 function LegacyPreparationLink({ initial }: { initial: PreparationSelection }) {
+  const router = useRouter();
   const opened = useRef(false);
   useEffect(() => {
     if (opened.current) return;
@@ -44,7 +45,7 @@ function LegacyPreparationLink({ initial }: { initial: PreparationSelection }) {
       difficulty: undefined,
     });
     router.push({ pathname: "/prepare", params: { ...initial } });
-  }, [initial]);
+  }, [initial, router]);
   return (
     <Page title="Oyun Hazırlığı">
       <Txt>Seçimin açılıyor…</Txt>
@@ -56,6 +57,7 @@ function CategoryCatalogue({
 }: {
   initialDifficulty?: Difficulty;
 }) {
+  const router = useRouter();
   const { data } = useGameLibrary();
   const [difficulty, setDifficulty] = useState(initialDifficulty),
     [filters, setFilters] = useState(!!initialDifficulty);

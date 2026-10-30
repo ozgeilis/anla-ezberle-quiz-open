@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Icon, Page, Tap, Txt } from "../../components/ui";
 import { Avatar } from "../../components/game/Artwork";
 import { useTheme } from "../../theme/tokens";
@@ -28,6 +28,7 @@ export function InboxScreen({
   );
 }
 function NotificationList({ invitations }: { invitations: boolean }) {
+  const router = useRouter();
   const { width } = useWindowDimensions();
   const inbox = useInbox(),
     { session } = useOnlineAuth(),

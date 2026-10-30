@@ -9,7 +9,7 @@ import { Share, TextInput, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import * as Linking from "expo-linking";
 import { randomUUID } from "expo-crypto";
-import { Redirect, router, useLocalSearchParams } from "expo-router";
+import { Redirect, useRouter, useLocalSearchParams } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Avatar, Pattern } from "../../components/game/Artwork";
 import {
@@ -78,6 +78,7 @@ export function OnlineScreen() {
   return <OnlineAccountScreen key={session?.user.id ?? "guest"} />;
 }
 function OnlineAccountScreen() {
+  const router = useRouter();
   const theme = useTheme();
   const auth = useOnlineAuth();
   const inbox = useInbox();
