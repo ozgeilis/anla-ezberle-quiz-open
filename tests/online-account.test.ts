@@ -10,13 +10,14 @@ import {
 test("account passwords enforce server-compatible bounds and character classes", () => {
   for (const value of [
     "",
-    "Aa1!short",
+    "Aa1!xyz",
     "a".repeat(12),
     "Abcdefghijk!",
     "1234567890A!",
     "Aa1!" + "x".repeat(125),
   ])
     assert.ok(passwordError(value));
+  assert.equal(passwordError("Aa1!xyzw"), null);
   assert.equal(passwordError("Sample_42_Strong!"), null);
   assert.equal(passwordError("Aa1!" + "x".repeat(124)), null);
 });

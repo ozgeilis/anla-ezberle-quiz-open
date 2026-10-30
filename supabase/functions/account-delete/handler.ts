@@ -5,9 +5,19 @@ export interface DeletionDependencies {
     email?: string;
     verified: boolean;
     anonymous?: boolean;
+    google?: boolean;
   } | null>;
   reauthenticate(email: string, password: string): Promise<string | null>;
   erase(actor: string): Promise<boolean>;
+  googleOtp?: {
+    send(actor: string, email: string): Promise<string>;
+    verify(
+      actor: string,
+      email: string,
+      challenge: string,
+      code: string,
+    ): Promise<boolean>;
+  };
 }
 export function deletionHandler(deps: DeletionDependencies) {
   const origins = new Set([
@@ -45,22 +55,52 @@ export function deletionHandler(deps: DeletionDependencies) {
       const raw = await req.text();
       if (raw.length > 2048) return reply(413, { error: "REQUEST_TOO_LARGE" });
       const body = JSON.parse(raw);
-      if (
-        !body ||
-        Array.isArray(body) ||
-        typeof body !== "object" ||
-        Object.keys(body).some(
-          (k) => !["password", "confirmation"].includes(k),
-        ) ||
-        body.confirmation !== "DELETE" ||
-        typeof body.password !== "string" ||
-        !body.password.length ||
-        body.password.length > 256
-      )
+      if (!body || Array.isArray(body) || typeof body !== "object")
         return reply(400, { error: "INVALID_REQUEST" });
-      // Fresh password proof bound to the JWT's verified email, never client email.
-      if ((await deps.reauthenticate(user.email, body.password)) !== user.id)
-        return reply(403, { error: "REAUTHENTICATION_REQUIRED" });
+      if (body.operation === "google-code") {
+        if (Object.keys(body).some((k) => k !== "operation"))
+          return reply(400, { error: "INVALID_REQUEST" });
+        if (!user.google || !deps.googleOtp)
+          return reply(403, { error: "GOOGLE_REAUTH_NOT_ENABLED" });
+        return reply(200, {
+          challenge: await deps.googleOtp.send(user.id, user.email),
+        });
+      }
+      if (body.confirmation !== "DELETE")
+        return reply(400, { error: "INVALID_REQUEST" });
+      if ("googleCode" in body) {
+        if (
+          Object.keys(body).some(
+            (k) => !["googleCode", "challenge", "confirmation"].includes(k),
+          ) ||
+          typeof body.googleCode !== "string" ||
+          typeof body.challenge !== "string"
+        )
+          return reply(400, { error: "INVALID_REQUEST" });
+        if (
+          !user.google ||
+          !deps.googleOtp ||
+          !(await deps.googleOtp.verify(
+            user.id,
+            user.email,
+            body.challenge,
+            body.googleCode,
+          ))
+        )
+          return reply(403, { error: "REAUTHENTICATION_REQUIRED" });
+      } else {
+        if (
+          Object.keys(body).some(
+            (k) => !["password", "confirmation"].includes(k),
+          ) ||
+          typeof body.password !== "string" ||
+          !body.password.length ||
+          body.password.length > 256
+        )
+          return reply(400, { error: "INVALID_REQUEST" });
+        if ((await deps.reauthenticate(user.email, body.password)) !== user.id)
+          return reply(403, { error: "REAUTHENTICATION_REQUIRED" });
+      }
       if (!(await deps.erase(user.id)))
         return reply(503, { error: "DELETION_NOT_COMPLETED" });
       return reply(200, { deleted: true });

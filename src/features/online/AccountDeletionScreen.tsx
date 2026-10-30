@@ -4,7 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { deletionCacheKeys } from "./deletionLocal";
 import { useGame } from "../../storage/GameProvider";
 import { router } from "expo-router";
-import { Button, Card, Dialog, Page, Txt } from "../../components/ui";
+import { Button, Card, Dialog, Page, Tap, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useOnlineAuth } from "./OnlineProvider";
 import { onlineClient } from "./client";
@@ -47,8 +47,18 @@ function AccountDeletionForm({
     [password, setPassword] = useState(""),
     [confirmation, setConfirmation] = useState("");
   const [available, setAvailable] = useState<boolean | null>(null),
-    [busy, setBusy] = useState(false),
+    [pendingAction, setPendingAction] = useState<
+      "code" | "delete" | "cleanup" | null
+    >(null),
     [message, setMessage] = useState("");
+  const busy = pendingAction !== null;
+  // A passwordless email identity does NOT prove that an app password exists.
+  const hasGoogleIdentity =
+    auth.session?.user.identities?.some((i) => i.provider === "google") ===
+    true;
+  const [usePassword, setUsePassword] = useState(false);
+  const useGoogleCode = hasGoogleIdentity && !usePassword;
+  const [challenge, setChallenge] = useState("");
   const actor = auth.session?.user.id,
     currentActor = useRef(actor),
     lock = useRef(false);
@@ -94,18 +104,22 @@ function AccountDeletionForm({
     if (!client) return;
     const deletingActor = actor;
     lock.current = true;
-    setBusy(true);
+    setPendingAction("delete");
     setMessage("");
     try {
       const { data: sessionData } = await client.auth.getSession();
       if (sessionData.session?.user.id !== deletingActor)
         throw Error("Oturum değişti. Yeniden giriş yap.");
       const { data, error } = await client.functions.invoke("account-delete", {
-        body: { confirmation: "DELETE", password },
+        body: useGoogleCode
+          ? { confirmation: "DELETE", googleCode: password, challenge }
+          : { confirmation: "DELETE", password },
       });
       if (error || data?.deleted !== true)
         throw Error(
-          "Silme tamamlandığı doğrulanamadı. Şifreni ve bağlantını kontrol et. Dosya temizliği başlamış olabilir; giriş yapamıyorsan destek adresine ulaş. Sunucu onayı olmadan tamamlandı denmez.",
+          useGoogleCode
+            ? "Silme tamamlandığı doğrulanamadı. Yeni bir kod isteyip tekrar dene. Giriş yapamıyorsan destek adresine ulaş."
+            : "Silme tamamlandığı doğrulanamadı. Şifreni ve bağlantını kontrol et. Dosya temizliği başlamış olabilir; giriş yapamıyorsan destek adresine ulaş. Sunucu onayı olmadan tamamlandı denmez.",
         );
       if (currentActor.current !== deletingActor) return;
       setPassword("");
@@ -119,8 +133,9 @@ function AccountDeletionForm({
         setMessage(e instanceof Error ? e.message : "Silme doğrulanamadı.");
     } finally {
       setPassword("");
+      if (useGoogleCode) setChallenge("");
       lock.current = false;
-      setBusy(false);
+      setPendingAction(null);
     }
   };
   return (
@@ -163,7 +178,7 @@ function AccountDeletionForm({
               title="Cihaz oturumunu temizlemeyi yeniden dene"
               disabled={busy}
               onPress={() => {
-                setBusy(true);
+                setPendingAction("cleanup");
                 void finishLocal(serverDeleted)
                   .catch((e) =>
                     setMessage(
@@ -172,7 +187,7 @@ function AccountDeletionForm({
                         : "Yerel temizlik tamamlanamadı.",
                     ),
                   )
-                  .finally(() => setBusy(false));
+                  .finally(() => setPendingAction(null));
               }}
             />
           </>
@@ -250,18 +265,89 @@ function AccountDeletionForm({
         }}
       >
         <Txt>
-          Yalnız giriş yaptığın hesap silinebilir. Devam etmek için güncel
-          parolanı gir ve SİL yaz. Dosyalar önce temizlenir; bir hata oluşursa
-          hesabın açık kalırken bazı dosyalar silinmiş olabilir.
+          {useGoogleCode
+            ? "E-postana gönderilen tek kullanımlık kodu gir ve SİL yaz. Kod bu hesaba bağlıdır; beş dakika geçerlidir."
+            : "Yalnız giriş yaptığın hesap silinebilir. Devam etmek için güncel parolanı gir ve SİL yaz. Dosyalar önce temizlenir; bir hata oluşursa hesabın açık kalırken bazı dosyalar silinmiş olabilir."}
         </Txt>
+        {hasGoogleIdentity && (
+          <Tap
+            label={
+              useGoogleCode
+                ? "Şifrem varsa şifreyle doğrula"
+                : "E-posta koduyla doğrula"
+            }
+            disabled={busy}
+            onPress={() => {
+              setUsePassword(!usePassword);
+              setPassword("");
+              setChallenge("");
+              setMessage("");
+            }}
+            style={{ justifyContent: "center" }}
+          >
+            <Txt size={14} color={theme.accent}>
+              {useGoogleCode
+                ? "Şifrem varsa şifreyle doğrula"
+                : "E-posta koduyla doğrula"}
+            </Txt>
+          </Tap>
+        )}
+        {useGoogleCode && (
+          <Button
+            title={
+              pendingAction === "code"
+                ? "Doğrulama kodu gönderiliyor…"
+                : "Doğrulama kodu gönder"
+            }
+            disabled={busy}
+            onPress={() => {
+              if (lock.current || !actor) return;
+              lock.current = true;
+              setPendingAction("code");
+              setMessage("");
+              const requestedActor = actor;
+              void onlineClient()!
+                .functions.invoke("account-delete", {
+                  body: { operation: "google-code" },
+                })
+                .then(({ data, error }) => {
+                  if (currentActor.current !== requestedActor) return;
+                  if (error || typeof data?.challenge !== "string")
+                    throw Error(
+                      "Kod gönderilemedi. Google hesap silme henüz açılmamış olabilir; biraz sonra yeniden dene.",
+                    );
+                  setChallenge(data.challenge);
+                  setPassword("");
+                  setMessage(
+                    "Kod e-postana gönderildi. Beş dakika içinde kullan.",
+                  );
+                })
+                .catch((e) => {
+                  if (currentActor.current === requestedActor)
+                    setMessage(
+                      e instanceof Error ? e.message : "Kod gönderilemedi.",
+                    );
+                })
+                .finally(() => {
+                  lock.current = false;
+                  setPendingAction(null);
+                });
+            }}
+          />
+        )}
         <TextInput
-          accessibilityLabel="Hesap silme için güncel parola"
-          secureTextEntry
-          autoComplete="current-password"
+          accessibilityLabel={
+            useGoogleCode
+              ? "Hesap silme doğrulama kodu"
+              : "Hesap silme için güncel parola"
+          }
+          secureTextEntry={!useGoogleCode}
+          keyboardType={useGoogleCode ? "number-pad" : "default"}
+          autoComplete={useGoogleCode ? "one-time-code" : "current-password"}
           value={password}
           onChangeText={setPassword}
           editable={!busy}
-          maxLength={256}
+          maxLength={useGoogleCode ? 8 : 256}
           style={{
             minHeight: 48,
             borderWidth: 1,
@@ -299,11 +385,16 @@ function AccountDeletionForm({
         />
         <Button
           title={
-            busy
+            pendingAction === "delete"
               ? "Sunucudan silme onayı bekleniyor…"
               : "Hesabımı kalıcı olarak sil"
           }
-          disabled={busy || confirmation !== "SİL" || !password}
+          disabled={
+            busy ||
+            confirmation !== "SİL" ||
+            !password ||
+            (useGoogleCode && (!challenge || !/^\d{8}$/.test(password)))
+          }
           onPress={() => void erase()}
         />
         {!!message && <Txt accessibilityRole="alert">{message}</Txt>}

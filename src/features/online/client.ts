@@ -11,6 +11,23 @@ export const onlineConfigured =
   /^(https:\/\/[a-z0-9-]+\.supabase\.co|http:\/\/(127\.0\.0\.1|localhost):\d+)\/?$/.test(
     url,
   ) && /^sb_publishable_[A-Za-z0-9_-]+$/.test(key);
+// OAuth uses a request-scoped PKCE transport; only onlineClient owns the app session.
+export function createGooglePkceClient(
+  storage: typeof authStorage,
+  storageKey: string,
+) {
+  if (!onlineConfigured) return null;
+  return createClient(url, key, {
+    auth: {
+      storage,
+      storageKey,
+      autoRefreshToken: false,
+      persistSession: true,
+      detectSessionInUrl: false,
+      flowType: "pkce",
+    },
+  });
+}
 let singleton: SupabaseClient | null = null;
 function sessionKey() {
   const base = `anla-quiz-online-auth-v1.${new URL(url).host.replace(/[^a-zA-Z0-9._-]/g, "_")}`;

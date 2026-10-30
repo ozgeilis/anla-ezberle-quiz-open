@@ -12,3 +12,5 @@ Uygulama için gerekli yerel assetler korunur. `design/references/quiz-ui-refere
 - Manrope: SIL OFL 1.1; Feather ve Expo/vector-icons sarmalayıcıları: MIT. Tam telif/izin metinleri `docs/licenses/` içinde korunur.
 
 Üretim kaydı, üçüncü taraf hakları bakımından münhasırlık veya bağımsız hukuki doğrulama garantisi değildir. Bu taşıma yeni bir proje lisansı ya da görsel yeniden dağıtım izni üretmez. İnceleme tamamlanmadan PUBLIC uygunluk onayı verilmemelidir.
+
+- `assets/images/auth/google-g.png`: Google’ın resmî G işareti, yalnız Google ile Giriş düğmesinde. Renk/oranlar değiştirilmedi. Kaynak ve ticari marka kullanım sınırı `docs/licenses/Google-sign-in-mark.md` içinde; mevcut marka/kategori görselleri değişmedi.
