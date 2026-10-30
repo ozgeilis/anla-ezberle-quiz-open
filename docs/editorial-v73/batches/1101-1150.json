@@ -3,12 +3,12 @@
   "start": 1101,
   "end": 1150,
   "total": 50,
-  "individuallyReviewed": 20,
-  "pendingReview": 30,
-  "sourceComparedThisRound": 20,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 1,
-  "flaggedAfter": 3,
+  "flaggedAfter": 4,
   "records": [
     {
       "sequence": 1101,
@@ -2305,8 +2305,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-evliya-ilk",
+        "reviewedCandidateSha256": "360334d75d67210dd7178753e439c8a7acf76b95a6195fb2bc2dc67e6ec51885",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört seyyahın ziyaret edebileceği gerçek şehir. İstanbul başlangıcı 96’da açık; doğduğu/gezdiği/yazdığı şehirler aynı şey değildir.",
+        "optionReview": {
+          "o1": "Başka şehir.",
+          "o2": "Son dönemde yazdığı yer.",
+          "o3": "Başka şehir.",
+          "o4": "Anlatının İstanbul başlangıcı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2356,20 +2380,20 @@
         "question": "TDV'ye göre Evliya Çelebi'nin Seyahatnâme'de anlattığı geziler yaklaşık hangi yıla kadar sürer?",
         "options": [
           {
-            "id": "o1",
-            "text": "1517"
+            "id": "o2",
+            "text": "1691"
           },
           {
-            "id": "o2",
-            "text": "1750"
+            "id": "o4",
+            "text": "1661"
           },
           {
             "id": "o3",
             "text": "1681"
           },
           {
-            "id": "o4",
-            "text": "1453"
+            "id": "o1",
+            "text": "1671"
           }
         ],
         "correctOptionId": "o3",
@@ -2377,20 +2401,46 @@
         "explanation": "TDV Seyahatnâme maddesi 1630'lu yıllarda başlayan yolculukların yaklaşık 1681 yılına kadar sürdüğünü kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — seyahatname--evliya-celebi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-            "locator": "1092 / 1681'e kadar seyahatler",
+            "locator": "96–104. satırlar",
             "supports": "TDV Seyahatnâme maddesi 1630'lu yıllarda başlayan yolculukların yaklaşık 1681 yılına kadar sürdüğünü kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-evliya-son",
+        "reviewedCandidateSha256": "759d051a1b88cc239d85e4214cb30578406c1d0f2baf38c737fed63fe00830dd",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı çağ yılı yerine dört yakın 17. yüzyıl yılı. Kaynak seyahat anlatısının yaklaşık sonunu 1092/1681’e bağlar; kesin ölüm tarihi iddia edilmez.",
+        "optionReview": {
+          "o2": "Başka yakın yıl.",
+          "o4": "Başka yakın yıl.",
+          "o3": "Kaynağın anlatı bitiş yılı.",
+          "o1": "Başka yakın yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
+          "locator": "96–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2473,8 +2523,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-evliya-yazim",
+        "reviewedCandidateSha256": "5ddcede9e0cb5b523b85af59490008725293fe5756d8b181185875b0ff20b8d8",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek ülke. Mısır eseri yazdığı son dönem yeridir; bütün gezilerin tek ülkede geçtiği anlamına gelmez.",
+        "optionReview": {
+          "o1": "Başka ülke.",
+          "o2": "97. satırın yazım ülkesi.",
+          "o3": "Başka ülke.",
+          "o4": "Başka ülke."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2557,8 +2631,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-battuta-dogum",
+        "reviewedCandidateSha256": "7c99858e2e66829832e9551606f46f4e0ac7d71c4a348e8d8157b1ced6d40e8a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört İslâm coğrafyası şehri. Tanca 1304 doğum yeri; sonraki kadılık/seyahat yerleri doğum diye alınmaz.",
+        "optionReview": {
+          "o1": "Başka şehir.",
+          "o2": "Başka şehir.",
+          "o3": "Başka şehir.",
+          "o4": "96. satırın doğum şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2605,23 +2703,23 @@
         ]
       },
       "after": {
-        "question": "İbn Battûta'nın seyahatlerini anlattığı eser genellikle hangi adla bilinir?",
+        "question": "İbn Battûta’nın seyahat anlatısı TDV’de hangi kısa Arapça adla anılır?",
         "options": [
+          {
+            "id": "o3",
+            "text": "er-Rihle"
+          },
           {
             "id": "o1",
             "text": "Cihannümâ"
           },
           {
             "id": "o2",
-            "text": "Şifâ"
-          },
-          {
-            "id": "o3",
-            "text": "er-Rihle"
+            "text": "Mesâlikü’l-memâlik"
           },
           {
             "id": "o4",
-            "text": "Mukaddime"
+            "text": "Seyahatnâme"
           }
         ],
         "correctOptionId": "o3",
@@ -2629,20 +2727,46 @@
         "explanation": "TDV İbn Battûta maddesinde seyyahın seyahatleriyle ilgili temel kaynağın er-Rihle adlı eseri olduğu ifade edilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ibn-battuta",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-            "locator": "er-Rihle seyahatnamesi",
+            "locator": "96–101. satırlar",
             "supports": "TDV İbn Battûta maddesinde seyyahın seyahatleriyle ilgili temel kaynağın er-Rihle adlı eseri olduğu ifade edilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-battuta-eser",
+        "reviewedCandidateSha256": "a5a5ff68a600f764cd764d45f91b59241e612f16635525720e3ab3a76ca878c7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp/felsefe eserine karşı tek seyahat adı yerine coğrafya-seyahat alanından dört eser adı. Seyahatnâme genel Türkçe tür adı da olabileceğinden kök özellikle TDV’deki kısa Arapça ada bağlı.",
+        "optionReview": {
+          "o3": "TDV’deki eserin kısa adı.",
+          "o1": "Kâtib Çelebi’nin coğrafya eseri.",
+          "o2": "Başka coğrafya eserlerinin adı.",
+          "o4": "Evliya’nın eser adı ve Türkçe tür adı; sorulan Arapça ad değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2689,44 +2813,70 @@
         ]
       },
       "after": {
-        "question": "İbn Battûta gezileri sırasında hangi hukukî görevde de bulunmuştur?",
+        "question": "TDV’ye göre İbn Battûta, hayatının sonunda Tâmesnâ’da hangi görevdeydi?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Darphane ustası"
-          },
           {
             "id": "o2",
             "text": "Kadı"
           },
           {
+            "id": "o1",
+            "text": "Müftü"
+          },
+          {
             "id": "o3",
-            "text": "Müftü yardımcısı"
+            "text": "Muhtesip"
           },
           {
             "id": "o4",
-            "text": "Kaptan"
+            "text": "Nâib"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "Kadı",
-        "explanation": "TDV'ye göre İbn Battûta bazı bölgelerde kadılık yapmış, farklı toplumlarla ilişkileri sayesinde diplomatik görevler de üstlenmiştir.",
+        "explanation": "TDV İbn Battûta maddesi, onun çeşitli yerlerde kadılık yaptığını ve Tâmesnâ kadısı iken öldüğünü bildirir. Sorudaki görev bu son atıftır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ibn-battuta",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-            "locator": "İbn Battûta'nın kadılığı",
-            "supports": "TDV'ye göre İbn Battûta bazı bölgelerde kadılık yapmış, farklı toplumlarla ilişkileri sayesinde diplomatik görevler de üstlenmiştir.",
+            "locator": "96–100. satırlar",
+            "supports": "TDV İbn Battûta maddesi, onun çeşitli yerlerde kadılık yaptığını ve Tâmesnâ kadısı iken öldüğünü bildirir. Sorudaki görev bu son atıftır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-battuta-kadi",
+        "reviewedCandidateSha256": "b8fc495c534f916bc1aebc7e5ea0de0c1a5c82c585601b79d7f42ba882bdf00a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kaptan/darphane gibi ilgisiz meslekler yerine dört hukuk-kamu görevi. Çeşitli görev ihtimali yerine kaynakta son Tâmesnâ görevi açıkça sorulur.",
+        "optionReview": {
+          "o2": "96. satırın son görevi.",
+          "o1": "Hukukî görüş görevi.",
+          "o3": "Pazar/kamu denetimi görevi.",
+          "o4": "Vekillik görevi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2776,20 +2926,20 @@
         "question": "İbn Battûta'nın ailesi hangi Berberî kabilesine mensuptur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Levâte"
-          },
-          {
             "id": "o2",
-            "text": "Gatafân"
+            "text": "Zenâte"
           },
           {
             "id": "o3",
-            "text": "Evs"
+            "text": "Sanhâce"
           },
           {
             "id": "o4",
-            "text": "Hazrec"
+            "text": "Masmûde"
+          },
+          {
+            "id": "o1",
+            "text": "Levâte"
           }
         ],
         "correctOptionId": "o1",
@@ -2797,20 +2947,46 @@
         "explanation": "TDV İbn Battûta maddesi ailesinin Berberî Levâte kabilesinden olduğunu ve kökeninin Berka'ya dayandığını bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ibn-battuta",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-            "locator": "Berberî Levâte kabilesi",
+            "locator": "96–100. satırlar; Berberîler maddesindeki kabileler ayrıca karşılaştırıldı",
             "supports": "TDV İbn Battûta maddesi ailesinin Berberî Levâte kabilesinden olduğunu ve kökeninin Berka'ya dayandığını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-battuta-kabile",
+        "reviewedCandidateSha256": "9f587b3be4ef7dce5be905e00948a63bb37770d2d2ee0919ebc400614f6c788d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç Arap kabilesine karşı tek Berberî kabilesi yerine dört gerçek Berberî topluluğu. TDV doğrudan aileyi Levâte’ye bağlar; diğerleriyle genel Berberî aidiyeti doğru cevap değildir.",
+        "optionReview": {
+          "o2": "Başka Berberî topluluğu.",
+          "o3": "Başka Berberî topluluğu.",
+          "o4": "Başka Berberî topluluğu.",
+          "o1": "İbn Battûta ailesinin kabilesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
+          "locator": "96–100. satırlar; Berberîler maddesindeki kabileler ayrıca karşılaştırıldı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2857,16 +3033,8 @@
         ]
       },
       "after": {
-        "question": "İbn Battûta doğum yeri Tanca bugün hangi ülkededir?",
+        "question": "İbn Battûta’nın doğum yeri Tanca bugün hangi ülkededir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Tunus"
-          },
-          {
-            "id": "o2",
-            "text": "Cezayir"
-          },
           {
             "id": "o3",
             "text": "Mısır"
@@ -2874,6 +3042,14 @@
           {
             "id": "o4",
             "text": "Fas"
+          },
+          {
+            "id": "o1",
+            "text": "Tunus"
+          },
+          {
+            "id": "o2",
+            "text": "Cezayir"
           }
         ],
         "correctOptionId": "o4",
@@ -2881,20 +3057,46 @@
         "explanation": "TDV'ye göre İbn Battûta Fas'ın Tanca şehrinde doğmuştur; uzun yolculukları onu farklı kıtalara taşımıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ibn-battuta",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-            "locator": "Fas'ın Tanca şehri",
+            "locator": "96–100. satırlar",
             "supports": "TDV'ye göre İbn Battûta Fas'ın Tanca şehrinde doğmuştur; uzun yolculukları onu farklı kıtalara taşımıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-battuta-yuz",
+        "reviewedCandidateSha256": "f6e0eafdae657a5b15729266702ca502efa4efdb0266443a737d6c86f5c77d7d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Eksik tamlama ve iyelik hatası düzeltildi; dört gerçek Kuzey Afrika ülkesi aynı bağlamda korundu.",
+        "optionReview": {
+          "o3": "Başka Kuzey Afrika ülkesi.",
+          "o4": "Kaynağın Fas’ı.",
+          "o1": "Başka Kuzey Afrika ülkesi.",
+          "o2": "Başka Kuzey Afrika ülkesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2977,8 +3179,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-kuscu-alan",
+        "reviewedCandidateSha256": "e387f41c7af2fd5cda4eceb4e36d2c7a8baecab8bc26fb52033d04c8ce4960da",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek ilim çifti. Temel eğitim ve ana çalışma alanları 95–98’de matematik/astronomi; onun başka ilimlere katkısı inkâr edilmez, tanındığı ana çift sorulur.",
+        "optionReview": {
+          "o1": "Başka ilim çifti.",
+          "o2": "Başka ilim çifti.",
+          "o3": "95–98’in ana ilimleri.",
+          "o4": "Başka ilim çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
+          "locator": "94–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3061,8 +3287,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-kuscu-semer",
+        "reviewedCandidateSha256": "9181843cca097c68bec136405a99a47f1336722a84cd091966791ae32420cefb",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek ilim merkezi şehri. Semerkant temel eğitimi, Kirman ileri öğrenimi, İstanbul son hocalık dönemi; ilkeğitim kaydı ayrımı belirler.",
+        "optionReview": {
+          "o1": "Son hocalık şehri.",
+          "o2": "95. satırın temel eğitim şehri.",
+          "o3": "Başka ilim şehri.",
+          "o4": "Başka ilim şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
+          "locator": "94–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3112,20 +3362,20 @@
         "question": "Ali Kuşçu'nun öğretmenleri arasında yer alan Timurlu hükümdarı kimdir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Ebû Saîd Han"
+          },
+          {
             "id": "o1",
             "text": "Uluğ Bey"
           },
           {
             "id": "o2",
-            "text": "Fâtih Sultan Mehmed"
+            "text": "Şâhruh"
           },
           {
             "id": "o3",
-            "text": "Yavuz Selim"
-          },
-          {
-            "id": "o4",
-            "text": "III. Ahmed"
+            "text": "Hüseyin Baykara"
           }
         ],
         "correctOptionId": "o1",
@@ -3133,20 +3383,46 @@
         "explanation": "TDV, Ali Kuşçu'nun Semerkant'ta Uluğ Bey, Kadızâde-i Rûmî ve el-Kâşî'den matematik ve astronomi öğrendiğini anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ali-kuscu",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
-            "locator": "Uluğ Bey ile hocalık bağı",
+            "locator": "94–98. satırlar",
             "supports": "TDV, Ali Kuşçu'nun Semerkant'ta Uluğ Bey, Kadızâde-i Rûmî ve el-Kâşî'den matematik ve astronomi öğrendiğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-kuscu-hoca",
+        "reviewedCandidateSha256": "548526bae862a10ca437e93cc0ba00d862130cc53b92f7b913c92dc8d271360c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç Osmanlı hükümdarına karşı tek Timurlu ve geç dönem anakronizmleri yerine dört Timurlu hükümdarı. Ders veren Uluğ Bey ile başka hamilik/siyaset ilişkileri ayrılır.",
+        "optionReview": {
+          "o4": "Eser sunduğu başka hükümdar; bu öğretmen değil.",
+          "o1": "Kaynağın ders veren hükümdarı.",
+          "o2": "Başka Timurlu hükümdarı.",
+          "o3": "Başka Timurlu hükümdarı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
+          "locator": "94–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3193,23 +3469,23 @@
         ]
       },
       "after": {
-        "question": "Fâtih Sultan Mehmed, Ali Kuşçu'yu İstanbul'da hangi medreseye müderris atamıştır?",
+        "question": "TDV’ye göre Fâtih, Ali Kuşçu’yu 1473 seferi dönüşünde hangi medreseye müderris atadı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Nizâmiye Medresesi"
-          },
-          {
-            "id": "o2",
-            "text": "Karatay Medresesi"
-          },
-          {
             "id": "o3",
-            "text": "Gevher Nesibe Medresesi"
+            "text": "Eyüp Medresesi"
           },
           {
             "id": "o4",
             "text": "Ayasofya Medresesi"
+          },
+          {
+            "id": "o1",
+            "text": "Sahn-ı Semân Medreseleri"
+          },
+          {
+            "id": "o2",
+            "text": "Zeyrek Medresesi"
           }
         ],
         "correctOptionId": "o4",
@@ -3217,20 +3493,55 @@
         "explanation": "TDV'ye göre Ali Kuşçu İstanbul'a yerleştikten sonra Fâtih tarafından Ayasofya Medresesi müderrisliğine atanmıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ali-kuscu",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
-            "locator": "Ayasofya Medresesi'ne atama",
+            "locator": "97–100. satırlar",
             "supports": "TDV'ye göre Ali Kuşçu İstanbul'a yerleştikten sonra Fâtih tarafından Ayasofya Medresesi müderrisliğine atanmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-kuscu-medrese",
+        "reviewedCandidateSha256": "aa50cf40fd35a98efb4e3b2119465cc2c2644590f670c5ed0d5ab27466c267e9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç İstanbul dışı medreseye karşı tek İstanbul medresesi kaldırıldı. Dört Fâtih dönemi İstanbul medresesi; Semâniye programına katkı rivayeti müderris atanmasıyla eşitlenmez.",
+        "optionReview": {
+          "o3": "Başka İstanbul medresesi.",
+          "o4": "98. satırın atama yeri.",
+          "o1": "99. satırdaki program düzenleme katkısı; bu atama değil.",
+          "o2": "Başka İstanbul medresesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
+          "locator": "97–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3280,41 +3591,67 @@
         "question": "Ali Kuşçu'nun Fâtih'e ithaf ettiği hesap ilmine dair eseri hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Seyahatnâme"
-          },
-          {
-            "id": "o2",
-            "text": "Kitâbü'l-İber"
+            "id": "o4",
+            "text": "Şerh-i Zîc-i Uluğ Bey"
           },
           {
             "id": "o3",
-            "text": "er-Risâletü'l-Muhammediyye"
+            "text": "er-Risâletü’l-Muhammediyye"
           },
           {
-            "id": "o4",
-            "text": "el-Kānûn fi't-Tıb"
+            "id": "o1",
+            "text": "er-Risâletü’l-Fethiyye"
+          },
+          {
+            "id": "o2",
+            "text": "Risâle fi’l-hey’e"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "er-Risâletü'l-Muhammediyye",
+        "correctAnswer": "er-Risâletü’l-Muhammediyye",
         "explanation": "TDV Ali Kuşçu maddesi er-Risâletü'l-Muhammediyye'yi hesap ilmine dair Arapça yazılmış ve Fâtih'e ithaf edilmiş eser olarak tanıtır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ali-kuscu",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
-            "locator": "er-Risâletü'l-Muhammediyye",
+            "locator": "102–111. satırlar",
             "supports": "TDV Ali Kuşçu maddesi er-Risâletü'l-Muhammediyye'yi hesap ilmine dair Arapça yazılmış ve Fâtih'e ithaf edilmiş eser olarak tanıtır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-kuscu-risale",
+        "reviewedCandidateSha256": "01adb000e88a0071c3aa577b4e3facb04e538dcb7810c748ec33eee8657a30e5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç başka yazarın farklı alandaki eserine karşı tek uzun Ali Kuşçu eseri yerine aynı yazarın dört yakın matematik-astronomi eseri. Fethiyye de Fâtih’e ithaflı ama astronomidir; hesap ilmi kaydı tek doğruyu belirler.",
+        "optionReview": {
+          "o4": "109. satırın astronomi şerhi.",
+          "o3": "107. satırın Arapça hesap eseri.",
+          "o1": "105. satırın astronomi ithafı.",
+          "o2": "102. satırın Farsça astronomi risalesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ali-kuscu",
+          "locator": "102–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3364,20 +3701,20 @@
         "question": "Kâtib Çelebi'nin coğrafyaya dair ünlü kitabının adı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "el-Kānûn fi't-Tıb"
+            "id": "o4",
+            "text": "Tuhfetü’l-kibâr"
           },
           {
             "id": "o2",
             "text": "Cihannümâ"
           },
           {
-            "id": "o3",
-            "text": "Seyahatnâme"
+            "id": "o1",
+            "text": "Keşfü’z-zunûn"
           },
           {
-            "id": "o4",
-            "text": "Kitâbü'l-İber"
+            "id": "o3",
+            "text": "Fezleke"
           }
         ],
         "correctOptionId": "o2",
@@ -3385,20 +3722,46 @@
         "explanation": "TDV Cihannümâ maddesi kitabı Kâtib Çelebi'nin coğrafya alanındaki temel çalışması olarak anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — cihannuma--katip-celebi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/cihannuma--katip-celebi",
-            "locator": "Cihannümâ'nın konusu",
+            "locator": "96–102. satırlar; Kâtib Çelebi maddesi eserler 130–150. satırlar",
             "supports": "TDV Cihannümâ maddesi kitabı Kâtib Çelebi'nin coğrafya alanındaki temel çalışması olarak anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-katib-cihan",
+        "reviewedCandidateSha256": "26b7bfcdf685cab22178197c001572f36d4c74050624c0fb782f1106a7b8bcd4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp ve başka yazarların eserleri yerine Kâtib Çelebi’nin dört gerçek eseri. Coğrafya kitabı deniz savaşları tarihi veya bibliyografyadan ayrılır.",
+        "optionReview": {
+          "o4": "Deniz savaşları tarihi.",
+          "o2": "Coğrafya eseri.",
+          "o1": "Bibliyografya eseri.",
+          "o3": "Vekayinâme eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/cihannuma--katip-celebi",
+          "locator": "96–102. satırlar; Kâtib Çelebi maddesi eserler 130–150. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3448,41 +3811,67 @@
         "question": "Kâtib Çelebi'nin bibliyografya ve ilimler ansiklopedisi niteliğindeki eseri hangisidir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Tuhfetü’l-kibâr"
+          },
+          {
             "id": "o1",
-            "text": "Keşfü'z-Zunûn"
+            "text": "Keşfü’z-zunûn"
           },
           {
             "id": "o2",
-            "text": "Seyahatnâme"
+            "text": "Cihannümâ"
           },
           {
             "id": "o3",
-            "text": "er-Rihle"
-          },
-          {
-            "id": "o4",
-            "text": "Şifâ"
+            "text": "Fezleke"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Keşfü'z-Zunûn",
+        "correctAnswer": "Keşfü’z-zunûn",
         "explanation": "TDV Keşfü'z-Zunûn maddesi eseri Kâtib Çelebi'nin kitapları ve ilimleri tanıtan kapsamlı bibliyografyası olarak açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kesfuz-zunun",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kesfuz-zunun",
-            "locator": "Keşfü'z-Zunûn'un niteliği",
+            "locator": "96–102. satırlar; Kâtib Çelebi eser listesi",
             "supports": "TDV Keşfü'z-Zunûn maddesi eseri Kâtib Çelebi'nin kitapları ve ilimleri tanıtan kapsamlı bibliyografyası olarak açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-katib-kesf",
+        "reviewedCandidateSha256": "75c86de945084891d7777255510da191c593c3f4889451b9436ebf0bb71e85fa",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç başka yazarın eserine karşı tek Kâtib eseri yerine aynı yazarın dört eseri. Kitap/ilim bibliyografyası hedefi öteki tarih-coğrafya eserlerini dışlar.",
+        "optionReview": {
+          "o4": "Deniz savaşları tarihi.",
+          "o1": "Kitap/ilim bibliyografyası.",
+          "o2": "Coğrafya eseri.",
+          "o3": "Vekayinâme eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kesfuz-zunun",
+          "locator": "96–102. satırlar; Kâtib Çelebi eser listesi",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3565,8 +3954,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-katib-dil",
+        "reviewedCandidateSha256": "0a9e4d714f2aea88f792838031241d5f5cfb5466e617c6434e1159c7cd1ecd18",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek eser/ilim dili. Keşfü’z-zunûn Arapça; eserde Türkçe/Farsça kitapların tanıtılması telif dilini değiştirmez.",
+        "optionReview": {
+          "o1": "Tanıtılan eserlerin başka dili olabilir.",
+          "o2": "Tanıtılan eserlerin başka dili olabilir.",
+          "o3": "Başka ilim dili.",
+          "o4": "96. satırın telif dili."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kesfuz-zunun",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3613,44 +4026,70 @@
         ]
       },
       "after": {
-        "question": "Cihannümâ'nın ilk bölümünde esas olarak hangi coğrafî unsurlar ele alınır?",
+        "question": "Kâtib Çelebi’nin Cihannümâ için belirttiği iki bölümlü tasnifte ilk bölüm hangi unsurlara ayrılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Tıp reçeteleri"
+            "id": "o2",
+            "text": "Şehirler, yollar ve pazarlar"
           },
           {
-            "id": "o2",
-            "text": "Hadis râvileri"
+            "id": "o4",
+            "text": "İklimler, rüzgârlar ve yağışlar"
           },
           {
             "id": "o3",
             "text": "Denizler, nehirler ve adalar"
           },
           {
-            "id": "o4",
-            "text": "Hanedanların soy ağaçları"
+            "id": "o1",
+            "text": "Dağlar, yaylalar ve geçitler"
           }
         ],
         "correctOptionId": "o3",
         "correctAnswer": "Denizler, nehirler ve adalar",
-        "explanation": "TDV Cihannümâ maddesine göre eserin birinci bölümü denizler, nehirler ve adaları konu edinir; ikinci bölümde kara coğrafyası vardır.",
+        "explanation": "Kâtib Çelebi’nin belirttiği iki bölümlü tasnifte ilk bölüm denizler, nehirler ve adalara; ikincisi kara, şehir ve ülkelere ayrılır. TDV farklı telif planlarını ve eserin tamamlanmamış oluşunu ayrıca açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — cihannuma--katip-celebi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/cihannuma--katip-celebi",
-            "locator": "Cihannümâ'nın ilk bölümü",
-            "supports": "TDV Cihannümâ maddesine göre eserin birinci bölümü denizler, nehirler ve adaları konu edinir; ikinci bölümde kara coğrafyası vardır.",
+            "locator": "99–102. satırlar",
+            "supports": "Kâtib Çelebi’nin belirttiği iki bölümlü tasnifte ilk bölüm denizler, nehirler ve adalara; ikincisi kara, şehir ve ülkelere ayrılır. TDV farklı telif planlarını ve eserin tamamlanmamış oluşunu ayrıca açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-katib-bolum",
+        "reviewedCandidateSha256": "0ee4107efdfc9ca07420a28c42d0ecaa1e6f23fe01024003e38b00f13b421cab",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp/râvi/soy ağaçları gibi üç uzak alana karşı tek coğrafya grubu kaldırıldı. Dört coğrafi unsur grubu; eser tamamlanmamış ve iki telifli olduğundan belirli iki bölümlü tasnif sorulur.",
+        "optionReview": {
+          "o2": "Başka beşeri coğrafya grubu.",
+          "o4": "Başka iklim coğrafyası grubu.",
+          "o3": "99. satırın ilk bölüm planı.",
+          "o1": "Başka fiziki coğrafya grubu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/cihannuma--katip-celebi",
+          "locator": "99–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3700,20 +4139,20 @@
         "question": "Kâtib Çelebi coğrafya kitapları ve haritalara hangi sefer vesilesiyle ilgi duymuştur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Çaldıran seferi"
+            "id": "o4",
+            "text": "Hotin seferi"
           },
           {
             "id": "o2",
             "text": "Girit seferi"
           },
           {
-            "id": "o3",
-            "text": "Kıbrıs seferi"
+            "id": "o1",
+            "text": "Revan seferi"
           },
           {
-            "id": "o4",
-            "text": "Tebük seferi"
+            "id": "o3",
+            "text": "Bağdat seferi"
           }
         ],
         "correctOptionId": "o2",
@@ -3721,20 +4160,46 @@
         "explanation": "TDV Cihannümâ maddesi Kâtib Çelebi'nin 1645 Girit seferi vesilesiyle haritalara ilgi duymaya başladığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — cihannuma--katip-celebi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/cihannuma--katip-celebi",
-            "locator": "1645 Girit seferi ve coğrafya",
+            "locator": "96–100. satırlar",
             "supports": "TDV Cihannümâ maddesi Kâtib Çelebi'nin 1645 Girit seferi vesilesiyle haritalara ilgi duymaya başladığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q59-katib-ilgi",
+        "reviewedCandidateSha256": "d086c83b59cd7dfc2e02660a0e95940eb2af19ec62309ff81b5d11af2d37fed5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tebük/Çaldıran gibi yazarın yaşamı dışındaki seferler yerine dört 17. yüzyıl Osmanlı seferi. Kaynak 1645 Girit vesilesini açıkça verir; yazarın başka seferlere katılması bu özel ilgi başlangıcını değiştirmez.",
+        "optionReview": {
+          "o4": "Başka çağdaş sefer.",
+          "o2": "97. satırın ilgi vesilesi.",
+          "o1": "Başka çağdaş sefer.",
+          "o3": "Başka çağdaş sefer."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/cihannuma--katip-celebi",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3781,44 +4246,70 @@
         ]
       },
       "after": {
-        "question": "Dârülerkam adıyla bilinen ev kime aitti?",
+        "question": "Mekke’de ilk Müslümanların Safâ eteğinde toplandığı evin sahibi kimdi?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Erkam b. Ebü'l-Erkam"
-          },
           {
             "id": "o2",
             "text": "Bilâl-i Habeşî"
           },
           {
             "id": "o3",
-            "text": "Mus'ab b. Umeyr"
+            "text": "Mus‘ab b. Umeyr"
           },
           {
             "id": "o4",
             "text": "Ebû Hüreyre"
+          },
+          {
+            "id": "o1",
+            "text": "Erkam b. Ebü’l-Erkam"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Erkam b. Ebü'l-Erkam",
+        "correctAnswer": "Erkam b. Ebü’l-Erkam",
         "explanation": "Mekke'de ilk Müslümanların bir araya geldiği ev, ilk Müslümanlardan Erkam b. Ebü'l-Erkam'a aitti.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — darulerkam",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/darulerkam",
-            "locator": "Evin ilk sahibi",
+            "locator": "96–101. satırlar",
             "supports": "Mekke'de ilk Müslümanların bir araya geldiği ev, ilk Müslümanlardan Erkam b. Ebü'l-Erkam'a aitti.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-erkam-sahip",
+        "reviewedCandidateSha256": "d155360778bce0fc550269755b6e5e28ecb4ac3992f5948a700f9df320be4c14",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dârülerkam kök adının doğru Erkam cevabını aynen ele vermesi kaldırıldı. Dört gerçek sahâbî adı korunuyor; evin erken öğrenim bağlamı açık.",
+        "optionReview": {
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî.",
+          "o1": "96. satırın ev sahibi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/darulerkam",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3873,7 +4364,7 @@
           },
           {
             "id": "o2",
-            "text": "Uhud"
+            "text": "Hira"
           },
           {
             "id": "o3",
@@ -3889,20 +4380,46 @@
         "explanation": "TDV Dârülerkam maddesi bu evin Mescid-i Harâm sınırında, Safâ tepesinin eteklerinde bulunduğunu açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — darulerkam",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/darulerkam",
-            "locator": "Safâ tepesindeki konumu",
+            "locator": "96–99. satırlar",
             "supports": "TDV Dârülerkam maddesi bu evin Mescid-i Harâm sınırında, Safâ tepesinin eteklerinde bulunduğunu açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-erkam-safa",
+        "reviewedCandidateSha256": "7aea3f15ba161652f687e07916af0f5140fc15a2e65eee1408213f76a30ab777",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Medine’deki Uhud yerine Mekke çevresinden dört tepe/dağ adı. Safâ konumu kaynakta açık.",
+        "optionReview": {
+          "o1": "Başka Mekke tepesi.",
+          "o2": "Başka Mekke dağı.",
+          "o3": "Başka Mekke dağı.",
+          "o4": "Evin eteğinde olduğu tepe."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/darulerkam",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3949,44 +4466,70 @@
         ]
       },
       "after": {
-        "question": "TDV maddesine göre Hz. Ömer İslâm'ı hangi evde kabul etmiştir?",
+        "question": "TDV’nin Dârülerkam anlatısında bu evde İslâm’ı kabul ettiği özellikle anılan kişi kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hayber Kalesi'nde"
-          },
-          {
-            "id": "o2",
-            "text": "Dârülerkam'da"
-          },
-          {
             "id": "o3",
-            "text": "Ebû Eyyûb'un evinde"
+            "text": "Hz. Ali"
           },
           {
             "id": "o4",
-            "text": "Suffe'de"
+            "text": "Hz. Ebû Bekir"
+          },
+          {
+            "id": "o2",
+            "text": "Hz. Ömer"
+          },
+          {
+            "id": "o1",
+            "text": "Hz. Osman"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Dârülerkam'da",
-        "explanation": "Dârülerkam maddesinde Hz. Ömer'in İslâm'ı kabulünün bu evde gerçekleştiği belirtilmektedir.",
+        "correctAnswer": "Hz. Ömer",
+        "explanation": "TDV Dârülerkam maddesi, Hz. Peygamber’in bu evdeki davet faaliyetleri sırasında Ömer’in de burada İslâm’ı kabul ettiğini anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — darulerkam",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/darulerkam",
-            "locator": "Ömer'in Müslüman olması",
-            "supports": "Dârülerkam maddesinde Hz. Ömer'in İslâm'ı kabulünün bu evde gerçekleştiği belirtilmektedir.",
+            "locator": "96–99. satırlar",
+            "supports": "TDV Dârülerkam maddesi, Hz. Peygamber’in bu evdeki davet faaliyetleri sırasında Ömer’in de burada İslâm’ı kabul ettiğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-erkam-omer",
+        "reviewedCandidateSha256": "85dc7223988dd6ecb05e091231699333b1746e9118f4af8c84289905e65d86fb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hangi ev diye sorup kale/Suffe ve sonraki Medine evleri vermek yerine dört erken Müslüman. Kaynağın bu evdeki kabul anlatısı Ömer’e bağlanır.",
+        "optionReview": {
+          "o3": "Başka erken Müslüman.",
+          "o4": "Başka erken Müslüman.",
+          "o2": "97. satırın bu evde kabul eden kişisi.",
+          "o1": "Başka erken Müslüman."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/darulerkam",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4036,20 +4579,20 @@
         "question": "Suffe kelimesi sözlükte ne demektir?",
         "options": [
           {
+            "id": "o3",
+            "text": "Kemer"
+          },
+          {
+            "id": "o4",
+            "text": "Kubbe"
+          },
+          {
             "id": "o1",
             "text": "Gölgelik"
           },
           {
             "id": "o2",
-            "text": "Kule"
-          },
-          {
-            "id": "o3",
-            "text": "Tâc"
-          },
-          {
-            "id": "o4",
-            "text": "Kuyu"
+            "text": "Avlu"
           }
         ],
         "correctOptionId": "o1",
@@ -4057,20 +4600,46 @@
         "explanation": "TDV Suffe maddesi kelimenin sözlük anlamını gölgelik olarak verir; mekân adı da gölgeli barınma alanından gelir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — suffe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Suffe sözlük anlamı",
+            "locator": "96–100. satırlar",
             "supports": "TDV Suffe maddesi kelimenin sözlük anlamını gölgelik olarak verir; mekân adı da gölgeli barınma alanından gelir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-suffe-anlam",
+        "reviewedCandidateSha256": "d38976c8c33afe3ff20976dc8b64b7f8132b464a5c0c1b174e67649af4e03ef2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Taç gibi yapı dışı öğe yerine dört mimari kavram. Gölgelik sözlük anlamı, avlu/kemer/kubbeden ayrılır; işlevsel yakınlık doğrudan eş anlam ilan edilmez.",
+        "optionReview": {
+          "o3": "Başka mimari unsur.",
+          "o4": "Başka mimari unsur.",
+          "o1": "Suffenin sözlük karşılığı.",
+          "o2": "Başka mimari alan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4153,8 +4722,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-suffe-misafir",
+        "reviewedCandidateSha256": "58c563dc4d50947d6807fb518a0a3323b68168d16f9b4be9f28372baa7120baa",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek topluluk. İhtiyaçlarının karşılanması sebebiyle Suffe ehline verilen ad 97’de açık; evfâd da aynı gruba farklı sebeple verilen ad olduğundan yanlış şık yapılmadı.",
+        "optionReview": {
+          "o1": "Başka sahâbî topluluğu.",
+          "o2": "97. satırın misafirleri.",
+          "o3": "Başka sahâbî topluluğu.",
+          "o4": "Başka sahâbî topluluğu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4201,23 +4794,23 @@
         ]
       },
       "after": {
-        "question": "Suffe zamanla barınma yerinin yanında hangi işlevi kazanmıştır?",
+        "question": "TDV Suffe maddesinde bu mekânın zamanla dönüştüğü merkez nasıl tanımlanır?",
         "options": [
+          {
+            "id": "o4",
+            "text": "Ticaret ve yardımlaşma merkezi"
+          },
           {
             "id": "o1",
             "text": "Eğitim ve öğretim merkezi"
           },
           {
             "id": "o2",
-            "text": "Darphane"
+            "text": "Haberleşme ve yazışma merkezi"
           },
           {
             "id": "o3",
-            "text": "Askerî tersane"
-          },
-          {
-            "id": "o4",
-            "text": "Mahkeme hapishanesi"
+            "text": "Barış ve uzlaşma merkezi"
           }
         ],
         "correctOptionId": "o1",
@@ -4225,20 +4818,46 @@
         "explanation": "TDV Suffe maddesi bu barınma alanının zaman içinde İslâmî eğitimin yürütüldüğü bir merkez olduğunu anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — suffe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "Suffe'nin öğretim işlevi",
+            "locator": "103–110. satırlar",
             "supports": "TDV Suffe maddesi bu barınma alanının zaman içinde İslâmî eğitimin yürütüldüğü bir merkez olduğunu anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-suffe-egitim",
+        "reviewedCandidateSha256": "fdef18499ff70353f3a8689fd9b784db65b137c608eba41fdfa91119f82a4b2e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tersane/hapishane/darphane gibi uzak veya uygunsuz yapılar yerine dört olumlu toplumsal hizmet merkezi. Misafir heyetler de bulunur ama kaynakta 105’teki belirgin işlev eğitimdir.",
+        "optionReview": {
+          "o4": "Başka kamusal merkez işlevi.",
+          "o1": "105. satırın eğitim kurumu.",
+          "o2": "Başka kamusal merkez işlevi.",
+          "o3": "Başka kamusal merkez işlevi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suffe",
+          "locator": "103–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4321,8 +4940,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-nebevi-ilk",
+        "reviewedCandidateSha256": "fc9d37f3f5c222007d1d0350be6fe7b3eb636c8385e37318e426da8a9636aa4f",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek kutsal/tarihî şehir. Mescid-i Nebevî hicretten sonra Medine’de yapılır; Aksâ/Harâm gibi başka mescidlerle karıştırma bilgi sorusudur.",
+        "optionReview": {
+          "o1": "Başka mescidin şehri.",
+          "o2": "Başka mescidin şehri.",
+          "o3": "Başka bölge şehri.",
+          "o4": "96. satırın Medine’si."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4369,8 +5012,16 @@
         ]
       },
       "after": {
-        "question": "Mescid-i Nebevî'nin yapılacağı yeri belirleyen olayda hangi devenin adı geçer?",
+        "question": "Mescid-i Nebevî’nin yerinin seçilmesi anlatısında Peygamber’in hangi bineğinin çöktüğü söylenir?",
         "options": [
+          {
+            "id": "o4",
+            "text": "Düldül"
+          },
+          {
+            "id": "o3",
+            "text": "Kasvâ"
+          },
           {
             "id": "o1",
             "text": "Ya‘fûr"
@@ -4378,14 +5029,6 @@
           {
             "id": "o2",
             "text": "Sakb"
-          },
-          {
-            "id": "o3",
-            "text": "Kasvâ"
-          },
-          {
-            "id": "o4",
-            "text": "Düldül"
           }
         ],
         "correctOptionId": "o3",
@@ -4393,20 +5036,46 @@
         "explanation": "Hz. Peygamber'in Kasvâ adlı devesinin çöktüğü yerin yakınındaki arsa mescidin inşası için seçilmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — mescid-i-nebevi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-            "locator": "Kasvâ'nın çöktüğü yer",
+            "locator": "99–104. satırlar",
             "supports": "Hz. Peygamber'in Kasvâ adlı devesinin çöktüğü yerin yakınındaki arsa mescidin inşası için seçilmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-nebevi-kasva",
+        "reviewedCandidateSha256": "5340a5b5bee5154bd3270640d09b54067d300e1ded868ab41c75bf048a0689f7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Deve sorup üç at/katır/eşek adıyla yalnız türünden cevap seçtirme yerine binek sözcüğü kullanıldı. Dört gerçek binek adı; kaynaktaki Kasvâ gerekir.",
+        "optionReview": {
+          "o4": "Başka binek adı.",
+          "o3": "99–100’ün bineği.",
+          "o1": "Başka binek adı.",
+          "o2": "Başka binek adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+          "locator": "99–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4489,8 +5158,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-nebevi-misafir",
+        "reviewedCandidateSha256": "8b9dddd748563a9821566d994033c7efd48eeb75b7cbd2e48e665b7474c9cf62",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek sahâbî. Kasvâ’nın durduğu yere en yakın ev sahibi Ebû Eyyûb 99–100’de açık; başka sahâbîleri uygunsuz kişiliklerle karşılaştırma yok.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "99–100’ün misafir edeni.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+          "locator": "99–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4537,44 +5230,70 @@
         ]
       },
       "after": {
-        "question": "Mescid-i Nebevî'nin ilk kıblesi hangi yöne dönüktü?",
+        "question": "Mescid-i Nebevî’nin ilk kıblesinde hangi şehirdeki mâbed hedef alınmıştı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Taif'e"
-          },
-          {
-            "id": "o2",
-            "text": "Yemen'e"
-          },
-          {
             "id": "o3",
-            "text": "Buhara'ya"
+            "text": "Şam"
           },
           {
             "id": "o4",
-            "text": "Kudüs'e"
+            "text": "Kudüs"
+          },
+          {
+            "id": "o1",
+            "text": "Mekke"
+          },
+          {
+            "id": "o2",
+            "text": "Tâif"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Kudüs'e",
+        "correctAnswer": "Kudüs",
         "explanation": "Mescid-i Nebevî'nin kıblesi ilk inşa edildiğinde Kudüs yönündeydi; daha sonra Kâbe'ye çevrildi.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — mescid-i-nebevi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-            "locator": "İlk kıble yönü",
+            "locator": "104–108. satırlar",
             "supports": "Mescid-i Nebevî'nin kıblesi ilk inşa edildiğinde Kudüs yönündeydi; daha sonra Kâbe'ye çevrildi.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-nebevi-kible",
+        "reviewedCandidateSha256": "06930d02cebc8972df3541e0696dc5ba0dae520c4472ff89984c2d8837603d59",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Buhara/Yemen gibi uzak veya şehir olmayan seçenekler yerine dört bölgesel şehir. Yön açısı değil hedef şehrin adı sorulduğu için Kudüs/Şam’ın yakın yönleri ikinci doğruya dönüşmez.",
+        "optionReview": {
+          "o3": "Başka bölgesel şehir.",
+          "o4": "104. satırın ilk hedef şehri.",
+          "o1": "105. satırın sonraki hedef şehri.",
+          "o2": "Başka bölgesel şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+          "locator": "104–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4621,44 +5340,70 @@
         ]
       },
       "after": {
-        "question": "Hicretten sonra kıble hangi yönden Kâbe'ye çevrilmiştir?",
+        "question": "TDV’ye göre hicretten yaklaşık ne kadar sonra kıble Kâbe’ye çevrildi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bağdat'tan"
-          },
-          {
-            "id": "o2",
-            "text": "Şam'ın kuzeyinden"
+            "id": "o4",
+            "text": "Otuz iki–otuz üç ay"
           },
           {
             "id": "o3",
-            "text": "Kudüs'ten"
+            "text": "On altı–on yedi ay"
           },
           {
-            "id": "o4",
-            "text": "Tâif'ten"
+            "id": "o1",
+            "text": "Altı–yedi ay"
+          },
+          {
+            "id": "o2",
+            "text": "Yirmi dört–yirmi beş ay"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Kudüs'ten",
-        "explanation": "TDV Mescid-i Nebevî maddesi hicretten yaklaşık on altı-on yedi ay sonra kıblenin Kudüs'ten Kâbe'ye çevrildiğini belirtir.",
+        "correctAnswer": "On altı–on yedi ay",
+        "explanation": "TDV Mescid-i Nebevî maddesi kıblenin hicretten on altı veya on yedi ay sonra Kudüs’ten Mekke’deki Kâbe’ye çevrildiğini belirtir. Kaynakta iki süre rivayeti bulunduğu için yaklaşık aralık kullanılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — mescid-i-nebevi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-            "locator": "Kıble değişimi",
-            "supports": "TDV Mescid-i Nebevî maddesi hicretten yaklaşık on altı-on yedi ay sonra kıblenin Kudüs'ten Kâbe'ye çevrildiğini belirtir.",
+            "locator": "104–108. satırlar",
+            "supports": "TDV Mescid-i Nebevî maddesi kıblenin hicretten on altı veya on yedi ay sonra Kudüs’ten Mekke’deki Kâbe’ye çevrildiğini belirtir. Kaynakta iki süre rivayeti bulunduğu için yaklaşık aralık kullanılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-nebevi-kibledeg",
+        "reviewedCandidateSha256": "dffbc98ec7a91d57975f71e595da1d9fde007d7e05fcfc6fb9c17857dfd3f355",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Önceki sorunun aynı Kudüs cevabını tekrar etmesi ve Bağdat anakronizmi giderildi. Mevcut açıklamadaki gerçek süre soruldu; 16/17 rivayet farkı aralıkla korunuyor.",
+        "optionReview": {
+          "o4": "Başka süre aralığı.",
+          "o3": "105. satırın rivayet aralığı.",
+          "o1": "Başka yakın süre aralığı.",
+          "o2": "Başka süre aralığı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
+          "locator": "104–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4741,8 +5486,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-aksa-sehir",
+        "reviewedCandidateSha256": "a98b6779815bf271309436e14ef2f4c22aa65db4272d7a40dec889530f39b4c6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört bölgenin önemli gerçek şehri. Aksâ’nın Kudüs/Beytülmakdis oluşu kaynakta açık; mescidin anlamı ile şehrin adı ayrıdır.",
+        "optionReview": {
+          "o1": "Başka kutsal şehir.",
+          "o2": "Başka kutsal şehir.",
+          "o3": "Başka tarihî şehir.",
+          "o4": "96–99’un Kudüs’ü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-aksa",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

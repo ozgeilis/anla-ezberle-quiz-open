@@ -3,12 +3,12 @@
   "start": 1201,
   "end": 1250,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 20,
+  "pendingReview": 30,
+  "sourceComparedThisRound": 20,
   "blocked": 0,
   "flaggedBefore": 6,
-  "flaggedAfter": 2,
+  "flaggedAfter": 3,
   "records": [
     {
       "sequence": 1201,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-kulliye-tanim",
+        "reviewedCandidateSha256": "66063009b4e20925be72eaf3811212c74f3cdb23882d4ce9166f21dd4bf8f12a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek yapı/kurum terimi. Birbiriyle ilişkili hizmet birimleri külliye, diğerleri tek baskın işlevli yapılardır. Mimari tanımın kendisi soruluyor; üç saçma seçenek yok.",
+        "optionReview": {
+          "o1": "Ticari yapı.",
+          "o2": "Konaklama yapısı.",
+          "o3": "Gözlem kurumu.",
+          "o4": "96–105’in çok işlevli topluluğu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kulliye",
+          "locator": "96–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -140,20 +164,20 @@
         "question": "Mardin'deki Emînüddin Külliyesi hangi hanedan dönemiyle ilişkilidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Gazneliler"
-          },
-          {
-            "id": "o2",
-            "text": "Eyyûbîler"
+            "id": "o4",
+            "text": "Mengücekoğulları"
           },
           {
             "id": "o3",
             "text": "Artuklular"
           },
           {
-            "id": "o4",
-            "text": "Osmanlılar"
+            "id": "o1",
+            "text": "Eyyûbîler"
+          },
+          {
+            "id": "o2",
+            "text": "Zengîler"
           }
         ],
         "correctOptionId": "o3",
@@ -161,20 +185,46 @@
         "explanation": "TDV Külliye maddesi Anadolu'daki erken külliye örneklerinden Mardin Emînüddin Külliyesi'ni Artuklular dönemine tarihlendirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kulliye",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kulliye",
-            "locator": "Artuklu Mardin Emînüddin Külliyesi",
+            "locator": "96–102. satırlar",
             "supports": "TDV Külliye maddesi Anadolu'daki erken külliye örneklerinden Mardin Emînüddin Külliyesi'ni Artuklular dönemine tarihlendirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-kulliye-artuk",
+        "reviewedCandidateSha256": "4b7c602a52a4b146b3d6a494a4ab73c8a31bb6e54e583273618dfb4d868644bc",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Farklı çağ ve uzak bölge hanedanları yerine dört yakın Anadolu/Cezire hanedanı. Emînüddin Artuklu, Divriği Mengücekli örnekleri kaynakta ayrıdır.",
+        "optionReview": {
+          "o4": "100’deki Divriği örneği.",
+          "o3": "100’ün Mardin örneği.",
+          "o1": "Başka bölgesel hanedan.",
+          "o2": "Başka bölgesel hanedan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kulliye",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -221,23 +271,23 @@
         ]
       },
       "after": {
-        "question": "Divriği Ulucamii ile birlikte tarihî külliye oluşturan sağlık yapısı hangisidir?",
+        "question": "Divriği Ulucamii ile birlikte tasarlanıp inşa edilen ana yapı hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Saray"
+            "id": "o4",
+            "text": "Kervansaray"
           },
           {
             "id": "o2",
             "text": "Dârüşşifâ"
           },
           {
-            "id": "o3",
-            "text": "Darphane"
+            "id": "o1",
+            "text": "Medrese"
           },
           {
-            "id": "o4",
-            "text": "Tersane"
+            "id": "o3",
+            "text": "İmaret"
           }
         ],
         "correctOptionId": "o2",
@@ -245,20 +295,46 @@
         "explanation": "TDV Külliye maddesi Divriği Ulucamii, Dârüşşifâsı ve Türbesi'nin birlikte bir külliye programı içinde inşa edildiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kulliye",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kulliye",
-            "locator": "Divriği Ulucamii ve Dârüşşifâ",
+            "locator": "99–102. satırlar",
             "supports": "TDV Külliye maddesi Divriği Ulucamii, Dârüşşifâsı ve Türbesi'nin birlikte bir külliye programı içinde inşa edildiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-kulliye-div",
+        "reviewedCandidateSha256": "a6fe7e4c0128ed870a49aef6fcf6975bf84c385c9e1c3635f8012d7dcdd67371",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Sağlık yapısı diyerek yalnız sağlık sözünü seçtiren kök ve tersane/darphane gibi uzak öğeler kaldırıldı. Dört külliye unsurundan Divriği’deki eş yapı sorulur; türbe de gerçekten var olduğundan yanlış şık yapılmadı.",
+        "optionReview": {
+          "o4": "Başka külliye unsuru.",
+          "o2": "100’deki eş yapı.",
+          "o1": "Başka külliye unsuru.",
+          "o3": "Başka külliye unsuru."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kulliye",
+          "locator": "99–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -317,11 +393,11 @@
           },
           {
             "id": "o3",
-            "text": "Ali Kuşçu"
+            "text": "Dâvud Ağa"
           },
           {
             "id": "o4",
-            "text": "Mimar Kemâleddin"
+            "text": "Acem Ali"
           }
         ],
         "correctOptionId": "o1",
@@ -329,20 +405,46 @@
         "explanation": "TDV İstanbul maddesi Süleymaniye Külliyesi'nin Kanûnî Sultan Süleyman tarafından Mimar Sinan'a yaptırıldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — istanbul",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/istanbul",
-            "locator": "Süleymaniye Külliyesi ve Sinan",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/suleymaniye-camii-ve-kulliyesi",
+            "locator": "94–109. satırlar",
             "supports": "TDV İstanbul maddesi Süleymaniye Külliyesi'nin Kanûnî Sultan Süleyman tarafından Mimar Sinan'a yaptırıldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-istanbul-sul",
+        "reviewedCandidateSha256": "2232ef3218186c1e01b49655fb50e074d584d177d6c266aaf87987acb7472f11",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ali Kuşçu gibi farklı meslek ve Kemâleddin gibi çok sonraki çağ yerine dört klasik Osmanlı mimarı. Sinan’ın eser aidiyeti sorulur.",
+        "optionReview": {
+          "o1": "Külliyenin mimarı.",
+          "o2": "Başka klasik Osmanlı mimarı.",
+          "o3": "Başka klasik Osmanlı mimarı.",
+          "o4": "Başka klasik Osmanlı mimarı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suleymaniye-camii-ve-kulliyesi",
+          "locator": "94–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -392,41 +494,67 @@
         "question": "İstanbul Süleymaniye Külliyesi'nin ana inşaatı hangi yıllar arasında sürmüştür?",
         "options": [
           {
-            "id": "o1",
-            "text": "1399-1400"
-          },
-          {
             "id": "o2",
-            "text": "1251-1254"
+            "text": "1560–1567"
           },
           {
             "id": "o3",
-            "text": "1609-1616"
+            "text": "1570–1577"
           },
           {
             "id": "o4",
-            "text": "1550-1557"
+            "text": "1550–1557"
+          },
+          {
+            "id": "o1",
+            "text": "1540–1547"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "1550-1557",
+        "correctAnswer": "1550–1557",
         "explanation": "TDV İstanbul maddesi Süleymaniye Külliyesi'nin inşasına 1550'de başlanıp 1557'de tamamlandığını kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — istanbul",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/istanbul",
-            "locator": "1550-1557 Süleymaniye inşaatı",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/suleymaniye-camii-ve-kulliyesi",
+            "locator": "102–111. satırlar",
             "supports": "TDV İstanbul maddesi Süleymaniye Külliyesi'nin inşasına 1550'de başlanıp 1557'de tamamlandığını kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-istanbul-yil",
+        "reviewedCandidateSha256": "567d63db12b0b5167742bdccc062d0084a0a72f1e65fae18dad018688dc15e19",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Farklı yüzyıllar yerine aynı sürede dört yakın 16. yüzyıl aralığı. Temel 1550/açılış 1557; gün konusunda kaynağın tartışması soru dışıdır.",
+        "optionReview": {
+          "o2": "Başka yakın aralık.",
+          "o3": "Başka yakın aralık.",
+          "o4": "102 ve 109’un yıl aralığı.",
+          "o1": "Başka yakın aralık."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suleymaniye-camii-ve-kulliyesi",
+          "locator": "102–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -476,20 +604,20 @@
         "question": "İstanbul'daki Sultan Ahmed Camii'nin mimarı kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sâhib Ata"
-          },
-          {
-            "id": "o2",
-            "text": "İbn Haldûn"
+            "id": "o4",
+            "text": "Acem Ali"
           },
           {
             "id": "o3",
             "text": "Sedefkâr Mehmed Ağa"
           },
           {
-            "id": "o4",
+            "id": "o1",
             "text": "Mimar Sinan"
+          },
+          {
+            "id": "o2",
+            "text": "Dâvud Ağa"
           }
         ],
         "correctOptionId": "o3",
@@ -497,20 +625,46 @@
         "explanation": "TDV İstanbul maddesi Sultan I. Ahmed'in camiyi mimar Sedefkâr Mehmed Ağa'ya yaptırdığını açıkça anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — istanbul",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/istanbul",
-            "locator": "Sultan Ahmed Camii mimarı",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/sultan-ahmed-camii-ve-kulliyesi",
+            "locator": "94–100. satırlar",
             "supports": "TDV İstanbul maddesi Sultan I. Ahmed'in camiyi mimar Sedefkâr Mehmed Ağa'ya yaptırdığını açıkça anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-istanbul-sultan",
+        "reviewedCandidateSha256": "ba29e97b23801c212cdafb45cbc400c0871ac958bd776b64b87ce96a8a7e7f1e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Devlet adamı ve tarihçi yerine dört klasik Osmanlı mimarı. Sultan Ahmed’in devrinin başmimarı kaynağın açık Sedefkâr’ıdır.",
+        "optionReview": {
+          "o4": "Başka klasik mimar.",
+          "o3": "94. satırın başmimarı.",
+          "o1": "Önceki klasik mimar.",
+          "o2": "Başka klasik mimar."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sultan-ahmed-camii-ve-kulliyesi",
+          "locator": "94–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -557,23 +711,23 @@
         ]
       },
       "after": {
-        "question": "Edirne Selimiye Camii hangi Osmanlı padişahı adına inşa edilmiştir?",
+        "question": "Edirne’de Mimar Sinan’ın 1568–1574’te inşa ettiği büyük caminin bânisi kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "IV. Mehmed"
+            "id": "o3",
+            "text": "III. Murad"
+          },
+          {
+            "id": "o4",
+            "text": "II. Bayezid"
           },
           {
             "id": "o2",
             "text": "II. Selim"
           },
           {
-            "id": "o3",
+            "id": "o1",
             "text": "Kanûnî Süleyman"
-          },
-          {
-            "id": "o4",
-            "text": "I. Murad"
           }
         ],
         "correctOptionId": "o2",
@@ -581,20 +735,46 @@
         "explanation": "TDV Selimiye Camii ve Külliyesi ile II. Selim maddeleri, Edirne'deki külliyenin II. Selim adına Mimar Sinan tarafından yapıldığını doğrular.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — selimiye-camii-ve-kulliyesi--edirne",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/selimiye-camii-ve-kulliyesi--edirne",
-            "locator": "II. Selim döneminde Selimiye",
+            "locator": "94–97. satırlar",
             "supports": "TDV Selimiye Camii ve Külliyesi ile II. Selim maddeleri, Edirne'deki külliyenin II. Selim adına Mimar Sinan tarafından yapıldığını doğrular.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-selimiye-bani",
+        "reviewedCandidateSha256": "37ff94b00f49fca7a59afccd52aabe0ee399cbb9bdc6632b9b43a5222dd2b6ed",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Selimiye adını Selim adına eşleştiren kök kaldırıldı. Dört Osmanlı padişahı; III. Murad devrindeki ek bölümlerin tamamlanması asıl bânilik değildir.",
+        "optionReview": {
+          "o3": "95’in sonraki tamamlama dönemi.",
+          "o4": "Daha önceki padişah.",
+          "o2": "94’ün asıl bânisi.",
+          "o1": "Önceki padişah."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selimiye-camii-ve-kulliyesi--edirne",
+          "locator": "94–97. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -677,8 +857,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-selimiye-sehir",
+        "reviewedCandidateSha256": "a8303a7214e6e988589e7fd22f93e177020327483e27517ddf484a47a8240fd6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Anadolu/Rumeli şehri. Sinan’ın Selimiye’si 94–97’de Edirne bağlamında açık; başka Selimiye adları bu mimar kaydıyla karışmaz.",
+        "optionReview": {
+          "o1": "94–97’nin Edirne’si.",
+          "o2": "Başka tarihî şehir.",
+          "o3": "Başka tarihî şehir.",
+          "o4": "Başka tarihî şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selimiye-camii-ve-kulliyesi--edirne",
+          "locator": "94–97. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -728,6 +932,10 @@
         "question": "Bedir kasabası Medine'nin yaklaşık hangi yönünde yer alır?",
         "options": [
           {
+            "id": "o4",
+            "text": "Kuzeybatısında"
+          },
+          {
             "id": "o1",
             "text": "Güneybatısında"
           },
@@ -737,11 +945,7 @@
           },
           {
             "id": "o3",
-            "text": "Tam doğusunda"
-          },
-          {
-            "id": "o4",
-            "text": "Kuzeybatısında"
+            "text": "Güneydoğusunda"
           }
         ],
         "correctOptionId": "o1",
@@ -749,20 +953,46 @@
         "explanation": "TDV Bedir Gazvesi maddesi Bedir'i Medine'nin yaklaşık 160 kilometre güneybatısında bir yerleşim olarak tanıtır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Bedir'in coğrafî konumu",
+            "locator": "102–108. satırlar",
             "supports": "TDV Bedir Gazvesi maddesi Bedir'i Medine'nin yaklaşık 160 kilometre güneybatısında bir yerleşim olarak tanıtır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-yerkonum",
+        "reviewedCandidateSha256": "5e45f3cf909ea65b120f942db318cdbbe491724faa59e23eadac451b9aa95e03",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tam doğusunda ifadesi yerine dört eş biçimli ara yön. Kaynağın yaklaşık 160 km güneybatı tarifi korunur; hassas pusula açısı iddia edilmez.",
+        "optionReview": {
+          "o4": "Başka ara yön.",
+          "o1": "102. satırın yaklaşık yönü.",
+          "o2": "Başka ara yön.",
+          "o3": "Başka ara yön."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "102–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -845,8 +1075,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-kervan",
+        "reviewedCandidateSha256": "1b0f3ba2ed960e94ab578a2be5f220990d0f17572b4a51c3af9f9263722f075f",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek erken Kureyş ileri geleni. Ebû Süfyân kervan yöneticisi, Ebû Cehil kurtarmaya gelen ordunun kumandanıdır; 103–107 bu farkı açıklar.",
+        "optionReview": {
+          "o1": "Başka Kureyş ileri geleni.",
+          "o2": "Başka Kureyş ileri geleni.",
+          "o3": "103 ve 106’nın kervan yöneticisi.",
+          "o4": "106’nın ordu kumandanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "102–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -893,23 +1147,23 @@
         ]
       },
       "after": {
-        "question": "Bedir öncesinde kervan hakkında haber toplamak üzere gönderilen iki sahâbîden biri kimdir?",
+        "question": "Peygamber’in Medine’den çıkışından on gün önce kervanı izlemekle görevlendirdiği iki sahâbîden biri kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Abdullah b. Abbas"
+            "id": "o3",
+            "text": "Sa‘d b. Ebû Vakkās"
+          },
+          {
+            "id": "o4",
+            "text": "Abdullah b. Cahş"
           },
           {
             "id": "o2",
             "text": "Talha b. Ubeydullah"
           },
           {
-            "id": "o3",
-            "text": "Ebû Zer el-Gıfârî"
-          },
-          {
-            "id": "o4",
-            "text": "Huzeyfe b. Yemân"
+            "id": "o1",
+            "text": "Zübeyr b. Avvâm"
           }
         ],
         "correctOptionId": "o2",
@@ -917,20 +1171,46 @@
         "explanation": "TDV Bedir Gazvesi maddesinde Talha b. Ubeydullah ile Saîd b. Zeyd'in kervan hakkında bilgi toplamakla görevlendirildiği yazılıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Bedir keşif görevlileri",
+            "locator": "103–108. satırlar",
             "supports": "TDV Bedir Gazvesi maddesinde Talha b. Ubeydullah ile Saîd b. Zeyd'in kervan hakkında bilgi toplamakla görevlendirildiği yazılıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-muhbir",
+        "reviewedCandidateSha256": "e9d54ee1ae91d231b08f43562f7d27dd561ea46b7cf625e595b8bf5fc78cfde9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Çocuk veya ilgisiz kişilere karşı tek keşif görevlisi yerine dört yetişkin sahâbî. Zübeyr ve Sa‘d da daha sonra kuyularda haber toplar; on gün önceki ikiliyi belirten kök yeni çoklu doğruyu önler. Diğer gerçek görevli Saîd b. Zeyd yanlış şık yapılmadı.",
+        "optionReview": {
+          "o3": "107–108’deki daha sonraki keşif grubundan.",
+          "o4": "Başka keşif/seriyye bağlantılı sahâbî.",
+          "o2": "103–104’ün ilk ikilisinden.",
+          "o1": "107–108’deki daha sonraki keşif grubundan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "103–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -980,20 +1260,20 @@
         "question": "Bedir'de İslâm ordusunda bulunan muhacirlerin sayısı TDV maddesinde kaç olarak verilir?",
         "options": [
           {
+            "id": "o3",
+            "text": "Yetmiş altı"
+          },
+          {
+            "id": "o4",
+            "text": "Yetmiş sekiz"
+          },
+          {
             "id": "o1",
             "text": "Yetmiş dört"
           },
           {
             "id": "o2",
-            "text": "Yirmi"
-          },
-          {
-            "id": "o3",
-            "text": "Yüz elli"
-          },
-          {
-            "id": "o4",
-            "text": "İki yüz"
+            "text": "Yetmiş iki"
           }
         ],
         "correctOptionId": "o1",
@@ -1001,20 +1281,71 @@
         "explanation": "TDV Bedir Gazvesi maddesi İslâm ordusunda yetmiş dört muhacir bulunduğunu ve geri kalanların ensardan geldiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Bedir ordusunun muhacirleri",
+            "locator": "104–106. satırlar",
             "supports": "TDV Bedir Gazvesi maddesi İslâm ordusunda yetmiş dört muhacir bulunduğunu ve geri kalanların ensardan geldiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-muhacir",
+        "reviewedCandidateSha256": "fd3af36563efb47290aa8f7c04e7d05278bfe43c390a345a175f3c971bad696f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç yuvarlak/uç sayıya karşı tek hassas sayı kaldırıldı. Dört yakın çift sayı; kaynak 74 muhaciri izinli sayılanlardan ve toplamdan ayırır.",
+        "optionReview": {
+          "o3": "Başka yakın sayı.",
+          "o4": "Başka yakın sayı.",
+          "o1": "105’in muhacir sayısı.",
+          "o2": "Başka yakın sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "104–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1064,20 +1395,20 @@
         "question": "TDV'ye göre Bedir seferinde İslâm ordusunda kaç at bulunuyordu?",
         "options": [
           {
-            "id": "o1",
-            "text": "On"
-          },
-          {
-            "id": "o2",
-            "text": "Otuz"
-          },
-          {
             "id": "o3",
-            "text": "Yüz"
+            "text": "Sekiz"
           },
           {
             "id": "o4",
             "text": "İki"
+          },
+          {
+            "id": "o1",
+            "text": "Dört"
+          },
+          {
+            "id": "o2",
+            "text": "Altı"
           }
         ],
         "correctOptionId": "o4",
@@ -1085,20 +1416,46 @@
         "explanation": "TDV Bedir Gazvesi maddesi müslümanların ordusunda yetmiş deveyle birlikte iki at bulunduğunu bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Bedir ordusundaki atlar",
+            "locator": "104–106. satırlar",
             "supports": "TDV Bedir Gazvesi maddesi müslümanların ordusunda yetmiş deveyle birlikte iki at bulunduğunu bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-at",
+        "reviewedCandidateSha256": "1e621e76b5d7831408f95785e6cabb0801856210136eed0ef7f17b3825903f30",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "On/yüz gibi uç sayılara karşı tek çok düşük sayı yerine dört yakın düşük at sayısı. 70 deveyi at sayısına karıştırmadan TDV’deki iki at sorulur.",
+        "optionReview": {
+          "o3": "Başka yakın sayı.",
+          "o4": "105’in at sayısı.",
+          "o1": "Başka yakın sayı.",
+          "o2": "Başka yakın sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "104–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1145,44 +1502,70 @@
         ]
       },
       "after": {
-        "question": "Bedir'de sancaktarlıkla görevlendirilenler arasında hangisi vardır?",
+        "question": "TDV Bedir Gazvesi maddesinde sancaktar olarak adı anılan sahâbî kimdir?",
         "options": [
           {
             "id": "o1",
-            "text": "Nizâmülmülk"
+            "text": "Zeyd b. Hârise"
           },
           {
             "id": "o2",
-            "text": "Mimar Sinan"
-          },
-          {
-            "id": "o3",
-            "text": "Mus'ab b. Umeyr"
+            "text": "Bilâl-i Habeşî"
           },
           {
             "id": "o4",
-            "text": "İbn Battûta"
+            "text": "Sa‘d b. Ebû Vakkās"
+          },
+          {
+            "id": "o3",
+            "text": "Mus‘ab b. Umeyr"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Mus'ab b. Umeyr",
+        "correctAnswer": "Mus‘ab b. Umeyr",
         "explanation": "TDV Bedir Gazvesi maddesi Mus'ab b. Umeyr, Hz. Ali ve Sa'd b. Muâz'ın sancaktar olarak görevlendirildiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Bedir'deki sancaktarlar",
+            "locator": "104–108. satırlar",
             "supports": "TDV Bedir Gazvesi maddesi Mus'ab b. Umeyr, Hz. Ali ve Sa'd b. Muâz'ın sancaktar olarak görevlendirildiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-sancak",
+        "reviewedCandidateSha256": "f2b96bec6c44ec5d18fc5e39a1890cedce566e28570dab8260f54f93edf3fa1b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç yüzyıllar sonraki vezir/mimar/seyyaha karşı tek sahâbî kaldırıldı. Dört aynı dönem sahâbî; Ali ve Sa‘d b. Muâz da gerçek sancaktar olduğundan yanlış şık yapılmadı.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Başka sahâbî.",
+          "o4": "Keşif görevlisi; kaynak sancaktar listesinde değil.",
+          "o3": "104–105’te adı anılan sancaktar."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "104–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1233,19 +1616,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "632"
-          },
-          {
-            "id": "o2",
-            "text": "624"
+            "text": "625"
           },
           {
             "id": "o3",
-            "text": "610"
+            "text": "627"
           },
           {
             "id": "o4",
             "text": "628"
+          },
+          {
+            "id": "o2",
+            "text": "624"
           }
         ],
         "correctOptionId": "o2",
@@ -1253,20 +1636,46 @@
         "explanation": "TDV Bedir Gazvesi maddesi müslümanlar ile Mekkeli müşrikler arasındaki Bedir Savaşı'nı hicrî 2, milâdî 624 yılına tarihlendirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "2/624 savaş tarihi",
+            "locator": "103–108. satırlar",
             "supports": "TDV Bedir Gazvesi maddesi müslümanlar ile Mekkeli müşrikler arasındaki Bedir Savaşı'nı hicrî 2, milâdî 624 yılına tarihlendirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-bedir-sefer",
+        "reviewedCandidateSha256": "371a7ddc967590712cc5f5387c4e208d83c67051b4fc1a46a4a990243a172b9c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İlk vahiy/vefat gibi uzak dönüm noktaları yerine dört yakın gazve yılı. Milâdî 624 ile hicrî 2 ayrımı açık.",
+        "optionReview": {
+          "o1": "Uhud yılı.",
+          "o3": "Hendek yılı.",
+          "o4": "Hudeybiye/Hayber yılı.",
+          "o2": "103–104’ün Bedir yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+          "locator": "103–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1317,40 +1726,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Bedir yenilgisinin intikamını almak"
+            "text": "Bedir yenilgisinin karşılığını almak"
           },
           {
             "id": "o2",
-            "text": "Medine'ye ticaret vergisi ödemek"
+            "text": "Hayber’deki kaleleri ele geçirmek"
           },
           {
             "id": "o3",
-            "text": "Hac yolu açmak"
+            "text": "Suriye’deki garnizonları kuşatmak"
           },
           {
             "id": "o4",
-            "text": "Barış elçiliği yapmak"
+            "text": "Yemen’deki limanları denetim altına almak"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Bedir yenilgisinin intikamını almak",
+        "correctAnswer": "Bedir yenilgisinin karşılığını almak",
         "explanation": "TDV Uhud Gazvesi maddesi Bedir yenilgisinden sonra Mekkeli müşriklerin intikam amacıyla hazırlık yaptıklarını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — uhud-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
-            "locator": "Uhud'un sebepleri",
+            "locator": "105–109. satırlar",
             "supports": "TDV Uhud Gazvesi maddesi Bedir yenilgisinden sonra Mekkeli müşriklerin intikam amacıyla hazırlık yaptıklarını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-uhud-intikam",
+        "reviewedCandidateSha256": "0a406092303e1b2d95e6e161b3c5f65f83fc968ad63a17e9791135f2bcb350b5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç barış/ödeme amacına karşı tek savaş niyeti yerine dört gerçekçi askerî/siyasi hedef. Kaynak Mekke’nin Bedir intikamına açık bağını verir; diğer hedefler gerçekleşti diye iddia edilmez.",
+        "optionReview": {
+          "o1": "105–106’nın Bedir karşılığı/intikamı.",
+          "o2": "Başka askerî hedef.",
+          "o3": "Başka askerî hedef.",
+          "o4": "Başka askerî hedef."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "105–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1400,20 +1835,20 @@
         "question": "TDV'ye göre Uhud öncesi Mekkeli müşrik ordusu yaklaşık kaç kişiydi?",
         "options": [
           {
+            "id": "o4",
+            "text": "3.000"
+          },
+          {
             "id": "o1",
-            "text": "500"
+            "text": "2.000"
           },
           {
             "id": "o2",
-            "text": "10.000"
+            "text": "4.000"
           },
           {
             "id": "o3",
-            "text": "20.000"
-          },
-          {
-            "id": "o4",
-            "text": "3.000"
+            "text": "5.000"
           }
         ],
         "correctOptionId": "o4",
@@ -1421,20 +1856,46 @@
         "explanation": "TDV Uhud Gazvesi maddesi Kureyş'in yıl boyunca yaptığı hazırlıklar sonucunda üç bin kişilik kuvvet oluşturduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — uhud-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
-            "locator": "Uhud'daki müşrik ordusunun sayısı",
+            "locator": "105–108. satırlar",
             "supports": "TDV Uhud Gazvesi maddesi Kureyş'in yıl boyunca yaptığı hazırlıklar sonucunda üç bin kişilik kuvvet oluşturduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-uhud-ordu",
+        "reviewedCandidateSha256": "a4818d3b23caa7886379e515475e015a949ef08da3ab9b82cd0612a4d1b19cb4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "500/10 bin/20 bin gibi farklı ölçekler yerine dört yakın binlik sayı. 2000 ücretli asker toplam 3000’in alt kümesidir; ikisi aynı toplam sayı değil.",
+        "optionReview": {
+          "o4": "107’nin toplam ordusu.",
+          "o1": "107’deki ücretli alt grup.",
+          "o2": "Başka yakın toplam.",
+          "o3": "Başka yakın toplam."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "105–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1481,44 +1942,70 @@
         ]
       },
       "after": {
-        "question": "Uhud seferi hazırlıkları için hangi kaynağın kârı kullanılmaya karar verilmiştir?",
+        "question": "Uhud seferi hazırlıkları için hangi kervanın kârının kullanılmasına karar verilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hayber tarımının"
-          },
-          {
-            "id": "o2",
-            "text": "Bizans devlet hazinesinin"
+            "id": "o4",
+            "text": "Habeşistan’dan dönen ticaret kervanı"
           },
           {
             "id": "o3",
-            "text": "Ebû Süfyân'ın kurtardığı ticaret kervanının"
+            "text": "Suriye’den dönen ticaret kervanı"
           },
           {
-            "id": "o4",
-            "text": "Medine'nin zekât gelirinin"
+            "id": "o1",
+            "text": "Yemen’den dönen ticaret kervanı"
+          },
+          {
+            "id": "o2",
+            "text": "Bahreyn’den dönen ticaret kervanı"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Ebû Süfyân'ın kurtardığı ticaret kervanının",
+        "correctAnswer": "Suriye’den dönen ticaret kervanı",
         "explanation": "TDV Uhud Gazvesi maddesi Bedir'den kurtulan Ebû Süfyân kervanının kârının savaş hazırlıkları için ayrılmasına karar verildiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — uhud-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
-            "locator": "Uhud için kervan kârı",
+            "locator": "105–108. satırlar; Bedir 103–106",
             "supports": "TDV Uhud Gazvesi maddesi Bedir'den kurtulan Ebû Süfyân kervanının kârının savaş hazırlıkları için ayrılmasına karar verildiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-uhud-kervan",
+        "reviewedCandidateSha256": "cdb48e1957505af1ae0dc8ccfaa2e3d4730d1c093717ad8e7c9bbdd0395faba1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Uzun tek doğru cevaba karşı erişilmesi imkânsız düşman devlet hazineleri yerine dört bölgesel ticaret güzergâhı aynı dilde. Ebû Süfyân’ın Suriye kervanı Bedir ve Uhud pasajları birlikte okunarak doğrulandı.",
+        "optionReview": {
+          "o4": "Başka bölgesel yolculuk varsayımı.",
+          "o3": "Ebû Süfyân’ın Bedir’den kurtulan kervanı.",
+          "o1": "Başka bölgesel yolculuk varsayımı.",
+          "o2": "Başka bölgesel yolculuk varsayımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "105–108. satırlar; Bedir 103–106",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1601,8 +2088,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-uhud-yil",
+        "reviewedCandidateSha256": "307080c7bebf6fcb8e549fc3fbd8a37a647d50699302b06ceb8597f7a448908a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hicrî yıl. Kaynak 7 veya 11 Şevval 3 tarih rivayetleri verir; gün farkı sabit üçüncü hicrî yılı değiştirmez.",
+        "optionReview": {
+          "o1": "Başka hicrî yıl.",
+          "o2": "115’in hicrî yılı.",
+          "o3": "Başka hicrî yıl.",
+          "o4": "Başka hicrî yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "113–117. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1685,8 +2196,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-uhud-mekan",
+        "reviewedCandidateSha256": "17b4f355bf7e34bf16b24d684db8bb51c613199e918debe117844bc96b906460",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört bölgesel gerçek şehir. Medine kuzeyindeki dağın ve gazvenin konumu 102’de açık; başka olayın şehriyle karışabilecek temel tarih bilgisi.",
+        "optionReview": {
+          "o1": "102’nin Medine’si.",
+          "o2": "Başka bölgesel şehir.",
+          "o3": "Başka bölgesel şehir.",
+          "o4": "Başka tarihî şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
+          "locator": "102–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },

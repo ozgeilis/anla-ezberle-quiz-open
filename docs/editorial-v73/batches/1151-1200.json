@@ -3,12 +3,12 @@
   "start": 1151,
   "end": 1200,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 4,
-  "flaggedAfter": 2,
+  "flaggedAfter": 7,
   "records": [
     {
       "sequence": 1151,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q60-aksa-uzak",
+        "reviewedCandidateSha256": "2284dcc8395d25ed2ea91b05163dbdf7a2591e0fcb38bf8e055f0b6d181f22dc",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört enli sıfat aynı biçim ve uzunlukta. Aksâ uzak anlamındadır; parlak/eski/yüksek olumlu ama yanlış sözlük karşılıklarıdır.",
+        "optionReview": {
+          "o1": "Başka sıfat.",
+          "o2": "97. satırın uzak anlamı.",
+          "o3": "Başka sıfat.",
+          "o4": "Başka sıfat."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/mescid-i-aksa",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -140,41 +164,67 @@
         "question": "Hz. Hûd'un tebliğ ettiği Âd kavminin yaşadığı yer Kur'an'da hangi adla anılır?",
         "options": [
           {
+            "id": "o4",
+            "text": "Ahkāf"
+          },
+          {
             "id": "o1",
-            "text": "Medyen şehri"
+            "text": "Hicr"
           },
           {
             "id": "o2",
-            "text": "Tûr dağı"
+            "text": "Medyen"
           },
           {
             "id": "o3",
-            "text": "Hayber ovası"
-          },
-          {
-            "id": "o4",
-            "text": "Ahkāf bölgesi"
+            "text": "Sebe"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Ahkāf bölgesi",
+        "correctAnswer": "Ahkāf",
         "explanation": "Ahkāf 46/21'de Hz. Hûd'un kavmini Ahkāf bölgesinde uyardığı anlatılır; bölge Arap yarımadasının güneyiyle ilişkilendirilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Hûd",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Ahkāf 46/21'de Hz",
+            "locator": "101–106. satırlar",
             "supports": "Ahkāf 46/21'de Hz. Hûd'un kavmini Ahkāf bölgesinde uyardığı anlatılır; bölge Arap yarımadasının güneyiyle ilişkilendirilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-hud-ahkaf",
+        "reviewedCandidateSha256": "d395d39d8e1f1c9f9d2c1349dcf395b5aa349a5fabff548272630c9070b0b411",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı coğrafya türüne karşı tek bölge yerine dört Kur’an topluluğuyla ilişkilendirilen yer adı. PDF 46/21 kum tepeleri diye çevirir; Ahkāf adlandırması TDV’nin açık atfıyla karşılaştırıldı.",
+        "optionReview": {
+          "o4": "Hûd/Âd bölgesi.",
+          "o1": "Sâlih/Semûd bölgesi.",
+          "o2": "Şuayb bölgesi.",
+          "o3": "Başka Kur’an yer/topluluk adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hud",
+          "locator": "101–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -224,20 +274,20 @@
         "question": "Hâkka 69/7'de Âd kavmini etkileyen felâketin süresi nasıl belirtilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Üç gece dört gün"
-          },
-          {
             "id": "o2",
             "text": "Yedi gece sekiz gün"
           },
           {
+            "id": "o1",
+            "text": "Üç gece dört gün"
+          },
+          {
             "id": "o3",
-            "text": "Bir gece bir gün"
+            "text": "Beş gece altı gün"
           },
           {
             "id": "o4",
-            "text": "Otuz gün otuz gece"
+            "text": "Dokuz gece on gün"
           }
         ],
         "correctOptionId": "o2",
@@ -245,20 +295,46 @@
         "explanation": "Hâkka 69/6-7'de Âd kavmini etkileyen rüzgârın yedi gece sekiz gün boyunca üzerlerine musallat edildiği ifade edilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Hûd",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Hâkka 69/6-7'de Âd kavmini etkileyen rüzgârın yedi gece sekiz gün boyunca üzerlerine musallat edildiği ifade edilir",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "69/7; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Hâkka 69/6-7'de Âd kavmini etkileyen rüzgârın yedi gece sekiz gün boyunca üzerlerine musallat edildiği ifade edilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-hud-sure",
+        "reviewedCandidateSha256": "6e2fed3aa29c3e415a864507e734d6937c5b27010b82680167e69d993b5c96ca",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Doğru gece/gün çiftinin tek ardışık sayı görünümü olmaması için dört şık aynı n/n+1 yapısında. Gün ve gece sırası korunuyor.",
+        "optionReview": {
+          "o2": "7. âyetin tam süresi.",
+          "o1": "Başka gece/gün çifti.",
+          "o3": "Başka gece/gün çifti.",
+          "o4": "Başka gece/gün çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "69/7; PDF sayfa 609 (1 tabanlı), basılı sayfa 608",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -305,44 +381,70 @@
         ]
       },
       "after": {
-        "question": "Şuarâ 26/128-129'da Âd kavmi hangi davranışından dolayı eleştirilir?",
+        "question": "Şuarâ 26/128–129’da Âd kavmi hangi tutumundan dolayı eleştirilir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Yolculara baskıyla geçişi engellemek"
+          },
+          {
             "id": "o1",
-            "text": "Yüksek yerlere gösteriş için yapılar dikmesi"
+            "text": "Gösteriş için yüksek yapılar dikmek"
           },
           {
             "id": "o2",
-            "text": "Yoksullara yiyecek dağıtması"
+            "text": "Haksızlıkla ölçü ve tartıyı eksiltmek"
           },
           {
             "id": "o3",
-            "text": "Kardeşliği koruması"
-          },
-          {
-            "id": "o4",
-            "text": "Adil tartı kullanması"
+            "text": "Servet biriktirip yoksulu gözetmemek"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Yüksek yerlere gösteriş için yapılar dikmesi",
+        "correctAnswer": "Gösteriş için yüksek yapılar dikmek",
         "explanation": "Şuarâ 26/128-129, Âd kavminin yüksek yerlere anıtlar inşa etmesini ve sanki ebedî yaşayacakmış gibi sağlam yapılar yapmasını sorgular.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Hûd",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/hud",
-            "locator": "Şuarâ 26/128-129, Âd kavminin yüksek yerlere anıtlar inşa etmesini ve sanki ebedî yaşayacakmış gibi sağlam yapılar yapmasını sorgular",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "26/128; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Şuarâ 26/128-129, Âd kavminin yüksek yerlere anıtlar inşa etmesini ve sanki ebedî yaşayacakmış gibi sağlam yapılar yapmasını sorgular.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-hud-bina",
+        "reviewedCandidateSha256": "c40ff04f4ae7dcfaff155dbf33cd3fe0f899dbb880468eaf7fcc43bfd63aa33f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek kibir cevabına karşı üç iyi davranış kaldırıldı. Dört olumsuz toplumsal davranış; 128–129’un yapı/gösteriş hedefi belirli. Dipnot işlevsel yapıları da anıyor; bütün mimariyi kötü ilan etmiyor.",
+        "optionReview": {
+          "o4": "Başka toplumsal eleştiri.",
+          "o1": "128–129’un eleştirdiği amaç.",
+          "o2": "Şuayb bağlamında eleştirilen başka tutum.",
+          "o3": "Başka ahlâkî eleştiri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "26/128; PDF sayfa 392 (1 tabanlı), basılı sayfa 391",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -389,44 +491,70 @@
         ]
       },
       "after": {
-        "question": "Hz. Sâlih kavmini dişi deve hakkında özellikle neden uyarmıştır?",
+        "question": "Hûd 11/64’te Sâlih’in dişi deve için açıkça dile getirdiği talep hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Ona zarar vermemeleri için"
+            "text": "Serbest bırakılıp otlaması"
           },
           {
             "id": "o2",
-            "text": "Onu satmaları için"
+            "text": "Yük taşıması için eğitilmesi"
           },
           {
             "id": "o3",
-            "text": "Üzerine şehir kurmaları için"
+            "text": "Ahırda bağlı beslenmesi"
           },
           {
             "id": "o4",
-            "text": "Başka ülkeye götürmeleri için"
+            "text": "Sürünün başına geçirilmesi"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Ona zarar vermemeleri için",
+        "correctAnswer": "Serbest bırakılıp otlaması",
         "explanation": "Hûd 11/64 ve A'râf 7/73'te Sâlih'in kavmine deveyi serbest bırakıp ona zarar vermemelerini söylediği bildirilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Sâlih",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/salih--peygamber",
-            "locator": "Hûd 11/64 ve A'râf 7/73'te Sâlih'in kavmine deveyi serbest bırakıp ona zarar vermemelerini söylediği bildirilir",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "11/64; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Hûd 11/64 ve A'râf 7/73'te Sâlih'in kavmine deveyi serbest bırakıp ona zarar vermemelerini söylediği bildirilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-salihpeygamber-zarar",
+        "reviewedCandidateSha256": "40153967ddae3dd6f4a662961f108fe15082bdc42ef25cb505db32b7a354610a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Devenin üzerine şehir kurmak gibi imkânsız iş ve tek merhametli seçenek yerine dört gerçek hayvan idaresi biçimi. Âyetin bırakıp Allah’ın arazisinde otlamasına izin verme talebi açıktır.",
+        "optionReview": {
+          "o1": "64. âyetin serbest otlaması.",
+          "o2": "Başka hayvan kullanım biçimi.",
+          "o3": "Başka hayvan idaresi biçimi.",
+          "o4": "Başka hayvan idaresi biçimi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "11/64; PDF sayfa 240 (1 tabanlı), basılı sayfa 239",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -477,15 +605,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "Arafat"
+            "text": "Ahkāf"
           },
           {
             "id": "o2",
-            "text": "Beytülahm"
+            "text": "Medyen"
           },
           {
             "id": "o3",
-            "text": "Hıttîn"
+            "text": "Sebe"
           },
           {
             "id": "o4",
@@ -497,20 +625,46 @@
         "explanation": "TDV Sâlih maddesinde Semûd kavminin Hicr bölgesinde kayaları oyarak evler yaptığı ve kalıntıların bulunduğu anlatılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Sâlih",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/salih--peygamber",
-            "locator": "TDV Sâlih maddesinde Semûd kavminin Hicr bölgesinde kayaları oyarak evler yaptığı ve kalıntıların bulunduğu anlatılır",
+            "locator": "96–100. satırlar",
             "supports": "TDV Sâlih maddesinde Semûd kavminin Hicr bölgesinde kayaları oyarak evler yaptığı ve kalıntıların bulunduğu anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-salihpeygamber-hocr",
+        "reviewedCandidateSha256": "7fe5d0d02a8ec069fae3da085c70d1dfbf325d7ddb70da3a1d88b558215a75a4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Arafat/Beytülahm/Hıttîn yerine dört eski Kur’an coğrafyası. Kaya evleri ile Hicr/Semûd ilişkisi kaynakta açık; bütün bugünkü kalıntıların tarihlemesi hakkında ek iddia yok.",
+        "optionReview": {
+          "o1": "Hûd/Âd bölgesi.",
+          "o2": "Şuayb bölgesi.",
+          "o3": "Başka eski yer/topluluk adı.",
+          "o4": "99–100’ün Sâlih/Semûd bölgesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/salih--peygamber",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -557,37 +711,37 @@
         ]
       },
       "after": {
-        "question": "Hz. Sâlih'in kavmine tebliğ ettiği temel inanç çağrısı nedir?",
+        "question": "Hûd 11/61’de Sâlih’in kavmine söylediği temel inanç ilkesi hangisidir?",
         "options": [
           {
+            "id": "o3",
+            "text": "Allah’tan başka ilâh bulunmaması"
+          },
+          {
             "id": "o1",
-            "text": "Bütün şehirleri terk etmek"
+            "text": "İnsanın ölümden sonra diriltilmesi"
           },
           {
             "id": "o2",
-            "text": "Servet biriktirmek"
-          },
-          {
-            "id": "o3",
-            "text": "Yalnız Allah'a kulluk etmek"
+            "text": "Peygamberlere vahiy gönderilmesi"
           },
           {
             "id": "o4",
-            "text": "Yeni bir ilâh belirlemek"
+            "text": "İyiliklerin karşılığının verilmesi"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Yalnız Allah'a kulluk etmek",
+        "correctAnswer": "Allah’tan başka ilâh bulunmaması",
         "explanation": "Sâlih peygamber kavmini tevhid inancına, yani Allah'tan başka ilâh bulunmadığını kabul ederek O'na kulluk etmeye çağırır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Sâlih",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/salih--peygamber",
-            "locator": "Sâlih peygamber kavmini tevhid inancına, yani Allah'tan başka ilâh bulunmadığını kabul ederek O'na kulluk etmeye çağırır",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "11/61; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Sâlih peygamber kavmini tevhid inancına, yani Allah'tan başka ilâh bulunmadığını kabul ederek O'na kulluk etmeye çağırır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -601,18 +755,35 @@
           "detail": "Doğru cevap tek sınırlayıcı/mutlak ifade; ifade tek başına hata değildir"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-salihpeygamber-birlik",
+        "reviewedCandidateSha256": "0051a4b203c3a7e0f2e1e326c6be3788f5892a315389eb87ba474a52155041b8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç servet/göç/yeni ilah gibi alakasız veya yanlış işe karşı tek tevhid kaldırıldı. Dört olumlu inanç ilkesi; belirli âyetteki tevhid cümlesi soruluyor.",
+        "optionReview": {
+          "o3": "61. âyetin açık tevhidi.",
+          "o1": "Başka doğru inanç ilkesi.",
+          "o2": "Başka doğru inanç ilkesi.",
+          "o4": "Başka doğru inanç ilkesi."
         },
-        {
-          "kind": "only-correct-restrictive",
-          "detail": "Doğru cevap tek sınırlayıcı/mutlak ifade; ifade tek başına hata değildir"
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "11/61; PDF sayfa 240 (1 tabanlı), basılı sayfa 239",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -695,8 +866,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-meryem-himaye",
+        "reviewedCandidateSha256": "6731b7f4f2348124a52bc1750192df0e92eca2545ea64ad63afe22283deafb60",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber aynı isim türünde. 3/37 Zekeriyyâ’ya bakım görevi verildiğini, 44 kurayı anlatır; sayfa sınırını geçen rızık devamı da okundu.",
+        "optionReview": {
+          "o1": "Başka peygamber.",
+          "o2": "Başka peygamber.",
+          "o3": "Başka peygamber.",
+          "o4": "37. âyetin himaye edeni."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/37; PDF sayfa 61 (1 tabanlı), basılı sayfa 60",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -779,8 +974,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-meryem-dogum",
+        "reviewedCandidateSha256": "05f6a3bfc29f219d030c3a228139a243588886e345889a10d43e5e6c0a469ae1",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek ağaç. 19/23 hurma gövdesi, 25 hurma rızkı; başka ağaçlar gerçek ve ilgisiz nesne değiller.",
+        "optionReview": {
+          "o1": "Başka ağaç.",
+          "o2": "23. âyetin hurması.",
+          "o3": "Başka ağaç.",
+          "o4": "Başka ağaç."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/23; PDF sayfa 322 (1 tabanlı), basılı sayfa 321",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -827,44 +1046,70 @@
         ]
       },
       "after": {
-        "question": "Âl-i İmrân 3/42'ye göre melekler Meryem'e hangi özel haberi vermiştir?",
+        "question": "Âl-i İmrân 3/42’de Meryem’e ilişkin Allah’ın hangi iki fiili birlikte anılır?",
         "options": [
           {
+            "id": "o4",
+            "text": "Seçmesi ve arındırması"
+          },
+          {
             "id": "o1",
-            "text": "Uzak ülkeye göç edeceğini"
+            "text": "Bağışlaması ve yüceltmesi"
           },
           {
             "id": "o2",
-            "text": "Bir şehir kuracağını"
+            "text": "Koruması ve rızıklandırması"
           },
           {
             "id": "o3",
-            "text": "Ordunun başına geçeceğini"
-          },
-          {
-            "id": "o4",
-            "text": "Allah'ın onu seçip temiz kıldığını"
+            "text": "Öğretmesi ve yol göstermesi"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Allah'ın onu seçip temiz kıldığını",
+        "correctAnswer": "Seçmesi ve arındırması",
         "explanation": "Âl-i İmrân 3/42'de melekler Meryem'e Allah'ın onu seçtiğini, tertemiz kıldığını ve dünya kadınları arasında seçkin kıldığını bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Meryem ve Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/meryem",
-            "locator": "Âl-i İmrân 3/42'de melekler Meryem'e Allah'ın onu seçtiğini, tertemiz kıldığını ve dünya kadınları arasında seçkin kıldığını bildirir",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "3/42; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Âl-i İmrân 3/42'de melekler Meryem'e Allah'ın onu seçtiğini, tertemiz kıldığını ve dünya kadınları arasında seçkin kıldığını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-meryem-secilme",
+        "reviewedCandidateSha256": "f09b226ee10a79c1dd898566e5508ce365c5b3d90bf244318db0e5a2b61701d7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Göç/şehir/ordu gibi üç bağlam dışı beklenti yerine dört ilâhî lütuf çifti. 37’deki rızık ve diğer iyi nitelikler bu özel 42. âyet ifadesiyle karıştırılmaz.",
+        "optionReview": {
+          "o4": "42. âyetin iki fiili.",
+          "o1": "Başka olumlu ilâhî fiiller.",
+          "o2": "Başka olumlu ilâhî fiiller.",
+          "o3": "Başka olumlu ilâhî fiiller."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/42; PDF sayfa 62 (1 tabanlı), basılı sayfa 61",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -947,8 +1192,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-isa-incil",
+        "reviewedCandidateSha256": "cf7edd90436daffb7222a00f1e9fad6470ce2e85e147c574e76bfc9fff8227f0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ilâhî kitap/sahife adı. 5/46 Îsâ’ya İncil verildiğini söyler; Tevrat’ı doğrulaması onun kendisine verildiği anlamına gelmez.",
+        "optionReview": {
+          "o1": "Doğruladığı önceki kitap.",
+          "o2": "Başka peygambere nispetli sahifeler.",
+          "o3": "46. âyette verilen kitap.",
+          "o4": "Başka peygamberin kitabı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "5/46; PDF sayfa 123 (1 tabanlı), basılı sayfa 122",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1031,8 +1300,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-isa-meryem",
+        "reviewedCandidateSha256": "caa8167fb08747f9341f64e037f06e85ba066170cdcb19041eac9a5e49059f69",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek peygamber. 3/45 Meryem oğlu Îsâ Mesîh adını açık verir; nispet adı ile özel isim ilişkisi bilgi gerektirir.",
+        "optionReview": {
+          "o1": "Başka peygamber.",
+          "o2": "45. âyetin Meryem oğlu.",
+          "o3": "Başka peygamber.",
+          "o4": "Başka peygamber."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/45; PDF sayfa 63 (1 tabanlı), basılı sayfa 62",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1079,44 +1372,70 @@
         ]
       },
       "after": {
-        "question": "Âl-i İmrân 3/49'da Hz. Îsâ'ya verilen mûcizelerden biri hangi canlıyla ilgilidir?",
+        "question": "Âl-i İmrân 3/49’daki anlatımda Îsâ, çamurdan hangi canlının biçimini yapar?",
         "options": [
           {
-            "id": "o1",
-            "text": "Denizdeki balıkla"
-          },
-          {
             "id": "o2",
-            "text": "Dağdan çıkan deveyle"
+            "text": "At"
           },
           {
             "id": "o3",
-            "text": "Gemiye alınan atla"
+            "text": "Deve"
           },
           {
             "id": "o4",
-            "text": "Çamurdan yapılan kuşla"
+            "text": "Kuş"
+          },
+          {
+            "id": "o1",
+            "text": "Balık"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Çamurdan yapılan kuşla",
+        "correctAnswer": "Kuş",
         "explanation": "Âl-i İmrân 3/49'a göre Hz. Îsâ çamurdan kuş biçimi yapıp Allah'ın izniyle ona canlılık kazandırdığını bildirmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/isa",
-            "locator": "Âl-i İmrân 3/49'a göre Hz",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "3/49; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Âl-i İmrân 3/49'a göre Hz. Îsâ çamurdan kuş biçimi yapıp Allah'ın izniyle ona canlılık kazandırdığını bildirmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-isa-kus",
+        "reviewedCandidateSha256": "4461a2f470fc9a2353763ef66ef6bd1a2ff9da906c4e481396a59de18b62c32d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Gemiye alınan at gibi uydurma ayrıntılı çeldirici kaldırıldı. Dört gerçek hayvan adı aynı kısa yapıda; yaratmanın Allah’ın iznine bağlılığı açıklamada korunur.",
+        "optionReview": {
+          "o2": "Başka hayvan.",
+          "o3": "Başka hayvan.",
+          "o4": "49. âyetin kuşu.",
+          "o1": "Başka hayvan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "3/49; PDF sayfa 63 (1 tabanlı), basılı sayfa 62",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1199,8 +1518,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q61-isa-ahmed",
+        "reviewedCandidateSha256": "02038c5c4a7267e8f601f79cb024947837309a3d0cb85e30757258a3ac96ea58",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek peygamber adı. 61/6 özel isim Ahmed’i açık bildirir; açıklama yerine popüler menkıbe eklenmedi ve sonrakinin adını Meryem’den türetme yapılmadı.",
+        "optionReview": {
+          "o1": "6. âyetin müjdelenen adı.",
+          "o2": "Başka peygamber adı.",
+          "o3": "Başka peygamber adı.",
+          "o4": "Başka peygamber adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "61/6; PDF sayfa 591 (1 tabanlı), basılı sayfa 590",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1247,19 +1590,19 @@
         ]
       },
       "after": {
-        "question": "Haccın temel rükünlerinden olan vakfe hangi bölgede yapılır?",
+        "question": "Kaçırılması o yıl haccın tamamlanmasını engelleyen temel vakfe hangi yerde yapılır?",
         "options": [
           {
             "id": "o1",
-            "text": "Hayber"
+            "text": "Müzdelife"
           },
           {
             "id": "o2",
-            "text": "Hudeybiye"
+            "text": "Minâ"
           },
           {
             "id": "o3",
-            "text": "Kûfe"
+            "text": "Safâ"
           },
           {
             "id": "o4",
@@ -1271,20 +1614,46 @@
         "explanation": "Arafat vakfesi hac ibadetinin en önemli rükünlerinden biri olarak kabul edilir; zamanının kaçırılması haccı etkiler.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — hac",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hac",
-            "locator": "Arafat vakfesi hac ibadetinin en önemli rükünlerinden biri olarak kabul edilir; zamanının kaçırılması haccı etkiler",
+            "locator": "423–430. satırlar",
             "supports": "Arafat vakfesi hac ibadetinin en önemli rükünlerinden biri olarak kabul edilir; zamanının kaçırılması haccı etkiler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-hac-arafat",
+        "reviewedCandidateSha256": "640d859639f2deb18b61ec91c37aa7e18b3557d4fb5c7034057724af671e981e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hac alanı dışı yer yerine dört hac mekânı. Müzdelife’de de vakfe bulunduğundan o yıl haccın kaçırılması kaydı Arafat rüknünü belirler; vâcip ile rükün karışmaz.",
+        "optionReview": {
+          "o1": "430’daki başka vakfe; Hanefîlerde vâcip.",
+          "o2": "Başka hac menâsiki yeri.",
+          "o3": "Sa‘yin başladığı yer.",
+          "o4": "426–427’nin zorunlu zamanlı rüknü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hac",
+          "locator": "423–430. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1367,8 +1736,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-hac-sayi",
+        "reviewedCandidateSha256": "9d5515ea8046f40d9eb3846db01211b7466a5005b99d9c93c735cb8f9084e82b",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek hac terimi. Sa‘y Safâ–Merve yürüyüşü; tavaf Kâbe, telbiye sözlü çağrı, vakfe duruştur. Dört şık ayrı tanımsal hedefler.",
+        "optionReview": {
+          "o1": "Kâbe çevresindeki hareket.",
+          "o2": "Sözlü hac çağrısı.",
+          "o3": "430. satırın Safâ–Merve hareketi.",
+          "o4": "Belirli yerde duruş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hac",
+          "locator": "426–430. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1419,19 +1812,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mîrâs"
+            "text": "Tavaf"
+          },
+          {
+            "id": "o3",
+            "text": "Sa‘y"
+          },
+          {
+            "id": "o4",
+            "text": "Vakfe"
           },
           {
             "id": "o2",
             "text": "İhram"
-          },
-          {
-            "id": "o3",
-            "text": "Fidye"
-          },
-          {
-            "id": "o4",
-            "text": "Fitre"
           }
         ],
         "correctOptionId": "o2",
@@ -1439,20 +1832,46 @@
         "explanation": "İhram, hac veya umre yapan kimse için normal şartlarda mubah olan bazı davranışların yasak hâle gelmesiyle ilgili ibadet durumudur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — hac",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hac",
-            "locator": "İhram, hac veya umre yapan kimse için normal şartlarda mubah olan bazı davranışların yasak hâle gelmesiyle ilgili ibadet durumudur",
+            "locator": "423–430. satırlar",
             "supports": "İhram, hac veya umre yapan kimse için normal şartlarda mubah olan bazı davranışların yasak hâle gelmesiyle ilgili ibadet durumudur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-hac-ihram",
+        "reviewedCandidateSha256": "5cd3d196c6deaf2a95235609b00fc012884f229b07ddaeb6a280f234c7a30734",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Miras/fitre gibi uzak hukuk konuları yerine dört hac terimi. İhram ibadet durumu ve yasaklarla ilgilidir; salt giysi adı değildir.",
+        "optionReview": {
+          "o1": "Kâbe çevresindeki hareket.",
+          "o3": "Safâ–Merve hareketi.",
+          "o4": "Belirli yerde duruş.",
+          "o2": "423’teki yasaklarla bağlantılı durum."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hac",
+          "locator": "423–430. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1502,41 +1921,76 @@
         "question": "Hanefî mezhebine göre haccın üç temel farzı hangi gruptur?",
         "options": [
           {
+            "id": "o4",
+            "text": "Sa‘y, tıraş ve ziyaret tavafı"
+          },
+          {
             "id": "o1",
             "text": "İhram, Arafat vakfesi ve ziyaret tavafı"
           },
           {
             "id": "o2",
-            "text": "Sa'y, kurban ve zekât"
+            "text": "İhram, sa‘y ve ziyaret tavafı"
           },
           {
             "id": "o3",
-            "text": "Oruca niyet, fitre ve iftar"
-          },
-          {
-            "id": "o4",
-            "text": "Ezân, hutbe ve namaz"
+            "text": "İhram, Arafat vakfesi ve sa‘y"
           }
         ],
         "correctOptionId": "o1",
         "correctAnswer": "İhram, Arafat vakfesi ve ziyaret tavafı",
-        "explanation": "TDV Hac maddesi Hanefîler'in haccın temel farzlarını ihram, Arafat vakfesi ve ziyaret tavafı olarak sıraladığını belirtir; diğer mezhepler farklı rükün sayıları kabul edebilir.",
+        "explanation": "Hanefîler’e göre haccın üç farzı ihram, Arafat vakfesi ve ziyaret tavafıdır. TDV, ihramın şart, vakfe ve ziyaret tavafının rükün sayıldığını özellikle ayırır; diğer mezheplerin rükün sınıflandırmaları farklıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — hac",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hac",
-            "locator": "TDV Hac maddesi Hanefîler'in haccın temel farzlarını ihram, Arafat vakfesi ve ziyaret tavafı olarak sıraladığını belirtir; diğer mezhepler farklı rükün sayıları kabul edebilir",
-            "supports": "TDV Hac maddesi Hanefîler'in haccın temel farzlarını ihram, Arafat vakfesi ve ziyaret tavafı olarak sıraladığını belirtir; diğer mezhepler farklı rükün sayıları kabul edebilir.",
+            "locator": "426–430. satırlar",
+            "supports": "Hanefîler’e göre haccın üç farzı ihram, Arafat vakfesi ve ziyaret tavafıdır. TDV, ihramın şart, vakfe ve ziyaret tavafının rükün sayıldığını özellikle ayırır; diğer mezheplerin rükün sınıflandırmaları farklıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-hac-hanefi",
+        "reviewedCandidateSha256": "3adf439bf70864f615eefc7ce6bd5736bfe9910d0786d83a2e286b27a04d00dd",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ramazan/zekât/namaz grupları yerine tamamı hacca ait dört üçlü. İhram Hanefîlerde şart, diğer ikisi rükündür; üç farz ifadesi üç rükün diye yanlış açıklanmaz.",
+        "optionReview": {
+          "o4": "İhram ve Arafat eksik.",
+          "o1": "426’nın üç farzı.",
+          "o2": "Arafat yerine Hanefîlerde vâcip sa‘y var.",
+          "o3": "Ziyaret tavafı yerine vâcip sa‘y var."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hac",
+          "locator": "426–430. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1587,40 +2041,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mina'da beklemek"
+            "text": "Safâ ile Merve arasında yürümek"
           },
           {
             "id": "o2",
-            "text": "Mescid'de ezan okumak"
+            "text": "Arafat’ta bir süre beklemek"
           },
           {
             "id": "o3",
-            "text": "Bir dağa tırmanmak"
+            "text": "Minâ’da cemrelere taş atmak"
           },
           {
             "id": "o4",
-            "text": "Kâbe'nin etrafında dönmek"
+            "text": "Kâbe’nin etrafında dönmek"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Kâbe'nin etrafında dönmek",
+        "correctAnswer": "Kâbe’nin etrafında dönmek",
         "explanation": "TDV Tavaf maddesi terimi, Kâbe'nin etrafında dinen belirlenmiş usule uygun biçimde dönmek olarak tanımlar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — tavaf",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tavaf",
-            "locator": "TDV Tavaf maddesi terimi, Kâbe'nin etrafında dinen belirlenmiş usule uygun biçimde dönmek olarak tanımlar",
+            "locator": "96–100. satırlar",
             "supports": "TDV Tavaf maddesi terimi, Kâbe'nin etrafında dinen belirlenmiş usule uygun biçimde dönmek olarak tanımlar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-tavaf-anlam",
+        "reviewedCandidateSha256": "03c3dfbf9a070b7bb455a56b7a53298ee70b3f96117019d650be29e4a7b5af2a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ezan/dağa tırmanma gibi uzak hareketler yerine dört gerçek hac/umre menâsiki. Tavafın Kâbe çevresindeki dönüşü diğer yerlerdeki yürüyüş/duruştan ayrılır.",
+        "optionReview": {
+          "o1": "Sa‘y hareketi.",
+          "o2": "Arafat vakfesi.",
+          "o3": "Cemre uygulaması.",
+          "o4": "Tavafın tanımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tavaf",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1703,8 +2183,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-tavaf-sayisi",
+        "reviewedCandidateSha256": "e5ecef43fe766e202e34fa1ec146024fa3d14661c6b413cb8cc471a78963cce6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört yakın tek sayı. Yedi şavt bir tavaf; her şavtın Hacerülesved hizasında başlamasıyla toplam dönüş sayısı ayrılır.",
+        "optionReview": {
+          "o1": "Başka yakın sayı.",
+          "o2": "Başka yakın sayı.",
+          "o3": "96. satırın yedi şavtı.",
+          "o4": "Başka yakın sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tavaf",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1754,20 +2258,20 @@
         "question": "Kâbe çevresinde tavaf yapılan alana ne ad verilir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Mevkıf"
+          },
+          {
             "id": "o1",
             "text": "Metâf"
           },
           {
             "id": "o2",
-            "text": "Mîkāt"
+            "text": "Mes‘â"
           },
           {
             "id": "o3",
-            "text": "Suffe"
-          },
-          {
-            "id": "o4",
-            "text": "Müzdelife"
+            "text": "Mîkāt"
           }
         ],
         "correctOptionId": "o1",
@@ -1775,20 +2279,46 @@
         "explanation": "TDV Tavaf maddesinde Kâbe'nin etrafında tavaf yapılan alanın adı metâf olarak belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — tavaf",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/tavaf",
-            "locator": "TDV Tavaf maddesinde Kâbe'nin etrafında tavaf yapılan alanın adı metâf olarak belirtilir",
+            "locator": "96–100. satırlar; Sa‘y 96 ve Vakfe 96",
             "supports": "TDV Tavaf maddesinde Kâbe'nin etrafında tavaf yapılan alanın adı metâf olarak belirtilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-tavaf-metaf",
+        "reviewedCandidateSha256": "96b6499bcb671053bbaaea10d8005053357b84aa3d3baa1a64f3fa2e4ee9603e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Suffe gibi hac alanı dışındaki yer yerine dört gerçek hac mekân terimi. Metâf tavaf alanı, mes‘â sa‘y alanı, mevkıf vakfe yeri; terimler eş anlamlı değil.",
+        "optionReview": {
+          "o4": "Vakfe yeri.",
+          "o1": "Tavaf alanı.",
+          "o2": "Sa‘y alanı.",
+          "o3": "İhram sınırı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tavaf",
+          "locator": "96–100. satırlar; Sa‘y 96 ve Vakfe 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1838,41 +2368,67 @@
         "question": "Hacda 'vakfe' terimi neyi ifade eder?",
         "options": [
           {
-            "id": "o1",
-            "text": "Belirli yerde ve zamanda bir süre durmak"
-          },
-          {
             "id": "o2",
-            "text": "Kâbe'nin etrafında dönmek"
+            "text": "Kâbe çevresinde dönüş yapmak"
           },
           {
             "id": "o3",
-            "text": "Saçları kısaltmak"
+            "text": "Safâ ile Merve arasında yürümek"
           },
           {
             "id": "o4",
-            "text": "Kurban etini paylaştırmak"
+            "text": "Cemrelere belirli sayıda taş atmak"
+          },
+          {
+            "id": "o1",
+            "text": "Belirli yerde bir süre durmak"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Belirli yerde ve zamanda bir süre durmak",
+        "correctAnswer": "Belirli yerde bir süre durmak",
         "explanation": "TDV Vakfe maddesine göre vakfe, hacı adayının ibadet için belirli mekân ve zamanda bir süre bulunması anlamına gelir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — vakfe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/vakfe",
-            "locator": "TDV Vakfe maddesine göre vakfe, hacı adayının ibadet için belirli mekân ve zamanda bir süre bulunması anlamına gelir",
+            "locator": "96–102. satırlar",
             "supports": "TDV Vakfe maddesine göre vakfe, hacı adayının ibadet için belirli mekân ve zamanda bir süre bulunması anlamına gelir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-vakfe-anlam",
+        "reviewedCandidateSha256": "6ae40190403eee93a992b3a1ae6d1157786029d73be83db3b855a80830968669",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek uzun koşullu tanıma karşı kısa ve daha uzak işler yerine dört aynı uzunlukta gerçek hac uygulaması. Durma anlamı belirli mekân/zamanla açıklamada korunur.",
+        "optionReview": {
+          "o2": "Tavaf uygulaması.",
+          "o3": "Sa‘y uygulaması.",
+          "o4": "Cemre uygulaması.",
+          "o1": "Vakfenin duruşu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakfe",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1923,15 +2479,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mekke ve Medine"
-          },
-          {
-            "id": "o2",
             "text": "Safâ ve Merve"
           },
           {
+            "id": "o2",
+            "text": "Minâ ve Müzdelife"
+          },
+          {
             "id": "o3",
-            "text": "Hayber ve Tâif"
+            "text": "Arafat ve Minâ"
           },
           {
             "id": "o4",
@@ -1943,20 +2499,55 @@
         "explanation": "TDV Vakfe maddesi hacda mekânına göre iki tür vakfe bulunduğunu, bunların Arafat ve Müzdelife olduğunu açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — vakfe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/vakfe",
-            "locator": "TDV Vakfe maddesi hacda mekânına göre iki tür vakfe bulunduğunu, bunların Arafat ve Müzdelife olduğunu açıklar",
+            "locator": "96–102. satırlar",
             "supports": "TDV Vakfe maddesi hacda mekânına göre iki tür vakfe bulunduğunu, bunların Arafat ve Müzdelife olduğunu açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-vakfe-iki",
+        "reviewedCandidateSha256": "4f0113fbeea6a514f0c14c5d7641e3b047211412d092f61943c688c3c3b02575",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hayber/Tâif ve şehir çiftleri yerine dört hac yeri çifti. Müzdelife ve Arafat vakfelerinin ikisi birlikte gerekir; bir doğru yerin yanındaki yanlış yer grubu doğru yapmaz.",
+        "optionReview": {
+          "o1": "Sa‘yin iki yeri.",
+          "o2": "Minâ teknik vakfe yerlerinden değil.",
+          "o3": "Minâ teknik vakfe yerlerinden değil.",
+          "o4": "96. satırın iki vakfesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/vakfe",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2007,19 +2598,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Kuzeyinde"
+            "text": "Batısında"
           },
           {
             "id": "o2",
-            "text": "Güneybatısında"
+            "text": "Kuzeyinde"
+          },
+          {
+            "id": "o4",
+            "text": "Güneyinde"
           },
           {
             "id": "o3",
             "text": "Doğusunda"
-          },
-          {
-            "id": "o4",
-            "text": "Batısında"
           }
         ],
         "correctOptionId": "o3",
@@ -2027,20 +2618,46 @@
         "explanation": "TDV Arafat maddesi, hac ibadetinin önemli mekânı Arafat'ın Mekke'nin doğusunda bulunduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — arafat",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/arafat",
-            "locator": "TDV Arafat maddesi, hac ibadetinin önemli mekânı Arafat'ın Mekke'nin doğusunda bulunduğunu belirtir",
+            "locator": "99–102. satırlar",
             "supports": "TDV Arafat maddesi, hac ibadetinin önemli mekânı Arafat'ın Mekke'nin doğusunda bulunduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-arafat-konum",
+        "reviewedCandidateSha256": "627eeacb624f234115f4f56a71c451747ba74c944cc52d94962b6fbe2445e95b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek ara yön yerine dört ana yön. Kaynak Mekke’nin 21 km doğusu diye tanımlar; haritadaki yaklaşık açıyı yeni kesin sayı yapmıyor.",
+        "optionReview": {
+          "o1": "Başka ana yön.",
+          "o2": "Başka ana yön.",
+          "o4": "Başka ana yön.",
+          "o3": "99. satırın yönü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/arafat",
+          "locator": "99–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2087,44 +2704,70 @@
         ]
       },
       "after": {
-        "question": "'Hac Arafat'tır' hadisi hacdaki hangi ibadetin önemini vurgular?",
+        "question": "Hac Arafat’tır ifadesiyle vazgeçilmezliği vurgulanan uygulama hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Arafat vakfesinin"
+            "text": "Vakfe"
           },
           {
             "id": "o2",
-            "text": "Kurban etini paylaştırmanın"
+            "text": "Tavaf"
           },
           {
             "id": "o3",
-            "text": "Zekât hesaplamanın"
+            "text": "Sa‘y"
           },
           {
             "id": "o4",
-            "text": "Cuma hutbesinin"
+            "text": "Telbiye"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Arafat vakfesinin",
+        "correctAnswer": "Vakfe",
         "explanation": "TDV Arafat maddesi, 'Hac Arafat'tır' rivayetini bu mekândaki vakfenin vazgeçilmezliğini anlatan deliller arasında verir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — arafat",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/arafat",
-            "locator": "TDV Arafat maddesi, 'Hac Arafat'tır' rivayetini bu mekândaki vakfenin vazgeçilmezliğini anlatan deliller arasında verir",
+            "locator": "110–113. satırlar",
             "supports": "TDV Arafat maddesi, 'Hac Arafat'tır' rivayetini bu mekândaki vakfenin vazgeçilmezliğini anlatan deliller arasında verir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-arafat-hadis",
+        "reviewedCandidateSha256": "d41b65252df6103076370481bb746871c70ccabfab733c0b65c3d2d868e26933",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Doğru cevabın Arafat adını kökten aynen kopyalaması ve zekât/cuma gibi uzak işler kaldırıldı. Dört hac menâsiki aynı kısa biçimde.",
+        "optionReview": {
+          "o1": "Hadisin bağlandığı rükün.",
+          "o2": "Başka hac menâsiki.",
+          "o3": "Başka hac menâsiki.",
+          "o4": "Başka hac menâsiki."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/arafat",
+          "locator": "110–113. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2171,23 +2814,23 @@
         ]
       },
       "after": {
-        "question": "Sa'y hangi iki tepe arasında gerçekleştirilir?",
+        "question": "Hac ve umrede sa‘y hangi iki yer arasında yapılır?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Uhud ve Sevr"
-          },
-          {
-            "id": "o2",
-            "text": "Arafat ve Mina"
-          },
-          {
-            "id": "o3",
-            "text": "Mekke ve Medine"
-          },
           {
             "id": "o4",
             "text": "Safâ ve Merve"
+          },
+          {
+            "id": "o1",
+            "text": "Arafat ve Müzdelife"
+          },
+          {
+            "id": "o2",
+            "text": "Minâ ve Müzdelife"
+          },
+          {
+            "id": "o3",
+            "text": "Hira ve Sevr"
           }
         ],
         "correctOptionId": "o4",
@@ -2195,20 +2838,51 @@
         "explanation": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — say",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/say",
-            "locator": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir",
+            "locator": "96–102. satırlar",
             "supports": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-say-mekan",
+        "reviewedCandidateSha256": "e3270de3cdd3871c95d7275f70a131921f6e8a3b96d0c736a840191b747ebb6d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tepe diye sorup şehir/ova çiftleriyle tür ipucu vermek yerine Mekke ve hac çevresinden dört yer çifti. Yedi şavtın dört gidiş üç dönüş olduğu kaynak açıklaması korunuyor.",
+        "optionReview": {
+          "o4": "96. satırın iki ucu.",
+          "o1": "İki vakfe yeri.",
+          "o2": "Başka hac yerleri.",
+          "o3": "İki Mekke dağı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/say",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2291,8 +2965,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-say-sayi",
+        "reviewedCandidateSha256": "9ada9ff8f9f3b0f6f67dce84b3c3b6a7a51103c46a2d7dc89bcdb569a695c5d4",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört şavt sayısı aynı türde. Yedi şavt dört gidiş üç dönüştür; yedi gidiş-dönüşle on dört sayılmamalı. Sayı dışında dilsel ipucu görülmedi.",
+        "optionReview": {
+          "o1": "Başka şavt sayısı.",
+          "o2": "Başka şavt sayısı.",
+          "o3": "96. satırın toplamı.",
+          "o4": "Gidiş sayısı; toplam değil."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/say",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2342,20 +3040,20 @@
         "question": "Zekât yükümlülüğündeki zenginlik sınırına ne ad verilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Vakfe"
+            "id": "o4",
+            "text": "Fidye"
           },
           {
             "id": "o2",
             "text": "Nisab"
           },
           {
-            "id": "o3",
-            "text": "İmsak"
+            "id": "o1",
+            "text": "Öşür"
           },
           {
-            "id": "o4",
-            "text": "Mîkāt"
+            "id": "o3",
+            "text": "Fitre"
           }
         ],
         "correctOptionId": "o2",
@@ -2363,20 +3061,46 @@
         "explanation": "Nisab, zekâtın farz olduğunu gösteren asgari zenginlik ölçüsüdür; mal türüne ve fıkıh şartlarına göre değerlendirilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nisab",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nisab",
-            "locator": "Nisab, zekâtın farz olduğunu gösteren asgari zenginlik ölçüsüdür; mal türüne ve fıkıh şartlarına göre değerlendirilir",
+            "locator": "96–103. satırlar",
             "supports": "Nisab, zekâtın farz olduğunu gösteren asgari zenginlik ölçüsüdür; mal türüne ve fıkıh şartlarına göre değerlendirilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-nisab-anlam",
+        "reviewedCandidateSha256": "1fde80d3e3ec7961aa9b660763d1295f51f3325d85d9ccd4de818d5542b2cafa",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Vakfe/imsak/mîkāt gibi üç uzak ibadet terimi yerine dört mali ibadet/hukuk terimi. Zenginlik alt sınırı ile ödeme türleri ayrılır.",
+        "optionReview": {
+          "o4": "Belirli telâfi bedeli.",
+          "o2": "Asgari zenginlik sınırı.",
+          "o1": "Toprak ürünü yükümlülüğü.",
+          "o3": "Fıtır sadakası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nisab",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2423,44 +3147,70 @@
         ]
       },
       "after": {
-        "question": "Nisab değerlendirmesinde kişinin hangi malları dışarıda tutulur?",
+        "question": "Nisab hesabında geçim için gerekli hangi mal grubu ayrı tutulur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Aslî ihtiyaçları"
-          },
-          {
             "id": "o2",
-            "text": "Altınları"
+            "text": "Ticaret sermayesi"
           },
           {
             "id": "o3",
-            "text": "Ticaret malları"
+            "text": "Biriktirilmiş para"
           },
           {
             "id": "o4",
-            "text": "Birikim hesabı"
+            "text": "Zekâta tâbi altın"
+          },
+          {
+            "id": "o1",
+            "text": "Aslî ihtiyaçlar"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Aslî ihtiyaçları",
+        "correctAnswer": "Aslî ihtiyaçlar",
         "explanation": "TDV Nisab maddesi, zekât yükümlülüğü için kişinin temel ihtiyaçları dışında kalan zekâta tâbi malının belirli sınıra ulaşmasının esas alındığını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nisab",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nisab",
-            "locator": "TDV Nisab maddesi, zekât yükümlülüğü için kişinin temel ihtiyaçları dışında kalan zekâta tâbi malının belirli sınıra ulaşmasının esas alındığını açıklar",
+            "locator": "96–103. satırlar",
             "supports": "TDV Nisab maddesi, zekât yükümlülüğü için kişinin temel ihtiyaçları dışında kalan zekâta tâbi malının belirli sınıra ulaşmasının esas alındığını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-nisab-ihtiyac",
+        "reviewedCandidateSha256": "fffd9b0b8b25cce505003acf75c1ae57d9b88f885c849dc7d6ad643de27ea9e7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Altınların tümü ve kişisel ziynet hükümleri hakkında genelleme yerine zekâta tâbi nitelemesi kondu. Dört mali varlık grubu; nisab hesabının aslî ihtiyaç istisnası kaynakta açık.",
+        "optionReview": {
+          "o2": "Zekâta tâbi olabilen ticaret malı.",
+          "o3": "Şartları oluştuğunda hesaba katılan para.",
+          "o4": "Zekâta tâbi nitelenen altın.",
+          "o1": "96–97’nin ihtiyaç dışı bırakması."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nisab",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2510,20 +3260,20 @@
         "question": "Kur'an'da zekâtın kimlere verileceği özellikle hangi âyette sayılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bakara 2/255"
-          },
-          {
             "id": "o2",
-            "text": "Yâsîn 36/1"
+            "text": "Tevbe 9/103"
           },
           {
             "id": "o3",
-            "text": "Fâtiha 1/1"
+            "text": "Bakara 2/43"
           },
           {
             "id": "o4",
             "text": "Tevbe 9/60"
+          },
+          {
+            "id": "o1",
+            "text": "Bakara 2/267"
           }
         ],
         "correctOptionId": "o4",
@@ -2531,20 +3281,55 @@
         "explanation": "TDV Zekât maddesi Tevbe 9/60'ın zekât verilebilecek grupları tek tek açıkladığını ve fıkıh için temel delil oluşturduğunu aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — zekat",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/zekat",
-            "locator": "TDV Zekât maddesi Tevbe 9/60'ın zekât verilebilecek grupları tek tek açıkladığını ve fıkıh için temel delil oluşturduğunu aktarır",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "9/60; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "TDV Zekât maddesi Tevbe 9/60'ın zekât verilebilecek grupları tek tek açıkladığını ve fıkıh için temel delil oluşturduğunu aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-zekat-ayet",
+        "reviewedCandidateSha256": "89c99a6e4f0504625673f01be5bac0574d000ddbee1a302bdca2a412e67700fd",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yâsîn/Fâtiha başı ve Âyetü’l-kürsî gibi üç ilgisiz atfa karşı tek malî âyet yerine dört zekât/infak bağlamı. 60 sınıfları sayar; diğer pasajlar verme/alma emri veya verilecek mal niteliğidir.",
+        "optionReview": {
+          "o2": "Malından sadaka alma.",
+          "o3": "Namaz ve zekât emri.",
+          "o4": "Grupları tek tek sayan âyet.",
+          "o1": "Malın iyi olanından verme."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "9/60; PDF sayfa 207 (1 tabanlı), basılı sayfa 206",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2627,8 +3412,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-zekat-sekiz",
+        "reviewedCandidateSha256": "86e8c75c519b3d264cc8bac7a77f6e3f3ed5663750eeadc2a58a5c899eefc988",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört grup sayısı. 9/60’ın yoksul/düşkün/görevli/kalp kazanılacak/köle/borçlu/Allah yolu/yolcu listesi sekiz; dağıtım uygulaması tartışmaları ayrı.",
+        "optionReview": {
+          "o1": "Başka grup sayısı.",
+          "o2": "Başka grup sayısı.",
+          "o3": "Âyetin sekiz sınıfı.",
+          "o4": "Başka grup sayısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "9/60; PDF sayfa 207 (1 tabanlı), basılı sayfa 206",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2675,23 +3484,23 @@
         ]
       },
       "after": {
-        "question": "Tevbe 9/60'da zekât alabilecek kimseler arasında hangisi vardır?",
+        "question": "Tevbe 9/60’ta doğrudan sayılan zekât gruplarından biri hangisidir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Yalnız tüccarlar"
-          },
           {
             "id": "o2",
             "text": "Borçlular"
           },
           {
+            "id": "o1",
+            "text": "Alacaklılar"
+          },
+          {
             "id": "o3",
-            "text": "Bütün zenginler"
+            "text": "Kefiller"
           },
           {
             "id": "o4",
-            "text": "Her yöneticinin ailesi"
+            "text": "Ortaklar"
           }
         ],
         "correctOptionId": "o2",
@@ -2699,13 +3508,13 @@
         "explanation": "Tevbe 9/60 zekâtın verileceği gruplar arasında borçluları da saymaktadır; uygulama şartları fıkıh literatüründe ayrıntılı ele alınır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — zekat",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/zekat",
-            "locator": "Tevbe 9/60 zekâtın verileceği gruplar arasında borçluları da saymaktadır; uygulama şartları fıkıh literatüründe ayrıntılı ele alınır",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "9/60; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Tevbe 9/60 zekâtın verileceği gruplar arasında borçluları da saymaktadır; uygulama şartları fıkıh literatüründe ayrıntılı ele alınır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -2715,14 +3524,35 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-zekat-borclu",
+        "reviewedCandidateSha256": "d5414a1148e0d0aa2b82480602bdb671cfcea38718a5da19d48d45a57f6b7592",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yalnız/bütün/her gibi üç sınırlayıcı/mutlak seçenek kaldırıldı. Dört aynı mali ilişki alanı; meslek veya gruptan birinin şartlı olarak yoksul olabilmesi genel hak yasağı şeklinde yorumlanmaz, âyetin açık sınıf adı sorulur.",
+        "optionReview": {
+          "o2": "Âyetteki gârimîn grubu.",
+          "o1": "Başka mali ilişki tarafı.",
+          "o3": "Başka mali ilişki tarafı.",
+          "o4": "Başka mali ilişki tarafı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "9/60; PDF sayfa 207 (1 tabanlı), basılı sayfa 206",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2805,8 +3635,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-fitre-zaman",
+        "reviewedCandidateSha256": "e8340df8224fc57774efb2ff88607c78113a8ebd9a11ea90da3193e54f1727be",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek hicrî ay. Fitrenin Ramazan’ı yaşamanın şükrü niteliği 96’da açık; ödeme vaktine ilişkin mezhep ayrıntıları bu ay aidiyetini değiştirmez.",
+        "optionReview": {
+          "o1": "96’nın Ramazan’ı.",
+          "o2": "Başka hicrî ay.",
+          "o3": "Başka hicrî ay.",
+          "o4": "Başka hicrî ay."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/fitre",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2856,20 +3710,20 @@
         "question": "Fitrenin diğer yaygın adı hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Zekât nisabı"
-          },
-          {
-            "id": "o2",
-            "text": "Hac fidyesi"
+            "id": "o4",
+            "text": "Adak kurbanı"
           },
           {
             "id": "o3",
             "text": "Fıtır sadakası"
           },
           {
-            "id": "o4",
-            "text": "Kurban bedeli"
+            "id": "o1",
+            "text": "Yemin kefareti"
+          },
+          {
+            "id": "o2",
+            "text": "Oruç fidyesi"
           }
         ],
         "correctOptionId": "o3",
@@ -2877,20 +3731,46 @@
         "explanation": "Fitre, sadaka-i fıtr veya fıtır sadakası olarak da anılır; Ramazan'la bağlantılı bir ibadettir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — fitre",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/fitre",
-            "locator": "Fitre, sadaka-i fıtr veya fıtır sadakası olarak da anılır; Ramazan'la bağlantılı bir ibadettir",
+            "locator": "96–103. satırlar",
             "supports": "Fitre, sadaka-i fıtr veya fıtır sadakası olarak da anılır; Ramazan'la bağlantılı bir ibadettir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-fitre-ad",
+        "reviewedCandidateSha256": "f8d587fdf77b3d8bbdc136afd51ef89fdb9f7700d422368a7862ec5244bba3be",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Nisab gibi eşik adı veya belirsiz kurban bedeli yerine dört belirli mali ibadet türü. Zekâtü’l-fıtr ve baş sadakası aynı anlamlı olacağından yanlış şık yapılmadı.",
+        "optionReview": {
+          "o4": "Başka mali ibadet.",
+          "o3": "96. satırın fitre adı.",
+          "o1": "Başka mali ibadet.",
+          "o2": "Başka mali ibadet."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/fitre",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2978,8 +3858,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-sadaka-genis",
+        "reviewedCandidateSha256": "d74fc13b5050ee9751d90ca62dfcf24f5689e48af75c00c76b501b324a7c7c38",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Önceki adayın dört yolculuk davranışı yeniden okundu. Borç vermek de 104’te sadaka sayılır; kök genel her sadakayı değil hadisteki yol örneğini hedeflediği için 116’nın zararlı nesneyi kaldırması korunur. Bu dar bağlam bağımsız editör incelemesinde de kontrol edilmeli.",
+        "optionReview": {
+          "o1": "104’teki başka iyilik türü; 116’nın yol örneği değil.",
+          "o3": "Başka yolculuk işlemi.",
+          "o4": "Başka ikram türü.",
+          "o2": "116’daki açık yol örneği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sadaka",
+          "locator": "104 ve 115–117. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3026,7 +3930,7 @@
         ]
       },
       "after": {
-        "question": "Hadislerde sadaka olarak nitelenen sözlü davranış hangisidir?",
+        "question": "TDV Sadaka maddesindeki sözlü sadaka örneği hangi ifadeyle anılır?",
         "options": [
           {
             "id": "o1",
@@ -3034,15 +3938,15 @@
           },
           {
             "id": "o2",
-            "text": "Bir şiiri ezberden okumak"
+            "text": "Verilen haberi doğrulamak"
           },
           {
             "id": "o3",
-            "text": "Yolculuk tarihini bildirmek"
+            "text": "Bir konuda görüş bildirmek"
           },
           {
             "id": "o4",
-            "text": "Bir eşyaya fiyat biçmek"
+            "text": "Bilinmeyen sözü açıklamak"
           }
         ],
         "correctOptionId": "o1",
@@ -3053,10 +3957,10 @@
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/sadaka",
-            "locator": "Sadaka kelimesi malî yardımı kapsamakla birlikte hadislerde güzel söz ve yararlı davranışları da içeren geniş anlamda kullanılır",
-            "supports": "Karşılaştırılan cevap kavramı: Güzel söz söylemek (doğrudan kaynak alıntısı değildir).",
+            "locator": "115–117. satırlar",
+            "supports": "Sadaka kelimesi malî yardımı kapsamakla birlikte hadislerde güzel söz ve yararlı davranışları da içeren geniş anlamda kullanılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -3071,8 +3975,34 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q62-sadaka-soyl",
+        "reviewedCandidateSha256": "a09a1363e5b6f31c78966864865784e230c587ed87dfa57728169e45e1ff7150",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Genel hangi söz sadakadır kökü başka iyi sözleri de doğru yapabilir. Belirli kaynak örneğinin ifadesi soruldu; dört olumlu/nötr söz eylemi, diğerlerinin asla sevap olmayacağı iddia edilmez.",
+        "optionReview": {
+          "o1": "116. satırın açık sözlü örneği.",
+          "o2": "Başka olumlu söz eylemi.",
+          "o3": "Başka nötr/olumlu söz eylemi.",
+          "o4": "Başka olumlu söz eylemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sadaka",
+          "locator": "115–117. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3155,8 +4085,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-karatay-sehir",
+        "reviewedCandidateSha256": "86ae05da0ee46fc197cbc82d1e95d3c07dd08acbd0724208231176378a1dc90b",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Anadolu şehri. Karatay yapısının Konya bağlamı 94–95’te açık; sonradan müze kullanımı başka şehre taşındığı anlamına gelmez.",
+        "optionReview": {
+          "o1": "94–95’in Konya bağlamı.",
+          "o2": "Başka Anadolu şehri.",
+          "o3": "Başka Anadolu şehri.",
+          "o4": "Başka Anadolu şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
+          "locator": "94–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3206,20 +4160,20 @@
         "question": "Karatay Medresesi hangi milâdî yılda yaptırılmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "1071"
-          },
-          {
-            "id": "o2",
-            "text": "1453"
-          },
-          {
             "id": "o3",
-            "text": "1517"
+            "text": "1271"
           },
           {
             "id": "o4",
             "text": "1251"
+          },
+          {
+            "id": "o1",
+            "text": "1241"
+          },
+          {
+            "id": "o2",
+            "text": "1261"
           }
         ],
         "correctOptionId": "o4",
@@ -3227,20 +4181,46 @@
         "explanation": "TDV maddesinin taçkapı kitâbesine dayalı bilgisinde Karatay Medresesi'nin 649/1251 yılında inşa edildiği belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — karatay-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
-            "locator": "649 / 1251 kitâbe tarihi",
+            "locator": "94–98. satırlar",
             "supports": "TDV maddesinin taçkapı kitâbesine dayalı bilgisinde Karatay Medresesi'nin 649/1251 yılında inşa edildiği belirtilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-karatay-tarih",
+        "reviewedCandidateSha256": "656e7c554eed8bea37e18a6f5383dc28f418507ed7aafecd3bf2f52f44d90b88",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç çok farklı çağ yılı yerine dört yakın 13. yüzyıl yılı. 649/1251 yapım kitâbesiyle karşılaştırıldı.",
+        "optionReview": {
+          "o3": "Başka yakın yıl.",
+          "o4": "94. satırın yapım yılı.",
+          "o1": "Başka yakın yıl.",
+          "o2": "Başka yakın yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
+          "locator": "94–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3287,23 +4267,23 @@
         ]
       },
       "after": {
-        "question": "Karatay Medresesi'nin bânisi kimdir?",
+        "question": "Konya’da 1251’de yaptırılan çini süslemeli medresenin bânisi kimdir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Sâhib Ata"
-          },
-          {
-            "id": "o2",
-            "text": "Uluğ Bey"
-          },
           {
             "id": "o3",
             "text": "Celâleddin Karatay"
           },
           {
+            "id": "o1",
+            "text": "Sâhib Ata Fahreddin Ali"
+          },
+          {
+            "id": "o2",
+            "text": "Muînüddin Süleyman Pervâne"
+          },
+          {
             "id": "o4",
-            "text": "Nizâmülmülk"
+            "text": "Şemseddin Altunaba"
           }
         ],
         "correctOptionId": "o3",
@@ -3311,20 +4291,46 @@
         "explanation": "TDV Karatay Medresesi maddesi Konya'daki yapının Selçuklu devlet adamı Celâleddin Karatay tarafından yaptırıldığını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — karatay-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
-            "locator": "Celâleddin Karatay",
+            "locator": "94–98. satırlar",
             "supports": "TDV Karatay Medresesi maddesi Konya'daki yapının Selçuklu devlet adamı Celâleddin Karatay tarafından yaptırıldığını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-karatay-bani",
+        "reviewedCandidateSha256": "51025640a56b5fa10aa09f1ca4e428c677c2df2d0d1b642924ed93e2fb355898",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Karatay adını kökte aynen söyleyip cevapta seçtirme kaldırıldı. Dört Anadolu Selçuklu devlet adamı/yapı bânisi; başka çağdan Uluğ Bey/Nizâmülmülk yok.",
+        "optionReview": {
+          "o3": "94. satırın bânisi.",
+          "o1": "İnce Minareli Medrese’nin bânisi.",
+          "o2": "Başka Anadolu Selçuklu devlet adamı.",
+          "o4": "Başka Anadolu Selçuklu bânisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
+          "locator": "94–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3371,23 +4377,23 @@
         ]
       },
       "after": {
-        "question": "Karatay Medresesi yaptırılırken Anadolu Selçuklu tahtında kim bulunuyordu?",
+        "question": "Karatay Medresesi’nin 1251’deki yapımı hangi Selçuklu sultanının dönemine rastlar?",
         "options": [
-          {
-            "id": "o1",
-            "text": "I. Mesud"
-          },
           {
             "id": "o2",
             "text": "II. İzzeddin Keykâvus"
           },
           {
+            "id": "o1",
+            "text": "I. Alâeddin Keykubad"
+          },
+          {
             "id": "o3",
-            "text": "Alâeddin Keykubad"
+            "text": "II. Gıyâseddin Keyhusrev"
           },
           {
             "id": "o4",
-            "text": "I. Kılıcarslan"
+            "text": "III. Gıyâseddin Keyhusrev"
           }
         ],
         "correctOptionId": "o2",
@@ -3395,20 +4401,51 @@
         "explanation": "TDV Karatay Medresesi maddesi 1251 tarihli inşaatın Sultan II. İzzeddin Keykâvus döneminde yapıldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — karatay-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
-            "locator": "II. İzzeddin Keykâvus dönemi",
+            "locator": "94–98. satırlar; II. Keykâvus maddesi 96–100",
             "supports": "TDV Karatay Medresesi maddesi 1251 tarihli inşaatın Sultan II. İzzeddin Keykâvus döneminde yapıldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-karatay-sultan",
+        "reviewedCandidateSha256": "6cb196f0561c46af8dd236bed7e04256ffbd899df33be3a3417d2ac92a896215",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dört yakın 13. yüzyıl sultanı. 1249’daki üçlü saltanat ayrıca okundu; ortak sultan II. Alâeddin Keykubad ile IV. Kılıcarslan yanlış şık yapılmadı. Kaynak II. Keykâvus dönemine nispetlidir; tek başına saltanat iddiası yok.",
+        "optionReview": {
+          "o2": "Kaynağın nispet ettiği dönem.",
+          "o1": "Önceki I. Keykubad; II. Keykubad değil.",
+          "o3": "Daha önceki II. Keyhusrev.",
+          "o4": "Daha sonraki III. Keyhusrev."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
+          "locator": "94–98. satırlar; II. Keykâvus maddesi 96–100",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3458,20 +4495,20 @@
         "question": "Karatay Medresesi 1954'te onarıldıktan sonra hangi amaçla kullanılmaya başlandı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Darphane"
-          },
-          {
             "id": "o2",
-            "text": "Kışla"
+            "text": "Etnografya müzesi"
           },
           {
             "id": "o3",
-            "text": "Deniz feneri"
+            "text": "Taş eserleri müzesi"
           },
           {
             "id": "o4",
             "text": "Çini eserleri müzesi"
+          },
+          {
+            "id": "o1",
+            "text": "El yazmaları müzesi"
           }
         ],
         "correctOptionId": "o4",
@@ -3479,20 +4516,51 @@
         "explanation": "TDV Karatay Medresesi maddesi yapının 1954 onarımının ardından Konya Müzesi'nin çini eserleri bölümü olarak kullanıldığını aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — karatay-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
-            "locator": "1954 onarımı ve müze",
+            "locator": "94–98. satırlar",
             "supports": "TDV Karatay Medresesi maddesi yapının 1954 onarımının ardından Konya Müzesi'nin çini eserleri bölümü olarak kullanıldığını aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-karatay-muze",
+        "reviewedCandidateSha256": "5b80cae8a2b370db1ebb814519baa2f0cba1bb7d94606334d833b05becd151e5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Konya’da deniz feneri gibi imkânsız ve ilgisiz işlevler yerine dört müze türü. Kaynak 1954 sonrası çini bölümünü açıkça belirtir.",
+        "optionReview": {
+          "o2": "Başka müze türü.",
+          "o3": "Başka müze türü.",
+          "o4": "95. satırın yeni kullanımı.",
+          "o1": "Başka müze türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/karatay-medresesi",
+          "locator": "94–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3539,44 +4607,70 @@
         ]
       },
       "after": {
-        "question": "Konya'daki Sırçalı Medrese hangi milâdî yılda inşa edilmiştir?",
+        "question": "Sırçalı Medrese’nin taçkapı kitâbesinde verilen hicrî yapım tarihi hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "1453"
-          },
-          {
-            "id": "o2",
-            "text": "1575"
+            "id": "o4",
+            "text": "660"
           },
           {
             "id": "o3",
-            "text": "1242"
+            "text": "640"
           },
           {
-            "id": "o4",
-            "text": "1071"
+            "id": "o1",
+            "text": "630"
+          },
+          {
+            "id": "o2",
+            "text": "650"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "1242",
-        "explanation": "TDV Konya maddesi Sırçalı Medrese'nin 1242 yılında yapıldığını ve döneminin çini süslemelerini koruduğunu belirtir.",
+        "correctAnswer": "640",
+        "explanation": "Sırçalı Medrese’nin taçkapı kitâbesinde yapım tarihi hicrî 640 olarak verilir. TDV’nin özel maddesi yapıyı Selçuklu emîri Bedreddin Muslih’in yaptırdığını bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — konya",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/konya",
-            "locator": "Sırçalı Medrese 1242",
-            "supports": "TDV Konya maddesi Sırçalı Medrese'nin 1242 yılında yapıldığını ve döneminin çini süslemelerini koruduğunu belirtir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/sircali-medrese",
+            "locator": "94–99. satırlar; Konya maddesi 397",
+            "supports": "Sırçalı Medrese’nin taçkapı kitâbesinde yapım tarihi hicrî 640 olarak verilir. TDV’nin özel maddesi yapıyı Selçuklu emîri Bedreddin Muslih’in yaptırdığını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-konya-sircali",
+        "reviewedCandidateSha256": "2788f41246a0ff6426875b890c7f4a68bd2c706268c45967a1c9924d038d04e1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Konya maddesi 1242, özel Sırçalı maddesi 640/1243 diyor. Milâdî yıl farkı gizlenmedi veya biri otomatik üstün sayılmadı; açık kitâbe tarihi hicrî 640 sorularak belirsizlikten kaçınıldı. Dört yakın hicrî yıl.",
+        "optionReview": {
+          "o4": "Başka yakın hicrî yıl.",
+          "o3": "Kitâbeye bağlanan hicrî tarih.",
+          "o1": "Başka yakın hicrî yıl.",
+          "o2": "Başka yakın hicrî yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sircali-medrese",
+          "locator": "94–99. satırlar; Konya maddesi 397",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3627,19 +4721,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Hüseyin Baykara"
+            "text": "Celâleddin Karatay"
+          },
+          {
+            "id": "o3",
+            "text": "Muînüddin Süleyman Pervâne"
+          },
+          {
+            "id": "o4",
+            "text": "Seyfeddin Turumtay"
           },
           {
             "id": "o2",
             "text": "Sâhib Ata Fahreddin Ali"
-          },
-          {
-            "id": "o3",
-            "text": "Nizâmülmülk"
-          },
-          {
-            "id": "o4",
-            "text": "Celâleddin Karatay"
           }
         ],
         "correctOptionId": "o2",
@@ -3647,20 +4741,46 @@
         "explanation": "TDV Konya maddesi İnce Minareli Medrese'nin Selçuklu veziri Sâhib Ata Fahreddin Ali tarafından yaptırıldığını aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — konya",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/konya",
-            "locator": "Sâhib Ata ve İnce Minareli Medrese",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/ince-minareli-medrese",
+            "locator": "94–96. satırlar",
             "supports": "TDV Konya maddesi İnce Minareli Medrese'nin Selçuklu veziri Sâhib Ata Fahreddin Ali tarafından yaptırıldığını aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-konya-minare",
+        "reviewedCandidateSha256": "0b1156f2a462e43f921ebb7f74615e01b51a6196000596e5719889eaf6861bf2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Farklı yüzyıl ve coğrafyadaki hükümdarlar yerine dört Anadolu Selçuklu devlet adamı/bânisi. Bâninin Sâhib Ata, mimarın Kölük b. Abdullah olması ayırt edilir.",
+        "optionReview": {
+          "o1": "Başka Konya medresesinin bânisi.",
+          "o3": "Başka Anadolu Selçuklu devlet adamı.",
+          "o4": "Başka Anadolu Selçuklu bânisi.",
+          "o2": "Yapının bânisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ince-minareli-medrese",
+          "locator": "94–96. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3707,44 +4827,70 @@
         ]
       },
       "after": {
-        "question": "Bursa Ulucamii'nin inşası yaklaşık hangi milâdî yıllarda tamamlanmıştır?",
+        "question": "Bursa Ulucamii’nin minberindeki 802 tarihinin milâdî karşılığı hangi aralıktır?",
         "options": [
           {
+            "id": "o4",
+            "text": "1399–1400"
+          },
+          {
             "id": "o1",
-            "text": "1251-1252"
+            "text": "1389–1390"
           },
           {
             "id": "o2",
-            "text": "1550-1557"
+            "text": "1409–1410"
           },
           {
             "id": "o3",
-            "text": "1703-1704"
-          },
-          {
-            "id": "o4",
-            "text": "1399-1400"
+            "text": "1419–1420"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "1399-1400",
+        "correctAnswer": "1399–1400",
         "explanation": "Bursa Ulucamii minberindeki tarih, caminin hicrî 802 yani milâdî 1399-1400 yılında tamamlandığını gösterir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ulucami",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ulucami",
-            "locator": "802 / 1399-1400 kitâbesi",
+            "locator": "823–826. satırlar; Bursa Ulucamii bölümü",
             "supports": "Bursa Ulucamii minberindeki tarih, caminin hicrî 802 yani milâdî 1399-1400 yılında tamamlandığını gösterir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-bursa-bitis",
+        "reviewedCandidateSha256": "65116e3486c78d7c871f374d4b51ab55fd2f35359e8e3bc60f8fa6c98d1effad",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç uzak çağ yerine dört aynı uzunlukta yakın yıl aralığı. İnşanın bitişine delil gösterilen minber tarihine bağlı kök, yaklaşık tarih ile kesin gün iddiasını ayırır. Yan pasajdaki 6666 ayet veya galaksi tasviri iddiaları soruya taşınmadı.",
+        "optionReview": {
+          "o4": "823’ün 802 karşılığı.",
+          "o1": "Başka yakın yıl aralığı.",
+          "o2": "Başka yakın yıl aralığı.",
+          "o3": "Başka yakın yıl aralığı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ulucami",
+          "locator": "823–826. satırlar; Bursa Ulucamii bölümü",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3794,20 +4940,20 @@
         "question": "Bursa Ulucamii 1855 depremi sonrasındaki büyük onarımının ardından hangi yılda yeniden ibadete açıldı?",
         "options": [
           {
-            "id": "o1",
-            "text": "1517"
-          },
-          {
-            "id": "o2",
-            "text": "1923"
+            "id": "o4",
+            "text": "1870"
           },
           {
             "id": "o3",
             "text": "1862"
           },
           {
-            "id": "o4",
-            "text": "1402"
+            "id": "o1",
+            "text": "1858"
+          },
+          {
+            "id": "o2",
+            "text": "1866"
           }
         ],
         "correctOptionId": "o3",
@@ -3815,20 +4961,46 @@
         "explanation": "TDV Bursa Ulucamii bölümünde 1855 depremi sonrasındaki kapsamlı onarımdan sonra caminin 1862'de açıldığı belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ulucami",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ulucami",
-            "locator": "1855 depremi ve 1862 onarımı",
+            "locator": "823–828. satırlar; Bursa Ulucamii bölümü",
             "supports": "TDV Bursa Ulucamii bölümünde 1855 depremi sonrasındaki kapsamlı onarımdan sonra caminin 1862'de açıldığı belirtilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-bursa-tamir",
+        "reviewedCandidateSha256": "32adad2808fa1e58e94320ded9afd7946aafa43c7d3fec85f429eaa9a45953ed",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "1855 sonrasını sorup çoğu öncesindeki yılları verme kaldırıldı. Dört yakın onarım sonrası yıl; kaynak 825’te 1862 açılışı açık.",
+        "optionReview": {
+          "o4": "Başka deprem sonrası yıl.",
+          "o3": "825. satırın yeniden açılışı.",
+          "o1": "Başka deprem sonrası yıl.",
+          "o2": "Başka deprem sonrası yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ulucami",
+          "locator": "823–828. satırlar; Bursa Ulucamii bölümü",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3878,20 +5050,20 @@
         "question": "Bursa Ulucamii yanındaki tarihî bedestende kaç kubbe bulunur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yirmi sekiz"
+            "id": "o3",
+            "text": "On altı"
+          },
+          {
+            "id": "o4",
+            "text": "On sekiz"
           },
           {
             "id": "o2",
             "text": "On dört"
           },
           {
-            "id": "o3",
-            "text": "Dört"
-          },
-          {
-            "id": "o4",
-            "text": "Altı"
+            "id": "o1",
+            "text": "On iki"
           }
         ],
         "correctOptionId": "o2",
@@ -3899,20 +5071,46 @@
         "explanation": "TDV Bursa Ulucamii bölümünde Yıldırım Bayezid Bedesteni'nin altı kalın ayağın taşıdığı on dört kubbeyle örtüldüğü anlatılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ulucami",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ulucami",
-            "locator": "Bursa Yıldırım Bedesteni on dört kubbe",
+            "locator": "834–837. satırlar; Bursa Ulucamii bölümü",
             "supports": "TDV Bursa Ulucamii bölümünde Yıldırım Bayezid Bedesteni'nin altı kalın ayağın taşıdığı on dört kubbeyle örtüldüğü anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-bursa-vakif",
+        "reviewedCandidateSha256": "2e556335a35e90ef7a764a379dc5529775bf86459c0cd61756a82789aa9e859b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dört/altı/yirmi sekiz gibi farklı ölçekler yerine dört yakın kubbe sayısı. Caminin yirmi kubbesiyle bedestenin on dört kubbesi ayrı tutulur.",
+        "optionReview": {
+          "o3": "Başka yakın sayı.",
+          "o4": "Başka yakın sayı.",
+          "o2": "835’in bedesten kubbe sayısı.",
+          "o1": "Başka yakın sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ulucami",
+          "locator": "834–837. satırlar; Bursa Ulucamii bölümü",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3959,23 +5157,23 @@
         ]
       },
       "after": {
-        "question": "Nizâmiye medreselerinin kuruluşuyla özdeşleşen Selçuklu veziri kimdir?",
+        "question": "Bağdat’ta 1067’de açılan medreseyi yaptıran Büyük Selçuklu veziri kimdir?",
         "options": [
+          {
+            "id": "o3",
+            "text": "Tâcülmülk"
+          },
+          {
+            "id": "o4",
+            "text": "Müeyyidülmülk"
+          },
           {
             "id": "o1",
             "text": "Nizâmülmülk"
           },
           {
             "id": "o2",
-            "text": "Sokullu Mehmed Paşa"
-          },
-          {
-            "id": "o3",
-            "text": "Köprülü Mehmed Paşa"
-          },
-          {
-            "id": "o4",
-            "text": "Sâhib Ata"
+            "text": "Kündürî"
           }
         ],
         "correctOptionId": "o1",
@@ -3983,20 +5181,46 @@
         "explanation": "TDV Nizâmiye Medresesi maddesi Selçuklu Veziri Nizâmülmülk'ün bu öğretim kurumlarını kurup vakıflarla desteklediğini bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nizamiye-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "Selçuklu Veziri Nizâmülmülk",
+            "locator": "94–105. satırlar",
             "supports": "TDV Nizâmiye Medresesi maddesi Selçuklu Veziri Nizâmülmülk'ün bu öğretim kurumlarını kurup vakıflarla desteklediğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-nizamiye-bani",
+        "reviewedCandidateSha256": "ce20bdab87402123d42fad4a5b0d709bc28281b3483b7a1c2b7155ca2d62bcf4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Nizâmiye adının kökten cevap adına kopyalanması ve üç başka çağ veziri kaldırıldı. Dört Büyük Selçuklu veziri; oğlun sonraki yönetim katkısı kuruculuk değildir.",
+        "optionReview": {
+          "o3": "Başka Selçuklu veziri.",
+          "o4": "105’teki sonraki yönetim katkısı olan oğlu.",
+          "o1": "94–98’in kurucusu.",
+          "o2": "Başka Selçuklu veziri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
+          "locator": "94–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4047,15 +5271,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "1251"
+            "text": "1057"
           },
           {
             "id": "o2",
-            "text": "1453"
+            "text": "1077"
           },
           {
             "id": "o3",
-            "text": "1557"
+            "text": "1087"
           },
           {
             "id": "o4",
@@ -4067,20 +5291,46 @@
         "explanation": "TDV'ye göre Bağdat Nizâmiye Medresesi'nin inşası 1065'te başlamış ve 22 Eylül 1067'de medrese hizmete açılmıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nizamiye-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "22 Eylül 1067 açılışı",
+            "locator": "97–103. satırlar",
             "supports": "TDV'ye göre Bağdat Nizâmiye Medresesi'nin inşası 1065'te başlamış ve 22 Eylül 1067'de medrese hizmete açılmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-nizamiye-bagdat",
+        "reviewedCandidateSha256": "7de1d61e47b77ed25597a206447f96930b469317dab6b96a33bb2ca4909c0adc",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı çağ yılının yerine dört yakın 11. yüzyıl yılı. İnşanın başlaması 1065, açılması 1067 ayrımı korunur.",
+        "optionReview": {
+          "o1": "Başka yakın yıl.",
+          "o2": "Başka yakın yıl.",
+          "o3": "Başka yakın yıl.",
+          "o4": "98. satırın açılış yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
+          "locator": "97–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4130,41 +5380,67 @@
         "question": "Bağdat Nizâmiye Medresesi'nin ilk dersini hangi âlim vermiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İbn Haldûn"
-          },
-          {
-            "id": "o2",
-            "text": "İbnü's-Sabbâğ"
-          },
-          {
             "id": "o3",
             "text": "Gazzâlî"
           },
           {
             "id": "o4",
-            "text": "Fahreddin er-Râzî"
+            "text": "İmâmü’l-Haremeyn el-Cüveynî"
+          },
+          {
+            "id": "o2",
+            "text": "İbnü’s-Sabbâğ"
+          },
+          {
+            "id": "o1",
+            "text": "Ebû İshak eş-Şîrâzî"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İbnü's-Sabbâğ",
+        "correctAnswer": "İbnü’s-Sabbâğ",
         "explanation": "TDV maddesine göre Ebû İshak eş-Şîrâzî açılışa gelmediği için ilk dersi İbnü's-Sabbâğ vermiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nizamiye-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "Bağdat Nizâmiye ilk dersi",
+            "locator": "99–105. satırlar",
             "supports": "TDV maddesine göre Ebû İshak eş-Şîrâzî açılışa gelmediği için ilk dersi İbnü's-Sabbâğ vermiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-nizamiye-ilk",
+        "reviewedCandidateSha256": "e6cc4df7c743b3e690ccef93d2f631533bac409ed6346d277956e8dea98f16d6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İbn Haldûn/Fahreddin Râzî gibi sonraki yüzyıllar yerine dört yakın dönem âlimi. Açılış dersini veren ile ilk tayin edilen Şîrâzî farklı; Şîrâzî yirmi gün sonra görevi alır.",
+        "optionReview": {
+          "o3": "1091’de sonraki müderris.",
+          "o4": "Başka Nizâmiye çevresi âlimi.",
+          "o2": "100’de ilk dersi fiilen veren.",
+          "o1": "Açılışa gelmeyen ilk atanan."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
+          "locator": "99–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4211,44 +5487,75 @@
         ]
       },
       "after": {
-        "question": "Bağdat Nizâmiye Medresesi'nin vakıfları hangi giderleri karşılıyordu?",
+        "question": "Bağdat Nizâmiye Medresesi’nin vakıf gelirleriyle karşılanması amaçlanan başlıca gider hangisiydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Müderris ve öğrencilerin ihtiyaçlarını"
-          },
-          {
             "id": "o2",
-            "text": "Sadece savaş gemilerini"
+            "text": "Kervan ortaklarının sermaye payları"
           },
           {
             "id": "o3",
-            "text": "Kraliyet tacını"
+            "text": "Şehirdeki askerî birliğin levazımı"
           },
           {
             "id": "o4",
-            "text": "Av eğlencelerini"
+            "text": "Saray memurlarının yol masrafları"
+          },
+          {
+            "id": "o1",
+            "text": "Müderris ve öğrencilerin ihtiyaçları"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Müderris ve öğrencilerin ihtiyaçlarını",
+        "correctAnswer": "Müderris ve öğrencilerin ihtiyaçları",
         "explanation": "Nizâmülmülk medrese için çarşı, dükkân, hamam ve arazi gibi gelir kaynakları ayırarak hoca ve öğrencilerin ihtiyaçlarını karşılamayı amaçladı.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — nizamiye-medresesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "Vakfın gelir kaynakları",
+            "locator": "102–104. satırlar",
             "supports": "Nizâmülmülk medrese için çarşı, dükkân, hamam ve arazi gibi gelir kaynakları ayırarak hoca ve öğrencilerin ihtiyaçlarını karşılamayı amaçladı.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "domain-mismatch",
+          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q63-nizamiye-kut",
+        "reviewedCandidateSha256": "ccacfde54a22511057419d440d1c31d685e2e98ab72e6ce2919a925934b0b36b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Savaş gemisi/taç/av gibi ilgisiz veya küçültücü örnekler yerine dört makul dönemsel gider/yararlanıcı. Kaynağın medrese hoca ve talebesine tahsisi gerekir.",
+        "optionReview": {
+          "o2": "Başka ticari gider.",
+          "o3": "Başka kamusal gider.",
+          "o4": "Başka idari gider.",
+          "o1": "102’nin gelir tahsis hedefi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
+          "locator": "102–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

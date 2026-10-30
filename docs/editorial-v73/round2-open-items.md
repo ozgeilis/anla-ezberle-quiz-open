@@ -1,6 +1,6 @@
 # İkinci tur açık kontroller
 
-Bireysel inceleme bekleyen: **380**. İncelenmiş ama bu tur kaynak karşılaştırması bekleyen: **106**. Bu liste yayın onayı değildir.
+Bireysel inceleme bekleyen: **280**. İncelenmiş ama bu tur kaynak karşılaştırması bekleyen: **106**. Bu liste yayın onayı değildir.
 
 ## Bloke kararlar
 
