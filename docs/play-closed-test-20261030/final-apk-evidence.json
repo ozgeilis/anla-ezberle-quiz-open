@@ -552,7 +552,7 @@
     "command": "adb -s emulator-5556 install -r acceptance-7db5e96.apk",
     "result": "Success",
     "dataClearOrUninstall": false,
-    "uiAcceptance": "NOT_PERFORMED: current CUA inventory does not expose emulator window",
+    "uiAcceptance": "NOT_PERFORMED: CUA does not expose emulator app, two documented native app binding attempts rejected; no adb/UIAutomator UI fallback used",
     "physicalDevice": false
   },
   "sensitiveAssetPatternScan": {
@@ -562,6 +562,11 @@
       "supabaseSecretKey": 1,
       "googleOAuthSecret": 0,
       "googleServiceAccountPrivateKeyField": 0
+    },
+    "classification": {
+      "supabaseSecretKey": "FALSE_POSITIVE in raw contiguous Hermes string-storage bytes; decoded string s433 is exactly the Supabase SDK prefix sb_secret_, length 10. No secret suffix in that string.",
+      "decodedHermesSecretKeyPatternHits": 0,
+      "method": "official bundled hermesc -dump-bytecode; only decoded global string table inspected, values withheld"
     }
   },
   "hermesBundle": {
