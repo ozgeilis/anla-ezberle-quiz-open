@@ -10,6 +10,7 @@ import { BANK_VERSION, questions } from "../src/content/questions";
 import {
   SUPPORTED_BANK_VERSIONS,
   historicalQuestion,
+  gameQuestion,
 } from "../src/content/questions/registry";
 import {
   createSession,
@@ -17,6 +18,7 @@ import {
   selectQuestions,
   shuffle,
   assessDifficultyRound,
+  stats,
 } from "../src/domain/game/engine";
 import {
   belongsToPlayCategory,
@@ -27,7 +29,7 @@ import summary from "../docs/editorial-v73/summary.json";
 import review from "../docs/editorial-v73/iman-review.json";
 import sources from "../src/content/questions/editorial-v73/sources.json";
 const original = new Map(questionsV72.map((q) => [q.id, q]));
-test("v73 candidate: 1,500 unique IDs, option keys, category/difficulty and 30 v72 meaning replacements remain intact", () => {
+test("v73 candidate: 1,500 unique IDs and stable keys; only the exact approved meaning amendment differs from the 30 v72 replacements", () => {
   assert.equal(questionsV73Candidate.length, 1500);
   assert.equal(new Set(questionsV73Candidate.map((q) => q.id)).size, 1500);
   for (const q of questionsV73Candidate) {
@@ -55,11 +57,59 @@ test("v73 candidate: 1,500 unique IDs, option keys, category/difficulty and 30 v
       assert(q.sources.every((s) => s.checkStatus === "supported"));
     }
   }
-  for (const q of approvedNewQuestionsV72)
+  for (const q of approvedNewQuestionsV72) {
+    if (q.id === "quran-meaning-v72-024") {
+      const next = questionsV73Candidate.find((x) => x.id === q.id)!;
+      const old = original.get(q.id)!;
+      assert.equal(old.version, 72);
+      assert.equal(next.version, 73);
+      assert.equal(next.correctOptionId, old.correctOptionId);
+      assert.equal(
+        createHash("sha256")
+          .update(
+            JSON.stringify({
+              stem: next.question,
+              options: [
+                next.options.find((o) => o.id === next.correctOptionId)!.text,
+                ...old.options
+                  .filter((o) => o.id !== old.correctOptionId)
+                  .map((o) => next.options.find((n) => n.id === o.id)!.text),
+              ],
+              explanation: next.explanation,
+            }),
+          )
+          .digest("hex"),
+        "c838578d533753feb398d9c6f848ad1d505dda6b8f3cbc1bfeeb40dc723c6e1d",
+      );
+      continue;
+    }
     assert.deepEqual(
       questionsV73Candidate.find((x) => x.id === q.id),
       original.get(q.id),
     );
+  }
+});
+test("The approved candidate amendment cannot replace a saved v72 question, displayed answer or score", () => {
+  const id = "quran-meaning-v72-024";
+  const old = original.get(id)!;
+  const next = questionsV73Candidate.find((q) => q.id === id)!;
+  const saved: Parameters<typeof stats>[0] = JSON.parse(
+    JSON.stringify({
+      bankVersion: 72,
+      optionOrders: { [id]: ["o4", "o2", "o1", "o3"] },
+      answers: [{ questionId: id, option: 1, at: 2000 }],
+      startedAt: 1000,
+      completedAt: 2000,
+    }),
+  );
+  const displayed = gameQuestion(saved, id)!;
+  assert.equal(displayed.text, old.question);
+  assert.notEqual(displayed.text, next.question);
+  assert.equal(displayed.options[1], "Boş ve yararsız işlerden");
+  assert.equal(displayed.explanation, old.explanation);
+  assert.equal(displayed.version, 72);
+  assert.equal(stats(saved).score, 100);
+  assert.equal(gameQuestion({ ...saved, bankVersion: 73 }, id), undefined);
 });
 test("v73 stays unpublished; frozen v72 and historical registry are untouched; evidence does not imply human approval", () => {
   assert.equal(BANK_VERSION, 72);

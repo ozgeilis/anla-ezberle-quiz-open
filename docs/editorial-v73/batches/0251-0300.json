@@ -6,7 +6,7 @@
   "individuallyReviewed": 50,
   "pendingReview": 0,
   "sourceComparedThisRound": 50,
-  "blocked": 1,
+  "blocked": 0,
   "flaggedBefore": 0,
   "flaggedAfter": 0,
   "records": [
@@ -5213,37 +5213,37 @@
         ]
       },
       "after": {
-        "question": "Mü'minûn 23/3'te kurtuluşa eren müminlerin özellikle hangi şeyden yüz çevirdiği belirtilir?",
+        "question": "Mü’minûn 23/3’te öne çıkan duyarlılık aşağıdaki konulardan hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Haksız kazanç arayışından"
-          },
-          {
-            "id": "o2",
-            "text": "Boş ve yararsız işlerden"
+            "text": "İhtiyaç sahiplerinin hakkının verilmesi"
           },
           {
             "id": "o3",
-            "text": "Kırıcı konuşmalardan"
+            "text": "Emanetin ve verilen sözlerin korunması"
           },
           {
             "id": "o4",
-            "text": "Gereksiz harcamalardan"
+            "text": "Yetimlerin mallarının koruma altına alınması"
+          },
+          {
+            "id": "o2",
+            "text": "Söz ve işlerin anlamlı ve faydalı olması"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Boş ve yararsız işlerden",
-        "explanation": "Âyet, kurtuluşa eren müminlerin faydasız ve boş işlerden yüz çevirdiğini belirtir. Zamanı ve sözü anlamlı kullanmak öne çıkar.",
+        "correctAnswer": "Söz ve işlerin anlamlı ve faydalı olması",
+        "explanation": "Mü’minûn 23/3, anlamsız ve yararsız söz ve davranışlardan uzak durmayı anlatır. Emanetlere ve verilen sözlere sadakat aynı sûrenin 8. âyetinde ayrı bir nitelik olarak yer alır.",
         "sources": [
           {
-            "title": "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/tefsir/sure/23/ayet/3?kaynak=1",
-            "locator": "23/3; Diyanet meal/tefsir kontrolü",
-            "supports": "Lağiv, anlamsız/yararsız söz ve davranışlar olarak açıklanır; bunlardan yüz çevrilir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "23/3, 23/4 ve 23/8; PDF fiziksel sayfa 359 / basılı 358",
+            "supports": "Mü’minûn 23/3, anlamsız ve yararsız söz ve davranışlardan uzak durmayı anlatır. Emanetlere ve verilen sözlere sadakat aynı sûrenin 8. âyetinde ayrı bir nitelik olarak yer alır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-22"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5252,28 +5252,28 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "quran-meaning-v72-024",
-        "reviewedCandidateSha256": "36f8deedb1b21231cf5cea4239d280eafb344354713e6e413cba376024956d51",
-        "disposition": "blocked",
+        "reviewedCandidateSha256": "6b7a83b9201ddb0592d0f35cad56dff94909c22e5270787d0aca1bd2b9dd5587",
+        "disposition": "revised",
         "defects": [
           "possible-subset-overlap"
         ],
-        "reason": "Diğer olumsuz davranışlar yararsız davranışın altına girebilir; kökte özellikle ve ayet referansı bulunduğundan geniş lagv ifadesi hedefleniyor. Alt-küme çeldiriciler editör kabulünde ayrıca izlenecek.",
+        "reason": "Kullanıcının 30.10.2026 tarihli yalnız aday düzeltme izniyle geniş lagv kavramının alt kümeleri yanlış şık olmaktan çıkarıldı. Dört olumlu ve ilgili konu arasında 23/3’ün açık odağı soruluyor; 23/4 ve 23/8 farklı nitelikler olarak aynı kaynak sayfasıyla karşılaştırıldı.",
         "optionReview": {
-          "o1": "Başka belirli kötü davranış.",
-          "o2": "23/3’ün genel lagv karşılığı.",
-          "o3": "Daha dar söz davranışı.",
-          "o4": "Daha dar harcama davranışı."
+          "o1": "İhtiyaç sahibinin hakkı ahlâkî bir konudur; 23/3’ün açık odağı değildir, zekât 23/4’te ayrı anılır.",
+          "o3": "23/8’de emanet ve ahde bağlılık ayrı nitelik olarak sayılır; 23/3’ün cevabı değildir.",
+          "o4": "Olumlu bir mal koruma yükümlülüğüdür; 23/3’te belirtilen odak değildir.",
+          "o2": "23/3 anlamsız ve yararsız söz ve davranışlardan uzak durmayı anlatır; doğru odak budur."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Alt-küme çeldirici riski: kırıcı konuşma ve haksız kazanç lagvın geniş yorumuna girebilir. Ayetteki doğrudan karşılık soruluyor; bağımsız editörün bu nüansı ayrıca değerlendirmesi gerekir.",
+        "ambiguityReview": "Yanlışlar geniş olumsuz davranışın alt kümeleri olmaktan çıkarıldı. Hepsi olumlu ahlâk konusudur, fakat kök belirli âyetin doğrudan odağını sorar. Bağımsız editörün tek cevap kabulü bu kaynak karşılaştırmasıyla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Korunan v72 anlam sorusu nesne içeriği değiştirilmeden yeniden incelendi; aynı ayet başka hedefle sorulabilir, ortak kavram etiketiyle tekrar seçimi mevcut kurallara bağlı. Banka çapında anlamsal son tur bekliyor.",
+        "duplicateReview": "Aktif v72 anlam sorusu ve geçmiş içerik korunur. Yalnız aynı ID’nin v73 adayı için soru sürümü 73 olur; diğer 29 anlam sorusu aynıdır.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "23/3; PDF sayfa 359 (1 tabanlı), basılı sayfa 358",
+          "locator": "23/3, 23/4 ve 23/8; PDF fiziksel sayfa 359 / basılı 358",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

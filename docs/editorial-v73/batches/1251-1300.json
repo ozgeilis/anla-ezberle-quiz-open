@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 15,
-  "flaggedAfter": 9,
+  "flaggedAfter": 8,
   "records": [
     {
       "sequence": 1251,
@@ -721,35 +721,35 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
+        "question": "Furkân 25/74’te müttakilerle ilgili olarak hangi görev istenir?",
         "options": [
           {
             "id": "o2",
-            "text": "Helâl ve bereketli rızık bulmaları"
+            "text": "Onlardan bilgi öğrenmek"
           },
           {
             "id": "o3",
-            "text": "Sağlıklı ve uzun ömür sürmeleri"
+            "text": "Onların geçimini sağlamak"
           },
           {
             "id": "o4",
-            "text": "Bilgi ve tecrübelerini artırmaları"
+            "text": "Onlara yolculukta eşlik etmek"
           },
           {
             "id": "o1",
-            "text": "Göz aydınlığı ve mutluluk olmaları"
+            "text": "Onlara öncü olmak"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Göz aydınlığı ve mutluluk olmaları",
-        "explanation": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
+        "correctAnswer": "Onlara öncü olmak",
+        "explanation": "Furkân 25/74’te eş ve çocuklara ilişkin dileğin ardından günahtan sakınanlara öncü olma talebi yer alır. Burada duanın ikinci talebi sorulur.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "25/74; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-            "supports": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
+            "locator": "25/74; duanın son cümlesi; PDF fiziksel sayfa 385",
+            "supports": "Furkân 25/74’te eş ve çocuklara ilişkin dileğin ardından günahtan sakınanlara öncü olma talebi yer alır. Burada duanın ikinci talebi sorulur.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -765,26 +765,27 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q65-furkan-74",
-        "reviewedCandidateSha256": "edf2d3f7bbe58807b379f64dbaa4d9a1db804bb407f2882ff0b386740e358ae4",
+        "reviewedCandidateSha256": "892923b7f8133e46bc92b72f6fc594cb9a5ea3ebf4b9a5e3a0c493d02ec4d99c",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Yalnız servet/üstün soy/savaş gibi üç bağlam dışı arzu yerine dört olumlu aile duası. Mealin mutluluk getiren eş/çocuk ifadesi ve göz aydınlığı anlamı esastır.",
+        "reason": "Yalnız servet/üstün soy/savaş gibi üç bağlam dışı arzu yerine dört olumlu aile duası. Mealin mutluluk getiren eş/çocuk ifadesi ve göz aydınlığı anlamı esastır. Son tekrar karşılaştırması: Eş ve çocukların göz aydınlığı olması learn-dua-007 ile tekrardı; aynı duanın başka talebi soruldu.",
         "optionReview": {
-          "o2": "Başka olumlu aile dileği.",
-          "o3": "Başka olumlu aile dileği.",
-          "o4": "Başka olumlu aile dileği.",
-          "o1": "74’teki eş/çocuk dileği."
+          "o2": "Olumlu bir öğrenme davranışıdır; duanın açık talebi değildir.",
+          "o3": "Olumlu bir destek davranışıdır; bu ifadenin talebi değildir.",
+          "o4": "Olumlu bir arkadaşlık davranışıdır; bu âyetteki talep değildir.",
+          "o1": "Kur’an Yolu mealinde günahtan sakınanlara öncü yapılmak istenir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "25/74; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "locator": "25/74; duanın son cümlesi; PDF fiziksel sayfa 385",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
@@ -4751,35 +4752,35 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/79'da zarar verilen gemi kimlere aitti?",
+        "question": "Kehf 18/79’da geminin kusurlu gösterilmesine sebep olan hükümdarın davranışı hangisidir?",
         "options": [
           {
             "id": "o2",
-            "text": "Ticaret yapan tüccarlara"
+            "text": "Yolculardan geçiş ücreti almak"
           },
           {
             "id": "o3",
-            "text": "Kıyıyı koruyan askerlere"
+            "text": "Limanlarda ağır vergi toplamak"
           },
           {
             "id": "o4",
-            "text": "Yük taşıyan kervancılara"
+            "text": "Gemi yapımına kota koymak"
           },
           {
             "id": "o1",
-            "text": "Denizde çalışan yoksullara"
+            "text": "Sağlam gemileri zorla almak"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Denizde çalışan yoksullara",
-        "explanation": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
+        "correctAnswer": "Sağlam gemileri zorla almak",
+        "explanation": "Kehf 18/79, sağlam gemileri zorla ele geçiren bir kral bulunduğunu açıklar. Gemi bu zorla almadan korunması için kusurlu hale getirilmiştir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "18/79; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-            "supports": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
+            "locator": "18/79; sağlam gemileri gasbeden kral; PDF fiziksel sayfa 317",
+            "supports": "Kehf 18/79, sağlam gemileri zorla ele geçiren bir kral bulunduğunu açıklar. Gemi bu zorla almadan korunması için kusurlu hale getirilmiştir.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -4790,26 +4791,27 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-kehf-79",
-        "reviewedCandidateSha256": "60624813db04377246a0caca0b4c2250496bc89508fc5de14672c985556440cb",
+        "reviewedCandidateSha256": "4c87d0aa3ce3db95e699ef22b38a864156cec4ec193b0df9e9e2b5eebf1c64cf",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Bütün köy çocukları gibi akla yatkın olmayan mülkiyet yerine dört meslek/geçim topluluğu. Kaynağın yoksul deniz çalışanları belirli; hükümdar gemiye sahip değil el koymaktadır.",
+        "reason": "Bütün köy çocukları gibi akla yatkın olmayan mülkiyet yerine dört meslek/geçim topluluğu. Kaynağın yoksul deniz çalışanları belirli; hükümdar gemiye sahip değil el koymaktadır. Son tekrar karşılaştırması: Yoksul gemi sahipleri v10-prophets-002 ile tekrardı; zararın ayrı gerekçesi soruldu.",
         "optionReview": {
-          "o2": "Başka ticari sahip varsayımı.",
-          "o3": "Başka askerî sahip varsayımı.",
-          "o4": "Başka taşıma işi sahibi varsayımı.",
-          "o1": "79’un yoksul çalışanları."
+          "o2": "Aynı denizcilik alanında makul bir uygulamadır; burada bildirilen değildir.",
+          "o3": "İlgili bir malî baskıdır; bu âyetteki gerekçe değildir.",
+          "o4": "İlgili bir idarî kısıtlamadır; bu pasajın olayı değildir.",
+          "o1": "Mealde her sağlam gemiyi gasbeden kraldan söz edilir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "18/79; PDF sayfa 317 (1 tabanlı), basılı sayfa 316",
+          "locator": "18/79; sağlam gemileri gasbeden kral; PDF fiziksel sayfa 317",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
@@ -5185,70 +5187,66 @@
         ]
       },
       "after": {
-        "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
+        "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
         "options": [
           {
             "id": "o2",
-            "text": "İnsanların lehçeleri"
+            "text": "Zekeriyyâ"
           },
           {
             "id": "o4",
-            "text": "Cinlerin konuşması"
+            "text": "İshak"
           },
           {
             "id": "o3",
-            "text": "Kuşların dili"
+            "text": "Dâvûd"
           },
           {
             "id": "o1",
-            "text": "Karıncaların dili"
+            "text": "Hârûn"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Kuşların dili",
-        "explanation": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
+        "correctAnswer": "Dâvûd",
+        "explanation": "Kur’an Yolu mealinde Neml 27/16, Süleyman’ın Dâvûd’un yerine geçtiğini söyleyerek başlar. Soru maddî mirasa dair tartışmalı bir hüküm ileri sürmez.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "27/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-            "supports": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
+            "locator": "27/16; mealin ilk cümlesi; PDF fiziksel sayfa 398",
+            "supports": "Kur’an Yolu mealinde Neml 27/16, Süleyman’ın Dâvûd’un yerine geçtiğini söyleyerek başlar. Soru maddî mirasa dair tartışmalı bir hüküm ileri sürmez.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-neml-16",
-        "reviewedCandidateSha256": "34d59e4977791d56b2f68a25d043cb32c6de2e52edff9b33a8bfd8164ac0d5d7",
+        "reviewedCandidateSha256": "6387ae36bd0867c515490b8fa7c4e110651b03a617a0039ce43ed135ec361815",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "İletişim diyen köke karşı üç iletişim dışı bilgi kaldırıldı. Dört dil/konuşma alanı; karıncayı da 19’da anlar, fakat 16’nın kendisine öğretildiğini söylediği lafız kuş dilidir.",
+        "reason": "İletişim diyen köke karşı üç iletişim dışı bilgi kaldırıldı. Dört dil/konuşma alanı; karıncayı da 19’da anlar, fakat 16’nın kendisine öğretildiğini söylediği lafız kuş dilidir. Son tekrar karşılaştırması: Kuş dili q47-suleyman-026 ile tekrardı; aynı âyetin ayrı bir yerine geçme ilişkisi soruldu.",
         "optionReview": {
-          "o2": "Başka dil alanı.",
-          "o4": "Başka konuşma alanı.",
-          "o3": "16’nın açık kuş dili.",
-          "o1": "18–19’daki farklı anlama olayı."
+          "o2": "Gerçek bir peygamberdir; bu âyetin yerine geçme ilişkisindeki kişi değildir.",
+          "o4": "Gerçek bir peygamberdir; bu cümledeki kişi değildir.",
+          "o3": "Mealin başlangıcında Süleyman’ın Dâvûd’un yerine geçtiği söylenir.",
+          "o1": "Gerçek bir peygamberdir; burada adı geçen önceki kişi değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "27/16; PDF sayfa 398 (1 tabanlı), basılı sayfa 397",
+          "locator": "27/16; mealin ilk cümlesi; PDF fiziksel sayfa 398",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
@@ -5525,37 +5523,37 @@
         ]
       },
       "after": {
-        "question": "Neml 27/20'de Hz. Süleyman hangi kuşun yokluğunu fark etmiştir?",
+        "question": "Neml 27/31’de mektubun alıcılarından hangi tutumla gelmeleri istenir?",
         "options": [
           {
+            "id": "o3",
+            "text": "Teslimiyet göstererek"
+          },
+          {
             "id": "o1",
-            "text": "Güvercin"
+            "text": "Görüşme şartı öne sürerek"
           },
           {
             "id": "o2",
-            "text": "Serçe"
-          },
-          {
-            "id": "o3",
-            "text": "Hüdhüd"
+            "text": "İttifak teklif ederek"
           },
           {
             "id": "o4",
-            "text": "Kartal"
+            "text": "Hediyeler hazırlayarak"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Hüdhüd",
-        "explanation": "Neml 27/20, Hz. Süleyman'ın kuşları gözden geçirirken hüdhüdü bulamadığını fark etmesini anlatır.",
+        "correctAnswer": "Teslimiyet göstererek",
+        "explanation": "Neml 27/31’de mektup üstünlük taslamamayı ve gelip teslim olmayı ister. Hediye gönderme fikri ise 27/35’te kraliçenin verdiği farklı karşılıktır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Neml",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=20&mode=kuran-meal&sure=27",
-            "locator": "Neml 27/20",
-            "supports": "Neml 27/20, Hz. Süleyman'ın kuşları gözden geçirirken hüdhüdü bulamadığını fark etmesini anlatır.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "27/31 ve 27/35; mektubun talebi ile kraliçenin cevabı; PDF fiziksel sayfa 400",
+            "supports": "Neml 27/31’de mektup üstünlük taslamamayı ve gelip teslim olmayı ister. Hediye gönderme fikri ise 27/35’te kraliçenin verdiği farklı karşılıktır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5564,24 +5562,26 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-neml-20",
-        "reviewedCandidateSha256": "35345aef3041ad8e73c761df393c8a778e6eec663ea815add747c9742cf12d0a",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört gerçek kuş türü. 20 ve 399 dipnotunda hüdhüd/çavuş kuşu tanımı açık; bu eş ad ayrıca yanlış seçenek yapılmadı.",
+        "reviewedCandidateSha256": "93a20a63e9b1c885fefe95cfa0f3c2865f89f46418362c7fc07fba0bbdfa4b4b",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört gerçek kuş türü. 20 ve 399 dipnotunda hüdhüd/çavuş kuşu tanımı açık; bu eş ad ayrıca yanlış seçenek yapılmadı. Son tekrar karşılaştırması: Hüdhüdün yokluğu e150-prophets-022 ile tekrardı; mektubun ayrı talebi soruldu.",
         "optionReview": {
-          "o1": "Başka kuş.",
-          "o2": "Başka kuş.",
-          "o3": "20’nin yokluğu sorulan kuşu.",
-          "o4": "Başka kuş."
+          "o3": "Mealde üstünlük taslamadan gelip teslim olmaları istenir.",
+          "o1": "Siyasî bir cevap biçimidir; mektubun açık talebi değildir.",
+          "o2": "Makul bir diplomatik davranıştır; bu cümlenin talebi değildir.",
+          "o4": "Sonraki sahnede kraliçenin düşündüğü cevaptır; mektubun talebi değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "27/20; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "locator": "27/31 ve 27/35; mektubun talebi ile kraliçenin cevabı; PDF fiziksel sayfa 400",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"

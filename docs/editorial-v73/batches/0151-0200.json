@@ -3597,37 +3597,37 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/82'de duvarın altındaki definenin sahipleri kimlerdir?",
+        "question": "Kehf 18/82’de iki yetimin defineyi çıkarması için açıkça anılan aşama hangisidir?",
         "options": [
           {
             "id": "o3",
-            "text": "Şehrin yöneticileri"
+            "text": "Bir ticaret yolculuğuna çıkmaları"
           },
           {
             "id": "o4",
-            "text": "İki yetim çocuk"
+            "text": "Güçlü çağlarına erişmeleri"
           },
           {
             "id": "o1",
-            "text": "İki yolcu tüccar"
+            "text": "Meslek öğrenimini bitirmeleri"
           },
           {
             "id": "o2",
-            "text": "Yoksul denizciler"
+            "text": "Okuma yazmayı öğrenmeleri"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "İki yetim çocuk",
-        "explanation": "Kehf 18/82, duvarın altında iki yetim çocuğa ait hazine bulunduğunu ve babalarının iyi bir insan olduğunu açıklar.",
+        "correctAnswer": "Güçlü çağlarına erişmeleri",
+        "explanation": "Kehf 18/82’de iki çocuğun güçlü çağlarına erişmesi ve sonra definelerini çıkarması anlatılır. Metnin söylemediği okul, meslek veya yolculuk şartları eklenmez.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "18/82; PDF sayfa 317 (1 tabanlı), basılı sayfa 316",
-            "supports": "Duvarın altında iki yetim çocuğa ait define vardır.",
+            "locator": "18/82; güçlü çağa erişme ve define; PDF fiziksel sayfa 317",
+            "supports": "Kehf 18/82’de iki çocuğun güçlü çağlarına erişmesi ve sonra definelerini çıkarması anlatılır. Metnin söylemediği okul, meslek veya yolculuk şartları eklenmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -3641,28 +3641,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-kehf-82",
-        "reviewedCandidateSha256": "f82d577ca531a2c796d470bb7b018de58320b09b8bf0cada8c36ca4f3fbeac94",
+        "reviewedCandidateSha256": "257bd4ecc46aa2188b313c6126c5ac4bad1aa37a353bfd8c51fdee2a514ba747",
         "disposition": "revised",
         "defects": [
-          "implausible-distractor"
+          "implausible-distractor",
+          "repeated-fact"
         ],
-        "reason": "Tüccar ordusu/mağara gençleri yerine dört makul mülk sahibi grubu kullanıldı. Yetim iki çocuğun mülkiyeti âyetten ayrılıyor.",
+        "reason": "Tüccar ordusu/mağara gençleri yerine dört makul mülk sahibi grubu kullanıldı. Yetim iki çocuğun mülkiyeti âyetten ayrılıyor. Son tekrar karşılaştırması: İki yetim hazine sahibi v10-prophets-003 ile tekrardı; hazinenin çıkarılma zamanı soruldu.",
         "optionReview": {
-          "o3": "Makul sahip grubu; pasajda yok.",
-          "o4": "Definenin sahipleri âyette açık.",
-          "o1": "Makul sahip grubu; pasajda yok.",
-          "o2": "Önceki gemi sahnesinin sahipleri; define sahipleri değil."
+          "o3": "Kişilerin yaşayabileceği bir olaydır; âyette koşul olarak anılmaz.",
+          "o4": "Kur’an Yolu mealinde çocukların güçlü çağlarına erişip definelerini çıkarması anlatılır.",
+          "o1": "Gerçek bir gelişim aşamasıdır; metinde bunun şart olduğu söylenmez.",
+          "o2": "Makul bir eğitim aşamasıdır; bu âyetin açık aşaması değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "18/82; PDF sayfa 317 (1 tabanlı), basılı sayfa 316",
+          "locator": "18/82; güçlü çağa erişme ve define; PDF fiziksel sayfa 317",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -4531,37 +4532,37 @@
         ]
       },
       "after": {
-        "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
+        "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
         "options": [
           {
             "id": "o3",
-            "text": "Onu sarayın kapısına götürmesi"
+            "text": "Ona giysi hazırlaması"
           },
           {
             "id": "o4",
-            "text": "Onu nehre bırakması"
+            "text": "Onu emzirmesi"
           },
           {
             "id": "o1",
-            "text": "Onu dağda bir yere saklaması"
+            "text": "Onu yıkaması"
           },
           {
             "id": "o2",
-            "text": "Onu güvenilir bir aileye vermesi"
+            "text": "Ona isim vermesi"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Onu nehre bırakması",
-        "explanation": "Kasas 28/7, Mûsâ'nın annesine önce onu emzirmesi, tehlikeden korkunca suya bırakması ve korkmaması yönünde ilham verildiğini aktarır.",
+        "correctAnswer": "Onu emzirmesi",
+        "explanation": "Kasas 28/7, Mûsâ’nın annesine onu emzirmesini bildirerek başlar; endişe duyduğunda nehre bırakma talimatı bundan sonra gelir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "28/7; PDF sayfa 407 (1 tabanlı), basılı sayfa 406",
-            "supports": "Annesine, Mûsâ için tehlikeden korktuğunda onu nehre bırakması bildirilir.",
+            "locator": "28/7; ilk emir ile sonraki koşul ayrımı; PDF fiziksel sayfa 407",
+            "supports": "Kasas 28/7, Mûsâ’nın annesine onu emzirmesini bildirerek başlar; endişe duyduğunda nehre bırakma talimatı bundan sonra gelir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4575,29 +4576,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q67-kasas-7",
-        "reviewedCandidateSha256": "3765d91a3c61a26051d601d8b0c32399404d7ab5aac4f1953f3884819064c728",
+        "reviewedCandidateSha256": "d559284fa1d9c49f5a6d1214fd8d9cdffe1b9274d255e033432be8826ecf47ea",
         "disposition": "revised",
         "defects": [
           "unrelated-distractors",
-          "stem-answer-imbalance"
+          "stem-answer-imbalance",
+          "repeated-fact"
         ],
-        "reason": "Gemi isteme/şehir kurma gibi ilgisiz şıklar dört çocuk güvenliği eylemiyle değiştirildi. Kök, emzirme emrinden sonraki tehlike durumunu açıkça sorar.",
+        "reason": "Gemi isteme/şehir kurma gibi ilgisiz şıklar dört çocuk güvenliği eylemiyle değiştirildi. Kök, emzirme emrinden sonraki tehlike durumunu açıkça sorar. Son tekrar karşılaştırması: Nehre bırakma v11-prophets-007 ile tekrardı; aynı âyetin farklı ilk emri soruldu.",
         "optionReview": {
-          "o3": "Sonraki saray bağlamıyla karışabilir; annesine verilen emir değil.",
-          "o4": "Tehlike sezildiğinde verilen emir.",
-          "o1": "Güvenlik eylemi; âyette değil.",
-          "o2": "Güvenlik eylemi; bu âyette verilen emir değil."
+          "o3": "Makul bir bakım işidir; bu âyetin açık emri değildir.",
+          "o4": "Âyet emzirme emriyle başlar, ardından tehlike durumundaki talimatı verir.",
+          "o1": "Bir bebek bakım işidir; bu âyetin ilk emri değildir.",
+          "o2": "Gerçek bir aile uygulamasıdır; bu cümledeki emir değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "28/7; PDF sayfa 407 (1 tabanlı), basılı sayfa 406",
+          "locator": "28/7; ilk emir ile sonraki koşul ayrımı; PDF fiziksel sayfa 407",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -5609,37 +5611,37 @@
         ]
       },
       "after": {
-        "question": "Ankebût 29/45'te namazın hangi ahlâkî etkisi açıkça belirtilir?",
+        "question": "Ankebût 29/45’te namaz öğüdünden sonra önemi özellikle belirtilen davranış hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Hayâsızlık ve kötülükten alıkoyması"
+            "text": "Allah’ı anmak"
           },
           {
             "id": "o2",
-            "text": "Paylaşma ve yardımlaşmayı artırması"
+            "text": "Hac yolculuğuna çıkmak"
           },
           {
             "id": "o3",
-            "text": "Merhamet ve affediciliği güçlendirmesi"
+            "text": "İhtiyaç sahibine yardım etmek"
           },
           {
             "id": "o4",
-            "text": "Sabır ve dayanışmayı geliştirmesi"
+            "text": "Ramazan orucunu tutmak"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Hayâsızlık ve kötülükten alıkoyması",
-        "explanation": "Ankebût 29/45, kitabın okunmasını ve namazın kılınmasını emreder; namazın hayâsızlık ve kötülükten alıkoyduğunu bildirir.",
+        "correctAnswer": "Allah’ı anmak",
+        "explanation": "Ankebût 29/45’te namazın ahlâkî etkisinin ardından Allah’ı anmanın önemi vurgulanır. Soru diğer ibadetlerin önemini reddetmez; bu cümledeki özel vurguyu sorar.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "29/45; PDF sayfa 423 (1 tabanlı), basılı sayfa 422",
-            "supports": "Namazın hayâsızlık ve kötülükten menettiği açıkça ifade edilir.",
+            "locator": "29/45; zikir cümlesi; PDF fiziksel sayfa 423",
+            "supports": "Ankebût 29/45’te namazın ahlâkî etkisinin ardından Allah’ı anmanın önemi vurgulanır. Soru diğer ibadetlerin önemini reddetmez; bu cümledeki özel vurguyu sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5653,29 +5655,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q67-ankebut-45",
-        "reviewedCandidateSha256": "270daa7104f60d15174a3a7788d27e6d062bf8bcebf26316c2fed5e5bbbb30a4",
+        "reviewedCandidateSha256": "286f0ac2a358cc21df9329bcf62489275cee32ca2f7d07757c0e6abbe7d623f9",
         "disposition": "revised",
         "defects": [
           "three-restrictive-distractors",
-          "single-positive-option"
+          "single-positive-option",
+          "repeated-fact"
         ],
-        "reason": "Üç sınırlayıcı/olumsuz çeldirici dört olumlu ahlakî etkiyle değiştirildi. Kök âyette açıkça belirtilen etkiyi sorar.",
+        "reason": "Üç sınırlayıcı/olumsuz çeldirici dört olumlu ahlakî etkiyle değiştirildi. Kök âyette açıkça belirtilen etkiyi sorar. Son tekrar karşılaştırması: Namazın hayâsızlık ve kötülükten alıkoyması v13-general-012 ile tekrardı; âyetin ayrı cümlesi soruldu.",
         "optionReview": {
-          "o1": "45. âyetin açık men etme ifadesi.",
-          "o2": "Makul olumlu etki; bu âyette söylenen değil.",
-          "o3": "Makul olumlu etki; bu âyette söylenen değil.",
-          "o4": "Makul olumlu etki; bu âyette söylenen değil."
+          "o1": "Kur’an Yolu mealinde Allah’ı anmanın her şeyden önemli olduğu belirtilir.",
+          "o2": "Gerçek bir ibadettir; bu cümlede özellikle belirtilen değildir.",
+          "o3": "Olumlu dinî davranıştır; bu cümlenin açık hedefi değildir.",
+          "o4": "Gerçek bir ibadettir; bu âyetteki ifadenin karşılığı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "29/45; PDF sayfa 423 (1 tabanlı), basılı sayfa 422",
+          "locator": "29/45; zikir cümlesi; PDF fiziksel sayfa 423",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

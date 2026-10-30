@@ -384,7 +384,7 @@ outputs["docs/editorial-v73/round2-open-items.md"] =
         `- **${r.id}** (${r.category}): ${r.decision!.ambiguityReview} ${r.decision!.reason}\n`,
     )
     .join("") +
-  "\nKorunan soru için [uygulanmamış düzeltme önerisi](PROTECTED-MEANING-QUESTION-PROPOSAL.md) ayrı karar için hazırlandı; mevcut aday değiştirilmedi.\n\n## İncelenenlerde kaynak karşılaştırması bekleyenler\n\n" +
+  "\nKorunan sorudaki [onaylanan düzeltme](PROTECTED-MEANING-QUESTION-PROPOSAL.md) yalnız v73 adayına uygulandı. Aktif v72 ve diğer 29 anlam sorusu korunur; yayın izni verilmedi.\n\n## İncelenenlerde kaynak karşılaştırması bekleyenler\n\n" +
   records
     .filter((r) => r.decision?.source.status === "pending")
     .map(
@@ -392,7 +392,7 @@ outputs["docs/editorial-v73/round2-open-items.md"] =
         `- ${r.id}: [kaynak](${r.decision!.source.url}) — ${r.decision!.source.note}\n`,
     )
     .join("") +
-  `\n## Banka çapında ek tekrar kontrolü\n\n${overlap.automaticCandidatePairs} güncel sözcük benzerliği önerisi ve eşik dışından korunan/elle eklenen ${overlap.retainedExplicitPairs} çift dahil toplam ${overlap.candidatePairs} çiftin ${overlap.individuallyReviewedPairs} tanesi ayrıca karşılaştırıldı; ${overlap.repeatedFactPairs} çiftte aynı bilgi tekrar soruluyor. İlk bulunan 23 tekrar ayrı kaynak hedefleriyle yeniden yazıldı; sonraki anlam karşılaştırmasında bulunan açıklar bu sayıya gizlenmedi. Kalan ${overlap.pendingPairs} çift bekliyor. Ayrı [çift kayıtları](round2-overlap-review.json) bu açıkları saklar. Benzerlik taramasının üretemediği eş anlamlı kökler olabilir; bu araç bütün anlamsal tekrarların bulunmuş olduğu garantisini vermez.\n\n## Mevcut zorluk sınırı\n\nİman/Ahlak zor havuzu v72’de ve adayda 7 sorudur; mevcut 10 bağımsız soruluk zor tur açılamaz. Zorluk etiketleri onaysız değiştirilmedi. Adayın 18 kategori/zorluk birleşimi v72 ile karşılaştırılır; 17 kullanılabilir birleşim ve bu mevcut engel korunur.\n\n## Aynı bilgi içeren açık çiftler\n\n${overlap.records
+  `\n## Banka çapında ek tekrar kontrolü\n\n${overlap.automaticCandidatePairs} güncel sözcük benzerliği önerisi ve eşik dışından korunan/elle eklenen ${overlap.retainedExplicitPairs} çift dahil toplam ${overlap.candidatePairs} çiftin ${overlap.individuallyReviewedPairs} tanesi ayrıca karşılaştırıldı; ${overlap.repeatedFactPairs} çiftte aynı bilgi tekrar soruluyor. İki aşamada 23 + 23 aynı-bilgi tekrarı ayrı kaynak hedefleriyle yeniden yazıldı; ikinci aşama önceki 19 açığı ve son okumada belirlenen dört ek çifti kapsar. Kalan ${overlap.pendingPairs} çift kararı bekliyor. Ayrı [çift kayıtları](round2-overlap-review.json) eşik altına düşen düzeltilmiş çiftleri de saklar. Yakın âyet, kişi veya olay bağlamı bulunan ancak farklı hedef soran çiftler gerekçeyle korunur; karşılıklı ipucu ihtimali de not edilir. Benzerlik taramasının üretemediği eş anlamlı kökler olabilir; bu araç bütün anlamsal tekrarların bulunmuş olduğu garantisini vermez.\n\n## Mevcut zorluk sınırı\n\nİman/Ahlak zor havuzu v72’de ve adayda 7 sorudur; mevcut 10 bağımsız soruluk zor tur açılamaz. Zorluk etiketleri onaysız değiştirilmedi. Adayın 18 kategori/zorluk birleşimi v72 ile karşılaştırılır; 17 kullanılabilir birleşim ve bu mevcut engel korunur.\n\n## Aynı bilgi içeren açık çiftler\n\n${overlap.records
     .filter((r) => r.decision?.verdict === "repeated-fact")
     .map((r) => `- **${r.a} / ${r.b}**: ${r.decision!.reason}`)
     .join(

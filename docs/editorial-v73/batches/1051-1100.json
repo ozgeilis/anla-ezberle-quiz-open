@@ -161,37 +161,37 @@
         ]
       },
       "after": {
-        "question": "Birinci Akabe Biatı sonrasında Yesrib'e Kur'an ve İslam'ı öğretmesi için kim gönderildi?",
+        "question": "TDV’ye göre Birinci Akabe Biatı’ndaki on iki Medinelinin kaçı Evs kabilesindendi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Zeyd b. Sâbit"
-          },
-          {
-            "id": "o2",
-            "text": "Mus'ab b. Umeyr"
-          },
-          {
             "id": "o3",
-            "text": "Bilâl-i Habeşî"
+            "text": "Altı"
           },
           {
             "id": "o4",
-            "text": "Ebû Hüreyre"
+            "text": "Sekiz"
+          },
+          {
+            "id": "o2",
+            "text": "İki"
+          },
+          {
+            "id": "o1",
+            "text": "Dört"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Mus'ab b. Umeyr",
-        "explanation": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+        "correctAnswer": "İki",
+        "explanation": "TDV Akabe Biatları maddesinde Birinci Akabe heyeti on Hazrecli ve iki Evsli olarak anlatılır. Soru toplam kişi sayısını değil Evs mensuplarının sayısını sorar.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-            "locator": "Birinci Akabe Biatı sonrası eğitim",
-            "supports": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+            "locator": "99–100. satırlar; heyetin kabile dağılımı",
+            "supports": "TDV Akabe Biatları maddesinde Birinci Akabe heyeti on Hazrecli ve iki Evsli olarak anlatılır. Soru toplam kişi sayısını değil Evs mensuplarının sayısını sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -200,27 +200,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q56-akabe-egitmen",
-        "reviewedCandidateSha256": "532963bb5bf4f61ec5eeaf5a9e5545db12ba8737b23af78ad41e2009a295b78a",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört gerçek sahâbî aynı tür adlarda. Mus‘ab açıkça görevlendirilen; diğerlerinin okuyuculuk/öğretim bağlantısı bu somut görevlendirmeyi değiştirmez.",
+        "reviewedCandidateSha256": "d04d9dbdad106d5c4ad7fbad10daa8b7331e7e35eef458da8005f6e8a9a7c4c1",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört gerçek sahâbî aynı tür adlarda. Mus‘ab açıkça görevlendirilen; diğerlerinin okuyuculuk/öğretim bağlantısı bu somut görevlendirmeyi değiştirmez. Son tekrar karşılaştırması: Mus‘ab’ın öğreticiliği e150-history-028 ile tekrardı; heyetin ayrı bir alt grup sayısı soruldu.",
         "optionReview": {
-          "o1": "Başka sahâbî.",
-          "o2": "100. satırın görevlisi.",
-          "o3": "Başka sahâbî.",
-          "o4": "Başka sahâbî."
+          "o3": "İki eşit kabile varsayımı bu olayın dağılımı değildir.",
+          "o4": "Toplam içinde makul bir çeldiricidir; kaynakta verilen dağılım değildir.",
+          "o2": "Kaynak on Hazrecli ve iki Evsli olarak dağılım verir.",
+          "o1": "Toplam on iki içindeki Evs sayısı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-          "locator": "99–101. satırlar",
+          "locator": "99–100. satırlar; heyetin kabile dağılımı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "1771313c4b203ad38f68224cc0477fc471400068cf6ef64261edfa99f4428330"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,
@@ -1714,37 +1716,37 @@
         ]
       },
       "after": {
-        "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
+        "question": "Yûsuf 12/73’te kardeşler hangi iki suçlamayı birlikte reddeder?",
         "options": [
           {
             "id": "o1",
-            "text": "Bir"
+            "text": "Yalancılık ve iftira"
           },
           {
             "id": "o2",
-            "text": "Üç"
+            "text": "Rüşvet ve görevi kötüye kullanma"
           },
           {
             "id": "o3",
-            "text": "Dört"
+            "text": "Gasp ve mala zarar verme"
           },
           {
             "id": "o4",
-            "text": "İki"
+            "text": "Bozgunculuk ve hırsızlık"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "İki",
-        "explanation": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+        "correctAnswer": "Bozgunculuk ve hırsızlık",
+        "explanation": "Yûsuf 12/73’te kardeşler fesat çıkarmak amacıyla gelmediklerini ve hırsız olmadıklarını dile getirir. Şıkların hepsi olumsuz suçlama türleridir; tek olumlu davranış ipucu yoktur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
-            "locator": "Yûsuf 12/36",
-            "supports": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "12/73; kardeşlerin cevabı; PDF fiziksel sayfa 255",
+            "supports": "Yûsuf 12/73’te kardeşler fesat çıkarmak amacıyla gelmediklerini ve hırsız olmadıklarını dile getirir. Şıkların hepsi olumsuz suçlama türleridir; tek olumlu davranış ipucu yoktur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1753,24 +1755,26 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q57-yusufzindan",
-        "reviewedCandidateSha256": "9caa81b296951198408b34390cc70d91789c353a67f31c93b39d9d032aec5546",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört yakın kişi sayısı. İki genç Yûsuf’a ek girer; toplam üç mahkûm ifadesiyle karıştırılmaz.",
+        "reviewedCandidateSha256": "09599a50fa460ea4f4a09e85b63957964004c31d9d7529fd47a0d8906c528c29",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört yakın kişi sayısı. İki genç Yûsuf’a ek girer; toplam üç mahkûm ifadesiyle karıştırılmaz. Son tekrar karşılaştırması: Zindandaki iki genç q48-yusuf-034 ile tekrardı; kardeşlerin ayrı bir savunması soruldu.",
         "optionReview": {
-          "o1": "Başka genç sayısı.",
-          "o2": "Yûsuf dahil sayı olabilir; sorulan ek iki genç.",
-          "o3": "Başka genç sayısı.",
-          "o4": "36. âyetin iki genci."
+          "o1": "İki ilgili suçlama türüdür; bu âyette birlikte reddedilenler değildir.",
+          "o2": "Aynı hukuk/ahlâk alanındadır; bu cümlede verilen ikili değildir.",
+          "o3": "Malla ilgili makul çeldiricilerdir; metnin açık ikilisi değildir.",
+          "o4": "Âyette fesat çıkarmak için gelmediklerini ve hırsız olmadıklarını söylerler."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "12/36; PDF sayfa 250 (1 tabanlı), basılı sayfa 249",
+          "locator": "12/73; kardeşlerin cevabı; PDF fiziksel sayfa 255",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
@@ -5139,37 +5143,37 @@
         ]
       },
       "after": {
-        "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
+        "question": "Ümmü Süleym’in oğlu Abdullah’a yapılan, damağa yumuşatılmış hurma sürme işlemi hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Enes b. Mâlik"
-          },
-          {
-            "id": "o2",
-            "text": "Ebû Hüreyre"
-          },
-          {
             "id": "o3",
-            "text": "Abdullah b. Abbas"
+            "text": "Tesmiye"
           },
           {
             "id": "o4",
-            "text": "Zeyd b. Sâbit"
+            "text": "Mevlid"
+          },
+          {
+            "id": "o1",
+            "text": "Tahnîk"
+          },
+          {
+            "id": "o2",
+            "text": "Akîka"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Enes b. Mâlik",
-        "explanation": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+        "correctAnswer": "Tahnîk",
+        "explanation": "TDV Tahnîk maddesinde Ümmü Süleym’in oğlu Abdullah’a yapılan uygulama anlatılır: yumuşatılan hurmanın bebeğin ağzına sürülmesi tahnîk olarak adlandırılır. Ad verme ayrı bir işlemdir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
-            "locator": "Enes b. Mâlik'in annesi",
-            "supports": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/tahnik",
+            "locator": "96 ve 101–102. satırlar; tanım ve Abdullah örneği",
+            "supports": "TDV Tahnîk maddesinde Ümmü Süleym’in oğlu Abdullah’a yapılan uygulama anlatılır: yumuşatılan hurmanın bebeğin ağzına sürülmesi tahnîk olarak adlandırılır. Ad verme ayrı bir işlemdir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5178,27 +5182,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q58-suleym-anne",
-        "reviewedCandidateSha256": "d23b829ab524f8d10dfde54dcba9fd7b6693e4c3ea2f08fae57afcbe4066370b",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört gerçek râvi aynı tür adlarda. Enes’in annesi 96–98’de açık, küçük yaşta hizmetiyle bağ tutarlı.",
+        "reviewedCandidateSha256": "4f17611d29087cacea082556a4d1d25eacfd80c48e324b00cca8ed5a4993b7c2",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört gerçek râvi aynı tür adlarda. Enes’in annesi 96–98’de açık, küçük yaşta hizmetiyle bağ tutarlı. Son tekrar karşılaştırması: Ümmü Süleym/Enes anne-oğul eşleşmesi learn-women-005 ile tekrardı; diğer oğluyla ilgili belgelenmiş uygulama soruldu.",
         "optionReview": {
-          "o1": "Kaynağın belirttiği oğlu.",
-          "o2": "Başka râvi.",
-          "o3": "Başka râvi.",
-          "o4": "Başka râvi."
+          "o3": "Ad verme işlemidir; damağa hurma sürme işleminin adı değildir.",
+          "o4": "Doğumla ilişkili bir anma tabiridir; bu özel işlemin adı değildir.",
+          "o1": "TDV Tahnîk maddesi bu uygulamayı tanımlar ve Ümmü Süleym’in oğlu Abdullah örneğini verir.",
+          "o2": "Çocuk için kurban kesilmesiyle ilgili farklı bir uygulamadır."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
-        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
+        "difficultyReview": "Mevcut easy etiketi onaysız değiştirilmedi. Terim ayrımına ilişkin güçlük editör/ürün kabulünde ayrıca değerlendirilmeli.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
-          "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
-          "locator": "96–98. satırlar",
+          "url": "https://islamansiklopedisi.org.tr/tahnik",
+          "locator": "96 ve 101–102. satırlar; tanım ve Abdullah örneği",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+          "sourceSha256": "6b3ae3aa16036d6600acb58c8891955aff4dbdcefac1adefb3ad141954481d71"
         }
       },
       "independentExpertApproval": false,

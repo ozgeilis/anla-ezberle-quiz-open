@@ -6,15 +6,15 @@
   "individuallyReviewed": 1500,
   "pendingReview": 0,
   "sourceComparedThisRound": 1500,
-  "blocked": 1,
+  "blocked": 0,
   "flaggedBefore": 336,
-  "flaggedAfter": 172,
+  "flaggedAfter": 171,
   "previousPriorityCount": 220,
-  "revisedAgainstV72": 1029,
-  "stemsChangedAgainstV72": 475,
-  "correctAnswerWordingChangedAgainstV72": 475,
-  "explanationsChangedAgainstV72": 234,
-  "distractorsOnlyChangedAgainstV72": 357,
+  "revisedAgainstV72": 1039,
+  "stemsChangedAgainstV72": 489,
+  "correctAnswerWordingChangedAgainstV72": 492,
+  "explanationsChangedAgainstV72": 256,
+  "distractorsOnlyChangedAgainstV72": 353,
   "automaticPatternCounts": {
     "three-restrictive-distractors": {
       "before": 25,
@@ -42,7 +42,7 @@
     },
     "length-outlier": {
       "before": 85,
-      "after": 13
+      "after": 14
     },
     "possible-synonyms": {
       "before": 1,
@@ -59,7 +59,7 @@
       "individuallyReviewed": 213,
       "pendingReview": 0,
       "sourceComparedThisRound": 213,
-      "blocked": 1,
+      "blocked": 0,
       "flaggedBefore": 47,
       "flaggedAfter": 25
     },
@@ -70,7 +70,7 @@
       "sourceComparedThisRound": 313,
       "blocked": 0,
       "flaggedBefore": 45,
-      "flaggedAfter": 39
+      "flaggedAfter": 40
     },
     "peygamberler": {
       "total": 271,
@@ -79,7 +79,7 @@
       "sourceComparedThisRound": 271,
       "blocked": 0,
       "flaggedBefore": 81,
-      "flaggedAfter": 44
+      "flaggedAfter": 42
     },
     "fikih": {
       "total": 161,
@@ -115,7 +115,7 @@
       "individuallyReviewed": 475,
       "pendingReview": 0,
       "sourceComparedThisRound": 475,
-      "blocked": 1,
+      "blocked": 0,
       "flaggedBefore": 113,
       "flaggedAfter": 45
     },
@@ -126,7 +126,7 @@
       "sourceComparedThisRound": 789,
       "blocked": 0,
       "flaggedBefore": 186,
-      "flaggedAfter": 98
+      "flaggedAfter": 97
     },
     "hard": {
       "total": 236,
@@ -165,15 +165,15 @@
       "geographic-option-ambiguity"
     ],
     "recorded": 8,
-    "stillBlocked": 1
+    "stillBlocked": 0
   },
-  "knownBlockingQuestions": 1,
+  "knownBlockingQuestions": 0,
   "overlapReview": {
-    "candidatePairs": 429,
-    "automaticCandidatePairs": 384,
-    "retainedExplicitPairs": 45,
-    "individuallyReviewedPairs": 429,
-    "repeatedFactPairs": 19,
+    "candidatePairs": 443,
+    "automaticCandidatePairs": 382,
+    "retainedExplicitPairs": 61,
+    "individuallyReviewedPairs": 443,
+    "repeatedFactPairs": 0,
     "pendingPairs": 0
   },
   "independentExpertApproved": 0,

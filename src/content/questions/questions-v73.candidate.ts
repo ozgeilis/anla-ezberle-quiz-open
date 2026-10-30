@@ -3579,45 +3579,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "quran-meaning-v72-024",
-    "version": 72,
+    "version": 73,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Mü'minûn 23/3'te kurtuluşa eren müminlerin özellikle hangi şeyden yüz çevirdiği belirtilir?",
+    "question": "Mü’minûn 23/3’te öne çıkan duyarlılık aşağıdaki konulardan hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Haksız kazanç arayışından"
-      },
-      {
-        "id": "o2",
-        "text": "Boş ve yararsız işlerden"
+        "text": "İhtiyaç sahiplerinin hakkının verilmesi"
       },
       {
         "id": "o3",
-        "text": "Kırıcı konuşmalardan"
+        "text": "Emanetin ve verilen sözlerin korunması"
       },
       {
         "id": "o4",
-        "text": "Gereksiz harcamalardan"
+        "text": "Yetimlerin mallarının koruma altına alınması"
+      },
+      {
+        "id": "o2",
+        "text": "Söz ve işlerin anlamlı ve faydalı olması"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Âyet, kurtuluşa eren müminlerin faydasız ve boş işlerden yüz çevirdiğini belirtir. Zamanı ve sözü anlamlı kullanmak öne çıkar.",
+    "explanation": "Mü’minûn 23/3, anlamsız ve yararsız söz ve davranışlardan uzak durmayı anlatır. Emanetlere ve verilen sözlere sadakat aynı sûrenin 8. âyetinde ayrı bir nitelik olarak yer alır.",
     "sources": [
       {
-        "title": "Diyanet İşleri Başkanlığı — Kur'an Yolu Meali ve Tefsiri",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/tefsir/sure/23/ayet/3?kaynak=1",
-        "locator": "23/3; Diyanet meal/tefsir kontrolü",
-        "supports": "Lağiv, anlamsız/yararsız söz ve davranışlar olarak açıklanır; bunlardan yüz çevrilir.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "23/3, 23/4 ve 23/8; PDF fiziksel sayfa 359 / basılı 358",
+        "supports": "Mü’minûn 23/3, anlamsız ve yararsız söz ve davranışlardan uzak durmayı anlatır. Emanetlere ve verilen sözlere sadakat aynı sûrenin 8. âyetinde ayrı bir nitelik olarak yer alır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-22"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "22.10.2026: Ürün sahibinin kaynak kontrolü sonrasında yayımlanmak üzere verdiği izne dayanarak editoryal seçim yapıldı. Diyanet Kur'an Yolu/meali destek bilgisi gözden geçirildi; bağımsız dinî uzman incelemesi iddia edilmez. Yeni v72 sürümünde kullanılmak üzere seçildi.",
-    "updatedAt": "2026-10-22",
-    "conceptGroup": "quran-meaning-23-3"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "quran-meaning-23-3",
+    "reviewedAt": undefined
   },
   {
     "id": "quran-meaning-v72-025",
@@ -6763,41 +6764,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Mescid-i Nebevî’de barınıp eğitim faaliyetleriyle anılan sahâbî topluluğunun adı hangisidir?",
+    "question": "TDV’ye göre gücü yeten Suffe mensupları geçimlerine katkı için hangi ürünü satardı?",
     "options": [
       {
         "id": "o4",
-        "text": "Ehl-i beyt"
+        "text": "Tahıl"
       },
       {
         "id": "o2",
-        "text": "Ashâb-ı Suffe"
+        "text": "Odun"
       },
       {
         "id": "o1",
-        "text": "Ashâb-ı Bedir"
+        "text": "Kumaş"
       },
       {
         "id": "o3",
-        "text": "Müellefe-i kulûb"
+        "text": "Deri"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Mescid-i Nebevî’nin bitişiğindeki bölümde barınan ve öğrenimle meşgul olan sahâbîler Ashâb-ı Suffe veya Ehl-i Suffe diye anılır.",
+    "explanation": "TDV Suffe maddesi, gücü yeten mensupların gündüz su taşıma ve getirdikleri odunları satma gibi işlerle geçimlerine katkı yaptığını anlatır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/suffe",
-        "locator": "96–99. satırlar; topluluğun adları ve eğitimi",
-        "supports": "Mescid-i Nebevî’nin bitişiğindeki bölümde barınan ve öğrenimle meşgul olan sahâbîler Ashâb-ı Suffe veya Ehl-i Suffe diye anılır.",
+        "locator": "103. satır; geçime katkı",
+        "supports": "TDV Suffe maddesi, gücü yeten mensupların gündüz su taşıma ve getirdikleri odunları satma gibi işlerle geçimlerine katkı yaptığını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "suffa-people",
     "reviewedAt": undefined
   },
@@ -11768,45 +11769,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-history-001",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hicret sırasında Hz. Peygamber'i Medine'deki evinde ağırlayan sahâbî kimdir?",
+    "question": "Eyüp Sultan adıyla tanınan Ebû Eyyûb el-Ensârî’nin asıl adı hangisidir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Ebû Zer el-Gıfârî"
-      },
-      {
-        "id": "o2",
-        "text": "Ebû Eyyûb el-Ensârî"
-      },
-      {
-        "id": "o3",
-        "text": "Abdurrahman b. Avf"
-      },
       {
         "id": "o4",
         "text": "Zeyd b. Hârise"
+      },
+      {
+        "id": "o2",
+        "text": "Hâlid b. Zeyd"
+      },
+      {
+        "id": "o1",
+        "text": "Abdullah b. Zeyd"
+      },
+      {
+        "id": "o3",
+        "text": "Zeyd b. Sâbit"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hz. Peygamber Medine'ye ulaştığında Ebû Eyyûb el-Ensârî'nin evinde bir süre misafir kaldı.",
+    "explanation": "TDV biyografisi Ebû Eyyûb el-Ensârî’yi Hâlid b. Zeyd b. Küleyb adıyla tanıtır. Ebû Eyyûb onun künyesidir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-        "locator": "Medine'ye hicret, evinde misafir kalması",
-        "supports": "Hz. Peygamber Medine'ye ulaştığında Ebû Eyyûb el-Ensârî'nin evinde bir süre misafir kaldı.",
+        "locator": "69. satır; tam isim ve künye",
+        "supports": "TDV biyografisi Ebû Eyyûb el-Ensârî’yi Hâlid b. Zeyd b. Küleyb adıyla tanıtır. Ebû Eyyûb onun künyesidir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "abu-ayyub-host"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "abu-ayyub-host",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-history-002",
@@ -13306,45 +13308,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-prophets-005",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "easy",
-    "question": "Neml 27/18'de Hz. Süleyman'ın ordusuna karşı yuvalara girilmesini söyleyen canlı hangisidir?",
+    "question": "Neml 27/18’de karınca, ordunun geçişi sırasında hangi tehlikeye karşı uyarır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hüdhüd"
-      },
-      {
-        "id": "o2",
-        "text": "Karınca"
-      },
-      {
         "id": "o3",
-        "text": "Arı"
+        "text": "Kuşlarca yakalanma"
       },
       {
         "id": "o4",
-        "text": "Kelebek"
+        "text": "Ateşte yanma"
+      },
+      {
+        "id": "o2",
+        "text": "Ayak altında ezilme"
+      },
+      {
+        "id": "o1",
+        "text": "Su altında boğulma"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Neml sûresinde bir karınca diğer karıncalara, Süleyman'ın ordusu fark etmeden kendilerini ezmesin diye yuvalarına girmelerini söyler.",
+    "explanation": "Neml 27/18’de karınca, Süleyman ve ordusunun farkında olmadan kendilerini ezmemesi için diğer karıncaları yuvalarına çağırır.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=18&mode=meal",
-        "locator": "Neml 27/18, Kur’an Yolu metni",
-        "supports": "Neml sûresinde bir karınca diğer karıncalara, Süleyman'ın ordusu fark etmeden kendilerini ezmesin diye yuvalarına girmelerini söyler.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/18; karıncanın uyarısı; PDF fiziksel sayfa 399",
+        "supports": "Neml 27/18’de karınca, Süleyman ve ordusunun farkında olmadan kendilerini ezmemesi için diğer karıncaları yuvalarına çağırır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "sulayman-ant-valley"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "sulayman-ant-valley",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-006",
@@ -13434,45 +13437,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-prophets-008",
-    "version": 3,
+    "version": 4,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Neml sûresinde Hz. Süleyman'a haber getiren hüdhüd hangi topluluktan söz eder?",
+    "question": "Neml 27/32’de Sebe hükümdarı önemli kararını vermeden önce kimlerin görüşünü ister?",
     "options": [
       {
-        "id": "o1",
-        "text": "Âd kavminden"
+        "id": "o4",
+        "text": "Tapınak görevlilerinin"
       },
       {
         "id": "o2",
-        "text": "Sebe halkından"
+        "text": "İleri gelenlerinin"
+      },
+      {
+        "id": "o1",
+        "text": "Komşu hükümdarların"
       },
       {
         "id": "o3",
-        "text": "Semûd kavminden"
-      },
-      {
-        "id": "o4",
-        "text": "Medyen halkından"
+        "text": "Kervan tüccarlarının"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hüdhüd, Hz. Süleyman'a Sebe halkından kesin bir haber getirdiğini söyler.",
+    "explanation": "Neml 27/32’de Sebe hükümdarı ileri gelenlerinden görüşlerini açıklamalarını ister; onlara danışmadan kesin karar vermediğini söyler.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=22&mode=meal",
-        "locator": "Neml 27/22, Kur’an Yolu metni",
-        "supports": "Hüdhüd, Hz. Süleyman'a Sebe halkından kesin bir haber getirdiğini söyler.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/32–33; danışma meclisi; PDF fiziksel sayfa 400",
+        "supports": "Neml 27/32’de Sebe hükümdarı ileri gelenlerinden görüşlerini açıklamalarını ister; onlara danışmadan kesin karar vermediğini söyler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "sulayman-hudhud-report"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "sulayman-hudhud-report",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-009",
@@ -15570,41 +15574,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Hz. Yûsuf hükümdarın rüyasını yorumlamadan önce hangi yerde bulunuyordu?",
+    "question": "Yûsuf 12/41’de rüyası yorumlanan gençlerden kurtulacak olanın hangi görevi yapacağı söylenir?",
     "options": [
       {
         "id": "o4",
-        "text": "Şehir kapısında"
+        "text": "Depolardaki tahılı ölçmek"
       },
       {
         "id": "o2",
-        "text": "Hapishanede"
+        "text": "Efendisine içki sunmak"
       },
       {
         "id": "o1",
-        "text": "Hükümdarın sarayında"
+        "text": "Fırında ekmek pişirmek"
       },
       {
         "id": "o3",
-        "text": "Bir tüccarın evinde"
+        "text": "Saray kapısını beklemek"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hz. Yûsuf, zindanda bulunduğu sırada rüya yorumlarıyla tanınmış ve hükümdarın rüyası hakkında da görüş bildirmiştir.",
+    "explanation": "Yûsuf 12/41’de iki rüyadan birinin yorumu, gencin efendisine şarap sunacağıdır. Diğer genç hakkında farklı bir sonuç anlatılır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Yûsuf 12/36 ve 12/43–46; PDF sayfa 250–252",
-        "supports": "Hz. Yûsuf, zindanda bulunduğu sırada rüya yorumlarıyla tanınmış ve hükümdarın rüyası hakkında da görüş bildirmiştir.",
+        "locator": "12/41; iki gencin rüyalarının yorumları; PDF fiziksel sayfa 251",
+        "supports": "Yûsuf 12/41’de iki rüyadan birinin yorumu, gencin efendisine şarap sunacağıdır. Diğer genç hakkında farklı bir sonuç anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "yusuf-prison",
     "reviewedAt": undefined
   },
@@ -15936,7 +15940,7 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "19/9; PDF fiziksel sayfa 321",
+        "locator": "19/9; PDF fiziksel sayfa 320",
         "supports": "Meryem 19/9’da Allah, daha önce Zekeriyyâ’yı kendisi hiçbir şey değilken yarattığını hatırlatır. Soruda genel yaratılış örnekleri değil bu hitapta seçilen örnek aranır.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
@@ -17918,41 +17922,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Yûsuf 12/84’te üzüntü nedeniyle ağardığı anlatılan yer neresidir?",
+    "question": "Kur’an Yolu mealinde Yûsuf 12/86’da Ya‘kūb’un Allah’a arz ettiği iki duygu hangileridir?",
     "options": [
       {
         "id": "o3",
-        "text": "Elleri"
+        "text": "Sevinç ve şükran"
       },
       {
         "id": "o4",
-        "text": "Saçları"
+        "text": "Öfke ve pişmanlık"
       },
       {
         "id": "o2",
-        "text": "Gözleri"
+        "text": "Acı ve keder"
       },
       {
         "id": "o1",
-        "text": "Yüzü"
+        "text": "Korku ve ümit"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Yûsuf 12/84'te Hz. Ya‘kūb'un Yûsuf'a duyduğu üzüntü sebebiyle gözlerinin ağardığı belirtilir.",
+    "explanation": "Yûsuf 12/86’da Ya‘kūb acısını ve kederini Allah’a arz ettiğini söyler. Soru farklı meallerin bütün eş anlamlılarını değil Kur’an Yolu’nun bu ikilisini sorar.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Yûsuf 12/84; PDF sayfa 256",
-        "supports": "Yûsuf 12/84'te Hz. Ya‘kūb'un Yûsuf'a duyduğu üzüntü sebebiyle gözlerinin ağardığı belirtilir.",
+        "locator": "12/86; Ya‘kūb’un ifadesi; PDF fiziksel sayfa 256",
+        "supports": "Yûsuf 12/86’da Ya‘kūb acısını ve kederini Allah’a arz ettiğini söyler. Soru farklı meallerin bütün eş anlamlılarını değil Kur’an Yolu’nun bu ikilisini sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "yaqub-grief",
     "reviewedAt": undefined
   },
@@ -40999,45 +41003,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q56-akabe-egitmen",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Birinci Akabe Biatı sonrasında Yesrib'e Kur'an ve İslam'ı öğretmesi için kim gönderildi?",
+    "question": "TDV’ye göre Birinci Akabe Biatı’ndaki on iki Medinelinin kaçı Evs kabilesindendi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Zeyd b. Sâbit"
-      },
-      {
-        "id": "o2",
-        "text": "Mus'ab b. Umeyr"
-      },
-      {
         "id": "o3",
-        "text": "Bilâl-i Habeşî"
+        "text": "Altı"
       },
       {
         "id": "o4",
-        "text": "Ebû Hüreyre"
+        "text": "Sekiz"
+      },
+      {
+        "id": "o2",
+        "text": "İki"
+      },
+      {
+        "id": "o1",
+        "text": "Dört"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+    "explanation": "TDV Akabe Biatları maddesinde Birinci Akabe heyeti on Hazrecli ve iki Evsli olarak anlatılır. Soru toplam kişi sayısını değil Evs mensuplarının sayısını sorar.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-        "locator": "Birinci Akabe Biatı sonrası eğitim",
-        "supports": "Birinci Akabe Biatı'nın ardından Resûlullah Yesrib halkına İslâm'ı ve Kur'an'ı öğretmesi için Mus'ab b. Umeyr'i gönderdi.",
+        "locator": "99–100. satırlar; heyetin kabile dağılımı",
+        "supports": "TDV Akabe Biatları maddesinde Birinci Akabe heyeti on Hazrecli ve iki Evsli olarak anlatılır. Soru toplam kişi sayısını değil Evs mensuplarının sayısını sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV ilgili metin pasajından kaynak eşleştirmesi yapıldı; bağımsız dinî uzman değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "akabe-teacher"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "akabe-teacher",
+    "reviewedAt": undefined
   },
   {
     "id": "q56-akabe-ikinci",
@@ -41681,45 +41686,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q57-yusufzindan",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
+    "question": "Yûsuf 12/73’te kardeşler hangi iki suçlamayı birlikte reddeder?",
     "options": [
       {
         "id": "o1",
-        "text": "Bir"
+        "text": "Yalancılık ve iftira"
       },
       {
         "id": "o2",
-        "text": "Üç"
+        "text": "Rüşvet ve görevi kötüye kullanma"
       },
       {
         "id": "o3",
-        "text": "Dört"
+        "text": "Gasp ve mala zarar verme"
       },
       {
         "id": "o4",
-        "text": "İki"
+        "text": "Bozgunculuk ve hırsızlık"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+    "explanation": "Yûsuf 12/73’te kardeşler fesat çıkarmak amacıyla gelmediklerini ve hırsız olmadıklarını dile getirir. Şıkların hepsi olumsuz suçlama türleridir; tek olumlu davranış ipucu yoktur.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — yusuf-suresi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/yusuf-suresi",
-        "locator": "Yûsuf 12/36",
-        "supports": "Yûsuf 12/36'da Hz. Yûsuf'la birlikte iki gencin zindana girdiği ve kendilerine ait rüyaları anlattığı belirtilir.",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "12/73; kardeşlerin cevabı; PDF fiziksel sayfa 255",
+        "supports": "Yûsuf 12/73’te kardeşler fesat çıkarmak amacıyla gelmediklerini ve hırsız olmadıklarını dile getirir. Şıkların hepsi olumsuz suçlama türleridir; tek olumlu davranış ipucu yoktur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV ilgili madde ve âyetle doğrudan olgusal karşılaştırma; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q57-topic-yusuf-suresi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q57-topic-yusuf-suresi",
+    "reviewedAt": undefined
   },
   {
     "id": "q57-yusufgomlek",
@@ -43383,45 +43389,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q58-suleym-anne",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
-    "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
+    "question": "Ümmü Süleym’in oğlu Abdullah’a yapılan, damağa yumuşatılmış hurma sürme işlemi hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Enes b. Mâlik"
-      },
-      {
-        "id": "o2",
-        "text": "Ebû Hüreyre"
-      },
-      {
         "id": "o3",
-        "text": "Abdullah b. Abbas"
+        "text": "Tesmiye"
       },
       {
         "id": "o4",
-        "text": "Zeyd b. Sâbit"
+        "text": "Mevlid"
+      },
+      {
+        "id": "o1",
+        "text": "Tahnîk"
+      },
+      {
+        "id": "o2",
+        "text": "Akîka"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+    "explanation": "TDV Tahnîk maddesinde Ümmü Süleym’in oğlu Abdullah’a yapılan uygulama anlatılır: yumuşatılan hurmanın bebeğin ağzına sürülmesi tahnîk olarak adlandırılır. Ad verme ayrı bir işlemdir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
-        "locator": "Enes b. Mâlik'in annesi",
-        "supports": "TDV Ümmü Süleym maddesi onu Enes b. Mâlik'in annesi olarak tanımlar; Enes küçük yaşta Hz. Peygamber'in hizmetine verilmiştir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/tahnik",
+        "locator": "96 ve 101–102. satırlar; tanım ve Abdullah örneği",
+        "supports": "TDV Tahnîk maddesinde Ümmü Süleym’in oğlu Abdullah’a yapılan uygulama anlatılır: yumuşatılan hurmanın bebeğin ağzına sürülmesi tahnîk olarak adlandırılır. Ad verme ayrı bir işlemdir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: İlgili TDV makalesinin pasajıyla cevap-şık açıklama ön karşılaştırması; bağımsız dinî uzman değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q58-subject-ummu-suleym"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q58-subject-ummu-suleym",
+    "reviewedAt": undefined
   },
   {
     "id": "q58-suleym-kardes",
@@ -45438,34 +45445,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Suffe kelimesi sözlükte ne demektir?",
+    "question": "TDV’ye göre hangi hasat ürünü Suffe ehli için mescide asılarak dağıtılırdı?",
     "options": [
       {
         "id": "o3",
-        "text": "Kemer"
+        "text": "Buğday"
       },
       {
         "id": "o4",
-        "text": "Kubbe"
+        "text": "Zeytin"
       },
       {
         "id": "o1",
-        "text": "Gölgelik"
+        "text": "Hurma"
       },
       {
         "id": "o2",
-        "text": "Avlu"
+        "text": "Üzüm"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "TDV Suffe maddesi kelimenin sözlük anlamını gölgelik olarak verir; mekân adı da gölgeli barınma alanından gelir.",
+    "explanation": "TDV Suffe maddesinde hasat zamanında getirilen hurma salkımlarının mescide asıldığı ve Suffe ehlinin bunlardan yararlandığı anlatılır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/suffe",
-        "locator": "96–100. satırlar",
-        "supports": "TDV Suffe maddesi kelimenin sözlük anlamını gölgelik olarak verir; mekân adı da gölgeli barınma alanından gelir.",
+        "locator": "102. satır; hasat yardımı",
+        "supports": "TDV Suffe maddesinde hasat zamanında getirilen hurma salkımlarının mescide asıldığı ve Suffe ehlinin bunlardan yararlandığı anlatılır.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -45649,45 +45656,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q60-nebevi-ilk",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
-    "question": "Mescid-i Nebevî hangi şehirde inşa edilmiştir?",
+    "question": "Mescid-i Nebevî’nin ilk binasının duvarları taş temel üzerine hangi malzemeyle örülmüştü?",
     "options": [
       {
+        "id": "o4",
+        "text": "Kerpiç"
+      },
+      {
         "id": "o1",
-        "text": "Mekke"
+        "text": "Pişmiş tuğla"
       },
       {
         "id": "o2",
-        "text": "Kudüs"
+        "text": "Ahşap"
       },
       {
         "id": "o3",
-        "text": "Tâif"
-      },
-      {
-        "id": "o4",
-        "text": "Medine"
+        "text": "Kesme taş"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Hz. Peygamber'in Medine'ye hicretinden sonra inşa edilen Mescid-i Nebevî, şehrin dinî ve sosyal hayatının merkezi olmuştur.",
+    "explanation": "TDV Mescid-i Nebevî maddesine göre ilk bina taş temel üzerinde tek sıra kerpiç duvarla çevrildi. Sonraki dönemlerin yontma taşlı yapısıyla ilk inşa ayrılmalıdır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — mescid-i-nebevi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-        "locator": "Mescid-i Nebevî'nin yeri",
-        "supports": "Hz. Peygamber'in Medine'ye hicretinden sonra inşa edilen Mescid-i Nebevî, şehrin dinî ve sosyal hayatının merkezi olmuştur.",
+        "locator": "103 ve 113. satırlar; ilk yapı ve sonraki yenileme",
+        "supports": "TDV Mescid-i Nebevî maddesine göre ilk bina taş temel üzerinde tek sıra kerpiç duvarla çevrildi. Sonraki dönemlerin yontma taşlı yapısıyla ilk inşa ayrılmalıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV madde pasajına dayalı cevap ve açıklama eşleştirmesi; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q60-mescid-i-nebevi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q60-mescid-i-nebevi",
+    "reviewedAt": undefined
   },
   {
     "id": "q60-nebevi-kasva",
@@ -49620,45 +49628,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q64-bedir-kervan",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Bedir seferi öncesi Mekkeli ticaret kervanını yöneten kişi kimdi?",
+    "question": "TDV’ye göre Bedir Gazvesi’nde Müslümanlardan kaç kişi şehit olmuştur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Ümeyye b. Halef"
-      },
-      {
-        "id": "o2",
-        "text": "Hâlid b. Velîd"
+        "id": "o4",
+        "text": "Yetmiş"
       },
       {
         "id": "o3",
-        "text": "Ebû Süfyân"
+        "text": "On dört"
       },
       {
-        "id": "o4",
-        "text": "Ebû Cehil"
+        "id": "o1",
+        "text": "On"
+      },
+      {
+        "id": "o2",
+        "text": "Yirmi"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "TDV Bedir Gazvesi maddesi Mekkeli ticaret kervanının Ebû Süfyân yönetiminde Suriye'den dönmekte olduğunu aktarır.",
+    "explanation": "TDV Bedir Gazvesi maddesi Müslümanların on dört şehit verdiğini bildirir. Yetmiş sayısı ise karşı taraftaki ölüler ve ayrıca esirler için geçer.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-        "locator": "Bedir öncesindeki Kureyş kervanı",
-        "supports": "TDV Bedir Gazvesi maddesi Mekkeli ticaret kervanının Ebû Süfyân yönetiminde Suriye'den dönmekte olduğunu aktarır.",
+        "locator": "113. satır; iki tarafın kayıp sayıları",
+        "supports": "TDV Bedir Gazvesi maddesi Müslümanların on dört şehit verdiğini bildirir. Yetmiş sayısı ise karşı taraftaki ölüler ve ayrıca esirler için geçer.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-bedir-gazvesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-bedir-gazvesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-bedir-muhbir",
@@ -51766,34 +51775,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
+    "question": "Furkân 25/74’te müttakilerle ilgili olarak hangi görev istenir?",
     "options": [
       {
         "id": "o2",
-        "text": "Helâl ve bereketli rızık bulmaları"
+        "text": "Onlardan bilgi öğrenmek"
       },
       {
         "id": "o3",
-        "text": "Sağlıklı ve uzun ömür sürmeleri"
+        "text": "Onların geçimini sağlamak"
       },
       {
         "id": "o4",
-        "text": "Bilgi ve tecrübelerini artırmaları"
+        "text": "Onlara yolculukta eşlik etmek"
       },
       {
         "id": "o1",
-        "text": "Göz aydınlığı ve mutluluk olmaları"
+        "text": "Onlara öncü olmak"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
+    "explanation": "Furkân 25/74’te eş ve çocuklara ilişkin dileğin ardından günahtan sakınanlara öncü olma talebi yer alır. Burada duanın ikinci talebi sorulur.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "25/74; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-        "supports": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
+        "locator": "25/74; duanın son cümlesi; PDF fiziksel sayfa 385",
+        "supports": "Furkân 25/74’te eş ve çocuklara ilişkin dileğin ardından günahtan sakınanlara öncü olma talebi yer alır. Burada duanın ikinci talebi sorulur.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -53483,34 +53492,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Kehf 18/79'da zarar verilen gemi kimlere aitti?",
+    "question": "Kehf 18/79’da geminin kusurlu gösterilmesine sebep olan hükümdarın davranışı hangisidir?",
     "options": [
       {
         "id": "o2",
-        "text": "Ticaret yapan tüccarlara"
+        "text": "Yolculardan geçiş ücreti almak"
       },
       {
         "id": "o3",
-        "text": "Kıyıyı koruyan askerlere"
+        "text": "Limanlarda ağır vergi toplamak"
       },
       {
         "id": "o4",
-        "text": "Yük taşıyan kervancılara"
+        "text": "Gemi yapımına kota koymak"
       },
       {
         "id": "o1",
-        "text": "Denizde çalışan yoksullara"
+        "text": "Sağlam gemileri zorla almak"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
+    "explanation": "Kehf 18/79, sağlam gemileri zorla ele geçiren bir kral bulunduğunu açıklar. Gemi bu zorla almadan korunması için kusurlu hale getirilmiştir.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "18/79; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-        "supports": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
+        "locator": "18/79; sağlam gemileri gasbeden kral; PDF fiziksel sayfa 317",
+        "supports": "Kehf 18/79, sağlam gemileri zorla ele geçiren bir kral bulunduğunu açıklar. Gemi bu zorla almadan korunması için kusurlu hale getirilmiştir.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -53526,41 +53535,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Kehf 18/82'de duvarın altındaki definenin sahipleri kimlerdir?",
+    "question": "Kehf 18/82’de iki yetimin defineyi çıkarması için açıkça anılan aşama hangisidir?",
     "options": [
       {
         "id": "o3",
-        "text": "Şehrin yöneticileri"
+        "text": "Bir ticaret yolculuğuna çıkmaları"
       },
       {
         "id": "o4",
-        "text": "İki yetim çocuk"
+        "text": "Güçlü çağlarına erişmeleri"
       },
       {
         "id": "o1",
-        "text": "İki yolcu tüccar"
+        "text": "Meslek öğrenimini bitirmeleri"
       },
       {
         "id": "o2",
-        "text": "Yoksul denizciler"
+        "text": "Okuma yazmayı öğrenmeleri"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Kehf 18/82, duvarın altında iki yetim çocuğa ait hazine bulunduğunu ve babalarının iyi bir insan olduğunu açıklar.",
+    "explanation": "Kehf 18/82’de iki çocuğun güçlü çağlarına erişmesi ve sonra definelerini çıkarması anlatılır. Metnin söylemediği okul, meslek veya yolculuk şartları eklenmez.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "18/82; PDF sayfa 317 (1 tabanlı), basılı sayfa 316",
-        "supports": "Duvarın altında iki yetim çocuğa ait define vardır.",
+        "locator": "18/82; güçlü çağa erişme ve define; PDF fiziksel sayfa 317",
+        "supports": "Kehf 18/82’de iki çocuğun güçlü çağlarına erişmesi ve sonra definelerini çıkarması anlatılır. Metnin söylemediği okul, meslek veya yolculuk şartları eklenmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q66-sure-18",
     "reviewedAt": undefined
   },
@@ -53739,34 +53748,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
+    "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
     "options": [
       {
         "id": "o2",
-        "text": "İnsanların lehçeleri"
+        "text": "Zekeriyyâ"
       },
       {
         "id": "o4",
-        "text": "Cinlerin konuşması"
+        "text": "İshak"
       },
       {
         "id": "o3",
-        "text": "Kuşların dili"
+        "text": "Dâvûd"
       },
       {
         "id": "o1",
-        "text": "Karıncaların dili"
+        "text": "Hârûn"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
+    "explanation": "Kur’an Yolu mealinde Neml 27/16, Süleyman’ın Dâvûd’un yerine geçtiğini söyleyerek başlar. Soru maddî mirasa dair tartışmalı bir hüküm ileri sürmez.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "27/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-        "supports": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
+        "locator": "27/16; mealin ilk cümlesi; PDF fiziksel sayfa 398",
+        "supports": "Kur’an Yolu mealinde Neml 27/16, Süleyman’ın Dâvûd’un yerine geçtiğini söyleyerek başlar. Soru maddî mirasa dair tartışmalı bir hüküm ileri sürmez.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -53908,45 +53917,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-neml-20",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Neml 27/20'de Hz. Süleyman hangi kuşun yokluğunu fark etmiştir?",
+    "question": "Neml 27/31’de mektubun alıcılarından hangi tutumla gelmeleri istenir?",
     "options": [
       {
+        "id": "o3",
+        "text": "Teslimiyet göstererek"
+      },
+      {
         "id": "o1",
-        "text": "Güvercin"
+        "text": "Görüşme şartı öne sürerek"
       },
       {
         "id": "o2",
-        "text": "Serçe"
-      },
-      {
-        "id": "o3",
-        "text": "Hüdhüd"
+        "text": "İttifak teklif ederek"
       },
       {
         "id": "o4",
-        "text": "Kartal"
+        "text": "Hediyeler hazırlayarak"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Neml 27/20, Hz. Süleyman'ın kuşları gözden geçirirken hüdhüdü bulamadığını fark etmesini anlatır.",
+    "explanation": "Neml 27/31’de mektup üstünlük taslamamayı ve gelip teslim olmayı ister. Hediye gönderme fikri ise 27/35’te kraliçenin verdiği farklı karşılıktır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=20&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/20",
-        "supports": "Neml 27/20, Hz. Süleyman'ın kuşları gözden geçirirken hüdhüdü bulamadığını fark etmesini anlatır.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/31 ve 27/35; mektubun talebi ile kraliçenin cevabı; PDF fiziksel sayfa 400",
+        "supports": "Neml 27/31’de mektup üstünlük taslamamayı ve gelip teslim olmayı ister. Hediye gönderme fikri ise 27/35’te kraliçenin verdiği farklı karşılıktır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-22",
@@ -54421,34 +54431,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Meryem 19/3’te Zekeriyyâ’nın duasında sesini kullanışı nasıl anlatılır?",
+    "question": "Meryem 19/11’de Zekeriyyâ kavmine sabah akşam ne yapmalarını işaretle bildirir?",
     "options": [
       {
         "id": "o4",
-        "text": "Toplulukla aynı sesle"
+        "text": "Kurban kesmelerini"
       },
       {
         "id": "o3",
-        "text": "Alçak sesle"
+        "text": "Allah’ı tesbih etmelerini"
       },
       {
         "id": "o1",
-        "text": "Yüksek sesle"
+        "text": "Sadaka vermelerini"
       },
       {
         "id": "o2",
-        "text": "Sesini yükseltip alçaltarak"
+        "text": "Oruç tutmalarını"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Meryem 19/3, Hz. Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle dua ettiğini bildirir.",
+    "explanation": "Meryem 19/11’de Zekeriyyâ mâbedden çıkar ve kavmine sabah akşam Allah’ı tesbih etmelerini özel bir işaret diliyle bildirir.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "19/3; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-        "supports": "Meryem 19/3, Hz. Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle dua ettiğini bildirir.",
+        "locator": "19/11; işaretle verilen öğüt; PDF fiziksel sayfa 321",
+        "supports": "Meryem 19/11’de Zekeriyyâ mâbedden çıkar ve kavmine sabah akşam Allah’ı tesbih etmelerini özel bir işaret diliyle bildirir.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -54764,34 +54774,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Meryem 19/54'te Hz. İsmâil'in hangi ahlâkî özelliği övülür?",
+    "question": "Meryem 19/54’te İsmâil için birlikte kullanılan iki görev unvanı hangileridir?",
     "options": [
       {
         "id": "o4",
-        "text": "Adaletle hükmetmesi"
+        "text": "Müezzin ve kayyım"
       },
       {
         "id": "o3",
-        "text": "Sözünde durması"
+        "text": "Resûl ve nebî"
       },
       {
         "id": "o1",
-        "text": "Emanete riayet etmesi"
+        "text": "İmam ve hatip"
       },
       {
         "id": "o2",
-        "text": "Yoksulları gözetmesi"
+        "text": "Hâfız ve kāri"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Meryem 19/54, Hz. İsmâil'in sözünde duran ve peygamber olarak gönderilen biri olduğunu bildirir.",
+    "explanation": "Meryem 19/54, İsmâil’i sözüne sadık ve elçi-peygamber olarak tanıtır. Resûl ve nebî, bu ikinci ifadenin terimleridir.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "19/54; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-        "supports": "Meryem 19/54, Hz. İsmâil'in sözünde duran ve peygamber olarak gönderilen biri olduğunu bildirir.",
+        "locator": "19/54; elçi-peygamber nitelemesi; PDF fiziksel sayfa 324",
+        "supports": "Meryem 19/54, İsmâil’i sözüne sadık ve elçi-peygamber olarak tanıtır. Resûl ve nebî, bu ikinci ifadenin terimleridir.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -54892,41 +54902,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
+    "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
     "options": [
       {
         "id": "o3",
-        "text": "Onu sarayın kapısına götürmesi"
+        "text": "Ona giysi hazırlaması"
       },
       {
         "id": "o4",
-        "text": "Onu nehre bırakması"
+        "text": "Onu emzirmesi"
       },
       {
         "id": "o1",
-        "text": "Onu dağda bir yere saklaması"
+        "text": "Onu yıkaması"
       },
       {
         "id": "o2",
-        "text": "Onu güvenilir bir aileye vermesi"
+        "text": "Ona isim vermesi"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Kasas 28/7, Mûsâ'nın annesine önce onu emzirmesi, tehlikeden korkunca suya bırakması ve korkmaması yönünde ilham verildiğini aktarır.",
+    "explanation": "Kasas 28/7, Mûsâ’nın annesine onu emzirmesini bildirerek başlar; endişe duyduğunda nehre bırakma talimatı bundan sonra gelir.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "28/7; PDF sayfa 407 (1 tabanlı), basılı sayfa 406",
-        "supports": "Annesine, Mûsâ için tehlikeden korktuğunda onu nehre bırakması bildirilir.",
+        "locator": "28/7; ilk emir ile sonraki koşul ayrımı; PDF fiziksel sayfa 407",
+        "supports": "Kasas 28/7, Mûsâ’nın annesine onu emzirmesini bildirerek başlar; endişe duyduğunda nehre bırakma talimatı bundan sonra gelir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-28",
     "reviewedAt": undefined
   },
@@ -56391,41 +56401,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Ankebût 29/45'te namazın hangi ahlâkî etkisi açıkça belirtilir?",
+    "question": "Ankebût 29/45’te namaz öğüdünden sonra önemi özellikle belirtilen davranış hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Hayâsızlık ve kötülükten alıkoyması"
+        "text": "Allah’ı anmak"
       },
       {
         "id": "o2",
-        "text": "Paylaşma ve yardımlaşmayı artırması"
+        "text": "Hac yolculuğuna çıkmak"
       },
       {
         "id": "o3",
-        "text": "Merhamet ve affediciliği güçlendirmesi"
+        "text": "İhtiyaç sahibine yardım etmek"
       },
       {
         "id": "o4",
-        "text": "Sabır ve dayanışmayı geliştirmesi"
+        "text": "Ramazan orucunu tutmak"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "Ankebût 29/45, kitabın okunmasını ve namazın kılınmasını emreder; namazın hayâsızlık ve kötülükten alıkoyduğunu bildirir.",
+    "explanation": "Ankebût 29/45’te namazın ahlâkî etkisinin ardından Allah’ı anmanın önemi vurgulanır. Soru diğer ibadetlerin önemini reddetmez; bu cümledeki özel vurguyu sorar.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "29/45; PDF sayfa 423 (1 tabanlı), basılı sayfa 422",
-        "supports": "Namazın hayâsızlık ve kötülükten menettiği açıkça ifade edilir.",
+        "locator": "29/45; zikir cümlesi; PDF fiziksel sayfa 423",
+        "supports": "Ankebût 29/45’te namazın ahlâkî etkisinin ardından Allah’ı anmanın önemi vurgulanır. Soru diğer ibadetlerin önemini reddetmez; bu cümledeki özel vurguyu sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-29",
     "reviewedAt": undefined
   },
@@ -60674,34 +60684,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
+    "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
     "options": [
       {
         "id": "o2",
-        "text": "622"
+        "text": "Hz. Ali"
       },
       {
         "id": "o1",
-        "text": "620"
+        "text": "Hz. Ebû Bekir"
       },
       {
         "id": "o3",
-        "text": "621"
+        "text": "Hz. Ömer"
       },
       {
         "id": "o4",
-        "text": "623"
+        "text": "Hz. Osman"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
+    "explanation": "TDV Ebû Eyyûb biyografisi, Hz. Ali’nin halifeliği sırasında Irak’a giderken onu Medine’de yerine vekil bıraktığını bildirir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-        "locator": "96. satır",
-        "supports": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
+        "locator": "98. satır; Medine vekilliği",
+        "supports": "TDV Ebû Eyyûb biyografisi, Hz. Ali’nin halifeliği sırasında Irak’a giderken onu Medine’de yerine vekil bıraktığını bildirir.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -63356,41 +63366,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Meryem 19/56'da İdrîs'in peygamberliği yanında hangi niteliği belirtilir?",
+    "question": "Enbiyâ 21/86’nın Kur’an Yolu mealinde sözü edilen kimselerin ortak niteliği hangi kavramla anlatılır?",
     "options": [
       {
         "id": "o4",
-        "text": "Hikmet sahibi olması"
+        "text": "İhlâs"
       },
       {
         "id": "o3",
-        "text": "Çok doğru sözlü olması"
+        "text": "İyilik"
       },
       {
         "id": "o1",
-        "text": "Çok şükreden bir kul olması"
+        "text": "Sabır"
       },
       {
         "id": "o2",
-        "text": "Sabırlı bir elçi olması"
+        "text": "Şükür"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Meryem 19/56'da İdrîs 'sıddîk' ve 'nebî' olarak nitelendirilir; bu onun dürüstlük ve peygamberliğini vurgular.",
+    "explanation": "Enbiyâ 21/85’te İsmâil, İdrîs ve Zülkifl sabredenler olarak anılır; 21/86’da ise iyi kimseler oldukları belirtilir. Soruda ikinci âyetin kavramı aranır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Meryem 19/56; PDF sayfa 324 (1 tabanlı)",
-        "supports": "İdrîs, sıddîk ve nebî olarak nitelenir.",
+        "locator": "21/86, 21/85 ile karşılaştırma; PDF fiziksel sayfa 346, önceki âyet sayfa 345",
+        "supports": "Enbiyâ 21/85’te İsmâil, İdrîs ve Zülkifl sabredenler olarak anılır; 21/86’da ise iyi kimseler oldukları belirtilir. Soruda ikinci âyetin kavramı aranır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "v71-tdv-idris",
     "reviewedAt": undefined
   },

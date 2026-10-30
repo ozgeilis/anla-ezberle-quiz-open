@@ -3133,35 +3133,35 @@
         ]
       },
       "after": {
-        "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
+        "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
         "options": [
           {
             "id": "o2",
-            "text": "622"
+            "text": "Hz. Ali"
           },
           {
             "id": "o1",
-            "text": "620"
+            "text": "Hz. Ebû Bekir"
           },
           {
             "id": "o3",
-            "text": "621"
+            "text": "Hz. Ömer"
           },
           {
             "id": "o4",
-            "text": "623"
+            "text": "Hz. Osman"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "622",
-        "explanation": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
+        "correctAnswer": "Hz. Ali",
+        "explanation": "TDV Ebû Eyyûb biyografisi, Hz. Ali’nin halifeliği sırasında Irak’a giderken onu Medine’de yerine vekil bıraktığını bildirir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-            "locator": "96. satır",
-            "supports": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
+            "locator": "98. satır; Medine vekilliği",
+            "supports": "TDV Ebû Eyyûb biyografisi, Hz. Ali’nin halifeliği sırasında Irak’a giderken onu Medine’de yerine vekil bıraktığını bildirir.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -3172,29 +3172,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q69-ebueyyubelensari-akabe",
-        "reviewedCandidateSha256": "7e7a97adae40f89e83929e0e8f34e7f498c2de316b6d785d2a74cfb9c36f9615",
+        "reviewedCandidateSha256": "29ac0ac8c11e15e583806d17e0f2d60effc4c7af435f7547462701dda1bf5f1a",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Olmayan üçüncü Akabe ve hiçbiri seçenekleri yerine dört yakın yıl. Kök katıldığı biatı belirtiyor ama doğru yıl ayrıca bilinmeli; mevcut tarihi değiştirme değil doğrulanmış yıl hedefi.",
+        "reason": "Olmayan üçüncü Akabe ve hiçbiri seçenekleri yerine dört yakın yıl. Kök katıldığı biatı belirtiyor ama doğru yıl ayrıca bilinmeli; mevcut tarihi değiştirme değil doğrulanmış yıl hedefi. Son tekrar karşılaştırması: İkinci Akabe’nin 622 tarihi e150-history-027 ile tekrardı; ayrı bir yönetim görevi soruldu.",
         "optionReview": {
-          "o2": "96’nın açık 622 yılı.",
-          "o1": "Başka yakın yıl.",
-          "o3": "Birinci biat yılı.",
-          "o4": "Başka yakın yıl."
+          "o2": "TDV 98. satırda Hz. Ali’nin Irak’a giderken bu görevi verdiğini belirtir.",
+          "o1": "Farklı bir halifedir; sorulan tayinin sahibi değildir.",
+          "o3": "Farklı bir halifedir; bu tayin ona bağlanmaz.",
+          "o4": "Farklı bir halifedir; âsiler dönemindeki imamlık ile bu vekillik aynı görev değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-          "locator": "96. satır",
+          "locator": "98. satır; Medine vekilliği",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+          "sourceSha256": "6b3ae3aa16036d6600acb58c8891955aff4dbdcefac1adefb3ad141954481d71"
         }
       },
       "independentExpertApproval": false,

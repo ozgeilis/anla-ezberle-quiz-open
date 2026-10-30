@@ -4576,35 +4576,35 @@
         ]
       },
       "after": {
-        "question": "Suffe kelimesi sözlükte ne demektir?",
+        "question": "TDV’ye göre hangi hasat ürünü Suffe ehli için mescide asılarak dağıtılırdı?",
         "options": [
           {
             "id": "o3",
-            "text": "Kemer"
+            "text": "Buğday"
           },
           {
             "id": "o4",
-            "text": "Kubbe"
+            "text": "Zeytin"
           },
           {
             "id": "o1",
-            "text": "Gölgelik"
+            "text": "Hurma"
           },
           {
             "id": "o2",
-            "text": "Avlu"
+            "text": "Üzüm"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Gölgelik",
-        "explanation": "TDV Suffe maddesi kelimenin sözlük anlamını gölgelik olarak verir; mekân adı da gölgeli barınma alanından gelir.",
+        "correctAnswer": "Hurma",
+        "explanation": "TDV Suffe maddesinde hasat zamanında getirilen hurma salkımlarının mescide asıldığı ve Suffe ehlinin bunlardan yararlandığı anlatılır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "96–100. satırlar",
-            "supports": "TDV Suffe maddesi kelimenin sözlük anlamını gölgelik olarak verir; mekân adı da gölgeli barınma alanından gelir.",
+            "locator": "102. satır; hasat yardımı",
+            "supports": "TDV Suffe maddesinde hasat zamanında getirilen hurma salkımlarının mescide asıldığı ve Suffe ehlinin bunlardan yararlandığı anlatılır.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -4615,29 +4615,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q60-suffe-anlam",
-        "reviewedCandidateSha256": "d38976c8c33afe3ff20976dc8b64b7f8132b464a5c0c1b174e67649af4e03ef2",
+        "reviewedCandidateSha256": "4c139288474276f5355d5895d7d9e8067ed211938c5f5a092601b42128335947",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Taç gibi yapı dışı öğe yerine dört mimari kavram. Gölgelik sözlük anlamı, avlu/kemer/kubbeden ayrılır; işlevsel yakınlık doğrudan eş anlam ilan edilmez.",
+        "reason": "Taç gibi yapı dışı öğe yerine dört mimari kavram. Gölgelik sözlük anlamı, avlu/kemer/kubbeden ayrılır; işlevsel yakınlık doğrudan eş anlam ilan edilmez. Son tekrar karşılaştırması: Gölgelik kelime anlamı q51-suffe-018 ile tekrardı; belgelenmiş ayrı bir yardım biçimi soruldu.",
         "optionReview": {
-          "o3": "Başka mimari unsur.",
-          "o4": "Başka mimari unsur.",
-          "o1": "Suffenin sözlük karşılığı.",
-          "o2": "Başka mimari alan."
+          "o3": "Gerçek bir yiyecek yardım türüdür; burada asılan şey olarak verilmez.",
+          "o4": "Gerçek bir yiyecek yardım türüdür; metindeki örnek değildir.",
+          "o1": "TDV hurma salkımlarının mescide asıldığını belirtir.",
+          "o2": "Gerçek bir yiyecek yardım türüdür; bu pasajın verdiği örnek değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/suffe",
-          "locator": "96–100. satırlar",
+          "locator": "102. satır; hasat yardımı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+          "sourceSha256": "6b3ae3aa16036d6600acb58c8891955aff4dbdcefac1adefb3ad141954481d71"
         }
       },
       "independentExpertApproval": false,
@@ -4904,37 +4905,37 @@
         ]
       },
       "after": {
-        "question": "Mescid-i Nebevî hangi şehirde inşa edilmiştir?",
+        "question": "Mescid-i Nebevî’nin ilk binasının duvarları taş temel üzerine hangi malzemeyle örülmüştü?",
         "options": [
           {
+            "id": "o4",
+            "text": "Kerpiç"
+          },
+          {
             "id": "o1",
-            "text": "Mekke"
+            "text": "Pişmiş tuğla"
           },
           {
             "id": "o2",
-            "text": "Kudüs"
+            "text": "Ahşap"
           },
           {
             "id": "o3",
-            "text": "Tâif"
-          },
-          {
-            "id": "o4",
-            "text": "Medine"
+            "text": "Kesme taş"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Medine",
-        "explanation": "Hz. Peygamber'in Medine'ye hicretinden sonra inşa edilen Mescid-i Nebevî, şehrin dinî ve sosyal hayatının merkezi olmuştur.",
+        "correctAnswer": "Kerpiç",
+        "explanation": "TDV Mescid-i Nebevî maddesine göre ilk bina taş temel üzerinde tek sıra kerpiç duvarla çevrildi. Sonraki dönemlerin yontma taşlı yapısıyla ilk inşa ayrılmalıdır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — mescid-i-nebevi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-            "locator": "Mescid-i Nebevî'nin yeri",
-            "supports": "Hz. Peygamber'in Medine'ye hicretinden sonra inşa edilen Mescid-i Nebevî, şehrin dinî ve sosyal hayatının merkezi olmuştur.",
+            "locator": "103 ve 113. satırlar; ilk yapı ve sonraki yenileme",
+            "supports": "TDV Mescid-i Nebevî maddesine göre ilk bina taş temel üzerinde tek sıra kerpiç duvarla çevrildi. Sonraki dönemlerin yontma taşlı yapısıyla ilk inşa ayrılmalıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4943,27 +4944,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q60-nebevi-ilk",
-        "reviewedCandidateSha256": "fc9d37f3f5c222007d1d0350be6fe7b3eb636c8385e37318e426da8a9636aa4f",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört gerçek kutsal/tarihî şehir. Mescid-i Nebevî hicretten sonra Medine’de yapılır; Aksâ/Harâm gibi başka mescidlerle karıştırma bilgi sorusudur.",
+        "reviewedCandidateSha256": "232d6bf2e6d2fe640390ad9d08980d25661a1dbae412ead8cca9369c3c2937a1",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört gerçek kutsal/tarihî şehir. Mescid-i Nebevî hicretten sonra Medine’de yapılır; Aksâ/Harâm gibi başka mescidlerle karıştırma bilgi sorusudur. Son tekrar karşılaştırması: Medine şehri history-003 ile tekrardı; ilk yapıdaki duvar malzemesi soruldu.",
         "optionReview": {
-          "o1": "Başka mescidin şehri.",
-          "o2": "Başka mescidin şehri.",
-          "o3": "Başka bölge şehri.",
-          "o4": "96. satırın Medine’si."
+          "o4": "TDV ilk yapıyı taş temel üzerinde tek sıra kerpiç duvarla anlatır.",
+          "o1": "Pişmiş tuğla kerpiçten farklı bir yapı malzemesidir; bu ilk inşanın belirtilen duvar malzemesi değildir.",
+          "o2": "Çatıda kullanılır; bu sorudaki duvar örgüsü değildir.",
+          "o3": "Daha sonraki yenilemelerde yer alır; sorulan ilk yapı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/mescid-i-nebevi",
-          "locator": "96–101. satırlar",
+          "locator": "103 ve 113. satırlar; ilk yapı ve sonraki yenileme",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+          "sourceSha256": "6b3ae3aa16036d6600acb58c8891955aff4dbdcefac1adefb3ad141954481d71"
         }
       },
       "independentExpertApproval": false,

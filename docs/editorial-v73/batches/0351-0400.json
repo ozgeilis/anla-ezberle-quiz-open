@@ -1270,37 +1270,37 @@
         ]
       },
       "after": {
-        "question": "Mescid-i Nebevî’de barınıp eğitim faaliyetleriyle anılan sahâbî topluluğunun adı hangisidir?",
+        "question": "TDV’ye göre gücü yeten Suffe mensupları geçimlerine katkı için hangi ürünü satardı?",
         "options": [
           {
             "id": "o4",
-            "text": "Ehl-i beyt"
+            "text": "Tahıl"
           },
           {
             "id": "o2",
-            "text": "Ashâb-ı Suffe"
+            "text": "Odun"
           },
           {
             "id": "o1",
-            "text": "Ashâb-ı Bedir"
+            "text": "Kumaş"
           },
           {
             "id": "o3",
-            "text": "Müellefe-i kulûb"
+            "text": "Deri"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Ashâb-ı Suffe",
-        "explanation": "Mescid-i Nebevî’nin bitişiğindeki bölümde barınan ve öğrenimle meşgul olan sahâbîler Ashâb-ı Suffe veya Ehl-i Suffe diye anılır.",
+        "correctAnswer": "Odun",
+        "explanation": "TDV Suffe maddesi, gücü yeten mensupların gündüz su taşıma ve getirdikleri odunları satma gibi işlerle geçimlerine katkı yaptığını anlatır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/suffe",
-            "locator": "96–99. satırlar; topluluğun adları ve eğitimi",
-            "supports": "Mescid-i Nebevî’nin bitişiğindeki bölümde barınan ve öğrenimle meşgul olan sahâbîler Ashâb-ı Suffe veya Ehl-i Suffe diye anılır.",
+            "locator": "103. satır; geçime katkı",
+            "supports": "TDV Suffe maddesi, gücü yeten mensupların gündüz su taşıma ve getirdikleri odunları satma gibi işlerle geçimlerine katkı yaptığını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1309,29 +1309,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-history-013",
-        "reviewedCandidateSha256": "c9aa0d1d09ea9bbdb16815c32cd311e5084cbdf6a6358721d7793b83043f97cc",
+        "reviewedCandidateSha256": "73fc99e1d36f1a84b81b21b20deec7ea81921c4da1ef2b81184d149069d31551",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Suffe sözcüğü kökten kaldırıldı; dört gerçek topluluk adı kullanıldı.",
+        "reason": "Suffe sözcüğü kökten kaldırıldı; dört gerçek topluluk adı kullanıldı. Son tekrar karşılaştırması: Ashâb-ı Suffe adı q60-suffe-adi ile tekrardı; aynı topluluğun ayrı geçim faaliyeti soruldu.",
         "optionReview": {
-          "o4": "Başka gerçek aile topluluğu.",
-          "o2": "Kaynağın topluluk adı.",
-          "o1": "Başka gerçek sahâbî grubu.",
-          "o3": "Başka gerçek yararlanıcı grubu."
+          "o4": "Gerçek bir ticaret ürünüdür; bu cümlede anılan değildir.",
+          "o2": "TDV gündüz dağdan getirdikleri odunları sattıklarını belirtir.",
+          "o1": "Gerçek bir ticaret ürünüdür; bu pasajdaki faaliyet değildir.",
+          "o3": "Gerçek bir ticaret ürünüdür; metinde bu kişiler için verilen ürün değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Hira/Nur veya Suffe topluluğu konusundaki yakın hedefli diğer ID’lerle ortak olgu riski var. Mevcut seçim filtresi ve conceptGroup eşleşmesi banka çapındaki son turda ayrıca kontrol edilecek; bu not tekrarın giderildiği iddiası değildir.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/suffe",
-          "locator": "96–99. satırlar; topluluğun adları ve eğitimi",
+          "locator": "103. satır; geçime katkı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
-          "readAt": "2026-10-28",
-          "sourceSha256": "282b35dc210c78d502a637fc30dae5e40278385e563cf372219e977465c46a58"
+          "readAt": "2026-10-30",
+          "sourceSha256": "6b3ae3aa16036d6600acb58c8891955aff4dbdcefac1adefb3ad141954481d71"
         }
       },
       "independentExpertApproval": false,

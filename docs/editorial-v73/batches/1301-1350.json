@@ -1040,35 +1040,35 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/3’te Zekeriyyâ’nın duasında sesini kullanışı nasıl anlatılır?",
+        "question": "Meryem 19/11’de Zekeriyyâ kavmine sabah akşam ne yapmalarını işaretle bildirir?",
         "options": [
           {
             "id": "o4",
-            "text": "Toplulukla aynı sesle"
+            "text": "Kurban kesmelerini"
           },
           {
             "id": "o3",
-            "text": "Alçak sesle"
+            "text": "Allah’ı tesbih etmelerini"
           },
           {
             "id": "o1",
-            "text": "Yüksek sesle"
+            "text": "Sadaka vermelerini"
           },
           {
             "id": "o2",
-            "text": "Sesini yükseltip alçaltarak"
+            "text": "Oruç tutmalarını"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Alçak sesle",
-        "explanation": "Meryem 19/3, Hz. Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle dua ettiğini bildirir.",
+        "correctAnswer": "Allah’ı tesbih etmelerini",
+        "explanation": "Meryem 19/11’de Zekeriyyâ mâbedden çıkar ve kavmine sabah akşam Allah’ı tesbih etmelerini özel bir işaret diliyle bildirir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "19/3; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-            "supports": "Meryem 19/3, Hz. Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle dua ettiğini bildirir.",
+            "locator": "19/11; işaretle verilen öğüt; PDF fiziksel sayfa 321",
+            "supports": "Meryem 19/11’de Zekeriyyâ mâbedden çıkar ve kavmine sabah akşam Allah’ı tesbih etmelerini özel bir işaret diliyle bildirir.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -1079,26 +1079,27 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-meryem-3",
-        "reviewedCandidateSha256": "d4af180293912e5bf2e0d71bd083fac80d7a6f5be698f1edae5fc7594610b16e",
+        "reviewedCandidateSha256": "b38611878b30e3362e796afcd896272276e1489361994f57f76f9c8ded887278",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Mektup/elçi gibi ses biçimi olmayan şıklara karşı tek ses tasviri kaldırıldı. Dört ses kullanışı; gizli duanın alçak ses ifadesi esastır, ses yüksekliği hakkında yeni ibadet hükmü üretilmez.",
+        "reason": "Mektup/elçi gibi ses biçimi olmayan şıklara karşı tek ses tasviri kaldırıldı. Dört ses kullanışı; gizli duanın alçak ses ifadesi esastır, ses yüksekliği hakkında yeni ibadet hükmü üretilmez. Son tekrar karşılaştırması: Alçak sesle dua q50-zekeriyya-020 ile tekrardı; farklı âyette kavmine ilettiği öğüt soruldu.",
         "optionReview": {
-          "o4": "Başka ses kullanımı.",
-          "o3": "3’ün alçak sesi.",
-          "o1": "Başka ses düzeyi.",
-          "o2": "Başka ses kullanımı."
+          "o4": "Olumlu bir ibadettir; bu âyette söylenen değildir.",
+          "o3": "Mealde sabah akşam Allah’ı tesbih etmelerini işaretle bildirdiği anlatılır.",
+          "o1": "Olumlu ve ilgili bir dinî davranıştır; bu pasajın emri değildir.",
+          "o2": "Olumlu bir ibadettir; bu cümlenin emri değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "19/3; PDF sayfa 320 (1 tabanlı), basılı sayfa 319",
+          "locator": "19/11; işaretle verilen öğüt; PDF fiziksel sayfa 321",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
@@ -1588,35 +1589,35 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/54'te Hz. İsmâil'in hangi ahlâkî özelliği övülür?",
+        "question": "Meryem 19/54’te İsmâil için birlikte kullanılan iki görev unvanı hangileridir?",
         "options": [
           {
             "id": "o4",
-            "text": "Adaletle hükmetmesi"
+            "text": "Müezzin ve kayyım"
           },
           {
             "id": "o3",
-            "text": "Sözünde durması"
+            "text": "Resûl ve nebî"
           },
           {
             "id": "o1",
-            "text": "Emanete riayet etmesi"
+            "text": "İmam ve hatip"
           },
           {
             "id": "o2",
-            "text": "Yoksulları gözetmesi"
+            "text": "Hâfız ve kāri"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Sözünde durması",
-        "explanation": "Meryem 19/54, Hz. İsmâil'in sözünde duran ve peygamber olarak gönderilen biri olduğunu bildirir.",
+        "correctAnswer": "Resûl ve nebî",
+        "explanation": "Meryem 19/54, İsmâil’i sözüne sadık ve elçi-peygamber olarak tanıtır. Resûl ve nebî, bu ikinci ifadenin terimleridir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "19/54; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-            "supports": "Meryem 19/54, Hz. İsmâil'in sözünde duran ve peygamber olarak gönderilen biri olduğunu bildirir.",
+            "locator": "19/54; elçi-peygamber nitelemesi; PDF fiziksel sayfa 324",
+            "supports": "Meryem 19/54, İsmâil’i sözüne sadık ve elçi-peygamber olarak tanıtır. Resûl ve nebî, bu ikinci ifadenin terimleridir.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -1627,26 +1628,27 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-meryem-54",
-        "reviewedCandidateSha256": "c326ac00c3669d695b50005d8c2d975fce7026da4b0ab2fa1da7597da2ea8b78",
+        "reviewedCandidateSha256": "91c46c38f30479b99560a2aad21531f221a3e14d05fc8e4ad77a9d06ced8bb3b",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Saray/servet/savaşçılık gibi ahlâk özelliği olmayanlara karşı tek erdem kaldırıldı. Dört olumlu erdem; 54’teki söze sadakat belirli.",
+        "reason": "Saray/servet/savaşçılık gibi ahlâk özelliği olmayanlara karşı tek erdem kaldırıldı. Dört olumlu erdem; 54’teki söze sadakat belirli. Son tekrar karşılaştırması: Sözünde durma/İsmâil eşleşmesi v8-prophets-004 ile tekrardı; aynı âyetin ayrı görev unvanları soruldu.",
         "optionReview": {
-          "o4": "Başka erdem.",
-          "o3": "54’ün açık söze sadakati.",
-          "o1": "Başka erdem.",
-          "o2": "Başka erdem."
+          "o4": "İki gerçek dinî görevdir; bu pasajın ikilisi değildir.",
+          "o3": "Mealde elçi-peygamber karşılığı verilen iki unvan budur.",
+          "o1": "İki gerçek dinî görev adıdır; bu âyetteki ikili değildir.",
+          "o2": "İki gerçek Kur’an hizmeti adıdır; bu âyette birlikte kullanılmaz."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
-        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
+        "difficultyReview": "Mevcut medium etiketi onaysız değiştirilmedi. Terim ayrımına ilişkin güçlük editör/ürün kabulünde ayrıca değerlendirilmeli.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "19/54; PDF sayfa 324 (1 tabanlı), basılı sayfa 323",
+          "locator": "19/54; elçi-peygamber nitelemesi; PDF fiziksel sayfa 324",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"

@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 6,
-  "flaggedAfter": 5,
+  "flaggedAfter": 6,
   "records": [
     {
       "sequence": 1201,
@@ -1039,66 +1039,73 @@
         ]
       },
       "after": {
-        "question": "Bedir seferi öncesi Mekkeli ticaret kervanını yöneten kişi kimdi?",
+        "question": "TDV’ye göre Bedir Gazvesi’nde Müslümanlardan kaç kişi şehit olmuştur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ümeyye b. Halef"
-          },
-          {
-            "id": "o2",
-            "text": "Hâlid b. Velîd"
+            "id": "o4",
+            "text": "Yetmiş"
           },
           {
             "id": "o3",
-            "text": "Ebû Süfyân"
+            "text": "On dört"
           },
           {
-            "id": "o4",
-            "text": "Ebû Cehil"
+            "id": "o1",
+            "text": "On"
+          },
+          {
+            "id": "o2",
+            "text": "Yirmi"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Ebû Süfyân",
-        "explanation": "TDV Bedir Gazvesi maddesi Mekkeli ticaret kervanının Ebû Süfyân yönetiminde Suriye'den dönmekte olduğunu aktarır.",
+        "correctAnswer": "On dört",
+        "explanation": "TDV Bedir Gazvesi maddesi Müslümanların on dört şehit verdiğini bildirir. Yetmiş sayısı ise karşı taraftaki ölüler ve ayrıca esirler için geçer.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — bedir-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Bedir öncesindeki Kureyş kervanı",
-            "supports": "TDV Bedir Gazvesi maddesi Mekkeli ticaret kervanının Ebû Süfyân yönetiminde Suriye'den dönmekte olduğunu aktarır.",
+            "locator": "113. satır; iki tarafın kayıp sayıları",
+            "supports": "TDV Bedir Gazvesi maddesi Müslümanların on dört şehit verdiğini bildirir. Yetmiş sayısı ise karşı taraftaki ölüler ve ayrıca esirler için geçer.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
+      "automaticAfter": [
+        {
+          "kind": "length-outlier",
+          "detail": "Tek belirgin uzun/kısa seçenek"
+        }
+      ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q64-bedir-kervan",
-        "reviewedCandidateSha256": "1b0f3ba2ed960e94ab578a2be5f220990d0f17572b4a51c3af9f9263722f075f",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört gerçek erken Kureyş ileri geleni. Ebû Süfyân kervan yöneticisi, Ebû Cehil kurtarmaya gelen ordunun kumandanıdır; 103–107 bu farkı açıklar.",
+        "reviewedCandidateSha256": "e189eefd48b66019003cec50387bb15102d7d8e76a3685d7c9171504f7d19fbc",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört gerçek erken Kureyş ileri geleni. Ebû Süfyân kervan yöneticisi, Ebû Cehil kurtarmaya gelen ordunun kumandanıdır; 103–107 bu farkı açıklar. Son tekrar karşılaştırması: Ebû Süfyân’ın kervan görevi q47-bedir-001 ile aynıydı; ayrı bir kayıp sayısı soruldu.",
         "optionReview": {
-          "o1": "Başka Kureyş ileri geleni.",
-          "o2": "Başka Kureyş ileri geleni.",
-          "o3": "103 ve 106’nın kervan yöneticisi.",
-          "o4": "106’nın ordu kumandanı."
+          "o4": "Karşı taraftaki ölü ve esir sayılarıyla karıştırılmamalıdır.",
+          "o3": "TDV Bedir anlatımında Müslümanlar için verilen sayı on dörttür.",
+          "o1": "Aynı tür sayısal bir çeldiricidir; verilen kayıp sayısı değildir.",
+          "o2": "Makul yakın sayıdır; kaynakta verilen sayı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört şık aynı tür sayısal cevaptır. En kısa sözcük On yanlış çeldiricidir; tek uzun doğru cevap ipucu yoktur. Sayı adlarının doğal uzunluğu uyarı üretir; bunun için ilgisiz dolgu eklenmedi. TDV’de on dört şehit bilgisi kontrol edildi. Bağımsız uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-          "locator": "102–108. satırlar",
+          "locator": "113. satır; iki tarafın kayıp sayıları",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

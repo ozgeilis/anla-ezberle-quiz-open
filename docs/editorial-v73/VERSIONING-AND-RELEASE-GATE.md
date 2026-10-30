@@ -11,7 +11,7 @@ Bu dal içerik adayıdır; aktif banka sürümü 72’dir. `questions-v72.ts`, v
 
 Bunlar depodaki şema/exporter incelemesidir. Bu görevde canlı Supabase’e bağlanılmadı; orada yeni sürüm anahtarı için boşluk bulunduğu iddia edilmiyor.
 
-Yerel v2–v72 arşivleri ayrıca adayda değişen soruların `(id, version)` kimlikleriyle karşılaştırılır. `editorial-v73.test.ts` bu kimliklerden biri herhangi bir eski snapshot’ta kullanılmışsa başarısız olur. Bu kontrol noktasındaki 1029 yeni içerik sürümünde yerel çakışma yoktur. Bu test canlı tabloları kontrol etmez; yayından önce aşağıdaki salt okunur hedef denetimi yine zorunludur. v1’in farklı eski veri modeli ve kayıt gösterimi ayrı geçmiş regresyon testleriyle korunur.
+Yerel v2–v72 arşivleri ayrıca adayda değişen soruların `(id, version)` kimlikleriyle karşılaştırılır. `editorial-v73.test.ts` bu kimliklerden biri herhangi bir eski snapshot’ta kullanılmışsa başarısız olur. Bu kontrol noktasındaki 1039 yeni içerik sürümünde yerel çakışma yoktur. Bu test canlı tabloları kontrol etmez; yayından önce aşağıdaki salt okunur hedef denetimi yine zorunludur. v1’in farklı eski veri modeli ve kayıt gösterimi ayrı geçmiş regresyon testleriyle korunur.
 
 ## Ayrı yayın PR’ında gereken strateji
 
@@ -23,3 +23,7 @@ Yerel v2–v72 arşivleri ayrıca adayda değişen soruların `(id, version)` ki
 6. Etkinleştirme yalnız yeni oyunları etkiler. Devam eden ve tamamlanmış oyunlar taşınmaz, yeniden puanlanmaz; XP/rozetler yeniden hesaplanmaz. Geri dönüş yeni oyun kapsamını v72’ye çevirir, eski dataset’i silmez.
 
 Bu belge v73 import’unun veya canlı günlük/oda oyunlarının hazır olduğu anlamına gelmez. Sunucu deployment/migration/seed yapılmadı. Yeni cevap anahtarlarını istemciye taşıyan bir yol eklenmedi.
+
+## Onaylı anlam sorusu istisnası
+
+Kullanıcının 30.10.2026 tarihli izniyle yalnız `quran-meaning-v72-024` için yayımlanmamış v73 adayında soru sürümü 73 hazırlanır. Aktif v72 nesnesi ve `(id, version=72)` satırı korunur; diğer 29 anlam sorusu adayda da aynıdır. Üretici, onaylanan kök/şık/açıklama hash’i dışındaki korunan-soru değişikliklerini reddeder. Bu izin genel banka veya sunucu yayını izni değildir.

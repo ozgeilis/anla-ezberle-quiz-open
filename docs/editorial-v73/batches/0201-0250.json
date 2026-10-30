@@ -1690,37 +1690,37 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/56'da İdrîs'in peygamberliği yanında hangi niteliği belirtilir?",
+        "question": "Enbiyâ 21/86’nın Kur’an Yolu mealinde sözü edilen kimselerin ortak niteliği hangi kavramla anlatılır?",
         "options": [
           {
             "id": "o4",
-            "text": "Hikmet sahibi olması"
+            "text": "İhlâs"
           },
           {
             "id": "o3",
-            "text": "Çok doğru sözlü olması"
+            "text": "İyilik"
           },
           {
             "id": "o1",
-            "text": "Çok şükreden bir kul olması"
+            "text": "Sabır"
           },
           {
             "id": "o2",
-            "text": "Sabırlı bir elçi olması"
+            "text": "Şükür"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Çok doğru sözlü olması",
-        "explanation": "Meryem 19/56'da İdrîs 'sıddîk' ve 'nebî' olarak nitelendirilir; bu onun dürüstlük ve peygamberliğini vurgular.",
+        "correctAnswer": "İyilik",
+        "explanation": "Enbiyâ 21/85’te İsmâil, İdrîs ve Zülkifl sabredenler olarak anılır; 21/86’da ise iyi kimseler oldukları belirtilir. Soruda ikinci âyetin kavramı aranır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Meryem 19/56; PDF sayfa 324 (1 tabanlı)",
-            "supports": "İdrîs, sıddîk ve nebî olarak nitelenir.",
+            "locator": "21/86, 21/85 ile karşılaştırma; PDF fiziksel sayfa 346, önceki âyet sayfa 345",
+            "supports": "Enbiyâ 21/85’te İsmâil, İdrîs ve Zülkifl sabredenler olarak anılır; 21/86’da ise iyi kimseler oldukları belirtilir. Soruda ikinci âyetin kavramı aranır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1738,29 +1738,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q71-idris-siddik",
-        "reviewedCandidateSha256": "f2fc4f88df5b040f84fe5602b013d19781faf52a3f49a39b2a8a0243049bf16c",
+        "reviewedCandidateSha256": "ed1a66d89dc43917e976440530866055b62e103393e43fea18414b1c94cd3006",
         "disposition": "revised",
         "defects": [
           "single-religious-option",
-          "length-cue"
+          "length-cue",
+          "repeated-fact"
         ],
-        "reason": "Hükümdar/tüccar/denizci yerine dört olumlu dinî nitelik verildi. 19/56’nın sıddîk ifadesi özel bağlamı oluşturur.",
+        "reason": "İdrîs/doğruluk eşleşmesi q66-meryem-56 ile tekrardı. Önce denenmiş isim ikilisi q71-idris-sabir ile aynı çıktığı için kabul edilmedi; iki ayrı âyetin nitelik ayrımı soruldu.",
         "optionReview": {
-          "o4": "Olumlu nitelik; bu âyette kullanılan değil.",
-          "o3": "Pek doğru/sıddîk niteliği âyette var.",
-          "o1": "Olumlu nitelik; bu âyette kullanılan değil.",
-          "o2": "Olumlu nitelik; bu âyette kullanılan değil."
+          "o4": "İlgili bir olumlu ahlâk kavramıdır; bu cümlenin açık kavramı değildir.",
+          "o3": "21/86’da iyi kimseler oldukları belirtilir.",
+          "o1": "Önceki 21/85’teki niteliktir; sorulan 86. âyetin kavramı değildir.",
+          "o2": "İlgili bir olumlu ahlâk kavramıdır; bu cümlede kullanılan değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "q66-meryem-41 İbrâhim için aynı sıddîk sıfatını sorar. Kişi ve âyet farklı; hedef örtüşmesi uzman/editör kararında açık tutuldu.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "19/56; PDF sayfa 324 (1 tabanlı), basılı sayfa 323",
+          "locator": "21/86, 21/85 ile karşılaştırma; PDF fiziksel sayfa 346, önceki âyet sayfa 345",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

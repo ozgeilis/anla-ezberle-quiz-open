@@ -4264,37 +4264,37 @@
         ]
       },
       "after": {
-        "question": "Yûsuf 12/84’te üzüntü nedeniyle ağardığı anlatılan yer neresidir?",
+        "question": "Kur’an Yolu mealinde Yûsuf 12/86’da Ya‘kūb’un Allah’a arz ettiği iki duygu hangileridir?",
         "options": [
           {
             "id": "o3",
-            "text": "Elleri"
+            "text": "Sevinç ve şükran"
           },
           {
             "id": "o4",
-            "text": "Saçları"
+            "text": "Öfke ve pişmanlık"
           },
           {
             "id": "o2",
-            "text": "Gözleri"
+            "text": "Acı ve keder"
           },
           {
             "id": "o1",
-            "text": "Yüzü"
+            "text": "Korku ve ümit"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Gözleri",
-        "explanation": "Yûsuf 12/84'te Hz. Ya‘kūb'un Yûsuf'a duyduğu üzüntü sebebiyle gözlerinin ağardığı belirtilir.",
+        "correctAnswer": "Acı ve keder",
+        "explanation": "Yûsuf 12/86’da Ya‘kūb acısını ve kederini Allah’a arz ettiğini söyler. Soru farklı meallerin bütün eş anlamlılarını değil Kur’an Yolu’nun bu ikilisini sorar.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Yûsuf 12/84; PDF sayfa 256",
-            "supports": "Yûsuf 12/84'te Hz. Ya‘kūb'un Yûsuf'a duyduğu üzüntü sebebiyle gözlerinin ağardığı belirtilir.",
+            "locator": "12/86; Ya‘kūb’un ifadesi; PDF fiziksel sayfa 256",
+            "supports": "Yûsuf 12/86’da Ya‘kūb acısını ve kederini Allah’a arz ettiğini söyler. Soru farklı meallerin bütün eş anlamlılarını değil Kur’an Yolu’nun bu ikilisini sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4303,28 +4303,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v12-prophets-008",
-        "reviewedCandidateSha256": "35975d0b3d2a2fe4e71cdfff2e854fe9194ffd23447e799a221a70ce9a17cc46",
+        "reviewedCandidateSha256": "fee5f6403b57380985e397257a78277ece1d21d5f1bbf8558c65f1407af8e2d7",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Saç/sakalın organ sayıldığı kök sorunu giderildi; dört beden bölümü, dilbilgisel olarak aynı biçimde sunuldu.",
+        "reason": "Saç/sakalın organ sayıldığı kök sorunu giderildi; dört beden bölümü, dilbilgisel olarak aynı biçimde sunuldu. Son tekrar karşılaştırması: 12/84’te gözlerinin ağarması e150-prophets-012 ile tekrardı; ayrı âyetin iki duygu ifadesi soruldu.",
         "optionReview": {
-          "o3": "Başka beden bölümü.",
-          "o4": "Yaşlılık/üzüntüyle karışabilir.",
-          "o2": "Mealde gözlerine boz gelmesi anlatılır.",
-          "o1": "Başka beden bölümü."
+          "o3": "İki olumlu ruh hâlidir; bu âyetin ifadesi değildir.",
+          "o4": "İki olumsuz ruh hâlidir; bu pasajın birlikte saydığı duygular değildir.",
+          "o2": "Meal bu iki duyguyu açıkça birlikte kullanır.",
+          "o1": "İki ilgili ruh hâlidir; bu cümlede birlikte geçen ikili değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Aynı ayet/kavram/olay için yakın hedeflerin bulunduğu not edildi. Banka çapındaki son anlamsal tekrar ve conceptGroup incelemesi tamamlanmış değildir; içerik sayısı ve eski gruplar korunuyor.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "Yûsuf 12/84; PDF sayfa 256",
+          "locator": "12/86; Ya‘kūb’un ifadesi; PDF fiziksel sayfa 256",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

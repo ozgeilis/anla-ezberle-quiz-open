@@ -1,11 +1,11 @@
 {
   "method": "Turkish token overlap plus explicit semantic pair decisions; not exhaustive semantic proof",
-  "candidatePairs": 429,
-  "automaticCandidatePairs": 384,
-  "retainedExplicitPairs": 45,
-  "individuallyReviewedPairs": 429,
+  "candidatePairs": 443,
+  "automaticCandidatePairs": 382,
+  "retainedExplicitPairs": 61,
+  "individuallyReviewedPairs": 443,
   "pendingPairs": 0,
-  "repeatedFactPairs": 19,
+  "repeatedFactPairs": 0,
   "independentApproval": false,
   "records": [
     {
@@ -118,174 +118,6 @@
         "snapshotSha256": "47d28b454e7ef15342fb05a2ab5532a8ccd59c5f9d9b0e56604109b9d631f73a",
         "verdict": "distinct-context",
         "reason": "Ahmed’in doğum şehri ve vefat şehri ayrı biyografi bilgileri; Bağdat ortaklığı tek başına anlam eşitliği değildir."
-      }
-    },
-    {
-      "a": "e150-history-027",
-      "b": "q69-ebueyyubelensari-akabe",
-      "score": 0.417,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "e150-history-027",
-          "question": "İkinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
-          "answer": "622"
-        },
-        {
-          "id": "q69-ebueyyubelensari-akabe",
-          "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
-          "answer": "622"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "e150-history-027",
-        "b": "q69-ebueyyubelensari-akabe",
-        "snapshotSha256": "638df8809f362598d80b7cc5b3c9c8bddd8ef4fc90cc0846dfe9899240f51bdd",
-        "verdict": "repeated-fact",
-        "reason": "İkinci Akabe’nin 622 tarihi, katılımcı Ebû Eyyûb köke eklense de aynı tarih bilgisidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "e150-history-028",
-      "b": "q56-akabe-egitmen",
-      "score": 0.235,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "e150-history-028",
-          "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
-          "answer": "Mus‘ab b. Umeyr"
-        },
-        {
-          "id": "q56-akabe-egitmen",
-          "question": "Birinci Akabe Biatı sonrasında Yesrib'e Kur'an ve İslam'ı öğretmesi için kim gönderildi?",
-          "answer": "Mus'ab b. Umeyr"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "e150-history-028",
-        "b": "q56-akabe-egitmen",
-        "snapshotSha256": "90d784fed8476ec1e11b5a77094e1a8aa48c17891be32cd74d6f6e4e5883c341",
-        "verdict": "repeated-fact",
-        "reason": "Birinci Akabe’den sonra Yesrib’e öğretici gönderilen Mus‘ab aynı görevle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "q50-zekeriyya-020",
-      "b": "q66-meryem-3",
-      "score": 0.2,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "q50-zekeriyya-020",
-          "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
-          "answer": "Alçak sesle"
-        },
-        {
-          "id": "q66-meryem-3",
-          "question": "Meryem 19/3’te Zekeriyyâ’nın duasında sesini kullanışı nasıl anlatılır?",
-          "answer": "Alçak sesle"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "q50-zekeriyya-020",
-        "b": "q66-meryem-3",
-        "snapshotSha256": "e61747c10c13358cc625213057ad2b19d65e11389fb7a3834a8410345fb32379",
-        "verdict": "repeated-fact",
-        "reason": "Meryem 19/3’te alçak sesle dua aynı nitelik hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "q60-nebevi-misafir",
-      "b": "v9-history-001",
-      "score": 0.154,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "q60-nebevi-misafir",
-          "question": "Hz. Peygamber Medine'ye gelişinde hangi sahâbînin evine misafir olmuştur?",
-          "answer": "Ebû Eyyûb el-Ensârî"
-        },
-        {
-          "id": "v9-history-001",
-          "question": "Hicret sırasında Hz. Peygamber'i Medine'deki evinde ağırlayan sahâbî kimdir?",
-          "answer": "Ebû Eyyûb el-Ensârî"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "q60-nebevi-misafir",
-        "b": "v9-history-001",
-        "snapshotSha256": "42879028ef4b506d37d758cc27fc11dfe7311f1ae63bd40e62204b8ba311a010",
-        "verdict": "repeated-fact",
-        "reason": "Hicret sonrası ev sahipliği yapan Ebû Eyyûb aynı kişi/olay hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "q47-bedir-001",
-      "b": "q64-bedir-kervan",
-      "score": 0.143,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "q47-bedir-001",
-          "question": "Bedir seferinden önce Kureyş kervanını kim yönetiyordu?",
-          "answer": "Ebû Süfyân"
-        },
-        {
-          "id": "q64-bedir-kervan",
-          "question": "Bedir seferi öncesi Mekkeli ticaret kervanını yöneten kişi kimdi?",
-          "answer": "Ebû Süfyân"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "q47-bedir-001",
-        "b": "q64-bedir-kervan",
-        "snapshotSha256": "d06be9e96da2ec5a78e227356c01d8e21f7273ba5f87fc344ee869e0c67a2caf",
-        "verdict": "repeated-fact",
-        "reason": "Bedir öncesi kervanı yöneten Ebû Süfyân aynı kişi/olay bilgisiyle tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "q48-yusuf-034",
-      "b": "q57-yusufzindan",
-      "score": 0.143,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "q48-yusuf-034",
-          "question": "Yûsuf kıssasına göre Hz. Yûsuf zindanda kaç gençle rüya yorumu üzerine konuşur?",
-          "answer": "İki"
-        },
-        {
-          "id": "q57-yusufzindan",
-          "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
-          "answer": "İki"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "q48-yusuf-034",
-        "b": "q57-yusufzindan",
-        "snapshotSha256": "c964e45a7e6dd3ce449550812785ba8a2eb105e25d77743c941637c3116c4c73",
-        "verdict": "repeated-fact",
-        "reason": "12/36’daki iki zindan gencinin sayısı aynı kıssada tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
@@ -454,6 +286,34 @@
         "snapshotSha256": "5c3b6daddc0db961eecc8f5e551853b0543917dbd370663ba68417b78203923e",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Sağından”, ikinci hedef “Arkasından”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q66-meryem-16",
+      "b": "q66-meryem-54",
+      "score": 0.462,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-meryem-16",
+          "question": "Meryem 19/21’de doğacak çocuk için açıkça birlikte kullanılan iki niteleme hangileridir?",
+          "answer": "Delil ve rahmet"
+        },
+        {
+          "id": "q66-meryem-54",
+          "question": "Meryem 19/54’te İsmâil için birlikte kullanılan iki görev unvanı hangileridir?",
+          "answer": "Resûl ve nebî"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q66-meryem-16",
+        "b": "q66-meryem-54",
+        "snapshotSha256": "c429ff4228f9c0a9504d7b497de4c7197d35ec2ffaf70a7d77f681e8a371414f",
+        "verdict": "distinct-context",
+        "reason": "19/21’de doğacak çocuğa ilişkin delil/rahmet nitelemesi ile 19/54’te İsmâil’in resûl/nebî görev unvanları ayrı çiftlerdir; benzer cümle kalıbı aynı bilgi sayılmaz."
       }
     },
     {
@@ -1437,31 +1297,31 @@
       }
     },
     {
-      "a": "q69-ebueyyubelensari-akabe",
-      "b": "q69-ebueyyubelensari-istanbul",
-      "score": 0.313,
+      "a": "v9-history-001",
+      "b": "v9-history-002",
+      "score": 0.333,
       "sameAnswer": false,
       "sameConcept": true,
       "signal": "same-concept",
       "questions": [
         {
-          "id": "q69-ebueyyubelensari-akabe",
-          "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
-          "answer": "622"
+          "id": "v9-history-001",
+          "question": "Eyüp Sultan adıyla tanınan Ebû Eyyûb el-Ensârî’nin asıl adı hangisidir?",
+          "answer": "Hâlid b. Zeyd"
         },
         {
-          "id": "q69-ebueyyubelensari-istanbul",
-          "question": "Ebû Eyyûb el-Ensârî'nin son katıldığı askerî sefer hangi şehre yöneliktir?",
-          "answer": "İstanbul"
+          "id": "v9-history-002",
+          "question": "Türkiye'de 'Eyüp Sultan' adıyla tanınan sahâbî kimdir?",
+          "answer": "Ebû Eyyûb el-Ensârî"
         }
       ],
       "currentLexicalSuggestion": true,
       "decision": {
-        "a": "q69-ebueyyubelensari-akabe",
-        "b": "q69-ebueyyubelensari-istanbul",
-        "snapshotSha256": "e45c00985e65b4d13ca08db5be3d721fd2e5af90602ea2075f15d0f86d04f5e8",
+        "a": "v9-history-001",
+        "b": "v9-history-002",
+        "snapshotSha256": "879982473c9ccc1ffd10b998f2f01b84edee86e07a782fafb1fe4734921c9640",
         "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “622”, ikinci hedef “İstanbul”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+        "reason": "Ebû Eyyûb’un asıl adı Hâlid b. Zeyd ile Türkiye’deki Eyüp Sultan adının kime ait olduğu farklı adlandırma hedefleridir. Birinci kök diğer sorunun cevabını ad olarak içerir; bağlam bağı ve karşılıklı ipucu riski gizlenmedi, bütünüyle bağımsız bilgi iddia edilmedi."
       }
     },
     {
@@ -1558,8 +1418,8 @@
       "questions": [
         {
           "id": "q67-kasas-7",
-          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
-          "answer": "Onu nehre bırakması"
+          "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
+          "answer": "Onu emzirmesi"
         },
         {
           "id": "q67-kasas-12",
@@ -1571,9 +1431,9 @@
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-12",
-        "snapshotSha256": "acd6ef9a6302f094af7e695a0340938fed7b962615a91eba51df45ba22f3cf29",
+        "snapshotSha256": "fbde5f531b4793bc200109eb76fee9b4ec7e526945a4ca5133822f175782a515",
         "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Onu nehre bırakması”, ikinci hedef “Başka sütanneleri kabul etmemesi”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+        "reason": "Aynı bebeklik anlatısında 28/7’nin ilk bakım emri emzirmek, 28/12’nin geri dönüş sebebi başka sütanneleri kabul etmemektir. Bağlam ilişkili, sorulan iki sebep/emir farklıdır."
       }
     },
     {
@@ -2386,6 +2246,34 @@
         "snapshotSha256": "863d8cc55ce5eb9929429c1c72e5e654326343668d54f119347817c82ff958e2",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Abdullah b. Zübeyr”, ikinci hedef “Baba bir ablasıdır”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q64-bedir-kervan",
+      "b": "q64-bedir-at",
+      "score": 0.286,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q64-bedir-kervan",
+          "question": "TDV’ye göre Bedir Gazvesi’nde Müslümanlardan kaç kişi şehit olmuştur?",
+          "answer": "On dört"
+        },
+        {
+          "id": "q64-bedir-at",
+          "question": "TDV'ye göre Bedir seferinde İslâm ordusunda kaç at bulunuyordu?",
+          "answer": "İki"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q64-bedir-kervan",
+        "b": "q64-bedir-at",
+        "snapshotSha256": "fae62cd83c59129ca5185cd8a96f26636fcda88baf3f78d7a09fa9504dc49dc8",
+        "verdict": "distinct-context",
+        "reason": "Bedir’deki Müslüman şehit sayısı on dört ile seferdeki at sayısı iki farklı niceliklerdir; sayılan şeyler kökte açıkça ayrılmıştır."
       }
     },
     {
@@ -3985,6 +3873,34 @@
       }
     },
     {
+      "a": "q60-nebevi-ilk",
+      "b": "q60-nebevi-kible",
+      "score": 0.25,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q60-nebevi-ilk",
+          "question": "Mescid-i Nebevî’nin ilk binasının duvarları taş temel üzerine hangi malzemeyle örülmüştü?",
+          "answer": "Kerpiç"
+        },
+        {
+          "id": "q60-nebevi-kible",
+          "question": "Mescid-i Nebevî’nin ilk kıblesinde hangi şehirdeki mâbed hedef alınmıştı?",
+          "answer": "Kudüs"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q60-nebevi-ilk",
+        "b": "q60-nebevi-kible",
+        "snapshotSha256": "55b1f6a277c1a122fc491fe994e973dfc24bf60414401bc26c475b0d999d10d5",
+        "verdict": "distinct-context",
+        "reason": "İlk duvarın kerpiç malzemesi ile ilk kıblenin Kudüs yönü ayrı yapı özellikleridir."
+      }
+    },
+    {
       "a": "q61-isa-hekim",
       "b": "q61-isa-sofra",
       "score": 0.25,
@@ -4402,6 +4318,34 @@
         "snapshotSha256": "efea74c02e4d9330a1a6cc7ded3ac1f8ef8fa6409d90cc08f9ab2247b7e5608c",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Hamâme”, ikinci hedef “Namaz uykudan hayırlıdır”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q69-ebueyyubelensari-kabile",
+      "b": "q69-ebueyyubelensari-akabe",
+      "score": 0.25,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q69-ebueyyubelensari-kabile",
+          "question": "Ebû Eyyûb el-Ensârî Hazrec kabilesinin hangi kolundandır?",
+          "answer": "Neccâroğulları"
+        },
+        {
+          "id": "q69-ebueyyubelensari-akabe",
+          "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
+          "answer": "Hz. Ali"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q69-ebueyyubelensari-kabile",
+        "b": "q69-ebueyyubelensari-akabe",
+        "snapshotSha256": "6d009b4d75c2dadb79fb983fe1e4a3b6d411a82941ab997fb83ec035202595b1",
+        "verdict": "distinct-context",
+        "reason": "Neccâroğulları soy kolu ile Ali’nin Medine vekâleti görevlendirmesi farklı biyografi bilgileridir."
       }
     },
     {
@@ -6505,34 +6449,6 @@
       }
     },
     {
-      "a": "q58-suleym-anne",
-      "b": "q58-suleym-rivayet",
-      "score": 0.214,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q58-suleym-anne",
-          "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
-          "answer": "Enes b. Mâlik"
-        },
-        {
-          "id": "q58-suleym-rivayet",
-          "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
-          "answer": "On dört"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q58-suleym-anne",
-        "b": "q58-suleym-rivayet",
-        "snapshotSha256": "60fb6b4a43ccafc7a945d7aae6c2c530b56027d07328054b0527c46f3bb044aa",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Enes b. Mâlik”, ikinci hedef “On dört”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
       "a": "q59-battuta-eser",
       "b": "q59-battuta-kabile",
       "score": 0.214,
@@ -6701,6 +6617,34 @@
       }
     },
     {
+      "a": "q66-neml-15",
+      "b": "q66-neml-16",
+      "score": 0.214,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-neml-15",
+          "question": "Neml 27/15'te ilim verildiği belirtilen iki peygamber kimlerdir?",
+          "answer": "Dâvûd ve Süleyman"
+        },
+        {
+          "id": "q66-neml-16",
+          "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+          "answer": "Dâvûd"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q66-neml-15",
+        "b": "q66-neml-16",
+        "snapshotSha256": "0664f3aa0f62c2cfe590378def283b010300117463729072a8795677bc2f9f4a",
+        "verdict": "distinct-context",
+        "reason": "27/15’te ilim verilen iki kişi ile 27/16’da Süleyman’ın yerine geçtiği kişi farklı ilişkiler ve cevap kümeleridir. Aynı iki kişi ve yakın âyet bağlamı taşıdığı açıkça korundu."
+      }
+    },
+    {
       "a": "q66-neml-30",
       "b": "q66-neml-42",
       "score": 0.214,
@@ -6766,8 +6710,8 @@
       "questions": [
         {
           "id": "q67-kasas-7",
-          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
-          "answer": "Onu nehre bırakması"
+          "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
+          "answer": "Onu emzirmesi"
         },
         {
           "id": "q67-kasas-11",
@@ -6779,9 +6723,9 @@
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-11",
-        "snapshotSha256": "6a9d90526a2008324c0b21202254fd9670cd8239a41d687c21cc42b36e843ae4",
+        "snapshotSha256": "2a65a4e73e7b00dbea6732049b5b0ad07fab78756bd8fe2886700b990295b9a8",
         "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Onu nehre bırakması”, ikinci hedef “Kardeşini uzaktan takip etmek”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+        "reason": "Emzirme emri ile kız kardeşin bebeği izlemesi görevi aynı olayın ayrı eylemleridir; doğru cevaplar birbirinin yerine kullanılamaz."
       }
     },
     {
@@ -6794,8 +6738,8 @@
       "questions": [
         {
           "id": "q67-kasas-7",
-          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
-          "answer": "Onu nehre bırakması"
+          "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
+          "answer": "Onu emzirmesi"
         },
         {
           "id": "q67-kasas-15",
@@ -6807,9 +6751,9 @@
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-15",
-        "snapshotSha256": "efe584ed5c4800b1de8969ce4af451c54c8009352f035695a7936de95ed63f1a",
+        "snapshotSha256": "8c476952994fde5dced576830e0a522a0211227ea013baf3ed00d833bf29d318",
         "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Onu nehre bırakması”, ikinci hedef “Birbiriyle kavga ediyorlardı”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+        "reason": "Bebeklikte bakım emri ile yetişkin Mûsâ’nın iki kişinin kavgasına rastlaması farklı zaman ve olaylardır."
       }
     },
     {
@@ -7037,31 +6981,59 @@
       }
     },
     {
-      "a": "q69-ebueyyubelensari-kabile",
-      "b": "q69-ebueyyubelensari-akabe",
+      "a": "q69-ebueyyubelensari-akabe",
+      "b": "q69-ebueyyubelensari-kibris",
       "score": 0.214,
       "sameAnswer": false,
       "sameConcept": true,
       "signal": "same-concept",
       "questions": [
         {
-          "id": "q69-ebueyyubelensari-kabile",
-          "question": "Ebû Eyyûb el-Ensârî Hazrec kabilesinin hangi kolundandır?",
-          "answer": "Neccâroğulları"
+          "id": "q69-ebueyyubelensari-akabe",
+          "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
+          "answer": "Hz. Ali"
         },
         {
-          "id": "q69-ebueyyubelensari-akabe",
-          "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
-          "answer": "622"
+          "id": "q69-ebueyyubelensari-kibris",
+          "question": "Ebû Eyyûb el-Ensârî Hz. Osman devrinde hangi deniz seferine katılmıştır?",
+          "answer": "Kıbrıs"
         }
       ],
       "currentLexicalSuggestion": true,
       "decision": {
-        "a": "q69-ebueyyubelensari-kabile",
-        "b": "q69-ebueyyubelensari-akabe",
-        "snapshotSha256": "ac2cfd46e7c964e8fb9ec94924586d23e1e99b0a33e872e1243420c290eba9f2",
+        "a": "q69-ebueyyubelensari-akabe",
+        "b": "q69-ebueyyubelensari-kibris",
+        "snapshotSha256": "a435bd3f4b013f4d1cf7ec882168224cc71f3ccfc2d94c648db6a2970357b3bb",
         "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Neccâroğulları”, ikinci hedef “622”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+        "reason": "Ali’nin Medine vekâleti görevi ile Osman dönemindeki Kıbrıs seferi farklı halife ve olay bağlamlarıdır."
+      }
+    },
+    {
+      "a": "q69-ebueyyubelensari-akabe",
+      "b": "q69-ebueyyubelensari-muahat",
+      "score": 0.214,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q69-ebueyyubelensari-akabe",
+          "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
+          "answer": "Hz. Ali"
+        },
+        {
+          "id": "q69-ebueyyubelensari-muahat",
+          "question": "Hicretten sonra Ebû Eyyûb el-Ensârî ile kardeş kılınan sahâbî kimdir?",
+          "answer": "Mus'ab b. Umeyr"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q69-ebueyyubelensari-akabe",
+        "b": "q69-ebueyyubelensari-muahat",
+        "snapshotSha256": "68c5d15bff7bbb480861e48dd498834c45cfb5b06bbe268b20fad560e0dcbc10",
+        "verdict": "distinct-context",
+        "reason": "Ali tarafından vekil görevlendirilme ile Mus‘ab ile kardeş kılınma farklı toplumsal/siyasî olaylardır."
       }
     },
     {
@@ -7849,34 +7821,6 @@
       }
     },
     {
-      "a": "q57-yusufruya",
-      "b": "q57-yusufzindan",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q57-yusufruya",
-          "question": "Yûsuf 12/4'e göre Hz. Yûsuf rüyasında kaç yıldız görmüştür?",
-          "answer": "On bir"
-        },
-        {
-          "id": "q57-yusufzindan",
-          "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
-          "answer": "İki"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q57-yusufruya",
-        "b": "q57-yusufzindan",
-        "snapshotSha256": "92f05547b03b9646e3cc6eecfd45d4197fa94b38288108b286ba6a2dd9d12216",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “On bir”, ikinci hedef “İki”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
       "a": "q58-seleme-asli",
       "b": "q58-seleme-kabile",
       "score": 0.2,
@@ -8157,6 +8101,34 @@
       }
     },
     {
+      "a": "q64-bedir-kervan",
+      "b": "q64-bedir-sancak",
+      "score": 0.2,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q64-bedir-kervan",
+          "question": "TDV’ye göre Bedir Gazvesi’nde Müslümanlardan kaç kişi şehit olmuştur?",
+          "answer": "On dört"
+        },
+        {
+          "id": "q64-bedir-sancak",
+          "question": "TDV Bedir Gazvesi maddesinde sancaktar olarak adı anılan sahâbî kimdir?",
+          "answer": "Mus‘ab b. Umeyr"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q64-bedir-kervan",
+        "b": "q64-bedir-sancak",
+        "snapshotSha256": "97505fa2f41fcc1d18754f0f1c3bb5921b56372b2fae3cf119177c33b23763cc",
+        "verdict": "distinct-context",
+        "reason": "On dört şehit sayısı ile sancaktar Mus‘ab’ın kimliği ayrı nicelik/kişi hedefleridir."
+      }
+    },
+    {
       "a": "q64-senet-emr",
       "b": "q64-senet-fetih",
       "score": 0.2,
@@ -8182,34 +8154,6 @@
         "snapshotSha256": "fc36b3e8dd891373000c5993116828721ebfa9551881606e45d50bfa10dd5e7d",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Savaşa izin verilmesi”, ikinci hedef “Mekke’nin alınması”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q65-furkan-70",
-      "b": "q65-furkan-74",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q65-furkan-70",
-          "question": "Furkân 25/70'te tövbe edip iman edenlerin kötü davranışlarıyla ilgili hangi müjde yer alır?",
-          "answer": "Kötülüklerin iyiliklere çevrilmesi"
-        },
-        {
-          "id": "q65-furkan-74",
-          "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
-          "answer": "Göz aydınlığı ve mutluluk olmaları"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q65-furkan-70",
-        "b": "q65-furkan-74",
-        "snapshotSha256": "28e7f4ac3f1494b2db06698a83fb5517b193d52e1cff05bcc31883c5ae79d34a",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kötülüklerin iyiliklere çevrilmesi”, ikinci hedef “Göz aydınlığı ve mutluluk olmaları”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -8353,6 +8297,34 @@
       }
     },
     {
+      "a": "q66-kehf-79",
+      "b": "q66-kehf-94",
+      "score": 0.2,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-kehf-79",
+          "question": "Kehf 18/79’da geminin kusurlu gösterilmesine sebep olan hükümdarın davranışı hangisidir?",
+          "answer": "Sağlam gemileri zorla almak"
+        },
+        {
+          "id": "q66-kehf-94",
+          "question": "Kehf 18/94'te Zülkarneyn'den yardım istenmesine sebep olan iki topluluk kimlerdir?",
+          "answer": "Ye'cûc ve Me'cûc"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q66-kehf-79",
+        "b": "q66-kehf-94",
+        "snapshotSha256": "b8a2d977942677c78d591012c672adc601914fe47afebee92d52593d2e2fddff",
+        "verdict": "distinct-context",
+        "reason": "18/79’daki kralın sağlam gemileri zorla alması ile 18/94’teki Ye’cûc/Me’cûc toplulukları farklı kıssa bölümleri ve hedeflerdir."
+      }
+    },
+    {
       "a": "q66-kehf-9",
       "b": "q66-kehf-28",
       "score": 0.2,
@@ -8378,146 +8350,6 @@
         "snapshotSha256": "463436dec558c66ae567a3de472e257f73078ef7e8a10620b3070106bd7b9a7d",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Rakīm”, ikinci hedef “Sabah akşam Rablerine dua edenler”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q66-meryem-3",
-      "b": "q66-meryem-7",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q66-meryem-3",
-          "question": "Meryem 19/3’te Zekeriyyâ’nın duasında sesini kullanışı nasıl anlatılır?",
-          "answer": "Alçak sesle"
-        },
-        {
-          "id": "q66-meryem-7",
-          "question": "Meryem 19/7'de Hz. Zekeriyyâ'ya müjdelenen çocuğun adı nedir?",
-          "answer": "Yahyâ"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q66-meryem-3",
-        "b": "q66-meryem-7",
-        "snapshotSha256": "fd1b28d1ae99c9069aa710694e7ed1186aab7e9fd631032778fbe619e8c19239",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Alçak sesle”, ikinci hedef “Yahyâ”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q66-neml-16",
-      "b": "q66-neml-20",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q66-neml-16",
-          "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
-          "answer": "Kuşların dili"
-        },
-        {
-          "id": "q66-neml-20",
-          "question": "Neml 27/20'de Hz. Süleyman hangi kuşun yokluğunu fark etmiştir?",
-          "answer": "Hüdhüd"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q66-neml-16",
-        "b": "q66-neml-20",
-        "snapshotSha256": "fa7480d0a756c0f704f4af3662d1011cfb6a6a161835f581696285db307d93c5",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kuşların dili”, ikinci hedef “Hüdhüd”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q66-neml-16",
-      "b": "q66-neml-22",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q66-neml-16",
-          "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
-          "answer": "Kuşların dili"
-        },
-        {
-          "id": "q66-neml-22",
-          "question": "Neml 27/22'de hüdhüd hangi ülkeden haber getirdiğini söyler?",
-          "answer": "Sebe'"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q66-neml-16",
-        "b": "q66-neml-22",
-        "snapshotSha256": "3a942e4e6160a63836d0f7c93ee7ad5468d030324deb8858f2b0377c37849d04",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kuşların dili”, ikinci hedef “Sebe'”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q66-neml-16",
-      "b": "q66-neml-35",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q66-neml-16",
-          "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
-          "answer": "Kuşların dili"
-        },
-        {
-          "id": "q66-neml-35",
-          "question": "Neml 27/35'te Sebe' hükümdarı Hz. Süleyman'a ne göndermeyi kararlaştırır?",
-          "answer": "Hediye"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q66-neml-16",
-        "b": "q66-neml-35",
-        "snapshotSha256": "1e0180a31a852a3357af61a9e9ae6f885ded9ea6b41109a9435f32a774d7e91f",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kuşların dili”, ikinci hedef “Hediye”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q66-neml-20",
-      "b": "q66-neml-35",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q66-neml-20",
-          "question": "Neml 27/20'de Hz. Süleyman hangi kuşun yokluğunu fark etmiştir?",
-          "answer": "Hüdhüd"
-        },
-        {
-          "id": "q66-neml-35",
-          "question": "Neml 27/35'te Sebe' hükümdarı Hz. Süleyman'a ne göndermeyi kararlaştırır?",
-          "answer": "Hediye"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q66-neml-20",
-        "b": "q66-neml-35",
-        "snapshotSha256": "53e5c342f9d911b19bf65f78a2e88fa1b1f204c8f08ca28013acad34abeee97d",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Hüdhüd”, ikinci hedef “Hediye”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -8578,34 +8410,6 @@
     },
     {
       "a": "q67-kasas-7",
-      "b": "q67-kasas-26",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q67-kasas-7",
-          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
-          "answer": "Onu nehre bırakması"
-        },
-        {
-          "id": "q67-kasas-26",
-          "question": "Kasas 28/26'da Hz. Mûsâ'yı işe almak için belirtilen iki nitelik nedir?",
-          "answer": "Güçlü ve güvenilir olmak"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q67-kasas-7",
-        "b": "q67-kasas-26",
-        "snapshotSha256": "1ccaac6173fa47621e797875bf497ce679cd769111d916a4beccf6a1c0d96b99",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Onu nehre bırakması”, ikinci hedef “Güçlü ve güvenilir olmak”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q67-kasas-7",
       "b": "q67-kasas-9",
       "score": 0.2,
       "sameAnswer": false,
@@ -8614,8 +8418,8 @@
       "questions": [
         {
           "id": "q67-kasas-7",
-          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
-          "answer": "Onu nehre bırakması"
+          "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
+          "answer": "Onu emzirmesi"
         },
         {
           "id": "q67-kasas-9",
@@ -8627,9 +8431,9 @@
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-9",
-        "snapshotSha256": "ee1a7b203580dd89861db6ca9966d76462f8ea0b77b4a414be8101296e3b3af6",
+        "snapshotSha256": "35682a92621740bcca7c1b2fa64e02fbe4fe9a49094cd86eda2178ef099b9b79",
         "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Onu nehre bırakması”, ikinci hedef “Firavun’un karısı”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+        "reason": "Annesine verilen ilk bakım emri ile Firavun’un karısının evlat edinme önerisi aynı kıssanın farklı kişilerce yapılan eylemleridir."
       }
     },
     {
@@ -9445,6 +9249,146 @@
       }
     },
     {
+      "a": "q69-ebueyyubelensari-akabe",
+      "b": "q69-ebueyyubelensari-istanbul",
+      "score": 0.188,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q69-ebueyyubelensari-akabe",
+          "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
+          "answer": "Hz. Ali"
+        },
+        {
+          "id": "q69-ebueyyubelensari-istanbul",
+          "question": "Ebû Eyyûb el-Ensârî'nin son katıldığı askerî sefer hangi şehre yöneliktir?",
+          "answer": "İstanbul"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q69-ebueyyubelensari-akabe",
+        "b": "q69-ebueyyubelensari-istanbul",
+        "snapshotSha256": "8f327c45dbd80c81b7107587b298ea9d5dcb5f79d00cad280566c9adfd1d42fd",
+        "verdict": "distinct-context",
+        "reason": "Ali’nin Medine vekâleti görevlendirmesi ile son askerî seferin İstanbul hedefi ayrı olay ve hedeflerdir."
+      }
+    },
+    {
+      "a": "q66-meryem-3",
+      "b": "q66-meryem-7",
+      "score": 0.182,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-meryem-3",
+          "question": "Meryem 19/11’de Zekeriyyâ kavmine sabah akşam ne yapmalarını işaretle bildirir?",
+          "answer": "Allah’ı tesbih etmelerini"
+        },
+        {
+          "id": "q66-meryem-7",
+          "question": "Meryem 19/7'de Hz. Zekeriyyâ'ya müjdelenen çocuğun adı nedir?",
+          "answer": "Yahyâ"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-meryem-3",
+        "b": "q66-meryem-7",
+        "snapshotSha256": "34b20051a5635e4db3ac7a0914fbdc110e990c2bba7c941b14afc36085e1073a",
+        "verdict": "distinct-context",
+        "reason": "19/11’de kavme tesbih öğüdü ile 19/7’de müjdelenen Yahyâ adı ayrı hedeflerdir; gizli dua biçimi artık yinelenmiyor."
+      }
+    },
+    {
+      "a": "q65-furkan-70",
+      "b": "q65-furkan-74",
+      "score": 0.143,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q65-furkan-70",
+          "question": "Furkân 25/70'te tövbe edip iman edenlerin kötü davranışlarıyla ilgili hangi müjde yer alır?",
+          "answer": "Kötülüklerin iyiliklere çevrilmesi"
+        },
+        {
+          "id": "q65-furkan-74",
+          "question": "Furkân 25/74’te müttakilerle ilgili olarak hangi görev istenir?",
+          "answer": "Onlara öncü olmak"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q65-furkan-70",
+        "b": "q65-furkan-74",
+        "snapshotSha256": "e27179ba2de5dd9ec342ce60da8cf2afad701356357e3d44a86a81ba413ea1d5",
+        "verdict": "distinct-context",
+        "reason": "25/70’te kötü davranışların iyiliğe çevrilmesi müjdesi ile 25/74’te müttakilere öncülük isteği ayrı âyet ve kavramlardır."
+      }
+    },
+    {
+      "a": "q66-neml-16",
+      "b": "q66-neml-35",
+      "score": 0.143,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-neml-16",
+          "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+          "answer": "Dâvûd"
+        },
+        {
+          "id": "q66-neml-35",
+          "question": "Neml 27/35'te Sebe' hükümdarı Hz. Süleyman'a ne göndermeyi kararlaştırır?",
+          "answer": "Hediye"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-neml-16",
+        "b": "q66-neml-35",
+        "snapshotSha256": "d7cc8cc8e300c3a392e68cc545d249dd383356d431a2a106fb909c079b7490ef",
+        "verdict": "distinct-context",
+        "reason": "27/16’daki Dâvûd’un yerine geçme ile 27/35’te hükümdarın hediye gönderme kararı farklı olay ve hedeflerdir."
+      }
+    },
+    {
+      "a": "q67-kasas-7",
+      "b": "q67-kasas-26",
+      "score": 0.125,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q67-kasas-7",
+          "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
+          "answer": "Onu emzirmesi"
+        },
+        {
+          "id": "q67-kasas-26",
+          "question": "Kasas 28/26'da Hz. Mûsâ'yı işe almak için belirtilen iki nitelik nedir?",
+          "answer": "Güçlü ve güvenilir olmak"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q67-kasas-7",
+        "b": "q67-kasas-26",
+        "snapshotSha256": "f2175111ba6e684e9fbe72ed0c818f8a59264671d218aa1484222a58567765bd",
+        "verdict": "distinct-context",
+        "reason": "Bebeklikte emzirme talimatı ile yetişkin Mûsâ için güçlü/güvenilir işçi değerlendirmesi farklı zaman ve hedeflerdir."
+      }
+    },
+    {
       "a": "q58-suleym-ogul",
       "b": "q58-suleym-rivayet",
       "score": 0.111,
@@ -9473,9 +9417,93 @@
       }
     },
     {
+      "a": "q58-suleym-anne",
+      "b": "q58-suleym-rivayet",
+      "score": 0.105,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q58-suleym-anne",
+          "question": "Ümmü Süleym’in oğlu Abdullah’a yapılan, damağa yumuşatılmış hurma sürme işlemi hangisidir?",
+          "answer": "Tahnîk"
+        },
+        {
+          "id": "q58-suleym-rivayet",
+          "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+          "answer": "On dört"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q58-suleym-anne",
+        "b": "q58-suleym-rivayet",
+        "snapshotSha256": "91f16a44a1cc46d7e0fadedf46dd2308dda63f8bcdca9be700e404a4f4936ada",
+        "verdict": "distinct-context",
+        "reason": "Abdullah’a uygulanan tarihî tahnîk işleminin adı ile Ümmü Süleym’in rivayet sayısı ayrı hedeflerdir; anne/çocuk eşleşmesi artık sorulmuyor."
+      }
+    },
+    {
+      "a": "q57-yusufruya",
+      "b": "q57-yusufzindan",
+      "score": 0.091,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q57-yusufruya",
+          "question": "Yûsuf 12/4'e göre Hz. Yûsuf rüyasında kaç yıldız görmüştür?",
+          "answer": "On bir"
+        },
+        {
+          "id": "q57-yusufzindan",
+          "question": "Yûsuf 12/73’te kardeşler hangi iki suçlamayı birlikte reddeder?",
+          "answer": "Bozgunculuk ve hırsızlık"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q57-yusufruya",
+        "b": "q57-yusufzindan",
+        "snapshotSha256": "0908444b799cc55351711e12a82f7f42ec135ee7c857451d7189a882071b0910",
+        "verdict": "distinct-context",
+        "reason": "12/4’te on bir yıldız rüyası ile 12/73’te kardeşlerin iki suçlamayı reddi ayrı sahne ve hedeflerdir."
+      }
+    },
+    {
+      "a": "q66-neml-20",
+      "b": "q66-neml-35",
+      "score": 0.091,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-neml-20",
+          "question": "Neml 27/31’de mektubun alıcılarından hangi tutumla gelmeleri istenir?",
+          "answer": "Teslimiyet göstererek"
+        },
+        {
+          "id": "q66-neml-35",
+          "question": "Neml 27/35'te Sebe' hükümdarı Hz. Süleyman'a ne göndermeyi kararlaştırır?",
+          "answer": "Hediye"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-neml-20",
+        "b": "q66-neml-35",
+        "snapshotSha256": "cf4b47e25568c93e2de03b16c28ffe6cec513388791e2a5ff569e3ab9964151d",
+        "verdict": "distinct-context",
+        "reason": "Mektuptaki teslimiyet talebi ile hükümdarın hediye gönderme cevabı ilişkili fakat ayrı eylemlerdir; aynı doğru cevap sorulmuyor."
+      }
+    },
+    {
       "a": "e150-prophets-008",
       "b": "v11-prophets-003",
-      "score": 0.083,
+      "score": 0.071,
       "sameAnswer": false,
       "sameConcept": true,
       "signal": "same-concept",
@@ -9487,17 +9515,73 @@
         },
         {
           "id": "v11-prophets-003",
-          "question": "Hz. Yûsuf hükümdarın rüyasını yorumlamadan önce hangi yerde bulunuyordu?",
-          "answer": "Hapishanede"
+          "question": "Yûsuf 12/41’de rüyası yorumlanan gençlerden kurtulacak olanın hangi görevi yapacağı söylenir?",
+          "answer": "Efendisine içki sunmak"
         }
       ],
       "currentLexicalSuggestion": false,
       "decision": {
         "a": "e150-prophets-008",
         "b": "v11-prophets-003",
-        "snapshotSha256": "da0b2019ef02d057f493477518a5b41b704d3516cce2926adca037cdfed119f0",
-        "verdict": "repeated-fact",
-        "reason": "Zindan/hapishane eş anlamlıdır; Yûsuf’un bulunduğu yer aynı olay dizisinin iki anlatımıyla soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+        "snapshotSha256": "c961e29c8631839bf7fd805ec0648067df6ddd6e1b9e8306d6efb8574034903b",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Zindan/hapishane bilgisi e150-prophets-008 ile tekrardı; aynı kıssada farklı bir görev sonucu soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "q66-neml-16",
+      "b": "q66-neml-20",
+      "score": 0.067,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-neml-16",
+          "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+          "answer": "Dâvûd"
+        },
+        {
+          "id": "q66-neml-20",
+          "question": "Neml 27/31’de mektubun alıcılarından hangi tutumla gelmeleri istenir?",
+          "answer": "Teslimiyet göstererek"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-neml-16",
+        "b": "q66-neml-20",
+        "snapshotSha256": "47d5ad8c553bbec066f51181b77421b0fb7202c721adf6ef160e0b2d2a94a3cd",
+        "verdict": "distinct-context",
+        "reason": "Süleyman’ın yerine geçtiği kişi Dâvûd ile mektubun 27/31’deki teslimiyet talebi ayrı kişi ve davranış hedefleridir."
+      }
+    },
+    {
+      "a": "q66-neml-16",
+      "b": "q66-neml-22",
+      "score": 0.067,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-neml-16",
+          "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+          "answer": "Dâvûd"
+        },
+        {
+          "id": "q66-neml-22",
+          "question": "Neml 27/22'de hüdhüd hangi ülkeden haber getirdiğini söyler?",
+          "answer": "Sebe'"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-neml-16",
+        "b": "q66-neml-22",
+        "snapshotSha256": "89f28c9def844d60b3bcccfcbae1aeb1c95ff3b5a7e53b2b42f5383627d750ed",
+        "verdict": "distinct-context",
+        "reason": "27/16’daki Dâvûd’un yerine geçme ile 27/22’de haberin geldiği Sebe ülkesi farklı bilgilerdir."
       }
     },
     {
@@ -9526,6 +9610,34 @@
         "snapshotSha256": "5b86209e2b9b2d64a8248ba46c70eb43d5642d3d93773a20b8ed20b3db3cc23f",
         "verdict": "distinct-context",
         "reason": "18/12’de hesaplanacak süre ile 18/16’da seçilen sığınak farklı hedeflerdir; aynı mağara sahnesi sebebiyle ilişkili içeriktir."
+      }
+    },
+    {
+      "a": "q71-idris-siddik",
+      "b": "q71-idris-sabir",
+      "score": 0.053,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q71-idris-siddik",
+          "question": "Enbiyâ 21/86’nın Kur’an Yolu mealinde sözü edilen kimselerin ortak niteliği hangi kavramla anlatılır?",
+          "answer": "İyilik"
+        },
+        {
+          "id": "q71-idris-sabir",
+          "question": "Enbiyâ 21/85-86'da Hz. İdrîs hangi iki peygamberle birlikte sabredenler arasında sayılır?",
+          "answer": "İsmâil ve Zülkifl"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q71-idris-siddik",
+        "b": "q71-idris-sabir",
+        "snapshotSha256": "ac58aea6800da36197e4ef0ae2a81b61651254635a176b306a2a8d43fa68bbeb",
+        "verdict": "distinct-context",
+        "reason": "21/86’daki iyilik niteliği ile 21/85’te sabredenler olarak birlikte anılan isimler farklı hedeflerdir. İlk denenmiş isim-ikilisi düzeltmesi aynı bilgiyi yeniden ürettiği için reddedildi. Yakın âyet bağlamı ve ortak seçim grubu korundu."
       }
     },
     {
@@ -10313,34 +10425,6 @@
       }
     },
     {
-      "a": "q66-meryem-41",
-      "b": "q71-idris-siddik",
-      "score": 0.625,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "q66-meryem-41",
-          "question": "Meryem 19/41'de İbrâhim'in peygamberliği yanında hangi niteliği özellikle belirtilir?",
-          "answer": "Özü sözü doğru olması"
-        },
-        {
-          "id": "q71-idris-siddik",
-          "question": "Meryem 19/56'da İdrîs'in peygamberliği yanında hangi niteliği belirtilir?",
-          "answer": "Çok doğru sözlü olması"
-        }
-      ],
-      "currentLexicalSuggestion": true,
-      "decision": {
-        "a": "q66-meryem-41",
-        "b": "q71-idris-siddik",
-        "snapshotSha256": "3843a390e0e217a487f883e315475a0a88905d51cc8d1ca53243464f5d7cc32c",
-        "verdict": "distinct-context",
-        "reason": "İbrâhim ve İdrîs’in iki farklı ayetteki sıddık niteliği ortak sözcüklü ama farklı kişi/ayet bağlamlarıdır."
-      }
-    },
-    {
       "a": "v10-quran-002",
       "b": "v11-quran-013",
       "score": 0.625,
@@ -11013,34 +11097,6 @@
       }
     },
     {
-      "a": "v11-prophets-007",
-      "b": "q67-kasas-7",
-      "score": 0.429,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v11-prophets-007",
-          "question": "Kasas 28/7'de Hz. Mûsâ'nın annesine bebeği tehlike karşısında nereye bırakması bildirilir?",
-          "answer": "Nehre"
-        },
-        {
-          "id": "q67-kasas-7",
-          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
-          "answer": "Onu nehre bırakması"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "v11-prophets-007",
-        "b": "q67-kasas-7",
-        "snapshotSha256": "d04ec8bcfd198840fa5e847e6d07b654dff96f5c70861ac10a1c90c56750dc44",
-        "verdict": "repeated-fact",
-        "reason": "28/7’de bebeğin nehre bırakılması aynı talimatla soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
       "a": "e150-history-026",
       "b": "q56-akabe-yil1",
       "score": 0.273,
@@ -11066,34 +11122,6 @@
         "snapshotSha256": "a82183969254802d28eeecd8eabae0f3118fca6e4fe233fd3bf0140a0049394d",
         "verdict": "distinct-context",
         "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 621 tarihi q56-akabe-yil1 ile tekrardı; biatın kaynakta açıklanan diğer adı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
-      }
-    },
-    {
-      "a": "learn-dua-007",
-      "b": "q65-furkan-74",
-      "score": 0.273,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "learn-dua-007",
-          "question": "Furkân 25/74'teki duada eşler ve çocuklar için ne istenir?",
-          "answer": "Göz aydınlığı olmaları"
-        },
-        {
-          "id": "q65-furkan-74",
-          "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
-          "answer": "Göz aydınlığı ve mutluluk olmaları"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "learn-dua-007",
-        "b": "q65-furkan-74",
-        "snapshotSha256": "0a62ee761963e56da20f37bf29269561e8021c2865657c80329cd4657032cc1b",
-        "verdict": "repeated-fact",
-        "reason": "25/74’te eş ve çocukların göz aydınlığı olması aynı dua hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
@@ -11125,115 +11153,115 @@
       }
     },
     {
-      "a": "v10-prophets-008",
-      "b": "e150-prophets-023",
+      "a": "v11-prophets-007",
+      "b": "q67-kasas-7",
       "score": 0.25,
       "sameAnswer": false,
       "sameConcept": false,
       "signal": "text-overlap",
       "questions": [
         {
-          "id": "v10-prophets-008",
-          "question": "Neml sûresinde Hz. Süleyman'a haber getiren hüdhüd hangi topluluktan söz eder?",
-          "answer": "Sebe halkından"
+          "id": "v11-prophets-007",
+          "question": "Kasas 28/7'de Hz. Mûsâ'nın annesine bebeği tehlike karşısında nereye bırakması bildirilir?",
+          "answer": "Nehre"
         },
         {
-          "id": "e150-prophets-023",
-          "question": "Hüdhüd kuşu Hz. Süleyman'a hangi ülkeden haber getirir?",
-          "answer": "Sebe'"
+          "id": "q67-kasas-7",
+          "question": "Kasas 28/7’de tehlikeye ilişkin talimattan önce Mûsâ’nın annesine hangi bakım emri verilir?",
+          "answer": "Onu emzirmesi"
         }
       ],
       "currentLexicalSuggestion": false,
       "decision": {
-        "a": "v10-prophets-008",
-        "b": "e150-prophets-023",
-        "snapshotSha256": "5c2aac5cae36b71619b3ef327659eef042d782e525e4435c5f81786b19fde383",
-        "verdict": "repeated-fact",
-        "reason": "Hüdhüdün getirdiği haberin Sebe halkı/ülkesi ile ilişkisi aynı kıssa hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+        "a": "v11-prophets-007",
+        "b": "q67-kasas-7",
+        "snapshotSha256": "d8577a34ad630e79610d2704958c473b1798ebe77ec55484524145f9658055b0",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Nehre bırakma v11-prophets-007 ile tekrardı; aynı âyetin farklı ilk emri soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
       }
     },
     {
-      "a": "q47-suleyman-026",
-      "b": "q66-neml-16",
-      "score": 0.222,
+      "a": "learn-dua-007",
+      "b": "q65-furkan-74",
+      "score": 0.2,
       "sameAnswer": false,
       "sameConcept": false,
       "signal": "text-overlap",
       "questions": [
         {
-          "id": "q47-suleyman-026",
-          "question": "Neml 27/16’da Süleyman’a hangi bilginin öğretildiği belirtilir?",
-          "answer": "Kuşların dilini anlama"
+          "id": "learn-dua-007",
+          "question": "Furkân 25/74'teki duada eşler ve çocuklar için ne istenir?",
+          "answer": "Göz aydınlığı olmaları"
         },
         {
-          "id": "q66-neml-16",
-          "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
-          "answer": "Kuşların dili"
+          "id": "q65-furkan-74",
+          "question": "Furkân 25/74’te müttakilerle ilgili olarak hangi görev istenir?",
+          "answer": "Onlara öncü olmak"
         }
       ],
       "currentLexicalSuggestion": false,
       "decision": {
-        "a": "q47-suleyman-026",
-        "b": "q66-neml-16",
-        "snapshotSha256": "857b06cad659764a03a193c3f115055a2794d3efd41256210730f945c0e2e610",
-        "verdict": "repeated-fact",
-        "reason": "Neml 27/16’daki kuş dili bilgisi aynı hedefle tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+        "a": "learn-dua-007",
+        "b": "q65-furkan-74",
+        "snapshotSha256": "21fda19a3b5c7feacfb16783a473740d6573ec7c826dd952a5fa541921aafe8c",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Eş ve çocukların göz aydınlığı olması learn-dua-007 ile tekrardı; aynı duanın başka talebi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
       }
     },
     {
-      "a": "v10-prophets-003",
-      "b": "q66-kehf-82",
+      "a": "v10-prophets-002",
+      "b": "q66-kehf-79",
+      "score": 0.2,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-002",
+          "question": "Kehf 18/79'da geminin sahipleri nasıl tanıtılır?",
+          "answer": "Denizde çalışan yoksul kimseler"
+        },
+        {
+          "id": "q66-kehf-79",
+          "question": "Kehf 18/79’da geminin kusurlu gösterilmesine sebep olan hükümdarın davranışı hangisidir?",
+          "answer": "Sağlam gemileri zorla almak"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-002",
+        "b": "q66-kehf-79",
+        "snapshotSha256": "1b5f30b01081d0e2d57f2d917a822a9476964a4fdd1dc2f573eb35e5afa0ab8a",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Yoksul gemi sahipleri v10-prophets-002 ile tekrardı; zararın ayrı gerekçesi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "q50-zekeriyya-020",
+      "b": "q66-meryem-3",
       "score": 0.182,
       "sameAnswer": false,
       "sameConcept": false,
       "signal": "text-overlap",
       "questions": [
         {
-          "id": "v10-prophets-003",
-          "question": "Kehf 18/82'de onarılan duvarın altında kimin hazinesi bulunuyordu?",
-          "answer": "İki yetim çocuğun"
+          "id": "q50-zekeriyya-020",
+          "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
+          "answer": "Alçak sesle"
         },
         {
-          "id": "q66-kehf-82",
-          "question": "Kehf 18/82'de duvarın altındaki definenin sahipleri kimlerdir?",
-          "answer": "İki yetim çocuk"
+          "id": "q66-meryem-3",
+          "question": "Meryem 19/11’de Zekeriyyâ kavmine sabah akşam ne yapmalarını işaretle bildirir?",
+          "answer": "Allah’ı tesbih etmelerini"
         }
       ],
       "currentLexicalSuggestion": false,
       "decision": {
-        "a": "v10-prophets-003",
-        "b": "q66-kehf-82",
-        "snapshotSha256": "caf1571f3b10f0f5764976366a2965f452b0e0c5fc1ced7b0ac7e3d89a42fbb5",
-        "verdict": "repeated-fact",
-        "reason": "18/82’deki hazine sahipleri olan iki yetim aynı hedefle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "v13-general-012",
-      "b": "q67-ankebut-45",
-      "score": 0.182,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v13-general-012",
-          "question": "Ankebût 29/45’te namazın alıkoyduğu şeyler hangi iki ifadeyle anılır?",
-          "answer": "Hayâsızlık ve kötülük"
-        },
-        {
-          "id": "q67-ankebut-45",
-          "question": "Ankebût 29/45'te namazın hangi ahlâkî etkisi açıkça belirtilir?",
-          "answer": "Hayâsızlık ve kötülükten alıkoyması"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "v13-general-012",
-        "b": "q67-ankebut-45",
-        "snapshotSha256": "a62cd45ec99c24a6e20bb643ab00aa69464b6e921f0d50b01b3323961b5297d2",
-        "verdict": "repeated-fact",
-        "reason": "29/45’te namazın hayâsızlık ve kötülükten alıkoyması aynı ilişkiyle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+        "a": "q50-zekeriyya-020",
+        "b": "q66-meryem-3",
+        "snapshotSha256": "2d5feeee3a09236a7d96b9e9a080625b8d1023870711f337e2730943afba5dc7",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Alçak sesle dua q50-zekeriyya-020 ile tekrardı; farklı âyette kavmine ilettiği öğüt soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
       }
     },
     {
@@ -11265,6 +11293,62 @@
       }
     },
     {
+      "a": "e150-history-028",
+      "b": "q56-akabe-egitmen",
+      "score": 0.167,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-028",
+          "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
+          "answer": "Mus‘ab b. Umeyr"
+        },
+        {
+          "id": "q56-akabe-egitmen",
+          "question": "TDV’ye göre Birinci Akabe Biatı’ndaki on iki Medinelinin kaçı Evs kabilesindendi?",
+          "answer": "İki"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-028",
+        "b": "q56-akabe-egitmen",
+        "snapshotSha256": "a2804bf7dfa995ec26be782b4c8b1a270525fd830ef1484e394d5572783175e0",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Mus‘ab’ın öğreticiliği e150-history-028 ile tekrardı; heyetin ayrı bir alt grup sayısı soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "history-003",
+      "b": "q60-nebevi-ilk",
+      "score": 0.167,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "history-003",
+          "question": "Mescid-i Nebevî hangi şehirdedir?",
+          "answer": "Medine"
+        },
+        {
+          "id": "q60-nebevi-ilk",
+          "question": "Mescid-i Nebevî’nin ilk binasının duvarları taş temel üzerine hangi malzemeyle örülmüştü?",
+          "answer": "Kerpiç"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "history-003",
+        "b": "q60-nebevi-ilk",
+        "snapshotSha256": "8ef9cc192a90c90aa66818b7dbe99260e54228f35e6caa918b1fbb4ddd672ff2",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda iki kök de Mescid-i Nebevî/Medine yer bilgisini soruyordu. Yeni kök ilk duvarların kerpiç malzemesini sorar; şehir bilgisi ayrı kaldı."
+      }
+    },
+    {
       "a": "v11-prophets-011",
       "b": "q66-meryem-7",
       "score": 0.167,
@@ -11293,6 +11377,34 @@
       }
     },
     {
+      "a": "q47-suleyman-026",
+      "b": "q66-neml-16",
+      "score": 0.154,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q47-suleyman-026",
+          "question": "Neml 27/16’da Süleyman’a hangi bilginin öğretildiği belirtilir?",
+          "answer": "Kuşların dilini anlama"
+        },
+        {
+          "id": "q66-neml-16",
+          "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+          "answer": "Dâvûd"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q47-suleyman-026",
+        "b": "q66-neml-16",
+        "snapshotSha256": "ebaa26e5be066d3fe0571f1661053f85d7a605e603c2888e6cbc8d3697ac4029",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Kuş dili q47-suleyman-026 ile tekrardı; aynı âyetin ayrı bir yerine geçme ilişkisi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
       "a": "v11-history-009",
       "b": "q59-battuta-dogum",
       "score": 0.143,
@@ -11318,6 +11430,34 @@
         "snapshotSha256": "f794d9d36912fa60d843d934579f1e4ff757c619b2e96e0511cc907714011b7d",
         "verdict": "distinct-context",
         "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Tanca doğumu q59-battuta-dogum ile tekrardı; ilk büyük yolculuğun tarihi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "e150-prophets-012",
+      "b": "v12-prophets-008",
+      "score": 0.133,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-prophets-012",
+          "question": "Yûsuf 12/84'te Ya‘kūb'un üzüntüsünün bedenindeki etkisi nasıl anlatılır?",
+          "answer": "Gözlerinin ağarması"
+        },
+        {
+          "id": "v12-prophets-008",
+          "question": "Kur’an Yolu mealinde Yûsuf 12/86’da Ya‘kūb’un Allah’a arz ettiği iki duygu hangileridir?",
+          "answer": "Acı ve keder"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-012",
+        "b": "v12-prophets-008",
+        "snapshotSha256": "1fed16558c09d9ee68b5a3216608dda4acae30523cda8b5dc78911c62deb55f0",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. 12/84’te gözlerinin ağarması e150-prophets-012 ile tekrardı; ayrı âyetin iki duygu ifadesi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
       }
     },
     {
@@ -11433,90 +11573,6 @@
       }
     },
     {
-      "a": "v10-prophets-002",
-      "b": "q66-kehf-79",
-      "score": 0.111,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v10-prophets-002",
-          "question": "Kehf 18/79'da geminin sahipleri nasıl tanıtılır?",
-          "answer": "Denizde çalışan yoksul kimseler"
-        },
-        {
-          "id": "q66-kehf-79",
-          "question": "Kehf 18/79'da zarar verilen gemi kimlere aitti?",
-          "answer": "Denizde çalışan yoksullara"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "v10-prophets-002",
-        "b": "q66-kehf-79",
-        "snapshotSha256": "d1199548abfb3963dd90e5eb83bf807916f8c2b48d85ac0ead973705ddc0b4f6",
-        "verdict": "repeated-fact",
-        "reason": "18/79’daki gemi sahiplerinin denizde çalışan yoksullar olması aynı hedefle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "v8-prophets-004",
-      "b": "q66-meryem-54",
-      "score": 0.1,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v8-prophets-004",
-          "question": "Meryem sûresi 19/54'te sözünde durmasıyla övülen peygamber kimdir?",
-          "answer": "Hz. İsmâil"
-        },
-        {
-          "id": "q66-meryem-54",
-          "question": "Meryem 19/54'te Hz. İsmâil'in hangi ahlâkî özelliği övülür?",
-          "answer": "Sözünde durması"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "v8-prophets-004",
-        "b": "q66-meryem-54",
-        "snapshotSha256": "9fec66af5d26b0315bdbdaec4d6bff890afc37f86861c5ae55746a7758c77667",
-        "verdict": "repeated-fact",
-        "reason": "Meryem 19/54’te İsmâil/sözünde durma eşleşmesi ters yönde sorulsa da aynı olgudur. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "e150-prophets-012",
-      "b": "v12-prophets-008",
-      "score": 0.083,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "e150-prophets-012",
-          "question": "Yûsuf 12/84'te Ya‘kūb'un üzüntüsünün bedenindeki etkisi nasıl anlatılır?",
-          "answer": "Gözlerinin ağarması"
-        },
-        {
-          "id": "v12-prophets-008",
-          "question": "Yûsuf 12/84’te üzüntü nedeniyle ağardığı anlatılan yer neresidir?",
-          "answer": "Gözleri"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "e150-prophets-012",
-        "b": "v12-prophets-008",
-        "snapshotSha256": "74475822fa5e9347f86c631df3a486490923feece58c3c813199ccf5598d718e",
-        "verdict": "repeated-fact",
-        "reason": "Yûsuf 12/84’te Ya‘kūb’un gözlerinin ağarması aynı bilgiyle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
       "a": "e150-history-018",
       "b": "q64-bedir-sefer",
       "score": 0.077,
@@ -11545,59 +11601,31 @@
       }
     },
     {
-      "a": "q71-idris-siddik",
-      "b": "q66-meryem-56",
+      "a": "q51-suffe-018",
+      "b": "q60-suffe-anlam",
       "score": 0.077,
       "sameAnswer": false,
       "sameConcept": false,
       "signal": "text-overlap",
       "questions": [
         {
-          "id": "q71-idris-siddik",
-          "question": "Meryem 19/56'da İdrîs'in peygamberliği yanında hangi niteliği belirtilir?",
-          "answer": "Çok doğru sözlü olması"
+          "id": "q51-suffe-018",
+          "question": "Suffe sözcüğünün sözlükteki anlamı nedir?",
+          "answer": "Gölgelik"
         },
         {
-          "id": "q66-meryem-56",
-          "question": "Meryem 19/56'da hakkında 'özü sözü doğru bir peygamber' denilen kişi kimdir?",
-          "answer": "İdrîs"
+          "id": "q60-suffe-anlam",
+          "question": "TDV’ye göre hangi hasat ürünü Suffe ehli için mescide asılarak dağıtılırdı?",
+          "answer": "Hurma"
         }
       ],
       "currentLexicalSuggestion": false,
       "decision": {
-        "a": "q71-idris-siddik",
-        "b": "q66-meryem-56",
-        "snapshotSha256": "aba698fed636567f270a64b57f9bc73c77f153f59c859290e06724deb4e5975d",
-        "verdict": "repeated-fact",
-        "reason": "Meryem 19/56’da İdrîs/özü sözü doğruluk eşleşmesi ters yönde tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
-      }
-    },
-    {
-      "a": "v10-prophets-005",
-      "b": "e150-prophets-021",
-      "score": 0.077,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v10-prophets-005",
-          "question": "Neml 27/18'de Hz. Süleyman'ın ordusuna karşı yuvalara girilmesini söyleyen canlı hangisidir?",
-          "answer": "Karınca"
-        },
-        {
-          "id": "e150-prophets-021",
-          "question": "Hz. Süleyman'ın ordusunun geçtiği vadide hangi canlılardan söz edilir?",
-          "answer": "Karıncalar"
-        }
-      ],
-      "currentLexicalSuggestion": false,
-      "decision": {
-        "a": "v10-prophets-005",
-        "b": "e150-prophets-021",
-        "snapshotSha256": "f47431a222c6324b6e927d030238b37955102277c5c50e823880eeee979183df",
-        "verdict": "repeated-fact",
-        "reason": "Neml 27/18’deki karınca/karıncalar aynı canlı hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+        "a": "q51-suffe-018",
+        "b": "q60-suffe-anlam",
+        "snapshotSha256": "83f772af8fb3080e31af89f4ebb2a4404170023597f103d8bf3c8f5fa15cd869",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda iki kök de suffenin gölgelik/sofa anlamını soruyordu. Yeni kök hasat zamanında bağışlanan hurmayı sorar; kelime anlamı ayrı kaldı."
       }
     },
     {
@@ -11713,6 +11741,146 @@
       }
     },
     {
+      "a": "v13-general-012",
+      "b": "q67-ankebut-45",
+      "score": 0.071,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v13-general-012",
+          "question": "Ankebût 29/45’te namazın alıkoyduğu şeyler hangi iki ifadeyle anılır?",
+          "answer": "Hayâsızlık ve kötülük"
+        },
+        {
+          "id": "q67-ankebut-45",
+          "question": "Ankebût 29/45’te namaz öğüdünden sonra önemi özellikle belirtilen davranış hangisidir?",
+          "answer": "Allah’ı anmak"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v13-general-012",
+        "b": "q67-ankebut-45",
+        "snapshotSha256": "51d9994f8d7b8eef35dff8a4d0e1b77fbca3a309085f57efdd82f7858909f114",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Namazın hayâsızlık ve kötülükten alıkoyması v13-general-012 ile tekrardı; âyetin ayrı cümlesi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "v8-prophets-004",
+      "b": "q66-meryem-54",
+      "score": 0.071,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v8-prophets-004",
+          "question": "Meryem sûresi 19/54'te sözünde durmasıyla övülen peygamber kimdir?",
+          "answer": "Hz. İsmâil"
+        },
+        {
+          "id": "q66-meryem-54",
+          "question": "Meryem 19/54’te İsmâil için birlikte kullanılan iki görev unvanı hangileridir?",
+          "answer": "Resûl ve nebî"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v8-prophets-004",
+        "b": "q66-meryem-54",
+        "snapshotSha256": "3892b94d8b2ad01fc025115e7137464a92a2941b8df494da864284d5cd345a6d",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Sözünde durma/İsmâil eşleşmesi v8-prophets-004 ile tekrardı; aynı âyetin ayrı görev unvanları soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "q48-yusuf-034",
+      "b": "q57-yusufzindan",
+      "score": 0.067,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q48-yusuf-034",
+          "question": "Yûsuf kıssasına göre Hz. Yûsuf zindanda kaç gençle rüya yorumu üzerine konuşur?",
+          "answer": "İki"
+        },
+        {
+          "id": "q57-yusufzindan",
+          "question": "Yûsuf 12/73’te kardeşler hangi iki suçlamayı birlikte reddeder?",
+          "answer": "Bozgunculuk ve hırsızlık"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q48-yusuf-034",
+        "b": "q57-yusufzindan",
+        "snapshotSha256": "74c24f1a8472a7015c630639ca5e89c9e09cb9680e3cad71f19f7647689e9f5e",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Zindandaki iki genç q48-yusuf-034 ile tekrardı; kardeşlerin ayrı bir savunması soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "v10-prophets-003",
+      "b": "q66-kehf-82",
+      "score": 0.067,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-003",
+          "question": "Kehf 18/82'de onarılan duvarın altında kimin hazinesi bulunuyordu?",
+          "answer": "İki yetim çocuğun"
+        },
+        {
+          "id": "q66-kehf-82",
+          "question": "Kehf 18/82’de iki yetimin defineyi çıkarması için açıkça anılan aşama hangisidir?",
+          "answer": "Güçlü çağlarına erişmeleri"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-003",
+        "b": "q66-kehf-82",
+        "snapshotSha256": "a0dc5897769db1de457a3b24f6188b9db6edecf3b8896959a01b48cb02fcf1b1",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. İki yetim hazine sahibi v10-prophets-003 ile tekrardı; hazinenin çıkarılma zamanı soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "q47-bedir-001",
+      "b": "q64-bedir-kervan",
+      "score": 0.063,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q47-bedir-001",
+          "question": "Bedir seferinden önce Kureyş kervanını kim yönetiyordu?",
+          "answer": "Ebû Süfyân"
+        },
+        {
+          "id": "q64-bedir-kervan",
+          "question": "TDV’ye göre Bedir Gazvesi’nde Müslümanlardan kaç kişi şehit olmuştur?",
+          "answer": "On dört"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q47-bedir-001",
+        "b": "q64-bedir-kervan",
+        "snapshotSha256": "8d7a282a2573fbe057b64a3913f6729724a54997d89691312d3e9a37b8276383",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Ebû Süfyân’ın kervan görevi q47-bedir-001 ile aynıydı; ayrı bir kayıp sayısı soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
       "a": "v7-history-003",
       "b": "q57-hayberdate",
       "score": 0.059,
@@ -11769,6 +11937,62 @@
       }
     },
     {
+      "a": "q66-meryem-41",
+      "b": "q71-idris-siddik",
+      "score": 0.056,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q66-meryem-41",
+          "question": "Meryem 19/41'de İbrâhim'in peygamberliği yanında hangi niteliği özellikle belirtilir?",
+          "answer": "Özü sözü doğru olması"
+        },
+        {
+          "id": "q71-idris-siddik",
+          "question": "Enbiyâ 21/86’nın Kur’an Yolu mealinde sözü edilen kimselerin ortak niteliği hangi kavramla anlatılır?",
+          "answer": "İyilik"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-meryem-41",
+        "b": "q71-idris-siddik",
+        "snapshotSha256": "8158c41884e2db603b92a6784fb994bee488ab1e44a3fc6b7463b9a60ce6b6cb",
+        "verdict": "distinct-context",
+        "reason": "19/41’de İbrâhim’in doğruluğu ile 21/86’da sözü edilenlerin iyiliği farklı kişi/âyet ve nitelik hedefleridir."
+      }
+    },
+    {
+      "a": "q71-idris-siddik",
+      "b": "q66-meryem-56",
+      "score": 0.053,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q71-idris-siddik",
+          "question": "Enbiyâ 21/86’nın Kur’an Yolu mealinde sözü edilen kimselerin ortak niteliği hangi kavramla anlatılır?",
+          "answer": "İyilik"
+        },
+        {
+          "id": "q66-meryem-56",
+          "question": "Meryem 19/56'da hakkında 'özü sözü doğru bir peygamber' denilen kişi kimdir?",
+          "answer": "İdrîs"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q71-idris-siddik",
+        "b": "q66-meryem-56",
+        "snapshotSha256": "ecbab6d5c3213076ef728d8c93ef520d4a6d184ec96288d209ebe6090ed3d6b1",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. İdrîs/doğruluk eşleşmesi q66-meryem-56 ile tekrardı. Önce denenmiş isim ikilisi q71-idris-sabir ile aynı çıktığı için kabul edilmedi; iki ayrı âyetin nitelik ayrımı soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
       "a": "e150-prophets-030",
       "b": "learn-dua-011",
       "score": 0.05,
@@ -11794,6 +12018,34 @@
         "snapshotSha256": "49eef0ac523d8bf364067b09a87ac3d1dc5042623722aaef2ae952c8f8824f13",
         "verdict": "distinct-context",
         "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 2/127’de kabul duası learn-dua-011 ile tekrardı; sonraki duanın ayrı bir talebi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "e150-history-013",
+      "b": "q60-suffe-adi",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-013",
+          "question": "TDV’ye göre gücü yeten Suffe mensupları geçimlerine katkı için hangi ürünü satardı?",
+          "answer": "Odun"
+        },
+        {
+          "id": "q60-suffe-adi",
+          "question": "Mescid-i Nebevî'de barınarak özellikle Kur'an ve dinî bilgilerle meşgul olan topluluğun özel adı hangisidir?",
+          "answer": "Ehl-i Suffe"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-013",
+        "b": "q60-suffe-adi",
+        "snapshotSha256": "7a4261d49778a6d8976da4af3a49dbdf347fecd104455bac39a3e084d58677b0",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda iki kök de Suffe öğrencilerinin Ashâb-ı Suffe adını soruyordu. Yeni e150 kökü öğrencilerin geçim için sattığı odunu sorar; topluluk adı ayrı kaldı."
       }
     },
     {
@@ -11825,6 +12077,62 @@
       }
     },
     {
+      "a": "e150-history-027",
+      "b": "q69-ebueyyubelensari-akabe",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-027",
+          "question": "İkinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
+          "answer": "622"
+        },
+        {
+          "id": "q69-ebueyyubelensari-akabe",
+          "question": "Ebû Eyyûb el-Ensârî’yi Irak’a giderken Medine’de vekil bırakan halife kimdir?",
+          "answer": "Hz. Ali"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-027",
+        "b": "q69-ebueyyubelensari-akabe",
+        "snapshotSha256": "343fa1ac567d80c9b13495847d7fb2d6fa0b26298849a91636eb7e8e334d64b4",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. İkinci Akabe’nin 622 tarihi e150-history-027 ile tekrardı; ayrı bir yönetim görevi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "e150-prophets-022",
+      "b": "q66-neml-20",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-prophets-022",
+          "question": "Hz. Süleyman hangi kuşu yokladığında göremediğini söyler?",
+          "answer": "Hüdhüd"
+        },
+        {
+          "id": "q66-neml-20",
+          "question": "Neml 27/31’de mektubun alıcılarından hangi tutumla gelmeleri istenir?",
+          "answer": "Teslimiyet göstererek"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-022",
+        "b": "q66-neml-20",
+        "snapshotSha256": "43060dee85cfc79366915ca526164a1560646af17bd3121a70efdfad2f3613e1",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda iki kök de Hüdhüd kuşunu soruyordu. Yeni 27/31 kökü mektuptaki teslimiyetle gelme talebini sorar; haber getiren kuş bilgisi ayrı kaldı."
+      }
+    },
+    {
       "a": "learn-women-005",
       "b": "q58-suleym-anne",
       "score": 0,
@@ -11839,17 +12147,17 @@
         },
         {
           "id": "q58-suleym-anne",
-          "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
-          "answer": "Enes b. Mâlik"
+          "question": "Ümmü Süleym’in oğlu Abdullah’a yapılan, damağa yumuşatılmış hurma sürme işlemi hangisidir?",
+          "answer": "Tahnîk"
         }
       ],
       "currentLexicalSuggestion": false,
       "decision": {
         "a": "learn-women-005",
         "b": "q58-suleym-anne",
-        "snapshotSha256": "38146fec175ec9ef6d333d8596224e4c7fe0f598f4ca31a3e8974f7d82abf451",
-        "verdict": "repeated-fact",
-        "reason": "Ümmü Süleym ile Enes arasındaki anne/oğul eşleşmesi ters yönde tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+        "snapshotSha256": "d70e1e6587d7c9a5df1cfb60b46984c15ffcbee36f4b4389e0f40eb88bf2779c",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Ümmü Süleym/Enes anne-oğul eşleşmesi learn-women-005 ile tekrardı; diğer oğluyla ilgili belgelenmiş uygulama soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
       }
     },
     {
@@ -11906,6 +12214,90 @@
         "snapshotSha256": "ab8f23feda9a4efb02a29248073d76cf2766146b5d481d6ed6e52f7e0b42df81",
         "verdict": "distinct-context",
         "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İki tepenin adı q47-hac-038 ile tekrardı; başlangıç ve bitişin ayrımı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "q60-nebevi-misafir",
+      "b": "v9-history-001",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q60-nebevi-misafir",
+          "question": "Hz. Peygamber Medine'ye gelişinde hangi sahâbînin evine misafir olmuştur?",
+          "answer": "Ebû Eyyûb el-Ensârî"
+        },
+        {
+          "id": "v9-history-001",
+          "question": "Eyüp Sultan adıyla tanınan Ebû Eyyûb el-Ensârî’nin asıl adı hangisidir?",
+          "answer": "Hâlid b. Zeyd"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q60-nebevi-misafir",
+        "b": "v9-history-001",
+        "snapshotSha256": "1b3b8bc36b24050d2e2b8d3e4138862b94a358ee02be2c402448d890788a2aa1",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Hicrette ev sahipliği q60-nebevi-misafir ile tekrardı; sahâbînin asıl adı soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "v10-prophets-005",
+      "b": "e150-prophets-021",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-005",
+          "question": "Neml 27/18’de karınca, ordunun geçişi sırasında hangi tehlikeye karşı uyarır?",
+          "answer": "Ayak altında ezilme"
+        },
+        {
+          "id": "e150-prophets-021",
+          "question": "Hz. Süleyman'ın ordusunun geçtiği vadide hangi canlılardan söz edilir?",
+          "answer": "Karıncalar"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-005",
+        "b": "e150-prophets-021",
+        "snapshotSha256": "a1b55b1c857e08366e25a84b28f54c797c3a928af578abccf932dab9ae6df41d",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Karınca kimliği e150-prophets-021 ile tekrardı; uyarının somut tehlikesi soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
+      }
+    },
+    {
+      "a": "v10-prophets-008",
+      "b": "e150-prophets-023",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-008",
+          "question": "Neml 27/32’de Sebe hükümdarı önemli kararını vermeden önce kimlerin görüşünü ister?",
+          "answer": "İleri gelenlerinin"
+        },
+        {
+          "id": "e150-prophets-023",
+          "question": "Hüdhüd kuşu Hz. Süleyman'a hangi ülkeden haber getirir?",
+          "answer": "Sebe'"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-008",
+        "b": "e150-prophets-023",
+        "snapshotSha256": "597940d140a17691ee03a7cb81ffa53359c0b17ae2d6ee0ddac43beb64d58f5b",
+        "verdict": "distinct-context",
+        "reason": "Önceki aynı-bilgi çifti kaynak karşılaştırmasıyla ayrıldı. Sebe’den haber getirme e150-prophets-023 ile tekrardı; hükümdarın ayrı istişare davranışı soruldu. Güncel iki kök ve anahtarlı cevaplar birlikte yeniden değerlendirildi."
       }
     },
     {

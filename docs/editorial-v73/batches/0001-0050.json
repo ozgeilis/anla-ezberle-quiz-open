@@ -4744,37 +4744,37 @@
         ]
       },
       "after": {
-        "question": "Neml sûresinde Hz. Süleyman'a haber getiren hüdhüd hangi topluluktan söz eder?",
+        "question": "Neml 27/32’de Sebe hükümdarı önemli kararını vermeden önce kimlerin görüşünü ister?",
         "options": [
           {
-            "id": "o1",
-            "text": "Âd kavminden"
+            "id": "o4",
+            "text": "Tapınak görevlilerinin"
           },
           {
             "id": "o2",
-            "text": "Sebe halkından"
+            "text": "İleri gelenlerinin"
+          },
+          {
+            "id": "o1",
+            "text": "Komşu hükümdarların"
           },
           {
             "id": "o3",
-            "text": "Semûd kavminden"
-          },
-          {
-            "id": "o4",
-            "text": "Medyen halkından"
+            "text": "Kervan tüccarlarının"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Sebe halkından",
-        "explanation": "Hüdhüd, Hz. Süleyman'a Sebe halkından kesin bir haber getirdiğini söyler.",
+        "correctAnswer": "İleri gelenlerinin",
+        "explanation": "Neml 27/32’de Sebe hükümdarı ileri gelenlerinden görüşlerini açıklamalarını ister; onlara danışmadan kesin karar vermediğini söyler.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=22&mode=meal",
-            "locator": "Neml 27/22, Kur’an Yolu metni",
-            "supports": "Hüdhüd, Hz. Süleyman'a Sebe halkından kesin bir haber getirdiğini söyler.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "27/32–33; danışma meclisi; PDF fiziksel sayfa 400",
+            "supports": "Neml 27/32’de Sebe hükümdarı ileri gelenlerinden görüşlerini açıklamalarını ister; onlara danışmadan kesin karar vermediğini söyler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4790,35 +4790,33 @@
       ],
       "automaticAfter": [
         {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+          "kind": "domain-mismatch",
+          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
         }
       ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v10-prophets-008",
-        "reviewedCandidateSha256": "a4484a58ae89f5e5fa6b60914a188a70e9a36a29b3b18c6eedd0a627ac60eb08",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört seçenek de Kur’an kıssalarındaki topluluk adlarıdır; halk/kavim farkı tek başına cevap ipucu değildir.",
+        "reviewedCandidateSha256": "f51451f7a792a1cee653d2e6fb3ec7377f107c32d3372f3de01f8efb6f70e249",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört seçenek de Kur’an kıssalarındaki topluluk adlarıdır; halk/kavim farkı tek başına cevap ipucu değildir. Son tekrar karşılaştırması: Sebe’den haber getirme e150-prophets-023 ile tekrardı; hükümdarın ayrı istişare davranışı soruldu.",
         "optionReview": {
-          "o1": "Başka kıssa topluluğudur.",
-          "o2": "Anahtardaki haberin topluluğu; yeni pasaj okuması bekler.",
-          "o3": "Başka kıssa topluluğudur.",
-          "o4": "Başka kıssa topluluğudur."
+          "o4": "İnanç bağlamıyla ilgili makul gruptur; burada böyle bir sınırlama yoktur.",
+          "o2": "Mealde efendiler diye hitap ettiği ileri gelenlerine danışır.",
+          "o1": "Aynı siyasî alandadır; bu sahnenin danışılan topluluğu değildir.",
+          "o3": "Sebe’nin ticaret bağlamıyla ilgili makul gruptur; metinde danışılanlar değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Süleyman/hüdhüd ailesinde haberin kaynağı hedefi başka sorularla denetlenecek.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "27/22; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "locator": "27/32–33; danışma meclisi; PDF fiziksel sayfa 400",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"

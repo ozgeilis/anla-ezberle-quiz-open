@@ -43,10 +43,30 @@ const edits = new Map(
 );
 if (edits.size !== lines.length) throw Error("Repeated edit ID");
 const protectedIds = new Set(approvedNewQuestionsV72.map((q) => q.id));
+// Product-owner permission on 2026-10-30 covers exactly the documented patch
+// in PROTECTED-MEANING-QUESTION-PROPOSAL.md, only in this unpublished candidate.
+const approvedMeaningPatchSha256 =
+  "c838578d533753feb398d9c6f848ad1d505dda6b8f3cbc1bfeeb40dc723c6e1d";
 const candidate = questionsV72.map((q): Question => {
   const edit = edits.get(q.id);
   if (!edit) return q;
-  if (protectedIds.has(q.id)) throw Error("v72 meaning release protected");
+  if (
+    protectedIds.has(q.id) &&
+    (q.id !== "quran-meaning-v72-024" ||
+      q.version !== 72 ||
+      createHash("sha256")
+        .update(
+          JSON.stringify({
+            stem: edit.stem,
+            options: edit.options,
+            explanation: explanations[q.id],
+          }),
+        )
+        .digest("hex") !== approvedMeaningPatchSha256)
+  )
+    throw Error(
+      "v72 meaning release protected; candidate amendment not approved",
+    );
   const proof = sourceById.get(q.id);
   if (!proof || proof.sourceStatus !== "source-compared")
     throw Error(`Source review pending: ${q.id}`);

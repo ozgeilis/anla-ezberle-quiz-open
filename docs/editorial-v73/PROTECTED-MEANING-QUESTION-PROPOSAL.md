@@ -1,12 +1,12 @@
-# Korunan anlam sorusu için karar önerisi — uygulanmadı
+# Korunan anlam sorusu — yalnız v73 adayına onaylanan düzeltme
 
-ID: `quran-meaning-v72-024`. Aktif v72, tarihsel kayıt ve mevcut aday içeriği bu belgeyle değiştirilmez. Bu soru korunan 30 yeni anlam sorusundan biridir. Mevcut üretici ve regresyon testi bu 30 nesneyi değişmeden korur.
+ID: `quran-meaning-v72-024`. Kullanıcı 30.10.2026 tarihinde yalnız yayımlanmamış v73 adayında aşağıdaki önerinin uygulanmasını onayladı. Aktif v72 ve tarihsel kayıtlar değiştirilmedi. Diğer 29 anlam sorusu adayda da nesne içeriğiyle aynıdır.
 
-## Mevcut açık
+## Giderilen açık
 
-Kök, Mü’minûn 23/3’te müminlerin nelerden yüz çevirdiğini soruyor. Anahtar “Boş ve yararsız işlerden”. Yanlışlar “Haksız kazanç arayışından”, “Kırıcı konuşmalardan”, “Gereksiz harcamalardan”. Bunlar geniş yararsız/zararlı davranış kavramının örnekleri olarak da anlaşılabildiğinden tek kesin cevap bakımından alt küme riski var. Kaydın durumu bu nedenle **bloke**.
+Kök, Mü’minûn 23/3’te müminlerin nelerden yüz çevirdiğini soruyor. Anahtar “Boş ve yararsız işlerden”. Yanlışlar “Haksız kazanç arayışından”, “Kırıcı konuşmalardan”, “Gereksiz harcamalardan”. Bunlar geniş yararsız/zararlı davranış kavramının örnekleri olarak da anlaşılabildiğinden tek kesin cevap bakımından alt küme riski var. Bu nedenle önceki adayda bloke olan kayıt, onaylanan düzeltme ve kaynak karşılaştırmasından sonra yeniden düzenlendi olarak kaydedildi. Bağımsız uzman onayı verilmedi.
 
-## Yalnız yayımlanmamış v73 adayı için öneri
+## Yalnız yayımlanmamış v73 adayına uygulanan metin
 
 **Kök:** Mü’minûn 23/3’te öne çıkan duyarlılık aşağıdaki konulardan hangisidir?
 
@@ -29,6 +29,6 @@ Dört seçenek de olumlu ve ahlâkla ilgilidir; doğru cevap tek olumlu seçenek
 
 ## Uygulama sınırı
 
-Bu öneri kabul edilirse v72 dosyası ve eski `(id, version=72)` kaydı değişmeden kalır. Yalnız v73 adayında aynı ID için `version=73` içerik oluşturulur; seçenek ID’leri ve `correctOptionId=o2` korunur. Diğer 29 anlam sorusu nesne içeriğiyle aynen kalır. Üreticideki koruma yalnız bu açıkça belgelenmiş istisnayı ve yeni sürümü kabul edecek şekilde daraltılır; eski 30 anlam sorusunun tamamı v72’de korunmaya devam eder.
+Kullanıcının onayı yalnız bu aday düzeltmesine aittir. V72 dosyası ve eski `(id, version=72)` kaydı değişmeden kalır. Yalnız v73 adayında aynı ID için `version=73` içerik oluşturulur; seçenek ID’leri ve `correctOptionId=o2` korunur. Diğer 29 anlam sorusu nesne içeriğiyle aynen kalır. Üreticideki koruma yalnız bu açıkça belgelenmiş istisnayı ve yeni sürümü kabul edecek şekilde daraltılır; eski 30 anlam sorusunun tamamı v72’de korunmaya devam eder.
 
-Bu belge tek başına uygulama izni, main birleştirmesi, v73 etkinleştirmesi, Vercel Production veya canlı Supabase değişikliği izni değildir.
+Onaylanan kök, dört seçenek ve açıklama SHA-256 `c838578d533753feb398d9c6f848ad1d505dda6b8f3cbc1bfeeb40dc723c6e1d` ile sabitlendi. Üretici bu metin dışındaki değişikliği veya diğer korunan ID’lerin düzenlenmesini reddeder. Bu aday düzeltmesi onayı; bağımsız uzman onayı, main birleştirmesi, v73 etkinleştirmesi, Vercel Production veya canlı Supabase değişikliği izni değildir.

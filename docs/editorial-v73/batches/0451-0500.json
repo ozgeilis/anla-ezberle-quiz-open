@@ -1353,37 +1353,37 @@
         ]
       },
       "after": {
-        "question": "Hicret sırasında Hz. Peygamber'i Medine'deki evinde ağırlayan sahâbî kimdir?",
+        "question": "Eyüp Sultan adıyla tanınan Ebû Eyyûb el-Ensârî’nin asıl adı hangisidir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Ebû Zer el-Gıfârî"
-          },
-          {
-            "id": "o2",
-            "text": "Ebû Eyyûb el-Ensârî"
-          },
-          {
-            "id": "o3",
-            "text": "Abdurrahman b. Avf"
-          },
           {
             "id": "o4",
             "text": "Zeyd b. Hârise"
+          },
+          {
+            "id": "o2",
+            "text": "Hâlid b. Zeyd"
+          },
+          {
+            "id": "o1",
+            "text": "Abdullah b. Zeyd"
+          },
+          {
+            "id": "o3",
+            "text": "Zeyd b. Sâbit"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Ebû Eyyûb el-Ensârî",
-        "explanation": "Hz. Peygamber Medine'ye ulaştığında Ebû Eyyûb el-Ensârî'nin evinde bir süre misafir kaldı.",
+        "correctAnswer": "Hâlid b. Zeyd",
+        "explanation": "TDV biyografisi Ebû Eyyûb el-Ensârî’yi Hâlid b. Zeyd b. Küleyb adıyla tanıtır. Ebû Eyyûb onun künyesidir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-            "locator": "Medine'ye hicret, evinde misafir kalması",
-            "supports": "Hz. Peygamber Medine'ye ulaştığında Ebû Eyyûb el-Ensârî'nin evinde bir süre misafir kaldı.",
+            "locator": "69. satır; tam isim ve künye",
+            "supports": "TDV biyografisi Ebû Eyyûb el-Ensârî’yi Hâlid b. Zeyd b. Küleyb adıyla tanıtır. Ebû Eyyûb onun künyesidir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1392,27 +1392,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v9-history-001",
-        "reviewedCandidateSha256": "f5eb3685fcd7ebc1be5695677904e679094bf356a09b561b80df3fe05bac5a2d",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört sahâbî adı; hicret ev sahipliği farklı rollerdeki isimlerden seçiliyor.",
+        "reviewedCandidateSha256": "cb2af24f69af6a1e341833b26e5f47755c1cfc8399a7925e5b4570dbd921bbb8",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört sahâbî adı; hicret ev sahipliği farklı rollerdeki isimlerden seçiliyor. Son tekrar karşılaştırması: Hicrette ev sahipliği q60-nebevi-misafir ile tekrardı; sahâbînin asıl adı soruldu.",
         "optionReview": {
-          "o1": "Başka sahâbî.",
-          "o2": "Medine’deki ev sahibi.",
-          "o3": "Başka sahâbî.",
-          "o4": "Başka sahâbî."
+          "o4": "Benzer isimli farklı bir sahâbîdir.",
+          "o2": "TDV başlık künyesinde Hâlid b. Zeyd b. Küleyb olarak tanıtılır.",
+          "o1": "Benzer isimli farklı bir sahâbîdir.",
+          "o3": "Gerçek bir vahiy kâtibidir; Ebû Eyyûb’un asıl adı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-          "locator": "Hz. Peygamber’i Medine’de misafir etmesi; madde tanımı",
+          "locator": "69. satır; tam isim ve künye",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+          "sourceSha256": "6b3ae3aa16036d6600acb58c8891955aff4dbdcefac1adefb3ad141954481d71"
         }
       },
       "independentExpertApproval": false,
@@ -4782,37 +4784,37 @@
         ]
       },
       "after": {
-        "question": "Neml 27/18'de Hz. Süleyman'ın ordusuna karşı yuvalara girilmesini söyleyen canlı hangisidir?",
+        "question": "Neml 27/18’de karınca, ordunun geçişi sırasında hangi tehlikeye karşı uyarır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hüdhüd"
-          },
-          {
-            "id": "o2",
-            "text": "Karınca"
-          },
-          {
             "id": "o3",
-            "text": "Arı"
+            "text": "Kuşlarca yakalanma"
           },
           {
             "id": "o4",
-            "text": "Kelebek"
+            "text": "Ateşte yanma"
+          },
+          {
+            "id": "o2",
+            "text": "Ayak altında ezilme"
+          },
+          {
+            "id": "o1",
+            "text": "Su altında boğulma"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Karınca",
-        "explanation": "Neml sûresinde bir karınca diğer karıncalara, Süleyman'ın ordusu fark etmeden kendilerini ezmesin diye yuvalarına girmelerini söyler.",
+        "correctAnswer": "Ayak altında ezilme",
+        "explanation": "Neml 27/18’de karınca, Süleyman ve ordusunun farkında olmadan kendilerini ezmemesi için diğer karıncaları yuvalarına çağırır.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=18&mode=meal",
-            "locator": "Neml 27/18, Kur’an Yolu metni",
-            "supports": "Neml sûresinde bir karınca diğer karıncalara, Süleyman'ın ordusu fark etmeden kendilerini ezmesin diye yuvalarına girmelerini söyler.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "27/18; karıncanın uyarısı; PDF fiziksel sayfa 399",
+            "supports": "Neml 27/18’de karınca, Süleyman ve ordusunun farkında olmadan kendilerini ezmemesi için diğer karıncaları yuvalarına çağırır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4821,26 +4823,28 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v10-prophets-005",
-        "reviewedCandidateSha256": "cb5b762112a3ffb2d4d3843df425a9fa0ea881f6bffd3ba801d72ba398847c15",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört canlı; karıncanın kendi türüne seslenişi 27/18’de açık. Hüdhüd kıssadaki başka kuştur.",
+        "reviewedCandidateSha256": "7a4a5a2bb045a369bc30cfaf52c6bd5171c4f2807db71f40c2a6e4ae14084aff",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört canlı; karıncanın kendi türüne seslenişi 27/18’de açık. Hüdhüd kıssadaki başka kuştur. Son tekrar karşılaştırması: Karınca kimliği e150-prophets-021 ile tekrardı; uyarının somut tehlikesi soruldu.",
         "optionReview": {
-          "o1": "Başka sahnenin kuşu.",
-          "o2": "27/18’de konuşan.",
-          "o3": "Başka böcek.",
-          "o4": "Başka böcek."
+          "o3": "Kuşlar kıssada vardır; karıncanın bu uyarısı kuşların saldırısı hakkında değildir.",
+          "o4": "Gerçek bir tehlikedir; bu sahnede belirtilen değildir.",
+          "o2": "Karınca ordunun farkında olmadan onları ezmemesi için yuvaya girmelerini söyler.",
+          "o1": "Bir canlı için gerçek bir tehlikedir; bu âyetteki uyarı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "27/18; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "locator": "27/18; karıncanın uyarısı; PDF fiziksel sayfa 399",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

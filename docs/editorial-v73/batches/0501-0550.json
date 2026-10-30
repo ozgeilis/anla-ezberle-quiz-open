@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 4,
-  "flaggedAfter": 4,
+  "flaggedAfter": 3,
   "records": [
     {
       "sequence": 501,
@@ -4216,37 +4216,37 @@
         ]
       },
       "after": {
-        "question": "Hz. Yûsuf hükümdarın rüyasını yorumlamadan önce hangi yerde bulunuyordu?",
+        "question": "Yûsuf 12/41’de rüyası yorumlanan gençlerden kurtulacak olanın hangi görevi yapacağı söylenir?",
         "options": [
           {
             "id": "o4",
-            "text": "Şehir kapısında"
+            "text": "Depolardaki tahılı ölçmek"
           },
           {
             "id": "o2",
-            "text": "Hapishanede"
+            "text": "Efendisine içki sunmak"
           },
           {
             "id": "o1",
-            "text": "Hükümdarın sarayında"
+            "text": "Fırında ekmek pişirmek"
           },
           {
             "id": "o3",
-            "text": "Bir tüccarın evinde"
+            "text": "Saray kapısını beklemek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hapishanede",
-        "explanation": "Hz. Yûsuf, zindanda bulunduğu sırada rüya yorumlarıyla tanınmış ve hükümdarın rüyası hakkında da görüş bildirmiştir.",
+        "correctAnswer": "Efendisine içki sunmak",
+        "explanation": "Yûsuf 12/41’de iki rüyadan birinin yorumu, gencin efendisine şarap sunacağıdır. Diğer genç hakkında farklı bir sonuç anlatılır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Yûsuf 12/36 ve 12/43–46; PDF sayfa 250–252",
-            "supports": "Hz. Yûsuf, zindanda bulunduğu sırada rüya yorumlarıyla tanınmış ve hükümdarın rüyası hakkında da görüş bildirmiştir.",
+            "locator": "12/41; iki gencin rüyalarının yorumları; PDF fiziksel sayfa 251",
+            "supports": "Yûsuf 12/41’de iki rüyadan birinin yorumu, gencin efendisine şarap sunacağıdır. Diğer genç hakkında farklı bir sonuç anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4256,37 +4256,33 @@
           "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "domain-mismatch",
-          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v11-prophets-003",
-        "reviewedCandidateSha256": "353a59f401233f3eebed9951cf01a125fb5594f6a72dec2c8a7a37e547d40881",
+        "reviewedCandidateSha256": "c9c0edddd001f8b933247a5d3833253de14b7db2731d3ff4faade58164e78668",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Medrese anakronizmi ve gemi yerine kıssanın dönemine uygun dört şehir içi konum kullanıldı.",
+        "reason": "Medrese anakronizmi ve gemi yerine kıssanın dönemine uygun dört şehir içi konum kullanıldı. Son tekrar karşılaştırması: Zindan/hapishane bilgisi e150-prophets-008 ile tekrardı; aynı kıssada farklı bir görev sonucu soruldu.",
         "optionReview": {
-          "o4": "Başka şehir konumu.",
-          "o2": "Elçi zindana gelip rüyayı sorar.",
-          "o1": "Hükümdarın bulunduğu yer; Yusuf henüz oraya çıkmamıştır.",
-          "o3": "Önceki hayat safhasıyla karışabilir."
+          "o4": "Kıssanın tahıl bağlamıyla ilgili görevdir; bu genç için söylenen değildir.",
+          "o2": "Âyette efendisine şarap sunacağı belirtilir; bu bir tarihî anlatım sorusudur.",
+          "o1": "Rüya kıssasıyla ilgili bir saray mesleğidir; kurtulacak kişi için verilen yorum değildir.",
+          "o3": "Makul bir saray görevidir; bu âyetin yorumu değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek kaynakta sorulan belirli olay/ifade bakımından ayrı ayrı değerlendirildi. Metnin açıklamadığı ayrıntıların kesinliği ileri sürülmedi; genel uzman/yayın kabulü verilmedi.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Yakın terim/olay hedefi önceki paketlerde de görüldü. Tüm banka çapındaki conceptGroup ve tekrar dengesi son editoryal turda incelenecek; ID/sayı azaltımı yapılmadı.",
+        "duplicateReview": "İncelenen aynı-bilgi çifti ayrı hedefle yeniden yazıldı; yeni kök mevcut aynı konu sorularıyla ayrıca karşılaştırıldı. Bütün semantik benzerliklerin yokluğu iddia edilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "Yûsuf 12/36 ve 12/43–46; PDF sayfa 250–252",
+          "locator": "12/41; iki gencin rüyalarının yorumları; PDF fiziksel sayfa 251",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -5030,7 +5026,7 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "19/9; PDF fiziksel sayfa 321",
+            "locator": "19/9; PDF fiziksel sayfa 320",
             "supports": "Meryem 19/9’da Allah, daha önce Zekeriyyâ’yı kendisi hiçbir şey değilken yarattığını hatırlatır. Soruda genel yaratılış örnekleri değil bu hitapta seçilen örnek aranır.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
@@ -5042,7 +5038,7 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v11-prophets-011",
-        "reviewedCandidateSha256": "543624811f41d517ff9d74a6b96c4acec48a05b5b806ccc64fbedbf05d8b0ca2",
+        "reviewedCandidateSha256": "1fccffb16bcf91cb3cbe2b38792a0d0ecb9fa7bdb7054a2d50b2eeef47d2c488",
         "disposition": "revised",
         "defects": [
           "repeated-fact"
@@ -5061,7 +5057,7 @@
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "19/9; PDF fiziksel sayfa 321",
+          "locator": "19/9; PDF fiziksel sayfa 320",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
