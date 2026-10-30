@@ -17,6 +17,40 @@ import {
 import { consentDecision } from "../src/features/ads/consent";
 import type { AdsConsentInterface } from "react-native-google-mobile-ads";
 import { createRequire } from "node:module";
+import { createAdInitializer } from "../src/features/ads/initialization";
+
+test("GMA initializes before native mute, shares concurrent starts and retries failures", async () => {
+  const calls: string[] = [];
+  let initialized = false,
+    fail = true;
+  const initialize = createAdInitializer({
+    configure: async () => {
+      calls.push("configure");
+    },
+    initialize: async () => {
+      calls.push("initialize");
+      if (fail) throw Error("unavailable");
+      await Promise.resolve();
+      initialized = true;
+    },
+    mute: () => {
+      assert.ok(initialized, "Native GMA rejects mute before initialize");
+      calls.push("mute");
+    },
+  });
+  await assert.rejects(initialize(), /unavailable/);
+  assert.deepEqual(calls, ["configure", "initialize"]);
+  fail = false;
+  await Promise.all([initialize(), initialize()]);
+  await initialize();
+  assert.deepEqual(calls, [
+    "configure",
+    "initialize",
+    "configure",
+    "initialize",
+    "mute",
+  ]);
+});
 
 test("prebuild retains the reflectively created WorkDatabase constructor without disabling R8", () => {
   const require = createRequire(import.meta.url);
@@ -63,6 +97,40 @@ test("revenue cannot be enabled by public or production environment flags", () =
         ADMOB_ANDROID_APP_ID: "ca-app-pub-3940256099942544/6300978111",
       }),
     /App ID/,
+  );
+});
+
+test("UMP geography override requires an explicit test development configuration", () => {
+  for (const profile of ["production", "preview", "development", "ads-preview"])
+    assert.equal(
+      resolveAdBuild({
+        EAS_BUILD_PROFILE: profile,
+        ADS_MODE: "test",
+        ADS_TEST_BUILD: "1",
+        ADS_TEST_UMP_EEA: "1",
+      }).consentDebugGeography,
+      null,
+    );
+  assert.equal(
+    resolveAdBuild({
+      ADS_MODE: "test",
+      ADS_TEST_BUILD: "1",
+      ADS_TEST_UMP_EEA: "1",
+    }).consentDebugGeography,
+    "EEA",
+  );
+  assert.equal(
+    resolveAdBuild({ EAS_BUILD_PROFILE: "ads-development", ADS_MODE: "test" })
+      .consentDebugGeography,
+    null,
+  );
+  assert.equal(
+    resolveAdBuild({ ADS_TEST_UMP_EEA: "1" }).consentDebugGeography,
+    null,
+  );
+  assert.match(
+    readFileSync(absolute("src/features/ads/adConfig.ts"), "utf8"),
+    /consentDebugEea: __DEV__ &&/,
   );
 });
 const eligible = () => ({

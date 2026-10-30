@@ -11,4 +11,5 @@ export const adConfig = {
     typeof build?.androidAppId === "string" &&
     /^ca-app-pub-\d{16}~\d{10}$/.test(build.androidAppId),
   mode: "test" as const,
+  consentDebugEea: __DEV__ && build?.consentDebugGeography === "EEA",
 };

@@ -2,13 +2,31 @@ import React from "react";
 import type { AdsRuntime, BannerProps } from "./runtime.types";
 import { consentDecision } from "./consent";
 import { createInterstitial } from "./interstitial";
+import { createAdInitializer } from "./initialization";
+import { adConfig } from "./adConfig";
 
 export async function loadAdsRuntime(): Promise<AdsRuntime> {
   // An older installed development client must fail safely, rather than crash
   // at module import while opening a non-ad screen.
   const sdk = await import("react-native-google-mobile-ads");
   const requestOptions = { requestNonPersonalizedAdsOnly: true };
-  let initialization: Promise<unknown> | undefined;
+  const initialize = createAdInitializer({
+    configure: () =>
+      sdk.default().setRequestConfiguration({
+        maxAdContentRating: sdk.MaxAdContentRating.G,
+        tagForChildDirectedTreatment: false,
+        tagForUnderAgeOfConsent: false,
+        testDeviceIdentifiers: ["EMULATOR"],
+      }),
+    initialize: () => sdk.default().initialize(),
+    mute: () => sdk.default().setAppMuted(true),
+  });
+  const consentOptions = {
+    tagForUnderAgeOfConsent: false,
+    ...(adConfig.consentDebugEea
+      ? { debugGeography: sdk.AdsConsentDebugGeography.EEA }
+      : {}),
+  };
   function Banner({ width, onLoaded, onFailed }: BannerProps) {
     return (
       <sdk.BannerAd
@@ -23,37 +41,17 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
   }
   return {
     async consent(interactive) {
-      await sdk.AdsConsent.requestInfoUpdate({
-        tagForUnderAgeOfConsent: false,
-      });
+      await sdk.AdsConsent.requestInfoUpdate(consentOptions);
       if (interactive) await sdk.AdsConsent.loadAndShowConsentFormIfRequired();
       return consentDecision(sdk.AdsConsent);
     },
     async privacyOptions() {
-      const info = await sdk.AdsConsent.requestInfoUpdate();
+      const info = await sdk.AdsConsent.requestInfoUpdate(consentOptions);
       if (info.privacyOptionsRequirementStatus === "REQUIRED")
         await sdk.AdsConsent.showPrivacyOptionsForm();
       return consentDecision(sdk.AdsConsent);
     },
-    async initialize() {
-      if (!initialization)
-        initialization = (async () => {
-          await sdk.default().setRequestConfiguration({
-            maxAdContentRating: sdk.MaxAdContentRating.G,
-            tagForChildDirectedTreatment: false,
-            tagForUnderAgeOfConsent: false,
-            testDeviceIdentifiers: ["EMULATOR"],
-          });
-          await sdk.default().setAppMuted(true);
-          return sdk.default().initialize();
-        })();
-      try {
-        await initialization;
-      } catch (error) {
-        initialization = undefined;
-        throw error;
-      }
-    },
+    initialize,
     interstitial(onReady) {
       const ad = sdk.InterstitialAd.createForAdRequest(
         sdk.TestIds.INTERSTITIAL,

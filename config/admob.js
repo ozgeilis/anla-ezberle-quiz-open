@@ -20,6 +20,13 @@ function resolveAdBuild(env) {
     realAdsEnabled: false,
     androidAppId: mode === "test" && appId ? appId : googleSampleApps.android,
     iosAppId: googleSampleApps.ios,
+    // QA only: never override real users' geography or EAS preview/production.
+    consentDebugGeography:
+      mode === "test" &&
+      (!profile || profile === "ads-development") &&
+      env.ADS_TEST_UMP_EEA === "1"
+        ? "EEA"
+        : null,
   };
 }
 

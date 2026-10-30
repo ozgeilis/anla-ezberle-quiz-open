@@ -7,4 +7,5 @@ export function resolveAdBuild(env: Record<string, string | undefined>): {
   realAdsEnabled: false;
   androidAppId: string;
   iosAppId: string;
+  consentDebugGeography: "EEA" | null;
 };
