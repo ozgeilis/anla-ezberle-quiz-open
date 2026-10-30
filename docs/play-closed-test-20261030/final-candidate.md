@@ -11,8 +11,14 @@ Ayrı dal: `release/play-final-candidate-20261030`. PR #18 kaynakları ile main 
 
 ## Console denetimi
 
-Mevcut uygulama/paket doğrulandı; taslak, kişisel hesap, 0 tester, 12 tester/14 kesintisiz gün gerekli, üretim başvurusu kapalı. Gizlilik URL'si, Soru Cevap kategorisi, iş destek e-postası ve mevcut web adresi taslağa kaydedildi. İncelemeye gönderilmedi. [Kontrol listesi](../../store/google-play/tr-TR/console-checklist.md) güncellendi. Fiyat/yaş grupları kullanıcı kararını bekliyor. Merchant hesap açılmadı.
+Mevcut uygulama/paket doğrulandı; taslak, kişisel hesap, 0 tester, 12 tester/14 kesintisiz gün gerekli, üretim başvurusu kapalı. Gizlilik URL'si, Soru Cevap kategorisi, iş destek e-postası ve mevcut web adresi taslağa kaydedildi. İncelemeye gönderilmedi. [Kontrol listesi](../../store/google-play/tr-TR/console-checklist.md) güncellendi. Ürün sahibi ücretsiz dağıtım ve 13+ hedef kitleyi bu turda onayladı; Console kaydı ayrıca doğrulanacak. Merchant hesap açılmadı.
 
 ## Açık kabul işleri
 
-Aynı EAS imzalı son APK'nın Samsung A04/Android 14 kabulü, gerçek Android OAuth ve ilgili kalan native senaryolar; incelemeci erişimi; Data Safety ve IARC/yaş/reklam beyanları; kesin ücretsiz dağıtım kararı; tester/ülke/track; kabul edilmiş SHA için AAB onayı; imzalı AAB/16 KB denetimi; Play yükleme/inceleme ve gerçek kapalı test. Bunların hiçbiri tamamlanmış gösterilmez.
+Aynı EAS imzalı son APK'nın Samsung A04/Android 14 kabulü, gerçek Android OAuth ve ilgili kalan native senaryolar; incelemeci erişimi; Data Safety ve IARC/yaş/reklam beyanları; ücretsiz fiyatlandırmanın Console kaydı; tester/ülke/track; kabul edilmiş SHA için AAB onayı; imzalı AAB/16 KB denetimi; Play yükleme/inceleme ve gerçek kapalı test. Bunların hiçbiri tamamlanmış gösterilmez.
+
+## EAS kabul derlemesi
+
+Kaynak: `7db5e96ac51119259015f86c0d0e95e71207fdef`. `ads-preview`, mevcut uzak Android keystore ile `--freeze-credentials --non-interactive --no-wait`. [Build d33a229f-cd8a-47a2-9a77-ce0bcf9d51dc](https://expo.dev/accounts/ozgeilis/projects/anla-ezberle-quiz/builds/d33a229f-cd8a-47a2-9a77-ce0bcf9d51dc). **FINISHED**. [Binary kanıtı](final-apk-evidence.json): paket aynı, API min24/target36/compile37, sürüm0.1.0/code1, önceki EAS APK sertifikasıyla birebir aynı imza; ZIP ve 52 ELF64 16 KB statik denetimi PASS. SHA-256 `00c4abeae9c913f8b65c5319851615ffc1694ffd5136caaf0a4896cba6451ac6`. Fiziksel test henüz yok; bu yeni EAS APK ayrıca emülatörde oynanmış olarak raporlanmaz. Önceki #18 runtime emülatör kanıtları ayrıdır. `pnpm export:web` da PASS.
+
+Mağaza metni, ikon, tanıtım görseli ve altı gerçek oyun ekranı Console'a **taslak** kaydedildi. Varsayılan yükleme sırası profil/rozet/sonuç/quiz/ana sayfa/kategoriler; son yayımlama öncesi ana sayfa ilk olacak şekilde sıra ayrıca düzenlenmeli. Ücretsiz fiyatlandırma kaydı doğrulandı (öncesinde yanlışlıkla Ücretli seçiliydi). Resmî kurum uygulaması: Hayır kaydedildi. Hedef kitle formu Reklamlar ve Uygulama Erişimi önkoşulları nedeniyle henüz açılamadı; 13+ kararı dosyada korundu. Hiçbir beyan incelemeye gönderilmedi.

@@ -2,31 +2,31 @@
 
 30.10.2026: mevcut Play Console uygulaması gerçek tarayıcı üzerinden doğrulandı. Uygulama taslak, kişisel geliştirici hesabında; henüz incelemeye gönderilmedi. Gizlilik URL'si, Oyun → Soru Cevap kategorisi ve aşağıdaki iş iletişimi taslağa kaydedildi (panel 2/13 görev). Diğer satırlar açıkça belirtilmedikçe hazırlık taslağıdır. Özel Console ekran görüntüleri Git dışında saklanır.
 
-| Alan | Hazırlık / gereken karar |
-|---|---|
-| Uygulama adı | `Anla & Ezberle: İslami Quiz` (27 karakter) |
-| Varsayılan dil | Türkçe (tr-TR) |
-| Tür | Oyun → Soru Cevap; Console taslağında kaydedildi. Etiket seçilmedi |
-| Ücret | Ücretsiz taslağı; ücretli ürün/abonelik/ödeme SDK'sı bulunmadı. Geri alınamaz fiyatlandırma kararını hesap sahibi verir |
-| Kalıcı paket | `com.kovynelstudio.anlaezberle`, önceden onaylı; mevcut uygulama panelinde aynı paket görüntülendi |
-| Hedef kitle | Son açıklama: yetişkinlere yönelik; çocuk odaklı değil. Okuyabilen çocukların oynayabilmesi ayrı bir hedef yaş seçimi değildir. Gerçek tasarım/görsellerle uyumlu yaş grupları formu hesap sahibiyle kesinleştirilmeli; otomatik 13-altı veya yetişkin kısıtı işaretlenmedi |
-| İçerik derecesi | IARC anketi henüz doldurulmadı; tahmini yaş derecesi yazılmadı. Çevrimiçi kullanıcı etkileşimi ve kişisel profil alanları saklanmamalı |
-| Reklam | AdMob test dalında native SDK ve test reklamları ekleniyor. Reklam sunan nihai binary için “Evet”; eski reklamsız APK beyanı bu adaya taşınmaz. Console’a henüz kaydedilmedi |
-| Uygulama erişimi | Solo misafir erişimi var; sosyal/oda/sıralama için doğrulanmış yetkili hesap gerekir. İncelemeci erişimi aşağıda |
-| Data Safety | `data-safety-draft.md` doldurma kaynağıdır; “veri toplanmıyor” seçilmez. Kesin veri türü/amaç/opsiyonellik/sağlayıcı rolleri ve saklama eksikleri hesap sahibiyle doğrulanmalı |
-| Gizlilik | https://anla-ezberle-quiz.vercel.app/privacy — PR #19 ile ayrı onayla Production'da yayımlandı, herkese açık metin doğrulandı; Console taslağına kaydedildi |
-| Dış hesap silme | https://anla-ezberle-quiz.vercel.app/account-delete — gerçek güvenli akış; giriş/yeniden doğrulama gerekir |
-| İletişim | `kovynelstudio@gmail.com` ve mevcut web adresi Console taslağına kaydedildi; telefon eklenmedi |
-| İkon | `store/google-play/icon-512.png`, 512×512, 32-bit PNG; uygulama ikonunun RGB pikselleri aynı |
-| Tanıtım | `feature-graphic-1024x500.png`, 1024×500, 24-bit PNG/alfa yok; ayrı tanıtım kompozisyonu |
-| Telefon görüntüleri | `phone-screenshots/` içindeki altı gerçek Android 16 emülatör yakalaması; 1080×1920, 24-bit PNG/alfa yok. Paket dizini `telefon-ekranlari/`. Yer tutucu veya fiziksel Samsung kabulü değildir |
-| Ülkeler | Henüz seçilmedi. Türkçe ve ilgili içerik için hedef ülkeler kararı gerekli |
-| Tester grubu | Henüz oluşmadı; tester e-posta listeleri Git'e eklenmez |
-| Play App Signing | Console'da kurulmadı. Preview sertifikası mağaza imza onayı değildir; upload anahtarı hesabın güvenli saklama düzeniyle kesinleşmeli |
-| Sürüm | Preview 0.1.0/code1. Store AAB onay sonrası remote autoIncrement ve benzersiz artan versionCode ile üretilip ayrıca denetlenmeli |
-| Kapalı test/opt-in | Henüz track, davet/katılım URL'si veya indirilebilir Play sürümü yok; EAS bağlantısı Play opt-in değildir |
-| 12 tester/14 gün | Mevcut kişisel hesap panelinde 12 kişinin kesintisiz 14 gün koşulu açıkça doğrulandı. 0 kayıtlı tester; Üretime Başvur devre dışı. Sayaç başlamadı |
-| Pre-launch report | AAB yüklemesi olmadığından rapor yok. Crash/ANR, erişilebilirlik, performans ve uyumluluk sonuçları üretilince ayrıca incelenmeli |
+| Alan                | Hazırlık / gereken karar                                                                                                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Uygulama adı        | `Anla & Ezberle: İslami Quiz` (27 karakter)                                                                                                                                                                              |
+| Varsayılan dil      | Türkçe (tr-TR)                                                                                                                                                                                                           |
+| Tür                 | Oyun → Soru Cevap; Console taslağında kaydedildi. Etiket seçilmedi                                                                                                                                                       |
+| Ücret               | Ürün sahibi 30.10.2026 bu turda ücretsiz dağıtımı açıkça onayladı. Console'da Ücretsiz kaydedildi ve doğrulandı; merchant hesap açılmadı                                                                                 |
+| Kalıcı paket        | `com.kovynelstudio.anlaezberle`, önceden onaylı; mevcut uygulama panelinde aynı paket görüntülendi                                                                                                                       |
+| Hedef kitle         | Ürün sahibi 30.10.2026 bu turda 13 yaş ve üzeri hedefini seçti. Form Reklamlar/Uygulama Erişimi önkoşullarını bekliyor; 13–15, 16–17, 18+ seçimi henüz kaydedilmedi; IARC ayrı. 13-altı hedefi varsayılmadı              |
+| İçerik derecesi     | IARC anketi henüz doldurulmadı; tahmini yaş derecesi yazılmadı. Çevrimiçi kullanıcı etkileşimi ve kişisel profil alanları saklanmamalı                                                                                   |
+| Reklam              | AdMob test dalında native SDK ve test reklamları ekleniyor. Reklam sunan nihai binary için “Evet”; eski reklamsız APK beyanı bu adaya taşınmaz. Console’a henüz kaydedilmedi                                             |
+| Uygulama erişimi    | Solo misafir erişimi var; sosyal/oda/sıralama için doğrulanmış yetkili hesap gerekir. İncelemeci erişimi aşağıda                                                                                                         |
+| Data Safety         | `data-safety-draft.md` doldurma kaynağıdır; “veri toplanmıyor” seçilmez. Kesin veri türü/amaç/opsiyonellik/sağlayıcı rolleri ve saklama eksikleri hesap sahibiyle doğrulanmalı                                           |
+| Gizlilik            | https://anla-ezberle-quiz.vercel.app/privacy — PR #19 ile ayrı onayla Production'da yayımlandı, herkese açık metin doğrulandı; Console taslağına kaydedildi                                                              |
+| Dış hesap silme     | https://anla-ezberle-quiz.vercel.app/account-delete — gerçek güvenli akış; giriş/yeniden doğrulama gerekir                                                                                                               |
+| İletişim            | `kovynelstudio@gmail.com` ve mevcut web adresi Console taslağına kaydedildi; telefon eklenmedi                                                                                                                           |
+| İkon                | `store/google-play/icon-512.png`, 512×512, 32-bit PNG; Console taslağına eklendi; uygulama ikonunun RGB pikselleri aynı                                                                                                  |
+| Tanıtım             | `feature-graphic-1024x500.png`, 1024×500, 24-bit PNG/alfa yok; ayrı tanıtım kompozisyonu; Console taslağına eklendi                                                                                                      |
+| Telefon görüntüleri | `phone-screenshots/` içindeki altı gerçek Android 16 emülatör yakalaması; 1080×1920, 24-bit PNG/alfa yok. Paket dizini `telefon-ekranlari/`. Console taslağına eklendi. Yer tutucu veya fiziksel Samsung kabulü değildir |
+| Ülkeler             | Henüz seçilmedi. Türkçe ve ilgili içerik için hedef ülkeler kararı gerekli                                                                                                                                               |
+| Tester grubu        | Henüz oluşmadı; tester e-posta listeleri Git'e eklenmez                                                                                                                                                                  |
+| Play App Signing    | Console'da kurulmadı. Preview sertifikası mağaza imza onayı değildir; upload anahtarı hesabın güvenli saklama düzeniyle kesinleşmeli                                                                                     |
+| Sürüm               | Preview 0.1.0/code1. Store AAB onay sonrası remote autoIncrement ve benzersiz artan versionCode ile üretilip ayrıca denetlenmeli                                                                                         |
+| Kapalı test/opt-in  | Henüz track, davet/katılım URL'si veya indirilebilir Play sürümü yok; EAS bağlantısı Play opt-in değildir                                                                                                                |
+| 12 tester/14 gün    | Mevcut kişisel hesap panelinde 12 kişinin kesintisiz 14 gün koşulu açıkça doğrulandı. 0 kayıtlı tester; Üretime Başvur devre dışı. Sayaç başlamadı                                                                       |
+| Pre-launch report   | AAB yüklemesi olmadığından rapor yok. Crash/ANR, erişilebilirlik, performans ve uyumluluk sonuçları üretilince ayrıca incelenmeli                                                                                        |
 
 ## İncelemeci ve test erişimi
 
