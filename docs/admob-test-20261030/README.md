@@ -79,3 +79,9 @@ Kaynak: [Android yansıma/constructor koruma kuralları](https://developer.andro
 ### Platform adaptörü regresyonu
 
 İlk izin denemesinde güvenli yedek mesajı görüldü. Kaynak haritası Android’in `runtime.ts` dosyasını seçtiğini, native GMA modüllerinin JS paketine hiç girmediğini gösterdi; bu deneme UMP sunucu testi değildir. Metro uzantı önceliği nedeniyle generic `.ts`, `.native.tsx` önüne geçiyordu. Girişler aynı `.tsx` ailesine alındı ve explicit `.web.tsx` ile web’in de native dosyaya düşmesi engellendi. Gerçek kurulu Metro resolver kullanan Android/iOS/web regresyonu eklendi. Native kaynak haritası ve tekrar gerçek UMP denemesiyle ayrıca doğrulanır; başarısız ilk deneme gerçek reklam yüklemesi sayılmaz.
+
+### Doğrulanmış UMP yapılandırma engeli
+
+Platform düzeltmesinden sonraki Android Hermes kaynağında native adaptör ve 91 GMA kaynak modülü doğrulandı. Gerçek UMP çağrısı Google’dan “Publisher misconfiguration … no form(s) configured for the input app ID” döndü. Alınan App ID işletmecinin sağladığı Android kaydıyla aynıydı. Bu sonuç, gerçek test banner/interstitial yüklemesi PASS değildir. Onay kapısı nedeniyle GMA initialize/load başlatılmadı; oyun reklamsız kaldı.
+
+Test sürümünün tam gizlilik metni `PRIVACY-TEST.md` içinde, uygulamadaki politika metninden belge anlık görüntüsü olarak çıkarılmıştır. Mevcut Vercel Production’ı izinsiz değiştirmeden yalnız bu test uygulamasının UMP mesajına kamuya açık test politikası bağlantısı verilebilir. Bu yeni link, Play Console’daki mevcut ana gizlilik URL’sini sessizce değiştirmez. İşletmeci metni ve UMP formunu incelemelidir; genel reklam veya Production yayını onayı değildir.
