@@ -156,5 +156,11 @@ anahtarlarını veya migration'ı aşağı alma/silme; bunu yapmak geçmişi boz
 
 - `20261021000600_live_recent_question_exclusion.sql`: `6daabfd2b0cc4127cdedbddecf4ee6b2b3732b02b43c39bb8a6d9bf29ec5d31a`
 - `20261021000700_async_duel_recent_questions.sql`: `447d1299110d06680f7d866c63b0b6bdee1605f5f0779cc845743a7cfbd019d1`
-- `20261024000200_live_ten_second_questions.sql`: `bee9d6942553a5bb991dc08412bf2a34f4bed311645cdfed15abb9fde88f9160`
+- `20261024000200_live_ten_second_questions.sql`: `a18d6ef12019f1d622d8962112cb5fa375dba84024b65e97477365857e77f15a`
 - `20261027000100_canonical_bank_v72.sql`: `db673ca0f74804898f3491e1e17e70864a9a8d36b144ddaf8e1880341cc06d23`
+
+30.10.2026 düzeltmesi: henüz dağıtılmamış 10 saniye önkoşulunun önceki hash'i
+`bee9d6942553a5bb991dc08412bf2a34f4bed311645cdfed15abb9fde88f9160` idi.
+Bu sürüm canlı oda silme istisnasını gereğinden fazla genişletiyordu. Yeni dosya
+mevcut dar istisnayı aynen korur; üretim kapsamındaki bu fark için ayrı onay beklenir.
+Güncel [v73 ön kontrolü ve değişen plan](CANONICAL-V73-PREFLIGHT-20261030.md).
