@@ -146,7 +146,9 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       if (!getPreferences().adultConfirmed || !getPreferences().testAdsAllowed)
         return;
       if (!decision.allowed) {
-        setError("Reklam onayı tamamlanmadı; reklamsız devam edebilirsin.");
+        setError(
+          "Tercihlerine göre reklamlar kapalı; oyuna reklamsız devam edebilirsin.",
+        );
         return;
       }
       // Do not start requests if a user left consent to start a game meanwhile.

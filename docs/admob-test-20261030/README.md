@@ -69,3 +69,9 @@ Kullanıcı önce hesabın bulunduğunu, uygulama kaydının olmadığını bild
 - [Reklam kategori kontrolleri](https://support.google.com/admob/answer/3150235)
 - [Yayımlanmamış AdMob uygulaması](https://support.google.com/admob/answer/9989980)
 - [KVKK çerez rehberi](https://www.kvkk.gov.tr/Icerik/7353/Cerez-Uygulamalari-Hakkinda-Rehber)
+
+## Release başlangıç regresyonu
+
+İlk küçültülmüş release APK’sı gerçek API 34 emülatöründe JavaScript başlamadan `WorkDatabase` oluşturulamadığı için çöktü. R8 mapping dosyasında WorkDatabase/WorkDatabase_Impl adları korunmuştu fakat yansıma ile çağrılan boş constructor yoktu. GMA transitive WorkManager 2.7.0/Room 2.2.5 bu yolu kullanır. `plugins/with-admob-workmanager.js` yalnız `androidx.work.impl.WorkDatabase_Impl` ve public boş constructor için kalıcı/idempotent prebuild kuralı ekler. R8/obfuscation tamamen kapatılmadı, bütün AndroidX paketini tutan geniş kural eklenmedi. Yeni release’de constructor ve açılış tekrar doğrulanmadan bu düzeltme native PASS sayılmaz. Önceki hatalı APK kabul dışıdır.
+
+Kaynak: [Android yansıma/constructor koruma kuralları](https://developer.android.com/topic/performance/app-optimization/keep-rule-examples).

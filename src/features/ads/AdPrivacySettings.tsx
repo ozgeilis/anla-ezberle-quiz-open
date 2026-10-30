@@ -13,8 +13,8 @@ export function AdPrivacySettings() {
       <Txt weight="bold">Reklam Gizlilik Tercihleri</Txt>
       <Txt size={12}>
         Bu test sürümü yalnız Google’ın test reklamlarını kullanır. Reklam
-        istemezsen oyuna reklamsız devam edebilirsin. Doğum tarihi veya yaşın
-        sunucuya gönderilmez.
+        istemezsen oyuna reklamsız devam edebilirsin. Doğum tarihin veya kesin
+        yaşın istenmez.
       </Txt>
       {(
         [

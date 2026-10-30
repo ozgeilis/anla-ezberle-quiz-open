@@ -30,6 +30,7 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     extra: { ...config.extra, ads },
     plugins: [
       ...(config.plugins ?? []),
+      "./plugins/with-admob-workmanager.js",
       [
         "react-native-google-mobile-ads",
         {

@@ -14,6 +14,24 @@ import {
 } from "../src/features/ads/interstitial";
 import { consentDecision } from "../src/features/ads/consent";
 import type { AdsConsentInterface } from "react-native-google-mobile-ads";
+import { createRequire } from "node:module";
+
+test("prebuild retains the reflectively created WorkDatabase constructor without disabling R8", () => {
+  const require = createRequire(import.meta.url);
+  const { appendRules } = require("../plugins/with-admob-workmanager.js") as {
+    appendRules: (value: string) => string;
+  };
+  const original =
+    "# Existing app rules\n-keep class com.example.Required { *; }\n";
+  const result = appendRules(original);
+  assert.ok(result.startsWith(original));
+  assert.ok(
+    result.includes("-keep class androidx.work.impl.WorkDatabase_Impl"),
+  );
+  assert.ok(result.includes("public <init>();"));
+  assert.equal(appendRules(result), result);
+  assert.equal(result.includes("-dontobfuscate"), false);
+});
 
 test("revenue cannot be enabled by public or production environment flags", () => {
   for (const profile of ["production", "preview", "development", "unknown"]) {
