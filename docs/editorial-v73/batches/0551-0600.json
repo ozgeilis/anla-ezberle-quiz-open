@@ -597,37 +597,37 @@
         ]
       },
       "after": {
-        "question": "Ünlü seyyah İbn Battûta hangi şehirde doğmuştur?",
+        "question": "İbn Battûta hac niyetiyle Tanca’dan ilk büyük yolculuğuna hangi milâdî yılda çıkmıştır?",
         "options": [
           {
             "id": "o1",
-            "text": "Semerkant"
-          },
-          {
-            "id": "o2",
-            "text": "Tanca"
+            "text": "1304"
           },
           {
             "id": "o3",
-            "text": "Bağdat"
+            "text": "1349"
           },
           {
             "id": "o4",
-            "text": "Kûfe"
+            "text": "1368"
+          },
+          {
+            "id": "o2",
+            "text": "1325"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Tanca",
-        "explanation": "İbn Battûta, günümüzde Fas'ta bulunan Tanca şehrinde dünyaya gelmiştir.",
+        "correctAnswer": "1325",
+        "explanation": "TDV İbn Battûta maddesine göre seyyah, 14 Haziran 1325’te hac niyetiyle Tanca’dan yola çıkmıştır. 1304 ise doğum yılıdır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-            "locator": "Hayatı: 1304 yılında Tanca'da doğması",
-            "supports": "İbn Battûta, günümüzde Fas'ta bulunan Tanca şehrinde dünyaya gelmiştir.",
+            "locator": "96 ve 103. satırlar; doğum ile ilk yolculuk tarihi ayrımı",
+            "supports": "TDV İbn Battûta maddesine göre seyyah, 14 Haziran 1325’te hac niyetiyle Tanca’dan yola çıkmıştır. 1304 ise doğum yılıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -636,27 +636,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v11-history-009",
-        "reviewedCandidateSha256": "164fbd76868887a210bbe19347be7f0d6fac0a37dccd113583fb4aad6e10c2ae",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört gerçek şehir; doğduğu yer Tanca, gidilen seyahat şehirleriyle karışabilir.",
+        "reviewedCandidateSha256": "7a8a01732933d077bf5c05d39bb441cf5de8909a1ea049dfca342c7656beb557",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört gerçek şehir; doğduğu yer Tanca, gidilen seyahat şehirleriyle karışabilir. Ek banka karşılaştırması: Tanca doğumu q59-battuta-dogum ile tekrardı; ilk büyük yolculuğun tarihi soruldu.",
         "optionReview": {
-          "o1": "Başka seyahat/bilim şehri.",
-          "o2": "Doğum şehri.",
-          "o3": "Başka seyahat şehri.",
-          "o4": "Başka tarihî şehir."
+          "o1": "Doğum yılıdır; yolculuğa çıkış yılı değildir.",
+          "o3": "İlerleyen seyahat dönemine ait makul bir tarihtir; ilk çıkış tarihi değildir.",
+          "o4": "Hayatının son dönemine ait makul bir tarihtir; ilk çıkış yılı değildir.",
+          "o2": "TDV, 2 Receb 725 / 14 Haziran 1325 tarihini verir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-          "locator": "703/1304 Tanca doğumu; satır 96",
+          "locator": "96 ve 103. satırlar; doğum ile ilk yolculuk tarihi ayrımı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,
@@ -5154,37 +5156,37 @@
         ]
       },
       "after": {
-        "question": "Evliya Çelebi'nin Seyahatnâme'si kaç ciltten oluşur?",
+        "question": "Evliya Çelebi’nin Seyahatnâme’si 1742’de Mısır’dan İstanbul’da kime gönderilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Üç"
+            "id": "o4",
+            "text": "Köprülü Mehmed Paşa"
           },
           {
             "id": "o2",
-            "text": "On"
+            "text": "Hacı Beşir Ağa"
+          },
+          {
+            "id": "o1",
+            "text": "Damad İbrâhim Paşa"
           },
           {
             "id": "o3",
-            "text": "Beş"
-          },
-          {
-            "id": "o4",
-            "text": "On altı"
+            "text": "Hekimoğlu Ali Paşa"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "On",
-        "explanation": "Evliya Çelebi'nin geniş Osmanlı coğrafyasını anlatan Seyahatnâme'si on ciltten oluşur.",
+        "correctAnswer": "Hacı Beşir Ağa",
+        "explanation": "TDV Seyahatnâme maddesine göre eser 1742’de Mısır’dan Hacı Beşir Ağa’ya gönderilmiş, onun tarafından çoğalttırılmıştır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-            "locator": "Eser tanımı: on cilt",
-            "supports": "Evliya Çelebi'nin geniş Osmanlı coğrafyasını anlatan Seyahatnâme'si on ciltten oluşur.",
+            "locator": "97. satır; 1742 gönderimi",
+            "supports": "TDV Seyahatnâme maddesine göre eser 1742’de Mısır’dan Hacı Beşir Ağa’ya gönderilmiş, onun tarafından çoğalttırılmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5193,27 +5195,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v12-history-004",
-        "reviewedCandidateSha256": "4db508928b294143621b20dfce941a5c7724b7d43c8a8c62e497e566c937fd80",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört cilt sayısı aynı türde. Seyahatnâme’nin I–X cilt düzeni kaynakla karşılaştırıldı; başka eserlerle birleştirilmedi.",
+        "reviewedCandidateSha256": "116595ddf7240240ba760bf4b46a53e5bd0d2adceb385bc01ebb31022e66ba54",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört cilt sayısı aynı türde. Seyahatnâme’nin I–X cilt düzeni kaynakla karşılaştırıldı; başka eserlerle birleştirilmedi. Ek banka karşılaştırması: On cilt bilgisi q59-evliya-cilt ile tekrardı; zor etikete uygun eser aktarım tarihçesi seçildi.",
         "optionReview": {
-          "o1": "Eksik cilt sayısı.",
-          "o2": "I–X düzeni.",
-          "o3": "Eksik cilt sayısı.",
-          "o4": "Fazla cilt sayısı."
+          "o4": "Gerçek bir Osmanlı devlet adamıdır; bu gönderimle adı ilişkilendirilmez.",
+          "o2": "TDV eser tarihçesinde 1742’de gönderildiği ve çoğalttırıldığı kişi olarak anılır.",
+          "o1": "Osmanlı devlet adamıdır; burada kaydedilen alıcı değildir.",
+          "o3": "Dönemle ilişkili gerçek bir devlet adamıdır; pasajdaki alıcı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Aynı ayet/kavram/olay için yakın hedeflerin bulunduğu not edildi. Banka çapındaki son anlamsal tekrar ve conceptGroup incelemesi tamamlanmış değildir; içerik sayısı ve eski gruplar korunuyor.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-          "locator": "Dört cilt sayısı aynı türde. Seyahatnâme’nin I–X cilt düzeni kaynakla karşılaştırıldı; başka eserlerle birleştirilmedi.",
+          "locator": "97. satır; 1742 gönderimi",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
-          "readAt": "2026-10-28",
-          "sourceSha256": "059602b640c81681b79d457a2d7d492aba84dfe068d7d83ac580ab556c0be108"
+          "readAt": "2026-10-30",
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

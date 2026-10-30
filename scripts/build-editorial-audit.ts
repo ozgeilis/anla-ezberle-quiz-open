@@ -186,6 +186,17 @@ const contentChanged = (id: string) => {
     optionTextChanged(id)
   );
 };
+const multipleCorrectRiskCodes = new Set([
+  "possible-multiple-correct",
+  "possible-subset-overlap",
+  "overlapping-groups",
+  "overlapping-options",
+  "geographic-option-ambiguity",
+]);
+const recordedMultipleCorrectRisks = decisions.filter((d) =>
+  d.defects.some((code) => multipleCorrectRiskCodes.has(code)),
+);
+
 const summary = {
   reviewRound: 2,
   activeBankVersion: 72,
@@ -251,11 +262,22 @@ const summary = {
   criticalRemaining: records.some((r) => !r.decision)
     ? "not-yet-determined: individual review incomplete"
     : "requires independent editorial decision",
+  recordedMultipleCorrectRisks: {
+    method:
+      "Unique individual semantic decisions with the listed risk tags; not an exhaustive automatic truth claim",
+    codes: [...multipleCorrectRiskCodes],
+    recorded: recordedMultipleCorrectRisks.length,
+    stillBlocked: recordedMultipleCorrectRisks.filter(
+      (d) => d.disposition === "blocked",
+    ).length,
+  },
   knownBlockingQuestions: records.filter(
     (r) => r.decision?.disposition === "blocked",
   ).length,
   overlapReview: {
     candidatePairs: overlap.candidatePairs,
+    automaticCandidatePairs: overlap.automaticCandidatePairs,
+    retainedExplicitPairs: overlap.retainedExplicitPairs,
     individuallyReviewedPairs: overlap.individuallyReviewedPairs,
     repeatedFactPairs: overlap.repeatedFactPairs,
     pendingPairs: overlap.pendingPairs,
@@ -362,7 +384,7 @@ outputs["docs/editorial-v73/round2-open-items.md"] =
         `- **${r.id}** (${r.category}): ${r.decision!.ambiguityReview} ${r.decision!.reason}\n`,
     )
     .join("") +
-  "\n## İncelenenlerde kaynak karşılaştırması bekleyenler\n\n" +
+  "\nKorunan soru için [uygulanmamış düzeltme önerisi](PROTECTED-MEANING-QUESTION-PROPOSAL.md) ayrı karar için hazırlandı; mevcut aday değiştirilmedi.\n\n## İncelenenlerde kaynak karşılaştırması bekleyenler\n\n" +
   records
     .filter((r) => r.decision?.source.status === "pending")
     .map(
@@ -370,7 +392,12 @@ outputs["docs/editorial-v73/round2-open-items.md"] =
         `- ${r.id}: [kaynak](${r.decision!.source.url}) — ${r.decision!.source.note}\n`,
     )
     .join("") +
-  `\n## Banka çapında ek tekrar kontrolü\n\n${overlap.candidatePairs} otomatik aday çiftin ${overlap.individuallyReviewedPairs} tanesi ayrıca karşılaştırıldı; ${overlap.repeatedFactPairs} çiftte aynı bilgi tekrar soruluyor. Kalan ${overlap.pendingPairs} çift bekliyor. Ayrı [çift kayıtları](round2-overlap-review.json) bu açıkları saklar. Benzerlik taramasının üretemediği eş anlamlı kökler olabilir; bu araç bütün anlamsal tekrarların bulunmuş olduğu garantisini vermez.\n\n## Mevcut zorluk sınırı\n\nİman/Ahlak zor havuzu v72’de ve adayda 7 sorudur; mevcut 10 bağımsız soruluk zor tur açılamaz. Zorluk etiketleri onaysız değiştirilmedi. Adayın 18 kategori/zorluk birleşimi v72 ile karşılaştırılır; 17 kullanılabilir birleşim ve bu mevcut engel korunur.\n\nHer sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.\n`;
+  `\n## Banka çapında ek tekrar kontrolü\n\n${overlap.automaticCandidatePairs} güncel sözcük benzerliği önerisi ve eşik dışından korunan/elle eklenen ${overlap.retainedExplicitPairs} çift dahil toplam ${overlap.candidatePairs} çiftin ${overlap.individuallyReviewedPairs} tanesi ayrıca karşılaştırıldı; ${overlap.repeatedFactPairs} çiftte aynı bilgi tekrar soruluyor. İlk bulunan 23 tekrar ayrı kaynak hedefleriyle yeniden yazıldı; sonraki anlam karşılaştırmasında bulunan açıklar bu sayıya gizlenmedi. Kalan ${overlap.pendingPairs} çift bekliyor. Ayrı [çift kayıtları](round2-overlap-review.json) bu açıkları saklar. Benzerlik taramasının üretemediği eş anlamlı kökler olabilir; bu araç bütün anlamsal tekrarların bulunmuş olduğu garantisini vermez.\n\n## Mevcut zorluk sınırı\n\nİman/Ahlak zor havuzu v72’de ve adayda 7 sorudur; mevcut 10 bağımsız soruluk zor tur açılamaz. Zorluk etiketleri onaysız değiştirilmedi. Adayın 18 kategori/zorluk birleşimi v72 ile karşılaştırılır; 17 kullanılabilir birleşim ve bu mevcut engel korunur.\n\n## Aynı bilgi içeren açık çiftler\n\n${overlap.records
+    .filter((r) => r.decision?.verdict === "repeated-fact")
+    .map((r) => `- **${r.a} / ${r.b}**: ${r.decision!.reason}`)
+    .join(
+      "\n",
+    )}\n\nHer sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.\n`;
 for (const [path, value] of Object.entries(outputs)) {
   if (process.argv.includes("--check")) {
     if (readFileSync(path, "utf8") !== value)

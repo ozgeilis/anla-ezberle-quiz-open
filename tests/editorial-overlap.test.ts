@@ -27,10 +27,44 @@ test("Overlap suggestions stay pending until explicitly reviewed; changed conten
   );
   assert.throws(
     () =>
+      editorialOverlap([a, b], [decision, { ...decision, a: b.id, b: a.id }]),
+    /Repeated/,
+  );
+  assert.throws(
+    () =>
       editorialOverlap(
         [a, { ...b, question: b.question + " Değişti." }],
         [decision],
       ),
     /re-review/,
   );
+});
+
+test("A rewritten pair stays in the audit after it falls below the lexical suggestion threshold", () => {
+  const a = questionsV73Candidate[0]!;
+  const b = {
+    ...a,
+    id: "explicit-semantic-review-probe",
+    question: "Kütüphanenin onarımı hangi tarihte tamamlanmıştır?",
+    conceptGroup: "separate-library-context",
+  };
+  assert.equal(editorialOverlap([a, b], []).automaticCandidatePairs, 0);
+  const reviewed = editorialOverlap(
+    [a, b],
+    [
+      {
+        a: a.id,
+        b: b.id,
+        snapshotSha256: overlapSnapshot(a, b),
+        verdict: "distinct-context",
+        reason:
+          "Önceki aynı bilgi tekrarı ayrı hedefle yeniden yazıldı; çift tekrar okundu.",
+      },
+    ],
+  );
+  assert.equal(reviewed.retainedExplicitPairs, 1);
+  assert.equal(reviewed.candidatePairs, 1);
+  assert.equal(reviewed.pendingPairs, 0);
+  assert.equal(reviewed.records[0]!.currentLexicalSuggestion, false);
+  assert.equal(reviewed.records[0]!.decision?.verdict, "distinct-context");
 });

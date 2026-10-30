@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 2,
-  "flaggedAfter": 5,
+  "flaggedAfter": 7,
   "records": [
     {
       "sequence": 451,
@@ -2001,66 +2001,73 @@
         ]
       },
       "after": {
-        "question": "Abbâsîler döneminde tercüme ve araştırmalarıyla tanınan Beytülhikme hangi şehirdeydi?",
+        "question": "TDV’ye göre Bağdat Beytülhikmesi bağımsız bir yapı yerine hangi yapı bütünü içindeydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kûfe"
-          },
-          {
-            "id": "o2",
-            "text": "Bağdat"
-          },
-          {
             "id": "o3",
-            "text": "Basra"
+            "text": "Şehir surları"
           },
           {
             "id": "o4",
-            "text": "Kahire"
+            "text": "Dârüşşifa avlusu"
+          },
+          {
+            "id": "o2",
+            "text": "Saray müştemilâtı"
+          },
+          {
+            "id": "o1",
+            "text": "Cami külliyesi"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Bağdat",
-        "explanation": "Beytülhikme, Abbâsî döneminde Bağdat'ta tercüme ve ilmî çalışmaların yürütüldüğü merkez olarak tanınır.",
+        "correctAnswer": "Saray müştemilâtı",
+        "explanation": "TDV Beytülhikme maddesi, Bağdat’taki kurumun bağımsız bir yapı değil saray müştemilâtı içinde çeşitli bölümleri bulunan bir bina olduğunu belirtir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-            "locator": "Bağdat Beytülhikme'sinin kuruluşu ve ilmî faaliyetleri",
-            "supports": "Beytülhikme, Abbâsî döneminde Bağdat'ta tercüme ve ilmî çalışmaların yürütüldüğü merkez olarak tanınır.",
+            "locator": "110. satır; saray müştemilâtı ve bölümler",
+            "supports": "TDV Beytülhikme maddesi, Bağdat’taki kurumun bağımsız bir yapı değil saray müştemilâtı içinde çeşitli bölümleri bulunan bir bina olduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
+      "automaticAfter": [
+        {
+          "kind": "domain-mismatch",
+          "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
+        }
+      ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v9-history-008",
-        "reviewedCandidateSha256": "debebafdf082cd39bbe7f64d55d6b268254c3344b38623ec7a0c303bcee4341a",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört şehir. Kahire’nin daha geç kuruluşu zayıf bir çeldirici; diğer iki Irak şehri gerçekçi. Üç saçma seçenek kalıbı yok.",
+        "reviewedCandidateSha256": "3726414b98c91d0157c525dcf9d7fb8f85f36c293be2eaadc4be9eee6d279d24",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört şehir. Kahire’nin daha geç kuruluşu zayıf bir çeldirici; diğer iki Irak şehri gerçekçi. Üç saçma seçenek kalıbı yok. Ek banka karşılaştırması: Bağdat şehri q59-beyt-sehir ile tekrardı; kurumun şehir içindeki yapı ilişkisi soruldu.",
         "optionReview": {
-          "o1": "Başka Irak şehri.",
-          "o2": "Kurumun bulunduğu şehir.",
-          "o3": "Başka Irak şehri.",
-          "o4": "Daha geç kurulan Mısır şehri."
+          "o3": "Şehir savunma yapısıdır; kurumun bulunduğu yapı bütünü değildir.",
+          "o4": "Sağlık yapısına ait bir bölümdür; bu kütüphane için verilen yer değildir.",
+          "o2": "TDV araştırma sonucunu saray müştemilâtı içindeki bölümler olarak aktarır.",
+          "o1": "Başka bir yapı bütünüdür; bu merkezin yerleşimi böyle tanımlanmaz."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-          "locator": "Bağdat’taki merkez; kurucu tarihlendirmesindeki ihtilâf; satır 96–102",
+          "locator": "110. satır; saray müştemilâtı ve bölümler",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,
@@ -2109,37 +2116,37 @@
         ]
       },
       "after": {
-        "question": "Bağdat’ta 1067’de öğretime açılan medreseyi kuran Selçuklu veziri kimdir?",
+        "question": "Bağdat Nizâmiye Medresesi vakfiyesinde görevliler için hangi mezhebe mensubiyet şartı belirtilir?",
         "options": [
           {
             "id": "o3",
-            "text": "Tâcülmülk"
+            "text": "Mâlikî"
           },
           {
             "id": "o4",
-            "text": "Müeyyidülmülk"
+            "text": "Hanbelî"
           },
           {
             "id": "o2",
-            "text": "Nizâmülmülk"
+            "text": "Şâfiî"
           },
           {
             "id": "o1",
-            "text": "Kündürî"
+            "text": "Hanefî"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Nizâmülmülk",
-        "explanation": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
+        "correctAnswer": "Şâfiî",
+        "explanation": "TDV Nizâmiye Medresesi maddesinin vakfiye bölümünde medresenin Şâfiîler için yapıldığı ve müderris gibi görevliler için bu mensubiyetin arandığı açıklanır. Soru bütün medreselere genellenmez.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-            "locator": "Nizâmiye 97–99; diğer vezir maddelerinin 71 ve 96–108. satırları",
-            "supports": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
+            "locator": "103. satır; Bağdat Nizâmiye vakfiyesi",
+            "supports": "TDV Nizâmiye Medresesi maddesinin vakfiye bölümünde medresenin Şâfiîler için yapıldığı ve müderris gibi görevliler için bu mensubiyetin arandığı açıklanır. Soru bütün medreselere genellenmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -2148,29 +2155,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v9-history-009",
-        "reviewedCandidateSha256": "a83c9fdabcb7f024629b6e57b77552fb14d342039ba49bc93486992a5e853791",
+        "reviewedCandidateSha256": "158b76609ccd90375f9c2d3712d150bf8d5158d2d106a908be521b950ffe4b72",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Nizâmiye/Nizâm ad yankısı kökten çıkarıldı; farklı asır ve meslekler yerine dört Selçuklu veziri kullanıldı.",
+        "reason": "Nizâmiye/Nizâm ad yankısı kökten çıkarıldı; farklı asır ve meslekler yerine dört Selçuklu veziri kullanıldı. Ek banka karşılaştırması: Kurucu Nizâmülmülk q63-nizamiye-bani ile tekrardı; kurumun ayrı bir vakfiye şartı soruldu.",
         "optionReview": {
-          "o3": "Tâciyye’yi yaptıran başka vezir.",
-          "o4": "Nizâmülmülk’ün vezirlik yapmış oğlu; bu kurumun kurucusu değil.",
-          "o2": "1067 Bağdat medresesinin kurucusu.",
-          "o1": "Önceki Selçuklu veziri; bu kurumun kurucusu değil."
+          "o3": "Gerçek bir fıkıh mezhebidir; bu kurumun belirtilen vakfiye şartı değildir.",
+          "o4": "Gerçek bir fıkıh mezhebidir; TDV’nin bu vakfiye anlatımındaki şart değildir.",
+          "o2": "Vakfiye anlatımı medresenin Şâfiîler için yapıldığını ve görevlilerde bu şartı açıklar.",
+          "o1": "Gerçek bir fıkıh mezhebidir; bu vakfiyede sayılan mensubiyet şartı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-          "locator": "Nizâmiye 97–99; diğer vezir maddelerinin 71 ve 96–108. satırları",
+          "locator": "103. satır; Bağdat Nizâmiye vakfiyesi",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
-          "readAt": "2026-10-28",
-          "sourceSha256": "6b7ee5a0fd347de0885e93a4078a14ecc8372c76f184021224d279b84a63b703"
+          "readAt": "2026-10-30",
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,
@@ -5218,65 +5226,92 @@
         ]
       },
       "after": {
-        "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen hizmet süresi en az kaç yıldır?",
+        "question": "Kur’an Yolu mealinde Kasas 28/30’da Mûsâ’ya hitabın geldiği yer vadinin hangi tarafıdır?",
         "options": [
           {
             "id": "o1",
-            "text": "İki yıl"
-          },
-          {
-            "id": "o2",
-            "text": "Sekiz yıl"
+            "text": "Sol tarafı"
           },
           {
             "id": "o3",
-            "text": "Dört yıl"
+            "text": "Üst tarafı"
           },
           {
             "id": "o4",
-            "text": "On iki yıl"
+            "text": "Alt tarafı"
+          },
+          {
+            "id": "o2",
+            "text": "Sağ tarafı"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Sekiz yıl",
-        "explanation": "Kasas 28/27'de sekiz yıllık hizmet önerilir; on yıla tamamlamanın ise Hz. Mûsâ'nın tercihi olduğu belirtilir.",
+        "correctAnswer": "Sağ tarafı",
+        "explanation": "Kasas 28/30’un Kur’an Yolu mealinde hitabın vadinin sağ tarafından, ağaç yönünden geldiği belirtilir. Sağ yönün nasıl belirlendiğine dair yorumlar bulunduğundan burada mealin açık ifadesi sorulur.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=28&ayet=27&mode=meal",
-            "locator": "Kasas 28/27, Diyanet indekslenmiş meal",
-            "supports": "Kasas 28/27'de sekiz yıllık hizmet önerilir; on yıla tamamlamanın ise Hz. Mûsâ'nın tercihi olduğu belirtilir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "28/30; PDF fiziksel sayfa 410, ilgili dipnot dahil",
+            "supports": "Kasas 28/30’un Kur’an Yolu mealinde hitabın vadinin sağ tarafından, ağaç yönünden geldiği belirtilir. Sağ yönün nasıl belirlendiğine dair yorumlar bulunduğundan burada mealin açık ifadesi sorulur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v10-prophets-011",
-        "reviewedCandidateSha256": "58328e351769bededb26d3858a17a13db9c6a473bc5f32786f23415f99938246",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört süre aynı biçimde. En az kaydı sekiz teklif/on gönüllü ayrımını kesinleştiriyor.",
+        "reviewedCandidateSha256": "12e583d97cff96c04f738ef5eae8cc829e352bbbc346155e51ef5083cd3c53b8",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört süre aynı biçimde. En az kaydı sekiz teklif/on gönüllü ayrımını kesinleştiriyor. Ek banka karşılaştırması: Sekiz yıllık hizmet q67-kasas-27 ile tekrardı; aynı kıssanın ayrı bir yer tarifi soruldu.",
         "optionReview": {
-          "o1": "Teklif süresi değil.",
-          "o2": "Asgarî teklif.",
-          "o3": "Teklif süresi değil.",
-          "o4": "Teklif süresi değil."
+          "o1": "Metinde sol taraf ifadesi yoktur.",
+          "o3": "Mealde hitabın geldiği taraf üst olarak belirtilmez.",
+          "o4": "Mealde bu yer alt taraf olarak adlandırılmaz.",
+          "o2": "Mealde açıkça vadinin sağ tarafı denilir; coğrafî doğu/batı iddiası eklenmedi."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "28/27; PDF sayfa 409 (1 tabanlı), basılı sayfa 408",
+          "locator": "28/30; PDF fiziksel sayfa 410, ilgili dipnot dahil",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

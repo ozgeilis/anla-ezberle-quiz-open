@@ -5504,35 +5504,35 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/63’te Rahmân’ın kullarının yeryüzündeki yürüyüşü hangi özellikle anlatılır?",
+        "question": "Furkân 25/63’te laf atanlara verilen cevap, Kur’an Yolu mealinde hangi tutumu anlatır?",
         "options": [
           {
             "id": "o4",
-            "text": "Kanaat"
+            "text": "Bağışlanma dilemek"
           },
           {
             "id": "o1",
-            "text": "Tevazu"
+            "text": "Esenlik dilemek"
           },
           {
             "id": "o2",
-            "text": "Sabır"
+            "text": "Güzel öğüt vermek"
           },
           {
             "id": "o3",
-            "text": "Tevekkül"
+            "text": "Arabuluculuk etmek"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Tevazu",
-        "explanation": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
+        "correctAnswer": "Esenlik dilemek",
+        "explanation": "Furkân 25/63’teki selâm cevabı Kur’an Yolu dipnotunda esenlik dileğiyle karşılık vermek olarak açıklanır. Burada yürüyüşteki tevazu değil sözlü sataşmaya verilen cevap sorulur.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "25/63; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-            "supports": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
+            "locator": "25/63; PDF fiziksel sayfa 384 ve selâm açıklayan dipnot",
+            "supports": "Furkân 25/63’teki selâm cevabı Kur’an Yolu dipnotunda esenlik dileğiyle karşılık vermek olarak açıklanır. Burada yürüyüşteki tevazu değil sözlü sataşmaya verilen cevap sorulur.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -5543,26 +5543,27 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q65-furkan-63",
-        "reviewedCandidateSha256": "4eaf372d853e8dcfe9c1ffc76c8f3a3fe1590a3edc37a73ab23369fb948d6ec8",
+        "reviewedCandidateSha256": "a67b024f621f9eb8bbd9f99e736da49cad1dc80244b8e67a06168b51b5b49a62",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Kullanıcının somut örneği uygulandı: gösteriş/kararsızlık/aceleye karşı tek iyi davranış yerine dört olumlu ahlâk kavramı. Meal vakar der; dipnot hevni tevazu dahil açıklayıp kibir karşıtı sayar. Vakar/hilim eş anlamları yanlış şık yapılmadı.",
+        "reason": "Kullanıcının somut örneği uygulandı: gösteriş/kararsızlık/aceleye karşı tek iyi davranış yerine dört olumlu ahlâk kavramı. Meal vakar der; dipnot hevni tevazu dahil açıklayıp kibir karşıtı sayar. Vakar/hilim eş anlamları yanlış şık yapılmadı. Ek banka karşılaştırması: Yürüyüşte tevazu v13-quran-010 ile tekrardı; aynı âyetin farklı bir cümlesi soruldu.",
         "optionReview": {
-          "o4": "Başka olumlu erdem.",
-          "o1": "63 dipnotunun tevazu karşılığı.",
-          "o2": "Başka olumlu erdem.",
-          "o3": "Başka olumlu erdem."
+          "o4": "Olumlu bir dua davranışıdır; bu karşılığın açık ifadesi değildir.",
+          "o1": "Selâm cevabı dipnotta esenlik dileği olarak açıklanır.",
+          "o2": "Olumlu ve ilgili bir tutumdur; ayetteki selâm karşılığının bu mealdeki açıklaması değildir.",
+          "o3": "Olumlu bir uyuşmazlık çözümüdür; pasajda bu karşılık yer almaz."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "25/63; PDF sayfa 384 (1 tabanlı), basılı sayfa 383",
+          "locator": "25/63; PDF fiziksel sayfa 384 ve selâm açıklayan dipnot",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"

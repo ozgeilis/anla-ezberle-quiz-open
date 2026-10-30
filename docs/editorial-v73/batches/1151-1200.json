@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 4,
-  "flaggedAfter": 7,
+  "flaggedAfter": 6,
   "records": [
     {
       "sequence": 1151,
@@ -1156,37 +1156,37 @@
         ]
       },
       "after": {
-        "question": "Kur'an'a göre Hz. Îsâ'ya verilen ilâhî kitap hangisidir?",
+        "question": "Meryem 19/31’de Îsâ’ya yaşadığı sürece emredildiği söylenen iki ibadet hangileridir?",
         "options": [
           {
             "id": "o1",
-            "text": "Tevrat"
+            "text": "Oruç ve hac"
           },
           {
             "id": "o2",
-            "text": "Suhuf-u İbrâhim"
-          },
-          {
-            "id": "o3",
-            "text": "İncil"
+            "text": "Sadaka ve itikâf"
           },
           {
             "id": "o4",
-            "text": "Zebûr"
+            "text": "Kurban ve umre"
+          },
+          {
+            "id": "o3",
+            "text": "Namaz ve zekât"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "İncil",
-        "explanation": "Mâide 5/46'da Hz. Îsâ'ya kendisinden önceki Tevrat'ı doğrulayıcı ve yol gösterici olarak İncil'in verildiği anlatılır.",
+        "correctAnswer": "Namaz ve zekât",
+        "explanation": "Meryem 19/31’de Îsâ’ya yaşadığı sürece namaz ve zekâtın emredildiği anlatılır. Kur’an Yolu mealinde 31–32. âyetler birlikte verilir; annesine saygı konusu da bu birleşik pasajdadır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Îsâ",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/isa",
-            "locator": "Mâide 5/46'da Hz",
-            "supports": "Mâide 5/46'da Hz. Îsâ'ya kendisinden önceki Tevrat'ı doğrulayıcı ve yol gösterici olarak İncil'in verildiği anlatılır.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/31–32 birleşik meal; PDF fiziksel sayfa 322",
+            "supports": "Meryem 19/31’de Îsâ’ya yaşadığı sürece namaz ve zekâtın emredildiği anlatılır. Kur’an Yolu mealinde 31–32. âyetler birlikte verilir; annesine saygı konusu da bu birleşik pasajdadır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1195,24 +1195,26 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-isa-incil",
-        "reviewedCandidateSha256": "cf7edd90436daffb7222a00f1e9fad6470ce2e85e147c574e76bfc9fff8227f0",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört ilâhî kitap/sahife adı. 5/46 Îsâ’ya İncil verildiğini söyler; Tevrat’ı doğrulaması onun kendisine verildiği anlamına gelmez.",
+        "reviewedCandidateSha256": "7d53a94f863c16cf703e3357333fd7f1b6efb640007a6df8de30c574fa30aec7",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört ilâhî kitap/sahife adı. 5/46 Îsâ’ya İncil verildiğini söyler; Tevrat’ı doğrulaması onun kendisine verildiği anlamına gelmez. Ek banka karşılaştırması: İncil cevabı pilot-prophets-003 ile tekrardı; Îsâ’nın konuşmasındaki ayrı ibadet ikilisi soruldu.",
         "optionReview": {
-          "o1": "Doğruladığı önceki kitap.",
-          "o2": "Başka peygambere nispetli sahifeler.",
-          "o3": "46. âyette verilen kitap.",
-          "o4": "Başka peygamberin kitabı."
+          "o1": "İki gerçek ibadettir; bu âyetin birlikte saydığı ikili değildir.",
+          "o2": "İki dinî uygulamadır; bu pasajda birlikte sayılmaz.",
+          "o4": "İki dinî uygulamadır; sorulan âyetteki ikili değildir.",
+          "o3": "Kur’an Yolu 31–32 birleşik mealinde namaz ile zekât açıkça sayılır."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Evliya/İbn Battûta, Ali Kuşçu/Kâtib Çelebi, Dârülerkam/Suffe, kıble ve hac soruları önceki paketlerle karşılaştırıldı. Aynı cevabı art arda yineleyen kıble hedeflerinden biri mevcut süre bilgisine dönüştürüldü. Suffe sözlük/eğitim ve hac terimleri gibi bazı yakın hedeflerin yoğunluğu son banka çapındaki pedagojik tekrar kabulünü bekler. ID, conceptGroup, kategori ve zorluk değişmedi.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "5/46; PDF sayfa 123 (1 tabanlı), basılı sayfa 122",
+          "locator": "19/31–32 birleşik meal; PDF fiziksel sayfa 322",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
           "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
@@ -2814,73 +2816,69 @@
         ]
       },
       "after": {
-        "question": "Hac ve umrede sa‘y hangi iki yer arasında yapılır?",
+        "question": "Safâ’dan başlanan yedi şavtlık sa‘y hangi tepede tamamlanır?",
         "options": [
           {
             "id": "o4",
-            "text": "Safâ ve Merve"
+            "text": "Merve"
           },
           {
             "id": "o1",
-            "text": "Arafat ve Müzdelife"
+            "text": "Safâ"
           },
           {
             "id": "o2",
-            "text": "Minâ ve Müzdelife"
+            "text": "Arafat"
           },
           {
             "id": "o3",
-            "text": "Hira ve Sevr"
+            "text": "Minâ"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Safâ ve Merve",
-        "explanation": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir.",
+        "correctAnswer": "Merve",
+        "explanation": "TDV Sa‘y maddesi sa‘yin Safâ’dan başladığını, dört gidiş ve üç dönüşten oluştuğunu açıklar. Bu sıraya göre yedinci şavt Merve’de tamamlanır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/say",
-            "locator": "96–102. satırlar",
-            "supports": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir.",
+            "locator": "96 ve 101. satırlar; Safâ başlangıcı, dört gidiş ve üç dönüş",
+            "supports": "TDV Sa‘y maddesi sa‘yin Safâ’dan başladığını, dört gidiş ve üç dönüşten oluştuğunu açıklar. Bu sıraya göre yedinci şavt Merve’de tamamlanır.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q62-say-mekan",
-        "reviewedCandidateSha256": "e3270de3cdd3871c95d7275f70a131921f6e8a3b96d0c736a840191b747ebb6d",
+        "reviewedCandidateSha256": "4bb02b75d8dca1039a8c1edf634f306b9b676f428e01766a8923bef19b8e5c7c",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Tepe diye sorup şehir/ova çiftleriyle tür ipucu vermek yerine Mekke ve hac çevresinden dört yer çifti. Yedi şavtın dört gidiş üç dönüş olduğu kaynak açıklaması korunuyor.",
+        "reason": "Tepe diye sorup şehir/ova çiftleriyle tür ipucu vermek yerine Mekke ve hac çevresinden dört yer çifti. Yedi şavtın dört gidiş üç dönüş olduğu kaynak açıklaması korunuyor. Ek banka karşılaştırması: İki tepenin adı q47-hac-038 ile tekrardı; başlangıç ve bitişin ayrımı soruldu.",
         "optionReview": {
-          "o4": "96. satırın iki ucu.",
-          "o1": "İki vakfe yeri.",
-          "o2": "Başka hac yerleri.",
-          "o3": "İki Mekke dağı."
+          "o4": "Dört gidiş ve üç dönüş sonunda sa‘y Merve’de biter.",
+          "o1": "Başlangıç tepesidir; yedinci şavtın sonu değildir.",
+          "o2": "Hacla ilgili başka bir yerdir; sa‘yin bitiş tepesi değildir.",
+          "o3": "Hacla ilgili başka bir yerdir; sa‘yin bitiş tepesi değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Hac mekânları/menâsik, nisab-sadaka, Selçuklu/Osmanlı yapıları ve Bedir/Uhud hedefleri önceki paketlerle karşılaştırıldı. Bedir’deki iki ayrı keşif görevlendirmesi ve Nizâmiye’de ilk atanan/ilk dersi veren ayrımı kökle belirli. Sırçalı’da iki kaynak milâdî tarih farkı açık tutulup kitâbenin hicrî yılına bağlandı; nihai banka çapında tekrar/zorluk ve uzman kabulü henüz yok. ID, conceptGroup, kategori ve zorluk korundu.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/say",
-          "locator": "96–102. satırlar",
+          "locator": "96 ve 101. satırlar; Safâ başlangıcı, dört gidiş ve üç dönüş",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

@@ -10,21 +10,21 @@ Aktif banka **v72 / 1.500 soru**. Bu PR tek v73 adayını geliştirir. Main, Ver
 | Kök, dört şık, anahtar ve açıklaması ayrı incelenen | 1500 |
 | Bu turda kaynak pasajıyla karşılaştırılan | 1500 |
 | İlk otomatik taramada işaretlenen soru | 336 |
-| Tek v73 adayında v72’ye göre değişen soru | 1015 |
-| Önceki 271 değişikliğe ek olarak değişen ID | 744 |
-| Kökü değişen | 460 |
-| Doğru cevabın ifadesi değişen | 458 |
-| Açıklaması değişen | 215 |
-| Yalnız çeldiricileri değişen | 358 |
+| Tek v73 adayında v72’ye göre değişen soru | 1029 |
+| Önceki 271 değişikliğe ek olarak değişen ID | 758 |
+| Kökü değişen | 475 |
+| Doğru cevabın ifadesi değişen | 475 |
+| Açıklaması değişen | 234 |
+| Yalnız çeldiricileri değişen | 357 |
 | Üç sınırlayıcı yanlış şık kalıbı: önce → sonra | 25 → 0 |
 | Otomatik ton dengesizliği uyarısı: önce → sonra | 4 → 0 |
 | Tek belirgin uzun/kısa şık uyarısı: önce → sonra | 85 → 13 |
-| İkinci taramada herhangi bir otomatik uyarı alan soru | 170 |
+| İkinci taramada herhangi bir otomatik uyarı alan soru | 172 |
 | Bilinen bloke bireysel karar | 1 |
 | Bağımsız uzman onayı | 0 |
 | Yayın onayı / v73 etkinleştirme | Yok / Kapalı |
 
-Sayılar örtüşebilir; otomatik uyarılar gerçek kusur veya dinî doğruluk hükmü değildir. “Ton 4 → 0” içindeki bir kayıt, “iman etmiş görünerek ikiyüzlü davranma” metninin yanlışlıkla olumlu sayılmasıydı. Algoritma ikiyüzlülüğü olumsuz olarak tanıyacak biçimde düzeltildi ve regresyon testi eklendi; bu, soru düzeltmesi diye sayılmadı. İman/Ahlak gerçek eşleştirmesindeki **260** sorunun tamamı yeniden incelendi ve kaynakla karşılaştırıldı; bu kategoride adayın değişen soru sayısı **253**.
+Sayılar örtüşebilir; otomatik uyarılar gerçek kusur veya dinî doğruluk hükmü değildir. “Ton 4 → 0” içindeki bir kayıt, “iman etmiş görünerek ikiyüzlü davranma” metninin yanlışlıkla olumlu sayılmasıydı. Algoritma ikiyüzlülüğü olumsuz olarak tanıyacak biçimde düzeltildi ve regresyon testi eklendi; bu, soru düzeltmesi diye sayılmadı. İman/Ahlak gerçek eşleştirmesindeki **260** sorunun tamamı yeniden incelendi ve kaynakla karşılaştırıldı; bu kategoride adayın değişen soru sayısı **254**.
 
 30 × 50 kayıt önceki turdan otomatik onay devralmaz. Her kararda dört şık için ayrı yorum, gerekçe, belirsizlik/zorluk/tekrar değerlendirmesi, kaynak konumu ve aday SHA-256 özeti bulunur. Adayın ilgili içeriği değişince eski karar geçersiz olur. Özgün 220 öncelikli ID korundu ve hepsi ayrı ele alındı.
 
@@ -50,17 +50,21 @@ PDF: 8. baskı, 2020; SHA-256 `0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40
 
 ## Açık kalite ve kabul noktaları
 
-1. **`quran-meaning-v72-024` bloke:** Mü’minûn 23/3’teki geniş “boş ve yararsız işler” kavramının altına girebilen dar çeldiriciler var. Bu ID, değişmeden korunması istenen 30 v72 anlam sorusundan biri; onaysız değiştirilmedi. Bağımsız editör/ürün kararı gerekiyor.
-2. Ek banka çapı kontrolünde **406** benzerlik adayı çift üretildi; **406** çiftin tamamı ayrıca anlam bakımından karşılaştırıldı. **23** çiftte aynı olgu tekrar soruluyor; bekleyen çift **0**. Bu 23 tekrar açık kalite konusu olarak tutulur; çift incelemesinin bitmesi bunların giderildiği anlamına gelmez. Beş sûre sıra numarası gibi benzer cümleli ancak farklı hedefli çiftler otomatik tekrar sayılmadı.
+1. **`quran-meaning-v72-024` bloke:** Mü’minûn 23/3’teki geniş “boş ve yararsız işler” kavramının altına girebilen dar çeldiriciler var. Bu ID, değişmeden korunması istenen 30 v72 anlam sorusundan biri; onaysız değiştirilmedi. [Uygulanmamış öneri](PROTECTED-MEANING-QUESTION-PROPOSAL.md) ayrı kapsam kararı için hazırlandı; aday değiştirilmedi. Bağımsız editör/ürün kararı gerekiyor.
+2. Ek banka çapı kontrolünde güncel sözcük benzerliği önerileri ve elle korunan/eklenenler dahil **429** çiftin tamamı ayrıca karşılaştırıldı. İlk bulunan **23** aynı-bilgi tekrarı ayrı kaynak hedefleriyle yeniden yazıldı. Sözcük eşiğinin dışındaki anlam karşılaştırmasında **19** ek tekrar belirlendi; bunlar henüz düzeltilmedi. Bekleyen çift kararı **0** olsa da açık tekrarlar giderilmiş sayılmaz. Beş sûre sıra numarası gibi benzer cümleli ancak farklı hedefli çiftler otomatik tekrar sayılmadı.
 3. **İman/Ahlak Zor** havuzu mevcut v72’de de adayda da **7** sorudur. 10 soruluk bağımsız zor tur mevcut kuralla açılamaz. Onaysız zorluk değişikliği veya yeni soru eklenmedi; ayrı editör/ürün kararı gerekir.
-4. Kalan **170** otomatik uyarı topluca hata ya da temiz diye etiketlenmedi. Özel ad uzunluğu/ortak sözcük gibi yanlış alarmlar bireysel yorumlarda açıklanır. Korunan Necm 53/39 cevabındaki “ancak” kaynağın kapsamını taşır; sözcüğün bulunması tek başına kusur sayılmaz.
+4. Kalan **172** otomatik uyarı topluca hata ya da temiz diye etiketlenmedi. Özel ad uzunluğu/ortak sözcük gibi yanlış alarmlar bireysel yorumlarda açıklanır. Korunan Necm 53/39 cevabındaki “ancak” kaynağın kapsamını taşır; sözcüğün bulunması tek başına kusur sayılmaz.
 5. Bağımsız uzman kabulü, v73 ile gerçek oyuncu/cihaz kabulü ve kontrollü günlük/çevrimiçi staging testi bekler. Aday aktif registry’ye veya sunucuya bağlanmadı.
+
+## Sayıların kapsamı
+
+İnceleme sayısı 1.500 ayrı aday kararına; kaynak sayısı bu turdaki `source.status=compared` kayıtlarına dayanır. Değişen 1.029, v72 ile gerçek metin farkı olan benzersiz ID sayısıdır; tekrar düzenlenen ID ikinci kez sayılmaz. Otomatik 336 → 172 uyarı soru sayısıdır, kesin kusur sayısı değildir. Çoklu doğru/kapsam riski için açıkça işaretlenen beş etiketin birleşiminde **8** benzersiz karar vardır: **7** yeniden düzenlendi, **1** bloke kaldı. Bu sayı bütün yorum ihtimallerinin uzman tarafından kesin dışlandığı iddiası değildir. Kaynak bekleyen 0; bağımsız uzman onayı 0; değişen 1.029 soru için bağımsız kabul henüz yoktur.
 
 ## Cevap konumu, sürüm ve geçmiş
 
 Ham dosyadaki konumlar oyuncuya gösterilen sıra değildir. Mevcut motor her turda seçenek ID’lerini karıştırıp `optionOrders` içine kaydeder. V72’nin ham dağılımı `[162, 1026, 158, 154]`; adayın güncel dağılımı [envanterdedir](summary.json). Sözcük düzeltmesi yerine şık sırası karıştırma uygulanmadı. Yalnız üsluba bakan sezgisel araç önce 80 soruda (75 doğru) tahmin üretirken son adayda 0 tahmin üretir; çekimserlik dinî doğruluk veya anlamsal temizliğin kanıtı değildir.
 
-V72 SHA-256: `d1dcd3e92f4d331d187fcbf4c3459a1837ef979413a743c0d3ec4a43d7023115`. Korunan 30 anlam sorusu nesne içeriğiyle aynıdır. Eski ezber soruları geri getirilmedi. Yerel v2–v72 arşivlerindeki dolu `(id, version)` kimlikleriyle adayın 1015 yeni içerik sürümü çakışmaz; canlı hedef için ayrıca salt okunur kontrol gerekir. Eski oyunların cevap/sıra/puan/XP/rozetleri yeniden hesaplanmaz. Mevcut exporter draft v73’ü reddeder.
+V72 SHA-256: `d1dcd3e92f4d331d187fcbf4c3459a1837ef979413a743c0d3ec4a43d7023115`. Korunan 30 anlam sorusu nesne içeriğiyle aynıdır. Eski ezber soruları geri getirilmedi. Yerel v2–v72 arşivlerindeki dolu `(id, version)` kimlikleriyle adayın 1029 yeni içerik sürümü çakışmaz; canlı hedef için ayrıca salt okunur kontrol gerekir. Eski oyunların cevap/sıra/puan/XP/rozetleri yeniden hesaplanmaz. Mevcut exporter draft v73’ü reddeder.
 
 ## Tekrarlanabilir kontroller
 
@@ -72,7 +76,7 @@ pnpm exec tsx scripts/build-editorial-audit.ts --check
 pnpm export:web
 ```
 
-Son 1.500 kayıt ve kaynak karşılaştırmasını içeren kontrol noktasında **345/345 test**, TypeScript, lint, soru bütünlüğü, iki editoryal üreticinin `--check` doğrulaması ve web export geçti. Yeni aday testi etkinleştirmeden 18 kategori/zorluk birleşiminin v72 ile aynı kullanılabilirliğini, 17 açılabilir havuzu ve 4.500 karıştırılmış gösterim sırasını denetler. Bunlar cihazda oynanmış tur veya canlı çevrimiçi kabul değildir.
+Son 23 tekrar düzenlemesini ve ek çift kayıtlarını içeren kontrol noktasında **346/346 test**, TypeScript, lint, soru bütünlüğü, iki editoryal üreticinin `--check` doğrulaması ve web export geçti. Eski bir tekrarın sözcük eşiğinin altına düşünce denetimden kaybolmaması ve ters sırayla ikinci kez kaydedilmemesi de test edilir. Yeni aday testi etkinleştirmeden 18 kategori/zorluk birleşiminin v72 ile aynı kullanılabilirliğini, 17 açılabilir havuzu ve 4.500 karıştırılmış gösterim sırasını denetler. Bunlar cihazda oynanmış tur veya canlı çevrimiçi kabul değildir.
 
 ## Yayın sınırı
 

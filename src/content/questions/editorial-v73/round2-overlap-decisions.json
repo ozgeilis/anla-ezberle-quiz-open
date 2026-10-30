@@ -2,9 +2,9 @@
   {
     "a": "q60-erkam-safa",
     "b": "q60-erkam-hizmet",
-    "snapshotSha256": "7c6c3eb70c2de44b08056b669ee71231569d802c3268fc1b877a8c02fdc1bc0a",
-    "verdict": "repeated-fact",
-    "reason": "Aynı evin Safâ eteğinde bulunması iki ayrı kökte aynen soruluyor; yeni bağlamla düzeltme gerekir."
+    "snapshotSha256": "556df885e92cb7348448ffcbd9d178a9b97e12933272552ba0f375a1fc6e775e",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Safâ konumu q60-erkam-safa ile aynı bilgiyi tekrarlıyordu; bu evin belgelenmiş ikinci adı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "q69-zeydbsabit-cem",
@@ -37,100 +37,100 @@
   {
     "a": "learn-women-005",
     "b": "q69-enesbmalik-anne",
-    "snapshotSha256": "1dc737230b5bd3ff94922a3ae65abdd9f74c675b8554bdff35f7e9e9fa1d509d",
-    "verdict": "repeated-fact",
-    "reason": "Enes’in annesinin Ümmü Süleym olması iki kökte aynı bilgi; iki farklı soru olarak kabul verilmedi."
+    "snapshotSha256": "ae0183484484de806c0c246c8543ec9c6a9c932702ed56d4a98d31d959940a0e",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Anne bilgisi learn-women-005 ile tekrardı; aynı ailede farklı bir akrabalık ilişkisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v12-history-004",
     "b": "q59-evliya-cilt",
-    "snapshotSha256": "9879d3a2e3ecf9733a53a8c6eea28429b66c59897a5a887fd11e35d3c6b7a6fc",
-    "verdict": "repeated-fact",
-    "reason": "Seyahatnâme’nin on cilt olması iki kökte aynı nicelik; ikinci kök farklı bilgiye bağlanmalı."
+    "snapshotSha256": "1843ff3e7dcd0073558e62db963d7c6d3569c93c46a26a819823ffddbca17d85",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. On cilt bilgisi q59-evliya-cilt ile tekrardı; zor etikete uygun eser aktarım tarihçesi seçildi. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "e150-history-026",
     "b": "q56-akabe-yil1",
-    "snapshotSha256": "8117175ea4ca6c85bc2b5ea1e2bc3c1f7b251813653b862e9aec4dda08066342",
-    "verdict": "repeated-fact",
-    "reason": "Birinci Akabe’nin 621 tarihi iki kökte aynı olay ve tarih; yazım farkı ayrı bilgi oluşturmaz."
+    "snapshotSha256": "a82183969254802d28eeecd8eabae0f3118fca6e4fe233fd3bf0140a0049394d",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 621 tarihi q56-akabe-yil1 ile tekrardı; biatın kaynakta açıklanan diğer adı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v13-general-008",
     "b": "q51-muahat-014",
-    "snapshotSha256": "4b470cf64b1257b0a5b2578485153ad6fe6505d1f5a908b1c14251dd806dc1f9",
-    "verdict": "repeated-fact",
-    "reason": "Hucurât 49/10’da kardeşlik kavramı iki soruda aynı anlamla ölçülüyor."
+    "snapshotSha256": "f9a7a7cb8045f079e047568e526b31bc4be6753022d9f51367123721dac625bb",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Hucurât 49/10’daki kardeşlik cevabı v13-general-008 ile tekrardı; muâhâtın ayrı bir ilmî uygulama örneği soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "e150-history-018",
     "b": "q64-bedir-sefer",
-    "snapshotSha256": "09efb60ae68e93d96487ec1b524ca9438d33cb72c0fa727c4f2e7aa7c27f45ee",
-    "verdict": "repeated-fact",
-    "reason": "Bedir’in milâdî 624 yılı iki kökte aynı bilgi; yaşanmıştır/gerçekleşmiştir farkı anlamı ayırmaz."
+    "snapshotSha256": "0a16bf15c48dd284fde9ae2a892f9d941274666b1d244515d9998e982e230e93",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 624 tarihi q64-bedir-sefer ile tekrardı; aynı olayda ayrı bir görev ilişkisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v11-history-009",
     "b": "q59-battuta-dogum",
-    "snapshotSha256": "136f5d59daebd5482327c6e17eb6fb887d1113ce2e9cef79faeb00eca729d366",
-    "verdict": "repeated-fact",
-    "reason": "İbn Battûta’nın Tanca doğumu iki kökte tekrar ölçülüyor."
+    "snapshotSha256": "f794d9d36912fa60d843d934579f1e4ff757c619b2e96e0511cc907714011b7d",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Tanca doğumu q59-battuta-dogum ile tekrardı; ilk büyük yolculuğun tarihi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "q58-suleym-ogul",
     "b": "q69-enesbmalik-yil",
-    "snapshotSha256": "22513fb277a84733475391ef78f0f3dc356542d85ec04d9a817061b46444f69a",
-    "verdict": "repeated-fact",
-    "reason": "Enes’in on yıl hizmeti iki kökte aynı olgu; bir kökte annenin adının geçmesi ayrı hedef değildir."
+    "snapshotSha256": "e74f0f63501bdff7ea629dcacef7aafe5e42d696d5d94fbb446928c8ce8919cc",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. On yıllık hizmet q69-enesbmalik-yil ile tekrardı; Ümmü Süleym’in aile ilişkilerinden ayrı bir bilgi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v10-prophets-011",
     "b": "q67-kasas-27",
-    "snapshotSha256": "3c487dbe45db6b08b2980aee666c2c0150e2b43fdb3e4b5b9425fb030e35634f",
-    "verdict": "repeated-fact",
-    "reason": "Kasas 28/27’de sekiz yıllık başlangıç hizmeti aynı ayet ve sayı ile iki kez soruluyor."
+    "snapshotSha256": "7a6d9b2a665ed786cf63f38bbe185e6d90db7c87e444d131acad132fa9312563",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Sekiz yıllık hizmet q67-kasas-27 ile tekrardı; aynı kıssanın ayrı bir yer tarifi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v9-history-009",
     "b": "q63-nizamiye-bani",
-    "snapshotSha256": "d1fcaff1d5a5137228ef4d419831dc24a96b36ae81de016f7c94699ca46cecab",
-    "verdict": "repeated-fact",
-    "reason": "Bağdat Nizâmiye’nin Nizâmülmülk tarafından yaptırılması iki kökte tekrar ölçülüyor."
+    "snapshotSha256": "2219de74f76394a2ce5d6d3fe46570e553cfc8983e65639147f815a872dec081",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Kurucu Nizâmülmülk q63-nizamiye-bani ile tekrardı; kurumun ayrı bir vakfiye şartı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v11-prophets-011",
     "b": "q66-meryem-7",
-    "snapshotSha256": "a45c3830c62852f0ff56f03b76c0e525949a18718fee05dc530b80bd89e0b286",
-    "verdict": "repeated-fact",
-    "reason": "Zekeriyyâ’ya Meryem 19/7’de Yahyâ müjdesi iki sorunun ortak tek hedefi."
+    "snapshotSha256": "f6926d2b0de05cde3db1d1e9788b673f73f22c513ca757a4991f806bcefbaa8f",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Yahyâ adı q66-meryem-7 ile tekrardı; oğul müjdesine verilen ayrı bir açıklama soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v13-quran-010",
     "b": "q65-furkan-63",
-    "snapshotSha256": "7562e15733d3ed45bb04bef19e2c86c06fc9a47048d7a82f719dea9e6d6ff6f9",
-    "verdict": "repeated-fact",
-    "reason": "Furkân 25/63’te yürüyüşün tevazu niteliği iki kökte aynı hedef; yeni örnek standart doğru olsa da ikinci soru tekrardır."
+    "snapshotSha256": "3a6fc565c24a9b48eb05a0ab9aed06a6fbc22419917127274eae62f81b92d8f9",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Yürüyüşte tevazu v13-quran-010 ile tekrardı; aynı âyetin farklı bir cümlesi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "pilot-prophets-003",
     "b": "q61-isa-incil",
-    "snapshotSha256": "38ef46b2f64f50e5d060d1409c1d75e299cc4ddf98e4057f5244f152f97b36d1",
-    "verdict": "repeated-fact",
-    "reason": "Îsâ’ya İncil verilmesi iki kökte aynı olgu; Kur’an’a atıf farkı ayrı bilgi değildir."
+    "snapshotSha256": "f81d55fc0e2ffc29dad6671e9322b123384311bb542455185a9066fefedd8945",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İncil cevabı pilot-prophets-003 ile tekrardı; Îsâ’nın konuşmasındaki ayrı ibadet ikilisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "q47-hac-038",
     "b": "q62-say-mekan",
-    "snapshotSha256": "b47d72c5862dfe0a01ea82dd87298ef5380435ced59edecf1f31f20716133c62",
-    "verdict": "repeated-fact",
-    "reason": "Sa‘yin Safâ ile Merve arasında olması iki kökte aynı mekân çiftini ölçüyor."
+    "snapshotSha256": "ab8f23feda9a4efb02a29248073d76cf2766146b5d481d6ed6e52f7e0b42df81",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İki tepenin adı q47-hac-038 ile tekrardı; başlangıç ve bitişin ayrımı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v9-history-008",
     "b": "q59-beyt-sehir",
-    "snapshotSha256": "f32c0f88d0fef885743627bd9d8ec0b8d39cffe4abebc369b512c8a27b6ab3bb",
-    "verdict": "repeated-fact",
-    "reason": "Beytülhikme’nin Bağdat’ta bulunması iki kökte aynı olgu; ayrı soru olarak tekrar kontrolü açık."
+    "snapshotSha256": "a6d2a9457262c096fd37ae6d49e077b9ff7c544ef5396236be816a0be1a38813",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Bağdat şehri q59-beyt-sehir ile tekrardı; kurumun şehir içindeki yapı ilişkisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "e150-quran-032",
@@ -485,9 +485,9 @@
   {
     "a": "q58-suleym-ogul",
     "b": "q58-suleym-rivayet",
-    "snapshotSha256": "72844691e23a92bb3dc873e3ab9115db40ea9c79f0b2e3e24504dddb0dca7da5",
+    "snapshotSha256": "5f91b68f230f62d090efc83510a1284e4d9ed63346b47c36b0ef162a8407774a",
     "verdict": "distinct-context",
-    "reason": "Enes’in hizmet süresi ve annesinin rivayet sayısı farklı kişilerle ilgili farklı sayısal olgular."
+    "reason": "Eş/üvey baba kimliği ile rivayet edilen hadis sayısı farklı iki hedeftir."
   },
   {
     "a": "q69-ebueyyubelensari-akabe",
@@ -1220,16 +1220,16 @@
   {
     "a": "q69-enesbmalik-anne",
     "b": "q69-enesbmalik-teyze",
-    "snapshotSha256": "d967cecbf07cea1b4d7a83b2c3df827fcbc3d2efcb3ba9e90017ac8ff39675dc",
+    "snapshotSha256": "3aa52f99565ffd1fca37dcc9f2bf42475b2af3ba6dddbcac675c9c5cf300fc98",
     "verdict": "distinct-context",
-    "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Ümmü Süleym”, ikinci hedef “Ümmü Harâm”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+    "reason": "Berâ ile kardeşlik ve Ümmü Harâm ile teyzelik iki ayrı aile bağıdır."
   },
   {
     "a": "q69-enesbmalik-kunye",
     "b": "q69-enesbmalik-anne",
-    "snapshotSha256": "a352456746045a2e9ab87bba6c2a42959bc9c71d8ed428a96ca5b4bf71fbee99",
+    "snapshotSha256": "6e269311ca9186a70384f23cb37f869a812db845a1bcd772cb1fe5eb86edea40",
     "verdict": "distinct-context",
-    "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Ebû Hamza”, ikinci hedef “Ümmü Süleym”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+    "reason": "Ebû Hamza künyesi ile kardeşi Berâ b. Mâlik’in kimliği farklı iki bilgidir."
   },
   {
     "a": "q69-enesbmalik-lakap",
@@ -2200,9 +2200,9 @@
   {
     "a": "q66-kehf-10",
     "b": "q66-kehf-16",
-    "snapshotSha256": "67b0b1ec03d020e61ad5f99b43f07041082bb73dfdb2d3598d201e1abfa7d1a8",
+    "snapshotSha256": "5b86209e2b9b2d64a8248ba46c70eb43d5642d3d93773a20b8ed20b3db3cc23f",
     "verdict": "distinct-context",
-    "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Rahmet ve doğru yol”, ikinci hedef “Mağara”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+    "reason": "18/12’de hesaplanacak süre ile 18/16’da seçilen sığınak farklı hedeflerdir; aynı mağara sahnesi sebebiyle ilişkili içeriktir."
   },
   {
     "a": "q66-kehf-13",
@@ -2487,9 +2487,9 @@
   {
     "a": "e150-history-026",
     "b": "e150-history-027",
-    "snapshotSha256": "7d2f8d1b967da19667b357937b8a30862c1580e0510a48bc7a0be4929174b812",
+    "snapshotSha256": "a74c8c4189880827993fa03411d54816339679404e72d338af8cc097ed0188a3",
     "verdict": "distinct-context",
-    "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “621”, ikinci hedef “622”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+    "reason": "Birinci biatın diğer adı ile ikinci biatın yılı ayrı bilgilerdir."
   },
   {
     "a": "pilot-history-001",
@@ -2522,9 +2522,9 @@
   {
     "a": "v7-history-003",
     "b": "q57-hayberdate",
-    "snapshotSha256": "7837df83d38fa9aee416b931903aebe74840bd01dafae55f57427f8728ebf985",
-    "verdict": "repeated-fact",
-    "reason": "Hayber’in hicrî yedinci yıl tarihi sayı ve yazıyla iki kökte aynı olay olarak soruluyor."
+    "snapshotSha256": "5a70a34e6a9b911d1c44e7b6c672f549812f4b8bf91f929d0cc65b5cd8d18e3b",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Hicrî 7 tarihi q57-hayberdate ile tekrardı; aynı olayın ayrı ekonomik düzenlemesi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "e150-quran-031",
@@ -2599,9 +2599,9 @@
   {
     "a": "learn-dua-024",
     "b": "q66-kehf-10",
-    "snapshotSha256": "b61daecd679219b06a7772d30d352d9d16d04251d29140a69c450e5f74d04c9b",
-    "verdict": "repeated-fact",
-    "reason": "Kehf 18/10 gençlerin duası iki yakın meal ifadesiyle aynı iki talebi soruyor; çıkış yolu/doğru yol ifadesi ayrı öğrenme hedefi oluşturmaz."
+    "snapshotSha256": "080b7e3be973157415d4f5732851ca3ad7da7ab80fdf8474b2e0c065617e6973",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Rahmet ve çıkış yolu duası learn-dua-024 ile tekrardı; aynı kıssadaki farklı hesap konusu soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "q47-harun-032",
@@ -2690,16 +2690,16 @@
   {
     "a": "v10-prophets-012",
     "b": "q66-meryem-16",
-    "snapshotSha256": "c6ae2f35e45448277f1ff73b9c79e1882de206094405b12804e142d736657af1",
-    "verdict": "repeated-fact",
-    "reason": "Meryem’in doğu yönüne çekilmesi aynı ayette iki farklı yönelme ekiyle soruluyor."
+    "snapshotSha256": "0bd2b60321fa0ad3bbe5d6d5188fc979707fa84930e40cab27db0c35d0000ea3",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Doğuya çekilme v10-prophets-012 ile tekrardı; doğacak çocuğun aynı kıssadaki ayrı niteleme ikilisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v7-prophets-001",
     "b": "q61-meryem-himaye",
-    "snapshotSha256": "9b85d4b140ecd06609bc10e54c01798d73853087b8a3100da09329b66dbb5506",
-    "verdict": "repeated-fact",
-    "reason": "Meryem’in himayesinin Zekeriyyâ’ya verilmesi iki kökte aynı kişi/olay."
+    "snapshotSha256": "d6a57beb3206e99fae705a62baab0b48590d92867598a50d79559d2c0ffce5ec",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Zekeriyyâ’nın himayesi q61-meryem-himaye ile tekrardı; Meryem’in annesinin ayrı adağı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "v8-quran-002",
@@ -2718,9 +2718,9 @@
   {
     "a": "e150-prophets-028",
     "b": "q57-nuh950",
-    "snapshotSha256": "be74613bf5ece021dc37511dcf355baeb1567e3cbbc8a7ee2017a0e3000faab7",
-    "verdict": "repeated-fact",
-    "reason": "Nûh’un kavmi arasında 950 yıl kalması sayı ve yazıyla iki defa soruluyor."
+    "snapshotSha256": "7cb4d5d3eab1e162e530fb32932edc003b8b166a7e0d9b6000b9306767884b79",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 950 yıl bilgisi q57-nuh950 ile tekrardı; daveti reddetmenin farklı bir tasviri soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "learn-dua-019",
@@ -2739,9 +2739,9 @@
   {
     "a": "e150-history-020",
     "b": "v7-history-003",
-    "snapshotSha256": "8125b7082ddf4f95daaebaf8bf81c5043acadb4885666f2a4557eed51e3bd668",
+    "snapshotSha256": "59e2f8736f8d931618f20f7928ed258a4e7a397fcec5aabe339d22269a5c1054",
     "verdict": "distinct-context",
-    "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “3”, ikinci hedef “7”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+    "reason": "Uhud’un yılı ile Hayber’de mahsul ortakçılığının oranı ayrı olay ve ölçülerdir."
   },
   {
     "a": "e150-history-023",
@@ -2767,9 +2767,9 @@
   {
     "a": "e150-prophets-001",
     "b": "q57-yusufruya",
-    "snapshotSha256": "168c6f1f9d438c4136338d23137ebef60db26dabdb623c65ae9ed6b7eb037f1a",
-    "verdict": "repeated-fact",
-    "reason": "Yûsuf’un rüyasındaki on bir yıldız aynı bilgi olarak sayı ve yazıyla soruluyor."
+    "snapshotSha256": "a202475edf222bd2bf91ada592ea82cfc207bac80fad4dc251f1759b6085116b",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Rüyadaki on bir yıldız q57-yusufruya ile tekrardı; ayrı bir olay ve gerekçesi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "e150-prophets-004",
@@ -2781,9 +2781,9 @@
   {
     "a": "pilot-history-001",
     "b": "v7-history-003",
-    "snapshotSha256": "79e71ef85eedc7f3d0bf1c443b7bd5daf961836c7dd584ab970f672952ea27b3",
+    "snapshotSha256": "109ecbc8d8ed25e5415b27afe08dbe39773459b0bc334ed6904ed51a4b51c11d",
     "verdict": "distinct-context",
-    "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “2.”, ikinci hedef “7”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+    "reason": "Bedir’in hicrî yılı ile Hayber’deki ürün payı farklı olay ve hedeflerdir."
   },
   {
     "a": "q47-harun-032",
@@ -2830,15 +2830,176 @@
   {
     "a": "e150-prophets-030",
     "b": "learn-dua-011",
-    "snapshotSha256": "c7e595bf95a0aefc6ce3379fdd5eee17178abc53e0509878744d7980de599b96",
-    "verdict": "repeated-fact",
-    "reason": "Bakara 2/127’de Kâbe inşasının kabul edilmesi duası, iş/ibadet ifadesi farkıyla aynı hedef."
+    "snapshotSha256": "49eef0ac523d8bf364067b09a87ac3d1dc5042623722aaef2ae952c8f8824f13",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 2/127’de kabul duası learn-dua-011 ile tekrardı; sonraki duanın ayrı bir talebi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
   },
   {
     "a": "quran-meaning-v72-026",
     "b": "v13-general-009",
-    "snapshotSha256": "05f92f538d259e201983fd191032ecc925be1878f3b9f051dc0da8151fddafda",
+    "snapshotSha256": "5553f7cd3b56a036acf2ccf51ce86fd8855c36c145cd361448a70c289267194b",
+    "verdict": "distinct-context",
+    "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İzin ve selâm quran-meaning-v72-026 ile tekrardı; korunan soruya dokunmadan sonraki âyetin farklı koşulu soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+  },
+  {
+    "a": "q60-erkam-sahip",
+    "b": "q60-erkam-hizmet",
+    "snapshotSha256": "0fc3265f3f664b70ba3a38eb441e6720c909993a2cf9f54dff75e73b45b486db",
+    "verdict": "distinct-context",
+    "reason": "Evin sahibi Erkam ile evin diğer adı Dârülislâm farklı hedeflerdir; aynı evde geçen ilişkili bilgilerdir."
+  },
+  {
+    "a": "q65-furkan-63",
+    "b": "q65-furkan-77",
+    "snapshotSha256": "c776e2483654f441749d8a01fff0166dcbb66192d9544b1094b129813ae07f2f",
+    "verdict": "distinct-context",
+    "reason": "25/63’te sataşmaya verilen esenlik cevabı ile 25/77’de değer/dua ilişkisi farklı ayet ve hedeflerdir."
+  },
+  {
+    "a": "q69-enesbmalik-lakap",
+    "b": "q69-enesbmalik-anne",
+    "snapshotSha256": "296d6edc1544b7a8610cdf1786f4431b293c48c273b1067c9805949ca0a9b5e0",
+    "verdict": "distinct-context",
+    "reason": "Hâdimü’n-Nebî unvanı ile kardeşi Berâ b. Mâlik’in kimliği farklı hedeflerdir."
+  },
+  {
+    "a": "history-009",
+    "b": "q60-erkam-hizmet",
+    "snapshotSha256": "4fc80e157a8f0452a18784f34d716f2e5b643055a6d29eb183798535ec9eb223",
+    "verdict": "distinct-context",
+    "reason": "Mekânın yaygın adı Dârülerkam ile ek adı Dârülislâm farklı adlandırma hedefleridir. Bir kök diğer mekânı adlandırdığından aynı turdaki ipucu etkileşimi ayrıca izlenmelidir."
+  },
+  {
+    "a": "q47-bedir-001",
+    "b": "q64-bedir-kervan",
+    "snapshotSha256": "d06be9e96da2ec5a78e227356c01d8e21f7273ba5f87fc344ee869e0c67a2caf",
     "verdict": "repeated-fact",
-    "reason": "Nûr 24/27’de izin ve selam iki kökte aynen soruluyor; korunması istenen v72 anlam sorusu değiştirilmeden diğer aday ayrıca ele alınmalı."
+    "reason": "Bedir öncesi kervanı yöneten Ebû Süfyân aynı kişi/olay bilgisiyle tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "e150-prophets-008",
+    "b": "v11-prophets-003",
+    "snapshotSha256": "da0b2019ef02d057f493477518a5b41b704d3516cce2926adca037cdfed119f0",
+    "verdict": "repeated-fact",
+    "reason": "Zindan/hapishane eş anlamlıdır; Yûsuf’un bulunduğu yer aynı olay dizisinin iki anlatımıyla soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "e150-prophets-012",
+    "b": "v12-prophets-008",
+    "snapshotSha256": "74475822fa5e9347f86c631df3a486490923feece58c3c813199ccf5598d718e",
+    "verdict": "repeated-fact",
+    "reason": "Yûsuf 12/84’te Ya‘kūb’un gözlerinin ağarması aynı bilgiyle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "q48-yusuf-034",
+    "b": "q57-yusufzindan",
+    "snapshotSha256": "c964e45a7e6dd3ce449550812785ba8a2eb105e25d77743c941637c3116c4c73",
+    "verdict": "repeated-fact",
+    "reason": "12/36’daki iki zindan gencinin sayısı aynı kıssada tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "q60-nebevi-misafir",
+    "b": "v9-history-001",
+    "snapshotSha256": "42879028ef4b506d37d758cc27fc11dfe7311f1ae63bd40e62204b8ba311a010",
+    "verdict": "repeated-fact",
+    "reason": "Hicret sonrası ev sahipliği yapan Ebû Eyyûb aynı kişi/olay hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "e150-history-028",
+    "b": "q56-akabe-egitmen",
+    "snapshotSha256": "90d784fed8476ec1e11b5a77094e1a8aa48c17891be32cd74d6f6e4e5883c341",
+    "verdict": "repeated-fact",
+    "reason": "Birinci Akabe’den sonra Yesrib’e öğretici gönderilen Mus‘ab aynı görevle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "e150-history-027",
+    "b": "q69-ebueyyubelensari-akabe",
+    "snapshotSha256": "638df8809f362598d80b7cc5b3c9c8bddd8ef4fc90cc0846dfe9899240f51bdd",
+    "verdict": "repeated-fact",
+    "reason": "İkinci Akabe’nin 622 tarihi, katılımcı Ebû Eyyûb köke eklense de aynı tarih bilgisidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v10-prophets-005",
+    "b": "e150-prophets-021",
+    "snapshotSha256": "f47431a222c6324b6e927d030238b37955102277c5c50e823880eeee979183df",
+    "verdict": "repeated-fact",
+    "reason": "Neml 27/18’deki karınca/karıncalar aynı canlı hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v10-prophets-008",
+    "b": "e150-prophets-023",
+    "snapshotSha256": "5c2aac5cae36b71619b3ef327659eef042d782e525e4435c5f81786b19fde383",
+    "verdict": "repeated-fact",
+    "reason": "Hüdhüdün getirdiği haberin Sebe halkı/ülkesi ile ilişkisi aynı kıssa hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "q47-suleyman-026",
+    "b": "q66-neml-16",
+    "snapshotSha256": "857b06cad659764a03a193c3f115055a2794d3efd41256210730f945c0e2e610",
+    "verdict": "repeated-fact",
+    "reason": "Neml 27/16’daki kuş dili bilgisi aynı hedefle tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "q50-zekeriyya-020",
+    "b": "q66-meryem-3",
+    "snapshotSha256": "e61747c10c13358cc625213057ad2b19d65e11389fb7a3834a8410345fb32379",
+    "verdict": "repeated-fact",
+    "reason": "Meryem 19/3’te alçak sesle dua aynı nitelik hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v8-prophets-004",
+    "b": "q66-meryem-54",
+    "snapshotSha256": "9fec66af5d26b0315bdbdaec4d6bff890afc37f86861c5ae55746a7758c77667",
+    "verdict": "repeated-fact",
+    "reason": "Meryem 19/54’te İsmâil/sözünde durma eşleşmesi ters yönde sorulsa da aynı olgudur. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "q71-idris-siddik",
+    "b": "q66-meryem-56",
+    "snapshotSha256": "aba698fed636567f270a64b57f9bc73c77f153f59c859290e06724deb4e5975d",
+    "verdict": "repeated-fact",
+    "reason": "Meryem 19/56’da İdrîs/özü sözü doğruluk eşleşmesi ters yönde tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "learn-dua-007",
+    "b": "q65-furkan-74",
+    "snapshotSha256": "0a62ee761963e56da20f37bf29269561e8021c2865657c80329cd4657032cc1b",
+    "verdict": "repeated-fact",
+    "reason": "25/74’te eş ve çocukların göz aydınlığı olması aynı dua hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v13-general-012",
+    "b": "q67-ankebut-45",
+    "snapshotSha256": "a62cd45ec99c24a6e20bb643ab00aa69464b6e921f0d50b01b3323961b5297d2",
+    "verdict": "repeated-fact",
+    "reason": "29/45’te namazın hayâsızlık ve kötülükten alıkoyması aynı ilişkiyle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v10-prophets-002",
+    "b": "q66-kehf-79",
+    "snapshotSha256": "d1199548abfb3963dd90e5eb83bf807916f8c2b48d85ac0ead973705ddc0b4f6",
+    "verdict": "repeated-fact",
+    "reason": "18/79’daki gemi sahiplerinin denizde çalışan yoksullar olması aynı hedefle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v10-prophets-003",
+    "b": "q66-kehf-82",
+    "snapshotSha256": "caf1571f3b10f0f5764976366a2965f452b0e0c5fc1ced7b0ac7e3d89a42fbb5",
+    "verdict": "repeated-fact",
+    "reason": "18/82’deki hazine sahipleri olan iki yetim aynı hedefle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "v11-prophets-007",
+    "b": "q67-kasas-7",
+    "snapshotSha256": "d04ec8bcfd198840fa5e847e6d07b654dff96f5c70861ac10a1c90c56750dc44",
+    "verdict": "repeated-fact",
+    "reason": "28/7’de bebeğin nehre bırakılması aynı talimatla soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+  },
+  {
+    "a": "learn-women-005",
+    "b": "q58-suleym-anne",
+    "snapshotSha256": "38146fec175ec9ef6d333d8596224e4c7fe0f598f4ca31a3e8974f7d82abf451",
+    "verdict": "repeated-fact",
+    "reason": "Ümmü Süleym ile Enes arasındaki anne/oğul eşleşmesi ters yönde tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
   }
 ]

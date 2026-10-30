@@ -819,37 +819,37 @@
         ]
       },
       "after": {
-        "question": "Nûr 24/27'de başkasının evine girmeden önce ne yapılması istenir?",
+        "question": "Nûr 24/28’de ev sahibi ziyareti kabul edemediğini bildirdiğinde hangi davranış istenir?",
         "options": [
           {
             "id": "o4",
-            "text": "Hal hatır sormak ve teşekkür etmek"
+            "text": "Ortak tanıdığa haber verilmesi"
           },
           {
             "id": "o2",
-            "text": "İzin istemek ve selâm vermek"
+            "text": "Geri dönülmesi"
           },
           {
             "id": "o1",
-            "text": "Hediye götürmek ve ikramda bulunmak"
+            "text": "Uygun saatin sorulması"
           },
           {
             "id": "o3",
-            "text": "Randevu almak ve zamanında gelmek"
+            "text": "Kapıda biraz beklenmesi"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İzin istemek ve selâm vermek",
-        "explanation": "Nûr 24/27, başka evlere girerken izin istenmesini ve ev halkına selâm verilmesini öğütler.",
+        "correctAnswer": "Geri dönülmesi",
+        "explanation": "Nûr 24/28’de kabul edemeyip geri dönülmesi istendiğinde dönmek emredilir. Bu, hiç kimse bulunmadığında izin gelene kadar eve girmeme hükmünden ayrı koşuldur.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Nûr 24/27; PDF sayfa 371",
-            "supports": "Nûr 24/27, başka evlere girerken izin istenmesini ve ev halkına selâm verilmesini öğütler.",
+            "locator": "24/28; PDF fiziksel sayfa 371",
+            "supports": "Nûr 24/28’de kabul edemeyip geri dönülmesi istendiğinde dönmek emredilir. Bu, hiç kimse bulunmadığında izin gelene kadar eve girmeme hükmünden ayrı koşuldur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -858,28 +858,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v13-general-009",
-        "reviewedCandidateSha256": "e820312b8fe9383d2f3b87413d4e4ba7a5b10e2f8a6941deaac9e09da732a8b7",
+        "reviewedCandidateSha256": "4e88c07c75a5891259ed1e023dc1da17240529cb53020b56969e259c8a8aa7da",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Önceki adayda eve girerken vedalaşmak gibi bağlama uymayan şık kaldığı görüldü. Dört olumlu ziyaret davranışı aynı iki eylem yapısında.",
+        "reason": "Önceki adayda eve girerken vedalaşmak gibi bağlama uymayan şık kaldığı görüldü. Dört olumlu ziyaret davranışı aynı iki eylem yapısında. Ek banka karşılaştırması: İzin ve selâm quran-meaning-v72-026 ile tekrardı; korunan soruya dokunmadan sonraki âyetin farklı koşulu soruldu.",
         "optionReview": {
-          "o4": "Olumlu ama ayette istenen çift değil.",
-          "o2": "Ayetin açıkça birlikte istediği eylemler.",
-          "o1": "Olumlu ama ayette istenen çift değil.",
-          "o3": "Olumlu ama ayette istenen çift değil."
+          "o4": "Makul bir iletişim seçeneğidir; metinde bu durumda emredilen davranış değildir.",
+          "o2": "Mealde kabul edemeyip dönün denmesi halinde dönmeleri istenir.",
+          "o1": "Nazik bir iletişim davranışı olabilir; bu âyetin o durumda emrettiği cevap değildir.",
+          "o3": "İzin bekleme ile geri dönme talebine uyma ayrıldı; bu durumda istenen beklemek değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Aynı ayet/kavram/kişi için önceki paketlerde yakın öğrenme hedefleri var. Yeni soru eklenmedi; conceptGroup korundu. Banka çapındaki son tekrar/sıklık ve zorluk dengesi incelemesi tamamlanmış değildir.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "Nûr 24/27; PDF sayfa 371",
+          "locator": "24/28; PDF fiziksel sayfa 371",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

@@ -1,38 +1,13 @@
 {
   "method": "Turkish token overlap plus explicit semantic pair decisions; not exhaustive semantic proof",
-  "candidatePairs": 406,
-  "individuallyReviewedPairs": 406,
+  "candidatePairs": 429,
+  "automaticCandidatePairs": 384,
+  "retainedExplicitPairs": 45,
+  "individuallyReviewedPairs": 429,
   "pendingPairs": 0,
-  "repeatedFactPairs": 23,
+  "repeatedFactPairs": 19,
   "independentApproval": false,
   "records": [
-    {
-      "a": "q60-erkam-safa",
-      "b": "q60-erkam-hizmet",
-      "score": 1,
-      "sameAnswer": true,
-      "sameConcept": true,
-      "signal": "same-answer-and-concept",
-      "questions": [
-        {
-          "id": "q60-erkam-safa",
-          "question": "Dârülerkam, Mekke'de hangi tepenin eteklerinde bulunuyordu?",
-          "answer": "Safâ"
-        },
-        {
-          "id": "q60-erkam-hizmet",
-          "question": "Dârülerkam Mekke'de hangi tepenin eteklerinde bulunuyordu?",
-          "answer": "Safâ"
-        }
-      ],
-      "decision": {
-        "a": "q60-erkam-safa",
-        "b": "q60-erkam-hizmet",
-        "snapshotSha256": "7c6c3eb70c2de44b08056b669ee71231569d802c3268fc1b877a8c02fdc1bc0a",
-        "verdict": "repeated-fact",
-        "reason": "Aynı evin Safâ eteğinde bulunması iki ayrı kökte aynen soruluyor; yeni bağlamla düzeltme gerekir."
-      }
-    },
     {
       "a": "q69-zeydbsabit-cem",
       "b": "q69-zeydbsabit-istinsah",
@@ -52,6 +27,7 @@
           "answer": "Zeyd b. Sâbit"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-cem",
         "b": "q69-zeydbsabit-istinsah",
@@ -79,6 +55,7 @@
           "answer": "Medine"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-malik-b-enes-egitim",
         "b": "q70-malik-b-enes-vefat",
@@ -106,6 +83,7 @@
           "answer": "Ebû Bekir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-vasita",
         "b": "q69-bilalihabesi-azat",
@@ -133,6 +111,7 @@
           "answer": "Bağdat"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ahmed-b-hanbel-dogum",
         "b": "q70-ahmed-b-hanbel-vefat",
@@ -142,381 +121,171 @@
       }
     },
     {
-      "a": "learn-women-005",
-      "b": "q69-enesbmalik-anne",
-      "score": 1,
+      "a": "e150-history-027",
+      "b": "q69-ebueyyubelensari-akabe",
+      "score": 0.417,
       "sameAnswer": true,
       "sameConcept": false,
       "signal": "same-answer",
       "questions": [
         {
-          "id": "learn-women-005",
-          "question": "Sahâbî Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
-          "answer": "Ümmü Süleym"
+          "id": "e150-history-027",
+          "question": "İkinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
+          "answer": "622"
         },
         {
-          "id": "q69-enesbmalik-anne",
-          "question": "Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
-          "answer": "Ümmü Süleym"
+          "id": "q69-ebueyyubelensari-akabe",
+          "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
+          "answer": "622"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "learn-women-005",
-        "b": "q69-enesbmalik-anne",
-        "snapshotSha256": "1dc737230b5bd3ff94922a3ae65abdd9f74c675b8554bdff35f7e9e9fa1d509d",
+        "a": "e150-history-027",
+        "b": "q69-ebueyyubelensari-akabe",
+        "snapshotSha256": "638df8809f362598d80b7cc5b3c9c8bddd8ef4fc90cc0846dfe9899240f51bdd",
         "verdict": "repeated-fact",
-        "reason": "Enes’in annesinin Ümmü Süleym olması iki kökte aynı bilgi; iki farklı soru olarak kabul verilmedi."
+        "reason": "İkinci Akabe’nin 622 tarihi, katılımcı Ebû Eyyûb köke eklense de aynı tarih bilgisidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
-      "a": "v12-history-004",
-      "b": "q59-evliya-cilt",
-      "score": 0.778,
+      "a": "e150-history-028",
+      "b": "q56-akabe-egitmen",
+      "score": 0.235,
       "sameAnswer": true,
       "sameConcept": false,
       "signal": "same-answer",
       "questions": [
         {
-          "id": "v12-history-004",
-          "question": "Evliya Çelebi'nin Seyahatnâme'si kaç ciltten oluşur?",
-          "answer": "On"
+          "id": "e150-history-028",
+          "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
+          "answer": "Mus‘ab b. Umeyr"
         },
         {
-          "id": "q59-evliya-cilt",
-          "question": "Evliya Çelebi'nin Seyahatnâme adlı eseri kaç ciltten oluşur?",
-          "answer": "On"
+          "id": "q56-akabe-egitmen",
+          "question": "Birinci Akabe Biatı sonrasında Yesrib'e Kur'an ve İslam'ı öğretmesi için kim gönderildi?",
+          "answer": "Mus'ab b. Umeyr"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "v12-history-004",
-        "b": "q59-evliya-cilt",
-        "snapshotSha256": "9879d3a2e3ecf9733a53a8c6eea28429b66c59897a5a887fd11e35d3c6b7a6fc",
+        "a": "e150-history-028",
+        "b": "q56-akabe-egitmen",
+        "snapshotSha256": "90d784fed8476ec1e11b5a77094e1a8aa48c17891be32cd74d6f6e4e5883c341",
         "verdict": "repeated-fact",
-        "reason": "Seyahatnâme’nin on cilt olması iki kökte aynı nicelik; ikinci kök farklı bilgiye bağlanmalı."
+        "reason": "Birinci Akabe’den sonra Yesrib’e öğretici gönderilen Mus‘ab aynı görevle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
-      "a": "e150-history-026",
-      "b": "q56-akabe-yil1",
-      "score": 0.714,
+      "a": "q50-zekeriyya-020",
+      "b": "q66-meryem-3",
+      "score": 0.2,
       "sameAnswer": true,
       "sameConcept": false,
       "signal": "same-answer",
       "questions": [
         {
-          "id": "e150-history-026",
-          "question": "Birinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
-          "answer": "621"
+          "id": "q50-zekeriyya-020",
+          "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
+          "answer": "Alçak sesle"
         },
         {
-          "id": "q56-akabe-yil1",
-          "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
-          "answer": "621"
+          "id": "q66-meryem-3",
+          "question": "Meryem 19/3’te Zekeriyyâ’nın duasında sesini kullanışı nasıl anlatılır?",
+          "answer": "Alçak sesle"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "e150-history-026",
-        "b": "q56-akabe-yil1",
-        "snapshotSha256": "8117175ea4ca6c85bc2b5ea1e2bc3c1f7b251813653b862e9aec4dda08066342",
+        "a": "q50-zekeriyya-020",
+        "b": "q66-meryem-3",
+        "snapshotSha256": "e61747c10c13358cc625213057ad2b19d65e11389fb7a3834a8410345fb32379",
         "verdict": "repeated-fact",
-        "reason": "Birinci Akabe’nin 621 tarihi iki kökte aynı olay ve tarih; yazım farkı ayrı bilgi oluşturmaz."
+        "reason": "Meryem 19/3’te alçak sesle dua aynı nitelik hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
-      "a": "v13-general-008",
-      "b": "q51-muahat-014",
-      "score": 0.714,
+      "a": "q60-nebevi-misafir",
+      "b": "v9-history-001",
+      "score": 0.154,
       "sameAnswer": true,
       "sameConcept": false,
       "signal": "same-answer",
       "questions": [
         {
-          "id": "v13-general-008",
-          "question": "Hucurât 49/10'da müminler arasındaki ilişki hangi kavramla anlatılır?",
-          "answer": "Kardeşlik"
+          "id": "q60-nebevi-misafir",
+          "question": "Hz. Peygamber Medine'ye gelişinde hangi sahâbînin evine misafir olmuştur?",
+          "answer": "Ebû Eyyûb el-Ensârî"
         },
         {
-          "id": "q51-muahat-014",
-          "question": "Hucurât 49/10’da müminler arasındaki ilişki hangi kavramla ifade edilir?",
-          "answer": "Kardeşlik"
+          "id": "v9-history-001",
+          "question": "Hicret sırasında Hz. Peygamber'i Medine'deki evinde ağırlayan sahâbî kimdir?",
+          "answer": "Ebû Eyyûb el-Ensârî"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "v13-general-008",
-        "b": "q51-muahat-014",
-        "snapshotSha256": "4b470cf64b1257b0a5b2578485153ad6fe6505d1f5a908b1c14251dd806dc1f9",
+        "a": "q60-nebevi-misafir",
+        "b": "v9-history-001",
+        "snapshotSha256": "42879028ef4b506d37d758cc27fc11dfe7311f1ae63bd40e62204b8ba311a010",
         "verdict": "repeated-fact",
-        "reason": "Hucurât 49/10’da kardeşlik kavramı iki soruda aynı anlamla ölçülüyor."
+        "reason": "Hicret sonrası ev sahipliği yapan Ebû Eyyûb aynı kişi/olay hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
-      "a": "e150-history-018",
-      "b": "q64-bedir-sefer",
-      "score": 0.667,
+      "a": "q47-bedir-001",
+      "b": "q64-bedir-kervan",
+      "score": 0.143,
       "sameAnswer": true,
       "sameConcept": false,
       "signal": "same-answer",
       "questions": [
         {
-          "id": "e150-history-018",
-          "question": "Bedir Gazvesi milâdî hangi yılda gerçekleşmiştir?",
-          "answer": "624"
+          "id": "q47-bedir-001",
+          "question": "Bedir seferinden önce Kureyş kervanını kim yönetiyordu?",
+          "answer": "Ebû Süfyân"
         },
         {
-          "id": "q64-bedir-sefer",
-          "question": "Bedir Gazvesi milâdî hangi yılda yaşanmıştır?",
-          "answer": "624"
+          "id": "q64-bedir-kervan",
+          "question": "Bedir seferi öncesi Mekkeli ticaret kervanını yöneten kişi kimdi?",
+          "answer": "Ebû Süfyân"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "e150-history-018",
-        "b": "q64-bedir-sefer",
-        "snapshotSha256": "09efb60ae68e93d96487ec1b524ca9438d33cb72c0fa727c4f2e7aa7c27f45ee",
+        "a": "q47-bedir-001",
+        "b": "q64-bedir-kervan",
+        "snapshotSha256": "d06be9e96da2ec5a78e227356c01d8e21f7273ba5f87fc344ee869e0c67a2caf",
         "verdict": "repeated-fact",
-        "reason": "Bedir’in milâdî 624 yılı iki kökte aynı bilgi; yaşanmıştır/gerçekleşmiştir farkı anlamı ayırmaz."
+        "reason": "Bedir öncesi kervanı yöneten Ebû Süfyân aynı kişi/olay bilgisiyle tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
-      "a": "v11-history-009",
-      "b": "q59-battuta-dogum",
-      "score": 0.667,
+      "a": "q48-yusuf-034",
+      "b": "q57-yusufzindan",
+      "score": 0.143,
       "sameAnswer": true,
       "sameConcept": false,
       "signal": "same-answer",
       "questions": [
         {
-          "id": "v11-history-009",
-          "question": "Ünlü seyyah İbn Battûta hangi şehirde doğmuştur?",
-          "answer": "Tanca"
+          "id": "q48-yusuf-034",
+          "question": "Yûsuf kıssasına göre Hz. Yûsuf zindanda kaç gençle rüya yorumu üzerine konuşur?",
+          "answer": "İki"
         },
         {
-          "id": "q59-battuta-dogum",
-          "question": "İbn Battûta hangi şehirde doğmuştur?",
-          "answer": "Tanca"
+          "id": "q57-yusufzindan",
+          "question": "Yûsuf 12/36'da Hz. Yûsuf ile birlikte zindana kaç genç girer?",
+          "answer": "İki"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "v11-history-009",
-        "b": "q59-battuta-dogum",
-        "snapshotSha256": "136f5d59daebd5482327c6e17eb6fb887d1113ce2e9cef79faeb00eca729d366",
+        "a": "q48-yusuf-034",
+        "b": "q57-yusufzindan",
+        "snapshotSha256": "c964e45a7e6dd3ce449550812785ba8a2eb105e25d77743c941637c3116c4c73",
         "verdict": "repeated-fact",
-        "reason": "İbn Battûta’nın Tanca doğumu iki kökte tekrar ölçülüyor."
-      }
-    },
-    {
-      "a": "q58-suleym-ogul",
-      "b": "q69-enesbmalik-yil",
-      "score": 0.636,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "q58-suleym-ogul",
-          "question": "Ümmü Süleym'in oğlu Enes, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
-          "answer": "On yıl"
-        },
-        {
-          "id": "q69-enesbmalik-yil",
-          "question": "Enes b. Mâlik, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
-          "answer": "On yıl"
-        }
-      ],
-      "decision": {
-        "a": "q58-suleym-ogul",
-        "b": "q69-enesbmalik-yil",
-        "snapshotSha256": "22513fb277a84733475391ef78f0f3dc356542d85ec04d9a817061b46444f69a",
-        "verdict": "repeated-fact",
-        "reason": "Enes’in on yıl hizmeti iki kökte aynı olgu; bir kökte annenin adının geçmesi ayrı hedef değildir."
-      }
-    },
-    {
-      "a": "v10-prophets-011",
-      "b": "q67-kasas-27",
-      "score": 0.6,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "v10-prophets-011",
-          "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen hizmet süresi en az kaç yıldır?",
-          "answer": "Sekiz yıl"
-        },
-        {
-          "id": "q67-kasas-27",
-          "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen iş süresinin başlangıcı kaç yıldır?",
-          "answer": "Sekiz yıl"
-        }
-      ],
-      "decision": {
-        "a": "v10-prophets-011",
-        "b": "q67-kasas-27",
-        "snapshotSha256": "3c487dbe45db6b08b2980aee666c2c0150e2b43fdb3e4b5b9425fb030e35634f",
-        "verdict": "repeated-fact",
-        "reason": "Kasas 28/27’de sekiz yıllık başlangıç hizmeti aynı ayet ve sayı ile iki kez soruluyor."
-      }
-    },
-    {
-      "a": "v9-history-009",
-      "b": "q63-nizamiye-bani",
-      "score": 0.6,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "v9-history-009",
-          "question": "Bağdat’ta 1067’de öğretime açılan medreseyi kuran Selçuklu veziri kimdir?",
-          "answer": "Nizâmülmülk"
-        },
-        {
-          "id": "q63-nizamiye-bani",
-          "question": "Bağdat’ta 1067’de açılan medreseyi yaptıran Büyük Selçuklu veziri kimdir?",
-          "answer": "Nizâmülmülk"
-        }
-      ],
-      "decision": {
-        "a": "v9-history-009",
-        "b": "q63-nizamiye-bani",
-        "snapshotSha256": "d1fcaff1d5a5137228ef4d419831dc24a96b36ae81de016f7c94699ca46cecab",
-        "verdict": "repeated-fact",
-        "reason": "Bağdat Nizâmiye’nin Nizâmülmülk tarafından yaptırılması iki kökte tekrar ölçülüyor."
-      }
-    },
-    {
-      "a": "v11-prophets-011",
-      "b": "q66-meryem-7",
-      "score": 0.571,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "v11-prophets-011",
-          "question": "Meryem sûresinde Hz. Zekeriyyâ'ya müjdelenen oğlunun adı nedir?",
-          "answer": "Yahyâ"
-        },
-        {
-          "id": "q66-meryem-7",
-          "question": "Meryem 19/7'de Hz. Zekeriyyâ'ya müjdelenen çocuğun adı nedir?",
-          "answer": "Yahyâ"
-        }
-      ],
-      "decision": {
-        "a": "v11-prophets-011",
-        "b": "q66-meryem-7",
-        "snapshotSha256": "a45c3830c62852f0ff56f03b76c0e525949a18718fee05dc530b80bd89e0b286",
-        "verdict": "repeated-fact",
-        "reason": "Zekeriyyâ’ya Meryem 19/7’de Yahyâ müjdesi iki sorunun ortak tek hedefi."
-      }
-    },
-    {
-      "a": "v13-quran-010",
-      "b": "q65-furkan-63",
-      "score": 0.556,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "v13-quran-010",
-          "question": "Furkān 25/63’te Rahmân’ın kullarının yürüyüşü hangi ahlâkî özellikle anlatılır?",
-          "answer": "Tevazu"
-        },
-        {
-          "id": "q65-furkan-63",
-          "question": "Furkân 25/63’te Rahmân’ın kullarının yeryüzündeki yürüyüşü hangi özellikle anlatılır?",
-          "answer": "Tevazu"
-        }
-      ],
-      "decision": {
-        "a": "v13-quran-010",
-        "b": "q65-furkan-63",
-        "snapshotSha256": "7562e15733d3ed45bb04bef19e2c86c06fc9a47048d7a82f719dea9e6d6ff6f9",
-        "verdict": "repeated-fact",
-        "reason": "Furkân 25/63’te yürüyüşün tevazu niteliği iki kökte aynı hedef; yeni örnek standart doğru olsa da ikinci soru tekrardır."
-      }
-    },
-    {
-      "a": "pilot-prophets-003",
-      "b": "q61-isa-incil",
-      "score": 0.5,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "pilot-prophets-003",
-          "question": "Kur’an’da Hz. Îsâ’ya verilen kitap hangi adla anılır?",
-          "answer": "İncil"
-        },
-        {
-          "id": "q61-isa-incil",
-          "question": "Kur'an'a göre Hz. Îsâ'ya verilen ilâhî kitap hangisidir?",
-          "answer": "İncil"
-        }
-      ],
-      "decision": {
-        "a": "pilot-prophets-003",
-        "b": "q61-isa-incil",
-        "snapshotSha256": "38ef46b2f64f50e5d060d1409c1d75e299cc4ddf98e4057f5244f152f97b36d1",
-        "verdict": "repeated-fact",
-        "reason": "Îsâ’ya İncil verilmesi iki kökte aynı olgu; Kur’an’a atıf farkı ayrı bilgi değildir."
-      }
-    },
-    {
-      "a": "q47-hac-038",
-      "b": "q62-say-mekan",
-      "score": 0.5,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "q47-hac-038",
-          "question": "Hacda 'sa‘y' ibadeti hangi iki yer arasında yapılır?",
-          "answer": "Safâ ve Merve"
-        },
-        {
-          "id": "q62-say-mekan",
-          "question": "Hac ve umrede sa‘y hangi iki yer arasında yapılır?",
-          "answer": "Safâ ve Merve"
-        }
-      ],
-      "decision": {
-        "a": "q47-hac-038",
-        "b": "q62-say-mekan",
-        "snapshotSha256": "b47d72c5862dfe0a01ea82dd87298ef5380435ced59edecf1f31f20716133c62",
-        "verdict": "repeated-fact",
-        "reason": "Sa‘yin Safâ ile Merve arasında olması iki kökte aynı mekân çiftini ölçüyor."
-      }
-    },
-    {
-      "a": "v9-history-008",
-      "b": "q59-beyt-sehir",
-      "score": 0.5,
-      "sameAnswer": true,
-      "sameConcept": false,
-      "signal": "same-answer",
-      "questions": [
-        {
-          "id": "v9-history-008",
-          "question": "Abbâsîler döneminde tercüme ve araştırmalarıyla tanınan Beytülhikme hangi şehirdeydi?",
-          "answer": "Bağdat"
-        },
-        {
-          "id": "q59-beyt-sehir",
-          "question": "Abbâsîler döneminde gelişen Beytülhikme hangi şehirdeydi?",
-          "answer": "Bağdat"
-        }
-      ],
-      "decision": {
-        "a": "v9-history-008",
-        "b": "q59-beyt-sehir",
-        "snapshotSha256": "f32c0f88d0fef885743627bd9d8ec0b8d39cffe4abebc369b512c8a27b6ab3bb",
-        "verdict": "repeated-fact",
-        "reason": "Beytülhikme’nin Bağdat’ta bulunması iki kökte aynı olgu; ayrı soru olarak tekrar kontrolü açık."
+        "reason": "12/36’daki iki zindan gencinin sayısı aynı kıssada tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
       }
     },
     {
@@ -538,6 +307,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-ebudavud-vefat",
         "b": "q68-ibnmace-vefat",
@@ -565,6 +335,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-nesai-vefat",
         "b": "q68-ibnmace-vefat",
@@ -592,6 +363,7 @@
           "answer": "810"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-buhari-dogum",
         "b": "q68-buhari-yil",
@@ -619,6 +391,7 @@
           "answer": "892"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-muslim-vefat",
         "b": "q68-tirmizi-vefat",
@@ -646,6 +419,7 @@
           "answer": "889"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-nesai-vefat",
         "b": "q68-ebudavud-vefat",
@@ -673,6 +447,7 @@
           "answer": "Arkasından"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-insikak-022",
         "b": "q55-insikak-024",
@@ -700,6 +475,7 @@
           "answer": "Nesâî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-sitte-nesai",
@@ -727,6 +503,7 @@
           "answer": "915"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-tirmizi-vefat",
         "b": "q68-nesai-vefat",
@@ -754,6 +531,7 @@
           "answer": "Alevli ateş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-insikak-024",
         "b": "q55-insikak-025",
@@ -781,6 +559,7 @@
           "answer": "892"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-buhari-vefat",
         "b": "q68-tirmizi-vefat",
@@ -808,6 +587,7 @@
           "answer": "Dil ve iki dudak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-beled-011",
         "b": "q53-beled-012",
@@ -835,6 +615,7 @@
           "answer": "Meymûne"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-amca",
         "b": "q69-abdullahbabbas-teyze",
@@ -862,6 +643,7 @@
           "answer": "4"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "quran-011",
         "b": "pilot-quran-002",
@@ -889,6 +671,7 @@
           "answer": "İki"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-bedir-muhacir",
         "b": "q64-bedir-at",
@@ -916,6 +699,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-tirmizi-vefat",
         "b": "q68-ibnmace-vefat",
@@ -943,6 +727,7 @@
           "answer": "Müslim b. Haccâc"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-buhari",
         "b": "q68-sitte-muslim",
@@ -970,6 +755,7 @@
           "answer": "889"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-tirmizi-vefat",
         "b": "q68-ebudavud-vefat",
@@ -997,6 +783,7 @@
           "answer": "Çayırlar"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q43-abese-29",
         "b": "q43-abese-32",
@@ -1024,6 +811,7 @@
           "answer": "Ay"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-sems-019",
         "b": "q53-sems-020",
@@ -1051,6 +839,7 @@
           "answer": "Nefsini kötülüğe gömen"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-sems-023",
         "b": "q53-sems-024",
@@ -1078,6 +867,7 @@
           "answer": "Yerlerinden yürütülmeleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-001",
         "b": "q55-tekvir-003",
@@ -1105,6 +895,7 @@
           "answer": "Âişe"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-003",
         "b": "q48-esma-006",
@@ -1132,6 +923,7 @@
           "answer": "Târîhu’t-Taberî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-taberi-009",
         "b": "q49-taberi-010",
@@ -1159,6 +951,7 @@
           "answer": "915"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-buhari-vefat",
         "b": "q68-nesai-vefat",
@@ -1186,6 +979,7 @@
           "answer": "Kitaptan bir bilgi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-39",
         "b": "q66-neml-40",
@@ -1213,6 +1007,7 @@
           "answer": "889"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-ebudavud-vefat",
@@ -1240,6 +1035,7 @@
           "answer": "Mısırlı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-prophets-007",
         "b": "v11-prophets-002",
@@ -1267,6 +1063,7 @@
           "answer": "Muhacir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "history-004",
         "b": "history-007",
@@ -1294,6 +1091,7 @@
           "answer": "Cürcân"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-biruni-yil",
         "b": "q45-biruni-sehir",
@@ -1321,6 +1119,7 @@
           "answer": "Organlara özgü hastalıklar"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-ibnsina-kitap",
         "b": "q45-ibnsina-organ",
@@ -1348,6 +1147,7 @@
           "answer": "Yol göstermek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q54-ala-016",
         "b": "q54-ala-017",
@@ -1375,12 +1175,69 @@
           "answer": "Firavun ve Semûd"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q54-buruc-005",
         "b": "q54-buruc-006",
         "snapshotSha256": "ee217bb634c5c4534e9de7bf33b90d07cf3befdff0ca6a2aded58f1963ed569b",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Çok bağışlayan ve çok seven”, ikinci hedef “Firavun ve Semûd”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q60-erkam-sahip",
+      "b": "q60-erkam-hizmet",
+      "score": 0.333,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q60-erkam-sahip",
+          "question": "Mekke’de ilk Müslümanların Safâ eteğinde toplandığı evin sahibi kimdi?",
+          "answer": "Erkam b. Ebü’l-Erkam"
+        },
+        {
+          "id": "q60-erkam-hizmet",
+          "question": "İlk Müslümanların Mekke’de toplandığı Dârülerkam hangi adla da bilinir?",
+          "answer": "Dârülislâm"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q60-erkam-sahip",
+        "b": "q60-erkam-hizmet",
+        "snapshotSha256": "0fc3265f3f664b70ba3a38eb441e6720c909993a2cf9f54dff75e73b45b486db",
+        "verdict": "distinct-context",
+        "reason": "Evin sahibi Erkam ile evin diğer adı Dârülislâm farklı hedeflerdir; aynı evde geçen ilişkili bilgilerdir."
+      }
+    },
+    {
+      "a": "q65-furkan-63",
+      "b": "q65-furkan-77",
+      "score": 0.333,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q65-furkan-63",
+          "question": "Furkân 25/63’te laf atanlara verilen cevap, Kur’an Yolu mealinde hangi tutumu anlatır?",
+          "answer": "Esenlik dilemek"
+        },
+        {
+          "id": "q65-furkan-77",
+          "question": "Furkân 25/77’nin Kur’an Yolu mealinde insana verilen değer hangi ifadeyle ilişkilendirilir?",
+          "answer": "Dua ve kulluk"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q65-furkan-63",
+        "b": "q65-furkan-77",
+        "snapshotSha256": "c776e2483654f441749d8a01fff0166dcbb66192d9544b1094b129813ae07f2f",
+        "verdict": "distinct-context",
+        "reason": "25/63’te sataşmaya verilen esenlik cevabı ile 25/77’de değer/dua ilişkisi farklı ayet ve hedeflerdir."
       }
     },
     {
@@ -1402,6 +1259,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-buhari-vefat",
         "b": "q68-ibnmace-vefat",
@@ -1429,6 +1287,7 @@
           "answer": "Ehâdîs"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-hadis-sozluk",
         "b": "q68-hadis-ehadis",
@@ -1456,6 +1315,7 @@
           "answer": "915"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-muslim-vefat",
         "b": "q68-nesai-vefat",
@@ -1483,6 +1343,7 @@
           "answer": "Ümmü'l-Fazl Lübâbe"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-amca",
         "b": "q69-abdullahbabbas-anne",
@@ -1510,6 +1371,7 @@
           "answer": "Meymûne"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-anne",
         "b": "q69-abdullahbabbas-teyze",
@@ -1537,6 +1399,7 @@
           "answer": "Ümmü Harâm"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-kunye",
         "b": "q69-enesbmalik-teyze",
@@ -1564,39 +1427,13 @@
           "answer": "Nevvâr bint Mâlik"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-dogum",
         "b": "q69-zeydbsabit-annesi",
         "snapshotSha256": "75551f07d77fb50d3545b76a6041f54f0f57dc0d637d08690529d7adb7ecd5b9",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Medine”, ikinci hedef “Nevvâr bint Mâlik”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q58-suleym-ogul",
-      "b": "q58-suleym-rivayet",
-      "score": 0.313,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q58-suleym-ogul",
-          "question": "Ümmü Süleym'in oğlu Enes, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
-          "answer": "On yıl"
-        },
-        {
-          "id": "q58-suleym-rivayet",
-          "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
-          "answer": "On dört"
-        }
-      ],
-      "decision": {
-        "a": "q58-suleym-ogul",
-        "b": "q58-suleym-rivayet",
-        "snapshotSha256": "72844691e23a92bb3dc873e3ab9115db40ea9c79f0b2e3e24504dddb0dca7da5",
-        "verdict": "distinct-context",
-        "reason": "Enes’in hizmet süresi ve annesinin rivayet sayısı farklı kişilerle ilgili farklı sayısal olgular."
       }
     },
     {
@@ -1618,6 +1455,7 @@
           "answer": "İstanbul"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-akabe",
         "b": "q69-ebueyyubelensari-istanbul",
@@ -1645,6 +1483,7 @@
           "answer": "Bizans İmparatorluğu"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "learn-history-003",
         "b": "learn-history-004",
@@ -1672,6 +1511,7 @@
           "answer": "Ziyaret tavafı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-hac-035",
         "b": "q47-hac-036",
@@ -1699,6 +1539,7 @@
           "answer": "Mekke’nin alınması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-senet-vufud",
         "b": "q64-senet-fetih",
@@ -1726,6 +1567,7 @@
           "answer": "Başka sütanneleri kabul etmemesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-12",
@@ -1753,6 +1595,7 @@
           "answer": "889"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-buhari-vefat",
         "b": "q68-ebudavud-vefat",
@@ -1780,6 +1623,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-muslim-vefat",
         "b": "q68-ibnmace-vefat",
@@ -1807,6 +1651,7 @@
           "answer": "Nesâî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-muslim",
         "b": "q68-sitte-nesai",
@@ -1834,6 +1679,7 @@
           "answer": "Kudüs"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-gazzali-sam",
         "b": "q70-gazzali-kudus",
@@ -1861,6 +1707,7 @@
           "answer": "622"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "history-001",
         "b": "history-002",
@@ -1888,6 +1735,7 @@
           "answer": "Cimrilik etmek ve kendini ihtiyaçsız görmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q44-leyl-5",
         "b": "q44-leyl-8",
@@ -1915,6 +1763,7 @@
           "answer": "Yirmi sekiz"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-nuh-020",
         "b": "q47-nuh-021",
@@ -1942,6 +1791,7 @@
           "answer": "Nasıl dikildikleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-gasiye-033",
         "b": "q53-gasiye-034",
@@ -1969,6 +1819,7 @@
           "answer": "Değerli yazıcılar"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-infitar-016",
         "b": "q55-infitar-017",
@@ -1996,6 +1847,7 @@
           "answer": "Kolay bir hesapla"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-insikak-022",
         "b": "q55-insikak-023",
@@ -2023,6 +1875,7 @@
           "answer": "Alevli ateş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-insikak-022",
         "b": "q55-insikak-025",
@@ -2050,6 +1903,7 @@
           "answer": "Arkasından"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-insikak-023",
         "b": "q55-insikak-024",
@@ -2077,6 +1931,7 @@
           "answer": "Sesi uzatarak okumak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q58-tecvid-vakf",
         "b": "q58-tecvid-med",
@@ -2104,6 +1959,7 @@
           "answer": "1550–1557"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-istanbul-sul",
         "b": "q63-istanbul-yil",
@@ -2131,6 +1987,7 @@
           "answer": "Denizin mürekkep olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-kehf-45",
         "b": "q66-kehf-109",
@@ -2158,6 +2015,7 @@
           "answer": "Hayvanlarını sular"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-15",
         "b": "q67-kasas-24",
@@ -2185,6 +2043,7 @@
           "answer": "875"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-buhari-vefat",
         "b": "q68-muslim-vefat",
@@ -2212,6 +2071,7 @@
           "answer": "Dârimî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-alternatif",
         "b": "q68-sitte-darimi",
@@ -2239,6 +2099,7 @@
           "answer": "Betûl"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q71-fatima-zehra",
         "b": "q71-fatima-betul",
@@ -2266,6 +2127,7 @@
           "answer": "Mûsâ b. Nusayr"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "v10-history-006",
         "b": "v10-history-007",
@@ -2293,6 +2155,7 @@
           "answer": "Örtü"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q43-nebe-9",
         "b": "q43-nebe-10",
@@ -2320,6 +2183,7 @@
           "answer": "Yetim olarak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q44-duha-3",
         "b": "q44-duha-6",
@@ -2347,6 +2211,7 @@
           "answer": "Beş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-003",
         "b": "q48-esma-004",
@@ -2374,6 +2239,7 @@
           "answer": "On iki"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q51-ensar-005",
         "b": "q51-ensar-006",
@@ -2401,6 +2267,7 @@
           "answer": "Amel defterlerinin"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-001",
         "b": "q55-tekvir-007",
@@ -2428,6 +2295,7 @@
           "answer": "Amel defterlerinin"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-002",
         "b": "q55-tekvir-007",
@@ -2455,6 +2323,7 @@
           "answer": "Yaklaştırılması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-007",
         "b": "q55-tekvir-008",
@@ -2482,6 +2351,7 @@
           "answer": "Baba bir ablasıdır"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q58-esma-azik",
         "b": "q58-esma-kardes",
@@ -2509,6 +2379,7 @@
           "answer": "Baba bir ablasıdır"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q58-esma-ogul",
         "b": "q58-esma-kardes",
@@ -2536,6 +2407,7 @@
           "answer": "889"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-muslim-vefat",
         "b": "q68-ebudavud-vefat",
@@ -2563,6 +2435,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-ibnmace-vefat",
@@ -2590,6 +2463,7 @@
           "answer": "İbn Mâce"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-sitte-ibnmace",
@@ -2617,12 +2491,69 @@
           "answer": "2630"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbomerbhattab-hendek",
         "b": "q69-abdullahbomerbhattab-hadis",
         "snapshotSha256": "9dcda212359c18abcd4a6e29ca37373bbd297215e718a3b2845a9f6fe97d282c",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “On beş”, ikinci hedef “2630”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q69-enesbmalik-anne",
+      "b": "q69-enesbmalik-teyze",
+      "score": 0.286,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q69-enesbmalik-anne",
+          "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
+          "answer": "Berâ b. Mâlik"
+        },
+        {
+          "id": "q69-enesbmalik-teyze",
+          "question": "Enes b. Mâlik'in teyzesinin adı nedir?",
+          "answer": "Ümmü Harâm"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q69-enesbmalik-anne",
+        "b": "q69-enesbmalik-teyze",
+        "snapshotSha256": "3aa52f99565ffd1fca37dcc9f2bf42475b2af3ba6dddbcac675c9c5cf300fc98",
+        "verdict": "distinct-context",
+        "reason": "Berâ ile kardeşlik ve Ümmü Harâm ile teyzelik iki ayrı aile bağıdır."
+      }
+    },
+    {
+      "a": "q69-enesbmalik-kunye",
+      "b": "q69-enesbmalik-anne",
+      "score": 0.286,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q69-enesbmalik-kunye",
+          "question": "Enes b. Mâlik'in yaygın künyesi hangisidir?",
+          "answer": "Ebû Hamza"
+        },
+        {
+          "id": "q69-enesbmalik-anne",
+          "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
+          "answer": "Berâ b. Mâlik"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q69-enesbmalik-kunye",
+        "b": "q69-enesbmalik-anne",
+        "snapshotSha256": "6e269311ca9186a70384f23cb37f869a812db845a1bcd772cb1fe5eb86edea40",
+        "verdict": "distinct-context",
+        "reason": "Ebû Hamza künyesi ile kardeşi Berâ b. Mâlik’in kimliği farklı iki bilgidir."
       }
     },
     {
@@ -2644,6 +2575,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-alternatif",
         "b": "q68-ibnmace-vefat",
@@ -2671,6 +2603,7 @@
           "answer": "İmam Mâlik'in el-Muvatta'ı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-ibnmace",
         "b": "q68-sitte-alternatif",
@@ -2698,6 +2631,7 @@
           "answer": "Dârimî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-ibnmace",
         "b": "q68-sitte-darimi",
@@ -2725,6 +2659,7 @@
           "answer": "Zayıf"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-prophets-009",
         "b": "e150-prophets-010",
@@ -2752,6 +2687,7 @@
           "answer": "Muharrem"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "learn-history-001",
         "b": "learn-history-002",
@@ -2779,6 +2715,7 @@
           "answer": "Cürcân"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-biruni-konu",
         "b": "q45-biruni-sehir",
@@ -2806,6 +2743,7 @@
           "answer": "1000"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-biruni-konu",
         "b": "q45-biruni-yil",
@@ -2833,6 +2771,7 @@
           "answer": "Bakī‘ Kabristanı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-008",
         "b": "q48-ummu-seleme-014",
@@ -2860,6 +2799,7 @@
           "answer": "Bakī‘ Kabristanı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-010",
         "b": "q48-ummu-seleme-014",
@@ -2887,6 +2827,7 @@
           "answer": "Bakī‘ Kabristanı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-012",
         "b": "q48-ummu-seleme-014",
@@ -2914,6 +2855,7 @@
           "answer": "Mü'min sûresi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-yusuf-030",
         "b": "q48-yusuf-035",
@@ -2941,6 +2883,7 @@
           "answer": "Dört"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-ihya-017",
         "b": "q49-ihya-019",
@@ -2968,6 +2911,7 @@
           "answer": "Zorba"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-gasiye-030",
         "b": "q53-gasiye-036",
@@ -2995,6 +2939,7 @@
           "answer": "Alevli ateş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-insikak-023",
         "b": "q55-insikak-025",
@@ -3022,6 +2967,7 @@
           "answer": "Yalan şahitlik"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-furkan-64",
         "b": "q65-furkan-72",
@@ -3049,6 +2995,7 @@
           "answer": "Hediye"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-29",
         "b": "q66-neml-35",
@@ -3076,6 +3023,7 @@
           "answer": "Başka sütanneleri kabul etmemesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-11",
         "b": "q67-kasas-12",
@@ -3103,6 +3051,7 @@
           "answer": "Birbiriyle kavga ediyorlardı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-11",
         "b": "q67-kasas-15",
@@ -3130,6 +3079,7 @@
           "answer": "Birbiriyle kavga ediyorlardı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-12",
         "b": "q67-kasas-15",
@@ -3157,6 +3107,7 @@
           "answer": "Güçlü ve güvenilir olmak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-24",
         "b": "q67-kasas-26",
@@ -3184,6 +3135,7 @@
           "answer": "Ebû Ruveyha"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-anne",
         "b": "q69-bilalihabesi-kardes",
@@ -3211,6 +3163,7 @@
           "answer": "Kıbrıs"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-kabile",
         "b": "q69-ebueyyubelensari-kibris",
@@ -3238,6 +3191,7 @@
           "answer": "Mus'ab b. Umeyr"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-kabile",
         "b": "q69-ebueyyubelensari-muahat",
@@ -3265,6 +3219,7 @@
           "answer": "Medâin"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-selmanifarisi-sehir",
         "b": "q69-selmanifarisi-vali",
@@ -3292,6 +3247,7 @@
           "answer": "28"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q71-sure-114",
         "b": "q71-sure-28",
@@ -3319,6 +3275,7 @@
           "answer": "Zübeyr b. Avvâm"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-002",
         "b": "q48-esma-003",
@@ -3346,6 +3303,7 @@
           "answer": "Âişe"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-004",
         "b": "q48-esma-006",
@@ -3373,6 +3331,7 @@
           "answer": "Yoksullar ve misafirler"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-hatice-036",
         "b": "q48-hatice-041",
@@ -3400,6 +3359,7 @@
           "answer": "Bakī‘ Kabristanı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-009",
         "b": "q48-ummu-seleme-014",
@@ -3427,6 +3387,7 @@
           "answer": "Müderris ve öğrencilerin ihtiyaçları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-nizamiye-ilk",
         "b": "q63-nizamiye-kut",
@@ -3454,6 +3415,7 @@
           "answer": "Zeytin ve hurma"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q43-abese-25",
         "b": "q43-abese-29",
@@ -3481,6 +3443,7 @@
           "answer": "Bey‘atü’ş-şecere"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-beyat-014",
         "b": "q47-beyat-016",
@@ -3508,6 +3471,7 @@
           "answer": "Feth sûresi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-beyat-014",
         "b": "q47-beyat-017",
@@ -3535,6 +3499,7 @@
           "answer": "Âişe"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-002",
         "b": "q48-esma-006",
@@ -3562,6 +3527,7 @@
           "answer": "Abdullah b. Ebû Bekir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-hicret-016",
         "b": "q48-hicret-017",
@@ -3589,6 +3555,7 @@
           "answer": "Eczacılık"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-biruni-002",
         "b": "q49-biruni-007",
@@ -3616,6 +3583,7 @@
           "answer": "Altı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q50-zekeriyya-017",
         "b": "q50-zekeriyya-022",
@@ -3643,6 +3611,7 @@
           "answer": "İhtiyacını gizleyenler ve gizlemeyenler"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q52-kurban-023",
         "b": "q52-kurban-025",
@@ -3670,6 +3639,7 @@
           "answer": "İki yol"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-beled-011",
         "b": "q53-beled-013",
@@ -3697,6 +3667,7 @@
           "answer": "İki yol"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-beled-012",
         "b": "q53-beled-013",
@@ -3724,6 +3695,7 @@
           "answer": "Altüst edilmesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-infitar-011",
         "b": "q55-infitar-014",
@@ -3751,6 +3723,7 @@
           "answer": "Taşmaları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-infitar-012",
         "b": "q55-infitar-013",
@@ -3778,6 +3751,7 @@
           "answer": "Dökülüp sönmeleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-001",
         "b": "q55-tekvir-002",
@@ -3805,6 +3779,7 @@
           "answer": "Kaynatılmaları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-001",
         "b": "q55-tekvir-005",
@@ -3832,6 +3807,7 @@
           "answer": "Yaklaştırılması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-001",
         "b": "q55-tekvir-008",
@@ -3859,6 +3835,7 @@
           "answer": "Yaklaştırılması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-002",
         "b": "q55-tekvir-008",
@@ -3886,6 +3863,7 @@
           "answer": "Amel defterlerinin"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-003",
         "b": "q55-tekvir-007",
@@ -3913,6 +3891,7 @@
           "answer": "Kaynatılmaları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-004",
         "b": "q55-tekvir-005",
@@ -3940,6 +3919,7 @@
           "answer": "Yaklaştırılması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-005",
         "b": "q55-tekvir-008",
@@ -3967,6 +3947,7 @@
           "answer": "Fas"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-kabile",
         "b": "q59-battuta-yuz",
@@ -3994,6 +3975,7 @@
           "answer": "En uzak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q60-aksa-sehir",
         "b": "q60-aksa-uzak",
@@ -4021,6 +4003,7 @@
           "answer": "Bizler için bir şölen ve işaret olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q61-isa-hekim",
         "b": "q61-isa-sofra",
@@ -4048,6 +4031,7 @@
           "answer": "Ziyaret (ifâza) tavafı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q62-tavaf-anlam",
         "b": "q62-tavaf-ziyaret",
@@ -4075,6 +4059,7 @@
           "answer": "İbnü’s-Sabbâğ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-nizamiye-bagdat",
         "b": "q63-nizamiye-ilk",
@@ -4102,6 +4087,7 @@
           "answer": "Dicle"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-nizamiye-bagdat",
         "b": "q63-nizamiye-nehir",
@@ -4129,6 +4115,7 @@
           "answer": "Güçlü ve güvenilir olmak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-15",
         "b": "q67-kasas-26",
@@ -4156,6 +4143,7 @@
           "answer": "Kendisindeki bilgiye"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-76",
         "b": "q67-kasas-78",
@@ -4183,6 +4171,7 @@
           "answer": "Kardeşini uzaktan takip etmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-9",
         "b": "q67-kasas-11",
@@ -4210,6 +4199,7 @@
           "answer": "Başka sütanneleri kabul etmemesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-9",
         "b": "q67-kasas-12",
@@ -4237,6 +4227,7 @@
           "answer": "Birbiriyle kavga ediyorlardı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-9",
         "b": "q67-kasas-15",
@@ -4264,6 +4255,7 @@
           "answer": "Gökte yayılma ve parçalara ayrılma"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-rum-19",
         "b": "q67-rum-48",
@@ -4291,6 +4283,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-ibnmace",
         "b": "q68-ibnmace-vefat",
@@ -4318,6 +4311,7 @@
           "answer": "Din ilmi ve Kitab’ı anlama"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-amca",
         "b": "q69-abdullahbabbas-dua",
@@ -4345,6 +4339,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-anne",
         "b": "q69-abdullahbabbas-basra",
@@ -4372,6 +4367,7 @@
           "answer": "Din ilmi ve Kitab’ı anlama"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-teyze",
         "b": "q69-abdullahbabbas-dua",
@@ -4399,66 +4395,13 @@
           "answer": "Namaz uykudan hayırlıdır"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-anne",
         "b": "q69-bilalihabesi-sabah",
         "snapshotSha256": "efea74c02e4d9330a1a6cc7ded3ac1f8ef8fa6409d90cc08f9ab2247b7e5608c",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Hamâme”, ikinci hedef “Namaz uykudan hayırlıdır”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q69-enesbmalik-anne",
-      "b": "q69-enesbmalik-teyze",
-      "score": 0.25,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q69-enesbmalik-anne",
-          "question": "Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
-          "answer": "Ümmü Süleym"
-        },
-        {
-          "id": "q69-enesbmalik-teyze",
-          "question": "Enes b. Mâlik'in teyzesinin adı nedir?",
-          "answer": "Ümmü Harâm"
-        }
-      ],
-      "decision": {
-        "a": "q69-enesbmalik-anne",
-        "b": "q69-enesbmalik-teyze",
-        "snapshotSha256": "d967cecbf07cea1b4d7a83b2c3df827fcbc3d2efcb3ba9e90017ac8ff39675dc",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Ümmü Süleym”, ikinci hedef “Ümmü Harâm”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q69-enesbmalik-kunye",
-      "b": "q69-enesbmalik-anne",
-      "score": 0.25,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q69-enesbmalik-kunye",
-          "question": "Enes b. Mâlik'in yaygın künyesi hangisidir?",
-          "answer": "Ebû Hamza"
-        },
-        {
-          "id": "q69-enesbmalik-anne",
-          "question": "Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
-          "answer": "Ümmü Süleym"
-        }
-      ],
-      "decision": {
-        "a": "q69-enesbmalik-kunye",
-        "b": "q69-enesbmalik-anne",
-        "snapshotSha256": "a352456746045a2e9ab87bba6c2a42959bc9c71d8ed428a96ca5b4bf71fbee99",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Ebû Hamza”, ikinci hedef “Ümmü Süleym”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -4480,6 +4423,7 @@
           "answer": "On yıl"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-lakap",
         "b": "q69-enesbmalik-yil",
@@ -4507,6 +4451,7 @@
           "answer": "İmam Şâfiî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ahmed-b-hanbel-dogum",
         "b": "q70-ahmed-b-hanbel-hoca",
@@ -4534,6 +4479,7 @@
           "answer": "1681"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-evliya-cilt",
         "b": "q59-evliya-son",
@@ -4561,6 +4507,7 @@
           "answer": "Dârimî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-sitte-darimi",
@@ -4588,6 +4535,7 @@
           "answer": "889"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-ibnmace",
         "b": "q68-ebudavud-vefat",
@@ -4615,6 +4563,7 @@
           "answer": "Nâsırüddin Mahmud"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-cezeri-saat",
         "b": "q45-cezeri-amir",
@@ -4642,6 +4591,7 @@
           "answer": "İlimler ve eğitim öğretim"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-haldun-mukaddime",
         "b": "q45-haldun-ilim",
@@ -4669,6 +4619,7 @@
           "answer": "Bileşik ilaç reçeteleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-ibnsina-organ",
         "b": "q45-ibnsina-recete",
@@ -4696,6 +4647,7 @@
           "answer": "Ömer b. Hattâb"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-bedir-001",
         "b": "q47-bedir-005",
@@ -4723,6 +4675,7 @@
           "answer": "Ömer b. Hattâb"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-bedir-003",
         "b": "q47-bedir-005",
@@ -4750,6 +4703,7 @@
           "answer": "Hâlid b. Velîd"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-008",
         "b": "q48-ummu-seleme-012",
@@ -4777,6 +4731,7 @@
           "answer": "915–916"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-taberi-010",
         "b": "q49-taberi-012",
@@ -4804,6 +4759,7 @@
           "answer": "1399–1400"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-bursa-ulucami",
         "b": "q63-bursa-bitis",
@@ -4831,6 +4787,7 @@
           "answer": "İbnü’s-Sabbâğ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-nizamiye-nehir",
         "b": "q63-nizamiye-ilk",
@@ -4858,6 +4815,7 @@
           "answer": "30 kilometre"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-bedir-yerkonum",
         "b": "q64-bedir-irmak",
@@ -4885,6 +4843,7 @@
           "answer": "Can ve mal güvenliği"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-veda-tek",
         "b": "q64-veda-hak",
@@ -4912,6 +4871,7 @@
           "answer": "Sağır ve kör gibi kalmak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-furkan-64",
         "b": "q65-furkan-73",
@@ -4939,6 +4899,7 @@
           "answer": "Şüpheye kapılmadan bağlılık göstermek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-hucurat-14",
         "b": "q65-hucurat-15",
@@ -4966,6 +4927,7 @@
           "answer": "Hârûn"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-11",
         "b": "q67-kasas-34",
@@ -4993,6 +4955,7 @@
           "answer": "Hârûn"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-12",
         "b": "q67-kasas-34",
@@ -5020,6 +4983,7 @@
           "answer": "İleri gelenlerin onu öldürmeyi planlaması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-15",
         "b": "q67-kasas-20",
@@ -5047,6 +5011,7 @@
           "answer": "Hârûn"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-15",
         "b": "q67-kasas-34",
@@ -5074,6 +5039,7 @@
           "answer": "Sağ tarafından"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-20",
         "b": "q67-kasas-30",
@@ -5101,6 +5067,7 @@
           "answer": "Diriyi ölüden ve ölüyü diriden çıkarmak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-rum-17",
         "b": "q67-rum-19",
@@ -5128,6 +5095,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-hac",
         "b": "q69-abdullahbabbas-basra",
@@ -5155,6 +5123,7 @@
           "answer": "Ebû Ruveyha"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-azat",
         "b": "q69-bilalihabesi-kardes",
@@ -5182,6 +5151,7 @@
           "answer": "Ebû Ruveyha"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-vasita",
         "b": "q69-bilalihabesi-kardes",
@@ -5209,6 +5179,7 @@
           "answer": "İstanbul"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-kabile",
         "b": "q69-ebueyyubelensari-istanbul",
@@ -5236,6 +5207,7 @@
           "answer": "Kıbrıs"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-muahat",
         "b": "q69-ebueyyubelensari-kibris",
@@ -5263,6 +5235,7 @@
           "answer": "Bağdat"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ahmed-b-hanbel-yemen",
         "b": "q70-ahmed-b-hanbel-vefat",
@@ -5290,6 +5263,7 @@
           "answer": "7"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "pilot-general-004",
         "b": "e150-general-024",
@@ -5317,6 +5291,7 @@
           "answer": "Çayırlar"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q43-abese-25",
         "b": "q43-abese-32",
@@ -5344,6 +5319,7 @@
           "answer": "Şanının ve ününün yüceltilmesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q44-insirah-1",
         "b": "q44-insirah-4",
@@ -5371,6 +5347,7 @@
           "answer": "Kedi yavrularıyla ilgilenmesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ebu-hureyre-022",
         "b": "q48-ebu-hureyre-024",
@@ -5398,6 +5375,7 @@
           "answer": "Abdurrahmân b. Sahr"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ebu-hureyre-022",
         "b": "q48-ebu-hureyre-027",
@@ -5425,6 +5403,7 @@
           "answer": "Hayber"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ebu-hureyre-025",
         "b": "q48-ebu-hureyre-028",
@@ -5452,6 +5431,7 @@
           "answer": "Jeodezi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-biruni-002",
         "b": "q49-biruni-003",
@@ -5479,6 +5459,7 @@
           "answer": "Marangozluk"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q50-zekeriyya-020",
         "b": "q50-zekeriyya-023",
@@ -5506,6 +5487,7 @@
           "answer": "Dil ve iki dudak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-beled-010",
         "b": "q53-beled-012",
@@ -5533,6 +5515,7 @@
           "answer": "Nefis"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-sems-020",
         "b": "q53-sems-021",
@@ -5560,6 +5543,7 @@
           "answer": "Şaka ve eğlence olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q54-tarik-010",
         "b": "q54-tarik-014",
@@ -5587,6 +5571,7 @@
           "answer": "Şaka ve eğlence olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q54-tarik-013",
         "b": "q54-tarik-014",
@@ -5614,6 +5599,7 @@
           "answer": "İnsanların yaptıklarını bilmeleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-infitar-014",
         "b": "q55-infitar-018",
@@ -5641,6 +5627,7 @@
           "answer": "Yerlerinden yürütülmeleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-002",
         "b": "q55-tekvir-003",
@@ -5668,6 +5655,7 @@
           "answer": "Kaynatılmaları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-003",
         "b": "q55-tekvir-005",
@@ -5695,6 +5683,7 @@
           "answer": "Yaklaştırılması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-003",
         "b": "q55-tekvir-008",
@@ -5722,6 +5711,7 @@
           "answer": "Azık torbası ve su kabının ağzını bağlamak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q58-esma-ogul",
         "b": "q58-esma-azik",
@@ -5749,6 +5739,7 @@
           "answer": "Levâte"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-dogum",
         "b": "q59-battuta-kabile",
@@ -5776,6 +5767,7 @@
           "answer": "Yedi gece sekiz gün"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q61-hud-firtina",
         "b": "q61-hud-sure",
@@ -5803,6 +5795,7 @@
           "answer": "Sedefkâr Mehmed Ağa"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-istanbul-sul",
         "b": "q63-istanbul-sultan",
@@ -5830,6 +5823,7 @@
           "answer": "1251"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-karatay-sehir",
         "b": "q63-karatay-tarih",
@@ -5857,6 +5851,7 @@
           "answer": "Yalan şahitlik"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-furkan-67",
         "b": "q65-furkan-72",
@@ -5884,6 +5879,7 @@
           "answer": "İlk, son, açık, gizli"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-hadid-2",
         "b": "q65-hadid-3",
@@ -5911,6 +5907,7 @@
           "answer": "Bilmediği şeyin peşine düşmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-isra-31",
         "b": "q65-isra-36",
@@ -5938,6 +5935,7 @@
           "answer": "İnsanlarla konuşma"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-meryem-7",
         "b": "q66-meryem-10",
@@ -5965,6 +5963,7 @@
           "answer": "Şuayb"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-ankebut-26",
         "b": "q67-ankebut-36",
@@ -5992,6 +5991,7 @@
           "answer": "Yerin dibine geçirilmekle"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-77",
         "b": "q67-kasas-81",
@@ -6019,6 +6019,7 @@
           "answer": "Hâdimü’n-Nebî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-kunye",
         "b": "q69-enesbmalik-lakap",
@@ -6046,6 +6047,7 @@
           "answer": "Ümmü Harâm"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-lakap",
         "b": "q69-enesbmalik-teyze",
@@ -6073,6 +6075,7 @@
           "answer": "Müslümanların sayısını belirlemek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-annesi",
         "b": "q69-zeydbsabit-hayber",
@@ -6100,6 +6103,7 @@
           "answer": "Müslümanların sayısını belirlemek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-dogum",
         "b": "q69-zeydbsabit-hayber",
@@ -6127,6 +6131,7 @@
           "answer": "Bağdat"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ahmed-b-hanbel-eser",
         "b": "q70-ahmed-b-hanbel-vefat",
@@ -6154,6 +6159,7 @@
           "answer": "Kumaş ticareti"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ebu-hanife-dogum",
         "b": "q70-ebu-hanife-ticaret",
@@ -6181,6 +6187,7 @@
           "answer": "Mâlikî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-malik-b-enes-vefat",
         "b": "q70-malik-b-enes-tazi",
@@ -6208,6 +6215,7 @@
           "answer": "Abdullah b. Zübeyr"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q71-aise-anne",
         "b": "q71-aise-kunye",
@@ -6235,6 +6243,7 @@
           "answer": "Nâsırüddin Mahmud"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-cezeri-kitap",
         "b": "q45-cezeri-amir",
@@ -6262,6 +6271,7 @@
           "answer": "Su ve kandil saatleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-cezeri-kitap",
         "b": "q45-cezeri-saat",
@@ -6289,6 +6299,7 @@
           "answer": "İnsan toplumu ve toplumsal hayatı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-haldun-mukaddime",
         "b": "q45-haldun-umran",
@@ -6316,6 +6327,7 @@
           "answer": "İlimler ve eğitim öğretim"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-haldun-umran",
         "b": "q45-haldun-ilim",
@@ -6343,6 +6355,7 @@
           "answer": "Kurban kesip tıraş olarak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-008",
         "b": "q48-ummu-seleme-011",
@@ -6370,6 +6383,7 @@
           "answer": "915–916"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-taberi-009",
         "b": "q49-taberi-012",
@@ -6397,6 +6411,7 @@
           "answer": "915"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-taberi-011",
         "b": "q49-taberi-013",
@@ -6424,6 +6439,7 @@
           "answer": "Kur’an ve hadis"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q51-suffe-021",
         "b": "q51-suffe-022",
@@ -6451,6 +6467,7 @@
           "answer": "Sadakayı Suffe’ye gönderir, hediyeyi paylaşırdı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q51-suffe-022",
         "b": "q51-suffe-024",
@@ -6478,6 +6495,7 @@
           "answer": "Yaptıkları ve yapmadıkları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-infitar-014",
         "b": "q55-infitar-015",
@@ -6505,6 +6523,7 @@
           "answer": "On dört"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q58-suleym-anne",
         "b": "q58-suleym-rivayet",
@@ -6532,6 +6551,7 @@
           "answer": "Levâte"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-eser",
         "b": "q59-battuta-kabile",
@@ -6559,6 +6579,7 @@
           "answer": "Arapça"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-katib-kesf",
         "b": "q59-katib-dil",
@@ -6586,6 +6607,7 @@
           "answer": "Mus‘ab b. Umeyr"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-bedir-muhacir",
         "b": "q64-bedir-sancak",
@@ -6613,6 +6635,7 @@
           "answer": "Savaşa izin verilmesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-senet-vufud",
         "b": "q64-senet-emr",
@@ -6640,6 +6663,7 @@
           "answer": "Abbas b. Abdülmuttalib"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-veda-tek",
         "b": "q64-veda-faiz",
@@ -6667,6 +6691,7 @@
           "answer": "Demir ve bakır"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-kehf-94",
         "b": "q66-kehf-96",
@@ -6694,6 +6719,7 @@
           "answer": "Tahtının"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-30",
         "b": "q66-neml-42",
@@ -6721,6 +6747,7 @@
           "answer": "Allah'ın yollarına eriştirilmeleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-ankebut-6",
         "b": "q67-ankebut-69",
@@ -6748,6 +6775,7 @@
           "answer": "Kardeşini uzaktan takip etmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-11",
@@ -6775,6 +6803,7 @@
           "answer": "Birbiriyle kavga ediyorlardı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-15",
@@ -6802,6 +6831,7 @@
           "answer": "Hârûn"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-9",
         "b": "q67-kasas-34",
@@ -6829,6 +6859,7 @@
           "answer": "Buhârî, Müslim ve Tirmizî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-buhari",
         "b": "q68-sitte-cami",
@@ -6856,6 +6887,7 @@
           "answer": "Nesâî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-buhari",
         "b": "q68-sitte-nesai",
@@ -6883,6 +6915,7 @@
           "answer": "915"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-nesai-vefat",
@@ -6910,6 +6943,7 @@
           "answer": "Buhârî, Müslim ve Tirmizî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-muslim",
         "b": "q68-sitte-cami",
@@ -6937,6 +6971,7 @@
           "answer": "Ebû Dâvûd"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-muslim",
         "b": "q68-sitte-davud",
@@ -6964,6 +6999,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-dua",
         "b": "q69-abdullahbabbas-basra",
@@ -6991,6 +7027,7 @@
           "answer": "Suriye"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-kardes",
         "b": "q69-bilalihabesi-suriye",
@@ -7018,6 +7055,7 @@
           "answer": "622"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-kabile",
         "b": "q69-ebueyyubelensari-akabe",
@@ -7045,6 +7083,7 @@
           "answer": "Hac"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-lakap",
         "b": "q69-enesbmalik-veda",
@@ -7072,6 +7111,7 @@
           "answer": "el-Müsned"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ahmed-b-hanbel-yemen",
         "b": "q70-ahmed-b-hanbel-eser",
@@ -7099,6 +7139,7 @@
           "answer": "Beş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-002",
         "b": "q48-esma-004",
@@ -7126,6 +7167,7 @@
           "answer": "Bileşik ilaç reçeteleri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q45-ibnsina-ilac",
         "b": "q45-ibnsina-recete",
@@ -7153,6 +7195,7 @@
           "answer": "Zübeyr b. Avvâm"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-bedir-003",
         "b": "q47-bedir-006",
@@ -7180,6 +7223,7 @@
           "answer": "Feth sûresi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-beyat-016",
         "b": "q47-beyat-017",
@@ -7207,6 +7251,7 @@
           "answer": "İttifak yapılacak tarafı seçme"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-hudeybiye-009",
         "b": "q47-hudeybiye-013",
@@ -7234,6 +7279,7 @@
           "answer": "Beş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-oruç-048",
         "b": "q47-oruç-049",
@@ -7261,6 +7307,7 @@
           "answer": "Yokluğuna geçerli bir gerekçe sunmasına"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-suleyman-026",
         "b": "q47-suleyman-027",
@@ -7288,6 +7335,7 @@
           "answer": "Abdurrahmân b. Sahr"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ebu-hureyre-024",
         "b": "q48-ebu-hureyre-027",
@@ -7315,6 +7363,7 @@
           "answer": "Mümtehine 60/8"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-esma-001",
         "b": "q48-esma-005",
@@ -7342,6 +7391,7 @@
           "answer": "Dihye el-Kelbî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-ummu-seleme-010",
         "b": "q48-ummu-seleme-013",
@@ -7369,6 +7419,7 @@
           "answer": "Aziz"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-yusuf-031",
         "b": "q48-yusuf-032",
@@ -7396,6 +7447,7 @@
           "answer": "Astronomik bilimlere giriş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-biruni-001",
         "b": "q49-biruni-004",
@@ -7423,6 +7475,7 @@
           "answer": "Değerli taşlar ve mineraller"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-biruni-001",
         "b": "q49-biruni-006",
@@ -7450,6 +7503,7 @@
           "answer": "Astronomik bilimlere giriş"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-biruni-002",
         "b": "q49-biruni-004",
@@ -7477,6 +7531,7 @@
           "answer": "1030"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-biruni-006",
         "b": "q49-biruni-008",
@@ -7504,6 +7559,7 @@
           "answer": "On"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-ihya-021",
         "b": "q49-ihya-024",
@@ -7531,6 +7587,7 @@
           "answer": "İlmin âhiret amacından uzaklaşıp şekle indirgenmesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q49-ihya-022",
         "b": "q49-ihya-023",
@@ -7558,6 +7615,7 @@
           "answer": "Yerin altüst olması ve taş yağması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q50-lut-013",
         "b": "q50-lut-016",
@@ -7585,6 +7643,7 @@
           "answer": "Alçak sesle"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q50-zekeriyya-019",
         "b": "q50-zekeriyya-020",
@@ -7612,6 +7671,7 @@
           "answer": "Sadakayı Suffe’ye gönderir, hediyeyi paylaşırdı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q51-suffe-021",
         "b": "q51-suffe-024",
@@ -7639,6 +7699,7 @@
           "answer": "Bir köleyi özgürleştirmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-beled-011",
         "b": "q53-beled-014",
@@ -7666,6 +7727,7 @@
           "answer": "Bir köleyi özgürleştirmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-beled-012",
         "b": "q53-beled-014",
@@ -7693,6 +7755,7 @@
           "answer": "Akan pınar"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q53-gasiye-029",
         "b": "q53-gasiye-030",
@@ -7720,6 +7783,7 @@
           "answer": "Yüce"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-infitar-015",
         "b": "q55-infitar-016",
@@ -7747,6 +7811,7 @@
           "answer": "Beşinci"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q57-hendekahzab",
         "b": "q57-hendektarih",
@@ -7774,6 +7839,7 @@
           "answer": "Yaktîn"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q57-yunuskura",
         "b": "q57-yunusbitki",
@@ -7801,6 +7867,7 @@
           "answer": "İki"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q57-yusufruya",
         "b": "q57-yusufzindan",
@@ -7828,6 +7895,7 @@
           "answer": "Benî Mahzûm"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q58-seleme-asli",
         "b": "q58-seleme-kabile",
@@ -7855,6 +7923,7 @@
           "answer": "Kadı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-dogum",
         "b": "q59-battuta-kadi",
@@ -7882,6 +7951,7 @@
           "answer": "Fas"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-dogum",
         "b": "q59-battuta-yuz",
@@ -7909,6 +7979,7 @@
           "answer": "Kadı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-eser",
         "b": "q59-battuta-kadi",
@@ -7936,6 +8007,7 @@
           "answer": "Fas"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-battuta-eser",
         "b": "q59-battuta-yuz",
@@ -7963,12 +8035,41 @@
           "answer": "Mısır'da"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q59-evliya-cilt",
         "b": "q59-evliya-yazim",
         "snapshotSha256": "8314eb53d178975445f192f11efe2c0881da61cfbc09c85485d79375a415973f",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “On”, ikinci hedef “Mısır'da”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q60-erkam-safa",
+      "b": "q60-erkam-hizmet",
+      "score": 0.2,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q60-erkam-safa",
+          "question": "Dârülerkam, Mekke'de hangi tepenin eteklerinde bulunuyordu?",
+          "answer": "Safâ"
+        },
+        {
+          "id": "q60-erkam-hizmet",
+          "question": "İlk Müslümanların Mekke’de toplandığı Dârülerkam hangi adla da bilinir?",
+          "answer": "Dârülislâm"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q60-erkam-safa",
+        "b": "q60-erkam-hizmet",
+        "snapshotSha256": "556df885e92cb7348448ffcbd9d178a9b97e12933272552ba0f375a1fc6e775e",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Safâ konumu q60-erkam-safa ile aynı bilgiyi tekrarlıyordu; bu evin belgelenmiş ikinci adı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
       }
     },
     {
@@ -7990,6 +8091,7 @@
           "answer": "İnsanlarla konuşmamak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q61-meryem-himaye",
         "b": "q61-meryem-sus",
@@ -8017,6 +8119,7 @@
           "answer": "Borçlular"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q62-zekat-sekiz",
         "b": "q62-zekat-borclu",
@@ -8044,6 +8147,7 @@
           "answer": "Müderris ve öğrencilerin ihtiyaçları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q63-nizamiye-bagdat",
         "b": "q63-nizamiye-kut",
@@ -8071,6 +8175,7 @@
           "answer": "Mekke’nin alınması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q64-senet-emr",
         "b": "q64-senet-fetih",
@@ -8098,6 +8203,7 @@
           "answer": "Göz aydınlığı ve mutluluk olmaları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-furkan-70",
         "b": "q65-furkan-74",
@@ -8125,6 +8231,7 @@
           "answer": "Yüce cennet makamları"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-furkan-72",
         "b": "q65-furkan-75",
@@ -8152,6 +8259,7 @@
           "answer": "Çıkıncaya kadar sabretmek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-hucurat-2",
         "b": "q65-hucurat-5",
@@ -8179,39 +8287,13 @@
           "answer": "Göklerin ve yerin gaybı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q65-hucurat-7",
         "b": "q65-hucurat-18",
         "snapshotSha256": "79806f98927c30e0ba0f8b5e261d49e42ab4da1606146f3448bc48f589ff33db",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “İmanı”, ikinci hedef “Göklerin ve yerin gaybı”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "q66-kehf-10",
-      "b": "q66-kehf-16",
-      "score": 0.2,
-      "sameAnswer": false,
-      "sameConcept": true,
-      "signal": "same-concept",
-      "questions": [
-        {
-          "id": "q66-kehf-10",
-          "question": "Kehf 18/10'da mağaraya sığınan gençlerin duasında hangi iki talep birlikte yer alır?",
-          "answer": "Rahmet ve doğru yol"
-        },
-        {
-          "id": "q66-kehf-16",
-          "question": "Kehf 18/16'da gençlerin inançlarını korumak için seçtikleri yer neresidir?",
-          "answer": "Mağara"
-        }
-      ],
-      "decision": {
-        "a": "q66-kehf-10",
-        "b": "q66-kehf-16",
-        "snapshotSha256": "67b0b1ec03d020e61ad5f99b43f07041082bb73dfdb2d3598d201e1abfa7d1a8",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Rahmet ve doğru yol”, ikinci hedef “Mağara”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -8233,6 +8315,7 @@
           "answer": "Mağaranın girişinde"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-kehf-13",
         "b": "q66-kehf-18",
@@ -8260,6 +8343,7 @@
           "answer": "Üç yüz yıl ve buna ek dokuz"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-kehf-23",
         "b": "q66-kehf-25",
@@ -8287,6 +8371,7 @@
           "answer": "Sabah akşam Rablerine dua edenler"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-kehf-9",
         "b": "q66-kehf-28",
@@ -8314,6 +8399,7 @@
           "answer": "Yahyâ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-meryem-3",
         "b": "q66-meryem-7",
@@ -8341,6 +8427,7 @@
           "answer": "Hüdhüd"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-16",
         "b": "q66-neml-20",
@@ -8368,6 +8455,7 @@
           "answer": "Sebe'"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-16",
         "b": "q66-neml-22",
@@ -8395,6 +8483,7 @@
           "answer": "Hediye"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-16",
         "b": "q66-neml-35",
@@ -8422,6 +8511,7 @@
           "answer": "Hediye"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-neml-20",
         "b": "q66-neml-35",
@@ -8449,6 +8539,7 @@
           "answer": "Korkunç ses"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-ankebut-26",
         "b": "q67-ankebut-40",
@@ -8476,6 +8567,7 @@
           "answer": "Yeryüzünde üstünlük ve bozgunculuk istemeyenlere"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-40",
         "b": "q67-kasas-83",
@@ -8503,6 +8595,7 @@
           "answer": "Güçlü ve güvenilir olmak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-26",
@@ -8530,6 +8623,7 @@
           "answer": "Firavun’un karısı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-7",
         "b": "q67-kasas-9",
@@ -8557,6 +8651,7 @@
           "answer": "Yerin dibine geçirilmekle"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q67-kasas-78",
         "b": "q67-kasas-81",
@@ -8584,6 +8679,7 @@
           "answer": "Davranışlarıyla"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-hadis-kavli",
         "b": "q68-hadis-fiili",
@@ -8611,6 +8707,7 @@
           "answer": "Ebû Dâvûd, Nesâî ve İbn Mâce"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-davud",
         "b": "q68-sitte-sunen",
@@ -8638,6 +8735,7 @@
           "answer": "887"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-nesai",
         "b": "q68-ibnmace-vefat",
@@ -8665,6 +8763,7 @@
           "answer": "İbn Mâce"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-nesai",
         "b": "q68-sitte-ibnmace",
@@ -8692,6 +8791,7 @@
           "answer": "Ebû Dâvûd, Nesâî ve İbn Mâce"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sitte-nesai",
         "b": "q68-sitte-sunen",
@@ -8719,6 +8819,7 @@
           "answer": "Fıkıh konularına göre"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q68-sunen-tanim",
         "b": "q68-sunen-duzen",
@@ -8746,6 +8847,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-amca",
         "b": "q69-abdullahbabbas-basra",
@@ -8773,6 +8875,7 @@
           "answer": "Hac emîri"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-anne",
         "b": "q69-abdullahbabbas-hac",
@@ -8800,6 +8903,7 @@
           "answer": "1660"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-anne",
         "b": "q69-abdullahbabbas-rivayet",
@@ -8827,6 +8931,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-teyze",
         "b": "q69-abdullahbabbas-basra",
@@ -8854,6 +8959,7 @@
           "answer": "Ebû Bekir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-anne",
         "b": "q69-bilalihabesi-azat",
@@ -8881,6 +8987,7 @@
           "answer": "Ebû Bekir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-anne",
         "b": "q69-bilalihabesi-vasita",
@@ -8908,6 +9015,7 @@
           "answer": "İstanbul"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-kibris",
         "b": "q69-ebueyyubelensari-istanbul",
@@ -8935,6 +9043,7 @@
           "answer": "İstanbul"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-ebueyyubelensari-muahat",
         "b": "q69-ebueyyubelensari-istanbul",
@@ -8962,6 +9071,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-kunye",
         "b": "q69-enesbmalik-basra",
@@ -8989,12 +9099,41 @@
           "answer": "On yıl"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-kunye",
         "b": "q69-enesbmalik-yil",
         "snapshotSha256": "8cb1da0599311c5d63f9138c2953624ded3518543d31ac62de5279bc1d4fc1ec",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Ebû Hamza”, ikinci hedef “On yıl”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q69-enesbmalik-lakap",
+      "b": "q69-enesbmalik-anne",
+      "score": 0.2,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q69-enesbmalik-lakap",
+          "question": "Enes b. Mâlik'e Hz. Peygamber'in hizmeti sebebiyle verilen unvan hangisidir?",
+          "answer": "Hâdimü’n-Nebî"
+        },
+        {
+          "id": "q69-enesbmalik-anne",
+          "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
+          "answer": "Berâ b. Mâlik"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "q69-enesbmalik-lakap",
+        "b": "q69-enesbmalik-anne",
+        "snapshotSha256": "296d6edc1544b7a8610cdf1786f4431b293c48c273b1067c9805949ca0a9b5e0",
+        "verdict": "distinct-context",
+        "reason": "Hâdimü’n-Nebî unvanı ile kardeşi Berâ b. Mâlik’in kimliği farklı hedeflerdir."
       }
     },
     {
@@ -9016,6 +9155,7 @@
           "answer": "Basra"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-teyze",
         "b": "q69-enesbmalik-basra",
@@ -9043,6 +9183,7 @@
           "answer": "On yıl"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-teyze",
         "b": "q69-enesbmalik-yil",
@@ -9070,6 +9211,7 @@
           "answer": "Hac"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-enesbmalik-yil",
         "b": "q69-enesbmalik-veda",
@@ -9097,6 +9239,7 @@
           "answer": "Medâin"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-selmanifarisi-asli",
         "b": "q69-selmanifarisi-vali",
@@ -9124,6 +9267,7 @@
           "answer": "Yaşının küçük olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-annesi",
         "b": "q69-zeydbsabit-uhud",
@@ -9151,6 +9295,7 @@
           "answer": "Yaşının küçük olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-dogum",
         "b": "q69-zeydbsabit-uhud",
@@ -9178,6 +9323,7 @@
           "answer": "İbrânîce veya Süryânîce"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-zeydbsabit-sure",
         "b": "q69-zeydbsabit-dil",
@@ -9205,6 +9351,7 @@
           "answer": "el-Müsned"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ahmed-b-hanbel-dogum",
         "b": "q70-ahmed-b-hanbel-eser",
@@ -9232,6 +9379,7 @@
           "answer": "Kûfe"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-ebu-hanife-asli",
         "b": "q70-ebu-hanife-dogum",
@@ -9259,6 +9407,7 @@
           "answer": "Medine"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-malik-b-enes-dogum",
         "b": "q70-malik-b-enes-vefat",
@@ -9286,12 +9435,97 @@
           "answer": "Mâlikî"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q70-malik-b-enes-egitim",
         "b": "q70-malik-b-enes-tazi",
         "snapshotSha256": "f2242df643d32c6a3ce49a9b985eb321c95fda9c014cf16aab7afbde8c137d31",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Medine”, ikinci hedef “Mâlikî”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "q58-suleym-ogul",
+      "b": "q58-suleym-rivayet",
+      "score": 0.111,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q58-suleym-ogul",
+          "question": "Ümmü Süleym’in, Enes b. Mâlik’in üvey babası olan eşi hangi sahâbîdir?",
+          "answer": "Ebû Talha"
+        },
+        {
+          "id": "q58-suleym-rivayet",
+          "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+          "answer": "On dört"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q58-suleym-ogul",
+        "b": "q58-suleym-rivayet",
+        "snapshotSha256": "5f91b68f230f62d090efc83510a1284e4d9ed63346b47c36b0ef162a8407774a",
+        "verdict": "distinct-context",
+        "reason": "Eş/üvey baba kimliği ile rivayet edilen hadis sayısı farklı iki hedeftir."
+      }
+    },
+    {
+      "a": "e150-prophets-008",
+      "b": "v11-prophets-003",
+      "score": 0.083,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "e150-prophets-008",
+          "question": "Hz. Yûsuf suçsuzluğuna rağmen bir süre nerede kalır?",
+          "answer": "Zindanda"
+        },
+        {
+          "id": "v11-prophets-003",
+          "question": "Hz. Yûsuf hükümdarın rüyasını yorumlamadan önce hangi yerde bulunuyordu?",
+          "answer": "Hapishanede"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-008",
+        "b": "v11-prophets-003",
+        "snapshotSha256": "da0b2019ef02d057f493477518a5b41b704d3516cce2926adca037cdfed119f0",
+        "verdict": "repeated-fact",
+        "reason": "Zindan/hapishane eş anlamlıdır; Yûsuf’un bulunduğu yer aynı olay dizisinin iki anlatımıyla soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "q66-kehf-10",
+      "b": "q66-kehf-16",
+      "score": 0.059,
+      "sameAnswer": false,
+      "sameConcept": true,
+      "signal": "same-concept",
+      "questions": [
+        {
+          "id": "q66-kehf-10",
+          "question": "Kehf 18/12’de iki grubun hangisinin daha iyi hesapladığı belirtilmek istenen şey nedir?",
+          "answer": "Mağarada kalınan süre"
+        },
+        {
+          "id": "q66-kehf-16",
+          "question": "Kehf 18/16'da gençlerin inançlarını korumak için seçtikleri yer neresidir?",
+          "answer": "Mağara"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q66-kehf-10",
+        "b": "q66-kehf-16",
+        "snapshotSha256": "5b86209e2b9b2d64a8248ba46c70eb43d5642d3d93773a20b8ed20b3db3cc23f",
+        "verdict": "distinct-context",
+        "reason": "18/12’de hesaplanacak süre ile 18/16’da seçilen sığınak farklı hedeflerdir; aynı mağara sahnesi sebebiyle ilişkili içeriktir."
       }
     },
     {
@@ -9313,6 +9547,7 @@
           "answer": "Meryem"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-032",
         "b": "e150-quran-034",
@@ -9340,6 +9575,7 @@
           "answer": "Tâhâ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-032",
         "b": "e150-quran-036",
@@ -9367,6 +9603,7 @@
           "answer": "Enbiyâ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-032",
         "b": "e150-quran-038",
@@ -9394,6 +9631,7 @@
           "answer": "Hac"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-032",
         "b": "e150-quran-040",
@@ -9421,6 +9659,7 @@
           "answer": "Tâhâ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-034",
         "b": "e150-quran-036",
@@ -9448,6 +9687,7 @@
           "answer": "Enbiyâ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-034",
         "b": "e150-quran-038",
@@ -9475,6 +9715,7 @@
           "answer": "Hac"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-034",
         "b": "e150-quran-040",
@@ -9502,6 +9743,7 @@
           "answer": "Enbiyâ"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-036",
         "b": "e150-quran-038",
@@ -9529,6 +9771,7 @@
           "answer": "Hac"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-036",
         "b": "e150-quran-040",
@@ -9556,6 +9799,7 @@
           "answer": "Hac"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-038",
         "b": "e150-quran-040",
@@ -9583,39 +9827,13 @@
           "answer": "2630"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-abdullahbabbas-rivayet",
         "b": "q69-abdullahbomerbhattab-hadis",
         "snapshotSha256": "1e0b58e600309f29021fc592ac8683de18751419147541cbe96b0c6c1a36e77b",
         "verdict": "distinct-context",
         "reason": "İki farklı râvinin iki farklı rivayet sayısı; TDV kişileri ve sayıları ayrı olgular olarak karşılaştırıldı."
-      }
-    },
-    {
-      "a": "e150-history-026",
-      "b": "e150-history-027",
-      "score": 0.714,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "e150-history-026",
-          "question": "Birinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
-          "answer": "621"
-        },
-        {
-          "id": "e150-history-027",
-          "question": "İkinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
-          "answer": "622"
-        }
-      ],
-      "decision": {
-        "a": "e150-history-026",
-        "b": "e150-history-027",
-        "snapshotSha256": "7d2f8d1b967da19667b357937b8a30862c1580e0510a48bc7a0be4929174b812",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “621”, ikinci hedef “622”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -9637,6 +9855,7 @@
           "answer": "3"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "pilot-history-001",
         "b": "e150-history-020",
@@ -9664,6 +9883,7 @@
           "answer": "On bir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-harun-032",
         "b": "q50-suayb-006",
@@ -9691,6 +9911,7 @@
           "answer": "Yirmi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-nuh-020",
         "b": "q47-harun-032",
@@ -9718,39 +9939,13 @@
           "answer": "On bir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-nuh-020",
         "b": "q50-suayb-006",
         "snapshotSha256": "71f6bfb6302d7163b30ca33509f3aada92d848faddde9262ae3bd453f9277c7d",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kırk üç”, ikinci hedef “On bir”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "v7-history-003",
-      "b": "q57-hayberdate",
-      "score": 0.714,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v7-history-003",
-          "question": "Hayber seferi hicretin kaçıncı yılında gerçekleşmiştir?",
-          "answer": "7"
-        },
-        {
-          "id": "q57-hayberdate",
-          "question": "Hayber seferi hicretin kaçıncı yılında yapılmıştır?",
-          "answer": "Yedinci"
-        }
-      ],
-      "decision": {
-        "a": "v7-history-003",
-        "b": "q57-hayberdate",
-        "snapshotSha256": "7837df83d38fa9aee416b931903aebe74840bd01dafae55f57427f8728ebf985",
-        "verdict": "repeated-fact",
-        "reason": "Hayber’in hicrî yedinci yıl tarihi sayı ve yazıyla iki kökte aynı olay olarak soruluyor."
       }
     },
     {
@@ -9772,6 +9967,7 @@
           "answer": "98"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-031",
         "b": "e150-quran-033",
@@ -9799,6 +9995,7 @@
           "answer": "135"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-031",
         "b": "e150-quran-035",
@@ -9826,6 +10023,7 @@
           "answer": "112"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-031",
         "b": "e150-quran-037",
@@ -9853,6 +10051,7 @@
           "answer": "135"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-033",
         "b": "e150-quran-035",
@@ -9880,6 +10079,7 @@
           "answer": "112"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-033",
         "b": "e150-quran-037",
@@ -9907,6 +10107,7 @@
           "answer": "112"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-quran-035",
         "b": "e150-quran-037",
@@ -9934,6 +10135,7 @@
           "answer": "110"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "pilot-quran-002",
         "b": "e150-quran-031",
@@ -9961,6 +10163,7 @@
           "answer": "98"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "pilot-quran-002",
         "b": "e150-quran-033",
@@ -9988,6 +10191,7 @@
           "answer": "135"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "pilot-quran-002",
         "b": "e150-quran-035",
@@ -10015,39 +10219,13 @@
           "answer": "112"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "pilot-quran-002",
         "b": "e150-quran-037",
         "snapshotSha256": "fe93788de1106df6c8c3fc379743d48ab0ad91bebb5ada2d84abd772e159b708",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “4”, ikinci hedef “112”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "learn-dua-024",
-      "b": "q66-kehf-10",
-      "score": 0.636,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "learn-dua-024",
-          "question": "Kehf 18/10’da gençlerin duasında hangi iki istek birlikte yer alır?",
-          "answer": "Rahmet ve bir çıkış yolu"
-        },
-        {
-          "id": "q66-kehf-10",
-          "question": "Kehf 18/10'da mağaraya sığınan gençlerin duasında hangi iki talep birlikte yer alır?",
-          "answer": "Rahmet ve doğru yol"
-        }
-      ],
-      "decision": {
-        "a": "learn-dua-024",
-        "b": "q66-kehf-10",
-        "snapshotSha256": "b61daecd679219b06a7772d30d352d9d16d04251d29140a69c450e5f74d04c9b",
-        "verdict": "repeated-fact",
-        "reason": "Kehf 18/10 gençlerin duası iki yakın meal ifadesiyle aynı iki talebi soruyor; çıkış yolu/doğru yol ifadesi ayrı öğrenme hedefi oluşturmaz."
       }
     },
     {
@@ -10069,6 +10247,7 @@
           "answer": "Altı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-harun-032",
         "b": "q50-zekeriyya-022",
@@ -10096,6 +10275,7 @@
           "answer": "Altı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-nuh-020",
         "b": "q50-zekeriyya-022",
@@ -10123,6 +10303,7 @@
           "answer": "Altı"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q50-suayb-006",
         "b": "q50-zekeriyya-022",
@@ -10150,6 +10331,7 @@
           "answer": "Çok doğru sözlü olması"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q66-meryem-41",
         "b": "q71-idris-siddik",
@@ -10177,6 +10359,7 @@
           "answer": "Haber"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "v10-quran-002",
         "b": "v11-quran-013",
@@ -10204,6 +10387,7 @@
           "answer": "Örümcek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "v8-quran-001",
         "b": "v10-quran-004",
@@ -10231,12 +10415,41 @@
           "answer": "Yedi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-general-026",
         "b": "q62-tavaf-sayisi",
         "snapshotSha256": "b965fc117c2a8be078d7d025b74fbc779044c84e21152457067dda31f0e916b3",
         "verdict": "distinct-context",
         "reason": "Sa‘y ve tavaf ayrı ibadetlerdir; her ikisinin yedi şavt olması aynı ritüeli tekrar sormak değildir."
+      }
+    },
+    {
+      "a": "history-009",
+      "b": "q60-erkam-hizmet",
+      "score": 0.6,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "history-009",
+          "question": "Mekke’de ilk Müslümanların eğitim ve tebliğ için toplandığı ev hangi adla bilinir?",
+          "answer": "Dârülerkam"
+        },
+        {
+          "id": "q60-erkam-hizmet",
+          "question": "İlk Müslümanların Mekke’de toplandığı Dârülerkam hangi adla da bilinir?",
+          "answer": "Dârülislâm"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "history-009",
+        "b": "q60-erkam-hizmet",
+        "snapshotSha256": "4fc80e157a8f0452a18784f34d716f2e5b643055a6d29eb183798535ec9eb223",
+        "verdict": "distinct-context",
+        "reason": "Mekânın yaygın adı Dârülerkam ile ek adı Dârülislâm farklı adlandırma hedefleridir. Bir kök diğer mekânı adlandırdığından aynı turdaki ipucu etkileşimi ayrıca izlenmelidir."
       }
     },
     {
@@ -10258,6 +10471,7 @@
           "answer": "Buhara"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "prophets-001",
         "b": "q68-buhari-dogum",
@@ -10285,6 +10499,7 @@
           "answer": "Hz. Dâvûd"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "prophets-006",
         "b": "prophets-009",
@@ -10312,6 +10527,7 @@
           "answer": "Açıklamak ve kapalılığı gidermek"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q57-imsakkoken",
         "b": "q58-tefsir-sozluk",
@@ -10339,12 +10555,41 @@
           "answer": "Nâs"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "quran-002",
         "b": "quran-004",
         "snapshotSha256": "767a078d1148256454f20e7d1508f67f90b56bb157043e851e01c2230f36cec7",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Fâtiha”, ikinci hedef “Nâs”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
+      }
+    },
+    {
+      "a": "learn-women-005",
+      "b": "q69-enesbmalik-anne",
+      "score": 0.571,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "learn-women-005",
+          "question": "Sahâbî Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
+          "answer": "Ümmü Süleym"
+        },
+        {
+          "id": "q69-enesbmalik-anne",
+          "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
+          "answer": "Berâ b. Mâlik"
+        }
+      ],
+      "currentLexicalSuggestion": true,
+      "decision": {
+        "a": "learn-women-005",
+        "b": "q69-enesbmalik-anne",
+        "snapshotSha256": "ae0183484484de806c0c246c8543ec9c6a9c932702ed56d4a98d31d959940a0e",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Anne bilgisi learn-women-005 ile tekrardı; aynı ailede farklı bir akrabalık ilişkisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
       }
     },
     {
@@ -10366,66 +10611,13 @@
           "answer": "Haber"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q52-zekat-011",
         "b": "q68-hadis-sozluk",
         "snapshotSha256": "ea95e9db5c219b3ba9449cf1e0c6e94d7a4bc7fe10ce9210a423b1d372f65208",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Arınma ve artma”, ikinci hedef “Haber”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "v10-prophets-012",
-      "b": "q66-meryem-16",
-      "score": 0.571,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v10-prophets-012",
-          "question": "Meryem 19/16'da Hz. Meryem ailesinden ayrılıp hangi yöne çekilir?",
-          "answer": "Doğu tarafına"
-        },
-        {
-          "id": "q66-meryem-16",
-          "question": "Meryem 19/16'da Meryem ailesinden ayrılıp hangi yöndeki bir yere çekilir?",
-          "answer": "Doğu yönündeki"
-        }
-      ],
-      "decision": {
-        "a": "v10-prophets-012",
-        "b": "q66-meryem-16",
-        "snapshotSha256": "c6ae2f35e45448277f1ff73b9c79e1882de206094405b12804e142d736657af1",
-        "verdict": "repeated-fact",
-        "reason": "Meryem’in doğu yönüne çekilmesi aynı ayette iki farklı yönelme ekiyle soruluyor."
-      }
-    },
-    {
-      "a": "v7-prophets-001",
-      "b": "q61-meryem-himaye",
-      "score": 0.571,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "v7-prophets-001",
-          "question": "Kur'an'da Hz. Meryem'in himayesini üstlenen peygamber kimdir?",
-          "answer": "Hz. Zekeriyyâ"
-        },
-        {
-          "id": "q61-meryem-himaye",
-          "question": "Kur'an'a göre Meryem'in bakımını üstlenen peygamber kimdir?",
-          "answer": "Zekeriyyâ"
-        }
-      ],
-      "decision": {
-        "a": "v7-prophets-001",
-        "b": "q61-meryem-himaye",
-        "snapshotSha256": "9b85d4b140ecd06609bc10e54c01798d73853087b8a3100da09329b66dbb5506",
-        "verdict": "repeated-fact",
-        "reason": "Meryem’in himayesinin Zekeriyyâ’ya verilmesi iki kökte aynı kişi/olay."
       }
     },
     {
@@ -10447,6 +10639,7 @@
           "answer": "35. âyet"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "v8-quran-002",
         "b": "v10-quran-008",
@@ -10474,39 +10667,13 @@
           "answer": "Zaman"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "v9-quran-001",
         "b": "v10-quran-012",
         "snapshotSha256": "980e662f091f12b46cf58482f22ad748fdbc19db3b579239bec97d4f25d64431",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kuşluk vakti”, ikinci hedef “Zaman”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "e150-prophets-028",
-      "b": "q57-nuh950",
-      "score": 0.545,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "e150-prophets-028",
-          "question": "Ankebût sûresinde Hz. Nûh'un kavmi arasında kaldığı süre kaç yıl olarak verilir?",
-          "answer": "950"
-        },
-        {
-          "id": "q57-nuh950",
-          "question": "Ankebût 29/14'e göre Hz. Nûh kavmi arasında kaç yıl kalmıştır?",
-          "answer": "950 yıl"
-        }
-      ],
-      "decision": {
-        "a": "e150-prophets-028",
-        "b": "q57-nuh950",
-        "snapshotSha256": "be74613bf5ece021dc37511dcf355baeb1567e3cbbc8a7ee2017a0e3000faab7",
-        "verdict": "repeated-fact",
-        "reason": "Nûh’un kavmi arasında 950 yıl kalması sayı ve yazıyla iki defa soruluyor."
       }
     },
     {
@@ -10528,6 +10695,7 @@
           "answer": "Günahların bağışlanması ve ateşten korunma"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "learn-dua-019",
         "b": "learn-dua-014",
@@ -10555,39 +10723,13 @@
           "answer": "Arapça"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "v11-history-010",
         "b": "q59-katib-dil",
         "snapshotSha256": "b9c5ffa18e0918cfabb214edba704565dc4e1536a1a3fc980b021652e233b90e",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “Kâtib Çelebi”, ikinci hedef “Arapça”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "e150-history-020",
-      "b": "v7-history-003",
-      "score": 0.5,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "e150-history-020",
-          "question": "Uhud Gazvesi hicretin kaçıncı yılında gerçekleşmiştir?",
-          "answer": "3"
-        },
-        {
-          "id": "v7-history-003",
-          "question": "Hayber seferi hicretin kaçıncı yılında gerçekleşmiştir?",
-          "answer": "7"
-        }
-      ],
-      "decision": {
-        "a": "e150-history-020",
-        "b": "v7-history-003",
-        "snapshotSha256": "8125b7082ddf4f95daaebaf8bf81c5043acadb4885666f2a4557eed51e3bd668",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “3”, ikinci hedef “7”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -10609,6 +10751,7 @@
           "answer": "Yedinci yıl"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-history-023",
         "b": "q47-hudeybiye-011",
@@ -10636,6 +10779,7 @@
           "answer": "Yedinci"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-history-023",
         "b": "q57-hayberdate",
@@ -10663,39 +10807,13 @@
           "answer": "621"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-history-027",
         "b": "q56-akabe-yil1",
         "snapshotSha256": "ed572c86ee6204e5e3aabccf367fed9985eb799f85010d6f50ad026e96e9d95f",
         "verdict": "distinct-context",
         "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “622”, ikinci hedef “621”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
-      }
-    },
-    {
-      "a": "e150-prophets-001",
-      "b": "q57-yusufruya",
-      "score": 0.5,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "e150-prophets-001",
-          "question": "Hz. Yûsuf rüyasında kaç yıldız gördüğünü söyler?",
-          "answer": "11"
-        },
-        {
-          "id": "q57-yusufruya",
-          "question": "Yûsuf 12/4'e göre Hz. Yûsuf rüyasında kaç yıldız görmüştür?",
-          "answer": "On bir"
-        }
-      ],
-      "decision": {
-        "a": "e150-prophets-001",
-        "b": "q57-yusufruya",
-        "snapshotSha256": "168c6f1f9d438c4136338d23137ebef60db26dabdb623c65ae9ed6b7eb037f1a",
-        "verdict": "repeated-fact",
-        "reason": "Yûsuf’un rüyasındaki on bir yıldız aynı bilgi olarak sayı ve yazıyla soruluyor."
       }
     },
     {
@@ -10717,39 +10835,13 @@
           "answer": "Üzerine kan sürülmüş olarak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "e150-prophets-004",
         "b": "v11-prophets-001",
         "snapshotSha256": "7979c5697765b9dcd548e66a1cb945ce75da8dfa680dde8b83e84213a06ae894",
         "verdict": "distinct-context",
         "reason": "Bir kök kan sürülen eşyanın gömlek olduğunu, diğeri gömleğe ne yapıldığını sorar. Aynı sahne ve karşılıklı ipucu nedeniyle birlikte sunum ayrıca izlenmeli."
-      }
-    },
-    {
-      "a": "pilot-history-001",
-      "b": "v7-history-003",
-      "score": 0.5,
-      "sameAnswer": false,
-      "sameConcept": false,
-      "signal": "text-overlap",
-      "questions": [
-        {
-          "id": "pilot-history-001",
-          "question": "Bedir Gazvesi, hicretin kaçıncı yılında gerçekleşmiştir?",
-          "answer": "2."
-        },
-        {
-          "id": "v7-history-003",
-          "question": "Hayber seferi hicretin kaçıncı yılında gerçekleşmiştir?",
-          "answer": "7"
-        }
-      ],
-      "decision": {
-        "a": "pilot-history-001",
-        "b": "v7-history-003",
-        "snapshotSha256": "79e71ef85eedc7f3d0bf1c443b7bd5daf961836c7dd584ab970f672952ea27b3",
-        "verdict": "distinct-context",
-        "reason": "İki kökün olay/kişi/ayet ve sorulan özellikleri ayrı karşılaştırıldı: birinci hedef “2.”, ikinci hedef “7”. Ortak kişi, eser veya sûre adı bulunması bu iki ayrı bağlamı aynı soru yapmaz. Dört seçenekli doğruluk değerlendirmeleri bireysel kayıtlardadır."
       }
     },
     {
@@ -10771,6 +10863,7 @@
           "answer": "Yirmi yedi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-harun-032",
         "b": "q48-yusuf-030",
@@ -10798,6 +10891,7 @@
           "answer": "Yirmi yedi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q47-nuh-020",
         "b": "q48-yusuf-030",
@@ -10825,6 +10919,7 @@
           "answer": "On bir"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q48-yusuf-030",
         "b": "q50-suayb-006",
@@ -10852,6 +10947,7 @@
           "answer": "Altüst edilmesi"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q55-tekvir-003",
         "b": "q55-infitar-014",
@@ -10879,6 +10975,7 @@
           "answer": "Fâtıma bint Zâide"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "q69-bilalihabesi-anne",
         "b": "q71-hatice-anne",
@@ -10906,6 +11003,7 @@
           "answer": "Belirli yerde bir süre durmak"
         }
       ],
+      "currentLexicalSuggestion": true,
       "decision": {
         "a": "user200-103",
         "b": "q62-vakfe-anlam",
@@ -10915,36 +11013,345 @@
       }
     },
     {
-      "a": "e150-prophets-030",
-      "b": "learn-dua-011",
-      "score": 0.467,
+      "a": "v11-prophets-007",
+      "b": "q67-kasas-7",
+      "score": 0.429,
       "sameAnswer": false,
       "sameConcept": false,
       "signal": "text-overlap",
       "questions": [
         {
-          "id": "e150-prophets-030",
-          "question": "Bakara 2/127'de İbrâhim ve İsmâil, Kâbe'nin temellerini yükseltirken hangi isteği dile getirir?",
-          "answer": "Yaptıkları işin kabul edilmesini"
+          "id": "v11-prophets-007",
+          "question": "Kasas 28/7'de Hz. Mûsâ'nın annesine bebeği tehlike karşısında nereye bırakması bildirilir?",
+          "answer": "Nehre"
         },
         {
-          "id": "learn-dua-011",
-          "question": "Bakara 2/127'ye göre Kâbe'nin temellerini yükselten Hz. İbrâhim ve Hz. İsmâil'in duasındaki istek nedir?",
-          "answer": "İbadetlerinin kabul edilmesi"
+          "id": "q67-kasas-7",
+          "question": "Kasas 28/7'de Mûsâ'nın annesine çocuğu için tehlike sezdiğinde ne yapması bildirilir?",
+          "answer": "Onu nehre bırakması"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
-        "a": "e150-prophets-030",
-        "b": "learn-dua-011",
-        "snapshotSha256": "c7e595bf95a0aefc6ce3379fdd5eee17178abc53e0509878744d7980de599b96",
+        "a": "v11-prophets-007",
+        "b": "q67-kasas-7",
+        "snapshotSha256": "d04ec8bcfd198840fa5e847e6d07b654dff96f5c70861ac10a1c90c56750dc44",
         "verdict": "repeated-fact",
-        "reason": "Bakara 2/127’de Kâbe inşasının kabul edilmesi duası, iş/ibadet ifadesi farkıyla aynı hedef."
+        "reason": "28/7’de bebeğin nehre bırakılması aynı talimatla soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "e150-history-026",
+      "b": "q56-akabe-yil1",
+      "score": 0.273,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-026",
+          "question": "Birinci Akabe Biatı, TDV’nin anlatımında hangi adla da anılır?",
+          "answer": "Bey‘atü’n-nisâ"
+        },
+        {
+          "id": "q56-akabe-yil1",
+          "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+          "answer": "621"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-026",
+        "b": "q56-akabe-yil1",
+        "snapshotSha256": "a82183969254802d28eeecd8eabae0f3118fca6e4fe233fd3bf0140a0049394d",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 621 tarihi q56-akabe-yil1 ile tekrardı; biatın kaynakta açıklanan diğer adı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "learn-dua-007",
+      "b": "q65-furkan-74",
+      "score": 0.273,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "learn-dua-007",
+          "question": "Furkân 25/74'teki duada eşler ve çocuklar için ne istenir?",
+          "answer": "Göz aydınlığı olmaları"
+        },
+        {
+          "id": "q65-furkan-74",
+          "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
+          "answer": "Göz aydınlığı ve mutluluk olmaları"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "learn-dua-007",
+        "b": "q65-furkan-74",
+        "snapshotSha256": "0a62ee761963e56da20f37bf29269561e8021c2865657c80329cd4657032cc1b",
+        "verdict": "repeated-fact",
+        "reason": "25/74’te eş ve çocukların göz aydınlığı olması aynı dua hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "v12-history-004",
+      "b": "q59-evliya-cilt",
+      "score": 0.267,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v12-history-004",
+          "question": "Evliya Çelebi’nin Seyahatnâme’si 1742’de Mısır’dan İstanbul’da kime gönderilmiştir?",
+          "answer": "Hacı Beşir Ağa"
+        },
+        {
+          "id": "q59-evliya-cilt",
+          "question": "Evliya Çelebi'nin Seyahatnâme adlı eseri kaç ciltten oluşur?",
+          "answer": "On"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v12-history-004",
+        "b": "q59-evliya-cilt",
+        "snapshotSha256": "1843ff3e7dcd0073558e62db963d7c6d3569c93c46a26a819823ffddbca17d85",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. On cilt bilgisi q59-evliya-cilt ile tekrardı; zor etikete uygun eser aktarım tarihçesi seçildi. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v10-prophets-008",
+      "b": "e150-prophets-023",
+      "score": 0.25,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-008",
+          "question": "Neml sûresinde Hz. Süleyman'a haber getiren hüdhüd hangi topluluktan söz eder?",
+          "answer": "Sebe halkından"
+        },
+        {
+          "id": "e150-prophets-023",
+          "question": "Hüdhüd kuşu Hz. Süleyman'a hangi ülkeden haber getirir?",
+          "answer": "Sebe'"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-008",
+        "b": "e150-prophets-023",
+        "snapshotSha256": "5c2aac5cae36b71619b3ef327659eef042d782e525e4435c5f81786b19fde383",
+        "verdict": "repeated-fact",
+        "reason": "Hüdhüdün getirdiği haberin Sebe halkı/ülkesi ile ilişkisi aynı kıssa hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "q47-suleyman-026",
+      "b": "q66-neml-16",
+      "score": 0.222,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q47-suleyman-026",
+          "question": "Neml 27/16’da Süleyman’a hangi bilginin öğretildiği belirtilir?",
+          "answer": "Kuşların dilini anlama"
+        },
+        {
+          "id": "q66-neml-16",
+          "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
+          "answer": "Kuşların dili"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q47-suleyman-026",
+        "b": "q66-neml-16",
+        "snapshotSha256": "857b06cad659764a03a193c3f115055a2794d3efd41256210730f945c0e2e610",
+        "verdict": "repeated-fact",
+        "reason": "Neml 27/16’daki kuş dili bilgisi aynı hedefle tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "v10-prophets-003",
+      "b": "q66-kehf-82",
+      "score": 0.182,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-003",
+          "question": "Kehf 18/82'de onarılan duvarın altında kimin hazinesi bulunuyordu?",
+          "answer": "İki yetim çocuğun"
+        },
+        {
+          "id": "q66-kehf-82",
+          "question": "Kehf 18/82'de duvarın altındaki definenin sahipleri kimlerdir?",
+          "answer": "İki yetim çocuk"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-003",
+        "b": "q66-kehf-82",
+        "snapshotSha256": "caf1571f3b10f0f5764976366a2965f452b0e0c5fc1ced7b0ac7e3d89a42fbb5",
+        "verdict": "repeated-fact",
+        "reason": "18/82’deki hazine sahipleri olan iki yetim aynı hedefle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "v13-general-012",
+      "b": "q67-ankebut-45",
+      "score": 0.182,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v13-general-012",
+          "question": "Ankebût 29/45’te namazın alıkoyduğu şeyler hangi iki ifadeyle anılır?",
+          "answer": "Hayâsızlık ve kötülük"
+        },
+        {
+          "id": "q67-ankebut-45",
+          "question": "Ankebût 29/45'te namazın hangi ahlâkî etkisi açıkça belirtilir?",
+          "answer": "Hayâsızlık ve kötülükten alıkoyması"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v13-general-012",
+        "b": "q67-ankebut-45",
+        "snapshotSha256": "a62cd45ec99c24a6e20bb643ab00aa69464b6e921f0d50b01b3323961b5297d2",
+        "verdict": "repeated-fact",
+        "reason": "29/45’te namazın hayâsızlık ve kötülükten alıkoyması aynı ilişkiyle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "e150-history-026",
+      "b": "e150-history-027",
+      "score": 0.167,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-026",
+          "question": "Birinci Akabe Biatı, TDV’nin anlatımında hangi adla da anılır?",
+          "answer": "Bey‘atü’n-nisâ"
+        },
+        {
+          "id": "e150-history-027",
+          "question": "İkinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
+          "answer": "622"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-026",
+        "b": "e150-history-027",
+        "snapshotSha256": "a74c8c4189880827993fa03411d54816339679404e72d338af8cc097ed0188a3",
+        "verdict": "distinct-context",
+        "reason": "Birinci biatın diğer adı ile ikinci biatın yılı ayrı bilgilerdir."
+      }
+    },
+    {
+      "a": "v11-prophets-011",
+      "b": "q66-meryem-7",
+      "score": 0.167,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v11-prophets-011",
+          "question": "Meryem 19/9’da Zekeriyyâ’ya oğul verilmesinin mümkün olduğu hangi önceki yaratılışla hatırlatılır?",
+          "answer": "Kendisinin yokken yaratılmasıyla"
+        },
+        {
+          "id": "q66-meryem-7",
+          "question": "Meryem 19/7'de Hz. Zekeriyyâ'ya müjdelenen çocuğun adı nedir?",
+          "answer": "Yahyâ"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v11-prophets-011",
+        "b": "q66-meryem-7",
+        "snapshotSha256": "f6926d2b0de05cde3db1d1e9788b673f73f22c513ca757a4991f806bcefbaa8f",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Yahyâ adı q66-meryem-7 ile tekrardı; oğul müjdesine verilen ayrı bir açıklama soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v11-history-009",
+      "b": "q59-battuta-dogum",
+      "score": 0.143,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v11-history-009",
+          "question": "İbn Battûta hac niyetiyle Tanca’dan ilk büyük yolculuğuna hangi milâdî yılda çıkmıştır?",
+          "answer": "1325"
+        },
+        {
+          "id": "q59-battuta-dogum",
+          "question": "İbn Battûta hangi şehirde doğmuştur?",
+          "answer": "Tanca"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v11-history-009",
+        "b": "q59-battuta-dogum",
+        "snapshotSha256": "f794d9d36912fa60d843d934579f1e4ff757c619b2e96e0511cc907714011b7d",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Tanca doğumu q59-battuta-dogum ile tekrardı; ilk büyük yolculuğun tarihi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "q58-suleym-ogul",
+      "b": "q69-enesbmalik-yil",
+      "score": 0.133,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q58-suleym-ogul",
+          "question": "Ümmü Süleym’in, Enes b. Mâlik’in üvey babası olan eşi hangi sahâbîdir?",
+          "answer": "Ebû Talha"
+        },
+        {
+          "id": "q69-enesbmalik-yil",
+          "question": "Enes b. Mâlik, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+          "answer": "On yıl"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q58-suleym-ogul",
+        "b": "q69-enesbmalik-yil",
+        "snapshotSha256": "e74f0f63501bdff7ea629dcacef7aafe5e42d696d5d94fbb446928c8ce8919cc",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. On yıllık hizmet q69-enesbmalik-yil ile tekrardı; Ümmü Süleym’in aile ilişkilerinden ayrı bir bilgi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
       }
     },
     {
       "a": "quran-meaning-v72-026",
       "b": "v13-general-009",
-      "score": 0.455,
+      "score": 0.133,
       "sameAnswer": false,
       "sameConcept": false,
       "signal": "text-overlap",
@@ -10956,16 +11363,661 @@
         },
         {
           "id": "v13-general-009",
-          "question": "Nûr 24/27'de başkasının evine girmeden önce ne yapılması istenir?",
-          "answer": "İzin istemek ve selâm vermek"
+          "question": "Nûr 24/28’de ev sahibi ziyareti kabul edemediğini bildirdiğinde hangi davranış istenir?",
+          "answer": "Geri dönülmesi"
         }
       ],
+      "currentLexicalSuggestion": false,
       "decision": {
         "a": "quran-meaning-v72-026",
         "b": "v13-general-009",
-        "snapshotSha256": "05f92f538d259e201983fd191032ecc925be1878f3b9f051dc0da8151fddafda",
+        "snapshotSha256": "5553f7cd3b56a036acf2ccf51ce86fd8855c36c145cd361448a70c289267194b",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İzin ve selâm quran-meaning-v72-026 ile tekrardı; korunan soruya dokunmadan sonraki âyetin farklı koşulu soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "learn-dua-024",
+      "b": "q66-kehf-10",
+      "score": 0.125,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "learn-dua-024",
+          "question": "Kehf 18/10’da gençlerin duasında hangi iki istek birlikte yer alır?",
+          "answer": "Rahmet ve bir çıkış yolu"
+        },
+        {
+          "id": "q66-kehf-10",
+          "question": "Kehf 18/12’de iki grubun hangisinin daha iyi hesapladığı belirtilmek istenen şey nedir?",
+          "answer": "Mağarada kalınan süre"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "learn-dua-024",
+        "b": "q66-kehf-10",
+        "snapshotSha256": "080b7e3be973157415d4f5732851ca3ad7da7ab80fdf8474b2e0c065617e6973",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Rahmet ve çıkış yolu duası learn-dua-024 ile tekrardı; aynı kıssadaki farklı hesap konusu soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v10-prophets-011",
+      "b": "q67-kasas-27",
+      "score": 0.125,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-011",
+          "question": "Kur’an Yolu mealinde Kasas 28/30’da Mûsâ’ya hitabın geldiği yer vadinin hangi tarafıdır?",
+          "answer": "Sağ tarafı"
+        },
+        {
+          "id": "q67-kasas-27",
+          "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen iş süresinin başlangıcı kaç yıldır?",
+          "answer": "Sekiz yıl"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-011",
+        "b": "q67-kasas-27",
+        "snapshotSha256": "7a6d9b2a665ed786cf63f38bbe185e6d90db7c87e444d131acad132fa9312563",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Sekiz yıllık hizmet q67-kasas-27 ile tekrardı; aynı kıssanın ayrı bir yer tarifi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v10-prophets-002",
+      "b": "q66-kehf-79",
+      "score": 0.111,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-002",
+          "question": "Kehf 18/79'da geminin sahipleri nasıl tanıtılır?",
+          "answer": "Denizde çalışan yoksul kimseler"
+        },
+        {
+          "id": "q66-kehf-79",
+          "question": "Kehf 18/79'da zarar verilen gemi kimlere aitti?",
+          "answer": "Denizde çalışan yoksullara"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-002",
+        "b": "q66-kehf-79",
+        "snapshotSha256": "d1199548abfb3963dd90e5eb83bf807916f8c2b48d85ac0ead973705ddc0b4f6",
         "verdict": "repeated-fact",
-        "reason": "Nûr 24/27’de izin ve selam iki kökte aynen soruluyor; korunması istenen v72 anlam sorusu değiştirilmeden diğer aday ayrıca ele alınmalı."
+        "reason": "18/79’daki gemi sahiplerinin denizde çalışan yoksullar olması aynı hedefle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "v8-prophets-004",
+      "b": "q66-meryem-54",
+      "score": 0.1,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v8-prophets-004",
+          "question": "Meryem sûresi 19/54'te sözünde durmasıyla övülen peygamber kimdir?",
+          "answer": "Hz. İsmâil"
+        },
+        {
+          "id": "q66-meryem-54",
+          "question": "Meryem 19/54'te Hz. İsmâil'in hangi ahlâkî özelliği övülür?",
+          "answer": "Sözünde durması"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v8-prophets-004",
+        "b": "q66-meryem-54",
+        "snapshotSha256": "9fec66af5d26b0315bdbdaec4d6bff890afc37f86861c5ae55746a7758c77667",
+        "verdict": "repeated-fact",
+        "reason": "Meryem 19/54’te İsmâil/sözünde durma eşleşmesi ters yönde sorulsa da aynı olgudur. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "e150-prophets-012",
+      "b": "v12-prophets-008",
+      "score": 0.083,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-prophets-012",
+          "question": "Yûsuf 12/84'te Ya‘kūb'un üzüntüsünün bedenindeki etkisi nasıl anlatılır?",
+          "answer": "Gözlerinin ağarması"
+        },
+        {
+          "id": "v12-prophets-008",
+          "question": "Yûsuf 12/84’te üzüntü nedeniyle ağardığı anlatılan yer neresidir?",
+          "answer": "Gözleri"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-012",
+        "b": "v12-prophets-008",
+        "snapshotSha256": "74475822fa5e9347f86c631df3a486490923feece58c3c813199ccf5598d718e",
+        "verdict": "repeated-fact",
+        "reason": "Yûsuf 12/84’te Ya‘kūb’un gözlerinin ağarması aynı bilgiyle soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "e150-history-018",
+      "b": "q64-bedir-sefer",
+      "score": 0.077,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-018",
+          "question": "TDV’ye göre Bedir zaferinin haberini Medine’ye ulaştırmakla görevlendirilenler kimlerdir?",
+          "answer": "Zeyd b. Hârise ve Abdullah b. Revâha"
+        },
+        {
+          "id": "q64-bedir-sefer",
+          "question": "Bedir Gazvesi milâdî hangi yılda yaşanmıştır?",
+          "answer": "624"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-018",
+        "b": "q64-bedir-sefer",
+        "snapshotSha256": "0a16bf15c48dd284fde9ae2a892f9d941274666b1d244515d9998e982e230e93",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 624 tarihi q64-bedir-sefer ile tekrardı; aynı olayda ayrı bir görev ilişkisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "q71-idris-siddik",
+      "b": "q66-meryem-56",
+      "score": 0.077,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q71-idris-siddik",
+          "question": "Meryem 19/56'da İdrîs'in peygamberliği yanında hangi niteliği belirtilir?",
+          "answer": "Çok doğru sözlü olması"
+        },
+        {
+          "id": "q66-meryem-56",
+          "question": "Meryem 19/56'da hakkında 'özü sözü doğru bir peygamber' denilen kişi kimdir?",
+          "answer": "İdrîs"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q71-idris-siddik",
+        "b": "q66-meryem-56",
+        "snapshotSha256": "aba698fed636567f270a64b57f9bc73c77f153f59c859290e06724deb4e5975d",
+        "verdict": "repeated-fact",
+        "reason": "Meryem 19/56’da İdrîs/özü sözü doğruluk eşleşmesi ters yönde tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "v10-prophets-005",
+      "b": "e150-prophets-021",
+      "score": 0.077,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-005",
+          "question": "Neml 27/18'de Hz. Süleyman'ın ordusuna karşı yuvalara girilmesini söyleyen canlı hangisidir?",
+          "answer": "Karınca"
+        },
+        {
+          "id": "e150-prophets-021",
+          "question": "Hz. Süleyman'ın ordusunun geçtiği vadide hangi canlılardan söz edilir?",
+          "answer": "Karıncalar"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-005",
+        "b": "e150-prophets-021",
+        "snapshotSha256": "f47431a222c6324b6e927d030238b37955102277c5c50e823880eeee979183df",
+        "verdict": "repeated-fact",
+        "reason": "Neml 27/18’deki karınca/karıncalar aynı canlı hedefidir. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "e150-prophets-001",
+      "b": "q57-yusufruya",
+      "score": 0.071,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-prophets-001",
+          "question": "Yûsuf 12/50’de hükümdarın çağrısına hemen gitmeden önce Yûsuf hangi olayın araştırılmasını ister?",
+          "answer": "Ellerini kesen kadınların durumunun"
+        },
+        {
+          "id": "q57-yusufruya",
+          "question": "Yûsuf 12/4'e göre Hz. Yûsuf rüyasında kaç yıldız görmüştür?",
+          "answer": "On bir"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-001",
+        "b": "q57-yusufruya",
+        "snapshotSha256": "a202475edf222bd2bf91ada592ea82cfc207bac80fad4dc251f1759b6085116b",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Rüyadaki on bir yıldız q57-yusufruya ile tekrardı; ayrı bir olay ve gerekçesi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "e150-prophets-028",
+      "b": "q57-nuh950",
+      "score": 0.071,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-prophets-028",
+          "question": "Nûh 71/7’de kavmin davetten kaçınışı hangi iki hareketle tasvir edilir?",
+          "answer": "Kulaklarını tıkayıp elbiselerine bürünmek"
+        },
+        {
+          "id": "q57-nuh950",
+          "question": "Ankebût 29/14'e göre Hz. Nûh kavmi arasında kaç yıl kalmıştır?",
+          "answer": "950 yıl"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-028",
+        "b": "q57-nuh950",
+        "snapshotSha256": "7cb4d5d3eab1e162e530fb32932edc003b8b166a7e0d9b6000b9306767884b79",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 950 yıl bilgisi q57-nuh950 ile tekrardı; daveti reddetmenin farklı bir tasviri soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "pilot-prophets-003",
+      "b": "q61-isa-incil",
+      "score": 0.071,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "pilot-prophets-003",
+          "question": "Kur’an’da Hz. Îsâ’ya verilen kitap hangi adla anılır?",
+          "answer": "İncil"
+        },
+        {
+          "id": "q61-isa-incil",
+          "question": "Meryem 19/31’de Îsâ’ya yaşadığı sürece emredildiği söylenen iki ibadet hangileridir?",
+          "answer": "Namaz ve zekât"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "pilot-prophets-003",
+        "b": "q61-isa-incil",
+        "snapshotSha256": "f81d55fc0e2ffc29dad6671e9322b123384311bb542455185a9066fefedd8945",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İncil cevabı pilot-prophets-003 ile tekrardı; Îsâ’nın konuşmasındaki ayrı ibadet ikilisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v10-prophets-012",
+      "b": "q66-meryem-16",
+      "score": 0.071,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v10-prophets-012",
+          "question": "Meryem 19/16'da Hz. Meryem ailesinden ayrılıp hangi yöne çekilir?",
+          "answer": "Doğu tarafına"
+        },
+        {
+          "id": "q66-meryem-16",
+          "question": "Meryem 19/21’de doğacak çocuk için açıkça birlikte kullanılan iki niteleme hangileridir?",
+          "answer": "Delil ve rahmet"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v10-prophets-012",
+        "b": "q66-meryem-16",
+        "snapshotSha256": "0bd2b60321fa0ad3bbe5d6d5188fc979707fa84930e40cab27db0c35d0000ea3",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Doğuya çekilme v10-prophets-012 ile tekrardı; doğacak çocuğun aynı kıssadaki ayrı niteleme ikilisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v7-history-003",
+      "b": "q57-hayberdate",
+      "score": 0.059,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v7-history-003",
+          "question": "TDV’ye göre Hayber’de toprakları işlemeye devam eden yerli halka ürünün ne kadarı bırakılmıştır?",
+          "answer": "Yarısı"
+        },
+        {
+          "id": "q57-hayberdate",
+          "question": "Hayber seferi hicretin kaçıncı yılında yapılmıştır?",
+          "answer": "Yedinci"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v7-history-003",
+        "b": "q57-hayberdate",
+        "snapshotSha256": "5a70a34e6a9b911d1c44e7b6c672f549812f4b8bf91f929d0cc65b5cd8d18e3b",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Hicrî 7 tarihi q57-hayberdate ile tekrardı; aynı olayın ayrı ekonomik düzenlemesi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v9-history-009",
+      "b": "q63-nizamiye-bani",
+      "score": 0.059,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v9-history-009",
+          "question": "Bağdat Nizâmiye Medresesi vakfiyesinde görevliler için hangi mezhebe mensubiyet şartı belirtilir?",
+          "answer": "Şâfiî"
+        },
+        {
+          "id": "q63-nizamiye-bani",
+          "question": "Bağdat’ta 1067’de açılan medreseyi yaptıran Büyük Selçuklu veziri kimdir?",
+          "answer": "Nizâmülmülk"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v9-history-009",
+        "b": "q63-nizamiye-bani",
+        "snapshotSha256": "2219de74f76394a2ce5d6d3fe46570e553cfc8983e65639147f815a872dec081",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Kurucu Nizâmülmülk q63-nizamiye-bani ile tekrardı; kurumun ayrı bir vakfiye şartı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "e150-prophets-030",
+      "b": "learn-dua-011",
+      "score": 0.05,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-prophets-030",
+          "question": "Bakara 2/129’daki duada gelecek elçinin öğreteceği iki şey hangileridir?",
+          "answer": "Kitap ve hikmet"
+        },
+        {
+          "id": "learn-dua-011",
+          "question": "Bakara 2/127'ye göre Kâbe'nin temellerini yükselten Hz. İbrâhim ve Hz. İsmâil'in duasındaki istek nedir?",
+          "answer": "İbadetlerinin kabul edilmesi"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-prophets-030",
+        "b": "learn-dua-011",
+        "snapshotSha256": "49eef0ac523d8bf364067b09a87ac3d1dc5042623722aaef2ae952c8f8824f13",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. 2/127’de kabul duası learn-dua-011 ile tekrardı; sonraki duanın ayrı bir talebi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "e150-history-020",
+      "b": "v7-history-003",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "e150-history-020",
+          "question": "Uhud Gazvesi hicretin kaçıncı yılında gerçekleşmiştir?",
+          "answer": "3"
+        },
+        {
+          "id": "v7-history-003",
+          "question": "TDV’ye göre Hayber’de toprakları işlemeye devam eden yerli halka ürünün ne kadarı bırakılmıştır?",
+          "answer": "Yarısı"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "e150-history-020",
+        "b": "v7-history-003",
+        "snapshotSha256": "59e2f8736f8d931618f20f7928ed258a4e7a397fcec5aabe339d22269a5c1054",
+        "verdict": "distinct-context",
+        "reason": "Uhud’un yılı ile Hayber’de mahsul ortakçılığının oranı ayrı olay ve ölçülerdir."
+      }
+    },
+    {
+      "a": "learn-women-005",
+      "b": "q58-suleym-anne",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "learn-women-005",
+          "question": "Sahâbî Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
+          "answer": "Ümmü Süleym"
+        },
+        {
+          "id": "q58-suleym-anne",
+          "question": "Ümmü Süleym hangi meşhur hadis râvisinin annesidir?",
+          "answer": "Enes b. Mâlik"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "learn-women-005",
+        "b": "q58-suleym-anne",
+        "snapshotSha256": "38146fec175ec9ef6d333d8596224e4c7fe0f598f4ca31a3e8974f7d82abf451",
+        "verdict": "repeated-fact",
+        "reason": "Ümmü Süleym ile Enes arasındaki anne/oğul eşleşmesi ters yönde tekrar soruluyor. Sözcük eşiği dışında ayrıca karşılaştırıldı; bu kayıt düzeltilmiş veya yayın onaylı demek değildir."
+      }
+    },
+    {
+      "a": "pilot-history-001",
+      "b": "v7-history-003",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "pilot-history-001",
+          "question": "Bedir Gazvesi, hicretin kaçıncı yılında gerçekleşmiştir?",
+          "answer": "2."
+        },
+        {
+          "id": "v7-history-003",
+          "question": "TDV’ye göre Hayber’de toprakları işlemeye devam eden yerli halka ürünün ne kadarı bırakılmıştır?",
+          "answer": "Yarısı"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "pilot-history-001",
+        "b": "v7-history-003",
+        "snapshotSha256": "109ecbc8d8ed25e5415b27afe08dbe39773459b0bc334ed6904ed51a4b51c11d",
+        "verdict": "distinct-context",
+        "reason": "Bedir’in hicrî yılı ile Hayber’deki ürün payı farklı olay ve hedeflerdir."
+      }
+    },
+    {
+      "a": "q47-hac-038",
+      "b": "q62-say-mekan",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "q47-hac-038",
+          "question": "Hacda 'sa‘y' ibadeti hangi iki yer arasında yapılır?",
+          "answer": "Safâ ve Merve"
+        },
+        {
+          "id": "q62-say-mekan",
+          "question": "Safâ’dan başlanan yedi şavtlık sa‘y hangi tepede tamamlanır?",
+          "answer": "Merve"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "q47-hac-038",
+        "b": "q62-say-mekan",
+        "snapshotSha256": "ab8f23feda9a4efb02a29248073d76cf2766146b5d481d6ed6e52f7e0b42df81",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. İki tepenin adı q47-hac-038 ile tekrardı; başlangıç ve bitişin ayrımı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v13-general-008",
+      "b": "q51-muahat-014",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v13-general-008",
+          "question": "Hucurât 49/10'da müminler arasındaki ilişki hangi kavramla anlatılır?",
+          "answer": "Kardeşlik"
+        },
+        {
+          "id": "q51-muahat-014",
+          "question": "TDV Muâhât maddesinde Hz. Ömer’le nöbetleşe ders takibi yapan sahâbî kimdir?",
+          "answer": "İtbân b. Mâlik"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v13-general-008",
+        "b": "q51-muahat-014",
+        "snapshotSha256": "f9a7a7cb8045f079e047568e526b31bc4be6753022d9f51367123721dac625bb",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Hucurât 49/10’daki kardeşlik cevabı v13-general-008 ile tekrardı; muâhâtın ayrı bir ilmî uygulama örneği soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v13-quran-010",
+      "b": "q65-furkan-63",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v13-quran-010",
+          "question": "Furkān 25/63’te Rahmân’ın kullarının yürüyüşü hangi ahlâkî özellikle anlatılır?",
+          "answer": "Tevazu"
+        },
+        {
+          "id": "q65-furkan-63",
+          "question": "Furkân 25/63’te laf atanlara verilen cevap, Kur’an Yolu mealinde hangi tutumu anlatır?",
+          "answer": "Esenlik dilemek"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v13-quran-010",
+        "b": "q65-furkan-63",
+        "snapshotSha256": "3a6fc565c24a9b48eb05a0ab9aed06a6fbc22419917127274eae62f81b92d8f9",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Yürüyüşte tevazu v13-quran-010 ile tekrardı; aynı âyetin farklı bir cümlesi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v7-prophets-001",
+      "b": "q61-meryem-himaye",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v7-prophets-001",
+          "question": "Âl-i İmrân 3/35’te İmrân’ın karısının adağı neyle ilgilidir?",
+          "answer": "Karnındaki çocuğunu Allah’a adamasıyla"
+        },
+        {
+          "id": "q61-meryem-himaye",
+          "question": "Kur'an'a göre Meryem'in bakımını üstlenen peygamber kimdir?",
+          "answer": "Zekeriyyâ"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v7-prophets-001",
+        "b": "q61-meryem-himaye",
+        "snapshotSha256": "d6a57beb3206e99fae705a62baab0b48590d92867598a50d79559d2c0ffce5ec",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Zekeriyyâ’nın himayesi q61-meryem-himaye ile tekrardı; Meryem’in annesinin ayrı adağı soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
+      }
+    },
+    {
+      "a": "v9-history-008",
+      "b": "q59-beyt-sehir",
+      "score": 0,
+      "sameAnswer": false,
+      "sameConcept": false,
+      "signal": "text-overlap",
+      "questions": [
+        {
+          "id": "v9-history-008",
+          "question": "TDV’ye göre Bağdat Beytülhikmesi bağımsız bir yapı yerine hangi yapı bütünü içindeydi?",
+          "answer": "Saray müştemilâtı"
+        },
+        {
+          "id": "q59-beyt-sehir",
+          "question": "Abbâsîler döneminde gelişen Beytülhikme hangi şehirdeydi?",
+          "answer": "Bağdat"
+        }
+      ],
+      "currentLexicalSuggestion": false,
+      "decision": {
+        "a": "v9-history-008",
+        "b": "q59-beyt-sehir",
+        "snapshotSha256": "a6d2a9457262c096fd37ae6d49e077b9ff7c544ef5396236be816a0be1a38813",
+        "verdict": "distinct-context",
+        "reason": "Önceki adayda aynı bilgi tekrarıydı; kaynakla yeniden yazıldı. Bağdat şehri q59-beyt-sehir ile tekrardı; kurumun şehir içindeki yapı ilişkisi soruldu. Yeni kök/dört şık ve bu çiftin iki hedefi ayrıca karşılaştırıldı."
       }
     }
   ]

@@ -1999,37 +1999,37 @@
         ]
       },
       "after": {
-        "question": "Hz. Yûsuf rüyasında kaç yıldız gördüğünü söyler?",
+        "question": "Yûsuf 12/50’de hükümdarın çağrısına hemen gitmeden önce Yûsuf hangi olayın araştırılmasını ister?",
         "options": [
           {
-            "id": "o1",
-            "text": "7"
+            "id": "o4",
+            "text": "Kardeşlerine verilen erzakın miktarının"
           },
           {
             "id": "o2",
-            "text": "11"
+            "text": "Ellerini kesen kadınların durumunun"
+          },
+          {
+            "id": "o1",
+            "text": "Rüyayı anlatan gençlerin görevlerinin"
           },
           {
             "id": "o3",
-            "text": "10"
-          },
-          {
-            "id": "o4",
-            "text": "12"
+            "text": "Kervandaki tüccarların nereli olduğunun"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "11",
-        "explanation": "Yûsuf sûresi 12/4'te rüyada on bir yıldız, güneş ve ay zikredilir.",
+        "correctAnswer": "Ellerini kesen kadınların durumunun",
+        "explanation": "Yûsuf 12/50’de Yûsuf, hükümdarın elçisini geri gönderip ellerini kesen kadınların durumunun araştırılmasını ister. İlgili dipnot bunun aklanarak zindandan çıkma isteğiyle ilişkisini açıklar.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu — Yûsuf 12/4",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=4&mode=meal",
-            "locator": "Yûsuf 12/4; canlı ayet seçicisi kontrol edildi; incelemede KURAN YOLU meali seçildi",
-            "supports": "Yûsuf sûresi 12/4'te rüyada on bir yıldız, güneş ve ay zikredilir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "12/50 ve 52. âyete bağlı aklanma dipnotu; PDF fiziksel sayfa 252",
+            "supports": "Yûsuf 12/50’de Yûsuf, hükümdarın elçisini geri gönderip ellerini kesen kadınların durumunun araştırılmasını ister. İlgili dipnot bunun aklanarak zindandan çıkma isteğiyle ilişkisini açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -2038,26 +2038,28 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-prophets-001",
-        "reviewedCandidateSha256": "0c3d7eb13d3c68af626cd22c0b0785f347f9f4a82dc1b369497e5e074787d4dd",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört makul sayı aynı biçimde; rüyadaki yıldızlar güneş/aydan ayrılarak sayılır.",
+        "reviewedCandidateSha256": "3202aaa816ebf9316d6a99683da2906b682126df794b2977a5ef8f6a36e4aacd",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört makul sayı aynı biçimde; rüyadaki yıldızlar güneş/aydan ayrılarak sayılır. Ek banka karşılaştırması: Rüyadaki on bir yıldız q57-yusufruya ile tekrardı; ayrı bir olay ve gerekçesi soruldu.",
         "optionReview": {
-          "o1": "Eksik yıldız sayısı.",
-          "o2": "12/4’teki sayı.",
-          "o3": "Yakın eksik sayı.",
-          "o4": "Güneş/ayla karışan sayı."
+          "o4": "Kıssanın daha sonraki erzak bağlamıdır; bu araştırmanın konusu değildir.",
+          "o2": "50. âyette elçiyi geri gönderip bu kadınların durumunun sorulmasını ister.",
+          "o1": "Zindanla ilişkili kişiler farklıdır; bu âyetin araştırma talebi değildir.",
+          "o3": "Kıssanın kervan safhasıyla ilgilidir; hükümdara iletilen istek değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "12/4; PDF sayfa 247 (1 tabanlı), basılı sayfa 246",
+          "locator": "12/50 ve 52. âyete bağlı aklanma dipnotu; PDF fiziksel sayfa 252",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -4608,37 +4610,37 @@
         ]
       },
       "after": {
-        "question": "Ankebût sûresinde Hz. Nûh'un kavmi arasında kaldığı süre kaç yıl olarak verilir?",
+        "question": "Nûh 71/7’de kavmin davetten kaçınışı hangi iki hareketle tasvir edilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "100"
-          },
-          {
-            "id": "o2",
-            "text": "950"
-          },
-          {
             "id": "o3",
-            "text": "500"
+            "text": "Asâlarını kaldırıp yollarını kesmek"
           },
           {
             "id": "o4",
-            "text": "1000"
+            "text": "Yere oturup başlarını öne eğmek"
+          },
+          {
+            "id": "o2",
+            "text": "Kulaklarını tıkayıp elbiselerine bürünmek"
+          },
+          {
+            "id": "o1",
+            "text": "Gözlerini kapatıp yüzlerini çevirmek"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "950",
-        "explanation": "Ankebût 29/14'te bin yıldan elli yıl eksik süre belirtilir.",
+        "correctAnswer": "Kulaklarını tıkayıp elbiselerine bürünmek",
+        "explanation": "Nûh 71/7’de daveti reddedenlerin parmaklarını kulaklarına tıkaması ve elbiselerini başlarına bürümesi tasvir edilir. Kur’an Yolu dipnotu bunun mecazi anlatım olabileceğini, fiilen yapılmış olmasının da mümkün olduğunu kaydeder.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=29&ayet=14&mode=meal",
-            "locator": "29/14; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-            "supports": "Ankebût 29/14'te bin yıldan elli yıl eksik süre belirtilir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "71/7 ve mecaz dipnotu; PDF fiziksel sayfa 614",
+            "supports": "Nûh 71/7’de daveti reddedenlerin parmaklarını kulaklarına tıkaması ve elbiselerini başlarına bürümesi tasvir edilir. Kur’an Yolu dipnotu bunun mecazi anlatım olabileceğini, fiilen yapılmış olmasının da mümkün olduğunu kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4647,26 +4649,28 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-prophets-028",
-        "reviewedCandidateSha256": "0f6f151fc3ac120a26795a4657df66f2f413b9a695870ec9ebbd652129dc87a4",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört sayı; bin yıldan elli eksik ifadesi 950 eder. Kök ömür değil kavmi arasında kaldığı süre diyor.",
+        "reviewedCandidateSha256": "b9e0f3717cd6dc51447c7b99e6d274dab6975d002baeb534f5e2f6c21b8979a1",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört sayı; bin yıldan elli eksik ifadesi 950 eder. Kök ömür değil kavmi arasında kaldığı süre diyor. Ek banka karşılaştırması: 950 yıl bilgisi q57-nuh950 ile tekrardı; daveti reddetmenin farklı bir tasviri soruldu.",
         "optionReview": {
-          "o1": "Daha kısa süre.",
-          "o2": "29/14’ün süresi.",
-          "o3": "Daha kısa süre.",
-          "o4": "Elli eksik kaydını atlayan sayı."
+          "o3": "Olumsuz bir engelleme davranışıdır; bu pasajdaki tasvir değildir.",
+          "o4": "Başka bir beden duruşudur; âyette aktarılan iki hareket değildir.",
+          "o2": "Mealde parmakları kulaklara tıkama ve elbiseleri başa bürüme birlikte anlatılır.",
+          "o1": "Benzer bir kaçınma hareketidir; âyette açıkça verilen ikili değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "29/14; PDF sayfa 418 (1 tabanlı), basılı sayfa 417",
+          "locator": "71/7 ve mecaz dipnotu; PDF fiziksel sayfa 614",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

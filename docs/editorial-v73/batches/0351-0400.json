@@ -1596,37 +1596,37 @@
         ]
       },
       "after": {
-        "question": "Bedir Gazvesi milâdî hangi yılda gerçekleşmiştir?",
+        "question": "TDV’ye göre Bedir zaferinin haberini Medine’ye ulaştırmakla görevlendirilenler kimlerdir?",
         "options": [
           {
             "id": "o1",
-            "text": "622"
-          },
-          {
-            "id": "o2",
-            "text": "624"
+            "text": "Ali b. Ebû Tâlib ve Zübeyr b. Avvâm"
           },
           {
             "id": "o3",
-            "text": "625"
+            "text": "Ammâr b. Yâsir ve Abdullah b. Mes‘ûd"
           },
           {
             "id": "o4",
-            "text": "630"
+            "text": "Mus‘ab b. Umeyr ve Sa‘d b. Muâz"
+          },
+          {
+            "id": "o2",
+            "text": "Zeyd b. Hârise ve Abdullah b. Revâha"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "624",
-        "explanation": "Bedir Gazvesi 624 yılında gerçekleşmiştir.",
+        "correctAnswer": "Zeyd b. Hârise ve Abdullah b. Revâha",
+        "explanation": "TDV Bedir Gazvesi maddesi, Hz. Peygamber’in zaferi duyurmak üzere Zeyd b. Hârise ile Abdullah b. Revâha’yı Medine’ye gönderdiğini bildirir. Keşif için gönderilen kişiler farklıdır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-            "locator": "Milâdî tarih",
-            "supports": "Bedir Gazvesi 624 yılında gerçekleşmiştir.",
+            "locator": "117–118. satırlar; zafer habercileri, 107–109 keşif görevlilerinden ayrı",
+            "supports": "TDV Bedir Gazvesi maddesi, Hz. Peygamber’in zaferi duyurmak üzere Zeyd b. Hârise ile Abdullah b. Revâha’yı Medine’ye gönderdiğini bildirir. Keşif için gönderilen kişiler farklıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1635,27 +1635,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-history-018",
-        "reviewedCandidateSha256": "95b81a92a2f337186013f6cd7f8fcaec9987fe80af41e2e155223bd90e79bf62",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört tarihî milâdî yıl; 624 kaynakta açık. Hard etiketi temel siyer bilgisi için yüksek olabilir, öneri olarak kaldı.",
+        "reviewedCandidateSha256": "6177fb6a36e37415c22e01680398c3f5010830ee7b3257523f25d52bb8873245",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört tarihî milâdî yıl; 624 kaynakta açık. Hard etiketi temel siyer bilgisi için yüksek olabilir, öneri olarak kaldı. Ek banka karşılaştırması: 624 tarihi q64-bedir-sefer ile tekrardı; aynı olayda ayrı bir görev ilişkisi soruldu.",
         "optionReview": {
-          "o1": "Hicret yılı.",
-          "o2": "Bedir yılı.",
-          "o3": "Uhud yılı.",
-          "o4": "Fetih yılı."
+          "o1": "Aynı seferde keşif göreviyle anılan kişiler; zafer habercileri değillerdir.",
+          "o3": "Savaş öncesi tahkik için görevlendirilen ikiliyle haberci ikilisi ayrıldı.",
+          "o4": "Bedir’le ilişkili sahâbîlerdir; pasajdaki haberci ikilisi değildir.",
+          "o2": "117–118. satırlarda Medine’ye haberci gönderilen ikili budur."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-          "locator": "Dört tarihî milâdî yıl; 624 kaynakta açık. Hard etiketi temel siyer bilgisi için yüksek olabilir, öneri olarak kaldı.",
+          "locator": "117–118. satırlar; zafer habercileri, 107–109 keşif görevlilerinden ayrı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
-          "readAt": "2026-10-28",
-          "sourceSha256": "8570fe27244a298fd9ce874e8070d9c1b7557c702588a485d4a4be8251f0c1e6"
+          "readAt": "2026-10-30",
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,
@@ -2470,37 +2472,37 @@
         ]
       },
       "after": {
-        "question": "Birinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
+        "question": "Birinci Akabe Biatı, TDV’nin anlatımında hangi adla da anılır?",
         "options": [
           {
             "id": "o1",
-            "text": "610"
-          },
-          {
-            "id": "o2",
-            "text": "621"
+            "text": "Bey‘atürrıdvân"
           },
           {
             "id": "o3",
-            "text": "622"
+            "text": "Hilfülfudûl"
           },
           {
             "id": "o4",
-            "text": "630"
+            "text": "Medine Vesikası"
+          },
+          {
+            "id": "o2",
+            "text": "Bey‘atü’n-nisâ"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "621",
-        "explanation": "Birinci Akabe Biatı 621 yılında yapılmıştır.",
+        "correctAnswer": "Bey‘atü’n-nisâ",
+        "explanation": "Birinci Akabe Biatı, savaşla ilgili hususları içermemesi sebebiyle Bey‘atü’n-nisâ adıyla da anılır. Bu ad, biata yalnız kadınların katıldığı anlamına gelmez.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-            "locator": "Birinci Akabe Biatı",
-            "supports": "Birinci Akabe Biatı 621 yılında yapılmıştır.",
+            "locator": "100. satır; Bey‘atü’n-nisâ adının gerekçesi",
+            "supports": "Birinci Akabe Biatı, savaşla ilgili hususları içermemesi sebebiyle Bey‘atü’n-nisâ adıyla da anılır. Bu ad, biata yalnız kadınların katıldığı anlamına gelmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -2509,27 +2511,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-history-026",
-        "reviewedCandidateSha256": "8e0ecc0fcf72049037501fc03fdce9f1ed3b0d59c276a651a5b8184a0b1742c0",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört tarih makul siyer dönüm noktaları; ilk biat yılı 621 kaynakta açık.",
+        "reviewedCandidateSha256": "5a483d6d8483fb00c4304dbf20bba872736d2f5393fe9359e388704e7cf83960",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört tarih makul siyer dönüm noktaları; ilk biat yılı 621 kaynakta açık. Ek banka karşılaştırması: 621 tarihi q56-akabe-yil1 ile tekrardı; biatın kaynakta açıklanan diğer adı soruldu.",
         "optionReview": {
-          "o1": "İlk vahiy yılı.",
-          "o2": "100. satırdaki yıl.",
-          "o3": "İkinci biat yılı.",
-          "o4": "Fetih yılı."
+          "o1": "Hudeybiye bağlamındaki farklı bir biattır.",
+          "o3": "Mekke’deki farklı bir dayanışma anlaşmasıdır.",
+          "o4": "Medine’deki farklı bir toplumsal sözleşmedir.",
+          "o2": "TDV, savaşla ilgili hükümleri içermediği için bu adın kullanıldığını belirtir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-          "locator": "Dört tarih makul siyer dönüm noktaları; ilk biat yılı 621 kaynakta açık.",
+          "locator": "100. satır; Bey‘atü’n-nisâ adının gerekçesi",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
-          "readAt": "2026-10-28",
-          "sourceSha256": "5c47e06ab41e11877c113716a9906a0ec0fbb7c4ed2eb1038cfd539972675646"
+          "readAt": "2026-10-30",
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

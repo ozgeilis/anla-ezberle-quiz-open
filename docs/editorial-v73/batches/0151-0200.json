@@ -3124,37 +3124,37 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/10'da mağaraya sığınan gençlerin duasında hangi iki talep birlikte yer alır?",
+        "question": "Kehf 18/12’de iki grubun hangisinin daha iyi hesapladığı belirtilmek istenen şey nedir?",
         "options": [
           {
             "id": "o3",
-            "text": "Sağlık ve geniş imkânlar"
+            "text": "Gençlerin ayrı ayrı yaşları"
           },
           {
             "id": "o4",
-            "text": "Rahmet ve doğru yol"
+            "text": "Mağarada kalınan süre"
           },
           {
             "id": "o1",
-            "text": "Sabır ve bol rızık"
+            "text": "Gerekli yiyecek miktarı"
           },
           {
             "id": "o2",
-            "text": "Mağfiret ve uzun ömür"
+            "text": "Şehre olan uzaklık"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Rahmet ve doğru yol",
-        "explanation": "Kehf 18/10’da mağaraya sığınan gençler Allah’tan rahmet ve içinde bulundukları durumdan doğru bir çıkış yolu ister.",
+        "correctAnswer": "Mağarada kalınan süre",
+        "explanation": "Kehf 18/12’de gençlerin uyandırılması, iki gruptan hangisinin kaldıkları müddeti daha iyi hesaplayacağını ortaya koyma bağlamında anlatılır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "18/10; PDF sayfa 309 (1 tabanlı), basılı sayfa 308",
-            "supports": "Gençler rahmet ve içinde bulundukları durumdan doğru bir çıkış yolu diler.",
+            "locator": "18/11–12; PDF fiziksel sayfa 309",
+            "supports": "Kehf 18/12’de gençlerin uyandırılması, iki gruptan hangisinin kaldıkları müddeti daha iyi hesaplayacağını ortaya koyma bağlamında anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -3164,32 +3164,38 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [],
+      "automaticAfter": [
+        {
+          "kind": "broad-stem",
+          "detail": "Kaynak/bağlam sınırı ve birden fazla doğru ihtimali incelenmeli"
+        }
+      ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-kehf-10",
-        "reviewedCandidateSha256": "7ef24b04ad0078c227e8a603f5d54f2d32810ab47d31fe7aab14aa5955da57c2",
+        "reviewedCandidateSha256": "efcee0eb5a1083d66ac03a5eca37b353499f13ab2a0d040bda2276784834edc1",
         "disposition": "revised",
         "defects": [
-          "unrelated-distractors"
+          "unrelated-distractors",
+          "repeated-fact"
         ],
-        "reason": "Dünya hâkimiyeti/savaş aracı gibi uzak çeldiriciler dört makul dua çiftiyle değiştirildi. Cevap özel dua metninden bulunur.",
+        "reason": "Dünya hâkimiyeti/savaş aracı gibi uzak çeldiriciler dört makul dua çiftiyle değiştirildi. Cevap özel dua metninden bulunur. Ek banka karşılaştırması: Rahmet ve çıkış yolu duası learn-dua-024 ile tekrardı; aynı kıssadaki farklı hesap konusu soruldu.",
         "optionReview": {
-          "o3": "Anlamlı dua; bu âyetin açık çifti değil.",
-          "o4": "Âyetteki iki talebi karşılar.",
-          "o1": "Anlamlı dua; bu âyetin açık çifti değil.",
-          "o2": "Anlamlı dua; bu âyetin açık çifti değil."
+          "o3": "Kişilerin yaşı ile mağarada kalış süresi aynı bilgi değildir.",
+          "o4": "Âyet, mağarada kaldıkları müddeti hesaplama üzerine kuruludur.",
+          "o1": "Kıssada yiyecek vardır; bu âyette karşılaştırılan hesap değildir.",
+          "o2": "Ölçülebilen bir bilgidir; bu pasajın hesap konusu değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "18/10; PDF sayfa 309 (1 tabanlı), basılı sayfa 308",
+          "locator": "18/11–12; PDF fiziksel sayfa 309",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -4289,37 +4295,37 @@
         ]
       },
       "after": {
-        "question": "Meryem 19/16'da Meryem ailesinden ayrılıp hangi yöndeki bir yere çekilir?",
+        "question": "Meryem 19/21’de doğacak çocuk için açıkça birlikte kullanılan iki niteleme hangileridir?",
         "options": [
           {
             "id": "o4",
-            "text": "Güney yönündeki"
+            "text": "Hidayet ve şifa"
           },
           {
             "id": "o3",
-            "text": "Doğu yönündeki"
+            "text": "Delil ve rahmet"
           },
           {
             "id": "o1",
-            "text": "Batı yönündeki"
+            "text": "Öğüt ve müjde"
           },
           {
             "id": "o2",
-            "text": "Kuzey yönündeki"
+            "text": "Hikmet ve bereket"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Doğu yönündeki",
-        "explanation": "Meryem 19/16, Hz. Meryem'in ailesinden ayrılıp doğu tarafında bir mekâna çekildiğini anlatır.",
+        "correctAnswer": "Delil ve rahmet",
+        "explanation": "Meryem 19/21’de çocuğun insanlar için bir delil ve Allah’tan bir rahmet kılınacağı bildirilir. Soru çocuğun bütün niteliklerini değil bu âyette açıkça birlikte kullanılan ikiliyi sorar.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "19/16; PDF sayfa 321 (1 tabanlı), basılı sayfa 320",
-            "supports": "Meryem evinden ayrılıp doğu tarafında bir yere çekilir.",
+            "locator": "19/21; PDF fiziksel sayfa 322",
+            "supports": "Meryem 19/21’de çocuğun insanlar için bir delil ve Allah’tan bir rahmet kılınacağı bildirilir. Soru çocuğun bütün niteliklerini değil bu âyette açıkça birlikte kullanılan ikiliyi sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4333,53 +4339,33 @@
           "detail": "Kök bağlamına göre meslek/mekân çeldiricileri incelenmeli"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        },
-        {
-          "kind": "semantic-overlap",
-          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q66-meryem-16",
-        "reviewedCandidateSha256": "39582708f02bd350baec0157eb97de1f28b8272b2665af8ce2a4ad44f58a034e",
+        "reviewedCandidateSha256": "43814253b5ca689e43b518afba40dc277a820e49e7b952470ae02fab54e7d2c3",
         "disposition": "revised",
         "defects": [
-          "option-location-scale-mismatch"
+          "option-location-scale-mismatch",
+          "repeated-fact"
         ],
-        "reason": "Ülke/şehir/gemi ile yön karışımı dört yön ifadesine dönüştürüldü.",
+        "reason": "Ülke/şehir/gemi ile yön karışımı dört yön ifadesine dönüştürüldü. Ek banka karşılaştırması: Doğuya çekilme v10-prophets-012 ile tekrardı; doğacak çocuğun aynı kıssadaki ayrı niteleme ikilisi soruldu.",
         "optionReview": {
-          "o4": "Başka yön; âyette değil.",
-          "o3": "Âyetteki açık yön.",
-          "o1": "Başka yön; âyette değil.",
-          "o2": "Başka yön; âyette değil."
+          "o4": "İki olumlu dinî kavramdır; sorulan âyetteki açık ikili değildir.",
+          "o3": "Kur’an Yolu meali insanlar için delil ve Allah’tan rahmet olarak iki niteleme verir.",
+          "o1": "İki olumlu dinî kavramdır; bu âyetin açık niteleme ikilisi değildir.",
+          "o2": "İki olumlu dinî kavramdır; bu pasajda birlikte kullanılan ikili değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "19/16; PDF sayfa 321 (1 tabanlı), basılı sayfa 320",
+          "locator": "19/21; PDF fiziksel sayfa 322",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

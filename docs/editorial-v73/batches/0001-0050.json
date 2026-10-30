@@ -1361,37 +1361,37 @@
         ]
       },
       "after": {
-        "question": "Bakara 2/127'de İbrâhim ve İsmâil, Kâbe'nin temellerini yükseltirken hangi isteği dile getirir?",
+        "question": "Bakara 2/129’daki duada gelecek elçinin öğreteceği iki şey hangileridir?",
         "options": [
           {
             "id": "o3",
-            "text": "İbadet usullerinin gösterilmesini"
+            "text": "Hac ve kurban"
           },
           {
             "id": "o4",
-            "text": "Şehirlerine bol rızık verilmesini"
+            "text": "Helâl kazanç ve âdâb"
           },
           {
             "id": "o2",
-            "text": "Yaptıkları işin kabul edilmesini"
+            "text": "Kitap ve hikmet"
           },
           {
             "id": "o1",
-            "text": "Soylarının huzur içinde yaşamasını"
+            "text": "Sabır ve şükür"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yaptıkları işin kabul edilmesini",
-        "explanation": "Bakara 2/127'de İbrâhim ile İsmâil Rablerinden yaptıklarını kabul etmesini diler.",
+        "correctAnswer": "Kitap ve hikmet",
+        "explanation": "Bakara 2/129’daki duada elçinin âyetleri okuması, kitabı ve hikmeti öğretmesi ve insanları arındırması istenir. Soruda öğretim konusu olarak birlikte geçen iki unsur aranır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
-            "supports": "2/127 bağlamında sorulan ifade: Yaptıkları işin kabul edilmesini.",
+            "locator": "2/129; PDF fiziksel sayfa 26",
+            "supports": "Bakara 2/129’daki duada elçinin âyetleri okuması, kitabı ve hikmeti öğretmesi ve insanları arındırması istenir. Soruda öğretim konusu olarak birlikte geçen iki unsur aranır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1405,29 +1405,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "e150-prophets-030",
-        "reviewedCandidateSha256": "c01ffd36dba2df35889be1f0762b24887cea09c287b1a4eda91f5f8d29c0797b",
+        "reviewedCandidateSha256": "62745e3d518e28e0755661d69954a6d3cb09dba378b4819200ef523435167c34",
         "disposition": "revised",
         "defects": [
           "unrelated-distractors",
-          "duplicate-target"
+          "duplicate-target",
+          "repeated-fact"
         ],
-        "reason": "Dört olumlu ve aynı dua bağlamındaki istek verildi; 2/127 açık kabul dileğiyle sınırlandı.",
+        "reason": "Dört olumlu ve aynı dua bağlamındaki istek verildi; 2/127 açık kabul dileğiyle sınırlandı. Ek banka karşılaştırması: 2/127’de kabul duası learn-dua-011 ile tekrardı; sonraki duanın ayrı bir talebi soruldu.",
         "optionReview": {
-          "o3": "128’de ibadet usulleri istenir; 127 değil.",
-          "o4": "126’da rızık duası var; 127 değil.",
-          "o2": "127’de doğrudan kabul istenir.",
-          "o1": "Soyla ilgili olumlu dilek; 127’nin talebi değil."
+          "o3": "İki dinî uygulamadır; bu cümlenin öğreteceği şeyler olarak saydığı ikili değildir.",
+          "o4": "İki ilgili ahlâk/amel konusudur; âyetteki açık ikili değildir.",
+          "o2": "Âyette elçinin kitabı ve hikmeti öğreteceği açıkça sayılır.",
+          "o1": "İki olumlu dinî kavramdır; bu âyetin öğretim ikilisi değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "v11-prophets-008 aynı Bakara 2/127 bilgisini soruyor; iki soru birlikte ele alınmalı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
+          "locator": "2/129; PDF fiziksel sayfa 26",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

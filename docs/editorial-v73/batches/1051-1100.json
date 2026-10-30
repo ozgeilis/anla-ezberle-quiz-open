@@ -5355,37 +5355,37 @@
         ]
       },
       "after": {
-        "question": "Ümmü Süleym'in oğlu Enes, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+        "question": "Ümmü Süleym’in, Enes b. Mâlik’in üvey babası olan eşi hangi sahâbîdir?",
         "options": [
           {
             "id": "o1",
-            "text": "Beş yıl"
+            "text": "Sa‘d b. Muâz"
           },
           {
             "id": "o2",
-            "text": "Yirmi yıl"
-          },
-          {
-            "id": "o3",
-            "text": "On yıl"
+            "text": "Ubâde b. Sâmit"
           },
           {
             "id": "o4",
-            "text": "İki yıl"
+            "text": "Ebû Eyyûb el-Ensârî"
+          },
+          {
+            "id": "o3",
+            "text": "Ebû Talha"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "On yıl",
-        "explanation": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+        "correctAnswer": "Ebû Talha",
+        "explanation": "TDV Enes b. Mâlik maddesi, annesi Ümmü Süleym’i ve üvey babası Ebû Talha’yı aynı aile tanıtımında sayar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
-            "locator": "Enes'in hizmet süresi",
-            "supports": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+            "locator": "97. satır; anne ve üvey baba",
+            "supports": "TDV Enes b. Mâlik maddesi, annesi Ümmü Süleym’i ve üvey babası Ebû Talha’yı aynı aile tanıtımında sayar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5394,27 +5394,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q58-suleym-ogul",
-        "reviewedCandidateSha256": "2696f86770c3f41d30e6aa23ecd7633064cd5cce5c251bc3b3d7f2ef3801fdd0",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört hizmet yılı. Hicretten vefata on yıl 98’de açık; Enes’in yaklaşık yaşıyla hizmet süresi karıştırılmaz.",
+        "reviewedCandidateSha256": "d80b9d9aecf9f1acd90332d05604fb12f3edf228d521f19859686271cabca02b",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört hizmet yılı. Hicretten vefata on yıl 98’de açık; Enes’in yaklaşık yaşıyla hizmet süresi karıştırılmaz. Ek banka karşılaştırması: On yıllık hizmet q69-enesbmalik-yil ile tekrardı; Ümmü Süleym’in aile ilişkilerinden ayrı bir bilgi soruldu.",
         "optionReview": {
-          "o1": "Başka süre.",
-          "o2": "Başka süre.",
-          "o3": "98. satırın hizmet süresi.",
-          "o4": "Başka süre."
+          "o1": "Ensardan bir sahâbîdir; bu aile bağı ona ait değildir.",
+          "o2": "Ensardan bir sahâbîdir; Enes’in üvey babası değildir.",
+          "o4": "Ensardan bir sahâbîdir; bu ilişkide adı geçen kişi değildir.",
+          "o3": "Enes maddesinde üvey baba olarak adı verilen kişi; Ümmü Süleym’in eşidir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Önceki paketlerdeki Mûsâ, Hudeybiye/Hendek, vakıf, kadın sahâbîler, tefsir ve Beytülhikme sorularıyla ilişkiler karşılaştırıldı. Mahreç/med/kasr/vakf/vasl/idgam tanımları ayrı hedeflere bağlandı. Aynı olay/öğrenme hedefinin banka çapındaki nihai tekrar ve zorluk kabulü bekliyor; ID, conceptGroup ve etiketler korundu.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
-          "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
-          "locator": "97–99. satırlar",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "97. satır; anne ve üvey baba",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

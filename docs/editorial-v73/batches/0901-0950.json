@@ -4136,35 +4136,35 @@
         ]
       },
       "after": {
-        "question": "Hucurât 49/10’da müminler arasındaki ilişki hangi kavramla ifade edilir?",
+        "question": "TDV Muâhât maddesinde Hz. Ömer’le nöbetleşe ders takibi yapan sahâbî kimdir?",
         "options": [
           {
             "id": "o4",
-            "text": "Ortaklık"
+            "text": "Selmân-ı Fârisî"
           },
           {
             "id": "o2",
-            "text": "Kardeşlik"
+            "text": "İtbân b. Mâlik"
           },
           {
             "id": "o1",
-            "text": "Komşuluk"
+            "text": "Sa‘d b. Rebî‘"
           },
           {
             "id": "o3",
-            "text": "Hısımlık"
+            "text": "Ebû Eyyûb el-Ensârî"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kardeşlik",
-        "explanation": "Hucurât 49/10 müminleri kardeş olarak tanımlar ve aralarını düzeltmeyi öğütler. Bu bağ soy esaslı hısımlık veya malî ortaklıkla aynı şey değildir.",
+        "correctAnswer": "İtbân b. Mâlik",
+        "explanation": "TDV Muâhât maddesi, Hz. Ömer ile İtbân b. Mâlik’in Hz. Peygamber’i nöbetleşe takip edip öğrendiklerini birbirine aktarmasını örnek verir.",
         "sources": [
           {
-            "title": "Diyanet — Kur’an Yolu Meali",
-            "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "49/10; Kur’an Yolu Meal PDF pasajı",
-            "supports": "Hucurât 49/10 müminleri kardeş olarak tanımlar ve aralarını düzeltmeyi öğütler. Bu bağ soy esaslı hısımlık veya malî ortaklıkla aynı şey değildir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/muahat",
+            "locator": "109–110. satırlar; Hz. Ömer ve İtbân’ın bilgi paylaşması",
+            "supports": "TDV Muâhât maddesi, Hz. Ömer ile İtbân b. Mâlik’in Hz. Peygamber’i nöbetleşe takip edip öğrendiklerini birbirine aktarmasını örnek verir.",
             "checkStatus": "supported",
             "checkedAt": "2026-10-30"
           }
@@ -4175,29 +4175,30 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q51-muahat-014",
-        "reviewedCandidateSha256": "9f6210914a0a9c9c7ae0149e625903a97cd1a9e3ba624486ccc00f8cd15cb561",
+        "reviewedCandidateSha256": "bb97cfde5a64f1cfdc97f92717a1aec65aa1a148c703e1aafa34432922f58d1b",
         "disposition": "revised",
         "defects": [
-          "context-or-distractor-clue"
+          "context-or-distractor-clue",
+          "repeated-fact"
         ],
-        "reason": "Üç olumsuz/zorunlu bağa karşı tek iyi değer ipucu kaldırıldı. Muâhâtın devam eden boyutuna kaynakta bağlanan ayetin açık kavramı soruluyor; dört olumlu/nötr sosyal ilişki aynı yapıda.",
+        "reason": "Üç olumsuz/zorunlu bağa karşı tek iyi değer ipucu kaldırıldı. Muâhâtın devam eden boyutuna kaynakta bağlanan ayetin açık kavramı soruluyor; dört olumlu/nötr sosyal ilişki aynı yapıda. Ek banka karşılaştırması: Hucurât 49/10’daki kardeşlik cevabı v13-general-008 ile tekrardı; muâhâtın ayrı bir ilmî uygulama örneği soruldu.",
         "optionReview": {
-          "o4": "Başka sosyal ilişki.",
-          "o2": "Ayetin açık ilişki kavramı.",
-          "o1": "Başka sosyal ilişki.",
-          "o3": "Başka sosyal ilişki."
+          "o4": "Farklı bir sahâbîdir; bu pasajın örneğinde yer almaz.",
+          "o2": "109–110. satırlarda Hz. Ömer’le bilgi paylaşan örnek olarak adı verilir.",
+          "o1": "Muâhâtla ilişkili başka bir sahâbîdir; bu örnekteki kişi değildir.",
+          "o3": "Ensardan bir sahâbîdir; burada adı geçen nöbetleşe takip arkadaşı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Ensar/muâhât/Suffe ve zekât/fitre/kurban hedefleri önceki paketlerin aynı kavramlarıyla karşılaştırıldı. Özellikle iki muâhât sayısı ve iki fitre hükmü kaynak farklarını korur; yakın konuların banka içindeki yoğunluğu son anlamsal tekrar/öğrenme hedefi incelemesinde değerlendirilmeli. ID, conceptGroup, sayı, kategori ve zorluk değiştirilmedi.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
-          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "49/10; PDF sayfa 549 (1 tabanlı), basılı sayfa 548",
-          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "url": "https://islamansiklopedisi.org.tr/muahat",
+          "locator": "109–110. satırlar; Hz. Ömer ve İtbân’ın bilgi paylaşması",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

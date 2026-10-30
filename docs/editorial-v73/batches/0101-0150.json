@@ -4934,37 +4934,37 @@
         ]
       },
       "after": {
-        "question": "Dârülerkam Mekke'de hangi tepenin eteklerinde bulunuyordu?",
+        "question": "İlk Müslümanların Mekke’de toplandığı Dârülerkam hangi adla da bilinir?",
         "options": [
           {
             "id": "o4",
-            "text": "Sevr"
+            "text": "Dârüssünne"
           },
           {
             "id": "o3",
-            "text": "Safâ"
+            "text": "Dârülislâm"
           },
           {
             "id": "o1",
-            "text": "Merve"
+            "text": "Dârünnedve"
           },
           {
             "id": "o2",
-            "text": "Hira"
+            "text": "Dârülhicre"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Safâ",
-        "explanation": "Dârülerkam, Mekke’de Safâ tepesinin eteklerinde yer alıyordu. Hz. Peygamber’in ilk yıllardaki eğitim ve davet faaliyetlerine ev sahipliği yaptı.",
+        "correctAnswer": "Dârülislâm",
+        "explanation": "TDV Dârülerkam maddesinin girişinde bu evin Dârülislâm diye de bilindiği belirtilir. Burada sorulan, Safâ’daki konumu değil evin ikinci adıdır.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
             "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/darulerkam",
-            "locator": "İlk paragraf; Safâ tepesinin etekleri",
-            "supports": "Dârülerkam, Mekke’de Safâ tepesinin eteklerinde yer alıyordu. Hz. Peygamber’in ilk yıllardaki eğitim ve davet faaliyetlerine ev sahipliği yaptı.",
+            "locator": "96. satır; girişteki Dârülislâm adı",
+            "supports": "TDV Dârülerkam maddesinin girişinde bu evin Dârülislâm diye de bilindiği belirtilir. Burada sorulan, Safâ’daki konumu değil evin ikinci adıdır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4978,30 +4978,31 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q60-erkam-hizmet",
-        "reviewedCandidateSha256": "91b41b67b22af86da68be2ec3375af0a49c256c54eb8c5c21963b3ecf04ec46a",
+        "reviewedCandidateSha256": "170e7fa9aa22c11bf147ba50c77875fbbc7db7bcf490ae45dda018d4c019885e",
         "disposition": "revised",
         "defects": [
           "anachronistic-distractors",
-          "single-religious-option"
+          "single-religious-option",
+          "repeated-fact"
         ],
-        "reason": "Üç anakronik göreve karşı tek davet cevabı yerine dört Mekke tepesi/dağı arasında kaynak konumu soruldu.",
+        "reason": "Üç anakronik göreve karşı tek davet cevabı yerine dört Mekke tepesi/dağı arasında kaynak konumu soruldu. Ek banka karşılaştırması: Safâ konumu q60-erkam-safa ile aynı bilgiyi tekrarlıyordu; bu evin belgelenmiş ikinci adı soruldu.",
         "optionReview": {
-          "o4": "Hicret mağarası dağı; Dârülerkam’ın konumu değil.",
-          "o3": "TDV’nin verdiği konum.",
-          "o1": "Mekke’de başka tepe; evin kaynaktaki konumu değil.",
-          "o2": "İlk vahiy dağı; Dârülerkam’ın konumu değil."
+          "o4": "Başka bir dinî mekân adlandırmasıdır; Dârülerkam’ın ikinci adı olarak verilmez.",
+          "o3": "TDV girişinde evin ikinci adı Dârülislâm olarak verilir.",
+          "o1": "Mekke’de farklı bir toplantı yerinin adıdır; bu evin diğer adı değildir.",
+          "o2": "Hicret yurduna ilişkin adlandırma bu evin TDV’de verilen ikinci adı değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut etiket korundu. Yeni kaynak ayrıntısı eski genel tanımdan daha özeldir; medium/hard yönünde editör/ürün değerlendirmesi bekler, otomatik seviye değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/darulerkam",
-          "locator": "İlk paragraf; Safâ tepesinin etekleri",
+          "locator": "96. satır; girişteki Dârülislâm adı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
-          "readAt": "2026-10-28",
-          "sourceSha256": "059602b640c81681b79d457a2d7d492aba84dfe068d7d83ac580ab556c0be108"
+          "readAt": "2026-10-30",
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

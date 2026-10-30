@@ -5003,37 +5003,37 @@
         ]
       },
       "after": {
-        "question": "Meryem sûresinde Hz. Zekeriyyâ'ya müjdelenen oğlunun adı nedir?",
+        "question": "Meryem 19/9’da Zekeriyyâ’ya oğul verilmesinin mümkün olduğu hangi önceki yaratılışla hatırlatılır?",
         "options": [
           {
             "id": "o1",
-            "text": "İlyâs"
-          },
-          {
-            "id": "o2",
-            "text": "Yahyâ"
+            "text": "İlk insanın topraktan yaratılmasıyla"
           },
           {
             "id": "o3",
-            "text": "İdrîs"
+            "text": "Göklerin bir düzenle yaratılmasıyla"
           },
           {
             "id": "o4",
-            "text": "Hârûn"
+            "text": "Yeryüzündeki canlıların yaratılmasıyla"
+          },
+          {
+            "id": "o2",
+            "text": "Kendisinin yokken yaratılmasıyla"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Yahyâ",
-        "explanation": "Meryem sûresinin 7. âyetinde Hz. Zekeriyyâ'ya Yahyâ adında bir oğul müjdelenir.",
+        "correctAnswer": "Kendisinin yokken yaratılmasıyla",
+        "explanation": "Meryem 19/9’da Allah, daha önce Zekeriyyâ’yı kendisi hiçbir şey değilken yarattığını hatırlatır. Soruda genel yaratılış örnekleri değil bu hitapta seçilen örnek aranır.",
         "sources": [
           {
-            "title": "Diyanet Kur’an Platformu",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=7&mode=meal",
-            "locator": "Meryem 19/7, önceki canlı Kur’an Yolu okuması",
-            "supports": "Meryem sûresinin 7. âyetinde Hz. Zekeriyyâ'ya Yahyâ adında bir oğul müjdelenir.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "19/9; PDF fiziksel sayfa 321",
+            "supports": "Meryem 19/9’da Allah, daha önce Zekeriyyâ’yı kendisi hiçbir şey değilken yarattığını hatırlatır. Soruda genel yaratılış örnekleri değil bu hitapta seçilen örnek aranır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -5042,26 +5042,28 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v11-prophets-011",
-        "reviewedCandidateSha256": "0dab49964743b0359220e1038b6368110127b3b90a91e78626e5851ee3a0e3c5",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört peygamber adı, müjdelenen oğul Yahyâ 19/7’de açık; tekil dil yapısı yok.",
+        "reviewedCandidateSha256": "543624811f41d517ff9d74a6b96c4acec48a05b5b806ccc64fbedbf05d8b0ca2",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört peygamber adı, müjdelenen oğul Yahyâ 19/7’de açık; tekil dil yapısı yok. Ek banka karşılaştırması: Yahyâ adı q66-meryem-7 ile tekrardı; oğul müjdesine verilen ayrı bir açıklama soruldu.",
         "optionReview": {
-          "o1": "Başka peygamber.",
-          "o2": "Müjdelenen oğul.",
-          "o3": "Başka peygamber.",
-          "o4": "Başka peygamber."
+          "o1": "Dinî yaratılış bilgisidir; âyetteki doğrudan hatırlatmanın konusu değildir.",
+          "o3": "Gerçek bir yaratılış konusudur; bu âyetin Zekeriyyâ’ya örneği değildir.",
+          "o4": "Aynı bilgi alanındadır; bu pasajda seçilen örnek değildir.",
+          "o2": "Hitapta daha önce kendisi yokken yaratıldığı hatırlatılır."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "19/7; PDF sayfa 320 (1 tabanlı), basılı sayfa 319",
+          "locator": "19/9; PDF fiziksel sayfa 321",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },

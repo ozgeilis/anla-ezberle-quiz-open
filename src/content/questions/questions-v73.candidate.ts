@@ -4546,45 +4546,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-prophets-001",
-    "version": 3,
+    "version": 4,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Hz. Yûsuf rüyasında kaç yıldız gördüğünü söyler?",
+    "question": "Yûsuf 12/50’de hükümdarın çağrısına hemen gitmeden önce Yûsuf hangi olayın araştırılmasını ister?",
     "options": [
       {
-        "id": "o1",
-        "text": "7"
+        "id": "o4",
+        "text": "Kardeşlerine verilen erzakın miktarının"
       },
       {
         "id": "o2",
-        "text": "11"
+        "text": "Ellerini kesen kadınların durumunun"
+      },
+      {
+        "id": "o1",
+        "text": "Rüyayı anlatan gençlerin görevlerinin"
       },
       {
         "id": "o3",
-        "text": "10"
-      },
-      {
-        "id": "o4",
-        "text": "12"
+        "text": "Kervandaki tüccarların nereli olduğunun"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Yûsuf sûresi 12/4'te rüyada on bir yıldız, güneş ve ay zikredilir.",
+    "explanation": "Yûsuf 12/50’de Yûsuf, hükümdarın elçisini geri gönderip ellerini kesen kadınların durumunun araştırılmasını ister. İlgili dipnot bunun aklanarak zindandan çıkma isteğiyle ilişkisini açıklar.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu — Yûsuf 12/4",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=12&ayet=4&mode=meal",
-        "locator": "Yûsuf 12/4; canlı ayet seçicisi kontrol edildi; incelemede KURAN YOLU meali seçildi",
-        "supports": "Yûsuf sûresi 12/4'te rüyada on bir yıldız, güneş ve ay zikredilir.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "12/50 ve 52. âyete bağlı aklanma dipnotu; PDF fiziksel sayfa 252",
+        "supports": "Yûsuf 12/50’de Yûsuf, hükümdarın elçisini geri gönderip ellerini kesen kadınların durumunun araştırılmasını ister. İlgili dipnot bunun aklanarak zindandan çıkma isteğiyle ilişkisini açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek karşılaştırması; ürün sahibinin yayın talimatıyla sürümlü kaynak düzeltmesi. İnsan uzman onayı değildir. Önceki bankalar ve seçenek/cevap ID’leri korunur. Mobil tek sütunlu meal görünümü için mode=meal hedefi kullanılır.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "yusuf-dream"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "yusuf-dream",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-prophets-002",
@@ -5689,45 +5690,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-prophets-028",
-    "version": 3,
+    "version": 4,
     "categoryId": "prophets",
     "difficulty": "hard",
-    "question": "Ankebût sûresinde Hz. Nûh'un kavmi arasında kaldığı süre kaç yıl olarak verilir?",
+    "question": "Nûh 71/7’de kavmin davetten kaçınışı hangi iki hareketle tasvir edilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "100"
-      },
-      {
-        "id": "o2",
-        "text": "950"
-      },
-      {
         "id": "o3",
-        "text": "500"
+        "text": "Asâlarını kaldırıp yollarını kesmek"
       },
       {
         "id": "o4",
-        "text": "1000"
+        "text": "Yere oturup başlarını öne eğmek"
+      },
+      {
+        "id": "o2",
+        "text": "Kulaklarını tıkayıp elbiselerine bürünmek"
+      },
+      {
+        "id": "o1",
+        "text": "Gözlerini kapatıp yüzlerini çevirmek"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Ankebût 29/14'te bin yıldan elli yıl eksik süre belirtilir.",
+    "explanation": "Nûh 71/7’de daveti reddedenlerin parmaklarını kulaklarına tıkaması ve elbiselerini başlarına bürümesi tasvir edilir. Kur’an Yolu dipnotu bunun mecazi anlatım olabileceğini, fiilen yapılmış olmasının da mümkün olduğunu kaydeder.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu — Kur’an Yolu meali",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=29&ayet=14&mode=meal",
-        "locator": "29/14; canlı Kuran Yolu meal görünümü; ayet numarası kontrol edildi",
-        "supports": "Ankebût 29/14'te bin yıldan elli yıl eksik süre belirtilir.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "71/7 ve mecaz dipnotu; PDF fiziksel sayfa 614",
+        "supports": "Nûh 71/7’de daveti reddedenlerin parmaklarını kulaklarına tıkaması ve elbiselerini başlarına bürümesi tasvir edilir. Kur’an Yolu dipnotu bunun mecazi anlatım olabileceğini, fiilen yapılmış olmasının da mümkün olduğunu kaydeder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; ürün sahibinin yayın talimatıyla sürümlü düzeltme. İnsan uzman onayı değildir. Önceki bankalar ve cevap ID’leri korunur.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "nuh-years"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "nuh-years",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-prophets-029",
@@ -5776,41 +5778,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 3,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Bakara 2/127'de İbrâhim ve İsmâil, Kâbe'nin temellerini yükseltirken hangi isteği dile getirir?",
+    "question": "Bakara 2/129’daki duada gelecek elçinin öğreteceği iki şey hangileridir?",
     "options": [
       {
         "id": "o3",
-        "text": "İbadet usullerinin gösterilmesini"
+        "text": "Hac ve kurban"
       },
       {
         "id": "o4",
-        "text": "Şehirlerine bol rızık verilmesini"
+        "text": "Helâl kazanç ve âdâb"
       },
       {
         "id": "o2",
-        "text": "Yaptıkları işin kabul edilmesini"
+        "text": "Kitap ve hikmet"
       },
       {
         "id": "o1",
-        "text": "Soylarının huzur içinde yaşamasını"
+        "text": "Sabır ve şükür"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Bakara 2/127'de İbrâhim ile İsmâil Rablerinden yaptıklarını kabul etmesini diler.",
+    "explanation": "Bakara 2/129’daki duada elçinin âyetleri okuması, kitabı ve hikmeti öğretmesi ve insanları arındırması istenir. Soruda öğretim konusu olarak birlikte geçen iki unsur aranır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "2/127; PDF sayfa 25 (1 tabanlı), basılı sayfa 24",
-        "supports": "2/127 bağlamında sorulan ifade: Yaptıkları işin kabul edilmesini.",
+        "locator": "2/129; PDF fiziksel sayfa 26",
+        "supports": "Bakara 2/129’daki duada elçinin âyetleri okuması, kitabı ve hikmeti öğretmesi ve insanları arındırması istenir. Soruda öğretim konusu olarak birlikte geçen iki unsur aranır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "ibrahim-kaaba-prayer",
     "reviewedAt": undefined
   },
@@ -6971,45 +6973,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-history-018",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "Bedir Gazvesi milâdî hangi yılda gerçekleşmiştir?",
+    "question": "TDV’ye göre Bedir zaferinin haberini Medine’ye ulaştırmakla görevlendirilenler kimlerdir?",
     "options": [
       {
         "id": "o1",
-        "text": "622"
-      },
-      {
-        "id": "o2",
-        "text": "624"
+        "text": "Ali b. Ebû Tâlib ve Zübeyr b. Avvâm"
       },
       {
         "id": "o3",
-        "text": "625"
+        "text": "Ammâr b. Yâsir ve Abdullah b. Mes‘ûd"
       },
       {
         "id": "o4",
-        "text": "630"
+        "text": "Mus‘ab b. Umeyr ve Sa‘d b. Muâz"
+      },
+      {
+        "id": "o2",
+        "text": "Zeyd b. Hârise ve Abdullah b. Revâha"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Bedir Gazvesi 624 yılında gerçekleşmiştir.",
+    "explanation": "TDV Bedir Gazvesi maddesi, Hz. Peygamber’in zaferi duyurmak üzere Zeyd b. Hârise ile Abdullah b. Revâha’yı Medine’ye gönderdiğini bildirir. Keşif için gönderilen kişiler farklıdır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-        "locator": "Milâdî tarih",
-        "supports": "Bedir Gazvesi 624 yılında gerçekleşmiştir.",
+        "locator": "117–118. satırlar; zafer habercileri, 107–109 keşif görevlilerinden ayrı",
+        "supports": "TDV Bedir Gazvesi maddesi, Hz. Peygamber’in zaferi duyurmak üzere Zeyd b. Hârise ile Abdullah b. Revâha’yı Medine’ye gönderdiğini bildirir. Keşif için gönderilen kişiler farklıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "badr-date"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "badr-date",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-019",
@@ -7311,45 +7314,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "e150-history-026",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "Birinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
+    "question": "Birinci Akabe Biatı, TDV’nin anlatımında hangi adla da anılır?",
     "options": [
       {
         "id": "o1",
-        "text": "610"
-      },
-      {
-        "id": "o2",
-        "text": "621"
+        "text": "Bey‘atürrıdvân"
       },
       {
         "id": "o3",
-        "text": "622"
+        "text": "Hilfülfudûl"
       },
       {
         "id": "o4",
-        "text": "630"
+        "text": "Medine Vesikası"
+      },
+      {
+        "id": "o2",
+        "text": "Bey‘atü’n-nisâ"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Birinci Akabe Biatı 621 yılında yapılmıştır.",
+    "explanation": "Birinci Akabe Biatı, savaşla ilgili hususları içermemesi sebebiyle Bey‘atü’n-nisâ adıyla da anılır. Bu ad, biata yalnız kadınların katıldığı anlamına gelmez.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/akabe-biatlari",
-        "locator": "Birinci Akabe Biatı",
-        "supports": "Birinci Akabe Biatı 621 yılında yapılmıştır.",
+        "locator": "100. satır; Bey‘atü’n-nisâ adının gerekçesi",
+        "supports": "Birinci Akabe Biatı, savaşla ilgili hususları içermemesi sebebiyle Bey‘atü’n-nisâ adıyla da anılır. Bu ad, biata yalnız kadınların katıldığı anlamına gelmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kararıyla uygulamada kullanım için onaylandı. Bağımsız editör veya dinî uzman değerlendirmesi yapıldığı iddia edilmez. Kaynak, açıklama ve çeldirici denetimi sürdürülür. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "akaba-one"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "akaba-one",
+    "reviewedAt": undefined
   },
   {
     "id": "e150-history-027",
@@ -9434,45 +9438,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v7-prophets-001",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Kur'an'da Hz. Meryem'in himayesini üstlenen peygamber kimdir?",
+    "question": "Âl-i İmrân 3/35’te İmrân’ın karısının adağı neyle ilgilidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hz. Eyyûb"
+        "id": "o2",
+        "text": "Karnındaki çocuğunu Allah’a adamasıyla"
       },
       {
-        "id": "o2",
-        "text": "Hz. Zekeriyyâ"
+        "id": "o1",
+        "text": "Mahsulünün bir bölümünü yoksullara vermesiyle"
       },
       {
         "id": "o3",
-        "text": "Hz. Hârûn"
+        "text": "Evini yolcuların konaklamasına ayırmasıyla"
       },
       {
         "id": "o4",
-        "text": "Hz. Yûnus"
+        "text": "Bir su kaynağını halkın kullanımına açmasıyla"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Âl-i İmrân 3/37'ye göre Meryem'in bakımını Hz. Zekeriyyâ üstlenmiştir.",
+    "explanation": "Âl-i İmrân 3/35’te İmrân’ın karısı karnındaki çocuğunu kayıtsız şartsız Allah’a adar ve kabulünü diler. Burada mâbed hizmetine dair yorum, âyetin kendi açık ifadesiyle aynı kesinlikte ileri sürülmez.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/zekeriyya",
-        "locator": "Âl-i İmrân 3/37: Meryem'in himayesi",
-        "supports": "Âl-i İmrân 3/37'ye göre Meryem'in bakımını Hz. Zekeriyyâ üstlenmiştir.",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "3/35 ve adak dipnotu; PDF fiziksel sayfa 61",
+        "supports": "Âl-i İmrân 3/35’te İmrân’ın karısı karnındaki çocuğunu kayıtsız şartsız Allah’a adar ve kabulünü diler. Burada mâbed hizmetine dair yorum, âyetin kendi açık ifadesiyle aynı kesinlikte ileri sürülmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu onayı kapsamında kullanıma kabul edildi. Bağımsız editör veya dinî uzman incelemesi yapıldığı iddia edilmez.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "zekeriyya-meryem"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "zekeriyya-meryem",
+    "reviewedAt": undefined
   },
   {
     "id": "v7-prophets-002",
@@ -9729,45 +9734,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v7-history-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "Hayber seferi hicretin kaçıncı yılında gerçekleşmiştir?",
+    "question": "TDV’ye göre Hayber’de toprakları işlemeye devam eden yerli halka ürünün ne kadarı bırakılmıştır?",
     "options": [
       {
-        "id": "o1",
-        "text": "5"
+        "id": "o2",
+        "text": "Yarısı"
       },
       {
-        "id": "o2",
-        "text": "7"
+        "id": "o1",
+        "text": "Üçte biri"
       },
       {
         "id": "o3",
-        "text": "6"
+        "text": "Dörtte biri"
       },
       {
         "id": "o4",
-        "text": "9"
+        "text": "Beşte biri"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hayber seferi hicrî 7. yılda, milâdî 628'de gerçekleşmiştir.",
+    "explanation": "TDV Hayber maddesine göre fetih sonrasında yerli halkın ortakçılık yaparak yetiştirdikleri mahsulün yarısını almalarına izin verildi. Bu, toprağın mülkiyet paylaşımıyla veya ganimetten alınan humusla aynı oran konusu değildir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hayber",
-        "locator": "Hayber seferi: hicrî 7 / milâdî 628",
-        "supports": "Hayber seferi hicrî 7. yılda, milâdî 628'de gerçekleşmiştir.",
+        "locator": "119. satır; mahsul ortakçılığı, 121–122 mülkiyet/ganimet ayrımı",
+        "supports": "TDV Hayber maddesine göre fetih sonrasında yerli halkın ortakçılık yaparak yetiştirdikleri mahsulün yarısını almalarına izin verildi. Bu, toprağın mülkiyet paylaşımıyla veya ganimetten alınan humusla aynı oran konusu değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin 2026-10-19 tarihli kaynak doğrulama koşullu onayı kapsamında kullanıma kabul edildi. Bağımsız editör veya dinî uzman incelemesi yapıldığı iddia edilmez. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "hayber-tarih"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "hayber-tarih",
+    "reviewedAt": undefined
   },
   {
     "id": "v7-history-004",
@@ -12057,86 +12063,87 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-history-008",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Abbâsîler döneminde tercüme ve araştırmalarıyla tanınan Beytülhikme hangi şehirdeydi?",
+    "question": "TDV’ye göre Bağdat Beytülhikmesi bağımsız bir yapı yerine hangi yapı bütünü içindeydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kûfe"
-      },
-      {
-        "id": "o2",
-        "text": "Bağdat"
-      },
-      {
         "id": "o3",
-        "text": "Basra"
+        "text": "Şehir surları"
       },
       {
         "id": "o4",
-        "text": "Kahire"
+        "text": "Dârüşşifa avlusu"
+      },
+      {
+        "id": "o2",
+        "text": "Saray müştemilâtı"
+      },
+      {
+        "id": "o1",
+        "text": "Cami külliyesi"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Beytülhikme, Abbâsî döneminde Bağdat'ta tercüme ve ilmî çalışmaların yürütüldüğü merkez olarak tanınır.",
+    "explanation": "TDV Beytülhikme maddesi, Bağdat’taki kurumun bağımsız bir yapı değil saray müştemilâtı içinde çeşitli bölümleri bulunan bir bina olduğunu belirtir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/beytulhikme",
-        "locator": "Bağdat Beytülhikme'sinin kuruluşu ve ilmî faaliyetleri",
-        "supports": "Beytülhikme, Abbâsî döneminde Bağdat'ta tercüme ve ilmî çalışmaların yürütüldüğü merkez olarak tanınır.",
+        "locator": "110. satır; saray müştemilâtı ve bölümler",
+        "supports": "TDV Beytülhikme maddesi, Bağdat’taki kurumun bağımsız bir yapı değil saray müştemilâtı içinde çeşitli bölümleri bulunan bir bina olduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz.",
-    "updatedAt": "2026-10-19",
-    "conceptGroup": "bayt-alhikma-baghdad"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bayt-alhikma-baghdad",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-history-009",
     "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Bağdat’ta 1067’de öğretime açılan medreseyi kuran Selçuklu veziri kimdir?",
+    "question": "Bağdat Nizâmiye Medresesi vakfiyesinde görevliler için hangi mezhebe mensubiyet şartı belirtilir?",
     "options": [
       {
         "id": "o3",
-        "text": "Tâcülmülk"
+        "text": "Mâlikî"
       },
       {
         "id": "o4",
-        "text": "Müeyyidülmülk"
+        "text": "Hanbelî"
       },
       {
         "id": "o2",
-        "text": "Nizâmülmülk"
+        "text": "Şâfiî"
       },
       {
         "id": "o1",
-        "text": "Kündürî"
+        "text": "Hanefî"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
+    "explanation": "TDV Nizâmiye Medresesi maddesinin vakfiye bölümünde medresenin Şâfiîler için yapıldığı ve müderris gibi görevliler için bu mensubiyetin arandığı açıklanır. Soru bütün medreselere genellenmez.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/nizamiye-medresesi",
-        "locator": "Nizâmiye 97–99; diğer vezir maddelerinin 71 ve 96–108. satırları",
-        "supports": "Bağdat Nizâmiye Medresesi Nizâmülmülk tarafından kuruldu ve 1067’de öğretime açıldı. Tâcülmülk’ün Bağdat’taki Tâciyye Medresesi farklı bir kurumdur.",
+        "locator": "103. satır; Bağdat Nizâmiye vakfiyesi",
+        "supports": "TDV Nizâmiye Medresesi maddesinin vakfiye bölümünde medresenin Şâfiîler için yapıldığı ve müderris gibi görevliler için bu mensubiyetin arandığı açıklanır. Soru bütün medreselere genellenmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "nizamiyya-schools",
     "reviewedAt": undefined
   },
@@ -13555,45 +13562,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v10-prophets-011",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "hard",
-    "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen hizmet süresi en az kaç yıldır?",
+    "question": "Kur’an Yolu mealinde Kasas 28/30’da Mûsâ’ya hitabın geldiği yer vadinin hangi tarafıdır?",
     "options": [
       {
         "id": "o1",
-        "text": "İki yıl"
-      },
-      {
-        "id": "o2",
-        "text": "Sekiz yıl"
+        "text": "Sol tarafı"
       },
       {
         "id": "o3",
-        "text": "Dört yıl"
+        "text": "Üst tarafı"
       },
       {
         "id": "o4",
-        "text": "On iki yıl"
+        "text": "Alt tarafı"
+      },
+      {
+        "id": "o2",
+        "text": "Sağ tarafı"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Kasas 28/27'de sekiz yıllık hizmet önerilir; on yıla tamamlamanın ise Hz. Mûsâ'nın tercihi olduğu belirtilir.",
+    "explanation": "Kasas 28/30’un Kur’an Yolu mealinde hitabın vadinin sağ tarafından, ağaç yönünden geldiği belirtilir. Sağ yönün nasıl belirlendiğine dair yorumlar bulunduğundan burada mealin açık ifadesi sorulur.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=28&ayet=27&mode=meal",
-        "locator": "Kasas 28/27, Diyanet indekslenmiş meal",
-        "supports": "Kasas 28/27'de sekiz yıllık hizmet önerilir; on yıla tamamlamanın ise Hz. Mûsâ'nın tercihi olduğu belirtilir.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/30; PDF fiziksel sayfa 410, ilgili dipnot dahil",
+        "supports": "Kasas 28/30’un Kur’an Yolu mealinde hitabın vadinin sağ tarafından, ağaç yönünden geldiği belirtilir. Sağ yönün nasıl belirlendiğine dair yorumlar bulunduğundan burada mealin açık ifadesi sorulur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 resmî kaynak ve dört seçenek karşılaştırması; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "musa-madyan-service"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "musa-madyan-service",
+    "reviewedAt": undefined
   },
   {
     "id": "v10-prophets-012",
@@ -15899,45 +15907,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-prophets-011",
-    "version": 3,
+    "version": 4,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Meryem sûresinde Hz. Zekeriyyâ'ya müjdelenen oğlunun adı nedir?",
+    "question": "Meryem 19/9’da Zekeriyyâ’ya oğul verilmesinin mümkün olduğu hangi önceki yaratılışla hatırlatılır?",
     "options": [
       {
         "id": "o1",
-        "text": "İlyâs"
-      },
-      {
-        "id": "o2",
-        "text": "Yahyâ"
+        "text": "İlk insanın topraktan yaratılmasıyla"
       },
       {
         "id": "o3",
-        "text": "İdrîs"
+        "text": "Göklerin bir düzenle yaratılmasıyla"
       },
       {
         "id": "o4",
-        "text": "Hârûn"
+        "text": "Yeryüzündeki canlıların yaratılmasıyla"
+      },
+      {
+        "id": "o2",
+        "text": "Kendisinin yokken yaratılmasıyla"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Meryem sûresinin 7. âyetinde Hz. Zekeriyyâ'ya Yahyâ adında bir oğul müjdelenir.",
+    "explanation": "Meryem 19/9’da Allah, daha önce Zekeriyyâ’yı kendisi hiçbir şey değilken yarattığını hatırlatır. Soruda genel yaratılış örnekleri değil bu hitapta seçilen örnek aranır.",
     "sources": [
       {
-        "title": "Diyanet Kur’an Platformu",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=7&mode=meal",
-        "locator": "Meryem 19/7, önceki canlı Kur’an Yolu okuması",
-        "supports": "Meryem sûresinin 7. âyetinde Hz. Zekeriyyâ'ya Yahyâ adında bir oğul müjdelenir.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/9; PDF fiziksel sayfa 321",
+        "supports": "Meryem 19/9’da Allah, daha önce Zekeriyyâ’yı kendisi hiçbir şey değilken yarattığını hatırlatır. Soruda genel yaratılış örnekleri değil bu hitapta seçilen örnek aranır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Issue #58 kaynak ve dört seçenek denetimi; genel sûre rotası düzeltildi. İnsan uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "zakariya-yahya"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "zakariya-yahya",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-prophets-012",
@@ -16366,45 +16375,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v11-history-009",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "Ünlü seyyah İbn Battûta hangi şehirde doğmuştur?",
+    "question": "İbn Battûta hac niyetiyle Tanca’dan ilk büyük yolculuğuna hangi milâdî yılda çıkmıştır?",
     "options": [
       {
         "id": "o1",
-        "text": "Semerkant"
-      },
-      {
-        "id": "o2",
-        "text": "Tanca"
+        "text": "1304"
       },
       {
         "id": "o3",
-        "text": "Bağdat"
+        "text": "1349"
       },
       {
         "id": "o4",
-        "text": "Kûfe"
+        "text": "1368"
+      },
+      {
+        "id": "o2",
+        "text": "1325"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "İbn Battûta, günümüzde Fas'ta bulunan Tanca şehrinde dünyaya gelmiştir.",
+    "explanation": "TDV İbn Battûta maddesine göre seyyah, 14 Haziran 1325’te hac niyetiyle Tanca’dan yola çıkmıştır. 1304 ise doğum yılıdır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-        "locator": "Hayatı: 1304 yılında Tanca'da doğması",
-        "supports": "İbn Battûta, günümüzde Fas'ta bulunan Tanca şehrinde dünyaya gelmiştir.",
+        "locator": "96 ve 103. satırlar; doğum ile ilk yolculuk tarihi ayrımı",
+        "supports": "TDV İbn Battûta maddesine göre seyyah, 14 Haziran 1325’te hac niyetiyle Tanca’dan yola çıkmıştır. 1304 ise doğum yılıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğruluğu koşullu kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "ibn-battuta-tangier"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "ibn-battuta-tangier",
+    "reviewedAt": undefined
   },
   {
     "id": "v11-history-010",
@@ -18291,45 +18301,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v12-history-004",
-    "version": 2,
+    "version": 3,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "Evliya Çelebi'nin Seyahatnâme'si kaç ciltten oluşur?",
+    "question": "Evliya Çelebi’nin Seyahatnâme’si 1742’de Mısır’dan İstanbul’da kime gönderilmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Üç"
+        "id": "o4",
+        "text": "Köprülü Mehmed Paşa"
       },
       {
         "id": "o2",
-        "text": "On"
+        "text": "Hacı Beşir Ağa"
+      },
+      {
+        "id": "o1",
+        "text": "Damad İbrâhim Paşa"
       },
       {
         "id": "o3",
-        "text": "Beş"
-      },
-      {
-        "id": "o4",
-        "text": "On altı"
+        "text": "Hekimoğlu Ali Paşa"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Evliya Çelebi'nin geniş Osmanlı coğrafyasını anlatan Seyahatnâme'si on ciltten oluşur.",
+    "explanation": "TDV Seyahatnâme maddesine göre eser 1742’de Mısır’dan Hacı Beşir Ağa’ya gönderilmiş, onun tarafından çoğalttırılmıştır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/seyahatname--evliya-celebi",
-        "locator": "Eser tanımı: on cilt",
-        "supports": "Evliya Çelebi'nin geniş Osmanlı coğrafyasını anlatan Seyahatnâme'si on ciltten oluşur.",
+        "locator": "97. satır; 1742 gönderimi",
+        "supports": "TDV Seyahatnâme maddesine göre eser 1742’de Mısır’dan Hacı Beşir Ağa’ya gönderilmiş, onun tarafından çoğalttırılmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak kontrolü koşullu kullanım kabulüne dayanır. Bağımsız editör ve dinî uzman incelemesi henüz tamamlanmamıştır. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "evliya-volumes"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "evliya-volumes",
+    "reviewedAt": undefined
   },
   {
     "id": "v12-history-005",
@@ -21166,41 +21177,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Nûr 24/27'de başkasının evine girmeden önce ne yapılması istenir?",
+    "question": "Nûr 24/28’de ev sahibi ziyareti kabul edemediğini bildirdiğinde hangi davranış istenir?",
     "options": [
       {
         "id": "o4",
-        "text": "Hal hatır sormak ve teşekkür etmek"
+        "text": "Ortak tanıdığa haber verilmesi"
       },
       {
         "id": "o2",
-        "text": "İzin istemek ve selâm vermek"
+        "text": "Geri dönülmesi"
       },
       {
         "id": "o1",
-        "text": "Hediye götürmek ve ikramda bulunmak"
+        "text": "Uygun saatin sorulması"
       },
       {
         "id": "o3",
-        "text": "Randevu almak ve zamanında gelmek"
+        "text": "Kapıda biraz beklenmesi"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Nûr 24/27, başka evlere girerken izin istenmesini ve ev halkına selâm verilmesini öğütler.",
+    "explanation": "Nûr 24/28’de kabul edemeyip geri dönülmesi istendiğinde dönmek emredilir. Bu, hiç kimse bulunmadığında izin gelene kadar eve girmeme hükmünden ayrı koşuldur.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Nûr 24/27; PDF sayfa 371",
-        "supports": "Nûr 24/27, başka evlere girerken izin istenmesini ve ev halkına selâm verilmesini öğütler.",
+        "locator": "24/28; PDF fiziksel sayfa 371",
+        "supports": "Nûr 24/28’de kabul edemeyip geri dönülmesi istendiğinde dönmek emredilir. Bu, hiç kimse bulunmadığında izin gelene kadar eve girmeme hükmünden ayrı koşuldur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "home-permission",
     "reviewedAt": undefined
   },
@@ -35413,35 +35424,35 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hucurât 49/10’da müminler arasındaki ilişki hangi kavramla ifade edilir?",
+    "question": "TDV Muâhât maddesinde Hz. Ömer’le nöbetleşe ders takibi yapan sahâbî kimdir?",
     "options": [
       {
         "id": "o4",
-        "text": "Ortaklık"
+        "text": "Selmân-ı Fârisî"
       },
       {
         "id": "o2",
-        "text": "Kardeşlik"
+        "text": "İtbân b. Mâlik"
       },
       {
         "id": "o1",
-        "text": "Komşuluk"
+        "text": "Sa‘d b. Rebî‘"
       },
       {
         "id": "o3",
-        "text": "Hısımlık"
+        "text": "Ebû Eyyûb el-Ensârî"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Hucurât 49/10 müminleri kardeş olarak tanımlar ve aralarını düzeltmeyi öğütler. Bu bağ soy esaslı hısımlık veya malî ortaklıkla aynı şey değildir.",
+    "explanation": "TDV Muâhât maddesi, Hz. Ömer ile İtbân b. Mâlik’in Hz. Peygamber’i nöbetleşe takip edip öğrendiklerini birbirine aktarmasını örnek verir.",
     "conceptGroup": "v51-topic-muahat",
     "sources": [
       {
-        "title": "Diyanet — Kur’an Yolu Meali",
-        "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "49/10; Kur’an Yolu Meal PDF pasajı",
-        "supports": "Hucurât 49/10 müminleri kardeş olarak tanımlar ve aralarını düzeltmeyi öğütler. Bu bağ soy esaslı hısımlık veya malî ortaklıkla aynı şey değildir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/muahat",
+        "locator": "109–110. satırlar; Hz. Ömer ve İtbân’ın bilgi paylaşması",
+        "supports": "TDV Muâhât maddesi, Hz. Ömer ile İtbân b. Mâlik’in Hz. Peygamber’i nöbetleşe takip edip öğrendiklerini birbirine aktarmasını örnek verir.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -43456,45 +43467,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q58-suleym-ogul",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Ümmü Süleym'in oğlu Enes, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+    "question": "Ümmü Süleym’in, Enes b. Mâlik’in üvey babası olan eşi hangi sahâbîdir?",
     "options": [
       {
         "id": "o1",
-        "text": "Beş yıl"
+        "text": "Sa‘d b. Muâz"
       },
       {
         "id": "o2",
-        "text": "Yirmi yıl"
-      },
-      {
-        "id": "o3",
-        "text": "On yıl"
+        "text": "Ubâde b. Sâmit"
       },
       {
         "id": "o4",
-        "text": "İki yıl"
+        "text": "Ebû Eyyûb el-Ensârî"
+      },
+      {
+        "id": "o3",
+        "text": "Ebû Talha"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+    "explanation": "TDV Enes b. Mâlik maddesi, annesi Ümmü Süleym’i ve üvey babası Ebû Talha’yı aynı aile tanıtımında sayar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ilgili madde",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/ummu-suleym",
-        "locator": "Enes'in hizmet süresi",
-        "supports": "TDV'nin Ümmü Süleym maddesine göre Enes b. Mâlik, Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+        "locator": "97. satır; anne ve üvey baba",
+        "supports": "TDV Enes b. Mâlik maddesi, annesi Ümmü Süleym’i ve üvey babası Ebû Talha’yı aynı aile tanıtımında sayar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: İlgili TDV makalesinin pasajıyla cevap-şık açıklama ön karşılaştırması; bağımsız dinî uzman değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q58-subject-ummu-suleym"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q58-subject-ummu-suleym",
+    "reviewedAt": undefined
   },
   {
     "id": "q58-suleym-rivayet",
@@ -45340,41 +45352,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Dârülerkam Mekke'de hangi tepenin eteklerinde bulunuyordu?",
+    "question": "İlk Müslümanların Mekke’de toplandığı Dârülerkam hangi adla da bilinir?",
     "options": [
       {
         "id": "o4",
-        "text": "Sevr"
+        "text": "Dârüssünne"
       },
       {
         "id": "o3",
-        "text": "Safâ"
+        "text": "Dârülislâm"
       },
       {
         "id": "o1",
-        "text": "Merve"
+        "text": "Dârünnedve"
       },
       {
         "id": "o2",
-        "text": "Hira"
+        "text": "Dârülhicre"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Dârülerkam, Mekke’de Safâ tepesinin eteklerinde yer alıyordu. Hz. Peygamber’in ilk yıllardaki eğitim ve davet faaliyetlerine ev sahipliği yaptı.",
+    "explanation": "TDV Dârülerkam maddesinin girişinde bu evin Dârülislâm diye de bilindiği belirtilir. Burada sorulan, Safâ’daki konumu değil evin ikinci adıdır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/darulerkam",
-        "locator": "İlk paragraf; Safâ tepesinin etekleri",
-        "supports": "Dârülerkam, Mekke’de Safâ tepesinin eteklerinde yer alıyordu. Hz. Peygamber’in ilk yıllardaki eğitim ve davet faaliyetlerine ev sahipliği yaptı.",
+        "locator": "96. satır; girişteki Dârülislâm adı",
+        "supports": "TDV Dârülerkam maddesinin girişinde bu evin Dârülislâm diye de bilindiği belirtilir. Burada sorulan, Safâ’daki konumu değil evin ikinci adıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q60-darulerkam",
     "reviewedAt": undefined
   },
@@ -46915,45 +46927,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q61-isa-incil",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "easy",
-    "question": "Kur'an'a göre Hz. Îsâ'ya verilen ilâhî kitap hangisidir?",
+    "question": "Meryem 19/31’de Îsâ’ya yaşadığı sürece emredildiği söylenen iki ibadet hangileridir?",
     "options": [
       {
         "id": "o1",
-        "text": "Tevrat"
+        "text": "Oruç ve hac"
       },
       {
         "id": "o2",
-        "text": "Suhuf-u İbrâhim"
-      },
-      {
-        "id": "o3",
-        "text": "İncil"
+        "text": "Sadaka ve itikâf"
       },
       {
         "id": "o4",
-        "text": "Zebûr"
+        "text": "Kurban ve umre"
+      },
+      {
+        "id": "o3",
+        "text": "Namaz ve zekât"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Mâide 5/46'da Hz. Îsâ'ya kendisinden önceki Tevrat'ı doğrulayıcı ve yol gösterici olarak İncil'in verildiği anlatılır.",
+    "explanation": "Meryem 19/31’de Îsâ’ya yaşadığı sürece namaz ve zekâtın emredildiği anlatılır. Kur’an Yolu mealinde 31–32. âyetler birlikte verilir; annesine saygı konusu da bu birleşik pasajdadır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Îsâ",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/isa",
-        "locator": "Mâide 5/46'da Hz",
-        "supports": "Mâide 5/46'da Hz. Îsâ'ya kendisinden önceki Tevrat'ı doğrulayıcı ve yol gösterici olarak İncil'in verildiği anlatılır.",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/31–32 birleşik meal; PDF fiziksel sayfa 322",
+        "supports": "Meryem 19/31’de Îsâ’ya yaşadığı sürece namaz ve zekâtın emredildiği anlatılır. Kur’an Yolu mealinde 31–32. âyetler birlikte verilir; annesine saygı konusu da bu birleşik pasajdadır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak makalesiyle ilgili Kur'an ayeti ve doğru yanıt karşılaştırıldı; bağımsız dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q61-article-isa"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q61-article-isa",
+    "reviewedAt": undefined
   },
   {
     "id": "q61-isa-meryem",
@@ -47941,34 +47954,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Hac ve umrede sa‘y hangi iki yer arasında yapılır?",
+    "question": "Safâ’dan başlanan yedi şavtlık sa‘y hangi tepede tamamlanır?",
     "options": [
       {
         "id": "o4",
-        "text": "Safâ ve Merve"
+        "text": "Merve"
       },
       {
         "id": "o1",
-        "text": "Arafat ve Müzdelife"
+        "text": "Safâ"
       },
       {
         "id": "o2",
-        "text": "Minâ ve Müzdelife"
+        "text": "Arafat"
       },
       {
         "id": "o3",
-        "text": "Hira ve Sevr"
+        "text": "Minâ"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir.",
+    "explanation": "TDV Sa‘y maddesi sa‘yin Safâ’dan başladığını, dört gidiş ve üç dönüşten oluştuğunu açıklar. Bu sıraya göre yedinci şavt Merve’de tamamlanır.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/say",
-        "locator": "96–102. satırlar",
-        "supports": "Sa'y, hac ve umre sırasında Safâ ve Merve tepeleri arasında yedi defa gidiş gelişten oluşan ibadettir.",
+        "locator": "96 ve 101. satırlar; Safâ başlangıcı, dört gidiş ve üç dönüş",
+        "supports": "TDV Sa‘y maddesi sa‘yin Safâ’dan başladığını, dört gidiş ve üç dönüşten oluştuğunu açıklar. Bu sıraya göre yedinci şavt Merve’de tamamlanır.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -51409,34 +51422,34 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Furkân 25/63’te Rahmân’ın kullarının yeryüzündeki yürüyüşü hangi özellikle anlatılır?",
+    "question": "Furkân 25/63’te laf atanlara verilen cevap, Kur’an Yolu mealinde hangi tutumu anlatır?",
     "options": [
       {
         "id": "o4",
-        "text": "Kanaat"
+        "text": "Bağışlanma dilemek"
       },
       {
         "id": "o1",
-        "text": "Tevazu"
+        "text": "Esenlik dilemek"
       },
       {
         "id": "o2",
-        "text": "Sabır"
+        "text": "Güzel öğüt vermek"
       },
       {
         "id": "o3",
-        "text": "Tevekkül"
+        "text": "Arabuluculuk etmek"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
+    "explanation": "Furkân 25/63’teki selâm cevabı Kur’an Yolu dipnotunda esenlik dileğiyle karşılık vermek olarak açıklanır. Burada yürüyüşteki tevazu değil sözlü sataşmaya verilen cevap sorulur.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "25/63; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
-        "supports": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
+        "locator": "25/63; PDF fiziksel sayfa 384 ve selâm açıklayan dipnot",
+        "supports": "Furkân 25/63’teki selâm cevabı Kur’an Yolu dipnotunda esenlik dileğiyle karşılık vermek olarak açıklanır. Burada yürüyüşteki tevazu değil sözlü sataşmaya verilen cevap sorulur.",
         "checkStatus": "supported",
         "checkedAt": "2026-10-30"
       }
@@ -52653,41 +52666,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Kehf 18/10'da mağaraya sığınan gençlerin duasında hangi iki talep birlikte yer alır?",
+    "question": "Kehf 18/12’de iki grubun hangisinin daha iyi hesapladığı belirtilmek istenen şey nedir?",
     "options": [
       {
         "id": "o3",
-        "text": "Sağlık ve geniş imkânlar"
+        "text": "Gençlerin ayrı ayrı yaşları"
       },
       {
         "id": "o4",
-        "text": "Rahmet ve doğru yol"
+        "text": "Mağarada kalınan süre"
       },
       {
         "id": "o1",
-        "text": "Sabır ve bol rızık"
+        "text": "Gerekli yiyecek miktarı"
       },
       {
         "id": "o2",
-        "text": "Mağfiret ve uzun ömür"
+        "text": "Şehre olan uzaklık"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Kehf 18/10’da mağaraya sığınan gençler Allah’tan rahmet ve içinde bulundukları durumdan doğru bir çıkış yolu ister.",
+    "explanation": "Kehf 18/12’de gençlerin uyandırılması, iki gruptan hangisinin kaldıkları müddeti daha iyi hesaplayacağını ortaya koyma bağlamında anlatılır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "18/10; PDF sayfa 309 (1 tabanlı), basılı sayfa 308",
-        "supports": "Gençler rahmet ve içinde bulundukları durumdan doğru bir çıkış yolu diler.",
+        "locator": "18/11–12; PDF fiziksel sayfa 309",
+        "supports": "Kehf 18/12’de gençlerin uyandırılması, iki gruptan hangisinin kaldıkları müddeti daha iyi hesaplayacağını ortaya koyma bağlamında anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q66-sure-18",
     "reviewedAt": undefined
   },
@@ -54579,41 +54592,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Meryem 19/16'da Meryem ailesinden ayrılıp hangi yöndeki bir yere çekilir?",
+    "question": "Meryem 19/21’de doğacak çocuk için açıkça birlikte kullanılan iki niteleme hangileridir?",
     "options": [
       {
         "id": "o4",
-        "text": "Güney yönündeki"
+        "text": "Hidayet ve şifa"
       },
       {
         "id": "o3",
-        "text": "Doğu yönündeki"
+        "text": "Delil ve rahmet"
       },
       {
         "id": "o1",
-        "text": "Batı yönündeki"
+        "text": "Öğüt ve müjde"
       },
       {
         "id": "o2",
-        "text": "Kuzey yönündeki"
+        "text": "Hikmet ve bereket"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Meryem 19/16, Hz. Meryem'in ailesinden ayrılıp doğu tarafında bir mekâna çekildiğini anlatır.",
+    "explanation": "Meryem 19/21’de çocuğun insanlar için bir delil ve Allah’tan bir rahmet kılınacağı bildirilir. Soru çocuğun bütün niteliklerini değil bu âyette açıkça birlikte kullanılan ikiliyi sorar.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "19/16; PDF sayfa 321 (1 tabanlı), basılı sayfa 320",
-        "supports": "Meryem evinden ayrılıp doğu tarafında bir yere çekilir.",
+        "locator": "19/21; PDF fiziksel sayfa 322",
+        "supports": "Meryem 19/21’de çocuğun insanlar için bir delil ve Allah’tan bir rahmet kılınacağı bildirilir. Soru çocuğun bütün niteliklerini değil bu âyette açıkça birlikte kullanılan ikiliyi sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q66-sure-19",
     "reviewedAt": undefined
   },
@@ -60106,45 +60119,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-enesbmalik-anne",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
-    "question": "Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
+    "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
     "options": [
       {
+        "id": "o3",
+        "text": "Berâ b. Mâlik"
+      },
+      {
         "id": "o1",
-        "text": "Hafsa"
+        "text": "Ka‘b b. Mâlik"
       },
       {
         "id": "o2",
-        "text": "Safiyye"
-      },
-      {
-        "id": "o3",
-        "text": "Ümmü Süleym"
+        "text": "Berâ b. Âzib"
       },
       {
         "id": "o4",
-        "text": "Ümmü Seleme"
+        "text": "Ebû Talha"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "TDV Enes maddesi annesini Ümmü Süleym olarak tanıtır; Enes'i Hz. Peygamber'in hizmetine veren ailesi de odur.",
+    "explanation": "TDV Enes b. Mâlik maddesi, tanınmış aile üyeleri arasında kardeşi Berâ b. Mâlik’i ve üvey babası Ebû Talha’yı ayrı ayrı belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-        "locator": "Annesi Ümmü Süleym",
-        "supports": "TDV Enes maddesi annesini Ümmü Süleym olarak tanıtır; Enes'i Hz. Peygamber'in hizmetine veren ailesi de odur.",
+        "locator": "97. satır; kardeş Berâ ve üvey baba Ebû Talha ayrımı",
+        "supports": "TDV Enes b. Mâlik maddesi, tanınmış aile üyeleri arasında kardeşi Berâ b. Mâlik’i ve üvey babası Ebû Talha’yı ayrı ayrı belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-enes-b-malik"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-enes-b-malik",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-enesbmalik-teyze",

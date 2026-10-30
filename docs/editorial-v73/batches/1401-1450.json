@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 1,
-  "flaggedAfter": 4,
+  "flaggedAfter": 5,
   "records": [
     {
       "sequence": 1401,
@@ -1702,66 +1702,73 @@
         ]
       },
       "after": {
-        "question": "Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
+        "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
         "options": [
           {
+            "id": "o3",
+            "text": "Berâ b. Mâlik"
+          },
+          {
             "id": "o1",
-            "text": "Hafsa"
+            "text": "Ka‘b b. Mâlik"
           },
           {
             "id": "o2",
-            "text": "Safiyye"
-          },
-          {
-            "id": "o3",
-            "text": "Ümmü Süleym"
+            "text": "Berâ b. Âzib"
           },
           {
             "id": "o4",
-            "text": "Ümmü Seleme"
+            "text": "Ebû Talha"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Ümmü Süleym",
-        "explanation": "TDV Enes maddesi annesini Ümmü Süleym olarak tanıtır; Enes'i Hz. Peygamber'in hizmetine veren ailesi de odur.",
+        "correctAnswer": "Berâ b. Mâlik",
+        "explanation": "TDV Enes b. Mâlik maddesi, tanınmış aile üyeleri arasında kardeşi Berâ b. Mâlik’i ve üvey babası Ebû Talha’yı ayrı ayrı belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-            "locator": "Annesi Ümmü Süleym",
-            "supports": "TDV Enes maddesi annesini Ümmü Süleym olarak tanıtır; Enes'i Hz. Peygamber'in hizmetine veren ailesi de odur.",
+            "locator": "97. satır; kardeş Berâ ve üvey baba Ebû Talha ayrımı",
+            "supports": "TDV Enes b. Mâlik maddesi, tanınmış aile üyeleri arasında kardeşi Berâ b. Mâlik’i ve üvey babası Ebû Talha’yı ayrı ayrı belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q69-enesbmalik-anne",
-        "reviewedCandidateSha256": "ad09e7d7361efd81519c50358b9ab2e81f80f76566ba4641629836be2aa44470",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört kadın sahâbî. 97–98’in Ümmü Süleym’i anne; oğlunu hizmete veren anne/üvey baba rivayet farkı anne kimliğini değiştirmiyor.",
+        "reviewedCandidateSha256": "abd4e2bd8f2e237b910b973dcd34dfaa45d785d654a9f55062d1a21cc6572d3d",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört kadın sahâbî. 97–98’in Ümmü Süleym’i anne; oğlunu hizmete veren anne/üvey baba rivayet farkı anne kimliğini değiştirmiyor. Ek banka karşılaştırması: Anne bilgisi learn-women-005 ile tekrardı; aynı ailede farklı bir akrabalık ilişkisi soruldu.",
         "optionReview": {
-          "o1": "Başka kadın sahâbî.",
-          "o2": "Başka kadın sahâbî.",
-          "o3": "97’nin annesi.",
-          "o4": "Başka kadın sahâbî."
+          "o3": "TDV Enes maddesi Berâ’yı kardeşi olarak açıkça sayar.",
+          "o1": "Ka‘b aynı baba adını taşır ama Enes’in kardeşi değildir; ad benzerliği tek doğruyu ele vermesin.",
+          "o2": "Berâ adı benzer olsa da babası Âzib olan sahâbî farklı kişidir; Enes’in kardeşi değildir.",
+          "o4": "Aynı paragrafta Enes’in üvey babasıdır; kardeşi değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
-        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
+        "difficultyReview": "Kolay etiketi onaysız değiştirilmedi; kardeş bilgisinin anneden daha özel olması nedeniyle orta seviye önerisi editör/ürün kararını bekler.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-          "locator": "96–99. satırlar",
+          "locator": "97. satır; kardeş Berâ ve üvey baba Ebû Talha ayrımı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

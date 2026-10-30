@@ -8,13 +8,13 @@
   "sourceComparedThisRound": 1500,
   "blocked": 1,
   "flaggedBefore": 336,
-  "flaggedAfter": 170,
+  "flaggedAfter": 172,
   "previousPriorityCount": 220,
-  "revisedAgainstV72": 1015,
-  "stemsChangedAgainstV72": 460,
-  "correctAnswerWordingChangedAgainstV72": 458,
-  "explanationsChangedAgainstV72": 215,
-  "distractorsOnlyChangedAgainstV72": 358,
+  "revisedAgainstV72": 1029,
+  "stemsChangedAgainstV72": 475,
+  "correctAnswerWordingChangedAgainstV72": 475,
+  "explanationsChangedAgainstV72": 234,
+  "distractorsOnlyChangedAgainstV72": 357,
   "automaticPatternCounts": {
     "three-restrictive-distractors": {
       "before": 25,
@@ -61,7 +61,7 @@
       "sourceComparedThisRound": 213,
       "blocked": 1,
       "flaggedBefore": 47,
-      "flaggedAfter": 24
+      "flaggedAfter": 25
     },
     "siyer_sahabe": {
       "total": 313,
@@ -70,7 +70,7 @@
       "sourceComparedThisRound": 313,
       "blocked": 0,
       "flaggedBefore": 45,
-      "flaggedAfter": 38
+      "flaggedAfter": 39
     },
     "peygamberler": {
       "total": 271,
@@ -88,7 +88,7 @@
       "sourceComparedThisRound": 161,
       "blocked": 0,
       "flaggedBefore": 40,
-      "flaggedAfter": 19
+      "flaggedAfter": 18
     },
     "iman_ahlak": {
       "total": 260,
@@ -106,7 +106,7 @@
       "sourceComparedThisRound": 282,
       "blocked": 0,
       "flaggedBefore": 38,
-      "flaggedAfter": 26
+      "flaggedAfter": 27
     }
   },
   "byDifficulty": {
@@ -117,7 +117,7 @@
       "sourceComparedThisRound": 475,
       "blocked": 1,
       "flaggedBefore": 113,
-      "flaggedAfter": 44
+      "flaggedAfter": 45
     },
     "medium": {
       "total": 789,
@@ -135,7 +135,7 @@
       "sourceComparedThisRound": 236,
       "blocked": 0,
       "flaggedBefore": 37,
-      "flaggedAfter": 28
+      "flaggedAfter": 29
     }
   },
   "styleOnlyGuesser": {
@@ -155,11 +155,25 @@
     }
   },
   "criticalRemaining": "requires independent editorial decision",
+  "recordedMultipleCorrectRisks": {
+    "method": "Unique individual semantic decisions with the listed risk tags; not an exhaustive automatic truth claim",
+    "codes": [
+      "possible-multiple-correct",
+      "possible-subset-overlap",
+      "overlapping-groups",
+      "overlapping-options",
+      "geographic-option-ambiguity"
+    ],
+    "recorded": 8,
+    "stillBlocked": 1
+  },
   "knownBlockingQuestions": 1,
   "overlapReview": {
-    "candidatePairs": 406,
-    "individuallyReviewedPairs": 406,
-    "repeatedFactPairs": 23,
+    "candidatePairs": 429,
+    "automaticCandidatePairs": 384,
+    "retainedExplicitPairs": 45,
+    "individuallyReviewedPairs": 429,
+    "repeatedFactPairs": 19,
     "pendingPairs": 0
   },
   "independentExpertApproved": 0,

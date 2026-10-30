@@ -1573,37 +1573,37 @@
         ]
       },
       "after": {
-        "question": "Kur'an'da Hz. Meryem'in himayesini üstlenen peygamber kimdir?",
+        "question": "Âl-i İmrân 3/35’te İmrân’ın karısının adağı neyle ilgilidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hz. Eyyûb"
+            "id": "o2",
+            "text": "Karnındaki çocuğunu Allah’a adamasıyla"
           },
           {
-            "id": "o2",
-            "text": "Hz. Zekeriyyâ"
+            "id": "o1",
+            "text": "Mahsulünün bir bölümünü yoksullara vermesiyle"
           },
           {
             "id": "o3",
-            "text": "Hz. Hârûn"
+            "text": "Evini yolcuların konaklamasına ayırmasıyla"
           },
           {
             "id": "o4",
-            "text": "Hz. Yûnus"
+            "text": "Bir su kaynağını halkın kullanımına açmasıyla"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Hz. Zekeriyyâ",
-        "explanation": "Âl-i İmrân 3/37'ye göre Meryem'in bakımını Hz. Zekeriyyâ üstlenmiştir.",
+        "correctAnswer": "Karnındaki çocuğunu Allah’a adamasıyla",
+        "explanation": "Âl-i İmrân 3/35’te İmrân’ın karısı karnındaki çocuğunu kayıtsız şartsız Allah’a adar ve kabulünü diler. Burada mâbed hizmetine dair yorum, âyetin kendi açık ifadesiyle aynı kesinlikte ileri sürülmez.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/zekeriyya",
-            "locator": "Âl-i İmrân 3/37: Meryem'in himayesi",
-            "supports": "Âl-i İmrân 3/37'ye göre Meryem'in bakımını Hz. Zekeriyyâ üstlenmiştir.",
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "3/35 ve adak dipnotu; PDF fiziksel sayfa 61",
+            "supports": "Âl-i İmrân 3/35’te İmrân’ın karısı karnındaki çocuğunu kayıtsız şartsız Allah’a adar ve kabulünü diler. Burada mâbed hizmetine dair yorum, âyetin kendi açık ifadesiyle aynı kesinlikte ileri sürülmez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1612,26 +1612,28 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v7-prophets-001",
-        "reviewedCandidateSha256": "dc1bd04644a416afbe806eb88e313969b4294d0621d1db9651db624c9506d5fa",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört peygamber adı; Meryem’in bakımını Zekeriyyâ üstlenir, hadisî isim benzerlikleriyle karışmıyor.",
+        "reviewedCandidateSha256": "9263b48605e7b86a41c0b617e46bd98d86f57483ae04fe9da57251d1f8e8a66b",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört peygamber adı; Meryem’in bakımını Zekeriyyâ üstlenir, hadisî isim benzerlikleriyle karışmıyor. Ek banka karşılaştırması: Zekeriyyâ’nın himayesi q61-meryem-himaye ile tekrardı; Meryem’in annesinin ayrı adağı soruldu.",
         "optionReview": {
-          "o1": "Başka peygamber.",
-          "o2": "3/37’nin kişisi.",
-          "o3": "Başka peygamber.",
-          "o4": "Başka peygamber."
+          "o2": "Mealde karnındakini kayıtsız şartsız Allah’a adadığı belirtilir.",
+          "o1": "Olumlu bir bağış örneğidir; bu âyetteki adağın konusu değildir.",
+          "o3": "Olumlu bir adak/yardım tasavvurudur; pasajda anlatılan değildir.",
+          "o4": "Olumlu bir kamusal yardım örneğidir; bu âyetteki adak değildir."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "3/37; PDF sayfa 61 (1 tabanlı), basılı sayfa 60",
+          "locator": "3/35 ve adak dipnotu; PDF fiziksel sayfa 61",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -2331,37 +2333,37 @@
         ]
       },
       "after": {
-        "question": "Hayber seferi hicretin kaçıncı yılında gerçekleşmiştir?",
+        "question": "TDV’ye göre Hayber’de toprakları işlemeye devam eden yerli halka ürünün ne kadarı bırakılmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "5"
+            "id": "o2",
+            "text": "Yarısı"
           },
           {
-            "id": "o2",
-            "text": "7"
+            "id": "o1",
+            "text": "Üçte biri"
           },
           {
             "id": "o3",
-            "text": "6"
+            "text": "Dörtte biri"
           },
           {
             "id": "o4",
-            "text": "9"
+            "text": "Beşte biri"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "7",
-        "explanation": "Hayber seferi hicrî 7. yılda, milâdî 628'de gerçekleşmiştir.",
+        "correctAnswer": "Yarısı",
+        "explanation": "TDV Hayber maddesine göre fetih sonrasında yerli halkın ortakçılık yaparak yetiştirdikleri mahsulün yarısını almalarına izin verildi. Bu, toprağın mülkiyet paylaşımıyla veya ganimetten alınan humusla aynı oran konusu değildir.",
         "sources": [
           {
             "title": "TDV İslâm Ansiklopedisi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hayber",
-            "locator": "Hayber seferi: hicrî 7 / milâdî 628",
-            "supports": "Hayber seferi hicrî 7. yılda, milâdî 628'de gerçekleşmiştir.",
+            "locator": "119. satır; mahsul ortakçılığı, 121–122 mülkiyet/ganimet ayrımı",
+            "supports": "TDV Hayber maddesine göre fetih sonrasında yerli halkın ortakçılık yaparak yetiştirdikleri mahsulün yarısını almalarına izin verildi. Bu, toprağın mülkiyet paylaşımıyla veya ganimetten alınan humusla aynı oran konusu değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-19"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -2370,27 +2372,29 @@
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "v7-history-003",
-        "reviewedCandidateSha256": "14cbf6442b7c5ef3b7dd3dc3aa35ace968b2e11b88105fcf5395591e823c1b7d",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört hicrî yıl, aynı biçim; seferin yılı dışında dilsel ipucu yok.",
+        "reviewedCandidateSha256": "be3aa1cc511cb8aaec8092abeb11303a334a8cd9b1f5d54d69e22374967f5f16",
+        "disposition": "revised",
+        "defects": [
+          "repeated-fact"
+        ],
+        "reason": "Dört hicrî yıl, aynı biçim; seferin yılı dışında dilsel ipucu yok. Ek banka karşılaştırması: Hicrî 7 tarihi q57-hayberdate ile tekrardı; aynı olayın ayrı ekonomik düzenlemesi soruldu.",
         "optionReview": {
-          "o1": "Önceki yıl.",
-          "o2": "Sefer yılı.",
-          "o3": "Önceki yıl.",
-          "o4": "Sonraki yıl."
+          "o2": "119. satırda ortakçılıkta mahsulün yarısını almalarına izin verildiği anlatılır.",
+          "o1": "Bu ortakçılık için aktarılan oran değildir.",
+          "o3": "Aynı türden makul bir oran; bu olayda verilen pay değildir.",
+          "o4": "Humusla karıştırılmaması gereken farklı bir orandır."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Dört seçenek belirli kaynak cümlesi/olay bağlamında ayrı değerlendirildi; doğru cevabın alt kümeleri veya eş anlamlıları yanlış seçenek yapılmadı.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
-        "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
+        "duplicateReview": "Eski aynı-bilgi çifti ayrıldı. Yeni hedef ve mevcut bankadaki aynı kişi/âyet soruları ayrıca karşılaştırıldı; kapsamlı anlamsal benzerlik garantisi verilmez.",
         "source": {
           "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/hayber",
-          "locator": "Hz. Peygamber’in yönettiği Hayber savaşı 7/628; satır 112",
+          "locator": "119. satır; mahsul ortakçılığı, 121–122 mülkiyet/ganimet ayrımı",
           "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
           "readAt": "2026-10-30",
-          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
+          "sourceSha256": "9a43b66930ffb01e6e462c8fae2600202017df0bec38ab6db2e272c1cdbf2432"
         }
       },
       "independentExpertApproval": false,

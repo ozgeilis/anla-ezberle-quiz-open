@@ -29,28 +29,37 @@ export function editorialOverlap(
   decisions: readonly OverlapDecision[],
 ) {
   const byId = new Map(bank.map((q) => [q.id, q]));
-  const byPair = new Map(decisions.map((d) => [`${d.a}|${d.b}`, d]));
+  const pairKey = (a: string, b: string) => [a, b].sort().join("|");
+  const byPair = new Map(decisions.map((d) => [pairKey(d.a, d.b), d]));
   if (byPair.size !== decisions.length)
     throw Error("Repeated overlap decision");
-  const pairs = reviewQueue(similarityCandidates(bank));
-  const pairKeys = new Set(pairs.map((p) => `${p.a}|${p.b}`));
+  const suggested = reviewQueue(similarityCandidates(bank));
+  const pairKeys = new Set(suggested.map((p) => pairKey(p.a, p.b)));
   for (const d of decisions) {
     const a = byId.get(d.a),
       b = byId.get(d.b);
     if (
       !a ||
       !b ||
-      !pairKeys.has(`${d.a}|${d.b}`) ||
+      d.a === d.b ||
       d.snapshotSha256 !== overlapSnapshot(a, b) ||
       !d.reason ||
       !["repeated-fact", "distinct-context"].includes(d.verdict)
     )
       throw Error(`Overlap needs re-review: ${d.a}/${d.b}`);
   }
+  // A rewritten pair can fall below the lexical threshold. Retain its explicit,
+  // fresh semantic decision so a resolved issue does not disappear from the audit.
+  const retained = decisions
+    .filter((d) => !pairKeys.has(pairKey(d.a, d.b)))
+    .map((d) => similarityCandidates([byId.get(d.a)!, byId.get(d.b)!], 0)[0]!);
+  const pairs = reviewQueue([...suggested, ...retained]);
   return {
     method:
       "Turkish token overlap plus explicit semantic pair decisions; not exhaustive semantic proof",
     candidatePairs: pairs.length,
+    automaticCandidatePairs: suggested.length,
+    retainedExplicitPairs: retained.length,
     individuallyReviewedPairs: decisions.length,
     pendingPairs: pairs.length - decisions.length,
     repeatedFactPairs: decisions.filter((d) => d.verdict === "repeated-fact")
@@ -66,7 +75,8 @@ export function editorialOverlap(
           answer: q.options.find((o) => o.id === q.correctOptionId)!.text,
         };
       }),
-      decision: byPair.get(`${p.a}|${p.b}`) ?? null,
+      currentLexicalSuggestion: pairKeys.has(pairKey(p.a, p.b)),
+      decision: byPair.get(pairKey(p.a, p.b)) ?? null,
     })),
   };
 }
