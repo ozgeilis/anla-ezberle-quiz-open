@@ -1,9 +1,9 @@
 {
   "date": "2026-10-30",
-  "status": "incomplete: publisher UMP configuration required",
+  "status": "Android emulator delivery and consent retest PASS; physical/iOS/store acceptance pending",
   "pr": "https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/18",
   "baseCommit": "0109efb6d25c9e77e95fda0664a6ae6b5c43bcdd",
-  "runtimeSourceCommit": "534be90",
+  "runtimeSourceCommit": "35ee7570ac31b7cf1313db50ffbb6a294510f2c4",
   "sdk": {
     "expo": "58.0.21",
     "reactNative": "0.88.1",
@@ -16,7 +16,7 @@
   "checks": {
     "pnpmCheck": {
       "status": "PASS",
-      "tests": 368,
+      "tests": 370,
       "failed": 0,
       "includes": [
         "questions:check",
@@ -79,20 +79,52 @@
       "scope": "consent failure, home/categories navigation, no ad open"
     },
     "realUmpRequest": {
-      "status": "BLOCKED",
-      "providerResponse": "Publisher misconfiguration: no form(s) configured for the input app ID"
+      "status": "PASS",
+      "defaultGeography": "NOT_REQUIRED; gdprApplies=0 from actual UMP response",
+      "eeaTest": "Development build only, explicit ADS_TEST_UMP_EEA=1; actual Google UMP form displayed, gdprApplies=1",
+      "actions": [
+        "reject",
+        "reopen privacy options",
+        "manage options",
+        "accept",
+        "revoke after banner loaded"
+      ],
+      "scope": "emulator synthetic guest; not production or physical-device consent acceptance"
     },
     "realTestBanner": {
-      "status": "NOT_VERIFIED",
-      "reason": "consent gate remains closed"
+      "status": "PASS",
+      "scope": "actual SDK Test Ad visible; no ad clicks",
+      "layouts": 12,
+      "widthsDp": [
+        320,
+        360,
+        390
+      ],
+      "fontScales": [
+        1,
+        2
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "navigationNotCovered": true
     },
     "realTestInterstitialLoadClose": {
-      "status": "NOT_VERIFIED",
-      "reason": "consent gate remains closed"
+      "status": "PASS",
+      "scope": "actual Google interstitial test creative; explicit watch choice at end of third saved local round; actual Close returned to requested home",
+      "secondRoundReplay": "no offer",
+      "furtherImpressionFrequency": "five-minute/monotonic/dedup tested by unit; full five-minute native timing not re-run"
     },
     "nativeAdConcurrencyAndBackground": {
-      "status": "NOT_VERIFIED",
-      "unitPortTests": "PASS; not a native-delivery result"
+      "status": "PARTIAL",
+      "actual": "no duplicate offer observed after one actual close; local opt-out and no-banner state persist after background/cold restart",
+      "notRun": [
+        "background while interstitial itself is open",
+        "simultaneous native ad-open events",
+        "five-minute elapsed interval native timing"
+      ],
+      "unitPortTests": "PASS; not a substitute for these native scenarios"
     },
     "physicalSamsung": {
       "status": "NOT_RUN"
@@ -104,11 +136,22 @@
     "aabAndPlayUpload": {
       "status": "NOT_RUN",
       "existingApprovalGateUnchanged": true
+    },
+    "localOptoutPersistence": {
+      "status": "PASS",
+      "actual": "banner removed; preference persisted after background/cold restart; no storage cleared"
+    },
+    "initializationRegression": {
+      "status": "PASS",
+      "originalFailure": "Native IllegalStateException: MobileAds.initialize must precede setAppMuted",
+      "fix": "configure, await initialize, then setAppMuted, then allow ad loads; share initialization/retry failures",
+      "actual": "subsequent release and EEA development test had empty native crash buffer",
+      "unit": "ordering/concurrency/failure retry regression PASS"
     }
   },
   "localReleaseApk": {
-    "sha256": "c226af9696ecd1ef2b12499718f71588ddc1d75b6f811abc61c906507999981c",
-    "sizeBytes": 47447514,
+    "sha256": "c7b588c3747a0b9f37476292f73c42c16db0fc7d0c726a51dcefc51199126c54",
+    "sizeBytes": 47448066,
     "minimumApi": 24,
     "targetApi": 36,
     "compileApi": 37,
@@ -123,19 +166,20 @@
     "AD_SERVICES_TOPICS": false
   },
   "unchanged": [
-    "main",
-    "Vercel Production",
+    "main and Vercel Production in this retest (prior policy-only PR #19 already published)",
     "Supabase",
-    "question banks and images",
-    "Google Play upload approval gate",
-    "real users"
+    "question banks and approved images",
+    "Google Play approval gate",
+    "real user records",
+    "real ad units and Analytics"
   ],
   "productionRevenueEnabled": false,
   "remaining": [
-    "Publisher must review and configure/publish UMP test message",
-    "Real banner/interstitial load/close and consent revoke/reject native tests",
-    "Physical Samsung acceptance using matching EAS signature",
-    "iOS native build/consent/device acceptance before enabling iOS",
-    "Age/target audience and privacy/Data Safety/AdMob blocking controls review before any store/live ad release"
-  ]
+    "Physical Samsung acceptance with existing matching EAS signing identity",
+    "iOS native/device acceptance before enabling iOS",
+    "Native foreground/background while fullscreen ad is open, real five-minute interval and overlapping native presentation/error tests",
+    "Age/target audience, AdMob blocking controls, Data Safety and privacy review before any store/live ad release",
+    "Separate approval before any AdMob integration merge to main, Production or Play upload"
+  ],
+  "artifacts": "retest/README.md"
 }

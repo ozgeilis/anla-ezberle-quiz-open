@@ -1,6 +1,6 @@
 # AdMob — yalnız test entegrasyonu, 30 Ekim 2026
 
-**Durum: eksik — UMP hesap mesajı bekleniyor; gerçek reklam ve Production kapalı.** [Taslak PR #18](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/18). Bu belge önceki PR #17 APK’sını reklamlı sürüm olarak sunmaz. Yeni native debug/release APK gerçekten üretildi; mağazaya yükleme/AAB kabul kapısı değiştirilmedi.
+**Güncel durum: UMP formu ve gerçek Android emülatör test banner/interstitial PASS; fiziksel cihaz/iOS/mağaza kabulü bekliyor.** [UMP yayını sonrası güncel retest ve kanıtlar](retest/README.md). Gerçek gelir reklamı ve Analytics kapalı; PR #18 main'e alınmadı. Aşağıdaki ilk deneme/UMP engeli bölümleri tarihsel kanıttır; güncel karar için retest ve `validation.json` esas alınır. Mağaza/AAB onay kapısı korunur.
 
 ## Kaynak ve mimari
 
@@ -86,7 +86,7 @@ Platform düzeltmesinden sonraki Android Hermes kaynağında native adaptör ve 
 
 Test sürümünün tam gizlilik metni `PRIVACY-TEST.md` içinde, uygulamadaki politika metninden belge anlık görüntüsü olarak çıkarılmıştır. Mevcut Vercel Production’ı izinsiz değiştirmeden yalnız bu test uygulamasının UMP mesajına kamuya açık test politikası bağlantısı verilebilir. Bu yeni link, Play Console’daki mevcut ana gizlilik URL’sini sessizce değiştirmez. İşletmeci metni ve UMP formunu incelemelidir; genel reklam veya Production yayını onayı değildir.
 
-## Gerçek test sonuçları ve ekran kanıtları
+## UMP yayını öncesindeki test sonuçları (tarihsel)
 
 Makine tarafından okunabilir ayrıntılar: [validation.json](validation.json), [native paket](native-bundle.json), [Android ölçüm matrisi](native-layout-results.json), [Chrome matrisi](web-results.json). Native runtime kaynak commit’i `534be90`; sonraki bu kanıt güncellemeleri belge dosyalarıdır.
 
@@ -103,7 +103,7 @@ Makine tarafından okunabilir ayrıntılar: [validation.json](validation.json), 
 | Frekans/tekrar/kapanış/ses | Birim/SDK port regresyonları PASS; gerçek reklam sunumu yerine geçmez |
 | Fiziksel Samsung / iOS / gelir / AAB / Play | YAPILMADI — gerçek gelir modu kapalı, iOS runtime kapalı, mağaza onay kapısı korunuyor |
 
-**APK SHA-256:** `c226af9696ecd1ef2b12499718f71588ddc1d75b6f811abc61c906507999981c`; ayrıntılar `validation.json` içindedir. Bu yerel arm64 release APK, Android Debug sertifikasıyla imzalanmış emülatör doğrulama çıktısıdır. Mevcut EAS APK’sının imzası değildir; telefondaki uygulamayı kaldırma veya üzerine uyumsuz paket kurma talimatı verilmez. Fiziksel kabul için aynı mevcut EAS imzasıyla `ads-preview` APK gerekir. API min24/target36/compile37 gerçek APK’dan okundu; reklam kimliği/AdServices izinleri APK’da yok.
+**İlk APK SHA-256 (tarihsel):** `c226af9696ecd1ef2b12499718f71588ddc1d75b6f811abc61c906507999981c`; ayrıntılar `validation.json` içindedir. Bu yerel arm64 release APK, Android Debug sertifikasıyla imzalanmış emülatör doğrulama çıktısıdır. Mevcut EAS APK’sının imzası değildir; telefondaki uygulamayı kaldırma veya üzerine uyumsuz paket kurma talimatı verilmez. Fiziksel kabul için aynı mevcut EAS imzasıyla `ads-preview` APK gerekir. API min24/target36/compile37 gerçek APK’dan okundu; reklam kimliği/AdServices izinleri APK’da yok.
 
 Eski API 36 emülatöründe imza uyuşmazlığı saptanınca eski kurulum silinmedi; `AnlaAdsTest36` adlı ayrı boş emülatör kullanıldı. Gerçek kullanıcı hesabı, Supabase veya telefondaki veri bu testler için değiştirilmedi.
 
@@ -115,4 +115,4 @@ Ekran görüntüleri (gerçek uygulama, emülatör; reklam teslimi görseli değ
 - [Çevrimdışı oynanan turun gerçek kayıtlı sonucu](screenshots/android14-offline-real-result.png)
 - [Android 16 release](screenshots/api36-release-privacy-default.png), [Android 16 development](screenshots/api36-debug-privacy-default.png)
 
-**Kesin sonraki adım:** İşletmeci AdMob → Gizlilik ve mesajlaşma → Avrupa düzenlemeleri içinde bu Android uygulamasının UMP mesajını, [test politikası](PRIVACY-TEST.md) ve görünür reddet/izin ver/seçenekleri yönet erişimleriyle inceleyip yapılandırmalı. Mesaj yayınının ardından aynı native pakette gerçek form, ret/geri çekme, test banner ve interstitial yükleme/kapanış tekrar test edilmeli. İzin kapısını atlamak veya yerine sahte reklam çizmek bu engeli çözmez. Hukuki/Play uygunluğu ve gerçek reklam yayını ayrıca onay ister.
+**Önceki engel (UMP yayınıyla çözüldü; bkz. retest):** İşletmeci AdMob → Gizlilik ve mesajlaşma → Avrupa düzenlemeleri içinde bu Android uygulamasının UMP mesajını, [test politikası](PRIVACY-TEST.md) ve görünür reddet/izin ver/seçenekleri yönet erişimleriyle inceleyip yapılandırmalı. Mesaj yayınının ardından aynı native pakette gerçek form, ret/geri çekme, test banner ve interstitial yükleme/kapanış tekrar test edilmeli. İzin kapısını atlamak veya yerine sahte reklam çizmek bu engeli çözmez. Hukuki/Play uygunluğu ve gerçek reklam yayını ayrıca onay ister.
