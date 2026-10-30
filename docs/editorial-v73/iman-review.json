@@ -2405,7 +2405,12 @@
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
-    "newFlags": []
+    "newFlags": [
+      {
+        "kind": "grammar-shape",
+        "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+      }
+    ]
   },
   {
     "id": "q65-hucurat-1",
@@ -2475,12 +2480,7 @@
         "detail": "Birden fazla mutlak sınırlayıcı ifade"
       }
     ],
-    "newFlags": [
-      {
-        "kind": "correct-prefix-outlier",
-        "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
-      }
-    ]
+    "newFlags": []
   },
   {
     "id": "q65-hucurat-14",
@@ -2768,12 +2768,7 @@
     "humanApproval": false,
     "sourceStatus": "source-compared",
     "oldFlags": [],
-    "newFlags": [
-      {
-        "kind": "grammar-shape",
-        "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-      }
-    ]
+    "newFlags": []
   },
   {
     "id": "q67-ankebut-20",
@@ -2968,12 +2963,7 @@
         "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
       }
     ],
-    "newFlags": [
-      {
-        "kind": "grammar-shape",
-        "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
-      }
-    ]
+    "newFlags": []
   },
   {
     "id": "q67-rum-50",
@@ -2992,6 +2982,26 @@
     "sourceStatus": "source-compared",
     "oldFlags": [],
     "newFlags": [
+      {
+        "kind": "semantic-overlap",
+        "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+      },
+      {
+        "kind": "semantic-overlap",
+        "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+      },
+      {
+        "kind": "semantic-overlap",
+        "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+      },
+      {
+        "kind": "semantic-overlap",
+        "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+      },
+      {
+        "kind": "semantic-overlap",
+        "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+      },
       {
         "kind": "semantic-overlap",
         "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"

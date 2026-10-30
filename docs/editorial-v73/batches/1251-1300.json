@@ -3,12 +3,12 @@
   "start": 1251,
   "end": 1300,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 15,
-  "flaggedAfter": 6,
+  "flaggedAfter": 9,
   "records": [
     {
       "sequence": 1251,
@@ -56,20 +56,20 @@
         "question": "Furkân 25/65'te Rahmân'ın kulları Allah'tan hangi azabı uzaklaştırmasını diler?",
         "options": [
           {
-            "id": "o1",
-            "text": "Uzun yolculuğu"
-          },
-          {
-            "id": "o2",
-            "text": "Zor matematik sorularını"
-          },
-          {
             "id": "o3",
             "text": "Cehennem azabını"
           },
           {
+            "id": "o1",
+            "text": "Fırtına azabını"
+          },
+          {
+            "id": "o2",
+            "text": "Tufan azabını"
+          },
+          {
             "id": "o4",
-            "text": "Dünyevî iş yorgunluğunu"
+            "text": "Kavurucu sıcak azabını"
           }
         ],
         "correctOptionId": "o3",
@@ -77,20 +77,46 @@
         "explanation": "Furkân 25/65, kulların cehennem azabının kendilerinden uzak tutulmasını istemelerini anlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Furkân 25/65",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=65&mode=kuran-meal&sure=25",
-            "locator": "Furkân 25/65",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "25/65; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Furkân 25/65, kulların cehennem azabının kendilerinden uzak tutulmasını istemelerini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-65",
+        "reviewedCandidateSha256": "f369f46064275d34d84c612e8e9420416c4a859f51b8b64065a5dd272fee0a39",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Matematik sorusu/yorgunluk/yolculuk gibi üç alakasız güçlük yerine dört azap tasviri. Cehennem duası belirtilen pasajdan bilinmeli.",
+        "optionReview": {
+          "o3": "65’in açık cehennem duası.",
+          "o1": "Başka azap biçimi.",
+          "o2": "Başka azap biçimi.",
+          "o4": "Başka azap biçimi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/65; PDF sayfa 384 (1 tabanlı), basılı sayfa 383",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -137,44 +163,70 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/66'da cehennem için hangi değerlendirme yapılır?",
+        "question": "Furkân 25/66’nın mealinde cehennemin hangi yönü kötü olarak nitelendirilir?",
         "options": [
           {
             "id": "o3",
-            "text": "Kapıları kapalı bir yer"
+            "text": "Yakıtının insan ve taşlar olması"
           },
           {
             "id": "o4",
-            "text": "Yedi kapılı bir mekân"
+            "text": "Görevlilerin sert ve güçlü oluşu"
           },
           {
             "id": "o2",
-            "text": "Kötü bir durak ve konak"
+            "text": "Yerleşme ve kalma yeri oluşu"
           },
           {
             "id": "o1",
-            "text": "Derin bir uçurum"
+            "text": "Girenlerin birbirini suçlaması"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kötü bir durak ve konak",
+        "correctAnswer": "Yerleşme ve kalma yeri oluşu",
         "explanation": "Furkân 25/66, azap yurdunun kötü bir kalma ve konaklama yeri olduğunu vurgulayan ifadeler içerir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 25/66; PDF sayfa 384 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Kötü bir durak ve konak (doğrudan kaynak alıntısı değildir).",
+            "locator": "25/66; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Furkân 25/66, azap yurdunun kötü bir kalma ve konaklama yeri olduğunu vurgulayan ifadeler içerir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-66",
+        "reviewedCandidateSha256": "1e83162b781917d1db82147288af30df94b28f5690c9ebe38fde03f01b02db98",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek olumsuz değerlendirmeye karşı yalnız fiziksel sıfatlar yerine dört Kur’anî cehennem anlatımı. Kök genel cehennem özelliklerini değil bu âyetin kötü nitelemesinin bağlandığı yönü sorar.",
+        "optionReview": {
+          "o3": "Başka cehennem anlatımı.",
+          "o4": "Başka cehennem anlatımı.",
+          "o2": "66’nın yerleşme/kalma niteliği.",
+          "o1": "Başka cehennem anlatımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/66; PDF sayfa 384 (1 tabanlı), basılı sayfa 383",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -221,44 +273,70 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/67'de dengeli harcamanın iki ucundaki tutumlar hangileridir?",
+        "question": "Furkân 25/67’de harcayan kulların tutumu nasıl tanımlanır?",
         "options": [
           {
             "id": "o4",
-            "text": "Biriktirme ve yatırım yapma"
+            "text": "Harcamada yakın çevreyi önceleyen"
           },
           {
             "id": "o1",
-            "text": "İsraf ve cimrilik"
+            "text": "İsrafla cimrilik arasında dengeli"
           },
           {
             "id": "o2",
-            "text": "Gösteriş ve başa kakma"
+            "text": "Gelir arttıkça daha çok biriktiren"
           },
           {
             "id": "o3",
-            "text": "Borçlanma ve alacaklı olma"
+            "text": "Borç vermeyi bağışa tercih eden"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "İsraf ve cimrilik",
+        "correctAnswer": "İsrafla cimrilik arasında dengeli",
         "explanation": "Furkân 25/67, harcama yaparken israf ve cimrilikten kaçınıp bunların arasında dengeli davranılmasını öğütler.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 25/67; PDF sayfa 384 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: İsraf ve cimrilik (doğrudan kaynak alıntısı değildir).",
+            "locator": "25/67; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Furkân 25/67, harcama yaparken israf ve cimrilikten kaçınıp bunların arasında dengeli davranılmasını öğütler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-67",
+        "reviewedCandidateSha256": "17184feb77564156ba07606b2e2860e7e44e333eb360d24ad23b6b8f1e56fab5",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İki uç denip karşıt olmayan yatırım/borç çiftleri sunma giderildi. Dört makul malî tutum; âyetin açık dengesi sorulur, diğerleri genel olarak günah veya geçersiz denmez.",
+        "optionReview": {
+          "o4": "Başka harcama önceliği.",
+          "o1": "67’nin harcama dengesi.",
+          "o2": "Başka birikim tercihi.",
+          "o3": "Başka malî araç tercihi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/67; PDF sayfa 384 (1 tabanlı), basılı sayfa 383",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -341,8 +419,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-70",
+        "reviewedCandidateSha256": "16b36be5edfcc723da5fd565bac36162d398405619b16a5de467175f364a6d65",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu âhiret müjdesi. 70’te kötülüğün iyiliğe çevrilmesi; samimi tövbe/iman/erdemli eylem şartları açıklamada korunur, salt sözle otomatik dönüşüm denmez.",
+        "optionReview": {
+          "o2": "Başka müjde.",
+          "o3": "Başka müjde.",
+          "o4": "70’in açık dönüşüm müjdesi.",
+          "o1": "Başka müjde."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/70; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -439,8 +541,32 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-72",
+        "reviewedCandidateSha256": "21d5a6ed463b9c30c8d3575f868e4fa82ecac7251face7d99ca0ac513851ccb6",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hak ihlali; tek kötü şık yok. 72’nin asılsız şeye şahitliğini dipnot çoğunlukla yalancı şahitlik diye açıklar, tek yorum iddiası yerine bu meal bağlamında korunur.",
+        "optionReview": {
+          "o1": "Başka hak ihlali.",
+          "o2": "Başka hak ihlali.",
+          "o4": "Başka hak ihlali.",
+          "o3": "72 ve dipnotunun şahitlik uyarısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/72; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -523,8 +649,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-73",
+        "reviewedCandidateSha256": "6525ff24c19505b46897fa63b65d21aa9ac2a45ced7cd7f51b7a0ca0fedaeb04",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ikili tepki benzetmesi, hepsi bilinçsiz pasif tepki. 73’ün sağır/kör benzetmesi mecazî tavrı anlatır; engelli kişilerin ahlâkî değeri hakkında yargı değildir.",
+        "optionReview": {
+          "o4": "Başka tepki benzetmesi.",
+          "o2": "73’teki açık iki benzetme.",
+          "o1": "Başka tepki benzetmesi.",
+          "o3": "Başka tepki benzetmesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/73; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -571,37 +721,37 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/74'te aileleri hakkında dua eden kullar ne isterler?",
+        "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Eş ve çocuklarının göz aydınlığı olmasını"
-          },
-          {
             "id": "o2",
-            "text": "Yalnız servet artışını"
+            "text": "Helâl ve bereketli rızık bulmaları"
           },
           {
             "id": "o3",
-            "text": "Savaşlarda zaferi"
+            "text": "Sağlıklı ve uzun ömür sürmeleri"
           },
           {
             "id": "o4",
-            "text": "Herkesten üstün soy verilmesini"
+            "text": "Bilgi ve tecrübelerini artırmaları"
+          },
+          {
+            "id": "o1",
+            "text": "Göz aydınlığı ve mutluluk olmaları"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Eş ve çocuklarının göz aydınlığı olmasını",
+        "correctAnswer": "Göz aydınlığı ve mutluluk olmaları",
         "explanation": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Furkân 25/74",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=74&mode=kuran-meal&sure=25",
-            "locator": "Furkân 25/74",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "25/74; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -611,14 +761,35 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-74",
+        "reviewedCandidateSha256": "edf2d3f7bbe58807b379f64dbaa4d9a1db804bb407f2882ff0b386740e358ae4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yalnız servet/üstün soy/savaş gibi üç bağlam dışı arzu yerine dört olumlu aile duası. Mealin mutluluk getiren eş/çocuk ifadesi ve göz aydınlığı anlamı esastır.",
+        "optionReview": {
+          "o2": "Başka olumlu aile dileği.",
+          "o3": "Başka olumlu aile dileği.",
+          "o4": "Başka olumlu aile dileği.",
+          "o1": "74’teki eş/çocuk dileği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/74; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -669,15 +840,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "Dünyada geniş rızık"
+            "text": "Amel kitabının sağdan verilmesi"
           },
           {
             "id": "o2",
-            "text": "Uzun ve bereketli ömür"
+            "text": "Hesabın kolaylaştırılması"
           },
           {
             "id": "o3",
-            "text": "İnsanlar arasında itibar"
+            "text": "Yüzlerin mutlulukla aydınlanması"
           },
           {
             "id": "o4",
@@ -692,17 +863,48 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 25/75; PDF sayfa 385 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Yüce cennet makamları (doğrudan kaynak alıntısı değildir).",
+            "locator": "25/75; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Furkân 25/75, sabreden kulların cennette yüksek makamlarla karşılanacağını ve selâmla müjdeleneceğini ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-75",
+        "reviewedCandidateSha256": "bb4cd73eac5d4eeaadcf1cef7b5fe78423e0df7e57fc3bbd5f065f14f6d5b14b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek âhiret ödülüne karşı üç dünya kazancı yerine dört olumlu âhiret müjdesi. 75’in gurfe/cennet konağı ifadesi sorulur; mealle yüksek makam açıklaması karşılaştırıldı.",
+        "optionReview": {
+          "o1": "Başka âhiret müjdesi.",
+          "o2": "Başka âhiret müjdesi.",
+          "o3": "Başka âhiret müjdesi.",
+          "o4": "75’in cennet konağı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/75; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -749,23 +951,23 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/77'de Allah katındaki değeriyle bağlantılı olarak hangi davranış vurgulanır?",
+        "question": "Furkân 25/77’nin Kur’an Yolu mealinde insana verilen değer hangi ifadeyle ilişkilendirilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Maddi gösteriş"
-          },
-          {
-            "id": "o2",
-            "text": "Ticareti gizleme"
+            "id": "o4",
+            "text": "Adalet ve merhamet"
           },
           {
             "id": "o3",
             "text": "Dua ve kulluk"
           },
           {
-            "id": "o4",
-            "text": "Soyla övünme"
+            "id": "o1",
+            "text": "Sabır ve metanet"
+          },
+          {
+            "id": "o2",
+            "text": "İnfak ve cömertlik"
           }
         ],
         "correctOptionId": "o3",
@@ -773,20 +975,46 @@
         "explanation": "Furkân 25/77, insana verilen değeri dua ve kullukla ilişkilendiren bir uyarıyla sûrenin kapanışını yapar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Furkân 25/77",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=77&mode=kuran-meal&sure=25",
-            "locator": "Furkân 25/77",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "25/77; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Furkân 25/77, insana verilen değeri dua ve kullukla ilişkilendiren bir uyarıyla sûrenin kapanışını yapar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-77",
+        "reviewedCandidateSha256": "58b9e83d5aa1a11dc5ee884fa1aadcedca82164f2330f62877b07c67c0057f0b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç olumsuz/ilgisiz davranışa karşı tek dinî davranış yerine dört olumlu kavram çifti. Meal kulluk ve niyaz der; dua hakkındaki yorumlardan biri evrensel tek yorum ilan edilmez.",
+        "optionReview": {
+          "o4": "Başka olumlu kavram çifti.",
+          "o3": "77’nin kulluk ve niyaz karşılığı.",
+          "o1": "Başka olumlu kavram çifti.",
+          "o2": "Başka olumlu kavram çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/77; PDF sayfa 385 (1 tabanlı), basılı sayfa 384",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -869,8 +1097,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-1",
+        "reviewedCandidateSha256": "aae3f0dd5104e6139eefe7f450b4c1ea369d3705ebf386e9f3c4a28a622d161c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu sosyal/dinî ilke; aynı sûrenin 6/9/12 öğütleri 1’in özel önüne geçmeme emrinden ayrılıyor. Dört ifade de dinen yanlış sayılmıyor.",
+        "optionReview": {
+          "o1": "6’nın haber ilkesi.",
+          "o3": "9’un barış ilkesi.",
+          "o4": "12’nin gizlilik ilkesi.",
+          "o2": "1’in açık hitabı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/1; PDF sayfa 548 (1 tabanlı), basılı sayfa 547",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -958,8 +1210,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-2",
+        "reviewedCandidateSha256": "df454bb2d0248f0385333a497b71c787910d4b97c3549c56893f1d36535c52eb",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sakıncalı davranış aynı sûreden. 2’nin ses yükseltme uyarısı 4/6/12’den ayrılmalı, tek negatif şık yok.",
+        "optionReview": {
+          "o1": "2’nin açık uyarısı.",
+          "o2": "4’ün farklı uyarısı.",
+          "o3": "6’nın farklı uyarısı.",
+          "o4": "12’nin farklı uyarısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/2; PDF sayfa 548 (1 tabanlı), basılı sayfa 547",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1042,8 +1318,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-4",
+        "reviewedCandidateSha256": "3769cfbf0f0393f1f3f7660775dc5e7cb0658d3af90f06446252650a1c733a34",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sûre içi âyet numarası. Giriş paragrafı ve 4’ün odalar kelimesi birlikte okundu; dokuz oda sayısı âyet numarası değildir.",
+        "optionReview": {
+          "o1": "Başka âyet.",
+          "o2": "Başka âyet.",
+          "o3": "Son âyet.",
+          "o4": "Girişin açıkladığı dördüncü âyet."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/4; PDF sayfa 548 (1 tabanlı), basılı sayfa 547",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1136,8 +1436,32 @@
           "detail": "Kaynak/bağlam sınırı ve birden fazla doğru ihtimali incelenmeli"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-5",
+        "reviewedCandidateSha256": "bd4ae0688c2056d2016f71acd9982f3e89ab53ee548685ed1216fb80ee395652",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört makul iletişim/edep davranışı. 5’in çıkıncaya kadar sabır şartı açık; diğer olumlu işlemler bu tek âyetin yerine getirilmesi sayılamaz.",
+        "optionReview": {
+          "o4": "Başka iletişim yolu.",
+          "o3": "5’in açık bekleyişi.",
+          "o1": "6’nın başka bilgi davranışı.",
+          "o2": "Başka iletişim yolu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/5; PDF sayfa 548 (1 tabanlı), basılı sayfa 547",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1225,8 +1549,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-7",
+        "reviewedCandidateSha256": "ae1abdf4ee44ac10f5923271f9160a99c5d0b53c7fb0eca55745c57412d8672a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu dinî kavram. 7–8 birlikte basılmış mealde iman sevgisi açık; infak/istişare/sabır değerleri inkâr edilmiyor.",
+        "optionReview": {
+          "o3": "Başka olumlu kavram.",
+          "o4": "Başka olumlu kavram.",
+          "o2": "7–8’in sevdirilen imanı.",
+          "o1": "Başka olumlu kavram."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/7; PDF sayfa 549 (1 tabanlı), basılı sayfa 548",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1273,37 +1621,37 @@
         ]
       },
       "after": {
-        "question": "Hucurât 49/8'de iman sevgisi hangi ilâhî kavramlarla ilişkilendirilir?",
+        "question": "Hucurât 49/8’de iman sevgisi hangi iki kavramla açıklanır?",
         "options": [
           {
             "id": "o2",
-            "text": "Bir imtihan ve sorumluluk"
+            "text": "İmtihan ve sorumluluk"
           },
           {
             "id": "o3",
-            "text": "Bir emanet ve şahitlik"
+            "text": "Emanet ve şahitlik"
           },
           {
             "id": "o4",
-            "text": "Bir vaad ve uyarı"
+            "text": "Vaad ve uyarı"
           },
           {
             "id": "o1",
-            "text": "Allah'tan bir lütuf ve nimet"
+            "text": "Lütuf ve nimet"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Allah'tan bir lütuf ve nimet",
+        "correctAnswer": "Lütuf ve nimet",
         "explanation": "Hucurât 49/8, imanın gönüllerde güzelleştirilmesini Allah'tan gelen lütuf ve nimet olarak tanımlar.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 49/8; PDF sayfa 549 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Allah'tan bir lütuf ve nimet (doğrudan kaynak alıntısı değildir).",
+            "locator": "49/8; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Hucurât 49/8, imanın gönüllerde güzelleştirilmesini Allah'tan gelen lütuf ve nimet olarak tanımlar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1313,14 +1661,35 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "correct-prefix-outlier",
-          "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-8",
+        "reviewedCandidateSha256": "22c35a16e1de8d024cd3f67882c06ce0bbbf843b7e24f7198b521d57650118b8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Allah’tan diye yalnız doğru şıkkın ilâhî aidiyetini açık eden uzun yapı kaldırıldı. Dört paralel kavram çifti; 7–8 birleşik mealindeki lütuf/nimet esastır.",
+        "optionReview": {
+          "o2": "Başka dinî kavram çifti.",
+          "o3": "Başka dinî kavram çifti.",
+          "o4": "Başka dinî kavram çifti.",
+          "o1": "7–8’in açık ikilisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/8; PDF sayfa 549 (1 tabanlı), basılı sayfa 548",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1367,44 +1736,70 @@
         ]
       },
       "after": {
-        "question": "Hucurât 49/9'da iki mümin topluluk çatıştığında öncelikle ne yapılması öğütlenir?",
+        "question": "Hucurât 49/9’da çatışan toplulukları barıştırırken hangi ölçü açıkça vurgulanır?",
         "options": [
           {
             "id": "o1",
-            "text": "Çatışmayı artırmak"
+            "text": "Merhamet"
           },
           {
             "id": "o2",
-            "text": "Hepsini sürgün etmek"
+            "text": "Sadakat"
           },
           {
             "id": "o3",
-            "text": "Sadece izlemek"
+            "text": "Kanaat"
           },
           {
             "id": "o4",
-            "text": "Aralarını düzeltmek"
+            "text": "Adalet"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Aralarını düzeltmek",
+        "correctAnswer": "Adalet",
         "explanation": "Hucurât 49/9, mümin gruplar arasındaki çatışmada adaletle barıştırma çabasını emreder.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Hucurât 49/9",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=49",
-            "locator": "Hucurât 49/9",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "49/9; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Hucurât 49/9, mümin gruplar arasındaki çatışmada adaletle barıştırma çabasını emreder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-9",
+        "reviewedCandidateSha256": "c5afed07da0415b99f80b79dca3a41acdb9e465ab4723f73bcf83bf2b7e27435",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç saldırgan/pasif davranışa karşı tek barış öğüdü kaldırıldı. Dört olumlu erdemden âyetin adalet/hakkaniyet ölçüsü seçilmeli; güç kullanımına dair hüküm bağlamından koparılmaz.",
+        "optionReview": {
+          "o1": "Başka olumlu erdem.",
+          "o2": "Başka olumlu erdem.",
+          "o3": "Başka olumlu erdem.",
+          "o4": "9’un adalet ve hak ölçüsü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/9; PDF sayfa 549 (1 tabanlı), basılı sayfa 548",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1492,8 +1887,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-14",
+        "reviewedCandidateSha256": "811472c3fb9646e260c71ad5db49c054d45dbfca1e5c6a0a01accddbe0bf6e6f",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu süreç ayrımı. 14’ün boyun eğme ile imanın gönle yerleşmesi farkı hedef; kişilerin imanını dış görünüşle yargılayacak yeni bir genel ölçü eklenmedi.",
+        "optionReview": {
+          "o2": "Başka süreç ayrımı.",
+          "o4": "Başka süreç ayrımı.",
+          "o3": "14’ün kalbe yerleşme ayrımı.",
+          "o1": "Başka süreç ayrımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/14; PDF sayfa 550 (1 tabanlı), basılı sayfa 549",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1581,8 +2000,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-15",
+        "reviewedCandidateSha256": "a0f7f7334500fb23041cbd2a9ae869df5d441a1629600f02974b4e2470e1231c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu iman/ahlâk davranışı. 15’in şüpheye düşmeme şartı açık; mal/canla gayret şartı açıklamada var, diğer davranışlar yanlış inanç sayılmaz.",
+        "optionReview": {
+          "o3": "Başka olumlu davranış.",
+          "o4": "12’nin başka olumlu davranışı.",
+          "o2": "15’in açık şüpheye düşmeme şartı.",
+          "o1": "6’nın başka bilgi davranışı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/15; PDF sayfa 550 (1 tabanlı), basılı sayfa 549",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1674,8 +2117,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hucurat-18",
+        "reviewedCandidateSha256": "efc3fe5226eb42ee089c29245795c20cd15762bd118308c84f95ce1f47e1323a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ilâhî bilgi alanı; geniş ifade ile alt örnekler mantıken örtüşür. Kök 18’deki ifade edilen kapsamı sorarak tam gök/yer lafzına bağlı; diğer gaybı Allah bilmez çıkarımı yapılmaz. Bağımsız editör bu kaynak bağlılığı yeniden değerlendirmeli.",
+        "optionReview": {
+          "o1": "18’in bütüncül lafzı.",
+          "o2": "Başka âyetteki bilgi örneği.",
+          "o3": "Başka âyetteki bilgi örneği.",
+          "o4": "Başka âyetteki bilgi örneği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "49/18; PDF sayfa 550 (1 tabanlı), basılı sayfa 549",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1767,8 +2234,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-2",
+        "reviewedCandidateSha256": "a6856406e5fdd30d5a996ad286f5c1c87995cb80ef234d03ef7a12d59e2f61a3",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört karşıt fiil çifti aynı yapıda. 2’nin hayat/ölüm fiilleri rızık veya gülme/ağlama çiftinden ayrılıyor; 3’ün evvel/âhir isimleriyle karışmaz.",
+        "optionReview": {
+          "o2": "Başka karşıt fiil çifti.",
+          "o3": "Başka karşıt fiil çifti.",
+          "o4": "2’nin açık hayat/ölüm çifti.",
+          "o1": "Başka karşıt fiil çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/2; PDF sayfa 575 (1 tabanlı), basılı sayfa 574",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1856,8 +2347,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-3",
+        "reviewedCandidateSha256": "54e4f0ab32dd14270d01400ba8efc56f955dc6d0b35f5ed83dc9ed0db14c5bde",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu ilâhî nitelik dizisi. 3 ve dipnotu evvel/âhir/zâhir/bâtını açıklar; açık/gizli zâtın yaratılmışlarca bütünüyle bilindiği anlamına getirilmez.",
+        "optionReview": {
+          "o2": "Başka nitelikler dizisi.",
+          "o4": "Başka nitelikler dizisi.",
+          "o3": "3’ün dört ismi.",
+          "o1": "Başka nitelikler dizisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/3; PDF sayfa 575 (1 tabanlı), basılı sayfa 574",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1940,8 +2455,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-7",
+        "reviewedCandidateSha256": "dea67711a20ac6713621a3ff75019ae9ea8a689e29f511c90c98d0c8363a7cc8",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu malî davranış; tek iyilik yok. 7’nin emanet edilen maldan başkası için harcama emri, miras/ölçü/borç kaydı öğütlerinden ayrı.",
+        "optionReview": {
+          "o3": "Başka malî yükümlülük.",
+          "o4": "Başka ticarî ahlâk ilkesi.",
+          "o2": "7’nin açık harcama emri.",
+          "o1": "Başka borç işlemi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/7; PDF sayfa 576 (1 tabanlı), basılı sayfa 575",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1988,37 +2527,37 @@
         ]
       },
       "after": {
-        "question": "Hadîd 57/18'de sadaka veren erkek ve kadınlar için hangi müjde yer alır?",
+        "question": "Hadîd 57/18’de karşılıksız yardım edenlere verilecek karşılık nasıl anlatılır?",
         "options": [
           {
             "id": "o2",
-            "text": "Ömürlerinin uzatılması"
+            "text": "Gizlice ve insanlar duymadan"
           },
           {
             "id": "o3",
-            "text": "Mallarının dünyada artması"
+            "text": "Dünyada ve sağlıklı bir ömürle"
           },
           {
             "id": "o4",
-            "text": "İnsanların onlara imrenmesi"
+            "text": "Gecikmeden ve aynı miktarda"
           },
           {
             "id": "o1",
-            "text": "Karşılıklarının katlanması"
+            "text": "Katlanarak ve değerli ödülle"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Karşılıklarının katlanması",
+        "correctAnswer": "Katlanarak ve değerli ödülle",
         "explanation": "Hadîd 57/18, sadaka veren erkek ve kadınların karşılıklarının kat kat artırılacağını ve kendilerine değerli ödül verileceğini bildirir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 57/18; PDF sayfa 577 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Karşılıklarının katlanması (doğrudan kaynak alıntısı değildir).",
+            "locator": "57/18; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Hadîd 57/18, sadaka veren erkek ve kadınların karşılıklarının kat kat artırılacağını ve kendilerine değerli ödül verileceğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -2029,8 +2568,34 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-18",
+        "reviewedCandidateSha256": "61275a6a4b9097f98fbf47ca82130ddaec270c12fb6dc5620e4cedb0665c14de",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek âhiret müjdesine karşı dünyalık imrenme/ömür seçenekleri yerine dört karşılık biçimi. 18’in fazlasıyla ödeme ve değerli ödülü esastır; diğer nimetler inkâr edilmiyor.",
+        "optionReview": {
+          "o2": "Gizlilik niteliği bu pasajda yok.",
+          "o3": "Karşılık bu dünyalık biçime bağlanmıyor.",
+          "o4": "Aynı miktar katlanmanın karşılığı değil.",
+          "o1": "18’in iki açık karşılık niteliği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/18; PDF sayfa 577 (1 tabanlı), basılı sayfa 576",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2118,8 +2683,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-20",
+        "reviewedCandidateSha256": "2a3322e1653ba753fc65570e1a4052339b6245941dccf8bc32e5e07748a6f497",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gelişip kaybolma döngüsü. 20’nin yağmur/bitki benzetmesi 577–578 sayfa geçişinde bütünüyle okundu; yalnız bitki kelimesi değil son sararma/çerçöp aşaması da tutarlı.",
+        "optionReview": {
+          "o3": "Başka doğa döngüsü.",
+          "o4": "20’nin yağmurla bitip kuruyan bitkisi.",
+          "o1": "Başka doğa döngüsü.",
+          "o2": "Başka doğa döngüsü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/20; PDF sayfa 577 (1 tabanlı), basılı sayfa 576",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2216,8 +2805,32 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-21",
+        "reviewedCandidateSha256": "3eefbc03d42738c9c78aedab06b8c8c5e1acafdb0dfcc769bff2f42de28ae8c9",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu hedef; tek iyi davranış değil. 21’de genişliği gök/yer gibi cennet ve bağışlanma birlikte, açıklama doğru; başkalarına verilen hedefler de dinen kötü sayılmıyor.",
+        "optionReview": {
+          "o1": "Başka olumlu hedef.",
+          "o2": "Başka olumlu hedef.",
+          "o4": "Başka olumlu hedef.",
+          "o3": "21’in açık iki hedefi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/21; PDF sayfa 578 (1 tabanlı), basılı sayfa 577",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2300,8 +2913,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-hadid-25",
+        "reviewedCandidateSha256": "216c7ff3e4bb46d615ba37283a6ad3461a5d542bf6c6a8b7d4d3f4d6c819a158",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sûre içi sayı. 575’te sûre girişinin verdiği 25 bilgisi, 578–579’da bölünen demir âyetiyle karşılaştırıldı; metalin inişi hakkında modern fizik çıkarımı yapılmıyor.",
+        "optionReview": {
+          "o1": "Sûrenin son âyeti.",
+          "o2": "25’te hadîd kelimesi.",
+          "o3": "Başka âyet.",
+          "o4": "Başka âyet."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "57/25; PDF sayfa 578 (1 tabanlı), basılı sayfa 577",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2384,8 +3021,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-9",
+        "reviewedCandidateSha256": "12a4037d42a11b64e35040582e02cfb0582c719ed2130aaf19ea9cf1ea701f94",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Kur’an terimi/yer adı. Rakīm’in yazıt, vadi/dağ veya ayrı topluluk yorumları 308–309 dipnotunda açık; yalnız ismin geçmesi sorularak mahiyet kesinleştirilmiyor.",
+        "optionReview": {
+          "o1": "9’da birlikte geçen ad.",
+          "o2": "Başka terim.",
+          "o3": "Başka Kur’an terimi.",
+          "o4": "Başka yer adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/9; PDF sayfa 308 (1 tabanlı), basılı sayfa 307",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2468,8 +3129,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-13",
+        "reviewedCandidateSha256": "4523601ed248ae0eb2739c3b37a055faa8c1fbd2bb9c433a202d0d00a4854647",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört artış türü. 13 doğru yolda yürümeye katkı der; sayı/rızık/ömür de olumlu olabilse bu âyetin açık artışı değil.",
+        "optionReview": {
+          "o4": "Başka artış.",
+          "o2": "13’ün doğru yol/hidayet katkısı.",
+          "o1": "Başka artış.",
+          "o3": "Başka artış."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/13; PDF sayfa 309 (1 tabanlı), basılı sayfa 308",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2519,20 +3204,20 @@
         "question": "Kehf 18/16'da gençlerin inançlarını korumak için seçtikleri yer neresidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mağara"
-          },
-          {
             "id": "o2",
-            "text": "Saray"
+            "text": "Sığınak kulesi"
           },
           {
             "id": "o3",
-            "text": "Pazar"
+            "text": "Dağ köyü"
           },
           {
             "id": "o4",
-            "text": "Tersane"
+            "text": "Orman içi"
+          },
+          {
+            "id": "o1",
+            "text": "Mağara"
           }
         ],
         "correctOptionId": "o1",
@@ -2540,20 +3225,46 @@
         "explanation": "Kehf 18/16, gençlerin Allah'tan başkasına kulluktan uzaklaşarak mağaraya sığınma kararını anlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/16",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/16, gençlerin Allah'tan başkasına kulluktan uzaklaşarak mağaraya sığınma kararını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-16",
+        "reviewedCandidateSha256": "a491a2647ca7db4406111c380ad7e04d5bb974f6bac522430bdf12537f6c4bd8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Saray/pazar/tersane gibi sığınma bağlamına uzak yerler yerine dört saklanma yeri. Kıssa adı kavram bilgisi verebilir; üç saçma yerle doğru seçtirme giderildi.",
+        "optionReview": {
+          "o2": "Başka sığınma yeri.",
+          "o3": "Başka sığınma yeri.",
+          "o4": "Başka sığınma yeri.",
+          "o1": "16’nın açık sığınağı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/16; PDF sayfa 309 (1 tabanlı), basılı sayfa 308",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2600,44 +3311,75 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/18'de mağara gençlerinin yanındaki köpeğin konumu nasıl tasvir edilir?",
+        "question": "Kehf 18/18’de gençlerin köpeği nerede tasvir edilir?",
         "options": [
           {
             "id": "o1",
-            "text": "Bir geminin güvertesinde"
+            "text": "Mağaranın iç kısmında"
           },
           {
             "id": "o2",
-            "text": "Dağın zirvesinde"
+            "text": "Mağaranın üst yamacında"
           },
           {
             "id": "o3",
-            "text": "Kent pazarında"
+            "text": "Mağaranın alt yamacında"
           },
           {
             "id": "o4",
-            "text": "Girişte ön ayaklarını uzatmış hâlde"
+            "text": "Mağaranın girişinde"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Girişte ön ayaklarını uzatmış hâlde",
+        "correctAnswer": "Mağaranın girişinde",
         "explanation": "Kehf 18/18, mağara gençleri uykudayken köpeklerinin girişte ön ayaklarını uzatmış durumda olduğunu bildirir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=18&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/18",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/18; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/18, mağara gençleri uykudayken köpeklerinin girişte ön ayaklarını uzatmış durumda olduğunu bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-18",
+        "reviewedCandidateSha256": "23ea9fec40b8d36fc131a39e95e590fb947775fb09d183b609e67a24e68b1eae",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Gemi/pazar/zirveye karşı tek uzun mağara tarifi kaldırıldı. Dört aynı mekân çevresi konumu; ön ayak uzatma ayrıntısı açıklamada tutulur.",
+        "optionReview": {
+          "o1": "Başka mağara konumu.",
+          "o2": "Başka yakın konum.",
+          "o3": "Başka yakın konum.",
+          "o4": "18’in giriş konumu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/18; PDF sayfa 309 (1 tabanlı), basılı sayfa 308",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2688,19 +3430,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Kılıç ile"
+            "text": "Altın para ile"
           },
           {
             "id": "o2",
-            "text": "Mühürlü askerî emirle"
+            "text": "Bakır para ile"
+          },
+          {
+            "id": "o4",
+            "text": "Demir para ile"
           },
           {
             "id": "o3",
             "text": "Gümüş para ile"
-          },
-          {
-            "id": "o4",
-            "text": "Altın taç ile"
           }
         ],
         "correctOptionId": "o3",
@@ -2708,20 +3450,46 @@
         "explanation": "Kehf 18/19'da mağara gençleri içlerinden birini yanlarındaki gümüş parayla şehre yiyecek almaya göndermeyi kararlaştırır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=19&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/19",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/19; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/19'da mağara gençleri içlerinden birini yanlarındaki gümüş parayla şehre yiyecek almaya göndermeyi kararlaştırır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-19",
+        "reviewedCandidateSha256": "31e02e7683bce90ea5232b73ea4dbd13c6ec0a9f1cca3e7b2248e2418b9ec582",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kılıç/emir/taç gibi alışveriş dışı nesneler yerine dört aynı biçimli para metali. Metinde gümüş açık; diğer paralar bu dönemde geçerli diye tarihî iddia eklenmiyor.",
+        "optionReview": {
+          "o1": "Başka para metali varsayımı.",
+          "o2": "Başka para metali varsayımı.",
+          "o4": "Başka para metali varsayımı.",
+          "o3": "19’un gümüş parası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/19; PDF sayfa 310 (1 tabanlı), basılı sayfa 309",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2768,44 +3536,70 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/23-24'te gelecek için bir iş yapmayı söylerken hangi kayıt hatırlatılır?",
+        "question": "Kehf 18/23–24’te yarın yapılacak bir iş için hangi ifade hatırlatılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Başka tanrılara başvurmak"
+            "id": "o2",
+            "text": "Allah izin verirse"
           },
           {
-            "id": "o2",
-            "text": "Allah dilerse demek"
+            "id": "o1",
+            "text": "Allah’a şükürler olsun"
           },
           {
             "id": "o3",
-            "text": "Yalnız kendine güvenmek"
+            "text": "Allah’tan bağışlanma dilerim"
           },
           {
             "id": "o4",
-            "text": "Sürekli başkalarını suçlamak"
+            "text": "Allah her şeyi bilir"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Allah dilerse demek",
+        "correctAnswer": "Allah izin verirse",
         "explanation": "Kehf 18/23-24, gelecek bir işi kesin sözle ifade ederken Allah'ın dilemesini anmayı hatırlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=23&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/23",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/23; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/23-24, gelecek bir işi kesin sözle ifade ederken Allah'ın dilemesini anmayı hatırlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-23",
+        "reviewedCandidateSha256": "26f3bcbe1f894a2067becc75469811f792d3a70748aba5ec011c6599c4fb1f63",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç uygunsuz güven/suçlama/başka tanrı davranışına karşı tek doğru yerine dört doğru dinî ifade. Geleceğe yönelik izin kaydı özel olarak bilinmeli.",
+        "optionReview": {
+          "o2": "23–24’ün açık gelecek kaydı.",
+          "o1": "Şükür ifadesi.",
+          "o3": "İstiğfar ifadesi.",
+          "o4": "İlâhî bilgi ifadesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/23; PDF sayfa 311 (1 tabanlı), basılı sayfa 310",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2852,7 +3646,7 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/25'te mağara gençlerinin kalış süresi hangi sayılarla anlatılır?",
+        "question": "Kehf 18/25’in metninde mağarada kalış hangi sayılarla ifade edilir?",
         "options": [
           {
             "id": "o1",
@@ -2860,36 +3654,67 @@
           },
           {
             "id": "o2",
-            "text": "Yedi yıl ve ek üç"
+            "text": "Üç yüz yıl ve buna ek yedi"
           },
           {
             "id": "o3",
-            "text": "Kırk yıl ve ek iki"
+            "text": "İki yüz yıl ve buna ek dokuz"
           },
           {
             "id": "o4",
-            "text": "Bin yıl ve ek elli"
+            "text": "İki yüz yıl ve buna ek yedi"
           }
         ],
         "correctOptionId": "o1",
         "correctAnswer": "Üç yüz yıl ve buna ek dokuz",
-        "explanation": "Kehf 18/25, mağarada kalış süresini üç yüz yıl ve buna ilâveten dokuz yıl olarak aktarır.",
+        "explanation": "Kehf 18/25’in metninde üç yüz yıl ve buna ek dokuz yıl ifadesi bulunur. Kur’an Yolu dipnotu, bunun nakledilen bir görüş mü yoksa doğrudan süre bildirimi mi olduğu konusundaki iki yorumu belirtir; soru metindeki sayıları sorar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=25&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/25",
-            "supports": "Kehf 18/25, mağarada kalış süresini üç yüz yıl ve buna ilâveten dokuz yıl olarak aktarır.",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/25; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Kehf 18/25’in metninde üç yüz yıl ve buna ek dokuz yıl ifadesi bulunur. Kur’an Yolu dipnotu, bunun nakledilen bir görüş mü yoksa doğrudan süre bildirimi mi olduğu konusundaki iki yorumu belirtir; soru metindeki sayıları sorar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-25",
+        "reviewedCandidateSha256": "67198c8258e2ba8144b90e2e9b18aef18a509cf4c87ee2921f888873dfd82e37",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Farklı ölçek ve çok farklı biçim yerine iki sayı boyutunun dört birleşimi. Dipnot 25’in kimin sözü olduğu hakkında iki yorum verir; kök tarihî kesin süre iddiasından metindeki sayılara daraltıldı.",
+        "optionReview": {
+          "o1": "25’te geçen iki sayı.",
+          "o2": "İlâve sayısı farklı.",
+          "o3": "Yüzlük sayı farklı.",
+          "o4": "Her iki sayı farklı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/25; PDF sayfa 311 (1 tabanlı), basılı sayfa 310",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2972,8 +3797,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-28",
+        "reviewedCandidateSha256": "a8efe1d02e00dd1ec94e3c3884138413e198d2df26a91c024a1eb9e9a67bc8af",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu dinî davranış, hepsi ilgili. 28’in sabah-akşam dua edenlerle beraberliği, dipnotun yoksul müminleri uzaklaştırmama bağlamıyla tutarlı.",
+        "optionReview": {
+          "o2": "Başka olumlu davranış.",
+          "o3": "Başka olumlu davranış.",
+          "o4": "28’in belirli dua edenleri.",
+          "o1": "Başka olumlu davranış."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/28; PDF sayfa 311 (1 tabanlı), basılı sayfa 310",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3020,23 +3869,23 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/32'de anlatılan iki bahçe örneğinde temel ürün hangisidir?",
+        "question": "Kehf 18/32’de iki bahçenin esasını hangi ürünün bağları oluşturur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Pamuk"
-          },
-          {
-            "id": "o2",
-            "text": "Zeytin"
+            "id": "o4",
+            "text": "Nar"
           },
           {
             "id": "o3",
             "text": "Üzüm"
           },
           {
-            "id": "o4",
-            "text": "Pirinç"
+            "id": "o1",
+            "text": "Zeytin"
+          },
+          {
+            "id": "o2",
+            "text": "İncir"
           }
         ],
         "correctOptionId": "o3",
@@ -3044,20 +3893,46 @@
         "explanation": "Kehf 18/32'de iki bağ sahibi örneğinde üzüm bağları, çevresinde hurmalıklar ve aralarında ekinler bulunması anlatılır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=32&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/32",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/32; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/32'de iki bağ sahibi örneğinde üzüm bağları, çevresinde hurmalıklar ve aralarında ekinler bulunması anlatılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-32",
+        "reviewedCandidateSha256": "5f2b88ec96104a1e6bc615a6ad6dd07f91438c0eb26c14d1332c9d4ceae16564",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Pamuk/pirinç gibi bağ bağlamına uzak tarla bitkileri yerine dört meyve. Hurma da çevrede gerçekten bulunduğu için yanlış şık yapılmadı.",
+        "optionReview": {
+          "o4": "Başka meyve türü.",
+          "o3": "32’nin iki üzüm bağı.",
+          "o1": "Başka meyve türü.",
+          "o2": "Başka meyve türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/32; PDF sayfa 312 (1 tabanlı), basılı sayfa 311",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3140,8 +4015,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-34",
+        "reviewedCandidateSha256": "ac21b7f745d0c878e85f8a2ff9bc05dfc545b9ae8ecfd2c55ba87963c4c9bc67",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört üstünlük iddiası aynı yapı ve değer yargısı yönünde. 34’ün mal ve insan sayısı vurgusu, diğer bilgi/soy/sağlık iddialarından ayrı.",
+        "optionReview": {
+          "o1": "Başka övünme konusu.",
+          "o3": "Başka övünme konusu.",
+          "o4": "Başka övünme konusu.",
+          "o2": "34’ün iki övünme konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/34; PDF sayfa 312 (1 tabanlı), basılı sayfa 311",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3188,37 +4087,37 @@
         ]
       },
       "after": {
-        "question": "Kehf 18/39'da bahçeye girerken söylenmesi tavsiye edilen ifade hangi anlama gelir?",
+        "question": "Kehf 18/39’da bahçeye girerken söylenmesi öğütlenen söz hangi iki anlamı birleştirir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Allah’ı yüceltmek ve O’na hamdetmek"
+          },
+          {
             "id": "o1",
-            "text": "Allah'ın dilediği olur, güç ancak O'nundur"
+            "text": "Allah’ın dilemesi ve gücün O’na ait olması"
           },
           {
             "id": "o2",
-            "text": "Güç yalnız insana aittir"
+            "text": "Allah’a şükretmek ve bağışlanma dilemek"
           },
           {
             "id": "o3",
-            "text": "Her şey sonsuza dek kalır"
-          },
-          {
-            "id": "o4",
-            "text": "Mal hayatı kurtarır"
+            "text": "Allah’ı anmak ve O’na tevekkül etmek"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Allah'ın dilediği olur, güç ancak O'nundur",
+        "correctAnswer": "Allah’ın dilemesi ve gücün O’na ait olması",
         "explanation": "Kehf 18/39, nimetle karşılaşıldığında Allah'ın dilemesini ve kudretini anan bir ifade söylemeyi öğütler.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=39&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/39",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/39; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/39, nimetle karşılaşıldığında Allah'ın dilemesini ve kudretini anan bir ifade söylemeyi öğütler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -3230,12 +4129,38 @@
       ],
       "automaticAfter": [
         {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-39",
+        "reviewedCandidateSha256": "f7b609a7e36b17f14e41f3ac8354736d29d1e85243cb8b0a8a5ced2c59a1d086",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç açık yanlış dünya görüşüne karşı tek dinî doğru kaldırıldı. Dört olumlu zikir anlam çifti; mâşallah ve lâ kuvvete illâ billâh içeriği özel hedef.",
+        "optionReview": {
+          "o4": "Başka olumlu zikir anlamları.",
+          "o1": "39’un dileme ve güç ifadesi.",
+          "o2": "Başka olumlu zikir anlamları.",
+          "o3": "Başka olumlu zikir anlamları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/39; PDF sayfa 312 (1 tabanlı), basılı sayfa 311",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3318,8 +4243,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-45",
+        "reviewedCandidateSha256": "05543fb60ada315f7fb893bb92192d66cb554dc2edd3cd3ff7ddabe75057add0",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört geçici tabiat döngüsü. 45’in çerçöp olma bitişi 313’te tam okunup 57/20 benzer benzetmesiyle karşılaştırıldı; iki kaynakta da aynı öğüt bulunması tekrar kabulünde ayrıca değerlendirilecek.",
+        "optionReview": {
+          "o2": "Başka döngü.",
+          "o3": "Başka döngü.",
+          "o4": "45’in su/bitki/çerçöp örneği.",
+          "o1": "Başka döngü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/45; PDF sayfa 313 (1 tabanlı), basılı sayfa 312",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3402,8 +4351,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-46",
+        "reviewedCandidateSha256": "e6f5e72c29e23e72b95ae2dbc4b44cbf2c254fdd16496e7ef5a08a08f1fe3275",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hayat evresi. 46’daki dünya süsü ifadesi çocuk veya malın değersizliği diye yorumlanmıyor; kalıcı iyi eylemin değeri açıklamada korunur.",
+        "optionReview": {
+          "o4": "Başka evre.",
+          "o3": "46’nın dünya hayatı.",
+          "o1": "Başka evre.",
+          "o2": "Başka evre."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/46; PDF sayfa 313 (1 tabanlı), basılı sayfa 312",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3486,8 +4459,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-50",
+        "reviewedCandidateSha256": "75a07aa29fb2b002dd8a51b8773cca7a9ce462dc97bb20c126ce442e8a8fadc7",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört varlık sınıfı. 50’nin açık cinlerdendi ifadesi belirli; meleklerle secde emrinde anılması melek türüne aidiyet değildir. Hayvan şıkkı zayıf olsa da üçü birden saçma/ahlâkî ipucu değil.",
+        "optionReview": {
+          "o1": "Emrin muhatabı olan başka sınıf.",
+          "o3": "Başka sınıf.",
+          "o4": "Başka sınıf.",
+          "o2": "50’nin açık sınıfı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/50; PDF sayfa 314 (1 tabanlı), basılı sayfa 313",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3537,20 +4534,20 @@
         "question": "Kehf 18/61'de iki denizin birleştiği yerde unutulan hayvan hangisidir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Midye"
+          },
+          {
             "id": "o1",
             "text": "Balık"
           },
           {
             "id": "o2",
-            "text": "Deve"
+            "text": "Kaplumbağa"
           },
           {
             "id": "o3",
-            "text": "Kuş"
-          },
-          {
-            "id": "o4",
-            "text": "Koyun"
+            "text": "Yengeç"
           }
         ],
         "correctOptionId": "o1",
@@ -3558,20 +4555,46 @@
         "explanation": "Kehf 18/60-61, Hz. Mûsâ ve yol arkadaşının iki denizin birleştiği yere ulaştıklarında balıklarını unuttuklarını anlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=61&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/61",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/61; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/60-61, Hz. Mûsâ ve yol arkadaşının iki denizin birleştiği yere ulaştıklarında balıklarını unuttuklarını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-61",
+        "reviewedCandidateSha256": "368c2dcec2009f1662931a867fbe523173744c390d6ab3e7bc89d14b89732985",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İki deniz bağlamında yalnız balığa karşı üç kara hayvanı yerine dört su canlısı. Balığın yolunu bulup gitmesi açıklamada korunur; mevcut zor etiketi güçlenen şıklar için ayrıca değerlendirilmeli.",
+        "optionReview": {
+          "o4": "Başka su canlısı.",
+          "o1": "61’in unutulan balığı.",
+          "o2": "Başka su canlısı.",
+          "o3": "Başka su canlısı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/61; PDF sayfa 315 (1 tabanlı), basılı sayfa 314",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3621,41 +4644,67 @@
         "question": "Kehf 18/71'de bilge kul gemiye ne yapmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Gemiyi yakmıştır"
-          },
-          {
-            "id": "o2",
-            "text": "Geminin yelkenini boyamıştır"
+            "id": "o4",
+            "text": "Yelkenini indirip toplamıştır"
           },
           {
             "id": "o3",
-            "text": "Gemide delik açmıştır"
+            "text": "Teknesinde delik açmıştır"
           },
           {
-            "id": "o4",
-            "text": "Gemiyi satmıştır"
+            "id": "o1",
+            "text": "Dümenini söküp ayırmıştır"
+          },
+          {
+            "id": "o2",
+            "text": "Halatlarını kesip atmıştır"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Gemide delik açmıştır",
+        "correctAnswer": "Teknesinde delik açmıştır",
         "explanation": "Kehf 18/71'de yolculuk yapılan gemiye delik açılması Hz. Mûsâ'nın dikkat çektiği olaylardan biridir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=71&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/71",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/71; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/71'de yolculuk yapılan gemiye delik açılması Hz. Mûsâ'nın dikkat çektiği olaylardan biridir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-71",
+        "reviewedCandidateSha256": "ef46ed2bf1b06f7c9cdeea1929833e0f9b7dfa0302a5aa711671889ad9c6ae8c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yelken boyama gibi ilgisiz eylem yerine dört somut gemi müdahalesi. İlk anda zarar gibi görünen delme 79’da gerekçelenir; diğer eylemler olmuş diye ileri sürülmez.",
+        "optionReview": {
+          "o4": "Başka gemi müdahalesi.",
+          "o3": "71’in delme eylemi.",
+          "o1": "Başka gemi müdahalesi.",
+          "o2": "Başka gemi müdahalesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/71; PDF sayfa 316 (1 tabanlı), basılı sayfa 315",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3705,20 +4754,20 @@
         "question": "Kehf 18/79'da zarar verilen gemi kimlere aitti?",
         "options": [
           {
-            "id": "o1",
-            "text": "Denizde çalışan yoksullara"
-          },
-          {
             "id": "o2",
-            "text": "Bir kralın ordusuna"
+            "text": "Ticaret yapan tüccarlara"
           },
           {
             "id": "o3",
-            "text": "Bir köyün bütün çocuklarına"
+            "text": "Kıyıyı koruyan askerlere"
           },
           {
             "id": "o4",
-            "text": "Saray görevlilerine"
+            "text": "Yük taşıyan kervancılara"
+          },
+          {
+            "id": "o1",
+            "text": "Denizde çalışan yoksullara"
           }
         ],
         "correctOptionId": "o1",
@@ -3726,20 +4775,46 @@
         "explanation": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Kehf",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=79&mode=kuran-meal&sure=18",
-            "locator": "Kehf 18/79",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "18/79; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-79",
+        "reviewedCandidateSha256": "60624813db04377246a0caca0b4c2250496bc89508fc5de14672c985556440cb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Bütün köy çocukları gibi akla yatkın olmayan mülkiyet yerine dört meslek/geçim topluluğu. Kaynağın yoksul deniz çalışanları belirli; hükümdar gemiye sahip değil el koymaktadır.",
+        "optionReview": {
+          "o2": "Başka ticari sahip varsayımı.",
+          "o3": "Başka askerî sahip varsayımı.",
+          "o4": "Başka taşıma işi sahibi varsayımı.",
+          "o1": "79’un yoksul çalışanları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/79; PDF sayfa 317 (1 tabanlı), basılı sayfa 316",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3822,8 +4897,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-94",
+        "reviewedCandidateSha256": "ee05cb42a5c55d5984a56b69dc2c93057ce9286b02135f4d1d3ebeec960f6805",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört topluluk çifti. 94’te şikâyetin konusu Ye’cûc/Me’cûc, Zülkarneyn kimliği tartışmasına girmiyor; diğer çiftler gerçek topluluklar.",
+        "optionReview": {
+          "o1": "Başka tarihî çift.",
+          "o2": "Başka tarihî çift.",
+          "o3": "94’ün şikâyet edilen iki topluluğu.",
+          "o4": "Başka Kur’an toplulukları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/94; PDF sayfa 318 (1 tabanlı), basılı sayfa 317",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3906,8 +5005,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-kehf-109",
+        "reviewedCandidateSha256": "d3524b05bc00573274081a42271755e89c998293e4739018059711a45539cfee",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Kur’anî tabiat benzetmesi. Söz yazma/mürekkep bağlantısı kavramsal bilgi sağlayabilir; üç saçma veya olumsuz seçenek yok. 109’un deniz yetmezliği özel.",
+        "optionReview": {
+          "o4": "Başka benzetme.",
+          "o1": "109’un açık mürekkep örneği.",
+          "o2": "Başka benzetme.",
+          "o3": "Başka benzetme."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "18/109; PDF sayfa 319 (1 tabanlı), basılı sayfa 318",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3990,8 +5113,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-neml-15",
+        "reviewedCandidateSha256": "73a87cb9eb0365601d6dc3504ae6c8a57848d2346d662e75c17b764cfc45ac0a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört peygamber ikilisi. 15’in Dâvûd/Süleyman’a ilim verilmesi; diğer peygamberler bilgisiz denmiyor, belirli pasaj çifti soruluyor.",
+        "optionReview": {
+          "o1": "Başka peygamber çifti.",
+          "o2": "Başka peygamber çifti.",
+          "o3": "Başka peygamber çifti.",
+          "o4": "15’in iki peygamberi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/15; PDF sayfa 398 (1 tabanlı), basılı sayfa 397",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4038,23 +5185,23 @@
         ]
       },
       "after": {
-        "question": "Neml 27/16'da Hz. Süleyman'ın öğrendiklerini söylediği iletişim bilgisi nedir?",
+        "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
         "options": [
           {
-            "id": "o1",
-            "text": "Taşların yaşı"
+            "id": "o2",
+            "text": "İnsanların lehçeleri"
           },
           {
-            "id": "o2",
-            "text": "Gezegenlerin yörüngesi"
+            "id": "o4",
+            "text": "Cinlerin konuşması"
           },
           {
             "id": "o3",
             "text": "Kuşların dili"
           },
           {
-            "id": "o4",
-            "text": "Denizlerin derinliği"
+            "id": "o1",
+            "text": "Karıncaların dili"
           }
         ],
         "correctOptionId": "o3",
@@ -4062,20 +5209,51 @@
         "explanation": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Neml",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=kuran-meal&sure=27",
-            "locator": "Neml 27/16",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "27/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-neml-16",
+        "reviewedCandidateSha256": "34d59e4977791d56b2f68a25d043cb32c6de2e52edff9b33a8bfd8164ac0d5d7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İletişim diyen köke karşı üç iletişim dışı bilgi kaldırıldı. Dört dil/konuşma alanı; karıncayı da 19’da anlar, fakat 16’nın kendisine öğretildiğini söylediği lafız kuş dilidir.",
+        "optionReview": {
+          "o2": "Başka dil alanı.",
+          "o4": "Başka konuşma alanı.",
+          "o3": "16’nın açık kuş dili.",
+          "o1": "18–19’daki farklı anlama olayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/16; PDF sayfa 398 (1 tabanlı), basılı sayfa 397",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4122,44 +5300,75 @@
         ]
       },
       "after": {
-        "question": "Neml 27/18'de diğer karıncaları yuvalarına girmeleri için uyaran canlı hangisidir?",
+        "question": "Neml 27/18’de vadideki canlıları yuvalarına çağıran hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bir karınca"
-          },
-          {
-            "id": "o2",
-            "text": "Bir hüdhüd"
-          },
-          {
             "id": "o3",
-            "text": "Bir balık"
+            "text": "Çekirge"
           },
           {
             "id": "o4",
-            "text": "Bir deve"
+            "text": "Örümcek"
+          },
+          {
+            "id": "o1",
+            "text": "Karınca"
+          },
+          {
+            "id": "o2",
+            "text": "Arı"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Bir karınca",
+        "correctAnswer": "Karınca",
         "explanation": "Neml 27/18, karıncanın diğer karıncalara yuvalarına girmelerini söyleyerek Süleyman'ın ordusundan korunmalarını istediğini anlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Neml",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=18&mode=kuran-meal&sure=27",
-            "locator": "Neml 27/18",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "27/18; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Neml 27/18, karıncanın diğer karıncalara yuvalarına girmelerini söyleyerek Süleyman'ın ordusundan korunmalarını istediğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "length-outlier",
+          "detail": "Tek belirgin uzun/kısa seçenek"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-neml-18",
+        "reviewedCandidateSha256": "93c1a16d3e236230304c847b571ce6d3a0b9554cebb415ea1ad7f996c6019020",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Karıncaları uyaran kim diye kökte cevabı tekrarlama kaldırıldı. Dört küçük canlı; sûre adının anlamını bilmek meşru kelime bilgisi, cevabın kökte aynen verilmesi değil.",
+        "optionReview": {
+          "o3": "Başka küçük canlı.",
+          "o4": "Başka küçük canlı.",
+          "o1": "18’deki uyarıcı.",
+          "o2": "Başka küçük canlı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/18; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4210,40 +5419,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Ordusunu dağıtmıştır"
+            "text": "Düşünüp sabır duası etmiştir"
           },
           {
             "id": "o2",
-            "text": "Kuşları uzaklaştırmıştır"
+            "text": "Hüzünlenip bağışlanma dilemiştir"
           },
           {
             "id": "o3",
-            "text": "Yeni şehir kurmuştur"
+            "text": "Sevinip zafer duası etmiştir"
           },
           {
             "id": "o4",
-            "text": "Gülümseyip Allah'a dua etmiştir"
+            "text": "Gülümseyip şükür duası etmiştir"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Gülümseyip Allah'a dua etmiştir",
+        "correctAnswer": "Gülümseyip şükür duası etmiştir",
         "explanation": "Neml 27/19, karıncanın sözünden dolayı Hz. Süleyman'ın gülümseyip Allah'a şükür duasında bulunduğunu bildirir.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Neml",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=19&mode=kuran-meal&sure=27",
-            "locator": "Neml 27/19",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "27/19; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Neml 27/19, karıncanın sözünden dolayı Hz. Süleyman'ın gülümseyip Allah'a şükür duasında bulunduğunu bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-neml-19",
+        "reviewedCandidateSha256": "52e718aa1386061e1305e0855c645cc3f2716c07465d3450dd5f9e91bca7db57",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ordu dağıtma/yeni şehir/kuş uzaklaştırma gibi alakasız işler yerine dört duygusal tepki ve dua birleşimi. 19’un gülümseme ve nimete şükür duası bilinmeli.",
+        "optionReview": {
+          "o1": "Başka duygu/dua birleşimi.",
+          "o2": "Başka duygu/dua birleşimi.",
+          "o3": "Başka duygu/dua birleşimi.",
+          "o4": "19’un iki parçası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/19; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4326,8 +5561,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q66-neml-20",
+        "reviewedCandidateSha256": "35345aef3041ad8e73c761df393c8a778e6eec663ea815add747c9742cf12d0a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek kuş türü. 20 ve 399 dipnotunda hüdhüd/çavuş kuşu tanımı açık; bu eş ad ayrıca yanlış seçenek yapılmadı.",
+        "optionReview": {
+          "o1": "Başka kuş.",
+          "o2": "Başka kuş.",
+          "o3": "20’nin yokluğu sorulan kuşu.",
+          "o4": "Başka kuş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kehf, Neml ve Meryem kıssalarının aynı öğrenme hedefleri önceki paketlerle karşılaştırıldı. 18/45 ile 57/20 aynı bitki benzetmesini içerir; 27/39 ve 40 farklı süre/kimlik hedefleriyle ayrıldı. Banka çapında tekrar/zorluk ve uzman kabulü hâlâ bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/20; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

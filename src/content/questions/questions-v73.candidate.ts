@@ -50118,213 +50118,218 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q64-huneyn-kuman",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Huneyn'deki karşı kuvvetleri komuta eden kişi kimdi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Ebû Cehil"
-      },
-      {
-        "id": "o2",
-        "text": "Ümeyye b. Halef"
+        "id": "o4",
+        "text": "Gaylân b. Seleme"
       },
       {
         "id": "o3",
         "text": "Mâlik b. Avf"
       },
       {
-        "id": "o4",
-        "text": "Ebû Süfyân"
+        "id": "o1",
+        "text": "Düreyd b. Sımme"
+      },
+      {
+        "id": "o2",
+        "text": "Urve b. Mes‘ûd"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Huneyn Gazvesi maddesi Hevâzin ordusunun başında Mâlik b. Avf en-Nasrî bulunduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-        "locator": "Huneyn'de Mâlik b. Avf",
+        "locator": "101–104 ve 112; Tâif 118–119. satırlar",
         "supports": "TDV Huneyn Gazvesi maddesi Hevâzin ordusunun başında Mâlik b. Avf en-Nasrî bulunduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-huneyn-gazvesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-huneyn-gazvesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-huneyn-ordu",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "TDV'ye göre Huneyn Seferi'nde İslâm ordusu yaklaşık kaç kişiydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "50.000"
+        "id": "o4",
+        "text": "16.000"
       },
       {
         "id": "o2",
         "text": "12.000"
       },
       {
-        "id": "o3",
-        "text": "305"
+        "id": "o1",
+        "text": "10.000"
       },
       {
-        "id": "o4",
-        "text": "3.000"
+        "id": "o3",
+        "text": "14.000"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Huneyn Gazvesi maddesi İslâm ordusunun on iki bin kişiyle sefere çıktığını ve iki bininin Mekkelilerden oluştuğunu kaydeder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-        "locator": "Huneyn ordusunun büyüklüğü",
+        "locator": "105–106. satırlar",
         "supports": "TDV Huneyn Gazvesi maddesi İslâm ordusunun on iki bin kişiyle sefere çıktığını ve iki bininin Mekkelilerden oluştuğunu kaydeder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-huneyn-gazvesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-huneyn-gazvesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-huneyn-pusu",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Huneyn Savaşı'nın başında İslâm ordusunun geri çekilmesine neden olan olay hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Dar vadide kurulan pusu"
+        "text": "Dar vadide ok pususuna düşülmesi"
       },
       {
         "id": "o2",
-        "text": "Denizin yükselmesi"
+        "text": "İkmal yolunun düşman tarafından kesilmesi"
       },
       {
         "id": "o3",
-        "text": "Şehrin yıkılması"
+        "text": "Gece baskınında çadırların yakılması"
       },
       {
         "id": "o4",
-        "text": "Büyük bir deprem"
+        "text": "Geri hattın süvari hücumuna uğraması"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Hevâzin birlikleri Huneyn vadisinin dar yerinde pusu kurup ilerleyen müslümanları ok yağmuruna tutmuş, başlangıçta geri çekilmeye yol açmıştır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-        "locator": "Huneyn pususu",
+        "locator": "107–110. satırlar",
         "supports": "Hevâzin birlikleri Huneyn vadisinin dar yerinde pusu kurup ilerleyen müslümanları ok yağmuruna tutmuş, başlangıçta geri çekilmeye yol açmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-huneyn-gazvesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-huneyn-gazvesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-huneyn-kadin",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
-    "question": "Huneyn Seferi'ne katıldığı aktarılan kadın sahâbîlerden biri hangisidir?",
+    "question": "TDV Huneyn Gazvesi maddesinde orduda bulunduğu adıyla belirtilen kadın kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hz. Meryem"
-      },
-      {
         "id": "o2",
-        "text": "Rukıyye bint Muhammed"
+        "text": "Esmâ bint Ebû Bekir"
       },
       {
         "id": "o3",
-        "text": "Âmine bint Vehb"
+        "text": "Şifâ bint Abdullah"
       },
       {
         "id": "o4",
         "text": "Ümmü Süleym"
+      },
+      {
+        "id": "o1",
+        "text": "Hafsa bint Ömer"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Huneyn Gazvesi maddesi Ümmü Umâre, Ümmü'l-Hâris ve Ümmü Süleym'in orduda bulunduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-        "locator": "Huneyn'de kadın sahâbîler",
+        "locator": "105–106. satırlar",
         "supports": "TDV Huneyn Gazvesi maddesi Ümmü Umâre, Ümmü'l-Hâris ve Ümmü Süleym'in orduda bulunduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-huneyn-gazvesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-huneyn-gazvesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-huneyn-sonrasi",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Huneyn'den sonra kaçan düşmanın önemli bir bölümü hangi şehre sığınmıştır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kûfe"
-      },
-      {
-        "id": "o2",
-        "text": "Basra"
-      },
-      {
         "id": "o3",
         "text": "Tâif"
       },
       {
-        "id": "o4",
+        "id": "o1",
+        "text": "Mekke"
+      },
+      {
+        "id": "o2",
         "text": "Medine"
+      },
+      {
+        "id": "o4",
+        "text": "Hayber"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Huneyn Gazvesi maddesi yenilen Hevâzin kuvvetlerinin büyük bölümünün Tâif'e sığındığını ve daha sonra Tâif'in kuşatıldığını anlatır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-        "locator": "Huneyn'den Tâif'e çekilme",
+        "locator": "98 ve 114. satırlar",
         "supports": "TDV Huneyn Gazvesi maddesi yenilen Hevâzin kuvvetlerinin büyük bölümünün Tâif'e sığındığını ve daha sonra Tâif'in kuşatıldığını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-huneyn-gazvesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-huneyn-gazvesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-huneyn-esir",
@@ -50455,45 +50460,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q64-taif-dua",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Tâif Kuşatması sonrasında Hz. Peygamber'in Tâifliler için duasının konusu neydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mallarıyla cezalandırılmaları"
-      },
-      {
-        "id": "o2",
-        "text": "Hiç konuşmamaları"
-      },
-      {
         "id": "o3",
         "text": "Hidayete ermeleri"
       },
       {
+        "id": "o1",
+        "text": "Geçimlerinin genişlemesi"
+      },
+      {
+        "id": "o2",
+        "text": "Hastalarının iyileşmesi"
+      },
+      {
         "id": "o4",
-        "text": "Şehirlerini kaybetmeleri"
+        "text": "Ailelerinin çoğalması"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Tâif maddesi Hz. Peygamber'den Tâif halkına beddua istenince onun hidayetleri için dua ettiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — taif",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/taif",
-        "locator": "Tâifliler için hidayet duası",
+        "locator": "132–137. satırlar",
         "supports": "TDV Tâif maddesi Hz. Peygamber'den Tâif halkına beddua istenince onun hidayetleri için dua ettiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-taif"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-taif",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-medine-eski",
@@ -50539,213 +50545,218 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q64-medine-hicret",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hz. Peygamber'in hicretiyle Medine hangi yeni işlevi kazanmıştır?",
+    "question": "Hicretten sonra İslâm toplumunun ilk siyasî merkezi hangi şehir oldu?",
     "options": [
       {
-        "id": "o1",
-        "text": "İslâm toplumunun siyasî ve dinî merkezi olmak"
-      },
-      {
-        "id": "o2",
-        "text": "Bizans'ın yeni başkenti olmak"
-      },
-      {
         "id": "o3",
-        "text": "Bir deniz limanı kurmak"
+        "text": "Tâif"
       },
       {
         "id": "o4",
-        "text": "Bütün kabileleri dağıtmak"
+        "text": "Hayber"
+      },
+      {
+        "id": "o1",
+        "text": "Medine"
+      },
+      {
+        "id": "o2",
+        "text": "Mekke"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Medine maddesi hicretten sonra şehrin İslâm toplumunun kurumsallaştığı siyasî ve dinî merkez hâline geldiğini anlatır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — medine",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/medine",
-        "locator": "Medine hicret sonrası merkez",
+        "locator": "118 ve 129–136. satırlar",
         "supports": "TDV Medine maddesi hicretten sonra şehrin İslâm toplumunun kurumsallaştığı siyasî ve dinî merkez hâline geldiğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-medine"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-medine",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-medine-ensar",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
     "question": "Medine'deki Müslüman yerli yardımcılar hangi adla anılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Muhacir"
-      },
-      {
-        "id": "o2",
-        "text": "Müellefe-i kulûb"
-      },
-      {
         "id": "o3",
-        "text": "Müstensih"
+        "text": "Müellefe-i kulûb"
       },
       {
         "id": "o4",
         "text": "Ensar"
+      },
+      {
+        "id": "o1",
+        "text": "Muhacirler"
+      },
+      {
+        "id": "o2",
+        "text": "Tulekâ"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Hicret sonrasında Medineli Müslümanlar göçmenlere destek verdikleri için ensar diye anılmıştır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — medine",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/medine",
-        "locator": "Hicret ve ensar",
+        "locator": "129–136. satırlar",
         "supports": "Hicret sonrasında Medineli Müslümanlar göçmenlere destek verdikleri için ensar diye anılmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-medine"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-medine",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-senet-vufud",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hicretin dokuzuncu yılına niçin 'senetü'l-vüfûd' adı verilmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kâbe yeniden yapıldığı için"
-      },
-      {
         "id": "o2",
-        "text": "Bedir Savaşı yaşandığı için"
-      },
-      {
-        "id": "o3",
-        "text": "Medine'ye çok sayıda heyet geldiği için"
+        "text": "Medine’ye muhacirlerin yoğun yerleşmesi"
       },
       {
         "id": "o4",
-        "text": "İlk vahiy geldiği için"
+        "text": "Hac için kafilelerin yoğun hazırlanması"
+      },
+      {
+        "id": "o3",
+        "text": "Medine’ye heyetlerin yoğun gelmesi"
+      },
+      {
+        "id": "o1",
+        "text": "Kabilelere elçilerin yoğun gönderilmesi"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Senetü'l-vüfûd maddesi hicrî 9. yılda Hz. Peygamber'i görmeye gelen heyetler yoğunlaştığı için yılın heyetler yılı diye anıldığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — senetul-vufud",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
-        "locator": "Hicrî 9 heyetler yılı",
+        "locator": "102–111. satırlar",
         "supports": "TDV Senetü'l-vüfûd maddesi hicrî 9. yılda Hz. Peygamber'i görmeye gelen heyetler yoğunlaştığı için yılın heyetler yılı diye anıldığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-senetul-vufud"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-senetul-vufud",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-senet-emr",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "TDV'ye göre hicretin ikinci yılına 'senetü'l-emr' denilmesinin sebebi nedir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Veda haccı"
+        "id": "o4",
+        "text": "Mescid-i Nebevî’nin açılması"
       },
       {
         "id": "o2",
         "text": "Savaşa izin verilmesi"
       },
       {
-        "id": "o3",
-        "text": "Mekke'nin fethedilmesi"
+        "id": "o1",
+        "text": "Orucun farz kılınması"
       },
       {
-        "id": "o4",
-        "text": "Tebük seferi"
+        "id": "o3",
+        "text": "İlk ezanın okunması"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Senetü'l-vüfûd maddesi hicretin ikinci yılına savaş izninin verilmesi sebebiyle senetü'l-emr adı verildiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — senetul-vufud",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
-        "locator": "Hicrî 2 senetü'l-emr",
+        "locator": "102–103. satırlar",
         "supports": "TDV Senetü'l-vüfûd maddesi hicretin ikinci yılına savaş izninin verilmesi sebebiyle senetü'l-emr adı verildiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-senetul-vufud"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-senetul-vufud",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-senet-fetih",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hicretin sekizinci yılına verilen 'senetü'l-feth' adı hangi olayla bağlantılıdır?",
     "options": [
       {
+        "id": "o4",
+        "text": "Şam’ın alınması"
+      },
+      {
         "id": "o1",
-        "text": "Mekke'nin fethi"
+        "text": "Mekke’nin alınması"
       },
       {
         "id": "o2",
-        "text": "Hayber Savaşı"
+        "text": "Hayber’in alınması"
       },
       {
         "id": "o3",
-        "text": "Bedir Savaşı"
-      },
-      {
-        "id": "o4",
-        "text": "Akabe Biatı"
+        "text": "Kudüs’ün alınması"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Senetü'l-vüfûd maddesi hicrî sekizinci yıla Mekke'nin fethi sebebiyle fetih yılı adının verildiğini açıklar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — senetul-vufud",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
-        "locator": "Hicrî 8 fetih yılı",
+        "locator": "102–105. satırlar",
         "supports": "TDV Senetü'l-vüfûd maddesi hicrî sekizinci yıla Mekke'nin fethi sebebiyle fetih yılı adının verildiğini açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak pasajı ve tarih/olay bilgisi doğruluk ön eşleştirmesi; bağımsız siyer uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q64-siyer-senetul-vufud"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q64-siyer-senetul-vufud",
+    "reviewedAt": undefined
   },
   {
     "id": "q64-veda-tek",
@@ -51010,23 +51021,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "İsrâ 17/28'de yardım edemeyen kişinin ihtiyaç sahibine ne söylemesi öğütlenir?",
+    "question": "İsrâ 17/28’in Kur’an Yolu mealinde yardım edemeyenin söyleyeceği sözün hangi niteliği belirtilir?",
     "options": [
       {
         "id": "o4",
-        "text": "Yardım için karşılık belirleyen söz"
+        "text": "Bilgilendirici"
       },
       {
         "id": "o2",
-        "text": "Kolaylaştırıcı ve gönül alıcı söz"
+        "text": "Rahatlatıcı"
       },
       {
         "id": "o1",
-        "text": "Borcu yazıyla kayda geçiren söz"
+        "text": "Şükrettirici"
       },
       {
         "id": "o3",
-        "text": "Geçmiş iyilikleri hatırlatan söz"
+        "text": "Uyarıcı"
       }
     ],
     "correctOptionId": "o2",
@@ -51036,15 +51047,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 17/28; PDF sayfa 298 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Kolaylaştırıcı ve gönül alıcı söz (doğrudan kaynak alıntısı değildir).",
+        "locator": "17/28; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "İsrâ 17/28, ihtiyaç sahibine o anda yardım edemeyen kişinin dahi incitmek yerine gönül alıcı sözlerle davranmasını öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-17",
     "reviewedAt": undefined
   },
@@ -51053,7 +51064,7 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "İsrâ 17/30'da rızıkla ilgili hangi iki karşıt ilâhî tasarruf anılır?",
+    "question": "İsrâ 17/30'a göre rızkı dilediğine genişleten veya daraltan kimdir?",
     "options": [
       {
         "id": "o1",
@@ -51061,15 +51072,15 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "Yaratmak ve yeniden diriltmek"
+        "text": "Yükseltmek ve alçaltmak"
       },
       {
         "id": "o3",
-        "text": "Bağışlamak ve cezalandırmak"
+        "text": "Güldürmek ve ağlatmak"
       },
       {
         "id": "o4",
-        "text": "Yol göstermek ve uyarmak"
+        "text": "Diriltmek ve öldürmek"
       }
     ],
     "correctOptionId": "o1",
@@ -51079,15 +51090,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 17/30; PDF sayfa 298 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Genişletmek ve daraltmak (doğrudan kaynak alıntısı değildir).",
+        "locator": "17/30; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "İsrâ 17/30, rızkın Allah'ın bilgisi ve hikmeti çerçevesinde genişletildiğini veya daraltıldığını bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-17",
     "reviewedAt": undefined
   },
@@ -51225,41 +51236,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "İsrâ 17/34'te yetim malına yaklaşmanın hangi amacı taşıması istenir?",
+    "question": "İsrâ 17/34’te yetim malıyla ilgili uyarının ardından hangi yükümlülük hatırlatılır?",
     "options": [
       {
         "id": "o4",
-        "text": "Malı borçlara teminat göstermek"
+        "text": "Konuşurken sesi alçaltmak"
       },
       {
         "id": "o1",
-        "text": "Yetimin yararını gözetmek"
+        "text": "Verilen sözü yerine getirmek"
       },
       {
         "id": "o2",
-        "text": "Mirasçılar arasında eşit paylaşmak"
+        "text": "Ölçüyü tam tutmak"
       },
       {
         "id": "o3",
-        "text": "Malı bağışlayıp tasfiye etmek"
+        "text": "Yoksula yemek vermek"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "İsrâ 17/34, yetim malına ancak onun yararını gözeten en iyi yolla yaklaşılmasını ve verilen sözlere bağlı kalınmasını emreder.",
+    "explanation": "İsrâ 17/34, yetimin malını onun yararı gözetilerek korumayı ve ahde vefa göstermeyi emreder; âyetin ikinci kısmı verilen sözün sorumluluk doğurduğunu hatırlatır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 17/34; PDF sayfa 298 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Yetimin yararını gözetmek (doğrudan kaynak alıntısı değildir).",
+        "locator": "17/34; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "İsrâ 17/34, yetimin malını onun yararı gözetilerek korumayı ve ahde vefa göstermeyi emreder; âyetin ikinci kısmı verilen sözün sorumluluk doğurduğunu hatırlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-17",
     "reviewedAt": undefined
   },
@@ -51268,23 +51279,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "İsrâ 17/35'te ölçü ve tartıda hangi davranış istenir?",
+    "question": "İsrâ 17/35’te ticarî işlemle ilgili hangi iki öğüt birlikte yer alır?",
     "options": [
       {
         "id": "o3",
-        "text": "Yolcunun ihtiyacını gidermek"
+        "text": "Emaneti korumak ve borçluya süre vermek"
       },
       {
         "id": "o4",
-        "text": "Ölçüyü tam tutup doğru tartmak"
+        "text": "Ölçüyü tam tutmak ve doğru tartmak"
       },
       {
         "id": "o1",
-        "text": "Borcu yazıyla kayda geçirmek"
+        "text": "Borcu yazmak ve şahit tutmak"
       },
       {
         "id": "o2",
-        "text": "Şahitleri tarafsız seçmek"
+        "text": "Rızayı gözetmek ve verilen sözü tutmak"
       }
     ],
     "correctOptionId": "o4",
@@ -51294,15 +51305,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 17/35; PDF sayfa 299 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Ölçüyü tam tutup doğru tartmak (doğrudan kaynak alıntısı değildir).",
+        "locator": "17/35; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "İsrâ 17/35, ölçünün tam tutulmasını ve doğru teraziyle tartılmasını, bunun daha iyi sonuç verdiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-17",
     "reviewedAt": undefined
   },
@@ -51311,7 +51322,7 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "İsrâ 17/36'da bilgiyle ilgili hangi davranış yasaklanır?",
+    "question": "İsrâ 17/36’nın ilk cümlesinde hangi davranış yasaklanır?",
     "options": [
       {
         "id": "o3",
@@ -51319,15 +51330,15 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o1",
-        "text": "Bilgiyi başkasına danışmak"
+        "text": "Bildiği gerçeği gizlemek"
       },
       {
         "id": "o2",
-        "text": "Duyduğu haberi araştırmak"
+        "text": "Yalan şahitlik yapmak"
       },
       {
         "id": "o4",
-        "text": "Delile göre karar vermek"
+        "text": "Başkasının gizlisini araştırmak"
       }
     ],
     "correctOptionId": "o3",
@@ -51337,15 +51348,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 17/36; PDF sayfa 299 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Bilmediği şeyin peşine düşmek (doğrudan kaynak alıntısı değildir).",
+        "locator": "17/36; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "İsrâ 17/36, insanın kesin bilgiye sahip olmadığı şeyin peşine düşmemesini; işitme, görme ve gönlün sorumlu tutulacağını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-17",
     "reviewedAt": undefined
   },
@@ -51354,41 +51365,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "İsrâ 17/37'de yeryüzünde hangi yürüyüş tutumu eleştirilir?",
+    "question": "İsrâ 17/37’de kibirli yürüyen insanın neyi yaramayacağı hatırlatılır?",
     "options": [
       {
         "id": "o2",
-        "text": "Kibirli yürümek"
+        "text": "Yeri"
       },
       {
         "id": "o1",
-        "text": "Aceleyle yürümek"
+        "text": "Göğü"
       },
       {
         "id": "o3",
-        "text": "Yavaş yürümek"
+        "text": "Ufku"
       },
       {
         "id": "o4",
-        "text": "Sessiz yürümek"
+        "text": "Denizi"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "İsrâ 17/37, insana yeryüzünde böbürlenerek yürümemesini öğütleyerek kibirli davranışın sınırını hatırlatır.",
+    "explanation": "İsrâ 17/37, böbürlenerek yürüyen insana yeri yaramayacağını ve dağlarla boy ölçüşemeyeceğini hatırlatarak kibrin temelsizliğini anlatır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 17/37; PDF sayfa 299 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Kibirli yürümek (doğrudan kaynak alıntısı değildir).",
+        "locator": "17/37; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "İsrâ 17/37, böbürlenerek yürüyen insana yeri yaramayacağını ve dağlarla boy ölçüşemeyeceğini hatırlatarak kibrin temelsizliğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-17",
     "reviewedAt": undefined
   },
@@ -51397,23 +51408,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Furkân 25/63'te Rahmân'ın kullarının yeryüzündeki yürüyüşü nasıl anlatılır?",
+    "question": "Furkân 25/63’te Rahmân’ın kullarının yeryüzündeki yürüyüşü hangi özellikle anlatılır?",
     "options": [
       {
         "id": "o4",
-        "text": "Gösterişli biçimde"
+        "text": "Kanaat"
       },
       {
         "id": "o1",
-        "text": "Alçak gönüllü biçimde"
+        "text": "Tevazu"
       },
       {
         "id": "o2",
-        "text": "Aceleci adımlarla"
+        "text": "Sabır"
       },
       {
         "id": "o3",
-        "text": "Kararsız adımlarla"
+        "text": "Tevekkül"
       }
     ],
     "correctOptionId": "o1",
@@ -51423,15 +51434,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 25/63; PDF sayfa 384 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Alçak gönüllü biçimde (doğrudan kaynak alıntısı değildir).",
+        "locator": "25/63; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-25",
     "reviewedAt": undefined
   },
@@ -51480,68 +51491,69 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q65-furkan-65",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Furkân 25/65'te Rahmân'ın kulları Allah'tan hangi azabı uzaklaştırmasını diler?",
     "options": [
       {
-        "id": "o1",
-        "text": "Uzun yolculuğu"
-      },
-      {
-        "id": "o2",
-        "text": "Zor matematik sorularını"
-      },
-      {
         "id": "o3",
         "text": "Cehennem azabını"
       },
       {
+        "id": "o1",
+        "text": "Fırtına azabını"
+      },
+      {
+        "id": "o2",
+        "text": "Tufan azabını"
+      },
+      {
         "id": "o4",
-        "text": "Dünyevî iş yorgunluğunu"
+        "text": "Kavurucu sıcak azabını"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Furkân 25/65, kulların cehennem azabının kendilerinden uzak tutulmasını istemelerini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Furkân 25/65",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=65&mode=kuran-meal&sure=25",
-        "locator": "Furkân 25/65",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "25/65; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Furkân 25/65, kulların cehennem azabının kendilerinden uzak tutulmasını istemelerini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayet metniyle kavram ve şık kontrolü; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q65-sure-25"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q65-sure-25",
+    "reviewedAt": undefined
   },
   {
     "id": "q65-furkan-66",
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Furkân 25/66'da cehennem için hangi değerlendirme yapılır?",
+    "question": "Furkân 25/66’nın mealinde cehennemin hangi yönü kötü olarak nitelendirilir?",
     "options": [
       {
         "id": "o3",
-        "text": "Kapıları kapalı bir yer"
+        "text": "Yakıtının insan ve taşlar olması"
       },
       {
         "id": "o4",
-        "text": "Yedi kapılı bir mekân"
+        "text": "Görevlilerin sert ve güçlü oluşu"
       },
       {
         "id": "o2",
-        "text": "Kötü bir durak ve konak"
+        "text": "Yerleşme ve kalma yeri oluşu"
       },
       {
         "id": "o1",
-        "text": "Derin bir uçurum"
+        "text": "Girenlerin birbirini suçlaması"
       }
     ],
     "correctOptionId": "o2",
@@ -51551,15 +51563,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 25/66; PDF sayfa 384 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Kötü bir durak ve konak (doğrudan kaynak alıntısı değildir).",
+        "locator": "25/66; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Furkân 25/66, azap yurdunun kötü bir kalma ve konaklama yeri olduğunu vurgulayan ifadeler içerir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-25",
     "reviewedAt": undefined
   },
@@ -51568,23 +51580,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Furkân 25/67'de dengeli harcamanın iki ucundaki tutumlar hangileridir?",
+    "question": "Furkân 25/67’de harcayan kulların tutumu nasıl tanımlanır?",
     "options": [
       {
         "id": "o4",
-        "text": "Biriktirme ve yatırım yapma"
+        "text": "Harcamada yakın çevreyi önceleyen"
       },
       {
         "id": "o1",
-        "text": "İsraf ve cimrilik"
+        "text": "İsrafla cimrilik arasında dengeli"
       },
       {
         "id": "o2",
-        "text": "Gösteriş ve başa kakma"
+        "text": "Gelir arttıkça daha çok biriktiren"
       },
       {
         "id": "o3",
-        "text": "Borçlanma ve alacaklı olma"
+        "text": "Borç vermeyi bağışa tercih eden"
       }
     ],
     "correctOptionId": "o1",
@@ -51594,15 +51606,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 25/67; PDF sayfa 384 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: İsraf ve cimrilik (doğrudan kaynak alıntısı değildir).",
+        "locator": "25/67; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Furkân 25/67, harcama yaparken israf ve cimrilikten kaçınıp bunların arasında dengeli davranılmasını öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-25",
     "reviewedAt": undefined
   },
@@ -51737,45 +51749,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q65-furkan-74",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Furkân 25/74'te aileleri hakkında dua eden kullar ne isterler?",
+    "question": "Furkân 25/74’te eş ve çocuklar için hangi dilek açıkça yer alır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Eş ve çocuklarının göz aydınlığı olmasını"
-      },
-      {
         "id": "o2",
-        "text": "Yalnız servet artışını"
+        "text": "Helâl ve bereketli rızık bulmaları"
       },
       {
         "id": "o3",
-        "text": "Savaşlarda zaferi"
+        "text": "Sağlıklı ve uzun ömür sürmeleri"
       },
       {
         "id": "o4",
-        "text": "Herkesten üstün soy verilmesini"
+        "text": "Bilgi ve tecrübelerini artırmaları"
+      },
+      {
+        "id": "o1",
+        "text": "Göz aydınlığı ve mutluluk olmaları"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Furkân 25/74",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=74&mode=kuran-meal&sure=25",
-        "locator": "Furkân 25/74",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "25/74; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Furkân 25/74, eşlerin ve çocukların göz aydınlığı olmasını ve takvâ sahiplerine örnek olmayı konu alan duayı içerir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayet metniyle kavram ve şık kontrolü; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q65-sure-25"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q65-sure-25",
+    "reviewedAt": undefined
   },
   {
     "id": "q65-furkan-75",
@@ -51786,15 +51799,15 @@ export const questionsV73Candidate: readonly Question[] = [
     "options": [
       {
         "id": "o1",
-        "text": "Dünyada geniş rızık"
+        "text": "Amel kitabının sağdan verilmesi"
       },
       {
         "id": "o2",
-        "text": "Uzun ve bereketli ömür"
+        "text": "Hesabın kolaylaştırılması"
       },
       {
         "id": "o3",
-        "text": "İnsanlar arasında itibar"
+        "text": "Yüzlerin mutlulukla aydınlanması"
       },
       {
         "id": "o4",
@@ -51808,59 +51821,60 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 25/75; PDF sayfa 385 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Yüce cennet makamları (doğrudan kaynak alıntısı değildir).",
+        "locator": "25/75; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Furkân 25/75, sabreden kulların cennette yüksek makamlarla karşılanacağını ve selâmla müjdeleneceğini ifade eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-25",
     "reviewedAt": undefined
   },
   {
     "id": "q65-furkan-77",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Furkân 25/77'de Allah katındaki değeriyle bağlantılı olarak hangi davranış vurgulanır?",
+    "question": "Furkân 25/77’nin Kur’an Yolu mealinde insana verilen değer hangi ifadeyle ilişkilendirilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Maddi gösteriş"
-      },
-      {
-        "id": "o2",
-        "text": "Ticareti gizleme"
+        "id": "o4",
+        "text": "Adalet ve merhamet"
       },
       {
         "id": "o3",
         "text": "Dua ve kulluk"
       },
       {
-        "id": "o4",
-        "text": "Soyla övünme"
+        "id": "o1",
+        "text": "Sabır ve metanet"
+      },
+      {
+        "id": "o2",
+        "text": "İnfak ve cömertlik"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Furkân 25/77, insana verilen değeri dua ve kullukla ilişkilendiren bir uyarıyla sûrenin kapanışını yapar.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Furkân 25/77",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=77&mode=kuran-meal&sure=25",
-        "locator": "Furkân 25/77",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "25/77; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Furkân 25/77, insana verilen değeri dua ve kullukla ilişkilendiren bir uyarıyla sûrenin kapanışını yapar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayet metniyle kavram ve şık kontrolü; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q65-sure-25"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q65-sure-25",
+    "reviewedAt": undefined
   },
   {
     "id": "q65-hucurat-1",
@@ -52081,23 +52095,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Hucurât 49/8'de iman sevgisi hangi ilâhî kavramlarla ilişkilendirilir?",
+    "question": "Hucurât 49/8’de iman sevgisi hangi iki kavramla açıklanır?",
     "options": [
       {
         "id": "o2",
-        "text": "Bir imtihan ve sorumluluk"
+        "text": "İmtihan ve sorumluluk"
       },
       {
         "id": "o3",
-        "text": "Bir emanet ve şahitlik"
+        "text": "Emanet ve şahitlik"
       },
       {
         "id": "o4",
-        "text": "Bir vaad ve uyarı"
+        "text": "Vaad ve uyarı"
       },
       {
         "id": "o1",
-        "text": "Allah'tan bir lütuf ve nimet"
+        "text": "Lütuf ve nimet"
       }
     ],
     "correctOptionId": "o1",
@@ -52107,59 +52121,60 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 49/8; PDF sayfa 549 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Allah'tan bir lütuf ve nimet (doğrudan kaynak alıntısı değildir).",
+        "locator": "49/8; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Hucurât 49/8, imanın gönüllerde güzelleştirilmesini Allah'tan gelen lütuf ve nimet olarak tanımlar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-49",
     "reviewedAt": undefined
   },
   {
     "id": "q65-hucurat-9",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Hucurât 49/9'da iki mümin topluluk çatıştığında öncelikle ne yapılması öğütlenir?",
+    "question": "Hucurât 49/9’da çatışan toplulukları barıştırırken hangi ölçü açıkça vurgulanır?",
     "options": [
       {
         "id": "o1",
-        "text": "Çatışmayı artırmak"
+        "text": "Merhamet"
       },
       {
         "id": "o2",
-        "text": "Hepsini sürgün etmek"
+        "text": "Sadakat"
       },
       {
         "id": "o3",
-        "text": "Sadece izlemek"
+        "text": "Kanaat"
       },
       {
         "id": "o4",
-        "text": "Aralarını düzeltmek"
+        "text": "Adalet"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Hucurât 49/9, mümin gruplar arasındaki çatışmada adaletle barıştırma çabasını emreder.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Hucurât 49/9",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=49",
-        "locator": "Hucurât 49/9",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "49/9; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Hucurât 49/9, mümin gruplar arasındaki çatışmada adaletle barıştırma çabasını emreder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayet metniyle kavram ve şık kontrolü; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q65-sure-49"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q65-sure-49",
+    "reviewedAt": undefined
   },
   {
     "id": "q65-hucurat-14",
@@ -52424,23 +52439,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Hadîd 57/18'de sadaka veren erkek ve kadınlar için hangi müjde yer alır?",
+    "question": "Hadîd 57/18’de karşılıksız yardım edenlere verilecek karşılık nasıl anlatılır?",
     "options": [
       {
         "id": "o2",
-        "text": "Ömürlerinin uzatılması"
+        "text": "Gizlice ve insanlar duymadan"
       },
       {
         "id": "o3",
-        "text": "Mallarının dünyada artması"
+        "text": "Dünyada ve sağlıklı bir ömürle"
       },
       {
         "id": "o4",
-        "text": "İnsanların onlara imrenmesi"
+        "text": "Gecikmeden ve aynı miktarda"
       },
       {
         "id": "o1",
-        "text": "Karşılıklarının katlanması"
+        "text": "Katlanarak ve değerli ödülle"
       }
     ],
     "correctOptionId": "o1",
@@ -52450,15 +52465,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 57/18; PDF sayfa 577 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Karşılıklarının katlanması (doğrudan kaynak alıntısı değildir).",
+        "locator": "57/18; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Hadîd 57/18, sadaka veren erkek ve kadınların karşılıklarının kat kat artırılacağını ve kendilerine değerli ödül verileceğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q65-sure-57",
     "reviewedAt": undefined
   },
@@ -52763,178 +52778,182 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-kehf-16",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kehf 18/16'da gençlerin inançlarını korumak için seçtikleri yer neresidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mağara"
-      },
-      {
         "id": "o2",
-        "text": "Saray"
+        "text": "Sığınak kulesi"
       },
       {
         "id": "o3",
-        "text": "Pazar"
+        "text": "Dağ köyü"
       },
       {
         "id": "o4",
-        "text": "Tersane"
+        "text": "Orman içi"
+      },
+      {
+        "id": "o1",
+        "text": "Mağara"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Kehf 18/16, gençlerin Allah'tan başkasına kulluktan uzaklaşarak mağaraya sığınma kararını anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/16",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/16, gençlerin Allah'tan başkasına kulluktan uzaklaşarak mağaraya sığınma kararını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-18",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Kehf 18/18'de mağara gençlerinin yanındaki köpeğin konumu nasıl tasvir edilir?",
+    "question": "Kehf 18/18’de gençlerin köpeği nerede tasvir edilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Bir geminin güvertesinde"
+        "text": "Mağaranın iç kısmında"
       },
       {
         "id": "o2",
-        "text": "Dağın zirvesinde"
+        "text": "Mağaranın üst yamacında"
       },
       {
         "id": "o3",
-        "text": "Kent pazarında"
+        "text": "Mağaranın alt yamacında"
       },
       {
         "id": "o4",
-        "text": "Girişte ön ayaklarını uzatmış hâlde"
+        "text": "Mağaranın girişinde"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Kehf 18/18, mağara gençleri uykudayken köpeklerinin girişte ön ayaklarını uzatmış durumda olduğunu bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=18&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/18",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/18; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/18, mağara gençleri uykudayken köpeklerinin girişte ön ayaklarını uzatmış durumda olduğunu bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-19",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kehf 18/19'da gençlerden biri yiyecek almak için şehre neyle gönderilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Kılıç ile"
+        "text": "Altın para ile"
       },
       {
         "id": "o2",
-        "text": "Mühürlü askerî emirle"
+        "text": "Bakır para ile"
+      },
+      {
+        "id": "o4",
+        "text": "Demir para ile"
       },
       {
         "id": "o3",
         "text": "Gümüş para ile"
-      },
-      {
-        "id": "o4",
-        "text": "Altın taç ile"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Kehf 18/19'da mağara gençleri içlerinden birini yanlarındaki gümüş parayla şehre yiyecek almaya göndermeyi kararlaştırır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=19&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/19",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/19; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/19'da mağara gençleri içlerinden birini yanlarındaki gümüş parayla şehre yiyecek almaya göndermeyi kararlaştırır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-23",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Kehf 18/23-24'te gelecek için bir iş yapmayı söylerken hangi kayıt hatırlatılır?",
+    "question": "Kehf 18/23–24’te yarın yapılacak bir iş için hangi ifade hatırlatılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Başka tanrılara başvurmak"
+        "id": "o2",
+        "text": "Allah izin verirse"
       },
       {
-        "id": "o2",
-        "text": "Allah dilerse demek"
+        "id": "o1",
+        "text": "Allah’a şükürler olsun"
       },
       {
         "id": "o3",
-        "text": "Yalnız kendine güvenmek"
+        "text": "Allah’tan bağışlanma dilerim"
       },
       {
         "id": "o4",
-        "text": "Sürekli başkalarını suçlamak"
+        "text": "Allah her şeyi bilir"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kehf 18/23-24, gelecek bir işi kesin sözle ifade ederken Allah'ın dilemesini anmayı hatırlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=23&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/23",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/23; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/23-24, gelecek bir işi kesin sözle ifade ederken Allah'ın dilemesini anmayı hatırlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-25",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Kehf 18/25'te mağara gençlerinin kalış süresi hangi sayılarla anlatılır?",
+    "question": "Kehf 18/25’in metninde mağarada kalış hangi sayılarla ifade edilir?",
     "options": [
       {
         "id": "o1",
@@ -52942,34 +52961,35 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "Yedi yıl ve ek üç"
+        "text": "Üç yüz yıl ve buna ek yedi"
       },
       {
         "id": "o3",
-        "text": "Kırk yıl ve ek iki"
+        "text": "İki yüz yıl ve buna ek dokuz"
       },
       {
         "id": "o4",
-        "text": "Bin yıl ve ek elli"
+        "text": "İki yüz yıl ve buna ek yedi"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "Kehf 18/25, mağarada kalış süresini üç yüz yıl ve buna ilâveten dokuz yıl olarak aktarır.",
+    "explanation": "Kehf 18/25’in metninde üç yüz yıl ve buna ek dokuz yıl ifadesi bulunur. Kur’an Yolu dipnotu, bunun nakledilen bir görüş mü yoksa doğrudan süre bildirimi mi olduğu konusundaki iki yorumu belirtir; soru metindeki sayıları sorar.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=25&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/25",
-        "supports": "Kehf 18/25, mağarada kalış süresini üç yüz yıl ve buna ilâveten dokuz yıl olarak aktarır.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/25; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Kehf 18/25’in metninde üç yüz yıl ve buna ek dokuz yıl ifadesi bulunur. Kur’an Yolu dipnotu, bunun nakledilen bir görüş mü yoksa doğrudan süre bildirimi mi olduğu konusundaki iki yorumu belirtir; soru metindeki sayıları sorar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-28",
@@ -53016,45 +53036,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-kehf-32",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Kehf 18/32'de anlatılan iki bahçe örneğinde temel ürün hangisidir?",
+    "question": "Kehf 18/32’de iki bahçenin esasını hangi ürünün bağları oluşturur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Pamuk"
-      },
-      {
-        "id": "o2",
-        "text": "Zeytin"
+        "id": "o4",
+        "text": "Nar"
       },
       {
         "id": "o3",
         "text": "Üzüm"
       },
       {
-        "id": "o4",
-        "text": "Pirinç"
+        "id": "o1",
+        "text": "Zeytin"
+      },
+      {
+        "id": "o2",
+        "text": "İncir"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Kehf 18/32'de iki bağ sahibi örneğinde üzüm bağları, çevresinde hurmalıklar ve aralarında ekinler bulunması anlatılır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=32&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/32",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/32; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/32'de iki bağ sahibi örneğinde üzüm bağları, çevresinde hurmalıklar ve aralarında ekinler bulunması anlatılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-34",
@@ -53101,45 +53122,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-kehf-39",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Kehf 18/39'da bahçeye girerken söylenmesi tavsiye edilen ifade hangi anlama gelir?",
+    "question": "Kehf 18/39’da bahçeye girerken söylenmesi öğütlenen söz hangi iki anlamı birleştirir?",
     "options": [
       {
+        "id": "o4",
+        "text": "Allah’ı yüceltmek ve O’na hamdetmek"
+      },
+      {
         "id": "o1",
-        "text": "Allah'ın dilediği olur, güç ancak O'nundur"
+        "text": "Allah’ın dilemesi ve gücün O’na ait olması"
       },
       {
         "id": "o2",
-        "text": "Güç yalnız insana aittir"
+        "text": "Allah’a şükretmek ve bağışlanma dilemek"
       },
       {
         "id": "o3",
-        "text": "Her şey sonsuza dek kalır"
-      },
-      {
-        "id": "o4",
-        "text": "Mal hayatı kurtarır"
+        "text": "Allah’ı anmak ve O’na tevekkül etmek"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Kehf 18/39, nimetle karşılaşıldığında Allah'ın dilemesini ve kudretini anan bir ifade söylemeyi öğütler.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=39&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/39",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/39; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/39, nimetle karşılaşıldığında Allah'ın dilemesini ve kudretini anan bir ifade söylemeyi öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-45",
@@ -53272,45 +53294,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-kehf-61",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "hard",
     "question": "Kehf 18/61'de iki denizin birleştiği yerde unutulan hayvan hangisidir?",
     "options": [
+      {
+        "id": "o4",
+        "text": "Midye"
+      },
       {
         "id": "o1",
         "text": "Balık"
       },
       {
         "id": "o2",
-        "text": "Deve"
+        "text": "Kaplumbağa"
       },
       {
         "id": "o3",
-        "text": "Kuş"
-      },
-      {
-        "id": "o4",
-        "text": "Koyun"
+        "text": "Yengeç"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Kehf 18/60-61, Hz. Mûsâ ve yol arkadaşının iki denizin birleştiği yere ulaştıklarında balıklarını unuttuklarını anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=61&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/61",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/61; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/60-61, Hz. Mûsâ ve yol arkadaşının iki denizin birleştiği yere ulaştıklarında balıklarını unuttuklarını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-65",
@@ -53357,45 +53380,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-kehf-71",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
     "question": "Kehf 18/71'de bilge kul gemiye ne yapmıştır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Gemiyi yakmıştır"
-      },
-      {
-        "id": "o2",
-        "text": "Geminin yelkenini boyamıştır"
+        "id": "o4",
+        "text": "Yelkenini indirip toplamıştır"
       },
       {
         "id": "o3",
-        "text": "Gemide delik açmıştır"
+        "text": "Teknesinde delik açmıştır"
       },
       {
-        "id": "o4",
-        "text": "Gemiyi satmıştır"
+        "id": "o1",
+        "text": "Dümenini söküp ayırmıştır"
+      },
+      {
+        "id": "o2",
+        "text": "Halatlarını kesip atmıştır"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Kehf 18/71'de yolculuk yapılan gemiye delik açılması Hz. Mûsâ'nın dikkat çektiği olaylardan biridir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=71&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/71",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/71; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/71'de yolculuk yapılan gemiye delik açılması Hz. Mûsâ'nın dikkat çektiği olaylardan biridir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-77",
@@ -53442,45 +53466,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-kehf-79",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kehf 18/79'da zarar verilen gemi kimlere aitti?",
     "options": [
       {
-        "id": "o1",
-        "text": "Denizde çalışan yoksullara"
-      },
-      {
         "id": "o2",
-        "text": "Bir kralın ordusuna"
+        "text": "Ticaret yapan tüccarlara"
       },
       {
         "id": "o3",
-        "text": "Bir köyün bütün çocuklarına"
+        "text": "Kıyıyı koruyan askerlere"
       },
       {
         "id": "o4",
-        "text": "Saray görevlilerine"
+        "text": "Yük taşıyan kervancılara"
+      },
+      {
+        "id": "o1",
+        "text": "Denizde çalışan yoksullara"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kehf",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=79&mode=kuran-meal&sure=18",
-        "locator": "Kehf 18/79",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "18/79; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kehf 18/79, geminin denizde geçimini sağlayan yoksullara ait olduğunu ve ileride sağlam gemileri alan bir hükümdar bulunduğunu açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-18"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-18",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-kehf-82",
@@ -53697,45 +53722,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-neml-16",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Neml 27/16'da Hz. Süleyman'ın öğrendiklerini söylediği iletişim bilgisi nedir?",
+    "question": "Neml 27/16’da Süleyman kendisine hangi dilin öğretildiğini söyler?",
     "options": [
       {
-        "id": "o1",
-        "text": "Taşların yaşı"
+        "id": "o2",
+        "text": "İnsanların lehçeleri"
       },
       {
-        "id": "o2",
-        "text": "Gezegenlerin yörüngesi"
+        "id": "o4",
+        "text": "Cinlerin konuşması"
       },
       {
         "id": "o3",
         "text": "Kuşların dili"
       },
       {
-        "id": "o4",
-        "text": "Denizlerin derinliği"
+        "id": "o1",
+        "text": "Karıncaların dili"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/16",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/16, Hz. Süleyman'ın kuşların dilinin kendisine öğretildiğini ifade ettiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-17",
@@ -53782,87 +53808,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-neml-18",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Neml 27/18'de diğer karıncaları yuvalarına girmeleri için uyaran canlı hangisidir?",
+    "question": "Neml 27/18’de vadideki canlıları yuvalarına çağıran hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir karınca"
-      },
-      {
-        "id": "o2",
-        "text": "Bir hüdhüd"
-      },
-      {
         "id": "o3",
-        "text": "Bir balık"
+        "text": "Çekirge"
       },
       {
         "id": "o4",
-        "text": "Bir deve"
+        "text": "Örümcek"
+      },
+      {
+        "id": "o1",
+        "text": "Karınca"
+      },
+      {
+        "id": "o2",
+        "text": "Arı"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Neml 27/18, karıncanın diğer karıncalara yuvalarına girmelerini söyleyerek Süleyman'ın ordusundan korunmalarını istediğini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=18&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/18",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/18; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/18, karıncanın diğer karıncalara yuvalarına girmelerini söyleyerek Süleyman'ın ordusundan korunmalarını istediğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-19",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Neml 27/19'da karıncanın sözünü duyan Hz. Süleyman nasıl tepki vermiştir?",
     "options": [
       {
         "id": "o1",
-        "text": "Ordusunu dağıtmıştır"
+        "text": "Düşünüp sabır duası etmiştir"
       },
       {
         "id": "o2",
-        "text": "Kuşları uzaklaştırmıştır"
+        "text": "Hüzünlenip bağışlanma dilemiştir"
       },
       {
         "id": "o3",
-        "text": "Yeni şehir kurmuştur"
+        "text": "Sevinip zafer duası etmiştir"
       },
       {
         "id": "o4",
-        "text": "Gülümseyip Allah'a dua etmiştir"
+        "text": "Gülümseyip şükür duası etmiştir"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Neml 27/19, karıncanın sözünden dolayı Hz. Süleyman'ın gülümseyip Allah'a şükür duasında bulunduğunu bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=19&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/19",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/19; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/19, karıncanın sözünden dolayı Hz. Süleyman'ın gülümseyip Allah'a şükür duasında bulunduğunu bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-20",
@@ -53992,87 +54020,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-neml-24",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Neml 27/24'e göre Sebe' halkı Allah yerine neye secde ediyordu?",
     "options": [
+      {
+        "id": "o4",
+        "text": "Güneşe"
+      },
       {
         "id": "o1",
         "text": "Aya"
       },
       {
         "id": "o2",
-        "text": "Denize"
+        "text": "Venüs’e"
       },
       {
         "id": "o3",
-        "text": "Yıldız haritasına"
-      },
-      {
-        "id": "o4",
-        "text": "Güneşe"
+        "text": "Mars’a"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Neml 27/24, Sebe' halkının Allah'ı bırakıp güneşe secde ettiğinin bildirildiği âyettir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=24&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/24",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/24; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/24, Sebe' halkının Allah'ı bırakıp güneşe secde ettiğinin bildirildiği âyettir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-29",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Neml 27/29'da Sebe' hükümdarı ileri gelenlerine hangi haberden söz eder?",
     "options": [
       {
+        "id": "o3",
+        "text": "Kendisine önemli bir mektup geldiğinden"
+      },
+      {
         "id": "o1",
-        "text": "Bir sel felaketinden"
+        "text": "Kendisine değerli bir armağan geldiğinden"
       },
       {
         "id": "o2",
-        "text": "Yeni bir göçten"
-      },
-      {
-        "id": "o3",
-        "text": "Kendisine değerli bir mektup ulaştığından"
+        "text": "Kendisine dostluk heyeti geldiğinden"
       },
       {
         "id": "o4",
-        "text": "Yeni bir deniz seferinden"
+        "text": "Kendisine ticaret kervanı geldiğinden"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Neml 27/29, Sebe' hükümdarının ileri gelenlerine kendisine değerli bir mektup bırakıldığını söylemesini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/29",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/29; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/29, Sebe' hükümdarının ileri gelenlerine kendisine değerli bir mektup bırakıldığını söylemesini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-30",
@@ -54118,129 +54148,132 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-neml-35",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Neml 27/35'te Sebe' hükümdarı Hz. Süleyman'a ne göndermeyi kararlaştırır?",
     "options": [
+      {
+        "id": "o4",
+        "text": "Ticaret teklifi"
+      },
       {
         "id": "o1",
         "text": "Hediye"
       },
       {
         "id": "o2",
-        "text": "Savaş ilanı"
+        "text": "Mektup"
       },
       {
         "id": "o3",
-        "text": "Yeni bir ordu"
-      },
-      {
-        "id": "o4",
-        "text": "Deniz haritası"
+        "text": "Antlaşma metni"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Neml 27/35, Sebe' hükümdarının Süleyman'a hediye gönderip elçilerin hangi cevapla döneceğine bakacağını anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=35&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/35",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/35; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/35, Sebe' hükümdarının Süleyman'a hediye gönderip elçilerin hangi cevapla döneceğine bakacağını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-39",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "hard",
-    "question": "Neml 27/39'da Sebe' tahtını getirmeyi teklif eden varlık nasıl anılır?",
+    "question": "Neml 27/39’da tahtı Süleyman makamından kalkmadan getirmeyi teklif eden kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir denizci"
-      },
-      {
-        "id": "o2",
-        "text": "Bir tacir"
-      },
-      {
         "id": "o3",
-        "text": "Bir çoban"
+        "text": "Kuşlardan bir haberci"
       },
       {
         "id": "o4",
         "text": "Cinlerden bir ifrit"
+      },
+      {
+        "id": "o1",
+        "text": "İnsanlardan bir bilgin"
+      },
+      {
+        "id": "o2",
+        "text": "Meleklerden bir görevli"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Neml 27/39, cinlerden bir ifritin Süleyman makamından kalkmadan tahtı getirebileceğini söylemesini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=39&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/39",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/39; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/39, cinlerden bir ifritin Süleyman makamından kalkmadan tahtı getirebileceğini söylemesini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-40",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "hard",
-    "question": "Neml 27/40'ta tahtın göz açıp kapayana dek gelmesini sağlayan kişinin özelliği nedir?",
+    "question": "Neml 27/40’ta tahtı göz açıp kapayıncaya kadar getirmeyi teklif eden hangi bilgiyle anılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir devlet veziri olması"
-      },
-      {
-        "id": "o2",
-        "text": "Yüksek sesle bağırması"
+        "id": "o4",
+        "text": "Yapı ve malzeme bilgisi"
       },
       {
         "id": "o3",
-        "text": "Kitaptan bir bilgiye sahip olması"
+        "text": "Kitaptan bir bilgi"
       },
       {
-        "id": "o4",
-        "text": "Bir denizci olması"
+        "id": "o1",
+        "text": "Yol ve menzil bilgisi"
+      },
+      {
+        "id": "o2",
+        "text": "Ticaret ve hesap bilgisi"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Neml 27/40, kitaptan bilgi sahibi birinin tahtı göz açıp kapayana kadar getirmeyi teklif ettiğini aktarır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Neml",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=40&mode=kuran-meal&sure=27",
-        "locator": "Neml 27/40",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "27/40; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Neml 27/40, kitaptan bilgi sahibi birinin tahtı göz açıp kapayana kadar getirmeyi teklif ettiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-27"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-27",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-neml-42",
@@ -54371,45 +54404,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-meryem-3",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Meryem 19/3'e göre Zekeriyyâ Rabbine nasıl seslenmiştir?",
+    "question": "Meryem 19/3’te Zekeriyyâ’nın duasında sesini kullanışı nasıl anlatılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mektupla"
-      },
-      {
-        "id": "o2",
-        "text": "Elçi göndermeden"
+        "id": "o4",
+        "text": "Toplulukla aynı sesle"
       },
       {
         "id": "o3",
-        "text": "Gizlice ve alçak sesle"
+        "text": "Alçak sesle"
       },
       {
-        "id": "o4",
-        "text": "Meydanda bağırarak"
+        "id": "o1",
+        "text": "Yüksek sesle"
+      },
+      {
+        "id": "o2",
+        "text": "Sesini yükseltip alçaltarak"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Meryem 19/3, Hz. Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle dua ettiğini bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Meryem",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=3&mode=kuran-meal&sure=19",
-        "locator": "Meryem 19/3",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/3; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Meryem 19/3, Hz. Zekeriyyâ'nın Rabbine gizli ve alçak bir sesle dua ettiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-19"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-19",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-meryem-7",
@@ -54455,45 +54489,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-meryem-10",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Meryem 19/10'a göre Zekeriyyâ'ya verilen işaret hangisidir?",
+    "question": "Meryem 19/10’da Zekeriyyâ’ya verilen işaret hangi yetisini kullanamamasıdır?",
     "options": [
       {
+        "id": "o4",
+        "text": "Ayaklarıyla yürüme"
+      },
+      {
         "id": "o1",
-        "text": "Üç gece insanlarla konuşamamak"
+        "text": "İnsanlarla konuşma"
       },
       {
         "id": "o2",
-        "text": "Üç gün susuz kalmak"
+        "text": "Gözleriyle görme"
       },
       {
         "id": "o3",
-        "text": "Bir gemi yapmak"
-      },
-      {
-        "id": "o4",
-        "text": "Uzak ülkeye göç etmek"
+        "text": "Kulaklarıyla işitme"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "Meryem 19/10, Zekeriyyâ'ya işaret olarak sağlıklı olduğu hâlde üç gece insanlarla konuşamayacağının bildirildiğini anlatır.",
+    "explanation": "Meryem 19/10’da Zekeriyyâ’ya işaret olarak, sağlıklı olduğu halde insanlarla konuşamayacağı bildirilir. Kur’an Yolu mealinin dipnotunda bu süre üç gece olarak açıklanır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Meryem",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=10&mode=kuran-meal&sure=19",
-        "locator": "Meryem 19/10",
-        "supports": "Meryem 19/10, Zekeriyyâ'ya işaret olarak sağlıklı olduğu hâlde üç gece insanlarla konuşamayacağının bildirildiğini anlatır.",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/10; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Meryem 19/10’da Zekeriyyâ’ya işaret olarak, sağlıklı olduğu halde insanlarla konuşamayacağı bildirilir. Kur’an Yolu mealinin dipnotunda bu süre üç gece olarak açıklanır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-19"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-19",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-meryem-12",
@@ -54583,45 +54618,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-meryem-25",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Meryem 19/25'e göre Meryem'in hurma ağacından yararlanması için ne yapması istenir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Ağacı taşıması"
+        "id": "o2",
+        "text": "Gövdeyi kendine doğru silkelemesi"
       },
       {
-        "id": "o2",
-        "text": "Gövdesini kendine doğru silkelemesi"
+        "id": "o1",
+        "text": "Dalları kendine doğru eğmesi"
       },
       {
         "id": "o3",
-        "text": "Ağacın bütün dallarını kesmesi"
+        "text": "Meyveleri dalından toplaması"
       },
       {
         "id": "o4",
-        "text": "Ağacı yakması"
+        "text": "Yere düşen meyveleri alması"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Meryem 19/25, Meryem'e hurma ağacının gövdesini silkelemesi ve üzerine taze hurmaların dökülmesi yönünde emir verildiğini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Meryem",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=25&mode=kuran-meal&sure=19",
-        "locator": "Meryem 19/25",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/25; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Meryem 19/25, Meryem'e hurma ağacının gövdesini silkelemesi ve üzerine taze hurmaların dökülmesi yönünde emir verildiğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-19"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-19",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-meryem-41",
@@ -54668,87 +54704,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q66-meryem-46",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Meryem 19/46'da Hz. İbrâhim'in babası oğlunu neyle tehdit eder?",
     "options": [
       {
+        "id": "o4",
+        "text": "Taşlatmakla"
+      },
+      {
         "id": "o1",
-        "text": "Denize atmakla"
+        "text": "Hapse attırmakla"
       },
       {
         "id": "o2",
-        "text": "Gemiye bindirmekle"
+        "text": "Kırbaçlatmakla"
       },
       {
         "id": "o3",
-        "text": "Altınlarını almakla"
-      },
-      {
-        "id": "o4",
-        "text": "Taşlatmakla"
+        "text": "Malına el koymakla"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Meryem 19/46, İbrâhim'in babasının putlarına karşı çıkan oğlunu taşlatma tehdidinde bulunduğunu aktarır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Meryem",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=46&mode=kuran-meal&sure=19",
-        "locator": "Meryem 19/46",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/46; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Meryem 19/46, İbrâhim'in babasının putlarına karşı çıkan oğlunu taşlatma tehdidinde bulunduğunu aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-19"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-19",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-meryem-54",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Meryem 19/54'te Hz. İsmâil'in hangi ahlâkî özelliği övülür?",
     "options": [
       {
-        "id": "o1",
-        "text": "Saray kurması"
-      },
-      {
-        "id": "o2",
-        "text": "Savaşçı olması"
+        "id": "o4",
+        "text": "Adaletle hükmetmesi"
       },
       {
         "id": "o3",
         "text": "Sözünde durması"
       },
       {
-        "id": "o4",
-        "text": "Çok serveti olması"
+        "id": "o1",
+        "text": "Emanete riayet etmesi"
+      },
+      {
+        "id": "o2",
+        "text": "Yoksulları gözetmesi"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Meryem 19/54, Hz. İsmâil'in sözünde duran ve peygamber olarak gönderilen biri olduğunu bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Meryem",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=54&mode=kuran-meal&sure=19",
-        "locator": "Meryem 19/54",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "19/54; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Meryem 19/54, Hz. İsmâil'in sözünde duran ve peygamber olarak gönderilen biri olduğunu bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu metnindeki olguya karşı doğru seçenek ve açıklama ön eşleştirmesi; bağımsız dinî uzman onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q66-sure-19"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q66-sure-19",
+    "reviewedAt": undefined
   },
   {
     "id": "q66-meryem-56",
@@ -54794,45 +54832,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-kasas-4",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "Kasas 28/4'te Firavun'un halkına yönelik baskılarından biri nedir?",
+    "question": "Kasas 28/4’te Firavun’un bir topluluğun çocuklarına yönelik baskısı nasıl anlatılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir topluluğun erkek çocuklarını öldürtmesi"
-      },
-      {
         "id": "o2",
-        "text": "Herkese aynı hakları vermesi"
+        "text": "Kızları öldürtüp erkekleri sağ bırakması"
       },
       {
         "id": "o3",
-        "text": "Bütün köleleri serbest bırakması"
+        "text": "Erkek ve kızları birlikte öldürtmesi"
       },
       {
         "id": "o4",
-        "text": "Yoksullara servet dağıtması"
+        "text": "Erkek ve kızları birlikte sürgün etmesi"
+      },
+      {
+        "id": "o1",
+        "text": "Erkekleri öldürtüp kızları sağ bırakması"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Kasas 28/4, Firavun'un ülkesinde halkı gruplara ayırdığını ve bir topluluğun erkek çocuklarını öldürterek zulmettiğini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/4",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=4&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/4",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/4; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/4, Firavun'un ülkesinde halkı gruplara ayırdığını ve bir topluluğun erkek çocuklarını öldürterek zulmettiğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-7",
@@ -54879,45 +54918,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-kasas-9",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/9'da Hz. Mûsâ'nın öldürülmesini istemeyip evlat edinmeyi öneren kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir ticaret kervanı"
-      },
-      {
-        "id": "o2",
-        "text": "Mûsâ'nın kız kardeşi"
+        "id": "o4",
+        "text": "Firavun’un veziri"
       },
       {
         "id": "o3",
-        "text": "Firavun'un karısı"
+        "text": "Firavun’un karısı"
       },
       {
-        "id": "o4",
-        "text": "Firavun'un veziri"
+        "id": "o1",
+        "text": "Mûsâ’nın annesi"
+      },
+      {
+        "id": "o2",
+        "text": "Mûsâ’nın kız kardeşi"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Kasas 28/9, Firavun'un karısının bebeği kendilerine göz aydınlığı olabilecek biri olarak görüp öldürülmemesini söylediğini bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/9",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=9&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/9",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/9; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/9, Firavun'un karısının bebeği kendilerine göz aydınlığı olabilecek biri olarak görüp öldürülmemesini söylediğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-11",
@@ -55007,129 +55047,132 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-kasas-15",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/15'te Hz. Mûsâ'nın karşılaştığı iki kişi ne yapıyordu?",
     "options": [
       {
-        "id": "o1",
-        "text": "Birlikte gemi yapıyordu"
-      },
-      {
-        "id": "o2",
-        "text": "Bir çarşı kuruyordu"
-      },
-      {
         "id": "o3",
-        "text": "Hayvanları besliyordu"
+        "text": "Yolculuk hazırlığı yapıyorlardı"
       },
       {
         "id": "o4",
-        "text": "Birbiriyle kavga ediyordu"
+        "text": "Birbiriyle kavga ediyorlardı"
+      },
+      {
+        "id": "o1",
+        "text": "Birlikte yük taşıyorlardı"
+      },
+      {
+        "id": "o2",
+        "text": "Alışveriş için pazarlık ediyorlardı"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Kasas 28/15, Mûsâ'nın şehre girdiği sırada farklı iki topluluktan iki kişinin kavga ettiğine rastladığını açıklar.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/15",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=15&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/15",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/15; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/15, Mûsâ'nın şehre girdiği sırada farklı iki topluluktan iki kişinin kavga ettiğine rastladığını açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-16",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
     "question": "Kasas 28/16'da yanlışından pişman olan Hz. Mûsâ Allah'tan ne ister?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yeni bir ordu"
+        "id": "o2",
+        "text": "Rızık"
       },
       {
-        "id": "o2",
-        "text": "Daha fazla para"
+        "id": "o4",
+        "text": "Şifa"
       },
       {
         "id": "o3",
         "text": "Bağışlanma"
       },
       {
-        "id": "o4",
-        "text": "Bir gemi"
+        "id": "o1",
+        "text": "Hidayet"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Kasas 28/16, Hz. Mûsâ'nın kendi kendine yanlış yaptığını kabul ettiğini ve Allah'tan bağışlanma istediğini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/16",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=16&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/16",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/16; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/16, Hz. Mûsâ'nın kendi kendine yanlış yaptığını kabul ettiğini ve Allah'tan bağışlanma istediğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-20",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/20'de şehrin uzak tarafından gelen kişi Hz. Mûsâ'yı neden uyarır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Sarayda ziyafet verilmesi"
+        "id": "o4",
+        "text": "Askerlerin onu sürgüne götürmeye gelmesi"
       },
       {
         "id": "o2",
         "text": "İleri gelenlerin onu öldürmeyi planlaması"
       },
       {
-        "id": "o3",
-        "text": "Yeni bir iş teklif edilmesi"
+        "id": "o1",
+        "text": "Firavun’un onu hapse attırmayı istemesi"
       },
       {
-        "id": "o4",
-        "text": "Bir misafir beklenmesi"
+        "id": "o3",
+        "text": "Halkın onu şehirden çıkarmaya hazırlanması"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kasas 28/20, şehrin uzak tarafından gelen bir adamın Mûsâ'yı ileri gelenlerin onu öldürmek üzere görüş birliğine varması konusunda uyardığını belirtir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/20",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=20&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/20",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/20; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/20, şehrin uzak tarafından gelen bir adamın Mûsâ'yı ileri gelenlerin onu öldürmek üzere görüş birliğine varması konusunda uyardığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-22",
@@ -55175,213 +55218,218 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-kasas-23",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/23'te kuyunun yanında bekleyen iki kadın neden hayvanlarını sulayamıyordu?",
     "options": [
       {
+        "id": "o4",
+        "text": "Çobanların sulamayı bitirmesini beklemeleri"
+      },
+      {
         "id": "o1",
-        "text": "Hayvanları susuz olmadığı için"
+        "text": "Kuyudaki suyun yükselmesini beklemeleri"
       },
       {
         "id": "o2",
-        "text": "Kuyuyu arıyor olmaları"
+        "text": "Hayvanlarının sıraya girmesini beklemeleri"
       },
       {
         "id": "o3",
-        "text": "Yağmur yağdığı için"
-      },
-      {
-        "id": "o4",
-        "text": "Çobanlar ayrılmadan sulamamaları"
+        "text": "Sürü sahibinin geri dönmesini beklemeleri"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Kasas 28/23, iki kadının sürülerini çobanlar çekilinceye kadar sulayamadıklarını, babalarının da yaşlı olduğunu belirttiğini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/23",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=23&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/23",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/23; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/23, iki kadının sürülerini çobanlar çekilinceye kadar sulayamadıklarını, babalarının da yaşlı olduğunu belirttiğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-24",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
     "question": "Kasas 28/24'te Hz. Mûsâ iki kadına nasıl yardımcı olur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kervanlarına katılır"
-      },
-      {
-        "id": "o2",
-        "text": "Çocuklarına ders verir"
-      },
-      {
         "id": "o3",
         "text": "Hayvanlarını sular"
       },
       {
+        "id": "o1",
+        "text": "Hayvanlarını yemler"
+      },
+      {
+        "id": "o2",
+        "text": "Hayvanlarını toplar"
+      },
+      {
         "id": "o4",
-        "text": "Evlerini inşa eder"
+        "text": "Hayvanlarını taşır"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Kasas 28/24, Hz. Mûsâ'nın iki kadının hayvanlarını suladığını ve daha sonra gölgeye çekilip dua ettiğini bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/24",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=24&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/24",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/24; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/24, Hz. Mûsâ'nın iki kadının hayvanlarını suladığını ve daha sonra gölgeye çekilip dua ettiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-26",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/26'da Hz. Mûsâ'yı işe almak için belirtilen iki nitelik nedir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Soylu ve gösterişli olmak"
+        "id": "o4",
+        "text": "Dikkatli ve düzenli olmak"
       },
       {
         "id": "o2",
         "text": "Güçlü ve güvenilir olmak"
       },
       {
-        "id": "o3",
-        "text": "Zengin ve ünlü olmak"
+        "id": "o1",
+        "text": "Bilgili ve tecrübeli olmak"
       },
       {
-        "id": "o4",
-        "text": "Yaşlı ve sessiz olmak"
+        "id": "o3",
+        "text": "Sabırlı ve çalışkan olmak"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Kasas 28/26, iki kadından birinin babasına güçlü ve güvenilir kişiyi işçi tutmasını tavsiye ettiğini anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/26",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=26&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/26",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/26; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/26, iki kadından birinin babasına güçlü ve güvenilir kişiyi işçi tutmasını tavsiye ettiğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-27",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen iş süresinin başlangıcı kaç yıldır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Sekiz yıl"
-      },
-      {
         "id": "o2",
-        "text": "Üç yıl"
+        "text": "Altı yıl"
       },
       {
         "id": "o3",
-        "text": "On beş yıl"
+        "text": "On yıl"
       },
       {
         "id": "o4",
-        "text": "Bir yıl"
+        "text": "On iki yıl"
+      },
+      {
+        "id": "o1",
+        "text": "Sekiz yıl"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Kasas 28/27, Mûsâ'ya sekiz yıl çalışması karşılığında evlilik teklif edildiğini; on yılı tamamlarsa bunun kendi tercihine bırakıldığını belirtir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/27",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=27&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/27",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/27; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/27, Mûsâ'ya sekiz yıl çalışması karşılığında evlilik teklif edildiğini; on yılı tamamlarsa bunun kendi tercihine bırakıldığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-29",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/29'a göre yolculukta Hz. Mûsâ ne gördüğünü ailesine söyler?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir deniz"
-      },
-      {
         "id": "o2",
-        "text": "Bir şehir duvarı"
+        "text": "Bir konak"
       },
       {
         "id": "o3",
-        "text": "Bir sürü deve"
+        "text": "Bir kervan"
       },
       {
         "id": "o4",
         "text": "Bir ateş"
+      },
+      {
+        "id": "o1",
+        "text": "Bir duman"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Kasas 28/29, aile ile yolculuk ederken Mûsâ'nın ateş fark edip oradan haber veya kor getirmeyi umduğunu bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/29",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=29&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/29",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/29; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/29, aile ile yolculuk ederken Mûsâ'nın ateş fark edip oradan haber veya kor getirmeyi umduğunu bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-30",
@@ -55512,45 +55560,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-kasas-40",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Kasas 28/40'a göre Firavun ve ordusunun uğradığı felâket nedir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bir ormana sığınmaları"
-      },
-      {
         "id": "o2",
-        "text": "Kervanlarını kaybetmeleri"
+        "text": "Korkunç sesle yok olmaları"
       },
       {
         "id": "o3",
-        "text": "Bir dağa çıkmaları"
+        "text": "Yerin içine gömülmeleri"
       },
       {
         "id": "o4",
-        "text": "Denize atılıp boğulmaları"
+        "text": "Denizde boğulmaları"
+      },
+      {
+        "id": "o1",
+        "text": "Fırtınada savrulmaları"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Kasas 28/40, Firavun'un ve askerlerinin yakalanıp denize atıldığını; zulmedenlerin akıbetinin düşünülmesi gerektiğini bildirir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Kasas 28/40",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=40&mode=kuran-meal&sure=28",
-        "locator": "Kasas 28/40",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "28/40; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Kasas 28/40, Firavun'un ve askerlerinin yakalanıp denize atıldığını; zulmedenlerin akıbetinin düşünülmesi gerektiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-28"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-28",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-kasas-76",
@@ -55604,11 +55653,11 @@ export const questionsV73Candidate: readonly Question[] = [
     "options": [
       {
         "id": "o3",
-        "text": "Kazancı arttıkça harcamayı aynı ölçüde arttırmak"
+        "text": "Kazancı bölüp yarısını birikime aktarmak"
       },
       {
         "id": "o4",
-        "text": "Malını miras bırakıp yardım işlerini ertelemek"
+        "text": "Borcu kapatıp sonra ortaklığa yönelmek"
       },
       {
         "id": "o2",
@@ -55616,7 +55665,7 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o1",
-        "text": "Önce biriktirip sonra malını bütünüyle dağıtmak"
+        "text": "Geçimi planlayıp kalanını miras için ayırmak"
       }
     ],
     "correctOptionId": "o2",
@@ -55626,15 +55675,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 28/77; PDF sayfa 415 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Âhireti gözetip dünyadan nasibini unutmamak (doğrudan kaynak alıntısı değildir).",
+        "locator": "28/77; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Kasas 28/77, Allah'ın verdiği imkânlarla âhireti kazanmayı ararken dünyadaki payı unutmamayı ve insanlara iyilik etmeyi öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-28",
     "reviewedAt": undefined
   },
@@ -55780,15 +55829,15 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o1",
-        "text": "Yeni bir şekle dönüşeceği"
+        "text": "Değişerek süreceği"
       },
       {
         "id": "o3",
-        "text": "Yerinde korunacağı"
+        "text": "Aynı hâlde kalacağı"
       },
       {
         "id": "o4",
-        "text": "Hüküm verme yetkisi kazanacağı"
+        "text": "Yeniden çoğalacağı"
       }
     ],
     "correctOptionId": "o2",
@@ -55798,15 +55847,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 28/88; PDF sayfa 416 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Yok olacağı (doğrudan kaynak alıntısı değildir).",
+        "locator": "28/88; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Kasas 28/88, Allah'ın zatı dışında her şeyin yok olacağına ve hükmün O'na ait olduğuna dikkat çeker.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-28",
     "reviewedAt": undefined
   },
@@ -55944,23 +55993,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Ankebût 29/8'de anne babaya saygı hangi durumda onların isteğine uymayı gerektirmez?",
+    "question": "Ankebût 29/8’de anne babaya itaat edilmeyeceği açıkça belirtilen istek hangisidir?",
     "options": [
       {
         "id": "o2",
-        "text": "Allah'a ortak koşmayı istediklerinde"
+        "text": "Allah’a ortak koşmak"
       },
       {
         "id": "o1",
-        "text": "Bir yolculuğu ertelemesini istediklerinde"
+        "text": "Yalan şahitlik yapmak"
       },
       {
         "id": "o3",
-        "text": "Bir işte daha fazla çalışmasını istediklerinde"
+        "text": "Emanete hıyanet etmek"
       },
       {
         "id": "o4",
-        "text": "Yakınlarına yardım etmesini istediklerinde"
+        "text": "Haksız kazanç sağlamak"
       }
     ],
     "correctOptionId": "o2",
@@ -55970,15 +56019,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 29/8; PDF sayfa 418 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Allah'a ortak koşmayı istediklerinde (doğrudan kaynak alıntısı değildir).",
+        "locator": "29/8; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Ankebût 29/8, anne babaya iyiliği emreder, fakat Allah'a ortak koşmayı zorlamaları halinde buna itaat edilmemesini söyler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-29",
     "reviewedAt": undefined
   },
@@ -56154,45 +56203,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-ankebut-39",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "hard",
     "question": "Ankebût 29/39'da örnek verilen üç zorba kişi hangileridir?",
     "options": [
+      {
+        "id": "o3",
+        "text": "Kārûn, Hâmân ve Câlût"
+      },
+      {
+        "id": "o4",
+        "text": "Firavun, Hâmân ve Câlût"
+      },
       {
         "id": "o1",
         "text": "Kārûn, Firavun ve Hâmân"
       },
       {
         "id": "o2",
-        "text": "Nûh, Hûd ve Sâlih"
-      },
-      {
-        "id": "o3",
-        "text": "İbrâhim, Lût ve İsmâil"
-      },
-      {
-        "id": "o4",
-        "text": "Hârûn, Dâvûd ve Süleyman"
+        "text": "Kārûn, Firavun ve Câlût"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Ankebût 29/39, Kārûn, Firavun ve Hâmân'ın da uyarıları reddettiklerini ve kibirlendiklerini hatırlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Ankebût 29/39",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=39&mode=kuran-meal&sure=29",
-        "locator": "Ankebût 29/39",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "29/39; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Ankebût 29/39, Kārûn, Firavun ve Hâmân'ın da uyarıları reddettiklerini ve kibirlendiklerini hatırlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-29"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-29",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-ankebut-40",
@@ -56370,41 +56420,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Ankebût 29/46'da Ehl-i kitapla tartışırken nasıl bir yol izlenmesi öğütlenir?",
+    "question": "Ankebût 29/46’da Ehl-i kitapla konuşurken hangi ortak inanç hatırlatılır?",
     "options": [
       {
         "id": "o2",
-        "text": "Kararı kura çekerek vermek"
+        "text": "İki tarafın ibadet vaktinin bir olması"
       },
       {
         "id": "o3",
-        "text": "Konuyu bir sonraki güne ertelemek"
+        "text": "İki tarafın dinî hukukunun bir olması"
       },
       {
         "id": "o4",
-        "text": "En güzel yöntemle tartışmak"
+        "text": "İki tarafın ilâhının bir olması"
       },
       {
         "id": "o1",
-        "text": "Tartışmayı şahitler önünde yapmak"
+        "text": "İki tarafın kıblesinin bir olması"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Ankebût 29/46, zulmedenler dışında Ehl-i kitapla en güzel biçimde tartışmayı ve ortak inancı hatırlatmayı öğütler.",
+    "explanation": "Ankebût 29/46, zulmedenler dışındaki Ehl-i kitapla en güzel yolla konuşmayı ve her iki tarafın ilâhının bir olduğunu hatırlatmayı öğütler.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 29/46; PDF sayfa 423 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: En güzel yöntemle tartışmak (doğrudan kaynak alıntısı değildir).",
+        "locator": "29/46; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Ankebût 29/46, zulmedenler dışındaki Ehl-i kitapla en güzel yolla konuşmayı ve her iki tarafın ilâhının bir olduğunu hatırlatmayı öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-29",
     "reviewedAt": undefined
   },
@@ -56456,41 +56506,41 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Ankebût 29/60'da rızkını biriktiremeyen canlılarla ilgili hangi güvence hatırlatılır?",
+    "question": "Ankebût 29/60’ta rızık güvencesinin ardından Allah’ın hangi iki sıfatı anılır?",
     "options": [
       {
         "id": "o4",
-        "text": "Canlıların yiyeceksiz yaşayabilmesi"
+        "text": "Yaşatması ve öldürmesi"
       },
       {
         "id": "o2",
-        "text": "Allah'ın onları da rızıklandırması"
+        "text": "İşitmesi ve bilmesi"
       },
       {
         "id": "o1",
-        "text": "İnsanların onlar için rızık biriktirmesi"
+        "text": "Bağışlaması ve esirgemesi"
       },
       {
         "id": "o3",
-        "text": "Canlıların kendi yiyeceğini üretmesi"
+        "text": "Yaratması ve şekillendirmesi"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Ankebût 29/60, rızkını taşıyamayan nice canlının bulunduğunu; Allah'ın hem onlara hem insanlara rızık verdiğini anlatır.",
+    "explanation": "Ankebût 29/60, rızkını taşımayan canlıları da insanları da Allah’ın beslediğini bildirir; ardından O’nun her şeyi işittiği ve bildiği vurgulanır.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 29/60; PDF sayfa 424 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Allah'ın onları da rızıklandırması (doğrudan kaynak alıntısı değildir).",
+        "locator": "29/60; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Ankebût 29/60, rızkını taşımayan canlıları da insanları da Allah’ın beslediğini bildirir; ardından O’nun her şeyi işittiği ve bildiği vurgulanır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-29",
     "reviewedAt": undefined
   },
@@ -56539,45 +56589,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q67-rum-2",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Rûm 30/2-4'te yenilgisinden sonra yeniden galip geleceği bildirilen topluluk hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mısırlılar"
-      },
-      {
         "id": "o2",
-        "text": "Semûdlular"
+        "text": "Habeşliler"
       },
       {
         "id": "o3",
-        "text": "Sebeliler"
+        "text": "Gassânîler"
       },
       {
         "id": "o4",
         "text": "Bizanslılar"
+      },
+      {
+        "id": "o1",
+        "text": "Sâsânîler"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Rûm 30/2-4, Bizanslıların ilk yenilgilerinden sonra birkaç yıl içinde yeniden galip geleceklerini haber verir.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Rûm 30/2",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=2&mode=kuran-meal&sure=30",
-        "locator": "Rûm 30/2",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "30/2; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Rûm 30/2-4, Bizanslıların ilk yenilgilerinden sonra birkaç yıl içinde yeniden galip geleceklerini haber verir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-30"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-30",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-rum-17",
@@ -57057,150 +57108,152 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Rûm 30/41'de karada ve denizde bozulmanın nedeni nasıl açıklanır?",
+    "question": "Rûm 30/41’de insanlara yaptıklarının bir kısmının tattırılmasıyla ne yapmaları umulur?",
     "options": [
       {
         "id": "o3",
-        "text": "Geceyle gündüzün yer değiştirmesi"
+        "text": "Malından infak etmeleri"
       },
       {
         "id": "o4",
-        "text": "İnsanların yaptıkları"
+        "text": "Yanlıştan dönmeleri"
       },
       {
         "id": "o1",
-        "text": "Mevsimlerin değişmesi"
+        "text": "Nimetlere şükretmeleri"
       },
       {
         "id": "o2",
-        "text": "Rüzgârların yön değiştirmesi"
+        "text": "Sıkıntıya sabretmeleri"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Rûm 30/41, insanların kendi yaptıkları sebebiyle karada ve denizde bozulma ortaya çıktığını ifade eder.",
+    "explanation": "Rûm 30/41, insanların yaptıkları yüzünden karada ve denizde düzenin bozulduğunu, işlediklerinin bir kısmının onlara yanlışlarından dönmeleri için tattırıldığını bildirir.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 30/41; PDF sayfa 430 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: İnsanların yaptıkları (doğrudan kaynak alıntısı değildir).",
+        "locator": "30/41; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Rûm 30/41, insanların yaptıkları yüzünden karada ve denizde düzenin bozulduğunu, işlediklerinin bir kısmının onlara yanlışlarından dönmeleri için tattırıldığını bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-30",
     "reviewedAt": undefined
   },
   {
     "id": "q67-rum-42",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Rûm 30/42'de geçmiş toplumların akıbeti üzerinde düşünmek için ne yapılması önerilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Bütün kitapları yakmak"
-      },
-      {
         "id": "o2",
-        "text": "Yalnız kendi ülkesinde kalmak"
-      },
-      {
-        "id": "o3",
-        "text": "Yeryüzünde dolaşıp izlere bakmak"
+        "text": "Geçmişe ait rivayetleri karşılaştırmak"
       },
       {
         "id": "o4",
-        "text": "Hiçbir bilgi araştırmamak"
+        "text": "Eski toplumların hukukunu incelemek"
+      },
+      {
+        "id": "o3",
+        "text": "Yeryüzünde gezip önceki izlere bakmak"
+      },
+      {
+        "id": "o1",
+        "text": "Önceki toplulukların dillerini öğrenmek"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Rûm 30/42, yeryüzünde dolaşıp önceki toplumların sonunu görerek ibret alınmasını öğütler.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Rûm 30/42",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=42&mode=kuran-meal&sure=30",
-        "locator": "Rûm 30/42",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "30/42; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Rûm 30/42, yeryüzünde dolaşıp önceki toplumların sonunu görerek ibret alınmasını öğütler.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-30"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-30",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-rum-48",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Rûm 30/48'de rüzgârların hareket ettirdiği doğa unsuru nedir?",
+    "question": "Rûm 30/48’de rüzgârlarla hareketlenen bulutların hangi iki hâli anlatılır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yıldızlar"
+        "id": "o4",
+        "text": "Bir araya gelme ve ağırlaşma"
       },
       {
         "id": "o2",
-        "text": "Bulutlar"
+        "text": "Gökte yayılma ve parçalara ayrılma"
+      },
+      {
+        "id": "o1",
+        "text": "Gökte yükselme ve gölgeler oluşturma"
       },
       {
         "id": "o3",
-        "text": "Dağlar"
-      },
-      {
-        "id": "o4",
-        "text": "Kayalar"
+        "text": "Güneşi örtme ve göğü karartma"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "Rûm 30/48, Allah'ın rüzgârları gönderip bulutları harekete geçirdiğini ve yağmurun çıkışını anlatır.",
     "sources": [
       {
-        "title": "Diyanet Kur'an Yolu — Rûm 30/48",
+        "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
-        "url": "https://kuran.diyanet.gov.tr/kuran?ayet=48&mode=kuran-meal&sure=30",
-        "locator": "Rûm 30/48",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "30/48; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
         "supports": "Rûm 30/48, Allah'ın rüzgârları gönderip bulutları harekete geçirdiğini ve yağmurun çıkışını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: Diyanet Kur'an Yolu ayeti temel alınarak şık ve açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı onayı değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q67-sure-30"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q67-sure-30",
+    "reviewedAt": undefined
   },
   {
     "id": "q67-rum-50",
     "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Rûm 30/50'de toprağın ölümünden sonra diriltilmesi hangi olayla ilgilidir?",
+    "question": "Rûm 30/50’de toprağın canlanması hatırlatıldıktan sonra hangi fiil açıkça bildirilir?",
     "options": [
       {
         "id": "o4",
-        "text": "Denizlerin birbirine katılması"
+        "text": "Hesabın görülmesi"
       },
       {
         "id": "o1",
-        "text": "Yağmurla yeniden canlanması"
+        "text": "Ölülerin diriltilmesi"
       },
       {
         "id": "o2",
-        "text": "Tohumların insan eliyle ekilmesi"
+        "text": "Amellerin tartılması"
       },
       {
         "id": "o3",
-        "text": "Dağların yerlerinden yürütülmesi"
+        "text": "Mahşerde toplanılması"
       }
     ],
     "correctOptionId": "o1",
@@ -57210,15 +57263,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 30/50; PDF sayfa 431 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Yağmurla yeniden canlanması (doğrudan kaynak alıntısı değildir).",
+        "locator": "30/50; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Rûm 30/50, Allah'ın rahmetinin izleri olarak yağmur sonrası yeryüzünün yeniden canlanmasına dikkat çeker.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-30",
     "reviewedAt": undefined
   },
@@ -57235,11 +57288,11 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "Güçsüzlük, yaşlılık, güç"
+        "text": "Güçsüzlük, yeniden güçsüzlük, güç"
       },
       {
         "id": "o3",
-        "text": "Güç, yaşlılık, yeniden çocukluk"
+        "text": "Güç, yeniden güç, güçsüzlük"
       },
       {
         "id": "o4",
@@ -57253,15 +57306,15 @@ export const questionsV73Candidate: readonly Question[] = [
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "Kur’an Yolu Meali, 30/54; PDF sayfa 432 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Güçsüzlük, güç, yeniden güçsüzlük (doğrudan kaynak alıntısı değildir).",
+        "locator": "30/54; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+        "supports": "Rûm 30/54, insanın güçsüz yaratılmasının ardından güçlenmesini, yaşlılıkta yeniden güçsüzleşmesini hatırlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q67-sure-30",
     "reviewedAt": undefined
   },
@@ -57353,45 +57406,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-hadis-sozluk",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Hadis kelimesinin temel sözlük anlamlarından biri hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kervan"
-      },
-      {
         "id": "o2",
-        "text": "Mekân"
+        "text": "Yorum"
       },
       {
         "id": "o3",
-        "text": "Maden"
+        "text": "Öğüt"
       },
       {
         "id": "o4",
         "text": "Haber"
+      },
+      {
+        "id": "o1",
+        "text": "Hüküm"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Hadis maddesi hadisin haber anlamına da geldiğini ve İslâmî literatürde peygamber rivayetleriyle özel bir anlam kazandığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — hadis",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hadis",
-        "locator": "Etimoloji ve kapsam",
+        "locator": "109–112. satırlar",
         "supports": "TDV Hadis maddesi hadisin haber anlamına da geldiğini ve İslâmî literatürde peygamber rivayetleriyle özel bir anlam kazandığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-hadis"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-hadis",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-hadis-kavli",
@@ -57609,45 +57663,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-hadis-riayet",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Hz. Peygamber'den öğrenilen bir hadisi başkalarına aktaran kişiye ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mimar"
-      },
-      {
         "id": "o2",
         "text": "Râvi"
       },
       {
+        "id": "o1",
+        "text": "Şârih"
+      },
+      {
         "id": "o3",
-        "text": "Müderris"
+        "text": "Musannif"
       },
       {
         "id": "o4",
-        "text": "Müezzin"
+        "text": "Müellif"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Râvi maddesi hadis aktaran kişilerin râvi adıyla anıldığını, rivayet zincirinin değerlendirilmesinde önemli yer tuttuklarını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ravi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ravi",
-        "locator": "Râvi tanımı",
+        "locator": "96–101. satırlar",
         "supports": "TDV Râvi maddesi hadis aktaran kişilerin râvi adıyla anıldığını, rivayet zincirinin değerlendirilmesinde önemli yer tuttuklarını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-ravi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-ravi",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-ravi-zincir",
@@ -57694,45 +57749,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-ravi-cerh",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Hadis rivayetinde râvinin güvenilirliğini olumsuz yönde değerlendirmeye ne ad verilir?",
     "options": [
       {
+        "id": "o4",
+        "text": "Cerh"
+      },
+      {
         "id": "o1",
-        "text": "İmâle"
+        "text": "Ta‘dîl"
       },
       {
         "id": "o2",
-        "text": "Vakfe"
+        "text": "Tahric"
       },
       {
         "id": "o3",
-        "text": "İhram"
-      },
-      {
-        "id": "o4",
-        "text": "Cerh"
+        "text": "İcâzet"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Râvilerin güvenilirliğini araştıran cerh ve ta‘dîl ilminde cerh, bir râviye yönelik olumsuz değerlendirmeyi ifade eder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ravi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/ravi",
-        "locator": "Cerh ve ta‘dîl",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/cerh-ve-tadil",
+        "locator": "96–100. satırlar",
         "supports": "Râvilerin güvenilirliğini araştıran cerh ve ta‘dîl ilminde cerh, bir râviye yönelik olumsuz değerlendirmeyi ifade eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-ravi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-ravi",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-ravi-tadil",
@@ -57779,87 +57835,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-zayif-tanim",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Zayıf hadis terimi hangi rivayetleri ifade eder?",
+    "question": "Sahih veya hasen olma şartlarından en az birini taşımayan rivayetin adı nedir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Sadece kısa metinli olanları"
-      },
-      {
-        "id": "o2",
-        "text": "Sahih veya hasen şartlarını taşımayanları"
-      },
-      {
         "id": "o3",
-        "text": "Bütün kitaplarda geçenleri"
+        "text": "Hasen"
       },
       {
         "id": "o4",
-        "text": "Mutlaka uydurma olanları"
+        "text": "Mütevâtir"
+      },
+      {
+        "id": "o2",
+        "text": "Zayıf"
+      },
+      {
+        "id": "o1",
+        "text": "Sahih"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Zayıf maddesi sahih ve hasen hadisin kabul şartlarından birini veya birkaçını taşımayan rivayetleri zayıf olarak tanımlar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — zayif",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zayif",
-        "locator": "Zayıf hadis tanımı",
+        "locator": "98–103. satırlar",
         "supports": "TDV Zayıf maddesi sahih ve hasen hadisin kabul şartlarından birini veya birkaçını taşımayan rivayetleri zayıf olarak tanımlar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-zayif"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-zayif",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-zayif-sebep",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Hadislerin zayıf kabul edilmesinin temel sebeplerinden biri hangisidir?",
+    "question": "Hadisin zayıflık sebeplerinden isnadda inkıtâ ne demektir?",
     "options": [
       {
         "id": "o1",
-        "text": "Rivayet zincirindeki kopukluk"
+        "text": "Rivayet zincirindeki bağlantının kopması"
       },
       {
         "id": "o2",
-        "text": "Metnin kısa olması"
+        "text": "Râvinin hafızasının zayıflaması"
       },
       {
         "id": "o3",
-        "text": "Kitabın kalın olması"
+        "text": "Metnin sağlam rivayete aykırı olması"
       },
       {
         "id": "o4",
-        "text": "Râvinin yaşadığı şehrin uzaklığı"
+        "text": "Râvinin doğruluğunun bilinmemesi"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Zayıf maddesi isnad zincirindeki kopuklukların hadislerin zayıf sayılmasının önemli sebeplerinden biri olduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — zayif",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zayif",
-        "locator": "İsnaddaki inkıtâ",
+        "locator": "100–103. satırlar",
         "supports": "TDV Zayıf maddesi isnad zincirindeki kopuklukların hadislerin zayıf sayılmasının önemli sebeplerinden biri olduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-zayif"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-zayif",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-zayif-uydurma",

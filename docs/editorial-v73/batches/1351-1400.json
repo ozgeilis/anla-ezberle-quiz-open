@@ -3,12 +3,12 @@
   "start": 1351,
   "end": 1400,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 20,
+  "pendingReview": 30,
+  "sourceComparedThisRound": 20,
   "blocked": 0,
   "flaggedBefore": 7,
-  "flaggedAfter": 4,
+  "flaggedAfter": 1,
   "records": [
     {
       "sequence": 1351,
@@ -89,8 +89,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-21",
+        "reviewedCandidateSha256": "8e2ed84f0f3dfc89210a1811d7d31052058c9db3cb69486dc89ba13e3f67da42",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu erdem çifti. 21’in sevgi/şefkat mealini merhametle karşılayan anahtar doğru, ailede sabır/sadakat yok denmiyor.",
+        "optionReview": {
+          "o4": "21’in açık iki duygusu.",
+          "o1": "Başka erdem çifti.",
+          "o2": "Başka erdem çifti.",
+          "o3": "Başka erdem çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/21; PDF sayfa 428 (1 tabanlı), basılı sayfa 427",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -178,8 +202,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-22",
+        "reviewedCandidateSha256": "12ee17250a6e7c487ba649434b408f58bc09d152ababd6805cbe2bf5c8eb59ae",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört çoğul farklılık çifti. 22’nin diller/renkler çifti belirli; şehir ve iklim şıkkı insan olmayan öğeler içerse üç saçma şık yok.",
+        "optionReview": {
+          "o4": "Başka farklılık alanı.",
+          "o3": "22’nin iki insan farklılığı.",
+          "o1": "Başka insan farklılıkları.",
+          "o2": "Başka insan farklılıkları."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/22; PDF sayfa 428 (1 tabanlı), basılı sayfa 427",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -262,8 +310,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-23",
+        "reviewedCandidateSha256": "22cb95f956829bc85173759f022fa2a428381968a9601ac8fd48824fa64552a1",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu gündelik hâl aynı zaman bağlamında. 23’ün gece/gündüz uykusu ve rızık arayışı okunup tek seçeneğin ikisini birden söyleme zorunluluğu olmadığı görüldü.",
+        "optionReview": {
+          "o2": "23’ün açık uyku hâli.",
+          "o1": "Başka gece hâli.",
+          "o3": "Başka gündüz hâli.",
+          "o4": "Başka dua hâli."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/23; PDF sayfa 428 (1 tabanlı), basılı sayfa 427",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -346,8 +418,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-24",
+        "reviewedCandidateSha256": "ab3dc72d980be535dd2d78f1b6f6b8acbc2bb34a26ce5e362d6db8e05980e86e",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört duygu çifti. 24’ün korku/ümit ikilisi; diğerleri de şimşekten duyulabilir ama soru öznel tüm tepkileri değil belirli âyeti sorar.",
+        "optionReview": {
+          "o2": "Başka duygu çifti.",
+          "o3": "Başka duygu çifti.",
+          "o4": "Başka duygu çifti.",
+          "o1": "24’ün açık iki duygusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/24; PDF sayfa 428 (1 tabanlı), basılı sayfa 427",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -435,8 +531,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-25",
+        "reviewedCandidateSha256": "d98870a8c7159dfd695759de3e9236f05e9ad71f943b495e314015a9cff7ad10",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ilâhî kavram. 25 buyruğu/emri der; rahmet, bağış ve rızık başka gerçek kavramlar, bu âyetin düzen ifadesi değil.",
+        "optionReview": {
+          "o4": "25’in buyruğu.",
+          "o1": "Başka ilâhî kavram.",
+          "o2": "Başka ilâhî kavram.",
+          "o3": "Başka ilâhî kavram."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/25; PDF sayfa 428 (1 tabanlı), basılı sayfa 427",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -519,8 +639,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-30",
+        "reviewedCandidateSha256": "ba181d847caf041a839c5c92f4535cd77d7e0532c2e995defd35bdfc1810fca4",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek yakın insan/din kavramı. Fıtrat yaratılış özelliğini karşılar; mizaç karakter, irade tercih, hidayet yöneliş olup tam eş anlamlı seçenekler değil.",
+        "optionReview": {
+          "o4": "Başka insan özelliği.",
+          "o3": "30’un açık fıtrat kavramı.",
+          "o1": "Tercih yetisi.",
+          "o2": "Doğru yola yönelme."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/30; PDF sayfa 429 (1 tabanlı), basılı sayfa 428",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -620,8 +764,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-38",
+        "reviewedCandidateSha256": "972ae5556d64e8d7152dfa84e883a377da02be972aec0ef7943ecda2d1cb0198",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gözetilecek kişi sınıfı. 38’in akraba/yoksul/yolda kalmış üçlüsü; borçlu/esir/komşu hakları inkâr edilmiyor, metindeki üçüncü sınıf belirli.",
+        "optionReview": {
+          "o3": "Başka hak sahibi.",
+          "o4": "Başka hak sahibi.",
+          "o2": "38’in üçüncü sınıfı.",
+          "o1": "Başka hak sahibi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/38; PDF sayfa 430 (1 tabanlı), basılı sayfa 429",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -709,8 +877,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-40",
+        "reviewedCandidateSha256": "4f0d0af1c8f2d6e570884a5fe5e27dc2158a8a39f87733c1843f8a4e51c78b94",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört karşıt fiil çifti. 40’ta yaratma/rızık ardından ölüm/yeniden hayat sırası; aynı fiil çifti 57/2’de ters sırada da yer alır, köklerin öğrenme hedefi nihai tekrar kabulünde ele alınacak.",
+        "optionReview": {
+          "o2": "Başka karşıt fiiller.",
+          "o3": "Başka karşıt fiiller.",
+          "o4": "Başka karşıt fiiller.",
+          "o1": "40’ın son iki fiili."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/40; PDF sayfa 430 (1 tabanlı), basılı sayfa 429",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -757,37 +949,37 @@
         ]
       },
       "after": {
-        "question": "Rûm 30/41'de karada ve denizde bozulmanın nedeni nasıl açıklanır?",
+        "question": "Rûm 30/41’de insanlara yaptıklarının bir kısmının tattırılmasıyla ne yapmaları umulur?",
         "options": [
           {
             "id": "o3",
-            "text": "Geceyle gündüzün yer değiştirmesi"
+            "text": "Malından infak etmeleri"
           },
           {
             "id": "o4",
-            "text": "İnsanların yaptıkları"
+            "text": "Yanlıştan dönmeleri"
           },
           {
             "id": "o1",
-            "text": "Mevsimlerin değişmesi"
+            "text": "Nimetlere şükretmeleri"
           },
           {
             "id": "o2",
-            "text": "Rüzgârların yön değiştirmesi"
+            "text": "Sıkıntıya sabretmeleri"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "İnsanların yaptıkları",
-        "explanation": "Rûm 30/41, insanların kendi yaptıkları sebebiyle karada ve denizde bozulma ortaya çıktığını ifade eder.",
+        "correctAnswer": "Yanlıştan dönmeleri",
+        "explanation": "Rûm 30/41, insanların yaptıkları yüzünden karada ve denizde düzenin bozulduğunu, işlediklerinin bir kısmının onlara yanlışlarından dönmeleri için tattırıldığını bildirir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 30/41; PDF sayfa 430 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: İnsanların yaptıkları (doğrudan kaynak alıntısı değildir).",
+            "locator": "30/41; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Rûm 30/41, insanların yaptıkları yüzünden karada ve denizde düzenin bozulduğunu, işlediklerinin bir kısmının onlara yanlışlarından dönmeleri için tattırıldığını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -797,14 +989,35 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "grammar-shape",
-          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-41",
+        "reviewedCandidateSha256": "1d781b4ea07a9a619363f2b098a20a3881f2b17b5e424c49e40395c01b188311",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç doğa döngüsüne karşı tek insan sorumluluğu yerine aynı âyetin sonuç amacı soruldu. Dört olumlu dinî tutumdan geri dönüş ifadesi seçilmeli; diğer erdemler yanlış sayılmıyor.",
+        "optionReview": {
+          "o3": "Başka olumlu tutum.",
+          "o4": "41’in dönüş amacı.",
+          "o1": "Başka olumlu tutum.",
+          "o2": "Başka olumlu tutum."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/41; PDF sayfa 430 (1 tabanlı), basılı sayfa 429",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -854,34 +1067,34 @@
         "question": "Rûm 30/42'de geçmiş toplumların akıbeti üzerinde düşünmek için ne yapılması önerilir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Bütün kitapları yakmak"
-          },
-          {
             "id": "o2",
-            "text": "Yalnız kendi ülkesinde kalmak"
-          },
-          {
-            "id": "o3",
-            "text": "Yeryüzünde dolaşıp izlere bakmak"
+            "text": "Geçmişe ait rivayetleri karşılaştırmak"
           },
           {
             "id": "o4",
-            "text": "Hiçbir bilgi araştırmamak"
+            "text": "Eski toplumların hukukunu incelemek"
+          },
+          {
+            "id": "o3",
+            "text": "Yeryüzünde gezip önceki izlere bakmak"
+          },
+          {
+            "id": "o1",
+            "text": "Önceki toplulukların dillerini öğrenmek"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Yeryüzünde dolaşıp izlere bakmak",
+        "correctAnswer": "Yeryüzünde gezip önceki izlere bakmak",
         "explanation": "Rûm 30/42, yeryüzünde dolaşıp önceki toplumların sonunu görerek ibret alınmasını öğütler.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Rûm 30/42",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=42&mode=kuran-meal&sure=30",
-            "locator": "Rûm 30/42",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "30/42; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Rûm 30/42, yeryüzünde dolaşıp önceki toplumların sonunu görerek ibret alınmasını öğütler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -891,14 +1104,35 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-42",
+        "reviewedCandidateSha256": "2856e10ada2005cdb0d1fe2bf03352c3488ae07c068cae348f5354f5a57a2640",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kitap yakma/yalnız ülkesinde kalma/hiç araştırmama kalıbı kaldırıldı. Dört olumlu tarih öğrenme yolu; 42’nin gezip sonucu görme emri özel.",
+        "optionReview": {
+          "o2": "Başka tarih öğrenme yolu.",
+          "o4": "Başka tarih öğrenme yolu.",
+          "o3": "42’nin açık yolculuk/gözlem emri.",
+          "o1": "Başka tarih öğrenme yolu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/42; PDF sayfa 430 (1 tabanlı), basılı sayfa 429",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -945,44 +1179,70 @@
         ]
       },
       "after": {
-        "question": "Rûm 30/48'de rüzgârların hareket ettirdiği doğa unsuru nedir?",
+        "question": "Rûm 30/48’de rüzgârlarla hareketlenen bulutların hangi iki hâli anlatılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yıldızlar"
+            "id": "o4",
+            "text": "Bir araya gelme ve ağırlaşma"
           },
           {
             "id": "o2",
-            "text": "Bulutlar"
+            "text": "Gökte yayılma ve parçalara ayrılma"
+          },
+          {
+            "id": "o1",
+            "text": "Gökte yükselme ve gölgeler oluşturma"
           },
           {
             "id": "o3",
-            "text": "Dağlar"
-          },
-          {
-            "id": "o4",
-            "text": "Kayalar"
+            "text": "Güneşi örtme ve göğü karartma"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Bulutlar",
+        "correctAnswer": "Gökte yayılma ve parçalara ayrılma",
         "explanation": "Rûm 30/48, Allah'ın rüzgârları gönderip bulutları harekete geçirdiğini ve yağmurun çıkışını anlatır.",
         "sources": [
           {
-            "title": "Diyanet Kur'an Yolu — Rûm 30/48",
+            "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
-            "url": "https://kuran.diyanet.gov.tr/kuran?ayet=48&mode=kuran-meal&sure=30",
-            "locator": "Rûm 30/48",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "30/48; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
             "supports": "Rûm 30/48, Allah'ın rüzgârları gönderip bulutları harekete geçirdiğini ve yağmurun çıkışını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-48",
+        "reviewedCandidateSha256": "5788e2e9f62e98c6f6179bcef62ff65748d8f83f1cff9f292c6ead443b028446",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Rüzgârın taşıyacağı tek buluta karşı yıldız/dağ/kaya kaldırıldı. Dört makul bulut süreci; âyetin yayma ve bölme ifadesi öğrenme hedefi.",
+        "optionReview": {
+          "o4": "Başka bulut süreci.",
+          "o2": "48’in iki açık bulut hâli.",
+          "o1": "Başka bulut süreci.",
+          "o3": "Başka bulut etkisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/48; PDF sayfa 431 (1 tabanlı), basılı sayfa 430",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1029,44 +1289,70 @@
         ]
       },
       "after": {
-        "question": "Rûm 30/50'de toprağın ölümünden sonra diriltilmesi hangi olayla ilgilidir?",
+        "question": "Rûm 30/50’de toprağın canlanması hatırlatıldıktan sonra hangi fiil açıkça bildirilir?",
         "options": [
           {
             "id": "o4",
-            "text": "Denizlerin birbirine katılması"
+            "text": "Hesabın görülmesi"
           },
           {
             "id": "o1",
-            "text": "Yağmurla yeniden canlanması"
+            "text": "Ölülerin diriltilmesi"
           },
           {
             "id": "o2",
-            "text": "Tohumların insan eliyle ekilmesi"
+            "text": "Amellerin tartılması"
           },
           {
             "id": "o3",
-            "text": "Dağların yerlerinden yürütülmesi"
+            "text": "Mahşerde toplanılması"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Yağmurla yeniden canlanması",
+        "correctAnswer": "Ölülerin diriltilmesi",
         "explanation": "Rûm 30/50, Allah'ın rahmetinin izleri olarak yağmur sonrası yeryüzünün yeniden canlanmasına dikkat çeker.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 30/50; PDF sayfa 431 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Yağmurla yeniden canlanması (doğrudan kaynak alıntısı değildir).",
+            "locator": "30/50; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Rûm 30/50, Allah'ın rahmetinin izleri olarak yağmur sonrası yeryüzünün yeniden canlanmasına dikkat çeker.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-50",
+        "reviewedCandidateSha256": "6b63b6766dfb47c2e30fc55b4c4c8d9776fdf0f8806e8787b4b12b45c9ad2ee0",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dağ hareketi/deniz karışması gibi ilgisiz doğa olaylarına karşı tek bitki canlanması kaldırıldı. Dört âhiret fiili; 50’nin açık diriltme cümlesi sorulur.",
+        "optionReview": {
+          "o4": "Başka âhiret fiili.",
+          "o1": "50’nin açık diriltme fiili.",
+          "o2": "Başka âhiret fiili.",
+          "o3": "Başka âhiret fiili."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/50; PDF sayfa 431 (1 tabanlı), basılı sayfa 430",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1121,11 +1407,11 @@
           },
           {
             "id": "o2",
-            "text": "Güçsüzlük, yaşlılık, güç"
+            "text": "Güçsüzlük, yeniden güçsüzlük, güç"
           },
           {
             "id": "o3",
-            "text": "Güç, yaşlılık, yeniden çocukluk"
+            "text": "Güç, yeniden güç, güçsüzlük"
           },
           {
             "id": "o4",
@@ -1140,10 +1426,10 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 30/54; PDF sayfa 432 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Güçsüzlük, güç, yeniden güçsüzlük (doğrudan kaynak alıntısı değildir).",
+            "locator": "30/54; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Rûm 30/54, insanın güçsüz yaratılmasının ardından güçlenmesini, yaşlılıkta yeniden güçsüzleşmesini hatırlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1152,10 +1438,56 @@
         {
           "kind": "semantic-overlap",
           "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-54",
+        "reviewedCandidateSha256": "081abb1cd581fd1e19cbbfd9083129bbeb9421472301a40982de6b33cc2b9600",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Önceki adayın yaşlılık/yeniden çocukluk gibi başka terimler taşıyan üçlüsü yerine aynı üç öğenin dört sırası. Bilgi hayat evreleri kavrayışıyla bulunabilir; bu sorunun amacı zaten bu kavrayış, ahlâkî ton tuzağı değil.",
+        "optionReview": {
+          "o1": "Başka sıra.",
+          "o2": "Başka sıra.",
+          "o3": "Başka sıra.",
+          "o4": "54’ün açık sırası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/54; PDF sayfa 432 (1 tabanlı), basılı sayfa 431",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1238,8 +1570,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q67-rum-60",
+        "reviewedCandidateSha256": "58c7e59cbd23a822000b457823bae33a93c5f9a912dbfc9401609724097af74e",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu davranış. 60’ın sabır ve Allah vaadi bağlantısı açık; başka güzel davranışları yanlış ilan eden genel kök yok.",
+        "optionReview": {
+          "o3": "60’ın açık sabır öğüdü.",
+          "o1": "Başka güzel davranış.",
+          "o2": "Başka güzel davranış.",
+          "o4": "Başka güzel davranış."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "30/60; PDF sayfa 432 (1 tabanlı), basılı sayfa 431",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1289,20 +1645,20 @@
         "question": "Hadis kelimesinin temel sözlük anlamlarından biri hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kervan"
-          },
-          {
             "id": "o2",
-            "text": "Mekân"
+            "text": "Yorum"
           },
           {
             "id": "o3",
-            "text": "Maden"
+            "text": "Öğüt"
           },
           {
             "id": "o4",
             "text": "Haber"
+          },
+          {
+            "id": "o1",
+            "text": "Hüküm"
           }
         ],
         "correctOptionId": "o4",
@@ -1310,20 +1666,46 @@
         "explanation": "TDV Hadis maddesi hadisin haber anlamına da geldiğini ve İslâmî literatürde peygamber rivayetleriyle özel bir anlam kazandığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — hadis",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/hadis",
-            "locator": "Etimoloji ve kapsam",
+            "locator": "109–112. satırlar",
             "supports": "TDV Hadis maddesi hadisin haber anlamına da geldiğini ve İslâmî literatürde peygamber rivayetleriyle özel bir anlam kazandığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-hadis-sozluk",
+        "reviewedCandidateSha256": "b71f58103d170a080daf15570494187829b189b00c4bae68d4bd5069702e7af4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Maden/kervan/mekân gibi ilgisiz isimler yerine dört iletişim/içerik terimi. Hadis sözlükte haber/yeni; yeni eş anlamı ayrıca yanlış seçenek yapılmadı.",
+        "optionReview": {
+          "o2": "Başka içerik türü.",
+          "o3": "Başka içerik türü.",
+          "o4": "109’un haber anlamı.",
+          "o1": "Başka içerik türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hadis",
+          "locator": "109–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2e559e077631d0f7be52958a8505a82c917c93a377aabd9e30fb4c8551f0de45"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1406,8 +1788,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-hadis-ehadis",
+        "reviewedCandidateSha256": "0240ae4fb4cf88d2715e0de1225cae27e4bc060691ef761b5d1653036ada4e92",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Arapça çoğul aynı yakın biçimde. 109–111 ehâdîs biçimini ve uhdûse tarihçesini açıklar; doğruyu yalnız harf benzerliğinden tahmin etmek terim/çoğul öğrenme hedefinin parçası.",
+        "optionReview": {
+          "o1": "Başka çoğul kelime.",
+          "o2": "Vakıf çoğulu.",
+          "o3": "Nesep çoğulu.",
+          "o4": "109–111’in hadis çoğulu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hadis",
+          "locator": "109–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2e559e077631d0f7be52958a8505a82c917c93a377aabd9e30fb4c8551f0de45"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1457,20 +1863,20 @@
         "question": "Hz. Peygamber'den öğrenilen bir hadisi başkalarına aktaran kişiye ne denir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mimar"
-          },
-          {
             "id": "o2",
             "text": "Râvi"
           },
           {
+            "id": "o1",
+            "text": "Şârih"
+          },
+          {
             "id": "o3",
-            "text": "Müderris"
+            "text": "Musannif"
           },
           {
             "id": "o4",
-            "text": "Müezzin"
+            "text": "Müellif"
           }
         ],
         "correctOptionId": "o2",
@@ -1478,20 +1884,46 @@
         "explanation": "TDV Râvi maddesi hadis aktaran kişilerin râvi adıyla anıldığını, rivayet zincirinin değerlendirilmesinde önemli yer tuttuklarını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ravi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ravi",
-            "locator": "Râvi tanımı",
+            "locator": "96–101. satırlar",
             "supports": "TDV Râvi maddesi hadis aktaran kişilerin râvi adıyla anıldığını, rivayet zincirinin değerlendirilmesinde önemli yer tuttuklarını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-hadis-riayet",
+        "reviewedCandidateSha256": "200708f701ff4d079dcb1c00dcf1dad9187195e20a4503c5b4ed8717774ffa96",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Mimar/müezzin gibi meslekler yerine dört rivayet/kitap faaliyet rolü. Hadis nakletme teknik rolü râvi; şârih açıklayan, musannif tasnif eden olabilir fakat sırf bu sıfatları nakletme tanımının adı değil.",
+        "optionReview": {
+          "o2": "96’nın teknik nakledeni.",
+          "o1": "Açıklama rolü.",
+          "o3": "Tasnif rolü.",
+          "o4": "Eser yazma rolü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ravi",
+          "locator": "96–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2e559e077631d0f7be52958a8505a82c917c93a377aabd9e30fb4c8551f0de45"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1541,20 +1973,20 @@
         "question": "Hadis rivayetinde râvinin güvenilirliğini olumsuz yönde değerlendirmeye ne ad verilir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Cerh"
+          },
+          {
             "id": "o1",
-            "text": "İmâle"
+            "text": "Ta‘dîl"
           },
           {
             "id": "o2",
-            "text": "Vakfe"
+            "text": "Tahric"
           },
           {
             "id": "o3",
-            "text": "İhram"
-          },
-          {
-            "id": "o4",
-            "text": "Cerh"
+            "text": "İcâzet"
           }
         ],
         "correctOptionId": "o4",
@@ -1562,20 +1994,46 @@
         "explanation": "Râvilerin güvenilirliğini araştıran cerh ve ta‘dîl ilminde cerh, bir râviye yönelik olumsuz değerlendirmeyi ifade eder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — ravi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/ravi",
-            "locator": "Cerh ve ta‘dîl",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/cerh-ve-tadil",
+            "locator": "96–100. satırlar",
             "supports": "Râvilerin güvenilirliğini araştıran cerh ve ta‘dîl ilminde cerh, bir râviye yönelik olumsuz değerlendirmeyi ifade eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-ravi-cerh",
+        "reviewedCandidateSha256": "9ec21e020349e44b4d5c99d9c398001b4e0b8493db66e9e93474811ad36eafbb",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hac/kıraat terimleri yerine dört hadis değerlendirme/aktarım terimi. Cerh olumsuz, ta‘dîl kabulü gerektiren sıfatla niteleme; ad benzerliği veya üç alakasız ibadetle seçilemez.",
+        "optionReview": {
+          "o4": "96’nın olumsuz değerlendirmesi.",
+          "o1": "97’nin olumlu değerlendirmesi.",
+          "o2": "Hadisi kaynaklara bağlama işlemi.",
+          "o3": "Rivayet izni."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/cerh-ve-tadil",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2e559e077631d0f7be52958a8505a82c917c93a377aabd9e30fb4c8551f0de45"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1622,37 +2080,37 @@
         ]
       },
       "after": {
-        "question": "Zayıf hadis terimi hangi rivayetleri ifade eder?",
+        "question": "Sahih veya hasen olma şartlarından en az birini taşımayan rivayetin adı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sadece kısa metinli olanları"
-          },
-          {
-            "id": "o2",
-            "text": "Sahih veya hasen şartlarını taşımayanları"
-          },
-          {
             "id": "o3",
-            "text": "Bütün kitaplarda geçenleri"
+            "text": "Hasen"
           },
           {
             "id": "o4",
-            "text": "Mutlaka uydurma olanları"
+            "text": "Mütevâtir"
+          },
+          {
+            "id": "o2",
+            "text": "Zayıf"
+          },
+          {
+            "id": "o1",
+            "text": "Sahih"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Sahih veya hasen şartlarını taşımayanları",
+        "correctAnswer": "Zayıf",
         "explanation": "TDV Zayıf maddesi sahih ve hasen hadisin kabul şartlarından birini veya birkaçını taşımayan rivayetleri zayıf olarak tanımlar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — zayif",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zayif",
-            "locator": "Zayıf hadis tanımı",
+            "locator": "98–103. satırlar",
             "supports": "TDV Zayıf maddesi sahih ve hasen hadisin kabul şartlarından birini veya birkaçını taşımayan rivayetleri zayıf olarak tanımlar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1662,14 +2120,35 @@
           "detail": "Birden fazla mutlak sınırlayıcı ifade"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "absolute-language",
-          "detail": "Birden fazla mutlak sınırlayıcı ifade"
+      "automaticAfter": [],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-zayif-tanim",
+        "reviewedCandidateSha256": "71f5d3ce47b3b1575844c180a27b33e78e16df9f3104a4b80f9c445703c7c14b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Sadece/bütün/mutlaka sınırlayıcı ve uydurma eşitlemesi giderildi. Dört hadis terimiyle tanım sorulur; zayıfın her örneği uydurma değildir ve tasnifin tarihî değişimi açıklamada genelleştirilmez.",
+        "optionReview": {
+          "o3": "Farklı kabul derecesi.",
+          "o4": "Nakil çokluğuyla ilgili terim.",
+          "o2": "98’in kabul şartı eksik rivayeti.",
+          "o1": "Kabul şartlarını sağlayan sınıf."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zayif",
+          "locator": "98–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2e559e077631d0f7be52958a8505a82c917c93a377aabd9e30fb4c8551f0de45"
         }
-      ],
-      "semanticReview": "pending",
-      "decision": null,
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1716,44 +2195,70 @@
         ]
       },
       "after": {
-        "question": "Hadislerin zayıf kabul edilmesinin temel sebeplerinden biri hangisidir?",
+        "question": "Hadisin zayıflık sebeplerinden isnadda inkıtâ ne demektir?",
         "options": [
           {
             "id": "o1",
-            "text": "Rivayet zincirindeki kopukluk"
+            "text": "Rivayet zincirindeki bağlantının kopması"
           },
           {
             "id": "o2",
-            "text": "Metnin kısa olması"
+            "text": "Râvinin hafızasının zayıflaması"
           },
           {
             "id": "o3",
-            "text": "Kitabın kalın olması"
+            "text": "Metnin sağlam rivayete aykırı olması"
           },
           {
             "id": "o4",
-            "text": "Râvinin yaşadığı şehrin uzaklığı"
+            "text": "Râvinin doğruluğunun bilinmemesi"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Rivayet zincirindeki kopukluk",
+        "correctAnswer": "Rivayet zincirindeki bağlantının kopması",
         "explanation": "TDV Zayıf maddesi isnad zincirindeki kopuklukların hadislerin zayıf sayılmasının önemli sebeplerinden biri olduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — zayif",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zayif",
-            "locator": "İsnaddaki inkıtâ",
+            "locator": "100–103. satırlar",
             "supports": "TDV Zayıf maddesi isnad zincirindeki kopuklukların hadislerin zayıf sayılmasının önemli sebeplerinden biri olduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-zayif-sebep",
+        "reviewedCandidateSha256": "ef303483ed823b57a5874b90bbb3dfc601d579faf302a5b7f6ccbff71cd97ed6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kitap kalınlığı/uzak şehir/kısa metin gibi üç ilgisiz kusur yerine dört gerçek teknik sorun. Genel zayıflık nedenini sormak hepsini doğru yapardı; inkıtâ tanımıyla kök kesinleştirildi.",
+        "optionReview": {
+          "o1": "102’nin sened kopukluğu.",
+          "o2": "Başka zabt sorunu.",
+          "o3": "Başka rivayet uyumsuzluğu.",
+          "o4": "Başka râvi bilgisi sorunu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kasas/Ankebût/Rûm ile hadis terimleri önceki paketlerin bağlamlarıyla karşılaştırıldı. 30/19–40 ve 57/2 fiil çiftleri yakın öğrenme hedefleridir; son banka çapı tekrar değerlendirmesi tamamlanmadan kabul yok. ID/kategori/zorluk korundu; yeni kesinlik veya mezhep hükmü eklenmedi.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zayif",
+          "locator": "100–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "2e559e077631d0f7be52958a8505a82c917c93a377aabd9e30fb4c8551f0de45"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },

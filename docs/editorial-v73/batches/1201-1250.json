@@ -3,12 +3,12 @@
   "start": 1201,
   "end": 1250,
   "total": 50,
-  "individuallyReviewed": 20,
-  "pendingReview": 30,
-  "sourceComparedThisRound": 20,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 6,
-  "flaggedAfter": 3,
+  "flaggedAfter": 5,
   "records": [
     {
       "sequence": 1201,
@@ -2304,8 +2304,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-huneyn-hevazin",
+        "reviewedCandidateSha256": "72efe99fba386eed54da7e387ab5291d6222208af1dfcda175f4e0d5303565b3",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört çağdaş kabile topluluğu. 96–103’te Hevâzin açık; Sakīf onun kolu olduğundan yeni yanlış şık yapılmadı. Kabile bilgisi temel kolay düzey.",
+        "optionReview": {
+          "o1": "Başka Medine kabilesi.",
+          "o2": "Başka Medine kabilesi.",
+          "o3": "Mekke topluluğu; bu karşı ordu değil.",
+          "o4": "96 ve 103’ün Hevâzin’i."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
+          "locator": "96–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2355,20 +2379,20 @@
         "question": "Huneyn'deki karşı kuvvetleri komuta eden kişi kimdi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Ebû Cehil"
-          },
-          {
-            "id": "o2",
-            "text": "Ümeyye b. Halef"
+            "id": "o4",
+            "text": "Gaylân b. Seleme"
           },
           {
             "id": "o3",
             "text": "Mâlik b. Avf"
           },
           {
-            "id": "o4",
-            "text": "Ebû Süfyân"
+            "id": "o1",
+            "text": "Düreyd b. Sımme"
+          },
+          {
+            "id": "o2",
+            "text": "Urve b. Mes‘ûd"
           }
         ],
         "correctOptionId": "o3",
@@ -2376,20 +2400,46 @@
         "explanation": "TDV Huneyn Gazvesi maddesi Hevâzin ordusunun başında Mâlik b. Avf en-Nasrî bulunduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-            "locator": "Huneyn'de Mâlik b. Avf",
+            "locator": "101–104 ve 112; Tâif 118–119. satırlar",
             "supports": "TDV Huneyn Gazvesi maddesi Hevâzin ordusunun başında Mâlik b. Avf en-Nasrî bulunduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-huneyn-kuman",
+        "reviewedCandidateSha256": "118382dc75f2dcce4fe493ddb48420122e2f90fc13559e8181243e09e0184b52",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Bedir’de ölmüş isimler ve o sırada Müslüman olan Ebû Süfyân yerine dört çağdaş kabile ileri geleni. Urve/Gaylân Yemen’de olduğundan, Düreyd cengâver fakat kaynakta kumandan Mâlik’tir.",
+        "optionReview": {
+          "o4": "Tâif 119’da Yemen’de.",
+          "o3": "103’ün kumandanı.",
+          "o1": "112’deki savaşçı, kumandan değil.",
+          "o2": "Tâif 119’da Yemen’de."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
+          "locator": "101–104 ve 112; Tâif 118–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2439,20 +2489,20 @@
         "question": "TDV'ye göre Huneyn Seferi'nde İslâm ordusu yaklaşık kaç kişiydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "50.000"
+            "id": "o4",
+            "text": "16.000"
           },
           {
             "id": "o2",
             "text": "12.000"
           },
           {
-            "id": "o3",
-            "text": "305"
+            "id": "o1",
+            "text": "10.000"
           },
           {
-            "id": "o4",
-            "text": "3.000"
+            "id": "o3",
+            "text": "14.000"
           }
         ],
         "correctOptionId": "o2",
@@ -2460,20 +2510,46 @@
         "explanation": "TDV Huneyn Gazvesi maddesi İslâm ordusunun on iki bin kişiyle sefere çıktığını ve iki bininin Mekkelilerden oluştuğunu kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-            "locator": "Huneyn ordusunun büyüklüğü",
+            "locator": "105–106. satırlar",
             "supports": "TDV Huneyn Gazvesi maddesi İslâm ordusunun on iki bin kişiyle sefere çıktığını ve iki bininin Mekkelilerden oluştuğunu kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-huneyn-ordu",
+        "reviewedCandidateSha256": "588b2cb06b1dc5425c9880dee7123e28d9fb0ccef2ca9d4c1bfcdf1d05d37e91",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "305/50 bin gibi uç ölçekler yerine dört yakın binlik sayı. 10 bin Medine’den gelen alt grup, iki bin Mekkelinin eklenmesi toplamı 12 bindir.",
+        "optionReview": {
+          "o4": "Başka yakın toplam.",
+          "o2": "105’in toplamı.",
+          "o1": "Medineli alt grup; toplam değil.",
+          "o3": "Başka yakın toplam."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
+          "locator": "105–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2524,40 +2600,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Dar vadide kurulan pusu"
+            "text": "Dar vadide ok pususuna düşülmesi"
           },
           {
             "id": "o2",
-            "text": "Denizin yükselmesi"
+            "text": "İkmal yolunun düşman tarafından kesilmesi"
           },
           {
             "id": "o3",
-            "text": "Şehrin yıkılması"
+            "text": "Gece baskınında çadırların yakılması"
           },
           {
             "id": "o4",
-            "text": "Büyük bir deprem"
+            "text": "Geri hattın süvari hücumuna uğraması"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Dar vadide kurulan pusu",
+        "correctAnswer": "Dar vadide ok pususuna düşülmesi",
         "explanation": "Hevâzin birlikleri Huneyn vadisinin dar yerinde pusu kurup ilerleyen müslümanları ok yağmuruna tutmuş, başlangıçta geri çekilmeye yol açmıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-            "locator": "Huneyn pususu",
+            "locator": "107–110. satırlar",
             "supports": "Hevâzin birlikleri Huneyn vadisinin dar yerinde pusu kurup ilerleyen müslümanları ok yağmuruna tutmuş, başlangıçta geri çekilmeye yol açmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-huneyn-pusu",
+        "reviewedCandidateSha256": "729c5972b152b51989a254d6b293a10c96e9d4c52164354ac24e024921aa311b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Deniz yükselmesi/deprem gibi üç ilgisiz olay yerine dört askerî aksaklık. Başlangıçtaki fiilî olay sorulur; âyetin manevî sebep açıklamasıyla karıştırılmaz.",
+        "optionReview": {
+          "o1": "107–108’in dar vadi pususu.",
+          "o2": "Başka askerî aksaklık.",
+          "o3": "Başka askerî aksaklık.",
+          "o4": "Başka askerî aksaklık."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
+          "locator": "107–110. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2604,23 +2706,23 @@
         ]
       },
       "after": {
-        "question": "Huneyn Seferi'ne katıldığı aktarılan kadın sahâbîlerden biri hangisidir?",
+        "question": "TDV Huneyn Gazvesi maddesinde orduda bulunduğu adıyla belirtilen kadın kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hz. Meryem"
-          },
-          {
             "id": "o2",
-            "text": "Rukıyye bint Muhammed"
+            "text": "Esmâ bint Ebû Bekir"
           },
           {
             "id": "o3",
-            "text": "Âmine bint Vehb"
+            "text": "Şifâ bint Abdullah"
           },
           {
             "id": "o4",
             "text": "Ümmü Süleym"
+          },
+          {
+            "id": "o1",
+            "text": "Hafsa bint Ömer"
           }
         ],
         "correctOptionId": "o4",
@@ -2628,20 +2730,46 @@
         "explanation": "TDV Huneyn Gazvesi maddesi Ümmü Umâre, Ümmü'l-Hâris ve Ümmü Süleym'in orduda bulunduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-            "locator": "Huneyn'de kadın sahâbîler",
+            "locator": "105–106. satırlar",
             "supports": "TDV Huneyn Gazvesi maddesi Ümmü Umâre, Ümmü'l-Hâris ve Ümmü Süleym'in orduda bulunduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-huneyn-kadin",
+        "reviewedCandidateSha256": "eff72feb55043da1d1e1046f29f411bb8ef1f206fef8379eb17926faa685255a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hz. Meryem ve daha önce vefat eden kadınlara karşı tek sahâbî yerine dört çağdaş Müslüman kadın. Kaynaktaki açık liste esas; Ümmü Umâre ve Ümmü’l-Hâris de gerçek katılımcı olduklarından yanlış şık değil.",
+        "optionReview": {
+          "o2": "Başka çağdaş kadın.",
+          "o3": "Başka çağdaş kadın.",
+          "o4": "106’da adı açıkça bulunur.",
+          "o1": "Başka çağdaş kadın."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
+          "locator": "105–106. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2691,20 +2819,20 @@
         "question": "Huneyn'den sonra kaçan düşmanın önemli bir bölümü hangi şehre sığınmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kûfe"
-          },
-          {
-            "id": "o2",
-            "text": "Basra"
-          },
-          {
             "id": "o3",
             "text": "Tâif"
           },
           {
-            "id": "o4",
+            "id": "o1",
+            "text": "Mekke"
+          },
+          {
+            "id": "o2",
             "text": "Medine"
+          },
+          {
+            "id": "o4",
+            "text": "Hayber"
           }
         ],
         "correctOptionId": "o3",
@@ -2712,20 +2840,46 @@
         "explanation": "TDV Huneyn Gazvesi maddesi yenilen Hevâzin kuvvetlerinin büyük bölümünün Tâif'e sığındığını ve daha sonra Tâif'in kuşatıldığını anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — huneyn-gazvesi",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
-            "locator": "Huneyn'den Tâif'e çekilme",
+            "locator": "98 ve 114. satırlar",
             "supports": "TDV Huneyn Gazvesi maddesi yenilen Hevâzin kuvvetlerinin büyük bölümünün Tâif'e sığındığını ve daha sonra Tâif'in kuşatıldığını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-huneyn-sonrasi",
+        "reviewedCandidateSha256": "7c1536691fe036bbc645e23972953fa8b08474e20075fdb48d38c052053f9de1",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Henüz kurulmamış Kûfe/Basra yerine dört Hicaz yerleşmesi. Evtâs/Nahle’ye de kaçanlar bulunduğundan kökün önemli bölüm şartı korunur, bu iki yer yanlış şık yapılmaz.",
+        "optionReview": {
+          "o3": "114’ün büyük bölümünün sığınağı.",
+          "o1": "Başka Hicaz yerleşmesi.",
+          "o2": "Başka Hicaz yerleşmesi.",
+          "o4": "Başka Hicaz yerleşmesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/huneyn-gazvesi",
+          "locator": "98 ve 114. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2808,8 +2962,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-taif-lat",
+        "reviewedCandidateSha256": "cfc4a8d2d1316be09475afce13c243c7edcba3a8d1e7229056f0599cfe14b129",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek put adı. Sakīf/Tâif bağlamı Lât’ı belirler, Nahle Uzzâ’sıyla ayrım 120’de açık.",
+        "optionReview": {
+          "o1": "120’nin Tâif putu.",
+          "o2": "Başka put.",
+          "o3": "Başka put.",
+          "o4": "120’nin Nahle putu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/taif",
+          "locator": "118–120 ve 138–141. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2892,8 +3070,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-taif-heyet",
+        "reviewedCandidateSha256": "f1870561a216c2345a40d8366f9d572ba7de80737883e09a3cca80a7efa2f1bf",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hicrî yıl. 137–138’de altı kişilik heyet ramazan 9’da gelir; önceki 8’deki kuşatmayla karışmamalı. Gün/milâdî takvim ihtilafı sorulmaz.",
+        "optionReview": {
+          "o1": "Başka hicrî yıl.",
+          "o2": "Başka hicrî yıl.",
+          "o3": "Daha sonraki hicrî yıl.",
+          "o4": "137’nin hicrî dokuz yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/taif",
+          "locator": "132–139. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2943,20 +3145,20 @@
         "question": "Tâif Kuşatması sonrasında Hz. Peygamber'in Tâifliler için duasının konusu neydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mallarıyla cezalandırılmaları"
-          },
-          {
-            "id": "o2",
-            "text": "Hiç konuşmamaları"
-          },
-          {
             "id": "o3",
             "text": "Hidayete ermeleri"
           },
           {
+            "id": "o1",
+            "text": "Geçimlerinin genişlemesi"
+          },
+          {
+            "id": "o2",
+            "text": "Hastalarının iyileşmesi"
+          },
+          {
             "id": "o4",
-            "text": "Şehirlerini kaybetmeleri"
+            "text": "Ailelerinin çoğalması"
           }
         ],
         "correctOptionId": "o3",
@@ -2964,20 +3166,51 @@
         "explanation": "TDV Tâif maddesi Hz. Peygamber'den Tâif halkına beddua istenince onun hidayetleri için dua ettiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — taif",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/taif",
-            "locator": "Tâifliler için hidayet duası",
+            "locator": "132–137. satırlar",
             "supports": "TDV Tâif maddesi Hz. Peygamber'den Tâif halkına beddua istenince onun hidayetleri için dua ettiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "grammar-shape",
+          "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-taif-dua",
+        "reviewedCandidateSha256": "8b0237721e903d3bce7728b277418ccbebe72aceafd0ad75c5763d7dfb87be31",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek iyiliğe karşı cezalandırma/susma/şehir kaybı kaldırıldı. Dört olumlu dua amacı; 134’ün belirli hidayet duası bilinmeli.",
+        "optionReview": {
+          "o3": "134’te açık dua.",
+          "o1": "Başka olumlu dua konusu.",
+          "o2": "Başka olumlu dua konusu.",
+          "o4": "Başka olumlu dua konusu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/taif",
+          "locator": "132–137. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3060,8 +3293,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-medine-eski",
+        "reviewedCandidateSha256": "47d8a814de5cdcfdd6aa3ecae652e465b577cd02f56faba11c611d2deb31a065",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Hicaz/bölge yer adı. Yesrib eski ad olup 115–118’de yaygınlığı açıklanır; etimoloji rivayeti kesin kuruluş tarihi diye kullanılmaz.",
+        "optionReview": {
+          "o1": "Başka yer adı.",
+          "o2": "115’in eski adı.",
+          "o3": "Başka yer adı.",
+          "o4": "Başka yer adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/medine",
+          "locator": "111–118. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3108,44 +3365,70 @@
         ]
       },
       "after": {
-        "question": "Hz. Peygamber'in hicretiyle Medine hangi yeni işlevi kazanmıştır?",
+        "question": "Hicretten sonra İslâm toplumunun ilk siyasî merkezi hangi şehir oldu?",
         "options": [
           {
-            "id": "o1",
-            "text": "İslâm toplumunun siyasî ve dinî merkezi olmak"
-          },
-          {
-            "id": "o2",
-            "text": "Bizans'ın yeni başkenti olmak"
-          },
-          {
             "id": "o3",
-            "text": "Bir deniz limanı kurmak"
+            "text": "Tâif"
           },
           {
             "id": "o4",
-            "text": "Bütün kabileleri dağıtmak"
+            "text": "Hayber"
+          },
+          {
+            "id": "o1",
+            "text": "Medine"
+          },
+          {
+            "id": "o2",
+            "text": "Mekke"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "İslâm toplumunun siyasî ve dinî merkezi olmak",
+        "correctAnswer": "Medine",
         "explanation": "TDV Medine maddesi hicretten sonra şehrin İslâm toplumunun kurumsallaştığı siyasî ve dinî merkez hâline geldiğini anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — medine",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/medine",
-            "locator": "Medine hicret sonrası merkez",
+            "locator": "118 ve 129–136. satırlar",
             "supports": "TDV Medine maddesi hicretten sonra şehrin İslâm toplumunun kurumsallaştığı siyasî ve dinî merkez hâline geldiğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-medine-hicret",
+        "reviewedCandidateSha256": "9a6be93254a8853809625a92e850ad90eca163b8e38ace0d0990c5a318dab971",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek gerçekçi uzun merkeze karşı Bizans başkenti/deniz limanı/kabile dağıtma yerine dört yakın dönem şehri. Merkez olma bilgisi sorulur, örnek rakam veya yeni tarih eklenmez.",
+        "optionReview": {
+          "o3": "Başka Hicaz şehri.",
+          "o4": "Başka Hicaz yerleşmesi.",
+          "o1": "118’in başşehri ve 134’ün siyasi birliği.",
+          "o2": "Hicret öncesi tebliğ merkezi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/medine",
+          "locator": "118 ve 129–136. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3195,20 +3478,20 @@
         "question": "Medine'deki Müslüman yerli yardımcılar hangi adla anılır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Muhacir"
-          },
-          {
-            "id": "o2",
-            "text": "Müellefe-i kulûb"
-          },
-          {
             "id": "o3",
-            "text": "Müstensih"
+            "text": "Müellefe-i kulûb"
           },
           {
             "id": "o4",
             "text": "Ensar"
+          },
+          {
+            "id": "o1",
+            "text": "Muhacirler"
+          },
+          {
+            "id": "o2",
+            "text": "Tulekâ"
           }
         ],
         "correctOptionId": "o4",
@@ -3216,20 +3499,46 @@
         "explanation": "Hicret sonrasında Medineli Müslümanlar göçmenlere destek verdikleri için ensar diye anılmıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — medine",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/medine",
-            "locator": "Hicret ve ensar",
+            "locator": "129–136. satırlar",
             "supports": "Hicret sonrasında Medineli Müslümanlar göçmenlere destek verdikleri için ensar diye anılmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-medine-ensar",
+        "reviewedCandidateSha256": "7cb8c9588f16e092c3e27e20a313c623c9dfa13998f5f0e2a8a5d9f507aba402",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kâtip mesleğini anlatan müstensih yerine dört erken İslâm topluluğu terimi. Medineli Evs/Hazrec yardımcılarının unvanı ensardır; göçmen, fetihte serbest bırakılan ve kalbi kazanılanlar aynı terim değil.",
+        "optionReview": {
+          "o3": "Kalpleri kazanılacak topluluk.",
+          "o4": "135–136’nın yerli yardımcıları.",
+          "o1": "Mekke’den göç edenler.",
+          "o2": "Mekke fethi bağlamındaki topluluk."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/medine",
+          "locator": "129–136. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3279,41 +3588,67 @@
         "question": "Hicretin dokuzuncu yılına niçin 'senetü'l-vüfûd' adı verilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kâbe yeniden yapıldığı için"
-          },
-          {
             "id": "o2",
-            "text": "Bedir Savaşı yaşandığı için"
-          },
-          {
-            "id": "o3",
-            "text": "Medine'ye çok sayıda heyet geldiği için"
+            "text": "Medine’ye muhacirlerin yoğun yerleşmesi"
           },
           {
             "id": "o4",
-            "text": "İlk vahiy geldiği için"
+            "text": "Hac için kafilelerin yoğun hazırlanması"
+          },
+          {
+            "id": "o3",
+            "text": "Medine’ye heyetlerin yoğun gelmesi"
+          },
+          {
+            "id": "o1",
+            "text": "Kabilelere elçilerin yoğun gönderilmesi"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Medine'ye çok sayıda heyet geldiği için",
+        "correctAnswer": "Medine’ye heyetlerin yoğun gelmesi",
         "explanation": "TDV Senetü'l-vüfûd maddesi hicrî 9. yılda Hz. Peygamber'i görmeye gelen heyetler yoğunlaştığı için yılın heyetler yılı diye anıldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — senetul-vufud",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
-            "locator": "Hicrî 9 heyetler yılı",
+            "locator": "102–111. satırlar",
             "supports": "TDV Senetü'l-vüfûd maddesi hicrî 9. yılda Hz. Peygamber'i görmeye gelen heyetler yoğunlaştığı için yılın heyetler yılı diye anıldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-senet-vufud",
+        "reviewedCandidateSha256": "7ced36e20d4cf486db8f0d1cb0a99a5e403daf6fdd8eb687e9cd8ff7cea355e7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Farklı yılların ilgisiz dönüm noktaları yerine dört hareketlilik türü. Elçinin gönderilmesi ve heyetin gelmesi ters yönlü işler; vüfûd kelimesinin anlamını bilmek meşru kavram bilgisi.",
+        "optionReview": {
+          "o2": "Hicret hareketi.",
+          "o4": "Hac hareketi.",
+          "o3": "106–108’in gelen heyet yoğunluğu.",
+          "o1": "Ters yönlü elçilik faaliyeti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
+          "locator": "102–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3363,20 +3698,20 @@
         "question": "TDV'ye göre hicretin ikinci yılına 'senetü'l-emr' denilmesinin sebebi nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Veda haccı"
+            "id": "o4",
+            "text": "Mescid-i Nebevî’nin açılması"
           },
           {
             "id": "o2",
             "text": "Savaşa izin verilmesi"
           },
           {
-            "id": "o3",
-            "text": "Mekke'nin fethedilmesi"
+            "id": "o1",
+            "text": "Orucun farz kılınması"
           },
           {
-            "id": "o4",
-            "text": "Tebük seferi"
+            "id": "o3",
+            "text": "İlk ezanın okunması"
           }
         ],
         "correctOptionId": "o2",
@@ -3384,20 +3719,46 @@
         "explanation": "TDV Senetü'l-vüfûd maddesi hicretin ikinci yılına savaş izninin verilmesi sebebiyle senetü'l-emr adı verildiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — senetul-vufud",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
-            "locator": "Hicrî 2 senetü'l-emr",
+            "locator": "102–103. satırlar",
             "supports": "TDV Senetü'l-vüfûd maddesi hicretin ikinci yılına savaş izninin verilmesi sebebiyle senetü'l-emr adı verildiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-senet-emr",
+        "reviewedCandidateSha256": "0e9179faa2f36734cd705df27ce628f8406f4f1b4ca474545dea45caafa16f77",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç özel olay adına karşı tek emir/izin işlemi yerine dört erken dönem dinî düzenleme. Aynı yılda oruç yükümlülüğü de bulunabilir; kök ikinci yıldaki her olayı değil bu özel adın sebebini sorar.",
+        "optionReview": {
+          "o4": "Başka erken dönem kurum açılışı.",
+          "o2": "102’nin adı açıklayan savaş izni.",
+          "o1": "Başka erken dönem düzenleme; adın sebebi değil.",
+          "o3": "Başka erken dönem uygulama."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
+          "locator": "102–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3447,41 +3808,80 @@
         "question": "Hicretin sekizinci yılına verilen 'senetü'l-feth' adı hangi olayla bağlantılıdır?",
         "options": [
           {
+            "id": "o4",
+            "text": "Şam’ın alınması"
+          },
+          {
             "id": "o1",
-            "text": "Mekke'nin fethi"
+            "text": "Mekke’nin alınması"
           },
           {
             "id": "o2",
-            "text": "Hayber Savaşı"
+            "text": "Hayber’in alınması"
           },
           {
             "id": "o3",
-            "text": "Bedir Savaşı"
-          },
-          {
-            "id": "o4",
-            "text": "Akabe Biatı"
+            "text": "Kudüs’ün alınması"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Mekke'nin fethi",
+        "correctAnswer": "Mekke’nin alınması",
         "explanation": "TDV Senetü'l-vüfûd maddesi hicrî sekizinci yıla Mekke'nin fethi sebebiyle fetih yılı adının verildiğini açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — senetul-vufud",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
-            "locator": "Hicrî 8 fetih yılı",
+            "locator": "102–105. satırlar",
             "supports": "TDV Senetü'l-vüfûd maddesi hicrî sekizinci yıla Mekke'nin fethi sebebiyle fetih yılı adının verildiğini açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-senet-fetih",
+        "reviewedCandidateSha256": "e8b78f1692bb173059681bcdac8cbb6a5f4c2256d7ebc3d3bdc24ffa7e529129",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Fetih sözcüğüyle tek fetih şıkkını seçtirme kaldırıldı. Dört tarihî şehir fethi; hicrî sekiz ve özel yıl adı Mekke’yi belirler. Diğer fetihler bu yılda olmuş diye ileri sürülmez.",
+        "optionReview": {
+          "o4": "Daha sonraki dönemin fethi.",
+          "o1": "103’ün hicrî sekiz olayı.",
+          "o2": "Önceki yılın farklı fethi.",
+          "o3": "Daha sonraki dönemin fethi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/senetul-vufud",
+          "locator": "102–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3564,8 +3964,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-veda-tek",
+        "reviewedCandidateSha256": "89c840099d3e1342030780a6ab52cf92c4dccf6298b516b3c931ec3697a44364",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu insan niteliği. Derlenmiş hutbeler metninin 109’unda takvâ üstünlük ölçüsü; tek oturumun kelimesi kelimesine kaydı veya alternatif hak beyannamesi gibi gösterilmez.",
+        "optionReview": {
+          "o1": "Başka olumlu nitelik.",
+          "o2": "Başka olumlu nitelik.",
+          "o3": "Başka olumlu nitelik.",
+          "o4": "109’un üstünlük ölçüsü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/veda-hutbesi",
+          "locator": "98–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3653,8 +4077,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q64-veda-hak",
+        "reviewedCandidateSha256": "49a84e53cdff4a3fbe13b55b4268541a6224dbf05c46e8b61993557b154169be",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumlu hak çifti. 106 ve 109’un açık can/mal dokunulmazlığı diğer hakların değersizliği anlamına gelmez; soru belirli hutbe vurgusuna bağlı.",
+        "optionReview": {
+          "o3": "106 ve 109’un açık hakları.",
+          "o1": "Başka hak çifti.",
+          "o2": "Başka hak çifti.",
+          "o4": "Başka hak çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/veda-hutbesi",
+          "locator": "105–113. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3742,8 +4190,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-22",
+        "reviewedCandidateSha256": "28b482fcf93b9b832762f1c674ae3ae5bd9cc282b01c2dfb0e7f4cc41bd4a8f1",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört olumsuz sonuç. 22’nin kınanmış/yalnızlığa terk edilmiş ifadesi yardımsız kalmayı karşılar; doğru tek olumsuz değil.",
+        "optionReview": {
+          "o1": "22’nin kınanma/terk anlamı.",
+          "o2": "Başka sıkıntı türü.",
+          "o3": "Başka hesap tasviri.",
+          "o4": "Başka âhiret tasviri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/22; PDF sayfa 297 (1 tabanlı), basılı sayfa 296",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3826,8 +4298,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-23",
+        "reviewedCandidateSha256": "cb4ad590e6f46ddec9177502b2f38a94244c07b221f2211df2755bfe0e74208d",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kısa incitici hitap; hepsi olumsuz. 23’teki öf kelimesi özel olarak soruluyor, diğerlerinin anne babaya söylenmesi meşru ilan edilmiyor.",
+        "optionReview": {
+          "o3": "Başka incitici hitap.",
+          "o4": "23’ün açık sözcüğü.",
+          "o1": "Başka incitici hitap.",
+          "o2": "Başka incitici hitap."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/23; PDF sayfa 297 (1 tabanlı), basılı sayfa 296",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3915,8 +4411,32 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-25",
+        "reviewedCandidateSha256": "163506f13c2285f1a4f70c9e8f601f7e5dbfb3ef4b1de321236b62a857e29f66",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gayb/bilgi konusu. Allah diğerlerini bilmez denmiyor; 25’in kalp/iç dünya vurgusu soruluyor, dipnot gönül bağına dikkat çekiyor.",
+        "optionReview": {
+          "o4": "Başka bilgi alanı.",
+          "o3": "25’in kalpteki/içteki durumları.",
+          "o1": "Başka bilgi alanı.",
+          "o2": "Başka bilgi alanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/25; PDF sayfa 297 (1 tabanlı), basılı sayfa 296",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3963,37 +4483,37 @@
         ]
       },
       "after": {
-        "question": "İsrâ 17/28'de yardım edemeyen kişinin ihtiyaç sahibine ne söylemesi öğütlenir?",
+        "question": "İsrâ 17/28’in Kur’an Yolu mealinde yardım edemeyenin söyleyeceği sözün hangi niteliği belirtilir?",
         "options": [
           {
             "id": "o4",
-            "text": "Yardım için karşılık belirleyen söz"
+            "text": "Bilgilendirici"
           },
           {
             "id": "o2",
-            "text": "Kolaylaştırıcı ve gönül alıcı söz"
+            "text": "Rahatlatıcı"
           },
           {
             "id": "o1",
-            "text": "Borcu yazıyla kayda geçiren söz"
+            "text": "Şükrettirici"
           },
           {
             "id": "o3",
-            "text": "Geçmiş iyilikleri hatırlatan söz"
+            "text": "Uyarıcı"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kolaylaştırıcı ve gönül alıcı söz",
+        "correctAnswer": "Rahatlatıcı",
         "explanation": "İsrâ 17/28, ihtiyaç sahibine o anda yardım edemeyen kişinin dahi incitmek yerine gönül alıcı sözlerle davranmasını öğütler.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 17/28; PDF sayfa 298 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Kolaylaştırıcı ve gönül alıcı söz (doğrudan kaynak alıntısı değildir).",
+            "locator": "17/28; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "İsrâ 17/28, ihtiyaç sahibine o anda yardım edemeyen kişinin dahi incitmek yerine gönül alıcı sözlerle davranmasını öğütler.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4004,8 +4524,34 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-28",
+        "reviewedCandidateSha256": "4d14ff4d501bbd3eef54664436b2b00cbc9612040858ff67a74097936ac819ee",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Önceki adayın tek gönül alıcı seçeneğine karşı karşılık/borç/başa kakma çağrışımları kaldırıldı. Dört söz niteliği; mealin rahatlatıcı ifadesi ve dipnotun yatıştırma anlamı aranır.",
+        "optionReview": {
+          "o4": "Başka söz işlevi.",
+          "o2": "Mealin açık niteliği; dipnotta yatıştırıcı.",
+          "o1": "Başka olumlu söz işlevi.",
+          "o3": "Başka söz işlevi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/28; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4052,7 +4598,7 @@
         ]
       },
       "after": {
-        "question": "İsrâ 17/30'da rızıkla ilgili hangi iki karşıt ilâhî tasarruf anılır?",
+        "question": "İsrâ 17/30'a göre rızkı dilediğine genişleten veya daraltan kimdir?",
         "options": [
           {
             "id": "o1",
@@ -4060,15 +4606,15 @@
           },
           {
             "id": "o2",
-            "text": "Yaratmak ve yeniden diriltmek"
+            "text": "Yükseltmek ve alçaltmak"
           },
           {
             "id": "o3",
-            "text": "Bağışlamak ve cezalandırmak"
+            "text": "Güldürmek ve ağlatmak"
           },
           {
             "id": "o4",
-            "text": "Yol göstermek ve uyarmak"
+            "text": "Diriltmek ve öldürmek"
           }
         ],
         "correctOptionId": "o1",
@@ -4079,10 +4625,10 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 17/30; PDF sayfa 298 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Genişletmek ve daraltmak (doğrudan kaynak alıntısı değildir).",
+            "locator": "17/30; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "İsrâ 17/30, rızkın Allah'ın bilgisi ve hikmeti çerçevesinde genişletildiğini veya daraltıldığını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4097,8 +4643,34 @@
         }
       ],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-30",
+        "reviewedCandidateSha256": "cdbf097c58c8f3363291f1cc02aa640b9821eb8487cfb95f5606dacba59666f2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Karşıt denip üç şıkta karşıt olmayan fiil çifti verilmesi giderildi. Dördü de karşıt fiil çifti; rızık bağlamı bolluk/darlık bilgisini gerektirir.",
+        "optionReview": {
+          "o1": "30’un rızık tasarrufu.",
+          "o2": "Başka karşıt fiil çifti.",
+          "o3": "Başka karşıt fiil çifti.",
+          "o4": "Başka karşıt fiil çifti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/30; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4186,8 +4758,32 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-31",
+        "reviewedCandidateSha256": "dc62b824bffeedae4d16f5707bc1996282e16b20b74dff0c243c24c8b0cb28ee",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört korku nedeni, hepsi olumsuz. 31’in geçim korkusu seçilmeli; dipnot değişen biçimlerdeki çocuk öldürmeyi de eleştirir, başka saik meşru sayılmaz.",
+        "optionReview": {
+          "o2": "Başka korku.",
+          "o3": "Başka korku.",
+          "o4": "31’in fakirlik kaygısı.",
+          "o1": "Başka korku."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/31; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4270,8 +4866,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-32",
+        "reviewedCandidateSha256": "369e0ca1405bbc7202dec035f7f696aed2d6545967c925ad72f4ba90b58db7f3",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört ahlâkî ihlal aynı yönelme hâliyle verilmiş; 32’nin zina yasağı özel. Diğer üç ihlalin izinli olduğu söylenmiyor.",
+        "optionReview": {
+          "o1": "Başka ihlal.",
+          "o2": "Başka ihlal.",
+          "o4": "Başka ihlal.",
+          "o3": "32’nin açık yasağı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/32; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4372,8 +4992,32 @@
           "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-33",
+        "reviewedCandidateSha256": "9111e7bbb4a1dd6176b59bd4d393c7e4644732ffb6e204b0325774c1d0d3c5fe",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört korunacak hak aynı alanda. 33’ün insan hayatı vurgusu ve sınırı aşmama dipnotu okundu; basitleştirilmiş seçenekler kendi başına ceza uygulama yetkisi vermez.",
+        "optionReview": {
+          "o1": "Başka hak.",
+          "o3": "Başka hak.",
+          "o4": "Başka hak.",
+          "o2": "33’ün insan hayatı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/33; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4420,44 +5064,70 @@
         ]
       },
       "after": {
-        "question": "İsrâ 17/34'te yetim malına yaklaşmanın hangi amacı taşıması istenir?",
+        "question": "İsrâ 17/34’te yetim malıyla ilgili uyarının ardından hangi yükümlülük hatırlatılır?",
         "options": [
           {
             "id": "o4",
-            "text": "Malı borçlara teminat göstermek"
+            "text": "Konuşurken sesi alçaltmak"
           },
           {
             "id": "o1",
-            "text": "Yetimin yararını gözetmek"
+            "text": "Verilen sözü yerine getirmek"
           },
           {
             "id": "o2",
-            "text": "Mirasçılar arasında eşit paylaşmak"
+            "text": "Ölçüyü tam tutmak"
           },
           {
             "id": "o3",
-            "text": "Malı bağışlayıp tasfiye etmek"
+            "text": "Yoksula yemek vermek"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Yetimin yararını gözetmek",
-        "explanation": "İsrâ 17/34, yetim malına ancak onun yararını gözeten en iyi yolla yaklaşılmasını ve verilen sözlere bağlı kalınmasını emreder.",
+        "correctAnswer": "Verilen sözü yerine getirmek",
+        "explanation": "İsrâ 17/34, yetimin malını onun yararı gözetilerek korumayı ve ahde vefa göstermeyi emreder; âyetin ikinci kısmı verilen sözün sorumluluk doğurduğunu hatırlatır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 17/34; PDF sayfa 298 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Yetimin yararını gözetmek (doğrudan kaynak alıntısı değildir).",
+            "locator": "17/34; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "İsrâ 17/34, yetimin malını onun yararı gözetilerek korumayı ve ahde vefa göstermeyi emreder; âyetin ikinci kısmı verilen sözün sorumluluk doğurduğunu hatırlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-34",
+        "reviewedCandidateSha256": "886cb2da41064efaf58a7e861e2c8cc932b9ed1d3048e189cff55ac2b1c5e91b",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek yararlı amaca karşı üç uygunsuz mal işlemi yerine aynı âyetin ikinci açık öğüdü soruldu. Dört olumlu yükümlülük arasından belirli pasajın ahde vefası seçilmeli.",
+        "optionReview": {
+          "o4": "Başka edep öğüdü.",
+          "o1": "34’ün ikinci cümlesi.",
+          "o2": "35’in farklı öğüdü.",
+          "o3": "Başka iyilik davranışı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/34; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4504,44 +5174,70 @@
         ]
       },
       "after": {
-        "question": "İsrâ 17/35'te ölçü ve tartıda hangi davranış istenir?",
+        "question": "İsrâ 17/35’te ticarî işlemle ilgili hangi iki öğüt birlikte yer alır?",
         "options": [
           {
             "id": "o3",
-            "text": "Yolcunun ihtiyacını gidermek"
+            "text": "Emaneti korumak ve borçluya süre vermek"
           },
           {
             "id": "o4",
-            "text": "Ölçüyü tam tutup doğru tartmak"
+            "text": "Ölçüyü tam tutmak ve doğru tartmak"
           },
           {
             "id": "o1",
-            "text": "Borcu yazıyla kayda geçirmek"
+            "text": "Borcu yazmak ve şahit tutmak"
           },
           {
             "id": "o2",
-            "text": "Şahitleri tarafsız seçmek"
+            "text": "Rızayı gözetmek ve verilen sözü tutmak"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Ölçüyü tam tutup doğru tartmak",
+        "correctAnswer": "Ölçüyü tam tutmak ve doğru tartmak",
         "explanation": "İsrâ 17/35, ölçünün tam tutulmasını ve doğru teraziyle tartılmasını, bunun daha iyi sonuç verdiğini bildirir.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 17/35; PDF sayfa 299 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Ölçüyü tam tutup doğru tartmak (doğrudan kaynak alıntısı değildir).",
+            "locator": "17/35; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "İsrâ 17/35, ölçünün tam tutulmasını ve doğru teraziyle tartılmasını, bunun daha iyi sonuç verdiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-35",
+        "reviewedCandidateSha256": "3474bd58781c0509712a484b830fe0ca9ef74f51a0d3395a0ae6b695517e20c4",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ölçü/tartı sözlerini kökte aynen vererek tek ölçülü şıkkı ele verme giderildi. Dört olumlu ikili ticaret/borç davranışı; yalnız 35’in ikilisi sorulur.",
+        "optionReview": {
+          "o3": "Başka emanet/borç ilkeleri.",
+          "o4": "35’te birlikte bulunan iki iş.",
+          "o1": "Başka borç işlemi öğütleri.",
+          "o2": "Başka işlem ahlakı ilkeleri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/35; PDF sayfa 299 (1 tabanlı), basılı sayfa 298",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4588,7 +5284,7 @@
         ]
       },
       "after": {
-        "question": "İsrâ 17/36'da bilgiyle ilgili hangi davranış yasaklanır?",
+        "question": "İsrâ 17/36’nın ilk cümlesinde hangi davranış yasaklanır?",
         "options": [
           {
             "id": "o3",
@@ -4596,15 +5292,15 @@
           },
           {
             "id": "o1",
-            "text": "Bilgiyi başkasına danışmak"
+            "text": "Bildiği gerçeği gizlemek"
           },
           {
             "id": "o2",
-            "text": "Duyduğu haberi araştırmak"
+            "text": "Yalan şahitlik yapmak"
           },
           {
             "id": "o4",
-            "text": "Delile göre karar vermek"
+            "text": "Başkasının gizlisini araştırmak"
           }
         ],
         "correctOptionId": "o3",
@@ -4615,17 +5311,43 @@
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 17/36; PDF sayfa 299 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Bilmediği şeyin peşine düşmek (doğrudan kaynak alıntısı değildir).",
+            "locator": "17/36; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "İsrâ 17/36, insanın kesin bilgiye sahip olmadığı şeyin peşine düşmemesini; işitme, görme ve gönlün sorumlu tutulacağını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-36",
+        "reviewedCandidateSha256": "8ac055b8d9a35e0487bd3db155e13293b822521a1c51637c246776f517dec842",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek uygunsuz davranışa karşı danışma/araştırma/delil gibi üç iyilik kaldırıldı. Dört sakıncalı bilgi davranışı; ilk cümlenin açık kapsamı belirli.",
+        "optionReview": {
+          "o3": "36’nın bilgi olmadan takip uyarısı.",
+          "o1": "Başka bilgi ahlakı ihlali.",
+          "o2": "Başka şahitlik ihlali.",
+          "o4": "Başka gizlilik ihlali."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/36; PDF sayfa 299 (1 tabanlı), basılı sayfa 298",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4672,44 +5394,70 @@
         ]
       },
       "after": {
-        "question": "İsrâ 17/37'de yeryüzünde hangi yürüyüş tutumu eleştirilir?",
+        "question": "İsrâ 17/37’de kibirli yürüyen insanın neyi yaramayacağı hatırlatılır?",
         "options": [
           {
             "id": "o2",
-            "text": "Kibirli yürümek"
+            "text": "Yeri"
           },
           {
             "id": "o1",
-            "text": "Aceleyle yürümek"
+            "text": "Göğü"
           },
           {
             "id": "o3",
-            "text": "Yavaş yürümek"
+            "text": "Ufku"
           },
           {
             "id": "o4",
-            "text": "Sessiz yürümek"
+            "text": "Denizi"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kibirli yürümek",
-        "explanation": "İsrâ 17/37, insana yeryüzünde böbürlenerek yürümemesini öğütleyerek kibirli davranışın sınırını hatırlatır.",
+        "correctAnswer": "Yeri",
+        "explanation": "İsrâ 17/37, böbürlenerek yürüyen insana yeri yaramayacağını ve dağlarla boy ölçüşemeyeceğini hatırlatarak kibrin temelsizliğini anlatır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 17/37; PDF sayfa 299 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Kibirli yürümek (doğrudan kaynak alıntısı değildir).",
+            "locator": "17/37; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "İsrâ 17/37, böbürlenerek yürüyen insana yeri yaramayacağını ve dağlarla boy ölçüşemeyeceğini hatırlatarak kibrin temelsizliğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-isra-37",
+        "reviewedCandidateSha256": "67e409efc4b1f2e8fe492243be722536f8ad6af2784aaf314386b99f2d6ce2ab",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek ahlâken olumsuz yürüyüşe karşı hız/sessizlik ölçüleri kaldırıldı. Âyetin somut benzetmesi sorulur; ikinci benzetmedeki dağla boy ölçüşme aynı fiilin yanlış şıkkı yapılmadı.",
+        "optionReview": {
+          "o2": "37’nin ilk fiziksel benzetmesi.",
+          "o1": "Başka tabiat unsuru.",
+          "o3": "Başka tabiat unsuru.",
+          "o4": "Başka tabiat unsuru."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/37; PDF sayfa 299 (1 tabanlı), basılı sayfa 298",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4756,44 +5504,70 @@
         ]
       },
       "after": {
-        "question": "Furkân 25/63'te Rahmân'ın kullarının yeryüzündeki yürüyüşü nasıl anlatılır?",
+        "question": "Furkân 25/63’te Rahmân’ın kullarının yeryüzündeki yürüyüşü hangi özellikle anlatılır?",
         "options": [
           {
             "id": "o4",
-            "text": "Gösterişli biçimde"
+            "text": "Kanaat"
           },
           {
             "id": "o1",
-            "text": "Alçak gönüllü biçimde"
+            "text": "Tevazu"
           },
           {
             "id": "o2",
-            "text": "Aceleci adımlarla"
+            "text": "Sabır"
           },
           {
             "id": "o3",
-            "text": "Kararsız adımlarla"
+            "text": "Tevekkül"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Alçak gönüllü biçimde",
+        "correctAnswer": "Tevazu",
         "explanation": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-            "locator": "Kur’an Yolu Meali, 25/63; PDF sayfa 384 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Alçak gönüllü biçimde (doğrudan kaynak alıntısı değildir).",
+            "locator": "25/63; Kur’an Yolu Meal PDF pasajı ve ilgili dipnot",
+            "supports": "Furkân 25/63, Rahmân'ın kullarının yeryüzünde vakar ve tevazu ile yürüdüğünü; cahilce sözlere esenlik dileğiyle karşılık verdiğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q65-furkan-63",
+        "reviewedCandidateSha256": "4eaf372d853e8dcfe9c1ffc76c8f3a3fe1590a3edc37a73ab23369fb948d6ec8",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kullanıcının somut örneği uygulandı: gösteriş/kararsızlık/aceleye karşı tek iyi davranış yerine dört olumlu ahlâk kavramı. Meal vakar der; dipnot hevni tevazu dahil açıklayıp kibir karşıtı sayar. Vakar/hilim eş anlamları yanlış şık yapılmadı.",
+        "optionReview": {
+          "o4": "Başka olumlu erdem.",
+          "o1": "63 dipnotunun tevazu karşılığı.",
+          "o2": "Başka olumlu erdem.",
+          "o3": "Başka olumlu erdem."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Huneyn/Tâif ve Medine olayları önceki tarih paketleriyle; İsrâ/Furkân/Hucurât hedefleri önceki ahlâk sorularıyla karşılaştırıldı. Aynı âyetin farklı cümleleri ayrıldı; kaynakta birden fazla olumlu örnek bulunabilen kökler daraltıldı. Nihai banka çapında tekrar/zorluk ve bağımsız uzman kabulü bekliyor; ID, kategori, conceptGroup ve zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "25/63; PDF sayfa 384 (1 tabanlı), basılı sayfa 383",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }
