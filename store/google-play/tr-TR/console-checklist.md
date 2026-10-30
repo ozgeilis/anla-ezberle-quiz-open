@@ -11,7 +11,7 @@ Uygulama kaydı oluşturuldu ve uygulama paneli açıldı (ürün sahibi beyanı
 | Kalıcı paket | `com.kovynelstudio.anlaezberle`, önceden onaylı. Başka uygulamada kayıtlı olmadığı Console'da henüz doğrulanmadı |
 | Hedef kitle | Son açıklama: yetişkinlere yönelik; çocuk odaklı değil. Okuyabilen çocukların oynayabilmesi ayrı bir hedef yaş seçimi değildir. Gerçek tasarım/görsellerle uyumlu yaş grupları formu hesap sahibiyle kesinleştirilmeli; otomatik 13-altı veya yetişkin kısıtı işaretlenmedi |
 | İçerik derecesi | IARC anketi henüz doldurulmadı; tahmini yaş derecesi yazılmadı. Çevrimiçi kullanıcı etkileşimi ve kişisel profil alanları saklanmamalı |
-| Reklam | Kodda reklam SDK'sı/işlevi bulunmadı; “Hayır” taslağı. Nihai işletme beyanı henüz girilmedi |
+| Reklam | AdMob test dalında native SDK ve test reklamları ekleniyor. Reklam sunan nihai binary için “Evet”; eski reklamsız APK beyanı bu adaya taşınmaz. Console’a henüz kaydedilmedi |
 | Uygulama erişimi | Solo misafir erişimi var; sosyal/oda/sıralama için doğrulanmış yetkili hesap gerekir. İncelemeci erişimi aşağıda |
 | Data Safety | `data-safety-draft.md` doldurma kaynağıdır; “veri toplanmıyor” seçilmez. Kesin veri türü/amaç/opsiyonellik/sağlayıcı rolleri ve saklama eksikleri hesap sahibiyle doğrulanmalı |
 | Gizlilik | https://anla-ezberle-quiz.vercel.app/privacy — erişilebilir, aday metin güncellemesi Production'a otomatik taşınmış sayılmamalı |

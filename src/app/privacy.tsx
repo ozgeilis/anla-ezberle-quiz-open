@@ -60,14 +60,13 @@ export default function PrivacyScreen() {
         <Txt>
           Push gönderimi şu anda yalnız izinli kapalı test hesapları için
           kullanılabilir; genel kullanıma açık değildir. Yalnız isteğin ve
-          telefon izninle cihaz bildirim
-          tokenı, bağlı oturum kimliği, platform ve hesap bazlı bildirim
-          tercihleri saklanır. Gönderim için token ve genel olay mesajı Expo
-          Push Service üzerinden Google FCM veya Apple APNs ile işlenir;
-          e-posta, parola ve soru cevapları push mesajına eklenmez. Bu
-          sağlayıcıların kendi kayıt saklama süreleri ayrıca incelenmelidir. Ana
-          anahtarı kapatmak alt tercihlerini silmez; sistem izni ayrıca telefon
-          ayarlarından yönetilir.
+          telefon izninle cihaz bildirim tokenı, bağlı oturum kimliği, platform
+          ve hesap bazlı bildirim tercihleri saklanır. Gönderim için token ve
+          genel olay mesajı Expo Push Service üzerinden Google FCM veya Apple
+          APNs ile işlenir; e-posta, parola ve soru cevapları push mesajına
+          eklenmez. Bu sağlayıcıların kendi kayıt saklama süreleri ayrıca
+          incelenmelidir. Ana anahtarı kapatmak alt tercihlerini silmez; sistem
+          izni ayrıca telefon ayarlarından yönetilir.
         </Txt>
         <Txt>
           Hesaptan çıkışta bu cihazın push kaydı kapatılır; hesap silmede bağlı
@@ -77,15 +76,41 @@ export default function PrivacyScreen() {
           bildirimi uzaktan geri çağrılamaz. Yalnız sağlayıcı alındısı gerçek
           cihaz teslimi garantisi değildir.
         </Txt>
+        <Txt weight="heavy">İsteğe bağlı reklam testi</Txt>
+        <Txt>
+          Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
+          User Messaging Platform kullanılır. Gerçek gelir sağlayan reklamlar
+          açık değildir. Test reklamları da Google’a ağ bağlantısı kurabilir; IP
+          adresi ve buna bağlı yaklaşık konum, cihaz veya uygulama
+          tanımlayıcıları, reklam etkileşimleri ve tanılama bilgileri reklam
+          sunumu, ölçüm ve kötüye kullanımı önleme için işlenebilir. Test
+          reklamı olması veri işlenmediği anlamına gelmez. Reklam isteğine hesap
+          e-postanı, quiz cevaplarını, skorunu veya dinî ilgi profili eklemeyiz.
+          Android reklam kimliği izni bu test sürümünde engellenir; bu durum
+          diğer teknik tanımlayıcıların hiç işlenmediği garantisi değildir.
+        </Txt>
+        <Txt>
+          Yaş uygunluğu belirtilmemiş veya 18 yaş altında olduğunu belirten
+          kullanıcılarda reklam başlatılmaz. Desteklenen test sürümünde Ayarlar
+          → Gizlilik → Reklam Gizlilik Tercihleri bölümünden yetişkin olduğunu
+          belirtip isteğe bağlı testi açabilirsin. Bu cihaz tercihi ve varsa
+          Google izin formu tamamlanmadan reklam talep edilmez. Google’ın
+          bölgesel izin seçenekleri gerektiğinde aynı bölümden tekrar açılır.
+          Test iznini kapatmak sonraki reklam isteklerini durdurur; oyuna
+          reklamsız devam edebilirsin. Mevcut sağlayıcı kayıtlarını geriye dönük
+          silmez. UMP tek başına bütün yerel yasal yükümlülüklerin karşılandığı
+          anlamına gelmez. Google’ın veri işleme ve saklama koşulları da
+          geçerlidir: https://policies.google.com/privacy
+        </Txt>
         <Txt weight="heavy">Hesabını silmek</Txt>
         <Txt>
           Profil → Ayarlar → Hesap → Hesabımı Sil yolunu veya aşağıdaki web
           sayfasını kullanabilirsin. Uygulamayı yeniden yüklemek gerekmez. İki
           onay ve yeniden kimlik doğrulaması istenir. E-posta/parola hesabında
           güncel parola; desteklenen Google hesabında ise doğrulanmış hesap
-          e-postasına gönderilen tek kullanımlık kod kullanılır. Servis durumu ve işlem sonucu
-          silme sayfasında gösterilir. Destek talebi göndermek hesabın hemen
-          silindiği anlamına gelmez.
+          e-postasına gönderilen tek kullanımlık kod kullanılır. Servis durumu
+          ve işlem sonucu silme sayfasında gösterilir. Destek talebi göndermek
+          hesabın hemen silindiği anlamına gelmez.
         </Txt>
         <Txt>
           Başarılı silmede Auth hesabı ve oturum yenileme kayıtları, çevrimiçi

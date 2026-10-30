@@ -389,3 +389,26 @@ test("original audio files match reproducible manifest, stay bounded and contain
   }
   assert(total < 2_000_000);
 });
+
+test("ad interruption silences active and queued effects without resuming old audio or background audio", async () => {
+  const h = harness();
+  await h.engine.prepare();
+  h.engine.configure(defaults);
+  h.engine.setRoute("/results");
+  h.engine.play("completed", "before-ad");
+  h.engine.play("badge", "queued-before-ad");
+  h.engine.setInterrupted(true);
+  assert.equal(
+    [...h.players.values()].some((p) => p.playing),
+    false,
+  );
+  assert.equal(h.engine.play("correct", "during-ad"), false);
+  h.clock.advance(10000);
+  h.engine.setActive(false);
+  h.engine.setInterrupted(false);
+  assert.equal(h.engine.play("correct", "still-background"), false);
+  assert.deepEqual(h.starts, ["completed"]);
+  h.engine.setActive(true);
+  assert.equal(h.engine.play("correct", "new-foreground"), true);
+  h.engine.dispose();
+});

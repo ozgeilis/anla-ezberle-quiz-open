@@ -12,6 +12,7 @@ import { dateKey, stats } from "../../domain/game/engine";
 import { useGameLibrary } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
 import { HomeActionCard, HomePlayButton } from "./HomeActionCard";
+import { AdBanner } from "../ads/AdBanner";
 
 export function HomeScreen() {
   const router = useRouter();
@@ -121,6 +122,7 @@ export function HomeScreen() {
             </View>
           </View>
           <TextAction title="Nasıl oynanır?" onPress={() => setHelp(true)} />
+          {!help && <AdBanner />}
         </View>
       </ScrollView>
       <Dialog

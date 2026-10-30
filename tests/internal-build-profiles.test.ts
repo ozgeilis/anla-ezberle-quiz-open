@@ -54,6 +54,7 @@ test("the actual EAS hook blocks unapproved store builds and unsafe native publi
       encoding: "utf8",
     });
   assert.equal(run({}).status, 0);
+  assert.equal(run({ EAS_BUILD_PROFILE: "ads-preview" }).status, 0);
   const store = run({ EAS_BUILD_PROFILE: "production" });
   assert.notEqual(store.status, 0);
   assert.match(store.stderr, /owner must approve permanent package ID/);
@@ -68,6 +69,25 @@ test("the actual EAS hook blocks unapproved store builds and unsafe native publi
     }).status,
     0,
   );
+});
+
+test("ad test profiles cannot override distribution, secret checks or use live ads", () => {
+  for (const change of [
+    { distribution: "store" },
+    { extends: "production" },
+    { env: { ADS_MODE: "production", ADS_TEST_BUILD: "1" } },
+  ]) {
+    const altered = copy();
+    altered.build!["ads-preview"] = {
+      ...altered.build!["ads-preview"],
+      ...change,
+    };
+    assert.ok(
+      internalBuildIssues(altered).some((issue) =>
+        issue.includes("isolated test-ad extension"),
+      ),
+    );
+  }
 });
 
 test("closed preview cannot silently become a development or store build", () => {
