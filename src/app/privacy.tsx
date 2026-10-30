@@ -78,6 +78,12 @@ export default function PrivacyScreen() {
         </Txt>
         <Txt weight="heavy">İsteğe bağlı reklam testi</Txt>
         <Txt>
+          Bu web sürümünde reklam gösterilmez. Aşağıdaki açıklamalar yalnız
+          reklam testi içeren Android test sürümleri içindir. Bu test kapsamında
+          Google Analytics veya Firebase Analytics etkinleştirilmez. Reklam
+          SDK’sının aşağıda açıklanan kendi teknik ölçümleri bundan ayrıdır.
+        </Txt>
+        <Txt>
           Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
           User Messaging Platform kullanılır. Gerçek gelir sağlayan reklamlar
           açık değildir. Test reklamları da Google’a ağ bağlantısı kurabilir; IP
