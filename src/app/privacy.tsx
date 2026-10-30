@@ -14,7 +14,7 @@ export default function PrivacyScreen() {
         <Txt weight="heavy" size={20}>
           Verilerin ve hesabın üzerinde kontrol sende
         </Txt>
-        <Txt size={12}>Son güncelleme: 25 Ekim 2026</Txt>
+        <Txt size={12}>Son güncelleme: 30 Ekim 2026</Txt>
         <Txt>
           Anla & Ezberle hizmetini Kovynel Studio sunar. Gizlilik, erişim,
           düzeltme ve hesap silme talepleri için kovynelstudio@gmail.com
@@ -69,6 +69,38 @@ export default function PrivacyScreen() {
           aşan push işlem kayıtlarını temizler. Gönderilmiş bir telefon
           bildirimi uzaktan geri çağrılamaz. Yalnız sağlayıcı alındısı gerçek
           cihaz teslimi garantisi değildir.
+        </Txt>
+        <Txt weight="heavy">İsteğe bağlı reklam testi</Txt>
+        <Txt>
+          Bu web sürümünde reklam gösterilmez. Aşağıdaki açıklamalar yalnız
+          reklam testi içeren Android test sürümleri içindir. Bu test kapsamında
+          Google Analytics veya Firebase Analytics etkinleştirilmez. Reklam
+          SDK’sının aşağıda açıklanan kendi teknik ölçümleri bundan ayrıdır.
+        </Txt>
+        <Txt>
+          Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
+          User Messaging Platform kullanılır. Gerçek gelir sağlayan reklamlar
+          açık değildir. Test reklamları da Google’a ağ bağlantısı kurabilir; IP
+          adresi ve buna bağlı yaklaşık konum, cihaz veya uygulama
+          tanımlayıcıları, reklam etkileşimleri ve tanılama bilgileri reklam
+          sunumu, ölçüm ve kötüye kullanımı önleme için işlenebilir. Test
+          reklamı olması veri işlenmediği anlamına gelmez. Reklam isteğine hesap
+          e-postanı, quiz cevaplarını, skorunu veya dinî ilgi profili eklemeyiz.
+          Android reklam kimliği izni bu test sürümünde engellenir; bu durum
+          diğer teknik tanımlayıcıların hiç işlenmediği garantisi değildir.
+        </Txt>
+        <Txt>
+          Yaş uygunluğu belirtilmemiş veya 18 yaş altında olduğunu belirten
+          kullanıcılarda reklam başlatılmaz. Desteklenen test sürümünde Ayarlar
+          → Gizlilik → Reklam Gizlilik Tercihleri bölümünden yetişkin olduğunu
+          belirtip isteğe bağlı testi açabilirsin. Bu cihaz tercihi ve varsa
+          Google izin formu tamamlanmadan reklam talep edilmez. Google’ın
+          bölgesel izin seçenekleri gerektiğinde aynı bölümden tekrar açılır.
+          Test iznini kapatmak sonraki reklam isteklerini durdurur; oyuna
+          reklamsız devam edebilirsin. Mevcut sağlayıcı kayıtlarını geriye dönük
+          silmez. UMP tek başına bütün yerel yasal yükümlülüklerin karşılandığı
+          anlamına gelmez. Google’ın veri işleme ve saklama koşulları da
+          geçerlidir: https://policies.google.com/privacy
         </Txt>
         <Txt weight="heavy">Hesabını silmek</Txt>
         <Txt>
