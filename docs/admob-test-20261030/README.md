@@ -1,6 +1,6 @@
 # AdMob — yalnız test entegrasyonu, 30 Ekim 2026
 
-**Durum: doğrulama sürüyor; gerçek reklam ve Production kapalı.** Bu belge önceki PR #17 APK’sını reklamlı sürüm olarak sunmaz. Yeni native APK gerekir. Mağazaya yükleme/AAB kabul kapısı değiştirilmedi.
+**Durum: eksik — UMP hesap mesajı bekleniyor; gerçek reklam ve Production kapalı.** [Taslak PR #18](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/18). Bu belge önceki PR #17 APK’sını reklamlı sürüm olarak sunmaz. Yeni native debug/release APK gerçekten üretildi; mağazaya yükleme/AAB kabul kapısı değiştirilmedi.
 
 ## Kaynak ve mimari
 
@@ -72,7 +72,7 @@ Kullanıcı önce hesabın bulunduğunu, uygulama kaydının olmadığını bild
 
 ## Release başlangıç regresyonu
 
-İlk küçültülmüş release APK’sı gerçek API 34 emülatöründe JavaScript başlamadan `WorkDatabase` oluşturulamadığı için çöktü. R8 mapping dosyasında WorkDatabase/WorkDatabase_Impl adları korunmuştu fakat yansıma ile çağrılan boş constructor yoktu. GMA transitive WorkManager 2.7.0/Room 2.2.5 bu yolu kullanır. `plugins/with-admob-workmanager.js` yalnız `androidx.work.impl.WorkDatabase_Impl` ve public boş constructor için kalıcı/idempotent prebuild kuralı ekler. R8/obfuscation tamamen kapatılmadı, bütün AndroidX paketini tutan geniş kural eklenmedi. Yeni release’de constructor ve açılış tekrar doğrulanmadan bu düzeltme native PASS sayılmaz. Önceki hatalı APK kabul dışıdır.
+İlk küçültülmüş release APK’sı gerçek API 34 emülatöründe JavaScript başlamadan `WorkDatabase` oluşturulamadığı için çöktü. R8 mapping dosyasında WorkDatabase/WorkDatabase_Impl adları korunmuştu fakat yansıma ile çağrılan boş constructor yoktu. GMA transitive WorkManager 2.7.0/Room 2.2.5 bu yolu kullanır. `plugins/with-admob-workmanager.js` yalnız `androidx.work.impl.WorkDatabase_Impl` ve public boş constructor için kalıcı/idempotent prebuild kuralı ekler. R8/obfuscation tamamen kapatılmadı, bütün AndroidX paketini tutan geniş kural eklenmedi. Yeni release’de constructor, API 34 ve API 36 açılışı tekrar doğrulandı; crash buffer boştu. Önceki hatalı APK kabul dışıdır.
 
 Kaynak: [Android yansıma/constructor koruma kuralları](https://developer.android.com/topic/performance/app-optimization/keep-rule-examples).
 
@@ -85,3 +85,34 @@ Kaynak: [Android yansıma/constructor koruma kuralları](https://developer.andro
 Platform düzeltmesinden sonraki Android Hermes kaynağında native adaptör ve 91 GMA kaynak modülü doğrulandı. Gerçek UMP çağrısı Google’dan “Publisher misconfiguration … no form(s) configured for the input app ID” döndü. Alınan App ID işletmecinin sağladığı Android kaydıyla aynıydı. Bu sonuç, gerçek test banner/interstitial yüklemesi PASS değildir. Onay kapısı nedeniyle GMA initialize/load başlatılmadı; oyun reklamsız kaldı.
 
 Test sürümünün tam gizlilik metni `PRIVACY-TEST.md` içinde, uygulamadaki politika metninden belge anlık görüntüsü olarak çıkarılmıştır. Mevcut Vercel Production’ı izinsiz değiştirmeden yalnız bu test uygulamasının UMP mesajına kamuya açık test politikası bağlantısı verilebilir. Bu yeni link, Play Console’daki mevcut ana gizlilik URL’sini sessizce değiştirmez. İşletmeci metni ve UMP formunu incelemelidir; genel reklam veya Production yayını onayı değildir.
+
+## Gerçek test sonuçları ve ekran kanıtları
+
+Makine tarafından okunabilir ayrıntılar: [validation.json](validation.json), [native paket](native-bundle.json), [Android ölçüm matrisi](native-layout-results.json), [Chrome matrisi](web-results.json). Native runtime kaynak commit’i `534be90`; sonraki bu kanıt güncellemeleri belge dosyalarıdır.
+
+| Kontrol | Sonuç ve sınır |
+| --- | --- |
+| `pnpm check` | PASS — soru bütünlüğü, TypeScript, lint ve 368/368 test |
+| `pnpm export:web` ve gerçek Chrome | PASS — 24 ekran kontrolü, yatay taşma/JS hatası/reklam ağı isteği yok |
+| Android debug / R8 release | PASS — ikisi de gerçek Gradle derlemesi; eski crash giderildi |
+| Android 14, Google APIs emülatörü | PASS — release açılışı; 320/360/390 dp × açık/koyu × %100/%150/%200 yazı × Ana Sayfa/Gizlilik = 36 kontrol. Yüklenmiş reklam geometrisi bu kapsama dahil değil |
+| Android 16, ayrı boş AOSP emülatörü | PASS — release ve development build açılışı/Gizlilik. Google Play Services yok; reklam teslimi kanıtı değil |
+| Ağ hatası / arka plan / reklamsız oyun | PASS — UMP çevrimdışı hatasından sonra gezinme/arka plandan dönme; 10 gerçek soruluk yerel tur, yanlış ve cevapsız yanıtla tamamlandı ve gerçek sonuç kaydedildi. Sahte oyun kaydı enjekte edilmedi |
+| UMP gerçek çağrısı | BLOKE — Google `no form(s) configured for the input app ID` döndürdü; reklam kapısı açılmadı |
+| Test banner / interstitial gerçek yükleme ve kapanış | DOĞRULANAMADI — yukarıdaki hesap formu engeli. Yüklü reklamda internet kesme, arka plan, çift tetikleme ve izin geri çekme cihaz testleri de bekliyor |
+| Frekans/tekrar/kapanış/ses | Birim/SDK port regresyonları PASS; gerçek reklam sunumu yerine geçmez |
+| Fiziksel Samsung / iOS / gelir / AAB / Play | YAPILMADI — gerçek gelir modu kapalı, iOS runtime kapalı, mağaza onay kapısı korunuyor |
+
+**APK SHA-256:** `c226af9696ecd1ef2b12499718f71588ddc1d75b6f811abc61c906507999981c`; ayrıntılar `validation.json` içindedir. Bu yerel arm64 release APK, Android Debug sertifikasıyla imzalanmış emülatör doğrulama çıktısıdır. Mevcut EAS APK’sının imzası değildir; telefondaki uygulamayı kaldırma veya üzerine uyumsuz paket kurma talimatı verilmez. Fiziksel kabul için aynı mevcut EAS imzasıyla `ads-preview` APK gerekir. API min24/target36/compile37 gerçek APK’dan okundu; reklam kimliği/AdServices izinleri APK’da yok.
+
+Eski API 36 emülatöründe imza uyuşmazlığı saptanınca eski kurulum silinmedi; `AnlaAdsTest36` adlı ayrı boş emülatör kullanıldı. Gerçek kullanıcı hesabı, Supabase veya telefondaki veri bu testler için değiştirilmedi.
+
+Ekran görüntüleri (gerçek uygulama, emülatör; reklam teslimi görseli değildir):
+
+- [Android 14 — 320 dp, açık, varsayılan kapalı](screenshots/android14-320-light-default.png)
+- [Android 14 — 320 dp, koyu, %200 yazı; içerik kaydırılır](screenshots/android14-320-dark-font200.png)
+- [Gerçek UMP hatasında güvenli geri dönüş](screenshots/android14-real-ump-error.png)
+- [Çevrimdışı oynanan turun gerçek kayıtlı sonucu](screenshots/android14-offline-real-result.png)
+- [Android 16 release](screenshots/api36-release-privacy-default.png), [Android 16 development](screenshots/api36-debug-privacy-default.png)
+
+**Kesin sonraki adım:** İşletmeci AdMob → Gizlilik ve mesajlaşma → Avrupa düzenlemeleri içinde bu Android uygulamasının UMP mesajını, [test politikası](PRIVACY-TEST.md) ve görünür reddet/izin ver/seçenekleri yönet erişimleriyle inceleyip yapılandırmalı. Mesaj yayınının ardından aynı native pakette gerçek form, ret/geri çekme, test banner ve interstitial yükleme/kapanış tekrar test edilmeli. İzin kapısını atlamak veya yerine sahte reklam çizmek bu engeli çözmez. Hukuki/Play uygunluğu ve gerçek reklam yayını ayrıca onay ister.
