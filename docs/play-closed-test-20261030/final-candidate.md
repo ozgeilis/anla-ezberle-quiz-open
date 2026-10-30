@@ -11,11 +11,11 @@ Ayrı dal: `release/play-final-candidate-20261030`. PR #18 kaynakları ile main 
 
 ## Console denetimi
 
-Mevcut uygulama/paket doğrulandı; taslak, kişisel hesap, 0 tester, 12 tester/14 kesintisiz gün gerekli, üretim başvurusu kapalı. Gizlilik URL'si, Soru Cevap kategorisi, iş destek e-postası ve mevcut web adresi taslağa kaydedildi. İncelemeye gönderilmedi. [Kontrol listesi](../../store/google-play/tr-TR/console-checklist.md) güncellendi. Ürün sahibi ücretsiz dağıtım ve 13+ hedef kitleyi bu turda onayladı; Console kaydı ayrıca doğrulanacak. Merchant hesap açılmadı.
+Mevcut uygulama/paket doğrulandı; taslak, kişisel hesap, 0 tester, 12 tester/14 kesintisiz gün gerekli, üretim başvurusu kapalı. Gizlilik URL'si, Soru Cevap kategorisi, iş destek e-postası ve mevcut web adresi taslağa kaydedildi. İncelemeye gönderilmedi. [Kontrol listesi](../../store/google-play/tr-TR/console-checklist.md) güncellendi. Ürün sahibi ücretsiz dağıtım ve 13+ hedef kitleyi bu turda onayladı; Ücretsiz fiyatlandırma Console kaydı doğrulandı. Merchant hesap açılmadı.
 
 ## Açık kabul işleri
 
-Aynı EAS imzalı son APK'nın Samsung A04/Android 14 kabulü, gerçek Android OAuth ve ilgili kalan native senaryolar; incelemeci erişimi; Data Safety ve IARC/yaş/reklam beyanları; ücretsiz fiyatlandırmanın Console kaydı; tester/ülke/track; kabul edilmiş SHA için AAB onayı; imzalı AAB/16 KB denetimi; Play yükleme/inceleme ve gerçek kapalı test. Bunların hiçbiri tamamlanmış gösterilmez.
+Aynı EAS imzalı son APK'nın Samsung A04/Android 14 kabulü, gerçek Android OAuth ve ilgili kalan native senaryolar; incelemeci erişimi; Data Safety ve IARC/yaş/reklam beyanları; tester/ülke/track; kabul edilmiş SHA için AAB onayı; imzalı AAB/16 KB denetimi; Play yükleme/inceleme ve gerçek kapalı test. Bunların hiçbiri tamamlanmış gösterilmez.
 
 ## EAS kabul derlemesi
 
@@ -31,3 +31,5 @@ Mağaza metni, ikon, tanıtım görseli ve altı gerçek oyun ekranı Console'a 
 - Frankfurt salt okunur son kontrol: e-posta enrollment/hesap silme/sıralama açık; Google OAuth/silme açık ama Google yeni kayıt kapalı; genel push kapalı; oyuncu profili FORCE RLS açık, enrollment RPC yalnız service-role. Hiçbir canlı kayıt değiştirilmedi.
 - Reklam beyanı test reklamı gösteren adaya göre Evet olarak taslağa kaydedildi; nihai AAB farklı olursa beyan yeniden denetlenir.
 - [İncelemeci erişim planı](reviewer-access-plan.md) en fazla iki yeni sentetik oyuncu ve yalnız Play özel alanına kimlik bilgisi aktarımı için ayrı onay bekliyor.
+
+Son UI engeli: Mac kilitlendi; kalan Console beyanları bekliyor. PR #20 Vercel Preview deploy SUCCESS. Main/Production'a birleşim yapılmadı.
