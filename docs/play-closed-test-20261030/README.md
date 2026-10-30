@@ -59,7 +59,7 @@ Bütünlük: 1.500 benzersiz v73 soru, dört seçenek, geçerli tek cevap anahta
 | Öncelik | Konu | Gereken |
 |---|---|---|
 | Düzeltildi | Activity yenilenmesi sonrası global router çökmesi | Önceki iki APK’da native crash görüldü. `useRouter()` düzeltmesinin yeni APK’sında 3 Activity yenileme/dış bağlantı/başlat/çıkış regresyonu PASS; eski hatalı binary kullanılmaz |
-| P0 | Play uygulama kaydı yok | Kullanıcı beyanı; hesap türü/kimlik doğrulaması/üretim erişimi Console'da doğrulanmadı. Uygulama, IARC, hedef kitle, Data Safety ve erişim formu tamamlanmadan gönderim yok |
+| P0 | Play politika ve erişim formları tamamlanmadı | Uygulama kaydı kullanıcı tarafından oluşturuldu. Hesap türü/kimlik doğrulaması/üretim erişimi bağımsız panel kontrolüyle doğrulanmadı. IARC, hedef kitle, Data Safety ve erişim formu tamamlanmadan gönderim yok |
 | P0 | Store kabul kapısı kapalı | `approved:false`, `acceptedApkSha256:null` korunur. Emülatör fiziksel kabul yerine yazılmaz. Kanıtların incelenmesi ve mevcut kabul koşuluna ilişkin açık ürün sahibi kararı gerekir |
 | P0 | Tam tester erişimi kabulü yok | Misafir solo çalışır. Google yeni kayıt kapalı; yeni test kullanıcılarının mevcut hesap/izin akışı somutlaştırılıp gerçek native OAuth ve hesap izolasyonu doğrulanmalı. Genel signup/push bu amaçla sessizce açılmamalı |
 | P1 | Hedef kitle/politika kesinleştirmesi | Son kullanıcı açıklaması: **ana hedef yetişkinler, çocuk odaklı ürün değil; okuyabilen çocuklar da oynayabilir**. Bu, otomatik “çocuk hedefli” kabul edilmedi. Play yaş grupları henüz seçilmedi; mevcut “Çocuklar İçin” kartı/çocuk görsellerinin beyanla tutarlılığı incelenmeli. Çocuk yaş grubu ayrıca hedeflenirse Families veri/API/sosyal yetişkin kontrolü şartları doğrulanmadan uyum iddiası kurulamaz |
@@ -104,3 +104,9 @@ Kapalı test adayının ek Auth/SDK/mağaza değişiklikleri [taslak PR #17](htt
 ### Güncel main ile çakışmasız aday
 
 PR #17, yayımlanan main ile normal merge üzerinden uzlaştırıldı. Tek çakışma hesap silme ekranındaki `Tap` importuydu; Google yeniden doğrulama arayüzünün kullandığı import korundu. Güvenli silme backend’i değiştirilmedi. Test edilmiş APK kaynak SHA’sı ile uzlaştırılmış head’in `src`, `assets`, uygulama/derleme/bağımlılık/config/Supabase dosyalarının Git ağaçları aynı: `artifact-evidence.json`. Bu yüzden sırf birleştirme geçmişi/rapor için yeni APK üretilmedi; yeni bir binary kabulü de iddia edilmedi.
+
+### Play Console kaydı ve yükleme dosyaları
+
+Ürün sahibi uygulama kaydını oluşturup uygulama panelini açtığını bildirdi (30.10.2026). Bu oturumda Console’a bağımsız erişim yok; kayıt ve beyanlar araçla doğrulanmış sayılmaz. Mağaza metinleri, 32-bit simge, 24-bit tanıtım ve altı gerçek 1080×1920 Android 16 ekranı yüklemeye uygun dosya paketine ayrıldı. `store/google-play/tr-TR/screenshots-manifest.json` kaynak son APK’yı ve değişmeyen RGB piksellerinin hash’lerini belgeler. Uygulama kaynakları, oyun kuralları ve canlı veriler bu paket adımında değiştirilmedi.
+
+Yeni ekranlar Ana Sayfa, Kategoriler, Quiz, Sonuç, Profil ve Rozetler’i gösterir. Sonuçtaki 8 doğru/1 yanlış/1 cevapsız gerçekten oynatılan yerel turdan gelir; profil ilerlemesi bu emülatördeki tamamlanmış turlardır. Fiziksel Samsung testi veya gerçek kullanıcı kaydı olarak sunulmaz. Eski kanıt görüntüleri mağaza oranına uymadıkları için yükleme paketine alınmadı.

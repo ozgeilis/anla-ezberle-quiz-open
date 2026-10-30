@@ -1,6 +1,6 @@
 # Play Console kapalı test giriş taslağı
 
-Henüz uygulama kaydı oluşturulmadı (ürün sahibi beyanı, 30.10.2026). Aşağıdakiler Console'a kaydedilmiş veya onaylanmış beyanlar değildir.
+Uygulama kaydı oluşturuldu ve uygulama paneli açıldı (ürün sahibi beyanı, 30.10.2026; araç üzerinden bağımsız panel doğrulaması yapılamadı). Aşağıdakiler Console'a kaydedilmiş veya onaylanmış beyanlar değildir.
 
 | Alan | Hazırlık / gereken karar |
 |---|---|
@@ -17,9 +17,9 @@ Henüz uygulama kaydı oluşturulmadı (ürün sahibi beyanı, 30.10.2026). Aşa
 | Gizlilik | https://anla-ezberle-quiz.vercel.app/privacy — erişilebilir, aday metin güncellemesi Production'a otomatik taşınmış sayılmamalı |
 | Dış hesap silme | https://anla-ezberle-quiz.vercel.app/account-delete — gerçek güvenli akış; giriş/yeniden doğrulama gerekir |
 | İletişim | `kovynelstudio@gmail.com`, onaylı iş adresi |
-| İkon | `assets/store/play-store-icon-512.png`, 512×512 |
-| Tanıtım | `feature-graphic-1024x500.png`, 1024×500; ayrı tanıtım kompozisyonu |
-| Telefon görüntüleri | `screenshots/phone/` içindeki gerçek Android emülatör yakalamaları; yer tutucu, resim içine çizilmiş sahte UI veya fiziksel Samsung kabulü değildir |
+| İkon | `store/google-play/icon-512.png`, 512×512, 32-bit PNG; uygulama ikonunun RGB pikselleri aynı |
+| Tanıtım | `feature-graphic-1024x500.png`, 1024×500, 24-bit PNG/alfa yok; ayrı tanıtım kompozisyonu |
+| Telefon görüntüleri | `phone-screenshots/` içindeki altı gerçek Android 16 emülatör yakalaması; 1080×1920, 24-bit PNG/alfa yok. Paket dizini `telefon-ekranlari/`. Yer tutucu veya fiziksel Samsung kabulü değildir |
 | Ülkeler | Henüz seçilmedi. Türkçe ve ilgili içerik için hedef ülkeler kararı gerekli |
 | Tester grubu | Henüz oluşmadı; tester e-posta listeleri Git'e eklenmez |
 | Play App Signing | Console'da kurulmadı. Preview sertifikası mağaza imza onayı değildir; upload anahtarı hesabın güvenli saklama düzeniyle kesinleşmeli |
@@ -44,3 +44,9 @@ Google testing izin listesi ve Supabase kimlikleri farklı şeylerdir. Google ye
 4. Hangi AAB SHA'sının, hangi kapalı track ve ülke/tester grubuna yükleneceğini göstererek ayrı son gönderim onayı al. Otomatik submit yok.
 5. Google incelemesi ve Pre-launch report sonuçlarını incele; P0/ANR/crash engellerini düzelt.
 6. Gerçek katılım/opt-in olduktan sonra tester sürelerini takip et. İnceleme bitmeden “indirilebilir”, gereken süre dolmadan “üretim erişimine uygun” deme.
+
+## Mağaza görsellerinin teknik kabulü
+
+Altı yeni telefon görüntüsü son APK’da gerçek yerel oyun akışından alındı; kodlanmış RGB pikselleri yakalamayla aynı. Önceki çok uzun test görüntüleri mağaza dosyası olarak kullanılmadı. `screenshots-manifest.json` kaynak APK, kaynak yakalama hash’leri ve yükleme dosyası/RGB hash’lerini içerir. Onaylı uygulama görselleri değişmedi; mağaza ikonunun yalnız opak alfa kanalı eklendi, tanıtım ve ekran görüntülerinin opak alfa kanalı kaldırıldı. Her PNG boyutu, türü, dosya sınırı ve ekran oranı doğrulandı. Dosya uygunluğu görsel hakları veya Play inceleme onayı değildir.
+
+[Resmî grafik koşulları](https://support.google.com/googleplay/android-developer/answer/9866151) (30.10.2026): simge 512×512/32-bit; tanıtım 1024×500/24-bit; telefon görüntüsü en az 320/en çok 3840 px, uzun kenar kısa kenarın en fazla iki katı, alfa yok.
