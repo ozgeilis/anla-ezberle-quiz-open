@@ -20,7 +20,7 @@ import {
   View,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { router, Stack, usePreventRemove } from "expo-router";
+import { useRouter, Stack, usePreventRemove } from "expo-router";
 import {
   Book,
   Scene,
@@ -50,6 +50,7 @@ import {
 } from "../../theme/tokens";
 
 export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
+  const router = useRouter();
   const { play } = useSound();
   const solo = useGame();
   const duel = useDuel();

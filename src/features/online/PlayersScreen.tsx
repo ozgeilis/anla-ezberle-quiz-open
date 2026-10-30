@@ -2,7 +2,7 @@ import { PublicAchievements } from "../achievements/PublicAchievements";
 import { useInbox } from "./InboxProvider";
 import React, { useEffect, useRef, useState } from "react";
 import { TextInput, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Avatar } from "../../components/game/Artwork";
 import { Button, Card, Page, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
@@ -16,6 +16,7 @@ export function PlayersScreen() {
   return <Players key={session?.user.id ?? "guest"} />;
 }
 function Players() {
+  const router = useRouter();
   const theme = useTheme();
   const inbox = useInbox();
   const { session } = useOnlineAuth();

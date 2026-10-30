@@ -1,10 +1,11 @@
 import React from "react";
 import { View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Icon, Tap, Txt } from ".";
 import { colors as c } from "../../theme/tokens";
 import { useInbox } from "../../features/online/InboxProvider";
 export function SettingsButton() {
+  const router = useRouter();
   return (
     <Tap
       label="Ayarlar"
@@ -16,6 +17,7 @@ export function SettingsButton() {
   );
 }
 export function NotificationsButton() {
+  const router = useRouter();
   const { unreadCount } = useInbox();
   return (
     <Tap

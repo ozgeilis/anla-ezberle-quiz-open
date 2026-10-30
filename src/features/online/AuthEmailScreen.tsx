@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { TextInput, View } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { Button, Card, Page, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useOnlineAuth } from "./OnlineProvider";
@@ -12,6 +12,7 @@ export function AuthEmailScreen({
 }: {
   mode: "recovery" | "verification";
 }) {
+  const router = useRouter();
   const theme = useTheme(),
     auth = useOnlineAuth();
   const params = useLocalSearchParams<{ email?: string }>();

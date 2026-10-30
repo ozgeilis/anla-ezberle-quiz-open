@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Icon, type IconName, Tap, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 
@@ -60,6 +60,7 @@ export function SettingsFrame({
   title,
   children,
 }: React.PropsWithChildren<{ title: string }>) {
+  const router = useRouter();
   const t = useTheme();
   return (
     <View style={{ flex: 1, backgroundColor: t.background }}>

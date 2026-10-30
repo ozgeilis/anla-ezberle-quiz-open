@@ -2,7 +2,7 @@ import { useSound } from "../audio/SoundProvider";
 import { stageDefinition } from "../../domain/game/stages";
 import React, { useEffect, useState } from "react";
 import { Platform, Share, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Chip, Dialog, TextAction, Txt } from "../../components/ui";
 import { resultPresentation } from "../results/presentation";
 import { ResultExperience } from "../results/ResultExperience";
@@ -12,6 +12,7 @@ import { useGame } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
 
 export function ResultsScreen() {
+  const router = useRouter();
   const { data, result, start, saving, saveResult } = useGame();
   const { play } = useSound();
   const theme = useTheme();

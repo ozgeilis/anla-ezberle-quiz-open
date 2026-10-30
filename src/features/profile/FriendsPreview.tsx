@@ -1,11 +1,12 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Avatar } from "../../components/game/Artwork";
 import { Card, Icon, Tap, TextAction, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useProfileFriends } from "./useProfileFriends";
 export function FriendsPreview() {
+  const router = useRouter();
   const { friends, loading, error, signedIn } = useProfileFriends(),
     t = useTheme();
   const open = () => router.push("/online/players");

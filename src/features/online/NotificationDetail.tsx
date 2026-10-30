@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Avatar } from "../../components/game/Artwork";
 import { Button, Dialog, TextAction, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
@@ -21,6 +21,7 @@ export function NotificationDetail({
   selection: InboxSelection;
   onClose: () => void;
 }) {
+  const router = useRouter();
   const { fontScale } = useWindowDimensions();
   const { session } = useOnlineAuth(),
     inbox = useInbox(),

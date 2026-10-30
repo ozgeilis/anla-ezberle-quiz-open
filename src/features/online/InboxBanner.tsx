@@ -1,10 +1,11 @@
 import React from "react";
 import { View } from "react-native";
-import { router, usePathname } from "expo-router";
+import { useRouter, usePathname } from "expo-router";
 import { Tap, Txt, Icon } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useInbox, notificationTitle } from "./InboxProvider";
 export function InboxBanner() {
+  const router = useRouter();
   const inbox = useInbox(),
     theme = useTheme(),
     path = usePathname();

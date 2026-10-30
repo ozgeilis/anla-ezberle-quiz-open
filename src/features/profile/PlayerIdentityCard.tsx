@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Avatar, Pattern } from "../../components/game/Artwork";
 import { Icon, Tap, Txt } from "../../components/ui";
 import { ProgressMeter } from "../../components/ui/visuals";
@@ -18,6 +18,7 @@ export function PlayerIdentityCard({
   avatar: number;
   progress: ReturnType<typeof progress>;
 }) {
+  const router = useRouter();
   return (
     <LinearGradient
       colors={["#0B6863", "#074B4D", "#073C40"]}

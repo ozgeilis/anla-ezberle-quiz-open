@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ScrollView, View, useWindowDimensions } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { HomeTitlePlaque } from "../../components/game/HomeTitlePlaque";
 import {
   PlayerHeader,
@@ -14,6 +14,7 @@ import { useTheme } from "../../theme/tokens";
 import { HomeActionCard, HomePlayButton } from "./HomeActionCard";
 
 export function HomeScreen() {
+  const router = useRouter();
   const { data, start } = useGameLibrary(),
     theme = useTheme(),
     { fontScale } = useWindowDimensions();

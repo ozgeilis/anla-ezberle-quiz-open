@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Card, Tap, TextAction, Txt } from "../../components/ui";
 import { BadgeArt } from "../achievements/BadgeArt";
 import { useAchievements } from "../achievements/AchievementProvider";
@@ -8,6 +8,7 @@ import { useGameLibrary } from "../../storage/GameProvider";
 import { showcaseBadges } from "../achievements/presentation";
 import { useTheme } from "../../theme/tokens";
 export function BadgeShowcase() {
+  const router = useRouter();
   const { badges } = useAchievements(),
     { data } = useGameLibrary(),
     t = useTheme();

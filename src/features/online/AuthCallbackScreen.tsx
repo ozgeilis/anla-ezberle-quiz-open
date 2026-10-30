@@ -2,7 +2,7 @@ import { completeGoogleAuth, hasGoogleAttempt } from "./googleAuth";
 import React, { useEffect, useRef, useState } from "react";
 import { Platform, TextInput, View } from "react-native";
 import * as Linking from "expo-linking";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Page, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { onlineClient } from "./client";
@@ -11,6 +11,7 @@ import { verifyEmailLink } from "./verifyLink";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { useOnlineAuth } from "./OnlineProvider";
 export function AuthCallbackScreen() {
+  const router = useRouter();
   const incoming = Linking.useURL(),
     theme = useTheme(),
     auth = useOnlineAuth();

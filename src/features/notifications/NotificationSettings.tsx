@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Linking, Switch, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Dialog, Icon, IconName, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useOnlineAuth } from "../online/OnlineProvider";
@@ -39,6 +39,7 @@ const kinds: {
   },
 ];
 export function NotificationSettings() {
+  const router = useRouter();
   const { session } = useOnlineAuth(),
     push = usePush(),
     t = useTheme(),

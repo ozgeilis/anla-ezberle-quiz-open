@@ -1,7 +1,8 @@
 import React from "react";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Page, Txt } from "../components/ui";
 export default function NotFound() {
+  const router = useRouter();
   return (
     <Page
       title="Bu ekranı bulamadık"

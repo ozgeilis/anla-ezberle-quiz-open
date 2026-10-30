@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { pushRequest } from "./api";
 import * as device from "./device";
 import {
@@ -23,6 +23,7 @@ export function usePendingPush({
   navigationKey: string | undefined;
   refresh: () => Promise<void>;
 }) {
+  const router = useRouter();
   const [pending, setPending] = useState<PushEnvelope | null>(null);
   const [notice, setNotice] = useState("");
   useEffect(() => {
@@ -114,7 +115,7 @@ export function usePendingPush({
     return () => {
       cancelled = true;
     };
-  }, [pending, actor, authReady, gameReady, navigationKey]);
+  }, [pending, actor, authReady, gameReady, navigationKey, router]);
   return pending && actor && pending.recipientId !== actor
     ? "Bu bildirim başka bir hesabına ait. İlgili hesabınla giriş yap."
     : notice;

@@ -1,4 +1,4 @@
-import { router, useLocalSearchParams } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { BackButton } from "../../components/ui/BackButton";
 import React, { useState } from "react";
 import { FlatList, View, useWindowDimensions } from "react-native";
@@ -14,6 +14,7 @@ import { BadgeArt } from "./BadgeArt";
 import { badgePresentation, badgeProgressCaption } from "./presentation";
 
 export function AchievementsScreen() {
+  const router = useRouter();
   const { data, updateShowcase } = useGame(),
     { badges, error, refresh } = useAchievements(),
     t = useTheme();

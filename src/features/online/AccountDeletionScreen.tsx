@@ -3,7 +3,7 @@ import { Linking, TextInput } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { deletionCacheKeys } from "./deletionLocal";
 import { useGame } from "../../storage/GameProvider";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Dialog, Page, Tap, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useOnlineAuth } from "./OnlineProvider";
@@ -23,6 +23,7 @@ function AccountDeletionForm({
 }: {
   onServerDeleted: (actor: string) => void;
 }) {
+  const router = useRouter();
   const auth = useOnlineAuth(),
     theme = useTheme();
   const { updateProfile } = useGame();

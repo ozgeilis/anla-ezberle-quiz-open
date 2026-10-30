@@ -1,9 +1,10 @@
 import React from "react";
 import { Linking } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Page, Txt } from "../components/ui";
 
 export default function PrivacyScreen() {
+  const router = useRouter();
   return (
     <Page
       title="Gizlilik Politikası"

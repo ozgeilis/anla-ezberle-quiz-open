@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Switch, View } from "react-native";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Button, Card, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useGame } from "../../storage/GameProvider";
@@ -12,6 +12,7 @@ export function ProfileAchievements({
 }: {
   editable?: boolean;
 }) {
+  const router = useRouter();
   const { data } = useGame(),
     { badges, social, saveSharing, error } = useAchievements(),
     theme = useTheme();
