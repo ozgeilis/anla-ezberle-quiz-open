@@ -198,7 +198,12 @@ CREATE OR REPLACE FUNCTION quiz_private.live_guard_room()
  SET search_path TO ''
 AS $function$
 BEGIN
- if current_user='postgres' and nullif(current_setting('anla.erasing_actor',true),'') is not null then return new; end if;
+ -- Preserve the deployed erasure exception exactly: only its host identity
+ -- and the cancellation fields may change. The timer/manifest remain frozen.
+ if current_user='postgres' and nullif(current_setting('anla.erasing_actor',true),'') is not null
+ and to_jsonb(new)-ARRAY['host_id','state','phase','revision']=to_jsonb(old)-ARRAY['host_id','state','phase','revision']
+ and (new.host_id IS NOT DISTINCT FROM old.host_id OR (old.host_id=nullif(current_setting('anla.erasing_actor',true),'')::uuid AND new.host_id IS NULL))
+ and ((new.state=old.state AND new.phase=old.phase AND new.revision=old.revision) OR (old.state NOT IN('completed','expired','cancelled') AND new.state='cancelled' AND new.phase='cancelled' AND new.revision=old.revision+1)) then return new; end if;
  IF old.state IN('completed','cancelled','expired') THEN RAISE EXCEPTION 'Terminal room is immutable'; END IF;
  IF new.answer_seconds<>old.answer_seconds OR new.id<>old.id OR new.code<>old.code OR new.host_id<>old.host_id OR new.request_id<>old.request_id OR new.dataset<>old.dataset OR new.created_at<>old.created_at THEN RAISE EXCEPTION 'Room identity is immutable';END IF;
  IF old.start_at IS NOT NULL AND (new.start_at IS DISTINCT FROM old.start_at OR new.manifest IS DISTINCT FROM old.manifest OR new.set_hash IS DISTINCT FROM old.set_hash OR new.topic<>old.topic OR new.level<>old.level OR new.question_count<>old.question_count OR new.expires_at<>old.expires_at) THEN RAISE EXCEPTION 'Started manifest and deadlines are immutable';END IF;

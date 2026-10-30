@@ -128,6 +128,7 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
     "async_recent_questions.sql",
     "live_recent_questions.sql",
     "live_ten_seconds.sql",
+    "live_erasure_guard.sql",
   ])
     console.log(sql(readFileSync(`supabase/tests/${file}`, "utf8")));
   console.log(

@@ -1,5 +1,12 @@
 # v73 etkinleştirme ve çevrimiçi geçiş
 
+**30.10.2026 güncel durum:** PR #15 `3d14c9c` ile main'e alındı; Vercel
+Production v73/1500 ve dört gerçek tarayıcı turu doğrulandı. Supabase erişimi
+sağlandı; salt okunur ön kontrol tamamlandı. Hiçbir canlı migration/yükleme/switch
+uygulanmadı. 10 saniyelik önkoşulda silme güvenliği regresyonu tespit edildi ve
+izole testte düzeltildi. Hash'i değişen önkoşul ve ücretsiz planın yedek sınırı
+için [güncel plan](CANONICAL-V73-PREFLIGHT-20261030.md) onayı beklenir.
+
 Ürün sahibi 30.10.2026 tarihinde **“v73 aktif soru bankası olsun”** talimatını verdi.
 Bu izin PR #12’nin `fa81d1c` kontrol noktasındaki 1.500 soruluk içeriğin yayımlanmasına
 aittir. Bağımsız ilahiyat uzmanı kabulü yoktur; varmış gibi işaretlenmedi.
