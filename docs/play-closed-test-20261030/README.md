@@ -94,3 +94,9 @@ Sıra: aday APK/kanıt incelemesi → yaş/hedef kitle ve Console kayıt/formlar
 ## Arayüzün ana sürüme alınması
 
 Kullanıcının sonraki açık talimatıyla PR #14 main’e birleştirildi: **`89ed63edc5818ba5eb2054a0cd7fabfb415b07c6`**. Profil/kategori/ayarlar gibi önceki UI çalışmaları zaten main’deydi; kalan renkli ana sayfa, skor görünümü ve köke bağlı gezinme de eklendi. PR #13 taslak Google kodu bu UI merge’üne dahil edilmedi. Main için 351/351 yerel test ve güncel PR başlığının bütün GitHub kontrolleri PASS. Android kapalı test raporundaki ek yamalar/mağaza hazırlığı ayrı PR’dadır. Bu ana sürüm izni, AAB veya Play son gönderim onayı yerine kullanılmaz.
+
+### Main/Vercel yayın doğrulaması
+
+PR #14 merge SHA `89ed63edc5818ba5eb2054a0cd7fabfb415b07c6` için GitHub Vercel status **success**: https://vercel.com/ozgeilis-6528/anla-ezberle-quiz/6fwBdzsT3L9ssQR89yDhnRqCLvMr . Mevcut Production adresinde gerçek Chrome ile sayfanın asenkron içeriği hazır olana kadar beklenip Ana Sayfa, Kategoriler, Profil, Rozetler, Ayarlar, misafir Inbox ve oda kapısı olmak üzere 7 rota açıldı; yatay taşma/pageerror görülmedi. `compact-home` ve renkli günlük kart bileşeni doğrulandı. İlk ağ-idle yakalamaları içerik yüklenmeden alınmıştı; görsel kabul sayılmadı, içerik hazır kontrolüyle yenilendi. Production ana sayfa görüntüsü `screenshots/production-home.png`. Kullanıcı hesabı açılmadı/değiştirilmedi.
+
+Kapalı test adayının ek Auth/SDK/mağaza değişiklikleri [taslak PR #17](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/17) içinde kaldı. Bu taslağın Vercel Preview durumu başarılı; taslak PR için tüm GitHub Actions çalışmış gibi gösterilmez. Ayrıntılı yerel kontroller ve gerçek APK SHA'sı yukarıdadır.
