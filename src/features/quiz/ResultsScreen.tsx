@@ -10,11 +10,13 @@ import { formatTime, stats } from "../../domain/game/engine";
 import { progress } from "../../domain/scoring/progress";
 import { useGame } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
+import { useAds } from "../ads/AdProvider";
 
 export function ResultsScreen() {
   const router = useRouter();
   const { data, result, start, saving, saveResult } = useGame();
   const { play } = useSound();
+  const ads = useAds();
   const theme = useTheme();
   const [shareOpen, setShareOpen] = useState(false),
     [optionsOpen, setOptionsOpen] = useState(false),
@@ -154,13 +156,13 @@ export function ResultsScreen() {
           }
           icon="play"
           disabled={saving || !saved}
-          onPress={replay}
+          onPress={() => ads.transition(result.id, replay)}
         />
         <Button
           title="Ana Sayfaya Dön"
           icon="home"
           variant="outline"
-          onPress={home}
+          onPress={() => ads.transition(result.id, home)}
         />
         <Txt
           accessibilityLiveRegion="polite"

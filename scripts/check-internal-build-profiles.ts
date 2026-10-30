@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 export interface InternalProfile {
+  extends?: string;
   distribution?: string;
   developmentClient?: boolean;
   environment?: string;
@@ -31,9 +32,40 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
     return [...issues, "Missing build profiles"];
 
   const expected = ["development", "development-simulator", "preview"];
+  const adsProfiles = {
+    "ads-preview": "preview",
+    "ads-development": "development",
+  };
   for (const name of Object.keys(build)) {
-    if (!expected.includes(name) && name !== "production")
+    if (
+      !expected.includes(name) &&
+      name !== "production" &&
+      !(name in adsProfiles)
+    )
       issues.push(`Unexpected build profile: ${name}`);
+  }
+  for (const [name, parent] of Object.entries(adsProfiles)) {
+    const profile = build[name];
+    if (
+      profile &&
+      (profile.extends !== parent ||
+        Object.keys(profile).some(
+          (key) => key !== "extends" && key !== "env",
+        ) ||
+        profile.env?.ADS_MODE !== "test" ||
+        profile.env?.ADS_TEST_BUILD !== "1" ||
+        Object.keys(profile.env ?? {}).some(
+          (key) =>
+            !["ADS_MODE", "ADS_TEST_BUILD", "ADMOB_ANDROID_APP_ID"].includes(
+              key,
+            ),
+        ) ||
+        (profile.env?.ADMOB_ANDROID_APP_ID !== undefined &&
+          !/^ca-app-pub-\d{16}~\d{10}$/.test(profile.env.ADMOB_ANDROID_APP_ID)))
+    )
+      issues.push(
+        `${name}: only an isolated test-ad extension of the reviewed internal profile is permitted`,
+      );
   }
   for (const name of expected) {
     const profile = build[name];

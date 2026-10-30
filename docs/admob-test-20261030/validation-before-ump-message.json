@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-30",
+  "status": "incomplete: publisher UMP configuration required",
+  "pr": "https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/18",
+  "baseCommit": "0109efb6d25c9e77e95fda0664a6ae6b5c43bcdd",
+  "runtimeSourceCommit": "534be90",
+  "sdk": {
+    "expo": "58.0.21",
+    "reactNative": "0.88.1",
+    "reactNativeGoogleMobileAds": "17.4.0",
+    "androidGma": "25.5.0",
+    "androidUmp": "4.0.0"
+  },
+  "appId": "ca-app-pub-9642662711398587~8836643534",
+  "adUnitIds": "SDK TestIds.ADAPTIVE_BANNER and TestIds.INTERSTITIAL only",
+  "checks": {
+    "pnpmCheck": {
+      "status": "PASS",
+      "tests": 368,
+      "failed": 0,
+      "includes": [
+        "questions:check",
+        "typecheck",
+        "lint",
+        "test"
+      ]
+    },
+    "webExport": {
+      "status": "PASS"
+    },
+    "realChrome": {
+      "status": "PASS",
+      "screenChecks": 24,
+      "nativeAds": false
+    },
+    "android14ReleaseLayouts": {
+      "status": "PASS",
+      "screenChecks": 36,
+      "widthsDp": [
+        320,
+        360,
+        390
+      ],
+      "fontScales": [
+        1,
+        1.5,
+        2
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "scope": "home and ad privacy with ads fail-closed; not loaded ad geometry"
+    },
+    "androidDebugBuild": {
+      "status": "PASS",
+      "runtimeSource": "Metro current source after platform fix"
+    },
+    "androidReleaseBuild": {
+      "status": "PASS",
+      "optimized": true,
+      "crashRegression": "WorkDatabase_Impl reflected constructor kept; actual startup retested"
+    },
+    "android14ReleaseStartup": {
+      "status": "PASS",
+      "image": "google_apis"
+    },
+    "android16ReleaseAndDebugStartup": {
+      "status": "PASS",
+      "image": "AOSP default; no GMS, not real ad delivery"
+    },
+    "offlineRound": {
+      "status": "PASS",
+      "actualQuestionsPlayed": 10,
+      "scope": "synthetic local profile, no signed-in account; timeout/wrong answers and saved actual result"
+    },
+    "backgroundResumeWithoutAd": {
+      "status": "PASS",
+      "scope": "consent failure, home/categories navigation, no ad open"
+    },
+    "realUmpRequest": {
+      "status": "BLOCKED",
+      "providerResponse": "Publisher misconfiguration: no form(s) configured for the input app ID"
+    },
+    "realTestBanner": {
+      "status": "NOT_VERIFIED",
+      "reason": "consent gate remains closed"
+    },
+    "realTestInterstitialLoadClose": {
+      "status": "NOT_VERIFIED",
+      "reason": "consent gate remains closed"
+    },
+    "nativeAdConcurrencyAndBackground": {
+      "status": "NOT_VERIFIED",
+      "unitPortTests": "PASS; not a native-delivery result"
+    },
+    "physicalSamsung": {
+      "status": "NOT_RUN"
+    },
+    "iOSNative": {
+      "status": "NOT_RUN",
+      "adRuntimeEnabled": false
+    },
+    "aabAndPlayUpload": {
+      "status": "NOT_RUN",
+      "existingApprovalGateUnchanged": true
+    }
+  },
+  "localReleaseApk": {
+    "sha256": "c226af9696ecd1ef2b12499718f71588ddc1d75b6f811abc61c906507999981c",
+    "sizeBytes": 47447514,
+    "minimumApi": 24,
+    "targetApi": 36,
+    "compileApi": 37,
+    "abi": "arm64-v8a",
+    "signer": "local Android Debug certificate; NOT the existing EAS update certificate",
+    "use": "emulator validation only; do not uninstall/replace existing user app"
+  },
+  "manifest": {
+    "AD_ID": false,
+    "AD_SERVICES_AD_ID": false,
+    "AD_SERVICES_ATTRIBUTION": false,
+    "AD_SERVICES_TOPICS": false
+  },
+  "unchanged": [
+    "main",
+    "Vercel Production",
+    "Supabase",
+    "question banks and images",
+    "Google Play upload approval gate",
+    "real users"
+  ],
+  "productionRevenueEnabled": false,
+  "remaining": [
+    "Publisher must review and configure/publish UMP test message",
+    "Real banner/interstitial load/close and consent revoke/reject native tests",
+    "Physical Samsung acceptance using matching EAS signature",
+    "iOS native build/consent/device acceptance before enabling iOS",
+    "Age/target audience and privacy/Data Safety/AdMob blocking controls review before any store/live ad release"
+  ]
+}

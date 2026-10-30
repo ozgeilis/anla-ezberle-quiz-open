@@ -1,5 +1,7 @@
 # Android kapalı test adayı — 30 Ekim 2026
 
+> Bu rapor PR #17’nin reklamsız APK kanıtıdır. AdMob test dalının yeni native binary’si ve farklı reklam/gizlilik beyanı için `docs/admob-test-20261030/README.md` esas alınır; aşağıdaki eski APK reklamlı sürüm olarak sunulmaz.
+
 **Mağazaya gönderime hazır: HAYIR.** Teknik aday ve gerçek emülatör kanıtları hazırlanmıştır; aşağıdaki kabul ve Play Console adımları henüz tamamlanmamıştır. Bu rapor fiziksel Samsung kabulü, bağımsız dinî uzman onayı veya Google inceleme onayı değildir.
 
 ## Kapsam ve sürüm

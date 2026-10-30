@@ -1,0 +1,367 @@
+{
+  "device": "fresh AnlaAdsTest34 emulator",
+  "api": 34,
+  "scope": "real release UI, not real physical device/ad delivery",
+  "checks": [
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-light-1.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-light-1.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.5,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-light-1.5-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.5,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-light-1.5-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 2.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-light-2.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 2.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-light-2.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-dark-1.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-dark-1.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.5,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-dark-1.5-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.5,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-dark-1.5-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 2.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-dark-2.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 320,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 2.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-320-dark-2.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-light-1.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-light-1.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.5,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-light-1.5-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.5,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-light-1.5-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 2.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-light-2.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 2.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-light-2.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-dark-1.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-dark-1.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.5,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-dark-1.5-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.5,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-dark-1.5-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 2.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-dark-2.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 360,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 2.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-360-dark-2.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-light-1.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-light-1.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.5,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-light-1.5-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 1.5,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-light-1.5-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 2.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-light-2.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "light",
+      "fontScale": 2.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-light-2.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-dark-1.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-dark-1.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.5,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-dark-1.5-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 1.5,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-dark-1.5-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 2.0,
+      "route": "settings/privacy",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-dark-2.0-ad-privacy.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    },
+    {
+      "widthDp": 390,
+      "heightDp": 844,
+      "theme": "dark",
+      "fontScale": 2.0,
+      "route": "/",
+      "visibleHorizontalOverflow": false,
+      "screenshot": "api34-390-dark-2.0-home.png",
+      "adContent": "none: unknown-age fail-closed; no loaded banner or fullscreen ad claimed"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 
 const profile = process.env.EAS_BUILD_PROFILE;
 const android = process.env.EAS_BUILD_PLATFORM === "android";
-if (android && ["preview", "production"].includes(profile)) {
+if (android && ["preview", "ads-preview", "production"].includes(profile)) {
   const allowed = new Set([
     "EXPO_PUBLIC_CONTENT_CHANNEL",
     "EXPO_PUBLIC_SUPABASE_URL",

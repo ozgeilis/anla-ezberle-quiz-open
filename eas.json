@@ -45,6 +45,22 @@
       "ios": {
         "simulator": true
       }
+    },
+    "ads-preview": {
+      "extends": "preview",
+      "env": {
+        "ADS_MODE": "test",
+        "ADS_TEST_BUILD": "1",
+        "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534"
+      }
+    },
+    "ads-development": {
+      "extends": "development",
+      "env": {
+        "ADS_MODE": "test",
+        "ADS_TEST_BUILD": "1",
+        "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534"
+      }
     }
   }
 }
