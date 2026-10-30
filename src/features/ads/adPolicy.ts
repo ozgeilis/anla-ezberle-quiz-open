@@ -12,6 +12,14 @@ export const defaultAdPreferences: AdPreferences = {
   lastPresentedAt: 0,
   consumedResults: [],
 };
+export function mayPrepareAdConsent(
+  preferences: AdPreferences,
+  privacyOptions: boolean,
+) {
+  return (
+    preferences.adultConfirmed && (preferences.testAdsAllowed || privacyOptions)
+  );
+}
 export function parseAdPreferences(raw: string | null): AdPreferences {
   if (!raw) return { ...defaultAdPreferences, consumedResults: [] };
   const value: unknown = JSON.parse(raw);

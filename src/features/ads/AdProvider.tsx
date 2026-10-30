@@ -11,7 +11,11 @@ import { usePathname } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { useSound } from "../audio/SoundProvider";
 import { adConfig } from "./adConfig";
-import { canOfferInterstitial, type AdPreferences } from "./adPolicy";
+import {
+  canOfferInterstitial,
+  mayPrepareAdConsent,
+  type AdPreferences,
+} from "./adPolicy";
 import { loadAdsRuntime } from "./runtime";
 import type { AdsRuntime, FullscreenAd } from "./runtime.types";
 import { AdTransitionDialog } from "./AdTransitionDialog";
@@ -122,7 +126,8 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   async function consent(interactive: boolean, privacy = false) {
     if (
       !adConfig.enabled ||
-      (!eligibleUser && !privacy) ||
+      !loaded ||
+      !mayPrepareAdConsent(preferences, privacy) ||
       lock.current ||
       current.current.session ||
       !current.current.foreground ||

@@ -66,14 +66,14 @@ export function AdPrivacySettings() {
           variant="outline"
         />
       )}
-      {
+      {ads.preferences.adultConfirmed && (
         <Button
           title="Google reklam gizlilik seçenekleri"
           disabled={ads.busy}
           onPress={ads.openPrivacyOptions}
           variant="outline"
         />
-      }
+      )}
       <Txt size={12} accessibilityLiveRegion="polite" color={theme.muted}>
         {ads.error ||
           (ads.ready

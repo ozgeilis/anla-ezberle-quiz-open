@@ -1,10 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync, realpathSync, statSync } from "node:fs";
+import { dirname, resolve as absolute } from "node:path";
 import { resolveAdBuild, googleSampleApps } from "../config/admob.js";
 import {
   AD_INTERVAL_MS,
   canOfferInterstitial,
+  mayPrepareAdConsent,
   defaultAdPreferences,
   parseAdPreferences,
 } from "../src/features/ads/adPolicy";
@@ -262,9 +264,62 @@ test("UMP unknown/rejected/basic-storage refusal never authorize requests", asyn
   );
 });
 test("web runtime has no native SDK import and no reward API exists", () => {
-  const web = readFileSync("src/features/ads/runtime.ts", "utf8");
+  const web = readFileSync("src/features/ads/runtime.web.tsx", "utf8");
   assert.equal(web.includes("react-native-google-mobile-ads"), false);
   const runtime = readFileSync("src/features/ads/runtime.native.tsx", "utf8");
   assert.equal(runtime.includes("RewardedAd"), false);
   assert.equal(runtime.includes("sdk.TestIds.INTERSTITIAL"), true);
+});
+
+test("unknown/minor age cannot even start UMP; adults can reopen privacy after local opt-out", () => {
+  const p = { ...defaultAdPreferences, testAdsAllowed: true };
+  assert.equal(mayPrepareAdConsent(p, false), false);
+  assert.equal(mayPrepareAdConsent(p, true), false);
+  assert.equal(
+    mayPrepareAdConsent(
+      { ...p, adultConfirmed: true, testAdsAllowed: false },
+      true,
+    ),
+    true,
+  );
+});
+test("actual Metro resolver selects native GMA on Android/iOS and safe web code on web", () => {
+  const require = createRequire(import.meta.url);
+  const expoRoot = dirname(require.resolve("expo/package.json"));
+  const metroConfig = require.resolve("@expo/metro-config", {
+    paths: [expoRoot],
+  });
+  const { resolve } = createRequire(metroConfig)("metro-resolver") as {
+    resolve(
+      context: Record<string, unknown>,
+      specifier: string,
+      platform: string,
+    ): { filePath: string };
+  };
+  const context = {
+    originModulePath: absolute("src/features/ads/AdProvider.tsx"),
+    sourceExts: ["js", "jsx", "json", "ts", "tsx"],
+    assetExts: new Set(),
+    preferNativePlatform: true,
+    getPackageForModule: () => null,
+    doesFileExist: existsSync,
+    fileSystemLookup: (path: string) =>
+      existsSync(path)
+        ? {
+            exists: true,
+            type: statSync(path).isFile() ? "f" : "d",
+            realPath: realpathSync(path),
+          }
+        : { exists: false },
+    mainFields: ["react-native", "browser", "main"],
+  };
+  for (const platform of ["android", "ios"])
+    assert.ok(
+      resolve(context, "./runtime", platform).filePath.endsWith(
+        "runtime.native.tsx",
+      ),
+    );
+  assert.ok(
+    resolve(context, "./runtime", "web").filePath.endsWith("runtime.web.tsx"),
+  );
 });

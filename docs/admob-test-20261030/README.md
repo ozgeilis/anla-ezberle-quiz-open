@@ -75,3 +75,7 @@ Kullanıcı önce hesabın bulunduğunu, uygulama kaydının olmadığını bild
 İlk küçültülmüş release APK’sı gerçek API 34 emülatöründe JavaScript başlamadan `WorkDatabase` oluşturulamadığı için çöktü. R8 mapping dosyasında WorkDatabase/WorkDatabase_Impl adları korunmuştu fakat yansıma ile çağrılan boş constructor yoktu. GMA transitive WorkManager 2.7.0/Room 2.2.5 bu yolu kullanır. `plugins/with-admob-workmanager.js` yalnız `androidx.work.impl.WorkDatabase_Impl` ve public boş constructor için kalıcı/idempotent prebuild kuralı ekler. R8/obfuscation tamamen kapatılmadı, bütün AndroidX paketini tutan geniş kural eklenmedi. Yeni release’de constructor ve açılış tekrar doğrulanmadan bu düzeltme native PASS sayılmaz. Önceki hatalı APK kabul dışıdır.
 
 Kaynak: [Android yansıma/constructor koruma kuralları](https://developer.android.com/topic/performance/app-optimization/keep-rule-examples).
+
+### Platform adaptörü regresyonu
+
+İlk izin denemesinde güvenli yedek mesajı görüldü. Kaynak haritası Android’in `runtime.ts` dosyasını seçtiğini, native GMA modüllerinin JS paketine hiç girmediğini gösterdi; bu deneme UMP sunucu testi değildir. Metro uzantı önceliği nedeniyle generic `.ts`, `.native.tsx` önüne geçiyordu. Girişler aynı `.tsx` ailesine alındı ve explicit `.web.tsx` ile web’in de native dosyaya düşmesi engellendi. Gerçek kurulu Metro resolver kullanan Android/iOS/web regresyonu eklendi. Native kaynak haritası ve tekrar gerçek UMP denemesiyle ayrıca doğrulanır; başarısız ilk deneme gerçek reklam yüklemesi sayılmaz.
