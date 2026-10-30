@@ -136,6 +136,12 @@ test("The style-only heuristic never reads the answer key and abstains on confli
   ]);
   assert.equal(styleOnlyGuess(conflict), null);
 });
+test("Hypocrisy stays negative when its description mentions faith; the false positive is not a content correction", () => {
+  const q = questionsV73Candidate.find((q) => q.id === "v11-quran-011")!;
+  assert(!qualityWarnings(q).some((f) => f.kind === "tone-3-negative"));
+  assert.equal(styleOnlyGuess(q), null);
+  assert(q.options.every((o) => o.text.length > 10));
+});
 test("Thirty reproducible batches cover all 1,500 actual category memberships; pending is never counted as reviewed", () => {
   const files = readdirSync("docs/editorial-v73/batches")
     .filter((f) => f.endsWith(".json"))

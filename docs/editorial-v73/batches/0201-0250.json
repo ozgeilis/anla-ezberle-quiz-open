@@ -5,7 +5,7 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 43,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 20,
   "flaggedAfter": 3,
@@ -1515,15 +1515,17 @@
           "o3": "Makul erken mescid; anahtar değil.",
           "o4": "Makul mescid; anahtar değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/safii",
-          "locator": "Mescid-i Harâm’da öğreticiliği",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "On üç yaşında Mescid-i Harâm’da Kur’an okutması; satır 99",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
         }
       },
       "independentExpertApproval": false,
@@ -4237,15 +4239,17 @@
           "o3": "Kâbe’nin şehri.",
           "o4": "Başka dinî tarih şehri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/kabe",
-          "locator": "Kur’an’da Kâbe; Âl-i İmrân 3/96 referansı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kıble ve Mekke’de Mescid-i Harâm’ın ortasında Kâbe; başlık ve satır 117",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -4813,15 +4817,17 @@
           "o3": "Mahreç ve okuyuş alanı.",
           "o4": "Hayat anlatısı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; temel tanım/sayı bilgisi daha düşük seviye için editör/ürün değerlendirmesine öneriliyor. Onaysız değişmedi.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
-          "locator": "Tanım ve konular, harflerin mahreç ve sıfatları",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Tecvidin mahreç/sıfat ve uygulama tanımı; satır 96–102",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5045,15 +5051,17 @@
           "o3": "Çok kısa sure.",
           "o4": "En uzun sure."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/bakara-suresi",
-          "locator": "Madde tanımı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Bakara’nın sayfa/âyet itibariyle en uzun sûre olması; satır 100",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5151,15 +5159,17 @@
           "o3": "Fâtiha ile karışabilir.",
           "o4": "Daha uzun sayısal alternatif."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; temel tanım/sayı bilgisi daha düşük seviye için editör/ürün değerlendirmesine öneriliyor. Onaysız değişmedi.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/kevser-suresi",
-          "locator": "Giriş, üç ayet bilgisi ve adlandırma",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Üç âyet; ilk âyetten gelen ad; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5257,15 +5267,17 @@
           "o3": "Tamamını ezberleyen.",
           "o4": "Tefsir uzmanı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/hafiz--kuran",
-          "locator": "Madde tanımı ve ilk paragraf",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kur’an’ın tamamını ezberleyen hâfız tanımı; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5363,15 +5375,17 @@
           "o3": "Resmî hutbe konuşması.",
           "o4": "Öğüt konuşması."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/mukabele--kuran",
-          "locator": "Tanım ve ilk paragraf",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Okuyuşu izleyerek hatim; cami/ev ve Ramazan geleneği; satır 96–98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,

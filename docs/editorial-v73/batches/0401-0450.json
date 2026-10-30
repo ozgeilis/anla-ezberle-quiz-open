@@ -5,7 +5,7 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 27,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 2,
   "flaggedAfter": 0,
@@ -536,15 +536,17 @@
           "o3": "Vahiy mağarası.",
           "o4": "Hicret mağarası."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/mina",
-          "locator": "Mina ve cemreler",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/hac",
+          "locator": "Mina’ya varış ve Akabe cemresine taş atma; satır 468",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
         }
       },
       "independentExpertApproval": false,
@@ -642,15 +644,17 @@
           "o3": "Âhiret tasvirindeki ad.",
           "o4": "Bölge nehri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/zemzem",
-          "locator": "Zemzem kuyusu",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kâbe’ye 19 m mesafedeki su kaynağı ve Mekke; satır 96,100–108",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -1076,15 +1080,17 @@
           "o3": "Ezan görevlisi.",
           "o4": "Vakıf yöneticisi."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu temel hedefin önceki paketlerde yakın soruları bulundu. Ortak conceptGroup/öğrenme hedefi eşleştirmesi banka çapında son inceleme bekler; benzer hedeflerin giderildiği iddia edilmez.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/hat",
-          "locator": "Hat sanatı ve hattat",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Hattatın sanat icrası ve yazı taklidi/kompozisyonu; satır 148–150",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -1182,15 +1188,17 @@
           "o3": "Sonraki besmeleli sure.",
           "o4": "Sonraki besmeleli sure."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/tevbe-suresi",
-          "locator": "Maddenin giriş bölümü: besmelesiz başlangıç",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sure",
+          "locator": "Enfâl ve Tevbe arasında besmele bulunmaması; satır 100",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b3caf22c9bf38c9283f57ab388f816177e860422a45d8dbfd3c4d1541d046556"
         }
       },
       "independentExpertApproval": false,
@@ -1288,15 +1296,17 @@
           "o3": "Örümcek.",
           "o4": "Fil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/nahl-suresi",
-          "locator": "Sûrenin adının 68-69. âyetlerden gelişi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Nahl adı, bal arısı ve 68–69. âyetler; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -1720,15 +1730,17 @@
           "o3": "Semûd kıssası.",
           "o4": "Başka peygamber."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/yunus",
-          "locator": "Yûnus'un gönderildiği halk",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "İslâmî kaynakların Ninevâlı Yûnus anlatımı; satır 125 ve devamı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -2042,15 +2054,17 @@
           "o3": "Firavun ailesi kıssası.",
           "o4": "Sebe hükümdarı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/zemzem",
-          "locator": "Zemzem kıssasında Hâcer ve İsmâil",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "İslâmî rivayette İsmâil’in annesi Hâcer; satır 97,100–104",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -2258,15 +2272,17 @@
           "o3": "Üçüncü tayin edilen.",
           "o4": "İkinci tayin edilen."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/mute-savasi",
-          "locator": "Kumandanlık için belirlenen sıra",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Zeyd, Ca‘fer ve Abdullah’ın sırasıyla tayini; satır 97–98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -2364,15 +2380,17 @@
           "o3": "Önceki yıl.",
           "o4": "Sonraki yıl."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/hayber",
-          "locator": "Hayber seferi: hicrî 7 / milâdî 628",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Hz. Peygamber’in yönettiği Hayber savaşı 7/628; satır 112",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -2470,15 +2488,17 @@
           "o3": "Fetih yılı.",
           "o4": "Önceki yıl."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/veda-hacci",
-          "locator": "Giriş: 10/632",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/veda-hutbesi",
+          "locator": "Vedâ haccı 10/632; satır 98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
         }
       },
       "independentExpertApproval": false,
@@ -2576,15 +2596,17 @@
           "o3": "Cenazeyle ilgili namaz.",
           "o4": "Güneş tutulmasıyla ilgili namaz."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/teravih",
-          "locator": "Tanım ve vakit",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Ramazan geceleri yatsı sonrası namaz; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "c8faba9ab631fafef041942479418836778833d5dbdf925d1c535d8a88a81ac7"
         }
       },
       "independentExpertApproval": false,
@@ -2907,15 +2929,17 @@
           "o3": "Kurban bayramıyla ilgili kurban.",
           "o4": "Adanmış yükümlülük."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/akika",
-          "locator": "Akîka kurbanının tanımı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Yeni doğan çocuk için şükür kurbanı; satır 96–101",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -3447,15 +3471,17 @@
           "o3": "Başka suredeki hayvan.",
           "o4": "Başka hayvan."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/adiyat-suresi",
-          "locator": "Âdiyât kelimesinin yorumu",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Genel savaş atları yorumu ve adv kelimesinin deve/at kapsamı; satır 96–98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -3553,15 +3579,17 @@
           "o3": "Bu yaygın yorumun sûresi değil.",
           "o4": "Bu yaygın yorumun sûresi değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/fatiha-suresi",
-          "locator": "Hicr 15/87 ve Fâtiha yorumu",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Hicr 15/87 seb‘u’l-mesânînin yaygın Fâtiha yorumu; satır 111–118",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -3767,15 +3795,17 @@
           "o3": "İsa’nın annesi.",
           "o4": "Hz. Muhammed’in annesi."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/ishak",
-          "locator": "Giriş: Hz. İbrâhim'in Sâre'den doğan oğlu",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/sare",
+          "locator": "Sâre’nin İshak anneliği ve Kur’an/İslâmî kaynak karşılaştırması; satır 106–112",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -4197,15 +4227,17 @@
           "o3": "Başka kumandan sahâbî.",
           "o4": "Sancaktar/öğretici sahâbî."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/halid-b-velid",
-          "locator": "Madde başlığı: Seyfullah unvanı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Mûte dönüşünde seyfullah unvanının verilmesi; satır 113",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -4303,15 +4335,17 @@
           "o3": "Dördüncü halife.",
           "o4": "İlk halife."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/faruk--omer",
-          "locator": "Madde tanımı: Hz. Ömer'in lakabı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/omer",
+          "locator": "Ebû Hafs el-Fârûk; madde başlığı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -4409,15 +4443,17 @@
           "o3": "Sonraki savaş.",
           "o4": "Sonraki savaş."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/uhud-gazvesi",
-          "locator": "Mus'ab b. Umeyr'in Uhud'da şehit edilmesi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/musab-b-umeyr",
+          "locator": "Mus‘ab’ın Uhud’da sancaktarlığı ve şehadeti; satır 100–101",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -4515,15 +4551,17 @@
           "o3": "Kumandan.",
           "o4": "Başka sahâbî."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-          "locator": "Giriş: tefsir ve fıkıh otoritesi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Amca oğlu ve tefsir/fıkıh otoritesi; madde tanımı, satır 105,120",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
         }
       },
       "independentExpertApproval": false,
@@ -4731,15 +4769,17 @@
           "o3": "Namazdaki unutmayla ilgili olan.",
           "o4": "Namazın rüknü; bu özel ad değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/tilavet-secdesi",
-          "locator": "Giriş: tilâvet secdesinin tanımı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Okuma/dinleme sebebi ve mezheplerin farklı hükmü; satır 105–110",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -4945,15 +4985,17 @@
           "o3": "Kur’an okuma terimi.",
           "o4": "Göç terimi."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/zikir",
-          "locator": "Giriş ve zikir biçimleri",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kalp/dil ile Allah’ı anma; satır 109–110",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5056,15 +5098,17 @@
           "o1": "İstiğfar anlamı.",
           "o3": "Şükür anlamı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/tesbih--allah",
-          "locator": "Giriş ve tesbihin terim anlamı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Eksikliklerden tenzih etme temel terim anlamı; satır 114–120",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5162,15 +5206,17 @@
           "o3": "Öğleden sonraki vakit.",
           "o4": "Akşam sınırı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Önceki paketlerde aynı kavram/olay veya ayet için yakın öğrenme hedefleri görüldü. Aynı conceptGroup kapsamı ve banka çapındaki tekrar kararı ayrıca kontrol edilecek; yeni soru veya ID üretilmedi.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/duha-suresi",
-          "locator": "Sûrenin adının kuşluk vaktinden gelişi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "İlk âyetteki kuşluk vakti adı; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,

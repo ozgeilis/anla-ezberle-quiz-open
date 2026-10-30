@@ -3,12 +3,12 @@
   "start": 1351,
   "end": 1400,
   "total": 50,
-  "individuallyReviewed": 20,
-  "pendingReview": 30,
-  "sourceComparedThisRound": 20,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 7,
-  "flaggedAfter": 1,
+  "flaggedAfter": 4,
   "records": [
     {
       "sequence": 1351,
@@ -2305,44 +2305,70 @@
         ]
       },
       "after": {
-        "question": "Zayıf hadis ile mevzû hadis arasındaki önemli fark hangisidir?",
+        "question": "Zayıf ve mevzû hadis arasındaki temel fark hangi açıklamayla doğru verilir?",
         "options": [
           {
             "id": "o1",
-            "text": "Tüm zayıf rivayetler uydurmadır"
+            "text": "Zayıf sahâbeye, mevzû tâbiîne dayanan rivayettir"
           },
           {
             "id": "o2",
-            "text": "Mevzû hadisler kesinlikle sahih kabul edilir"
+            "text": "Zayıf tek yoldan, mevzû çok yoldan gelen rivayettir"
           },
           {
             "id": "o3",
-            "text": "Zayıf hadisler kitaplarda bulunmaz"
+            "text": "Zayıf kesik, mevzû kesintisiz senedli rivayettir"
           },
           {
             "id": "o4",
-            "text": "Her zayıf rivayetin uydurma olduğu söylenemez"
+            "text": "Zayıf kabul şartı eksik, mevzû uydurulmuş rivayettir"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Her zayıf rivayetin uydurma olduğu söylenemez",
+        "correctAnswer": "Zayıf kabul şartı eksik, mevzû uydurulmuş rivayettir",
         "explanation": "TDV Zayıf maddesi mevzû hadisleri farklı bir sorun olarak açıklar; zayıflık, sahihlik şartlarının eksikliği olup tek başına uydurma olduğunu göstermez.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — zayif",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zayif",
-            "locator": "Zayıf ve mevzû ayrımı",
+            "locator": "98–103. satırlar",
             "supports": "TDV Zayıf maddesi mevzû hadisleri farklı bir sorun olarak açıklar; zayıflık, sahihlik şartlarının eksikliği olup tek başına uydurma olduğunu göstermez.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-zayif-uydurma",
+        "reviewedCandidateSha256": "a5aaee03496eba041c1a736ca8e00e8b2b4767fbe84fd6df8f3ae62ef2e24ad9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tüm/kesinlikle/bulunmaz gibi üç iddiaya karşı tek ihtiyatlı doğru giderildi. Dört teknik tasnif açıklaması; yanlışlar mevkuf-maktu, âhâd-mütevâtir veya sened bağlantısı ayrımlarını karıştırır, ahlâkî tonla çözülmez.",
+        "optionReview": {
+          "o1": "Farklı aidiyet ayrımıyla karıştırma.",
+          "o2": "Farklı nakil çokluğu ayrımıyla karıştırma.",
+          "o3": "Sened bağlantısını mevzû tanımı sayma.",
+          "o4": "98 ve 102’nin şart eksikliği/uydurma ayrımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zayif",
+          "locator": "98–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2425,8 +2451,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-zayif-hasen",
+        "reviewedCandidateSha256": "ceb49d1384ee29aed7be933256be636d291c3935d0f8b05910fe8f8e9d826d6b",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört hadis terimi aynı alanda. 98’in hasen derecesine ulaşmayan genel zayıf tanımı açık; mütevâtir çokluk ölçütü farklı eksen olsa da üçü birden ilgisiz değil.",
+        "optionReview": {
+          "o1": "Başka nakil çokluğu sınıfı.",
+          "o2": "Başka sened özelliği.",
+          "o3": "98’in zayıf tanımı.",
+          "o4": "Kabul derecesi daha güçlü sınıf."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zayif",
+          "locator": "98–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2509,8 +2559,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-anlam",
+        "reviewedCandidateSha256": "38b0f344ee1024fc146a5beaef2af224dce25b978cf7d7f858e01372bf220ed1",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kitap sayısı. Sitte çevirisi öğrenme hedefi, seçenek tonu veya sıfatı değil. 97’nin altı kitap açıklaması mevcut.",
+        "optionReview": {
+          "o1": "Başka sayı.",
+          "o2": "97’nin altı kitabı.",
+          "o3": "Başka sayı.",
+          "o4": "Başka sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2560,20 +2634,20 @@
         "question": "Kütüb-i Sitte derleyicileri için kullanılan toplu unvan hangisidir?",
         "options": [
           {
+            "id": "o3",
+            "text": "Ashâb-ı Kütüb-i Erbaa"
+          },
+          {
+            "id": "o4",
+            "text": "Eimme-i Erbaa"
+          },
+          {
             "id": "o1",
             "text": "Eimme-i Sitte"
           },
           {
             "id": "o2",
-            "text": "Ashâb-ı Suffe"
-          },
-          {
-            "id": "o3",
-            "text": "Benî Mûsâ"
-          },
-          {
-            "id": "o4",
-            "text": "Ehl-i Hicr"
+            "text": "Fukahâ-i Seb‘a"
           }
         ],
         "correctOptionId": "o1",
@@ -2581,20 +2655,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi altı hadis kitabını derleyen muhaddislerin eimme-i sitte, yani altı imam diye adlandırıldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Eimme-i Sitte",
+            "locator": "96–100. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi altı hadis kitabını derleyen muhaddislerin eimme-i sitte, yani altı imam diye adlandırıldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-eser",
+        "reviewedCandidateSha256": "1ba1f279ebdccb84d6a1da6dcb88a473d85479c422d764a3939280ee37db6e0d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Suffe/kabile/ilim ailesi gibi uzak topluluklar yerine dört ilmî toplu unvan. Sitte sayısını bilmek hedef terim bilgisidir; gerçek altı derleyici unvanı 97’de açık.",
+        "optionReview": {
+          "o3": "Farklı dört eser geleneği.",
+          "o4": "Dört imam unvanı.",
+          "o1": "97’nin altı derleyici unvanı.",
+          "o2": "Yedi fakih unvanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2645,40 +2745,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Ebû Dâvûd ve Tirmizî'nin Sünen'leri"
+            "text": "Ebû Dâvûd ve Nesâî’nin Sünen’leri"
           },
           {
             "id": "o2",
-            "text": "İbn Mâce ve Dârimî'nin Sünen'leri"
+            "text": "Tirmizî ve İbn Mâce’nin Sünen’leri"
           },
           {
             "id": "o3",
-            "text": "Mâlik'in Muvatta'ı ve Müsned"
+            "text": "Mâlik’in Muvatta’ı ve Ahmed’in Müsned’i"
           },
           {
             "id": "o4",
-            "text": "Buhârî ve Müslim'in Sahih'leri"
+            "text": "Buhârî ve Müslim’in Sahîh’leri"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Buhârî ve Müslim'in Sahih'leri",
+        "correctAnswer": "Buhârî ve Müslim’in Sahîh’leri",
         "explanation": "TDV Kütüb-i Sitte maddesinde Buhârî ile Müslim'in el-Câmiu's-sahîh eserleri Sahîhayn olarak birlikte anılır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Sahîhayn",
+            "locator": "96–109. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesinde Buhârî ile Müslim'in el-Câmiu's-sahîh eserleri Sahîhayn olarak birlikte anılır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-sahihayn",
+        "reviewedCandidateSha256": "2254ce14c9f003463549b80171ac4aa20bc458774535f802b3609ec3cd6834a6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Belirsiz müellifsiz Müsned ve eş olmayan çift yerine dört tam isimli hadis eseri çifti. Sahîhayn’ın doğru sözlük anlamı bilgi verir ama yalnız eser başlığına bakılan biçim ipucunu sınırlamak için kök korunur.",
+        "optionReview": {
+          "o1": "96’nın diğer erken iki eseri.",
+          "o2": "Başka iki hadis eseri.",
+          "o3": "Başka iki temel hadis eseri.",
+          "o4": "109’un açık Sahîhayn’ı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2761,8 +2887,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-buhari",
+        "reviewedCandidateSha256": "c268dece3d643167777504850beba123509b6988d69b3c3d8d818887398254d9",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört muhaddis adı. Tam isim Muhammed b. İsmâil ile nisbe bilgisi gerekir; üç farklı meslek yok, kitabın sahih adı bütün hadisleri hakkında yeni genelleme değil.",
+        "optionReview": {
+          "o1": "Başka muhaddis.",
+          "o2": "Başka muhaddis.",
+          "o3": "Biyografinin Muhammed b. İsmâil’i.",
+          "o4": "Başka muhaddis."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
+          "locator": "97 ve 114–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2845,8 +2995,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-muslim",
+        "reviewedCandidateSha256": "6eb94026540bc78346a04623d4f58884c88dd806633575b0d6c031ea9d316f38",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört muhaddis; Dârimî gerçek alternatif altıncı olsa da Sahîh eseri bu bağlamda Sahîhayn’ın Müslim’idir. 109 ve Müslim eseri 96 birlikte okundu.",
+        "optionReview": {
+          "o1": "Sünen müellifi.",
+          "o2": "109’un Sahîhayn müellifi.",
+          "o3": "Sünen müellifi.",
+          "o4": "Başka Sünen müellifi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2893,23 +3067,23 @@
         ]
       },
       "after": {
-        "question": "Kütüb-i Sitte'de el-Câmiu's-sahîh adlı eserin bir başka müellifi kimdir?",
+        "question": "Hem Câmi‘ hem Sünen adlarıyla bilinen ve hadislerin derecelerini açıklayan eser kime aittir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Tirmizî"
-          },
-          {
             "id": "o2",
-            "text": "İbn Haldûn"
+            "text": "Buhârî"
           },
           {
             "id": "o3",
-            "text": "Cezerî"
+            "text": "Müslim"
           },
           {
             "id": "o4",
-            "text": "Ali Kuşçu"
+            "text": "Nesâî"
+          },
+          {
+            "id": "o1",
+            "text": "Tirmizî"
           }
         ],
         "correctOptionId": "o1",
@@ -2917,20 +3091,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi Tirmizî'nin el-Câmiu's-sahîh'ini altı temel hadis kitabından biri olarak sayar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Tirmizî'nin el-Câmiu's-sahîh'i",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--tirmizi",
+            "locator": "96–102. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi Tirmizî'nin el-Câmiu's-sahîh'ini altı temel hadis kitabından biri olarak sayar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-tirmizi",
+        "reviewedCandidateSha256": "2f487fb8790e08c933729246dab3f66569ff6d693e39d31bd39e289ea9e93ae2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek muhaddise karşı üç farklı meslek/yüzyıl kaldırıldı. Dört hadis derleyicisi; genel Câmi adı birkaçında bulunduğu için iki ad ve sıhhat açıklaması bağlamı belirli.",
+        "optionReview": {
+          "o2": "Başka Câmi derleyicisi.",
+          "o3": "Başka Câmi derleyicisi.",
+          "o4": "Başka Sünen derleyicisi.",
+          "o1": "96 ve 102’nin eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--tirmizi",
+          "locator": "96–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2977,44 +3177,70 @@
         ]
       },
       "after": {
-        "question": "Kütüb-i Sitte içindeki es-Sünen adlı kitabın müelliflerinden biri kimdir?",
+        "question": "Kütüb-i Sitte’nin Sicistânî nisbesiyle tanınan Sünen müellifi kimdir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Ebû Dâvûd"
+          },
+          {
             "id": "o1",
-            "text": "İbn Battûta"
+            "text": "Nesâî"
           },
           {
             "id": "o2",
-            "text": "Yûsuf Has Hâcib"
+            "text": "Tirmizî"
           },
           {
             "id": "o3",
-            "text": "Kâtib Çelebi"
-          },
-          {
-            "id": "o4",
-            "text": "Ebû Dâvûd es-Sicistânî"
+            "text": "İbn Mâce"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Ebû Dâvûd es-Sicistânî",
+        "correctAnswer": "Ebû Dâvûd",
         "explanation": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd es-Sicistânî'nin es-Sünen'ini altı hadis kitabına dahil eder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Ebû Dâvûd es-Sünen",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/ebu-davud-es-sicistani",
+            "locator": "96–108. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd es-Sicistânî'nin es-Sünen'ini altı hadis kitabına dahil eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-davud",
+        "reviewedCandidateSha256": "18a4fd8f0b00ddbd9a1ae985f8f27b868c05ea3aa4484dbd0670c999e091458e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç seyyah/dilci/ansiklopediste karşı tek muhaddis giderildi. Birden fazla es-Sünen olduğu için nisbe bilgisi kökü kesinleştirir; doğru seçenekte nisbe tekrar edilmez.",
+        "optionReview": {
+          "o4": "96’nın Sicistan nisbesi ve 108’in Sünen’i.",
+          "o1": "Başka Sünen müellifi.",
+          "o2": "Başka Sünen/Câmi müellifi.",
+          "o3": "Başka Sünen müellifi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-davud-es-sicistani",
+          "locator": "96–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3061,23 +3287,23 @@
         ]
       },
       "after": {
-        "question": "Kütüb-i Sitte'nin es-Sünen adlı eserlerinden biri hangi muhaddise aittir?",
+        "question": "Mısır’a yerleşip es-Sünen’iyle tanınan Kütüb-i Sitte müellifi kimdir?",
         "options": [
-          {
-            "id": "o1",
-            "text": "Gazzâlî"
-          },
-          {
-            "id": "o2",
-            "text": "Nizâmülmülk"
-          },
           {
             "id": "o3",
             "text": "Nesâî"
           },
           {
+            "id": "o1",
+            "text": "Tirmizî"
+          },
+          {
+            "id": "o2",
+            "text": "İbn Mâce"
+          },
+          {
             "id": "o4",
-            "text": "Bîrûnî"
+            "text": "Ebû Dâvûd"
           }
         ],
         "correctOptionId": "o3",
@@ -3085,20 +3311,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'yi es-Sünen adlı eserin müellifi olarak kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Nesâî es-Sünen",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/nesai",
+            "locator": "96–103. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi Nesâî'yi es-Sünen adlı eserin müellifi olarak kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-nesai",
+        "reviewedCandidateSha256": "b7d5b42e798068c56508b5c144d108dcd85ad79bae1ccd70ffa5ff35f26e8986",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı meslek yerine dört hadis derleyicisi. Genel Sünen adı çok kişide olduğundan Mısır’a yerleşme bağlamı eklendi; seyahat etmekle yerleşmek aynı değil.",
+        "optionReview": {
+          "o3": "99–102’nin Mısır’da yaşayan müellifi.",
+          "o1": "Başka hadis müellifi.",
+          "o2": "Başka hadis müellifi.",
+          "o4": "Basra’ya yerleşen müellif."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nesai",
+          "locator": "96–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3148,20 +3400,20 @@
         "question": "Kütüb-i Sitte'nin altıncı kitabı olarak yaygın biçimde benimsenen eserin müellifi kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İbn Battûta"
+            "id": "o3",
+            "text": "Beyhakî"
+          },
+          {
+            "id": "o4",
+            "text": "Dârekutnî"
           },
           {
             "id": "o2",
             "text": "İbn Mâce"
           },
           {
-            "id": "o3",
-            "text": "İbn Haldûn"
-          },
-          {
-            "id": "o4",
-            "text": "Cezerî"
+            "id": "o1",
+            "text": "Ahmed b. Hanbel"
           }
         ],
         "correctOptionId": "o2",
@@ -3169,20 +3421,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin es-Sünen'inin altıncı kitap olarak yaygınlık kazandığını bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "İbn Mâce es-Sünen",
+            "locator": "99–105. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin es-Sünen'inin altıncı kitap olarak yaygınlık kazandığını bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-ibnmace",
+        "reviewedCandidateSha256": "709afa8ff02460d6727b791acf156436e1cbeaf755c5fa38fd608270443b7416",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hadis dışı yazara karşı tek muhaddis kaldırıldı. Dört temel hadis müellifi; Mâlik/Dârimî gerçek alternatif altıncılar olduğundan bu köke yanlış şık yapılmadı.",
+        "optionReview": {
+          "o3": "Başka hadis derleyicisi.",
+          "o4": "Başka hadis derleyicisi.",
+          "o2": "100–105’in yaygın altıncısı.",
+          "o1": "Başka hadis derleyicisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "99–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3229,44 +3507,75 @@
         ]
       },
       "after": {
-        "question": "'el-Usûlü'l-hamse' adıyla anılan ilk beş temel hadis kitabına sonradan eklenen yaygın altıncı eser hangisidir?",
+        "question": "İbnü’l-Kayserânî’nin el-Usûlü’l-hamse’ye eklediği altıncı eser hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "İbn Mâce'nin es-Sünen'i"
+            "text": "İbn Mâce’nin es-Sünen’i"
           },
           {
             "id": "o2",
-            "text": "Mukaddime"
+            "text": "Mâlik’in el-Muvatta’ı"
           },
           {
             "id": "o3",
-            "text": "Kutadgu Bilig"
+            "text": "Dârimî’nin es-Sünen’i"
           },
           {
             "id": "o4",
-            "text": "Dîvânü Lugāti't-Türk"
+            "text": "Ahmed b. Hanbel’in el-Müsned’i"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "İbn Mâce'nin es-Sünen'i",
+        "correctAnswer": "İbn Mâce’nin es-Sünen’i",
         "explanation": "TDV Kütüb-i Sitte maddesi ilk beş temel kitaba altıncı olarak İbn Mâce'nin es-Sünen'inin katılması geleneğini anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "el-Usûlü'l-hamse ve altıncı kaynak",
+            "locator": "99–105. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi ilk beş temel kitaba altıncı olarak İbn Mâce'nin es-Sünen'inin katılması geleneğini anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-bes",
+        "reviewedCandidateSha256": "d81f1901ab46cabb511babaca6ce7104bec18b1535d74c95ac8d9cd5dac9ef64",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tarih/dil/siyaset kitapları yerine dört hadis eseri. Mâlik/Dârimî başka tertiplerde altıncı olduğundan genel kök belirli Kayserânî eklemesine bağlandı.",
+        "optionReview": {
+          "o1": "100’ün Kayserânî tercihi.",
+          "o2": "102’nin Rezîn tercihi.",
+          "o3": "104–105’in başka tercihleri.",
+          "o4": "Başka hadis eseri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "99–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3316,20 +3625,20 @@
         "question": "Kütüb-i Sitte'nin altıncı kitabı olarak bazı âlimlerce tercih edilen diğer Sünen kime aittir?",
         "options": [
           {
-            "id": "o1",
-            "text": "İbn Battûta"
+            "id": "o2",
+            "text": "Beyhakî"
           },
           {
-            "id": "o2",
-            "text": "Kâşgarlı Mahmud"
+            "id": "o4",
+            "text": "Saîd b. Mansûr"
           },
           {
             "id": "o3",
             "text": "Dârimî"
           },
           {
-            "id": "o4",
-            "text": "İbn Haldûn"
+            "id": "o1",
+            "text": "Dârekutnî"
           }
         ],
         "correctOptionId": "o3",
@@ -3337,20 +3646,46 @@
         "explanation": "TDV Kütüb-i Sitte maddesi altıncı kitap olarak Abdullah b. Abdurrahman ed-Dârimî'nin es-Sünen'ini tercih eden hadisçilerin bulunduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Dârimî es-Sünen",
+            "locator": "104–105. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi altıncı kitap olarak Abdullah b. Abdurrahman ed-Dârimî'nin es-Sünen'ini tercih eden hadisçilerin bulunduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-darimi",
+        "reviewedCandidateSha256": "54366c6df0cd2526308a1a62a065b8db771c4c2c20db7aae50a2af21bbbf3f8f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç hadis dışı yazara karşı tek Sünen müellifi yerine dört gerçek Sünen müellifi. Mâlik de alternatif altıncı fakat Sünen adı şartını taşımıyor; bu varyant ayrımı açıklamada var.",
+        "optionReview": {
+          "o2": "Başka Sünen müellifi.",
+          "o4": "Başka Sünen müellifi.",
+          "o3": "104–105’in tercih edilen Sünen’i.",
+          "o1": "Başka Sünen müellifi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "104–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3401,11 +3736,7 @@
         "options": [
           {
             "id": "o1",
-            "text": "Beyhakī ve İbn Hazm"
-          },
-          {
-            "id": "o2",
-            "text": "Buhârî ve Müslim"
+            "text": "Ebû Dâvûd ve Nesâî"
           },
           {
             "id": "o3",
@@ -3414,6 +3745,10 @@
           {
             "id": "o4",
             "text": "Dârimî ve Mâlik"
+          },
+          {
+            "id": "o2",
+            "text": "Buhârî ve Müslim"
           }
         ],
         "correctOptionId": "o2",
@@ -3421,20 +3756,46 @@
         "explanation": "TDV maddesi Buhârî ve Müslim'in Sahîh'leri ile Ebû Dâvûd ve Nesâî'nin Sünen'lerinin başlangıçta öne çıktığını anlatır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "İlk dört esere yaklaşım",
+            "locator": "96–109. satırlar",
             "supports": "TDV maddesi Buhârî ve Müslim'in Sahîh'leri ile Ebû Dâvûd ve Nesâî'nin Sünen'lerinin başlangıçta öne çıktığını anlatır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-dort",
+        "reviewedCandidateSha256": "29e7f7be9517e4b7d8b3468ab0163438b1029e6345104fb7a8e433338c97e320",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Beyhakî/İbn Hazm yerine dönemin gerçek hadis kitabı çiftleri. Dörtlü grubun Sünen çifti de şıklara konur fakat iki Sahîh’i değildir; açık eser türü bilgisi hedef.",
+        "optionReview": {
+          "o1": "96’nın iki Sünen’i.",
+          "o3": "Başka eser çifti.",
+          "o4": "Başka eser çifti.",
+          "o2": "96’nın iki Sahîh’i."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3517,8 +3878,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-hamse",
+        "reviewedCandidateSha256": "58aa8c0757e34a5f01231b1ffcd8ef66a80135ddc3faf445fa612a7161efcb5e",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört muhaddis aynı ekle. 97’nin ilk dörtlüye Tirmizî eklenmesi, altıncıdaki Mâlik/Dârimî/İbn Mâce farkından önceki aşama.",
+        "optionReview": {
+          "o1": "97’nin beşinci eseri.",
+          "o2": "Daha sonraki yaygın altıncı.",
+          "o3": "Başka altıncı tercih.",
+          "o4": "Başka altıncı tercih."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3565,23 +3950,23 @@
         ]
       },
       "after": {
-        "question": "Kütüb-i Sitte'de Sünen türünde eserleriyle tanınan üç müellif grubu hangisidir?",
+        "question": "Yaygın Kütüb-i Sitte listesindeki üç Sünen yazarı hangi grupta birlikte yer alır?",
         "options": [
           {
-            "id": "o1",
-            "text": "İbn Sînâ, Bîrûnî ve Hârizmî"
-          },
-          {
             "id": "o2",
-            "text": "Mâlik, Gazzâlî ve Cezerî"
+            "text": "Ebû Dâvûd, Beyhakî ve İbn Mâce"
           },
           {
             "id": "o3",
-            "text": "İbn Haldûn, Kâtip Çelebi ve Evliya"
+            "text": "Ebû Dâvûd, Nesâî ve Dârekutnî"
           },
           {
             "id": "o4",
             "text": "Ebû Dâvûd, Nesâî ve İbn Mâce"
+          },
+          {
+            "id": "o1",
+            "text": "Dârimî, Nesâî ve İbn Mâce"
           }
         ],
         "correctOptionId": "o4",
@@ -3589,20 +3974,51 @@
         "explanation": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd, Nesâî ve İbn Mâce'nin eserlerini Sünen başlığında değerlendirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Sünen türü ve müellifler",
+            "locator": "96–109. satırlar",
             "supports": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd, Nesâî ve İbn Mâce'nin eserlerini Sünen başlığında değerlendirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-sunen",
+        "reviewedCandidateSha256": "1a6f78060b3de961fd4cf678c6ba011be907d8ce7bd9257d27ec7ab7d256fb20",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı bilim/yüzyıl grubu yerine dört muhaddis grubu. Üçü de Sünen adıyla eser sahibidir; yaygın altılı üyeliği üçlüyü belirler. Tirmizî’nin de Sünen adı var, yanlış diye ayrıca sunulmadı.",
+        "optionReview": {
+          "o2": "Yaygın tertipte olmayan Beyhakî.",
+          "o3": "Yaygın tertipte olmayan Dârekutnî.",
+          "o4": "Yaygın altılıdaki üçlü.",
+          "o1": "Yaygın tertibin dışındaki Dârimî değişikliği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3649,23 +4065,23 @@
         ]
       },
       "after": {
-        "question": "Kütüb-i Sitte içinde Câmi türünde eserleri olan üç muhaddis grubu hangisidir?",
+        "question": "Kütüb-i Sitte’de el-Câmiu’s-sahîh adıyla eseri bulunan üçlü hangisidir?",
         "options": [
           {
             "id": "o1",
-            "text": "Beyhakī, Cezerî ve Bîrûnî"
+            "text": "Buhârî, Müslim ve Ebû Dâvûd"
           },
           {
             "id": "o2",
-            "text": "İbn Haldûn, Gazzâlî ve Ali Kuşçu"
+            "text": "Buhârî, Nesâî ve Tirmizî"
+          },
+          {
+            "id": "o4",
+            "text": "Müslim, İbn Mâce ve Tirmizî"
           },
           {
             "id": "o3",
             "text": "Buhârî, Müslim ve Tirmizî"
-          },
-          {
-            "id": "o4",
-            "text": "İbn Mâce, Nesâî ve Ebû Dâvûd"
           }
         ],
         "correctOptionId": "o3",
@@ -3673,20 +4089,51 @@
         "explanation": "Buhârî, Müslim ve Tirmizî'nin eserleri farklı hadis konularını içeren el-Câmiu's-sahîh başlığını taşır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Câmi türü eserler",
+            "locator": "96–109. satırlar",
             "supports": "Buhârî, Müslim ve Tirmizî'nin eserleri farklı hadis konularını içeren el-Câmiu's-sahîh başlığını taşır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-sitte-cami",
+        "reviewedCandidateSha256": "7b8694367236f4f51a4526b78fbb8b35dd7a0dc6444b7c47fcafdc6d9a5a7bf9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç farklı meslekli gruplar yerine dört hadis derleyicisi grubu. Başlık aidiyeti açık; Tirmizî’nin eserinin her rivayetinin sahih olduğu iddia edilmiyor.",
+        "optionReview": {
+          "o1": "Ebû Dâvûd’un temel eseri Sünen.",
+          "o2": "Nesâî’nin temel eseri Sünen.",
+          "o4": "İbn Mâce’nin temel eseri Sünen.",
+          "o3": "96–97’nin Câmi başlıklı üçlüsü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
+          "locator": "96–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3733,23 +4180,23 @@
         ]
       },
       "after": {
-        "question": "Buhârî'nin el-Câmiu's-sahîh adlı eseri hangi bilim dalına aittir?",
+        "question": "Buhârî’nin el-Câmiu’s-sahîh’i hangi ilim literatürünün temel derlemelerindendir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hadis"
-          },
-          {
             "id": "o2",
-            "text": "Tıp"
+            "text": "Tefsir"
           },
           {
             "id": "o3",
-            "text": "Astronomi"
+            "text": "Fıkıh"
           },
           {
             "id": "o4",
-            "text": "Mimarî"
+            "text": "Kelâm"
+          },
+          {
+            "id": "o1",
+            "text": "Hadis"
           }
         ],
         "correctOptionId": "o1",
@@ -3757,20 +4204,46 @@
         "explanation": "TDV Buhârî'nin el-Câmiu's-sahîh maddesi kitabın hadisleri bir araya getirdiğini ve İslâm hadis literatürünün temel eserlerinden olduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — el-camius-sahih--buhari",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--buhari",
-            "locator": "Buhârî'nin Sahih'i",
+            "locator": "97–107. satırlar",
             "supports": "TDV Buhârî'nin el-Câmiu's-sahîh maddesi kitabın hadisleri bir araya getirdiğini ve İslâm hadis literatürünün temel eserlerinden olduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-cami-buh",
+        "reviewedCandidateSha256": "f2e1dd5f5c7d0f780fdfb115f987b3fef6585af85d368d9b58ca0b63d4374173",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tıp/astronomi/mimarî gibi üç alan yerine dört İslâmî ilim. Eserde tefsir/fıkıh bölümleri de vardır; soru içeriğindeki her konuyu değil temel literatür aidiyetini sorar.",
+        "optionReview": {
+          "o2": "İçinde bölümü de bulunan başka ilim.",
+          "o3": "İçinde konuları da bulunan başka ilim.",
+          "o4": "Başka İslâmî ilim.",
+          "o1": "97–107’nin hadis külliyatı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--buhari",
+          "locator": "97–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3817,44 +4290,70 @@
         ]
       },
       "after": {
-        "question": "Müslim'in el-Câmiu's-sahîh adlı eseri hangi içerikten oluşur?",
+        "question": "Müslim’in derlemesinde ana metne alınacak rivayetlerin hangi niteliği aranır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Yalnız tarihî haritalardan"
-          },
-          {
-            "id": "o2",
-            "text": "Miras hesap çizelgelerinden"
-          },
-          {
             "id": "o3",
-            "text": "Astronomi gözlemlerinden"
+            "text": "Sahâbeye ait olmaları"
           },
           {
             "id": "o4",
-            "text": "Sahih kabul edilen hadislerden"
+            "text": "Sahih olmaları"
+          },
+          {
+            "id": "o1",
+            "text": "Çok yaygın olmaları"
+          },
+          {
+            "id": "o2",
+            "text": "Kısa metinli olmaları"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Sahih kabul edilen hadislerden",
+        "correctAnswer": "Sahih olmaları",
         "explanation": "TDV Müslim'in el-Câmiu's-sahîh maddesi eseri sahih hadislerden oluşan bir derleme olarak tanımlar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — el-camius-sahih--muslim",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--muslim",
-            "locator": "Müslim Sahih'i",
+            "locator": "96–104. satırlar",
             "supports": "TDV Müslim'in el-Câmiu's-sahîh maddesi eseri sahih hadislerden oluşan bir derleme olarak tanımlar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-cami-mus",
+        "reviewedCandidateSha256": "c08d326e6ddfd8a1d2b58b52993aa6f44e26225db1ff54efa2ad4cce2ec32b98",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Harita/miras çizelgesi/gözlem yerine dört rivayet seçme ölçütü. Ana metin kaydı mukaddime ayrımını korur; sahih olmayan her rivayeti uydurma sayan yeni hüküm yok.",
+        "optionReview": {
+          "o3": "Farklı aidiyet ölçütü.",
+          "o4": "96 ve 102–103’ün esas şartı.",
+          "o1": "Başka nakil çokluğu ölçütü.",
+          "o2": "Başka metin ölçütü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--muslim",
+          "locator": "96–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3904,20 +4403,20 @@
         "question": "Muhammed b. İsmâil el-Buhârî hangi şehirde doğmuştur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Şam"
+            "id": "o2",
+            "text": "Tirmiz"
           },
           {
-            "id": "o2",
-            "text": "Mekke"
+            "id": "o4",
+            "text": "Nîşâbur"
           },
           {
             "id": "o3",
             "text": "Buhara"
           },
           {
-            "id": "o4",
-            "text": "Kahire"
+            "id": "o1",
+            "text": "Semerkant"
           }
         ],
         "correctOptionId": "o3",
@@ -3925,20 +4424,46 @@
         "explanation": "TDV Buhârî maddesi büyük muhaddisin 194 hicrî, 810 milâdî yılında Buhara'da doğduğunu bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — buhari-muhammed-b-ismail",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
-            "locator": "Buhârî'nin doğumu",
+            "locator": "114–119. satırlar",
             "supports": "TDV Buhârî maddesi büyük muhaddisin 194 hicrî, 810 milâdî yılında Buhara'da doğduğunu bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-buhari-dogum",
+        "reviewedCandidateSha256": "40123ff6708e809dd51e7e8030af9d5a8e68e2e5537b152bf0e0311898e9c189",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Şehir nisbesi bilgi verebilir; farklı bölgelere karşı yalnız Buhara yerine dört aynı ilim coğrafyasından şehir. Doğum yeri 114’te açık.",
+        "optionReview": {
+          "o2": "Başka yakın ilim şehri.",
+          "o4": "Başka yakın ilim şehri.",
+          "o3": "114’ün doğum şehri.",
+          "o1": "Başka yakın ilim şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
+          "locator": "114–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3988,20 +4513,20 @@
         "question": "Muhammed b. İsmâil el-Buhârî hangi milâdî yılda doğmuştur?",
         "options": [
           {
-            "id": "o1",
-            "text": "1453"
+            "id": "o4",
+            "text": "830"
           },
           {
             "id": "o2",
             "text": "810"
           },
           {
-            "id": "o3",
-            "text": "622"
+            "id": "o1",
+            "text": "800"
           },
           {
-            "id": "o4",
-            "text": "1071"
+            "id": "o3",
+            "text": "820"
           }
         ],
         "correctOptionId": "o2",
@@ -4009,20 +4534,46 @@
         "explanation": "TDV Buhârî biyografisi doğumunu 13 Şevval 194, milâdî 20 Temmuz 810 olarak tarihlendirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — buhari-muhammed-b-ismail",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
-            "locator": "194 / 810 doğumu",
+            "locator": "114. satır",
             "supports": "TDV Buhârî biyografisi doğumunu 13 Şevval 194, milâdî 20 Temmuz 810 olarak tarihlendirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-buhari-yil",
+        "reviewedCandidateSha256": "f51368997d1c15f1aba732a9f43c1857ba78b9ed7bd91244a982e1d0865a3d1f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "1453/1071/622 gibi uzak dönüm noktaları yerine dört yakın 9. yüzyıl yılı. Hicrî/milâdî ayrımı kökte açık.",
+        "optionReview": {
+          "o4": "Başka yakın yıl.",
+          "o2": "114’ün milâdî yılı.",
+          "o1": "Başka yakın yıl.",
+          "o3": "Başka yakın yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
+          "locator": "114. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4077,36 +4628,62 @@
           },
           {
             "id": "o2",
-            "text": "750"
+            "text": "860"
           },
           {
             "id": "o3",
-            "text": "1000"
+            "text": "880"
           },
           {
             "id": "o4",
-            "text": "1258"
+            "text": "890"
           }
         ],
         "correctOptionId": "o1",
         "correctAnswer": "870",
-        "explanation": "TDV Kütüb-i Sitte maddesi ve Buhârî biyografisi onun 256 hicrî, 870 milâdî yılında vefat ettiğini belirtir.",
+        "explanation": "TDV Buhârî biyografisi, onun 256 hicrî yılında vefat ettiğini ve 1 Eylül 870’te defnedildiğini bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Buhârî 256 / 870",
-            "supports": "TDV Kütüb-i Sitte maddesi ve Buhârî biyografisi onun 256 hicrî, 870 milâdî yılında vefat ettiğini belirtir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
+            "locator": "138–139. satırlar",
+            "supports": "TDV Buhârî biyografisi, onun 256 hicrî yılında vefat ettiğini ve 1 Eylül 870’te defnedildiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-buhari-vefat",
+        "reviewedCandidateSha256": "ca82b694cb423b57c1b72ea7c888d097413579e0baed79a89c8b53ac4c716f1f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Uzak yüzyıl sayıları dört yakın yılla değişti; iddianın doğrudan bulunduğu Buhârî biyografisi kaynak yapıldı. Kütüb-i Sitte maddesine atıfla tarih doğrulandı denmiyor.",
+        "optionReview": {
+          "o1": "139’un milâdî yılı.",
+          "o2": "Başka yakın yıl.",
+          "o3": "Başka yakın yıl.",
+          "o4": "Başka yakın yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
+          "locator": "138–139. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4161,11 +4738,11 @@
           },
           {
             "id": "o2",
-            "text": "915"
+            "text": "887"
           },
           {
             "id": "o3",
-            "text": "887"
+            "text": "915"
           },
           {
             "id": "o4",
@@ -4174,23 +4751,49 @@
         ],
         "correctOptionId": "o4",
         "correctAnswer": "875",
-        "explanation": "TDV Kütüb-i Sitte maddesi Müslim'in 261 hicrî, 875 milâdî yılında vefat ettiğini kaydeder.",
+        "explanation": "TDV Müslim b. Haccâc biyografisi vefatını 25 Receb 261, milâdî 5 Mayıs 875 olarak kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Müslim 261 / 875",
-            "supports": "TDV Kütüb-i Sitte maddesi Müslim'in 261 hicrî, 875 milâdî yılında vefat ettiğini kaydeder.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/muslim-b-haccac",
+            "locator": "101–103. satırlar",
+            "supports": "TDV Müslim b. Haccâc biyografisi vefatını 25 Receb 261, milâdî 5 Mayıs 875 olarak kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-muslim-vefat",
+        "reviewedCandidateSha256": "3fd3a0c9295fbc09fbee02747896dd485eeeffa9ffdbd32e4c877cb921b584fa",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Seçenek sayıları korunup doğrudan vefat pasajı kaynak yapıldı. Önceki Kütüb-i Sitte atfının yerine 102’deki 5 Mayıs 875 biyografik kaydı kullanılıyor.",
+        "optionReview": {
+          "o1": "Buhârî yılı.",
+          "o2": "İbn Mâce yılı.",
+          "o3": "Nesâî yılı.",
+          "o4": "102’nin milâdî vefat yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/muslim-b-haccac",
+          "locator": "101–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4240,41 +4843,67 @@
         "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
         "options": [
           {
-            "id": "o1",
-            "text": "915"
-          },
-          {
             "id": "o2",
             "text": "887"
+          },
+          {
+            "id": "o4",
+            "text": "870"
           },
           {
             "id": "o3",
             "text": "892"
           },
           {
-            "id": "o4",
-            "text": "870"
+            "id": "o1",
+            "text": "915"
           }
         ],
         "correctOptionId": "o3",
         "correctAnswer": "892",
-        "explanation": "TDV Kütüb-i Sitte maddesi Tirmizî'nin 279 hicrî, 892 milâdî yılında vefat ettiğini bildirir.",
+        "explanation": "TDV Tirmizî biyografisi onun 13 Receb 279, milâdî 9 Ekim 892’de vefat ettiğini bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Tirmizî 279 / 892",
-            "supports": "TDV Kütüb-i Sitte maddesi Tirmizî'nin 279 hicrî, 892 milâdî yılında vefat ettiğini bildirir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/tirmizi",
+            "locator": "104–109. satırlar",
+            "supports": "TDV Tirmizî biyografisi onun 13 Receb 279, milâdî 9 Ekim 892’de vefat ettiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-tirmizi-vefat",
+        "reviewedCandidateSha256": "ec8b34d4ba65eb904c1c54fa35daf51af6777e69188c46e2c27f5f521ea4fc19",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Sayısal çeldiriciler aynı hadisçi kuşağından korunup doğrudan biyografik kaynak bağlandı. Yer için Tirmiz/Buğ rivayet farkı var ama yıl 892.",
+        "optionReview": {
+          "o2": "İbn Mâce yılı.",
+          "o4": "Buhârî yılı.",
+          "o3": "107’nin yılı.",
+          "o1": "Nesâî yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/tirmizi",
+          "locator": "104–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4324,41 +4953,67 @@
         "question": "Kütüb-i Sitte müelliflerinden Nesâî'nin milâdî vefat yılı kaçtır?",
         "options": [
           {
-            "id": "o1",
-            "text": "892"
+            "id": "o4",
+            "text": "875"
           },
           {
             "id": "o2",
             "text": "915"
           },
           {
-            "id": "o3",
-            "text": "870"
+            "id": "o1",
+            "text": "892"
           },
           {
-            "id": "o4",
-            "text": "875"
+            "id": "o3",
+            "text": "870"
           }
         ],
         "correctOptionId": "o2",
         "correctAnswer": "915",
-        "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'nin vefatını 303 hicrî, 915 milâdî yılına tarihlendirir.",
+        "explanation": "TDV Nesâî biyografisi vefatını 303 hicrî, 915 milâdî yılına tarihlendirir; ölüm ve defin yeri konusunda farklı rivayetleri ayrıca belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Nesâî 303 / 915",
-            "supports": "TDV Kütüb-i Sitte maddesi Nesâî'nin vefatını 303 hicrî, 915 milâdî yılına tarihlendirir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/nesai",
+            "locator": "101–104. satırlar",
+            "supports": "TDV Nesâî biyografisi vefatını 303 hicrî, 915 milâdî yılına tarihlendirir; ölüm ve defin yeri konusunda farklı rivayetleri ayrıca belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-nesai-vefat",
+        "reviewedCandidateSha256": "5c13c29296196e33409eefe052be95ceb014885c85cfdaf1fc9aef0a9746414d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kaynak doğrudan vefat tarihini veren Nesâî biyografisine alındı. Defin yeri/ölüm nedeni rivayetleri tek kesin görüş yapılmadı; 303/915 yılı soruluyor.",
+        "optionReview": {
+          "o4": "Müslim yılı.",
+          "o2": "102’nin 915 yılı.",
+          "o1": "Tirmizî yılı.",
+          "o3": "Buhârî yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/nesai",
+          "locator": "101–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4408,41 +5063,67 @@
         "question": "Kütüb-i Sitte müellifi Ebû Dâvûd es-Sicistânî'nin milâdî vefat yılı kaçtır?",
         "options": [
           {
-            "id": "o1",
-            "text": "889"
-          },
-          {
             "id": "o2",
             "text": "875"
           },
           {
             "id": "o3",
-            "text": "915"
+            "text": "887"
           },
           {
             "id": "o4",
-            "text": "750"
+            "text": "892"
+          },
+          {
+            "id": "o1",
+            "text": "889"
           }
         ],
         "correctOptionId": "o1",
         "correctAnswer": "889",
-        "explanation": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd'un 275 hicrî, 889 milâdî yılında vefat ettiğini bildirir.",
+        "explanation": "TDV Ebû Dâvûd biyografisi onun 16 Şevval 275, milâdî 21 Şubat 889’da Basra’da vefat ettiğini bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "Ebû Dâvûd 275 / 889",
-            "supports": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd'un 275 hicrî, 889 milâdî yılında vefat ettiğini bildirir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/ebu-davud-es-sicistani",
+            "locator": "103–108. satırlar",
+            "supports": "TDV Ebû Dâvûd biyografisi onun 16 Şevval 275, milâdî 21 Şubat 889’da Basra’da vefat ettiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-ebudavud-vefat",
+        "reviewedCandidateSha256": "5f4d22aebff44cfb04f0dfbd9a212b8ae2a9983ceabda0bbe842964d03169657",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "750 gibi uzak yıla karşı dört yakın hadisçi vefat yılı. 105’in 21 Şubat 889 kaydı doğrudan kaynak, dolaylı liste atfı değil.",
+        "optionReview": {
+          "o2": "Müslim yılı.",
+          "o3": "İbn Mâce yılı.",
+          "o4": "Tirmizî yılı.",
+          "o1": "105’in yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-davud-es-sicistani",
+          "locator": "103–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4510,23 +5191,49 @@
         ],
         "correctOptionId": "o4",
         "correctAnswer": "887",
-        "explanation": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin 273 hicrî, 887 milâdî yılında vefat ettiğini belirtir.",
+        "explanation": "TDV İbn Mâce biyografisi onun 21 Ramazan 273, milâdî 19 Şubat 887’de vefat ettiğini belirtir; 889 rivayetini doğru bulmaz.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
-            "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-            "locator": "İbn Mâce 273 / 887",
-            "supports": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin 273 hicrî, 887 milâdî yılında vefat ettiğini belirtir.",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/ibn-mace",
+            "locator": "96–100. satırlar",
+            "supports": "TDV İbn Mâce biyografisi onun 21 Ramazan 273, milâdî 19 Şubat 887’de vefat ettiğini belirtir; 889 rivayetini doğru bulmaz.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q68-ibnmace-vefat",
+        "reviewedCandidateSha256": "ac1296c04d01478dfeb014a4e492aa5aca7e1a34f737aeed4501107c4ee8ae07",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Dört yakın dönem vefat yılı korunup 99’un doğrudan 887 kaydı kaynak yapıldı. Aynı maddenin yanlış saydığı 889 rivayeti doğruya taşınmaz.",
+        "optionReview": {
+          "o1": "Buhârî yılı.",
+          "o2": "Müslim yılı.",
+          "o3": "Nesâî yılı.",
+          "o4": "99’un yılı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ibn-mace",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4576,20 +5283,20 @@
         "question": "Zeyd b. Sâbit hangi şehirde doğmuştur?",
         "options": [
           {
-            "id": "o1",
-            "text": "Medine"
-          },
-          {
             "id": "o2",
             "text": "Mekke"
           },
           {
             "id": "o3",
-            "text": "Kûfe"
+            "text": "Tâif"
           },
           {
             "id": "o4",
-            "text": "Basra"
+            "text": "Hayber"
+          },
+          {
+            "id": "o1",
+            "text": "Medine"
           }
         ],
         "correctOptionId": "o1",
@@ -4597,20 +5304,46 @@
         "explanation": "TDV biyografisine göre Zeyd b. Sâbit hicretten yaklaşık on bir yıl önce Medine'de doğmuştur; Hazrec kabilesindendir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Medine’de doğumu",
+            "locator": "102–105. satırlar",
             "supports": "TDV biyografisine göre Zeyd b. Sâbit hicretten yaklaşık on bir yıl önce Medine'de doğmuştur; Hazrec kabilesindendir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-dogum",
+        "reviewedCandidateSha256": "ab10f7dc7a2231e78943538a019ac7ab470b5914dbd1f4d01ca9d01e2a3c9415",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Doğumda henüz bulunmayan Kûfe/Basra yerine dört çağdaş Hicaz yerleşmesi. Hicret öncesi Medine doğumu açık.",
+        "optionReview": {
+          "o2": "Başka Hicaz şehri.",
+          "o3": "Başka Hicaz şehri.",
+          "o4": "Başka Hicaz yerleşmesi.",
+          "o1": "102’nin doğum yeri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "102–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4693,8 +5426,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-annesi",
+        "reviewedCandidateSha256": "1060ff41bc14dd829733be072521544ea6a8e7b18a0d8bfe62a3713a61bb681c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört çağdaş kadın adı. 102’de Nevvâr açık; kadınların diğer gerçek aile ilişkileri yeni şık doğrusu diye aktarılmıyor.",
+        "optionReview": {
+          "o1": "Başka kadın sahâbî.",
+          "o2": "Başka kadın sahâbî.",
+          "o3": "Başka kadın sahâbî.",
+          "o4": "102’nin anne adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "102–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4744,20 +5501,20 @@
         "question": "Zeyd b. Sâbit, Hz. Peygamber Medine'ye gelmeden önce kaç sûre ezberlemişti?",
         "options": [
           {
-            "id": "o1",
-            "text": "On"
-          },
-          {
-            "id": "o2",
-            "text": "Otuz"
+            "id": "o4",
+            "text": "Yirmi bir"
           },
           {
             "id": "o3",
             "text": "On yedi"
           },
           {
-            "id": "o4",
-            "text": "Beş"
+            "id": "o1",
+            "text": "On beş"
+          },
+          {
+            "id": "o2",
+            "text": "On dokuz"
           }
         ],
         "correctOptionId": "o3",
@@ -4765,20 +5522,46 @@
         "explanation": "TDV'ye göre Zeyd b. Sâbit hicret öncesinde henüz çocukken on yedi sûre ezberlemişti; daha sonra bunları Hz. Peygamber'e okudu.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "On yedi sûre ezberi",
+            "locator": "102–103. satırlar",
             "supports": "TDV'ye göre Zeyd b. Sâbit hicret öncesinde henüz çocukken on yedi sûre ezberlemişti; daha sonra bunları Hz. Peygamber'e okudu.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-sure",
+        "reviewedCandidateSha256": "c8e31745a87a2571e1b2891a74f08f6db0ef6c331dd551f16060f93c0d157810",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Tek keskin sayıya karşı yuvarlak uç sayılar yerine dört yakın tek sayı. Kaynak 17 sûreyi açık verir; sayı güncel banka büyüklüğü değil tarihî bilgi.",
+        "optionReview": {
+          "o4": "Başka yakın sayı.",
+          "o3": "102’nin sûre sayısı.",
+          "o1": "Başka yakın sayı.",
+          "o2": "Başka yakın sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "102–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

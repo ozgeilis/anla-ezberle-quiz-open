@@ -5,7 +5,7 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 39,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 50,
   "flaggedAfter": 27,
@@ -348,15 +348,17 @@
           "o3": "Teslim tarihi rıza eksikliğinden farklıdır.",
           "o4": "Piyasa fiyatı rıza bulunduğunu tek başına göstermez."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Genel ticaret/emanet sorularından somut zorlama senaryosuyla ayrılır.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/tefsir/sure/4/ayet/29?kaynak=1",
-          "locator": "4/29; Diyanet meal/tefsir kontrolü",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "4/29; PDF sayfa 90 (1 tabanlı), basılı sayfa 89",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -466,15 +468,17 @@
           "o3": "Belge kullanma başka bir yargılama aracıdır.",
           "o4": "Uzlaştırma adalet ilkesinden farklı bir yöntemdir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "v72’de yenilenen anlam sorusudur; eski ezber sorusu geri getirilmedi.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/tefsir/sure/5/ayet/8?kaynak=1",
-          "locator": "5/8; Diyanet meal/tefsir kontrolü",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "5/8; PDF sayfa 116 (1 tabanlı), basılı sayfa 115",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -584,15 +588,17 @@
           "o3": "Huzurla ilişkilendirilen anma kavramıdır; doğrudan kaynak tekrar okuması bekler.",
           "o4": "Özenli çalışma farklı bir davranıştır."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Anlam/kavrayış sorusu olarak korunur; v72 anlam değişikliğinin yerini eski ezber almaz.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/tefsir/sure/13/ayet/28?kaynak=1",
-          "locator": "13/28; Diyanet meal/tefsir kontrolü",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "13/28; PDF sayfa 263 (1 tabanlı), basılı sayfa 262",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -700,15 +706,17 @@
           "o3": "Kötü lakap farklı bir ahlakî yasaktır.",
           "o4": "Hile farklı bir ahlakî yasaktır."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "İsraf temalı kavram sorularıyla benzerlik var; bu soru belirli âyet bağlamıyla ayrılır.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/tefsir/sure/17/ayet/27?kaynak=1",
-          "locator": "17/27; Diyanet meal/tefsir kontrolü",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/27; PDF sayfa 298 (1 tabanlı), basılı sayfa 297",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -832,15 +840,17 @@
           "o3": "Paylaşma başka bir ilkedir.",
           "o4": "Dürüst çalışma ayrı bir ilkedir; herkes sözcüğü burada otomatik hata değildir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Emek teması ortak olabilir; hesap/karşılık bağlamı özellikle korunur.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/tefsir/sure/53/ayet/39?kaynak=1",
-          "locator": "53/39; Diyanet meal/tefsir kontrolü",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "53/39; PDF sayfa 563 (1 tabanlı), basılı sayfa 562",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -948,15 +958,17 @@
           "o3": "Ortak görüşü dinlememek farklı bir kusurdur.",
           "o4": "Söz-davranış çelişkisini anlatır; kaynak tekrar okuması bekler."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Genel sözünde durma sorularından âyetin yapmadığını söyleme ifadesiyle ayrılır.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/tefsir/sure/61/ayet/2?kaynak=1",
-          "locator": "61/2-3; Diyanet meal/tefsir kontrolü",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "Saff 61/2–3; PDF sayfa 591, basılı 590; söz ve davranış tutarsızlığı",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -1174,15 +1186,17 @@
           "o1": "Dua dizisindeki sonraki taleptir.",
           "o3": "Dua dizisindeki sonraki taleptir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Aynı dua dizisinden diğer sorular varsa ilk talep ayrımı korunmalı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "Kur’an Yolu Meali, 20/25; PDF sayfa 329 (1 tabanlı)",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "20/25; PDF sayfa 329 (1 tabanlı), basılı sayfa 328",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -2738,15 +2752,17 @@
           "o2": "Anahtardaki ilk ikilidir; bu turda pasaj tekrar okuması bekler.",
           "o1": "Listede yer alır fakat ilk ikili değildir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Genel zekât alıcıları sorusundan listede başta yer alma ayrımıyla ayrılır.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "Kur’an Yolu Meali, 9/60; PDF sayfa 207 (1 tabanlı)",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "9/60; PDF sayfa 207 (1 tabanlı), basılı sayfa 206",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -4794,15 +4810,17 @@
           "o3": "Başka kıssa topluluğudur.",
           "o4": "Başka kıssa topluluğudur."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Süleyman/hüdhüd ailesinde haberin kaynağı hedefi başka sorularla denetlenecek.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=27&ayet=22&mode=meal",
-          "locator": "Neml 27/22, Kur’an Yolu metni",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "27/22; PDF sayfa 399 (1 tabanlı), basılı sayfa 398",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -5067,15 +5085,17 @@
           "o3": "Ayrı ana yön.",
           "o4": "Ayrı ana yön."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Meryem kıssasındaki ağaç/su olaylarından yön ayrıntısıyla ayrılır.",
         "source": {
-          "status": "pending",
-          "url": "https://kuran.diyanet.gov.tr/kuran?sure=19&ayet=16&mode=meal",
-          "locator": "Meryem 19/16, açılan Kur’an Yolu meal sayfası",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "19/16; PDF sayfa 321 (1 tabanlı), basılı sayfa 320",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -5315,15 +5335,17 @@
           "o2": "Anahtardaki sıra; yeni kaynak okuması bekler.",
           "o1": "Akrabalık grubu; sorulan sıra değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Nûh’un genel duasını soran maddelerden açık sıra ayrımıyla ayrılır.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-          "locator": "Kur’an Yolu Meali, 71/28; PDF sayfa 615 (1 tabanlı)",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "71/28; PDF sayfa 615 (1 tabanlı), basılı sayfa 614",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,

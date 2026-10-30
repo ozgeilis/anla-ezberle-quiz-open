@@ -5,7 +5,7 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 39,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 9,
   "flaggedAfter": 3,
@@ -102,15 +102,17 @@
           "o3": "Coğrafya eseri.",
           "o4": "Denizcilik eseri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
-          "locator": "Eserin tanımı ve yazılış amacı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kitâbü’l-İber’e giriş olarak Mukaddime; satır 96–102",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "05ebe49a0a88fcded18bf0d2f6af0338a11d80dda2e9c8f2e3f8ad925be0d122"
         }
       },
       "independentExpertApproval": false,
@@ -318,15 +320,17 @@
           "o3": "Gezi eseri.",
           "o4": "İbn Haldûn’un eseri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/kitab-i-bahriyye",
-          "locator": "Eser tanımı, Akdeniz ve Ege kıyıları",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Pîrî Reis ve Ege/Akdeniz portolan atlası; satır 96–104",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -424,15 +428,17 @@
           "o3": "Daha sonraki tarih.",
           "o4": "Daha sonraki tarih."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/piri-reis",
-          "locator": "Pîrî Reis'in 1513 tarihli haritası",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "919/1513 tarihli ilk dünya haritası; satır 102,116–118",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -640,15 +646,17 @@
           "o3": "Başka seyahat şehri.",
           "o4": "Başka tarihî şehir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/ibn-battuta",
-          "locator": "Hayatı: 1304 yılında Tanca'da doğması",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "703/1304 Tanca doğumu; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
         }
       },
       "independentExpertApproval": false,
@@ -746,15 +754,17 @@
           "o3": "Filozof.",
           "o4": "Denizci/yazar."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/kesfuz-zunun",
-          "locator": "Giriş: müellif ve bibliyografya niteliği",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Kâtib Çelebi’nin bibliyografya ve ilimler eseri; satır 96–98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
         }
       },
       "independentExpertApproval": false,
@@ -852,15 +862,17 @@
           "o3": "Ustalık olarak anılan.",
           "o4": "Sonraki mimarın eseri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/sinan",
-          "locator": "Süleymaniye'nin kalfalık eseri olarak nitelenmesi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/suleymaniye-camii-ve-kulliyesi",
+          "locator": "Sinan’ın kalfalık eseri tanımlaması; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -958,15 +970,17 @@
           "o3": "İstanbul’daki eser adı.",
           "o4": "Farklı mimar/dönem eseri."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/sinan",
-          "locator": "Edirne Selimiye Camii, II. Selim dönemi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selimiye-camii-ve-kulliyesi--edirne",
+          "locator": "Edirne, II. Selim ve Mimar Sinan; madde giriş/tarihçe",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
         }
       },
       "independentExpertApproval": false,
@@ -1502,15 +1516,17 @@
           "o3": "Öğretici.",
           "o4": "Yazma kopyalayıcısı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/muezzin",
-          "locator": "Müezzinin ezan ve kamet görevi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Namaz vaktini duyuran ve kāmet getiren görevli; satır 96–99",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -1936,15 +1952,17 @@
           "o3": "Kıble nişi.",
           "o4": "Yüksek bölüm."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/sadirvan",
-          "locator": "Şadırvan tanımı: cami avlusundaki abdest tesisi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Cami avlusunda abdest için su tesisi; satır 96–98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5403,15 +5421,17 @@
           "o3": "Sonraki padişah.",
           "o4": "Sonraki padişah."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/sahn-i-seman",
-          "locator": "TDV Sahn-ı Semân: kurucusu",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Fâtih tarafından İstanbul’da kurulan yüksek medrese; madde tanımı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -5509,15 +5529,17 @@
           "o3": "Eksik sayı.",
           "o4": "Fazla sayı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/sahn-i-seman",
-          "locator": "Sekiz yüksek dereceli medrese",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Sekiz medrese ve semâniye adı; satır 96",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,

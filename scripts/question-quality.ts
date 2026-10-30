@@ -45,7 +45,7 @@ export const optionStyleSignals = (text: string) => ({
   absolute: containsPhrase(text, absolutePhrases),
 });
 const bad =
-  /kibir|haksız|hile|alay|iftira|gıybet|zarar|küçümse|öldür|yalan|zul|azarl|nankör|savurgan|israf|kırıcı|çekiştir|böbür|inkâr|korkut|başkalarını suçla|ihanet/iu;
+  /kibir|haksız|hile|alay|iftira|gıybet|zarar|küçümse|öldür|yalan|zul|azarl|nankör|savurgan|israf|kırıcı|çekiştir|böbür|inkâr|korkut|başkalarını suçla|ihanet|ikiyüzlü/iu;
 const good =
   /yardım|adalet|merhamet|iyilik|şük|şükür|sabır|sabret|doğru|koru|gözet|paylaş|şefkat|öğren|iyiye|güzel|mütevaz|alçak gönül|iman|bağış/iu;
 const semanticSets = [

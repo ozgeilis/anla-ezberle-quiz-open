@@ -5,10 +5,10 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 47,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 50,
-  "flaggedAfter": 19,
+  "flaggedAfter": 18,
   "records": [
     {
       "sequence": 151,
@@ -1278,21 +1278,21 @@
           },
           {
             "id": "o2",
-            "text": "Herkes için bir şölen ve işaret olması"
+            "text": "Bizler için bir şölen ve işaret olması"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Herkes için bir şölen ve işaret olması",
-        "explanation": "Mâide 5/114’te Îsâ, indirilecek sofranın ilk gelenden son gelene herkes için bir şölen ve Allah’tan bir işaret olmasını diler. Soru bu duanın açık amaç çiftini sorar.",
+        "correctAnswer": "Bizler için bir şölen ve işaret olması",
+        "explanation": "Mâide 5/114’te Îsâ, ilk gelenlerinden son gelenlerine kadar kendileri için bir şölen ve Allah’tan bir işaret olacak sofra ister; ardından rızık duası eder.",
         "sources": [
           {
             "title": "Diyanet — Kur’an Yolu Meali",
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
             "locator": "5/114; PDF sayfa 135 (1 tabanlı), basılı sayfa 134",
-            "supports": "5/114 bağlamında sorulan ifade: Herkes için bir şölen ve işaret olması.",
+            "supports": "Îsâ, kendi topluluğunun ilk ve son gelenleri için şölen ve Allah’tan işaret olacak sofrayı ister. Doğrudan kaynak alıntısı değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-28"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -1302,29 +1302,25 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "only-correct-absolute",
-          "detail": "Doğru cevap tek sınırlayıcı/mutlak ifade; ifade tek başına hata değildir"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q61-isa-sofra",
-        "reviewedCandidateSha256": "e181c48ed4543c0b48dcee401872925fb33dcca02d884f51ba37441083b7a879",
+        "reviewedCandidateSha256": "e68b6e8a073d29a1bef741da091846e6292a1cebfd11b93668933de28617c49d",
         "disposition": "revised",
         "defects": [
-          "implausible-distractor"
+          "implausible-distractor",
+          "source-scope"
         ],
-        "reason": "Kaynak dışı konuşan ağaç gibi işaretler kaldırıldı. Dört olumlu sofra amacı karşılaştırılıyor; 5/114’te açıkça anılan şölen/işaret ayrımı gerekir.",
+        "reason": "Mealdeki bizler için kapsamı korunarak bütün insanları mutlak biçimde kapsayan herkes ifadesi düzeltildi. Dört olumlu amaç ikilisi aynı yapıdadır; birinci/son gelen topluluk ve ilâhî işaret bağlamı anahtarı belirler.",
         "optionReview": {
-          "o1": "Azık/destek bu duanın açık amacı değil.",
-          "o3": "Yardım/ikram bu duanın açık çifti değil.",
-          "o4": "Şifa/güç bu duanın açık çifti değil.",
-          "o2": "114’te şölen ve Allah’tan işaret dileği."
+          "o1": "Aynı alandaki başka yöntem/kişi/amaç; belirtilen ayetin söylediği değildir.",
+          "o3": "Kaynakta bu kesin bağlamda seçilmeyen, dilce aynı türde çeldirici.",
+          "o4": "Aynı bilgi alanında ancak belirtilen ayetin karşılığı olmayan seçenek.",
+          "o2": "Belirtilen resmî meal pasajındaki kesin bağlama uyar."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Soru tek bir ayetin açık anlatımıyla sınırlandırıldı. Seçeneklerin başka bir bağlamda doğru olması bu ayetin cevabı olmalarını sağlamaz.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
@@ -1332,7 +1328,7 @@
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
           "locator": "5/114; PDF sayfa 135 (1 tabanlı), basılı sayfa 134",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -1449,15 +1445,17 @@
           "o3": "Medine ziyareti hac merkezi değildir.",
           "o4": "Medine’de; hac merkezi değildir."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "e150-general-016 kıble merkezini sorar; aynı yapı cevabı farklı ibadet ilişkisi. Hac-Kâbe tekrarı banka çapında ayrıca değerlendirilmeli.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/hac",
-          "locator": "Hac, Kâbe ve çevresindeki belirli kutsal mekânların usulüne uygun ziyaret edilmesini içeren ibadettir",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Haccın belirli mekânları: Arafat ve Kâbe çevresinde tavaf; satır 424",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b4bc6a1ea71aae4db3c1ca7136e7caf633f4295b26fa5461309eba33567dcb7d"
         }
       },
       "independentExpertApproval": false,
@@ -2438,15 +2436,17 @@
           "o3": "Adı benzer başka hükümdar; gerçek çeldirici.",
           "o4": "Başka dönem hükümdarı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/ulucami",
-          "locator": "Bursa Ulucamii ve I. Bayezid",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Bursa Ulucamii; I. Bayezid ve 802/1399–1400; satır 823",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "b353f22390cd232d8ada2b1a27d71345c4951ea68c7dd8f645c4353bdff9a979"
         }
       },
       "independentExpertApproval": false,
@@ -2709,15 +2709,17 @@
           "o3": "Yakın sayısal alternatif.",
           "o4": "Anahtar; TDV konum paragrafı okunmalı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
-          "locator": "Bedir kasabası ve Kızıldeniz",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Bedir kasabasının Kızıldeniz’e 30 km uzaklığı; satır 102",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,

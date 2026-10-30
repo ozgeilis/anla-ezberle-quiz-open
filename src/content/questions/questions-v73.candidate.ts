@@ -11422,45 +11422,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "v9-prophets-003",
-    "version": 2,
+    "version": 3,
     "categoryId": "prophets",
     "difficulty": "hard",
-    "question": "Meryem sûresine göre ailesine namazı ve zekâtı emreden peygamber kimdir?",
+    "question": "Meryem 19/55'te halkına namazı ve zekâtı emrettiği belirtilen peygamber kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hz. Hûd"
+        "id": "o4",
+        "text": "Hz. İlyâs"
       },
       {
         "id": "o2",
         "text": "Hz. İsmâil"
       },
       {
-        "id": "o3",
-        "text": "Hz. Yûnus"
+        "id": "o1",
+        "text": "Hz. Hûd"
       },
       {
-        "id": "o4",
-        "text": "Hz. İlyâs"
+        "id": "o3",
+        "text": "Hz. Yûnus"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Meryem 19/55'te Hz. İsmâil'in ailesine namaz kılmayı ve zekât vermeyi emrettiği belirtilir.",
+    "explanation": "Meryem 19/54–55’te İsmâil’in sözünde duran bir elçi olduğu ve halkına namaz ile zekâtı emrettiği belirtilir. Kur’an Yolu Meali bu bağlamda “halkına” ifadesini kullanır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/ismail--peygamber",
-        "locator": "Meryem 19/54-55: namaz ve zekât",
-        "supports": "Meryem 19/55'te Hz. İsmâil'in ailesine namaz kılmayı ve zekât vermeyi emrettiği belirtilir.",
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "Meryem 19/54–55; PDF sayfa 324, basılı sayfa 323",
+        "supports": "İsmâil’in halkına namazı ve zekâtı emrettiği anlatılır. Doğrudan alıntı değil, kaynak karşılaştırma notudur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-19"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "Ürün sahibinin kaynak doğrulama koşullu kullanım iznine dayanır. Bağımsız editör ve dinî uzman incelemesi yapılmış sayılmaz. v14 zorluk kalibrasyonu: başlangıç seviyesinde temel kavramlar, orta seviyede ön bilgi, zor seviyede özel ayrıntı/ezber. Bağımsız ölçüm veya dinî uzman incelemesi değildir.",
-    "updatedAt": "2026-10-20",
-    "conceptGroup": "ismail-prayer-charity"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "ismail-prayer-charity",
+    "reviewedAt": undefined
   },
   {
     "id": "v9-prophets-004",
@@ -34602,19 +34603,19 @@ export const questionsV73Candidate: readonly Question[] = [
     "options": [
       {
         "id": "o1",
-        "text": "Adaylar arasında oylama yapmak"
+        "text": "Oylama yapma"
       },
       {
         "id": "o3",
-        "text": "Adayların yaşlarını karşılaştırmak"
+        "text": "Yaşı büyük olanı seçme"
       },
       {
         "id": "o4",
-        "text": "Ailelerin ortak kararını beklemek"
+        "text": "Sıraya göre atama"
       },
       {
         "id": "o2",
-        "text": "Kura çekmek"
+        "text": "Kura çekme"
       }
     ],
     "correctOptionId": "o2",
@@ -40432,23 +40433,23 @@ export const questionsV73Candidate: readonly Question[] = [
     "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
-    "question": "İnşikâk 84/6'da insanın çabasının sonunda karşılaşacağı kimdir?",
+    "question": "İnşikâk 84/6'da insanın çabasının sonunda kime kavuşacağı bildirilir?",
     "options": [
       {
         "id": "o2",
-        "text": "Rabbi"
+        "text": "Rabbine"
       },
       {
         "id": "o1",
-        "text": "Amellerini yazan melek"
+        "text": "Peygamberine"
       },
       {
         "id": "o3",
-        "text": "Kendisini uyaran peygamber"
+        "text": "Yazıcı meleğe"
       },
       {
         "id": "o4",
-        "text": "Birlikte yaşadığı topluluk"
+        "text": "Kavmine"
       }
     ],
     "correctOptionId": "o2",
@@ -40460,14 +40461,14 @@ export const questionsV73Candidate: readonly Question[] = [
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
         "locator": "Kur’an Yolu Meali, 84/6; PDF sayfa 638 (1 tabanlı)",
-        "supports": "Karşılaştırılan cevap kavramı: Rabbi (doğrudan kaynak alıntısı değildir).",
+        "supports": "İnsanın rabbine doğru çabaladığı ve sonunda O’na kavuşacağı anlatılır. Doğrudan kaynak alıntısı değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-27"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-27",
+    "updatedAt": "2026-10-30",
     "reviewedAt": undefined
   },
   {
@@ -47146,25 +47147,25 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "Herkes için bir şölen ve işaret olması"
+        "text": "Bizler için bir şölen ve işaret olması"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "Mâide 5/114’te Îsâ, indirilecek sofranın ilk gelenden son gelene herkes için bir şölen ve Allah’tan bir işaret olmasını diler. Soru bu duanın açık amaç çiftini sorar.",
+    "explanation": "Mâide 5/114’te Îsâ, ilk gelenlerinden son gelenlerine kadar kendileri için bir şölen ve Allah’tan bir işaret olacak sofra ister; ardından rızık duası eder.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
         "locator": "5/114; PDF sayfa 135 (1 tabanlı), basılı sayfa 134",
-        "supports": "5/114 bağlamında sorulan ifade: Herkes için bir şölen ve işaret olması.",
+        "supports": "Îsâ, kendi topluluğunun ilk ve son gelenleri için şölen ve Allah’tan işaret olacak sofrayı ister. Doğrudan kaynak alıntısı değildir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-28"
+        "checkedAt": "2026-10-30"
       }
     ],
     "reviewStatus": "draft",
     "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
-    "updatedAt": "2026-10-28",
+    "updatedAt": "2026-10-30",
     "conceptGroup": "q61-article-isa",
     "reviewedAt": undefined
   },
@@ -57921,45 +57922,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-zayif-uydurma",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "Zayıf hadis ile mevzû hadis arasındaki önemli fark hangisidir?",
+    "question": "Zayıf ve mevzû hadis arasındaki temel fark hangi açıklamayla doğru verilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Tüm zayıf rivayetler uydurmadır"
+        "text": "Zayıf sahâbeye, mevzû tâbiîne dayanan rivayettir"
       },
       {
         "id": "o2",
-        "text": "Mevzû hadisler kesinlikle sahih kabul edilir"
+        "text": "Zayıf tek yoldan, mevzû çok yoldan gelen rivayettir"
       },
       {
         "id": "o3",
-        "text": "Zayıf hadisler kitaplarda bulunmaz"
+        "text": "Zayıf kesik, mevzû kesintisiz senedli rivayettir"
       },
       {
         "id": "o4",
-        "text": "Her zayıf rivayetin uydurma olduğu söylenemez"
+        "text": "Zayıf kabul şartı eksik, mevzû uydurulmuş rivayettir"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Zayıf maddesi mevzû hadisleri farklı bir sorun olarak açıklar; zayıflık, sahihlik şartlarının eksikliği olup tek başına uydurma olduğunu göstermez.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — zayif",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zayif",
-        "locator": "Zayıf ve mevzû ayrımı",
+        "locator": "98–103. satırlar",
         "supports": "TDV Zayıf maddesi mevzû hadisleri farklı bir sorun olarak açıklar; zayıflık, sahihlik şartlarının eksikliği olup tek başına uydurma olduğunu göstermez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-zayif"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-zayif",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-zayif-hasen",
@@ -58047,87 +58049,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-sitte-eser",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Kütüb-i Sitte derleyicileri için kullanılan toplu unvan hangisidir?",
     "options": [
+      {
+        "id": "o3",
+        "text": "Ashâb-ı Kütüb-i Erbaa"
+      },
+      {
+        "id": "o4",
+        "text": "Eimme-i Erbaa"
+      },
       {
         "id": "o1",
         "text": "Eimme-i Sitte"
       },
       {
         "id": "o2",
-        "text": "Ashâb-ı Suffe"
-      },
-      {
-        "id": "o3",
-        "text": "Benî Mûsâ"
-      },
-      {
-        "id": "o4",
-        "text": "Ehl-i Hicr"
+        "text": "Fukahâ-i Seb‘a"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Kütüb-i Sitte maddesi altı hadis kitabını derleyen muhaddislerin eimme-i sitte, yani altı imam diye adlandırıldığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Eimme-i Sitte",
+        "locator": "96–100. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi altı hadis kitabını derleyen muhaddislerin eimme-i sitte, yani altı imam diye adlandırıldığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-sahihayn",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Sahîhayn denilince hadis literatüründe hangi iki eser kastedilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Ebû Dâvûd ve Tirmizî'nin Sünen'leri"
+        "text": "Ebû Dâvûd ve Nesâî’nin Sünen’leri"
       },
       {
         "id": "o2",
-        "text": "İbn Mâce ve Dârimî'nin Sünen'leri"
+        "text": "Tirmizî ve İbn Mâce’nin Sünen’leri"
       },
       {
         "id": "o3",
-        "text": "Mâlik'in Muvatta'ı ve Müsned"
+        "text": "Mâlik’in Muvatta’ı ve Ahmed’in Müsned’i"
       },
       {
         "id": "o4",
-        "text": "Buhârî ve Müslim'in Sahih'leri"
+        "text": "Buhârî ve Müslim’in Sahîh’leri"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Kütüb-i Sitte maddesinde Buhârî ile Müslim'in el-Câmiu's-sahîh eserleri Sahîhayn olarak birlikte anılır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Sahîhayn",
+        "locator": "96–109. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesinde Buhârî ile Müslim'in el-Câmiu's-sahîh eserleri Sahîhayn olarak birlikte anılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-buhari",
@@ -58215,213 +58219,218 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-sitte-tirmizi",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Kütüb-i Sitte'de el-Câmiu's-sahîh adlı eserin bir başka müellifi kimdir?",
+    "question": "Hem Câmi‘ hem Sünen adlarıyla bilinen ve hadislerin derecelerini açıklayan eser kime aittir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Tirmizî"
-      },
-      {
         "id": "o2",
-        "text": "İbn Haldûn"
+        "text": "Buhârî"
       },
       {
         "id": "o3",
-        "text": "Cezerî"
+        "text": "Müslim"
       },
       {
         "id": "o4",
-        "text": "Ali Kuşçu"
+        "text": "Nesâî"
+      },
+      {
+        "id": "o1",
+        "text": "Tirmizî"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Kütüb-i Sitte maddesi Tirmizî'nin el-Câmiu's-sahîh'ini altı temel hadis kitabından biri olarak sayar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Tirmizî'nin el-Câmiu's-sahîh'i",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--tirmizi",
+        "locator": "96–102. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi Tirmizî'nin el-Câmiu's-sahîh'ini altı temel hadis kitabından biri olarak sayar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-davud",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Kütüb-i Sitte içindeki es-Sünen adlı kitabın müelliflerinden biri kimdir?",
+    "question": "Kütüb-i Sitte’nin Sicistânî nisbesiyle tanınan Sünen müellifi kimdir?",
     "options": [
       {
+        "id": "o4",
+        "text": "Ebû Dâvûd"
+      },
+      {
         "id": "o1",
-        "text": "İbn Battûta"
+        "text": "Nesâî"
       },
       {
         "id": "o2",
-        "text": "Yûsuf Has Hâcib"
+        "text": "Tirmizî"
       },
       {
         "id": "o3",
-        "text": "Kâtib Çelebi"
-      },
-      {
-        "id": "o4",
-        "text": "Ebû Dâvûd es-Sicistânî"
+        "text": "İbn Mâce"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd es-Sicistânî'nin es-Sünen'ini altı hadis kitabına dahil eder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Ebû Dâvûd es-Sünen",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/ebu-davud-es-sicistani",
+        "locator": "96–108. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd es-Sicistânî'nin es-Sünen'ini altı hadis kitabına dahil eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-nesai",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Kütüb-i Sitte'nin es-Sünen adlı eserlerinden biri hangi muhaddise aittir?",
+    "question": "Mısır’a yerleşip es-Sünen’iyle tanınan Kütüb-i Sitte müellifi kimdir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Gazzâlî"
-      },
-      {
-        "id": "o2",
-        "text": "Nizâmülmülk"
-      },
       {
         "id": "o3",
         "text": "Nesâî"
       },
       {
-        "id": "o4",
-        "text": "Bîrûnî"
-      }
-    ],
-    "correctOptionId": "o3",
-    "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'yi es-Sünen adlı eserin müellifi olarak kaydeder.",
-    "sources": [
-      {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Nesâî es-Sünen",
-        "supports": "TDV Kütüb-i Sitte maddesi Nesâî'yi es-Sünen adlı eserin müellifi olarak kaydeder.",
-        "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
-      }
-    ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
-  },
-  {
-    "id": "q68-sitte-ibnmace",
-    "version": 1,
-    "categoryId": "general",
-    "difficulty": "medium",
-    "question": "Kütüb-i Sitte'nin altıncı kitabı olarak yaygın biçimde benimsenen eserin müellifi kimdir?",
-    "options": [
-      {
         "id": "o1",
-        "text": "İbn Battûta"
+        "text": "Tirmizî"
       },
       {
         "id": "o2",
         "text": "İbn Mâce"
       },
       {
+        "id": "o4",
+        "text": "Ebû Dâvûd"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'yi es-Sünen adlı eserin müellifi olarak kaydeder.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/nesai",
+        "locator": "96–103. satırlar",
+        "supports": "TDV Kütüb-i Sitte maddesi Nesâî'yi es-Sünen adlı eserin müellifi olarak kaydeder.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-10-30"
+      }
+    ],
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
+  },
+  {
+    "id": "q68-sitte-ibnmace",
+    "version": 2,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Kütüb-i Sitte'nin altıncı kitabı olarak yaygın biçimde benimsenen eserin müellifi kimdir?",
+    "options": [
+      {
         "id": "o3",
-        "text": "İbn Haldûn"
+        "text": "Beyhakî"
       },
       {
         "id": "o4",
-        "text": "Cezerî"
+        "text": "Dârekutnî"
+      },
+      {
+        "id": "o2",
+        "text": "İbn Mâce"
+      },
+      {
+        "id": "o1",
+        "text": "Ahmed b. Hanbel"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin es-Sünen'inin altıncı kitap olarak yaygınlık kazandığını bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "İbn Mâce es-Sünen",
+        "locator": "99–105. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin es-Sünen'inin altıncı kitap olarak yaygınlık kazandığını bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-bes",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "'el-Usûlü'l-hamse' adıyla anılan ilk beş temel hadis kitabına sonradan eklenen yaygın altıncı eser hangisidir?",
+    "question": "İbnü’l-Kayserânî’nin el-Usûlü’l-hamse’ye eklediği altıncı eser hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "İbn Mâce'nin es-Sünen'i"
+        "text": "İbn Mâce’nin es-Sünen’i"
       },
       {
         "id": "o2",
-        "text": "Mukaddime"
+        "text": "Mâlik’in el-Muvatta’ı"
       },
       {
         "id": "o3",
-        "text": "Kutadgu Bilig"
+        "text": "Dârimî’nin es-Sünen’i"
       },
       {
         "id": "o4",
-        "text": "Dîvânü Lugāti't-Türk"
+        "text": "Ahmed b. Hanbel’in el-Müsned’i"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Kütüb-i Sitte maddesi ilk beş temel kitaba altıncı olarak İbn Mâce'nin es-Sünen'inin katılması geleneğini anlatır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "el-Usûlü'l-hamse ve altıncı kaynak",
+        "locator": "99–105. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi ilk beş temel kitaba altıncı olarak İbn Mâce'nin es-Sünen'inin katılması geleneğini anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-alternatif",
@@ -58468,60 +58477,57 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-sitte-darimi",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Kütüb-i Sitte'nin altıncı kitabı olarak bazı âlimlerce tercih edilen diğer Sünen kime aittir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İbn Battûta"
+        "id": "o2",
+        "text": "Beyhakî"
       },
       {
-        "id": "o2",
-        "text": "Kâşgarlı Mahmud"
+        "id": "o4",
+        "text": "Saîd b. Mansûr"
       },
       {
         "id": "o3",
         "text": "Dârimî"
       },
       {
-        "id": "o4",
-        "text": "İbn Haldûn"
+        "id": "o1",
+        "text": "Dârekutnî"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Kütüb-i Sitte maddesi altıncı kitap olarak Abdullah b. Abdurrahman ed-Dârimî'nin es-Sünen'ini tercih eden hadisçilerin bulunduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Dârimî es-Sünen",
+        "locator": "104–105. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi altıncı kitap olarak Abdullah b. Abdurrahman ed-Dârimî'nin es-Sünen'ini tercih eden hadisçilerin bulunduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-dort",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "TDV Kütüb-i Sitte maddesinde erken dönemdeki dörtlü eser grubuna hangi iki Sahîh eşlik eder?",
     "options": [
       {
         "id": "o1",
-        "text": "Beyhakī ve İbn Hazm"
-      },
-      {
-        "id": "o2",
-        "text": "Buhârî ve Müslim"
+        "text": "Ebû Dâvûd ve Nesâî"
       },
       {
         "id": "o3",
@@ -58530,25 +58536,30 @@ export const questionsV73Candidate: readonly Question[] = [
       {
         "id": "o4",
         "text": "Dârimî ve Mâlik"
+      },
+      {
+        "id": "o2",
+        "text": "Buhârî ve Müslim"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV maddesi Buhârî ve Müslim'in Sahîh'leri ile Ebû Dâvûd ve Nesâî'nin Sünen'lerinin başlangıçta öne çıktığını anlatır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "İlk dört esere yaklaşım",
+        "locator": "96–109. satırlar",
         "supports": "TDV maddesi Buhârî ve Müslim'in Sahîh'leri ile Ebû Dâvûd ve Nesâî'nin Sünen'lerinin başlangıçta öne çıktığını anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-hamse",
@@ -58594,87 +58605,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-sitte-sunen",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Kütüb-i Sitte'de Sünen türünde eserleriyle tanınan üç müellif grubu hangisidir?",
+    "question": "Yaygın Kütüb-i Sitte listesindeki üç Sünen yazarı hangi grupta birlikte yer alır?",
     "options": [
       {
-        "id": "o1",
-        "text": "İbn Sînâ, Bîrûnî ve Hârizmî"
-      },
-      {
         "id": "o2",
-        "text": "Mâlik, Gazzâlî ve Cezerî"
+        "text": "Ebû Dâvûd, Beyhakî ve İbn Mâce"
       },
       {
         "id": "o3",
-        "text": "İbn Haldûn, Kâtip Çelebi ve Evliya"
+        "text": "Ebû Dâvûd, Nesâî ve Dârekutnî"
       },
       {
         "id": "o4",
         "text": "Ebû Dâvûd, Nesâî ve İbn Mâce"
+      },
+      {
+        "id": "o1",
+        "text": "Dârimî, Nesâî ve İbn Mâce"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd, Nesâî ve İbn Mâce'nin eserlerini Sünen başlığında değerlendirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Sünen türü ve müellifler",
+        "locator": "96–109. satırlar",
         "supports": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd, Nesâî ve İbn Mâce'nin eserlerini Sünen başlığında değerlendirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sitte-cami",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Kütüb-i Sitte içinde Câmi türünde eserleri olan üç muhaddis grubu hangisidir?",
+    "question": "Kütüb-i Sitte’de el-Câmiu’s-sahîh adıyla eseri bulunan üçlü hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Beyhakī, Cezerî ve Bîrûnî"
+        "text": "Buhârî, Müslim ve Ebû Dâvûd"
       },
       {
         "id": "o2",
-        "text": "İbn Haldûn, Gazzâlî ve Ali Kuşçu"
+        "text": "Buhârî, Nesâî ve Tirmizî"
+      },
+      {
+        "id": "o4",
+        "text": "Müslim, İbn Mâce ve Tirmizî"
       },
       {
         "id": "o3",
         "text": "Buhârî, Müslim ve Tirmizî"
-      },
-      {
-        "id": "o4",
-        "text": "İbn Mâce, Nesâî ve Ebû Dâvûd"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Buhârî, Müslim ve Tirmizî'nin eserleri farklı hadis konularını içeren el-Câmiu's-sahîh başlığını taşır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Câmi türü eserler",
+        "locator": "96–109. satırlar",
         "supports": "Buhârî, Müslim ve Tirmizî'nin eserleri farklı hadis konularını içeren el-Câmiu's-sahîh başlığını taşır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-sunen-tanim",
@@ -58893,175 +58906,179 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q68-cami-buh",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Buhârî'nin el-Câmiu's-sahîh adlı eseri hangi bilim dalına aittir?",
+    "question": "Buhârî’nin el-Câmiu’s-sahîh’i hangi ilim literatürünün temel derlemelerindendir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hadis"
-      },
-      {
         "id": "o2",
-        "text": "Tıp"
+        "text": "Tefsir"
       },
       {
         "id": "o3",
-        "text": "Astronomi"
+        "text": "Fıkıh"
       },
       {
         "id": "o4",
-        "text": "Mimarî"
+        "text": "Kelâm"
+      },
+      {
+        "id": "o1",
+        "text": "Hadis"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Buhârî'nin el-Câmiu's-sahîh maddesi kitabın hadisleri bir araya getirdiğini ve İslâm hadis literatürünün temel eserlerinden olduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — el-camius-sahih--buhari",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--buhari",
-        "locator": "Buhârî'nin Sahih'i",
+        "locator": "97–107. satırlar",
         "supports": "TDV Buhârî'nin el-Câmiu's-sahîh maddesi kitabın hadisleri bir araya getirdiğini ve İslâm hadis literatürünün temel eserlerinden olduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-el-camius-sahih--buhari"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-el-camius-sahih--buhari",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-cami-mus",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Müslim'in el-Câmiu's-sahîh adlı eseri hangi içerikten oluşur?",
+    "question": "Müslim’in derlemesinde ana metne alınacak rivayetlerin hangi niteliği aranır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Yalnız tarihî haritalardan"
-      },
-      {
-        "id": "o2",
-        "text": "Miras hesap çizelgelerinden"
-      },
-      {
         "id": "o3",
-        "text": "Astronomi gözlemlerinden"
+        "text": "Sahâbeye ait olmaları"
       },
       {
         "id": "o4",
-        "text": "Sahih kabul edilen hadislerden"
+        "text": "Sahih olmaları"
+      },
+      {
+        "id": "o1",
+        "text": "Çok yaygın olmaları"
+      },
+      {
+        "id": "o2",
+        "text": "Kısa metinli olmaları"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Müslim'in el-Câmiu's-sahîh maddesi eseri sahih hadislerden oluşan bir derleme olarak tanımlar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — el-camius-sahih--muslim",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/el-camius-sahih--muslim",
-        "locator": "Müslim Sahih'i",
+        "locator": "96–104. satırlar",
         "supports": "TDV Müslim'in el-Câmiu's-sahîh maddesi eseri sahih hadislerden oluşan bir derleme olarak tanımlar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-el-camius-sahih--muslim"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-el-camius-sahih--muslim",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-buhari-dogum",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Muhammed b. İsmâil el-Buhârî hangi şehirde doğmuştur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Şam"
+        "id": "o2",
+        "text": "Tirmiz"
       },
       {
-        "id": "o2",
-        "text": "Mekke"
+        "id": "o4",
+        "text": "Nîşâbur"
       },
       {
         "id": "o3",
         "text": "Buhara"
       },
       {
-        "id": "o4",
-        "text": "Kahire"
+        "id": "o1",
+        "text": "Semerkant"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Buhârî maddesi büyük muhaddisin 194 hicrî, 810 milâdî yılında Buhara'da doğduğunu bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — buhari-muhammed-b-ismail",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
-        "locator": "Buhârî'nin doğumu",
+        "locator": "114–119. satırlar",
         "supports": "TDV Buhârî maddesi büyük muhaddisin 194 hicrî, 810 milâdî yılında Buhara'da doğduğunu bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-buhari-muhammed-b-ismail"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-buhari-muhammed-b-ismail",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-buhari-yil",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Muhammed b. İsmâil el-Buhârî hangi milâdî yılda doğmuştur?",
     "options": [
       {
-        "id": "o1",
-        "text": "1453"
+        "id": "o4",
+        "text": "830"
       },
       {
         "id": "o2",
         "text": "810"
       },
       {
-        "id": "o3",
-        "text": "622"
+        "id": "o1",
+        "text": "800"
       },
       {
-        "id": "o4",
-        "text": "1071"
+        "id": "o3",
+        "text": "820"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Buhârî biyografisi doğumunu 13 Şevval 194, milâdî 20 Temmuz 810 olarak tarihlendirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — buhari-muhammed-b-ismail",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
-        "locator": "194 / 810 doğumu",
+        "locator": "114. satır",
         "supports": "TDV Buhârî biyografisi doğumunu 13 Şevval 194, milâdî 20 Temmuz 810 olarak tarihlendirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-buhari-muhammed-b-ismail"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-buhari-muhammed-b-ismail",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-buhari-vefat",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Buhârî'nin vefat tarihi milâdî kaçtır?",
@@ -59072,38 +59089,39 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "750"
+        "text": "860"
       },
       {
         "id": "o3",
-        "text": "1000"
+        "text": "880"
       },
       {
         "id": "o4",
-        "text": "1258"
+        "text": "890"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "TDV Kütüb-i Sitte maddesi ve Buhârî biyografisi onun 256 hicrî, 870 milâdî yılında vefat ettiğini belirtir.",
+    "explanation": "TDV Buhârî biyografisi, onun 256 hicrî yılında vefat ettiğini ve 1 Eylül 870’te defnedildiğini bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Buhârî 256 / 870",
-        "supports": "TDV Kütüb-i Sitte maddesi ve Buhârî biyografisi onun 256 hicrî, 870 milâdî yılında vefat ettiğini belirtir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/buhari-muhammed-b-ismail",
+        "locator": "138–139. satırlar",
+        "supports": "TDV Buhârî biyografisi, onun 256 hicrî yılında vefat ettiğini ve 1 Eylül 870’te defnedildiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-muslim-vefat",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Muhaddis Müslim b. Haccâc'ın milâdî vefat yılı kaçtır?",
@@ -59114,11 +59132,11 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "915"
+        "text": "887"
       },
       {
         "id": "o3",
-        "text": "887"
+        "text": "915"
       },
       {
         "id": "o4",
@@ -59126,152 +59144,156 @@ export const questionsV73Candidate: readonly Question[] = [
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "TDV Kütüb-i Sitte maddesi Müslim'in 261 hicrî, 875 milâdî yılında vefat ettiğini kaydeder.",
+    "explanation": "TDV Müslim b. Haccâc biyografisi vefatını 25 Receb 261, milâdî 5 Mayıs 875 olarak kaydeder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Müslim 261 / 875",
-        "supports": "TDV Kütüb-i Sitte maddesi Müslim'in 261 hicrî, 875 milâdî yılında vefat ettiğini kaydeder.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/muslim-b-haccac",
+        "locator": "101–103. satırlar",
+        "supports": "TDV Müslim b. Haccâc biyografisi vefatını 25 Receb 261, milâdî 5 Mayıs 875 olarak kaydeder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-tirmizi-vefat",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
     "options": [
       {
-        "id": "o1",
-        "text": "915"
-      },
-      {
         "id": "o2",
         "text": "887"
+      },
+      {
+        "id": "o4",
+        "text": "870"
       },
       {
         "id": "o3",
         "text": "892"
       },
       {
-        "id": "o4",
-        "text": "870"
+        "id": "o1",
+        "text": "915"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "TDV Kütüb-i Sitte maddesi Tirmizî'nin 279 hicrî, 892 milâdî yılında vefat ettiğini bildirir.",
+    "explanation": "TDV Tirmizî biyografisi onun 13 Receb 279, milâdî 9 Ekim 892’de vefat ettiğini bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Tirmizî 279 / 892",
-        "supports": "TDV Kütüb-i Sitte maddesi Tirmizî'nin 279 hicrî, 892 milâdî yılında vefat ettiğini bildirir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/tirmizi",
+        "locator": "104–109. satırlar",
+        "supports": "TDV Tirmizî biyografisi onun 13 Receb 279, milâdî 9 Ekim 892’de vefat ettiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-nesai-vefat",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Kütüb-i Sitte müelliflerinden Nesâî'nin milâdî vefat yılı kaçtır?",
     "options": [
       {
-        "id": "o1",
-        "text": "892"
+        "id": "o4",
+        "text": "875"
       },
       {
         "id": "o2",
         "text": "915"
       },
       {
-        "id": "o3",
-        "text": "870"
+        "id": "o1",
+        "text": "892"
       },
       {
-        "id": "o4",
-        "text": "875"
+        "id": "o3",
+        "text": "870"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "TDV Kütüb-i Sitte maddesi Nesâî'nin vefatını 303 hicrî, 915 milâdî yılına tarihlendirir.",
+    "explanation": "TDV Nesâî biyografisi vefatını 303 hicrî, 915 milâdî yılına tarihlendirir; ölüm ve defin yeri konusunda farklı rivayetleri ayrıca belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Nesâî 303 / 915",
-        "supports": "TDV Kütüb-i Sitte maddesi Nesâî'nin vefatını 303 hicrî, 915 milâdî yılına tarihlendirir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/nesai",
+        "locator": "101–104. satırlar",
+        "supports": "TDV Nesâî biyografisi vefatını 303 hicrî, 915 milâdî yılına tarihlendirir; ölüm ve defin yeri konusunda farklı rivayetleri ayrıca belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-ebudavud-vefat",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Kütüb-i Sitte müellifi Ebû Dâvûd es-Sicistânî'nin milâdî vefat yılı kaçtır?",
     "options": [
       {
-        "id": "o1",
-        "text": "889"
-      },
-      {
         "id": "o2",
         "text": "875"
       },
       {
         "id": "o3",
-        "text": "915"
+        "text": "887"
       },
       {
         "id": "o4",
-        "text": "750"
+        "text": "892"
+      },
+      {
+        "id": "o1",
+        "text": "889"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd'un 275 hicrî, 889 milâdî yılında vefat ettiğini bildirir.",
+    "explanation": "TDV Ebû Dâvûd biyografisi onun 16 Şevval 275, milâdî 21 Şubat 889’da Basra’da vefat ettiğini bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "Ebû Dâvûd 275 / 889",
-        "supports": "TDV Kütüb-i Sitte maddesi Ebû Dâvûd'un 275 hicrî, 889 milâdî yılında vefat ettiğini bildirir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/ebu-davud-es-sicistani",
+        "locator": "103–108. satırlar",
+        "supports": "TDV Ebû Dâvûd biyografisi onun 16 Şevval 275, milâdî 21 Şubat 889’da Basra’da vefat ettiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q68-ibnmace-vefat",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Kütüb-i Sitte müellifi İbn Mâce'nin milâdî vefat yılı kaçtır?",
@@ -59294,64 +59316,66 @@ export const questionsV73Candidate: readonly Question[] = [
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin 273 hicrî, 887 milâdî yılında vefat ettiğini belirtir.",
+    "explanation": "TDV İbn Mâce biyografisi onun 21 Ramazan 273, milâdî 19 Şubat 887’de vefat ettiğini belirtir; 889 rivayetini doğru bulmaz.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kutub-i-sitte",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/kutub-i-sitte",
-        "locator": "İbn Mâce 273 / 887",
-        "supports": "TDV Kütüb-i Sitte maddesi İbn Mâce'nin 273 hicrî, 887 milâdî yılında vefat ettiğini belirtir.",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/ibn-mace",
+        "locator": "96–100. satırlar",
+        "supports": "TDV İbn Mâce biyografisi onun 21 Ramazan 273, milâdî 19 Şubat 887’de vefat ettiğini belirtir; 889 rivayetini doğru bulmaz.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV hadis madde terim ve tarih bilgileri karşılaştırıldı; bağımsız hadis uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "q68-hadis-kutub-i-sitte"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "q68-hadis-kutub-i-sitte",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-dogum",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
     "question": "Zeyd b. Sâbit hangi şehirde doğmuştur?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Medine"
-      },
       {
         "id": "o2",
         "text": "Mekke"
       },
       {
         "id": "o3",
-        "text": "Kûfe"
+        "text": "Tâif"
       },
       {
         "id": "o4",
-        "text": "Basra"
+        "text": "Hayber"
+      },
+      {
+        "id": "o1",
+        "text": "Medine"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV biyografisine göre Zeyd b. Sâbit hicretten yaklaşık on bir yıl önce Medine'de doğmuştur; Hazrec kabilesindendir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Medine’de doğumu",
+        "locator": "102–105. satırlar",
         "supports": "TDV biyografisine göre Zeyd b. Sâbit hicretten yaklaşık on bir yıl önce Medine'de doğmuştur; Hazrec kabilesindendir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-annesi",
@@ -59397,148 +59421,151 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-zeydbsabit-sure",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Zeyd b. Sâbit, Hz. Peygamber Medine'ye gelmeden önce kaç sûre ezberlemişti?",
     "options": [
       {
-        "id": "o1",
-        "text": "On"
-      },
-      {
-        "id": "o2",
-        "text": "Otuz"
+        "id": "o4",
+        "text": "Yirmi bir"
       },
       {
         "id": "o3",
         "text": "On yedi"
       },
       {
-        "id": "o4",
-        "text": "Beş"
+        "id": "o1",
+        "text": "On beş"
+      },
+      {
+        "id": "o2",
+        "text": "On dokuz"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV'ye göre Zeyd b. Sâbit hicret öncesinde henüz çocukken on yedi sûre ezberlemişti; daha sonra bunları Hz. Peygamber'e okudu.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "On yedi sûre ezberi",
+        "locator": "102–103. satırlar",
         "supports": "TDV'ye göre Zeyd b. Sâbit hicret öncesinde henüz çocukken on yedi sûre ezberlemişti; daha sonra bunları Hz. Peygamber'e okudu.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-dil",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Zeyd b. Sâbit, Hz. Peygamber'in yazışmalarına yardımcı olmak için hangi yazıyı öğrenmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Çince"
+        "id": "o3",
+        "text": "Kıptîce veya Habeşçe"
+      },
+      {
+        "id": "o4",
+        "text": "Arapça veya Nabatîce"
       },
       {
         "id": "o2",
         "text": "İbrânîce veya Süryânîce"
       },
       {
-        "id": "o3",
-        "text": "Japonca"
-      },
-      {
-        "id": "o4",
-        "text": "Latince"
+        "id": "o1",
+        "text": "Farsça veya Rumca"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV, Hz. Peygamber'in isteği üzerine Zeyd'in İbrânîce veya Süryânîce yazmayı kısa sürede öğrendiğini bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Yazışmalarda İbrânîce veya Süryânîce",
+        "locator": "103–104. satırlar",
         "supports": "TDV, Hz. Peygamber'in isteği üzerine Zeyd'in İbrânîce veya Süryânîce yazmayı kısa sürede öğrendiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-uhud",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Zeyd b. Sâbit'in Uhud Savaşı'na katılmasına neden izin verilmemiştir?",
     "options": [
       {
         "id": "o1",
-        "text": "Yaşı küçük olduğu için"
+        "text": "Yaşının küçük olması"
       },
       {
         "id": "o2",
-        "text": "Seyahatte olduğu için"
+        "text": "Bedeninin hasta olması"
       },
       {
         "id": "o3",
-        "text": "Hastanede çalıştığı için"
+        "text": "Gözlerinin zayıf olması"
       },
       {
         "id": "o4",
-        "text": "Şehir dışında ticaret yaptığı için"
+        "text": "Ayağının yaralı olması"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Zeyd'in yaşı küçük olduğu için Uhud'a katılmasına izin verilmedi; şehirde kalanları korumakla görevlendirildi.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Uhud’a katılamaması",
+        "locator": "104–105. satırlar",
         "supports": "Zeyd'in yaşı küçük olduğu için Uhud'a katılmasına izin verilmedi; şehirde kalanları korumakla görevlendirildi.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-hayber",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Hayber'in fethinde Zeyd b. Sâbit'e verilen görev hangisiydi?",
     "options": [
       {
         "id": "o1",
-        "text": "Kale duvarlarını boyamak"
+        "text": "Ganimet mallarını kayda geçirmek"
       },
       {
         "id": "o2",
-        "text": "Hazineyi başka şehre taşımak"
+        "text": "Erzak ihtiyacını hesaplamak"
       },
       {
         "id": "o3",
-        "text": "Deniz yolunu haritalamak"
+        "text": "Esirlerin isimlerini yazmak"
       },
       {
         "id": "o4",
@@ -59549,187 +59576,192 @@ export const questionsV73Candidate: readonly Question[] = [
     "explanation": "TDV Zeyd b. Sâbit maddesi, Hayber'in fethi sırasında Zeyd'e müslümanların sayısını tespit etme görevi verildiğini belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Hayber’de askerlerin sayımı",
+        "locator": "104–108. satırlar",
         "supports": "TDV Zeyd b. Sâbit maddesi, Hayber'in fethi sırasında Zeyd'e müslümanların sayısını tespit etme görevi verildiğini belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-cem",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
     "question": "Hz. Ebû Bekir döneminde Kur'an'ın bir araya getirilmesi heyetine kim başkanlık etti?",
     "options": [
       {
-        "id": "o1",
-        "text": "İmam Mâlik"
-      },
-      {
-        "id": "o2",
-        "text": "Ali Kuşçu"
-      },
-      {
         "id": "o3",
         "text": "Zeyd b. Sâbit"
       },
       {
+        "id": "o1",
+        "text": "Übey b. Kâ‘b"
+      },
+      {
+        "id": "o2",
+        "text": "Abdullah b. Mes‘ûd"
+      },
+      {
         "id": "o4",
-        "text": "İbn Battûta"
+        "text": "Ebû Mûsâ el-Eş‘arî"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "Yemâme sonrasındaki Kur'an'ı cem faaliyeti Ebû Bekir'in emriyle Zeyd b. Sâbit başkanlığında yürütüldü.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Ebû Bekir döneminde Kur'an’ın cemi",
+        "locator": "106–111. satırlar",
         "supports": "Yemâme sonrasındaki Kur'an'ı cem faaliyeti Ebû Bekir'in emriyle Zeyd b. Sâbit başkanlığında yürütüldü.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-istinsah",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hz. Osman döneminde Kur'an nüshalarının çoğaltılması heyetine kim başkanlık etti?",
     "options": [
       {
         "id": "o1",
-        "text": "İbn Haldûn"
+        "text": "Übey b. Kâ‘b"
+      },
+      {
+        "id": "o3",
+        "text": "Abdullah b. Mes‘ûd"
+      },
+      {
+        "id": "o4",
+        "text": "Ebû Mûsâ el-Eş‘arî"
       },
       {
         "id": "o2",
         "text": "Zeyd b. Sâbit"
-      },
-      {
-        "id": "o3",
-        "text": "Bilâl-i Habeşî"
-      },
-      {
-        "id": "o4",
-        "text": "Hasan-ı Basrî"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV'ye göre Zeyd b. Sâbit, Hz. Osman döneminde farklı merkezlere gönderilmek üzere mushafların istinsahını yürüten heyete başkanlık etti.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Osman döneminde istinsah",
+        "locator": "106–109. satırlar",
         "supports": "TDV'ye göre Zeyd b. Sâbit, Hz. Osman döneminde farklı merkezlere gönderilmek üzere mushafların istinsahını yürüten heyete başkanlık etti.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-zeydbsabit-danisman",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hz. Ömer, fıkhî meselelerde hangi sahâbîyi danışmanı olarak görevlendirmişti?",
+    "question": "TDV’ye göre Ömer’in Medine davalarında görüşünü aldığı ve şehirden ayrılınca vekâlet bıraktığı sahâbî kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Zeyd b. Sâbit"
-      },
-      {
         "id": "o2",
-        "text": "İbn Battûta"
+        "text": "Enes b. Mâlik"
       },
       {
         "id": "o3",
-        "text": "Cezerî"
+        "text": "Ebû Hüreyre"
       },
       {
         "id": "o4",
-        "text": "Kâtib Çelebi"
+        "text": "Abdullah b. Amr"
+      },
+      {
+        "id": "o1",
+        "text": "Zeyd b. Sâbit"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV, Hz. Ömer'in Zeyd b. Sâbit'i danışman tayin ettiğini, Medine davaları ve fıkıh konularında görüşünü aldığını açıklar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-        "locator": "Ömer döneminde danışmanlığı",
+        "locator": "108–112. satırlar",
         "supports": "TDV, Hz. Ömer'in Zeyd b. Sâbit'i danışman tayin ettiğini, Medine davaları ve fıkıh konularında görüşünü aldığını açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-zeyd-b-sabit"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-zeyd-b-sabit",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbabbas-amca",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
-    "question": "Abdullah b. Abbas, Hz. Peygamber'in hangi akrabasının oğludur?",
+    "question": "Abdullah b. Abbas’ın babası Abbas’ın Hz. Peygamber’e yakınlığı nedir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Dayısı Sa'd'ın"
-      },
-      {
         "id": "o2",
-        "text": "Kardeşi Ali'nin"
+        "text": "Dedesi"
       },
       {
         "id": "o3",
-        "text": "Dedesinin kardeşinin"
+        "text": "Ağabeyi"
       },
       {
         "id": "o4",
-        "text": "Amcası Abbas'ın"
+        "text": "Amcası"
+      },
+      {
+        "id": "o1",
+        "text": "Dayısı"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Abdullah b. Abbas biyografisinde onun Hz. Peygamber'in amcası Abbas b. Abdülmuttalib'in oğlu olduğu belirtilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-        "locator": "Peygamber’in amcasının oğlu",
+        "locator": "95–98. satırlar ve madde tanımı",
         "supports": "TDV Abdullah b. Abbas biyografisinde onun Hz. Peygamber'in amcası Abbas b. Abdülmuttalib'in oğlu olduğu belirtilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-abbas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-abbas",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbabbas-anne",
@@ -59817,171 +59849,175 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-abdullahbabbas-dua",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hz. Peygamber, Abdullah b. Abbas için özellikle hangi alanda derinleşmesi yönünde dua etmiştir?",
     "options": [
       {
         "id": "o1",
-        "text": "Din ilmi ve Kur'an bilgisi"
+        "text": "Din ilmi ve Kitab’ı anlama"
       },
       {
         "id": "o2",
-        "text": "Denizcilik"
+        "text": "Tıp ilmi ve hastaları iyileştirme"
       },
       {
         "id": "o3",
-        "text": "İnşaat mühendisliği"
+        "text": "Hesap ilmi ve mirası paylaştırma"
       },
       {
         "id": "o4",
-        "text": "Ticaret vergisi"
+        "text": "Şiir bilgisi ve güzel söz söyleme"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV İbn Abbas maddesi, Hz. Peygamber'in onun din ilmini öğrenmesi ve Kitab'ı anlaması için dua ettiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-        "locator": "Din ilmi ve Kitap duası",
+        "locator": "96–98 ve 120. satırlar",
         "supports": "TDV İbn Abbas maddesi, Hz. Peygamber'in onun din ilmini öğrenmesi ve Kitab'ı anlaması için dua ettiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-abbas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-abbas",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbabbas-hac",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Abdullah b. Abbas, Hz. Osman tarafından 656 yılında hangi göreve tayin edilmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Şam valisi"
-      },
-      {
         "id": "o2",
-        "text": "Mısır kadısı"
+        "text": "Mısır valisi"
       },
       {
         "id": "o3",
-        "text": "Kâbe mimarı"
+        "text": "Şam valisi"
       },
       {
         "id": "o4",
         "text": "Hac emîri"
+      },
+      {
+        "id": "o1",
+        "text": "Medine kadısı"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV İbn Abbas biyografisine göre Hz. Osman 656 yılında onu hac emîri tayin etmiştir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-        "locator": "656’da hac emîrliği",
+        "locator": "99–101. satırlar",
         "supports": "TDV İbn Abbas biyografisine göre Hz. Osman 656 yılında onu hac emîri tayin etmiştir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-abbas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-abbas",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbabbas-basra",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hz. Ali, Abdullah b. Abbas'ı hangi şehre vali olarak tayin etmiştir?",
     "options": [
       {
-        "id": "o1",
+        "id": "o2",
         "text": "Mekke"
       },
       {
-        "id": "o2",
-        "text": "Bağdat"
+        "id": "o4",
+        "text": "Şam"
       },
       {
         "id": "o3",
         "text": "Basra"
       },
       {
-        "id": "o4",
-        "text": "Şam"
+        "id": "o1",
+        "text": "Kûfe"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV, Hz. Ali'nin hicrî 39 (659) yılında Abdullah b. Abbas'ı Basra valiliğine tayin ettiğini kaydeder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-        "locator": "Basra valiliği",
+        "locator": "99–103. satırlar",
         "supports": "TDV, Hz. Ali'nin hicrî 39 (659) yılında Abdullah b. Abbas'ı Basra valiliğine tayin ettiğini kaydeder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-abbas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-abbas",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbabbas-rivayet",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "TDV'ye göre Abdullah b. Abbas'ın rivayet ettiği hadis sayısı kaçtır?",
     "options": [
       {
-        "id": "o1",
-        "text": "3862"
-      },
-      {
         "id": "o2",
         "text": "1660"
       },
       {
+        "id": "o1",
+        "text": "1760"
+      },
+      {
         "id": "o3",
-        "text": "44"
+        "text": "1560"
       },
       {
         "id": "o4",
-        "text": "99"
+        "text": "1860"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV biyografisi İbn Abbas'ın rivayet ettiği hadisleri 1660 olarak sayar; sayı hadis kaynaklarındaki rivayet derlemelerine dayanmaktadır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-        "locator": "1660 hadis rivayeti",
+        "locator": "113–115. satırlar",
         "supports": "TDV biyografisi İbn Abbas'ın rivayet ettiği hadisleri 1660 olarak sayar; sayı hadis kaynaklarındaki rivayet derlemelerine dayanmaktadır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-abbas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-abbas",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-enesbmalik-kunye",
@@ -60027,45 +60063,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-enesbmalik-lakap",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Enes b. Mâlik'e Hz. Peygamber'in hizmeti sebebiyle verilen unvan hangisidir?",
     "options": [
       {
+        "id": "o4",
+        "text": "Hâdimü’n-Nebî"
+      },
+      {
         "id": "o1",
-        "text": "Zünnûn"
+        "text": "Kâtibü’l-vahy"
       },
       {
         "id": "o2",
-        "text": "Zâtü'n-nitâkayn"
+        "text": "Tercümânü’l-Kur’ân"
       },
       {
         "id": "o3",
-        "text": "Zülfikār"
-      },
-      {
-        "id": "o4",
-        "text": "Hâdimü'n-Nebî"
+        "text": "Emînü’l-ümme"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Enes b. Mâlik, Hz. Peygamber'e on yıl hizmet etmesi sebebiyle Hâdimü'n-Nebî adıyla anılmıştır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-        "locator": "Hâdimü’n-Nebî",
+        "locator": "96–99. satırlar",
         "supports": "Enes b. Mâlik, Hz. Peygamber'e on yıl hizmet etmesi sebebiyle Hâdimü'n-Nebî adıyla anılmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-enes-b-malik"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-enes-b-malik",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-enesbmalik-anne",
@@ -60153,7 +60190,7 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-enesbmalik-yil",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
     "question": "Enes b. Mâlik, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
@@ -60164,118 +60201,121 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "İki yıl"
+        "text": "Altı yıl"
       },
       {
         "id": "o3",
-        "text": "Yirmi yıl"
+        "text": "Sekiz yıl"
       },
       {
         "id": "o4",
-        "text": "Otuz yıl"
+        "text": "On iki yıl"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Enes b. Mâlik Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-        "locator": "On yıllık hizmet",
+        "locator": "96–99. satırlar",
         "supports": "Enes b. Mâlik Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-enes-b-malik"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-enes-b-malik",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-enesbmalik-basra",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Enes b. Mâlik'in ilim öğreterek yerleştiği önemli Irak şehri hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kûfe"
-      },
-      {
         "id": "o2",
-        "text": "Bağdat"
+        "text": "Musul"
       },
       {
         "id": "o3",
-        "text": "Musul"
+        "text": "Vâsıt"
       },
       {
         "id": "o4",
         "text": "Basra"
+      },
+      {
+        "id": "o1",
+        "text": "Kûfe"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Enes biyografisi onun Basra'da namaz kıldırıp hadis ve fıkıh öğrettiğini, hayatının ilerleyen bölümünü orada geçirdiğini bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-        "locator": "Basra’da eğitim",
+        "locator": "100–104. satırlar",
         "supports": "TDV Enes biyografisi onun Basra'da namaz kıldırıp hadis ve fıkıh öğrettiğini, hayatının ilerleyen bölümünü orada geçirdiğini bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-enes-b-malik"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-enes-b-malik",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-enesbmalik-veda",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Enes b. Mâlik'in Hz. Peygamber ile katıldığı son büyük hac hangisidir?",
+    "question": "Enes b. Mâlik’in Peygamber ile katıldığı ve 10. hicrî yılda yapılan büyük yolculuk hangi türdedir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Hicret yolculuğu"
-      },
-      {
         "id": "o2",
-        "text": "İlk Akabe Biatı"
-      },
-      {
-        "id": "o3",
-        "text": "Vedâ haccı"
+        "text": "Gazve"
       },
       {
         "id": "o4",
-        "text": "Umretü'l-kazâ"
+        "text": "Seriyye"
+      },
+      {
+        "id": "o3",
+        "text": "Hac"
+      },
+      {
+        "id": "o1",
+        "text": "Umre"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Enes b. Mâlik maddesi Enes'in Vedâ haccında Hz. Peygamber'le birlikte bulunduğunu kaydeder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-        "locator": "Vedâ haccına katılması",
+        "locator": "99. satır; Vedâ Hutbesi 98",
         "supports": "TDV Enes b. Mâlik maddesi Enes'in Vedâ haccında Hz. Peygamber'le birlikte bulunduğunu kaydeder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-enes-b-malik"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-enes-b-malik",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-bilalihabesi-anne",
@@ -60447,45 +60487,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-bilalihabesi-sabah",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Bilâl-i Habeşî'nin sabah ezanına eklediği özel ifade hangi anlama gelir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Vakit bitmiştir"
+        "id": "o4",
+        "text": "Allah en büyüktür"
       },
       {
         "id": "o2",
         "text": "Namaz uykudan hayırlıdır"
       },
       {
-        "id": "o3",
-        "text": "Oruç kalkmıştır"
+        "id": "o1",
+        "text": "Namaza ve kurtuluşa yönelin"
       },
       {
-        "id": "o4",
-        "text": "Ticaret başlamıştır"
+        "id": "o3",
+        "text": "Allah’tan başka ilâh yoktur"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV maddesi Bilâl'in sabah ezanına 'es-Salâtü hayrün mine'n-nevm' ibaresini eklediğini ve bu uygulamanın kabul edildiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Bilâl-i Habeşî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
-        "locator": "Sabah ezanındaki ibare",
+        "locator": "106–107. satırlar",
         "supports": "TDV maddesi Bilâl'in sabah ezanına 'es-Salâtü hayrün mine'n-nevm' ibaresini eklediğini ve bu uygulamanın kabul edildiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-bilal-i-habesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-bilal-i-habesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-bilalihabesi-kabe",
@@ -60531,45 +60572,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-bilalihabesi-suriye",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Bilâl-i Habeşî Hz. Peygamber'in vefatından sonra hangi bölgedeki fetihlere katılmıştır?",
     "options": [
       {
+        "id": "o4",
+        "text": "Suriye"
+      },
+      {
         "id": "o1",
-        "text": "Endülüs"
+        "text": "Irak"
       },
       {
         "id": "o2",
-        "text": "Hindistan"
+        "text": "Mısır"
       },
       {
         "id": "o3",
-        "text": "Orta Asya"
-      },
-      {
-        "id": "o4",
-        "text": "Suriye"
+        "text": "İran"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Bilâl biyografisinde onun Hz. Ömer devrinde Suriye'deki fetihlere katıldığı ifade edilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Bilâl-i Habeşî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
-        "locator": "Suriye seferleri",
+        "locator": "108–111. satırlar",
         "supports": "TDV Bilâl biyografisinde onun Hz. Ömer devrinde Suriye'deki fetihlere katıldığı ifade edilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-bilal-i-habesi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-bilal-i-habesi",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-ebueyyubelensari-kabile",
@@ -60615,45 +60657,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-ebueyyubelensari-akabe",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Ebû Eyyûb el-Ensârî hangi Akabe biatına katılmıştır?",
+    "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
     "options": [
       {
-        "id": "o1",
-        "text": "Akabe biatlarının hiçbirine"
+        "id": "o2",
+        "text": "622"
       },
       {
-        "id": "o2",
-        "text": "İkinci Akabe Biatı"
+        "id": "o1",
+        "text": "620"
       },
       {
         "id": "o3",
-        "text": "Birinci Akabe Biatı"
+        "text": "621"
       },
       {
         "id": "o4",
-        "text": "Üçüncü Akabe Biatı"
+        "text": "623"
       }
     ],
     "correctOptionId": "o2",
-    "explanation": "TDV maddesi Ebû Eyyûb'un nübüvvetin on üçüncü yılındaki İkinci Akabe Biatı'na katıldığını belirtir.",
+    "explanation": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ebû Eyyûb el-Ensârî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-        "locator": "İkinci Akabe Biatı",
-        "supports": "TDV maddesi Ebû Eyyûb'un nübüvvetin on üçüncü yılındaki İkinci Akabe Biatı'na katıldığını belirtir.",
+        "locator": "96. satır",
+        "supports": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-ebu-eyyub-el-ensari"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-ebu-eyyub-el-ensari",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-ebueyyubelensari-muahat",
@@ -60742,102 +60785,100 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-ebueyyubelensari-kibris",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Ebû Eyyûb el-Ensârî Hz. Osman devrinde hangi deniz seferine katılmıştır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Sicilya"
+        "id": "o2",
+        "text": "Girit"
       },
       {
-        "id": "o2",
-        "text": "İspanya"
+        "id": "o4",
+        "text": "Sicilya"
       },
       {
         "id": "o3",
         "text": "Kıbrıs"
       },
       {
-        "id": "o4",
-        "text": "İtalya"
+        "id": "o1",
+        "text": "Rodos"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Ebû Eyyûb maddesi onun hicrî 28 yılında düzenlenen Kıbrıs seferinde bulunduğunu aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ebû Eyyûb el-Ensârî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-        "locator": "Kıbrıs seferi",
+        "locator": "98. satır",
         "supports": "TDV Ebû Eyyûb maddesi onun hicrî 28 yılında düzenlenen Kıbrıs seferinde bulunduğunu aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-ebu-eyyub-el-ensari"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-ebu-eyyub-el-ensari",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-ebueyyubelensari-istanbul",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "easy",
     "question": "Ebû Eyyûb el-Ensârî'nin son katıldığı askerî sefer hangi şehre yöneliktir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kudüs"
+        "id": "o3",
+        "text": "İskenderiye"
+      },
+      {
+        "id": "o4",
+        "text": "Şam"
       },
       {
         "id": "o2",
         "text": "İstanbul"
       },
       {
-        "id": "o3",
-        "text": "Mekke"
-      },
-      {
-        "id": "o4",
-        "text": "Kahire"
+        "id": "o1",
+        "text": "Antakya"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV, Ebû Eyyûb el-Ensârî'nin yaşlılık döneminde İstanbul kuşatmasına katıldığını ve kuşatma sırasında vefat ettiğini belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ebû Eyyûb el-Ensârî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-        "locator": "Son İstanbul seferi",
+        "locator": "100–101. satırlar",
         "supports": "TDV, Ebû Eyyûb el-Ensârî'nin yaşlılık döneminde İstanbul kuşatmasına katıldığını ve kuşatma sırasında vefat ettiğini belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-ebu-eyyub-el-ensari"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-ebu-eyyub-el-ensari",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-selmanifarisi-asli",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Selmân-ı Fârisî İslâm'ı kabul etmeden önce hangi dinin mensubuydu?",
+    "question": "Selmân-ı Fârisî’nin İran’daki ilk aile ortamında bağlı bulunduğu din hangisiydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Mecûsîlik"
-      },
-      {
         "id": "o2",
-        "text": "Budizm"
+        "text": "Hıristiyanlık"
       },
       {
         "id": "o3",
@@ -60845,68 +60886,74 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o4",
-        "text": "Putperest Kureyş dini"
+        "text": "Sâbiîlik"
+      },
+      {
+        "id": "o1",
+        "text": "Mecûsîlik"
       }
     ],
     "correctOptionId": "o1",
-    "explanation": "TDV Selmân biyografisi, İran'daki ailesinin Mecûsîliğe bağlı olduğunu, daha sonra Selmân'ın Hıristiyanlığı benimsediğini anlatır.",
+    "explanation": "TDV Selmân-ı Fârisî biyografisinde ilk ailesinin Mecûsî olduğu ve kendisinin ateşkedede görev yaptığı anlatılır. Selmân daha sonra Hıristiyanlığı benimsemiş, arayışının sonunda İslâm’ı kabul etmiştir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-        "locator": "Mecûsî aile ve sonraki arayış",
-        "supports": "TDV Selmân biyografisi, İran'daki ailesinin Mecûsîliğe bağlı olduğunu, daha sonra Selmân'ın Hıristiyanlığı benimsediğini anlatır.",
+        "locator": "96–100. satırlar",
+        "supports": "TDV Selmân-ı Fârisî biyografisinde ilk ailesinin Mecûsî olduğu ve kendisinin ateşkedede görev yaptığı anlatılır. Selmân daha sonra Hıristiyanlığı benimsemiş, arayışının sonunda İslâm’ı kabul etmiştir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-selman-i-farisi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-selman-i-farisi",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-selmanifarisi-sehir",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Selmân-ı Fârisî'nin doğduğu yer TDV'de neresi olarak belirtilir?",
     "options": [
       {
+        "id": "o4",
+        "text": "Râmhürmüz"
+      },
+      {
         "id": "o1",
-        "text": "Basra"
+        "text": "İsfahan"
       },
       {
         "id": "o2",
-        "text": "Kurtuba"
+        "text": "Nîşâbur"
       },
       {
         "id": "o3",
-        "text": "Buhara"
-      },
-      {
-        "id": "o4",
-        "text": "Râmhürmüz"
+        "text": "Hemedan"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Selmân maddesi doğduğu yeri Râmhürmüz olarak kaydeder; çocukluğunda ailesiyle başka bir yerleşime taşınmıştır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-        "locator": "Râmhürmüz doğumu",
+        "locator": "96–98. satırlar",
         "supports": "TDV Selmân maddesi doğduğu yeri Râmhürmüz olarak kaydeder; çocukluğunda ailesiyle başka bir yerleşime taşınmıştır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-selman-i-farisi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-selman-i-farisi",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-selmanifarisi-seyahat",
@@ -60952,45 +60999,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-selmanifarisi-mukatebe",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Selmân-ı Fârisî'nin âzat edilmesine ilişkin sözleşmede dikilmesi kararlaştırılan hurma fidanı sayısı kaçtır?",
     "options": [
       {
         "id": "o1",
+        "text": "İki yüz"
+      },
+      {
+        "id": "o3",
+        "text": "Dört yüz"
+      },
+      {
+        "id": "o4",
         "text": "Beş yüz"
       },
       {
         "id": "o2",
         "text": "Üç yüz"
-      },
-      {
-        "id": "o3",
-        "text": "Otuz"
-      },
-      {
-        "id": "o4",
-        "text": "Elli"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Selmân biyografisi özgürlüğü için üç yüz hurma fidanı dikme şartından ve ayrıca bir ödemenin yapılmasından söz eder.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-        "locator": "Mükâtebe ve 300 hurma fidanı",
+        "locator": "100–101. satırlar",
         "supports": "TDV Selmân biyografisi özgürlüğü için üç yüz hurma fidanı dikme şartından ve ayrıca bir ödemenin yapılmasından söz eder.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-selman-i-farisi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-selman-i-farisi",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-selmanifarisi-kardes",
@@ -61036,22 +61084,22 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-selmanifarisi-vali",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Selmân-ı Fârisî'nin valilik yaptığı şehir hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Mekke"
+        "text": "Kûfe"
       },
       {
         "id": "o2",
-        "text": "Medine"
+        "text": "Basra"
       },
       {
         "id": "o3",
-        "text": "İstanbul"
+        "text": "Şam"
       },
       {
         "id": "o4",
@@ -61062,19 +61110,20 @@ export const questionsV73Candidate: readonly Question[] = [
     "explanation": "TDV Selmân maddesi Hz. Ömer'in Selmân-ı Fârisî'yi Medâin valisi olarak görevlendirdiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-        "locator": "Medâin valiliği",
+        "locator": "103–105. satırlar",
         "supports": "TDV Selmân maddesi Hz. Ömer'in Selmân-ı Fârisî'yi Medâin valisi olarak görevlendirdiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-selman-i-farisi"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-selman-i-farisi",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbomerbhattab-hafsa",
@@ -61162,10 +61211,10 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q69-abdullahbomerbhattab-hendek",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Abdullah b. Ömer kaç yaşında Hendek Gazvesi'ne katılmıştır?",
+    "question": "TDV’ye göre Abdullah b. Ömer Hendek Gazvesi’ne kaç yaşında katılmıştır?",
     "options": [
       {
         "id": "o1",
@@ -61173,53 +61222,54 @@ export const questionsV73Candidate: readonly Question[] = [
       },
       {
         "id": "o2",
-        "text": "On"
+        "text": "On üç"
       },
       {
         "id": "o3",
-        "text": "Yirmi"
+        "text": "On yedi"
       },
       {
         "id": "o4",
-        "text": "Otuz"
+        "text": "On dokuz"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Abdullah b. Ömer biyografisi onun on beş yaşında Hz. Peygamber'in izniyle Hendek Gazvesi'ne katıldığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Ömer",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
-        "locator": "Hendek’e katılma yaşı",
+        "locator": "96–97. satırlar",
         "supports": "TDV Abdullah b. Ömer biyografisi onun on beş yaşında Hz. Peygamber'in izniyle Hendek Gazvesi'ne katıldığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-omer-b-hattab"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-omer-b-hattab",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbomerbhattab-hadis",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "TDV'ye göre Abdullah b. Ömer'in rivayet ettiği hadis sayısı kaçtır?",
     "options": [
       {
         "id": "o1",
-        "text": "1660"
+        "text": "2530"
       },
       {
         "id": "o2",
-        "text": "44"
+        "text": "2730"
       },
       {
         "id": "o3",
-        "text": "99"
+        "text": "2830"
       },
       {
         "id": "o4",
@@ -61230,61 +61280,63 @@ export const questionsV73Candidate: readonly Question[] = [
     "explanation": "TDV biyografisine göre Abdullah b. Ömer müksirûn arasında yer alır ve 2630 hadis rivayeti ona nispet edilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Ömer",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
-        "locator": "2630 hadis rivayeti",
+        "locator": "105–107. satırlar",
         "supports": "TDV biyografisine göre Abdullah b. Ömer müksirûn arasında yer alır ve 2630 hadis rivayeti ona nispet edilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-omer-b-hattab"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-omer-b-hattab",
+    "reviewedAt": undefined
   },
   {
     "id": "q69-abdullahbomerbhattab-zincir",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "hard",
     "question": "Buhârî'nin 'altın zincir' diye anılan güvenilir senedinde İbn Ömer'den kim rivayet eder?",
     "options": [
       {
-        "id": "o1",
-        "text": "Cezerî"
+        "id": "o2",
+        "text": "Mücâhid"
       },
       {
-        "id": "o2",
-        "text": "Kâtib Çelebi"
+        "id": "o4",
+        "text": "Saîd b. Müseyyeb"
       },
       {
         "id": "o3",
         "text": "Nâfi‘"
       },
       {
-        "id": "o4",
-        "text": "İbn Battûta"
+        "id": "o1",
+        "text": "Sâlim b. Abdullah"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV, Buhârî'nin en sahih saydığı isnadlar arasında Mâlik - Nâfi‘ - Abdullah b. Ömer zincirinin bulunduğunu bildirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Abdullah b. Ömer",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
-        "locator": "Mâlik - Nâfi‘ - İbn Ömer isnadı",
+        "locator": "105–108. satırlar",
         "supports": "TDV, Buhârî'nin en sahih saydığı isnadlar arasında Mâlik - Nâfi‘ - Abdullah b. Ömer zincirinin bulunduğunu bildirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV'nin metni erişilerek kişi, olay ve cevap karşılaştırıldı; bağımsız akademik hakem değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "bio-v69-abdullah-b-omer-b-hattab"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "bio-v69-abdullah-b-omer-b-hattab",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-ebu-hanife-asli",
@@ -61372,87 +61424,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-ebu-hanife-lakap",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "'İmâm-ı Âzam' unvanıyla tanınan fıkıh âlimi kimdir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Cezerî"
-      },
-      {
-        "id": "o2",
-        "text": "Kâtib Çelebi"
-      },
-      {
         "id": "o3",
         "text": "Ebû Hanîfe"
       },
       {
+        "id": "o1",
+        "text": "İmam Mâlik"
+      },
+      {
+        "id": "o2",
+        "text": "İmam Şâfiî"
+      },
+      {
         "id": "o4",
-        "text": "İbn Battûta"
+        "text": "Ahmed b. Hanbel"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV, büyük imam anlamındaki İmâm-ı Âzam sıfatının Ebû Hanîfe için yaygınlaştığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ebû Hanîfe",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-        "locator": "İmâm-ı Âzam unvanı",
+        "locator": "116–119. satırlar",
         "supports": "TDV, büyük imam anlamındaki İmâm-ı Âzam sıfatının Ebû Hanîfe için yaygınlaştığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-ebu-hanife"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-ebu-hanife",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-ebu-hanife-ticaret",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Ebû Hanîfe ilim hayatının öncesinde hangi ticaretle uğraşmıştır?",
     "options": [
       {
         "id": "o1",
-        "text": "Kitap basımı"
+        "text": "Tahıl ticareti"
+      },
+      {
+        "id": "o3",
+        "text": "Baharat ticareti"
+      },
+      {
+        "id": "o4",
+        "text": "Deri ticareti"
       },
       {
         "id": "o2",
         "text": "Kumaş ticareti"
-      },
-      {
-        "id": "o3",
-        "text": "Baharat üretimi"
-      },
-      {
-        "id": "o4",
-        "text": "Deniz gemiciliği"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV'nin hayatı bölümünde Ebû Hanîfe'nin ilme yönelmeden önce Kûfe'de kumaş tüccarlığı yaptığı kaydedilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ebû Hanîfe",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-        "locator": "Kûfe’de kumaş tüccarlığı",
+        "locator": "127 ve 156. satırlar",
         "supports": "TDV'nin hayatı bölümünde Ebû Hanîfe'nin ilme yönelmeden önce Kûfe'de kumaş tüccarlığı yaptığı kaydedilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-ebu-hanife"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-ebu-hanife",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-ebu-hanife-mezhep",
@@ -61498,22 +61552,22 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-ebu-hanife-kadi",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Ebû Hanîfe, kendisine teklif edilen hangi resmî görevi kabul etmediği için baskı görmüştür?",
+    "question": "Emevî yönetiminde İbn Hübeyre aracılığıyla Ebû Hanîfe’ye teklif edilen görevlerden biri hangisiydi?",
     "options": [
       {
         "id": "o1",
-        "text": "Medine müezzinliği"
+        "text": "Basra valiliği"
       },
       {
         "id": "o2",
-        "text": "Bağdat kütüphane müdürlüğü"
+        "text": "Medine imamlığı"
       },
       {
         "id": "o3",
-        "text": "Saray hekimliği"
+        "text": "Şam ordu kumandanlığı"
       },
       {
         "id": "o4",
@@ -61524,19 +61578,20 @@ export const questionsV73Candidate: readonly Question[] = [
     "explanation": "TDV maddesi Ebû Hanîfe'ye Kûfe kadılığı veya beytülmâl eminliğinin teklif edildiğini, kabul etmediği için cezalandırıldığını aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ebû Hanîfe",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-        "locator": "Kûfe kadılığı teklifini reddetmesi",
+        "locator": "146–153. satırlar",
         "supports": "TDV maddesi Ebû Hanîfe'ye Kûfe kadılığı veya beytülmâl eminliğinin teklif edildiğini, kabul etmediği için cezalandırıldığını aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-ebu-hanife"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-ebu-hanife",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-safii-dogum",
@@ -61708,129 +61763,132 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-safii-risale",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "İmam Şâfiî'nin fıkıh usulü konusunda kaleme aldığı temel eseri hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "el-Müsned"
-      },
-      {
-        "id": "o2",
-        "text": "Seyahatnâme"
-      },
-      {
         "id": "o3",
         "text": "er-Risâle"
       },
       {
+        "id": "o1",
+        "text": "el-Muvatta’"
+      },
+      {
+        "id": "o2",
+        "text": "el-Câmiu’s-sahîh"
+      },
+      {
         "id": "o4",
-        "text": "el-Muvaṭṭaʾ"
+        "text": "es-Sünen"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV er-Risâle maddesi bu eseri İmam Şâfiî'nin günümüze ulaşan erken dönem fıkıh usulü kitabı olarak tanımlar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/safii",
-        "locator": "er-Risâle ve fıkıh usulü",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/er-risale--safii",
+        "locator": "96–104 ve 116–120. satırlar",
         "supports": "TDV er-Risâle maddesi bu eseri İmam Şâfiî'nin günümüze ulaşan erken dönem fıkıh usulü kitabı olarak tanımlar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-safii"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-safii",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-safii-cedid",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Şâfiî'nin görüşlerinin son biçimini temsil eden 'cedîd' döneminin merkezi hangi ülkedir?",
     "options": [
       {
         "id": "o1",
-        "text": "Endülüs"
+        "text": "Irak"
+      },
+      {
+        "id": "o3",
+        "text": "Hicaz"
+      },
+      {
+        "id": "o4",
+        "text": "Yemen"
       },
       {
         "id": "o2",
         "text": "Mısır"
-      },
-      {
-        "id": "o3",
-        "text": "İran"
-      },
-      {
-        "id": "o4",
-        "text": "Fas"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV er-Risâle maddesi Şâfiî'nin cedîd diye anılan son yaklaşımını 814-820 arasındaki Mısır dönemine yerleştirir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/safii",
-        "locator": "Mısır’da cedîd dönemi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/er-risale--safii",
+        "locator": "96–98. satırlar; Şâfiî 115–121",
         "supports": "TDV er-Risâle maddesi Şâfiî'nin cedîd diye anılan son yaklaşımını 814-820 arasındaki Mısır dönemine yerleştirir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-safii"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-safii",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-safii-beyan",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "İmam Şâfiî er-Risâle'de kuramsal çerçeveyi oluştururken hangi kavramı merkeze alır?",
     "options": [
+      {
+        "id": "o3",
+        "text": "İcmâ"
+      },
+      {
+        "id": "o4",
+        "text": "İstihsan"
+      },
       {
         "id": "o1",
         "text": "Beyân"
       },
       {
         "id": "o2",
-        "text": "Mîkāt"
-      },
-      {
-        "id": "o3",
-        "text": "Müteşâbih"
-      },
-      {
-        "id": "o4",
-        "text": "İstiâre"
+        "text": "Kıyas"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV er-Risâle maddesi Şâfiî'nin eserin başında beyân kavramıyla hükümlerin açıklanış biçimini tasnif ettiğini belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — İmam Şâfiî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/safii",
-        "locator": "er-Risâle’de beyân kavramı",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/er-risale--safii",
+        "locator": "116–120. satırlar",
         "supports": "TDV er-Risâle maddesi Şâfiî'nin eserin başında beyân kavramıyla hükümlerin açıklanış biçimini tasnif ettiğini belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-safii"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-safii",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-malik-b-enes-dogum",
@@ -61876,25 +61934,25 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-malik-b-enes-egitim",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "İmam Mâlik hangi şehirde ilim hayatını geliştirmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Gazze"
-      },
-      {
-        "id": "o2",
-        "text": "İstanbul"
+        "id": "o4",
+        "text": "Basra"
       },
       {
         "id": "o3",
         "text": "Medine"
       },
       {
-        "id": "o4",
+        "id": "o1",
+        "text": "Mekke"
+      },
+      {
+        "id": "o2",
         "text": "Kûfe"
       }
     ],
@@ -61902,19 +61960,20 @@ export const questionsV73Candidate: readonly Question[] = [
     "explanation": "İmam Mâlik, hadis ve fıkıh ilimlerini döneminin önemli merkezi Medine'de tahsil etmiş ve öğretmiştir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
-        "locator": "Medine’de yetişmesi",
+        "locator": "99–105. satırlar",
         "supports": "İmam Mâlik, hadis ve fıkıh ilimlerini döneminin önemli merkezi Medine'de tahsil etmiş ve öğretmiştir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-malik-b-enes"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-malik-b-enes",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-malik-b-enes-ilk-hoca",
@@ -62003,45 +62062,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-malik-b-enes-amel",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
     "question": "Mâlikî hukuk düşüncesinde Medine halkının uygulamasına verilen özel öneme ne denir?",
     "options": [
       {
+        "id": "o4",
+        "text": "Amel-i ehl-i Medîne"
+      },
+      {
         "id": "o1",
-        "text": "Ceyşü'l-usre"
+        "text": "Kavl-i sahâbî"
       },
       {
         "id": "o2",
-        "text": "Bey'atürrıdvân"
+        "text": "İcmâ-ı ümmet"
       },
       {
         "id": "o3",
-        "text": "Senedü'l-feth"
-      },
-      {
-        "id": "o4",
-        "text": "Amel-i ehl-i Medîne"
+        "text": "Örf ve âdet"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV, İmam Mâlik'in hadis ve sünnet mirasının yaşadığı yer olan Medine halkının uygulamasına özel önem verdiğini açıklar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — İmam Mâlik",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/malik-b-enes",
-        "locator": "Amel-i ehl-i Medîne",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/amel-i-ehl-i-medine",
+        "locator": "96–104. satırlar",
         "supports": "TDV, İmam Mâlik'in hadis ve sünnet mirasının yaşadığı yer olan Medine halkının uygulamasına özel önem verdiğini açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-malik-b-enes"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-malik-b-enes",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-malik-b-enes-vefat",
@@ -62171,87 +62231,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-ahmed-b-hanbel-annesinin-adi",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "hard",
-    "question": "Ahmed b. Hanbel'in annesinin adı nedir?",
+    "question": "Ahmed b. Hanbel’in annesi Safiyye bint Meymûne hangi kabileye mensuptur?",
     "options": [
       {
         "id": "o1",
-        "text": "Ümmü'l-Fazl Lübâbe"
+        "text": "Süleymoğulları"
       },
       {
         "id": "o2",
-        "text": "Ümmü Seleme"
+        "text": "Esedoğulları"
       },
       {
         "id": "o3",
-        "text": "Hamâme"
+        "text": "Ezdoğulları"
       },
       {
         "id": "o4",
-        "text": "Safiyye bint Meymûne"
+        "text": "Şeybânoğulları"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "TDV Ahmed b. Hanbel biyografisi annesini Safiyye bint Meymûne olarak tanıtır ve çocukluğunu onun himayesinde geçirdiğini söyler.",
+    "explanation": "TDV Ahmed b. Hanbel biyografisi annesinin Şeybânoğulları’ndan Safiyye bint Meymûne olduğunu ve babasının ölümünden sonra onun himayesinde büyüdüğünü anlatır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
-        "locator": "Annesi Safiyye bint Meymûne",
-        "supports": "TDV Ahmed b. Hanbel biyografisi annesini Safiyye bint Meymûne olarak tanıtır ve çocukluğunu onun himayesinde geçirdiğini söyler.",
+        "locator": "114–116. satırlar",
+        "supports": "TDV Ahmed b. Hanbel biyografisi annesinin Şeybânoğulları’ndan Safiyye bint Meymûne olduğunu ve babasının ölümünden sonra onun himayesinde büyüdüğünü anlatır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-ahmed-b-hanbel"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-ahmed-b-hanbel",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-ahmed-b-hanbel-hoca",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Ahmed b. Hanbel hangi âlimden fıkıh ve usul eğitimi almıştır?",
+    "question": "TDV’ye göre Ahmed b. Hanbel’e özellikle fıkıh ve usûl-i fıkıh öğreten hocası hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Kâtib Çelebi"
+        "text": "Hüşeym b. Beşîr"
       },
       {
         "id": "o2",
-        "text": "Bîrûnî"
+        "text": "Vekî‘ b. Cerrâh"
+      },
+      {
+        "id": "o4",
+        "text": "Abdürrezzâk b. Hemmâm"
       },
       {
         "id": "o3",
         "text": "İmam Şâfiî"
-      },
-      {
-        "id": "o4",
-        "text": "İbn Battûta"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV, Ahmed b. Hanbel'in İmam Şâfiî'den fıkıh ve usûl-i fıkıh öğrenmiş olduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
-        "locator": "Şâfiî’den fıkıh öğrenmesi",
+        "locator": "115–118. satırlar",
         "supports": "TDV, Ahmed b. Hanbel'in İmam Şâfiî'den fıkıh ve usûl-i fıkıh öğrenmiş olduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-ahmed-b-hanbel"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-ahmed-b-hanbel",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-ahmed-b-hanbel-yemen",
@@ -62297,45 +62359,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-ahmed-b-hanbel-eser",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Ahmed b. Hanbel'in geniş hadis derlemesinin adı hangisidir?",
     "options": [
+      {
+        "id": "o4",
+        "text": "es-Sünen"
+      },
       {
         "id": "o1",
         "text": "el-Müsned"
       },
       {
         "id": "o2",
-        "text": "el-Muvaṭṭaʾ"
+        "text": "el-Muvatta’"
       },
       {
         "id": "o3",
         "text": "er-Risâle"
-      },
-      {
-        "id": "o4",
-        "text": "Cihannümâ"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Ahmed b. Hanbel'in hadis rivayetlerini içeren el-Müsned adlı eseri onun en tanınan eserleri arasındadır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Ahmed b. Hanbel",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
-        "locator": "el-Müsned hadis derlemesi",
+        "locator": "148–152. satırlar",
         "supports": "Ahmed b. Hanbel'in hadis rivayetlerini içeren el-Müsned adlı eseri onun en tanınan eserleri arasındadır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-ahmed-b-hanbel"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-ahmed-b-hanbel",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-ahmed-b-hanbel-vefat",
@@ -62381,45 +62444,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-gazzali-dogum",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Gazzâlî hangi Horasan şehrinde doğmuştur?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kûfe"
-      },
-      {
-        "id": "o2",
-        "text": "Medine"
+        "id": "o4",
+        "text": "Belh"
       },
       {
         "id": "o3",
         "text": "Tûs"
       },
       {
-        "id": "o4",
-        "text": "Gazze"
+        "id": "o1",
+        "text": "Nîşâbur"
+      },
+      {
+        "id": "o2",
+        "text": "Merv"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Gazzâlî biyografisi onun 450/1058 yılında Horasan bölgesinin Tûs şehrinde doğduğunu aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/gazzali",
-        "locator": "450/1058 Tûs doğumu",
+        "locator": "125–130. satırlar",
         "supports": "TDV Gazzâlî biyografisi onun 450/1058 yılında Horasan bölgesinin Tûs şehrinde doğduğunu aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-gazzali"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-gazzali",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-gazzali-kunye",
@@ -62465,213 +62529,218 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q70-gazzali-lakap",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Gazzâlî'nin dinî ilimler tarihindeki ünlü lakabı hangisidir?",
+    "question": "TDV Gazzâlî biyografisinin girişinde Zeynüddin ile birlikte anılan lakabı hangisidir?",
     "options": [
+      {
+        "id": "o3",
+        "text": "Şeyhü’r-Reîs"
+      },
+      {
+        "id": "o4",
+        "text": "Sultânü’l-ulemâ"
+      },
       {
         "id": "o1",
         "text": "Hüccetülislâm"
       },
       {
         "id": "o2",
-        "text": "Zünnûn"
-      },
-      {
-        "id": "o3",
-        "text": "Hâdimü'n-Nebî"
-      },
-      {
-        "id": "o4",
-        "text": "Zâtü'n-nitâkayn"
+        "text": "İmâmü’l-Haremeyn"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Gazzâlî maddesi, ona verilen unvanlar arasında Hüccetülislâm lakabını sayar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/gazzali",
-        "locator": "Hüccetülislâm lakabı",
+        "locator": "125–130. satırlar",
         "supports": "TDV Gazzâlî maddesi, ona verilen unvanlar arasında Hüccetülislâm lakabını sayar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-gazzali"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-gazzali",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-gazzali-ihya",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
-    "question": "Gazzâlî'nin ahlâk, dinî ilimler ve tasavvufu işlediği büyük eseri hangisidir?",
+    "question": "Gazzâlî’nin ibadetler, âdetler, helâk ediciler ve kurtarıcılar olarak dört ana bölümde düzenlediği eseri hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "el-Muvaṭṭaʾ"
-      },
-      {
-        "id": "o2",
-        "text": "Seyahatnâme"
-      },
-      {
         "id": "o3",
-        "text": "er-Risâle"
+        "text": "el-İktisâd fi’l-i‘tikād"
       },
       {
         "id": "o4",
-        "text": "İhyâʾü Ulûmi'd-Dîn"
-      }
-    ],
-    "correctOptionId": "o4",
-    "explanation": "TDV Gazzâlî maddesi İhyâʾü Ulûmi'd-Dîn'i onun en etkili ahlâk eserlerinden biri olarak anlatır.",
-    "sources": [
-      {
-        "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/gazzali",
-        "locator": "İhyâʾü Ulûmi’d-Dîn",
-        "supports": "TDV Gazzâlî maddesi İhyâʾü Ulûmi'd-Dîn'i onun en etkili ahlâk eserlerinden biri olarak anlatır.",
-        "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
-      }
-    ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-gazzali"
-  },
-  {
-    "id": "q70-gazzali-sam",
-    "version": 1,
-    "categoryId": "general",
-    "difficulty": "medium",
-    "question": "Gazzâlî, Bağdat'tan ayrıldıktan sonra yaklaşık iki yıl inzivâ yaşamak için hangi şehre gitmiştir?",
-    "options": [
+        "text": "İhyâʾü Ulûmi’d-Dîn"
+      },
       {
         "id": "o1",
-        "text": "Kurtuba"
+        "text": "Tehâfütü’l-felâsife"
       },
       {
         "id": "o2",
-        "text": "Tanca"
+        "text": "Makāsıdü’l-felâsife"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "TDV İhyâü Ulûmi’d-Dîn maddesi eserin ibadetler, âdetler, helâk edici davranışlar ve kurtarıcı erdemler başlıklı dört ana kısım halinde düzenlendiğini açıklar.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/ihyau-ulumid-din",
+        "locator": "98–109. satırlar",
+        "supports": "TDV İhyâü Ulûmi’d-Dîn maddesi eserin ibadetler, âdetler, helâk edici davranışlar ve kurtarıcı erdemler başlıklı dört ana kısım halinde düzenlendiğini açıklar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-10-30"
+      }
+    ],
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-gazzali",
+    "reviewedAt": undefined
+  },
+  {
+    "id": "q70-gazzali-sam",
+    "version": 2,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Kendi anlatımını aktaran TDV’ye göre Gazzâlî Bağdat’tan sonra Emeviyye Camii’nde inzivâ için hangi şehre gitmiştir?",
+    "options": [
+      {
+        "id": "o4",
+        "text": "Medine"
       },
       {
         "id": "o3",
         "text": "Şam"
       },
       {
-        "id": "o4",
-        "text": "Kûfe"
+        "id": "o1",
+        "text": "Kudüs"
+      },
+      {
+        "id": "o2",
+        "text": "Kahire"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV, Gazzâlî'nin Bağdat'tan Şam'a gittiğini ve yaklaşık iki yıl burada ibadet ve nefis terbiyesiyle meşgul olduğunu belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/gazzali",
-        "locator": "İnziva dönemi Şam",
+        "locator": "178–188. satırlar",
         "supports": "TDV, Gazzâlî'nin Bağdat'tan Şam'a gittiğini ve yaklaşık iki yıl burada ibadet ve nefis terbiyesiyle meşgul olduğunu belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-gazzali"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-gazzali",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-gazzali-kudus",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Gazzâlî Şam'dan sonra bir süre hangi kutsal şehirde inzivâ hayatı yaşamıştır?",
+    "question": "el-Münkız’daki anlatımını aktaran TDV’ye göre Gazzâlî Şam’dan sonra hangi şehirde bir süre inzivâ yaşamıştır?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Taif"
-      },
       {
         "id": "o2",
         "text": "Kudüs"
       },
       {
-        "id": "o3",
+        "id": "o1",
         "text": "Mekke"
       },
       {
-        "id": "o4",
+        "id": "o3",
         "text": "Medine"
+      },
+      {
+        "id": "o4",
+        "text": "Tâif"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Gazzâlî maddesi onun Şam'dan sonra Kudüs'e giderek burada inzivâ hayatına devam ettiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/gazzali",
-        "locator": "Kudüs’te inzivâ",
+        "locator": "180–188. satırlar",
         "supports": "TDV Gazzâlî maddesi onun Şam'dan sonra Kudüs'e giderek burada inzivâ hayatına devam ettiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-gazzali"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-gazzali",
+    "reviewedAt": undefined
   },
   {
     "id": "q70-gazzali-kimya",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
     "question": "Gazzâlî'nin Farsça kaleme aldığı ahlâk ve dinî hayatla ilgili eseri hangisidir?",
     "options": [
+      {
+        "id": "o4",
+        "text": "el-Müstasfâ"
+      },
       {
         "id": "o1",
         "text": "Kimyâ-yı Saâdet"
       },
       {
         "id": "o2",
-        "text": "el-Müsned"
+        "text": "İhyâʾü Ulûmi’d-Dîn"
       },
       {
         "id": "o3",
-        "text": "er-Rihle"
-      },
-      {
-        "id": "o4",
-        "text": "Kitâbü'l-İber"
+        "text": "Tehâfütü’l-felâsife"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Gazzâlî maddesinde Kimyâ-yı Saâdet'in Farsça kaleme alındığı ve İhyâ ile konu planı açısından ilişkili olduğu belirtilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — Gazzâlî",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/gazzali",
-        "locator": "Farsça Kimyâ-yı Saâdet",
+        "locator": "1263–1269. satırlar; 156",
         "supports": "TDV Gazzâlî maddesinde Kimyâ-yı Saâdet'in Farsça kaleme alındığı ve İhyâ ile konu planı açısından ilişkili olduğu belirtilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV biyografisi ve eser maddesi açılıp soru ile açıklama karşılaştırıldı; bağımsız ilahiyat uzmanı değerlendirmesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "fikh-scholar-v70-gazzali"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "fikh-scholar-v70-gazzali",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-sure-114",
@@ -62885,129 +62954,132 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-mushaf-cuz",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "easy",
     "question": "Mushafın geleneksel olarak bölündüğü otuz bölümden her birine ne denir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Şavt"
-      },
-      {
         "id": "o2",
-        "text": "Hizb-i Bahr"
+        "text": "Sûre"
       },
       {
         "id": "o3",
-        "text": "Fâsıla"
+        "text": "Âyet"
       },
       {
         "id": "o4",
         "text": "Cüz"
+      },
+      {
+        "id": "o1",
+        "text": "Hizb"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Mushaf maddesinde en yaygın bölümlemenin Kur'an'ı otuz kısma ayırmak olduğu ve bunlardan her birine cüz denildiği belirtilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — mushaf",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mushaf",
-        "locator": "Otuz cüz düzeni",
+        "locator": "159–163. satırlar",
         "supports": "TDV Mushaf maddesinde en yaygın bölümlemenin Kur'an'ı otuz kısma ayırmak olduğu ve bunlardan her birine cüz denildiği belirtilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-mushaf"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-mushaf",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-ayet-fasila",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
     "question": "Âyetin son kelimesine ya da son harfine, iki âyeti ayırdığı için ne ad verilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Mîkāt"
+        "text": "Siyak"
       },
       {
         "id": "o2",
-        "text": "Med"
+        "text": "Vakf"
+      },
+      {
+        "id": "o4",
+        "text": "Secâvend"
       },
       {
         "id": "o3",
         "text": "Fâsıla"
-      },
-      {
-        "id": "o4",
-        "text": "Siyak"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Âyet maddesi iki âyeti ayıran son kelime veya son harfin fâsıla diye adlandırıldığını açıklar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ayet",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ayet",
-        "locator": "Âyet sonuna fâsıla adı verilmesi",
+        "locator": "116–122. satırlar",
         "supports": "TDV Âyet maddesi iki âyeti ayıran son kelime veya son harfin fâsıla diye adlandırıldığını açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-ayet"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-ayet",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-mushaf-osmani",
-    "version": 1,
+    "version": 2,
     "categoryId": "quran",
     "difficulty": "medium",
-    "question": "Mesâhif-i Osmâniyye tabiri hangi çalışmanın nüshalarını ifade eder?",
+    "question": "Mesâhif-i Osmâniyye’nin hazırlanmasında hangi amaç gözetilmiştir?",
     "options": [
       {
-        "id": "o1",
-        "text": "İbn Battûta seyahatlerini"
+        "id": "o4",
+        "text": "Tefsirleri metin satırlarına eklemek"
       },
       {
         "id": "o2",
-        "text": "Hz. Osman döneminde çoğaltılan mushafları"
+        "text": "Farklı merkezlere örnek mushaf ulaştırmak"
+      },
+      {
+        "id": "o1",
+        "text": "Âyetleri iniş tarihine göre sıralamak"
       },
       {
         "id": "o3",
-        "text": "Hz. Ömer'in divan defterlerini"
-      },
-      {
-        "id": "o4",
-        "text": "İlk hadis kitaplarını"
+        "text": "Her kıraati bağımsız bir kitapta toplamak"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Mushaf maddesi Mesâhif-i Osmâniyye adını Hz. Osman'ın yönetiminde istinsah edilen ve belli merkezlere gönderilen mushaf nüshaları için kullanır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — mushaf",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/mushaf",
-        "locator": "Mesâhif-i Osmâniyye ve Hz. Osman",
+        "locator": "120–128. satırlar",
         "supports": "TDV Mushaf maddesi Mesâhif-i Osmâniyye adını Hz. Osman'ın yönetiminde istinsah edilen ve belli merkezlere gönderilen mushaf nüshaları için kullanır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-mushaf"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-mushaf",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-ilyas-baal",
@@ -63053,171 +63125,175 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-ilyas-saffat",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
     "question": "Hz. İlyâs'ın peygamber olarak anıldığı ve kıssasına yer verilen sûre hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Kehf"
-      },
-      {
         "id": "o2",
-        "text": "Hucurât"
+        "text": "A‘râf"
       },
       {
         "id": "o3",
-        "text": "İhlâs"
+        "text": "Enbiyâ"
       },
       {
         "id": "o4",
         "text": "Sâffât"
+      },
+      {
+        "id": "o1",
+        "text": "Şuarâ"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "Sâffât 37/123-132'de İlyâs peygamberin kavmine tebliğinden ve inkârcılarla mücadelesinden söz edilir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ilyas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ilyas",
-        "locator": "Sâffât 37/123-132",
+        "locator": "96–103. satırlar",
         "supports": "Sâffât 37/123-132'de İlyâs peygamberin kavmine tebliğinden ve inkârcılarla mücadelesinden söz edilir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-ilyas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-ilyas",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-ilyas-ilyasin",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "hard",
-    "question": "Sâffât 37/130'da İlyâs peygamber için geçen başka okunuş biçimi hangisidir?",
+    "question": "TDV İlyâs maddesinde Sâffât 37/130’la ilişkili verilen ad biçimi hangisidir?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Zülkarneyn"
-      },
-      {
-        "id": "o2",
-        "text": "İsrâîl"
-      },
       {
         "id": "o3",
         "text": "İlyâsîn"
       },
       {
+        "id": "o1",
+        "text": "İsrâîl"
+      },
+      {
+        "id": "o2",
+        "text": "İbrâhim"
+      },
+      {
         "id": "o4",
-        "text": "Zünnûn"
+        "text": "İsmâil"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "TDV İlyâs maddesi Sâffât 37/130'da İlyâs isminin İlyâsîn şeklinde de geçtiğini belirtir; bu farklı bir peygamber adı sayılmamalıdır.",
+    "explanation": "TDV İlyâs maddesi, Sâffât 37/130’daki İlyâsîn biçimini İlyâs adıyla ilişkili olarak ele alır; aynı bölümde kelimenin okunuş ve yorumuyla ilgili farklı görüşleri de belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — ilyas",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/ilyas",
-        "locator": "Sâffât 37/130 İlyâsîn",
-        "supports": "TDV İlyâs maddesi Sâffât 37/130'da İlyâs isminin İlyâsîn şeklinde de geçtiğini belirtir; bu farklı bir peygamber adı sayılmamalıdır.",
+        "locator": "96–100. satırlar",
+        "supports": "TDV İlyâs maddesi, Sâffât 37/130’daki İlyâsîn biçimini İlyâs adıyla ilişkili olarak ele alır; aynı bölümde kelimenin okunuş ve yorumuyla ilgili farklı görüşleri de belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-ilyas"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-ilyas",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-elyesa-elisa",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "medium",
-    "question": "Hz. Elyesa‘, Ahd-i Atîk geleneğinde hangi adla tanınır?",
+    "question": "TDV’nin ilişkilendirdiği Ahd-i Atîk geleneğinde Elyesa‘ hangi adla anılır?",
     "options": [
       {
         "id": "o1",
-        "text": "Davud"
+        "text": "Eliyahu"
+      },
+      {
+        "id": "o3",
+        "text": "Yeşaya"
+      },
+      {
+        "id": "o4",
+        "text": "Yeremya"
       },
       {
         "id": "o2",
         "text": "Elişa"
-      },
-      {
-        "id": "o3",
-        "text": "Yahya"
-      },
-      {
-        "id": "o4",
-        "text": "Yeşaya"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Elyesa‘ maddesi Kur'an'da anılan Elyesa‘ peygamberin Ahd-i Atîk'te Elişa olarak geçtiğini belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — elyesa",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/elyesa",
-        "locator": "Elyesa‘ adı ve Ahd-i Atîk'teki Elişa",
+        "locator": "97–103. satırlar",
         "supports": "TDV Elyesa‘ maddesi Kur'an'da anılan Elyesa‘ peygamberin Ahd-i Atîk'te Elişa olarak geçtiğini belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-elyesa"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-elyesa",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-elyesa-sad",
-    "version": 1,
+    "version": 2,
     "categoryId": "prophets",
     "difficulty": "hard",
     "question": "Kur'an'da Elyesa‘ peygamberin adı geçen sûrelerden biri hangisidir?",
     "options": [
+      {
+        "id": "o3",
+        "text": "Şuarâ"
+      },
+      {
+        "id": "o4",
+        "text": "Kehf"
+      },
       {
         "id": "o1",
         "text": "Sâd"
       },
       {
         "id": "o2",
-        "text": "Fâtiha"
-      },
-      {
-        "id": "o3",
-        "text": "Tekâsür"
-      },
-      {
-        "id": "o4",
-        "text": "Asr"
+        "text": "Sâffât"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "Elyesa‘ peygamberin adı Kur'an'da En'âm 6/86 ve Sâd 38/48'de geçer; Sâd sûresinde seçkin kişiler arasında anılır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — elyesa",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/elyesa",
-        "locator": "Sâd 38/48 ve Elyesa‘",
+        "locator": "98. satır",
         "supports": "Elyesa‘ peygamberin adı Kur'an'da En'âm 6/86 ve Sâd 38/48'de geçer; Sâd sûresinde seçkin kişiler arasında anılır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-elyesa"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-elyesa",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-idris-iki",
@@ -63390,87 +63466,89 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-hatice-tahire",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hz. Hatice'nin İslâm öncesindeki iffetini anlatan lakabı hangisidir?",
+    "question": "TDV’ye göre Hatice’nin İslâm’dan önceki yaygın lakabı hangisiydi?",
     "options": [
       {
-        "id": "o1",
-        "text": "Zâtü'n-nitâkayn"
-      },
-      {
         "id": "o2",
-        "text": "Betûl"
+        "text": "Kübrâ"
       },
       {
         "id": "o3",
-        "text": "Ümmü Ebîhâ"
+        "text": "Sıddîka"
       },
       {
         "id": "o4",
         "text": "Tâhire"
+      },
+      {
+        "id": "o1",
+        "text": "Betûl"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Hatice maddesinde iffetli karakteri nedeniyle İslâm'dan önce Tâhire diye anıldığı kaydedilmiştir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — hatice",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hatice",
-        "locator": "İslâm öncesi Tâhire lakabı",
+        "locator": "104–108. satırlar",
         "supports": "TDV Hatice maddesinde iffetli karakteri nedeniyle İslâm'dan önce Tâhire diye anıldığı kaydedilmiştir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-hatice"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-hatice",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-hatice-meysere",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Hz. Hatice, Hz. Muhammed'in Şam ticaret yolculuğunda yanına hangi hizmetlisini vermiştir?",
+    "question": "Hatice’nin Şam ticaret yolculuğunda Muhammed’e eşlik edip dönüşte ona haber veren kimdi?",
     "options": [
-      {
-        "id": "o1",
-        "text": "Zeyd b. Sâbit"
-      },
-      {
-        "id": "o2",
-        "text": "Ümmü Harâm"
-      },
       {
         "id": "o3",
         "text": "Meysere"
       },
       {
+        "id": "o1",
+        "text": "Ebû Tâlib"
+      },
+      {
+        "id": "o2",
+        "text": "Varaka b. Nevfel"
+      },
+      {
         "id": "o4",
-        "text": "Enes b. Mâlik"
+        "text": "Nefîse bint Ümeyye"
       }
     ],
     "correctOptionId": "o3",
     "explanation": "TDV Hatice biyografisi genç Muhammed'in Şam'a gönderildiği ticaret yolculuğunda yanında Hz. Hatice'nin hizmetlisi Meysere'nin bulunduğunu açıklar.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — hatice",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/hatice",
-        "locator": "Şam ticaretinde hizmetli Meysere",
+        "locator": "106–110. satırlar",
         "supports": "TDV Hatice biyografisi genç Muhammed'in Şam'a gönderildiği ticaret yolculuğunda yanında Hz. Hatice'nin hizmetlisi Meysere'nin bulunduğunu açıklar.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-hatice"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-hatice",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-fatima-zehra",
@@ -63516,45 +63594,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-fatima-betul",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hz. Fâtıma'nın iffetini vurgulayan diğer lakabı hangisidir?",
     "options": [
       {
-        "id": "o1",
-        "text": "Betûl"
-      },
-      {
         "id": "o2",
-        "text": "Hâdimü'n-Nebî"
+        "text": "Kübrâ"
       },
       {
         "id": "o3",
-        "text": "Zünnûn"
+        "text": "Sıddîka"
       },
       {
         "id": "o4",
-        "text": "Zülkarneyn"
+        "text": "Hamîde"
+      },
+      {
+        "id": "o1",
+        "text": "Betûl"
       }
     ],
     "correctOptionId": "o1",
     "explanation": "TDV Fâtıma biyografisi Hz. Fâtıma'nın iffete ilişkin anlam taşıyan Betûl lakabıyla anıldığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — fatima",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/fatima",
-        "locator": "Betûl lakabı",
+        "locator": "112–113. satırlar",
         "supports": "TDV Fâtıma biyografisi Hz. Fâtıma'nın iffete ilişkin anlam taşıyan Betûl lakabıyla anıldığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-fatima"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-fatima",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-aise-anne",
@@ -63643,45 +63722,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-aise-ifk",
-    "version": 1,
+    "version": 2,
     "categoryId": "history",
     "difficulty": "medium",
     "question": "Hz. Âişe'ye yönelik iftirayı reddeden âyetler hangi sûrededir?",
     "options": [
       {
         "id": "o1",
-        "text": "Fil"
+        "text": "Ahzâb"
+      },
+      {
+        "id": "o3",
+        "text": "Nisâ"
+      },
+      {
+        "id": "o4",
+        "text": "Mücâdele"
       },
       {
         "id": "o2",
         "text": "Nûr"
-      },
-      {
-        "id": "o3",
-        "text": "İhlâs"
-      },
-      {
-        "id": "o4",
-        "text": "Kevser"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Âişe maddesi İfk hadisesinin ardından Nûr sûresi 11-21. âyetlerde onun suçsuzluğunu açıklayan vahiy geldiğini aktarır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — aise",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/aise",
-        "locator": "İfk hadisesi Nûr 24/11-21",
+        "locator": "105–108. satırlar",
         "supports": "TDV Âişe maddesi İfk hadisesinin ardından Nûr sûresi 11-21. âyetlerde onun suçsuzluğunu açıklayan vahiy geldiğini aktarır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-aise"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-aise",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-kurban-niyet",
@@ -63728,45 +63808,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-kurban-kalb",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Kurban ibadetinde niyetin geçerli olması için hangi şart asıldır?",
+    "question": "Kurban kesmenin et elde etmekten farklı olarak ibadet amacı taşımasını ifade eden kavram hangisidir?",
     "options": [
       {
         "id": "o1",
-        "text": "Niyeti mutlaka yazıya geçirmek"
+        "text": "İhlâs"
       },
       {
         "id": "o2",
-        "text": "Bir tanığa imzalatmak"
+        "text": "Takvâ"
       },
       {
         "id": "o3",
-        "text": "Niyeti yüksek sesle söylemek"
+        "text": "Tevekkül"
       },
       {
         "id": "o4",
-        "text": "Kalpten niyet etmek"
+        "text": "Niyet"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Kurban maddesi niyette asıl olanın kalpte niyet bulunduğunu, dil ile ayrıca söylemenin şart olmadığını belirtir.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kurban",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kurban",
-        "locator": "Niyette asıl olanın kalp olması",
+        "locator": "273–275. satırlar",
         "supports": "TDV Kurban maddesi niyette asıl olanın kalpte niyet bulunduğunu, dil ile ayrıca söylemenin şart olmadığını belirtir.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-kurban"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-kurban",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-kurban-vek",
@@ -63813,45 +63894,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-kurban-koyun",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "medium",
-    "question": "Yaygın fıkıh uygulamasında bir koyun kaç kişinin kurbanı olarak kesilebilir?",
+    "question": "Hanefî uygulamasında bir koyun kaç kişinin ayrı kurban hissesi olarak kesilir?",
     "options": [
       {
-        "id": "o1",
-        "text": "On"
+        "id": "o4",
+        "text": "Yedi"
       },
       {
         "id": "o2",
         "text": "Bir"
       },
       {
-        "id": "o3",
+        "id": "o1",
         "text": "İki"
       },
       {
-        "id": "o4",
-        "text": "Yedi"
+        "id": "o3",
+        "text": "Üç"
       }
     ],
     "correctOptionId": "o2",
     "explanation": "TDV Kurban maddesine göre koyun ve keçi bir kişinin kurbanı olabilir; büyükbaş hayvanlardaki ortaklık şartları farklıdır.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kurban",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kurban",
-        "locator": "Koyun ve keçi için bir kişi",
+        "locator": "261–267. satırlar",
         "supports": "TDV Kurban maddesine göre koyun ve keçi bir kişinin kurbanı olabilir; büyükbaş hayvanlardaki ortaklık şartları farklıdır.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-kurban"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-kurban",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-kurban-buyuk",
@@ -63897,45 +63979,46 @@ export const questionsV73Candidate: readonly Question[] = [
   },
   {
     "id": "q71-kurban-tur",
-    "version": 1,
+    "version": 2,
     "categoryId": "general",
     "difficulty": "easy",
     "question": "Aşağıdaki hayvanlardan hangisi dinen kurbanlık olarak kabul edilen türler arasındadır?",
     "options": [
       {
-        "id": "o1",
-        "text": "Tavuk"
-      },
-      {
-        "id": "o2",
-        "text": "Kaz"
-      },
-      {
         "id": "o3",
-        "text": "Ceylan"
+        "text": "Tavuk"
       },
       {
         "id": "o4",
         "text": "Keçi"
+      },
+      {
+        "id": "o1",
+        "text": "At"
+      },
+      {
+        "id": "o2",
+        "text": "Ceylan"
       }
     ],
     "correctOptionId": "o4",
     "explanation": "TDV Kurban maddesi kurbanlık hayvanları koyun, keçi, sığır, manda ve deve olarak sıralar; tavuk ve kaz bu kapsama girmez.",
     "sources": [
       {
-        "title": "TDV İslâm Ansiklopedisi — kurban",
-        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
         "url": "https://islamansiklopedisi.org.tr/kurban",
-        "locator": "Kurbanlık hayvan türleri",
+        "locator": "264–267. satırlar",
         "supports": "TDV Kurban maddesi kurbanlık hayvanları koyun, keçi, sığır, manda ve deve olarak sıralar; tavuk ve kaz bu kapsama girmez.",
         "checkStatus": "supported",
-        "checkedAt": "2026-10-21"
+        "checkedAt": "2026-10-30"
       }
     ],
-    "reviewStatus": "approved",
-    "reviewNotes": "21.10.2026: TDV kaynak metni ve ilgili dinî birincil belgeyle karşılaştırıldı; bağımsız uzman incelemesi değildir.",
-    "updatedAt": "2026-10-21",
-    "conceptGroup": "v71-tdv-kurban"
+    "reviewStatus": "draft",
+    "reviewNotes": "v73 editoryal aday. Codex kaynak karşılaştırması yapıldı; bağımsız insan editör/uzman ve ürün sahibi yayın onayı değildir.",
+    "updatedAt": "2026-10-30",
+    "conceptGroup": "v71-tdv-kurban",
+    "reviewedAt": undefined
   },
   {
     "id": "q71-kurban-cins",

@@ -3,12 +3,12 @@
   "start": 1401,
   "end": 1450,
   "total": 50,
-  "individuallyReviewed": 0,
-  "pendingReview": 50,
-  "sourceComparedThisRound": 0,
+  "individuallyReviewed": 50,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 1,
-  "flaggedAfter": 1,
+  "flaggedAfter": 4,
   "records": [
     {
       "sequence": 1401,
@@ -56,20 +56,20 @@
         "question": "Zeyd b. Sâbit, Hz. Peygamber'in yazışmalarına yardımcı olmak için hangi yazıyı öğrenmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Çince"
+            "id": "o3",
+            "text": "Kıptîce veya Habeşçe"
+          },
+          {
+            "id": "o4",
+            "text": "Arapça veya Nabatîce"
           },
           {
             "id": "o2",
             "text": "İbrânîce veya Süryânîce"
           },
           {
-            "id": "o3",
-            "text": "Japonca"
-          },
-          {
-            "id": "o4",
-            "text": "Latince"
+            "id": "o1",
+            "text": "Farsça veya Rumca"
           }
         ],
         "correctOptionId": "o2",
@@ -77,20 +77,46 @@
         "explanation": "TDV, Hz. Peygamber'in isteği üzerine Zeyd'in İbrânîce veya Süryânîce yazmayı kısa sürede öğrendiğini bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Yazışmalarda İbrânîce veya Süryânîce",
+            "locator": "103–104. satırlar",
             "supports": "TDV, Hz. Peygamber'in isteği üzerine Zeyd'in İbrânîce veya Süryânîce yazmayı kısa sürede öğrendiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-dil",
+        "reviewedCandidateSha256": "48ea34f7687af26b0173ade9cbd46a6ca50d7039f87564f5b7e7f9c1b10826de",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Çince/Japonca gibi uzak yazılara karşı tek bölgesel yazı giderildi. Dört bölgesel çift; Fars/Rum/Kıptî/Habeşçe de bildiği aktarılır fakat belirli Peygamber talebinin hedefi İbrânî/Süryânîdir.",
+        "optionReview": {
+          "o3": "104’te bildiği rivayet edilen başka diller.",
+          "o4": "Başka bölgesel yazı çifti.",
+          "o2": "103’ün özel yazı talebi.",
+          "o1": "104’te bildiği rivayet edilen başka diller."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "103–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -141,40 +167,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Yaşı küçük olduğu için"
+            "text": "Yaşının küçük olması"
           },
           {
             "id": "o2",
-            "text": "Seyahatte olduğu için"
+            "text": "Bedeninin hasta olması"
           },
           {
             "id": "o3",
-            "text": "Hastanede çalıştığı için"
+            "text": "Gözlerinin zayıf olması"
           },
           {
             "id": "o4",
-            "text": "Şehir dışında ticaret yaptığı için"
+            "text": "Ayağının yaralı olması"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Yaşı küçük olduğu için",
+        "correctAnswer": "Yaşının küçük olması",
         "explanation": "Zeyd'in yaşı küçük olduğu için Uhud'a katılmasına izin verilmedi; şehirde kalanları korumakla görevlendirildi.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Uhud’a katılamaması",
+            "locator": "104–105. satırlar",
             "supports": "Zeyd'in yaşı küçük olduğu için Uhud'a katılmasına izin verilmedi; şehirde kalanları korumakla görevlendirildi.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-uhud",
+        "reviewedCandidateSha256": "3c85056d2f37c0f7197856a577cca87058710bdf9fca3533b001473d5e1a075f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hastanede çalışma/ticaret gibi zayıf ve anakronik gerekçe yerine dört fiziksel uygunluk sebebi. 104’ün yaş engeli belirli; diğerleri olmuş diye söylenmiyor.",
+        "optionReview": {
+          "o1": "104’ün küçük yaş gerekçesi.",
+          "o2": "Başka fiziksel engel.",
+          "o3": "Başka fiziksel engel.",
+          "o4": "Başka fiziksel engel."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "104–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -225,15 +277,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "Kale duvarlarını boyamak"
+            "text": "Ganimet mallarını kayda geçirmek"
           },
           {
             "id": "o2",
-            "text": "Hazineyi başka şehre taşımak"
+            "text": "Erzak ihtiyacını hesaplamak"
           },
           {
             "id": "o3",
-            "text": "Deniz yolunu haritalamak"
+            "text": "Esirlerin isimlerini yazmak"
           },
           {
             "id": "o4",
@@ -245,20 +297,46 @@
         "explanation": "TDV Zeyd b. Sâbit maddesi, Hayber'in fethi sırasında Zeyd'e müslümanların sayısını tespit etme görevi verildiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Hayber’de askerlerin sayımı",
+            "locator": "104–108. satırlar",
             "supports": "TDV Zeyd b. Sâbit maddesi, Hayber'in fethi sırasında Zeyd'e müslümanların sayısını tespit etme görevi verildiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-hayber",
+        "reviewedCandidateSha256": "883d5d5ff9546db47394c3bfe87c67a600ac98d78e56850c4aaa113b1ef00c04",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Deniz haritası/kale boyama gibi ilgisiz işlere karşı dört sayım/kayıt görevi. Yermük’teki ganimet taksimi Hayber göreviyle karıştırılmaz.",
+        "optionReview": {
+          "o1": "Başka kayıt görevi.",
+          "o2": "Başka sayısal görev.",
+          "o3": "Başka kayıt görevi.",
+          "o4": "105’in Hayber sayımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "104–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -308,20 +386,20 @@
         "question": "Hz. Ebû Bekir döneminde Kur'an'ın bir araya getirilmesi heyetine kim başkanlık etti?",
         "options": [
           {
-            "id": "o1",
-            "text": "İmam Mâlik"
-          },
-          {
-            "id": "o2",
-            "text": "Ali Kuşçu"
-          },
-          {
             "id": "o3",
             "text": "Zeyd b. Sâbit"
           },
           {
+            "id": "o1",
+            "text": "Übey b. Kâ‘b"
+          },
+          {
+            "id": "o2",
+            "text": "Abdullah b. Mes‘ûd"
+          },
+          {
             "id": "o4",
-            "text": "İbn Battûta"
+            "text": "Ebû Mûsâ el-Eş‘arî"
           }
         ],
         "correctOptionId": "o3",
@@ -329,20 +407,46 @@
         "explanation": "Yemâme sonrasındaki Kur'an'ı cem faaliyeti Ebû Bekir'in emriyle Zeyd b. Sâbit başkanlığında yürütüldü.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Ebû Bekir döneminde Kur'an’ın cemi",
+            "locator": "106–111. satırlar",
             "supports": "Yemâme sonrasındaki Kur'an'ı cem faaliyeti Ebû Bekir'in emriyle Zeyd b. Sâbit başkanlığında yürütüldü.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-cem",
+        "reviewedCandidateSha256": "aa41050473245b4c2466576508e2d660cacf5f0205a1fe859825055ef5e375b6",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç sonraki çağ âlimine karşı tek sahâbî kaldırıldı. Dört gerçek Kur’an ilmi sahâbîsi; 106’nın komisyon başkanı bilinmeli.",
+        "optionReview": {
+          "o3": "106’nın heyet başkanı.",
+          "o1": "Başka Kur’an ilmi sahâbîsi.",
+          "o2": "Başka Kur’an ilmi sahâbîsi.",
+          "o4": "Başka Kur’an ilmi sahâbîsi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "106–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -393,19 +497,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "İbn Haldûn"
+            "text": "Übey b. Kâ‘b"
+          },
+          {
+            "id": "o3",
+            "text": "Abdullah b. Mes‘ûd"
+          },
+          {
+            "id": "o4",
+            "text": "Ebû Mûsâ el-Eş‘arî"
           },
           {
             "id": "o2",
             "text": "Zeyd b. Sâbit"
-          },
-          {
-            "id": "o3",
-            "text": "Bilâl-i Habeşî"
-          },
-          {
-            "id": "o4",
-            "text": "Hasan-ı Basrî"
           }
         ],
         "correctOptionId": "o2",
@@ -413,20 +517,46 @@
         "explanation": "TDV'ye göre Zeyd b. Sâbit, Hz. Osman döneminde farklı merkezlere gönderilmek üzere mushafların istinsahını yürüten heyete başkanlık etti.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Osman döneminde istinsah",
+            "locator": "106–109. satırlar",
             "supports": "TDV'ye göre Zeyd b. Sâbit, Hz. Osman döneminde farklı merkezlere gönderilmek üzere mushafların istinsahını yürüten heyete başkanlık etti.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-istinsah",
+        "reviewedCandidateSha256": "926f8c8dd1e7b9d816041200d969c83410263066cc26e6a4cab1db91345784ec",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Farklı çağdaki İbn Haldûn/Hasan-ı Basrî yerine dört Kur’an ilmi sahâbîsi. Başkan 109’da Zeyd; diğerleri komisyonun üyesidir diye yeni iddia üretilmedi.",
+        "optionReview": {
+          "o1": "Başka Kur’an ilmi sahâbîsi.",
+          "o3": "Başka Kur’an ilmi sahâbîsi.",
+          "o4": "Başka Kur’an ilmi sahâbîsi.",
+          "o2": "109’un başkanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "106–109. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -473,23 +603,23 @@
         ]
       },
       "after": {
-        "question": "Hz. Ömer, fıkhî meselelerde hangi sahâbîyi danışmanı olarak görevlendirmişti?",
+        "question": "TDV’ye göre Ömer’in Medine davalarında görüşünü aldığı ve şehirden ayrılınca vekâlet bıraktığı sahâbî kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Zeyd b. Sâbit"
-          },
-          {
             "id": "o2",
-            "text": "İbn Battûta"
+            "text": "Enes b. Mâlik"
           },
           {
             "id": "o3",
-            "text": "Cezerî"
+            "text": "Ebû Hüreyre"
           },
           {
             "id": "o4",
-            "text": "Kâtib Çelebi"
+            "text": "Abdullah b. Amr"
+          },
+          {
+            "id": "o1",
+            "text": "Zeyd b. Sâbit"
           }
         ],
         "correctOptionId": "o1",
@@ -497,20 +627,46 @@
         "explanation": "TDV, Hz. Ömer'in Zeyd b. Sâbit'i danışman tayin ettiğini, Medine davaları ve fıkıh konularında görüşünü aldığını açıklar.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Zeyd b. Sâbit",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
-            "locator": "Ömer döneminde danışmanlığı",
+            "locator": "108–112. satırlar",
             "supports": "TDV, Hz. Ömer'in Zeyd b. Sâbit'i danışman tayin ettiğini, Medine davaları ve fıkıh konularında görüşünü aldığını açıklar.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-zeydbsabit-danisman",
+        "reviewedCandidateSha256": "f82b4069517ff7e7e1592f32a8b2403f02172e63413abf220ab16e0bbdb21785",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç sonraki çağ yazarı yerine dört sahâbî. Ömer’in tek danışmanı varmış gibi genel kök yerine Medine davaları ve vekâleti birlikte belirten bağlam; başka danışmanlar inkâr edilmez.",
+        "optionReview": {
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî.",
+          "o1": "108’in belirli danışman/vekili."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/zeyd-b-sabit",
+          "locator": "108–112. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -557,44 +713,70 @@
         ]
       },
       "after": {
-        "question": "Abdullah b. Abbas, Hz. Peygamber'in hangi akrabasının oğludur?",
+        "question": "Abdullah b. Abbas’ın babası Abbas’ın Hz. Peygamber’e yakınlığı nedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Dayısı Sa'd'ın"
-          },
-          {
             "id": "o2",
-            "text": "Kardeşi Ali'nin"
+            "text": "Dedesi"
           },
           {
             "id": "o3",
-            "text": "Dedesinin kardeşinin"
+            "text": "Ağabeyi"
           },
           {
             "id": "o4",
-            "text": "Amcası Abbas'ın"
+            "text": "Amcası"
+          },
+          {
+            "id": "o1",
+            "text": "Dayısı"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Amcası Abbas'ın",
+        "correctAnswer": "Amcası",
         "explanation": "TDV Abdullah b. Abbas biyografisinde onun Hz. Peygamber'in amcası Abbas b. Abdülmuttalib'in oğlu olduğu belirtilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-            "locator": "Peygamber’in amcasının oğlu",
+            "locator": "95–98. satırlar ve madde tanımı",
             "supports": "TDV Abdullah b. Abbas biyografisinde onun Hz. Peygamber'in amcası Abbas b. Abdülmuttalib'in oğlu olduğu belirtilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-amca",
+        "reviewedCandidateSha256": "792c47c51586004726eee39518283a7d2c306b288d38349ee9dda385bd4eed1f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ali’yi kardeş/Sa‘d’ı dayı ilan eden yanlış bilgi cümleleri kaldırıldı. Dört yalın akrabalık türü; baba adı kökte verilir ama amca bağı bilgi gerektirir.",
+        "optionReview": {
+          "o2": "Başka akrabalık türü.",
+          "o3": "Başka akrabalık türü.",
+          "o4": "Madde tanımının amca bağı.",
+          "o1": "Başka akrabalık türü."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "95–98. satırlar ve madde tanımı",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -677,8 +859,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-anne",
+        "reviewedCandidateSha256": "a28b241e3865dd04753531f95fcfa573e9cad7afb71b0b82247dc4dddd917735",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kadın adı aynı dönemden. 96’nın Ümmü’l-Fazl Lübâbe’si anne; eşi/teyze gibi başka rolü onun yerine koyma yok.",
+        "optionReview": {
+          "o1": "Başka kadın sahâbî.",
+          "o2": "Başka kadın sahâbî.",
+          "o3": "96’nın anne adı.",
+          "o4": "Başka kadın sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -761,8 +967,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-teyze",
+        "reviewedCandidateSha256": "8a8a90f0bf7298c97233e65df69a9154ce0d3aadd1a9d4d3737eca7058ee171b",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Peygamber eşi. 97’de Meymûne teyzeliği açık; bütün diğer isimler de aynı aile çevresi, tek çağdaş veya tek kadın tuzağı yok.",
+        "optionReview": {
+          "o1": "Başka Peygamber eşi.",
+          "o2": "97’nin teyze adı.",
+          "o3": "Başka Peygamber eşi.",
+          "o4": "Başka Peygamber eşi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -813,40 +1043,66 @@
         "options": [
           {
             "id": "o1",
-            "text": "Din ilmi ve Kur'an bilgisi"
+            "text": "Din ilmi ve Kitab’ı anlama"
           },
           {
             "id": "o2",
-            "text": "Denizcilik"
+            "text": "Tıp ilmi ve hastaları iyileştirme"
           },
           {
             "id": "o3",
-            "text": "İnşaat mühendisliği"
+            "text": "Hesap ilmi ve mirası paylaştırma"
           },
           {
             "id": "o4",
-            "text": "Ticaret vergisi"
+            "text": "Şiir bilgisi ve güzel söz söyleme"
           }
         ],
         "correctOptionId": "o1",
-        "correctAnswer": "Din ilmi ve Kur'an bilgisi",
+        "correctAnswer": "Din ilmi ve Kitab’ı anlama",
         "explanation": "TDV İbn Abbas maddesi, Hz. Peygamber'in onun din ilmini öğrenmesi ve Kitab'ı anlaması için dua ettiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-            "locator": "Din ilmi ve Kitap duası",
+            "locator": "96–98 ve 120. satırlar",
             "supports": "TDV İbn Abbas maddesi, Hz. Peygamber'in onun din ilmini öğrenmesi ve Kitab'ı anlaması için dua ettiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-dua",
+        "reviewedCandidateSha256": "79868034e5637f1ae07d31b96019e7f381f314b323376d4fd59b6d233b1f351f",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç teknik meslek karşısında tek dinî bilgi yerine dört gerçek ilim/uygulama çifti. 98’in dinde derinlik ve Kitap duası açık; diğer ilimler değersiz denmez.",
+        "optionReview": {
+          "o1": "98’in duası.",
+          "o2": "Başka ilim dileği.",
+          "o3": "Başka ilim dileği.",
+          "o4": "Başka ilim dileği."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "96–98 ve 120. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -896,20 +1152,20 @@
         "question": "Abdullah b. Abbas, Hz. Osman tarafından 656 yılında hangi göreve tayin edilmiştir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Şam valisi"
-          },
-          {
             "id": "o2",
-            "text": "Mısır kadısı"
+            "text": "Mısır valisi"
           },
           {
             "id": "o3",
-            "text": "Kâbe mimarı"
+            "text": "Şam valisi"
           },
           {
             "id": "o4",
             "text": "Hac emîri"
+          },
+          {
+            "id": "o1",
+            "text": "Medine kadısı"
           }
         ],
         "correctOptionId": "o4",
@@ -917,20 +1173,51 @@
         "explanation": "TDV İbn Abbas biyografisine göre Hz. Osman 656 yılında onu hac emîri tayin etmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-            "locator": "656’da hac emîrliği",
+            "locator": "99–101. satırlar",
             "supports": "TDV İbn Abbas biyografisine göre Hz. Osman 656 yılında onu hac emîri tayin etmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-hac",
+        "reviewedCandidateSha256": "6d3e8e02aa2de3a2013e151ed6a0d1b2420b58f0d9f9e0bbcd57ede68f44c7bd",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kâbe mimarı gibi farklı iş yerine dört kamu görevi. Osman’ın 656’daki hac görevi, Ali döneminin sonraki Basra valiliğinden ayrılır.",
+        "optionReview": {
+          "o2": "Başka idari görev.",
+          "o3": "99’da başka kişinin valiliği.",
+          "o4": "99’un 656 görevi.",
+          "o1": "Başka idari görev."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "99–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -980,20 +1267,20 @@
         "question": "Hz. Ali, Abdullah b. Abbas'ı hangi şehre vali olarak tayin etmiştir?",
         "options": [
           {
-            "id": "o1",
+            "id": "o2",
             "text": "Mekke"
           },
           {
-            "id": "o2",
-            "text": "Bağdat"
+            "id": "o4",
+            "text": "Şam"
           },
           {
             "id": "o3",
             "text": "Basra"
           },
           {
-            "id": "o4",
-            "text": "Şam"
+            "id": "o1",
+            "text": "Kûfe"
           }
         ],
         "correctOptionId": "o3",
@@ -1001,20 +1288,46 @@
         "explanation": "TDV, Hz. Ali'nin hicrî 39 (659) yılında Abdullah b. Abbas'ı Basra valiliğine tayin ettiğini kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-            "locator": "Basra valiliği",
+            "locator": "99–103. satırlar",
             "supports": "TDV, Hz. Ali'nin hicrî 39 (659) yılında Abdullah b. Abbas'ı Basra valiliğine tayin ettiğini kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-basra",
+        "reviewedCandidateSha256": "59ce9c88f41506701607032e866ce99e431c0f25ab37553856b54ff0e668e806",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Henüz kurulmamış Bağdat yerine gerçek çağdaş merkez Kûfe. 101’in Basra görevi belirli; tarihî hazine suçlamalarının tartışması soru içeriğine taşınmadı.",
+        "optionReview": {
+          "o2": "Başka erken merkez.",
+          "o4": "Başka erken merkez.",
+          "o3": "101’in görev şehri.",
+          "o1": "Başka erken merkez."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "99–103. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1064,20 +1377,20 @@
         "question": "TDV'ye göre Abdullah b. Abbas'ın rivayet ettiği hadis sayısı kaçtır?",
         "options": [
           {
-            "id": "o1",
-            "text": "3862"
-          },
-          {
             "id": "o2",
             "text": "1660"
           },
           {
+            "id": "o1",
+            "text": "1760"
+          },
+          {
             "id": "o3",
-            "text": "44"
+            "text": "1560"
           },
           {
             "id": "o4",
-            "text": "99"
+            "text": "1860"
           }
         ],
         "correctOptionId": "o2",
@@ -1085,20 +1398,46 @@
         "explanation": "TDV biyografisi İbn Abbas'ın rivayet ettiği hadisleri 1660 olarak sayar; sayı hadis kaynaklarındaki rivayet derlemelerine dayanmaktadır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Abbas",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
-            "locator": "1660 hadis rivayeti",
+            "locator": "113–115. satırlar",
             "supports": "TDV biyografisi İbn Abbas'ın rivayet ettiği hadisleri 1660 olarak sayar; sayı hadis kaynaklarındaki rivayet derlemelerine dayanmaktadır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbabbas-rivayet",
+        "reviewedCandidateSha256": "bad08f419378c35c9d6582b4e533268e1671c870aef760cf08e682b7341b7e11",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "44/99 ve 3862 gibi farklı ölçekler yerine dört yakın dört haneli sayı. Kaynağın sayımı sorulur; hepsini Peygamber’den doğrudan duyduğu iddia edilmez.",
+        "optionReview": {
+          "o2": "113’ün toplam rivayet sayımı.",
+          "o1": "Başka yakın sayı.",
+          "o3": "Başka yakın sayı.",
+          "o4": "Başka yakın sayı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-abbas",
+          "locator": "113–115. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1181,8 +1520,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-kunye",
+        "reviewedCandidateSha256": "7e42eaaa56961ac8ec9a946af561e60ddb90cfa07fa599a8cb1bac6f160d18b8",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört erkek künye. 96 Ebû Hamza ile alternatif Ebü’n-Nadr rivayetini de verir; yaygın kaydı ve bu alternatifin şıklarda olmaması tek doğruyu korur.",
+        "optionReview": {
+          "o1": "96’nın yaygın künyesi.",
+          "o2": "Başka künye.",
+          "o3": "Başka künye.",
+          "o4": "Başka künye."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1232,41 +1595,67 @@
         "question": "Enes b. Mâlik'e Hz. Peygamber'in hizmeti sebebiyle verilen unvan hangisidir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Hâdimü’n-Nebî"
+          },
+          {
             "id": "o1",
-            "text": "Zünnûn"
+            "text": "Kâtibü’l-vahy"
           },
           {
             "id": "o2",
-            "text": "Zâtü'n-nitâkayn"
+            "text": "Tercümânü’l-Kur’ân"
           },
           {
             "id": "o3",
-            "text": "Zülfikār"
-          },
-          {
-            "id": "o4",
-            "text": "Hâdimü'n-Nebî"
+            "text": "Emînü’l-ümme"
           }
         ],
         "correctOptionId": "o4",
-        "correctAnswer": "Hâdimü'n-Nebî",
+        "correctAnswer": "Hâdimü’n-Nebî",
         "explanation": "Enes b. Mâlik, Hz. Peygamber'e on yıl hizmet etmesi sebebiyle Hâdimü'n-Nebî adıyla anılmıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-            "locator": "Hâdimü’n-Nebî",
+            "locator": "96–99. satırlar",
             "supports": "Enes b. Mâlik, Hz. Peygamber'e on yıl hizmet etmesi sebebiyle Hâdimü'n-Nebî adıyla anılmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-lakap",
+        "reviewedCandidateSha256": "c23347f4f329560a26f01c9174f5260e299a7ea61a5ea2faa430f8b8aa407380",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kılıç adı/zatünnitakayn gibi nesne-cinsiyet bakımından uzak sözler yerine dört sahâbî hizmet/ilim unvanı. 96’nın Enes hizmet unvanı belirli; anlamdan bulmak gerçek unvan bilgisidir.",
+        "optionReview": {
+          "o4": "96’nın hizmet unvanı.",
+          "o1": "Başka hizmet unvanı.",
+          "o2": "Başka ilim unvanı.",
+          "o3": "Başka sahâbî unvanı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1349,8 +1738,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-anne",
+        "reviewedCandidateSha256": "ad09e7d7361efd81519c50358b9ab2e81f80f76566ba4641629836be2aa44470",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kadın sahâbî. 97–98’in Ümmü Süleym’i anne; oğlunu hizmete veren anne/üvey baba rivayet farkı anne kimliğini değiştirmiyor.",
+        "optionReview": {
+          "o1": "Başka kadın sahâbî.",
+          "o2": "Başka kadın sahâbî.",
+          "o3": "97’nin annesi.",
+          "o4": "Başka kadın sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1433,8 +1846,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-teyze",
+        "reviewedCandidateSha256": "8eaa9b66256099915436f5e63867192ac3b991dac5feebc5e1ac32df36c7abe3",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Medineli/erken kadın sahâbî. 97 Ümmü Harâm’ı teyze diye açık listeler; kız kardeşlik ve anne rolleri karışmıyor.",
+        "optionReview": {
+          "o1": "Başka kadın sahâbî.",
+          "o2": "97’nin teyzesi.",
+          "o3": "Başka kadın sahâbî.",
+          "o4": "Başka kadın sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1489,15 +1926,15 @@
           },
           {
             "id": "o2",
-            "text": "İki yıl"
+            "text": "Altı yıl"
           },
           {
             "id": "o3",
-            "text": "Yirmi yıl"
+            "text": "Sekiz yıl"
           },
           {
             "id": "o4",
-            "text": "Otuz yıl"
+            "text": "On iki yıl"
           }
         ],
         "correctOptionId": "o1",
@@ -1505,20 +1942,46 @@
         "explanation": "Enes b. Mâlik Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-            "locator": "On yıllık hizmet",
+            "locator": "96–99. satırlar",
             "supports": "Enes b. Mâlik Hz. Peygamber'in hicretinden vefatına kadar yaklaşık on yıl hizmetinde bulunmuştur.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-yil",
+        "reviewedCandidateSha256": "2a42e02b6d4bc7e948e90dda29975b18d38c1cfb3bdd10403f43ece166ca85e7",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Hicret/vefat aralığının dışında 20/30 yıl gibi imkânsız süreler yerine dört yakın yıl. On yıllık hizmet açık, yaşının on olmasıyla süre birbirinden ayrılır.",
+        "optionReview": {
+          "o1": "98’in hizmet süresi.",
+          "o2": "Başka yakın süre.",
+          "o3": "Başka yakın süre.",
+          "o4": "Başka yakın süre."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1568,20 +2031,20 @@
         "question": "Enes b. Mâlik'in ilim öğreterek yerleştiği önemli Irak şehri hangisidir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kûfe"
-          },
-          {
             "id": "o2",
-            "text": "Bağdat"
+            "text": "Musul"
           },
           {
             "id": "o3",
-            "text": "Musul"
+            "text": "Vâsıt"
           },
           {
             "id": "o4",
             "text": "Basra"
+          },
+          {
+            "id": "o1",
+            "text": "Kûfe"
           }
         ],
         "correctOptionId": "o4",
@@ -1589,20 +2052,46 @@
         "explanation": "TDV Enes biyografisi onun Basra'da namaz kıldırıp hadis ve fıkıh öğrettiğini, hayatının ilerleyen bölümünü orada geçirdiğini bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-            "locator": "Basra’da eğitim",
+            "locator": "100–104. satırlar",
             "supports": "TDV Enes biyografisi onun Basra'da namaz kıldırıp hadis ve fıkıh öğrettiğini, hayatının ilerleyen bölümünü orada geçirdiğini bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-basra",
+        "reviewedCandidateSha256": "88a05cb93e0ee715870d0af135e40eab9c9b557c940a85c8e3c95799dbe231ae",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Basra’daki ilim öğretimi ve yerleşme ile eşleştirildi. Bağdat’ın anakronizminden yararlanarak eleme yerine dört Irak şehri karşılaştırılıyor; Vâsıt’ın kuruluş tarihi hakkında ayrıca bir doğrulama iddia edilmez.",
+        "optionReview": {
+          "o2": "Başka Irak şehri.",
+          "o3": "Başka Irak şehri.",
+          "o4": "100’ün yerleşme şehri.",
+          "o1": "Başka Irak şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Enes’in Medine’deki hizmeti ile Irak’taki eğitim/yerleşmesi ayrı bağlamlardır; aynı kişinin şehirlerini karıştırarak tek tarih sorusu tekrarlanmıyor.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "100–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1649,44 +2138,70 @@
         ]
       },
       "after": {
-        "question": "Enes b. Mâlik'in Hz. Peygamber ile katıldığı son büyük hac hangisidir?",
+        "question": "Enes b. Mâlik’in Peygamber ile katıldığı ve 10. hicrî yılda yapılan büyük yolculuk hangi türdedir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Hicret yolculuğu"
-          },
-          {
             "id": "o2",
-            "text": "İlk Akabe Biatı"
-          },
-          {
-            "id": "o3",
-            "text": "Vedâ haccı"
+            "text": "Gazve"
           },
           {
             "id": "o4",
-            "text": "Umretü'l-kazâ"
+            "text": "Seriyye"
+          },
+          {
+            "id": "o3",
+            "text": "Hac"
+          },
+          {
+            "id": "o1",
+            "text": "Umre"
           }
         ],
         "correctOptionId": "o3",
-        "correctAnswer": "Vedâ haccı",
+        "correctAnswer": "Hac",
         "explanation": "TDV Enes b. Mâlik maddesi Enes'in Vedâ haccında Hz. Peygamber'le birlikte bulunduğunu kaydeder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Enes b. Mâlik",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
-            "locator": "Vedâ haccına katılması",
+            "locator": "99. satır; Vedâ Hutbesi 98",
             "supports": "TDV Enes b. Mâlik maddesi Enes'in Vedâ haccında Hz. Peygamber'le birlikte bulunduğunu kaydeder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-enesbmalik-veda",
+        "reviewedCandidateSha256": "451b00959b31052853892b7480499321e239899a3c26fa7bd57c37584b702c9a",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kök hac deyip tek hac adını seçtiren eski yapı kaldırıldı. Dört dinî yolculuk türünden Vedâ haccının türü sorulur; yıl bilgisi Vedâ Hutbesi 98’le karşılaştırıldı.",
+        "optionReview": {
+          "o2": "Aynı listede başka askerî seferler.",
+          "o4": "Farklı askerî birlik seferi.",
+          "o3": "99’un Vedâ haccı.",
+          "o1": "Aynı listede başka yılın umresi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Kütüb-i Sitte’nin eser adları ve farklı altılı tertipleri önceki sorularla karşılaştırıldı; genel ad birden fazla doğru doğuruyorsa yazar/yer/tertip belirli. Cem ve istinsah aynı başkanın farklı dönem görevleridir. Hadisçi tarihleri doğrudan biyografiyle karşılaştırıldı. Nihai banka çapı tekrar/zorluk ve uzman onayı bekler; mevcut ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/enes-b-malik",
+          "locator": "99. satır; Vedâ Hutbesi 98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "d86bef89bd95c7fbf29c37b03bf56472161b82c1dd21795a222aa30812665cc5"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1769,8 +2284,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-anne",
+        "reviewedCandidateSha256": "e5d6687e351651e7db3cd548c06692c76b3cc066654c5165159c87f7c02d38d3",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört kadın adı. 102 Hamâme annesini açık tanıtır; onun müslümanlık baskısı açıklamada var, gerçek kişi hakkında yeni bilgi uydurulmuyor.",
+        "optionReview": {
+          "o1": "Başka kadın sahâbî.",
+          "o2": "102’nin annesi.",
+          "o3": "Başka kadın sahâbî.",
+          "o4": "Başka kadın sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "102–104. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1853,8 +2392,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-vasita",
+        "reviewedCandidateSha256": "007ed76bf651906a12cf038083e6ea29dce20c80342165690fd69d7762e330ff",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört erken sahâbî. 102 Ebû Bekir vasıtasını açık verir; sonraki âzat işlemiyle iki farklı olay aynı kaynakta ayrı.",
+        "optionReview": {
+          "o1": "102’nin vasıtası.",
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "102–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -1937,8 +2500,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-azat",
+        "reviewedCandidateSha256": "a7667c9c8dbb4a94334b64ec5cc4906be441ddff6d5808c0a74d76ebeebd619a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî. 104’te takas veya para rivayetleri farklı olsa da âzat eden Ebû Bekir; ödeme biçimi kesinleştirilmez.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "104’ün âzat edeni."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "103–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2021,8 +2608,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-kardes",
+        "reviewedCandidateSha256": "46ed8d3f14811011a1d79a508fd53aa26d468ad2969bec1c92396168fc784cbf",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî. 105 Mekke’de Ubeyde, Medine’de Ebû Ruveyha ayrımı verir; kök hicret sonrası Medine’yi belirliyor.",
+        "optionReview": {
+          "o1": "Başka sahâbî.",
+          "o2": "Başka sahâbî.",
+          "o3": "105’in Medine kardeşi.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "105. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2072,20 +2683,20 @@
         "question": "Bilâl-i Habeşî'nin sabah ezanına eklediği özel ifade hangi anlama gelir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Vakit bitmiştir"
+            "id": "o4",
+            "text": "Allah en büyüktür"
           },
           {
             "id": "o2",
             "text": "Namaz uykudan hayırlıdır"
           },
           {
-            "id": "o3",
-            "text": "Oruç kalkmıştır"
+            "id": "o1",
+            "text": "Namaza ve kurtuluşa yönelin"
           },
           {
-            "id": "o4",
-            "text": "Ticaret başlamıştır"
+            "id": "o3",
+            "text": "Allah’tan başka ilâh yoktur"
           }
         ],
         "correctOptionId": "o2",
@@ -2093,20 +2704,46 @@
         "explanation": "TDV maddesi Bilâl'in sabah ezanına 'es-Salâtü hayrün mine'n-nevm' ibaresini eklediğini ve bu uygulamanın kabul edildiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Bilâl-i Habeşî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
-            "locator": "Sabah ezanındaki ibare",
+            "locator": "106–107. satırlar",
             "supports": "TDV maddesi Bilâl'in sabah ezanına 'es-Salâtü hayrün mine'n-nevm' ibaresini eklediğini ve bu uygulamanın kabul edildiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-sabah",
+        "reviewedCandidateSha256": "794f2000e84512f921295e5f897a49e266418ee73f08dde7289bb4f19faa18d3",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Vakit/alışveriş/oruç gibi üç ezan dışı bildiri yerine dört gerçek ezan ifadesinin anlamı. Sabahın özel cümlesi diğerlerinden ayırt edilmeli.",
+        "optionReview": {
+          "o4": "Başka ezan cümlesi.",
+          "o2": "106’nın sabah eklemesi.",
+          "o1": "Başka ezan çağrısı.",
+          "o3": "Başka ezan cümlesi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "106–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2189,8 +2826,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-kabe",
+        "reviewedCandidateSha256": "a908289460469b4fb53662acc0d5df3c1a52e4d6eec4725eaa206851a3597f97",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî. 107 fetihte Kâbe damından Bilâl ezanı açık; ilk ezanı hangi yıl okuduğuna dair 1/2 yıl farkı bu görevi etkilemiyor.",
+        "optionReview": {
+          "o1": "107’nin ezanı okuyanı.",
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "106–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2240,20 +2901,20 @@
         "question": "Bilâl-i Habeşî Hz. Peygamber'in vefatından sonra hangi bölgedeki fetihlere katılmıştır?",
         "options": [
           {
+            "id": "o4",
+            "text": "Suriye"
+          },
+          {
             "id": "o1",
-            "text": "Endülüs"
+            "text": "Irak"
           },
           {
             "id": "o2",
-            "text": "Hindistan"
+            "text": "Mısır"
           },
           {
             "id": "o3",
-            "text": "Orta Asya"
-          },
-          {
-            "id": "o4",
-            "text": "Suriye"
+            "text": "İran"
           }
         ],
         "correctOptionId": "o4",
@@ -2261,20 +2922,46 @@
         "explanation": "TDV Bilâl biyografisinde onun Hz. Ömer devrinde Suriye'deki fetihlere katıldığı ifade edilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Bilâl-i Habeşî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
-            "locator": "Suriye seferleri",
+            "locator": "108–111. satırlar",
             "supports": "TDV Bilâl biyografisinde onun Hz. Ömer devrinde Suriye'deki fetihlere katıldığı ifade edilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-bilalihabesi-suriye",
+        "reviewedCandidateSha256": "606d97270238b5eb52dcb4f7d878ca9c56634bb8317e4b706389bed51203b697",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Bilâl’in hayatından sonraki Endülüs ve uzak Hindistan/Orta Asya yerine dört erken fetih bölgesi. Ömer devrinde Suriye’ye gitme özel bilgi.",
+        "optionReview": {
+          "o4": "110’un fetih bölgesi.",
+          "o1": "Başka erken bölge.",
+          "o2": "Başka erken bölge.",
+          "o3": "Başka erken bölge."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/bilal-i-habesi",
+          "locator": "108–111. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2367,8 +3054,32 @@
           "detail": "Üç yanlış aynı sözcükle başlıyor, doğru cevap farklı; yalnız biçimsel uyarı"
         }
       ],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-ebueyyubelensari-kabile",
+        "reviewedCandidateSha256": "c835667ab7f0caafb20a5785967b7095626b7631984ffeee1d69fc6c6ca92db1",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek Arap kabile/kol adı. Hangi kolun Hazrec’e bağlı olduğunu bilmek gerçek soy/kabile bilgisidir; doğru yalnız olumlu kelime değil. 96 Neccâr kolunu açık söyler.",
+        "optionReview": {
+          "o1": "Başka kabile.",
+          "o2": "Başka kabile kolu.",
+          "o3": "96’nın Neccâr kolu.",
+          "o4": "Başka kabile kolu."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "96. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2415,44 +3126,70 @@
         ]
       },
       "after": {
-        "question": "Ebû Eyyûb el-Ensârî hangi Akabe biatına katılmıştır?",
+        "question": "Ebû Eyyûb el-Ensârî’nin katıldığı İkinci Akabe Biatı hangi milâdî yılda yapıldı?",
         "options": [
           {
-            "id": "o1",
-            "text": "Akabe biatlarının hiçbirine"
+            "id": "o2",
+            "text": "622"
           },
           {
-            "id": "o2",
-            "text": "İkinci Akabe Biatı"
+            "id": "o1",
+            "text": "620"
           },
           {
             "id": "o3",
-            "text": "Birinci Akabe Biatı"
+            "text": "621"
           },
           {
             "id": "o4",
-            "text": "Üçüncü Akabe Biatı"
+            "text": "623"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "İkinci Akabe Biatı",
-        "explanation": "TDV maddesi Ebû Eyyûb'un nübüvvetin on üçüncü yılındaki İkinci Akabe Biatı'na katıldığını belirtir.",
+        "correctAnswer": "622",
+        "explanation": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Ebû Eyyûb el-Ensârî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-            "locator": "İkinci Akabe Biatı",
-            "supports": "TDV maddesi Ebû Eyyûb'un nübüvvetin on üçüncü yılındaki İkinci Akabe Biatı'na katıldığını belirtir.",
+            "locator": "96. satır",
+            "supports": "TDV Ebû Eyyûb el-Ensârî biyografisi onun nübüvvetin on üçüncü yılında, milâdî 622’de yapılan İkinci Akabe Biatı’nda bulunduğunu belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-ebueyyubelensari-akabe",
+        "reviewedCandidateSha256": "7e7a97adae40f89e83929e0e8f34e7f498c2de316b6d785d2a74cfb9c36f9615",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Olmayan üçüncü Akabe ve hiçbiri seçenekleri yerine dört yakın yıl. Kök katıldığı biatı belirtiyor ama doğru yıl ayrıca bilinmeli; mevcut tarihi değiştirme değil doğrulanmış yıl hedefi.",
+        "optionReview": {
+          "o2": "96’nın açık 622 yılı.",
+          "o1": "Başka yakın yıl.",
+          "o3": "Birinci biat yılı.",
+          "o4": "Başka yakın yıl."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "96. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2535,8 +3272,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-ebueyyubelensari-muahat",
+        "reviewedCandidateSha256": "4acf7f10800475c1a6ae5b7881da08ec980ac0d94b57087430930029420da37a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî. 96’nın Mus‘ab ile muâhât kaydı belirli; Ebû Hüreyre gibi başka sosyal bağlar otomatik aynı kardeşlik değil.",
+        "optionReview": {
+          "o1": "96’nın muâhât kardeşi.",
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2586,20 +3347,20 @@
         "question": "Ebû Eyyûb el-Ensârî Hz. Osman devrinde hangi deniz seferine katılmıştır?",
         "options": [
           {
-            "id": "o1",
-            "text": "Sicilya"
+            "id": "o2",
+            "text": "Girit"
           },
           {
-            "id": "o2",
-            "text": "İspanya"
+            "id": "o4",
+            "text": "Sicilya"
           },
           {
             "id": "o3",
             "text": "Kıbrıs"
           },
           {
-            "id": "o4",
-            "text": "İtalya"
+            "id": "o1",
+            "text": "Rodos"
           }
         ],
         "correctOptionId": "o3",
@@ -2607,20 +3368,46 @@
         "explanation": "TDV Ebû Eyyûb maddesi onun hicrî 28 yılında düzenlenen Kıbrıs seferinde bulunduğunu aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Ebû Eyyûb el-Ensârî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-            "locator": "Kıbrıs seferi",
+            "locator": "98. satır",
             "supports": "TDV Ebû Eyyûb maddesi onun hicrî 28 yılında düzenlenen Kıbrıs seferinde bulunduğunu aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-ebueyyubelensari-kibris",
+        "reviewedCandidateSha256": "2121449e493016cce66c4e6a5f709642eb0c974e9d2df0076847bf0bcc3a0cc3",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Ada ve bütün ülke adlarını karıştıran yapı yerine dört Akdeniz adası. 28/648–49’daki Kıbrıs seferi özel; daha sonraki fetihler onun yaşamına taşınmaz.",
+        "optionReview": {
+          "o2": "Başka Akdeniz adası.",
+          "o4": "Başka Akdeniz adası.",
+          "o3": "98’in deniz seferi adası.",
+          "o1": "Başka Akdeniz adası."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "98. satır",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2670,20 +3457,20 @@
         "question": "Ebû Eyyûb el-Ensârî'nin son katıldığı askerî sefer hangi şehre yöneliktir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Kudüs"
+            "id": "o3",
+            "text": "İskenderiye"
+          },
+          {
+            "id": "o4",
+            "text": "Şam"
           },
           {
             "id": "o2",
             "text": "İstanbul"
           },
           {
-            "id": "o3",
-            "text": "Mekke"
-          },
-          {
-            "id": "o4",
-            "text": "Kahire"
+            "id": "o1",
+            "text": "Antakya"
           }
         ],
         "correctOptionId": "o2",
@@ -2691,20 +3478,51 @@
         "explanation": "TDV, Ebû Eyyûb el-Ensârî'nin yaşlılık döneminde İstanbul kuşatmasına katıldığını ve kuşatma sırasında vefat ettiğini belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Ebû Eyyûb el-Ensârî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
-            "locator": "Son İstanbul seferi",
+            "locator": "100–101. satırlar",
             "supports": "TDV, Ebû Eyyûb el-Ensârî'nin yaşlılık döneminde İstanbul kuşatmasına katıldığını ve kuşatma sırasında vefat ettiğini belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "length-outlier",
+          "detail": "Tek belirgin uzun/kısa seçenek"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-ebueyyubelensari-istanbul",
+        "reviewedCandidateSha256": "17fafdff28edc77fc9f30b140313a9aed977ca98cc60c112d616436bde9e7e5d",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Henüz kurulmamış Kahire ve çok daha önce fethedilen Mekke yerine dört Bizans/erken fetih şehri. Son kuşatma İstanbul; ölüm yılı rivayet farkı bu şehir hedefini etkilemez.",
+        "optionReview": {
+          "o3": "Başka fetih şehri.",
+          "o4": "Başka fetih şehri.",
+          "o2": "100’ün son kuşatması.",
+          "o1": "Başka fetih şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-eyyub-el-ensari",
+          "locator": "100–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2751,15 +3569,11 @@
         ]
       },
       "after": {
-        "question": "Selmân-ı Fârisî İslâm'ı kabul etmeden önce hangi dinin mensubuydu?",
+        "question": "Selmân-ı Fârisî’nin İran’daki ilk aile ortamında bağlı bulunduğu din hangisiydi?",
         "options": [
           {
-            "id": "o1",
-            "text": "Mecûsîlik"
-          },
-          {
             "id": "o2",
-            "text": "Budizm"
+            "text": "Hıristiyanlık"
           },
           {
             "id": "o3",
@@ -2767,28 +3581,58 @@
           },
           {
             "id": "o4",
-            "text": "Putperest Kureyş dini"
+            "text": "Sâbiîlik"
+          },
+          {
+            "id": "o1",
+            "text": "Mecûsîlik"
           }
         ],
         "correctOptionId": "o1",
         "correctAnswer": "Mecûsîlik",
-        "explanation": "TDV Selmân biyografisi, İran'daki ailesinin Mecûsîliğe bağlı olduğunu, daha sonra Selmân'ın Hıristiyanlığı benimsediğini anlatır.",
+        "explanation": "TDV Selmân-ı Fârisî biyografisinde ilk ailesinin Mecûsî olduğu ve kendisinin ateşkedede görev yaptığı anlatılır. Selmân daha sonra Hıristiyanlığı benimsemiş, arayışının sonunda İslâm’ı kabul etmiştir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-            "locator": "Mecûsî aile ve sonraki arayış",
-            "supports": "TDV Selmân biyografisi, İran'daki ailesinin Mecûsîliğe bağlı olduğunu, daha sonra Selmân'ın Hıristiyanlığı benimsediğini anlatır.",
+            "locator": "96–100. satırlar",
+            "supports": "TDV Selmân-ı Fârisî biyografisinde ilk ailesinin Mecûsî olduğu ve kendisinin ateşkedede görev yaptığı anlatılır. Selmân daha sonra Hıristiyanlığı benimsemiş, arayışının sonunda İslâm’ı kabul etmiştir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-selmanifarisi-asli",
+        "reviewedCandidateSha256": "a24d70606b9818e93d1a7d8bf9fea1a0e46125bd0aa95ffda07d10037b1872b2",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "İslâm öncesinde genel kökü hem Mecûsî hem Hıristiyan evrelerini kapsıyordu; kök ilk aile ortamına daraltıldı. Dört yakın dinî gelenek; Hıristiyanlık sonraki arayış evresi olarak açıklamada açık.",
+        "optionReview": {
+          "o2": "98’in sonraki arayış evresi.",
+          "o3": "Medine’de efendisinin dini, ilk aile dini değil.",
+          "o4": "Başka bölgesel dinî gelenek.",
+          "o1": "96’nın ilk aile ve ateşkede dini."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
+          "locator": "96–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2838,20 +3682,20 @@
         "question": "Selmân-ı Fârisî'nin doğduğu yer TDV'de neresi olarak belirtilir?",
         "options": [
           {
+            "id": "o4",
+            "text": "Râmhürmüz"
+          },
+          {
             "id": "o1",
-            "text": "Basra"
+            "text": "İsfahan"
           },
           {
             "id": "o2",
-            "text": "Kurtuba"
+            "text": "Nîşâbur"
           },
           {
             "id": "o3",
-            "text": "Buhara"
-          },
-          {
-            "id": "o4",
-            "text": "Râmhürmüz"
+            "text": "Hemedan"
           }
         ],
         "correctOptionId": "o4",
@@ -2859,20 +3703,46 @@
         "explanation": "TDV Selmân maddesi doğduğu yeri Râmhürmüz olarak kaydeder; çocukluğunda ailesiyle başka bir yerleşime taşınmıştır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-            "locator": "Râmhürmüz doğumu",
+            "locator": "96–98. satırlar",
             "supports": "TDV Selmân maddesi doğduğu yeri Râmhürmüz olarak kaydeder; çocukluğunda ailesiyle başka bir yerleşime taşınmıştır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-selmanifarisi-sehir",
+        "reviewedCandidateSha256": "4b03f3fb7353a6cdc6e5b1bd8147b298f0b32dd59dd1397677f3af25282ac345",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kurtuba/Buhara/Basra gibi farklı bölge/çağlar yerine dört İran bölgesi şehri. Doğum Râmhürmüz, sonraki çocukluk Ceyy; ikisi aynı olay değil.",
+        "optionReview": {
+          "o4": "96’nın doğum yeri.",
+          "o1": "Sonraki yerleşme bölgesiyle ilişkilidir.",
+          "o2": "Başka İran bölgesi şehri.",
+          "o3": "Başka İran bölgesi şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
+          "locator": "96–98. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -2955,8 +3825,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-selmanifarisi-seyahat",
+        "reviewedCandidateSha256": "044fe1b4b683282e6eba0fa4fb3bb9051e9df27e245703c253afd922c1d3afde",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Anadolu şehri. 98’in Dımaşk/Musul/Nusaybin ardından Ammûriye’si açık, eski Amorion adı ayrı yanlış şık yapılmıyor.",
+        "optionReview": {
+          "o1": "Başka Anadolu şehri.",
+          "o2": "Başka Anadolu şehri.",
+          "o3": "98’in arayış şehri.",
+          "o4": "Başka Anadolu şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
+          "locator": "98–100. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3007,19 +3901,19 @@
         "options": [
           {
             "id": "o1",
+            "text": "İki yüz"
+          },
+          {
+            "id": "o3",
+            "text": "Dört yüz"
+          },
+          {
+            "id": "o4",
             "text": "Beş yüz"
           },
           {
             "id": "o2",
             "text": "Üç yüz"
-          },
-          {
-            "id": "o3",
-            "text": "Otuz"
-          },
-          {
-            "id": "o4",
-            "text": "Elli"
           }
         ],
         "correctOptionId": "o2",
@@ -3027,20 +3921,46 @@
         "explanation": "TDV Selmân biyografisi özgürlüğü için üç yüz hurma fidanı dikme şartından ve ayrıca bir ödemenin yapılmasından söz eder.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-            "locator": "Mükâtebe ve 300 hurma fidanı",
+            "locator": "100–101. satırlar",
             "supports": "TDV Selmân biyografisi özgürlüğü için üç yüz hurma fidanı dikme şartından ve ayrıca bir ödemenin yapılmasından söz eder.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-selmanifarisi-mukatebe",
+        "reviewedCandidateSha256": "93cf01d95786d9d1975521c3de3a898cef8bf35c1ccb75fd71afd5fa03cedb59",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "30/50 gibi farklı ölçek yerine dört yüzlük fidan sayısı. 40 ukıyye ödemeyle fidan adedi birbirine karıştırılmaz.",
+        "optionReview": {
+          "o1": "Başka yakın adet.",
+          "o3": "Başka yakın adet.",
+          "o4": "Başka yakın adet.",
+          "o2": "101’in fidan adedi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
+          "locator": "100–101. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3123,8 +4043,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-selmanifarisi-kardes",
+        "reviewedCandidateSha256": "8782ca7ca175cbff52e3e40fdd0ce751ac6fff667450c2e23c211c2c9514e92c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört sahâbî. 101’in Ebü’d-Derdâ kardeşliği açık; başka muâhât sorularıyla ortak tema olsa da kişi çifti farklı.",
+        "optionReview": {
+          "o1": "101’in muâhât kardeşi.",
+          "o2": "Başka sahâbî.",
+          "o3": "Başka sahâbî.",
+          "o4": "Başka sahâbî."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
+          "locator": "100–102. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3175,15 +4119,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "Mekke"
+            "text": "Kûfe"
           },
           {
             "id": "o2",
-            "text": "Medine"
+            "text": "Basra"
           },
           {
             "id": "o3",
-            "text": "İstanbul"
+            "text": "Şam"
           },
           {
             "id": "o4",
@@ -3195,20 +4139,46 @@
         "explanation": "TDV Selmân maddesi Hz. Ömer'in Selmân-ı Fârisî'yi Medâin valisi olarak görevlendirdiğini aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Selmân-ı Fârisî",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
-            "locator": "Medâin valiliği",
+            "locator": "103–105. satırlar",
             "supports": "TDV Selmân maddesi Hz. Ömer'in Selmân-ı Fârisî'yi Medâin valisi olarak görevlendirdiğini aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-selmanifarisi-vali",
+        "reviewedCandidateSha256": "f81118e60c6f998c9f66cedcea2469919b800b1838b61f2b416c496ffba47972",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Yaşamında fethedilmemiş İstanbul yerine dört gerçek erken yönetim merkezi. Kûfe kuruluşuna katkısı valilik değildir; kaynak Medâin tayinini açık ayırır.",
+        "optionReview": {
+          "o1": "105’te kuruluşuna katkı yaptığı başka şehir.",
+          "o2": "Başka erken merkez.",
+          "o3": "Başka erken merkez.",
+          "o4": "105’in valilik şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/selman-i-farisi",
+          "locator": "103–105. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3291,8 +4261,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbomerbhattab-hafsa",
+        "reviewedCandidateSha256": "f0b187ed5baa0f150d0d9b4047a56a50d5f47de0237222fbadfe63600aab247c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört Peygamber eşi. 96 Hafsa ile ana-baba bir kardeşliği açık; örnek aile bilgisi gerçek ve tekli.",
+        "optionReview": {
+          "o1": "Başka Peygamber eşi.",
+          "o2": "Başka Peygamber eşi.",
+          "o3": "96’nın kız kardeşi.",
+          "o4": "Başka Peygamber eşi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
+          "locator": "96–97. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3375,8 +4369,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbomerbhattab-uhud",
+        "reviewedCandidateSha256": "5d08263248ffff8cfb0de9ccfbc8f2983b3f07e7c24c871a4c4539b859ad468c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek gazve. 96’nın Uhud ve 13 yaşı esas; Bedir’e de yaşından kabul edilmediği rivayeti var ama 13 yaş kaydı bu soruyu Uhud’a sınırlar.",
+        "optionReview": {
+          "o1": "Başka gazve.",
+          "o2": "96’nın 13 yaşındaki talebi.",
+          "o3": "97’nin sonraki katılımı.",
+          "o4": "97’nin sonraki katılımı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
+          "locator": "96–97. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3423,7 +4441,7 @@
         ]
       },
       "after": {
-        "question": "Abdullah b. Ömer kaç yaşında Hendek Gazvesi'ne katılmıştır?",
+        "question": "TDV’ye göre Abdullah b. Ömer Hendek Gazvesi’ne kaç yaşında katılmıştır?",
         "options": [
           {
             "id": "o1",
@@ -3431,15 +4449,15 @@
           },
           {
             "id": "o2",
-            "text": "On"
+            "text": "On üç"
           },
           {
             "id": "o3",
-            "text": "Yirmi"
+            "text": "On yedi"
           },
           {
             "id": "o4",
-            "text": "Otuz"
+            "text": "On dokuz"
           }
         ],
         "correctOptionId": "o1",
@@ -3447,20 +4465,46 @@
         "explanation": "TDV Abdullah b. Ömer biyografisi onun on beş yaşında Hz. Peygamber'in izniyle Hendek Gazvesi'ne katıldığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Ömer",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
-            "locator": "Hendek’e katılma yaşı",
+            "locator": "96–97. satırlar",
             "supports": "TDV Abdullah b. Ömer biyografisi onun on beş yaşında Hz. Peygamber'in izniyle Hendek Gazvesi'ne katıldığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbomerbhattab-hendek",
+        "reviewedCandidateSha256": "b4479dbbc1a24b2e7c31708ad93ffe7ffe8b88daf65fb0bf9be5b043b6acce42",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "10/20/30 gibi uzak ve yaş engelini anlamsızlaştıran sayılar yerine dört yakın tek yaş. 13’te Uhud’a izin verilmemesiyle 15’te Hendek izni kaynakta ayrıdır; başka kronoloji rivayetleri tek kesinlik diye sunulmaz.",
+        "optionReview": {
+          "o1": "97’nin Hendek yaşı.",
+          "o2": "96’nın Uhud yaşı.",
+          "o3": "Başka yakın yaş.",
+          "o4": "Başka yakın yaş."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
+          "locator": "96–97. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3511,15 +4555,15 @@
         "options": [
           {
             "id": "o1",
-            "text": "1660"
+            "text": "2530"
           },
           {
             "id": "o2",
-            "text": "44"
+            "text": "2730"
           },
           {
             "id": "o3",
-            "text": "99"
+            "text": "2830"
           },
           {
             "id": "o4",
@@ -3531,20 +4575,46 @@
         "explanation": "TDV biyografisine göre Abdullah b. Ömer müksirûn arasında yer alır ve 2630 hadis rivayeti ona nispet edilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Ömer",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
-            "locator": "2630 hadis rivayeti",
+            "locator": "105–107. satırlar",
             "supports": "TDV biyografisine göre Abdullah b. Ömer müksirûn arasında yer alır ve 2630 hadis rivayeti ona nispet edilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbomerbhattab-hadis",
+        "reviewedCandidateSha256": "f90588eb6bfb0703ce2065780641f1061efd1a13750d7e080a1238ed0c2b0728",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "44/99 ve 1660 gibi farklı ölçekler yerine dört yakın dört haneli sayı. TDV sayımı sorulur, tamamının doğrudan duyulduğu iddia edilmez.",
+        "optionReview": {
+          "o1": "Başka yakın sayı.",
+          "o2": "Başka yakın sayı.",
+          "o3": "Başka yakın sayı.",
+          "o4": "105’in toplamı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
+          "locator": "105–107. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3594,20 +4664,20 @@
         "question": "Buhârî'nin 'altın zincir' diye anılan güvenilir senedinde İbn Ömer'den kim rivayet eder?",
         "options": [
           {
-            "id": "o1",
-            "text": "Cezerî"
+            "id": "o2",
+            "text": "Mücâhid"
           },
           {
-            "id": "o2",
-            "text": "Kâtib Çelebi"
+            "id": "o4",
+            "text": "Saîd b. Müseyyeb"
           },
           {
             "id": "o3",
             "text": "Nâfi‘"
           },
           {
-            "id": "o4",
-            "text": "İbn Battûta"
+            "id": "o1",
+            "text": "Sâlim b. Abdullah"
           }
         ],
         "correctOptionId": "o3",
@@ -3615,20 +4685,46 @@
         "explanation": "TDV, Buhârî'nin en sahih saydığı isnadlar arasında Mâlik - Nâfi‘ - Abdullah b. Ömer zincirinin bulunduğunu bildirir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Abdullah b. Ömer",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
-            "locator": "Mâlik - Nâfi‘ - İbn Ömer isnadı",
+            "locator": "105–108. satırlar",
             "supports": "TDV, Buhârî'nin en sahih saydığı isnadlar arasında Mâlik - Nâfi‘ - Abdullah b. Ömer zincirinin bulunduğunu bildirir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q69-abdullahbomerbhattab-zincir",
+        "reviewedCandidateSha256": "2adf47bdd1813ef871ef111a94c476feb0fe23c9c776cca8fb8704694ff1bd7c",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç sonraki çağ mesleğine karşı tek râvi kaldırıldı. Dört gerçek İbn Ömer öğrencisi; başka sağlam senedler de olabilir ama belirli Mâlik-Nâfi‘-İbn Ömer zinciri sorulur.",
+        "optionReview": {
+          "o2": "108’in başka gerçek öğrencisi.",
+          "o4": "108’in başka gerçek öğrencisi.",
+          "o3": "107’nin Mâlik’e aktaran râvisi.",
+          "o1": "Başka gerçek İbn Ömer râvisi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
+          "locator": "105–108. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3711,8 +4807,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-ebu-hanife-asli",
+        "reviewedCandidateSha256": "277d91ca716ec6441265a2ea550da6566243050c17e9859be8037f3f357f498a",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört fakih adı. 119 Nu‘mân b. Sâbit’i verir; kalanlar başka mezhep imamlarının gerçek adları, üç ilgisiz iş değil.",
+        "optionReview": {
+          "o1": "119’un asıl adı.",
+          "o2": "Şâfiî’nin adı.",
+          "o3": "Başka imamın adı.",
+          "o4": "Başka imamın adı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+          "locator": "116–121. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3795,8 +4915,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-ebu-hanife-dogum",
+        "reviewedCandidateSha256": "93ccabec8ebb074e8d8de5af4c6e3347aa49e21864f90d747902f6d29b61a08c",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört gerçek doğum/ilim şehri. 119’un Kûfe doğumu açık; başka imamların şehirleri çeldirici olabilir, soru tek kaynaklı belirli.",
+        "optionReview": {
+          "o1": "Başka ilim şehri.",
+          "o2": "Başka ilim şehri.",
+          "o3": "Başka ilim şehri.",
+          "o4": "119’un doğum şehri."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+          "locator": "119–123. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3846,20 +4990,20 @@
         "question": "'İmâm-ı Âzam' unvanıyla tanınan fıkıh âlimi kimdir?",
         "options": [
           {
-            "id": "o1",
-            "text": "Cezerî"
-          },
-          {
-            "id": "o2",
-            "text": "Kâtib Çelebi"
-          },
-          {
             "id": "o3",
             "text": "Ebû Hanîfe"
           },
           {
+            "id": "o1",
+            "text": "İmam Mâlik"
+          },
+          {
+            "id": "o2",
+            "text": "İmam Şâfiî"
+          },
+          {
             "id": "o4",
-            "text": "İbn Battûta"
+            "text": "Ahmed b. Hanbel"
           }
         ],
         "correctOptionId": "o3",
@@ -3867,20 +5011,46 @@
         "explanation": "TDV, büyük imam anlamındaki İmâm-ı Âzam sıfatının Ebû Hanîfe için yaygınlaştığını belirtir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Ebû Hanîfe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-            "locator": "İmâm-ı Âzam unvanı",
+            "locator": "116–119. satırlar",
             "supports": "TDV, büyük imam anlamındaki İmâm-ı Âzam sıfatının Ebû Hanîfe için yaygınlaştığını belirtir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-ebu-hanife-lakap",
+        "reviewedCandidateSha256": "5c559fcc2bc712d364fa6bb81adbbd4d04e33796acbb0649765f291bca8aa88e",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Üç sonraki çağ mühendis/tarihçi/seyyah yerine dört büyük fakih. İmâm-ı Âzam unvanının sahibi özel bilgi.",
+        "optionReview": {
+          "o3": "116–118’in büyük imamı.",
+          "o1": "Başka mezhep imamı.",
+          "o2": "Başka mezhep imamı.",
+          "o4": "Başka mezhep imamı."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+          "locator": "116–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -3931,19 +5101,19 @@
         "options": [
           {
             "id": "o1",
-            "text": "Kitap basımı"
+            "text": "Tahıl ticareti"
+          },
+          {
+            "id": "o3",
+            "text": "Baharat ticareti"
+          },
+          {
+            "id": "o4",
+            "text": "Deri ticareti"
           },
           {
             "id": "o2",
             "text": "Kumaş ticareti"
-          },
-          {
-            "id": "o3",
-            "text": "Baharat üretimi"
-          },
-          {
-            "id": "o4",
-            "text": "Deniz gemiciliği"
           }
         ],
         "correctOptionId": "o2",
@@ -3951,20 +5121,59 @@
         "explanation": "TDV'nin hayatı bölümünde Ebû Hanîfe'nin ilme yönelmeden önce Kûfe'de kumaş tüccarlığı yaptığı kaydedilir.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Ebû Hanîfe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-            "locator": "Kûfe’de kumaş tüccarlığı",
+            "locator": "127 ve 156. satırlar",
             "supports": "TDV'nin hayatı bölümünde Ebû Hanîfe'nin ilme yönelmeden önce Kûfe'de kumaş tüccarlığı yaptığı kaydedilir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
-      "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "automaticAfter": [
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        },
+        {
+          "kind": "semantic-overlap",
+          "detail": "Ortak anahtar sözcükler: eş anlam/alt küme/çoklu doğru incelemesi"
+        }
+      ],
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-ebu-hanife-ticaret",
+        "reviewedCandidateSha256": "7f64537cbdcc5e2a67ccc26ad3629cc49444c37cd55ec1a3afe12941d9a4d4bd",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Kitap basımı gibi anakronizm ve üretim/gemicilik gibi eş olmayan işler yerine dört dönemsel mal ticareti. Kaynak kumaş dükkânı ve defolu kumaş olayını ayırır.",
+        "optionReview": {
+          "o1": "Başka mal ticareti.",
+          "o3": "Başka mal ticareti.",
+          "o4": "Başka mal ticareti.",
+          "o2": "127’nin açık ticareti."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+          "locator": "127 ve 156. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4047,8 +5256,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-ebu-hanife-mezhep",
+        "reviewedCandidateSha256": "beb96180c7476470e604f482dc3809dfe5532c746a3b186d3c83a840adc38777",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört mezhep adı. Ebû Hanîfe/Hanefî kök benzerliği gerçek nisbe öğretir, yapay sıfat ipucu değil. 118 oluşumda öğrencilerin rolünü de belirtir.",
+        "optionReview": {
+          "o1": "118’in ekol adı.",
+          "o2": "Başka mezhep.",
+          "o3": "Başka mezhep.",
+          "o4": "Başka mezhep."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+          "locator": "116–119. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4095,19 +5328,19 @@
         ]
       },
       "after": {
-        "question": "Ebû Hanîfe, kendisine teklif edilen hangi resmî görevi kabul etmediği için baskı görmüştür?",
+        "question": "Emevî yönetiminde İbn Hübeyre aracılığıyla Ebû Hanîfe’ye teklif edilen görevlerden biri hangisiydi?",
         "options": [
           {
             "id": "o1",
-            "text": "Medine müezzinliği"
+            "text": "Basra valiliği"
           },
           {
             "id": "o2",
-            "text": "Bağdat kütüphane müdürlüğü"
+            "text": "Medine imamlığı"
           },
           {
             "id": "o3",
-            "text": "Saray hekimliği"
+            "text": "Şam ordu kumandanlığı"
           },
           {
             "id": "o4",
@@ -4119,20 +5352,46 @@
         "explanation": "TDV maddesi Ebû Hanîfe'ye Kûfe kadılığı veya beytülmâl eminliğinin teklif edildiğini, kabul etmediği için cezalandırıldığını aktarır.",
         "sources": [
           {
-            "title": "TDV İslâm Ansiklopedisi — Ebû Hanîfe",
-            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
             "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
-            "locator": "Kûfe kadılığı teklifini reddetmesi",
+            "locator": "146–153. satırlar",
             "supports": "TDV maddesi Ebû Hanîfe'ye Kûfe kadılığı veya beytülmâl eminliğinin teklif edildiğini, kabul etmediği için cezalandırıldığını aktarır.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-21"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-ebu-hanife-kadi",
+        "reviewedCandidateSha256": "1b1a2fe3708f0ef903f08635ba3e914b8ac54ba4145b8114559db72cb932ead9",
+        "disposition": "revised",
+        "defects": [
+          "context-or-distractor-clue"
+        ],
+        "reason": "Müezzin/hekim/kütüphane gibi profile uzak işler yerine dört dönemsel kamu görevi. Bağdat’ta da sonradan kadılık teklifi var; kök Emevî/İbn Hübeyre aşamasını belirliyor. Beytülmâl eminliği gerçek alternatif teklif olduğundan yanlış şık yapılmadı.",
+        "optionReview": {
+          "o1": "Başka kamu görevi.",
+          "o2": "Başka kamu görevi.",
+          "o3": "Başka kamu görevi.",
+          "o4": "148’in Kûfe teklifi."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+          "locator": "146–153. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     },
@@ -4215,8 +5474,32 @@
       },
       "automaticBefore": [],
       "automaticAfter": [],
-      "semanticReview": "pending",
-      "decision": null,
+      "semanticReview": "reviewed-by-codex",
+      "decision": {
+        "id": "q70-safii-dogum",
+        "reviewedCandidateSha256": "804d54feedb852a9fedd2bf63da4566ba932f3bc58b6ec01e892bddd5e534c47",
+        "disposition": "retained",
+        "defects": [],
+        "reason": "Dört şehir. 96 Gazze’yi tercih edip Askalân/Yemen rivayetlerini bildirir; kökün TDV’de tercih edilen kaydı ihtilafı yok saymıyor.",
+        "optionReview": {
+          "o1": "Başka şehir.",
+          "o2": "Başka şehir.",
+          "o3": "96’nın tercih ettiği şehir.",
+          "o4": "Başka şehir."
+        },
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
+        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
+        "duplicateReview": "Bilâl, Ebû Eyyûb, Selmân ve imam biyografileri önceki kişi hedefleriyle karşılaştırıldı. Selmân ilk aile dini ile sonraki Hıristiyanlık evresi ayrıldı; muâhât çiftleri ve şehirde bulunma/valilik rolleri birbirine karıştırılmadı. Beyân ve amel-i Medîne kaynakları özel madde pasajlarıyla karşılaştırıldı. Nihai tekrar/zorluk ve uzman kabulü bekliyor; ID/kategori/zorluk korunur.",
+        "source": {
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/safii",
+          "locator": "96–99. satırlar",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "58151cbd0746303364dab7bcc0b08de8b6b54b60151596e2c2a95d961ad5da70"
+        }
+      },
       "independentExpertApproval": false,
       "publicationApproval": false
     }

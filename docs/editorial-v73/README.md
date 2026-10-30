@@ -1,98 +1,79 @@
 # v73 seçenek kalitesi — yayımlanmamış aday
 
-Aktif banka **v72 / 1.500 soru**. Bu dal yalnız incelemeye hazır v73 dosyası ve editoryal kayıtlar üretir. Aktif index, geçmiş sürüm registry’si, çevrimiçi exporter, sunucu anahtarları, soru seçimi, puan ve XP kodu değiştirilmedi. Main/Production/canlı Supabase yayını yapılmadı.
+Aktif banka **v72 / 1.500 soru**. Bu PR tek v73 adayını geliştirir. Main, Vercel Production, canlı Supabase, aktif index/registry, eski bankalar, puan, XP ve kullanıcı kayıtları değiştirilmedi. **Yayın uygunluğu verilmedi.**
 
-## İkinci tur: 1.500 soruya genişletme — devam ediyor
+## Güncel inceleme sonucu
 
-**1.500 soru için 30 × 50 kayıt oluşturuldu; kayıt oluşturmak inceleme tamamlamak değildir.** Bu kontrol noktasında **1.370** soru kök, dört şık ve açıklamasıyla ayrı ayrı yeniden değerlendirildi; **130** soru ikinci tur anlam incelemesini bekliyor. Önceki 260 İman/Ahlak kaydı bu yeni sayıya otomatik eklenmedi.
+| Kontrol | Sonuç |
+|---|---:|
+| Güncel soru / benzersiz inceleme kaydı | 1.500 / 1.500 |
+| Kök, dört şık, anahtar ve açıklaması ayrı incelenen | 1500 |
+| Bu turda kaynak pasajıyla karşılaştırılan | 1500 |
+| İlk otomatik taramada işaretlenen soru | 336 |
+| Tek v73 adayında v72’ye göre değişen soru | 1015 |
+| Önceki 271 değişikliğe ek olarak değişen ID | 744 |
+| Kökü değişen | 460 |
+| Doğru cevabın ifadesi değişen | 458 |
+| Açıklaması değişen | 215 |
+| Yalnız çeldiricileri değişen | 358 |
+| Üç sınırlayıcı yanlış şık kalıbı: önce → sonra | 25 → 0 |
+| Otomatik ton dengesizliği uyarısı: önce → sonra | 4 → 0 |
+| Tek belirgin uzun/kısa şık uyarısı: önce → sonra | 85 → 13 |
+| İkinci taramada herhangi bir otomatik uyarı alan soru | 170 |
+| Bilinen bloke bireysel karar | 1 |
+| Bağımsız uzman onayı | 0 |
+| Yayın onayı / v73 etkinleştirme | Yok / Kapalı |
 
-- Bu turda **661 yeni soru düzeltmesi** mevcut tek v73 adayına eklendi. Önceki 271 kayıt kaybolmadı. Adayın v72’ye göre toplam değişen soru sayısı **932**.
-- Yeniden incelenen 1.370 sorunun **1.264** kaynak pasajı bu turda okunarak karşılaştırıldı. **106** kararın kaynak karşılaştırması bekliyor. Korunan `quran-meaning-v72-024` kaydında geniş kavramın alt-kümesi olabilen çeldiriciler için ayrı anlam belirsizliği kaydı var; bu kayıt bloke, yayın onayı yok. `v9-history-010` kaydındaki doğrulanamayan kubbe adı, TDV’de belgelenmiş gerçek adlarla değiştirilerek bu açık madde kapatıldı. Ortak “kubbetü” sözcüğünün otomatik anlam örtüşmesi uyarısı üretmesi yanlış alarm olarak gerekçelendirildi; uyarı gizlenmedi. 30 korunan anlam sorusunun içeriği değiştirilmedi.
-- İlk turdaki özgün **220** öncelikli ID `round2-priority.json` ile donduruldu. Bu 220 sorunun tamamına ayrı karar verildi; bu grupta önceki açık içerik kusurları kaynaklı yeniden yazımla giderildi. Bu ifade banka çapında kabul veya bu 220 kaydın bütün kaynak işlerinin bittiği anlamına gelmez.
-- Otomatik uyarı alan soru sayısı **336 → 168**. Üç sınırlayıcı yanlış şık kalıbı **25 → 0**. Yalnız seçenek üslubuna bakan sezgisel araç **80 → 1** soruda tahmin üretiyor; kalan 1.499 soruda çekimser. Kalan `v11-quran-011` uyarısında dört şık da olumsuzdur: “iman etmiş görünerek ikiyüzlü davranma” ifadesindeki “iman” kelimesi pozitif işaret sayıldığı için araç yanlış alarm verir. Bu karar kaynakla karşılaştırılarak kaydedildi; aracın uyarısı gizlenmedi.
-- Yeni eş anlam uyarıları, iki yanlış şıkta da yer alan “adak/nezir” ve “fitre/sadaka-i fıtr” biçimlerini incelemeye alır. Kelimeyi içeren bütün seçenekleri otomatik hatalı saymaz; “nezîr” gibi ayrı sözcükler aynı kümeye sokulmaz. Regresyon testi ilk bankadaki adak/nezir kusurunu ve düzeltilmiş adayı birlikte denetler. Bu kontrol noktasında önceki v73 adayındaki “direk/sütun” yakın anlamlı çeldiriciler için de uyarı ve regresyon örneği eklendi; önceki adaydan kalan bu kusur düzeltildi.
-- Yeni paketlerde “Güneş/yıldız” kapsam çakışması, satın alanın nereli olduğunu soran köke yönelme ekli cevap verilmesi, Birûnî’de üç modern teknoloji anakronizmi, tek malî şıkla cevaplanan zekât sorusu ve önceki v73 adayındaki tartı kelimesiyle cevabı ele veren kök de düzeltildi. Önceki aday bu turda otomatik kabul edilmedi.
-- Yeni paketlerdeki gerçek kusurlar arasında Hudeybiye’de Abbâsî/Selçuklu anakronizmi, Fil ve Uhud sorularında kökün cevabı aynen söylemesi, tek yazı yüzeyine karşı taç/gemi/mühür ve Yûnus duasında üç ilgisiz ifade bulundu. Bunlar anlamca ilgili seçeneklerle yeniden yazıldı.
-- Son altı pakette 300 soru ayrı ayrı değerlendirildi ve kaynak pasajları okundu; 187 soru üzerinde yeni düzenleme veya önceki v73 düzenlemesinin ikinci kez düzeltilmesi yapıldı. Bunların 162’si v72’ye göre ilk defa değişen ID’lerdir; diğer 25’i önceki aday değişikliklerinin yeniden gözden geçirilmesidir. Buhârî/Müslim için ortak kullanılan eser adı telif süresiyle sınırlandırıldı; İnsân 76/8’de “esir” kapsamına girebilen “borçlu” çeldiricisi kaldırıldı; 76/7’deki adak yorumu, bütün vecibeleri içeren diğer yorumdan açıkça ayrıldı. Mü’minûn 23/115’te aynı ayetin iki hükmünün ayrı cevaplara dağılması giderildi. Mâverdî’nin israf/tebzîr ayrımı genel uzlaşı gibi sunulmadı.
-- Arafat vakfesinde bayramın ilk günü fecirden önceki sürenin de geçerli olması gözden kaçırılmadı; yeni şıklar aynı yapıda dört yakın hicrî gün ve öğleden sonrası üzerinden kuruldu. Teyemmümde dirsek/bilek farkı Hanefî kaydıyla sınırlandı. Hatice’nin önceki evliliklerinin ihtilaflı sırası tek doğruymuş gibi sorulmadı. Kütüb-i Sitte’de Muvatta‘ ile Dârimî tercihlerinin ikinci doğruya dönüşmemesi için Rezîn’in belirli tertibi soruldu.
-- Otomatik uyarı sayısı önceki 771 soruluk noktadaki 148’den 168’e çıktı; bu fark gizlenmedi. Aynı yapıda yazılan tarih, kişi adı ve bulut türü seçeneklerinde ortak sözcüklerden üreyen anlam örtüşmesi uyarıları dört şık bazında açıklanıyor. Bu uyarılar otomatik ret/onay değil; gerçek anlam, çoklu doğru ve kaynak incelemesi gerektirir.
-- Son iki ek pakette (921–1020) 100 soru daha kaynakla karşılaştırıldı; 62 soru düzenlendi, bunların 50’si v72’ye göre ilk defa değişen ID’lerdir. Fitre hükmü Hanefî ve diğer mezheplerin terim kullanımına göre sınırlandı; vakıf mülkiyeti görüş farkı korunarak belirli tanım soruldu. Gâşiye/Târık sorularında tek olumlu veya tek olumsuz şık yerine aynı bağlamdan dört seçenek kuruldu. Levh-i mahfûzun mahiyeti dipnotun farklı yorumlarından biri kesinleştirilerek sorulmadı.
-- 1021–1120 sıralı sonraki 100 soru yeniden okundu; önceden ayrıca incelenmiş bir kayıt tekrar sayılmadığından toplam 99 yeni bireysel karar eklendi. 55 soru düzenlemesinin 43’ü v72’ye göre ilk kez değişen ID’ler, 12’si önceki adayın yeniden düzeltilmesidir. Tebük için üç evet/bir hayır kalıbı iki bağımsız sonuç boyutunun dört birleşimiyle giderildi. Kasr açıklaması tabii meddi bütünüyle kaldırıyormuş izlenimi vermeyecek biçimde düzeltildi.
-- 1121–1220 paketlerinde 100 soru daha kaynak pasajlarıyla karşılaştırıldı; 72 aday düzenlemesinin 71’i ilk kez değişen ID, biri önceki adayın yeniden düzeltilmesidir. Sırçalı Medrese’nin milâdî tarihi için iki TDV maddesinde 1242/1243 farkı görüldüğünden soru kitâbenin hicrî 640 tarihine bağlandı. Bedir’deki iki farklı keşif grubu ve Nizâmiye’nin ilk atanan/ilk ders veren hocaları aynı kişi gibi sunulmadı.
-- 1221–1370 paketlerinde 150 soru ve kaynak pasajları yeniden ele alındı. 78 aday düzenlemesinin 58’i ilk kez değişen ID, 20’si önceki v73 değişikliğinin yeniden düzeltilmesidir. İman/Ahlak kapsamındaki 260 sorunun ikinci tur anlam incelemesi bitti; bu kategoride yedi yeni kaynak karşılaştırması hâlâ bekliyor. Furkân 25/63’te dört olumlu erdemle tevazu sorusu kuruldu; Neml 27/40’ta tefsirde mümkün görülen vezir kimliği yanlış şık olmaktan çıkarıldı.
-- **Yayın uygunluğu verilmedi.** Kalan bireysel incelemeler, kaynak karşılaştırmaları, banka çapında anlamsal tekrar kontrolü, bağımsız uzman incelemesi ve oyuncu kabulü tamamlanmadı. Otomatik uyarı azalması bu kontrollerin yerine geçmez.
+Sayılar örtüşebilir; otomatik uyarılar gerçek kusur veya dinî doğruluk hükmü değildir. “Ton 4 → 0” içindeki bir kayıt, “iman etmiş görünerek ikiyüzlü davranma” metninin yanlışlıkla olumlu sayılmasıydı. Algoritma ikiyüzlülüğü olumsuz olarak tanıyacak biçimde düzeltildi ve regresyon testi eklendi; bu, soru düzeltmesi diye sayılmadı. İman/Ahlak gerçek eşleştirmesindeki **260** sorunun tamamı yeniden incelendi ve kaynakla karşılaştırıldı; bu kategoride adayın değişen soru sayısı **253**.
 
-Güncel, üretilebilir sayılar: [ikinci tur özeti](audit-round2-summary.json). [İndeks](audit-round2-index.json), [50’şer soruluk paketler](batches/), [ilk 30 önemli düzeltme](round2-top30.md) ve [bu turdaki tam değişiklik karşılaştırması](round2-comparison.md) ve [açık kontroller](round2-open-items.md). Her karar dört şık için ayrı yorum ve incelenen adayın SHA-256 özetini içerir; aday içeriği değişirse karar yeniden inceleme olmadan geçmez.
-
-```sh
-pnpm exec tsx scripts/build-editorial-v73.ts --check
-pnpm exec tsx scripts/build-editorial-audit.ts --check
-```
-
-Kaynak sayıları iki tur arasında toplanarak yeni turda okunmuş gibi gösterilmez. `summary.json` önceki çalışmayı da içeren aday envanteridir; `audit-round2-summary.json` yalnız yeni bireysel kararları sayar. Yerel kaynak önbellekleri Git’e eklenmez. Arama sonucu özeti, boş sayfa veya erişim hatası kaynak doğrulaması sayılmaz. Diyanet’in güncel canlı okuyucusunda 3/134 ile 18/77 ve 18/79 pasajları okundu; Önceki çalışmadan kalan resmî PDF (8. baskı, 2020; SHA-256 `0938e0a5…aec7237f`) tekrar bulundu ve yeni pasaj okumalarında kullanıldı. Sayfa sınırını aşan Kehf 18/77 devamı ile dipnotlar ayrıca kontrol edildi. Bu turda kanıt kaydına bağlanmayan pasajlar bekliyor olarak bırakıldı.
-
-Önemli ikinci tur düzeltmesi: `q67-ankebut-40` için Diyanet mealinde bulunmayan “şiddetli sarsıntı” anahtarı adayda “korkunç ses” olarak düzeltildi; dört çeldirici gerçek felâket alanında dengelendi. Aktif v72’nin eski anahtarı ve tarihsel gösterimi değiştirilmedi. A‘lâ 87/9 açıklaması da kullanılan mealin anlatımıyla eşleştirildi.
-
-## Önceki tur: 260 İman/Ahlak ve 20 ek örnek
-
-| Kontrol                                                        |     Sonuç |
-| -------------------------------------------------------------- | --------: |
-| Gerçek `iman_ahlak` eşleştirmesindeki sorular                  |       260 |
-| Editoryal kusur/ipucu nedeniyle düzenlenen                     |       251 |
-| Mevcut ayrımı korunarak bırakılan                              |         9 |
-| Yalnız çeldiricileri değişen (kök, doğru metni, açıklama aynı) |       118 |
-| Kökü de değişen                                                |        48 |
-| Kökü aynı, seçenek metinlerinde değişiklik yapılan             |       203 |
-| Doğru cevabın ifadesi yeniden yazılan                          |       128 |
-| Açıklaması değişen                                             |         8 |
-| Diğer kategorilerde güvenle ele alınan bariz örnekler          |        20 |
-| Kaynakla karşılaştırılan düzenlenmiş soru                      | 271 / 271 |
-| Korunanlar dahil kaynak karşılaştırması                        |       280 |
-| Bağımsız insan editör/uzman onayı                              |         0 |
-| Düzenlenmiş sorularda bağımsız inceleme bekleyen               |       271 |
-
-Kök, doğru ifade ve açıklama sayıları birbiriyle örtüşebilir. **251 sayısı yalnız “üç kötü, bir iyi” kalıbının sayısı değildir:** konu dışı çeldirici, belirsiz kök, tek uzun cevap, dil biçimi ve kaynak bağlamı gibi editoryal sorunların toplamıdır. Bu ilk turdaki 260 İman/Ahlak sorusu tek tek okundu; bu ifade 1.500 sorunun ikinci turunun tamamlandığı anlamına gelmez. Otomatik uyarılardan “kesin çoklu doğru” veya “uzman onayı” üretilmez.
+30 × 50 kayıt önceki turdan otomatik onay devralmaz. Her kararda dört şık için ayrı yorum, gerekçe, belirsizlik/zorluk/tekrar değerlendirmesi, kaynak konumu ve aday SHA-256 özeti bulunur. Adayın ilgili içeriği değişince eski karar geçersiz olur. Özgün 220 öncelikli ID korundu ve hepsi ayrı ele alındı.
 
 ## İnceleme belgeleri
 
-- [Tam eski/yeni karşılaştırması](comparison.md): mevcut adayın değişen bütün soruları ile İman/Ahlak envanteri; kök, dört şık, eski/yeni anahtar metni, gerekçe, kaynak URL ve yer bilgisi.
-- [Öncelikli örnekler](review-examples.md): kullanıcıdaki Bakara 2/152 ve Nahl 16/90 örnekleri dahil en az 20 somut karşılaştırma.
-- [260 sorunun inceleme kaydı](iman-review.json).
-- [Bütün bankanın otomatik uyarıları](automatic-warnings.json) ve [diğer kategorilerin inceleme kuyruğu](other-suspicious.md).
-- [Üretilen ölçümler](summary.json).
-- Kaynak kanıtları: `src/content/questions/editorial-v73/sources.json`. SHA-256 ve 1 tabanlı PDF sayfaları; kaynak metni depoya kopyalanmadı. `source-compared`, Codex’in kaynak karşılaştırmasıdır; bağımsız dinî uzman onayı değildir.
+- [30 paket / 1.500 bireysel kayıt](batches/) ve [sıralı indeks](audit-round2-index.json).
+- [Güncel sayılar](audit-round2-summary.json).
+- [Bütün değişikliklerin eski/yeni karşılaştırması](comparison.md).
+- [İkinci tur değişiklikleri](round2-comparison.md) ve [30 önemli düzeltme](round2-top30.md).
+- [Açık kontroller ve bloke soru](round2-open-items.md).
+- [Banka çapındaki ek çift karşılaştırması](round2-overlap-review.json).
+- [Geçmiş kimliği ve yayın kapısı](VERSIONING-AND-RELEASE-GATE.md).
 
-İlk tur raporunda diğer kategorilerde **220 soru** otomatik uyarı aldı: Kur’an/Dualar 40, Siyer/Sahabe 42, Peygamber Kıssaları 65, Fıkıh 36, Tarih/Medeniyet 37. Bu tarihsel sayı dondurulan öncelik kuyruğudur; kesin kusurlu soru sayısı değildir. Yeni kurallarla taranan güncel uyarı sayıları ikinci tur özetinde ayrı tutulur.
+İlk tur `iman-review.json`, `automatic-warnings.json`, `other-suspicious.md` ve `review-examples.md` korunur. Güncel kapsam için ikinci tur özeti ve paketler esas alınır; ilk tur sayıları yeni turla toplanıp tekrar incelenmiş gibi gösterilmez.
 
-## Kaynak yöntemi ve önemli düzeltmeler
+## Kaynak ve editoryal yöntem
 
-Öncelik Diyanet Kur’an Yolu Meali ve TDV İslâm Ansiklopedisi. Diyanet’in bazı tekil meal/tefsir URL’leri bu oturumda erişim engeli döndürdü. Bu URL’lerin çalıştığı iddia edilmiyor. Resmî [Kur’an Yolu Meal PDF’si](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) kullanılarak ayet pasajları ve sayfa numaraları karşılaştırıldı. TDV kaynaklarının ilgili madde pasajları açılıp okundu ve konumları kaydedildi. Web kanıtlarının SHA-256 değerleri, okunan araç pasajlarının yerel temsiline aittir; bütün sayfanın HTML özeti veya bağımsız onay değildir. PDF kanıtlarında özet, kaynak PDF dosyasının tamamına aittir. Erişim başarısı ile anlamsal doğrulama ayrı tutuldu.
+Öncelik Diyanet Kur’an Yolu Meali ve TDV İslâm Ansiklopedisi. Her soru için mevcut kök, anahtar, dört seçenek ve açıklama ilgili pasajla karşılaştırıldı; yorum/mezhep farklılıkları ayrıca kaydedildi. Arama özeti, boş sayfa, URL’nin varlığı veya erişim hatası doğrulama sayılmadı. Diyanet’in bazı tekil tefsir URL’leri erişim engeli döndürdüğünden resmî [Kur’an Yolu Meal PDF’si](https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf) kullanıldı; eski URL’lerin tamamının çalıştığı iddia edilmez.
 
-Siccîn’in tek bir tartışmasız yer/defter tanımına indirgenmesi yerine Mutaffifîn 83/9’daki kayıt niteliği soruldu. Târık 86/4’te gözetleyenin kimliğine ilişkin farklı yorumlar tek hükme indirilmedi. İnfitâr, Beled ve Duhâ sorularında açıkça Kur’an Yolu mealinin ilgili ifadesine bağlı kökler kullanıldı. Aynı anlamlı “örtü/perde” ve “kıyamet/hesap günü” seçenekleri ayrıştırıldı. Kaynaklardaki ihtilaflar yapay zorlaştırma için kullanılmadı.
+PDF: 8. baskı, 2020; SHA-256 `0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f`. Konumlar 1 tabanlı fiziksel sayfalardır; basılı sayfa ayrıca belirtilir. Sayfa sınırını aşan pasajlar ve gerekli dipnotlar okundu. TDV kanıtlarının hash’i görüntülenen pasajların özel yerel okuma paketine aittir, bütün HTML sayfasına ait değildir. Tam kaynak metinleri ve özel önbellekler Git’e eklenmedi. Kaynak karşılaştırması bağımsız ilahiyat uzmanı onayı değildir.
 
-Zorluk ve kategori etiketleri korunmuştur; her satırdaki bağımsız inceleme, güçlenen çeldiricilerin zorluk etiketini yeniden değerlendirmelidir. Kaynak karşılaştırması, pilot oyuncu testi veya uzman değerlendirmesi yerine geçmez.
+Önemli örnekler: Ankebût 29/40’taki ses/sarsıntı anahtar uyuşmazlığı düzeltildi. Neml 27/40’ta tefsirde mümkün görülen vezir kimliği yanlış şık olmaktan çıkarıldı. Ayetlerde aynı anda doğru olabilen iki hüküm tek sorunun farklı seçeneklerine dağıtılmadı. Fitre/teyemmüm/vakıf ayrımları belirli mezhep veya kaynak anlatımıyla sınırlandı. Sırçalı Medrese’nin 1242/1243 farkı hicrî kitâbe tarihine bağlandı. Meryem 19/55 için kullanılan mealin “halkına” ifadesi korundu. Kurada ve İnşikâk 84/6’da tek kısa cevap ipucu giderildi.
 
-## Cevap konumu ve geçmiş
+## Açık kalite ve kabul noktaları
 
-Ham v72 dosyasında doğru seçeneklerin konumları `[162, 1026, 158, 154]`; güncel adayın dağılımı [aday envanterinde](summary.json). Değiştirilmeyen kayıtları sırf eşitlemek için değiştirmedik. Oyuncuya gösterilen sıra ham dizi sırası değildir: mevcut oyun motoru her turda seçenek ID’lerini karıştırıp `optionOrders` içine kaydeder. 80 tur/800 gösterimde dört konumun dağılımı ve tarihi sıra çözümlemesi test edildi. ID veya `o2` değerinin ekrandaki sabit “B” anlamına geldiği varsayılmaz.
+1. **`quran-meaning-v72-024` bloke:** Mü’minûn 23/3’teki geniş “boş ve yararsız işler” kavramının altına girebilen dar çeldiriciler var. Bu ID, değişmeden korunması istenen 30 v72 anlam sorusundan biri; onaysız değiştirilmedi. Bağımsız editör/ürün kararı gerekiyor.
+2. Ek banka çapı kontrolünde **406** benzerlik adayı çift üretildi; **406** çiftin tamamı ayrıca anlam bakımından karşılaştırıldı. **23** çiftte aynı olgu tekrar soruluyor; bekleyen çift **0**. Bu 23 tekrar açık kalite konusu olarak tutulur; çift incelemesinin bitmesi bunların giderildiği anlamına gelmez. Beş sûre sıra numarası gibi benzer cümleli ancak farklı hedefli çiftler otomatik tekrar sayılmadı.
+3. **İman/Ahlak Zor** havuzu mevcut v72’de de adayda da **7** sorudur. 10 soruluk bağımsız zor tur mevcut kuralla açılamaz. Onaysız zorluk değişikliği veya yeni soru eklenmedi; ayrı editör/ürün kararı gerekir.
+4. Kalan **170** otomatik uyarı topluca hata ya da temiz diye etiketlenmedi. Özel ad uzunluğu/ortak sözcük gibi yanlış alarmlar bireysel yorumlarda açıklanır. Korunan Necm 53/39 cevabındaki “ancak” kaynağın kapsamını taşır; sözcüğün bulunması tek başına kusur sayılmaz.
+5. Bağımsız uzman kabulü, v73 ile gerçek oyuncu/cihaz kabulü ve kontrollü günlük/çevrimiçi staging testi bekler. Aday aktif registry’ye veya sunucuya bağlanmadı.
 
-v72 SHA-256: `d1dcd3e92f4d331d187fcbf4c3459a1837ef979413a743c0d3ec4a43d7023115`.
+## Cevap konumu, sürüm ve geçmiş
 
-30 v72 anlam sorusu adayda nesne içeriğiyle aynen korunur. Eski ezber soruları aktif bankaya geri getirilmez. Eski tamamlanmış kayıtların cevapları, seçenek sıraları, puanları, XP ve rozetleri yeniden hesaplanmaz.
+Ham dosyadaki konumlar oyuncuya gösterilen sıra değildir. Mevcut motor her turda seçenek ID’lerini karıştırıp `optionOrders` içine kaydeder. V72’nin ham dağılımı `[162, 1026, 158, 154]`; adayın güncel dağılımı [envanterdedir](summary.json). Sözcük düzeltmesi yerine şık sırası karıştırma uygulanmadı. Yalnız üsluba bakan sezgisel araç önce 80 soruda (75 doğru) tahmin üretirken son adayda 0 tahmin üretir; çekimserlik dinî doğruluk veya anlamsal temizliğin kanıtı değildir.
+
+V72 SHA-256: `d1dcd3e92f4d331d187fcbf4c3459a1837ef979413a743c0d3ec4a43d7023115`. Korunan 30 anlam sorusu nesne içeriğiyle aynıdır. Eski ezber soruları geri getirilmedi. Yerel v2–v72 arşivlerindeki dolu `(id, version)` kimlikleriyle adayın 1015 yeni içerik sürümü çakışmaz; canlı hedef için ayrıca salt okunur kontrol gerekir. Eski oyunların cevap/sıra/puan/XP/rozetleri yeniden hesaplanmaz. Mevcut exporter draft v73’ü reddeder.
 
 ## Tekrarlanabilir kontroller
 
 ```sh
-pnpm exec tsx scripts/build-editorial-v73.ts --check
+pnpm check
 pnpm questions:check
-pnpm typecheck
-pnpm lint
-pnpm test
+pnpm exec tsx scripts/build-editorial-v73.ts --check
+pnpm exec tsx scripts/build-editorial-audit.ts --check
 pnpm export:web
 ```
 
-Önceki ilk turda `pnpm check` **333/333 test**, TypeScript, lint ve soru bütünlüğüyle geçti; web export başarılı. İkinci tur 1.370 soruluk kontrol noktasında `pnpm check` **342/342**, TypeScript, lint ve soru bütünlüğüyle geçti; aday ve 30 paket üretimi `--check` ile doğrulandı. `pnpm export:web` bu kontrol noktasında yeniden başarıyla tamamlandı. Yeni testler eş anlamlı iki yanlış seçeneği ve 932 aday içerik sürümünün yerel v2–v72 arşivleriyle kimlik çakışması bulunmadığını denetler. Staged diff Gitleaks taramasında gizli anahtar bulunmadı. Tarihsel v1–v72 kayıtları ve mevcut günlük/çevrimiçi banka testleri başarılı. **v73 ile canlı günlük/çevrimiçi oyun veya fiziksel cihaz testi yapılmadı:** aday registry’ye bağlanmadı ve sunucuya yüklenmedi.
+Son 1.500 kayıt ve kaynak karşılaştırmasını içeren kontrol noktasında **345/345 test**, TypeScript, lint, soru bütünlüğü, iki editoryal üreticinin `--check` doğrulaması ve web export geçti. Yeni aday testi etkinleştirmeden 18 kategori/zorluk birleşiminin v72 ile aynı kullanılabilirliğini, 17 açılabilir havuzu ve 4.500 karıştırılmış gösterim sırasını denetler. Bunlar cihazda oynanmış tur veya canlı çevrimiçi kabul değildir.
 
-## Yayın kapısı
+## Yayın sınırı
 
-Bu PR yalnız taslak/inceleme içindir. Adaydaki bütün değişikliklerin bağımsız editör/uzman incelemesi ve kullanıcının nihai onayından sonra ayrı sürüm etkinleştirme değişikliği gerekir: v73 registry/snapshot ve sürüm-temelli konu eşleştirmesi, kontrollü çevrimiçi import/hash doğrulaması, günlük/oda uyumluluğu ve geri dönüş planı. Bu dalın merge edilmesi tek başına v73’ü etkinleştirmez; onaysız merge de yapılmayacaktır.
+Bu PR taslak inceleme içindir. Açık içerik sorunları, bağımsız kabul ve kullanıcının nihai yayın onayı olmadan main’e birleştirilmez. Ayrı sürüm etkinleştirme PR’ında registry/snapshot, dataset üyeliği, salt okunur kimlik çakışma kontrolü, RLS/anahtar güvenliği, kontrollü staging ve geri dönüş planı gerekir. Bu dalın kodunun bulunması v73’ü aktif etmez.

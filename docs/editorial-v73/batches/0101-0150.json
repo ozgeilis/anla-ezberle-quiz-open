@@ -5,10 +5,10 @@
   "total": 50,
   "individuallyReviewed": 50,
   "pendingReview": 0,
-  "sourceComparedThisRound": 43,
+  "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 50,
-  "flaggedAfter": 20,
+  "flaggedAfter": 19,
   "records": [
     {
       "sequence": 101,
@@ -952,23 +952,23 @@
         "options": [
           {
             "id": "o1",
-            "text": "Adaylar arasında oylama yapmak"
+            "text": "Oylama yapma"
           },
           {
             "id": "o3",
-            "text": "Adayların yaşlarını karşılaştırmak"
+            "text": "Yaşı büyük olanı seçme"
           },
           {
             "id": "o4",
-            "text": "Ailelerin ortak kararını beklemek"
+            "text": "Sıraya göre atama"
           },
           {
             "id": "o2",
-            "text": "Kura çekmek"
+            "text": "Kura çekme"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Kura çekmek",
+        "correctAnswer": "Kura çekme",
         "explanation": "Âl-i İmrân 3/44, Meryem’in himayesini kimin üstleneceğini belirlemek için kalemlerle kura çekilmesini anlatır. Kur’an Yolu dipnotu himayenin Zekeriyyâ’ya nasip olduğunu açıklar.",
         "sources": [
           {
@@ -988,29 +988,25 @@
           "detail": "Fiil/isim biçimleri arasında tekil ayrışma"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q50-zekeriyya-018",
-        "reviewedCandidateSha256": "f2dfae95143b658be9d70fe36e4d403757c5ea5ebab062503beaf0c71b711a36",
+        "reviewedCandidateSha256": "4402d5db514f95c62d0bb0c81698b7aa89c133d0923c7e9dbf47e11c5e76b22d",
         "disposition": "revised",
         "defects": [
-          "unrelated-distractors"
+          "unrelated-distractors",
+          "length-and-grammar-clue"
         ],
-        "reason": "Savaş/deniz/ticaret yerine dört himaye belirleme yöntemi verildi. Kaynak 3/44 ve dipnotla kesinleştirildi.",
+        "reason": "Tek kısa doğru cevabın karşısındaki uzun cümleler, aynı türde dört kısa seçim yöntemiyle dengelendi. Kalemleri atarak kura, oylama/yaş/sıra yöntemlerinden ayette kesin ayrılır.",
         "optionReview": {
-          "o1": "Oylama anlatılmıyor.",
-          "o3": "Yaşa göre sıralama anlatılmıyor.",
-          "o4": "Ailelerin anlaşması anlatılmıyor.",
-          "o2": "Kalemlerle kura âyette ve dipnotta açık."
+          "o1": "Aynı alandaki başka yöntem/kişi/amaç; belirtilen ayetin söylediği değildir.",
+          "o3": "Kaynakta bu kesin bağlamda seçilmeyen, dilce aynı türde çeldirici.",
+          "o4": "Aynı bilgi alanında ancak belirtilen ayetin karşılığı olmayan seçenek.",
+          "o2": "Belirtilen resmî meal pasajındaki kesin bağlama uyar."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Soru tek bir ayetin açık anlatımıyla sınırlandırıldı. Seçeneklerin başka bir bağlamda doğru olması bu ayetin cevabı olmalarını sağlamaz.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
@@ -1018,7 +1014,7 @@
           "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
           "locator": "3/44; PDF sayfa 62 (1 tabanlı), basılı sayfa 61",
           "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
-          "readAt": "2026-10-28",
+          "readAt": "2026-10-30",
           "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
@@ -2177,15 +2173,17 @@
           "o3": "Makul farklı sayı.",
           "o4": "Makul farklı sayı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut hard etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/zekat",
-          "locator": "Zekâtın namazla 27 âyette anılması",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Zekât; mârife kullanım 30 ve namazla 27 âyet; satır 117",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "e26a4962aed064030d133b89609d58969f7798fee937c9328ef69f0fba1340cc"
         }
       },
       "independentExpertApproval": false,
@@ -3458,15 +3456,17 @@
           "o3": "Mekke’de hakemlik olayı; farklı konu.",
           "o4": "Hicret öncesi biat; Medine metni değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/hicret",
-          "locator": "Medine Vesikası ve devlet düzeni",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://islamansiklopedisi.org.tr/medine",
+          "locator": "Medine vesikası ve farklı unsurların siyasî birliği; satır 134–136",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "426d806ed174373b04466c4fb07e9d0855796546d72b42732f3ebc1b3ec1b576"
         }
       },
       "independentExpertApproval": false,
@@ -3574,15 +3574,17 @@
           "o3": "Başka peygamber adı.",
           "o4": "Îsâ’nın unvanı; Yûnus değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/yunus",
-          "locator": "Enbiyâ 21/87",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "21/87; PDF sayfa 346 (1 tabanlı), basılı sayfa 345",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -4294,15 +4296,17 @@
           "o4": "Anahtar; ezan kaynağı yeniden okunmalı.",
           "o1": "Takvim duyurusu; namaz çağrısı değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/ezan",
-          "locator": "Ezanın uygulanma sebebi",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Medine’de namaz vaktini ortak çağrıyla duyurma ihtiyacı; satır 119",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "bcce7c1236be5103e715b5fde9c40ff3c0d0943dfb6949dda040c605f75472ec"
         }
       },
       "independentExpertApproval": false,
@@ -5734,15 +5738,17 @@
           "o3": "Anahtar; TDV girişinde ad ilişkisi okundu, kanıt kaydı bekler.",
           "o4": "Medine çevresi; Beytülmakdis değil."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
+          "status": "compared",
           "url": "https://islamansiklopedisi.org.tr/mescid-i-aksa",
-          "locator": "Beytülmakdis adı",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "locator": "Beytülmakdis adı ve İsrâ 17/1; satır 96–98",
+          "note": "İlgili pasaj bu turda okunarak kök, anahtar ve dört seçenekle karşılaştırıldı. Bağımsız uzman onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "ce36a2dd879c4967388fee97710389af416e42ffad41e22441507e20e88c121b"
         }
       },
       "independentExpertApproval": false,
@@ -5890,15 +5896,17 @@
           "o3": "Başka mescid.",
           "o4": "Başka mescid."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut medium etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/mescid-i-aksa",
-          "locator": "İsrâ 17/1; Mescid-i Aksâ",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "17/1; PDF sayfa 295 (1 tabanlı), basılı sayfa 294",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,
@@ -6006,15 +6014,17 @@
           "o3": "Şuayb kıssasıyla ilgili.",
           "o4": "Başka peygamberler bağlamı."
         },
-        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Bu turdaki kaynak okuması bekliyor; anahtarla tutarlılık doğruluk kanıtı sayılmadı.",
+        "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
         "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Bu paketteki diğer kök ve seçeneklerle hedef ilişkisi karşılaştırıldı; tüm bankanın anlamsal tekrar incelemesi henüz tamamlanmadı.",
         "source": {
-          "status": "pending",
-          "url": "https://islamansiklopedisi.org.tr/hud",
-          "locator": "A'râf 7/65 ve Hûd 11/50'de Hûd peygamberin Âd kavmine gönderildiği bildirilir",
-          "note": "Bu turdaki tam kök/dört şık/açıklama kaynak karşılaştırması henüz kanıt kaydına bağlanmadı; önceki turdaki işaretleme yeni tur onayı sayılmadı."
+          "status": "compared",
+          "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+          "locator": "7/65; PDF sayfa 168 (1 tabanlı), basılı sayfa 167",
+          "note": "Yerel resmî Kur’an Yolu Meal PDF pasajı bu turda okunup kök, anahtar, dört şık ve açıklamayla karşılaştırıldı; SHA-256 kaynak PDF dosyasına aittir. Bağımsız uzman/yayın onayı değildir.",
+          "readAt": "2026-10-30",
+          "sourceSha256": "0938e0a5b94234d2a92714e099591f502d9b70bb5cb46ed40ffff086aec7237f"
         }
       },
       "independentExpertApproval": false,

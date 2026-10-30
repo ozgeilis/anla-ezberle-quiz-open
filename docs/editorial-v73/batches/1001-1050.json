@@ -8,7 +8,7 @@
   "sourceComparedThisRound": 50,
   "blocked": 0,
   "flaggedBefore": 17,
-  "flaggedAfter": 3,
+  "flaggedAfter": 2,
   "records": [
     {
       "sequence": 1001,
@@ -4259,27 +4259,27 @@
         ]
       },
       "after": {
-        "question": "İnşikâk 84/6'da insanın çabasının sonunda karşılaşacağı kimdir?",
+        "question": "İnşikâk 84/6'da insanın çabasının sonunda kime kavuşacağı bildirilir?",
         "options": [
           {
             "id": "o2",
-            "text": "Rabbi"
+            "text": "Rabbine"
           },
           {
             "id": "o1",
-            "text": "Amellerini yazan melek"
+            "text": "Peygamberine"
           },
           {
             "id": "o3",
-            "text": "Kendisini uyaran peygamber"
+            "text": "Yazıcı meleğe"
           },
           {
             "id": "o4",
-            "text": "Birlikte yaşadığı topluluk"
+            "text": "Kavmine"
           }
         ],
         "correctOptionId": "o2",
-        "correctAnswer": "Rabbi",
+        "correctAnswer": "Rabbine",
         "explanation": "İnşikâk 84/6, insanın Rabbinin huzuruna çıkıncaya kadar emek ve mücadele içinde olacağını belirtir.",
         "sources": [
           {
@@ -4287,9 +4287,9 @@
             "publisher": "Diyanet İşleri Başkanlığı",
             "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
             "locator": "Kur’an Yolu Meali, 84/6; PDF sayfa 638 (1 tabanlı)",
-            "supports": "Karşılaştırılan cevap kavramı: Rabbi (doğrudan kaynak alıntısı değildir).",
+            "supports": "İnsanın rabbine doğru çabaladığı ve sonunda O’na kavuşacağı anlatılır. Doğrudan kaynak alıntısı değildir.",
             "checkStatus": "supported",
-            "checkedAt": "2026-10-27"
+            "checkedAt": "2026-10-30"
           }
         ]
       },
@@ -4299,27 +4299,24 @@
           "detail": "Tek belirgin uzun/kısa seçenek"
         }
       ],
-      "automaticAfter": [
-        {
-          "kind": "length-outlier",
-          "detail": "Tek belirgin uzun/kısa seçenek"
-        }
-      ],
+      "automaticAfter": [],
       "semanticReview": "reviewed-by-codex",
       "decision": {
         "id": "q55-insikak-021",
-        "reviewedCandidateSha256": "bb5db5e3af1ceefd50cd23215d16b072b4c3aecaf4653c88fc36fe3d10a9fc35",
-        "disposition": "retained",
-        "defects": [],
-        "reason": "Dört dinî/toplumsal karşılaşma öznesi. 84/6’daki Rabbine yöneliş açık; mahlûkla Allah arasındaki fark bu temel inanç sorusunun konusu, ilgisiz nesne şıkları değil.",
+        "reviewedCandidateSha256": "1b3929bb69ae197a315c892f577e841ca8dbe364c777b9cd79b27264c4f8b78f",
+        "disposition": "revised",
+        "defects": [
+          "length-and-grammar-clue"
+        ],
+        "reason": "Rabbi tek kısa cevapken üç çeldirici açıklayıcı uzun tamlamaydı. Yeni dört seçenek aynı yönelme hâlinde ve benzer uzunlukta; soru kesin 84/6 bağlamını korur.",
         "optionReview": {
-          "o2": "6. âyetin yöneldiği Rabbi.",
-          "o1": "Başka hesap görevlisi.",
-          "o3": "Başka uyarıcı.",
-          "o4": "Başka insan grubu."
+          "o2": "Belirtilen resmî meal pasajındaki kesin bağlama uyar.",
+          "o1": "Aynı alandaki başka yöntem/kişi/amaç; belirtilen ayetin söylediği değildir.",
+          "o3": "Kaynakta bu kesin bağlamda seçilmeyen, dilce aynı türde çeldirici.",
+          "o4": "Aynı bilgi alanında ancak belirtilen ayetin karşılığı olmayan seçenek."
         },
         "explanationReview": "Açıklama mevcut kök ve anahtardaki bilgiyi anlatıyor. Yeni kaynak okumasıyla karşılaştırıldı; daraltılan bağlamla tutarlı.",
-        "ambiguityReview": "Dört seçeneğin kesin kök bağlamındaki anlamı ayrı ayrı yorumlandı. Kaynak/uzman ve ürün sahibi yayın onayı bu kayıtla verilmez.",
+        "ambiguityReview": "Soru tek bir ayetin açık anlatımıyla sınırlandırıldı. Seçeneklerin başka bir bağlamda doğru olması bu ayetin cevabı olmalarını sağlamaz.",
         "difficultyReview": "Mevcut easy etiketi korundu; otomatik veya toplu zorluk değişikliği yapılmadı.",
         "duplicateReview": "Ardışık Tekvîr/İnfitâr/İnşikâk/Kıyâme hedefleri ile önceki paketlerdeki Akabe/hicret/Nûh/Yûsuf soruları karşılaştırıldı. Tekrar eden konu bilgisi var; olayın farklı ayrıntıları ayrıldı. Banka çapındaki son pedagojik tekrar kabulü henüz verilmedi. ID, conceptGroup, kategori ve zorluk korundu.",
         "source": {

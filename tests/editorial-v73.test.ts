@@ -11,7 +11,17 @@ import {
   SUPPORTED_BANK_VERSIONS,
   historicalQuestion,
 } from "../src/content/questions/registry";
-import { createSession } from "../src/domain/game/engine";
+import {
+  createSession,
+  selectDifficultyQuestions,
+  selectQuestions,
+  shuffle,
+  assessDifficultyRound,
+} from "../src/domain/game/engine";
+import {
+  belongsToPlayCategory,
+  playCategories,
+} from "../src/domain/game/play-categories";
 import { qualityWarnings } from "../scripts/question-quality";
 import summary from "../docs/editorial-v73/summary.json";
 import review from "../docs/editorial-v73/iman-review.json";
@@ -117,6 +127,61 @@ test("answer positions use actual runtime shuffling, not the historically biased
     800,
   );
   for (const n of counts) assert(n > 130 && n < 270, JSON.stringify(counts));
+});
+test("Inactive candidate preserves category/difficulty availability and prepares valid shuffled orders without replacing the active registry", () => {
+  let state = 0xc0decafe;
+  const random = () =>
+    (state = (Math.imul(state, 1664525) + 1013904223) >>> 0) / 4294967296;
+  for (const category of playCategories) {
+    const pool = questionsV73Candidate.filter((q) =>
+      belongsToPlayCategory(q.id, category.id),
+    );
+    for (const difficulty of ["easy", "medium", "hard"] as const) {
+      const baseline = assessDifficultyRound(
+        questionsV72.filter((q) => belongsToPlayCategory(q.id, category.id)),
+        difficulty,
+      );
+      assert.deepEqual(assessDifficultyRound(pool, difficulty), baseline);
+      if (!baseline.canStart) {
+        assert.throws(
+          () => selectDifficultyQuestions(pool, difficulty, [], random),
+          /yeterli bağımsız soru yok/,
+        );
+        continue;
+      }
+      const selected = selectDifficultyQuestions(pool, difficulty, [], random);
+      assert.equal(selected.length, 10, `${category.id}/${difficulty}`);
+      assert(selected.every((q) => q.difficulty === difficulty));
+      assert.equal(new Set(selected.map((q) => q.id)).size, 10);
+    }
+  }
+  assert.equal(
+    selectQuestions(questionsV73Candidate, "mixed", undefined, [], random)
+      .length,
+    10,
+  );
+  const counts = [0, 0, 0, 0];
+  for (let repeat = 0; repeat < 3; repeat++)
+    for (const q of questionsV73Candidate) {
+      const order = shuffle(
+        q.options.map((o) => o.id),
+        random,
+      );
+      const correct = order.indexOf(q.correctOptionId);
+      const displayed = order.map(
+        (id) => q.options.find((o) => o.id === id)!.text,
+      );
+      assert.equal(
+        displayed[correct],
+        q.options.find((o) => o.id === q.correctOptionId)!.text,
+      );
+      assert.equal(new Set(order).size, 4);
+      counts[correct]!++;
+    }
+  for (const n of counts)
+    assert(n >= 1000 && n <= 1250, JSON.stringify(counts));
+  assert.equal(BANK_VERSION, 72);
+  assert(!(SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
 });
 test("quality warnings flag tone, length, duplication, grammar, absolutes, synonyms and ambiguity without approving truth", () => {
   const q = questionsV72[0]!;

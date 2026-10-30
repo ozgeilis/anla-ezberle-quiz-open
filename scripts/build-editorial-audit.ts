@@ -8,6 +8,7 @@ import {
 } from "../src/domain/game/play-categories";
 import { qualityWarnings, styleOnlyGuess } from "./question-quality";
 import type { Question } from "../src/content/questions/model";
+import { editorialOverlap, type OverlapDecision } from "./editorial-overlap";
 
 export interface EditorialDecision {
   id: string;
@@ -59,6 +60,12 @@ if (
 )
   throw Error("Original 220-question priority queue changed");
 const byId = new Map(decisions.map((d) => [d.id, d]));
+const overlap = editorialOverlap(
+  questionsV73Candidate,
+  JSON.parse(
+    readFileSync(`${folder}/round2-overlap-decisions.json`, "utf8"),
+  ) as OverlapDecision[],
+);
 if (byId.size !== decisions.length) throw Error("Repeated editorial decision");
 for (const d of decisions) {
   const q = next.get(d.id);
@@ -244,6 +251,15 @@ const summary = {
   criticalRemaining: records.some((r) => !r.decision)
     ? "not-yet-determined: individual review incomplete"
     : "requires independent editorial decision",
+  knownBlockingQuestions: records.filter(
+    (r) => r.decision?.disposition === "blocked",
+  ).length,
+  overlapReview: {
+    candidatePairs: overlap.candidatePairs,
+    individuallyReviewedPairs: overlap.individuallyReviewedPairs,
+    repeatedFactPairs: overlap.repeatedFactPairs,
+    pendingPairs: overlap.pendingPairs,
+  },
   independentExpertApproved: 0,
   publicationApproved: false,
   releaseEnabled: false,
@@ -251,6 +267,8 @@ const summary = {
 const out = "docs/editorial-v73/batches";
 mkdirSync(out, { recursive: true });
 const outputs: Record<string, string> = {};
+outputs["docs/editorial-v73/round2-overlap-review.json"] =
+  JSON.stringify(overlap, null, 2) + "\n";
 for (let i = 0; i < 30; i++) {
   const start = i * 50 + 1,
     end = start + 49;
@@ -312,8 +330,7 @@ const table = (rows: typeof records) =>
       return `|${r.id}|${view(r.before)}|${view(r.after)}|${escapeMd(r.before.correctAnswer + " → " + r.after.correctAnswer)}|${escapeMd(r.decision?.reason ?? "İkinci tur karar kaydı henüz yok")}|${r.decision?.source.url ?? r.after.sources[0]?.url}<br>${escapeMd(r.decision?.source.locator ?? "")}|${r.decision?.source.status === "compared" ? "Kaynak pasajı okundu; uzman/yayın onayı yok" : "Kaynak karşılaştırması bekliyor"}|\n`;
     })
     .join("");
-const reportHeader =
-  "# v73 ikinci tur — yayımlanmamış içerik düzeltmeleri\n\nBu rapor yalnız ikinci turdaki gerçek metin düzeltmeleridir. Şıkların yer değiştirmesi düzeltme sayılmaz. 1.500 sorunun tamamının incelemesi henüz bitmedi; bu belge yayın onayı değildir. Önceki 271 değişiklik tam comparison.md içinde korunur.\n\n";
+const reportHeader = `# v73 ikinci tur — yayımlanmamış içerik düzeltmeleri\n\nBu rapor yalnız ikinci turdaki gerçek metin düzeltmeleridir. Şıkların yer değiştirmesi düzeltme sayılmaz. Bireysel inceleme ${summary.individuallyReviewed}/1500; kaynak karşılaştırması ${summary.sourceComparedThisRound}/1500. Bloke kayıt ${summary.blocked}; banka çapı tekrar incelemesi ve bağımsız kabul ayrıdır. Bu belge yayın onayı değildir. Önceki 271 değişiklik tam comparison.md içinde korunur.\n\n`;
 outputs["docs/editorial-v73/round2-comparison.md"] =
   reportHeader + table(revisedThisRound);
 const weight = (r: (typeof records)[number]) =>
@@ -353,7 +370,7 @@ outputs["docs/editorial-v73/round2-open-items.md"] =
         `- ${r.id}: [kaynak](${r.decision!.source.url}) — ${r.decision!.source.note}\n`,
     )
     .join("") +
-  "\nİncelenmemiş sorular ve her sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.\n";
+  `\n## Banka çapında ek tekrar kontrolü\n\n${overlap.candidatePairs} otomatik aday çiftin ${overlap.individuallyReviewedPairs} tanesi ayrıca karşılaştırıldı; ${overlap.repeatedFactPairs} çiftte aynı bilgi tekrar soruluyor. Kalan ${overlap.pendingPairs} çift bekliyor. Ayrı [çift kayıtları](round2-overlap-review.json) bu açıkları saklar. Benzerlik taramasının üretemediği eş anlamlı kökler olabilir; bu araç bütün anlamsal tekrarların bulunmuş olduğu garantisini vermez.\n\n## Mevcut zorluk sınırı\n\nİman/Ahlak zor havuzu v72’de ve adayda 7 sorudur; mevcut 10 bağımsız soruluk zor tur açılamaz. Zorluk etiketleri onaysız değiştirilmedi. Adayın 18 kategori/zorluk birleşimi v72 ile karşılaştırılır; 17 kullanılabilir birleşim ve bu mevcut engel korunur.\n\nHer sorunun dört şık değerlendirmesi 30 paketlik kayıtta tutulur. Bağımsız uzman onayı ve adayla gerçek cihaz/çevrimiçi oyun kabulü tamamlanmadı.\n`;
 for (const [path, value] of Object.entries(outputs)) {
   if (process.argv.includes("--check")) {
     if (readFileSync(path, "utf8") !== value)

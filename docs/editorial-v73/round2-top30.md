@@ -1,6 +1,6 @@
 # v73 ikinci tur — yayımlanmamış içerik düzeltmeleri
 
-Bu rapor yalnız ikinci turdaki gerçek metin düzeltmeleridir. Şıkların yer değiştirmesi düzeltme sayılmaz. 1.500 sorunun tamamının incelemesi henüz bitmedi; bu belge yayın onayı değildir. Önceki 271 değişiklik tam comparison.md içinde korunur.
+Bu rapor yalnız ikinci turdaki gerçek metin düzeltmeleridir. Şıkların yer değiştirmesi düzeltme sayılmaz. Bireysel inceleme 1500/1500; kaynak karşılaştırması 1500/1500. Bloke kayıt 1; banka çapı tekrar incelemesi ve bağımsız kabul ayrıdır. Bu belge yayın onayı değildir. Önceki 271 değişiklik tam comparison.md içinde korunur.
 
 | ID | Eski kök ve dört şık | Yeni kök ve dört şık | Doğru: eski → yeni | Gerekçe | Kaynak / konum | Durum |
 |---|---|---|---|---|---|---|
