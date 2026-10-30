@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v29 preserves 595 prior questions and adds two source-checked ayat facts",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV28.length,595);assert.equal(bankV29.length,597);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV28.length,595);assert.equal(bankV29.length,597);
  assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);assert.equal(publishedNewQuestionsV29.length,2);
  assert.ok(bankV28.every((q,i)=>q===bankV29[i]));assert.equal(new Set(bankV29.map(q=>q.id)).size,597);
  const norm=(s:string)=>s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -27,7 +27,7 @@ test("v29 preserves 595 prior questions and adds two source-checked ayat facts",
  }
 });
 test("v29 stored games and v28 old scoring remain valid",()=>{
- const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 72);
+ const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,start+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const record=finishSession(s);assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);
  const old=bankV28[0]!,order={[old.id]:old.options.map(o=>o.id)};

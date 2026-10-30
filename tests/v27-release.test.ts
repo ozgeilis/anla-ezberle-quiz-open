@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v27 appends two Diyanet-backed concepts, preserving archived v26 questions",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV26.length,591);assert.equal(bankV27.length,593);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV26.length,591);assert.equal(bankV27.length,593);
  assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);assert.equal(publishedNewQuestionsV27.length,2);
  assert.ok(bankV26.every((q,i)=>q===bankV27[i]));assert.equal(new Set(bankV27.map(q=>q.id)).size,593);
  const norm=(s:string)=>s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -28,7 +28,7 @@ test("v27 appends two Diyanet-backed concepts, preserving archived v26 questions
  }
 });
 test("v27 saved games and legacy v26 score records remain compatible",()=>{
- const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 72);
+ const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,start+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const record=finishSession(s);assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);
  const old=bankV26[0]!,order={[old.id]:old.options.map(o=>o.id)};

@@ -1,8 +1,17 @@
 import type { Question } from "../src/content/questions/model";
 import { questions, BANK_VERSION } from "../src/content/questions";
+import { questionsV72 } from "../src/content/questions/questions-v72";
+import { questionsV73 } from "../src/content/questions/questions-v73";
 import { selectionConceptKeys } from "../src/domain/game/engine";
 
 export const ONLINE_OWNER_SCOPE = `bank-v${BANK_VERSION}`;
+const releasedBanks = { 72: questionsV72, 73: questionsV73 } as const;
+export type ExportBankVersion = keyof typeof releasedBanks;
+// Explicit old-release export supports immutable replay tests and rollback staging.
+// New games always use BANK_VERSION; arbitrary candidate collections are rejected.
+export const canonicalBankForExport = (
+  version: ExportBankVersion = BANK_VERSION,
+) => releasedBanks[version];
 const optionIds = ["a", "b", "c", "d"] as const;
 
 const quoteSql = (value: string): string =>
@@ -21,7 +30,7 @@ export interface OnlineContentRow {
   version: number;
   prompt: string;
   options: { id: "a" | "b" | "c" | "d"; text: string }[];
-  contentScope: typeof ONLINE_OWNER_SCOPE;
+  contentScope: `bank-v${ExportBankVersion}`;
   correctOptionId: "a" | "b" | "c" | "d";
   explanation: string;
   categoryId: Question["categoryId"];
@@ -31,9 +40,10 @@ export interface OnlineContentRow {
 
 export function buildOnlineContentRows(
   bank: readonly Question[] = questions,
+  bankVersion: ExportBankVersion = BANK_VERSION,
 ): OnlineContentRow[] {
-  if (BANK_VERSION !== 72)
-    throw new Error("A new server release requires an explicit migration");
+  const expected = canonicalBankForExport(bankVersion);
+  if (!expected) throw new Error("Unknown canonical server release");
   if (bank.length !== 1500)
     throw new Error(
       `Expected exactly 1500 source-linked questions; got ${bank.length}`,
@@ -83,7 +93,7 @@ export function buildOnlineContentRows(
         id: optionIds[i]!,
         text: option.text,
       })),
-      contentScope: ONLINE_OWNER_SCOPE,
+      contentScope: `bank-v${bankVersion}`,
       correctOptionId: optionIds[answerIndex]!,
       explanation: q.explanation,
       categoryId: q.categoryId,
@@ -98,18 +108,27 @@ export function buildOnlineContentRows(
     if ((counts.get(cat) ?? 0) < 100)
       throw new Error(`Category ${cat} insufficient for balanced online play`);
   }
-  if (JSON.stringify(bank) !== JSON.stringify(questions))
-    throw new Error("Only the unchanged canonical v72 bank may seed new games");
+  if (JSON.stringify(bank) !== JSON.stringify(expected))
+    throw new Error("Only the exact approved canonical release may be staged");
   return rows;
 }
 
 // Generates a transaction only; it is NEVER automatically deployed or seeded.
 // A private operator must apply this SQL to the explicitly authorized closed-dev DB.
-export function buildOnlineSeedSql(rows: readonly OnlineContentRow[]): string {
+export function buildOnlineSeedSql(
+  rows: readonly OnlineContentRow[],
+  bankVersion: ExportBankVersion = BANK_VERSION,
+): string {
   if (rows.length !== 1500 || new Set(rows.map((r) => r.id)).size !== 1500)
     throw new Error("Incomplete 1500-question batch");
-  if (JSON.stringify(rows) !== JSON.stringify(buildOnlineContentRows()))
+  if (
+    JSON.stringify(rows) !==
+    JSON.stringify(
+      buildOnlineContentRows(canonicalBankForExport(bankVersion), bankVersion),
+    )
+  )
     throw new Error("Only canonical rows may be staged");
+  const scope = `bank-v${bankVersion}`;
   const entries = rows
     .map(
       (row) =>
@@ -126,30 +145,30 @@ export function buildOnlineSeedSql(rows: readonly OnlineContentRow[]): string {
         ")",
     )
     .join(",\n");
-  return `-- v72 1500-source-question staging only; this DOES NOT enable online use.
--- Requires migration 20261027000100_canonical_bank_v72.sql.
+  return `-- v${bankVersion} 1500-source-question staging only; this DOES NOT enable online use.
+-- Requires canonical bank migrations through ${bankVersion === 73 ? "20261030000100_canonical_bank_v73.sql" : "20261027000100_canonical_bank_v72.sql"}.
 -- Store this generated file OUTSIDE the repository and never expose its answer key.
 BEGIN;
-CREATE TEMP TABLE _online_v72_import (
+CREATE TEMP TABLE _canonical_import (
   id text NOT NULL, version integer NOT NULL, prompt text NOT NULL, options jsonb NOT NULL,
   content_scope text NOT NULL, correct_option_id text NOT NULL, explanation text NOT NULL,
   PRIMARY KEY (id, version)
 ) ON COMMIT DROP;
-INSERT INTO _online_v72_import VALUES
+INSERT INTO _canonical_import VALUES
 ${entries};
 DO $guard$
 BEGIN
-  IF (SELECT count(*) FROM _online_v72_import) <> 1500 OR
-     (SELECT count(*) FROM _online_v72_import WHERE content_scope = 'bank-v72') <> 1500 THEN
-    RAISE EXCEPTION 'Incomplete v72 content input';
+  IF (SELECT count(*) FROM _canonical_import) <> 1500 OR
+     (SELECT count(*) FROM _canonical_import WHERE content_scope = ${quoteSql(scope)}) <> 1500 THEN
+    RAISE EXCEPTION 'Incomplete canonical content input';
   END IF;
   IF EXISTS (
-    SELECT 1 FROM _online_v72_import i
+    SELECT 1 FROM _canonical_import i
     JOIN quiz_private.quiz_questions q USING (id,version)
     WHERE q.prompt IS DISTINCT FROM i.prompt OR q.options IS DISTINCT FROM i.options
 
   ) OR EXISTS (
-    SELECT 1 FROM _online_v72_import i
+    SELECT 1 FROM _canonical_import i
     JOIN quiz_private.quiz_answer_keys k ON k.question_id=i.id AND k.question_version=i.version
     WHERE k.correct_option_id IS DISTINCT FROM i.correct_option_id
        OR k.explanation IS DISTINCT FROM i.explanation
@@ -157,13 +176,13 @@ BEGIN
   END IF;
 END $guard$;
 INSERT INTO quiz_private.quiz_questions(id,version,prompt,options,content_scope)
-SELECT id,version,prompt,options,content_scope FROM _online_v72_import ON CONFLICT DO NOTHING;
+SELECT id,version,prompt,options,content_scope FROM _canonical_import ON CONFLICT DO NOTHING;
 INSERT INTO quiz_private.quiz_answer_keys(question_id,question_version,correct_option_id,explanation)
-SELECT id,version,correct_option_id,explanation FROM _online_v72_import ON CONFLICT DO NOTHING;
+SELECT id,version,correct_option_id,explanation FROM _canonical_import ON CONFLICT DO NOTHING;
 INSERT INTO quiz_private.online_bank_members(dataset,id,version,metadata,concept_keys) VALUES
-${rows.map((r) => `(${quoteSql(ONLINE_OWNER_SCOPE)},${quoteSql(r.id)},${r.version},${quoteJson(r.metadata)},ARRAY[${r.keys.map(quoteSql).join(",")}])`).join(",\n")}
+${rows.map((r) => `(${quoteSql(scope)},${quoteSql(r.id)},${r.version},${quoteJson(r.metadata)},ARRAY[${r.keys.map(quoteSql).join(",")}])`).join(",\n")}
 ON CONFLICT DO NOTHING;
-SELECT quiz_private.validate_online_bank(${quoteSql(ONLINE_OWNER_SCOPE)});
+SELECT quiz_private.validate_online_bank(${quoteSql(scope)});
 COMMIT;
 `;
 }

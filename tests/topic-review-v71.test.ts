@@ -52,7 +52,7 @@ const expected = {
 };
 
 test("reviewed v2 assigns all 1500 unchanged v71 questions exactly once; ten card counts sum to 1500", () => {
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(LEARNING_TOPIC_VERSION, 3);
   assert.equal(questions.length, 1500);
   assert.equal(bank.length, 1500);

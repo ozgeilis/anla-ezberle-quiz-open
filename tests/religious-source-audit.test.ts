@@ -17,7 +17,7 @@ const load = (name: string) =>
   JSON.parse(readFileSync(`docs/audits/${name}`, "utf8"));
 
 test("source audit cannot silently rewrite any published v31 question, options, answers or metadata", () => {
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(questions.length, 600);
   assert.equal(
     createHash("sha256").update(JSON.stringify(questions)).digest("hex"),

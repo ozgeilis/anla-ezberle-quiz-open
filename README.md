@@ -27,7 +27,7 @@ pnpm preview
 
 ## İçerik ve kayıt uyumluluğu
 
-Güncel banka v72 ve 1.500 soru, cevaplar, açıklamalar, kaynaklar ve eski banka sürümleri korunur. Geçmiş oyun uyumluluğu için gereken arşiv ve sentetik test fixture'ları yerindedir; gerçek kullanıcı veritabanları burada bulunmaz. Kodda `approved` etiketi bulunması bütün dinî ifadeler için bağımsız uzman doğrulaması anlamına gelmez. Hazırlık aşamasındaki çocuk/özel dönem setleri otomatik olarak açılmaz.
+Uygulamanın güncel bankası v73 / 1.500 sorudur; ürün sahibinin 30.10.2026 yayın talimatına dayanır. V72 ve önceki sorular, cevaplar ve kaynaklar geçmiş oyunlar için korunur. [Çevrimiçi sunucu geçişi ve doğrulama durumu](docs/CANONICAL-V73-ROLLOUT.md) ayrıca izlenir; main güncellemesi tek başına canlı dataset’i veya kurulu APK’yı değiştirmez. Geçmiş uyumluluğu için gereken arşiv ve sentetik test fixture'ları yerindedir; gerçek kullanıcı veritabanları burada bulunmaz. Kodda `approved` etiketi bağımsız dinî uzman doğrulaması anlamına gelmez. Hazırlık aşamasındaki çocuk/özel dönem setleri otomatik olarak açılmaz.
 
 İstenen kaynak kopyasında çevrimdışı soru cevap anahtarları da vardır. Bunlar özel sunucu kimlik bilgisi değildir. Sunucu rekabetçi yanıtları kendi yetkilendirme ve puanlama kurallarıyla doğrular; depo görünürlüğü hileye dayanıklılık garantisi vermez.
 

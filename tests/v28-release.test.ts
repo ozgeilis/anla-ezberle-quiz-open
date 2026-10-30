@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v28 adds exactly two verified TDV history questions without changing v27",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV27.length,593);assert.equal(bankV28.length,595);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV27.length,593);assert.equal(bankV28.length,595);
  assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);assert.equal(publishedNewQuestionsV28.length,2);
  assert.ok(bankV27.every((q,i)=>q===bankV28[i]));assert.equal(new Set(bankV28.map(q=>q.id)).size,595);
  const norm=(s:string)=>s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -28,7 +28,7 @@ test("v28 adds exactly two verified TDV history questions without changing v27",
  }
 });
 test("v28 saved games and v27 historic scores are compatible",()=>{
- const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 72);
+ const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,start+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const record=finishSession(s);assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);
  const old=bankV27[0]!,order={[old.id]:old.options.map(o=>o.id)};

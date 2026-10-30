@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v22 adds three documented Diyanet questions without mutating v21",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV21.length,580);assert.equal(bankV22.length,583);assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV21.length,580);assert.equal(bankV22.length,583);assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);
  assert.equal(publishedNewQuestionsV22.length,3);assert.ok(bankV21.every((q,i)=>q===bankV22[i]));
  assert.equal(new Set(bankV22.map(q=>q.id)).size,583);
  const norm=(s:string)=>s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -27,7 +27,7 @@ test("v22 adds three documented Diyanet questions without mutating v21",()=>{
  }
 });
 test("new v22 save/old v21 answer history works",()=>{
- const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 72);
+ const start=1800000000000;let s=createSession("mixed",undefined,start,{difficulty:"medium"});assert.equal(s.bankVersion, 73);
  for(let i=0;i<10;i++){s=answerQuestion(s,0,start+1000*(i+1));if(i<9)s=advanceQuestion(s)}
  const record=finishSession(s);assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);
  const old=bankV21[0]!,order={[old.id]:old.options.map(o=>o.id)};

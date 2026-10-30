@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { questions } from "../src/content/questions";
+import { questions1500 as questions } from "../src/content/questions/questions-1500";
 import evidence from "../docs/source-verification/evidence/v71-batch-04-0151-0200.json";
 
 test("TDV and Diyanet historical/ritual evidence matches exactly 50 v71 question records 151–200", () => {

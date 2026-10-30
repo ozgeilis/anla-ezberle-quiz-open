@@ -119,7 +119,7 @@ test("Eight new drafts have traceable answers, sources and no overlap with publi
     assert.ok(source.supports.length >= 45);
     assert.ok(q.reviewNotes.includes("uzman"));
   }
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(questions.length, 1500);
   assert.equal(playableQuestions("production").length, 1500);
   assert.equal(playableQuestions("prototype").length, 1500);

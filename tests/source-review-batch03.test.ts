@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { questions } from "../src/content/questions";
+import { questions1500 as questions } from "../src/content/questions/questions-1500";
 import evidence from "../docs/source-verification/evidence/v71-batch-03-0101-0150.json";
 
 test("original Diyanet/TDV passages support questions 101–150 with exact saved answer IDs", () => {

@@ -223,7 +223,7 @@ const oracle =
 const oracleDataset = sql(
   "select dataset from quiz_private.live_config where singleton;",
 );
-const expectedOracleCount = { "bank-v41": 600, "bank-v72": 1500 }[
+const expectedOracleCount = { "bank-v41": 600, "bank-v72": 1500, "bank-v73": 1500 }[
   oracleDataset
 ];
 assert(

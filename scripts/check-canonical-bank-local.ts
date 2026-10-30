@@ -6,6 +6,7 @@ import { isAbsolute, relative, resolve, sep } from "node:path";
 import {
   buildOnlineContentRows,
   buildOnlineSeedSql,
+  canonicalBankForExport,
 } from "./online-content-export";
 import { liveContentSql } from "./live-content";
 import { legacyServerSeed } from "../tests/fixtures/content/legacy-server-content";
@@ -17,7 +18,7 @@ if (
   throw Error("Private output outside repository required");
 mkdirSync(output, { recursive: true, mode: 0o700 });
 const container = "supabase_db_anla-ezberle-quiz-dev-local";
-const db = `anla_canonical_v72_${Date.now()}`;
+const db = `anla_canonical_v73_${Date.now()}`;
 const docker = (args: string[], input?: string) => {
   const result = spawnSync("docker", args, {
     input,
@@ -83,8 +84,11 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
       "utf8",
     ),
   );
-  const asyncSeed = buildOnlineSeedSql(buildOnlineContentRows()),
-    liveSeed = liveContentSql();
+  const asyncSeed = buildOnlineSeedSql(
+      buildOnlineContentRows(canonicalBankForExport(72), 72),
+      72,
+    ),
+    liveSeed = liveContentSql(72);
   writeFileSync(resolve(output, "async-v72.private.sql"), asyncSeed, {
     mode: 0o600,
   });
@@ -96,6 +100,30 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
   sql(asyncSeed); // immutable shared rows + replay safe
   const result = sql(readFileSync("supabase/tests/canonical_bank.sql", "utf8"));
   console.log(result);
+  sql(
+    readFileSync(
+      "supabase/migrations/20261030000100_canonical_bank_v73.sql",
+      "utf8",
+    ),
+  );
+  const nextAsync = buildOnlineSeedSql(buildOnlineContentRows());
+  const nextLive = liveContentSql();
+  writeFileSync(resolve(output, "async-v73.private.sql"), nextAsync, {
+    mode: 0o600,
+  });
+  writeFileSync(resolve(output, "live-v73.private.sql"), nextLive, {
+    mode: 0o600,
+  });
+  sql(nextAsync);
+  sql(nextLive);
+  sql(nextAsync);
+  // Exercise the same server acceptance contract for both canonical releases.
+  const contract = readFileSync("supabase/tests/canonical_bank.sql", "utf8");
+  console.log(sql(contract.replaceAll("'bank-v72'", "'bank-v73'")));
+  console.log(
+    sql(readFileSync("supabase/tests/canonical_bank_v73.sql", "utf8")),
+  );
+  console.log(sql(contract));
   for (const file of [
     "async_recent_questions.sql",
     "live_recent_questions.sql",
@@ -103,7 +131,7 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
   ])
     console.log(sql(readFileSync(`supabase/tests/${file}`, "utf8")));
   console.log(
-    `PASS isolated v72 database ${db}; schema only, historical fixtures, migration, both seeds and SQL acceptance. No remote contact.`,
+    `PASS isolated v72/v73 database ${db}; schema only, historical fixtures, both canonical releases, immutable keys and SQL acceptance. No remote contact.`,
   );
 } catch (error) {
   writeFileSync(
@@ -112,7 +140,7 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
     { mode: 0o600 },
   );
   console.error(
-    `Local v72 acceptance failed; private SQL and error retained outside repository (${db}).`,
+    `Local canonical acceptance failed; private SQL and error retained outside repository (${db}).`,
   );
   // Preserve the DB for diagnosis without logging question data or credentials.
   process.exitCode = 1;

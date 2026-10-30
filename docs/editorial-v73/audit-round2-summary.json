@@ -1,0 +1,182 @@
+{
+  "reviewRound": 2,
+  "activeBankVersion": 72,
+  "candidateBankVersion": 73,
+  "total": 1500,
+  "individuallyReviewed": 1500,
+  "pendingReview": 0,
+  "sourceComparedThisRound": 1500,
+  "blocked": 0,
+  "flaggedBefore": 336,
+  "flaggedAfter": 171,
+  "previousPriorityCount": 220,
+  "revisedAgainstV72": 1039,
+  "stemsChangedAgainstV72": 489,
+  "correctAnswerWordingChangedAgainstV72": 492,
+  "explanationsChangedAgainstV72": 256,
+  "distractorsOnlyChangedAgainstV72": 353,
+  "automaticPatternCounts": {
+    "three-restrictive-distractors": {
+      "before": 25,
+      "after": 0
+    },
+    "only-correct-restrictive": {
+      "before": 2,
+      "after": 1
+    },
+    "three-absolute-distractors": {
+      "before": 0,
+      "after": 0
+    },
+    "only-correct-absolute": {
+      "before": 0,
+      "after": 0
+    },
+    "tone-3-negative": {
+      "before": 4,
+      "after": 0
+    },
+    "tone-3-positive": {
+      "before": 0,
+      "after": 0
+    },
+    "length-outlier": {
+      "before": 85,
+      "after": 14
+    },
+    "possible-synonyms": {
+      "before": 1,
+      "after": 0
+    },
+    "duplicate": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "byCategory": {
+    "quran_dualar": {
+      "total": 213,
+      "individuallyReviewed": 213,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 213,
+      "blocked": 0,
+      "flaggedBefore": 47,
+      "flaggedAfter": 25
+    },
+    "siyer_sahabe": {
+      "total": 313,
+      "individuallyReviewed": 313,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 313,
+      "blocked": 0,
+      "flaggedBefore": 45,
+      "flaggedAfter": 40
+    },
+    "peygamberler": {
+      "total": 271,
+      "individuallyReviewed": 271,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 271,
+      "blocked": 0,
+      "flaggedBefore": 81,
+      "flaggedAfter": 42
+    },
+    "fikih": {
+      "total": 161,
+      "individuallyReviewed": 161,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 161,
+      "blocked": 0,
+      "flaggedBefore": 40,
+      "flaggedAfter": 18
+    },
+    "iman_ahlak": {
+      "total": 260,
+      "individuallyReviewed": 260,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 260,
+      "blocked": 0,
+      "flaggedBefore": 85,
+      "flaggedAfter": 19
+    },
+    "tarih_medeniyet": {
+      "total": 282,
+      "individuallyReviewed": 282,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 282,
+      "blocked": 0,
+      "flaggedBefore": 38,
+      "flaggedAfter": 27
+    }
+  },
+  "byDifficulty": {
+    "easy": {
+      "total": 475,
+      "individuallyReviewed": 475,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 475,
+      "blocked": 0,
+      "flaggedBefore": 113,
+      "flaggedAfter": 45
+    },
+    "medium": {
+      "total": 789,
+      "individuallyReviewed": 789,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 789,
+      "blocked": 0,
+      "flaggedBefore": 186,
+      "flaggedAfter": 97
+    },
+    "hard": {
+      "total": 236,
+      "individuallyReviewed": 236,
+      "pendingReview": 0,
+      "sourceComparedThisRound": 236,
+      "blocked": 0,
+      "flaggedBefore": 37,
+      "flaggedAfter": 29
+    }
+  },
+  "styleOnlyGuesser": {
+    "before": {
+      "guessed": 80,
+      "correct": 75,
+      "abstained": 1420,
+      "conditionalAccuracy": 0.9375,
+      "limitation": "Lexical cues only, no religious knowledge; not a correctness or editorial approval test"
+    },
+    "after": {
+      "guessed": 0,
+      "correct": 0,
+      "abstained": 1500,
+      "conditionalAccuracy": null,
+      "limitation": "Lexical cues only, no religious knowledge; not a correctness or editorial approval test"
+    }
+  },
+  "criticalRemaining": "requires independent editorial decision",
+  "recordedMultipleCorrectRisks": {
+    "method": "Unique individual semantic decisions with the listed risk tags; not an exhaustive automatic truth claim",
+    "codes": [
+      "possible-multiple-correct",
+      "possible-subset-overlap",
+      "overlapping-groups",
+      "overlapping-options",
+      "geographic-option-ambiguity"
+    ],
+    "recorded": 8,
+    "stillBlocked": 0
+  },
+  "knownBlockingQuestions": 0,
+  "overlapReview": {
+    "candidatePairs": 443,
+    "automaticCandidatePairs": 382,
+    "retainedExplicitPairs": 61,
+    "individuallyReviewedPairs": 443,
+    "repeatedFactPairs": 0,
+    "pendingPairs": 0
+  },
+  "independentExpertApproved": 0,
+  "publicationApproved": false,
+  "releaseEnabled": false
+}

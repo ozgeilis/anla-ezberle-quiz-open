@@ -26,6 +26,7 @@ import {
   type GameRecord,
 } from "../src/domain/game/engine";
 import { gameQuestion } from "../src/content/questions/registry";
+import { questionsV72 } from "../src/content/questions/questions-v72";
 import { unseenQuestionPool } from "../src/domain/game/history";
 import { meaningFactAliasesV72 } from "../src/domain/game/meaning-facts-v72";
 import { emptyData, parseData, validRecord } from "../src/storage/schema";
@@ -66,7 +67,7 @@ test("v72: all 38 candidate citations match rendered Diyanet source evidence; on
       `/tefsir/sure/${surah}/ayet/${verse!.split("-")[0]}`,
     );
     assert(proof.observedVerseNumbers.includes(Number(verse!.split("-")[0])));
-    const published = questionById.get(q.id);
+    const published = questionsV72.find((old) => old.id === q.id);
     if (active.has(q.id)) {
       assert(published);
       assert.deepEqual(published.options, q.options);
@@ -82,7 +83,7 @@ test("v72: all 38 candidate citations match rendered Diyanet source evidence; on
   }
 });
 test("v72: exact versioned topic partitions, six counts and difficulty filters retain frozen v71 membership", () => {
-  assert.equal(BANK_VERSION, 72);
+  assert.equal(BANK_VERSION, 73);
   assert.equal(Object.keys(reviewedTopicByQuestionIdV72).length, 1500);
   assert.equal(Object.keys(reviewedTopicByQuestionIdV71).length, 1500);
   for (const old of questions1500)
@@ -134,7 +135,7 @@ test("v72: all 30 additions are reachable through real filtered games, completed
       random,
       channel: "production",
     });
-    assert.equal(s.bankVersion, 72);
+    assert.equal(s.bankVersion, 73);
     assert.equal(s.playCategoryVersion, 2);
     for (const id of s.questionIds) {
       assert(belongsToPlayCategory(id, "quran_dualar"));
@@ -241,11 +242,13 @@ test("v72: old broad and topic games, pre-fix PR82 previews, answer orders, scor
     {
       ...current,
       id: "quiz-preview-broad-v72",
+      bankVersion: 72,
       playCategoryVersion: 1 as const,
     },
     {
       ...topic,
       id: "quiz-preview-topic-v72",
+      bankVersion: 72,
       learningTopicVersion: 2 as const,
     },
   ];

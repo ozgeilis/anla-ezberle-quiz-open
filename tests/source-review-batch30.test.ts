@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { questions } from "../src/content/questions";
+import { questions1500 as questions } from "../src/content/questions/questions-1500";
 import review from "../docs/source-verification/evidence/v71-batch-30-1451-1500.json";
 
 test("manually source-read v71 batch 30 covers exactly canonical questions 1451–1500", () => {

@@ -46,7 +46,7 @@ try {
             ),
           );
           await p.screenshot({
-            path: join(root, `v72-quiz-${width}-${theme}.png`),
+            path: join(root, `v73-quiz-${width}-${theme}.png`),
           });
         }
         await p.getByRole("button", { name: /^A\. / }).click();
@@ -58,7 +58,7 @@ try {
         JSON.parse(localStorage.getItem("@anla-ezberle-quiz/progress/v1")),
       );
       const game = data.games[0];
-      assert.equal(game.bankVersion, 72);
+      assert.equal(game.bankVersion, 73);
       assert.equal(game.questionIds.length, 10);
       assert.equal(new Set(game.questionIds).size, 10);
       assert(
@@ -67,7 +67,7 @@ try {
         ),
       );
       await p.screenshot({
-        path: join(root, `v72-result-${width}-${theme}.png`),
+        path: join(root, `v73-result-${width}-${theme}.png`),
       });
       await p.reload();
       assert.deepEqual(
@@ -81,7 +81,7 @@ try {
       checks.push({
         width,
         theme,
-        bankVersion: 72,
+        bankVersion: 73,
         questions: 10,
         savedAndReloaded: true,
       });
@@ -96,7 +96,7 @@ try {
     ),
   );
   console.log(
-    `PASS ${checks.length} real Chromium offline v72 rounds, saved history/reload and light/dark screenshots.`,
+    `PASS ${checks.length} real Chromium offline v73 rounds, saved history/reload and light/dark screenshots.`,
   );
 } finally {
   await browser.close();

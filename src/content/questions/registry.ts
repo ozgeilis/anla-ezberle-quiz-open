@@ -70,6 +70,7 @@ import { bankV69 } from "./archive/bank-v69";
 import { bankV70 } from "./archive/bank-v70";
 import { questions1500 } from "./questions-1500";
 import { questionsV72 } from "./questions-v72";
+import { questionsV73 } from "./questions-v73";
 import type { Question } from "./model";
 
 // Banka sürümleri bağımsız çözülür: yeni soru eklemek eski cevapları değiştirmez.
@@ -145,12 +146,13 @@ const snapshots: Readonly<Record<number, readonly Question[]>> = {
   70: bankV70,
   71: questions1500,
   72: questionsV72,
+  73: questionsV73,
 };
 export const SUPPORTED_BANK_VERSIONS = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
   23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
   42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
-  61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72,
+  61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
 ] as const;
 
 export interface GameContent {

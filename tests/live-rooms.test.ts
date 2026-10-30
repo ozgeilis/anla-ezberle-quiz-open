@@ -65,7 +65,7 @@ test("5/10/15 live stage quotas preserve ratios and never silently widen the lev
 test("live export preserves all 1500 canonical questions, sources and answers without editing the bank", () => {
   const { rows, pools, version } = liveContent();
   assert.equal(rows.length, 1500);
-  assert.equal(version, 72);
+  assert.equal(version, 73);
   assert.equal(questions.length, 1500);
   assert.deepEqual(questions1500.slice(0, bankV41.length), bankV41);
   assert.equal(pools.length, 264);

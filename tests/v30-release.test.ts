@@ -9,7 +9,7 @@ import {belongsToLearningTopic} from "../src/domain/game/learning";
 import {createSession,answerQuestion,advanceQuestion,finishSession} from "../src/domain/game/engine";
 import {appendGame,emptyData,parseData} from "../src/storage/schema";
 test("v30 appends two cited women-companion questions and freezes v29 bank",()=>{
- assert.equal(BANK_VERSION, 72);assert.equal(bankV29.length,597);assert.equal(bankV30.length,599);
+ assert.equal(BANK_VERSION, 73);assert.equal(bankV29.length,597);assert.equal(bankV30.length,599);
  assert.equal(questions.length, 1500);assert.equal(playableQuestions().length, 1500);
  assert.equal(publishedNewQuestionsV30.length,2);
  assert.ok(bankV29.every((q,i)=>q===bankV30[i]));
@@ -30,7 +30,7 @@ test("v30 appends two cited women-companion questions and freezes v29 bank",()=>
  }
 });
 test("v30 saved game and archived v29 scores stay compatible",()=>{
- const t=1800000000000;let session=createSession("mixed",undefined,t,{difficulty:"medium"});assert.equal(session.bankVersion, 72);
+ const t=1800000000000;let session=createSession("mixed",undefined,t,{difficulty:"medium"});assert.equal(session.bankVersion, 73);
  for(let i=0;i<10;i++){session=answerQuestion(session,0,t+1000*(i+1));if(i<9)session=advanceQuestion(session)}
  const record=finishSession(session);
  assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),record))).games[0],record);

@@ -37,6 +37,7 @@ const contentScopeLabel: Record<OnlineMatch["scope"], string> = {
   synthetic_test: "Geliştirme soru havuzu",
   owner_approved_v13: "Sunucuda doğrulanan yarışma",
   "bank-v72": "Sunucuda doğrulanan yarışma",
+  "bank-v73": "Sunucuda doğrulanan yarışma",
 };
 
 const pendingKey = (actor: string, match: string) =>

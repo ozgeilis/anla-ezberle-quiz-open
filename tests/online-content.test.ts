@@ -5,7 +5,7 @@ import { mkdtemp, readFile, stat, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
-import { questions as bankV13 } from "../src/content/questions";
+import { questions as canonicalQuestions } from "../src/content/questions";
 import {
   buildOnlineContentRows,
   buildOnlineSeedSql,
@@ -53,7 +53,7 @@ test("online content staging uses exactly 1500 source-linked, conditionally owne
   const rows = buildOnlineContentRows();
   assert.equal(rows.length, 1500);
   assert.equal(new Set(rows.map((q) => q.id)).size, 1500);
-  assert.deepEqual([...new Set(rows.map((q) => q.contentScope))], ["bank-v72"]);
+  assert.deepEqual([...new Set(rows.map((q) => q.contentScope))], ["bank-v73"]);
   assert.equal(rows.filter((q) => q.categoryId === "quran").length > 100, true);
   assert.equal(
     rows.filter((q) => q.categoryId === "prophets").length > 100,
@@ -62,7 +62,7 @@ test("online content staging uses exactly 1500 source-linked, conditionally owne
   assert.ok(rows.every((q) => q.version >= 1 && q.options.length === 4));
   for (const row of rows) {
     assert.equal(new Set(row.options.map((o) => o.id)).size, 4);
-    const original = bankV13.find((q) => q.id === row.id)!;
+    const original = canonicalQuestions.find((q) => q.id === row.id)!;
     assert.equal(
       row.options.find((o) => o.id === row.correctOptionId)?.text,
       original.options.find((o) => o.id === original.correctOptionId)?.text,
@@ -78,12 +78,12 @@ test("online content staging uses exactly 1500 source-linked, conditionally owne
 
 test("private seed is replayable, guards immutable conflicts and never activates online content", () => {
   const sql = buildOnlineSeedSql(buildOnlineContentRows());
-  assert.ok(sql.startsWith("-- v72"));
+  assert.ok(sql.startsWith("-- v73"));
   assert.ok(sql.includes("BEGIN;"));
   assert.ok(sql.includes("COMMIT;"));
   assert.ok(sql.includes("ON CONFLICT DO NOTHING"));
   assert.ok(sql.includes("Immutable question/version conflict"));
-  assert.ok(sql.includes("bank-v72"));
+  assert.ok(sql.includes("bank-v73"));
   assert.equal(
     sql.includes("UPDATE quiz_private.online_content_config"),
     false,
@@ -94,18 +94,18 @@ test("private seed is replayable, guards immutable conflicts and never activates
 
 test("online importer rejects incomplete or unsigned question collections", () => {
   assert.throws(
-    () => buildOnlineContentRows(bankV13.slice(0, 1499)),
+    () => buildOnlineContentRows(canonicalQuestions.slice(0, 1499)),
     /exactly 1500/,
   );
   assert.throws(
-    () => buildOnlineContentRows([...bankV13.slice(0, 1499), bankV13[0]!]),
+    () => buildOnlineContentRows([...canonicalQuestions.slice(0, 1499), canonicalQuestions[0]!]),
     /Duplicate/,
   );
   assert.throws(
     () =>
       buildOnlineContentRows([
-        ...bankV13.slice(0, 1499),
-        { ...bankV13[1499]!, reviewStatus: "draft" },
+        ...canonicalQuestions.slice(0, 1499),
+        { ...canonicalQuestions[1499]!, reviewStatus: "draft" },
       ]),
     /Source/,
   );
