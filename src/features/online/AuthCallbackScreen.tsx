@@ -1,3 +1,4 @@
+import { completeGoogleAuth, hasGoogleAttempt } from "./googleAuth";
 import React, { useEffect, useRef, useState } from "react";
 import { Platform, TextInput, View } from "react-native";
 import * as Linking from "expo-linking";
@@ -38,6 +39,7 @@ export function AuthCallbackScreen() {
       window.removeEventListener("popstate", changed);
     };
   }, []);
+  const [isGoogleCallback, setIsGoogleCallback] = useState(false);
   const [message, setMessage] = useState(
     "Doğrulama bağlantısı kontrol ediliyor…",
   );
@@ -61,6 +63,7 @@ export function AuthCallbackScreen() {
     }
     processed.current.add(value);
     const revision = ++generation.current;
+    let googleCallback = false;
     const verify = async () => {
       // Even a misconfigured build must not leave email credentials in history.
       if (Platform.OS === "web")
@@ -73,6 +76,16 @@ export function AuthCallbackScreen() {
       setMessage("Doğrulama bağlantısı kontrol ediliyor…");
       const client = onlineClient();
       if (!client) throw new Error("Servis yapılandırılmadı.");
+      googleCallback =
+        candidate?.searchParams.get("flow") === "google" ||
+        (await hasGoogleAttempt());
+      setIsGoogleCallback(googleCallback);
+      if (googleCallback) {
+        await completeGoogleAuth(value);
+        if (mounted.current && generation.current === revision)
+          router.replace("/profile");
+        return;
+      }
       const { recovery: recovering } = await verifyEmailLink(
         value,
         client.auth,
@@ -105,11 +118,13 @@ export function AuthCallbackScreen() {
           tone: "error",
           title: "Doğrulama Başarısız",
           message: text,
-          actionLabel: "Yeni Bağlantı İste",
+          actionLabel: googleCallback
+            ? "Giriş Ekranına Dön"
+            : "Yeni Bağlantı İste",
         });
       }
     });
-  }, [incoming, webUrl]);
+  }, [incoming, webUrl, router]);
   return (
     <Page
       title={recovery ? "Yeni Şifre Oluştur" : "Hesabını doğrula"}
@@ -204,7 +219,7 @@ export function AuthCallbackScreen() {
             onPress={() => router.replace("/profile")}
           />
         )}
-        {!verified && (
+        {!verified && !isGoogleCallback && (
           <>
             <Button
               title="Yeni Doğrulama Bağlantısı İste"
@@ -229,7 +244,10 @@ export function AuthCallbackScreen() {
         onAction={() => {
           const success = feedback?.tone === "success";
           setFeedback(null);
-          router.replace(success ? "/profile" : "/online/verify-email");
+          let destination: "/profile" | "/online/verify-email" | "/online" =
+            success ? "/profile" : "/online/verify-email";
+          if (!success && isGoogleCallback) destination = "/online";
+          router.replace(destination);
         }}
       />
     </Page>

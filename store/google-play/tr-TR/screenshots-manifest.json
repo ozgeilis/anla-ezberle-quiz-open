@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-30",
+  "status": "prepared_not_uploaded",
+  "captureType": "real_native_android_emulator",
+  "api": 36,
+  "physicalDeviceAcceptance": false,
+  "viewportPixels": [
+    1080,
+    1920
+  ],
+  "densityDpi": 400,
+  "fontScale": 1,
+  "theme": "light",
+  "data": "Guest profile and actual locally completed test rounds; no production user data or injected statistics",
+  "apkBuildId": "7b26b1a6-947e-4602-ab46-b0570a7bba52",
+  "apkSha256": "ec51741fdac9e073e36e3cb1b80989df8d6af2721be65155cb75932cb630c80b",
+  "sourceCommit": "d5edeb1b536b91ed378ac291c03ff3ee44b13a0c",
+  "imageTransformation": "PNG channel encoding only; identical RGB pixels, no resize, crop, retouch or generated UI",
+  "screenshots": [
+    {
+      "file": "phone-screenshots/01-ana-sayfa.png",
+      "sourceCapture": "store-01-ana-sayfa.png",
+      "width": 1080,
+      "height": 1920,
+      "pngBits": 24,
+      "alpha": false,
+      "sourceSha256": "22f4a83185e737bda597529b3c2da6b3022d6841adaf0c3679aa0e04174bcccb",
+      "sha256": "3b845fb642028b29b2b01bd2f536008c80d4c8c222f21172e8b1840e1eea96fd",
+      "rgbSha256": "403a6e8abcb99541a40c07d982818d51e9eb87797fda0da358d442854ee64691",
+      "rgbPixelsUnchanged": true
+    },
+    {
+      "file": "phone-screenshots/02-kategoriler.png",
+      "sourceCapture": "store-02-kategoriler.png",
+      "width": 1080,
+      "height": 1920,
+      "pngBits": 24,
+      "alpha": false,
+      "sourceSha256": "c56265d3cb780dfdd6ba858dfa1af462e3b75a8e2d599bcdff9872599a19f5ee",
+      "sha256": "d6d8fe731e18610a6fffdc6eac546c1c2481f168673990e958c6d257130bfb51",
+      "rgbSha256": "26a4b9af574bf2f7bdc32e5a01d3ecd754a144fb8c8128e75a22d4a182a1c581",
+      "rgbPixelsUnchanged": true
+    },
+    {
+      "file": "phone-screenshots/03-quiz.png",
+      "sourceCapture": "store1080-quiz-question.png",
+      "width": 1080,
+      "height": 1920,
+      "pngBits": 24,
+      "alpha": false,
+      "sourceSha256": "aa1efb227b080541f87174150c4d39152d1ab7c50472b2549af1285747193580",
+      "sha256": "8e3ad1767ff870ce7e47c03a1547562a80273ba6ecca3a4c27dcdedfb9d76941",
+      "rgbSha256": "64ccc636566cfaa51fffbafbea4f84cf04b1568490cdf5170838507f25472899",
+      "rgbPixelsUnchanged": true
+    },
+    {
+      "file": "phone-screenshots/04-sonuc.png",
+      "sourceCapture": "store1080-mixed-outcomes-result.png",
+      "width": 1080,
+      "height": 1920,
+      "pngBits": 24,
+      "alpha": false,
+      "sourceSha256": "f510e3bc53f82be8dd589bfc22372f481f59a1399908d885e488c00d960b62d6",
+      "sha256": "c1d11e77e48d635c1997eb3ba93e8dd5eb3eef12a8e01720b36ff8e7eb16de0c",
+      "rgbSha256": "7dad7b152024ed63baa2f0a5bea1bb2628068a7e79f59c5e536f11d13faa6f02",
+      "rgbPixelsUnchanged": true
+    },
+    {
+      "file": "phone-screenshots/05-profil.png",
+      "sourceCapture": "store-03-profil.png",
+      "width": 1080,
+      "height": 1920,
+      "pngBits": 24,
+      "alpha": false,
+      "sourceSha256": "6dcbcfcd9f9bc6c2ab32ad7ea3353ae9f0b1752b125059f63df1377cbb3ef43e",
+      "sha256": "bc771798d14c37a6646b98a0513fdffa61abf1681e8f255b864b069f665375cd",
+      "rgbSha256": "9e8c6a8d95d11b8d974b3a6f4ccd0aa168d2a1da25787faa821adb876c985f0a",
+      "rgbPixelsUnchanged": true
+    },
+    {
+      "file": "phone-screenshots/06-rozetler.png",
+      "sourceCapture": "store-04-rozetler.png",
+      "width": 1080,
+      "height": 1920,
+      "pngBits": 24,
+      "alpha": false,
+      "sourceSha256": "91c6342f8d6e0bc87543b5fd0cd52be3bba2752e4f2cdfdc751b99bedc85f096",
+      "sha256": "d3fd50bd1c827c61348a1d4c72106849bf138eed190facb07695f360900a2760",
+      "rgbSha256": "4c30a6972a2e8cda1cf2f7a3df0aaff4690f68d686d702f41790c2beda845831",
+      "rgbPixelsUnchanged": true
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import { GoogleSignInButton } from "./GoogleSignInButton";
+import { clearGoogleAttempt } from "./googleAuth";
 import { RoundResultBadge } from "../results/RoundResultBadge";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { duelAudioCues } from "../audio/events";
@@ -5,7 +7,7 @@ import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { passwordError, validEmail } from "./account";
 import { useInbox } from "./InboxProvider";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Share, TextInput, View } from "react-native";
+import { Platform, Share, TextInput, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import * as Linking from "expo-linking";
 import { randomUUID } from "expo-crypto";
@@ -63,6 +65,15 @@ const stateLabel: Record<OnlineMatch["state"], string> = {
 };
 
 export function OnlineScreen() {
+  useEffect(() => {
+    if (Platform.OS !== "web") return;
+    // Returning from the provider (including the browser's back/forward cache)
+    // cancels its verifier before a different email authentication flow starts.
+    const cancel = () => void clearGoogleAttempt().catch(() => {});
+    cancel();
+    window.addEventListener("pageshow", cancel);
+    return () => window.removeEventListener("pageshow", cancel);
+  }, []);
   const { session } = useOnlineAuth();
   const { returnTo, invite, match } = useLocalSearchParams<{
     returnTo?: string;
@@ -359,7 +370,7 @@ function OnlineAccountScreen() {
             ? contentScopeLabel[match.scope]
             : "Sunucuda doğrulanan çevrimiçi düello"}
         </Chip>
-        {!match && (
+        {!match && auth.session && (
           <LinearGradient
             colors={gradients.hero}
             style={{
@@ -396,7 +407,7 @@ function OnlineAccountScreen() {
             </Txt>
           </LinearGradient>
         )}
-        {!match && (
+        {!match && auth.session && (
           <Card>
             <Txt>
               Soru havuzunu sunucu belirler; maçta kullanılan kapsam maç
@@ -435,7 +446,10 @@ function OnlineAccountScreen() {
         ) : !auth.ready ? (
           <Txt>Güvenli oturum kontrol ediliyor…</Txt>
         ) : !auth.session ? (
-          <Card style={{ gap: 16 }}>
+          <Card style={{ gap: 12 }}>
+            <Txt size={18} weight="bold">
+              Anla &amp; Ezberle
+            </Txt>
             <Txt size={22} weight="heavy">
               {register ? "Hesap oluştur" : "Giriş yap"}
             </Txt>
@@ -490,11 +504,6 @@ function OnlineAccountScreen() {
                     })
                   }
                 />
-                <Button
-                  title="Giriş ekranına dön"
-                  variant="outline"
-                  onPress={() => setRegister(false)}
-                />
               </>
             ) : (
               <>
@@ -510,15 +519,9 @@ function OnlineAccountScreen() {
                     }, true)
                   }
                 />
-                <Button
-                  title="Hesap Oluştur"
-                  variant="outline"
-                  disabled={busy}
-                  onPress={() => setRegister(true)}
-                />
-                <Button
-                  title="Şifremi Unuttum"
-                  variant="outline"
+
+                <Tap
+                  label="Şifremi Unuttum"
                   disabled={busy}
                   onPress={() =>
                     router.push({
@@ -526,19 +529,47 @@ function OnlineAccountScreen() {
                       params: { email },
                     })
                   }
-                />
-                <Button
-                  title="E-postamı Doğrula"
-                  variant="outline"
-                  disabled={busy}
-                  onPress={() =>
-                    router.push({
-                      pathname: "/online/verify-email",
-                      params: { email },
-                    })
-                  }
-                />
+                  style={{ justifyContent: "center" }}
+                >
+                  <Txt size={14} color={theme.accent}>
+                    Şifremi Unuttum
+                  </Txt>
+                </Tap>
               </>
+            )}
+            <GoogleSignInButton
+              busy={busy}
+              enabled={auth.googleEnabled}
+              onPress={() => void run(() => auth.signInGoogle(), true)}
+            />
+            <Tap
+              label={register ? "Giriş ekranına dön" : "Hesap Oluştur"}
+              disabled={busy}
+              onPress={() => setRegister(!register)}
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
+              <Txt size={14} color={theme.accent}>
+                {register
+                  ? "Hesabın var mı? Giriş Yap"
+                  : "Hesabın yok mu? Kayıt Ol"}
+              </Txt>
+            </Tap>
+            {!register && (
+              <Tap
+                label="E-postamı Doğrula"
+                disabled={busy}
+                onPress={() =>
+                  router.push({
+                    pathname: "/online/verify-email",
+                    params: { email },
+                  })
+                }
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
+                <Txt size={12} color={theme.muted}>
+                  E-postamı Doğrula
+                </Txt>
+              </Tap>
             )}
           </Card>
         ) : (

@@ -1,0 +1,25 @@
+{
+  "buildId": "7b26b1a6-947e-4602-ab46-b0570a7bba52",
+  "apkSourceCommit": "d5edeb1b536b91ed378ac291c03ff3ee44b13a0c",
+  "reconciledHead": "e2ca72473a1e541e7a154523db9723a4aa6d231d",
+  "apkSha256": "ec51741fdac9e073e36e3cb1b80989df8d6af2721be65155cb75932cb630c80b",
+  "apkBytes": 111021669,
+  "runtimeTreeSha256": "e5a75338ce08abf2ea970a71b8c60b0b1f5c7da9f99ac61604cf0a50951e749d",
+  "comparedPaths": [
+    "src",
+    "assets",
+    "app.json",
+    "app.config.ts",
+    "eas.json",
+    "package.json",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "metro.config.js",
+    "babel.config.js",
+    "config",
+    "supabase"
+  ],
+  "runtimeIdentical": true,
+  "scope": "Git tree identity; not a new binary build or physical acceptance",
+  "storeApproved": false
+}

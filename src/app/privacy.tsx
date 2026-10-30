@@ -14,7 +14,7 @@ export default function PrivacyScreen() {
         <Txt weight="heavy" size={20}>
           Verilerin ve hesabın üzerinde kontrol sende
         </Txt>
-        <Txt size={12}>Son güncelleme: 25 Ekim 2026</Txt>
+        <Txt size={12}>Son güncelleme: 30 Ekim 2026</Txt>
         <Txt>
           Anla & Ezberle hizmetini Kovynel Studio sunar. Gizlilik, erişim,
           düzeltme ve hesap silme talepleri için kovynelstudio@gmail.com
@@ -39,6 +39,13 @@ export default function PrivacyScreen() {
           oda/maç yanıtları ve sunucuda hesaplanan puanlar ilgili oyun ve sosyal
           özellikleri sağlamak için saklanır. Mikrofon kaydı yapılmaz.
         </Txt>
+        <Txt>
+          Google ile giriş kullanılabildiğinde Google hesabının doğrulanmış
+          e-postası, hesap kimliği ve izin verdiğin temel profil bilgileri,
+          Supabase üzerinden oturum açmak için işlenir. Google parolan
+          uygulamaya aktarılmaz. Google ile yeni hesap oluşturma ve çevrimiçi
+          erişim sunucu izinlerine bağlıdır.
+        </Txt>
         <Txt weight="heavy">Kimler görebilir?</Txt>
         <Txt>
           Arama, arkadaşlık, oda ve sıralama ekranları yalnız yetkilendirilmiş
@@ -51,9 +58,9 @@ export default function PrivacyScreen() {
         </Txt>
         <Txt weight="heavy">Telefon bildirimleri</Txt>
         <Txt>
-          Gerçek push gönderimi bu sürümün hazırlık aşamasındadır; FCM/APNs ve
-          fiziksel cihaz kabulü tamamlanmadan etkinleştirilmez.
-          Etkinleştirildiğinde yalnız isteğin ve telefon izninle cihaz bildirim
+          Push gönderimi şu anda yalnız izinli kapalı test hesapları için
+          kullanılabilir; genel kullanıma açık değildir. Yalnız isteğin ve
+          telefon izninle cihaz bildirim
           tokenı, bağlı oturum kimliği, platform ve hesap bazlı bildirim
           tercihleri saklanır. Gönderim için token ve genel olay mesajı Expo
           Push Service üzerinden Google FCM veya Apple APNs ile işlenir;
@@ -74,9 +81,9 @@ export default function PrivacyScreen() {
         <Txt>
           Profil → Ayarlar → Hesap → Hesabımı Sil yolunu veya aşağıdaki web
           sayfasını kullanabilirsin. Uygulamayı yeniden yüklemek gerekmez. İki
-          onay ve güncel hesap parolası istenir. Otomatik silme e-posta/parola
-          hesaplarını destekler; ek kimlik doğrulaması gereken hesaplarda destek
-          üzerinden sahiplik doğrulaması gerekir. Servis durumu ve işlem sonucu
+          onay ve yeniden kimlik doğrulaması istenir. E-posta/parola hesabında
+          güncel parola; desteklenen Google hesabında ise doğrulanmış hesap
+          e-postasına gönderilen tek kullanımlık kod kullanılır. Servis durumu ve işlem sonucu
           silme sayfasında gösterilir. Destek talebi göndermek hesabın hemen
           silindiği anlamına gelmez.
         </Txt>

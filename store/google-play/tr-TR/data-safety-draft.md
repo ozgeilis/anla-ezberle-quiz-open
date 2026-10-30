@@ -1,12 +1,37 @@
-# Veri Güvenliği / hesap silme taslağı — yayımlanmadı
+# Data Safety çalışma formu — 30 Ekim 2026
 
-Kovynel Studio / Anla & Ezberle. Play Console’a gönderilmiş veya hukuken onaylanmış beyan değildir.
+**Taslak; Console'a gönderilmedi.** Ürün sahibi hedef kitleye 13 yaş altını da dahil etti. Families incelemesi tamamlanmadan kesin beyan değildir. “Hiç veri toplanmaz” seçilmemeli; kapalı test de Data Safety gerektirir.
 
-- Yerel solo kayıtları, XP/rozet, avatar, tema ve efekt tercihleri cihazda; otomatik rekabetçi puan aktarımı yok.
-- Çevrimiçi kimlik/e-posta, profil, kullanıcı adı/avatar/görünürlük, arkadaşlık, bildirim, davet, maç/oda yanıt ve puanları Supabase ile işlenir. “Hiç veri toplanmaz” seçilmez.
-- Ses kaydı yok. Kısa efektler ve tik cihazda sentezden üretilmiş dosyalardan oynatılır; mikrofon izni yok. Menü müziği kaldırıldı.
-- Yeni hesap silme: Auth hesabı/ilişkili kişisel kayıtlar atomik silinir; kalan oyuncuların puanları korunur, ortak kayıtlardan silinen kişinin bağlantıları çıkarılır. Cihaz yerel geçmişi ayrı korunur. Bu süreç yalnız yerel sentetik hesaplarla doğrulandı; production etkin değil.
-- Web silme yolu `/account-delete`, gizlilik bilgisi `/privacy` hazırlandı; mevcut Vercel adresinde çalıştığı deployment onayından sonra doğrulanmalı. Yayınlanmadan bu URL’ler çalışan silme hizmeti diye Play Console’a girilmez.
-- Destek/veri sorumlusu iletişim adresi, operasyon/güvenlik logları ve yedek saklama süreleri, hizmet sağlayıcı silme prosedürleri, veri aktarımı/paylaşım sınıflandırması ve nihai politika metni ayrıca tamamlanmalı. Süre veya iletişim bilgisi uydurulmadı.
+| Veri | İşleme / amaç | Sınır |
+| --- | --- | --- |
+| E-posta ve Auth kullanıcı kimliği | Supabase Auth; hesap yönetimi, doğrulama, güvenlik | Misafir solo oyun için giriş zorunlu değil |
+| Görünen ad, kullanıcı adı, seçili avatar | Profil ve oyuncu bulma | Avatarlar paket içi; fotoğraf yükleme veya telefon rehberi izni bulunmadı |
+| Arkadaşlık, davet, bildirim ve oda üyeliği | Sosyal oyun | Telefon rehberi toplanmıyor; uygulama içi sosyal grafiğin form veri türleriyle eşleştirilmesi doğrulanmalı |
+| Maç/oda yanıtları, skor ve sıralama tercihi | Oyun işlevi ve hile önleme | Yerel solo XP otomatik sunucu puanına dönüşmez |
+| Push tokenı, platform, oturum bağlantısı ve tercihler | İzinli telefon bildirimleri | Expo Push Service/FCM; genel gönderim kapalı, test sınırlaması korunur |
+| Teknik erişim/hata/güvenlik kayıtları | Supabase, Vercel ve yapılandırılmış hizmet sağlayıcıların işletimi | Kesin iç log saklama süreleri teyit bekliyor |
+| Yerel geçmiş, XP, rozet, tema, efekt tercihleri | Cihazda oyun devamlılığı | Hesaptan bağımsız yerel veriler otomatik çevrimiçi aktarılmaz |
 
-Resmî gereksinim: https://support.google.com/googleplay/android-developer/answer/13327111
+Parola özel oyun tablosunda veya uygulama logunda tutulmaz; doğrulama Auth sağlayıcısındadır. Native pakette yönetici/service-role/OAuth secret bulunmamalı; gerçek binary ayrıca taranmalıdır.
+
+## Form kararları ve açık inceleme
+
+- **Collected:** e-posta, kullanıcı kimliği, çevrimiçi ad/profil, oyun etkileşimleri ve izinli bildirim cihaz kimliği için evet. Amaçlar uygulama işlevi, hesap yönetimi ve güvenliktir; reklam amacı kodda bulunmadı.
+- **Shared:** hizmet sağlayıcı istisnası bütün işleme için otomatik “hayır” değildir. Expo/Google/Supabase/Vercel ve kullanıcının isteğiyle diğer oyunculara gösterilen alanlar, Google'ın form tanımıyla karşılaştırılmalı. Nihai paylaşım beyanı burada yapılmıyor.
+- **Encryption in transit:** istemci uçları HTTPS/WSS kullanır. Bu, uçtan uca şifreleme veya veritabanında yönetici erişimi bulunmaması iddiası değildir.
+- **Deletion:** mevcut güvenli akış Auth/ilişkili kişisel verileri siler; diğer oyuncunun puanını korur. Bağımsız yerel solo geçmişi ayrıca korunur ve açıklanır.
+- **Religious beliefs:** kullanıcının inancı için form alanı yok. Quiz yanıtlarından böyle bir profil çıkarılmadığı işletme açısından teyit edilmeli; uygulamanın dinî konusu bu verileri beyan dışı bırakmaz.
+- **Advertising ID / microphone / location:** reklam veya kayıt işlevi yok; devralınan izinler gerçek release manifestinde ayrıca kontrol edilmeli.
+- **Hedef kitle:** ürün sahibinin son açıklaması ana hedefin yetişkinler olduğu, uygulamanın çocuklara yönelik tasarlanmadığı ve okuyabilen çocukların da oynayabileceğidir. Bu açıklama otomatik çocuk-hedefli beyanına dönüştürülmez. Play yaş grupları ve mevcut çocuk kategorisi/görsellerinin beyanla uyumu henüz kesinleştirilmedi. Çocuk yaş grupları ayrıca hedeflenecekse yaş ayrımı, uygun SDK/veri işleme ve sosyal yetişkin kontrolleri doğrulanmadan Families uygunluğu beyan edilmez.
+
+## Canlı kontrol ve iletişim
+
+30.10.2026 salt okunur kontrol: sıralama ve hesap silme etkin; e-posta enrollment yeteneği açık; Google yeni kayıt ve genel push kapalı. Yeni üretim hesabı oluşturulmadı/silinmedi.
+
+- Gizlilik: https://anla-ezberle-quiz.vercel.app/privacy
+- Hesap silme: https://anla-ezberle-quiz.vercel.app/account-delete
+- Destek: **kovynelstudio@gmail.com** (yayımlanması onaylı iş adresi)
+
+HTTP erişimi, gerçek Google hesabı ile uçtan uca silme kabulü veya güncel çocuk gizliliği beyanı yerine geçmez.
+
+Kaynaklar: [Data Safety](https://support.google.com/googleplay/android-developer/answer/10787469), [Families](https://support.google.com/googleplay/android-developer/answer/9893335), [hesap silme](https://support.google.com/googleplay/android-developer/answer/13327111).
