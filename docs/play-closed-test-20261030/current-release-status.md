@@ -1,6 +1,6 @@
 # Kapalı test gönderim durumu — 31 Ekim 2026
 
-**HENÜZ YAYINLANMADI.** IARC ve Data Safety dahil Console paneli12/13; yeni EAS test APK'sı hazır. Ayrı onayla kapalı test AAB derlemesi başladı; henüz artifact doğrulanmadı.
+**HENÜZ YAYINLANMADI.** IARC ve Data Safety dahil Console paneli12/13; yeni EAS test APK'sı ve **versionCode2 kapalı test AAB'si hazır**. Ayrı onayla üretilen gerçek AAB doğrulandı; Play'e yüklenmedi.
 
 ## Tamamlanan
 
@@ -16,13 +16,15 @@
 
 ## Yayın öncesi açık işler
 
-1. Fiziksel Samsung mevcut değil. Son APK'nın fiziksel kabulü veya hangi emülatör kanıtının yeterli sayılacağına dair açık insan kararı bekliyor. Native OAuth/iOS, fiziksel ses ve raporda belirtilen kalan reklam senaryoları tamamlandı sayılmaz.
-2. Ürün sahibi emülatör kanıtını yalnız AAB üretimi için kabul etti. [Build7d8591e7](closed-test-aab-run-20261031.md) kaynak8d13fc2/versionCode2 ile IN_PROGRESS. Snapshot onaylıydı; istek alınınca yerel kapı yeniden kapatıldı. Artifact, imza/sürüm ve kesin AAB doğrulaması bekliyor; Play yüklemesi yok.
+1. Fiziksel Samsung mevcut değil. Ürün sahibi emülatör kanıtını yalnız bir AAB üretimi için kabul etti; fiziksel kabul bekliyor. Native OAuth/iOS, fiziksel ses ve raporda belirtilen kalan reklam senaryoları tamamlandı sayılmaz.
+2. [AAB build7d8591e7](closed-test-aab-run-20261031.md) **FINISHED**, kaynak8d13fc2/versionCode2, SHA `7cfdf8d109350ddd8cb81360e90abd9a48b2317a2b0ae421b917ba95a57ffd1a`. bundletool/imza/manifest/statik16KB ve kabul APK'sıyla Hermes+52 native64+11 ses içerik eşleşmesi PASS. AAB kaynaklı yerel debug APK Android16 yeni AVD'de18/18 düzen testi, quiz/sonuç/inceleme/kayıt kalıcılığı geçti. API34 EAS APK'sıyla toplam36 düzen durumu; fiziksel veya Play-signed/16KB çekirdek kabulü değildir. Tek-build kapısı yeniden false; Play yüklemesi yok. Açık P2: açık temada ikincil kişisel rekor metni düşük kontrastlı.
 3. Ücretsiz sayfası ile paneldeki12/13 fiyatlandırma görevi tutarsızlığı var; bu, ücretsiz test için satıcı hesabı gerektiği şeklinde yorumlanmadı. Alpha sayfasında Yeni sürüm oluştur etkin. Ödeme profili açılmadı.
 4. Mevcut Alpha kanalında yayımlanmış sürüm yok. Alpha kanalında yalnız Türkiye kaydedildi ve hedef ülke sayısı1 doğrulandı; tester grubu henüz hazır değil. Ayrı kesin SHA/track gönderim onayı gerekir. 0 tester;12 kişinin kesintisiz14 günlük katılım süresi başlamadı. Üretime başvuru kapalı.
 
 Hiçbir Play sürümü incelemeye gönderilmedi. Main/Production merge, ücretli işlem, gerçek kullanıcı silme veya yeni native iOS dağıtımı yapılmadı. Özel Console, oturum ve kimlik bilgisi kanıtları Git dışında korunur.
 
-## Hazır sonraki plan
+## Üretilen artifact ve sonraki plan
 
 [Test reklamlarını koruyan, onay kapısına bağlı AAB planı](closed-test-aab-plan.md) hazır. `ads-closed-test` aynı kabul APK appConfig ve EAS preview ortamını kullanır; genel production reklamları kapalı kalır. Profil hazırlığı378/378 test, web/Hermes export geçti. Onay sonrasında yalnız bu build snapshot'ı için kayıt hazırlanıp istek alındı; kapı yeniden kapatıldı, dayanak/sha korundu.
+
+[AAB final binary kanıtı](closed-test-aab-evidence.json) ve [Android16 görüntüleri/gerçek test sınırları](closed-test-aab-run-20261031.md) hazır. Play App Signing ve kesin SHA/Alpha gönderimi için ayrı onay gerekir; tester grubu henüz hazır değildir. Google Pre-launch report yok.

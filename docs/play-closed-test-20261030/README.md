@@ -1,6 +1,6 @@
 # Android kapalı test adayı — 30 Ekim 2026
 
-> Güncel31 Ekim sonucu: [yayın durumu](current-release-status.md), [yeni EAS APK/emülatör retesti](native-retest-20261031.md), [onay bekleyen AAB planı](closed-test-aab-plan.md). Aşağıdaki rapor PR #17’nin tarihsel reklamsız APK kanıtıdır. AdMob test dalının yeni native binary’si ve farklı reklam/gizlilik beyanı için `docs/admob-test-20261030/README.md` esas alınır; aşağıdaki eski APK reklamlı sürüm olarak sunulmaz.
+> Güncel31 Ekim sonucu: [yayın durumu](current-release-status.md), [yeni EAS APK/emülatör retesti](native-retest-20261031.md), [onaylı AAB sonucu](closed-test-aab-run-20261031.md). Aşağıdaki rapor PR #17’nin tarihsel reklamsız APK kanıtıdır. AdMob test dalının yeni native binary’si ve farklı reklam/gizlilik beyanı için `docs/admob-test-20261030/README.md` esas alınır; aşağıdaki eski APK reklamlı sürüm olarak sunulmaz.
 
 **Mağazaya gönderime hazır: HAYIR.** Teknik aday ve gerçek emülatör kanıtları hazırlanmıştır; aşağıdaki kabul ve Play Console adımları henüz tamamlanmamıştır. Bu rapor fiziksel Samsung kabulü, bağımsız dinî uzman onayı veya Google inceleme onayı değildir.
 

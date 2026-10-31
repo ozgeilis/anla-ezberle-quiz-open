@@ -1,0 +1,488 @@
+{
+  "buildId": "7d8591e7-b127-49c0-92ad-59288f5d950b",
+  "sourceCommit": "8d13fc26b2c68a209970ac226dfb2a6a1d650c59",
+  "status": "FINISHED",
+  "sha256": "7cfdf8d109350ddd8cb81360e90abd9a48b2317a2b0ae421b917ba95a57ffd1a",
+  "sizeBytes": 83995235,
+  "manifest": {
+    "package": "com.kovynelstudio.anlaezberle",
+    "versionCode": "2",
+    "versionName": "0.1.0",
+    "minSdk": "24",
+    "targetSdk": "36",
+    "debuggable": "false",
+    "compileSdk": "37"
+  },
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_APP_BADGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.anddoes.launcher.permission.UPDATE_COUNT",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.htc.launcher.permission.READ_SETTINGS",
+    "com.htc.launcher.permission.UPDATE_SHORTCUT",
+    "com.huawei.android.launcher.permission.CHANGE_BADGE",
+    "com.huawei.android.launcher.permission.READ_SETTINGS",
+    "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+    "com.kovynelstudio.anlaezberle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.majeur.launcher.permission.UPDATE_BADGE",
+    "com.oppo.launcher.permission.READ_SETTINGS",
+    "com.oppo.launcher.permission.WRITE_SETTINGS",
+    "com.sec.android.provider.badge.permission.READ",
+    "com.sec.android.provider.badge.permission.WRITE",
+    "com.sonyericsson.home.permission.BROADCAST_BADGE",
+    "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+    "me.everything.badger.permission.BADGE_COUNT_READ",
+    "me.everything.badger.permission.BADGE_COUNT_WRITE"
+  ],
+  "blockedPermissionsAbsent": [
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW"
+  ],
+  "bundletoolVersion": "1.18.3",
+  "bundletoolValidate": "PASS",
+  "jarSignature": "PASS; self-signed Android upload certificate, not a CA trust claim",
+  "uploadCertificateMatchesAcceptedEasApk": true,
+  "certificateSha256": "6df507f045b6d7fee9147153cf815b36a0c4b072f2b55b6dcd6dda54486352b7",
+  "native64": [
+    {
+      "name": "base/lib/arm64-v8a/libappmodules.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libc++_shared.so",
+      "loadAlignments": [16384, 16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libdatastore_shared_counter.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-core.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-jsi.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-v2.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-worklets.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libfbjni.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libgesturehandler.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libgifimage.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libhermestooling.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libhermesvm.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libimagepipeline.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libjsi.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libnative-filters.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libnative-imagetranscoder.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreactnative.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreanimated.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/librnscreens.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libstatic-webp.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libworklets.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libzstd-kmp.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libappmodules.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libc++_shared.so",
+      "loadAlignments": [16384, 16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libdatastore_shared_counter.so",
+      "loadAlignments": [16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-core.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-jsi.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-v2.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-worklets.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libfbjni.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libgesturehandler.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libgifimage.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libhermestooling.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libhermesvm.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libimagepipeline.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libjsi.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libnative-filters.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libnative-imagetranscoder.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rnscreens.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rnsvg.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_safeareacontext.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libreactnative.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libreanimated.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/librnscreens.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libstatic-webp.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libworklets.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    },
+    {
+      "name": "base/lib/x86_64/libzstd-kmp.so",
+      "loadAlignments": [16384, 16384, 16384],
+      "aligned16KB": true,
+      "matchesAcceptedApk": true
+    }
+  ],
+  "bundleConfigHas16KB": true,
+  "hermesBundleMatchesAcceptedApk": true,
+  "playUpload": false,
+  "playAppSigning": "NOT_CONFIGURED_OR_VERIFIED; upload certificate does not prove final Play distribution certificate",
+  "nativeRuntime": "PASS within documented scope: isolated locally debug-signed AAB-derived APK on API36; not Play-signed distribution, physical Samsung, full authenticated social flow, audible audio or 16 KB kernel runtime",
+  "sensitiveAssetPatternScan": {
+    "rawAssetCounts": {
+      "privateKeyHeader": 0,
+      "supabaseSecretKey": 1,
+      "googleOAuthSecret": 0,
+      "googleServiceAccountPrivateKeyField": 0
+    },
+    "hermesExactlyMatchesAlreadyDecodedAcceptedApk": true,
+    "decodedHermesNamedSecretPatterns": 0,
+    "falsePositiveOnlyInHermesContiguousStringStorage": true,
+    "limitations": "Named patterns only; no values printed; not a proof for every possible secret in native code"
+  },
+  "packagedAudio": [
+    {
+      "name": "base/res/raw/assets_audio_badge.wav",
+      "sha256": "01c6fb8a82bba32f81b9f8072a564fce6f33bd33ed435b58046112de428a527c",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_completed.wav",
+      "sha256": "1b4eb8139560432feaef2c5a9512474fb71d6b15fc2a1c47cb3610b6e3a65be0",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_correct.wav",
+      "sha256": "7559445985f24568d52e3366bbf692b0fc75bdd9539c1fa97ecf75f56bba6fd2",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_levelup.wav",
+      "sha256": "e17dce6463fcf733ee7e14fc56035e00c9caea3d068ba31c9a09eac409b86994",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_next.wav",
+      "sha256": "be609f580e1a8b89a47bfcaed6d4acbeaceacab1fadde7244906e846b37a5bd5",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_perfect.wav",
+      "sha256": "af119e6985e7ac0aa509eb26852f78592e875e2d3ff2774e3eaf87d699cbf8e4",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_select.wav",
+      "sha256": "bdd349d209229da100ac2b1fdd68de00ddebef67821ee103588f7bb2ee5a4818",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_tap.wav",
+      "sha256": "744e92ac708408e4c27fde5fc852c009c1da899fcfec60aecdf858a2479e75fd",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_tick.wav",
+      "sha256": "361035476e8985d542b57445b9c08554472dc895e2a3521ee01a239116e640c9",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_timeout.wav",
+      "sha256": "5f290adb03f496de8142eae96b417aea58d8c40ff13f1202a772c8b932c05384",
+      "matchesAcceptedApkAudioContent": true
+    },
+    {
+      "name": "base/res/raw/assets_audio_wrong.wav",
+      "sha256": "9964d111dab301c42ac8b633a1ff0af215eb53646bbb997918650540ea99606d",
+      "matchesAcceptedApkAudioContent": true
+    }
+  ],
+  "derivedApk": {
+    "signature": "isolated local debug certificate for fresh AVD only; EAS AAB signature untouched",
+    "zipalign16KB": "PASS",
+    "androidApi": 36,
+    "pageSizeBytes": 4096,
+    "freshInstall": "Success",
+    "tabsSmoke": "PASS: all five tabs opened on fresh Android16/API36 AVD",
+    "physicalDevice": false,
+    "fontThemeMatrixCases": 18,
+    "widthsDp": [320, 360, 390],
+    "fontScales": [1, 1.5, 2],
+    "themes": ["light", "dark"],
+    "navigationFontScaleIndependent": true,
+    "minTouchTargetDp": 48,
+    "newFatalEntries": 0,
+    "quizSmoke": {
+      "completed": true,
+      "correct": 1,
+      "wrong": 4,
+      "unanswered": 5,
+      "score": 100,
+      "xp": 10,
+      "durationDisplay": "01:08",
+      "resultScoreFullyVisible": true,
+      "answerReviewOpened": true,
+      "reviewIncludesExplanationAndSource": true,
+      "restartPersistence": {
+        "lastScore": 100,
+        "xp": 10,
+        "preserved": true
+      },
+      "newFatalEntriesAfterRestart": 0,
+      "observerLimitation": "The bounded screenshot/OCR tap script ended without detecting the result. Subsequent fresh UIAutomator hierarchy and real screenshots confirmed the completed result. Ten attempted taps were not ten accepted answers; no perfect automation pass is claimed."
+    }
+  },
+  "packagedAudioNote": "Resource filenames can differ between bundle and optimized APK. Compared file content SHA256 across audio assets, not raw archive paths. Audibility not tested.",
+  "openVisualFinding": {
+    "severity": "P2",
+    "description": "Light-theme secondary caption Yeni kişisel rekor! has low contrast; primary score is fully visible. Cosmetic follow-up; no new build or source change made under the one-build approval."
+  }
+}

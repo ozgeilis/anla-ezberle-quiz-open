@@ -52,3 +52,9 @@ Yeni APK `bc3c86f5` FINISHED, kaynak `a506f87`,18/18 emülatör font/tema ve ç�
 Özel ek kanıtlar: `iarc-completed.png`, `data-safety-saved.png`, `free-price-reverified.png`. Dosyalar Git dışındaki aynı özel Console dizinindedir.
 
 Alpha ülke seçimi kullanıcı onayıyla yalnız **Türkiye** olarak kaydedildi; Hedeflenenler(1) ve kanal kurulumu1/4 doğrulandı. Tester listesi henüz hazır değil; yeni boş/sahte liste açılmadı. Özel kanıt: `alpha-turkey-only-saved.png`.
+
+## Onaylı AAB üretiminin son sonucu
+
+Ürün sahibi emülatör kanıtını yalnız bir AAB üretimi için açıkça kabul etti. EAS7d8591e7 **FINISHED**, kaynak8d13fc2, versionCode2/target36. Gerçek artifact indirildi; bundletool, imza, native16KB statik kontroller ve kabul APK'sıyla bytecode/native/ses eşleşmeleri geçti. Yeni Android16 AVD'de18 düzen durumu, gerçek quiz/sonuç/kaynaklı inceleme ve yeniden açılışta skor/XP kalıcılığı doğrulandı. [AAB raporu ve sınırlamalar](closed-test-aab-run-20261031.md). Önceki “AAB üretilmedi” kayıtları gün içi tarihsel durumlardır.
+
+Onay kapısı tekrar kapalı; ikinci build/Play upload/inceleme gönderimi yapılmadı. Alpha yalnız Türkiye; tester0, grup hazır değil. Main/Production ve sunucu güvenlik ayarları değişmedi. Fiziksel Samsung/ses, native OAuth/iOS, Play-signed ve16KB çekirdek kabulü bekliyor.

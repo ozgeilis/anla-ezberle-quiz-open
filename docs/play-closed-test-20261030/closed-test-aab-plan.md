@@ -1,4 +1,4 @@
-# Kapalı test AAB — onay bekleyen somut plan
+# Kapalı test AAB — onaylanmış tek üretim planı
 
 31 Ekim 2026 · [PR #20](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/20). **Ürün sahibi31 Ekim yalnız bu AAB üretimini açıkça onayladı.** Fiziksel test yapılmış sayılmadan emülatör kanıtı kabul edildi. Derleme sonucu ve son artifact ayrı kayıtla doğrulanacak; Play yükleme/gönderim izni verilmedi.
 
@@ -41,3 +41,7 @@ Risk: emülatör fiziksel Samsung'a özgü ses, GPU, OEM veya ağ davranışlar�
 ## Onay kaydı
 
 Kullanıcı yanıtı: “Yalnız bu AAB üretimini onaylıyorum”. Onay dosyası yalnız `approvedProfile=ads-closed-test`, kabul APK SHA ve emülatör dayanağıyla hazırlanır. Genel production onayı yoktur. Onaysız kapı testi artık gerçek dosyanın her zaman false olduğunu varsaymak yerine bağımsız geçici fixture dosyasında aynı gerçek hook ile yapılır; izin verilmiş kapı durumu da ayrıca test edilir. AAB işlemi bitince yeni üretimleri engellemek için kapı yeniden kapatılır.
+
+## Uygulanan plan sonucu
+
+Tek üretim tamamlandı ve doğrulandı: [gerçek AAB ve Android16 raporu](closed-test-aab-run-20261031.md). Onay tüketildi, kapı yeniden false. Plan Play yüklemesi/gönderimini kapsamıyordu; bu işlemler yapılmadı.
