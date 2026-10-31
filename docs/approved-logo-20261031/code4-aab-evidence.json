@@ -1,0 +1,410 @@
+{
+  "status": "LOCAL_BUILD_SUCCESS",
+  "sourceCommit": "d00efc0f15c7856572640179067252c8d58db14f",
+  "profile": "ads-closed-test",
+  "sha256": "074bac0ef7077a7c7c99deb3c69c5f85de452e136f10de6a4940bcc7d0780f51",
+  "sizeBytes": 85945280,
+  "manifest": {
+    "package": "com.kovynelstudio.anlaezberle",
+    "versionCode": "4",
+    "versionName": "0.1.0",
+    "minSdk": "24",
+    "targetSdk": "36",
+    "debuggable": "false"
+  },
+  "permissionsUnchangedFromCode2": true,
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_APP_BADGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.anddoes.launcher.permission.UPDATE_COUNT",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.htc.launcher.permission.READ_SETTINGS",
+    "com.htc.launcher.permission.UPDATE_SHORTCUT",
+    "com.huawei.android.launcher.permission.CHANGE_BADGE",
+    "com.huawei.android.launcher.permission.READ_SETTINGS",
+    "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+    "com.kovynelstudio.anlaezberle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.majeur.launcher.permission.UPDATE_BADGE",
+    "com.oppo.launcher.permission.READ_SETTINGS",
+    "com.oppo.launcher.permission.WRITE_SETTINGS",
+    "com.sec.android.provider.badge.permission.READ",
+    "com.sec.android.provider.badge.permission.WRITE",
+    "com.sonyericsson.home.permission.BROADCAST_BADGE",
+    "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+    "me.everything.badger.permission.BADGE_COUNT_READ",
+    "me.everything.badger.permission.BADGE_COUNT_WRITE"
+  ],
+  "bundletoolValidate": "PASS",
+  "jarSignature": "PASS",
+  "certificateSha256": "6df507f045b6d7fee9147153cf815b36a0c4b072f2b55b6dcd6dda54486352b7",
+  "uploadCertificateUnchanged": true,
+  "native64Count": 52,
+  "native64All16KB": true,
+  "native64": [
+    {
+      "name": "base/lib/arm64-v8a/libappmodules.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libc++_shared.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libdatastore_shared_counter.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-core.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-jsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-v2.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-worklets.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libfbjni.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libgesturehandler.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libgifimage.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libhermestooling.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libhermesvm.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libimagepipeline.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libjsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libnative-filters.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libnative-imagetranscoder.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreactnative.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreanimated.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/librnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libstatic-webp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libworklets.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/arm64-v8a/libzstd-kmp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libappmodules.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libc++_shared.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libdatastore_shared_counter.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-core.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-jsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-v2.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-worklets.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libfbjni.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libgesturehandler.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libgifimage.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libhermestooling.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libhermesvm.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libimagepipeline.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libjsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libnative-filters.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libnative-imagetranscoder.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rnsvg.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_safeareacontext.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libreactnative.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreanimated.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/librnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libstatic-webp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libworklets.so",
+      "aligned16KB": true,
+      "matchesCode2": false
+    },
+    {
+      "name": "base/lib/x86_64/libzstd-kmp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    }
+  ],
+  "bundleConfig16KB": true,
+  "hermesMatchesPublishedCode2": true,
+  "hermesSha256": "16cc938721a60ba105a741afc08a63dae9acba971ccd464ccf715b2a5c0b82d9",
+  "playUpload": false,
+  "nativeRuntime": "PASS: all 5 tabs in actual AAB-derived QA APK, no new fatal; update preserved guest score100 / XP10",
+  "expoDoctor": "19/20; five patch-version recommendations, installed lockfile unchanged from code2",
+  "iconResources": [
+    {
+      "path": "base/res/mipmap-mdpi-v4/ic_launcher.webp",
+      "size": [48, 48],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-mdpi-v4/ic_launcher_round.webp",
+      "size": [48, 48],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-mdpi-v4/ic_launcher_foreground.webp",
+      "size": [108, 108],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-hdpi-v4/ic_launcher.webp",
+      "size": [72, 72],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-hdpi-v4/ic_launcher_round.webp",
+      "size": [72, 72],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-hdpi-v4/ic_launcher_foreground.webp",
+      "size": [162, 162],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xxxhdpi-v4/ic_launcher.webp",
+      "size": [192, 192],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xxxhdpi-v4/ic_launcher_round.webp",
+      "size": [192, 192],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xxxhdpi-v4/ic_launcher_foreground.webp",
+      "size": [432, 432],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xxhdpi-v4/ic_launcher.webp",
+      "size": [144, 144],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xxhdpi-v4/ic_launcher_round.webp",
+      "size": [144, 144],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xxhdpi-v4/ic_launcher_foreground.webp",
+      "size": [324, 324],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xhdpi-v4/ic_launcher.webp",
+      "size": [96, 96],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xhdpi-v4/ic_launcher_round.webp",
+      "size": [96, 96],
+      "matchesApprovedPrebuild": true
+    },
+    {
+      "path": "base/res/mipmap-xhdpi-v4/ic_launcher_foreground.webp",
+      "size": [216, 216],
+      "matchesApprovedPrebuild": true
+    }
+  ],
+  "physicalDeviceTested": false,
+  "playSignedRuntimeTested": false,
+  "qaApkSignature": "isolated existing QA certificate, not Play/EAS upload key",
+  "native64BinaryDifferenceNote": "22/52 native64 files differ between local macOS compilation and prior Linux cloud build; locked dependencies and native source unchanged. All 52 pass 16KB LOAD alignment.",
+  "currentAudienceObserved": {
+    "listName": "test",
+    "selected": true,
+    "addressCount": 7,
+    "optInDashboardCount": 4,
+    "countries": ["TR"],
+    "modifiedByThisWork": false
+  }
+}
