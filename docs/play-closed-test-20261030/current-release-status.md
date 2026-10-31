@@ -1,6 +1,6 @@
 # Kapalı test gönderim durumu — 31 Ekim 2026
 
-**HENÜZ YAYINLANMADI.** IARC ve Data Safety dahil Console paneli12/13; yeni EAS test APK'sı hazır. Kapalı test sürümü/AAB yok.
+**HENÜZ YAYINLANMADI.** IARC ve Data Safety dahil Console paneli12/13; yeni EAS test APK'sı hazır. Ayrı onayla kapalı test AAB derlemesi başladı; henüz artifact doğrulanmadı.
 
 ## Tamamlanan
 
@@ -17,7 +17,7 @@
 ## Yayın öncesi açık işler
 
 1. Fiziksel Samsung mevcut değil. Son APK'nın fiziksel kabulü veya hangi emülatör kanıtının yeterli sayılacağına dair açık insan kararı bekliyor. Native OAuth/iOS, fiziksel ses ve raporda belirtilen kalan reklam senaryoları tamamlandı sayılmaz.
-2. AAB kapısı `approved:false`, `acceptedApkSha256:null`. AAB henüz üretilmedi/Play'e yüklenmedi. Ayrı imza/sürüm ve kesin AAB doğrulaması gerekir.
+2. Ürün sahibi emülatör kanıtını yalnız AAB üretimi için kabul etti. [Build7d8591e7](closed-test-aab-run-20261031.md) kaynak8d13fc2/versionCode2 ile IN_PROGRESS. Snapshot onaylıydı; istek alınınca yerel kapı yeniden kapatıldı. Artifact, imza/sürüm ve kesin AAB doğrulaması bekliyor; Play yüklemesi yok.
 3. Ücretsiz sayfası ile paneldeki12/13 fiyatlandırma görevi tutarsızlığı var; bu, ücretsiz test için satıcı hesabı gerektiği şeklinde yorumlanmadı. Alpha sayfasında Yeni sürüm oluştur etkin. Ödeme profili açılmadı.
 4. Mevcut Alpha kanalında yayımlanmış sürüm yok. Alpha kanalında yalnız Türkiye kaydedildi ve hedef ülke sayısı1 doğrulandı; tester grubu henüz hazır değil. Ayrı kesin SHA/track gönderim onayı gerekir. 0 tester;12 kişinin kesintisiz14 günlük katılım süresi başlamadı. Üretime başvuru kapalı.
 
@@ -25,4 +25,4 @@ Hiçbir Play sürümü incelemeye gönderilmedi. Main/Production merge, ücretli
 
 ## Hazır sonraki plan
 
-[Test reklamlarını koruyan, onay kapısına bağlı AAB planı](closed-test-aab-plan.md) hazır. `ads-closed-test` aynı kabul APK appConfig ve EAS preview ortamını kullanır; genel production reklamları kapalı kalır. Profil hazırlığı378/378 test, web/Hermes export geçti. Mevcut onay dosyası değiştirilmedi.
+[Test reklamlarını koruyan, onay kapısına bağlı AAB planı](closed-test-aab-plan.md) hazır. `ads-closed-test` aynı kabul APK appConfig ve EAS preview ortamını kullanır; genel production reklamları kapalı kalır. Profil hazırlığı378/378 test, web/Hermes export geçti. Onay sonrasında yalnız bu build snapshot'ı için kayıt hazırlanıp istek alındı; kapı yeniden kapatıldı, dayanak/sha korundu.

@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "packageId": "com.kovynelstudio.anlaezberle",
   "acceptedApkSha256": "aac0b20c92e0268800312447a7f84deb3a427a7e1b68b8741efd5697fd64165f",
   "packageApproved": true,
@@ -9,5 +9,7 @@
   "reviewedPreparationCommit": "9e8389e0e2f4cc165944268f4e6ce41d572a79c3",
   "acceptanceBasis": "owner-authorized emulator evidence for this closed-test AAB build only; physical device not tested",
   "approvedAt": "2026-10-31",
-  "scope": "one AAB build and artifact validation; no upload, submission, main or Production release"
+  "scope": "one AAB build and artifact validation; no upload, submission, main or Production release",
+  "consumedByBuildId": "7d8591e7-b127-49c0-92ad-59288f5d950b",
+  "approvalState": "one authorized build snapshot uploaded; gate reclosed to prevent another build"
 }
