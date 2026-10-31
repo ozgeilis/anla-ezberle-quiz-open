@@ -58,3 +58,9 @@ Alpha ülke seçimi kullanıcı onayıyla yalnız **Türkiye** olarak kaydedildi
 Ürün sahibi emülatör kanıtını yalnız bir AAB üretimi için açıkça kabul etti. EAS7d8591e7 **FINISHED**, kaynak8d13fc2, versionCode2/target36. Gerçek artifact indirildi; bundletool, imza, native16KB statik kontroller ve kabul APK'sıyla bytecode/native/ses eşleşmeleri geçti. Yeni Android16 AVD'de18 düzen durumu, gerçek quiz/sonuç/kaynaklı inceleme ve yeniden açılışta skor/XP kalıcılığı doğrulandı. [AAB raporu ve sınırlamalar](closed-test-aab-run-20261031.md). Önceki “AAB üretilmedi” kayıtları gün içi tarihsel durumlardır.
 
 Onay kapısı tekrar kapalı; ikinci build/Play upload/inceleme gönderimi yapılmadı. Alpha yalnız Türkiye; tester0, grup hazır değil. Main/Production ve sunucu güvenlik ayarları değişmedi. Fiziksel Samsung/ses, native OAuth/iOS, Play-signed ve16KB çekirdek kabulü bekliyor.
+
+## Son devam: Play imzalama ve upload öncesi hazırlık
+
+Mevcut Console'da Play anahtarı **Kullanımda** görüldü; yeni anahtar oluşturma/aktarma/değiştirme yapılmadı. AAB upload sertifikasıyla farklı olan dağıtım sertifikası [sınırlı upload planına](play-draft-upload-plan-20261031.md) kaydedildi. Mevcut APK'nın Play sürümüne veri koruyarak güncellenmesi henüz doğrulanmadı.
+
+Alpha testçiler sayfasında onaylı iş destek e-postası geri bildirim adresi olarak kaydedildi ve reload sonrası görüldü. Liste hâlâ boş; opt-in düğmesi etkin değil. Yeni Alpha formunda yalnız sürüm adı ve kısa Türkçe notlarla paketsiz taslak kaydedildi. Yükle/İleri/gönderim yapılmadı; önceki “sürüm yok” ifadesi bu paketsiz taslaktan önceki gözlemdir. Mevcut Play imzalama ve otomatik koruma ayarlarına müdahale edilmedi. Kullanıcıya gerçek tester listesinin hazır olup olmadığı soruldu; liste uydurulmadı.

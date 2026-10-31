@@ -54,3 +54,7 @@ AAB teknik doğrulaması kapalı testin yayımlandığı anlamına gelmez. Test 
 Fiziksel Samsung/ses, native Google OAuth ve iOS, gerçek Play-signed dağıtım,16KB çekirdek ve raporda belirtilen reklam kabul eksikleri korunur.
 
 Resmî yöntem: [Android bundletool belgesi](https://developer.android.com/tools/bundletool), [Google bundletool1.18.3 yayını](https://github.com/google/bundletool/releases/tag/1.18.3).
+
+## Sonraki imzalama gözlemi
+
+[Upload öncesi devam kontrolünde](play-draft-upload-plan-20261031.md) mevcut Play anahtarı Kullanımda görüldü. Yukarıdaki “henüz doğrulanmadı” ifadesi AAB üretim anına aittir. Nihai Play-signed artifact/üzerine güncelleme testi hâlâ yapılmadı; AAB ve statik kontroller değişmedi.

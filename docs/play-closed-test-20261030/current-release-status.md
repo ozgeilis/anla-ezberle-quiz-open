@@ -28,3 +28,9 @@ Hiçbir Play sürümü incelemeye gönderilmedi. Main/Production merge, ücretli
 [Test reklamlarını koruyan, onay kapısına bağlı AAB planı](closed-test-aab-plan.md) hazır. `ads-closed-test` aynı kabul APK appConfig ve EAS preview ortamını kullanır; genel production reklamları kapalı kalır. Profil hazırlığı378/378 test, web/Hermes export geçti. Onay sonrasında yalnız bu build snapshot'ı için kayıt hazırlanıp istek alındı; kapı yeniden kapatıldı, dayanak/sha korundu.
 
 [AAB final binary kanıtı](closed-test-aab-evidence.json) ve [Android16 görüntüleri/gerçek test sınırları](closed-test-aab-run-20261031.md) hazır. Play App Signing ve kesin SHA/Alpha gönderimi için ayrı onay gerekir; tester grubu henüz hazır değildir. Google Pre-launch report yok.
+
+## Sonraki salt okunur Console kontrolü ve paketsiz taslak
+
+31 Ekim devamında Play imzalama anahtarı zaten **Kullanımda** olarak doğrulandı; eski “kurulmadı” varsayımı düzeltildi. EAS upload sertifikası ile Play'in gösterdiği dağıtım sertifikası farklı. Henüz nihai Play-signed binary/üzerine güncelleme kabulü yok; anahtar değiştirilmedi. Paket/sürüm listesi boş olarak görüldü.
+
+Alpha geri bildirim adresi kaydedilip yeniden yüklemede doğrulandı. `0.1.0 (2) - Alpha kapalı test` adı ve Türkçe notlarla **paketsiz taslak** kaydedildi. AAB yüklenmedi, İleri/gönderim yapılmadı. Testçi listesi boş. [Kesin SHA ve sınırlı taslak upload planı](play-draft-upload-plan-20261031.md) onay bekliyor. Önceki bir-build onayı upload/gönderim izni olarak kullanılmadı.

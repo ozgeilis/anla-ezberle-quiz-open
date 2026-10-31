@@ -484,5 +484,15 @@
   "openVisualFinding": {
     "severity": "P2",
     "description": "Light-theme secondary caption Yeni kişisel rekor! has low contrast; primary score is fully visible. Cosmetic follow-up; no new build or source change made under the one-build approval."
+  },
+  "playSigningFollowup": {
+    "observedDate": "2026-10-31",
+    "consoleStatus": "IN_USE",
+    "observedPlayAssetLinksCertificateSha256": "c6f523d89762d832ce131e49602c8917d965ce5257f0ea57ac03df6ccd851675",
+    "uploadAndObservedPlayCertificatesDiffer": true,
+    "keysChanged": false,
+    "playSignedBinaryValidated": false,
+    "onDeviceInPlaceUpdateValidated": false,
+    "note": "Follow-up read-only observation; supersedes earlier unverified enrollment assumption, not the immutable AAB verification."
   }
 }
