@@ -1,6 +1,6 @@
-# İlk Alpha inceleme/gönderim planı — ayrı nihai onay bekliyor
+# İlk Alpha inceleme/gönderim planı — sınırlı nihai onay verildi
 
-31 Ekim 2026 · Önceki izin yalnız AAB üretimi ve ardından **taslak upload** içindi. Bu belge bu izinleri genişletmez. Aşağıdaki işlemler uygulanmadı.
+31 Ekim 2026 · Önceki izin yalnız AAB üretimi ve ardından **taslak upload** içindi. Bu belge bu izinleri genişletmez. Ürün sahibi31 Ekim “Mevcut 2 kişilik listeyle ilk Alpha incelemesini onaylıyorum” yanıtını verdi. Aşağıdaki kapsam onaylandı; gerçek sonuç [uygulama kaydında](alpha-review-submission-result-20261031.md) tutulur.
 
 ## Kesin paket ve kitle
 
@@ -39,3 +39,7 @@ Resmî referans: [Google Play uygulama fiyatları](https://support.google.com/go
 ## Kapsam dışında
 
 Üretim/public Play yayını, main merge, Vercel Production, Supabase değişikliği/yeni gerçek hesaplar, genel push/yeni Google kayıt açılması, gerçek reklam/Analytics, yeni AAB üretimi, mevcut uygulamayı silme veya yeniden puanlama yok. Test APK→Play üzerine güncelleme uyumluluğu henüz garanti edilmez. Mevcut kapalı hesap erişim kuralları korunur; listede olmak uygulama Auth hesabı/online yetki oluşturmaz. Misafir solo erişimi mevcut olduğu gibi kalır.
+
+## İnsan onayı
+
+Kullanıcının açık yanıtı: “Mevcut 2 kişilik listeyle ilk Alpha incelemesini onaylıyorum”. Bu izin mevcut2 adres/Türkiye/code2 ve yönetilen yayınlama kapalıyken Google kabulü sonrası bu kapalı kitleye açılma kapsamını içerir. Fiziksel Samsung/ses ve Play-signed runtime kabulü uydurulmaz; üretim veya farklı kitle onayı verilmedi.

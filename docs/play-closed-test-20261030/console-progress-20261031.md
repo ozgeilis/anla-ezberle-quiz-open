@@ -76,3 +76,13 @@ Google paket ayrıntıları16KB destek gösteriyor. Gerçek Play imzalı univers
 Kullanıcı kayıtları tamamladığını bildirdi; Chrome kontrolü kısa süre eşzamanlı kullanım nedeniyle durdu. Kullanıcı tarayıcıyı bıraktıktan sonra sunucudan reload,2 adresli listenin mevcut fakat seçimsiz olduğunu gösterdi. Mevcut liste seçilip kanal Kaydet işlemi tamamlandı; reload sonrası seçim kalıcı, Kaydet devre dışı, kanal3/4. E-postalar maskelendi/Git'e yazılmadı.
 
 Önizleme reload: **Yayınlamaya hazır**,0 hata/uyarı; testçi uyarısı kalktı. Son Kaydet/onayla henüz yapılmadı. Yayın özeti yönetilen yayınlama kapalı, Gönder pasif/gerekli panel adımları mesajı gösteriyor. Fiyat sayfası yine Ücretsiz; finans hesabı açılmadı. [Kesin paket/kitle ve durma koşullu ilk gönderim planı](alpha-review-submission-plan-20261031.md) hazır; ayrı onay bekliyor. İki adres12 opt-in değildir,14 gün başlamadı.
+
+## Ayrı nihai Alpha onayı ve gönderim talebi
+
+Ürün sahibi “Mevcut 2 kişilik listeyle ilk Alpha incelemesini onaylıyorum” dedi. Son önizleme Kaydet tamamlandı; yayın özeti14 değişiklik ve otomatik hızlı kontroller gösterdi. Tek somut engel eksik Reklam Kimliği beyanıydı. Mevcut manifest engeli ve resmi SDK manifest opt-out belgesiyle Hayır kaydedildi; diğer cihaz tanımlayıcılarının Data Safety kapsamı değişmedi.
+
+Gönder düğmesi etkinleşince aynı code2/Alpha/Türkiye/test listesi kapsamıyla14 değişiklik gönderimi ve son onayı tamamlandı. Yayın özeti **İncelenmekte olan değişiklikler**, fakat hızlı ön kontroller hâlâ sürüyor. Talep kabul edildi; Google incelemesi bitti/onay/rollout var denmez. [Ayrıntılı gerçek durum](alpha-review-submission-result-20261031.md). Yeni finans/sözleşme adımı çıkmadı; main/Production/Supabase/genel push/gerçek reklam/Analytics değişmedi.
+
+## Son doğrulama: Google incelemesinde
+
+Hızlı kontroller tamamlandı. Yayın özeti “Değişiklikleriniz şu anda inceleniyor” gösterdi; Gönderim etkinliği ve ayrıntısı **Gönderim 1 / 14 değişiklik / 31 Ekim 2026 14:12 (Europe/Istanbul) / İncelemede** durumunu doğruladı. Doğrulama zamanı 11:15:16 UTC. Önceki paragraftaki hızlı kontrol bekleme durumu aşılmıştır. Google kabulü, indirilebilirlik, gerçek opt-in veya 14 günlük süre başlaması henüz doğrulanmadı. [Gönderim kaydı](alpha-review-submission-result-20261031.md).

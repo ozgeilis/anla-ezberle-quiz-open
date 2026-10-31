@@ -497,7 +497,7 @@
     "validationScope": "Static signature, package, unchanged Hermes/native64 and 16KB LOAD/ZIP; not installed or runtime-tested",
     "playSignedApkSha256": "521cf17d853426b45ecc3684e098f3303eaa8a721aaa6cef6cc2cd0ade763763"
   },
-  "playUploadScope": "Owner-approved upload to existing Alpha draft only, saved; no review submission or rollout",
+  "playUploadScope": "Initial owner-approved Alpha draft upload; later separate final approval authorized submission ID 1, now IN_REVIEW; no verified rollout",
   "googlePreview": {
     "blockingErrorsObserved": 0,
     "warningsObserved": 0,
@@ -507,8 +507,27 @@
     "testListSelectedForAlpha": true,
     "selectionVerifiedAfterReload": true,
     "registeredOptInCountVerified": 0,
-    "reviewSubmitted": false,
-    "rolloutStarted": false
+    "reviewSubmitted": true,
+    "rolloutStarted": false,
+    "submissionStage": "IN_REVIEW: Google submission activity ID 1; automated prechecks completed; approval and rollout not verified",
+    "advertisingIdDeclaration": "No; explicitly blocked AD_ID in uploaded and Play-signed manifests, SDK official manifest opt-out documented",
+    "submission": {
+      "id": 1,
+      "changeCount": 14,
+      "status": "IN_REVIEW",
+      "submittedAtLocal": "2026-10-31T14:12",
+      "timeZone": "Europe/Istanbul",
+      "timestampPrecision": "minute",
+      "verifiedAtUtc": "2026-10-31T11:15:16Z",
+      "automatedPrechecksCompleted": true,
+      "approved": false,
+      "rolloutVerified": false,
+      "versionCode": 2,
+      "track": "Alpha closed testing",
+      "countries": ["TR"],
+      "testListName": "test",
+      "testListAddressCount": 2
+    }
   },
   "googlePreviewHistory": [
     {
