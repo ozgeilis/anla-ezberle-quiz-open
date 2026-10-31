@@ -1,6 +1,6 @@
 # Kapalı test AAB — onay bekleyen somut plan
 
-31 Ekim 2026 · [PR #20](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/20). **Yalnız hazırlık; AAB üretimi veya gönderimi başlamadı.**
+31 Ekim 2026 · [PR #20](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/20). **Ürün sahibi31 Ekim yalnız bu AAB üretimini açıkça onayladı.** Fiziksel test yapılmış sayılmadan emülatör kanıtı kabul edildi. Derleme sonucu ve son artifact ayrı kayıtla doğrulanacak; Play yükleme/gönderim izni verilmedi.
 
 ## İncelenebilir kabul kanıtı
 
@@ -37,3 +37,7 @@ IARC/Data Safety/incelemeci erişimi kaydedildi. İlk dağıtım için ürün sa
 Ücretsiz fiyatlandırma sayfası doğrulandı; panelde merchant görevinin kalması, ödeme hesabı açma izni veya gerekliliği olarak yorumlanmaz. Alpha'da Yeni sürüm oluştur etkin; sürüm yok. Dağıtım veya yeni güvenlik yetkisi sessizce açılmaz.
 
 Risk: emülatör fiziksel Samsung'a özgü ses, GPU, OEM veya ağ davranışlarını garanti etmez; native OAuth kabulü tamamlanmadı. Aynı appConfig/paketleme kanıtı AAB'nin kendisinin testini kaldırmaz. Üretim ve gerçek kullanıcılar etkilenmez; onay geri çekilirse kapı yeniden kapatılır, üretilmiş artifact gönderilmez. Otomatik submit yapılandırması yoktur.
+
+## Onay kaydı
+
+Kullanıcı yanıtı: “Yalnız bu AAB üretimini onaylıyorum”. Onay dosyası yalnız `approvedProfile=ads-closed-test`, kabul APK SHA ve emülatör dayanağıyla hazırlanır. Genel production onayı yoktur. Onaysız kapı testi artık gerçek dosyanın her zaman false olduğunu varsaymak yerine bağımsız geçici fixture dosyasında aynı gerçek hook ile yapılır; izin verilmiş kapı durumu da ayrıca test edilir. AAB işlemi bitince yeni üretimleri engellemek için kapı yeniden kapatılır.

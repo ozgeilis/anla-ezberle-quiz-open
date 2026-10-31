@@ -39,7 +39,7 @@ test("store build and submit configuration cannot appear without an explicit rev
   assert.ok(issues.some((issue) => issue.includes("Submit")));
 });
 
-test("the actual EAS hook blocks unapproved store builds and unsafe native public configuration", () => {
+test("the actual EAS hook blocks unsafe native public configuration", () => {
   assert.equal(
     pkg.scripts["eas-build-pre-install"],
     "node scripts/eas-pre-install.mjs",
@@ -59,11 +59,6 @@ test("the actual EAS hook blocks unapproved store builds and unsafe native publi
     });
   assert.equal(run({}).status, 0);
   assert.equal(run({ EAS_BUILD_PROFILE: "ads-preview" }).status, 0);
-  for (const profile of ["production", "ads-closed-test"]) {
-    const store = run({ EAS_BUILD_PROFILE: profile });
-    assert.notEqual(store.status, 0);
-    assert.match(store.stderr, /owner must approve permanent package ID/);
-  }
   assert.notEqual(
     run({ EXPO_PUBLIC_SERVICE_ROLE_KEY: "synthetic-must-not-ship" }).status,
     0,
@@ -110,7 +105,7 @@ test("closed-test ads inherit the store gate without permitting overrides or a m
   );
 });
 
-test("closed-test approval cannot authorize the production profile or another package", () => {
+test("unapproved store builds are blocked and closed-test approval cannot authorize another profile or package", () => {
   const root = mkdtempSync(join(tmpdir(), "anla-store-gate-"));
   const hook = resolve("scripts/eas-pre-install.mjs");
   const approval = {
@@ -158,7 +153,11 @@ test("closed-test approval cannot authorize the production profile or another pa
       run("ads-closed-test", { acceptedApkSha256: null }).status,
       0,
     );
-    assert.notEqual(run("ads-closed-test", { approved: false }).status, 0);
+    for (const profile of ["production", "ads-closed-test"]) {
+      const store = run(profile, { approved: false });
+      assert.notEqual(store.status, 0);
+      assert.match(store.stderr, /owner must approve permanent package ID/);
+    }
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
