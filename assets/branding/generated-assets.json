@@ -1,0 +1,58 @@
+{
+  "source": "assets/branding/approved-education-logo.png",
+  "sourceSha256": "02e1ba008ec93291fb60829ac8daef676b0ef87f2cf1ede4915fbd4ce8500331",
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceCrop": [
+    199,
+    151,
+    1078,
+    1136
+  ],
+  "operations": "Crop outer white margin, proportional Lanczos resize, centre on white; no redraw/recolour/background removal",
+  "adaptiveSafeCircleDiameter": "66/108 of 1024 px; coloured pixels verified by --check",
+  "outputs": {
+    "assets/images/icon.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "cf7885b10739d49130a8b0450ec06b9976191b7c3de659288a34c60707523b64"
+    },
+    "assets/images/adaptive-foreground.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "986b7fb5ae9273bc260f38f252d8026b42e1c90e63db620edb2fe3bf4b54554e"
+    },
+    "assets/images/splash-mark.png": {
+      "size": [
+        1024,
+        1024
+      ],
+      "mode": "RGB",
+      "sha256": "cf7885b10739d49130a8b0450ec06b9976191b7c3de659288a34c60707523b64"
+    },
+    "assets/images/favicon.png": {
+      "size": [
+        64,
+        64
+      ],
+      "mode": "RGB",
+      "sha256": "50d58f550573a5a8aecbe6ec2b80eff202d790c698fe5d8629e664b616e5fc90"
+    },
+    "store/google-play/icon-512.png": {
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "1ee28c9464b60b30989060bfd7d4cdefddf32acd337252b0b0f303a23f3a9537"
+    }
+  }
+}

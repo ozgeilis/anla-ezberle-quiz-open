@@ -9,13 +9,14 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anlaezberle.quiz.prototype"
+      "bundleIdentifier": "com.anlaezberle.quiz.prototype",
+      "icon": "./assets/images/icon.png"
     },
     "android": {
       "package": "com.kovynelstudio.anlaezberle",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-foreground.png",
-        "backgroundColor": "#005F65"
+        "backgroundColor": "#FFFFFF"
       },
       "permissions": ["android.permission.MODIFY_AUDIO_SETTINGS"],
       "blockedPermissions": [
@@ -40,10 +41,10 @@
           "image": "./assets/images/splash-mark.png",
           "imageWidth": 240,
           "resizeMode": "contain",
-          "backgroundColor": "#FFFAF1",
+          "backgroundColor": "#FFFFFF",
           "dark": {
             "image": "./assets/images/splash-mark.png",
-            "backgroundColor": "#00484E"
+            "backgroundColor": "#FFFFFF"
           }
         }
       ],
