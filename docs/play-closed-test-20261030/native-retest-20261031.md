@@ -46,4 +46,4 @@ Main, Production, Supabase şeması, Auth/push politikaları ve soru bankası de
 
 ## AAB profil hazırlığı
 
-Native test APK kodu a506f87 olarak sabittir. Sonraki profil/test/rapor değişikliği377/377 check ve web/Android Hermes export geçti. Yeni `ads-closed-test` appConfig, EAS CLI çözümünde test edilmiş `ads-preview` ile tamamen aynı; store paketleme/versionCode hazırlığıdır, AAB henüz üretilmiş değildir. [Onay bekleyen plan](closed-test-aab-plan.md).
+Native test APK kodu a506f87 olarak sabittir. Sonraki profil/test/rapor değişikliği378/378 check ve web/Android Hermes export geçti. Yeni `ads-closed-test` appConfig, EAS CLI çözümünde test edilmiş `ads-preview` ile tamamen aynı; store paketleme/versionCode hazırlığıdır, AAB henüz üretilmiş değildir. [Onay bekleyen plan](closed-test-aab-plan.md).

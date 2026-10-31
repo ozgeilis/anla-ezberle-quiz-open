@@ -25,4 +25,4 @@ Hiçbir Play sürümü incelemeye gönderilmedi. Main/Production merge, ücretli
 
 ## Hazır sonraki plan
 
-[Test reklamlarını koruyan, onay kapısına bağlı AAB planı](closed-test-aab-plan.md) hazır. `ads-closed-test` aynı kabul APK appConfig ve EAS preview ortamını kullanır; genel production reklamları kapalı kalır. Profil hazırlığı377/377 test, web/Hermes export geçti. Mevcut onay dosyası değiştirilmedi.
+[Test reklamlarını koruyan, onay kapısına bağlı AAB planı](closed-test-aab-plan.md) hazır. `ads-closed-test` aynı kabul APK appConfig ve EAS preview ortamını kullanır; genel production reklamları kapalı kalır. Profil hazırlığı378/378 test, web/Hermes export geçti. Mevcut onay dosyası değiştirilmedi.

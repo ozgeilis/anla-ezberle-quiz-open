@@ -39,8 +39,9 @@ if (android && storeProfiles.includes(profile)) {
     approval.approved === true &&
       approval.packageApproved === true &&
       approval.packageId === expo.android.package &&
+      approval.approvedProfile === profile &&
       /^[a-f0-9]{64}$/.test(approval.acceptedApkSha256 ?? ""),
-    "Store AAB blocked: owner must approve permanent package ID and accept a physical Android APK first (config/android-store-approval.json).",
+    "Store AAB blocked: owner must approve permanent package ID, this exact build profile and APK acceptance evidence (config/android-store-approval.json).",
   );
 }
 console.log("EAS build prerequisites passed; no credentials printed.");

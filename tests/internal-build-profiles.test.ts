@@ -3,6 +3,9 @@ import { test } from "node:test";
 import eas from "../eas.json";
 import pkg from "../package.json";
 import { spawnSync } from "node:child_process";
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join, resolve } from "node:path";
 import {
   internalBuildIssues,
   type InternalEasConfig,
@@ -105,6 +108,60 @@ test("closed-test ads inherit the store gate without permitting overrides or a m
       issue.includes("parent is required"),
     ),
   );
+});
+
+test("closed-test approval cannot authorize the production profile or another package", () => {
+  const root = mkdtempSync(join(tmpdir(), "anla-store-gate-"));
+  const hook = resolve("scripts/eas-pre-install.mjs");
+  const approval = {
+    approved: true,
+    approvedProfile: "ads-closed-test",
+    packageApproved: true,
+    packageId: "com.kovynelstudio.anlaezberle",
+    acceptedApkSha256: "a".repeat(64),
+  };
+  const env = {
+    ...process.env,
+    EAS_BUILD_PLATFORM: "android",
+    EXPO_PUBLIC_CONTENT_CHANNEL: "production",
+    EXPO_PUBLIC_SUPABASE_URL: "https://mqyuihiobkomjfipxehj.supabase.co",
+    EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "sb_publishable_synthetic_build_test",
+  };
+  const run = (profile: string, change = {}) => {
+    writeFileSync(
+      join(root, "config/android-store-approval.json"),
+      JSON.stringify({ ...approval, ...change }),
+    );
+    return spawnSync(process.execPath, [hook], {
+      cwd: root,
+      env: { ...env, EAS_BUILD_PROFILE: profile },
+      encoding: "utf8",
+    });
+  };
+  try {
+    mkdirSync(join(root, "config"));
+    writeFileSync(
+      join(root, "app.json"),
+      JSON.stringify({ expo: { android: { package: approval.packageId } } }),
+    );
+    assert.equal(run("ads-closed-test").status, 0);
+    assert.notEqual(run("production").status, 0);
+    assert.notEqual(
+      run("ads-closed-test", { approvedProfile: null }).status,
+      0,
+    );
+    assert.notEqual(
+      run("ads-closed-test", { packageId: "another.app" }).status,
+      0,
+    );
+    assert.notEqual(
+      run("ads-closed-test", { acceptedApkSha256: null }).status,
+      0,
+    );
+    assert.notEqual(run("ads-closed-test", { approved: false }).status, 0);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test("ad test profiles cannot override distribution, secret checks or use live ads", () => {

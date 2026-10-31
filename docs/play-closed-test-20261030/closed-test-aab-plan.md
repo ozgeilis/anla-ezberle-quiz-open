@@ -7,7 +7,7 @@
 - [EAS APK bc3c86f5](https://expo.dev/accounts/ozgeilis/projects/anla-ezberle-quiz/builds/bc3c86f5-e326-4984-8b19-4173282c742d), kaynak `a506f873d1de17b8bc98804df06f983558e48530`.
 - APK SHA-256 `aac0b20c92e0268800312447a7f84deb3a427a7e1b68b8741efd5697fd64165f`.
 - [Gerçek Android14 emülatör retesti](native-retest-20261031.md):18/18 genişlik/font/tema, yeni fatal0, gerçek quiz/sonuç, UMP hazırlama, banner ve interstitial gözlemleri. Fiziksel Samsung, ses duyulabilirliği, native OAuth/iOS ve belirtilen diğer kabul eksikleri yerine geçmez.
-- Son profil değişikliğiyle `pnpm check`377/377, TypeScript/lint/soru bütünlüğü, web export ve Android Hermes export başarılı. Önceki testlerde başarısızlık gizlenmedi; hata düzeltildikten sonra tüm check tekrar çalıştırıldı.
+- Son profil değişikliğiyle `pnpm check`378/378, TypeScript/lint/soru bütünlüğü, web export ve Android Hermes export başarılı. Önceki testlerde başarısızlık gizlenmedi; hata düzeltildikten sonra tüm check tekrar çalıştırıldı.
 
 ## Hazırlanan profil
 
@@ -15,7 +15,7 @@
 
 EAS CLI ile iki profil gerçekten çözümlendi. `ads-preview` ile `ads-closed-test` **tüm appConfig alanlarında aynı**; reklam modu test, gerçek reklam kapalı, EEA zorlaması kapalı. [Değerleri açıklamayan yapılandırma kanıtı](closed-test-profile-evidence.json).
 
-Yalnız resmî Google TestIds kullanılabilir. Genel `production` profili reklamları kapalı tutar. Test profilinin farklı parent/ortam, dağıtım, APK, debug coğrafya veya canlı reklam override'ları regresyon testleriyle reddedilir. İki store profili de aynı `config/android-store-approval.json` onayını ve istemci ortam kontrollerini zorunlu kılar; kapı **hâlâ false**. Yeni profil kapıyı aşmaz.
+Yalnız resmî Google TestIds kullanılabilir. Genel `production` profili reklamları kapalı tutar. Test profilinin farklı parent/ortam, dağıtım, APK, debug coğrafya veya canlı reklam override'ları regresyon testleriyle reddedilir. İki store profili de aynı `config/android-store-approval.json` onayını ve istemci ortam kontrollerini zorunlu kılar; kapı **hâlâ false**. Onay kaydının `approvedProfile` değeri çalıştırılan profille aynı olmak zorunda; kapalı test onayı genel production profilini açmaz. Ayrı geçici test dosyalarıyla olumlu/olumsuz profil ve paket/sha kapıları doğrulandı. Yeni profil kapıyı aşmaz.
 
 ## İstenen sonraki izin kapsamı
 

@@ -19,7 +19,7 @@ export interface InternalEasConfig {
 
 /**
  * Keeps internal builds isolated and permits the explicitly prepared store profile.
- * The separate pre-install gate requires owner/package/physical APK approval.
+ * The separate pre-install gate requires owner/package/profile and documented APK acceptance.
  * This is not an EAS schema
  * validator and does not inspect remote Expo credentials or device signing.
  */
