@@ -373,8 +373,8 @@
   ],
   "bundleConfigHas16KB": true,
   "hermesBundleMatchesAcceptedApk": true,
-  "playUpload": false,
-  "playAppSigning": "NOT_CONFIGURED_OR_VERIFIED; upload certificate does not prove final Play distribution certificate",
+  "playUpload": true,
+  "playAppSigning": "IN_USE; downloaded Play-signed universal APK statically verified; final on-device update/runtime acceptance pending",
   "nativeRuntime": "PASS within documented scope: isolated locally debug-signed AAB-derived APK on API36; not Play-signed distribution, physical Samsung, full authenticated social flow, audible audio or 16 KB kernel runtime",
   "sensitiveAssetPatternScan": {
     "rawAssetCounts": {
@@ -491,8 +491,19 @@
     "observedPlayAssetLinksCertificateSha256": "c6f523d89762d832ce131e49602c8917d965ce5257f0ea57ac03df6ccd851675",
     "uploadAndObservedPlayCertificatesDiffer": true,
     "keysChanged": false,
-    "playSignedBinaryValidated": false,
+    "playSignedBinaryValidated": true,
     "onDeviceInPlaceUpdateValidated": false,
-    "note": "Follow-up read-only observation; supersedes earlier unverified enrollment assumption, not the immutable AAB verification."
+    "note": "Follow-up read-only observation; supersedes earlier unverified enrollment assumption, not the immutable AAB verification.",
+    "validationScope": "Static signature, package, unchanged Hermes/native64 and 16KB LOAD/ZIP; not installed or runtime-tested",
+    "playSignedApkSha256": "521cf17d853426b45ecc3684e098f3303eaa8a721aaa6cef6cc2cd0ade763763"
+  },
+  "playUploadScope": "Owner-approved upload to existing Alpha draft only, saved; no review submission or rollout",
+  "googlePreview": {
+    "blockingErrorsObserved": 0,
+    "warningsObserved": 1,
+    "warning": "No testers specified for this release",
+    "console16KBSupport": true,
+    "reviewSubmitted": false,
+    "rolloutStarted": false
   }
 }

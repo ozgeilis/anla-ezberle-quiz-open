@@ -1,6 +1,6 @@
-# Alpha taslak AAB yükleme planı — onay bekliyor
+# Alpha taslak AAB yükleme planı — sınırlı onay verildi
 
-31 Ekim 2026 · Bu plan **yalnız Google Play Console'a AAB yüklemek ve taslak doğrulamak** içindir. Önceki tek-build onayı upload izni değildi. Bu plan henüz uygulanmadı.
+31 Ekim 2026 · Bu plan **yalnız Google Play Console'a AAB yüklemek ve taslak doğrulamak** içindir. Önceki tek-build onayı upload izni değildi. Ürün sahibi “Yalnız taslak AAB yüklemesini onaylıyorum” yanıtıyla bu kapsamı31 Ekim onayladı. Uygulama sonucu aşağıdaki devam raporunda tutulur.
 
 ## Hazır dosya ve hedef
 
@@ -54,3 +54,7 @@ Bu aday yalnız resmî test reklamlarını kullanır. Görünüm, gezinme ve oyu
 ```
 
 Testçilerin e-postaları/grup üyelikleri Git'e veya bu belgeye eklenmez. 0 testçi;14 günlük süre başlamadı. Testçi listesini eklemek Play hesabı erişimi, yeni Supabase hesabı veya genel push izni sağlamaz.
+
+## Onay ve devam
+
+Yalnız versionCode2/SHA `7cfdf8d1…7ffd1a` dosyasının mevcut Alpha taslağına yüklenmesi ve kontrollerinin incelenmesi onaylandı. Nihai inceleme/yayın izni yok. [Gerçek yükleme sonucu](play-draft-upload-result-20261031.md).

@@ -64,3 +64,9 @@ Onay kapısı tekrar kapalı; ikinci build/Play upload/inceleme gönderimi yapı
 Mevcut Console'da Play anahtarı **Kullanımda** görüldü; yeni anahtar oluşturma/aktarma/değiştirme yapılmadı. AAB upload sertifikasıyla farklı olan dağıtım sertifikası [sınırlı upload planına](play-draft-upload-plan-20261031.md) kaydedildi. Mevcut APK'nın Play sürümüne veri koruyarak güncellenmesi henüz doğrulanmadı.
 
 Alpha testçiler sayfasında onaylı iş destek e-postası geri bildirim adresi olarak kaydedildi ve reload sonrası görüldü. Liste hâlâ boş; opt-in düğmesi etkin değil. Yeni Alpha formunda yalnız sürüm adı ve kısa Türkçe notlarla paketsiz taslak kaydedildi. Yükle/İleri/gönderim yapılmadı; önceki “sürüm yok” ifadesi bu paketsiz taslaktan önceki gözlemdir. Mevcut Play imzalama ve otomatik koruma ayarlarına müdahale edilmedi. Kullanıcıya gerçek tester listesinin hazır olup olmadığı soruldu; liste uydurulmadı.
+
+## Onaylı taslak upload sonucu
+
+Ürün sahibi yalnız kesin SHA/code2 dosyasının Alpha taslağına yüklenmesini onayladı. Dosya özeti yeniden hesaplandı, gerçek upload ve işleme tamamlandı, paket taslak olarak kaydedildi. Önizlemede0 listelenen engelleyici hata ve1 “test kullanıcıları belirtilmedi” uyarısı görüldü; son önizleme Kaydet/onayla ve incelemeye gönderim yapılmadı. Önceki “AAB yüklenmedi” kayıtları bu onaydan önceki tarihsel durumlardır.
+
+Google paket ayrıntıları16KB destek gösteriyor. Gerçek Play imzalı universal APK indirildi, imza ve paket bilgileri doğrulandı; Hermes/52 native64 AAB ile aynı, statik16KB hizaları geçti. APK çalıştırılmadı/kurulmadı. [Sonuç ve testçi giriş adımı](play-draft-upload-result-20261031.md). Tester listesi hazır kullanıcı beyanı alındı;2 adresli mevcut liste formu doğrudan kullanıcının tamamlaması için açıldı. Adresler log/Git'e eklenmedi. Testçi listesi veya opt-in kabulü henüz verilmedi; genel yayın sınırları korunur.
