@@ -500,10 +500,25 @@
   "playUploadScope": "Owner-approved upload to existing Alpha draft only, saved; no review submission or rollout",
   "googlePreview": {
     "blockingErrorsObserved": 0,
-    "warningsObserved": 1,
-    "warning": "No testers specified for this release",
-    "console16KBSupport": true,
+    "warningsObserved": 0,
+    "consoleStatus": "Yayınlamaya hazır",
+    "testListName": "test",
+    "testListAddressCount": 2,
+    "testListSelectedForAlpha": true,
+    "selectionVerifiedAfterReload": true,
+    "registeredOptInCountVerified": 0,
     "reviewSubmitted": false,
     "rolloutStarted": false
-  }
+  },
+  "googlePreviewHistory": [
+    {
+      "stage": "after upload before tester selection",
+      "blockingErrorsObserved": 0,
+      "warningsObserved": 1,
+      "warning": "No testers specified for this release",
+      "console16KBSupport": true,
+      "reviewSubmitted": false,
+      "rolloutStarted": false
+    }
+  ]
 }

@@ -33,3 +33,13 @@ Mevcut `test` listesi düzenleme penceresi açıldı; adresler araç çıktısı
 ## Korunan sınırlar
 
 Bu tur yeni AAB üretmedi; build onay kapısı false. Paket kaldırılmadı, imza değiştirilmedi, farklı kanal/ülke açılmadı. Main/Vercel Production, Supabase, genel push, gerçek reklamlar/Analytics ve gerçek kullanıcı verileri değişmedi. Alpha taslağı **Google incelemesine gönderilmedi**, kullanıma sunulmadı. Sıradaki yayımlama onayı ancak tester seçimi ve kalan kontrol kapsamı açıkça gösterilerek istenecek.
+
+## Liste kaydı ve uyarının kalkması
+
+Ürün sahibi listeyi ve iki kaydı tamamladığını bildirdi. Tarayıcı eşzamanlı kullanım engelinden sonra kullanıcı Chrome'u bıraktı. Adresleri göstermeden sunucudan yeniden yüklemede liste **2 adres** ve seçimsiz olarak görüldü; mevcut `test` onay kutusu seçilip kanal Kaydet işlemi tamamlandı. Yeniden yüklemede liste seçili,2 adres, Kaydet devre dışı ve kanal kurulumu3/4 doğrulandı. Kişisel adresler kaydedilmedi/başka yere gönderilmedi.
+
+Sürüm önizleme sekmesi yeniden yüklendi: **Yayınlamaya hazır**,0 görünen hata/uyarı. Önceki “test kullanıcıları belirtilmedi” uyarısı kalktı. Bu paket önizleme sonucu Google inceleme onayı değildir. Son Kaydet/onayla seçilmedi, Google'a gönderilmedi.
+
+Yayın özetinde yönetilen yayınlama **devre dışı**. Uygulamayı incelemeye gönder düğmesi hâlâ devre dışı; “kontrol panelindeki gerekli adımları tamamlayın” mesajı var. Panel12/13, fiyat görevi merchant diyor; fiyat sayfası yeniden **Uygulamanız: Ücretsiz** gösteriyor. Henüz son sürüm onay kaydı verilmediği için gönderim kilidinin tek sebebi merchant olarak ilan edilmez. Finans hesabı açılmadı, uygulama ücretliye çevrilmedi.
+
+İki adres12 kayıtlı opt-in katılımcı anlamına gelmez;14 gün başlamadı. [Nihai Alpha gönderim için incelenebilir plan](alpha-review-submission-plan-20261031.md) ayrı onay bekler.

@@ -70,3 +70,9 @@ Alpha testçiler sayfasında onaylı iş destek e-postası geri bildirim adresi 
 Ürün sahibi yalnız kesin SHA/code2 dosyasının Alpha taslağına yüklenmesini onayladı. Dosya özeti yeniden hesaplandı, gerçek upload ve işleme tamamlandı, paket taslak olarak kaydedildi. Önizlemede0 listelenen engelleyici hata ve1 “test kullanıcıları belirtilmedi” uyarısı görüldü; son önizleme Kaydet/onayla ve incelemeye gönderim yapılmadı. Önceki “AAB yüklenmedi” kayıtları bu onaydan önceki tarihsel durumlardır.
 
 Google paket ayrıntıları16KB destek gösteriyor. Gerçek Play imzalı universal APK indirildi, imza ve paket bilgileri doğrulandı; Hermes/52 native64 AAB ile aynı, statik16KB hizaları geçti. APK çalıştırılmadı/kurulmadı. [Sonuç ve testçi giriş adımı](play-draft-upload-result-20261031.md). Tester listesi hazır kullanıcı beyanı alındı;2 adresli mevcut liste formu doğrudan kullanıcının tamamlaması için açıldı. Adresler log/Git'e eklenmedi. Testçi listesi veya opt-in kabulü henüz verilmedi; genel yayın sınırları korunur.
+
+## Liste seçiminin gerçek kaydı ve son kontrol
+
+Kullanıcı kayıtları tamamladığını bildirdi; Chrome kontrolü kısa süre eşzamanlı kullanım nedeniyle durdu. Kullanıcı tarayıcıyı bıraktıktan sonra sunucudan reload,2 adresli listenin mevcut fakat seçimsiz olduğunu gösterdi. Mevcut liste seçilip kanal Kaydet işlemi tamamlandı; reload sonrası seçim kalıcı, Kaydet devre dışı, kanal3/4. E-postalar maskelendi/Git'e yazılmadı.
+
+Önizleme reload: **Yayınlamaya hazır**,0 hata/uyarı; testçi uyarısı kalktı. Son Kaydet/onayla henüz yapılmadı. Yayın özeti yönetilen yayınlama kapalı, Gönder pasif/gerekli panel adımları mesajı gösteriyor. Fiyat sayfası yine Ücretsiz; finans hesabı açılmadı. [Kesin paket/kitle ve durma koşullu ilk gönderim planı](alpha-review-submission-plan-20261031.md) hazır; ayrı onay bekliyor. İki adres12 opt-in değildir,14 gün başlamadı.
