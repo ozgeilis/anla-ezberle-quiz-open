@@ -214,7 +214,7 @@ export function Portrait({ id, size }: { id: number; size: number }) {
               stroke={v.light}
               strokeWidth="1.3"
               fill="none"
-              opacity=".4"
+              opacity={0.4}
             />
           </>
         ) : (

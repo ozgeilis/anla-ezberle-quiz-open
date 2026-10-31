@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "status": "prepared_not_uploaded",
+  "status": "uploaded_store_listing_ready_for_review_not_submitted",
   "captureType": "real_native_android_emulator",
   "api": 36,
   "physicalDeviceAcceptance": false,
@@ -89,5 +89,14 @@
       "rgbSha256": "4c30a6972a2e8cda1cf2f7a3df0aaff4690f68d686d702f41790c2beda845831",
       "rgbPixelsUnchanged": true
     }
-  ]
+  ],
+  "aiVisualDisclosure": {
+    "date": "2026-10-31",
+    "source": "owner_confirmed_ai_generated_icon_category_avatar_badge_illustrations",
+    "scope": "icon_feature_graphic_and_six_screenshots_containing_ai_illustrations",
+    "screenshotsRemainRealCaptures": true,
+    "capturePixelsChangedForDisclosure": false,
+    "consolePersistedSelectionVerified": true,
+    "submittedForPlayReview": false
+  }
 }

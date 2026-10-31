@@ -61,6 +61,15 @@
         "ADS_TEST_BUILD": "1",
         "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534"
       }
+    },
+    "ads-closed-test": {
+      "extends": "production",
+      "environment": "preview",
+      "env": {
+        "ADS_MODE": "test",
+        "ADS_TEST_BUILD": "1",
+        "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534"
+      }
     }
   }
 }

@@ -1,7 +1,17 @@
 {
   "approved": false,
   "packageId": "com.kovynelstudio.anlaezberle",
-  "acceptedApkSha256": null,
+  "acceptedApkSha256": "aac0b20c92e0268800312447a7f84deb3a427a7e1b68b8741efd5697fd64165f",
   "packageApproved": true,
-  "packageApprovedAt": "2026-10-24"
+  "packageApprovedAt": "2026-10-24",
+  "approvedProfile": "ads-closed-test",
+  "acceptedApkSourceCommit": "a506f873d1de17b8bc98804df06f983558e48530",
+  "reviewedPreparationCommit": "007ed07c538a774ca68612dd140482a0b0de9a00",
+  "acceptanceBasis": "Owner requested publication after approved-logo native preview and 378 checks. Prior accepted game APK remains the code baseline; no claim that the icon-preview fixture is a game APK. New local AAB must pass static and emulator validation before Play upload.",
+  "approvedAt": "2026-10-31",
+  "scope": "one local ads-closed-test AAB for approved icon update to existing Alpha/Turkey/test-list audience; no main/public Production or backend changes",
+  "approvalState": "one local build snapshot captured; gate reclosed while compilation and validation continue",
+  "ownerReply": "yayınla",
+  "approvedIconCommit": "b3e65635b19f68e3fa3ba91f0413cc4d64931cfa",
+  "consumedByLocalSourceCommit": "d00efc0"
 }

@@ -12,6 +12,7 @@ import { randomUUID } from "expo-crypto";
 import { onlineClient, onlineMessage, onlineRequest } from "./client";
 import { useOnlineAuth } from "./OnlineProvider";
 import { DirectChallenge, PlayerInbox, PlayerNotification } from "./types";
+import { subscribeRealtime } from "./realtimeSubscription";
 const empty: PlayerInbox = {
   notifications: [],
   challenges: [],
@@ -120,23 +121,34 @@ const InboxController = React.memo(function AccountInbox({
         if (alive) setError(onlineMessage(e));
       });
     const client = onlineClient();
-    const channel = client
-      ?.channel(`player-inbox:${actor}`)
-      .on(
-        "postgres_changes",
-        {
-          event: "*",
-          schema: "public",
-          table: "player_notifications",
-          filter: `recipient_id=eq.${actor}`,
-        },
-        sync,
-      )
-      .subscribe((status) => {
-        if (!alive) return;
-        setConnection(status === "SUBSCRIBED" ? "live" : "polling");
-        if (status === "SUBSCRIBED") sync();
-      });
+    const stopRealtime = client
+      ? subscribeRealtime(
+          client,
+          `player-inbox:${actor}`,
+          undefined,
+          (channel) => {
+            channel
+              .on(
+                "postgres_changes",
+                {
+                  event: "*",
+                  schema: "public",
+                  table: "player_notifications",
+                  filter: `recipient_id=eq.${actor}`,
+                },
+                sync,
+              )
+              .subscribe((status) => {
+                if (!alive) return;
+                setConnection(status === "SUBSCRIBED" ? "live" : "polling");
+                if (status === "SUBSCRIBED") sync();
+              });
+          },
+          () => {
+            if (alive) setConnection("polling");
+          },
+        )
+      : undefined;
     const timer = setInterval(sync, 30000);
     const foreground = AppState.addEventListener("change", (state) => {
       if (state === "active") sync();
@@ -150,7 +162,7 @@ const InboxController = React.memo(function AccountInbox({
       foreground.remove();
       if (Platform.OS === "web")
         document.removeEventListener("visibilitychange", sync);
-      if (channel) void client?.removeChannel(channel);
+      stopRealtime?.();
     };
   }, [actor, refresh]);
   const perform = async (
