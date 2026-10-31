@@ -360,7 +360,7 @@ export function Cup({ size = 50 }: { size?: number }) {
       <Defs>
         <LinearGradient id={id} x1="0" y1="0" x2="1" y2="1">
           <Stop stopColor={c.paleGold} />
-          <Stop offset=".4" stopColor={c.gold} />
+          <Stop offset="0.4" stopColor={c.gold} />
           <Stop offset="1" stopColor={c.orange} />
         </LinearGradient>
       </Defs>
