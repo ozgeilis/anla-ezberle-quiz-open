@@ -1,6 +1,6 @@
 # Play Console kapalı test giriş taslağı
 
-30.10.2026: mevcut Play Console uygulaması gerçek tarayıcı üzerinden doğrulandı. Uygulama taslak, kişisel geliştirici hesabında; henüz incelemeye gönderilmedi. Gizlilik URL'si, Oyun → Soru Cevap kategorisi ve aşağıdaki iş iletişimi taslağa kaydedildi (panel son doğrulamada 4/13 görev; sayı yayın kabulü değildir). Diğer satırlar açıkça belirtilmedikçe hazırlık taslağıdır. Özel Console ekran görüntüleri Git dışında saklanır.
+30.10.2026: mevcut Play Console uygulaması gerçek tarayıcı üzerinden doğrulandı. Uygulama taslak, kişisel geliştirici hesabında; henüz incelemeye gönderilmedi. Gizlilik URL'si, Oyun → Soru Cevap kategorisi ve aşağıdaki iş iletişimi taslağa kaydedildi (31 Ekim son doğrulamada panel12/13; sayı yayın kabulü değildir). Diğer satırlar açıkça belirtilmedikçe hazırlık taslağıdır. Özel Console ekran görüntüleri Git dışında saklanır.
 
 | Alan                | Hazırlık / gereken karar                                                                                                                                                                                                                                   |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -9,11 +9,11 @@
 | Tür                 | Oyun → Soru Cevap; Console taslağında kaydedildi. Etiket seçilmedi                                                                                                                                                                                         |
 | Ücret               | Ürün sahibi 30.10.2026 bu turda ücretsiz dağıtımı açıkça onayladı. Console'da Ücretsiz kaydedildi ve doğrulandı; merchant hesap açılmadı                                                                                                                   |
 | Kalıcı paket        | `com.kovynelstudio.anlaezberle`, önceden onaylı; mevcut uygulama panelinde aynı paket görüntülendi                                                                                                                                                         |
-| Hedef kitle         | Ürün sahibi 30.10.2026 bu turda 13 yaş ve üzeri hedefini seçti. Reklam beyanı artık kayıtlı; form Uygulama Erişimi önkoşulunu bekliyor; 13–15, 16–17, 18+ seçimi henüz kaydedilmedi; IARC ayrı. 13-altı hedefi varsayılmadı                                |
-| İçerik derecesi     | IARC anketi henüz doldurulmadı; tahmini yaş derecesi yazılmadı. Çevrimiçi kullanıcı etkileşimi ve kişisel profil alanları saklanmamalı                                                                                                                     |
+| Hedef kitle         | 31 Ekim: kullanıcı onaylı13–15,16–17,18+ kaydedildi. 13-altı hedeflenmedi; IARC dereceleri ayrı.                                                                                                                                                           |
+| İçerik derecesi     | IARC şartları açık kabul edildi; gerçek anket tamamlandı. PEGI12/ESRB13+ ve diğer bölgesel sonuçlar `docs/play-closed-test-20261030/iarc-20261031.md` içinde.                                                                                              |
 | Reklam              | AdMob test dalında native SDK ve test reklamları ekleniyor. Reklam sunan nihai binary için “Evet”; eski reklamsız APK beyanı bu adaya taşınmaz. Test reklamı içeren aday için Console taslağına Evet kaydedildi; nihai AAB reklam modu ayrıca doğrulanacak |
 | Uygulama erişimi    | Solo misafir erişimi var; sosyal/oda/sıralama için doğrulanmış yetkili hesap gerekir. İncelemeci erişimi aşağıda                                                                                                                                           |
-| Data Safety         | `data-safety-draft.md` doldurma kaynağıdır; “veri toplanmıyor” seçilmez. Kesin veri türü/amaç/opsiyonellik/sağlayıcı rolleri ve saklama eksikleri hesap sahibiyle doğrulanmalı                                                                             |
+| Data Safety         | On veri türü ve toplama/paylaşım/amaç ayrıntıları kaydedildi; önizleme doğrulandı. `data-safety-draft.md` dayanak ve sınırları korur. İncelemeye gönderilmedi.                                                                                             |
 | Gizlilik            | https://anla-ezberle-quiz.vercel.app/privacy — PR #19 ile ayrı onayla Production'da yayımlandı, herkese açık metin doğrulandı; Console taslağına kaydedildi                                                                                                |
 | Dış hesap silme     | https://anla-ezberle-quiz.vercel.app/account-delete — gerçek güvenli akış; giriş/yeniden doğrulama gerekir                                                                                                                                                 |
 | İletişim            | `kovynelstudio@gmail.com` ve mevcut web adresi Console taslağına kaydedildi; telefon eklenmedi                                                                                                                                                             |
@@ -32,14 +32,14 @@
 
 Hesap gerektirmeden açılış → Ana Sayfa → Oyuna Başla → Kategoriler → zorluk → solo quiz/sonuç/inceleme; rozet, yerel profil ve ayarlar erişilebilir. Sonuçlar bu cihazda tutulur.
 
-Gerçek çevrimiçi ekranlar için **henüz bu yayın adayına özel incelemeci hesabı atanmadı**. Gerekli: üretim verilerine erişmeyen, yalnız oyun oyuncusu yetkili sentetik hesap(lar), açık sahibi/temizleme planı ve izinli enrollment. Yeni üretim hesabı açma onayı bu görevden varsayılmadı. Doğrulama kodu gerektirmeyen güvenli inceleme yöntemi hazırlanmalı; kod/parola/token bu depoya veya mağaza açıklamasına yazılmaz. Gerekli incelemeci bilgileri yalnız Play Console'un uygulama erişimi alanına girilir. Genel kayıt/push/Google kayıt sınırları incelemeyi kolaylaştırmak için kapatılıp açılmaz.
+Gerçek çevrimiçi ekranlar için açık onayla yalnız iki sentetik oyuncu oluşturuldu ve API/native erişimi test edildi. Giriş bilgileri yalnız Console'un özel Uygulama Erişimi alanında; ek Google/iş ortağı cihaz paylaşımı kapalı. Parola/kod/token Git veya mağaza açıklamasında yok. [Onay kapsamı ve sonuç](../../../docs/play-closed-test-20261030/reviewer-access-plan.md). Genel kayıt/push/Google kayıt sınırları korunur. İnceleme hesapları silinmedi.
 
 Google testing izin listesi ve Supabase kimlikleri farklı şeylerdir. Google yeni kayıt kapalıyken yeni testerın düğmeye basıp hesap açabileceği vaat edilmez. Mevcut izinli Google kullanıcısı için gerçek native callback/oturum/hesap silme kabulü ayrı yapılmalı. Giriş iptali, hesap değiştirme ve bağlantı kesilmesi testi de gerçek Google kabulünden önce tamamlanmış sayılmaz.
 
 ## Gönderim sırası
 
 1. Son hatasız APK ve test SHA'sını incele; mevcut `android-store-approval.json` koşulu için açık insan kararı al.
-2. Hesap sahibi Console kaydı/yaş ve politika beyanlarını tamamlasın; sentetik incelemeci erişimi hazırlansın.
+2. Kayıtlı yaş/politika ve incelemeci beyanlarını son binary ile karşılaştır; ülke/tester seçimini ve panel fiyatlandırma görevini kontrol et.
 3. Onaylı kaynak ve production profiliyle AAB üret; manifest, imza, sürüm, sır taraması ve 16 KB uyumluluğunu gerçek AAB'de tekrar denetle.
 4. Hangi AAB SHA'sının, hangi kapalı track ve ülke/tester grubuna yükleneceğini göstererek ayrı son gönderim onayı al. Otomatik submit yok.
 5. Google incelemesi ve Pre-launch report sonuçlarını incele; P0/ANR/crash engellerini düzelt.
@@ -53,4 +53,4 @@ Altı yeni telefon görüntüsü son APK’da gerçek yerel oyun akışından al
 
 ## 31 Ekim AI kaynak beyanı
 
-Ürün sahibi illüstrasyonların yapay zekâyla üretildiğini doğruladı. İkon, tanıtım ve AI illüstrasyonlarını içeren altı gerçek ekran yakalaması etiketlendi; kaydedilip yeniden açılarak sekiz seçimin kalıcılığı doğrulandı. Ekranlar gerçek emülatör yakalamalarıdır; AI ile üretilmiş ekranlar gibi yeniden oluşturulmadı. Mağaza girişi **İncelenmek üzere göndermeye hazır**; uygulama incelemeye gönderilmedi. Bu durum Data Safety/IARC/erişim/tester/AAB eksiklerinin tamamlandığı anlamına gelmez.
+Ürün sahibi illüstrasyonların yapay zekâyla üretildiğini doğruladı. İkon, tanıtım ve AI illüstrasyonlarını içeren altı gerçek ekran yakalaması etiketlendi; kaydedilip yeniden açılarak sekiz seçimin kalıcılığı doğrulandı. Ekranlar gerçek emülatör yakalamalarıdır; AI ile üretilmiş ekranlar gibi yeniden oluşturulmadı. Mağaza girişi **İncelenmek üzere göndermeye hazır**; uygulama incelemeye gönderilmedi. Data Safety/IARC/incelemeci erişimi31 Ekim sonradan tamamlandı; tester/AAB ve gönderim kabulü hâlâ ayrı. Güncel durum yayın özetindedir.

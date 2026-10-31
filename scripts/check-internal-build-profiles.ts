@@ -35,6 +35,7 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
   const adsProfiles = {
     "ads-preview": "preview",
     "ads-development": "development",
+    "ads-closed-test": "production",
   };
   for (const name of Object.keys(build)) {
     if (
@@ -50,8 +51,12 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
       profile &&
       (profile.extends !== parent ||
         Object.keys(profile).some(
-          (key) => key !== "extends" && key !== "env",
+          (key) =>
+            key !== "extends" &&
+            key !== "env" &&
+            !(name === "ads-closed-test" && key === "environment"),
         ) ||
+        (name === "ads-closed-test" && profile.environment !== "preview") ||
         profile.env?.ADS_MODE !== "test" ||
         profile.env?.ADS_TEST_BUILD !== "1" ||
         Object.keys(profile.env ?? {}).some(
@@ -64,9 +69,11 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
           !/^ca-app-pub-\d{16}~\d{10}$/.test(profile.env.ADMOB_ANDROID_APP_ID)))
     )
       issues.push(
-        `${name}: only an isolated test-ad extension of the reviewed internal profile is permitted`,
+        `${name}: only an isolated test-ad extension of the reviewed parent profile is permitted`,
       );
   }
+  if (build["ads-closed-test"] && !build.production)
+    issues.push("ads-closed-test: guarded production parent is required");
   for (const name of expected) {
     const profile = build[name];
     if (!profile || typeof profile !== "object") {

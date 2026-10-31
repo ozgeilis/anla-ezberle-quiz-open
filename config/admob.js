@@ -9,6 +9,7 @@ function resolveAdBuild(env) {
   const testBuild =
     profile === "ads-preview" ||
     profile === "ads-development" ||
+    profile === "ads-closed-test" ||
     (!profile && env.ADS_TEST_BUILD === "1");
   const mode = testBuild && env.ADS_MODE === "test" ? "test" : "off";
   const appId = env.ADMOB_ANDROID_APP_ID;

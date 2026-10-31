@@ -6,6 +6,7 @@ import { spawnSync } from "node:child_process";
 import {
   internalBuildIssues,
   type InternalEasConfig,
+  type InternalProfile,
 } from "../scripts/check-internal-build-profiles";
 
 const copy = (): InternalEasConfig => structuredClone(eas);
@@ -55,9 +56,11 @@ test("the actual EAS hook blocks unapproved store builds and unsafe native publi
     });
   assert.equal(run({}).status, 0);
   assert.equal(run({ EAS_BUILD_PROFILE: "ads-preview" }).status, 0);
-  const store = run({ EAS_BUILD_PROFILE: "production" });
-  assert.notEqual(store.status, 0);
-  assert.match(store.stderr, /owner must approve permanent package ID/);
+  for (const profile of ["production", "ads-closed-test"]) {
+    const store = run({ EAS_BUILD_PROFILE: profile });
+    assert.notEqual(store.status, 0);
+    assert.match(store.stderr, /owner must approve permanent package ID/);
+  }
   assert.notEqual(
     run({ EXPO_PUBLIC_SERVICE_ROLE_KEY: "synthetic-must-not-ship" }).status,
     0,
@@ -68,6 +71,39 @@ test("the actual EAS hook blocks unapproved store builds and unsafe native publi
         "sb_secret_synthetic_not_a_real_key",
     }).status,
     0,
+  );
+});
+
+test("closed-test ads inherit the store gate without permitting overrides or a missing parent", () => {
+  assert.equal(eas.build["ads-closed-test"].extends, "production");
+  assert.equal(eas.build["ads-closed-test"].environment, "preview");
+  assert.deepEqual(
+    eas.build["ads-closed-test"].env,
+    eas.build["ads-preview"].env,
+  );
+  const changes: Partial<InternalProfile>[] = [
+    { distribution: "internal" },
+    { extends: "preview" },
+    { environment: "production" },
+    { autoIncrement: false },
+    { android: { buildType: "apk" } },
+    { env: { ADS_MODE: "live", ADS_TEST_BUILD: "1" } },
+    { env: { ADS_MODE: "test", ADS_TEST_BUILD: "1", ADS_TEST_UMP_EEA: "1" } },
+  ];
+  for (const change of changes) {
+    const altered = copy();
+    altered.build!["ads-closed-test"] = {
+      ...altered.build!["ads-closed-test"],
+      ...change,
+    };
+    assert.ok(internalBuildIssues(altered).length > 0);
+  }
+  const missing = copy();
+  delete missing.build!.production;
+  assert.ok(
+    internalBuildIssues(missing).some((issue) =>
+      issue.includes("parent is required"),
+    ),
   );
 });
 

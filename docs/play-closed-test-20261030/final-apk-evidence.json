@@ -552,7 +552,7 @@
     "command": "adb -s emulator-5556 install -r acceptance-7db5e96.apk",
     "result": "Success",
     "dataClearOrUninstall": false,
-    "uiAcceptance": "NOT_PERFORMED: CUA does not expose emulator app, two documented native app binding attempts rejected; no adb/UIAutomator UI fallback used",
+    "uiAcceptance": "FAILED: genuine ADB/UIAutomator testing was subsequently authorized; AccountInbox crash observed. See native-retest-20261031.md.",
     "physicalDevice": false
   },
   "sensitiveAssetPatternScan": {
@@ -579,5 +579,6 @@
     "ACCESS_ADSERVICES_AD_ID": true,
     "ACCESS_ADSERVICES_ATTRIBUTION": true,
     "ACCESS_ADSERVICES_TOPICS": true
-  }
+  },
+  "releaseAcceptance": "REJECTED: native Realtime resubscription crash during font/theme matrix. Superseded by bc3c86f5; historical binary facts retained."
 }

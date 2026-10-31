@@ -100,8 +100,35 @@ test("revenue cannot be enabled by public or production environment flags", () =
   );
 });
 
+test("guarded closed-test AAB uses the accepted preview ad configuration without revenue", () => {
+  const env = {
+    ADS_MODE: "test",
+    ADS_TEST_BUILD: "1",
+    ADMOB_ANDROID_APP_ID: "ca-app-pub-9642662711398587~8836643534",
+  };
+  assert.deepEqual(
+    resolveAdBuild({ ...env, EAS_BUILD_PROFILE: "ads-closed-test" }),
+    resolveAdBuild({ ...env, EAS_BUILD_PROFILE: "ads-preview" }),
+  );
+  for (const mode of ["live", "production", undefined])
+    assert.equal(
+      resolveAdBuild({
+        ...env,
+        EAS_BUILD_PROFILE: "ads-closed-test",
+        ADS_MODE: mode,
+      }).mode,
+      "off",
+    );
+});
+
 test("UMP geography override requires an explicit test development configuration", () => {
-  for (const profile of ["production", "preview", "development", "ads-preview"])
+  for (const profile of [
+    "production",
+    "preview",
+    "development",
+    "ads-preview",
+    "ads-closed-test",
+  ])
     assert.equal(
       resolveAdBuild({
         EAS_BUILD_PROFILE: profile,

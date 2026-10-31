@@ -4,7 +4,8 @@ import { readFileSync } from "node:fs";
 
 const profile = process.env.EAS_BUILD_PROFILE;
 const android = process.env.EAS_BUILD_PLATFORM === "android";
-if (android && ["preview", "ads-preview", "production"].includes(profile)) {
+const storeProfiles = ["production", "ads-closed-test"];
+if (android && ["preview", "ads-preview", ...storeProfiles].includes(profile)) {
   const allowed = new Set([
     "EXPO_PUBLIC_CONTENT_CHANNEL",
     "EXPO_PUBLIC_SUPABASE_URL",
@@ -29,7 +30,7 @@ if (android && ["preview", "ads-preview", "production"].includes(profile)) {
     "Publishable client configuration required; no administrator keys",
   );
 }
-if (android && profile === "production") {
+if (android && storeProfiles.includes(profile)) {
   const { expo } = JSON.parse(readFileSync("app.json", "utf8"));
   const approval = JSON.parse(
     readFileSync("config/android-store-approval.json", "utf8"),

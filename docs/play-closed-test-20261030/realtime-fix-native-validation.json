@@ -1,0 +1,50 @@
+{
+  "sourceCommit": "a506f873d1de17b8bc98804df06f983558e48530",
+  "buildId": "bc3c86f5-e326-4984-8b19-4173282c742d",
+  "emulator": "AnlaClosedTest34",
+  "androidApi": 34,
+  "physicalDevice": false,
+  "matrixCases": 18,
+  "navigationFontScaleIndependent": true,
+  "navigationTouchTargetMinDp": 48,
+  "fontScales": [1, 1.5, 2],
+  "widthsDp": [320, 360, 390],
+  "themes": ["light", "dark"],
+  "newFatalEntriesAfterInstall": 0,
+  "oldFatalEntryRetained": true,
+  "existingAuthenticatedInboxStillVisible": true,
+  "testAdBanner": "PASS: genuine Google Test Ad observed; no ad click",
+  "consentPreparation": "PASS: native UMP returned allowed in natural emulator region; no forced EEA form in this release",
+  "localOptoutPersistsAfterRestart": true,
+  "restoredLocalAdPreferences": [
+    {
+      "label": "18 yaş veya üzerindeyim",
+      "checked": "false",
+      "enabled": "true"
+    },
+    {
+      "label": "Test reklamlarına izin ver",
+      "checked": "false",
+      "enabled": "false"
+    }
+  ],
+  "limitations": [
+    "physical Samsung and audible sound acceptance pending",
+    "new APK EEA reject/revoke form not forced or retested",
+    "no 16 KB runtime emulator test",
+    "no native iOS or real OAuth retest",
+    "new APK explicit Close button and real five-minute interval not independently retested; prior PR18 Close evidence retained"
+  ],
+  "newLocalQuiz": {
+    "observedOptionTaps": 10,
+    "correct": 2,
+    "incorrect": 8,
+    "score": 200,
+    "xp": 20,
+    "displayedDuration": "00:34",
+    "resultSaved": true,
+    "fixtureOrAnswerKeyInjection": false
+  },
+  "interstitial": "PASS: voluntary offer after saved result; genuine Google interstitial Test Ad observed",
+  "fullscreenBackground": "Observed Home then standard launcher return: fullscreen dismissed and requested home reached, no second offer observed. Not physical audio or every interruption case."
+}
