@@ -9,7 +9,7 @@
 - [Yeni EAS APK](https://expo.dev/accounts/ozgeilis/projects/anla-ezberle-quiz/builds/d33a229f-cd8a-47a2-9a77-ce0bcf9d51dc): FINISHED, target API36, aynı EAS imzası, mevcut kalıcı paket, ZIP/52 ELF64 statik16KB PASS. [Tam binary kanıtı](final-apk-evidence.json). Android14 emülatörde veri silmeden güncelleme kurulumu PASS; bu binary'nin UI kabulü bekliyor.
 - Önceki PR #18 gerçek Android14 emülatör UMP ret/kabul/geri çekme, gerçek test banner ve interstitial, 12 görünüm/24 web kontrolü kanıtları korunuyor. Önceki testler yeni APK'ya fiziksel kabul olarak taşınmadı.
 - Play uygulaması/paket, kişisel hesap, 12 tester/14 gün gereği ve 0 tester doğrulandı.
-- Gizlilik URL'si, kategori/iş iletişimi, ücretsiz fiyat, resmî kurum Hayır, test reklamı içeren aday için Reklam Evet taslağı kaydedildi. Metin, ikon, tanıtım ve altı gerçek oyun ekranı yalnız taslak kaydedildi.
+- Gizlilik URL'si, kategori/iş iletişimi, ücretsiz fiyat, resmî kurum Hayır, test reklamı içeren aday için Reklam Evet taslağı kaydedildi. Metin, ikon, tanıtım ve altı gerçek oyun ekranı 31 Ekim AI kaynak etiketleriyle mağaza girişinde **İncelenmek üzere göndermeye hazır** kaydedildi; incelemeye gönderilmedi.
 - Ürün sahibi 13+ hedefini onayladı; ilgili form incelemeci erişimi beklediği için yaş kaydı henüz yok.
 - Canlı Supabase yalnız salt okunur incelendi; hesap silme/sıralama açık, Google yeni kayıt/genel push kapalı, RLS ve kısıtlı enrollment korundu.
 
@@ -31,4 +31,4 @@ Main, Vercel Production, gerçek reklamlar, Analytics, genel push, Auth politika
 
 ## 31 Ekim devamı
 
-Mac erişimi yeniden açıldı. Finans/sağlık yok beyanları kaydedildi, panel7/13 görev. Data Safety10 veri türüyle kısmi taslak; mağaza AI öğe kaynağı sorusu bekliyor. Önceki kilit engeli kalktı, diğer hesap/ADB yöntemi/AAB onay sınırları değişmedi. [Ayrıntı](console-progress-20261031.md).
+Mac erişimi yeniden açıldı. Finans/sağlık yok beyanları kaydedildi, panel7/13 görev. Data Safety10 veri türüyle kısmi taslak; kullanıcı AI illüstrasyon kaynağını doğruladı, sekiz mağaza görseli etiketlenerek kaydedildi ve kalıcılığı doğrulandı. Önceki kilit engeli kalktı, diğer hesap/ADB yöntemi/AAB onay sınırları değişmedi. [Ayrıntı](console-progress-20261031.md).

@@ -50,3 +50,7 @@ Google testing izin listesi ve Supabase kimlikleri farklı şeylerdir. Google ye
 Altı yeni telefon görüntüsü son APK’da gerçek yerel oyun akışından alındı; kodlanmış RGB pikselleri yakalamayla aynı. Önceki çok uzun test görüntüleri mağaza dosyası olarak kullanılmadı. `screenshots-manifest.json` kaynak APK, kaynak yakalama hash’leri ve yükleme dosyası/RGB hash’lerini içerir. Onaylı uygulama görselleri değişmedi; mağaza ikonunun yalnız opak alfa kanalı eklendi, tanıtım ve ekran görüntülerinin opak alfa kanalı kaldırıldı. Her PNG boyutu, türü, dosya sınırı ve ekran oranı doğrulandı. Dosya uygunluğu görsel hakları veya Play inceleme onayı değildir.
 
 [Resmî grafik koşulları](https://support.google.com/googleplay/android-developer/answer/9866151) (30.10.2026): simge 512×512/32-bit; tanıtım 1024×500/24-bit; telefon görüntüsü en az 320/en çok 3840 px, uzun kenar kısa kenarın en fazla iki katı, alfa yok.
+
+## 31 Ekim AI kaynak beyanı
+
+Ürün sahibi illüstrasyonların yapay zekâyla üretildiğini doğruladı. İkon, tanıtım ve AI illüstrasyonlarını içeren altı gerçek ekran yakalaması etiketlendi; kaydedilip yeniden açılarak sekiz seçimin kalıcılığı doğrulandı. Ekranlar gerçek emülatör yakalamalarıdır; AI ile üretilmiş ekranlar gibi yeniden oluşturulmadı. Mağaza girişi **İncelenmek üzere göndermeye hazır**; uygulama incelemeye gönderilmedi. Bu durum Data Safety/IARC/erişim/tester/AAB eksiklerinin tamamlandığı anlamına gelmez.
