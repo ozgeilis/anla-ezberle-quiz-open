@@ -28,3 +28,7 @@ Gerçek Android OAuth iptal/hesap değiştirme/callback; test reklamı tam ekran
 ## Güvenlik sınırı
 
 Main, Vercel Production, gerçek reklamlar, Analytics, genel push, Auth politikaları, canlı soru bankası, gerçek kullanıcılar bu çalışmada değiştirilmedi. Ücretli plan/runner/işlem, merchant hesap, AAB submit veya Play incelemeye gönderimi yapılmadı.
+
+## 31 Ekim devamı
+
+Mac erişimi yeniden açıldı. Finans/sağlık yok beyanları kaydedildi, panel7/13 görev. Data Safety10 veri türüyle kısmi taslak; mağaza AI öğe kaynağı sorusu bekliyor. Önceki kilit engeli kalktı, diğer hesap/ADB yöntemi/AAB onay sınırları değişmedi. [Ayrıntı](console-progress-20261031.md).

@@ -1,16 +1,16 @@
 # Data Safety çalışma formu — 30 Ekim 2026
 
-**Taslak; Console'a gönderilmedi.** Ürün sahibinin son açıklaması yetişkin odaklı, çocuklara yönelik olmayan bir oyun olduğudur. Play hedef yaş beyanı henüz doğrulanmadı. “Hiç veri toplanmaz” seçilmemeli; kapalı test de Data Safety gerektirir.
+**Taslak; Console'a gönderilmedi.** Ürün sahibinin son açıklaması yetişkin odaklı, çocuklara yönelik olmayan bir oyun olduğudur. Ürün sahibi 13+ hedefi 30.10.2026 tarihinde onayladı; Console yaş formu halen Uygulama Erişimi önkoşulunu bekliyor. “Hiç veri toplanmaz” seçilmemeli; kapalı test de Data Safety gerektirir.
 
-| Veri | İşleme / amaç | Sınır |
-| --- | --- | --- |
-| E-posta ve Auth kullanıcı kimliği | Supabase Auth; hesap yönetimi, doğrulama, güvenlik | Misafir solo oyun için giriş zorunlu değil |
-| Görünen ad, kullanıcı adı, seçili avatar | Profil ve oyuncu bulma | Avatarlar paket içi; fotoğraf yükleme veya telefon rehberi izni bulunmadı |
-| Arkadaşlık, davet, bildirim ve oda üyeliği | Sosyal oyun | Telefon rehberi toplanmıyor; uygulama içi sosyal grafiğin form veri türleriyle eşleştirilmesi doğrulanmalı |
-| Maç/oda yanıtları, skor ve sıralama tercihi | Oyun işlevi ve hile önleme | Yerel solo XP otomatik sunucu puanına dönüşmez |
-| Push tokenı, platform, oturum bağlantısı ve tercihler | İzinli telefon bildirimleri | Expo Push Service/FCM; genel gönderim kapalı, test sınırlaması korunur |
-| Teknik erişim/hata/güvenlik kayıtları | Supabase, Vercel ve yapılandırılmış hizmet sağlayıcıların işletimi | Kesin iç log saklama süreleri teyit bekliyor |
-| Yerel geçmiş, XP, rozet, tema, efekt tercihleri | Cihazda oyun devamlılığı | Hesaptan bağımsız yerel veriler otomatik çevrimiçi aktarılmaz |
+| Veri                                                  | İşleme / amaç                                                      | Sınır                                                                                                      |
+| ----------------------------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| E-posta ve Auth kullanıcı kimliği                     | Supabase Auth; hesap yönetimi, doğrulama, güvenlik                 | Misafir solo oyun için giriş zorunlu değil                                                                 |
+| Görünen ad, kullanıcı adı, seçili avatar              | Profil ve oyuncu bulma                                             | Avatarlar paket içi; fotoğraf yükleme veya telefon rehberi izni bulunmadı                                  |
+| Arkadaşlık, davet, bildirim ve oda üyeliği            | Sosyal oyun                                                        | Telefon rehberi toplanmıyor; uygulama içi sosyal grafiğin form veri türleriyle eşleştirilmesi doğrulanmalı |
+| Maç/oda yanıtları, skor ve sıralama tercihi           | Oyun işlevi ve hile önleme                                         | Yerel solo XP otomatik sunucu puanına dönüşmez                                                             |
+| Push tokenı, platform, oturum bağlantısı ve tercihler | İzinli telefon bildirimleri                                        | Expo Push Service/FCM; genel gönderim kapalı, test sınırlaması korunur                                     |
+| Teknik erişim/hata/güvenlik kayıtları                 | Supabase, Vercel ve yapılandırılmış hizmet sağlayıcıların işletimi | Kesin iç log saklama süreleri teyit bekliyor                                                               |
+| Yerel geçmiş, XP, rozet, tema, efekt tercihleri       | Cihazda oyun devamlılığı                                           | Hesaptan bağımsız yerel veriler otomatik çevrimiçi aktarılmaz                                              |
 
 Parola özel oyun tablosunda veya uygulama logunda tutulmaz; doğrulama Auth sağlayıcısındadır. Native pakette yönetici/service-role/OAuth secret bulunmamalı; gerçek binary ayrıca taranmalıdır.
 
@@ -47,3 +47,20 @@ Bu değişiklik PR #17’nin reklamsız APK’sından ayrıdır. Önceki mağaza
 - Reklamları kapatmak sonraki istekleri durdurur; Google’ın daha önce işlediği verilerin silinmesi veya kesin saklama süresi iddiası kurulmaz.
 
 Kaynak: [Google GMA veri açıklaması](https://developers.google.com/admob/android/privacy/play-data-disclosure), [UMP](https://developers.google.com/admob/android/privacy), [Google gizlilik](https://policies.google.com/privacy).
+
+## 31 Ekim 2026 Console taslağı
+
+Gerçek tarayıcıda yalnız kısmi taslak kaydedildi; incelemeye gönderilmedi, nihai Data Safety değildir.
+
+- Veri toplama/paylaşım: Evet. HTTPS uçları ve GMA TLS belgelerine göre aktarımda şifreleme: Evet.
+- Hesap oluşturma: mevcut e-posta/parola yöntemi. Google yeni kayıt kapalı olduğundan OAuth ile genel hesap oluşturma beyan edilmedi; Google ile mevcut hesaba girişin varlığı ayrı davranıştır. Son gönderim öncesi yöntem ayrımı ve e-posta doğrulama alanı yeniden gözden geçirilecek.
+- Hesap silme URL'si: mevcut `/account-delete` adresi. Hesabı silmeden kısmi veri silme seçeneği cevaplanmadı; destek süreçleri hakkında uydurma bir vaat verilmedi.
+- Seçili 10 veri türü: yaklaşık konum; ad; e-posta; kullanıcı kimlikleri; kişiler (uygulama içi sosyal grafik); uygulama işlemleri; uygulama içi arama geçmişi; diğer işlemler (oyun); teşhisler; cihaz/diğer kimlikler.
+- Oyuncu arama sorgusu `PlayersScreen.tsx` üzerinden `player_search` işlemine gider. Bellekte geçici işleme, Google tanımı gereği inceleme dışında bırakılmadı; kalıcılık/log ayrıntısı henüz kesinleştirilmedi. Telefon rehberi, GPS, mikrofon veya kullanıcı fotoğrafı erişimi varmış gibi beyan edilmedi.
+- GMA 25.5.0 SDK açıklaması IP/genel konum, etkileşim, tanılama ve tanımlayıcıları kapsıyor. AD_ID izinlerinin kapalı olması bütün tanımlayıcıların yokluğu sayılmadı. Kullanıcı hesabı/yanıtları reklam isteğine eklenmiyor.
+
+**Bekleyen:** Her veri türü için collected/shared, işlem amacı, isteğe bağlılık ve kısa süreli işleme; hizmet sağlayıcı/kullanıcının isteği istisnaları; işletmecinin saklama/harici işleme beyanı; nihai AAB davranışı. Seçili türler bu alanlar tamamlanmadan onaylanmış beyan sayılmaz. Bağımsız güvenlik incelemesi/sertifikası veya veri saklama süresi uydurulmadı.
+
+Google'ın reklam SDK'sı kendi teknik ölçümünü yapabilir; bu, uygulamada Firebase Analytics veya ayrı ürün Analytics entegrasyonunun açıldığı anlamına gelmez. Bu SDK işleme kapsamı nihai formdan saklanamaz.
+
+[Google veri türleri](https://support.google.com/googleplay/android-developer/answer/10787469?hl=tr#types), [GMA 25.5.0 beyanı](https://developers.google.com/admob/android/privacy/play-data-disclosure).
