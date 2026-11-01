@@ -1,4 +1,4 @@
-# Gerçek iOS simülatör görüntüleri
+# Gerçek iOS simülatör ve fiziksel cihaz görüntüleri
 
 Bu klasörde yalnız bu PR'ın native iOS simülatöründen alınmış ekranlar tutulacak. Android görselleri iPhone çerçevesine yerleştirilmez. İzinli olmayan gerçek oyuncu verileri kullanılmaz. Sosyal fixture ekranı kullanılırsa adında `fixture` ve manifestte sentetik olduğu açıkça belirtilir; gerçek servis testi sayılmaz.
 
@@ -15,3 +15,7 @@ Simülatörün saati/status barı CLI ile yalnız sunum için düzenlenebilir; b
 `manifest.json` 15 native PNG'nin SHA256 ve gerçek piksel ölçüsünü kaydeder. iPhone13 Pro 390pt (1170×2532): Home, kategori, hazırlık, quiz, sonuç, açıklama, gerçek tur sonrası profil, koyu ayarlar/bildirim tercihleri, büyük metin Home/Profile ve yeniden açılış. iPad13 M4: gerçek 2064×2752 portrait Home, 2752×2064 landscape profil ve quiz. iPad tam tur ve online akış kabulü değildir. Örnek turdaki yerel kazanımlar gerçekten oynanarak oluştu; hosted hesap veya sahte başarı üretilmedi.
 
 Bunlar ham simülatör PNG'leridir ve alpha kanalı içerebilir. Mağazaya yüklenmiş görseller değildir; nihai App Store yüklemesinde opaque RGB export ve Connect ölçü doğrulaması gerekir. iPhone ana zorunlu Dynamic Island ölçüsü henüz üretilmedi; 390pt görselleri başka cihaz ölçüsüne büyütülmedi.
+
+## İmzalı fiziksel iPhone kabulü
+
+`physical-iphone11-home.png`, `physical-iphone11-quiz.png`, `physical-iphone11-signin.png`: gerçek iPhone11/iOS27.2, 828×1792; Device Hub Screenshot düğmesiyle cihazdan alınmıştır. Yerel gerçek skor600/XP60, sayaç00:18 ve boş giriş formu görünür. Sahibinin oynadığı yeni development uygulamasıdır; Apple/Google login, session kalıcılığı veya bütün cihaz kabulü sayılmaz. Manifestte `actual-physical-iphone11-screenshot` ile ayrılır. App Store zorunlu Dynamic Island ölçülerinin yerine geçmez.

@@ -9,7 +9,7 @@
   "lint": "passed",
   "questionsCheck": "Frozen v71/v72 and active v73 canonical files match exactly",
   "appleSecurityTests": 8,
-  "physicalIos": "not_run",
+  "physicalIos": "passed_limited_iphone11_guest_and_signin_UI_only",
   "realAppleOAuth": "not_run_provider_disabled",
   "crossPlatformOnlineMatch": "not_run_requires_authorized_accounts",
   "dependencyAdvisory": "5 same-SDK patch updates suggested, not applied",
@@ -20,6 +20,8 @@
   "realIphone390Smoke": "passed_guest_subset",
   "realIpadSmoke": "passed_guest_subset",
   "nativeWidthMatrix": "390pt and iPad only; 320/375/430 not run",
-  "secureSession": "blocked_on_unsigned_app_missing_entitlements_-34018",
-  "easTestflightConfig": "passed_registered_id_team_release_production_APNs_no_build"
+  "secureSession": "signed_iphone_signin_UI_initialization_passed; authenticated_persistence_not_run",
+  "easTestflightConfig": "passed_registered_id_team_release_production_APNs_no_build",
+  "signedDevelopmentBuild": "passed_Release_existing_identity_manual_profile",
+  "physicalEvidence": "DEVELOPMENT-BUILD-RESULT.md"
 }

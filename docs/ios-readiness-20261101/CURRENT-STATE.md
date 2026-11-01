@@ -53,6 +53,12 @@ Sonraki Auth kabulü normal entitlements içeren, ayrıca onaylanmış iOS devel
 2. Kullanıcı adları/davetler için şikâyet, engelleme ve moderasyon: **eksik**, görünmezden gelinmez; yayın kabulü verilmedi.
 3. Yeni kalıcı uygulama ile prototip aynı custom scheme'i paylaşır. Dar Universal Link/AASA ve gerçek callback kabulü ayrı planlanır; eski uygulama silinmez, yerel veriler kendiliğinden taşınmış sayılmaz.
 4. App Store provisioning/Distribution sertifikası/APNs key/Apple revoke key, relay SMTP kaydı ve gerçek gizlilik beyanı henüz hazırlanmış credential değildir.
-5. İmzalı build üretimi, IPA yükleme, iç TestFlight dağıtımı ve ileride dış test/App Review **ayrı onay** ister. Bu çalışmada hiçbiri yapılmadı. Main merge yok, Android Alpha/testçiler/signing değişmedi.
+5. İmzalı build üretimi, IPA yükleme, iç TestFlight dağıtımı ve ileride dış test/App Review **ayrı onay** ister. Store IPA/upload/dağıtım yapılmadı. Yalnız ayrıca onaylı yerel development `.app` üretildi; aşağıdaki güncel sonuca bakın. Main merge yok, Android Alpha/testçiler/signing değişmedi.
 
-İlk sonraki somut adım [yerel development build planı](DEVELOPMENT-BUILD-PLAN.md); mevcut Development identity ve yeni Bundle ID ile Keychain/gerçek iPhone kabulünü mümkün kılar. Henüz yürütülmedi, ayrı onay gerekir. Store IPA kapısı bununla açılmaz.
+## Son güncelleme — imzalı development build tamamlandı
+
+Sahibi [yerel planı](DEVELOPMENT-BUILD-PLAN.md) ayrıca onayladı. Kaynak `2f663ed` için 13/13 CI kontrolü geçtikten sonra mevcut Development identity + yalnız yeni ID/tek kayıtlı iPhone manuel profile'ı ile Release build ve gerçek iPhone11 kurulumu tamamlandı. Yeni sertifika/anahtar yok. Geçici development kapısı yeniden kapatıldı; store kapısı kapalı.
+
+Gerçek fiziksel açılış, örnek quiz (00:20 başlangıç ve 00:18 screenshot), yerel skor600/XP60 ve depo hatası olmadan giriş ekranı görüldü. Gerçek Auth/session kalıcılığı, Apple login, ses/APNs ve sosyal maç kabulü yapılmadı. Eski prototipin son cihaz listesinde görünmediği ayrıca kontrol edildi; sahibi **kendisi sildiğini** doğruladı, ajan uninstall yapmadı.
+
+[Build sonucu ve kapsam](DEVELOPMENT-BUILD-RESULT.md), [imza/artifact kanıtı](development-artifact.json), fiziksel PNG'ler `screenshots/physical-iphone11-*`. Önceki imzasız simülatör -34018 bulgusu o artifact için geçerlidir; imzalı fiziksel build'de giriş UI başlatma engeli görülmedi. Bu, hosted login veya bütün fiziksel kabulün tamamlanması değildir. TestFlight IPA/upload izni kullanılmadı.
