@@ -1,6 +1,9 @@
 # Kabul durumu — 1 Kasım 2026
 
-Adaydır; main, Vercel Production, Alpha, canlı Auth/SQL/Edge Function değişmedi.
+İstemci adaydır; main, Vercel Production ve Alpha değişmedi. İlk yerel kabul
+kaydı aşağıdadır. Sonraki açık onayla üç backend migration'ı ve Edge v17
+uygulandı: [güncel birleşik kabul](../xp-notifications-20261101/acceptance.md)
+ve [canlı kanıt](../xp-notifications-20261101/backend-deployment.md).
 
 | Kontrol | Sonuç / sınır |
 | --- | --- |
@@ -15,9 +18,9 @@ Adaydır; main, Vercel Production, Alpha, canlı Auth/SQL/Edge Function değişm
 | Android 14 emülatör | Gerçek native kayıt → yerel SMTP bağlantısını Chrome'da açma → cold-start otomatik profil geçti |
 | Android kalıcı oturum | Force-stop/relaunch sonrası doğrulanmış hesap ve çıkış işlemi mevcut; SecureStore korunuyor |
 | Android sayaç | Native 00:20; 10 sn sonrası cevap kabulü, arka plan süre aşımı, tam tur sonucu geçti |
-| Gerçek Google OAuth | Henüz yapılmadı: özel sunucu izin listesi ve hesap sahibinin yetkilendirmesi gerekiyor |
-| Gmail / fiziksel Samsung / iPhone | Bu adayda yapılmadı |
-| Canlı oda/düello 20 sn | SQL yerel entegrasyonu geçti; canlı migration dağıtılmadı, mevcut canlı varsayılan 10 sn |
+| Gerçek Google OAuth | Sonraki hosted web testinde geçti; Android gerçek Google ek doğrulaması bekliyor |
+| Gmail / fiziksel Samsung / iPhone | Gmail bağlantısı Android emülatörde açıldı; e-posta doğrulandı ama gecikmiş PKCE oturumu oluşmadı. Fiziksel Samsung/iPhone yapılmadı |
+| Canlı oda/düello 20 sn | Onaylı migration/Edge uygulandı; yeni default 20, eski odalar aynı. Hosted RPC sınır testi ve web düello >10 sn yanıt geçti |
 
 ## Sonuç geçişi düzeltmesi
 

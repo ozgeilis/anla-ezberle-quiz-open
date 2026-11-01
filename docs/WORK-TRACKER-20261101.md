@@ -27,7 +27,7 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | A1 | Yeni solo / günlük / kategori / öğrenme / aşama / demo 20 sn | question-clock, engine, DuelProvider; #22 | Tamamlandı | 390 test; altı gerçek web turu | Native solo >10 sn yanıt ve arka plan geçti; her mod ayrı cihaz kabulü bekliyor |
 | A2 | Eski 10 sn / zamansız kayıtlar | schema, engine; #22 | Tamamlandı | tarihsel oyun regresyonu | Yok, geçmiş üzerine yazılmadı |
 | A3 | Arka plan / çift cevap / sınır anı | QuestionClock; #22 | Tamamlandı | monotonic + wall-clock / high-water; native arka plan süre aşımı geçti | Fiziksel cihaz bekliyor |
-| A4 | Canlı oda yeni default / CHECK 20; eski oda korunur | yeni timing migration; #22 | Tamamlandı | izole SQL eski/yeni oda; 5 sn reveal | Canlıya onayla uygulandı; eski 10 oda aynı |
+| A4 | Canlı oda yeni default / CHECK 20; eski oda korunur | yeni timing migration; #22 | Tamamlandı | İzole SQL + hosted iki test aktörü RPC: 15.02 sn kabul, >20 sn ret, 5 sn reveal, tek kayıt | Canlıya onayla uygulandı; eski 10 oda aynı; iki cihaz testi değil |
 | A5 | Asenkron server-authoritative süre / expire / idempotency | timing migration, online-duel; #22 | Tamamlandı | izole SQL 19 sn kabul, 20.1 sn ret, özel anahtarlar | Edge v17/SQL canlı; gerçek iki oyunculu servis kabulü bekliyor |
 | A6 | Canlı istemci/sunucu birlikte etkin | #22; backend-deployment.md | Devam Ediyor | Onaylı Edge v17 + timing migration; default 20 ve eski kayıt koruması doğrulandı | Yeni aday istemci gerçek hosted maç kabulü ve Alpha güncellemesi bekliyor |
 | A7 | Son cevap → skor öncesi boş oyun ekranı | QuizScreen; #22 | Tamamlandı | 6 turda DOM commit gözlemi, boş ekran 0 | Native 100 video karesi: boş mesaj 0; skor 62 kare |
@@ -43,7 +43,7 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | B4 | PKCE, çift callback, taze getUser ve session hazır olunca profil | verifyLink, useAuthCallback, OnlineProvider; #22 | Tamamlandı | Unit + gerçek yerel web Auth/SMTP | Hosted Gmail/Google native ayrı test |
 | B5 | Parametresiz / ağ / kullanılmış / recovery ayrımı | callback modülleri; #22 | Tamamlandı | HTTP 15 sn/UI 35 sn; unit + yerel web bare/replay | Native hata matrisi tamamlanmadı |
 | B6 | Chrome → native cold-start otomatik profil | acceptance/screenshots; #22 | Tamamlandı | Android 14 emülatör + gerçek yerel SMTP bağlantısı | Fiziksel Samsung/Gmail değildir |
-| B7 | SecureStore oturum relaunch / çıkış | acceptance; #22 | Tamamlandı | Native force-stop/relaunch; doğrulanmış hesap ekranı | Fiziksel cihaz kabulü bekliyor |
+| B7 | SecureStore oturum relaunch / çıkış | acceptance; #22 | Tamamlandı | Yerel ve gerçek hosted Android şifreli giriş; force-stop/relaunch; çıkış sonrası hosted session=0 | Fiziksel cihaz kabulü bekliyor |
 | B8 | Google hesap eşleme / silme / recovery regresyonu | mevcut #13 + #22 | Devam Ediyor | Güvenlik unit ve SQL erasure geçti | Bu adayda gerçek Google silme/native recovery bekliyor |
 | B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22 | Devam Ediyor | Edge v17 uygulandı; mevcut redirect listesi salt okunur denetlendi | Gerçek native/hosted e-posta ve Google dönüşü bekliyor; template değiştirilmedi |
 
@@ -149,11 +149,11 @@ hazırlandı; şifre/token sohbet veya Git'e alınmadı.
 
 ### Gecikmiş gerçek e-posta callback — açık kalan hata
 
-Native callback ulaştı; sunucu email_confirmed_at dolu ancak session yok.
+Native callback ulaştı; o aşamada sunucu email_confirmed_at dolu ancak session yok.
 `/token` 422 `flow_state_expired`. Yaklaşık 10 dakika beklenmiş signup flow'unda
 otomatik giriş **geçmedi**. Bu aday için hosted cold-start kabulü tamamlandı
-sayılmaz. Yanıltıcı expired mesajı adayda düzeltildi; güvenli manuel giriş aynı
-hesap üzerinde bekliyor. Yeni hesap oluşturma ve Auth süresi/politika değişikliği
+sayılmaz. Yanıltıcı expired mesajı adayda düzeltildi; sonraki güvenli şifreli giriş
+aynı hesap üzerinde geçti. Yeni hesap oluşturma ve Auth süresi/politika değişikliği
 yapılmadı. [Kanıt](xp-notifications-20261101/hosted-email-expired-result.json).
 
 
@@ -165,3 +165,13 @@ ayrı başarısız kabul olarak korunur. Yeni hata mesajı +391 test ve web expo
 geçti. Yerel GoTrue/Mailpit gecikme regresyonu ve token_hash alternatif kanıtı
 raporda; canlı şablon/PKCE politikası değiştirilmedi. Yeni hosted signup testi
 mevcut iki yeni hesap sınırı içinde yapılamıyor; ek hesap için ayrı izin gerekir.
+
+### Hosted canlı odada iki test aktörüyle sınır testi
+
+Yalnız mevcut iki izinli geçici hesap kullanıldı; yeni hesap oluşturulmadı.
+Gerçek RPC ile create/join/ready/start, iki aktörde aynı deadline, 15.02 sn'de
+yanıt kabulü, aynı isteğin tek kaydı, farklı ikinci isteğin kilitlenmesi,
+20 sn sonrasında ANSWER_LATE ve 5 sn reveal geçti. İşlem bütünü ROLLBACK:
+oda, geçici profil ayarı ve olası bildirim kuyruğu kalıcı yazılmadı.
+Bu yönetici bağlantısından SQL entegrasyonudur; iki telefon/Edge Auth/UI
+uçtan uca kabulü değildir. Kanıt: hosted-live-boundary-result.json.

@@ -201,3 +201,19 @@ hesabından uygulamanın mevcut “Hesaptan Çık” işlemiyle çıkıldı; hos
 `auth.sessions` sayısı 0 doğrulandı. Yeni gerçek Google akışı Android'deki
 sistem tarayıcısını açtı (`accounts.google.com`). İş hesabının Google giriş
 adımı hesap sahibine bırakıldı; native OAuth sonucu henüz bekleniyor.
+
+## Hosted canlı oda: iki izinli aktör / gerçek saat sınırı
+
+Mevcut iki yetkili geçici aktörle mevcut `live_room_command` kullanılarak
+create → join → ready → start çalıştırıldı. Kaynak MD5'i beklenenle aynıydı.
+Başlangıç zamanı değiştirilmeden gerçek saat beklendi: iki aktörde aynı
+deadline/20 sn; **15.02 sn** yanıt kabul edildi, aynı request tekrarında tek
+cevap kaldı, farklı ikinci request `ANSWER_LOCKED` oldu. 20 saniye sonrasındaki
+diğer oyuncu yanıtı `ANSWER_LATE`; sonraki görünüm reveal/5 sn idi.
+
+Bütün test tek transaction içinde **ROLLBACK** edildi. İkinci geçici oyuncunun
+yalnız test için gereken username ayarı, oda/üyeler/yanıtlar ve olası push
+kuyruğu da kalıcı yazılmadı. Yeni hesap, canlı Auth ayarı, gerçek kullanıcı
+veya eski oda değişikliği yapılmadı. Bu SQL RPC entegrasyon kanıtıdır; gerçek
+iki cihaz UI'sı, Edge kimlik doğrulaması veya push teslimi değildir.
+Özet: `hosted-live-boundary-result.json`.
