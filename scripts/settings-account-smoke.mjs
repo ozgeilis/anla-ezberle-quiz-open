@@ -22,10 +22,18 @@ const browser = await chromium.launch({
     ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
     : {}),
 });
+async function createContext(options) {
+  const context = await browser.newContext(options);
+  // Playwright's standalone library otherwise waits forever for missing UI.
+  context.setDefaultTimeout(30_000);
+  context.setDefaultNavigationTimeout(30_000);
+  return context;
+}
 const checks = [];
 let latestPage;
 async function shot(page, name) {
   latestPage = page;
+  console.log(`Checking ${name}`);
   await page.evaluate(async () => {
     await document.fonts.ready;
     await Promise.all(
@@ -67,7 +75,7 @@ try {
     ? process.env.UI_WIDTHS.split(",").map(Number)
     : [320, 360, 390, 430, 1024])
     for (const mode of ["light", "dark"]) {
-      const context = await browser.newContext({
+      const context = await createContext({
         viewport: { width, height: width > 600 ? 1000 : 844 },
         colorScheme: mode,
         reducedMotion: "reduce",
@@ -287,7 +295,7 @@ try {
     ? process.env.UI_WIDTHS.split(",").map(Number)
     : [320, 375, 390, 430, 1024, 1440])
     for (const mode of ["light", "dark"]) {
-      const context = await browser.newContext({
+      const context = await createContext({
         viewport: { width, height: width > 600 ? 900 : 844 },
         colorScheme: mode,
         reducedMotion: "reduce",
@@ -350,7 +358,7 @@ try {
       );
       await context.close();
     }
-  const context = await browser.newContext({
+  const context = await createContext({
     viewport: { width: 390, height: 844 },
     reducedMotion: "reduce",
   });
@@ -518,7 +526,7 @@ try {
     "network",
     "unconfirmed",
   ]) {
-    const context = await browser.newContext({
+    const context = await createContext({
         viewport: { width: 320, height: 760 },
         reducedMotion: "reduce",
       }),
@@ -563,7 +571,7 @@ try {
   }
   // New menu hierarchy and transactional theme persistence on real rendering.
   {
-    const context = await browser.newContext({
+    const context = await createContext({
       viewport: { width: 320, height: 844 },
       colorScheme: "light",
     });
@@ -571,6 +579,7 @@ try {
     await fixture.install(context);
     const page = await context.newPage();
     latestPage = page;
+    console.log(`Checking ${name}`);
     await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
     for (const name of [
       "Profil",

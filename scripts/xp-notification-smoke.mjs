@@ -5,7 +5,12 @@ import { readFile, mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { setup, userB } from "./fixtures/account-http.mjs";
 const require = createRequire(import.meta.url);
-const { chromium } = require(process.env.PLAYWRIGHT_MODULE ?? "playwright");
+const { chromium } = require(
+  process.env.PLAYWRIGHT_MODULE ??
+    (process.env.RUNNER_TEMP
+      ? join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright")
+      : "playwright"),
+);
 const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8175";
 assert.equal(new URL(origin).hostname, "127.0.0.1");
 const output = process.env.UI_ARTIFACT_DIR ?? "artifacts/xp-notifications";
