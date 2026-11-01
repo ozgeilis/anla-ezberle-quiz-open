@@ -1,3 +1,7 @@
+> 1 Kasım güncellemesi: Kullanıcı bu sınırlı backend planını onayladı ve uygulandı.
+> Kanıt: [dağıtım kaydı](../xp-notifications-20261101/backend-deployment.md).
+> Aşağıdaki metin onaya sunulmuş özgün kapsam/geri dönüş planıdır.
+
 # Onay bekleyen seviye projection geçişi
 
 Yalnız Frankfurt `mqyuihiobkomjfipxehj`; henüz uygulanmadı.

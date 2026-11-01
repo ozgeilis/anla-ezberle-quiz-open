@@ -1,3 +1,7 @@
+> 1 Kasım güncellemesi: Kullanıcı bu sınırlı backend planını onayladı ve uygulandı.
+> Kanıt: [dağıtım kaydı](../xp-notifications-20261101/backend-deployment.md).
+> Aşağıdaki metin onaya sunulmuş özgün kapsam/geri dönüş planıdır.
+
 # Onay bekleyen sunucu ve kapalı test planı
 
 Henüz uygulanmadı. Bu belge main merge, Vercel Production, Play AAB yüklemesi,

@@ -11,7 +11,7 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 - Süre / Auth / sonuç geçişi: `fix/twenty-second-auth-callback-20261101`
   `e29e56d`, [PR #22](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/22).
 - XP + bildirimler: ayrı `feat/progressive-xp-notification-cards-20261101`
-  worktree; #22 üzerine kurulu. İki geliştirme aynı takip PR'ında hazırlanır.
+  worktree; #22 üzerine kurulu. [PR #23](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/23), `d2363cd`; XP ve bildirimler aynı PR içinde.
 - #13 açık Google Auth öncülü; kodu sürüm tabanında zaten var. Eski dalı yeniden
   merge ederek güncel hesap silme/callback kodunun üzerine yazılmayacak.
 - Mevcut worktree'ler incelendi; diğer worktree'lerin commit edilmemiş dosyaları
@@ -24,12 +24,12 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 
 | Görev | Alt gereksinim | Dosya / PR | Durum | Test / kanıt | Kalan |
 |---|---|---|---|---|---|
-| A1 | Yeni solo / günlük / kategori / öğrenme / aşama / demo 20 sn | question-clock, engine, DuelProvider; #22 | Tamamlandı | 384 test; altı gerçek web turu | Native solo >10 sn yanıt ve arka plan geçti; her mod ayrı cihaz kabulü bekliyor |
+| A1 | Yeni solo / günlük / kategori / öğrenme / aşama / demo 20 sn | question-clock, engine, DuelProvider; #22 | Tamamlandı | 390 test; altı gerçek web turu | Native solo >10 sn yanıt ve arka plan geçti; her mod ayrı cihaz kabulü bekliyor |
 | A2 | Eski 10 sn / zamansız kayıtlar | schema, engine; #22 | Tamamlandı | tarihsel oyun regresyonu | Yok, geçmiş üzerine yazılmadı |
 | A3 | Arka plan / çift cevap / sınır anı | QuestionClock; #22 | Tamamlandı | monotonic + wall-clock / high-water; native arka plan süre aşımı geçti | Fiziksel cihaz bekliyor |
-| A4 | Canlı oda yeni default / CHECK 20; eski oda korunur | yeni timing migration; #22 | Tamamlandı | izole SQL eski/yeni oda; 5 sn reveal | Canlı dağıtılmadı |
-| A5 | Asenkron server-authoritative süre / expire / idempotency | timing migration, online-duel; #22 | Tamamlandı | izole SQL 19 sn kabul, 20.1 sn ret, özel anahtarlar | Canlı Edge/SQL onayı bekliyor |
-| A6 | Canlı istemci/sunucu birlikte etkin | rollout-plan.md; #22 | Engellendi | Canlı salt okunur kontrol: eski default 10 | Ayrı somut backend onayı gerekir |
+| A4 | Canlı oda yeni default / CHECK 20; eski oda korunur | yeni timing migration; #22 | Tamamlandı | izole SQL eski/yeni oda; 5 sn reveal | Canlıya onayla uygulandı; eski 10 oda aynı |
+| A5 | Asenkron server-authoritative süre / expire / idempotency | timing migration, online-duel; #22 | Tamamlandı | izole SQL 19 sn kabul, 20.1 sn ret, özel anahtarlar | Edge v17/SQL canlı; gerçek iki oyunculu servis kabulü bekliyor |
+| A6 | Canlı istemci/sunucu birlikte etkin | #22; backend-deployment.md | Devam Ediyor | Onaylı Edge v17 + timing migration; default 20 ve eski kayıt koruması doğrulandı | Yeni aday istemci gerçek hosted maç kabulü ve Alpha güncellemesi bekliyor |
 | A7 | Son cevap → skor öncesi boş oyun ekranı | QuizScreen; #22 | Tamamlandı | 6 turda DOM commit gözlemi, boş ekran 0 | Native 100 video karesi: boş mesaj 0; skor 62 kare |
 | A8 | Fiziksel Android / Alpha güncellemesi | acceptance.md; #22 | Engellendi | QA APK yerel emülatörde 00:20 | Fiziksel cihaz ve ayrı yayın onayı |
 
@@ -38,24 +38,24 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | Görev | Alt gereksinim | Dosya / PR | Durum | Test / kanıt | Kalan |
 |---|---|---|---|---|---|
 | B1 | Google kayıt kök nedeni | README; #22 | Tamamlandı | Hosted hook/flags salt okunur: googleSignupEnabled=false | Cloud Testing listesi bugün yeniden okunmadı |
-| B2 | Kanca kaldırmadan süreli özel test listesi | yeni allowlist migration; #22 | Tamamlandı | İzole SQL, RLS/metadata spoof/expiry testleri | Dağıtılmadı; liste boş |
-| B3 | Gerçek yetkili Google yeni kayıt/giriş | rollout-plan; #22 | Engellendi | Mock, gerçek OAuth sayılmadı | Onaylı test adresi + backend izni + Google rızası |
+| B2 | Kanca kaldırmadan süreli özel test listesi | yeni allowlist migration; #22 | Tamamlandı | İzole SQL, RLS/metadata spoof/expiry testleri | Canlıya uygulandı; yalnız onaylı iş hesabına 7 gün izin |
+| B3 | Gerçek yetkili Google yeni kayıt/giriş | #22; backend-deployment.md | Devam Ediyor | Gerçek Google web kayıt/otomatik profil/yenileme/çıkış/yeniden giriş geçti; tek hesap/identity | Android native Google callback ve geçici hesap temizliği bekliyor |
 | B4 | PKCE, çift callback, taze getUser ve session hazır olunca profil | verifyLink, useAuthCallback, OnlineProvider; #22 | Tamamlandı | Unit + gerçek yerel web Auth/SMTP | Hosted Gmail/Google native ayrı test |
 | B5 | Parametresiz / ağ / kullanılmış / recovery ayrımı | callback modülleri; #22 | Tamamlandı | HTTP 15 sn/UI 35 sn; unit + yerel web bare/replay | Native hata matrisi tamamlanmadı |
 | B6 | Chrome → native cold-start otomatik profil | acceptance/screenshots; #22 | Tamamlandı | Android 14 emülatör + gerçek yerel SMTP bağlantısı | Fiziksel Samsung/Gmail değildir |
 | B7 | SecureStore oturum relaunch / çıkış | acceptance; #22 | Tamamlandı | Native force-stop/relaunch; doğrulanmış hesap ekranı | Fiziksel cihaz kabulü bekliyor |
 | B8 | Google hesap eşleme / silme / recovery regresyonu | mevcut #13 + #22 | Devam Ediyor | Güvenlik unit ve SQL erasure geçti | Bu adayda gerçek Google silme/native recovery bekliyor |
-| B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22 | Engellendi | Plan, hash ve geri dönüş hazır | Canlı değişiklik için ayrı onay |
+| B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22 | Devam Ediyor | Edge v17 uygulandı; mevcut redirect listesi salt okunur denetlendi | Gerçek native/hosted e-posta ve Google dönüşü bekliyor; template değiştirilmedi |
 
 ## C — XP / seviye (aynı PR: D)
 
 | Görev | Alt gereksinim | Dosya / PR | Durum | Test / kanıt | Kalan |
 |---|---|---|---|---|---|
-| C1 | 100 seviye, artan eşik, bozuk XP fallback | domain/scoring/levels.ts | Tamamlandı | 99 eşik + bozuk XP / cap testleri geçti | Canlı seviye projection uygulanmadı |
+| C1 | 100 seviye, artan eşik, bozuk XP fallback | domain/scoring/levels.ts | Tamamlandı | 99 eşik + bozuk XP / cap testleri geçti | Canlı projection uygulandı; toplam XP aynı |
 | C2 | Toplam XP / geçmiş / unvan korunur | progress.ts | Tamamlandı | 390 regresyon; rewardSummary, eski fixture byte ve XP korunuyor | Yok (kod adayı) |
 | C3 | Profil / ana başlık / ayarlar ilerleme çubuğu | PlayerIdentityCard, ReferenceHero, SettingsScreen | Tamamlandı | Web profil 60/100; native 20/100; max %100 unit | Fiziksel cihaz kabulü yok |
-| C4 | Sosyal / online / leaderboard / seviye ses olayı | social UI + GameAudioEvents | Tamamlandı | 300 XP / eski level=2 DTO, sosyal ve sıralamada seviye 3 | Canlı projection onayı bekliyor |
-| C5 | İlgili server hesaplaması | quiz_private.social_player | Devam Ediyor | İzole SQL 99 eşik/ACL; tüm sentetik oyuncu/maç/XP satırları aynı | Forward migration hazır; canlı onayı yok |
+| C4 | Sosyal / online / leaderboard / seviye ses olayı | social UI + GameAudioEvents | Tamamlandı | 300 XP / eski level=2 DTO, sosyal ve sıralamada seviye 3 | Canlı projection uygulandı; gerçek hosted UI kabulü bekliyor |
+| C5 | İlgili server hesaplaması | quiz_private.social_player | Tamamlandı | Onaylı migration canlı; 100 seviye sınırı geçti; eski profil/ledger/rozet/oda özetleri aynı; ACL korunuyor | Yeni istemci fiziksel kabulü ayrıca bekliyor |
 | C6 | Maksimum / negatif / NaN / sınırlar | levels.test.ts | Tamamlandı | 0/99/100/210/330/orta/yüksek/58410/üstü geçti | Yok |
 | C7 | Gerçek çalışan UI görsel kabul | screenshots | Tamamlandı | 6 web ve 18 Android emulator görünüm matrisi; screenshots | Fiziksel Samsung/iOS yapılmadı |
 
@@ -97,7 +97,7 @@ Console veya fiziksel cihazlar hakkında varsayımla `Tamamlandı` yazılmayacak
 ## Yeni adayın tamamlanmayan yayın adımları
 
 C/D yerel kabulü canlı dağıtım anlamına gelmez. A/B: Google gerçek kayıt ve
-Gmail/hosted uçtan uca kabulü; A/C: hosted migration/Edge dağıtımı; tümü için
+Gmail/hosted uçtan uca kabulü; A/C: hosted migration/Edge 1 Kasımda açık onayla uygulandı; tümü için
 fiziksel Android/iOS ve sonraki imzalı Alpha güncellemesi ayrı bekleyen işlerdir.
 Son Settings/hesap regresyonu 11 grup; Google sentetik akışı 13 grup; C/D kabul dosyasında kanıtı var.
 
@@ -105,6 +105,7 @@ Son Settings/hesap regresyonu 11 grup; Google sentetik akışı 13 grup; C/D kab
 
 | PR | Durum | Dal → hedef |
 |---|---|---|
+| [#23](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/23) | OPEN | `feat/progressive-xp-notification-cards-20261101` → `fix/twenty-second-auth-callback-20261101` |
 | [#22](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/22) | OPEN | `fix/twenty-second-auth-callback-20261101` → `release/play-final-candidate-20261030` |
 | [#21](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/21) | MERGED | `feat/approved-education-logo-20261031` → `release/play-final-candidate-20261030` |
 | [#20](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/20) | OPEN | `release/play-final-candidate-20261030` → `feat/admob-test-integration-20261030` |
@@ -127,3 +128,10 @@ Son Settings/hesap regresyonu 11 grup; Google sentetik akışı 13 grup; C/D kab
 | [#3](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/3) | CLOSED | `feat/approved-special-category-art` → `feat/android-preview-play-readiness` |
 | [#2](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/2) | MERGED | `feat/android-preview-play-readiness` → `main` |
 | [#1](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/1) | MERGED | `feat/audio-public-ci` → `main` |
+
+## 1 Kasım onaylı backend uygulaması
+
+Kullanıcı yalnız sınırlı backend/geçici hesap test planını onayladı. Üç migration
+ve Edge v17 uygulandı. [Dağıtım ve doğrulama](xp-notifications-20261101/backend-deployment.md).
+Main, Vercel Production, Alpha, testçi listesi, genel Google kaydı/push, reklam
+ve Analytics değiştirilmedi. Gerçek Google/Gmail ve yeni Alpha kabulü bekliyor.

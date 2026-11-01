@@ -69,5 +69,6 @@ servisleri sentetiktir. Bunlar gerçek OAuth/push teslimi veya canlı arkadaşl�
 uçtan uca testi yerine gösterilmez. Gerçek Auth/SMTP Chrome → Android kanıtı
 ayrı PR #22 / `../timer-auth-20261101/acceptance.md` dosyasındadır.
 
-Main, Vercel Production, Alpha, testçi listesi, canlı XP/SQL, gerçek reklam ve
-Analytics değiştirilmedi. Sunucu geçişi için `rollout-plan.md` ayrı onay ister.
+Main, Vercel Production, Alpha, testçi listesi, gerçek reklam ve Analytics
+değiştirilmedi. Sınırlı backend planı 1 Kasımda açık onayla uygulandı;
+[canlı doğrulama](backend-deployment.md). XP satırları yeniden yazılmadı.
