@@ -135,8 +135,9 @@ export function HomeScreen() {
           yanlış veya cevapsız yanıt 0 puan. Açıklama sırasında sayaç durur.
         </Txt>
         <Txt>
-          Yeni soru setindeki her doğru cevap 10 yerel XP kazandırır. Her 250
-          XP’de bir seviye ilerlersin. Yalnız biten turlar kaydedilir.
+          Yeni soru setindeki her doğru cevap 10 yerel XP kazandırır. İlk seviye
+          için 100 XP gerekir; sonraki seviyelerde hedef kademeli artar. Yalnız
+          biten turlar kaydedilir.
         </Txt>
         <Txt size={12} color={theme.muted}>
           Yanıtlarını sonuç ekranından açıklamalarıyla inceleyebilirsin.

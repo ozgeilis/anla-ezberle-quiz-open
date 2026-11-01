@@ -83,14 +83,14 @@ export function PlayerHeader({
       >
         <ProgressMeter
           label="Seviye ilerlemesi"
-          value={p.levelXp}
-          max={250}
+          value={p.levelPercent}
+          max={100}
           tone="gold"
           onJewel
         />
       </View>
       <Txt size={10} color={c.white} style={{ textAlign: "center" }}>
-        {p.level === 100 ? "En üst seviye" : `${p.levelXp} / 250 XP`}
+        {p.level === 100 ? "En üst seviye" : `${p.levelXp} / ${p.requiredXp} XP`}
       </Txt>
     </View>
   );

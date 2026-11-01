@@ -64,36 +64,23 @@ test("catalog has exactly 82 unique non-authority achievements with preserved le
     assert(!/dindar|takva|fetva|din âlimi/i.test(b.title));
   }
 });
-test("all one hundred levels keep 250 XP spacing, old XP and clamp without truncating XP", () => {
+test("progressive display preserves historical earned XP and caps without truncating it", () => {
   const g = round(1);
   const old = { ...g, rewardVersion: undefined };
-  for (let level = 1; level <= 100; level++) {
-    // Valid historical records with one correct response, 10 XP each.
-    const sample = complete(
-      {
-        ...createSession("mixed", undefined, 1800000000000, {
-          channel: "prototype",
-        }),
-        rewardVersion: undefined,
-      },
-      1,
-    );
-    const games = Array.from({ length: (level - 1) * 25 }, (_, i) => ({
-      ...sample,
-      id: `quiz-level-${i}`,
-    }));
-    const p = progress(games);
-    assert.equal(p.xp, (level - 1) * 250);
-    assert.equal(p.level, level);
-    assert.equal(p.nextLevelXp, level === 100 ? 0 : 250);
-  }
   const past = Array.from({ length: 260 }, (_, i) => ({
     ...old,
     id: `quiz-cap-${i}`,
   }));
   assert.equal(progress(past).xp, 26000);
-  assert.equal(progress(past).level, 100);
-  assert.equal(progress(past).levelXp, 250);
+  assert.equal(progress(past).level, 64);
+  const beyondCap = Array.from({ length: 600 }, (_, i) => ({
+    ...old,
+    id: `quiz-beyond-${i}`,
+  }));
+  assert.equal(progress(beyondCap).xp, 60000);
+  assert.equal(progress(beyondCap).level, 100);
+  assert.equal(progress(beyondCap).levelPercent, 100);
+  assert.equal(progress(past).levelXp, 170);
 });
 test("new identical manifests cannot earn repeated XP, even reordered or relabeled", () => {
   const g = round(2),

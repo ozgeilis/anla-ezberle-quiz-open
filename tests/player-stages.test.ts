@@ -168,7 +168,7 @@ test("stage records persist without changing existing profile, XP math or histor
     assert.equal(validRecord({ ...record, stage: "invalid" }), false);
     assert.equal(validRecord({ ...record, mode: "daily" }), false);
   }
-  assert.equal(progress([]).nextLevelXp, 250);
+  assert.equal(progress([]).nextLevelXp, 100);
   assert.equal(progress([]).title, "Yeni yolcu");
   assert.equal(playerTitle(20), "Bilgi ustası");
   assert.equal(

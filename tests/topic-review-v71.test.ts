@@ -2,10 +2,7 @@ import { questions1500 as questions } from "../src/content/questions/questions-1
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import {
-  BANK_VERSION,
-  playableQuestions,
-} from "../src/content/questions";
+import { BANK_VERSION, playableQuestions } from "../src/content/questions";
 import {
   learningTopicsV1,
   type LearningTopicId,
@@ -254,7 +251,13 @@ test("a real pre-review v1 topic save survives reassignment with identical score
   const restored = parseData(JSON.stringify(oldFixture.stored));
   assert.deepEqual(restored, oldFixture.stored);
   assert.deepEqual(stats(restored.games[0]!), oldFixture.stats);
-  assert.deepEqual(progress(restored.games), oldFixture.progress);
+  assert.deepEqual(progress(restored.games), {
+    ...oldFixture.progress,
+    requiredXp: 100,
+    nextLevelXp: 40,
+    levelPercent: 60,
+    atMax: false,
+  });
   assert.throws(
     () =>
       parseData(

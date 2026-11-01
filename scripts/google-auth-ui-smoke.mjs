@@ -75,10 +75,7 @@ try {
         "&refresh_token=synthetic-refresh&type=recovery",
       { waitUntil: "networkidle" },
     );
-    await p
-      .getByRole("dialog")
-      .getByRole("button", { name: "Tamam", exact: true })
-      .click();
+    await p.getByLabel("Yeni şifre", { exact: true }).waitFor();
     for (const value of ["Aa1!aaa", "Aa1!aaaa"]) {
       await p.getByLabel("Yeni şifre", { exact: true }).fill(value);
       await p.getByLabel("Yeni şifreyi tekrarla", { exact: true }).fill(value);
@@ -268,9 +265,7 @@ try {
         "Google-linked deletion UI (email identity is not proof of a password): two confirmations, OTP instead of password, code-send status never implies erasure, rejected proof cannot claim success (mock)",
       );
     } else {
-      await p
-        .getByRole("dialog", { name: "Doğrulama Başarısız", exact: true })
-        .waitFor();
+      await button(p, "Tekrar Dene").waitFor();
       assert.equal(new URL(p.url()).search, "");
       assert.equal(new URL(p.url()).hash, "");
       assert(
@@ -287,10 +282,7 @@ try {
         await button(p, "Şifre Sıfırlama Bağlantısı İste").count(),
         0,
       );
-      await p
-        .getByRole("dialog")
-        .getByRole("button", { name: "Giriş Ekranına Dön", exact: true })
-        .click();
+      await button(p, "Giriş Ekranına Dön").click();
       await p.waitForURL("**/online");
       await button(p, "Google ile Devam Et").waitFor();
     }
@@ -347,13 +339,6 @@ try {
         "&refresh_token=synthetic-refresh&type=recovery",
       { waitUntil: "networkidle" },
     );
-    await p
-      .getByRole("dialog", { name: "Bağlantı Doğrulandı", exact: true })
-      .waitFor();
-    await p
-      .getByRole("dialog")
-      .getByRole("button", { name: "Tamam", exact: true })
-      .click();
     await p.getByLabel("Yeni şifre", { exact: true }).waitFor();
     checks.push(
       "Browser Back cancels Google attempt; existing email recovery still opens (mock)",

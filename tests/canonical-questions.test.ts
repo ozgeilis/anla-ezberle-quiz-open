@@ -3,9 +3,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import ts from "typescript";
-import {
-  BANK_VERSION,
-} from "../src/content/questions";
+import { BANK_VERSION } from "../src/content/questions";
 import { questions1500 } from "../src/content/questions/questions-1500";
 import { questionsV72 } from "../src/content/questions/questions-v72";
 import {
@@ -32,7 +30,7 @@ import baseline from "./fixtures/content/pre-consolidation-v71.json";
 import savedRounds from "./fixtures/content/saved-rounds-v1-v71.json";
 
 const questions = questionsV72;
-const questionById = new Map(questionsV72.map((q) => [q.id,q]));
+const questionById = new Map(questionsV72.map((q) => [q.id, q]));
 
 const digest = (value: unknown) =>
   createHash("sha256").update(questionSnapshot(value)).digest("hex");
@@ -50,7 +48,11 @@ test("frozen canonical v71 retains all 1,500 pre-refactor records", async () => 
 
 test("v72 replaces 30 rote Quran questions and keeps 1,500 playable records", async () => {
   assert.equal(BANK_VERSION, 73);
-  assert.equal(questions, questionsV72, "v72 history uses its own frozen snapshot");
+  assert.equal(
+    questions,
+    questionsV72,
+    "v72 history uses its own frozen snapshot",
+  );
   assert.equal(questions.length, 1500);
   assert.equal(new Set(questions.map((q) => q.id)).size, 1500);
   assert.equal(retiredQuestionIdsV72.length, 30);
@@ -147,7 +149,13 @@ test("frozen v1/v13/v31/v41/v71 saves preserve wording, shuffled answers, score,
       fixture.views,
     );
     assert.deepStrictEqual(stats(game), fixture.stats);
-    assert.deepStrictEqual(progress(restored.games), fixture.progress);
+    assert.deepStrictEqual(progress(restored.games), {
+      ...fixture.progress,
+      requiredXp: 100,
+      nextLevelXp: 40,
+      levelPercent: 60,
+      atMax: false,
+    });
     const changed = structuredClone(game) as GameRecord;
     changed.answers[0]!.option = (changed.answers[0]!.option + 1) % 4;
     assert.equal(stats(changed).score, fixture.stats.score - 100);

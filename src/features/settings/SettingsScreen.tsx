@@ -149,7 +149,7 @@ function SettingsContent({
               >
                 <View
                   style={{
-                    width: `${(p.levelXp / 250) * 100}%`,
+                    width: `${p.levelPercent}%`,
                     height: 5,
                     backgroundColor: t.accent,
                   }}

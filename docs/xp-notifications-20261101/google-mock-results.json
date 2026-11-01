@@ -1,0 +1,18 @@
+{
+  "scope": "Chromium rendering + mock HTTP; no real Google login, device or hosted mutation",
+  "checks": [
+    "320/light: closed Google, 7/8/12 boundaries, no horizontal overflow",
+    "320/dark: closed Google, 7/8/12 boundaries, no horizontal overflow",
+    "360/light: closed Google, 7/8/12 boundaries, no horizontal overflow",
+    "360/dark: closed Google, 7/8/12 boundaries, no horizontal overflow",
+    "390/light: closed Google, 7/8/12 boundaries, no horizontal overflow",
+    "390/dark: closed Google, 7/8/12 boundaries, no horizontal overflow",
+    "Existing email recovery callback + 7/8 password boundary; mock Auth only",
+    "Google-linked deletion UI (email identity is not proof of a password): two confirmations, OTP instead of password, code-send status never implies erasure, rejected proof cannot claim success (mock)",
+    "Mock provider: success; PKCE/nonce/server identity boundary",
+    "Mock provider: foreign-identity; PKCE/nonce/server identity boundary",
+    "Mock provider: bad-nonce; PKCE/nonce/server identity boundary",
+    "Mock provider: cancel; PKCE/nonce/server identity boundary",
+    "Browser Back cancels Google attempt; existing email recovery still opens (mock)"
+  ]
+}
