@@ -2,7 +2,10 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
-const { validateIosDistribution } = require("../scripts/verify-ios-store.mjs");
+const {
+  validateIosDistribution,
+  decodeProvisioningXml,
+} = require("../scripts/verify-ios-store.mjs");
 const expected = {
   bundleId: "com.example.synthetic",
   teamId: "SYNTHETIC1",
@@ -65,4 +68,22 @@ test("store verifier rejects development push, debug access and mismatched Apple
   apple.profile.Entitlements["com.apple.developer.applesignin"] = [];
   for (const facts of [push, debug, apple])
     assert.throws(() => validateIosDistribution(facts, expected, now));
+});
+
+test("real plist date/data types are normalized without serializing certificate payloads", () => {
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0"><dict>
+<key>ExpirationDate</key><date>2031-01-01T00:00:00Z</date>
+<key>DeveloperCertificates</key><array><data>c3ludGhldGlj</data></array>
+<key>TeamIdentifier</key><array><string>SYNTHETIC1</string></array>
+<key>Entitlements</key><dict><key>get-task-allow</key><false/></dict>
+<key>ProvisionedDevices</key><array><string>synthetic-device</string></array>
+</dict></plist>`;
+  const profile = decodeProvisioningXml(Buffer.from(xml));
+  assert.equal(profile.ExpirationDate, "2031-01-01T00:00:00Z");
+  assert.deepEqual(profile.TeamIdentifier, ["SYNTHETIC1"]);
+  assert.deepEqual(profile.ProvisionedDevices, ["synthetic-device"]);
+  assert.equal(profile.Entitlements["get-task-allow"], false);
+  assert.equal(profile.DeveloperCertificates, undefined);
+  assert.throws(() => decodeProvisioningXml(Buffer.from("invalid plist")));
 });

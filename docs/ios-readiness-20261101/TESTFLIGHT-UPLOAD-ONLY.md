@@ -19,10 +19,16 @@ Sahibinin son talimatı: “testflighte yükleme hazırlığı devam etsin ve y�
 
 ## Doğrulanmış ve açık kontroller
 
-Bu hazırlıkta `pnpm check`: **410/410**, TypeScript, lint, 1.500 soru bütünlüğü geçti. Yeni üç test upload-only izninin public/upload destination, başka Team/Bundle, değişmiş kaynak ve reklam açılmasını reddettiğini kontrol eder; gerçek Apple servis testi değildir.
+Bu hazırlıkta `pnpm check`: **411/411**, TypeScript, lint, 1.500 soru bütünlüğü geçti. Yeni üç test upload-only izninin public/upload destination, başka Team/Bundle, değişmiş kaynak ve reklam açılmasını reddettiğini kontrol eder; gerçek Apple servis testi değildir.
 
 Önceki fiziksel iPhone11 sınırlı kabulü ve imzalı development artifact kanıtı korunur. Gerçek Apple login/deletion/revocation, kayıt hook'u, Safari callback/session kalıcılığı, moderasyon, APNs/ses ve tam cihaz matrisi **açıktır**. Apple provider/capability RPC kapalı kalır; yeni hosted test hesabı oluşturulmaz. Bu eksikler iç yükleme sırasında “tamamlandı” veya genel yayın kabulü sayılmaz.
 
 ## Sonuç
 
-Henüz archive/IPA veya upload sonucu yok. Distribution kimliği oluşturma adımı ve aşağıdaki gerçek işlem kanıtları bekleniyor. Yeni sözleşme/ücret/kimlik doğrulama isteği çıkarsa kullanıcıya devredilir. İş bitince upload izni false'a döndürülür; main/Alpha/backend korunur.
+Sahibi Xcode’da Apple Distribution kimliğini oluşturdu; doğru Team ve private-key eşleşmesi yerelde doğrulandı. Yalnız yeni App ID için App Store provisioning oluşturuldu ve production APNs/Apple capability, get-task-allow=false, cihaz listesi bulunmaması ve exact Distribution sertifikası doğrulandı. Private key/profile Git’e eklenmedi. Connect hâlâ No Builds; iOS0.1.0/build2 ayrıldı.
+
+İlk iki archive denemesi özel SYMROOT ile Xcode’un BuildProductsPath toplama aşamasında hata verdi. Standart arşiv ürün yoluna geçildi; yalnız kendi yeniden üretilebilir cihaz Products/eksik archive çıktıları temizlendi. Gerçek archive işlemi sürüyor, başarı varsayılmıyor.
+
+Gerçek provisioning dosyasını doğrularken plutil’in NSDate/NSData içeren bütün belgeyi JSON’a çeviremediği görüldü. Verifier artık yalnız ihtiyaç duyduğu alanları plistlib ile seçer, UTC tarihini normalleştirir; NSData sertifika payload’ını dışarı vermez. Tarih/data tipi ve yanlış plist regresyon testi eklendi, ilgili 7 test ve sonrasında tam 411/411 kontrolü geçti.
+
+Henüz başarılı archive/IPA veya upload sonucu yok; gerçek işlem kanıtları bekleniyor. Yeni sözleşme/ücret/kimlik doğrulama isteği çıkarsa kullanıcıya devredilir. İş bitince upload izni false'a döndürülür; main/Alpha/backend korunur.

@@ -1,8 +1,8 @@
 {
   "command": "pnpm check",
   "status": "passed",
-  "tests": 407,
-  "passed": 407,
+  "tests": 411,
+  "passed": 411,
   "failed": 0,
   "skipped": 0,
   "typecheck": "passed",
@@ -16,12 +16,14 @@
   "build": "passed_unsigned_arm64_Release",
   "note": "407 unit/regression tests and native guest UI are not real Apple/Safari/APNs, online social or physical acceptance.",
   "webExport": "passed",
-  "iosStoreArtifactTests": 3,
+  "iosStoreArtifactTests": 4,
   "realIphone390Smoke": "passed_guest_subset",
   "realIpadSmoke": "passed_guest_subset",
   "nativeWidthMatrix": "390pt and iPad only; 320/375/430 not run",
   "secureSession": "signed_iphone_signin_UI_initialization_passed; authenticated_persistence_not_run",
   "easTestflightConfig": "passed_registered_id_team_release_production_APNs_no_build",
   "signedDevelopmentBuild": "passed_Release_existing_identity_manual_profile",
-  "physicalEvidence": "DEVELOPMENT-BUILD-RESULT.md"
+  "physicalEvidence": "DEVELOPMENT-BUILD-RESULT.md",
+  "iosUploadApprovalTests": 3,
+  "uploadReadinessCheck": "pnpm check passed; actual profile date/data decode fix included"
 }

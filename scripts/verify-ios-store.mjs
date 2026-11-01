@@ -105,6 +105,28 @@ function decodeXml(bytes) {
     }),
   );
 }
+// Provisioning plists contain NSDate/NSData, which plutil cannot serialize as
+// a complete JSON document. Select only verification fields and normalize UTC.
+export function decodeProvisioningXml(xml) {
+  return JSON.parse(
+    execFileSync(
+      "python3",
+      [
+        "-c",
+        `
+import json, plistlib, sys
+p = plistlib.loads(sys.stdin.buffer.read())
+keys = ("Entitlements", "TeamIdentifier", "ProvisionedDevices", "ProvisionsAllDevices")
+out = {k: p[k] for k in keys if k in p}
+out["ExpirationDate"] = p["ExpirationDate"].isoformat() + "Z"
+print(json.dumps(out))
+`,
+      ],
+      { input: xml, encoding: "utf8" },
+    ),
+  );
+}
+
 if (
   process.argv[1] &&
   import.meta.url === pathToFileURL(resolve(process.argv[1])).href
@@ -145,7 +167,7 @@ if (
           { stdio: ["pipe", "pipe", "pipe"] },
         ),
       ),
-      profile: decodeXml(
+      profile: decodeProvisioningXml(
         execFileSync(
           "security",
           ["cms", "-D", "-i", join(app, "embedded.mobileprovision")],
