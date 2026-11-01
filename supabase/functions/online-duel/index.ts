@@ -31,7 +31,7 @@ const fields: Record<string, string[]> = {
   inbox: [],
   notification_read: ["notificationId"],
   challenge_send: ["playerId", "requestId"],
-  challenge_reply: ["challengeId", "action"],
+  challenge_reply: ["challengeId", "action", "timingVersion"],
   social_self: [],
   username_check: ["username"],
   social_profile: ["name", "username", "avatar", "discoverable"],
