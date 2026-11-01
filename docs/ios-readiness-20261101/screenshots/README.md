@@ -9,3 +9,9 @@ Mağaza planı: iPhone'un zorunlu büyük ekran ölçülerinde güncel Apple [sc
 Simülatörün saati/status barı CLI ile yalnız sunum için düzenlenebilir; bu ağ/cihaz kanıtı üretmez. Test edilen OS/cihaz/commit ve ölçüler raporda ayrıca yazılacak.
 
 1 Kasım 2026 resmî Apple tablosunda zorunlu iPhone sınıfı **Dynamic Island medium** olarak belirtiliyor: 1179×2556 veya 1206×2622 portre; desteklenen iPad için 13-inch 2064×2752 veya 2048×2732. 390 pt iPhone13 Pro'nun 1170×2532 test görseli bu ana sınıfın gerçek ölçüsü diye sunulmaz. iPad ve büyük Dynamic Island görselleri gerçek ilgili simülatörden alınmalı; mağaza kabulü bu ölçülerle Connect'te ayrıca doğrulanmalı. iPhone Duo için Nisan2027 sonrası SDK27.1 koşulu aynı sayfada belirtiliyor; gelecek gönderim tarihinde tekrar kontrol gerekir.
+
+## Bu dalda alınan gerçek kanıtlar
+
+`manifest.json` 15 native PNG'nin SHA256 ve gerçek piksel ölçüsünü kaydeder. iPhone13 Pro 390pt (1170×2532): Home, kategori, hazırlık, quiz, sonuç, açıklama, gerçek tur sonrası profil, koyu ayarlar/bildirim tercihleri, büyük metin Home/Profile ve yeniden açılış. iPad13 M4: gerçek 2064×2752 portrait Home, 2752×2064 landscape profil ve quiz. iPad tam tur ve online akış kabulü değildir. Örnek turdaki yerel kazanımlar gerçekten oynanarak oluştu; hosted hesap veya sahte başarı üretilmedi.
+
+Bunlar ham simülatör PNG'leridir ve alpha kanalı içerebilir. Mağazaya yüklenmiş görseller değildir; nihai App Store yüklemesinde opaque RGB export ve Connect ölçü doğrulaması gerekir. iPhone ana zorunlu Dynamic Island ölçüsü henüz üretilmedi; 390pt görselleri başka cihaz ölçüsüne büyütülmedi.

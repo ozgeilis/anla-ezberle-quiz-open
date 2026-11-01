@@ -117,6 +117,27 @@ test("iOS preparation preserves prototype identity; TestFlight cannot silently a
     ).bundleIdentifier,
     "com.kovynelstudio.anlaezberle",
   );
+  assert.equal(
+    resolveIosBuild(
+      {
+        EAS_BUILD_PROFILE: "ios-testflight",
+        IOS_REGISTERED_BUNDLE_ID: "com.kovynelstudio.anlaezberle",
+      },
+      "com.anlaezberle.quiz.prototype",
+    ).appleTeamId,
+    "W7CRC43SHP",
+  );
+  // EAS CLI resolves app config before the worker's EAS_BUILD_PROFILE exists.
+  const localStore = resolveIosBuild(
+    {
+      IOS_BUILD_TARGET: "store",
+      IOS_REGISTERED_BUNDLE_ID: "com.kovynelstudio.anlaezberle",
+    },
+    "com.anlaezberle.quiz.prototype",
+  );
+  assert.equal(localStore.bundleIdentifier, "com.kovynelstudio.anlaezberle");
+  assert.equal(localStore.appleTeamId, "W7CRC43SHP");
+  assert.equal(localStore.storeDistribution, true);
 });
 test("iOS distribution approval remains closed and Android identity/profiles are retained", () => {
   const approval = JSON.parse(
@@ -135,6 +156,7 @@ test("iOS distribution approval remains closed and Android identity/profiles are
 test("unapproved TestFlight, generic iOS store and accidental Android iOS-profile builds fail before credential access", () => {
   for (const [platform, profile] of [
     ["ios", "ios-testflight"],
+    ["ios", "ios-development"],
     ["ios", "production"],
     ["android", "ios-development"],
   ]) {
@@ -145,6 +167,10 @@ test("unapproved TestFlight, generic iOS store and accidental Android iOS-profil
         encoding: "utf8",
         env: {
           NODE_ENV: "test",
+          EXPO_PUBLIC_CONTENT_CHANNEL: "production",
+          EXPO_PUBLIC_SUPABASE_URL: "https://mqyuihiobkomjfipxehj.supabase.co",
+          EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY:
+            "sb_publishable_synthetic_ci_no_service_access",
           PATH: process.env.PATH,
           EAS_BUILD_PLATFORM: platform,
           EAS_BUILD_PROFILE: profile,

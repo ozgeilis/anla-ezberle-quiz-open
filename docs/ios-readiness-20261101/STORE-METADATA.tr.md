@@ -1,6 +1,6 @@
 # App Store Connect Türkçe içerik taslağı
 
-Henüz yüklenmedi veya yayımlanmadı. Yalnız Türkçe desteklenir. Apple'a gönderim öncesi gerçek build ve erişilebilir çevrimiçi özelliklerle yeniden karşılaştırılmalı.
+Connect uygulama adı/Türkçe ana dil ve TestFlight beta açıklaması/feedback/gizlilik URL kaydedildi. Aşağıdaki tam App Store açıklaması, alt başlık, kategori ve review notları henüz gönderilmedi veya yayımlanmadı. Yalnız Türkçe desteklenir. Apple'a gönderim öncesi gerçek build ve erişilebilir çevrimiçi özelliklerle yeniden karşılaştırılmalı.
 
 | Alan | Metin |
 |---|---|

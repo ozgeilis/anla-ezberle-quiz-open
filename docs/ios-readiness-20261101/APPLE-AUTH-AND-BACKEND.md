@@ -8,7 +8,7 @@ Resmî `expo-apple-authentication ~58.0.2` ve sistemin resmi 48 pt butonu iOS i�
 
 Bunlar kod/birim testi düzeyindedir. Gerçek Apple giriş, relay posta teslimi, hesap bağlama ve fiziksel kalıcılık testleri henüz yapılmadı.
 
-## Apple hesabı etkinleşince — uygulamadan önce ayrı onay
+## Apple hesabı doğrulandı — provider açılmadan önce kalan işler
 
 1. Team ID ve üyeliği salt okunur doğrula; App ID kullanılabilirliğini kontrol et. Kalıcı öneri `com.kovynelstudio.anlaezberle`; geliştirme prototipi ayrı kalır.
 2. Aynı App ID üzerinde Sign in with Apple capability, APNs ve provisioning hazırla. Özel anahtar Git'e/sohbete alınmaz. Native-only giriş için Supabase'in güncel dokümanı esas alınır; web OAuth da istenirse Services ID, dönüş URL'si ve süreli client-secret yönetimi ayrıca gerekir.
@@ -36,3 +36,7 @@ Kaynaklar: [Expo SDK58 AppleAuthentication](https://docs.expo.dev/versions/lates
 Apple Private Email Relay'e posta gönderecek gerçek SMTP gönderen adres/domain kaynakları Apple hesabında kaydedilmeli ve SPF/DKIM doğrulanmalı; mevcut posta hizmetini sırf Apple testi için değiştirme. Native giriş için ikinci bir doğrulama e-postası istenmez, fakat hesap silme/iletişim kodlarının relay'e gerçekten ulaştığı kabul edilmeden Apple hesabı genel kayda açılmaz. [Apple relay yapılandırması](https://developer.apple.com/help/account/capabilities/configure-private-email-relay-service/).
 
 İlk Apple onayı Supabase'te başarısız olursa doğrulanmamış ad/e-posta ayrı bir yerel kullanıcı kaydına kalıcı yazılmaz. Yeniden denemede Apple ad vermeyebilir; kullanıcı mevcut profil kurulumundan adını seçebilir. İsim kaybını gidermek için başka hesaba ait veriyle eşleştirme yapılmaz. Başarılı ilk girişte ad yalnız doğrulanmış kendi Auth metadata alanına yazılır; mevcut görünen profil üzerine otomatik yazılmaz.
+
+## Devam hazırlığı
+
+Üyelik ve Team `W7CRC43SHP` doğrulandı, kalıcı App ID sahibinin ayrı onayıyla kaydedildi. Sign in with Apple primary ve Push capability ayrı onayla kaydedildi. Apple revoke/APNs anahtarı oluşturulmadı ve Supabase provider açılmadı. Somut değişiklik yüzeyi ve kabul sırası [SERVER-CHANGE-REVIEW.md](SERVER-CHANGE-REVIEW.md) içindedir. Bu belge migration/Edge implementasyonunun veya gerçek Apple revoke testinin tamamlandığı anlamına gelmez.

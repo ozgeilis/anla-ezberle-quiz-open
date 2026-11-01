@@ -1,8 +1,8 @@
 {
   "command": "pnpm check",
   "status": "passed",
-  "tests": 404,
-  "passed": 404,
+  "tests": 407,
+  "passed": 407,
   "failed": 0,
   "skipped": 0,
   "typecheck": "passed",
@@ -13,6 +13,13 @@
   "realAppleOAuth": "not_run_provider_disabled",
   "crossPlatformOnlineMatch": "not_run_requires_authorized_accounts",
   "dependencyAdvisory": "5 same-SDK patch updates suggested, not applied",
-  "build": "pending",
-  "note": "Unit evidence is not real Apple/Safari/APNs or physical iPhone acceptance."
+  "build": "passed_unsigned_arm64_Release",
+  "note": "407 unit/regression tests and native guest UI are not real Apple/Safari/APNs, online social or physical acceptance.",
+  "webExport": "passed",
+  "iosStoreArtifactTests": 3,
+  "realIphone390Smoke": "passed_guest_subset",
+  "realIpadSmoke": "passed_guest_subset",
+  "nativeWidthMatrix": "390pt and iPad only; 320/375/430 not run",
+  "secureSession": "blocked_on_unsigned_app_missing_entitlements_-34018",
+  "easTestflightConfig": "passed_registered_id_team_release_production_APNs_no_build"
 }

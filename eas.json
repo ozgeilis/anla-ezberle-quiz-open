@@ -73,7 +73,7 @@
     },
     "ios-simulator-acceptance": {
       "distribution": "internal",
-      "environment": "development",
+      "environment": "preview",
       "developmentClient": false,
       "env": {
         "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
@@ -90,17 +90,22 @@
       "env": {
         "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
         "ADS_MODE": "off",
-        "IOS_APPLE_AUTH": "1"
-      }
+        "IOS_APPLE_AUTH": "1",
+        "IOS_BUILD_TARGET": "device",
+        "IOS_REGISTERED_BUNDLE_ID": "com.kovynelstudio.anlaezberle"
+      },
+      "environment": "preview"
     },
     "ios-testflight": {
       "distribution": "store",
-      "environment": "production",
+      "environment": "preview",
       "developmentClient": false,
       "env": {
         "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
         "ADS_MODE": "off",
-        "IOS_APPLE_AUTH": "1"
+        "IOS_APPLE_AUTH": "1",
+        "IOS_BUILD_TARGET": "store",
+        "IOS_REGISTERED_BUNDLE_ID": "com.kovynelstudio.anlaezberle"
       },
       "ios": {
         "autoIncrement": "buildNumber",

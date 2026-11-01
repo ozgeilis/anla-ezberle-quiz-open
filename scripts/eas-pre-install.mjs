@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 
 const profile = process.env.EAS_BUILD_PROFILE;
 const android = process.env.EAS_BUILD_PLATFORM === "android";
+const ios = process.env.EAS_BUILD_PLATFORM === "ios";
 assert(
   !(android && profile?.startsWith("ios-")),
   "iOS-only profile cannot build Android",
@@ -16,7 +17,13 @@ assert(
   "Use the separately gated ios-testflight profile for iOS store distribution",
 );
 const storeProfiles = ["production", "ads-closed-test"];
-if (android && ["preview", "ads-preview", ...storeProfiles].includes(profile)) {
+if (
+  (android && ["preview", "ads-preview", ...storeProfiles].includes(profile)) ||
+  (ios &&
+    ["ios-development", "ios-simulator-acceptance", "ios-testflight"].includes(
+      profile,
+    ))
+) {
   const allowed = new Set([
     "EXPO_PUBLIC_CONTENT_CHANNEL",
     "EXPO_PUBLIC_SUPABASE_URL",
@@ -55,18 +62,16 @@ if (android && storeProfiles.includes(profile)) {
     "Store AAB blocked: owner must approve permanent package ID, this exact build profile and APK acceptance evidence (config/android-store-approval.json).",
   );
 }
-if (
-  process.env.EAS_BUILD_PLATFORM === "ios" &&
-  profile === "ios-development" &&
-  process.env.IOS_REGISTERED_BUNDLE_ID
-) {
+if (process.env.EAS_BUILD_PLATFORM === "ios" && profile === "ios-development") {
   const identity = JSON.parse(
     readFileSync("config/ios-store-approval.json", "utf8"),
   );
   assert(
-    identity.appleTeamVerified === true &&
+    identity.developmentBuildApproved === true &&
+      identity.appleTeamVerified === true &&
+      identity.registeredBundleId === "com.kovynelstudio.anlaezberle" &&
       identity.registeredBundleId === process.env.IOS_REGISTERED_BUNDLE_ID,
-    "Registered iOS development identity requires owner-verified App ID and Team; existing prototype is preserved otherwise.",
+    "Registered iOS development build requires separate owner approval, verified App ID and Team; old development profiles remain unchanged.",
   );
 }
 if (process.env.EAS_BUILD_PLATFORM === "ios" && profile === "ios-testflight") {

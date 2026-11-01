@@ -37,6 +37,7 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     ios: {
       ...config.ios,
       bundleIdentifier: ios.bundleIdentifier,
+      ...(ios.appleTeamId ? { appleTeamId: ios.appleTeamId } : {}),
       ...(ios.appleAuthentication ? { usesAppleSignIn: true } : {}),
       infoPlist: {
         ...config.ios?.infoPlist,
@@ -46,7 +47,7 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     },
     plugins: [
       ...(config.plugins ?? []).map((plugin) =>
-        process.env.EAS_BUILD_PROFILE === "ios-testflight" &&
+        ios.storeDistribution &&
         Array.isArray(plugin) &&
         plugin[0] === "expo-notifications"
           ? ([plugin[0], { ...plugin[1], mode: "production" }] as [
