@@ -1,3 +1,4 @@
+import { questionLimitMs } from "../domain/game/question-clock";
 import { isGameStage, stageDefinition } from "../domain/game/stages";
 import { isAvatarId } from "../domain/profile/avatars";
 import {
@@ -202,7 +203,12 @@ export function validRecord(value: unknown): value is GameRecord {
         return false;
     }
   }
-  if (g.timingVersion !== undefined && g.timingVersion !== 1) return false;
+  if (
+    g.timingVersion !== undefined &&
+    g.timingVersion !== 1 &&
+    g.timingVersion !== 2
+  )
+    return false;
   if (!Array.isArray(g.answers) || g.answers.length !== 10) return false;
   let last = g.startedAt;
   for (const [i, a] of g.answers.entries()) {
@@ -211,21 +217,23 @@ export function validRecord(value: unknown): value is GameRecord {
       a.questionId !== g.questionIds[i] ||
       !Number.isInteger(a.option) ||
       Number(a.option) <
-        (g.timingVersion === 1 && a.timedOut === true ? -1 : 0) ||
+        (g.timingVersion !== undefined && a.timedOut === true ? -1 : 0) ||
       Number(a.option) > 3 ||
       !timestamp(a.at) ||
       a.at < last ||
       a.at > g.completedAt
     )
       return false;
-    if (g.timingVersion === 1) {
+    if (g.timingVersion !== undefined) {
       if (
         !timestamp(a.openedAt) ||
         a.openedAt < last ||
         a.at < a.openedAt ||
         (a.timedOut === true
-          ? a.option !== -1 || a.at !== a.openedAt + 10000
-          : a.option === -1 || a.at >= a.openedAt + 10000)
+          ? a.option !== -1 ||
+            a.at !== a.openedAt + questionLimitMs(g.timingVersion as 1 | 2)
+          : a.option === -1 ||
+            a.at >= a.openedAt + questionLimitMs(g.timingVersion as 1 | 2))
       )
         return false;
     } else if (

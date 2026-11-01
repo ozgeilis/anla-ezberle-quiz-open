@@ -56,11 +56,17 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const duel = useDuel();
   const role = duel.match?.activeRole;
   const player = role ? duel.match?.players[role] : undefined;
-  const session = demo
+  // Retain the final answered question while persistence and route replacement
+  // finish. Clearing the provider session must not render the empty-game prompt.
+  const [finishingSession, setFinishingSession] =
+    useState<typeof solo.session>(null);
+  const activeSession = demo
     ? duel.match?.state === "in_progress"
       ? (player?.session ?? null)
       : null
     : solo.session;
+  const session = activeSession ?? finishingSession;
+  const finishing = finishingSession !== null;
   const command = (type: "answer" | "next" | "finish", option?: number) => {
     if (!player) return false;
     return type === "answer"
@@ -79,7 +85,6 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const reduced = useReducedMotion();
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const [leave, setLeave] = useState(false);
-  const [finishing, setFinishing] = useState(false);
   const disablePrevention = usePreventRemove(!!session, () => setLeave(true));
   const question = useMemo(
     () =>
@@ -95,7 +100,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
       demo ||
       !session ||
       chosen ||
-      session.timingVersion !== 1 ||
+      session.timingVersion === undefined ||
       session.questionOpenedAt !== undefined
     )
       return;
@@ -139,10 +144,10 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const goNext = async () => {
     if (!session || !chosen || finishing) return;
     if (session.cursor === 9) {
-      setFinishing(true);
+      setFinishingSession(session);
       if (demo) {
         if (!command("finish")) {
-          setFinishing(false);
+          setFinishingSession(null);
           return;
         }
         play("completed", `demo:${session.id}:${role}:result`);
@@ -349,7 +354,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
                 label={`${"ABCD"[i]}. ${option}${chosen && !demo ? (correct ? ", doğru cevap" : wrong ? ", yanlış seçimin" : "") : ""}`}
                 disabled={
                   !!chosen ||
-                  (session.timingVersion === 1 &&
+                  (session.timingVersion !== undefined &&
                     session.questionOpenedAt === undefined)
                 }
                 selected={chosen?.option === i}

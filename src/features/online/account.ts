@@ -41,7 +41,9 @@ export function authMessage(code: string | undefined) {
       "Oturumun sona erdi. Yeni bir bağlantı iste veya yeniden giriş yap.",
     refresh_token_not_found: "Oturumun sona erdi. Yeniden giriş yap.",
     bad_code_verifier:
-      "Bağlantı bu oturumda doğrulanamadı. Yeni bir bağlantı iste.",
+      "Bağlantı bu cihazın oturumuyla eşleşmiyor. E-posta başka cihazda doğrulanmış olabilir. Güvenli giriş için giriş ekranına dön veya bu cihazdan yeni bağlantı iste.",
+    pkce_code_verifier_not_found:
+      "E-postan başka tarayıcıda veya cihazda doğrulanmış olabilir; burada güvenli oturum bilgisi bulunamadı. Giriş ekranından devam et veya bu cihazdan yeni bağlantı iste.",
     flow_state_expired: "Bağlantının süresi doldu. Yeni bir bağlantı iste.",
     flow_state_not_found:
       "Bağlantı kullanılmış veya geçersiz. Yeni bir bağlantı iste.",

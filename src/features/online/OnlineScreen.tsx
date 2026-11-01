@@ -1,3 +1,4 @@
+import { OnlineQuestionTimer } from "./OnlineQuestionTimer";
 import { GoogleSignInButton } from "./GoogleSignInButton";
 import { clearGoogleAttempt } from "./googleAuth";
 import { RoundResultBadge } from "../results/RoundResultBadge";
@@ -201,7 +202,12 @@ function OnlineAccountScreen() {
         "Bekleyen çevrimiçi yanıt kaydı bozuk. Sunucu kayıtları değiştirilmedi.",
       );
     const answer = value as PendingAnswer;
-    if (next.answers.some((a) => a.requestId === answer.requestId)) {
+    if (
+      next.answers.some(
+        (a) =>
+          a.requestId === answer.requestId || a.position === answer.position,
+      )
+    ) {
       await AsyncStorage.removeItem(pendingKey(expected, next.id));
       setPending(null);
     } else setPending(answer);
@@ -260,6 +266,42 @@ function OnlineAccountScreen() {
     };
   }, [actor, match?.id, inbox.notifications, accept]);
 
+  const expireQuestion = useCallback(() => {
+    const current = matchRef.current;
+    const expected = actorRef.current;
+    if (!current || !expected || lock.current || current.finished) return;
+    lock.current = true;
+    void onlineRequest<OnlineMatch>(
+      "expire",
+      {
+        matchId: current.id,
+        position: current.answers.length + 1,
+        requestId: randomUUID(),
+      },
+      expected,
+    )
+      .then((next) => accept(next, expected))
+      .catch(async (error: unknown) => {
+        if (actorRef.current !== expected) return;
+        if (error instanceof OnlineError && error.code === "ANSWER_NOT_DUE") {
+          await accept(
+            await onlineRequest<OnlineMatch>(
+              "get",
+              { matchId: current.id },
+              expected,
+            ),
+            expected,
+          );
+        } else setError(onlineMessage(error));
+      })
+      .catch(() => {
+        if (actorRef.current === expected)
+          setError("Bağlantını kontrol edip güncel soruyu yenile.");
+      })
+      .finally(() => {
+        lock.current = false;
+      });
+  }, [accept]);
   const act = async (
     operation: "get" | "start" | "invite" | "cancel",
     id = match?.id,
@@ -540,7 +582,9 @@ function OnlineAccountScreen() {
             <GoogleSignInButton
               busy={busy}
               enabled={auth.googleEnabled}
-              onPress={() => void run(() => auth.signInGoogle(), true)}
+              // Callback errors have their own routed screen. Startup/cancel
+              // errors stay inline here instead of opening a second modal over it.
+              onPress={() => void run(() => auth.signInGoogle())}
             />
             <Tap
               label={register ? "Giriş ekranına dön" : "Hesap Oluştur"}
@@ -798,9 +842,19 @@ function OnlineAccountScreen() {
                       !match.finished &&
                       !!question && (
                         <>
-                          <Txt weight="heavy">
-                            Soru {match.answers.length + 1} / 10
-                          </Txt>
+                          <View style={s.row}>
+                            <Txt weight="heavy">
+                              Soru {match.answers.length + 1} / 10
+                            </Txt>
+                            {!!match.answerSeconds &&
+                              !!match.questionOpenedAt &&
+                              !!match.serverNow && (
+                                <OnlineQuestionTimer
+                                  match={match}
+                                  onExpire={expireQuestion}
+                                />
+                              )}
+                          </View>
                           <View style={[s.row, { gap: 4 }]}>
                             {Array.from({ length: 10 }, (_, i) => (
                               <View

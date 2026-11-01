@@ -1,4 +1,4 @@
-import { QuestionClock } from "../domain/game/question-clock";
+import { QuestionClock, questionLimitMs } from "../domain/game/question-clock";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, {
   createContext,
@@ -69,11 +69,12 @@ export function DuelProvider({ children }: React.PropsWithChildren) {
     const key = s ? `${s.id}:${s.cursor}` : "";
     if (activeKey.current !== key) {
       questionClock.current =
-        s?.timingVersion === 1 && s.questionOpenedAt !== undefined
+        s?.timingVersion !== undefined && s.questionOpenedAt !== undefined
           ? new QuestionClock(
               s.questionOpenedAt,
               undefined,
               restoring ? Math.max(0, Date.now() - s.questionOpenedAt) : 0,
+              questionLimitMs(s.timingVersion),
             )
           : null;
       setDisplayClock(questionClock.current);

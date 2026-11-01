@@ -1,3 +1,9 @@
+import {
+  authCallbackKey,
+  callbackUrlFromParams,
+  hasCallbackPayload,
+  nativeCallbackUrl,
+} from "../src/features/online/authCallbackUrl";
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
@@ -39,10 +45,14 @@ function fixture(overrides: Partial<LinkAuth> = {}) {
       calls.push("session");
       return { error: null };
     },
+    verifyOtp: async () => {
+      calls.push("otp");
+      return { error: null };
+    },
     getUser: async () => {
       calls.push("server-user");
       return {
-        data: { user: { email_confirmed_at: "2026-10-22" } },
+        data: { user: { id: "synthetic", email_confirmed_at: "2026-10-22" } },
         error: null,
       };
     },
@@ -57,7 +67,7 @@ test("email link success requires authoritative verified server user after excha
   const { auth, calls } = fixture();
   assert.deepEqual(
     await verifyEmailLink("https://quiz.test/online/auth?code=test-only", auth),
-    { recovery: false },
+    { recovery: false, userId: "synthetic" },
   );
   assert.deepEqual(calls, ["exchange", "server-user"]);
   const recovery = fixture();
@@ -66,14 +76,14 @@ test("email link success requires authoritative verified server user after excha
       "anlaezberlequiz://online/auth#access_token=test-only&refresh_token=test-only&type=recovery",
       recovery.auth,
     ),
-    { recovery: true },
+    { recovery: true, userId: "synthetic" },
   );
   assert.deepEqual(recovery.calls, ["session", "server-user"]);
 });
 test("unconfirmed and anonymous identities never yield a confirmation success", async () => {
   for (const user of [
-    {},
-    { email_confirmed_at: "today", is_anonymous: true },
+    { id: "synthetic" },
+    { id: "synthetic", email_confirmed_at: "today", is_anonymous: true },
     null,
   ]) {
     const { auth, calls } = fixture({
@@ -146,4 +156,166 @@ test("identity writes preserve unrelated canonical fields and display-name valid
   assert.equal(displayNameError("Ayşe Nur"), null);
   for (const bad of ["ab", "a".repeat(25), "A<y>şe", "www.test.test", "a\nb"])
     assert(displayNameError(bad));
+});
+
+test("duplicate cold-start callbacks exchange a single-use code only once", async () => {
+  const { auth, calls } = fixture();
+  const link = "https://quiz.test/online/auth?purpose=confirm&code=duplicate";
+  const results = await Promise.all([
+    verifyEmailLink(link, auth),
+    verifyEmailLink(link, auth),
+    verifyEmailLink(
+      "https://quiz.test/online/auth?code=duplicate&purpose=confirm",
+      auth,
+    ),
+  ]);
+  assert.equal(calls.filter((x) => x === "exchange").length, 1);
+  assert.equal(results[0]!.userId, results[1]!.userId);
+});
+test("token hash confirmation and PKCE recovery stay distinct", async () => {
+  const f = fixture();
+  assert.equal(
+    (
+      await verifyEmailLink(
+        "https://quiz.test/online/auth?token_hash=synthetic&type=signup",
+        f.auth,
+      )
+    ).recovery,
+    false,
+  );
+  assert(f.calls.includes("otp"));
+  const recover = fixture({
+    exchangeCodeForSession: async () => ({
+      data: { redirectType: "recovery" },
+      error: null,
+    }),
+  });
+  assert.equal(
+    (
+      await verifyEmailLink(
+        "https://quiz.test/online/auth?code=recovery",
+        recover.auth,
+      )
+    ).recovery,
+    true,
+  );
+  for (const url of [
+    "?code=a&code=b",
+    "?code=a&token_hash=b&type=email",
+    "?token_hash=x&type=invite",
+    "#access_token=x",
+  ]) {
+    const f = fixture();
+    await assert.rejects(
+      verifyEmailLink("https://quiz.test/online/auth" + url, f.auth),
+    );
+    assert.deepEqual(f.calls, []);
+  }
+});
+
+test("Router query survives a late Linking listener without turning a dev-client URL into a credential", () => {
+  assert.equal(
+    hasCallbackPayload(
+      "anla-ezberle-quiz://expo-development-client/?url=http://localhost:8171",
+    ),
+    false,
+  );
+  assert.equal(
+    callbackUrlFromParams("anla-ezberle-quiz://online/auth", {}),
+    null,
+  );
+  const url = callbackUrlFromParams("anla-ezberle-quiz://online/auth", {
+    code: "synthetic",
+    purpose: "recovery",
+    unknown: "ignored",
+  })!;
+  assert.equal(new URL(url).searchParams.get("code"), "synthetic");
+  assert.equal(new URL(url).searchParams.has("unknown"), false);
+  const duplicate = callbackUrlFromParams("https://quiz.test/online/auth", {
+    code: ["a", "b"],
+  })!;
+  assert.equal(new URL(duplicate).searchParams.getAll("code").length, 2);
+});
+
+test("callback normalization preserves origin, purpose and duplicate-parameter validation", async () => {
+  const a = "https://quiz.test/online/auth?attempt=a&flow=google&code=b";
+  assert.equal(
+    authCallbackKey(a),
+    authCallbackKey(
+      "https://quiz.test/online/auth?code=b&flow=google&attempt=a",
+    ),
+  );
+  assert.notEqual(
+    authCallbackKey(a),
+    authCallbackKey(a.replace("quiz.test", "other.test")),
+  );
+  assert.notEqual(authCallbackKey(a), authCallbackKey(a + "&code=b"));
+  const f = fixture();
+  await assert.rejects(
+    verifyEmailLink("https://quiz.test/online/auth?code=a&code=b", f.auth),
+  );
+  assert.deepEqual(f.calls, []);
+});
+test("native Google route markers wait for proof and preserve the original denial fragment", () => {
+  const marker = callbackUrlFromParams("anla-ezberle-quiz://online/auth", {
+    flow: "google",
+    attempt: "current",
+  })!;
+  assert.equal(hasCallbackPayload(marker), false);
+  assert.equal(nativeCallbackUrl(null, marker), null);
+  const denial = marker + "#error=server_error&error_description=private";
+  assert.equal(nativeCallbackUrl(denial, marker), denial);
+  assert.equal(
+    nativeCallbackUrl(marker + "&code=valid", marker),
+    marker + "&code=valid",
+  );
+  assert.equal(
+    nativeCallbackUrl(marker.replace("current", "old") + "&code=old", marker),
+    null,
+  );
+  const routeWithCode = marker + "&code=current-code";
+  assert.equal(
+    nativeCallbackUrl(marker + "&code=old", routeWithCode),
+    routeWithCode,
+  );
+  assert.equal(
+    nativeCallbackUrl("anla-ezberle-quiz://other/auth?code=x", routeWithCode),
+    routeWithCode,
+  );
+  const duplicate = routeWithCode + "&code=second";
+  assert.equal(nativeCallbackUrl(routeWithCode, duplicate), duplicate);
+});
+test("only Google diagnostic denial fragments share a callback key with Router query errors", () => {
+  const marker = "anla-ezberle-quiz://online/auth?flow=google&attempt=current";
+  assert.equal(
+    authCallbackKey(marker + "#error=server_error&error_code=x"),
+    authCallbackKey(marker + "&error=server_error&error_code=x"),
+  );
+  for (const fragment of [
+    "error=server_error&access_token=x",
+    "error=server_error&code=x",
+    "error=one&error=two",
+  ])
+    assert.notEqual(
+      authCallbackKey(marker + "#" + fragment),
+      authCallbackKey(marker + "&" + fragment),
+    );
+  assert.notEqual(
+    authCallbackKey(marker + "&code=proof#error=denied"),
+    authCallbackKey(marker + "&code=proof&error=denied"),
+  );
+});
+test("reordered implicit fragments do not transfer a session twice", async () => {
+  const f = fixture();
+  await Promise.all([
+    verifyEmailLink(
+      "https://quiz.test/online/auth#type=signup&access_token=a&refresh_token=b",
+      f.auth,
+    ),
+    verifyEmailLink(
+      "https://quiz.test/online/auth#refresh_token=b&access_token=a&type=signup",
+      f.auth,
+    ),
+  ]);
+  assert.equal(f.calls.filter((x) => x === "session").length, 1);
 });

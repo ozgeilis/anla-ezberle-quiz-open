@@ -19,13 +19,13 @@ function round(at: string, correct = 5, timeouts = 0): GameRecord {
     const q = gameQuestion(s, s.questionIds[i]!)!;
     s =
       i >= 10 - timeouts
-        ? expireQuestion(s, start + (i + 1) * 12000)
+        ? expireQuestion(s, start + (i + 1) * 22000)
         : answerQuestion(
             s,
             i < correct ? q.correct : (q.correct + 1) % 4,
-            start + i * 12000 + 1000,
+            start + i * 22000 + 1000,
           );
-    if (i < 9) s = advanceQuestion(s, start + (i + 1) * 12000);
+    if (i < 9) s = advanceQuestion(s, start + (i + 1) * 22000);
   }
   return finishSession(s);
 }

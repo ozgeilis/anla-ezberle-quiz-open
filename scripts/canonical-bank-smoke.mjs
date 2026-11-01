@@ -5,20 +5,24 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 const require = createRequire(import.meta.url);
 const { chromium } = require(
-  join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
+  process.env.PLAYWRIGHT_MODULE ??
+    join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
 );
 const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8184";
 const root = process.env.BANK_SCREENSHOTS ?? "artifacts/canonical-bank";
 await mkdir(root, { recursive: true });
 const browser = await chromium.launch({
   headless: true,
+  ...(process.env.PLAYWRIGHT_CHROME_PATH
+    ? { executablePath: process.env.PLAYWRIGHT_CHROME_PATH }
+    : {}),
   ...(process.env.SETTINGS_BROWSER_CHANNEL
     ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
     : {}),
 });
 const checks = [];
 try {
-  for (const width of [320, 390])
+  for (const width of [320, 360, 390])
     for (const theme of ["light", "dark"]) {
       const ctx = await browser.newContext({
         viewport: { width, height: 844 },
@@ -36,8 +40,23 @@ try {
         origin + "/prepare?playCategory=quran_dualar&difficulty=easy",
       );
       await p.getByRole("button", { name: "Oyuna Başla", exact: true }).click();
+      // Observe every DOM commit, including transient states between final answer,
+      // local save and route replacement, rather than only the eventual result.
+      await p.evaluate(() => {
+        window.__emptyGameFlashes = [];
+        const observer = new MutationObserver(() => {
+          for (const prompt of [
+            "Yeni bir tura hazır mısın?",
+            "Yeni bir sonuç için yeni bir tur!",
+          ])
+            if (document.body.innerText.includes(prompt))
+              window.__emptyGameFlashes.push(prompt);
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+      });
       for (let i = 1; i <= 10; i++) {
         await p.getByText(`Soru ${i} / 10`, { exact: true }).waitFor();
+        await p.getByLabel("Kalan süre 20 saniye", { exact: true }).waitFor();
         if (i === 1) {
           await p.evaluate(() => document.fonts.ready);
           assert(
@@ -54,6 +73,11 @@ try {
       await p
         .getByText("Sonucun bu cihazda kaydedildi. ✓", { exact: true })
         .waitFor();
+      assert.deepEqual(
+        await p.evaluate(() => window.__emptyGameFlashes),
+        [],
+        "The final answer must lead to results without an empty-game prompt",
+      );
       const data = await p.evaluate(() =>
         JSON.parse(localStorage.getItem("@anla-ezberle-quiz/progress/v1")),
       );
@@ -84,6 +108,8 @@ try {
         bankVersion: 73,
         questions: 10,
         savedAndReloaded: true,
+        timerStartsAt20: true,
+        emptyGameFlashes: 0,
       });
       await ctx.close();
     }

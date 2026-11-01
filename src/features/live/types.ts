@@ -25,7 +25,7 @@ export interface LiveSettings {
   topic: string;
   level: string;
   count: number;
-  seconds: 10 | 15;
+  seconds: 10 | 15 | 20;
 }
 export interface LiveRoom {
   id: string;
