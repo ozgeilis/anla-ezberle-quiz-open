@@ -43,3 +43,7 @@ Salt okunur EAS config kontrolünde `development` ortamında public Supabase de�
 EAS yerel config çözümlemesi için yalnız worker değişkenine bağlı kalınmaz; yeni profilde `IOS_BUILD_TARGET=store` ve kayıtlı Bundle ID bulunur. `eas config --platform ios --profile ios-testflight --json` salt okunur çıktısı kalıcı ID/Team/production APNs ile doğrulandı. Yeni IPA üretildiğinde arşiv açılıp `node scripts/verify-ios-store.mjs /absolute/Payload/App.app evidence.json` çalıştırılır. Bu script imza üretmez, yükleme veya dağıtım yapmaz. Mevcut imzasız simülatör uygulaması Keychain kabulü değildir; Auth için doğru entitlements içeren ayrıca onaylanmış development build gerekir.
 
 Üyelik, App ID/Connect ve iki Apple capability kaydı tamamlandı; APNs key, Apple revoke key ve distribution provisioning oluşturulmadı. Yerel Team Development identity mevcut, Distribution identity bulunmadı. Eski prototip için capability/signing otomatik senkronizasyonu yapılmaması amacıyla yeni development profili açıkça kalıcı ID'yi kullanır; eski profiller korunur.
+
+## Son talimat: yalnız yükleme
+
+Sahibi TestFlight hazırlığı ve yüklemesini istedi. Tam fiziksel/Auth/review kabulü false kalır; dar Internal Only yükleme planı ve ayrı geçici kaynak bağlı izin [TESTFLIGHT-UPLOAD-ONLY.md](TESTFLIGHT-UPLOAD-ONLY.md) içindedir. Testçi dağıtımı veya App Store yayını bu izinle açılmaz.

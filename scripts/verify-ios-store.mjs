@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, join } from "node:path";
 import { pathToFileURL } from "node:url";
+import iosApproval from "../config/ios-approval.js";
 
 export function validateIosDistribution(facts, expected, now = Date.now()) {
   const { plist, entitlements: e, profile: p } = facts;
@@ -117,11 +118,20 @@ if (
   const approval = JSON.parse(
     readFileSync("config/ios-store-approval.json", "utf8"),
   );
-  assert.equal(
-    approval.approved,
-    true,
-    "Distribution build has not been approved",
-  );
+  if (process.env.IOS_TESTFLIGHT_UPLOAD_ONLY === "1") {
+    iosApproval.validateTestflightUpload(
+      approval,
+      JSON.parse(readFileSync("config/ios-testflight-export.json", "utf8")),
+      execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+      process.env,
+    );
+  } else {
+    assert.equal(
+      approval.approved,
+      true,
+      "Distribution build has not been approved",
+    );
+  }
   execFileSync("codesign", ["--verify", "--deep", "--strict", app], {
     stdio: "pipe",
   });
