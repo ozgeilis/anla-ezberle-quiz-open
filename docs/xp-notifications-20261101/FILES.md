@@ -1,0 +1,56 @@
+# Değişen dosyalar
+
+- `.github/workflows/settings-account-ui.yml`
+- `docs/WORK-TRACKER-20261101.md`
+- `docs/xp-notifications-20261101/FILES.md`
+- `docs/xp-notifications-20261101/README.md`
+- `docs/xp-notifications-20261101/acceptance.md`
+- `docs/xp-notifications-20261101/migration-sha256.txt`
+- `docs/xp-notifications-20261101/native-layout-results.json`
+- `docs/xp-notifications-20261101/rollout-plan.md`
+- `docs/xp-notifications-20261101/screenshots/android-friend-accepted.png`
+- `docs/xp-notifications-20261101/screenshots/android-inbox-320-dark-200.png`
+- `docs/xp-notifications-20261101/screenshots/android-inbox-360.png`
+- `docs/xp-notifications-20261101/screenshots/android-profile-xp.png`
+- `docs/xp-notifications-20261101/screenshots/empty-390-dark.png`
+- `docs/xp-notifications-20261101/screenshots/expired-card-light.png`
+- `docs/xp-notifications-20261101/screenshots/friend-card-light.png`
+- `docs/xp-notifications-20261101/screenshots/inbox-390-dark.png`
+- `docs/xp-notifications-20261101/screenshots/inbox-390-light.png`
+- `docs/xp-notifications-20261101/screenshots/invite-card-light.png`
+- `docs/xp-notifications-20261101/screenshots/leaderboard-xp-390-light.png`
+- `docs/xp-notifications-20261101/screenshots/profile-xp-390-light.png`
+- `docs/xp-notifications-20261101/web-results.json`
+- `scripts/check-canonical-bank-local.ts`
+- `scripts/google-auth-ui-smoke.mjs`
+- `scripts/settings-account-smoke.mjs`
+- `scripts/xp-notification-smoke.mjs`
+- `src/components/game/ReferenceHero.tsx`
+- `src/domain/scoring/levels.ts`
+- `src/domain/scoring/progress.ts`
+- `src/features/audio/GameAudioEvents.tsx`
+- `src/features/home/HomeScreen.tsx`
+- `src/features/online/InboxScreen.tsx`
+- `src/features/online/NotificationDetail.tsx`
+- `src/features/online/PlayersScreen.tsx`
+- `src/features/online/SocialProfile.tsx`
+- `src/features/online/friendRequests.ts`
+- `src/features/online/notification-cards/FriendRequestCard.tsx`
+- `src/features/online/notification-cards/GameInviteCard.tsx`
+- `src/features/online/notification-cards/NotificationCard.tsx`
+- `src/features/online/notification-cards/NotificationSectionTabs.tsx`
+- `src/features/online/notification-cards/useInboxFriends.ts`
+- `src/features/profile/PlayerIdentityCard.tsx`
+- `src/features/ranking/RankingScreen.tsx`
+- `src/features/settings/SettingsScreen.tsx`
+- `supabase/migrations/20261101065301_progressive_player_levels.sql`
+- `supabase/tests/progressive_player_levels.sql`
+- `tests/achievement-album.test.ts`
+- `tests/broad-categories-history.test.ts`
+- `tests/canonical-questions.test.ts`
+- `tests/game.test.ts`
+- `tests/levels.test.ts`
+- `tests/player-stages.test.ts`
+- `tests/topic-review-v71.test.ts`
+
+Native QA `android/` ve özel test çıktıları gitignored / repo dışındadır.

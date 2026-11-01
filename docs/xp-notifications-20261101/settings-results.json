@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "light-320: short home, separate identity/settings, compact list, read failure/retry/idempotency, friend accept, expired/accepted invite, real DTO scores, missing record",
+    "dark-320: short home, separate identity/settings, compact list, read failure/retry/idempotency, friend accept, expired/accepted invite, real DTO scores, missing record",
+    "light-320: five settings entry/back routes, header geometry, guest inbox",
+    "dark-320: five settings entry/back routes, header geometry, guest inbox",
+    "fixture accounts: one explicit username write, immediate shared headers, reload, failed save retains old name, unread read/reset, signout and second-account isolation",
+    "callback success: sanitized URL, persistent truthful result",
+    "callback expired: sanitized URL, persistent truthful result",
+    "callback invalid: sanitized URL, persistent truthful result",
+    "callback network: sanitized URL, persistent truthful result",
+    "callback unconfirmed: sanitized URL, persistent truthful result",
+    "settings menu: seven real detail routes, preference-only notifications, three theme previews, cancel/reopen, persistence, storage failure rollback"
+  ],
+  "fixtureOnly": true,
+  "realEmailDeliveryTested": false,
+  "hostedDatabaseChanged": false
+}

@@ -10,13 +10,14 @@ import {
 test("account passwords enforce server-compatible bounds and character classes", () => {
   for (const value of [
     "",
-    "Aa1!short",
+    "Aa1!xyz",
     "a".repeat(12),
     "Abcdefghijk!",
     "1234567890A!",
     "Aa1!" + "x".repeat(125),
   ])
     assert.ok(passwordError(value));
+  assert.equal(passwordError("Aa1!xyzw"), null);
   assert.equal(passwordError("Sample_42_Strong!"), null);
   assert.equal(passwordError("Aa1!" + "x".repeat(124)), null);
 });
@@ -71,4 +72,13 @@ test("Auth error status fallbacks keep rate limits and network failures actionab
   assert.match(authFailureMessage({ status: 429 }), /Çok fazla/);
   assert.match(authFailureMessage({ status: 0 }), /Bağlantını/);
   assert.match(authFailureMessage({ status: 503 }), /geçici/);
+});
+
+test("expired PKCE state distinguishes missing login from email confirmation without claiming verification", () => {
+  for (const code of ["flow_state_expired", "flow_state_not_found"]) {
+    const message = authMessage(code);
+    assert.match(message, /giriş ekranından devam et/);
+    assert.match(message, /doğrulaman tamamlandıysa|doğruladıysan/);
+    assert.doesNotMatch(message, /E-postan doğrulandı\.|Doğrulama başarısız/);
+  }
 });

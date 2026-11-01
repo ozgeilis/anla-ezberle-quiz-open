@@ -1,3 +1,4 @@
+import type { TimingVersion } from "../game/question-clock";
 import {
   createSession,
   answerQuestion,
@@ -41,7 +42,7 @@ export interface DemoMatch {
   updatedAt: number;
   expiresAt: number;
   manifest: {
-    timingVersion?: 1;
+    timingVersion?: TimingVersion;
     bankVersion: number;
     questionIds: string[];
     questionVersions: Record<string, number>;
@@ -72,6 +73,9 @@ function initialMatch(document: DuelDocument): DemoMatch {
     typeof seed.id !== "string" ||
     !/^quiz-[\w-]{5,100}$/.test(seed.id) ||
     !timestamp(seed.startedAt) ||
+    (seed.timingVersion !== undefined &&
+      seed.timingVersion !== 1 &&
+      seed.timingVersion !== 2) ||
     seed.mode !== "mixed" ||
     seed.focus !== undefined ||
     seed.dailyKey !== undefined ||
@@ -107,7 +111,9 @@ function initialMatch(document: DuelDocument): DemoMatch {
     updatedAt: seed.startedAt,
     expiresAt: seed.startedAt + 24 * 60 * 60 * 1000,
     manifest: {
-      ...(seed.timingVersion === 1 ? { timingVersion: 1 as const } : {}),
+      ...(seed.timingVersion !== undefined
+        ? { timingVersion: seed.timingVersion }
+        : {}),
       bankVersion: seed.bankVersion,
       questionIds: [...seed.questionIds],
       questionVersions: { ...questionVersions },
@@ -231,8 +237,8 @@ export function applyDuelEvent(match: DemoMatch, event: DuelEvent): DemoMatch {
           [...order],
         ]),
       ),
-      ...(manifest.timingVersion === 1
-        ? { timingVersion: 1 as const, questionOpenedAt: event.at }
+      ...(manifest.timingVersion !== undefined
+        ? { timingVersion: manifest.timingVersion, questionOpenedAt: event.at }
         : {}),
       startedAt: event.at,
       cursor: 0,

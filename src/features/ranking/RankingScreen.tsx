@@ -1,3 +1,4 @@
+import { getLevelFromXp } from "../../domain/scoring/levels";
 import React, { useState } from "react";
 import { View, Switch, useWindowDimensions } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
@@ -388,7 +389,7 @@ function OnlineRanking({
             </Txt>
             <Txt color={t.accent}>@{player.username}</Txt>
             <Txt>
-              Seviye {player.level} · {player.xp} doğrulanmış XP
+              Seviye {getLevelFromXp(player.xp)} · {player.xp} doğrulanmış XP
             </Txt>
             <PublicAchievements player={player} />
           </View>
@@ -477,7 +478,7 @@ function Podium({
                   {e.player.xp} XP
                 </Txt>
                 <Txt size={10} color={t.muted}>
-                  Seviye {e.player.level} · {e.games} maç
+                  Seviye {getLevelFromXp(e.player.xp)} · {e.games} maç
                 </Txt>
               </View>
             </Tap>
@@ -521,7 +522,7 @@ function RankRow({
           {e.player.name}
         </Txt>
         <Txt size={11} color={t.muted} numberOfLines={1}>
-          @{e.player.username} · Seviye {e.player.level}
+          @{e.player.username} · Seviye {getLevelFromXp(e.player.xp)}
         </Txt>
       </View>
       <Txt size={14} weight="heavy" color={t.accent}>

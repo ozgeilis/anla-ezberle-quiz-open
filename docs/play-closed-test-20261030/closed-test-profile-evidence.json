@@ -1,0 +1,17 @@
+{
+  "profile": "ads-closed-test",
+  "distribution": "store",
+  "environment": "preview",
+  "developmentClient": false,
+  "autoIncrement": true,
+  "androidBuildType": "app-bundle",
+  "package": "com.kovynelstudio.anlaezberle",
+  "adsConfigMatchesTestedPreview": true,
+  "entireAppConfigMatchesPreview": true,
+  "adMode": "test",
+  "realAdsEnabled": false,
+  "submitConfigured": false,
+  "approvalGate": false,
+  "consentDebugEeaEnabled": false,
+  "approvalMustMatchBuildProfile": true
+}

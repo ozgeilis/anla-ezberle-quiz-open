@@ -26,6 +26,7 @@ interface Value {
   error: string;
   play: (name: SoundEffect, id?: string) => boolean;
   activate: () => void;
+  setInterrupted: (value: boolean) => void;
   save: (
     change: Partial<Omit<SoundPreferences, "version">>,
   ) => Promise<boolean>;
@@ -40,6 +41,7 @@ const silent: Value = {
   error: "",
   play: () => false,
   activate: () => {},
+  setInterrupted: () => {},
   save: async () => false,
   retry: async () => {},
 };
@@ -139,6 +141,10 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
     engine.current?.setRoute(path);
   }, [path]);
   const activate = useCallback(() => engine.current?.activate(), []);
+  const setInterrupted = useCallback(
+    (value: boolean) => engine.current?.setInterrupted(value),
+    [],
+  );
   const play = useCallback(
     (name: SoundEffect, id?: string) => engine.current?.play(name, id) ?? false,
     [],
@@ -180,6 +186,7 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
       error: error || audioError,
       play,
       activate,
+      setInterrupted,
       save,
       retry,
     }),
@@ -191,6 +198,7 @@ export function SoundProvider({ children }: React.PropsWithChildren) {
       audioError,
       play,
       activate,
+      setInterrupted,
       save,
       retry,
     ],

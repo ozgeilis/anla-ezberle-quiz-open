@@ -1,3 +1,4 @@
+import { getLevelFromXp } from "../../domain/scoring/levels";
 import { useEffect, useRef } from "react";
 import { useGame } from "../../storage/GameProvider";
 import { progress } from "../../domain/scoring/progress";
@@ -25,7 +26,7 @@ export function GameAudioEvents() {
       play("levelUp", `level:${result.id}`);
   }, [data.games, ready, result, play]);
   const actor = session?.user.id,
-    level = self?.player?.level;
+    level = self?.player ? getLevelFromXp(self.player.xp) : undefined;
   useEffect(() => {
     const previous = online.current;
     online.current = { actor, level };

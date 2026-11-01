@@ -11,6 +11,38 @@ export const onlineConfigured =
   /^(https:\/\/[a-z0-9-]+\.supabase\.co|http:\/\/(127\.0\.0\.1|localhost):\d+)\/?$/.test(
     url,
   ) && /^sb_publishable_[A-Za-z0-9_-]+$/.test(key);
+// OAuth uses a request-scoped PKCE transport; only onlineClient owns the app session.
+export function createGooglePkceClient(
+  storage: typeof authStorage,
+  storageKey: string,
+) {
+  if (!onlineConfigured) return null;
+  return createClient(url, key, {
+    global: { fetch: authFetch },
+    auth: {
+      storage,
+      storageKey,
+      autoRefreshToken: false,
+      persistSession: true,
+      detectSessionInUrl: false,
+      flowType: "pkce",
+    },
+  });
+}
+// Bound Auth network waits too; callback UI must not depend on an endless fetch.
+async function authFetch(input: RequestInfo | URL, init?: RequestInit) {
+  const controller = new AbortController();
+  const abort = () => controller.abort();
+  init?.signal?.addEventListener("abort", abort, { once: true });
+  if (init?.signal?.aborted) controller.abort();
+  const timer = setTimeout(abort, 15_000);
+  try {
+    return await fetch(input, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+    init?.signal?.removeEventListener("abort", abort);
+  }
+}
 let singleton: SupabaseClient | null = null;
 function sessionKey() {
   const base = `anla-quiz-online-auth-v1.${new URL(url).host.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
@@ -34,9 +66,11 @@ function sessionKey() {
 export function onlineClient() {
   if (!onlineConfigured) return null;
   return (singleton ??= createClient(url, key, {
+    global: { fetch: authFetch },
     auth: {
       storage: authStorage,
       storageKey: sessionKey(),
+      flowType: "pkce",
       autoRefreshToken: true,
       persistSession: true,
       detectSessionInUrl: false,
@@ -65,6 +99,7 @@ export async function onlineRequest<T>(
   if (error || !session || (expectedActor && session.user.id !== expectedActor))
     throw new OnlineError("SESSION_EXPIRED", 401);
   let response: Response;
+  const requestStartedAt = performance.now();
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15000);
   try {
@@ -77,7 +112,19 @@ export async function onlineRequest<T>(
           apikey: key,
           Authorization: `Bearer ${session.access_token}`,
         },
-        body: JSON.stringify({ operation, body }),
+        body: JSON.stringify({
+          operation,
+          body: [
+            "create",
+            "get",
+            "start",
+            "answer",
+            "expire",
+            "challenge_reply",
+          ].includes(operation)
+            ? { ...body, timingVersion: 2 }
+            : body,
+        }),
         signal: controller.signal,
       },
     );
@@ -99,6 +146,8 @@ export async function onlineRequest<T>(
   }
   if (!payload || typeof payload !== "object")
     throw new OnlineError("SERVICE_UNAVAILABLE", 503);
+  // Override any wire value; clients cannot submit this local timing anchor.
+  if ("serverNow" in payload) return { ...payload, requestStartedAt } as T;
   return payload as T;
 }
 export function onlineMessage(error: unknown) {
@@ -116,6 +165,8 @@ export function onlineMessage(error: unknown) {
     HOST_ONLY: "Bu işlemi yalnızca oda sahibi yapabilir.",
     ROOM_NOT_READY: "En az iki oyuncu katılmalı ve herkes hazır olmalı.",
     ROOM_CLOSED: "Bu oda kapanmış veya yarışma başlamış. Güncel durumu yenile.",
+    UPDATE_REQUIRED:
+      "Bu yarışma için uygulamanı güncellemen gerekiyor. Eski oyun kayıtların korunuyor.",
     ANSWER_LATE:
       "Bu sorunun süresi doldu. Cevap kabul edilmedi; güncel soruyu yenile.",
     LIVE_POOL_INSUFFICIENT:

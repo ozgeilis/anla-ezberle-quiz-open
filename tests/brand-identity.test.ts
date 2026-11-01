@@ -43,10 +43,10 @@ test("native splash and adaptive icon have real high-resolution assets and light
     },
   ];
   assert(splash);
-  assert.equal(splash[1].backgroundColor, "#FFFAF1");
-  assert.equal(splash[1].dark.backgroundColor, "#00484E");
+  assert.equal(splash[1].backgroundColor, "#FFFFFF");
+  assert.equal(splash[1].dark.backgroundColor, "#FFFFFF");
   assert.equal(splash[1].imageWidth, 240);
-  assert.equal(config.expo.android.adaptiveIcon.backgroundColor, "#005F65");
+  assert.equal(config.expo.android.adaptiveIcon.backgroundColor, "#FFFFFF");
   const png = (file: string, size: number) => {
     const b = readFileSync(file);
     assert.equal(b.subarray(1, 4).toString(), "PNG");
@@ -61,4 +61,6 @@ test("native splash and adaptive icon have real high-resolution assets and light
   ])
     png(file, 1024);
   png("store/google-play/icon-512.png", 512);
+  png(config.expo.ios.icon, 1024);
+  png(config.expo.web.favicon, 64);
 });

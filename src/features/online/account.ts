@@ -11,14 +11,19 @@ export function verifiedAccount(
 ) {
   return !!user?.email_confirmed_at && user.is_anonymous !== true;
 }
+export const PASSWORD_MIN_LENGTH = 8;
+export const PASSWORD_MAX_LENGTH = 128;
+export const PASSWORD_GUIDANCE =
+  "Şifre en az 8 karakter olmalı; büyük harf, küçük harf, rakam ve özel karakter içermeli.";
 export function passwordError(password: string) {
-  return password.length < 12 ||
-    password.length > 128 ||
+  if (password.length > PASSWORD_MAX_LENGTH)
+    return "Şifre en fazla 128 karakter olmalı.";
+  return password.length < PASSWORD_MIN_LENGTH ||
     !/[a-z]/.test(password) ||
     !/[A-Z]/.test(password) ||
     !/[0-9]/.test(password) ||
     !/[^a-zA-Z0-9]/.test(password)
-    ? "Şifre 12–128 karakter; büyük/küçük harf, rakam ve simge içermeli."
+    ? PASSWORD_GUIDANCE
     : null;
 }
 export function authMessage(code: string | undefined) {
@@ -36,10 +41,13 @@ export function authMessage(code: string | undefined) {
       "Oturumun sona erdi. Yeni bir bağlantı iste veya yeniden giriş yap.",
     refresh_token_not_found: "Oturumun sona erdi. Yeniden giriş yap.",
     bad_code_verifier:
-      "Bağlantı bu oturumda doğrulanamadı. Yeni bir bağlantı iste.",
-    flow_state_expired: "Bağlantının süresi doldu. Yeni bir bağlantı iste.",
+      "Bağlantı bu cihazın oturumuyla eşleşmiyor. E-posta başka cihazda doğrulanmış olabilir. Güvenli giriş için giriş ekranına dön veya bu cihazdan yeni bağlantı iste.",
+    pkce_code_verifier_not_found:
+      "E-postan başka tarayıcıda veya cihazda doğrulanmış olabilir; burada güvenli oturum bilgisi bulunamadı. Giriş ekranından devam et veya bu cihazdan yeni bağlantı iste.",
+    flow_state_expired:
+      "Güvenli giriş bağlantısının süresi doldu. E-posta doğrulaman tamamlandıysa giriş ekranından devam et. Tamamlanmadıysa yeni bir doğrulama bağlantısı iste.",
     flow_state_not_found:
-      "Bağlantı kullanılmış veya geçersiz. Yeni bir bağlantı iste.",
+      "Bu giriş bağlantısı kullanılmış veya artık geçerli değil. E-postanı doğruladıysan giriş ekranından devam et; doğrulamadıysan yeni bir bağlantı iste.",
     reauthentication_needed:
       "Güvenlik için yeni bir şifre sıfırlama bağlantısı iste.",
     signup_disabled: "Yeni hesap kaydı henüz açılmadı.",

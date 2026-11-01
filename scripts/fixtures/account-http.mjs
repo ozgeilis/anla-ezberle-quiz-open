@@ -77,6 +77,12 @@ export function setup() {
             rooms: true,
           },
         });
+      if (path.includes("google_auth_capabilities"))
+        return reply({
+          googleOAuthEnabled: false,
+          googleDeletionEnabled: false,
+          googleSignupEnabled: false,
+        });
       if (path.includes("online_service_capabilities"))
         return reply({ registrationEnabled: true });
       if (path === "/auth/v1/signup")

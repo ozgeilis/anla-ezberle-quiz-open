@@ -1,19 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { View, useWindowDimensions } from "react-native";
 import { useRouter } from "expo-router";
-import { Button, Card, Icon, Page, Tap, Txt } from "../../components/ui";
-import { Avatar } from "../../components/game/Artwork";
+import { Button, Card, Icon, Page, TextAction, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useOnlineAuth } from "./OnlineProvider";
 import { useInbox } from "./InboxProvider";
 import { NotificationDetail } from "./NotificationDetail";
 import {
-  challengeStatus,
   newestFirst,
   notificationCopy,
   notificationTime,
-  InboxSelection,
+  type InboxSelection,
 } from "./notifications";
+import { NotificationCard } from "./notification-cards/NotificationCard";
+import {
+  NotificationSectionTabs,
+  type NotificationSection,
+} from "./notification-cards/NotificationSectionTabs";
+import { FriendRequestCard } from "./notification-cards/FriendRequestCard";
+import { GameInviteCard } from "./notification-cards/GameInviteCard";
+import { useInboxFriends } from "./notification-cards/useInboxFriends";
+import type { DirectChallenge, PlayerNotification } from "./types";
+
 export function InboxScreen({
   invitations = false,
 }: {
@@ -28,277 +36,231 @@ export function InboxScreen({
   );
 }
 function NotificationList({ invitations }: { invitations: boolean }) {
-  const router = useRouter();
-  const { width } = useWindowDimensions();
-  const inbox = useInbox(),
+  const router = useRouter(),
+    inbox = useInbox(),
     { session } = useOnlineAuth(),
     theme = useTheme();
-  const [selection, setSelection] = useState<InboxSelection | null>(null),
+  const { fontScale } = useWindowDimensions();
+  const actor = session?.user.is_anonymous ? undefined : session?.user.id;
+  const [section, setSection] = useState<NotificationSection>(
+      invitations ? "invites" : "all",
+    ),
+    [selection, setSelection] = useState<InboxSelection | null>(null),
     [reading, setReading] = useState(false),
+    [notice, setNotice] = useState(""),
     [now, setNow] = useState(() => Date.now());
+  const alive = useRef(true);
+  const references = inbox.notifications
+    .filter((n) => n.kind === "friend_request" || n.kind === "friend_accepted")
+    .map((n) => `${n.kind}:${n.referenceId}`)
+    .sort()
+    .join(",");
+  const friends = useInboxFriends(actor, references);
   useEffect(() => {
-    const t = setInterval(() => setNow(Date.now()), 30000);
-    return () => clearInterval(t);
+    alive.current = true;
+    const timer = setInterval(() => setNow(Date.now()), 1000);
+    return () => {
+      alive.current = false;
+      clearInterval(timer);
+    };
   }, []);
-  const smallLink = (
-    label: string,
-    icon: "check" | "arrow-left" | "send" | "refresh-cw",
-    action: () => void,
-    disabled = false,
-    caption = label,
+  const refresh = () => {
+    friends.reload();
+    void inbox.refresh();
+  };
+  const join = async (challenge: DirectChallenge, notificationId?: string) => {
+    setNotice("");
+    const next = await inbox.replyChallenge(challenge.id, "accept");
+    if (!alive.current || !next) return;
+    if (notificationId) void inbox.read(notificationId);
+    if (next.matchId)
+      router.push({ pathname: "/online", params: { match: next.matchId } });
+    else setNotice("Davet kabul edildi. Güncel ayrıntıları açabilirsin.");
+  };
+  const later = async (notificationId?: string) => {
+    // Deferring is deliberately not a decline, cancel or new backend state.
+    const ok = !notificationId || (await inbox.read(notificationId));
+    if (alive.current && ok)
+      setNotice(
+        "Davet bekliyor. Davetler sekmesinden daha sonra yanıtlayabilirsin.",
+      );
+  };
+  const inviteCard = (
+    c: DirectChallenge,
+    notification?: PlayerNotification,
   ) => (
-    <Tap
-      label={label}
-      disabled={disabled}
-      onPress={action}
-      style={{
-        minHeight: 44,
-        minWidth: 44,
-        paddingHorizontal: 10,
-        borderRadius: 14,
-        backgroundColor: theme.mintSurface,
-        flexDirection: "row",
-        gap: 6,
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Icon name={icon} size={17} color={theme.accent} />
-      {!!caption && (
-        <Txt
-          size={12}
-          weight="bold"
-          color={theme.accent}
-          style={{ flexShrink: 1 }}
-        >
-          {caption}
-        </Txt>
-      )}
-    </Tap>
+    <GameInviteCard
+      key={notification?.id ?? c.id}
+      challenge={c}
+      now={now}
+      time={notificationTime(notification?.createdAt ?? c.createdAt, now)}
+      unread={notification ? !notification.read : false}
+      busy={inbox.busy}
+      onJoin={() => join(c, notification?.id)}
+      onLater={() => later(notification?.id)}
+      onOpen={() =>
+        setSelection(
+          notification
+            ? { kind: "notification", notification }
+            : { kind: "challenge", challengeId: c.id },
+        )
+      }
+    />
   );
+  const notifications = newestFirst(inbox.notifications).filter(
+    (n) =>
+      section !== "requests" ||
+      n.kind === "friend_request" ||
+      n.kind === "friend_accepted",
+  );
+  const empty =
+    section === "invites"
+      ? inbox.challenges.length === 0
+      : notifications.length === 0;
+  const readAll =
+    actor && inbox.unreadCount > 0 ? (
+      <TextAction
+        title="Tümünü oku"
+        disabled={reading}
+        onPress={() => {
+          if (reading) return;
+          setReading(true);
+          void inbox.read("all").finally(() => {
+            if (alive.current) setReading(false);
+          });
+        }}
+      />
+    ) : undefined;
   return (
     <Page
       title={invitations ? "Davetlerim" : "Bildirimler"}
-      subtitle={
-        invitations ? "Gönderilen ve gelen düello davetlerin." : undefined
-      }
-      right={
-        session && !invitations && inbox.unreadCount > 0
-          ? smallLink(
-              "Tümünü Okundu İşaretle",
-              "check",
-              () => {
-                if (reading) return;
-                setReading(true);
-                void inbox.read("all").finally(() => setReading(false));
-              },
-              reading,
-              width < 360 ? "" : width < 600 ? "Tümünü oku" : undefined,
-            )
-          : undefined
-      }
+      subtitle="İstekler ve davetler"
+      right={fontScale <= 1.3 ? readAll : undefined}
     >
-      {!session ? (
-        <Card style={{ gap: 8 }}>
-          <Txt>
-            Bildirimlerini ve davetlerini görmek için doğrulanmış hesabınla
-            giriş yap. Yerel oyun ilerlemen korunur.
+      {!actor ? (
+        <Card style={{ gap: 12 }}>
+          <Txt size={14}>
+            Bildirimlerini görmek için hesabınla giriş yap. Yerel ilerlemen
+            korunur.
           </Txt>
           <Button
+            compact
             title="Hesaba giriş yap"
             onPress={() => router.push("/online")}
           />
         </Card>
       ) : (
-        <View style={{ gap: 8 }}>
-          <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              gap: 8,
-            }}
-          >
-            {invitations
-              ? smallLink("Bildirimlere dön", "arrow-left", () =>
-                  router.replace("/online/inbox"),
-                )
-              : smallLink("Davetlerim", "send", () =>
-                  router.push("/online/invitations"),
-                )}
-          </View>
-          {!!inbox.error && (
-            <View>
-              <Txt accessibilityRole="alert" color={theme.danger}>
-                {inbox.error}
+        <View style={{ gap: 12 }}>
+          {fontScale > 1.3 && readAll && (
+            <View style={{ alignItems: "flex-end" }}>{readAll}</View>
+          )}
+          <NotificationSectionTabs value={section} onChange={setSection} />
+          {!!(inbox.error || friends.error) && (
+            <Card style={{ gap: 8 }}>
+              <Txt size={13} accessibilityRole="alert" color={theme.danger}>
+                {inbox.error || friends.error}
               </Txt>
-              {smallLink(
-                "Bildirimleri yenile",
-                "refresh-cw",
-                () => void inbox.refresh(),
-              )}
+              <TextAction title="Yeniden Dene" onPress={refresh} />
+            </Card>
+          )}
+          {!!(notice || friends.notice) && (
+            <Txt
+              size={13}
+              accessibilityLiveRegion="polite"
+              color={theme.success}
+            >
+              {notice || friends.notice}
+            </Txt>
+          )}
+          {(!inbox.ready || friends.loading) && !inbox.error && (
+            <Txt size={13} color={theme.muted}>
+              Bildirimler yükleniyor…
+            </Txt>
+          )}
+          {inbox.ready && empty && (
+            <View style={{ paddingVertical: 24, alignItems: "center", gap: 8 }}>
+              <Icon name="bell" size={28} color={theme.accent} />
+              <Txt size={16} weight="bold">
+                {section === "requests"
+                  ? "Henüz arkadaşlık isteğin yok."
+                  : section === "invites"
+                    ? "Henüz oyun davetin yok."
+                    : "Henüz bildirim yok."}
+              </Txt>
+              <Txt size={13} color={theme.muted}>
+                Yeni gelişmeler burada görünecek.
+              </Txt>
             </View>
           )}
-          {!inbox.ready && !inbox.error && (
-            <Txt color={theme.muted}>Bildirimlerin yükleniyor…</Txt>
-          )}
-          {inbox.ready &&
-            (invitations
-              ? inbox.challenges.length === 0
-              : inbox.notifications.length === 0) && (
-              <View
-                style={{ paddingVertical: 36, alignItems: "center", gap: 8 }}
-              >
-                <View
-                  style={{
-                    padding: 18,
-                    borderRadius: 24,
-                    backgroundColor: theme.mintSurface,
-                  }}
-                >
-                  <Icon
-                    name={invitations ? "send" : "bell"}
-                    size={32}
-                    color={theme.accent}
-                  />
-                </View>
-                <Txt size={18} weight="heavy">
-                  {invitations
-                    ? "Henüz düello davetin yok."
-                    : "Henüz bildirim yok."}
-                </Txt>
-                <Txt size={13} color={theme.muted}>
-                  Yeni gelişmeler burada görünecek.
-                </Txt>
-              </View>
-            )}
-          {!invitations
-            ? newestFirst(inbox.notifications).map((n) => {
-                const copy = notificationCopy[n.kind],
-                  challenge = inbox.challenges.find(
-                    (c) => c.id === n.referenceId,
-                  ),
-                  player = challenge?.player;
+          {section === "invites"
+            ? newestFirst(inbox.challenges).map((c) => inviteCard(c))
+            : notifications.map((n) => {
+                const onOpen = () =>
+                  setSelection({ kind: "notification", notification: n });
+                const time = notificationTime(n.createdAt, now);
+                if (
+                  n.kind === "friend_request" ||
+                  n.kind === "friend_accepted"
+                ) {
+                  const friend = friends.friends.find(
+                    (f) => f.id === n.referenceId,
+                  );
+                  return (
+                    <FriendRequestCard
+                      key={n.id}
+                      friend={friend}
+                      accepted={
+                        n.kind === "friend_accepted" ||
+                        friend?.state === "accepted"
+                      }
+                      time={time}
+                      unread={!n.read}
+                      busy={friends.busy || friends.loading}
+                      onOpen={onOpen}
+                      onReply={async (accept) => {
+                        if (!friend) return;
+                        const saved = await friends.reply(friend, accept);
+                        if (alive.current && saved) {
+                          await inbox.read(n.id);
+                          await inbox.refresh();
+                        }
+                      }}
+                    />
+                  );
+                }
+                const c = inbox.challenges.find((c) => c.id === n.referenceId);
+                if (n.kind === "challenge_received" && c)
+                  return inviteCard(c, n);
+                const copy = notificationCopy[n.kind];
                 return (
-                  <Tap
+                  <NotificationCard
                     key={n.id}
-                    label={`${copy.title}, ${notificationTime(n.createdAt, now)}, ${n.read ? "okundu" : "okunmamış"}. Ayrıntıları aç`}
-                    onPress={() =>
-                      setSelection({ kind: "notification", notification: n })
+                    title={copy.title}
+                    summary={copy.summary}
+                    time={time}
+                    unread={!n.read}
+                    icon={copy.icon}
+                    tone={
+                      n.kind === "challenge_accepted" ? "success" : "neutral"
                     }
-                    style={{
-                      minHeight: 72,
-                      padding: 12,
-                      borderRadius: 16,
-                      flexDirection: "row",
-                      alignItems: "center",
-                      gap: 10,
-                      backgroundColor: n.read ? theme.card : theme.mintSurface,
-                      borderBottomWidth: 1,
-                      borderColor: theme.border,
-                    }}
-                  >
-                    {player ? (
-                      <Avatar variant={player.avatar} size={40} />
-                    ) : (
-                      <View
-                        style={{
-                          width: 40,
-                          height: 40,
-                          borderRadius: 14,
-                          alignItems: "center",
-                          justifyContent: "center",
-                          backgroundColor:
-                            copy.tone === "gold"
-                              ? theme.goldSurface
-                              : copy.tone === "rose"
-                                ? theme.roseSurface
-                                : theme.mintSurface,
-                        }}
-                      >
-                        <Icon
-                          name={copy.icon}
-                          color={
-                            copy.tone === "gold"
-                              ? theme.goldInk
-                              : copy.tone === "rose"
-                                ? theme.danger
-                                : theme.accent
-                          }
-                          size={21}
-                        />
-                      </View>
-                    )}
-                    <View style={{ flex: 1, minWidth: 0, gap: 3 }}>
-                      <Txt
-                        size={14}
-                        weight={n.read ? "bold" : "heavy"}
-                        numberOfLines={1}
-                      >
-                        {copy.title}
-                      </Txt>
-                      <Txt size={12} color={theme.muted} numberOfLines={2}>
-                        {player ? `${player.name} · ` : ""}
-                        {copy.summary}
-                      </Txt>
-                    </View>
-                    <View
-                      style={{ alignItems: "flex-end", gap: 9, maxWidth: 58 }}
-                    >
-                      <Txt size={10} color={theme.muted}>
-                        {notificationTime(n.createdAt, now)}
-                      </Txt>
-                      {!n.read && (
-                        <View
-                          style={{
-                            width: 7,
-                            height: 7,
-                            borderRadius: 4,
-                            backgroundColor: theme.accent,
-                          }}
-                        />
-                      )}
-                    </View>
-                  </Tap>
+                    onOpen={onOpen}
+                  />
                 );
-              })
-            : newestFirst(inbox.challenges).map((c) => (
-                <Tap
-                  key={c.id}
-                  label={`${c.player?.name ?? "Düello daveti"}, ${challengeStatus(c, now).title}. Ayrıntıları aç`}
-                  onPress={() =>
-                    setSelection({ kind: "challenge", challengeId: c.id })
-                  }
-                  style={{
-                    minHeight: 72,
-                    padding: 12,
-                    borderRadius: 16,
-                    flexDirection: "row",
-                    alignItems: "center",
-                    gap: 10,
-                    backgroundColor: theme.card,
-                    borderBottomWidth: 1,
-                    borderColor: theme.border,
-                  }}
-                >
-                  {c.player && <Avatar variant={c.player.avatar} size={40} />}
-                  <View style={{ flex: 1 }}>
-                    <Txt weight="heavy">
-                      {c.player?.name ?? "Düello daveti"}
-                    </Txt>
-                    <Txt size={12} color={theme.muted}>
-                      {challengeStatus(c, now).title} ·{" "}
-                      {c.incoming ? "Gelen" : "Gönderilen"}
-                    </Txt>
-                  </View>
-                  <Icon name="chevron-right" color={theme.accent} />
-                </Tap>
-              ))}
+              })}
         </View>
       )}
-      {!!selection && session && (
+      {!!selection && actor && (
         <NotificationDetail
+          key={
+            selection.kind === "notification"
+              ? selection.notification.id
+              : selection.challengeId
+          }
           selection={selection}
-          onClose={() => setSelection(null)}
+          onClose={() => {
+            setSelection(null);
+            friends.reload();
+          }}
         />
       )}
     </Page>

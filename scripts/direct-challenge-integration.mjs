@@ -153,7 +153,15 @@ const realtime = [];
 let intruderEvents = 0;
 const sockets = [];
 async function rpc(user, operation, body = {}, status = 200) {
-  return command(user, operation, body, status);
+  // Match the shipped client's explicit timing negotiation. Keep command()
+  // unmodified so legacy requests can still be exercised below.
+  const timed = ["challenge_reply", "get", "start", "answer"].includes(operation);
+  return command(
+    user,
+    operation,
+    timed ? { ...body, timingVersion: 2 } : body,
+    status,
+  );
 }
 try {
   for (let i = 0; i < users.length; i++)
@@ -261,6 +269,18 @@ try {
   assert(pending.incoming);
   assert.equal(pending.state, "pending");
   pass("challenge is idempotent, pair-unique and recipient-only");
+  const legacy = await command(
+    b,
+    "challenge_reply",
+    { challengeId: acceptedId, action: "accept" },
+    409,
+  );
+  assert.equal(legacy.error, "UPDATE_REQUIRED");
+  assert.equal(
+    (await rpc(b, "inbox")).challenges.find((d) => d.id === acceptedId).state,
+    "pending",
+  );
+  pass("legacy acceptance cannot silently enter a newly timed match");
   const accepted = await Promise.all([
     rpc(b, "challenge_reply", { challengeId: acceptedId, action: "accept" }),
     rpc(b, "challenge_reply", { challengeId: acceptedId, action: "accept" }),
@@ -286,6 +306,13 @@ try {
   await rpc(a, "invite", { matchId }, 409);
   second = await rpc(b, "start", { matchId });
   first = await rpc(a, "start", { matchId });
+  for (const turn of [first, second]) {
+    assert.equal(turn.answerSeconds, 20);
+    assert.equal(
+      Date.parse(turn.deadline) - Date.parse(turn.questionOpenedAt),
+      20_000,
+    );
+  }
   assert.deepEqual(first.questions, second.questions);
   assert.equal(first.questions.length, 10);
   assert(!JSON.stringify(first.questions).includes("correctOptionId"));

@@ -1,0 +1,108 @@
+[
+  {
+    "suite": "social",
+    "passLabels": [
+      "PASS persistent Auth accounts accepted",
+      "PASS invalid, uppercase, reserved and inappropriate usernames rejected on server",
+      "PASS atomic uniqueness and concurrent rename race",
+      "PASS real search excludes private profiles, wildcard injection and private fields",
+      "PASS self, duplicate, hidden target and unauthorized operations denied; rejection works",
+      "PASS accept, privacy toggle, friends list and removal work",
+      "PASS hourly friend quota survives request deletion",
+      "PASS default-deny forced RLS and service-only RPC",
+      "PASS malformed identifiers consume quota and cannot bypass throttling",
+      "PASS server request quota enforced",
+      "PASS score ledger unchanged; no client XP accepted"
+    ],
+    "rawLocalLogSha256": "a6155c2c9f96bae41b58d3a4af2461c62ba980fdc078e5da85366d823345e82d",
+    "environment": "isolated-local-synthetic-only"
+  },
+  {
+    "suite": "challenge",
+    "passLabels": [
+      "PASS self, hidden opponent and malformed challenge rejected",
+      "PASS challenge is idempotent, pair-unique and recipient-only",
+      "PASS concurrent acceptance creates exactly one shared match; both players start independently",
+      "PASS ten locked answers per player produce one authoritative result and ledger; no early answer disclosure",
+      "PASS decline, sender cancellation and expiry prevent match creation",
+      "PASS durable inbox, result notifications and owner-only read acknowledgement",
+      "PASS server challenge quota and service-only command enforced",
+      "PASS verified public enrollment is gated and idempotent; anonymous and revoked accounts cannot enroll"
+    ],
+    "rawLocalLogSha256": "5dd8cb289f281dae7e92544f45db8254ea234d6d8a6568ec2f14deed3d187d58",
+    "environment": "isolated-local-synthetic-only"
+  },
+  {
+    "suite": "leaderboard",
+    "passLabels": [
+      "PASS Disabled ranking leaves legacy duel API available (non-destructive rollback)",
+      "PASS Auth required; actor/score spoofing rejected by actual Edge",
+      "PASS Existing completed duel projects exact canonical XP and self rank",
+      "PASS HTTP keyset page has no duplicate",
+      "PASS Pending excluded; accepted friend alone appears",
+      "PASS Opt-out takes effect across accounts immediately",
+      "PASS Own hidden rank is null, not an estimate",
+      "PASS REST cannot invoke service-only SQL RPC with another actor"
+    ],
+    "rawLocalLogSha256": "af8ff4d9ea0e3d089e6902b8efbf0908f867ba5870accf9e51c523523c321b6c",
+    "environment": "isolated-local-synthetic-only"
+  },
+  {
+    "suite": "live",
+    "passLabels": [
+      "PASS three independent verified Auth sessions",
+      "PASS server catalog and exact independent-pool eligibility",
+      "PASS private join, membership, host-only settings, closed seasonal content",
+      "PASS settings reset all ready flags",
+      "PASS private Realtime membership and Presence authorization",
+      "PASS two ready players and server three-second countdown",
+      "PASS transport disconnect, lost response and idempotent reconnect",
+      "PASS ten real 15-second questions, synchronized order, deadline/key gates, 900/700 server scores",
+      "PASS server reward, winner bonus and sourced own-answer review",
+      "PASS completed answer replay cannot change scores or grant XP twice",
+      "PASS equal first-place ranks, no arbitrary winner or win bonus",
+      "PASS server broadcast delivered to separate authenticated session",
+      "PASS service-only command rejects authenticated direct-RPC impersonation"
+    ],
+    "rawLocalLogSha256": "7a17f61ab22bfb192e10c3d331c8259516672201372526313481ba0e0c4a4ada",
+    "environment": "isolated-local-synthetic-only"
+  },
+  {
+    "suite": "data-isolation",
+    "passLabels": [
+      "PASS private RLS, credential columns and privileged RPC grants",
+      "PASS anonymous account, notification and answer-key denial",
+      "PASS A/B RLS isolation, write denial and Realtime membership",
+      "PASS cross-user match, room, inbox and public profile field isolation",
+      "PASS all synthetic SQL fixtures and counters rolled back",
+      "PASS two real local Auth sessions with separate verified identities",
+      "PASS Auth own-account identity and safe Edge self profile",
+      "PASS missing JWT and forged B identity rejected by actual Edge",
+      "PASS A cannot supply B as actor in top-level or operation body",
+      "PASS real A JWT cannot read B notifications through PostgREST",
+      "PASS private schemas, direct actor RPC and Auth admin list denied",
+      "PASS sign-out invalidates each local session refresh token"
+    ],
+    "rawLocalLogSha256": "7eed3b0584913cd48c5fd57268efe7007f08a2a713fd4cafe98a5c204020e71c",
+    "environment": "isolated-local-synthetic-only"
+  },
+  {
+    "suite": "account-delete-http",
+    "passLabels": [
+      "PASS 8-character compliant passwords accepted by real local Auth; sessions created",
+      "PASS real Auth rejects 7-character change and accepts 8-character change",
+      "PASS disabled deletion fails closed, not a false success",
+      "PASS wrong password rejected",
+      "PASS injected different actor rejected",
+      "PASS genuinely expired locally signed JWT rejected",
+      "PASS real Edge deletion succeeds only after server verification",
+      "PASS Auth identity, profile, sessions and refresh rows removed",
+      "PASS deleted identity cannot sign in or refresh",
+      "PASS replay of deleted account request safely rejected",
+      "PASS other synthetic identity and exact profile hash unchanged",
+      "PASS control fixture cleaned through same verified Edge flow"
+    ],
+    "rawLocalLogSha256": "cf39ecc9e458a1ece0f8a5508ed125491afb054a1e173490061cf7130c9c0142",
+    "environment": "isolated-local-synthetic-only"
+  }
+]

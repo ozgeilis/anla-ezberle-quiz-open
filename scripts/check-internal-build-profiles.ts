@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 export interface InternalProfile {
+  extends?: string;
   distribution?: string;
   developmentClient?: boolean;
   environment?: string;
@@ -18,7 +19,7 @@ export interface InternalEasConfig {
 
 /**
  * Keeps internal builds isolated and permits the explicitly prepared store profile.
- * The separate pre-install gate requires owner/package/physical APK approval.
+ * The separate pre-install gate requires owner/package/profile and documented APK acceptance.
  * This is not an EAS schema
  * validator and does not inspect remote Expo credentials or device signing.
  */
@@ -31,10 +32,48 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
     return [...issues, "Missing build profiles"];
 
   const expected = ["development", "development-simulator", "preview"];
+  const adsProfiles = {
+    "ads-preview": "preview",
+    "ads-development": "development",
+    "ads-closed-test": "production",
+  };
   for (const name of Object.keys(build)) {
-    if (!expected.includes(name) && name !== "production")
+    if (
+      !expected.includes(name) &&
+      name !== "production" &&
+      !(name in adsProfiles)
+    )
       issues.push(`Unexpected build profile: ${name}`);
   }
+  for (const [name, parent] of Object.entries(adsProfiles)) {
+    const profile = build[name];
+    if (
+      profile &&
+      (profile.extends !== parent ||
+        Object.keys(profile).some(
+          (key) =>
+            key !== "extends" &&
+            key !== "env" &&
+            !(name === "ads-closed-test" && key === "environment"),
+        ) ||
+        (name === "ads-closed-test" && profile.environment !== "preview") ||
+        profile.env?.ADS_MODE !== "test" ||
+        profile.env?.ADS_TEST_BUILD !== "1" ||
+        Object.keys(profile.env ?? {}).some(
+          (key) =>
+            !["ADS_MODE", "ADS_TEST_BUILD", "ADMOB_ANDROID_APP_ID"].includes(
+              key,
+            ),
+        ) ||
+        (profile.env?.ADMOB_ANDROID_APP_ID !== undefined &&
+          !/^ca-app-pub-\d{16}~\d{10}$/.test(profile.env.ADMOB_ANDROID_APP_ID)))
+    )
+      issues.push(
+        `${name}: only an isolated test-ad extension of the reviewed parent profile is permitted`,
+      );
+  }
+  if (build["ads-closed-test"] && !build.production)
+    issues.push("ads-closed-test: guarded production parent is required");
   for (const name of expected) {
     const profile = build[name];
     if (!profile || typeof profile !== "object") {

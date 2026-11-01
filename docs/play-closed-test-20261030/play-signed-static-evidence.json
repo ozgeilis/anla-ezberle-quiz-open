@@ -1,0 +1,330 @@
+{
+  "source": "Google Play Console artifact4860246409878635835 download: signed universal APK",
+  "downloadedDate": "2026-10-31",
+  "versionCode": 2,
+  "sizeBytes": 114735904,
+  "sha256": "521cf17d853426b45ecc3684e098f3303eaa8a721aaa6cef6cc2cd0ade763763",
+  "apksignerExit": "PASS",
+  "signatureDetails": [
+    "Verifies",
+    "Verified using v1 scheme (JAR signing): false",
+    "Verified using v2 scheme (APK Signature Scheme v2): true",
+    "Verified using v3 scheme (APK Signature Scheme v3): true",
+    "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+    "Verified using v3.2 scheme (APK Signature Scheme v3.2): true",
+    "Verified using v4 scheme (APK Signature Scheme v4): false",
+    "V3.2 Hybrid Classical Signer: (minSdkVersion=37, maxSdkVersion=2147483647) certificate SHA-256 digest: 9049c7b712781fb7fdd4d2143dcc479cd2fb1d1ec8d61ea1a37d51c19b3aa164",
+    "V3.2 Hybrid PQC Signer: (minSdkVersion=37, maxSdkVersion=2147483647) certificate SHA-256 digest: 124f0747430736b49fb7f3043c86758fd7564f18e293722de2e9053aa69d5ed6",
+    "V3.0 Signer: certificate SHA-256 digest: c6f523d89762d832ce131e49602c8917d965ce5257f0ea57ac03df6ccd851675",
+    "Source Stamp Signer: certificate SHA-256 digest: 3257d599a49d2c961a471ca9843f59d341a405884583fc087df4237b733bbd6d"
+  ],
+  "runtimeTested": false,
+  "installedOverExistingApplication": false,
+  "hermesMatchesAuthorizedAab": true,
+  "native64": [
+    {
+      "name": "lib/arm64-v8a/libappmodules.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libc++_shared.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-core.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-jsi.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-v2.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-worklets.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libfbjni.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libgesturehandler.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libgifimage.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libhermestooling.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libhermesvm.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libimagepipeline.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libjsi.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libnative-filters.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libnative-imagetranscoder.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreactnative.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreanimated.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/librnscreens.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libstatic-webp.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libworklets.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/arm64-v8a/libzstd-kmp.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libappmodules.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libc++_shared.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-core.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-jsi.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-v2.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-worklets.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libfbjni.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libgesturehandler.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libgifimage.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libhermestooling.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libhermesvm.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libimagepipeline.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libjsi.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libnative-filters.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libnative-imagetranscoder.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_rnscreens.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_rnsvg.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_safeareacontext.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libreactnative.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libreanimated.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/librnscreens.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libstatic-webp.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libworklets.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    },
+    {
+      "name": "lib/x86_64/libzstd-kmp.so",
+      "aligned16KB": true,
+      "matchesAuthorizedAab": true
+    }
+  ],
+  "zipAlignment16KB": "PASS",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.READ_APP_BADGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.USE_BIOMETRIC",
+    "android.permission.USE_FINGERPRINT",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.anddoes.launcher.permission.UPDATE_COUNT",
+    "com.android.vending.CHECK_LICENSE",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.htc.launcher.permission.READ_SETTINGS",
+    "com.htc.launcher.permission.UPDATE_SHORTCUT",
+    "com.huawei.android.launcher.permission.CHANGE_BADGE",
+    "com.huawei.android.launcher.permission.READ_SETTINGS",
+    "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+    "com.kovynelstudio.anlaezberle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.majeur.launcher.permission.UPDATE_BADGE",
+    "com.oppo.launcher.permission.READ_SETTINGS",
+    "com.oppo.launcher.permission.WRITE_SETTINGS",
+    "com.sec.android.provider.badge.permission.READ",
+    "com.sec.android.provider.badge.permission.WRITE",
+    "com.sonyericsson.home.permission.BROADCAST_BADGE",
+    "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE",
+    "me.everything.badger.permission.BADGE_COUNT_READ",
+    "me.everything.badger.permission.BADGE_COUNT_WRITE"
+  ],
+  "addedPermissionsByPlayProcessing": ["com.android.vending.CHECK_LICENSE"],
+  "removedPermissionsByPlayProcessing": [],
+  "consolePageSizeSupport": "16 KB supported; runtime kernel not tested",
+  "blockedPermissionsAbsent": [
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.SYSTEM_ALERT_WINDOW"
+  ]
+}

@@ -9,6 +9,7 @@ import {
   verifiedAccount,
   AUTH_EMAIL_COOLDOWN_SECONDS,
 } from "./account";
+import { startGoogleAuth, clearGoogleAttempt } from "./googleAuth";
 import { authRedirectUrl } from "./authLinks";
 import React, {
   createContext,
@@ -33,6 +34,8 @@ interface AuthValue {
   resetPassword: (email: string) => Promise<void>;
   updatePassword: (password: string) => Promise<void>;
   registrationEnabled: boolean;
+  googleEnabled: boolean;
+  signInGoogle: () => Promise<void>;
   completeAccountDeletion: (actor: string) => Promise<void>;
 }
 const Context = createContext<AuthValue | null>(null);
@@ -42,16 +45,28 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
   const [ready, setReady] = useState(!onlineConfigured);
   const [notice, setNotice] = useState("");
   const [registrationEnabled, setRegistrationEnabled] = useState(false);
+  const [googleEnabled, setGoogleEnabled] = useState(false);
   useEffect(() => {
     const client = onlineClient();
     if (!client) return;
     let alive = true;
+    let authRevision = 0;
     client.rpc("online_service_capabilities").then(({ data }) => {
       if (alive) setRegistrationEnabled(data?.registrationEnabled === true);
+    });
+    client.rpc("google_auth_capabilities").then(({ data, error }) => {
+      if (alive)
+        setGoogleEnabled(
+          !error &&
+            data?.googleOAuthEnabled === true &&
+            data?.googleDeletionEnabled === true,
+        );
     });
     client.auth.startAutoRefresh();
     const { data: listener } = client.auth.onAuthStateChange((event, next) => {
       if (!alive) return;
+      authRevision++;
+      setReady(true);
       setSession(verifiedAccount(next?.user) ? next : null);
       setNeedsVerification(
         !!next?.user &&
@@ -61,10 +76,11 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
       if (event === "SIGNED_OUT")
         setNotice("Çevrimiçi oturum kapandı. Yerel kayıtların korunuyor.");
     });
+    const initialRevision = authRevision;
     client.auth
       .getSession()
       .then(({ data, error }) => {
-        if (!alive) return;
+        if (!alive || initialRevision !== authRevision) return;
         if (error)
           setNotice("Güvenli oturum okunamadı. Yeniden giriş gerekli.");
         else {
@@ -101,6 +117,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
   const signIn = async (email: string, password: string) => {
     const client = onlineClient();
     if (!client) throw new Error("Servis yapılandırılmadı.");
+    await clearGoogleAttempt();
     const { error } = await client.auth.signInWithPassword({
       email: email.trim(),
       password,
@@ -123,6 +140,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
       key,
       Date.now() + AUTH_EMAIL_COOLDOWN_SECONDS * 1000,
     );
+    await clearGoogleAttempt();
     await action();
   };
   const signUp = async (email: string, password: string) => {
@@ -166,7 +184,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     if (!client) throw new Error("Servis yapılandırılmadı.");
     await sendEmail(email, async () => {
       const { error } = await client.auth.resetPasswordForEmail(email.trim(), {
-        redirectTo: authRedirectUrl(),
+        redirectTo: authRedirectUrl("recovery"),
       });
       if (error) throw new Error(authFailureMessage(error, true));
     });
@@ -180,6 +198,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     if (error) throw new Error(authFailureMessage(error));
   };
   const signOut = async () => {
+    await clearGoogleAttempt().catch(() => {});
     if (session) {
       await revokePushBeforeSignOut(session.user.id);
       await clearPushNavigation(session.user.id).catch(() => {});
@@ -189,6 +208,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     setSession(null);
   };
   const completeAccountDeletion = async (actor: string) => {
+    await clearGoogleAttempt().catch(() => {});
     // Push navigation metadata must never block the existing secure auth cleanup.
     await clearPushNavigation(actor).catch(() => {});
     const client = onlineClient();
@@ -225,6 +245,8 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
         resendVerification,
         updatePassword,
         registrationEnabled,
+        googleEnabled,
+        signInGoogle: () => startGoogleAuth(googleEnabled),
         completeAccountDeletion,
       }}
     >

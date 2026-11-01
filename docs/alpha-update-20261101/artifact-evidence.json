@@ -1,0 +1,296 @@
+{
+  "status": "STATIC_VALIDATION_PASS",
+  "buildId": "6e07ccb8-b259-4d18-9965-8e2c249aebf7",
+  "sourceCommit": "ba47975f7976954fc51339b3b722424b7ac0f57e",
+  "profile": "ads-closed-test",
+  "sha256": "3ebf000c7291269663a41dd1d0e631d06d77e35bf3f2943d425f6c2292022ae9",
+  "sizeBytes": 85960043,
+  "manifest": {
+    "package": "com.kovynelstudio.anlaezberle",
+    "versionCode": "5",
+    "versionName": "0.1.0",
+    "minSdk": "24",
+    "targetSdk": "36",
+    "debuggable": "false"
+  },
+  "permissionsUnchangedFromCode2": true,
+  "jarSignature": "PASS",
+  "certificateSha256": "6df507f045b6d7fee9147153cf815b36a0c4b072f2b55b6dcd6dda54486352b7",
+  "uploadCertificateUnchanged": true,
+  "native64Count": 52,
+  "native64All16KB": true,
+  "native64": [
+    {
+      "name": "base/lib/arm64-v8a/libappmodules.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libc++_shared.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libdatastore_shared_counter.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-core.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-jsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-v2.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libexpo-modules-worklets.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libfbjni.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libgesturehandler.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libgifimage.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libhermestooling.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libhermesvm.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libimagepipeline.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libjsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libnative-filters.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libnative-imagetranscoder.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreactnative.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libreanimated.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/librnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libstatic-webp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libworklets.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/arm64-v8a/libzstd-kmp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libappmodules.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libc++_shared.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libdatastore_shared_counter.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-core.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-jsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-v2.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libexpo-modules-worklets.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libfbjni.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libgesturehandler.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libgifimage.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libhermestooling.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libhermesvm.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libimagepipeline.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libjsi.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libnative-filters.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libnative-imagetranscoder.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_rnsvg.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreact_codegen_safeareacontext.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreactnative.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libreanimated.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/librnscreens.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libstatic-webp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libworklets.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    },
+    {
+      "name": "base/lib/x86_64/libzstd-kmp.so",
+      "aligned16KB": true,
+      "matchesCode2": true
+    }
+  ],
+  "bundleConfig16KB": true,
+  "hermesMatchesCode2": false,
+  "hermesSha256": "144365444336f8b2bf740fedde710dd4654d530c4a34a35cfedac3a8389c317b",
+  "schemePreserved": true,
+  "credentialPatternScan": "PASS; static pattern check is not a complete secret audit",
+  "nativeRuntime": "PASS actual AAB-derived debug-signed emulator package; preserve data, 20s, background deadline, >10s answer, result handoff",
+  "playUpload": false,
+  "physicalDeviceTested": false,
+  "hermesMatchesAcceptedQa": true,
+  "acceptedQaSha256": "26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014",
+  "native64MatchesAcceptedQa": false,
+  "nativeDifferenceNote": "Cloud native binaries rebuilt; exact JS match verified. Actual AAB-derived emulator runtime tested separately."
+}

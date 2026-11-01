@@ -26,6 +26,7 @@ export class SoundController {
   private prefsReady = false;
   private backendReady = false;
   private active = true;
+  private interrupted = false;
   private unlocked: boolean;
   private disposed = false;
   private route = "";
@@ -77,6 +78,12 @@ export class SoundController {
     if (!active) {
       this.stopEffects();
     }
+  }
+  // External native ad/consent presentation. Clear queued effects; do not
+  // change foreground state or replay old effects when the interruption ends.
+  setInterrupted(interrupted: boolean) {
+    this.interrupted = interrupted;
+    if (interrupted) this.stopEffects();
   }
   setRoute(route: string) {
     if (route === this.route) return;
@@ -141,6 +148,7 @@ export class SoundController {
       this.backendReady &&
       this.prefsReady &&
       this.active &&
+      !this.interrupted &&
       this.unlocked &&
       this.preferences.effectsEnabled &&
       this.preferences.effectsVolume > 0 &&

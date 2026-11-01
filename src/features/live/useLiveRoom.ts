@@ -10,6 +10,7 @@ import {
   OnlineError,
 } from "../online/client";
 import type { RoomOperation } from "../online/types";
+import { subscribeRealtime } from "../online/realtimeSubscription";
 import type {
   LiveRoom,
   LivePending,
@@ -242,23 +243,36 @@ export function useLiveRoom(
       const client = onlineClient();
       if (!client) return;
       let cancelled = false;
-      const channel = client.channel(`live:${roomId}`, {
-        config: { private: true, presence: { key: actor } },
-      });
-      channel
-        .on("broadcast", { event: "changed" }, () => void refresh())
-        .on("presence", { event: "sync" }, () => {
-          if (!cancelled) setConnection("Canlı bağlantı");
-        })
-        .subscribe((status) => {
-          if (cancelled) return;
-          if (status === "SUBSCRIBED") {
-            setConnection("Canlı bağlantı");
-            void channel.track({ connected: true });
-            void refresh();
-          } else if (["CHANNEL_ERROR", "TIMED_OUT", "CLOSED"].includes(status))
-            setConnection("Sunucudan yenileniyor");
-        });
+      const stopRealtime = subscribeRealtime(
+        client,
+        `live:${roomId}`,
+        {
+          config: { private: true, presence: { key: actor } },
+        },
+        (channel) => {
+          channel
+            .on("broadcast", { event: "changed" }, () => {
+              if (!cancelled) void refresh();
+            })
+            .on("presence", { event: "sync" }, () => {
+              if (!cancelled) setConnection("Canlı bağlantı");
+            })
+            .subscribe((status) => {
+              if (cancelled) return;
+              if (status === "SUBSCRIBED") {
+                setConnection("Canlı bağlantı");
+                void channel.track({ connected: true });
+                void refresh();
+              } else if (
+                ["CHANNEL_ERROR", "TIMED_OUT", "CLOSED"].includes(status)
+              )
+                setConnection("Sunucudan yenileniyor");
+            });
+        },
+        () => {
+          if (!cancelled) setConnection("Sunucudan yenileniyor");
+        },
+      );
       const timer = setInterval(() => {
         if (
           Platform.OS === "web"
@@ -283,7 +297,7 @@ export function useLiveRoom(
           window.removeEventListener("online", resume);
           window.removeEventListener("focus", resume);
         }
-        void client.removeChannel(channel);
+        stopRealtime();
       };
     }, [actor, roomId, room?.state, refresh]),
   );

@@ -17,7 +17,13 @@ if (
 )
   throw Error("Private output outside repository required");
 mkdirSync(output, { recursive: true, mode: 0o700 });
-const container = "supabase_db_anla-ezberle-quiz-dev-local";
+// Follow the configured ephemeral project instead of a developer's old AVD
+// workspace. CI starts exactly this project and has no hosted credentials.
+const projectId = readFileSync("supabase/config.toml", "utf8").match(
+  /^project_id\s*=\s*"([a-zA-Z0-9_-]+)"/m,
+)?.[1];
+if (!projectId) throw Error("Local Supabase project_id is missing");
+const container = `supabase_db_${projectId}`;
 const db = `anla_canonical_v73_${Date.now()}`;
 const docker = (args: string[], input?: string) => {
   const result = spawnSync("docker", args, {
@@ -47,6 +53,15 @@ const sql = (query: string, database = db) =>
     query,
   );
 try {
+  if (
+    sql(
+      "SELECT to_regclass('storage.s3_multipart_uploads') IS NOT NULL;",
+      "postgres",
+    ).trim() !== "t"
+  )
+    throw Error(
+      "Local Storage must be initialized for account erasure assertions",
+    );
   const schema = docker([
     "exec",
     container,
@@ -131,6 +146,72 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
     "live_erasure_guard.sql",
   ])
     console.log(sql(readFileSync(`supabase/tests/${file}`, "utf8")));
+  sql(readFileSync("supabase/tests/timing_before.sql", "utf8"));
+  sql(
+    readFileSync(
+      "supabase/migrations/20261101053234_twenty_second_questions.sql",
+      "utf8",
+    ),
+  );
+  console.log(
+    sql(readFileSync("supabase/tests/twenty_second_questions.sql", "utf8")),
+  );
+  sql(
+    readFileSync(
+      "supabase/migrations/20261101131615_direct_challenge_timing_protocol.sql",
+      "utf8",
+    ),
+  );
+  console.log(
+    sql(readFileSync("supabase/tests/direct_challenge_timing.sql", "utf8")),
+  );
+  sql(
+    readFileSync(
+      "supabase/migrations/20261027000200_google_auth_closed_candidate.sql",
+      "utf8",
+    ),
+  );
+  sql(
+    readFileSync(
+      "supabase/migrations/20261101054043_google_signup_test_allowlist.sql",
+      "utf8",
+    ),
+  );
+  console.log(
+    sql(
+      readFileSync("supabase/tests/google_signup_test_allowlist.sql", "utf8"),
+    ),
+  );
+  // Only derived display levels may change; hash complete synthetic row data.
+  const snapshotSql = `SELECT jsonb_build_object(
+    'profiles',(SELECT jsonb_agg(to_jsonb(p) ORDER BY id) FROM quiz_private.player_profiles p),
+    'scores',(SELECT jsonb_agg(to_jsonb(s) ORDER BY match_id,player_id) FROM quiz_private.score_ledger s),
+    'liveRewards',(SELECT jsonb_agg(to_jsonb(r) ORDER BY room_id,player_id) FROM quiz_private.live_rewards r),
+    'matches',(SELECT jsonb_agg(to_jsonb(m) ORDER BY id) FROM quiz_private.matches m),
+    'awards',(SELECT jsonb_agg(to_jsonb(a) ORDER BY player_id,badge_id) FROM quiz_private.achievement_awards a))::text;`;
+  const levelRowsBefore = sql(snapshotSql);
+  sql(
+    readFileSync(
+      "supabase/migrations/20261101065301_progressive_player_levels.sql",
+      "utf8",
+    ),
+  );
+  console.log(
+    sql(readFileSync("supabase/tests/progressive_player_levels.sql", "utf8")),
+  );
+  if (sql(snapshotSql) !== levelRowsBefore)
+    throw Error(
+      "Display level migration changed existing synthetic player/game rows",
+    );
+  // pg_dump --no-owner restores as supabase_admin. The production erasure
+  // trigger is postgres-owned and its existing guards require that exact role.
+  // Align only this throwaway harness; no hosted role/grant is changed.
+  sql(`GRANT USAGE ON SCHEMA quiz_private,auth,storage TO postgres;
+GRANT ALL ON ALL TABLES IN SCHEMA quiz_private,auth,storage TO postgres;
+GRANT ALL ON ALL SEQUENCES IN SCHEMA quiz_private,auth,storage TO postgres;
+GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA quiz_private TO postgres;
+ALTER FUNCTION quiz_private.erase_authorized_player() OWNER TO postgres;`);
+  console.log(sql(readFileSync("supabase/tests/account_deletion.sql", "utf8")));
   console.log(
     `PASS isolated v72/v73 database ${db}; schema only, historical fixtures, both canonical releases, immutable keys and SQL acceptance. No remote contact.`,
   );

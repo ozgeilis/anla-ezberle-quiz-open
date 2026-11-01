@@ -1,5 +1,6 @@
 import { createClient } from "npm:@supabase/supabase-js@2.118.0";
 import { deletionHandler } from "./handler.ts";
+import { googleOtpProof } from "./googleOtp.ts";
 import { eraseAccount } from "./erase.ts";
 // Same server-managed key resolution as the duel API; never bundled with Expo.
 function key(map: string, single: string, legacy: string) {
@@ -37,6 +38,60 @@ Deno.serve(async (req: Request) => {
     );
     try {
       return await deletionHandler({
+        googleOtp:
+          Deno.env.get("GOOGLE_ACCOUNT_DELETION_ENABLED") === "true"
+            ? googleOtpProof({
+                async create(actor) {
+                  const admin = createClient(
+                    Deno.env.get("SUPABASE_URL")!,
+                    key(
+                      "SUPABASE_SECRET_KEYS",
+                      "SUPABASE_SECRET_KEY",
+                      "SUPABASE_SERVICE_ROLE_KEY",
+                    ),
+                    options,
+                  );
+                  const { data, error } = await admin.rpc(
+                    "begin_google_deletion",
+                    { actor },
+                  );
+                  if (error || typeof data !== "string")
+                    throw Error("REAUTH_UNAVAILABLE");
+                  return data;
+                },
+                async send(email) {
+                  const { error } = await client.auth.signInWithOtp({
+                    email,
+                    options: { shouldCreateUser: false },
+                  });
+                  return !error;
+                },
+                async claim(actor, challenge) {
+                  const admin = createClient(
+                    Deno.env.get("SUPABASE_URL")!,
+                    key(
+                      "SUPABASE_SECRET_KEYS",
+                      "SUPABASE_SECRET_KEY",
+                      "SUPABASE_SERVICE_ROLE_KEY",
+                    ),
+                    options,
+                  );
+                  const { data, error } = await admin.rpc(
+                    "claim_google_deletion",
+                    { actor, challenge },
+                  );
+                  return !error && data === true;
+                },
+                async verify(email, token) {
+                  const { data, error } = await client.auth.verifyOtp({
+                    email,
+                    token,
+                    type: "email",
+                  });
+                  return error ? null : (data.user?.id ?? null);
+                },
+              })
+            : undefined,
         async user(jwt) {
           const { data, error } = await client.auth.getUser(jwt);
           return error || !data.user
@@ -46,6 +101,9 @@ Deno.serve(async (req: Request) => {
                 email: data.user.email,
                 verified: !!data.user.email_confirmed_at,
                 anonymous: data.user.is_anonymous,
+                google:
+                  data.user.identities?.some((i) => i.provider === "google") ===
+                  true,
               };
         },
         async reauthenticate(email, password) {

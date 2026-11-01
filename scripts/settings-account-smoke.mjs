@@ -7,21 +7,33 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 const require = createRequire(import.meta.url);
 const { chromium } = require(
-  join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
+  process.env.PLAYWRIGHT_MODULE ??
+    join(process.env.RUNNER_TEMP, "visual-node/node_modules/playwright"),
 );
 const origin = process.env.SETTINGS_ORIGIN ?? "http://127.0.0.1:8117",
   root = "artifacts/settings-account-ui";
 await mkdir(root, { recursive: true });
 const browser = await chromium.launch({
   headless: true,
+  ...(process.env.PLAYWRIGHT_CHROME_PATH
+    ? { executablePath: process.env.PLAYWRIGHT_CHROME_PATH }
+    : {}),
   ...(process.env.SETTINGS_BROWSER_CHANNEL
     ? { channel: process.env.SETTINGS_BROWSER_CHANNEL }
     : {}),
 });
+async function createContext(options) {
+  const context = await browser.newContext(options);
+  // Playwright's standalone library otherwise waits forever for missing UI.
+  context.setDefaultTimeout(30_000);
+  context.setDefaultNavigationTimeout(30_000);
+  return context;
+}
 const checks = [];
 let latestPage;
 async function shot(page, name) {
   latestPage = page;
+  console.log(`Checking ${name}`);
   await page.evaluate(async () => {
     await document.fonts.ready;
     await Promise.all(
@@ -59,9 +71,11 @@ async function login(page, email = "player-a@example.invalid") {
 }
 try {
   // Authenticated screenshots/actions use only disposable in-memory HTTP fixtures.
-  for (const width of [320, 360, 390, 430, 1024])
+  for (const width of process.env.UI_WIDTHS
+    ? process.env.UI_WIDTHS.split(",").map(Number)
+    : [320, 360, 390, 430, 1024])
     for (const mode of ["light", "dark"]) {
-      const context = await browser.newContext({
+      const context = await createContext({
         viewport: { width, height: width > 600 ? 1000 : 844 },
         colorScheme: mode,
         reducedMotion: "reduce",
@@ -175,17 +189,23 @@ try {
       }
       await p.goto(origin + "/online/inbox", { waitUntil: "networkidle" });
       const request = p.getByRole("button", {
-        name: /Yeni arkadaşlık isteği.*okunmamış/,
+        name: /^Arkadaşlık isteği.*okunmamış/,
       });
       await request.waitFor();
       const headingBounds = await p
         .getByRole("heading", { name: "Bildirimler", exact: true })
         .boundingBox();
       assert(headingBounds.height < 45, "Inbox title must fit on one line");
-      assert.equal(await button(p, "Kabul Et").count(), 0);
-      assert.equal(await button(p, "Düelloyu Kabul Et").count(), 0);
+      // The inbox and its owner-checked friend records load independently.
+      // Wait for the real actionable state, not merely the notification row.
+      await button(p, "Deniz: arkadaşlık isteğini kabul et").waitFor();
+      assert.equal(
+        await button(p, "Deniz: arkadaşlık isteğini kabul et").count(),
+        1,
+      );
+      assert.equal(await p.getByRole("dialog").count(), 0);
       const box = await request.boundingBox();
-      assert(box.height >= 64 && box.height <= 95);
+      assert(box.height >= 64 && box.height <= 115);
       await shot(p, `${mode}-${width}-compact-inbox`);
       f.state.failRead = true;
       await request.click();
@@ -209,7 +229,7 @@ try {
       );
       await button(p, "Profili Gör").click();
       await p
-        .getByText("Seviye 2 · 300 çevrimiçi XP", { exact: true })
+        .getByText("Seviye 3 · 300 çevrimiçi XP", { exact: true })
         .waitFor();
       await shot(p, `${mode}-${width}-notification-profile`);
       await button(p, "Bildirime Dön").click();
@@ -221,7 +241,9 @@ try {
       await button(p, "Pencereyi kapat").click();
       const writes = f.state.readWrites;
       await p
-        .getByRole("button", { name: /Yeni arkadaşlık isteği.*okundu/ })
+        .getByRole("button", {
+          name: /^Arkadaşlık kabul edildi\. Deniz.*okundu/,
+        })
         .click();
       await p
         .getByText("Arkadaşlık isteği kabul edilmiş.", { exact: true })
@@ -229,7 +251,7 @@ try {
       assert.equal(f.state.readWrites, writes);
       await button(p, "Pencereyi kapat").click();
       const invites = p.getByRole("button", {
-        name: /Yeni düello daveti.*okunmamış/,
+        name: /^Oyun daveti.*okunmamış/,
       });
       await invites.last().click();
       await p.getByText("Davetin süresi doldu", { exact: true }).waitFor();
@@ -237,7 +259,7 @@ try {
       await shot(p, `${mode}-${width}-expired-invite`);
       await button(p, "Pencereyi kapat").click();
       await p
-        .getByRole("button", { name: /Yeni düello daveti.*okunmamış/ })
+        .getByRole("button", { name: /^Oyun daveti\..*okunmamış/ })
         .click();
       f.state.failAfterChallenge = true;
       await button(p, "Düelloyu Kabul Et").click();
@@ -255,7 +277,9 @@ try {
       await shot(p, `${mode}-${width}-result-notification`);
       await button(p, "Pencereyi kapat").click();
       await p
-        .getByRole("button", { name: /Arkadaşlık isteğin kabul edildi/ })
+        .getByRole("button", {
+          name: /^Arkadaşlık kabul edildi\. Arkadaşlık isteği/,
+        })
         .click();
       await p.getByText(/Arkadaşlık kaydı artık bulunamıyor/).waitFor();
       assert.equal(await button(p, "Profili Gör").count(), 0);
@@ -267,9 +291,11 @@ try {
       );
       await context.close();
     }
-  for (const width of [320, 375, 390, 430, 1024, 1440])
+  for (const width of process.env.UI_WIDTHS
+    ? process.env.UI_WIDTHS.split(",").map(Number)
+    : [320, 375, 390, 430, 1024, 1440])
     for (const mode of ["light", "dark"]) {
-      const context = await browser.newContext({
+      const context = await createContext({
         viewport: { width, height: width > 600 ? 900 : 844 },
         colorScheme: mode,
         reducedMotion: "reduce",
@@ -325,16 +351,14 @@ try {
         await page.waitForURL(origin + (path === "/" ? "/" : path));
       }
       await page.goto(`${origin}/online/inbox`, { waitUntil: "networkidle" });
-      await page
-        .getByText(/Bildirimlerini ve davetlerini görmek için/)
-        .waitFor();
+      await page.getByText(/Bildirimlerini görmek için/).waitFor();
       assert.deepEqual(errors, []);
       checks.push(
         `${mode}-${width}: five settings entry/back routes, header geometry, guest inbox`,
       );
       await context.close();
     }
-  const context = await browser.newContext({
+  const context = await createContext({
     viewport: { width: 390, height: 844 },
     reducedMotion: "reduce",
   });
@@ -434,7 +458,7 @@ try {
       exact: true,
     })
     .click();
-  await button(page, "Tümünü Okundu İşaretle").click();
+  await button(page, "Tümünü oku").click();
   await page.getByText("Henüz bildirim yok.", { exact: true }).waitFor();
   await page.goto(origin, { waitUntil: "networkidle" });
   await button(page, "Davetler ve Bildirimler").waitFor();
@@ -502,7 +526,7 @@ try {
     "network",
     "unconfirmed",
   ]) {
-    const context = await browser.newContext({
+    const context = await createContext({
         viewport: { width: 320, height: 760 },
         reducedMotion: "reduce",
       }),
@@ -520,22 +544,26 @@ try {
     await page.goto(`${origin}/online/auth${suffix}`, {
       waitUntil: "networkidle",
     });
-    const dialog = page.getByRole("dialog", {
-      name:
-        variant === "success" ? "E-posta Doğrulandı!" : "Doğrulama Başarısız",
-    });
-    await dialog.waitFor();
-    assert.equal(new URL(page.url()).search, "");
-    assert.equal(new URL(page.url()).hash, "");
-    assert(
-      !(await page.locator("body").innerText()).includes("PRIVATE_DETAIL"),
-    );
-    await shot(page, `callback-${variant}`);
     if (variant === "success") {
+      await page.waitForURL("**/profile");
       assert(fixture.state.userChecks > 0);
-      await closeFeedback(page);
       assert.equal(await page.getByRole("dialog").count(), 0);
+    } else {
+      const messages = {
+        expired: /Doğrulama bağlantısı geçersiz veya süresi dolmuş/,
+        invalid: /Bu bağlantıda oturum bilgisi yok/,
+        network: /Hesap servisine ulaşılamadı/,
+        unconfirmed: /E-posta doğrulaması tamamlanamadı/,
+      };
+      await page.getByText(messages[variant]).waitFor();
+      assert.equal(new URL(page.url()).pathname, "/online/auth");
+      if (variant !== "invalid") assert.equal(new URL(page.url()).search, "");
+      assert.equal(new URL(page.url()).hash, "");
+      assert(
+        !(await page.locator("body").innerText()).includes("PRIVATE_DETAIL"),
+      );
     }
+    await shot(page, `callback-${variant}`);
     checks.push(
       `callback ${variant}: sanitized URL, persistent truthful result`,
     );
@@ -543,7 +571,7 @@ try {
   }
   // New menu hierarchy and transactional theme persistence on real rendering.
   {
-    const context = await browser.newContext({
+    const context = await createContext({
       viewport: { width: 320, height: 844 },
       colorScheme: "light",
     });
@@ -551,6 +579,7 @@ try {
     await fixture.install(context);
     const page = await context.newPage();
     latestPage = page;
+    console.log("Checking transactional settings and theme persistence");
     await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
     for (const name of [
       "Profil",

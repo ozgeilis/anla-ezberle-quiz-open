@@ -1,3 +1,4 @@
+import { getLevelFromXp } from "../../domain/scoring/levels";
 import { useInbox } from "./InboxProvider";
 import React, { useEffect, useRef, useState } from "react";
 import { Switch, TextInput, View } from "react-native";
@@ -120,7 +121,7 @@ function AccountProfile() {
           {self?.player && (
             <Txt size={12}>
               Sunucuda doğrulanan çevrimiçi XP: {self.player.xp} · Seviye{" "}
-              {self.player.level}
+              {getLevelFromXp(self.player.xp)}
             </Txt>
           )}
           <Txt size={12} color={theme.muted}>

@@ -1,3 +1,6 @@
+import { OnlineQuestionTimer } from "./OnlineQuestionTimer";
+import { GoogleSignInButton } from "./GoogleSignInButton";
+import { clearGoogleAttempt } from "./googleAuth";
 import { RoundResultBadge } from "../results/RoundResultBadge";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { duelAudioCues } from "../audio/events";
@@ -5,7 +8,7 @@ import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { passwordError, validEmail } from "./account";
 import { useInbox } from "./InboxProvider";
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Share, TextInput, View } from "react-native";
+import { Platform, Share, TextInput, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import * as Linking from "expo-linking";
 import { randomUUID } from "expo-crypto";
@@ -63,6 +66,15 @@ const stateLabel: Record<OnlineMatch["state"], string> = {
 };
 
 export function OnlineScreen() {
+  useEffect(() => {
+    if (Platform.OS !== "web") return;
+    // Returning from the provider (including the browser's back/forward cache)
+    // cancels its verifier before a different email authentication flow starts.
+    const cancel = () => void clearGoogleAttempt().catch(() => {});
+    cancel();
+    window.addEventListener("pageshow", cancel);
+    return () => window.removeEventListener("pageshow", cancel);
+  }, []);
   const { session } = useOnlineAuth();
   const { returnTo, invite, match } = useLocalSearchParams<{
     returnTo?: string;
@@ -190,7 +202,12 @@ function OnlineAccountScreen() {
         "Bekleyen çevrimiçi yanıt kaydı bozuk. Sunucu kayıtları değiştirilmedi.",
       );
     const answer = value as PendingAnswer;
-    if (next.answers.some((a) => a.requestId === answer.requestId)) {
+    if (
+      next.answers.some(
+        (a) =>
+          a.requestId === answer.requestId || a.position === answer.position,
+      )
+    ) {
       await AsyncStorage.removeItem(pendingKey(expected, next.id));
       setPending(null);
     } else setPending(answer);
@@ -249,6 +266,42 @@ function OnlineAccountScreen() {
     };
   }, [actor, match?.id, inbox.notifications, accept]);
 
+  const expireQuestion = useCallback(() => {
+    const current = matchRef.current;
+    const expected = actorRef.current;
+    if (!current || !expected || lock.current || current.finished) return;
+    lock.current = true;
+    void onlineRequest<OnlineMatch>(
+      "expire",
+      {
+        matchId: current.id,
+        position: current.answers.length + 1,
+        requestId: randomUUID(),
+      },
+      expected,
+    )
+      .then((next) => accept(next, expected))
+      .catch(async (error: unknown) => {
+        if (actorRef.current !== expected) return;
+        if (error instanceof OnlineError && error.code === "ANSWER_NOT_DUE") {
+          await accept(
+            await onlineRequest<OnlineMatch>(
+              "get",
+              { matchId: current.id },
+              expected,
+            ),
+            expected,
+          );
+        } else setError(onlineMessage(error));
+      })
+      .catch(() => {
+        if (actorRef.current === expected)
+          setError("Bağlantını kontrol edip güncel soruyu yenile.");
+      })
+      .finally(() => {
+        lock.current = false;
+      });
+  }, [accept]);
   const act = async (
     operation: "get" | "start" | "invite" | "cancel",
     id = match?.id,
@@ -359,7 +412,7 @@ function OnlineAccountScreen() {
             ? contentScopeLabel[match.scope]
             : "Sunucuda doğrulanan çevrimiçi düello"}
         </Chip>
-        {!match && (
+        {!match && auth.session && (
           <LinearGradient
             colors={gradients.hero}
             style={{
@@ -396,7 +449,7 @@ function OnlineAccountScreen() {
             </Txt>
           </LinearGradient>
         )}
-        {!match && (
+        {!match && auth.session && (
           <Card>
             <Txt>
               Soru havuzunu sunucu belirler; maçta kullanılan kapsam maç
@@ -435,7 +488,10 @@ function OnlineAccountScreen() {
         ) : !auth.ready ? (
           <Txt>Güvenli oturum kontrol ediliyor…</Txt>
         ) : !auth.session ? (
-          <Card style={{ gap: 16 }}>
+          <Card style={{ gap: 12 }}>
+            <Txt size={18} weight="bold">
+              Anla &amp; Ezberle
+            </Txt>
             <Txt size={22} weight="heavy">
               {register ? "Hesap oluştur" : "Giriş yap"}
             </Txt>
@@ -490,11 +546,6 @@ function OnlineAccountScreen() {
                     })
                   }
                 />
-                <Button
-                  title="Giriş ekranına dön"
-                  variant="outline"
-                  onPress={() => setRegister(false)}
-                />
               </>
             ) : (
               <>
@@ -510,15 +561,9 @@ function OnlineAccountScreen() {
                     }, true)
                   }
                 />
-                <Button
-                  title="Hesap Oluştur"
-                  variant="outline"
-                  disabled={busy}
-                  onPress={() => setRegister(true)}
-                />
-                <Button
-                  title="Şifremi Unuttum"
-                  variant="outline"
+
+                <Tap
+                  label="Şifremi Unuttum"
                   disabled={busy}
                   onPress={() =>
                     router.push({
@@ -526,19 +571,49 @@ function OnlineAccountScreen() {
                       params: { email },
                     })
                   }
-                />
-                <Button
-                  title="E-postamı Doğrula"
-                  variant="outline"
-                  disabled={busy}
-                  onPress={() =>
-                    router.push({
-                      pathname: "/online/verify-email",
-                      params: { email },
-                    })
-                  }
-                />
+                  style={{ justifyContent: "center" }}
+                >
+                  <Txt size={14} color={theme.accent}>
+                    Şifremi Unuttum
+                  </Txt>
+                </Tap>
               </>
+            )}
+            <GoogleSignInButton
+              busy={busy}
+              enabled={auth.googleEnabled}
+              // Callback errors have their own routed screen. Startup/cancel
+              // errors stay inline here instead of opening a second modal over it.
+              onPress={() => void run(() => auth.signInGoogle())}
+            />
+            <Tap
+              label={register ? "Giriş ekranına dön" : "Hesap Oluştur"}
+              disabled={busy}
+              onPress={() => setRegister(!register)}
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
+              <Txt size={14} color={theme.accent}>
+                {register
+                  ? "Hesabın var mı? Giriş Yap"
+                  : "Hesabın yok mu? Kayıt Ol"}
+              </Txt>
+            </Tap>
+            {!register && (
+              <Tap
+                label="E-postamı Doğrula"
+                disabled={busy}
+                onPress={() =>
+                  router.push({
+                    pathname: "/online/verify-email",
+                    params: { email },
+                  })
+                }
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
+                <Txt size={12} color={theme.muted}>
+                  E-postamı Doğrula
+                </Txt>
+              </Tap>
             )}
           </Card>
         ) : (
@@ -767,9 +842,19 @@ function OnlineAccountScreen() {
                       !match.finished &&
                       !!question && (
                         <>
-                          <Txt weight="heavy">
-                            Soru {match.answers.length + 1} / 10
-                          </Txt>
+                          <View style={s.row}>
+                            <Txt weight="heavy">
+                              Soru {match.answers.length + 1} / 10
+                            </Txt>
+                            {!!match.answerSeconds &&
+                              !!match.questionOpenedAt &&
+                              !!match.serverNow && (
+                                <OnlineQuestionTimer
+                                  match={match}
+                                  onExpire={expireQuestion}
+                                />
+                              )}
+                          </View>
                           <View style={[s.row, { gap: 4 }]}>
                             {Array.from({ length: 10 }, (_, i) => (
                               <View

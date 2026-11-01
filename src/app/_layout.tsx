@@ -26,6 +26,7 @@ import { Pattern } from "../components/game/Artwork";
 
 import * as SplashScreen from "expo-splash-screen";
 import { StudioIntro } from "../branding/StudioIntro";
+import { AdProvider } from "../features/ads/AdProvider";
 
 if (Platform.OS !== "web")
   void SplashScreen.preventAutoHideAsync().catch(() => undefined);
@@ -50,34 +51,38 @@ function AppShell({
   if (!introDone || !fontsReady || !ready)
     return <StudioIntro onDone={finishIntro} />;
   return (
-    <View style={{ flex: 1, backgroundColor: theme.dark ? c.navy : c.canvas }}>
-      <View pointerEvents="none" style={{ position: "absolute", inset: 0 }}>
-        <Pattern color={c.teal} opacity={0.07} />
-      </View>
-      <SafeAreaView
-        style={{
-          flex: 1,
-          width: "100%",
-          maxWidth: 960,
-          alignSelf: "center",
-          backgroundColor: theme.background,
-          boxShadow: "0px 0px 70px rgba(0,45,50,0.12)",
-        }}
+    <AdProvider>
+      <View
+        style={{ flex: 1, backgroundColor: theme.dark ? c.navy : c.canvas }}
       >
-        <StatusBar style={theme.dark ? "light" : "dark"} />
-        <StorageNotice />
-        <InboxBanner />
-        <RewardBanner />
-        <GameAudioEvents />
-        <Stack
-          screenOptions={{
-            headerShown: false,
-            animation: "none",
-            contentStyle: { backgroundColor: theme.background },
+        <View pointerEvents="none" style={{ position: "absolute", inset: 0 }}>
+          <Pattern color={c.teal} opacity={0.07} />
+        </View>
+        <SafeAreaView
+          style={{
+            flex: 1,
+            width: "100%",
+            maxWidth: 960,
+            alignSelf: "center",
+            backgroundColor: theme.background,
+            boxShadow: "0px 0px 70px rgba(0,45,50,0.12)",
           }}
-        />
-      </SafeAreaView>
-    </View>
+        >
+          <StatusBar style={theme.dark ? "light" : "dark"} />
+          <StorageNotice />
+          <InboxBanner />
+          <RewardBanner />
+          <GameAudioEvents />
+          <Stack
+            screenOptions={{
+              headerShown: false,
+              animation: "none",
+              contentStyle: { backgroundColor: theme.background },
+            }}
+          />
+        </SafeAreaView>
+      </View>
+    </AdProvider>
   );
 }
 export default function RootLayout() {

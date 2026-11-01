@@ -1,4 +1,4 @@
-import { QuestionClock } from "../domain/game/question-clock";
+import { QuestionClock, questionLimitMs } from "../domain/game/question-clock";
 import { GameStage } from "../domain/game/stages";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { persistChange } from "./persist";
@@ -136,13 +136,21 @@ export function GameProvider({ children }: React.PropsWithChildren) {
     [],
   );
   const setCurrent = useCallback((value: Session | null) => {
-    if (value?.timingVersion === 1 && value.questionOpenedAt !== undefined) {
+    if (
+      value?.timingVersion !== undefined &&
+      value.questionOpenedAt !== undefined
+    ) {
       if (
         !clockRef.current ||
         value.id !== sessionRef.current?.id ||
         value.cursor !== sessionRef.current?.cursor
       ) {
-        clockRef.current = new QuestionClock(value.questionOpenedAt);
+        clockRef.current = new QuestionClock(
+          value.questionOpenedAt,
+          undefined,
+          0,
+          questionLimitMs(value.timingVersion),
+        );
         setQuestionClock(clockRef.current);
       }
     } else {
@@ -206,7 +214,7 @@ export function GameProvider({ children }: React.PropsWithChildren) {
         !current ||
         current.id !== id ||
         current.cursor !== cursor ||
-        current.timingVersion !== 1 ||
+        current.timingVersion === undefined ||
         current.questionOpenedAt !== undefined ||
         current.answers.some(
           (a) => a.questionId === current.questionIds[cursor],
@@ -247,7 +255,7 @@ export function GameProvider({ children }: React.PropsWithChildren) {
       clockRef.current ? Math.floor(clockRef.current.now()) : Date.now(),
     );
     if (next === current) return;
-    if (next.timingVersion === 1) delete next.questionOpenedAt;
+    if (next.timingVersion !== undefined) delete next.questionOpenedAt;
     setCurrent(next);
   };
   const abandon = () => setCurrent(null);

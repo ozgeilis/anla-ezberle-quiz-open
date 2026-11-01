@@ -1,3 +1,4 @@
+import { getLevelProgress } from "./levels";
 import { visitedSubjectCount } from "../game/play-categories";
 import { rewardSummary, creditedRounds } from "./rewards";
 import { GameRecord, stats } from "../game/engine";
@@ -11,7 +12,8 @@ export interface Badge {
 export function progress(games: readonly GameRecord[]) {
   const correct = games.reduce((sum, g) => sum + stats(g).correct, 0);
   const xp = rewardSummary(games);
-  const level = Math.min(100, Math.floor(xp / 250) + 1);
+  const levelProgress = getLevelProgress(xp);
+  const { level } = levelProgress;
   const credited = creditedRounds(games);
   const creditedCorrect = credited.reduce(
     (sum, g) => sum + stats(g).correct,
@@ -52,9 +54,7 @@ export function progress(games: readonly GameRecord[]) {
   ];
   return {
     xp,
-    level,
-    levelXp: level === 100 ? 250 : xp % 250,
-    nextLevelXp: level === 100 ? 0 : 250 - (xp % 250),
+    ...levelProgress,
     title: playerTitle(level),
     best: Math.max(0, ...games.map((g) => stats(g).score)),
     badges,

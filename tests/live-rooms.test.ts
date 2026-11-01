@@ -20,29 +20,29 @@ import { achievements } from "../src/domain/achievements/evaluate";
 
 test("live countdown, answer deadline, reveal and completion use one authoritative timeline", () => {
   const start = 10000;
-  assert.deepEqual(liveClock(start, start - 3000, 10), {
+  assert.deepEqual(liveClock(start, start - 3000, 10, 15), {
     phase: "countdown",
     position: 0,
     seconds: 3,
   });
-  assert.deepEqual(liveClock(start, start, 10), {
+  assert.deepEqual(liveClock(start, start, 10, 15), {
     phase: "answer",
     position: 1,
     seconds: 15,
   });
-  assert.equal(liveClock(start, start + 14999, 10).phase, "answer");
-  assert.deepEqual(liveClock(start, start + 15000, 10), {
+  assert.equal(liveClock(start, start + 14999, 10, 15).phase, "answer");
+  assert.deepEqual(liveClock(start, start + 15000, 10, 15), {
     phase: "reveal",
     position: 1,
     seconds: 5,
   });
-  assert.deepEqual(liveClock(start, start + 20000, 10), {
+  assert.deepEqual(liveClock(start, start + 20000, 10, 15), {
     phase: "answer",
     position: 2,
     seconds: 15,
   });
   for (const count of liveCounts)
-    assert.deepEqual(liveClock(start, start + count * 20000, count), {
+    assert.deepEqual(liveClock(start, start + count * 20000, count, 15), {
       phase: "completed",
       position: count,
       seconds: 0,
@@ -162,4 +162,25 @@ test("10-second rooms follow the server rule while historical 15-second rooms ke
   });
   assert.equal(liveClock(start, start + 75000, 5, 10).phase, "completed");
   assert.equal(liveClock(start, start + 10000, 5, 15).phase, "answer");
+});
+
+test("new live rooms use 20s answers and 5s reveal at exact boundaries", () => {
+  const start = 10000;
+  assert.deepEqual(liveClock(start, start, 10), {
+    phase: "answer",
+    position: 1,
+    seconds: 20,
+  });
+  assert.equal(liveClock(start, start + 19999, 10).phase, "answer");
+  assert.deepEqual(liveClock(start, start + 20000, 10), {
+    phase: "reveal",
+    position: 1,
+    seconds: 5,
+  });
+  assert.deepEqual(liveClock(start, start + 25000, 10), {
+    phase: "answer",
+    position: 2,
+    seconds: 20,
+  });
+  assert.equal(liveClock(start, start + 250000, 10).phase, "completed");
 });

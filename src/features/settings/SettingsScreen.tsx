@@ -11,6 +11,7 @@ import { useOnlineAuth } from "../online/OnlineProvider";
 import { usePlayerIdentity } from "../online/SocialIdentityProvider";
 import { PersonalizationDialog } from "../profile/Personalization";
 import { SoundSettings } from "../audio/SoundSettings";
+import { AdPrivacySettings } from "../ads/AdPrivacySettings";
 import { NotificationSettings } from "../notifications/NotificationSettings";
 import { ProfileAchievements } from "../achievements/ProfileAchievements";
 import { brand } from "../../branding/identity";
@@ -148,7 +149,7 @@ function SettingsContent({
               >
                 <View
                   style={{
-                    width: `${(p.levelXp / 250) * 100}%`,
+                    width: `${p.levelPercent}%`,
                     height: 5,
                     backgroundColor: t.accent,
                   }}
@@ -182,6 +183,7 @@ function SettingsContent({
       {section === "account" && <AccountSettings setFeedback={setFeedback} />}
       {section === "privacy" && (
         <>
+          <AdPrivacySettings />
           <ProfileAchievements editable />
           <Card style={{ gap: 12 }}>
             <Txt weight="bold">Verilerin ve gizlilik</Txt>

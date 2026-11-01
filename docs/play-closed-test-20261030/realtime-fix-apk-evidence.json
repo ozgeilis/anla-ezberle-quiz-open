@@ -1,0 +1,311 @@
+{
+  "buildId": "bc3c86f5-e326-4984-8b19-4173282c742d",
+  "sourceCommit": "a506f873d1de17b8bc98804df06f983558e48530",
+  "status": "FINISHED",
+  "profile": "ads-preview",
+  "package": "com.kovynelstudio.anlaezberle",
+  "sha256": "aac0b20c92e0268800312447a7f84deb3a427a7e1b68b8741efd5697fd64165f",
+  "sizeBytes": 114456149,
+  "minSdk": 24,
+  "targetSdk": 36,
+  "compileSdk": 37,
+  "versionCode": 1,
+  "versionName": "0.1.0",
+  "elf64Check": {
+    "libraries": 52,
+    "aligned16KB": true
+  },
+  "nativeLibraries64": [
+    {
+      "name": "lib/arm64-v8a/libappmodules.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libc++_shared.so",
+      "loadAlignment": [16384, 16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-core.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-jsi.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-v2.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libexpo-modules-worklets.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libfbjni.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libgesturehandler.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libgifimage.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libhermestooling.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libhermesvm.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libimagepipeline.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libjsi.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libnative-filters.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libnative-imagetranscoder.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreactnative.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libreanimated.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/librnscreens.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libstatic-webp.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libworklets.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/arm64-v8a/libzstd-kmp.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libappmodules.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libc++_shared.so",
+      "loadAlignment": [16384, 16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libdatastore_shared_counter.so",
+      "loadAlignment": [16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-core.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-jsi.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-v2.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libexpo-modules-worklets.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libfbjni.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libgesturehandler.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libgifimage.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libhermestooling.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libhermesvm.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libimagepipeline.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libjsi.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libnative-filters.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libnative-imagetranscoder.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_rngesturehandler_codegen.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_rnscreens.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_rnsvg.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libreact_codegen_safeareacontext.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libreactnative.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libreanimated.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/librnscreens.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libstatic-webp.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libworklets.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    },
+    {
+      "name": "lib/x86_64/libzstd-kmp.so",
+      "loadAlignment": [16384, 16384, 16384],
+      "aligned16KB": true
+    }
+  ],
+  "zipalign16KB": "PASS",
+  "signatureVerify": "PASS",
+  "updateInstall": "adb install -r: Success; no data clear or uninstall",
+  "physicalAcceptance": "PENDING: no physical Android available",
+  "nativeRegression": "PASS within documented scope; see native-retest-20261031.md",
+  "storeAab": "NOT_BUILT: approval gate remains closed",
+  "signatureMatchesPreviousEasApk": true,
+  "sensitiveAssetPatternScan": {
+    "scope": "Named private-key, Supabase secret and Google OAuth/service-account patterns in APK assets; decoded Hermes global string table. Does not prove absence of every possible secret. No values printed.",
+    "rawAssetCounts": {
+      "privateKeyHeader": 0,
+      "supabaseSecretKey": 1,
+      "googleOAuthSecret": 0,
+      "googleServiceAccountPrivateKeyField": 0
+    },
+    "decodedHermesStringCounts": {
+      "privateKeyHeader": 0,
+      "supabaseSecretKey": 0,
+      "googleOAuthSecret": 0,
+      "googleServiceAccountPrivateKeyField": 0
+    },
+    "sdkPrefixFalsePositive": true,
+    "hermesDumpExit": 0,
+    "sdkPrefixExplanation": "Raw contiguous Hermes string storage joins the SDK sb_secret_ prefix with a following string. Decoded global string table checked; no matching secret suffix."
+  },
+  "blockedAdvertisingPermissions": {
+    "AD_ID": true,
+    "ACCESS_ADSERVICES_AD_ID": true,
+    "ACCESS_ADSERVICES_ATTRIBUTION": true,
+    "ACCESS_ADSERVICES_TOPICS": true
+  }
+}

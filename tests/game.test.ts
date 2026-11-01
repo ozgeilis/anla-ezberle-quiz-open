@@ -200,7 +200,7 @@ test("dört rozet yalnızca gerçekten tamamlanmış bilgi turlarından kazanıl
     true,
   );
   assert.equal(progress(games).xp, 400);
-  assert.equal(progress(games).level, 2);
+  assert.equal(progress(games).level, 4);
   assert.equal(progress(games).best, 1000);
 });
 test("1500 kaynaklı yayın sorusunun kimlikleri, seçenekleri ve açıklamaları eksiksizdir", () => {

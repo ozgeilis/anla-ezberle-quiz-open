@@ -12,6 +12,7 @@ import { dateKey, stats } from "../../domain/game/engine";
 import { useGameLibrary } from "../../storage/GameProvider";
 import { useTheme } from "../../theme/tokens";
 import { HomeActionCard, HomePlayButton } from "./HomeActionCard";
+import { AdBanner } from "../ads/AdBanner";
 
 export function HomeScreen() {
   const router = useRouter();
@@ -121,6 +122,7 @@ export function HomeScreen() {
             </View>
           </View>
           <TextAction title="Nasıl oynanır?" onPress={() => setHelp(true)} />
+          {!help && <AdBanner />}
         </View>
       </ScrollView>
       <Dialog
@@ -129,12 +131,13 @@ export function HomeScreen() {
         onClose={() => setHelp(false)}
       >
         <Txt>
-          Her turda 10 soru var. Her soru için 10 saniye; doğru yanıt 100,
+          Her turda 10 soru var. Her soru için 20 saniye; doğru yanıt 100,
           yanlış veya cevapsız yanıt 0 puan. Açıklama sırasında sayaç durur.
         </Txt>
         <Txt>
-          Yeni soru setindeki her doğru cevap 10 yerel XP kazandırır. Her 250
-          XP’de bir seviye ilerlersin. Yalnız biten turlar kaydedilir.
+          Yeni soru setindeki her doğru cevap 10 yerel XP kazandırır. İlk seviye
+          için 100 XP gerekir; sonraki seviyelerde hedef kademeli artar. Yalnız
+          biten turlar kaydedilir.
         </Txt>
         <Txt size={12} color={theme.muted}>
           Yanıtlarını sonuç ekranından açıklamalarıyla inceleyebilirsin.

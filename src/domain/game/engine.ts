@@ -1,4 +1,8 @@
-import { QUESTION_LIMIT_MS } from "./question-clock";
+import {
+  CURRENT_TIMING_VERSION,
+  questionLimitMs,
+  type TimingVersion,
+} from "./question-clock";
 import {
   DifficultyCounts,
   GameStage,
@@ -42,7 +46,7 @@ export interface Answer {
   openedAt?: number;
 }
 export interface Session extends GameContent {
-  timingVersion?: 1;
+  timingVersion?: TimingVersion;
   questionOpenedAt?: number;
   playCategory?: PlayCategoryId;
   playCategoryVersion?: PlayCategoryVersion;
@@ -498,7 +502,7 @@ export function createSession(
       : {}),
     ...(replay ? { replay: true as const } : {}),
     ...(options.timed
-      ? { timingVersion: 1 as const, questionOpenedAt: now }
+      ? { timingVersion: CURRENT_TIMING_VERSION, questionOpenedAt: now }
       : {}),
     rewardVersion: 1,
     id: `quiz-${now}-${++sequence}-${Math.random().toString(36).slice(2, 10)}`,
@@ -536,13 +540,15 @@ export function answerQuestion(
 ): Session {
   const id = session.questionIds[session.cursor];
   if (
-    session.timingVersion === 1 &&
+    session.timingVersion !== undefined &&
     (session.questionOpenedAt === undefined || now < session.questionOpenedAt)
   )
     return session;
   if (
-    session.timingVersion === 1 &&
-    now >= (session.questionOpenedAt ?? Infinity) + QUESTION_LIMIT_MS
+    session.timingVersion !== undefined &&
+    now >=
+      (session.questionOpenedAt ?? Infinity) +
+        questionLimitMs(session.timingVersion)
   )
     return expireQuestion(session, now);
   if (
@@ -560,7 +566,7 @@ export function answerQuestion(
       {
         questionId: id,
         option,
-        ...(session.timingVersion === 1
+        ...(session.timingVersion !== undefined
           ? { openedAt: session.questionOpenedAt }
           : {}),
         at: Math.max(now, session.startedAt, session.answers.at(-1)?.at ?? 0),
@@ -572,10 +578,10 @@ export function expireQuestion(session: Session, now = Date.now()): Session {
   const id = session.questionIds[session.cursor];
   const openedAt = session.questionOpenedAt;
   if (
-    session.timingVersion !== 1 ||
+    session.timingVersion === undefined ||
     !id ||
     openedAt === undefined ||
-    now < openedAt + QUESTION_LIMIT_MS ||
+    now < openedAt + questionLimitMs(session.timingVersion) ||
     session.answers.some((a) => a.questionId === id)
   )
     return session;
@@ -589,7 +595,7 @@ export function expireQuestion(session: Session, now = Date.now()): Session {
         timedOut: true,
         openedAt,
         at: Math.max(
-          openedAt + QUESTION_LIMIT_MS,
+          openedAt + questionLimitMs(session.timingVersion),
           session.answers.at(-1)?.at ?? 0,
         ),
       },
@@ -607,7 +613,7 @@ export function advanceQuestion(session: Session, now = Date.now()): Session {
   return {
     ...session,
     cursor: session.cursor + 1,
-    ...(session.timingVersion === 1
+    ...(session.timingVersion !== undefined
       ? { questionOpenedAt: Math.max(now, session.answers.at(-1)!.at) }
       : {}),
   };

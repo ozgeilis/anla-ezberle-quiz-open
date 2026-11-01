@@ -1,115 +1,49 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Platform, TextInput, View } from "react-native";
-import * as Linking from "expo-linking";
+import { TextInput, View } from "react-native";
 import { useRouter } from "expo-router";
 import { Button, Card, Page, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
-import { onlineClient } from "./client";
 import { passwordError } from "./account";
-import { verifyEmailLink } from "./verifyLink";
 import { Feedback, FeedbackDialog } from "../../components/ui/FeedbackDialog";
 import { useOnlineAuth } from "./OnlineProvider";
+import { useAuthCallback } from "./useAuthCallback";
 export function AuthCallbackScreen() {
-  const router = useRouter();
-  const incoming = Linking.useURL(),
+  const router = useRouter(),
     theme = useTheme(),
     auth = useOnlineAuth();
-  const processed = useRef(new Set<string>()),
-    generation = useRef(0),
-    mounted = useRef(true);
-  useEffect(() => {
-    mounted.current = true;
-    return () => {
-      mounted.current = false;
-    };
-  }, []);
-  const [webUrl, setWebUrl] = useState(() =>
-    Platform.OS === "web" && typeof window !== "undefined"
-      ? window.location.href
-      : null,
-  );
-  useEffect(() => {
-    if (Platform.OS !== "web") return;
-    const changed = () => setWebUrl(window.location.href);
-    window.addEventListener("hashchange", changed);
-    window.addEventListener("popstate", changed);
-    return () => {
-      window.removeEventListener("hashchange", changed);
-      window.removeEventListener("popstate", changed);
-    };
-  }, []);
-  const [message, setMessage] = useState(
-    "Doğrulama bağlantısı kontrol ediliyor…",
-  );
-  const [recovery, setRecovery] = useState(false),
-    [verified, setVerified] = useState(false),
-    [busy, setBusy] = useState(false);
+  const callback = useAuthCallback();
+  const isGoogleCallback = callback.state.google;
+  const verified = callback.state.status === "success";
+  const [passwordSaved, setPasswordSaved] = useState(false);
+  const recovery =
+    callback.state.status === "success" &&
+    callback.state.recovery &&
+    !passwordSaved;
+  const message = passwordSaved ? "Şifren kaydedildi." : callback.state.message;
+  const [busy, setBusy] = useState(false);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const passwordLock = useRef(false);
   useEffect(() => {
-    const value = webUrl ?? incoming;
-    if (!value || processed.current.has(value)) return;
-    let candidate: URL | null = null;
-    try {
-      candidate = new URL(value);
-      if (processed.current.size && !candidate.hash && !candidate.search)
-        return;
-    } catch {
-      // Malformed links are reported by the async verification path below.
-    }
-    processed.current.add(value);
-    const revision = ++generation.current;
-    const verify = async () => {
-      // Even a misconfigured build must not leave email credentials in history.
-      if (Platform.OS === "web")
-        window.history.replaceState(null, "", "/online/auth");
-      await Promise.resolve();
-      if (!mounted.current || generation.current !== revision) return;
-      setVerified(false);
-      setRecovery(false);
-      setFeedback(null);
-      setMessage("Doğrulama bağlantısı kontrol ediliyor…");
-      const client = onlineClient();
-      if (!client) throw new Error("Servis yapılandırılmadı.");
-      const { recovery: recovering } = await verifyEmailLink(
-        value,
-        client.auth,
-      );
-      if (!mounted.current || generation.current !== revision) return;
-      setVerified(true);
-      setFeedback({
-        tone: "success",
-        title: recovering ? "Bağlantı Doğrulandı" : "E-posta Doğrulandı!",
-        message: recovering
-          ? "Yeni şifreni belirleyebilirsin."
-          : "E-posta adresin sunucuda doğrulandı. Çevrimiçi erişimin hesabının yetkilerine göre kullanılabilir.",
-        actionLabel: recovering ? undefined : "Profilime Git",
-      });
-      setRecovery(recovering);
-      setMessage(
-        recovering
-          ? "Yeni şifreni belirleyebilirsin."
-          : "E-posta adresin doğrulandı. Kullanıcı adını profilinden oluşturabilirsin.",
-      );
-    };
-    verify().catch((e) => {
-      if (mounted.current && generation.current === revision) {
-        setVerified(false);
-        setRecovery(false);
-        const text =
-          e instanceof Error ? e.message : "Doğrulama tamamlanamadı.";
-        setMessage(text);
-        setFeedback({
-          tone: "error",
-          title: "Doğrulama Başarısız",
-          message: text,
-          actionLabel: "Yeni Bağlantı İste",
-        });
-      }
-    });
-  }, [incoming, webUrl]);
+    const result = callback.state;
+    // Wait until the one session owner observes the exact server-verified user.
+    if (
+      result.status === "success" &&
+      !result.recovery &&
+      auth.ready &&
+      auth.session?.user.id === result.userId
+    )
+      router.replace("/profile");
+    // A credential-free revisit with an already restored session needs no waiting.
+    if (
+      (result.status === "missing" ||
+        (result.status === "error" && !result.recovery)) &&
+      auth.ready &&
+      auth.session
+    )
+      router.replace("/profile");
+  }, [callback.state, auth.ready, auth.session, router]);
   return (
     <Page
       title={recovery ? "Yeni Şifre Oluştur" : "Hesabını doğrula"}
@@ -117,6 +51,9 @@ export function AuthCallbackScreen() {
     >
       <Card style={{ gap: 16 }}>
         {!feedback && <Txt accessibilityLiveRegion="polite">{message}</Txt>}
+        {callback.state.status === "error" && (
+          <Button title="Tekrar Dene" onPress={callback.retry} />
+        )}
         {verified && recovery && (
           <View style={{ gap: 12 }}>
             <TextInput
@@ -175,8 +112,7 @@ export function AuthCallbackScreen() {
                   .then(() => {
                     setPassword("");
                     setConfirmPassword("");
-                    setRecovery(false);
-                    setMessage("Şifren kaydedildi.");
+                    setPasswordSaved(true);
                     setFeedback({
                       tone: "success",
                       title: "Şifren Kaydedildi",
@@ -204,7 +140,7 @@ export function AuthCallbackScreen() {
             onPress={() => router.replace("/profile")}
           />
         )}
-        {!verified && (
+        {!verified && !isGoogleCallback && (
           <>
             <Button
               title="Yeni Doğrulama Bağlantısı İste"
@@ -229,7 +165,7 @@ export function AuthCallbackScreen() {
         onAction={() => {
           const success = feedback?.tone === "success";
           setFeedback(null);
-          router.replace(success ? "/profile" : "/online/verify-email");
+          if (success) router.replace("/profile");
         }}
       />
     </Page>

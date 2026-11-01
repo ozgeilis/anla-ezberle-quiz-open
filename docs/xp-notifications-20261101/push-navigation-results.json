@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "physicalDevice": false,
+  "checks": [
+    "inbox: account guard, allowlisted fallback, consumed storage and no replay",
+    "room: account guard, allowlisted fallback, consumed storage and no replay",
+    "foreign: account guard, allowlisted fallback, consumed storage and no replay"
+  ]
+}

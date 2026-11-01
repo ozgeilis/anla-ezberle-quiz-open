@@ -1,0 +1,68 @@
+# Kabul kaydı
+
+| Alan | Sonuç | Sınır |
+|---|---|---|
+| TypeScript / lint / unit | 396 geçti | Callback hata/Router regresyonları dahil; istemci adayı yayımlanmadı |
+| SQL | İzole entegrasyon ve onaylı hosted dağıtım geçti | Üç migration ve Edge v17; ayrıntı backend-deployment.md |
+| Web export | Geçti | Fixture ve hosted public yapılandırmalı export; Production değişmedi |
+| Web 320/360/390 açık/koyu | 6 matris geçti | Gerçek UI; synthetic HTTP |
+| Native Android 14 | Release APK üretildi | Yerel debug imzalı QA; Play üzerine kurulmaz |
+| Native yazı matrisi | **18 geçti** | Android 14 emulator, 320/360/390 × açık/koyu × font_scale 1/1.5/2 |
+| Settings/hesap regresyonu | **11 grup geçti** | 320 dp iki tema; okundu/hata, modal, hesap değişimi, callback, tema Kaydet/Vazgeç/kalıcılık |
+| iOS / fiziksel Samsung | Yapılmadı | Web/emülatör yerine sayılmaz |
+| Gerçek push teslimi | Yapılmadı | Genel push kapalı; hosted arkadaşlık kabulü aşağıda ayrı doğrulandı |
+| Main / Production / Alpha | Yapılmadı | Ayrı onay gerekir |
+| Gerçek Google web / Android native | Geçti | İzinli tek iş hesabı; yeni kısa denemede otomatik native Profil, force-stop/relaunch aynı kimlik; ilk uzun başarısız deneme ayrıca kaydedildi |
+| Hosted Android e-posta kaydı / otomatik giriş | **Taze gerçek Gmail bağlantısıyla geçti** | Son QA: Chrome → native cold-start Profil; tekrar şifre yok; doğru fixture/confirmed/session=1; force-stop/relaunch aynı hesap. Önceki gecikmiş bağlantı başarısızlığı ayrıca korunur |
+| Hosted Android şifreli giriş | Geçti | Sahip şifreyi girdi; force-stop/relaunch kalıcılığı ve uygulamadan çıkış doğrulandı |
+| Hosted canlı oda süre sınırı | Geçti | İki izinli test aktörüyle SQL RPC; 15.02 sn kabul, 20 sn sonrası ret, 5 sn reveal; iki cihaz UI testi değildir |
+| Hosted davetten yeni maç kabulü | **Ek onayla düzeltildi ve geçti** | Edge v18/migration; native Later pending/read, Katıl tek maç/iki oyuncu/20 sn; 13.67 sn'de tek cevap kaydı |
+| Hosted arkadaşlık kartı | Geçti | Native Kabul Et → gerçek Edge ACK/server accepted; pasif karta geçti |
+| Üç ayrı onaylı geçici hesap temizliği | Geçti | Google OTP + iki e-posta şifreli mevcut silme ekranı; üç Auth hesabı 0, sahipsiz profil/session/identity 0; son silme sonrası yerel 20 XP/200 skor korundu; Google izin listesi boş |
+| Son Google ret mesajı | Geçti | Son QA emülatöründe gerçek sağlayıcı: tek kapalı test açıklaması; yanlış ağ/expiry/ikinci modal yok; yeni hesap yok |
+
+QA APK SHA-256: `717b254d372c83712cc3d02f5b4dba058f5b77df781d19f03cf1b4cd5d66a1da`.
+Bu paket code 5 yerel QA'dır; EAS/Play sürüm tahsisi değildir. İçindeki Auth
+bağlantısı yalnız loopback synthetic fixture sunucusudur. Güvenlik testi veya
+gerçek kullanıcı girişi için dağıtılacak paket değildir.
+
+Sonraki hosted QA APK SHA-256:
+`cf5471472330c24981a92b8debf28ac7791f9ccef9551170cf5b9b42363f4330`.
+Bu da yalnız emülatör için yerel debug imzalıdır. Gerçek Frankfurt Auth testi
+bu paketle yapıldı; son `6148c2e` hata mesajı düzeltmesi henüz bu binary'de yok.
+EAS/Play imzalı kabul APK'sı ve fiziksel kabul bekliyor.
+
+Son protokol düzeltmesini ve hata mesajını içeren hosted QA APK SHA-256:
+`1300e5175353eaba8df98e3e3ffcaf07a3b5b71c68361117f4ea19f108560254`.
+Bu da yalnız yerel emülatör debug imzalıdır; kurulu Google oturumu korunarak
+güncellendi. Ayrıntı: `../timer-auth-20261101/direct-challenge-correction-deployment.md`.
+
+Son hata-işleme ve tek ekran ret adayının QA SHA-256:
+`26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014`.
+Başarılı native Google girişi önceki pakette; final ret akışı bu pakette.
+Geçerli yeni hosted e-posta otomatik giriş/kalıcılık/temizlik bu final pakette geçti.
+Kanıt: [taze hosted native kabul](hosted-fresh-email-native-result.json). Fiziksel cihaz hâlâ bekler.
+
+Gerçek native UI ekranları ve tarayıcı kayıtları `screenshots/` içindedir. Ham UI/SQL/video çıktıları ve özel yerel Auth
+kanıtları depo dışında tutulur. Gerçek kimlik bilgisi Git'e eklenmez.
+
+Native etkileşim: istek kabulü → pasif kart; Daha Sonra → davet pending;
+profilde var olan yerel 20 XP için 20/100 çubuğu görüldü. Test servisi yalnız
+loopback synthetic HTTP idi; gerçek kullanıcı hesabı değiştirilmedi.
+
+Push gezinme regresyonu: üç grup geçti (hesap kimliği koruması, izinli iç rota,
+tüketilen intent tekrar açılmıyor). Gerçek bildirim teslimi testi değildir.
+
+DB lint yerel izole veritabanında `--fail-on error` ile geçti. Yeni level
+helper/projection için hata yok. Değiştirilmeyen live/push fonksiyonlarında
+mevcut kullanılmayan değişken/gölgeleme ve tür dönüşümü uyarıları korunuyor;
+bu görevde ilgisiz backend fonksiyonları yeniden yazılmadı.
+
+Google/şifre sentetik tarayıcı regresyonu: **13 grup geçti**. Aynı callback
+query sırasıyla iki kez exchange edilme hatası PR #22 içinde düzeltildi;
+PKCE/nonce/kimlik ayrımı, iptal, foreign identity reddi, e-posta recovery
+ve tarayıcı Geri iptali kontrolleri geçti. Gerçek Google OAuth değildir.
+
+18 native yerleşim kontrolü aynı UI kaynaklarıyla tamamlandı. Son ortak
+callback düzeltmesini de içeren yukarıdaki SHA’lı APK ayrıca üzerine kuruldu;
+cold-start ve mevcut yerel 20/100 XP’nin korunması tekrar doğrulandı.
