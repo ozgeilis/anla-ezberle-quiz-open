@@ -135,3 +135,13 @@ Kullanıcı yalnız sınırlı backend/geçici hesap test planını onayladı. �
 ve Edge v17 uygulandı. [Dağıtım ve doğrulama](xp-notifications-20261101/backend-deployment.md).
 Main, Vercel Production, Alpha, testçi listesi, genel Google kaydı/push, reklam
 ve Analytics değiştirilmedi. Gerçek Google/Gmail ve yeni Alpha kabulü bekliyor.
+
+
+### Hosted native Auth testinin son durumu
+
+İzinli ikinci geçici hesap, hesap sahibinin şifre girişiyle gerçek Android
+uygulamasından oluştu; tek kayıt ve doğrulanmamış e-posta sunucuda teyit edildi.
+Chrome/Gmail callback kabulü bağlantının açılmasını bekliyor. Yeni hesap limiti
+2/2; bu sınırı aşmadan mevcut iki geçici hesabın test ve güvenli temizliği
+sürdürülecek. Tarayıcı otomasyonu kapalı olduğundan manuel bağlantı aktarımı
+hazırlandı; şifre/token sohbet veya Git'e alınmadı.

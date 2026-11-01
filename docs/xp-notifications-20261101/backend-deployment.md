@@ -113,3 +113,19 @@ Emülatör DNS sorunu aynı AVD/veri korunarak, açılışta Mac'in etkin DNS
 kayıt formu hesap sahibinin şifre girişine yeniden hazırlandı. Kaynağa kalıcı
 DNS/HTTP/TLS istisnası eklenmedi. Bağımsız frozen/offline node_modules ortamında
 `pnpm check` tekrar geçti: TypeScript, lint, soru bütünlüğü, **390/390 test**.
+
+
+## Native hosted e-posta kaydı — doğrulama aşaması
+
+DNS düzeltmesinden sonra hesap sahibi şifre alanlarını kendisi girip kaydı
+tekrar gönderdi. Gerçek Android 14 uygulamasında “Doğrulama Bekleniyor”
+göründü. Hosted Auth SELECT: bu test alias'ı için **tek hesap**,
+`email_confirmed_at IS NULL`. İzin verilen iki geçici uygulama hesabı sınırına
+ulaşıldı; yeni hesap oluşturulmayacak.
+
+Yerel tarayıcı kontrolü kapalı olduğundan gerçek Gmail bağlantısına araçla
+ulaşılamadı; araç oturumu yenilenince de aynı erişim hatası sürdü. Hesap
+sahibine bağlantıyı Mac'te tüketmeden Android Chrome'a elle aktarma adımı
+hazırlandı. Android uygulaması force-stop edildi; callback sonrası açılış
+cold-start olarak kontrol edilecek. Bu aşamada otomatik oturum veya
+Chrome→uygulama sonucu henüz başarılı sayılmıyor.
