@@ -9,7 +9,11 @@ export interface InternalProfile {
   environment?: string;
   env?: Record<string, string>;
   android?: { buildType?: string };
-  ios?: { simulator?: boolean };
+  ios?: {
+    simulator?: boolean;
+    autoIncrement?: string;
+    buildConfiguration?: string;
+  };
   autoIncrement?: boolean;
 }
 export interface InternalEasConfig {
@@ -31,6 +35,22 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
   if (!build || typeof build !== "object")
     return [...issues, "Missing build profiles"];
 
+  for (const name of [
+    "ios-development",
+    "ios-simulator-acceptance",
+    "ios-testflight",
+  ]) {
+    const ios = build[name];
+    if (
+      ios &&
+      (ios.env?.ADS_MODE !== "off" ||
+        ios.env?.EXPO_PUBLIC_CONTENT_CHANNEL !== "production" ||
+        ios.env?.IOS_APPLE_AUTH !== "1")
+    )
+      issues.push(
+        `${name}: iOS preparation must keep ads off and current content/Apple preparation explicit`,
+      );
+  }
   const expected = ["development", "development-simulator", "preview"];
   const adsProfiles = {
     "ads-preview": "preview",
@@ -41,6 +61,11 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
     if (
       !expected.includes(name) &&
       name !== "production" &&
+      ![
+        "ios-development",
+        "ios-simulator-acceptance",
+        "ios-testflight",
+      ].includes(name) &&
       !(name in adsProfiles)
     )
       issues.push(`Unexpected build profile: ${name}`);

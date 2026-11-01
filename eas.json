@@ -70,6 +70,42 @@
         "ADS_TEST_BUILD": "1",
         "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534"
       }
+    },
+    "ios-simulator-acceptance": {
+      "distribution": "internal",
+      "environment": "development",
+      "developmentClient": false,
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
+        "ADS_MODE": "off",
+        "IOS_APPLE_AUTH": "1"
+      },
+      "ios": {
+        "simulator": true,
+        "buildConfiguration": "Release"
+      }
+    },
+    "ios-development": {
+      "extends": "development",
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
+        "ADS_MODE": "off",
+        "IOS_APPLE_AUTH": "1"
+      }
+    },
+    "ios-testflight": {
+      "distribution": "store",
+      "environment": "production",
+      "developmentClient": false,
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
+        "ADS_MODE": "off",
+        "IOS_APPLE_AUTH": "1"
+      },
+      "ios": {
+        "autoIncrement": "buildNumber",
+        "buildConfiguration": "Release"
+      }
     }
   }
 }

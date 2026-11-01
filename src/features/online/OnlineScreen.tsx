@@ -1,4 +1,5 @@
 import { OnlineQuestionTimer } from "./OnlineQuestionTimer";
+import { AppleSignInButton } from "./AppleSignInButton";
 import { GoogleSignInButton } from "./GoogleSignInButton";
 import { clearGoogleAttempt } from "./googleAuth";
 import { RoundResultBadge } from "../results/RoundResultBadge";
@@ -579,6 +580,11 @@ function OnlineAccountScreen() {
                 </Tap>
               </>
             )}
+            <AppleSignInButton
+              busy={busy}
+              enabled={auth.appleEnabled}
+              onPress={() => void run(() => auth.signInApple())}
+            />
             <GoogleSignInButton
               busy={busy}
               enabled={auth.googleEnabled}
