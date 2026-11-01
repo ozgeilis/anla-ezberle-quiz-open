@@ -71,3 +71,5 @@ Durumlar çalışma sırasında güncellenir; ortak Android kanıtları iOS ger�
 | Moderasyon/rapor/engelleme | Kod taraması + REVIEW-CHECKLIST | Eksik / yayın öncesi karar | Yeni server/ürün kapsamı ve test |
 | Mağaza metadata / beta / review dosyaları | STORE-METADATA.tr.md | Hazır | Reviewer hesabı ve nihai gerçek özellik kabulü |
 | IPA/Connect/TestFlight/App Review dağıtımı | TESTFLIGHT-PLAN.md | Apple geliştirici hesabı ve ayrı onay bekliyor | Üretim yapılmadı/yüklenmedi |
+
+Yayımdaki `/privacy` (30 Ekim metni, Android reklam testi bölümü) ve `/settings/help` (Yardım ve mevcut destek e-postası) gerçek Chrome arayüzünde 1 Kasım günü doğrulandı. iOS politika eki henüz yayımlanmadı. Onaylı ikon `assets/images/icon.png`: 1024×1024, alfa kanalı yok; görsel değiştirilmedi.

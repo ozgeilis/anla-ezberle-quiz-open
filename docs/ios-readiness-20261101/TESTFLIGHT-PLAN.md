@@ -27,3 +27,9 @@ Bu PR bir App Store gönderimi değildir. Apple üyeliği, App ID kaydı veya cr
 EAS Update şu an yapılandırılmadı (`expo-updates` doğrudan bağımlılığı/runtimeVersion/updates.url yok). Bu PR OTA yayınlamaz. Apple native modülünün eklenmesi yeni native build gerektirir. Gelecek OTA yalnız uyumlu runtime ve özel test kanalıyla ayrı incelenmelidir.
 
 TestFlight profilinde Expo Notifications plugin'i APNs `production` ortamını üretir; diğer mevcut profillerin plugin seçenekleri korunur. Bu, Apple APNs anahtarının kurulduğu veya teslimin test edildiği anlamına gelmez. Capability/provisioning ve EAS credential kabulü ayrıca gereklidir.
+
+## Eski prototip ile kalıcı uygulamanın aynı telefonda bulunması
+
+İki farklı Bundle ID aynı `anla-ezberle-quiz` scheme'ini taşıyabilir; callback yanlış yüklü uygulamaya giderse PKCE doğrulayıcısı bulunamaz. Kalıcı ID'ye geçişte bu risk ayrı gerçek cihaz testidir. Prototipi silmek veya scheme'i onaysız değiştirmek çözüm olarak uygulanmadı.
+
+`templates/apple-app-site-association.json` yalnız Team ID doldurulacak bir taslaktır; web'e servis edilmedi, Associated Domains entitlement eklenmedi, Auth redirect izni genişletilmedi. Üretim için doğrulanmış Team+kalıcı ID ile yalnız `/online/auth` Universal Link kapsamı, sahipliği doğrulanmış HTTPS domain/AASA, Safari/ASWebAuthenticationSession ve Supabase dar callback yapılandırması ayrı incelenmeli/onaylanmalı. AASA şablonundaki placeholder'ı yayımlamak geçerli kurulum değildir. İki uygulama birlikte yüklüyken e-posta/Google recovery akışı doğru uygulamada kanıtlanmadan kalıcı ID'nin Auth kabulü tamamlanmış sayılmaz.

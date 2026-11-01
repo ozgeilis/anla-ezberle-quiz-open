@@ -1,0 +1,18 @@
+{
+  "command": "pnpm check",
+  "status": "passed",
+  "tests": 404,
+  "passed": 404,
+  "failed": 0,
+  "skipped": 0,
+  "typecheck": "passed",
+  "lint": "passed",
+  "questionsCheck": "Frozen v71/v72 and active v73 canonical files match exactly",
+  "appleSecurityTests": 8,
+  "physicalIos": "not_run",
+  "realAppleOAuth": "not_run_provider_disabled",
+  "crossPlatformOnlineMatch": "not_run_requires_authorized_accounts",
+  "dependencyAdvisory": "5 same-SDK patch updates suggested, not applied",
+  "build": "pending",
+  "note": "Unit evidence is not real Apple/Safari/APNs or physical iPhone acceptance."
+}

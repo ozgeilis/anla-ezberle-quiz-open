@@ -7,3 +7,5 @@ Mağaza planı: iPhone'un zorunlu büyük ekran ölçülerinde güncel Apple [sc
 Önerilen sıra: Ana Sayfa, Kategoriler, Quiz, sonuç/açıklama, Rozetler, Profil. Gerçek Apple giriş ve online oda kabulünden önce bu özellikleri çalışıyor gösteren mağaza görseli üretilmeyecek. Kullanıcı adı, e-posta, kod, JWT, provider ekranı veya özel hesap bilgisi mağaza görseline dahil edilmez.
 
 Simülatörün saati/status barı CLI ile yalnız sunum için düzenlenebilir; bu ağ/cihaz kanıtı üretmez. Test edilen OS/cihaz/commit ve ölçüler raporda ayrıca yazılacak.
+
+1 Kasım 2026 resmî Apple tablosunda zorunlu iPhone sınıfı **Dynamic Island medium** olarak belirtiliyor: 1179×2556 veya 1206×2622 portre; desteklenen iPad için 13-inch 2064×2752 veya 2048×2732. 390 pt iPhone13 Pro'nun 1170×2532 test görseli bu ana sınıfın gerçek ölçüsü diye sunulmaz. iPad ve büyük Dynamic Island görselleri gerçek ilgili simülatörden alınmalı; mağaza kabulü bu ölçülerle Connect'te ayrıca doğrulanmalı. iPhone Duo için Nisan2027 sonrası SDK27.1 koşulu aynı sayfada belirtiliyor; gelecek gönderim tarihinde tekrar kontrol gerekir.

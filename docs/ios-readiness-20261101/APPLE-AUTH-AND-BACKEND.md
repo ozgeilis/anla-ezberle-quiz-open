@@ -30,3 +30,9 @@ Bunlar kod/birim testi düzeyindedir. Gerçek Apple giriş, relay posta teslimi,
 - Apple güvenli hesap silme + Apple grant iptali + mevcut Google/parola silme regresyonu.
 
 Kaynaklar: [Expo SDK58 AppleAuthentication](https://docs.expo.dev/versions/latest/sdk/apple-authentication/), [Supabase Apple Auth](https://supabase.com/docs/guides/auth/social-sign-in/auth-apple), [Apple hesap silme](https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion).
+
+## Gizli e-posta / ilk isim için ek kabul
+
+Apple Private Email Relay'e posta gönderecek gerçek SMTP gönderen adres/domain kaynakları Apple hesabında kaydedilmeli ve SPF/DKIM doğrulanmalı; mevcut posta hizmetini sırf Apple testi için değiştirme. Native giriş için ikinci bir doğrulama e-postası istenmez, fakat hesap silme/iletişim kodlarının relay'e gerçekten ulaştığı kabul edilmeden Apple hesabı genel kayda açılmaz. [Apple relay yapılandırması](https://developer.apple.com/help/account/capabilities/configure-private-email-relay-service/).
+
+İlk Apple onayı Supabase'te başarısız olursa doğrulanmamış ad/e-posta ayrı bir yerel kullanıcı kaydına kalıcı yazılmaz. Yeniden denemede Apple ad vermeyebilir; kullanıcı mevcut profil kurulumundan adını seçebilir. İsim kaybını gidermek için başka hesaba ait veriyle eşleştirme yapılmaz. Başarılı ilk girişte ad yalnız doğrulanmış kendi Auth metadata alanına yazılır; mevcut görünen profil üzerine otomatik yazılmaz.
