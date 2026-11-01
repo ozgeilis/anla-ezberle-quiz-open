@@ -21,7 +21,7 @@ ve [canlı kanıt](../xp-notifications-20261101/backend-deployment.md).
 | Gerçek Google OAuth | Hosted web ve Android native hesap seçimi/otomatik Profil geçti; native force-stop/relaunch aynı doğrulanmış hesap. İlk uzun deneme başarı sayılmadı |
 | Gmail / fiziksel Samsung / iPhone | Gmail bağlantısı Android emülatörde açıldı; e-posta doğrulandı ama gecikmiş PKCE oturumu oluşmadı. Fiziksel Samsung/iPhone yapılmadı |
 | Canlı oda/düello 20 sn | Onaylı migration/Edge uygulandı; yeni default 20, eski odalar aynı. Hosted RPC sınır testi ve web düello >10 sn yanıt geçti |
-| Davetten maç oluşturma | İç create timingVersion eksikliği bulundu; yerel ileri düzeltme/legacy testleri geçti. Ek canlı onay bekliyor: direct-challenge-correction-plan.md |
+| Davetten maç oluşturma | Ek onayla Edge v18/ileri migration uygulandı. Gerçek native Katıl tek maç/iki oyuncu/20 sn; 13.67 sn'de tek cevap satırı. Kanıt: direct-challenge-correction-deployment.md |
 
 ## Sonuç geçişi düzeltmesi
 

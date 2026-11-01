@@ -247,3 +247,10 @@ create/join testi bu yolu kapsamamıştı. Sorun kaynakta ve izole yerelde
 doğrulandı; yeni ileri düzeltme ve eski maç uyumluluğu yerelde geçti.
 Bu yeni migration ve Edge alanı **henüz canlıya uygulanmadı**. Ayrı plan:
 `../timer-auth-20261101/direct-challenge-correction-plan.md`.
+
+**Sonraki güncelleme:** Kullanıcının ek plan onayı alındı; Edge v18 ve
+`20261101133436` migration'ı uygulandı. Yeni native QA APK ile gerçek hosted
+arkadaşlık kabulü / Later / Katıl / 20 sn maç başlangıcı geçti. Tek maç/iki
+oyuncu, ilk cevabın 13.67 sn'de kabulü ve çift dokunmada tek satır sunucuda
+doğrulandı. Güncel dağıtım ve sınırlar:
+`../timer-auth-20261101/direct-challenge-correction-deployment.md`.

@@ -39,13 +39,13 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 |---|---|---|---|---|---|
 | B1 | Google kayıt kök nedeni | README; #22 | Tamamlandı | Hosted hook/flags salt okunur: googleSignupEnabled=false | Cloud Testing listesi bugün yeniden okunmadı |
 | B2 | Kanca kaldırmadan süreli özel test listesi | yeni allowlist migration; #22 | Tamamlandı | İzole SQL, RLS/metadata spoof/expiry testleri | Canlıya uygulandı; yalnız onaylı iş hesabına 7 gün izin |
-| B3 | Gerçek yetkili Google yeni kayıt/giriş | #22; backend-deployment.md | Devam Ediyor | Gerçek web kaydı + Android Google hesap seçimi → otomatik Profil; aynı tek hesap/Google identity; native force-stop/relaunch aynı hesap geçti | İki geçici uygulama hesabının güvenli temizliği ve fiziksel kabul bekliyor |
+| B3 | Gerçek yetkili Google yeni kayıt/giriş | #22; backend-deployment.md | Tamamlandı | Gerçek web kaydı + Android Google hesap seçimi → otomatik Profil; tek hesap/identity; force-stop/relaunch aynı hesap; iki geçici hesap güvenle silindi | Fiziksel Samsung/iOS kabulü yok; genel Google kaydı kapalı |
 | B4 | PKCE, çift callback, taze getUser ve session hazır olunca profil | verifyLink, useAuthCallback, OnlineProvider; #22 | Tamamlandı | Unit + gerçek yerel web Auth/SMTP | Hosted Gmail/Google native ayrı test |
 | B5 | Parametresiz / ağ / kullanılmış / recovery ayrımı | callback modülleri; #22 | Tamamlandı | HTTP 15 sn/UI 35 sn; unit + yerel web bare/replay | Native hata matrisi tamamlanmadı |
 | B6 | Chrome → native cold-start otomatik profil | acceptance/screenshots; #22 | Tamamlandı | Android 14 emülatör + gerçek yerel SMTP bağlantısı | Fiziksel Samsung/Gmail değildir |
 | B7 | SecureStore oturum relaunch / çıkış | acceptance; #22 | Tamamlandı | Yerel ve gerçek hosted Android şifreli giriş; force-stop/relaunch; çıkış sonrası hosted session=0 | Fiziksel cihaz kabulü bekliyor |
-| B8 | Google hesap eşleme / silme / recovery regresyonu | mevcut #13 + #22 | Devam Ediyor | Güvenlik unit ve SQL erasure geçti | Bu adayda gerçek Google silme/native recovery bekliyor |
-| B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22 | Devam Ediyor | Edge v17 uygulandı; mevcut redirect listesi salt okunur denetlendi | Gerçek native/hosted e-posta ve Google dönüşü bekliyor; template değiştirilmedi |
+| B8 | Google hesap eşleme / silme / recovery regresyonu | mevcut #13 + #22 | Devam Ediyor | Güvenlik unit/SQL; gerçek hosted native Google OTP silme + e-posta şifresiyle silme geçti; hesap/oturum temiz | Native yeni recovery kabulü ve son hata-mesajı regresyonu ayrıca takip ediliyor |
+| B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22 | Devam Ediyor | Onaylı Edge v18/migration; gerçek Google native dönüş/kalıcılık/silme geçti; template değiştirilmedi | Geçerli yeni hosted e-posta → otomatik native giriş kabulü bekliyor; tek ek hesap planı ayrı izin gerektiriyor |
 
 ## C — XP / seviye (aynı PR: D)
 
@@ -65,8 +65,8 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 |---|---|---|---|---|---|
 | D1 | Ekli referansın açılıp incelenmesi | ekli fb742878 PNG | Tamamlandı | Görsel açıldı; teal/krem, eşit butonlar | Alt nav örneği kopyalanmayacak |
 | D2 | Tümü/İstekler/Davetler, kompakt kartlar | InboxScreen + ortak kart | Tamamlandı | 6 web + 18 native matris; ortak kart/filter | Yok (aday) |
-| D3 | Gerçek arkadaş isteği kabul/ret | mevcut social endpoint | Tamamlandı | Synthetic HTTP gerçek UI: kabul ACK/tek istek; modal regresyonu | Hosted/fiziksel yeni kabul yapılmadı |
-| D4 | Davete Katıl / Daha Sonra | challenge_reply; #22/#23 | Devam Ediyor | Fixture UI geçti; hosted kaynak kontrolünde iç create timingVersion eksikliği bulundu. Yerel regresyon hatayı üretti; yeni ileri düzeltme testi geçti | Ek migration/Edge protokolü ayrı canlı onay bekliyor; hosted kabul geçti sayılmaz |
+| D3 | Gerçek arkadaş isteği kabul/ret | mevcut social endpoint | Tamamlandı | Fixture ACK/tek istek; hosted native Kabul Et → server accepted ve pasif kart | Ret için fixture/SQL; fiziksel kabul yok |
+| D4 | Davete Katıl / Daha Sonra | challenge_reply; #22/#23 | Tamamlandı | Ek plan onayıyla v18/migration uygulandı; hosted native Later pending/read, Katıl tek maç/iki oyuncu/20 sn; 13.67 sn yanıt ve çift dokunmada tek kayıt | Fiziksel/iOS ve Play-signed kabul bekliyor |
 | D5 | Kabul / ret / iptal / süre doldu / pasif | notifications.ts | Tamamlandı | Pasif/süre doldu hiçbir katıl işlemi göstermiyor; fixture UI | Yok (aday) |
 | D6 | Push açınca aynı kompakt detay | NotificationDetail | Tamamlandı | 3 push navigation grubu; aynı kompakt detay/okundu akışı | Gerçek yeni push teslim testi yapılmadı |
 | D7 | Empty/loading/error/retry | InboxScreen | Tamamlandı | 6 matriste boş/hata/yeniden deneme; yükleme mevcut | Yok (aday) |
@@ -197,3 +197,34 @@ tekrar, eski kabul edilmiş zamansız maç/ret/iptal ve ACL kontrolleri geçti.
 Tam izole SQL ve birleşik **391 test/TypeScript/lint/soru kontrolü** geçti.
 Ek canlı değişiklik **uygulanmadı**; ayrı somut onay planı:
 `timer-auth-20261101/direct-challenge-correction-plan.md`.
+
+### Ek onay sonrası davet düzeltmesi uygulandı
+
+Yukarıdaki önceki bekleme kaydından sonra kullanıcı ek planı açıkça onayladı.
+Edge v18 ve migration `20261101133436` uygulandı. Yeni yerel QA APK üzerine
+kuruldu; gerçek hosted arkadaşlık kabulü, erteleme/pending ve davete Katıl
+işlemleri native oturumla geçti. Tek maç, iki oyuncu, 20 sn ve ilk cevabın
+13.67 sn'de tek satırla kabulü sunucuda doğrulandı. Yeni hesap yok (limit 2/2).
+Kanıt: `timer-auth-20261101/direct-challenge-correction-deployment.md`.
+Geçici hesap temizliği için mevcut Google OTP/SİL son adımı kullanıcıyı bekliyor.
+
+### İki geçici hesabın temizliği tamamlandı
+
+Sonraki kullanıcı yanıtlarıyla Google OTP ve e-posta şifreli silme mevcut native
+ekranda tamamlandı. Sunucuda iki Auth hesabı/profil 0; sahipsiz session/identity
+0. Test için süreli Google kayıt izni kaldırıldı; liste boş, genel kayıt kapalı.
+Yerel oyun geçmişi/XP korunuyor. Yeni hosted hesap limiti 2/2 olarak tüketildi;
+silinmiş olması üçüncü yeni hesap için izin vermez.
+
+### Son Google hata akışı regresyonu
+
+Callback error fragment'inin Router'da kaybolması ve eşzamanlı iki hata
+tesliminin pending kaydı tüketmesi düzeltildi. Sonuçlar bounded bellekte tek
+işlenir; nonce/hedef/expiry/PKCE/UID koruması ve implicit token reddi sürer.
+Google callback üstüne eski ekranın ikinci hata modalı açılmaz.
+396 unit test + TS/lint + web export geçti. Son Android emülatör paketinde
+gerçek Google ret açıklaması tek ekranda; yanlış expiry/ağ/ikinci modal yok,
+yeni hosted hesap 0. Başarılı native Google kanıtı son hata-işleme düzeltmeleri
+öncesindendir; güncel happy-path tekrar kabulü varsayılmaz.
+Geçerli e-posta linkinin hosted/native otomatik girişi için
+`timer-auth-20261101/fresh-email-native-retest-plan.md` hazır; ayrı izin bekler.

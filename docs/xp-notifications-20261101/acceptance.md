@@ -2,7 +2,7 @@
 
 | Alan | Sonuç | Sınır |
 |---|---|---|
-| TypeScript / lint / unit | 391 geçti | Son hata mesajı düzeltmesi dahil; istemci adayı yayımlanmadı |
+| TypeScript / lint / unit | 396 geçti | Callback hata/Router regresyonları dahil; istemci adayı yayımlanmadı |
 | SQL | İzole entegrasyon ve onaylı hosted dağıtım geçti | Üç migration ve Edge v17; ayrıntı backend-deployment.md |
 | Web export | Geçti | Fixture ve hosted public yapılandırmalı export; Production değişmedi |
 | Web 320/360/390 açık/koyu | 6 matris geçti | Gerçek UI; synthetic HTTP |
@@ -16,7 +16,10 @@
 | Hosted Android e-posta kaydı | Hesap oluştu ve e-posta doğrulandı | Gecikmiş bağlantıda otomatik giriş **geçmedi**: flow_state_expired |
 | Hosted Android şifreli giriş | Geçti | Sahip şifreyi girdi; force-stop/relaunch kalıcılığı ve uygulamadan çıkış doğrulandı |
 | Hosted canlı oda süre sınırı | Geçti | İki izinli test aktörüyle SQL RPC; 15.02 sn kabul, 20 sn sonrası ret, 5 sn reveal; iki cihaz UI testi değildir |
-| Hosted davetten yeni maç kabulü | **Açık sorun; düzeltilmiş aday onay bekliyor** | İç create timingVersion eksikliği; yerelde önce hata, sonra düzeltme/legacy regresyonu geçti. Ek migration canlıya uygulanmadı |
+| Hosted davetten yeni maç kabulü | **Ek onayla düzeltildi ve geçti** | Edge v18/migration; native Later pending/read, Katıl tek maç/iki oyuncu/20 sn; 13.67 sn'de tek cevap kaydı |
+| Hosted arkadaşlık kartı | Geçti | Native Kabul Et → gerçek Edge ACK/server accepted; pasif karta geçti |
+| İki geçici hesap temizliği | Geçti | Google OTP ve e-posta şifreli mevcut silme ekranları; sunucuda hesap/profil 0, sahipsiz session/identity 0; süreli izin kaldırıldı |
+| Son Google ret mesajı | Geçti | Son QA emülatöründe gerçek sağlayıcı: tek kapalı test açıklaması; yanlış ağ/expiry/ikinci modal yok; yeni hesap yok |
 
 QA APK SHA-256: `717b254d372c83712cc3d02f5b4dba058f5b77df781d19f03cf1b4cd5d66a1da`.
 Bu paket code 5 yerel QA'dır; EAS/Play sürüm tahsisi değildir. İçindeki Auth
@@ -28,6 +31,16 @@ Sonraki hosted QA APK SHA-256:
 Bu da yalnız emülatör için yerel debug imzalıdır. Gerçek Frankfurt Auth testi
 bu paketle yapıldı; son `6148c2e` hata mesajı düzeltmesi henüz bu binary'de yok.
 EAS/Play imzalı kabul APK'sı ve fiziksel kabul bekliyor.
+
+Son protokol düzeltmesini ve hata mesajını içeren hosted QA APK SHA-256:
+`1300e5175353eaba8df98e3e3ffcaf07a3b5b71c68361117f4ea19f108560254`.
+Bu da yalnız yerel emülatör debug imzalıdır; kurulu Google oturumu korunarak
+güncellendi. Ayrıntı: `../timer-auth-20261101/direct-challenge-correction-deployment.md`.
+
+Son hata-işleme ve tek ekran ret adayının QA SHA-256:
+`26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014`.
+Başarılı native Google girişi önceki pakette; final ret akışı bu pakette.
+Geçerli yeni hosted e-posta otomatik giriş kabulü ve fiziksel cihaz hâlâ bekler.
 
 Gerçek native UI ekranları ve tarayıcı kayıtları `screenshots/` içindedir. Ham UI/SQL/video çıktıları ve özel yerel Auth
 kanıtları depo dışında tutulur. Gerçek kimlik bilgisi Git'e eklenmez.
