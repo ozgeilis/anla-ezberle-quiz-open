@@ -103,3 +103,25 @@ draft. The Google Group and members must not be deleted.
 EAS account usage reread on 1 November: Free plan, Android 0/15 used in the
 1 November–1 December cycle. Remote Android versionCode before this build: 4.
 No paid build, billing change or signing-key rotation is authorized.
+
+## Preparation results
+
+- Owner-confirmed Google Groups draft deletion completed. Console now shows
+  no release and an inactive additional track; the empty track record remains
+  in Console. Alpha remains active. The Google Group and members were not
+  deleted; the Alpha list/countries were not modified.
+- Authorized EAS build `6e07ccb8-b259-4d18-9965-8e2c249aebf7`, source
+  `ba47975f7976954fc51339b3b722424b7ac0f57e`, `ads-closed-test`, 0.1.0/code5,
+  started 1 November 16:13 UTC. The one-build gate was reclosed immediately
+  after snapshot capture. It is not an upload or publication result.
+- Full main-targeted CI uncovered stale integration assumptions: direct-duel
+  regression calls omitted timingVersion=2; the security inventory rejected
+  the reviewed private/expiring Google test allowlist email column; the inbox
+  test counted its action before the separate friend fetch completed.
+  Test harnesses now exercise v2, explicitly reject legacy new-match acceptance,
+  require a 20-second server deadline, retain all cross-user/RLS assertions,
+  allow only that exact server-only expiring address column with read-only
+  Auth-hook privilege, and wait for the actual actionable card state.
+  No app or server runtime source changed after the approved build snapshot.
+  Rollback-only security SQL passed on the migrated isolated local stack.
+  All GitHub checks must pass before merge; failed runs are not hidden.

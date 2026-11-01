@@ -33,7 +33,20 @@ INSERT INTO quiz_private.live_members(room_id,player_id)
  SELECT o.id,p.id FROM security_objects o CROSS JOIN security_people p WHERE o.kind='room' AND p.label='b';
 
 DO $$ DECLARE t record;f record;BEGIN
- ASSERT NOT EXISTS(SELECT 1 FROM information_schema.columns WHERE table_schema IN('public','quiz_private') AND column_name ~* '(password|passwd|secret|access_token|refresh_token|email)'), 'No application credential columns';
+ -- The reviewed, expiring Google test allowlist stores a server-only address,
+ -- never a credential. Do not exempt other application email/secret columns.
+ ASSERT NOT EXISTS(SELECT 1 FROM information_schema.columns
+  WHERE table_schema IN('public','quiz_private')
+   AND column_name ~* '(password|passwd|secret|access_token|refresh_token|email)'
+   AND NOT (table_schema='quiz_private' AND table_name='google_signup_test_allowlist' AND column_name='email')),
+  'No application credential columns outside the private test allowlist';
+ ASSERT has_table_privilege('supabase_auth_admin','quiz_private.google_signup_test_allowlist','SELECT'),
+  'Auth hook can read its server-managed test allowlist';
+ ASSERT NOT has_table_privilege('supabase_auth_admin','quiz_private.google_signup_test_allowlist','INSERT,UPDATE,DELETE,TRUNCATE'),
+  'Auth hook cannot expand its test allowlist';
+ ASSERT EXISTS(SELECT 1 FROM information_schema.columns WHERE table_schema='quiz_private'
+  AND table_name='google_signup_test_allowlist' AND column_name='expires_at' AND is_nullable='NO'),
+  'Test permission requires an expiry';
  FOR t IN SELECT c.oid,c.relrowsecurity,c.relforcerowsecurity FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='quiz_private' AND c.relkind='r' LOOP
   ASSERT t.relrowsecurity AND t.relforcerowsecurity,'Private tables require forced RLS';
   ASSERT NOT has_table_privilege('anon',t.oid,'SELECT,INSERT,UPDATE,DELETE,TRUNCATE'),'No anon private table access';

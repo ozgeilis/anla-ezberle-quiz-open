@@ -188,6 +188,9 @@ try {
         .getByRole("heading", { name: "Bildirimler", exact: true })
         .boundingBox();
       assert(headingBounds.height < 45, "Inbox title must fit on one line");
+      // The inbox and its owner-checked friend records load independently.
+      // Wait for the real actionable state, not merely the notification row.
+      await button(p, "Deniz: arkadaşlık isteğini kabul et").waitFor();
       assert.equal(
         await button(p, "Deniz: arkadaşlık isteğini kabul et").count(),
         1,
