@@ -46,6 +46,16 @@ jobs:
       - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359 # v3.0.1
         with:
           version: 2.121.0
+      - name: Initialize real local Storage schema for erasure regression
+        run: |
+          python3 - <<'PYCONFIG'
+          from pathlib import Path
+          path = Path("supabase/config.toml")
+          source = path.read_text()
+          setting = "[storage]\nenabled = false"
+          assert source.count(setting) == 1
+          path.write_text(source.replace(setting, "[storage]\nenabled = true", 1))
+          PYCONFIG
       - name: Ephemeral local Supabase; no hosted credentials
         run: supabase start --exclude studio,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
       - name: Canonical staging, historic games, ACL and server scoring

@@ -125,3 +125,33 @@ No paid build, billing change or signing-key rotation is authorized.
   No app or server runtime source changed after the approved build snapshot.
   Rollback-only security SQL passed on the migrated isolated local stack.
   All GitHub checks must pass before merge; failed runs are not hidden.
+
+## Artifact verification before upload
+
+EAS build finished 1 November 16:31 UTC. Actual AAB code5 SHA-256:
+`3ebf000c7291269663a41dd1d0e631d06d77e35bf3f2943d425f6c2292022ae9`.
+The package/scheme/upload certificate are unchanged; target36, all52 native64
+ELF files and bundle alignment pass16KB checks. Hermes bytecode is exactly the
+owner-accepted QA APK bytecode. Native cloud binaries were rebuilt and are not
+claimed byte-identical to the local QA build. Static byte scanning initially
+joined adjacent Hermes strings after the SDK literal `sb_secret_`; decoded
+Hermes string-table scanning verified that this was not an embedded secret.
+
+The actual AAB-derived universal APK, signed only with the existing isolated
+local debug key, updated the Android14 emulator without uninstalling it. Prior
+20XP/score200 remained. An actual ten-question round completed: a fresh question
+showed20s, background time reduced the deadline (20 ->13), a response after12s
+was accepted, and the result displayed the full score without an empty-game
+interstitial observed by the UI sampler. This is sampling, not proof of every
+video frame; earlier detailed transition acceptance remains separately recorded.
+The new local result added10XP; Profile correctly showed30/100XP and total300.
+No hosted account was created. Physical-device and Play-signed runtime acceptance
+remain absent. [Artifact details](alpha-update-20261101/artifact-evidence.json),
+[native events](alpha-update-20261101/native-smoke-result.json) and screenshots
+are retained alongside prior hosted Auth/inbox evidence.
+
+The canonical CI test now follows config.toml's local project_id. Its account
+erasure regression also requires the real Storage schema; CI enables only its
+throwaway local Storage service before startup. The repository/hosted Storage
+configuration is unchanged. No synthetic substitute table or weakened erasure
+assertion was added. All checks must be green before main integration/upload.

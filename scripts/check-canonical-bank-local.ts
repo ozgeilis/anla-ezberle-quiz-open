@@ -53,6 +53,15 @@ const sql = (query: string, database = db) =>
     query,
   );
 try {
+  if (
+    sql(
+      "SELECT to_regclass('storage.s3_multipart_uploads') IS NOT NULL;",
+      "postgres",
+    ).trim() !== "t"
+  )
+    throw Error(
+      "Local Storage must be initialized for account erasure assertions",
+    );
   const schema = docker([
     "exec",
     container,
