@@ -217,3 +217,33 @@ kuyruğu da kalıcı yazılmadı. Yeni hesap, canlı Auth ayarı, gerçek kullan
 veya eski oda değişikliği yapılmadı. Bu SQL RPC entegrasyon kanıtıdır; gerçek
 iki cihaz UI'sı, Edge kimlik doğrulaması veya push teslimi değildir.
 Özet: `hosted-live-boundary-result.json`.
+
+## Gerçek Android Google testi — kısa deneme geçti
+
+Hesap sahibinin ilk ek Google doğrulaması uzun sürdü. Chrome Production ana
+sayfasına düştü; native uygulamaya dönülmedi, hosted yeni giriş/oturum yoktu.
+Auth loglarının bu denemesinde expiry ifadesi vardı. Kullanıcının “ana sayfa
+açıldı” yanıtı tek başına native Auth kabulü olarak kullanılmadı.
+
+Yeni kısa deneme: native Google butonu → gerçek Google hesap seçimi → yalnız
+aynı izinli iş kimliği → otomatik native **Profilim**. Hosted son giriş
+`2026-11-01T13:07:32.664661Z`, tek uygulama hesabı/tek Google identity doğrulandı.
+Webde önceki test oturumu + yeni native oturum iki session'dır, iki hesap değildir.
+Force-stop/relaunch sonrasında Hesap ekranı aynı iş e-postasını ve doğrulanmış
+durumu gösterdi; önceki e-posta fixture kimliği görünmedi. Yeni uygulama
+şifresi veya ikinci doğrulama e-postası istenmedi. Yeni hesap oluşturulmadı.
+
+Kanıt: `hosted-google-native-result.json` ve
+`screenshots/hosted-google-native-session-relaunch.png`. Gerçek Android 14
+emülatörüdür; fiziksel Samsung/iOS testi değildir. Aynı iki geçici hesabın
+son entegrasyon ve güvenli temizliği bekliyor.
+
+## Açık: davet kabulünün timing protokolü
+
+Hosted matchmaking fonksiyonunun mevcut MD5'i
+`cf3e39c0494f8260131ea3e08eb15d00`. İç create, timingVersion olmadan çağrılıyor;
+20 sn motoru yeni davet kabulünü UPDATE_REQUIRED ile durduruyor. Önceki
+create/join testi bu yolu kapsamamıştı. Sorun kaynakta ve izole yerelde
+doğrulandı; yeni ileri düzeltme ve eski maç uyumluluğu yerelde geçti.
+Bu yeni migration ve Edge alanı **henüz canlıya uygulanmadı**. Ayrı plan:
+`../timer-auth-20261101/direct-challenge-correction-plan.md`.

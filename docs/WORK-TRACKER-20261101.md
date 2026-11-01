@@ -39,7 +39,7 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 |---|---|---|---|---|---|
 | B1 | Google kayıt kök nedeni | README; #22 | Tamamlandı | Hosted hook/flags salt okunur: googleSignupEnabled=false | Cloud Testing listesi bugün yeniden okunmadı |
 | B2 | Kanca kaldırmadan süreli özel test listesi | yeni allowlist migration; #22 | Tamamlandı | İzole SQL, RLS/metadata spoof/expiry testleri | Canlıya uygulandı; yalnız onaylı iş hesabına 7 gün izin |
-| B3 | Gerçek yetkili Google yeni kayıt/giriş | #22; backend-deployment.md | Devam Ediyor | Gerçek Google web kayıt/otomatik profil/yenileme/çıkış/yeniden giriş geçti; tek hesap/identity | Android native Google callback ve geçici hesap temizliği bekliyor |
+| B3 | Gerçek yetkili Google yeni kayıt/giriş | #22; backend-deployment.md | Devam Ediyor | Gerçek web kaydı + Android Google hesap seçimi → otomatik Profil; aynı tek hesap/Google identity; native force-stop/relaunch aynı hesap geçti | İki geçici uygulama hesabının güvenli temizliği ve fiziksel kabul bekliyor |
 | B4 | PKCE, çift callback, taze getUser ve session hazır olunca profil | verifyLink, useAuthCallback, OnlineProvider; #22 | Tamamlandı | Unit + gerçek yerel web Auth/SMTP | Hosted Gmail/Google native ayrı test |
 | B5 | Parametresiz / ağ / kullanılmış / recovery ayrımı | callback modülleri; #22 | Tamamlandı | HTTP 15 sn/UI 35 sn; unit + yerel web bare/replay | Native hata matrisi tamamlanmadı |
 | B6 | Chrome → native cold-start otomatik profil | acceptance/screenshots; #22 | Tamamlandı | Android 14 emülatör + gerçek yerel SMTP bağlantısı | Fiziksel Samsung/Gmail değildir |
@@ -66,7 +66,7 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | D1 | Ekli referansın açılıp incelenmesi | ekli fb742878 PNG | Tamamlandı | Görsel açıldı; teal/krem, eşit butonlar | Alt nav örneği kopyalanmayacak |
 | D2 | Tümü/İstekler/Davetler, kompakt kartlar | InboxScreen + ortak kart | Tamamlandı | 6 web + 18 native matris; ortak kart/filter | Yok (aday) |
 | D3 | Gerçek arkadaş isteği kabul/ret | mevcut social endpoint | Tamamlandı | Synthetic HTTP gerçek UI: kabul ACK/tek istek; modal regresyonu | Hosted/fiziksel yeni kabul yapılmadı |
-| D4 | Davete Katıl / Daha Sonra | mevcut challenge_reply | Tamamlandı | Later pending koruyor; Katıl ACK sonrası doğru maç rotası | Hosted/fiziksel yeni kabul yapılmadı |
+| D4 | Davete Katıl / Daha Sonra | challenge_reply; #22/#23 | Devam Ediyor | Fixture UI geçti; hosted kaynak kontrolünde iç create timingVersion eksikliği bulundu. Yerel regresyon hatayı üretti; yeni ileri düzeltme testi geçti | Ek migration/Edge protokolü ayrı canlı onay bekliyor; hosted kabul geçti sayılmaz |
 | D5 | Kabul / ret / iptal / süre doldu / pasif | notifications.ts | Tamamlandı | Pasif/süre doldu hiçbir katıl işlemi göstermiyor; fixture UI | Yok (aday) |
 | D6 | Push açınca aynı kompakt detay | NotificationDetail | Tamamlandı | 3 push navigation grubu; aynı kompakt detay/okundu akışı | Gerçek yeni push teslim testi yapılmadı |
 | D7 | Empty/loading/error/retry | InboxScreen | Tamamlandı | 6 matriste boş/hata/yeniden deneme; yükleme mevcut | Yok (aday) |
@@ -175,3 +175,25 @@ yanıt kabulü, aynı isteğin tek kaydı, farklı ikinci isteğin kilitlenmesi,
 oda, geçici profil ayarı ve olası bildirim kuyruğu kalıcı yazılmadı.
 Bu yönetici bağlantısından SQL entegrasyonudur; iki telefon/Edge Auth/UI
 uçtan uca kabulü değildir. Kanıt: hosted-live-boundary-result.json.
+
+### Gerçek Android Google dönüşü ve oturum kalıcılığı
+
+İlk uzun Google doğrulaması Chrome'da Production ana sayfasına düştü; native
+login/session oluşmadı ve başarı sayılmadı. Auth loglarında expiry ifadesi var.
+Yeni kısa denemede aynı izinli iş hesabı hesap seçiminden sonra otomatik native
+Profil'e döndü. Hosted son giriş 13:07:32 UTC; tek uygulama hesabı/tek Google
+identity. Force-stop/relaunch sonrası Hesap ekranında doğru iş e-postası ve
+doğrulanmış durum görüldü; önceki e-posta test kimliği görünmedi. Uygulama
+şifresi veya ikinci uygulama e-posta doğrulaması istenmedi. Ekran görüntüsü ve
+`hosted-google-native-result.json` kanıttır; fiziksel Samsung kabulü değildir.
+
+### Davet üzerinden yeni maç: bulunan kapsam boşluğu
+
+Önceki 20 sn testleri create/join'i kapsadı; matchmaking iç create çağrısındaki
+timingVersion eksikliği atlanmıştı. Canlı kaynak bunu doğruladı. Yeni düzeltme
+eski migration'ı değiştirmez; tek ileri migration + Edge/client alanı. İzole
+regresyon önce UPDATE_REQUIRED üretti, düzeltmeden sonra 20 sn alıcı başlangıcı,
+tekrar, eski kabul edilmiş zamansız maç/ret/iptal ve ACL kontrolleri geçti.
+Tam izole SQL ve birleşik **391 test/TypeScript/lint/soru kontrolü** geçti.
+Ek canlı değişiklik **uygulanmadı**; ayrı somut onay planı:
+`timer-auth-20261101/direct-challenge-correction-plan.md`.

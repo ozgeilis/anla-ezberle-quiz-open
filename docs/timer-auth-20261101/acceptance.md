@@ -18,9 +18,10 @@ ve [canlı kanıt](../xp-notifications-20261101/backend-deployment.md).
 | Android 14 emülatör | Gerçek native kayıt → yerel SMTP bağlantısını Chrome'da açma → cold-start otomatik profil geçti |
 | Android kalıcı oturum | Force-stop/relaunch sonrası doğrulanmış hesap ve çıkış işlemi mevcut; SecureStore korunuyor |
 | Android sayaç | Native 00:20; 10 sn sonrası cevap kabulü, arka plan süre aşımı, tam tur sonucu geçti |
-| Gerçek Google OAuth | Sonraki hosted web testinde geçti; Android gerçek Google ek doğrulaması bekliyor |
+| Gerçek Google OAuth | Hosted web ve Android native hesap seçimi/otomatik Profil geçti; native force-stop/relaunch aynı doğrulanmış hesap. İlk uzun deneme başarı sayılmadı |
 | Gmail / fiziksel Samsung / iPhone | Gmail bağlantısı Android emülatörde açıldı; e-posta doğrulandı ama gecikmiş PKCE oturumu oluşmadı. Fiziksel Samsung/iPhone yapılmadı |
 | Canlı oda/düello 20 sn | Onaylı migration/Edge uygulandı; yeni default 20, eski odalar aynı. Hosted RPC sınır testi ve web düello >10 sn yanıt geçti |
+| Davetten maç oluşturma | İç create timingVersion eksikliği bulundu; yerel ileri düzeltme/legacy testleri geçti. Ek canlı onay bekliyor: direct-challenge-correction-plan.md |
 
 ## Sonuç geçişi düzeltmesi
 
