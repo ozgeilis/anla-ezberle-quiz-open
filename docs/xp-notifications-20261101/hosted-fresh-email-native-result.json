@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-01",
+  "environment": "Hosted Frankfurt Auth + Android 14 API 34 emulator; not physical Samsung",
+  "project": "mqyuihiobkomjfipxehj",
+  "package": "com.kovynelstudio.anlaezberle",
+  "source_commit": "44a55eb (PR #22), merged into PR #23",
+  "apk_sha256": "26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014",
+  "signing": "Local debug-signed QA release; not Play/EAS signed; not for installation over Play app",
+  "authority": "Owner explicitly authorized only one extra fresh email fixture and its cleanup",
+  "server_observation": {
+    "created_at": "2026-11-01T15:31:25.628162Z",
+    "email_confirmed_at": "2026-11-01T15:32:44.064703Z",
+    "last_sign_in_at": "2026-11-01T15:32:49.793420Z",
+    "sessions": 1,
+    "email_identities": 1
+  },
+  "steps": [
+    "Preflight: exact authorized fresh address had no existing Auth account",
+    "Owner entered password and submitted native registration; no credentials collected by agent",
+    "App force-stopped without clearing data; PKCE verifier retained",
+    "Owner copied actual fresh Gmail confirmation link into emulator Chrome without opening it on Mac",
+    "Native application opened automatically to Profilim; no password entered again",
+    "Native settings/account showed exact authorized fixture address and verified email",
+    "Force-stop/relaunch preserved same verified account; no new login required"
+  ],
+  "outcome": "PASS: real hosted fresh same-device Chrome-to-native automatic session and persistence",
+  "cleanup": {
+    "status": "PASS: owner completed existing password/SIL/final delete UI; native returned to sign-in",
+    "checked_at": "2026-11-01T15:40:00Z (approximate observation minute)",
+    "authorized_fixture_accounts_remaining": 0,
+    "orphan_profiles": 0,
+    "orphan_sessions": 0,
+    "orphan_identities": 0,
+    "local_history_retained": {
+      "xp": 20,
+      "last_score": 200,
+      "level": 1
+    },
+    "additional_accounts_authorized": 0
+  },
+  "limitations": [
+    "Emulator, not physical Samsung or iPhone",
+    "Earlier ~10-minute flow_state_expired result remains a separate failure with safe manual login",
+    "Final Google happy path was tested on earlier QA source; final Google denied-signup callback passed on this APK",
+    "Native password recovery and full multi-device physical acceptance remain outstanding"
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/hosted-native-fresh-email-auto-profile.png",
+      "sha256": "9a0b2efc5d21b0abd6edfed66c5f4780abcb5a34dbbda3d1bf8678b19f45e59b"
+    },
+    {
+      "path": "screenshots/hosted-native-fresh-email-account.png",
+      "sha256": "eb1a7e1e2aba952dd9cb08f19159639d4e197f43743af4a4757be54476189c25"
+    },
+    {
+      "path": "screenshots/hosted-native-fresh-email-relaunch.png",
+      "sha256": "d28930079c07c0b3622cb7c19cffbfbc5a3ceff26a50e250ef6dcae2a4024e1c"
+    },
+    {
+      "path": "screenshots/hosted-native-fresh-email-deleted-login.png",
+      "sha256": "3ed28bc49abcb28268b9f25c400f921f7b96d193df15915d931e032793fc7562"
+    },
+    {
+      "path": "screenshots/hosted-native-fresh-email-deleted-home.png",
+      "sha256": "4e1e28c989ac3ec3460a94f84d096360baeada12d41e1d69a30ead8e8c9a9797"
+    }
+  ],
+  "google_gates_after_cleanup": {
+    "oauth_enabled": true,
+    "signup_enabled": false,
+    "deletion_enabled": true,
+    "test_allowlist_rows": 0
+  }
+}

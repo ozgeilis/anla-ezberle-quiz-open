@@ -19,7 +19,8 @@ ve [canlı kanıt](../xp-notifications-20261101/backend-deployment.md).
 | Android kalıcı oturum | Force-stop/relaunch sonrası doğrulanmış hesap ve çıkış işlemi mevcut; SecureStore korunuyor |
 | Android sayaç | Native 00:20; 10 sn sonrası cevap kabulü, arka plan süre aşımı, tam tur sonucu geçti |
 | Gerçek Google OAuth | Hosted web ve Android native hesap seçimi/otomatik Profil geçti; native force-stop/relaunch aynı doğrulanmış hesap. İlk uzun deneme başarı sayılmadı |
-| Gmail / fiziksel Samsung / iPhone | Gmail bağlantısı Android emülatörde açıldı; e-posta doğrulandı ama gecikmiş PKCE oturumu oluşmadı. Fiziksel Samsung/iPhone yapılmadı |
+| Gerçek Gmail → native otomatik giriş | Son QA paketinde taze hosted bağlantı Chrome → native cold-start Profil; doğru fixture verified/session=1, force-stop/relaunch geçti. Önceki gecikmiş PKCE expiry ayrı başarısız deneme olarak korunur; kanıt: ../xp-notifications-20261101/hosted-fresh-email-native-result.json |
+| Fiziksel Samsung / iPhone | Yapılmadı; emülatör kabulü yerine sayılmaz |
 | Canlı oda/düello 20 sn | Onaylı migration/Edge uygulandı; yeni default 20, eski odalar aynı. Hosted RPC sınır testi ve web düello >10 sn yanıt geçti |
 | Davetten maç oluşturma | Ek onayla Edge v18/ileri migration uygulandı. Gerçek native Katıl tek maç/iki oyuncu/20 sn; 13.67 sn'de tek cevap satırı. Kanıt: direct-challenge-correction-deployment.md |
 

@@ -27,6 +27,6 @@
   },
   "newHostedAccountsCreatedThisRetest": 0,
   "hostedTemporaryAccountLimitUsed": 2,
-  "cleanup": "Pending final authorized integration tests and owner-confirmed in-app deletion",
+  "cleanup": "PASS: owner completed existing native Google OTP/SIL deletion; server account/profile absent, orphan session/identity 0. See direct-correction-deployment-result.json. Google account itself was not deleted.",
   "secretsIncluded": false
 }

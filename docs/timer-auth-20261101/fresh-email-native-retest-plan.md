@@ -4,6 +4,12 @@ Bu plan henüz izin değildir. Önceki iki yeni hesap sınırı tüketildi ve ik
 hesap da sahibi tarafından güvenle silindi. Silinmeleri yeni hesap hakkı
 oluşturmaz; aşağıdaki tek ek fixture için açık ayrı onay gerekir.
 
+**Onay güncellemesi:** Kullanıcı 1 Kasımda yalnız bu tek ek hesap testini açıkça
+onayladı ve hazır olduğunu bildirdi. Salt okunur önkontrolde bu adrese ait
+hesap sayısı 0; mevcut gerçek hesap bulunmadı. Kayıt formu hazırlandı;
+şifre/kayıt ve Gmail bağlantısını Chrome'a aktarma adımları kullanıcıya
+bırakıldı. Sonuç aşağıda ve birleşik kabul kaydında ayrıca kaydedildi.
+
 ## Neden
 
 Yerel SMTP → Chrome → native otomatik giriş geçti. Hosted kayıtta ise
@@ -41,3 +47,18 @@ değişmez. Bu gerçek Android emülatör testidir; fiziksel Samsung kabulü de�
 Başarısızlıkta tekrar tekrar yeni hesap oluşturulmaz. E-posta teslimi veya
 bağlantı aktarımı gecikirse mevcut test hesabında durulur; sonuç açık kaydedilir.
 Yerel PKCE/TokenHash araştırması canlı şablon değişikliği onayı değildir.
+
+## Gerçek test sonucu
+
+Onaylanan tek fresh hesap 15:31:25 UTC'de oluştu. Sahip taze Gmail bağlantısını
+Chrome'da açtı; sunucuda 15:32:44 UTC doğrulama ve 15:32:49 UTC giriş/session=1
+görüldü. Uygulama cold start ile doğrudan Profilim'e döndü; tekrar şifre girişi
+olmadı. Hesap ekranında tam yetkili fixture adresi ve doğrulanmış durum kontrol
+edildi. Force-stop/relaunch aynı oturumu korudu. Bu gerçek hosted Android
+emülatör kabulüdür; fiziksel Samsung veya iPhone kabulü değildir.
+
+Kanıt: `../xp-notifications-20261101/hosted-fresh-email-native-result.json`.
+Önceki gecikmiş bağlantıdaki `flow_state_expired` başarısız denemesi korunur.
+Sahip mevcut güvenli şifre/SİL/silme akışını tamamladı. Uygulama giriş ekranına
+döndü; sunucuda üç yetkili fixture hesabı 0, sahipsiz profil/session/identity 0.
+Yerel 20 XP ve son skor 200 korundu. Dördüncü hesap izni yok.

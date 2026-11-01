@@ -3,15 +3,17 @@
 Bu kayıt önceki talimatları iptal etmez. `Tamamlandı` yalnız belirtilen kapsamın
 uygulama + test kanıtıdır; canlı yayında olduğu anlamına gelmez. Aday ve üretim
 ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
+Tablolar son durumu gösterir; aşağıdaki kronolojik notlardaki eski bekleme
+kayıtları, daha sonraki kabul/temizlik sonuçlarıyla birlikte okunmalıdır.
 
 ## Dal / çakışma envanteri
 
 - En güncel kapalı test kod tabanı: `release/play-final-candidate-20261030`
   `31e1278`; PR #20 → #18 → #17 katmanlı, henüz main'e birleşmemiş.
 - Süre / Auth / sonuç geçişi: `fix/twenty-second-auth-callback-20261101`
-  `e29e56d`, [PR #22](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/22).
+  `44a55eb`, [PR #22](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/22).
 - XP + bildirimler: ayrı `feat/progressive-xp-notification-cards-20261101`
-  worktree; #22 üzerine kurulu. [PR #23](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/23), `d2363cd`; XP ve bildirimler aynı PR içinde.
+  worktree; #22 üzerine kurulu. [PR #23](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/23); XP ve bildirimler aynı PR içinde. Son kaynak kabulü `7889be4`; sonraki commit'ler kabul belgeleridir.
 - #13 açık Google Auth öncülü; kodu sürüm tabanında zaten var. Eski dalı yeniden
   merge ederek güncel hesap silme/callback kodunun üzerine yazılmayacak.
 - Mevcut worktree'ler incelendi; diğer worktree'lerin commit edilmemiş dosyaları
@@ -28,8 +30,8 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | A2 | Eski 10 sn / zamansız kayıtlar | schema, engine; #22 | Tamamlandı | tarihsel oyun regresyonu | Yok, geçmiş üzerine yazılmadı |
 | A3 | Arka plan / çift cevap / sınır anı | QuestionClock; #22 | Tamamlandı | monotonic + wall-clock / high-water; native arka plan süre aşımı geçti | Fiziksel cihaz bekliyor |
 | A4 | Canlı oda yeni default / CHECK 20; eski oda korunur | yeni timing migration; #22 | Tamamlandı | İzole SQL + hosted iki test aktörü RPC: 15.02 sn kabul, >20 sn ret, 5 sn reveal, tek kayıt | Canlıya onayla uygulandı; eski 10 oda aynı; iki cihaz testi değil |
-| A5 | Asenkron server-authoritative süre / expire / idempotency | timing migration, online-duel; #22 | Tamamlandı | izole SQL 19 sn kabul, 20.1 sn ret, özel anahtarlar | Edge v17/SQL canlı; gerçek iki oyunculu servis kabulü bekliyor |
-| A6 | Canlı istemci/sunucu birlikte etkin | #22; backend-deployment.md | Devam Ediyor | Onaylı Edge v17 + timing migration; default 20 ve eski kayıt koruması doğrulandı | Yeni aday istemci gerçek hosted maç kabulü ve Alpha güncellemesi bekliyor |
+| A5 | Asenkron server-authoritative süre / expire / idempotency | timing migration, online-duel; #22 | Tamamlandı | İzole SQL 19 sn kabul/20.1 sn ret; hosted native davet kabulü, 13.67 sn tek yanıt; özel anahtarlar | Edge v18/SQL canlı; iki fiziksel oyunculu kabul yok |
+| A6 | Canlı istemci/sunucu birlikte etkin | #22; backend-deployment.md | Devam Ediyor | Edge v18 + ileri timing/davet migration; yeni QA istemci gerçek hosted maç kabulü/20 sn geçti, eski kayıtlar korundu | Yeni imzalı istemci ve Alpha güncellemesi bekliyor |
 | A7 | Son cevap → skor öncesi boş oyun ekranı | QuizScreen; #22 | Tamamlandı | 6 turda DOM commit gözlemi, boş ekran 0 | Native 100 video karesi: boş mesaj 0; skor 62 kare |
 | A8 | Fiziksel Android / Alpha güncellemesi | acceptance.md; #22 | Engellendi | QA APK yerel emülatörde 00:20 | Fiziksel cihaz ve ayrı yayın onayı |
 
@@ -38,14 +40,15 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | Görev | Alt gereksinim | Dosya / PR | Durum | Test / kanıt | Kalan |
 |---|---|---|---|---|---|
 | B1 | Google kayıt kök nedeni | README; #22 | Tamamlandı | Hosted hook/flags salt okunur: googleSignupEnabled=false | Cloud Testing listesi bugün yeniden okunmadı |
-| B2 | Kanca kaldırmadan süreli özel test listesi | yeni allowlist migration; #22 | Tamamlandı | İzole SQL, RLS/metadata spoof/expiry testleri | Canlıya uygulandı; yalnız onaylı iş hesabına 7 gün izin |
+| B2 | Kanca kaldırmadan süreli özel test listesi | yeni allowlist migration; #22 | Tamamlandı | İzole SQL, RLS/metadata spoof/expiry testleri; izinli Google testi geçti | Test temizliği sonrası liste boş; googleSignupEnabled=false |
 | B3 | Gerçek yetkili Google yeni kayıt/giriş | #22; backend-deployment.md | Tamamlandı | Gerçek web kaydı + Android Google hesap seçimi → otomatik Profil; tek hesap/identity; force-stop/relaunch aynı hesap; iki geçici hesap güvenle silindi | Fiziksel Samsung/iOS kabulü yok; genel Google kaydı kapalı |
-| B4 | PKCE, çift callback, taze getUser ve session hazır olunca profil | verifyLink, useAuthCallback, OnlineProvider; #22 | Tamamlandı | Unit + gerçek yerel web Auth/SMTP | Hosted Gmail/Google native ayrı test |
+| B4 | PKCE, çift callback, taze getUser ve session hazır olunca profil | verifyLink, useAuthCallback, OnlineProvider; #22 | Tamamlandı | 396 unit; yerel Auth/SMTP; gerçek hosted Gmail native otomatik oturum/Profil | Son Google happy-path önceki QA; final ret ve e-posta final QA'da geçti |
 | B5 | Parametresiz / ağ / kullanılmış / recovery ayrımı | callback modülleri; #22 | Tamamlandı | HTTP 15 sn/UI 35 sn; unit + yerel web bare/replay | Native hata matrisi tamamlanmadı |
-| B6 | Chrome → native cold-start otomatik profil | acceptance/screenshots; #22 | Tamamlandı | Android 14 emülatör + gerçek yerel SMTP bağlantısı | Fiziksel Samsung/Gmail değildir |
-| B7 | SecureStore oturum relaunch / çıkış | acceptance; #22 | Tamamlandı | Yerel ve gerçek hosted Android şifreli giriş; force-stop/relaunch; çıkış sonrası hosted session=0 | Fiziksel cihaz kabulü bekliyor |
-| B8 | Google hesap eşleme / silme / recovery regresyonu | mevcut #13 + #22 | Devam Ediyor | Güvenlik unit/SQL; gerçek hosted native Google OTP silme + e-posta şifresiyle silme geçti; hesap/oturum temiz | Native yeni recovery kabulü ve son hata-mesajı regresyonu ayrıca takip ediliyor |
-| B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22 | Devam Ediyor | Onaylı Edge v18/migration; gerçek Google native dönüş/kalıcılık/silme geçti; template değiştirilmedi | Geçerli yeni hosted e-posta → otomatik native giriş kabulü bekliyor; tek ek hesap planı ayrı izin gerektiriyor |
+| B6 | Chrome → native cold-start otomatik profil | hosted-fresh-email-native-result.json; #23 | Tamamlandı | Final Android 14 QA: gerçek taze Gmail bağlantısı → otomatik Profil; şifre tekrar istenmedi; exact fixture/session sunucuda doğrulandı | Fiziksel Samsung/iPhone değildir; önceki gecikmiş expiry ayrı kayıtta |
+| B7 | SecureStore oturum relaunch / çıkış | acceptance; #22/#23 | Tamamlandı | Hosted Google, şifreli ve taze e-posta callback oturumları relaunch sonrası korundu; çıkış/silme temizliği doğrulandı | Fiziksel cihaz kabulü bekliyor |
+| B8 | Google hesap eşleme / silme / recovery regresyonu | mevcut #13 + #22 | Devam Ediyor | Google OTP + iki e-posta şifreli native silme geçti; üç fixture 0, sahipsiz profil/session/identity 0; final ret açıklaması tek ekran | Yeni adayda native gerçek şifre sıfırlama kabulü bekliyor |
+| B9 | Hosted callback/template/Edge dağıtımı | rollout-plan; #22/#23 | Tamamlandı | Onaylı Edge v18/migration; gerçek Google ve taze e-posta native dönüş/kalıcılık/silme geçti; template/politika değiştirilmedi | Genel Google kaydı kapalı; imzalı Alpha ve fiziksel kabul ayrı |
+| B10 | Kullanıcı adı henüz seçilmemiş doğrulanmış profil etiketi | PlayerIdentityCard; önceki profil UI | Yapılmadı | Taze otomatik giriş görüntüsünde kullanıcı adı yokken “Misafir Oyuncu” yazıyor; gerçek oturum hesap ekranı ve sunucudan doğrulandı | Etiket oturum durumunu yanlış çağrıştırıyor; bu kabul turunda yeni kod değişikliği yapılmadı |
 
 ## C — XP / seviye (aynı PR: D)
 
@@ -83,13 +86,13 @@ ayrıdır. Fiziksel cihaz testi, emülatör veya web kontrolüyle ikame edilmez.
 | Renkli ana sayfa / profil istatistikleri | HOME-COLOR-CARDS*, PROFILE-ACCEPTANCE | Devam Ediyor | Önceki iPhone kullanıcı kabulü kaydı var; yeni XP sonrası göstergeler yeniden test edilecek |
 | Sabit 5 alt sekme / avatarlar / tema taslak-kaydet | FIXED-TABS*, MOBILE-UI*, mevcut tests | Devam Ediyor | Kod korunuyor; fiziksel %150/%200 bu yeni adayda henüz yok |
 | Ses: tok efekt / tik | AUDIO-EXPERIENCE, ANDROID-AUDIO-DEVICE-ACCEPTANCE | Engellendi | Son ses sürümünün fiziksel Samsung kabulü kullanıcıdan bekleniyordu; geçti sayılmadı |
-| Güvenli hesap silme / web / gizlilik | ACCOUNT-DELETION*, policy #19 | Devam Ediyor | Yeni SQL erasure regresyonu geçti. Canlı backend değiştirilmedi; yeni auth Google kabulü ayrıca bekliyor |
+| Güvenli hesap silme / web / gizlilik | ACCOUNT-DELETION*, policy #19 | Devam Ediyor | SQL erasure ve hosted native Google OTP/e-posta şifreli silme geçti; üç izinli fixture temiz. Mevcut silme backend'i değiştirilmedi; tüm platform matrisi yeniden yapılmadı |
 | Push kapalı test / FCM / APNs | PUSH-NOTIFICATIONS-READINESS | Engellendi | Önceki Android teslim/tap kullanıcı kanıtı var; tür kapatma testi ertelendi. Ücretli Apple/APNs fiziksel kabul yok; genel push açılmayacak |
 | Logo / adaptive icon / stüdyo açılışı | approved-logo-20261031, #21 | Devam Ediyor | Logo sürüm tabanında; yeni AAB upload/yayın durumunu bu oturumda doğrulamadık. Stüdyo animasyonu değiştirilmedi |
 | AdMob test / UMP / Analytics kapalı | admob-test-20261030, #18/#20 | Devam Ediyor | Kod/ayarlar korunuyor; gerçek reklam ve Analytics açılmadı |
 | Play Alpha / reviewer / Türkiye / testçiler | play-closed-test-* #17/#20 | Engellendi | Kullanıcı Alpha'nın yayında olduğunu bildirdi; güncel Console durumu bu oturumda okunmadı. Liste/kanal değiştirilmez |
 | Main / Vercel / yeni AAB yayın sınırları | bu takip + rollout planları | Engellendi | Bu adaylar için ayrı nihai onay gerekli; yapılmadı |
-| Modüler mimari / çakışma / regresyon | AGENTS.md, farklı worktree'ler | Devam Ediyor | Sonuç fix #22'de korunuyor; C/D onun üzerine. Final test sonrası diff/soy kontrolü yapılacak |
+| Modüler mimari / çakışma / regresyon | AGENTS.md, farklı worktree'ler | Tamamlandı | C/D dalı #22'nin `44a55eb` kaynağını içeriyor; 396 unit, TypeScript/lint/export ve ilgili SQL regresyonu geçti; diğer worktree değişiklikleri korunuyor |
 
 Kayıt testler ve PR kanıtları geldikçe güncellenecek. Erişilemeyen sohbetler,
 Console veya fiziksel cihazlar hakkında varsayımla `Tamamlandı` yazılmayacak.
@@ -97,7 +100,7 @@ Console veya fiziksel cihazlar hakkında varsayımla `Tamamlandı` yazılmayacak
 ## Yeni adayın tamamlanmayan yayın adımları
 
 C/D yerel kabulü canlı dağıtım anlamına gelmez. A/B: Google gerçek kayıt ve
-Gmail/hosted uçtan uca kabulü; A/C: hosted migration/Edge 1 Kasımda açık onayla uygulandı; tümü için
+taze Gmail/hosted native kabulü geçti; A/C: hosted migration/Edge 1 Kasımda açık onayla uygulandı; tümü için
 fiziksel Android/iOS ve sonraki imzalı Alpha güncellemesi ayrı bekleyen işlerdir.
 Son Settings/hesap regresyonu 11 grup; Google sentetik akışı 13 grup; C/D kabul dosyasında kanıtı var.
 
@@ -228,3 +231,25 @@ yeni hosted hesap 0. Başarılı native Google kanıtı son hata-işleme düzelt
 öncesindendir; güncel happy-path tekrar kabulü varsayılmaz.
 Geçerli e-posta linkinin hosted/native otomatik girişi için
 `timer-auth-20261101/fresh-email-native-retest-plan.md` hazır; ayrı izin bekler.
+
+### Tek ek hosted e-posta testi onaylandı
+
+Kullanıcı yalnız planlanan fresh e-posta hesabını ve testi onayladı; önkontrol
+existing count=0. Emülatör formu hazır, şifre ve gerçek Gmail linki aktarımı
+kullanıcının kontrolünde. Henüz otomatik giriş kabul sonucu yok; yeni onay
+genel kayıt/yayın/Auth politika veya dördüncü yeni hesap izni değildir.
+
+### Taze hosted Gmail otomatik giriş ve son temizlik geçti
+
+Son QA APK (`26e3b489…dae2aa014`) üzerinde taze kayıt 15:31:25 UTC, e-posta
+doğrulaması 15:32:44 UTC ve giriş 15:32:49 UTC. Sahip gerçek Gmail bağlantısını
+emülatör Chrome'da açtı; uygulama cold start ile otomatik Profilim'e döndü.
+Yeniden şifre girişi olmadı. Hesap ekranındaki tam fixture adresi, sunucudaki
+confirmed/session=1 ve force-stop/relaunch sonrası aynı oturum doğrulandı.
+Önceki yaklaşık 10 dakikalık expired bağlantı ayrı başarısız deneme olarak kalır.
+
+Sahip son mevcut şifre/SİL/silme formunu tamamladı. Native giriş ekranına döndü;
+sunucuda üç izinli fixture hesabı 0, sahipsiz profil/session/identity 0. Yerel
+20 XP, seviye 1 ve son skor 200 korundu. Google test izin listesi boş;
+oauth/deletion açık, genel Google yeni kaydı kapalı. Yeni migration/şablon/
+Auth ayarı veya yayın yok. Kanıt: `xp-notifications-20261101/hosted-fresh-email-native-result.json`.
