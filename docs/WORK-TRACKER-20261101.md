@@ -145,3 +145,23 @@ Chrome/Gmail callback kabulü bağlantının açılmasını bekliyor. Yeni hesap
 2/2; bu sınırı aşmadan mevcut iki geçici hesabın test ve güvenli temizliği
 sürdürülecek. Tarayıcı otomasyonu kapalı olduğundan manuel bağlantı aktarımı
 hazırlandı; şifre/token sohbet veya Git'e alınmadı.
+
+
+### Gecikmiş gerçek e-posta callback — açık kalan hata
+
+Native callback ulaştı; sunucu email_confirmed_at dolu ancak session yok.
+`/token` 422 `flow_state_expired`. Yaklaşık 10 dakika beklenmiş signup flow'unda
+otomatik giriş **geçmedi**. Bu aday için hosted cold-start kabulü tamamlandı
+sayılmaz. Yanıltıcı expired mesajı adayda düzeltildi; güvenli manuel giriş aynı
+hesap üzerinde bekliyor. Yeni hesap oluşturma ve Auth süresi/politika değişikliği
+yapılmadı. [Kanıt](xp-notifications-20261101/hosted-email-expired-result.json).
+
+
+### Aynı hosted hesapla güvenli giriş geçti
+
+Hesap sahibinin şifreyle Android girişi başarılı; hosted confirmed=true/session=1.
+Force-stop/relaunch sonrasında native oturum korundu. Gecikmiş callback sonucu
+ayrı başarısız kabul olarak korunur. Yeni hata mesajı +391 test ve web export
+geçti. Yerel GoTrue/Mailpit gecikme regresyonu ve token_hash alternatif kanıtı
+raporda; canlı şablon/PKCE politikası değiştirilmedi. Yeni hosted signup testi
+mevcut iki yeni hesap sınırı içinde yapılamıyor; ek hesap için ayrı izin gerekir.

@@ -129,3 +129,75 @@ sahibine bağlantıyı Mac'te tüketmeden Android Chrome'a elle aktarma adımı
 hazırlandı. Android uygulaması force-stop edildi; callback sonrası açılış
 cold-start olarak kontrol edilecek. Bu aşamada otomatik oturum veya
 Chrome→uygulama sonucu henüz başarılı sayılmıyor.
+
+
+## Gecikmiş native doğrulama sonucu — kritik açık kabul
+
+E-posta bağlantısı gerçek Android Chrome'dan uygulamaya döndü. Hesap
+sunucuda **doğrulandı**, fakat oturum açılamadı. Hosted log, tek `/verify` 303
+ve tek `/token` 422, `grant_type=pkce`, `flow_state_expired` gösteriyor.
+Sadece UI gözleminden “e-posta doğrulanmadı” sonucu çıkarılmadı.
+
+Kayıt/flow oluşturma 11:15:31 UTC, e-posta doğrulama ve kod üretimi 11:25:19 UTC.
+`last_sign_in_at` NULL ve session sayısı 0. Bu nedenle bu senaryo **otomatik
+giriş başarısı değildir**. Ayrıntı: `hosted-email-expired-result.json`.
+Resmî [PKCE belgesi](https://supabase.com/docs/guides/auth/sessions/pkce-flow)
+kısa ömürlü/tek kullanımlık kod ve akışı yeniden başlatma şartını açıklıyor;
+canlı kayıtta kod üretim zamanı yenilenmiş olsa da flow oluşturma zamanı
+korunmuş ve sunucu expired döndürmüştür. Kesin sunucu hatasıyla sınırlı
+raporlanır; PKCE kaldırılmadı, süre veya Auth satırları değiştirilmedi.
+
+UI'daki eski genel “Bağlantının süresi doldu. Yeni bir bağlantı iste.” metni,
+doğrulanmış e-postayı da yeniden doğrulama döngüsüne yönlendiriyordu.
+Adayda mesaj artık **doğrulamayı tamamladıysa güvenli giriş ekranını**, henüz
+verifiye etmediyse yeni bağlantıyı öneriyor. İstemci yalnız e-posta adresinden
+hesap doğrulandı iddiasında bulunmuyor; sahte oturum üretilmiyor. Bu metin
+düzeltmesi oturum sorununu çözmüş gibi gösterilmez; regresyon testi eklendi.
+
+Aynı doğrulanmış test hesabıyla e-posta/şifre girişi hesap sahibine hazırlandı.
+Yeni hesap oluşturulmadı; güvenli mevcut giriş ve kalıcılık kabulü bekliyor.
+Fresh signup→otomatik native session kabulünün bu hosted adayda başarılı
+sayılması için ek kontrollü tekrar gerekir; 2/2 yeni hesap sınırı korunuyor.
+
+
+## Mevcut hesap girişi ve kalıcılık — gerçek Android geçti
+
+Hesap sahibi aynı doğrulanmış test hesabının şifresini uygulamaya girdi;
+çevrimiçi düello ekranı açıldı. Hosted Auth: confirmed=true, session sayısı 1.
+UI sunucu hesabını “E-posta: doğrulandı · Çevrimiçi hesap” gösterdi.
+Uygulama force-stop ile kapatılıp native deep link ile yeniden açıldı;
+güvenli depodaki oturum korundu, tekrar şifre istenmedi. Ekran kanıtları:
+`hosted-native-password-session.png`, `hosted-native-session-relaunch.png`.
+Bu gerçek şifre girişi/kalıcılık kanıtıdır; signup callback'in otomatik
+oturumu olarak sayılmaz.
+
+## Gecikme için izole yerel regresyon / alternatif araştırması
+
+`scripts/auth-delayed-confirmation-local.ts` yalnız kesin loopback 55631/55634
+GoTrue/Mailpit ve adı sabit yerel Docker DB'yi kullanır. Canlıya bağlanamaz.
+Her fixture yeni `.invalid` adreslidir; yalnız bu yerel fixture'ın flow zamanı
+10 dakika geriye alınır. Gerçek yerel SMTP ConfirmationURL → PKCE exchange
+expired hatasını yeniden üretti. Aynı yaşta ikinci fixture'da mevcut
+verifyEmailLink token_hash/verifyOtp desteğiyle server-verified session geçti;
+aynı tokenın başka client'ta tekrarı reddedildi. Parola/token/link loglanmaz.
+
+`delayed-confirmation-local-result.json` iki kontrolü kaydeder. Bu doğrudan
+SDK/domain entegrasyonudur; native Gmail veya hosted template kabulü değildir.
+Kaynak: [Email templates](https://supabase.com/docs/guides/auth/auth-email-templates).
+TokenHash alternatifi **canlıda etkinleştirilmedi**. Mevcut Alpha/main callback
+kodunda token_hash desteği olmadığı kontrol edildi; global template değişikliği
+eski sürümü bozabilir. E-posta linkindeki bearer tokenın custom-scheme üzerinden
+taşınması ayrıca değerlendirilmeden PKCE yerine geçirilmez. Yeni client/HTTPS
+handoff ve dar opt-in şablon planı gerekirse ayrıca incelenip onaylanmalıdır.
+
+Son kod kontrolü: **391/391 test**, TypeScript/lint/soru bütünlüğü geçti;
+Frankfurt public bundle `pnpm export:web:test` geçti. Yeni mesaj henüz Play'deki
+pakette yok. Mevcut QA native kabul paketi SHA `cf547147…63f4330` idi; bu son
+metin değişikliği sonraki derlemeye girecek. Main/Production/Alpha değişmedi.
+
+
+Native hesap değişimi: hesap sahibinin başarılı girişinden sonra test e-posta
+hesabından uygulamanın mevcut “Hesaptan Çık” işlemiyle çıkıldı; hosted
+`auth.sessions` sayısı 0 doğrulandı. Yeni gerçek Google akışı Android'deki
+sistem tarayıcısını açtı (`accounts.google.com`). İş hesabının Google giriş
+adımı hesap sahibine bırakıldı; native OAuth sonucu henüz bekleniyor.

@@ -73,3 +73,12 @@ test("Auth error status fallbacks keep rate limits and network failures actionab
   assert.match(authFailureMessage({ status: 0 }), /Bağlantını/);
   assert.match(authFailureMessage({ status: 503 }), /geçici/);
 });
+
+test("expired PKCE state distinguishes missing login from email confirmation without claiming verification", () => {
+  for (const code of ["flow_state_expired", "flow_state_not_found"]) {
+    const message = authMessage(code);
+    assert.match(message, /giriş ekranından devam et/);
+    assert.match(message, /doğrulaman tamamlandıysa|doğruladıysan/);
+    assert.doesNotMatch(message, /E-postan doğrulandı\.|Doğrulama başarısız/);
+  }
+});
