@@ -143,6 +143,15 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
   );
   sql(
     readFileSync(
+      "supabase/migrations/20261101131615_direct_challenge_timing_protocol.sql",
+      "utf8",
+    ),
+  );
+  console.log(
+    sql(readFileSync("supabase/tests/direct_challenge_timing.sql", "utf8")),
+  );
+  sql(
+    readFileSync(
       "supabase/migrations/20261027000200_google_auth_closed_candidate.sql",
       "utf8",
     ),

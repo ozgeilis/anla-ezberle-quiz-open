@@ -114,9 +114,14 @@ export async function onlineRequest<T>(
         },
         body: JSON.stringify({
           operation,
-          body: ["create", "get", "start", "answer", "expire"].includes(
-            operation,
-          )
+          body: [
+            "create",
+            "get",
+            "start",
+            "answer",
+            "expire",
+            "challenge_reply",
+          ].includes(operation)
             ? { ...body, timingVersion: 2 }
             : body,
         }),
