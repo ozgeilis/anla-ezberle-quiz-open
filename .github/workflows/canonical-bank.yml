@@ -47,7 +47,7 @@ jobs:
         with:
           version: 2.121.0
       - name: Ephemeral local Supabase; no hosted credentials
-        run: supabase start --exclude studio,storage-api,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
+        run: supabase start --exclude studio,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
       - name: Canonical staging, historic games, ACL and server scoring
         run: pnpm exec tsx scripts/check-canonical-bank-local.ts "$RUNNER_TEMP/v72-private"
       - name: Stop ephemeral fixture

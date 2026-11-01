@@ -17,7 +17,13 @@ if (
 )
   throw Error("Private output outside repository required");
 mkdirSync(output, { recursive: true, mode: 0o700 });
-const container = "supabase_db_anla-play-closed-20261030";
+// Follow the configured ephemeral project instead of a developer's old AVD
+// workspace. CI starts exactly this project and has no hosted credentials.
+const projectId = readFileSync("supabase/config.toml", "utf8").match(
+  /^project_id\s*=\s*"([a-zA-Z0-9_-]+)"/m,
+)?.[1];
+if (!projectId) throw Error("Local Supabase project_id is missing");
+const container = `supabase_db_${projectId}`;
 const db = `anla_canonical_v73_${Date.now()}`;
 const docker = (args: string[], input?: string) => {
   const result = spawnSync("docker", args, {
