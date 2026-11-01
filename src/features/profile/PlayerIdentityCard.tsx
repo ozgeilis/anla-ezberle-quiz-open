@@ -80,13 +80,13 @@ export function PlayerIdentityCard({
       </View>
       <ProgressMeter
         label="Seviye ilerlemesi"
-        value={p.levelXp}
-        max={250}
+        value={p.levelPercent}
+        max={100}
         onJewel
         tone="gold"
       />
       <Txt size={12} color="#D6EDE8" style={{ textAlign: "right" }}>
-        {p.level === 100 ? "En üst seviye" : `${p.levelXp} / 250 XP`}
+        {p.level === 100 ? "En üst seviye" : `${p.levelXp} / ${p.requiredXp} XP`}
       </Txt>
     </LinearGradient>
   );

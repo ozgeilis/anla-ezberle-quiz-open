@@ -1,0 +1,15 @@
+{
+  "test": "Android 14 hosted email signup; delayed confirmation",
+  "signupCreatedAtUtc": "2026-11-01T11:15:31Z",
+  "emailConfirmedAtUtc": "2026-11-01T11:25:19Z",
+  "authCodeIssuedAtUtc": "2026-11-01T11:25:19Z",
+  "flowCreatedAtUtc": "2026-11-01T11:15:31Z",
+  "serverTokenExchangeStatus": 422,
+  "serverErrorCode": "flow_state_expired",
+  "emailConfirmed": true,
+  "sessionCreated": false,
+  "nativeCallbackReached": true,
+  "automaticLoginPassed": false,
+  "accountLimitUsed": 2,
+  "secretsIncluded": false
+}

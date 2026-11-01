@@ -1,0 +1,17 @@
+[
+  {
+    "case": "no_session",
+    "status": 401,
+    "code": "SIGN_IN_REQUIRED"
+  },
+  {
+    "case": "forged_session",
+    "status": 401,
+    "code": "SESSION_EXPIRED"
+  },
+  {
+    "case": "untrusted_origin",
+    "status": 403,
+    "code": "ORIGIN_NOT_ALLOWED"
+  }
+]

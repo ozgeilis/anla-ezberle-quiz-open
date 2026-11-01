@@ -267,7 +267,13 @@ test("daily seed and old v1/v2 saves, scores, XP and mastery survive without mig
   const old = JSON.stringify(oldFixture.stored);
   const data = parseData(old);
   assert.deepEqual(data, oldFixture.stored);
-  assert.deepEqual(progress(data.games), oldFixture.progress);
+  assert.deepEqual(progress(data.games), {
+    ...oldFixture.progress,
+    requiredXp: 100,
+    nextLevelXp: 40,
+    levelPercent: 60,
+    atMax: false,
+  });
   const a = createSession("daily", undefined, time),
     b = createSession("daily", undefined, time, {
       history: data.games,

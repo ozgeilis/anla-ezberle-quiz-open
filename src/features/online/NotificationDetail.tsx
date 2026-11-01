@@ -1,3 +1,5 @@
+import { replyFriendRequest } from "./friendRequests";
+import { getLevelFromXp } from "../../domain/scoring/levels";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { View, useWindowDimensions } from "react-native";
 import { useRouter } from "expo-router";
@@ -133,14 +135,9 @@ export function NotificationDetail({
     action(async () => {
       if (!actor || !friend || friend.state !== "pending" || !friend.incoming)
         return;
-      const saved = await onlineRequest<{ saved: boolean }>(
-        accept ? "friend_accept" : "friend_remove",
-        { friendshipId: friend.id },
-        actor,
-      );
-      if (saved.saved !== true) throw new Error("Unacknowledged action");
+      const next = await replyFriendRequest(actor, friend, accept);
       if (!alive.current) return;
-      setFriend(accept ? { ...friend, state: "accepted" } : null);
+      setFriend(next);
       setNotice(
         accept
           ? "Arkadaşlık isteği kabul edildi."
@@ -193,7 +190,7 @@ export function NotificationDetail({
             @{player.username}
           </Txt>
           <Txt size={14}>
-            Seviye {player.level} · {player.xp} çevrimiçi XP
+            Seviye {getLevelFromXp(player.xp)} · {player.xp} çevrimiçi XP
           </Txt>
           <PublicAchievements player={player} />
           <TextAction
@@ -238,6 +235,7 @@ export function NotificationDetail({
             <View style={actionRow}>
               <Button
                 fill
+                compact
                 title="Reddet"
                 variant="outline"
                 disabled={busy || loading}
@@ -245,6 +243,7 @@ export function NotificationDetail({
               />
               <Button
                 fill
+                compact
                 title="Kabul Et"
                 disabled={busy || loading}
                 loading={busy}
@@ -267,6 +266,7 @@ export function NotificationDetail({
             <View style={actionRow}>
               <Button
                 fill
+                compact
                 title="Reddet"
                 accessibilityLabel="Düelloyu Reddet"
                 variant="outline"
@@ -275,6 +275,7 @@ export function NotificationDetail({
               />
               <Button
                 fill
+                compact
                 title="Kabul Et"
                 accessibilityLabel="Düelloyu Kabul Et"
                 disabled={busy || inbox.busy}

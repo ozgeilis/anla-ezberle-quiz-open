@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "platform": "Android 14 API 34 isolated emulator; not physical Samsung",
+  "qaApkSha256": "cf5471472330c24981a92b8debf28ac7791f9ccef9551170cf5b9b42363f4330",
+  "account": "Previously authorized temporary business Google application account; not a new account",
+  "initialLongAttempt": {
+    "completedNativeLogin": false,
+    "browserEndedOnProductionHome": true,
+    "hostedNewSession": false,
+    "authLogsMentionExpiry": true,
+    "notCountedAsSuccess": true
+  },
+  "freshAttempt": {
+    "googleAccountPicker": true,
+    "nativeAutomaticProfileReturn": true,
+    "serverLastSignInUtc": "2026-11-01T13:07:32.664661Z",
+    "sameSingleApplicationAccount": true,
+    "googleIdentities": 1,
+    "additionalApplicationEmailVerification": false,
+    "additionalApplicationPassword": false
+  },
+  "forceStopRelaunch": {
+    "sameAuthorizedEmailInAccountSettings": true,
+    "emailConfirmed": true,
+    "previousEmailFixtureNotVisible": true,
+    "persistedGoogleSession": true
+  },
+  "newHostedAccountsCreatedThisRetest": 0,
+  "hostedTemporaryAccountLimitUsed": 2,
+  "cleanup": "PASS: owner completed existing native Google OTP/SIL deletion; server account/profile absent, orphan session/identity 0. See direct-correction-deployment-result.json. Google account itself was not deleted.",
+  "secretsIncluded": false
+}

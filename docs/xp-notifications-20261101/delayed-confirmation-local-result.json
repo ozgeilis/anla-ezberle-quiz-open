@@ -1,0 +1,16 @@
+{
+  "environment": "local-GoTrue-Mailpit-only",
+  "checks": [
+    {
+      "mode": "pkce",
+      "agedLocalFlowMinutes": 10,
+      "passed": true
+    },
+    {
+      "mode": "token_hash",
+      "agedLocalFlowMinutes": 10,
+      "passed": true
+    }
+  ],
+  "hostedChanges": false
+}

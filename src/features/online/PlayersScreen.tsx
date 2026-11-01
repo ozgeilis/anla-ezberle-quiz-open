@@ -1,3 +1,4 @@
+import { getLevelFromXp } from "../../domain/scoring/levels";
 import { PublicAchievements } from "../achievements/PublicAchievements";
 import { useInbox } from "./InboxProvider";
 import React, { useEffect, useRef, useState } from "react";
@@ -116,7 +117,7 @@ function Players() {
         <Txt weight="heavy">{player.name}</Txt>
         <Txt color={theme.accent}>@{player.username}</Txt>
         <Txt size={12} color={theme.muted}>
-          Seviye {player.level} · {player.xp} çevrimiçi XP
+          Seviye {getLevelFromXp(player.xp)} · {player.xp} çevrimiçi XP
         </Txt>
         <PublicAchievements player={player} />
       </View>

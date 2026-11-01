@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-01",
+  "project": "mqyuihiobkomjfipxehj",
+  "edge": {
+    "version": 18,
+    "status": "ACTIVE",
+    "verify_jwt": false,
+    "bodyGetUserAuthenticationPreserved": true,
+    "sourceSha256": "ae897270f75f65f3eb3047861b9ceca7026ec26938091b1e0a0ff4bd495a7cff",
+    "deployedBundleSha256": "5132c1db5d08124a9ba620dafbbc57440d52d2664cfd5bc639be3f966d1dc39a"
+  },
+  "migration": {
+    "name": "direct_challenge_timing_protocol",
+    "localFilename": "20261101131615_direct_challenge_timing_protocol.sql",
+    "hostedHistoryVersion": "20261101133436",
+    "sha256": "5d7b05b6bd4bf3dedf71c6893f9ed07ce013584065b59961977631c165e2466a",
+    "sourceMd5Before": "cf3e39c0494f8260131ea3e08eb15d00",
+    "sourceMd5After": "8e6b1d49bccdc03c01b83f1684627b3f",
+    "ownerAclSearchPathPreserved": true
+  },
+  "deploymentDataCheck": {
+    "matchesRoomsLedgerAwardsChallengesSameFullFingerprints": true,
+    "fullProfileFingerprintEqual": false,
+    "profileFingerprintLimit": "Native application request counters were active; equality of all profile fields is not claimed. Migration contains no player DML."
+  },
+  "securityRequests": [
+    {
+      "case": "no_session",
+      "status": 401,
+      "error": "SIGN_IN_REQUIRED"
+    },
+    {
+      "case": "fake_jwt",
+      "status": 401,
+      "error": "SESSION_EXPIRED"
+    },
+    {
+      "case": "unapproved_origin",
+      "status": 403,
+      "error": "ORIGIN_NOT_ALLOWED"
+    }
+  ],
+  "native": {
+    "platform": "Android 14 emulator; not physical Samsung",
+    "qaApkSha256": "1300e5175353eaba8df98e3e3ffcaf07a3b5b71c68361117f4ea19f108560254",
+    "localDebugSignatureOnly": true,
+    "sameSignatureInPlaceUpdate": true,
+    "googleSessionPreserved": true,
+    "friendRequestCreatedBy": "Existing authorized sender fixture via admin SQL RPC, not a second authenticated physical device",
+    "friendAcceptance": "Real native UI and authenticated Edge ACK; server accepted",
+    "later": "Pending and no match; notification marked read",
+    "join": "Real native UI and authenticated Edge ACK; accepted; one match; two players",
+    "answerSeconds": 20,
+    "firstAnswerServerElapsedSeconds": 13.67,
+    "firstAnswerTimedOut": false,
+    "firstAnswerRows": 1,
+    "doubleTapAttempted": true
+  },
+  "newHostedAccountsCreated": 0,
+  "totalAuthorizedTemporaryAccounts": 2,
+  "cleanup": {
+    "googleTemporaryApplicationAccountDeletedByOwner": true,
+    "googleAuthUsersRemaining": 0,
+    "googleProfileRowsRemaining": 0,
+    "orphanSessions": 0,
+    "orphanIdentities": 0,
+    "relatedTestDuel": "cancelled",
+    "relatedDirectChallengesRemaining": 0,
+    "emailFixturePreserved": true,
+    "businessGoogleSignupTestPermissionRemoved": true,
+    "allowlistEmpty": true,
+    "globalGoogleSignupEnabled": false,
+    "emailTemporaryAccountCleanup": "Owner completed existing password deletion UI; server auth/profile absent; native success notice and login screen",
+    "allTemporaryAuthAccountsRemaining": 0,
+    "allTemporaryProfilesRemaining": 0,
+    "ownerGoogleAccountUnaffected": true,
+    "nativeLocal20XpAndLastScore200Preserved": true
+  },
+  "mainProductionAlphaChanged": false,
+  "secretsIncluded": false,
+  "afterNativeTestProtection": {
+    "nonfixtureProfileHashSame": true,
+    "scoreLedgerHashSame": true,
+    "liveRoomsHashSame": true,
+    "awardNote": "Full award hash changed during authorized social tests/Google fixture deletion; no assertion that all award rows were unchanged."
+  },
+  "finalCallbackCandidate": {
+    "apkSha256": "26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014",
+    "localDebugEmulatorOnly": true,
+    "fullUnitTests": 396,
+    "typecheckLint": true,
+    "webExport": true,
+    "nativeClosedSignupDenial": {
+      "nativeApp": true,
+      "closedTestExplanation": true,
+      "genericNetworkError": false,
+      "wrongExpiryError": false,
+      "duplicateErrorModal": false,
+      "loginReturnAvailable": true
+    },
+    "noTemporaryAccountsRecreated": true,
+    "successfulNativeGoogleLoginNote": "Successful real hosted native login/persistence was tested before the last error-handling-only edits; no new allowed Google account was recreated for a final happy-path retest."
+  },
+  "afterCleanupProtection": {
+    "existingProfilesHashSame": "7b132d50b39e40809633d3f218dc6319",
+    "ledgerHashSame": "814ac3254b29f988fd59458f0b7df42e",
+    "awardsHashRestored": "fabfd033e67595d12a64a5d46b2e2120",
+    "roomsNote": "Cleanup can cancel rooms belonging to the explicitly authorized deleted fixtures; do not claim full room hash unchanged after deletion."
+  }
+}

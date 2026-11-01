@@ -167,6 +167,27 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
       readFileSync("supabase/tests/google_signup_test_allowlist.sql", "utf8"),
     ),
   );
+  // Only derived display levels may change; hash complete synthetic row data.
+  const snapshotSql = `SELECT jsonb_build_object(
+    'profiles',(SELECT jsonb_agg(to_jsonb(p) ORDER BY id) FROM quiz_private.player_profiles p),
+    'scores',(SELECT jsonb_agg(to_jsonb(s) ORDER BY match_id,player_id) FROM quiz_private.score_ledger s),
+    'liveRewards',(SELECT jsonb_agg(to_jsonb(r) ORDER BY room_id,player_id) FROM quiz_private.live_rewards r),
+    'matches',(SELECT jsonb_agg(to_jsonb(m) ORDER BY id) FROM quiz_private.matches m),
+    'awards',(SELECT jsonb_agg(to_jsonb(a) ORDER BY player_id,badge_id) FROM quiz_private.achievement_awards a))::text;`;
+  const levelRowsBefore = sql(snapshotSql);
+  sql(
+    readFileSync(
+      "supabase/migrations/20261101065301_progressive_player_levels.sql",
+      "utf8",
+    ),
+  );
+  console.log(
+    sql(readFileSync("supabase/tests/progressive_player_levels.sql", "utf8")),
+  );
+  if (sql(snapshotSql) !== levelRowsBefore)
+    throw Error(
+      "Display level migration changed existing synthetic player/game rows",
+    );
   // pg_dump --no-owner restores as supabase_admin. The production erasure
   // trigger is postgres-owned and its existing guards require that exact role.
   // Align only this throwaway harness; no hosted role/grant is changed.

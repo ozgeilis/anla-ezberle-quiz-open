@@ -44,9 +44,10 @@ export function authMessage(code: string | undefined) {
       "Bağlantı bu cihazın oturumuyla eşleşmiyor. E-posta başka cihazda doğrulanmış olabilir. Güvenli giriş için giriş ekranına dön veya bu cihazdan yeni bağlantı iste.",
     pkce_code_verifier_not_found:
       "E-postan başka tarayıcıda veya cihazda doğrulanmış olabilir; burada güvenli oturum bilgisi bulunamadı. Giriş ekranından devam et veya bu cihazdan yeni bağlantı iste.",
-    flow_state_expired: "Bağlantının süresi doldu. Yeni bir bağlantı iste.",
+    flow_state_expired:
+      "Güvenli giriş bağlantısının süresi doldu. E-posta doğrulaman tamamlandıysa giriş ekranından devam et. Tamamlanmadıysa yeni bir doğrulama bağlantısı iste.",
     flow_state_not_found:
-      "Bağlantı kullanılmış veya geçersiz. Yeni bir bağlantı iste.",
+      "Bu giriş bağlantısı kullanılmış veya artık geçerli değil. E-postanı doğruladıysan giriş ekranından devam et; doğrulamadıysan yeni bir bağlantı iste.",
     reauthentication_needed:
       "Güvenlik için yeni bir şifre sıfırlama bağlantısı iste.",
     signup_disabled: "Yeni hesap kaydı henüz açılmadı.",
