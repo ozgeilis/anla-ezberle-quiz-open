@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "packageId": "com.kovynelstudio.anlaezberle",
   "acceptedApkSha256": "26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014",
   "packageApproved": true,
@@ -10,8 +10,10 @@
   "acceptanceBasis": "Owner explicitly accepted this exact QA APK as the basis of one new Alpha AAB. 396 tests and actual Android emulator hosted Auth/timing/inbox evidence passed. Physical Samsung/iPhone acceptance is not claimed. Official test-ad configuration and existing frozen upload identity are retained; actual new AAB validation remains mandatory.",
   "approvedAt": "2026-11-01",
   "scope": "one free-quota ads-closed-test AAB integrating the already tested 20-second/Auth/progressive-XP/inbox source for existing Alpha; owner separately requested main and Alpha submission; no public Play Production, audience or backend changes",
-  "approvalState": "owner-approved single build pending; gate must be reclosed immediately after snapshot capture",
+  "approvalState": "one authorized cloud build snapshot captured; gate reclosed",
   "ownerReply": "Bu APK kanitiyla Alpha AAB’sini uret",
   "approvedIconCommit": "b3e65635b19f68e3fa3ba91f0413cc4d64931cfa",
-  "physicalDeviceAccepted": false
+  "physicalDeviceAccepted": false,
+  "consumedBySourceCommit": "ba47975f7976954fc51339b3b722424b7ac0f57e",
+  "consumedByBuildId": "6e07ccb8-b259-4d18-9965-8e2c249aebf7"
 }
