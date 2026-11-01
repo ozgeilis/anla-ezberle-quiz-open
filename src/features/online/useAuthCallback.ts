@@ -116,6 +116,7 @@ export function useAuthCallback() {
         setState({
           status: "error",
           google,
+          recovery,
           message:
             "İşlem zaman aşımına uğradı. Bağlantını kontrol edip yeniden dene.",
         });
