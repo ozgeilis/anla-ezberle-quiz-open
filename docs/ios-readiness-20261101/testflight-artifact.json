@@ -19,7 +19,7 @@
   "runtimeSourceUnchanged": true,
   "uploadMethod": "Xcode exportArchive destination=upload, manual Distribution signing, testFlightInternalTestingOnly=true",
   "uploadCompletedAtLocal": "2026-11-02T00:43:04+03:00",
-  "connectProcessing": "Processing_observed_real_Connect_UI_0.1.0_build2",
+  "connectProcessing": "completed_Ready_to_Test_Internal",
   "localExportIpaHashIsUploadedZipHash": false,
   "symbolUploadWarnings": [
     "React.framework dSYM missing",
@@ -28,5 +28,8 @@
   ],
   "easIosRemoteBuildNumber": "2",
   "internalGroupsAdded": 0,
-  "testersAdded": 0
+  "testersAdded": 0,
+  "connectBuildId": "26b94987-a87b-4b99-b8ee-919d7eee28a8",
+  "connectBuildUrl": "https://appstoreconnect.apple.com/teams/38b04e22-235f-4480-ab4b-32527bfe50f8/apps/6829516832/testflight/ios/26b94987-a87b-4b99-b8ee-919d7eee28a8",
+  "connectGroups": 0
 }
