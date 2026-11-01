@@ -3,6 +3,7 @@ import { authRedirectUrl } from "./authLinks";
 import {
   callbackUrlFromParams,
   hasCallbackPayload as hasPayload,
+  nativeCallbackUrl,
 } from "./authCallbackUrl";
 import { useEffect, useRef, useState } from "react";
 import { Platform } from "react-native";
@@ -38,6 +39,7 @@ export function useAuthCallback() {
   const incoming = Linking.useURL();
   const params = useLocalSearchParams<Record<string, string | string[]>>();
   const routeUrl = callbackUrlFromParams(authRedirectUrl(), params);
+  const routeGoogle = params.flow === "google";
   const [url, setUrl] = useState<string | null>(() =>
     Platform.OS === "web" ? window.location.href : null,
   );
@@ -47,8 +49,8 @@ export function useAuthCallback() {
   useEffect(() => {
     let active = true;
     void Promise.resolve().then(() => {
-      if (active && Platform.OS !== "web" && (routeUrl || hasPayload(incoming)))
-        setUrl(routeUrl ?? incoming);
+      if (active && Platform.OS !== "web")
+        setUrl(nativeCallbackUrl(incoming, routeUrl));
     });
     return () => {
       active = false;
@@ -59,8 +61,9 @@ export function useAuthCallback() {
     if (Platform.OS !== "web") {
       void Linking.getInitialURL()
         .then((value) => {
-          if (alive && hasPayload(value))
-            setUrl((current) => (hasPayload(current) ? current : value));
+          const candidate = nativeCallbackUrl(value, routeUrl);
+          if (alive && candidate)
+            setUrl((current) => (hasPayload(current) ? current : candidate));
         })
         .catch(() => undefined);
       return () => {
@@ -76,7 +79,7 @@ export function useAuthCallback() {
       window.removeEventListener("hashchange", changed);
       window.removeEventListener("popstate", changed);
     };
-  }, []);
+  }, [routeUrl]);
   useEffect(() => {
     let active = true;
     // Give cold-start Linking delivery a bounded chance to arrive.
@@ -85,8 +88,10 @@ export function useAuthCallback() {
         if (active)
           setState({
             status: "missing",
-            google: false,
-            message: new MissingAuthCredentials().message,
+            google: routeGoogle,
+            message: routeGoogle
+              ? "Google dönüş bağlantısı alınamadı. Giriş ekranından yeniden başlat."
+              : new MissingAuthCredentials().message,
           });
       }, 2000);
       return () => {
@@ -163,7 +168,7 @@ export function useAuthCallback() {
       active = false;
       clearTimeout(watchdog);
     };
-  }, [url, retry]);
+  }, [url, retry, routeGoogle]);
   return {
     state,
     retry: () => {
