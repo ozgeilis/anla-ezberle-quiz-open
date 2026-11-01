@@ -582,7 +582,9 @@ function OnlineAccountScreen() {
             <GoogleSignInButton
               busy={busy}
               enabled={auth.googleEnabled}
-              onPress={() => void run(() => auth.signInGoogle(), true)}
+              // Callback errors have their own routed screen. Startup/cancel
+              // errors stay inline here instead of opening a second modal over it.
+              onPress={() => void run(() => auth.signInGoogle())}
             />
             <Tap
               label={register ? "Giriş ekranına dön" : "Hesap Oluştur"}
