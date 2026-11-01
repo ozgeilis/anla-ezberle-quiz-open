@@ -90,3 +90,16 @@ accounts; any allowlist/policy expansion requires a separate controlled decision
    Google review completion is not under agent control.
 
 No new live Supabase migration is part of this release operation.
+
+## Current owner approvals
+
+The owner accepted the exact QA APK evidence for one new `ads-closed-test`
+AAB (reply: "Bu APK kanitiyla Alpha AAB'sini uret"). Physical Samsung/iPhone
+acceptance is explicitly absent. The prior general direction authorizes main
+integration and submission to the existing Alpha, not public Play Production.
+The owner separately approved deletion of only the unpublished Google Groups
+draft. The Google Group and members must not be deleted.
+
+EAS account usage reread on 1 November: Free plan, Android 0/15 used in the
+1 November–1 December cycle. Remote Android versionCode before this build: 4.
+No paid build, billing change or signing-key rotation is authorized.

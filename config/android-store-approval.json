@@ -1,17 +1,17 @@
 {
-  "approved": false,
+  "approved": true,
   "packageId": "com.kovynelstudio.anlaezberle",
-  "acceptedApkSha256": "aac0b20c92e0268800312447a7f84deb3a427a7e1b68b8741efd5697fd64165f",
+  "acceptedApkSha256": "26e3b4892c8fbbf627d53b5ce78ea980816af24e6345178f733baa8dae2aa014",
   "packageApproved": true,
   "packageApprovedAt": "2026-10-24",
   "approvedProfile": "ads-closed-test",
-  "acceptedApkSourceCommit": "a506f873d1de17b8bc98804df06f983558e48530",
-  "reviewedPreparationCommit": "007ed07c538a774ca68612dd140482a0b0de9a00",
-  "acceptanceBasis": "Owner requested publication after approved-logo native preview and 378 checks. Prior accepted game APK remains the code baseline; no claim that the icon-preview fixture is a game APK. New local AAB must pass static and emulator validation before Play upload.",
-  "approvedAt": "2026-10-31",
-  "scope": "one local ads-closed-test AAB for approved icon update to existing Alpha/Turkey/test-list audience; no main/public Production or backend changes",
-  "approvalState": "one local build snapshot captured; gate reclosed while compilation and validation continue",
-  "ownerReply": "yayınla",
+  "acceptedApkSourceCommit": "2e2f8cf6b49c372d8c21131ffb1346260048c0c1",
+  "reviewedPreparationCommit": "a08e9c0bf09217ca8a6bb73dd45c67e9d966dcf2",
+  "acceptanceBasis": "Owner explicitly accepted this exact QA APK as the basis of one new Alpha AAB. 396 tests and actual Android emulator hosted Auth/timing/inbox evidence passed. Physical Samsung/iPhone acceptance is not claimed. Official test-ad configuration and existing frozen upload identity are retained; actual new AAB validation remains mandatory.",
+  "approvedAt": "2026-11-01",
+  "scope": "one free-quota ads-closed-test AAB integrating the already tested 20-second/Auth/progressive-XP/inbox source for existing Alpha; owner separately requested main and Alpha submission; no public Play Production, audience or backend changes",
+  "approvalState": "owner-approved single build pending; gate must be reclosed immediately after snapshot capture",
+  "ownerReply": "Bu APK kanitiyla Alpha AAB’sini uret",
   "approvedIconCommit": "b3e65635b19f68e3fa3ba91f0413cc4d64931cfa",
-  "consumedByLocalSourceCommit": "d00efc0"
+  "physicalDeviceAccepted": false
 }
