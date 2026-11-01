@@ -40,7 +40,6 @@ export const clearGoogleAttempt = () => {
     () => undefined,
   );
 };
-export const hasGoogleAttempt = async () => !!(await pending());
 async function pending(): Promise<GoogleAttempt | null> {
   const raw = await authStorage.getItem(key);
   if (!raw) return null;
@@ -202,7 +201,9 @@ export async function startGoogleAuth(enabled: boolean) {
     await clearGoogleAttempt();
     if (
       error instanceof Error &&
-      error.message === "Google girişi iptal edildi."
+      (error.message === "Google girişi iptal edildi." ||
+        error.message.startsWith("Google girişi sunucuda") ||
+        error.message.startsWith("Google girişi tamamlanmadı."))
     )
       throw error;
     throw Error(

@@ -1,10 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AppState, Platform, View } from "react-native";
 import Svg, { Path, Rect, Defs, LinearGradient, Stop } from "react-native-svg";
-import {
-  QuestionClock,
-  QUESTION_LIMIT_MS,
-} from "../../domain/game/question-clock";
+import { QuestionClock } from "../../domain/game/question-clock";
 import { Txt, useReducedMotion } from "../../components/ui";
 import { colors as c, useTheme } from "../../theme/tokens";
 import { useSound } from "../audio/SoundProvider";
@@ -19,7 +16,7 @@ export function QuestionCountdown({
   onExpire: () => void;
 }) {
   const [remaining, setRemaining] = useState(() => clock.remaining());
-  const last = useRef(10),
+  const last = useRef(Math.ceil(clock.remaining() / 1000)),
     { play } = useSound();
   const theme = useTheme(),
     reduced = useReducedMotion();
@@ -53,7 +50,7 @@ export function QuestionCountdown({
     };
   }, [clock, stopped, play, reduced, onExpire]);
   const seconds = Math.ceil(remaining / 1000),
-    fraction = remaining / QUESTION_LIMIT_MS;
+    fraction = remaining / clock.limitMs;
   return (
     <View
       accessible

@@ -21,10 +21,21 @@ export interface OnlineMatch {
   ruleVersion: number;
   scope: "synthetic_test" | "owner_approved_v13" | "bank-v72" | "bank-v73";
   slot: "a" | "b";
+  serverNow?: string;
+  answerSeconds?: 20 | null;
+  questionOpenedAt?: string | null;
+  deadline?: string | null;
+  /** Local monotonic request origin, never sent to or accepted from a caller. */
+  requestStartedAt?: number;
   started: boolean;
   finished: boolean;
   questions: OnlineQuestion[];
-  answers: { position: number; optionId: string; requestId: string }[];
+  answers: {
+    position: number;
+    optionId: string | null;
+    requestId: string;
+    timedOut?: boolean;
+  }[];
   players: {
     slot: "a" | "b";
     name: string;
@@ -74,6 +85,7 @@ export type OnlineOperation =
   | "get"
   | "start"
   | "answer"
+  | "expire"
   | "invite"
   | "cancel";
 export interface PendingAnswer {

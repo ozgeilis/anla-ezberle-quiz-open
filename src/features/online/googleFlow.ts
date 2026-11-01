@@ -36,7 +36,11 @@ export function googleCallbackCode(
       "Google girişini doğrulayamadık. Giriş ekranından yeniden dene.",
     );
   if (u.searchParams.has("error"))
-    throw Error("Google girişi tamamlanmadı. Yeniden deneyebilirsin.");
+    throw Error(
+      u.searchParams.get("error") === "access_denied"
+        ? "Google girişi tamamlanmadı. İzin ekranını kapattıysan yeniden deneyebilirsin. Yeni Google hesabının kapalı teste ayrıca yetkilendirilmesi gerekir."
+        : "Google girişi sunucuda tamamlanamadı. Yeni hesap kaydı kapalı test iznine bağlıdır. Mevcut hesabınla giriş yapabilir veya destek isteyebilirsin.",
+    );
   const code = u.searchParams.get("code");
   if (!code || code.length > 4096 || u.searchParams.getAll("code").length !== 1)
     throw Error("Google doğrulama kodu bulunamadı.");

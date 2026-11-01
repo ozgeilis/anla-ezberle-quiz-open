@@ -235,12 +235,12 @@ test("demo kaydı yeniden çözülür; bozuk manifest/geçiş reddedilir, sahte 
     assert.throws(() => parseDemo(bad));
 });
 
-test("new demo turns use ten-second timeouts without changing legacy demo event logs", () => {
+test("new demo turns use twenty-second timeouts without changing legacy demo event logs", () => {
   let doc = invited();
   doc = start(doc, "a");
   for (let i = 0; i < 10; i++) {
     const s = restoreDemo(doc).players.a.session!;
-    const expiry = s.questionOpenedAt! + 10000;
+    const expiry = s.questionOpenedAt! + 20000;
     const early = appendDuelEvent(doc, {
       type: "timeout",
       playerId: demoPlayers.a.id,

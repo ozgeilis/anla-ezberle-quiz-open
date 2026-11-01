@@ -17,7 +17,7 @@ const fields: Record<string, string[]> = {
   leaderboard_settings: ["enabled"],
   room_options: [],
   room_list: [],
-  room_create: ["requestId"],
+  room_create: ["requestId", "timingVersion"],
   room_join: ["code"],
   room_get: ["roomId"],
   room_ready: ["roomId", "ready"],
@@ -42,13 +42,14 @@ const fields: Record<string, string[]> = {
   friend_remove: ["friendshipId"],
   self: [],
   profile: ["name"],
-  create: ["requestId"],
+  create: ["requestId", "timingVersion"],
   join: ["token"],
-  get: ["matchId"],
-  start: ["matchId"],
+  get: ["matchId", "timingVersion"],
+  start: ["matchId", "timingVersion"],
   invite: ["matchId"],
   cancel: ["matchId"],
-  answer: ["matchId", "position", "optionId", "requestId"],
+  answer: ["matchId", "position", "optionId", "requestId", "timingVersion"],
+  expire: ["matchId", "position", "requestId", "timingVersion"],
 };
 
 // Current platform keys are named JSON maps. Legacy automatic server envs

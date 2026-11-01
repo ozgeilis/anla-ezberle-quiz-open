@@ -1,3 +1,4 @@
+import { QUESTION_LIMIT_SECONDS } from "../game/question-clock";
 import type { Difficulty } from "../../content/questions/model";
 import { learningTopicsV1 } from "../../content/questions/learning-topics-v1";
 import { gameStages } from "../game/stages";
@@ -13,7 +14,7 @@ export const liveLevels = [
 ] as const;
 export type LiveLevel = (typeof liveLevels)[number];
 export const liveCounts = [5, 10, 15] as const;
-export const ANSWER_SECONDS = 15;
+export const ANSWER_SECONDS = QUESTION_LIMIT_SECONDS;
 export const REVEAL_SECONDS = 5;
 export const WIN_BONUS_XP = 20;
 // Largest-remainder scaling preserves the existing ten-question stage ratios.
@@ -45,7 +46,7 @@ export function liveClock(
   startAt: number,
   serverNow: number,
   count: number,
-  answerSeconds: 10 | 15 = ANSWER_SECONDS,
+  answerSeconds: 10 | 15 | 20 = ANSWER_SECONDS,
 ) {
   const cycle = answerSeconds + REVEAL_SECONDS;
   const elapsed = (serverNow - startAt) / 1000;

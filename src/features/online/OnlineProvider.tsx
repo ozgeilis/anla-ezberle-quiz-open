@@ -50,6 +50,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     const client = onlineClient();
     if (!client) return;
     let alive = true;
+    let authRevision = 0;
     client.rpc("online_service_capabilities").then(({ data }) => {
       if (alive) setRegistrationEnabled(data?.registrationEnabled === true);
     });
@@ -64,6 +65,8 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     client.auth.startAutoRefresh();
     const { data: listener } = client.auth.onAuthStateChange((event, next) => {
       if (!alive) return;
+      authRevision++;
+      setReady(true);
       setSession(verifiedAccount(next?.user) ? next : null);
       setNeedsVerification(
         !!next?.user &&
@@ -73,10 +76,11 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
       if (event === "SIGNED_OUT")
         setNotice("Çevrimiçi oturum kapandı. Yerel kayıtların korunuyor.");
     });
+    const initialRevision = authRevision;
     client.auth
       .getSession()
       .then(({ data, error }) => {
-        if (!alive) return;
+        if (!alive || initialRevision !== authRevision) return;
         if (error)
           setNotice("Güvenli oturum okunamadı. Yeniden giriş gerekli.");
         else {
@@ -180,7 +184,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     if (!client) throw new Error("Servis yapılandırılmadı.");
     await sendEmail(email, async () => {
       const { error } = await client.auth.resetPasswordForEmail(email.trim(), {
-        redirectTo: authRedirectUrl(),
+        redirectTo: authRedirectUrl("recovery"),
       });
       if (error) throw new Error(authFailureMessage(error, true));
     });

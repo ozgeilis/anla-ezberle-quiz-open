@@ -131,7 +131,7 @@ export function HomeScreen() {
         onClose={() => setHelp(false)}
       >
         <Txt>
-          Her turda 10 soru var. Her soru için 10 saniye; doğru yanıt 100,
+          Her turda 10 soru var. Her soru için 20 saniye; doğru yanıt 100,
           yanlış veya cevapsız yanıt 0 puan. Açıklama sırasında sayaç durur.
         </Txt>
         <Txt>
