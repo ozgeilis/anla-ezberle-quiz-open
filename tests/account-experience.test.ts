@@ -1,5 +1,5 @@
-import { authCallbackKey } from "../src/features/online/authCallbackUrl";
 import {
+  authCallbackKey,
   callbackUrlFromParams,
   hasCallbackPayload,
 } from "../src/features/online/authCallbackUrl";
