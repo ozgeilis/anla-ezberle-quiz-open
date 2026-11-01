@@ -22,7 +22,47 @@ export function callbackUrlFromParams(
       for (const item of Array.isArray(value) ? value : [value])
         url.searchParams.append(key, item);
   }
-  return hasCallbackPayload(url.toString()) ? url.toString() : null;
+  return hasCallbackPayload(url.toString()) || url.searchParams.has("flow")
+    ? url.toString()
+    : null;
+}
+/** Prefer the original intent, including a provider's error fragment. Router
+ * markers alone are not credentials and must not consume the pending verifier.
+ * Ignore an older Linking URL when the current route identifies another flow. */
+export function nativeCallbackUrl(
+  incoming: string | null,
+  route: string | null,
+) {
+  if (hasCallbackPayload(incoming)) {
+    try {
+      const raw = new URL(incoming!);
+      const expected = route ? new URL(route) : null;
+      const identityKeys = [
+        "flow",
+        "attempt",
+        "code",
+        "token_hash",
+        "purpose",
+        "type",
+      ];
+      if (
+        !expected ||
+        (raw.protocol === expected.protocol &&
+          raw.host === expected.host &&
+          raw.pathname === expected.pathname &&
+          identityKeys.every(
+            (key) =>
+              !expected.searchParams.has(key) ||
+              JSON.stringify(raw.searchParams.getAll(key)) ===
+                JSON.stringify(expected.searchParams.getAll(key)),
+          ))
+      )
+        return incoming;
+    } catch {
+      /* Let the route's normal validator report an invalid payload. */
+    }
+  }
+  return hasCallbackPayload(route) ? route : null;
 }
 export function hasCallbackPayload(value: string | null) {
   if (!value) return false;
@@ -30,7 +70,7 @@ export function hasCallbackPayload(value: string | null) {
     const url = new URL(value),
       fragment = new URLSearchParams(url.hash.slice(1));
     return (
-      ["code", "token_hash", "error", "flow"].some((key) =>
+      ["code", "token_hash", "error"].some((key) =>
         url.searchParams.has(key),
       ) ||
       ["access_token", "refresh_token", "error"].some((key) =>
@@ -47,9 +87,24 @@ export function hasCallbackPayload(value: string | null) {
 export function authCallbackKey(value: string) {
   try {
     const url = new URL(value);
+    const fragment = new URLSearchParams(url.hash.slice(1));
+    // Router can expose a denial fragment as query params. Only diagnostic
+    // errors are equivalent; never normalize credentials or mixed proof.
+    if (
+      url.searchParams.get("flow") === "google" &&
+      !["code", "token_hash", "error"].some((key) =>
+        url.searchParams.has(key),
+      ) &&
+      fragment.getAll("error").length === 1 &&
+      [...fragment.keys()].every((key) =>
+        ["error", "error_code", "error_description"].includes(key),
+      )
+    ) {
+      for (const [key, item] of fragment) url.searchParams.append(key, item);
+      url.hash = "";
+    }
     url.searchParams.sort();
     if (url.hash) {
-      const fragment = new URLSearchParams(url.hash.slice(1));
       fragment.sort();
       url.hash = fragment.toString();
     }

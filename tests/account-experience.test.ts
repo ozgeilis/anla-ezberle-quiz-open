@@ -2,6 +2,7 @@ import {
   authCallbackKey,
   callbackUrlFromParams,
   hasCallbackPayload,
+  nativeCallbackUrl,
 } from "../src/features/online/authCallbackUrl";
 import assert from "node:assert/strict";
 import { test } from "node:test";
@@ -254,6 +255,55 @@ test("callback normalization preserves origin, purpose and duplicate-parameter v
     verifyEmailLink("https://quiz.test/online/auth?code=a&code=b", f.auth),
   );
   assert.deepEqual(f.calls, []);
+});
+test("native Google route markers wait for proof and preserve the original denial fragment", () => {
+  const marker = callbackUrlFromParams("anla-ezberle-quiz://online/auth", {
+    flow: "google",
+    attempt: "current",
+  })!;
+  assert.equal(hasCallbackPayload(marker), false);
+  assert.equal(nativeCallbackUrl(null, marker), null);
+  const denial = marker + "#error=server_error&error_description=private";
+  assert.equal(nativeCallbackUrl(denial, marker), denial);
+  assert.equal(
+    nativeCallbackUrl(marker + "&code=valid", marker),
+    marker + "&code=valid",
+  );
+  assert.equal(
+    nativeCallbackUrl(marker.replace("current", "old") + "&code=old", marker),
+    null,
+  );
+  const routeWithCode = marker + "&code=current-code";
+  assert.equal(
+    nativeCallbackUrl(marker + "&code=old", routeWithCode),
+    routeWithCode,
+  );
+  assert.equal(
+    nativeCallbackUrl("anla-ezberle-quiz://other/auth?code=x", routeWithCode),
+    routeWithCode,
+  );
+  const duplicate = routeWithCode + "&code=second";
+  assert.equal(nativeCallbackUrl(routeWithCode, duplicate), duplicate);
+});
+test("only Google diagnostic denial fragments share a callback key with Router query errors", () => {
+  const marker = "anla-ezberle-quiz://online/auth?flow=google&attempt=current";
+  assert.equal(
+    authCallbackKey(marker + "#error=server_error&error_code=x"),
+    authCallbackKey(marker + "&error=server_error&error_code=x"),
+  );
+  for (const fragment of [
+    "error=server_error&access_token=x",
+    "error=server_error&code=x",
+    "error=one&error=two",
+  ])
+    assert.notEqual(
+      authCallbackKey(marker + "#" + fragment),
+      authCallbackKey(marker + "&" + fragment),
+    );
+  assert.notEqual(
+    authCallbackKey(marker + "&code=proof#error=denied"),
+    authCallbackKey(marker + "&code=proof&error=denied"),
+  );
 });
 test("reordered implicit fragments do not transfer a session twice", async () => {
   const f = fixture();
