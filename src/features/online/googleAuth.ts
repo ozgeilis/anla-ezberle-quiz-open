@@ -6,8 +6,10 @@ import { authStorage } from "./secureStorage";
 import { onlineClient, createGooglePkceClient } from "./client";
 import { authRedirectUrl } from "./authLinks";
 import { verifiedAccount } from "./account";
+import { createGoogleCallbackCompletion } from "./googleCompletion";
 import {
   googleCallbackCode,
+  GoogleFlowError,
   type GoogleAttempt,
   verifierStorage,
 } from "./googleFlow";
@@ -26,21 +28,19 @@ async function clearTransaction() {
   await transactionStorage.removeItem(transactionKey + "-code-verifier");
 }
 let attemptGeneration = 0;
-let completion: {
-  nonce: string;
-  value: string;
-  expiresAt: number;
-  promise: Promise<void>;
-} | null = null;
+const completion = createGoogleCallbackCompletion();
 export const googleNativeAvailable = () =>
   Platform.OS === "web" || !!requireOptionalNativeModule("ExpoWebBrowser");
 export const clearGoogleAttempt = () => {
   attemptGeneration++;
-  completion = null;
+  completion.clear();
+  return clearAttemptStorage();
+};
+function clearAttemptStorage() {
   return Promise.all([authStorage.removeItem(key), clearTransaction()]).then(
     () => undefined,
   );
-};
+}
 async function pending(): Promise<GoogleAttempt | null> {
   const raw = await authStorage.getItem(key);
   if (!raw) return null;
@@ -62,38 +62,20 @@ async function pending(): Promise<GoogleAttempt | null> {
   }
 }
 export async function completeGoogleAuth(value: string) {
-  const callbackKey = authCallbackKey(value);
-  let nonce: string | null = null;
-  try {
-    nonce = new URL(value).searchParams.get("attempt");
-  } catch {
-    /* validated below */
-  }
-  if (
-    completion?.nonce === nonce &&
-    completion.value === callbackKey &&
-    completion.expiresAt > Date.now()
-  )
-    return completion.promise;
+  return completion.run(authCallbackKey(value), () =>
+    transferGoogleSession(value),
+  );
+}
+async function transferGoogleSession(value: string) {
   const generation = attemptGeneration;
-  const attempt = await pending();
-  // Native Linking and openAuthSessionAsync may deliver the same callback together.
-  // Recheck after asynchronous storage before starting a second code exchange.
-  if (completion?.value === callbackKey && completion.expiresAt > Date.now())
-    return completion.promise;
-  if (generation !== attemptGeneration)
-    throw Error("Google girişi iptal edildi.");
-  let code: string;
-  try {
-    code = googleCallbackCode(value, attempt);
-  } catch (error) {
-    await clearGoogleAttempt();
-    throw error;
-  }
-  const client = onlineClient();
-  if (!client) throw Error("Servis yapılandırılmadı.");
   let transferred = false;
-  const promise = (async () => {
+  try {
+    const attempt = await pending();
+    if (generation !== attemptGeneration)
+      throw Error("Google girişi iptal edildi.");
+    const code = googleCallbackCode(value, attempt);
+    const client = onlineClient();
+    if (!client) throw Error("Servis yapılandırılmadı.");
     const before = await client.auth.getSession();
     if (before.error || before.data.session)
       throw Error("Aktif hesap değişti. Google girişini yeniden başlat.");
@@ -102,7 +84,7 @@ export async function completeGoogleAuth(value: string) {
     const { data, error } = await oauth.auth.exchangeCodeForSession(code);
     if (error || !data.session)
       throw Error("Google girişi doğrulanamadı. Yeniden dene.");
-    const identity = await oauth.auth.getUser();
+    const identity = await oauth.auth.getUser(data.session.access_token);
     if (
       identity.error ||
       !verifiedAccount(identity.data.user) ||
@@ -130,25 +112,15 @@ export async function completeGoogleAuth(value: string) {
       throw Error("Google oturumu kaydedilemedi.");
     }
     transferred = true;
-  })()
-    .catch(async (error) => {
-      if (!transferred)
-        await transaction?.auth
-          .signOut({ scope: "local" })
-          .catch(() => undefined);
-      throw error;
-    })
-    .finally(async () => {
-      await authStorage.removeItem(key);
-      await clearTransaction();
-    });
-  completion = {
-    nonce: attempt!.nonce,
-    value: callbackKey,
-    expiresAt: attempt!.startedAt + 300_000,
-    promise,
-  };
-  return promise;
+  } catch (error) {
+    if (!transferred && generation === attemptGeneration)
+      await transaction?.auth
+        .signOut({ scope: "local" })
+        .catch(() => undefined);
+    throw error;
+  } finally {
+    if (generation === attemptGeneration) await clearAttemptStorage();
+  }
 }
 export async function startGoogleAuth(enabled: boolean) {
   if (!googleNativeAvailable())
@@ -159,6 +131,8 @@ export async function startGoogleAuth(enabled: boolean) {
   const current = await client.auth.getSession();
   if (current.error || current.data.session)
     throw Error("Önce mevcut hesabından güvenli çıkış yap.");
+  await clearGoogleAttempt();
+  const generation = attemptGeneration;
   const redirect = new URL(authRedirectUrl());
   const nonce = randomUUID();
   redirect.searchParams.set("flow", "google");
@@ -200,10 +174,13 @@ export async function startGoogleAuth(enabled: boolean) {
     }
     await completeGoogleAuth(result.url);
   } catch (error) {
-    await clearGoogleAttempt();
+    // Keep a failed callback outcome for the second native delivery. A fresh
+    // sign-in, explicit cancel or sign-out clears the bounded completion cache.
+    if (generation === attemptGeneration) await clearAttemptStorage();
     if (
       error instanceof Error &&
-      (error.message === "Google girişi iptal edildi." ||
+      (error instanceof GoogleFlowError ||
+        error.message === "Google girişi iptal edildi." ||
         error.message.startsWith("Google girişi sunucuda") ||
         error.message.startsWith("Google girişi tamamlanmadı."))
     )

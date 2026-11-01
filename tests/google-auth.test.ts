@@ -2,9 +2,12 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
   googleCallbackCode,
+  GoogleFlowError,
   verifierStorage,
   type GoogleAttempt,
 } from "../src/features/online/googleFlow";
+import { createGoogleCallbackCompletion } from "../src/features/online/googleCompletion";
+import { authCallbackKey } from "../src/features/online/authCallbackUrl";
 import { googleOtpProof } from "../supabase/functions/account-delete/googleOtp";
 import { deletionHandler } from "../supabase/functions/account-delete/handler";
 const now = 1000000;
@@ -54,6 +57,101 @@ test("Google PKCE callback checks exact destination, nonce, expiry, code; implic
       now,
     ),
   );
+});
+test("Google denial fragments stay errors with private messages; no implicit or mixed proof becomes a session code", () => {
+  for (const suffix of [
+    "#error=server_error&error_code=unexpected_failure&error_description=SECRET",
+    "&error=server_error&error_description=SECRET",
+  ])
+    assert.throws(
+      () => googleCallbackCode(attempt.redirect + suffix, attempt, now),
+      (e) =>
+        e instanceof GoogleFlowError &&
+        /kapalı test/.test(e.message) &&
+        !e.message.includes("SECRET"),
+    );
+  for (const suffix of [
+    "#error=server_error&access_token=SECRET",
+    "#error=server_error&code=SECRET",
+    "#error=server_error&error=access_denied",
+    "&code=SECRET#error=server_error",
+    "&error=server_error#error=access_denied",
+  ])
+    assert.throws(() =>
+      googleCallbackCode(attempt.redirect + suffix, attempt, now),
+    );
+  assert.throws(() =>
+    googleCallbackCode(
+      attempt.redirect.replace("synthetic-attempt", "foreign-attempt") +
+        "#error=server_error",
+      attempt,
+      now,
+    ),
+  );
+});
+test("simultaneous browser and Linking denial share one failed validation even after pending storage is removed", async () => {
+  const gate = createGoogleCallbackCompletion();
+  let pending: GoogleAttempt | null = attempt;
+  let reads = 0;
+  const value =
+    attempt.redirect + "#error=server_error&error_description=SECRET";
+  const finish = async () => {
+    reads++;
+    await Promise.resolve();
+    try {
+      googleCallbackCode(value, pending, now);
+    } finally {
+      pending = null;
+    }
+  };
+  const a = gate.run(authCallbackKey(value), finish, now);
+  const b = gate.run(
+    authCallbackKey(
+      value.replace(
+        "#error=server_error&error_description=SECRET",
+        "#error_description=SECRET&error=server_error",
+      ),
+    ),
+    finish,
+    now,
+  );
+  const outcomes = await Promise.allSettled([a, b]);
+  assert.equal(reads, 1);
+  for (const result of outcomes) {
+    assert.equal(result.status, "rejected");
+    if (result.status === "rejected") {
+      assert.ok(result.reason instanceof GoogleFlowError);
+      assert.match(result.reason.message, /kapalı test/);
+      assert.doesNotMatch(result.reason.message, /süresi doldu|SECRET/);
+    }
+  }
+  await assert.rejects(
+    gate.run(authCallbackKey(value), finish, now + 1),
+    /kapalı test/,
+  );
+  assert.equal(reads, 1);
+  gate.clear();
+  await assert.rejects(
+    gate.run(authCallbackKey(value), finish, now + 2),
+    /süresi doldu/,
+  );
+  assert.equal(reads, 2);
+});
+test("Google completion caches success once, expires outcomes and isolates a new attempt key", async () => {
+  const gate = createGoogleCallbackCompletion();
+  let completions = 0;
+  const finish = async () => {
+    completions++;
+  };
+  await Promise.all([
+    gate.run("one", finish, now),
+    gate.run("one", finish, now),
+  ]);
+  assert.equal(completions, 1);
+  await gate.run("two", finish, now + 1);
+  assert.equal(completions, 2);
+  await gate.run("two", finish, now + 300001);
+  assert.equal(completions, 3);
 });
 test("Google deletion requires a one-use actor-bound challenge and fresh same-user OTP proof", async () => {
   const challenge = "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa";
