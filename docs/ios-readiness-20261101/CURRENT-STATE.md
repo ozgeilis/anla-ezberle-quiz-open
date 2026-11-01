@@ -62,3 +62,9 @@ Sahibi [yerel planı](DEVELOPMENT-BUILD-PLAN.md) ayrıca onayladı. Kaynak `2f66
 Gerçek fiziksel açılış, örnek quiz (00:20 başlangıç ve 00:18 screenshot), yerel skor600/XP60 ve depo hatası olmadan giriş ekranı görüldü. Gerçek Auth/session kalıcılığı, Apple login, ses/APNs ve sosyal maç kabulü yapılmadı. Eski prototipin son cihaz listesinde görünmediği ayrıca kontrol edildi; sahibi **kendisi sildiğini** doğruladı, ajan uninstall yapmadı.
 
 [Build sonucu ve kapsam](DEVELOPMENT-BUILD-RESULT.md), [imza/artifact kanıtı](development-artifact.json), fiziksel PNG'ler `screenshots/physical-iphone11-*`. Önceki imzasız simülatör -34018 bulgusu o artifact için geçerlidir; imzalı fiziksel build'de giriş UI başlatma engeli görülmedi. Bu, hosted login veya bütün fiziksel kabulün tamamlanması değildir. TestFlight IPA/upload izni kullanılmadı.
+
+## Sonraki güncelleme — TestFlight yükleme işlemi
+
+Yukarıdaki No Builds/Distribution yok/IPA yok ifadeleri önceki Development aşamasının tarihsel durumudur. Sahibinin sonraki açık yükleme talimatıyla ayrı dar iç-test yükleme izni açıldı; full store/physical/Auth/review kabulü false kaldı. Distribution sertifikasını sahibi Xcode'da oluşturdu, yalnız bu ID için App Store profile hazırlandı. Gerçek Xcode archive ve Distribution export başarılı; 0.1.0/build2 IPA doğrulaması geçti. Xcode upload exit0 ile başarılı; Gerçek Connect arayüzünde **0.1.0 (2) / Processing / Nov2 12:43AM** doğrulandı. Paket aktarımı tamamlandı; Apple işlemesi henüz sürüyor. Ayrıntı ve kaynak ayrımı: [yükleme kaydı](TESTFLIGHT-UPLOAD-ONLY.md), [IPA kanıtı](testflight-artifact.json).
+
+Apple provider, hesap silme/revocation, moderasyon ve tam fiziksel kabul eksikleri aynen açıktır. APNs production entitlement, APNs anahtarı/gönderim testi anlamına gelmez. Android/main/backend/testçi grupları değiştirilmez.
