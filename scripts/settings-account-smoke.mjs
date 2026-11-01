@@ -579,7 +579,7 @@ try {
     await fixture.install(context);
     const page = await context.newPage();
     latestPage = page;
-    console.log(`Checking ${name}`);
+    console.log("Checking transactional settings and theme persistence");
     await page.goto(`${origin}/settings`, { waitUntil: "networkidle" });
     for (const name of [
       "Profil",

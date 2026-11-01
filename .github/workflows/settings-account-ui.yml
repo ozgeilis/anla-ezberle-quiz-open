@@ -29,7 +29,18 @@ jobs:
   settings-account-smoke:
     if: ${{ github.event.repository.private == false }}
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        suite:
+          [
+            settings-account,
+            mobile-game-ui,
+            push-navigation,
+            xp-notification,
+            google-auth-ui,
+          ]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -51,27 +62,17 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
           "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps --only-shell chromium
-      - name: Exercise settings and account flows
+      - name: Exercise ${{ matrix.suite }}
+        env:
+          SETTINGS_ORIGIN: http://127.0.0.1:8117
         run: |
           pnpm preview > /tmp/settings-preview.log 2>&1 &
           sleep 3
-          node scripts/settings-account-smoke.mjs
-      - name: Exercise complete mobile game UI
-        run: node scripts/mobile-game-ui-smoke.mjs
-      - name: Exercise push navigation
-        run: node scripts/push-navigation-smoke.mjs
-      - name: Exercise progressive XP and notification cards
-        env:
-          SETTINGS_ORIGIN: http://127.0.0.1:8117
-        run: node scripts/xp-notification-smoke.mjs
-      - name: Exercise Google Auth UI
-        env:
-          SETTINGS_ORIGIN: http://127.0.0.1:8117
-        run: node scripts/google-auth-ui-smoke.mjs
+          node scripts/${{ matrix.suite }}-smoke.mjs
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
-          name: settings-account-ui
+          name: settings-account-ui-${{ matrix.suite }}
           path: |
             artifacts/settings-account-ui/
             artifacts/mobile-game-ui/
