@@ -47,7 +47,7 @@ export function useAuthCallback() {
   useEffect(() => {
     let active = true;
     void Promise.resolve().then(() => {
-      if (active && (routeUrl || hasPayload(incoming)))
+      if (active && Platform.OS !== "web" && (routeUrl || hasPayload(incoming)))
         setUrl(routeUrl ?? incoming);
     });
     return () => {

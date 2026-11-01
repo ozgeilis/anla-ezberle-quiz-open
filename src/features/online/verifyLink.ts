@@ -1,3 +1,4 @@
+import { authCallbackKey } from "./authCallbackUrl";
 import { authFailureMessage, authMessage, verifiedAccount } from "./account";
 type AuthError = { code?: string; status?: number };
 type Response = {
@@ -39,12 +40,13 @@ const pending = new WeakMap<
   Map<string, Promise<{ recovery: boolean; userId: string }>>
 >();
 export function verifyEmailLink(value: string, auth: LinkAuth) {
+  const callbackKey = authCallbackKey(value);
   let entries = pending.get(auth);
   if (!entries) {
     entries = new Map();
     pending.set(auth, entries);
   }
-  const existing = entries.get(value);
+  const existing = entries.get(callbackKey);
   if (existing)
     return existing.then(async (result) => {
       const identity = await auth.getUser();
@@ -59,10 +61,10 @@ export function verifyEmailLink(value: string, auth: LinkAuth) {
       return result;
     });
   const task = verify(value, auth).catch((error: unknown) => {
-    entries.delete(value); // network failures can be retried; codes are never persisted
+    entries.delete(callbackKey); // network failures can be retried; codes are never persisted
     throw error;
   });
-  entries.set(value, task);
+  entries.set(callbackKey, task);
   // Bounded in-memory duplicate delivery protection, never a credential log/cache on disk.
   if (entries.size > 16) entries.delete(entries.keys().next().value!);
   return task;

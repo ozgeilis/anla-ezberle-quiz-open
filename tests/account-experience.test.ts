@@ -1,3 +1,4 @@
+import { authCallbackKey } from "../src/features/online/authCallbackUrl";
 import {
   callbackUrlFromParams,
   hasCallbackPayload,
@@ -158,10 +159,14 @@ test("identity writes preserve unrelated canonical fields and display-name valid
 
 test("duplicate cold-start callbacks exchange a single-use code only once", async () => {
   const { auth, calls } = fixture();
-  const link = "https://quiz.test/online/auth?code=duplicate";
+  const link = "https://quiz.test/online/auth?purpose=confirm&code=duplicate";
   const results = await Promise.all([
     verifyEmailLink(link, auth),
     verifyEmailLink(link, auth),
+    verifyEmailLink(
+      "https://quiz.test/online/auth?code=duplicate&purpose=confirm",
+      auth,
+    ),
   ]);
   assert.equal(calls.filter((x) => x === "exchange").length, 1);
   assert.equal(results[0]!.userId, results[1]!.userId);
@@ -229,4 +234,38 @@ test("Router query survives a late Linking listener without turning a dev-client
     code: ["a", "b"],
   })!;
   assert.equal(new URL(duplicate).searchParams.getAll("code").length, 2);
+});
+
+test("callback normalization preserves origin, purpose and duplicate-parameter validation", async () => {
+  const a = "https://quiz.test/online/auth?attempt=a&flow=google&code=b";
+  assert.equal(
+    authCallbackKey(a),
+    authCallbackKey(
+      "https://quiz.test/online/auth?code=b&flow=google&attempt=a",
+    ),
+  );
+  assert.notEqual(
+    authCallbackKey(a),
+    authCallbackKey(a.replace("quiz.test", "other.test")),
+  );
+  assert.notEqual(authCallbackKey(a), authCallbackKey(a + "&code=b"));
+  const f = fixture();
+  await assert.rejects(
+    verifyEmailLink("https://quiz.test/online/auth?code=a&code=b", f.auth),
+  );
+  assert.deepEqual(f.calls, []);
+});
+test("reordered implicit fragments do not transfer a session twice", async () => {
+  const f = fixture();
+  await Promise.all([
+    verifyEmailLink(
+      "https://quiz.test/online/auth#type=signup&access_token=a&refresh_token=b",
+      f.auth,
+    ),
+    verifyEmailLink(
+      "https://quiz.test/online/auth#refresh_token=b&access_token=a&type=signup",
+      f.auth,
+    ),
+  ]);
+  assert.equal(f.calls.filter((x) => x === "session").length, 1);
 });

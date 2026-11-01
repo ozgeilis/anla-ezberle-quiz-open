@@ -41,3 +41,20 @@ export function hasCallbackPayload(value: string | null) {
     return true;
   }
 }
+
+/** Equivalent Linking/router parameter orders share one in-memory exchange.
+ * Keep origin, path, values and duplicates: normalization is not validation. */
+export function authCallbackKey(value: string) {
+  try {
+    const url = new URL(value);
+    url.searchParams.sort();
+    if (url.hash) {
+      const fragment = new URLSearchParams(url.hash.slice(1));
+      fragment.sort();
+      url.hash = fragment.toString();
+    }
+    return url.toString();
+  } catch {
+    return value;
+  }
+}

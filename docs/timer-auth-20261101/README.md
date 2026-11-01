@@ -55,6 +55,11 @@ ayrıldı; onaylı yeni logo dahil mevcut çalışmalar korunuyor. PR #13 açık
 Başlangıç URL'si ile Linking olayları birlikte ele alınır. Parametresiz ilk rota
 sonradan gelen kodu tüketmez. Aynı kodun çift tesliminde tek exchange yapılır.
 Web adresi işlenmeden önce geçmişten temizlenir; URL/kod/token loglanmaz.
+Ek regresyonda Linking/Router query sırası farklı olduğu için aynı Google kodunun
+iki kez exchange edilmesi yeniden üretildi. Web callback gerçek tarayıcı
+adresinden okunur; native/query/fragment sıraları ortak normalize edilmiş
+bellek anahtarını kullanır. Origin, path, değerler ve yinelenen parametreler
+korunur; nonce ve PKCE doğrulaması atlanmaz.
 
 Yeni e-posta istekleri güvenli depodaki PKCE doğrulayıcısını kullanır. Önceki
 implicit fragment bağlantıları ve izin verilen email/recovery token-hash

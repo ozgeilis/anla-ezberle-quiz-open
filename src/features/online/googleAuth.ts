@@ -1,3 +1,4 @@
+import { authCallbackKey } from "./authCallbackUrl";
 import { Platform } from "react-native";
 import { requireOptionalNativeModule } from "expo";
 import { randomUUID } from "expo-crypto";
@@ -61,6 +62,7 @@ async function pending(): Promise<GoogleAttempt | null> {
   }
 }
 export async function completeGoogleAuth(value: string) {
+  const callbackKey = authCallbackKey(value);
   let nonce: string | null = null;
   try {
     nonce = new URL(value).searchParams.get("attempt");
@@ -69,7 +71,7 @@ export async function completeGoogleAuth(value: string) {
   }
   if (
     completion?.nonce === nonce &&
-    completion.value === value &&
+    completion.value === callbackKey &&
     completion.expiresAt > Date.now()
   )
     return completion.promise;
@@ -77,7 +79,7 @@ export async function completeGoogleAuth(value: string) {
   const attempt = await pending();
   // Native Linking and openAuthSessionAsync may deliver the same callback together.
   // Recheck after asynchronous storage before starting a second code exchange.
-  if (completion?.value === value && completion.expiresAt > Date.now())
+  if (completion?.value === callbackKey && completion.expiresAt > Date.now())
     return completion.promise;
   if (generation !== attemptGeneration)
     throw Error("Google girişi iptal edildi.");
@@ -142,7 +144,7 @@ export async function completeGoogleAuth(value: string) {
     });
   completion = {
     nonce: attempt!.nonce,
-    value,
+    value: callbackKey,
     expiresAt: attempt!.startedAt + 300_000,
     promise,
   };
