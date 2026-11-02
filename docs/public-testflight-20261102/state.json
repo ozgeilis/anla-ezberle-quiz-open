@@ -66,14 +66,28 @@
     "privateContactInRepository": false,
     "betaDescriptionSaved": true,
     "reviewNotes": "Draft explicitly records pending reviewer access and social-safety acceptance",
-    "licenseAgreementChanged": false
+    "licenseAgreementChanged": false,
+    "reviewerSignInSaved": true,
+    "existingReviewerPasswordLoginVerified": true,
+    "reviewerTestSessionLoggedOutLocally": true
   },
   "tests": {
-    "integrationCheck": "428 passed; includes TypeScript, lint and bank checks",
+    "integrationCheck": "430 passed; includes TypeScript, lint, bank checks and 2 console security tests",
     "ipaStaticVerification": "passed",
     "appleUpload": "succeeded and Console Ready to Submit verified",
     "physicalAppleTrial": "prior accepted exact JS: login, persistence, cancellation, deletion and revocation; not a new build 3 installation test",
     "build3TestFlightInstall": "not run; not distributed",
-    "nativeSocialSafetyAcceptance": "pending"
+    "nativeSocialSafetyAcceptance": "pending",
+    "moderatorLocalRealService": "PASS real isolated Auth + Edge + RPC: role denial, queue, audited restrict/restore via closed report, logged-out JWT denial",
+    "moderatorBrowserUI": "Not completed; isolated browser tool unavailable. Hosted owner console acceptance pending."
+  },
+  "ownerOperatingAccount": {
+    "authorized": true,
+    "created": true,
+    "emailConfirmed": true,
+    "validSessionAtLastCheck": false,
+    "moderatorGranted": false,
+    "creationUsedExistingEmailPolicy": true,
+    "webCallback": "No usable local session; safe sign-in fallback shown, owner sign-in pending"
   }
 }

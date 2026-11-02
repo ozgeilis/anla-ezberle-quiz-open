@@ -4,6 +4,24 @@ Bu belge henüz canlı yetki/özellik değişikliği onayı değildir. Mevcut bu
 0.1.0 (3), Connect'te **Ready to Submit**; Public Beta grubu mevcut. İletişim
 bilgileri sahibi tarafından girilip kaydedildi. İnceleme gönderilmedi.
 
+Sonraki gelişme: Sahip incelemeci bilgilerinin yalnız Apple'ın özel alanına
+aktarılmasını onayladı; kayıt ve gerçek parola login/same-actor kontrolü geçti.
+Tek kalıcı işletim hesabının oluşturulmasına ayrıca izin verdi; hesap oluştu ve
+e-posta doğrulandı, güvenli giriş adımı bekleniyor. **Rol/bayrak izni verilmedi.**
+
+Yerel işletim aracı ve kabul kanıtı [MODERATOR-CONSOLE.md](MODERATOR-CONSOLE.md).
+Canlıda uygulanmamış dar operasyonlar:
+
+- `enroll-owner-moderator.sql` SHA256
+  `b49f335064022017d255a255870eb4e13b19922c646c0139666f1eb97f47bc36`
+- `activate-player-safety.sql` SHA256
+  `26e27ccb5e6c9e0bef9745c40ee8578f557fd65d0b8610ea8ea81bd08451cca6`
+
+İki dosya izole DB'de mevcut fixture'ın gerçek Auth oturumu ve rollback
+transaction'ında denendi: doğrulanmış sahip/oturum rol kontrolü, tek rol, bayrak
+açma ve tekrar işlemde drift reddi geçti. Transaction sonunda önceki satırlar
+geri geldi. Bu deneme hosted yetki veya canlı özellik etkinleştirmesi değildir.
+
 ## 1. İncelemecinin mevcut test hesabı
 
 Önceden onaylanmış iki sentetik Play incelemeci hesabı sunucuda doğrulanmış

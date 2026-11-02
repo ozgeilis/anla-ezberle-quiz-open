@@ -37,14 +37,19 @@ kullanıldı; gereksiz native yeniden derleme yapılmadı. Runtime kaynakları
   `fa9e47a8-60fe-4ef4-a0dc-0e8bea209d07`, **Ready to Submit**.
 - React, ReactNativeDependencies ve Hermes vendor dSYM eksiklikleri uyarı
   verdi; upload başarılı. Native crash sembol çözümleme kapsamı sınırlıdır.
-- 428/428 otomatik kontrol geçti (TypeScript, lint, banka ve regresyonlar dahil).
+- Paket hazırlığında 428/428, yerel moderatör aracı eklendikten sonra 430/430
+  otomatik kontrol geçti (TypeScript, lint, banka ve regresyonlar dahil).
 - Beta iletişim alanlarını sahibi girdi; açıklama ve açıkça taslak inceleme
   notları kaydedildi. Özel iletişim bilgileri depoya alınmadı.
 
 Harici grubun build seçimi 3'ü gösteriyor. Next adımı online özellikler için
 **Sign-in required / User Name / Password** istiyor. Mevcut incelemeci hesabının
 bu özel Apple alanına aktarımı ve canlı moderasyon kabulü tamamlanmadığı için
-akış Cancel ile bırakıldı. Build gruba bağlanmış, incelemeye gönderilmiş veya
+ilk akış Cancel ile bırakıldı. Sahip ardından mevcut incelemeci giriş bilgilerinin
+yalnız Apple'ın özel alanına aktarımını onayladı; bilgiler kaydedildi ve mevcut
+hesapla gerçek parola girişi/same-actor kontrolü geçti, bu kontrol oturumu yerel
+olarak kapatıldı. Bilgiler depoya veya herkese açık metne yazılmadı.
+Build gruba bağlanmış, incelemeye gönderilmiş veya
 testçilere sunulmuş değildir. [Kalan dar plan](EXTERNAL-BETA-ACCEPTANCE-PLAN.md).
 
 ## Yeni adayın dar paket planı
@@ -77,10 +82,22 @@ giriş/silme/revocation kabulünü geçti; hesap temizlendi ve geçici bayraklar
 yeniden kapatıldı. Bu, genel kaydı açma izni değildir.
 
 Oyuncu güvenliği kodu ve izole SQL/HTTP kabulü mevcut; hosted safety flag kapalı,
-moderatör sayısı0. Sahip şikâyetleri günlük kontrol edeceğini doğruladı. Günlük
+moderatör sayısı 0. Sahip şikâyetleri günlük kontrol edeceğini doğruladı. Günlük
 işletim/gerçek yetkili moderatör ve native sosyal kabul kapanmadan güvenli public
 sosyal dağıtım tamamlandı denmez. Kayıt, provider veya yetki değişikliği gerekirse
 exact actor/kapsam ve geri dönüşle ayrı onay istenir. RLS/hook kaldırılmaz.
+
+Sahibin ayrıca onayladığı tek kalıcı işletim hesabı mevcut e-posta akışıyla
+oluştu ve sunucuda doğrulandı. Web callback'inde kullanılabilir yerel oturum
+bulunmadığı için güvenli giriş fallback'i gösterildi; kullanıcı giriş adımı
+bekleniyor. Bu örnek otomatik giriş başarısı olarak raporlanmaz. Rol verilmedi.
+
+[Yerel moderatör aracı](MODERATOR-CONSOLE.md) parola/session'ı diske yazmadan
+mevcut RPC ile kuyruk ve gerekçeli karar işlemlerini sağlar. Gerçek izole
+Auth/Edge/PostgREST testinde yetkisiz erişim reddi, yetkili kuyruk, audit'li
+kısıtlama/geri alma ve logout sonrası eski JWT reddi geçti. Bu kanıt hosted
+işletim veya fiziksel sosyal kabul yerine geçmez. Rol ve ortak safety bayrağı
+için iki dar SQL operasyonu hazır; **uygulanmadı**.
 
 ## Resmi kaynaklar
 

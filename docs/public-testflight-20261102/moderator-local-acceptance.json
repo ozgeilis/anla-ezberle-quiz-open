@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-02",
+  "hostedTraffic": false,
+  "accounts": "existing three disposable local fixtures; no new accounts",
+  "realServices": [
+    "GoTrue",
+    "Deno online-duel",
+    "PostgREST",
+    "Postgres"
+  ],
+  "passed": [
+    "password sign-in to existing local fixtures",
+    "non-moderator queue denied",
+    "enrolled moderator sees private synthetic report",
+    "restrict removes report from open queue and creates social restriction",
+    "restore via same closed report ID removes restriction",
+    "both decisions audited",
+    "signed-out JWT denied by real session guard",
+    "previous local moderator and config restored"
+  ],
+  "browserUI": "not completed",
+  "hostedOwnerAcceptance": "pending",
+  "physicalDeviceSafetyAcceptance": "pending",
+  "reviewedActivationPlans": {
+    "testedInRollbackTransaction": true,
+    "realLocalAuthSessionRequired": true,
+    "ownerEnrollment": "passed",
+    "activation": "passed",
+    "enrollmentReplayDriftRejected": true,
+    "activationReplayDriftRejected": true,
+    "originalRowsRestored": true,
+    "hostedApplied": false
+  }
+}
