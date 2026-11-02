@@ -7,17 +7,45 @@ değişikliği yapılmaz. Genel kayıt veya moderatör yetkisi bu izinle açılm
 
 ## Gerçek Connect kontrolü
 
-Tek mevcut build0.1.0(2), **Internal / Ready to Test**. Yeni harici grubun
-Add Builds penceresi **No builds available** gösteriyor. Apple'ın resmi belgesi
+İlk kontrolde tek build 0.1.0 (2), **Internal / Ready to Test** idi. Harici grubun
+Add Builds penceresi **No builds available** gösterdi. Apple'ın resmi belgesi
 Internal Only build'leri yalnız iç gruplara izinli sayıyor. Eski build/arşiv ve
 kanıtlar korunur; onu dış build olarak etiketlemek veya tekrar yüklemek çözüm
 değildir. Yeni numaralı, Internal Only işaretlenmemiş bir aday zorunludur.
 
 - Önkoşul iç grup: Anla & Ezberle Internal QA, otomatik dağıtım kapalı.
-- İstenen dış grup: Anla & Ezberle Public Beta.0 tester/0 build; henüz davet yok.
+- İstenen dış grup: Anla & Ezberle Public Beta. 0 tester/0 build; henüz davet yok.
+- Yeni 0.1.0 (3) yüklendi ve Connect'te **Ready to Submit** doğrulandı; aşağıda.
 - Bağlantı yalnız uygun build ve Beta App Review kabulünden sonra oluşturulacak;
   Open to Anyone /1000 limit. İsimle App Store araması TestFlight keşif yöntemi
-  değildir; gerçek App Store yayını bu talimatın dışındadır.
+değildir; gerçek App Store yayını bu talimatın dışındadır.
+
+## Üretilen ve yüklenen build 3
+
+Mevcut arşivin ayrı kopyası ve tam fiziksel kabulü yapılmış JS/varlıkları
+kullanıldı; gereksiz native yeniden derleme yapılmadı. Runtime kaynakları
+`4071a90` kabulü ile aynı; yeni entegrasyonda runtime diff'i boş. Kaynak
+`26a51d2`, JS SHA256 `3d7b11b37e53de1cb332294051b03be1ca8b7fabcba0d26b5103e5c9e21852c4`.
+
+- Build 3, `com.kovynelstudio.anlaezberle`, Team `W7CRC43SHP`.
+- Distribution imzası, App Store provisioning ve gerekli entitlement/config
+  doğrulaması geçti; Internal Only false. Eski build 2 değiştirilmedi.
+- Yerel IPA: 30.373.722 byte, SHA256
+  `de4e66411a19456b5cf1ff9a4cdca82aab4de495f480d666f14d929dbaaee0dd`.
+- Xcode 2 Kasım 14:27:24 +03:00 **Upload succeeded / EXPORT SUCCEEDED**.
+- Connect yükleme tarihi 2 Kasım 14:28; build ID
+  `fa9e47a8-60fe-4ef4-a0dc-0e8bea209d07`, **Ready to Submit**.
+- React, ReactNativeDependencies ve Hermes vendor dSYM eksiklikleri uyarı
+  verdi; upload başarılı. Native crash sembol çözümleme kapsamı sınırlıdır.
+- 428/428 otomatik kontrol geçti (TypeScript, lint, banka ve regresyonlar dahil).
+- Beta iletişim alanlarını sahibi girdi; açıklama ve açıkça taslak inceleme
+  notları kaydedildi. Özel iletişim bilgileri depoya alınmadı.
+
+Harici grubun build seçimi 3'ü gösteriyor. Next adımı online özellikler için
+**Sign-in required / User Name / Password** istiyor. Mevcut incelemeci hesabının
+bu özel Apple alanına aktarımı ve canlı moderasyon kabulü tamamlanmadığı için
+akış Cancel ile bırakıldı. Build gruba bağlanmış, incelemeye gönderilmiş veya
+testçilere sunulmuş değildir. [Kalan dar plan](EXTERNAL-BETA-ACCEPTANCE-PLAN.md).
 
 ## Yeni adayın dar paket planı
 

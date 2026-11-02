@@ -31,12 +31,49 @@
     "created": false,
     "desiredLimit": 1000,
     "desiredAudience": "Open to Anyone",
-    "reason": "No externally eligible build yet; create only after Beta App Review approval"
+    "reason": "Build 3 is externally eligible; reviewer sign-in and live moderation acceptance are pending before Beta App Review submission"
   },
   "betaReviewSubmitted": false,
   "productionSubmissionAuthorized": false,
   "androidChangeAuthorized": false,
   "authPoliciesChanged": false,
   "moderationOwnerConfirmed": true,
-  "moderatorEnrolled": false
+  "moderatorEnrolled": false,
+  "candidate": {
+    "version": "0.1.0",
+    "build": "3",
+    "sourceCommit": "26a51d2fd9b392098f5c992b2bcb124b7f4a9700",
+    "runtimeSourceCommit": "4071a90074a594e9d80e02ab35d71bc63c2db551",
+    "runtimeDiffEmpty": true,
+    "jsSha256": "3d7b11b37e53de1cb332294051b03be1ca8b7fabcba0d26b5103e5c9e21852c4",
+    "ipaSha256": "de4e66411a19456b5cf1ff9a4cdca82aab4de495f480d666f14d929dbaaee0dd",
+    "ipaBytes": 30373722,
+    "internalOnly": false,
+    "uploaded": true,
+    "uploadSucceededAt": "2026-11-02T14:27:24+03:00",
+    "consoleUploadDate": "Nov 2, 2026 at 2:28 PM",
+    "consoleStatus": "Ready to Submit",
+    "connectBuildId": "fa9e47a8-60fe-4ef4-a0dc-0e8bea209d07",
+    "distributed": false,
+    "symbolWarnings": [
+      "React.framework",
+      "ReactNativeDependencies.framework",
+      "hermesvm.framework"
+    ]
+  },
+  "testInformation": {
+    "ownerContactEnteredAndSaved": true,
+    "privateContactInRepository": false,
+    "betaDescriptionSaved": true,
+    "reviewNotes": "Draft explicitly records pending reviewer access and social-safety acceptance",
+    "licenseAgreementChanged": false
+  },
+  "tests": {
+    "integrationCheck": "428 passed; includes TypeScript, lint and bank checks",
+    "ipaStaticVerification": "passed",
+    "appleUpload": "succeeded and Console Ready to Submit verified",
+    "physicalAppleTrial": "prior accepted exact JS: login, persistence, cancellation, deletion and revocation; not a new build 3 installation test",
+    "build3TestFlightInstall": "not run; not distributed",
+    "nativeSocialSafetyAcceptance": "pending"
+  }
 }
