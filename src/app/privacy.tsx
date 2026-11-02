@@ -14,7 +14,7 @@ export default function PrivacyScreen() {
         <Txt weight="heavy" size={20}>
           Verilerin ve hesabın üzerinde kontrol sende
         </Txt>
-        <Txt size={12}>Son güncelleme: 30 Ekim 2026</Txt>
+        <Txt size={12}>Son güncelleme: 2 Kasım 2026</Txt>
         <Txt>
           Anla & Ezberle hizmetini Kovynel Studio sunar. Gizlilik, erişim,
           düzeltme ve hesap silme talepleri için kovynelstudio@gmail.com
@@ -46,6 +46,15 @@ export default function PrivacyScreen() {
           uygulamaya aktarılmaz. Google ile yeni hesap oluşturma ve çevrimiçi
           erişim sunucu izinlerine bağlıdır.
         </Txt>
+        <Txt>
+          Apple ile Giriş kullanılabildiğinde Apple hesap kimliği, izin verdiğin
+          e-posta ve ilk girişte paylaşılabilen ad bilgileri Supabase üzerinden
+          kimlik doğrulama amacıyla işlenir. E-postamı Gizle seçilirse Apple’ın
+          oluşturduğu özel iletim adresi kullanılabilir. Apple parolan uygulamaya
+          aktarılmaz. Mevcut beta kapsamında Apple ve Google ile yeni hesap kaydı
+          sunucudaki test izinleriyle sınırlıdır; TestFlight bağlantısına katılmak
+          bu izinleri açmaz. Hesapsız oyun kullanılabilir.
+        </Txt>
         <Txt weight="heavy">Kimler görebilir?</Txt>
         <Txt>
           Arama, arkadaşlık, oda ve sıralama ekranları yalnız yetkilendirilmiş
@@ -55,6 +64,18 @@ export default function PrivacyScreen() {
           iletilmesi için yapılandırılmış e-posta hizmetleri kullanılır. Teknik
           erişim kayıtları güvenlik, hata inceleme ve hizmet sunumu amacıyla bu
           sağlayıcılar tarafından işlenebilir. Kullanıcı verilerini satmayız.
+        </Txt>
+        <Txt weight="heavy">Oyuncu güvenliği ve şikâyetler</Txt>
+        <Txt>
+          Etkin olduğunda engelleme ilişkileri, arkadaşlık isteği ve oyun daveti
+          göndermeyi sınırlamak için saklanır. Şikâyette şikâyetçi ve hedef hesap
+          kimliği, neden kodu, isteğe bağlı açıklama, hedef oyuncunun görünen adı
+          ve kullanıcı adı kopyası, zaman, inceleme durumu ve moderatör kararı
+          kaydedilir. Açıklamaya parola, doğrulama kodu veya gereksiz kişisel bilgi
+          ekleme. Şikâyet ve denetim kayıtlarına yalnız yetkili moderatör
+          erişebilir; şikâyetçi kimliği hedef oyuncuya gösterilmez. İtiraz ve
+          destek için kovynelstudio@gmail.com kullanılabilir. Engelleme ve şikâyet
+          etmek hesabı, XP’yi veya oyun geçmişini kendiliğinden silmez.
         </Txt>
         <Txt weight="heavy">Telefon bildirimleri</Txt>
         <Txt>
@@ -82,6 +103,12 @@ export default function PrivacyScreen() {
           reklam testi içeren Android test sürümleri içindir. Bu test kapsamında
           Google Analytics veya Firebase Analytics etkinleştirilmez. Reklam
           SDK’sının aşağıda açıklanan kendi teknik ölçümleri bundan ayrıdır.
+        </Txt>
+        <Txt>
+          Mevcut iOS TestFlight adayında reklam talebi ve uygulama takibi etkin
+          değildir; Google Analytics veya Firebase Analytics açılmamıştır.
+          Android reklam testine ait açıklamalar yalnız ilgili Android test
+          sürümleri için geçerlidir.
         </Txt>
         <Txt>
           Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
@@ -119,6 +146,13 @@ export default function PrivacyScreen() {
           hesabın hemen silindiği anlamına gelmez.
         </Txt>
         <Txt>
+          Desteklenen Apple hesabında güncel Apple doğrulaması kullanılır;
+          Apple-only hesaptan uygulama parolası istenmez. Apple yetkisinin iptali
+          güvenli sunucu akışında tamamlanmadan hesap silindi olarak gösterilmez.
+          Ağ hatasında işlem durumu kontrol edilerek güvenli yeniden deneme
+          sunulur.
+        </Txt>
+        <Txt>
           Başarılı silmede Auth hesabı ve oturum yenileme kayıtları, çevrimiçi
           profil/kimlik bilgileri, arkadaşlık/davetler, kişisel bildirimler,
           kendi yanıt ve puanların ve sana ait dosyalar kaldırılır. Ortak
@@ -127,6 +161,17 @@ export default function PrivacyScreen() {
           alınamaz; sunucu doğrulaması olmadan tamamlandı denmez.
         </Txt>
         <Txt weight="heavy">Saklama ve teknik sınırlar</Txt>
+        <Txt>
+          Hesap silindiğinde bu hesaba doğrudan bağlı şikâyetlerdeki serbest metin
+          ve ad/kullanıcı adı kopyaları ile ilişkili moderasyon notları temizlenir.
+          Aynı notun sosyal kısıtlama gerekçesi kopyası da temizlenir; diğer
+          oyuncuların kısıtlaması bu işlemle kaldırılmaz. Silinen hesabın kimlik
+          bağlantıları kaldırılır. Kararların neden kodu, durumu ve zamanları gibi
+          asgari denetim kayıtları yetkili inceleme için kalabilir. Kayıt başka bir
+          oyuncuyla hâlâ ilişkiliyse tümüyle anonim olduğu söylenmez. Hesap
+          kullanımdayken bu kayıtlar için otomatik süreli silme henüz
+          uygulanmıyor; saklama ve silme talepleri destek adresinden izlenir.
+        </Txt>
         <Txt>
           Hesap verileri hesabın kullanım süresince tutulur ve doğrulanmış silme
           işlemi sırasında etkin sistemden kaldırılır. Uygulama veritabanındaki

@@ -140,7 +140,14 @@ if (
   const approval = JSON.parse(
     readFileSync("config/ios-store-approval.json", "utf8"),
   );
-  if (process.env.IOS_TESTFLIGHT_UPLOAD_ONLY === "1") {
+  if (process.env.IOS_PUBLIC_BETA_CANDIDATE === "1") {
+    iosApproval.validatePublicBetaCandidate(
+      approval,
+      JSON.parse(readFileSync("config/ios-public-beta-export.json", "utf8")),
+      execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+      process.env,
+    );
+  } else if (process.env.IOS_TESTFLIGHT_UPLOAD_ONLY === "1") {
     iosApproval.validateTestflightUpload(
       approval,
       JSON.parse(readFileSync("config/ios-testflight-export.json", "utf8")),

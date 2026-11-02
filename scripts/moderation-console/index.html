@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Anla & Ezberle — Moderasyon</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/client.mjs"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Şikâyet inceleme</h1>
+      <p>
+        Yalnız yetkili işletim hesabıyla giriş yapın. Gerçek şikâyetleri en az
+        günlük kontrol edin. Destek ve itiraz: kovynelstudio@gmail.com.
+      </p>
+      <p id="environment"></p>
+      <form id="login">
+        <label
+          >E-posta<input
+            id="email"
+            type="email"
+            autocomplete="username"
+            required /></label
+        ><label
+          >Şifre<input
+            id="password"
+            type="password"
+            autocomplete="current-password"
+            required /></label
+        ><button>Giriş yap</button>
+      </form>
+      <p id="status" role="status" aria-live="polite">Oturum açılmadı.</p>
+      <section id="controls" hidden>
+        <button id="refresh">Kuyruğu yenile</button
+        ><button id="logout">Çıkış yap</button>
+        <p>
+          Bu araç yalnız açık ilk 50 raporu gösterir. Uyarı kararı yalnız iç
+          kayıt oluşturur; oyuncuya mesaj göndermez. Kısıtlama sosyal iletişimi
+          engeller; hesap, skor ve XP silmez. Önce raporu inceleyin, sonra
+          gerekçeli karar verin.
+        </p>
+        <div id="reports"></div>
+        <details>
+          <summary>Önceki sosyal kısıtlamayı kaldır</summary>
+          <p>
+            Kısıtlanan raporun kayıtlı ID'sini kullanın. İşlem yetkili moderatör
+            olarak gerekçenizle audit'e kaydedilir.
+          </p>
+          <form id="restore">
+            <label
+              >Rapor ID<input
+                id="restore-id"
+                required
+                pattern="[0-9a-fA-F-]{36}"
+            /></label>
+            <label
+              >Karar gerekçesi<textarea
+                id="restore-note"
+                minlength="3"
+                maxlength="500"
+                required
+              ></textarea>
+            </label>
+            <button>Kısıtlamayı kaldır</button>
+          </form>
+        </details>
+      </section>
+      <p>
+        Parolayı tarayıcıya kaydetmeyin. Tokenlar yalnız bu sekmenin
+        belleğindedir; sayfayı yenilemek yerel oturumu temizler. Bu araç
+        moderatör yetkisi vermez.
+      </p>
+    </main>
+  </body>
+</html>

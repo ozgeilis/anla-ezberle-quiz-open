@@ -211,12 +211,21 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
   for (const suffix of [
     "apple_deletion_revocation.sql",
     "player_safety_moderation.sql",
+    "moderation_erasure_privacy.sql",
   ]) {
     const file = readdirSync("supabase/migrations").find((name) =>
       name.endsWith(suffix),
     );
     if (!file) throw Error(`Missing safety migration ${suffix}`);
+    if (suffix === "moderation_erasure_privacy.sql")
+      sql(readFileSync("supabase/tests/moderation_erasure_before.sql", "utf8"));
     sql(readFileSync(`supabase/migrations/${file}`, "utf8"));
+    if (suffix === "moderation_erasure_privacy.sql")
+      console.log(
+        sql(
+          readFileSync("supabase/tests/moderation_erasure_repair.sql", "utf8"),
+        ),
+      );
   }
   if (sql(snapshotSql) !== safetyRowsBefore)
     throw Error("Safety migration modified existing game/player rows");
@@ -236,6 +245,9 @@ GRANT ALL ON ALL SEQUENCES IN SCHEMA quiz_private,auth,storage TO postgres;
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA quiz_private TO postgres;
 ALTER FUNCTION quiz_private.erase_authorized_player() OWNER TO postgres;`);
   console.log(sql(readFileSync("supabase/tests/account_deletion.sql", "utf8")));
+  console.log(
+    sql(readFileSync("supabase/tests/moderation_erasure_privacy.sql", "utf8")),
+  );
   writeFileSync(
     resolve(output, "acceptance.json"),
     JSON.stringify(
