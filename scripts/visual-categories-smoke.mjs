@@ -58,6 +58,15 @@ try {
       );
       async function verifyCards(level) {
         for (let i = 0; i < cards.length; i++) {
+          const playable = level
+            ? categories[i].available[level]
+            : Object.values(categories[i].available).some(Boolean);
+          assert.equal(
+            await cards[i].count(),
+            playable ? 1 : 0,
+            "Unplayable categories are absent, not disabled previews",
+          );
+          if (!playable) continue;
           const label = await cards[i].getAttribute("aria-label");
           assert(
             !/\d[\d.,]*\s*soru/i.test(label),
@@ -67,18 +76,7 @@ try {
             !/\d[\d.,]*\s*soru/i.test(await cards[i].innerText()),
             "No visible pool count",
           );
-          const playable = level
-            ? categories[i].available[level]
-            : Object.values(categories[i].available).some(Boolean);
-          assert.equal(
-            await cards[i].getAttribute("role"),
-            playable ? "radio" : "button",
-          );
-          if (!playable)
-            assert(
-              label.includes("Seviye kapalı"),
-              "Unavailable levels stay explicit",
-            );
+          assert.equal(await cards[i].getAttribute("role"), "radio");
         }
       }
       await verifyCards();
@@ -113,29 +111,7 @@ try {
         const card = p.getByRole("button", {
           name: new RegExp("^" + title + "\\."),
         });
-        await card.scrollIntoViewIfNeeded();
-        const b = await card.boundingBox();
-        assert(
-          Math.abs(b.width - boxes[0].width) < 2 &&
-            Math.abs(b.height - boxes[0].height) < 2,
-          title + " consistent card size",
-        );
-        await card.click();
-        const dialog = p.getByRole("dialog", { name: title, exact: true });
-        await dialog.waitFor();
-        assert.equal(
-          await dialog
-            .getByRole("button", { name: "Oyuna Başla", exact: true })
-            .count(),
-          0,
-        );
-        await btn(p, "Anladım").click();
-        await card.screenshot({
-          path: join(
-            root,
-            `${mode}-${width}-${title.replaceAll(" ", "-")}.png`,
-          ),
-        });
+        assert.equal(await card.count(), 0, title + " has no placeholder card");
       }
       assert.equal(await p.getByTestId("category-start-panel").count(), 0);
       assert(
@@ -145,6 +121,28 @@ try {
       );
       await ctx.close();
     }
+  for (const subject of [
+    "children",
+    "ramazan",
+    "kadir_gecesi",
+    "kurban_bayrami",
+  ]) {
+    const ctx = await browser.newContext({
+      viewport: { width: 320, height: 844 },
+    });
+    await ctx.route("https://**/*", (r) => r.abort());
+    const p = await ctx.newPage();
+    await p.goto(
+      origin + "/prepare?playCategory=" + subject + "&difficulty=easy",
+      { waitUntil: "networkidle" },
+    );
+    await p
+      .getByRole("heading", { name: "Kategoriler", exact: true })
+      .waitFor();
+    assert.equal(await btn(p, "Oyuna Başla").count(), 0);
+    assert.equal(await p.getByTestId("category-start-panel").count(), 0);
+    await ctx.close();
+  }
   // Every supported category and difficulty must start with an eligible real question.
   for (const c of categories)
     for (const level of ["easy", "medium", "hard"]) {
@@ -211,7 +209,8 @@ try {
         categoryDifficultyChecks: 18,
         realCategoryDifficultyStarts: realStarts,
         bankTotal: 1500,
-        lockedCollections: 9,
+        lockedCollections: 0,
+        hiddenCollections: 9,
         corruptHistoryPreserved: true,
       },
       null,
@@ -219,7 +218,7 @@ try {
     ),
   );
   console.log(
-    "PASS catalog: eight layouts, hidden pool counts and accurate availability for all difficulty filters, nine locked collections, 18 category/difficulty eligibility checks, corrupted history preserved.",
+    "PASS catalog: eight layouts, hidden pool counts and accurate availability for all difficulty filters, nine hidden collections, 18 category/difficulty eligibility checks, corrupted history preserved.",
   );
 } finally {
   await browser.close();
