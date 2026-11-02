@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-02",
+  "mainCommit": "91c17302ccf56ee766aeccd68f9c520be67e4f7a",
+  "integrationCommit": "08f2a00b636d251f8b7ce420f63827da32b656a9",
+  "iosPr": 25,
+  "securityPr": 26,
+  "bundleIdentifier": "com.kovynelstudio.anlaezberle",
+  "appStoreConnectAppId": "6829516832",
+  "existingBuild": {
+    "version": "0.1.0",
+    "build": "2",
+    "internalOnly": true,
+    "status": "Ready to Test",
+    "externalSelector": "No builds available",
+    "unchanged": true
+  },
+  "internalGroup": {
+    "name": "Anla & Ezberle Internal QA",
+    "id": "9f0669fe-c7d3-4c4a-964c-57b60bed7332",
+    "automaticDistribution": false,
+    "testers": 0,
+    "builds": 0
+  },
+  "externalGroup": {
+    "name": "Anla & Ezberle Public Beta",
+    "id": "43dcf44c-f097-47a9-85a5-fa4b303b0a8a",
+    "testers": 0,
+    "builds": 0
+  },
+  "publicLink": {
+    "created": false,
+    "desiredLimit": 1000,
+    "desiredAudience": "Open to Anyone",
+    "reason": "No externally eligible build yet; create only after Beta App Review approval"
+  },
+  "betaReviewSubmitted": false,
+  "productionSubmissionAuthorized": false,
+  "androidChangeAuthorized": false,
+  "authPoliciesChanged": false,
+  "moderationOwnerConfirmed": true,
+  "moderatorEnrolled": false
+}
