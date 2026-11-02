@@ -72,8 +72,23 @@ try {
     ],
     { input: sql, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"] },
   );
-} catch {
-  throw new Error("Local SQL security assertions failed; details withheld");
+} catch (error) {
+  // This runner is pinned to disposable LOCAL fixtures. Show only the static
+  // PostgreSQL error/context line, never query text, row detail or credentials.
+  const diagnostic = String(error.stderr ?? "")
+    .split("\n")
+    .filter((line) => /^(ERROR:|CONTEXT:)/.test(line))
+    .map((line) =>
+      line
+        .replace(/[0-9a-f]{8}-[0-9a-f-]{27}/gi, "<fixture-id>")
+        .replace(/[^\s]+@[^\s]+/g, "<fixture-email>")
+        .slice(0, 200),
+    )
+    .join("; ");
+  throw new Error(
+    "Local SQL security assertions failed: " +
+      (diagnostic || "details withheld"),
+  );
 }
 let checks = 0;
 for (const line of output.split("\n").filter((s) => s.startsWith("PASS "))) {
