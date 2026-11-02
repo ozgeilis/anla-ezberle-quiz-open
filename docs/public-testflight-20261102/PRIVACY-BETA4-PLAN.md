@@ -1,6 +1,6 @@
 # Gizlilik metni ve Public TestFlight build4 — dar sonraki plan
 
-**Hazır; yeni yayın/paket kabulü onayı bekliyor.** Bu belge kendi başına izin
+**Ürün sahibi iki dar kapsamı da ayrıca onayladı; uygulama kaydı aşağıdadır.** Bu belge kendi başına izin
 vermez. Canlı silme-gizlilik düzeltmesi ve etkin native sosyal kabul tamamlandı;
 sonraki engel web ve gömülü iOS politikasının doğru açıklamayı göstermesidir.
 
@@ -75,3 +75,11 @@ App Store Production incelemesi/yayını, otomatik release ayarı, Android Alpha
 başka PR merge'leri, gerçek reklam/Analytics/genel push, Apple/Google provider
 ve kayıt kısıtları, yeni hesap yaratma/silme, yeni sunucu değişikliği. Kamuya
 katılım hesapsız oyunu açar; yeni Apple/Google kayıt hakkı vermez.
+
+## Uygulama kaydı — 2 Kasım 2026
+
+Yalnız PR29 bütün kontroller geçtikten sonra main’e `b421fe934033ccc69e1f96b37fd1bffd2300d130` ile birleştirildi. Herkese açık Production `/privacy` gerçek Chrome’da 2 Kasım tarihi, Apple, oyuncu güvenliği, silme ve iOS beta açıklamalarını gösterdi; eski Android AdMob metni korundu.
+
+Ayrı build4 arşiv kopyası mevcut imzalarla export edildi. IPA SHA256 `d1c8cb0c6b1a3427fb0e31a9ea899492601496ef30b7f6c746ba672a02169a0a`, 30.646.586 byte. Doğru gömülü JS SHA ve 61 varlık dosyası tam eşleşti; strict codesign, distribution provisioning, Team/Bundle, build4, APNs/Apple, no-debug/no-ATT kontrolü geçti. Geçici publicBeta onay kapısı tekrar false; tam mağaza kapısı false kaldı. Xcode 19:03:55 +03:00 Upload succeeded / EXPORT SUCCEEDED; sahibi tarayıcı oturumunu yeniledi ve Connect build4 / Ready to Submit / 19:04 yükleme tarihi doğrulandı. Build UUID `746dd05e-19cb-4f00-b38b-e9b994fc5a12`. Üç mevcut vendor dSYM uyarısı yüklemeyi engellemedi; tam crash symbolication kabulü değildir. Eski arşiv/IPA’lar ve Android korunuyor.
+
+Build4 dış beta seçiminde görüldü ve test yönergeleri kaydedildi. Gönderim üç kez (iki grup, bir build ayrıntısı) aynı Apple işlem hatasını verdi. Zorunlu iletişim, feedback/privacy URL ve özel giriş alanlarının doluluğu yeniden kontrol edildi. Harici grup 0 build kaldı; beta review gönderildi veya public link açıldı denmez. Eski build’ler ve Production ayarları korunur. Bu bir kod testi başarısızlığı değildir; Apple işleminin kök nedeni UI’dan doğrulanamadı.

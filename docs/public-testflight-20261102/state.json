@@ -1,7 +1,7 @@
 {
   "date": "2026-11-02",
-  "mainCommit": "91c17302ccf56ee766aeccd68f9c520be67e4f7a",
-  "integrationCommit": "08f2a00b636d251f8b7ce420f63827da32b656a9",
+  "mainCommit": "b421fe934033ccc69e1f96b37fd1bffd2300d130",
+  "integrationCommit": "98da9e7f2d64f518fa418af384961c53d6061d53",
   "iosPr": 25,
   "securityPr": 26,
   "bundleIdentifier": "com.kovynelstudio.anlaezberle",
@@ -31,7 +31,7 @@
     "created": false,
     "desiredLimit": 1000,
     "desiredAudience": "Open to Anyone",
-    "reason": "Hosted moderation-erasure fix and native safety acceptance passed. Public/embedded privacy updates pending approval before review submission."
+    "reason": "External review submission failed with Apple generic processing error in group and build-detail workflows; group still has 0 builds. No accepted review submission and no active public link."
   },
   "betaReviewSubmitted": false,
   "productionSubmissionAuthorized": false,
@@ -65,11 +65,12 @@
     "ownerContactEnteredAndSaved": true,
     "privateContactInRepository": false,
     "betaDescriptionSaved": true,
-    "reviewNotes": "Draft explicitly records pending reviewer access and social-safety acceptance",
+    "reviewNotes": "Saved complete build4 beta review notes; private existing reviewer credentials and owner contact retained",
     "licenseAgreementChanged": false,
     "reviewerSignInSaved": true,
     "existingReviewerPasswordLoginVerified": true,
-    "reviewerTestSessionLoggedOutLocally": true
+    "reviewerTestSessionLoggedOutLocally": true,
+    "requiredMetadataPresenceRechecked": true
   },
   "tests": {
     "integrationCheck": "430 passed; includes TypeScript, lint, bank checks and 2 console security tests",
@@ -79,9 +80,14 @@
     "build3TestFlightInstall": "not run; not distributed",
     "nativeSocialSafetyAcceptance": "PASS actual iOS390 simulator: existing-account sign-in, native report to hosted DB/owner console, block/unblock, server friend/invite denial, moderator restrict/restore, light/dark appearance, logout. Not physical or TestFlight installation.",
     "moderatorLocalRealService": "PASS real isolated Auth + Edge + RPC: role denial, queue, audited restrict/restore via closed report, logged-out JWT denial",
-    "moderatorBrowserUI": "PASS hosted owner login, queue, audited restrict and restore via closed report, local logout; owner role now inactive after planned rollback",
+    "moderatorBrowserUI": "PASS hosted owner login, queue, audited restrict and restore via closed report, local logout; approved owner role active, safety enabled",
     "moderationErasure": "PASS isolated target/reporter/moderator, rollback/denial/unrelated evidence; actual local GoTrue HTTP hard delete; forward repair SQL passed",
-    "hostedErasureSource": "Applied approved migration; function definition matches isolated source, trigger active, execute revoked, original erasure source unchanged. No hosted account deletion test."
+    "hostedErasureSource": "Applied approved migration; function definition matches isolated source, trigger active, execute revoked, original erasure source unchanged. No hosted account deletion test.",
+    "build4IpaStaticVerification": "PASS strict signing, Bundle/Team/build4/App Store provisioning, production APNs, Apple entitlement, no debug/ATT, exact JS and all 61 native asset files",
+    "build4AppleUpload": "PASS 19:03:55 +03:00 upload succeeded; Console Ready to Submit / 19:04 upload date verified",
+    "build4BetaReviewSubmission": "FAILED 3 attempts with generic App Store Connect processing error; not submitted",
+    "build4TestFlightInstall": "NOT RUN; no distribution",
+    "build4PhysicalPolicyAcceptance": "NOT RUN"
   },
   "ownerOperatingAccount": {
     "authorized": true,
@@ -106,14 +112,18 @@
     "nativeEnabledSafetyAcceptancePassed": true
   },
   "privacy": {
-    "currentPublicPolicyDate": "2026-10-30",
+    "currentPublicPolicyDate": "2026-11-02",
     "addendumPrepared": true,
-    "addendumApplied": false,
+    "addendumApplied": true,
     "nativeBuild3PolicyUpdated": false,
     "rolloutDocument": "MODERATION-ERASURE-ROLLOUT.md",
     "proposal": "PRIVACY-ADDENDUM-PROPOSAL.md",
     "proposalPr": 29,
-    "integratedIntoSourceBranch": true
+    "integratedIntoSourceBranch": true,
+    "proposalPrMerged": true,
+    "mergeCommit": "b421fe934033ccc69e1f96b37fd1bffd2300d130",
+    "publicBrowserVerified": true,
+    "publicUrl": "https://anla-ezberle-quiz.vercel.app/privacy"
   },
   "stagedCandidate4": {
     "sourceCommit": "e118f7cbb578ccd4061a1564fa751c2096d320f2",
@@ -123,8 +133,39 @@
     "nativeSimulatorTopAndPolicyHeadingsVerified": true,
     "fullNativeScrollVisualAcceptance": false,
     "physicalPolicyAcceptance": false,
-    "storeIPAProduced": false,
-    "uploaded": false,
-    "ownerPackageAcceptancePending": true
+    "storeIPAProduced": true,
+    "uploaded": true,
+    "ownerPackageAcceptancePending": false,
+    "ownerAccepted": true,
+    "ipaSha256": "d1c8cb0c6b1a3427fb0e31a9ea899492601496ef30b7f6c746ba672a02169a0a",
+    "ipaBytes": 30646586,
+    "signatureAndConfigurationVerified": true,
+    "nativeAssetFilesMatched": 61,
+    "uploadStatus": "succeeded; Console Ready to Submit verified",
+    "publicBetaGateRestoredFalse": true,
+    "uploadSucceededAt": "2026-11-02T19:03:55+03:00",
+    "consoleStatus": "Ready to Submit",
+    "connectBuildId": "746dd05e-19cb-4f00-b38b-e9b994fc5a12",
+    "consoleUploadDate": "Nov 2, 2026 at 7:04 PM",
+    "distributed": false,
+    "externalGroupAttached": false
+  },
+  "externalBetaSubmission": {
+    "attempted": true,
+    "submitted": false,
+    "attempts": 3,
+    "paths": [
+      "external group Add Builds (two attempts)",
+      "build details Add Group (one attempt)"
+    ],
+    "error": "There was an error processing your request. Please try again later.",
+    "requiredMetadataRechecked": true,
+    "privateReviewerAndContactFieldsPresent": true,
+    "whatToTestSaved": true,
+    "reviewNotesSaved": true,
+    "finalGroupBuilds": 0,
+    "publicLinkCreated": false,
+    "blockedBy": "App Store Connect submit operation returns generic processing error; underlying cause not established",
+    "screenshot": "private artifact screenshots/connect-build4-beta-submit-error.jpg; not committed"
   }
 }

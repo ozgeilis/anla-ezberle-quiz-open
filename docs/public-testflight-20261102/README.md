@@ -5,6 +5,33 @@ harici beta / Beta App Review / onaydan sonra Open to Anyone linki ve1000 kişi.
 App Store Production gönderimi/yayını, otomatik yayın ayarı ve Android Alpha
 değişikliği yapılmaz. Genel kayıt veya moderatör yetkisi bu izinle açılmaz.
 
+## Güncel sonuç — build4
+
+- Sahip iki dar planı ayrı onayladı. Yalnız politika PR29 main’e
+  `b421fe934033ccc69e1f96b37fd1bffd2300d130` ile birleştirildi; public
+  https://anla-ezberle-quiz.vercel.app/privacy gerçek Chrome’da yeni 2 Kasım
+  tarihini, Apple/oyuncu güvenliği/silme/iOS beta ve korunan AdMob metnini gösterdi.
+- Build4 IPA üretildi ve doğrulandı: SHA256
+  `d1c8cb0c6b1a3427fb0e31a9ea899492601496ef30b7f6c746ba672a02169a0a`.
+  Kabul edilmiş native JS ve 61 varlık dosyası tam eşleşti. Xcode upload
+  19:03:55 +03:00 başarılı, Connect 19:04 / Ready to Submit doğrulandı.
+- Doğru beta inceleme notları, test yönergeleri, mevcut özel incelemeci giriş
+  alanları ve sahibin iletişim alanları kaydedildi ve dolulukları yeniden doğrulandı.
+- **Beta App Review gönderimi başarısız:** grup akışında iki, build ayrıntısında
+  bir deneme aynı “There was an error processing your request. Please try again
+  later.” mesajını verdi. Ayrıntılı neden UI’da açıklanmadı; kök neden tahmin edilmez.
+  Son grup durumu 0 tester /0 build; başvuru kabul edilmedi, gerçek Public Link yok.
+- Geçici exact-package publicBeta kapısı tekrar false. Tam mağaza onayı false.
+  PR25/26/28 merge edilmedi; Android Alpha ve App Store Production değişmedi.
+- Kalan işlem: Apple’ın gönderim işlemi çalıştığında build4’ü aynı harici gruba
+  Beta App Review için gönder; kabulden sonra Open to Anyone /1000 linki oluştur
+  ve gerçek URL’yi doğrula. Yeni build veya paket onayı gerektiren bir değişiklik yok.
+- Yeni build4 fiziksel/TestFlight kurulum testi ve tam native gizlilik kaydırma
+  kabulü yapılmış sayılmaz. 430 kaynak kontrolü ve önceki native güvenlik kabulü
+  ayrı kanıtlardır. [Exact paket kaydı](build4-artifact.json), [durum](state.json).
+
+Aşağıdaki build2/build3 anlatımı önceki aşamaların tarihsel kaydıdır.
+
 ## Gerçek Connect kontrolü
 
 İlk kontrolde tek build 0.1.0 (2), **Internal / Ready to Test** idi. Harici grubun
@@ -121,7 +148,7 @@ değişmedi; sızdırılmış parola korumasının mevcut kapalı durumu değiş
 Gizlilik metni **ayrı PR #29** olarak hazır: yalnız mevcut metne Apple,
 şikâyet/veri temizliği, kapalı kayıt ve iOS reklamsız beta açıklamaları ekler.
 TypeScript/lint/web export ve gerçek yerel Chrome önizlemesi geçti. Main/Vercel
-onayı henüz yok. Build3'ün gömülü metni eski kalır; bu bir web yayınıyla kendiliğinden
+onayı sonradan alındı; PR29 birleştirildi ve public metin doğrulandı. Build3'ün gömülü metni eski kalır; bu bir web yayınıyla kendiliğinden
 değişmez. Yeni numaralı iOS adayının metin eşitliği ve ayrı paket kabulü hazırlanır.
 Beta App Review henüz gönderilmedi; gerçek Public Link yoktur.
 
@@ -148,6 +175,4 @@ Tam kaydırmalı sayfa kabulü araçla doğrulanamadı; fiziksel yeni politika v
 TestFlight kurulumu yapılmadı. Hatalı OTA biçimli ilk hazırlık aday kabul
 edilmedi; doğru native export ve tam varlıklar kullanılacak.
 
-[Yeni dar web/paket planı](PRIVACY-BETA4-PLAN.md) ayrı onay bekliyor.
-PR29 Vercel Preview gerçek Chrome'da güncel metni gösteriyor; public Production
-URL henüz güncellenmedi. Build4 App Store IPA'sı üretilmedi/yüklenmedi.
+[Yeni dar web/paket planı](PRIVACY-BETA4-PLAN.md) sahibi tarafından onaylandı. PR29 main’e `b421fe9` ile birleştirildi; public Production `/privacy` gerçek Chrome’da yeni metni gösterdi. Ayrı build4 IPA’sı üretildi ve imza/konfigürasyon/61 varlık/JS kontrolleri geçti; yükleme sürüyor. En güncel kesin durum `state.json` ve `build4-artifact.json` içindedir. Eski build3’e ait önceki bölümler tarihsel kayıttır.
