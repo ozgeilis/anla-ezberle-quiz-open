@@ -19,10 +19,11 @@ değişikliği yapılmaz. Genel kayıt veya moderatör yetkisi bu izinle açılm
   alanları ve sahibin iletişim alanları kaydedildi ve dolulukları yeniden doğrulandı.
 - **Beta App Review gönderimi başarısız:** grup akışında iki, build ayrıntısında
   bir deneme aynı “There was an error processing your request. Please try again
-  later.” mesajını verdi. Ayrıntılı neden UI’da açıklanmadı; kök neden tahmin edilmez.
+  later.” mesajını verdi. Sonraki tanılamada Chrome Network panelinin yalnız Response görünümü okundu: POST betaAppReviewSubmissions **HTTP422 / ENTITY_UNPROCESSABLE**. Yanıt daha özel bir sebep vermedi; kök neden tahmin edilmez.
   Son grup durumu 0 tester /0 build; başvuru kabul edilmedi, gerçek Public Link yok.
 - Geçici exact-package publicBeta kapısı tekrar false. Tam mağaza onayı false.
   PR25/26/28 merge edilmedi; Android Alpha ve App Store Production değişmedi.
+- Apple’ın TestFlight destek formuna sahibi tarafından ayrıca onaylanan teknik başvuru gönderildi; başarı makbuzu ve case numarası özel yerel kanıtta doğrulandı. Free Apps Agreement Active; ücretli sözleşme/DSA değişmedi. [Gönderilen teknik metin](APPLE-SUPPORT-DRAFT.md).
 - Kalan işlem: Apple’ın gönderim işlemi çalıştığında build4’ü aynı harici gruba
   Beta App Review için gönder; kabulden sonra Open to Anyone /1000 linki oluştur
   ve gerçek URL’yi doğrula. Yeni build veya paket onayı gerektiren bir değişiklik yok.

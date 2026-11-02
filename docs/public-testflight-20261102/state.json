@@ -31,7 +31,7 @@
     "created": false,
     "desiredLimit": 1000,
     "desiredAudience": "Open to Anyone",
-    "reason": "External review submission failed with Apple generic processing error in group and build-detail workflows; group still has 0 builds. No accepted review submission and no active public link."
+    "reason": "Existing build4 is Ready to Submit. Apple rejects Beta App Review POST with verified HTTP 422 ENTITY_UNPROCESSABLE. Owner-approved TestFlight support request submitted and receipt verified; no review accepted or public link."
   },
   "betaReviewSubmitted": false,
   "productionSubmissionAuthorized": false,
@@ -153,7 +153,7 @@
   "externalBetaSubmission": {
     "attempted": true,
     "submitted": false,
-    "attempts": 3,
+    "attempts": 5,
     "paths": [
       "external group Add Builds (two attempts)",
       "build details Add Group (one attempt)"
@@ -165,7 +165,16 @@
     "reviewNotesSaved": true,
     "finalGroupBuilds": 0,
     "publicLinkCreated": false,
-    "blockedBy": "App Store Connect submit operation returns generic processing error; underlying cause not established",
-    "screenshot": "private artifact screenshots/connect-build4-beta-submit-error.jpg; not committed"
+    "blockedBy": "Apple server rejects betaAppReviewSubmissions with HTTP 422 ENTITY_UNPROCESSABLE; response provides no specific underlying cause",
+    "screenshot": "private artifact screenshots/connect-build4-beta-submit-error.jpg; not committed",
+    "httpStatus": 422,
+    "serverCode": "ENTITY_UNPROCESSABLE",
+    "responseId": "d0da9b00-1fe6-419c-837b-5d98fbdc1d44",
+    "freeAppsAgreement": "Active; 1 Nov 2026–1 Nov 2027",
+    "supportDraft": "APPLE-SUPPORT-DRAFT.md",
+    "supportMessageSent": true,
+    "supportOwnerApproved": true,
+    "supportCaseIdStoredPrivately": true,
+    "supportReceiptVerified": true
   }
 }
