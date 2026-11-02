@@ -126,3 +126,24 @@ Reviewed migration SHA256:
 This is a concrete backend review package, not permission to deploy it.
 Real Apple credentials/provider/revocation, private relay, authorized moderator
 enrollment/operating acceptance and complete physical device testing remain open.
+
+## Owner-approved closed hosted preparation
+
+After separate owner approval, the exact reviewed SQL and matching Edge sources
+were applied only to Frankfurt. See `hosted-closed-preparation.json`. Before
+deployment all five previous Edge files matched the reviewed prior source.
+The existing Google-hook and social-core hashes matched the isolated database.
+New tables have forced RLS/no client table access; both Edge authentication
+gates return401. Existing user/profile/match/score/room/reward/friend/challenge
+counts are unchanged across the operation. Apple provider, four Apple flags,
+safety flag, test allowlist and moderator enrollment remain closed/empty.
+No key, cron, user creation/deletion, Alpha or tester setting was changed.
+MCP assigned hosted migration versions shown in the JSON; source migration
+filenames and SHA256 remain frozen. Future CLI migration reconciliation must
+map these names/versions, never reapply the same DDL blindly.
+
+Existing security advisor categories were unchanged (including the pre-existing
+leaked-password-protection warning); no security policy was reduced. Table
+INFO findings and callable capability RPCs require interpretation, not blanket
+removal of guards. Real Apple revocation/provider and moderator acceptance still
+block a claim of App Store readiness or forced insecure TestFlight distribution.
