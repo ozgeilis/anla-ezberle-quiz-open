@@ -134,3 +134,20 @@ Beta App Review henüz gönderilmedi; gerçek Public Link yoktur.
 
 Kaynaklar2 Kasım2026 tarihinde okundu. İnceleme sonucu Apple'a aittir; uygunluk
 denetimi kesin kabul garantisi değildir. Fiili durum [state.json](state.json).
+
+## Politika eşitliği için hazırlanan build4
+
+PR29'un yalnız politika metni PR28'e de alındı. Runtime kaynak commit'i e118f7c;
+onaylı işlevsel runtime'a göre tek değişen dosya `src/app/privacy.tsx`.
+Son kaynaklarla `pnpm check`430/430 tekrar geçti. Doğru native `export:embed`
+JS+varlıkları ve ayrı simulator QA kopyası hazır; eski arşivler/IPA'lar korunur.
+
+Nihai Hermes SHA256 `7c66a17df53a67980b6af1eeda6a9015b7a87296450a60663bafd1dd15ce4461`.
+Gerçek iOS390 ekranında yeni tarih/başlıklar, Manrope ve geri ikonu doğrulandı.
+Tam kaydırmalı sayfa kabulü araçla doğrulanamadı; fiziksel yeni politika ve
+TestFlight kurulumu yapılmadı. Hatalı OTA biçimli ilk hazırlık aday kabul
+edilmedi; doğru native export ve tam varlıklar kullanılacak.
+
+[Yeni dar web/paket planı](PRIVACY-BETA4-PLAN.md) ayrı onay bekliyor.
+PR29 Vercel Preview gerçek Chrome'da güncel metni gösteriyor; public Production
+URL henüz güncellenmedi. Build4 App Store IPA'sı üretilmedi/yüklenmedi.
