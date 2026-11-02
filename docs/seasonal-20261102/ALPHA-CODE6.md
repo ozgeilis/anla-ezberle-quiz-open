@@ -20,8 +20,8 @@ errors and zero lost supported devices. Release name:
 
 The owner-authorized review submission was confirmed. The publishing overview
 now lists this single Alpha change under **İncelenmekte olan değişiklikler**;
-Google's automatic checks are still running and the UI states actual review
-submission follows successful checks. Do not equate this with tester availability.
+The automatic checks have now completed and the Console explicitly states
+'Changes are currently being reviewed'. Do not equate this with tester availability.
 Managed publishing remains off, so accepted review can release to existing Alpha.
 No tester list, country selection, Google Groups channel or Production changed.
 
