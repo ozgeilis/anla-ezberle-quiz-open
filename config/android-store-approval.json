@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "packageId": "com.kovynelstudio.anlaezberle",
   "acceptedApkSha256": "11d12db224ff3968cbddb3c90f1f9608fa8a96921edafb4a35180d23b7f59e84",
   "packageApproved": true,
@@ -10,8 +10,10 @@
   "acceptanceBasis": "Owner explicitly authorized the tested seasonal change, a new signed Alpha AAB, upload and submission in the 2 November request. Current QA APK uses the prior unchanged debug native shell and new release Hermes JS; real Android 14 home/catalogue/hidden-link and retained progress confirmed. 399 tests, TS/lint/bank/web pass. Physical Samsung and Play-signed acceptance not claimed.",
   "approvedAt": "2026-11-02",
   "scope": "one free-quota ads-closed-test AAB containing the tested hidden-unready-card change for existing Alpha; no Production/audience/backend changes",
-  "approvalState": "one seasonal Alpha build snapshot authorized",
+  "approvalState": "authorized code6 cloud snapshot captured; gate reclosed",
   "ownerReply": "Bu düzeltmenin Alpha kapalı testine gönderilmesi için açık onay veriyorum.",
   "approvedIconCommit": "b3e65635b19f68e3fa3ba91f0413cc4d64931cfa",
-  "physicalDeviceAccepted": false
+  "physicalDeviceAccepted": false,
+  "consumedBySourceCommit": "5639a1f",
+  "consumedByBuildId": "a085a6d3-5bce-4679-8227-bfd9060c50ee"
 }
