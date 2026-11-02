@@ -84,11 +84,17 @@ function sql(query) {
         "postgres",
         "-d",
         "postgres",
-        "-At",
+        "-qAt",
         "-v",
         "ON_ERROR_STOP=1",
       ],
-      { input: query, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"] },
+      {
+        // Local direct SQL simulates the verified Edge service context, never
+        // an authenticated client's actor-supplied RPC. Remote calls still use JWT.
+        input: `SET request.jwt.claims='{"role":"service_role"}';\n${query}`,
+        encoding: "utf8",
+        stdio: ["pipe", "pipe", "pipe"],
+      },
     ).trim();
     try {
       return JSON.parse(raw);
@@ -155,7 +161,9 @@ const sockets = [];
 async function rpc(user, operation, body = {}, status = 200) {
   // Match the shipped client's explicit timing negotiation. Keep command()
   // unmodified so legacy requests can still be exercised below.
-  const timed = ["challenge_reply", "get", "start", "answer"].includes(operation);
+  const timed = ["challenge_reply", "get", "start", "answer"].includes(
+    operation,
+  );
   return command(
     user,
     operation,

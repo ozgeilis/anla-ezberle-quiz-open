@@ -1,3 +1,4 @@
+import { profileContentError } from "./safety/rules";
 // Kept in parity with quiz_private.valid_username; the database is authoritative.
 export function usernameError(value: string): string | null {
   if (!/^[a-z0-9_]{3,20}$/.test(value))
@@ -9,7 +10,7 @@ export function usernameError(value: string): string | null {
     /(fuck|shit|nazi|siktir|orospu|amk|pic|yarrak)/.test(value)
   )
     return "Bu kullanıcı adına izin verilmiyor. Başka bir ad seç.";
-  return null;
+  return profileContentError(value);
 }
 export function searchUsername(value: string) {
   return value.replace(/^@/, "").toLowerCase().trim();

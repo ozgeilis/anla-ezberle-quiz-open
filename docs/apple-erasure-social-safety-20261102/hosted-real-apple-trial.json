@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-02",
+  "project": "mqyuihiobkomjfipxehj",
+  "status": "CORE_REAL_APPLE_TRIAL_PASSED_AND_HOSTED_TEST_CLOSED",
+  "sourceCommit": "4071a90074a594e9d80e02ab35d71bc63c2db551",
+  "localCandidate": {
+    "team": "W7CRC43SHP",
+    "bundleIdentifier": "com.kovynelstudio.anlaezberle",
+    "developmentSigned": true,
+    "strictSignatureVerified": true,
+    "installedOnPhysicalIphone": true,
+    "embeddedBundleSha256": "3d7b11b37e53de1cb332294051b03be1ca8b7fabcba0d26b5103e5c9e21852c4",
+    "storeUpload": false,
+    "postErasureRealDeviceImage": "private-local-evidence/physical-iphone-after-apple-erasure.jpg"
+  },
+  "emptyAllowlistTrial": {
+    "ownerCompletedNativeHideMyEmail": true,
+    "ownerReportedError": "Kapalı test yetkini kontrol et",
+    "authLogsWindowUtc": [
+      "2026-11-02T09:30:00Z",
+      "2026-11-02T10:03:00Z"
+    ],
+    "serverGrantType": "id_token",
+    "serverHttpStatus": 403,
+    "exactClosedTestHookMessageMatched": true,
+    "appleIdentitiesAfterAttempt": 0,
+    "allowlistEntriesAfterAttempt": 0,
+    "generalAppleSignupEnabled": false,
+    "existingHookMd5": "7db2b669f77266fdf8a62e9b076145f7",
+    "result": "PASS_NATIVE_REQUEST_DENIED_BY_CLOSED_REGISTRATION_HOOK"
+  },
+  "pending": [
+    "Actual Private Email Relay forwarded-message delivery: NOT_RUN",
+    "Authenticated native player-safety/moderator operating acceptance remains separate",
+    "General Apple provider rollout, PR26 merge and new TestFlight candidate/distribution remain separately gated"
+  ],
+  "acceptanceComplete": false,
+  "privateRelayAddressRecordedInGit": false,
+  "singleAliasAdmission": {
+    "ownerOpenedFullAddress": true,
+    "existingUserOrIdentityFound": false,
+    "entries": 1,
+    "maximumDays": 7,
+    "expiresAtUtc": "2026-11-09T10:06:46.111674Z",
+    "generalSignupEnabled": false,
+    "privateAddressInPublicEvidence": false,
+    "removedAfterSingleAccountCreated": true,
+    "remainingEntries": 0,
+    "reason": "Prevent another application account after erasure; existing-actor sign-in and fresh Apple proof do not require signup admission."
+  },
+  "realNativeLogin": {
+    "physicalDevice": "iPhone 11 / iOS27.2",
+    "ownerReportedScreen": "Arkadaşlarınla Oyna / Profilimi Tamamla",
+    "serverVerifiedEmail": true,
+    "newTrialActors": 1,
+    "appleIdentities": 1,
+    "providerSet": [
+      "apple"
+    ],
+    "activeSessions": 1,
+    "secondEmailVerificationRequired": false,
+    "applicationPasswordRequired": false,
+    "result": "PASS_NATIVE_APPLE_LOGIN_AND_SESSION_CREATED"
+  },
+  "persistence": {
+    "appTerminatedAndRelaunched": true,
+    "ownerReopenedFriendsFlowWithoutSignInPrompt": true,
+    "sameNewTrialActorVerified": true,
+    "activeSessionCount": 1,
+    "otherAuthUserCount": 18,
+    "result": "PASS_PHYSICAL_IPHONE_SESSION_PERSISTENCE"
+  },
+  "cancellationAndRelogin": {
+    "ownerCancelledNativeAppleSheet": true,
+    "ownerConfirmedNoLoginAfterCancellation": true,
+    "ownerCompletedSecondNativeSignIn": true,
+    "ownerReportedScreen": "Çevrimiçi düello",
+    "sameOriginalTrialActorAndCreationTime": true,
+    "matchingUserCount": 1,
+    "appleIdentities": 1,
+    "activeSessionCount": 1,
+    "result": "PASS_PHYSICAL_CANCEL_AND_SAME_ACTOR_RELOGIN"
+  },
+  "coreNativeTrialComplete": true,
+  "acceptanceScope": "One temporary Apple-only application account on physical iPhone; not overall App Store/TestFlight readiness",
+  "erasure": {
+    "ownerCompletedFinalConfirmation": true,
+    "ownerReturnedToLogin": true,
+    "accountDeleteAuthenticatedHttp200Requests": 2,
+    "successfulRequestDeploymentVersion": 12,
+    "trialUsers": 0,
+    "trialIdentities": 0,
+    "allAppleIdentities": 0,
+    "trialSessions": 0,
+    "trialRefreshTokens": 0,
+    "appleDeletionJobs": 0,
+    "remainingTokenCiphertextJobs": 0,
+    "ownerConfirmedAppleAuthorizationEntryAbsent": true,
+    "ownerDidNotManuallyRemoveAppleAuthorization": true,
+    "deployedFlowRequiresRevocationBeforeErasure": true,
+    "result": "PASS_PHYSICAL_APPLE_FRESH_PROOF_ERASURE_AND_REVOCATION"
+  },
+  "integrity": {
+    "otherAuthUsers": 18,
+    "otherAuthIdentityCreationHashUnchanged": true,
+    "scoreLedger": {
+      "rows": 31,
+      "rowHashUnchanged": true
+    },
+    "friendships": {
+      "rows": 2,
+      "rowHashUnchanged": true
+    },
+    "matches": {
+      "rows": 31,
+      "rowHashUnchanged": true
+    },
+    "liveRooms": {
+      "rows": 15,
+      "rowHashUnchanged": true
+    },
+    "liveRewards": {
+      "rows": 16,
+      "rowHashUnchanged": true
+    },
+    "ownerConfirmedLocalProfileAfterErasure": {
+      "level": 3,
+      "completedGames": 5,
+      "totalScore": 2100
+    }
+  },
+  "closedState": {
+    "providerEnabled": false,
+    "oauthEnabled": false,
+    "deletionEnabled": false,
+    "revocationEnabled": false,
+    "signupEnabled": false,
+    "edgeDeletionEnvironmentEnabled": false,
+    "edgeFlagDigest": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
+    "allowlistEntries": 0,
+    "trialErasureTestActorPresent": false,
+    "retentionActive": true,
+    "lastRetentionRunSucceeded": true,
+    "hookMd5": "7db2b669f77266fdf8a62e9b076145f7",
+    "currentAccountDeleteVersion": 13,
+    "currentHostedFilesMatchCandidate": 8,
+    "handlerVerifiesUserAndSession": true,
+    "verifyJwtSetting": false,
+    "existingVerifyJwtFalsePreserved": true
+  },
+  "faultInjectionScope": "Network/revocation retry failure tests passed in isolated suite; live Apple failures were not deliberately injected"
+}

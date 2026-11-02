@@ -95,7 +95,10 @@ export interface PendingAnswer {
   requestId: string;
 }
 
+export type SafetyOperation =
+  "player_block" | "player_unblock" | "player_report" | "blocked_players";
 export type SocialOperation =
+  | SafetyOperation
   | "social_self"
   | "username_check"
   | "social_profile"

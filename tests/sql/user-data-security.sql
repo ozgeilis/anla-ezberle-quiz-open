@@ -33,13 +33,17 @@ INSERT INTO quiz_private.live_members(room_id,player_id)
  SELECT o.id,p.id FROM security_objects o CROSS JOIN security_people p WHERE o.kind='room' AND p.label='b';
 
 DO $$ DECLARE t record;f record;BEGIN
- -- The reviewed, expiring Google test allowlist stores a server-only address,
+ -- Reviewed, expiring provider test allowlists store a server-only address,
  -- never a credential. Do not exempt other application email/secret columns.
  ASSERT NOT EXISTS(SELECT 1 FROM information_schema.columns
   WHERE table_schema IN('public','quiz_private')
    AND column_name ~* '(password|passwd|secret|access_token|refresh_token|email)'
-   AND NOT (table_schema='quiz_private' AND table_name='google_signup_test_allowlist' AND column_name='email')),
+   AND NOT (table_schema='quiz_private' AND table_name IN('google_signup_test_allowlist','apple_signup_test_allowlist') AND column_name='email')),
   'No application credential columns outside the private test allowlist';
+ ASSERT has_table_privilege('supabase_auth_admin','quiz_private.apple_signup_test_allowlist','SELECT'),
+  'Apple Auth hook can read the separate test allowlist';
+ ASSERT NOT has_table_privilege('supabase_auth_admin','quiz_private.apple_signup_test_allowlist','INSERT,UPDATE,DELETE,TRUNCATE'),
+  'Apple Auth hook cannot expand the test allowlist';
  ASSERT has_table_privilege('supabase_auth_admin','quiz_private.google_signup_test_allowlist','SELECT'),
   'Auth hook can read its server-managed test allowlist';
  ASSERT NOT has_table_privilege('supabase_auth_admin','quiz_private.google_signup_test_allowlist','INSERT,UPDATE,DELETE,TRUNCATE'),
@@ -87,6 +91,10 @@ DO $$ DECLARE a uuid;b uuid;BEGIN
 END $$;
 RESET ROLE;
 SELECT 'PASS A/B RLS isolation, write denial and Realtime membership';
+
+-- Subsequent direct RPC calls model the authenticated Edge service context.
+-- The preceding anon/authenticated SQL-role and ACL denials remain unchanged.
+SET LOCAL request.jwt.claims = '{"role":"service_role"}';
 
 DO $$ DECLARE a uuid;b uuid;u uuid;r jsonb;player jsonb;notification uuid;BEGIN
  SELECT id INTO a FROM security_people WHERE label='a';SELECT id INTO b FROM security_people WHERE label='b';SELECT id INTO u FROM security_people WHERE label='unverified';

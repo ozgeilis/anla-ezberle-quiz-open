@@ -1,3 +1,9 @@
+import {
+  beginAppleDeletion,
+  proveAppleDeletion,
+  retryAppleDeletion,
+  AppleDeletionFailure,
+} from "./appleDeletion";
 import React, { useEffect, useRef, useState } from "react";
 import { Linking, TextInput } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -58,7 +64,10 @@ function AccountDeletionForm({
     auth.session?.user.identities?.some((i) => i.provider === "google") ===
     true;
   const [usePassword, setUsePassword] = useState(false);
-  const useGoogleCode = hasGoogleIdentity && !usePassword;
+  const hasAppleIdentity =
+    auth.session?.user.identities?.some((i) => i.provider === "apple") === true;
+  const [appleRetry, setAppleRetry] = useState<string | null>(null);
+  const useGoogleCode = !hasAppleIdentity && hasGoogleIdentity && !usePassword;
   const [challenge, setChallenge] = useState("");
   const actor = auth.session?.user.id,
     currentActor = useRef(actor),
@@ -98,7 +107,7 @@ function AccountDeletionForm({
       !actor ||
       !available ||
       confirmation !== "SİL" ||
-      !password
+      (!hasAppleIdentity && !password)
     )
       return;
     const client = onlineClient();
@@ -111,11 +120,25 @@ function AccountDeletionForm({
       const { data: sessionData } = await client.auth.getSession();
       if (sessionData.session?.user.id !== deletingActor)
         throw Error("Oturum değişti. Yeniden giriş yap.");
-      const { data, error } = await client.functions.invoke("account-delete", {
-        body: useGoogleCode
-          ? { confirmation: "DELETE", googleCode: password, challenge }
-          : { confirmation: "DELETE", password },
-      });
+      let data: { deleted?: boolean } | null = null;
+      let error: unknown = null;
+      if (hasAppleIdentity) {
+        if (appleRetry) await retryAppleDeletion(deletingActor, appleRetry);
+        else {
+          const attempt = await beginAppleDeletion(deletingActor);
+          setAppleRetry(attempt.challenge);
+          await proveAppleDeletion(deletingActor, attempt);
+        }
+        data = { deleted: true };
+      } else {
+        const result = await client.functions.invoke("account-delete", {
+          body: useGoogleCode
+            ? { confirmation: "DELETE", googleCode: password, challenge }
+            : { confirmation: "DELETE", password },
+        });
+        data = result.data;
+        error = result.error;
+      }
       if (error || data?.deleted !== true)
         throw Error(
           useGoogleCode
@@ -130,6 +153,8 @@ function AccountDeletionForm({
       setServerDeleted(deletingActor);
       await finishLocal(deletingActor);
     } catch (e) {
+      if (e instanceof AppleDeletionFailure && !e.retryable)
+        setAppleRetry(null);
       if (currentActor.current === deletingActor)
         setMessage(e instanceof Error ? e.message : "Silme doğrulanamadı.");
     } finally {
@@ -216,9 +241,7 @@ function AccountDeletionForm({
           />
         )}
         <Txt size={12}>
-          Anla & Ezberle hesabını bu web sayfasından, uygulamayı kurmadan
-          silebilirsin. Silme talebinin durumu işlem sırasında ve sunucu
-          yanıtından sonra gösterilir.
+          {hasAppleIdentity ? "Apple hesabını silerken iPhone uygulamasında yeniden Apple doğrulaması gerekir. Diğer cihazlarda destek adresimizden yardım isteyebilirsin." : "E-posta veya Google hesabını bu sayfadan da silebilirsin. İşlem durumu sunucu yanıtından sonra gösterilir."}
         </Txt>
         <Button
           title="Destek üzerinden silme talebi"
@@ -266,11 +289,13 @@ function AccountDeletionForm({
         }}
       >
         <Txt>
-          {useGoogleCode
-            ? "E-postana gönderilen tek kullanımlık kodu gir ve SİL yaz. Kod bu hesaba bağlıdır; beş dakika geçerlidir."
-            : "Yalnız giriş yaptığın hesap silinebilir. Devam etmek için güncel parolanı gir ve SİL yaz. Dosyalar önce temizlenir; bir hata oluşursa hesabın açık kalırken bazı dosyalar silinmiş olabilir."}
+          {hasAppleIdentity
+            ? "SİL yazıp devam ettiğinde Apple hesabınla yeniden doğrulama istenir. Uygulama parolası gerekmez. Apple yetkisi iptal edilmeden hesabın silinmez."
+            : useGoogleCode
+              ? "E-postana gönderilen tek kullanımlık kodu gir ve SİL yaz. Kod bu hesaba bağlıdır; beş dakika geçerlidir."
+              : "Yalnız giriş yaptığın hesap silinebilir. Devam etmek için güncel parolanı gir ve SİL yaz. Dosyalar önce temizlenir; bir hata oluşursa hesabın açık kalırken bazı dosyalar silinmiş olabilir."}
         </Txt>
-        {hasGoogleIdentity && (
+        {!hasAppleIdentity && hasGoogleIdentity && (
           <Tap
             label={
               useGoogleCode
@@ -336,28 +361,30 @@ function AccountDeletionForm({
             }}
           />
         )}
-        <TextInput
-          accessibilityLabel={
-            useGoogleCode
-              ? "Hesap silme doğrulama kodu"
-              : "Hesap silme için güncel parola"
-          }
-          secureTextEntry={!useGoogleCode}
-          keyboardType={useGoogleCode ? "number-pad" : "default"}
-          autoComplete={useGoogleCode ? "one-time-code" : "current-password"}
-          value={password}
-          onChangeText={setPassword}
-          editable={!busy}
-          maxLength={useGoogleCode ? 8 : 256}
-          style={{
-            minHeight: 48,
-            borderWidth: 1,
-            borderColor: theme.border,
-            color: theme.text,
-            padding: 12,
-            borderRadius: 12,
-          }}
-        />
+        {!hasAppleIdentity && (
+          <TextInput
+            accessibilityLabel={
+              useGoogleCode
+                ? "Hesap silme doğrulama kodu"
+                : "Hesap silme için güncel parola"
+            }
+            secureTextEntry={!useGoogleCode}
+            keyboardType={useGoogleCode ? "number-pad" : "default"}
+            autoComplete={useGoogleCode ? "one-time-code" : "current-password"}
+            value={password}
+            onChangeText={setPassword}
+            editable={!busy}
+            maxLength={useGoogleCode ? 8 : 256}
+            style={{
+              minHeight: 48,
+              borderWidth: 1,
+              borderColor: theme.border,
+              color: theme.text,
+              padding: 12,
+              borderRadius: 12,
+            }}
+          />
+        )}
         <TextInput
           accessibilityLabel="Silme onayı, SİL yaz"
           autoCapitalize="characters"
@@ -388,12 +415,14 @@ function AccountDeletionForm({
           title={
             pendingAction === "delete"
               ? "Sunucudan silme onayı bekleniyor…"
-              : "Hesabımı kalıcı olarak sil"
+              : hasAppleIdentity && appleRetry
+                ? "Silme işlemini yeniden dene"
+                : "Hesabımı kalıcı olarak sil"
           }
           disabled={
             busy ||
             confirmation !== "SİL" ||
-            !password ||
+            (!hasAppleIdentity && !password) ||
             (useGoogleCode && (!challenge || !/^\d{8}$/.test(password)))
           }
           onPress={() => void erase()}

@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-02",
+  "project": "mqyuihiobkomjfipxehj",
+  "region": "eu-central-1",
+  "scope": "owner-approved closed backend only",
+  "codeCommit": "23aaf08",
+  "migrations": [
+    {
+      "source": "20261101215458_apple_deletion_revocation.sql",
+      "appliedName": "apple_deletion_revocation",
+      "hostedVersion": "20261102074951",
+      "sha256": "05b6a92c015ea9764dc110703180d43cf8860b41b91f8be7c3a4e5fef18925e8"
+    },
+    {
+      "source": "20261101215514_player_safety_moderation.sql",
+      "appliedName": "player_safety_moderation",
+      "hostedVersion": "20261102075009",
+      "sha256": "76667ad009ffd2f4829502c51d9064571699ddc52e4cc8b18ac4fdbc8a93d6d1"
+    }
+  ],
+  "edge": {
+    "account-delete": 8,
+    "online-duel": 19,
+    "existingVerifyJwtFalsePreserved": true,
+    "handlerVerifiesSupabaseUser": true
+  },
+  "sourceDrift": false,
+  "appleEnabled": false,
+  "appleSignupEnabled": false,
+  "safetyEnabled": false,
+  "testAllowlistRows": 0,
+  "moderatorGrants": 0,
+  "appleJobs": 0,
+  "realAccountCreatedOrDeleted": false,
+  "beforeAfterRowCountsEqual": true,
+  "newTablesForcedRls": true,
+  "newTablesClientAccessDenied": true,
+  "unauthenticatedEdge401": true,
+  "securityAdvisoryNamesChanged": false,
+  "remaining": [
+    "real Apple provider/nonce/revocation acceptance",
+    "private relay",
+    "authorized moderator operating acceptance",
+    "native authenticated safety tests",
+    "physical device acceptance"
+  ],
+  "productionReady": false
+}

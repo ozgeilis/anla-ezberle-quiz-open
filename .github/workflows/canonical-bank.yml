@@ -2,7 +2,12 @@ name: Canonical bank offline and server acceptance
 on:
   workflow_dispatch:
   pull_request:
-    branches: [main, integration/mobile-game-ui-20261026]
+    branches:
+      [
+        main,
+        integration/mobile-game-ui-20261026,
+        feat/ios-store-readiness-20261101,
+      ]
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true

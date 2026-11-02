@@ -2,7 +2,7 @@ name: Dogrulanmis siralama kabulü
 on:
   workflow_dispatch:
   pull_request:
-    branches: [main]
+    branches: [main, feat/ios-store-readiness-20261101]
     paths:
       - "src/features/ranking/**"
       - "src/features/online/**"
@@ -78,7 +78,7 @@ jobs:
         with:
           deno-version: v2.x
       - run: deno check --no-config supabase/functions/online-duel/index.ts
-      - run: deno check --no-config supabase/functions/account-delete/index.ts
+      - run: deno check --config supabase/functions/account-delete/deno.json supabase/functions/account-delete/index.ts
       - name: Fresh ephemeral local Supabase (never a hosted target)
         run: supabase start --exclude studio,storage-api,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
       - name: Rollback-only SQL acceptance
