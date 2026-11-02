@@ -148,3 +148,17 @@ leaked-password-protection warning); no security policy was reduced. Table
 INFO findings and callable capability RPCs require interpretation, not blanket
 removal of guards. Real Apple revocation/provider and moderator acceptance still
 block a claim of App Store readiness or forced insecure TestFlight distribution.
+
+## Separately approved closed Apple server preparation
+
+The owner created/downloaded the replacement Sign in with Apple key and
+submitted its six server settings directly into Frankfurt Edge secrets. The
+Dashboard SHA256 digests match the prepared values; no private values are
+recorded here. `APPLE_ACCOUNT_DELETION_ENABLED` is still false. The exact
+reviewed retention operation is installed, and its first scheduled run succeeded
+at 08:55 UTC on 2 November. Both unauthenticated Edge requests still return401.
+See `hosted-key-preparation.json`. Apple provider/feature flags, new signup and
+player safety remain closed. Real Apple nonce/login/deletion/revocation, Private
+Relay and authorized moderator acceptance are still pending; this is not
+TestFlight distribution acceptance. Do not recreate/rotate the key or reschedule
+the existing named cron job merely to repeat this preparation.
