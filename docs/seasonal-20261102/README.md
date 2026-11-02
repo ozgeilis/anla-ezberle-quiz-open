@@ -39,7 +39,7 @@ a calendar date or adding an illustration does not activate a collection.
   restored playable content, unpublished/child/malformed links and valid legacy
   links. Existing history/XP/v71/v72/v73 and seasonal draft regressions pass.
 - Real Chrome responsive view: 320/360/390 dp dark; 320/390 viewport PNGs saved.
-  Open/light theme 360 dp also captured. Android runs light and iOS runs dark.
+  360 dp dark also captured. Android runs light and iOS runs dark.
 - Real Android 14 emulator: new release Hermes JS embedded in the unchanged
   previous debug QA native shell; installed with `adb install -r`, no uninstall
   or data reset. Home retains 30 XP and prior score; six-category view opens.
