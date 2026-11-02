@@ -1,8 +1,9 @@
 # Apple erasure and player safety candidate — 2 November 2026
 
-Stacked on PR #25 (`bdcac7a`); this PR is not a main/store/backend deployment.
-No hosted migration, Apple provider, moderator grant, secret, or tester change
-has been performed. All new server capabilities default to **closed**.
+Stacked on PR #25, including its approved seasonal card changes. PR #26 has
+not been merged to main or distributed. The separately approved closed backend
+preparation is deployed in Frankfurt; Apple provider, moderator enrollment and
+all new feature flags remain closed. See the hosted evidence below.
 
 ## Implemented
 
@@ -51,14 +52,13 @@ SAFETY_FIXTURES_FILE=/private/outside/repo.json node scripts/player-safety-local
 Use three disposable local authenticated fixtures with initial friendship; do
 not point these fixtures at a hosted service. Credentials/output remain outside Git.
 
-## Deployment sequence — separate approval required
+## Deployment sequence — closed preparation applied; remaining steps need separate approval
 
-1. Complete final isolated SQL and Android/iOS UI matrix, review diff and migration
-   hashes. Re-read hosted hook hash/schema; stop on drift. Do not replace a
-   changed hook. Retain current Google/email closed-test branches.
-2. Review/apply only `20261101215458_apple_deletion_revocation.sql` and
-   `20261101215514_player_safety_moderation.sql`; deploy compatible Edge handlers.
-   All feature flags remain false. No backfill of XP/history/old matches.
+1. Isolated SQL and hash/source preflight passed. The full native authenticated
+   UI matrix remains open. Retain current Google/email closed-test branches.
+2. Applied only the two reviewed migrations and compatible Edge handlers under
+   the separate closed-preparation approval. All feature flags remain false;
+   no XP/history/old-match backfill. Do not reapply this step.
 3. Secure server configuration: existing permanent Apple client ID
    `com.kovynelstudio.anlaezberle`, correct Team, Apple key ID + private P8,
    encryption key ID/key map. Store only Supabase secrets, never client/public
@@ -106,16 +106,16 @@ False positives require moderator review and a versioned lexicon change.
 
 ## Final candidate evidence
 
-Candidate `2115c15` (stacked on current PR #25) passes all five GitHub checks:
+Candidate `eb298a9` (stacked on current PR #25) passes all five GitHub checks:
 canonical-bank content-check, leaderboard SQL/Edge, leaderboard UI, Vercel and
 Vercel comment. The isolated canonical suite and Apple HTTP/SQL retry acceptance
 were repeated after Docker recovery. The formerly ambiguous alias is fixed.
 Local full check after seasonal integration is 426/426.
 
-Hosted read-only check: Frankfurt is ACTIVE_HEALTHY/Postgres17.11; neither
-proposed security migration/config table exists. Existing online-duel v18 and
-account-delete v7 remain active. The current Google-hook hash matches the
-reviewed precondition `a32147ffb2e85ef10e60ae8cf1af9bea`. No hosted writes.
+Pre-deployment read-only check found Frankfurt ACTIVE_HEALTHY/Postgres17.11,
+no proposed security tables, online-duel v18 and account-delete v7. The
+Google-hook hash matched `a32147ffb2e85ef10e60ae8cf1af9bea`. These are the
+recorded preconditions, superseded by the approved deployment evidence below.
 
 Reviewed migration SHA256:
 
@@ -123,7 +123,8 @@ Reviewed migration SHA256:
 - Player safety: `76667ad009ffd2f4829502c51d9064571699ddc52e4cc8b18ac4fdbc8a93d6d1`
 - Optional separately reviewed retention operation: `edd96d5ab78486f524bc4dc6fda4338dd4d876825f3edfd6cac29fe722659da8`
 
-This is a concrete backend review package, not permission to deploy it.
+Only the closed preparation has been approved and deployed. This document
+is not permission to activate providers, grant moderators or distribute it.
 Real Apple credentials/provider/revocation, private relay, authorized moderator
 enrollment/operating acceptance and complete physical device testing remain open.
 
