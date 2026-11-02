@@ -1,9 +1,14 @@
 import React from "react";
-import { useLocalSearchParams } from "expo-router";
+import { Redirect, useLocalSearchParams } from "expo-router";
 import { PreparationScreen } from "../features/categories/PreparationScreen";
-import { broadPreparationFromParams } from "../features/categories/preparation";
+import {
+  broadPreparationFromParams,
+  unavailablePreparationLink,
+} from "../features/categories/preparation";
 export default function PrepareRoute() {
   const params = useLocalSearchParams();
+  if (unavailablePreparationLink(params))
+    return <Redirect href="/categories" />;
   const initial = broadPreparationFromParams(params);
   return <PreparationScreen key={JSON.stringify(initial)} initial={initial} />;
 }
