@@ -1,7 +1,8 @@
 # Local iPhone candidate update before real Apple acceptance
 
-2 November 2026. Proposed correction to the approved single-actor Apple trial;
-**signing and installation await separate owner approval**.
+2 November 2026. Correction to the approved single-actor Apple trial.
+The owner explicitly approved this local signing/install update. It was completed;
+real Apple authentication/deletion acceptance is still in progress.
 
 ## Verified need
 
@@ -55,7 +56,7 @@ then reclosed. The prior PR25 build approval is not reused as approval for PR26.
 - Separate local candidate copy prepared; original archive untouched. Main native
   executable remains byte-identical, SHA256
   `476c412eb07c13e4e478f9b495187cb6a02705899799e1a72d0cd6dbfa56d501`.
-  This copy has **not** been re-signed or installed and is not an accepted artifact.
+  This was the pre-sign state; see the completed local update below.
 - Existing PR26 GitHub checks at `4071a90`: content-check, leaderboard SQL/Edge,
   leaderboard UI, Vercel and preview comments all passed. No native Apple trial
   has occurred, and no real Apple session/revocation acceptance is claimed.
@@ -64,3 +65,25 @@ then reclosed. The prior PR25 build approval is not reused as approval for PR26.
   Secret flag digest equals SHA256(`false`),
   `fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa`.
   Existing approved server key and retention cron remain in place.
+
+## Completed local update after explicit approval
+
+- Opened only `developmentBuildApproved`, ran the existing ios-development guard,
+  and restored the exact original closed approval file in `finally`. Store and
+  TestFlight gates remain false. No runtime source/config change was required.
+- Re-signed the separate candidate with the existing Development identity and
+  provisioning. Extracted the public signing certificate and verified its SHA1
+  matches the recorded existing identity. `codesign --verify --deep --strict`
+  passed. The embedded Hermes bundle still matches the hash above.
+- Installed as an update: permanent Bundle ID unchanged, installed local build1
+  became build2. The device's data-container path changed during installation;
+  path equality is **not** used as evidence of preserved records. Actual device
+  UI before update showed5 completed games, total score2100, level3. After update
+  Home still showed level3, last score200 and3 earned badges. Full post-update
+  profile comparison is pending. No uninstall/storage-clear command was issued.
+- Real iPhone launch succeeded. This is a locally Development-signed acceptance
+  artifact, **not** a newly uploaded TestFlight build2 or store-distributed update.
+- Re-enabled only the already approved temporary native Apple test provider,
+  oauth/deletion/revocation flags and deletion environment flag. Public Auth
+  settings and capability RPC confirm activation; signup remains false and the
+  allowlist is empty. Owner action for the initial Hide My Email denial is pending.
