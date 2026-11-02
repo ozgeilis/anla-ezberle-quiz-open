@@ -88,6 +88,10 @@ END $$;
 RESET ROLE;
 SELECT 'PASS A/B RLS isolation, write denial and Realtime membership';
 
+-- Subsequent direct RPC calls model the authenticated Edge service context.
+-- The preceding anon/authenticated SQL-role and ACL denials remain unchanged.
+SET LOCAL request.jwt.claims = '{"role":"service_role"}';
+
 DO $$ DECLARE a uuid;b uuid;u uuid;r jsonb;player jsonb;notification uuid;BEGIN
  SELECT id INTO a FROM security_people WHERE label='a';SELECT id INTO b FROM security_people WHERE label='b';SELECT id INTO u FROM security_people WHERE label='unverified';
  r=public.online_duel_command(a,'get',jsonb_build_object('matchId',(SELECT id FROM security_objects WHERE kind='match')));
