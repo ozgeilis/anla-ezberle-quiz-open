@@ -44,7 +44,7 @@ kullanıldı; gereksiz native yeniden derleme yapılmadı. Runtime kaynakları
 
 Harici grubun build seçimi 3'ü gösteriyor. Next adımı online özellikler için
 **Sign-in required / User Name / Password** istiyor. Mevcut incelemeci hesabının
-bu özel Apple alanına aktarımı ve canlı moderasyon kabulü tamamlanmadığı için
+bu özel Apple alanına aktarımı ve canlı moderasyon kabulü ilk aşamada tamamlanmadığı için
 ilk akış Cancel ile bırakıldı. Sahip ardından mevcut incelemeci giriş bilgilerinin
 yalnız Apple'ın özel alanına aktarımını onayladı; bilgiler kaydedildi ve mevcut
 hesapla gerçek parola girişi/same-actor kontrolü geçti, bu kontrol oturumu yerel
@@ -81,23 +81,35 @@ Fiziksel iPhone'da ayrı onaylı tek Apple test hesabı login/kalıcılık/iptal
 giriş/silme/revocation kabulünü geçti; hesap temizlendi ve geçici bayraklar
 yeniden kapatıldı. Bu, genel kaydı açma izni değildir.
 
-Oyuncu güvenliği kodu ve izole SQL/HTTP kabulü mevcut; hosted safety flag kapalı,
-moderatör sayısı 0. Sahip şikâyetleri günlük kontrol edeceğini doğruladı. Günlük
-işletim/gerçek yetkili moderatör ve native sosyal kabul kapanmadan güvenli public
-sosyal dağıtım tamamlandı denmez. Kayıt, provider veya yetki değişikliği gerekirse
-exact actor/kapsam ve geri dönüşle ayrı onay istenir. RLS/hook kaldırılmaz.
+### 2 Kasım: gerçek işletim kabulü ve yeni gizlilik engeli
 
-Sahibin ayrıca onayladığı tek kalıcı işletim hesabı mevcut e-posta akışıyla
-oluştu ve sunucuda doğrulandı. Web callback'inde kullanılabilir yerel oturum
-bulunmadığı için güvenli giriş fallback'i gösterildi; kullanıcı giriş adımı
-bekleniyor. Bu örnek otomatik giriş başarısı olarak raporlanmaz. Rol verilmedi.
+Sahibin tek kalıcı işletim hesabı doğrulandı. Önceki ayrı plan onayıyla rol
+verildi; sahibi gerçek konsola giriş yaptı. Mevcut iki sentetik incelemeciyle
+rapor, duplicate idempotency, yetkisiz kuyruk reddi, engelleme ve karşılıklı
+istek/davet reddi geçti. Sahibiyle konsolda rapor görünümü ve audit'li
+kısıtlama/geri alma çalıştı. Uygunsuz profil adı reddi de doğrulandı.
+Sentetik arkadaşlık ve bekleyen davet normal aksiyonlarla işlevsel olarak geri
+kondu; orijinal satır UUID/zamanı aynen geri konmuş sayılmaz.
 
-[Yerel moderatör aracı](MODERATOR-CONSOLE.md) parola/session'ı diske yazmadan
-mevcut RPC ile kuyruk ve gerekçeli karar işlemlerini sağlar. Gerçek izole
-Auth/Edge/PostgREST testinde yetkisiz erişim reddi, yetkili kuyruk, audit'li
-kısıtlama/geri alma ve logout sonrası eski JWT reddi geçti. Bu kanıt hosted
-işletim veya fiziksel sosyal kabul yerine geçmez. Rol ve ortak safety bayrağı
-için iki dar SQL operasyonu hazır; **uygulanmadı**.
+Ek hesap silme denetiminde şikâyet/audit kişisel metninin FK NULL olduktan sonra
+kaldığı **gerçek bir eksik** bulundu ve izole DB'de tekrar üretildi. Bu nedenle
+onaylı geri dönüş uygulandı: **safety=false, aktif moderatör=0**; sahibin hesabı,
+pasif rol ve audit korundu. Konsol ve test oturumları kapatıldı. Maç/skor/oda/
+ödül ve test çiftinin dışındaki arkadaşlık hash'leri değişmedi.
+
+İleri migration ve gerçek yerel GoTrue HTTP silme testi hazır/geçti; canlıya
+uygulanmadı. [Yeni dar plan](MODERATION-ERASURE-ROLLOUT.md) ayrı onay bekliyor.
+[Gizlilik ek metni](PRIVACY-ADDENDUM-PROPOSAL.md) somut öneri olarak hazır;
+web veya gömülü build3 politikasına yayımlanmadı. Yeni etkin native güvenlik
+kabulü ve açık gizlilik açıklaması kapanmadan Beta App Review gönderilmez.
+
+Güncel kabul edilmiş JS'nin ayrı Xcode simülatör kopyasında gerçek parola
+girişi, bildirimler/oyuncu profili ve rollback nedeniyle devre dışı güvenlik
+butonları doğrulandı; test oturumu kapatıldı. Eski imzasız simülatör kopyası ve
+arşivler korundu. Bu yerel QA uygulaması TestFlight build3 kurulumu değildir.
+
+[Yerel moderatör aracı](MODERATOR-CONSOLE.md) ve
+[kişisel veri içermeyen kabul özeti](moderation-hosted-acceptance.json).
 
 ## Resmi kaynaklar
 

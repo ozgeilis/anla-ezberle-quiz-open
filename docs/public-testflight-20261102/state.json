@@ -31,7 +31,7 @@
     "created": false,
     "desiredLimit": 1000,
     "desiredAudience": "Open to Anyone",
-    "reason": "Build 3 is externally eligible; reviewer sign-in and live moderation acceptance are pending before Beta App Review submission"
+    "reason": "Build3 is eligible but linked moderation-erasure privacy gap blocks review; fix tested locally, new live migration authorization pending"
   },
   "betaReviewSubmitted": false,
   "productionSubmissionAuthorized": false,
@@ -77,17 +77,36 @@
     "appleUpload": "succeeded and Console Ready to Submit verified",
     "physicalAppleTrial": "prior accepted exact JS: login, persistence, cancellation, deletion and revocation; not a new build 3 installation test",
     "build3TestFlightInstall": "not run; not distributed",
-    "nativeSocialSafetyAcceptance": "pending",
+    "nativeSocialSafetyAcceptance": "Partial: real iOS simulator login, notifications, peer profile and disabled flag state, logout passed; enabled UI pending reactivation",
     "moderatorLocalRealService": "PASS real isolated Auth + Edge + RPC: role denial, queue, audited restrict/restore via closed report, logged-out JWT denial",
-    "moderatorBrowserUI": "Not completed; isolated browser tool unavailable. Hosted owner console acceptance pending."
+    "moderatorBrowserUI": "PASS hosted owner login, queue, audited restrict and restore via closed report, local logout; owner role now inactive after planned rollback",
+    "moderationErasure": "PASS isolated target/reporter/moderator, rollback/denial/unrelated evidence; actual local GoTrue HTTP hard delete; forward repair SQL passed"
   },
   "ownerOperatingAccount": {
     "authorized": true,
     "created": true,
     "emailConfirmed": true,
-    "validSessionAtLastCheck": false,
+    "validSessionAtLastCheck": true,
     "moderatorGranted": false,
     "creationUsedExistingEmailPolicy": true,
-    "webCallback": "No usable local session; safe sign-in fallback shown, owner sign-in pending"
+    "webCallback": "No usable local callback session; owner completed safe password sign-in and moderator console acceptance",
+    "moderatorGrantHistory": "Granted in approved trial then set inactive after privacy blocker"
+  },
+  "moderationRollout": {
+    "previousPlanAuthorized": true,
+    "ownerConsoleAndSyntheticAcceptancePassed": true,
+    "rolledBackAfterPrivacyGap": true,
+    "safetyEnabled": false,
+    "activeModerators": 0,
+    "newPrivacyMigrationApplied": false,
+    "newLiveApprovalRequired": true
+  },
+  "privacy": {
+    "currentPublicPolicyDate": "2026-10-30",
+    "addendumPrepared": true,
+    "addendumApplied": false,
+    "nativeBuild3PolicyUpdated": false,
+    "rolloutDocument": "MODERATION-ERASURE-ROLLOUT.md",
+    "proposal": "PRIVACY-ADDENDUM-PROPOSAL.md"
   }
 }

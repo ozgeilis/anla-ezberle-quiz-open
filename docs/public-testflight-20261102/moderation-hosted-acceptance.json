@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-02",
+  "hostedProject": "mqyuihiobkomjfipxehj",
+  "ownerBrowserAcceptance": "PASS owner entered existing password; private queue, restrict and restore on synthetic report; logged out",
+  "hostedAPIAcceptance": [
+    "existing confirmed actors",
+    "non-moderator queue denied",
+    "forged reporter rejected",
+    "duplicate report idempotency",
+    "block incoming friend/invite denied",
+    "unblock and semantic synthetic relation restoration",
+    "obfuscated inappropriate profile names rejected"
+  ],
+  "hostedPrivacyIssue": "linked report snapshot/details and audit note survived Auth deletion in isolated reproduction; new migration not yet applied",
+  "rollback": {
+    "safetyEnabled": false,
+    "activeModerators": 0,
+    "ownerAccountPreserved": true,
+    "auditPreserved": true
+  },
+  "integrity": {
+    "score_ledger": {
+      "rows": 31,
+      "unchanged": true
+    },
+    "matches": {
+      "rows": 31,
+      "unchanged": true
+    },
+    "live_rooms": {
+      "rows": 15,
+      "unchanged": true
+    },
+    "live_rewards": {
+      "rows": 16,
+      "unchanged": true
+    },
+    "other_friendships": {
+      "rows": 1,
+      "unchanged": true
+    },
+    "syntheticPair": {
+      "acceptedFriendships": 1,
+      "pendingChallenges": 1,
+      "restoration": "semantic; original UUID/timestamps not restored"
+    }
+  },
+  "tests": {
+    "pnpmCheck": "430/430 passed; TypeScript/lint/bank",
+    "isolatedSQL": "passed; including forward repair fixture",
+    "isolatedGoTrueDeletion": "passed; local Admin HTTP, not hosted user deletion",
+    "nativeIOS": "same accepted JS, new permanent-bundle Xcode simulator copy: login, notification/profile navigation, disabled safety state, logout passed",
+    "nativeEnabledSafety": "pending new migration approval and reactivation",
+    "physicalNewModeration": "not run",
+    "build3TestFlightInstall": "not run"
+  }
+}

@@ -1,3 +1,10 @@
+> **Güncel durum:** Bu plan sahibi tarafından onaylandı ve dar rol/bayrak
+> operasyonları uygulandı. Gerçek konsol/API kabulü geçti. Ek silme-gizlilik
+> kusuru nedeniyle onaylı geri dönüş yapıldı: rol pasif, safety kapalı.
+> Aşağıdaki metin ilk planın geçmişidir. Sonraki canlı işlem için
+> [MODERATION-ERASURE-ROLLOUT.md](MODERATION-ERASURE-ROLLOUT.md) geçerlidir;
+> yeni migration henüz onaylanmadı veya uygulanmadı.
+
 # Harici beta için kalan dar kabul planı
 
 Bu belge henüz canlı yetki/özellik değişikliği onayı değildir. Mevcut build

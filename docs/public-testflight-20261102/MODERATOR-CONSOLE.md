@@ -59,9 +59,12 @@ iletisine rapor veya şikâyetçi kimliği eklemeyin.
   yetkili kuyruk, audit'li karar ve logout sonrası eski JWT reddini geçti.
   Önceki local moderatör/bayrak durumu finally ile geri kondu. Hosted trafik yok.
 - 430/430 proje testi, TypeScript ve lint geçti. Yerel araç için ek lint de
-  çalıştırılır. Hosted sahibiyle giriş/rol/işletim ve fiziksel sosyal kabul
-  henüz tamamlanmadı; bu belge bunları başarılı saymaz.
-- Gerçek moderatör rolü ve ortak canlı güvenlik bayrağı ayrı sahip onayı bekler.
+  çalıştırılır. Sonraki hosted kabulde sahibiyle gerçek konsol girişi, rapor
+  kuyruğu, audit'li kısıtlama ve geri alma geçti; konsoldan çıkış doğrulandı.
+- Ek hesap silme-gizlilik kusurunda onaylı geri dönüş yapıldı; rol şu anda
+  pasif ve ortak safety bayrağı kapalı. Yeni migration/yeniden açılış ayrı onay
+  bekliyor. Fiziksel yeni sosyal UI kabulü tamamlanmadı. Ayrıntılar
+  [MODERATION-ERASURE-ROLLOUT.md](MODERATION-ERASURE-ROLLOUT.md).
 
 Tekrar üretim:
 
