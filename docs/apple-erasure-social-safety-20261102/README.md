@@ -28,7 +28,7 @@ has been performed. All new server capabilities default to **closed**.
 
 | Check                                                   | Status / scope                                                                                                                                                       |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TypeScript, lint, bank, unit/regression                 | PASS: `pnpm check`, 423/423 on this worktree                                                                                                                         |
+| TypeScript, lint, bank, unit/regression                 | PASS: `pnpm check`, 426/426 after the approved seasonal change was retained                                                                                          |
 | Edge Deno checking                                      | PASS account-delete with its pinned deno.json; online-duel                                                                                                           |
 | Isolated PostgreSQL full migration/history suite        | PASS after alias fix and Docker recovery: all current migrations, immutable keys, old games and player/score/award row preservation; no hosted connection            |
 | Apple HTTP + PostgreSQL crypto/revoke/erase retries     | PASS repeated after final SQL against explicit signed Apple/Supabase JWT fixtures; **not real Apple revocation**                                                     |
@@ -103,3 +103,26 @@ Report details max 500 characters; duplicate open reports reuse their ID;
 submission rate is bounded, including five reports per actor/day. Name filtering
 is an initial explicit lexicon, not a complete semantic moderation solution.
 False positives require moderator review and a versioned lexicon change.
+
+## Final candidate evidence
+
+Candidate `2115c15` (stacked on current PR #25) passes all five GitHub checks:
+canonical-bank content-check, leaderboard SQL/Edge, leaderboard UI, Vercel and
+Vercel comment. The isolated canonical suite and Apple HTTP/SQL retry acceptance
+were repeated after Docker recovery. The formerly ambiguous alias is fixed.
+Local full check after seasonal integration is 426/426.
+
+Hosted read-only check: Frankfurt is ACTIVE_HEALTHY/Postgres17.11; neither
+proposed security migration/config table exists. Existing online-duel v18 and
+account-delete v7 remain active. The current Google-hook hash matches the
+reviewed precondition `a32147ffb2e85ef10e60ae8cf1af9bea`. No hosted writes.
+
+Reviewed migration SHA256:
+
+- Apple: `05b6a92c015ea9764dc110703180d43cf8860b41b91f8be7c3a4e5fef18925e8`
+- Player safety: `76667ad009ffd2f4829502c51d9064571699ddc52e4cc8b18ac4fdbc8a93d6d1`
+- Optional separately reviewed retention operation: `edd96d5ab78486f524bc4dc6fda4338dd4d876825f3edfd6cac29fe722659da8`
+
+This is a concrete backend review package, not permission to deploy it.
+Real Apple credentials/provider/revocation, private relay, authorized moderator
+enrollment/operating acceptance and complete physical device testing remain open.
