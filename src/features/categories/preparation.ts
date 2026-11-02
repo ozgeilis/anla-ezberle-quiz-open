@@ -179,3 +179,23 @@ export function preparationStatus(
         : "Bu seçim şu anda oynanamıyor. Benzer soruları tekrarlamamak için başka kategori veya zorluk seç.",
   };
 }
+
+/** Unpublished and malformed subject links return to the working catalogue;
+ * they must not silently fall back to a mixed round. Saved games are untouched. */
+export function unavailablePreparationLink(params: {
+  playCategory?: unknown;
+  category?: unknown;
+  topic?: unknown;
+}) {
+  if (
+    params.playCategory !== undefined &&
+    (!isPlayCategory(params.playCategory) || params.playCategory === "children")
+  )
+    return true;
+  if (params.topic !== undefined && !isLearningTopic(params.topic)) return true;
+  return (
+    params.category !== undefined &&
+    params.category !== "mixed" &&
+    !categories.some((category) => category.id === params.category)
+  );
+}

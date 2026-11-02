@@ -203,82 +203,17 @@ try {
       await page.screenshot({
         path: join(root, `categories-${colorScheme}-${width}.png`),
       });
-      for (const [id, title, filename] of approved) {
-        const card = page.getByRole("button", {
-          name: new RegExp("^" + title + "\\."),
-        });
-        assert(
-          await card.isEnabled(),
-          `${title}: explanation remains accessible`,
-        );
+      for (const [id, title] of approved) {
         assert.equal(
-          await card.getAttribute("role"),
-          "button",
-          "Preview is not a playable radio selection",
+          await page
+            .getByRole("button", {
+              name: new RegExp("^" + title + "\\."),
+            })
+            .count(),
+          0,
+          `${title}: unpublished entry is hidden`,
         );
-        const art = card.getByTestId(`category-art-${id}`);
-        assert.equal(await art.count(), 1, `${title}: exact existing ID`);
-        const image = await art.evaluate((el) => {
-          const img = el.querySelector("img") ?? el;
-          return {
-            src: img.currentSrc || img.src,
-            w: img.naturalWidth,
-            h: img.naturalHeight,
-            size:
-              Array.from(el.querySelectorAll("div"))
-                .map((d) => getComputedStyle(d).backgroundSize)
-                .find((s) => s === "contain") ??
-              getComputedStyle(el).backgroundSize,
-            fit: getComputedStyle(el).objectFit,
-            box: el.getBoundingClientRect().toJSON(),
-          };
-        });
-        assert(
-          image.src.includes(filename),
-          `${title}: matching approved source`,
-        );
-        assert(image.w > 0 && image.h > 0, `${title}: image loaded`);
-        assert(
-          image.size === "contain" || image.fit === "contain",
-          `${title}: whole composition, no crop`,
-        );
-        const box = await card.boundingBox();
-        assert(
-          image.box.width <= box.width && image.box.height <= box.height,
-          `${title}: no intrinsic-size overflow`,
-        );
-        const firstBox = await cards.first().boundingBox();
-        assert(
-          Math.abs(box.width - firstBox.width) < 2 &&
-            Math.abs(box.height - firstBox.height) < 2,
-          `${title}: same card dimensions as normal categories`,
-        );
-        await card.scrollIntoViewIfNeeded();
-        if (colorScheme === "light" && width === 390) {
-          const before = await page
-            .getByRole("radio", { checked: true })
-            .allTextContents();
-          await card.click();
-          const dialog = page.getByRole("dialog", { name: title, exact: true });
-          await dialog.waitFor();
-          assert.equal(
-            await dialog
-              .getByRole("button", { name: "Oyuna Başla", exact: true })
-              .count(),
-            0,
-          );
-          await dialog
-            .getByRole("button", { name: "Anladım", exact: true })
-            .click();
-          assert.deepEqual(
-            await page.getByRole("radio", { checked: true }).allTextContents(),
-            before,
-            "Preview never changes game selection",
-          );
-        }
-        await card.screenshot({
-          path: join(root, `approved-${id}-${colorScheme}-${width}.png`),
-        });
+        assert.equal(await page.getByTestId(`category-art-${id}`).count(), 0);
       }
       assert(
         await page.evaluate(
@@ -295,7 +230,7 @@ try {
       .count(),
     0,
   );
-  const lastCard = page.getByRole("button", { name: /^Kadın Sahabeler\./ });
+  const lastCard = page.getByRole("radio", { name: /^Karma:/ });
   await lastCard.evaluate((el) => el.scrollIntoView({ block: "center" }));
   const lastBox = await lastCard.boundingBox();
   assert.equal(

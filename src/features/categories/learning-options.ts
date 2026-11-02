@@ -74,6 +74,15 @@ export function categoryOptions(
   });
 }
 
+/** Shared native/web catalogue: eligibility comes from reviewed playable content,
+ * never the calendar or an editorial artwork/manifest. Keep raw options for
+ * preparation assessment and historical category identity. */
+export function visibleCategoryOptions(
+  ...args: Parameters<typeof categoryOptions>
+) {
+  return categoryOptions(...args).filter((category) => category.available);
+}
+
 // Manifests are design/review material, never a play route. Unlocking these
 // requires a separate publication change and physical-device acceptance.
 export const upcomingCollections = [

@@ -5,9 +5,12 @@ import { Page, TextAction, Txt } from "../../components/ui";
 import { SettingsButton } from "../../components/ui/SettingsButton";
 import { availableQuestions, type Difficulty } from "../../content/questions";
 import { useGameLibrary } from "../../storage/GameProvider";
-import { broadPreparationFromParams } from "./preparation";
-import { categoryOptions, upcomingCollections } from "./learning-options";
-import { LearningChoices, UpcomingLearning } from "./LearningChoices";
+import {
+  broadPreparationFromParams,
+  unavailablePreparationLink,
+} from "./preparation";
+import { visibleCategoryOptions } from "./learning-options";
+import { LearningChoices } from "./LearningChoices";
 import { CategoryDifficulty } from "./CategoryDifficulty";
 import type { PreparationSelection } from "./preparation";
 
@@ -21,7 +24,10 @@ export function CategoriesScreen() {
   }>();
   const initial = broadPreparationFromParams(params);
   // Existing bookmarked category links still open a preparation, never start a game.
-  if (initial.playCategory || initial.topic || initial.category)
+  if (
+    !unavailablePreparationLink(params) &&
+    (initial.playCategory || initial.topic || initial.category)
+  )
     return <LegacyPreparationLink initial={initial} />;
   return (
     <CategoryCatalogue
@@ -61,7 +67,7 @@ function CategoryCatalogue({
   const { data } = useGameLibrary();
   const [difficulty, setDifficulty] = useState(initialDifficulty),
     [filters, setFilters] = useState(!!initialDifficulty);
-  const topics = categoryOptions(
+  const topics = visibleCategoryOptions(
     availableQuestions,
     difficulty,
     undefined,
@@ -111,10 +117,6 @@ function CategoryCatalogue({
           onSelect={(playCategory) => open({ playCategory })}
           onSelectMixed={() => open({ category: "mixed" })}
         />
-        <UpcomingLearning collections={upcomingCollections} />
-        <Txt size={12}>
-          Hazırlanıyor olarak işaretlenen koleksiyonlar henüz oynanamaz.
-        </Txt>
       </View>
     </Page>
   );
