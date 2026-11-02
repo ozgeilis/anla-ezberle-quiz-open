@@ -166,6 +166,14 @@ export function onlineMessage(error: unknown) {
   if (!(error instanceof OnlineError))
     return "İşlem tamamlanamadı. Bağlantını kontrol edip yeniden dene.";
   const messages: Record<string, string> = {
+    PLAYER_UNAVAILABLE: "Bu oyuncuyla yeni bağlantı kurulamıyor.",
+    SOCIAL_RESTRICTED:
+      "Çevrimiçi sosyal işlemlerin kısıtlandı. Destek adresimizden inceleme isteyebilirsin.",
+    PROFILE_CONTENT_REJECTED: "Bu ad uygun değil. Başka bir ad seç.",
+    SAFETY_NOT_READY:
+      "Oyuncu güvenliği servisi için sunucu güncellemesi bekleniyor.",
+    REPORT_RATE_LIMIT:
+      "Günlük şikâyet sınırına ulaştın. Acil bir durum için destek adresimize yaz.",
     LEADERBOARD_NOT_READY:
       "Çevrimiçi sıralama şu anda kullanılamıyor. Kişisel rekorların cihazında duruyor.",
     LIVE_NOT_READY:

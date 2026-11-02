@@ -1,3 +1,4 @@
+import { AppleDeletionError } from "./appleDeletion.ts";
 // Independently testable HTTP boundary. Never trusts an actor/email in input.
 export interface DeletionDependencies {
   user(jwt: string): Promise<{
@@ -6,9 +7,21 @@ export interface DeletionDependencies {
     verified: boolean;
     anonymous?: boolean;
     google?: boolean;
+    apple?: boolean;
+    appleSubject?: string;
+    appleSessionActive?: boolean;
   } | null>;
   reauthenticate(email: string, password: string): Promise<string | null>;
   erase(actor: string): Promise<boolean>;
+  apple?: {
+    begin(actor: string): Promise<{ challenge: string; nonce: string }>;
+    erase(
+      actor: string,
+      subject: string,
+      challenge: string,
+      proof?: { identityToken: string; authorizationCode: string },
+    ): Promise<boolean>;
+  };
   googleOtp?: {
     send(actor: string, email: string): Promise<string>;
     verify(
@@ -53,10 +66,63 @@ export function deletionHandler(deps: DeletionDependencies) {
       if (!user || user.anonymous || !user.verified || !user.email)
         return reply(401, { error: "SESSION_EXPIRED" });
       const raw = await req.text();
-      if (raw.length > 2048) return reply(413, { error: "REQUEST_TOO_LARGE" });
+      if (raw.length > 16384) return reply(413, { error: "REQUEST_TOO_LARGE" });
       const body = JSON.parse(raw);
       if (!body || Array.isArray(body) || typeof body !== "object")
         return reply(400, { error: "INVALID_REQUEST" });
+      // Linked Apple identities must also revoke Apple grants; another provider
+      // cannot use the password/Google branch to bypass that obligation.
+      if (
+        user.apple ||
+        user.appleSubject ||
+        body.operation === "apple-begin" ||
+        body.operation === "apple-delete"
+      ) {
+        if (!user.appleSubject || !user.appleSessionActive)
+          return reply(403, { error: "APPLE_PROOF_INVALID" });
+        if (!deps.apple)
+          return reply(503, { error: "APPLE_DELETION_UNAVAILABLE" });
+        if (body.operation === "apple-begin" && Object.keys(body).length === 1)
+          return reply(200, await deps.apple.begin(user.id));
+        if (
+          body.operation !== "apple-delete" ||
+          body.confirmation !== "DELETE" ||
+          typeof body.challenge !== "string" ||
+          Object.keys(body).some(
+            (k) =>
+              ![
+                "operation",
+                "confirmation",
+                "challenge",
+                "identityToken",
+                "authorizationCode",
+              ].includes(k),
+          )
+        )
+          return reply(400, { error: "INVALID_REQUEST" });
+        const hasProof = "identityToken" in body || "authorizationCode" in body;
+        if (
+          hasProof &&
+          (typeof body.identityToken !== "string" ||
+            typeof body.authorizationCode !== "string")
+        )
+          return reply(400, { error: "INVALID_REQUEST" });
+        const deleted = await deps.apple.erase(
+          user.id,
+          user.appleSubject,
+          body.challenge,
+          hasProof
+            ? {
+                identityToken: body.identityToken,
+                authorizationCode: body.authorizationCode,
+              }
+            : undefined,
+        );
+        return deleted
+          ? reply(200, { deleted: true })
+          : reply(503, { error: "APPLE_RETRY_REQUIRED" });
+      }
+      if (raw.length > 2048) return reply(413, { error: "REQUEST_TOO_LARGE" });
       if (body.operation === "google-code") {
         if (Object.keys(body).some((k) => k !== "operation"))
           return reply(400, { error: "INVALID_REQUEST" });
@@ -104,7 +170,11 @@ export function deletionHandler(deps: DeletionDependencies) {
       if (!(await deps.erase(user.id)))
         return reply(503, { error: "DELETION_NOT_COMPLETED" });
       return reply(200, { deleted: true });
-    } catch {
+    } catch (error) {
+      if (error instanceof AppleDeletionError)
+        return reply(error.code === "APPLE_PROOF_INVALID" ? 403 : 503, {
+          error: error.code,
+        });
       return reply(503, { error: "DELETION_NOT_COMPLETED" });
     }
   };

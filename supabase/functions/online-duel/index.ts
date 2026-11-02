@@ -37,6 +37,10 @@ const fields: Record<string, string[]> = {
   social_profile: ["name", "username", "avatar", "discoverable"],
   player_search: ["query"],
   friends: [],
+  player_block: ["playerId"],
+  player_unblock: ["playerId"],
+  player_report: ["playerId", "reason", "details"],
+  blocked_players: [],
   friend_send: ["playerId"],
   friend_accept: ["friendshipId"],
   friend_remove: ["friendshipId"],
@@ -160,34 +164,41 @@ Deno.serve(async (request: Request) => {
       { auth: { persistSession: false, autoRefreshToken: false } },
     );
     const { data, error } = await admin.rpc(
-      input.operation.startsWith("leaderboard")
-        ? "player_leaderboard_command"
-        : input.operation.startsWith("room_")
-          ? "live_room_command"
-          : ["achievement_self", "achievement_settings"].includes(
-                input.operation,
-              )
-            ? "player_achievement_command"
-            : [
-                  "account_bootstrap",
-                  "inbox",
-                  "notification_read",
-                  "challenge_send",
-                  "challenge_reply",
-                ].includes(input.operation)
-              ? "player_matchmaking_command"
+      [
+        "player_block",
+        "player_unblock",
+        "player_report",
+        "blocked_players",
+      ].includes(input.operation)
+        ? "player_safety_command"
+        : input.operation.startsWith("leaderboard")
+          ? "player_leaderboard_command"
+          : input.operation.startsWith("room_")
+            ? "live_room_command"
+            : ["achievement_self", "achievement_settings"].includes(
+                  input.operation,
+                )
+              ? "player_achievement_command"
               : [
-                    "social_self",
-                    "username_check",
-                    "social_profile",
-                    "player_search",
-                    "friends",
-                    "friend_send",
-                    "friend_accept",
-                    "friend_remove",
+                    "account_bootstrap",
+                    "inbox",
+                    "notification_read",
+                    "challenge_send",
+                    "challenge_reply",
                   ].includes(input.operation)
-                ? "player_social_command"
-                : "online_duel_command",
+                ? "player_matchmaking_command"
+                : [
+                      "social_self",
+                      "username_check",
+                      "social_profile",
+                      "player_search",
+                      "friends",
+                      "friend_send",
+                      "friend_accept",
+                      "friend_remove",
+                    ].includes(input.operation)
+                  ? "player_social_command"
+                  : "online_duel_command",
       {
         actor: user.id,
         operation: input.operation,
@@ -195,6 +206,17 @@ Deno.serve(async (request: Request) => {
       },
     );
     if (error) {
+      if (
+        [
+          "PLAYER_UNAVAILABLE",
+          "SOCIAL_RESTRICTED",
+          "PROFILE_CONTENT_REJECTED",
+        ].includes(error.message)
+      )
+        return reply(
+          error.message === "PROFILE_CONTENT_REJECTED" ? 400 : 403,
+          error.message,
+        );
       return reply(
         error.code === "22P02" ? 400 : 503,
         error.code === "22P02" ? "INVALID_REQUEST" : "SERVICE_UNAVAILABLE",

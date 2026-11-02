@@ -1,3 +1,4 @@
+import { profileContentError } from "./safety/rules";
 import type { SocialSelf } from "./types";
 /** An account's display name is separate from its unique search handle. */
 export function playerDisplayName(localName: string, self: SocialSelf | null) {
@@ -10,7 +11,7 @@ export function displayNameError(value: string) {
     /[\u0000-\u001f\u007f-\u009f<>]/.test(name) ||
     /https?:\/\/|www\./i.test(name)
     ? "Görünen ad 3–24 karakter olmalı; bağlantı veya kontrol karakteri içermemeli."
-    : null;
+    : profileContentError(name);
 }
 export function socialProfileBody(
   self: SocialSelf,

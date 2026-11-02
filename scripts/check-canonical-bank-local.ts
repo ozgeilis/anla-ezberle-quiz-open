@@ -23,7 +23,10 @@ const projectId = readFileSync("supabase/config.toml", "utf8").match(
   /^project_id\s*=\s*"([a-zA-Z0-9_-]+)"/m,
 )?.[1];
 if (!projectId) throw Error("Local Supabase project_id is missing");
-const container = `supabase_db_${projectId}`;
+const container =
+  process.env.SAFETY_LOCAL_CONTAINER ?? `supabase_db_${projectId}`;
+if (!/^supabase_db_[a-zA-Z0-9_-]+$/.test(container))
+  throw Error("Local Supabase container required");
 const db = `anla_canonical_v73_${Date.now()}`;
 const docker = (args: string[], input?: string) => {
   const result = spawnSync("docker", args, {
@@ -203,6 +206,27 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
     throw Error(
       "Display level migration changed existing synthetic player/game rows",
     );
+  // Additive Apple deletion/safety changes must not rewrite historic game/XP rows.
+  const safetyRowsBefore = sql(snapshotSql);
+  for (const suffix of [
+    "apple_deletion_revocation.sql",
+    "player_safety_moderation.sql",
+  ]) {
+    const file = readdirSync("supabase/migrations").find((name) =>
+      name.endsWith(suffix),
+    );
+    if (!file) throw Error(`Missing safety migration ${suffix}`);
+    sql(readFileSync(`supabase/migrations/${file}`, "utf8"));
+  }
+  if (sql(snapshotSql) !== safetyRowsBefore)
+    throw Error("Safety migration modified existing game/player rows");
+  for (const file of [
+    "apple_deletion.sql",
+    "player_safety.sql",
+    "google_signup_test_allowlist.sql",
+  ]) {
+    console.log(sql(readFileSync(`supabase/tests/${file}`, "utf8")));
+  }
   // pg_dump --no-owner restores as supabase_admin. The production erasure
   // trigger is postgres-owned and its existing guards require that exact role.
   // Align only this throwaway harness; no hosted role/grant is changed.
@@ -212,6 +236,7 @@ GRANT ALL ON ALL SEQUENCES IN SCHEMA quiz_private,auth,storage TO postgres;
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA quiz_private TO postgres;
 ALTER FUNCTION quiz_private.erase_authorized_player() OWNER TO postgres;`);
   console.log(sql(readFileSync("supabase/tests/account_deletion.sql", "utf8")));
+  writeFileSync(resolve(output, "acceptance.json"), JSON.stringify({ passed: true, database: db, container, hosted: false, accountDataExported: false, sources: ["v72/v73", "20-second timing", "progressive XP", "Apple deletion and closed hook", "safety RLS/contact guards/moderation", "account erasure regression"], playerRowsUnchangedBySafetyMigration: true }, null, 2) + "\n");
   console.log(
     `PASS isolated v72/v73 database ${db}; schema only, historical fixtures, both canonical releases, immutable keys and SQL acceptance. No remote contact.`,
   );

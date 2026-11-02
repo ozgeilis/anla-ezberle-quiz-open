@@ -1,3 +1,4 @@
+import { PlayerSafetyActions } from "./safety/PlayerSafetyActions";
 import { getLevelFromXp } from "../../domain/scoring/levels";
 import { PublicAchievements } from "../achievements/PublicAchievements";
 import { useInbox } from "./InboxProvider";
@@ -111,16 +112,31 @@ function Players() {
     }
   };
   const playerInfo = (player: SocialPlayer) => (
-    <View style={{ flexDirection: "row", gap: 12, alignItems: "center" }}>
-      <Avatar variant={player.avatar} size={48} />
-      <View style={{ flex: 1, gap: 4 }}>
-        <Txt weight="heavy">{player.name}</Txt>
-        <Txt color={theme.accent}>@{player.username}</Txt>
-        <Txt size={12} color={theme.muted}>
-          Seviye {getLevelFromXp(player.xp)} · {player.xp} çevrimiçi XP
-        </Txt>
-        <PublicAchievements player={player} />
+    <View style={{ gap: 8 }}>
+      <View style={{ flexDirection: "row", gap: 12, alignItems: "center" }}>
+        <Avatar variant={player.avatar} size={48} />
+        <View style={{ flex: 1, gap: 4 }}>
+          <Txt weight="heavy">{player.name}</Txt>
+          <Txt color={theme.accent}>@{player.username}</Txt>
+          <Txt size={12} color={theme.muted}>
+            Seviye {getLevelFromXp(player.xp)} · {player.xp} çevrimiçi XP
+          </Txt>
+          <PublicAchievements player={player} />
+        </View>
       </View>
+      <PlayerSafetyActions
+        key={`${actor}:${player.id}`}
+        actor={actor}
+        player={player}
+        onBlocked={() => {
+          setPlayers((items) => items.filter((p) => p.id !== player.id));
+          setFriends((items) =>
+            items.filter((f) => f.player?.id !== player.id),
+          );
+          setRevision((n) => n + 1);
+          void inbox.refresh();
+        }}
+      />
     </View>
   );
   return (
@@ -215,6 +231,11 @@ function Players() {
               </Card>
             );
           })}
+          <Button
+            title="Engellenen Oyuncular"
+            variant="outline"
+            onPress={() => router.push("/online/blocked")}
+          />
           <Txt accessibilityRole="header" size={22} weight="heavy">
             Arkadaşlarım
           </Txt>

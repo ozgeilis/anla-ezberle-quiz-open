@@ -1,3 +1,4 @@
+import { PlayerSafetyActions } from "./safety/PlayerSafetyActions";
 import { replyFriendRequest } from "./friendRequests";
 import { getLevelFromXp } from "../../domain/scoring/levels";
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -193,6 +194,15 @@ export function NotificationDetail({
             Seviye {getLevelFromXp(player.xp)} · {player.xp} çevrimiçi XP
           </Txt>
           <PublicAchievements player={player} />
+          <PlayerSafetyActions
+            key={`${actor}:${player.id}`}
+            actor={actor}
+            player={player}
+            onBlocked={() => {
+              void inbox.refresh();
+              onClose();
+            }}
+          />
           <TextAction
             title="Bildirime Dön"
             onPress={() => setShowProfile(false)}

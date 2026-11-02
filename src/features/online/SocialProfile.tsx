@@ -202,6 +202,11 @@ function AccountProfile() {
             disabled={busy}
           />
           <Button
+            title="Engellenen Oyuncular"
+            variant="outline"
+            onPress={() => router.push("/online/blocked")}
+          />
+          <Button
             variant="orange"
             title="Oyuncu Ara ve Arkadaşlarım"
             icon="users"
