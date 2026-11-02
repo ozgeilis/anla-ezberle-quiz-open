@@ -87,3 +87,12 @@ then reclosed. The prior PR25 build approval is not reused as approval for PR26.
   oauth/deletion/revocation flags and deletion environment flag. Public Auth
   settings and capability RPC confirm activation; signup remains false and the
   allowlist is empty. Owner action for the initial Hide My Email denial is pending.
+
+## Final acceptance checkpoint
+
+The trial subsequently passed: [real Apple results](REAL-APPLE-RESULT.md).
+The owner confirmed post-erasure local level3/completed games5/total score2100;
+the earlier pending full-profile comparison above is now resolved. Only one
+temporary account was created and erased. No admission, identity, session or
+deletion job remains; provider/capabilities/server test flag are closed again.
+This completed local artifact is not a TestFlight upload or distribution.

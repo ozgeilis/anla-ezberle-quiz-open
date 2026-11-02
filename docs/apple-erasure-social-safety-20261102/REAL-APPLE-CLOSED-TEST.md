@@ -1,7 +1,9 @@
 # Proposed next acceptance: one real Apple private-relay application account
 
-2 November2026. Separate owner approval is required **before activation**.
-No approval is inferred from the completed closed backend/key preparation.
+2 November2026. The owner separately approved this exact single-account trial
+and its corrected local signing update. The trial passed and all temporary
+settings were closed afterward: [results](REAL-APPLE-RESULT.md).
+The operation below is its recorded scope, not permission to repeat or expand it.
 
 ## Baseline and scope
 

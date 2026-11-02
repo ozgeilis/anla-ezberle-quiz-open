@@ -1,9 +1,11 @@
 # Apple erasure and player safety candidate — 2 November 2026
 
 Stacked on PR #25, including its approved seasonal card changes. PR #26 has
-not been merged to main or distributed. The separately approved closed backend
-preparation is deployed in Frankfurt; Apple provider, moderator enrollment and
-all new feature flags remain closed. See the hosted evidence below.
+not been merged to main or distributed. Closed backend/key/retention preparation
+and the separately approved **one-account physical iPhone Apple trial** are now
+complete. Apple provider/capabilities and the server deletion flag were restored
+closed; the temporary account/admission/jobs are gone. Moderator enrollment and
+player safety activation remain closed. See [real Apple results](REAL-APPLE-RESULT.md).
 
 ## Implemented
 
@@ -36,8 +38,9 @@ all new feature flags remain closed. See the hosted evidence below.
 | Real local GoTrue + actual online-duel Edge + PostgREST | PASS report/idempotency, reciprocal blocks, new requests/invites denied, unblock, field spoofing and unauthorized RPC/moderation denied; synthetic local actors only |
 | Real browser UI on isolated server                      | Report success, block removed friendship/inbox, owned blocked list; dark 390dp inspected                                                                             |
 | iOS simulator                                           | Current embedded JS launches; guest home preserves prior local XP. Full authenticated native safety acceptance pending                                               |
-| Physical iPhone / Android                               | Not tested for this candidate                                                                                                                                        |
-| Real Apple provider, relay, revocation                  | Pending separate hosted plan approval, key setup and real same-actor test                                                                                            |
+| Physical iPhone                                         | PASS controlled Apple-only login, cold reopen, cancel/relogin, fresh-proof erasure/revocation; owner confirmed local level3/games5/score2100 retained. Full native safety/game matrix remains open |
+| Android native safety candidate                         | Local-only QA app installed; authenticated local HTTP attempt failed with a connection error. Not a passing native safety test or physical Samsung acceptance |
+| Real Apple provider, Hide My Email identity, revocation  | PASS one approved new relay account on iPhone11/iOS27.2; hook denial403 first, then same-actor login and revocation/erasure. Forwarded-email delivery NOT_RUN |
 | Hosted moderation process / mobile matrix               | Pending acceptance; do not mark App Store ready                                                                                                                      |
 
 Commands: `pnpm check`; `pnpm dlx deno check --config
@@ -123,10 +126,11 @@ Reviewed migration SHA256:
 - Player safety: `76667ad009ffd2f4829502c51d9064571699ddc52e4cc8b18ac4fdbc8a93d6d1`
 - Optional separately reviewed retention operation: `edd96d5ab78486f524bc4dc6fda4338dd4d876825f3edfd6cac29fe722659da8`
 
-Only the closed preparation has been approved and deployed. This document
-is not permission to activate providers, grant moderators or distribute it.
-Real Apple credentials/provider/revocation, private relay, authorized moderator
-enrollment/operating acceptance and complete physical device testing remain open.
+The following closed-preparation record is historical. Later approvals covered
+key/retention preparation and the single-account Apple trial documented below.
+This document is not permission for general provider activation, moderator grants
+or distribution. Forwarded-email delivery, moderator operating acceptance and
+the complete authenticated native safety matrix remain open.
 
 ## Owner-approved closed hosted preparation
 
@@ -146,8 +150,9 @@ map these names/versions, never reapply the same DDL blindly.
 Existing security advisor categories were unchanged (including the pre-existing
 leaked-password-protection warning); no security policy was reduced. Table
 INFO findings and callable capability RPCs require interpretation, not blanket
-removal of guards. Real Apple revocation/provider and moderator acceptance still
-block a claim of App Store readiness or forced insecure TestFlight distribution.
+removal of guards. That historical preparation alone did not establish Apple
+acceptance. The later controlled Apple trial passed, but moderator/native safety
+acceptance still blocks a claim of complete App Store/TestFlight readiness.
 
 ## Separately approved closed Apple server preparation
 
@@ -158,7 +163,21 @@ recorded here. `APPLE_ACCOUNT_DELETION_ENABLED` is still false. The exact
 reviewed retention operation is installed, and its first scheduled run succeeded
 at 08:55 UTC on 2 November. Both unauthenticated Edge requests still return401.
 See `hosted-key-preparation.json`. Apple provider/feature flags, new signup and
-player safety remain closed. Real Apple nonce/login/deletion/revocation, Private
-Relay and authorized moderator acceptance are still pending; this is not
+player safety remain closed. At that preparation checkpoint real Apple acceptance
+was pending; see the subsequent completed trial below. This was not
 TestFlight distribution acceptance. Do not recreate/rotate the key or reschedule
 the existing named cron job merely to repeat this preparation.
+
+## Separately approved real Apple trial — completed and closed
+
+See [REAL-APPLE-RESULT.md](REAL-APPLE-RESULT.md) and
+`hosted-real-apple-trial.json`. The existing signed Release app was updated locally
+under the corrected explicit signing approval. One exact relay alias was admitted
+after an empty-list403 denial; no general signup opened. Native login, secure
+session persistence, cancellation and same-actor re-login passed. The owner
+completed fresh Apple proof and final deletion. The actor/identity/sessions/jobs
+are absent, and the owner confirmed the Apple authorization entry disappeared
+without manually removing it. Protected game/score/friend/room/reward aggregates
+and other18 Auth identities matched their pre-erasure integrity baselines.
+All temporary provider/capability/environment settings are closed again.
+No PR merge, Alpha/TestFlight upload/distribution or moderator grant occurred.

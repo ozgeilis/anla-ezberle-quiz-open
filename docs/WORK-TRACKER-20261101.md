@@ -253,3 +253,19 @@ sunucuda üç izinli fixture hesabı 0, sahipsiz profil/session/identity 0. Yere
 20 XP, seviye 1 ve son skor 200 korundu. Google test izin listesi boş;
 oauth/deletion açık, genel Google yeni kaydı kapalı. Yeni migration/şablon/
 Auth ayarı veya yayın yok. Kanıt: `xp-notifications-20261101/hosted-fresh-email-native-result.json`.
+
+### 2 Kasım — PR #26 tek hesaplı gerçek Apple kabulü ve kapatma
+
+| Görev / alt gereksinim | Dosya / PR | Durum | Test / tamamlanma kanıtı | Kalan |
+| --- | --- | --- | --- | --- |
+| Güncel iPhone adayını aynı kimlikle kurma | PR26 / LOCAL-APPLE-TEST-UPDATE.md | Tamamlandı | Mevcut Development imzası, strict verify, aynı Bundle ID; gerçek cihaz açıldı | Store yüklemesi değildir |
+| Kapalı kayıt kancası + exact relay kabulü | PR26 / hosted-real-apple-trial.json | Tamamlandı | İlk native403/user0; tek relay geçici izni sonrası yeni Apple-only actor1 | Genel Apple kaydı kapalı |
+| Native giriş / kalıcılık / iptal / tekrar giriş | PR26 / REAL-APPLE-RESULT.md | Tamamlandı | Fiziksel iPhone11/iOS27.2, aynı actor; ikinci hesap yok | Tam platform matrisi değildir |
+| Taze Apple kanıtı / revoke-before-erase / temizlik | PR26 / REAL-APPLE-RESULT.md | Tamamlandı | Sahip son onayı tamamladı; HTTP200; Apple ayarları kaydı yok; user/identity/session/refresh/job0 | İzole hata enjeksiyonu canlı hata testi değildir |
+| Veriyi ve kapalı ayarları koruma | PR26 / hosted-real-apple-trial.json | Tamamlandı | Yerel seviye3/oyun5/skor2100; diğer18 hesap ve oyun özetleri aynı; provider/4flag/env kapalı | Anahtar + cron korunuyor |
+| Private Relay gerçek e-posta teslimi | PR26 | Yapılmadı | Native relay kimliği geçti; gerçek iletilen posta denenmedi | Ayrı teslim kabulü |
+| Moderasyon işletimi / native sosyal güvenlik matrisi | PR26 | Devam Ediyor | Kod/426 test/izole SQL-HTTP kabulü mevcut; Android local HTTP bağlantı denemesi başarısız | Yetkili moderatör + native kabul; canlı flag kapalı |
+| PR26 merge / TestFlight güncelleme-dağıtımı | PR26 | Yapılmadı | Sadece yerel kabul paketi ve PR kanıtları; main/Alpha değişmedi | Güvenlik kabulü ve ayrı yayın kapsamı |
+
+Bu güncel kayıt önceki Apple sağlayıcısı/gerçek hesap testi bekliyor
+ifadelerini ilgili dar kapsam için günceller; diğer açık görevleri kapatmaz.
