@@ -97,19 +97,33 @@ onaylı geri dönüş uygulandı: **safety=false, aktif moderatör=0**; sahibin 
 pasif rol ve audit korundu. Konsol ve test oturumları kapatıldı. Maç/skor/oda/
 ödül ve test çiftinin dışındaki arkadaşlık hash'leri değişmedi.
 
-İleri migration ve gerçek yerel GoTrue HTTP silme testi hazır/geçti; canlıya
-uygulanmadı. [Yeni dar plan](MODERATION-ERASURE-ROLLOUT.md) ayrı onay bekliyor.
-[Gizlilik ek metni](PRIVACY-ADDENDUM-PROPOSAL.md) somut öneri olarak hazır;
-web veya gömülü build3 politikasına yayımlanmadı. Yeni etkin native güvenlik
-kabulü ve açık gizlilik açıklaması kapanmadan Beta App Review gönderilmez.
+Sahip yeni dar planı ayrıca onayladı. Exact ileri migration canlıda
+`20261102143955` olarak uygulandı; fonksiyon MD5'i izole kaynakla eşleşti,
+trigger etkin, anon/authenticated/service_role execute izinleri kapalı. Eski
+hesap silme fonksiyonu aynı kaldı. Eski FK'si silinmiş rapor/audit sayısı
+uygulama öncesi sıfırdı. Yeni canlı hesap silme testi yapılmadı; yerel gerçek
+GoTrue HTTP ve SQL kanıtı ile canlı kaynak doğrulaması ayrı raporlanır.
 
-Güncel kabul edilmiş JS'nin ayrı Xcode simülatör kopyasında gerçek parola
-girişi, bildirimler/oyuncu profili ve rollback nedeniyle devre dışı güvenlik
-butonları doğrulandı; test oturumu kapatıldı. Eski imzasız simülatör kopyası ve
-arşivler korundu. Bu yerel QA uygulaması TestFlight build3 kurulumu değildir.
+Sahibi tekrar gerçek konsol girişi yaptı. Exact owner rolü ve safety bayrağı
+onaylı sırayla yeniden açıldı. iOS390 simülatöründe gerçek native formdan
+sentetik rapor gönderildi ve canlı DB/konsolda bulundu. Native engelleme ve
+engeli kaldırma, karşı oyuncunun sunucuda istek/davet reddi, sahibiyle audit'li
+kısıtlama ve geri alma geçti. Açık/koyu tema görüntüleri incelendi. İki sentetik
+hesabın arkadaşlığı ve bekleyen daveti normal aksiyonlarla işlevsel geri kondu;
+engel/kısıtlama ve açık rapor kalmadı. Native/API/konsol kabul oturumları kapandı.
+Maç/skor/oda/ödül ve test dışı arkadaşlık hash'leri aynı. Güvenlik advisor grupları
+değişmedi; sızdırılmış parola korumasının mevcut kapalı durumu değiştirilmedi.
 
-[Yerel moderatör aracı](MODERATOR-CONSOLE.md) ve
-[kişisel veri içermeyen kabul özeti](moderation-hosted-acceptance.json).
+[Kesin canlı sonuç](hosted-erasure-final-result.json),
+[iOS ekran kabulü](IOS-SIMULATOR-ACCEPTANCE.md),
+[yerel moderatör aracı](MODERATOR-CONSOLE.md).
+
+Gizlilik metni **ayrı PR #29** olarak hazır: yalnız mevcut metne Apple,
+şikâyet/veri temizliği, kapalı kayıt ve iOS reklamsız beta açıklamaları ekler.
+TypeScript/lint/web export ve gerçek yerel Chrome önizlemesi geçti. Main/Vercel
+onayı henüz yok. Build3'ün gömülü metni eski kalır; bu bir web yayınıyla kendiliğinden
+değişmez. Yeni numaralı iOS adayının metin eşitliği ve ayrı paket kabulü hazırlanır.
+Beta App Review henüz gönderilmedi; gerçek Public Link yoktur.
 
 ## Resmi kaynaklar
 

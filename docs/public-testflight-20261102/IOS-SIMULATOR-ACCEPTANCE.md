@@ -40,3 +40,31 @@ Bu iki görüntü tasarım mockup'ı değildir. TestFlight mağaza ekran görün
 fiziksel iPhone'da yeni moderasyon kabulü değildir. Bu aşamada yeni koyu tema,
 iPad veya farklı genişlikte sosyal kabul yapılmadı. Önceki PR25 kanıtları
 korunur; bu küçük kabul kapsamına taşınarak yeni test yapıldı denmez.
+
+## Onaylı yeniden açılış sonrası gerçek kabul
+
+Yeni silme-gizlilik migration'ı canlıda uygulandıktan ve sahibi konsola yeniden
+girdikten sonra safety onaylı sırayla açıldı. Mevcut iki yetkili sentetik hesap
+kullanıldı; yeni hesap oluşturulmadı.
+
+- Native iOS şikâyet formunda Diğer seçilip sentetik açıklama yazıldı. Gerçek
+  gönderim sonrası “Şikâyetin alındı” çıktı; canlı DB'de aynı neden/metinle tek
+  açık kayıt ve owner konsolunda aynı rapor doğrulandı.
+- Native Engelle onayından sonra arkadaşlık kaldırıldı; engellenenler listesi
+  hedefi gösterdi. Karşı hesabın arkadaşlık ve davet istekleri sunucuda reddedildi.
+- Native Engeli Kaldır sonucu boş liste ve önceki arkadaşlığın otomatik geri
+  gelmediği açıklaması gösterildi.
+- Owner konsolunda aynı rapora audit'li geçici kısıtlama verildi; sunucu
+  SOCIAL_RESTRICTED reddetti. Aynı kapalı rapor ID'sinden kısıtlama geri alındı.
+- Sentetik arkadaşlık/davet normal aksiyonlarla işlevsel geri kondu. Native
+  arkadaş kartı tekrar göründü; açık ve koyu temada profil/güvenlik formu incelendi.
+- Yeni koyu tema kanıtları `ios390-safety-friend-dark.jpg` ve
+  `ios390-report-form-dark.jpg`; native açık tema formu `ios390-report-form-light.jpg`,
+  engellenen liste `ios390-blocked-player-light.jpg` aynı özel screenshots klasöründe.
+- Tema eski Light durumuna döndü. Native “Çıkış yap” sonucunda giriş formu ve
+  “Yerel kayıtların korunuyor” doğrulandı. Konsol/API kabul oturumları da kapandı.
+
+Bu yeni kabul390pt simülatördedir; iPad/başka genişlik/fiziksel moderasyon veya
+TestFlight kurulumu olarak sayılmaz. İlk otomasyon girişinde eksik aktarılan
+alanlar kimlik doğrulama hatası verdi; alanlar tam girilip başarılı gerçek giriş
+tekrar doğrulandı. Bu otomasyon giriş hatası başarılı test olarak sayılmadı.

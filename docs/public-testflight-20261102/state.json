@@ -31,14 +31,14 @@
     "created": false,
     "desiredLimit": 1000,
     "desiredAudience": "Open to Anyone",
-    "reason": "Build3 is eligible but linked moderation-erasure privacy gap blocks review; fix tested locally, new live migration authorization pending"
+    "reason": "Hosted moderation-erasure fix and native safety acceptance passed. Public/embedded privacy updates pending approval before review submission."
   },
   "betaReviewSubmitted": false,
   "productionSubmissionAuthorized": false,
   "androidChangeAuthorized": false,
   "authPoliciesChanged": false,
   "moderationOwnerConfirmed": true,
-  "moderatorEnrolled": false,
+  "moderatorEnrolled": true,
   "candidate": {
     "version": "0.1.0",
     "build": "3",
@@ -77,29 +77,33 @@
     "appleUpload": "succeeded and Console Ready to Submit verified",
     "physicalAppleTrial": "prior accepted exact JS: login, persistence, cancellation, deletion and revocation; not a new build 3 installation test",
     "build3TestFlightInstall": "not run; not distributed",
-    "nativeSocialSafetyAcceptance": "Partial: real iOS simulator login, notifications, peer profile and disabled flag state, logout passed; enabled UI pending reactivation",
+    "nativeSocialSafetyAcceptance": "PASS actual iOS390 simulator: existing-account sign-in, native report to hosted DB/owner console, block/unblock, server friend/invite denial, moderator restrict/restore, light/dark appearance, logout. Not physical or TestFlight installation.",
     "moderatorLocalRealService": "PASS real isolated Auth + Edge + RPC: role denial, queue, audited restrict/restore via closed report, logged-out JWT denial",
     "moderatorBrowserUI": "PASS hosted owner login, queue, audited restrict and restore via closed report, local logout; owner role now inactive after planned rollback",
-    "moderationErasure": "PASS isolated target/reporter/moderator, rollback/denial/unrelated evidence; actual local GoTrue HTTP hard delete; forward repair SQL passed"
+    "moderationErasure": "PASS isolated target/reporter/moderator, rollback/denial/unrelated evidence; actual local GoTrue HTTP hard delete; forward repair SQL passed",
+    "hostedErasureSource": "Applied approved migration; function definition matches isolated source, trigger active, execute revoked, original erasure source unchanged. No hosted account deletion test."
   },
   "ownerOperatingAccount": {
     "authorized": true,
     "created": true,
     "emailConfirmed": true,
-    "validSessionAtLastCheck": true,
-    "moderatorGranted": false,
+    "moderatorGranted": true,
     "creationUsedExistingEmailPolicy": true,
     "webCallback": "No usable local callback session; owner completed safe password sign-in and moderator console acceptance",
-    "moderatorGrantHistory": "Granted in approved trial then set inactive after privacy blocker"
+    "moderatorGrantHistory": "Previous trial rolled back; exact owner role reactivated under new approved plan and real console reacceptance passed",
+    "ownerConsoleSessionLoggedOut": true
   },
   "moderationRollout": {
     "previousPlanAuthorized": true,
     "ownerConsoleAndSyntheticAcceptancePassed": true,
     "rolledBackAfterPrivacyGap": true,
-    "safetyEnabled": false,
-    "activeModerators": 0,
-    "newPrivacyMigrationApplied": false,
-    "newLiveApprovalRequired": true
+    "safetyEnabled": true,
+    "activeModerators": 1,
+    "newPrivacyMigrationApplied": true,
+    "newLiveApprovalRequired": false,
+    "hostedMigrationVersion": "20261102143955",
+    "ownerConsoleReacceptancePassed": true,
+    "nativeEnabledSafetyAcceptancePassed": true
   },
   "privacy": {
     "currentPublicPolicyDate": "2026-10-30",
@@ -107,6 +111,7 @@
     "addendumApplied": false,
     "nativeBuild3PolicyUpdated": false,
     "rolloutDocument": "MODERATION-ERASURE-ROLLOUT.md",
-    "proposal": "PRIVACY-ADDENDUM-PROPOSAL.md"
+    "proposal": "PRIVACY-ADDENDUM-PROPOSAL.md",
+    "proposalPr": 29
   }
 }

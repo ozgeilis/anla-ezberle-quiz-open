@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-02",
+  "project": "mqyuihiobkomjfipxehj",
+  "sourceCommit": "121031b2073c3bc12fdf5972ef3e58cbc437c185",
+  "ownerApproved": true,
+  "migration": {
+    "sourceFile": "20261102135833_moderation_erasure_privacy.sql",
+    "sourceSha256": "e788b4815fc29eb26c20e0fbef96a9590ee6a3d10748e84ae053e92000b0d6f3",
+    "hostedVersion": "20261102143955",
+    "name": "moderation_erasure_privacy",
+    "applied": true,
+    "functionDefinitionMd5": "a362a29caae43433fc63596ba2e5ce0f",
+    "isolatedSourceMatches": true,
+    "triggerEnabled": true,
+    "anonExecute": false,
+    "authenticatedExecute": false,
+    "serviceExecute": false,
+    "originalErasureDefinitionUnchanged": true,
+    "orphanReportsBeforeApply": 0,
+    "orphanAuditsBeforeApply": 0
+  },
+  "moderation": {
+    "ownerRoleActive": true,
+    "activeModerators": 1,
+    "ownerConsoleLoginAndQueuePassed": true,
+    "safetyEnabled": true,
+    "openReportsAfterAcceptance": 0,
+    "temporaryRestrictions": 0,
+    "ownerAndAcceptanceSessionsLoggedOut": true
+  },
+  "nativeIOS": {
+    "simulator": "iOS27.0 /390pt",
+    "sameAcceptedJsSha256": "3d7b11b37e53de1cb332294051b03be1ca8b7fabcba0d26b5103e5c9e21852c4",
+    "realPasswordSignInPassed": true,
+    "reportCreatedFromNativeUI": true,
+    "reportReceivedByHostedDatabaseAndOwnerConsole": true,
+    "blockAndUnblockFromNativeUI": true,
+    "incomingFriendAndInviteDeniedByServer": true,
+    "moderatorRestrictRestorePassed": true,
+    "lightAndDarkSafetyScreensInspected": true,
+    "logoutPassed": true,
+    "physicalNewModerationTest": false,
+    "testFlightBuild3Install": false
+  },
+  "auth": {
+    "googleOAuthEnabled": true,
+    "googleSignupEnabled": false,
+    "appleOAuthEnabled": false,
+    "appleDeletionEnabled": false,
+    "appleRevocationEnabled": false
+  },
+  "integrity": {
+    "score_ledger": {
+      "rows": 31,
+      "unchanged": true
+    },
+    "matches": {
+      "rows": 31,
+      "unchanged": true
+    },
+    "live_rooms": {
+      "rows": 15,
+      "unchanged": true
+    },
+    "live_rewards": {
+      "rows": 16,
+      "unchanged": true
+    },
+    "other_friendships": {
+      "rows": 1,
+      "unchanged": true
+    },
+    "syntheticPair": {
+      "acceptedFriendships": 1,
+      "pendingChallenges": 1,
+      "restoration": "semantic; UUID/timestamps recreated through normal consent actions"
+    }
+  },
+  "securityAdvisors": {
+    "unchangedGroups": true,
+    "newFindingGroups": 0,
+    "preexistingLeakedPasswordProtectionDisabled": true,
+    "settingChanged": false
+  },
+  "changedStoreOrProductionSettings": false,
+  "remaining": [
+    "Public and embedded privacy policy updates pending approval",
+    "Beta App Review not submitted",
+    "Public link not created"
+  ]
+}

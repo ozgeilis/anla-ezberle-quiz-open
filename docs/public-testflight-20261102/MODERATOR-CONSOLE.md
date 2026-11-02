@@ -78,3 +78,13 @@ node scripts/moderation-console/local-acceptance.mjs
 Fixture dosyaları Git dışında tutulur; script yalnız sabit loopback servis ve
 beklenen izole container/database adını kabul eder. Gerçek kullanıcı yaratmaz
 veya silmez. Local sentetik rapor audit'te kalır.
+
+## Son canlı kabul
+
+Yeni dar plan sahibi tarafından onaylandı; gizlilik migration'ı sonrası owner
+rolü ve safety onaylı sırayla açıldı. Sahibi taze girişle boş kuyruğu doğruladı.
+iOS'tan gönderilen gerçek sentetik rapor konsolda görüldü; audit'li kısıtlama ve
+kaldırma geçti. Sonunda açık rapor/kısıtlama yok; owner rolü ve safety açık,
+kabul konsolu oturumu kapalıdır. Günlük inceleme için aynı komutla konsolu açıp
+mevcut işletim hesabınızla yeniden giriş yapabilirsiniz. Bu yetki başka hesaba
+veya Auth metadata'sına aktarılmadı.

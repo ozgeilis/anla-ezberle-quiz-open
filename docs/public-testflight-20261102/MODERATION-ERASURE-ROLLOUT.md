@@ -1,3 +1,13 @@
+> **Sonuç — 2 Kasım:** Sahibi bu dar planı onayladı. Exact migration
+> `e788b481…00b0d6f3`, canlı kayıtta `20261102143955` olarak uygulandı.
+> Kaynak/trigger/izin eşleşmesi doğrulandı; eski silme fonksiyonu aynı kaldı.
+> Yalnız sahip rolü yeniden açıldı ve taze konsol kabulünden sonra safety=true
+> yapıldı. Gerçek iOS390 şikâyet/engel ve sunucu retleri, konsol karar/geri alma
+> geçti. Test ilişkileri işlevsel geri kondu; tüm kabul oturumları kapatıldı.
+> Aşağıdaki metin onaylanan planın geçmişidir. Güncel kanıt:
+> [hosted-erasure-final-result.json](hosted-erasure-final-result.json).
+> Gizlilik metni için PR #29 hazır; yayın veya yeni IPA bu izne dahil değildir.
+
 # Şikâyet verileri ve hesap silme: yeni dar canlı plan
 
 Durum: **hazır ve izole ortamda test edildi; canlıya uygulanmadı.**
