@@ -17,9 +17,13 @@ outside the deletion scope. Stop if a pre-existing identity/account is found.
 
 ## Proposed controlled operation
 
-1. Keep current source and native modules. Serve PR26 over Metro8111 to the
-   already installed permanent-ID iPhone development client; no new certificate,
-   IPA, signed build, TestFlight or Android release is required for these JS changes.
+1. **Correction after device inspection:** the installed permanent-ID acceptance
+   app is a signed Release application, not a Metro development client. A launch
+   URL did not create a Metro connection; PR26 was not delivered to the phone.
+   Do not count the existing guest screen as a current-source test. Prepare the
+   separately scoped [local candidate update](LOCAL-APPLE-TEST-UPDATE.md) and obtain
+   owner approval before signing/installing it. No new native dependencies are
+   needed. Keep the hosted trial closed until that candidate is ready.
 2. Enable Supabase Apple **native identity-token** provider only for audience
    `com.kovynelstudio.anlaezberle`. No web Services ID/callback wildcard; nonce
    verification and verified email remain required. No Apple web OAuth secret
