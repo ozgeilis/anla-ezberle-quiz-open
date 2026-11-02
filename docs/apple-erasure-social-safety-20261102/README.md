@@ -26,18 +26,18 @@ has been performed. All new server capabilities default to **closed**.
 
 ## Actual tests and remaining acceptance
 
-| Check                                                   | Status / scope                                                                                                                                                                              |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TypeScript, lint, bank, unit/regression                 | PASS: `pnpm check`, 423/423 on this worktree                                                                                                                                                |
-| Edge Deno checking                                      | PASS account-delete with its pinned deno.json; online-duel                                                                                                                                  |
-| Isolated PostgreSQL full migration/history suite        | Earlier PASS; final repeat found an ambiguous alias in the added cross-challenge lock. Fixed alias. Rerun currently blocked by Docker Desktop startup failure; **not final SQL acceptance** |
-| Apple HTTP + PostgreSQL crypto/revoke/erase retries     | Earlier PASS against explicit signed Apple/Supabase JWT fixtures; **not real Apple revocation**                                                                                             |
-| Real local GoTrue + actual online-duel Edge + PostgREST | PASS report/idempotency, reciprocal blocks, new requests/invites denied, unblock, field spoofing and unauthorized RPC/moderation denied; synthetic local actors only                        |
-| Real browser UI on isolated server                      | Report success, block removed friendship/inbox, owned blocked list; dark 390dp inspected                                                                                                    |
-| iOS simulator                                           | Current embedded JS launches; guest home preserves prior local XP. Full authenticated native safety acceptance pending                                                                      |
-| Physical iPhone / Android                               | Not tested for this candidate                                                                                                                                                               |
-| Real Apple provider, relay, revocation                  | Pending separate hosted plan approval, key setup and real same-actor test                                                                                                                   |
-| Hosted moderation process / mobile matrix               | Pending acceptance; do not mark App Store ready                                                                                                                                             |
+| Check                                                   | Status / scope                                                                                                                                                       |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TypeScript, lint, bank, unit/regression                 | PASS: `pnpm check`, 423/423 on this worktree                                                                                                                         |
+| Edge Deno checking                                      | PASS account-delete with its pinned deno.json; online-duel                                                                                                           |
+| Isolated PostgreSQL full migration/history suite        | PASS after alias fix and Docker recovery: all current migrations, immutable keys, old games and player/score/award row preservation; no hosted connection            |
+| Apple HTTP + PostgreSQL crypto/revoke/erase retries     | PASS repeated after final SQL against explicit signed Apple/Supabase JWT fixtures; **not real Apple revocation**                                                     |
+| Real local GoTrue + actual online-duel Edge + PostgREST | PASS report/idempotency, reciprocal blocks, new requests/invites denied, unblock, field spoofing and unauthorized RPC/moderation denied; synthetic local actors only |
+| Real browser UI on isolated server                      | Report success, block removed friendship/inbox, owned blocked list; dark 390dp inspected                                                                             |
+| iOS simulator                                           | Current embedded JS launches; guest home preserves prior local XP. Full authenticated native safety acceptance pending                                               |
+| Physical iPhone / Android                               | Not tested for this candidate                                                                                                                                        |
+| Real Apple provider, relay, revocation                  | Pending separate hosted plan approval, key setup and real same-actor test                                                                                            |
+| Hosted moderation process / mobile matrix               | Pending acceptance; do not mark App Store ready                                                                                                                      |
 
 Commands: `pnpm check`; `pnpm dlx deno check --config
 supabase/functions/account-delete/deno.json supabase/functions/account-delete/index.ts`;

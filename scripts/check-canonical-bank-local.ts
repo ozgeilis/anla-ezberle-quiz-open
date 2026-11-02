@@ -85,7 +85,7 @@ try {
   sql(isolated);
   sql(`DROP SCHEMA quiz_private CASCADE;
 DROP TABLE IF EXISTS public.player_notifications CASCADE;
-DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace WHERE n.nspname='public' AND p.prosrc LIKE '%quiz_private%' LOOP EXECUTE 'DROP FUNCTION IF EXISTS '||f.signature||' CASCADE'; END LOOP; END $$;`);
+DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace WHERE n.nspname='public' AND (p.prosrc LIKE '%quiz_private%' OR p.proname='apple_deletion_session') LOOP EXECUTE 'DROP FUNCTION IF EXISTS '||f.signature||' CASCADE'; END LOOP; END $$;`);
   for (const file of readdirSync("supabase/migrations").sort()) {
     if (file >= "20261027000100") continue;
     const content = readFileSync(`supabase/migrations/${file}`, "utf8")
@@ -236,7 +236,29 @@ GRANT ALL ON ALL SEQUENCES IN SCHEMA quiz_private,auth,storage TO postgres;
 GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA quiz_private TO postgres;
 ALTER FUNCTION quiz_private.erase_authorized_player() OWNER TO postgres;`);
   console.log(sql(readFileSync("supabase/tests/account_deletion.sql", "utf8")));
-  writeFileSync(resolve(output, "acceptance.json"), JSON.stringify({ passed: true, database: db, container, hosted: false, accountDataExported: false, sources: ["v72/v73", "20-second timing", "progressive XP", "Apple deletion and closed hook", "safety RLS/contact guards/moderation", "account erasure regression"], playerRowsUnchangedBySafetyMigration: true }, null, 2) + "\n");
+  writeFileSync(
+    resolve(output, "acceptance.json"),
+    JSON.stringify(
+      {
+        passed: true,
+        database: db,
+        container,
+        hosted: false,
+        accountDataExported: false,
+        sources: [
+          "v72/v73",
+          "20-second timing",
+          "progressive XP",
+          "Apple deletion and closed hook",
+          "safety RLS/contact guards/moderation",
+          "account erasure regression",
+        ],
+        playerRowsUnchangedBySafetyMigration: true,
+      },
+      null,
+      2,
+    ) + "\n",
+  );
   console.log(
     `PASS isolated v72/v73 database ${db}; schema only, historical fixtures, both canonical releases, immutable keys and SQL acceptance. No remote contact.`,
   );
@@ -246,8 +268,15 @@ ALTER FUNCTION quiz_private.erase_authorized_player() OWNER TO postgres;`);
     String(error instanceof Error ? error.message : error),
     { mode: 0o600 },
   );
+  const diagnostic = String(error instanceof Error ? error.message : error)
+    .split("\n")
+    .filter((line) => /^(ERROR:|CONTEXT:)/.test(line))
+    .map((line) =>
+      line.replace(/[0-9a-f]{8}-[0-9a-f-]{27}/gi, "<fixture-id>").slice(0, 200),
+    )
+    .join("; ");
   console.error(
-    `Local canonical acceptance failed; private SQL and error retained outside repository (${db}).`,
+    `Local canonical acceptance failed; private SQL retained outside repository (${db}). ${diagnostic}`,
   );
   // Preserve the DB for diagnosis without logging question data or credentials.
   process.exitCode = 1;
