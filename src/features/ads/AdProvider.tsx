@@ -42,7 +42,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   const { session, data, result } = useGame();
   const { setInterrupted } = useSound();
   const { preferences, loaded, storageError, persist, getPreferences } =
-    useAdPreferences(adConfig.enabled);
+    useAdPreferences(adConfig.enabled, adConfig.preferencesKey);
   const [ready, setReady] = useState(false);
   const [foreground, setForeground] = useState(
     AppState.currentState === "active",
@@ -79,9 +79,13 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   useEffect(() => {
     alive.current = true;
     const lifecycleGeneration = generation.current;
-    const subscription = AppState.addEventListener("change", (state) =>
-      setForeground(state === "active"),
-    );
+    const subscription = AppState.addEventListener("change", (state) => {
+      setForeground(state === "active");
+      if (adConfig.requiresTrackingAuthorization && state === "background") {
+        invalidate();
+        refreshed.current = false;
+      }
+    });
     return () => {
       alive.current = false;
       lifecycleGeneration.value++;

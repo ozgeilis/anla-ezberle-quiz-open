@@ -1,3 +1,8 @@
+> **Güncel ürün kararı:** İlk iOS sürümü reklamlı hazırlanıyor. Reklamsız
+> `d11758d` denemesi main/IPA/upload olmadı; yalnız ilgili SDK dışlamaları
+> hedefli kaldırıldı. Supabase paket düzeltmesi korunur. Yeni reklamlı native
+> cihaz kabulü ve App Privacy henüz tamamlanmadı. [Güncel reklamlı aday](IOS-ADVERTISING.md).
+
 > **Kritik güncel bulgu:** Build 4 imzası/geçmiş Apple validation geçerli olsa da
 > çevrimiçi istemci yapılandırması final JS paketinde yok. Tam aynı JS ile gerçek
 > iPad ekranında NOT_CONFIGURED görüldü; export IPA'da beklenen Frankfurt URL

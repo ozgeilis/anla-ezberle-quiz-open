@@ -1,57 +1,7 @@
 import assert from "node:assert/strict";
 import { Buffer } from "node:buffer";
-import { readFileSync } from "node:fs";
-import { createRequire } from "node:module";
 import test from "node:test";
-import createConfig from "../app.config";
 import { validateNoIosAds } from "../scripts/verify-ios-noads.mjs";
-
-const require = createRequire(import.meta.url);
-
-test("the native ad dependency is excluded only on iOS", () => {
-  const config = require("../react-native.config.js");
-  assert.deepEqual(
-    config.dependencies["react-native-google-mobile-ads"].platforms,
-    { ios: null },
-  );
-  const runtime = readFileSync("src/features/ads/runtime.ios.tsx", "utf8");
-  assert(!runtime.includes("react-native-google-mobile-ads"));
-  assert(runtime.includes("throw Error"));
-});
-
-test("Expo excludes the ad plugin on iOS and preserves Android configuration", () => {
-  const context = {
-    config: { name: "Fixture", slug: "fixture", plugins: ["expo-router"] },
-    projectRoot: process.cwd(),
-    staticConfigPath: null,
-    packageJsonPath: "package.json",
-  };
-  const prior = process.env.EAS_BUILD_PLATFORM;
-  try {
-    process.env.EAS_BUILD_PLATFORM = "ios";
-    const ios = createConfig(context);
-    assert(
-      !ios.plugins?.some(
-        (p) => Array.isArray(p) && p[0] === "react-native-google-mobile-ads",
-      ),
-    );
-    process.env.EAS_BUILD_PLATFORM = "android";
-    const android = createConfig(context);
-    assert(
-      android.plugins?.some(
-        (p) => Array.isArray(p) && p[0] === "react-native-google-mobile-ads",
-      ),
-    );
-    assert(
-      android.android?.blockedPermissions?.includes(
-        "com.google.android.gms.permission.AD_ID",
-      ),
-    );
-  } finally {
-    if (prior === undefined) delete process.env.EAS_BUILD_PLATFORM;
-    else process.env.EAS_BUILD_PLATFORM = prior;
-  }
-});
 
 const fixture = () => ({
   plist: {} as Record<string, unknown>,

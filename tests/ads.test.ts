@@ -157,7 +157,7 @@ test("UMP geography override requires an explicit test development configuration
   );
   assert.match(
     readFileSync(absolute("src/features/ads/adConfig.ts"), "utf8"),
-    /consentDebugEea: __DEV__ &&/,
+    /resolveRuntimeAds\(Platform.OS, build, __DEV__\)/,
   );
 });
 const eligible = () => ({
@@ -378,7 +378,7 @@ test("unknown/minor age cannot even start UMP; adults can reopen privacy after l
     true,
   );
 });
-test("actual Metro resolver keeps Android GMA and selects SDK-free iOS/web runtimes", () => {
+test("actual Metro resolver selects native GMA on Android/iOS and safe web code on web", () => {
   const require = createRequire(import.meta.url);
   const expoRoot = dirname(require.resolve("expo/package.json"));
   const metroConfig = require.resolve("@expo/metro-config", {
@@ -408,14 +408,12 @@ test("actual Metro resolver keeps Android GMA and selects SDK-free iOS/web runti
         : { exists: false },
     mainFields: ["react-native", "browser", "main"],
   };
-  assert.ok(
-    resolve(context, "./runtime", "android").filePath.endsWith(
-      "runtime.native.tsx",
-    ),
-  );
-  assert.ok(
-    resolve(context, "./runtime", "ios").filePath.endsWith("runtime.ios.tsx"),
-  );
+  for (const platform of ["android", "ios"])
+    assert.ok(
+      resolve(context, "./runtime", platform).filePath.endsWith(
+        "runtime.native.tsx",
+      ),
+    );
   assert.ok(
     resolve(context, "./runtime", "web").filePath.endsWith("runtime.web.tsx"),
   );

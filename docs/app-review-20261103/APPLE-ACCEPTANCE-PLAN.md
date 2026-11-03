@@ -1,4 +1,4 @@
-# Yeni reklamsız aday — dar Apple kabul planı
+# Yeni iOS yayın adayı — dar Apple kabul planı
 
 3 Kasım 2026. **Henüz onaylanmadı ve uygulanmadı.** Bu plan mağaza yayın
 izni, genel Apple kaydı, main merge veya hukuki beyan değildir.
@@ -29,7 +29,7 @@ işlem durur; bu belge sapma üstüne yazma izni vermez.
 
 ## Yalnız kontrollü gerçek iPhone kabulü
 
-1. Reklamsız native adayın SDK yokluğu, public istemci config'i ve otomatik
+1. Reklamlı native adayın izin/SDK eşleşmesi, public istemci config'i ve otomatik
    kontrolleri geçmeli. Yalnız mevcut sertifika/kimlikle, cihazdaki uygulama
    silinmeden yerel kabul güncellemesi hazırlanır; eski Build 4 korunur.
 2. Sahibinin açık onayı alındıktan sonra native Apple provider yalnız mevcut

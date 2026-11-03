@@ -98,19 +98,23 @@ export default function PrivacyScreen() {
           bildirimi uzaktan geri çağrılamaz. Yalnız sağlayıcı alındısı gerçek
           cihaz teslimi garantisi değildir.
         </Txt>
-        <Txt weight="heavy">İsteğe bağlı reklam testi</Txt>
+        <Txt weight="heavy">İsteğe bağlı reklamlar ve reklam testi</Txt>
         <Txt>
-          Bu web sürümünde reklam gösterilmez. Aşağıdaki açıklamalar yalnız
-          reklam testi içeren Android test sürümleri içindir. Bu test kapsamında
-          Google Analytics veya Firebase Analytics etkinleştirilmez. Reklam
-          SDK’sının aşağıda açıklanan kendi teknik ölçümleri bundan ayrıdır.
+          Bu web sürümünde reklam gösterilmez. Android kapalı test paketleri
+          Google test reklamlarını kullanır. Bu kapsamda Google Analytics veya
+          Firebase Analytics etkinleştirilmez. Reklam SDK’sının aşağıda
+          açıklanan kendi teknik ölçümleri bundan ayrıdır.
         </Txt>
         <Txt>
-          Reklamsız ilk iOS App Store sürümü için hazırlanan bu adayda Google
-          Mobile Ads ve User Messaging Platform reklam SDK’ları paketlenmez.
-          Reklam gösterimi, reklam amaçlı uygulama takibi, Google Analytics ve
-          Firebase Analytics etkin değildir. Android reklam testine ait
-          açıklamalar yalnız ilgili Android test sürümleri için geçerlidir.
+          Reklam özelliği etkin iOS paketlerinde Google Mobile Ads ve User
+          Messaging Platform kullanılır. Geliştirme ve kabul paketleri Google
+          test reklamlarını; yayımlanan reklam destekli paket ise iOS’a ait
+          gerçek reklam birimlerini kullanır. Bu iki yapılandırma ayrıdır.
+          iOS’ta Google izin kontrolü ve gerekli Apple takip izni tamamlanmadan
+          reklam isteği başlatılmaz. Apple takip iznini reddettiğinde reklam
+          isteği yapılmaz ve oyuna reklamsız devam edebilirsin. Bu izin için
+          oyun içi ödül verilmez, oyun özellikleri kısıtlanmaz. Google Analytics
+          ve Firebase Analytics etkinleştirilmez.
         </Txt>
         <Txt>
           Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google

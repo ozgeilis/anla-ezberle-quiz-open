@@ -4,8 +4,8 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { createHash } from "node:crypto";
-import { verifyNoIosAds } from "./verify-ios-noads.mjs";
 import { verifyNativeClientConfig } from "./verify-native-client-config.mjs";
+import { verifyIosAds } from "./verify-ios-ads.mjs";
 const [appArgument, output] = process.argv.slice(2);
 assert(
   appArgument,
@@ -32,8 +32,8 @@ assert(
   ),
 );
 assert(
-  !plist.NSUserTrackingUsageDescription,
-  "This preparation must not add ATT prompts",
+  typeof plist.NSUserTrackingUsageDescription === "string",
+  "Advertising acceptance requires the ATT explanation",
 );
 assert(
   !plist.NSMicrophoneUsageDescription,
@@ -78,9 +78,9 @@ visit(app);
 assert(privacy.length > 0, "Expected bundled SDK privacy manifests");
 const pods = readFileSync("ios/Podfile.lock", "utf8");
 assert(pods.includes("ExpoAppleAuthentication (58.0.2)"));
-assert(!pods.includes("Google-Mobile-Ads-SDK"));
-assert(!pods.includes("GoogleUserMessagingPlatform"));
-assert(!pods.includes("RNGoogleMobileAds"));
+assert(pods.includes("Google-Mobile-Ads-SDK"));
+assert(pods.includes("GoogleUserMessagingPlatform"));
+assert(pods.includes("RNGoogleMobileAds"));
 const evidence = {
   kind: "unsigned-ios-simulator-release",
   bundleIdentifier: plist.CFBundleIdentifier,
@@ -93,8 +93,8 @@ const evidence = {
     .update(readFileSync(join(app, "main.jsbundle")))
     .digest("hex"),
   appleNativePod: "58.0.2",
-  adsMode: "off (build environment; see native smoke evidence)",
-  ...verifyNoIosAds(app, plist),
+  adsMode: "test (native advertising acceptance; not revenue evidence)",
+  ...verifyIosAds(app, plist, { appId: process.env.ADMOB_IOS_APP_ID, mode: "test" }),
   ...verifyNativeClientConfig(readFileSync(join(app, "main.jsbundle")), {
     url: process.env.EXPO_PUBLIC_SUPABASE_URL,
     key: process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY,

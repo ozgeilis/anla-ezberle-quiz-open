@@ -1,3 +1,9 @@
+> **Kapsam notu:** Aşağıdaki ayrıntılı denetim Build 4 ve o andaki 10 türlük
+> Connect taslağına aittir. Son kullanıcı talimatıyla ilk iOS sürümü reklamlı
+> hazırlanıyor; GMA/UMP kaldırılmıyor. Yeni aday ve canlı/test ayrımı
+> [IOS-ADVERTISING.md](IOS-ADVERTISING.md) içinde. Bu dosya yeni adayın privacy
+> kabulü veya Publish onayı değildir.
+
 # App Privacy denetimi — 3 Kasım 2026
 
 **Sonuç: mevcut 10 alanlı taslak henüz reklamlı iOS yayını için kabul edilmedi.**

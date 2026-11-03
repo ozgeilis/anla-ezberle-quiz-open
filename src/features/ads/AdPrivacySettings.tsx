@@ -3,6 +3,7 @@ import { Switch, View } from "react-native";
 import { Button, Card, Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useAds } from "./AdProvider";
+import { adConfig } from "./adConfig";
 
 export function AdPrivacySettings() {
   const ads = useAds(),
@@ -12,21 +13,25 @@ export function AdPrivacySettings() {
     <Card style={{ gap: 12 }}>
       <Txt weight="bold">Reklam Gizlilik Tercihleri</Txt>
       <Txt size={12}>
-        Bu test sürümü yalnız Google’ın test reklamlarını kullanır. Reklam
-        istemezsen oyuna reklamsız devam edebilirsin. Doğum tarihin veya kesin
-        yaşın istenmez.
+        {adConfig.mode === "live"
+          ? "Bu sürüm Google AdMob reklamlarını kullanır."
+          : "Bu test sürümü yalnız Google’ın test reklamlarını kullanır."}{" "}
+        Reklam istemezsen oyuna reklamsız devam edebilirsin. Doğum tarihin veya
+        kesin yaşın istenmez.
       </Txt>
       {(
         [
           {
             key: "adultConfirmed",
             title: "18 yaş veya üzerindeyim",
-            description:
-              "Bu cihazdaki reklam testi yalnız yetişkinler içindir.",
+            description: "Bu cihazdaki reklamlar yalnız yetişkinler içindir.",
           },
           {
             key: "testAdsAllowed",
-            title: "Test reklamlarına izin ver",
+            title:
+              adConfig.mode === "live"
+                ? "Reklamlara izin ver"
+                : "Test reklamlarına izin ver",
             description:
               "Google cihaz/ağ ve reklam etkileşimi verilerini işleyebilir. Bu tercih UMP onayının yerine geçmez.",
           },
@@ -77,7 +82,7 @@ export function AdPrivacySettings() {
       <Txt size={12} accessibilityLiveRegion="polite" color={theme.muted}>
         {ads.error ||
           (ads.ready
-            ? "İzinler hazır. Yüklenebilen test reklamları ana sayfada gösterilir; bu anahtarla her zaman kapatabilirsin."
+            ? "İzinler hazır. Yüklenebilen reklamlar ana sayfada gösterilir; bu anahtarla her zaman kapatabilirsin."
             : "Reklamlar kapalı. Yaşı belirsiz veya reşit olmayan kullanıcılara reklam gösterilmez.")}
       </Txt>
     </Card>
