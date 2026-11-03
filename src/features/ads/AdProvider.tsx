@@ -21,6 +21,7 @@ import type { AdsRuntime, FullscreenAd } from "./runtime.types";
 import { AdTransitionDialog } from "./AdTransitionDialog";
 import { useAdPreferences } from "./useAdPreferences";
 import { createModalDismissalGate } from "./modalDismissal";
+import { consentBlockMessage } from "./consentFlow";
 
 interface AdContextValue {
   enabled: boolean;
@@ -133,18 +134,22 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     }
   }
   async function consent(interactive: boolean, privacy = false) {
-    if (
-      !adConfig.enabled ||
-      !loaded ||
-      !mayPrepareAdConsent(getPreferences()) ||
-      lock.current ||
-      current.current.session ||
-      !current.current.foreground ||
-      (!interactive && current.current.path !== "/") ||
-      (interactive &&
-        !["/", "/settings/privacy"].includes(current.current.path))
-    )
+    const blocked = consentBlockMessage(
+      {
+        enabled: adConfig.enabled,
+        loaded,
+        eligible: mayPrepareAdConsent(getPreferences()),
+        busy: lock.current,
+        playing: !!current.current.session,
+        foreground: current.current.foreground,
+        path: current.current.path,
+      },
+      interactive,
+    );
+    if (blocked) {
+      if (interactive) setError(blocked);
       return;
+    }
     lock.current = true;
     setBusy(true);
     invalidate();
@@ -156,7 +161,14 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       const decision = privacy
         ? await runtime.current.privacyOptions()
         : await runtime.current.consent(interactive);
-      if (!alive.current || revision !== generation.current.value) return;
+      if (!alive.current) return;
+      if (revision !== generation.current.value) {
+        if (interactive)
+          setError(
+            "Uygulama arka plana geçtiği için izin kontrolü tamamlanmadı. Yeniden dene.",
+          );
+        return;
+      }
       setPrivacyRequired(decision.privacyOptionsRequired);
       if (!mayPrepareAdConsent(getPreferences())) return;
       if (!decision.allowed) {
@@ -177,7 +189,11 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       full.current = runtime.current.interstitial(setAdReady);
       setReadyRuntime(runtime.current);
       setReady(true);
-      setError("");
+      setError(
+        privacy && "formPresented" in decision && !decision.formPresented
+          ? "Google bu cihaz için yeniden açılabilir bir izin formu sunmuyor. Bu işlem izin tercihlerini değiştirmedi."
+          : "",
+      );
     } catch {
       if (alive.current)
         setError(

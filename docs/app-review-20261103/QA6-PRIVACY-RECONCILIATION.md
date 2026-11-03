@@ -137,7 +137,9 @@ seçenekleri açılmadı; alttaki mesaj sahibi tarafından **"reklam hazır değ
 olarak bildirildi. Bu genel uygulama metni, tek başına Google API hatası veya
 ret kararı değildir. Yarım kalmış aktif oturum `consent()` korumasını
 tetikleyebildiğinden temiz yeniden açılış ve ana sayfada banner sonrasında
-tekrar deneme istendi; sonucu bekleniyor. **UMP geri alma/ret kabulü açık.**
+tekrar deneme istendi. Sahibi iki yanıtta, temiz yeniden açılış sonrasında da
+Google gizlilik seçeneklerinin açılmadığını bildirdi. Yarım tur varsayımı
+kanıtlanmadı ve çözüm olarak kabul edilmedi. **UMP geri alma/ret kabulü açık.**
 Ekran kanıtları
 Git dışındaki `app-review-20261103/qa6-phone-privacy-age-off.png` ve
 `public-privacy-ios-ads-20261103.png` dosyalarındadır; kişisel cihaz ekranları
@@ -161,6 +163,29 @@ Yeni dört event/iptal/timeout testi dahil reklam testleri **28/28**, ilgili
 oyun/sayaç/sonuç regresyonları **39/39**, TypeScript ve tam ESLint geçti.
 Gerçek UMP ret ve tam ekran gösterim testi bu otomatik kontrollerle ikame
 edilmedi. Native olay sözleşmesi: https://reactnative.dev/docs/modal#ondismiss .
+
+### Açılmayan gizlilik düğmesi için hedefli ek düzeltme
+
+QA6 düğmeyi SDK'nın `privacyOptionsRequired` kararından bağımsız gösteriyor;
+`NOT_REQUIRED` yanıtında runtime formu açmadan devam ediyor. Ayrıca rota,
+oyun ve foreground korumaları eylemi sessizce durdurabiliyor. Bunlar kaynakta
+doğrulanan davranışlardır; mevcut fiziksel denemede hangi dalın çalıştığı
+henüz ölçülmedi. Google belgeleri privacy-options girişinin yalnız gerektiği
+durumda görünür ve etkileşimli olmasını ister.
+
+Yeni kaynakta düğme SDK gerektirdiğinde görünür. Diğer durumda açıklama ve
+izin bilgisini yeniden hazırlama eylemi vardır; bilinmeyen durum başarılı
+form gibi sayılmaz. Runtime formun gerçekten açılıp kapanmasını ayrı sonuçla
+bildirir. Manuel eylem oyun, arka plan, yükleme, eşzamanlı işlem veya rota
+korumasına takılırsa anlaşılır neden gösterilir. SDK izni sıfırlanmaz, UMP
+reset kullanılmaz, rıza veya yaş/ATT güvenliği atlanmaz.
+
+Beş yeni hedefli test ile reklam testleri **33/33**, TypeScript ve tam lint
+geçti. Bu kod QA6'da yoktur; yeni yerel paket imzalama/kurulum onayı ve gerçek
+cihaz denemesi bekler. Kaynak düzeltmesi, UMP ret testinin geçtiği veya
+telefonun kesin kök nedeninin bulunduğu anlamına gelmez.
+
+Resmî gereklilik: https://developers.google.com/admob/ios/privacy#privacy_options .
 
 Kaynaklar:
 

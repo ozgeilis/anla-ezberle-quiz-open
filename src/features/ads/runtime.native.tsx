@@ -7,6 +7,7 @@ import { adConfig } from "./adConfig";
 import { mayUseAdvertisingTracking } from "./tracking";
 import { withAdRequestTimeout } from "./requestTimeout";
 import { authorizeAdConsent } from "./consentAuthorization";
+import { presentPrivacyOptions } from "./consentFlow";
 
 export async function loadAdsRuntime(): Promise<AdsRuntime> {
   // An older installed development client must fail safely, rather than crash
@@ -62,14 +63,17 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
       const info = await withAdRequestTimeout(
         sdk.AdsConsent.requestInfoUpdate(consentOptions),
       );
-      if (info.privacyOptionsRequirementStatus === "REQUIRED")
-        await sdk.AdsConsent.showPrivacyOptionsForm();
+      const formPresented = await presentPrivacyOptions(
+        info.privacyOptionsRequirementStatus,
+        () => sdk.AdsConsent.showPrivacyOptionsForm(),
+      );
       const decision = await consentDecision(sdk.AdsConsent);
-      return authorizeAdConsent(
+      const authorized = await authorizeAdConsent(
         decision,
         adConfig.requiresTrackingAuthorization,
         () => mayUseAdvertisingTracking(true),
       );
+      return { ...authorized, formPresented };
     },
     initialize,
     interstitial(onReady) {

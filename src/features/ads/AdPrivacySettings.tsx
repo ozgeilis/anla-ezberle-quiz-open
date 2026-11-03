@@ -48,7 +48,7 @@ export function AdPrivacySettings() {
           variant="outline"
         />
       )}
-      {ads.preferences.adultConfirmed && (
+      {ads.preferences.adultConfirmed && ads.privacyOptionsRequired && (
         <Button
           title="Google reklam gizlilik seçenekleri"
           disabled={ads.busy}
@@ -56,18 +56,27 @@ export function AdPrivacySettings() {
           variant="outline"
         />
       )}
+      {ads.preferences.adultConfirmed && !ads.privacyOptionsRequired && (
+        <Txt size={12} color={theme.muted}>
+          Google yeniden açılabilir bir izin formu sunduğunda gizlilik düğmesi
+          burada görünür. Durumu güncellemek için “Reklam izinlerini hazırla”yı
+          kullanabilirsin.
+        </Txt>
+      )}
       <Txt size={12} color={theme.muted}>
         Google cihaz/ağ ve reklam etkileşimi verilerini işleyebilir. iOS’ta
         Apple takip iznini reddedersen IDFA kullanılmadan, kişiselleştirilmemiş
         reklam istenebilir; gerekli Google izinleri yine uygulanır.
       </Txt>
       <Txt size={12} accessibilityLiveRegion="polite" color={theme.muted}>
-        {ads.error ||
-          (ads.ready
-            ? "Gizlilik kontrolleri tamamlandı. Uygun reklam alanlarında yüklenebilen reklamlar gösterilebilir."
-            : ads.preferences.adultConfirmed
-              ? "Reklamlar hazır değil. Gerekli izinler ana sayfada kontrol edilir; istersen burada yeniden deneyebilirsin."
-              : "Yaşı belirsiz veya reşit olmayan kullanıcılara reklam gösterilmez.")}
+        {ads.busy
+          ? "Google reklam izinleri kontrol ediliyor…"
+          : ads.error ||
+            (ads.ready
+              ? "Gizlilik kontrolleri tamamlandı. Uygun reklam alanlarında yüklenebilen reklamlar gösterilebilir."
+              : ads.preferences.adultConfirmed
+                ? "Reklamlar hazır değil. Gerekli izinler ana sayfada kontrol edilir; istersen burada yeniden deneyebilirsin."
+                : "Yaşı belirsiz veya reşit olmayan kullanıcılara reklam gösterilmez.")}
       </Txt>
     </Card>
   );
