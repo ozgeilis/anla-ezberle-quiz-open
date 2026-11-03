@@ -50,10 +50,10 @@ export default function PrivacyScreen() {
           Apple ile Giriş kullanılabildiğinde Apple hesap kimliği, izin verdiğin
           e-posta ve ilk girişte paylaşılabilen ad bilgileri Supabase üzerinden
           kimlik doğrulama amacıyla işlenir. E-postamı Gizle seçilirse Apple’ın
-          oluşturduğu özel iletim adresi kullanılabilir. Apple parolan uygulamaya
-          aktarılmaz. Mevcut beta kapsamında Apple ve Google ile yeni hesap kaydı
-          sunucudaki test izinleriyle sınırlıdır; TestFlight bağlantısına katılmak
-          bu izinleri açmaz. Hesapsız oyun kullanılabilir.
+          oluşturduğu özel iletim adresi kullanılabilir. Apple parolan
+          uygulamaya aktarılmaz. Mevcut beta kapsamında Apple ve Google ile yeni
+          hesap kaydı sunucudaki test izinleriyle sınırlıdır; TestFlight
+          bağlantısına katılmak bu izinleri açmaz. Hesapsız oyun kullanılabilir.
         </Txt>
         <Txt weight="heavy">Kimler görebilir?</Txt>
         <Txt>
@@ -68,14 +68,15 @@ export default function PrivacyScreen() {
         <Txt weight="heavy">Oyuncu güvenliği ve şikâyetler</Txt>
         <Txt>
           Etkin olduğunda engelleme ilişkileri, arkadaşlık isteği ve oyun daveti
-          göndermeyi sınırlamak için saklanır. Şikâyette şikâyetçi ve hedef hesap
-          kimliği, neden kodu, isteğe bağlı açıklama, hedef oyuncunun görünen adı
-          ve kullanıcı adı kopyası, zaman, inceleme durumu ve moderatör kararı
-          kaydedilir. Açıklamaya parola, doğrulama kodu veya gereksiz kişisel bilgi
-          ekleme. Şikâyet ve denetim kayıtlarına yalnız yetkili moderatör
-          erişebilir; şikâyetçi kimliği hedef oyuncuya gösterilmez. İtiraz ve
-          destek için kovynelstudio@gmail.com kullanılabilir. Engelleme ve şikâyet
-          etmek hesabı, XP’yi veya oyun geçmişini kendiliğinden silmez.
+          göndermeyi sınırlamak için saklanır. Şikâyette şikâyetçi ve hedef
+          hesap kimliği, neden kodu, isteğe bağlı açıklama, hedef oyuncunun
+          görünen adı ve kullanıcı adı kopyası, zaman, inceleme durumu ve
+          moderatör kararı kaydedilir. Açıklamaya parola, doğrulama kodu veya
+          gereksiz kişisel bilgi ekleme. Şikâyet ve denetim kayıtlarına yalnız
+          yetkili moderatör erişebilir; şikâyetçi kimliği hedef oyuncuya
+          gösterilmez. İtiraz ve destek için kovynelstudio@gmail.com
+          kullanılabilir. Engelleme ve şikâyet etmek hesabı, XP’yi veya oyun
+          geçmişini kendiliğinden silmez.
         </Txt>
         <Txt weight="heavy">Telefon bildirimleri</Txt>
         <Txt>
@@ -97,18 +98,28 @@ export default function PrivacyScreen() {
           bildirimi uzaktan geri çağrılamaz. Yalnız sağlayıcı alındısı gerçek
           cihaz teslimi garantisi değildir.
         </Txt>
-        <Txt weight="heavy">İsteğe bağlı reklam testi</Txt>
+        <Txt weight="heavy">İsteğe bağlı reklamlar ve reklam testi</Txt>
         <Txt>
-          Bu web sürümünde reklam gösterilmez. Aşağıdaki açıklamalar yalnız
-          reklam testi içeren Android test sürümleri içindir. Bu test kapsamında
-          Google Analytics veya Firebase Analytics etkinleştirilmez. Reklam
-          SDK’sının aşağıda açıklanan kendi teknik ölçümleri bundan ayrıdır.
+          Bu web sürümünde reklam gösterilmez. Android kapalı test paketleri
+          Google test reklamlarını kullanır. Bu kapsamda Google Analytics veya
+          Firebase Analytics etkinleştirilmez. Reklam SDK’sının aşağıda
+          açıklanan kendi teknik ölçümleri bundan ayrıdır.
         </Txt>
         <Txt>
-          Mevcut iOS TestFlight adayında reklam talebi ve uygulama takibi etkin
-          değildir; Google Analytics veya Firebase Analytics açılmamıştır.
-          Android reklam testine ait açıklamalar yalnız ilgili Android test
-          sürümleri için geçerlidir.
+          Reklam özelliği etkin iOS paketlerinde Google Mobile Ads ve User
+          Messaging Platform kullanılır. Geliştirme ve kabul paketleri Google
+          test reklamlarını; yayımlanan reklam destekli paket ise iOS’a ait
+          gerçek reklam birimlerini kullanır. Bu iki yapılandırma ayrıdır.
+          Google IP adresi ve bundan türetilen yaklaşık konumu, cihaz/uygulama
+          tanımlayıcılarını, reklam görüntüleme ve etkileşim bilgilerini, çökme
+          ve performans verilerini reklam sunumu, ölçüm, analiz ve kötüye
+          kullanımı önleme amaçlarıyla işleyebilir. Hesap e-postanı, quiz
+          cevaplarını, skorunu veya dinî ilgi profilini reklam isteklerine
+          eklemeyiz. iOS’ta Google izin kontrolü ve gerekli Apple takip izni
+          tamamlanmadan reklam isteği başlatılmaz. Apple takip iznini
+          reddettiğinde reklam isteği yapılmaz ve oyuna reklamsız devam
+          edebilirsin. Bu izin için oyun içi ödül verilmez, oyun özellikleri
+          kısıtlanmaz. Google Analytics ve Firebase Analytics etkinleştirilmez.
         </Txt>
         <Txt>
           Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
@@ -147,10 +158,10 @@ export default function PrivacyScreen() {
         </Txt>
         <Txt>
           Desteklenen Apple hesabında güncel Apple doğrulaması kullanılır;
-          Apple-only hesaptan uygulama parolası istenmez. Apple yetkisinin iptali
-          güvenli sunucu akışında tamamlanmadan hesap silindi olarak gösterilmez.
-          Ağ hatasında işlem durumu kontrol edilerek güvenli yeniden deneme
-          sunulur.
+          Apple-only hesaptan uygulama parolası istenmez. Apple yetkisinin
+          iptali güvenli sunucu akışında tamamlanmadan hesap silindi olarak
+          gösterilmez. Ağ hatasında işlem durumu kontrol edilerek güvenli
+          yeniden deneme sunulur.
         </Txt>
         <Txt>
           Başarılı silmede Auth hesabı ve oturum yenileme kayıtları, çevrimiçi
@@ -162,15 +173,16 @@ export default function PrivacyScreen() {
         </Txt>
         <Txt weight="heavy">Saklama ve teknik sınırlar</Txt>
         <Txt>
-          Hesap silindiğinde bu hesaba doğrudan bağlı şikâyetlerdeki serbest metin
-          ve ad/kullanıcı adı kopyaları ile ilişkili moderasyon notları temizlenir.
-          Aynı notun sosyal kısıtlama gerekçesi kopyası da temizlenir; diğer
-          oyuncuların kısıtlaması bu işlemle kaldırılmaz. Silinen hesabın kimlik
-          bağlantıları kaldırılır. Kararların neden kodu, durumu ve zamanları gibi
-          asgari denetim kayıtları yetkili inceleme için kalabilir. Kayıt başka bir
-          oyuncuyla hâlâ ilişkiliyse tümüyle anonim olduğu söylenmez. Hesap
-          kullanımdayken bu kayıtlar için otomatik süreli silme henüz
-          uygulanmıyor; saklama ve silme talepleri destek adresinden izlenir.
+          Hesap silindiğinde bu hesaba doğrudan bağlı şikâyetlerdeki serbest
+          metin ve ad/kullanıcı adı kopyaları ile ilişkili moderasyon notları
+          temizlenir. Aynı notun sosyal kısıtlama gerekçesi kopyası da
+          temizlenir; diğer oyuncuların kısıtlaması bu işlemle kaldırılmaz.
+          Silinen hesabın kimlik bağlantıları kaldırılır. Kararların neden kodu,
+          durumu ve zamanları gibi asgari denetim kayıtları yetkili inceleme
+          için kalabilir. Kayıt başka bir oyuncuyla hâlâ ilişkiliyse tümüyle
+          anonim olduğu söylenmez. Hesap kullanımdayken bu kayıtlar için
+          otomatik süreli silme henüz uygulanmıyor; saklama ve silme talepleri
+          destek adresinden izlenir.
         </Txt>
         <Txt>
           Hesap verileri hesabın kullanım süresince tutulur ve doğrulanmış silme
