@@ -227,6 +227,28 @@ test("final advertising artifact requires GMA, UMP, ATT and the exact iOS App ID
     interstitialId: revenue.ADMOB_IOS_INTERSTITIAL_ID,
   };
   validateIosAds(configured, liveExpected);
+  const testConfig = resolveAdBuild({ ...revenue, IOS_ADS_MODE: "test" });
+  const nativeQa = {
+    ...facts,
+    configuration: { extra: { ads: { ...testConfig, iosUnits: {} } } },
+  };
+  validateIosAds(nativeQa, { ...expected, mode: "test" });
+  assert.throws(() =>
+    validateIosAds(
+      {
+        ...nativeQa,
+        configuration: {
+          extra: {
+            ads: {
+              ...testConfig,
+              iosUnits: { banner: revenue.ADMOB_IOS_BANNER_ID },
+            },
+          },
+        },
+      },
+      { ...expected, mode: "test" },
+    ),
+  );
   assert.throws(() =>
     validateIosAds(configured, { ...liveExpected, mode: "test" }),
   );

@@ -2,6 +2,13 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { join, relative } from "node:path";
 
+// Expo native constants serialize absent/null configuration as an empty map.
+const emptyNativeValue = (value) =>
+  value == null ||
+  (typeof value === "object" &&
+    !Array.isArray(value) &&
+    Object.keys(value).length === 0);
+
 export function validateIosAds(
   { plist, paths, binary, bundle, configuration },
   expected,
@@ -57,9 +64,8 @@ export function validateIosAds(
         false,
         "QA override in revenue candidate",
       );
-      assert.equal(
-        ads?.consentDebugGeography,
-        null,
+      assert(
+        emptyNativeValue(ads?.consentDebugGeography),
         "Geography override in revenue candidate",
       );
       for (const [key, expectedId] of [
@@ -74,7 +80,10 @@ export function validateIosAds(
         );
       }
     } else
-      assert.equal(ads?.iosUnits, null, "QA must not carry publisher ad units");
+      assert(
+        emptyNativeValue(ads?.iosUnits),
+        "QA must not carry publisher ad units",
+      );
   }
   return {
     advertisingSdkPresent: true,

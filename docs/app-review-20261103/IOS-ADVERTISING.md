@@ -84,8 +84,18 @@ Android autolinking dışlaması gerçek CLI çıktısında doğrulandı.
 - iOS native prebuild ve Pods tamamlandı: GMA/UMP/ATT gerçekten bağlı.
 - Ayrı iOS UMP taslağı sahibi tarafından kaydedildi; Android mesajı yayınlı
   kalıyor. iOS mesajı henüz yayınlanmış sayılmaz.
-- Yeni reklama sahip cihaz paketi, gerçek iPhone reklam/ret/offline/oturum
-  kabulü, final IPA ve Apple binary validation **henüz tamamlanmadı**.
+- Yeni yerel cihaz paketi imza, Team/provisioning, gömülü Supabase config ve
+  GMA/UMP/ATT/50 SKAdNetwork kaydı kontrolünü geçti. Kalıcı Bundle ID ile
+  mevcut uygulama silinmeden fiziksel iPhone’a 0.1.0 (5) kuruldu.
+  [Sanitize artifact kanıtı](ios-advertising-artifact.json). Kaynak `0343888`,
+  JS SHA `44261763…68c995a`. Gerçek reklam/ret/offline/oturum kabulü,
+  final IPA ve Apple binary validation **henüz tamamlanmadı**.
+- QA EEA coğrafya ayarı yalnız Google tarafından tanınan test cihazlarında
+  etkindir; fiziksel cihaz kaydı doğrulanmadan zorlanmış EEA kabulü sayılmaz.
+  Store/live config bu override’ı taşıyamaz.
+- Expo native config null değerini boş nesneye normalize ettiğinden artifact
+  guard yalnız null/boş nesneyi test birimi yokluğu olarak kabul eder; gerçek
+  birim içeren nesneyi reddeder. Bu varyant için ek regresyon geçti.
 - Apple provider ve güvenli silme bayrakları kapalıdır. Dar canlı kabul ve
   nihai Apple kayıt politikası için [ayrı plan](APPLE-ACCEPTANCE-PLAN.md)
   onayı gerekir; bu reklam geliştirmesi onları kendiliğinden açmaz.
