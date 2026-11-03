@@ -1,3 +1,16 @@
+> **Son reklam kabulü — QA7:** Sahibinin ayrı kaynak/paket onayıyla yerel
+> build 7 iPhone'a uygulama silinmeden kuruldu. Sahibi tam ekran test reklamının
+> açılıp kapandığını ve ana sayfaya dönüldüğünü doğruladı. Gerçek Gizlilik
+> ekranında izin kontrolü tamamlandı, SDK'nın gerekli-form bayrağı false.
+> **UMP geri alma/ret kabulü hâlâ açık.** Eski QA6 başarısız reklam denemesi
+> geriye dönük başarılı sayılmaz. Yeni IPA/upload/main merge yoktur.
+> [Güncel kanıt ve sınırlamalar](QA6-PRIVACY-RECONCILIATION.md),
+> [onaylı QA7 planı ve kurulum](CONSENT-QA7-LOCAL-ACCEPTANCE-PLAN.md).
+
+> **Web politikası:** Yalnız PR #31 ayrı onayla main'e `6af2d8a` olarak
+> alındı ve Vercel'de yayımlandı; açık /privacy ve /app-ads.txt doğrulandı.
+> Aşağıdaki ilk main snapshot'ı tarihseldir; PR #30 kodu main'de değildir.
+
 > **Güncel ürün kararı:** İlk iOS sürümü reklamlı hazırlanıyor. Reklamsız
 > `d11758d` denemesi main/IPA/upload olmadı; yalnız ilgili SDK dışlamaları
 > hedefli kaldırıldı. Supabase paket düzeltmesi korunur. Yeni reklamlı native
@@ -5,8 +18,8 @@
 
 > **Son reklam politikası:** Ayrı reklam açma anahtarı artık uygunluk şartı
 > değildir; 18+ güvenliği ve UMP korunur. ATT reddinde Google'ın desteklediği
-> IDFA'sız/NPA yolu hazırlanmıştır. Bu kaynak değişikliği fiziksel build 5'e
-> kurulmamış, yeni IPA üretilmemiştir. [Kapsam ve kabul sınırı](AD-POLICY-UPDATE.md).
+> IDFA'sız/NPA yolu hazırlanmıştır. Fiziksel QA6/QA7 kabul kapsamı yukarıdaki
+> kanıtta ayrıdır; yeni IPA üretilmemiştir. [Politika kapsamı](AD-POLICY-UPDATE.md).
 
 > **Kritik güncel bulgu:** Build 4 imzası/geçmiş Apple validation geçerli olsa da
 > çevrimiçi istemci yapılandırması final JS paketinde yok. Tam aynı JS ile gerçek
