@@ -1,0 +1,312 @@
+{
+  "kind": "script-aggregated-native-manifests-not-Xcode-report",
+  "source": "9d583298b4a97e09fe4380c7fd3c38f78bafb5b5",
+  "localBuild": "6-pre-sign",
+  "sdkDataOnlyNotBackendInventory": true,
+  "runtimeNetworkCapturePerformed": false,
+  "manifests": [
+    {
+      "path": "ExpoApplication_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "b48763ffd29cbad815125ae56e1073273e418ae086103fc7dff7efbec1675aaa",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoConstants_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "2b2d8edb71d51c5b1f1ace4cdb28a94baf22fdde9bbf2e2bfc17d187ff7b5f47",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoDevice_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "d898a8356dc87b7cd2b17921d68a4636d424067b3a75c83b7935fd797719c9cb",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoNotifications_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "2b2d8edb71d51c5b1f1ace4cdb28a94baf22fdde9bbf2e2bfc17d187ff7b5f47",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoSystemUI_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "2b2d8edb71d51c5b1f1ace4cdb28a94baf22fdde9bbf2e2bfc17d187ff7b5f47",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ExpoFileSystem.framework/expo-file-system_ExpoFileSystem.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "33b0e074f273f588a64ba5632909c6a8cf1f16db8e4cd84c6978bd222dfd65bd",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/React.framework/PrivacyInfo.xcprivacy",
+      "sha256": "677d9a3f1f255ad8e2c918982b385d801fc0fd0d37c2026ab3259c910fde28c4",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_SocketRocket.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "97e32f473284df703a5fc921076956ef84a765ca9e7ba2e7ba61350652d12727",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_boost.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "d3559c988dff940d4f758f37a0ba1863208304e33ab0b97c0e3dd5d3762f5f1d",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_folly.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "0587d155c56a6f4f0647ebc6b6a0bd026615cd610ee8f209a9786b79a96ad335",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_glog.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "0587d155c56a6f4f0647ebc6b6a0bd026615cd610ee8f209a9786b79a96ad335",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "69fb112582fc23fc06c635c961d262a3f7b4b5654d284787491de3000dadf9d2",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": [
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeOtherDiagnosticData",
+          "NSPrivacyCollectedDataTypeLinked": false,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+            "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+            "NSPrivacyCollectedDataTypePurposeAnalytics"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCoarseLocation",
+          "NSPrivacyCollectedDataTypeLinked": true,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+            "NSPrivacyCollectedDataTypePurposeAnalytics",
+            "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePerformanceData",
+          "NSPrivacyCollectedDataTypeLinked": false,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+            "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+            "NSPrivacyCollectedDataTypePurposeAnalytics"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCrashData",
+          "NSPrivacyCollectedDataTypeLinked": false,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeAnalytics"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeAdvertisingData",
+          "NSPrivacyCollectedDataTypeLinked": true,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+            "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+            "NSPrivacyCollectedDataTypePurposeAnalytics"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeProductInteraction",
+          "NSPrivacyCollectedDataTypeLinked": true,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeAnalytics",
+            "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+            "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeDeviceID",
+          "NSPrivacyCollectedDataTypeLinked": true,
+          "NSPrivacyCollectedDataTypeTracking": true,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+            "NSPrivacyCollectedDataTypePurposeAnalytics",
+            "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "PrivacyInfo.xcprivacy",
+      "sha256": "63e967530222cc7c65ca318881887882aafc7fbe3a04f94f2c76ae5967327f19",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "RNCAsyncStorage_resources.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "0b1287d0e686cf867d38d97cca5dc694b3029f27c4fe4270dd4bd2fd5458a2f0",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "React-cxxreact_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "0587d155c56a6f4f0647ebc6b6a0bd026615cd610ee8f209a9786b79a96ad335",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "React-timing_privacy.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "23ddfa062a6d4392e65882d151fdececbd29904a227ad8918c0144ebc777ee61",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy",
+      "sha256": "45b7adb99fcd2d962a1c800fbfcc1325b57a7fa4165f416182323bb5ffe9c900",
+      "tracking": false,
+      "trackingDomains": [],
+      "collectedTypes": [
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCoarseLocation",
+          "NSPrivacyCollectedDataTypeLinked": false,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePerformanceData",
+          "NSPrivacyCollectedDataTypeLinked": false,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+          ]
+        },
+        {
+          "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeProductInteraction",
+          "NSPrivacyCollectedDataTypeLinked": false,
+          "NSPrivacyCollectedDataTypeTracking": false,
+          "NSPrivacyCollectedDataTypePurposes": [
+            "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+          ]
+        }
+      ]
+    }
+  ],
+  "union": {
+    "NSPrivacyCollectedDataTypeOtherDiagnosticData": {
+      "linked": false,
+      "tracking": false,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics",
+        "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+        "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    },
+    "NSPrivacyCollectedDataTypeCoarseLocation": {
+      "linked": true,
+      "tracking": false,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics",
+        "NSPrivacyCollectedDataTypePurposeAppFunctionality",
+        "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+        "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy",
+        "UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    },
+    "NSPrivacyCollectedDataTypePerformanceData": {
+      "linked": false,
+      "tracking": false,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics",
+        "NSPrivacyCollectedDataTypePurposeAppFunctionality",
+        "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+        "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy",
+        "UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    },
+    "NSPrivacyCollectedDataTypeCrashData": {
+      "linked": false,
+      "tracking": false,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    },
+    "NSPrivacyCollectedDataTypeAdvertisingData": {
+      "linked": true,
+      "tracking": false,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics",
+        "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+        "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    },
+    "NSPrivacyCollectedDataTypeProductInteraction": {
+      "linked": true,
+      "tracking": false,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics",
+        "NSPrivacyCollectedDataTypePurposeAppFunctionality",
+        "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+        "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy",
+        "UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    },
+    "NSPrivacyCollectedDataTypeDeviceID": {
+      "linked": true,
+      "tracking": true,
+      "purposes": [
+        "NSPrivacyCollectedDataTypePurposeAnalytics",
+        "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+        "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+      ],
+      "sources": [
+        "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy"
+      ]
+    }
+  }
+}
