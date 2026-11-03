@@ -187,6 +187,40 @@ telefonun kesin kök nedeninin bulunduğu anlamına gelmez.
 
 Resmî gereklilik: https://developers.google.com/admob/ios/privacy#privacy_options .
 
+## QA7 gerçek iPhone kabulü — 3 Kasım 2026
+
+Sahibinin dar kaynak/paket onayından sonra QA7 aynı Development kimliği ile
+imzalanıp uygulama kaldırılmadan kuruldu. Cihaz sorgusu build 7'yi doğruladı.
+Kaynak `7182bb6`, JS `6a482eda16ae8fdf22bab7dc3d242e8948fa2206c50b2786f10c09ba030ea728`.
+
+Gerçek Device Hub görüntüsünde yeni Gizlilik ekranı açıldı: yaş uygunluğu
+açık, yalnız “Reklam izinlerini hazırla” düğmesi, formun Google tarafından
+gerektiğinde sunulacağı açıklaması ve **“Gizlilik kontrolleri tamamlandı”**
+durumu görüldü. Rozet vitrini 4/82 olarak göründü; bütün profil alanlarının
+korunduğu bu tek ekranla yeniden onaylanmış sayılmaz. Sahibi hazırlama
+düğmesine bastığını ve ekranın aynı kaldığını bildirdi. SDK gerekli-form
+bayrağı false olduğu için yeniden açma düğmesi gösterilmiyor. Bu görüntü
+SDK'nın REQUIRED dönmediğini kanıtlar; fiziksel denemenin ham SDK yanıtı
+ayrıca ölçülmedi, kesin coğrafya/servis kök nedeni iddia edilmez.
+
+Uygulama açık bırakılıp mevcut sıklık koşulları beklendikten sonra sahibi
+bir turu bitirdi ve **“reklam tam ekran çıktı kapatınca anasayfaya döndü”**
+sonucunu bildirdi. **QA7 fiziksel iPhone'da tam ekran test reklamı ve
+kapatıldıktan sonra doğru gezinme kabulü geçti (sahibinin gözlemi).**
+Reklamın görüntüsü kaydedilmedi; sonuç kullanıcı gözlemi olarak tutulur.
+Önceki QA6 reklam çıkmaması kaydı geriye dönük başarılıya çevrilmez; modal
+sıralama riski tek kesin kök neden olarak gösterilmez.
+
+UMP geri alma/ret kabulü hâlâ açık. Fiziksel QA7'de yeniden açılabilir form
+sunulmadı; mevcut Türkiye koşulu ile açıklanabileceği yalnız olasılıktır.
+Mevcut simülatör native paketinde GMA/UMP/ATT olmadığı görüldüğünden onunla
+reklam testi geçti denmedi. Eski paket ayrı korunarak mevcut Pod/DerivedData
+ile gerekli simülatör derlemesi başlatıldı; tamamlanma ve UMP testi ayrıca
+bekler. Bu işlem yeni IPA veya mağaza yüklemesi değildir.
+
+Yeni fiziksel gizlilik ekranı Git dışı
+`app-review-20261103/qa7-phone-privacy-ready.png` dosyasında kayıtlıdır.
+
 Kaynaklar:
 
 - https://developer.apple.com/app-store/app-privacy-details/

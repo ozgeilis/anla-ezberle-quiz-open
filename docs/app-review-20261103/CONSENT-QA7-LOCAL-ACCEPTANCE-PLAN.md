@@ -81,3 +81,16 @@ mesajı istendi. Yeni IPA, upload veya dağıtım yapılmadı.
 
 Gizli yerel imzalama/cihaz logları Git'e konmadı. Kişisel cihaz envanteri,
 provisioning, kimlik bilgileri ve anahtarlar rapora eklenmedi.
+
+## İlk gerçek çalışma sonucu
+
+Yeni fiziksel Gizlilik ekranı görüldü; “Gizlilik kontrolleri tamamlandı”
+yazısı ve SDK gerektirmediği için yeniden açma düğmesinin bulunmaması
+doğrulandı. Sahibi hazırlama düğmesine bastıktan sonra ekranın aynı kaldığını
+bildirdi. Bu sonuç UMP geri alma/ret testi olarak kabul edilmedi.
+
+Sıklık koşulları uygulama açıkken beklendikten sonra sahibi tur sonunda tam
+ekran test reklamının açıldığını ve kapatınca ana sayfaya döndüğünü bildirdi.
+**Gerçek iPhone test reklamı sunumu/kapatma/gezinme geçti.** Reklam sırasında
+fotoğraf alınmadı; kanıt sahibinin gözlemidir. Ayrı skor/XP karşılaştırması,
+izin geri alma, yeni QA7 ATT-ret/offline kabulü bu sonucun kapsamı değildir.
