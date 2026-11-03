@@ -7,6 +7,7 @@ import { resolve, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import iosApproval from "../config/ios-approval.js";
 import { verifyNativeClientConfig } from "./verify-native-client-config.mjs";
+import { verifyNoIosAds } from "./verify-ios-noads.mjs";
 
 export function validateIosDistribution(facts, expected, now = Date.now()) {
   const { plist, entitlements: e, profile: p } = facts;
@@ -73,11 +74,9 @@ export function validateIosDistribution(facts, expected, now = Date.now()) {
     "Unexpected microphone permission",
   );
   assert(!(plist.UIBackgroundModes ?? []).includes("audio"));
-  assert.equal(
-    plist.GADApplicationIdentifier,
-    "ca-app-pub-3940256099942544~1458002511",
-  );
-  assert.equal(plist.GADDelayAppMeasurementInit, true);
+  assert.equal(plist.GADApplicationIdentifier, undefined);
+  assert.equal(plist.GADDelayAppMeasurementInit, undefined);
+  assert.equal(plist.SKAdNetworkItems, undefined);
   return {
     bundleId: expected.bundleId,
     teamId: expected.teamId,
@@ -196,6 +195,7 @@ if (
       url: process.env.EXPO_PUBLIC_SUPABASE_URL,
       key: process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
     }),
+    verifyNoIosAds(app, plistJson(join(app, "Info.plist"))),
   );
   if (output) writeFileSync(output, JSON.stringify(evidence, null, 2) + "\n");
   console.log(JSON.stringify(evidence, null, 2));

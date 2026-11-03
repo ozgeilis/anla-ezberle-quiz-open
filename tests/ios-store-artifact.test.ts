@@ -29,8 +29,6 @@ function fixture() {
       UIDeviceFamily: [1, 2],
       CFBundleURLTypes: [{ CFBundleURLSchemes: ["anla-ezberle-quiz"] }],
       ITSAppUsesNonExemptEncryption: false,
-      GADApplicationIdentifier: "ca-app-pub-3940256099942544~1458002511",
-      GADDelayAppMeasurementInit: true,
     },
     entitlements,
     profile: {

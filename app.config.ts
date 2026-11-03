@@ -5,6 +5,11 @@ import { resolveIosBuild } from "./config/ios.js";
 export default function ({ config }: ConfigContext): ExpoConfig {
   const ads = resolveAdBuild(process.env);
   const ios = resolveIosBuild(process.env, config.ios?.bundleIdentifier);
+  const iosBuild =
+    process.env.EAS_BUILD_PLATFORM === "ios" ||
+    !!process.env.IOS_BUILD_TARGET ||
+    process.env.EAS_BUILD_PROFILE?.startsWith("ios-") ||
+    process.env.EAS_BUILD_PROFILE === "development-simulator";
   const file = process.env.GOOGLE_SERVICES_JSON;
   if (file) {
     if (!existsSync(file))
@@ -58,17 +63,23 @@ export default function ({ config }: ConfigContext): ExpoConfig {
       ),
       ...(ios.appleAuthentication ? ["expo-apple-authentication"] : []),
       "./plugins/with-admob-workmanager.js",
-      [
-        "react-native-google-mobile-ads",
-        {
-          androidAppId: ads.androidAppId,
-          iosAppId: ads.iosAppId,
-          androidSdk: "classic",
-          delayAppMeasurementInit: true,
-          optimizeInitialization: true,
-          optimizeAdLoading: true,
-        },
-      ],
+      // The iOS first release neither links the SDK nor applies its plist mods.
+      // EAS supplies its platform; local iOS prebuilds use IOS_BUILD_TARGET.
+      ...(iosBuild
+        ? []
+        : [
+            [
+              "react-native-google-mobile-ads",
+              {
+                androidAppId: ads.androidAppId,
+                iosAppId: ads.iosAppId,
+                androidSdk: "classic",
+                delayAppMeasurementInit: true,
+                optimizeInitialization: true,
+                optimizeAdLoading: true,
+              },
+            ] as [string, Record<string, unknown>],
+          ]),
     ],
     android: {
       ...config.android,
