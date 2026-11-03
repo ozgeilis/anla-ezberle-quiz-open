@@ -52,6 +52,16 @@ export function validateIosAds(
     assert.equal(ads?.iosAppId, expected.appId);
     assert.equal(ads?.realAdsEnabled, expected.mode === "live");
     if (expected.mode === "live") {
+      assert.equal(
+        ads?.iosQaConsent,
+        false,
+        "QA override in revenue candidate",
+      );
+      assert.equal(
+        ads?.consentDebugGeography,
+        null,
+        "Geography override in revenue candidate",
+      );
       for (const [key, expectedId] of [
         ["banner", expected.bannerId],
         ["interstitial", expected.interstitialId],

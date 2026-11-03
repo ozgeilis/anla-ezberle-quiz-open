@@ -30,7 +30,13 @@ export function resolveRuntimeAds(
         ? build?.realAdsEnabled === true && !!liveUnitsValid
         : build?.mode === "test" && build?.realAdsEnabled === false),
     mode,
-    consentDebugEea: development && build?.consentDebugGeography === "EEA",
+    consentDebugEea:
+      mode === "test" &&
+      build?.consentDebugGeography === "EEA" &&
+      (development ||
+        (ios &&
+          build?.iosQaConsent === true &&
+          build?.realAdsEnabled === false)),
     requiresTrackingAuthorization: ios,
     bannerUnitId: mode === "live" ? units?.banner : undefined,
     interstitialUnitId: mode === "live" ? units?.interstitial : undefined,

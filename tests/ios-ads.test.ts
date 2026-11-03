@@ -41,6 +41,21 @@ test("native iPhone QA always uses test units even with publisher units in its e
   assert.equal(runtime.bannerUnitId, undefined);
   assert.equal(runtime.interstitialUnitId, undefined);
   assert.equal(runtime.requiresTrackingAuthorization, true);
+  const qa = resolveAdBuild({
+    ...revenue,
+    EAS_BUILD_PROFILE: "ios-development",
+    IOS_ADS_MODE: "test",
+    ADS_TEST_UMP_EEA: "1",
+  });
+  assert.equal(resolveRuntimeAds("ios", qa, false).consentDebugEea, true);
+  for (const mode of ["test", "live"]) {
+    const store = resolveAdBuild({
+      ...revenue,
+      IOS_ADS_MODE: mode,
+      ADS_TEST_UMP_EEA: "1",
+    });
+    assert.equal(resolveRuntimeAds("ios", store, false).consentDebugEea, false);
+  }
 });
 test("iOS flags cannot enable Android revenue or web SDK; old test opt-in is not reused for revenue", () => {
   assert.equal(
@@ -48,6 +63,7 @@ test("iOS flags cannot enable Android revenue or web SDK; old test opt-in is not
       ...revenue,
       EAS_BUILD_PLATFORM: "android",
       EAS_BUILD_PROFILE: "ads-closed-test",
+      IOS_BUILD_TARGET: "store",
       ADS_MODE: "test",
     }).realAdsEnabled,
     false,
@@ -185,6 +201,7 @@ test("final advertising artifact requires GMA, UMP, ATT and the exact iOS App ID
       "GADMobileAds UMPConsentInformation ExpoTrackingTransparency",
     ),
     bundle: Buffer.from("RNGoogleMobileAds"),
+    configuration: { extra: { ads: resolveAdBuild(revenue) } },
   };
   const expected = { appId: revenue.ADMOB_IOS_APP_ID };
   const result = validateIosAds(facts, expected);

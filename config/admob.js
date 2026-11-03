@@ -8,8 +8,8 @@ function resolveAdBuild(env) {
   const profile = env.EAS_BUILD_PROFILE;
   const ios =
     env.EAS_BUILD_PLATFORM === "ios" ||
-    !!env.IOS_BUILD_TARGET ||
-    profile?.startsWith("ios-");
+    (env.EAS_BUILD_PLATFORM !== "android" &&
+      (!!env.IOS_BUILD_TARGET || profile?.startsWith("ios-")));
   if (ios) {
     const mode = ["test", "live"].includes(env.IOS_ADS_MODE)
       ? env.IOS_ADS_MODE
@@ -48,6 +48,10 @@ function resolveAdBuild(env) {
       androidAppId: googleSampleApps.android,
       iosAppId: appId,
       iosUnits: units,
+      iosQaConsent:
+        mode === "test" &&
+        profile === "ios-development" &&
+        env.ADS_TEST_UMP_EEA === "1",
       consentDebugGeography:
         mode === "test" &&
         profile !== "ios-testflight" &&

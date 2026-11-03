@@ -110,11 +110,16 @@ export default function PrivacyScreen() {
           Messaging Platform kullanılır. Geliştirme ve kabul paketleri Google
           test reklamlarını; yayımlanan reklam destekli paket ise iOS’a ait
           gerçek reklam birimlerini kullanır. Bu iki yapılandırma ayrıdır.
-          iOS’ta Google izin kontrolü ve gerekli Apple takip izni tamamlanmadan
-          reklam isteği başlatılmaz. Apple takip iznini reddettiğinde reklam
-          isteği yapılmaz ve oyuna reklamsız devam edebilirsin. Bu izin için
-          oyun içi ödül verilmez, oyun özellikleri kısıtlanmaz. Google Analytics
-          ve Firebase Analytics etkinleştirilmez.
+          Google IP adresi ve bundan türetilen yaklaşık konumu, cihaz/uygulama
+          tanımlayıcılarını, reklam görüntüleme ve etkileşim bilgilerini, çökme
+          ve performans verilerini reklam sunumu, ölçüm, analiz ve kötüye
+          kullanımı önleme amaçlarıyla işleyebilir. Hesap e-postanı, quiz
+          cevaplarını, skorunu veya dinî ilgi profilini reklam isteklerine
+          eklemeyiz. iOS’ta Google izin kontrolü ve gerekli Apple takip izni
+          tamamlanmadan reklam isteği başlatılmaz. Apple takip iznini
+          reddettiğinde reklam isteği yapılmaz ve oyuna reklamsız devam
+          edebilirsin. Bu izin için oyun içi ödül verilmez, oyun özellikleri
+          kısıtlanmaz. Google Analytics ve Firebase Analytics etkinleştirilmez.
         </Txt>
         <Txt>
           Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
