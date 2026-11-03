@@ -94,3 +94,10 @@ ekran test reklamının açıldığını ve kapatınca ana sayfaya döndüğün�
 **Gerçek iPhone test reklamı sunumu/kapatma/gezinme geçti.** Reklam sırasında
 fotoğraf alınmadı; kanıt sahibinin gözlemidir. Ayrı skor/XP karşılaştırması,
 izin geri alma, yeni QA7 ATT-ret/offline kabulü bu sonucun kapsamı değildir.
+
+Mevcut iPhone 16 simülatöründe ayrı native GMA/UMP/ATT Release kopyası daha
+sonra başarıyla derlendi (yalnız arm64, yeni runtime/IPA yok). Aynı QA7 JS ile
+gerçek Google Avrupa formu açıldı, kabul sonrası ayrı ATT reddedildi; Google
+gizlilik düğmesi formu yeniden açtı. “İzin vermeyin” ile uygulama reklamları
+kapalı gösterdi ve yerel sorular çalıştı. Bu, **simülatör** kabulüdür; fiziksel
+GDPR ret testiyle karıştırılmaz. [Tam yöntem, ekran yolları ve sınırlar](QA6-PRIVACY-RECONCILIATION.md).

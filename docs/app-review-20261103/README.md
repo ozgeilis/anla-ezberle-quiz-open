@@ -2,7 +2,7 @@
 > build 7 iPhone'a uygulama silinmeden kuruldu. Sahibi tam ekran test reklamının
 > açılıp kapandığını ve ana sayfaya dönüldüğünü doğruladı. Gerçek Gizlilik
 > ekranında izin kontrolü tamamlandı, SDK'nın gerekli-form bayrağı false.
-> **UMP geri alma/ret kabulü hâlâ açık.** Eski QA6 başarısız reklam denemesi
+> **UMP geri alma/ret simülatörde geçti; fiziksel cihaz Avrupa ret yolu açık.** Eski QA6 başarısız reklam denemesi
 > geriye dönük başarılı sayılmaz. Yeni IPA/upload/main merge yoktur.
 > [Güncel kanıt ve sınırlamalar](QA6-PRIVACY-RECONCILIATION.md),
 > [onaylı QA7 planı ve kurulum](CONSENT-QA7-LOCAL-ACCEPTANCE-PLAN.md).

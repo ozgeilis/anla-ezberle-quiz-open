@@ -122,6 +122,12 @@ izin formunun göründüğünü ve izin verdiğini de açıkça doğruladı: fiz
 cihaz UMP form/kabul gösterimi geçti. Bu gözlem, debug EEA coğrafyasının
 teknik olarak zorlandığına dair kanıt değildir.
 
+Google'ın resmî IDFA belgesine göre UMP, GDPR formundan ayrı bir IDFA/ATT
+ön bilgilendirme mesajı da gösterebilir. Önceki fiziksel form görüntüsü
+kaydedilmediği için sahibinin “Google formu göründü; izin verdim” gözlemi
+**GDPR rızası/kabulü veya geri alma testi** diye yeniden etiketlenmez.
+https://developers.google.com/admob/ios/privacy/idfa .
+
 İlk reklam denemesinde ATT'ye izin verdiğini belirtti; bu deneme ret kabulü
 diye sayılmadı. Yalnız Anla & Ezberle'nin takip anahtarını sistem ayarından
 kapatıp uygulamayı tamamen kapatıp yeniden açtıktan sonra test banner'ının
@@ -220,6 +226,63 @@ bekler. Bu işlem yeni IPA veya mağaza yüklemesi değildir.
 
 Yeni fiziksel gizlilik ekranı Git dışı
 `app-review-20261103/qa7-phone-privacy-ready.png` dosyasında kayıtlıdır.
+
+## QA7 simülatör — gerçek UMP servis/form kabulü
+
+Mevcut iPhone 16 / iOS 27.0 simülatörü kullanıldı. Yeni runtime indirilmedi.
+Eski GMA'sız simülatör .app kopyası ayrı saklandı. İlk universal derleme Intel
+ve arm64 hazırladığı için yalnız bu işlem durduruldu (exit 75); önbellek
+silinmeden `ONLY_ACTIVE_ARCH=YES ARCHS=arm64` ile devam edildi ve Release
+derleme **exit 0 / BUILD SUCCEEDED** verdi. Bu dağıtım arşivi veya IPA değildir.
+
+Yeni native simülatör kopyasına **aynı QA7 JS SHA** ve varlıklar yerleştirildi.
+`verify-ios-simulator.mjs` kayıtlı Bundle ID, iPhone/iPad ailesi, GMA/UMP/ATT,
+geciktirilmiş measurement, test modu ve gömülü public client yapılandırmasını
+doğruladı. `simctl install` uygulamayı kaldırmadan geçti. Bu kontroller gerçek
+form etkileşiminin yerine kullanılmadı; aşağıdaki arayüz denemeleri ayrıca yapıldı.
+
+Yalnız test konfigürasyonunda debug EEA kullanıldı. Google'ın belgesine göre
+simülatörler test cihazıdır; fiziksel iPhone'a test-ID eklenmiş veya fiziksel
+coğrafya zorlaması kanıtlanmış sayılmaz. `AdsConsent.reset`, veri silme veya
+güvenlik atlatması kullanılmadı.
+
+1. Uygulama açıldı; mevcut 10 XP / 2 rozet görünüyordu. Test simülatöründe
+   yaş uygunluğu açıldı ve izin hazırlama düğmesine basıldı.
+2. Gerçek Google UMP formu açıldı: “İzin ver”, **“İzin vermeyin”** ve
+   “Seçenekleri yönetin” görüldü. Bu form sentetik UI değildir.
+3. Test için kabul edildi. Ardından ayrı iOS ATT penceresinde **“Uygulama
+   Beni Takip Etmesin”** seçildi. Kontrol tamamlandı; Google gizlilik düğmesi
+   görünür hâle geldi. Bu aşamada banner gösterimi ayrıca ölçülmedi.
+4. **Google reklam gizlilik seçenekleri** düğmesi formu gerçekten yeniden
+   açtı. **“İzin vermeyin”** seçildi. İşlem tamamlanınca uygulama açıkça
+   **“Tercihlerine göre reklamlar kapalı; oyuna reklamsız devam edebilirsin”**
+   gösterdi. Reklam hazır durumu kapalı kaldı; ret yeniden kabul gibi sayılmadı.
+5. Ana sayfa/kategori/Kur'an ve Dualar/Kolay turu açıldı. Sayaç ilerledi,
+   süre aşımı/yanlış cevap değerlendirmesi ve sonraki soru çalıştı; bu kısa
+   denemede reklam çıkmadı. Yalnız bu başlatılan kaydedilmemiş test turundan
+   mevcut “Turdan ayrıl” eylemiyle çıkıldı; geçmiş sonuçlar silinmedi.
+
+**Simülatörde gerçek UMP formu, yeniden açma, rızayı geri alma/ret ve ret
+sonrası yerel oynanabilirlik geçti.** Bu sonuç fiziksel iPhone'da GDPR ret
+kabulü veya ağ paketinde tanımlayıcı bulunmadığı ölçümü değildir. Native SDK
+isteklerinin/measurement'ın ret sonrası tamamının bağımsız trafik yakalaması
+yapılmadı; uygulama gösterim kararı ve arayüz sınırları doğrulandı.
+
+Ekranlar Git dışında: `qa7-simulator-ump-form.png`,
+`qa7-simulator-ump-reopened.png`, `qa7-simulator-ump-withdrawn.png`,
+`qa7-simulator-game-after-ump-denial.png`. İmzalı fiziksel paket ve simülatör
+paketi ayrı tutuldu. QA6/Build 4/5, sertifikalar ve provisioning korunur.
+
+| Kabul | Güncel sonuç |
+| --- | --- |
+| QA6 fiziksel banner / ATT reddi / offline yerel oyun | Önceden sahibi gözlemledi; yeni QA7 tüm kapsamı tekrarlamadı |
+| QA7 fiziksel tam ekran test reklamı ve ana sayfaya dönüş | Geçti; sahibinin gözlemi |
+| QA7 fiziksel Google seçenekleri | Gerekli-form bayrağı false; geri alma testi bu cihazda geçmedi |
+| QA7 simülatör gerçek Avrupa UMP / yeniden açma / ret | Geçti; gerçek servis ve arayüz |
+| QA7 simülatör ret sonrası yerel oyun | Geçti; sınırlı soru/cevap/süre kontrolü |
+| Bağımsız SDK ağ/IDFA ölçümü | Yapılmadı |
+| Nihai App Privacy amaçları/Publish | Altı SDK amaç alanı hâlâ açık; Publish yapılmadı |
+| Yeni IPA/upload/App Review/main merge | Yapılmadı; yalnız ayrı onaylı PR31 politikası main'de |
 
 Kaynaklar:
 
