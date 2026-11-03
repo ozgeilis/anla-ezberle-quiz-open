@@ -4,6 +4,8 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { createHash } from "node:crypto";
+import { verifyNativeClientConfig } from "./verify-native-client-config.mjs";
+import { verifyIosAds } from "./verify-ios-ads.mjs";
 const [appArgument, output] = process.argv.slice(2);
 assert(
   appArgument,
@@ -20,8 +22,8 @@ const plist = JSON.parse(
 assert.equal(plist.DTPlatformName, "iphonesimulator");
 assert.equal(
   plist.CFBundleIdentifier,
-  "com.anlaezberle.quiz.prototype",
-  "Simulator must preserve installed prototype identity",
+  "com.kovynelstudio.anlaezberle",
+  "Acceptance must use the registered permanent Bundle ID",
 );
 assert.deepEqual([...plist.UIDeviceFamily].sort(), [1, 2]);
 assert(
@@ -30,19 +32,14 @@ assert(
   ),
 );
 assert(
-  !plist.NSUserTrackingUsageDescription,
-  "This preparation must not add ATT prompts",
+  typeof plist.NSUserTrackingUsageDescription === "string",
+  "Advertising acceptance requires the ATT explanation",
 );
 assert(
   !plist.NSMicrophoneUsageDescription,
   "Quiz must not ask to record audio",
 );
 assert(!(plist.UIBackgroundModes ?? []).includes("audio"));
-assert.equal(
-  plist.GADApplicationIdentifier,
-  "ca-app-pub-3940256099942544~1458002511",
-);
-assert.equal(plist.GADDelayAppMeasurementInit, true);
 assert(
   existsSync(join(app, "main.jsbundle")),
   "Release must contain an offline JS bundle",
@@ -67,9 +64,12 @@ function visit(directory) {
             reasons: v.NSPrivacyAccessedAPITypeReasons,
           }),
         ),
-        collectedTypes: (data.NSPrivacyCollectedDataTypes ?? []).map(
-          (v) => v.NSPrivacyCollectedDataType,
-        ),
+        collectedTypes: (data.NSPrivacyCollectedDataTypes ?? []).map((v) => ({
+          type: v.NSPrivacyCollectedDataType,
+          linked: v.NSPrivacyCollectedDataTypeLinked,
+          tracking: v.NSPrivacyCollectedDataTypeTracking,
+          purposes: v.NSPrivacyCollectedDataTypePurposes,
+        })),
       });
     }
   }
@@ -78,8 +78,9 @@ visit(app);
 assert(privacy.length > 0, "Expected bundled SDK privacy manifests");
 const pods = readFileSync("ios/Podfile.lock", "utf8");
 assert(pods.includes("ExpoAppleAuthentication (58.0.2)"));
-assert(pods.includes("Google-Mobile-Ads-SDK (13.10.0)"));
-assert(pods.includes("GoogleUserMessagingPlatform (3.1.0)"));
+assert(pods.includes("Google-Mobile-Ads-SDK"));
+assert(pods.includes("GoogleUserMessagingPlatform"));
+assert(pods.includes("RNGoogleMobileAds"));
 const evidence = {
   kind: "unsigned-ios-simulator-release",
   bundleIdentifier: plist.CFBundleIdentifier,
@@ -92,7 +93,12 @@ const evidence = {
     .update(readFileSync(join(app, "main.jsbundle")))
     .digest("hex"),
   appleNativePod: "58.0.2",
-  adsMode: "off (build environment; see native smoke evidence)",
+  adsMode: "test (native advertising acceptance; not revenue evidence)",
+  ...verifyIosAds(app, plist, { appId: process.env.ADMOB_IOS_APP_ID, mode: "test" }),
+  ...verifyNativeClientConfig(readFileSync(join(app, "main.jsbundle")), {
+    url: process.env.EXPO_PUBLIC_SUPABASE_URL,
+    key: process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+  }),
   privacyManifests: privacy,
   ipaProduced: false,
   signingValidated: false,

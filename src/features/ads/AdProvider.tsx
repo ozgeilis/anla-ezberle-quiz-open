@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { AppState } from "react-native";
+import { AppState, Platform } from "react-native";
 import { usePathname } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { useSound } from "../audio/SoundProvider";
@@ -20,6 +20,8 @@ import { loadAdsRuntime } from "./runtime";
 import type { AdsRuntime, FullscreenAd } from "./runtime.types";
 import { AdTransitionDialog } from "./AdTransitionDialog";
 import { useAdPreferences } from "./useAdPreferences";
+import { createModalDismissalGate } from "./modalDismissal";
+import { consentBlockMessage } from "./consentFlow";
 
 interface AdContextValue {
   enabled: boolean;
@@ -30,7 +32,7 @@ interface AdContextValue {
   privacyOptionsRequired: boolean;
   bannerRuntime: AdsRuntime | null;
   updatePreferences(
-    change: Partial<Pick<AdPreferences, "adultConfirmed" | "testAdsAllowed">>,
+    change: Pick<AdPreferences, "adultConfirmed">,
   ): Promise<void>;
   prepareConsent(): Promise<void>;
   openPrivacyOptions(): Promise<void>;
@@ -42,7 +44,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   const { session, data, result } = useGame();
   const { setInterrupted } = useSound();
   const { preferences, loaded, storageError, persist, getPreferences } =
-    useAdPreferences(adConfig.enabled);
+    useAdPreferences(adConfig.enabled, adConfig.preferencesKey);
   const [ready, setReady] = useState(false);
   const [foreground, setForeground] = useState(
     AppState.currentState === "active",
@@ -58,6 +60,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   const [readyRuntime, setReadyRuntime] = useState<AdsRuntime | null>(null);
   const runtime = useRef<AdsRuntime | null>(null),
     full = useRef<FullscreenAd | null>(null);
+  const dismissal = useRef(createModalDismissalGate());
   const lock = useRef(false),
     navigationLock = useRef(false),
     generation = useRef({ value: 0 });
@@ -66,8 +69,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   useLayoutEffect(() => {
     current.current = { path, session, result, foreground };
   }, [path, session, result, foreground]);
-  const eligibleUser =
-    loaded && preferences.adultConfirmed && preferences.testAdsAllowed;
+  const eligibleUser = loaded && mayPrepareAdConsent(preferences);
   const cooldownStart = useRef<number | null>(null);
   useEffect(() => {
     // A restart with an existing attempt gets a fresh conservative cooldown;
@@ -79,12 +81,18 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   useEffect(() => {
     alive.current = true;
     const lifecycleGeneration = generation.current;
-    const subscription = AppState.addEventListener("change", (state) =>
-      setForeground(state === "active"),
-    );
+    const modalDismissal = dismissal.current;
+    const subscription = AppState.addEventListener("change", (state) => {
+      setForeground(state === "active");
+      if (adConfig.requiresTrackingAuthorization && state === "background") {
+        invalidate();
+        refreshed.current = false;
+      }
+    });
     return () => {
       alive.current = false;
       lifecycleGeneration.value++;
+      modalDismissal.cancel();
       subscription.remove();
       full.current?.dispose();
       setInterrupted(false);
@@ -92,12 +100,14 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   }, [setInterrupted]);
   useEffect(() => {
     navigationLock.current = false;
+    dismissal.current.cancel();
     void Promise.resolve().then(() => {
       if (alive.current) setPending(null);
     });
   }, [path]);
 
   function invalidate() {
+    dismissal.current.cancel();
     generation.current.value++;
     setReady(false);
     setAdReady(false);
@@ -105,7 +115,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     full.current = null;
   }
   async function updatePreferences(
-    change: Partial<Pick<AdPreferences, "adultConfirmed" | "testAdsAllowed">>,
+    change: Pick<AdPreferences, "adultConfirmed">,
   ) {
     if (lock.current || !loaded) return;
     lock.current = true;
@@ -113,8 +123,8 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     invalidate();
     try {
       const next = { ...getPreferences(), ...change };
-      if (!next.adultConfirmed) next.testAdsAllowed = false;
       await persist(next);
+      refreshed.current = false;
       setError("");
     } catch {
       setError("Tercih kaydedilemedi; reklamlar kapalı kaldı.");
@@ -124,17 +134,22 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     }
   }
   async function consent(interactive: boolean, privacy = false) {
-    if (
-      !adConfig.enabled ||
-      !loaded ||
-      !mayPrepareAdConsent(preferences, privacy) ||
-      lock.current ||
-      current.current.session ||
-      !current.current.foreground ||
-      (!interactive && current.current.path !== "/") ||
-      (interactive && current.current.path !== "/settings/privacy")
-    )
+    const blocked = consentBlockMessage(
+      {
+        enabled: adConfig.enabled,
+        loaded,
+        eligible: mayPrepareAdConsent(getPreferences()),
+        busy: lock.current,
+        playing: !!current.current.session,
+        foreground: current.current.foreground,
+        path: current.current.path,
+      },
+      interactive,
+    );
+    if (blocked) {
+      if (interactive) setError(blocked);
       return;
+    }
     lock.current = true;
     setBusy(true);
     invalidate();
@@ -146,10 +161,16 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       const decision = privacy
         ? await runtime.current.privacyOptions()
         : await runtime.current.consent(interactive);
-      if (!alive.current || revision !== generation.current.value) return;
-      setPrivacyRequired(decision.privacyOptionsRequired);
-      if (!getPreferences().adultConfirmed || !getPreferences().testAdsAllowed)
+      if (!alive.current) return;
+      if (revision !== generation.current.value) {
+        if (interactive)
+          setError(
+            "Uygulama arka plana geçtiği için izin kontrolü tamamlanmadı. Yeniden dene.",
+          );
         return;
+      }
+      setPrivacyRequired(decision.privacyOptionsRequired);
+      if (!mayPrepareAdConsent(getPreferences())) return;
       if (!decision.allowed) {
         setError(
           "Tercihlerine göre reklamlar kapalı; oyuna reklamsız devam edebilirsin.",
@@ -168,7 +189,11 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       full.current = runtime.current.interstitial(setAdReady);
       setReadyRuntime(runtime.current);
       setReady(true);
-      setError("");
+      setError(
+        privacy && "formPresented" in decision && !decision.formPresented
+          ? "Google bu cihaz için yeniden açılabilir bir izin formu sunmuyor. Bu işlem izin tercihlerini değiştirmedi."
+          : "",
+      );
     } catch {
       if (alive.current)
         setError(
@@ -180,7 +205,8 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       if (alive.current) setBusy(false);
     }
   }
-  // Refresh UMP every launch after the Studio intro, without opening a form.
+  // Adults reach the required privacy flow on Home without an advertising
+  // opt-in switch. Never present a consent form over a running game.
   const refreshed = useRef(false);
   useEffect(() => {
     if (
@@ -193,7 +219,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       !session
     ) {
       refreshed.current = true;
-      void Promise.resolve().then(() => consent(false));
+      void Promise.resolve().then(() => consent(true));
     }
   });
   useEffect(() => {
@@ -239,7 +265,6 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     if (!action || lock.current) return;
     lock.current = true;
     setBusy(true);
-    setPending(null);
     const presenting =
       withAd &&
       ready &&
@@ -247,6 +272,11 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       current.current.foreground &&
       !current.current.session &&
       current.current.path === "/results";
+    const dismissed =
+      presenting && Platform.OS === "ios"
+        ? dismissal.current.wait()
+        : Promise.resolve(true);
+    setPending(null);
     const next = {
       ...getPreferences(),
       consumedResults: [...getPreferences().consumedResults, action.id].slice(
@@ -258,6 +288,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       await persist(next);
       if (
         presenting &&
+        (await dismissed) &&
         alive.current &&
         current.current.foreground &&
         current.current.path === "/results" &&
@@ -270,6 +301,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     } catch {
       /* Storage/presentation failure never blocks leaving the result. */
     } finally {
+      dismissal.current.cancel();
       setInterrupted(false);
       lock.current = false;
       if (alive.current) {
@@ -303,6 +335,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
         busy={busy}
         onSkip={() => void leave(false)}
         onWatch={() => void leave(true)}
+        onDismiss={() => dismissal.current.dismissed()}
         onCancel={() => {
           setPending(null);
           navigationLock.current = false;

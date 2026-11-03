@@ -1,0 +1,108 @@
+[
+  {
+    "vendor": "Google-Mobile-Ads-SDK",
+    "version": "13.10.0",
+    "sha256": "69fb112582fc23fc06c635c961d262a3f7b4b5654d284787491de3000dadf9d2",
+    "collectedTypes": [
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeOtherDiagnosticData",
+        "NSPrivacyCollectedDataTypeLinked": false,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+          "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCoarseLocation",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+          "NSPrivacyCollectedDataTypePurposeAnalytics",
+          "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePerformanceData",
+        "NSPrivacyCollectedDataTypeLinked": false,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+          "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCrashData",
+        "NSPrivacyCollectedDataTypeLinked": false,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeAdvertisingData",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+          "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeProductInteraction",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAnalytics",
+          "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising",
+          "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeDeviceID",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": true,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising",
+          "NSPrivacyCollectedDataTypePurposeAnalytics",
+          "NSPrivacyCollectedDataTypePurposeDeveloperAdvertising"
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "GoogleUserMessagingPlatform",
+    "version": "3.1.0",
+    "sha256": "45b7adb99fcd2d962a1c800fbfcc1325b57a7fa4165f416182323bb5ffe9c900",
+    "collectedTypes": [
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCoarseLocation",
+        "NSPrivacyCollectedDataTypeLinked": false,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePerformanceData",
+        "NSPrivacyCollectedDataTypeLinked": false,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeProductInteraction",
+        "NSPrivacyCollectedDataTypeLinked": false,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      }
+    ]
+  }
+]

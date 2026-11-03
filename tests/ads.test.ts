@@ -157,7 +157,7 @@ test("UMP geography override requires an explicit test development configuration
   );
   assert.match(
     readFileSync(absolute("src/features/ads/adConfig.ts"), "utf8"),
-    /consentDebugEea: __DEV__ &&/,
+    /resolveRuntimeAds\(Platform.OS, build, __DEV__\)/,
   );
 });
 const eligible = () => ({
@@ -234,7 +234,6 @@ test("no advertising during gameplay, review, auth, rooms, deletion, intro or ba
   for (const p of [
     defaultAdPreferences,
     { ...input.preferences, adultConfirmed: false },
-    { ...input.preferences, testAdsAllowed: false },
     { ...input.preferences, consumedResults: [input.resultId] },
   ])
     assert.equal(canOfferInterstitial({ ...input, preferences: p }), false);
@@ -366,15 +365,28 @@ test("web runtime has no native SDK import and no reward API exists", () => {
   assert.equal(runtime.includes("sdk.TestIds.INTERSTITIAL"), true);
 });
 
-test("unknown/minor age cannot even start UMP; adults can reopen privacy after local opt-out", () => {
-  const p = { ...defaultAdPreferences, testAdsAllowed: true };
-  assert.equal(mayPrepareAdConsent(p, false), false);
-  assert.equal(mayPrepareAdConsent(p, true), false);
+test("age eligibility remains mandatory; legacy test opt-in never authorizes or blocks ads", () => {
+  for (const testAdsAllowed of [false, true]) {
+    const preferences = parseAdPreferences(
+      JSON.stringify({ ...defaultAdPreferences, testAdsAllowed }),
+    );
+    assert.equal(mayPrepareAdConsent(preferences), false);
+    assert.equal(canOfferInterstitial({ ...eligible(), preferences }), false);
+    preferences.adultConfirmed = true;
+    assert.equal(mayPrepareAdConsent(preferences), true);
+    assert.equal(canOfferInterstitial({ ...eligible(), preferences }), true);
+    // Age/local preference never override an unresolved or denied SDK decision.
+    assert.equal(
+      canOfferInterstitial({ ...eligible(), preferences, ready: false }),
+      false,
+    );
+  }
+  const withoutLegacyField = parseAdPreferences(
+    JSON.stringify({ adultConfirmed: true }),
+  );
+  assert.equal(mayPrepareAdConsent(withoutLegacyField), true);
   assert.equal(
-    mayPrepareAdConsent(
-      { ...p, adultConfirmed: true, testAdsAllowed: false },
-      true,
-    ),
+    canOfferInterstitial({ ...eligible(), preferences: withoutLegacyField }),
     true,
   );
 });

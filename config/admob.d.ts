@@ -3,8 +3,11 @@ export const googleSampleApps: {
   readonly ios: string;
 };
 export function resolveAdBuild(env: Record<string, string | undefined>): {
-  mode: "off" | "test";
-  realAdsEnabled: false;
+  mode: "off" | "test" | "live";
+  realAdsEnabled: boolean;
+  platform?: "ios";
+  iosQaConsent?: boolean;
+  iosUnits?: { banner: string; interstitial: string } | null;
   androidAppId: string;
   iosAppId: string;
   consentDebugGeography: "EEA" | null;

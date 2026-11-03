@@ -2,6 +2,7 @@ import type { ConfigContext, ExpoConfig } from "expo/config";
 import { existsSync, readFileSync } from "node:fs";
 import { resolveAdBuild } from "./config/admob.js";
 import { resolveIosBuild } from "./config/ios.js";
+import iosSkAdNetworkItems from "./config/ios-skadnetwork.json";
 export default function ({ config }: ConfigContext): ExpoConfig {
   const ads = resolveAdBuild(process.env);
   const ios = resolveIosBuild(process.env, config.ios?.bundleIdentifier);
@@ -67,6 +68,13 @@ export default function ({ config }: ConfigContext): ExpoConfig {
           delayAppMeasurementInit: true,
           optimizeInitialization: true,
           optimizeAdLoading: true,
+          ...(ads.platform === "ios" && ads.mode !== "off"
+            ? {
+                userTrackingUsageDescription:
+                  "İzninizle cihaz tanımlayıcıları reklamların sunulması ve ölçülmesi için Google ile paylaşılır. İzin vermeden oyuna devam edebilirsiniz.",
+                skAdNetworkItems: iosSkAdNetworkItems,
+              }
+            : {}),
         },
       ],
     ],

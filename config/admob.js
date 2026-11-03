@@ -6,6 +6,67 @@ const googleSampleApps = {
 
 function resolveAdBuild(env) {
   const profile = env.EAS_BUILD_PROFILE;
+  const ios =
+    env.EAS_BUILD_PLATFORM === "ios" ||
+    (env.EAS_BUILD_PLATFORM !== "android" &&
+      (!!env.IOS_BUILD_TARGET || profile?.startsWith("ios-")));
+  if (ios) {
+    const mode = ["test", "live"].includes(env.IOS_ADS_MODE)
+      ? env.IOS_ADS_MODE
+      : "off";
+    const appId = env.ADMOB_IOS_APP_ID || googleSampleApps.ios;
+    if (!/^ca-app-pub-\d{16}~\d{10}$/.test(appId))
+      throw Error("ADMOB_IOS_APP_ID must be an iOS App ID, not an ad-unit ID");
+    if (appId === env.ADMOB_ANDROID_APP_ID)
+      throw Error("iOS must not reuse the Android AdMob App ID");
+    const units =
+      mode === "live"
+        ? {
+            banner: env.ADMOB_IOS_BANNER_ID,
+            interstitial: env.ADMOB_IOS_INTERSTITIAL_ID,
+          }
+        : null;
+    if (mode === "live") {
+      if (
+        profile !== "ios-testflight" &&
+        !(!profile && env.IOS_BUILD_TARGET === "store")
+      )
+        throw Error(
+          "Revenue requires the iOS store distribution configuration",
+        );
+      if (appId === googleSampleApps.ios || !env.ADMOB_IOS_APP_ID)
+        throw Error("Revenue requires the registered iOS AdMob App ID");
+      const publisher = appId.split("~")[0];
+      for (const value of Object.values(units))
+        if (
+          !/^ca-app-pub-\d{16}\/\d{10}$/.test(value || "") ||
+          !value.startsWith(`${publisher}/`)
+        )
+          throw Error(
+            "Revenue requires matching iOS banner and interstitial unit IDs",
+          );
+      if (units.banner === units.interstitial)
+        throw Error("iOS banner and interstitial units must be distinct");
+    }
+    return {
+      platform: "ios",
+      mode,
+      realAdsEnabled: mode === "live",
+      androidAppId: googleSampleApps.android,
+      iosAppId: appId,
+      iosUnits: units,
+      iosQaConsent:
+        mode === "test" &&
+        profile === "ios-development" &&
+        env.ADS_TEST_UMP_EEA === "1",
+      consentDebugGeography:
+        mode === "test" &&
+        profile !== "ios-testflight" &&
+        env.ADS_TEST_UMP_EEA === "1"
+          ? "EEA"
+          : null,
+    };
+  }
   const testBuild =
     profile === "ads-preview" ||
     profile === "ads-development" ||

@@ -17,12 +17,14 @@ export function Dialog({
   title,
   children,
   onClose,
+  onDismiss,
   scrollable = true,
   back = false,
 }: React.PropsWithChildren<{
   visible: boolean;
   title: string;
   onClose: () => void;
+  onDismiss?: () => void;
   scrollable?: boolean;
   back?: boolean;
 }>) {
@@ -36,6 +38,7 @@ export function Dialog({
       transparent
       animationType={reduced ? "none" : "fade"}
       onRequestClose={onClose}
+      onDismiss={onDismiss}
     >
       <KeyboardAvoidingView
         style={[

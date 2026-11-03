@@ -6,6 +6,8 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import iosApproval from "../config/ios-approval.js";
+import { verifyNativeClientConfig } from "./verify-native-client-config.mjs";
+import { verifyIosAds } from "./verify-ios-ads.mjs";
 
 export function validateIosDistribution(facts, expected, now = Date.now()) {
   const { plist, entitlements: e, profile: p } = facts;
@@ -66,15 +68,19 @@ export function validateIosDistribution(facts, expected, now = Date.now()) {
     ),
   );
   assert.equal(plist.ITSAppUsesNonExemptEncryption, false);
-  assert(!plist.NSUserTrackingUsageDescription, "Unexpected tracking prompt");
+  assert.equal(
+    typeof plist.NSUserTrackingUsageDescription,
+    "string",
+    "ATT explanation missing",
+  );
   assert(
     !plist.NSMicrophoneUsageDescription,
     "Unexpected microphone permission",
   );
   assert(!(plist.UIBackgroundModes ?? []).includes("audio"));
-  assert.equal(
-    plist.GADApplicationIdentifier,
-    "ca-app-pub-3940256099942544~1458002511",
+  assert.match(
+    plist.GADApplicationIdentifier ?? "",
+    /^ca-app-pub-\d{16}~\d{10}$/,
   );
   assert.equal(plist.GADDelayAppMeasurementInit, true);
   return {
@@ -188,6 +194,19 @@ if (
       appStoreConnectAppId: approval.appStoreConnectAppId,
       version: JSON.parse(readFileSync("app.json", "utf8")).expo.version,
     },
+  );
+  Object.assign(
+    evidence,
+    verifyNativeClientConfig(readFileSync(join(app, "main.jsbundle")), {
+      url: process.env.EXPO_PUBLIC_SUPABASE_URL,
+      key: process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    }),
+    verifyIosAds(app, plistJson(join(app, "Info.plist")), {
+      appId: process.env.ADMOB_IOS_APP_ID,
+      mode: process.env.IOS_ADS_MODE,
+      bannerId: process.env.ADMOB_IOS_BANNER_ID,
+      interstitialId: process.env.ADMOB_IOS_INTERSTITIAL_ID,
+    }),
   );
   if (output) writeFileSync(output, JSON.stringify(evidence, null, 2) + "\n");
   console.log(JSON.stringify(evidence, null, 2));

@@ -4,6 +4,10 @@ import { consentDecision } from "./consent";
 import { createInterstitial } from "./interstitial";
 import { createAdInitializer } from "./initialization";
 import { adConfig } from "./adConfig";
+import { mayUseAdvertisingTracking } from "./tracking";
+import { withAdRequestTimeout } from "./requestTimeout";
+import { authorizeAdConsent } from "./consentAuthorization";
+import { presentPrivacyOptions } from "./consentFlow";
 
 export async function loadAdsRuntime(): Promise<AdsRuntime> {
   // An older installed development client must fail safely, rather than crash
@@ -11,14 +15,17 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
   const sdk = await import("react-native-google-mobile-ads");
   const requestOptions = { requestNonPersonalizedAdsOnly: true };
   const initialize = createAdInitializer({
-    configure: () =>
-      sdk.default().setRequestConfiguration({
+    configure: async () => {
+      if (adConfig.requiresTrackingAuthorization)
+        await sdk.default().setPublisherFirstPartyIdEnabled(false);
+      await sdk.default().setRequestConfiguration({
         maxAdContentRating: sdk.MaxAdContentRating.G,
         tagForChildDirectedTreatment: false,
         tagForUnderAgeOfConsent: false,
         testDeviceIdentifiers: ["EMULATOR"],
-      }),
-    initialize: () => sdk.default().initialize(),
+      });
+    },
+    initialize: () => withAdRequestTimeout(sdk.default().initialize()),
     mute: () => sdk.default().setAppMuted(true),
   });
   const consentOptions = {
@@ -30,7 +37,7 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
   function Banner({ width, onLoaded, onFailed }: BannerProps) {
     return (
       <sdk.BannerAd
-        unitId={sdk.TestIds.ADAPTIVE_BANNER}
+        unitId={adConfig.bannerUnitId ?? sdk.TestIds.ADAPTIVE_BANNER}
         size={sdk.BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         width={width}
         requestOptions={requestOptions}
@@ -41,20 +48,37 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
   }
   return {
     async consent(interactive) {
-      await sdk.AdsConsent.requestInfoUpdate(consentOptions);
+      await withAdRequestTimeout(
+        sdk.AdsConsent.requestInfoUpdate(consentOptions),
+      );
       if (interactive) await sdk.AdsConsent.loadAndShowConsentFormIfRequired();
-      return consentDecision(sdk.AdsConsent);
+      const decision = await consentDecision(sdk.AdsConsent);
+      return authorizeAdConsent(
+        decision,
+        adConfig.requiresTrackingAuthorization,
+        () => mayUseAdvertisingTracking(interactive),
+      );
     },
     async privacyOptions() {
-      const info = await sdk.AdsConsent.requestInfoUpdate(consentOptions);
-      if (info.privacyOptionsRequirementStatus === "REQUIRED")
-        await sdk.AdsConsent.showPrivacyOptionsForm();
-      return consentDecision(sdk.AdsConsent);
+      const info = await withAdRequestTimeout(
+        sdk.AdsConsent.requestInfoUpdate(consentOptions),
+      );
+      const formPresented = await presentPrivacyOptions(
+        info.privacyOptionsRequirementStatus,
+        () => sdk.AdsConsent.showPrivacyOptionsForm(),
+      );
+      const decision = await consentDecision(sdk.AdsConsent);
+      const authorized = await authorizeAdConsent(
+        decision,
+        adConfig.requiresTrackingAuthorization,
+        () => mayUseAdvertisingTracking(true),
+      );
+      return { ...authorized, formPresented };
     },
     initialize,
     interstitial(onReady) {
       const ad = sdk.InterstitialAd.createForAdRequest(
-        sdk.TestIds.INTERSTITIAL,
+        adConfig.interstitialUnitId ?? sdk.TestIds.INTERSTITIAL,
         requestOptions,
       );
       const events = {

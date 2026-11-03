@@ -7,7 +7,10 @@ import {
   type AdPreferences,
 } from "./adPolicy";
 
-export function useAdPreferences(enabled: boolean) {
+export function useAdPreferences(
+  enabled: boolean,
+  storageKey = AD_PREFERENCES_KEY,
+) {
   const [preferences, setPreferences] = useState(defaultAdPreferences);
   const [loaded, setLoaded] = useState(false),
     [storageError, setError] = useState("");
@@ -16,7 +19,7 @@ export function useAdPreferences(enabled: boolean) {
   useEffect(() => {
     mounted.current = true;
     if (enabled)
-      void AsyncStorage.getItem(AD_PREFERENCES_KEY)
+      void AsyncStorage.getItem(storageKey)
         .then((raw) => {
           const next = parseAdPreferences(raw);
           if (!mounted.current) return;
@@ -31,14 +34,17 @@ export function useAdPreferences(enabled: boolean) {
     return () => {
       mounted.current = false;
     };
-  }, [enabled]);
-  const persist = useCallback(async (next: AdPreferences) => {
-    await AsyncStorage.setItem(AD_PREFERENCES_KEY, JSON.stringify(next));
-    if (mounted.current) {
-      current.current = next;
-      setPreferences(next);
-    }
-  }, []);
+  }, [enabled, storageKey]);
+  const persist = useCallback(
+    async (next: AdPreferences) => {
+      await AsyncStorage.setItem(storageKey, JSON.stringify(next));
+      if (mounted.current) {
+        current.current = next;
+        setPreferences(next);
+      }
+    },
+    [storageKey],
+  );
   const getPreferences = useCallback(() => current.current, []);
   return { preferences, loaded, storageError, persist, getPreferences };
 }

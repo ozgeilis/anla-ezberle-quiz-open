@@ -78,7 +78,8 @@
       "env": {
         "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
         "ADS_MODE": "off",
-        "IOS_APPLE_AUTH": "1"
+        "IOS_APPLE_AUTH": "1",
+        "IOS_ADS_MODE": "test"
       },
       "ios": {
         "simulator": true,
@@ -92,7 +93,8 @@
         "ADS_MODE": "off",
         "IOS_APPLE_AUTH": "1",
         "IOS_BUILD_TARGET": "device",
-        "IOS_REGISTERED_BUNDLE_ID": "com.kovynelstudio.anlaezberle"
+        "IOS_REGISTERED_BUNDLE_ID": "com.kovynelstudio.anlaezberle",
+        "IOS_ADS_MODE": "test"
       },
       "environment": "preview"
     },
@@ -105,7 +107,8 @@
         "ADS_MODE": "off",
         "IOS_APPLE_AUTH": "1",
         "IOS_BUILD_TARGET": "store",
-        "IOS_REGISTERED_BUNDLE_ID": "com.kovynelstudio.anlaezberle"
+        "IOS_REGISTERED_BUNDLE_ID": "com.kovynelstudio.anlaezberle",
+        "IOS_ADS_MODE": "test"
       },
       "ios": {
         "autoIncrement": "buildNumber",

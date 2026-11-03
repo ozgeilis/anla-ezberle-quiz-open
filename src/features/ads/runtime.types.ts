@@ -3,6 +3,9 @@ export interface ConsentResult {
   allowed: boolean;
   privacyOptionsRequired: boolean;
 }
+export interface PrivacyOptionsResult extends ConsentResult {
+  formPresented: boolean;
+}
 export interface BannerProps {
   width: number;
   onLoaded: () => void;
@@ -15,7 +18,7 @@ export interface FullscreenAd {
 }
 export interface AdsRuntime {
   consent(interactive: boolean): Promise<ConsentResult>;
-  privacyOptions(): Promise<ConsentResult>;
+  privacyOptions(): Promise<PrivacyOptionsResult>;
   initialize(): Promise<void>;
   interstitial(onReady: (ready: boolean) => void): FullscreenAd;
   Banner: ComponentType<BannerProps>;

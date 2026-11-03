@@ -3,6 +3,7 @@ import { View } from "react-native";
 import { Txt } from "../../components/ui";
 import { useTheme } from "../../theme/tokens";
 import { useAds } from "./AdProvider";
+import { adConfig } from "./adConfig";
 
 function BannerSlot() {
   const { bannerRuntime } = useAds();
@@ -26,7 +27,7 @@ function BannerSlot() {
     >
       {loaded && (
         <Txt size={11} color={theme.muted}>
-          Test reklamı
+          {adConfig.mode === "live" ? "Reklam" : "Test reklamı"}
         </Txt>
       )}
       {width > 0 && (

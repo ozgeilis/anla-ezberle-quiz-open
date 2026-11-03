@@ -31,6 +31,7 @@ function fixture() {
       ITSAppUsesNonExemptEncryption: false,
       GADApplicationIdentifier: "ca-app-pub-3940256099942544~1458002511",
       GADDelayAppMeasurementInit: true,
+      NSUserTrackingUsageDescription: "Synthetic permission explanation",
     },
     entitlements,
     profile: {

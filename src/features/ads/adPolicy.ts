@@ -2,6 +2,7 @@ export const AD_PREFERENCES_KEY = "@anla-ezberle-quiz/ads/v1";
 export const AD_INTERVAL_MS = 5 * 60_000;
 export interface AdPreferences {
   adultConfirmed: boolean;
+  // Historical test preference retained for storage compatibility, not consent.
   testAdsAllowed: boolean;
   lastPresentedAt: number;
   consumedResults: string[];
@@ -12,13 +13,8 @@ export const defaultAdPreferences: AdPreferences = {
   lastPresentedAt: 0,
   consumedResults: [],
 };
-export function mayPrepareAdConsent(
-  preferences: AdPreferences,
-  privacyOptions: boolean,
-) {
-  return (
-    preferences.adultConfirmed && (preferences.testAdsAllowed || privacyOptions)
-  );
+export function mayPrepareAdConsent(preferences: AdPreferences) {
+  return preferences.adultConfirmed;
 }
 export function parseAdPreferences(raw: string | null): AdPreferences {
   if (!raw) return { ...defaultAdPreferences, consumedResults: [] };
@@ -65,7 +61,6 @@ export function canOfferInterstitial(input: {
     !input.playing &&
     !input.busy &&
     p.adultConfirmed &&
-    p.testAdsAllowed &&
     input.monotonicElapsedMs >= AD_INTERVAL_MS &&
     !p.consumedResults.includes(input.resultId) &&
     (p.lastPresentedAt === 0 || input.now - p.lastPresentedAt >= AD_INTERVAL_MS)
