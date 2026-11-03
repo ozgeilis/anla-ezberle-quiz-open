@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import iosApproval from "../config/ios-approval.js";
+import { verifyNativeClientConfig } from "./verify-native-client-config.mjs";
 
 export function validateIosDistribution(facts, expected, now = Date.now()) {
   const { plist, entitlements: e, profile: p } = facts;
@@ -188,6 +189,13 @@ if (
       appStoreConnectAppId: approval.appStoreConnectAppId,
       version: JSON.parse(readFileSync("app.json", "utf8")).expo.version,
     },
+  );
+  Object.assign(
+    evidence,
+    verifyNativeClientConfig(readFileSync(join(app, "main.jsbundle")), {
+      url: process.env.EXPO_PUBLIC_SUPABASE_URL,
+      key: process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    }),
   );
   if (output) writeFileSync(output, JSON.stringify(evidence, null, 2) + "\n");
   console.log(JSON.stringify(evidence, null, 2));
