@@ -101,7 +101,7 @@
     "complete": false,
     "versionMatchesBinary": true,
     "screenshotsVerified": true,
-    "privacyLabelsReviewed": false,
+    "privacyLabelsReviewed": true,
     "exportComplianceVerified": true,
     "freeAgreementActive": true,
     "agreementVerificationDate": "2026-11-02",
@@ -122,7 +122,11 @@
     "submissionState": "Prepare for Submission",
     "priceSetup": "zero price confirmed; Türkiye is sole availability row Available on App Release; final price-matrix reread pending",
     "screenshotsEvidence": "7 iPhone Dynamic Island medium 1179x2556 and 3 iPad13 2064x2752 real simulator JPEGs visibly processed in Apple version draft; count verified, Save disabled. Offline game UI unchanged by client env correction.",
-    "privacyPolicyUrlSaved": true
+    "privacyPolicyUrlSaved": true,
+    "privacyLabelsAcceptedForRelease": false,
+    "privacyLabelsPublished": false,
+    "privacyAudit": "APP-PRIVACY-AUDIT.md; 10 draft types saved, all App Functionality + Linked; GMA Device ID nested manifest declares tracking; ad-enabled iOS needs exact SDK/runtime reconciliation before owner Publish.",
+    "privacyAuditDate": "2026-11-03"
   },
   "submissionApproved": false,
   "productionPublished": false,

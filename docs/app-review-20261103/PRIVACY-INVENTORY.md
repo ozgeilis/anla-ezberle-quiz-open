@@ -17,9 +17,11 @@ Build 4'ün 17 native PrivacyInfo.xcprivacy dosyası ayrıca okundu.
 | Reklam / Analytics                                 | iOS adConfig Android-only; iOS talep kapalı, Analytics açılmadı                         | Android test açıklamalarını iOS'ta aktif reklam diye beyan etme; manifest tek başına ağ trafiği kanıtı değil |
 | Dinî inanç çıkarımı                                | Kaynak kodda çıkarım/profil yok; sahibi de böyle bir işletme süreci olmadığını belirtti | Quiz konu içeriğini otomatik hassas inanç profili sayma; gelecekte çıkarım eklenirse yeniden değerlendir     |
 
-17 manifestte NSPrivacyTracking=true bulunmadı. AppTrackingTransparency istemi
-ve mikrofon izni yok; gereksiz ATT istemi eklenmedi. Bunlar üçüncü tarafların
-hiç veri işlemediği veya dinamik ağ gözleminin tamamlandığı anlamına gelmez.
+Düzeltme: 17 manifestin üst seviye NSPrivacyTracking alanı tek başına yeterli
+değildir. Gerçek GMA manifestinin Device ID alt kaydında
+NSPrivacyCollectedDataTypeTracking=true bulundu. AppTrackingTransparency
+istemi ve mikrofon izni yok. Bu nedenle bütün SDK davranışını takip yok olarak
+onaylama. Ayrıntılı son karşılaştırma: [APP-PRIVACY-AUDIT.md](APP-PRIVACY-AUDIT.md).
 Required Reason API manifestleri doğrulandı; nihai Nutrition Labels bunlarla
 birlikte gerçek hizmet davranışına dayanmalıdır.
 
