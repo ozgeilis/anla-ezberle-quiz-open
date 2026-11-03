@@ -1,6 +1,8 @@
 # Google gizlilik seçenekleri ve geçiş reklamı — yerel QA7 kabul planı
 
-3 Kasım 2026. **Henüz imzalanmadı veya kurulmadı.** QA6 telefonda korunur.
+3 Kasım 2026. Aşağıdaki dar plan sahibi tarafından ayrıca onaylandı.
+**İmzalandı ve uygulama kaldırılmadan yerel build 7 olarak kuruldu.** QA6
+dosyaları korunur; yeni kodun gerçek cihaz çalışma kabulü henüz bekler.
 
 ## İncelenebilir paket
 
@@ -58,3 +60,24 @@ Onay kapısı yalnız bu yerel işlem için kullanılır; store bayrakları aç�
 **Kapsam dışı:** IPA/EAS build, Apple upload/TestFlight dağıtımı, main merge,
 Vercel, Supabase/Auth, Android Alpha, App Privacy Publish, App Review ve
 Production yayını. Gerçek gelir reklamlarına tıklama veya gösterim testi yok.
+
+## Onay sonrasında doğrulanan işlem
+
+Kaynak ve hazır JS hash'i yeniden karşılaştırıldı; runtime kaynağından sonraki
+commit yalnız bu planı içeriyordu. Mevcut Development sertifikasının bu
+provisioning içinde bulunduğu, Team/Bundle ID, süre ve mevcut cihaz kapsamı
+salt okunur doğrulandı. Yeni sertifika/provisioning oluşturulmadı.
+
+Development preflight yalnız bu sahibinin onayladığı yerel işlem için geçti;
+onay dosyası `finally` ile birebir eski hâline döndü. Store/upload/review
+bayrakları kapalıdır. `codesign --verify --deep --strict` geçti; entitlements
+QA6 ile birebir eşit kaldı. Son JS hash'i de değişmedi.
+
+`devicectl` kurulumu başarılı; ayrı kurulum sonrası uygulama sorgusunda kalıcı
+Bundle ID ve `bundleVersion=7` doğrulandı. Uygulama kaldırılmadı. Kurulum,
+profil verilerinin görsel kabulü veya gerçek formun açıldığı anlamına gelmez;
+sahibinden açılış/ilerleme ve Gizlilik → izin hazırlama sonrası yeni durum
+mesajı istendi. Yeni IPA, upload veya dağıtım yapılmadı.
+
+Gizli yerel imzalama/cihaz logları Git'e konmadı. Kişisel cihaz envanteri,
+provisioning, kimlik bilgileri ve anahtarlar rapora eklenmedi.
