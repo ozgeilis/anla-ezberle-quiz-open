@@ -98,7 +98,7 @@ export default function PrivacyScreen() {
           bildirimi uzaktan geri çağrılamaz. Yalnız sağlayıcı alındısı gerçek
           cihaz teslimi garantisi değildir.
         </Txt>
-        <Txt weight="heavy">İsteğe bağlı reklamlar ve reklam testi</Txt>
+        <Txt weight="heavy">Reklamlar ve reklam testi</Txt>
         <Txt>
           Bu web sürümünde reklam gösterilmez. Android kapalı test paketleri
           Google test reklamlarını kullanır. Bu kapsamda Google Analytics veya
@@ -115,11 +115,13 @@ export default function PrivacyScreen() {
           ve performans verilerini reklam sunumu, ölçüm, analiz ve kötüye
           kullanımı önleme amaçlarıyla işleyebilir. Hesap e-postanı, quiz
           cevaplarını, skorunu veya dinî ilgi profilini reklam isteklerine
-          eklemeyiz. iOS’ta Google izin kontrolü ve gerekli Apple takip izni
-          tamamlanmadan reklam isteği başlatılmaz. Apple takip iznini
-          reddettiğinde reklam isteği yapılmaz ve oyuna reklamsız devam
-          edebilirsin. Bu izin için oyun içi ödül verilmez, oyun özellikleri
-          kısıtlanmaz. Google Analytics ve Firebase Analytics etkinleştirilmez.
+          eklemeyiz. Gerekli Google gizlilik izinleri ve iOS’ta Apple takip
+          durumu kontrol edilmeden reklam isteği başlatılmaz. Apple takip iznini
+          reddettiğinde Google IDFA’yı reklam isteğine eklemez;
+          kişiselleştirilmemiş reklamlar gerekli Google izinleri doğrultusunda
+          yine istenebilir. Publisher first-party ID iOS’ta kapalı tutulur.
+          Takip izni için oyun içi ödül verilmez, oyun özellikleri kısıtlanmaz.
+          Google Analytics ve Firebase Analytics etkinleştirilmez.
         </Txt>
         <Txt>
           Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
@@ -135,16 +137,17 @@ export default function PrivacyScreen() {
         </Txt>
         <Txt>
           Yaş uygunluğu belirtilmemiş veya 18 yaş altında olduğunu belirten
-          kullanıcılarda reklam başlatılmaz. Desteklenen test sürümünde Ayarlar
-          → Gizlilik → Reklam Gizlilik Tercihleri bölümünden yetişkin olduğunu
-          belirtip isteğe bağlı testi açabilirsin. Bu cihaz tercihi ve varsa
-          Google izin formu tamamlanmadan reklam talep edilmez. Google’ın
-          bölgesel izin seçenekleri gerektiğinde aynı bölümden tekrar açılır.
-          Test iznini kapatmak sonraki reklam isteklerini durdurur; oyuna
-          reklamsız devam edebilirsin. Mevcut sağlayıcı kayıtlarını geriye dönük
-          silmez. UMP tek başına bütün yerel yasal yükümlülüklerin karşılandığı
-          anlamına gelmez. Google’ın veri işleme ve saklama koşulları da
-          geçerlidir: https://policies.google.com/privacy
+          kullanıcılarda reklam başlatılmaz. Ayarlar → Gizlilik → Reklam
+          Gizlilik Tercihleri bölümünden yaş uygunluğu belirtilir. Yetişkin
+          kullanıcılarda gerekli gizlilik kontrollerinin ardından ana sayfada ve
+          tur sonrasında reklam sunulabilir; ayrıca reklam açma anahtarı
+          bulunmaz. Yarışma ve soru sayacı sırasında reklam gösterilmez.
+          Google’ın bölgesel gizlilik seçenekleri aynı bölümden tekrar
+          açılabilir; gerekli iznin geri alınması sonraki reklam isteklerini
+          durdurur. Bu işlem mevcut sağlayıcı kayıtlarını geriye dönük silmez.
+          UMP tek başına bütün yerel yasal yükümlülüklerin karşılandığı anlamına
+          gelmez. Google’ın veri işleme ve saklama koşulları da geçerlidir:
+          https://policies.google.com/privacy
         </Txt>
         <Txt weight="heavy">Hesabını silmek</Txt>
         <Txt>

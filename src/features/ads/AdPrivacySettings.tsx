@@ -16,54 +16,31 @@ export function AdPrivacySettings() {
         {adConfig.mode === "live"
           ? "Bu sürüm Google AdMob reklamlarını kullanır."
           : "Bu test sürümü yalnız Google’ın test reklamlarını kullanır."}{" "}
-        Reklam istemezsen oyuna reklamsız devam edebilirsin. Doğum tarihin veya
-        kesin yaşın istenmez.
+        Uygun koşullarda ana sayfada ve tur sonrasında reklam gösterilebilir.
+        Reklam gösterimi için ayrı bir açma anahtarı yoktur. Google gizlilik
+        tercihlerin ayrıca uygulanır. Doğum tarihin veya kesin yaşın istenmez.
       </Txt>
-      {(
-        [
-          {
-            key: "adultConfirmed",
-            title: "18 yaş veya üzerindeyim",
-            description: "Bu cihazdaki reklamlar yalnız yetişkinler içindir.",
-          },
-          {
-            key: "testAdsAllowed",
-            title:
-              adConfig.mode === "live"
-                ? "Reklamlara izin ver"
-                : "Test reklamlarına izin ver",
-            description:
-              "Google cihaz/ağ ve reklam etkileşimi verilerini işleyebilir. Bu tercih UMP onayının yerine geçmez.",
-          },
-        ] as const
-      ).map(({ key, title, description }) => (
-        <View
-          key={key}
-          style={{ flexDirection: "row", alignItems: "center", gap: 12 }}
-        >
-          <View style={{ flex: 1 }}>
-            <Txt size={14} weight="semibold">
-              {title}
-            </Txt>
-            <Txt size={12} color={theme.muted}>
-              {description}
-            </Txt>
-          </View>
-          <Switch
-            accessibilityLabel={title}
-            value={ads.preferences[key]}
-            disabled={
-              ads.busy ||
-              (key === "testAdsAllowed" && !ads.preferences.adultConfirmed)
-            }
-            trackColor={{ true: theme.accent }}
-            onValueChange={(value) =>
-              void ads.updatePreferences({ [key]: value })
-            }
-          />
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
+        <View style={{ flex: 1 }}>
+          <Txt size={14} weight="semibold">
+            18 yaş veya üzerindeyim
+          </Txt>
+          <Txt size={12} color={theme.muted}>
+            Bu cihazdaki reklamlar yalnız yetişkinler içindir. Yaş uygunluğu,
+            Google gizlilik veya Apple takip izni yerine geçmez.
+          </Txt>
         </View>
-      ))}
-      {ads.preferences.adultConfirmed && ads.preferences.testAdsAllowed && (
+        <Switch
+          accessibilityLabel="18 yaş veya üzerindeyim"
+          value={ads.preferences.adultConfirmed}
+          disabled={ads.busy}
+          trackColor={{ true: theme.accent }}
+          onValueChange={(value) =>
+            void ads.updatePreferences({ adultConfirmed: value })
+          }
+        />
+      </View>
+      {ads.preferences.adultConfirmed && (
         <Button
           title="Reklam izinlerini hazırla"
           disabled={ads.busy}
@@ -79,11 +56,18 @@ export function AdPrivacySettings() {
           variant="outline"
         />
       )}
+      <Txt size={12} color={theme.muted}>
+        Google cihaz/ağ ve reklam etkileşimi verilerini işleyebilir. iOS’ta
+        Apple takip iznini reddedersen IDFA kullanılmadan, kişiselleştirilmemiş
+        reklam istenebilir; gerekli Google izinleri yine uygulanır.
+      </Txt>
       <Txt size={12} accessibilityLiveRegion="polite" color={theme.muted}>
         {ads.error ||
           (ads.ready
-            ? "İzinler hazır. Yüklenebilen reklamlar ana sayfada gösterilir; bu anahtarla her zaman kapatabilirsin."
-            : "Reklamlar kapalı. Yaşı belirsiz veya reşit olmayan kullanıcılara reklam gösterilmez.")}
+            ? "Gizlilik kontrolleri tamamlandı. Uygun reklam alanlarında yüklenebilen reklamlar gösterilebilir."
+            : ads.preferences.adultConfirmed
+              ? "Reklamlar hazır değil. Gerekli izinler ana sayfada kontrol edilir; istersen burada yeniden deneyebilirsin."
+              : "Yaşı belirsiz veya reşit olmayan kullanıcılara reklam gösterilmez.")}
       </Txt>
     </Card>
   );

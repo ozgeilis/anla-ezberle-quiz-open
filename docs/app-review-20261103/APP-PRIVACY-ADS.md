@@ -50,16 +50,31 @@ SDK'nın reklam ölçümünü/veri işlemesini bütünüyle kapatmaz.
    SDK'nın bu adayda kalan kullanımını kesinleştirmeden kesin No da vermeyin.**
    Manifestteki bu amaç ile formun altı alanı uzlaştırılmadan taslağa tam
    doğruluk/yayın kabulü verilmez. Kaynak manifest açıkça kaydedilmiştir.
-2. GMA manifestindeki Device ID tracking kullanımı için yeni aday ATT kapısı
-   ekliyor. İlk izin reddinde SDK initialize/load yapılmaması, tekrar açılış ve
-   sistemden izin geri alma davranışı gerçek iPhone'da kabul edilmeli. Başka
+2. GMA manifestindeki Device ID tracking kullanımı için yeni aday ATT durumunu
+   kontrol eder. Son hedefli politika ATT reddini bütün reklamlar için kapı
+   olmaktan çıkarmıştır: Google'ın resmî açıklamasına göre IDFA gönderilmez;
+   NPA ve kapalı publisher first-party ID ile UMP'nin izin verdiği istekler
+   yapılabilir. İzin reddi, tekrar açılış ve sistemden izin geri alma davranışı
+   yeni politikayı içeren gerçek iPhone paketinde ayrıca kabul edilmeli. Başka
    veriler reklam ağı tarafından üçüncü taraf veriyle birleştiriliyorsa ilgili
    türlerin Tracking cevabı da buna göre genişletilmeli; yalnız bu tabloda
    manifest No olduğu için koşulsuz onaylanmış sayılmıyor.
 
-Mevcut kod iOS'ta ATT reddinden sonra reklam istemiyor; oyunu veya XP'yi izne
-bağlamıyor. Publisher first-party ID kapalı, doğrudan IDFA okuma/loglama yok.
-UMP'nin gerekli işlevsel izin kontrolü bu ATT kapısından ayrıdır.
+Mevcut kaynak iOS'ta ATT reddinden sonra IDFA'sız/NPA reklam isteyebilir;
+oyunu veya XP'yi izne bağlamaz. Publisher first-party ID kapalı, doğrudan
+IDFA okuma/loglama yok. UMP'nin gerekli işlevsel izin kontrolü ayrıdır; UMP
+reddinde veya izin okuma hatasında reklam başlatılmaz. Ayrı reklam açma
+anahtarının kaldırılması, SDK veri toplamayı kapattığımız anlamına gelmez.
+Dolayısıyla 14 türlük çalışma tablosu otomatik daraltılmaz; ATT onayı verilmiş
+durumlarda SDK Device ID tracking ihtimali nedeniyle bu alanı topluca No
+yapmayın. App Privacy uygulamanın bütün izin durumlarını kapsamalıdır.
+
+Henüz kurulu fiziksel build 5 önceki opt-in/ATT-blok politikasını taşır;
+bu kaynak değişikliği build 5'e uygulanmamıştır. Yeni politika için cihaz/ağ
+kabulü ve final paket doğrulaması bekler. PR #31'in ayrı web taslağı da eski
+opt-in/ATT-ret cümlelerini taşıyor: bu içerik senkronize edilmeden yeni
+politikanın doğru kamu açıklaması sayılmamalı; bu görevde diğer worktree'ye
+müdahale edilmedi ve politika yayımlanmadı.
 
 Precise Location, telefon rehberi, mesajlaşma, mikrofon/fotoğraf, ödeme veya
 dinî inanç profili çıkarımı özellikleri bulunmadığından bunları sırf uygulama
@@ -81,3 +96,5 @@ Kaynaklar:
 - https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypepurposes
 - https://developers.google.com/admob/ios/privacy/data-disclosure
 - https://developers.google.com/admob/ios/privacy/strategies
+- https://developers.google.com/admob/ios/privacy/idfa
+- https://developer.apple.com/app-store/user-privacy-and-data-use/

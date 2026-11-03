@@ -30,7 +30,7 @@ interface AdContextValue {
   privacyOptionsRequired: boolean;
   bannerRuntime: AdsRuntime | null;
   updatePreferences(
-    change: Partial<Pick<AdPreferences, "adultConfirmed" | "testAdsAllowed">>,
+    change: Pick<AdPreferences, "adultConfirmed">,
   ): Promise<void>;
   prepareConsent(): Promise<void>;
   openPrivacyOptions(): Promise<void>;
@@ -66,8 +66,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   useLayoutEffect(() => {
     current.current = { path, session, result, foreground };
   }, [path, session, result, foreground]);
-  const eligibleUser =
-    loaded && preferences.adultConfirmed && preferences.testAdsAllowed;
+  const eligibleUser = loaded && mayPrepareAdConsent(preferences);
   const cooldownStart = useRef<number | null>(null);
   useEffect(() => {
     // A restart with an existing attempt gets a fresh conservative cooldown;
@@ -109,7 +108,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     full.current = null;
   }
   async function updatePreferences(
-    change: Partial<Pick<AdPreferences, "adultConfirmed" | "testAdsAllowed">>,
+    change: Pick<AdPreferences, "adultConfirmed">,
   ) {
     if (lock.current || !loaded) return;
     lock.current = true;
@@ -117,8 +116,8 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     invalidate();
     try {
       const next = { ...getPreferences(), ...change };
-      if (!next.adultConfirmed) next.testAdsAllowed = false;
       await persist(next);
+      refreshed.current = false;
       setError("");
     } catch {
       setError("Tercih kaydedilemedi; reklamlar kapalı kaldı.");
@@ -131,12 +130,13 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     if (
       !adConfig.enabled ||
       !loaded ||
-      !mayPrepareAdConsent(preferences, privacy) ||
+      !mayPrepareAdConsent(getPreferences()) ||
       lock.current ||
       current.current.session ||
       !current.current.foreground ||
       (!interactive && current.current.path !== "/") ||
-      (interactive && current.current.path !== "/settings/privacy")
+      (interactive &&
+        !["/", "/settings/privacy"].includes(current.current.path))
     )
       return;
     lock.current = true;
@@ -152,8 +152,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
         : await runtime.current.consent(interactive);
       if (!alive.current || revision !== generation.current.value) return;
       setPrivacyRequired(decision.privacyOptionsRequired);
-      if (!getPreferences().adultConfirmed || !getPreferences().testAdsAllowed)
-        return;
+      if (!mayPrepareAdConsent(getPreferences())) return;
       if (!decision.allowed) {
         setError(
           "Tercihlerine göre reklamlar kapalı; oyuna reklamsız devam edebilirsin.",
@@ -184,7 +183,8 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       if (alive.current) setBusy(false);
     }
   }
-  // Refresh UMP every launch after the Studio intro, without opening a form.
+  // Adults reach the required privacy flow on Home without an advertising
+  // opt-in switch. Never present a consent form over a running game.
   const refreshed = useRef(false);
   useEffect(() => {
     if (
@@ -197,7 +197,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       !session
     ) {
       refreshed.current = true;
-      void Promise.resolve().then(() => consent(false));
+      void Promise.resolve().then(() => consent(true));
     }
   });
   useEffect(() => {

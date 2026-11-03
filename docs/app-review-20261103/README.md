@@ -3,6 +3,11 @@
 > hedefli kaldırıldı. Supabase paket düzeltmesi korunur. Yeni reklamlı native
 > cihaz kabulü ve App Privacy henüz tamamlanmadı. [Güncel reklamlı aday](IOS-ADVERTISING.md).
 
+> **Son reklam politikası:** Ayrı reklam açma anahtarı artık uygunluk şartı
+> değildir; 18+ güvenliği ve UMP korunur. ATT reddinde Google'ın desteklediği
+> IDFA'sız/NPA yolu hazırlanmıştır. Bu kaynak değişikliği fiziksel build 5'e
+> kurulmamış, yeni IPA üretilmemiştir. [Kapsam ve kabul sınırı](AD-POLICY-UPDATE.md).
+
 > **Kritik güncel bulgu:** Build 4 imzası/geçmiş Apple validation geçerli olsa da
 > çevrimiçi istemci yapılandırması final JS paketinde yok. Tam aynı JS ile gerçek
 > iPad ekranında NOT_CONFIGURED görüldü; export IPA'da beklenen Frankfurt URL

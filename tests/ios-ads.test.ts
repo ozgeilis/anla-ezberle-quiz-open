@@ -32,6 +32,35 @@ test("iOS revenue needs separate registered app and both matching distinct units
   ])
     assert.throws(() => resolveAdBuild({ ...revenue, ...change }));
 });
+test("only the iOS store distribution configuration can embed revenue units", () => {
+  for (const profile of [
+    "ios-development",
+    "ios-simulator-acceptance",
+    "development",
+    "unknown",
+  ])
+    assert.throws(
+      () =>
+        resolveAdBuild({
+          ...revenue,
+          EAS_BUILD_PROFILE: profile,
+          IOS_BUILD_TARGET: "store",
+        }),
+      /store distribution/,
+    );
+  assert.throws(
+    () => resolveAdBuild({ ...revenue, EAS_BUILD_PROFILE: undefined }),
+    /store distribution/,
+  );
+  assert.equal(
+    resolveAdBuild({
+      ...revenue,
+      EAS_BUILD_PROFILE: undefined,
+      IOS_BUILD_TARGET: "store",
+    }).mode,
+    "live",
+  );
+});
 test("native iPhone QA always uses test units even with publisher units in its environment", () => {
   const build = resolveAdBuild({ ...revenue, IOS_ADS_MODE: "test" });
   const runtime = resolveRuntimeAds("ios", build, true);
@@ -57,7 +86,7 @@ test("native iPhone QA always uses test units even with publisher units in its e
     assert.equal(resolveRuntimeAds("ios", store, false).consentDebugEea, false);
   }
 });
-test("iOS flags cannot enable Android revenue or web SDK; old test opt-in is not reused for revenue", () => {
+test("iOS flags cannot enable Android revenue or web SDK; test/live records remain separate", () => {
   assert.equal(
     resolveAdBuild({
       ...revenue,
@@ -137,7 +166,7 @@ test("ATT denial/restriction does not prompt repeatedly; passive refresh never o
     true,
   );
 });
-test("UMP denial never asks ATT; ATT denial blocks ads; Android keeps UMP behavior", async () => {
+test("UMP denial never asks ATT; ATT denial allows NPA without IDFA; errors fail closed", async () => {
   let prompts = 0;
   const tracking = async () => {
     prompts++;
@@ -157,7 +186,7 @@ test("UMP denial never asks ATT; ATT denial blocks ads; Android keeps UMP behavi
   assert.equal(prompts, 0);
   assert.equal(
     (await authorizeAdConsent(allowed, true, tracking)).allowed,
-    false,
+    true,
   );
   assert.equal(prompts, 1);
   assert.equal(
@@ -169,6 +198,23 @@ test("UMP denial never asks ATT; ATT denial blocks ads; Android keeps UMP behavi
       throw Error("unavailable");
     }),
   );
+});
+test("an allowed UMP decision waits for ATT completion before ad initialization can continue", async () => {
+  let complete!: (value: boolean) => void;
+  let settled = false;
+  const decision = { allowed: true, privacyOptionsRequired: true };
+  const pending = authorizeAdConsent(
+    decision,
+    true,
+    () => new Promise<boolean>((resolve) => (complete = resolve)),
+  ).then((value) => {
+    settled = true;
+    return value;
+  });
+  await Promise.resolve();
+  assert.equal(settled, false);
+  complete(false);
+  assert.deepEqual(await pending, decision);
 });
 test("offline SDK requests terminate; rejection and success preserve their result", async () => {
   await assert.rejects(

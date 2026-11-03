@@ -42,8 +42,12 @@ Bu oturumdaki değerler Git dışındaki public-client env dosyasındadır.
 - EAS iOS profilleri kabul tamamlanana kadar güvenli test modundadır. Nihai
   gelir adayında explicit live ortamı ve son paket kontrolü gerekir; test paketi
   yanlışlıkla gelir sürümü diye raporlanamaz.
-- Canlı moda geçişte ayrı yerel tercih anahtarı vardır. Eski test reklamı izni
-  gerçek reklam iznine otomatik dönüşmez.
+- Canlı moda geçişte ayrı yerel tercih anahtarı vardır. Bu kayıtlar UMP/ATT
+  izni değildir. Reklamı ayrıca açma anahtarı kaldırılmıştır; eski
+  `testAdsAllowed` alanı yalnız eski kayıtları okuyabilmek için tutulur.
+- Gerçek birimler yalnız `ios-testflight` store profili veya yerel store
+  yapılandırmasında kullanılabilir. Development/simulator profili live
+  seçerse config reddedilir; mevcut test profilleri değiştirilmemiştir.
 
 AdMob hesabı doğrulanıyor; iOS uygulaması mağazaya bağlı değil ve **İnceleme
 gerekli**. Birim oluşturulması gelir sunumu onayı değildir. Mağaza bağlantısı,
@@ -56,13 +60,19 @@ SDK58 resmi `expo-tracking-transparency` 58.0.2 eklendi. Yalnız iOS bağlanır;
 Android autolinking dışlaması gerçek CLI çıktısında doğrulandı.
 
 - Yaşı belirsiz/reşit olmayan oyuncuda UMP/reklam başlatılmaz; mevcut 18+
-  reklam uygunluğu ve isteğe bağlı tercih korunur. Genel oyun 18+ yapılmaz.
+  reklam uygunluğu korunur. Genel oyun 18+ yapılmaz. Yaş kontrolü gelir için
+  gevşetilmez; ayrı reklam etkinleştirme anahtarı olmadan uygun yetişkin için
+  gerekli izin akışı ana sayfada açılabilir. Quiz veya sayaç üzerine açılmaz.
 - UMP refresh → gerekli form → `canRequestAds`/temel amaç izinleri → Apple ATT
   kontrolü → SDK configure/initialize → reklam load sırası kullanılır.
-- iOS ATT reddi/kısıtında **hiç reklam isteği yapılmaz**. Bu aday redden sonra
-  NPA ile takip iznini aşmaya çalışmaz. Oyun ve XP kullanılmaya devam eder.
-- Pasif refresh ATT penceresi açmaz. Kullanıcının başlattığı gizlilik akışında
-  istenebilir; sistem reddini tekrar tekrar sorarak aşmaz. Kimlik numarası
+- iOS ATT reddi reklam uygunluğunu tek başına kaldırmaz. Google'ın resmî
+  belgesine göre GMA bu durumda IDFA göndermez. NPA isteği ve kapalı publisher
+  first-party ID korunarak UMP'nin izin verdiği reklamlar istenebilir. Bu
+  değişiklik takip izni vermez; izin kontrolü hata verirse SDK başlatılmaz.
+  Oyun ve XP, ATT onayına veya reklam izlemesine bağlanmaz.
+- Pasif kontrol ATT penceresi açmaz. Yetişkin için ana sayfadaki gerekli izin
+  akışında veya gizlilik ekranında istenebilir; sistem reddini tekrar tekrar
+  sorarak aşmaz. Kimlik numarası
   okunmaz/loglanmaz. Publisher first-party ID iOS'ta kapatılır.
 - NPA istekleri korunur; bunun veri toplanmadığı veya ATT gerekmediği anlamına
   geldiği varsayılmaz. Reklam SDK ölçümleri App Privacy'de ayrıca değerlendirilir.
@@ -96,6 +106,12 @@ Android autolinking dışlaması gerçek CLI çıktısında doğrulandı.
 - Expo native config null değerini boş nesneye normalize ettiğinden artifact
   guard yalnız null/boş nesneyi test birimi yokluğu olarak kabul eder; gerçek
   birim içeren nesneyi reddeder. Bu varyant için ek regresyon geçti.
+- 3 Kasım fiziksel build 5 kabulü (sahibinin gözlemi): açılış, eski profil
+  ilerlemesi, reklam gizlilik bölümünün görünmesi, 20 saniye/süre dolması,
+  sonucun önce gelmesi, skorun kesilmemesi ve XP/tur güncellemesi geçti.
+  Bu kaynak `0343888` paketidir. Sonraki reklam politikası düzeltmesi bu
+  pakete yüklenmemiştir; yeni politika veya reklam gösteriminin fiziksel
+  kabulü olarak kullanılamaz. [Hedefli politika değişikliği](AD-POLICY-UPDATE.md).
 - Apple provider ve güvenli silme bayrakları kapalıdır. Dar canlı kabul ve
   nihai Apple kayıt politikası için [ayrı plan](APPLE-ACCEPTANCE-PLAN.md)
   onayı gerekir; bu reklam geliştirmesi onları kendiliğinden açmaz.
@@ -109,6 +125,8 @@ Android autolinking dışlaması gerçek CLI çıktısında doğrulandı.
 Kaynaklar:
 
 - https://developers.google.com/admob/ios/privacy
+- https://developers.google.com/admob/ios/privacy/idfa
+- https://developer.apple.com/app-store/user-privacy-and-data-use/
 - https://developers.google.com/admob/ios/privacy/strategies
 - https://developers.google.com/admob/ios/privacy/data-disclosure
 - https://docs.expo.dev/versions/latest/sdk/tracking-transparency/

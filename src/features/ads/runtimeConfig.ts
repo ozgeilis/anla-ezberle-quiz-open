@@ -40,7 +40,8 @@ export function resolveRuntimeAds(
     requiresTrackingAuthorization: ios,
     bannerUnitId: mode === "live" ? units?.banner : undefined,
     interstitialUnitId: mode === "live" ? units?.interstitial : undefined,
-    // An old test opt-in must never silently authorize revenue ads.
+    // Keep test/live local records separate. Neither record is UMP/ATT consent;
+    // the SDK privacy state is checked before initializing/loading ads.
     preferencesKey:
       ios && mode === "live"
         ? "@anla-ezberle-quiz/ads/ios-live/v1"

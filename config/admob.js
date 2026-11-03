@@ -27,6 +27,13 @@ function resolveAdBuild(env) {
           }
         : null;
     if (mode === "live") {
+      if (
+        profile !== "ios-testflight" &&
+        !(!profile && env.IOS_BUILD_TARGET === "store")
+      )
+        throw Error(
+          "Revenue requires the iOS store distribution configuration",
+        );
       if (appId === googleSampleApps.ios || !env.ADMOB_IOS_APP_ID)
         throw Error("Revenue requires the registered iOS AdMob App ID");
       const publisher = appId.split("~")[0];
