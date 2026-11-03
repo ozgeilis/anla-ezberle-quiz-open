@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { AppState } from "react-native";
+import { AppState, Platform } from "react-native";
 import { usePathname } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { useSound } from "../audio/SoundProvider";
@@ -20,6 +20,7 @@ import { loadAdsRuntime } from "./runtime";
 import type { AdsRuntime, FullscreenAd } from "./runtime.types";
 import { AdTransitionDialog } from "./AdTransitionDialog";
 import { useAdPreferences } from "./useAdPreferences";
+import { createModalDismissalGate } from "./modalDismissal";
 
 interface AdContextValue {
   enabled: boolean;
@@ -58,6 +59,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   const [readyRuntime, setReadyRuntime] = useState<AdsRuntime | null>(null);
   const runtime = useRef<AdsRuntime | null>(null),
     full = useRef<FullscreenAd | null>(null);
+  const dismissal = useRef(createModalDismissalGate());
   const lock = useRef(false),
     navigationLock = useRef(false),
     generation = useRef({ value: 0 });
@@ -78,6 +80,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   useEffect(() => {
     alive.current = true;
     const lifecycleGeneration = generation.current;
+    const modalDismissal = dismissal.current;
     const subscription = AppState.addEventListener("change", (state) => {
       setForeground(state === "active");
       if (adConfig.requiresTrackingAuthorization && state === "background") {
@@ -88,6 +91,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     return () => {
       alive.current = false;
       lifecycleGeneration.value++;
+      modalDismissal.cancel();
       subscription.remove();
       full.current?.dispose();
       setInterrupted(false);
@@ -95,12 +99,14 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   }, [setInterrupted]);
   useEffect(() => {
     navigationLock.current = false;
+    dismissal.current.cancel();
     void Promise.resolve().then(() => {
       if (alive.current) setPending(null);
     });
   }, [path]);
 
   function invalidate() {
+    dismissal.current.cancel();
     generation.current.value++;
     setReady(false);
     setAdReady(false);
@@ -243,7 +249,6 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     if (!action || lock.current) return;
     lock.current = true;
     setBusy(true);
-    setPending(null);
     const presenting =
       withAd &&
       ready &&
@@ -251,6 +256,11 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       current.current.foreground &&
       !current.current.session &&
       current.current.path === "/results";
+    const dismissed =
+      presenting && Platform.OS === "ios"
+        ? dismissal.current.wait()
+        : Promise.resolve(true);
+    setPending(null);
     const next = {
       ...getPreferences(),
       consumedResults: [...getPreferences().consumedResults, action.id].slice(
@@ -262,6 +272,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       await persist(next);
       if (
         presenting &&
+        (await dismissed) &&
         alive.current &&
         current.current.foreground &&
         current.current.path === "/results" &&
@@ -274,6 +285,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     } catch {
       /* Storage/presentation failure never blocks leaving the result. */
     } finally {
+      dismissal.current.cancel();
       setInterrupted(false);
       lock.current = false;
       if (alive.current) {
@@ -307,6 +319,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
         busy={busy}
         onSkip={() => void leave(false)}
         onWatch={() => void leave(true)}
+        onDismiss={() => dismissal.current.dismissed()}
         onCancel={() => {
           setPending(null);
           navigationLock.current = false;

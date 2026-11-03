@@ -7,15 +7,22 @@ export function AdTransitionDialog({
   onWatch,
   onSkip,
   onCancel,
+  onDismiss,
 }: {
   visible: boolean;
   busy: boolean;
   onWatch(): void;
   onSkip(): void;
   onCancel(): void;
+  onDismiss(): void;
 }) {
   return (
-    <Dialog visible={visible} title="Devam etmeden önce" onClose={onCancel}>
+    <Dialog
+      visible={visible}
+      title="Devam etmeden önce"
+      onClose={onCancel}
+      onDismiss={onDismiss}
+    >
       <Txt>
         Kısa bir {adConfig.mode === "live" ? "reklam" : "test reklamı"}{" "}
         izleyebilir veya reklamı atlayarak devam edebilirsin. Skorun ve XP’n

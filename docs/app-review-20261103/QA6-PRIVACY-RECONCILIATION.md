@@ -105,20 +105,62 @@ HTTP 200 / `text/plain; charset=utf-8` / birebir doğru yayıncı satırıyla
 doğrulandı. Bu merge yalnız politika ve app-ads.txt'dir; PR #30 uygulama
 kodu main'e alınmadı.
 
-iOS UMP mesajı bu kontrolde **Taslak**, Android mesajı **Yayınlandı**.
-Yalnız iOS uygulaması seçili ve ret seçeneği açık olarak görüldü. Sahibine
-yalnız bu iOS mesajını kendi formunda yayımlama adımı bırakıldı; tamamlandı
-yanıtı/son durum henüz yok. Apple App Privacy Publish yapılmadı. Apple'ın
+iOS UMP mesajı sahibi tarafından yayımlandı; son AdMob listesinde
+"Anla & Ezberle iOS - Avrupa Reklam İzni" **Yayınlandı / Unpublish on**
+olarak ayrıca doğrulandı. Android mesajı da **Yayınlandı** durumunu korur.
+Yalnız iOS uygulaması seçili ve ret seçeneği açık olarak yayın öncesi görüldü.
+Apple App Privacy Publish yapılmadı. Apple'ın
 uygulama Distribution sayfası bu oturumda "Sorry, something went wrong"
 verdi; önceki 10 türlük taslağa yeni canlı teyit veya kayıt başarısı denmez.
 
 Sahibi QA6'da eski reklam açma anahtarının kalktığını ve profil ilerlemesinin
 korunduğunu doğruladı. Fiziksel iPhone ekranı Device Hub'da ayrıca görüldü:
 yalnız 18+ anahtarı var ve kapalı, yeni IDFA/NPA açıklaması görünür. Gerçek
-reklam/UMP/ATT-ret/çevrimdışı kabulü henüz geçilmiş sayılmaz. Ekran kanıtları
+reklam kabulü bu ilk ekran gözleminden çıkarılmadı. Ardından sahibi yetişkin
+uygunluğunu açtı ve test banner'ının yüklendiğini doğruladı. Google'ın ayrı
+izin formunun göründüğünü ve izin verdiğini de açıkça doğruladı: fiziksel
+cihaz UMP form/kabul gösterimi geçti. Bu gözlem, debug EEA coğrafyasının
+teknik olarak zorlandığına dair kanıt değildir.
+
+İlk reklam denemesinde ATT'ye izin verdiğini belirtti; bu deneme ret kabulü
+diye sayılmadı. Yalnız Anla & Ezberle'nin takip anahtarını sistem ayarından
+kapatıp uygulamayı tamamen kapatıp yeniden açtıktan sonra test banner'ının
+tekrar yüklendiğini de doğruladı. **Gerçek iPhone'da ATT izinli ve ATT ret
+durumunda test banner gösterimi geçti (sahibinin gözlemi).** Bu, ağ
+payload'ında IDFA yokluğunun bağımsız ölçümü değildir; IDFA göndermeme
+dayanağı GMA'nın resmî dokümantasyonudur. Sahibi tur sonunda **reklam çıkmadan
+doğrudan ana sayfaya dönüldüğünü** netleştirdi; tam ekran reklam gösterimi
+geçti sayılmadı. Ardından Wi-Fi ve hücresel veri kapalıyken uygulamayı yeniden
+açıp kategori/kolay sorusunda oyunun ve 20 saniyenin çalıştığını bildirdi:
+çevrimdışı yerel oyun kabulü geçti. Bağlantı tekrar açıkken Google gizlilik
+seçenekleri açılmadı; alttaki mesaj sahibi tarafından **"reklam hazır değil"**
+olarak bildirildi. Bu genel uygulama metni, tek başına Google API hatası veya
+ret kararı değildir. Yarım kalmış aktif oturum `consent()` korumasını
+tetikleyebildiğinden temiz yeniden açılış ve ana sayfada banner sonrasında
+tekrar deneme istendi; sonucu bekleniyor. **UMP geri alma/ret kabulü açık.**
+Ekran kanıtları
 Git dışındaki `app-review-20261103/qa6-phone-privacy-age-off.png` ve
 `public-privacy-ios-ads-20261103.png` dosyalarındadır; kişisel cihaz ekranları
 Git'e eklenmedi.
+
+### QA6 sonrası kaynak düzeltmesi — telefona kurulmadı
+
+`Dialog` iOS native `onDismiss` olayını reklam geçişine iletir. Reklam
+sunumu, pencereyi gizleme isteğinden sonra bu olay gelene kadar bekler;
+beş saniyede olay gelmezse reklam atlanır ve normal gezinme devam eder.
+Rota değişimi, reklam geçersizleştirme ve unmount bekleyeni iptal eder.
+Android için iOS olayı beklenmez; mevcut sıklık/yaş/oyun korumaları korunur.
+
+Bu, görünür kaynakta bulunan native pencere kapanışı ile GMA sunumu arasındaki
+sıralama riskini giderir. QA6'da reklam çıkmamasının tek ve kesin kök nedeni
+olarak sunulmaz: yükleme, oturum ve sıklık korumaları ayrıca etkilidir.
+QA6 hâlâ `9d58329` kaynağıdır; bu yeni kod cihaz kabulünden geçmiş sayılmaz.
+Yeni paket, imzalama ve kurulum bu kaynak düzeltmesiyle yapılmadı.
+
+Yeni dört event/iptal/timeout testi dahil reklam testleri **28/28**, ilgili
+oyun/sayaç/sonuç regresyonları **39/39**, TypeScript ve tam ESLint geçti.
+Gerçek UMP ret ve tam ekran gösterim testi bu otomatik kontrollerle ikame
+edilmedi. Native olay sözleşmesi: https://reactnative.dev/docs/modal#ondismiss .
 
 Kaynaklar:
 
