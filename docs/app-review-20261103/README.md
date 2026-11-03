@@ -1,3 +1,12 @@
+> **Son paket durumu — QA7 / Build8–9:** Build8 Google test reklamlarıyla
+> Apple'a yüklendi, **Validated** ve Internal QA grubunda **Testing**.
+> Testçi **Invited**; gerçek TestFlight kurulumu doğrulanmadı.
+> Build9 gerçek iOS AdMob yapılandırmasıyla imzalı IPA olarak yerelde hazır;
+> App Privacy/Apple Auth kabulü açık olduğundan yüklenmedi.
+> Main/App Review/yayın/Android/backend değişmedi.
+> [Paketler, hashler, testler ve kalan engeller](QA7-DISTRIBUTION.md).
+> Aşağıdaki “yeni IPA/upload yok” notları bu son paket izninden önceki tarihsel kayıtlardır.
+
 > **Son reklam kabulü — QA7:** Sahibinin ayrı kaynak/paket onayıyla yerel
 > build 7 iPhone'a uygulama silinmeden kuruldu. Sahibi tam ekran test reklamının
 > açılıp kapandığını ve ana sayfaya dönüldüğünü doğruladı. Gerçek Gizlilik
