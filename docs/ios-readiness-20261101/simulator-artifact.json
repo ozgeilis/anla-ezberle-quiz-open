@@ -1,0 +1,247 @@
+{
+  "kind": "unsigned-ios-simulator-release",
+  "bundleIdentifier": "com.anlaezberle.quiz.prototype",
+  "version": "0.1.0",
+  "buildNumber": "1",
+  "minimumOS": "16.4",
+  "deviceFamily": [1, 2],
+  "sdk": "iphonesimulator27.1",
+  "jsBundleSha256": "79050aa090885041aeecb383dd201136e0443ed0bd2e42122372d7938263328d",
+  "appleNativePod": "58.0.2",
+  "adsMode": "off (build environment; see native smoke evidence)",
+  "privacyManifests": [
+    {
+      "path": "ExpoApplication_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoConstants_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoDevice_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+          "reasons": ["35F9.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoNotifications_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "ExpoSystemUI_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ExpoFileSystem.framework/expo-file-system_ExpoFileSystem.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["0A2A.1", "3B52.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategoryDiskSpace",
+          "reasons": ["E174.1", "85F4.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/React.framework/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+          "reasons": ["35F9.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_SocketRocket.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_boost.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+          "reasons": ["35F9.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_folly.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "Frameworks/ReactNativeDependencies.framework/ReactNativeDependencies_glog.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy",
+      "tracking": null,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+          "reasons": ["35F9.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategoryDiskSpace",
+          "reasons": ["E174.1"]
+        }
+      ],
+      "collectedTypes": [
+        "NSPrivacyCollectedDataTypeOtherDiagnosticData",
+        "NSPrivacyCollectedDataTypeCoarseLocation",
+        "NSPrivacyCollectedDataTypePerformanceData",
+        "NSPrivacyCollectedDataTypeCrashData",
+        "NSPrivacyCollectedDataTypeAdvertisingData",
+        "NSPrivacyCollectedDataTypeProductInteraction",
+        "NSPrivacyCollectedDataTypeDeviceID"
+      ]
+    },
+    {
+      "path": "PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+          "reasons": ["35F9.1"]
+        },
+        {
+          "category": "NSPrivacyAccessedAPICategoryDiskSpace",
+          "reasons": ["E174.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "RNCAsyncStorage_resources.bundle/PrivacyInfo.xcprivacy",
+      "tracking": null,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "React-cxxreact_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+          "reasons": ["C617.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "React-timing_privacy.bundle/PrivacyInfo.xcprivacy",
+      "tracking": false,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+          "reasons": ["35F9.1"]
+        }
+      ],
+      "collectedTypes": []
+    },
+    {
+      "path": "UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy",
+      "tracking": null,
+      "accessedApiCategories": [
+        {
+          "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+          "reasons": ["CA92.1"]
+        }
+      ],
+      "collectedTypes": [
+        "NSPrivacyCollectedDataTypeCoarseLocation",
+        "NSPrivacyCollectedDataTypePerformanceData",
+        "NSPrivacyCollectedDataTypeProductInteraction"
+      ]
+    }
+  ],
+  "ipaProduced": false,
+  "signingValidated": false,
+  "physicalDeviceTested": false
+}

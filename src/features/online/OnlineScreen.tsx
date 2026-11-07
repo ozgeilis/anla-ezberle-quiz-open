@@ -1,4 +1,5 @@
 import { OnlineQuestionTimer } from "./OnlineQuestionTimer";
+import { AppleSignInButton } from "./AppleSignInButton";
 import { GoogleSignInButton } from "./GoogleSignInButton";
 import { clearGoogleAttempt } from "./googleAuth";
 import { RoundResultBadge } from "../results/RoundResultBadge";
@@ -585,6 +586,11 @@ function OnlineAccountScreen() {
               // Callback errors have their own routed screen. Startup/cancel
               // errors stay inline here instead of opening a second modal over it.
               onPress={() => void run(() => auth.signInGoogle())}
+            />
+            <AppleSignInButton
+              busy={busy}
+              enabled={auth.appleEnabled}
+              onPress={() => void run(() => auth.signInApple())}
             />
             <Tap
               label={register ? "Giriş ekranına dön" : "Hesap Oluştur"}

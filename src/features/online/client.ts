@@ -29,6 +29,18 @@ export function createGooglePkceClient(
     },
   });
 }
+// A non-persistent transport verifies native identity proof before the shared session changes.
+export function createIdentityTokenClient() {
+  if (!onlineConfigured) return null;
+  return createClient(url, key, {
+    global: { fetch: authFetch },
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+      detectSessionInUrl: false,
+    },
+  });
+}
 // Bound Auth network waits too; callback UI must not depend on an endless fetch.
 async function authFetch(input: RequestInfo | URL, init?: RequestInit) {
   const controller = new AbortController();

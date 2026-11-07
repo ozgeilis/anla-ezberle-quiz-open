@@ -1,8 +1,10 @@
 import type { ConfigContext, ExpoConfig } from "expo/config";
 import { existsSync, readFileSync } from "node:fs";
 import { resolveAdBuild } from "./config/admob.js";
+import { resolveIosBuild } from "./config/ios.js";
 export default function ({ config }: ConfigContext): ExpoConfig {
   const ads = resolveAdBuild(process.env);
+  const ios = resolveIosBuild(process.env, config.ios?.bundleIdentifier);
   const file = process.env.GOOGLE_SERVICES_JSON;
   if (file) {
     if (!existsSync(file))
@@ -27,9 +29,34 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     ...config,
     name: config.name!,
     slug: config.slug!,
-    extra: { ...config.extra, ads },
+    extra: {
+      ...config.extra,
+      ads,
+      appleAuthentication: ios.appleAuthentication,
+    },
+    ios: {
+      ...config.ios,
+      bundleIdentifier: ios.bundleIdentifier,
+      ...(ios.appleTeamId ? { appleTeamId: ios.appleTeamId } : {}),
+      ...(ios.appleAuthentication ? { usesAppleSignIn: true } : {}),
+      infoPlist: {
+        ...config.ios?.infoPlist,
+        ITSAppUsesNonExemptEncryption: false,
+        CFBundleDevelopmentRegion: "tr",
+      },
+    },
     plugins: [
-      ...(config.plugins ?? []),
+      ...(config.plugins ?? []).map((plugin) =>
+        ios.storeDistribution &&
+        Array.isArray(plugin) &&
+        plugin[0] === "expo-notifications"
+          ? ([plugin[0], { ...plugin[1], mode: "production" }] as [
+              string,
+              Record<string, unknown>,
+            ])
+          : plugin,
+      ),
+      ...(ios.appleAuthentication ? ["expo-apple-authentication"] : []),
       "./plugins/with-admob-workmanager.js",
       [
         "react-native-google-mobile-ads",
