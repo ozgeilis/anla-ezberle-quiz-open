@@ -14,7 +14,7 @@ export default function PrivacyScreen() {
         <Txt weight="heavy" size={20}>
           Verilerin ve hesabın üzerinde kontrol sende
         </Txt>
-        <Txt size={12}>Son güncelleme: 2 Kasım 2026</Txt>
+        <Txt size={12}>Son güncelleme: 9 Kasım 2026</Txt>
         <Txt>
           Anla & Ezberle hizmetini Kovynel Studio sunar. Gizlilik, erişim,
           düzeltme ve hesap silme talepleri için kovynelstudio@gmail.com
@@ -136,18 +136,30 @@ export default function PrivacyScreen() {
           diğer teknik tanımlayıcıların hiç işlenmediği garantisi değildir.
         </Txt>
         <Txt>
-          Yaş uygunluğu belirtilmemiş veya 18 yaş altında olduğunu belirten
-          kullanıcılarda reklam başlatılmaz. Ayarlar → Gizlilik → Reklam
-          Gizlilik Tercihleri bölümünden yaş uygunluğu belirtilir. Yetişkin
-          kullanıcılarda gerekli gizlilik kontrollerinin ardından ana sayfada ve
-          tur sonrasında reklam sunulabilir; ayrıca reklam açma anahtarı
-          bulunmaz. Yarışma ve soru sayacı sırasında reklam gösterilmez.
-          Google’ın bölgesel gizlilik seçenekleri aynı bölümden tekrar
-          açılabilir; gerekli iznin geri alınması sonraki reklam isteklerini
-          durdurur. Bu işlem mevcut sağlayıcı kayıtlarını geriye dönük silmez.
-          UMP tek başına bütün yerel yasal yükümlülüklerin karşılandığı anlamına
-          gelmez. Google’ın veri işleme ve saklama koşulları da geçerlidir:
-          https://policies.google.com/privacy
+          Reklam destekli iOS sürümünde yaş veya doğum tarihi istenmez ve yaşı
+          bilinmeyen kullanıcıların yetişkin olduğu varsayılmaz. Bu nedenle
+          reklam istekleri herkes için kişiselleştirilmemiş ayarla ve genel
+          izleyiciye uygun (G) içerik sınırıyla gönderilir. Yaş onayı veya ayrı
+          bir reklam açma anahtarı yoktur: gerekli gizlilik koşulları
+          sağlandığında ana sayfada banner reklam ve tur sonrasında geçiş
+          reklamı otomatik gösterilebilir. Yarışma ve soru sayacı sırasında
+          reklam gösterilmez. Uygulama ilk açılışta Google User Messaging
+          Platform (UMP) gereksinimlerini uygular; bölgende gerekiyorsa Google
+          izin formu gösterilir ve Google reklam isteğine izin vermezse reklam
+          başlatılmaz. Ardından iOS’ta takip için gerekli olan Apple Uygulama
+          Takibi Şeffaflığı (ATT) izni istenir. ATT iznini reddedersen bu izni
+          gerektiren takip yapılmaz ve IDFA kullanılmaz; takip içermeyen, izin
+          verilen reklamlar yine gösterilebilir ve Google yukarıda açıklanan
+          bazı reklam verilerini (ör. IP adresi, yaklaşık konum, reklam
+          etkileşimi ve tanılama bilgileri) işlemeye devam edebilir. ATT
+          kararını iOS Ayarlar → Gizlilik ve Güvenlik → Takip bölümünden
+          değiştirebilirsin. Google’ın bölgesel gizlilik seçenekleri, bölgende
+          sunuluyorsa, Ayarlar → Gizlilik → Reklam Gizlilik Tercihleri
+          bölümünden tekrar açılabilir; gerekli iznin geri alınması sonraki
+          reklam isteklerini durdurur. Bu işlem mevcut sağlayıcı kayıtlarını
+          geriye dönük silmez. UMP tek başına bütün yerel yasal yükümlülüklerin
+          karşılandığı anlamına gelmez. Google’ın veri işleme ve saklama
+          koşulları da geçerlidir: https://policies.google.com/privacy
         </Txt>
         <Txt weight="heavy">Hesabını silmek</Txt>
         <Txt>
