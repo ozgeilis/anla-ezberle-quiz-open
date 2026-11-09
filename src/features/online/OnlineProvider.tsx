@@ -10,6 +10,12 @@ import {
   AUTH_EMAIL_COOLDOWN_SECONDS,
 } from "./account";
 import { startGoogleAuth, clearGoogleAttempt } from "./googleAuth";
+import {
+  startAppleAuth,
+  cancelAppleAttempt,
+  observeAppleSignIn,
+} from "./appleAuth";
+import { appleCapability } from "./appleFlow";
 import { authRedirectUrl } from "./authLinks";
 import React, {
   createContext,
@@ -35,6 +41,8 @@ interface AuthValue {
   updatePassword: (password: string) => Promise<void>;
   registrationEnabled: boolean;
   googleEnabled: boolean;
+  appleEnabled: boolean;
+  signInApple: () => Promise<void>;
   signInGoogle: () => Promise<void>;
   completeAccountDeletion: (actor: string) => Promise<void>;
 }
@@ -46,6 +54,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
   const [notice, setNotice] = useState("");
   const [registrationEnabled, setRegistrationEnabled] = useState(false);
   const [googleEnabled, setGoogleEnabled] = useState(false);
+  const [appleEnabled, setAppleEnabled] = useState(false);
   useEffect(() => {
     const client = onlineClient();
     if (!client) return;
@@ -62,10 +71,18 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
             data?.googleDeletionEnabled === true,
         );
     });
+    // Absent/unapproved server capability fails closed; no live provider is enabled here.
+    if (Platform.OS === "ios") {
+      client.rpc("apple_auth_capabilities").then(({ data, error }) => {
+        if (alive) setAppleEnabled(!error && appleCapability(data));
+      });
+    }
     client.auth.startAutoRefresh();
     const { data: listener } = client.auth.onAuthStateChange((event, next) => {
       if (!alive) return;
       authRevision++;
+      if (event === "SIGNED_IN" && next?.user.id)
+        observeAppleSignIn(next.user.id);
       setReady(true);
       setSession(verifiedAccount(next?.user) ? next : null);
       setNeedsVerification(
@@ -73,8 +90,10 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
           !next.user.is_anonymous &&
           !next.user.email_confirmed_at,
       );
-      if (event === "SIGNED_OUT")
+      if (event === "SIGNED_OUT") {
+        cancelAppleAttempt();
         setNotice("Çevrimiçi oturum kapandı. Yerel kayıtların korunuyor.");
+      }
     });
     const initialRevision = authRevision;
     client.auth
@@ -109,6 +128,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     });
     return () => {
       alive = false;
+      cancelAppleAttempt();
       listener.subscription.unsubscribe();
       foreground.remove();
       client.auth.stopAutoRefresh();
@@ -117,6 +137,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
   const signIn = async (email: string, password: string) => {
     const client = onlineClient();
     if (!client) throw new Error("Servis yapılandırılmadı.");
+    cancelAppleAttempt();
     await clearGoogleAttempt();
     const { error } = await client.auth.signInWithPassword({
       email: email.trim(),
@@ -140,6 +161,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
       key,
       Date.now() + AUTH_EMAIL_COOLDOWN_SECONDS * 1000,
     );
+    cancelAppleAttempt();
     await clearGoogleAttempt();
     await action();
   };
@@ -198,6 +220,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     if (error) throw new Error(authFailureMessage(error));
   };
   const signOut = async () => {
+    cancelAppleAttempt();
     await clearGoogleAttempt().catch(() => {});
     if (session) {
       await revokePushBeforeSignOut(session.user.id);
@@ -208,6 +231,7 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
     setSession(null);
   };
   const completeAccountDeletion = async (actor: string) => {
+    cancelAppleAttempt();
     await clearGoogleAttempt().catch(() => {});
     // Push navigation metadata must never block the existing secure auth cleanup.
     await clearPushNavigation(actor).catch(() => {});
@@ -246,7 +270,12 @@ export function OnlineProvider({ children }: React.PropsWithChildren) {
         updatePassword,
         registrationEnabled,
         googleEnabled,
-        signInGoogle: () => startGoogleAuth(googleEnabled),
+        appleEnabled,
+        signInApple: () => startAppleAuth(appleEnabled),
+        signInGoogle: () => {
+          cancelAppleAttempt();
+          return startGoogleAuth(googleEnabled);
+        },
         completeAccountDeletion,
       }}
     >

@@ -1,0 +1,32 @@
+{
+  "sourceCommit": "2f663edb0c38477e7f7839a1c6fa1d53331e026e",
+  "approvalDelta": "Temporary development flag consumed and closed; documentation-only working tree updates; no app source changes",
+  "bundleId": "com.kovynelstudio.anlaezberle",
+  "teamId": "W7CRC43SHP",
+  "version": "0.1.0",
+  "build": "1",
+  "sdk": "iphoneos27.1",
+  "minimumOs": "16.4",
+  "deviceFamily": [
+    1,
+    2
+  ],
+  "signing": "Existing Apple Development identity; manual profile; no new certificate/key",
+  "signature": "passed_deep_strict",
+  "profileExpires": "2027-11-01T20:25:28",
+  "onlyRegisteredDevice": true,
+  "keychainEntitlements": "passed_application_identifier_default_group_no_sharing",
+  "appleSignInEntitlement": "Default; live provider remains disabled",
+  "apsEnvironment": "development",
+  "ads": "off; official sample native ID; delayed measurement",
+  "attPermission": false,
+  "microphonePermission": false,
+  "backgroundAudio": false,
+  "jsSha256": "88144b66f65c98c1f2bc494e1f3c42882d2c6963de77cc7b96bf1e812fe3a45d",
+  "physicalInstall": "passed_exact_id_version_build",
+  "physicalAcceptance": false,
+  "testflightUpload": false,
+  "physicalSmoke": "owner_confirmed_launch; observed quiz countdown and earned guest XP; signin UI without unsigned storage error",
+  "authenticatedSessionPersistence": "not_run",
+  "prototypeStatus": "owner_confirmed_independent_deletion; agent_did_not_uninstall"
+}
