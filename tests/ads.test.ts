@@ -6,7 +6,6 @@ import { resolveAdBuild, googleSampleApps } from "../config/admob.js";
 import {
   AD_INTERVAL_MS,
   canOfferInterstitial,
-  mayPrepareAdConsent,
   defaultAdPreferences,
   parseAdPreferences,
 } from "../src/features/ads/adPolicy";
@@ -171,7 +170,6 @@ const eligible = () => ({
   busy: false,
   preferences: {
     ...defaultAdPreferences,
-    adultConfirmed: true,
     testAdsAllowed: true,
   },
   now: 1_000_000,
@@ -232,8 +230,6 @@ test("no advertising during gameplay, review, auth, rooms, deletion, intro or ba
   ])
     assert.equal(canOfferInterstitial({ ...input, ...change }), false);
   for (const p of [
-    defaultAdPreferences,
-    { ...input.preferences, adultConfirmed: false },
     { ...input.preferences, consumedResults: [input.resultId] },
   ])
     assert.equal(canOfferInterstitial({ ...input, preferences: p }), false);
@@ -365,30 +361,28 @@ test("web runtime has no native SDK import and no reward API exists", () => {
   assert.equal(runtime.includes("sdk.TestIds.INTERSTITIAL"), true);
 });
 
-test("age eligibility remains mandatory; legacy test opt-in never authorizes or blocks ads", () => {
-  for (const testAdsAllowed of [false, true]) {
-    const preferences = parseAdPreferences(
-      JSON.stringify({ ...defaultAdPreferences, testAdsAllowed }),
-    );
-    assert.equal(mayPrepareAdConsent(preferences), false);
-    assert.equal(canOfferInterstitial({ ...eligible(), preferences }), false);
-    preferences.adultConfirmed = true;
-    assert.equal(mayPrepareAdConsent(preferences), true);
+test("no age or opt-in gate: unknown-age users reach ads only through SDK readiness", () => {
+  for (const raw of [
+    null,
+    JSON.stringify({ testAdsAllowed: false }),
+    JSON.stringify({ adultConfirmed: false }),
+    JSON.stringify({ adultConfirmed: true }),
+  ]) {
+    const preferences = parseAdPreferences(raw);
+    assert.equal("adultConfirmed" in preferences, false);
     assert.equal(canOfferInterstitial({ ...eligible(), preferences }), true);
-    // Age/local preference never override an unresolved or denied SDK decision.
+    // Local preferences never override an unresolved or denied UMP/ATT decision.
     assert.equal(
       canOfferInterstitial({ ...eligible(), preferences, ready: false }),
       false,
     );
   }
-  const withoutLegacyField = parseAdPreferences(
-    JSON.stringify({ adultConfirmed: true }),
-  );
-  assert.equal(mayPrepareAdConsent(withoutLegacyField), true);
-  assert.equal(
-    canOfferInterstitial({ ...eligible(), preferences: withoutLegacyField }),
-    true,
-  );
+  const provider = readFileSync("src/features/ads/AdProvider.tsx", "utf8");
+  assert.equal(provider.includes("adultConfirmed"), false);
+  assert.equal(provider.includes("AdTransitionDialog"), false);
+  const runtime = readFileSync("src/features/ads/runtime.native.tsx", "utf8");
+  assert.match(runtime, /requestNonPersonalizedAdsOnly: true/);
+  assert.match(runtime, /MaxAdContentRating\.G/);
 });
 test("actual Metro resolver selects native GMA on Android/iOS and safe web code on web", () => {
   const require = createRequire(import.meta.url);

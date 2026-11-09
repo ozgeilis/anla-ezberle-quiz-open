@@ -1,7 +1,6 @@
 interface ConsentContext {
   enabled: boolean;
   loaded: boolean;
-  eligible: boolean;
   busy: boolean;
   playing: boolean;
   foreground: boolean;
@@ -17,8 +16,6 @@ export function consentBlockMessage(
   if (!context.enabled) return "Bu sürümde reklam izin hizmeti kullanılamıyor.";
   if (!context.loaded)
     return "Reklam tercihleri henüz okunamadı. Lütfen yeniden dene.";
-  if (!context.eligible)
-    return "Reklam izinleri için önce yetişkin yaş uygunluğunu belirtmelisin.";
   if (context.busy)
     return "Bir reklam izin işlemi devam ediyor. Bitmesini bekleyip yeniden dene.";
   if (context.playing)

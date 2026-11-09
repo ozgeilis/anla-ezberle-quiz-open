@@ -8,7 +8,6 @@ import {
 const context = {
   enabled: true,
   loaded: true,
-  eligible: true,
   busy: false,
   playing: false,
   foreground: true,
@@ -39,11 +38,10 @@ test("manual privacy controls are allowed on the real privacy route, never over 
   assert.equal(consentBlockMessage({ ...context, path: "/" }, false), null);
 });
 
-test("ineligible, loading and concurrent requests are explained without weakening guards", () => {
+test("loading and concurrent requests are explained without weakening guards", () => {
   for (const change of [
     { enabled: false },
     { loaded: false },
-    { eligible: false },
     { busy: true },
   ])
     assert.ok(consentBlockMessage({ ...context, ...change }, true));

@@ -136,14 +136,14 @@ export default function PrivacyScreen() {
           diğer teknik tanımlayıcıların hiç işlenmediği garantisi değildir.
         </Txt>
         <Txt>
-          Yaş uygunluğu belirtilmemiş veya 18 yaş altında olduğunu belirten
-          kullanıcılarda reklam başlatılmaz. Ayarlar → Gizlilik → Reklam
-          Gizlilik Tercihleri bölümünden yaş uygunluğu belirtilir. Yetişkin
-          kullanıcılarda gerekli gizlilik kontrollerinin ardından ana sayfada ve
-          tur sonrasında reklam sunulabilir; ayrıca reklam açma anahtarı
-          bulunmaz. Yarışma ve soru sayacı sırasında reklam gösterilmez.
-          Google’ın bölgesel gizlilik seçenekleri aynı bölümden tekrar
-          açılabilir; gerekli iznin geri alınması sonraki reklam isteklerini
+          Yaş veya doğum tarihi istenmez ve kullanıcının yetişkin olduğu
+          varsayılmaz: reklamlar herkes için kişiselleştirilmemiş olarak ve
+          genel izleyiciye uygun (G) içerik sınırıyla istenir. Gerekli Google
+          ve Apple gizlilik kontrollerinin ardından ana sayfada ve tur sonrasında
+          reklam gösterilebilir; ayrıca reklam açma anahtarı bulunmaz. Yarışma
+          ve soru sayacı sırasında reklam gösterilmez.
+          Google’ın bölgesel gizlilik seçenekleri Ayarlar → Gizlilik → Reklam
+          Gizlilik Tercihleri bölümünden tekrar açılabilir; gerekli iznin geri alınması sonraki reklam isteklerini
           durdurur. Bu işlem mevcut sağlayıcı kayıtlarını geriye dönük silmez.
           UMP tek başına bütün yerel yasal yükümlülüklerin karşılandığı anlamına
           gelmez. Google’ın veri işleme ve saklama koşulları da geçerlidir:

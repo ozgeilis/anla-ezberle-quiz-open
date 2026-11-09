@@ -1,29 +1,25 @@
 export const AD_PREFERENCES_KEY = "@anla-ezberle-quiz/ads/v1";
 export const AD_INTERVAL_MS = 5 * 60_000;
 export interface AdPreferences {
-  adultConfirmed: boolean;
   // Historical test preference retained for storage compatibility, not consent.
   testAdsAllowed: boolean;
   lastPresentedAt: number;
   consumedResults: string[];
 }
 export const defaultAdPreferences: AdPreferences = {
-  adultConfirmed: false,
   testAdsAllowed: false,
   lastPresentedAt: 0,
   consumedResults: [],
 };
-export function mayPrepareAdConsent(preferences: AdPreferences) {
-  return preferences.adultConfirmed;
-}
 export function parseAdPreferences(raw: string | null): AdPreferences {
   if (!raw) return { ...defaultAdPreferences, consumedResults: [] };
   const value: unknown = JSON.parse(raw);
   if (!value || typeof value !== "object")
     throw Error("Invalid ad preferences");
   const v = value as Record<string, unknown>;
+  // A historical adultConfirmed value is ignored: age is unknown, so every
+  // request stays non-personalized with a G content rating for all users.
   return {
-    adultConfirmed: v.adultConfirmed === true,
     testAdsAllowed: v.testAdsAllowed === true,
     lastPresentedAt:
       typeof v.lastPresentedAt === "number" &&
@@ -60,7 +56,6 @@ export function canOfferInterstitial(input: {
     input.path === "/results" &&
     !input.playing &&
     !input.busy &&
-    p.adultConfirmed &&
     input.monotonicElapsedMs >= AD_INTERVAL_MS &&
     !p.consumedResults.includes(input.resultId) &&
     (p.lastPresentedAt === 0 || input.now - p.lastPresentedAt >= AD_INTERVAL_MS)
