@@ -34,12 +34,17 @@ export default function ({ config }: ConfigContext): ExpoConfig {
       ...config.extra,
       ads,
       appleAuthentication: ios.appleAuthentication,
+      ...(ios.googleIosClientId
+        ? { googleIosClientId: ios.googleIosClientId }
+        : {}),
     },
     ios: {
       ...config.ios,
       bundleIdentifier: ios.bundleIdentifier,
       ...(ios.appleTeamId ? { appleTeamId: ios.appleTeamId } : {}),
       ...(ios.appleAuthentication ? { usesAppleSignIn: true } : {}),
+      // GoogleSignIn requires its reversed client ID as a registered URL scheme.
+      ...(ios.googleIosUrlScheme ? { scheme: [ios.googleIosUrlScheme] } : {}),
       infoPlist: {
         ...config.ios?.infoPlist,
         ITSAppUsesNonExemptEncryption: false,
@@ -59,6 +64,9 @@ export default function ({ config }: ConfigContext): ExpoConfig {
       ),
       ...(ios.appleAuthentication ? ["expo-apple-authentication"] : []),
       "./plugins/with-admob-workmanager.js",
+      ...(ios.googleIosClientId
+        ? ["./plugins/with-google-signin-modular-headers.js"]
+        : []),
       [
         "react-native-google-mobile-ads",
         {

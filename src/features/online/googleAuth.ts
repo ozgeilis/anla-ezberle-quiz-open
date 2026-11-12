@@ -1,9 +1,18 @@
 import { authCallbackKey } from "./authCallbackUrl";
 import { Platform } from "react-native";
 import { requireOptionalNativeModule } from "expo";
-import { randomUUID } from "expo-crypto";
+import {
+  randomUUID,
+  digestStringAsync,
+  CryptoDigestAlgorithm,
+} from "expo-crypto";
 import { authStorage } from "./secureStorage";
-import { onlineClient, createGooglePkceClient } from "./client";
+import {
+  onlineClient,
+  createGooglePkceClient,
+  createIdentityTokenClient,
+} from "./client";
+import { googleNativeSignIn, isGoogleNativeCancel } from "./googleNative";
 import { authRedirectUrl } from "./authLinks";
 import { verifiedAccount } from "./account";
 import { createGoogleCallbackCompletion } from "./googleCompletion";
@@ -30,7 +39,9 @@ async function clearTransaction() {
 let attemptGeneration = 0;
 const completion = createGoogleCallbackCompletion();
 export const googleNativeAvailable = () =>
-  Platform.OS === "web" || !!requireOptionalNativeModule("ExpoWebBrowser");
+  Platform.OS === "web" ||
+  !!googleNativeSignIn() ||
+  !!requireOptionalNativeModule("ExpoWebBrowser");
 export const clearGoogleAttempt = () => {
   attemptGeneration++;
   completion.clear();
@@ -132,6 +143,8 @@ export async function startGoogleAuth(enabled: boolean) {
   if (current.error || current.data.session)
     throw Error("Önce mevcut hesabından güvenli çıkış yap.");
   await clearGoogleAttempt();
+  const native = googleNativeSignIn();
+  if (native) return startNativeGoogleAuth(native);
   const generation = attemptGeneration;
   const redirect = new URL(authRedirectUrl());
   const nonce = randomUUID();
@@ -188,5 +201,79 @@ export async function startGoogleAuth(enabled: boolean) {
     throw Error(
       "Google girişi tamamlanamadı. Bağlantını kontrol edip yeniden dene.",
     );
+  }
+}
+
+// iOS: Google's own sign-in sheet returns an ID token bound to SHA-256(nonce);
+// Supabase verifies signature, audience, expiry and the raw nonce, then the
+// verified session is transferred exactly like the Apple flow.
+async function startNativeGoogleAuth(
+  native: NonNullable<ReturnType<typeof googleNativeSignIn>>,
+) {
+  const generation = attemptGeneration;
+  const assertCurrent = () => {
+    if (generation !== attemptGeneration)
+      throw Error("Google girişi iptal edildi.");
+  };
+  const client = onlineClient();
+  const exchangeClient = createIdentityTokenClient();
+  if (!client || !exchangeClient) throw Error("Servis yapılandırılmadı.");
+  try {
+    const nonce = randomUUID();
+    const hashedNonce = await digestStringAsync(
+      CryptoDigestAlgorithm.SHA256,
+      nonce,
+    );
+    let proof: { idToken: string; accessToken: string };
+    try {
+      proof = await native.module.signIn(native.clientId, hashedNonce);
+    } catch (error) {
+      if (isGoogleNativeCancel(error))
+        throw Error("Google girişi iptal edildi.");
+      throw Error(
+        "Google girişi tamamlanamadı. Bağlantını kontrol edip yeniden dene.",
+      );
+    }
+    assertCurrent();
+    const exchange = await exchangeClient.auth.signInWithIdToken({
+      provider: "google",
+      token: proof.idToken,
+      access_token: proof.accessToken,
+      nonce,
+    });
+    assertCurrent();
+    const session = exchange.data.session;
+    if (exchange.error || !session)
+      throw Error("Google girişi sunucuda tamamlanamadı. Yeniden dene.");
+    const identity = await exchangeClient.auth.getUser(session.access_token);
+    assertCurrent();
+    if (
+      identity.error ||
+      !verifiedAccount(identity.data.user) ||
+      !identity.data.user?.identities?.some((i) => i.provider === "google") ||
+      identity.data.user?.id !== session.user.id
+    )
+      throw Error("Google girişi sunucuda doğrulanamadı. Yeniden dene.");
+    const latest = await client.auth.getSession();
+    assertCurrent();
+    if (latest.error || latest.data.session)
+      throw Error("Aktif hesap değişti. Google girişini yeniden başlat.");
+    const saved = await client.auth.setSession({
+      access_token: session.access_token,
+      refresh_token: session.refresh_token,
+    });
+    if (
+      saved.error ||
+      saved.data.user?.id !== session.user.id ||
+      generation !== attemptGeneration
+    ) {
+      const current = await client.auth.getSession();
+      if (current.data.session?.user.id === session.user.id)
+        await client.auth.signOut({ scope: "local" });
+      throw Error("Google oturumu kaydedilemedi.");
+    }
+  } finally {
+    // Request-scoped memory only: never revoke the transferred app session.
+    exchangeClient.auth.stopAutoRefresh();
   }
 }
