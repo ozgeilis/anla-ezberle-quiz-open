@@ -23,7 +23,15 @@ export function PreparationScreen({
     [attempted, setAttempted] = useState(false);
   const assessed = useDeferredValue(selection),
     assessing = assessed !== selection;
-  const { start, startError, ready, session, data, storageError } = useGame(),
+  const {
+      start,
+      startError,
+      clearStartError,
+      ready,
+      session,
+      data,
+      storageError,
+    } = useGame(),
     t = useTheme(),
     { fontScale } = useWindowDimensions();
   const status = useMemo(
@@ -130,6 +138,7 @@ export function PreparationScreen({
                       stage: undefined,
                     }));
                     setAttempted(false);
+                    clearStartError();
                   }}
                 />
               </View>

@@ -2,6 +2,7 @@ import { QuestionClock, questionLimitMs } from "../domain/game/question-clock";
 import { GameStage } from "../domain/game/stages";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { persistChange } from "./persist";
+import { createStartNotice } from "./startNotice";
 import React, {
   createContext,
   useCallback,
@@ -52,6 +53,7 @@ interface GameContext {
     options?: { playCategory?: PlayCategoryId; allowReplay?: boolean },
   ) => boolean;
   startError: string | null;
+  clearStartError(): void;
   questionClock: QuestionClock | null;
   openQuestion: (id: string, cursor: number) => void;
   expire: () => void;
@@ -77,6 +79,8 @@ export function GameProvider({ children }: React.PropsWithChildren) {
   const [data, setData] = useState<StoredData>(emptyData);
   const dataRef = useRef(data);
   const [startError, setStartError] = useState<string | null>(null);
+  const [startNotice] = useState(() => createStartNotice(setStartError));
+  useEffect(() => startNotice.dispose, [startNotice]);
   const [ready, setReady] = useState(false);
   const [storageError, setStorageError] = useState<string | null>(null);
   const writable = useRef(false);
@@ -175,7 +179,7 @@ export function GameProvider({ children }: React.PropsWithChildren) {
         (resultRef.current &&
           !dataRef.current.games.some((g) => g.id === resultRef.current!.id))
       ) {
-        setStartError(
+        startNotice.show(
           "Önce kayıtlarını yükle veya son yarışmanı yeniden kaydet. Soru geçmişin güvenle okunmadan yeni tur başlatılamaz.",
         );
         return false;
@@ -194,18 +198,18 @@ export function GameProvider({ children }: React.PropsWithChildren) {
         });
         resultRef.current = null;
         setResult(null);
-        setStartError(null);
+        startNotice.clear();
         delete created.questionOpenedAt;
         setCurrent(created);
         return true;
       } catch (error) {
-        setStartError(
+        startNotice.show(
           error instanceof Error ? error.message : "Yarışma başlatılamadı.",
         );
         return false;
       }
     },
-    [ready, setCurrent],
+    [ready, setCurrent, startNotice],
   );
   const openQuestion = useCallback(
     (id: string, cursor: number) => {
@@ -299,6 +303,7 @@ export function GameProvider({ children }: React.PropsWithChildren) {
             saving,
             start,
             startError,
+            clearStartError: startNotice.clear,
             questionClock,
             openQuestion,
             expire,

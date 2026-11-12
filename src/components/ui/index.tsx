@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { View } from "react-native";
+import { usePathname } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { colors as c } from "../../theme/tokens";
 import { Txt } from "./primitives";
@@ -12,11 +13,16 @@ export { Chip, Card, Page } from "./Layout";
 export { Dialog } from "./Dialog";
 export { s } from "./styles";
 export function StorageNotice() {
-  const { storageError, startError, retryRead, saving } = useGame();
+  const { storageError, startError, clearStartError, retryRead, saving } =
+    useGame();
+  const path = usePathname();
+  // A start notice belongs to the screen that produced it; leaving clears it.
+  useEffect(() => clearStartError(), [path, clearStartError]);
   if (!storageError && !startError) return null;
   return (
     <View
       accessibilityRole="alert"
+      pointerEvents={storageError ? "auto" : "none"}
       style={{ backgroundColor: c.paleGold, padding: 12, gap: 8 }}
     >
       <Txt size={12} color={c.ink}>
