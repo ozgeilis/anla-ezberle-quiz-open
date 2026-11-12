@@ -35,6 +35,7 @@ export function parseAdPreferences(raw: string | null): AdPreferences {
   };
 }
 export function canOfferInterstitial(input: {
+  platform?: string;
   completedRounds: number;
   resultId: string;
   saved: boolean;
@@ -49,15 +50,18 @@ export function canOfferInterstitial(input: {
 }) {
   const p = input.preferences;
   return (
-    input.completedRounds >= 3 &&
+    input.completedRounds >= 1 &&
     input.saved &&
     input.ready &&
     input.foreground &&
     input.path === "/results" &&
     !input.playing &&
     !input.busy &&
-    input.monotonicElapsedMs >= AD_INTERVAL_MS &&
     !p.consumedResults.includes(input.resultId) &&
-    (p.lastPresentedAt === 0 || input.now - p.lastPresentedAt >= AD_INTERVAL_MS)
+    (input.platform === "ios" ||
+      (input.completedRounds >= 3 &&
+        input.monotonicElapsedMs >= AD_INTERVAL_MS &&
+        (p.lastPresentedAt === 0 ||
+          input.now - p.lastPresentedAt >= AD_INTERVAL_MS)))
   );
 }

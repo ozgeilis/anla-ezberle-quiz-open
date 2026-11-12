@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { AppState } from "react-native";
+import { AppState, Platform } from "react-native";
 import { usePathname } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { useSound } from "../audio/SoundProvider";
@@ -203,6 +203,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     if (
       lock.current ||
       !canOfferInterstitial({
+        platform: Platform.OS,
         resultId: id,
         completedRounds: data.games.length,
         saved: data.games.some((g) => g.id === id),

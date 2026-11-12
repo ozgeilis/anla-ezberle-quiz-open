@@ -229,10 +229,42 @@ test("no advertising during gameplay, review, auth, rooms, deletion, intro or ba
     { saved: false },
   ])
     assert.equal(canOfferInterstitial({ ...input, ...change }), false);
-  for (const p of [
-    { ...input.preferences, consumedResults: [input.resultId] },
-  ])
+  for (const p of [{ ...input.preferences, consumedResults: [input.resultId] }])
     assert.equal(canOfferInterstitial({ ...input, preferences: p }), false);
+});
+
+test("iOS tries every completed round without the Android round or time limits", () => {
+  const input = {
+    ...eligible(),
+    platform: "ios",
+    completedRounds: 1,
+    monotonicElapsedMs: 0,
+    preferences: { ...eligible().preferences, lastPresentedAt: 1_000_000 },
+  };
+  assert.equal(canOfferInterstitial(input), true);
+  assert.equal(canOfferInterstitial({ ...input, completedRounds: 0 }), false);
+  assert.equal(canOfferInterstitial({ ...input, platform: "android" }), false);
+  assert.equal(
+    canOfferInterstitial({
+      ...input,
+      completedRounds: 2,
+      resultId: "next-round",
+    }),
+    true,
+  );
+  for (const change of [
+    { ready: false },
+    { saved: false },
+    { playing: true },
+    { busy: true },
+    { foreground: false },
+    { path: "/quiz" },
+    {
+      preferences: { ...input.preferences, consumedResults: [input.resultId] },
+    },
+  ]) {
+    assert.equal(canOfferInterstitial({ ...input, ...change }), false);
+  }
 });
 
 function port() {
