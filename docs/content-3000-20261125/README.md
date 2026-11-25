@@ -14,16 +14,16 @@ her birine tam 375 yeni soru eklenecek. Bu nedenle son kategori toplamları eşi
 
 | Veri kategorisi | Eski | Kaynak karşılaştırmalı aday | Yeni hedef | Son hedef |
 | --------------- | ---: | --------------------------: | ---------: | --------: |
-| Kur'an          |  450 |                         310 |        375 |       825 |
-| Peygamberler    |  230 |                         310 |        375 |       605 |
-| İslam Tarihi    |  401 |                         310 |        375 |       776 |
-| Genel Bilgi     |  419 |                         310 |        375 |       794 |
-| TOPLAM          | 1500 |                       1.240 |       1500 |      3000 |
+| Kur'an          |  450 |                         330 |        375 |       825 |
+| Peygamberler    |  230 |                         330 |        375 |       605 |
+| İslam Tarihi    |  401 |                         330 |        375 |       776 |
+| Genel Bilgi     |  419 |                         330 |        375 |       794 |
+| TOPLAM          | 1500 |                       1.320 |       1500 |      3000 |
 
-`src/content/questions/expansion-v74/` içindeki 1.240 kayıt **reviewed adaydır**;
+`src/content/questions/expansion-v74/` içindeki 1.320 kayıt **reviewed adaydır**;
 aktif uygulamaya eklenmiş veya bağımsız uzman tarafından onaylanmış değildir.
 Kök, anahtar ve açıklama için gerçekten açılan resmî PDF/TDV pasajları kullanıldı.
-Kaynak ve yer bilgileri `new-question-receipts-01.json`–`70.json` içinde izlenir.
+Kaynak ve yer bilgileri `new-question-receipts-01.json`–`77.json` içinde izlenir.
 Banka çapında son anlamsal tekrar kabulü ve zorluk kalibrasyonu açık tutulur.
 
 Ekranda ayrıca altı oynanabilir kategori bulunur; bunlar dört veri kategorisiyle
@@ -40,8 +40,8 @@ Bu eşleştirme tamamlanmadan sorular aktif oyuna alınmayacak.
 | Eski soruların zorluk kalibrasyonu                                     | Devam ediyor                                | 475 kolay kök incelendi, 22 öneri; orta/zor bankanın tamamı için son kabul yok                                                                                |
 | Eski sorularda anlamsal tekrar                                         | Devam ediyor                                | 382 token adayı okundu; ayrıca 88 aynı-bilgi grubu, en az 98 fazla kayıt; tüm olası çiftlerin benzersizliği kanıtlanmış değildir                              |
 | Eski tekrarların farklı bilgilerle ikamesi                             | Devam ediyor                                | 98 kaynaklı ikame adayda hazır; banka çapında son benzersizlik kabulü açık; ID ve tarihî sürümler korunacak                                                   |
-| 1.500 yeni sorunun yazımı                                              | Devam ediyor                                | 1.240 kaynak karşılaştırmalı aday; 260 yeni soru daha gerekiyor                                                                                               |
-| Yeni adaylarda tekrar ve çeldirici kontrolü                            | Devam ediyor                                | 1.240 adayın yakın çift taramasında 57 kaydın içeriği yeniden ele alındı; `new-question-replacement-decisions.json`; çeldirici düzeltmeleri ayrıca kaydedildi |
+| 1.500 yeni sorunun yazımı                                              | Devam ediyor                                | 1.320 kaynak karşılaştırmalı aday; 180 yeni soru daha gerekiyor                                                                                               |
+| Yeni adaylarda tekrar ve çeldirici kontrolü                            | Devam ediyor                                | 1.320 adayın yakın çift taramasında 58 kaydın içeriği yeniden ele alındı; `new-question-replacement-decisions.json`; çeldirici düzeltmeleri ayrıca kaydedildi |
 | Aday düzeltmelerin tarihî kayıt koruması                               | Test edildi                                 | 128 eski ID üzerinde anlatım/zorluk düzeltmeleri ve 98 ikame (örtüşen kayıtlar var); eski anahtar ve şık ID'leri korunuyor                                    |
 | Yeni ID, kaynak fişi ve şema testleri                                  | Test altyapısı hazır                        | `tests/content-expansion-baseline.test.ts`; ID/factKey/kaynak yerlerinin eşleşmesi denetlenir                                                                 |
 | 3.000 soru bütünlüğü ve entegrasyon                                    | Yapılmadı                                   | Tam içerik, ikame, konu haritası, zorluk ve tekrar kabulü tamamlanmalı                                                                                        |

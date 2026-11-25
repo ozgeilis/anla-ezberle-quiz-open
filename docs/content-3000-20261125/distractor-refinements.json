@@ -2200,6 +2200,384 @@
         "Şevval’de oruç, cuma guslü ve bayram tekbiri"
       ],
       "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-311",
+      "before": [
+        "İkisini de seferden çıkarmıştır",
+        "Namazlarını geçersiz saymıştır",
+        "Yalnız erken gideni cezalandırmıştır"
+      ],
+      "after": [
+        "Her ikisinden namazı yeniden kılmalarını istemiştir",
+        "Yalnız lafza uyanları kınamıştır",
+        "Yalnız vaktinde kılanları kınamıştır"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-quran-322",
+      "before": [
+        "Size hangi şehir verildi?",
+        "Hangi mesleği seçtiniz?",
+        "Kaç yıl yolculuk ettiniz?"
+      ],
+      "after": [
+        "Benden başka bir rab seçtiniz mi?",
+        "Sizi hangi kavimden yarattım?",
+        "Size kaç yıl ömür verildi?"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-quran-326",
+      "before": [
+        "Evet, her zaman ailesine geçer",
+        "Evet, mutlaka komşularına geçer",
+        "Evet, önce doğan herkese geçer"
+      ],
+      "after": [
+        "Evet, yakın akrabaya otomatik geçer",
+        "Evet, kişinin mensup olduğu topluluk bütünüyle yüklenir",
+        "Evet, aile büyüğü bütün günahları üstlenir"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-quran-329",
+      "before": [
+        "İnsanların bunu kendiliğinden eksiksiz bilmesi",
+        "Bilginin yalnız anneye ait olması",
+        "Bu konunun ilâhî bilgiden ayrı olması"
+      ],
+      "after": [
+        "Rahimlerdeki bilginin ilâhî bilgiden ayrı olduğu",
+        "Yalnız doğumdan sonraki durumun bilindiği",
+        "Rahimlerdeki değişimin hiçbir ölçüye bağlı olmadığı"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-312",
+      "before": [
+        "Rakibini yenmenin gururuyla",
+        "Ticarette rakibi aldatmanın sevinciyle",
+        "Davasını haksız kazanmanın sevinciyle"
+      ],
+      "after": [
+        "Uzun yolculuktan ailesine dönenin sevinciyle",
+        "Kaybettiği değerli bir kitabı bulanın sevinciyle",
+        "Uzun süren hastalıktan kurtulanın sevinciyle"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-313",
+      "before": [
+        "Sahip olduğu araziyle",
+        "Yolculuklarının uzunluğuyla",
+        "Giysisinin fiyatıyla"
+      ],
+      "after": [
+        "Secdede kaldığı sürenin uzunluğuyla",
+        "Giydiği elbisenin uzunluğuyla",
+        "Yolculukta yürüdüğü mesafeyle"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-315",
+      "before": [
+        "Evini yenilemeye",
+        "Uzak şehre taşınmaya",
+        "Ticaret yolculuğuna çıkmaya"
+      ],
+      "after": [
+        "Bir yıllık ürününü kaybetmeye",
+        "Uzun yolculukta yolunu şaşırmaya",
+        "Ticaret için ayırdığı vakti kaçırmaya"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-316",
+      "before": [
+        "Namazın yerine geçen işlem olarak",
+        "Yalnız bedensel egzersiz olarak",
+        "İmamın görevini kaldıran davranış olarak"
+      ],
+      "after": [
+        "Yalnız mescitte kalınan süreyle değerlendirilir",
+        "Yalnız imamın attığı adımlar sevap sayılır",
+        "Adımlar ancak gidiş geliş sayısı eşitse değer taşır"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-317",
+      "before": [
+        "Bir sonraki yıla bırakmak",
+        "Onun yerine yalnız sadaka vermek",
+        "Hiç kılmamak"
+      ],
+      "after": [
+        "Aynı vaktin ertesi gün gelmesini beklemek",
+        "O günkü yatsıdan sonraya ertelemek",
+        "Yerine yalnız iki rekât nâfile kılmak"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-321",
+      "before": [
+        "Yarısının ev sahibine geçtiği",
+        "Tamamının ev sahibine geçtiği",
+        "İftarla birlikte ortadan kalktığı"
+      ],
+      "after": [
+        "Ortak bir sevap ikiye bölünür",
+        "Yalnız ev sahibinin niyeti sevabı belirler",
+        "Oruçlunun ecri ev sahibine devredilir"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-323",
+      "before": [
+        "Bütün ibadetlerden süresiz muafiyet",
+        "Oruç yerine mutlaka hac yapma",
+        "Her yıl yalnız bir gün oruç tutma"
+      ],
+      "after": [
+        "Bütün ramazan boyunca mutlak oruç yasağı",
+        "Orucun sadece gece tutulabilmesi",
+        "Yolcu olmadıkça hiçbir kolaylık bulunmaması"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-324",
+      "before": [
+        "İbadetin zorunlu olarak terk edilmesi diye",
+        "Her durumda gizlenmesi gereken hata diye",
+        "Yalnız başkaları izin verirse değerli diye"
+      ],
+      "after": [
+        "Ancak başkalarının izniyle kullanılabilen izin olarak",
+        "Her durumda kaçınılması gereken zayıflık olarak",
+        "Sadece maddî imkânı olmayanlara tanınan hak olarak"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-325",
+      "before": [
+        "Kararla birlikte her şeyin helâl sayılması",
+        "Aldığını kimse görmezse saklaması",
+        "Hakkın yarısını bağışlayıp kalanını alması"
+      ],
+      "after": [
+        "Karar verilince hakkın mutlaka helâl olması",
+        "Kazandığı hakkın yarısını almasının yeterli olması",
+        "Karardan sonra gerçeği bilmesinin önem taşımaması"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-327",
+      "before": [
+        "Bütün satışları otomatik iptal etmesi",
+        "Borcu kendiliğinden ödemesi",
+        "Malın miktarını artırması"
+      ],
+      "after": [
+        "Malın değerinin yemin sayısıyla belirlenmesi",
+        "Satışın her durumda hükümsüz olması",
+        "Alıcının bütün borçlarının düşmesi"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-329",
+      "before": [
+        "Paranın sahibi olmak zorunda sayılarak",
+        "Bağışı kendisine alabilen kişi olarak",
+        "Yalnız miktar büyükse değerli görülerek"
+      ],
+      "after": [
+        "Sevabın yalnız para sahibine ait olduğu",
+        "Veznedarın ancak kendi parasını verirse ecir alacağı",
+        "Sevabın yalnız verilen paranın çokluğuyla oluştuğu"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-general-330",
+      "before": [
+        "Yalnız kendi ailesine",
+        "İşçiden habersiz alacaklısına",
+        "Kendisini öven tüccarlara"
+      ],
+      "after": [
+        "Yalnız ilk ücret tutarını verip kazancı kendisine bırakır",
+        "Kazancı komşularına eşit olarak dağıtır",
+        "İşçinin ücretini yeni işte çalışması şartıyla verir"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-313",
+      "before": [
+        "Bütün ümmeti uykusuz bırakmak",
+        "Gündüz namazlarını kaldırmak",
+        "Yalnız yolculara örnek olmak"
+      ],
+      "after": [
+        "Ümmete özgü bir borcu ödemek",
+        "Kaçırdığı farz namazları tamamlamak",
+        "Her gece zorunlu bir adağı yerine getirmek"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-314",
+      "before": [
+        "Suyun kaba konulmasını",
+        "Abdestin açık havada alınmasını",
+        "Yolcuların birlikte hazırlanmasını"
+      ],
+      "after": [
+        "Kolları dirseğe kadar yıkamamalarını",
+        "Ağız ve buruna su vermeden bitirmelerini",
+        "Baş yerine elbiseyi mesh etmelerini"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-316",
+      "before": [
+        "Hurma yemek her çocuğa yasak olduğu için",
+        "Bütün hurmalar bozuk olduğu için",
+        "O gün herkesin oruçlu olması gerektiği için"
+      ],
+      "after": [
+        "Zekât dağıtımı henüz başlamadığı için",
+        "Hurma ailesinin özel malı olduğu için",
+        "O hurma yalnız yolculara ayrıldığı için"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-318",
+      "before": [
+        "Etin her mevsimde üç günde bozulmasıyla",
+        "Et yemenin tümden yasaklanmasıyla",
+        "Bütün kurbanların satılmasıyla"
+      ],
+      "after": [
+        "Kurban etinin ticaret konusu olmamasıyla",
+        "Kurban sayısının şehirde eşitlenmesiyle",
+        "Kasaplara ücret olarak et verilmesiyle"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-319",
+      "before": [
+        "Yolculukta bütün oruçların geçersiz olduğu",
+        "Yolcuya ruhsat tanınmadığı",
+        "Yalnız gece oruç tutabileceği"
+      ],
+      "after": [
+        "Gücü yeten her yolcunun mutlaka oruç tutacağı",
+        "Yolcu için oruç tutmanın her durumda yasak olduğu",
+        "Ruhsatın yalnız yürüyen yolcuya ait olduğu"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-320",
+      "before": [
+        "Daha çok övgü getirirse",
+        "Mutlaka başkasına yük olursa",
+        "Herkesten gizlenirse"
+      ],
+      "after": [
+        "Başkalarının daha çok beğenmesi şartıyla",
+        "En kısa zamanda bitmesi şartıyla",
+        "Maddî kazanç getirmesi şartıyla"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-321",
+      "before": [
+        "Kuşun kafese kapatılmasını",
+        "Yuvanın başka yere taşınmasını",
+        "Kuşun yolculukta kullanılmasını"
+      ],
+      "after": [
+        "Kuşun yavrularla birlikte kafese konulmasını",
+        "Yavruların büyüyünce bırakılmasını",
+        "Yuvanın yolcuların yanına taşınmasını"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-322",
+      "before": [
+        "Yükü daha da artırmaya",
+        "Hayvanı yemden uzak tutmaya",
+        "Hayvanı ayakta bekletmeye"
+      ],
+      "after": [
+        "Önce topluluğun yemeğini hazırlamaya",
+        "Hayvanları yükleriyle gölgede bekletmeye",
+        "Önce çadırları bütünüyle kurmaya"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-323",
+      "before": [
+        "Deveye su verdiği için",
+        "Deveyi dinlendirdiği için",
+        "Deveyi gölgede tuttuğu için"
+      ],
+      "after": [
+        "Deveyi sahibinden habersiz başkasına verdiği için",
+        "Deveyi dar bir yerde uzun süre bağladığı için",
+        "Deveye gücünü aşan hızla yol aldırdığı için"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-324",
+      "before": [
+        "Borç kaydını yok etmiştir",
+        "Alacaklıyı borçlu saymıştır",
+        "Borcu yabancıya zorla ödetmiştir"
+      ],
+      "after": [
+        "Alacağın yarısından vazgeçirilmesini sağlamıştır",
+        "Ödemeyi bir sonraki hasada bağlamıştır",
+        "Borcu zekât görevlisine devretmiştir"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-prophets-325",
+      "before": [
+        "Onu tavafa götürürdü",
+        "İtikâfını sona erdirirdi",
+        "Mescidin kapısını kapatırdı"
+      ],
+      "after": [
+        "İtikâf yeri için örtü dikerdi",
+        "Mescitteki kandilleri düzenlerdi",
+        "Ziyaretçileri isim sırasına koyardı"
+      ],
+      "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
     }
   ],
   "semanticAcceptance": "pending",

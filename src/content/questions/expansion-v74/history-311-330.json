@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-history-311",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "TDV, Türk edebiyatındaki ilk na‘t örneğinin hangi eserde bulunduğunu belirtir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Dede Korkut Kitabı"
+      },
+      {
+        "id": "o2",
+        "text": "Seyahatnâme"
+      },
+      {
+        "id": "o3",
+        "text": "Kutadgu Bilig"
+      },
+      {
+        "id": "o4",
+        "text": "Cihannümâ"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Na‘t geleneğinin erken örneği Kutadgu Bilig’de gösterilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/nat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 196 (basılı sayfa numarası değildir)",
+        "supports": "Na‘t geleneğinin erken örneği Kutadgu Bilig’de gösterilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-nat-ilk-turkce-kutadgu"
+  },
+  {
+    "id": "new74-history-312",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Yalnız na‘tların derlendiği şiir mecmuaları hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Rûznâmçe"
+      },
+      {
+        "id": "o2",
+        "text": "Mühimme defteri"
+      },
+      {
+        "id": "o3",
+        "text": "Şer‘iyye sicili"
+      },
+      {
+        "id": "o4",
+        "text": "Mecmûa-i nuût"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Bu mecmualar farklı şairlerin na‘tlarını bir araya getirir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/nat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 199 (basılı sayfa numarası değildir)",
+        "supports": "Bu mecmualar farklı şairlerin na‘tlarını bir araya getirir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-nat-mecmua-nuut"
+  },
+  {
+    "id": "new74-history-313",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "medium",
+    "question": "Na‘tın nazım biçimi hakkında hangi ifade doğrudur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kaside, gazel ve mesnevi gibi farklı biçimlerde yazılabilir"
+      },
+      {
+        "id": "o2",
+        "text": "Yalnız tek beyit olabilir"
+      },
+      {
+        "id": "o3",
+        "text": "Mutlaka yalnız rubâî olur"
+      },
+      {
+        "id": "o4",
+        "text": "Sadece manzum olmayan düzyazıdır"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Türü belirleyen temel unsur tek bir kalıp değil, muhtevadır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/nat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 190 (basılı sayfa numarası değildir)",
+        "supports": "Türü belirleyen temel unsur tek bir kalıp değil, muhtevadır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-nat-tek-nazim-sekli-degil"
+  },
+  {
+    "id": "new74-history-314",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Na‘t-ı Mevlânâ adıyla bilinen rast makamındaki eseri kim bestelemiştir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Dede Efendi"
+      },
+      {
+        "id": "o2",
+        "text": "Buhûrîzâde Mustafa Itrî"
+      },
+      {
+        "id": "o3",
+        "text": "Hacı Ârif Bey"
+      },
+      {
+        "id": "o4",
+        "text": "Tanbûrî Cemil Bey"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "TDV bu na‘tın bestesini Itrî’ye nispet eder.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/nat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 296 (basılı sayfa numarası değildir)",
+        "supports": "TDV bu na‘tın bestesini Itrî’ye nispet eder.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-itri-nati-mevlana-beste"
+  },
+  {
+    "id": "new74-history-315",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "medium",
+    "question": "Bilinen klasik hilye levhası düzenini geliştiren hattat olarak kim kabul edilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mimar Sinan"
+      },
+      {
+        "id": "o2",
+        "text": "Matrakçı Nasuh"
+      },
+      {
+        "id": "o3",
+        "text": "Hâfız Osman"
+      },
+      {
+        "id": "o4",
+        "text": "Evliya Çelebi"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "TDV, yaygın levha biçiminin gelişimini Hâfız Osman’a bağlar.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/hilye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 240–241 (basılı sayfa numarası değildir)",
+        "supports": "TDV, yaygın levha biçiminin gelişimini Hâfız Osman’a bağlar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-hilye-levha-hafiz-osman"
+  },
+  {
+    "id": "new74-history-316",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Hilye levhasının “göbek” veya “gövde” denen merkez bölümünde genellikle ne bulunur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yalnız hattatın mezar tarihi"
+      },
+      {
+        "id": "o2",
+        "text": "Sadece vakfın gider cetveli"
+      },
+      {
+        "id": "o3",
+        "text": "Yalnız eserin satış fiyatı"
+      },
+      {
+        "id": "o4",
+        "text": "Hilye metninin büyük bölümü"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Merkez bölüm, hilye metninin başlıca yeridir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/hilye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 242 (basılı sayfa numarası değildir)",
+        "supports": "Merkez bölüm, hilye metninin başlıca yeridir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-hilye-gobek-metin"
+  },
+  {
+    "id": "new74-history-317",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Hilye levhasının etek bölümünün sonunda hattat genellikle ne ekler?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İmzasını ve yazılış tarihini"
+      },
+      {
+        "id": "o2",
+        "text": "Malzemenin tartısını"
+      },
+      {
+        "id": "o3",
+        "text": "Şehirlerin uzaklıklarını"
+      },
+      {
+        "id": "o4",
+        "text": "Vakıf personel listesini"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Etek, metin ve duanın devamını da barındırabilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/hilye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 246–247 (basılı sayfa numarası değildir)",
+        "supports": "Etek, metin ve duanın devamını da barındırabilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-hilye-etek-imza-tarih"
+  },
+  {
+    "id": "new74-history-318",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "medium",
+    "question": "Yaygın hilye düzeninde göbeğin çevresindeki dört köşeye kimlerin adları yazılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Dört büyük Selçuklu vezirinin"
+      },
+      {
+        "id": "o2",
+        "text": "İlk dört halifenin"
+      },
+      {
+        "id": "o3",
+        "text": "Dört Osmanlı mimarının"
+      },
+      {
+        "id": "o4",
+        "text": "Dört Endülüslü hekimin"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Bazı levhalarda farklı tertipler de bulunur; soru yaygın düzeni sorar.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/hilye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 244–245 (basılı sayfa numarası değildir)",
+        "supports": "Bazı levhalarda farklı tertipler de bulunur; soru yaygın düzeni sorar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-hilye-dort-kose-halife"
+  },
+  {
+    "id": "new74-history-319",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "medium",
+    "question": "İslâmî kitap telif geleneğinde hamdele ve salvele sırasıyla neyi ifade eder?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İki ayrı padişaha övgü"
+      },
+      {
+        "id": "o2",
+        "text": "Yazara övgü ve müstensihe dua"
+      },
+      {
+        "id": "o3",
+        "text": "Allah’a hamd ve Peygamber’e salâtüselâm"
+      },
+      {
+        "id": "o4",
+        "text": "Kitap adı ve bölüm numarası"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Eserlerin başlangıcında bu iki unsur sıkça yer alır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/munacat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 97 (basılı sayfa numarası değildir)",
+        "supports": "Eserlerin başlangıcında bu iki unsur sıkça yer alır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-kitap-hamdele-salvele"
+  },
+  {
+    "id": "new74-history-320",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Türk dinî mûsikisinde münâcâtlar ramazanda temcîdlerle birlikte ne zaman okunurdu?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yalnız öğle namazından sonra"
+      },
+      {
+        "id": "o2",
+        "text": "Yalnız ikindi ezanında"
+      },
+      {
+        "id": "o3",
+        "text": "Sadece bayram hutbesinde"
+      },
+      {
+        "id": "o4",
+        "text": "Sabah ezanından önce"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Madde minarede sabah ezanı öncesindeki uygulamayı anlatır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/munacat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Madde minarede sabah ezanı öncesindeki uygulamayı anlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-munacat-temcid-sabah-oncesi"
+  },
+  {
+    "id": "new74-history-321",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Tevhid ve münâcâtın iç içe bulunduğu Sinan Paşa eseri hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tazarru‘nâme"
+      },
+      {
+        "id": "o2",
+        "text": "Siyâsetnâme"
+      },
+      {
+        "id": "o3",
+        "text": "Cihannümâ"
+      },
+      {
+        "id": "o4",
+        "text": "Seyahatnâme"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "TDV bu eserini söz konusu edebî birleşime örnek verir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/munacat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 101 (basılı sayfa numarası değildir)",
+        "supports": "TDV bu eserini söz konusu edebî birleşime örnek verir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-sinan-pasa-tazarruname"
+  },
+  {
+    "id": "new74-history-322",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Münâcât kelimesinin türediği “necv” kökü hangi anlamla ilişkilidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yolculuk etmek"
+      },
+      {
+        "id": "o2",
+        "text": "Fısıldamak"
+      },
+      {
+        "id": "o3",
+        "text": "Ölçüp tartmak"
+      },
+      {
+        "id": "o4",
+        "text": "Bir binayı süslemek"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Kelimenin kök anlamı gizlice söyleme ve paylaşmadır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/munacat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Kelimenin kök anlamı gizlice söyleme ve paylaşmadır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-munacat-necv-fisildama"
+  },
+  {
+    "id": "new74-history-323",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "medium",
+    "question": "Fethedilen yerleri ve kazanılan zaferleri bildiren tarihî mektup veya eserlere ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vakfiye"
+      },
+      {
+        "id": "o2",
+        "text": "İcâzetnâme"
+      },
+      {
+        "id": "o3",
+        "text": "Fetihnâme"
+      },
+      {
+        "id": "o4",
+        "text": "Şecere"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Fetihnâme, zafer haberini ve anlatısını taşıyan türdür.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/fetihname",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 71,96 (basılı sayfa numarası değildir)",
+        "supports": "Fetihnâme, zafer haberini ve anlatısını taşıyan türdür.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-fetihname-zafer-haberi"
+  },
+  {
+    "id": "new74-history-324",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Fetihnâme dost ve düşman devletlere hangi iki farklı mesajı taşıyabiliyordu?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Dosta vergi cezası, düşmana atama"
+      },
+      {
+        "id": "o2",
+        "text": "Dosta vakfiye, düşmana icâzet"
+      },
+      {
+        "id": "o3",
+        "text": "Dosta ders programı, düşmana maaş cetveli"
+      },
+      {
+        "id": "o4",
+        "text": "Dosta müjde, düşmana tehdit"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Belgenin siyasî işlevi muhataba göre değişebiliyordu.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/fetihname",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96–97 (basılı sayfa numarası değildir)",
+        "supports": "Belgenin siyasî işlevi muhataba göre değişebiliyordu.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-fetihname-dost-dusman-islev"
+  },
+  {
+    "id": "new74-history-325",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Selçuklu sultanlarının fetihnâmelerinde başlıca hangi dil kullanılırdı?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Farsça"
+      },
+      {
+        "id": "o2",
+        "text": "Latince"
+      },
+      {
+        "id": "o3",
+        "text": "İtalyanca"
+      },
+      {
+        "id": "o4",
+        "text": "Sanskritçe"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Madde bunu devletin resmî diliyle ilişkilendirir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/fetihname",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 100–101 (basılı sayfa numarası değildir)",
+        "supports": "Madde bunu devletin resmî diliyle ilişkilendirir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-selcuklu-fetihname-farsca"
+  },
+  {
+    "id": "new74-history-326",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Fâtih’in Otlukbeli zaferinden sonra Doğu Anadolu halkına gönderdiği fetihnâme hangi yazıyla yazılmıştır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Grek harfleriyle"
+      },
+      {
+        "id": "o2",
+        "text": "Uygur harfleriyle"
+      },
+      {
+        "id": "o3",
+        "text": "Kiril harfleriyle"
+      },
+      {
+        "id": "o4",
+        "text": "İbrânî harfleriyle"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Belge, bölgede kullanılan terimlere de yer vermiştir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/fetihname",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 103 (basılı sayfa numarası değildir)",
+        "supports": "Belge, bölgede kullanılan terimlere de yer vermiştir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-otlukbeli-fetihname-uygur-harfi"
+  },
+  {
+    "id": "new74-history-327",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "medium",
+    "question": "İslâm edebiyatında mi‘râciyye veya mi‘racnâme türü hangi hadiseyi konu alır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hicretin vergi düzenini"
+      },
+      {
+        "id": "o2",
+        "text": "Bedir’de ganimet hesabını"
+      },
+      {
+        "id": "o3",
+        "text": "Hz. Peygamber’in mi‘racını"
+      },
+      {
+        "id": "o4",
+        "text": "Osmanlı’nın kuruluşunu"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Mi‘rac çeşitli sanat dallarında da işlenmiştir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/miraciyye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 71,96 (basılı sayfa numarası değildir)",
+        "supports": "Mi‘rac çeşitli sanat dallarında da işlenmiştir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-miraciyye-tur-konu"
+  },
+  {
+    "id": "new74-history-328",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Anadolu sahasındaki ilk müstakil mi‘râciyyeyi 1405’te yazan şair kimdir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Fuzûlî"
+      },
+      {
+        "id": "o2",
+        "text": "Nâbî"
+      },
+      {
+        "id": "o3",
+        "text": "Nedîm"
+      },
+      {
+        "id": "o4",
+        "text": "Ahmedî"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "TDV Ahmedî’nin eserini bu bakımdan öne çıkarır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/miraciyye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 110 (basılı sayfa numarası değildir)",
+        "supports": "TDV Ahmedî’nin eserini bu bakımdan öne çıkarır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-ahmedi-anadolu-miraciyye"
+  },
+  {
+    "id": "new74-history-329",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "Mi‘râcü’n-nebî adlı tanınmış eseri hem yazıp hem besteleyen kimdir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Nâyî Osman Dede"
+      },
+      {
+        "id": "o2",
+        "text": "Itrî"
+      },
+      {
+        "id": "o3",
+        "text": "Hacı Ârif Bey"
+      },
+      {
+        "id": "o4",
+        "text": "Tanbûrî Cemil Bey"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Eser mi‘rac gecesi icra edilen mûsiki örneklerindendir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/miraciyye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 120,134 (basılı sayfa numarası değildir)",
+        "supports": "Eser mi‘rac gecesi icra edilen mûsiki örneklerindendir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-osman-dede-miraciyye-bestesi"
+  },
+  {
+    "id": "new74-history-330",
+    "version": 1,
+    "categoryId": "history",
+    "difficulty": "hard",
+    "question": "TDV’nin anlattığı adlandırma geleneğinde kaside ve mesnevi biçimindeki mi‘rac eserleri sırasıyla nasıl anılmıştır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Fetihnâme ve vakfiye"
+      },
+      {
+        "id": "o2",
+        "text": "Mi‘râciyye ve mi‘racnâme"
+      },
+      {
+        "id": "o3",
+        "text": "Şecere ve menşur"
+      },
+      {
+        "id": "o4",
+        "text": "Tezkire ve rûznâme"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Tür adları edebî biçimle ilişkili bir kullanım kazanmıştır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/miraciyye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 100 (basılı sayfa numarası değildir)",
+        "supports": "Tür adları edebî biçimle ilişkili bir kullanım kazanmıştır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-miraciyye-miracname-nazim"
+  }
+]
