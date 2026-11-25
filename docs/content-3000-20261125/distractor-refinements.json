@@ -22,11 +22,7 @@
         "Sözünde duranları",
         "Allah’a teslim olanları"
       ],
-      "after": [
-        "Yolcuları",
-        "İhtiyaç sahiplerini",
-        "İyilik için çalışanları"
-      ],
+      "after": ["Yolcuları", "İhtiyaç sahiplerini", "İyilik için çalışanları"],
       "reason": "Replace implausible, unrelated or answer-revealing distractors; preserve the tested fact and correct key."
     },
     {
@@ -157,16 +153,8 @@
     },
     {
       "id": "new74-prophets-036",
-      "before": [
-        "Firavun’un",
-        "Nemrut’un",
-        "Kārûn’un"
-      ],
-      "after": [
-        "Dâvûd’un",
-        "Mûsâ’nın",
-        "Yûsuf’un"
-      ],
+      "before": ["Firavun’un", "Nemrut’un", "Kārûn’un"],
+      "after": ["Dâvûd’un", "Mûsâ’nın", "Yûsuf’un"],
       "reason": "Replace implausible, unrelated or answer-revealing distractors; preserve the tested fact and correct key."
     },
     {
@@ -465,16 +453,8 @@
     },
     {
       "id": "new74-history-024",
-      "before": [
-        "Mücellit",
-        "Müezzin",
-        "Müderris"
-      ],
-      "after": [
-        "Mücellit",
-        "Hattat",
-        "Musavvir"
-      ],
+      "before": ["Mücellit", "Müezzin", "Müderris"],
+      "after": ["Mücellit", "Hattat", "Musavvir"],
       "reason": "Replace implausible, unrelated or answer-revealing distractors; preserve the tested fact and correct key."
     },
     {
@@ -512,11 +492,7 @@
         "Müderris veya muîd",
         "Müezzin veya hatip"
       ],
-      "after": [
-        "Müzehhip",
-        "Mücellit",
-        "Muvakkit"
-      ],
+      "after": ["Müzehhip", "Mücellit", "Muvakkit"],
       "reason": "Replace implausible, unrelated or answer-revealing distractors; preserve the tested fact and correct key."
     },
     {
@@ -745,30 +721,14 @@
     },
     {
       "id": "new74-history-131",
-      "before": [
-        "Mersiye defteri",
-        "Vakfiye",
-        "Fetihnâme"
-      ],
-      "after": [
-        "Peşrev",
-        "Saz semâisi",
-        "Taksim"
-      ],
+      "before": ["Mersiye defteri", "Vakfiye", "Fetihnâme"],
+      "after": ["Peşrev", "Saz semâisi", "Taksim"],
       "reason": "Use plausible music-form distractors rather than unrelated document names."
     },
     {
       "id": "new74-prophets-160",
-      "before": [
-        "Bir defa",
-        "Yedi defa",
-        "On iki defa"
-      ],
-      "after": [
-        "Yetmiş defa",
-        "Kırk defa",
-        "On defa"
-      ],
+      "before": ["Bir defa", "Yedi defa", "On iki defa"],
+      "after": ["Yetmiş defa", "Kırk defa", "On defa"],
       "reason": "Clarify the stem and use plausible same-domain distractors; retain source-supported key and tested fact."
     },
     {
@@ -787,11 +747,7 @@
     },
     {
       "id": "new74-history-152",
-      "before": [
-        "Ayı",
-        "Haftayı",
-        "Mevsimi"
-      ],
+      "before": ["Ayı", "Haftayı", "Mevsimi"],
       "after": [
         "Yalnız güneşin gölgesini kullanmaları",
         "Sadece saat başlarını bildirmeleri",
@@ -876,11 +832,7 @@
         "İnsan toplulukları",
         "Denizlerin koruyucusu sayılan varlıklar"
       ],
-      "after": [
-        "Güneş",
-        "Rüzgâr",
-        "İnsan"
-      ],
+      "after": ["Güneş", "Rüzgâr", "İnsan"],
       "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
     },
     {
@@ -997,29 +949,93 @@
     },
     {
       "id": "new74-general-169",
-      "before": [
-        "Zabt",
-        "İhsan",
-        "Mücâzefe"
-      ],
-      "after": [
-        "İkāle",
-        "İbrâ",
-        "Kefâlet"
-      ],
+      "before": ["Zabt", "İhsan", "Mücâzefe"],
+      "after": ["İkāle", "İbrâ", "Kefâlet"],
       "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
     },
     {
       "id": "new74-general-171",
+      "before": ["İhyâü ulûmi’d-dîn", "İkāle", "İstibrâ"],
+      "after": ["Tahcîr", "İktâ", "Vakıf"],
+      "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-general-243",
       "before": [
-        "İhyâü ulûmi’d-dîn",
-        "İkāle",
-        "İstibrâ"
+        "Her durumda yalnız en zengin tarafa kazanç sağlaması",
+        "Tarafların haklarını konuşmalarının engellenmesi",
+        "Uzlaştırıcının bütün mallara sahip olması"
       ],
       "after": [
-        "Tahcîr",
-        "İktâ",
-        "Vakıf"
+        "Tarafların aynı şehirde yaşaması",
+        "Anlaşmanın mutlaka cuma günü yapılması",
+        "Uzlaştırıcının iki tarafın da akrabası olması"
+      ],
+      "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-general-247",
+      "before": ["Zarûriyyât", "Tahsîniyyât", "Sırf gösteriş harcamaları"],
+      "after": [
+        "Zarûriyyât",
+        "Tahsîniyyât",
+        "İhtiyaç sayılmayan gösteriş harcamaları"
+      ],
+      "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-general-248",
+      "before": [
+        "Hiç kimseyle malını paylaşmaması için",
+        "Her isteğinin hemen servete dönüşmesi için",
+        "Yalnız övgü kazanması için"
+      ],
+      "after": [
+        "Harcadığının yalnız mirasla dönmesi için",
+        "Yalnız borçlarının ertelenmesi için",
+        "Harcadığının yalnız aynı gün dönmesi için"
+      ],
+      "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-history-243",
+      "before": [
+        "Bütün yardımların sona ermesini",
+        "Kâbe örtüsünün kaldırılmasını",
+        "Surre defterlerinin yasaklanmasını"
+      ],
+      "after": [
+        "Deniz taşımacılığına ilk kez geçilmesini",
+        "Yolun yalnız karayoluna indirilmesini",
+        "Sevkiyatın Kahire’den başlatılmasını"
+      ],
+      "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-history-245",
+      "before": [
+        "Yalnız kitapların ağırlığına göre",
+        "Sadece müelliflerin servetine göre",
+        "Bütün konular rastgele sıralanarak"
+      ],
+      "after": [
+        "Müelliflerin doğum yıllarına göre",
+        "Eserlerin yazıldığı şehirlere göre",
+        "Kitapların istinsah tarihlerine göre"
+      ],
+      "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-history-246",
+      "before": [
+        "Yalnız kapakların rengini",
+        "Kitabı satanın yaşını",
+        "Sadece yaprakların ağırlığını"
+      ],
+      "after": [
+        "Yalnız müstensihin imzasını",
+        "Yalnız cildin bezeme üslûbunu",
+        "Yalnız son sahibinin adını"
       ],
       "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
     }

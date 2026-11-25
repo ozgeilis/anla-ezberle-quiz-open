@@ -1,6 +1,6 @@
 # 3.000 soruluk banka — çalışma kaydı
 
-25 Kasım 2026. **Çalışma sürüyor; banka henüz 3.000 soru değil ve entegrasyona hazır değil.**
+26 Kasım 2026. **Çalışma sürüyor; banka henüz 3.000 soru değil ve entegrasyona hazır değil.**
 
 İzole worktree: `/Users/ozge/Desktop/bilgi_yaris/anla-ezberle-content-3000`.
 Dal: `content/question-bank-3000-20261125`, başlangıç commit'i: `3a74086`.
@@ -14,16 +14,16 @@ her birine tam 375 yeni soru eklenecek. Bu nedenle son kategori toplamları eşi
 
 | Veri kategorisi | Eski | Kaynak karşılaştırmalı aday | Yeni hedef | Son hedef |
 | --------------- | ---: | --------------------------: | ---------: | --------: |
-| Kur'an | 450 | 240 | 375 | 825 |
-| Peygamberler    |  230 |                         240 |        375 |       605 |
-| İslam Tarihi    |  401 |                         240 |        375 |       776 |
-| Genel Bilgi     |  419 |                         240 |        375 |       794 |
-| TOPLAM | 1500 | 960 | 1500 | 3000 |
+| Kur'an          |  450 |                         250 |        375 |       825 |
+| Peygamberler    |  230 |                         250 |        375 |       605 |
+| İslam Tarihi    |  401 |                         250 |        375 |       776 |
+| Genel Bilgi     |  419 |                         250 |        375 |       794 |
+| TOPLAM          | 1500 |                       1.000 |       1500 |      3000 |
 
-`src/content/questions/expansion-v74/` içindeki 960 kayıt **reviewed adaydır**;
+`src/content/questions/expansion-v74/` içindeki 1.000 kayıt **reviewed adaydır**;
 aktif uygulamaya eklenmiş veya bağımsız uzman tarafından onaylanmış değildir.
 Kök, anahtar ve açıklama için gerçekten açılan resmî PDF/TDV pasajları kullanıldı.
-Kaynak ve yer bilgileri `new-question-receipts-01.json`–`52.json` içinde izlenir.
+Kaynak ve yer bilgileri `new-question-receipts-01.json`–`57.json` içinde izlenir.
 Banka çapında son anlamsal tekrar kabulü ve zorluk kalibrasyonu açık tutulur.
 
 Ekranda ayrıca altı oynanabilir kategori bulunur; bunlar dört veri kategorisiyle
@@ -32,20 +32,20 @@ Bu eşleştirme tamamlanmadan sorular aktif oyuna alınmayacak.
 
 ## Gereksinim takibi
 
-| Gereksinim                                                             | Durum                                       | Kanıt / kalan işlem                                                                                                                         |
-| ---------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Eski 1.500 kaydın sayımı ve yapısal bütünlüğü                          | Tamamlandı ve test edildi                   | `baseline-audit.json`, 1.500 ayrı ID, yapısal hata yok                                                                                      |
-| Eski kök, cevap ve açıklamaların kaynak pasajlarıyla karşılaştırılması | Kaynak taraması tamam; düzeltme kabulü açık | `source-rechecks*.json`, `source-followups.json`: 1.500/1.500; 1.496 özgün açıklama desteklendi, dört açıklama için aday düzeltme var       |
-| Kapsam, seçenek ifadesi ve anlatım düzeltmeleri                        | Aday kodlandı                               | `wording-corrections.json`: 11 öneri; bunlar dinî hata sayısıyla özdeş değildir                                                             |
-| Eski soruların zorluk kalibrasyonu                                     | Devam ediyor                                | 475 kolay kök incelendi, 22 öneri; orta/zor bankanın tamamı için son kabul yok                                                              |
-| Eski sorularda anlamsal tekrar                                         | Devam ediyor                                | 382 token adayı okundu; ayrıca 88 aynı-bilgi grubu, en az 98 fazla kayıt; tüm olası çiftlerin benzersizliği kanıtlanmış değildir            |
-| Eski tekrarların farklı bilgilerle ikamesi                             | Devam ediyor                                   | 98 kaynaklı ikame adayda hazır; banka çapında son benzersizlik kabulü açık; ID ve tarihî sürümler korunacak                                                          |
-| 1.500 yeni sorunun yazımı                                              | Devam ediyor                                | 960 kaynak karşılaştırmalı aday; 540 yeni soru daha gerekiyor                                                                             |
-| Yeni adaylarda tekrar ve çeldirici kontrolü                            | Devam ediyor                                | 960 adayın yakın çift taramasında 42 kaydın içeriği yeniden ele alındı; `new-question-replacement-decisions.json`; çeldirici düzeltmeleri ayrıca kaydedildi |
-| Aday düzeltmelerin tarihî kayıt koruması                               | Test edildi                                 | 128 eski ID üzerinde anlatım/zorluk düzeltmeleri ve 98 ikame (örtüşen kayıtlar var); eski anahtar ve şık ID'leri korunuyor                              |
-| Yeni ID, kaynak fişi ve şema testleri                                  | Test altyapısı hazır                        | `tests/content-expansion-baseline.test.ts`; ID/factKey/kaynak yerlerinin eşleşmesi denetlenir                                               |
-| 3.000 soru bütünlüğü ve entegrasyon                                    | Yapılmadı                                   | Tam içerik, ikame, konu haritası, zorluk ve tekrar kabulü tamamlanmalı                                                                      |
-| Main / canlı backend / mağaza yayını                                   | Yapılmadı                                   | Bu çalışma bunlara müdahale etmez                                                                                                           |
+| Gereksinim                                                             | Durum                                       | Kanıt / kalan işlem                                                                                                                                           |
+| ---------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Eski 1.500 kaydın sayımı ve yapısal bütünlüğü                          | Tamamlandı ve test edildi                   | `baseline-audit.json`, 1.500 ayrı ID, yapısal hata yok                                                                                                        |
+| Eski kök, cevap ve açıklamaların kaynak pasajlarıyla karşılaştırılması | Kaynak taraması tamam; düzeltme kabulü açık | `source-rechecks*.json`, `source-followups.json`: 1.500/1.500; 1.496 özgün açıklama desteklendi, dört açıklama için aday düzeltme var                         |
+| Kapsam, seçenek ifadesi ve anlatım düzeltmeleri                        | Aday kodlandı                               | `wording-corrections.json`: 11 öneri; bunlar dinî hata sayısıyla özdeş değildir                                                                               |
+| Eski soruların zorluk kalibrasyonu                                     | Devam ediyor                                | 475 kolay kök incelendi, 22 öneri; orta/zor bankanın tamamı için son kabul yok                                                                                |
+| Eski sorularda anlamsal tekrar                                         | Devam ediyor                                | 382 token adayı okundu; ayrıca 88 aynı-bilgi grubu, en az 98 fazla kayıt; tüm olası çiftlerin benzersizliği kanıtlanmış değildir                              |
+| Eski tekrarların farklı bilgilerle ikamesi                             | Devam ediyor                                | 98 kaynaklı ikame adayda hazır; banka çapında son benzersizlik kabulü açık; ID ve tarihî sürümler korunacak                                                   |
+| 1.500 yeni sorunun yazımı                                              | Devam ediyor                                | 1.000 kaynak karşılaştırmalı aday; 500 yeni soru daha gerekiyor                                                                                               |
+| Yeni adaylarda tekrar ve çeldirici kontrolü                            | Devam ediyor                                | 1.000 adayın yakın çift taramasında 46 kaydın içeriği yeniden ele alındı; `new-question-replacement-decisions.json`; çeldirici düzeltmeleri ayrıca kaydedildi |
+| Aday düzeltmelerin tarihî kayıt koruması                               | Test edildi                                 | 128 eski ID üzerinde anlatım/zorluk düzeltmeleri ve 98 ikame (örtüşen kayıtlar var); eski anahtar ve şık ID'leri korunuyor                                    |
+| Yeni ID, kaynak fişi ve şema testleri                                  | Test altyapısı hazır                        | `tests/content-expansion-baseline.test.ts`; ID/factKey/kaynak yerlerinin eşleşmesi denetlenir                                                                 |
+| 3.000 soru bütünlüğü ve entegrasyon                                    | Yapılmadı                                   | Tam içerik, ikame, konu haritası, zorluk ve tekrar kabulü tamamlanmalı                                                                                        |
+| Main / canlı backend / mağaza yayını                                   | Yapılmadı                                   | Bu çalışma bunlara müdahale etmez                                                                                                                             |
 
 ## Aday düzeltmeler
 
