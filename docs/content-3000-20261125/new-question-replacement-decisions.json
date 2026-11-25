@@ -211,6 +211,118 @@
       "reason": "Duplicate of old q68-hadis-tanim; replace definition with explicitly Hanefi priority rule, not a reverse definition.",
       "replacementStem": "Hanefî şüf‘a düzeninde hangi hak sahibi, satılan taşınmaza sadece bitişik komşu olandan önce gelir?",
       "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 111–113 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-183",
+      "rejectedStem": "Bakara 2/172’de temiz rızıklardan yemekle birlikte hangi görev hatırlatılır?",
+      "reason": "Avoid another generic gratitude prompt close to old v13-quran-002.",
+      "replacementStem": "En‘âm 6/65’te yukarıdan ve aşağıdan gelecek azabın yanında hangi toplumsal felâket anılır?",
+      "replacementLocator": "6/65; physical PDF 144"
+    },
+    {
+      "id": "new74-quran-195",
+      "rejectedStem": "En‘âm 6/50’de Hz. Peygamber’in kendisi için ileri sürmediği iddialar hangileridir?",
+      "reason": "Replace shared claim-denial fact already asked about Noah in new74-prophets-024.",
+      "replacementStem": "Yûnus 10/5’te aya menziller belirlenmesi insanların hangi bilgiyi edinmesiyle ilişkilendirilir?",
+      "replacementLocator": "10/5; physical PDF 219"
+    },
+    {
+      "id": "new74-quran-196",
+      "rejectedStem": "En‘âm 6/52’de Allah’ın rızasını isteyerek sabah akşam dua edenlere karşı hangi tutum yasaklanır?",
+      "reason": "Replace poor-worshipper exclusion theme close to old q66-kehf-28.",
+      "replacementStem": "Hicr 15/21’de hazinelerden indirilenler için hangi ölçü vurgulanır?",
+      "replacementLocator": "15/21; physical PDF 274"
+    },
+    {
+      "id": "new74-history-211",
+      "rejectedStem": "Osmanlı kitap sanatları çevresinde “mührezen” esnafının işi neydi?",
+      "reason": "Definition/function reversal repeats new74-history-208.",
+      "replacementStem": "Fâtih vakfiyesinde hâfız-ı kütüb için istenen bilgi özellikle hangi hizmetle ilgilidir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 101 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-212",
+      "rejectedStem": "Klasik İslâm yazmalarındaki siyah is mürekkebinin temel renk verici unsuru nedir?",
+      "reason": "Main ink ingredient repeats old q58-esma-ogul.",
+      "replacementStem": "Üsküdar Selim Ağa Kütüphanesi vakfiyesine göre ders de okutacak ilk iki hâfız-ı kütübü kim imtihan etmeliydi?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 110 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-213",
+      "rejectedStem": "Kandillerin isini toplamak için düzenlenen is odasının günümüze ulaşan tanınmış örneği hangi camidedir?",
+      "reason": "Reverse prompt repeats old q64-bedir-sefer on the Süleymaniye soot room.",
+      "replacementStem": "Abbâsî dönemi sağlık hizmetlerinde vezir Ali b. Îsâ’nın emriyle hekimlerin hapishanelere gönderilmesinin amacı neydi?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 116–117 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-216",
+      "rejectedStem": "Cezerî’nin Diyarbekir’de Artuklu emîri için hazırladığı resimli eser hangi alandaki düzenekleri anlatır?",
+      "reason": "Cezeri mechanical specialization repeats v10-history-009.",
+      "replacementStem": "III. Ahmed Kütüphanesi Topkapı Sarayı’nın hangi bölümünde bulunmaktadır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 887 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-213",
+      "rejectedStem": "Ahzâb 33/58’de hak etmedikleri hâlde müminleri incitenlerin ne yüklendiği bildirilir?",
+      "reason": "Rephrase of slander/sin consequence already in new74-quran-052.",
+      "replacementStem": "Mü’minûn 23/71’de hakikatin insanların keyfî arzularına uyması hâlinde ne olacağı söylenir?",
+      "replacementLocator": "23/71; physical PDF 364"
+    },
+    {
+      "id": "new74-general-234",
+      "rejectedStem": "Tuvalet ihtiyacından sonra idrar ve dışkı kalıntısının temizlenmesi hangi terimle anılır?",
+      "reason": "Definition repeats new74-general-039.",
+      "replacementStem": "TDV açıklamasına göre yalnız temizlik amacıyla üretilen tuvalet kâğıdının istincâda kullanılması nasıl değerlendirilir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 107 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-general-235",
+      "rejectedStem": "Tahâret bağlamında istibrâ neyi amaçlar?",
+      "reason": "Definition reversal repeats old v12-general-009.",
+      "replacementStem": "TDV’ye göre istibrâ için önerilmiş yürüme veya öksürme gibi yöntemler nasıl anlaşılmalıdır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 105 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-222",
+      "rejectedStem": "Âl-i İmrân 3/7’de “kitabın anası” olarak nitelenen âyet grubu hangisidir?",
+      "reason": "Muhkem-as-core question repeats old q65-hadid-3.",
+      "replacementStem": "Âyetin iniş sebebine esbâb-ı nüzûl denirken, bir hadis veya nebevî davranışın ortaya çıkış vesilesi hangi terimle anılır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-230",
+      "rejectedStem": "Bir hâfızın Kur’an okuyuşunu takip ederek hatim yapma geleneğinin adı nedir?",
+      "reason": "Definition repeats old quran-013.",
+      "replacementStem": "TDV’nin mukabele âdâbında, dinleyicilerin takip edebilmesi için önerdiği okuyuş nasıldır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 109 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-236",
+      "rejectedStem": "En yaygın tasnife göre âyetlerin Mekkî veya Medenî sayılmasında temel zaman sınırı nedir?",
+      "reason": "Mekki/Medeni threshold reverses old q71-sure-medenim.",
+      "replacementStem": "Âyet sayımlarındaki farklı rakamların sebeplerinden biri hangisidir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 115–116 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-237",
+      "rejectedStem": "Âyetin son kelimesi veya onu ayıran son harfi için hangi terim kullanılır?",
+      "reason": "Fasila definition repeats old q71-ayet-fasila.",
+      "replacementStem": "Âyetlerin hazarî veya seferî olarak tasnifi hangi bağlamı esas alır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 121–122 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-238",
+      "rejectedStem": "Kur’an okuyuşunda vakftan sonra yeniden başlamaya ne denir?",
+      "reason": "Ibtida definition repeats old v11-general-011.",
+      "replacementStem": "Kur’an öğretiminde öğrenciyi bilgilendirmek veya sınamak amacıyla yaptırılan vakfa ne denir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 104 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-231",
+      "rejectedStem": "Gevher Nesibe Dârüşşifâsı ve Gıyâseddin Keyhusrev Tıp Medresesi hangi şehirdedir?",
+      "reason": "Same city fact as new74-history-097.",
+      "replacementStem": "Selçuklu ve Osmanlı sağlık tarihinde “miskinler tekkesi” veya cüzzamhâne hangi hastaların bakımına ayrılmıştır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 152 (basılı sayfa numarası değildir)"
     }
   ]
 }
