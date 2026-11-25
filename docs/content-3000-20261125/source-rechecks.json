@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-25",
+  "method": "Source passages opened and compared with the existing question, four options and explanation. These are assistant source checks, not independent religious expert approval.",
+  "checks": [
+    {
+      "id": "quran-001",
+      "url": "https://islamansiklopedisi.org.tr/sure",
+      "locator": "Definition and discussion of the 114 surahs in the Uthmanic mushaf",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "114 is supported. Other numerical options do not fit the standard mushaf question."
+    },
+    {
+      "id": "prophets-001",
+      "url": "https://islamansiklopedisi.org.tr/muhammed",
+      "locator": "I. Hayatı / Nübüvvet Öncesi; birth in Mecca and childhood with Halime",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "Birthplace is distinguished from subsequent residence; all four options are cities."
+    },
+    {
+      "id": "prophets-002",
+      "url": "https://islamansiklopedisi.org.tr/muhammed",
+      "locator": "I. Hayatı / Nübüvvet Öncesi; mother Amine bint Vehb",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "The named mother is unambiguous in the source. This does not independently verify every biographical claim elsewhere in the bank."
+    },
+    {
+      "id": "prophets-005",
+      "url": "https://islamansiklopedisi.org.tr/hira",
+      "locator": "First revelation in Hira and Alak 96/1–5; article paragraphs corresponding to lines 102–104 in the accessed rendering",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "Shared word 'mağarası' in two options is not by itself a second correct answer; Hira and Sevr are distinct places."
+    },
+    {
+      "id": "history-001",
+      "url": "https://islamansiklopedisi.org.tr/hicret",
+      "locator": "Definition; migration from Mecca to Medina and muhacir terminology",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "Biat, muahat and conquest are not the name of the migration event."
+    },
+    {
+      "id": "history-002",
+      "url": "https://islamansiklopedisi.org.tr/hicret",
+      "locator": "622 chronology; source distinguishes conflicting exact day/month accounts from the migration year; official-calendar paragraph now also read (Omer, 17 AH/638)",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "622 chronology and later official adoption of a calendar under Omer compared with separate paragraphs of the same source."
+    },
+    {
+      "id": "history-004",
+      "url": "https://islamansiklopedisi.org.tr/hicret",
+      "locator": "Opening terminology paragraph: Medina Muslims assisting the Prophet and muhacirs are ensar",
+      "answer": "supported",
+      "explanation": "supported",
+      "singleAnswer": "supported",
+      "difficulty": "appropriate-easy",
+      "note": "Ensar is distinguished from the migrants (muhacir). Supporting source differs from the existing metadata URL; runtime metadata has not been edited."
+    }
+  ]
+}

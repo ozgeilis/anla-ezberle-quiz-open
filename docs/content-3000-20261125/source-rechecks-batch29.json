@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual source comparison",
+  "groups": [
+    {
+      "ids": [
+        "q63-bursa-ulucami",
+        "q63-bursa-bitis",
+        "q63-bursa-tamir",
+        "q63-bursa-vakif"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/ulucami",
+      "locator": "Bursa section: patron/date, repairs and bedesten (823–835)",
+      "partialIds": [],
+      "note": "Stem, four options, keyed answer and explanatory facts manually compared with the cited source passage."
+    },
+    {
+      "ids": [
+        "q68-zayif-tanim",
+        "q68-zayif-sebep",
+        "q68-zayif-uydurma",
+        "q68-zayif-hasen"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/zayif",
+      "locator": "Definition, classification and isnad interruption (98–102)",
+      "partialIds": [],
+      "note": "Stem, four options, keyed answer and explanatory facts manually compared with the cited source passage."
+    },
+    {
+      "ids": [
+        "q70-safii-dogum",
+        "q70-safii-anne",
+        "q70-safii-ilk",
+        "q70-safii-huzeyl"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/safii",
+      "locator": "Birth, mother, childhood teaching and Huzeyl (96–100)",
+      "partialIds": [],
+      "note": "Stem, four options, keyed answer and explanatory facts manually compared with the cited source passage."
+    },
+    {
+      "ids": ["q45-biruni-konu", "q45-biruni-yil", "q45-biruni-sehir"],
+      "url": "https://islamansiklopedisi.org.tr/el-asarul-bakiye",
+      "locator": "Scope, writing date and city (71, 96–100)",
+      "partialIds": [],
+      "note": "Stem, four options, keyed answer and explanatory facts manually compared with the cited source passage."
+    }
+  ]
+}

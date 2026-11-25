@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual source paragraph and full question-option-explanation comparison",
+  "groups": [
+    {
+      "ids": [
+        "quran-002",
+        "quran-003",
+        "quran-004",
+        "quran-009",
+        "e150-general-031",
+        "q71-mushaf-ilk",
+        "q71-mushaf-cuz",
+        "q71-mushaf-osmani"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/mushaf",
+      "locator": "Definition and first-section paragraphs on Osman manuscripts and reading divisions (cüz); Mehmet Emin Maşalı",
+      "partialIds": [],
+      "note": "Definitions, canonical order and thirty divisions checked. Meal contrast additionally compared with TDV Meal introduction.",
+      "supplementaryUrls": ["https://islamansiklopedisi.org.tr/meal"]
+    },
+    {
+      "ids": [
+        "quran-005",
+        "pilot-quran-004",
+        "q71-sure-114",
+        "q71-sure-medenim",
+        "q71-sure-28",
+        "q71-sure-besmele"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/sure",
+      "locator": "Abdulhamit Birışık; definition, count, Mekki/Medeni classification and grouped names",
+      "partialIds": [],
+      "note": "Conventional classifications retain source qualification; competing counts or dating criteria not presented as universally settled.",
+      "supplementaryUrls": ["https://islamansiklopedisi.org.tr/mushaf"]
+    },
+    {
+      "ids": ["quran-007", "e150-general-032", "v11-general-008"],
+      "url": "https://islamansiklopedisi.org.tr/meal",
+      "locator": "Mustafa Öztürk; introduction on Turkish use of meal and final distinction of original text versus translation",
+      "partialIds": [],
+      "note": "Comparison checks meaning translation versus original text, recitation/transliteration or exegesis.",
+      "supplementaryUrls": []
+    },
+    {
+      "ids": [
+        "v10-history-001",
+        "v10-history-002",
+        "learn-women-002",
+        "q48-esma-001",
+        "q48-esma-002",
+        "q48-esma-003",
+        "q48-esma-004",
+        "q48-esma-005",
+        "q48-esma-006",
+        "q58-esma-kunye",
+        "q58-esma-ogul",
+        "q58-esma-azik",
+        "q58-esma-kardes"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/esma-bint-ebu-bekir",
+      "locator": "Ali Yardım; family, migration-preparation, children and Kuteyle-visit paragraphs; update 26.07.2025",
+      "partialIds": ["q58-esma-ogul"],
+      "note": "All options and explanations read; q58-esma-ogul still needs direct Abdullah biography for the additional Mecca-caliphate stem qualifier.",
+      "supplementaryUrls": []
+    },
+    {
+      "ids": [
+        "history-007",
+        "history-012",
+        "e150-history-004",
+        "e150-history-005",
+        "e150-history-009",
+        "q48-hicret-015",
+        "q48-hicret-016",
+        "q48-hicret-017",
+        "q48-hicret-018",
+        "q48-hicret-019",
+        "q48-hicret-020",
+        "q48-hicret-021",
+        "q56-hicret-donus",
+        "q56-hicret-vesika"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/hicret",
+      "locator": "Ahmet Önkal; terminology, Sevr preparation/journey, post-hijra polity and official calendar paragraphs; update 01.09.2025",
+      "partialIds": ["history-012", "q48-hicret-018", "q48-hicret-019"],
+      "note": "Core answers supported. Three ancillary statements need the related calendar/Ali/Omer passage; these are explicitly not full-source-complete.",
+      "supplementaryUrls": []
+    }
+  ]
+}

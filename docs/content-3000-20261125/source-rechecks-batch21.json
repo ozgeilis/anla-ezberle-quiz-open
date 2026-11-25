@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual source comparison",
+  "groups": [
+    {
+      "ids": [
+        "general-001",
+        "e150-general-013",
+        "e150-general-014",
+        "q57-ezanbilal",
+        "q57-ezanruya",
+        "q57-ezansebep"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/ezan",
+      "locator": "TDV definition, Medine need, Abdullah b Zeyd dream and Bilal first call (116–122)",
+      "partialIds": [],
+      "note": "Actual source compared with stem, four options, key and explanation; legal-school qualifiers retained."
+    },
+    {
+      "ids": [
+        "pilot-general-003",
+        "e150-general-025",
+        "e150-general-026",
+        "q47-hac-038",
+        "q62-say-mekan",
+        "q62-say-sayi"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/say",
+      "locator": "TDV definition, four outbound/three return, distinction from tavAf wording and school-specific law (96–101)",
+      "partialIds": ["pilot-general-003"],
+      "note": "Actual passages compared with stem, four options, key and explanation. Pilot say explanation retains pending auxiliary terminology check."
+    },
+    {
+      "ids": [
+        "q52-sadaka-006",
+        "q52-sadaka-007",
+        "q52-sadaka-009",
+        "q52-sadaka-010",
+        "q62-sadaka-genis",
+        "q62-sadaka-soyl"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/sadaka",
+      "locator": "TDV definition, root, tasadduk, singular/plural references, vows and good deeds (96–103, 115–117)",
+      "partialIds": [],
+      "note": "Actual source compared with stem, four options, key and explanation; legal-school qualifiers retained."
+    },
+    {
+      "ids": [
+        "e150-general-021",
+        "q47-hac-035",
+        "q47-hac-036",
+        "q47-hac-039",
+        "q47-hac-040",
+        "q62-hac-konu",
+        "q62-hac-arafat",
+        "q62-hac-sayi",
+        "q62-hac-ihram",
+        "q62-hac-hanefi"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/hac",
+      "locator": "TDV Hac: Hanefi farz/condition distinction, Arafat, miqat, say, ihram and sequence (426–430, 449–455, 465–470)",
+      "partialIds": [],
+      "note": "Actual source compared with stem, four options, key and explanation; legal-school qualifiers retained."
+    }
+  ]
+}

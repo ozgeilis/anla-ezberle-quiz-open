@@ -1,0 +1,635 @@
+{
+  "date": "2026-11-25",
+  "scope": "Semantic overlap of the tested fact, not a claim about religious correctness. Definition reversals and digit/word variants count as the same tested fact. No IDs removed or runtime entries edited.",
+  "groups": [
+    {
+      "fact": "standard-mushaf-surah-count",
+      "ids": [
+        "quran-001",
+        "q71-sure-114"
+      ]
+    },
+    {
+      "fact": "standard-mushaf-first-surah",
+      "ids": [
+        "quran-002",
+        "q71-mushaf-ilk"
+      ]
+    },
+    {
+      "fact": "sahur-pre-imsak-meal",
+      "ids": [
+        "general-006",
+        "e150-general-005",
+        "v12-general-009"
+      ]
+    },
+    {
+      "fact": "tawaf-seven-circuits",
+      "ids": [
+        "e150-general-024",
+        "q62-tavaf-sayisi"
+      ]
+    },
+    {
+      "fact": "zakat-obligatory-wealth-share",
+      "ids": [
+        "general-004",
+        "e150-general-007"
+      ]
+    },
+    {
+      "fact": "minbar-khutba-stairs",
+      "ids": [
+        "general-009",
+        "v11-general-004"
+      ]
+    },
+    {
+      "fact": "muezzin-adhan-official",
+      "ids": [
+        "pilot-general-001",
+        "v11-general-006"
+      ]
+    },
+    {
+      "fact": "meal-turkish-meaning-translation",
+      "ids": [
+        "quran-007",
+        "v11-general-008",
+        "e150-general-032"
+      ]
+    },
+    {
+      "fact": "tafsir-science-definition",
+      "ids": [
+        "quran-006",
+        "v11-general-009",
+        "q58-tefsir-tanim"
+      ]
+    },
+    {
+      "fact": "qibla-prayer-direction",
+      "ids": [
+        "e150-general-015",
+        "v11-general-001"
+      ]
+    },
+    {
+      "fact": "mahya-minaret-illuminated-writing",
+      "ids": [
+        "general-012",
+        "v13-general-003"
+      ]
+    },
+    {
+      "fact": "iftar-breaking-fast",
+      "ids": [
+        "general-007",
+        "v12-general-008",
+        "q57-oruclft"
+      ]
+    },
+    {
+      "fact": "hud-11-38-noah-mocked",
+      "ids": [
+        "e150-prophets-026",
+        "q57-nuhalay"
+      ]
+    },
+    {
+      "fact": "wind-subjected-to-solomon",
+      "ids": [
+        "e150-prophets-025",
+        "v12-prophets-013"
+      ]
+    },
+    {
+      "fact": "aaron-helper-brother-of-moses",
+      "ids": [
+        "prophets-007",
+        "v13-prophets-004",
+        "q57-musaharun",
+        "q67-kasas-34"
+      ]
+    },
+    {
+      "fact": "moses-staff-sea-splits",
+      "ids": [
+        "e150-prophets-018",
+        "v11-prophets-006"
+      ]
+    },
+    {
+      "fact": "solomon-taught-language-of-birds",
+      "ids": [
+        "v9-prophets-008",
+        "q47-suleyman-026"
+      ]
+    },
+    {
+      "fact": "baqara-2-153-patience-and-prayer",
+      "ids": [
+        "quran-meaning-v72-002",
+        "v12-general-005"
+      ]
+    },
+    {
+      "fact": "isra-17-23-no-uff-to-parents",
+      "ids": [
+        "v12-general-001",
+        "q65-isra-23"
+      ]
+    },
+    {
+      "fact": "inshirah-hardship-with-ease",
+      "ids": [
+        "v9-quran-008",
+        "q44-insirah-5"
+      ]
+    },
+    {
+      "fact": "uhud-near-medina",
+      "ids": [
+        "pilot-history-002",
+        "q64-uhud-mekan"
+      ]
+    },
+    {
+      "fact": "uhud-year-three-ah",
+      "ids": [
+        "e150-history-020",
+        "q64-uhud-yil"
+      ]
+    },
+    {
+      "fact": "medina-former-name-yathrib",
+      "ids": [
+        "history-005",
+        "q64-medine-eski"
+      ]
+    },
+    {
+      "fact": "ensar-medina-helpers",
+      "ids": [
+        "history-004",
+        "q64-medine-ensar"
+      ]
+    },
+    {
+      "fact": "kutub-sitta-six-books",
+      "ids": [
+        "q49-kutub-025",
+        "q68-sitte-anlam",
+        "v8-general-003"
+      ]
+    },
+    {
+      "fact": "sadaqa-inclusive-financial-help",
+      "ids": [
+        "v13-general-004",
+        "q52-sadaka-008"
+      ]
+    },
+    {
+      "fact": "waqfa-staying-designated-time",
+      "ids": [
+        "q47-vakfe-042",
+        "q62-vakfe-anlam"
+      ]
+    },
+    {
+      "fact": "tajwid-reading-pronunciation-rules",
+      "ids": [
+        "v11-general-002",
+        "q58-tecvid-ana"
+      ]
+    },
+    {
+      "fact": "jonah-swallowed-by-fish",
+      "ids": [
+        "prophets-011",
+        "v11-prophets-010"
+      ]
+    },
+    {
+      "fact": "jesus-speaks-in-cradle",
+      "ids": [
+        "e150-prophets-036",
+        "v11-prophets-012"
+      ]
+    },
+    {
+      "fact": "sahihayn-two-collections",
+      "ids": [
+        "q49-kutub-026",
+        "q68-sitte-sahihayn"
+      ]
+    },
+    {
+      "fact": "common-sixth-book-author-ibn-maja",
+      "ids": [
+        "q49-kutub-027",
+        "q68-sitte-ibnmace"
+      ]
+    },
+    {
+      "fact": "suffa-guests-of-islam-epithet",
+      "ids": [
+        "q51-suffe-019",
+        "q60-suffe-misafir"
+      ]
+    },
+    {
+      "fact": "suffa-shelter-for-unhoused-companions",
+      "ids": [
+        "q51-suffe-017",
+        "q60-suffe-kim"
+      ]
+    },
+    {
+      "fact": "thirty-cuz-standard-division",
+      "ids": [
+        "quran-003",
+        "q71-mushaf-cuz"
+      ]
+    },
+    {
+      "fact": "asmas-two-belts-epithet",
+      "ids": [
+        "v10-history-001",
+        "q58-esma-kunye"
+      ]
+    },
+    {
+      "fact": "asmas-containers-bound-for-hijra",
+      "ids": [
+        "q48-esma-001",
+        "q58-esma-azik"
+      ]
+    },
+    {
+      "fact": "asma-aisha-paternal-sisters",
+      "ids": [
+        "learn-women-002",
+        "q48-esma-006",
+        "q58-esma-kardes"
+      ]
+    },
+    {
+      "fact": "asma-mother-of-abdullah-ibn-zubayr",
+      "ids": [
+        "v10-history-002",
+        "q58-esma-ogul"
+      ]
+    },
+    {
+      "fact": "hijra-guide-abdullah-ibn-urayqit",
+      "ids": [
+        "q48-hicret-015",
+        "q48-hicret-021"
+      ]
+    },
+    {
+      "fact": "badr-date-ah-two-624",
+      "ids": [
+        "pilot-history-001",
+        "q64-bedir-sefer"
+      ]
+    },
+    {
+      "fact": "ad-storm-seven-nights-eight-days",
+      "ids": [
+        "q50-hud-003",
+        "q61-hud-sure"
+      ]
+    },
+    {
+      "fact": "ad-boastful-monuments-condemned",
+      "ids": [
+        "q50-hud-005",
+        "q61-hud-bina"
+      ]
+    },
+    {
+      "fact": "mulk-67-2-test-good-deeds",
+      "ids": [
+        "v12-quran-011",
+        "learn-akaid-016"
+      ]
+    },
+    {
+      "fact": "hadid-57-3-four-divine-names",
+      "ids": [
+        "learn-akaid-015",
+        "q65-hadid-3"
+      ]
+    },
+    {
+      "fact": "ifrit-offers-bringing-throne",
+      "ids": [
+        "v12-prophets-004",
+        "q66-neml-39"
+      ]
+    },
+    {
+      "fact": "scripture-knowledge-throne-bringer",
+      "ids": [
+        "v12-prophets-005",
+        "q66-neml-40"
+      ]
+    },
+    {
+      "fact": "world-life-plants-grow-then-dry-simile",
+      "ids": [
+        "q65-hadid-20",
+        "q66-kehf-45"
+      ]
+    },
+    {
+      "fact": "hudaybiyya-treaty-parties",
+      "ids": [
+        "pilot-history-003",
+        "e150-history-025"
+      ]
+    },
+    {
+      "fact": "umm-salama-hudaybiyya-example-advice",
+      "ids": [
+        "q48-ummu-seleme-011",
+        "q58-seleme-hud"
+      ]
+    },
+    {
+      "fact": "ansar-aws-and-khazraj",
+      "ids": [
+        "e150-history-007",
+        "q51-ensar-001"
+      ]
+    },
+    {
+      "fact": "ansar-nasr-help-root",
+      "ids": [
+        "e150-history-006",
+        "q51-ensar-002"
+      ]
+    },
+    {
+      "fact": "zayd-abu-bakr-quran-compilation-leader",
+      "ids": [
+        "e150-history-032",
+        "q69-zeydbsabit-cem"
+      ]
+    },
+    {
+      "fact": "fitra-eid-charity-name",
+      "ids": [
+        "v7-general-002",
+        "v13-general-002",
+        "q62-fitre-ad"
+      ]
+    },
+    {
+      "fact": "udhiyye-eid-sacrifice-term",
+      "ids": [
+        "q52-kurban-021",
+        "q71-kurban-niyet"
+      ]
+    },
+    {
+      "fact": "hadith-prophetic-sayings-actions-approvals-definition",
+      "ids": [
+        "v9-general-008",
+        "q68-hadis-tanim"
+      ]
+    },
+    {
+      "fact": "ihya-authored-by-ghazali",
+      "ids": [
+        "v13-history-007",
+        "q49-ihya-017"
+      ]
+    },
+    {
+      "fact": "shuayb-madyan-mission",
+      "ids": [
+        "pilot-prophets-001",
+        "q57-suaybmed"
+      ]
+    },
+    {
+      "fact": "shuayb-hatib-al-anbiya",
+      "ids": [
+        "q50-suayb-009",
+        "q57-suaybeyke"
+      ]
+    },
+    {
+      "fact": "waqf-permanent-charitable-dedication",
+      "ids": [
+        "general-010",
+        "q57-vakifgay"
+      ]
+    },
+    {
+      "fact": "say-seven-circuits",
+      "ids": [
+        "e150-general-026",
+        "q62-say-sayi"
+      ]
+    },
+    {
+      "fact": "say-safa-marwa-definition",
+      "ids": [
+        "pilot-general-003",
+        "q47-hac-038",
+        "q62-hac-sayi"
+      ]
+    },
+    {
+      "fact": "bilal-first-muezzin",
+      "ids": [
+        "e150-general-014",
+        "q57-ezanbilal"
+      ]
+    },
+    {
+      "fact": "elijah-against-baal",
+      "ids": [
+        "v8-prophets-001",
+        "q71-ilyas-baal"
+      ]
+    },
+    {
+      "fact": "shafii-risala-author",
+      "ids": [
+        "v13-history-002",
+        "q70-safii-risale"
+      ]
+    },
+    {
+      "fact": "weak-hadith-misses-sahih-or-hasan-criteria",
+      "ids": [
+        "q68-zayif-tanim",
+        "q68-zayif-hasen"
+      ]
+    },
+    {
+      "fact": "ramadan-obligatory-fast",
+      "ids": [
+        "general-002",
+        "e150-general-004"
+      ]
+    },
+    {
+      "fact": "mahrec-articulation-place",
+      "ids": [
+        "v11-general-005",
+        "q58-tecvid-mahrec"
+      ]
+    },
+    {
+      "fact": "mukabele-follow-recitation",
+      "ids": [
+        "quran-013",
+        "v11-general-011"
+      ]
+    },
+    {
+      "fact": "jesus-son-of-mary",
+      "ids": [
+        "prophets-008",
+        "q61-isa-meryem"
+      ]
+    },
+    {
+      "fact": "waqf-deed-definition",
+      "ids": [
+        "v10-general-003",
+        "q57-vakfiyeterim"
+      ]
+    },
+    {
+      "fact": "ravi-hadith-transmitter",
+      "ids": [
+        "v10-general-009",
+        "q68-hadis-riayet"
+      ]
+    },
+    {
+      "fact": "katib-kesf-bibliography",
+      "ids": [
+        "v11-history-010",
+        "q59-katib-kesf"
+      ]
+    },
+    {
+      "fact": "selimiye-patron-selim-ii",
+      "ids": [
+        "learn-history-019",
+        "q63-selimiye-bani"
+      ]
+    },
+    {
+      "fact": "hud-ad-ahqaf-location",
+      "ids": [
+        "q50-hud-001",
+        "q61-hud-ahkaf"
+      ]
+    },
+    {
+      "fact": "fil-surah-elephant-army-defeat",
+      "ids": [
+        "pilot-quran-003",
+        "v11-quran-002"
+      ]
+    },
+    {
+      "fact": "hira-nur-mountain",
+      "ids": [
+        "e150-history-001",
+        "e150-history-002"
+      ]
+    },
+    {
+      "fact": "david-zabur-book",
+      "ids": [
+        "pilot-prophets-002",
+        "q57-davudzebur"
+      ]
+    },
+    {
+      "fact": "umm-haram-sulaym-sisters",
+      "ids": [
+        "learn-women-018",
+        "q58-suleym-kardes"
+      ]
+    },
+    {
+      "fact": "enbiya-85-three-patient-figures",
+      "ids": [
+        "v8-prophets-005",
+        "q71-idris-sabir"
+      ]
+    },
+    {
+      "fact": "itikaf-devotional-stay",
+      "ids": [
+        "v7-general-003",
+        "v13-general-005"
+      ]
+    },
+    {
+      "fact": "selimiye-edirne-city",
+      "ids": [
+        "v11-history-012",
+        "q63-selimiye-sehir"
+      ]
+    },
+    {
+      "fact": "khwarizmi-algebra-book-authorship-title-reversal",
+      "ids": [
+        "v10-history-008",
+        "q45-harizmi-eser"
+      ]
+    },
+    {
+      "fact": "taberi-history-title-alias-author-revealing",
+      "ids": [
+        "q49-taberi-009",
+        "q49-taberi-010"
+      ]
+    },
+    {
+      "fact": "yusuf-egypt-purchaser-location",
+      "ids": [
+        "e150-prophets-007",
+        "v11-prophets-002"
+      ]
+    },
+    {
+      "fact": "yusuf-shirt-false-blood-reversed-attribute",
+      "ids": [
+        "e150-prophets-004",
+        "v11-prophets-001"
+      ]
+    },
+    {
+      "fact": "abraham-fire-cool-safe",
+      "ids": [
+        "v7-prophets-003",
+        "v12-prophets-003"
+      ],
+      "evidence": "Follow-up full-bank source/fact review: same event fact in a definition/reversal formulation."
+    },
+    {
+      "fact": "queen-mistakes-glass-for-water",
+      "ids": [
+        "v12-prophets-006",
+        "q66-neml-44"
+      ],
+      "evidence": "Follow-up full-bank source/fact review: same event fact in a definition/reversal formulation."
+    }
+  ],
+  "nextAction": "Compare all four options and explanations for each group; retain one fact instance and prepare independently source-checked different replacements in a new bank revision while preserving historical snapshots and saved-record lookup. This list does not authorize immediate deletion."
+}

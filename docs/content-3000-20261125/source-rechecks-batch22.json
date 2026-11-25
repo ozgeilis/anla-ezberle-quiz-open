@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual source comparison",
+  "groups": [
+    {
+      "ids": [
+        "q70-ebu-hanife-asli",
+        "q70-ebu-hanife-dogum",
+        "q70-ebu-hanife-lakap",
+        "q70-ebu-hanife-ticaret",
+        "q70-ebu-hanife-mezhep",
+        "q70-ebu-hanife-kadi"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/ebu-hanife",
+      "locator": "TDV name, title, birth, school, trade and offered office (116–119, 127, 148)",
+      "partialIds": [],
+      "note": "Stem, four options, answer and explanation manually compared with actual article; differing biographical reports remain qualified."
+    },
+    {
+      "ids": [
+        "q70-ahmed-b-hanbel-dogum",
+        "q70-ahmed-b-hanbel-annesinin-adi",
+        "q70-ahmed-b-hanbel-hoca",
+        "q70-ahmed-b-hanbel-yemen",
+        "q70-ahmed-b-hanbel-eser",
+        "q70-ahmed-b-hanbel-vefat"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/ahmed-b-hanbel",
+      "locator": "TDV birth, mother, teachers, Yemen journey, death and Musned (114–118, 131, 148–153)",
+      "partialIds": [],
+      "note": "Stem, four options, answer and explanation manually compared with actual article; differing biographical reports remain qualified."
+    },
+    {
+      "ids": [
+        "q70-gazzali-dogum",
+        "q70-gazzali-kunye",
+        "q70-gazzali-lakap",
+        "q70-gazzali-sam",
+        "q70-gazzali-kudus",
+        "q70-gazzali-kimya"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/gazzali",
+      "locator": "TDV birth/title/kunya (125), self-reported retreat route (180), Kimya-yI Saadet (1263–1265)",
+      "partialIds": [],
+      "note": "Stem, four options, answer and explanation manually compared with actual article; differing biographical reports remain qualified."
+    }
+  ]
+}

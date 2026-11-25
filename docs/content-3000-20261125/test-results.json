@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-25",
+  "targetedNewAuditUnitTests": {
+    "status": "PASSED",
+    "passed": 7,
+    "failed": 0,
+    "method": "node --import tsx -e require of content-expansion-baseline.test.ts, same-process node:test",
+    "scope": "720 staged additions and 128 old editorial patches, including 98 duplicate replacements; after latest source/wording refinements",
+    "durationMs": 76.578209
+  },
+  "targetedTypeScriptSemanticCheck": {
+    "status": "PASSED",
+    "note": "Covered by the completed full-project TypeScript check."
+  },
+  "targetedESLint": {
+    "status": "PASSED",
+    "scope": [
+      "scripts/content-expansion-baseline.ts",
+      "tests/content-expansion-baseline.test.ts",
+      "src/content/questions/existing-patches-v74.ts",
+      "src/content/questions/questions-v74.candidate.ts"
+    ]
+  },
+  "all1500StructuralAudit": {
+    "status": "PASSED",
+    "records": 1500,
+    "structuralIssues": 0,
+    "evidence": "baseline-audit.json",
+    "religiousAccuracyProven": false
+  },
+  "historicalAndCategoryTestRuns": {
+    "status": "PASSED",
+    "passed": 28,
+    "failed": 0,
+    "durationMs": 101469.575667,
+    "method": "same-process node --import tsx -e require of five selected test modules",
+    "scope": [
+      "content-expansion-baseline",
+      "canonical-questions",
+      "broad-categories-history",
+      "question-similarity-audit",
+      "audit-published-questions"
+    ],
+    "note": "Completed on 500 staged additions and 126 old patches; selected suite only. Later changes are covered by the seven-test run on 720 additions/128 old patches. No full application suite claim."
+  },
+  "fullProjectTypecheck": {
+    "status": "PASSED",
+    "command": "node node_modules/typescript/bin/tsc --noEmit --pretty false",
+    "exitCode": 0,
+    "date": "2026-11-25",
+    "note": "Full project check passed at 126 old patches. Latest complete check of Git-identical tracked source and 128 old patches passed in a separate source snapshot; four changed TypeScript files were byte-identical to worktree. No binary/build created.",
+    "latestSnapshot": {
+      "status": "PASSED",
+      "exitCode": 0,
+      "trackedSourceFiles": 752,
+      "sameTypeScriptFilesSha256": {
+        "scripts/content-expansion-baseline.ts": "d4b00a9764603e3b40a2769dd3255e81b653b0fc4854bbc4f4f8854d7ec6cae3",
+        "tests/content-expansion-baseline.test.ts": "dfc1b114dd58ad9df4e737c801fdbb2643cc5e8db0dd2310917e3d1f1176aad3",
+        "src/content/questions/existing-patches-v74.ts": "137adf8cd5095a1a3915a36c488a913ed075da4dbd1f35db2949a69a4023db93",
+        "src/content/questions/questions-v74.candidate.ts": "02620ea4249a6212352c31993ea58eba10601689de38c43dc5d217494afa3014"
+      }
+    }
+  },
+  "bank3000Integrity": {
+    "status": "NOT_RUN",
+    "reason": "No 3000-question candidate exists yet; no new questions integrated."
+  },
+  "deviceTests": {
+    "status": "NOT_RUN",
+    "reason": "Content audit only; no app build or runtime content change."
+  },
+  "religiousVerification": {
+    "status": "INCOMPLETE",
+    "existingAnswerSourceChecks": 1500,
+    "originalExplanationsSupported": 1496,
+    "originalExplanationsRequiringCorrection": 4,
+    "remainingExistingSourceChecks": 0,
+    "newSourceComparedStaged": 720,
+    "existingDuplicateReplacementsStaged": 98,
+    "bankWideSemanticAcceptance": "pending",
+    "mediumHardFullDifficultyCalibration": "pending",
+    "expertApprovalClaimed": false
+  },
+  "publication": {
+    "mainMerged": false,
+    "storeBuildCreated": false,
+    "backendChanged": false
+  },
+  "stalledRunner": {
+    "status": "STOPPED",
+    "note": "An earlier process-isolated repeat stalled and was terminated; it is not counted as passing. The later same-process selected run completed with 28 passing tests."
+  },
+  "stalledTypeScriptAttempt": {
+    "status": "STOPPED_NOT_PASSED",
+    "reason": "Desktop synchronous reads of unchanged source files stalled; own processes terminated, not counted as passing. Subsequent full source-snapshot check completed with exit 0."
+  }
+}

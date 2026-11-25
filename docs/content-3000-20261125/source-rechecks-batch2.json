@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-25",
+  "method": "Read official TDV passages and compared the stems, keyed options and explanations already examined in the overlap review. No copied article text. Full explanation means the explanation's claims are supported; partial means only the answer/core definition was checked.",
+  "groups": [
+    {
+      "ids": ["general-006", "e150-general-005", "v12-general-009"],
+      "url": "https://islamansiklopedisi.org.tr/sahur",
+      "locator": "Definition and opening paragraph, before dawn; accompanying iftar definition",
+      "supplementaryUrls": ["https://islamansiklopedisi.org.tr/iftar"],
+      "partialIds": [],
+      "note": "The meal before imsak is distinguished from breaking the fast."
+    },
+    {
+      "ids": ["general-007", "v12-general-008", "q57-oruclft"],
+      "url": "https://islamansiklopedisi.org.tr/iftar",
+      "locator": "First section, legal term and Turkish usage, paragraphs 111–114 in accessed rendering",
+      "partialIds": ["v12-general-008"],
+      "note": "Opening the fast at the appropriate time is supported. The sunset timing clause in v12-general-008 still needs a separately recorded passage."
+    },
+    {
+      "ids": ["e150-general-024", "q62-tavaf-sayisi"],
+      "url": "https://islamansiklopedisi.org.tr/tavaf",
+      "locator": "Opening paragraph: seven circuits, each starting/ending at Hacerulesved alignment",
+      "partialIds": [],
+      "note": "Digit and written-number answer forms express the same count; not distinct facts."
+    },
+    {
+      "ids": ["general-009", "v11-general-004"],
+      "url": "https://islamansiklopedisi.org.tr/minber",
+      "locator": "Definition and opening paragraph: stepped khutba structure, visibility and audibility",
+      "partialIds": [],
+      "note": "The architecture term and purpose support the keyed option."
+    },
+    {
+      "ids": ["pilot-general-001", "v11-general-006"],
+      "url": "https://islamansiklopedisi.org.tr/muezzin",
+      "locator": "Opening paragraph: caller, reciter of adhan/iqama",
+      "partialIds": [],
+      "note": "Adhan caller is distinguished from preacher, teacher and commentator roles."
+    },
+    {
+      "ids": ["quran-006", "v11-general-009", "q58-tefsir-tanim"],
+      "url": "https://islamansiklopedisi.org.tr/tefsir",
+      "locator": "Definition: interpretation/explanation of Quran verses, discipline and books",
+      "partialIds": [],
+      "note": "All three entries test the same basic discipline definition."
+    },
+    {
+      "ids": ["e150-general-015", "v11-general-001"],
+      "url": "https://islamansiklopedisi.org.tr/kible",
+      "locator": "Definition and opening overview: direction of prayer, Kaba",
+      "partialIds": ["e150-general-015", "v11-general-001"],
+      "note": "Core direction/key checked; secondary descriptions of mihrab/saf in the explanations need separate source coverage."
+    },
+    {
+      "ids": ["general-004", "e150-general-007"],
+      "url": "https://islamansiklopedisi.org.tr/zekat",
+      "locator": "Opening terminology paragraph: designated share of wealth of the religiously wealthy for specified recipient classes",
+      "partialIds": ["general-004", "e150-general-007"],
+      "note": "Core zakat definition checked. Explanatory comparisons with fidya, kaffara, qard and nadhr need their individual passages."
+    },
+    {
+      "ids": ["q47-vakfe-042", "q62-vakfe-anlam"],
+      "url": "https://islamansiklopedisi.org.tr/vakfe",
+      "locator": "Definition and opening paragraph: prescribed time/place, Arafat and Muzdalifa",
+      "partialIds": [],
+      "note": "The keyed definition describes presence/staying; not tawaf, walking or stoning."
+    },
+    {
+      "ids": ["v13-general-004", "q52-sadaka-008"],
+      "url": "https://islamansiklopedisi.org.tr/sadaka",
+      "locator": "Definition and five-type classification, paragraphs 96 and 102–103 in accessed rendering",
+      "partialIds": ["v13-general-004"],
+      "note": "Voluntary and obligatory assistance, including zakat/fitra, is supported. Separate descriptions of mahr, diya and wages in v13-general-004 are not verified here."
+    },
+    {
+      "ids": ["general-012", "v13-general-003"],
+      "url": "https://islamansiklopedisi.org.tr/mahya--ramazan",
+      "locator": "Article definition: illuminated text or picture panel between minarets, especially Ramadan",
+      "partialIds": [],
+      "note": "Used the specific Ramadan article; generic mahya URL could not be opened by the browser tool."
+    },
+    {
+      "ids": ["v11-general-002", "q58-tecvid-ana"],
+      "url": "https://islamansiklopedisi.org.tr/tecvid--kuran",
+      "locator": "Definition, pronunciation/letter characteristics and reading rules including pauses, paragraphs 96–102",
+      "partialIds": [],
+      "note": "Used the Quran-recitation article, distinct from hadith terminology; generic tecvid URL could not be opened by the browser tool."
+    },
+    {
+      "ids": ["quran-meaning-v72-002", "v12-general-005"],
+      "url": "https://kuran.diyanet.gov.tr/kuran?ayet=153&mode=tefsir&sure=2",
+      "locator": "Bakara 2/153, meal and commentary on patience and prayer",
+      "partialIds": [],
+      "note": "The same two-part recommendation and the explanation of patience are supported; different wording does not make a new fact."
+    },
+    {
+      "ids": ["e150-prophets-026", "q57-nuhalay"],
+      "url": "https://kuran.diyanet.gov.tr/tefsir/H%C3%BBd-suresi/1511/38-39-ayet-tefsiri",
+      "locator": "Hud 11/38–39, meal and commentary",
+      "partialIds": [],
+      "note": "Leaders mocking Noah while he builds the ship is stated directly in the meal."
+    },
+    {
+      "ids": ["v9-quran-008", "q44-insirah-5"],
+      "url": "https://kuran.diyanet.gov.tr/kuran?ayet=1&mode=kuran-meal&sure=94",
+      "locator": "Inshirah 94/5–6, both clauses on hardship and ease",
+      "partialIds": [],
+      "note": "Two adjacent clauses support the repeated message. Search snippets can misalign verse numbering; use the complete displayed meal."
+    },
+    {
+      "ids": ["e150-prophets-025", "v12-prophets-013"],
+      "url": "https://kuran.diyanet.gov.tr/tefsir/Sebe%27-suresi/3618/12-ayet-tefsiri",
+      "locator": "Saba 34/12 meal: wind placed at Solomon's service",
+      "partialIds": [],
+      "note": "Checks the verse's statement, without treating disputed explanations of how the wind worked as an extra factual answer."
+    },
+    {
+      "ids": ["prophets-011", "v11-prophets-010"],
+      "url": "https://kuran.diyanet.gov.tr/mushaf/meal-2/saffat-suresi-37/ayet-139/kuran-yolu-meali-5",
+      "locator": "Saffat 37/139–142: Jonah and the fish",
+      "partialIds": [],
+      "note": "The text identifies Jonah and a fish; neither species nor time inside the fish is inferred."
+    }
+  ]
+}

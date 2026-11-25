@@ -1,0 +1,43 @@
+{
+  "count": 1500,
+  "categories": {
+    "quran": 450,
+    "prophets": 230,
+    "history": 401,
+    "general": 419
+  },
+  "difficulties": {
+    "easy": 475,
+    "medium": 789,
+    "hard": 236
+  },
+  "sourceCheckStatuses": {
+    "supported": 1510
+  },
+  "sourceDomains": {
+    "ansiklopedi.tubitak.gov.tr": 5,
+    "islamansiklopedisi.org.tr": 934,
+    "kuran.diyanet.gov.tr": 101,
+    "dijital.diyanet.gov.tr": 470
+  },
+  "noIndependentReviewTimestamp": 1500,
+  "repeatedTemplates": {
+    "template:surah-mushaf-order": 7,
+    "template:surah-verse-count": 6,
+    "template:passage-isra-26-27": 3,
+    "template:city-region": 1
+  },
+  "similarityCandidates": 382,
+  "reviewSignalCounts": {
+    "same-answer-and-concept": 4,
+    "same-concept": 326,
+    "text-overlap": 52
+  },
+  "structuralIssues": [],
+  "limitations": [
+    "Source links and recorded statuses are metadata; this scan does not open or fact-check source passages.",
+    "A missing reviewedAt timestamp is not proof of no human review, and approved is not independent expert certification.",
+    "Text similarity is a review signal only; similar questions may test distinct facts.",
+    "Device testing, online Supabase rollout, platform signing, privacy review, and store submission are outside this scan."
+  ]
+}

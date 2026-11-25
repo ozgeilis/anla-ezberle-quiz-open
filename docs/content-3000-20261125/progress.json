@@ -1,0 +1,159 @@
+{
+  "baseCommit": "3a74086",
+  "bankVersion": 73,
+  "questionCount": 1500,
+  "uniqueIds": 1500,
+  "bankSha256": "917c721b152ce3d40c60cd1d37c6c45c0ac3aa73b5f05b2c4a0ffd871330e35d",
+  "distributionDecision": "2026-11-25: user chose 375 new questions per existing schema category; preserve old category assignments",
+  "categories": [
+    {
+      "id": "quran",
+      "title": "Kur’an",
+      "existing": 450,
+      "newTarget": 375,
+      "projectedTotal": 825,
+      "provisionalFinalDifficulty": {
+        "easy": 275,
+        "medium": 275,
+        "hard": 275
+      },
+      "provisionalNewDifficulty": {
+        "easy": 105,
+        "medium": 23,
+        "hard": 247
+      },
+      "existingDifficulty": {
+        "easy": 170,
+        "medium": 252,
+        "hard": 28
+      }
+    },
+    {
+      "id": "prophets",
+      "title": "Peygamberler",
+      "existing": 230,
+      "newTarget": 375,
+      "projectedTotal": 605,
+      "provisionalFinalDifficulty": {
+        "easy": 201,
+        "medium": 202,
+        "hard": 202
+      },
+      "provisionalNewDifficulty": {
+        "easy": 138,
+        "medium": 77,
+        "hard": 160
+      },
+      "existingDifficulty": {
+        "easy": 63,
+        "medium": 125,
+        "hard": 42
+      }
+    },
+    {
+      "id": "history",
+      "title": "İslam Tarihi",
+      "existing": 401,
+      "newTarget": 375,
+      "projectedTotal": 776,
+      "provisionalFinalDifficulty": {
+        "easy": 259,
+        "medium": 258,
+        "hard": 259
+      },
+      "provisionalNewDifficulty": {
+        "easy": 185,
+        "medium": 34,
+        "hard": 156
+      },
+      "existingDifficulty": {
+        "easy": 74,
+        "medium": 224,
+        "hard": 103
+      }
+    },
+    {
+      "id": "general",
+      "title": "Genel Bilgi",
+      "existing": 419,
+      "newTarget": 375,
+      "projectedTotal": 794,
+      "provisionalFinalDifficulty": {
+        "easy": 265,
+        "medium": 265,
+        "hard": 264
+      },
+      "provisionalNewDifficulty": {
+        "easy": 97,
+        "medium": 77,
+        "hard": 201
+      },
+      "existingDifficulty": {
+        "easy": 168,
+        "medium": 188,
+        "hard": 63
+      }
+    }
+  ],
+  "screenCategories": [
+    {
+      "id": "quran_dualar",
+      "title": "Kur'an ve Dualar",
+      "total": 213
+    },
+    {
+      "id": "siyer_sahabe",
+      "title": "Peygamberimizin Hayatı ve Sahabe",
+      "total": 313
+    },
+    {
+      "id": "peygamberler",
+      "title": "Peygamber Kıssaları",
+      "total": 271
+    },
+    {
+      "id": "fikih",
+      "title": "İbadet ve Fıkıh",
+      "total": 161
+    },
+    {
+      "id": "iman_ahlak",
+      "title": "İman ve Ahlak",
+      "total": 260
+    },
+    {
+      "id": "tarih_medeniyet",
+      "title": "İslam Tarihi ve Medeniyeti",
+      "total": 282
+    }
+  ],
+  "newQuestionsAdded": 0,
+  "newQuestionsStaged": 720,
+  "stagedByCategory": {
+    "quran": 180,
+    "prophets": 180,
+    "history": 180,
+    "general": 180
+  },
+  "stagedStructuralIssueCount": 0,
+  "newQuestionsRemaining": 780,
+  "existingReplacementsStaged": 98,
+  "sourceRechecks": 1500,
+  "answerSupportIssues": 1,
+  "stemScopeIssues": 7,
+  "fullExplanationRechecks": 1496,
+  "sourceChecksPending": 0,
+  "confirmedOverlappingFactGroups": 88,
+  "minimumRedundantEntries": 98,
+  "flaggedQuestions": 171,
+  "structuralIssueCount": 0,
+  "runtimeBankModified": false,
+  "readyForIntegration": false,
+  "limitations": [
+    "A single correct option ID proves schema integrity, not theological uniqueness of the answer.",
+    "Quality warnings are review candidates, not confirmed errors.",
+    "New content is staged only; the runtime bank, topic mappings, saved progress and online export remain unchanged.",
+    "Six playable screen categories are derived from a separate per-question topic map; new IDs need reviewed mappings before integration.",
+    "Token overlap audit is not exhaustive semantic duplicate detection."
+  ]
+}
