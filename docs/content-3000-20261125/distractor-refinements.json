@@ -1854,6 +1854,352 @@
         "Deseni yüzeye yalnız ışıkla yansıtmak"
       ],
       "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-293",
+      "before": [
+        "Yalnız yolculukta yapılanlar",
+        "Sadece kalabalıkta yapılanlar",
+        "Yalnız herkesin gördüğü yardımlar"
+      ],
+      "after": [
+        "Sadece belli gecelerde yapılanlar",
+        "Yalnız toplu yapılan zikirler",
+        "Sadece uzun yolculuk gerektirenler"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-295",
+      "before": [
+        "Hiçbir yolculuğa çıkamamak",
+        "Ticaret yapamamak",
+        "Her zaman borçlu kalmak"
+      ],
+      "after": [
+        "Yaptığı iyiliğin karşılığını mutlaka geri almak",
+        "Her iyiliği mutlaka gizli yapmak",
+        "Sadece yakın akrabalara iyilik etmek"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-296",
+      "before": [
+        "Yalnız gece yolculuk yapanla",
+        "Yalnız pazarda mal satanla",
+        "Sadece uzun süre konuşmayanla"
+      ],
+      "after": [
+        "Geceleri yolculuk edenle",
+        "Mescidin bakımını üstlenenle",
+        "Yalnız infak için çalışanla"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-297",
+      "before": [
+        "Yolcu ve yerleşiğe",
+        "Zengin ve tüccara",
+        "Genç ve öğretmene"
+      ],
+      "after": [
+        "Yolcu ve yerleşiğe",
+        "Alıcı ve satıcıya",
+        "Öğrenci ve öğretmene"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-298",
+      "before": [
+        "Bütün borç kayıtlarının",
+        "Geçmişteki bütün kul haklarının",
+        "Kişinin ilerdeki bütün sorumluluklarının"
+      ],
+      "after": [
+        "Yalnız yolculuktan kalan yorgunluğun",
+        "Kişinin gelecekteki her imtihanının",
+        "Yalnız bedendeki görünen kirin"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-304",
+      "before": [
+        "En geniş ticarete sahip olmak",
+        "Mutlaka aynı aileden gelmek",
+        "En pahalı giysiyi giymek"
+      ],
+      "after": [
+        "İmamın ailesinden gelmek",
+        "Cemaate en erken gelmek",
+        "Topluluktaki en varlıklı kişi olmak"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-305",
+      "before": [
+        "Yalnız varlıklı olanlar",
+        "Sadece uzak akrabalar",
+        "Yalnız ilk gelenler"
+      ],
+      "after": [
+        "Yalnız yolculuktan dönenler",
+        "Yalnız henüz evlenmemiş olanlar",
+        "Sadece imamın yakınları"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-general-306",
+      "before": [
+        "Hutbeyi dinlemenin zorunlu biçimi olarak",
+        "Namazın yerine geçen ibadet olarak",
+        "İmam için gerekli bir işaret olarak"
+      ],
+      "after": [
+        "Hutbeyi dinlemeye denk bir meşguliyet olarak",
+        "Yalnız hutbe öncesinde yapılması gereken iş olarak",
+        "Cuma gününe özgü bir temizlik âdâbı olarak"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-293",
+      "before": [
+        "Çelik kalıpla kitap basımı",
+        "Fotoğrafla yıldız kaydı",
+        "Buharlı gemi yapımı"
+      ],
+      "after": ["Maden eritme", "Deri tabaklama", "Ahşap oymacılığı"],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-297",
+      "before": [
+        "Hekim adlarına göre",
+        "Yılların savaşlarına göre",
+        "Şehirlerin nüfusuna göre"
+      ],
+      "after": [
+        "Hastalıkların görüldüğü mevsimlere göre",
+        "İlâç adlarının baş harflerine göre",
+        "Hekimlerin yaş sırasına göre"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-300",
+      "before": [
+        "Yeni darphaneler kurmak",
+        "Saraylara kale planları çizmek",
+        "Deniz savaşlarını yönetmek"
+      ],
+      "after": [
+        "Bitki adlarını yalnız eski kitaplardan kopyalamak",
+        "Yalnız hükümdarların bahçelerini süslemek",
+        "Bitki resimlerini sadece saray duvarlarına işlemek"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-301",
+      "before": [
+        "Gök cisimlerinin yer değiştirmesini",
+        "Vergi oranlarının yükselmesini",
+        "El yazmalarının kâğıt rengini"
+      ],
+      "after": [
+        "Bitkilerin yetişme mevsiminin değişmesini",
+        "Bitki tohumlarının birbirine karışmasını",
+        "El yazmalarının sayfa sırasının bozulmasını"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-302",
+      "before": [
+        "Yalnız ölüm tarihlerine göre",
+        "Yalnız ülkelerin yüzölçümüne göre",
+        "Sadece kullanım fiyatına göre"
+      ],
+      "after": [
+        "Hastalıkların tedavi süresine göre",
+        "İlâçların fiyatına göre",
+        "Bitkilerin yetiştiği enleme göre"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-304",
+      "before": [
+        "Mushaf ciltleme tekniği",
+        "Kıble hesap cetvelleri",
+        "Sikke basma kalıpları"
+      ],
+      "after": [
+        "Yıldızlardan ekim gününü fal yoluyla seçme",
+        "Sikke ağırlıklarını ayarlama",
+        "Tuzlalarda maden işleme"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-305",
+      "before": [
+        "Yalnız şiir vezinlerini",
+        "Sadece halifelerin soylarını",
+        "Yalnız şehirlerin asker sayısını"
+      ],
+      "after": [
+        "Yalnız bitki adlarının şiirli karşılıklarını",
+        "Yalnız hükümdarların bahçe masraflarını",
+        "Sadece ürünlerin pazar fiyatlarını"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-history-307",
+      "before": [
+        "Rasathane için yalnız mermer sütunlar",
+        "Darphane için altın kalıpları",
+        "Kütüphane için yalnız harita baskıları"
+      ],
+      "after": [
+        "Rasathaneler için gözlem cetvellerini",
+        "Kâğıt yapımında kullanılan yeni kalıpları",
+        "Maden ocakları için kazı aletlerini"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-292",
+      "before": [
+        "Yalnız servetlerinin çoğalması",
+        "Yalnız yolculuklarının uzaması",
+        "Sorumluluklarının tümden kalkması"
+      ],
+      "after": [
+        "Uzun bir yolculuğa çıkarılmaları",
+        "Yalnız mallarının korunması",
+        "Yalnız aynı şehirde kalmaları"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-294",
+      "before": [
+        "Yalnız aynı gece yeniden geldiğinde",
+        "Sadece bir ticaret kafilesi kurduğunda",
+        "Bütün ailesi Mekke’ye yerleştiğinde"
+      ],
+      "after": [
+        "Ailesi bir ticaret kervanı hazırladığında",
+        "Kendi kabilesinde yönetici olduğunda",
+        "Habeşistan yolculuğundan döndüğünde"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-295",
+      "before": [
+        "Aynı kumaştan elbise giymeleriyle",
+        "Hepsinin aynı şehirden olmasıyla",
+        "Yalnız aynı dili konuşmalarıyla"
+      ],
+      "after": [
+        "Kendilerine özgü bir elbisenin rengiyle",
+        "Yalnız konuştukları dilin sesinden",
+        "Bir arada geldikleri şehrin adından"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-296",
+      "before": [
+        "Yeni bir hutbenin bölümlerini",
+        "Cenaze taşıma usulünü",
+        "Hacda vakfe yerini"
+      ],
+      "after": [
+        "Sabah namazından sonraki zikir sayısını",
+        "Cenaze namazındaki tekbirlerin sırasını",
+        "Kurban keserken yapılan hazırlığı"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-299",
+      "before": [
+        "Herkesin boy sırasını yazardı",
+        "Cemaati yalnız kabilelere göre ayırırdı",
+        "Önce her kişinin mesleğini sorardı"
+      ],
+      "after": [
+        "Saf yerlerini yere çizerek belirlerdi",
+        "Yalnız boy uzunluğuna göre dizerdi",
+        "Herkesin duracağı yeri yazılı kâğıtla bildirirdi"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-300",
+      "before": [
+        "Yalnız elbiselerine koku sürmeleri",
+        "Suyu hiç kullanmamaları",
+        "Temizliği sadece bayramda yapmaları"
+      ],
+      "after": [
+        "Her gün elbiselerine koku sürmelerini",
+        "Yalnız cuma günleri yıkanmalarını",
+        "Her temizlikten sonra elbiseyi değiştirmelerini"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-302",
+      "before": [
+        "Yalnız kendi gücüne",
+        "İnsanların övgüsüne",
+        "Atalarının konumuna"
+      ],
+      "after": [
+        "Yalnız sabırlı insanların duasına",
+        "Kendi yaptığı ibadetlerin çokluğuna",
+        "Ümmetinin sayıca çok olmasına"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-306",
+      "before": [
+        "Her gün yalnız uzun yolculuk yapmasını",
+        "Bütün geceleri konuşarak geçirmesini",
+        "Yalnız ezanın sesini yükseltmesini"
+      ],
+      "after": [
+        "Her gece uyumadan uzun yolculuk yapmasını",
+        "Her gün çok sayıda kişiye yemek hazırlamasını",
+        "Her gün malından belli bir pay ayırmasını"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
+    },
+    {
+      "id": "new74-prophets-310",
+      "before": [
+        "Her gün oruç, yalnız cuma namazı ve geceyi uykusuz geçirmek",
+        "Ayda bir hac, yalnız akşam namazı ve sürekli susmak",
+        "Sadece bayram orucu, gece alışverişi ve uzun yolculuk"
+      ],
+      "after": [
+        "Haftada iki gün oruç, akşam sünneti ve seherde dua",
+        "Arefe orucu, tahiyyetü’l-mescid ve gece kıraati",
+        "Şevval’de oruç, cuma guslü ve bayram tekbiri"
+      ],
+      "reason": "Replace implausible alternatives with topic-matched choices after reading source passages."
     }
   ],
   "semanticAcceptance": "pending",
