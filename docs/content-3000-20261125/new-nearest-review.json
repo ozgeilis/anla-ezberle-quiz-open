@@ -1,9 +1,9 @@
 {
   "date": "2026-11-25",
   "method": "Accent-normalized Turkish token-prefix Jaccard on stem/answer against patched old bank plus additions. Screening across checkpoints; current suggestions are not exhaustive semantic acceptance.",
-  "count": 1080,
-  "directedSuggestions": 3240,
-  "screeningScope": "Initial 400 and subsequent batches screened at authoring checkpoints through 1080; source-supported replacements rechecked. Current suggestions against 128 patched old records may differ from earlier checkpoints. All-pairs semantic acceptance remains pending.",
+  "count": 1160,
+  "directedSuggestions": 3480,
+  "screeningScope": "Initial 400 and subsequent batches screened at authoring checkpoints through 1160; source-supported replacements rechecked. Current suggestions against 128 patched old records may differ from earlier checkpoints. All-pairs semantic acceptance remains pending.",
   "questions": [
     {
       "id": "new74-general-001",
@@ -1561,9 +1561,9 @@
           "answer": "Göğüslerdeki kalplerin körleşmesi"
         },
         {
-          "id": "new74-general-175",
-          "question": "Malın, bedeli geri ödendiğinde geri alınması şartıyla satıldığı tarihî işlem hangi adla anılır?",
-          "answer": "Bey‘ bi’l-vefâ"
+          "id": "new74-general-276",
+          "question": "Ödeme güçlüğü çeken borçluya süre tanıyan veya alacağını bağışlayan kişiye hangi müjde verilir?",
+          "answer": "Kıyamet gününde Allah’ın özel himayesi"
         }
       ]
     },
@@ -1781,9 +1781,9 @@
           "answer": "Münferit"
         },
         {
-          "id": "new74-general-101",
-          "question": "Hadis ilminde rivayeti öğrenme ve başkasına aktarma işleri sırasıyla nasıl adlandırılır?",
-          "answer": "Tahammül ve edâ"
+          "id": "new74-quran-278",
+          "question": "Bir tefsirin hem dirâyet hem de sosyal tefsir başlığı altında değerlendirilebilmesi neyi gösterir?",
+          "answer": "Tasnif ölçütlerinin örtüşebildiğini"
         }
       ]
     },
@@ -3157,6 +3157,11 @@
       "answer": "Az miktarının da haram olduğu",
       "nearest": [
         {
+          "id": "new74-general-278",
+          "question": "Borç ilişkisi hakkında “Sizin en hayırlınız” diye başlayan hadiste hangi kişi övülür?",
+          "answer": "Borcunu en güzel biçimde ödeyen"
+        },
+        {
           "id": "new74-general-228",
           "question": "Hadiste, ihanet eden kişinin yaptığı işin kıyamette nasıl teşhir edileceği bildirilir?",
           "answer": "Onun için bir sancak dikilmesiyle"
@@ -3165,11 +3170,6 @@
           "id": "new74-general-251",
           "question": "“Sizin en hayırlınız” diye başlayan hadiste, insanın iyiliği özellikle kimlere davranışıyla ilişkilendirilir?",
           "answer": "Ailesine"
-        },
-        {
-          "id": "new74-general-213",
-          "question": "Hayâ, imanın şubelerini anlatan hadiste nasıl konumlandırılır?",
-          "answer": "İmandan bir şube olarak"
         }
       ]
     },
@@ -3817,6 +3817,11 @@
       "answer": "Suyu başka taşınmazdan geçirme veya dışarı akıtma",
       "nearest": [
         {
+          "id": "new74-general-285",
+          "question": "Su kaynaklarıyla ilgili öğütte ihtiyaç fazlası su için hangi tutum benimsenir?",
+          "answer": "İhtiyaç duyanlardan esirgenmemesi"
+        },
+        {
           "id": "new74-general-173",
           "question": "Bir taşınmaz lehine, başka kaynaktan sürekli su alıp arazide kullanma hakkı hangi kavramla anlatılır?",
           "answer": "Hakku’ş-şirb"
@@ -3825,11 +3830,6 @@
           "id": "learn-women-009",
           "question": "Boşanma sonrası iddet ve nafakayla ilgili rivayeti fıkıh tartışmalarında ele alınan kadın sahâbî kimdir?",
           "answer": "Fâtıma bint Kays"
-        },
-        {
-          "id": "v7-prophets-001",
-          "question": "Âl-i İmrân 3/35’te İmrân’ın karısının adağı neyle ilgilidir?",
-          "answer": "Karnındaki çocuğunu Allah’a adamasıyla"
         }
       ]
     },
@@ -3844,14 +3844,14 @@
           "answer": "Vadîa"
         },
         {
+          "id": "new74-history-281",
+          "question": "Tarihî usta kitâbelerinde ahşap işçiliği yapan sanatkâr hangi adla anılır?",
+          "answer": "Neccâr"
+        },
+        {
           "id": "q54-buruc-001",
           "question": "Hendek sahipleri hangi adla anılır?",
           "answer": "Ashâbü'l-uhdûd"
-        },
-        {
-          "id": "e150-history-026",
-          "question": "Birinci Akabe Biatı, TDV’nin anlatımında hangi adla da anılır?",
-          "answer": "Bey‘atü’n-nisâ"
         }
       ]
     },
@@ -4003,9 +4003,9 @@
           "answer": "Onlara sövmek"
         },
         {
-          "id": "v12-quran-010",
-          "question": "Lokmân 31/19'da konuşma adabıyla ilgili hangi öğüt yer alır?",
-          "answer": "Sesi alçaltıp ölçülü kullanmak"
+          "id": "new74-general-287",
+          "question": "Hayvanlarla ilgili hangi eğlence uygulaması hadiste yasaklanır?",
+          "answer": "Hayvanları birbirleriyle dövüştürmek"
         }
       ]
     },
@@ -4015,6 +4015,11 @@
       "answer": "Babanın dostlarını ziyaret",
       "nearest": [
         {
+          "id": "new74-general-274",
+          "question": "Hz. Dâvûd’u da örnek veren hadiste hangi kazanç biçimi özellikle övülür?",
+          "answer": "Kendi elinin emeğiyle kazanmak"
+        },
+        {
           "id": "q55-kiyamet-027",
           "question": "Kıyâmet 75/1’deki yemin özellikle hangi inanç konusunu hatırlatır?",
           "answer": "Ölümden sonra diriliş"
@@ -4023,11 +4028,6 @@
           "id": "new74-general-199",
           "question": "Musibet karşısındaki sabır için hadiste özellikle hangi an vurgulanır?",
           "answer": "Musibetin ilk başa geldiği an"
-        },
-        {
-          "id": "quran-meaning-v72-023",
-          "question": "Tâhâ 20/44'te Hz. Mûsâ ve Hz. Hârûn'a Firavun'la konuşurken özellikle hangi üslup öğütlenir?",
-          "answer": "Yumuşak söz kullanmak"
         }
       ]
     },
@@ -4042,14 +4042,14 @@
           "answer": "Allah’ın onu yüceltmesi"
         },
         {
+          "id": "new74-quran-284",
+          "question": "Teğābün 64/11’de Allah’a iman edenin gönlü hakkında hangi sonuç bildirilir?",
+          "answer": "Allah’ın onu doğruya yönelteceği"
+        },
+        {
           "id": "q44-leyl-12",
           "question": "Leyl 92/12’de Allah’a ait olduğu bildirilen hangi eylemdir?",
           "answer": "Doğru yolu göstermek"
-        },
-        {
-          "id": "v7-quran-005",
-          "question": "Kadr 97/4'te Allah'ın izniyle indikleri açıkça bildirilen ikili hangisidir?",
-          "answer": "Melekler ve ruh"
         }
       ]
     },
@@ -4262,14 +4262,14 @@
           "answer": "Dua etmek"
         },
         {
+          "id": "new74-general-273",
+          "question": "Çarşı işlerine boş söz ve yalan karışabileceğini hatırlatan hadiste alışverişi temizlemek için ne önerilir?",
+          "answer": "Sadaka vermek"
+        },
+        {
           "id": "new74-general-231",
           "question": "Ölüm yaklaşırken Allah hakkında hadiste hangi tutum öğütlenir?",
           "answer": "Bağışlamasını umarak iyi düşünmek"
-        },
-        {
-          "id": "learn-dua-025",
-          "question": "Tâhâ 20/114'te hangi nimetin artırılması için dua edilir?",
-          "answer": "İlim"
         }
       ]
     },
@@ -4311,9 +4311,9 @@
           "answer": "Kendi nefsinin kendisini değerlendirmeye yeterli olduğu"
         },
         {
-          "id": "q54-ala-020",
-          "question": "A‘lâ 87/9'da peygambere hangi görev hatırlatılır?",
-          "answer": "Öğüt vermek"
+          "id": "new74-general-273",
+          "question": "Çarşı işlerine boş söz ve yalan karışabileceğini hatırlatan hadiste alışverişi temizlemek için ne önerilir?",
+          "answer": "Sadaka vermek"
         }
       ]
     },
@@ -4509,9 +4509,9 @@
           "answer": "Su ağzına gelsin diye avuçlarını ona uzatıp bekleyene"
         },
         {
-          "id": "new74-quran-107",
-          "question": "Nahl 16/75’te güçsüz kölenin karşısında örnek verilen rızıklandırılmış kişi malını nasıl kullanır?",
-          "answer": "Gizli ve açık biçimde başkalarını yararlandırır"
+          "id": "new74-general-272",
+          "question": "Satarken, satın alırken ve alacağını isterken nasıl davranan kişi için rahmet duası edilir?",
+          "answer": "Hoşgörülü olup kolaylık gösteren"
         }
       ]
     },
@@ -4680,14 +4680,14 @@
           "answer": "Harcadığının yerine yenisinin verilmesi için"
         },
         {
+          "id": "new74-general-271",
+          "question": "Alışverişin bereketini anlatan hadiste tarafların hangi davranışı övülür?",
+          "answer": "Doğru söyleyip malın kusurunu açıklamaları"
+        },
+        {
           "id": "new74-general-149",
           "question": "Hakları anlatan hadiste bir Müslüman davet ettiğinde öğütlenen tutum hangisidir?",
           "answer": "Davetine karşılık vermek"
-        },
-        {
-          "id": "new74-general-150",
-          "question": "Hakları anlatan hadiste kendisinden nasihat istenen kişinin tutumu ne olmalıdır?",
-          "answer": "Samimi biçimde öğüt vermek"
         }
       ]
     },
@@ -4829,6 +4829,11 @@
       "answer": "Gördüğüm kadarıyla böyle olduğunu sanıyorum",
       "nearest": [
         {
+          "id": "new74-general-273",
+          "question": "Çarşı işlerine boş söz ve yalan karışabileceğini hatırlatan hadiste alışverişi temizlemek için ne önerilir?",
+          "answer": "Sadaka vermek"
+        },
+        {
           "id": "v9-general-008",
           "question": "Hz. Peygamber'e nispet edilen söz ve haberlerin nakline dayanan bilgi türü hangisidir?",
           "answer": "Hadis"
@@ -4837,11 +4842,6 @@
           "id": "new74-quran-046",
           "question": "Âl-i İmrân 3/64’teki ortak söz çağrısı, insanların birbirleriyle ilişkisine hangi sınırı koyar?",
           "answer": "Allah’ı bırakıp birbirlerini rab edinmemeleri"
-        },
-        {
-          "id": "new74-general-202",
-          "question": "Sâlih kullar için hazırlanan nimetleri anlatan kudsî hadiste hangi sınırın ötesine işaret edilir?",
-          "answer": "Gözün görmediği, kulağın işitmediği, akla gelmeyen nimetlere"
         }
       ]
     },
@@ -4878,14 +4878,14 @@
           "answer": "Aracılık ettiği işten kendisine de pay düşmesi"
         },
         {
+          "id": "new74-general-278",
+          "question": "Borç ilişkisi hakkında “Sizin en hayırlınız” diye başlayan hadiste hangi kişi övülür?",
+          "answer": "Borcunu en güzel biçimde ödeyen"
+        },
+        {
           "id": "q64-huneyn-kuman",
           "question": "Huneyn'deki karşı kuvvetleri komuta eden kişi kimdi?",
           "answer": "Mâlik b. Avf"
-        },
-        {
-          "id": "q66-meryem-56",
-          "question": "Meryem 19/56'da hakkında 'özü sözü doğru bir peygamber' denilen kişi kimdir?",
-          "answer": "İdrîs"
         }
       ]
     },
@@ -5142,14 +5142,14 @@
           "answer": "İstincâ"
         },
         {
+          "id": "new74-general-282",
+          "question": "Arazinin yalnız belli bir bölümünün ürününü kira bedeli sayan uygulamadaki sakınca nasıl açıklanır?",
+          "answer": "Bir bölüm ürün verirken diğerinin vermeyip tarafı mağdur edebilmesi"
+        },
+        {
           "id": "new74-prophets-172",
           "question": "Amr b. Hâris’in rivayetine göre Hz. Peygamber’in geride bıraktığı silah, katır ve arazi nasıl değerlendirilmiştir?",
           "answer": "Sadaka olarak bırakılmıştır"
-        },
-        {
-          "id": "q50-zekeriyya-020",
-          "question": "Meryem 19/3'e göre Zekeriyyâ nasıl dua etmiştir?",
-          "answer": "Alçak sesle"
         }
       ]
     },
@@ -5279,9 +5279,9 @@
           "answer": "Ferâğ kaydı"
         },
         {
-          "id": "quran-012",
-          "question": "Kur’an’ın tamamını ezberleyen kişiye ne denir?",
-          "answer": "Hâfız"
+          "id": "new74-history-274",
+          "question": "Tarihî kâğıt ışığa tutulduğunda görülen, üreticiyi tanımaya ve tarihlendirmeye yardım eden işarete ne denir?",
+          "answer": "Filigran"
         }
       ]
     },
@@ -5489,6 +5489,11 @@
       "answer": "İhtiyaçları uygun biçimde gidererek namaza durmak",
       "nearest": [
         {
+          "id": "new74-general-285",
+          "question": "Su kaynaklarıyla ilgili öğütte ihtiyaç fazlası su için hangi tutum benimsenir?",
+          "answer": "İhtiyaç duyanlardan esirgenmemesi"
+        },
+        {
           "id": "q43-mulk-13",
           "question": "Mülk 67/13'te sözle ilgili hangi iki tutum karşılaştırılır?",
           "answer": "Gizlemek ve açığa vurmak"
@@ -5497,11 +5502,6 @@
           "id": "q57-musayed",
           "question": "Hz. Mûsâ'nın 'yed-i beyzâ' mucizesi bedeninin hangi kısmıyla ilgilidir?",
           "answer": "Eli"
-        },
-        {
-          "id": "new74-prophets-171",
-          "question": "Hz. Peygamber, namazda dikkatini dağıtan desenli elbise yerine nasıl bir elbise ister?",
-          "answer": "Desensiz bir elbise"
         }
       ]
     },
@@ -5511,6 +5511,11 @@
       "answer": "Ailesine",
       "nearest": [
         {
+          "id": "new74-general-278",
+          "question": "Borç ilişkisi hakkında “Sizin en hayırlınız” diye başlayan hadiste hangi kişi övülür?",
+          "answer": "Borcunu en güzel biçimde ödeyen"
+        },
+        {
           "id": "new74-general-144",
           "question": "“Çoğu sarhoş eden şeyin azı...” diye başlayan hadiste nasıl bir ölçü verilir?",
           "answer": "Az miktarının da haram olduğu"
@@ -5519,11 +5524,6 @@
           "id": "new74-general-147",
           "question": "İslâm’da hayırlı davranışı soran kişiye verilen öğütte kimlere selâm vermek anılır?",
           "answer": "Tanıdığına ve tanımadığına"
-        },
-        {
-          "id": "new74-quran-180",
-          "question": "Fâtır 35/28’de kullar içinde Allah’ın büyüklüğünü hakkıyla takdir etme özellikle kimlerle ilişkilendirilir?",
-          "answer": "İlim sahipleriyle"
         }
       ]
     },
@@ -5582,14 +5582,14 @@
           "answer": "Allah’tan sakınmayı emredip adaletle hükmetmeye"
         },
         {
+          "id": "new74-general-279",
+          "question": "Allah yolunda ölmenin kefâret oluşunu anlatan hadiste özellikle hangi yükümlülük istisna edilir?",
+          "answer": "Borç"
+        },
+        {
           "id": "q65-isra-34",
           "question": "İsrâ 17/34’te yetim malıyla ilgili uyarının ardından hangi yükümlülük hatırlatılır?",
           "answer": "Verilen sözü yerine getirmek"
-        },
-        {
-          "id": "new74-general-142",
-          "question": "Durgun suyla ilgili hadiste hangi davranıştan sakındırılır?",
-          "answer": "Suya küçük abdest bozmaktan"
         }
       ]
     },
@@ -5643,6 +5643,11 @@
       "answer": "Müflis",
       "nearest": [
         {
+          "id": "new74-general-275",
+          "question": "Ödeme imkânı bulunduğu hâlde borcunu bekletmek hadiste nasıl nitelenir?",
+          "answer": "Zulüm olarak"
+        },
+        {
           "id": "new74-general-075",
           "question": "Vekâlette yetki veren kişi ile kendi adına iş yapması istenen kişi sırasıyla nasıl adlandırılır?",
           "answer": "Müvekkil ve vekil"
@@ -5651,11 +5656,6 @@
           "id": "new74-general-228",
           "question": "Hadiste, ihanet eden kişinin yaptığı işin kıyamette nasıl teşhir edileceği bildirilir?",
           "answer": "Onun için bir sancak dikilmesiyle"
-        },
-        {
-          "id": "new74-general-236",
-          "question": "Hanefî terminolojisinde imamla namaza başlayıp mazeretle bir bölümünü kaçıran kişi nasıl adlandırılır?",
-          "answer": "Lâhik"
         }
       ]
     },
@@ -5819,6 +5819,11 @@
       "answer": "Kaynaştıkları",
       "nearest": [
         {
+          "id": "new74-quran-286",
+          "question": "Haşr 59/14’te bir arada görünen karşı topluluk için dış görünüşün aksine ne söylenir?",
+          "answer": "Kalplerinin dağınık olduğu"
+        },
+        {
           "id": "new74-quran-150",
           "question": "Enfâl 8/28’de insan için birer imtihan olduğu söylenen iki nimet hangisidir?",
           "answer": "Mal ve çocuklar"
@@ -5827,11 +5832,6 @@
           "id": "learn-dua-012",
           "question": "Bakara 2/128'de İbrâhim ve İsmâil'in nesilleri için istediği topluluk nasıl nitelenir?",
           "answer": "Allah'a teslim olan bir topluluk"
-        },
-        {
-          "id": "new74-quran-203",
-          "question": "İsrâ 17/89’da insanlara gerçeği anlatmak için Kur’an’da hangi anlatım yolunun çeşitlendirildiği söylenir?",
-          "answer": "Misaller"
         }
       ]
     },
@@ -5846,14 +5846,14 @@
           "answer": "Allah’ın onu yüceltmesi"
         },
         {
+          "id": "new74-general-277",
+          "question": "İnsanların malını borç alırken geri ödeme niyetinde olan kimse için hadiste ne bildirilir?",
+          "answer": "Allah’ın ödemesini kolaylaştıracağı"
+        },
+        {
           "id": "new74-general-184",
           "question": "Hadiste Allah’ın affeden kuluna ilişkin hangi sonuç bildirilir?",
           "answer": "Şerefini artırması"
-        },
-        {
-          "id": "v12-prophets-013",
-          "question": "Sebe’ 34/12’de Süleyman için eritilip akıtıldığı bildirilen maden hangisidir?",
-          "answer": "Bakır"
         }
       ]
     },
@@ -5942,6 +5942,446 @@
           "id": "new74-general-219",
           "question": "Ölülerle ilgili hadiste hangi davranış açıkça yasaklanır?",
           "answer": "Onlara sövmek"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-271",
+      "question": "Alışverişin bereketini anlatan hadiste tarafların hangi davranışı övülür?",
+      "answer": "Doğru söyleyip malın kusurunu açıklamaları",
+      "nearest": [
+        {
+          "id": "new74-general-142",
+          "question": "Durgun suyla ilgili hadiste hangi davranıştan sakındırılır?",
+          "answer": "Suya küçük abdest bozmaktan"
+        },
+        {
+          "id": "new74-general-219",
+          "question": "Ölülerle ilgili hadiste hangi davranış açıkça yasaklanır?",
+          "answer": "Onlara sövmek"
+        },
+        {
+          "id": "new74-prophets-056",
+          "question": "Enbiyâ 21/90’da Zekeriyyâ ve ailesinin davranışı hangi ifadeyle övülür?",
+          "answer": "Hayır işlerinde koşup umut ve korkuyla Allah’a dua etmeleri"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-272",
+      "question": "Satarken, satın alırken ve alacağını isterken nasıl davranan kişi için rahmet duası edilir?",
+      "answer": "Hoşgörülü olup kolaylık gösteren",
+      "nearest": [
+        {
+          "id": "user200-119",
+          "question": "'Hilim' erdemini gösteren bir kişi öfkelendiğinde nasıl davranır?",
+          "answer": "Öfkesini denetleyip yumuşaklığını korur"
+        },
+        {
+          "id": "new74-general-205",
+          "question": "Güzel bir davranışa öncülük eden kişi, sonradan onu örnek alanların sevabı bakımından nasıl yararlanır?",
+          "answer": "Onların sevabı eksilmeden benzer sevap alır"
+        },
+        {
+          "id": "new74-general-248",
+          "question": "Her sabah inen iki meleği anlatan hadiste, hayra harcayan kişi için nasıl dua edilir?",
+          "answer": "Harcadığının yerine yenisinin verilmesi için"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-273",
+      "question": "Çarşı işlerine boş söz ve yalan karışabileceğini hatırlatan hadiste alışverişi temizlemek için ne önerilir?",
+      "answer": "Sadaka vermek",
+      "nearest": [
+        {
+          "id": "new74-general-220",
+          "question": "Birini övmek gerektiğinde hadiste önerilen söz hangi bilgi sınırını korur?",
+          "answer": "Gördüğüm kadarıyla böyle olduğunu sanıyorum"
+        },
+        {
+          "id": "new74-general-194",
+          "question": "Maddî imkânı daha iyi olanlara imrenen kişiye, nimeti değerlendirmek için hadiste hangi bakış önerilir?",
+          "answer": "Bu açıdan daha az imkânı olanları da düşünmek"
+        },
+        {
+          "id": "q66-kehf-23",
+          "question": "Kehf 18/23–24’te yarın yapılacak bir iş için hangi ifade hatırlatılır?",
+          "answer": "Allah izin verirse"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-274",
+      "question": "Hz. Dâvûd’u da örnek veren hadiste hangi kazanç biçimi özellikle övülür?",
+      "answer": "Kendi elinin emeğiyle kazanmak",
+      "nearest": [
+        {
+          "id": "new74-general-183",
+          "question": "Anne babaya vefayı sürdürme konusunda hadiste hangi ziyaret özellikle övülür?",
+          "answer": "Babanın dostlarını ziyaret"
+        },
+        {
+          "id": "new74-general-199",
+          "question": "Musibet karşısındaki sabır için hadiste özellikle hangi an vurgulanır?",
+          "answer": "Musibetin ilk başa geldiği an"
+        },
+        {
+          "id": "new74-general-271",
+          "question": "Alışverişin bereketini anlatan hadiste tarafların hangi davranışı övülür?",
+          "answer": "Doğru söyleyip malın kusurunu açıklamaları"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-275",
+      "question": "Ödeme imkânı bulunduğu hâlde borcunu bekletmek hadiste nasıl nitelenir?",
+      "answer": "Zulüm olarak",
+      "nearest": [
+        {
+          "id": "new74-quran-184",
+          "question": "Bakara 2/204’te sözleri hoş göründüğü hâlde iç tutumu eleştirilen kişi nasıl nitelenir?",
+          "answer": "Hasımların en yamanı"
+        },
+        {
+          "id": "new74-quran-085",
+          "question": "Zümer 39/10’da sabredenlerin mükâfatı nasıl nitelenir?",
+          "answer": "Hesapsız olarak verilecek bir mükâfat"
+        },
+        {
+          "id": "new74-general-257",
+          "question": "Hadiste, ibadetleriyle geldiği halde insanlara yaptığı haksızlıklar yüzünden iyiliklerini kaybeden kişi nasıl adlandırılır?",
+          "answer": "Müflis"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-276",
+      "question": "Ödeme güçlüğü çeken borçluya süre tanıyan veya alacağını bağışlayan kişiye hangi müjde verilir?",
+      "answer": "Kıyamet gününde Allah’ın özel himayesi",
+      "nearest": [
+        {
+          "id": "new74-general-071",
+          "question": "Bir alacağın güvenceye alınması için kefilin sorumluluğunu asıl borçlununkine ekleyen işlem hangisidir?",
+          "answer": "Kefalet"
+        },
+        {
+          "id": "q67-kasas-16",
+          "question": "Kasas 28/16'da yanlışından pişman olan Hz. Mûsâ Allah'tan ne ister?",
+          "answer": "Bağışlanma"
+        },
+        {
+          "id": "v8-general-003",
+          "question": "Kötülüklerden korunmak için Allah’ın yardım ve himayesine sığınmaya ne denir?",
+          "answer": "İstiâze"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-277",
+      "question": "İnsanların malını borç alırken geri ödeme niyetinde olan kimse için hadiste ne bildirilir?",
+      "answer": "Allah’ın ödemesini kolaylaştıracağı",
+      "nearest": [
+        {
+          "id": "new74-general-266",
+          "question": "Şehitliği içtenlikle dileyen kimse için, yatağında ölse bile hadiste hangi müjde bildirilir?",
+          "answer": "Allah’ın onu şehitlerin makamlarına ulaştıracağı"
+        },
+        {
+          "id": "new74-general-216",
+          "question": "Allah için tevazu gösteren kişi için hadiste hangi sonuç bildirilir?",
+          "answer": "Allah’ın onu yüceltmesi"
+        },
+        {
+          "id": "new74-general-184",
+          "question": "Hadiste Allah’ın affeden kuluna ilişkin hangi sonuç bildirilir?",
+          "answer": "Şerefini artırması"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-278",
+      "question": "Borç ilişkisi hakkında “Sizin en hayırlınız” diye başlayan hadiste hangi kişi övülür?",
+      "answer": "Borcunu en güzel biçimde ödeyen",
+      "nearest": [
+        {
+          "id": "new74-general-251",
+          "question": "“Sizin en hayırlınız” diye başlayan hadiste, insanın iyiliği özellikle kimlere davranışıyla ilişkilendirilir?",
+          "answer": "Ailesine"
+        },
+        {
+          "id": "new74-general-188",
+          "question": "Birbirine küs iki kişi arasında hadiste hangisi daha hayırlı sayılır?",
+          "answer": "Önce selâm veren"
+        },
+        {
+          "id": "new74-general-144",
+          "question": "“Çoğu sarhoş eden şeyin azı...” diye başlayan hadiste nasıl bir ölçü verilir?",
+          "answer": "Az miktarının da haram olduğu"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-279",
+      "question": "Allah yolunda ölmenin kefâret oluşunu anlatan hadiste özellikle hangi yükümlülük istisna edilir?",
+      "answer": "Borç",
+      "nearest": [
+        {
+          "id": "q62-vakfe-anlam",
+          "question": "Allah’a tekrar tekrar hamdetmeyi anlatan kavram hangisidir?",
+          "answer": "Tahmîd"
+        },
+        {
+          "id": "new74-general-254",
+          "question": "Nikâhla ilgili hadiste yerine getirilmeye özellikle lâyık görülen şart hangi konudadır?",
+          "answer": "Mehirle ilgili yükümlülük"
+        },
+        {
+          "id": "new74-general-277",
+          "question": "İnsanların malını borç alırken geri ödeme niyetinde olan kimse için hadiste ne bildirilir?",
+          "answer": "Allah’ın ödemesini kolaylaştıracağı"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-280",
+      "question": "Hz. Peygamber borçtan Allah’a sığınmasını açıklarken hangi ahlâkî tehlikeyi anar?",
+      "answer": "Yalan söyleyip verilen sözü tutmamayı",
+      "nearest": [
+        {
+          "id": "v11-quran-007",
+          "question": "Nâs sûresinde özellikle hangi tehlikeden Allah'a sığınma öğretilir?",
+          "answer": "Vesvesecinin gizli telkini"
+        },
+        {
+          "id": "learn-dua-027",
+          "question": "Mü’minûn 23/97–98’de hangi tehlikeden Allah’a sığınılır?",
+          "answer": "Şeytanların kışkırtmaları ve varlığı"
+        },
+        {
+          "id": "q61-hud-sure",
+          "question": "Hûd 11/56’da Hûd, Allah’a dayanmasını hangi genel egemenlikle birlikte açıklar?",
+          "answer": "Her canlının kontrolünün O’nun elinde oluşuyla"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-281",
+      "question": "Bir çalışanla iş anlaşması yapılırken ücret bakımından hangi ilke gözetilmelidir?",
+      "answer": "Ücretin önceden açıkça bildirilmesi",
+      "nearest": [
+        {
+          "id": "learn-akaid-008",
+          "question": "Hac 22/7'de kıyametle ilgili hangisi açıkça bildirilir?",
+          "answer": "Kabirdekilerin yeniden diriltilmesi"
+        },
+        {
+          "id": "new74-prophets-136",
+          "question": "Sâd 38/86’da Hz. Peygamber’in görevi karşılığında insanlardan ne istemediği bildirilir?",
+          "answer": "Bir ücret veya karşılık"
+        },
+        {
+          "id": "v7-quran-005",
+          "question": "Kadr 97/4'te Allah'ın izniyle indikleri açıkça bildirilen ikili hangisidir?",
+          "answer": "Melekler ve ruh"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-282",
+      "question": "Arazinin yalnız belli bir bölümünün ürününü kira bedeli sayan uygulamadaki sakınca nasıl açıklanır?",
+      "answer": "Bir bölüm ürün verirken diğerinin vermeyip tarafı mağdur edebilmesi",
+      "nearest": [
+        {
+          "id": "new74-general-234",
+          "question": "TDV açıklamasına göre yalnız temizlik amacıyla üretilen tuvalet kâğıdının istincâda kullanılması nasıl değerlendirilir?",
+          "answer": "Dinî açıdan sakıncalı değildir"
+        },
+        {
+          "id": "new74-prophets-040",
+          "question": "Tâhâ 20/84’te Mûsâ, acele etmesinin amacını nasıl açıklar?",
+          "answer": "Rabbinin hoşnutluğunu kazanmak"
+        },
+        {
+          "id": "new74-history-042",
+          "question": "Abbâsî yönetiminin Sâmerrâ’yı kurma gerekçelerinden biri TDV’de nasıl açıklanır?",
+          "answer": "Bağdat halkıyla askerî birlikler arasındaki gerginliği gidermek"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-283",
+      "question": "Bir başkası adına iş gören vekil hangi sınır içinde hareket etmelidir?",
+      "answer": "Kendisine verilen yetki ve meşru şartlar içinde",
+      "nearest": [
+        {
+          "id": "quran-meaning-v72-035",
+          "question": "Haşr 59/9'da kendisi ihtiyaç içindeyken başkasını öncelemek hangi erdeme örnektir?",
+          "answer": "Özgecilik"
+        },
+        {
+          "id": "new74-general-075",
+          "question": "Vekâlette yetki veren kişi ile kendi adına iş yapması istenen kişi sırasıyla nasıl adlandırılır?",
+          "answer": "Müvekkil ve vekil"
+        },
+        {
+          "id": "v7-prophets-004",
+          "question": "Sebe' sûresi 34/10'a göre kendisine demiri işleme kolaylığı verilen peygamber kimdir?",
+          "answer": "Hz. Dâvûd"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-284",
+      "question": "Kamu görevi sırasında iğne kadar bir malı bile gizlemek hadiste nasıl değerlendirilir?",
+      "answer": "Hıyanet olarak",
+      "nearest": [
+        {
+          "id": "q71-kurban-cins",
+          "question": "Kurbanlık hayvanda erkek-dişi ayrımı TDV'de nasıl değerlendirilir?",
+          "answer": "Geçerlilik değişmez; fazilet tercihi değişebilir"
+        },
+        {
+          "id": "new74-general-191",
+          "question": "Doğru sözlülüğü öğütleyen hadiste hangi ilerleme sırası kurulur?",
+          "answer": "Doğruluk, iyilik, cennet"
+        },
+        {
+          "id": "new74-general-213",
+          "question": "Hayâ, imanın şubelerini anlatan hadiste nasıl konumlandırılır?",
+          "answer": "İmandan bir şube olarak"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-285",
+      "question": "Su kaynaklarıyla ilgili öğütte ihtiyaç fazlası su için hangi tutum benimsenir?",
+      "answer": "İhtiyaç duyanlardan esirgenmemesi",
+      "nearest": [
+        {
+          "id": "new74-general-250",
+          "question": "Namaza yönelirken dikkati dağıtan bedenî ihtiyaçlarla ilgili hangi tutum huşûu destekler?",
+          "answer": "İhtiyaçları uygun biçimde gidererek namaza durmak"
+        },
+        {
+          "id": "q43-mulk-13",
+          "question": "Mülk 67/13'te sözle ilgili hangi iki tutum karşılaştırılır?",
+          "answer": "Gizlemek ve açığa vurmak"
+        },
+        {
+          "id": "new74-history-087",
+          "question": "Elhamra’nın su ihtiyacı için kanallar hangi nehirden uzatılmıştır?",
+          "answer": "Darro"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-286",
+      "question": "“Hiçbir canlıyı hedef edinmeyin” hadisi hangi uygulamayı yasaklar?",
+      "answer": "Canlı hayvanı atış hedefi yapmayı",
+      "nearest": [
+        {
+          "id": "new74-general-287",
+          "question": "Hayvanlarla ilgili hangi eğlence uygulaması hadiste yasaklanır?",
+          "answer": "Hayvanları birbirleriyle dövüştürmek"
+        },
+        {
+          "id": "v12-general-012",
+          "question": "Hucurât 49/11'de başkalarıyla ilgili yasaklanan davranış hangisidir?",
+          "answer": "Alay etmek ve kötü lakap takmak"
+        },
+        {
+          "id": "q65-isra-31",
+          "question": "İsrâ 17/31'de hangi endişeyle çocukların öldürülmesi yasaklanır?",
+          "answer": "Yoksulluk korkusu"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-287",
+      "question": "Hayvanlarla ilgili hangi eğlence uygulaması hadiste yasaklanır?",
+      "answer": "Hayvanları birbirleriyle dövüştürmek",
+      "nearest": [
+        {
+          "id": "new74-general-219",
+          "question": "Ölülerle ilgili hadiste hangi davranış açıkça yasaklanır?",
+          "answer": "Onlara sövmek"
+        },
+        {
+          "id": "v12-general-012",
+          "question": "Hucurât 49/11'de başkalarıyla ilgili yasaklanan davranış hangisidir?",
+          "answer": "Alay etmek ve kötü lakap takmak"
+        },
+        {
+          "id": "new74-quran-032",
+          "question": "Enfâl 8/27’de emanetlerle ilgili hangi davranış yasaklanır?",
+          "answer": "Emanetlere bile bile hıyanet etmek"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-288",
+      "question": "İki kişi arasındaki davada karar verecek kimse hangi hâldeyken hüküm vermemelidir?",
+      "answer": "Öfkeliyken",
+      "nearest": [
+        {
+          "id": "new74-general-188",
+          "question": "Birbirine küs iki kişi arasında hadiste hangisi daha hayırlı sayılır?",
+          "answer": "Önce selâm veren"
+        },
+        {
+          "id": "q67-rum-21",
+          "question": "Rûm 30/21'de eşler arasına konulan iki değer nedir?",
+          "answer": "Sevgi ve merhamet"
+        },
+        {
+          "id": "new74-general-035",
+          "question": "Namazda iki secde arasındaki oturuşa ne denir?",
+          "answer": "Celse"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-289",
+      "question": "Ehliyetli hâkim gerekli çabayı göstererek ictihad ettiğinde isabet ve hata için hadiste hangi ecirler belirtilir?",
+      "answer": "İsabet ederse iki, yanılırsa bir ecir",
+      "nearest": [
+        {
+          "id": "new74-general-216",
+          "question": "Allah için tevazu gösteren kişi için hadiste hangi sonuç bildirilir?",
+          "answer": "Allah’ın onu yüceltmesi"
+        },
+        {
+          "id": "v10-general-004",
+          "question": "İslâmî ahlâkta 'tevekkül' hangi tutumu anlatır?",
+          "answer": "Gerekli çabayı gösterip Allah'a güvenmek"
+        },
+        {
+          "id": "v9-prophets-006",
+          "question": "Sâd 38/42'de Eyyûb'a gösterilen su için hangi iki kullanım açıkça birlikte anılır?",
+          "answer": "Yıkanmak ve içmek"
+        }
+      ]
+    },
+    {
+      "id": "new74-general-290",
+      "question": "Hadisteki genel ispat ilkesine göre delil getirmek ve yemin etmek sırasıyla kime düşer?",
+      "answer": "Davacıya ve davalıya",
+      "nearest": [
+        {
+          "id": "new74-general-191",
+          "question": "Doğru sözlülüğü öğütleyen hadiste hangi ilerleme sırası kurulur?",
+          "answer": "Doğruluk, iyilik, cennet"
+        },
+        {
+          "id": "q49-taberi-016",
+          "question": "TDV’ye göre Taberî, rivayetlerin kabul edilip edilmemesine ilişkin kararı çoğunlukla kime bırakır?",
+          "answer": "Okuyucuya"
+        },
+        {
+          "id": "new74-general-181",
+          "question": "Ebû Şurayh’tan nakledilen hadiste misafirlik hakkının genel süresi nasıl belirtilir?",
+          "answer": "Üç gün"
         }
       ]
     },
@@ -6066,14 +6506,14 @@
           "answer": "Işık-gölge oyunlarıyla derinlik kurmaması"
         },
         {
+          "id": "new74-quran-272",
+          "question": "İ‘râbü’l-Kur’ân, âyetleri özellikle hangi bakımdan inceler?",
+          "answer": "Cümle ve terkip yapısı bakımından"
+        },
+        {
           "id": "new74-history-005",
           "question": "TDV’ye göre İbnü’l-Heysem’in optik araştırmalarını güçlü kılan yöntem birleşimi hangisidir?",
           "answer": "Matematiksel çözümleme ile fiziksel deney"
-        },
-        {
-          "id": "v12-history-001",
-          "question": "Ortaçağ optik çalışmalarına büyük katkıda bulunan İbnü'l-Heysem'in meşhur eseri hangisidir?",
-          "answer": "Kitâbü’l-Menâzır"
         }
       ]
     },
@@ -6396,14 +6836,14 @@
           "answer": "Boyaların su yüzeyinde yayılmasına yardım etmek"
         },
         {
+          "id": "new74-quran-289",
+          "question": "Vâkıa 56/68-70’te içilen suyun hangi duruma getirilebileceği hatırlatılarak şükre çağrılır?",
+          "answer": "Tuzlu yapılabileceği"
+        },
+        {
           "id": "new74-history-022",
           "question": "Geleneksel ebru teknesinde suya kitre katılmasının temel amacı nedir?",
           "answer": "Suyu koyulaştırıp boyaların dibe çökmesini önlemek"
-        },
-        {
-          "id": "q42-lokman-16",
-          "question": "Lokmân 31/16'da yapılan en küçük iş hangi örnekle anlatılır?",
-          "answer": "Hardal tanesi ağırlığındaki iş"
         }
       ]
     },
@@ -6621,9 +7061,9 @@
           "answer": "Abdest alanları yağmur ve güneşten korumak"
         },
         {
-          "id": "quran-009",
-          "question": "Kur’an metninin iki kapak arasında toplanmış kitap biçimine ne denir?",
-          "answer": "Mushaf"
+          "id": "new74-history-280",
+          "question": "Mimaride sıva üzerine boyayla yapılan nakış ve bezemeye ne denir?",
+          "answer": "Kalem işi"
         }
       ]
     },
@@ -6885,9 +7325,9 @@
           "answer": "Bağdat halkıyla askerî birlikler arasındaki gerginliği gidermek"
         },
         {
-          "id": "new74-prophets-123",
-          "question": "Hûd 11/44’te tufan sona ererken toprağa ve göğe verilen emir nasıl eşleşir?",
-          "answer": "Toprak suyunu yutsun, gök suyunu tutsun"
+          "id": "new74-history-273",
+          "question": "Hârûnürreşîd döneminde kâğıt imalâthanesi açılan Abbâsî başşehri hangisidir?",
+          "answer": "Bağdat"
         }
       ]
     },
@@ -7061,9 +7501,9 @@
           "answer": "Musâfaha"
         },
         {
-          "id": "q64-bedir-at",
-          "question": "TDV'ye göre Bedir seferinde İslâm ordusunda kaç at bulunuyordu?",
-          "answer": "İki"
+          "id": "new74-history-271",
+          "question": "İslâm el yazmalarında da kullanılan parşömen hangi malzemeden hazırlanır?",
+          "answer": "İşlenmiş hayvan derisinden"
         }
       ]
     },
@@ -7139,6 +7579,11 @@
       "answer": "Rutubet ve sivrisineklerin insanların sağlığını bozması",
       "nearest": [
         {
+          "id": "new74-quran-276",
+          "question": "Secâvendî’nin sınıflandırmasında lâmelif (لا) hangi yer için konur?",
+          "answer": "Vakfın câiz olmadığı yer"
+        },
+        {
           "id": "v7-general-004",
           "question": "Yeni doğan çocuk için şükür amacıyla kesilen kurbana ne ad verilir?",
           "answer": "Akîka"
@@ -7147,11 +7592,6 @@
           "id": "q66-kehf-16",
           "question": "Kehf 18/16'da gençlerin inançlarını korumak için seçtikleri yer neresidir?",
           "answer": "Mağara"
-        },
-        {
-          "id": "new74-history-056",
-          "question": "Erken Kûfe şehir planında merkezde birlikte yer alan üç unsur hangisidir?",
-          "answer": "Cami, dârülimâre ve pazar"
         }
       ]
     },
@@ -7628,14 +8068,14 @@
           "answer": "Bağdat"
         },
         {
+          "id": "new74-history-273",
+          "question": "Hârûnürreşîd döneminde kâğıt imalâthanesi açılan Abbâsî başşehri hangisidir?",
+          "answer": "Bağdat"
+        },
+        {
           "id": "q52-vakif-005",
           "question": "Vakıf kelimesinin Arapça çoğullarından biri hangisidir?",
           "answer": "Evkāf"
-        },
-        {
-          "id": "q68-hadis-ehadis",
-          "question": "Hadis kelimesinin Arapçadaki çoğul biçimlerinden biri hangisidir?",
-          "answer": "Ehâdîs"
         }
       ]
     },
@@ -7843,19 +8283,19 @@
       "answer": "Darro",
       "nearest": [
         {
+          "id": "new74-history-275",
+          "question": "İbrâhim Müteferrika’nın matbaa için kâğıt ihtiyacını karşılamak üzere girişimde bulunduğu imalâthane nerededir?",
+          "answer": "Yalova"
+        },
+        {
+          "id": "new74-quran-276",
+          "question": "Secâvendî’nin sınıflandırmasında lâmelif (لا) hangi yer için konur?",
+          "answer": "Vakfın câiz olmadığı yer"
+        },
+        {
           "id": "q51-muahat-010",
           "question": "Muâhât hangi sosyal ihtiyaca özellikle cevap vermek için düzenlendi?",
           "answer": "Muhacirlerin yeni yurtlarına uyumunu sağlamak"
-        },
-        {
-          "id": "q53-gasiye-036",
-          "question": "Gâşiye 88/22’nin Diyanet mealinde Peygamber için hangi niteleme reddedilir?",
-          "answer": "Zorba"
-        },
-        {
-          "id": "q55-insikak-020",
-          "question": "İnşikâk 84/3-4'te yeryüzü için ne anlatılır?",
-          "answer": "Uzatılıp dümdüz edilmesi"
         }
       ]
     },
@@ -8283,6 +8723,11 @@
       "answer": "Alem",
       "nearest": [
         {
+          "id": "new74-history-276",
+          "question": "Cami kubbe ve minare külâhlarının tepesine takılan sembolik unsura ne denir?",
+          "answer": "Alem"
+        },
+        {
           "id": "e150-general-035",
           "question": "Minareler arasına ışıklı yazılar kurulan mahya geleneği özellikle hangi kültürde gelişmiştir?",
           "answer": "Osmanlı kültürü"
@@ -8291,11 +8736,6 @@
           "id": "v12-history-005",
           "question": "On ciltlik Seyahatnâme’nin müellifi olan Osmanlı gezgini kimdir?",
           "answer": "Evliya Çelebi"
-        },
-        {
-          "id": "learn-history-020",
-          "question": "Osmanlı tarihindeki Çaldıran Savaşı hangi yıl yapılmıştır?",
-          "answer": "1514"
         }
       ]
     },
@@ -8315,9 +8755,9 @@
           "answer": "Granada (Gırnata)"
         },
         {
-          "id": "new74-history-085",
-          "question": "Elhamra Sarayı’nın gelişimi özellikle hangi Endülüs hânedanıyla ilişkilidir?",
-          "answer": "Nasrîler (Benî Ahmer)"
+          "id": "new74-general-274",
+          "question": "Hz. Dâvûd’u da örnek veren hadiste hangi kazanç biçimi özellikle övülür?",
+          "answer": "Kendi elinin emeğiyle kazanmak"
         }
       ]
     },
@@ -10361,9 +10801,9 @@
           "answer": "Dârimî"
         },
         {
-          "id": "new74-history-051",
-          "question": "TDV’ye göre İslâm devletlerinin sikkelerinde başlıca kullanılan üç maden hangisidir?",
-          "answer": "Altın, gümüş ve bakır"
+          "id": "new74-history-271",
+          "question": "İslâm el yazmalarında da kullanılan parşömen hangi malzemeden hazırlanır?",
+          "answer": "İşlenmiş hayvan derisinden"
         }
       ]
     },
@@ -10801,9 +11241,9 @@
           "answer": "Şadırvan"
         },
         {
-          "id": "q63-kulliye-tanim",
-          "question": "İslâm mimarisinde cami, medrese ve imaret gibi yapılardan oluşan topluluğa ne ad verilir?",
-          "answer": "Külliye"
+          "id": "new74-history-280",
+          "question": "Mimaride sıva üzerine boyayla yapılan nakış ve bezemeye ne denir?",
+          "answer": "Kalem işi"
         }
       ]
     },
@@ -11610,14 +12050,14 @@
           "answer": "Kapı kanatları ve minberlerde"
         },
         {
+          "id": "new74-history-280",
+          "question": "Mimaride sıva üzerine boyayla yapılan nakış ve bezemeye ne denir?",
+          "answer": "Kalem işi"
+        },
+        {
           "id": "new74-quran-108",
           "question": "Nahl 16/80’de hayvan derilerinden yapılan, yolculukta taşınabilen hangi eşya anılır?",
           "answer": "Barınaklar"
-        },
-        {
-          "id": "q48-esma-006",
-          "question": "Cilt kapaklarında ışınlı güneşi andıran bezeme öğesi hangi adla anılır?",
-          "answer": "Şemse"
         }
       ]
     },
@@ -11781,6 +12221,11 @@
       "answer": "Tütsü dumanının dışarı çıkmasına",
       "nearest": [
         {
+          "id": "new74-history-277",
+          "question": "Bina alemi, süslemenin yanında kurşun örtünün tepesinde hangi pratik işe de yarar?",
+          "answer": "Kaplamayı güçlendirip açılmasını önlemek"
+        },
+        {
           "id": "new74-history-162",
           "question": "Selçuklu kervansaraylarında yolcuların binek hayvanları için hangi hizmetler bulunabilirdi?",
           "answer": "Yem, nalbant ve hayvan bakımı"
@@ -11789,11 +12234,6 @@
           "id": "q67-kasas-23",
           "question": "Kasas 28/23'te kuyunun yanında bekleyen iki kadın neden hayvanlarını sulayamıyordu?",
           "answer": "Çobanların sulamayı bitirmesini beklemeleri"
-        },
-        {
-          "id": "q54-ala-016",
-          "question": "A‘lâ 87/2'de yaratmanın yanında ne vurgulanır?",
-          "answer": "Düzen vermek"
         }
       ]
     },
@@ -11882,6 +12322,446 @@
           "id": "new74-history-234",
           "question": "Karatay Hanı vakfiyesinde hastalanan yolcular için hangi sağlık giderinin ayrıldığı belirtilir?",
           "answer": "İlâç ve içecek gideri"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-271",
+      "question": "İslâm el yazmalarında da kullanılan parşömen hangi malzemeden hazırlanır?",
+      "answer": "İşlenmiş hayvan derisinden",
+      "nearest": [
+        {
+          "id": "v13-general-002",
+          "question": "İslâm kültüründe tokalaşma için kullanılan terim hangisidir?",
+          "answer": "Musâfaha"
+        },
+        {
+          "id": "new74-history-051",
+          "question": "TDV’ye göre İslâm devletlerinin sikkelerinde başlıca kullanılan üç maden hangisidir?",
+          "answer": "Altın, gümüş ve bakır"
+        },
+        {
+          "id": "new74-history-027",
+          "question": "İslâm sanatında minyatür yapan kişi için hangi adlandırma kullanılmıştır?",
+          "answer": "Musavvir veya nakkaş"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-272",
+      "question": "Ortaçağ İslâm dünyasında kaliteli kâğıt üretimi ve ihracıyla tanınan Orta Asya merkezi hangisidir?",
+      "answer": "Semerkant",
+      "nearest": [
+        {
+          "id": "v11-history-001",
+          "question": "İslâm felsefesinde 'Muallim-i Sânî' unvanıyla tanınan düşünür kimdir?",
+          "answer": "Fârâbî"
+        },
+        {
+          "id": "v10-history-010",
+          "question": "Uluğ Bey'in astronomi çalışmalarının merkezindeki rasathane hangi şehirdeydi?",
+          "answer": "Semerkant"
+        },
+        {
+          "id": "q64-medine-hicret",
+          "question": "Hicretten sonra İslâm toplumunun ilk siyasî merkezi hangi şehir oldu?",
+          "answer": "Medine"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-273",
+      "question": "Hârûnürreşîd döneminde kâğıt imalâthanesi açılan Abbâsî başşehri hangisidir?",
+      "answer": "Bağdat",
+      "nearest": [
+        {
+          "id": "q59-beyt-sehir",
+          "question": "Abbâsîler döneminde gelişen Beytülhikme hangi şehirdeydi?",
+          "answer": "Bağdat"
+        },
+        {
+          "id": "history-010",
+          "question": "Halife Mansûr’un Abbâsî başşehri olarak kurduğu şehir hangisidir?",
+          "answer": "Bağdat"
+        },
+        {
+          "id": "new74-history-077",
+          "question": "Abbâsî dönemi Bağdat hastanelerinde tıp kitaplarının Arapça’ya çevrildiği kaynak dillerinden biri hangisidir?",
+          "answer": "Sanskritçe"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-274",
+      "question": "Tarihî kâğıt ışığa tutulduğunda görülen, üreticiyi tanımaya ve tarihlendirmeye yardım eden işarete ne denir?",
+      "answer": "Filigran",
+      "nearest": [
+        {
+          "id": "e150-general-033",
+          "question": "Kur'an âyetlerini tefsir eden âlime ne denir?",
+          "answer": "Müfessir"
+        },
+        {
+          "id": "history-004",
+          "question": "Hicret edenlere yardım eden Medineli Müslümanlar hangi adla anılır?",
+          "answer": "Ensar"
+        },
+        {
+          "id": "v8-general-003",
+          "question": "Kötülüklerden korunmak için Allah’ın yardım ve himayesine sığınmaya ne denir?",
+          "answer": "İstiâze"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-275",
+      "question": "İbrâhim Müteferrika’nın matbaa için kâğıt ihtiyacını karşılamak üzere girişimde bulunduğu imalâthane nerededir?",
+      "answer": "Yalova",
+      "nearest": [
+        {
+          "id": "new74-history-087",
+          "question": "Elhamra’nın su ihtiyacı için kanallar hangi nehirden uzatılmıştır?",
+          "answer": "Darro"
+        },
+        {
+          "id": "new74-general-050",
+          "question": "TDV’nin aktardığı Gazzâlî açıklamasında merhametin ahlâkî değer kazanması için acımaya ne eşlik etmelidir?",
+          "answer": "İhtiyacı gücü ölçüsünde ve hür iradeyle karşılamak"
+        },
+        {
+          "id": "new74-prophets-185",
+          "question": "Kendi ihtiyacı için yeni aldığı bürdeyi isteyen sahâbîye Hz. Peygamber nasıl karşılık verir?",
+          "answer": "Eve dönünce kumaşı katlayıp ona gönderir"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-276",
+      "question": "Cami kubbe ve minare külâhlarının tepesine takılan sembolik unsura ne denir?",
+      "answer": "Alem",
+      "nearest": [
+        {
+          "id": "v11-general-010",
+          "question": "Cami avlularında abdest almak amacıyla yapılan su tesisine ne denir?",
+          "answer": "Şadırvan"
+        },
+        {
+          "id": "general-012",
+          "question": "Ramazan’da iki minare arasına kurulan ışıklı yazı düzenine ne denir?",
+          "answer": "Mahya"
+        },
+        {
+          "id": "new74-history-105",
+          "question": "Minarede müezzinin ezan okumak için çıkabildiği çevre balkonuna ne denir?",
+          "answer": "Şerefe"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-277",
+      "question": "Bina alemi, süslemenin yanında kurşun örtünün tepesinde hangi pratik işe de yarar?",
+      "answer": "Kaplamayı güçlendirip açılmasını önlemek",
+      "nearest": [
+        {
+          "id": "new74-history-266",
+          "question": "Hayvan biçimli Selçuklu buhurdanlarındaki delikler süslemenin yanında ne işe yarardı?",
+          "answer": "Tütsü dumanının dışarı çıkmasına"
+        },
+        {
+          "id": "q54-ala-016",
+          "question": "A‘lâ 87/2'de yaratmanın yanında ne vurgulanır?",
+          "answer": "Düzen vermek"
+        },
+        {
+          "id": "q43-nebe-9",
+          "question": "Nebe 78/9'da uykunun ne işe yaradığı anlatılır?",
+          "answer": "Dinlenmeye"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-278",
+      "question": "Duvar ve kubbelerin bezenmesinde kullanılan kabartmalı, renkli nakış tekniği hangisidir?",
+      "answer": "Malakârî",
+      "nearest": [
+        {
+          "id": "q64-uhud-yil",
+          "question": "Nesih hattının başlıca kullanım alanı hangisidir?",
+          "answer": "Kitap ve uzun metinlerin yazımı"
+        },
+        {
+          "id": "e150-general-017",
+          "question": "Bir camide ana mihrabın genellikle bulunduğu duvar hangisidir?",
+          "answer": "Kıble duvarında"
+        },
+        {
+          "id": "v13-general-002",
+          "question": "İslâm kültüründe tokalaşma için kullanılan terim hangisidir?",
+          "answer": "Musâfaha"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-279",
+      "question": "Osmanlı revzen pencerelerinde cam parçalarını bir arada tutan geleneksel kayıt malzemesi hangisidir?",
+      "answer": "Alçı",
+      "nearest": [
+        {
+          "id": "q58-seleme-hud",
+          "question": "Geleneksel hat sanatında yazının hareketine uygunluğu nedeniyle yaygın kullanılan kalem hangi malzemedendir?",
+          "answer": "Kamış"
+        },
+        {
+          "id": "new74-history-260",
+          "question": "Sedef kakmada kompozisyonun parçaları, üzerine şablon yapıştırılan plakadan geleneksel olarak nasıl çıkarılır?",
+          "answer": "Kıl testereyle kesilerek"
+        },
+        {
+          "id": "e150-general-035",
+          "question": "Minareler arasına ışıklı yazılar kurulan mahya geleneği özellikle hangi kültürde gelişmiştir?",
+          "answer": "Osmanlı kültürü"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-280",
+      "question": "Mimaride sıva üzerine boyayla yapılan nakış ve bezemeye ne denir?",
+      "answer": "Kalem işi",
+      "nearest": [
+        {
+          "id": "new74-history-180",
+          "question": "Mukarnaslı geçiş ve bezemeye hangi mimari bölümlerde sıkça rastlanır?",
+          "answer": "Taçkapı ve mihrap kavsaralarında"
+        },
+        {
+          "id": "v11-general-010",
+          "question": "Cami avlularında abdest almak amacıyla yapılan su tesisine ne denir?",
+          "answer": "Şadırvan"
+        },
+        {
+          "id": "new74-history-221",
+          "question": "Vakıf yapılarının yanında zamanla oluşan küçük mezarlıklara ne denir?",
+          "answer": "Hazîre"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-281",
+      "question": "Tarihî usta kitâbelerinde ahşap işçiliği yapan sanatkâr hangi adla anılır?",
+      "answer": "Neccâr",
+      "nearest": [
+        {
+          "id": "new74-general-165",
+          "question": "Klasik fıkıhta sanatkârların emek ve iş görme katkısını birleştirdiği ortaklık hangi adla anılır?",
+          "answer": "Ebdân ortaklığı"
+        },
+        {
+          "id": "q54-buruc-001",
+          "question": "Hendek sahipleri hangi adla anılır?",
+          "answer": "Ashâbü'l-uhdûd"
+        },
+        {
+          "id": "new74-general-175",
+          "question": "Malın, bedeli geri ödendiğinde geri alınması şartıyla satıldığı tarihî işlem hangi adla anılır?",
+          "answer": "Bey‘ bi’l-vefâ"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-282",
+      "question": "Mostar Köprüsü hangi nehrin üzerinde kurulmuştur?",
+      "answer": "Neretva",
+      "nearest": [
+        {
+          "id": "new74-history-283",
+          "question": "TDV’nin belgeyle desteklediği atfa göre Mostar Köprüsü’nün mimarı kimdir?",
+          "answer": "Mimar Hayreddin"
+        },
+        {
+          "id": "new74-history-284",
+          "question": "Mostar Köprüsü’nün kemer açıklığının yüksek tutulmasının sebeplerinden biri nedir?",
+          "answer": "Taşkında sürüklenen maddelerin kemeri tıkamasını önlemek"
+        },
+        {
+          "id": "new74-history-285",
+          "question": "Savaşta yıkılan Mostar Köprüsü yeniden inşa edilerek hangi yıl hizmete açılmıştır?",
+          "answer": "2004"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-283",
+      "question": "TDV’nin belgeyle desteklediği atfa göre Mostar Köprüsü’nün mimarı kimdir?",
+      "answer": "Mimar Hayreddin",
+      "nearest": [
+        {
+          "id": "q63-istanbul-sul",
+          "question": "Süleymaniye Külliyesi'nin mimarı kimdir?",
+          "answer": "Mimar Sinan"
+        },
+        {
+          "id": "new74-history-284",
+          "question": "Mostar Köprüsü’nün kemer açıklığının yüksek tutulmasının sebeplerinden biri nedir?",
+          "answer": "Taşkında sürüklenen maddelerin kemeri tıkamasını önlemek"
+        },
+        {
+          "id": "new74-history-282",
+          "question": "Mostar Köprüsü hangi nehrin üzerinde kurulmuştur?",
+          "answer": "Neretva"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-284",
+      "question": "Mostar Köprüsü’nün kemer açıklığının yüksek tutulmasının sebeplerinden biri nedir?",
+      "answer": "Taşkında sürüklenen maddelerin kemeri tıkamasını önlemek",
+      "nearest": [
+        {
+          "id": "new74-history-283",
+          "question": "TDV’nin belgeyle desteklediği atfa göre Mostar Köprüsü’nün mimarı kimdir?",
+          "answer": "Mimar Hayreddin"
+        },
+        {
+          "id": "new74-history-282",
+          "question": "Mostar Köprüsü hangi nehrin üzerinde kurulmuştur?",
+          "answer": "Neretva"
+        },
+        {
+          "id": "new74-quran-236",
+          "question": "Âyet sayımlarındaki farklı rakamların sebeplerinden biri hangisidir?",
+          "answer": "Durakların ve besmelelerin sayılma biçimindeki farklar"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-285",
+      "question": "Savaşta yıkılan Mostar Köprüsü yeniden inşa edilerek hangi yıl hizmete açılmıştır?",
+      "answer": "2004",
+      "nearest": [
+        {
+          "id": "new74-history-282",
+          "question": "Mostar Köprüsü hangi nehrin üzerinde kurulmuştur?",
+          "answer": "Neretva"
+        },
+        {
+          "id": "q63-nizamiye-bagdat",
+          "question": "Bağdat Nizâmiye Medresesi hangi yıl ders vermeye açılmıştır?",
+          "answer": "1067"
+        },
+        {
+          "id": "q69-enesbmalik-yil",
+          "question": "Enes b. Mâlik, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+          "answer": "On yıl"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-286",
+      "question": "Gazi Hüsrev Bey Külliyesi hangi Balkan şehrindedir?",
+      "answer": "Saraybosna",
+      "nearest": [
+        {
+          "id": "new74-history-288",
+          "question": "Gazi Hüsrev Bey’in külliyesindeki medrese kimin adına yapılmıştır?",
+          "answer": "Annesi Selçuk Hatun adına"
+        },
+        {
+          "id": "new74-history-289",
+          "question": "Gazi Hüsrev Bey Kütüphanesi’nde değerli yazmalar yanında hangi belge türleri de bulunur?",
+          "answer": "Şer‘iyye sicilleri ve vakfiyeler"
+        },
+        {
+          "id": "new74-history-287",
+          "question": "Evliya Çelebi, Gazi Hüsrev Bey Camii’nde kışın abdest alanlara sağlanan hangi kolaylığı anlatır?",
+          "answer": "Musluklardan ısıtılmış su akıtılmasını"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-287",
+      "question": "Evliya Çelebi, Gazi Hüsrev Bey Camii’nde kışın abdest alanlara sağlanan hangi kolaylığı anlatır?",
+      "answer": "Musluklardan ısıtılmış su akıtılmasını",
+      "nearest": [
+        {
+          "id": "new74-history-289",
+          "question": "Gazi Hüsrev Bey Kütüphanesi’nde değerli yazmalar yanında hangi belge türleri de bulunur?",
+          "answer": "Şer‘iyye sicilleri ve vakfiyeler"
+        },
+        {
+          "id": "new74-history-286",
+          "question": "Gazi Hüsrev Bey Külliyesi hangi Balkan şehrindedir?",
+          "answer": "Saraybosna"
+        },
+        {
+          "id": "new74-history-288",
+          "question": "Gazi Hüsrev Bey’in külliyesindeki medrese kimin adına yapılmıştır?",
+          "answer": "Annesi Selçuk Hatun adına"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-288",
+      "question": "Gazi Hüsrev Bey’in külliyesindeki medrese kimin adına yapılmıştır?",
+      "answer": "Annesi Selçuk Hatun adına",
+      "nearest": [
+        {
+          "id": "new74-history-286",
+          "question": "Gazi Hüsrev Bey Külliyesi hangi Balkan şehrindedir?",
+          "answer": "Saraybosna"
+        },
+        {
+          "id": "new74-history-289",
+          "question": "Gazi Hüsrev Bey Kütüphanesi’nde değerli yazmalar yanında hangi belge türleri de bulunur?",
+          "answer": "Şer‘iyye sicilleri ve vakfiyeler"
+        },
+        {
+          "id": "new74-history-098",
+          "question": "Gevher Nesibe adına külliyeyi yaptıran Anadolu Selçuklu hükümdarı kimdir?",
+          "answer": "I. Gıyâseddin Keyhusrev"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-289",
+      "question": "Gazi Hüsrev Bey Kütüphanesi’nde değerli yazmalar yanında hangi belge türleri de bulunur?",
+      "answer": "Şer‘iyye sicilleri ve vakfiyeler",
+      "nearest": [
+        {
+          "id": "new74-history-286",
+          "question": "Gazi Hüsrev Bey Külliyesi hangi Balkan şehrindedir?",
+          "answer": "Saraybosna"
+        },
+        {
+          "id": "new74-history-287",
+          "question": "Evliya Çelebi, Gazi Hüsrev Bey Camii’nde kışın abdest alanlara sağlanan hangi kolaylığı anlatır?",
+          "answer": "Musluklardan ısıtılmış su akıtılmasını"
+        },
+        {
+          "id": "new74-history-288",
+          "question": "Gazi Hüsrev Bey’in külliyesindeki medrese kimin adına yapılmıştır?",
+          "answer": "Annesi Selçuk Hatun adına"
+        }
+      ]
+    },
+    {
+      "id": "new74-history-290",
+      "question": "Taş bezemede kâğıttaki desenin zemine aktarılmasında iğnelemeden sonra hangi işlem kullanılır?",
+      "answer": "Kömür tozuyla silkme",
+      "nearest": [
+        {
+          "id": "q63-karatay-muze",
+          "question": "Karatay Medresesi 1954'te onarıldıktan sonra hangi amaçla kullanılmaya başlandı?",
+          "answer": "Çini eserleri müzesi"
+        },
+        {
+          "id": "new74-history-173",
+          "question": "Geleneksel ebruda boyaları taş üzerinde ezmek için kullanılan el taşının adı nedir?",
+          "answer": "Destesenk"
+        },
+        {
+          "id": "new74-general-010",
+          "question": "Bir kitabın bedelsiz kullanılmak ve sonra aynı kitap geri verilmek üzere ödünç alınması hangi akde örnektir?",
+          "answer": "Âriyet"
         }
       ]
     },
@@ -13101,6 +13981,11 @@
       "answer": "Hayır işlerinde koşup umut ve korkuyla Allah’a dua etmeleri",
       "nearest": [
         {
+          "id": "new74-general-271",
+          "question": "Alışverişin bereketini anlatan hadiste tarafların hangi davranışı övülür?",
+          "answer": "Doğru söyleyip malın kusurunu açıklamaları"
+        },
+        {
           "id": "e150-prophets-039",
           "question": "Hz. Eyyûb’ün derdini Allah'a arz ederek rahmet dilediği dua hangi sûrenin 83. âyetindedir?",
           "answer": "Enbiyâ"
@@ -13109,11 +13994,6 @@
           "id": "q66-meryem-3",
           "question": "Meryem 19/11’de Zekeriyyâ kavmine sabah akşam ne yapmalarını işaretle bildirir?",
           "answer": "Allah’ı tesbih etmelerini"
-        },
-        {
-          "id": "q54-tarik-008",
-          "question": "Târık 86/1–3’te târık hangi ifadeyle açıklanır?",
-          "answer": "Karanlığı delen yıldız"
         }
       ]
     },
@@ -14981,9 +15861,9 @@
           "answer": "Öfkelendiğinde kendine hâkim olan"
         },
         {
-          "id": "new74-prophets-179",
-          "question": "Hz. Âişe’nin rivayetinde Hz. Peygamber, kızı Fâtıma yanına geldiğinde onu nasıl karşılardı?",
-          "answer": "Ayağa kalkıp elinden tutar ve kendi yerine oturturdu"
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
         }
       ]
     },
@@ -15037,6 +15917,11 @@
       "answer": "Kusur bulmadan yemezdi",
       "nearest": [
         {
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
+        },
+        {
           "id": "new74-prophets-262",
           "question": "Hz. Âişe’nin rivayetinde Hz. Peygamber’in hediyeleşme uygulaması nasıl anlatılır?",
           "answer": "Hediyeyi kabul edip karşılığını vermesi"
@@ -15045,11 +15930,6 @@
           "id": "new74-prophets-245",
           "question": "Hz. Ebû Bekir, Hz. Peygamber’in kendisine ödeme vaadettiğini söyleyen Câbir’e nasıl davranmıştır?",
           "answer": "Vaadi yerine getirerek mal vermiştir"
-        },
-        {
-          "id": "q48-ebu-hureyre-024",
-          "question": "TDV’deki rivayete göre Ebû Hüreyre künyesi hangi davranışıyla ilişkilendirilir?",
-          "answer": "Kedi yavrularıyla ilgilenmesi"
         }
       ]
     },
@@ -15113,9 +15993,9 @@
           "answer": "Affetmek, onlar için bağışlanma dilemek ve danışmak"
         },
         {
-          "id": "v12-general-003",
-          "question": "İsrâ 17/26-27'de savurganlığa ilişkin eleştirilen davranış hangisidir?",
-          "answer": "Saçıp savurarak israf etmek"
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
         }
       ]
     },
@@ -15267,9 +16147,9 @@
           "answer": "Allah’a ait olmayan sözleri O’na isnat etmesinin"
         },
         {
-          "id": "prophets-003",
-          "question": "Kur’an’da tufan sırasında gemi yapması anlatılan peygamber kimdir?",
-          "answer": "Hz. Nûh"
+          "id": "new74-prophets-290",
+          "question": "Bulduğu parayı ilân süresinden sonra kullanan kişiye, sahibi sonradan çıkarsa Hz. Peygamber ne yapmasını söylemiştir?",
+          "answer": "Sahibine geri ödemesini"
         }
       ]
     },
@@ -15790,14 +16670,14 @@
           "answer": "Sevdiğini mutlaka hidayete erdiremeyeceği"
         },
         {
+          "id": "new74-prophets-289",
+          "question": "Kayıp develerin bırakılmasını öğütleyen rivayette Hz. Peygamber hangi gerekçeyi belirtir?",
+          "answer": "Su bulup otlayarak kendi başlarına yaşayabilmelerini"
+        },
+        {
           "id": "e150-prophets-038",
           "question": "Âd kavmine gönderilen peygamber kimdir?",
           "answer": "Hûd"
-        },
-        {
-          "id": "new74-prophets-061",
-          "question": "Âl-i İmrân 3/159’da Hz. Peygamber kaba ve katı kalpli olsaydı çevresindekiler için hangi sonuç belirtilir?",
-          "answer": "Etrafından dağılıp gidecekleri"
         }
       ]
     },
@@ -15817,9 +16697,9 @@
           "answer": "Kestiği koyundan onun dostlarına göndererek"
         },
         {
-          "id": "learn-women-021",
-          "question": "Hz. Peygamber'in kızı Rukıyye'nin evlendiği sahâbî kimdir?",
-          "answer": "Hz. Osman"
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
         }
       ]
     },
@@ -15878,14 +16758,14 @@
           "answer": "Hediyeyi kabul edip karşılığını vermesi"
         },
         {
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
+        },
+        {
           "id": "new74-prophets-231",
           "question": "Enfâl 8/30’da Hz. Peygamber’e karşı kurulan üç plan hangi fiillerle anlatılır?",
           "answer": "Etkisiz bırakmak, öldürmek veya yurdundan çıkarmak"
-        },
-        {
-          "id": "quran-meaning-v72-028",
-          "question": "Fussilet 41/34'te kötülüğe karşı hangi tutumun düşmanlığı dostluğa çevirebileceği anlatılır?",
-          "answer": "Kötülüğü daha güzel bir davranışla savmak"
         }
       ]
     },
@@ -15944,14 +16824,14 @@
           "answer": "Onunla ilgilenip yardımına gitmesiyle"
         },
         {
+          "id": "new74-prophets-274",
+          "question": "Hz. Peygamber, vadeli olarak aldığı yiyecek karşılığında hangi eşyasını rehin bırakmıştır?",
+          "answer": "Zırhını"
+        },
+        {
           "id": "new74-prophets-226",
           "question": "Ezana alayla karşılık veren Ebû Mahzûre’ye Hz. Peygamber nasıl yaklaşır?",
           "answer": "Ezanı bizzat öğretip okuyuşunu değerlendirir"
-        },
-        {
-          "id": "new74-prophets-177",
-          "question": "Kıyametin ne zaman kopacağını soran kişiye Hz. Peygamber hangi hazırlık sorusuyla karşılık verir?",
-          "answer": "Onun için ne hazırladın?"
         }
       ]
     },
@@ -16098,14 +16978,14 @@
           "answer": "Sahip olduğu bilgiden öğretmesini"
         },
         {
+          "id": "new74-prophets-278",
+          "question": "Hz. Peygamber’in Ebû Zer’i “Sende hâlâ câhiliyeden izler var” diye uyarmasına hangi davranış yol açmıştır?",
+          "answer": "Birini annesinin kökeni üzerinden aşağılaması"
+        },
+        {
           "id": "new74-prophets-067",
           "question": "Furkân 25/56’da Hz. Peygamber’in görevi hangi iki sıfatla anlatılır?",
           "answer": "Müjdeci ve uyarıcı"
-        },
-        {
-          "id": "new74-prophets-201",
-          "question": "Sa‘d b. Ebû Vakkās hastayken malının çoğunu vasiyet etmek isteyince Hz. Peygamber hangi oranı bile çok bularak kabul eder?",
-          "answer": "Üçte bir"
         }
       ]
     },
@@ -16186,14 +17066,14 @@
           "answer": "Din üzere sabit kalmasını"
         },
         {
+          "id": "new74-prophets-285",
+          "question": "Yaptığı görev için ücret almak istemeyen Hz. Ömer’e Hz. Peygamber hangi öğüdü vermiştir?",
+          "answer": "İstemeden verileni alıp yararlanmasını ve sadaka vermesini"
+        },
+        {
           "id": "new74-prophets-206",
           "question": "Hz. Ali’nin aktardığı namaz duasında Hz. Peygamber güzel ahlâk için Allah’tan ne ister?",
           "answer": "Güzel ahlâka eriştirmesini ve kötü ahlâkı uzaklaştırmasını"
-        },
-        {
-          "id": "new74-prophets-243",
-          "question": "Gece namazında kendisine uymak için insanların toplandığını gören Hz. Peygamber, amellerin miktarı için hangi ölçüyü hatırlatmıştır?",
-          "answer": "Güçlerinin yeteceği amelleri yapmalarını"
         }
       ]
     },
@@ -16824,14 +17704,14 @@
           "answer": "Hediyeyi kabul edip karşılığını vermesi"
         },
         {
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
+        },
+        {
           "id": "new74-prophets-179",
           "question": "Hz. Âişe’nin rivayetinde Hz. Peygamber, kızı Fâtıma yanına geldiğinde onu nasıl karşılardı?",
           "answer": "Ayağa kalkıp elinden tutar ve kendi yerine oturturdu"
-        },
-        {
-          "id": "new74-prophets-181",
-          "question": "Hz. Âişe’nin rivayetine göre Hz. Peygamber, Hatice’ye vefasını onun vefatından sonra nasıl da gösterirdi?",
-          "answer": "Kestiği koyundan onun dostlarına göndererek"
         }
       ]
     },
@@ -16863,6 +17743,11 @@
       "answer": "Ona hayır ve bereket duasında bulunmayı",
       "nearest": [
         {
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
+        },
+        {
           "id": "new74-prophets-144",
           "question": "Ebû Hüreyre’nin anlatımında Hz. Peygamber hoşlanmadığı yemek karşısında nasıl davranırdı?",
           "answer": "Kusur bulmadan yemezdi"
@@ -16871,11 +17756,6 @@
           "id": "prophets-012",
           "question": "Hz. Zekeriyyâ’nın oğlu olan peygamber kimdir?",
           "answer": "Hz. Yahyâ"
-        },
-        {
-          "id": "new74-prophets-200",
-          "question": "Hz. Peygamber, Kureyş elçisi Ebû Râfi‘nin Medine’de kalma isteğine karşı hangi ilkeyi belirtir?",
-          "answer": "Elçileri alıkoymadığını ve ahdini bozmayacağını"
         }
       ]
     },
@@ -16885,6 +17765,11 @@
       "answer": "Bağışa, aile geçimine ve yeniden üretime",
       "nearest": [
         {
+          "id": "new74-prophets-288",
+          "question": "Hz. Peygamber’in anlattığı, kendisini ısıran karınca yüzünden yuvayı yaktıran peygamber kıssasında hangi davranış eleştirilir?",
+          "answer": "Bir karınca yüzünden bütün topluluğu yok etmek"
+        },
+        {
           "id": "q71-ilyas-saffat",
           "question": "Hz. İlyâs'ın peygamber olarak anıldığı ve kıssasına yer verilen sûre hangisidir?",
           "answer": "Sâffât"
@@ -16893,11 +17778,6 @@
           "id": "q48-yusuf-029",
           "question": "Hangi sûrede aynı adı taşıyan peygamberin kıssası bir bütün halinde anlatılır?",
           "answer": "Yûsuf sûresi"
-        },
-        {
-          "id": "new74-prophets-150",
-          "question": "Mâlik b. Huveyris’in anlattığı gençlere Hz. Peygamber, ailelerine döndüklerinde ne yapmalarını öğütler?",
-          "answer": "Öğrendiklerini onlara öğretmelerini"
         }
       ]
     },
@@ -16917,9 +17797,9 @@
           "answer": "Yanlış düşünce ve vesveseye kapılmamaları için"
         },
         {
-          "id": "new74-history-256",
-          "question": "Rubu‘ tahtasının kâğıda çizilmiş ölçü çizgileri neden lakla kaplanırdı?",
-          "answer": "Aşınıp bozulmalarını önlemek için"
+          "id": "new74-prophets-282",
+          "question": "Hz. Peygamber, çarşıda ok taşıyanlardan okların uçlarını tutmalarını neden istemiştir?",
+          "answer": "İnsanlara zarar vermemeleri için"
         }
       ]
     },
@@ -17149,6 +18029,11 @@
       "answer": "Onları değiştirebilecek kimse bulunmadığı",
       "nearest": [
         {
+          "id": "new74-quran-284",
+          "question": "Teğābün 64/11’de Allah’a iman edenin gönlü hakkında hangi sonuç bildirilir?",
+          "answer": "Allah’ın onu doğruya yönelteceği"
+        },
+        {
           "id": "v10-quran-003",
           "question": "Kehf sûresinin adındaki 'kehf' kelimesi ne demektir?",
           "answer": "Mağara"
@@ -17157,11 +18042,6 @@
           "id": "q55-infitar-018",
           "question": "İnfitâr 82/12’de değerli yazıcılar hakkında ne bildirilir?",
           "answer": "İnsanların yaptıklarını bilmeleri"
-        },
-        {
-          "id": "pilot-prophets-002",
-          "question": "Kur’an’da Hz. Dâvûd’a verildiği bildirilen kitabın adı nedir?",
-          "answer": "Zebûr"
         }
       ]
     },
@@ -17203,9 +18083,9 @@
           "answer": "Ali b. Ebû Tâlib"
         },
         {
-          "id": "e150-history-030",
-          "question": "Hz. Peygamber'den sonra ilk halife kim olmuştur?",
-          "answer": "Ebû Bekir"
+          "id": "new74-prophets-281",
+          "question": "Bilâl’e dağıtılmasını söylediği mallar henüz dağıtılamayınca Hz. Peygamber’in mescitte gecelemesi neyle ilişkilendirilir?",
+          "answer": "Dağıtım sorumluluğunu yerine getirmeden ailesine dönmek istememesiyle"
         }
       ]
     },
@@ -17313,9 +18193,9 @@
           "answer": "Onun için ne hazırladın?"
         },
         {
-          "id": "new74-prophets-238",
-          "question": "Muhammed 47/19’da Hz. Peygamber’den kendisiyle birlikte kimler için bağışlanma dilemesi istenir?",
-          "answer": "Mümin erkekler ve kadınlar"
+          "id": "new74-prophets-282",
+          "question": "Hz. Peygamber, çarşıda ok taşıyanlardan okların uçlarını tutmalarını neden istemiştir?",
+          "answer": "İnsanlara zarar vermemeleri için"
         }
       ]
     },
@@ -17357,9 +18237,9 @@
           "answer": "Kendilerine yetecek kadar rızık"
         },
         {
-          "id": "q57-ezanruya",
-          "question": "Ezan sözlerini rüyasında gördüğünü Hz. Peygamber'e anlatan sahâbî kimdir?",
-          "answer": "Abdullah b. Zeyd"
+          "id": "new74-prophets-285",
+          "question": "Yaptığı görev için ücret almak istemeyen Hz. Ömer’e Hz. Peygamber hangi öğüdü vermiştir?",
+          "answer": "İstemeden verileni alıp yararlanmasını ve sadaka vermesini"
         }
       ]
     },
@@ -17379,9 +18259,9 @@
           "answer": "Kendilerine yetecek kadar rızık"
         },
         {
-          "id": "new74-prophets-257",
-          "question": "Develeri sesiyle hızlandıran Enceşe’yi Hz. Peygamber neden yavaşlaması için uyarmıştır?",
-          "answer": "Yolcu hanımların sarsıntıdan rahatsız olmaması için"
+          "id": "new74-prophets-282",
+          "question": "Hz. Peygamber, çarşıda ok taşıyanlardan okların uçlarını tutmalarını neden istemiştir?",
+          "answer": "İnsanlara zarar vermemeleri için"
         }
       ]
     },
@@ -17445,9 +18325,9 @@
           "answer": "Kendine eziyet etmeyip bineğe binmesini"
         },
         {
-          "id": "q48-ebu-hureyre-028",
-          "question": "Ebû Hüreyre Medine’ye ilk geldiğinde Hz. Peygamber’in bulunduğu hangi yere giderek fethe katıldı?",
-          "answer": "Hayber"
+          "id": "new74-prophets-272",
+          "question": "Hz. Peygamber, Câbir’den satın aldığı deveyi bedelini ödedikten sonra ne yapmıştır?",
+          "answer": "Câbir’e hediye etmiştir"
         }
       ]
     },
@@ -17638,14 +18518,14 @@
           "answer": "Sadakayı Suffe’ye gönderir, hediyeyi paylaşırdı"
         },
         {
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
+        },
+        {
           "id": "new74-prophets-179",
           "question": "Hz. Âişe’nin rivayetinde Hz. Peygamber, kızı Fâtıma yanına geldiğinde onu nasıl karşılardı?",
           "answer": "Ayağa kalkıp elinden tutar ve kendi yerine oturturdu"
-        },
-        {
-          "id": "new74-prophets-181",
-          "question": "Hz. Âişe’nin rivayetine göre Hz. Peygamber, Hatice’ye vefasını onun vefatından sonra nasıl da gösterirdi?",
-          "answer": "Kestiği koyundan onun dostlarına göndererek"
         }
       ]
     },
@@ -17822,6 +18702,446 @@
           "id": "q69-zeydbsabit-dil",
           "question": "Zeyd b. Sâbit, Hz. Peygamber'in yazışmalarına yardımcı olmak için hangi yazıyı öğrenmiştir?",
           "answer": "İbrânîce veya Süryânîce"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-271",
+      "question": "Urve el-Bârikî, kendisine koyun alması için verilen bir dinarla yaptığı alışverişin sonunda Hz. Peygamber’e ne getirmiştir?",
+      "answer": "Bir koyun ve bir dinar",
+      "nearest": [
+        {
+          "id": "new74-prophets-196",
+          "question": "Hz. Peygamber ailesinin rızkı için yaptığı duada hangi ölçüyü ister?",
+          "answer": "Kendilerine yetecek kadar rızık"
+        },
+        {
+          "id": "new74-prophets-285",
+          "question": "Yaptığı görev için ücret almak istemeyen Hz. Ömer’e Hz. Peygamber hangi öğüdü vermiştir?",
+          "answer": "İstemeden verileni alıp yararlanmasını ve sadaka vermesini"
+        },
+        {
+          "id": "v7-prophets-004",
+          "question": "Sebe' sûresi 34/10'a göre kendisine demiri işleme kolaylığı verilen peygamber kimdir?",
+          "answer": "Hz. Dâvûd"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-272",
+      "question": "Hz. Peygamber, Câbir’den satın aldığı deveyi bedelini ödedikten sonra ne yapmıştır?",
+      "answer": "Câbir’e hediye etmiştir",
+      "nearest": [
+        {
+          "id": "e150-history-030",
+          "question": "Hz. Peygamber'den sonra ilk halife kim olmuştur?",
+          "answer": "Ebû Bekir"
+        },
+        {
+          "id": "learn-women-007",
+          "question": "TDV İslâm Ansiklopedisi'ne göre Hz. Peygamber'in eşleri arasında Hz. Âişe'den sonra en çok hadis rivayet eden kimdir?",
+          "answer": "Ümmü Seleme"
+        },
+        {
+          "id": "q58-suleym-rivayet",
+          "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+          "answer": "On dört"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-273",
+      "question": "Borçlu bir kişinin cenazesinde borcu üstlenip Hz. Peygamber’in namazı kıldırmasına vesile olan sahâbî kimdir?",
+      "answer": "Ebû Katâde",
+      "nearest": [
+        {
+          "id": "v8-history-001",
+          "question": "Hz. Peygamber'in şairi olarak tanınan sahâbî kimdir?",
+          "answer": "Hassân b. Sâbit"
+        },
+        {
+          "id": "q69-selmanifarisi-kardes",
+          "question": "Hz. Peygamber Selmân-ı Fârisî'yi hangi sahâbî ile kardeş ilan etmiştir?",
+          "answer": "Ebü'd-Derdâ"
+        },
+        {
+          "id": "q60-nebevi-misafir",
+          "question": "Hz. Peygamber Medine'ye gelişinde hangi sahâbînin evine misafir olmuştur?",
+          "answer": "Ebû Eyyûb el-Ensârî"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-274",
+      "question": "Hz. Peygamber, vadeli olarak aldığı yiyecek karşılığında hangi eşyasını rehin bırakmıştır?",
+      "answer": "Zırhını",
+      "nearest": [
+        {
+          "id": "new74-prophets-185",
+          "question": "Kendi ihtiyacı için yeni aldığı bürdeyi isteyen sahâbîye Hz. Peygamber nasıl karşılık verir?",
+          "answer": "Eve dönünce kumaşı katlayıp ona gönderir"
+        },
+        {
+          "id": "new74-prophets-136",
+          "question": "Sâd 38/86’da Hz. Peygamber’in görevi karşılığında insanlardan ne istemediği bildirilir?",
+          "answer": "Bir ücret veya karşılık"
+        },
+        {
+          "id": "q44-duha-3",
+          "question": "Duhâ 93/3'te Hz. Peygamber'e hangi güvence verilir?",
+          "answer": "Rabbinin onu bırakmadığı ve darılmadığı"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-275",
+      "question": "Hz. Peygamber, Meymûne bint Hâris’le nikâh işlemleri için ensardan bir kişiyle birlikte kimi vekil göndermiştir?",
+      "answer": "Ebû Râfi‘i",
+      "nearest": [
+        {
+          "id": "learn-women-028",
+          "question": "Hz. Peygamber'in hanımlarından Meymûne bint Hâris'in önceki adı neydi?",
+          "answer": "Berre"
+        },
+        {
+          "id": "learn-women-027",
+          "question": "Hz. Peygamber'in son evlendiği hanım olarak bilinen kişi kimdir?",
+          "answer": "Meymûne bint Hâris"
+        },
+        {
+          "id": "new74-prophets-064",
+          "question": "İsrâ 17/79’da gece ibadetiyle birlikte Hz. Peygamber için hangi makam anılır?",
+          "answer": "Övülmüş bir makam"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-276",
+      "question": "Bedir yolunda orduyla birlikteyken Ebû Lübâbe neden Medine’ye geri gönderilmiştir?",
+      "answer": "Şehrin yönetimiyle ilgilenmesi için",
+      "nearest": [
+        {
+          "id": "new74-prophets-275",
+          "question": "Hz. Peygamber, Meymûne bint Hâris’le nikâh işlemleri için ensardan bir kişiyle birlikte kimi vekil göndermiştir?",
+          "answer": "Ebû Râfi‘i"
+        },
+        {
+          "id": "q47-bedir-001",
+          "question": "Bedir seferinden önce Kureyş kervanını kim yönetiyordu?",
+          "answer": "Ebû Süfyân"
+        },
+        {
+          "id": "e150-history-018",
+          "question": "TDV’ye göre Bedir zaferinin haberini Medine’ye ulaştırmakla görevlendirilenler kimlerdir?",
+          "answer": "Zeyd b. Hârise ve Abdullah b. Revâha"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-277",
+      "question": "İki kadının aynı çocuğu sahiplendiği rivayette Hz. Süleyman gerçek anneyi hangi tepkiyle ayırt eder?",
+      "answer": "Çocuk zarar görmesin diye ondan vazgeçmeye razı olmasıyla",
+      "nearest": [
+        {
+          "id": "learn-dua-023",
+          "question": "İsrâ 17/80'de öğretilen duada hangi iki işin doğrulukla gerçekleşmesi istenir?",
+          "answer": "Giriş ve çıkış"
+        },
+        {
+          "id": "q51-suffe-021",
+          "question": "TDV maddesinde Suffe'de aynı anda kalanlara ilişkin hangi sayı rivayet edilir?",
+          "answer": "Yetmiş"
+        },
+        {
+          "id": "new74-prophets-033",
+          "question": "Kasas 28/25’te Mûsâ neden iki kadının babasının yanına davet edilir?",
+          "answer": "Hayvanları sulamasının karşılığını alması için"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-278",
+      "question": "Hz. Peygamber’in Ebû Zer’i “Sende hâlâ câhiliyeden izler var” diye uyarmasına hangi davranış yol açmıştır?",
+      "answer": "Birini annesinin kökeni üzerinden aşağılaması",
+      "nearest": [
+        {
+          "id": "new74-prophets-144",
+          "question": "Ebû Hüreyre’nin anlatımında Hz. Peygamber hoşlanmadığı yemek karşısında nasıl davranırdı?",
+          "answer": "Kusur bulmadan yemezdi"
+        },
+        {
+          "id": "new74-prophets-245",
+          "question": "Hz. Ebû Bekir, Hz. Peygamber’in kendisine ödeme vaadettiğini söyleyen Câbir’e nasıl davranmıştır?",
+          "answer": "Vaadi yerine getirerek mal vermiştir"
+        },
+        {
+          "id": "new74-prophets-192",
+          "question": "Ebû Zer yöneticilik isteyince Hz. Peygamber görevin hangi yönünü öne çıkararak onu uyarır?",
+          "answer": "Liyakatle yerine getirilmesi gereken bir emanet oluşunu"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-279",
+      "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+      "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen",
+      "nearest": [
+        {
+          "id": "new74-prophets-262",
+          "question": "Hz. Âişe’nin rivayetinde Hz. Peygamber’in hediyeleşme uygulaması nasıl anlatılır?",
+          "answer": "Hediyeyi kabul edip karşılığını vermesi"
+        },
+        {
+          "id": "new74-prophets-144",
+          "question": "Ebû Hüreyre’nin anlatımında Hz. Peygamber hoşlanmadığı yemek karşısında nasıl davranırdı?",
+          "answer": "Kusur bulmadan yemezdi"
+        },
+        {
+          "id": "new74-prophets-179",
+          "question": "Hz. Âişe’nin rivayetinde Hz. Peygamber, kızı Fâtıma yanına geldiğinde onu nasıl karşılardı?",
+          "answer": "Ayağa kalkıp elinden tutar ve kendi yerine oturturdu"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-280",
+      "question": "Hz. Peygamber, Ebyaz b. Hammâl’a verdiği Me’rib Tuzlası’nı hangi bilgi üzerine geri almıştır?",
+      "answer": "Herkesin temel ihtiyacını karşılayan ortak bir kaynak olduğunu öğrenince",
+      "nearest": [
+        {
+          "id": "e150-history-012",
+          "question": "Suffe'de Hz. Peygamber ve görevlendirdiği hocaların verdiği eğitimin odağı neydi?",
+          "answer": "Kur'an ve dinî bilgiler"
+        },
+        {
+          "id": "new74-prophets-255",
+          "question": "Hz. Peygamber, yeni doğan oğluna hangi atasının adını verdiğini söylemiştir?",
+          "answer": "Atası İbrâhim’in"
+        },
+        {
+          "id": "v9-general-008",
+          "question": "Hz. Peygamber'e nispet edilen söz ve haberlerin nakline dayanan bilgi türü hangisidir?",
+          "answer": "Hadis"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-281",
+      "question": "Bilâl’e dağıtılmasını söylediği mallar henüz dağıtılamayınca Hz. Peygamber’in mescitte gecelemesi neyle ilişkilendirilir?",
+      "answer": "Dağıtım sorumluluğunu yerine getirmeden ailesine dönmek istememesiyle",
+      "nearest": [
+        {
+          "id": "quran-meaning-v72-019",
+          "question": "Ra'd 13/28'de kalplerin huzur bulması özellikle neyle ilişkilendirilir?",
+          "answer": "Allah'ı anmakla"
+        },
+        {
+          "id": "v7-prophets-002",
+          "question": "İslâmî kaynaklarda Ninova halkıyla ilişkilendirilen peygamber kimdir?",
+          "answer": "Hz. Yûnus"
+        },
+        {
+          "id": "new74-quran-118",
+          "question": "İsrâ 17/84’te herkesin iş yapış biçimi neyle ilişkilendirilir?",
+          "answer": "Kendi mizaç ve karakteriyle"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-282",
+      "question": "Hz. Peygamber, çarşıda ok taşıyanlardan okların uçlarını tutmalarını neden istemiştir?",
+      "answer": "İnsanlara zarar vermemeleri için",
+      "nearest": [
+        {
+          "id": "q48-yusuf-029",
+          "question": "Hangi sûrede aynı adı taşıyan peygamberin kıssası bir bütün halinde anlatılır?",
+          "answer": "Yûsuf sûresi"
+        },
+        {
+          "id": "new74-prophets-148",
+          "question": "Hz. Peygamber, torunu Ümâme’yi kucağında taşıyarak namaz kılarken secdede ne yapardı?",
+          "answer": "Onu yere bırakırdı"
+        },
+        {
+          "id": "new74-prophets-257",
+          "question": "Develeri sesiyle hızlandıran Enceşe’yi Hz. Peygamber neden yavaşlaması için uyarmıştır?",
+          "answer": "Yolcu hanımların sarsıntıdan rahatsız olmaması için"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-283",
+      "question": "Yemen’de hüküm vermek üzere gönderilen Hz. Ali’ye, ilk tarafı dinledikten sonra ne tavsiye edilmiştir?",
+      "answer": "Diğer tarafı da dinlemeden karar vermemesi",
+      "nearest": [
+        {
+          "id": "v11-history-007",
+          "question": "Ali Kuşçu, İstanbul'a geldikten sonra hangi Osmanlı padişahı tarafından himaye edildi?",
+          "answer": "Fâtih Sultan Mehmed"
+        },
+        {
+          "id": "new74-general-288",
+          "question": "İki kişi arasındaki davada karar verecek kimse hangi hâldeyken hüküm vermemelidir?",
+          "answer": "Öfkeliyken"
+        },
+        {
+          "id": "e150-history-030",
+          "question": "Hz. Peygamber'den sonra ilk halife kim olmuştur?",
+          "answer": "Ebû Bekir"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-284",
+      "question": "Kâ‘b b. Mâlik ile İbn Ebû Hadred’in alacak tartışmasında Hz. Peygamber hangi uzlaşmayı önermiştir?",
+      "answer": "Alacağın yarısını düşürüp kalanını ödemeyi",
+      "nearest": [
+        {
+          "id": "e150-prophets-032",
+          "question": "Güneşin doğuş yönünü tartışmada delil olarak kullanan peygamber kimdir?",
+          "answer": "İbrâhim"
+        },
+        {
+          "id": "q69-enesbmalik-lakap",
+          "question": "Enes b. Mâlik'e Hz. Peygamber'in hizmeti sebebiyle verilen unvan hangisidir?",
+          "answer": "Hâdimü’n-Nebî"
+        },
+        {
+          "id": "e150-history-004",
+          "question": "Hicret sırasında Hz. Peygamber ve Ebû Bekir'in saklandığı mağara hangi dağdaydı?",
+          "answer": "Sevr dağı"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-285",
+      "question": "Yaptığı görev için ücret almak istemeyen Hz. Ömer’e Hz. Peygamber hangi öğüdü vermiştir?",
+      "answer": "İstemeden verileni alıp yararlanmasını ve sadaka vermesini",
+      "nearest": [
+        {
+          "id": "new74-prophets-196",
+          "question": "Hz. Peygamber ailesinin rızkı için yaptığı duada hangi ölçüyü ister?",
+          "answer": "Kendilerine yetecek kadar rızık"
+        },
+        {
+          "id": "q54-ala-020",
+          "question": "A‘lâ 87/9'da peygambere hangi görev hatırlatılır?",
+          "answer": "Öğüt vermek"
+        },
+        {
+          "id": "new74-quran-154",
+          "question": "Tevbe 9/103’te mallarından sadaka alınanlar için Hz. Peygamber’in duası hangi etkiyle anlatılır?",
+          "answer": "Onlara huzur vermesi"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-286",
+      "question": "Hz. Peygamber, Hayber arazilerinin gelirlerini toplamakla hangi sahâbîyi görevlendirmiştir?",
+      "answer": "Abdullah b. Revâha’yı",
+      "nearest": [
+        {
+          "id": "v8-history-001",
+          "question": "Hz. Peygamber'in şairi olarak tanınan sahâbî kimdir?",
+          "answer": "Hassân b. Sâbit"
+        },
+        {
+          "id": "learn-women-011",
+          "question": "Hz. Ömer'in kızı olan ve Hz. Peygamber'le evlenen sahâbî kimdir?",
+          "answer": "Hafsa"
+        },
+        {
+          "id": "q57-ezanruya",
+          "question": "Ezan sözlerini rüyasında gördüğünü Hz. Peygamber'e anlatan sahâbî kimdir?",
+          "answer": "Abdullah b. Zeyd"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-287",
+      "question": "Hz. Peygamber, Necrân halkına güvenilirliğini vurgulayarak hangi sahâbîyi göndermiştir?",
+      "answer": "Ebû Ubeyde b. Cerrâh’ı",
+      "nearest": [
+        {
+          "id": "q67-ankebut-36",
+          "question": "Ankebût 29/36'da Medyen halkına gönderilen peygamber kimdir?",
+          "answer": "Şuayb"
+        },
+        {
+          "id": "pilot-prophets-001",
+          "question": "Kur’an’da Medyen halkına gönderildiği bildirilen peygamber kimdir?",
+          "answer": "Hz. Şuayb"
+        },
+        {
+          "id": "e150-prophets-038",
+          "question": "Âd kavmine gönderilen peygamber kimdir?",
+          "answer": "Hûd"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-288",
+      "question": "Hz. Peygamber’in anlattığı, kendisini ısıran karınca yüzünden yuvayı yaktıran peygamber kıssasında hangi davranış eleştirilir?",
+      "answer": "Bir karınca yüzünden bütün topluluğu yok etmek",
+      "nearest": [
+        {
+          "id": "new74-prophets-173",
+          "question": "Cerîr b. Abdullah, Hz. Peygamber’in kendisini her gördüğündeki hangi davranışını özellikle hatırlar?",
+          "answer": "Gülümsemesini"
+        },
+        {
+          "id": "new74-prophets-228",
+          "question": "Hz. Peygamber’in anlattığı bulutla sulanan bahçe kıssasında ürünün üç payı hangi işlere ayrılır?",
+          "answer": "Bağışa, aile geçimine ve yeniden üretime"
+        },
+        {
+          "id": "new74-prophets-245",
+          "question": "Hz. Ebû Bekir, Hz. Peygamber’in kendisine ödeme vaadettiğini söyleyen Câbir’e nasıl davranmıştır?",
+          "answer": "Vaadi yerine getirerek mal vermiştir"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-289",
+      "question": "Kayıp develerin bırakılmasını öğütleyen rivayette Hz. Peygamber hangi gerekçeyi belirtir?",
+      "answer": "Su bulup otlayarak kendi başlarına yaşayabilmelerini",
+      "nearest": [
+        {
+          "id": "new74-prophets-178",
+          "question": "Hz. Peygamber’in yabancı yöneticilere mektup göndermek için mühür edinmesinin rivayette belirtilen sebebi nedir?",
+          "answer": "Mühürsüz mektupların kabul edilmediğinin söylenmesi"
+        },
+        {
+          "id": "q67-rum-60",
+          "question": "Rûm 30/60'ta Hz. Peygamber'e özellikle hangi tutum öğütlenir?",
+          "answer": "Sabırlı olmak"
+        },
+        {
+          "id": "v8-prophets-001",
+          "question": "Kur'an'da Ba'l inancıyla mücadele ettiği belirtilen peygamber kimdir?",
+          "answer": "Hz. İlyâs"
+        }
+      ]
+    },
+    {
+      "id": "new74-prophets-290",
+      "question": "Bulduğu parayı ilân süresinden sonra kullanan kişiye, sahibi sonradan çıkarsa Hz. Peygamber ne yapmasını söylemiştir?",
+      "answer": "Sahibine geri ödemesini",
+      "nearest": [
+        {
+          "id": "new74-prophets-154",
+          "question": "Hz. Peygamber, hizmetinde çalışan kişiye ağır iş yükleyen kimsenin ne yapmasını ister?",
+          "answer": "Ona yardım etmesini"
+        },
+        {
+          "id": "q47-nuh-019",
+          "question": "Kur’an'ın 71. sûresi hangi peygamberin adını taşır?",
+          "answer": "Hz. Nûh"
+        },
+        {
+          "id": "v8-prophets-004",
+          "question": "Meryem sûresi 19/54'te sözünde durmasıyla övülen peygamber kimdir?",
+          "answer": "Hz. İsmâil"
         }
       ]
     },
@@ -19117,9 +20437,9 @@
           "answer": "Onlara aldırmayıp yüz çevirmek"
         },
         {
-          "id": "quran-010",
-          "question": "Kur’an’ın en uzun suresi hangisidir?",
-          "answer": "Bakara"
+          "id": "new74-quran-282",
+          "question": "Lokmân 31/15’te ortak koşmaya zorlayan anne babaya uyulmaması istenirken hangi tutum korunur?",
+          "answer": "Dünyada onlara iyi davranmak"
         }
       ]
     },
@@ -19469,9 +20789,9 @@
           "answer": "Kendisini zayıf görüp neredeyse öldüreceklerini"
         },
         {
-          "id": "new74-prophets-093",
-          "question": "Meryem 19/58’de anılan seçkin kimselerin Rahmân’ın âyetleri okununca tepkisi nasıl anlatılır?",
-          "answer": "Ağlayarak secdeye kapanmaları"
+          "id": "new74-prophets-279",
+          "question": "Hz. Âişe’nin anlatımında Hz. Peygamber’in çarşı pazar davranışı nasıl betimlenir?",
+          "answer": "Bağırıp çağırmayan ve kötülüğü bağışlayabilen"
         }
       ]
     },
@@ -20097,6 +21417,11 @@
       "answer": "Yol bulmaya yardımcı olmaları",
       "nearest": [
         {
+          "id": "new74-quran-288",
+          "question": "Nebe 78/11’de gündüzün insan için hangi işlevi belirtilir?",
+          "answer": "Çalışıp kazanma zamanı olması"
+        },
+        {
           "id": "new74-quran-102",
           "question": "Nahl 16/7’de yük hayvanlarının insanlara sağladığı kolaylık nedir?",
           "answer": "Yükleri güçlükle ulaşılacak yerlere taşımaları"
@@ -20105,11 +21430,6 @@
           "id": "new74-quran-169",
           "question": "Mü’min 40/64’te yeryüzünün insanlar için hangi niteliği anılır?",
           "answer": "Yerleşim alanı yapılması"
-        },
-        {
-          "id": "new74-general-243",
-          "question": "İnsanları uzlaştırmak için yapılan anlaşmada hangi sınır korunmalıdır?",
-          "answer": "Haramı helâl, helâli haram kılmaması"
         }
       ]
     },
@@ -20503,9 +21823,9 @@
           "answer": "Misaller"
         },
         {
-          "id": "q67-ankebut-43",
-          "question": "Ankebût 29/43'e göre Kur'an'daki örnekleri özellikle kimler kavrayabilir?",
-          "answer": "Bilgi sahipleri"
+          "id": "new74-quran-285",
+          "question": "Kıyâmet 75/14-15’te mazeretlerini sıralasa da insanın kendisiyle ilgili hangi durum vurgulanır?",
+          "answer": "Kendi kendine tanık olması"
         }
       ]
     },
@@ -21114,14 +22434,14 @@
           "answer": "Allah'ın rahmeti ve öğrettiği bilgi"
         },
         {
+          "id": "new74-quran-288",
+          "question": "Nebe 78/11’de gündüzün insan için hangi işlevi belirtilir?",
+          "answer": "Çalışıp kazanma zamanı olması"
+        },
+        {
           "id": "q64-veda-hak",
           "question": "Vedâ Hutbesi'nde dokunulmazlığı özellikle vurgulanan iki insan hakkı hangisidir?",
           "answer": "Can ve mal güvenliği"
-        },
-        {
-          "id": "q43-insan-3",
-          "question": "İnsân 76/3'te gösterilen yol karşısında insanın iki tutumu nedir?",
-          "answer": "Şükretmek veya nankörlük etmek"
         }
       ]
     },
@@ -21295,9 +22615,9 @@
           "answer": "Kınamayı bırakıp af dilemiştir"
         },
         {
-          "id": "e150-prophets-006",
-          "question": "Hz. Yûsuf az bir bedelle hangi şey karşılığında satılır?",
-          "answer": "Gümüş para"
+          "id": "new74-history-275",
+          "question": "İbrâhim Müteferrika’nın matbaa için kâğıt ihtiyacını karşılamak üzere girişimde bulunduğu imalâthane nerededir?",
+          "answer": "Yalova"
         }
       ]
     },
@@ -21857,6 +23177,11 @@
       "answer": "Hasımların en yamanı",
       "nearest": [
         {
+          "id": "new74-general-275",
+          "question": "Ödeme imkânı bulunduğu hâlde borcunu bekletmek hadiste nasıl nitelenir?",
+          "answer": "Zulüm olarak"
+        },
+        {
           "id": "learn-dua-012",
           "question": "Bakara 2/128'de İbrâhim ve İsmâil'in nesilleri için istediği topluluk nasıl nitelenir?",
           "answer": "Allah'a teslim olan bir topluluk"
@@ -21865,11 +23190,6 @@
           "id": "new74-quran-182",
           "question": "Bakara 2/121’de kendilerine kitap verilenler arasından övülenlerin okuma tutumu nasıl anlatılır?",
           "answer": "Kitabı hakkını vererek okumaları"
-        },
-        {
-          "id": "new74-quran-034",
-          "question": "Yûnus 10/12’de eleştirilen insan tutumu hangisidir?",
-          "answer": "Sıkıntıda dua edip kurtulunca bunu unutmak"
         }
       ]
     },
@@ -22258,14 +23578,14 @@
           "answer": "Yaratabilen ile yaratamayan"
         },
         {
+          "id": "new74-quran-290",
+          "question": "Tâhâ 20/118’de Âdem’e bulunduğu yerde hangi iki sıkıntının olmadığı söylenir?",
+          "answer": "Açlık ve çıplaklık"
+        },
+        {
           "id": "q43-mulk-13",
           "question": "Mülk 67/13'te sözle ilgili hangi iki tutum karşılaştırılır?",
           "answer": "Gizlemek ve açığa vurmak"
-        },
-        {
-          "id": "new74-quran-110",
-          "question": "Nahl 16/96’da insandakiler ile Allah’ın katındakiler hangi yönden karşılaştırılır?",
-          "answer": "Birinin tükenmesi, diğerinin kalıcı olması"
         }
       ]
     },
@@ -22879,9 +24199,9 @@
           "answer": "Darro"
         },
         {
-          "id": "q49-ihya-017",
-          "question": "TDV’nin aktardığı aksırma âdâbına göre aksırırken ne yapmak tavsiye edilir?",
-          "answer": "Ağzı el veya mendille kapatmak"
+          "id": "new74-quran-276",
+          "question": "Secâvendî’nin sınıflandırmasında lâmelif (لا) hangi yer için konur?",
+          "answer": "Vakfın câiz olmadığı yer"
         }
       ]
     },
@@ -23006,14 +24326,14 @@
           "answer": "Ateşin ısısını konulduğu yüzeyden uzak tutmak"
         },
         {
+          "id": "new74-history-284",
+          "question": "Mostar Köprüsü’nün kemer açıklığının yüksek tutulmasının sebeplerinden biri nedir?",
+          "answer": "Taşkında sürüklenen maddelerin kemeri tıkamasını önlemek"
+        },
+        {
           "id": "e150-general-014",
           "question": "İlk müezzinlerden biri olan sahâbî kimdir?",
           "answer": "Bilâl-i Habeşî"
-        },
-        {
-          "id": "e150-general-019",
-          "question": "Abdestte yıkanması gereken uzuvlardan biri hangisidir?",
-          "answer": "Yüz"
         }
       ]
     },
@@ -23155,19 +24475,19 @@
       "answer": "Münâsebâtü’l-âyât ve’s-süver",
       "nearest": [
         {
+          "id": "new74-quran-272",
+          "question": "İ‘râbü’l-Kur’ân, âyetleri özellikle hangi bakımdan inceler?",
+          "answer": "Cümle ve terkip yapısı bakımından"
+        },
+        {
+          "id": "new74-quran-271",
+          "question": "Âyetler arasında ilk bakışta var sanılan çelişkileri ele alıp açıklayan Kur’an ilmi hangisidir?",
+          "answer": "Müşkilü’l-Kur’ân"
+        },
+        {
           "id": "pilot-quran-004",
           "question": "Felak ve Nâs surelerinin birlikte anıldığı ad hangisidir?",
           "answer": "Muavvizeteyn"
-        },
-        {
-          "id": "e150-general-006",
-          "question": "Ramazan orucunun farz kılındığı âyetler hangi sûrededir?",
-          "answer": "Bakara"
-        },
-        {
-          "id": "e150-general-033",
-          "question": "Kur'an âyetlerini tefsir eden âlime ne denir?",
-          "answer": "Müfessir"
         }
       ]
     },
@@ -23762,6 +25082,446 @@
           "id": "new74-quran-022",
           "question": "Bakara 2/195’te Allah yolunda harcamayla birlikte hangi uyarı yer alır?",
           "answer": "Kendi ellerinizle kendinizi tehlikeye atmayın"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-271",
+      "question": "Âyetler arasında ilk bakışta var sanılan çelişkileri ele alıp açıklayan Kur’an ilmi hangisidir?",
+      "answer": "Müşkilü’l-Kur’ân",
+      "nearest": [
+        {
+          "id": "quran-006",
+          "question": "Kur’an ayetlerini açıklayıp yorumlamayı konu alan ilim hangisidir?",
+          "answer": "Tefsir"
+        },
+        {
+          "id": "q58-tefsir-ilk",
+          "question": "İslâm tefsir geleneğinde Kur'an'ı ilk açıklayan kişi kim kabul edilir?",
+          "answer": "Hz. Muhammed"
+        },
+        {
+          "id": "new74-quran-099",
+          "question": "Kamer 54/17’de Kur’an’ın kolaylaştırılması hangi amaçla açıklanır?",
+          "answer": "Düşünülüp öğüt alınması"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-272",
+      "question": "İ‘râbü’l-Kur’ân, âyetleri özellikle hangi bakımdan inceler?",
+      "answer": "Cümle ve terkip yapısı bakımından",
+      "nearest": [
+        {
+          "id": "e150-general-033",
+          "question": "Kur'an âyetlerini tefsir eden âlime ne denir?",
+          "answer": "Müfessir"
+        },
+        {
+          "id": "quran-006",
+          "question": "Kur’an ayetlerini açıklayıp yorumlamayı konu alan ilim hangisidir?",
+          "answer": "Tefsir"
+        },
+        {
+          "id": "q62-zekat-ayet",
+          "question": "Kur'an'da zekâtın kimlere verileceği özellikle hangi âyette sayılır?",
+          "answer": "Tevbe 9/60"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-273",
+      "question": "Birçok mushafta kullanılan vakıf rumuzlarıyla tanınan âlim kimdir?",
+      "answer": "Muhammed b. Tayfûr es-Secâvendî",
+      "nearest": [
+        {
+          "id": "new74-quran-275",
+          "question": "Secâvendî sisteminde cim (ج) hangi vakıf türünün işaretidir?",
+          "answer": "Câiz"
+        },
+        {
+          "id": "e150-quran-032",
+          "question": "Mushaf sıralamasında 18. sûre hangisidir?",
+          "answer": "Kehf"
+        },
+        {
+          "id": "e150-quran-034",
+          "question": "Mushaf sıralamasında 19. sûre hangisidir?",
+          "answer": "Meryem"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-274",
+      "question": "Secâvendî’nin vakıf tasnifinde mîm (م) işareti neyi belirtir?",
+      "answer": "Lâzım vakfı",
+      "nearest": [
+        {
+          "id": "new74-quran-275",
+          "question": "Secâvendî sisteminde cim (ج) hangi vakıf türünün işaretidir?",
+          "answer": "Câiz"
+        },
+        {
+          "id": "q68-sunen-konu",
+          "question": "TDV'nin Sünen maddesinde hadisleri ilk defa konularına göre tasnif ettiği belirtilen âlim kimdir?",
+          "answer": "İbn Ebû Arûbe"
+        },
+        {
+          "id": "q59-katib-bolum",
+          "question": "Kâtib Çelebi’nin Cihannümâ için belirttiği iki bölümlü tasnifte ilk bölüm hangi unsurlara ayrılır?",
+          "answer": "Denizler, nehirler ve adalar"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-275",
+      "question": "Secâvendî sisteminde cim (ج) hangi vakıf türünün işaretidir?",
+      "answer": "Câiz",
+      "nearest": [
+        {
+          "id": "new74-quran-274",
+          "question": "Secâvendî’nin vakıf tasnifinde mîm (م) işareti neyi belirtir?",
+          "answer": "Lâzım vakfı"
+        },
+        {
+          "id": "new74-quran-273",
+          "question": "Birçok mushafta kullanılan vakıf rumuzlarıyla tanınan âlim kimdir?",
+          "answer": "Muhammed b. Tayfûr es-Secâvendî"
+        },
+        {
+          "id": "new74-quran-276",
+          "question": "Secâvendî’nin sınıflandırmasında lâmelif (لا) hangi yer için konur?",
+          "answer": "Vakfın câiz olmadığı yer"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-276",
+      "question": "Secâvendî’nin sınıflandırmasında lâmelif (لا) hangi yer için konur?",
+      "answer": "Vakfın câiz olmadığı yer",
+      "nearest": [
+        {
+          "id": "e150-general-030",
+          "question": "Kâbe'nin yer aldığı büyük mescidin adı hangisidir?",
+          "answer": "Mescid-i Harâm"
+        },
+        {
+          "id": "q69-selmanifarisi-sehir",
+          "question": "Selmân-ı Fârisî'nin doğduğu yer TDV'de neresi olarak belirtilir?",
+          "answer": "Râmhürmüz"
+        },
+        {
+          "id": "new74-history-087",
+          "question": "Elhamra’nın su ihtiyacı için kanallar hangi nehirden uzatılmıştır?",
+          "answer": "Darro"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-277",
+      "question": "İslâmî literatürde büyük ölçüde Yahudi, kısmen Hıristiyan kaynaklarından aktarılan kıssa ve bilgilere genellikle ne denir?",
+      "answer": "İsrâiliyat",
+      "nearest": [
+        {
+          "id": "v9-prophets-001",
+          "question": "İslâmî kaynaklarda 'İsrâil' adıyla da anılan peygamber kimdir?",
+          "answer": "Hz. Ya‘kūb"
+        },
+        {
+          "id": "v7-prophets-002",
+          "question": "İslâmî kaynaklarda Ninova halkıyla ilişkilendirilen peygamber kimdir?",
+          "answer": "Hz. Yûnus"
+        },
+        {
+          "id": "q47-suleyman-028",
+          "question": "Süleyman kıssasındaki Sebe melikesi İslâmî kaynaklarda hangi adla tanınır?",
+          "answer": "Belkıs"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-278",
+      "question": "Bir tefsirin hem dirâyet hem de sosyal tefsir başlığı altında değerlendirilebilmesi neyi gösterir?",
+      "answer": "Tasnif ölçütlerinin örtüşebildiğini",
+      "nearest": [
+        {
+          "id": "new74-quran-279",
+          "question": "TDV’nin değerlendirmesinde Taberî tefsiri, rivayet ağırlığının yanında ne de içerir?",
+          "answer": "Dirâyete dayalı tahliller"
+        },
+        {
+          "id": "new74-general-081",
+          "question": "Bir rivayetin “merfû” diye adlandırılması tek başına neyi göstermez?",
+          "answer": "Rivayetin mutlaka sahih olduğunu"
+        },
+        {
+          "id": "q58-tefsir-dirayet",
+          "question": "Rivayetin karşısında, re’y ve içtihada dayalı genel tefsir yöntemi hangi adla anılır?",
+          "answer": "Dirâyet tefsiri"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-279",
+      "question": "TDV’nin değerlendirmesinde Taberî tefsiri, rivayet ağırlığının yanında ne de içerir?",
+      "answer": "Dirâyete dayalı tahliller",
+      "nearest": [
+        {
+          "id": "q58-tefsir-dirayet",
+          "question": "Rivayetin karşısında, re’y ve içtihada dayalı genel tefsir yöntemi hangi adla anılır?",
+          "answer": "Dirâyet tefsiri"
+        },
+        {
+          "id": "q45-ibnsina-recete",
+          "question": "el-Kānûn fi't-Tıb'ın beşinci kitabı ağırlıklı olarak ne içerir?",
+          "answer": "Bileşik ilaç reçeteleri"
+        },
+        {
+          "id": "q68-ravi-cerh",
+          "question": "Hadis rivayetinde râvinin güvenilirliğini olumsuz yönde değerlendirmeye ne ad verilir?",
+          "answer": "Cerh"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-280",
+      "question": "Kur’an’ın dil inceliklerini ve lafızların anlam sınırlarını öne çıkaran tefsir yaklaşımı hangisidir?",
+      "answer": "Lugavî/filolojik tefsir",
+      "nearest": [
+        {
+          "id": "e150-general-033",
+          "question": "Kur'an âyetlerini tefsir eden âlime ne denir?",
+          "answer": "Müfessir"
+        },
+        {
+          "id": "new74-quran-281",
+          "question": "Tasavvufî veya remzî tefsir diye de anılan yaklaşımın adı nedir?",
+          "answer": "İşârî tefsir"
+        },
+        {
+          "id": "quran-007",
+          "question": "Kur’an’ın Türkçe anlam çevirisi için yaygın olarak hangi terim kullanılır?",
+          "answer": "Meâl"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-281",
+      "question": "Tasavvufî veya remzî tefsir diye de anılan yaklaşımın adı nedir?",
+      "answer": "İşârî tefsir",
+      "nearest": [
+        {
+          "id": "v7-history-004",
+          "question": "Kaynaklarda 'Güçlük Seferi' diye de anılan gazve hangisidir?",
+          "answer": "Tebük Gazvesi"
+        },
+        {
+          "id": "v11-quran-003",
+          "question": "Tebbet veya Mesed sûresinde adı anılan kişi kimdir?",
+          "answer": "Ebû Leheb"
+        },
+        {
+          "id": "history-006",
+          "question": "Mescid-i Nebevî’de barınma ve eğitimle anılan bölümün adı nedir?",
+          "answer": "Suffe"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-282",
+      "question": "Lokmân 31/15’te ortak koşmaya zorlayan anne babaya uyulmaması istenirken hangi tutum korunur?",
+      "answer": "Dünyada onlara iyi davranmak",
+      "nearest": [
+        {
+          "id": "v12-quran-009",
+          "question": "Lokmân 31/18'de hangi kibirli davranıştan sakınılması istenir?",
+          "answer": "İnsanlardan yüz çevirip böbürlenmek"
+        },
+        {
+          "id": "new74-quran-059",
+          "question": "A‘râf 7/204’te Kur’an okunurken hangi tutum istenir?",
+          "answer": "Dinlemek ve sessiz durmak"
+        },
+        {
+          "id": "learn-dua-022",
+          "question": "İsrâ 17/24'te anne baba için yapılan duada açıkça ne istenir?",
+          "answer": "Onlara merhamet edilmesi"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-283",
+      "question": "Meryem 19/64’te meleklerin inişi hangi iradeye bağlanır?",
+      "answer": "Rabbin emrine",
+      "nearest": [
+        {
+          "id": "v13-prophets-011",
+          "question": "Âl-i İmrân 3/42'de meleklerin seçilmiş ve temiz kılınmış olduğunu bildirdiği kişi kimdir?",
+          "answer": "Hz. Meryem"
+        },
+        {
+          "id": "q66-meryem-12",
+          "question": "Meryem 19/12'de Yahyâ'ya açıkça hangi emir verilir?",
+          "answer": "Kitaba sımsıkı sarılmak"
+        },
+        {
+          "id": "e150-quran-033",
+          "question": "Meryem suresi kaç âyetten oluşur?",
+          "answer": "98"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-284",
+      "question": "Teğābün 64/11’de Allah’a iman edenin gönlü hakkında hangi sonuç bildirilir?",
+      "answer": "Allah’ın onu doğruya yönelteceği",
+      "nearest": [
+        {
+          "id": "new74-general-184",
+          "question": "Hadiste Allah’ın affeden kuluna ilişkin hangi sonuç bildirilir?",
+          "answer": "Şerefini artırması"
+        },
+        {
+          "id": "new74-general-216",
+          "question": "Allah için tevazu gösteren kişi için hadiste hangi sonuç bildirilir?",
+          "answer": "Allah’ın onu yüceltmesi"
+        },
+        {
+          "id": "new74-prophets-240",
+          "question": "Kehf 18/27’de vahyedilen kitabı okuma emrinin ardından Allah’ın kelimeleri hakkında ne bildirilir?",
+          "answer": "Onları değiştirebilecek kimse bulunmadığı"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-285",
+      "question": "Kıyâmet 75/14-15’te mazeretlerini sıralasa da insanın kendisiyle ilgili hangi durum vurgulanır?",
+      "answer": "Kendi kendine tanık olması",
+      "nearest": [
+        {
+          "id": "q71-mushaf-ilk",
+          "question": "Nahl 16/78’de insanın doğumuyla ilgili anlatımda, şükretmesi için kendisine verilenler hangi gruptur?",
+          "answer": "Kulaklar, gözler ve kalpler"
+        },
+        {
+          "id": "learn-akaid-008",
+          "question": "Hac 22/7'de kıyametle ilgili hangisi açıkça bildirilir?",
+          "answer": "Kabirdekilerin yeniden diriltilmesi"
+        },
+        {
+          "id": "q55-kiyamet-029",
+          "question": "Kıyâmet 75/3'te insan yeniden dirilişle ilgili hangi şeyi sorgular?",
+          "answer": "Kemiklerin birleştirilmesini"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-286",
+      "question": "Haşr 59/14’te bir arada görünen karşı topluluk için dış görünüşün aksine ne söylenir?",
+      "answer": "Kalplerinin dağınık olduğu",
+      "nearest": [
+        {
+          "id": "new74-general-265",
+          "question": "“Ruhlar bir araya gelmiş topluluklardır” hadisinde birbirleriyle uyuşanlar için ne söylenir?",
+          "answer": "Kaynaştıkları"
+        },
+        {
+          "id": "new74-quran-150",
+          "question": "Enfâl 8/28’de insan için birer imtihan olduğu söylenen iki nimet hangisidir?",
+          "answer": "Mal ve çocuklar"
+        },
+        {
+          "id": "new74-general-203",
+          "question": "Allah’ın değerlendirmesinde dış görünüş ve mal yerine hadiste hangi ikili öne çıkarılır?",
+          "answer": "Kalpler ve ameller"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-287",
+      "question": "Saf 61/4’te kenetlenmiş saflar hangi yapıya benzetilir?",
+      "answer": "Sağlam örülmüş bir duvara",
+      "nearest": [
+        {
+          "id": "q43-nebe-6",
+          "question": "Nebe 78/6-7'de dağlar neye benzetilir?",
+          "answer": "Kazıklara"
+        },
+        {
+          "id": "new74-prophets-199",
+          "question": "Hz. Peygamber müminlerin birbirini desteklemesini binaya benzetirken hangi hareketi yapmıştır?",
+          "answer": "Parmaklarını birbirine kenetlemiştir"
+        },
+        {
+          "id": "new74-quran-019",
+          "question": "İbrâhîm 14/24’te güzel söz hangi özelliğe sahip bir ağaca benzetilir?",
+          "answer": "Kökü sağlam, dalları göğe uzanan"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-288",
+      "question": "Nebe 78/11’de gündüzün insan için hangi işlevi belirtilir?",
+      "answer": "Çalışıp kazanma zamanı olması",
+      "nearest": [
+        {
+          "id": "new74-quran-104",
+          "question": "Nahl 16/16’da yıldızların insanlar için hangi işlevi belirtilir?",
+          "answer": "Yol bulmaya yardımcı olmaları"
+        },
+        {
+          "id": "q67-kasas-26",
+          "question": "Kasas 28/26'da Hz. Mûsâ'yı işe almak için belirtilen iki nitelik nedir?",
+          "answer": "Güçlü ve güvenilir olmak"
+        },
+        {
+          "id": "new74-prophets-068",
+          "question": "Kasas 28/56’da Hz. Peygamber’in hidayet konusundaki yetkisi için hangi sınır belirtilir?",
+          "answer": "Sevdiğini mutlaka hidayete erdiremeyeceği"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-289",
+      "question": "Vâkıa 56/68-70’te içilen suyun hangi duruma getirilebileceği hatırlatılarak şükre çağrılır?",
+      "answer": "Tuzlu yapılabileceği",
+      "nearest": [
+        {
+          "id": "new74-quran-247",
+          "question": "Nahl 16/6’da hayvanların sabah otlağa salınması ve akşam getirilmesinin insana hangi yönü de hatırlatılır?",
+          "answer": "Güzellik duygusu vermesi"
+        },
+        {
+          "id": "q66-kehf-23",
+          "question": "Kehf 18/23–24’te yarın yapılacak bir iş için hangi ifade hatırlatılır?",
+          "answer": "Allah izin verirse"
+        },
+        {
+          "id": "new74-history-021",
+          "question": "Kitreyle yoğunlaştırılmış suyun yüzeyindeki boyaların kâğıda aktarılmasıyla yapılan sanat hangisidir?",
+          "answer": "Ebru"
+        }
+      ]
+    },
+    {
+      "id": "new74-quran-290",
+      "question": "Tâhâ 20/118’de Âdem’e bulunduğu yerde hangi iki sıkıntının olmadığı söylenir?",
+      "answer": "Açlık ve çıplaklık",
+      "nearest": [
+        {
+          "id": "q66-kehf-61",
+          "question": "Kehf 18/61'de iki denizin birleştiği yerde unutulan hayvan hangisidir?",
+          "answer": "Balık"
+        },
+        {
+          "id": "new74-quran-202",
+          "question": "Nahl 16/112’de nimete nankörlük eden güvenli ve bolluk içindeki şehrin karşılaştığı iki sıkıntı nedir?",
+          "answer": "Açlık ve korku"
+        },
+        {
+          "id": "q57-davudzebur",
+          "question": "Sâd 38/21’deki iki davacı Dâvûd’un bulunduğu mâbede nasıl girer?",
+          "answer": "Duvara tırmanarak"
         }
       ]
     }

@@ -1340,6 +1340,520 @@
         "Otoritenin yalnız savaşta kullanılmasına"
       ],
       "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-quran-272",
+      "before": [
+        "Mushafların cilt süslemesi bakımından",
+        "Sûrelerin ezberlenme süresi bakımından",
+        "Kâğıtların üretim yeri bakımından"
+      ],
+      "after": [
+        "Âyetlerin iniş sebepleri bakımından",
+        "Mushaf hattının imlâ kuralları bakımından",
+        "Okuyuşların nakil yolları bakımından"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-273",
+      "before": ["İbn Battûta", "Evliya Çelebi", "Pîrî Reis"],
+      "after": ["Ebû Amr ed-Dânî", "İbnü’l-Cezerî", "Ebû Bekir İbn Mücâhid"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-274",
+      "before": ["Câiz vakfı", "Vakfın uygun olmadığı yeri", "Sûrenin adını"],
+      "after": ["Câiz vakfı", "Mutlak vakfı", "Mücevvez vakfı"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-276",
+      "before": [
+        "Lâzım vakfın bulunduğu yer",
+        "Her sûrenin ilk âyeti",
+        "Cüzün başlama yeri"
+      ],
+      "after": [
+        "Lâzım vakfın bulunduğu yer",
+        "Mutlak vakfın bulunduğu yer",
+        "Mücevvez vakfın bulunduğu yer"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-279",
+      "before": [
+        "Yalnız hat sanatı tarifleri",
+        "Sadece şiir vezni cetvelleri",
+        "Hiç değerlendirilmemiş ezber listeleri"
+      ],
+      "after": [
+        "Yalnız sûrelerin nüzûl listelerini",
+        "Yalnız kıraatlerin harf cetvellerini",
+        "Yalnız râvi adlarının sıralamasını"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-281",
+      "before": ["Resmü’l-mushaf", "Kıraat tasnifi", "Âyet numaralama"],
+      "after": ["Fıkhî tefsir", "Lugavî tefsir", "İçtimaî tefsir"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-271",
+      "before": [
+        "Yalnız yarım dinar",
+        "Bir koyun ve bir borç senedi",
+        "İki deve ve bir kılıç"
+      ],
+      "after": [
+        "İki koyun ve bir dinar",
+        "Bir koyun ve yarım dinar",
+        "Yalnız iki dinar"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-272",
+      "before": [
+        "Câbir’den ikinci kez bedel istemiştir",
+        "Bedeli geri alıp deveyi alıkoymuştur",
+        "Deveyi ödeme yapılıncaya kadar rehin tutmuştur"
+      ],
+      "after": [
+        "Hayber gelirleri arasına katmıştır",
+        "Başka bir sefer için ayırmıştır",
+        "Bedeli karşılığında başka bir tüccara satmıştır"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-274",
+      "before": ["Mührünü", "Mushafını", "Hutbe okuduğu asâyı"],
+      "after": ["Kılıcını", "Yolculuk eyerini", "Yün bürdesini"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-278",
+      "before": [
+        "Yolculukta sorular sorması",
+        "Kendi emeğiyle çalışması",
+        "Haksızlığı haber vermesi"
+      ],
+      "after": [
+        "Tartışma sırasında borç konusunu açması",
+        "Yolculukta kendisinden görev istemesi",
+        "Bir anlaşmazlığı başkasına danışması"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-279",
+      "before": [
+        "Satışta sürekli bağırarak üstünlük kuran",
+        "Herkesi aynı mesleğe zorlayan",
+        "Pazara hiç kimsenin girmesine izin vermeyen"
+      ],
+      "after": [
+        "Pazarda alışverişi yalnız vekillerle yapan",
+        "Her satıcıya aynı fiyatı zorunlu tutan",
+        "Pazarlık yapılmasını bütünüyle reddeden"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-280",
+      "before": [
+        "Orada hiç tuz bulunmadığını öğrenince",
+        "Ebyaz’ın yalnız başka şehirde yaşadığını öğrenince",
+        "Tuzlanın sulama kanalı olmadığını görünce"
+      ],
+      "after": [
+        "Madenin yalnız savaş ganimeti olduğunu öğrenince",
+        "Tuzun başka ülkeden getirildiği anlaşılınca",
+        "Tuzlanın yalnız geçici bir konaklama yeri sayılması üzerine"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-281",
+      "before": [
+        "Evini kalıcı olarak terk etmeyi adamasıyla",
+        "Malları yalnız kendi ailesine saklamasıyla",
+        "Mescidin mülkiyetini satın almayı beklemesiyle"
+      ],
+      "after": [
+        "Malların sayımı için ertesi gün yolculuğa çıkacak olmasıyla",
+        "Dağıtımı kendi ailesinin önünde yapmayı planlamasıyla",
+        "Malların yalnız miras olarak ayrılmasıyla"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-282",
+      "before": [
+        "Okların fiyatını artırmaları için",
+        "Okları mutlaka mescitte satmaları için",
+        "Taşımayı bütünüyle yasaklamak için"
+      ],
+      "after": [
+        "Okların birbirine karışmaması için",
+        "Okların kime ait olduğunun anlaşılması için",
+        "Okların satışta daha kolay sayılması için"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-284",
+      "before": [
+        "Borcun iki katına çıkarılmasını",
+        "Her iki tarafın da malına el konulmasını",
+        "Borçlunun hiç ödeme yapmadan ayrılmasını"
+      ],
+      "after": [
+        "Borcun tamamını bir yıl ertelemeyi",
+        "Alacağı iki eşit takside bölmeyi",
+        "Borç yerine bir arazi devretmeyi"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-285",
+      "before": [
+        "Görevin karşılığını gizlice kendisinin belirlemesini",
+        "Her ücreti faiz saymasını",
+        "Herkesin ücretini geri çevirmesini"
+      ],
+      "after": [
+        "Görevlerin tümünü mutlaka ücretsiz yürütmesini",
+        "Her ücreti yalnız aynî mal olarak almasını",
+        "Kendisine verileni başka bir görevliye devretmesini"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-prophets-288",
+      "before": [
+        "Zararlı canlıdan tedbirle korunmak",
+        "Yuvanın bulunduğu yeri fark etmek",
+        "Hayvanların davranışını gözlemek"
+      ],
+      "after": [
+        "Yuvanın yerini öğrenmek için soru sormak",
+        "Yuvadan uzak bir yerde konaklamak",
+        "Isırılma sonrasında yalnız tedbir almak"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-283",
+      "before": [
+        "Kendi bağımsız tanrılıklarına",
+        "İnsanların her talebine",
+        "Yalnız yıldızların hareketine"
+      ],
+      "after": [
+        "İnsanların her çağrısına",
+        "Yalnız insanların gökyüzünü gözlemesine",
+        "Yalnız geceyle gündüzün sırasına"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-287",
+      "before": [
+        "Kökünden kopmuş bir ağaca",
+        "Suda dağılan kuma",
+        "Kırılmış bir dala"
+      ],
+      "after": [
+        "Dalları uzanan bir ağaca",
+        "Bir arada akan bir ırmağa",
+        "Birbirine bağlanmış bir ipe"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-288",
+      "before": [
+        "Yalnız uyku zamanı olması",
+        "Sadece yıldız gözleme zamanı olması",
+        "Bütün ibadetlerin yasak olduğu zaman olması"
+      ],
+      "after": [
+        "Öncelikle dinlenme zamanı olması",
+        "Yalnız yıldızlarla yol bulma zamanı olması",
+        "Yalnız tefekkür için ayrılmış olması"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-289",
+      "before": [
+        "Mutlaka altına dönüşeceği",
+        "Her zaman ateş olacağı",
+        "Hiçbir canlıya ulaşmayacağı"
+      ],
+      "after": [
+        "Suyun yalnız donmuş hâlde verilmesi",
+        "Suyun sürekli sıcak kalması",
+        "Suyun yalnız yer altında kalması"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-quran-290",
+      "before": [
+        "Yolculuk ve ticaret",
+        "Öğrenme ve düşünme",
+        "Çalışma ve konuşma"
+      ],
+      "after": [
+        "Yalnızlık ve korku",
+        "Hastalık ve yaşlılık",
+        "Susuzluk ve sıcağın yakması"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-272",
+      "before": [
+        "Her pazarlıkta sesini yükselten",
+        "Her borcu aynı gün isteyen",
+        "Sadece akrabalarına kolaylık sağlayan"
+      ],
+      "after": [
+        "Yalnız peşin alışveriş yapan",
+        "Pazarlığa hiç girmeyen",
+        "Borcun mutlaka tek seferde ödenmesini isteyen"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-273",
+      "before": [
+        "Satışı yalnız gece yapmak",
+        "Kazancı sadece evde saklamak",
+        "Ticareti bütün insanlara yasaklamak"
+      ],
+      "after": [
+        "Ticaret için belli bir günü seçmek",
+        "Her pazarlığa yemin eklemek",
+        "Satışı mutlaka takasla yapmak"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-274",
+      "before": [
+        "Çalışabilecek durumdayken dilenmek",
+        "Başkalarının malını izinsiz kullanmak",
+        "Kazancın kaynağına hiç bakmamak"
+      ],
+      "after": [
+        "Yalnız miras geliriyle geçinmek",
+        "Sadece talep etmeden gelen yardımla yaşamak",
+        "Yalnız sermaye koyup başkasının işini beklemek"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-275",
+      "before": [
+        "Her durumda bağış olarak",
+        "Borçlunun mutlak hakkı olarak",
+        "Alacaklı için zorunlu bir hediye olarak"
+      ],
+      "after": ["Kefalet olarak", "Vade bağışı olarak", "Emanet olarak"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-276",
+      "before": [
+        "Dünyada bütün borçlarının kendiliğinden silinmesi",
+        "Başkalarının malına el koyma yetkisi",
+        "Hiç çalışmadan zengin olma garantisi"
+      ],
+      "after": [
+        "Dünyada hiç ödeme güçlüğü yaşamama",
+        "Her yolculukta kazancının artması",
+        "Bütün borçlardan koşulsuz muafiyet"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-278",
+      "before": [
+        "En çok borç yapan",
+        "Her ödemeyi en sona bırakan",
+        "Alacaklısını en uzun bekleten"
+      ],
+      "after": [
+        "En çok kişiye aynı anda borç veren",
+        "Yalnız akrabalarıyla borç ilişkisi kuran",
+        "Alacağını daima aynı gün isteyen"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-279",
+      "before": [
+        "Yolculuk yorgunluğu",
+        "Hastalık ağrısı",
+        "Savaşta yitirilen eşya"
+      ],
+      "after": [
+        "Yalnız yolculukta kaçırılan nâfileler",
+        "Yalnız savaşta bozulan adak",
+        "Yalnız yapılan kasıtsız yemin"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-280",
+      "before": [
+        "Her borçlunun mutlaka hırsız olmasını",
+        "Borçlanınca bütün ibadetlerin düşmesini",
+        "Alacak istemenin her zaman günah olmasını"
+      ],
+      "after": [
+        "İnsanların övgüsüne aşırı kapılmayı",
+        "İbadeti gösteriş için yapmayı",
+        "Gereksiz yere başkalarını kıskanmayı"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-282",
+      "before": [
+        "Araziye hiçbir zaman ürün ekilememesi",
+        "Her kira sözleşmesinin zorunlu olarak faiz sayılması",
+        "Tarla sahibinin toprağını hiç kullanamaması"
+      ],
+      "after": [
+        "Kiranın mutlaka başka şehirde ödenmesi gereğini",
+        "Ürünün yalnız bir mevsimde hasat edilmesini",
+        "Arazi büyüklüğünün her yıl aynı kalmasını"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-general-287",
+      "before": [
+        "Hayvanların bakımını yapmak",
+        "Binekleri dinlendirmek",
+        "Hayvanlara su vermek"
+      ],
+      "after": [
+        "Binek hayvanlarıyla yolculuk etmeyi",
+        "Kuşları besleyip bakımlarını üstlenmeyi",
+        "Atları uygun biçimde yetiştirmeyi"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-271",
+      "before": [
+        "İnce bakır levhadan",
+        "Sıkıştırılmış pamuk ipinden",
+        "Pişmiş kil tabakadan"
+      ],
+      "after": [
+        "Dövülmüş bitki liflerinden",
+        "İnce papirüs şeritlerinden",
+        "Sıkıştırılmış pamuk hamurundan"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-272",
+      "before": ["Medine", "Kûfe", "Gazze"],
+      "after": ["Herat", "Buhara", "Taşkent"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-277",
+      "before": [
+        "Yapının bütün suyunu toplamak",
+        "Minareye çıkan merdiveni aydınlatmak",
+        "Mihrabın kıble yönünü değiştirmek"
+      ],
+      "after": [
+        "Külâhın içindeki suyu depolamak",
+        "Minare merdivenine ışık sağlamak",
+        "Çatı yükünü doğrudan şadırvana aktarmak"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-278",
+      "before": ["Ebru", "Kündekârî", "Sedef kakma"],
+      "after": ["Çini mozaik", "Kalem işi", "Taş kakma"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-279",
+      "before": ["Deri", "Sedef", "Keçe"],
+      "after": ["Kurşun", "Bakır", "Ahşap"],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-284",
+      "before": [
+        "Bütün suyun köprü üstünden akmasını sağlamak",
+        "Nehrin yatağını tamamen kurutmak",
+        "Köprüdeki taşların güneş görmesini engellemek"
+      ],
+      "after": [
+        "Köprüye ikinci bir yol katı eklemek",
+        "Yaya yolunu nehir seviyesine indirmek",
+        "Kemer taşlarını ahşapla değiştirmek"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-287",
+      "before": [
+        "Abdestin bütün kış kaldırılmasını",
+        "Yalnız buzla temizlik yapılmasını",
+        "Muslukların herkese kapatılmasını"
+      ],
+      "after": [
+        "Şadırvanı kapatıp yakındaki hamama yönlendirmeyi",
+        "Abdest yerini cami harimine taşımayı",
+        "Yalnız yaz aylarında su dağıtmayı"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-289",
+      "before": [
+        "Yalnız gemi makinesi çizimleri",
+        "Sadece modern tapu fotokopileri",
+        "Yalnız astronomi fotoğrafları"
+      ],
+      "after": [
+        "Yalnız müzik notaları ve besteler",
+        "Yalnız seyir defterleri ve liman cetvelleri",
+        "Yalnız askerî haritalar ve sefer çizimleri"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
+    },
+    {
+      "id": "new74-history-290",
+      "before": [
+        "Kâğıdı tamamen yakma",
+        "Taşı su içinde eritme",
+        "Deseni yalnız aynadan yansıtma"
+      ],
+      "after": [
+        "Deseni yüzeye yağlı baskıyla geçirmek",
+        "Kâğıttaki deseni oyup taşın içine gömmek",
+        "Deseni yüzeye yalnız ışıkla yansıtmak"
+      ],
+      "reason": "Improve category-matched distractors after direct source comparison; preserve tested fact and correct answer."
     }
   ],
   "semanticAcceptance": "pending",
