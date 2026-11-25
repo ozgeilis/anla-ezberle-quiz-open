@@ -5,8 +5,8 @@
     "passed": 7,
     "failed": 0,
     "method": "node --import tsx -e require of content-expansion-baseline.test.ts, same-process node:test",
-    "scope": "1000 staged additions and 128 old editorial patches, including 98 duplicate replacements; after latest source/wording refinements",
-    "durationMs": 104.224084
+    "scope": "1080 staged additions and 128 old editorial patches, including 98 duplicate replacements; after latest source, semantic and distractor refinements",
+    "durationMs": 93.020666
   },
   "targetedTypeScriptSemanticCheck": {
     "status": "PASSED",
@@ -41,7 +41,7 @@
       "question-similarity-audit",
       "audit-published-questions"
     ],
-    "note": "Completed on 500 staged additions and 126 old patches; selected suite only. Later changes are covered by the seven-test run on 1000 additions/128 old patches. No full application suite claim."
+    "note": "Completed on 500 staged additions and 126 old patches; selected suite only. Later changes are covered by the seven-test run on 1080 additions/128 old patches. No full application suite claim."
   },
   "fullProjectTypecheck": {
     "status": "PASSED",
@@ -75,7 +75,7 @@
     "originalExplanationsSupported": 1496,
     "originalExplanationsRequiringCorrection": 4,
     "remainingExistingSourceChecks": 0,
-    "newSourceComparedStaged": 1000,
+    "newSourceComparedStaged": 1080,
     "existingDuplicateReplacementsStaged": 98,
     "bankWideSemanticAcceptance": "pending",
     "mediumHardFullDifficultyCalibration": "pending",

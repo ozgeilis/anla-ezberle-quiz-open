@@ -1038,6 +1038,308 @@
         "Yalnız son sahibinin adını"
       ],
       "reason": "Use plausible distractors from the same subject, retaining the source-supported fact."
+    },
+    {
+      "id": "new74-quran-251",
+      "before": [
+        "Yer kitap, gök kalem",
+        "Yer gemi, gök deniz",
+        "Yer lamba, gök ayna"
+      ],
+      "after": [
+        "Yer beşik, gök kandil",
+        "Yer gemi, gök deniz",
+        "Yer ayna, gök kalem"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-quran-254",
+      "before": [
+        "Hiçbir şey yapmadıklarını sanmaları",
+        "Yalnız başkalarının iyiliğini görmeleri",
+        "Bütün bilgilerini unuttuklarını sanmaları"
+      ],
+      "after": [
+        "Kötü iş yaptıklarını kesin olarak bilmeleri",
+        "Yalnız işleri yarım bırakmış olmaları",
+        "Yaptıklarının sonucunu hiç düşünmemeleri"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-quran-255",
+      "before": [
+        "Yalnız eski sarayların içinde",
+        "Sadece savaş meydanlarında",
+        "Yalnız rüyalarda ve masallarda"
+      ],
+      "after": [
+        "Yalnız gökte ve denizin altında",
+        "Sadece geçmiş kavimlerin yurtlarında",
+        "Yalnız rüyalarda ve işaretlerde"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-252",
+      "before": [
+        "Misafir kabulünü bütünüyle yasaklamasını",
+        "Bütün malını düğünde harcamasını",
+        "Evliliği herkesten gizlemesini"
+      ],
+      "after": [
+        "Önce Medine’de yeni bir ev satın almasını",
+        "Kendi adına bir vakıf kurmasını",
+        "Nikâhtan sonra ilk umreyi yapmasını"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-253",
+      "before": [
+        "Onları mescitten çıkartmıştır",
+        "Bütün çocukların gelmesini yasaklamıştır",
+        "Geldiğini hiç fark etmemiştir"
+      ],
+      "after": [
+        "Hutbe bitince onlarla görüşmek üzere konuşmasını sürdürmüştür",
+        "Bilâl’den onları eve götürmesini istemiştir",
+        "Onları gözetmesi için yalnız babalarına haber vermiştir"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-254",
+      "before": [
+        "Mesleğinin ücretine göre",
+        "Doğduğu ayın adına göre",
+        "En son yaptığı yolculuğa göre"
+      ],
+      "after": [
+        "Kendi babasının adına göre",
+        "Doğduğu şehrin adına göre",
+        "Mensup olduğu kabilenin adına göre"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-255",
+      "before": [
+        "Mısır hükümdarının",
+        "Medine’deki bir tüccarın",
+        "Kureyş’in o günkü reisinin"
+      ],
+      "after": ["Hz. Nûh’un", "Hz. Mûsâ’nın", "Hz. Zekeriyyâ’nın"],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-258",
+      "before": ["Ebû Süfyân", "Hâlid b. Velîd", "Abdullah b. Selâm"],
+      "after": ["Abdullah b. Mes‘ûd", "Zeyd b. Sâbit", "Ebû Hüreyre"],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-259",
+      "before": [
+        "Bütün antlaşmaları tek başına yazmak",
+        "Her seferde orduya başkomutan olmak",
+        "Bütün ganimete tek başına sahip olmak"
+      ],
+      "after": [
+        "Antlaşma metinlerini kaleme almak",
+        "Birliğe komutanlık etmek",
+        "Yol güzergâhına rehberlik etmek"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-268",
+      "before": [
+        "Tarafları dinlemeden herkesin malını almıştır",
+        "Kavganın büyümesini beklemiştir",
+        "Her iki tarafla da konuşmayı yasaklamıştır"
+      ],
+      "after": [
+        "Tarafları bir sonraki toplantıya kadar bekletmiştir",
+        "Her iki tarafa şehri terk etmelerini söylemiştir",
+        "Yalnız uzaktan bir mektup göndermeyi seçmiştir"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-prophets-269",
+      "before": [
+        "Babasının her şartta sınırsız tasarrufunu",
+        "Ailenin itibarının bütün hakları kaldırmasını",
+        "Kızın sorusunun dinlenmemesini"
+      ],
+      "after": [
+        "Yalnız mehir miktarının artırılmasını",
+        "Sadece düğün tarihinin ertelenmesini",
+        "Babasının meslek seçimini"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-253",
+      "before": [
+        "Gözlem yapmadan her olayın tarihini bilmeleri",
+        "Takvimi bütünüyle gereksiz kılmaları",
+        "Yalnız tutulma gecelerinde çalışmaları"
+      ],
+      "after": [
+        "Yalnız tek bir sabit yıldız için yapılmaları",
+        "Sadece ekvatora yakın yerlerde çalışmaları",
+        "Her kullanımda yeni bir enlem levhası gerektirmeleri"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-256",
+      "before": [
+        "Kadranı mıknatısa dönüştürmek için",
+        "Güneş ışığını yakmak için",
+        "Aleti yalnız gece kullanılabilir kılmak için"
+      ],
+      "after": [
+        "Çizimlerin mıknatıslı olmasını sağlamak için",
+        "Aletin yönünü ağırlıkla dengelemek için",
+        "Güneşin yüksekliğini mercekle büyütmek için"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-260",
+      "before": [
+        "Suda tamamen eritilerek",
+        "Ahşaba kızgın mühür basılarak",
+        "Metal döküm kalıbına akıtılarak"
+      ],
+      "after": [
+        "Kalıpta dökülerek",
+        "Taş yüzeyde oyularak",
+        "Kızgın kalemle yakılarak"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-261",
+      "before": [
+        "Sadece mermer blokların oyulmasıyla",
+        "Yalnız camın üflenmesiyle",
+        "Mushaf harflerinin dizgiyle basılmasıyla"
+      ],
+      "after": [
+        "Taş yüzeyin renkli mozaikle kaplanmasıyla",
+        "Cam kapların yaldızlı yazıyla bezenmesiyle",
+        "Maden kaplara tel kakılmasıyla"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-262",
+      "before": [
+        "Yalnız rakam cetvelleri",
+        "Yalnız çivi biçimli işaretler",
+        "Sadece savaş haritaları"
+      ],
+      "after": [
+        "Hayvan figürleri ve av sahneleri",
+        "Geometrik örgüler ve yıldız geçmeler",
+        "Yalnız tuğralar ve kitâbe kuşakları"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-263",
+      "before": [
+        "Sanatın bütünüyle yasak olmasıyla",
+        "Bütün eserlerin aynı kişiden çıkmasıyla",
+        "Yazının henüz bilinmemesiyle"
+      ],
+      "after": [
+        "Eserlerin yalnız hattatlarca yapılmasıyla",
+        "Ustaların eserlerini yalnız sözlü olarak tanıtmasıyla",
+        "Bezemelerin bütünüyle kalıpta üretilmesiyle"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-265",
+      "before": [
+        "İçindeki kokuyu mutlaka yok etmek",
+        "Mürekkebi daha koyu tutmak",
+        "Suyu daha hızlı dondurmak"
+      ],
+      "after": [
+        "Kabın içindeki közü bütünüyle söndürmek",
+        "Dumanın yalnız aşağıdan çıkmasını sağlamak",
+        "İçerideki tütsüyü havadan tamamen ayırmak"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-history-266",
+      "before": [
+        "İçine kitap sayfası takılmasına",
+        "Mürekkep miktarının ölçülmesine",
+        "Aleti saat gibi ayarlamaya"
+      ],
+      "after": [
+        "Yanma haznesini tamamen hava geçirmez tutmaya",
+        "Kabın içini suyla doldurup akıtmaya",
+        "Eşyayı ölçü kabı olarak kullanmaya"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-general-254",
+      "before": [
+        "Düğünde mutlaka altın kap kullanmak",
+        "Her evliliği aynı şehirde yapmak",
+        "Bütün hediyeleri geri almak"
+      ],
+      "after": [
+        "Düğün yemeğinin yerinin seçilmesi",
+        "Evliliğin yapılacağı ayın belirlenmesi",
+        "Düğün misafirlerinin sayısının sabit tutulması"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-general-256",
+      "before": ["Hâris ve Hazn", "Sahr ve Harb", "Münzir ve Hâlid"],
+      "after": ["Yûsuf ve Ya‘kūb", "Hasan ve Hüseyin", "Hâris ve Hemmâm"],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-general-264",
+      "before": [
+        "Toprak sürmek ve ekin biçmek",
+        "Su çekmek ve kuyu kazmak",
+        "Yazı yazmak ve kitap okumak"
+      ],
+      "after": [
+        "Kandil yakmak ve kalem yontmak",
+        "Su taşımak ve ağaç dikmek",
+        "Çadır kurmak ve kumaş dokumak"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
+    },
+    {
+      "id": "new74-general-269",
+      "before": [
+        "Her türlü kararı sorgusuz doğru saymaya",
+        "Yalnız güçlüleri korumaya",
+        "Bütün hak taleplerini yasaklamaya"
+      ],
+      "after": [
+        "Yalnız yönetim süresinin uzunluğuna",
+        "Görevi mutlaka mirasla devralmaya",
+        "Otoritenin yalnız savaşta kullanılmasına"
+      ],
+      "reason": "Replace unrelated or obviously absurd alternatives with subject-relevant factual alternatives; retain one source-supported key."
     }
   ],
   "semanticAcceptance": "pending",
