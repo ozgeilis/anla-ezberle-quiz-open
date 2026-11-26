@@ -122,7 +122,9 @@ export function validRecord(value: unknown): value is GameRecord {
         !belongsToPlayCategory(
           String(id),
           g.playCategory as import("../domain/game/play-categories").PlayCategoryId,
-          g.playCategoryVersion as import("../domain/game/play-categories").PlayCategoryVersion,
+          // Pre-fix v72 previews may carry category version 1 while their
+          // actual bank already used the v72 map. Keep that saved contract.
+          g.bankVersion === 74 ? 3 : currentTaxonomy ? 2 : 1,
         ),
     )
   )

@@ -16,6 +16,6 @@
 | Tam TypeScript / lint | GEÇTİ | test-results.json |
 | Tam otomatik test paketi | BAŞARISIZ: 480/481 geçti | Taban Git kaynağında yok sayılan Google native Swift dosyası eksik; içerik değişikliği bu dosyayı değiştirmedi |
 | Sunucu v74 migration ve staging kodu | Hazır; canlıya uygulanmadı | Kapalı onay bayrağı, değişmez v72/v73, 3000 sayımı |
-| İzole SQL kabulü | İlk GitHub CI koşusu GEÇTİ; yerelde çalışmadı | 45781366636; son dar scope/geçiş-fixture düzeltmesi ayrıca PR CI koşusuyla izlenir |
+| İzole SQL kabulü | İki GitHub CI koşusu GEÇTİ; yerelde çalışmadı | 45781366636 ve 45782057697; v73 maçı v74 geçişinden sonra eski anahtarlarıyla tamamlandı |
 | Gerçek cihaz / yeni iOS veya Android paketi | ÇALIŞTIRILMADI | Bu görevde build ve mağaza dağıtımı yapılmadı |
 | Main / canlı Supabase / mağazalar | Değiştirilmedi | Ayrı onay sınırı korunuyor |

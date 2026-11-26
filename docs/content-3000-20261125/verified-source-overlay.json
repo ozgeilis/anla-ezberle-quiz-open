@@ -2,7 +2,6 @@
   "date": "2026-11-26",
   "sourceSnapshot": "/private/tmp/anla-content-sources-20261125/typecheck-source-snapshot",
   "verifiedWorktree": "/Users/ozge/.local/share/anla-quiz-build/anla-ezberle-content-3000-validated",
-  "matchingFiles": 180,
   "files": [
     {
       "path": "scripts/build-bank-v74.ts",
@@ -410,7 +409,9 @@
     },
     {
       "path": "src/storage/schema.ts",
-      "sha256": "2960ac092b93b36317cf2ef130c65a7a9228d96058c6c1a02ee91e8eb554339c"
+      "sha256": "40bbce3bceccb13a4b4234897487e4b3a949aad69b70c9d7cad98014ff829af0",
+      "initialCopySha256": "2960ac092b93b36317cf2ef130c65a7a9228d96058c6c1a02ee91e8eb554339c",
+      "postCopyValidation": "TypeScript, targeted lint and relevant regression tests in stable worktree"
     },
     {
       "path": "tests/audit-published-questions.test.ts",
@@ -722,9 +723,33 @@
     },
     {
       "path": "tests/v74-integration.test.ts",
-      "sha256": "3d4640da6ecc32ceefcff09c6a01b74e23e6619ec7310e9054318946768362bc"
+      "sha256": "fa471784e9270f2bd092b6af6e84cc3a39d3c6fd7816d8abf7616585a0464782",
+      "initialCopySha256": "3d4640da6ecc32ceefcff09c6a01b74e23e6619ec7310e9054318946768362bc",
+      "postCopyValidation": "TypeScript, targeted lint and relevant regression tests in stable worktree"
+    },
+    {
+      "path": "src/features/online/types.ts",
+      "sha256": "5df4b2683dfc32ae8692fafaf370d4ab23f4c7cd52de88da250fac6d29060da7",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    },
+    {
+      "path": "src/features/online/OnlineScreen.tsx",
+      "sha256": "149309f73cfcccfa1721e052b8bedb1dca433a001b715db571729e82a5a0b615",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    },
+    {
+      "path": "scripts/live-integration.mjs",
+      "sha256": "2db9e296e8280a608ac370836c042417121cd69ced284465c156e18a936f5255",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    },
+    {
+      "path": "scripts/consolidate-questions.ts",
+      "sha256": "d069a3015deff98f0eebc39e1a01d3bd7b18ab6b86a9f4ea6a18e23bd75b77f5",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
     }
   ],
   "method": "Byte-for-byte copy of tested tracked source plus explicit working overlays. Desktop worktree and all other worktrees preserved.",
-  "scope": "Runtime, authoring inputs and test sources. Reports are updated after the tested source copy."
+  "scope": "Initial validated source copy plus final source/test refinements verified in this stable worktree. Final SHA-256 values below describe the committed implementation, not an assertion that later edits were present in the earlier temporary snapshot.",
+  "initialCopiedFiles": 180,
+  "finalSourceFiles": 184
 }

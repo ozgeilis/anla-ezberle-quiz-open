@@ -105,9 +105,13 @@ Git’te bulunmuyor. Aynı üretim worktree’sinde bu yok sayılan native kayna
 mevcut; soru görevi adına kopyalanıp Auth değişikliği olarak commit edilmedi.
 Tam testteki bu dosya eksikliği ayrıca raporlanır; yeni bankanın başarısı olarak gizlenmez.
 
-Yerel Docker API’si yanıt vermedi; Mac kilitli olduğu için durumu görüntülenemedi.
+Yerel Docker API’si yanıt vermedi. Mac açıldıktan sonra da Docker API ve uygulama
+arayüzü zaman aşımına uğradı; yerel kabul çalışmadı.
 Yerel SQL kabulü çalışmadı; diğer projelerin Docker ortamı yeniden başlatılmadı.
 Bunun yerine [GitHub izole kabulü](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45781366636)
 geçti: 34 seçili test, v74 sunucu staging/sayım/havuz/ACL ve eski banka regresyonları.
-Sonraki dar v74 scope/gerçek v73 geçiş-fixture düzeltmesi için PR kontrolleri yeniden çalışır.
+[Güçlendirilmiş geçiş kabulü de geçti](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45782057697):
+v73’te başlayan gerçek sentetik maç, v74 seçildikten sonra v73 anahtarlarıyla tamamlandı.
+V72’nin eski kategori sürümü 1 etiketli önizlemeleri de kendi tarihî sözleşmeleriyle
+korunur; bunun için son yerel geçmiş kontrolünde 29/29 test geçti.
 Fiziksel cihaz testi, yeni IPA/AAB, main merge, canlı veri işlemi ve mağaza yayını yapılmadı.

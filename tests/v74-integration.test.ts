@@ -7,6 +7,9 @@ import {
   playableQuestions,
 } from "../src/content/questions";
 import { questionsV73 } from "../src/content/questions/questions-v73";
+import { questionsV72 } from "../src/content/questions/questions-v72";
+import { approvedNewQuestionsV72 } from "../src/content/questions/release-v72-meaning";
+import { reviewedTopicByQuestionIdV72 } from "../src/content/questions/learning-topics-v72";
 import { reviewedTopicByQuestionIdV74 } from "../src/content/questions/learning-topics-v74";
 import { candidateTopicByQuestionIdV74 } from "../src/content/questions/learning-topics-v74.candidate";
 import {
@@ -150,5 +153,45 @@ test("canonical online v74 export has 3000 exact rows while v72 and v73 projecti
   assert.deepEqual(
     old.map((q) => q.metadata),
     questionsV73,
+  );
+});
+
+test("pre-fix v72 broad previews keep their original map even when tagged category version 1", () => {
+  const added = approvedNewQuestionsV72.find((q) => q.difficulty === "medium")!;
+  const picked = [
+    added,
+    ...questionsV72
+      .filter(
+        (q) =>
+          q.id !== added.id &&
+          q.difficulty === "medium" &&
+          reviewedTopicByQuestionIdV72[q.id] === "quran",
+      )
+      .slice(0, 9),
+  ];
+  const start = 1800000000000;
+  const record: GameRecord = {
+    id: "quiz-pr82-v72-preview-with-new-id",
+    bankVersion: 72,
+    mode: "mixed",
+    playCategory: "quran_dualar",
+    playCategoryVersion: 1,
+    difficulty: "medium",
+    startedAt: start,
+    completedAt: start + 1000,
+    questionIds: picked.map((q) => q.id),
+    optionOrders: Object.fromEntries(
+      picked.map((q) => [q.id, q.options.map((o) => o.id)]),
+    ),
+    answers: picked.map((q) => ({
+      questionId: q.id,
+      option: 0,
+      at: start + 1000,
+    })),
+  };
+  assert.ok(validRecord(record));
+  assert.deepEqual(
+    parseData(JSON.stringify({ ...emptyData(), games: [record] })).games,
+    [record],
   );
 });
