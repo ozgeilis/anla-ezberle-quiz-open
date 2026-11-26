@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-26",
+  "targetVersion": "0.1.2",
+  "codeCommit": "6816a420cd249966b7d751ea5d862f2deab03d64",
+  "scope": "iOS interstitial lifecycle only",
+  "typecheck": "PASSED",
+  "changedFileLint": "PASSED",
+  "targetedTests": {
+    "status": "PASSED",
+    "tests": 37,
+    "passed": 37,
+    "failed": 0,
+    "durationMs": 732.222542,
+    "files": [
+      "interstitial-cycle.test.ts",
+      "ads.test.ts",
+      "ios-ads.test.ts",
+      "ad-consent-flow.test.ts"
+    ],
+    "logSha256": "235277198688ad4f75814f0bb604d70f436b300625767e66c961b53d7e4a00a1"
+  },
+  "fiveRoundAcceptance": {
+    "status": "PASSED_AUTOMATED_ENGINE_AND_SDK_EVENT_FIXTURE",
+    "completedTenQuestionRounds": 5,
+    "questionsAnswered": 50,
+    "showsWhenReady": 5,
+    "newSdkObjects": 6,
+    "preloadAfterEveryClose": true,
+    "sameProcess": true,
+    "appRestarts": 0,
+    "duplicateShows": 0,
+    "savedScoreXpChangedByAds": false,
+    "liveAdRequests": 0,
+    "realAdImpressions": 0,
+    "googleTestAdServiceContacted": false,
+    "realDeviceTest": false
+  },
+  "priorBugReproduction": {
+    "status": "PASSED_CONTROLLED_FIXTURE",
+    "scenario": "SDK load sends no terminal event; after 30s another load call is needed",
+    "priorRequests": 1,
+    "fixedRequests": 2,
+    "logSha256": "3ee0ce301954a6897c9126eabe3cfa78c1db3adb2aa3c260aace50af02afe4d4",
+    "provenPhysicalDeviceSoleCause": false
+  },
+  "failureAcceptance": [
+    "no-fill/offline allows immediate false show without waiting for load",
+    "missing load callback expires and later safe call can retry",
+    "synchronous load and show failure",
+    "rejected show promise and native error",
+    "missing OPENED uses bounded fallback",
+    "OPENED ad waits for actual CLOSE with no video-duration timeout",
+    "late LOADED/CLOSE/rejected show from retired object ignored",
+    "no new request during quiz/background/invalidated consent generation",
+    "dispose resolves pending show and cancels queued preload"
+  ],
+  "deadlines": {
+    "backgroundLoadMs": 30000,
+    "presentationWithoutOpenedMs": 10000,
+    "visibleAdTimeout": null
+  },
+  "unchanged": [
+    "Android interstitial controller and three-round/five-minute policy",
+    "AdBanner and actual native Banner implementation",
+    "UMP/ATT/NPA/G rating and IDs",
+    "Google/Apple/email auth",
+    "v74 questions and quick play",
+    "XP/storage/20-second timing",
+    "Supabase and main"
+  ],
+  "physicalIphone": {
+    "status": "NOT_RUN",
+    "observedConnection": "disconnected",
+    "integratedSignedQaPackageProduced": false
+  },
+  "newIpa": false,
+  "sdkUpgrade": false,
+  "storeUpload": false,
+  "mainMerge": false,
+  "hostedChange": false
+}

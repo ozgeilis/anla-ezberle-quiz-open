@@ -1,8 +1,17 @@
 # iOS 0.1.1 entegrasyon hazırlığı — 26 Kasım 2026
 
+**Yeni iOS 0.1.2 reklam düzeltmesi:** `6816a42` — kapanış sonrası yeni
+interstitial nesnesi/preload, yanıtsız yüklemeden kurtarma. 37 hedefli test,
+TypeScript ve lint geçti; aynı oturumda beş tur SDK olay fixture'ıyla sınandı.
+Fiziksel iPhone testi yapılmadı. `IOS012-INTERSTITIAL-RELOAD.md` ve
+`interstitial-reload-test-results.json` güncel düzeltme kanıtıdır. Önceki
+80 test/temiz native build kayıtları önceki kaynağa aittir; bu yeni JS'i
+imzalı pakette/canlıda test edilmiş saymaz. Hedef 0.1.2 kullanıcı talimatıdır;
+App Store sürüm kaydı/IPA henüz oluşturulmadı.
+
 **Son canlı kontrol:** 0.1.1 / Build 13 Ready for Distribution; Marketing URL
 doğru. App Privacy yayımlanmış 17 türle Google SDK manifestini kapsıyor.
-Yeni entegre v74 güncellemesi için öneri 0.1.2; onaylanmadı/oluşturulmadı.
+Yeni entegre v74 güncellemesi hedefi 0.1.2; Apple sürüm kaydı oluşturulmadı.
 Güncel sonuçlar: `FINAL-PREFLIGHT.md`, `GOOGLE-PRIVACY-COMPARISON.md` ve
 `V74-CUTOVER-AND-ROLLBACK.md`. Aşağıdaki önceki kabul/plan kayıtları tarihsel
 bağlamıyla korunur. Bu oturumda yeni build veya canlı değişiklik yapılmadı.
@@ -23,16 +32,16 @@ Canlı GitHub metadata özeti `pr-inventory.json`; yerel Git merge provası
 `merge-rehearsal.json`. Prova yalnız geçici ağaç/commit nesneleri üretir;
 main veya herhangi bir uzak dalı hareket ettirmez.
 
-| Sıra | Kaynak | Durum / birleştirme koşulu |
-|---|---|---|
-| 0 | #24 Alpha entegrasyonu | Zaten main'de. #18, #20, #22 ve #23 başları main'in atası; eski açık taslakları yeniden merge etmek gerekmiyor. Kapatılmadılar. |
-| 1 | #25, `b861d6b` | iOS yapılandırması ve Apple giriş temeli; açık/taslak, onaylı merge gerekir. |
-| 2 | #26, `f04199c` | #25 üzerine Apple silme/yetki iptali ve sosyal güvenlik. |
-| 3 | #28, `e443794` | #26 üzerine moderasyon kabulü ve beta hazırlığı; güncel privacy metni korunarak çakışma çözülmeli. |
-| 4 | #30, `bec601e` | #28 üzerine public istemci config ve UMP/ATT/reklam altyapısı; eski privacy metni main'deki #32 metnini geri almamalı. |
-| 5 | `bec601e..3a74086` | Hiçbir açık PR'ın inceleme aralığında olmayan ek iOS sürüm kuyruğu. ATT ilk-açılış düzeltmesi `d074f2c`, tur başına reklam `d46eefc`, native Google istemcisi `4ab72e9`, tur bildirimi düzeltmesi `3a74086`; ayrıca kanıt belgeleri var. Bu aralık için inceleme/birleştirme köprüsü gerekli. Atlanmamalı. |
-| 6 | #33, `a38d1ea` | Tabanı main değil `content/question-bank-3000-base-20261126` = `3a74086`. Önce kuyruk main'e ulaşmalı, sonra #33 doğru main tabanına yönlendirilip farkı yeniden doğrulanmalı. Mevcut tabanına merge etmek main'e entegrasyon değildir. |
-| 7 | Native kaynak düzeltmesi, `c01884a` | Ignore + özgün Swift/podspec + paketleme testi; bu izole dalda hazır. Alternatif olarak native Google kuyruğuyla birlikte, #33'ten önce alınabilir. |
+| Sıra | Kaynak                              | Durum / birleştirme koşulu                                                                                                                                                                                                                                                                                 |
+| ---- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0    | #24 Alpha entegrasyonu              | Zaten main'de. #18, #20, #22 ve #23 başları main'in atası; eski açık taslakları yeniden merge etmek gerekmiyor. Kapatılmadılar.                                                                                                                                                                            |
+| 1    | #25, `b861d6b`                      | iOS yapılandırması ve Apple giriş temeli; açık/taslak, onaylı merge gerekir.                                                                                                                                                                                                                               |
+| 2    | #26, `f04199c`                      | #25 üzerine Apple silme/yetki iptali ve sosyal güvenlik.                                                                                                                                                                                                                                                   |
+| 3    | #28, `e443794`                      | #26 üzerine moderasyon kabulü ve beta hazırlığı; güncel privacy metni korunarak çakışma çözülmeli.                                                                                                                                                                                                         |
+| 4    | #30, `bec601e`                      | #28 üzerine public istemci config ve UMP/ATT/reklam altyapısı; eski privacy metni main'deki #32 metnini geri almamalı.                                                                                                                                                                                     |
+| 5    | `bec601e..3a74086`                  | Hiçbir açık PR'ın inceleme aralığında olmayan ek iOS sürüm kuyruğu. ATT ilk-açılış düzeltmesi `d074f2c`, tur başına reklam `d46eefc`, native Google istemcisi `4ab72e9`, tur bildirimi düzeltmesi `3a74086`; ayrıca kanıt belgeleri var. Bu aralık için inceleme/birleştirme köprüsü gerekli. Atlanmamalı. |
+| 6    | #33, `a38d1ea`                      | Tabanı main değil `content/question-bank-3000-base-20261126` = `3a74086`. Önce kuyruk main'e ulaşmalı, sonra #33 doğru main tabanına yönlendirilip farkı yeniden doğrulanmalı. Mevcut tabanına merge etmek main'e entegrasyon değildir.                                                                    |
+| 7    | Native kaynak düzeltmesi, `c01884a` | Ignore + özgün Swift/podspec + paketleme testi; bu izole dalda hazır. Alternatif olarak native Google kuyruğuyla birlikte, #33'ten önce alınabilir.                                                                                                                                                        |
 
 Zincir ancestry'sini koruyan merge commit'leri veya bilinçli yeniden tabanlama
 kullanılmalı. Sırayı doğrulamadan squash edip alt PR'ları eski tabanda bırakmak,
@@ -63,6 +72,7 @@ etmek, Expo'nun yerel modül yaklaşımıdır. Mevcut plugin yalnız Google'ın
 Objective-C bağımlılıkları için modular headers ekler; davranışı değişmedi.
 
 Resmî kaynaklar:
+
 - https://docs.expo.dev/workflow/customizing/
 - https://docs.expo.dev/workflow/continuous-native-generation/
 - https://expo.dev/blog/how-to-add-native-code-to-your-app-with-expo-modules
