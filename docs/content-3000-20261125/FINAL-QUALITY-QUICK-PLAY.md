@@ -105,9 +105,41 @@ sonucu (482 test / 481 başarılı) tarihî kanıt olarak korunur, bu tur yenide
 Yerel web export gerçek kaynakla geçti; yerel tarayıcı aracı Work ayarlarında
 kapalıydı. İzole CI Chromium testi; gerçek düğme/rota, 320/390 genişlik,
 açık/koyu tema, dört kategori, ilk tur 10 kolay, 20 saniye, sonuç, depolama
-ve yeniden açılışı kontrol eder. Bu bir fiziksel iPhone/Android testi değildir.
+ve yeniden açılışı kontrol etti ve **geçti**. Bu bir fiziksel iPhone/Android testi değildir.
 
 Yeni IPA/AAB, mağaza gönderimi, canlı Supabase veya main merge yapılmadı.
 0.1.1’e dahil etmeden önce: PR #33’ün kaynak/inceleme kabulü, iOS native
 kaynak eksikliğinin ilgili yayın dalında çözümü, onaylı birleştirme sırası ve
 ayrı paket/yayın kabulü gerekir. Canlı v74 soru kümesi etkinleştirmesi de ayrı onaylıdır.
+
+## Son kabul kanıtı
+
+[CI 45794437930](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930)
+**cbde74c1ece3ca00fdfe6378231925e38fc0a846** uygulama/test kaynağı için tamamen geçti:
+tam TypeScript, tam lint, manifest, 40 seçili içerik/geçmiş/Hemen Oyna testi,
+web export, gerçek Chromium ve izole Supabase SQL. Yerelde 47 test farklı,
+kısmen örtüşen kapsamdadır; toplam 87 ayrı test iddia edilmez.
+
+Gerçek tarayıcıda 320 ve 390 genişlik × açık/koyu olmak üzere dört senaryo,
+beş tam tur / 50 soru tamamlandı. İlk turda 10 kolay; 390/açık tekrar turunda
+9 kolay + 1 orta ve 20 farklı ID doğrulandı. Dört kategori, 20 saniye, skor,
+kayıt/yeniden açılış ve elle kategori seçimine dönüş geçti. 12 gerçek PNG ve
+kabul JSON'u [CI artifact'ında](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930/artifacts/15103443970).
+Dosya SHA-256'ları ve görsel kontrol kaydı `BROWSER-ACCEPTANCE.json` içindedir.
+Ana sayfa, soru ve skor görüntüleri ayrıca gözle incelendi; 320 genişlikte
+skorun üstü kesilmiyor. Bu testler canlı hesap kullanmadı, uzak istekler engelliydi.
+
+İzole SQL'de v74 tam 3.000 kayıt ve özel anahtar/ACL sınırı, v73 kaynaklarının
+ve başlamış maçın korunması, 264 havuz birleşimi, sunucu puanlaması,
+20 saniyelik yeni maçlar ve eski sürelerin değişmezliği geçti. Gerçek canlı
+Supabase'e bağlanılmadı veya migration uygulanmadı.
+
+İlk CI denemesi Playwright/Ubuntu 26.04 uyumsuzluğunda başarısız oldu; çalıştırıcı
+Ubuntu 24.04'e sabitlendi. İkinci deneme uzun kurulum sırasında teşhis için
+durduruldu; kısmi ekranları korundu. Son koşuda kurulum/test ayrı adımlar ve
+sınırlı beklemelerle tamamen geçti. Bu ara denemeler başarı gibi gösterilmez.
+
+Son belge commit'i yalnız kanıt ve durum kayıtlarını günceller; uygulama,
+içerik, migration ve test kaynakları başarılı cbde74c ile birebir aynıdır.
+Gereksiz CI tekrarı önlenir. PR #33 açık/taslak olarak kalır. Temiz Git iOS
+native kaynak engeli ve 0.1.1 bütünleştirme/yayın onayı hâlâ gereklidir.

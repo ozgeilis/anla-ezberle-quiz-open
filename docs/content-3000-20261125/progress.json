@@ -154,7 +154,7 @@
     "Difficulty is based on knowledge and options; original equal-third provisional plan was not forced by relabelling.",
     "Similarity screening and manual review cannot prove every conceivable paraphrase unique.",
     "Full suite: 482 tests; 481 passed, one failed due to the pre-existing missing ignored Google native source file.",
-    "Local Docker unavailable; final isolated GitHub SQL acceptance passed on run 45783982572. No hosted migration."
+    "Local Docker unavailable; final isolated GitHub SQL acceptance passed on run 45794437930. No hosted migration."
   ],
   "currentBankVersion": 74,
   "currentQuestionCount": 3000,
@@ -246,9 +246,9 @@
     }
   ],
   "baselineNote": "bankVersion/questionCount/bankSha256 and original categories record the immutable v73 starting audit; currentBankVersion/currentQuestionCount/difficultyDistribution describe v74.",
-  "finalCiRun": 45783982572,
+  "finalCiRun": 45794437930,
   "finalQualityQuickPlay": {
-    "status": "CODED_TARGETED_TESTS_PASSED_BROWSER_CI_PENDING",
+    "status": "COMPLETED_TARGETED_BROWSER_AND_ISOLATED_SQL_PASSED_NATIVE_RELEASE_BLOCKER_OPEN",
     "reviewedSample": 56,
     "targetedRefinements": 8,
     "changedDifficultyLabels": 5,
@@ -257,6 +257,21 @@
     "questionIdsChanged": false,
     "questionCount": 3000,
     "newBranch": false,
-    "policy": "Existing XP levels only; level 1:10/0/0, level 2:9/1/0, level 5:6/4/0, level 10:3/6/1, level 15:2/6/2, level 20+:1/6/3 (easy/medium/hard). At most one new harder slot per level."
+    "policy": "Existing XP levels only; level 1:10/0/0, level 2:9/1/0, level 5:6/4/0, level 10:3/6/1, level 15:2/6/2, level 20+:1/6/3 (easy/medium/hard). At most one new harder slot per level.",
+    "ci": {
+      "status": "PASSED",
+      "runId": 45794437930,
+      "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930",
+      "sourceCommit": "cbde74c1ece3ca00fdfe6378231925e38fc0a846",
+      "typecheck": "PASSED",
+      "fullLint": "PASSED",
+      "sourceManifest": "PASSED",
+      "selectedContentHistoryAndQuickPlayTests": 40,
+      "realBrowser": "PASSED",
+      "isolatedSQLAcceptance": "PASSED",
+      "hostedChanged": false
+    },
+    "browserScreenshots": 12,
+    "readyForStore": false
   }
 }

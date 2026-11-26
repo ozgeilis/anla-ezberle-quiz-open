@@ -1,0 +1,122 @@
+{
+  "sourceCommit": "cbde74c1ece3ca00fdfe6378231925e38fc0a846",
+  "runId": 45794437930,
+  "artifactId": 15103443970,
+  "artifactUrl": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930/artifacts/15103443970",
+  "acceptance": {
+    "passed": true,
+    "liveAccounts": false,
+    "remoteRequestsBlocked": true,
+    "checks": [
+      {
+        "width": 320,
+        "theme": "light",
+        "questionCount": 10,
+        "categories": 4,
+        "beginnerEasyCount": 10,
+        "saveAndReload": true,
+        "categoryChoiceRetained": true
+      },
+      {
+        "width": 320,
+        "theme": "dark",
+        "questionCount": 10,
+        "categories": 4,
+        "beginnerEasyCount": 10,
+        "saveAndReload": true,
+        "categoryChoiceRetained": true
+      },
+      {
+        "width": 390,
+        "theme": "light",
+        "questionCount": 10,
+        "categories": 4,
+        "beginnerEasyCount": 10,
+        "saveAndReload": true,
+        "categoryChoiceRetained": true
+      },
+      {
+        "width": 390,
+        "theme": "dark",
+        "questionCount": 10,
+        "categories": 4,
+        "beginnerEasyCount": 10,
+        "saveAndReload": true,
+        "categoryChoiceRetained": true
+      }
+    ]
+  },
+  "progressiveReplay": {
+    "passed": true,
+    "viewport": 390,
+    "theme": "light",
+    "firstRoundEasy": 10,
+    "secondRound": {
+      "easy": 9,
+      "medium": 1,
+      "hard": 0
+    },
+    "distinctQuestionIds": 20
+  },
+  "images": [
+    {
+      "file": "home-320-dark.png",
+      "sha256": "6df71f86ef318e20e8425a5cb80b64b27146a1f1cb842864840ea9f085b8dde6"
+    },
+    {
+      "file": "home-320-light.png",
+      "sha256": "a4b939190f711e8ad28c3836e38a30061f11aecc5ac647266ab730f3359af488"
+    },
+    {
+      "file": "home-390-dark.png",
+      "sha256": "b63da82cc9706ca92d52b5c6dc93a94511dee15a28b55deedbe7901b74cffcf1"
+    },
+    {
+      "file": "home-390-light.png",
+      "sha256": "12182775fc688be53e11a521c2684a086e9d851ab15fbe3f7954102e710d7fa8"
+    },
+    {
+      "file": "quiz-320-dark.png",
+      "sha256": "e34dcc7c71be4e875d5ed789ed290a0dd00f6ddd281559bf1e7dfb5a21890989"
+    },
+    {
+      "file": "quiz-320-light.png",
+      "sha256": "86657047e7b412e146457662d57e7d3b1aa9b57a76df657b69218da638cd3a64"
+    },
+    {
+      "file": "quiz-390-dark.png",
+      "sha256": "7b32af6fd0964a87d941831d439ae1c152c60313c78c1fdfbebcff9be6742920"
+    },
+    {
+      "file": "quiz-390-light.png",
+      "sha256": "1fd9d392763ffc1190ef9c71e66c4239ccbbcf278926cf5936376cd68d5fce4d"
+    },
+    {
+      "file": "result-320-dark.png",
+      "sha256": "44326bc337407e616588c4bc538ab86030013cf27525c2cb1c154a747dd9f9fe"
+    },
+    {
+      "file": "result-320-light.png",
+      "sha256": "44ae76ed85fdb06f7c638982c4f9d5ee1e62166f84ac1211f460fe946c0d9d7c"
+    },
+    {
+      "file": "result-390-dark.png",
+      "sha256": "39c257b9e59a0731050b6fdba5037a7c958e5a7b1707cd79314b21941c7dc2e0"
+    },
+    {
+      "file": "result-390-light.png",
+      "sha256": "970e4bebd3a98ef699e3ed1ed7340f433437e368eafdcc54bacc4bed859d4c07"
+    }
+  ],
+  "visualInspection": {
+    "status": "PASSED",
+    "inspected": [
+      "home-320-light.png",
+      "home-390-dark.png",
+      "quiz-390-light.png",
+      "result-320-dark.png",
+      "result-390-light.png"
+    ],
+    "physicalDeviceTest": false
+  }
+}

@@ -130,7 +130,7 @@
     "targetedLint": "PASSED",
     "webExport": "PASSED",
     "localBrowser": "NOT_RUN_DISABLED_IN_WORK_SETTINGS",
-    "isolatedBrowserCI": "PENDING",
+    "isolatedBrowserCI": "PASSED",
     "googleNativeRecheck": {
       "status": "FAILED_BASELINE_MISSING_NATIVE_SOURCE",
       "tests": 2,
@@ -141,6 +141,37 @@
     },
     "fullSuiteRepeated": false,
     "reason": "User requested targeted checks only; the earlier 482-test run is historical evidence for commit 895624a, not a fresh full-suite claim.",
-    "replayContinuation": "PASSED: quickPlay true is preserved in new v74 records; ResultsScreen passes it to the existing start operation. Legacy records need no new field."
+    "replayContinuation": "PASSED: quickPlay true is preserved in new v74 records; ResultsScreen passes it to the existing start operation. Legacy records need no new field.",
+    "browserEvidence": "BROWSER-ACCEPTANCE.json",
+    "browserRunId": 45794437930,
+    "ci": {
+      "status": "PASSED",
+      "runId": 45794437930,
+      "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930",
+      "sourceCommit": "cbde74c1ece3ca00fdfe6378231925e38fc0a846",
+      "typecheck": "PASSED",
+      "fullLint": "PASSED",
+      "sourceManifest": "PASSED",
+      "selectedContentHistoryAndQuickPlayTests": 40,
+      "realBrowser": "PASSED",
+      "isolatedSQLAcceptance": "PASSED",
+      "hostedChanged": false
+    },
+    "ciAttempts": [
+      {
+        "runId": 45787635294,
+        "status": "FAILED_RUNNER_COMPATIBILITY",
+        "reason": "ubuntu-latest moved to Ubuntu 26.04, unsupported by pinned Playwright; no browser assertion ran."
+      },
+      {
+        "runId": 45792783495,
+        "status": "CANCELLED_DIAGNOSTIC",
+        "reason": "Stopped during browser test after slow browser installation; partial screenshots retained. Replaced with separate installation/test steps and bounded diagnostics."
+      },
+      {
+        "runId": 45794437930,
+        "status": "PASSED"
+      }
+    ]
   }
 }

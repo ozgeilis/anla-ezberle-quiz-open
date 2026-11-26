@@ -27,9 +27,11 @@
 | Mevcut PR ve kaynak koruması | Doğrulandı | PR #33, aynı dal; main ve diğer worktree’ler değişmedi |
 | Dört kategori / 3.000 ID | GEÇTİ | Son integrity testleri; her kategoriye 375 yeni kayıt korunuyor |
 | Son zorluk ve çeldirici kontrolü | İncelendi ve test edildi | 56 örnek; beş zorluk ve üç seçenek seti düzeltmesi |
-| Hemen Oyna | Kodlandı ve domain testleri geçti | Doğrudan karma tur, dört kategori, gerçek XP seviyesine göre yumuşak dağılım |
-| Tekrar Oyna devamlılığı | Kodlandı ve test edildi | Yeni kayıtların quickPlay işareti; eski kayıt formatı korunur |
+| Hemen Oyna | Tamamlandı ve test edildi | Doğrudan karma tur, dört kategori, gerçek XP seviyesine göre yumuşak dağılım |
+| Tekrar Oyna devamlılığı | Tamamlandı ve test edildi | Yeni kayıtların quickPlay işareti; eski kayıt formatı korunur |
 | XP / çözülenler / eski v1–v73 | GEÇTİ | 47 hedefli test içinde eski cevap/XP ve yeniden açılış |
-| Gerçek tarayıcı UI kabulü | CI bekleniyor | Yerel CUA iki tarayıcıda kapalı bildirdi; CI Chromium testi hazır |
+| Gerçek tarayıcı UI kabulü | GEÇTİ | 45794437930 / cbde74c: 320/390 açık/koyu; 50 gerçek soru; 12 PNG; BROWSER-ACCEPTANCE.json. Yerel CUA kapalı; fiziksel cihaz kabulü değildir |
 | Google native altyapı hatası | Yeniden doğrulandı, giderilmedi | ios/ ignore kuralı özgün podspec/Swift dosyalarını Git dışında bırakıyor; Auth yeniden yazılmadı |
 | IPA/AAB, main veya mağaza yayını | Yapılmadı | Son kabul/onay sınırı korunuyor |
+
+Son kod kabulü: **cbde74c / [CI 45794437930](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930) GEÇTİ**. Tam TypeScript/lint, manifest, 40 seçili CI testi, gerçek Chromium kabulü ve izole SQL geçti. Yereldeki 47 test ayrı kapsamdır; toplanıp 87 farklı test gibi sunulmaz. Son belge kaydı kodu değiştirmez ve maliyet için aynı CI yeniden başlatılmaz.
