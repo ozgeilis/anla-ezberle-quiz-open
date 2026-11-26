@@ -2,11 +2,12 @@ import { createHash } from "node:crypto";
 import { readFile, readdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { questions, categories, BANK_VERSION } from "../src/content/questions";
+import { categories } from "../src/content/questions";
+import { questionsV73 as questions } from "../src/content/questions/questions-v73";
 import type { Question } from "../src/content/questions/model";
 import {
   playCategories,
-  categoryPool,
+  belongsToPlayCategory,
 } from "../src/domain/game/play-categories";
 import { qualityWarnings } from "./question-quality";
 
@@ -235,7 +236,7 @@ export async function writeBaseline() {
   ) as { replacements: { id: string }[] };
   const summary = {
     baseCommit: "3a74086",
-    bankVersion: BANK_VERSION,
+    bankVersion: 73,
     questionCount: questions.length,
     uniqueIds: new Set(questions.map((q) => q.id)).size,
     bankSha256: createHash("sha256").update(snapshot).digest("hex"),
@@ -245,7 +246,8 @@ export async function writeBaseline() {
     screenCategories: playCategories.map((c) => ({
       id: c.id,
       title: c.title,
-      total: categoryPool(questions, c.id).length,
+      total: questions.filter((q) => belongsToPlayCategory(q.id, c.id, 2))
+        .length,
     })),
     newQuestionsAdded: 0,
     newQuestionsStaged: newCandidates.length,

@@ -15,8 +15,8 @@ test("100 taslağın kaynak kararları ayrık, eksiksiz ve tarihli; arşiv v14 h
  assert.equal(reviewExcludedV3.length,6);
  assert.equal(sourceCheckedCandidateQuestionsV3.length,31);
  assert.equal(bankV14.length,500);
- assert.equal(playableQuestions().length, 1500);
- assert.equal(playableQuestions("prototype").length, 1500);
+ assert.equal(playableQuestions().length, 3000);
+ assert.equal(playableQuestions("prototype").length, 3000);
  const bankIds=new Set(bankV14.map(q=>q.id));
  const checked = new Set(reviewSourceCheckedV3.map(([id])=>id));
  const excluded=new Set(reviewExcludedV3.map(([id])=>id));

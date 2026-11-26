@@ -201,6 +201,7 @@
     {
       "fact": "tajwid-reading-pronunciation-rules",
       "ids": [
+        "quran-008",
         "v11-general-002",
         "q58-tecvid-ana"
       ]
@@ -222,15 +223,18 @@
     {
       "fact": "sahihayn-two-collections",
       "ids": [
+        "v13-general-007",
         "q49-kutub-026",
-        "q68-sitte-sahihayn"
+        "q68-sitte-sahihayn",
+        "q68-sitte-dort"
       ]
     },
     {
       "fact": "common-sixth-book-author-ibn-maja",
       "ids": [
         "q49-kutub-027",
-        "q68-sitte-ibnmace"
+        "q68-sitte-ibnmace",
+        "q68-sitte-bes"
       ]
     },
     {
@@ -414,7 +418,8 @@
       "fact": "shuayb-madyan-mission",
       "ids": [
         "pilot-prophets-001",
-        "q57-suaybmed"
+        "q57-suaybmed",
+        "q67-ankebut-36"
       ]
     },
     {
@@ -629,6 +634,307 @@
         "q66-neml-44"
       ],
       "evidence": "Follow-up full-bank source/fact review: same event fact in a definition/reversal formulation."
+    },
+    {
+      "fact": "full-review-v10-prophets-011",
+      "ids": [
+        "v10-prophets-011",
+        "q67-kasas-30"
+      ]
+    },
+    {
+      "fact": "full-review-v10-quran-001",
+      "ids": [
+        "v10-quran-001",
+        "q66-neml-name"
+      ]
+    },
+    {
+      "fact": "full-review-e150-prophets-023",
+      "ids": [
+        "e150-prophets-023",
+        "q66-neml-22"
+      ]
+    },
+    {
+      "fact": "full-review-v10-prophets-013",
+      "ids": [
+        "v10-prophets-013",
+        "q66-meryem-25"
+      ]
+    },
+    {
+      "fact": "full-review-prophets-012",
+      "ids": [
+        "prophets-012",
+        "q66-meryem-7"
+      ]
+    },
+    {
+      "fact": "full-review-e150-prophets-021",
+      "ids": [
+        "e150-prophets-021",
+        "q66-neml-18"
+      ]
+    },
+    {
+      "fact": "full-review-v10-prophets-006",
+      "ids": [
+        "v10-prophets-006",
+        "q66-neml-24"
+      ]
+    },
+    {
+      "fact": "full-review-v13-quran-008",
+      "ids": [
+        "v13-quran-008",
+        "q65-isra-35"
+      ]
+    },
+    {
+      "fact": "full-review-q44-tin-6",
+      "ids": [
+        "q44-tin-6",
+        "q55-insikak-026"
+      ]
+    },
+    {
+      "fact": "full-review-learn-dua-018",
+      "ids": [
+        "learn-dua-018",
+        "q65-furkan-65"
+      ]
+    },
+    {
+      "fact": "full-review-q65-hadid-2",
+      "ids": [
+        "q65-hadid-2",
+        "q67-rum-40"
+      ]
+    },
+    {
+      "fact": "full-review-v10-quran-009",
+      "ids": [
+        "v10-quran-009",
+        "q54-tarik-013"
+      ]
+    },
+    {
+      "fact": "full-review-v11-prophets-013",
+      "ids": [
+        "v11-prophets-013",
+        "q61-salihpeygamber-deve"
+      ]
+    },
+    {
+      "fact": "full-review-e150-prophets-038",
+      "ids": [
+        "e150-prophets-038",
+        "q61-hud-ad"
+      ]
+    },
+    {
+      "fact": "full-review-e150-prophets-037",
+      "ids": [
+        "e150-prophets-037",
+        "q61-salihpeygamber-semud"
+      ]
+    },
+    {
+      "fact": "full-review-v9-prophets-010",
+      "ids": [
+        "v9-prophets-010",
+        "q50-lut-015"
+      ]
+    },
+    {
+      "fact": "full-review-e150-prophets-034",
+      "ids": [
+        "e150-prophets-034",
+        "v12-prophets-001"
+      ]
+    },
+    {
+      "fact": "full-review-v11-prophets-005",
+      "ids": [
+        "v11-prophets-005",
+        "q57-musaasa"
+      ]
+    },
+    {
+      "fact": "full-review-v9-prophets-004",
+      "ids": [
+        "v9-prophets-004",
+        "q57-suaybolcu"
+      ]
+    },
+    {
+      "fact": "full-review-v8-general-001",
+      "ids": [
+        "v8-general-001",
+        "q62-nisab-anlam"
+      ]
+    },
+    {
+      "fact": "full-review-v11-history-004",
+      "ids": [
+        "v11-history-004",
+        "q45-haldun-umran"
+      ]
+    },
+    {
+      "fact": "full-review-q47-vakfe-041",
+      "ids": [
+        "q47-vakfe-041",
+        "q62-vakfe-iki"
+      ]
+    },
+    {
+      "fact": "full-review-q47-hac-036",
+      "ids": [
+        "q47-hac-036",
+        "q62-tavaf-ziyaret"
+      ]
+    },
+    {
+      "fact": "full-review-e150-general-023",
+      "ids": [
+        "e150-general-023",
+        "q62-tavaf-baslangic"
+      ]
+    },
+    {
+      "fact": "full-review-v12-history-011",
+      "ids": [
+        "v12-history-011",
+        "q70-ebu-hanife-lakap"
+      ]
+    },
+    {
+      "fact": "full-review-pilot-general-002",
+      "ids": [
+        "pilot-general-002",
+        "q62-tavaf-anlam"
+      ]
+    },
+    {
+      "fact": "full-review-q70-gazzali-ihya",
+      "ids": [
+        "q70-gazzali-ihya",
+        "q49-ihya-019"
+      ]
+    },
+    {
+      "fact": "full-review-q49-kutub-028",
+      "ids": [
+        "q49-kutub-028",
+        "q68-sitte-alternatif"
+      ]
+    },
+    {
+      "fact": "full-review-q62-hac-arafat",
+      "ids": [
+        "q62-hac-arafat",
+        "q62-arafat-hadis"
+      ]
+    },
+    {
+      "fact": "full-review-quran-meaning-v72-022",
+      "ids": [
+        "quran-meaning-v72-022",
+        "v12-general-003"
+      ]
+    },
+    {
+      "fact": "full-review-history-003",
+      "ids": [
+        "history-003",
+        "e150-history-035"
+      ]
+    },
+    {
+      "fact": "full-review-v10-general-008",
+      "ids": [
+        "v10-general-008",
+        "q49-taberi-015"
+      ]
+    },
+    {
+      "fact": "final-review-q67-ankebut-2",
+      "ids": [
+        "q67-ankebut-2",
+        "q67-ankebut-3"
+      ]
+    },
+    {
+      "fact": "final-review-e150-general-022",
+      "ids": [
+        "e150-general-022",
+        "q62-hac-ihram"
+      ]
+    },
+    {
+      "fact": "final-review-history-008",
+      "ids": [
+        "history-008",
+        "e150-history-014"
+      ]
+    },
+    {
+      "fact": "final-review-learn-dua-003",
+      "ids": [
+        "learn-dua-003",
+        "learn-dua-010"
+      ]
+    },
+    {
+      "fact": "low-score-q66-meryem-3",
+      "ids": [
+        "q66-meryem-3",
+        "q67-rum-17"
+      ]
+    },
+    {
+      "fact": "low-score-v13-quran-007",
+      "ids": [
+        "v13-quran-007",
+        "q65-isra-34"
+      ]
+    },
+    {
+      "fact": "low-score-q55-infitar-011",
+      "ids": [
+        "q55-infitar-011",
+        "q55-insikak-019"
+      ]
+    },
+    {
+      "fact": "low-score-quran-meaning-v72-012",
+      "ids": [
+        "quran-meaning-v72-012",
+        "v12-general-010"
+      ]
+    },
+    {
+      "fact": "low-score-q42-lokman-27",
+      "ids": [
+        "q42-lokman-27",
+        "q66-kehf-109"
+      ]
+    },
+    {
+      "fact": "low-score-history-006",
+      "ids": [
+        "history-006",
+        "q60-suffe-adi"
+      ]
+    },
+    {
+      "fact": "low-score-q52-kurban-022",
+      "ids": [
+        "q52-kurban-022",
+        "q43-insan-7"
+      ]
     }
   ],
   "nextAction": "Compare all four options and explanations for each group; retain one fact instance and prepare independently source-checked different replacements in a new bank revision while preserving historical snapshots and saved-record lookup. This list does not authorize immediate deletion."

@@ -50,7 +50,7 @@
     "options": [
       {
         "id": "o1",
-        "text": "Kitabı yalnız süs olarak saklamaları"
+        "text": "Kitabı en hızlı okumaları"
       },
       {
         "id": "o2",
@@ -58,11 +58,11 @@
       },
       {
         "id": "o3",
-        "text": "Anlamını gizleyerek okumaları"
+        "text": "Kitabı en güzel ciltte saklamaları"
       },
       {
         "id": "o4",
-        "text": "Sadece başkalarının kusurunu aramaları"
+        "text": "Kitabı belli bir günde tamamlamaları"
       }
     ],
     "correctOptionId": "o2",
@@ -554,7 +554,7 @@
     "options": [
       {
         "id": "o1",
-        "text": "Yalnız Mekke’nin yöneticileri"
+        "text": "Hicret eden aileler"
       },
       {
         "id": "o2",
@@ -562,11 +562,11 @@
       },
       {
         "id": "o3",
-        "text": "Sadece belli bir aile"
+        "text": "Kitabı kaleme alan görevliler"
       },
       {
         "id": "o4",
-        "text": "Yalnız vahyi yazanlar"
+        "text": "Mekke’deki yöneticiler"
       }
     ],
     "correctOptionId": "o2",
@@ -591,43 +591,43 @@
     "id": "new74-quran-195",
     "version": 1,
     "categoryId": "quran",
-    "difficulty": "medium",
-    "question": "Yûnus 10/5’te aya menziller belirlenmesi insanların hangi bilgiyi edinmesiyle ilişkilendirilir?",
+    "difficulty": "hard",
+    "question": "Meâric 70/4’te meleklerin ve ruhun yükselişindeki günün miktarı kaç yıl olarak verilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Madenlerin ağırlığını"
+        "text": "Bin yıl"
       },
       {
         "id": "o2",
-        "text": "Rüzgârların hızını"
+        "text": "On bin yıl"
       },
       {
         "id": "o3",
-        "text": "Yılların sayısını ve zaman hesabını"
+        "text": "Elli bin yıl"
       },
       {
         "id": "o4",
-        "text": "Denizlerin derinliğini"
+        "text": "Yüz bin yıl"
       }
     ],
     "correctOptionId": "o3",
-    "explanation": "Âyet, ayın menzillerini yılların sayısını ve hesabı bilmeye bağlar.",
+    "explanation": "Âyet, bu yükselişi miktarı elli bin yıl olan bir günle anlatır; bu, dünyevî bir yolculuk hesabı olarak sunulmaz.",
     "sources": [
       {
         "title": "Diyanet — Kur’an Yolu Meali",
         "publisher": "Diyanet İşleri Başkanlığı",
         "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
-        "locator": "10/5; physical PDF 219",
-        "supports": "Âyet, ayın menzillerini yılların sayısını ve hesabı bilmeye bağlar.",
+        "locator": "70/4; physical PDF 611",
+        "supports": "Âyet, bu yükselişi miktarı elli bin yıl olan bir günle anlatır; bu, dünyevî bir yolculuk hesabı olarak sunulmaz.",
         "checkStatus": "supported",
-        "checkedAt": "2026-11-25"
+        "checkedAt": "2026-11-26"
       }
     ],
     "reviewStatus": "reviewed",
     "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
     "updatedAt": "2026-11-25",
-    "conceptGroup": "v74-ayin-menzilleri-hesap"
+    "conceptGroup": "v74-angels-ruh-ascent-fifty-thousand-years"
   },
   {
     "id": "new74-quran-196",
@@ -722,7 +722,7 @@
     "options": [
       {
         "id": "o1",
-        "text": "Bütün servetlerini yanlarında götürmeleri"
+        "text": "Aileleriyle topluca hesap vermeleri"
       },
       {
         "id": "o2",
@@ -730,11 +730,11 @@
       },
       {
         "id": "o3",
-        "text": "Sahte şefaatçilerinin mutlaka kurtarması"
+        "text": "Mallarıyla birlikte huzura gelmeleri"
       },
       {
         "id": "o4",
-        "text": "Hesabın yalnız topluluk adına görülmesi"
+        "text": "Aracılarının onları mutlaka kurtarması"
       }
     ],
     "correctOptionId": "o2",
@@ -806,15 +806,15 @@
     "options": [
       {
         "id": "o1",
-        "text": "İkisinde de hiçbir bitkinin yetişmemesiyle"
+        "text": "İkisinin de aynı ürünü vermesi"
       },
       {
         "id": "o2",
-        "text": "Yalnız kötü olanda yararlı ürün olmasıyla"
+        "text": "Kötü olandan daha çok ürün çıkması"
       },
       {
         "id": "o3",
-        "text": "İkisinin de her zaman aynı ürünü vermesiyle"
+        "text": "İkisinde de ürün yetişmemesi"
       },
       {
         "id": "o4",

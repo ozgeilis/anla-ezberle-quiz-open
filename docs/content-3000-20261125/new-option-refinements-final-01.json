@@ -1,0 +1,4270 @@
+{
+  "date": "2026-11-26",
+  "scope": "Manual replacement of irrelevant/giveaway distractors. Verified key and source passage unchanged. No automatic deletion of qualifier words.",
+  "changes": [
+    {
+      "id": "new74-general-020",
+      "question": "TDV’nin selem konusunda aktardığı hadiste alışverişin hangi yönlerinin belirli olması istenir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız satıcının maliyetinin ve hedef kârının"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız satış yerinin ve pazar büyüklüğünün"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız malın sağlayacağı beklenen gelirin"
+        },
+        {
+          "id": "o4",
+          "text": "Ölçüsünün, tartısının ve teslim zamanının"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Satıcının maliyetinin, hedef kârının ve giderlerinin"
+        },
+        {
+          "id": "o2",
+          "text": "Malın kaynağının, üreticisinin ve markasının"
+        },
+        {
+          "id": "o3",
+          "text": "Satış yerinin, pazar fiyatının ve taşıma ücretinin"
+        },
+        {
+          "id": "o4",
+          "text": "Ölçüsünün, tartısının ve teslim zamanının"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-031",
+      "question": "Tilâvet secdesinin hükmü bakımından Hanefîlerle diğer üç Sünnî mezhep arasındaki fark hangi seçenekte doğru verilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün mezheplerde mubahtır"
+        },
+        {
+          "id": "o2",
+          "text": "Hanefîlerde sünnet, diğer üçünde vâciptir"
+        },
+        {
+          "id": "o3",
+          "text": "Hanefîlerde vâcip, diğer üçünde sünnettir"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün mezheplerde mekruhtur"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hanefîlerde sünnet, diğer üçünde vâciptir"
+        },
+        {
+          "id": "o2",
+          "text": "Hanefî ve Mâlikîlerde farz, diğerlerinde sünnettir"
+        },
+        {
+          "id": "o3",
+          "text": "Hanefîlerde vâcip, diğer üçünde sünnettir"
+        },
+        {
+          "id": "o4",
+          "text": "Dört mezhepte de aynı derecede farzdır"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-047",
+      "question": "Ahlâk terimi olarak istikamet hangi yaşayışı anlatır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kişisel çıkar için davranışını sürekli değiştirmeyi"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız başkalarının onayına göre hareket etmeyi"
+        },
+        {
+          "id": "o3",
+          "text": "Aşırılıklara sapmadan doğrulukta kararlı olmayı"
+        },
+        {
+          "id": "o4",
+          "text": "İyi davranışı bir kez yapınca bütün görevin bittiğini düşünmeyi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Şartlara göre sürekli taraf değiştirmeyi"
+        },
+        {
+          "id": "o2",
+          "text": "Toplumun her alışkanlığını doğru saymayı"
+        },
+        {
+          "id": "o3",
+          "text": "Aşırılıklara sapmadan doğrulukta kararlı olmayı"
+        },
+        {
+          "id": "o4",
+          "text": "İlk karardan hiçbir delille dönmemeyi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-056",
+      "question": "Hadisçilerin genel kullanımında âhâd haberin râvi sayısı hakkında hangi ifade doğrudur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Mutlaka yalnız tek bir râvisi vardır"
+        },
+        {
+          "id": "o2",
+          "text": "Her tabakada tam aynı sayıda râvisi olmalıdır"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız hiçbir râvisi bilinmeyen haberlerdir"
+        },
+        {
+          "id": "o4",
+          "text": "Tevâtüre ulaşmayan birden fazla râvisi de olabilir"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Tek bir tabakada tek râvisi bulunan haberlerdir"
+        },
+        {
+          "id": "o2",
+          "text": "Her tabakasında aynı sayıda râvisi olan haberlerdir"
+        },
+        {
+          "id": "o3",
+          "text": "Kaynağı bilinmeyen haberlerin ortak adıdır"
+        },
+        {
+          "id": "o4",
+          "text": "Tevâtüre ulaşmayan birden fazla râvisi de olabilir"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-079",
+      "question": "Karz ile deynin kapsamı hakkında hangi ifade doğrudur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Deyn yalnız bedelsiz hediye anlamındadır"
+        },
+        {
+          "id": "o2",
+          "text": "Her deyn mutlaka karzdan doğar"
+        },
+        {
+          "id": "o3",
+          "text": "Deyn borcun genel adıdır; karzdan doğan borcu da kapsar"
+        },
+        {
+          "id": "o4",
+          "text": "Karz sadece bir malı saklamak demektir"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Karz borcun genel adıdır, deyn onun bir alt türüdür"
+        },
+        {
+          "id": "o2",
+          "text": "Deyn borcun belgesi, karz ise o belgenin şahididir"
+        },
+        {
+          "id": "o3",
+          "text": "Deyn borcun genel adıdır; karzdan doğan borcu da kapsar"
+        },
+        {
+          "id": "o4",
+          "text": "Karz kullanım hakkını, deyn saklama yükümlülüğünü anlatır"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-090",
+      "question": "Yaygın müsned tertibinde hadisler öncelikle hangi esasa göre bir araya getirilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız fıkıh konularına göre"
+        },
+        {
+          "id": "o2",
+          "text": "Onları rivayet eden sahâbîlerin adları altında"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız metinlerinin uzunluğuna göre"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız son kelimelerine göre"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Fıkhî konularına göre bölümler altında"
+        },
+        {
+          "id": "o2",
+          "text": "Onları rivayet eden sahâbîlerin adları altında"
+        },
+        {
+          "id": "o3",
+          "text": "Derleyicinin hocalarının adları altında"
+        },
+        {
+          "id": "o4",
+          "text": "Hadis metinlerinin ilk harflerine göre"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-092",
+      "question": "Hadis edebiyatındaki “erbaûn hadîs” ifadesi hangi derleme geleneğini anlatır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kırk ayrı râviye mutlaka aynı hadisi okutmayı"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün hadisleri tek kitaba toplamayı"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız kırk yaşında rivayete başlamayı"
+        },
+        {
+          "id": "o4",
+          "text": "Kırk hadis derlemeyi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Bir hadisin kırk ayrı senedini toplamayı"
+        },
+        {
+          "id": "o2",
+          "text": "Kırk râvinin biyografisini bir araya getirmeyi"
+        },
+        {
+          "id": "o3",
+          "text": "Hadisleri kırk konu başlığına ayırmayı"
+        },
+        {
+          "id": "o4",
+          "text": "Kırk hadis derlemeyi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-094",
+      "question": "Hadis ilminde zabt-ı sadr ile zabt-ı kitâb arasındaki temel ayrım nedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Sözlü hadisin doğru, yazılı hadisin daima yanlış olması"
+        },
+        {
+          "id": "o2",
+          "text": "Ezberde koruma ile yazılı kaynağı doğru koruma ayrımı"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız gece ve gündüz rivayetinin ayrımı"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız Arapça ve başka dilde rivayetin ayrımı"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hoca huzurunda okuma ile hocadan dinleme ayrımı"
+        },
+        {
+          "id": "o2",
+          "text": "Ezberde koruma ile yazılı kaynağı doğru koruma ayrımı"
+        },
+        {
+          "id": "o3",
+          "text": "Sened incelemesi ile metin incelemesi ayrımı"
+        },
+        {
+          "id": "o4",
+          "text": "Lafzen nakil ile mânen nakil ayrımı"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-098",
+      "question": "Hadiste tahrifin ortaya çıkışı hakkında hangi ifade doğrudur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her durumda mutlaka bilinçli düşmanlıkla yapılır"
+        },
+        {
+          "id": "o2",
+          "text": "Yanlış okuma veya yanlış duymadan da kaynaklanabilir"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız matbaanın icadından sonra ortaya çıkmıştır"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece tercüme metinlerde görülebilir"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Metne açıklayıcı bir cümle eklenmesinden doğar"
+        },
+        {
+          "id": "o2",
+          "text": "Yanlış okuma veya yanlış duymadan da kaynaklanabilir"
+        },
+        {
+          "id": "o3",
+          "text": "Bir senedin yerine başka sened takılmasından doğar"
+        },
+        {
+          "id": "o4",
+          "text": "Rivayetin kaynağının belirtilmemesinden doğar"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-118",
+      "question": "Musannef türü hadis eserlerinde peygamber rivayetleri yanında hangi nesillerin söz ve fiillerine çokça yer verilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız çağdaş hükümdarların"
+        },
+        {
+          "id": "o2",
+          "text": "Sahâbe ve tâbiînin"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız müstensihlerin"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız mütercimlerin"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Daha sonraki şârihlerin ve müstensihlerin"
+        },
+        {
+          "id": "o2",
+          "text": "Sahâbe ve tâbiînin"
+        },
+        {
+          "id": "o3",
+          "text": "Derleyicinin çağdaşları ve öğrencilerinin"
+        },
+        {
+          "id": "o4",
+          "text": "Dilcilerle birlikte şiir râvilerinin"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-119",
+      "question": "Etrâf kitapları bir rivayeti tanıtmak için genellikle metnin ne kadarını verir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Daima bütün şerhini"
+        },
+        {
+          "id": "o2",
+          "text": "Her zaman tam tercümesini"
+        },
+        {
+          "id": "o3",
+          "text": "Hadisi hatırlatacak bir kısmını"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız müellifin biyografisini"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hadisin tamamını ve ayrıntılı şerhini"
+        },
+        {
+          "id": "o2",
+          "text": "Metnin farklı dillerdeki tercümelerini"
+        },
+        {
+          "id": "o3",
+          "text": "Hadisi hatırlatacak bir kısmını"
+        },
+        {
+          "id": "o4",
+          "text": "Metni vermeden râvinin hayat hikâyesini"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-144",
+      "question": "“Çoğu sarhoş eden şeyin azı...” diye başlayan hadiste nasıl bir ölçü verilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Azının her durumda serbest olduğu"
+        },
+        {
+          "id": "o2",
+          "text": "Hükmün yalnız fiyatına bağlı olduğu"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız adının önemli olduğu"
+        },
+        {
+          "id": "o4",
+          "text": "Az miktarının da haram olduğu"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hükmün içenin niyetine göre değiştiği"
+        },
+        {
+          "id": "o2",
+          "text": "Az miktarın tedbir için mekruh sayıldığı"
+        },
+        {
+          "id": "o3",
+          "text": "Hükmün tüketim saatine göre belirlendiği"
+        },
+        {
+          "id": "o4",
+          "text": "Az miktarının da haram olduğu"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-147",
+      "question": "İslâm’da hayırlı davranışı soran kişiye verilen öğütte kimlere selâm vermek anılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız akrabalarına"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız kendi yaşındakilere"
+        },
+        {
+          "id": "o3",
+          "text": "Tanıdığına ve tanımadığına"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız zenginlere"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Evine misafir olarak gelenlere"
+        },
+        {
+          "id": "o2",
+          "text": "Bir ihtiyacını karşılayanlara"
+        },
+        {
+          "id": "o3",
+          "text": "Tanıdığına ve tanımadığına"
+        },
+        {
+          "id": "o4",
+          "text": "Söze ilk başlayanlara"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-148",
+      "question": "Müslümanın diğer Müslüman üzerindeki haklarını anlatan hadiste hastalanan kişi için ne istenir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Onu tamamen yalnız bırakmak"
+        },
+        {
+          "id": "o2",
+          "text": "Habersizce özel bilgilerini yaymak"
+        },
+        {
+          "id": "o3",
+          "text": "Onunla bütün bağları kesmek"
+        },
+        {
+          "id": "o4",
+          "text": "Onu ziyaret etmek"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Onun adına sadaka toplamayı"
+        },
+        {
+          "id": "o2",
+          "text": "Onun için bir yolculuk yapmayı"
+        },
+        {
+          "id": "o3",
+          "text": "Onun borçlarına kefil olmayı"
+        },
+        {
+          "id": "o4",
+          "text": "Onu ziyaret etmek"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-156",
+      "question": "Misvakla ilgili rivayette ağız temizliği yanında hangi mânevî değer anılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün borçların kendiliğinden silinmesi"
+        },
+        {
+          "id": "o2",
+          "text": "İnsanın hiç hastalanmaması"
+        },
+        {
+          "id": "o3",
+          "text": "Diğer bütün ibadetlerin yerine geçmesi"
+        },
+        {
+          "id": "o4",
+          "text": "Allah’ın hoşnutluğu"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Borç ödeme kolaylığı"
+        },
+        {
+          "id": "o2",
+          "text": "Yolculukta emniyet"
+        },
+        {
+          "id": "o3",
+          "text": "Rızkın genişlemesi"
+        },
+        {
+          "id": "o4",
+          "text": "Allah’ın hoşnutluğu"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-159",
+      "question": "Elinde fidan varken kıyamet kopsa bile onu dikme öğüdü hangi davranışı destekler?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Faydalı işi her zaman ertelemeyi"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün ağaçları kesmeyi"
+        },
+        {
+          "id": "o3",
+          "text": "Son ana kadar faydalı iş yapmayı"
+        },
+        {
+          "id": "o4",
+          "text": "Gelecek kaygısıyla her işi bırakmayı"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Faydalı işi başkasına devretmeyi"
+        },
+        {
+          "id": "o2",
+          "text": "Elde kalanı saklamayı"
+        },
+        {
+          "id": "o3",
+          "text": "Son ana kadar faydalı iş yapmayı"
+        },
+        {
+          "id": "o4",
+          "text": "Yeni girişime başlamamayı"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-160",
+      "question": "Yeryüzünün Hz. Peygamber’e temiz ve namaza uygun kılınması hangi imkânı anlatır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her kirli yerde şart aramadan namaz kılmayı"
+        },
+        {
+          "id": "o2",
+          "text": "Temizliğin bütün şartlarını kaldırmayı"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız tek bir şehirde namaz kılmayı"
+        },
+        {
+          "id": "o4",
+          "text": "Temiz yerlerde belirli bir mâbedle sınırlı kalmadan namaz kılabilmeyi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Her namaz için yeni bir mâbed seçmeyi"
+        },
+        {
+          "id": "o2",
+          "text": "Cemaatle namazı açık alana taşımayı"
+        },
+        {
+          "id": "o3",
+          "text": "Yolculuk namazını belirli şehirlere bağlamayı"
+        },
+        {
+          "id": "o4",
+          "text": "Temiz yerlerde belirli bir mâbedle sınırlı kalmadan namaz kılabilmeyi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-164",
+      "question": "Klasik şirket tasnifinde “vücûh” ortaklığı esas olarak hangi imkâna dayanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız toprağın sulanmasına"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız miras paylarına"
+        },
+        {
+          "id": "o3",
+          "text": "Bedelsiz bağışa"
+        },
+        {
+          "id": "o4",
+          "text": "Ticarî itibar ve kredili alım imkânına"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Arazi ve sulama katkısına"
+        },
+        {
+          "id": "o2",
+          "text": "Ortakların bedenî çalışmasına"
+        },
+        {
+          "id": "o3",
+          "text": "Bir tarafın sermayesine diğerinin emeğine"
+        },
+        {
+          "id": "o4",
+          "text": "Ticarî itibar ve kredili alım imkânına"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-166",
+      "question": "Klasik şirket tasnifinde “emvâl şirketi” hangi ana unsura dayanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız kişisel şöhrete"
+        },
+        {
+          "id": "o2",
+          "text": "Ortakların sermayelerine"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece bedenî iş görmeye"
+        },
+        {
+          "id": "o4",
+          "text": "Karşılıksız emanete"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Ortakların ticarî itibarına"
+        },
+        {
+          "id": "o2",
+          "text": "Ortakların sermayelerine"
+        },
+        {
+          "id": "o3",
+          "text": "Sanatkârların iş görme becerisine"
+        },
+        {
+          "id": "o4",
+          "text": "Arazi sahibinin yetişmiş ağaçlarına"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-183",
+      "question": "Anne babaya vefayı sürdürme konusunda hadiste hangi ziyaret özellikle övülür?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız zengin komşuları ziyaret"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece karşılık beklenen ziyaretler"
+        },
+        {
+          "id": "o3",
+          "text": "Babanın dostlarını ziyaret"
+        },
+        {
+          "id": "o4",
+          "text": "Sırf ün kazanmak için yapılan ziyaretler"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Babanın iş ortaklarını ziyaret"
+        },
+        {
+          "id": "o2",
+          "text": "Annenin komşularını ziyaret"
+        },
+        {
+          "id": "o3",
+          "text": "Babanın dostlarını ziyaret"
+        },
+        {
+          "id": "o4",
+          "text": "Ailenin eski evini ziyaret"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-199",
+      "question": "Musibet karşısındaki sabır için hadiste özellikle hangi an vurgulanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Olay tamamen unutulduğu an"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız yıllar sonraki an"
+        },
+        {
+          "id": "o3",
+          "text": "Musibetin ilk başa geldiği an"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece herkes övdüğündeki an"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Acısını başkalarına anlattığı an"
+        },
+        {
+          "id": "o2",
+          "text": "Kendisine yardım ulaştığı an"
+        },
+        {
+          "id": "o3",
+          "text": "Musibetin ilk başa geldiği an"
+        },
+        {
+          "id": "o4",
+          "text": "Kaybın telâfi edildiği an"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-202",
+      "question": "Sâlih kullar için hazırlanan nimetleri anlatan kudsî hadiste hangi sınırın ötesine işaret edilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız dünyada satın alınabilen mallara"
+        },
+        {
+          "id": "o2",
+          "text": "Gözün görmediği, kulağın işitmediği, akla gelmeyen nimetlere"
+        },
+        {
+          "id": "o3",
+          "text": "İnsanın tüm ayrıntılarını bildiği eşyalara"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece geçmişte kullanılmış yiyeceklere"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Geçmişte anlatılmış bütün sarayların toplamına"
+        },
+        {
+          "id": "o2",
+          "text": "Gözün görmediği, kulağın işitmediği, akla gelmeyen nimetlere"
+        },
+        {
+          "id": "o3",
+          "text": "Dünyadaki hazinelerin en değerlilerine"
+        },
+        {
+          "id": "o4",
+          "text": "İnsanın rüyasında gördüğü güzelliklere"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-206",
+      "question": "“Kişi ... beraberdir” hadisinin sevgiyle ilgili tamamlayıcı ifadesi hangisidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her kıskandığıyla"
+        },
+        {
+          "id": "o2",
+          "text": "Sevdiğiyle"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece zengin olanla"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız güçlü olanla"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Birlikte yolculuk ettiğiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Sevdiğiyle"
+        },
+        {
+          "id": "o3",
+          "text": "En çok görüştüğüyle"
+        },
+        {
+          "id": "o4",
+          "text": "Aynı mesleği paylaştığıyla"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-210",
+      "question": "“Hepiniz sorumlusunuz” hadisi, yönettiği insan veya emanetlerden sorumlu olmayı hangi kapsamda ele alır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız devlet başkanlarının görevi olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Farklı konumlardaki herkesin sorumluluğu olarak"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece ücret alanların görevi olarak"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız yaşlıların sorumluluğu olarak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Görevi resmen teslim alanlarla sınırlı olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Farklı konumlardaki herkesin sorumluluğu olarak"
+        },
+        {
+          "id": "o3",
+          "text": "İnsanların malını yönetenlerle sınırlı olarak"
+        },
+        {
+          "id": "o4",
+          "text": "Başkalarına emir verebilenlerle sınırlı olarak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-212",
+      "question": "Fayda vermeyen ilimden sığınılan duada kalp için hangi eksiklikten de Allah’a sığınılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Sadece hızlı atmasından"
+        },
+        {
+          "id": "o2",
+          "text": "Her zaman neşeli olmasından"
+        },
+        {
+          "id": "o3",
+          "text": "İnsanlarla görüşmesinden"
+        },
+        {
+          "id": "o4",
+          "text": "Huşû duymamasından"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Sabırsız olmasından"
+        },
+        {
+          "id": "o2",
+          "text": "Kararsız olmasından"
+        },
+        {
+          "id": "o3",
+          "text": "Hüzünlü olmasından"
+        },
+        {
+          "id": "o4",
+          "text": "Huşû duymamasından"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-213",
+      "question": "Hayâ, imanın şubelerini anlatan hadiste nasıl konumlandırılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "İmandan bir şube olarak"
+        },
+        {
+          "id": "o2",
+          "text": "İmana ilgisiz bir alışkanlık olarak"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız kıyafetin adı olarak"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece toplumsal makam olarak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "İmandan bir şube olarak"
+        },
+        {
+          "id": "o2",
+          "text": "İmanın meyvesi olsa da şubelerinden ayrı olarak"
+        },
+        {
+          "id": "o3",
+          "text": "İmanın yalnız sözle açıklanması olarak"
+        },
+        {
+          "id": "o4",
+          "text": "İmanın gücünü ölçen tek şart olarak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-226",
+      "question": "Mazlumun duasından sakınma öğüdü hangi gerekçeyle verilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız güçlülerin dua edebilmesi"
+        },
+        {
+          "id": "o2",
+          "text": "Onunla Allah arasında perde bulunmaması"
+        },
+        {
+          "id": "o3",
+          "text": "Duanın para karşılığında olması"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece yöneticilerin duyabilmesi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Duasının diğer dualardan daha uzun olmasından"
+        },
+        {
+          "id": "o2",
+          "text": "Onunla Allah arasında perde bulunmaması"
+        },
+        {
+          "id": "o3",
+          "text": "Duasını topluluk önünde etmesinden"
+        },
+        {
+          "id": "o4",
+          "text": "Duasının belirli bir güne bağlı olmasından"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-227",
+      "question": "Âhiret karşısında dünyanın küçüklüğü hadiste hangi örnekle anlatılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Denizi tamamen dolduran ırmakla"
+        },
+        {
+          "id": "o2",
+          "text": "Göğe yükselen büyük dağla"
+        },
+        {
+          "id": "o3",
+          "text": "Denize batırılan parmağa kalan suyla"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün yeryüzünü kaplayan bulutla"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Bir ağacın gölgesinin gövdesine oranıyla"
+        },
+        {
+          "id": "o2",
+          "text": "Bir kum tanesinin çöldeki yerine oranıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Denize batırılan parmağa kalan suyla"
+        },
+        {
+          "id": "o4",
+          "text": "Bir kandilin ışığının güneşe oranıyla"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-229",
+      "question": "Kişinin iyi Müslüman oluşuyla ilişkilendirilen “mâlâyânîyi terk” ne anlama gelir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Faydasız söz ve gereksiz işlerden uzak durmak"
+        },
+        {
+          "id": "o2",
+          "text": "Her türlü dinlenmeden vazgeçmek"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece başkalarının işini izlemek"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün toplumsal ilişkileri kesmek"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Faydasız söz ve gereksiz işlerden uzak durmak"
+        },
+        {
+          "id": "o2",
+          "text": "Zor işlerin hepsini başkasına bırakmak"
+        },
+        {
+          "id": "o3",
+          "text": "Sessiz kalıp hiçbir konuya karışmamak"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız ibadet dışındaki işleri bırakmak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-231",
+      "question": "Ölüm yaklaşırken Allah hakkında hadiste hangi tutum öğütlenir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Rahmetinden kesinlikle ümit kesmek"
+        },
+        {
+          "id": "o2",
+          "text": "Sorumluluğu bütünüyle inkâr etmek"
+        },
+        {
+          "id": "o3",
+          "text": "Bağışlamasını umarak iyi düşünmek"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün amelleri gereksiz saymak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hakkındaki sonuca kesin hüküm vermek"
+        },
+        {
+          "id": "o2",
+          "text": "Geçmiş iyiliklerini yeterli görmek"
+        },
+        {
+          "id": "o3",
+          "text": "Bağışlamasını umarak iyi düşünmek"
+        },
+        {
+          "id": "o4",
+          "text": "Yargısını başkalarının övgüsüne bağlamak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-241",
+      "question": "“Din samimiyettir” hadisinde Allah, kitabı ve resûlü yanında kimlere karşı samimiyet de anılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Müslümanların yöneticilerine ve bütün Müslümanlara"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız aynı aileden olanlara"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız varlıklı tüccarlara"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız aynı şehirde yaşayanlara"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Müslümanların yöneticilerine ve bütün Müslümanlara"
+        },
+        {
+          "id": "o2",
+          "text": "Aile büyüklerine ve yakın akrabaya"
+        },
+        {
+          "id": "o3",
+          "text": "Komşulara ve yol arkadaşlarına"
+        },
+        {
+          "id": "o4",
+          "text": "Öğretmenlere ve öğrencilere"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-248",
+      "question": "Her sabah inen iki meleği anlatan hadiste, hayra harcayan kişi için nasıl dua edilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Harcadığının yalnız mirasla dönmesi için"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız borçlarının ertelenmesi için"
+        },
+        {
+          "id": "o3",
+          "text": "Harcadığının yalnız aynı gün dönmesi için"
+        },
+        {
+          "id": "o4",
+          "text": "Harcadığının yerine yenisinin verilmesi için"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Harcamasının ertelenmesi için"
+        },
+        {
+          "id": "o2",
+          "text": "Harcamasının gizli kalması için"
+        },
+        {
+          "id": "o3",
+          "text": "Harcadığını geri istemesi için"
+        },
+        {
+          "id": "o4",
+          "text": "Harcadığının yerine yenisinin verilmesi için"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-251",
+      "question": "“Sizin en hayırlınız” diye başlayan hadiste, insanın iyiliği özellikle kimlere davranışıyla ilişkilendirilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız kendisini övenlere"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece zenginlere"
+        },
+        {
+          "id": "o3",
+          "text": "Ailesine"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız yabancı yöneticilere"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Komşularına"
+        },
+        {
+          "id": "o2",
+          "text": "İş arkadaşlarına"
+        },
+        {
+          "id": "o3",
+          "text": "Ailesine"
+        },
+        {
+          "id": "o4",
+          "text": "Yol arkadaşlarına"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-253",
+      "question": "Eş seçiminde mal, soy ve güzellikle birlikte dinî yaşayışı anan hadis hangi niteliği önceler?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Dindarlığı"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız servet miktarını"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız aile şöhretini"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece dış görünüşü"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Dindarlığı"
+        },
+        {
+          "id": "o2",
+          "text": "Servetini"
+        },
+        {
+          "id": "o3",
+          "text": "Soyunu"
+        },
+        {
+          "id": "o4",
+          "text": "Güzelliğini"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-255",
+      "question": "Eşlerin mahrem hayatına ait sırları başkalarına anlatmak hadiste hangi açıdan ele alınır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her zaman övülen bir sohbet konusu olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız maddî kazanç meselesi olarak"
+        },
+        {
+          "id": "o3",
+          "text": "Ağır bir emanet sorumluluğunun ihlâli olarak"
+        },
+        {
+          "id": "o4",
+          "text": "Hiçbir sorumluluğu olmayan bir davranış olarak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Eşler arasında çözülmesi gereken basit bir görüş ayrılığı olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Mahkeme dışındaki her konuşmadan bağımsız bir alışkanlık olarak"
+        },
+        {
+          "id": "o3",
+          "text": "Ağır bir emanet sorumluluğunun ihlâli olarak"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece maddî zarar doğarsa sorumluluk getiren iş olarak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-258",
+      "question": "“Her doğan fıtrat üzere doğar” hadisinin devamında çocuğun dinî yönelişinde kimlerin etkisi özellikle anılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız uzak yöneticilerin"
+        },
+        {
+          "id": "o2",
+          "text": "Anne ve babasının"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece hiç tanımadığı yolcuların"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız ticaret yaptığı kişilerin"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hocalarının"
+        },
+        {
+          "id": "o2",
+          "text": "Anne ve babasının"
+        },
+        {
+          "id": "o3",
+          "text": "Yöneticilerinin"
+        },
+        {
+          "id": "o4",
+          "text": "Komşularının"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-259",
+      "question": "Kadınların mescide gelmesi konusunda Hz. Peygamber’in açık talimatı hangisidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her mescidin kadınlara kapatılması"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız akraba olanların gelmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Gelmelerine engel olunmaması"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün mescitlerin evlere çevrilmesi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Mescid yerine her durumda evde toplanmaları"
+        },
+        {
+          "id": "o2",
+          "text": "Girişin evli kadınlarla sınırlanması"
+        },
+        {
+          "id": "o3",
+          "text": "Gelmelerine engel olunmaması"
+        },
+        {
+          "id": "o4",
+          "text": "Mescide girişin belli mevsime bağlanması"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-269",
+      "question": "Devlet otoritesini koruyucu sayan hadiste bu görevin iyi yerine getirilmesi neye bağlanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Allah’tan sakınmayı emredip adaletle hükmetmeye"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız yönetim süresinin uzunluğuna"
+        },
+        {
+          "id": "o3",
+          "text": "Görevi mutlaka mirasla devralmaya"
+        },
+        {
+          "id": "o4",
+          "text": "Otoritenin yalnız savaşta kullanılmasına"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Allah’tan sakınmayı emredip adaletle hükmetmeye"
+        },
+        {
+          "id": "o2",
+          "text": "Görev süresini uzatmaya"
+        },
+        {
+          "id": "o3",
+          "text": "Sarayın giderlerini azaltmaya"
+        },
+        {
+          "id": "o4",
+          "text": "Yönetimi soyuna devretmeye"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-271",
+      "question": "Alışverişin bereketini anlatan hadiste tarafların hangi davranışı övülür?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kusuru satıştan sonra açıklamaları"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız fiyatı yüksek tutmaları"
+        },
+        {
+          "id": "o3",
+          "text": "Doğru söyleyip malın kusurunu açıklamaları"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece tanıdıklarına satış yapmaları"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Fiyatı değiştirmeden korumaları"
+        },
+        {
+          "id": "o2",
+          "text": "Satıştan sonra hediye vermeleri"
+        },
+        {
+          "id": "o3",
+          "text": "Doğru söyleyip malın kusurunu açıklamaları"
+        },
+        {
+          "id": "o4",
+          "text": "Alışverişi erken saatte yapmaları"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-274",
+      "question": "Hz. Dâvûd’u da örnek veren hadiste hangi kazanç biçimi özellikle övülür?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız miras geliriyle geçinmek"
+        },
+        {
+          "id": "o2",
+          "text": "Kendi elinin emeğiyle kazanmak"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece talep etmeden gelen yardımla yaşamak"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız sermaye koyup başkasının işini beklemek"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Miras malını koruyarak geçinmek"
+        },
+        {
+          "id": "o2",
+          "text": "Kendi elinin emeğiyle kazanmak"
+        },
+        {
+          "id": "o3",
+          "text": "Hediye edilen malı değerlendirerek kazanmak"
+        },
+        {
+          "id": "o4",
+          "text": "Kira gelirini biriktirerek geçinmek"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-279",
+      "question": "Allah yolunda ölmenin kefâret oluşunu anlatan hadiste özellikle hangi yükümlülük istisna edilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız yolculukta kaçırılan nâfileler"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız savaşta bozulan adak"
+        },
+        {
+          "id": "o3",
+          "text": "Borç"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız yapılan kasıtsız yemin"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Sefer adağı"
+        },
+        {
+          "id": "o2",
+          "text": "Yarım kalan nâfile"
+        },
+        {
+          "id": "o3",
+          "text": "Borç"
+        },
+        {
+          "id": "o4",
+          "text": "Ziyaret sözü"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-285",
+      "question": "Su kaynaklarıyla ilgili öğütte ihtiyaç fazlası su için hangi tutum benimsenir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "İhtiyaç duyanlardan esirgenmemesi"
+        },
+        {
+          "id": "o2",
+          "text": "Hiç kimseye verilmeden akıtılması"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece en yüksek fiyatı verene ayrılması"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün komşuların kullanımının yasaklanması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "İhtiyaç duyanlardan esirgenmemesi"
+        },
+        {
+          "id": "o2",
+          "text": "Havuzda sonraki yıl için saklanması"
+        },
+        {
+          "id": "o3",
+          "text": "Kullanımın ücret sırasına bağlanması"
+        },
+        {
+          "id": "o4",
+          "text": "Önce bütün tarlaların sulanmasına ayrılması"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-293",
+      "question": "Kulun Allah’a yaklaşmasını anlatan kudsî hadiste nâfilelerden önce hangi ibadetler öncelenir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Allah’ın farz kıldıkları"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece belli gecelerde yapılanlar"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız toplu yapılan zikirler"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece uzun yolculuk gerektirenler"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Allah’ın farz kıldıkları"
+        },
+        {
+          "id": "o2",
+          "text": "Düzenli gece namazları"
+        },
+        {
+          "id": "o3",
+          "text": "Gönüllü oruçlar"
+        },
+        {
+          "id": "o4",
+          "text": "Gizli verilen sadakalar"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-298",
+      "question": "Abdestte uzuvların yıkanışını anlatan hadiste suyla birlikte neyin giderilmesi tasvir edilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız yolculuktan kalan yorgunluğun"
+        },
+        {
+          "id": "o2",
+          "text": "O uzuvlarla işlenen günahların"
+        },
+        {
+          "id": "o3",
+          "text": "Kişinin gelecekteki her imtihanının"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız bedendeki görünen kirin"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Yolculuğun yorgunluğunun"
+        },
+        {
+          "id": "o2",
+          "text": "O uzuvlarla işlenen günahların"
+        },
+        {
+          "id": "o3",
+          "text": "Kalpteki bütün şüphelerin"
+        },
+        {
+          "id": "o4",
+          "text": "Kişinin gelecekteki sorumluluklarının"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-305",
+      "question": "İmamın namazı gereksiz uzatmaması öğüdünde cemaatin hangi üyeleri özellikle hatırlatılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Hasta, zayıf ve yaşlı olanlar"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız yolculuktan dönenler"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız henüz evlenmemiş olanlar"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece imamın yakınları"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hasta, zayıf ve yaşlı olanlar"
+        },
+        {
+          "id": "o2",
+          "text": "Yolcular ve misafirler"
+        },
+        {
+          "id": "o3",
+          "text": "İlk kez cemaate gelenler"
+        },
+        {
+          "id": "o4",
+          "text": "Farklı dili konuşanlar"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-316",
+      "question": "Camiye gitmek için atılan adımlar hadiste nasıl değerlendirilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız mescitte kalınan süreyle değerlendirilir"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız imamın attığı adımlar sevap sayılır"
+        },
+        {
+          "id": "o3",
+          "text": "Adımlar ancak gidiş geliş sayısı eşitse değer taşır"
+        },
+        {
+          "id": "o4",
+          "text": "Sevap yazılmasına ve günahın silinmesine vesile olarak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Yalnız varışta edilen duanın ön hazırlığı olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Sevabın yalnız camideki bekleyişe bağlı olmasıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece toplu gidildiğinde değer taşımasıyla"
+        },
+        {
+          "id": "o4",
+          "text": "Sevap yazılmasına ve günahın silinmesine vesile olarak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-323",
+      "question": "Kendisi veya bebeği için zarar endişesi taşıyan hamile ve emziren kadınlara hangi kolaylık tanınmıştır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün ramazan boyunca mutlak oruç yasağı"
+        },
+        {
+          "id": "o2",
+          "text": "Orucun sadece gece tutulabilmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Ramazan orucunu o sırada tutmama ruhsatı"
+        },
+        {
+          "id": "o4",
+          "text": "Yolcu olmadıkça hiçbir kolaylık bulunmaması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Orucun fidye verilerek her durumda sona erdirilmesi"
+        },
+        {
+          "id": "o2",
+          "text": "Oruç saatlerinin kendilerince azaltılması"
+        },
+        {
+          "id": "o3",
+          "text": "Ramazan orucunu o sırada tutmama ruhsatı"
+        },
+        {
+          "id": "o4",
+          "text": "Oruç günlerinin haftada bire indirilmesi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-general-329",
+      "question": "Bağış parasını eksiksiz ve gönül hoşluğuyla yerine ulaştıran güvenilir veznedar nasıl değerlendirilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Sadaka sevabına ortak olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Sevabın yalnız para sahibine ait olduğu"
+        },
+        {
+          "id": "o3",
+          "text": "Veznedarın ancak kendi parasını verirse ecir alacağı"
+        },
+        {
+          "id": "o4",
+          "text": "Sevabın yalnız verilen paranın çokluğuyla oluştuğu"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Sadaka sevabına ortak olarak"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece malı saklayan kişi olarak"
+        },
+        {
+          "id": "o3",
+          "text": "Bağış sahibinden farklı olarak yalnız ücretle karşılık bulan"
+        },
+        {
+          "id": "o4",
+          "text": "Bağış yerine mesai süresiyle değerlendirilen"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-005",
+      "question": "TDV’ye göre İbnü’l-Heysem’in optik araştırmalarını güçlü kılan yöntem birleşimi hangisidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Matematiksel çözümleme ile fiziksel deney"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız eski eserleri ezberleme ve aktarma"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız gözlemci çoğunluğun kanaatine uyma"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece felsefî benzetmelerden sonuç çıkarma"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Matematiksel çözümleme ile fiziksel deney"
+        },
+        {
+          "id": "o2",
+          "text": "Felsefî çıkarım ile sözlü tanıklık"
+        },
+        {
+          "id": "o3",
+          "text": "Önceki görüşleri derleme ile sınıflandırma"
+        },
+        {
+          "id": "o4",
+          "text": "Astrolojik yorum ile sayı sembolizmi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-007",
+      "question": "Hârizmî’nin cebir kitabının bilim tarihindeki etkisi TDV’de nasıl açıklanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün eski matematik yöntemlerinin ilk kez icat edilmesiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Matematikte gözlem ve uygulamanın tamamen bırakılmasıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Cebrin hesap ilminden ayrılıp bir ilim adı olarak belirginleşmesiyle"
+        },
+        {
+          "id": "o4",
+          "text": "Astronomik cetvellerin yerini şiir kitaplarının almasıyla"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Cebrin astronominin bir alt başlığına dönüşmesiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Cebir sembollerinin kitapta bugünkü biçimiyle kurulmasıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Cebrin hesap ilminden ayrılıp bir ilim adı olarak belirginleşmesiyle"
+        },
+        {
+          "id": "o4",
+          "text": "Geometrik ispatların cebirden çıkarılmasıyla"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-008",
+      "question": "Uluğ Bey’in kendi astronomi cetvelini hazırlamasının gerekçelerinden biri neydi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Gözlem yerine yalnız şiirle hesap yapmak"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün takvimlerin aynı başlangıcı kullanmasını yasaklamak"
+        },
+        {
+          "id": "o3",
+          "text": "Gökyüzü ölçümlerini bilim alanından çıkarmak"
+        },
+        {
+          "id": "o4",
+          "text": "Önceki cetvelde gördüğü ölçüm hatalarını gidermek"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Ölçümlerde tek bir takvimi kullanmak"
+        },
+        {
+          "id": "o2",
+          "text": "Farklı şehirlerin adlarını değiştirmek"
+        },
+        {
+          "id": "o3",
+          "text": "Yıldızları yalnız parlaklıklarına göre dizmek"
+        },
+        {
+          "id": "o4",
+          "text": "Önceki cetvelde gördüğü ölçüm hatalarını gidermek"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-009",
+      "question": "el-Kānûn fi’t-tıbb’ın “el-Külliyât” başlıklı ilk kitabı öncelikle neyi ele alır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Tıbbın genel ilkelerini"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız bileşik ilaç reçetelerini"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız ilaçların alfabetik adlarını"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız tek tek organ hastalıklarını"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Tıbbın genel ilkelerini"
+        },
+        {
+          "id": "o2",
+          "text": "Bileşik ilâçların hazırlanışını"
+        },
+        {
+          "id": "o3",
+          "text": "Organlara özgü hastalıkları"
+        },
+        {
+          "id": "o4",
+          "text": "Tek ilâçların özelliklerini"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-011",
+      "question": "Bîrûnî’nin zümrütle ilgili deneyleri, hangi yaygın inanışı sınamak içindi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Zümrüdün bütün taşlardan ağır olduğu inanışını"
+        },
+        {
+          "id": "o2",
+          "text": "Zümrüdün yalnız suda oluştuğu inanışını"
+        },
+        {
+          "id": "o3",
+          "text": "Zümrüdün yılanın gözünü kör ettiği inanışını"
+        },
+        {
+          "id": "o4",
+          "text": "Zümrüdün gün ışığında eridiği inanışını"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Zümrüdün zehri tamamen emdiği inanışını"
+        },
+        {
+          "id": "o2",
+          "text": "Zümrüdün ateşte rengini yitirmediği inanışını"
+        },
+        {
+          "id": "o3",
+          "text": "Zümrüdün yılanın gözünü kör ettiği inanışını"
+        },
+        {
+          "id": "o4",
+          "text": "Zümrüdün demiri çektiği inanışını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-012",
+      "question": "Kutadgu Bilig’in temel öğretici amacı TDV’de nasıl ifade edilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız savaşlarda kullanılan silâhları tanıtmak"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız bitkilerin tıbbî özelliklerini sıralamak"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız eski seferlerin güzergâhını kaydetmek"
+        },
+        {
+          "id": "o4",
+          "text": "İnsana iki dünyada mutluluğa götüren yolu göstermek"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Tarihî olayları yıl sırasıyla kaydetmek"
+        },
+        {
+          "id": "o2",
+          "text": "Yöneticilerin soy ağacını çıkarmak"
+        },
+        {
+          "id": "o3",
+          "text": "Dinî metinlerin dil kurallarını açıklamak"
+        },
+        {
+          "id": "o4",
+          "text": "İnsana iki dünyada mutluluğa götüren yolu göstermek"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-016",
+      "question": "Edirne II. Bayezid Külliyesi için ikinci vakfiyenin Türkçe yazılmasının belirtilen amacı nedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yapının önceki bütün kayıtlarını geçersiz kılmak"
+        },
+        {
+          "id": "o2",
+          "text": "Külliyedeki dinî eğitimleri sona erdirmek"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız yabancı seyyahların okumasını sağlamak"
+        },
+        {
+          "id": "o4",
+          "text": "Vakıf görevlilerinin metni daha iyi anlaması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Belgeyi hükümdara sunmayı kolaylaştırmak"
+        },
+        {
+          "id": "o2",
+          "text": "Arapça nüshayı eğitimde kullanmamak"
+        },
+        {
+          "id": "o3",
+          "text": "Vakfa yeni bir kuruluş tarihi vermek"
+        },
+        {
+          "id": "o4",
+          "text": "Vakıf görevlilerinin metni daha iyi anlaması"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-019",
+      "question": "Süleymaniye Camii’nin merkezî kubbesini taşıyan ana düzen hangisidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız avludaki ince ahşap direkler"
+        },
+        {
+          "id": "o2",
+          "text": "Kubbeye hiçbir yerden değmeyen duvarlar"
+        },
+        {
+          "id": "o3",
+          "text": "Dört büyük taşıyıcı ve bunların arasındaki kemerler"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız çatıdaki kurşun levhalar"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Altı ayak üzerinde altıgen düzen"
+        },
+        {
+          "id": "o2",
+          "text": "Sekiz sütun üzerinde sekizgen düzen"
+        },
+        {
+          "id": "o3",
+          "text": "Dört büyük taşıyıcı ve bunların arasındaki kemerler"
+        },
+        {
+          "id": "o4",
+          "text": "İki büyük ayak üzerinde enine kemerler"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-026",
+      "question": "Klasik minyatürün TDV’de belirtilen görsel özelliklerinden biri hangisidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Uzaklaştıkça küçülen tek bakışlı perspektifi zorunlu tutması"
+        },
+        {
+          "id": "o2",
+          "text": "Işık-gölge oyunlarıyla derinlik kurmaması"
+        },
+        {
+          "id": "o3",
+          "text": "Bütün nesneleri yalnız siyah çizgilerle göstermesi"
+        },
+        {
+          "id": "o4",
+          "text": "Figürleri yalnız yüksek kabartma olarak işlemesi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Tek bakışlı perspektifle uzak nesneleri küçültmesi"
+        },
+        {
+          "id": "o2",
+          "text": "Işık-gölge oyunlarıyla derinlik kurmaması"
+        },
+        {
+          "id": "o3",
+          "text": "Yağlı boyayla saydam katmanlar kurması"
+        },
+        {
+          "id": "o4",
+          "text": "Kabartmalı figürlerle hacim vermesi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-032",
+      "question": "Revakların sıcak iklimlerde kullanımını açıklayan temel işlev nedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Suyu depolayan kapalı bir hazne oluşturmak"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız güvenlik için gözetleme yüksekliği sağlamak"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız kitapların saklandığı kapalı odalar oluşturmak"
+        },
+        {
+          "id": "o4",
+          "text": "Güneşten korunmuş gölgeli alan sağlamak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Avlunun ortasında su depolamak"
+        },
+        {
+          "id": "o2",
+          "text": "Yapıya gözetleme yüksekliği kazandırmak"
+        },
+        {
+          "id": "o3",
+          "text": "Kitapları kapalı bölmelerde saklamak"
+        },
+        {
+          "id": "o4",
+          "text": "Güneşten korunmuş gölgeli alan sağlamak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-060",
+      "question": "Karaviyyîn Camii’nin tarihindeki cuma hutbeleri TDV’de hangi siyasî işleve de bağlanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Şehirdeki bütün ticaretin durdurulmasına"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün medreselerin kapatılmasına"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız saray eğlencelerinin duyurulmasına"
+        },
+        {
+          "id": "o4",
+          "text": "Hâkimiyetin ilânına ve hükümet tebliğlerine"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Şehrin pazar fiyatlarının belirlenmesine"
+        },
+        {
+          "id": "o2",
+          "text": "Askerî eğitimlerin düzenlenmesine"
+        },
+        {
+          "id": "o3",
+          "text": "Vakıf arsalarının dağıtılmasına"
+        },
+        {
+          "id": "o4",
+          "text": "Hâkimiyetin ilânına ve hükümet tebliğlerine"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-062",
+      "question": "Emeviyye Camii’nin ünlü mozaiklerinde hangi tasvirler yer alır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız hükümdar portreleri"
+        },
+        {
+          "id": "o2",
+          "text": "Bitkisel ve geometrik motiflerle şehir ve bina tasvirleri"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız deniz savaşları"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız hayvan avı sahneleri"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hükümdar ve ordu portreleri"
+        },
+        {
+          "id": "o2",
+          "text": "Bitkisel ve geometrik motiflerle şehir ve bina tasvirleri"
+        },
+        {
+          "id": "o3",
+          "text": "Av ve savaş sahneleri"
+        },
+        {
+          "id": "o4",
+          "text": "Deniz canlıları ve gemi tasvirleri"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-063",
+      "question": "Emeviyye Camii avlusundaki Kubbetü’l-hazne hangi gelirlerin korunmasında kullanılmıştır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız kervan yolcularının alışveriş paralarının"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız bütün ülkenin savaş vergilerinin"
+        },
+        {
+          "id": "o3",
+          "text": "Camiye ait vakıf gelirlerinin"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız saray atölyelerinin ücretlerinin"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Merkezî devlet hazinesinin"
+        },
+        {
+          "id": "o2",
+          "text": "Askerî birliğin maaşlarının"
+        },
+        {
+          "id": "o3",
+          "text": "Camiye ait vakıf gelirlerinin"
+        },
+        {
+          "id": "o4",
+          "text": "Tüccar loncalarının sermayesinin"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-064",
+      "question": "Emeviyye Camii’nin ana ibadet mekânındaki neflerin düzeni nasıldır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün nefler tek merkezli daireler oluşturur"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız tek koridor vardır"
+        },
+        {
+          "id": "o3",
+          "text": "Bütün nefler avlunun dışında kalır"
+        },
+        {
+          "id": "o4",
+          "text": "Kıbleye paralel üç nefi ortadan daha geniş dikey bir nef keser"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kıbleye dik uzanan eşit genişlikte beş nef"
+        },
+        {
+          "id": "o2",
+          "text": "Kıbleye paralel iki nefi kesen dar bir nef"
+        },
+        {
+          "id": "o3",
+          "text": "Merkezî kubbe çevresinde dairesel nefler"
+        },
+        {
+          "id": "o4",
+          "text": "Kıbleye paralel üç nefi ortadan daha geniş dikey bir nef keser"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-065",
+      "question": "Kurtuba Ulucamii’nin II. Hakem döneminde yeniden genişletilmesinin temel sebebi neydi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Artan şehir nüfusuna yeterli alan sağlamak"
+        },
+        {
+          "id": "o2",
+          "text": "Yapıyı bütünüyle askerî kaleye çevirmek"
+        },
+        {
+          "id": "o3",
+          "text": "Caminin bütün ibadet alanlarını kaldırmak"
+        },
+        {
+          "id": "o4",
+          "text": "Şehrin tamamını caminin avlusuna taşımak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Artan şehir nüfusuna yeterli alan sağlamak"
+        },
+        {
+          "id": "o2",
+          "text": "Depremde yıkılan bölümün yeniden kurulması"
+        },
+        {
+          "id": "o3",
+          "text": "Kıble yönünün yeniden belirlenmesi"
+        },
+        {
+          "id": "o4",
+          "text": "Eski planın bir medreseye dönüştürülmesi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-067",
+      "question": "Kurtuba Ulucamii’nin doğuya genişletilmesi neden asimetrik bir görünüm oluşturmuştur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Avlu bütünüyle kaldırıldığı için"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün sütunlar tek sıraya indirildiği için"
+        },
+        {
+          "id": "o3",
+          "text": "Mihrap yeni genişliğin ortasına taşınmadığı için"
+        },
+        {
+          "id": "o4",
+          "text": "Kıble duvarı tamamen daireye çevrildiği için"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Avlu yeni bölümün dışına alındığı için"
+        },
+        {
+          "id": "o2",
+          "text": "Minare ana eksene taşındığı için"
+        },
+        {
+          "id": "o3",
+          "text": "Mihrap yeni genişliğin ortasına taşınmadığı için"
+        },
+        {
+          "id": "o4",
+          "text": "Ana giriş kıble yönüne çevrildiği için"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-072",
+      "question": "Ezher’de öğrenciler için yapılan “revak” adlı birimler hangi açıdan normal avlu revaklarından ayrılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız askerî savunma kuleleri olmalarıyla"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece pazar tezgâhları olmalarıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Tamamının ibadet alanından uzak birer liman olmasıyla"
+        },
+        {
+          "id": "o4",
+          "text": "Öğrenci ihtiyaçlarına ayrılmış çok katlı bölümler olmalarıyla"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Yalnız revak sütunları arasında tek katlı odalar olmalarıyla"
+        },
+        {
+          "id": "o2",
+          "text": "Kütüphane ve hazine depoları olmalarıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Misafir elçilerin resmî görüşme odaları olmalarıyla"
+        },
+        {
+          "id": "o4",
+          "text": "Öğrenci ihtiyaçlarına ayrılmış çok katlı bölümler olmalarıyla"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-079",
+      "question": "Aşağı Irak köylerine gönderilen seyyar bîmâristanda kimler tedavi edilirdi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız saray mensupları"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız görevli askerler"
+        },
+        {
+          "id": "o3",
+          "text": "Müslümanlarla birlikte gayrimüslimler de"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız başşehirden gelen tüccarlar"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Saray çalışanları ve aileleri"
+        },
+        {
+          "id": "o2",
+          "text": "Ordudaki askerler ve görevliler"
+        },
+        {
+          "id": "o3",
+          "text": "Müslümanlarla birlikte gayrimüslimler de"
+        },
+        {
+          "id": "o4",
+          "text": "Vergi veren yerleşik tüccarlar"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-086",
+      "question": "Elhamra’nın kale-şehir düzenini oluşturan temel bölümler hangileridir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız üç bağımsız cami"
+        },
+        {
+          "id": "o2",
+          "text": "Saray, askerî kale ve yerleşim bölümleri"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız tek bir konut ve bağ"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız liman ve tersane"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Medrese, hastane ve çarşı bölümleri"
+        },
+        {
+          "id": "o2",
+          "text": "Saray, askerî kale ve yerleşim bölümleri"
+        },
+        {
+          "id": "o3",
+          "text": "Liman, tersane ve gümrük bölümleri"
+        },
+        {
+          "id": "o4",
+          "text": "Türbe, tekke ve kervansaray bölümleri"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-088",
+      "question": "Elhamra’nın bugünkü büyük bütününün oluşumu nasıl gerçekleşmiştir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün yapıların tek yılda bitirilmesiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız tek bir kulenin büyütülmesiyle"
+        },
+        {
+          "id": "o3",
+          "text": "İdare ve yerleşim bölümleri hiç yapılmadan"
+        },
+        {
+          "id": "o4",
+          "text": "Farklı emîrlerin yaptırdığı bölümlerin zamanla eklenmesiyle"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Tek bir emîrin bütün yapıları aynı projede bitirmesiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Bir askerî kalenin aynen saraya çevrilmesiyle"
+        },
+        {
+          "id": "o3",
+          "text": "Şehirdeki sarayların tek yapıya taşınmasıyla"
+        },
+        {
+          "id": "o4",
+          "text": "Farklı emîrlerin yaptırdığı bölümlerin zamanla eklenmesiyle"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-099",
+      "question": "Gevher Nesibe külliyesinde tıp eğitimi Gıyâsiye ve Şifâiye arasında nasıl yürütülürdü?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "İkisinde de yalnız hat eğitimiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Birinde yalnız astronomi, diğerinde musikiyle"
+        },
+        {
+          "id": "o3",
+          "text": "Gıyâsiye’de teorik, Şifâiye’de pratik eğitimle"
+        },
+        {
+          "id": "o4",
+          "text": "Tıp eğitimi yapılmadan yalnız konaklamayla"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Gıyâsiye’de pratik, Şifâiye’de teorik eğitimle"
+        },
+        {
+          "id": "o2",
+          "text": "Birinde cerrahî, diğerinde yalnız ilaç satışıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Gıyâsiye’de teorik, Şifâiye’de pratik eğitimle"
+        },
+        {
+          "id": "o4",
+          "text": "Her ikisinde teorik derslerin dışarıda verilmesiyle"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-101",
+      "question": "Şadırvanlar camiler dışında hangi tarihî yapıların avlularında da kullanılmıştır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kervansaray ve medreselerin"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız deniz fenerlerinin"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız darphânelerin"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız sur burçlarının"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kervansaray ve medreselerin"
+        },
+        {
+          "id": "o2",
+          "text": "Deniz fenerleri ve tersanelerin"
+        },
+        {
+          "id": "o3",
+          "text": "Darphâneler ve sur burçlarının"
+        },
+        {
+          "id": "o4",
+          "text": "Tabyalar ve hendeklerin"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-109",
+      "question": "Osmanlı camilerinde “hünkâr mahfili” kimlerin namaz kılmasına ayrılmıştır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Padişah ve maiyetinin"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız cenaze yıkayanların"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız kitap ciltleyenlerin"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız yolcu tüccarların"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Padişah ve maiyetinin"
+        },
+        {
+          "id": "o2",
+          "text": "Müderris ve öğrencilerin"
+        },
+        {
+          "id": "o3",
+          "text": "Müezzin ve kayyımların"
+        },
+        {
+          "id": "o4",
+          "text": "Vakıf mütevellisi ve çalışanların"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-119",
+      "question": "Genellikle iki öğün yemek veren Osmanlı imaretlerinde ramazanda nasıl bir düzen uygulanırdı?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yemek hizmeti bütün ay durdurulurdu"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız öğle yemeği verilirdi"
+        },
+        {
+          "id": "o3",
+          "text": "İki öğün birleştirilerek iftar yemeği verilirdi"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün yiyecekler para ile satılırdı"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "İftar yerine sahur yemeği verilirdi"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece yolculara kuru erzak verilirdi"
+        },
+        {
+          "id": "o3",
+          "text": "İki öğün birleştirilerek iftar yemeği verilirdi"
+        },
+        {
+          "id": "o4",
+          "text": "Gündüz öğünü yoksullar için sürdürülürdü"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-135",
+      "question": "Süleymaniye Umumi Kütüphanesi’nin oluşumunda hangi işlem belirleyici olmuştur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bütün yazmaların basılı nüshayla değiştirilmesi"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız tek bir ders kitabının çoğaltılması"
+        },
+        {
+          "id": "o3",
+          "text": "Çeşitli vakıf kütüphanelerinin koleksiyonlarının bir araya getirilmesi"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece yeni yayımlanan gazetelerin toplanması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Saray koleksiyonlarının halka devredilmesi"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız yeni basma kitapların toplanması"
+        },
+        {
+          "id": "o3",
+          "text": "Çeşitli vakıf kütüphanelerinin koleksiyonlarının bir araya getirilmesi"
+        },
+        {
+          "id": "o4",
+          "text": "Özel bir şahsın kitaplarını vakfetmesi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-137",
+      "question": "Râgıb Paşa Kütüphanesi vakfiyesinde kitapların kullanımı için hangi sınırlama yer alır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kütüphane dışına ödünç verilmemesi"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız gece okunabilmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız satılarak kullanılabilmesi"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün kitapların her yıl değiştirilmesi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kütüphane dışına ödünç verilmemesi"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız izinli öğrencilere açık olması"
+        },
+        {
+          "id": "o3",
+          "text": "Kitapların ancak kopya edilerek kullanılması"
+        },
+        {
+          "id": "o4",
+          "text": "Kitapların görevli eşliğinde eve götürülmesi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-142",
+      "question": "Cezerî, aletlerin genel tanıtımından sonra yapım bilgisini hangi sırayla verir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız aletin adı ve sahibinin unvanı"
+        },
+        {
+          "id": "o2",
+          "text": "Parçaların yapımı, montaj ve çalışma"
+        },
+        {
+          "id": "o3",
+          "text": "Önce satış bedeli, sonra vergi hesabı"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız çizimin hangi renkte olduğu"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Önce çalışma ilkesi, sonra adlandırma ve ücret"
+        },
+        {
+          "id": "o2",
+          "text": "Parçaların yapımı, montaj ve çalışma"
+        },
+        {
+          "id": "o3",
+          "text": "Önce montaj, sonra tarihçe ve malzeme fiyatı"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız aletin kullanım kuralları ve bakımı"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-146",
+      "question": "Cerrâhiyye-i İlhâniyye’nin tıp ve sanat tarihi bakımından dikkat çeken görsel özelliği nedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız yıldız haritaları içermesi"
+        },
+        {
+          "id": "o2",
+          "text": "Cerrahî müdahaleleri gösteren minyatürler içermesi"
+        },
+        {
+          "id": "o3",
+          "text": "Bütün sayfalarının yazısız olması"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız bitki adlarını sıralaması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Anatomiye ait mum kalıpları içermesi"
+        },
+        {
+          "id": "o2",
+          "text": "Cerrahî müdahaleleri gösteren minyatürler içermesi"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız tıbbî bitki desenleri içermesi"
+        },
+        {
+          "id": "o4",
+          "text": "Cerrahların mühür ve tuğralarını içermesi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-151",
+      "question": "Takıyyüddin, aritmetik hesaplarında altmışlı kesirler yerine hangi sistemi kullanmıştır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız Romen rakamlarını"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız ikili sayıları"
+        },
+        {
+          "id": "o3",
+          "text": "Ondalık kesirleri"
+        },
+        {
+          "id": "o4",
+          "text": "Kesirsiz tahminleri"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "On ikili kesirleri"
+        },
+        {
+          "id": "o2",
+          "text": "İkili sayı sistemini"
+        },
+        {
+          "id": "o3",
+          "text": "Ondalık kesirleri"
+        },
+        {
+          "id": "o4",
+          "text": "Altmışlı kesirlerin aynısını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-152",
+      "question": "Takıyyüddin’in astronomik gözlem saatlerinin hangi özelliği zamanın hassas ölçümüne katkı sağlardı?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız güneşin gölgesini kullanmaları"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece saat başlarını bildirmeleri"
+        },
+        {
+          "id": "o3",
+          "text": "Ayın evrelerini temel almaları"
+        },
+        {
+          "id": "o4",
+          "text": "Dakikayla birlikte saniyeyi göstermeleri"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Güneşin mevsimsel yüksekliğini ölçmeleri"
+        },
+        {
+          "id": "o2",
+          "text": "Sabit yıldızları sınıflandırmaları"
+        },
+        {
+          "id": "o3",
+          "text": "Ayın evrelerini kaydetmeleri"
+        },
+        {
+          "id": "o4",
+          "text": "Dakikayla birlikte saniyeyi göstermeleri"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-157",
+      "question": "Benî Mûsâ’ya nispet edilen eserlerin hangi kardeşçe yazıldığı konusunda TDV hangi durumu belirtir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her eserin bireysel yazarı kesin biçimde belirlenememektedir"
+        },
+        {
+          "id": "o2",
+          "text": "Hepsini yalnız Hasan’ın yazdığı kesindir"
+        },
+        {
+          "id": "o3",
+          "text": "Üç kardeşin hiç eser yazmadığı kesindir"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün kitapların yalnız şiir olduğu bilinmektedir"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Her eserin bireysel yazarı kesin biçimde belirlenememektedir"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün eserlerin yalnız Ahmed’e ait olduğunun kanıtlandığını"
+        },
+        {
+          "id": "o3",
+          "text": "Her eserin üç kardeşçe ortak imzalandığını"
+        },
+        {
+          "id": "o4",
+          "text": "Eserlerin yalnız Muhammed’in ders notu olduğunu"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-162",
+      "question": "Selçuklu kervansaraylarında yolcuların binek hayvanları için hangi hizmetler bulunabilirdi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız savaş eğitimi"
+        },
+        {
+          "id": "o2",
+          "text": "Yem, nalbant ve hayvan bakımı"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece saraya ait atların satışı"
+        },
+        {
+          "id": "o4",
+          "text": "Hayvanların barındırılmasının yasaklanması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Bineklerin ticaret için açık artırması"
+        },
+        {
+          "id": "o2",
+          "text": "Yem, nalbant ve hayvan bakımı"
+        },
+        {
+          "id": "o3",
+          "text": "Hayvanların yarış için eğitimi"
+        },
+        {
+          "id": "o4",
+          "text": "Seferlerde kullanılmak üzere satın alınması"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-177",
+      "question": "Çakma-kabartma kündekârîyi gerçek kündekârîden ayıran uygulama hangisidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Levha üzerindeki kabartmalar arasına çıtaların çakılması"
+        },
+        {
+          "id": "o2",
+          "text": "Bütün parçaların yalnız geçmeyle birleştirilmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Yüzeyin yalnız oyularak geometrik görünüm verilmesi"
+        },
+        {
+          "id": "o4",
+          "text": "Geometrik çıtaların desensiz bir yüzeye yapıştırılması"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Levha üzerindeki kabartmalar arasına çıtaların çakılması"
+        },
+        {
+          "id": "o2",
+          "text": "Parçaların zıvana geçmelerle bağımsız birleştirilmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Geometrik örgünün tek levha üzerinde oyulması"
+        },
+        {
+          "id": "o4",
+          "text": "Desensiz levhaya geometrik çıtalar yapıştırılması"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-178",
+      "question": "Kündekârî bezemeye cami içinde özellikle hangi ahşap unsurlarda rastlanır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız kurşun kubbe kaplamalarında"
+        },
+        {
+          "id": "o2",
+          "text": "Kapı kanatları ve minberlerde"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız taş minare şerefelerinde"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece çini duvar levhalarında"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kurşun kubbe örtülerinde"
+        },
+        {
+          "id": "o2",
+          "text": "Kapı kanatları ve minberlerde"
+        },
+        {
+          "id": "o3",
+          "text": "Taş şerefe korkuluklarında"
+        },
+        {
+          "id": "o4",
+          "text": "Çini mihrap yüzeylerinde"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-182",
+      "question": "Camilerin yanında kurulan vakıf arastalarının ekonomik amaçlarından biri neydi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız askerî eğitim vermek"
+        },
+        {
+          "id": "o2",
+          "text": "Vakıf eserine gelir sağlamak"
+        },
+        {
+          "id": "o3",
+          "text": "Mahkeme kararlarını yazmak"
+        },
+        {
+          "id": "o4",
+          "text": "Bütün dükkânları ücretsiz depo yapmak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Külliyedeki görevlilere konut sağlamak"
+        },
+        {
+          "id": "o2",
+          "text": "Vakıf eserine gelir sağlamak"
+        },
+        {
+          "id": "o3",
+          "text": "Vakıf mahkemesinin duruşmalarını barındırmak"
+        },
+        {
+          "id": "o4",
+          "text": "Öğrencilerin dersliklerini genişletmek"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-185",
+      "question": "Osmanlı bedestenlerinde ticareti yapılan mallar arasında özellikle hangileri öne çıkardı?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Mücevher ve değerli kumaşlar"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız taze sebzeler"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız hayvan yemi"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece yakacak odun"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Mücevher ve değerli kumaşlar"
+        },
+        {
+          "id": "o2",
+          "text": "Taze sebze ve meyveler"
+        },
+        {
+          "id": "o3",
+          "text": "Tahıl ve hayvan yemleri"
+        },
+        {
+          "id": "o4",
+          "text": "Odun ve kömür"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-187",
+      "question": "Osmanlı şehrindeki dükkân ve ticaret hanlarının bedesten çevresinde gelişmesi onun hangi rolünü gösterir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Şehrin yalnız askerî merkezi olmasını"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece bir mezarlık yapısı olmasını"
+        },
+        {
+          "id": "o3",
+          "text": "Ticarî bölgenin çekirdeği olmasını"
+        },
+        {
+          "id": "o4",
+          "text": "Tarım alanlarını sulamasını"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Askerî sevkiyat merkezi olmasını"
+        },
+        {
+          "id": "o2",
+          "text": "Ziraî üretim bölgesi olmasını"
+        },
+        {
+          "id": "o3",
+          "text": "Ticarî bölgenin çekirdeği olmasını"
+        },
+        {
+          "id": "o4",
+          "text": "Su dağıtım merkezi olmasını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-190",
+      "question": "Un kapanı tüccarlarının “yazıcı” adlı yardımcıları üretim bölgelerine hangi görevle gönderilirdi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız mezar kitâbesi hazırlamak"
+        },
+        {
+          "id": "o2",
+          "text": "Hububat satın alıp şehre sevk etmek"
+        },
+        {
+          "id": "o3",
+          "text": "Kervansaraylarda imamlık yapmak"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece gemileri onarmak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hububat depolarının mimari planını çizmek"
+        },
+        {
+          "id": "o2",
+          "text": "Hububat satın alıp şehre sevk etmek"
+        },
+        {
+          "id": "o3",
+          "text": "Çiftçiler arasında arazi davalarını çözmek"
+        },
+        {
+          "id": "o4",
+          "text": "Köylerdeki vergi borçlarını hükme bağlamak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-195",
+      "question": "Kırkçeşme isâle hattında su hangi tür yollardan taşınırdı?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Her yerde üstü açık hendeklerden"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız taşınabilir tulumlardan"
+        },
+        {
+          "id": "o3",
+          "text": "Üstü kapalı kanal ve galerilerden"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece su çarklarının kovalarından"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Üstü açık toprak hendeklerden"
+        },
+        {
+          "id": "o2",
+          "text": "Taşınabilir tulumların dizildiği güzergâhlardan"
+        },
+        {
+          "id": "o3",
+          "text": "Üstü kapalı kanal ve galerilerden"
+        },
+        {
+          "id": "o4",
+          "text": "Su çarklarının birbirine aktaran kovalarından"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-210",
+      "question": "Bir kâğıdın iki yüzüne de elle yazı yazılacaksa mühreleme nasıl yapılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız kenarlar mührelenir"
+        },
+        {
+          "id": "o2",
+          "text": "Her iki yüz ayrı ayrı mührelenir"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece bir yüz mührelenir"
+        },
+        {
+          "id": "o4",
+          "text": "Kâğıdın ortası delinerek mührelenir"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Önce yalnız kenarları mührelenir"
+        },
+        {
+          "id": "o2",
+          "text": "Her iki yüz ayrı ayrı mührelenir"
+        },
+        {
+          "id": "o3",
+          "text": "İki yüz birlikte tek basınçla işlenir"
+        },
+        {
+          "id": "o4",
+          "text": "Önce sayfa ortası delinerek işlenir"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-219",
+      "question": "Harîrî’nin el-Makāmât’ının erken minyatürleri, sanat tarihi açısından hangi bilgiyi de belgelemektedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız gezegenlerin hareketini"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız cami vakitlerini"
+        },
+        {
+          "id": "o3",
+          "text": "Dönemin sosyal hayatını ve farklı toplulukların görünümünü"
+        },
+        {
+          "id": "o4",
+          "text": "Henüz yapılmamış fotoğrafları"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Dönemin gezegen hesaplarını"
+        },
+        {
+          "id": "o2",
+          "text": "Tıbbî bitkilerin ayırt edici özelliklerini"
+        },
+        {
+          "id": "o3",
+          "text": "Dönemin sosyal hayatını ve farklı toplulukların görünümünü"
+        },
+        {
+          "id": "o4",
+          "text": "Deniz yolculuğu rotalarını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-231",
+      "question": "Selçuklu ve Osmanlı sağlık tarihinde “miskinler tekkesi” veya cüzzamhâne hangi hastaların bakımına ayrılmıştır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız göz hastalarının"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece kırık tedavisi görenlerin"
+        },
+        {
+          "id": "o3",
+          "text": "Cüzzam hastalarının"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız çocuk hastaların"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Göz hastalarının"
+        },
+        {
+          "id": "o2",
+          "text": "Kemik kırığı bulunanların"
+        },
+        {
+          "id": "o3",
+          "text": "Cüzzam hastalarının"
+        },
+        {
+          "id": "o4",
+          "text": "Salgın ateşli hastaların"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-246",
+      "question": "Kâtib Çelebi, benzer ad taşıyan kitapların karıştırılmasını önlemek için gördüğü eserlerden hangi bilgiyi aktarır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız müstensihin imzasını"
+        },
+        {
+          "id": "o2",
+          "text": "Başlangıç cümlelerini"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız cildin bezeme üslûbunu"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız son sahibinin adını"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kullanılan kâğıdın ölçüsünü"
+        },
+        {
+          "id": "o2",
+          "text": "Başlangıç cümlelerini"
+        },
+        {
+          "id": "o3",
+          "text": "Cildin bezeme üslûbunu"
+        },
+        {
+          "id": "o4",
+          "text": "Son sahibinin adını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-252",
+      "question": "Düzlem usturlapta gökyüzünün bilgisi alete hangi yolla aktarılır?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yıldızların gerçek boyutta çizilmesiyle"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız ay adlarının sıralanmasıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece bir pusula iğnesiyle"
+        },
+        {
+          "id": "o4",
+          "text": "Gökyüzünün düzlem üzerine izdüşümüyle"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Yıldızların aralıklarını eşit göstermekle"
+        },
+        {
+          "id": "o2",
+          "text": "Gök cisimlerini pusula iğnesine bağlamakla"
+        },
+        {
+          "id": "o3",
+          "text": "Ayın konumunu takvim yapraklarıyla göstermekle"
+        },
+        {
+          "id": "o4",
+          "text": "Gökyüzünün düzlem üzerine izdüşümüyle"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-253",
+      "question": "İslâm astronomlarının geliştirdiği evrensel usturlapların önemli üstünlüğü nedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Tek bir enlemle sınırlı olmamaları"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız tek bir sabit yıldız için yapılmaları"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece ekvatora yakın yerlerde çalışmaları"
+        },
+        {
+          "id": "o4",
+          "text": "Her kullanımda yeni bir enlem levhası gerektirmeleri"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Tek bir enlemle sınırlı olmamaları"
+        },
+        {
+          "id": "o2",
+          "text": "Enlem levhalarının her hesapta değiştirilmesi"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece kutup yıldızına göre ölçüm yapmaları"
+        },
+        {
+          "id": "o4",
+          "text": "Bir şehre özel sabit levhalarla çalışmaları"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-263",
+      "question": "Edirnekârî eserlerin çoğunda sanatçı imzası bulunmaması hangi üretim biçimiyle ilişkilendirilir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Eserlerin yalnız hattatlarca yapılmasıyla"
+        },
+        {
+          "id": "o2",
+          "text": "Ustaların eserlerini yalnız sözlü olarak tanıtmasıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Atölyelerde kolektif çalışılmasıyla"
+        },
+        {
+          "id": "o4",
+          "text": "Bezemelerin bütünüyle kalıpta üretilmesiyle"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Eserlerin kalıpla tek aşamada basılmasıyla"
+        },
+        {
+          "id": "o2",
+          "text": "Sanatçı adının yalnız vakfiyeye yazılmasıyla"
+        },
+        {
+          "id": "o3",
+          "text": "Atölyelerde kolektif çalışılmasıyla"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız saray için üretilmeleriyle"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-265",
+      "question": "Buhurdanın ayaklı yapılmasının temel pratik sebeplerinden biri nedir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Ateşin ısısını konulduğu yüzeyden uzak tutmak"
+        },
+        {
+          "id": "o2",
+          "text": "Kabın içindeki közü bütünüyle söndürmek"
+        },
+        {
+          "id": "o3",
+          "text": "Dumanın yalnız aşağıdan çıkmasını sağlamak"
+        },
+        {
+          "id": "o4",
+          "text": "İçerideki tütsüyü havadan tamamen ayırmak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Ateşin ısısını konulduğu yüzeyden uzak tutmak"
+        },
+        {
+          "id": "o2",
+          "text": "Közün daha çabuk sönmesini sağlamak"
+        },
+        {
+          "id": "o3",
+          "text": "Dumanın aşağı yönelmesini sağlamak"
+        },
+        {
+          "id": "o4",
+          "text": "Tütsüyü hava almadan saklamak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-268",
+      "question": "Hankahlar, ibadet ve barınmanın yanında hangi eğitim alanıyla özellikle ilişkilidir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız denizcilik eğitimi"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece darphâne işçiliği"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız askerî silah yapımı"
+        },
+        {
+          "id": "o4",
+          "text": "Tasavvuf eğitimi"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Denizcilik eğitimi"
+        },
+        {
+          "id": "o2",
+          "text": "Maden işçiliği eğitimi"
+        },
+        {
+          "id": "o3",
+          "text": "Askerî silah eğitimi"
+        },
+        {
+          "id": "o4",
+          "text": "Tasavvuf eğitimi"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-269",
+      "question": "TDV’nin hankah tarihine dair verdiği örnekler kadınlar hakkında hangisini gösterir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kadınların da hankah kurup sohbet yürüttüğünü"
+        },
+        {
+          "id": "o2",
+          "text": "Hankahlara hiçbir zaman kadınların katkı vermediğini"
+        },
+        {
+          "id": "o3",
+          "text": "Bütün hankahların yalnız kadınlara ait olduğunu"
+        },
+        {
+          "id": "o4",
+          "text": "Kadın hankahlarının sadece modern çağda bulunduğunu"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kadınların da hankah kurup sohbet yürüttüğünü"
+        },
+        {
+          "id": "o2",
+          "text": "Kadınların yalnız misafir olarak kaldığını"
+        },
+        {
+          "id": "o3",
+          "text": "Kadınların sadece dışarıdan bağış verebildiğini"
+        },
+        {
+          "id": "o4",
+          "text": "Kadınlara ait örneklerin modern dönemde başladığını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-270",
+      "question": "Bazı hankahların hizmetlerinden, dervişler dışında kimler de yararlanırdı?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız hükümdarın muhafızları"
+        },
+        {
+          "id": "o2",
+          "text": "Yolcular ve hastalar"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece yabancı elçiler"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız darphâne görevlileri"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hükümdarın muhafızları"
+        },
+        {
+          "id": "o2",
+          "text": "Yolcular ve hastalar"
+        },
+        {
+          "id": "o3",
+          "text": "Darphâne görevlileri"
+        },
+        {
+          "id": "o4",
+          "text": "Yabancı elçiler"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-289",
+      "question": "Gazi Hüsrev Bey Kütüphanesi’nde değerli yazmalar yanında hangi belge türleri de bulunur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Şer‘iyye sicilleri ve vakfiyeler"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız müzik notaları ve besteler"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız seyir defterleri ve liman cetvelleri"
+        },
+        {
+          "id": "o4",
+          "text": "Yalnız askerî haritalar ve sefer çizimleri"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Şer‘iyye sicilleri ve vakfiyeler"
+        },
+        {
+          "id": "o2",
+          "text": "Seyir defterleri ve liman cetvelleri"
+        },
+        {
+          "id": "o3",
+          "text": "Müzik notaları ve beste mecmuaları"
+        },
+        {
+          "id": "o4",
+          "text": "Askerî haritalar ve sefer krokileri"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-300",
+      "question": "İbnü’l-Baytâr’ın uzun araştırma yolculuklarının temel amacı neydi?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Bitki adlarını yalnız eski kitaplardan kopyalamak"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız hükümdarların bahçelerini süslemek"
+        },
+        {
+          "id": "o3",
+          "text": "Bitki resimlerini sadece saray duvarlarına işlemek"
+        },
+        {
+          "id": "o4",
+          "text": "Bitkileri yerinde inceleyip malzeme toplamak"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Bitki resimlerini saraylar için toplamak"
+        },
+        {
+          "id": "o2",
+          "text": "Bitki adlarını şiir içinde açıklamak"
+        },
+        {
+          "id": "o3",
+          "text": "Tıbbî eserlerin yazılarını çoğaltmak"
+        },
+        {
+          "id": "o4",
+          "text": "Bitkileri yerinde inceleyip malzeme toplamak"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-305",
+      "question": "İbnü’l-Avvâm önceki tarım kaynaklarından derlediklerine neyi eklemiştir?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kendi gözlemlerini"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız bitki adlarının şiirli karşılıklarını"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız hükümdarların bahçe masraflarını"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece ürünlerin pazar fiyatlarını"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kendi gözlemlerini"
+        },
+        {
+          "id": "o2",
+          "text": "Ürünlerin yalnız pazar fiyatlarını"
+        },
+        {
+          "id": "o3",
+          "text": "Hükümdarların bahçe masraflarını"
+        },
+        {
+          "id": "o4",
+          "text": "Bitki adlarının şiirli karşılıklarını"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-313",
+      "question": "Na‘tın nazım biçimi hakkında hangi ifade doğrudur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Kaside, gazel ve mesnevi gibi farklı biçimlerde yazılabilir"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız tek beyit olabilir"
+        },
+        {
+          "id": "o3",
+          "text": "Mutlaka yalnız rubâî olur"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece manzum olmayan düzyazıdır"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Kaside, gazel ve mesnevi gibi farklı biçimlerde yazılabilir"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız rubâî biçiminde yazılır"
+        },
+        {
+          "id": "o3",
+          "text": "Daima tek beyit hâlinde yazılır"
+        },
+        {
+          "id": "o4",
+          "text": "Sadece manzum olmayan düzyazıdır"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-316",
+      "question": "Hilye levhasının “göbek” veya “gövde” denen merkez bölümünde genellikle ne bulunur?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız hattatın mezar tarihi"
+        },
+        {
+          "id": "o2",
+          "text": "Sadece vakfın gider cetveli"
+        },
+        {
+          "id": "o3",
+          "text": "Yalnız eserin satış fiyatı"
+        },
+        {
+          "id": "o4",
+          "text": "Hilye metninin büyük bölümü"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Hattatın imzası ve yazılış tarihi"
+        },
+        {
+          "id": "o2",
+          "text": "Vakfın gider cetveli"
+        },
+        {
+          "id": "o3",
+          "text": "Kitabın ilk sahibinin künyesi"
+        },
+        {
+          "id": "o4",
+          "text": "Hilye metninin büyük bölümü"
+        }
+      ],
+      "keyUnchanged": true
+    },
+    {
+      "id": "new74-history-320",
+      "question": "Türk dinî mûsikisinde münâcâtlar ramazanda temcîdlerle birlikte ne zaman okunurdu?",
+      "before": [
+        {
+          "id": "o1",
+          "text": "Yalnız öğle namazından sonra"
+        },
+        {
+          "id": "o2",
+          "text": "Yalnız ikindi ezanında"
+        },
+        {
+          "id": "o3",
+          "text": "Sadece bayram hutbesinde"
+        },
+        {
+          "id": "o4",
+          "text": "Sabah ezanından önce"
+        }
+      ],
+      "after": [
+        {
+          "id": "o1",
+          "text": "Öğle namazının ardından"
+        },
+        {
+          "id": "o2",
+          "text": "İkindi ezanından önce"
+        },
+        {
+          "id": "o3",
+          "text": "Yatsı hutbesinin ardından"
+        },
+        {
+          "id": "o4",
+          "text": "Sabah ezanından önce"
+        }
+      ],
+      "keyUnchanged": true
+    }
+  ]
+}

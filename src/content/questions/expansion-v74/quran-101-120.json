@@ -260,11 +260,11 @@
     "options": [
       {
         "id": "o1",
-        "text": "Kendisine verilen rızkı yalnız saklar"
+        "text": "Malını yalnız korumaya ayırır"
       },
       {
         "id": "o2",
-        "text": "Her yardım için kat kat karşılık ister"
+        "text": "Alacakları karşılığında kullanır"
       },
       {
         "id": "o3",
@@ -272,7 +272,7 @@
       },
       {
         "id": "o4",
-        "text": "Sadece borç vererek yardım eder"
+        "text": "Sadece kendi ailesine harcar"
       }
     ],
     "correctOptionId": "o3",
@@ -386,7 +386,7 @@
     "options": [
       {
         "id": "o1",
-        "text": "Birinin gizli, diğerinin herkesçe görülür olması"
+        "text": "Birinin gizli, diğerinin açık olması"
       },
       {
         "id": "o2",
@@ -394,11 +394,11 @@
       },
       {
         "id": "o3",
-        "text": "Birinin az, diğerinin yalnız zenginlere verilmesi"
+        "text": "Birinin mal, diğerinin bilgi olması"
       },
       {
         "id": "o4",
-        "text": "Birinin yalnız gençlere, diğerinin yaşlılara ait olması"
+        "text": "Birinin geçmişe, diğerinin geleceğe ait olması"
       }
     ],
     "correctOptionId": "o2",
@@ -428,11 +428,11 @@
     "options": [
       {
         "id": "o1",
-        "text": "Kur’an’ın yalnız şiirden oluştuğu"
+        "text": "Kitabın bir şiir olduğu"
       },
       {
         "id": "o2",
-        "text": "Meleklerin insanlardan ders aldığı"
+        "text": "Mesajı yabancı birinin yazdığı"
       },
       {
         "id": "o3",
@@ -440,7 +440,7 @@
       },
       {
         "id": "o4",
-        "text": "Önceki bütün kitapların kaybolduğu"
+        "text": "Rivayetin atalarından geldiği"
       }
     ],
     "correctOptionId": "o3",
@@ -516,15 +516,15 @@
       },
       {
         "id": "o2",
-        "text": "Her durumda geçerli içtihat yapmakla"
+        "text": "Başkalarının fetvasını nakletmekle"
       },
       {
         "id": "o3",
-        "text": "Sadece dil alıştırması yapmakla"
+        "text": "Dilde alışılmış deyimleri açıklamakla"
       },
       {
         "id": "o4",
-        "text": "Bütün borçları ödemiş olmakla"
+        "text": "Konuyu şahitle doğrulamakla"
       }
     ],
     "correctOptionId": "o1",
@@ -675,7 +675,7 @@
     "id": "new74-quran-117",
     "version": 1,
     "categoryId": "quran",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "İsrâ 17/44’e göre insan, varlıkların Allah’ı tesbihi konusunda neyi yapamaz?",
     "options": [
       {
@@ -722,7 +722,7 @@
     "options": [
       {
         "id": "o1",
-        "text": "Herkesin zorunlu olarak aynı tarzda davranmasıyla"
+        "text": "Yaşadığı yerin iklimiyle"
       },
       {
         "id": "o2",
@@ -730,11 +730,11 @@
       },
       {
         "id": "o3",
-        "text": "Bütün davranışların yalnız servetle belirlenmesiyle"
+        "text": "Sahip olduğu servetiyle"
       },
       {
         "id": "o4",
-        "text": "Herkesin yalnız yaşına göre davranmasıyla"
+        "text": "Ailesinin mesleğiyle"
       }
     ],
     "correctOptionId": "o2",
@@ -759,16 +759,16 @@
     "id": "new74-quran-119",
     "version": 1,
     "categoryId": "quran",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "İsrâ 17/85’te ruhla ilgili soruya cevap verilirken insanın bilgisi nasıl nitelenir?",
     "options": [
       {
         "id": "o1",
-        "text": "Bütün ayrıntıları kuşatan bilgi"
+        "text": "Gizli fakat sınırsız bilgi"
       },
       {
         "id": "o2",
-        "text": "Hiçbir yolla artmayan bilgi"
+        "text": "Yalnız rüyada edinilen bilgi"
       },
       {
         "id": "o3",
@@ -776,7 +776,7 @@
       },
       {
         "id": "o4",
-        "text": "Bütün insanlarda eşit bulunan bilgi"
+        "text": "Aynı ölçüde herkese verilmiş bilgi"
       }
     ],
     "correctOptionId": "o3",

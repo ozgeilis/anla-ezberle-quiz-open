@@ -54,21 +54,21 @@ function complete(s: Session) {
   }
   return finishSession(s);
 }
-test("six broad categories partition all 1500; difficulty cards use exact counts and never include the child overlap", () => {
+test("six broad categories partition all 3000; difficulty cards use exact counts and never include the child overlap", () => {
   const cards = categoryOptions(bank);
   assert.deepEqual(
     cards.map((c) => c.count),
-    [213, 313, 271, 161, 260, 282],
+    [627, 526, 409, 337, 401, 700],
   );
   assert.equal(
     cards.reduce((s, c) => s + c.count, 0),
-    1500,
+    3000,
   );
   const all = playCategories.flatMap((c) =>
     categoryPool(bank, c.id).map((q) => q.id),
   );
-  assert.equal(all.length, 1500);
-  assert.equal(new Set(all).size, 1500);
+  assert.equal(all.length, 3000);
+  assert.equal(new Set(all).size, 3000);
   for (const d of ["easy", "medium", "hard"] as const) {
     const options = categoryOptions(bank, d);
     assert.equal(
@@ -288,7 +288,7 @@ test("daily seed and old v1/v2 saves, scores, XP and mastery survive without mig
       difficulty: "medium",
     }),
   );
-  assert.equal(current.learningTopicVersion, 3);
+  assert.equal(current.learningTopicVersion, 4);
   assert(validRecord(current));
   const mixed = [
     ...data.games,
@@ -319,7 +319,7 @@ test("forged scopes/versions and premature child play are rejected; six special-
   );
   for (const patch of [
     { playCategory: "fikih" },
-    { playCategoryVersion: 3 },
+    { playCategoryVersion: 2 },
     { playCategory: "children" },
     { learningTopic: "peygamberler" },
     { replay: false },

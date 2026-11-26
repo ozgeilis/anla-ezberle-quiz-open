@@ -124,8 +124,11 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
       "utf8",
     ),
   );
-  const nextAsync = buildOnlineSeedSql(buildOnlineContentRows());
-  const nextLive = liveContentSql();
+  const nextAsync = buildOnlineSeedSql(
+    buildOnlineContentRows(canonicalBankForExport(73), 73),
+    73,
+  );
+  const nextLive = liveContentSql(73);
   writeFileSync(resolve(output, "async-v73.private.sql"), nextAsync, {
     mode: 0o600,
   });
@@ -142,6 +145,36 @@ DO $$ DECLARE f record; BEGIN FOR f IN SELECT p.oid::regprocedure signature FROM
     sql(readFileSync("supabase/tests/canonical_bank_v73.sql", "utf8")),
   );
   console.log(sql(contract));
+  const v73Before = sql(
+    "SELECT md5(string_agg(to_jsonb(m)::text,',' ORDER BY m.id)) FROM quiz_private.online_bank_members m WHERE dataset='bank-v73';",
+  );
+  sql(
+    readFileSync(
+      "supabase/migrations/20261126074656_canonical_bank_v74.sql",
+      "utf8",
+    ),
+  );
+  const v74Async = buildOnlineSeedSql(buildOnlineContentRows());
+  const v74Live = liveContentSql();
+  writeFileSync(resolve(output, "async-v74.private.sql"), v74Async, {
+    mode: 0o600,
+  });
+  writeFileSync(resolve(output, "live-v74.private.sql"), v74Live, {
+    mode: 0o600,
+  });
+  sql(v74Async);
+  sql(v74Live);
+  sql(v74Async);
+  if (
+    sql(
+      "SELECT md5(string_agg(to_jsonb(m)::text,',' ORDER BY m.id)) FROM quiz_private.online_bank_members m WHERE dataset='bank-v73';",
+    ) !== v73Before
+  )
+    throw Error("v74 staging rewrote historical v73 membership");
+  console.log(sql(contract.replaceAll("'bank-v72'", "'bank-v74'")));
+  console.log(
+    sql(readFileSync("supabase/tests/canonical_bank_v74.sql", "utf8")),
+  );
   for (const file of [
     "async_recent_questions.sql",
     "live_recent_questions.sql",

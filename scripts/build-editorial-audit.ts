@@ -102,7 +102,7 @@ const order = [
 const records = order.map((id, i) => {
   const old = original.get(id)!,
     candidate = next.get(id)!;
-  const category = playCategories.find((c) => belongsToPlayCategory(id, c.id));
+  const category = playCategories.find((c) => belongsToPlayCategory(id, c.id, 2));
   if (!category) throw Error(`Missing current category: ${id}`);
   return {
     sequence: i + 1,

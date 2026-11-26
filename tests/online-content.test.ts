@@ -49,11 +49,11 @@ test("export CLI runs in this CommonJS project, creates private SQL once and ref
   }
 });
 
-test("online content staging uses exactly 1500 source-linked, conditionally owner-approved questions", () => {
+test("online content staging uses exactly 3000 source-linked, conditionally owner-approved questions", () => {
   const rows = buildOnlineContentRows();
-  assert.equal(rows.length, 1500);
-  assert.equal(new Set(rows.map((q) => q.id)).size, 1500);
-  assert.deepEqual([...new Set(rows.map((q) => q.contentScope))], ["bank-v73"]);
+  assert.equal(rows.length, 3000);
+  assert.equal(new Set(rows.map((q) => q.id)).size, 3000);
+  assert.deepEqual([...new Set(rows.map((q) => q.contentScope))], ["bank-v74"]);
   assert.equal(rows.filter((q) => q.categoryId === "quran").length > 100, true);
   assert.equal(
     rows.filter((q) => q.categoryId === "prophets").length > 100,
@@ -78,12 +78,12 @@ test("online content staging uses exactly 1500 source-linked, conditionally owne
 
 test("private seed is replayable, guards immutable conflicts and never activates online content", () => {
   const sql = buildOnlineSeedSql(buildOnlineContentRows());
-  assert.ok(sql.startsWith("-- v73"));
+  assert.ok(sql.startsWith("-- v74"));
   assert.ok(sql.includes("BEGIN;"));
   assert.ok(sql.includes("COMMIT;"));
   assert.ok(sql.includes("ON CONFLICT DO NOTHING"));
   assert.ok(sql.includes("Immutable question/version conflict"));
-  assert.ok(sql.includes("bank-v73"));
+  assert.ok(sql.includes("bank-v74"));
   assert.equal(
     sql.includes("UPDATE quiz_private.online_content_config"),
     false,
@@ -94,18 +94,18 @@ test("private seed is replayable, guards immutable conflicts and never activates
 
 test("online importer rejects incomplete or unsigned question collections", () => {
   assert.throws(
-    () => buildOnlineContentRows(canonicalQuestions.slice(0, 1499)),
-    /exactly 1500/,
+    () => buildOnlineContentRows(canonicalQuestions.slice(0, 2999)),
+    /exactly 3000/,
   );
   assert.throws(
-    () => buildOnlineContentRows([...canonicalQuestions.slice(0, 1499), canonicalQuestions[0]!]),
+    () => buildOnlineContentRows([...canonicalQuestions.slice(0, 2999), canonicalQuestions[0]!]),
     /Duplicate/,
   );
   assert.throws(
     () =>
       buildOnlineContentRows([
-        ...canonicalQuestions.slice(0, 1499),
-        { ...canonicalQuestions[1499]!, reviewStatus: "draft" },
+        ...canonicalQuestions.slice(0, 2999),
+        { ...canonicalQuestions[2999]!, reviewStatus: "draft" },
       ]),
     /Source/,
   );

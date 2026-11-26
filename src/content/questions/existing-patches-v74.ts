@@ -21,11 +21,13 @@ export const existingQuestionPatches = [
   },
   {
     id: "q44-leyl-12",
-    reason: "Stem asks who, while every answer option names an action.",
+    reason:
+      "Stem asks who, while every answer option names an action. Full-option difficulty review: Standard intermediate concept; not specialist detail.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "Leyl 92/12; physical PDF page 647",
     question: "Leyl 92/12’de Allah’a ait olduğu bildirilen hangi eylemdir?",
+    difficulty: "medium",
   },
   {
     id: "q65-isra-30",
@@ -48,30 +50,33 @@ export const existingQuestionPatches = [
   {
     id: "q47-bedir-006",
     reason:
-      "The stated reconnaissance assignment concerned the caravan, not the previously unknown army.",
+      "The stated reconnaissance assignment concerned the caravan, not the previously unknown army. Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
     source: "https://islamansiklopedisi.org.tr/bedir-gazvesi",
     locator:
       "Paragraph beginning Öte yandan Bedir yakınında; following paragraph explains they did not yet know of the army.",
     question:
       "Bedir kuyularına kervan hakkında bilgi toplamak üzere gönderilenler arasında hangisi vardır?",
+    difficulty: "hard",
   },
   {
     id: "q71-kurban-kalb",
     reason:
-      "General wording about worship purpose overlaps with sincerity; source gives a precise legal intention requirement.",
+      "General wording about worship purpose overlaps with sincerity; source gives a precise legal intention requirement. Full-option difficulty review: Basic widely taught concept or familiar story.",
     source: "https://islamansiklopedisi.org.tr/kurban#2-islamda-kurban",
     locator: "Geçerlilik Şartları, point 6 (niyet)",
     question:
       "Kurbanın geçerliliğinde ibadet kastı taşımasını sağlayan ve kalpte bulunması yeterli olan şart hangisidir?",
+    difficulty: "easy",
   },
   {
     id: "q62-arafat-arefe",
     reason:
-      "The day-nine answer is sound, but the explanation states a noon start without qualifying the legal school; TDV Vakfe records Hanbeli dawn and majority noon.",
+      "The day-nine answer is sound, but the explanation states a noon start without qualifying the legal school; TDV Vakfe records Hanbeli dawn and majority noon. Full-option difficulty review: Basic widely taught concept or familiar story.",
     source: "https://islamansiklopedisi.org.tr/vakfe",
     locator: "Zamanı: 108–109",
     explanation:
       "Arafat vakfesi arefe günü, yani zilhiccenin dokuzuncu günü başlar. Başlangıç saati çoğunluğa göre zeval, Hanbelîlere göre fecirdir; vakfe süresi bayramın ilk günü fecre kadar devam eder.",
+    difficulty: "easy",
   },
   {
     id: "q68-nesai-vefat",
@@ -136,8 +141,8 @@ export const existingQuestionPatches = [
   {
     id: "q45-cezeri-saat",
     reason:
-      "The contents of the first section of a named technical treatise require knowledge beyond the basic figure and field.",
-    difficulty: "medium",
+      "The contents of the first section of a named technical treatise require knowledge beyond the basic figure and field. Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
   },
   {
     id: "q48-esma-001",
@@ -239,8 +244,8 @@ export const existingQuestionPatches = [
   {
     id: "q69-enesbmalik-anne",
     reason:
-      "Identifying a named companion’s brother is detailed biography rather than introductory Islamic knowledge.",
-    difficulty: "medium",
+      "Identifying a named companion’s brother is detailed biography rather than introductory Islamic knowledge. Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
   },
   {
     id: "q49-taberi-009",
@@ -251,7 +256,7 @@ export const existingQuestionPatches = [
   {
     id: "q71-sure-114",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve the original historical ID/key/option IDs. The earlier same-fact record remains.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve the original historical ID/key/option IDs. The earlier same-fact record remains. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "13/17; physical PDF 262",
@@ -268,22 +273,22 @@ export const existingQuestionPatches = [
       },
       {
         id: "o2",
-        text: "Köpük kalır, faydalı olan hemen yok olur",
+        text: "Köpük akar, faydalı olan da onunla sürüklenir",
       },
       {
         id: "o3",
-        text: "Köpük ile faydalı olan aynı değerde gösterilir",
+        text: "Köpük dibe çöker, faydalı olan buharlaşır",
       },
       {
         id: "o4",
-        text: "Yalnız köpüğün kalıcı olduğu anlatılır",
+        text: "Köpük bereketi, kalan madde ise zararı temsil eder",
       },
     ],
   },
   {
     id: "q71-mushaf-ilk",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve the original historical ID/key/option IDs. The earlier same-fact record remains.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve the original historical ID/key/option IDs. The earlier same-fact record remains. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "16/78; physical PDF 288",
@@ -300,15 +305,15 @@ export const existingQuestionPatches = [
       },
       {
         id: "o2",
-        text: "Yalnız mal, mülk ve saltanat",
+        text: "Eller, ayaklar ve dil",
       },
       {
         id: "o3",
-        text: "Yalnız soy, unvan ve makam",
+        text: "Kemikler, kaslar ve damarlar",
       },
       {
         id: "o4",
-        text: "Yalnız yol, ev ve binek",
+        text: "Saçlar, tırnaklar ve dişler",
       },
     ],
   },
@@ -442,7 +447,7 @@ export const existingQuestionPatches = [
   {
     id: "v11-general-004",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and the full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and the full historical v73 record. Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
     source: "https://islamansiklopedisi.org.tr/teheccud",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 71,96-100 (basılı sayfa numarası değildir)",
@@ -450,7 +455,7 @@ export const existingQuestionPatches = [
       "Yatsı ile fecr-i sâdık arasında bir süre uyuyup kalkınca kılınan nâfile namaz hangi adla anılır?",
     explanation:
       "TDV, teheccüdü bir miktar uyuduktan sonra kılınan gece namazı olarak açıklar; genel anlamdaki gece namazlarıyla ilişkisini de ele alır.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-tahajjud-after-sleep",
     options: [
       {
@@ -729,7 +734,7 @@ export const existingQuestionPatches = [
   {
     id: "q57-oruclft",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/farz",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 98-100 (basılı sayfa numarası değildir)",
@@ -742,7 +747,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Fiilin yalnız gece veya gündüz yapılması",
+        text: "Delilin Kur’an veya hadis metninde yer alması",
       },
       {
         id: "o2",
@@ -750,18 +755,18 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Yalnız erkek veya kadın tarafından yapılması",
+        text: "Hükmün bireysel veya toplumsal faydayla ilgili olması",
       },
       {
         id: "o4",
-        text: "Yalnız ferden veya cemaatle yapılması",
+        text: "Fiilin bir kez veya tekrarlanarak yapılması",
       },
     ],
   },
   {
     id: "v12-general-005",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
     source: "https://islamansiklopedisi.org.tr/fidye",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
@@ -769,7 +774,7 @@ export const existingQuestionPatches = [
       "Meşrû mazeretle yerine getirilemeyen bazı ibadetler için ödenen malî bedel hangi terimle anılır?",
     explanation:
       "Fidye, belirli ibadetlerin eda edilememesi veya bazı kusurların telâfisiyle ilgili malî yükümlülüktür; her oruç tutmayana bedel ödeme seçeneği vermez.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-fidya-compensatory-financial-duty",
     options: [
       {
@@ -793,7 +798,7 @@ export const existingQuestionPatches = [
   {
     id: "q68-sitte-anlam",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Basic widely taught concept or familiar story.",
     source: "https://islamansiklopedisi.org.tr/kefaret#2-fikih",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 220-227 (basılı sayfa numarası değildir)",
@@ -801,7 +806,7 @@ export const existingQuestionPatches = [
       "Belirli dinî yasakların ihlâli üzerine telâfi ve bağışlanma amacıyla yüklenilen malî veya bedenî ibadetlere ne denir?",
     explanation:
       "Kefâretin sebep ve yerine getirilme yolları dinî delillerle belirlenir; kişi istediği bir ödemeyi her ihlâle karşılık sayamaz.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-kaffarah-specified-expiatory-worship",
     options: [
       {
@@ -916,14 +921,14 @@ export const existingQuestionPatches = [
   {
     id: "q58-tecvid-ana",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Basic widely taught concept or familiar story.",
     source: "https://islamansiklopedisi.org.tr/salvele",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 70-71 (basılı sayfa numarası değildir)",
     question:
       "Hz. Peygamber’e salât ve selâm getirmeyi anlatan adlardan biri hangisidir?",
     explanation: "Salvele, Hz. Peygamber’i salât ve selâmla anmakla ilgilidir.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-salwala-greeting-prophet",
     options: [
       {
@@ -1011,7 +1016,7 @@ export const existingQuestionPatches = [
   {
     id: "q60-suffe-misafir",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Standard intermediate concept; not specialist detail.",
     source: "https://islamansiklopedisi.org.tr/abdest",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 97 (basılı sayfa numarası değildir)",
@@ -1019,7 +1024,7 @@ export const existingQuestionPatches = [
       "Farsça kökenli abdest kelimesindeki “âb” ve “dest” sırasıyla ne demektir?",
     explanation:
       "Abdest kelimesi Farsçada su ve el anlamındaki iki unsurun birleşmesidir.",
-    difficulty: "hard",
+    difficulty: "medium",
     conceptGroup: "v74-abdest-persian-water-hand-components",
     options: [
       {
@@ -1169,7 +1174,7 @@ export const existingQuestionPatches = [
   {
     id: "q49-ihya-017",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/aksirma",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 99 (basılı sayfa numarası değildir)",
@@ -1182,7 +1187,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Yüzü yanındaki kişiye çevirmek",
+        text: "Başını geriye doğru kaldırmak",
       },
       {
         id: "o2",
@@ -1190,18 +1195,18 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Mümkün olduğunca etrafa üflemek",
+        text: "Burnunu ve ağzını suyla yıkamak",
       },
       {
         id: "o4",
-        text: "Aksıranı susturmak için bağırmak",
+        text: "Konuşmaya kısa bir ara vermek",
       },
     ],
   },
   {
     id: "q57-nuhalay",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "11/41; physical PDF 237",
@@ -1218,15 +1223,15 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Yüklerin denize atılmasını",
+        text: "Yolculuğun ertelenmesini",
       },
       {
         id: "o2",
-        text: "Geminin terk edilmesini",
+        text: "Rotanın kıyıdan sürdürülmesini",
       },
       {
         id: "o3",
-        text: "Yolcuların birbirinden saklanmasını",
+        text: "Her durakta yüklerin sayılmasını",
       },
     ],
   },
@@ -1265,7 +1270,7 @@ export const existingQuestionPatches = [
   {
     id: "v13-prophets-004",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "20/39; physical PDF 330",
@@ -1273,7 +1278,7 @@ export const existingQuestionPatches = [
       "Tâhâ 20/39’da Mûsâ’nın ilâhî gözetimde yetişmesi anlatılırken üzerine ne bırakıldığı söylenir?",
     explanation:
       "Mûsâ’ya kendisinden bir sevgi verildiği, ilâhî gözetim altında yetiştirildiği bildirilir.",
-    difficulty: "hard",
+    difficulty: "medium",
     conceptGroup: "v74-musa-divinely-bestowed-love",
     options: [
       {
@@ -1329,19 +1334,19 @@ export const existingQuestionPatches = [
   {
     id: "v11-prophets-006",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "26/63; physical PDF 389",
     question: "Şuarâ 26/63’te deniz yarıldığında her parça neye benzetilir?",
     explanation:
       "Denizin ikiye ayrılan parçaları büyük birer dağ gibi tasvir edilir.",
-    difficulty: "hard",
+    difficulty: "medium",
     conceptGroup: "v74-parted-sea-pieces-mountains",
     options: [
       {
         id: "o1",
-        text: "İnce bir ipe",
+        text: "Yüksek bir sura",
       },
       {
         id: "o2",
@@ -1349,11 +1354,11 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Küçük bir yaprağa",
+        text: "Kabarık bir buluta",
       },
       {
         id: "o4",
-        text: "Boş bir kaba",
+        text: "Geniş bir vadiye",
       },
     ],
   },
@@ -1392,7 +1397,7 @@ export const existingQuestionPatches = [
   {
     id: "v11-prophets-010",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "37/145; physical PDF 475",
@@ -1405,15 +1410,15 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Hiç yorulmamış olduğu",
+        text: "Sağlığına bütünüyle kavuşmuş olduğu",
       },
       {
         id: "o3",
-        text: "Yeni doğmuş olduğu",
+        text: "Eskisinden daha güçlü olduğu",
       },
       {
         id: "o4",
-        text: "Bedeni taşlaşmış olduğu",
+        text: "Derin bir uykuda olduğu",
       },
       {
         id: "o2",
@@ -1424,7 +1429,7 @@ export const existingQuestionPatches = [
   {
     id: "v11-prophets-012",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "3/49; physical PDF 63",
@@ -1432,7 +1437,7 @@ export const existingQuestionPatches = [
       "Âl-i İmrân 3/49’da Îsâ, insanların evleri hakkında hangi bilgiyi haber vereceğini söyler?",
     explanation:
       "Îsâ’nın işaretleri arasında evlerde yenen ve biriktirilen şeyleri haber vermesi de anılır.",
-    difficulty: "hard",
+    difficulty: "medium",
     conceptGroup: "v74-jesus-informs-food-stores",
     options: [
       {
@@ -1456,7 +1461,7 @@ export const existingQuestionPatches = [
   {
     id: "q61-hud-sure",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Standard intermediate concept; not specialist detail. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "11/56; physical PDF 239",
@@ -1464,7 +1469,7 @@ export const existingQuestionPatches = [
       "Hûd 11/56’da Hûd, Allah’a dayanmasını hangi genel egemenlikle birlikte açıklar?",
     explanation:
       "Hûd, kendisinin de kavminin de rabbi olan Allah’a dayandığını ve her canlının O’nun kontrolünde olduğunu bildirir.",
-    difficulty: "hard",
+    difficulty: "medium",
     conceptGroup: "v74-hud-every-creature-divine-control",
     options: [
       {
@@ -1473,15 +1478,15 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Yalnız belli bir kabilenin O’na bağlı oluşuyla",
+        text: "Dilediğine bol rızık vermesiyle",
       },
       {
         id: "o3",
-        text: "İnsanların tüm sonuçları tek başına yönetmesiyle",
+        text: "Gece ile gündüzü düzenlemesiyle",
       },
       {
         id: "o4",
-        text: "Tabiatın Allah’tan bağımsız işlemesiyle",
+        text: "Yeryüzünü insanlara yerleşim kılmasıyla",
       },
     ],
   },
@@ -1552,7 +1557,7 @@ export const existingQuestionPatches = [
   {
     id: "q57-suaybeyke",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "7/88; physical PDF 171",
@@ -1564,7 +1569,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o4",
-        text: "Derhal hükümdar seçilmekle",
+        text: "Vergilerinin artırılmasıyla",
       },
       {
         id: "o3",
@@ -1572,18 +1577,18 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Yeni bir tapınağa görevli yapılmakla",
+        text: "Pazarda ticaretten menedilmekle",
       },
       {
         id: "o2",
-        text: "Bütün mallarının iki katına çıkarılmasıyla",
+        text: "Sürülerine el konulmasıyla",
       },
     ],
   },
   {
     id: "q71-ilyas-baal",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "80/1-2; physical PDF 632",
@@ -1600,15 +1605,15 @@ export const existingQuestionPatches = [
       },
       {
         id: "o2",
-        text: "Saray görevlisi olmasıyla",
+        text: "İşitme engelli olmasıyla",
       },
       {
         id: "o3",
-        text: "Ordu kumandanı olmasıyla",
+        text: "Yürüme güçlüğü çekmesiyle",
       },
       {
         id: "o4",
-        text: "Kervan sahibi olmasıyla",
+        text: "Konuşma güçlüğü çekmesiyle",
       },
     ],
   },
@@ -1647,7 +1652,7 @@ export const existingQuestionPatches = [
   {
     id: "q61-hud-ahkaf",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "11/57; physical PDF 239",
@@ -1664,15 +1669,15 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Elçiliği bütünüyle sona erdireceği",
+        text: "Kendilerine yeni ticaret yolları açabileceği",
       },
       {
         id: "o2",
-        text: "Kendilerine sınırsız ömür vereceği",
+        text: "Ülkelerine farklı bir dil öğretebileceği",
       },
       {
         id: "o3",
-        text: "Allah’ın hükmünü onların engelleyebileceği",
+        text: "Eski yurtlarına dönmelerini isteyebileceği",
       },
     ],
   },
@@ -1711,7 +1716,7 @@ export const existingQuestionPatches = [
   {
     id: "q71-idris-sabir",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "2/31; physical PDF 11",
@@ -1723,7 +1728,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Yalnız gemi yapımının",
+        text: "Gemi yapımının",
       },
       {
         id: "o2",
@@ -1731,18 +1736,18 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Yalnız zırh örmenin",
+        text: "Zırh örmenin",
       },
       {
         id: "o4",
-        text: "Yalnız rüya yorumunun",
+        text: "Rüya yorumunun",
       },
     ],
   },
   {
     id: "v11-prophets-002",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "12/21; physical PDF 249",
@@ -1755,11 +1760,11 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o3",
-        text: "Yûsuf’u hemen sürgün etmeyi",
+        text: "Onu ailesini bulması için görevlendirmeyi",
       },
       {
         id: "o4",
-        text: "Bir deniz seferine çıkarmayı",
+        text: "Ticaret kervanının başına geçirmeyi",
       },
       {
         id: "o2",
@@ -1767,14 +1772,14 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Ailesini cezalandırmayı",
+        text: "Ona sarayda eğitim verdirmeyi",
       },
     ],
   },
   {
     id: "v11-prophets-001",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "12/18; physical PDF 249",
@@ -1782,7 +1787,7 @@ export const existingQuestionPatches = [
       "Yûsuf 12/18’de Ya‘kūb, kardeşlerin açıklamasına inanmadığında kendisine düşen tutumu nasıl belirtir?",
     explanation:
       "Ya‘kūb, nefsin kötü bir işe sürüklediğini söyler ve Allah’a sığınarak güzelce sabretmeyi dile getirir.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-yaqub-beautiful-patience-false-blood",
     options: [
       {
@@ -1870,7 +1875,7 @@ export const existingQuestionPatches = [
   {
     id: "q44-insirah-5",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "2/266; physical PDF 52",
@@ -1883,7 +1888,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o4",
-        text: "Yalnız hafif bir çiseleme",
+        text: "Şiddetli dolu fırtınası",
       },
       {
         id: "o2",
@@ -1891,11 +1896,11 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Düzenli bir sulama",
+        text: "Uzun süren kuraklık",
       },
       {
         id: "o3",
-        text: "Mevsiminde yapılan budama",
+        text: "Taşkına yol açan sel",
       },
     ],
   },
@@ -1998,7 +2003,7 @@ export const existingQuestionPatches = [
   {
     id: "q66-neml-39",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Basic widely taught concept or familiar story. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "4/4; physical PDF 84",
@@ -2006,12 +2011,12 @@ export const existingQuestionPatches = [
       "Nisâ 4/4’te kadınlara borç öder gibi verilmesi istenen malî hak hangisidir?",
     explanation:
       "Kadınların mehirlerinin kendilerine verilmesi istenir; kendi gönülleriyle bağışlamaları ayrı tutulur.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-women-mehr-right",
     options: [
       {
         id: "o3",
-        text: "Kardeşlerinin bütün mirası",
+        text: "Miras payları",
       },
       {
         id: "o4",
@@ -2019,18 +2024,18 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Her ticaretin bütün kârı",
+        text: "Çalışma ücretleri",
       },
       {
         id: "o2",
-        text: "Bütün zekât gelirleri",
+        text: "Alacaklarının faizleri",
       },
     ],
   },
   {
     id: "q66-neml-40",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "4/6; physical PDF 84,85",
@@ -2043,7 +2048,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o4",
-        text: "Mutlaka yönetici olmaları",
+        text: "Düzenli bir meslek edinmeleri",
       },
       {
         id: "o3",
@@ -2051,18 +2056,18 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Mutlaka zengin bir eş bulmaları",
+        text: "Evlilik hazırlıklarını bitirmeleri",
       },
       {
         id: "o2",
-        text: "Bir savaşa katılmaları",
+        text: "Bir okuldan mezun olmaları",
       },
     ],
   },
   {
     id: "q66-kehf-45",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "4/85; physical PDF 98",
@@ -2075,11 +2080,11 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o2",
-        text: "Yalnız kötü işte sorumluluğun kalkması",
+        text: "Sorumluluğun bütünüyle asıl işi yapana kalması",
       },
       {
         id: "o3",
-        text: "Aracı olmanın hiçbir sonuç doğurmaması",
+        text: "Aracının yalnız kendi maddî kazancından sorumlu olması",
       },
       {
         id: "o4",
@@ -2087,14 +2092,14 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Yalnız zenginlerin sorumlu sayılması",
+        text: "Aracının yalnız niyetinin dikkate alınması",
       },
     ],
   },
   {
     id: "v11-quran-002",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "4/114; physical PDF 104",
@@ -2102,7 +2107,7 @@ export const existingQuestionPatches = [
       "Nisâ 4/114’te hayır taşımayan fısıldaşmalardan hangi içerikteki konuşmalar ayrı tutulur?",
     explanation:
       "Gizli konuşmaların çoğu eleştirilirken yardım, iyilik ve barıştırma amacı taşıyanlar istisna edilir.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-private-talk-charity-good-reconciliation",
     options: [
       {
@@ -2126,7 +2131,7 @@ export const existingQuestionPatches = [
   {
     id: "q64-uhud-mekan",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/kufi",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 99,104 (basılı sayfa numarası değildir)",
@@ -2143,22 +2148,22 @@ export const existingQuestionPatches = [
       },
       {
         id: "o2",
-        text: "Yalnız yuvarlak Latin harfleri kullanması",
+        text: "Yuvarlak ve kesintisiz kavislerle kurulması",
       },
       {
         id: "o3",
-        text: "Sadece resimlerden oluşması",
+        text: "Çok eğik satırlara ve asılı harflere dayanması",
       },
       {
         id: "o4",
-        text: "Her zaman harfsiz işaretlerle yazılması",
+        text: "Üst üste sıkışan dalgalı satırlara dayanması",
       },
     ],
   },
   {
     id: "q64-uhud-yil",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/nesih--hat",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 96,105 (basılı sayfa numarası değildir)",
@@ -2170,7 +2175,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Yalnız sikke kalıplarının oyulması",
+        text: "Resmî beratların tuğralı başlıkları",
       },
       {
         id: "o2",
@@ -2178,11 +2183,11 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Yalnız muhasebe rakamlarının şifrelenmesi",
+        text: "Mâlî kayıtların özel hesap yazıları",
       },
       {
         id: "o4",
-        text: "Yalnız bina planlarının çizimi",
+        text: "Anıtsal yapılardaki iri kitâbeler",
       },
     ],
   },
@@ -2346,7 +2351,7 @@ export const existingQuestionPatches = [
   {
     id: "q58-esma-kardes",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/celi",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 96,99 (basılı sayfa numarası değildir)",
@@ -2358,11 +2363,11 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o3",
-        text: "Ayrı bir alfabenin tamamını",
+        text: "Satırların eğik yazılmasını",
       },
       {
         id: "o4",
-        text: "Yalnız kırmızı mürekkeple yazmayı",
+        text: "Harflerin harekesiz bırakılmasını",
       },
       {
         id: "o2",
@@ -2370,14 +2375,14 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Bütün harfleri ters çevirmeyi",
+        text: "Yazının çok küçük ölçüde yazılmasını",
       },
     ],
   },
   {
     id: "q58-esma-ogul",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/murekkep",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 100,102 (basılı sayfa numarası değildir)",
@@ -2390,15 +2395,15 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Kil, kireç ve zeytinyağı",
+        text: "İs, yumurta akı ve keten yağı",
       },
       {
         id: "o2",
-        text: "Balmumu, kum ve sirke",
+        text: "Mazı, demir sülfatı ve gül suyu",
       },
       {
         id: "o3",
-        text: "Tuz, şap ve gül yaprağı",
+        text: "Kök boya, şap ve sirke",
       },
       {
         id: "o4",
@@ -2409,7 +2414,7 @@ export const existingQuestionPatches = [
   {
     id: "q48-hicret-021",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/murekkep",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 100 (basılı sayfa numarası değildir)",
@@ -2424,22 +2429,22 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Kalemin ağzını kesmek",
+        text: "İs taneciklerini öğüterek küçültmek",
       },
       {
         id: "o3",
-        text: "Kâğıdı katlamak",
+        text: "İsin yağını süzerek ayırmak",
       },
       {
         id: "o4",
-        text: "Mürekkebi mutlaka kırmızı yapmak",
+        text: "Mürekkebin rengini açmak",
       },
     ],
   },
   {
     id: "q64-bedir-sefer",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/murekkep",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 98 (basılı sayfa numarası değildir)",
@@ -2451,15 +2456,15 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Yağmur suyu",
+        text: "Bacalardan çıkan kül",
       },
       {
         id: "o3",
-        text: "Mermer tozu",
+        text: "Duvarlardan dökülen kireç tozu",
       },
       {
         id: "o4",
-        text: "Kütüphane kitapları",
+        text: "Avizelerden damlayan yağ",
       },
       {
         id: "o2",
@@ -2501,7 +2506,7 @@ export const existingQuestionPatches = [
   {
     id: "q58-seleme-hud",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/kalem",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 99-100 (basılı sayfa numarası değildir)",
@@ -2514,11 +2519,11 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Cam",
+        text: "Metal",
       },
       {
         id: "o2",
-        text: "Lastik",
+        text: "Kemik",
       },
       {
         id: "o3",
@@ -2526,7 +2531,7 @@ export const existingQuestionPatches = [
       },
       {
         id: "o4",
-        text: "Alçı",
+        text: "Ahşap",
       },
     ],
   },
@@ -2564,7 +2569,7 @@ export const existingQuestionPatches = [
   {
     id: "q51-ensar-002",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Familiar worship, cultural object or standard migration purpose.",
     source: "https://islamansiklopedisi.org.tr/kalem",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 108-109 (basılı sayfa numarası değildir)",
@@ -2572,7 +2577,7 @@ export const existingQuestionPatches = [
       "Geleneksel kamış kalemi yontup açmakta kullanılan bıçak hangisidir?",
     explanation:
       "Kalemtıraş kalemin uç kısmını yontup biçimlendirmekte kullanılır.",
-    difficulty: "medium",
+    difficulty: "easy",
     conceptGroup: "v74-penknife-shaping-reed",
     options: [
       {
@@ -2596,7 +2601,7 @@ export const existingQuestionPatches = [
   {
     id: "q69-zeydbsabit-cem",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/kalem",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 110 (basılı sayfa numarası değildir)",
@@ -2612,22 +2617,22 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Kâğıdı ortadan kesmek",
+        text: "Mürekkebi kâğıttan kazıyarak silmek",
       },
       {
         id: "o2",
-        text: "Yazının rengini altına çevirmek",
+        text: "Yazı satırlarını eşit aralıklarla çizmek",
       },
       {
         id: "o4",
-        text: "Kalemi kâğıda yapıştırmak",
+        text: "Kalem ağzını aşınmaya karşı kaplamak",
       },
     ],
   },
   {
     id: "q63-selimiye-bani",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/rumi",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 72 (basılı sayfa numarası değildir)",
@@ -2640,11 +2645,11 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o3",
-        text: "Yalnız modern harflerden",
+        text: "Bitkilerin yaprak ve çiçeklerinden",
       },
       {
         id: "o4",
-        text: "Yalnız rakamlardan",
+        text: "Geometrik yıldız örgülerinden",
       },
       {
         id: "o2",
@@ -2652,19 +2657,19 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Yalnız insan portrelerinden",
+        text: "Bulut ve dalga tasvirlerinden",
       },
     ],
   },
   {
     id: "e150-history-002",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope. Specify transparent underglaze scope; TDV Çini lines 94 and 131 reread on 2026-11-26.",
     source: "https://islamansiklopedisi.org.tr/cini",
     locator:
-      "Elektronik madde, erişim anındaki metin satırları 94 (basılı sayfa numarası değildir)",
+      "Elektronik madde, erişim anındaki metin satırları 94,131 (basılı sayfa numarası değildir)",
     question:
-      "Çini levhanın üstündeki sır, fırınlama sonunda hangi temel özelliği sağlar?",
+      "Sır altı çinide fırınlanan saydam sırın levha üzerinde oluşturduğu temel katman hangisidir?",
     explanation:
       "Çini sanatında sırın erimesi, levha üzerinde koruyucu bir tabaka oluşturur.",
     difficulty: "medium",
@@ -2672,7 +2677,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Ahşap bir taşıyıcı çerçeve",
+        text: "Boyayı örten kalın ve mat bir astar",
       },
       {
         id: "o2",
@@ -2680,11 +2685,11 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Kalın bir kumaş yüzey",
+        text: "Sırlamadan önce sürülen kil tabakası",
       },
       {
         id: "o4",
-        text: "Yalnız geçici kâğıt kaplama",
+        text: "Hamura yapıştırılan renkli kâğıt",
       },
     ],
   },
@@ -2722,7 +2727,7 @@ export const existingQuestionPatches = [
   {
     id: "q63-selimiye-sehir",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/ahar",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 97-99 (basılı sayfa numarası değildir)",
@@ -2739,22 +2744,22 @@ export const existingQuestionPatches = [
       },
       {
         id: "o2",
-        text: "Mürekkebi tamamen görünmez yapar",
+        text: "Yüzeyi yazıdan sonra altınlamaya hazırlar",
       },
       {
         id: "o3",
-        text: "Kâğıdı kumaşa dönüştürür",
+        text: "Lifleri renklendirip desen oluşturur",
       },
       {
         id: "o4",
-        text: "Her yazıyı kendiliğinden altınlar",
+        text: "Kâğıdı cilt sırtına bağlamayı sağlar",
       },
     ],
   },
   {
     id: "q49-taberi-010",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/ebru",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 103 (basılı sayfa numarası değildir)",
@@ -2770,22 +2775,22 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Kâğıdı kalıcı olarak katlamak",
+        text: "Teknedeki suyu koyulaştırmak",
       },
       {
         id: "o3",
-        text: "Boyayı mutlaka siyaha çevirmek",
+        text: "Kâğıdın emiciliğini artırmak",
       },
       {
         id: "o4",
-        text: "Teknenin metalini sertleştirmek",
+        text: "Boyaların tekne dibine çökmesini sağlamak",
       },
     ],
   },
   {
     id: "q57-vakifgay",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Narrow historical, technical or biographical information. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/med",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 102 (basılı sayfa numarası değildir)",
@@ -2793,7 +2798,7 @@ export const existingQuestionPatches = [
       "Tecvidde ârız sükûnun vakf ve vasıl bakımından ayırt edici özelliği nedir?",
     explanation:
       "Ârız sükûn, kelimede durulduğunda ortaya çıkar; okuyuş birleştirildiğinde düşer.",
-    difficulty: "medium",
+    difficulty: "hard",
     conceptGroup: "v74-arid-sukun-stop-versus-connection",
     options: [
       {
@@ -2802,7 +2807,7 @@ export const existingQuestionPatches = [
       },
       {
         id: "o4",
-        text: "Yalnız harfin noktasını değiştirmesi",
+        text: "Sadece okuyuşa başlarken ortaya çıkması",
       },
       {
         id: "o2",
@@ -2810,7 +2815,7 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Her kelimeyi ayrı bir âyet yapması",
+        text: "Yalnız iki kelime bağlandığında ortaya çıkması",
       },
     ],
   },
@@ -2911,7 +2916,7 @@ export const existingQuestionPatches = [
   {
     id: "q57-ezanbilal",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/ihfa",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
@@ -2922,7 +2927,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o1",
-        text: "Nûnu her zaman elif yapmak",
+        text: "Nûnu açıkça kendi mahrecinden çıkarmak",
       },
       {
         id: "o2",
@@ -2930,11 +2935,11 @@ export const existingQuestionPatches = [
       },
       {
         id: "o3",
-        text: "Gunneyi kaldırıp tam birleştirmek",
+        text: "Nûnu sonraki harfe tamamen katmak",
       },
       {
         id: "o4",
-        text: "Her seferinde nefes alarak durmak",
+        text: "Nûnu mîm sesine çevirmek",
       },
     ],
   },
@@ -2972,7 +2977,7 @@ export const existingQuestionPatches = [
   {
     id: "q68-zayif-hasen",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Standard intermediate concept; not specialist detail.",
     source: "https://islamansiklopedisi.org.tr/iklab",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
@@ -2980,7 +2985,7 @@ export const existingQuestionPatches = [
       "İklâbda bâ harfinden önceki sâkin nûn veya tenvin hangi sese çevrilir?",
     explanation:
       "İklâb, bâdan önceki sâkin nûn veya tenvinin mîm olarak okunmasıdır.",
-    difficulty: "hard",
+    difficulty: "medium",
     conceptGroup: "v74-iqlab-nun-before-ba-to-mim",
     options: [
       {
@@ -3004,14 +3009,14 @@ export const existingQuestionPatches = [
   {
     id: "e150-general-004",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Specialised recitation technique.",
     source: "https://islamansiklopedisi.org.tr/sekte",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
     question: "Kur’an okuyuşunda sekteyi belirleyen duruş nasıl yapılır?",
     explanation:
       "Sekte, sesi kısa süre kesip nefes almadan okuyuşa devam etmektir.",
-    difficulty: "medium",
+    difficulty: "hard",
     conceptGroup: "v74-sakt-short-pause-no-breath",
     options: [
       {
@@ -3035,32 +3040,32 @@ export const existingQuestionPatches = [
   {
     id: "q58-tecvid-mahrec",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
-    source: "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
-    locator:
-      "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "33/72; physical PDF 450",
     question:
-      "Kıraatte vakfın, okuyuşa yeniden başlama niyetiyle yapılan temel işlemi nedir?",
+      "Ahzâb 33/72’de göklerin, yerin ve dağların yüklenmekten çekindiği emaneti kim yüklenir?",
     explanation:
-      "Vakf, okuyuşa devam etme niyetiyle kelime üzerinde nefes alacak kadar durmaktır.",
+      "Âyet, emanetin teklif edildiği varlıkların çekinmesine karşı onu insanın yüklendiğini söyler.",
     difficulty: "medium",
-    conceptGroup: "v74-waqf-stop-breathe-resume-intent",
+    conceptGroup: "v74-trust-borne-human",
     options: [
       {
         id: "o2",
-        text: "Harflerin yerini değiştirmek",
+        text: "Melekler",
       },
       {
         id: "o4",
-        text: "Bütün kelimeleri birleştirmek",
+        text: "Hayvanlar",
       },
       {
         id: "o3",
-        text: "Nefes alacak kadar sesi kesmek",
+        text: "İnsan",
       },
       {
         id: "o1",
-        text: "Yazılı olmayan bir kelime eklemek",
+        text: "Bitkiler",
       },
     ],
   },
@@ -3130,7 +3135,7 @@ export const existingQuestionPatches = [
   {
     id: "q68-hadis-riayet",
     reason:
-      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record.",
+      "Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source: "https://islamansiklopedisi.org.tr/med",
     locator:
       "Elektronik madde, erişim anındaki metin satırları 99 (basılı sayfa numarası değildir)",
@@ -3146,15 +3151,15 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Sadece sessiz bir yazı kopyasını incelemek",
+        text: "Kur’an’ın anlamını açıklayan müfessirden dinlemek",
       },
       {
         id: "o3",
-        text: "Kelimelerin yalnız sayılarını ezberlemek",
+        text: "Arap şiirini iyi söyleyen şairden dinlemek",
       },
       {
         id: "o4",
-        text: "Her okumayı başka dile çevirmek",
+        text: "Kıraat tarihini yazan müelliften dinlemek",
       },
     ],
   },
@@ -3287,7 +3292,7 @@ export const existingQuestionPatches = [
   {
     id: "q66-neml-44",
     reason:
-      "Replace newly confirmed reverse-form fact overlap in staged candidate only; original v73 and lookup IDs remain intact.",
+      "Replace newly confirmed reverse-form fact overlap in staged candidate only; original v73 and lookup IDs remain intact. Full-option review: replace irrelevant or giveaway distractors with credible alternatives within the stated source scope.",
     source:
       "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
     locator: "20/115; physical PDF 336",
@@ -3304,16 +3309,3894 @@ export const existingQuestionPatches = [
       },
       {
         id: "o2",
-        text: "Hiçbir sorumluluk üstlenmemesi",
+        text: "Sözünü hatırlayıp hemen yerine getirmesi",
       },
       {
         id: "o3",
-        text: "Yanlış yapmasının imkânsız olması",
+        text: "Sözünü başkasına bildirmekle yetinmesi",
       },
       {
         id: "o4",
-        text: "Bilgiyi başka insanlardan saklaması",
+        text: "Sözün yerine yeni bir söz vermesi",
       },
     ],
+  },
+  {
+    id: "quran-008",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "quran-011",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "quran-013",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "prophets-006",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "prophets-009",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "prophets-010",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "history-009",
+    reason:
+      "Full-option difficulty review: Well-known siyer term, chronology or straightforward verse comprehension does not require advanced specialist recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "history-012",
+    reason:
+      "Full-option difficulty review: Well-known siyer term, chronology or straightforward verse comprehension does not require advanced specialist recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "general-010",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "pilot-quran-001",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "pilot-quran-002",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "pilot-quran-004",
+    reason:
+      "Full-option difficulty review: Well-known siyer term, chronology or straightforward verse comprehension does not require advanced specialist recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "pilot-prophets-002",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "pilot-prophets-004",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "pilot-general-003",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "quran-meaning-v72-011",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "quran-meaning-v72-032",
+    reason:
+      "Full-option difficulty review: Well-known siyer term, chronology or straightforward verse comprehension does not require advanced specialist recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-prophets-002",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-prophets-004",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-prophets-005",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-prophets-006",
+    reason:
+      "Full-option difficulty review: Well-known siyer term, chronology or straightforward verse comprehension does not require advanced specialist recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-prophets-007",
+    reason:
+      "Full-option difficulty review: Introductory religious/cultural recognition or well-known story detail, rather than advanced knowledge.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-prophets-019",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-prophets-027",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-prophets-029",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-prophets-031",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-prophets-040",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-history-004",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-history-006",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-history-011",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-history-012",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-history-022",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-history-023",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-history-027",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-general-003",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-general-014",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-general-022",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-general-025",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-general-026",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-general-027",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-general-035",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v7-quran-001",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v7-quran-003",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v7-prophets-005",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v7-history-001",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v7-history-004",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "v7-history-005",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "v8-quran-001",
+    reason:
+      "Full-option difficulty review: Familiar worship, story or cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v8-quran-005",
+    reason:
+      "Full-option difficulty review: Recognised siyer milestone or story detail rather than advanced recall.",
+    difficulty: "medium",
+  },
+  {
+    id: "v8-general-001",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v8-general-002",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v9-quran-001",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v9-quran-003",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v9-quran-007",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v9-prophets-006",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v9-history-010",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v9-general-001",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v9-general-006",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v9-general-007",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-quran-001",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-quran-003",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-quran-004",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-quran-005",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-quran-012",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-prophets-013",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v10-history-001",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-history-002",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-history-003",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-general-001",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-general-002",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-general-008",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-general-011",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v10-general-012",
+    reason:
+      "Full-option difficulty review: Basic scholarly or siyer identification with plausible alternatives; beyond beginner but not specialist.",
+    difficulty: "medium",
+  },
+  {
+    id: "v11-quran-001",
+    reason:
+      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-quran-003",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-quran-007",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-quran-008",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-quran-009",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-quran-012",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-quran-013",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-prophets-004",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v11-prophets-007",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-prophets-009",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v11-history-001",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v11-history-002",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v11-history-004",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v11-general-007",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v12-quran-001",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v12-quran-011",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v12-prophets-004",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v12-prophets-005",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v12-prophets-011",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v12-history-002",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v12-history-007",
+    reason:
+      "Full-option difficulty review: Well-known scientific-cultural identification or standard story detail; not advanced memorisation.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-quran-001",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-quran-004",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-quran-013",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-prophets-003",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-prophets-005",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-prophets-007",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-prophets-010",
+    reason:
+      "Full-option difficulty review: Familiar brief surah, basic belief/worship, recognised story or plain moral teaching.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-prophets-011",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-prophets-012",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-prophets-013",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-history-002",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-history-003",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "v13-history-004",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-history-006",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-history-008",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-history-009",
+    reason:
+      "Full-option difficulty review: Specialised duration or less-known genealogical identity.",
+    difficulty: "hard",
+  },
+  {
+    id: "v13-general-001",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-general-006",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-general-007",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-women-010",
+    reason:
+      "Full-option difficulty review: Specialised duration or less-known genealogical identity.",
+    difficulty: "hard",
+  },
+  {
+    id: "learn-women-018",
+    reason:
+      "Full-option difficulty review: Specialised duration or less-known genealogical identity.",
+    difficulty: "hard",
+  },
+  {
+    id: "learn-history-002",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-dua-009",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-009",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-012",
+    reason:
+      "Full-option difficulty review: Well-known story or standard scholarly term rather than specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-akaid-019",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-005",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-013",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-014",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "user200-106",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "user200-107",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "user200-119",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-008",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-020",
+    reason:
+      "Full-option difficulty review: Foundational belief, common moral term or familiar cultural recognition.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-010",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-akaid-002",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "learn-women-007",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "learn-akaid-017",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q43-mulk-15",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q43-insan-9",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q43-nebe-9",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q43-mutaffifin-2",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q44-duha-11",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q44-insirah-7",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q44-insirah-8",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q45-haldun-mukaddime",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q45-haldun-ilim",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q45-cezeri-kitap",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q45-cezeri-amir",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q45-ibnsina-ilac",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q45-ibnsina-organ",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q45-biruni-sehir",
+    reason:
+      "Full-option difficulty review: Detailed bibliographic structure, named location, lesser-known rank or participant requires specialist recall.",
+    difficulty: "hard",
+  },
+  {
+    id: "q47-suleyman-028",
+    reason:
+      "Full-option difficulty review: Basic belief or everyday moral teaching with direct comprehension.",
+    difficulty: "easy",
+  },
+  {
+    id: "q47-oruç-048",
+    reason:
+      "Full-option difficulty review: Familiar worship, cultural object or standard migration purpose.",
+    difficulty: "easy",
+  },
+  {
+    id: "q48-ummu-seleme-008",
+    reason:
+      "Full-option difficulty review: Narrow biographical, book-section or chronological detail.",
+    difficulty: "hard",
+  },
+  {
+    id: "q48-hicret-018",
+    reason:
+      "Full-option difficulty review: Familiar worship, cultural object or standard migration purpose.",
+    difficulty: "easy",
+  },
+  {
+    id: "q49-biruni-006",
+    reason:
+      "Full-option difficulty review: Narrow biographical, book-section or chronological detail.",
+    difficulty: "hard",
+  },
+  {
+    id: "q49-taberi-013",
+    reason:
+      "Full-option difficulty review: Narrow biographical, book-section or chronological detail.",
+    difficulty: "hard",
+  },
+  {
+    id: "q49-kutub-031",
+    reason:
+      "Full-option difficulty review: Standard scholarly process or recognised siyer epithet.",
+    difficulty: "medium",
+  },
+  {
+    id: "q50-suayb-009",
+    reason:
+      "Full-option difficulty review: Standard scholarly process or recognised siyer epithet.",
+    difficulty: "medium",
+  },
+  {
+    id: "q51-muahat-010",
+    reason:
+      "Full-option difficulty review: Familiar worship, cultural object or standard migration purpose.",
+    difficulty: "easy",
+  },
+  {
+    id: "q51-muahat-014",
+    reason:
+      "Full-option difficulty review: Narrow biographical, book-section or chronological detail.",
+    difficulty: "hard",
+  },
+  {
+    id: "q51-suffe-021",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q52-sadaka-010",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q52-zekat-014",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q52-zekat-015",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q53-beled-015",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q53-beled-016",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-ala-022",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q54-ala-023",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q55-tekvir-010",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q56-akabe-egitmen",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q56-hicret-mescid",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q56-hicret-donus",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q56-hicret-vesika",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q57-yusufbagis",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q57-musayed",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q57-musadeniz",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q57-hudyer",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q57-hendekahzab",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q57-tebukusre",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q57-gazvetanim",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q58-seleme-asli",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q58-suleym-ogul",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q58-tefsir-sozluk",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q59-beyt-mansur",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q59-evliya-yazim",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q59-battuta-kadi",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q59-kuscu-medrese",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q59-katib-ilgi",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q60-erkam-hizmet",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q60-suffe-adi",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    difficulty: "easy",
+    question:
+      "Yâsîn 36/55’in Kur’an Yolu mealinde cennetliklerin meşguliyeti nasıl anlatılır?",
+    explanation:
+      "Mealde o gün cennetliklerin safa sürmekle meşgul olduğu belirtilir.",
+    options: [
+      {
+        id: "o4",
+        text: "Hesaplarını beklemek",
+      },
+      {
+        id: "o3",
+        text: "Safa sürmek",
+      },
+      {
+        id: "o1",
+        text: "Geçmiş amellerini tartmak",
+      },
+      {
+        id: "o2",
+        text: "Şahitlerin gelmesini beklemek",
+      },
+    ],
+    conceptGroup: "v74-paradise-people-enjoyment",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "36/55; physical PDF 467",
+  },
+  {
+    id: "q60-suffe-egitim",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q60-nebevi-kible",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q60-haram-uc",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q61-salihpeygamber-birlik",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q62-hac-hanefi",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q62-tavaf-kudum",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q62-fitre-gayesi",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q62-sadaka-genis",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q63-karatay-tarih",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q63-karatay-bani",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q63-konya-sircali",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q63-bursa-bitis",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q63-bursa-vakif",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q63-nizamiye-bagdat",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q63-istanbul-sul",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q64-huneyn-kuman",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q64-huneyn-esir",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q64-taif-dua",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q64-medine-hicret",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q64-senet-fetih",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q64-veda-tek",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q65-hucurat-4",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q65-hadid-25",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q66-kehf-11",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q66-kehf-16",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q66-kehf-46",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q66-kehf-50",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q66-kehf-61",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q66-kehf-96",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-kasas-40",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q67-ankebut-3",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    difficulty: "medium",
+    question:
+      "Duhân 44/10–11’de göğün insanları kuşatacak hangi şeye bürüneceği bildirilir?",
+    explanation:
+      "Âyette bütün insanları kuşatan belirgin bir duman, acı veren azap olarak anlatılır.",
+    options: [
+      {
+        id: "o2",
+        text: "Yoğun bir sise",
+      },
+      {
+        id: "o3",
+        text: "Kalın bir buz tabakasına",
+      },
+      {
+        id: "o4",
+        text: "Belirgin bir dumana",
+      },
+      {
+        id: "o1",
+        text: "Geniş bir kum bulutuna",
+      },
+    ],
+    conceptGroup: "v74-future-sky-covering-smoke",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "44/10; physical PDF 526",
+  },
+  {
+    id: "q67-ankebut-8",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q67-rum-21",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q68-hadis-sozluk",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q68-sitte-davud",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q68-sitte-nesai",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q68-sitte-dort",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    difficulty: "easy",
+    question:
+      "Müddessir 74/31’e göre cehennemin işleriyle görevlendirilenler hangi varlık türündendir?",
+    explanation:
+      "Cehennemin işleriyle yalnız meleklerin görevlendirildiği bildirilir.",
+    options: [
+      {
+        id: "o1",
+        text: "İnsanlardan",
+      },
+      {
+        id: "o3",
+        text: "Cinlerden",
+      },
+      {
+        id: "o4",
+        text: "Şeytanlardan",
+      },
+      {
+        id: "o2",
+        text: "Meleklerden",
+      },
+    ],
+    conceptGroup: "v74-hell-keepers-angels",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "74/31; physical PDF 621",
+  },
+  {
+    id: "q68-sunen-konu",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q68-cami-ibadet",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q68-cami-buh",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q68-cami-mus",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q68-buhari-vefat",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-zeydbsabit-annesi",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-zeydbsabit-sure",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-zeydbsabit-danisman",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-abdullahbabbas-anne",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-abdullahbabbas-teyze",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-enesbmalik-kunye",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-enesbmalik-teyze",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-enesbmalik-veda",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q69-bilalihabesi-anne",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-bilalihabesi-sabah",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q69-bilalihabesi-kabe",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q69-ebueyyubelensari-kabile",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-ebueyyubelensari-akabe",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-ebueyyubelensari-kitap",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-selmanifarisi-seyahat",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q69-selmanifarisi-kardes",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q70-ebu-hanife-ticaret",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q70-safii-anne",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q70-safii-ilk",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q70-malik-b-enes-dogum",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q70-malik-b-enes-ilk-hoca",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q70-malik-b-enes-tazi",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q70-gazzali-kunye",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q71-sure-28",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q71-elyesa-elisa",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q71-hatice-anne",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q71-aise-anne",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q71-aise-kunye",
+    reason:
+      "Full-option difficulty review: Narrow historical, technical or biographical information.",
+    difficulty: "hard",
+  },
+  {
+    id: "q71-kurban-koyun",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "q71-kurban-buyuk",
+    reason:
+      "Full-option difficulty review: Basic widely taught concept or familiar story.",
+    difficulty: "easy",
+  },
+  {
+    id: "e150-prophets-014",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "e150-general-008",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v12-general-006",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-quran-005",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-quran-006",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "v13-general-011",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-women-005",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-women-017",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-women-021",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-dua-008",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-women-015",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "learn-dua-028",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q43-mulk-10",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q43-mulk-13",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q43-insan-8",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q43-nebe-8",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q43-abese-24",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q43-abese-25",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q44-leyl-5",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q44-duha-9",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-bedir-003",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-hudeybiye-008",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-hudeybiye-010",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-hudeybiye-013",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-beyat-014",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-suleyman-025",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-harun-031",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-musa-033",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-musa-034",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q47-hac-037",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q48-hicret-016",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q48-yusuf-034",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q49-kutub-026",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    difficulty: "easy",
+    question:
+      "Kasas 28/17’de Mûsâ, kendisine verilen nimetler karşısında hangi sözü verir?",
+    explanation:
+      "Mûsâ, Allah’ın nimeti karşısında suçlulara destek olmayacağını söyler.",
+    conceptGroup: "v74-musa-pledge-not-support-criminals",
+    options: [
+      {
+        id: "o3",
+        text: "Hiç yolculuk yapmamayı",
+      },
+      {
+        id: "o4",
+        text: "Bir daha ticaret yapmamayı",
+      },
+      {
+        id: "o2",
+        text: "Suçlulara arka çıkmamayı",
+      },
+      {
+        id: "o1",
+        text: "Şehirde görev üstlenmemeyi",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "28/17; physical PDF 408",
+  },
+  {
+    id: "q50-hud-004",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q50-suayb-008",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q50-zekeriyya-017",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q50-zekeriyya-021",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q51-suffe-018",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q51-suffe-022",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q52-vakif-001",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q52-fitre-016",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q52-kurban-025",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-fecr-003",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-beled-011",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-beled-012",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-beled-018",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-sems-025",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-gasiye-028",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-gasiye-030",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-gasiye-033",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q53-gasiye-034",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-buruc-001",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-buruc-002",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-tarik-008",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-tarik-009",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-tarik-010",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-tarik-012",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-ala-016",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-ala-017",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-ala-018",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q54-ala-019",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-tekvir-001",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-tekvir-002",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-tekvir-003",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-tekvir-004",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-tekvir-005",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-tekvir-007",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-infitar-011",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-infitar-012",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-infitar-013",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-infitar-014",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-infitar-015",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-infitar-016",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-insikak-019",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    difficulty: "medium",
+    question: "Kāria 101/5’te dağların kıyametteki hâli neye benzetilir?",
+    explanation:
+      "Dağların dağınık ve hafif hâli, atılmış renkli yün tasviriyle anlatılır.",
+    options: [
+      {
+        id: "o2",
+        text: "Atılmış renkli yüne",
+      },
+      {
+        id: "o1",
+        text: "Yükselen beyaz dumana",
+      },
+      {
+        id: "o3",
+        text: "Yığılmış altınlara",
+      },
+      {
+        id: "o4",
+        text: "Kabarıp taşan suya",
+      },
+    ],
+    conceptGroup: "v74-mountains-carded-colored-wool",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "101/5; physical PDF 655",
+  },
+  {
+    id: "q55-insikak-020",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-insikak-024",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-insikak-025",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-kiyamet-028",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-kiyamet-029",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-kiyamet-030",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q55-kiyamet-031",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q57-nuhcift",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q57-hudumre",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q59-beyt-amac",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q59-beyt-sehir",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q59-evliya-cilt",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q59-battuta-eser",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q59-katib-cihan",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q60-erkam-sahip",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q60-erkam-omer",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q60-nebevi-ilk",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q61-salihpeygamber-zarar",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q61-meryem-dogum",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q61-isa-incil",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q62-arafat-konum",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q62-say-mekan",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q62-zekat-borclu",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q63-karatay-sehir",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q63-bursa-ulucami",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q63-nizamiye-bani",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q64-huneyn-hevazin",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-isra-22",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-isra-37",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-furkan-63",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-furkan-72",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-hucurat-2",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-hucurat-18",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q65-hadid-2",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q66-kehf-10",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q66-kehf-13",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q66-kehf-34",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q66-neml-17",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q66-neml-22",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    difficulty: "medium",
+    question:
+      "Yûsuf 12/97–98’de oğulları af dileyince Ya‘kūb ne yapacağını bildirir?",
+    explanation:
+      "Oğullarının isteğine karşı Ya‘kūb, onlar için Allah’tan bağışlanma dileyeceğini bildirir.",
+    conceptGroup: "v74-yaqub-asks-forgiveness-sons",
+    options: [
+      {
+        id: "o1",
+        text: "Onları kralın huzuruna çıkaracağını",
+      },
+      {
+        id: "o2",
+        text: "Onlar için Rabbinden af dileyeceğini",
+      },
+      {
+        id: "o3",
+        text: "Bir kefâret miktarı belirleyeceğini",
+      },
+      {
+        id: "o4",
+        text: "Onlardan şahit getirmelerini isteyeceğini",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "12/98; physical PDF 257",
+  },
+  {
+    id: "q66-meryem-7",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    difficulty: "medium",
+    question:
+      "Tâhâ 20/65’te sihirbazların Mûsâ’ya sunduğu seçim hangi konudadır?",
+    explanation:
+      "Sihirbazlar, önce Mûsâ’nın mı yoksa kendilerinin mi atacağını sorar.",
+    conceptGroup: "v74-magicians-choice-first-cast",
+    options: [
+      {
+        id: "o1",
+        text: "Kimin konuşmayı yazacağı",
+      },
+      {
+        id: "o2",
+        text: "Kimin önce atacağı",
+      },
+      {
+        id: "o3",
+        text: "Hangi ödülün dağıtılacağı",
+      },
+      {
+        id: "o4",
+        text: "Hangi şehre gidileceği",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "20/65; physical PDF 332",
+  },
+  {
+    id: "q67-kasas-4",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-kasas-7",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-kasas-24",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-ankebut-2",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-ankebut-26",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-ankebut-45",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-rum-17",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    difficulty: "medium",
+    question:
+      "Furkān 25/45’te gölgeye yol gösterici kılındığı bildirilen nedir?",
+    explanation:
+      "Gölgenin uzatılması anlatıldıktan sonra güneşin ona yol gösterici kılındığı belirtilir.",
+    options: [
+      {
+        id: "o3",
+        text: "Güneş",
+      },
+      {
+        id: "o1",
+        text: "Ay",
+      },
+      {
+        id: "o2",
+        text: "Yıldızlar",
+      },
+      {
+        id: "o4",
+        text: "Rüzgâr",
+      },
+    ],
+    conceptGroup: "v74-sun-guide-shadow",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "25/45; physical PDF 382",
+  },
+  {
+    id: "q67-rum-22",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-rum-23",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q68-sitte-buhari",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q68-sitte-muslim",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q68-sunen-tanim",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q68-cami-tanim",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q69-zeydbsabit-dogum",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q69-enesbmalik-yil",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q69-ebueyyubelensari-istanbul",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q69-abdullahbomerbhattab-hafsa",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q70-ebu-hanife-dogum",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q70-malik-b-enes-egitim",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q70-malik-b-enes-eser",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q70-ahmed-b-hanbel-eser",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q70-gazzali-ihya",
+    reason:
+      "Full-option difficulty review: Standard intermediate concept; not specialist detail.",
+    difficulty: "medium",
+  },
+  {
+    id: "q67-ankebut-36",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Bakara 2/30’da Allah’ın yeryüzünde yaratacağını meleklere bildirdiği varlık hangi sıfatla anılır?",
+    explanation:
+      "Âyette insanın yaratılışı, yeryüzünde bir halife yaratılacağının bildirilmesiyle anlatılır.",
+    difficulty: "medium",
+    conceptGroup: "v74-halife-earth-announcement",
+    options: [
+      {
+        id: "o1",
+        text: "Müjdeci",
+      },
+      {
+        id: "o2",
+        text: "Halife",
+      },
+      {
+        id: "o3",
+        text: "Kâtip",
+      },
+      {
+        id: "o4",
+        text: "Bekçi",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "2/30; physical PDF 10",
+  },
+  {
+    id: "q67-kasas-30",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Hümeze 104/6’da sözü edilen ateş kimin tutuşturduğu ateş olarak nitelenir?",
+    explanation:
+      "Hümeze sûresinde bu ateş, Allah’ın tutuşturulmuş ateşi olarak nitelenir.",
+    difficulty: "medium",
+    conceptGroup: "v74-humaza-fire-kindled-allah",
+    options: [
+      {
+        id: "o1",
+        text: "İnsanların",
+      },
+      {
+        id: "o2",
+        text: "Cinlerin",
+      },
+      {
+        id: "o4",
+        text: "Şeytanın",
+      },
+      {
+        id: "o3",
+        text: "Allah’ın",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "104/6; physical PDF 656",
+  },
+  {
+    id: "q66-neml-name",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Yûsuf 12/83’te Ya‘kūb, oğullarından gelen haber karşısında kendisine düşen tutumu nasıl niteler?",
+    explanation:
+      "Ya‘kūb, ümidini Allah’a bağlayarak kendisine düşenin güzel bir sabır olduğunu söyler.",
+    difficulty: "medium",
+    conceptGroup: "v74-yaqub-beautiful-patience-response",
+    options: [
+      {
+        id: "o1",
+        text: "Kesin bir sessizlik",
+      },
+      {
+        id: "o2",
+        text: "Uzun bir yolculuk",
+      },
+      {
+        id: "o3",
+        text: "Yeni bir sözleşme",
+      },
+      {
+        id: "o4",
+        text: "Güzel bir sabır",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "12/83; physical PDF 256",
+  },
+  {
+    id: "q66-meryem-25",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Tâhâ 20/58’de Firavun, Mûsâ’dan karşılaşma için ne belirlemesini ister?",
+    explanation:
+      "Firavun, iki tarafın da caymayacağı bir yerde karşılaşma zamanı belirlenmesini ister.",
+    difficulty: "medium",
+    conceptGroup: "v74-pharaoh-appoint-meeting-time",
+    options: [
+      {
+        id: "o2",
+        text: "Uygun yerde bir buluşma zamanı",
+      },
+      {
+        id: "o1",
+        text: "İki tarafın asker sayısını",
+      },
+      {
+        id: "o3",
+        text: "Kazanana verilecek hediyeyi",
+      },
+      {
+        id: "o4",
+        text: "Tartışmayı yazacak kâtibi",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "20/58; physical PDF 331",
+  },
+  {
+    id: "q66-neml-18",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Enbiyâ 21/51’in Kur’an Yolu mealinde İbrâhim’e verilen yetenek nasıl anlatılır?",
+    explanation:
+      "Mealde İbrâhim’e daha önce doğru düşünme yeteneği verildiği belirtilir.",
+    difficulty: "medium",
+    conceptGroup: "v74-ibrahim-given-right-judgment",
+    options: [
+      {
+        id: "o3",
+        text: "Zırh yapma yeteneği",
+      },
+      {
+        id: "o4",
+        text: "Kuşların dilini anlama",
+      },
+      {
+        id: "o1",
+        text: "Doğru düşünme yeteneği",
+      },
+      {
+        id: "o2",
+        text: "Rüyaları yorumlama",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "21/51; physical PDF 342",
+  },
+  {
+    id: "q66-neml-24",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Enbiyâ 21/60’ta putlardan söz eden İbrâhim, kavmindekilerin anlatımında nasıl tanıtılır?",
+    explanation:
+      "Kavmindekiler, putları diline doladığını işittikleri İbrâhim adlı bir gençten söz eder.",
+    difficulty: "medium",
+    conceptGroup: "v74-ibrahim-described-youth",
+    options: [
+      {
+        id: "o4",
+        text: "Bir genç olarak",
+      },
+      {
+        id: "o1",
+        text: "Bir hükümdar olarak",
+      },
+      {
+        id: "o2",
+        text: "Bir kervancı olarak",
+      },
+      {
+        id: "o3",
+        text: "Bir kâhin olarak",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "21/60–61; physical PDF 343",
+  },
+  {
+    id: "q65-isra-35",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Furkān 25/53’te iki deniz suyu hangi karşıt niteliklerle anlatılır?",
+    explanation:
+      "İki denizin biri tatlı ve içimi hoş, diğeri tuzlu ve acı olarak nitelenir.",
+    difficulty: "medium",
+    conceptGroup: "v74-two-seas-sweet-salty",
+    options: [
+      {
+        id: "o3",
+        text: "Sıcak ve bulanık; soğuk ve durgun",
+      },
+      {
+        id: "o4",
+        text: "Tatlı ve susuzluğu giderici; tuzlu ve acı",
+      },
+      {
+        id: "o1",
+        text: "Sığ ve aydınlık; derin ve karanlık",
+      },
+      {
+        id: "o2",
+        text: "Hızlı ve köpüklü; yavaş ve berrak",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "25/53; physical PDF 383",
+  },
+  {
+    id: "q55-insikak-026",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Şuarâ 26/49–50’de Firavun’un tehdidine karşı iman eden sihirbazlar dönüşlerinin kime olduğunu söyler?",
+    explanation:
+      "Tehdit karşısında sihirbazlar, sonuçta Rablerine döneceklerini söyleyerek sebat eder.",
+    difficulty: "medium",
+    conceptGroup: "v74-magicians-return-lord-threat",
+    options: [
+      {
+        id: "o3",
+        text: "Eski hocalarına",
+      },
+      {
+        id: "o4",
+        text: "Kabile reislerine",
+      },
+      {
+        id: "o2",
+        text: "Rablerine",
+      },
+      {
+        id: "o1",
+        text: "Saray görevlilerine",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "26/50; physical PDF 388",
+  },
+  {
+    id: "q65-furkan-65",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Neml 27/7’de Mûsâ, gördüğü ateşten ailesi için ne getirebileceğini söyler?",
+    explanation:
+      "Mûsâ, oradan bir haber ya da ailesinin ısınması için kor getirmeyi umduğunu söyler.",
+    difficulty: "medium",
+    conceptGroup: "v74-musa-embers-warm-family",
+    options: [
+      {
+        id: "o3",
+        text: "Isınmaları için bir parça kor",
+      },
+      {
+        id: "o1",
+        text: "Yol için pişmiş ekmek",
+      },
+      {
+        id: "o2",
+        text: "Çadırı onarmak için demir",
+      },
+      {
+        id: "o4",
+        text: "Yolculuk için bir kandil",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "27/7; physical PDF 398",
+  },
+  {
+    id: "q67-rum-40",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Neml 27/10’da Mûsâ, asâsını yılan gibi kıpırdar görünce ilk olarak ne yapar?",
+    explanation:
+      "İlk tepkisi dönüp kaçmaktır; ardından kendisine korkmaması bildirilir.",
+    difficulty: "medium",
+    conceptGroup: "v74-musa-turns-runs-moving-staff",
+    options: [
+      {
+        id: "o2",
+        text: "Asâyı bezle sarar",
+      },
+      {
+        id: "o3",
+        text: "Ailesini yanına çağırır",
+      },
+      {
+        id: "o4",
+        text: "Yere bir çember çizer",
+      },
+      {
+        id: "o1",
+        text: "Arkasına bakmadan dönüp kaçar",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "27/10; physical PDF 398",
+  },
+  {
+    id: "q54-tarik-013",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Sâffât 37/89’da İbrâhim’in söylediği söz, Kur’an Yolu mealinde nasıl verilir?",
+    explanation:
+      "Mealde İbrâhim’in sözü rahatsız olduğunu bildiren kısa bir cümleyle aktarılır.",
+    difficulty: "medium",
+    conceptGroup: "v74-ibrahim-statement-unwell",
+    options: [
+      {
+        id: "o4",
+        text: "Ben yolcuyum",
+      },
+      {
+        id: "o2",
+        text: "Ben rahatsızım",
+      },
+      {
+        id: "o1",
+        text: "Ben açım",
+      },
+      {
+        id: "o3",
+        text: "Ben yorgunum",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "37/89; physical PDF 473",
+  },
+  {
+    id: "q61-salihpeygamber-deve",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Bakara 2/35’te Âdem ile eşine cennette özellikle hangi sınır bildirilir?",
+    explanation:
+      "Diğer nimetlerden yararlanabilecekleri bildirilirken belirli bir ağaca yaklaşmaları yasaklanır; ağacın türü bu âyette adlandırılmaz.",
+    difficulty: "easy",
+    conceptGroup: "v74-adam-wife-forbidden-approach-tree",
+    options: [
+      {
+        id: "o1",
+        text: "Bulundukları yerden ayrılmamaları",
+      },
+      {
+        id: "o2",
+        text: "Meleklerle konuşmamaları",
+      },
+      {
+        id: "o3",
+        text: "Gösterilen ağaca yaklaşmamaları",
+      },
+      {
+        id: "o4",
+        text: "Birbirlerinden uzak durmaları",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "2/35; physical PDF 11",
+  },
+  {
+    id: "q61-hud-ad",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Âl-i İmrân 3/36’da doğan çocuğa Meryem adını verdiğini söyleyen kimdir?",
+    explanation:
+      "İmrân’ın eşi, doğurduğu çocuğa Meryem adını verdiğini söyler.",
+    difficulty: "medium",
+    conceptGroup: "v74-maryam-name-given-mother",
+    options: [
+      {
+        id: "o1",
+        text: "Annesi",
+      },
+      {
+        id: "o2",
+        text: "Zekeriyyâ",
+      },
+      {
+        id: "o3",
+        text: "Babası",
+      },
+      {
+        id: "o4",
+        text: "Mâbedin görevlisi",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "3/36; physical PDF 61",
+  },
+  {
+    id: "q61-salihpeygamber-semud",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "A‘râf 7/69’da Hûd, kavminin hangi topluluğun ardından onların yerine getirildiğini hatırlatır?",
+    explanation:
+      "Hûd’un hitabında kavmine Nûh kavminden sonra onların yerine getirildikleri hatırlatılır.",
+    difficulty: "medium",
+    conceptGroup: "v74-ad-successors-noah-people",
+    options: [
+      {
+        id: "o1",
+        text: "Semûd kavminin",
+      },
+      {
+        id: "o2",
+        text: "Medyen halkının",
+      },
+      {
+        id: "o3",
+        text: "Sebe halkının",
+      },
+      {
+        id: "o4",
+        text: "Nûh kavminin",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "7/69; physical PDF 168",
+  },
+  {
+    id: "q50-lut-015",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question: "A‘râf 7/77’de deveyi öldürenler Sâlih’e nasıl meydan okur?",
+    explanation:
+      "Emre karşı çıktıktan sonra Sâlih’ten kendilerini uyardığı azabı getirmesini isterler.",
+    difficulty: "medium",
+    conceptGroup: "v74-salih-challenged-bring-punishment",
+    options: [
+      {
+        id: "o1",
+        text: "Yeni bir deve bulmasını isteyerek",
+      },
+      {
+        id: "o3",
+        text: "Kendilerine hükümdar olmasını önererek",
+      },
+      {
+        id: "o4",
+        text: "Şehri birlikte terk etmeyi önererek",
+      },
+      {
+        id: "o2",
+        text: "Tehdit ettiği azabı getirmesini isteyerek",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "7/77; physical PDF 170",
+  },
+  {
+    id: "v12-prophets-001",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Yûsuf 12/14’te kardeşleri, Yûsuf’u koruyabilecekleri iddiasını neye dayandırır?",
+    explanation:
+      "Kardeşleri, sayıca kalabalık olmalarını kurda karşı koruma güvencesi olarak öne sürer.",
+    difficulty: "medium",
+    conceptGroup: "v74-yusuf-brothers-numbers-assurance",
+    options: [
+      {
+        id: "o1",
+        text: "Kraldan yardım almalarına",
+      },
+      {
+        id: "o3",
+        text: "Bir kalede kalacak olmalarına",
+      },
+      {
+        id: "o4",
+        text: "Yolculuğu gece yapacak olmalarına",
+      },
+      {
+        id: "o2",
+        text: "Kalabalık bir grup olmalarına",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "12/14; physical PDF 248",
+  },
+  {
+    id: "q57-musaasa",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question: "Tâhâ 20/67–68’de korku duyan Mûsâ’ya hangi güvence verilir?",
+    explanation:
+      "Mûsâ’ya korkmaması ve üstün gelecek olanın kesinlikle kendisi olduğu bildirilir.",
+    difficulty: "medium",
+    conceptGroup: "v74-musa-assured-victory-fear",
+    options: [
+      {
+        id: "o2",
+        text: "Üstün gelecek olanın kendisi olduğu",
+      },
+      {
+        id: "o1",
+        text: "Karşılaşmanın erteleneceği",
+      },
+      {
+        id: "o3",
+        text: "Firavun’un oradan ayrılacağı",
+      },
+      {
+        id: "o4",
+        text: "Sihirbazların ona katılmayacağı",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "20/68; physical PDF 332",
+  },
+  {
+    id: "q57-suaybolcu",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Tevbe 9/107’de zararlı amaçla mescid yapanlara yüklenen toplumsal amaç hangisidir?",
+    explanation:
+      "Âyet, mescid kurma görüntüsü altında müminleri bölme ve zarar verme amacını açıkça eleştirir.",
+    difficulty: "medium",
+    conceptGroup: "v74-harmful-mosque-divide-believers",
+    options: [
+      {
+        id: "o3",
+        text: "Yeni bir çarşı kurmak",
+      },
+      {
+        id: "o4",
+        text: "Müminler arasına ayrılık sokmak",
+      },
+      {
+        id: "o1",
+        text: "Bir kervan yolu açmak",
+      },
+      {
+        id: "o2",
+        text: "Bir su kuyusunu paylaşmak",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "9/107; physical PDF 214",
+  },
+  {
+    id: "q62-nisab-anlam",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Âl-i İmrân 3/173’te tehdit haberi alan müminlerin güvenini anlatan söz hangisidir?",
+    explanation:
+      "Tehdit haberi onların imanını artırır; Allah’ın kendilerine yeterli olduğunu söylerler.",
+    difficulty: "easy",
+    conceptGroup: "v74-hasbunallah-response-threat",
+    options: [
+      {
+        id: "o4",
+        text: "Rabbimiz ilmimizi artır",
+      },
+      {
+        id: "o2",
+        text: "Allah bize yeter, O ne güzel vekildir",
+      },
+      {
+        id: "o1",
+        text: "Rabbimiz göğsümüzü genişlet",
+      },
+      {
+        id: "o3",
+        text: "Rabbimiz günahlarımızı bağışla",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "3/173; physical PDF 79",
+  },
+  {
+    id: "q45-haldun-umran",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Nisâ 4/75’te zalimlerin yaşadığı yerden kurtulmak isteyen çaresizler arasında hangi yaş grubu da açıkça anılır?",
+    explanation:
+      "Âyet çaresiz erkekler, kadınlar ve çocuklardan birlikte söz eder.",
+    difficulty: "medium",
+    conceptGroup: "v74-oppressed-children-explicitly-included",
+    options: [
+      {
+        id: "o1",
+        text: "Yalnız yetişkinler",
+      },
+      {
+        id: "o3",
+        text: "Yalnız yaşlılar",
+      },
+      {
+        id: "o4",
+        text: "Yalnız gençler",
+      },
+      {
+        id: "o2",
+        text: "Çocuklar",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "4/75; physical PDF 97",
+  },
+  {
+    id: "q62-vakfe-iki",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "A‘râf 7/94’te peygamber gönderilen halklara dert ve sıkıntı verilmesinin hangi amacı belirtilir?",
+    explanation:
+      "Dert ve sıkıntının, insanların Allah’a yönelip yakarmasına vesile olması belirtilir.",
+    difficulty: "medium",
+    conceptGroup: "v74-hardship-purpose-turn-supplicate",
+    options: [
+      {
+        id: "o1",
+        text: "Başka bir dil öğrenmeleri",
+      },
+      {
+        id: "o2",
+        text: "Yeni bir ülkeye göç etmeleri",
+      },
+      {
+        id: "o3",
+        text: "Daha çok ticaret yapmaları",
+      },
+      {
+        id: "o4",
+        text: "Allah’a yönelip yalvarmaları",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "7/94; physical PDF 172",
+  },
+  {
+    id: "q62-tavaf-ziyaret",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Tevbe 9/38’de seferberlik çağrısından geri duranlara hangi tercihleri sorulur?",
+    explanation:
+      "Uyarı, âhiretten vazgeçip dünya hayatının sınırlı yararıyla yetinme üzerinedir.",
+    difficulty: "medium",
+    conceptGroup: "v74-mobilization-worldly-life-preference",
+    options: [
+      {
+        id: "o1",
+        text: "Deniz yolunu kara yoluna tercih etmeleri",
+      },
+      {
+        id: "o2",
+        text: "Yeni yurda eski yurdu tercih etmeleri",
+      },
+      {
+        id: "o3",
+        text: "Tarımı ticarete tercih etmeleri",
+      },
+      {
+        id: "o4",
+        text: "Âhiret yerine dünya hayatıyla yetinmeleri",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "9/38; physical PDF 203",
+  },
+  {
+    id: "q62-tavaf-baslangic",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Yûsuf 12/48’in Kur’an Yolu mealinde kıtlık boyunca tüketilmeyip saklanacak az miktar ne için açıklanır?",
+    explanation:
+      "Mealde kıtlık yıllarında biriktirilmiş ürünün, saklanacak az miktar tohumluk dışında tüketileceği belirtilir.",
+    difficulty: "medium",
+    conceptGroup: "v74-famine-small-seed-reserve",
+    options: [
+      {
+        id: "o1",
+        text: "Ödünç verilen ürün için",
+      },
+      {
+        id: "o3",
+        text: "Vergi ödemek için",
+      },
+      {
+        id: "o4",
+        text: "Pazarda satış için",
+      },
+      {
+        id: "o2",
+        text: "Tohumluk için",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "12/48; physical PDF 252",
+  },
+  {
+    id: "q70-ebu-hanife-lakap",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Kasas 28/57’de doğru yolu izlemeye karşı öne sürülen korku hangisidir?",
+    explanation:
+      "Muhataplar, doğru yolu izlerlerse yurtlarından uzaklaştırılacakları korkusunu öne sürer.",
+    difficulty: "medium",
+    conceptGroup: "v74-guidance-objection-uprooting-homeland",
+    options: [
+      {
+        id: "o3",
+        text: "Yurtlarından sökülüp atılmak",
+      },
+      {
+        id: "o1",
+        text: "Ticaret dilini unutmak",
+      },
+      {
+        id: "o2",
+        text: "Aile adlarını değiştirmek",
+      },
+      {
+        id: "o4",
+        text: "Hasat zamanını kaçırmak",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "28/57; physical PDF 413",
+  },
+  {
+    id: "q62-tavaf-anlam",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question: "Hucurât 49/17’de gerçek lütuf olarak hatırlatılan nedir?",
+    explanation:
+      "İman etmeyi elçiye yapılmış bir iyilik sayanlara asıl lütfun Allah’ın onları imana yöneltmesi olduğu hatırlatılır.",
+    difficulty: "medium",
+    conceptGroup: "v74-faith-guidance-divine-favor",
+    options: [
+      {
+        id: "o1",
+        text: "İnsanların elçiye hediye getirmesi",
+      },
+      {
+        id: "o2",
+        text: "Bir kabilenin diğerini ağırlaması",
+      },
+      {
+        id: "o3",
+        text: "Yolcuların yeni bir yurt edinmesi",
+      },
+      {
+        id: "o4",
+        text: "Allah’ın insanları imana yöneltmesi",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "49/17; physical PDF 550",
+  },
+  {
+    id: "q49-ihya-019",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Vâkıa 56/63’te insanın üzerinde düşünmesi için hangi tarım işi anılır?",
+    explanation:
+      "İnsanın ektiği tohum üzerine düşünmesi istenir; izleyen âyet yetiştirenin kim olduğunu sorar.",
+    difficulty: "easy",
+    conceptGroup: "v74-reflection-sown-seed",
+    options: [
+      {
+        id: "o1",
+        text: "Ürün tartması",
+      },
+      {
+        id: "o2",
+        text: "Tohum ekmesi",
+      },
+      {
+        id: "o3",
+        text: "Bağ budaması",
+      },
+      {
+        id: "o4",
+        text: "Kuyu açması",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "56/63; physical PDF 574",
+  },
+  {
+    id: "q68-sitte-alternatif",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Münâfikūn 63/9’da hangi iki nimet grubunun insanı Allah’ı anmaktan alıkoymaması istenir?",
+    explanation:
+      "Malların ve çocukların Allah’ı anmaya engel olmaması gerektiği vurgulanır.",
+    difficulty: "medium",
+    conceptGroup: "v74-wealth-children-not-distract-remembrance",
+    options: [
+      {
+        id: "o4",
+        text: "Mallar ve çocuklar",
+      },
+      {
+        id: "o1",
+        text: "Evler ve binekler",
+      },
+      {
+        id: "o2",
+        text: "Tarlalar ve sürüler",
+      },
+      {
+        id: "o3",
+        text: "Arkadaşlar ve komşular",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "63/9; physical PDF 595",
+  },
+  {
+    id: "q62-arafat-hadis",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question: "Cin 72/18’de mescidlerin yalnız kime ait olduğu bildirilir?",
+    explanation:
+      "Mescidlerin Allah’a ait olduğu söylenir ve Allah ile birlikte başkasına ibadet edilmemesi istenir.",
+    difficulty: "easy",
+    conceptGroup: "v74-mosques-belong-allah",
+    options: [
+      {
+        id: "o1",
+        text: "Allah’a",
+      },
+      {
+        id: "o2",
+        text: "Hükümdarlara",
+      },
+      {
+        id: "o3",
+        text: "Kurucuların soyuna",
+      },
+      {
+        id: "o4",
+        text: "Şehrin tüccarlarına",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "72/18; physical PDF 616",
+  },
+  {
+    id: "v12-general-003",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Mü’min 40/28’de Mûsâ’nın öldürülmesine karşı çıkan, imanını gizleyen kişi hangi çevreden tanıtılır?",
+    explanation:
+      "Âyet, konuşan kişiyi Firavun ailesinden olup imanını gizleyen bir mümin olarak tanıtır.",
+    difficulty: "medium",
+    conceptGroup: "v74-believer-pharaoh-family-defends-musa",
+    options: [
+      {
+        id: "o2",
+        text: "Firavun ailesinden",
+      },
+      {
+        id: "o1",
+        text: "Medyen çobanlarından",
+      },
+      {
+        id: "o3",
+        text: "Sebe tüccarlarından",
+      },
+      {
+        id: "o4",
+        text: "Mekke ileri gelenlerinden",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "40/28; physical PDF 497",
+  },
+  {
+    id: "e150-history-035",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Enfâl 8/17’deki atış anlatımında, görünürdeki eylemin ötesindeki sonuç kime nisbet edilir?",
+    explanation:
+      "Âyet, atışın görünen öznesinin ötesinde Allah’ın yardım ve etkisini vurgular.",
+    difficulty: "medium",
+    conceptGroup: "v74-battle-throw-attributed-allah",
+    options: [
+      {
+        id: "o3",
+        text: "Ordu kumandanlarının ortak kararına",
+      },
+      {
+        id: "o4",
+        text: "Müttefik kabilelerin yardımına",
+      },
+      {
+        id: "o2",
+        text: "Allah’a",
+      },
+      {
+        id: "o1",
+        text: "Kervan sahiplerinin desteğine",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "8/17; physical PDF 189",
+  },
+  {
+    id: "q49-taberi-015",
+    reason:
+      "Replace source-compared same-fact or reverse-form overlap found in the full-option/cross-bank pass. Frozen historical record, ID, key and category remain unchanged.",
+    question:
+      "Fetih 48/27’de güven içinde mescide giriş anlatılırken saçla ilgili hangi iki uygulama anılır?",
+    explanation:
+      "Mescid-i Harâm’a güven içinde giriş müjdesinde saçları kazıtma ya da kısmen kestirme birlikte anılır.",
+    difficulty: "medium",
+    conceptGroup: "v74-safe-entry-shave-shorten-hair",
+    options: [
+      {
+        id: "o4",
+        text: "Örmek veya boyamak",
+      },
+      {
+        id: "o2",
+        text: "Kazıtmak veya kısmen kestirmek",
+      },
+      {
+        id: "o1",
+        text: "Örtmek veya yıkamak",
+      },
+      {
+        id: "o3",
+        text: "Taramak veya bağlamak",
+      },
+    ],
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "48/27; physical PDF 546",
+  },
+  {
+    id: "q62-hac-ihram",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Haşr 59/7’de malın dağıtımıyla hangi ekonomik durumun önlenmesi amaçlanır?",
+    explanation:
+      "Fey‘in dağıtımında, servetin yalnızca zenginler arasında dolaşan bir şey olmaması amaçlanır.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o1",
+        text: "Ticarette farklı fiyatların ortaya çıkması",
+      },
+      {
+        id: "o3",
+        text: "İnsanların farklı işlerde çalışması",
+      },
+      {
+        id: "o4",
+        text: "Ürünlerin farklı mevsimlerde yetişmesi",
+      },
+      {
+        id: "o2",
+        text: "Servetin yalnız zenginler arasında dolaşması",
+      },
+    ],
+    conceptGroup: "v74-wealth-not-only-circulate-rich",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "59/7; physical PDF 585",
+  },
+  {
+    id: "v11-general-002",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Cum‘a 62/11’de insanlardan bazılarının elçiyi ayakta bırakıp neye yöneldikleri anlatılır?",
+    explanation:
+      "Ticaret veya eğlence görünce yönelenlerden söz edilir; Allah katındakinin daha üstün olduğu hatırlatılır.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o3",
+        text: "Bir sulh toplantısına",
+      },
+      {
+        id: "o4",
+        text: "Bir yolcu kafilesini kurtarmaya",
+      },
+      {
+        id: "o2",
+        text: "Ticaret veya eğlenceye",
+      },
+      {
+        id: "o1",
+        text: "Bir cenaze hazırlığına",
+      },
+    ],
+    conceptGroup: "v74-congregation-left-standing-trade-entertainment",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "62/11; physical PDF 594",
+  },
+  {
+    id: "e150-history-014",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Duhâ 93/8’de Hz. Peygamber’e maddî durumuyla ilgili hangi lütuf hatırlatılır?",
+    explanation:
+      "Duhâ sûresinin bu âyetinde, yoksul bulunup zengin kılınması hatırlatılır.",
+    difficulty: "easy",
+    options: [
+      {
+        id: "o1",
+        text: "Bir orduya komutan olması",
+      },
+      {
+        id: "o3",
+        text: "Bir ülkeye hükümdar olması",
+      },
+      {
+        id: "o4",
+        text: "Bir hazineye bekçi olması",
+      },
+      {
+        id: "o2",
+        text: "Yoksulken zengin kılınması",
+      },
+    ],
+    conceptGroup: "v74-prophet-poor-enriched-duha",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "93/8; physical PDF 648",
+  },
+  {
+    id: "learn-dua-010",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Şuarâ 26/84’te İbrâhim’in sonraki nesillerle ilgili duası hangisidir?",
+    explanation:
+      "İbrâhim, kendisinden sonra gelecekler içinde iyilikle anılmayı diler.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o1",
+        text: "Soyunun hükümdar olması",
+      },
+      {
+        id: "o3",
+        text: "Adına şehirler kurulması",
+      },
+      {
+        id: "o4",
+        text: "Her yolculuğunun anlatılması",
+      },
+      {
+        id: "o2",
+        text: "İyilikle anılmak",
+      },
+    ],
+    conceptGroup: "v74-ibrahim-good-remembrance-posterity",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "26/84; physical PDF 390",
+  },
+  {
+    id: "learn-dua-017",
+    reason:
+      "Final semantic pass: replace duplicate fact or focus overlapping prayer on an independently checked additional request; preserve historical identity.",
+    question:
+      "Âl-i İmrân 3/147’de sebat ve yardımdan önce hangi iki şey için bağışlanma istenir?",
+    explanation:
+      "Duada günahlar ve işlerdeki aşırılıklar için af istenir; ardından sebat ve yardım talebi gelir.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o1",
+        text: "Unutma ve dalgınlık",
+      },
+      {
+        id: "o3",
+        text: "Yolculuk ve hastalık",
+      },
+      {
+        id: "o4",
+        text: "Yoksulluk ve borçluluk",
+      },
+      {
+        id: "o2",
+        text: "Günahlar ve işlerdeki aşırılıklar",
+      },
+    ],
+    conceptGroup: "v74-prayer-pardon-sins-excesses",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "3/147; physical PDF 75",
+  },
+  {
+    id: "q65-isra-34",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    question:
+      "İsrâ 17/13’te kıyamet günü insana sunulacak kitap hangi durumda tasvir edilir?",
+    explanation:
+      "Âyet, insana önünde açılmış bir kitap çıkarılacağını bildirir.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o4",
+        text: "Mühürlü bir sandıkta",
+      },
+      {
+        id: "o1",
+        text: "Açılmış olarak",
+      },
+      {
+        id: "o2",
+        text: "Katlanmış olarak",
+      },
+      {
+        id: "o3",
+        text: "İçeriği silinmiş olarak",
+      },
+    ],
+    conceptGroup: "v74-personal-book-opened-before-human",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "17/13; physical PDF 296",
+  },
+  {
+    id: "v12-general-010",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    question:
+      "Âl-i İmrân 3/145’te ölümün gerçekleşmesi hangi ilâhî sınıra bağlanır?",
+    explanation:
+      "Hiç kimsenin Allah’ın yazılıp bir süreye bağlanmış izni olmadan ölmeyeceği bildirilir.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o1",
+        text: "İnsanların ortak kararına",
+      },
+      {
+        id: "o3",
+        text: "Toplumun oyu ile verilen hükme",
+      },
+      {
+        id: "o4",
+        text: "Yalnız kişinin kendi arzusuna",
+      },
+      {
+        id: "o2",
+        text: "Allah’ın belirli süreye bağlı iznine",
+      },
+    ],
+    conceptGroup: "v74-death-permission-fixed-term",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "3/145; physical PDF 75",
+  },
+  {
+    id: "q68-sitte-bes",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    question:
+      "Hâkka 69/17’nin Kur’an Yolu mealinde o gün arşı yüklenenlerin sayısı kaç olarak belirtilir?",
+    explanation:
+      "Âyette o gün arşı sekiz meleğin yükleneceği belirtilir; bu ifade fiziksel bir büyüklük hesabı olarak sunulmaz.",
+    difficulty: "hard",
+    options: [
+      {
+        id: "o1",
+        text: "Sekiz",
+      },
+      {
+        id: "o2",
+        text: "Dört",
+      },
+      {
+        id: "o3",
+        text: "Yedi",
+      },
+      {
+        id: "o4",
+        text: "On iki",
+      },
+    ],
+    conceptGroup: "v74-eight-carry-throne",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "69/17; physical PDF 610",
+  },
+  {
+    id: "q66-kehf-109",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    question:
+      "Tebbet 111/2’de Ebû Leheb’e fayda vermediği bildirilenler hangileridir?",
+    explanation:
+      "Sûrede Ebû Leheb’in malının ve kazandıklarının kendisine fayda vermediği bildirilir.",
+    difficulty: "easy",
+    options: [
+      {
+        id: "o4",
+        text: "Savaş araçları ve askerleri",
+      },
+      {
+        id: "o1",
+        text: "Malı ve kazandıkları",
+      },
+      {
+        id: "o2",
+        text: "Ülkesinin kaleleri",
+      },
+      {
+        id: "o3",
+        text: "Denizlerdeki gemileri",
+      },
+    ],
+    conceptGroup: "v74-abu-lahab-wealth-no-benefit",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "111/2; physical PDF 660",
+  },
+  {
+    id: "q43-insan-7",
+    reason:
+      "Lower-similarity manual review confirmed a repeated tested fact; replace with distinct source-compared verse information while preserving frozen history.",
+    question:
+      "Beyyine 98/8’de Allah ile cennetlik kullar arasındaki hoşnutluk nasıl anlatılır?",
+    explanation: "Âyet karşılıklı rızâyı açıkça dile getirir.",
+    difficulty: "medium",
+    options: [
+      {
+        id: "o3",
+        text: "Hoşnutluk yalnız dünyadaki nimetlere bağlanır",
+      },
+      {
+        id: "o4",
+        text: "Hoşnutluk henüz belli değildir",
+      },
+      {
+        id: "o2",
+        text: "Allah onlardan, onlar da Allah’tan razıdır",
+      },
+      {
+        id: "o1",
+        text: "Hoşnutluk insanların birbirini övmesidir",
+      },
+    ],
+    conceptGroup: "v74-mutual-divine-believer-contentment",
+    source:
+      "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+    locator: "98/8; physical PDF 653",
   },
 ] as const;

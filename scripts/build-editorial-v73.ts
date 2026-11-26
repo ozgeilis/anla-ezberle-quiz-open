@@ -110,11 +110,11 @@ for (const id of edits.keys())
   if (!questionsV72.some((q) => q.id === id)) throw Error(`Unknown ID ${id}`);
 const nextById = new Map(candidate.map((q) => [q.id, q]));
 const inventory = questionsV72.filter((q) =>
-  belongsToPlayCategory(q.id, "iman_ahlak"),
+  belongsToPlayCategory(q.id, "iman_ahlak", 2),
 );
 const report = questionsV72.map((q) => ({
   id: q.id,
-  category: playCategories.find((c) => belongsToPlayCategory(q.id, c.id))?.id,
+  category: playCategories.find((c) => belongsToPlayCategory(q.id, c.id, 2))?.id,
   flags: qualityWarnings(q),
 }));
 const review = inventory.map((q) => ({
@@ -247,7 +247,7 @@ const outputs: Record<string, string> = {
     header +
     questionsV72
       .filter(
-        (q) => edits.has(q.id) || belongsToPlayCategory(q.id, "iman_ahlak"),
+        (q) => edits.has(q.id) || belongsToPlayCategory(q.id, "iman_ahlak", 2),
       )
       .map(tableRow)
       .join(""),

@@ -115,8 +115,9 @@ test("The approved candidate amendment cannot replace a saved v72 question, disp
   assert.notEqual(current.options[1], displayed.options[1]);
 });
 test("released v73 uses the owner-authorized snapshot; frozen v72 and draft evidence never imply expert approval", () => {
-  assert.equal(BANK_VERSION, 73);
-  assert.equal(questions, questionsV73);
+  assert.equal(BANK_VERSION, 74);
+  assert.equal(questions.length, 3000);
+  assert.equal(questionsV73.length, 1500);
   assert((SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
   assert.equal(
     createHash("sha256")
@@ -170,7 +171,7 @@ test("answer positions use actual runtime shuffling, not the historically biased
       random,
     });
     for (const id of s.questionIds) {
-      const q = original.get(id)!;
+      const q = questions.find((q) => q.id === id)!;
       const i = s.optionOrders![id]!.indexOf(q.correctOptionId);
       counts[i]!++;
     }
@@ -187,11 +188,11 @@ test("Inactive candidate preserves category/difficulty availability and prepares
     (state = (Math.imul(state, 1664525) + 1013904223) >>> 0) / 4294967296;
   for (const category of playCategories) {
     const pool = questionsV73Candidate.filter((q) =>
-      belongsToPlayCategory(q.id, category.id),
+      belongsToPlayCategory(q.id, category.id, 2),
     );
     for (const difficulty of ["easy", "medium", "hard"] as const) {
       const baseline = assessDifficultyRound(
-        questionsV72.filter((q) => belongsToPlayCategory(q.id, category.id)),
+        questionsV72.filter((q) => belongsToPlayCategory(q.id, category.id, 2)),
         difficulty,
       );
       assert.deepEqual(assessDifficultyRound(pool, difficulty), baseline);
@@ -233,7 +234,7 @@ test("Inactive candidate preserves category/difficulty availability and prepares
     }
   for (const n of counts)
     assert(n >= 1000 && n <= 1250, JSON.stringify(counts));
-  assert.equal(BANK_VERSION, 73);
+  assert.equal(BANK_VERSION, 74);
   assert((SUPPORTED_BANK_VERSIONS as readonly number[]).includes(73));
 });
 test("quality warnings flag tone, length, duplication, grammar, absolutes, synonyms and ambiguity without approving truth", () => {

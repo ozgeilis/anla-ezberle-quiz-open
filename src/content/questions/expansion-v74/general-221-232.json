@@ -3,7 +3,7 @@
     "id": "new74-general-221",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Hadiste büyük iftiralar arasında rüyayla ilgili hangi davranış sayılır?",
     "options": [
       {
@@ -45,7 +45,7 @@
     "id": "new74-general-222",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Birini haksız yere fâsık veya kâfir diye itham eden kişi hakkında hadis hangi uyarıyı yapar?",
     "options": [
       {
@@ -87,7 +87,7 @@
     "id": "new74-general-223",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "İstenmeden zihne gelen, söze veya fiile dökülmeyen düşünceler hakkında hadiste ne bildirilir?",
     "options": [
       {
@@ -129,7 +129,7 @@
     "id": "new74-general-224",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Zulüm, onu yapan kişi için kıyamet gününde hangi görüntüyle anlatılır?",
     "options": [
       {
@@ -213,12 +213,12 @@
     "id": "new74-general-226",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Mazlumun duasından sakınma öğüdü hangi gerekçeyle verilir?",
     "options": [
       {
         "id": "o1",
-        "text": "Yalnız güçlülerin dua edebilmesi"
+        "text": "Duasının diğer dualardan daha uzun olmasından"
       },
       {
         "id": "o2",
@@ -226,11 +226,11 @@
       },
       {
         "id": "o3",
-        "text": "Duanın para karşılığında olması"
+        "text": "Duasını topluluk önünde etmesinden"
       },
       {
         "id": "o4",
-        "text": "Sadece yöneticilerin duyabilmesi"
+        "text": "Duasının belirli bir güne bağlı olmasından"
       }
     ],
     "correctOptionId": "o2",
@@ -255,16 +255,16 @@
     "id": "new74-general-227",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Âhiret karşısında dünyanın küçüklüğü hadiste hangi örnekle anlatılır?",
     "options": [
       {
         "id": "o1",
-        "text": "Denizi tamamen dolduran ırmakla"
+        "text": "Bir ağacın gölgesinin gövdesine oranıyla"
       },
       {
         "id": "o2",
-        "text": "Göğe yükselen büyük dağla"
+        "text": "Bir kum tanesinin çöldeki yerine oranıyla"
       },
       {
         "id": "o3",
@@ -272,7 +272,7 @@
       },
       {
         "id": "o4",
-        "text": "Bütün yeryüzünü kaplayan bulutla"
+        "text": "Bir kandilin ışığının güneşe oranıyla"
       }
     ],
     "correctOptionId": "o3",
@@ -297,7 +297,7 @@
     "id": "new74-general-228",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Hadiste, ihanet eden kişinin yaptığı işin kıyamette nasıl teşhir edileceği bildirilir?",
     "options": [
       {
@@ -339,7 +339,7 @@
     "id": "new74-general-229",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Kişinin iyi Müslüman oluşuyla ilişkilendirilen “mâlâyânîyi terk” ne anlama gelir?",
     "options": [
       {
@@ -348,15 +348,15 @@
       },
       {
         "id": "o2",
-        "text": "Her türlü dinlenmeden vazgeçmek"
+        "text": "Zor işlerin hepsini başkasına bırakmak"
       },
       {
         "id": "o3",
-        "text": "Sadece başkalarının işini izlemek"
+        "text": "Sessiz kalıp hiçbir konuya karışmamak"
       },
       {
         "id": "o4",
-        "text": "Bütün toplumsal ilişkileri kesmek"
+        "text": "Yalnız ibadet dışındaki işleri bırakmak"
       }
     ],
     "correctOptionId": "o1",
@@ -381,7 +381,7 @@
     "id": "new74-general-230",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Enes’in çok hadis nakletmekten çekinmesini açıklayan uyarı hangi davranışla ilgilidir?",
     "options": [
       {
@@ -423,16 +423,16 @@
     "id": "new74-general-231",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "Ölüm yaklaşırken Allah hakkında hadiste hangi tutum öğütlenir?",
     "options": [
       {
         "id": "o1",
-        "text": "Rahmetinden kesinlikle ümit kesmek"
+        "text": "Hakkındaki sonuca kesin hüküm vermek"
       },
       {
         "id": "o2",
-        "text": "Sorumluluğu bütünüyle inkâr etmek"
+        "text": "Geçmiş iyiliklerini yeterli görmek"
       },
       {
         "id": "o3",
@@ -440,7 +440,7 @@
       },
       {
         "id": "o4",
-        "text": "Bütün amelleri gereksiz saymak"
+        "text": "Yargısını başkalarının övgüsüne bağlamak"
       }
     ],
     "correctOptionId": "o3",

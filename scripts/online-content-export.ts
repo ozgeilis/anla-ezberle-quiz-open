@@ -2,10 +2,11 @@ import type { Question } from "../src/content/questions/model";
 import { questions, BANK_VERSION } from "../src/content/questions";
 import { questionsV72 } from "../src/content/questions/questions-v72";
 import { questionsV73 } from "../src/content/questions/questions-v73";
+import { questionsV74 } from "../src/content/questions/questions-v74";
 import { selectionConceptKeys } from "../src/domain/game/engine";
 
 export const ONLINE_OWNER_SCOPE = `bank-v${BANK_VERSION}`;
-const releasedBanks = { 72: questionsV72, 73: questionsV73 } as const;
+const releasedBanks = { 72: questionsV72, 73: questionsV73, 74: questionsV74 } as const;
 export type ExportBankVersion = keyof typeof releasedBanks;
 // Explicit old-release export supports immutable replay tests and rollback staging.
 // New games always use BANK_VERSION; arbitrary candidate collections are rejected.
@@ -44,9 +45,9 @@ export function buildOnlineContentRows(
 ): OnlineContentRow[] {
   const expected = canonicalBankForExport(bankVersion);
   if (!expected) throw new Error("Unknown canonical server release");
-  if (bank.length !== 1500)
+  if (bank.length !== expected.length)
     throw new Error(
-      `Expected exactly 1500 source-linked questions; got ${bank.length}`,
+      `Expected exactly ${expected.length} canonical source-linked questions; got ${bank.length}`,
     );
   const ids = new Set<string>(),
     prompts = new Set<string>();
@@ -119,8 +120,9 @@ export function buildOnlineSeedSql(
   rows: readonly OnlineContentRow[],
   bankVersion: ExportBankVersion = BANK_VERSION,
 ): string {
-  if (rows.length !== 1500 || new Set(rows.map((r) => r.id)).size !== 1500)
-    throw new Error("Incomplete 1500-question batch");
+  const expectedCount = canonicalBankForExport(bankVersion).length;
+  if (rows.length !== expectedCount || new Set(rows.map((r) => r.id)).size !== expectedCount)
+    throw new Error("Incomplete canonical question batch");
   if (
     JSON.stringify(rows) !==
     JSON.stringify(
@@ -145,8 +147,8 @@ export function buildOnlineSeedSql(
         ")",
     )
     .join(",\n");
-  return `-- v${bankVersion} 1500-source-question staging only; this DOES NOT enable online use.
--- Requires canonical bank migrations through ${bankVersion === 73 ? "20261030000100_canonical_bank_v73.sql" : "20261027000100_canonical_bank_v72.sql"}.
+  return `-- v${bankVersion} ${expectedCount}-source-question staging only; this DOES NOT enable online use.
+-- Requires canonical bank migrations through ${bankVersion === 74 ? "20261126074656_canonical_bank_v74.sql" : bankVersion === 73 ? "20261030000100_canonical_bank_v73.sql" : "20261027000100_canonical_bank_v72.sql"}.
 -- Store this generated file OUTSIDE the repository and never expose its answer key.
 BEGIN;
 CREATE TEMP TABLE _canonical_import (
@@ -158,8 +160,8 @@ INSERT INTO _canonical_import VALUES
 ${entries};
 DO $guard$
 BEGIN
-  IF (SELECT count(*) FROM _canonical_import) <> 1500 OR
-     (SELECT count(*) FROM _canonical_import WHERE content_scope = ${quoteSql(scope)}) <> 1500 THEN
+  IF (SELECT count(*) FROM _canonical_import) <> ${expectedCount} OR
+     (SELECT count(*) FROM _canonical_import WHERE content_scope = ${quoteSql(scope)}) <> ${expectedCount} THEN
     RAISE EXCEPTION 'Incomplete canonical content input';
   END IF;
   IF EXISTS (

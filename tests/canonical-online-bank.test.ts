@@ -14,11 +14,11 @@ import { createDemoDocument } from "../src/domain/duel/machine";
 import { historicalQuestion } from "../src/content/questions/registry";
 
 const data = liveContent();
-test("all new mode exports preserve the exact canonical 1500 records and 30 replacements", () => {
-  assert.equal(BANK_VERSION, 73);
+test("all new mode exports preserve the exact canonical 3000 records and historical replacements", () => {
+  assert.equal(BANK_VERSION, 74);
   const online = buildOnlineContentRows();
-  assert.equal(online.length, 1500);
-  assert.equal(new Set(online.map((q) => q.id)).size, 1500);
+  assert.equal(online.length, 3000);
+  assert.equal(new Set(online.map((q) => q.id)).size, 3000);
   for (const q of questions) {
     assert.deepEqual(online.find((r) => r.id === q.id)!.metadata, q);
     const row = data.rows.find((r) => r.id === q.id)!;
@@ -40,10 +40,10 @@ test("all new mode exports preserve the exact canonical 1500 records and 30 repl
   }
   assert.throws(() => buildOnlineContentRows(questions1500), /canonical/);
 });
-test("solo, daily, difficulty and local demo start on v73; exporters never activate", () => {
+test("solo, daily, difficulty and local demo start on v74; exporters never activate", () => {
   for (const mode of ["mixed", "daily"] as const) {
     const session = createSession(mode, undefined, 1800000000000);
-    assert.equal(session.bankVersion, 73);
+    assert.equal(session.bankVersion, 74);
     assert(
       session.questionIds.every((id) => questions.some((q) => q.id === id)),
     );
@@ -52,14 +52,14 @@ test("solo, daily, difficulty and local demo start on v73; exporters never activ
     const session = createSession("mixed", undefined, 1800000000000, {
       difficulty,
     });
-    assert.equal(session.bankVersion, 73);
+    assert.equal(session.bankVersion, 74);
     assert(
       session.questionIds.every(
         (id) => questions.find((q) => q.id === id)!.difficulty === difficulty,
       ),
     );
   }
-  assert.equal(createDemoDocument().seed.bankVersion, 73);
+  assert.equal(createDemoDocument().seed.bankVersion, 74);
   assert.doesNotMatch(liveContentSql(), /UPDATE quiz_private.live_config/);
   for (const path of [
     "scripts/live-content.ts",
@@ -67,7 +67,7 @@ test("solo, daily, difficulty and local demo start on v73; exporters never activ
   ])
     assert.doesNotMatch(readFileSync(path, "utf8"), /archive\/bank-v(13|41)/);
 });
-test("all 264 online topic/level/count combinations use only their exact eligible v73 pool", () => {
+test("all 264 online topic/level/count combinations use only their exact eligible v74 pool", () => {
   assert.equal(data.pools.length, 264);
   for (const p of data.pools) {
     const expected = data.rows

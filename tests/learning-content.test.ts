@@ -15,7 +15,7 @@ const draft = new Map(learningDraftQuestions.map(q => [q.id,q]));
 
 test("yeni konular mevcut 500 sorunun her birini bir ve yalnız bir ana başlığa bağlar", () => {
   assert.equal(bankV14.length, 500);
-  assert.equal(questions.length, 1500);
+  assert.equal(questions.length, 3000);
   assert.equal(learningTopicsV1.length, 10);
   const allIds = learningTopicsV1.flatMap(topic => {
     const ids = primaryTopicQuestionIdsV1[topic.id];

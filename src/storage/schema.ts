@@ -55,7 +55,8 @@ export function validRecord(value: unknown): value is GameRecord {
       !(
         (g.playCategoryVersion === 1 &&
           (g.bankVersion === 71 || g.bankVersion === 72)) ||
-        (g.playCategoryVersion === 2 && currentTaxonomy)
+        (g.playCategoryVersion === 2 && currentTaxonomy) ||
+        (g.playCategoryVersion === 3 && g.bankVersion === 74)
       ) ||
       g.mode !== "mixed" ||
       g.learningTopic !== undefined ||
@@ -97,6 +98,7 @@ export function validRecord(value: unknown): value is GameRecord {
         g.bankVersion !== 71 &&
         g.bankVersion !== 72) ||
       (g.learningTopicVersion === 3 && !currentTaxonomy) ||
+      (g.learningTopicVersion === 4 && g.bankVersion !== 74) ||
       !(typeof g.bankVersion === "number" && g.bankVersion >= 14) ||
       g.mode !== "mixed" ||
       (g.difficulty === undefined && g.stage === undefined))
@@ -120,7 +122,7 @@ export function validRecord(value: unknown): value is GameRecord {
         !belongsToPlayCategory(
           String(id),
           g.playCategory as import("../domain/game/play-categories").PlayCategoryId,
-          currentTaxonomy ? 2 : 1,
+          g.playCategoryVersion as import("../domain/game/play-categories").PlayCategoryVersion,
         ),
     )
   )

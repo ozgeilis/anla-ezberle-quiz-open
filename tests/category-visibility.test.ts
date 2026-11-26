@@ -45,7 +45,7 @@ test("catalogue exposes only reviewed, independently playable categories in ever
         );
     }
   }
-  assert.equal(bank.length, 1500);
+  assert.equal(bank.length, 3000);
   assert.equal(JSON.stringify(bank), snapshot);
 });
 test("empty or insufficient pools leave no disabled catalogue cards and restore only with playable content", () => {

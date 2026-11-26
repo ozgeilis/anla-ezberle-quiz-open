@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-26",
+  "scope": "Fresh complete 3000-record scan after final semantic replacements; all newly surfaced pairs >=0.40 read. Earlier decisions match only unchanged stems. Similarity screening is not proof over every possible paraphrase.",
+  "pairs": [
+    {
+      "score": 0.4755,
+      "a": {
+        "id": "new74-history-084",
+        "question": "Tac Mahal’in ana türbe binasında kullanılan belirgin kaplama ve yapı malzemesi hangisidir?",
+        "answer": "Beyaz mermer"
+      },
+      "b": {
+        "id": "new74-history-276",
+        "question": "TDV’nin mimari alem maddesine göre taş bina alemleri genellikle hangi malzemeden yapılmıştır?",
+        "answer": "Beyaz mermer"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different object/material relations: main Taj Mahal structure vs stone architectural finials."
+    },
+    {
+      "score": 0.4322,
+      "a": {
+        "id": "learn-akaid-011",
+        "question": "Fâtır 35/1'de Allah'ın elçileri olarak hangi varlıklar açıkça anılır?",
+        "answer": "Melekler"
+      },
+      "b": {
+        "id": "q68-sitte-dort",
+        "question": "Müddessir 74/31’e göre cehennemin işleriyle görevlendirilenler hangi varlık türündendir?",
+        "answer": "Meleklerden"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different angelic functions: messengers in Fatir versus keepers of hell in Muddessir."
+    },
+    {
+      "score": 0.4108,
+      "a": {
+        "id": "q62-zekat-sekiz",
+        "question": "Tevbe 9/60'da zekât verilebilecek kaç grup sayılır?",
+        "answer": "Sekiz"
+      },
+      "b": {
+        "id": "q68-sitte-bes",
+        "question": "Hâkka 69/17’nin Kur’an Yolu mealinde o gün arşı yüklenenlerin sayısı kaç olarak belirtilir?",
+        "answer": "Sekiz"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different counted entities: zakat recipient groups versus throne carriers."
+    },
+    {
+      "score": 0.4059,
+      "a": {
+        "id": "q67-kasas-29",
+        "question": "Kasas 28/29'a göre yolculukta Hz. Mûsâ ne gördüğünü ailesine söyler?",
+        "answer": "Bir ateş"
+      },
+      "b": {
+        "id": "q67-kasas-30",
+        "question": "Hümeze 104/6’da sözü edilen ateş kimin tutuşturduğu ateş olarak nitelenir?",
+        "answer": "Allah’ın"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different fire referents and predicates: Musa sighting versus divine authorship of the Hereafter fire."
+    },
+    {
+      "score": 0.4023,
+      "a": {
+        "id": "q50-suayb-006",
+        "question": "Kur’an'da Hz. Şuayb'ın adı kaç yerde geçer?",
+        "answer": "On bir"
+      },
+      "b": {
+        "id": "q71-idris-iki",
+        "question": "Hz. İdrîs'in adı Kur'an'da doğrudan kaç ayrı sûrede geçer?",
+        "answer": "İki"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different prophets and counts; not a restatement of one fact."
+    }
+  ]
+}

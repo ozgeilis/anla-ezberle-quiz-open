@@ -31,20 +31,20 @@ import {
 } from "../scripts/online-content-export";
 import { liveContent } from "../scripts/live-content";
 
-test("v73 is the active 1500-question production bank and exactly matches owner-authorized content", () => {
-  assert.equal(BANK_VERSION, 73);
-  assert.equal(questions, questionsV73);
-  assert.deepEqual(questions, releasedQuestionsV73());
-  assert.equal(questions.length, 1500);
-  assert.equal(playableQuestions("production").length, 1500);
-  assert.equal(playableQuestions("prototype").length, 1500);
+test("v73 remains the frozen 1500-question production snapshot and exactly matches owner-authorized content", () => {
+  assert.equal(BANK_VERSION, 74);
+  assert.equal(BANK_VERSION, 74);
+  assert.deepEqual(questionsV73, releasedQuestionsV73());
+  assert.equal(questionsV73.length, 1500);
+  assert.equal(playableQuestions("production", questionsV73).length, 1500);
+  assert.equal(playableQuestions("prototype", questionsV73).length, 1500);
   assert.equal(approval.approvalType, "product-owner-publication");
   assert.equal(approval.independentExpertApproval, false);
   assert.equal(
     readFileSync("src/content/questions/questions-v73.ts", "utf8"),
     canonicalV73Source(),
   );
-  for (const [i, q] of questions.entries()) {
+  for (const [i, q] of questionsV73.entries()) {
     const candidate = questionsV73Candidate[i]!;
     assert.deepEqual(
       [
@@ -81,7 +81,7 @@ test("v73 is the active 1500-question production bank and exactly matches owner-
   }
 });
 
-test("new mixed, daily and category rounds display v73, finish and restore with real keys and score", () => {
+test("new mixed, daily and category rounds display v74, finish and restore with real keys and score", () => {
   const start = 1800000000000;
   const preparations = [
     ...(["easy", "medium", "hard"] as const).map((difficulty) => ({
@@ -107,7 +107,7 @@ test("new mixed, daily and category rounds display v73, finish and restore with 
       ...options,
       channel: "production",
     });
-    assert.equal(session.bankVersion, 73);
+    assert.equal(session.bankVersion, 74);
     for (let i = 0; i < 10; i++) {
       const view = gameQuestion(session, session.questionIds[i]!)!;
       const source = questions.find((q) => q.id === view.id)!;
@@ -122,7 +122,7 @@ test("new mixed, daily and category rounds display v73, finish and restore with 
     }
     const record = finishSession(session);
     assert.equal(stats(record).score, 1000);
-      assert(!validRecord({ ...record, bankVersion: 74 }));
+      assert(!validRecord({ ...record, bankVersion: 75 }));
       if (record.playCategory)
         assert(!validRecord({ ...record, playCategoryVersion: 1 }));
     const restored = parseData(
@@ -186,7 +186,7 @@ test("saved v72 answers, wording, score and XP survive new v73 games without mig
 test("v73 online projections preserve private keys; explicit v72 staging remains immutable and separate", () => {
   const current = buildOnlineContentRows();
   const old = buildOnlineContentRows(questionsV72, 72);
-  assert(current.every((q) => q.contentScope === "bank-v73"));
+  assert(current.every((q) => q.contentScope === "bank-v74"));
   assert(old.every((q) => q.contentScope === "bank-v72"));
   assert.match(
     buildOnlineSeedSql(old, 72),
@@ -194,11 +194,11 @@ test("v73 online projections preserve private keys; explicit v72 staging remains
   );
   assert.match(
     buildOnlineSeedSql(current),
-    /validate_online_bank\('bank-v73'\)/,
+    /validate_online_bank\('bank-v74'\)/,
   );
   assert.throws(() => buildOnlineSeedSql(old), /canonical/);
   const live = liveContent();
-  assert.equal(live.version, 73);
+  assert.equal(live.version, 74);
   for (const row of live.rows) {
     assert.deepEqual(Object.keys(row.public).sort(), [
       "id",

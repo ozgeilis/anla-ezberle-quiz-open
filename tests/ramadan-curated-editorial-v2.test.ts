@@ -52,8 +52,8 @@ test("Ramadan pilot is ten distinct objectives, nine historical approvals, one i
     else assert.equal(question.reviewStatus, "draft");
   }
   const published = playableQuestions("production");
-  assert.equal(published.length, 1500);
-  assert.equal(questions.length, 1500);
+  assert.equal(published.length, 3000);
+  assert.equal(questions.length, 3000);
   assert.equal(publishedIds.has("ramadan-draft-shawwal-001"), false);
   assert.equal(published.some((q) => q.id === "ramadan-draft-shawwal-001"), false);
   assert.equal(preparationFromParams({ topic: "ramazan" }).topic, undefined);

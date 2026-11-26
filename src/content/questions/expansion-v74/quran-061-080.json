@@ -92,11 +92,11 @@
     "options": [
       {
         "id": "o1",
-        "text": "Yalnız zenginlerin bunu başaracağı söylenir"
+        "text": "Bunları bir defterde tamamlayabileceği söylenir"
       },
       {
         "id": "o2",
-        "text": "Nimetlerin sadece geçmiş toplumlara ait olduğu söylenir"
+        "text": "Sayımı yalnız geçmişle sınırlaması istenir"
       },
       {
         "id": "o3",
@@ -104,7 +104,7 @@
       },
       {
         "id": "o4",
-        "text": "Nimetlerin yalnız bir kez verildiği belirtilir"
+        "text": "Saydığı nimetlerle yetinmesi emredilir"
       }
     ],
     "correctOptionId": "o3",
@@ -470,15 +470,15 @@
     "options": [
       {
         "id": "o1",
-        "text": "Sadece servetlerini yazmasına"
+        "text": "Yalnız hesap toplamının yazılmasına"
       },
       {
         "id": "o2",
-        "text": "Yalnız başkalarının davranışlarını içermesine"
+        "text": "İşlerin konularına göre ayrılmasına"
       },
       {
         "id": "o3",
-        "text": "Kendi yaptıklarından hiç söz etmemesine"
+        "text": "Her işin aynı büyüklükte yazılmasına"
       },
       {
         "id": "o4",
@@ -759,16 +759,16 @@
     "id": "new74-quran-079",
     "version": 1,
     "categoryId": "quran",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Fâtır 35/29’da kitabı okuma, namaz ve gizli açık infak hangi ticaret benzetmesiyle anlatılır?",
     "options": [
       {
         "id": "o1",
-        "text": "Yalnız gizlice yürütülmesi gereken bir ticaret"
+        "text": "Sonucu insanlardan gizlenen ticaret"
       },
       {
         "id": "o2",
-        "text": "Kârı insanlardan zorla alınacak bir ticaret"
+        "text": "Kazancı zamanla azalan ticaret"
       },
       {
         "id": "o3",
@@ -776,7 +776,7 @@
       },
       {
         "id": "o4",
-        "text": "Sadece maddî fiyatla ölçülen bir ticaret"
+        "text": "Bir defa yapılan takas"
       }
     ],
     "correctOptionId": "o3",

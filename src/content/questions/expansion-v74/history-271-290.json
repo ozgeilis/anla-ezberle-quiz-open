@@ -3,7 +3,7 @@
     "id": "new74-history-271",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "question": "İslâm el yazmalarında da kullanılan parşömen hangi malzemeden hazırlanır?",
     "options": [
       {
@@ -87,7 +87,7 @@
     "id": "new74-history-273",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Hârûnürreşîd döneminde kâğıt imalâthanesi açılan Abbâsî başşehri hangisidir?",
     "options": [
       {
@@ -214,34 +214,34 @@
     "version": 1,
     "categoryId": "history",
     "difficulty": "medium",
-    "question": "Cami kubbe ve minare külâhlarının tepesine takılan sembolik unsura ne denir?",
+    "question": "TDV’nin mimari alem maddesine göre taş bina alemleri genellikle hangi malzemeden yapılmıştır?",
     "options": [
       {
         "id": "o1",
-        "text": "Şerefe"
+        "text": "Siyah bazalt"
       },
       {
         "id": "o2",
-        "text": "Kavsara"
+        "text": "Kırmızı granit"
       },
       {
         "id": "o3",
-        "text": "Revak"
+        "text": "Sarı kum taşı"
       },
       {
         "id": "o4",
-        "text": "Alem"
+        "text": "Beyaz mermer"
       }
     ],
     "correctOptionId": "o4",
-    "explanation": "Alem, yapının tepedeki görünüşünü tamamlayan unsurdur.",
+    "explanation": "Maddede taş alemlerin genellikle beyaz mermerden yapıldığı belirtilir.",
     "sources": [
       {
         "title": "TDV İslâm Ansiklopedisi",
         "publisher": "TDV İslâm Araştırmaları Merkezi",
-        "url": "https://islamansiklopedisi.org.tr/alem--sembol",
-        "locator": "Elektronik madde, erişim anındaki metin satırları 71,217 (basılı sayfa numarası değildir)",
-        "supports": "Alem, yapının tepedeki görünüşünü tamamlayan unsurdur.",
+        "url": "https://islamansiklopedisi.org.tr/alem--sembol#2-mimari",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 218 (basılı sayfa numarası değildir)",
+        "supports": "Maddede taş alemlerin genellikle beyaz mermerden yapıldığı belirtilir.",
         "checkStatus": "supported",
         "checkedAt": "2026-11-26"
       }
@@ -249,13 +249,13 @@
     "reviewStatus": "reviewed",
     "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
     "updatedAt": "2026-11-26",
-    "conceptGroup": "v74-alem-yapi-tepelik"
+    "conceptGroup": "v74-stone-building-finials-white-marble"
   },
   {
     "id": "new74-history-277",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Bina alemi, süslemenin yanında kurşun örtünün tepesinde hangi pratik işe de yarar?",
     "options": [
       {
@@ -423,7 +423,7 @@
     "id": "new74-history-281",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Tarihî usta kitâbelerinde ahşap işçiliği yapan sanatkâr hangi adla anılır?",
     "options": [
       {
@@ -549,7 +549,7 @@
     "id": "new74-history-284",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Mostar Köprüsü’nün kemer açıklığının yüksek tutulmasının sebeplerinden biri nedir?",
     "options": [
       {
@@ -675,7 +675,7 @@
     "id": "new74-history-287",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Evliya Çelebi, Gazi Hüsrev Bey Camii’nde kışın abdest alanlara sağlanan hangi kolaylığı anlatır?",
     "options": [
       {
@@ -759,7 +759,7 @@
     "id": "new74-history-289",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "question": "Gazi Hüsrev Bey Kütüphanesi’nde değerli yazmalar yanında hangi belge türleri de bulunur?",
     "options": [
       {
@@ -768,15 +768,15 @@
       },
       {
         "id": "o2",
-        "text": "Yalnız müzik notaları ve besteler"
+        "text": "Seyir defterleri ve liman cetvelleri"
       },
       {
         "id": "o3",
-        "text": "Yalnız seyir defterleri ve liman cetvelleri"
+        "text": "Müzik notaları ve beste mecmuaları"
       },
       {
         "id": "o4",
-        "text": "Yalnız askerî haritalar ve sefer çizimleri"
+        "text": "Askerî haritalar ve sefer krokileri"
       }
     ],
     "correctOptionId": "o1",

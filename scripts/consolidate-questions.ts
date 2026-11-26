@@ -12,6 +12,7 @@ import type { Question } from "../src/content/questions/model";
 import baseline from "../tests/fixtures/content/pre-consolidation-v71.json";
 import { questionSnapshot } from "./question-snapshot";
 import { canonicalV73Source } from "./build-release-v73";
+import { canonicalV74Source } from "./build-bank-v74";
 
 const frozenV71 = new URL(
   "../src/content/questions/questions-1500.ts",
@@ -81,12 +82,15 @@ async function main() {
   const v71 = canonicalQuestionSource();
   const v72 = canonicalV72Source();
   const v73 = canonicalV73Source();
+  const v74 = canonicalV74Source();
   const destinationV73 = new URL("../src/content/questions/questions-v73.ts", import.meta.url);
+  const destinationV74 = new URL("../src/content/questions/questions-v74.ts", import.meta.url);
   if (args[0] === "--write") {
     await writeFile(frozenV71, v71);
     await writeFile(destinationV72, v72);
     await writeFile(destinationV73, v73);
-    console.log("Verified frozen v71/v72 and generated active v73: 1,500 questions.");
+    await writeFile(destinationV74, v74);
+    console.log("Verified frozen v71/v72/v73 and active v74: 3,000 questions.");
   } else {
     if ((await readFile(frozenV71, "utf8")) !== v71)
       throw new Error("Frozen v71 canonical file differs from its archive");
@@ -94,7 +98,9 @@ async function main() {
       throw new Error("v72 canonical file is stale; run pnpm questions:generate");
     if ((await readFile(destinationV73, "utf8")) !== v73)
       throw new Error("v73 canonical file differs from its approved snapshot");
-    console.log("Frozen v71/v72 and active v73 canonical files match exactly.");
+    if ((await readFile(destinationV74, "utf8")) !== v74)
+      throw new Error("v74 canonical file differs from its source-compared manifest");
+    console.log("Frozen v71/v72/v73 and active v74 canonical files match exactly.");
   }
 }
 

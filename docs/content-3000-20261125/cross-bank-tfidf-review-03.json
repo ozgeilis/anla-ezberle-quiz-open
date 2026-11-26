@@ -1,0 +1,2241 @@
+{
+  "date": "2026-11-26",
+  "scope": "All 149 pairs with cosine 0.40–0.45 read; original pre-revision stems retained as evidence. No claim that an algorithm proves global uniqueness.",
+  "pairs": [
+    {
+      "score": 0.4496,
+      "a": {
+        "id": "q66-meryem-3",
+        "question": "Meryem 19/11’de Zekeriyyâ kavmine sabah akşam ne yapmalarını işaretle bildirir?",
+        "answer": "Allah’ı tesbih etmelerini"
+      },
+      "b": {
+        "id": "q67-rum-17",
+        "question": "Rûm 30/17'de hangi iki gün diliminde Allah'ı tesbih etme vurgulanır?",
+        "answer": "Akşam ve sabah"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4493,
+      "a": {
+        "id": "v13-quran-002",
+        "question": "Bakara 2/152'de hangi iki davranış birlikte emredilir?",
+        "answer": "Allah'ı anmak ve O'na şükretmek"
+      },
+      "b": {
+        "id": "q67-ankebut-45",
+        "question": "Ankebût 29/45’te namaz öğüdünden sonra önemi özellikle belirtilen davranış hangisidir?",
+        "answer": "Allah’ı anmak"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4492,
+      "a": {
+        "id": "e150-general-030",
+        "question": "Kâbe'nin yer aldığı büyük mescidin adı hangisidir?",
+        "answer": "Mescid-i Harâm"
+      },
+      "b": {
+        "id": "q70-safii-ilk",
+        "question": "İmam Şâfiî henüz on üç yaşındayken hangi kutsal mekânda Kur'an okutmaya başlamıştır?",
+        "answer": "Mescid-i Harâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4486,
+      "a": {
+        "id": "v13-history-009",
+        "question": "el-Câmiu’s-sahîh’ini on altı yılda hazırladığı aktarılan muhaddis kimdir?",
+        "answer": "Buhârî"
+      },
+      "b": {
+        "id": "q68-cami-buh",
+        "question": "Buhârî’nin el-Câmiu’s-sahîh’i hangi ilim literatürünün temel derlemelerindendir?",
+        "answer": "Hadis"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4478,
+      "a": {
+        "id": "history-002",
+        "question": "Mekke’den Medine’ye hicret miladi hangi yılda gerçekleşmiştir?",
+        "answer": "622"
+      },
+      "b": {
+        "id": "q56-akabe-yil1",
+        "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+        "answer": "621"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4474,
+      "a": {
+        "id": "learn-women-023",
+        "question": "Rukıyye’nin vefatından sonra Hz. Osman’la evlenen sahâbî kimdir?",
+        "answer": "Ümmü Külsûm"
+      },
+      "b": {
+        "id": "learn-women-029",
+        "question": "Hudeybiye'den sonra ailesi olmadan Mekke'den Medine'ye hicret eden kadın sahâbî kimdir?",
+        "answer": "Ümmü Külsûm bint Ukbe"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4469,
+      "a": {
+        "id": "v13-quran-007",
+        "question": "İsrâ 17/34'te insanlardan özellikle neyi yerine getirmeleri istenir?",
+        "answer": "Verdikleri sözü"
+      },
+      "b": {
+        "id": "q65-isra-34",
+        "question": "İsrâ 17/34’te yetim malıyla ilgili uyarının ardından hangi yükümlülük hatırlatılır?",
+        "answer": "Verilen sözü yerine getirmek"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4466,
+      "a": {
+        "id": "q51-ensar-006",
+        "question": "Birinci Akabe Biatı'nda Medineli heyet kaç kişiden oluşuyordu?",
+        "answer": "On iki"
+      },
+      "b": {
+        "id": "q56-akabe-egitmen",
+        "question": "TDV’ye göre Birinci Akabe Biatı’ndaki on iki Medinelinin kaçı Evs kabilesindendi?",
+        "answer": "İki"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4458,
+      "a": {
+        "id": "learn-history-014",
+        "question": "Mihne olarak bilinen dinî-siyasî sorgulama uygulamasını başlatan Abbâsî halifesi kimdir?",
+        "answer": "Me'mûn"
+      },
+      "b": {
+        "id": "q59-beyt-mamun",
+        "question": "Beytülhikme'yi kapsamlı bir ilim akademisi hâline getiren Abbâsî halifesi kimdir?",
+        "answer": "Me'mûn"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4457,
+      "a": {
+        "id": "new74-history-040",
+        "question": "Hac dönemi için Haremeyn’e gönderilen para ve hediyeler hangi terimle anılır?",
+        "answer": "Surre"
+      },
+      "b": {
+        "id": "new74-history-241",
+        "question": "Surre alayının yol güvenliği ve Haremeyn’deki dağıtımı için görevlendirilen kişi kimdir?",
+        "answer": "Surre emini"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4446,
+      "a": {
+        "id": "v13-general-010",
+        "question": "Mâide 5/2'ye göre hangi konuda yardımlaşmak öğütlenir?",
+        "answer": "İyilik ve takvâ"
+      },
+      "b": {
+        "id": "new74-quran-186",
+        "question": "Bakara 2/224’te yeminlerin hangi iyi davranışlara engel kılınmaması istenir?",
+        "answer": "İyilik, takvâ ve insanların arasını düzeltmeye"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4442,
+      "a": {
+        "id": "q55-infitar-011",
+        "question": "İnfitâr 82/1'de gökyüzünün hangi hâli anlatılır?",
+        "answer": "Yarılması"
+      },
+      "b": {
+        "id": "q55-insikak-019",
+        "question": "İnşikâk 84/1-2'de gök hangi olayın ardından Rabbine boyun eğer?",
+        "answer": "Yarılması"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4438,
+      "a": {
+        "id": "v10-quran-002",
+        "question": "Kasas sûresinin adındaki 'kasas' sözcüğü Türkçede ne anlama gelir?",
+        "answer": "Kıssalar"
+      },
+      "b": {
+        "id": "v10-quran-011",
+        "question": "Yûsuf 12/3’teki “ahsen-i kasas” terkibinin yaygın Türkçe karşılıklarından biri hangisidir?",
+        "answer": "Kıssaların en güzeli"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4433,
+      "a": {
+        "id": "v10-history-010",
+        "question": "Uluğ Bey'in astronomi çalışmalarının merkezindeki rasathane hangi şehirdeydi?",
+        "answer": "Semerkant"
+      },
+      "b": {
+        "id": "q59-kuscu-semer",
+        "question": "Ali Kuşçu ilk ilmî eğitimini hangi şehirde almıştır?",
+        "answer": "Semerkant"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4429,
+      "a": {
+        "id": "q58-tefsir-rivayet",
+        "question": "Peygamber, sahâbe ve tâbiînden aktarılan açıklamaları esas alan genel tefsir yöntemi hangisidir?",
+        "answer": "Rivayet tefsiri"
+      },
+      "b": {
+        "id": "q58-tefsir-dirayet",
+        "question": "Rivayetin karşısında, re’y ve içtihada dayalı genel tefsir yöntemi hangi adla anılır?",
+        "answer": "Dirâyet tefsiri"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4422,
+      "a": {
+        "id": "q49-kutub-028",
+        "question": "Rezîn b. Muâviye beş temel hadis kitabına altıncı olarak hangi eseri eklemiştir?",
+        "answer": "Mâlik’in el-Muvatta’ı"
+      },
+      "b": {
+        "id": "q70-malik-b-enes-eser",
+        "question": "İmam Mâlik'in rivayetleri derlediği ve fıkha da kaynaklık eden ünlü eseri hangisidir?",
+        "answer": "el-Muvaṭṭaʾ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4421,
+      "a": {
+        "id": "v10-prophets-014",
+        "question": "Nûh 71/28'de bağışlanma duasında kendisinden sonra kimleri anar?",
+        "answer": "Anne babasını"
+      },
+      "b": {
+        "id": "v13-general-011",
+        "question": "Nisâ 4/135’te kimlerin aleyhine bile olsa adaletli şahitlik edilmesi açıkça istenir?",
+        "answer": "Kişinin kendisi, anne babası ve akrabaları"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4409,
+      "a": {
+        "id": "e150-history-023",
+        "question": "Hudeybiye Antlaşması hicretin kaçıncı yılında yapılmıştır?",
+        "answer": "6"
+      },
+      "b": {
+        "id": "e150-history-024",
+        "question": "Hudeybiye Antlaşması hangi şehir yakınında yapılmıştır?",
+        "answer": "Mekke"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4408,
+      "a": {
+        "id": "v13-history-010",
+        "question": "Büyük Selçuklu veziri Nizâmülmülk'ün devlet idaresi hakkında yazdığı eser hangisidir?",
+        "answer": "Siyâsetnâme"
+      },
+      "b": {
+        "id": "q63-nizamiye-bani",
+        "question": "Bağdat’ta 1067’de açılan medreseyi yaptıran Büyük Selçuklu veziri kimdir?",
+        "answer": "Nizâmülmülk"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4403,
+      "a": {
+        "id": "v13-history-006",
+        "question": "Endülüs'te 1492'ye kadar hüküm süren son İslâm hânedanı hangisidir?",
+        "answer": "Nasrîler"
+      },
+      "b": {
+        "id": "new74-history-085",
+        "question": "Elhamra Sarayı’nın gelişimi özellikle hangi Endülüs hânedanıyla ilişkilidir?",
+        "answer": "Nasrîler (Benî Ahmer)"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4401,
+      "a": {
+        "id": "q53-sems-025",
+        "question": "Şems 91/11'de azgınlığıyla yalanlayan topluluk hangisidir?",
+        "answer": "Semûd kavmi"
+      },
+      "b": {
+        "id": "q54-buruc-006",
+        "question": "Burûc 85/17-18'de ibret olarak hangi iki topluluk anılır?",
+        "answer": "Firavun ve Semûd"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4399,
+      "a": {
+        "id": "learn-women-014",
+        "question": "Sevde bint Zem‘a ilk eşiyle birlikte nereye hicret etmiştir?",
+        "answer": "Habeşistan"
+      },
+      "b": {
+        "id": "learn-women-022",
+        "question": "Rukıyye ve Osman Mekke döneminde ilk hicretlerini nereye yaptılar?",
+        "answer": "Habeşistan"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4395,
+      "a": {
+        "id": "v12-history-011",
+        "question": "Kûfe’de Irak fıkhını öğrencileriyle sistemleştiren, İmâm-ı Âzam diye anılan âlim kimdir?",
+        "answer": "Ebû Hanîfe"
+      },
+      "b": {
+        "id": "q70-ebu-hanife-dogum",
+        "question": "Ebû Hanîfe hangi şehirde doğmuştur?",
+        "answer": "Kûfe"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4393,
+      "a": {
+        "id": "v12-history-005",
+        "question": "On ciltlik Seyahatnâme’nin müellifi olan Osmanlı gezgini kimdir?",
+        "answer": "Evliya Çelebi"
+      },
+      "b": {
+        "id": "q59-evliya-ilk",
+        "question": "Evliya Çelebi seyahatlerini 1630'lu yıllarda hangi şehirden başlatmıştır?",
+        "answer": "İstanbul"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4391,
+      "a": {
+        "id": "learn-akaid-008",
+        "question": "Hac 22/7'de kıyametle ilgili hangisi açıkça bildirilir?",
+        "answer": "Kabirdekilerin yeniden diriltilmesi"
+      },
+      "b": {
+        "id": "q54-tarik-011",
+        "question": "Târık 86/5-8'de insanın ilk yaratılışı hangi konuya delil gösterilir?",
+        "answer": "Yeniden diriltilmesine"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4386,
+      "a": {
+        "id": "q56-akabe-yil1",
+        "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+        "answer": "621"
+      },
+      "b": {
+        "id": "q56-akabe-egitmen",
+        "question": "TDV’ye göre Birinci Akabe Biatı’ndaki on iki Medinelinin kaçı Evs kabilesindendi?",
+        "answer": "İki"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4385,
+      "a": {
+        "id": "v12-quran-002",
+        "question": "Bakara 2/185'te Kur'an'ın indirildiği ay olarak hangisi anılır?",
+        "answer": "Ramazan"
+      },
+      "b": {
+        "id": "q62-fitre-zaman",
+        "question": "Fitre hangi ibadet ayıyla ilgili verilen sadakadır?",
+        "answer": "Ramazan"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4383,
+      "a": {
+        "id": "learn-women-011",
+        "question": "Hz. Ömer'in kızı olan ve Hz. Peygamber'le evlenen sahâbî kimdir?",
+        "answer": "Hafsa"
+      },
+      "b": {
+        "id": "learn-women-012",
+        "question": "Hz. Ömer’in vefatından sonra, Osman’ın çoğaltmak için getirttiği ilk mushaf derlemesi kimde korunuyordu?",
+        "answer": "Hafsa bint Ömer"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4375,
+      "a": {
+        "id": "q67-kasas-38",
+        "question": "Kasas 28/38'de Firavun yüksek bir yapı yaptırma emrini kime verir?",
+        "answer": "Hâmân'a"
+      },
+      "b": {
+        "id": "q67-ankebut-39",
+        "question": "Ankebût 29/39'da örnek verilen üç zorba kişi hangileridir?",
+        "answer": "Kārûn, Firavun ve Hâmân"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4372,
+      "a": {
+        "id": "q54-ala-020",
+        "question": "A‘lâ 87/9'da peygambere hangi görev hatırlatılır?",
+        "answer": "Öğüt vermek"
+      },
+      "b": {
+        "id": "new74-general-150",
+        "question": "Hakları anlatan hadiste kendisinden nasihat istenen kişinin tutumu ne olmalıdır?",
+        "answer": "Samimi biçimde öğüt vermek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4371,
+      "a": {
+        "id": "prophets-009",
+        "question": "Hz. Süleyman’ın babası olan peygamber hangisidir?",
+        "answer": "Hz. Dâvûd"
+      },
+      "b": {
+        "id": "v7-prophets-004",
+        "question": "Sebe' sûresi 34/10'a göre kendisine demiri işleme kolaylığı verilen peygamber kimdir?",
+        "answer": "Hz. Dâvûd"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4366,
+      "a": {
+        "id": "q51-ensar-006",
+        "question": "Birinci Akabe Biatı'nda Medineli heyet kaç kişiden oluşuyordu?",
+        "answer": "On iki"
+      },
+      "b": {
+        "id": "q56-akabe-yil1",
+        "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+        "answer": "621"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4354,
+      "a": {
+        "id": "q68-sitte-buhari",
+        "question": "Kütüb-i Sitte içinde Sahîh'iyle öne çıkan Muhammed b. İsmâil kimdir?",
+        "answer": "Buhârî"
+      },
+      "b": {
+        "id": "q68-buhari-yil",
+        "question": "Muhammed b. İsmâil el-Buhârî hangi milâdî yılda doğmuştur?",
+        "answer": "810"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4351,
+      "a": {
+        "id": "q59-beyt-sehir",
+        "question": "Abbâsîler döneminde gelişen Beytülhikme hangi şehirdeydi?",
+        "answer": "Bağdat"
+      },
+      "b": {
+        "id": "new74-history-273",
+        "question": "Hârûnürreşîd döneminde kâğıt imalâthanesi açılan Abbâsî başşehri hangisidir?",
+        "answer": "Bağdat"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4345,
+      "a": {
+        "id": "quran-meaning-v72-012",
+        "question": "Mâide 5/8'de adalet hakkında hangi ilke özellikle vurgulanır?",
+        "answer": "Bir topluluğa duyulan kinin adalete engel olmaması"
+      },
+      "b": {
+        "id": "v12-general-010",
+        "question": "Mâide 5/8'de adaletli davranmayı engellememesi istenen duygu hangisidir?",
+        "answer": "Bir topluluğa duyulan kin"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4337,
+      "a": {
+        "id": "q70-gazzali-sam",
+        "question": "Kendi anlatımını aktaran TDV’ye göre Gazzâlî Bağdat’tan sonra Emeviyye Camii’nde inzivâ için hangi şehre gitmiştir?",
+        "answer": "Şam"
+      },
+      "b": {
+        "id": "q70-gazzali-kudus",
+        "question": "el-Münkız’daki anlatımını aktaran TDV’ye göre Gazzâlî Şam’dan sonra hangi şehirde bir süre inzivâ yaşamıştır?",
+        "answer": "Kudüs"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4336,
+      "a": {
+        "id": "v11-prophets-013",
+        "question": "Hûd 11/64'te Hz. Sâlih'in kavmine Allah'ın işareti olarak gösterdiği hayvan hangisidir?",
+        "answer": "Dişi deve"
+      },
+      "b": {
+        "id": "q53-gasiye-032",
+        "question": "Gâşiye 88/17'de insanların yaratılışını düşünmesi istenen hayvan hangisidir?",
+        "answer": "Deve"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4334,
+      "a": {
+        "id": "e150-prophets-004",
+        "question": "Hz. Yûsuf'un kardeşleri babalarına hangi giysiyi kanlı getirir?",
+        "answer": "Gömleğini"
+      },
+      "b": {
+        "id": "e150-prophets-013",
+        "question": "Hz. Yûsuf babasının yüzüne sürülmesini istediği şeyi ne olarak belirtir?",
+        "answer": "Gömleği"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4333,
+      "a": {
+        "id": "q49-kutub-027",
+        "question": "Kütüb-i Sitte'de genel kabul gören altıncı kitabın müellifi kimdir?",
+        "answer": "İbn Mâce"
+      },
+      "b": {
+        "id": "q68-sitte-bes",
+        "question": "İbnü’l-Kayserânî’nin el-Usûlü’l-hamse’ye eklediği altıncı eser hangisidir?",
+        "answer": "İbn Mâce’nin es-Sünen’i"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4331,
+      "a": {
+        "id": "e150-general-008",
+        "question": "Tevbe 9/60'ta zekâtın verileceği grupların başında kimler sayılır?",
+        "answer": "Fakirler ve miskinler"
+      },
+      "b": {
+        "id": "q62-zekat-ayet",
+        "question": "Kur'an'da zekâtın kimlere verileceği özellikle hangi âyette sayılır?",
+        "answer": "Tevbe 9/60"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4318,
+      "a": {
+        "id": "q47-harun-032",
+        "question": "Hz. Hârûn'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Yirmi"
+      },
+      "b": {
+        "id": "q50-zekeriyya-022",
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4315,
+      "a": {
+        "id": "q67-kasas-30",
+        "question": "Yûsuf 12/6’da Ya‘kūb, nimetin tamamlanmasını hatırlatırken hangi iki atayı birlikte anar?",
+        "answer": "İbrâhim ve İshak"
+      },
+      "b": {
+        "id": "new74-prophets-027",
+        "question": "Hûd 11/71’de İbrâhim’in eşine hangi iki kişinin doğumu ardışık olarak müjdelenir?",
+        "answer": "İshak ve ardından Ya‘kūb"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4314,
+      "a": {
+        "id": "v13-history-008",
+        "question": "Mevlânâ'nın Mesnevî adlı eseri kaç defterden oluşur?",
+        "answer": "Altı"
+      },
+      "b": {
+        "id": "q50-zekeriyya-022",
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4314,
+      "a": {
+        "id": "quran-meaning-v72-002",
+        "question": "Bakara 2/153'te Allah'tan yardım isteme konusunda birlikte anılan iki tutum hangisidir?",
+        "answer": "Sabır ve namaz"
+      },
+      "b": {
+        "id": "learn-dua-013",
+        "question": "Bakara 2/250'deki duada Allah'tan ne istenir?",
+        "answer": "Sabır ve sebat"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4313,
+      "a": {
+        "id": "pilot-history-002",
+        "question": "Uhud Gazvesi hangi şehrin yakınlarında gerçekleşmiştir?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "e150-history-021",
+        "question": "3/625'te Medine yakınlarında Mekkeli müşriklerle yapılan gazve hangi dağın çevresinde gerçekleşmiştir?",
+        "answer": "Uhud Dağı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.431,
+      "a": {
+        "id": "q49-kutub-027",
+        "question": "Kütüb-i Sitte'de genel kabul gören altıncı kitabın müellifi kimdir?",
+        "answer": "İbn Mâce"
+      },
+      "b": {
+        "id": "q68-sitte-sunen",
+        "question": "Yaygın Kütüb-i Sitte listesindeki üç Sünen yazarı hangi grupta birlikte yer alır?",
+        "answer": "Ebû Dâvûd, Nesâî ve İbn Mâce"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4308,
+      "a": {
+        "id": "v12-history-012",
+        "question": "756'da Endülüs'te bağımsız Emevî emirliğini kuran kişi kimdir?",
+        "answer": "I. Abdurrahman"
+      },
+      "b": {
+        "id": "v13-history-004",
+        "question": "Kurtuba Ulucamii'nin yapımını 786 yılında başlatan Endülüs hükümdarı kimdir?",
+        "answer": "I. Abdurrahman"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4304,
+      "a": {
+        "id": "e150-prophets-038",
+        "question": "Âd kavmine gönderilen peygamber kimdir?",
+        "answer": "Hûd"
+      },
+      "b": {
+        "id": "q61-salihpeygamber-semud",
+        "question": "A‘râf 7/69’da Hûd, kavminin hangi topluluğun ardından onların yerine getirildiğini hatırlatır?",
+        "answer": "Nûh kavminin"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4299,
+      "a": {
+        "id": "v10-general-003",
+        "question": "Bir vakfın gelirlerinin nerede ve nasıl kullanılacağını belirten belge hangisidir?",
+        "answer": "Vakfiye"
+      },
+      "b": {
+        "id": "new74-history-112",
+        "question": "Bir Osmanlı imaretinde kimlere, ne kadar ve ne tür yemek verileceğini hangi belge düzenlerdi?",
+        "answer": "Vakfiye"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4298,
+      "a": {
+        "id": "learn-women-002",
+        "question": "Hz. Âişe’nin baba bir ablası olan ve hicret hazırlıklarına yardım eden sahâbî kimdir?",
+        "answer": "Esmâ bint Ebû Bekir"
+      },
+      "b": {
+        "id": "learn-women-008",
+        "question": "İlk eşi Ca‘fer b. Ebû Tâlib ile Habeşistan'a hicret eden kadın sahâbî kimdir?",
+        "answer": "Esmâ bint Umeys"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4293,
+      "a": {
+        "id": "e150-history-030",
+        "question": "Hz. Peygamber'den sonra ilk halife kim olmuştur?",
+        "answer": "Ebû Bekir"
+      },
+      "b": {
+        "id": "q69-bilalihabesi-vasita",
+        "question": "Bilâl-i Habeşî hangi sahâbî aracılığıyla İslâmiyet'i kabul etmiştir?",
+        "answer": "Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.429,
+      "a": {
+        "id": "new74-history-371",
+        "question": "Bettânî’nin astronomi alanındaki başlıca eseri hangisidir?",
+        "answer": "Kitâbü’z-Zîc"
+      },
+      "b": {
+        "id": "new74-history-374",
+        "question": "Bettânî’nin Kitâbü’z-Zîc’inin Latince’ye çevrilmesi hangi sonucu doğurmuştur?",
+        "answer": "Avrupalı astronomların çalışmalarından yararlanması"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4284,
+      "a": {
+        "id": "new74-general-284",
+        "question": "Kamu görevi sırasında iğne kadar bir malı bile gizlemek hadiste nasıl değerlendirilir?",
+        "answer": "Hıyanet olarak"
+      },
+      "b": {
+        "id": "new74-quran-032",
+        "question": "Enfâl 8/27’de emanetlerle ilgili hangi davranış yasaklanır?",
+        "answer": "Emanetlere bile bile hıyanet etmek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4278,
+      "a": {
+        "id": "q59-beyt-sehir",
+        "question": "Abbâsîler döneminde gelişen Beytülhikme hangi şehirdeydi?",
+        "answer": "Bağdat"
+      },
+      "b": {
+        "id": "q70-ahmed-b-hanbel-vefat",
+        "question": "Ahmed b. Hanbel hangi şehirde vefat etmiştir?",
+        "answer": "Bağdat"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4278,
+      "a": {
+        "id": "quran-002",
+        "question": "Mushaf sıralamasında ilk sure hangisidir?",
+        "answer": "Fâtiha"
+      },
+      "b": {
+        "id": "v8-quran-005",
+        "question": "Kur'an'daki 'es-seb'u'l-mesânî' ifadesi yaygın yoruma göre hangi sûreyi anlatır?",
+        "answer": "Fâtiha"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4276,
+      "a": {
+        "id": "learn-women-027",
+        "question": "Hz. Peygamber'in son evlendiği hanım olarak bilinen kişi kimdir?",
+        "answer": "Meymûne bint Hâris"
+      },
+      "b": {
+        "id": "learn-women-028",
+        "question": "Hz. Peygamber'in hanımlarından Meymûne bint Hâris'in önceki adı neydi?",
+        "answer": "Berre"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4272,
+      "a": {
+        "id": "q47-beyat-018",
+        "question": "Hz. Osman'ın Hudeybiye'de Kureyş'le görüşmeye gönderilmesinin temel sebebi neydi?",
+        "answer": "Umre niyetini ve barış isteğini açıklamak"
+      },
+      "b": {
+        "id": "q57-hudumre",
+        "question": "Hicrî 6. yıldaki Hudeybiye yolculuğunun başlangıç niyeti neydi?",
+        "answer": "Umre ziyareti"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4263,
+      "a": {
+        "id": "q63-karatay-sehir",
+        "question": "Karatay Medresesi Anadolu'da hangi şehirde yer alır?",
+        "answer": "Konya"
+      },
+      "b": {
+        "id": "q63-karatay-bani",
+        "question": "Konya’da 1251’de yaptırılan çini süslemeli medresenin bânisi kimdir?",
+        "answer": "Celâleddin Karatay"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4263,
+      "a": {
+        "id": "v11-quran-001",
+        "question": "Fâtiha sûresi kaç âyetten oluşur?",
+        "answer": "Yedi"
+      },
+      "b": {
+        "id": "q69-zeydbsabit-sure",
+        "question": "Zeyd b. Sâbit, Hz. Peygamber Medine'ye gelmeden önce kaç sûre ezberlemişti?",
+        "answer": "On yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.426,
+      "a": {
+        "id": "q70-ebu-hanife-dogum",
+        "question": "Ebû Hanîfe hangi şehirde doğmuştur?",
+        "answer": "Kûfe"
+      },
+      "b": {
+        "id": "q70-ebu-hanife-kadi",
+        "question": "Emevî yönetiminde İbn Hübeyre aracılığıyla Ebû Hanîfe’ye teklif edilen görevlerden biri hangisiydi?",
+        "answer": "Kûfe kadılığı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4257,
+      "a": {
+        "id": "new74-history-159",
+        "question": "Ali Kuşçu’nun Fâtih Camii’nde bulunan basîtesi hangi tür araçtır?",
+        "answer": "Güneş saati"
+      },
+      "b": {
+        "id": "new74-history-171",
+        "question": "İlm-i mîkāt hesaplarında “zaman denklemi” hangi iki saat arasındaki farkı ifade eder?",
+        "answer": "Gerçek güneş saati ile ortalama güneş saati"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4257,
+      "a": {
+        "id": "q63-karatay-tarih",
+        "question": "Karatay Medresesi hangi milâdî yılda yaptırılmıştır?",
+        "answer": "1251"
+      },
+      "b": {
+        "id": "q63-karatay-bani",
+        "question": "Konya’da 1251’de yaptırılan çini süslemeli medresenin bânisi kimdir?",
+        "answer": "Celâleddin Karatay"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4256,
+      "a": {
+        "id": "history-003",
+        "question": "Mescid-i Nebevî hangi şehirdedir?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "q70-malik-b-enes-egitim",
+        "question": "İmam Mâlik hangi şehirde ilim hayatını geliştirmiştir?",
+        "answer": "Medine"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4248,
+      "a": {
+        "id": "q65-isra-35",
+        "question": "Enbiyâ 21/72’de İbrâhim’e İshak’ın ardından ayrıca armağan olarak verilen kimdir?",
+        "answer": "Ya‘kūb"
+      },
+      "b": {
+        "id": "new74-prophets-047",
+        "question": "Yûsuf 12/38’de Yûsuf, dinlerine uyduğunu söylediği atalarını hangi adlarla anar?",
+        "answer": "İbrâhim, İshak ve Ya‘kūb"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4248,
+      "a": {
+        "id": "q49-taberi-009",
+        "question": "Târîhu'l-ümem ve'l-mülûk adlı büyük tarih eserinin yazarı kimdir?",
+        "answer": "Taberî"
+      },
+      "b": {
+        "id": "q49-taberi-011",
+        "question": "Taberî, büyük tarih eserini hangi milâdî yılda yazmaya başladı?",
+        "answer": "903"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4245,
+      "a": {
+        "id": "q58-suleym-rivayet",
+        "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+        "answer": "On dört"
+      },
+      "b": {
+        "id": "q64-bedir-muhacir",
+        "question": "Bedir'de İslâm ordusunda bulunan muhacirlerin sayısı TDV maddesinde kaç olarak verilir?",
+        "answer": "Yetmiş dört"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4238,
+      "a": {
+        "id": "v8-history-004",
+        "question": "İslâm'ın Medine'deki ilk öğretmenlerinden Mus'ab b. Umeyr hangi savaşta şehit olmuştur?",
+        "answer": "Uhud"
+      },
+      "b": {
+        "id": "v9-history-003",
+        "question": "Medine'deki öğretim faaliyetinden önce Habeşistan'a hicret eden sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4234,
+      "a": {
+        "id": "new74-prophets-022",
+        "question": "Bakara 2/124’te İbrâhim’in soyuna ilişkin isteğine verilen cevapta vaadin kimleri kapsamayacağı belirtilir?",
+        "answer": "Zalimleri"
+      },
+      "b": {
+        "id": "new74-prophets-117",
+        "question": "Kasas 28/21’de şehirden ayrılan Mûsâ’nın duasındaki kurtulma isteği kimlerle ilgilidir?",
+        "answer": "Zalimler topluluğuyla"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4233,
+      "a": {
+        "id": "v10-quran-002",
+        "question": "Kasas sûresinin adındaki 'kasas' sözcüğü Türkçede ne anlama gelir?",
+        "answer": "Kıssalar"
+      },
+      "b": {
+        "id": "v11-quran-013",
+        "question": "Nebe' sûresinin adındaki 'nebe' sözcüğü ne anlama gelir?",
+        "answer": "Haber"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4224,
+      "a": {
+        "id": "e150-history-017",
+        "question": "Bedir Gazvesi hicrî takvimin hangi ayında gerçekleşmiştir?",
+        "answer": "Ramazan"
+      },
+      "b": {
+        "id": "learn-history-002",
+        "question": "Kerbelâ Vak‘ası hicrî takvimin hangi ayında gerçekleşmiştir?",
+        "answer": "Muharrem"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4217,
+      "a": {
+        "id": "q68-sitte-hamse",
+        "question": "İlk dört temel hadis kitabına beşinci olarak hangi muhaddisin eseri eklenmiştir?",
+        "answer": "Tirmizî'nin"
+      },
+      "b": {
+        "id": "q68-tirmizi-vefat",
+        "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
+        "answer": "892"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4216,
+      "a": {
+        "id": "learn-women-013",
+        "question": "TDV’ye göre Hz. Hatice’nin vefatından sonra, Hz. Peygamber’in Medine’de Hz. Âişe ile evleninceye kadar tek eşi olan hanım kimdir?",
+        "answer": "Sevde bint Zem'a"
+      },
+      "b": {
+        "id": "learn-women-014",
+        "question": "Sevde bint Zem‘a ilk eşiyle birlikte nereye hicret etmiştir?",
+        "answer": "Habeşistan"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4207,
+      "a": {
+        "id": "learn-women-005",
+        "question": "Sahâbî Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
+        "answer": "Ümmü Süleym"
+      },
+      "b": {
+        "id": "q69-enesbmalik-teyze",
+        "question": "Enes b. Mâlik'in teyzesinin adı nedir?",
+        "answer": "Ümmü Harâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4205,
+      "a": {
+        "id": "q59-battuta-dogum",
+        "question": "İbn Battûta hangi şehirde doğmuştur?",
+        "answer": "Tanca"
+      },
+      "b": {
+        "id": "q59-battuta-yuz",
+        "question": "İbn Battûta’nın doğum yeri Tanca bugün hangi ülkededir?",
+        "answer": "Fas"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4202,
+      "a": {
+        "id": "q42-lokman-27",
+        "question": "Lokmân 31/27’de ağaçlar kalem, denizler mürekkep olsa da tükenmeyeceği söylenen nedir?",
+        "answer": "Allah’ın sözleri"
+      },
+      "b": {
+        "id": "q66-kehf-109",
+        "question": "Kehf 18/109'da Allah'ın sözlerinin tükenmezliği hangi örnekle anlatılır?",
+        "answer": "Denizin mürekkep olması"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4201,
+      "a": {
+        "id": "e150-general-014",
+        "question": "İlk müezzinlerden biri olan sahâbî kimdir?",
+        "answer": "Bilâl-i Habeşî"
+      },
+      "b": {
+        "id": "q69-bilalihabesi-vasita",
+        "question": "Bilâl-i Habeşî hangi sahâbî aracılığıyla İslâmiyet'i kabul etmiştir?",
+        "answer": "Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4197,
+      "a": {
+        "id": "q42-lokman-20",
+        "question": "Lokmân 31/20’de nimetler hangi iki sıfatla anılır?",
+        "answer": "Açık ve gizli"
+      },
+      "b": {
+        "id": "new74-quran-107",
+        "question": "Nahl 16/75’te güçsüz kölenin karşısında örnek verilen rızıklandırılmış kişi malını nasıl kullanır?",
+        "answer": "Gizli ve açık biçimde başkalarını yararlandırır"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4188,
+      "a": {
+        "id": "learn-women-012",
+        "question": "Hz. Ömer’in vefatından sonra, Osman’ın çoğaltmak için getirttiği ilk mushaf derlemesi kimde korunuyordu?",
+        "answer": "Hafsa bint Ömer"
+      },
+      "b": {
+        "id": "q69-abdullahbomerbhattab-hafsa",
+        "question": "Abdullah b. Ömer'in kız kardeşi ve Hz. Peygamber'in hanımı kimdir?",
+        "answer": "Hafsa"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4187,
+      "a": {
+        "id": "v11-history-006",
+        "question": "Pîrî Reis'in ilk dünya haritası hangi yılda hazırlanmıştır?",
+        "answer": "1513"
+      },
+      "b": {
+        "id": "new74-history-249",
+        "question": "Pîrî Reis, 1513 tarihli ilk dünya haritasını Kahire’de hangi padişaha sunmuştur?",
+        "answer": "Yavuz Sultan Selim"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4187,
+      "a": {
+        "id": "q59-battuta-eser",
+        "question": "İbn Battûta’nın seyahat anlatısı TDV’de hangi kısa Arapça adla anılır?",
+        "answer": "er-Rihle"
+      },
+      "b": {
+        "id": "new74-general-110",
+        "question": "Hadis öğrenmek ve râviler hakkında bilgi edinmek için yapılan ilim yolculuğuna ne denir?",
+        "answer": "Rihle"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4185,
+      "a": {
+        "id": "prophets-006",
+        "question": "Hz. Yûsuf’un babası olan peygamber kimdir?",
+        "answer": "Hz. Ya‘kūb"
+      },
+      "b": {
+        "id": "q65-isra-35",
+        "question": "Enbiyâ 21/72’de İbrâhim’e İshak’ın ardından ayrıca armağan olarak verilen kimdir?",
+        "answer": "Ya‘kūb"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4184,
+      "a": {
+        "id": "q53-fecr-003",
+        "question": "Fecr 89/14'te Allah hakkında hangi ifade yer alır?",
+        "answer": "Rabbin her şeyi gözetlemektedir"
+      },
+      "b": {
+        "id": "new74-quran-270",
+        "question": "Kāf 50/18’de insanın sözleriyle ilgili hangi uyarı yer alır?",
+        "answer": "Her sözün yanında dikkatli bir gözetleyici bulunduğu"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4184,
+      "a": {
+        "id": "history-006",
+        "question": "Mescid-i Nebevî’de barınma ve eğitimle anılan bölümün adı nedir?",
+        "answer": "Suffe"
+      },
+      "b": {
+        "id": "q48-ebu-hureyre-025",
+        "question": "Ebû Hüreyre'nin Medine'de bağlı bulunduğu, eğitim ve barınma yeri olarak tanınan topluluk hangisidir?",
+        "answer": "Ashâb-ı Suffe"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4177,
+      "a": {
+        "id": "quran-meaning-v72-015",
+        "question": "En'âm 6/141'de hasat edilen ürünlerle ilgili hangi iki ilke birlikte vurgulanır?",
+        "answer": "Hasat günü hakkını vermek ve israf etmemek"
+      },
+      "b": {
+        "id": "v12-general-011",
+        "question": "A'râf 7/31'de yiyip içme konusunda hangi sınır hatırlatılır?",
+        "answer": "İsraf etmemek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4175,
+      "a": {
+        "id": "e150-prophets-007",
+        "question": "Hz. Yûsuf'u satın alan kişi onu hangi ülkede evine götürür?",
+        "answer": "Mısır"
+      },
+      "b": {
+        "id": "q48-yusuf-032",
+        "question": "Kur’an'daki Yûsuf kıssasında Hz. Yûsuf'u Mısır'da satın alan kişi hangi unvanla anılır?",
+        "answer": "Aziz"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4172,
+      "a": {
+        "id": "q47-nuh-021",
+        "question": "Hz. Nûh'un kıssasına Kur’an'da kaç farklı sûrede yer verilir?",
+        "answer": "Yirmi sekiz"
+      },
+      "b": {
+        "id": "q47-harun-032",
+        "question": "Hz. Hârûn'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Yirmi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4165,
+      "a": {
+        "id": "new74-general-029",
+        "question": "Yaygın kullanımda küsûf ve husûf sırasıyla hangi gök olaylarını anlatır?",
+        "answer": "Güneş tutulması ve ay tutulması"
+      },
+      "b": {
+        "id": "new74-history-373",
+        "question": "Bettânî, Güneş ve Ay’ın görünür çaplarını inceleyerek hangi tutulmanın mümkün olduğu sonucuna varmıştır?",
+        "answer": "Halka şeklinde Güneş tutulması"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4161,
+      "a": {
+        "id": "v10-quran-003",
+        "question": "Kehf sûresinin adındaki 'kehf' kelimesi ne demektir?",
+        "answer": "Mağara"
+      },
+      "b": {
+        "id": "q66-kehf-16",
+        "question": "Kehf 18/16'da gençlerin inançlarını korumak için seçtikleri yer neresidir?",
+        "answer": "Mağara"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4159,
+      "a": {
+        "id": "q47-harun-032",
+        "question": "Hz. Hârûn'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Yirmi"
+      },
+      "b": {
+        "id": "new74-history-093",
+        "question": "Bursa Ulucamii’nin ibadet mekânını kaç kubbe örter?",
+        "answer": "Yirmi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4159,
+      "a": {
+        "id": "q61-meryem-ruya",
+        "question": "Meryem 19/17'de Meryem'e gönderilen varlık mealde hangi kelimeyle anılır?",
+        "answer": "Ruh"
+      },
+      "b": {
+        "id": "new74-prophets-128",
+        "question": "Meryem 19/13’te Yahyâ’ya hikmetin yanında verilen hangi iki nitelik anılır?",
+        "answer": "Şefkat ve ruh temizliği"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4146,
+      "a": {
+        "id": "v9-prophets-007",
+        "question": "Nûh 71/5'te davetin sürekliliği hangi zaman ikilisiyle anlatılır?",
+        "answer": "Gece ve gündüz"
+      },
+      "b": {
+        "id": "q67-rum-23",
+        "question": "Rûm 30/23'te insanların hangi hâli Allah'ın işaretlerinden biri olarak sunulur?",
+        "answer": "Gece ve gündüz uyumaları"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4144,
+      "a": {
+        "id": "history-003",
+        "question": "Mescid-i Nebevî hangi şehirdedir?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "e150-general-013",
+        "question": "İslâm'ın ilk döneminde ezan uygulaması hangi şehirde başlamıştır?",
+        "answer": "Medine"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4142,
+      "a": {
+        "id": "q71-ilyas-saffat",
+        "question": "Hz. İlyâs'ın peygamber olarak anıldığı ve kıssasına yer verilen sûre hangisidir?",
+        "answer": "Sâffât"
+      },
+      "b": {
+        "id": "q71-ilyas-ilyasin",
+        "question": "TDV İlyâs maddesinde Sâffât 37/130’la ilişkili verilen ad biçimi hangisidir?",
+        "answer": "İlyâsîn"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4141,
+      "a": {
+        "id": "v10-history-013",
+        "question": "İstanbul'daki Eyüp Sultan Külliyesi ilk olarak hangi hükümdar tarafından yaptırılmıştır?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "b": {
+        "id": "q63-istanbul-sultan",
+        "question": "İstanbul'daki Sultan Ahmed Camii'nin mimarı kimdir?",
+        "answer": "Sedefkâr Mehmed Ağa"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4141,
+      "a": {
+        "id": "new74-general-198",
+        "question": "Hadiste zenginliğin mal çokluğundan öte hangi nitelikte olduğu bildirilir?",
+        "answer": "Gönül tokluğunda"
+      },
+      "b": {
+        "id": "new74-general-211",
+        "question": "Hz. Peygamber’in duasında hidayet, takvâ ve iffetle birlikte hangi mânevî ihtiyaç istenir?",
+        "answer": "Gönül zenginliği"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.414,
+      "a": {
+        "id": "v8-prophets-004",
+        "question": "Meryem sûresi 19/54'te sözünde durmasıyla övülen peygamber kimdir?",
+        "answer": "Hz. İsmâil"
+      },
+      "b": {
+        "id": "v9-prophets-003",
+        "question": "Meryem 19/55'te halkına namazı ve zekâtı emrettiği belirtilen peygamber kimdir?",
+        "answer": "Hz. İsmâil"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4139,
+      "a": {
+        "id": "e150-prophets-032",
+        "question": "Güneşin doğuş yönünü tartışmada delil olarak kullanan peygamber kimdir?",
+        "answer": "İbrâhim"
+      },
+      "b": {
+        "id": "v9-prophets-009",
+        "question": "En‘âm sûresi 6/76-79'da yıldız, ay ve güneşi örnek gösteren peygamber kimdir?",
+        "answer": "Hz. İbrâhim"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4137,
+      "a": {
+        "id": "learn-women-022",
+        "question": "Rukıyye ve Osman Mekke döneminde ilk hicretlerini nereye yaptılar?",
+        "answer": "Habeşistan"
+      },
+      "b": {
+        "id": "learn-women-016",
+        "question": "Ümmü Habîbe Müslümanların erken dönem hicretlerinde nereye gitmiştir?",
+        "answer": "Habeşistan’a"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4129,
+      "a": {
+        "id": "v11-history-011",
+        "question": "Mimar Sinan'ın 'kalfalık eserim' diye andığı cami hangisidir?",
+        "answer": "Süleymaniye Camii"
+      },
+      "b": {
+        "id": "v11-history-012",
+        "question": "Mimar Sinan'ın Edirne'de inşa ettiği ünlü cami hangisidir?",
+        "answer": "Selimiye Camii"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4128,
+      "a": {
+        "id": "q45-cezeri-kitap",
+        "question": "Cezerî'nin ünlü mekanik kitabı kaç ana kısma ayrılmıştır?",
+        "answer": "Altı"
+      },
+      "b": {
+        "id": "q50-zekeriyya-022",
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4127,
+      "a": {
+        "id": "q53-beled-013",
+        "question": "Beled 90/10'da insana gösterildiği bildirilen şey nedir?",
+        "answer": "İki yol"
+      },
+      "b": {
+        "id": "q54-ala-017",
+        "question": "A‘lâ 87/3'te belirli ölçüyle yaratmanın yanında ne hatırlatılır?",
+        "answer": "Yol göstermek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4126,
+      "a": {
+        "id": "v12-prophets-013",
+        "question": "Sebe’ 34/12’de Süleyman için eritilip akıtıldığı bildirilen maden hangisidir?",
+        "answer": "Bakır"
+      },
+      "b": {
+        "id": "new74-history-051",
+        "question": "TDV’ye göre İslâm devletlerinin sikkelerinde başlıca kullanılan üç maden hangisidir?",
+        "answer": "Altın, gümüş ve bakır"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4126,
+      "a": {
+        "id": "q51-muahat-009",
+        "question": "TDV'nin aktardığı rivayette Medine'deki muâhât için muhacir ve ensar hangi sahâbînin evine çağrılır?",
+        "answer": "Enes b. Mâlik"
+      },
+      "b": {
+        "id": "q69-enesbmalik-anne",
+        "question": "Enes b. Mâlik’in kardeşi olan sahâbî kimdir?",
+        "answer": "Berâ b. Mâlik"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4125,
+      "a": {
+        "id": "q58-suleym-rivayet",
+        "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+        "answer": "On dört"
+      },
+      "b": {
+        "id": "q64-bedir-kervan",
+        "question": "TDV’ye göre Bedir Gazvesi’nde Müslümanlardan kaç kişi şehit olmuştur?",
+        "answer": "On dört"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4123,
+      "a": {
+        "id": "q70-gazzali-sam",
+        "question": "Kendi anlatımını aktaran TDV’ye göre Gazzâlî Bağdat’tan sonra Emeviyye Camii’nde inzivâ için hangi şehre gitmiştir?",
+        "answer": "Şam"
+      },
+      "b": {
+        "id": "new74-history-068",
+        "question": "Kurtuba Ulucamii’nin ilk yapısında hangi cami örnek alınmıştır?",
+        "answer": "Şam Emeviyye Camii"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4122,
+      "a": {
+        "id": "prophets-005",
+        "question": "Hz. Muhammed’e ilk vahyin geldiği yer hangisidir?",
+        "answer": "Hira mağarası"
+      },
+      "b": {
+        "id": "e150-history-001",
+        "question": "İlk vahyin geldiği Hira dağı hangi adla da bilinir?",
+        "answer": "Nur dağı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4118,
+      "a": {
+        "id": "q42-lokman-31",
+        "question": "Lokmân 31/31'e göre denizde gemilerin yüzmesi özellikle kimler için ibretler barındırır?",
+        "answer": "Çok sabreden ve çok şükredenler"
+      },
+      "b": {
+        "id": "q47-nuh-022",
+        "question": "İsrâ 17/3'te Nûh hangi niteliğiyle anılır?",
+        "answer": "Çok şükreden bir kul olması"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4111,
+      "a": {
+        "id": "v12-history-005",
+        "question": "On ciltlik Seyahatnâme’nin müellifi olan Osmanlı gezgini kimdir?",
+        "answer": "Evliya Çelebi"
+      },
+      "b": {
+        "id": "q59-evliya-son",
+        "question": "TDV'ye göre Evliya Çelebi'nin Seyahatnâme'de anlattığı geziler yaklaşık hangi yıla kadar sürer?",
+        "answer": "1681"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.411,
+      "a": {
+        "id": "prophets-006",
+        "question": "Hz. Yûsuf’un babası olan peygamber kimdir?",
+        "answer": "Hz. Ya‘kūb"
+      },
+      "b": {
+        "id": "new74-prophets-047",
+        "question": "Yûsuf 12/38’de Yûsuf, dinlerine uyduğunu söylediği atalarını hangi adlarla anar?",
+        "answer": "İbrâhim, İshak ve Ya‘kūb"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4108,
+      "a": {
+        "id": "q65-furkan-70",
+        "question": "Furkân 25/70'te tövbe edip iman edenlerin kötü davranışlarıyla ilgili hangi müjde yer alır?",
+        "answer": "Kötülüklerin iyiliklere çevrilmesi"
+      },
+      "b": {
+        "id": "new74-quran-035",
+        "question": "Hûd 11/114’te iyiliklerle kötülükler arasında hangi ilişki belirtilir?",
+        "answer": "İyiliklerin kötülükleri gidermesi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4108,
+      "a": {
+        "id": "v10-quran-005",
+        "question": "Rahmân sûresinde tekrarlanan nimetleri yalanlama sorusu hangi iki varlık grubuna yöneltilir?",
+        "answer": "İnsanlar ve cinler"
+      },
+      "b": {
+        "id": "q66-neml-17",
+        "question": "Neml 27/17'ye göre Hz. Süleyman'ın ordusunda hangi varlık grupları bulunuyordu?",
+        "answer": "Cinler, insanlar ve kuşlar"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4106,
+      "a": {
+        "id": "q55-insikak-024",
+        "question": "İnşikâk 84/10'da kitabı hangi taraftan verilen kişi uyarılır?",
+        "answer": "Arkasından"
+      },
+      "b": {
+        "id": "q55-insikak-025",
+        "question": "İnşikâk 84/11-12'de kitabı arkasından verilen kişi neyle karşılaşır?",
+        "answer": "Alevli ateş"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4104,
+      "a": {
+        "id": "q47-hac-036",
+        "question": "Hanefî mezhebine göre haccın farzları arasında hangi tavaf yer alır?",
+        "answer": "Ziyaret tavafı"
+      },
+      "b": {
+        "id": "q62-tavaf-veda",
+        "question": "Hac dönüşüyle ilişkili tavaf hangi adla anılır?",
+        "answer": "Vedâ tavafı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4104,
+      "a": {
+        "id": "new74-prophets-027",
+        "question": "Hûd 11/71’de İbrâhim’in eşine hangi iki kişinin doğumu ardışık olarak müjdelenir?",
+        "answer": "İshak ve ardından Ya‘kūb"
+      },
+      "b": {
+        "id": "new74-prophets-047",
+        "question": "Yûsuf 12/38’de Yûsuf, dinlerine uyduğunu söylediği atalarını hangi adlarla anar?",
+        "answer": "İbrâhim, İshak ve Ya‘kūb"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4103,
+      "a": {
+        "id": "history-006",
+        "question": "Mescid-i Nebevî’de barınma ve eğitimle anılan bölümün adı nedir?",
+        "answer": "Suffe"
+      },
+      "b": {
+        "id": "q60-suffe-adi",
+        "question": "Mescid-i Nebevî'de barınarak özellikle Kur'an ve dinî bilgilerle meşgul olan topluluğun özel adı hangisidir?",
+        "answer": "Ehl-i Suffe"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4099,
+      "a": {
+        "id": "new74-general-021",
+        "question": "Fıkıhta maddî veya hükmî kirlerden temizlenmeyi genel olarak anlatan kavram hangisidir?",
+        "answer": "Tahâret"
+      },
+      "b": {
+        "id": "new74-prophets-300",
+        "question": "Hz. Peygamber Kubâ halkına övülen temizliklerini sorunca verdikleri cevapta hangi uygulama özellikle anılır?",
+        "answer": "Su ile taharetlenmeleri"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4098,
+      "a": {
+        "id": "v12-general-007",
+        "question": "Bakara 2/43'te namazla birlikte yerine getirilmesi emredilen malî ibadet hangisidir?",
+        "answer": "Zekât"
+      },
+      "b": {
+        "id": "q61-isa-incil",
+        "question": "Meryem 19/31’de Îsâ’ya yaşadığı sürece emredildiği söylenen iki ibadet hangileridir?",
+        "answer": "Namaz ve zekât"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4094,
+      "a": {
+        "id": "q47-nuh-021",
+        "question": "Hz. Nûh'un kıssasına Kur’an'da kaç farklı sûrede yer verilir?",
+        "answer": "Yirmi sekiz"
+      },
+      "b": {
+        "id": "q62-zekat-sekiz",
+        "question": "Tevbe 9/60'da zekât verilebilecek kaç grup sayılır?",
+        "answer": "Sekiz"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4094,
+      "a": {
+        "id": "q65-isra-35",
+        "question": "Enbiyâ 21/72’de İbrâhim’e İshak’ın ardından ayrıca armağan olarak verilen kimdir?",
+        "answer": "Ya‘kūb"
+      },
+      "b": {
+        "id": "q67-kasas-30",
+        "question": "Yûsuf 12/6’da Ya‘kūb, nimetin tamamlanmasını hatırlatırken hangi iki atayı birlikte anar?",
+        "answer": "İbrâhim ve İshak"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4087,
+      "a": {
+        "id": "q48-hatice-042",
+        "question": "TDV madde başlığına göre Hz. Hatice hangi milâdî yılda vefat etmiştir?",
+        "answer": "620"
+      },
+      "b": {
+        "id": "q68-nesai-vefat",
+        "question": "TDV’nin daha güvenilir kabul ettiği İbn Yûnus rivayetine göre Nesâî hangi milâdî yılda vefat etmiştir?",
+        "answer": "915"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4086,
+      "a": {
+        "id": "q47-nuh-020",
+        "question": "Hz. Nûh'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Kırk üç"
+      },
+      "b": {
+        "id": "q47-harun-032",
+        "question": "Hz. Hârûn'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Yirmi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4086,
+      "a": {
+        "id": "v10-prophets-014",
+        "question": "Nûh 71/28'de bağışlanma duasında kendisinden sonra kimleri anar?",
+        "answer": "Anne babasını"
+      },
+      "b": {
+        "id": "new74-general-258",
+        "question": "“Her doğan fıtrat üzere doğar” hadisinin devamında çocuğun dinî yönelişinde kimlerin etkisi özellikle anılır?",
+        "answer": "Anne ve babasının"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4084,
+      "a": {
+        "id": "q68-sitte-davud",
+        "question": "Kütüb-i Sitte’nin Sicistânî nisbesiyle tanınan Sünen müellifi kimdir?",
+        "answer": "Ebû Dâvûd"
+      },
+      "b": {
+        "id": "q68-sitte-nesai",
+        "question": "Mısır’a yerleşip es-Sünen’iyle tanınan Kütüb-i Sitte müellifi kimdir?",
+        "answer": "Nesâî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4076,
+      "a": {
+        "id": "e150-general-010",
+        "question": "Namazda ayakta durmaya ne ad verilir?",
+        "answer": "Kıyam"
+      },
+      "b": {
+        "id": "q65-furkan-64",
+        "question": "Furkân 25/64'te iyi kulların gece ibadeti hangi iki duruşla anlatılır?",
+        "answer": "Secde ve kıyam"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4072,
+      "a": {
+        "id": "q68-sitte-nesai",
+        "question": "Mısır’a yerleşip es-Sünen’iyle tanınan Kütüb-i Sitte müellifi kimdir?",
+        "answer": "Nesâî"
+      },
+      "b": {
+        "id": "q68-sitte-sunen",
+        "question": "Yaygın Kütüb-i Sitte listesindeki üç Sünen yazarı hangi grupta birlikte yer alır?",
+        "answer": "Ebû Dâvûd, Nesâî ve İbn Mâce"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4069,
+      "a": {
+        "id": "q47-nuh-020",
+        "question": "Hz. Nûh'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Kırk üç"
+      },
+      "b": {
+        "id": "q50-zekeriyya-022",
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4068,
+      "a": {
+        "id": "q60-suffe-kim",
+        "question": "Aklâm-ı sitte içinde birlikte yer alan yazı çifti hangisidir?",
+        "answer": "Sülüs ve nesih"
+      },
+      "b": {
+        "id": "new74-history-248",
+        "question": "Geleneksel mahyalarda yazı için en uygun görülen hat türü hangisidir?",
+        "answer": "Sülüs"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4066,
+      "a": {
+        "id": "q60-aksa-sehir",
+        "question": "Mescid-i Aksâ hangi şehirde yer alır?",
+        "answer": "Kudüs"
+      },
+      "b": {
+        "id": "q60-aksa-isra",
+        "question": "İsrâ 17/1'de çevresinin bereketli kılındığı bildirilen mescid hangisidir?",
+        "answer": "Mescid-i Aksâ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4062,
+      "a": {
+        "id": "v11-quran-002",
+        "question": "Nisâ 4/114’te hayır taşımayan fısıldaşmalardan hangi içerikteki konuşmalar ayrı tutulur?",
+        "answer": "Sadaka, iyilik veya insanların arasını düzeltme çağrısı"
+      },
+      "b": {
+        "id": "new74-quran-186",
+        "question": "Bakara 2/224’te yeminlerin hangi iyi davranışlara engel kılınmaması istenir?",
+        "answer": "İyilik, takvâ ve insanların arasını düzeltmeye"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4054,
+      "a": {
+        "id": "q45-biruni-yil",
+        "question": "Bîrûnî el-Âsârü'l-Bâkiye'yi hangi milâdî yılda yazdı?",
+        "answer": "1000"
+      },
+      "b": {
+        "id": "q45-biruni-sehir",
+        "question": "Bîrûnî el-Âsârü'l-Bâkiye'yi hangi şehirde kaleme aldı?",
+        "answer": "Cürcân"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4049,
+      "a": {
+        "id": "q62-zekat-sekiz",
+        "question": "Tevbe 9/60'da zekât verilebilecek kaç grup sayılır?",
+        "answer": "Sekiz"
+      },
+      "b": {
+        "id": "q67-kasas-27",
+        "question": "Kasas 28/27'de Hz. Mûsâ'ya teklif edilen iş süresinin başlangıcı kaç yıldır?",
+        "answer": "Sekiz yıl"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4045,
+      "a": {
+        "id": "q66-kehf-28",
+        "question": "Kehf 18/28'de birlikte bulunmak öğütlenen kişiler hangi özelliğe sahiptir?",
+        "answer": "Sabah akşam Rablerine dua edenler"
+      },
+      "b": {
+        "id": "q67-rum-17",
+        "question": "Rûm 30/17'de hangi iki gün diliminde Allah'ı tesbih etme vurgulanır?",
+        "answer": "Akşam ve sabah"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4043,
+      "a": {
+        "id": "v13-general-007",
+        "question": "Hadis literatüründe 'Sahîhayn' adı hangi iki âlimin sahih hadis kitapları için kullanılır?",
+        "answer": "Buhârî ve Müslim"
+      },
+      "b": {
+        "id": "q68-sitte-muslim",
+        "question": "Kütüb-i Sitte içinde Buhârî dışında Sahîh'iyle tanınan muhaddis kimdir?",
+        "answer": "Müslim b. Haccâc"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4034,
+      "a": {
+        "id": "new74-history-044",
+        "question": "Halife Mansûr’un kurdurduğu ilk Bağdat’ın ana plan biçimi hangisidir?",
+        "answer": "Daire"
+      },
+      "b": {
+        "id": "new74-history-255",
+        "question": "Osmanlı zaman ve yön hesaplarında kullanılan rubu‘ tahtasının ana biçimi hangisidir?",
+        "answer": "Çeyrek daire"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4034,
+      "a": {
+        "id": "prophets-008",
+        "question": "Kur’an’da Hz. Îsâ’nın annesi olarak anılan kişi kimdir?",
+        "answer": "Meryem"
+      },
+      "b": {
+        "id": "e150-quran-034",
+        "question": "Mushaf sıralamasında 19. sûre hangisidir?",
+        "answer": "Meryem"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4032,
+      "a": {
+        "id": "q60-aksa-sehir",
+        "question": "Mescid-i Aksâ hangi şehirde yer alır?",
+        "answer": "Kudüs"
+      },
+      "b": {
+        "id": "q60-aksa-beyt",
+        "question": "Beytülmakdis adı hangi kutsal mekânla bağlantılıdır?",
+        "answer": "Mescid-i Aksâ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4032,
+      "a": {
+        "id": "learn-dua-001",
+        "question": "Bakara 2/201'deki duada açıkça birlikte dile getirilen istekler hangisidir?",
+        "answer": "Dünya ve âhiret iyiliği"
+      },
+      "b": {
+        "id": "new74-prophets-163",
+        "question": "Âl-i İmrân 3/45’te Meryem’e müjdelenen Îsâ’nın itibarı hangi iki alan için belirtilir?",
+        "answer": "Dünya ve âhiret"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4031,
+      "a": {
+        "id": "e150-prophets-002",
+        "question": "Hz. Yûsuf rüyasını öncelikle kime anlatır?",
+        "answer": "Babasına"
+      },
+      "b": {
+        "id": "q48-yusuf-031",
+        "question": "Kur’an kıssasında Hz. Yûsuf'un babası rüyasını duyunca ona ne öğütler?",
+        "answer": "Rüyasını kardeşlerinden saklamasını"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.403,
+      "a": {
+        "id": "q50-suayb-011",
+        "question": "Hûd 11/89'da Hz. Şuayb hangi kavmin kendilerinden uzak olmadığını özellikle belirtir?",
+        "answer": "Lût kavmi"
+      },
+      "b": {
+        "id": "q67-ankebut-26",
+        "question": "Ankebût 29/26'da Hz. İbrâhim'e iman ettiği belirtilen peygamber kimdir?",
+        "answer": "Lût"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4028,
+      "a": {
+        "id": "history-010",
+        "question": "Halife Mansûr’un Abbâsî başşehri olarak kurduğu şehir hangisidir?",
+        "answer": "Bağdat"
+      },
+      "b": {
+        "id": "q59-beyt-sehir",
+        "question": "Abbâsîler döneminde gelişen Beytülhikme hangi şehirdeydi?",
+        "answer": "Bağdat"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4023,
+      "a": {
+        "id": "q60-haram-uc",
+        "question": "Hadislerde özellikle ziyaret edilmesi anılan üç mescidden biri aşağıdakilerden hangisidir?",
+        "answer": "Mescid-i Harâm"
+      },
+      "b": {
+        "id": "q70-safii-ilk",
+        "question": "İmam Şâfiî henüz on üç yaşındayken hangi kutsal mekânda Kur'an okutmaya başlamıştır?",
+        "answer": "Mescid-i Harâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4022,
+      "a": {
+        "id": "q58-suleym-rivayet",
+        "question": "TDV maddesine göre Ümmü Süleym Hz. Peygamber'den kaç hadis rivayet etmiştir?",
+        "answer": "On dört"
+      },
+      "b": {
+        "id": "q63-bursa-vakif",
+        "question": "Bursa Ulucamii yanındaki tarihî bedestende kaç kubbe bulunur?",
+        "answer": "On dört"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4022,
+      "a": {
+        "id": "e150-history-009",
+        "question": "Hz. Muhammed'e hicrette arkadaşlık eden sahâbî kimdir?",
+        "answer": "Ebû Bekir"
+      },
+      "b": {
+        "id": "v10-history-001",
+        "question": "Hicret hazırlığında kuşağını ikiye böldüğü için 'Zâtünnitâkayn' diye anılan sahâbî kimdir?",
+        "answer": "Esmâ bint Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.402,
+      "a": {
+        "id": "e150-history-030",
+        "question": "Hz. Peygamber'den sonra ilk halife kim olmuştur?",
+        "answer": "Ebû Bekir"
+      },
+      "b": {
+        "id": "q69-bilalihabesi-azat",
+        "question": "Bilâl-i Habeşî'yi kölelikten kurtarıp âzat eden sahâbî kimdir?",
+        "answer": "Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4019,
+      "a": {
+        "id": "e150-history-017",
+        "question": "Bedir Gazvesi hicrî takvimin hangi ayında gerçekleşmiştir?",
+        "answer": "Ramazan"
+      },
+      "b": {
+        "id": "v12-quran-002",
+        "question": "Bakara 2/185'te Kur'an'ın indirildiği ay olarak hangisi anılır?",
+        "answer": "Ramazan"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4012,
+      "a": {
+        "id": "q43-insan-7",
+        "question": "İnsân 76/7 için yapılan gönüllü ibadet sözü yorumunda hangi yükümlülük kastedilir?",
+        "answer": "Adak"
+      },
+      "b": {
+        "id": "q52-kurban-022",
+        "question": "Kişinin başlangıçta yükümlü olmadığı kurbanı Allah’a söz vererek üstlenmesi hangi işlemdir?",
+        "answer": "Adak"
+      },
+      "decision": "same-fact-replaced",
+      "reason": "Replacement recorded in final-semantic-replacements-03."
+    },
+    {
+      "score": 0.4011,
+      "a": {
+        "id": "v13-history-008",
+        "question": "Mevlânâ'nın Mesnevî adlı eseri kaç defterden oluşur?",
+        "answer": "Altı"
+      },
+      "b": {
+        "id": "q49-kutub-025",
+        "question": "Kütüb-i Sitte adı kaç hadis kitabını ifade eder?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.401,
+      "a": {
+        "id": "q68-sitte-buhari",
+        "question": "Kütüb-i Sitte içinde Sahîh'iyle öne çıkan Muhammed b. İsmâil kimdir?",
+        "answer": "Buhârî"
+      },
+      "b": {
+        "id": "q68-sitte-cami",
+        "question": "Kütüb-i Sitte’de el-Câmiu’s-sahîh adıyla eseri bulunan üçlü hangisidir?",
+        "answer": "Buhârî, Müslim ve Tirmizî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    },
+    {
+      "score": 0.4001,
+      "a": {
+        "id": "q60-aksa-sehir",
+        "question": "Mescid-i Aksâ hangi şehirde yer alır?",
+        "answer": "Kudüs"
+      },
+      "b": {
+        "id": "q70-gazzali-kudus",
+        "question": "el-Münkız’daki anlatımını aktaran TDV’ye göre Gazzâlî Şam’dan sonra hangi şehirde bir süre inzivâ yaşamıştır?",
+        "answer": "Kudüs"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Different event, person, property, definition scope or actual added relation; a common name/answer/template alone is insufficient to delete a question."
+    }
+  ]
+}

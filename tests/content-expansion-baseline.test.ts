@@ -4,7 +4,7 @@ import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { createHash } from "node:crypto";
 import type { Question } from "../src/content/questions/model";
-import { questions } from "../src/content/questions";
+import { questionsV73 as questions } from "../src/content/questions/questions-v73";
 import overlaps from "../docs/content-3000-20261125/confirmed-fact-overlaps.json";
 import { questionsV74Candidate } from "../src/content/questions/questions-v74.candidate";
 import { existingQuestionPatches } from "../src/content/questions/existing-patches-v74";

@@ -7,9 +7,9 @@ import { SUPPORTED_BANK_VERSIONS, gameQuestion, knownQuestion } from "../src/con
 const normalize = (s: string) => s.normalize("NFKC").toLocaleLowerCase("tr-TR").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
 test("600-question editorial gate: all published IDs and prompts are unique", () => {
-  assert.equal(BANK_VERSION, 73);
+  assert.equal(BANK_VERSION, 74);
   assert.equal(bankV31.length, 600);
-  assert.equal(playableQuestions().length, 1500);
+  assert.equal(playableQuestions().length, 3000);
   const ids = bankV31.map(q => q.id);
   assert.equal(new Set(ids).size, ids.length, "duplicate question IDs");
   const prompts = bankV31.map(q => normalize(q.question));

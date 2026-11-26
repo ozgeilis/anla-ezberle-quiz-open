@@ -127,7 +127,7 @@
       "total": 282
     }
   ],
-  "newQuestionsAdded": 0,
+  "newQuestionsAdded": 1500,
   "newQuestionsStaged": 1500,
   "stagedByCategory": {
     "quran": 375,
@@ -137,23 +137,113 @@
   },
   "stagedStructuralIssueCount": 0,
   "newQuestionsRemaining": 0,
-  "existingReplacementsStaged": 98,
+  "existingReplacementsStaged": 146,
   "sourceRechecks": 1500,
   "answerSupportIssues": 1,
   "stemScopeIssues": 7,
   "fullExplanationRechecks": 1496,
   "sourceChecksPending": 0,
-  "confirmedOverlappingFactGroups": 88,
-  "minimumRedundantEntries": 98,
+  "confirmedOverlappingFactGroups": 131,
+  "minimumRedundantEntries": 146,
   "flaggedQuestions": 171,
   "structuralIssueCount": 0,
-  "runtimeBankModified": false,
-  "readyForIntegration": false,
+  "runtimeBankModified": true,
+  "readyForIntegration": true,
   "limitations": [
-    "A single correct option ID proves schema integrity, not theological uniqueness of the answer.",
-    "Quality warnings are review candidates, not confirmed errors.",
-    "New content is staged only; the runtime bank, topic mappings, saved progress and online export remain unchanged.",
-    "Six playable screen categories are derived from a separate per-question topic map; new IDs need reviewed mappings before integration.",
-    "Token overlap audit is not exhaustive semantic duplicate detection."
-  ]
+    "Independent theological expert approval is not claimed.",
+    "Difficulty is based on knowledge and options; original equal-third provisional plan was not forced by relabelling.",
+    "Similarity screening and manual review cannot prove every conceivable paraphrase unique.",
+    "Full suite: 480 passed, one pre-existing missing ignored Google native source file.",
+    "Local SQL acceptance blocked by unresponsive Docker and locked Mac; no hosted migration."
+  ],
+  "currentBankVersion": 74,
+  "currentQuestionCount": 3000,
+  "fullOldOptionAndDifficultyReviews": 1500,
+  "fullNewDifficultyReviews": 1500,
+  "existingPatchedRecords": 563,
+  "topicMappingsComplete": true,
+  "integrationStatus": "v74 wired and local engine/history tests passed in isolated content worktree; main/backend/store unchanged",
+  "difficultyDistribution": [
+    {
+      "id": "quran",
+      "old": 450,
+      "new": 375,
+      "total": 825,
+      "easy": 210,
+      "medium": 498,
+      "hard": 117
+    },
+    {
+      "id": "prophets",
+      "old": 230,
+      "new": 375,
+      "total": 605,
+      "easy": 220,
+      "medium": 233,
+      "hard": 152
+    },
+    {
+      "id": "history",
+      "old": 401,
+      "new": 375,
+      "total": 776,
+      "easy": 139,
+      "medium": 367,
+      "hard": 270
+    },
+    {
+      "id": "general",
+      "old": 419,
+      "new": 375,
+      "total": 794,
+      "easy": 328,
+      "medium": 319,
+      "hard": 147
+    }
+  ],
+  "screenDistribution": [
+    {
+      "id": "quran_dualar",
+      "total": 627,
+      "easy": 163,
+      "medium": 369,
+      "hard": 95
+    },
+    {
+      "id": "siyer_sahabe",
+      "total": 526,
+      "easy": 178,
+      "medium": 191,
+      "hard": 157
+    },
+    {
+      "id": "peygamberler",
+      "total": 409,
+      "easy": 94,
+      "medium": 225,
+      "hard": 90
+    },
+    {
+      "id": "fikih",
+      "total": 337,
+      "easy": 149,
+      "medium": 137,
+      "hard": 51
+    },
+    {
+      "id": "iman_ahlak",
+      "total": 401,
+      "easy": 200,
+      "medium": 170,
+      "hard": 31
+    },
+    {
+      "id": "tarih_medeniyet",
+      "total": 700,
+      "easy": 113,
+      "medium": 325,
+      "hard": 262
+    }
+  ],
+  "baselineNote": "bankVersion/questionCount/bankSha256 and original categories record the immutable v73 starting audit; currentBankVersion/currentQuestionCount/difficultyDistribution describe v74."
 }

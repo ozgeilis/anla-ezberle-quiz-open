@@ -1,97 +1,80 @@
 {
   "date": "2026-11-26",
-  "targetedNewAuditUnitTests": {
+  "preIntegrationSelected": {
     "status": "PASSED",
-    "passed": 7,
-    "failed": 0,
-    "method": "node --import tsx -e require of content-expansion-baseline.test.ts, same-process node:test",
-    "scope": "1500 staged additions (375 per category) and 128 old editorial patches, including 98 duplicate replacements; after latest source, semantic and distractor refinements",
-    "durationMs": 118.470791
+    "tests": 33
   },
-  "targetedTypeScriptSemanticCheck": {
+  "integratedRegressionRecheck": {
     "status": "PASSED",
-    "note": "Covered by the completed full-project TypeScript check."
+    "tests": 139
   },
-  "targetedESLint": {
+  "fullUnitRun": {
+    "status": "FAILED_ONE_PREEXISTING_NATIVE_SOURCE_MISSING",
+    "tests": 481,
+    "passed": 480,
+    "failed": 1,
+    "durationMs": 52960.052583,
+    "failure": "google-native.test.ts: ignored modules/google-native-signin/ios/GoogleNativeSignInModule.swift absent from this Git source base and current main; an untracked copy exists in the separate iOS release worktree. Auth code was not imported into this content change.",
+    "logSha256": "477abbe461d0e999d527fa182e7ff30a65075fe5e2f57fa5e818a9c26df6f438"
+  },
+  "fullTypeScript": {
     "status": "PASSED",
-    "scope": [
-      "scripts/content-expansion-baseline.ts",
-      "tests/content-expansion-baseline.test.ts",
-      "src/content/questions/existing-patches-v74.ts",
-      "src/content/questions/questions-v74.candidate.ts"
-    ]
+    "exitCode": 0
   },
-  "all1500StructuralAudit": {
+  "fullESLint": {
     "status": "PASSED",
-    "records": 1500,
-    "structuralIssues": 0,
-    "evidence": "baseline-audit.json",
-    "religiousAccuracyProven": false
+    "exitCode": 0
   },
-  "historicalAndCategoryTestRuns": {
+  "candidateIntegrity": {
     "status": "PASSED",
-    "passed": 28,
-    "failed": 0,
-    "durationMs": 101469.575667,
-    "method": "same-process node --import tsx -e require of five selected test modules",
-    "scope": [
-      "content-expansion-baseline",
-      "canonical-questions",
-      "broad-categories-history",
-      "question-similarity-audit",
-      "audit-published-questions"
-    ],
-    "note": "Completed on 500 staged additions and 126 old patches; selected suite only. Later changes are covered by the seven-test run on 1500 additions/128 old patches. No full application suite claim."
+    "records": 3000,
+    "new": 1500,
+    "perCategory": 375,
+    "oldIdsRetained": 1500,
+    "historicalV73Sha256Unchanged": true,
+    "sourceReceiptsMatch": true,
+    "topicMappings": 3000
   },
-  "fullProjectTypecheck": {
+  "realEngineIntegration": {
     "status": "PASSED",
-    "command": "node node_modules/typescript/bin/tsc --noEmit --pretty false",
-    "exitCode": 0,
-    "date": "2026-11-25",
-    "note": "Full project check passed at 126 old patches. Latest complete check of Git-identical tracked source and 128 old patches passed in a separate source snapshot; four changed TypeScript files were byte-identical to worktree. No binary/build created.",
-    "latestSnapshot": {
-      "status": "PASSED",
-      "exitCode": 0,
-      "trackedSourceFiles": 752,
-      "sameTypeScriptFilesSha256": {
-        "scripts/content-expansion-baseline.ts": "d4b00a9764603e3b40a2769dd3255e81b653b0fc4854bbc4f4f8854d7ec6cae3",
-        "tests/content-expansion-baseline.test.ts": "dfc1b114dd58ad9df4e737c801fdbb2643cc5e8db0dd2310917e3d1f1176aad3",
-        "src/content/questions/existing-patches-v74.ts": "137adf8cd5095a1a3915a36c488a913ed075da4dbd1f35db2949a69a4023db93",
-        "src/content/questions/questions-v74.candidate.ts": "02620ea4249a6212352c31993ea58eba10601689de38c43dc5d217494afa3014"
-      }
-    }
+    "normal": true,
+    "daily": true,
+    "schemaFocusCategories": 4,
+    "screenDifficultyRounds": 18,
+    "screenStageRounds": 30,
+    "scoreAndSaveRoundTrip": true,
+    "legacyXpAndAnswersRetained": true
   },
-  "bank3000Integrity": {
+  "sourceComparison": {
+    "old": 1500,
+    "new": 1500,
+    "replacedOldDuplicates": 146,
+    "expertApprovalClaimed": false,
+    "unverifiedCandidateSources": 0
+  },
+  "serverSQL": {
+    "status": "NOT_RUN_LOCAL_DOCKER_TIMEOUT",
+    "preparedCI": ".github/workflows/content-v74.yml",
+    "hostedApplied": false
+  },
+  "deviceTest": {
     "status": "NOT_RUN",
-    "reason": "The 1500 additions now exist and their IDs, four-option shape and source receipts passed; final combined semantic/difficulty/topic/integration acceptance remains open."
-  },
-  "deviceTests": {
-    "status": "NOT_RUN",
-    "reason": "Content audit only; no app build or runtime content change."
-  },
-  "religiousVerification": {
-    "status": "INCOMPLETE",
-    "existingAnswerSourceChecks": 1500,
-    "originalExplanationsSupported": 1496,
-    "originalExplanationsRequiringCorrection": 4,
-    "remainingExistingSourceChecks": 0,
-    "newSourceComparedStaged": 1500,
-    "existingDuplicateReplacementsStaged": 98,
-    "bankWideSemanticAcceptance": "pending",
-    "mediumHardFullDifficultyCalibration": "pending",
-    "expertApprovalClaimed": false
+    "reason": "Content source update; no new IPA/AAB."
   },
   "publication": {
     "mainMerged": false,
     "storeBuildCreated": false,
-    "backendChanged": false
+    "backendChanged": false,
+    "androidAlphaChanged": false
   },
-  "stalledRunner": {
-    "status": "STOPPED",
-    "note": "An earlier process-isolated repeat stalled and was terminated; it is not counted as passing. The later same-process selected run completed with 28 passing tests."
+  "stableWorktreeRecheck": {
+    "status": "PASSED",
+    "tests": 16,
+    "durationMs": 1363.092292,
+    "scope": "v74 source manifest, runtime topic equality, 3000 integrity, source receipts, quota, 48 screen rounds and v73 history"
   },
-  "stalledTypeScriptAttempt": {
-    "status": "STOPPED_NOT_PASSED",
-    "reason": "Desktop synchronous reads of unchanged source files stalled; own processes terminated, not counted as passing. Subsequent full source-snapshot check completed with exit 0."
+  "canonicalGenerationCheck": {
+    "status": "PASSED",
+    "banks": "frozen v71/v72/v73 + current v74"
   }
 }
