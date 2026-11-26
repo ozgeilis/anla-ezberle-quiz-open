@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, mkdtempSync, writeFileSync, rmSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const { resolveIosBuild, googleIosClientId } = require("../config/ios.js");
@@ -56,4 +59,50 @@ test("native Google keeps Supabase nonce verification and the verified session t
   assert.match(swift, /ERR_CANCELED/);
   assert.match(swift, /"accessToken": user\.accessToken\.tokenString/);
   assert.equal(swift.includes("refreshToken"), false);
+});
+
+test("local Expo native sources survive Git and EAS packaging while generated projects stay excluded", () => {
+  const files = [
+    "modules/google-native-signin/ios/GoogleNativeSignInModule.swift",
+    "modules/google-native-signin/ios/GoogleNativeSignIn.podspec",
+  ];
+  for (const file of files) {
+    const tracked = execFileSync("git", ["show", `:./${file}`]);
+    assert.deepEqual(
+      tracked,
+      readFileSync(file),
+      `${file} must be a tracked source, not local-only`,
+    );
+  }
+  for (const ignore of [".gitignore", ".easignore"]) {
+    const dir = mkdtempSync(join(tmpdir(), "anla-native-ignore-"));
+    try {
+      execFileSync("git", ["init", "--quiet", dir]);
+      writeFileSync(join(dir, ".gitignore"), readFileSync(ignore));
+      const paths = [
+        ...files,
+        "ios/Podfile",
+        "android/app/build.gradle",
+        ".env.production",
+        "signing.p12",
+      ];
+      const ignored = execFileSync(
+        "git",
+        ["-C", dir, "check-ignore", "--no-index", "--stdin"],
+        {
+          input: paths.join("\n") + "\n",
+          encoding: "utf8",
+        },
+      )
+        .trim()
+        .split("\n");
+      assert.deepEqual(
+        ignored,
+        paths.slice(2),
+        `${ignore}: keep source, omit generated projects and secrets`,
+      );
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  }
 });

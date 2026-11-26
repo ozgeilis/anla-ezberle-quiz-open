@@ -7,8 +7,9 @@ dist/
 expo-env.d.ts
 .env*
 !.env.example
-ios/
-android/
+# CNG generates root native projects; local Expo module sources stay tracked.
+/ios/
+/android/
 artifacts/integrity/old-*
 
 # Ignored private development credentials and provisioning output.
