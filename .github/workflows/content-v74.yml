@@ -38,15 +38,33 @@ jobs:
       - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359
         with:
           version: 2.121.0
-      - name: Initialize isolated Storage fixture
+      - name: Initialize isolated fixture with unused host ports
         run: |
           python3 - <<'PY'
+          import os
+          import re
+          import socket
           from pathlib import Path
           p = Path("supabase/config.toml")
           s = p.read_text()
           setting = "[storage]\nenabled = false"
           assert s.count(setting) == 1
-          p.write_text(s.replace(setting, "[storage]\nenabled = true", 1))
+          s = s.replace(setting, "[storage]\nenabled = true", 1)
+          # CI-only identity and ports; never change another project's containers
+          # or rely on the developer machine's fixed Supabase ports being free.
+          project = f"anla-v74-{os.environ['GITHUB_RUN_ID']}-{os.environ['GITHUB_RUN_ATTEMPT']}"
+          s, count = re.subn(r'^project_id = "[^"]+"', f'project_id = "{project}"', s, count=1, flags=re.M)
+          assert count == 1
+          reserved = []
+          def unused_port(match):
+              sock = socket.socket()
+              sock.bind(("0.0.0.0", 0))
+              reserved.append(sock)
+              return match[1] + str(sock.getsockname()[1])
+          s = re.sub(r'^(\s*(?:port|shadow_port|inspector_port)\s*=\s*)\d+', unused_port, s, flags=re.M)
+          p.write_text(s)
+          for sock in reserved:
+              sock.close()
           PY
       - name: Start local-only fixture without hosted credentials
         run: supabase start --exclude studio,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
