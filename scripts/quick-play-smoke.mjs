@@ -48,6 +48,7 @@ await new Promise((done) => server.listen(0, "127.0.0.1", done));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({ headless: true });
 const checks = [];
+let currentPage;
 try {
   for (const width of [320, 390])
     for (const theme of ["light", "dark"]) {
@@ -56,12 +57,16 @@ try {
         colorScheme: theme,
         reducedMotion: "reduce",
       });
+      ctx.setDefaultTimeout(20_000);
+      ctx.setDefaultNavigationTimeout(30_000);
+      console.log(`START ${width}/${theme}`);
       // Offline guest acceptance. Only this local exported application can load.
       await ctx.route("**/*", (r) =>
         new URL(r.request().url()).origin === origin ? r.continue() : r.abort(),
       );
       const p = await ctx.newPage(),
         errors = [];
+      currentPage = p;
       p.on("pageerror", (e) => errors.push(e.message));
       await p.goto(origin);
       const quick = p.getByRole("button", {
@@ -69,6 +74,7 @@ try {
         exact: true,
       });
       await quick.waitFor();
+      await p.getByTestId("studio-intro").waitFor({ state: "hidden" });
       await p.evaluate(() => document.fonts.ready);
       assert.ok(
         await p
@@ -86,6 +92,7 @@ try {
         "Quick play must fit on the first screen",
       );
       await p.screenshot({ path: join(output, `home-${width}-${theme}.png`) });
+      console.log(`HOME ${width}/${theme}: opening quick play`);
       await quick.click();
       await p.waitForURL((url) => url.pathname === "/quiz");
       const seen = [];
@@ -101,6 +108,7 @@ try {
           assert.equal(q.difficulty, i <= easyCount ? "easy" : "medium");
           assert.ok(!seen.includes(q.id));
           seen.push(q.id);
+          console.log(`QUESTION ${width}/${theme}: ${i}/10 ${q.id}`);
           if (capture && i === 1)
             await p.screenshot({
               path: join(output, `quiz-${width}-${theme}.png`),
@@ -195,6 +203,29 @@ try {
   console.log(
     "PASS actual browser: one-tap mixed v74, 20s, four categories, easy first round, results, save/reload and category navigation at 320/390 light/dark",
   );
+} catch (error) {
+  if (currentPage && !currentPage.isClosed()) {
+    await currentPage
+      .screenshot({ path: join(output, "failure.png") })
+      .catch(() => {});
+    await writeFile(
+      join(output, "failure.json"),
+      JSON.stringify(
+        {
+          message: error.message,
+          url: currentPage.url(),
+          visibleText: (await currentPage.locator("body").innerText()).slice(
+            0,
+            6000,
+          ),
+          completedChecks: checks,
+        },
+        null,
+        2,
+      ),
+    );
+  }
+  throw error;
 } finally {
   await browser.close();
   await new Promise((done) => server.close(done));
