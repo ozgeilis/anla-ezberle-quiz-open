@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   isolated-acceptance:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -88,9 +88,10 @@ jobs:
               sock.close()
           PY
       - name: Start local-only fixture without hosted credentials
+        id: start_fixture
         run: supabase start --exclude studio,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
       - name: Validate v74, frozen banks, private keys, ACL and scoring
         run: pnpm exec tsx scripts/check-canonical-bank-local.ts "$RUNNER_TEMP/v74-private"
       - name: Stop isolated fixture
-        if: always()
+        if: always() && (steps.start_fixture.outcome == 'success' || steps.start_fixture.outcome == 'failure')
         run: supabase stop --no-backup
