@@ -95,7 +95,7 @@ Bkz. `V74-SERVER-ROLLOUT.md`.
 Entegrasyon öncesi 33 içerik/geçmiş testi, TypeScript ve hedefli lint geçti.
 İlk tam entegrasyon koşusunda eski aktif-sürüm beklentileri ortaya çıktı;
 bunlar tarihî snapshot’lara açıkça bağlanarak düzeltildi. Başarısız olan ilgili
-modüllerin yeniden koşusunda **139/139 test geçti**. Son tam koşu **481 test: 480 geçti, 1 taban kaynak eksikliği nedeniyle başarısız**.
+modüllerin yeniden koşusunda **139/139 test geçti**. Son tam koşu **482 test: 481 geçti, 1 taban kaynak eksikliği nedeniyle başarısız**.
 Tam TypeScript ve tam lint geçti. Yeni worktree’deki son v74 kontrolünde
 **16/16 test** ve v71–v74 canonical dosya kontrolü geçti.
 Ayrıntılar `test-results.json` içindedir.
@@ -115,3 +115,14 @@ v73’te başlayan gerçek sentetik maç, v74 seçildikten sonra v73 anahtarlar�
 V72’nin eski kategori sürümü 1 etiketli önizlemeleri de kendi tarihî sözleşmeleriyle
 korunur; bunun için son yerel geçmiş kontrolünde 29/29 test geçti.
 Fiziksel cihaz testi, yeni IPA/AAB, main merge, canlı veri işlemi ve mağaza yayını yapılmadı.
+
+## Son doğrulama
+
+Kod commit’i `895624a49aaa7ab849f2564f672025ce72af243e` GitHub’a pushlandı.
+[Taslak PR #33](https://github.com/ozgeilis/anla-ezberle-quiz-open/pull/33)
+ve [son CI koşusu](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45783982572).
+Son CI: TypeScript, lint, manifest, seçili içerik/geçmiş testleri ve izole SQL **GEÇTİ**.
+Son gerçek worktree tam testi: **482 test; 481 geçti, 1 yukarıda belirtilen
+Google native Swift kaynak eksikliği nedeniyle başarısız**.
+Yerel Docker kontrolü başarısız kaldı; yerine kullanılan CI veritabanı sentetik ve izoledir.
+Main merge, canlı v74 etkinleştirmesi ve mağaza dağıtımı yapılmadı.

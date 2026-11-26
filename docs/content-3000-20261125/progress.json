@@ -153,8 +153,8 @@
     "Independent theological expert approval is not claimed.",
     "Difficulty is based on knowledge and options; original equal-third provisional plan was not forced by relabelling.",
     "Similarity screening and manual review cannot prove every conceivable paraphrase unique.",
-    "Full suite: 480 passed, one pre-existing missing ignored Google native source file.",
-    "Local SQL acceptance blocked by unresponsive Docker and locked Mac; no hosted migration."
+    "Full suite: 482 passed, one pre-existing missing ignored Google native source file.",
+    "Local Docker unavailable; final isolated GitHub SQL acceptance passed on run 45783982572. No hosted migration."
   ],
   "currentBankVersion": 74,
   "currentQuestionCount": 3000,
@@ -245,5 +245,6 @@
       "hard": 262
     }
   ],
-  "baselineNote": "bankVersion/questionCount/bankSha256 and original categories record the immutable v73 starting audit; currentBankVersion/currentQuestionCount/difficultyDistribution describe v74."
+  "baselineNote": "bankVersion/questionCount/bankSha256 and original categories record the immutable v73 starting audit; currentBankVersion/currentQuestionCount/difficultyDistribution describe v74.",
+  "finalCiRun": 45783982572
 }

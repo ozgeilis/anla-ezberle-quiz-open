@@ -14,8 +14,8 @@
 | Uygulamanın v74’e bağlanması | Tamamlandı; yalnız izole dal | Statik runtime snapshot; konu sürümleri geniş 3 / öğrenme 4 |
 | Eski oyun, cevap, skor, XP | Tamamlandı ve test edildi | V1–v73 frozen kayıtlar; yeni oyun sonrası JSON dönüşü ve ödül eşitliği |
 | Tam TypeScript / lint | GEÇTİ | test-results.json |
-| Tam otomatik test paketi | BAŞARISIZ: 480/481 geçti | Taban Git kaynağında yok sayılan Google native Swift dosyası eksik; içerik değişikliği bu dosyayı değiştirmedi |
+| Tam otomatik test paketi | BAŞARISIZ: 481/482 geçti | Taban Git kaynağında yok sayılan Google native Swift dosyası eksik; içerik değişikliği bu dosyayı değiştirmedi |
 | Sunucu v74 migration ve staging kodu | Hazır; canlıya uygulanmadı | Kapalı onay bayrağı, değişmez v72/v73, 3000 sayımı |
-| İzole SQL kabulü | İki GitHub CI koşusu GEÇTİ; yerelde çalışmadı | 45781366636 ve 45782057697; v73 maçı v74 geçişinden sonra eski anahtarlarıyla tamamlandı |
+| İzole SQL kabulü | Son GitHub CI koşusu GEÇTİ; yerelde çalışmadı | 45783982572, kod 895624a; v73 maçı v74 geçişinden sonra eski anahtarlarıyla tamamlandı |
 | Gerçek cihaz / yeni iOS veya Android paketi | ÇALIŞTIRILMADI | Bu görevde build ve mağaza dağıtımı yapılmadı |
 | Main / canlı Supabase / mağazalar | Değiştirilmedi | Ayrı onay sınırı korunuyor |

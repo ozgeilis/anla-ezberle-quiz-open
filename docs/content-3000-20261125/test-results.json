@@ -10,12 +10,14 @@
   },
   "fullUnitRun": {
     "status": "FAILED_ONE_PREEXISTING_NATIVE_SOURCE_MISSING",
-    "tests": 481,
-    "passed": 480,
+    "tests": 482,
+    "passed": 481,
     "failed": 1,
-    "durationMs": 52960.052583,
+    "durationMs": 51198.401,
     "failure": "google-native.test.ts: ignored modules/google-native-signin/ios/GoogleNativeSignInModule.swift absent from this Git source base and current main; an untracked copy exists in the separate iOS release worktree. Auth code was not imported into this content change.",
-    "logSha256": "477abbe461d0e999d527fa182e7ff30a65075fe5e2f57fa5e818a9c26df6f438"
+    "logSha256": "21ca4548026f47af7d4942e8c603d1e82f97d194a22ad530ecab4c6fdd131486",
+    "sourceCommit": "895624a49aaa7ab849f2564f672025ce72af243e",
+    "execution": "Actual stable Git worktree; no temporary source copy"
   },
   "fullTypeScript": {
     "status": "PASSED",
@@ -102,5 +104,19 @@
     "status": "PASSED",
     "tests": 29,
     "scope": "Frozen v1-v73, v72 previews tagged old broad version, v74 scoring, persisted XP and source views"
+  },
+  "finalServerCI": {
+    "status": "PASSED",
+    "runId": 45783982572,
+    "runAttempt": 1,
+    "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45783982572",
+    "sourceCommit": "895624a49aaa7ab849f2564f672025ce72af243e",
+    "typecheck": "PASSED",
+    "lint": "PASSED",
+    "sourceManifest": "PASSED",
+    "selectedContentAndHistoryTests": "PASSED",
+    "isolatedSQLAcceptance": "PASSED",
+    "hostedChanged": false,
+    "notes": "Unique CI project and seven unused host ports resolved preceding runner port collision. No local containers restarted."
   }
 }
