@@ -1,0 +1,40 @@
+{
+  "main": "1c6a3d876a4ae01661feff22db5823cad4c1b926",
+  "reviewedIntegration": "6a7868791e300c9cca8d03988c6dade656a4cb75",
+  "scopeCountsBeforeFinalEvidenceOnlyCommit": {
+    "applicationConfigNativeAndTools": {
+      "files": 105,
+      "addedLines": 4928,
+      "removedLines": 371
+    },
+    "ci": {
+      "files": 3,
+      "addedLines": 108,
+      "removedLines": 3
+    },
+    "docs": {
+      "files": 304,
+      "addedLines": 180457,
+      "removedLines": 0
+    },
+    "questionContent": {
+      "files": 95,
+      "addedLines": 202561,
+      "removedLines": 10
+    },
+    "server": {
+      "files": 19,
+      "addedLines": 1458,
+      "removedLines": 81
+    },
+    "tests": {
+      "files": 63,
+      "addedLines": 2829,
+      "removedLines": 209
+    }
+  },
+  "mainPrivacyAndAppAdsByteEqual": true,
+  "pr33ContentAndQuickPlayUnchanged": true,
+  "mainMerged": false,
+  "existingPrRefsChanged": false
+}

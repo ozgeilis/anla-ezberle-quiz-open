@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-26",
+  "bankVersion": 74,
+  "rows": 3000,
+  "newRows": 1500,
+  "liveRows": 3000,
+  "pools": 264,
+  "newByCategory": {
+    "quran": 375,
+    "prophets": 375,
+    "history": 375,
+    "general": 375
+  },
+  "files": [
+    {
+      "file": "async-v74.private.sql",
+      "sha256": "1bb63c3ec996d69cff59769c2627ebad0a1f952679a916a45794f308434e4d0f",
+      "bytes": 5846781
+    },
+    {
+      "file": "live-v74.private.sql",
+      "sha256": "5c0460ce271c321773d6d09365c2990135e0539849114539d86a15bd898a5808",
+      "bytes": 4644371
+    }
+  ],
+  "privateSqlOutsideGit": true,
+  "answerKeysPrinted": false,
+  "sqlApplied": false
+}

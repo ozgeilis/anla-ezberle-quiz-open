@@ -1,0 +1,39 @@
+{
+  "runId": 45794437930,
+  "jobId": 139821360828,
+  "passedCode": "cbde74c1ece3ca00fdfe6378231925e38fc0a846",
+  "reusedWithoutUnnecessaryRerun": true,
+  "files": [
+    {
+      "file": "supabase/migrations/20261126074656_canonical_bank_v74.sql",
+      "unchangedFromPassedCI": true,
+      "sha256": "5280c037f167be5d29db3ceaa7ba6943e8aa5b62f9b6dedf31926d9ba4c6701f"
+    },
+    {
+      "file": "supabase/tests/canonical_bank_v74.sql",
+      "unchangedFromPassedCI": true,
+      "sha256": "d313c0a6b8bc0c21af3f7ad0833bc379a34e690c0f7d624d1320a9c313b90dc4"
+    },
+    {
+      "file": "scripts/check-canonical-bank-local.ts",
+      "unchangedFromPassedCI": true,
+      "sha256": "f79a357907712b4a8a36b7842f55202a983a6d07e746a7b984bf7e8cf17e307b"
+    },
+    {
+      "file": "scripts/online-content-export.ts",
+      "unchangedFromPassedCI": true,
+      "sha256": "c15795477fa4b294a5326e82dc7c12bc9477753598257cd9bf32763a6061b2b6"
+    },
+    {
+      "file": "scripts/live-content.ts",
+      "unchangedFromPassedCI": true,
+      "sha256": "9ba64e3489a5c3c071893358dd6c9f63e8217efb731ea4f23c639bb95a37f668"
+    },
+    {
+      "file": "src/content/questions/questions-v74.ts",
+      "unchangedFromPassedCI": true,
+      "sha256": "f78feafbf0f8c140200fcaa5c1f1e2be0a6845783c8d1922c9bb30380735600c"
+    }
+  ],
+  "liveDatabaseTouched": false
+}

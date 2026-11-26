@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-26",
+  "source": "Live App Store Connect App Privacy published page",
+  "publishedTypeCount": 17,
+  "types": {
+    "Name": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "Email Address": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "Phone Number": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "Coarse Location": {
+      "purposes": [
+        "Developer’s Advertising or Marketing",
+        "Analytics",
+        "App Functionality",
+        "Third-Party Advertising"
+      ],
+      "linked": true,
+      "tracking": false
+    },
+    "Contacts": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "Gameplay Content": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "Customer Support": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "Other User Content": {
+      "purposes": ["App Functionality"],
+      "linked": true,
+      "tracking": false
+    },
+    "User ID": {
+      "purposes": ["App Functionality", "Analytics"],
+      "linked": true,
+      "tracking": false
+    },
+    "Device ID": {
+      "purposes": [
+        "Developer’s Advertising or Marketing",
+        "Analytics",
+        "App Functionality",
+        "Third-Party Advertising"
+      ],
+      "linked": true,
+      "tracking": true
+    },
+    "Product Interaction": {
+      "purposes": [
+        "Third-Party Advertising",
+        "Analytics",
+        "App Functionality",
+        "Developer’s Advertising or Marketing"
+      ],
+      "linked": true,
+      "tracking": false
+    },
+    "Advertising Data": {
+      "purposes": [
+        "Analytics",
+        "Third-Party Advertising",
+        "Developer’s Advertising or Marketing"
+      ],
+      "linked": true,
+      "tracking": false
+    },
+    "Other Usage Data": {
+      "purposes": ["Analytics"],
+      "linked": true,
+      "tracking": false
+    },
+    "Crash Data": {
+      "purposes": ["Analytics"],
+      "linked": false,
+      "tracking": false
+    },
+    "Performance Data": {
+      "purposes": [
+        "App Functionality",
+        "Third-Party Advertising",
+        "Developer’s Advertising or Marketing",
+        "Analytics"
+      ],
+      "linked": false,
+      "tracking": false
+    },
+    "Other Diagnostic Data": {
+      "purposes": [
+        "Developer’s Advertising or Marketing",
+        "App Functionality",
+        "Third-Party Advertising",
+        "Analytics"
+      ],
+      "linked": true,
+      "tracking": false
+    },
+    "Other Data Types": {
+      "purposes": ["Analytics", "App Functionality"],
+      "linked": true,
+      "tracking": false
+    }
+  },
+  "googleSdkChecks": [
+    {
+      "type": "Name",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    },
+    {
+      "type": "Email Address",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    },
+    {
+      "type": "Phone Number",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    },
+    {
+      "type": "Other Data Types",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    },
+    {
+      "type": "Coarse Location",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    },
+    {
+      "type": "User ID",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    },
+    {
+      "type": "Device ID",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": true
+    },
+    {
+      "type": "Other Usage Data",
+      "sdkPurposesCovered": true,
+      "linkedMatches": true,
+      "sdkTracking": false,
+      "appAggregateTracking": false
+    }
+  ],
+  "googleManifestCovered": true,
+  "necessaryGooglePrivacyEdits": [],
+  "appPrivacyChanged": false,
+  "actualPhoneTransmissionVerified": false,
+  "packetLevelTrafficCapture": false,
+  "googleFalseDoesNotOverrideAdMobTracking": true
+}

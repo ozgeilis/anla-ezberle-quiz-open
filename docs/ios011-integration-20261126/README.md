@@ -1,5 +1,12 @@
 # iOS 0.1.1 entegrasyon hazırlığı — 26 Kasım 2026
 
+**Son canlı kontrol:** 0.1.1 / Build 13 Ready for Distribution; Marketing URL
+doğru. App Privacy yayımlanmış 17 türle Google SDK manifestini kapsıyor.
+Yeni entegre v74 güncellemesi için öneri 0.1.2; onaylanmadı/oluşturulmadı.
+Güncel sonuçlar: `FINAL-PREFLIGHT.md`, `GOOGLE-PRIVACY-COMPARISON.md` ve
+`V74-CUTOVER-AND-ROLLBACK.md`. Aşağıdaki önceki kabul/plan kayıtları tarihsel
+bağlamıyla korunur. Bu oturumda yeni build veya canlı değişiklik yapılmadı.
+
 ## Kapsam ve kaynak
 
 Güncel main `1c6a3d876a4ae01661feff22db5823cad4c1b926`.
@@ -143,18 +150,11 @@ kabulü gibi taşınmadı. Yeni paket bu görevde üretilmedi.
    ayrı mağaza/AdMob kontrolü bekler; dosyanın varlığı crawler onayı değildir.
 6. Apple build/version, üretim reklam ortamı, gömülü public client config ve
    approval kapıları yetkili paket aşamasında doğrulanmalı.
-7. Gerçek yeni simülatör paketindeki GoogleSignIn 10.1.0 gizlilik manifesti,
-   kimlikle ilişkili PhoneNumber ve OtherDataTypes dahil sekiz tür bildiriyor.
-   `google-sdk-privacy.json` tam kaynak/amaç/izleme beyanını içerir. Mevcut App
-   Privacy formuyla uzlaştırılmadan native SDK eklenmiş yayının beyanı hazır
-   sayılmaz; telefon istenmedi diye manifest beyanı gerekçesiz çıkarılmamalı.
-   GoogleSignIn manifestinin Tracking=false olması AdMob beyanlarını kaldırmaz.
-   App Store Connect formu bu görevde değiştirilmedi. Manifestin geniş SDK
-   beyanı, bütün alanların bu uygulama akışında gerçekten gönderildiğini tek
-   başına kanıtlamaz. Google’ın resmî SDK açıklaması kullanıcı kimliği ve IP
-   üzerinden yaklaşık konumdan söz ediyor; PhoneNumber/OtherDataTypes için
-   manifest ile gerçek kapsam uzlaştırılmalı. Kaynak:
-   https://developers.google.com/identity/sign-in/ios/app-privacy .
+7. **Kapandı:** canlı App Privacy'de 17 tür yayımlanmış; GoogleSignIn'in
+   sekiz türünün amaç/kimlik/tracking kapsamı eşleşiyor. PhoneNumber,
+   OtherDataTypes ve OtherUsageData zaten ekli, UserID Analytics mevcut.
+   Form düzeltmesi gerekmedi. google-sdk-privacy.json önceki gerçek manifest
+   kanıtıdır; güncel karşılaştırma GOOGLE-PRIVACY-COMPARISON.md içindedir.
 8. Pod kurulumu AppAuth/GTMAppAuth/GoogleSignIn için deprecation uyarısı verdi;
    kurulum başarısız olmadı. Bu görev SDK yükseltmez; release öncesi SDK
    destek/manifest değerlendirmesinde uyarı göz ardı edilmemeli.
