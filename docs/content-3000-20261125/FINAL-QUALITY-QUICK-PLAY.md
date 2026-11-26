@@ -135,7 +135,7 @@ ve başlamış maçın korunması, 264 havuz birleşimi, sunucu puanlaması,
 Supabase'e bağlanılmadı veya migration uygulanmadı.
 
 İlk CI denemesi Playwright/Ubuntu 26.04 uyumsuzluğunda başarısız oldu; çalıştırıcı
-Ubuntu 24.04'e sabitlendi. İkinci deneme uzun kurulum sırasında teşhis için
+Ubuntu 24.04'e sabitlendi. İkinci deneme uzun kurulumun ardından tarayıcı testi sürerken teşhis için
 durduruldu; kısmi ekranları korundu. Son koşuda kurulum/test ayrı adımlar ve
 sınırlı beklemelerle tamamen geçti. Bu ara denemeler başarı gibi gösterilmez.
 
