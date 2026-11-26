@@ -79,7 +79,12 @@ try {
         const errors = [];
         p.on("pageerror", (e) => errors.push(e.message));
         await p.goto(origin, { waitUntil: "networkidle" });
-        await btn(p, "Oyuna Başla").waitFor();
+        await btn(
+          p,
+          baseline
+            ? "Oyuna Başla"
+            : "Hemen Oyna, kategorilerden karışık 10 soru",
+        ).waitFor();
         await ready(p);
         const id = `${baseline ? "before" : "after"}-${width}-${theme}-${state}`;
         await shot(p, id + "-top");
@@ -136,7 +141,16 @@ try {
           );
           assert(paints.every((p) => p.includes("linear-gradient")));
           assert.equal(new Set(paints).size, 4);
-          assert((await btn(p, "Oyuna Başla").boundingBox()).height <= 54);
+          assert(
+            (
+              await btn(
+                p,
+                baseline
+                  ? "Oyuna Başla"
+                  : "Hemen Oyna, kategorilerden karışık 10 soru",
+              ).boundingBox()
+            ).height <= 54,
+          );
         }
         if (width === 390 && theme === "light" && state === "daily") {
           await p.goto(origin + "/profile", { waitUntil: "networkidle" });
@@ -157,7 +171,8 @@ try {
     const p = await ctx.newPage();
     current = p;
     for (const [name, target] of [
-      ["Oyuna Başla", "/categories"],
+      ["Kategori ve zorluk seç", "/categories"],
+      ["Hemen Oyna, kategorilerden karışık 10 soru", "/quiz"],
       ["Arkadaşlarınla Oyna", "/live"],
       ["Son skor ve kişisel geçmiş", "/ranking?section=personal"],
       ["Kazanılan rozetler", "/achievements"],

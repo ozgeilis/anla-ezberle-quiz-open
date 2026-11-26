@@ -20,13 +20,13 @@ const complete = (session: ReturnType<typeof createSession>) => {
 };
 
 test("v16, 531 unchanged v15 questions plus 12 Diyanet-checked questions; no hidden drafts",()=>{
-  assert.equal(BANK_VERSION, 73);
+  assert.equal(BANK_VERSION, 74);
   assert.equal(bankV14.length,500);
   assert.equal(bankV15.length,531);
   assert.equal(bankV16.length,543);
   assert.equal(publishedNewQuestionsV16.length,12);
-  assert.equal(questions.length, 1500);
-  assert.equal(playableQuestions().length, 1500);
+  assert.equal(questions.length, 3000);
+  assert.equal(playableQuestions().length, 3000);
   assert.ok(bankV15.every((q,i)=>q===bankV16[i]));
   assert.deepEqual(bankV16.slice(0,bankV15.length),bankV15);
   assert.equal(new Set(bankV16.map(q=>q.id)).size,543);
@@ -78,9 +78,9 @@ test("v16 new questions display correctly, while historic v15 question IDs remai
 
 test("new v16 topic records and old v15 round preserve score, metadata, and save validity",()=>{
   const now=complete(createSession("mixed",undefined,clock,{difficulty:"easy",learningTopic:"dualar"}));
-  assert.equal(now.bankVersion, 73);
+  assert.equal(now.bankVersion, 74);
   assert.equal(now.learningTopic,"dualar");
-  assert.equal(now.learningTopicVersion,3);
+  assert.equal(now.learningTopicVersion,4);
   assert.equal(now.questionIds.length,10);
   assert.ok(now.questionIds.every(id=>belongsToLearningTopic(id,"dualar")));
   assert.deepEqual(parseData(JSON.stringify(appendGame(emptyData(),now))).games[0],now);

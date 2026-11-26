@@ -18,18 +18,22 @@ export function liveContent(bankVersion: ExportBankVersion = BANK_VERSION) {
   const questions = canonicalBankForExport(bankVersion);
   buildOnlineContentRows(questions, bankVersion); // Shared exact-release integrity gate.
   if (
-    questions.length !== 1500 ||
+    questions.length !== (bankVersion === 74 ? 3000 : 1500) ||
     questions.some(
       (q) =>
         q.reviewStatus !== "approved" ||
         q.sources.some((s) => s.checkStatus !== "supported"),
     )
   )
-    throw new Error("Canonical 1500-question bank required");
+    throw new Error("Canonical release question count required");
   const topics = new Map(
     learningTopicsV1.map((t) => [
       t.id,
-      new Set(learningTopicPool(questions, t.id).map((q) => q.id)),
+      new Set(
+        learningTopicPool(questions, t.id, bankVersion === 74 ? 4 : 3).map(
+          (q) => q.id,
+        ),
+      ),
     ]),
   );
   const rows = questions.map((q) => ({

@@ -75,7 +75,7 @@ export function ResultsScreen() {
       result.difficulty,
       result.learningTopic,
       result.stage,
-      { playCategory: result.playCategory },
+      { playCategory: result.playCategory, quickPlay: result.quickPlay },
     );
     if (started) router.replace("/quiz");
     else

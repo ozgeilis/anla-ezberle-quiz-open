@@ -1,0 +1,114 @@
+{
+  "status": "proposed-content-corrections-not-runtime-published",
+  "date": "2026-11-25",
+  "items": [
+    {
+      "id": "e150-prophets-024",
+      "issue": "Stem lacks the narrative/verse context needed to single out the throne.",
+      "proposedQuestion": "Neml 27/40’ta Hz. Süleyman, yanı başına yerleşmiş olarak neyi görür?",
+      "keepCorrectOptionId": true,
+      "changeOtherOptions": false,
+      "source": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "Neml 27/38–42; physical PDF page 401 and surrounding context",
+      "historyRule": "Keep historical bank unchanged; preserve this ID with an explicitly versioned editorial change in the next bank."
+    },
+    {
+      "id": "v12-prophets-006",
+      "issue": "The keyed option adds 'deep' to water, beyond the source's statement.",
+      "proposedCorrectOptionText": "Bir su birikintisi",
+      "keepCorrectOptionId": true,
+      "changeStem": false,
+      "source": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "Neml 27/44; physical PDF page 401",
+      "historyRule": "Keep historical bank unchanged; preserve this ID with an explicitly versioned editorial change in the next bank."
+    },
+    {
+      "id": "q44-leyl-12",
+      "issue": "Stem asks who, while every answer option names an action.",
+      "proposedQuestion": "Leyl 92/12’de Allah’a ait olduğu bildirilen hangi eylemdir?",
+      "keepCorrectOptionId": true,
+      "changeOtherOptions": false,
+      "source": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "Leyl 92/12; physical PDF page 647",
+      "historyRule": "Preserve ID and frozen v73; publish correction only in the next versioned bank."
+    },
+    {
+      "id": "q65-isra-30",
+      "issue": "Stem asks who, while all options are paired actions.",
+      "proposedQuestion": "İsrâ 17/30’da Allah’ın rızık üzerindeki tasarrufu hangi iki fiille anlatılır?",
+      "keepCorrectOptionId": true,
+      "changeOtherOptions": false,
+      "source": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "17/30; PDF page 298",
+      "historyRule": "Preserve ID and frozen v73; apply only in the next versioned bank."
+    },
+    {
+      "id": "q55-tekvir-008",
+      "issue": "Stem omits cennet, although all options describe a change in its state.",
+      "proposedQuestion": "Tekvîr 81/13’te cennetin hangi durumu anlatılır?",
+      "keepCorrectOptionId": true,
+      "changeOtherOptions": false,
+      "source": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "81/13; PDF page 634",
+      "historyRule": "Preserve ID and frozen v73; apply only in the next versioned bank."
+    },
+    {
+      "id": "q47-bedir-006",
+      "issue": "The stated reconnaissance assignment concerned the caravan, not the previously unknown army.",
+      "proposedQuestion": "Bedir kuyularına kervan hakkında bilgi toplamak üzere gönderilenler arasında hangisi vardır?",
+      "keepCorrectOptionId": true,
+      "changeOtherOptions": false,
+      "source": "https://islamansiklopedisi.org.tr/bedir-gazvesi",
+      "locator": "Paragraph beginning Öte yandan Bedir yakınında; following paragraph explains they did not yet know of the army.",
+      "historyRule": "Preserve ID and frozen bank; correct scope in next bank."
+    },
+    {
+      "id": "q71-kurban-kalb",
+      "issue": "General wording about worship purpose overlaps with sincerity; source gives a precise legal intention requirement.",
+      "proposedQuestion": "Kurbanın geçerliliğinde ibadet kastı taşımasını sağlayan ve kalpte bulunması yeterli olan şart hangisidir?",
+      "keepCorrectOptionId": true,
+      "changeOtherOptions": false,
+      "source": "https://islamansiklopedisi.org.tr/kurban#2-islamda-kurban",
+      "locator": "Geçerlilik Şartları, point 6 (niyet)",
+      "historyRule": "Preserve ID and frozen bank; apply clarification only in next bank."
+    },
+    {
+      "id": "q62-arafat-arefe",
+      "issue": "The day-nine answer is sound, but the explanation states a noon start without qualifying the legal school; TDV Vakfe records Hanbeli dawn and majority noon.",
+      "proposedExplanation": "Arafat vakfesi arefe günü, yani zilhiccenin dokuzuncu günü başlar. Başlangıç saati çoğunluğa göre zeval, Hanbelîlere göre fecirdir; vakfe süresi bayramın ilk günü fecre kadar devam eder.",
+      "keepCorrectOptionId": true,
+      "changeStem": false,
+      "source": "https://islamansiklopedisi.org.tr/vakfe",
+      "locator": "Zamanı: 108–109",
+      "historyRule": "Keep historical bank unchanged; preserve ID in an explicitly versioned correction."
+    },
+    {
+      "id": "q68-nesai-vefat",
+      "issue": "TDV prefers 915 but also records an alternative 916 chronology; absolute wording hides the source preference.",
+      "proposedQuestion": "TDV’nin daha güvenilir kabul ettiği İbn Yûnus rivayetine göre Nesâî hangi milâdî yılda vefat etmiştir?",
+      "proposedExplanation": "TDV maddesi, İbn Yûnus’un 303/915 tarihini verdiği rivayetin Zehebî tarafından daha güvenilir görüldüğünü belirtir. Aynı maddede 916 tarihini veren başka bir rivayet de yer alır.",
+      "keepCorrectOptionId": true,
+      "source": "https://islamansiklopedisi.org.tr/nesai",
+      "locator": "102–104",
+      "historyRule": "Preserve ID and frozen v73; publish correction only in next versioned bank."
+    },
+    {
+      "id": "q47-nuh-022",
+      "issue": "The verse is verified but the additional claim that the linked TDV biography explains this specific attribute was not found in its Quran section. Remove the unnecessary attribution.",
+      "proposedExplanation": "İsrâ 17/3, Nûh’u çok şükreden bir kul olarak anar. Sorudaki nitelik doğrudan bu âyetin ifadesine dayanır.",
+      "keepCorrectOptionId": true,
+      "source": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+      "locator": "17/3; PDF295",
+      "historyRule": "Preserve frozen v73; apply in next versioned candidate."
+    },
+    {
+      "id": "v11-quran-005",
+      "issue": "The chronology gloss goes beyond the directly checked verse; retain the directly supported teaching without asserting one interpretation as exhaustive.",
+      "proposedExplanation": "Kadr 97/1, Kur’an’ın Kadir gecesinde indirildiğini bildirir. Bakara 2/185 de Kur’an’ın indirilişini ramazan ayıyla ilişkilendirir.",
+      "keepCorrectOptionId": true,
+      "source": "https://islamansiklopedisi.org.tr/kadir-gecesi",
+      "locator": "111,115; Kadr97/1 and Bakara2/185",
+      "historyRule": "Preserve frozen v73; apply in next versioned candidate."
+    }
+  ]
+}

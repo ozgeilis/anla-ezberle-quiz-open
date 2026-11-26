@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-general-101",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis ilminde rivayeti öğrenme ve başkasına aktarma işleri sırasıyla nasıl adlandırılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tahammül ve edâ"
+      },
+      {
+        "id": "o2",
+        "text": "Cerh ve ta‘dîl"
+      },
+      {
+        "id": "o3",
+        "text": "Nasih ve mensuh"
+      },
+      {
+        "id": "o4",
+        "text": "Şerh ve tercüme"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Tahammül hadisi alma ve öğrenme, edâ ise onu nakletme aşamasıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tahammul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Tahammül hadisi alma ve öğrenme, edâ ise onu nakletme aşamasıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hadith-learning-transmitting-tahammul-ada"
+  },
+  {
+    "id": "new74-general-102",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis öğrencisinin hocasının okuduğu rivayetleri bizzat dinleyerek almasına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vicâde"
+      },
+      {
+        "id": "o2",
+        "text": "Semâ"
+      },
+      {
+        "id": "o3",
+        "text": "Münâvele"
+      },
+      {
+        "id": "o4",
+        "text": "İ‘lâm"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Semâda hoca anlatır veya okur, öğrenci işiterek öğrenir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sema--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+        "supports": "Semâda hoca anlatır veya okur, öğrenci işiterek öğrenir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sama-listening-to-teacher"
+  },
+  {
+    "id": "new74-general-103",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis öğrencisinin hocaya rivayetleri okuyup kontrol ettirerek rivayet hakkı elde ettiği yöntem hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vicâde"
+      },
+      {
+        "id": "o2",
+        "text": "İ‘lâm"
+      },
+      {
+        "id": "o3",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o4",
+        "text": "Vasiyet"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Hadis ilmindeki bu kıraat yönteminde metin hocaya sunulur ve onun denetiminde okunur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kiraat--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "Hadis ilmindeki bu kıraat yönteminde metin hocaya sunulur ve onun denetiminde okunur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hadith-qiraat-student-reading"
+  },
+  {
+    "id": "new74-general-104",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bir hocadan dinlemeden veya icâzet almadan ona ait yazılı hadis metnini bulup elde etmeye ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Semâ"
+      },
+      {
+        "id": "o2",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o3",
+        "text": "Münâvele"
+      },
+      {
+        "id": "o4",
+        "text": "Vicâde"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Vicâdede metin elde edilir; nakleden kişi onu hocadan işitmiş gibi aktarmamalıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/vicade",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,101-102 (basılı sayfa numarası değildir)",
+        "supports": "Vicâdede metin elde edilir; nakleden kişi onu hocadan işitmiş gibi aktarmamalıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-wijada-finding-written-hadith"
+  },
+  {
+    "id": "new74-general-105",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis dersinde hocanın rivayetleri söyleyip öğrencilerin bunları yazması hangi yöntemdir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İmlâ"
+      },
+      {
+        "id": "o2",
+        "text": "Vicâde"
+      },
+      {
+        "id": "o3",
+        "text": "İ‘lâm"
+      },
+      {
+        "id": "o4",
+        "text": "Vasiyet"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "İmlâ, hocanın okuduğunu veya söylediğini öğrencilere yazdırmasıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sema--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 103 (basılı sayfa numarası değildir)",
+        "supports": "İmlâ, hocanın okuduğunu veya söylediğini öğrencilere yazdırmasıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-imla-dictation-method"
+  },
+  {
+    "id": "new74-general-106",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hocanın kendi rivayetlerini içeren nüshayı öğrencisine elden vermesi hangi hadis alma yöntemidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Semâ"
+      },
+      {
+        "id": "o2",
+        "text": "Münâvele"
+      },
+      {
+        "id": "o3",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o4",
+        "text": "Vicâde"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Münâvele nüshanın teslimi veya onayıyla ilgilidir; icâzetli ve icâzetsiz biçimleri ayrıca ayrılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/munavele",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+        "supports": "Münâvele nüshanın teslimi veya onayıyla ilgilidir; icâzetli ve icâzetsiz biçimleri ayrıca ayrılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-munawala-handing-manuscript"
+  },
+  {
+    "id": "new74-general-107",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hocanın rivayetlerini yazarak veya yazdırarak başka yerdeki kişiye göndermesine ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Semâ"
+      },
+      {
+        "id": "o2",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o3",
+        "text": "Kitâbet veya mükâtebe"
+      },
+      {
+        "id": "o4",
+        "text": "Vicâde"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Kitâbet, rivayetleri yazıyla gönderme yöntemidir; rivayet izninin açıklanması ayrıca değerlendirilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tahammul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 113-115 (basılı sayfa numarası değildir)",
+        "supports": "Kitâbet, rivayetleri yazıyla gönderme yöntemidir; rivayet izninin açıklanması ayrıca değerlendirilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mukataba-sending-written-hadith"
+  },
+  {
+    "id": "new74-general-108",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hocanın bir kitaptaki hadislerin kendisine ait olduğunu, rivayet iznini açıkça belirtmeden bildirmesi hangi terimle anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İcâzet"
+      },
+      {
+        "id": "o2",
+        "text": "Semâ"
+      },
+      {
+        "id": "o3",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o4",
+        "text": "İ‘lâm"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "İ‘lâm aidiyetin bildirilmesidir; bunun tek başına rivayet yetkisi sağlayıp sağlamadığı tartışmalıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ilam--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "İ‘lâm aidiyetin bildirilmesidir; bunun tek başına rivayet yetkisi sağlayıp sağlamadığı tartışmalıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ilam-acknowledgment-without-permission"
+  },
+  {
+    "id": "new74-general-109",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hocanın ölmeden veya yolculuğa çıkmadan önce hadis kitaplarını birine bırakmayı vasiyet etmesi hangi yöntemdir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vasiyet"
+      },
+      {
+        "id": "o2",
+        "text": "Semâ"
+      },
+      {
+        "id": "o3",
+        "text": "Kıraat"
+      },
+      {
+        "id": "o4",
+        "text": "İmlâ"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Hadis tahammülündeki vasiyet, kitapların bırakılmasıyla ilgilidir; rivayet hükmünde görüş ayrılıkları bulunur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tahammul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 118-119 (basılı sayfa numarası değildir)",
+        "supports": "Hadis tahammülündeki vasiyet, kitapların bırakılmasıyla ilgilidir; rivayet hükmünde görüş ayrılıkları bulunur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hadith-book-bequest-method"
+  },
+  {
+    "id": "new74-general-110",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis öğrenmek ve râviler hakkında bilgi edinmek için yapılan ilim yolculuğuna ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Münâvele"
+      },
+      {
+        "id": "o2",
+        "text": "Rihle"
+      },
+      {
+        "id": "o3",
+        "text": "İdrâc"
+      },
+      {
+        "id": "o4",
+        "text": "İhtisar"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Rihle, hadis öğrenme ve rivayetleri araştırma amacıyla seyahate çıkmaktır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/rihle--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+        "supports": "Rihle, hadis öğrenme ve rivayetleri araştırma amacıyla seyahate çıkmaktır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-rihla-learning-journey"
+  },
+  {
+    "id": "new74-general-111",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis öğrencisinin yazdığı nüshayı hocanın aslıyla karşılaştırıp hataları kontrol etmesine ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vicâde"
+      },
+      {
+        "id": "o2",
+        "text": "İ‘lâm"
+      },
+      {
+        "id": "o3",
+        "text": "Mukabele"
+      },
+      {
+        "id": "o4",
+        "text": "Münâvele"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Bu mukabele, yazılı nüshanın aslına uygunluğunu denetler; yalnız güzel yazı yazmak değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mukabele--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-100 (basılı sayfa numarası değildir)",
+        "supports": "Bu mukabele, yazılı nüshanın aslına uygunluğunu denetler; yalnız güzel yazı yazmak değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hadith-copy-collation"
+  },
+  {
+    "id": "new74-general-112",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Yerleşik kullanımda bir rivayetin temel hadis kaynaklarındaki yerini gösterip isnad ve sıhhatini araştırma işi hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İdrâc"
+      },
+      {
+        "id": "o2",
+        "text": "Tashîf"
+      },
+      {
+        "id": "o3",
+        "text": "Ta‘lîk"
+      },
+      {
+        "id": "o4",
+        "text": "Tahrîc"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Tahrîc, bir eserdeki rivayet ile asıl hadis kaynakları arasında bağ kurar ve rivayetin durumunu inceler.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tahric--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-99 (basılı sayfa numarası değildir)",
+        "supports": "Tahrîc, bir eserdeki rivayet ile asıl hadis kaynakları arasında bağ kurar ve rivayetin durumunu inceler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-takhrij-locating-original-sources"
+  },
+  {
+    "id": "new74-general-113",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hadis ilminde akran iki râvinin birbirinden karşılıklı rivayette bulunmasına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müdebbec"
+      },
+      {
+        "id": "o2",
+        "text": "Muallak"
+      },
+      {
+        "id": "o3",
+        "text": "Mu‘dal"
+      },
+      {
+        "id": "o4",
+        "text": "Maktû"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Müdebbec, iki râvinin karşılıklı rivayetini anlatır; yaygın tanımda bunlar akrandır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mudebbec",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-99 (basılı sayfa numarası değildir)",
+        "supports": "Müdebbec, iki râvinin karşılıklı rivayetini anlatır; yaygın tanımda bunlar akrandır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mudabbaj-reciprocal-peer-transmission"
+  },
+  {
+    "id": "new74-general-114",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadislerde az kullanılan veya anlaşılması güç kelimeleri açıklayan çalışma alanı hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Cerh ve ta‘dîl"
+      },
+      {
+        "id": "o2",
+        "text": "Garîbü’l-hadîs"
+      },
+      {
+        "id": "o3",
+        "text": "Esbâb-ı nüzûl"
+      },
+      {
+        "id": "o4",
+        "text": "Ferâiz"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Garîbü’l-hadîs, rivayet metinlerinin dil ve kelime açıklamalarına odaklanır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/garibul-hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-100 (basılı sayfa numarası değildir)",
+        "supports": "Garîbü’l-hadîs, rivayet metinlerinin dil ve kelime açıklamalarına odaklanır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-gharib-hadith-obscure-words"
+  },
+  {
+    "id": "new74-general-115",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Sıhhatçe denk olup anlamları birbirine aykırı görünür durumdaki hadisleri inceleyen ilim hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Garîbü’l-hadîs"
+      },
+      {
+        "id": "o2",
+        "text": "Ricâlü’l-hadîs"
+      },
+      {
+        "id": "o3",
+        "text": "Muhtelifü’l-hadîs"
+      },
+      {
+        "id": "o4",
+        "text": "Esbâb-ı nüzûl"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Bu ilim görünürdeki aykırılıkların anlaşılmasıyla ilgilenir; anlama güçlüklerinin tamamı ise daha geniş bir konudur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muhteliful-hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 98-103 (basılı sayfa numarası değildir)",
+        "supports": "Bu ilim görünürdeki aykırılıkların anlaşılmasıyla ilgilenir; anlama güçlüklerinin tamamı ise daha geniş bir konudur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mukhtalif-apparent-conflicting-hadith"
+  },
+  {
+    "id": "new74-general-116",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hadis ilminde güvenilir bir râvinin yaşlılık veya ağır üzüntü gibi sebeplerle rivayet ehliyetinin bozulmasına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İttisâl"
+      },
+      {
+        "id": "o2",
+        "text": "İcâzet"
+      },
+      {
+        "id": "o3",
+        "text": "İmlâ"
+      },
+      {
+        "id": "o4",
+        "text": "İhtilât"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "İhtilât sonradan ortaya çıkan zihnî veya kayıtla ilgili bozulmadır; önceki rivayetlerle sonraki rivayetler bu yüzden ayrı incelenir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ihtilat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "İhtilât sonradan ortaya çıkan zihnî veya kayıtla ilgili bozulmadır; önceki rivayetlerle sonraki rivayetler bu yüzden ayrı incelenir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ikhtilat-late-memory-decline"
+  },
+  {
+    "id": "new74-general-117",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Müdellis olmayan râvinin “an” ile naklinde Müslim b. Haccâc, hocasıyla ilişkisinde hangi şartı yeterli görür?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Çağdaş olmalarını"
+      },
+      {
+        "id": "o2",
+        "text": "Aynı şehirde doğmuş olmalarını"
+      },
+      {
+        "id": "o3",
+        "text": "Akraba olmalarını"
+      },
+      {
+        "id": "o4",
+        "text": "Aynı mesleği yapmalarını"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Müslim çağdaşlığı yeterli görürken Buhârî en az bir defa görüşmenin bilindiği daha sıkı bir ölçüyü savunur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/lika",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 105 (basılı sayfa numarası değildir)",
+        "supports": "Müslim çağdaşlığı yeterli görürken Buhârî en az bir defa görüşmenin bilindiği daha sıkı bir ölçüyü savunur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muslim-muanan-contemporary-condition"
+  },
+  {
+    "id": "new74-general-118",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Musannef türü hadis eserlerinde peygamber rivayetleri yanında hangi nesillerin söz ve fiillerine çokça yer verilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Daha sonraki şârihlerin ve müstensihlerin"
+      },
+      {
+        "id": "o2",
+        "text": "Sahâbe ve tâbiînin"
+      },
+      {
+        "id": "o3",
+        "text": "Derleyicinin çağdaşları ve öğrencilerinin"
+      },
+      {
+        "id": "o4",
+        "text": "Dilcilerle birlikte şiir râvilerinin"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Musannefler sahâbe ve tâbiîn haberlerini de fıkıh konularına göre yoğun biçimde içerir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/musannef",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 99-100 (basılı sayfa numarası değildir)",
+        "supports": "Musannefler sahâbe ve tâbiîn haberlerini de fıkıh konularına göre yoğun biçimde içerir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-musannaf-companion-tabii-material"
+  },
+  {
+    "id": "new74-general-119",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Etrâf kitapları bir rivayeti tanıtmak için genellikle metnin ne kadarını verir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hadisin tamamını ve ayrıntılı şerhini"
+      },
+      {
+        "id": "o2",
+        "text": "Metnin farklı dillerdeki tercümelerini"
+      },
+      {
+        "id": "o3",
+        "text": "Hadisi hatırlatacak bir kısmını"
+      },
+      {
+        "id": "o4",
+        "text": "Metni vermeden râvinin hayat hikâyesini"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Etrâf eserleri kısa bir metin parçasından hareketle rivayetin kaynak ve senedlerine ulaşmayı kolaylaştırır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/etraf",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-102 (basılı sayfa numarası değildir)",
+        "supports": "Etrâf eserleri kısa bir metin parçasından hareketle rivayetin kaynak ve senedlerine ulaşmayı kolaylaştırır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-atraf-partial-text-index"
+  },
+  {
+    "id": "new74-general-120",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Çocuğun hadis dinlemesi bakımından genel kabulde yalnız sabit bir yaş yerine hangi yeterlilik öne çıkar?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Ticaret yapabilmesi"
+      },
+      {
+        "id": "o2",
+        "text": "Bir şehir yönetebilmesi"
+      },
+      {
+        "id": "o3",
+        "text": "Mutlaka evli olması"
+      },
+      {
+        "id": "o4",
+        "text": "Duyduğunu anlayıp ayırt edebilmesi"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Temyiz, çocuğun dinlediğini anlamasıyla ilgilidir; çocuklukta öğrenilen rivayet daha sonra nakledilebilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tahammul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 99-101 (basılı sayfa numarası değildir)",
+        "supports": "Temyiz, çocuğun dinlediğini anlamasıyla ilgilidir; çocuklukta öğrenilen rivayet daha sonra nakledilebilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-child-hadith-learning-discernment"
+  }
+]

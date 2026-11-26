@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-general-081",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Bir rivayetin “merfû” diye adlandırılması tek başına neyi göstermez?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Rivayetin mutlaka sahih olduğunu"
+      },
+      {
+        "id": "o2",
+        "text": "Hz. Peygamber’e nispet edildiğini"
+      },
+      {
+        "id": "o3",
+        "text": "Bir haber olarak nakledildiğini"
+      },
+      {
+        "id": "o4",
+        "text": "Nispet yönünden sınıflandırıldığını"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Merfû nitelemesi nispet yönündendir; rivayetin sahihlik derecesi ayrıca incelenir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/merfu",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-100 (basılı sayfa numarası değildir)",
+        "supports": "Merfû nitelemesi nispet yönündendir; rivayetin sahihlik derecesi ayrıca incelenir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-marfu-attribution-not-authenticity"
+  },
+  {
+    "id": "new74-general-082",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hz. Peygamber’e yükseltilmeyip sahâbînin söz veya fiili olarak nakledilen rivayet hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Merfû"
+      },
+      {
+        "id": "o2",
+        "text": "Mevkuf"
+      },
+      {
+        "id": "o3",
+        "text": "Maktû"
+      },
+      {
+        "id": "o4",
+        "text": "Muallak"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Yaygın kullanımda mevkuf, rivayetin nispetinin sahâbîde durmasını anlatır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mevkuf--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-99 (basılı sayfa numarası değildir)",
+        "supports": "Yaygın kullanımda mevkuf, rivayetin nispetinin sahâbîde durmasını anlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mawquf-at-companion"
+  },
+  {
+    "id": "new74-general-083",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Tâbiînin söz veya fiiline nispet edilen rivayet için hangi terim kullanılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Merfû"
+      },
+      {
+        "id": "o2",
+        "text": "Mevkuf"
+      },
+      {
+        "id": "o3",
+        "text": "Maktû"
+      },
+      {
+        "id": "o4",
+        "text": "Muallak"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Maktû, nispet edilen nesille ilgilidir; seneddeki kopukluğu anlatan münkatı‘ ile aynı değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/maktu",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,103-104 (basılı sayfa numarası değildir)",
+        "supports": "Maktû, nispet edilen nesille ilgilidir; seneddeki kopukluğu anlatan münkatı‘ ile aynı değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-maqtu-tabii-attribution"
+  },
+  {
+    "id": "new74-general-084",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Senedinin müellif tarafındaki baş kısmından râvi veya râvileri anılmadan nakledilen hadis hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mevkuf"
+      },
+      {
+        "id": "o2",
+        "text": "Maktû"
+      },
+      {
+        "id": "o3",
+        "text": "Müselsel"
+      },
+      {
+        "id": "o4",
+        "text": "Muallak"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Muallakta senedin başındaki bir veya daha çok râvi zikredilmez.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muallak",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Muallakta senedin başındaki bir veya daha çok râvi zikredilmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muallaq-author-end-omission"
+  },
+  {
+    "id": "new74-general-085",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Her râvinin rivayeti kendinden önceki kişiden muteber bir yolla aldığı kesintisiz sened hangi terimle nitelenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Muttasıl"
+      },
+      {
+        "id": "o2",
+        "text": "Muallak"
+      },
+      {
+        "id": "o3",
+        "text": "Mu‘dal"
+      },
+      {
+        "id": "o4",
+        "text": "Mürsel"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "İttisâl, nakil zincirinin bağlantılı oluşudur; diğer sıhhat şartları ayrıca değerlendirilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muttasil",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-103 (basılı sayfa numarası değildir)",
+        "supports": "İttisâl, nakil zincirinin bağlantılı oluşudur; diğer sıhhat şartları ayrıca değerlendirilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muttasil-unbroken-transmission"
+  },
+  {
+    "id": "new74-general-086",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Senedinin orta kısmında peş peşe iki veya daha fazla râvi düşmüş olan hadis hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Muttasıl"
+      },
+      {
+        "id": "o2",
+        "text": "Mu‘dal"
+      },
+      {
+        "id": "o3",
+        "text": "Merfû"
+      },
+      {
+        "id": "o4",
+        "text": "Mevkuf"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Mu‘dal tanımında düşen râvilerin peş peşe olması önemlidir; farklı yerlerdeki ayrı kopuklukla karıştırılmaz.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mudal",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-100 (basılı sayfa numarası değildir)",
+        "supports": "Mu‘dal tanımında düşen râvilerin peş peşe olması önemlidir; farklı yerlerdeki ayrı kopuklukla karıştırılmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mudal-two-consecutive-omissions"
+  },
+  {
+    "id": "new74-general-087",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Râvilerin nakil sırasında belirli bir söz veya hareketi zincir boyunca tekrarladığı hadis türü hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mu‘dal"
+      },
+      {
+        "id": "o2",
+        "text": "Maktû"
+      },
+      {
+        "id": "o3",
+        "text": "Müselsel"
+      },
+      {
+        "id": "o4",
+        "text": "Mevkuf"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Müselsel rivayette nakle eşlik eden bir özellik râviler boyunca tekrarlanır; bu tek başına sıhhat garantisi değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muselsel",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-102 (basılı sayfa numarası değildir)",
+        "supports": "Müselsel rivayette nakle eşlik eden bir özellik râviler boyunca tekrarlanır; bu tek başına sıhhat garantisi değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-musalsal-repeated-transmission-feature"
+  },
+  {
+    "id": "new74-general-088",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bir hadis kitabının şartlarına uyduğu düşünüldüğü halde o kitaba alınmamış rivayetleri toplama türü hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müstahrec"
+      },
+      {
+        "id": "o2",
+        "text": "Mu‘cem"
+      },
+      {
+        "id": "o3",
+        "text": "Müsned"
+      },
+      {
+        "id": "o4",
+        "text": "Müstedrek"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Müstedrek müellifi önceki eserin eksiklerini tamamlama amacı taşır; şartlara uygunluk değerlendirmesi yanılmaz kabul edilmez.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mustedrek",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,99-102 (basılı sayfa numarası değildir)",
+        "supports": "Müstedrek müellifi önceki eserin eksiklerini tamamlama amacı taşır; şartlara uygunluk değerlendirmesi yanılmaz kabul edilmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mustadrak-omitted-qualifying-reports"
+  },
+  {
+    "id": "new74-general-089",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bir hadis kitabındaki rivayetleri müellifin kendi farklı senedleriyle yeniden topladığı eser türü hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müstahrec"
+      },
+      {
+        "id": "o2",
+        "text": "Müstedrek"
+      },
+      {
+        "id": "o3",
+        "text": "Kırk hadis"
+      },
+      {
+        "id": "o4",
+        "text": "Zevâid"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Müstahrec farklı isnad yollarını bir araya getirir; bu rivayetler de ayrıca incelenir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mustahrec",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-102 (basılı sayfa numarası değildir)",
+        "supports": "Müstahrec farklı isnad yollarını bir araya getirir; bu rivayetler de ayrıca incelenir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mustakhraj-alternative-chains"
+  },
+  {
+    "id": "new74-general-090",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Yaygın müsned tertibinde hadisler öncelikle hangi esasa göre bir araya getirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Fıkhî konularına göre bölümler altında"
+      },
+      {
+        "id": "o2",
+        "text": "Onları rivayet eden sahâbîlerin adları altında"
+      },
+      {
+        "id": "o3",
+        "text": "Derleyicinin hocalarının adları altında"
+      },
+      {
+        "id": "o4",
+        "text": "Hadis metinlerinin ilk harflerine göre"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Müsned, yaygın biçimiyle sahâbî merkezli bir tasniftir; her kitaptaki ayrıntılı sıralama aynı değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/musned--telif-turu",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-101 (basılı sayfa numarası değildir)",
+        "supports": "Müsned, yaygın biçimiyle sahâbî merkezli bir tasniftir; her kitaptaki ayrıntılı sıralama aynı değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-musnad-companion-organization"
+  },
+  {
+    "id": "new74-general-091",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hadis literatüründe râviler, hocalar veya beldeler esas alınarak çoğunlukla alfabetik düzenlenen kitap türü hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sünen"
+      },
+      {
+        "id": "o2",
+        "text": "Kırk hadis"
+      },
+      {
+        "id": "o3",
+        "text": "Mu‘cem"
+      },
+      {
+        "id": "o4",
+        "text": "Müstedrek"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Mu‘cemlerde adlar ve beldeler gibi unsurlara göre düzen öne çıkar; terimin başka ilimlerde de kullanımları vardır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mucem--tabakat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 97-100 (basılı sayfa numarası değildir)",
+        "supports": "Mu‘cemlerde adlar ve beldeler gibi unsurlara göre düzen öne çıkar; terimin başka ilimlerde de kullanımları vardır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mujam-alphabetic-narrator-order"
+  },
+  {
+    "id": "new74-general-092",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadis edebiyatındaki “erbaûn hadîs” ifadesi hangi derleme geleneğini anlatır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bir hadisin kırk ayrı senedini toplamayı"
+      },
+      {
+        "id": "o2",
+        "text": "Kırk râvinin biyografisini bir araya getirmeyi"
+      },
+      {
+        "id": "o3",
+        "text": "Hadisleri kırk konu başlığına ayırmayı"
+      },
+      {
+        "id": "o4",
+        "text": "Kırk hadis derlemeyi"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Kırk hadis eserleri seçilmiş rivayetleri derler; türü teşvik için nakledilen rivayetin zayıf olduğu kaynakta belirtilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kirk-hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 109-112 (basılı sayfa numarası değildir)",
+        "supports": "Kırk hadis eserleri seçilmiş rivayetleri derler; türü teşvik için nakledilen rivayetin zayıf olduğu kaynakta belirtilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-forty-hadith-collection-genre"
+  },
+  {
+    "id": "new74-general-093",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Râvinin öğrendiği rivayeti doğru koruyup aldığı gibi nakledebilme özelliği hangi terimle anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Zabt"
+      },
+      {
+        "id": "o2",
+        "text": "Cerh"
+      },
+      {
+        "id": "o3",
+        "text": "Ta‘lîk"
+      },
+      {
+        "id": "o4",
+        "text": "İdrâc"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Zabt, naklin doğru korunmasıyla ilgilidir; yalnız râvinin iyi niyetiyle aynı şey değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/zabt",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-101 (basılı sayfa numarası değildir)",
+        "supports": "Zabt, naklin doğru korunmasıyla ilgilidir; yalnız râvinin iyi niyetiyle aynı şey değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-dabt-faithful-preservation"
+  },
+  {
+    "id": "new74-general-094",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hadis ilminde zabt-ı sadr ile zabt-ı kitâb arasındaki temel ayrım nedir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hoca huzurunda okuma ile hocadan dinleme ayrımı"
+      },
+      {
+        "id": "o2",
+        "text": "Ezberde koruma ile yazılı kaynağı doğru koruma ayrımı"
+      },
+      {
+        "id": "o3",
+        "text": "Sened incelemesi ile metin incelemesi ayrımı"
+      },
+      {
+        "id": "o4",
+        "text": "Lafzen nakil ile mânen nakil ayrımı"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Zabt hem sağlam ezberle hem de doğru yazılıp değişiklikten korunan kayıtla ilgili olabilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/zabt",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-100 (basılı sayfa numarası değildir)",
+        "supports": "Zabt hem sağlam ezberle hem de doğru yazılıp değişiklikten korunan kayıtla ilgili olabilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-book-memory-dabt-types"
+  },
+  {
+    "id": "new74-general-095",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bir râvinin açıklaması metnin parçası sanılarak hadise katılmışsa bu ekleme hangi kavramla anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İttisâl"
+      },
+      {
+        "id": "o2",
+        "text": "Ta‘dîl"
+      },
+      {
+        "id": "o3",
+        "text": "İdrâc"
+      },
+      {
+        "id": "o4",
+        "text": "Semâ"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Açıklamanın asıl sözle karışması metinde idrâca yol açabilir; farklı rivayetlerin karşılaştırılması bunu belirlemeye yardım eder.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mudrec--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,103-105 (basılı sayfa numarası değildir)",
+        "supports": "Açıklamanın asıl sözle karışması metinde idrâca yol açabilir; farklı rivayetlerin karşılaştırılması bunu belirlemeye yardım eder.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mudraj-explanation-mixed-with-text"
+  },
+  {
+    "id": "new74-general-096",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Seneddeki isimlerin veya metindeki ifadelerin yerleri değiştirilerek nakledilen hadise ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müselsel"
+      },
+      {
+        "id": "o2",
+        "text": "Mevkuf"
+      },
+      {
+        "id": "o3",
+        "text": "Maktû"
+      },
+      {
+        "id": "o4",
+        "text": "Maklûb"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Maklûb rivayette yer değiştirme vardır; bu durum hata veya kasıtla oluşabilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/maklub--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "Maklûb rivayette yer değiştirme vardır; bu durum hata veya kasıtla oluşabilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-maqlub-order-swapped"
+  },
+  {
+    "id": "new74-general-097",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "İbn Hacer’in yaptığı ayrımda, benzer harflerin noktaları değişmiş biçimde nakledilen hadis nasıl nitelenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Musahhaf"
+      },
+      {
+        "id": "o2",
+        "text": "Müstedrek"
+      },
+      {
+        "id": "o3",
+        "text": "Müselsel"
+      },
+      {
+        "id": "o4",
+        "text": "Mevkuf"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Bu özel ayrımda nokta değişikliği musahhaf diye adlandırılır; terimler önceki dönemlerde aynı anlamda da kullanılmıştır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/musahhaf",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "Bu özel ayrımda nokta değişikliği musahhaf diye adlandırılır; terimler önceki dönemlerde aynı anlamda da kullanılmıştır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-musahhaf-dots-ibn-hajar"
+  },
+  {
+    "id": "new74-general-098",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadiste tahrifin ortaya çıkışı hakkında hangi ifade doğrudur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Metne açıklayıcı bir cümle eklenmesinden doğar"
+      },
+      {
+        "id": "o2",
+        "text": "Yanlış okuma veya yanlış duymadan da kaynaklanabilir"
+      },
+      {
+        "id": "o3",
+        "text": "Bir senedin yerine başka sened takılmasından doğar"
+      },
+      {
+        "id": "o4",
+        "text": "Rivayetin kaynağının belirtilmemesinden doğar"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Tahrif, kasıt zorunlu olmadan nakil hatasıyla da oluşabilir; güvenilir âlimlerde dahi örnekleri görülebilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muharref",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "Tahrif, kasıt zorunlu olmadan nakil hatasıyla da oluşabilir; güvenilir âlimlerde dahi örnekleri görülebilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-tahrif-can-be-unintentional"
+  },
+  {
+    "id": "new74-general-099",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Yaygın tanımda sahih hadis için adâlet, zabt ve sened bağlantısının yanında hangi iki kusurun bulunmaması aranır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Arapça kelime ve isim"
+      },
+      {
+        "id": "o2",
+        "text": "Sahâbî adı ve yer bilgisi"
+      },
+      {
+        "id": "o3",
+        "text": "Şâzlık ve illet"
+      },
+      {
+        "id": "o4",
+        "text": "Sözlü nakil ve yazılı kayıt"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Sahihlik, güvenilir nakil ve kesintisiz senedin yanında şâzlık ve gizli kusur bulunmamasını da gerektirir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sahih--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 111,119-123 (basılı sayfa numarası değildir)",
+        "supports": "Sahihlik, güvenilir nakil ve kesintisiz senedin yanında şâzlık ve gizli kusur bulunmamasını da gerektirir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sahih-five-conditions"
+  },
+  {
+    "id": "new74-general-100",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Genel kabul gören tanımda hasen hadisin râvisi, sahih hadis râvisinden özellikle hangi yönden ayrılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mutlaka yalancı olmasıyla"
+      },
+      {
+        "id": "o2",
+        "text": "Her durumda kimliğinin bilinmemesiyle"
+      },
+      {
+        "id": "o3",
+        "text": "Rivayetin mutlaka uydurulmuş olmasıyla"
+      },
+      {
+        "id": "o4",
+        "text": "Zabtının aynı güçte olmamasıyla"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hasen tanımında sahihin diğer şartları korunurken zabtın daha düşük derecede olması öne çıkar; tarihî kullanımların ayrıntıları farklıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/hasen--hadis",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,114-116 (basılı sayfa numarası değildir)",
+        "supports": "Hasen tanımında sahihin diğer şartları korunurken zabtın daha düşük derecede olması öne çıkar; tarihî kullanımların ayrıntıları farklıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî TDV pasajıyla karşılaştırılmış adaydır. Son tekrar, seçenek ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hasan-lower-dabt-than-sahih"
+  }
+]

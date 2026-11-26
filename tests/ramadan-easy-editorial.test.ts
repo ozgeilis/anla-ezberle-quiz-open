@@ -47,5 +47,5 @@ test("Suggested deep links remain separate from frozen question records", () => 
     assert.ok(ids.has(id));
     assert.ok(/^https:\/\/(kuran\.diyanet\.gov\.tr|islamansiklopedisi\.org\.tr)\//.test(url));
   }
-  assert.equal(questions.length, 1500);
+  assert.equal(questions.length, 3000);
 });

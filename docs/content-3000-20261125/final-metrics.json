@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-26",
+  "total": 3000,
+  "categories": [
+    {
+      "id": "quran",
+      "old": 450,
+      "new": 375,
+      "total": 825,
+      "easy": 210,
+      "medium": 498,
+      "hard": 117
+    },
+    {
+      "id": "prophets",
+      "old": 230,
+      "new": 375,
+      "total": 605,
+      "easy": 220,
+      "medium": 232,
+      "hard": 153
+    },
+    {
+      "id": "history",
+      "old": 401,
+      "new": 375,
+      "total": 776,
+      "easy": 137,
+      "medium": 369,
+      "hard": 270
+    },
+    {
+      "id": "general",
+      "old": 419,
+      "new": 375,
+      "total": 794,
+      "easy": 327,
+      "medium": 319,
+      "hard": 148
+    }
+  ],
+  "screens": [
+    {
+      "id": "quran_dualar",
+      "total": 627,
+      "easy": 163,
+      "medium": 369,
+      "hard": 95
+    },
+    {
+      "id": "siyer_sahabe",
+      "total": 526,
+      "easy": 178,
+      "medium": 190,
+      "hard": 158
+    },
+    {
+      "id": "peygamberler",
+      "total": 409,
+      "easy": 94,
+      "medium": 225,
+      "hard": 90
+    },
+    {
+      "id": "fikih",
+      "total": 337,
+      "easy": 148,
+      "medium": 138,
+      "hard": 51
+    },
+    {
+      "id": "iman_ahlak",
+      "total": 401,
+      "easy": 200,
+      "medium": 169,
+      "hard": 32
+    },
+    {
+      "id": "tarih_medeniyet",
+      "total": 700,
+      "easy": 111,
+      "medium": 327,
+      "hard": 262
+    }
+  ],
+  "oldChangedByField": {
+    "question": 154,
+    "explanation": 151,
+    "difficulty": 506,
+    "options": 148,
+    "sources": 158
+  }
+}

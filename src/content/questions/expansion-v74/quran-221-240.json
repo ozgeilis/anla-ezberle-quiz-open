@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-quran-221",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Tefsirdeki yaygın kullanımıyla anlamı açık, anlaşılması için başka açıklamaya ihtiyaç duyurmayan âyetlere ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Muhkem"
+      },
+      {
+        "id": "o2",
+        "text": "Müphem"
+      },
+      {
+        "id": "o3",
+        "text": "Mücmel"
+      },
+      {
+        "id": "o4",
+        "text": "Müteşâbih"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Muhkem için farklı tanımlar bulunsa da yaygın açıklamada anlamın belirginliği esas alınır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muhkem",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96–99 (basılı sayfa numarası değildir)",
+        "supports": "Muhkem için farklı tanımlar bulunsa da yaygın açıklamada anlamın belirginliği esas alınır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muhkem-acik-anlam"
+  },
+  {
+    "id": "new74-quran-222",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Âyetin iniş sebebine esbâb-ı nüzûl denirken, bir hadis veya nebevî davranışın ortaya çıkış vesilesi hangi terimle anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Resmü’l-mushaf"
+      },
+      {
+        "id": "o2",
+        "text": "Esbâbü vürûdi’l-hadîs"
+      },
+      {
+        "id": "o3",
+        "text": "Fâsılatü’l-âyât"
+      },
+      {
+        "id": "o4",
+        "text": "Kırâat-i aşere"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Nüzûl sebepleri âyetlere, vürûd sebepleri hadislerin söyleniş veya davranışların meydana geliş bağlamına ilişkindir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/esbab-i-nuzul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Nüzûl sebepleri âyetlere, vürûd sebepleri hadislerin söyleniş veya davranışların meydana geliş bağlamına ilişkindir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-nuzul-vurud-terimleri"
+  },
+  {
+    "id": "new74-quran-223",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Âyet veya sûrenin inişine vesile olan olay, durum ve soruları inceleyen alan hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Resmü’l-mushaf"
+      },
+      {
+        "id": "o2",
+        "text": "Vakf ve ibtidâ"
+      },
+      {
+        "id": "o3",
+        "text": "Esbâb-ı nüzûl"
+      },
+      {
+        "id": "o4",
+        "text": "Kırâat-i seb‘a"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Esbâb-ı nüzûl, risâlet dönemindeki iniş sebepleriyle ilgili rivayetleri konu alır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/esbab-i-nuzul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Esbâb-ı nüzûl, risâlet dönemindeki iniş sebepleriyle ilgili rivayetleri konu alır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-esbab-nuzul-olay-soru"
+  },
+  {
+    "id": "new74-quran-224",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Kur’an’daki her âyetin özel bir dış olaya bağlı iniş sebebi bulunduğunu söylemek doğru mudur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Evet; bütün âyetlerin aynı olaya bağlı sebebi vardır"
+      },
+      {
+        "id": "o2",
+        "text": "Evet; sebep bilinmiyorsa âyet geçersizdir"
+      },
+      {
+        "id": "o3",
+        "text": "Hayır; hiçbir âyetin iniş sebebi yoktur"
+      },
+      {
+        "id": "o4",
+        "text": "Hayır; pek çok âyet genel bilgilendirme ve rehberlik için inmiştir"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Özel sebebe bağlı olmayan âyetler de hikmetsiz değildir; eğitim ve uyarı gibi amaçlarla vahyedilmiştir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/esbab-i-nuzul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 97–98 (basılı sayfa numarası değildir)",
+        "supports": "Özel sebebe bağlı olmayan âyetler de hikmetsiz değildir; eğitim ve uyarı gibi amaçlarla vahyedilmiştir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-her-ayet-ozel-olaya-bagli-degil"
+  },
+  {
+    "id": "new74-quran-225",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Bir âyetin nüzûl sebebini belirlerken esas alınması gereken dayanak hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Olayla ilişkisi ve sıhhati incelenmiş rivayet"
+      },
+      {
+        "id": "o2",
+        "text": "Kelime benzerliğinden yapılan tahmin"
+      },
+      {
+        "id": "o3",
+        "text": "Sûrenin mushaf içindeki sayfası"
+      },
+      {
+        "id": "o4",
+        "text": "Yorumcunun yaşadığı çevrenin âdeti"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "İniş sebebi salt tahminle kurulmaz; rivayetin güvenilirliği ve risâlet dönemindeki olayla ilişkisi aranır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/esbab-i-nuzul",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 99–102 (basılı sayfa numarası değildir)",
+        "supports": "İniş sebebi salt tahminle kurulmaz; rivayetin güvenilirliği ve risâlet dönemindeki olayla ilişkisi aranır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-nuzul-sebebi-sahih-rivayet"
+  },
+  {
+    "id": "new74-quran-226",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Elif lâm mîm gibi hurûf-ı mukattaa nasıl okunur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tek bir kelime gibi birleştirilerek"
+      },
+      {
+        "id": "o2",
+        "text": "Harflerin adları ayrı ayrı söylenerek"
+      },
+      {
+        "id": "o3",
+        "text": "Sayı değerleri söylenerek"
+      },
+      {
+        "id": "o4",
+        "text": "Her defasında atlanarak"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Bu harfler kelime içindeki sesleriyle değil kendi adlarıyla telaffuz edilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/huruf-i-mukattaa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Bu harfler kelime içindeki sesleriyle değil kendi adlarıyla telaffuz edilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mukattaa-harf-isimle-okunur"
+  },
+  {
+    "id": "new74-quran-227",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Hurûf-ı mukattaa Kur’an’da kaç sûrenin başında bulunur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "On dört"
+      },
+      {
+        "id": "o2",
+        "text": "Otuz"
+      },
+      {
+        "id": "o3",
+        "text": "Yirmi dokuz"
+      },
+      {
+        "id": "o4",
+        "text": "Kırk"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "TDV, bu harflerin yirmi dokuz sûrenin başlangıcında yer aldığını belirtir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/huruf-i-mukattaa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 99 (basılı sayfa numarası değildir)",
+        "supports": "TDV, bu harflerin yirmi dokuz sûrenin başlangıcında yer aldığını belirtir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mukattaa-yirmidokuz-sure"
+  },
+  {
+    "id": "new74-quran-228",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Hurûf-ı mukattaada Arap alfabesinden kaç farklı harf kullanılmıştır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yedi"
+      },
+      {
+        "id": "o2",
+        "text": "Yirmi dokuz"
+      },
+      {
+        "id": "o3",
+        "text": "Otuz üç"
+      },
+      {
+        "id": "o4",
+        "text": "On dört"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Tekrarlar çıkarıldığında kullanılan farklı harflerin sayısı on dörttür.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/huruf-i-mukattaa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 99 (basılı sayfa numarası değildir)",
+        "supports": "Tekrarlar çıkarıldığında kullanılan farklı harflerin sayısı on dörttür.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mukattaa-ondort-harf"
+  },
+  {
+    "id": "new74-quran-229",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "“Havâmîm” adı hangi başlangıca sahip sûreleri topluca ifade eder?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hâ mîm"
+      },
+      {
+        "id": "o2",
+        "text": "Elif lâm râ"
+      },
+      {
+        "id": "o3",
+        "text": "Tâ sîn mîm"
+      },
+      {
+        "id": "o4",
+        "text": "Kâf hâ yâ ayn sâd"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Hâ mîm başlangıçları çoğul olarak havâmîm diye anılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/huruf-i-mukattaa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 101 (basılı sayfa numarası değildir)",
+        "supports": "Hâ mîm başlangıçları çoğul olarak havâmîm diye anılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-havamim-hamim-sureleri"
+  },
+  {
+    "id": "new74-quran-230",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "TDV’nin mukabele âdâbında, dinleyicilerin takip edebilmesi için önerdiği okuyuş nasıldır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sözcükler anlaşılmayacak kadar hızlı"
+      },
+      {
+        "id": "o2",
+        "text": "Orta hızda, tertîl üzere"
+      },
+      {
+        "id": "o3",
+        "text": "Her cümlede sesi tamamen değiştirerek"
+      },
+      {
+        "id": "o4",
+        "text": "Dinleyicilerin yetişmesine önem vermeden"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Maddede orta hız tavsiye edilir; amaç rahat takip ve düzgün okuyuşun korunmasıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mukabele--kuran",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 109 (basılı sayfa numarası değildir)",
+        "supports": "Maddede orta hız tavsiye edilir; amaç rahat takip ve düzgün okuyuşun korunmasıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mukabele-tertil-orta-hiz"
+  },
+  {
+    "id": "new74-quran-231",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Kıraat ilmi, Kur’an kelimeleri bakımından başlıca neyi inceler?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mushafın kapak ve bezeme biçimlerini"
+      },
+      {
+        "id": "o2",
+        "text": "Sûrelerin anlam bakımından sıralanışını"
+      },
+      {
+        "id": "o3",
+        "text": "Okunuş biçimlerini ve nakledenlere nisbet edilen okuyuşları"
+      },
+      {
+        "id": "o4",
+        "text": "Kur’an çevirilerinin dillerini"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "İbnü’l-Cezerî’nin tanımında okuyuşun nasıl olduğu ve râvilere nisbeti birlikte yer alır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kiraat--ilim",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 98–99 (basılı sayfa numarası değildir)",
+        "supports": "İbnü’l-Cezerî’nin tanımında okuyuşun nasıl olduğu ve râvilere nisbeti birlikte yer alır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-kiraat-ilmi-okuyus-nispet"
+  },
+  {
+    "id": "new74-quran-232",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Kıraat öğretiminde imam, onun râvisi ve râviden nakleden üzerinden kullanılan adlar hangi sıradadır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tarik, kıraat, rivayet"
+      },
+      {
+        "id": "o2",
+        "text": "Rivayet, tarik, kıraat"
+      },
+      {
+        "id": "o3",
+        "text": "Kıraat, tarik, rivayet"
+      },
+      {
+        "id": "o4",
+        "text": "Kıraat, rivayet, tarik"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "İmama okuyuş, râviye rivayet, râviden alana tarik nisbet edilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kiraat--ilim",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 103–104 (basılı sayfa numarası değildir)",
+        "supports": "İmama okuyuş, râviye rivayet, râviden alana tarik nisbet edilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-kiraat-rivayet-tarik-sirasi"
+  },
+  {
+    "id": "new74-quran-233",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Yaygın okunan Hafs rivayeti hangi kıraat imamına nisbet edilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Âsım"
+      },
+      {
+        "id": "o2",
+        "text": "Nâfi‘"
+      },
+      {
+        "id": "o3",
+        "text": "İbn Âmir"
+      },
+      {
+        "id": "o4",
+        "text": "Kisâî"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Hafs, Âsım kıraatinin meşhur râvisidir; farklı rivayetler ayrı Kur’anlar demek değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kiraat--ilim",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 130 (basılı sayfa numarası değildir)",
+        "supports": "Hafs, Âsım kıraatinin meşhur râvisidir; farklı rivayetler ayrı Kur’anlar demek değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hafs-asim-rivayeti"
+  },
+  {
+    "id": "new74-quran-234",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Kuzey Afrika’da yaygın olan Verş rivayeti hangi kıraat imamına aittir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Âsım"
+      },
+      {
+        "id": "o2",
+        "text": "Nâfi‘"
+      },
+      {
+        "id": "o3",
+        "text": "Hamza"
+      },
+      {
+        "id": "o4",
+        "text": "Ebû Amr"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "TDV, Nâfi‘ kıraatinin Verş rivayetini Kuzey Afrika’daki yaygın okuyuş olarak belirtir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kiraat--ilim",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 130–131 (basılı sayfa numarası değildir)",
+        "supports": "TDV, Nâfi‘ kıraatinin Verş rivayetini Kuzey Afrika’daki yaygın okuyuş olarak belirtir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-vers-nafi-rivayeti"
+  },
+  {
+    "id": "new74-quran-235",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Kitâbü’s-Seb‘a ile yedi kıraat tasnifinin yaygınlaşmasında belirleyici olan âlim kimdir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İbn Sînâ"
+      },
+      {
+        "id": "o2",
+        "text": "İbn Haldûn"
+      },
+      {
+        "id": "o3",
+        "text": "İbn Mücâhid"
+      },
+      {
+        "id": "o4",
+        "text": "İbn Battûta"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "İbn Mücâhid’in eseri, belirli yedi imamın kıraatini bir araya getirerek kabul gören tasnifi oluşturmuştur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kiraat--ilim",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 123–125 (basılı sayfa numarası değildir)",
+        "supports": "İbn Mücâhid’in eseri, belirli yedi imamın kıraatini bir araya getirerek kabul gören tasnifi oluşturmuştur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ibn-mucahid-yedi-tasnif"
+  },
+  {
+    "id": "new74-quran-236",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Âyet sayımlarındaki farklı rakamların sebeplerinden biri hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bazı ekollerin başka bir kitap okuması"
+      },
+      {
+        "id": "o2",
+        "text": "Yeni âyetlerin sürekli eklenmesi"
+      },
+      {
+        "id": "o3",
+        "text": "Kimi toplumların Kur’an’ı eksiltmesi"
+      },
+      {
+        "id": "o4",
+        "text": "Durakların ve besmelelerin sayılma biçimindeki farklar"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "TDV, âyet sonları ile besmele ve mukattaa harflerinin bağımsız âyet sayılması gibi sayım farklarını açıklar.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ayet",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 115–116 (basılı sayfa numarası değildir)",
+        "supports": "TDV, âyet sonları ile besmele ve mukattaa harflerinin bağımsız âyet sayılması gibi sayım farklarını açıklar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ayet-sayimi-fark-nedeni"
+  },
+  {
+    "id": "new74-quran-237",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Âyetlerin hazarî veya seferî olarak tasnifi hangi bağlamı esas alır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Peygamberin ikamet hâlinde veya yolculukta oluşunu"
+      },
+      {
+        "id": "o2",
+        "text": "Sûrenin uzun veya kısa oluşunu"
+      },
+      {
+        "id": "o3",
+        "text": "Yazının büyük veya küçük oluşunu"
+      },
+      {
+        "id": "o4",
+        "text": "Harflerin noktalı veya noktasız oluşunu"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Bu tasnif, vahyin gelişindeki ikamet veya sefer durumuyla ilgilidir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ayet",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 121–122 (basılı sayfa numarası değildir)",
+        "supports": "Bu tasnif, vahyin gelişindeki ikamet veya sefer durumuyla ilgilidir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hazari-seferi-tasnif"
+  },
+  {
+    "id": "new74-quran-238",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Kur’an öğretiminde öğrenciyi bilgilendirmek veya sınamak amacıyla yaptırılan vakfa ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vakf-ı ıztırârî"
+      },
+      {
+        "id": "o2",
+        "text": "Vakf-ı ihtibârî"
+      },
+      {
+        "id": "o3",
+        "text": "Vakf-ı intizârî"
+      },
+      {
+        "id": "o4",
+        "text": "Vakf-ı izdivâc"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "İhtibârî vakıf eğitim ve imtihan amacı taşır; zorunlu nefes duruşundan ayrılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 104 (basılı sayfa numarası değildir)",
+        "supports": "İhtibârî vakıf eğitim ve imtihan amacı taşır; zorunlu nefes duruşundan ayrılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-vakfi-ihtibari-sinav"
+  },
+  {
+    "id": "new74-quran-239",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Nefesin yetmemesi veya öksürük gibi zorunlulukla yapılan vakıf hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vakf-ı ihtibârî"
+      },
+      {
+        "id": "o2",
+        "text": "Vakf-ı intizârî"
+      },
+      {
+        "id": "o3",
+        "text": "Vakf-ı ıztırârî"
+      },
+      {
+        "id": "o4",
+        "text": "Vakf-ı ihtiyârî"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Zorunlu duruş ıztırârîdir; anlamın tamamlandığı yerde tercihle duruş ihtiyârîdir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/vakf-ve-ibtida",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 104 (basılı sayfa numarası değildir)",
+        "supports": "Zorunlu duruş ıztırârîdir; anlamın tamamlandığı yerde tercihle duruş ihtiyârîdir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-vakfi-iztirari-zorunlu"
+  },
+  {
+    "id": "new74-quran-240",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Hz. Peygamber’in son ramazanındaki “arza-i ahîre”de karşılıklı Kur’an okuma kaç defa gerçekleşmiştir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bir"
+      },
+      {
+        "id": "o2",
+        "text": "Üç"
+      },
+      {
+        "id": "o3",
+        "text": "Yedi"
+      },
+      {
+        "id": "o4",
+        "text": "İki"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "TDV’nin Buhârî ve Müslim rivayetleriyle aktardığına göre son ramazanda iki defa gerçekleşmiştir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mukabele--kuran",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 98 (basılı sayfa numarası değildir)",
+        "supports": "TDV’nin Buhârî ve Müslim rivayetleriyle aktardığına göre son ramazanda iki defa gerçekleşmiştir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-arzai-ahire-son-ramazan-iki"
+  }
+]

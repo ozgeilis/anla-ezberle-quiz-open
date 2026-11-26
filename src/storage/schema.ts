@@ -55,7 +55,8 @@ export function validRecord(value: unknown): value is GameRecord {
       !(
         (g.playCategoryVersion === 1 &&
           (g.bankVersion === 71 || g.bankVersion === 72)) ||
-        (g.playCategoryVersion === 2 && currentTaxonomy)
+        (g.playCategoryVersion === 2 && currentTaxonomy) ||
+        (g.playCategoryVersion === 3 && g.bankVersion === 74)
       ) ||
       g.mode !== "mixed" ||
       g.learningTopic !== undefined ||
@@ -74,6 +75,18 @@ export function validRecord(value: unknown): value is GameRecord {
   )
     return false;
   if (!["mixed", "daily", "focus"].includes(String(g.mode))) return false;
+  if (
+    g.quickPlay !== undefined &&
+    (g.quickPlay !== true ||
+      g.bankVersion !== 74 ||
+      g.mode !== "mixed" ||
+      g.focus !== undefined ||
+      g.playCategory !== undefined ||
+      g.learningTopic !== undefined ||
+      g.difficulty !== undefined ||
+      g.stage !== undefined)
+  )
+    return false;
   if (g.mode === "focus" && !categories.some((c) => c.id === g.focus))
     return false;
   if (g.mode !== "focus" && g.focus !== undefined) return false;
@@ -97,6 +110,7 @@ export function validRecord(value: unknown): value is GameRecord {
         g.bankVersion !== 71 &&
         g.bankVersion !== 72) ||
       (g.learningTopicVersion === 3 && !currentTaxonomy) ||
+      (g.learningTopicVersion === 4 && g.bankVersion !== 74) ||
       !(typeof g.bankVersion === "number" && g.bankVersion >= 14) ||
       g.mode !== "mixed" ||
       (g.difficulty === undefined && g.stage === undefined))
@@ -114,13 +128,21 @@ export function validRecord(value: unknown): value is GameRecord {
     return false;
   const learningTopic = g.learningTopic;
   if (
+    g.quickPlay === true &&
+    new Set(g.questionIds.map((id) => questionCategory(74, String(id))))
+      .size !== 4
+  )
+    return false;
+  if (
     isPlayCategory(g.playCategory) &&
     g.questionIds.some(
       (id) =>
         !belongsToPlayCategory(
           String(id),
           g.playCategory as import("../domain/game/play-categories").PlayCategoryId,
-          currentTaxonomy ? 2 : 1,
+          // Pre-fix v72 previews may carry category version 1 while their
+          // actual bank already used the v72 map. Keep that saved contract.
+          g.bankVersion === 74 ? 3 : currentTaxonomy ? 2 : 1,
         ),
     )
   )

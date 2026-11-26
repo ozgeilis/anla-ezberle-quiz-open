@@ -1,0 +1,524 @@
+{
+  "date": "2026-11-25",
+  "changes": [
+    {
+      "id": "new74-history-019",
+      "rejectedStem": "Mimar Sinan’ın “kalfalık eserim” diye nitelediği cami hangisidir?",
+      "reason": "Existing bank already tests the same fact or its immediate evidence relation.",
+      "replacementStem": "Süleymaniye Camii’nin merkezî kubbesini taşıyan ana düzen hangisidir?",
+      "replacementLocator": "119-121"
+    },
+    {
+      "id": "new74-prophets-015",
+      "rejectedStem": "A‘râf 7/160’ta Mûsâ’nın asâsını taşa vurmasının ardından kaç su gözü fışkırır?",
+      "reason": "Existing bank already tests the same fact or its immediate evidence relation.",
+      "replacementStem": "Tâhâ 20/94’te Hârûn, Mûsâ’nın yokluğunda neye sebep olmaktan endişelendiğini söyler?",
+      "replacementLocator": "20/94; physical PDF 334"
+    },
+    {
+      "id": "new74-prophets-019",
+      "rejectedStem": "Yûsuf 12/26-27’de gömleğin arkadan yırtılmış olması tanığın kurduğu delillendirmede neyi destekler?",
+      "reason": "Existing bank already tests the same fact or its immediate evidence relation.",
+      "replacementStem": "Hûd 11/47’de Nûh, Allah’tan neyi istemekten O’na sığındığını söyler?",
+      "replacementLocator": "11/47; physical PDF 238"
+    },
+    {
+      "id": "new74-prophets-020",
+      "rejectedStem": "Yûsuf 12/47’de yedi yıllık üretim için, yenilecek az miktar dışındaki ürün nasıl saklanmalıdır?",
+      "reason": "Existing bank already tests the same fact or its immediate evidence relation.",
+      "replacementStem": "Yûsuf 12/101’de Yûsuf, hayatının sonu için hangi dilekte bulunur?",
+      "replacementLocator": "12/101; physical PDF 258"
+    },
+    {
+      "id": "new74-general-031",
+      "rejectedStem": "Belirli secde âyetlerini okumak veya dinlemekle ilgili secde türü hangisidir?",
+      "reason": "Existing v8-general-002 already tests the definition. Replaced with the sourced school-specific ruling.",
+      "replacementStem": "Tilâvet secdesinin hükmü bakımından Hanefîlerle diğer üç Sünnî mezhep arasındaki fark hangi seçenekte doğru verilir?",
+      "replacementLocator": "105-107"
+    },
+    {
+      "id": "new74-prophets-048",
+      "rejectedStem": "Yûsuf 12/55’te Yûsuf, ülkenin hazineleri için görevlendirilmesini isterken hangi yeterliliklerini belirtir?",
+      "duplicates": "new74-prophets-005",
+      "reason": "Nearest-fact review confirmed the same fact was already tested; replaced after reading a different official source passage.",
+      "replacementStem": "Yûsuf 12/76’da Yûsuf, su kabını bulmadan önce yükleri hangi sırayla arar?",
+      "replacementLocator": "12/76; physical PDF 255",
+      "intermediateRejectedStem": "Yûsuf 12/62’de Yûsuf, kardeşlerinin ödediği bedel hakkında emrindeki gençlere ne söyler?",
+      "intermediateDuplicate": "new74-prophets-006"
+    },
+    {
+      "id": "new74-prophets-049",
+      "rejectedStem": "Yûsuf 12/67’de Ya‘kūb oğullarına şehre nasıl girmelerini öğütler?",
+      "duplicates": "new74-prophets-007",
+      "reason": "Nearest-fact review confirmed the same fact was already tested; replaced after reading a different official source passage.",
+      "replacementStem": "Yûsuf 12/59-60’ta Yûsuf, kardeşlerine tekrar tahıl verebilmek için kimi getirmelerini ister?",
+      "replacementLocator": "12/59-60; physical PDF 253"
+    },
+    {
+      "id": "new74-prophets-054",
+      "rejectedStem": "Enbiyâ 21/79’da dava konusunu iyi anlamasının sağlandığı özellikle belirtilen peygamber kimdir?",
+      "duplicates": "new74-prophets-017",
+      "reason": "Nearest-fact review confirmed the same fact was already tested; replaced after reading a different official source passage.",
+      "replacementStem": "Enbiyâ 21/82’de Süleyman için çalışan cinlerin yaptığı işler arasında özellikle hangisi anılır?",
+      "replacementLocator": "21/82; physical PDF 345"
+    },
+    {
+      "id": "new74-prophets-057",
+      "rejectedStem": "Neml 27/19’da Süleyman, kendisine ve anne babasına verilen nimetler karşısında ne için yardım diler?",
+      "duplicates": "learn-dua-028",
+      "reason": "Nearest-fact review confirmed the same fact was already tested; replaced after reading a different official source passage.",
+      "replacementStem": "Sebe’ 34/13’te Süleyman için yapılan kaplar hangi özelliklerle betimlenir?",
+      "replacementLocator": "34/13; physical PDF 452"
+    },
+    {
+      "id": "new74-history-065",
+      "rejectedStem": "Kurtuba Ulucamii’nin iki katlı kemer düzeninde alt ve üst kemerler sırasıyla nasıldır?",
+      "duplicates": "new74-history-001",
+      "reason": "Nearest-fact review confirmed the same fact was already tested; replaced after reading a different official source passage.",
+      "replacementStem": "Kurtuba Ulucamii’nin II. Hakem döneminde yeniden genişletilmesinin temel sebebi neydi?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 100 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-general-062",
+      "rejectedStem": "Gerektiğinde başkasının ihtiyacını kendi ihtiyacına tercih ederek özveride bulunmaya ne denir?",
+      "duplicates": "quran-meaning-v72-035",
+      "reason": "Preference for others while oneself in need was already tested as özgecilik; Arabic term did not make it a new fact.",
+      "replacementStem": "İslâm ahlâkında saldırganlığa sapmadan hak ve değerleri korumaya yönelen ölçülü cesaret hangi erdemle anlatılır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 96-101,107 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-086",
+      "rejectedStem": "Elhamra adındaki “hamrâ” sıfatının kızıl anlamı neyle ilişkilendirilir?",
+      "duplicatesOrClosestFact": "new74-history-002",
+      "reason": "Same name-origin fact already tested.",
+      "replacementStem": "Elhamra’nın kale-şehir düzenini oluşturan temel bölümler hangileridir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 119 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-077",
+      "rejectedStem": "Mü’minûn 23/96’da kötülük karşısında hangi karşılık öğütlenir?",
+      "duplicatesOrClosestFact": "quran-meaning-v72-028",
+      "reason": "Responding to evil with a better response is already tested; using another verse does not make it a new fact.",
+      "replacementStem": "Mücâdele 58/11’de bir toplantıda “yer açın” denildiğinde nasıl davranılması istenir?",
+      "replacementLocator": "58/11; physical PDF 582"
+    },
+    {
+      "id": "new74-quran-089",
+      "rejectedStem": "Fussılet 41/39’da kurumuş toprağın yağmurla canlanması hangi kudrete delil olarak gösterilir?",
+      "duplicatesOrClosestFact": "q67-rum-50",
+      "reason": "Reviving dry earth as evidence of resurrection is the same tested fact in a different verse.",
+      "replacementStem": "Hadîd 57/23’te kayıp ve kazanımlar karşısında hangi iki aşırılıktan sakınılması istenir?",
+      "replacementLocator": "57/23; physical PDF 578"
+    },
+    {
+      "id": "new74-prophets-100",
+      "rejectedStem": "Şuarâ 26/62’de Mûsâ, takip altında kaldıklarında hangi güveni dile getirir?",
+      "duplicatesOrClosestFact": "new74-prophets-037",
+      "reason": "Reworked an overly similar generic divine-guidance outcome; selected a distinct stated personal ability instead.",
+      "replacementStem": "Kasas 28/34’te Mûsâ, Hârûn’un hangi yeteneğini kendisininkinden daha güçlü bulduğunu söyler?",
+      "replacementLocator": "28/34; physical PDF 410"
+    },
+    {
+      "id": "new74-prophets-100",
+      "rejectedStem": "Kasas 28/34’te Mûsâ, Hârûn’un hangi yeteneğini kendisininkinden daha güçlü bulduğunu söyler?",
+      "duplicates": "q67-kasas-34",
+      "reason": "The old question already states Harun speaks better; reversing which side of that relation is asked does not add a distinct fact. Replaced after reading the full official page for 20/85.",
+      "replacementStem": "Tâhâ 20/85’te Mûsâ’nın yokluğunda kavmini yoldan çıkardığı bildirilen kişi kimdir?",
+      "replacementLocator": "20/85; physical PDF 333"
+    },
+    {
+      "id": "new74-general-113",
+      "rejectedStem": "Bir kitabın seçilen temel hadis kaynaklarından fazla veya farklı rivayetlerini toplayan eser türü hangisidir?",
+      "duplicates": "q49-kutub-032",
+      "reason": "Existing stem or marked answer already tests the same fact; a different source-backed fact replaces the candidate without changing its ID.",
+      "replacementStem": "Hadis ilminde akran iki râvinin birbirinden karşılıklı rivayette bulunmasına ne denir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 96-99 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-general-116",
+      "rejectedStem": "İman, ibadet, ahlâk, tefsir ve siyer gibi geniş konu gruplarını birlikte kapsayan hadis kitabı türü hangisidir?",
+      "duplicates": "q68-cami-tanim",
+      "reason": "Existing stem or marked answer already tests the same fact; a different source-backed fact replaces the candidate without changing its ID.",
+      "replacementStem": "Hadis ilminde güvenilir bir râvinin yaşlılık veya ağır üzüntü gibi sebeplerle rivayet ehliyetinin bozulmasına ne denir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-general-117",
+      "rejectedStem": "Sünen türü hadis kitaplarının temel düzeni hangi esasa dayanır?",
+      "duplicates": "q68-sunen-duzen",
+      "reason": "Existing stem or marked answer already tests the same fact; a different source-backed fact replaces the candidate without changing its ID.",
+      "replacementStem": "Müdellis olmayan râvinin “an” ile naklinde Müslim b. Haccâc, hocasıyla ilişkisinde hangi şartı yeterli görür?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 105 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-101",
+      "rejectedStem": "Cami avlusunda havuz çevresindeki musluklardan abdest alınan yapı hangisidir?",
+      "duplicates": "v11-general-010",
+      "reason": "Existing stem or marked answer already tests the same fact; a different source-backed fact replaces the candidate without changing its ID.",
+      "replacementStem": "Şadırvanlar camiler dışında hangi tarihî yapıların avlularında da kullanılmıştır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 95 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-119",
+      "rejectedStem": "Hz. Peygamber’in eşleri arasında Âişe’den sonra en çok hadis rivayet eden kimdir?",
+      "duplicates": "learn-women-007",
+      "reason": "Existing stem or marked answer already tests the same fact; a different source-backed fact replaces the candidate without changing its ID.",
+      "replacementStem": "Genellikle iki öğün yemek veren Osmanlı imaretlerinde ramazanda nasıl bir düzen uygulanırdı?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 102 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-124",
+      "rejectedStem": "Enbiyâ 21/47’de adalet terazileri bağlamında ne kadar küçük bir işin bile hesaba getirileceği belirtilir?",
+      "duplicates": "q42-lokman-16",
+      "reason": "Both tested the mustard-seed measure of the smallest accountable deed; different verse references do not make a different fact.",
+      "replacementStem": "Cum‘a 62/5’te Tevrat’la yükümlü tutulup onun hakkını vermeyenlerin durumu neye benzetilir?",
+      "replacementLocator": "62/5; physical PDF 593"
+    },
+    {
+      "id": "new74-general-141",
+      "rejectedStem": "İnsanları rahatsız eden bir şeyi yoldan kaldırmak hadiste nasıl değerlendirilir?",
+      "duplicates": "q62-sadaka-genis",
+      "reason": "The discarded candidate repeated the existing road-obstruction charity fact; changing narrator or wording does not make it new.",
+      "replacementStem": "Namazda konuşan Muâviye b. Hakem’e Hz. Peygamber hangi sınırı hatırlatır?",
+      "replacementLocator": "Cilt 6, s. 409; Müslim, Mesâcid, 33 (M1199)"
+    },
+    {
+      "id": "new74-history-148",
+      "rejectedStem": "Sabuncuoğlu’nun Akrâbâzîn Tercümesi hangi temel konuyu ele alır?",
+      "duplicates": "new74-history-147",
+      "reason": "The two pharmacy-book topic questions had excessively similar marked answers; replace one with a different biographical fact.",
+      "replacementStem": "Osmanlı hekimi Sabuncuoğlu Şerefeddin’in hayatını sürdürdüğü Anadolu şehri hangisidir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 97 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-142",
+      "rejectedStem": "Mâide 5/1’in başında müminlere sözleşmeler konusunda hangi emir verilir?",
+      "duplicates": "v13-quran-007",
+      "reason": "General obligation to fulfil contracts restated the existing obligation to keep promises; choose a different textual image instead.",
+      "replacementStem": "Haşr 59/21’de Kur’an bir dağın üzerine indirilseydi dağın hangi halde görüleceği anlatılır?",
+      "replacementLocator": "59/21; physical PDF 587"
+    },
+    {
+      "id": "new74-quran-175",
+      "rejectedStem": "Târık 86/11-13’te edilen yeminlerin ardından Kur’an hangi niteliğiyle tanıtılır?",
+      "reason": "Duplicate of old q54-tarik-013; replace with another source-read fact.",
+      "replacementStem": "Mü’minûn 23/18’de gökten indirilen suyla ilgili hangi iki ilâhî tasarruf birlikte anılır?",
+      "replacementLocator": "23/18; physical PDF 360"
+    },
+    {
+      "id": "new74-general-168",
+      "rejectedStem": "Fıkıhta, şartları oluştuğunda satılmış taşınmazı alıcının ödediği bedelle edinme yetkisi veren ön alım hakkına ne denir?",
+      "reason": "Duplicate of old q68-hadis-tanim; replace definition with explicitly Hanefi priority rule, not a reverse definition.",
+      "replacementStem": "Hanefî şüf‘a düzeninde hangi hak sahibi, satılan taşınmaza sadece bitişik komşu olandan önce gelir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 111–113 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-183",
+      "rejectedStem": "Bakara 2/172’de temiz rızıklardan yemekle birlikte hangi görev hatırlatılır?",
+      "reason": "Avoid another generic gratitude prompt close to old v13-quran-002.",
+      "replacementStem": "En‘âm 6/65’te yukarıdan ve aşağıdan gelecek azabın yanında hangi toplumsal felâket anılır?",
+      "replacementLocator": "6/65; physical PDF 144"
+    },
+    {
+      "id": "new74-quran-195",
+      "rejectedStem": "En‘âm 6/50’de Hz. Peygamber’in kendisi için ileri sürmediği iddialar hangileridir?",
+      "reason": "Replace shared claim-denial fact already asked about Noah in new74-prophets-024.",
+      "replacementStem": "Yûnus 10/5’te aya menziller belirlenmesi insanların hangi bilgiyi edinmesiyle ilişkilendirilir?",
+      "replacementLocator": "10/5; physical PDF 219"
+    },
+    {
+      "id": "new74-quran-196",
+      "rejectedStem": "En‘âm 6/52’de Allah’ın rızasını isteyerek sabah akşam dua edenlere karşı hangi tutum yasaklanır?",
+      "reason": "Replace poor-worshipper exclusion theme close to old q66-kehf-28.",
+      "replacementStem": "Hicr 15/21’de hazinelerden indirilenler için hangi ölçü vurgulanır?",
+      "replacementLocator": "15/21; physical PDF 274"
+    },
+    {
+      "id": "new74-history-211",
+      "rejectedStem": "Osmanlı kitap sanatları çevresinde “mührezen” esnafının işi neydi?",
+      "reason": "Definition/function reversal repeats new74-history-208.",
+      "replacementStem": "Fâtih vakfiyesinde hâfız-ı kütüb için istenen bilgi özellikle hangi hizmetle ilgilidir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 101 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-212",
+      "rejectedStem": "Klasik İslâm yazmalarındaki siyah is mürekkebinin temel renk verici unsuru nedir?",
+      "reason": "Main ink ingredient repeats old q58-esma-ogul.",
+      "replacementStem": "Üsküdar Selim Ağa Kütüphanesi vakfiyesine göre ders de okutacak ilk iki hâfız-ı kütübü kim imtihan etmeliydi?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 110 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-213",
+      "rejectedStem": "Kandillerin isini toplamak için düzenlenen is odasının günümüze ulaşan tanınmış örneği hangi camidedir?",
+      "reason": "Reverse prompt repeats old q64-bedir-sefer on the Süleymaniye soot room.",
+      "replacementStem": "Abbâsî dönemi sağlık hizmetlerinde vezir Ali b. Îsâ’nın emriyle hekimlerin hapishanelere gönderilmesinin amacı neydi?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 116–117 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-216",
+      "rejectedStem": "Cezerî’nin Diyarbekir’de Artuklu emîri için hazırladığı resimli eser hangi alandaki düzenekleri anlatır?",
+      "reason": "Cezeri mechanical specialization repeats v10-history-009.",
+      "replacementStem": "III. Ahmed Kütüphanesi Topkapı Sarayı’nın hangi bölümünde bulunmaktadır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 887 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-213",
+      "rejectedStem": "Ahzâb 33/58’de hak etmedikleri hâlde müminleri incitenlerin ne yüklendiği bildirilir?",
+      "reason": "Rephrase of slander/sin consequence already in new74-quran-052.",
+      "replacementStem": "Mü’minûn 23/71’de hakikatin insanların keyfî arzularına uyması hâlinde ne olacağı söylenir?",
+      "replacementLocator": "23/71; physical PDF 364"
+    },
+    {
+      "id": "new74-general-234",
+      "rejectedStem": "Tuvalet ihtiyacından sonra idrar ve dışkı kalıntısının temizlenmesi hangi terimle anılır?",
+      "reason": "Definition repeats new74-general-039.",
+      "replacementStem": "TDV açıklamasına göre yalnız temizlik amacıyla üretilen tuvalet kâğıdının istincâda kullanılması nasıl değerlendirilir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 107 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-general-235",
+      "rejectedStem": "Tahâret bağlamında istibrâ neyi amaçlar?",
+      "reason": "Definition reversal repeats old v12-general-009.",
+      "replacementStem": "TDV’ye göre istibrâ için önerilmiş yürüme veya öksürme gibi yöntemler nasıl anlaşılmalıdır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 105 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-222",
+      "rejectedStem": "Âl-i İmrân 3/7’de “kitabın anası” olarak nitelenen âyet grubu hangisidir?",
+      "reason": "Muhkem-as-core question repeats old q65-hadid-3.",
+      "replacementStem": "Âyetin iniş sebebine esbâb-ı nüzûl denirken, bir hadis veya nebevî davranışın ortaya çıkış vesilesi hangi terimle anılır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-230",
+      "rejectedStem": "Bir hâfızın Kur’an okuyuşunu takip ederek hatim yapma geleneğinin adı nedir?",
+      "reason": "Definition repeats old quran-013.",
+      "replacementStem": "TDV’nin mukabele âdâbında, dinleyicilerin takip edebilmesi için önerdiği okuyuş nasıldır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 109 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-236",
+      "rejectedStem": "En yaygın tasnife göre âyetlerin Mekkî veya Medenî sayılmasında temel zaman sınırı nedir?",
+      "reason": "Mekki/Medeni threshold reverses old q71-sure-medenim.",
+      "replacementStem": "Âyet sayımlarındaki farklı rakamların sebeplerinden biri hangisidir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 115–116 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-237",
+      "rejectedStem": "Âyetin son kelimesi veya onu ayıran son harfi için hangi terim kullanılır?",
+      "reason": "Fasila definition repeats old q71-ayet-fasila.",
+      "replacementStem": "Âyetlerin hazarî veya seferî olarak tasnifi hangi bağlamı esas alır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 121–122 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-238",
+      "rejectedStem": "Kur’an okuyuşunda vakftan sonra yeniden başlamaya ne denir?",
+      "reason": "Ibtida definition repeats old v11-general-011.",
+      "replacementStem": "Kur’an öğretiminde öğrenciyi bilgilendirmek veya sınamak amacıyla yaptırılan vakfa ne denir?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 104 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-history-231",
+      "rejectedStem": "Gevher Nesibe Dârüşşifâsı ve Gıyâseddin Keyhusrev Tıp Medresesi hangi şehirdedir?",
+      "reason": "Same city fact as new74-history-097.",
+      "replacementStem": "Selçuklu ve Osmanlı sağlık tarihinde “miskinler tekkesi” veya cüzzamhâne hangi hastaların bakımına ayrılmıştır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 152 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-prophets-243",
+      "rejectedStem": "Medine halkını korkutan bir gece sesini araştırmak üzere Hz. Peygamber nasıl davranmıştır?",
+      "reason": "Same night-noise investigation fact as new74-prophets-194.",
+      "replacementStem": "Gece namazında kendisine uymak için insanların toplandığını gören Hz. Peygamber, amellerin miktarı için hangi ölçüyü hatırlatmıştır?",
+      "replacementLocator": "Cilt 3, fiziksel PDF s. 195; M1827, Müslim, Müsâfirîn 215"
+    },
+    {
+      "id": "new74-general-241",
+      "rejectedStem": "Hadiste anne babaya vefanın onlar dışındaki kimselere de uzanan hangi örneği özellikle övülür?",
+      "reason": "Same father-friends visit fact as new74-general-183.",
+      "replacementStem": "“Din samimiyettir” hadisinde Allah, kitabı ve resûlü yanında kimlere karşı samimiyet de anılır?",
+      "replacementLocator": "Cilt 3, fiziksel PDF s. 137; M196, Müslim, Îmân 95"
+    },
+    {
+      "id": "new74-general-246",
+      "rejectedStem": "“Mümin aynı delikten iki defa sokulmaz” hadisi hangi tutumu öğütler?",
+      "reason": "Same twice-stung fact as new74-general-193.",
+      "replacementStem": "Müminin sıkıntılar karşısındaki esnekliğini anlatan hadiste hangi bitki benzetmesi yapılır?",
+      "replacementLocator": "Cilt 3, fiziksel PDF s. 195; M7094, Müslim, Sıfâtü’l-münâfikīn 59"
+    },
+    {
+      "id": "new74-general-249",
+      "rejectedStem": "Mal ve beden imkânları bakımından kendinden daha iyi durumdakilere bakan kişiye, hadiste ayrıca ne önerilir?",
+      "reason": "Same comparing material blessings fact as new74-general-194.",
+      "replacementStem": "Kararsız münafığı anlatan hadiste iki sürü arasında neye benzediği söylenir?",
+      "replacementLocator": "Cilt 3, fiziksel PDF s. 195; N5040, Nesâî, Îmân 31"
+    },
+    {
+      "id": "new74-quran-252",
+      "rejectedStem": "Yûnus 10/57’de gelen öğüt özellikle hangi hastalıklara şifa olarak nitelenir?",
+      "reason": "Avoid another Quran-as-healing question close to new74-quran-116.",
+      "replacementStem": "Yûnus 10/31’de rızkı ve hayatı kimin yönettiği sorulan muhatapların hangi cevabı vereceği bildirilir?",
+      "replacementLocator": "10/31; physical PDF 222–223"
+    },
+    {
+      "id": "new74-quran-254",
+      "rejectedStem": "Secde 32/16’da yataklarından kalkıp dua edenler hangi iki duyguyla Rablerine yönelir?",
+      "reason": "Same fear-and-hope prayer pair as new74-quran-015.",
+      "replacementStem": "Kehf 18/103-104’te çabaları boşa gidenler kendi yaptıkları hakkında hangi yanılgı içindedir?",
+      "replacementLocator": "18/103–104; physical PDF 319"
+    },
+    {
+      "id": "new74-prophets-261",
+      "rejectedStem": "Hz. Âişe, Hz. Peygamber’in kadınlara ve hizmetçilere davranışı hakkında ne bildirir?",
+      "reason": "Same not-hitting women/servants fact as new74-prophets-147.",
+      "replacementStem": "Diyanet’in aktarımında, Mescid-i Nebevî’nin aydınlatılmasına katkısı sebebiyle Fetih isimli sahâbîye hangi ad verilmiştir?",
+      "replacementLocator": "Cilt 4, fiziksel PDF s. 121; İbn Hacer, el-İsâbe III, 38"
+    },
+    {
+      "id": "new74-general-257",
+      "rejectedStem": "Hadiste küçükler ve büyüklerle ilişkide hangi iki tutum birlikte istenir?",
+      "reason": "Same small-mercy/elder-respect fact as new74-prophets-155.",
+      "replacementStem": "Hadiste, ibadetleriyle geldiği halde insanlara yaptığı haksızlıklar yüzünden iyiliklerini kaybeden kişi nasıl adlandırılır?",
+      "replacementLocator": "Cilt 4, fiziksel PDF s. 421; M6579, Müslim, Birr 59"
+    },
+    {
+      "id": "new74-general-266",
+      "rejectedStem": "Yapılan iyiliğe maddî karşılık verme imkânı bulunamazsa hadiste ne önerilir?",
+      "reason": "Same good-deed repayment prayer fact as new74-general-154.",
+      "replacementStem": "Şehitliği içtenlikle dileyen kimse için, yatağında ölse bile hadiste hangi müjde bildirilir?",
+      "replacementLocator": "Cilt 4, fiziksel PDF s. 519; M4930, Müslim, İmâre 157"
+    },
+    {
+      "id": "new74-general-292",
+      "rejectedStem": "İnsanın içinden geçen düşünceler hakkında hadiste hangi ayrım yapılır?",
+      "reason": "Same unspoken-thoughts fact as new74-general-223.",
+      "replacementStem": "Ümmetin sorumlu tutulmamasıyla ilgili hadiste hangi üç durum birlikte sayılır?",
+      "replacementLocator": "Cilt 2, fiziksel PDF s. 13; İM2043, İbn Mâce, Talâk 16"
+    },
+    {
+      "id": "new74-quran-291",
+      "rejectedStem": "En‘âm 6/60’ta gecenin ardından sabah yeniden diriltilme ifadesi hangi günlük hâli hatırlatır?",
+      "reason": "Duplicate sleep/death information already present in new74-quran-086.",
+      "replacementStem": "En‘âm 6/125’te kalpteki darlık ve sıkıntı hangi duruma benzetilir?",
+      "replacementLocator": "6/125; physical PDF 153"
+    },
+    {
+      "id": "new74-quran-293",
+      "rejectedStem": "Yûnus 10/24’te dünya hayatının geçiciliği hangi manzarayla örneklendirilir?",
+      "reason": "Same fading-plants/worldly-life analogy as q65-hadid-20.",
+      "replacementStem": "Yûnus 10/25’te Allah’ın çağırdığı “dârüsselâm” Diyanet mealinde nasıl karşılanır?",
+      "replacementLocator": "10/25; physical PDF 222"
+    },
+    {
+      "id": "new74-quran-299",
+      "rejectedStem": "Rahmân 55/29’da göklerde ve yerde bulunanların Allah’la ilişkisi nasıl anlatılır?",
+      "reason": "Same dependence-on-Allah information as new74-quran-080.",
+      "replacementStem": "Nûr 24/35’te kandil benzetmesinde yağı anılan mübarek ağaç hangisidir?",
+      "replacementLocator": "24/35; physical PDF 372"
+    },
+    {
+      "id": "new74-quran-301",
+      "rejectedStem": "Teğābün 64/14’te aile içindeki güçlükler karşısında sakınma öğüdüne hangi tutum eşlik eder?",
+      "reason": "Avoid another forgive-and-overlook answer already tested in quran-meaning-v72-025.",
+      "replacementStem": "Şûrâ 42/28’de insanların ümitlerini yitirmesinin ardından Allah’ın hangi nimeti indirdiği belirtilir?",
+      "replacementLocator": "42/28; physical PDF 514"
+    },
+    {
+      "id": "new74-history-292",
+      "rejectedStem": "Abbas b. Firnâs’ın kurduğu gök küresi neyi temsil ediyordu?",
+      "reason": "Original globe question gave away its answer; replace with another fact directly read in the same official article.",
+      "replacementStem": "Abbas b. Firnâs’ın I. Muhammed’e sunduğu “menkāne” adlı alet neydi?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 98 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-323",
+      "rejectedStem": "İbrâhim 14/34’te Allah’ın nimetlerini saymaya çalışan insan için ne söylenir?",
+      "reason": "Same uncountable-blessings fact as new74-quran-063; replaced after reading Diyanet 52/35.",
+      "replacementStem": "Tûr 52/35’te insanın yaratılışı hakkında hangi iki iddia soruyla sorgulanır?",
+      "replacementLocator": "52/35; physical PDF 559"
+    },
+    {
+      "id": "new74-quran-334",
+      "rejectedStem": "Nisâ 4/40’ta zerre kadar haksızlık etmeyeceği bildirilen Allah’ın iyiliğe karşılığı nasıl anlatılır?",
+      "reason": "Previous focus on multiplied reward overlaps q65-hadid-18; now tests the distinct no-injustice assertion.",
+      "replacementStem": "Nisâ 4/40’ta Allah’ın adaleti hakkında hangi güvence verilir?",
+      "replacementLocator": "4/40; physical PDF 90"
+    },
+    {
+      "id": "new74-quran-343",
+      "rejectedStem": "Ahzâb 33/35’te iman ve güzel davranışların ardından büyük ödül kimler için birlikte belirtilir?",
+      "reason": "Same reward-for-both-sexes information as new74-quran-201.",
+      "replacementStem": "Bakara 2/170’te vahye uymak yerine hangi gerekçeye sığınma sorgulanır?",
+      "replacementLocator": "2/170; physical PDF 32"
+    },
+    {
+      "id": "new74-prophets-334",
+      "rejectedStem": "İlk vahyin ardından Hz. Hatice’nin tesellisinde Hz. Peygamber’in hangi niteliği anılmıştır?",
+      "reason": "Avoid another slice of Hatice’s same first-revelation consolation already used in q48-hatice-041.",
+      "replacementStem": "Hz. Peygamber, “Kur’an size indirilmişken ben mi okuyayım?” diyen İbn Mes‘ûd’a neden okumasını söylemiştir?",
+      "replacementLocator": "Cilt 1, fiziksel PDF s. 555; B5050, Fedâilü’l-Kur’ân 33"
+    },
+    {
+      "id": "new74-quran-334",
+      "rejectedStem": "Nisâ 4/40’ta Allah’ın adaleti hakkında hangi güvence verilir?",
+      "reason": "Previous focus on multiplied reward overlaps q65-hadid-18; now tests the distinct no-injustice assertion.",
+      "replacementStem": "Nisâ 4/40’ta Allah’ın adaleti hakkında hangi güvence verilir?",
+      "replacementLocator": "4/40; physical PDF 92"
+    },
+    {
+      "id": "new74-quran-343",
+      "rejectedStem": "Bakara 2/170’te vahye uymak yerine hangi gerekçeye sığınma sorgulanır?",
+      "reason": "Same reward-for-both-sexes information as new74-quran-201.",
+      "replacementStem": "Bakara 2/170’te vahye uymak yerine hangi gerekçeye sığınma sorgulanır?",
+      "replacementLocator": "2/170; physical PDF 32"
+    },
+    {
+      "id": "new74-prophets-334",
+      "rejectedStem": "Hz. Peygamber, “Kur’an size indirilmişken ben mi okuyayım?” diyen İbn Mes‘ûd’a neden okumasını söylemiştir?",
+      "reason": "Avoid another slice of Hatice’s same first-revelation consolation already used in q48-hatice-041.",
+      "replacementStem": "Hz. Peygamber, “Kur’an size indirilmişken ben mi okuyayım?” diyen İbn Mes‘ûd’a neden okumasını söylemiştir?",
+      "replacementLocator": "Cilt 1, fiziksel PDF s. 555; B5050, Fedâilü’l-Kur’ân 33"
+    },
+    {
+      "id": "new74-history-213",
+      "rejectedStem": "Abbâsî dönemi sağlık hizmetlerinde vezir Ali b. Îsâ’nın emriyle hekimlerin hapishanelere gönderilmesinin amacı neydi?",
+      "reason": "Prison physician examination/treatment repeats new74-history-078; replaced by a different checked geographic-biography fact.",
+      "replacementStem": "Coğrafyacı Muhammed b. Ahmed’in “Makdisî” nisbesi doğduğu hangi şehre dayanır?",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-general-371",
+      "rejectedStem": "“Din kolaylıktır” hadisi ibadet eden kişiyi hangi aşırılıktan sakındırır?",
+      "reason": "Power-limited worship message already appears in new74-prophets-243; replaced by a distinct checked Veda-hajj teaching.",
+      "replacementStem": "Veda haccında bildirilen hadiste mücahid, nefsiyle hangi yolda mücadele eden kişi olarak anlatılır?",
+      "replacementLocator": "Cilt 1, fiziksel PDF s. 301; T1621, Fedâilü’l-cihâd 2; HM24465"
+    },
+    {
+      "id": "new74-general-372",
+      "rejectedStem": "Musibetle sarsılıp yeniden toparlanan mümin hadiste neye benzetilir?",
+      "reason": "Same green-crop simile as new74-general-246; now measures a different checked hadith assertion.",
+      "replacementStem": "Namazın nur, sabrın ışık diye anıldığı hadiste sadaka nasıl nitelenir?",
+      "replacementLocator": "Cilt 3, fiziksel PDF s. 203; M534, Tahâret 1"
+    },
+    {
+      "id": "new74-prophets-366",
+      "rejectedStem": "Hz. Peygamber, davada iyi konuşarak haksız pay kazanan kişiye hangi uyarıyı yapmıştır?",
+      "reason": "Court ruling cannot legalise another person’s right repeats new74-general-325; replaced by a different checked teaching to Muaz.",
+      "replacementStem": "Hz. Muâz’a her namazın ardından öğütlenen duada hangi üç iş için yardım istenir?",
+      "replacementLocator": "Cilt 6, fiziksel PDF s. 527; D1522, Vitr 26; N1304"
+    },
+    {
+      "id": "new74-history-276",
+      "rejectedStem": "Cami kubbe ve minare külâhlarının tepesine takılan sembolik unsura ne denir?",
+      "replacementStem": "TDV’nin mimari alem maddesine göre taş bina alemleri genellikle hangi malzemeden yapılmıştır?",
+      "reason": "Same tested fact was already retained elsewhere in candidate bank.",
+      "replacementLocator": "Elektronik madde, erişim anındaki metin satırları 218 (basılı sayfa numarası değildir)"
+    },
+    {
+      "id": "new74-quran-195",
+      "rejectedStem": "Yûnus 10/5’te aya menziller belirlenmesi insanların hangi bilgiyi edinmesiyle ilişkilendirilir?",
+      "replacementStem": "Meâric 70/4’te meleklerin ve ruhun yükselişindeki günün miktarı kaç yıl olarak verilir?",
+      "reason": "Same tested fact was already retained elsewhere in candidate bank.",
+      "replacementLocator": "70/4; physical PDF 611"
+    }
+  ]
+}

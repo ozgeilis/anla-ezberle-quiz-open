@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual TDV passage comparison, not metadata-only approval",
+  "groups": [
+    {
+      "ids": [
+        "history-008",
+        "e150-history-014",
+        "q51-muahat-009",
+        "q51-muahat-010",
+        "q51-muahat-011",
+        "q51-muahat-012",
+        "q51-muahat-013",
+        "q51-muahat-014",
+        "q51-muahat-015",
+        "q51-muahat-016"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/muahat",
+      "locator": "TDV full article; terminology, reported numbers, miras, sharecropping and mutual support paragraphs",
+      "partialIds": [],
+      "note": "All stems/options/key/explanations manually compared; explicitly reported numbers, dates and names preserved as source-specific claims."
+    },
+    {
+      "ids": [
+        "e150-history-006",
+        "e150-history-007",
+        "q51-ensar-001",
+        "q51-ensar-002",
+        "q51-ensar-003",
+        "q51-ensar-004",
+        "q51-ensar-005",
+        "q51-ensar-006",
+        "q51-ensar-007",
+        "q51-ensar-008"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/ensar",
+      "locator": "TDV full article through virtues; definition, Akabe, shared crop labour and miras paragraphs",
+      "partialIds": [],
+      "note": "All stems/options/key/explanations manually compared; explicitly reported numbers, dates and names preserved as source-specific claims."
+    }
+  ]
+}

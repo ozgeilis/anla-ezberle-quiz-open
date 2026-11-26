@@ -50,7 +50,11 @@ interface GameContext {
     difficulty?: Difficulty,
     learningTopic?: LearningTopicId,
     stage?: GameStage,
-    options?: { playCategory?: PlayCategoryId; allowReplay?: boolean },
+    options?: {
+      playCategory?: PlayCategoryId;
+      allowReplay?: boolean;
+      quickPlay?: boolean;
+    },
   ) => boolean;
   startError: string | null;
   clearStartError(): void;
@@ -171,7 +175,11 @@ export function GameProvider({ children }: React.PropsWithChildren) {
       difficulty?: Difficulty,
       learningTopic?: LearningTopicId,
       stage?: GameStage,
-      options?: { playCategory?: PlayCategoryId; allowReplay?: boolean },
+      options?: {
+        playCategory?: PlayCategoryId;
+        allowReplay?: boolean;
+        quickPlay?: boolean;
+      },
     ) => {
       if (!ready || sessionRef.current) return false;
       if (
@@ -195,6 +203,7 @@ export function GameProvider({ children }: React.PropsWithChildren) {
           stage,
           history: dataRef.current.games,
           allowReplay: options?.allowReplay,
+          quickPlay: options?.quickPlay,
         });
         resultRef.current = null;
         setResult(null);

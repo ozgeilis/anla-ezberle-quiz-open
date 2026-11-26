@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-26",
+  "preIntegrationSelected": {
+    "status": "PASSED",
+    "tests": 33
+  },
+  "integratedRegressionRecheck": {
+    "status": "PASSED",
+    "tests": 139
+  },
+  "fullUnitRun": {
+    "status": "FAILED_ONE_PREEXISTING_NATIVE_SOURCE_MISSING",
+    "tests": 482,
+    "passed": 481,
+    "failed": 1,
+    "durationMs": 51198.401,
+    "failure": "google-native.test.ts: ignored modules/google-native-signin/ios/GoogleNativeSignInModule.swift absent from this Git source base and current main; an untracked copy exists in the separate iOS release worktree. Auth code was not imported into this content change.",
+    "logSha256": "21ca4548026f47af7d4942e8c603d1e82f97d194a22ad530ecab4c6fdd131486",
+    "sourceCommit": "895624a49aaa7ab849f2564f672025ce72af243e",
+    "execution": "Actual stable Git worktree; no temporary source copy"
+  },
+  "fullTypeScript": {
+    "status": "PASSED",
+    "exitCode": 0
+  },
+  "fullESLint": {
+    "status": "PASSED",
+    "exitCode": 0
+  },
+  "candidateIntegrity": {
+    "status": "PASSED",
+    "records": 3000,
+    "new": 1500,
+    "perCategory": 375,
+    "oldIdsRetained": 1500,
+    "historicalV73Sha256Unchanged": true,
+    "sourceReceiptsMatch": true,
+    "topicMappings": 3000
+  },
+  "realEngineIntegration": {
+    "status": "PASSED",
+    "normal": true,
+    "daily": true,
+    "schemaFocusCategories": 4,
+    "screenDifficultyRounds": 18,
+    "screenStageRounds": 30,
+    "scoreAndSaveRoundTrip": true,
+    "legacyXpAndAnswersRetained": true
+  },
+  "sourceComparison": {
+    "old": 1500,
+    "new": 1500,
+    "replacedOldDuplicates": 146,
+    "expertApprovalClaimed": false,
+    "unverifiedCandidateSources": 0
+  },
+  "serverSQL": {
+    "status": "PASSED_ISOLATED_CI; LOCAL_DOCKER_STILL_UNAVAILABLE",
+    "preparedCI": ".github/workflows/content-v74.yml",
+    "hostedApplied": false
+  },
+  "deviceTest": {
+    "status": "NOT_RUN",
+    "reason": "Content source update; no new IPA/AAB."
+  },
+  "publication": {
+    "mainMerged": false,
+    "storeBuildCreated": false,
+    "backendChanged": false,
+    "androidAlphaChanged": false
+  },
+  "stableWorktreeRecheck": {
+    "status": "PASSED",
+    "tests": 16,
+    "durationMs": 1363.092292,
+    "scope": "v74 source manifest, runtime topic equality, 3000 integrity, source receipts, quota, 48 screen rounds and v73 history"
+  },
+  "canonicalGenerationCheck": {
+    "status": "PASSED",
+    "banks": "frozen v71/v72/v73 + current v74"
+  },
+  "initialServerCI": {
+    "status": "PASSED",
+    "sourceCommit": "7bf981c5faaa4327d7f9dffac634c7ac018ae433",
+    "runId": 45781366636,
+    "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45781366636",
+    "selectedUnitTests": 34,
+    "hostedCredentials": false,
+    "scope": "Isolated v72/v73/v74 staging, 264 live pools, server scoring, private keys/ACL/RLS, legacy history and safety regressions. Latest strengthened v73 cutover fixture is rechecked by the subsequent PR run."
+  },
+  "onlineClientRecheck": {
+    "status": "PASSED",
+    "tests": 26,
+    "scope": "v74 scope compatibility, canonical export, live, account and content tests"
+  },
+  "strengthenedServerCI": {
+    "status": "PASSED",
+    "sourceCommit": "0ff7eb1e88fe91082ba392a39afa1abe4b85c6d1",
+    "runId": 45782057697,
+    "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45782057697",
+    "scope": "Real v73 match pinned before switching to v74, 3000 records, 375 additions per category, historical key/member hashes, ACL and server scoring. No hosted connection."
+  },
+  "historicalCompatibilityRecheck": {
+    "status": "PASSED",
+    "tests": 29,
+    "scope": "Frozen v1-v73, v72 previews tagged old broad version, v74 scoring, persisted XP and source views"
+  },
+  "finalServerCI": {
+    "status": "PASSED",
+    "runId": 45783982572,
+    "runAttempt": 1,
+    "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45783982572",
+    "sourceCommit": "895624a49aaa7ab849f2564f672025ce72af243e",
+    "typecheck": "PASSED",
+    "lint": "PASSED",
+    "sourceManifest": "PASSED",
+    "selectedContentAndHistoryTests": "PASSED",
+    "isolatedSQLAcceptance": "PASSED",
+    "hostedChanged": false,
+    "notes": "Unique CI project and seven unused host ports resolved preceding runner port collision. No local containers restarted."
+  },
+  "finalQualityQuickPlay": {
+    "targetedTests": {
+      "status": "PASSED",
+      "passed": 47,
+      "failed": 0,
+      "durationMs": 3565.549875
+    },
+    "typecheck": "PASSED",
+    "targetedLint": "PASSED",
+    "webExport": "PASSED",
+    "localBrowser": "NOT_RUN_DISABLED_IN_WORK_SETTINGS",
+    "isolatedBrowserCI": "PASSED",
+    "googleNativeRecheck": {
+      "status": "FAILED_BASELINE_MISSING_NATIVE_SOURCE",
+      "tests": 2,
+      "passed": 1,
+      "failed": 1,
+      "baselineCommit": "3a74086dfa8fc65b3ee2a7e5e91eee9e2b874fce",
+      "cause": "Unanchored ios/ rule in .gitignore ignores the module podspec and Swift implementation; Git records only the Expo module config. Existing release worktree contains the original files; they were neither recreated nor modified."
+    },
+    "fullSuiteRepeated": false,
+    "reason": "User requested targeted checks only; the earlier 482-test run is historical evidence for commit 895624a, not a fresh full-suite claim.",
+    "replayContinuation": "PASSED: quickPlay true is preserved in new v74 records; ResultsScreen passes it to the existing start operation. Legacy records need no new field.",
+    "browserEvidence": "BROWSER-ACCEPTANCE.json",
+    "browserRunId": 45794437930,
+    "ci": {
+      "status": "PASSED",
+      "runId": 45794437930,
+      "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930",
+      "sourceCommit": "cbde74c1ece3ca00fdfe6378231925e38fc0a846",
+      "typecheck": "PASSED",
+      "fullLint": "PASSED",
+      "sourceManifest": "PASSED",
+      "selectedContentHistoryAndQuickPlayTests": 40,
+      "realBrowser": "PASSED",
+      "isolatedSQLAcceptance": "PASSED",
+      "hostedChanged": false
+    },
+    "ciAttempts": [
+      {
+        "runId": 45787635294,
+        "status": "FAILED_RUNNER_COMPATIBILITY",
+        "reason": "ubuntu-latest moved to Ubuntu 26.04, unsupported by pinned Playwright; no browser assertion ran."
+      },
+      {
+        "runId": 45792783495,
+        "status": "CANCELLED_DIAGNOSTIC",
+        "reason": "Stopped during browser test after slow browser installation; partial screenshots retained. Replaced with separate installation/test steps and bounded diagnostics."
+      },
+      {
+        "runId": 45794437930,
+        "status": "PASSED"
+      }
+    ]
+  }
+}

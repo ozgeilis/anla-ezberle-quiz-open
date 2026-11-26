@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-general-161",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Klasik fıkıhta toprak sahibi ile emek sahibinin ekin ürününü belirli oranda paylaşma ortaklığına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müzâraa"
+      },
+      {
+        "id": "o2",
+        "text": "Müsâkāt"
+      },
+      {
+        "id": "o3",
+        "text": "Mugārese"
+      },
+      {
+        "id": "o4",
+        "text": "Havâle"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Müzâraa, ekim ve yetiştirilecek mahsulü paylaşma ortaklığıdır; cevazına ilişkin mezhep ayrıntıları bu tanım sorusunun dışındadır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muzaraa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Müzâraa, ekim ve yetiştirilecek mahsulü paylaşma ortaklığıdır; cevazına ilişkin mezhep ayrıntıları bu tanım sorusunun dışındadır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muzaraa-urun-ortakligi"
+  },
+  {
+    "id": "new74-general-162",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Bağ veya meyve bahçesinin bakımını üstlenip çıkan üründen belirli pay alma ortaklığı hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müzâraa"
+      },
+      {
+        "id": "o2",
+        "text": "Müsâkāt"
+      },
+      {
+        "id": "o3",
+        "text": "Mugārese"
+      },
+      {
+        "id": "o4",
+        "text": "Kefâlet"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Müsâkāt, mevcut bağ ve bahçenin sulanıp bakılması karşılığında ürünün paylaşılmasını konu alır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/musakat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96–97 (basılı sayfa numarası değildir)",
+        "supports": "Müsâkāt, mevcut bağ ve bahçenin sulanıp bakılması karşılığında ürünün paylaşılmasını konu alır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-musakat-bahce-bakim"
+  },
+  {
+    "id": "new74-general-163",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Boş araziye fidan dikip yetiştirmeyi konu alan arazi-emek ortaklığı hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Müsâkāt"
+      },
+      {
+        "id": "o2",
+        "text": "Selem"
+      },
+      {
+        "id": "o3",
+        "text": "Mugārese"
+      },
+      {
+        "id": "o4",
+        "text": "Sarf"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Mugāresenin konusu boş araziye fidan dikilmesidir. Paylaşım ve geçerlilik şartları mezheplere göre farklılaşır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mugarese",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96–99 (basılı sayfa numarası değildir)",
+        "supports": "Mugāresenin konusu boş araziye fidan dikilmesidir. Paylaşım ve geçerlilik şartları mezheplere göre farklılaşır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mugarese-fidan-dikimi"
+  },
+  {
+    "id": "new74-general-164",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Klasik şirket tasnifinde “vücûh” ortaklığı esas olarak hangi imkâna dayanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Arazi ve sulama katkısına"
+      },
+      {
+        "id": "o2",
+        "text": "Ortakların bedenî çalışmasına"
+      },
+      {
+        "id": "o3",
+        "text": "Bir tarafın sermayesine diğerinin emeğine"
+      },
+      {
+        "id": "o4",
+        "text": "Ticarî itibar ve kredili alım imkânına"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Vücûh, ortakların ticarî itibarlarına dayanan ortaklık türüdür; bütün mezheplerde aynı hükmün benimsendiği ileri sürülmez.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sirket",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 114 (basılı sayfa numarası değildir)",
+        "supports": "Vücûh, ortakların ticarî itibarlarına dayanan ortaklık türüdür; bütün mezheplerde aynı hükmün benimsendiği ileri sürülmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sirket-vucuh-itibar"
+  },
+  {
+    "id": "new74-general-165",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Klasik fıkıhta sanatkârların emek ve iş görme katkısını birleştirdiği ortaklık hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Ebdân ortaklığı"
+      },
+      {
+        "id": "o2",
+        "text": "Vücûh ortaklığı"
+      },
+      {
+        "id": "o3",
+        "text": "Emvâl ortaklığı"
+      },
+      {
+        "id": "o4",
+        "text": "Müsâkāt"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Ebdân veya a‘mâl ortaklığında ortaklığın ana unsuru emektir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sirket",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 114 (basılı sayfa numarası değildir)",
+        "supports": "Ebdân veya a‘mâl ortaklığında ortaklığın ana unsuru emektir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sirket-ebdan-emek"
+  },
+  {
+    "id": "new74-general-166",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Klasik şirket tasnifinde “emvâl şirketi” hangi ana unsura dayanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Ortakların ticarî itibarına"
+      },
+      {
+        "id": "o2",
+        "text": "Ortakların sermayelerine"
+      },
+      {
+        "id": "o3",
+        "text": "Sanatkârların iş görme becerisine"
+      },
+      {
+        "id": "o4",
+        "text": "Arazi sahibinin yetişmiş ağaçlarına"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Emvâl şirketinde ortaklar sermayelerini birleştirerek kârı belirledikleri oranda paylaşırlar.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sirket",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 114,118 (basılı sayfa numarası değildir)",
+        "supports": "Emvâl şirketinde ortaklar sermayelerini birleştirerek kârı belirledikleri oranda paylaşırlar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sirket-emval-sermaye"
+  },
+  {
+    "id": "new74-general-167",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Klasik fıkıhta ortakların sermaye ve yetkilerinin eşit olması şartını aramayan şirket tipi hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mufâvada şirketi"
+      },
+      {
+        "id": "o2",
+        "text": "Vakıf"
+      },
+      {
+        "id": "o3",
+        "text": "İnan şirketi"
+      },
+      {
+        "id": "o4",
+        "text": "Lukata"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "İnan şirketi, ortakların sermaye ve haklarında eşitlik şartının bulunmamasıyla mufâvada tipinden ayrılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sirket",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 117 (basılı sayfa numarası değildir)",
+        "supports": "İnan şirketi, ortakların sermaye ve haklarında eşitlik şartının bulunmamasıyla mufâvada tipinden ayrılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sirket-inan-esitlik-yok"
+  },
+  {
+    "id": "new74-general-168",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hanefî şüf‘a düzeninde hangi hak sahibi, satılan taşınmaza sadece bitişik komşu olandan önce gelir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Uzak mahallede oturan"
+      },
+      {
+        "id": "o2",
+        "text": "Satıcıyla aynı mesleği yapan"
+      },
+      {
+        "id": "o3",
+        "text": "Sadece alıcıyla akraba olan"
+      },
+      {
+        "id": "o4",
+        "text": "Satılan taşınmazın paydaşı"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hanefî sıralamasında taşınmazdaki paydaş, ortak irtifak hakkı sahibi ve bitişik komşu sırasıyla değerlendirilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sufa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 111–113 (basılı sayfa numarası değildir)",
+        "supports": "Hanefî sıralamasında taşınmazdaki paydaş, ortak irtifak hakkı sahibi ve bitişik komşu sırasıyla değerlendirilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sufa-hanefi-paydas-onceligi"
+  },
+  {
+    "id": "new74-general-169",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Borçlar hukukunda tanınmış bir gerekçeyle sözleşmeyi onama veya feshetme arasında seçim yapabilmeye ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Muhayyerlik"
+      },
+      {
+        "id": "o2",
+        "text": "İkāle"
+      },
+      {
+        "id": "o3",
+        "text": "İbrâ"
+      },
+      {
+        "id": "o4",
+        "text": "Kefâlet"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Muhayyerlik, sözleşme tarafına tanınan seçim hakkıdır; hangi muhayyerliklerin geçerli olduğu ayrıca şartlara bağlıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muhayyerlik",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 94–96 (basılı sayfa numarası değildir)",
+        "supports": "Muhayyerlik, sözleşme tarafına tanınan seçim hakkıdır; hangi muhayyerliklerin geçerli olduğu ayrıca şartlara bağlıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muhayyerlik-onama-fesih"
+  },
+  {
+    "id": "new74-general-170",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Satılacak hayvan daha sütlü görünsün diye bir süre sağılmayarak alıcının yanıltılmasına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tahâret"
+      },
+      {
+        "id": "o2",
+        "text": "Tasriye"
+      },
+      {
+        "id": "o3",
+        "text": "Tevliye"
+      },
+      {
+        "id": "o4",
+        "text": "Tahlîl"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Tasriyede hayvanın sütü biriktirilerek verimi hakkında yanıltıcı izlenim oluşturulur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/musarrat",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Tasriyede hayvanın sütü biriktirilerek verimi hakkında yanıltıcı izlenim oluşturulur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-tasriye-sut-aldatma"
+  },
+  {
+    "id": "new74-general-171",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Klasik toprak hukukunda sahipsiz ve işlenmemiş araziyi imar ederek kullanılabilir kılma hangi terimle anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tahcîr"
+      },
+      {
+        "id": "o2",
+        "text": "İktâ"
+      },
+      {
+        "id": "o3",
+        "text": "İhyâü’l-mevât"
+      },
+      {
+        "id": "o4",
+        "text": "Vakıf"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "İhyâü’l-mevât, belirli hukukî şartlar altında sahipsiz araziyi işleyip imar etmektir; her boş yere izinsiz el koyma hakkı değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ihya",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 97,106 (basılı sayfa numarası değildir)",
+        "supports": "İhyâü’l-mevât, belirli hukukî şartlar altında sahipsiz araziyi işleyip imar etmektir; her boş yere izinsiz el koyma hakkı değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ihya-mevat-isleme"
+  },
+  {
+    "id": "new74-general-172",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Bir araziye ulaşmak için başka birine ait arazi veya yoldan geçme hakkının klasik adı hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hakku’ş-şirb"
+      },
+      {
+        "id": "o2",
+        "text": "Hakku’l-karâr"
+      },
+      {
+        "id": "o3",
+        "text": "Hakku’l-mesîl"
+      },
+      {
+        "id": "o4",
+        "text": "Hakku’l-mürûr"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hakku’l-mürûr geçit hakkıdır; çoğunlukla bir taşınmazın ana yolla bağlantısı için kurulur.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/irtifak",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 123 (basılı sayfa numarası değildir)",
+        "supports": "Hakku’l-mürûr geçit hakkıdır; çoğunlukla bir taşınmazın ana yolla bağlantısı için kurulur.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-murur-gecit-hakki"
+  },
+  {
+    "id": "new74-general-173",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bir taşınmaz lehine, başka kaynaktan sürekli su alıp arazide kullanma hakkı hangi kavramla anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hakku’ş-şirb"
+      },
+      {
+        "id": "o2",
+        "text": "Hakku’l-mürûr"
+      },
+      {
+        "id": "o3",
+        "text": "Hakku’l-karâr"
+      },
+      {
+        "id": "o4",
+        "text": "Şüf‘a"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Şirb hakkı bir taşınmaz lehine sürekli kaynak veya su alma hakkıdır; anlık içme ihtiyacına ilişkin şefe hakkından ayrılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/irtifak",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 118–121 (basılı sayfa numarası değildir)",
+        "supports": "Şirb hakkı bir taşınmaz lehine sürekli kaynak veya su alma hakkıdır; anlık içme ihtiyacına ilişkin şefe hakkından ayrılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sirb-kaynak-hakki"
+  },
+  {
+    "id": "new74-general-174",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Klasik fıkıh kaynaklarında “mecrâ” ve “mesîl” irtifakı hangi yetkiyle ilgilidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Mirasçı seçme"
+      },
+      {
+        "id": "o2",
+        "text": "Suyu başka taşınmazdan geçirme veya dışarı akıtma"
+      },
+      {
+        "id": "o3",
+        "text": "Mahkemeye hâkim atama"
+      },
+      {
+        "id": "o4",
+        "text": "Bir eseri çoğaltma"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Bu irtifak suyun nakli veya tahliyesiyle ilgilidir. Klasik kullanımda mecrâ ve mesîl arasında her zaman temiz-atık su ayrımı yapılmaz.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/irtifak",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 129–131 (basılı sayfa numarası değildir)",
+        "supports": "Bu irtifak suyun nakli veya tahliyesiyle ilgilidir. Klasik kullanımda mecrâ ve mesîl arasında her zaman temiz-atık su ayrımı yapılmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mesil-mecra-su-gecirme"
+  },
+  {
+    "id": "new74-general-175",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Malın, bedeli geri ödendiğinde geri alınması şartıyla satıldığı tarihî işlem hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bey‘ bi’l-müsâveme"
+      },
+      {
+        "id": "o2",
+        "text": "Bey‘ bi’t-tevliye"
+      },
+      {
+        "id": "o3",
+        "text": "Bey‘ bi’l-vefâ"
+      },
+      {
+        "id": "o4",
+        "text": "Sarf"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Bey‘ bi’l-vefâ geri alım şartı içeren tarihî bir işlemdir; fakihler hukukî niteliği ve geçerliliği hakkında farklı değerlendirmeler yapmıştır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/bey-bil-vefa",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 71,97–98 (basılı sayfa numarası değildir)",
+        "supports": "Bey‘ bi’l-vefâ geri alım şartı içeren tarihî bir işlemdir; fakihler hukukî niteliği ve geçerliliği hakkında farklı değerlendirmeler yapmıştır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-bey-vefa-bedel-iade"
+  },
+  {
+    "id": "new74-general-176",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hadislerdeki açıklamaların birleştiği anlamıyla müzâbene hangi alışverişi anlatır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bir kitabın para karşılığı satışını"
+      },
+      {
+        "id": "o2",
+        "text": "Bir aletin bedelsiz ödünç verilmesini"
+      },
+      {
+        "id": "o3",
+        "text": "Bir evin belirli ücretle kiralanmasını"
+      },
+      {
+        "id": "o4",
+        "text": "Ağaçtaki taze hurmanın kuru hurmayla değişimini"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Müzâbene, özellikle ağaç üzerindeki taze hurmanın kuru hurma karşılığında satılmasıyla açıklanır; miktar belirsizliği önemli bir problemdir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muzabene",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96–98 (basılı sayfa numarası değildir)",
+        "supports": "Müzâbene, özellikle ağaç üzerindeki taze hurmanın kuru hurma karşılığında satılmasıyla açıklanır; miktar belirsizliği önemli bir problemdir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muzabene-taze-kuru-hurma"
+  },
+  {
+    "id": "new74-general-177",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Muhâkalenin Câbir ve Atâ’dan nakledilen açıklamasında hangi değişim söz konusudur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tarladaki ekinin aynı cinsten ölçülü kuru ürünle değişimi"
+      },
+      {
+        "id": "o2",
+        "text": "Taze hurmanın zeytinyağıyla değişimi"
+      },
+      {
+        "id": "o3",
+        "text": "İki evin karşılıklı kiralanması"
+      },
+      {
+        "id": "o4",
+        "text": "Para karşılığı dokuma siparişi"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Bu açıklamada muhâkale, tarladaki ekinin aynı cins kuru ürünle tahminen değişimidir; terimin başka açıklamaları da bulunduğu için kapsam belirtilmiştir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/muhakale",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 98 (basılı sayfa numarası değildir)",
+        "supports": "Bu açıklamada muhâkale, tarladaki ekinin aynı cins kuru ürünle tahminen değişimidir; terimin başka açıklamaları da bulunduğu için kapsam belirtilmiştir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muhakale-taze-kuru-ekin"
+  },
+  {
+    "id": "new74-general-178",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Satım hukukunda malın gerçek değeri ile verilen bedel arasındaki denksizlik hangi terimle anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kabz"
+      },
+      {
+        "id": "o2",
+        "text": "Gabn"
+      },
+      {
+        "id": "o3",
+        "text": "İbrâ"
+      },
+      {
+        "id": "o4",
+        "text": "İkāle"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Gabn, karşılıkların değerleri arasındaki denksizliği ifade eder. Her fiyat farkının tek başına aynı hukukî sonucu doğurduğu söylenmez.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/gabn",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96–97 (basılı sayfa numarası değildir)",
+        "supports": "Gabn, karşılıkların değerleri arasındaki denksizliği ifade eder. Her fiyat farkının tek başına aynı hukukî sonucu doğurduğu söylenmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-gabn-deger-denksizligi"
+  },
+  {
+    "id": "new74-general-179",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Klasik iş hukukunda belirli süre boyunca emeğini bir işverene tahsis eden işçi hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Ecîr-i müşterek"
+      },
+      {
+        "id": "o2",
+        "text": "Mûcir"
+      },
+      {
+        "id": "o3",
+        "text": "Ecîr-i hâs"
+      },
+      {
+        "id": "o4",
+        "text": "Mütevelli"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Ecîr-i hâs, belirli süre içinde emeğini işverenin emrine sunan işçidir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/icare",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 193–195 (basılı sayfa numarası değildir)",
+        "supports": "Ecîr-i hâs, belirli süre içinde emeğini işverenin emrine sunan işçidir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ecir-has-sure-emek"
+  },
+  {
+    "id": "new74-general-180",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Klasik icâre tasnifinde, belirli bir işi görmek üzere tutulan bağımsız sanatkâr tipi hangi adla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Ecîr-i hâs"
+      },
+      {
+        "id": "o2",
+        "text": "Müstevda‘"
+      },
+      {
+        "id": "o3",
+        "text": "Kefil"
+      },
+      {
+        "id": "o4",
+        "text": "Ecîr-i müşterek"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Ecîr-i müşterekte akdin ağırlığı belirli işin yapılmasındadır; süreye bağlı emek tahsisinden bu yönüyle ayrılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/icare",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 194–195 (basılı sayfa numarası değildir)",
+        "supports": "Ecîr-i müşterekte akdin ağırlığı belirli işin yapılmasındadır; süreye bağlı emek tahsisinden bu yönüyle ayrılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ecir-musterek-belirli-is"
+  }
+]

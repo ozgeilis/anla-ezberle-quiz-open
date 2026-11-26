@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-quran-021",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Bakara 2/177’ye göre erdemlilik yalnızca hangi davranıştan ibaret değildir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yüzü doğuya veya batıya çevirmekten"
+      },
+      {
+        "id": "o2",
+        "text": "İmanla birlikte ihtiyaç sahiplerine yardım etmekten"
+      },
+      {
+        "id": "o3",
+        "text": "Söz verdiğinde sözünü tutmaktan"
+      },
+      {
+        "id": "o4",
+        "text": "Zorluklar karşısında sabretmekten"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Âyet, erdemi yalnız yön değiştirmeye indirgemez; iman, paylaşma, ibadet, ahde bağlılık ve sabrı birlikte sayar.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "2/177; physical PDF 33",
+        "supports": "Âyet, erdemi yalnız yön değiştirmeye indirgemez; iman, paylaşma, ibadet, ahde bağlılık ve sabrı birlikte sayar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-birr-beyond-direction"
+  },
+  {
+    "id": "new74-quran-022",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Bakara 2/195’te Allah yolunda harcamayla birlikte hangi uyarı yer alır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Her harcamayı başkalarına duyurun"
+      },
+      {
+        "id": "o2",
+        "text": "Kendi ellerinizle kendinizi tehlikeye atmayın"
+      },
+      {
+        "id": "o3",
+        "text": "İyilik yapmadan önce mutlaka karşılık isteyin"
+      },
+      {
+        "id": "o4",
+        "text": "Yalnız zenginlere yardım edin"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Allah yolunda harcama emrini, kendini tehlikeye atmama ve iyilik etme öğütleri izler.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "2/195; physical PDF 36",
+        "supports": "Allah yolunda harcama emrini, kendini tehlikeye atmama ve iyilik etme öğütleri izler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-spending-no-self-destruction"
+  },
+  {
+    "id": "new74-quran-023",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "hard",
+    "question": "Bakara 2/205’te bozguncunun yok etmeye çalıştığı iki şey nasıl anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Gece ve gündüz"
+      },
+      {
+        "id": "o2",
+        "text": "Dağlar ve denizler"
+      },
+      {
+        "id": "o3",
+        "text": "Ürünler ve nesiller"
+      },
+      {
+        "id": "o4",
+        "text": "Yazı ve konuşma"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Âyet, yönetimi ele geçirdiğinde ülkede bozgunculuk yapan kişinin ürün ve nesle zarar verme çabasını kınar.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "2/205; physical PDF 38",
+        "supports": "Âyet, yönetimi ele geçirdiğinde ülkede bozgunculuk yapan kişinin ürün ve nesle zarar verme çabasını kınar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-corruption-crops-generations"
+  },
+  {
+    "id": "new74-quran-024",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Bakara 2/267’de yardım için mal seçerken hangi tutum eleştirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kazancın iyi olanından vermek"
+      },
+      {
+        "id": "o2",
+        "text": "Yerden elde edilen ürünlerden paylaşmak"
+      },
+      {
+        "id": "o3",
+        "text": "Yardımın niteliğine dikkat etmek"
+      },
+      {
+        "id": "o4",
+        "text": "Kendimizin isteksizce alacağı kötü malı hayır diye vermek"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Âyet, kazancın ve ürünlerin iyilerinden verilmesini ister; kişinin kendisi için kabul etmeyeceği kötü şeyleri yardım diye sunmasını eleştirir.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "2/267; physical PDF 52",
+        "supports": "Âyet, kazancın ve ürünlerin iyilerinden verilmesini ister; kişinin kendisi için kabul etmeyeceği kötü şeyleri yardım diye sunmasını eleştirir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-charity-quality-not-rejected-goods"
+  },
+  {
+    "id": "new74-quran-025",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Âl-i İmrân 3/14’te altın, gümüş, hayvan ve ekin gibi çekici şeyler nasıl nitelenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Dünya hayatının geçici menfaatleri olarak"
+      },
+      {
+        "id": "o2",
+        "text": "Kalıcı âhiret ödülleri olarak"
+      },
+      {
+        "id": "o3",
+        "text": "Kayıtsız bütünlüğüyle yasak mallar olarak"
+      },
+      {
+        "id": "o4",
+        "text": "Sadece bir topluluğa özgü imkânlar olarak"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Âyet, insanın çekici bulduğu dünyevî imkânların geçiciliğine dikkat çeker; güzel dönüş yerinin Allah katında olduğunu hatırlatır.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "3/14; physical PDF 58",
+        "supports": "Âyet, insanın çekici bulduğu dünyevî imkânların geçiciliğine dikkat çeker; güzel dönüş yerinin Allah katında olduğunu hatırlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-worldly-desires-temporary"
+  },
+  {
+    "id": "new74-quran-026",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "easy",
+    "question": "Âl-i İmrân 3/135’te hata sonrasında bağışlanma dileyenlerin hangi tavrı vurgulanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yanlışlarını mutlaka başkalarına yüklemeleri"
+      },
+      {
+        "id": "o2",
+        "text": "Yaptıkları yanlışta bile bile ısrar etmemeleri"
+      },
+      {
+        "id": "o3",
+        "text": "Bağışlanmak için hatayı gizlice sürdürmeleri"
+      },
+      {
+        "id": "o4",
+        "text": "Bir kez hata edince umudu tamamen bırakmaları"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Allah’ı hatırlayıp bağışlanma istemenin yanında, işlenen yanlışta bilinçli olarak ısrar etmemek de belirtilir.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "3/135; physical PDF 74",
+        "supports": "Allah’ı hatırlayıp bağışlanma istemenin yanında, işlenen yanlışta bilinçli olarak ısrar etmemek de belirtilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-repentance-no-deliberate-persistence"
+  },
+  {
+    "id": "new74-quran-027",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Nisâ 4/32’de başkasına verileni iç çekerek arzulamak yerine ne önerilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Başkalarının kazancını değersiz saymak"
+      },
+      {
+        "id": "o2",
+        "text": "Kendi emeğinin sonucunu yok saymak"
+      },
+      {
+        "id": "o3",
+        "text": "Allah’ın lütfundan istemek"
+      },
+      {
+        "id": "o4",
+        "text": "Başkalarının imkânlarına zorla el koymak"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Âyet, kadın ve erkeğin kazandıklarından nasibi bulunduğunu belirterek Allah’ın lütfundan istemeye yöneltir.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "4/32; physical PDF 90",
+        "supports": "Âyet, kadın ve erkeğin kazandıklarından nasibi bulunduğunu belirterek Allah’ın lütfundan istemeye yöneltir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ask-divine-bounty-no-coveting"
+  },
+  {
+    "id": "new74-quran-028",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Nisâ 4/59’da bir anlaşmazlıkta başvurulacak esas hangi seçenekte verilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kabile önderlerinin ortak kararını beklemek"
+      },
+      {
+        "id": "o2",
+        "text": "Tarafların yeminlerini sayıca karşılaştırmak"
+      },
+      {
+        "id": "o3",
+        "text": "Kararı kura ile belirlemek"
+      },
+      {
+        "id": "o4",
+        "text": "Allah’a ve peygambere götürmek"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Âyet, uyuşmazlıkların Allah’a ve peygambere götürülmesini sonuç bakımından daha hayırlı yol olarak bildirir.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "4/59; physical PDF 94",
+        "supports": "Âyet, uyuşmazlıkların Allah’a ve peygambere götürülmesini sonuç bakımından daha hayırlı yol olarak bildirir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-disputes-refer-god-messenger"
+  },
+  {
+    "id": "new74-quran-029",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Nisâ 4/128’de eşler arasındaki sorun bağlamında hangi ilke dile getirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sulhun daha hayırlı olduğu"
+      },
+      {
+        "id": "o2",
+        "text": "Uzlaşmanın her durumda yasak olduğu"
+      },
+      {
+        "id": "o3",
+        "text": "Kötü muamelenin çözüm sayıldığı"
+      },
+      {
+        "id": "o4",
+        "text": "Tarafların mutlaka konuşmadan ayrılması gerektiği"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Âyet, eşler arasında varılabilecek uzlaşmayı ele alır ve sulhun daha hayırlı olduğunu söyler; kötü muameleyi onaylamaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "4/128; physical PDF 106",
+        "supports": "Âyet, eşler arasında varılabilecek uzlaşmayı ele alır ve sulhun daha hayırlı olduğunu söyler; kötü muameleyi onaylamaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-marital-reconciliation-better"
+  },
+  {
+    "id": "new74-quran-030",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "En‘âm 6/59’da Allah’ın bilgisinin kuşatıcılığı hangi küçük olayla da örneklendirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Denizlerde bir geminin yol almasıyla"
+      },
+      {
+        "id": "o2",
+        "text": "Bir yaprağın düşmesiyle"
+      },
+      {
+        "id": "o3",
+        "text": "Büyük bir dağın yerinde durmasıyla"
+      },
+      {
+        "id": "o4",
+        "text": "Gökte yıldızların görünmesiyle"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Karadaki ve denizdeki varlıklarla birlikte yere düşen yaprak da Allah’ın bilgisinin dışında değildir.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "6/59; physical PDF 143,144",
+        "supports": "Karadaki ve denizdeki varlıklarla birlikte yere düşen yaprak da Allah’ın bilgisinin dışında değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-divine-knowledge-falling-leaf"
+  },
+  {
+    "id": "new74-quran-031",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "A‘râf 7/199’da iyiliği emretmeyle birlikte cahillere karşı hangi tutum öğütlenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Her tartışmada son sözü söylemek"
+      },
+      {
+        "id": "o2",
+        "text": "Onların üslûbuyla karşılık vermek"
+      },
+      {
+        "id": "o3",
+        "text": "Onlara aldırmayıp yüz çevirmek"
+      },
+      {
+        "id": "o4",
+        "text": "Yalnız çoğunluk olduklarında onları dinlemek"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Âyet, kolaylığı seçmeyi, iyiyi emretmeyi ve cahillere aldırmamayı bir arada öğütler.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "7/199; physical PDF 186",
+        "supports": "Âyet, kolaylığı seçmeyi, iyiyi emretmeyi ve cahillere aldırmamayı bir arada öğütler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-forbearance-ignore-ignorant"
+  },
+  {
+    "id": "new74-quran-032",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "easy",
+    "question": "Enfâl 8/27’de emanetlerle ilgili hangi davranış yasaklanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Emaneti korumak"
+      },
+      {
+        "id": "o2",
+        "text": "Emanet sahibinin hakkını gözetmek"
+      },
+      {
+        "id": "o3",
+        "text": "Sorumluluğu dürüstçe yerine getirmek"
+      },
+      {
+        "id": "o4",
+        "text": "Emanetlere bile bile hıyanet etmek"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Âyet, Allah ve resulüne hainliği yasaklamanın yanında, emanetlere bilerek hıyanet etmeyi de yasaklar.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "8/27; physical PDF 190",
+        "supports": "Âyet, Allah ve resulüne hainliği yasaklamanın yanında, emanetlere bilerek hıyanet etmeyi de yasaklar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-trust-no-knowing-betrayal"
+  },
+  {
+    "id": "new74-quran-033",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Tevbe 9/71’de mümin erkeklerle mümin kadınların ilişkisi nasıl anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Birbirlerinin velîleri olmalarıyla"
+      },
+      {
+        "id": "o2",
+        "text": "İyiliği teşvikte birbirinden tamamen kopuk olmalarıyla"
+      },
+      {
+        "id": "o3",
+        "text": "Birbirine karşı sorumluluk taşımamalarıyla"
+      },
+      {
+        "id": "o4",
+        "text": "Kötülüğü engellemeyi birbirine yasaklamalarıyla"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Âyet, kadın ve erkek müminleri birbirlerinin velîleri olarak niteler; iyiliği teşvik ve kötülükten alıkoyma görevlerini birlikte anar.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "9/71; physical PDF 208",
+        "supports": "Âyet, kadın ve erkek müminleri birbirlerinin velîleri olarak niteler; iyiliği teşvik ve kötülükten alıkoyma görevlerini birlikte anar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-believing-men-women-allies"
+  },
+  {
+    "id": "new74-quran-034",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Yûnus 10/12’de eleştirilen insan tutumu hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sıkıntıdan sonra da şükrünü sürdürmek"
+      },
+      {
+        "id": "o2",
+        "text": "Sıkıntıda dua edip kurtulunca bunu unutmak"
+      },
+      {
+        "id": "o3",
+        "text": "Her durumda sorumluluklarını hatırlamak"
+      },
+      {
+        "id": "o4",
+        "text": "İyilik gördüğünde minnet duymak"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Âyet, zor durumda yakarıp kurtulunca sanki hiç dua etmemiş gibi davranma çelişkisine dikkat çeker.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "10/12; physical PDF 219",
+        "supports": "Âyet, zor durumda yakarıp kurtulunca sanki hiç dua etmemiş gibi davranma çelişkisine dikkat çeker.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-distress-prayer-forgetting-relief"
+  },
+  {
+    "id": "new74-quran-035",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "easy",
+    "question": "Hûd 11/114’te iyiliklerle kötülükler arasında hangi ilişki belirtilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kötülüklerin iyilik sayılması"
+      },
+      {
+        "id": "o2",
+        "text": "İyiliklerin daima kötülüğü artırması"
+      },
+      {
+        "id": "o3",
+        "text": "İyiliklerin kötülükleri gidermesi"
+      },
+      {
+        "id": "o4",
+        "text": "İyilik yapmanın değersiz olması"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Namaz emriyle birlikte iyiliklerin kötülükleri giderdiği belirtilir. Bu ifade, haksızlık yapmayı sürdürmek için bir izin değildir.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "11/114; physical PDF 246",
+        "supports": "Namaz emriyle birlikte iyiliklerin kötülükleri giderdiği belirtilir. Bu ifade, haksızlık yapmayı sürdürmek için bir izin değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-good-deeds-remove-bad"
+  },
+  {
+    "id": "new74-quran-036",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Yûsuf 12/53’te nefis, Allah’ın koruması dışında hangi eğilimle nitelenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Her durumda hatadan uzak olmakla"
+      },
+      {
+        "id": "o2",
+        "text": "İnsana hiçbir istek duyurmamakla"
+      },
+      {
+        "id": "o3",
+        "text": "Her isteğinin doğru olmasıyla"
+      },
+      {
+        "id": "o4",
+        "text": "Kötülüğü emretme eğilimiyle"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Âyet, nefsi temize çıkarmamayı ve Allah’ın merhametine ihtiyacı vurgular. Sözü kimin söylediğiyle ilgili tefsir farklılığı soru konusu yapılmamıştır.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "12/53; physical PDF 252",
+        "supports": "Âyet, nefsi temize çıkarmamayı ve Allah’ın merhametine ihtiyacı vurgular. Sözü kimin söylediğiyle ilgili tefsir farklılığı soru konusu yapılmamıştır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-nafs-inclines-evil-mercy"
+  },
+  {
+    "id": "new74-quran-037",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "easy",
+    "question": "Nûr 24/30’da mümin erkeklere gözleri ve iffetleri hakkında ne söylenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Gözlerini haramdan sakınıp iffetlerini korumaları"
+      },
+      {
+        "id": "o2",
+        "text": "Başkalarının mahremiyetini gözetlemeleri"
+      },
+      {
+        "id": "o3",
+        "text": "İffeti yalnız kadınların sorumluluğu saymaları"
+      },
+      {
+        "id": "o4",
+        "text": "Bakışlarıyla insanları rahatsız etmeleri"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Âyet, mümin erkeklere yönelttiği hitapta bakışları haramdan sakınmayı ve iffeti korumayı emreder.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "24/30; physical PDF 371",
+        "supports": "Âyet, mümin erkeklere yönelttiği hitapta bakışları haramdan sakınmayı ve iffeti korumayı emreder.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-men-lower-gaze-chastity"
+  },
+  {
+    "id": "new74-quran-038",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Nûr 24/61’de evlere girerken hangi davranış istenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Evdekilere haber vermeden onları korkutmak"
+      },
+      {
+        "id": "o2",
+        "text": "Mübarek ve güzel bir selâmla selâmlamak"
+      },
+      {
+        "id": "o3",
+        "text": "Giren kişinin hiçbir selâm vermemesi"
+      },
+      {
+        "id": "o4",
+        "text": "Selâmı yalnız yabancı ülkelere özgü saymak"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Evlere girişte selâmlaşma, Allah katından mübarek ve güzel bir karşılama olarak anlatılır.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "24/61; physical PDF 376",
+        "supports": "Evlere girişte selâmlaşma, Allah katından mübarek ve güzel bir karşılama olarak anlatılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-home-greeting-blessed"
+  },
+  {
+    "id": "new74-quran-039",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Zümer 39/18’de akıl sahiplerinin söylenenler karşısındaki tutumu nasıl anlatılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Duyulan her söze aynı ölçüde uymaları"
+      },
+      {
+        "id": "o2",
+        "text": "Yalnız toplumda yaygın olanı benimsemeleri"
+      },
+      {
+        "id": "o3",
+        "text": "Dinleyip en güzeline uymaları"
+      },
+      {
+        "id": "o4",
+        "text": "Dinlemeden kendi kanaatlerini korumaları"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Âyet, sözleri dinleyip en güzeline uyanları över; dinleme ile doğruyu seçip uygulamayı birlikte anar.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "39/18; physical PDF 486",
+        "supports": "Âyet, sözleri dinleyip en güzeline uyanları över; dinleme ile doğruyu seçip uygulamayı birlikte anar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-listen-follow-best"
+  },
+  {
+    "id": "new74-quran-040",
+    "version": 1,
+    "categoryId": "quran",
+    "difficulty": "medium",
+    "question": "Haşr 59/18’de herkesin “yarın için” neye bakması istenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Başkalarının hazırladığına"
+      },
+      {
+        "id": "o2",
+        "text": "Sahip olduğu malın büyüklüğüne"
+      },
+      {
+        "id": "o3",
+        "text": "Yakınlarının gelecek planlarına"
+      },
+      {
+        "id": "o4",
+        "text": "Ne hazırladığına"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Âyet, Allah’a karşı sorumluluk bilinciyle kişinin geleceği için hangi amelleri hazırladığını düşünmesini ister.",
+    "sources": [
+      {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "59/18; physical PDF 586",
+        "supports": "Âyet, Allah’a karşı sorumluluk bilinciyle kişinin geleceği için hangi amelleri hazırladığını düşünmesini ister.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Resmî PDF’deki âyetle karşılaştırılmış adaydır. Banka çapında anlamsal tekrar ve zorluk kabulü bekler; uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-consider-tomorrow-provision"
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-general-271",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Alışverişin bereketini anlatan hadiste tarafların hangi davranışı övülür?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Fiyatı değiştirmeden korumaları"
+      },
+      {
+        "id": "o2",
+        "text": "Satıştan sonra hediye vermeleri"
+      },
+      {
+        "id": "o3",
+        "text": "Doğru söyleyip malın kusurunu açıklamaları"
+      },
+      {
+        "id": "o4",
+        "text": "Alışverişi erken saatte yapmaları"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Bereket, satıcı ve alıcının dürüstlüğüyle ilişkilendirilir; malın kusurunu gizlemek bu ilkeye aykırıdır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 21; D3459, Ebû Dâvûd, Büyû’ 51",
+        "supports": "Bereket, satıcı ve alıcının dürüstlüğüyle ilişkilendirilir; malın kusurunu gizlemek bu ilkeye aykırıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-ticaret-dogruluk-kusur-bereket"
+  },
+  {
+    "id": "new74-general-272",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Satarken, satın alırken ve alacağını isterken nasıl davranan kişi için rahmet duası edilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yalnız peşin alışveriş yapan"
+      },
+      {
+        "id": "o2",
+        "text": "Pazarlığa hiç girmeyen"
+      },
+      {
+        "id": "o3",
+        "text": "Borcun mutlaka tek seferde ödenmesini isteyen"
+      },
+      {
+        "id": "o4",
+        "text": "Hoşgörülü olup kolaylık gösteren"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hadis, alışverişin farklı aşamalarında müsamaha ve kolaylığı birlikte över; borç hakkını bütünüyle kaldırmaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 23; B2076, Buhârî, Büyû’ 16",
+        "supports": "Hadis, alışverişin farklı aşamalarında müsamaha ve kolaylığı birlikte över; borç hakkını bütünüyle kaldırmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-ticarette-musamaha-alacak"
+  },
+  {
+    "id": "new74-general-273",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Çarşı işlerine boş söz ve yalan karışabileceğini hatırlatan hadiste alışverişi temizlemek için ne önerilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sadaka vermek"
+      },
+      {
+        "id": "o2",
+        "text": "Ticaret için belli bir günü seçmek"
+      },
+      {
+        "id": "o3",
+        "text": "Her pazarlığa yemin eklemek"
+      },
+      {
+        "id": "o4",
+        "text": "Satışı mutlaka takasla yapmak"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Sadaka, tüccarın ahlâkî duyarlılığını güçlendiren bir öğüt olarak anılır; haksız kazancı meşrulaştırmaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 107; N3830, Nesâî, Eymân 23",
+        "supports": "Sadaka, tüccarın ahlâkî duyarlılığını güçlendiren bir öğüt olarak anılır; haksız kazancı meşrulaştırmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-alisveris-bos-soz-sadaka"
+  },
+  {
+    "id": "new74-general-274",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Hz. Dâvûd’u da örnek veren hadiste hangi kazanç biçimi özellikle övülür?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Miras malını koruyarak geçinmek"
+      },
+      {
+        "id": "o2",
+        "text": "Kendi elinin emeğiyle kazanmak"
+      },
+      {
+        "id": "o3",
+        "text": "Hediye edilen malı değerlendirerek kazanmak"
+      },
+      {
+        "id": "o4",
+        "text": "Kira gelirini biriktirerek geçinmek"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Hadiste insanın emeğiyle elde ettiği helâl kazancın değeri vurgulanır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 35; B2072, Buhârî, Büyû’ 15",
+        "supports": "Hadiste insanın emeğiyle elde ettiği helâl kazancın değeri vurgulanır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-elin-emegi-hayirli-kazanc"
+  },
+  {
+    "id": "new74-general-275",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Ödeme imkânı bulunduğu hâlde borcunu bekletmek hadiste nasıl nitelenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kefalet olarak"
+      },
+      {
+        "id": "o2",
+        "text": "Vade bağışı olarak"
+      },
+      {
+        "id": "o3",
+        "text": "Zulüm olarak"
+      },
+      {
+        "id": "o4",
+        "text": "Emanet olarak"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Uyarı, ödeme gücü olanın borcunu haksız yere geciktirmesi hakkındadır; gerçek ödeme güçlüğüyle aynı tutulmaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 119; M4002, Müslim, Müsâkât 33; B2287, Buhârî, Havâlât 1",
+        "supports": "Uyarı, ödeme gücü olanın borcunu haksız yere geciktirmesi hakkındadır; gerçek ödeme güçlüğüyle aynı tutulmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-varliklinin-borcu-geciktirmesi"
+  },
+  {
+    "id": "new74-general-276",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Ödeme güçlüğü çeken borçluya süre tanıyan veya alacağını bağışlayan kişiye hangi müjde verilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Dünyada hiç ödeme güçlüğü yaşamama"
+      },
+      {
+        "id": "o2",
+        "text": "Her yolculukta kazancının artması"
+      },
+      {
+        "id": "o3",
+        "text": "Bütün borçlardan koşulsuz muafiyet"
+      },
+      {
+        "id": "o4",
+        "text": "Kıyamet gününde Allah’ın özel himayesi"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hadis, darda olan borçluya kolaylık sağlayanı âhiretteki ilâhî himayeyle müjdeler.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 119; T1306, Tirmizî, Büyû’ 67",
+        "supports": "Hadis, darda olan borçluya kolaylık sağlayanı âhiretteki ilâhî himayeyle müjdeler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-dar-borcluya-sure-himaye"
+  },
+  {
+    "id": "new74-general-277",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "İnsanların malını borç alırken geri ödeme niyetinde olan kimse için hadiste ne bildirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Allah’ın ödemesini kolaylaştıracağı"
+      },
+      {
+        "id": "o2",
+        "text": "Borcun vadesinin tamamen kalkacağı"
+      },
+      {
+        "id": "o3",
+        "text": "Alacaklının artık hiçbir hakkı kalmayacağı"
+      },
+      {
+        "id": "o4",
+        "text": "Borcun bağışa dönüşeceği"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "İyi niyet, borcu ödeme çabasıyla birlikte ele alınır; borç yükümlülüğünü kendiliğinden sona erdirmez.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 119; B2387, Buhârî, İstikrâz 2",
+        "supports": "İyi niyet, borcu ödeme çabasıyla birlikte ele alınır; borç yükümlülüğünü kendiliğinden sona erdirmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-borcta-geri-odeme-niyeti"
+  },
+  {
+    "id": "new74-general-278",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Borç ilişkisi hakkında “Sizin en hayırlınız” diye başlayan hadiste hangi kişi övülür?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "En çok kişiye aynı anda borç veren"
+      },
+      {
+        "id": "o2",
+        "text": "Borcunu en güzel biçimde ödeyen"
+      },
+      {
+        "id": "o3",
+        "text": "Yalnız akrabalarıyla borç ilişkisi kuran"
+      },
+      {
+        "id": "o4",
+        "text": "Alacağını daima aynı gün isteyen"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Ölçü borcun miktarı değil, borç sorumluluğunu iyi yerine getirmektir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 119; B2305, Buhârî, Vekâlet 5",
+        "supports": "Ölçü borcun miktarı değil, borç sorumluluğunu iyi yerine getirmektir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-borcu-guzel-odeme-hayirli"
+  },
+  {
+    "id": "new74-general-279",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Allah yolunda ölmenin kefâret oluşunu anlatan hadiste özellikle hangi yükümlülük istisna edilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sefer adağı"
+      },
+      {
+        "id": "o2",
+        "text": "Yarım kalan nâfile"
+      },
+      {
+        "id": "o3",
+        "text": "Borç"
+      },
+      {
+        "id": "o4",
+        "text": "Ziyaret sözü"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Borç, başkasının hakkıyla ilgili olduğu için ayrıca vurgulanır; şehitlik borcu kendiliğinden düşürmez.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 117; M4884, Müslim, İmâre 120",
+        "supports": "Borç, başkasının hakkıyla ilgili olduğu için ayrıca vurgulanır; şehitlik borcu kendiliğinden düşürmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-sehitlik-borc-istisnasi"
+  },
+  {
+    "id": "new74-general-280",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Hz. Peygamber borçtan Allah’a sığınmasını açıklarken hangi ahlâkî tehlikeyi anar?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İnsanların övgüsüne aşırı kapılmayı"
+      },
+      {
+        "id": "o2",
+        "text": "İbadeti gösteriş için yapmayı"
+      },
+      {
+        "id": "o3",
+        "text": "Gereksiz yere başkalarını kıskanmayı"
+      },
+      {
+        "id": "o4",
+        "text": "Yalan söyleyip verilen sözü tutmamayı"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Borç baskısının yalan ve sözünde durmama riskini artırabileceği hatırlatılır; her borçluya suç isnat edilmez.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 125; N5456, Nesâî, İstiâze 9",
+        "supports": "Borç baskısının yalan ve sözünde durmama riskini artırabileceği hatırlatılır; her borçluya suç isnat edilmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-borc-yalan-soz-riski"
+  },
+  {
+    "id": "new74-general-281",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Bir çalışanla iş anlaşması yapılırken ücret bakımından hangi ilke gözetilmelidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Ücretin önceden açıkça bildirilmesi"
+      },
+      {
+        "id": "o2",
+        "text": "Ücretin iş bittikten sonra keyfî belirlenmesi"
+      },
+      {
+        "id": "o3",
+        "text": "Ücretin çalışandan gizlenmesi"
+      },
+      {
+        "id": "o4",
+        "text": "Ücret yerine yalnız belirsiz bir vaat verilmesi"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "İşin karşılığının baştan belirli olması anlaşmazlığı ve çalışan hakkının ihlâlini önler.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 147; ücretin baştan açıkça bildirilmesi üzerine yayın açıklaması",
+        "supports": "İşin karşılığının baştan belirli olması anlaşmazlığı ve çalışan hakkının ihlâlini önler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-is-anlasmasi-ucret-acikligi"
+  },
+  {
+    "id": "new74-general-282",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Arazinin yalnız belli bir bölümünün ürününü kira bedeli sayan uygulamadaki sakınca nasıl açıklanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kiranın mutlaka başka şehirde ödenmesi gereğini"
+      },
+      {
+        "id": "o2",
+        "text": "Bir bölüm ürün verirken diğerinin vermeyip tarafı mağdur edebilmesi"
+      },
+      {
+        "id": "o3",
+        "text": "Ürünün yalnız bir mevsimde hasat edilmesini"
+      },
+      {
+        "id": "o4",
+        "text": "Arazi büyüklüğünün her yıl aynı kalmasını"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Kaynak, yasağı bütün arazi kiralarına yaymadan belirsizlik ve tek taraflı zarar tehlikesini açıklar.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 143,145; M3952, Müslim, Büyû’ 116; B2332, Buhârî, Müzâraa 12",
+        "supports": "Kaynak, yasağı bütün arazi kiralarına yaymadan belirsizlik ve tek taraflı zarar tehlikesini açıklar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-arazi-kirasinda-parca-risk"
+  },
+  {
+    "id": "new74-general-283",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Bir başkası adına iş gören vekil hangi sınır içinde hareket etmelidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yetki verenin bütün malını dilediğince kullanarak"
+      },
+      {
+        "id": "o2",
+        "text": "Sözleşmede olmayan kişisel çıkarları öncelikleyerek"
+      },
+      {
+        "id": "o3",
+        "text": "Kendisine verilen yetki ve meşru şartlar içinde"
+      },
+      {
+        "id": "o4",
+        "text": "Her konuda sınırsız karar sahibi olarak"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Vekâlet güven ilişkisidir; vekil, müvekkilin belirlediği meşru kapsamı aşamaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 165; Vekâlet bölümü açıklaması",
+        "supports": "Vekâlet güven ilişkisidir; vekil, müvekkilin belirlediği meşru kapsamı aşamaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-vekil-yetki-siniri"
+  },
+  {
+    "id": "new74-general-284",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Kamu görevi sırasında iğne kadar bir malı bile gizlemek hadiste nasıl değerlendirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Önemsiz bir ücret eki olarak"
+      },
+      {
+        "id": "o2",
+        "text": "Görevlinin koşulsuz hakkı olarak"
+      },
+      {
+        "id": "o3",
+        "text": "Kayıt gerektirmeyen bir hediye olarak"
+      },
+      {
+        "id": "o4",
+        "text": "Hıyanet olarak"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Miktarın küçüklüğü ortak maldan gizlice pay almayı meşru kılmaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 181; M4743, Müslim, İmâre 30",
+        "supports": "Miktarın küçüklüğü ortak maldan gizlice pay almayı meşru kılmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-kamu-isinde-igne-gizlemek"
+  },
+  {
+    "id": "new74-general-285",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Su kaynaklarıyla ilgili öğütte ihtiyaç fazlası su için hangi tutum benimsenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İhtiyaç duyanlardan esirgenmemesi"
+      },
+      {
+        "id": "o2",
+        "text": "Havuzda sonraki yıl için saklanması"
+      },
+      {
+        "id": "o3",
+        "text": "Kullanımın ücret sırasına bağlanması"
+      },
+      {
+        "id": "o4",
+        "text": "Önce bütün tarlaların sulanmasına ayrılması"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Kaynak, temel ihtiyaç olan suyun haksız biçimde başkalarından esirgenmemesini vurgular.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 187; İM2479, İbn Mâce, Rühûn 19",
+        "supports": "Kaynak, temel ihtiyaç olan suyun haksız biçimde başkalarından esirgenmemesini vurgular.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-ihtiyac-fazlasi-su-esirgememe"
+  },
+  {
+    "id": "new74-general-286",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "“Hiçbir canlıyı hedef edinmeyin” hadisi hangi uygulamayı yasaklar?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Boş hedef tahtasında çalışmayı"
+      },
+      {
+        "id": "o2",
+        "text": "Canlı hayvanı atış hedefi yapmayı"
+      },
+      {
+        "id": "o3",
+        "text": "Bineği uygun şekilde eğitmeyi"
+      },
+      {
+        "id": "o4",
+        "text": "Yaralı hayvanı tedavi etmeyi"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Yasak, canlıya eğlence veya talim amacıyla acı çektirilmesini önler.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 255; M5059, Müslim, Sayd 58",
+        "supports": "Yasak, canlıya eğlence veya talim amacıyla acı çektirilmesini önler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-canli-hedef-yasagi"
+  },
+  {
+    "id": "new74-general-287",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Hayvanlarla ilgili hangi eğlence uygulaması hadiste yasaklanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Binek hayvanlarıyla yolculuk etmeyi"
+      },
+      {
+        "id": "o2",
+        "text": "Kuşları besleyip bakımlarını üstlenmeyi"
+      },
+      {
+        "id": "o3",
+        "text": "Hayvanları birbirleriyle dövüştürmek"
+      },
+      {
+        "id": "o4",
+        "text": "Atları uygun biçimde yetiştirmeyi"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Yasak, hayvanların eğlence için birbirine zarar vermeye zorlanması hakkındadır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 255; T1708, Tirmizî, Cihâd 30; D2562, Ebû Dâvûd, Cihâd 51",
+        "supports": "Yasak, hayvanların eğlence için birbirine zarar vermeye zorlanması hakkındadır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-hayvan-dovusturme-yasagi"
+  },
+  {
+    "id": "new74-general-288",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "İki kişi arasındaki davada karar verecek kimse hangi hâldeyken hüküm vermemelidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tarafları ayrı ayrı dinlemişken"
+      },
+      {
+        "id": "o2",
+        "text": "Delilleri karşılaştırmışken"
+      },
+      {
+        "id": "o3",
+        "text": "Konuyu anlamak için soru sormuşken"
+      },
+      {
+        "id": "o4",
+        "text": "Öfkeliyken"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Öfkenin sağlıklı değerlendirmeyi etkilemesi sebebiyle kararın bu hâlde verilmemesi istenir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 401; M4490, Müslim, Akdiye 16",
+        "supports": "Öfkenin sağlıklı değerlendirmeyi etkilemesi sebebiyle kararın bu hâlde verilmemesi istenir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-ofkeliyken-hukum-vermeme"
+  },
+  {
+    "id": "new74-general-289",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Ehliyetli hâkim gerekli çabayı göstererek ictihad ettiğinde isabet ve hata için hadiste hangi ecirler belirtilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İsabet ederse iki, yanılırsa bir ecir"
+      },
+      {
+        "id": "o2",
+        "text": "İsabet ederse bir, yanılırsa iki ecir"
+      },
+      {
+        "id": "o3",
+        "text": "İsabet ederse üç, yanılırsa hiç ecir yok"
+      },
+      {
+        "id": "o4",
+        "text": "İki durumda da zorunlu olarak hiç ecir yok"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Müjde, hakkı aramak için gereken çabayı gösteren ehliyetli kişiye ilişkindir; keyfî veya bilgisiz hükmü onaylamaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 401; B7352, Buhârî, İ‘tisâm 21; M4487, Müslim, Akdiye 15",
+        "supports": "Müjde, hakkı aramak için gereken çabayı gösteren ehliyetli kişiye ilişkindir; keyfî veya bilgisiz hükmü onaylamaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-hakkini-vererek-ictihad-ecir"
+  },
+  {
+    "id": "new74-general-290",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadisteki genel ispat ilkesine göre delil getirmek ve yemin etmek sırasıyla kime düşer?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Davalıya ve davacıya"
+      },
+      {
+        "id": "o2",
+        "text": "Davacıya ve davalıya"
+      },
+      {
+        "id": "o3",
+        "text": "Şahide ve hâkime"
+      },
+      {
+        "id": "o4",
+        "text": "Hâkime ve şahide"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Genel kural iddiayı delillendirmenin davacıya, inkâr karşısındaki yeminin davalıya ait olduğunu bildirir; ayrıntılı yargılama hükümleri bundan ibaret değildir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt5.pdf",
+        "locator": "Cilt 5, fiziksel PDF s. 401; T1341, Tirmizî, Ahkâm 12",
+        "supports": "Genel kural iddiayı delillendirmenin davacıya, inkâr karşısındaki yeminin davalıya ait olduğunu bildirir; ayrıntılı yargılama hükümleri bundan ibaret değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-26",
+    "conceptGroup": "v74-delil-davaci-yemin-davali"
+  }
+]

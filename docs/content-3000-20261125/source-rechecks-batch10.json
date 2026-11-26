@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual full-record and TDV paragraph comparison",
+  "groups": [
+    {
+      "ids": [
+        "learn-women-007",
+        "q48-ummu-seleme-009",
+        "q48-ummu-seleme-010",
+        "q48-ummu-seleme-011",
+        "q48-ummu-seleme-012",
+        "q48-ummu-seleme-013",
+        "q48-ummu-seleme-014",
+        "q58-seleme-asli",
+        "q58-seleme-kabile",
+        "q58-seleme-hud",
+        "q58-seleme-sefer"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/ummu-seleme",
+      "locator": "TDV; full biography paragraphs on migrations, Hudeybiye advice, kinship, name, expeditions, death and hadiths",
+      "partialIds": [],
+      "note": "All stems, four options, keyed answer and explanations manually compared. Narrative reports retained as reports; alternative dates not suppressed."
+    },
+    {
+      "ids": [
+        "pilot-history-003",
+        "e150-history-023",
+        "e150-history-024",
+        "e150-history-025",
+        "q47-hudeybiye-008",
+        "q47-hudeybiye-009",
+        "q47-hudeybiye-010",
+        "q47-hudeybiye-013",
+        "q57-hudyer",
+        "q57-hudumre",
+        "q57-hudtanima",
+        "q47-hudeybiye-011",
+        "q47-hudeybiye-012"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/hudeybiye-antlasmasi",
+      "locator": "TDV; location, departure, emissaries and signed terms, political consequences paragraphs",
+      "partialIds": ["q47-hudeybiye-011"],
+      "note": "All stems, four options, keyed answer and explanations manually compared. Narrative reports retained as reports; alternative dates not suppressed. Adjacent Ebû Cendel record also supported; compensation-umra year follows the article but the specific Umretül-kaza name still needs its dedicated source."
+    }
+  ]
+}

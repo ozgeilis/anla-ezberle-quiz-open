@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual source and option comparison; denominational differences retained",
+  "groups": [
+    {
+      "ids": [
+        "v7-general-002",
+        "v13-general-002",
+        "q52-fitre-016",
+        "q52-fitre-017",
+        "q52-fitre-018",
+        "q52-fitre-019",
+        "q52-fitre-020",
+        "q62-fitre-zaman",
+        "q62-fitre-gayesi",
+        "q62-fitre-ad"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/fitre",
+      "locator": "TDV full article; definition, legal schools, purpose, Abu Said narration and cash-value payment paragraphs",
+      "partialIds": [],
+      "scopeReviewIds": [],
+      "note": "All stems/options/key/explanations manually compared. Legal schools and report-specific quantity/cash-payment qualifications preserved. Kurban intention stem should specify legal validity and inward intent to distinguish it from sincerity."
+    },
+    {
+      "ids": [
+        "q52-kurban-021",
+        "q52-kurban-022",
+        "q52-kurban-023",
+        "q71-kurban-niyet",
+        "q71-kurban-kalb",
+        "q71-kurban-vek",
+        "q71-kurban-koyun",
+        "q71-kurban-buyuk",
+        "q71-kurban-tur",
+        "q71-kurban-cins",
+        "q71-kurban-sahip"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/kurban",
+      "locator": "TDV Ali Bardakoğlu / İslamda Kurban: terminology, adak, validity conditions 1 and 6, proxy cutting and distribution paragraphs; introduction on udhiyye/hedy/akika/zebiha",
+      "partialIds": [],
+      "scopeReviewIds": ["q71-kurban-kalb"],
+      "note": "All stems/options/key/explanations manually compared. Legal schools and report-specific quantity/cash-payment qualifications preserved. Kurban intention stem should specify legal validity and inward intent to distinguish it from sincerity.",
+      "supplementaryUrls": ["https://islamansiklopedisi.org.tr/adak"],
+      "locators": {
+        "q52-kurban-022": "TDV Adak, introductory fikh definition (dinen mükellef olmadığı ibadeti Allah’a söz vererek üstlenme)"
+      }
+    }
+  ]
+}

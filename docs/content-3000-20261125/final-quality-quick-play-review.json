@@ -1,0 +1,853 @@
+{
+  "date": "2026-11-26",
+  "scope": "Reused the complete prior 3000-record source and option audit; final targeted reading of 56 records across four categories and three difficulties. Easy sample prioritised dates, terminology and specialised wording. Not a new complete human/expert review.",
+  "sampleSize": 56,
+  "sampleIds": [
+    "quran-007",
+    "pilot-quran-001",
+    "quran-meaning-v72-002",
+    "quran-meaning-v72-006",
+    "quran-meaning-v72-011",
+    "quran-meaning-v72-017",
+    "quran-meaning-v72-038",
+    "v11-quran-002",
+    "pilot-quran-004",
+    "q67-ankebut-36",
+    "new74-quran-372",
+    "e150-quran-031",
+    "new74-quran-190",
+    "new74-quran-368",
+    "e150-prophets-021",
+    "v11-prophets-009",
+    "v13-prophets-007",
+    "v13-prophets-010",
+    "q47-harun-030",
+    "q57-yusufruya",
+    "new74-prophets-008",
+    "new74-prophets-011",
+    "prophets-012",
+    "q57-davudcalut",
+    "new74-prophets-373",
+    "e150-prophets-015",
+    "new74-prophets-115",
+    "new74-prophets-375",
+    "history-002",
+    "e150-history-021",
+    "v13-history-003",
+    "learn-history-003",
+    "learn-history-007",
+    "q60-suffe-egitim",
+    "new74-history-003",
+    "new74-history-026",
+    "history-006",
+    "q69-bilalihabesi-vasita",
+    "new74-history-372",
+    "e150-history-018",
+    "q69-selmanifarisi-sehir",
+    "new74-history-375",
+    "general-007",
+    "general-008",
+    "pilot-general-003",
+    "e150-general-001",
+    "v8-general-005",
+    "v9-general-003",
+    "v9-general-007",
+    "v12-general-005",
+    "pilot-general-004",
+    "q68-cami-tanim",
+    "new74-general-375",
+    "e150-general-004",
+    "q68-tirmizi-vefat",
+    "new74-general-254"
+  ],
+  "newWrongKeysFound": 0,
+  "newMultipleCorrectOptionsConfirmed": 0,
+  "newSemanticDuplicatesConfirmed": 0,
+  "targetedChanges": [
+    {
+      "id": "new74-general-375",
+      "before": {
+        "id": "new74-general-375",
+        "version": 1,
+        "categoryId": "general",
+        "difficulty": "medium",
+        "question": "“Yıldızlar gökyüzünün güvenceleridir” hadisinde onların gitmesi hangi olayla ilişkilendirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Her gün akşamın gelmesiyle"
+          },
+          {
+            "id": "o2",
+            "text": "Her ay hilâlin görünmesiyle"
+          },
+          {
+            "id": "o3",
+            "text": "Gökyüzüne vaad edilen kıyametle"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnız mevsimlerin değişmesiyle"
+          }
+        ],
+        "correctOptionId": "o3",
+        "explanation": "Rivayet evrenin mevcut düzeninin sonunu hatırlatır; yıldız falına dayanak vermez.",
+        "sources": [
+          {
+            "title": "Diyanet — Hadislerle İslâm",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt1.pdf",
+            "locator": "Cilt 1, fiziksel PDF s. 311; M6466, Fedâilü’s-sahâbe 207",
+            "supports": "Rivayet evrenin mevcut düzeninin sonunu hatırlatır; yıldız falına dayanak vermez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-yildizlar-gok-guvencesi"
+      },
+      "after": {
+        "id": "new74-general-375",
+        "version": 1,
+        "categoryId": "general",
+        "difficulty": "hard",
+        "question": "“Yıldızlar gökyüzünün güvenceleridir” hadisinde onların gitmesi hangi olayla ilişkilendirilir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Her gün akşamın gelmesiyle"
+          },
+          {
+            "id": "o2",
+            "text": "Her ay hilâlin görünmesiyle"
+          },
+          {
+            "id": "o3",
+            "text": "Gökyüzüne vaad edilen kıyametle"
+          },
+          {
+            "id": "o4",
+            "text": "Yalnız mevsimlerin değişmesiyle"
+          }
+        ],
+        "correctOptionId": "o3",
+        "explanation": "Rivayet evrenin mevcut düzeninin sonunu hatırlatır; yıldız falına dayanak vermez.",
+        "sources": [
+          {
+            "title": "Diyanet — Hadislerle İslâm",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt1.pdf",
+            "locator": "Cilt 1, fiziksel PDF s. 311; M6466, Fedâilü’s-sahâbe 207",
+            "supports": "Rivayet evrenin mevcut düzeninin sonunu hatırlatır; yıldız falına dayanak vermez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-yildizlar-gok-guvencesi"
+      },
+      "reason": "A particular celestial hadith and its eschatological comparison are advanced source recall.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt1.pdf",
+        "locator": "Cilt 1, fiziksel PDF s. 311; M6466, Fedâilü’s-sahâbe 207",
+        "supports": "Rivayet evrenin mevcut düzeninin sonunu hatırlatır; yıldız falına dayanak vermez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "new74-history-003",
+      "before": {
+        "id": "new74-history-003",
+        "version": 1,
+        "categoryId": "history",
+        "difficulty": "easy",
+        "question": "Mevlânâ’nın altı defterlik Mesnevî’si hangi dilde kaleme alınmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Türkçe"
+          },
+          {
+            "id": "o2",
+            "text": "Arapça"
+          },
+          {
+            "id": "o3",
+            "text": "Farsça"
+          },
+          {
+            "id": "o4",
+            "text": "Urduca"
+          }
+        ],
+        "correctOptionId": "o3",
+        "explanation": "TDV, Mesnevî’yi Farsça yazılmış bir eser olarak tanıtır. Türkçe ve başka dillerdeki çeviriler eserin ilk yazıldığı dili değiştirmez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mesnevi--mevlana",
+            "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+            "supports": "TDV, Mesnevî’yi Farsça yazılmış bir eser olarak tanıtır. Türkçe ve başka dillerdeki çeviriler eserin ilk yazıldığı dili değiştirmez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-25"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Fiilen açılan kaynak pasajından hazırlanmıştır. Bağımsız uzman/yayın onayı değildir; son banka çapında tekrar ve zorluk kabulü bekliyor.",
+        "updatedAt": "2026-11-25",
+        "conceptGroup": "v74-masnavi-language-persian"
+      },
+      "after": {
+        "id": "new74-history-003",
+        "version": 1,
+        "categoryId": "history",
+        "difficulty": "medium",
+        "question": "Mevlânâ’nın altı defterlik Mesnevî’si hangi dilde kaleme alınmıştır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Türkçe"
+          },
+          {
+            "id": "o2",
+            "text": "Arapça"
+          },
+          {
+            "id": "o3",
+            "text": "Farsça"
+          },
+          {
+            "id": "o4",
+            "text": "Urduca"
+          }
+        ],
+        "correctOptionId": "o3",
+        "explanation": "TDV, Mesnevî’yi Farsça yazılmış bir eser olarak tanıtır. Türkçe ve başka dillerdeki çeviriler eserin ilk yazıldığı dili değiştirmez.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/mesnevi--mevlana",
+            "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+            "supports": "TDV, Mesnevî’yi Farsça yazılmış bir eser olarak tanıtır. Türkçe ve başka dillerdeki çeviriler eserin ilk yazıldığı dili değiştirmez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-25"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Fiilen açılan kaynak pasajından hazırlanmıştır. Bağımsız uzman/yayın onayı değildir; son banka çapında tekrar ve zorluk kabulü bekliyor.",
+        "updatedAt": "2026-11-25",
+        "conceptGroup": "v74-masnavi-language-persian"
+      },
+      "reason": "Original work language is a literature detail rather than beginner Islamic knowledge.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/mesnevi--mevlana",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "TDV, Mesnevî’yi Farsça yazılmış bir eser olarak tanıtır. Türkçe ve başka dillerdeki çeviriler eserin ilk yazıldığı dili değiştirmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    },
+    {
+      "id": "new74-history-026",
+      "before": {
+        "id": "new74-history-026",
+        "version": 1,
+        "categoryId": "history",
+        "difficulty": "easy",
+        "question": "Klasik minyatürün TDV’de belirtilen görsel özelliklerinden biri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tek bakışlı perspektifle uzak nesneleri küçültmesi"
+          },
+          {
+            "id": "o2",
+            "text": "Işık-gölge oyunlarıyla derinlik kurmaması"
+          },
+          {
+            "id": "o3",
+            "text": "Yağlı boyayla saydam katmanlar kurması"
+          },
+          {
+            "id": "o4",
+            "text": "Kabartmalı figürlerle hacim vermesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "explanation": "Minyatür küçük boyutlu ve renkli olabilir; klasik tasvir anlayışında ışık-gölgeyle hacim ve derinlik verme kullanılmaz.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/minyatur",
+            "locator": "Elektronik madde, erişim anındaki metin satırları 94-95 (basılı sayfa numarası değildir)",
+            "supports": "Minyatür küçük boyutlu ve renkli olabilir; klasik tasvir anlayışında ışık-gölgeyle hacim ve derinlik verme kullanılmaz.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-25"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılan kaynak pasajından hazırlanmış adaydır; son anlamsal tekrar ve zorluk kabulü bekler, uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-25",
+        "conceptGroup": "v74-miniature-no-light-shadow-depth"
+      },
+      "after": {
+        "id": "new74-history-026",
+        "version": 1,
+        "categoryId": "history",
+        "difficulty": "medium",
+        "question": "Klasik minyatürün TDV’de belirtilen görsel özelliklerinden biri hangisidir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Tek bakışlı perspektifle uzak nesneleri küçültmesi"
+          },
+          {
+            "id": "o2",
+            "text": "Işık-gölge oyunlarıyla derinlik kurmaması"
+          },
+          {
+            "id": "o3",
+            "text": "Yağlı boyayla saydam katmanlar kurması"
+          },
+          {
+            "id": "o4",
+            "text": "Kabartmalı figürlerle hacim vermesi"
+          }
+        ],
+        "correctOptionId": "o2",
+        "explanation": "Minyatür küçük boyutlu ve renkli olabilir; klasik tasvir anlayışında ışık-gölgeyle hacim ve derinlik verme kullanılmaz.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/minyatur",
+            "locator": "Elektronik madde, erişim anındaki metin satırları 94-95 (basılı sayfa numarası değildir)",
+            "supports": "Minyatür küçük boyutlu ve renkli olabilir; klasik tasvir anlayışında ışık-gölgeyle hacim ve derinlik verme kullanılmaz.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-25"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılan kaynak pasajından hazırlanmış adaydır; son anlamsal tekrar ve zorluk kabulü bekler, uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-25",
+        "conceptGroup": "v74-miniature-no-light-shadow-depth"
+      },
+      "reason": "Perspective/light-shadow characteristics require art-history terminology.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/minyatur",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 94-95 (basılı sayfa numarası değildir)",
+        "supports": "Minyatür küçük boyutlu ve renkli olabilir; klasik tasvir anlayışında ışık-gölgeyle hacim ve derinlik verme kullanılmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    },
+    {
+      "id": "new74-prophets-373",
+      "before": {
+        "id": "new74-prophets-373",
+        "version": 1,
+        "categoryId": "prophets",
+        "difficulty": "medium",
+        "question": "Berâ b. Âzib’in tasvirinde Hz. Peygamber hangi renkte bir elbise içindedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kırmızı"
+          },
+          {
+            "id": "o2",
+            "text": "Yeşil"
+          },
+          {
+            "id": "o3",
+            "text": "Siyah"
+          },
+          {
+            "id": "o4",
+            "text": "Beyaz"
+          }
+        ],
+        "correctOptionId": "o1",
+        "explanation": "Rivayet belirli bir görünümü anlatır; tek zorunlu elbise rengi koymaz.",
+        "sources": [
+          {
+            "title": "Diyanet — Hadislerle İslâm",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt6.pdf",
+            "locator": "Cilt 6, fiziksel PDF s. 333; T1724, Libâs 4",
+            "supports": "Rivayet belirli bir görünümü anlatır; tek zorunlu elbise rengi koymaz.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-bera-kirmizi-elbise"
+      },
+      "after": {
+        "id": "new74-prophets-373",
+        "version": 1,
+        "categoryId": "prophets",
+        "difficulty": "hard",
+        "question": "Berâ b. Âzib’in tasvirinde Hz. Peygamber hangi renkte bir elbise içindedir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kırmızı"
+          },
+          {
+            "id": "o2",
+            "text": "Yeşil"
+          },
+          {
+            "id": "o3",
+            "text": "Siyah"
+          },
+          {
+            "id": "o4",
+            "text": "Beyaz"
+          }
+        ],
+        "correctOptionId": "o1",
+        "explanation": "Rivayet belirli bir görünümü anlatır; tek zorunlu elbise rengi koymaz.",
+        "sources": [
+          {
+            "title": "Diyanet — Hadislerle İslâm",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt6.pdf",
+            "locator": "Cilt 6, fiziksel PDF s. 333; T1724, Libâs 4",
+            "supports": "Rivayet belirli bir görünümü anlatır; tek zorunlu elbise rengi koymaz.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-bera-kirmizi-elbise"
+      },
+      "reason": "Specific garment colour in an individually attributed hadith is specialised recall.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt6.pdf",
+        "locator": "Cilt 6, fiziksel PDF s. 333; T1724, Libâs 4",
+        "supports": "Rivayet belirli bir görünümü anlatır; tek zorunlu elbise rengi koymaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "new74-quran-368",
+      "before": {
+        "id": "new74-quran-368",
+        "version": 1,
+        "categoryId": "quran",
+        "difficulty": "hard",
+        "question": "Ehl-i kitabın aktardığı, doğruluğu bilinmeyen bilgiler karşısında hadiste hangi ihtiyat öğütlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Hepsini tartışmasız vahiy saymak"
+          },
+          {
+            "id": "o2",
+            "text": "Hepsini kesin yalan saymak"
+          },
+          {
+            "id": "o3",
+            "text": "Onlarla yeni ibadet yükümlülüğü koymak"
+          },
+          {
+            "id": "o4",
+            "text": "Kesin tasdik veya yalanlamadan kaçınmak"
+          }
+        ],
+        "correctOptionId": "o4",
+        "explanation": "İlâhî kitaplara iman korunurken doğrulanmamış ayrıntılar kesinleştirilmez.",
+        "sources": [
+          {
+            "title": "Diyanet — Hadislerle İslâm",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt1.pdf",
+            "locator": "Cilt 1, fiziksel PDF s. 541; B7362, İ‘tisâm 25",
+            "supports": "İlâhî kitaplara iman korunurken doğrulanmamış ayrıntılar kesinleştirilmez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-ehli-kitap-nakli-ihtiyat"
+      },
+      "after": {
+        "id": "new74-quran-368",
+        "version": 1,
+        "categoryId": "quran",
+        "difficulty": "hard",
+        "question": "Ehl-i kitabın aktardığı, doğruluğu bilinmeyen bilgiler karşısında hadiste hangi ihtiyat öğütlenir?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Kur’an’a aykırı görünmeyen bütün ayrıntıları tasdik etmek"
+          },
+          {
+            "id": "o2",
+            "text": "Aktaranın dindarlığına bakarak doğru kabul etmek"
+          },
+          {
+            "id": "o3",
+            "text": "Sözlü aktarılan ayrıntıları kesin olarak reddetmek"
+          },
+          {
+            "id": "o4",
+            "text": "Kesin tasdik veya yalanlamadan kaçınmak"
+          }
+        ],
+        "correctOptionId": "o4",
+        "explanation": "İlâhî kitaplara iman korunurken doğrulanmamış ayrıntılar kesinleştirilmez.",
+        "sources": [
+          {
+            "title": "Diyanet — Hadislerle İslâm",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt1.pdf",
+            "locator": "Cilt 1, fiziksel PDF s. 541; B7362, İ‘tisâm 25",
+            "supports": "İlâhî kitaplara iman korunurken doğrulanmamış ayrıntılar kesinleştirilmez.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-ehli-kitap-nakli-ihtiyat"
+      },
+      "reason": "All four alternatives now address the same source-specific image or epistemic rule; eliminate unrelated/giveaway choices.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt1.pdf",
+        "locator": "Cilt 1, fiziksel PDF s. 541; B7362, İ‘tisâm 25",
+        "supports": "İlâhî kitaplara iman korunurken doğrulanmamış ayrıntılar kesinleştirilmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "new74-quran-372",
+      "before": {
+        "id": "new74-quran-372",
+        "version": 1,
+        "categoryId": "quran",
+        "difficulty": "medium",
+        "question": "Saf 61/8’de karşı çıkanların boşuna çabası hangi benzetmeyle anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Denizde gemi yüzdürmek"
+          },
+          {
+            "id": "o2",
+            "text": "Toprağa tohum ekmek"
+          },
+          {
+            "id": "o3",
+            "text": "Yolcuya gölge sağlamak"
+          },
+          {
+            "id": "o4",
+            "text": "Allah’ın nurunu ağızlarıyla söndürmek"
+          }
+        ],
+        "correctOptionId": "o4",
+        "explanation": "Allah’ın nurunu tamamlayacağı, engelleme çabasının sonuçsuzluğu bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "61/8; physical PDF 592",
+            "supports": "Allah’ın nurunu tamamlayacağı, engelleme çabasının sonuçsuzluğu bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-agizla-nur-sondurme"
+      },
+      "after": {
+        "id": "new74-quran-372",
+        "version": 1,
+        "categoryId": "quran",
+        "difficulty": "medium",
+        "question": "Saf 61/8’de karşı çıkanların boşuna çabası hangi benzetmeyle anlatılır?",
+        "options": [
+          {
+            "id": "o1",
+            "text": "Allah’ın nurunu perdelerle örtmek"
+          },
+          {
+            "id": "o2",
+            "text": "Allah’ın nurunu elleriyle gizlemek"
+          },
+          {
+            "id": "o3",
+            "text": "Allah’ın nuruna sırtlarını dönmek"
+          },
+          {
+            "id": "o4",
+            "text": "Allah’ın nurunu ağızlarıyla söndürmek"
+          }
+        ],
+        "correctOptionId": "o4",
+        "explanation": "Allah’ın nurunu tamamlayacağı, engelleme çabasının sonuçsuzluğu bildirilir.",
+        "sources": [
+          {
+            "title": "Diyanet — Kur’an Yolu Meali",
+            "publisher": "Diyanet İşleri Başkanlığı",
+            "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+            "locator": "61/8; physical PDF 592",
+            "supports": "Allah’ın nurunu tamamlayacağı, engelleme çabasının sonuçsuzluğu bildirilir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-agizla-nur-sondurme"
+      },
+      "reason": "All four alternatives now address the same source-specific image or epistemic rule; eliminate unrelated/giveaway choices.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "Diyanet — Kur’an Yolu Meali",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://dijital.diyanet.gov.tr/File/Download?id=429&path=429_1.pdf",
+        "locator": "61/8; physical PDF 592",
+        "supports": "Allah’ın nurunu tamamlayacağı, engelleme çabasının sonuçsuzluğu bildirilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "e150-general-004",
+      "before": {
+        "id": "e150-general-004",
+        "version": 4,
+        "categoryId": "general",
+        "difficulty": "hard",
+        "question": "Kur’an okuyuşunda sekteyi belirleyen duruş nasıl yapılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Mutlaka uzun süre nefes alarak"
+          },
+          {
+            "id": "o2",
+            "text": "Nefes almadan kısa süre durarak"
+          },
+          {
+            "id": "o1",
+            "text": "Önceki kelimeyi silerek"
+          },
+          {
+            "id": "o3",
+            "text": "Sonraki kelimeyi iki kez okuyarak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "explanation": "Sekte, sesi kısa süre kesip nefes almadan okuyuşa devam etmektir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sekte",
+            "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+            "supports": "Sekte, sesi kısa süre kesip nefes almadan okuyuşa devam etmektir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "approved",
+        "reviewNotes": "26.11.2026: Kullanıcının 1.500 mevcut soruyu denetleyip 1.500 kaynaklı soru ekleme talimatı kapsamında veri ve kaynak karşılaştırması tamamlandı. Bağımsız ilahiyat uzmanı veya insan editör incelemesi iddia edilmez. Main ve mağaza dağıtımı ayrı onay kapsamındadır.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-sakt-short-pause-no-breath"
+      },
+      "after": {
+        "id": "e150-general-004",
+        "version": 4,
+        "categoryId": "general",
+        "difficulty": "hard",
+        "question": "Kur’an okuyuşunda sekteyi belirleyen duruş nasıl yapılır?",
+        "options": [
+          {
+            "id": "o4",
+            "text": "Nefes alıp kısa süre bekleyerek"
+          },
+          {
+            "id": "o2",
+            "text": "Nefes almadan kısa süre durarak"
+          },
+          {
+            "id": "o1",
+            "text": "Nefes almadan uzun süre susarak"
+          },
+          {
+            "id": "o3",
+            "text": "Nefes verip önceki kelimeden yeniden başlayarak"
+          }
+        ],
+        "correctOptionId": "o2",
+        "explanation": "Sekte, sesi kısa süre kesip nefes almadan okuyuşa devam etmektir.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "TDV İslâm Araştırmaları Merkezi",
+            "url": "https://islamansiklopedisi.org.tr/sekte",
+            "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+            "supports": "Sekte, sesi kısa süre kesip nefes almadan okuyuşa devam etmektir.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-11-26"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Kaynak/editoryal karşılaştırma: Replace a confirmed redundant fact in the staged candidate only; preserve original ID/category/key/option IDs and full historical v73 record. Full-option difficulty review: Specialised recitation technique. Bağımsız uzman onayı veya yayın kabulü değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "v74-sakt-short-pause-no-breath"
+      },
+      "reason": "Replace unrelated word deletion/repetition alternatives with actual pause/breathing distinctions. TDV Sekte lines 96-97 reread.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sekte",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+        "supports": "Sekte, sesi kısa süre kesip nefes almadan okuyuşa devam etmektir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-26"
+      }
+    },
+    {
+      "id": "v9-general-007",
+      "before": {
+        "id": "v9-general-007",
+        "version": 3,
+        "categoryId": "general",
+        "difficulty": "easy",
+        "question": "Fıkıh usulünde Hz. Peygamber'in söz, fiil ve onaylarını kapsayan terim hangisidir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Kıyas"
+          },
+          {
+            "id": "o4",
+            "text": "İstihsan"
+          },
+          {
+            "id": "o2",
+            "text": "Sünnet"
+          },
+          {
+            "id": "o1",
+            "text": "İcmâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "explanation": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/sunnet--peygamber",
+            "locator": "71 ve 111–112. satırlar",
+            "supports": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-28"
+          }
+        ],
+        "reviewStatus": "approved",
+        "reviewNotes": "26.11.2026: Kullanıcının 1.500 mevcut soruyu denetleyip 1.500 kaynaklı soru ekleme talimatı kapsamında veri ve kaynak karşılaştırması tamamlandı. Bağımsız ilahiyat uzmanı veya insan editör incelemesi iddia edilmez. Main ve mağaza dağıtımı ayrı onay kapsamındadır.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "sunna-term"
+      },
+      "after": {
+        "id": "v9-general-007",
+        "version": 3,
+        "categoryId": "general",
+        "difficulty": "medium",
+        "question": "Fıkıh usulünde Hz. Peygamber'in söz, fiil ve onaylarını kapsayan terim hangisidir?",
+        "options": [
+          {
+            "id": "o3",
+            "text": "Kıyas"
+          },
+          {
+            "id": "o4",
+            "text": "İstihsan"
+          },
+          {
+            "id": "o2",
+            "text": "Sünnet"
+          },
+          {
+            "id": "o1",
+            "text": "İcmâ"
+          }
+        ],
+        "correctOptionId": "o2",
+        "explanation": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
+        "sources": [
+          {
+            "title": "TDV İslâm Ansiklopedisi",
+            "publisher": "Türkiye Diyanet Vakfı",
+            "url": "https://islamansiklopedisi.org.tr/sunnet--peygamber",
+            "locator": "71 ve 111–112. satırlar",
+            "supports": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
+            "checkStatus": "supported",
+            "checkedAt": "2026-10-28"
+          }
+        ],
+        "reviewStatus": "reviewed",
+        "reviewNotes": "Kaynak/editoryal karşılaştırma: Final beginner review: distinguishes the usul definition of Sunna from qiyas, istihsan and consensus; this technical framing belongs at intermediate level. Bağımsız uzman onayı veya yayın kabulü değildir.",
+        "updatedAt": "2026-11-26",
+        "conceptGroup": "sunna-term"
+      },
+      "reason": "Technical usul distinction is intermediate rather than beginner recall. TDV Sunna lines 71,111-112 reread.",
+      "sourceRechecked": true,
+      "source": {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "Türkiye Diyanet Vakfı",
+        "url": "https://islamansiklopedisi.org.tr/sunnet--peygamber",
+        "locator": "71 ve 111–112. satırlar",
+        "supports": "Sünnet, fıkıh usulü bakımından Hz. Peygamber'in sözlerini, fiillerini ve onaylarını kapsar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-10-28"
+      }
+    }
+  ],
+  "independentExpertApproval": false
+}

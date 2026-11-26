@@ -1,5 +1,6 @@
 import { reviewedTopicByQuestionIdV71 } from "../../content/questions/learning-topics-v71-reviewed";
 import { reviewedTopicByQuestionIdV72 } from "../../content/questions/learning-topics-v72";
+import { reviewedTopicByQuestionIdV74 } from "../../content/questions/learning-topics-v74";
 import type { Question } from "../../content/questions/model";
 import { expandedTopicByQuestionIdV71 } from "../../content/questions/learning-topics-v71-expanded";
 import { publishedNewQuestionTopicsV15 } from "../../content/questions/published-v15";
@@ -26,12 +27,17 @@ import {
 } from "../../content/questions/learning-topics-v1";
 
 // Versioned taxonomy only. Draft question modules are deliberately not imported.
-export const LEARNING_TOPIC_VERSION = 3 as const;
-export type LearningTopicVersion = 1 | 2 | typeof LEARNING_TOPIC_VERSION;
+export const LEARNING_TOPIC_VERSION = 4 as const;
+export type LearningTopicVersion = 1 | 2 | 3 | typeof LEARNING_TOPIC_VERSION;
 export function isLearningTopicVersion(
   value: unknown,
 ): value is LearningTopicVersion {
-  return value === 1 || value === 2 || value === LEARNING_TOPIC_VERSION;
+  return (
+    value === 1 ||
+    value === 2 ||
+    value === 3 ||
+    value === LEARNING_TOPIC_VERSION
+  );
 }
 export function isLearningTopic(value: unknown): value is LearningTopicId {
   return learningTopicsV1.some((topic) => topic.id === value);
@@ -39,12 +45,13 @@ export function isLearningTopic(value: unknown): value is LearningTopicId {
 export function learningTopicName(topic: LearningTopicId): string {
   return learningTopicsV1.find((item) => item.id === topic)!.title;
 }
-// Current games use the v72/v3 partition. Saved v1 and v2 games retain the
+// Current games use the v74/v4 partition. Saved v1-v3 games retain the
 // frozen mappings from their original releases, including PR77 previews.
 export function assignedLearningTopic(
   id: string,
   version: LearningTopicVersion = LEARNING_TOPIC_VERSION,
 ): LearningTopicId | undefined {
+  if (version === 4) return reviewedTopicByQuestionIdV74[id];
   if (version === 3) return reviewedTopicByQuestionIdV72[id];
   if (version === 2) return reviewedTopicByQuestionIdV71[id];
   return (

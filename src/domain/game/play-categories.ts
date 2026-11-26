@@ -3,9 +3,10 @@ import type { Question } from "../../content/questions/model";
 import type { LearningTopicId } from "../../content/questions/learning-topics-v1";
 import { reviewedTopicByQuestionIdV71 } from "../../content/questions/learning-topics-v71-reviewed";
 import { reviewedTopicByQuestionIdV72 } from "../../content/questions/learning-topics-v72";
+import { reviewedTopicByQuestionIdV74 } from "../../content/questions/learning-topics-v74";
 
 // New navigation only: v1/v2 learning topics and saved records stay frozen.
-export const PLAY_CATEGORY_VERSION = 2 as const;
+export const PLAY_CATEGORY_VERSION = 3 as const;
 export const playCategories = [
   {
     id: "quran_dualar",
@@ -81,7 +82,7 @@ export function playCategoryName(id: PlayCategoryId) {
     ? childrenCategory.title
     : playCategories.find((c) => c.id === id)!.title;
 }
-export type PlayCategoryVersion = 1 | typeof PLAY_CATEGORY_VERSION;
+export type PlayCategoryVersion = 1 | 2 | typeof PLAY_CATEGORY_VERSION;
 export function belongsToPlayCategory(
   id: string,
   category: PlayCategoryId,
@@ -89,7 +90,11 @@ export function belongsToPlayCategory(
 ) {
   if (category === "children") return false; // No unreviewed candidate can become playable.
   const topic = (
-    version === 1 ? reviewedTopicByQuestionIdV71 : reviewedTopicByQuestionIdV72
+    version === 1
+      ? reviewedTopicByQuestionIdV71
+      : version === 2
+        ? reviewedTopicByQuestionIdV72
+        : reviewedTopicByQuestionIdV74
   )[id];
   return (
     !!topic &&

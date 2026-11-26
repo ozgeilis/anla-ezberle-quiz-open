@@ -204,7 +204,7 @@ test("dört rozet yalnızca gerçekten tamamlanmış bilgi turlarından kazanıl
   assert.equal(progress(games).best, 1000);
 });
 test("1500 kaynaklı yayın sorusunun kimlikleri, seçenekleri ve açıklamaları eksiksizdir", () => {
-  assert.equal(questions.length, 1500);
+  assert.equal(questions.length, 3000);
   assert.equal(questionById.size, questions.length);
   for (const q of questions) {
     assert.equal(q.options.length, 4);
@@ -430,7 +430,7 @@ test("v3 16 yeni taslak açar; eski v2 sonuçları ve puanlar değişmez", () =>
   assert.equal(knownQuestion(2, "pilot-quran-001"), false);
   assert.equal(knownQuestion(3, "pilot-quran-001"), true);
   const newGame = createSession("mixed", undefined, time);
-  assert.equal(newGame.bankVersion, 73);
+  assert.equal(newGame.bankVersion, 74);
   const sampled = questions.find((q) => q.id === "pilot-quran-001")!;
   const newView = gameQuestion(
     { bankVersion: 3, optionOrders: { [sampled.id]: sampled.options.map((o) => o.id) } },
@@ -473,7 +473,7 @@ test("v3 16 yeni taslak açar; eski v2 sonuçları ve puanlar değişmez", () =>
 });
 
 test("üretim yalnız onaylı sürümleri oynatır; v13 sorularıyla 500ü sahibince onaylı", () => {
-  assert.equal(playableQuestions().length, 1500);
+  assert.equal(playableQuestions().length, 3000);
   const sample = questions[0]!;
   const mixed: Question[] = [
     { ...sample, id: "draft", reviewStatus: "draft" },
@@ -485,7 +485,7 @@ test("üretim yalnız onaylı sürümleri oynatır; v13 sorularıyla 500ü sahib
     ["approved"],
   );
   assert.equal(playableQuestions("prototype", mixed).length, 3);
-  assert.equal(playableQuestions("prototype").length, 1500);
+  assert.equal(playableQuestions("prototype").length, 3000);
   assert.ok(playableQuestions("prototype").every((q) =>
     q.sources.length > 0 && q.sources.every((s) => s.checkStatus === "supported")
   ));
@@ -498,7 +498,7 @@ test("üretim yalnız onaylı sürümleri oynatır; v13 sorularıyla 500ü sahib
 
 test("v4 150 yeni taslak içerir; eski v3 bankası ve skorları değişmez", () => {
   assert.equal(newCandidatesV4.length, 150);
-  assert.equal(questions.length, 1500);
+  assert.equal(questions.length, 3000);
   assert.deepEqual(
     categories.map((c) => newCandidatesV4.filter((q) => q.categoryId === c.id).length),
     [40, 40, 35, 35],
@@ -539,7 +539,7 @@ test("v4 150 yeni taslak içerir; eski v3 bankası ve skorları değişmez", () 
   assert.equal(stats(restored.games[0]!).score, 1000);
   assert.equal(restored.games[0]?.bankVersion, 3);
   const current = complete(createSession("mixed", undefined, time));
-  assert.equal(current.bankVersion, 73);
+  assert.equal(current.bankVersion, 74);
   assert.equal(stats(current).score, 1000);
   assert.equal(stats(restored.games[0]!).score, 1000);
 });
@@ -556,7 +556,7 @@ test("v5 onay metaverisi v4 arşivini ve eski soru cevaplarını korur", () => {
   assert.equal(knownQuestion(4, "e150-quran-001"), true);
   assert.equal(knownQuestion(5, "e150-quran-001"), true);
   const game = complete(createSession("mixed", undefined, time));
-  assert.equal(game.bankVersion, 73);
+  assert.equal(game.bankVersion, 74);
   assert.equal(parseData(JSON.stringify({...emptyData(), games: [game]})).games.length, 1);
 });
 
@@ -618,7 +618,7 @@ test("v6 sûre âyet sayısı sorularında tahmin kalıbı yok; v5 geçmiş puan
   assert.equal(loaded.games[0]!.bankVersion, 5);
 });
 
-test("bütün 1500 soru arasında metin düzeyinde tekrar yoktur", () => {
+test("bütün 3000 soru arasında metin düzeyinde tekrar yoktur", () => {
   const norm = (v: string) => v.normalize("NFKC")
     .toLocaleLowerCase("tr-TR")
     .replace(/[\s\p{P}\p{S}]+/gu, " ")
@@ -629,7 +629,7 @@ test("bütün 1500 soru arasında metin düzeyinde tekrar yoktur", () => {
     assert.equal(seen.has(text), false, `Yinelenen soru: ${seen.get(text)} / ${q.id}`);
     seen.set(text, q.id);
   }
-  assert.equal(seen.size, 1500);
+  assert.equal(seen.size, 3000);
 });
 
 test("v4 kimlik, şık ve kaynak alanları normalize edilince de çakışmaz", () => {
@@ -675,7 +675,7 @@ test("v7: 20 yeni kaynaklı soruyla 236 soru, geçmiş v6 korunur", () => {
     assert.equal(view.explanation, q.explanation);
   }
   const game = complete(createSession("mixed", undefined, time));
-  assert.equal(game.bankVersion, 73);
+  assert.equal(game.bankVersion, 74);
   assert.equal(parseData(JSON.stringify({...emptyData(), games: [game]})).games.length, 1);
 });
 
@@ -700,7 +700,7 @@ test("v8: 20 yeni soruyla 256 kaynaklı soru ve v7 geçmişleri korunur", () => 
     assert.equal(view.explanation, q.explanation);
   }
   const round = complete(createSession("mixed", undefined, time));
-  assert.equal(round.bankVersion, 73);
+  assert.equal(round.bankVersion, 74);
   assert.equal(stats(round).score, 1000);
   assert.equal(parseData(JSON.stringify({ ...emptyData(), games: [round] })).games.length, 1);
 });
@@ -726,7 +726,7 @@ test("v9: 40 kaynaklı yeni soruyla 296 ve v8 skorları korunur", () => {
     assert.equal(view.explanation, q.explanation);
   }
   const round = complete(createSession("mixed", undefined, time));
-  assert.equal(round.bankVersion, 73);
+  assert.equal(round.bankVersion, 74);
   assert.equal(stats(round).score, 1000);
   assert.equal(parseData(JSON.stringify({ ...emptyData(), games: [round] })).games.length, 1);
 });
@@ -751,7 +751,7 @@ test("v10: 54 yeni öğretici soruyla 350 ve önceki bankalar korunur", () => {
     assert.equal(view.explanation, q.explanation);
   }
   const round = complete(createSession("mixed", undefined, time));
-  assert.equal(round.bankVersion, 73);
+  assert.equal(round.bankVersion, 74);
   assert.equal(parseData(JSON.stringify({ ...emptyData(), games: [round] })).games.length, 1);
 });
 
@@ -762,7 +762,7 @@ test("v11: 50 yeni soru, 400 erişilebilir içerik ve sürüm geçmişi", () => 
   assert.equal(newCandidatesV11.length, 50);
   assert.deepEqual(categories.map((c) => newCandidatesV11.filter((q) => q.categoryId === c.id).length), [13, 13, 12, 12]);
   assert.ok(bankV11.slice(0, bankV10.length).every((q, i) => q === bankV10[i]));
-  assert.equal(playableQuestions().length, 1500);
+  assert.equal(playableQuestions().length, 3000);
   assert.equal(new Set(bankV11.map((q) => q.id)).size, 400);
   for (const q of newCandidatesV11) {
     assert.equal(knownQuestion(10, q.id), false);
@@ -778,7 +778,7 @@ test("v11: 50 yeni soru, 400 erişilebilir içerik ve sürüm geçmişi", () => 
     assert.equal(view.explanation, q.explanation);
   }
   const round = complete(createSession("mixed", undefined, time));
-  assert.equal(round.bankVersion, 73);
+  assert.equal(round.bankVersion, 74);
   assert.equal(parseData(JSON.stringify({ ...emptyData(), games: [round] })).games.length, 1);
 });
 
@@ -790,7 +790,7 @@ test("v12: 50 yeni kaynaklı soru, 450 oynanabilir soru ve eski kayıtlar", () =
   assert.deepEqual(categories.map((c) => newCandidatesV12.filter((q) => q.categoryId === c.id).length), [13, 13, 12, 12]);
   assert.ok(bankV12.slice(0, bankV11.length).every((q, i) => q === bankV11[i]));
   assert.equal(new Set(bankV12.map((q) => q.id)).size, 450);
-  assert.equal(playableQuestions().length, 1500);
+  assert.equal(playableQuestions().length, 3000);
   for (const q of newCandidatesV12) {
     assert.equal(knownQuestion(11, q.id), false);
     assert.equal(knownQuestion(12, q.id), true);
@@ -806,7 +806,7 @@ test("v12: 50 yeni kaynaklı soru, 450 oynanabilir soru ve eski kayıtlar", () =
     assert.equal(view.explanation, q.explanation);
   }
   const round = complete(createSession("mixed", undefined, time));
-  assert.equal(round.bankVersion, 73);
+  assert.equal(round.bankVersion, 74);
   assert.equal(parseData(JSON.stringify({ ...emptyData(), games: [round] })).games.length, 1);
 });
 
@@ -818,7 +818,7 @@ test("v13: 50 yeni eğitim sorusu ile 500 toplam ve geçmiş sürümler korunur"
   assert.deepEqual(categories.map((cat) => newCandidatesV13.filter((q) => q.categoryId === cat.id).length), [13, 13, 12, 12]);
   assert.ok(bankV13.slice(0, bankV12.length).every((q, i) => q === bankV12[i]));
   assert.equal(new Set(bankV13.map((q) => q.id)).size, 500);
-  assert.equal(playableQuestions().length, 1500);
+  assert.equal(playableQuestions().length, 3000);
   for (const q of newCandidatesV13) {
     assert.equal(knownQuestion(12, q.id), false);
     assert.equal(knownQuestion(13, q.id), true);
@@ -834,7 +834,7 @@ test("v13: 50 yeni eğitim sorusu ile 500 toplam ve geçmiş sürümler korunur"
     assert.equal(view.explanation, q.explanation);
   }
   const round = complete(createSession("mixed", undefined, time));
-  assert.equal(round.bankVersion, 73);
+  assert.equal(round.bankVersion, 74);
   assert.equal(parseData(JSON.stringify({ ...emptyData(), games: [round] })).games.length, 1);
 });
 
@@ -936,7 +936,7 @@ test("v14: 500 sorunun yalnızca zorluk meta verisi düzenlenir; eski v13 korunu
   assert.equal(originalDisplay.difficulty, fromV13.difficulty);
   const completed = complete(createSession("mixed", undefined, time));
   const restored = parseData(JSON.stringify({ ...emptyData(), games: [completed] }));
-  assert.equal(restored.games[0]?.bankVersion, 73);
+  assert.equal(restored.games[0]?.bankVersion, 74);
   // Old records never acquire the new grade. Their bankVersion 13 remains valid.
   assert.ok(bankV13.length === 500 && bankV14.length === 500);
 });

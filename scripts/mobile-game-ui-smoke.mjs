@@ -240,7 +240,10 @@ try {
     await p.getByTestId("studio-intro").waitFor();
     await p.waitForTimeout(1800);
     assert(await p.getByTestId("studio-intro").isVisible());
-    assert.equal(await button(p, "Oyuna Başla").count(), 0);
+    assert.equal(
+      await button(p, "Hemen Oyna, kategorilerden karışık 10 soru").count(),
+      0,
+    );
     assert.equal(
       await p
         .getByTestId("studio-intro")
@@ -248,7 +251,7 @@ try {
       "rgb(0, 0, 0)",
     );
     releaseFonts();
-    await button(p, "Oyuna Başla").waitFor();
+    await button(p, "Hemen Oyna, kategorilerden karışık 10 soru").waitFor();
     assert.equal(await p.getByTestId("studio-intro").count(), 0);
     await ctx.close();
   }

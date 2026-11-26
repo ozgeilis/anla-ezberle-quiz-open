@@ -1,0 +1,755 @@
+{
+  "date": "2026-11-26",
+  "sourceSnapshot": "/private/tmp/anla-content-sources-20261125/typecheck-source-snapshot",
+  "verifiedWorktree": "/Users/ozge/.local/share/anla-quiz-build/anla-ezberle-content-3000-validated",
+  "files": [
+    {
+      "path": "scripts/build-bank-v74.ts",
+      "sha256": "611ff3e6b835938a34529fc8453eee1be7b0158024106c8d49fa832aa0027564"
+    },
+    {
+      "path": "scripts/build-editorial-audit.ts",
+      "sha256": "4f563df30ebc62542b7ecc065e4b70d6bed2bed2e9d84dfef8f78b1b01b95733"
+    },
+    {
+      "path": "scripts/build-editorial-v73.ts",
+      "sha256": "7c3f8a1ea6f6354c41585c234e5d52229da0c90968c7bb25a028fc9be1b29b20"
+    },
+    {
+      "path": "scripts/check-canonical-bank-local.ts",
+      "sha256": "f79a357907712b4a8a36b7842f55202a983a6d07e746a7b984bf7e8cf17e307b"
+    },
+    {
+      "path": "scripts/content-expansion-baseline.ts",
+      "sha256": "7a5a8d2bc4638fd56c2e23fa1c6de941a0c22d5f16cac722d8e07bdf4eaa0e3c"
+    },
+    {
+      "path": "scripts/live-content.ts",
+      "sha256": "9ba64e3489a5c3c071893358dd6c9f63e8217efb731ea4f23c639bb95a37f668"
+    },
+    {
+      "path": "scripts/online-content-export.ts",
+      "sha256": "c15795477fa4b294a5326e82dc7c12bc9477753598257cd9bf32763a6061b2b6"
+    },
+    {
+      "path": "src/content/questions/existing-patches-v74.ts",
+      "sha256": "496e14a878d1044f3735297f5dc9a7465707fdaea33a66d932233dbb31a11d2b"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-001-020.json",
+      "sha256": "6c0ceda4417878ad0be783095c646885577cad75c1a2725164ca6a5b567fb798"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-021-040.json",
+      "sha256": "3c2976a4c583598519d41143bdd70c7a5d496eebf1915d90ac0e843a33a05997"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-041-060.json",
+      "sha256": "ff58414bf40e5b8f7e7f817286a87f0804126fe2856beb56f507a1cbd5cf8360"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-061-080.json",
+      "sha256": "ff213639aebac7308849aa3f231e702ea02431ec36c8e6bb3614d6bd60732dd4"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-081-100.json",
+      "sha256": "8e432c0ea3498a913731b78293b67c33e9941ca3b45d3aa8f04a83bceeda421e"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-101-120.json",
+      "sha256": "0aed8d7ddbf11af16609e79f3a2b76da10191398c8aec1d2c91ae560723c8db5"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-121-140.json",
+      "sha256": "9e617647b6ec5496ae9e380a2ba57ac0f8511a6ea0fd16e0749d43c331c035a9"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-141-160.json",
+      "sha256": "db67c0d9214b603ae630b2b7a1b1ad34c4724550cac465707dad8c0e8bdcf8c6"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-161-180.json",
+      "sha256": "fb4fabeb205e0f4a71051a6cc32dfe53b06c028b836d4d124088b91833d1d359"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-181-200.json",
+      "sha256": "304cb161c5892d7586d73983d8e66f9aba5b65dc4b945eed770ba9586a267d20"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-201-220.json",
+      "sha256": "a9f59726780db91af124b3e87a70a982567a45f152160f307a8526c281e53dcf"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-221-232.json",
+      "sha256": "0c4ca885348a57f6fe9e13ab15e04d3afc43b3a244d65fcfdafea84ac66f8919"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-233-240.json",
+      "sha256": "1032e798f51ec5da5eb20e5e12bcbf5fdc4ace7b7516d39c189e2ada68a0f5d4"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-241-250.json",
+      "sha256": "3c7201cbba52e78cfe50dbb898b43d28c20d65317219efbe4200d8f32b47bfb8"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-251-270.json",
+      "sha256": "15379632f6ca4a81f243eebe0fe01e5a9139322e00769cfca9f5ad19573eb1c6"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-271-290.json",
+      "sha256": "81f2dabdba97b0effc76d71b79ac3250d065fa42caefffb4c43fd455c64fe73c"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-291-310.json",
+      "sha256": "deaac67d972281ce0c876789a559b6980ecadf84938731cc2f7ca823b926f39a"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-311-330.json",
+      "sha256": "f8ffc2f356925c10376a038fd1439a3b8eb906a3de8fe859a562f12e7756afe9"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-331-350.json",
+      "sha256": "0762a48aeda692cdad45af7995c3e18031b41796405989be74e8861c1256c14d"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/general-351-375.json",
+      "sha256": "8bd71b42432480bbf5e0a944522545cdc66699c5361ee0b8f3d665e09ec49021"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-001-020.json",
+      "sha256": "10482c3ec0d8c5bf1ac71f5be3391601ca3ef92a1fef55a3ebb76db8fe382ce9"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-021-040.json",
+      "sha256": "e0f46cd42e6472450ec71ed6798253eb57f6de2b6044430656ad32ed836b60a7"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-041-060.json",
+      "sha256": "ddc0aaaaef43bf0872578430d605381857714be4e17c4d475560466508973b7c"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-061-080.json",
+      "sha256": "8484216a9b9203964b362484a606ed3dd4e3c681b6174294461d88c5e6e17cbc"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-081-100.json",
+      "sha256": "e203f511b73f7e45943ba640065af7f7fe78a295c395b7238ec7fc0e210ad09a"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-101-120.json",
+      "sha256": "3c4ed8cec3e762c1828e726aaf52d7d3108cbe12d0d853f5af962a7e531e7dd6"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-121-140.json",
+      "sha256": "0f2394393941afbd8d9c6d00e54341fbfb8d4c203c670b28587d15042b4e0501"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-141-160.json",
+      "sha256": "17fbe3e0065b6076d457ddffe0ff2de8c828308d80057a6879f811b87ab87869"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-161-180.json",
+      "sha256": "4ebe55965374f2615b8aac582121ff7ec10e7f960acb460dae7d8a38df22333a"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-181-200.json",
+      "sha256": "5851485ec734c6fbcfec73f864b6a98d168937a38a6e0da78b086aaf306c0480"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-201-220.json",
+      "sha256": "20e49ee90ca5def626cb8d84544aa49f610f50d3c282cd2cceb081c6122d1b66"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-221-240.json",
+      "sha256": "60c9b22eaefe2cdb2c03c2a710b1140a7c991b1c33a87c5d571c6fe48db230f4"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-241-250.json",
+      "sha256": "66ea7f0c28a5cff1e3317555deffa8311d4db5438be3280a1a170aa2b9e18462"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-251-270.json",
+      "sha256": "148d2b432056a2a0246b5a33fd01a502efd6d12d85971e2b8946f2024699a74d"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-271-290.json",
+      "sha256": "c5e0eb194552567818b2b5fb69ea078136726dda0daa5f7fb61e6e0a22856385"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-291-310.json",
+      "sha256": "b57c7ad4ac2434f69964edea550b49689e2f8216c2bc580d1d5246cee1228db3"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-311-330.json",
+      "sha256": "737df5a66b04eb81fe5a2f1b8ee13d368dd8ab8d4a6416a0ce9ecc3612bed709"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-331-350.json",
+      "sha256": "951711ffd3673d831d6e175fbdf45ee7b964e66f1d1c2715e876ee9fa6e1f942"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/history-351-375.json",
+      "sha256": "b0605009eb740ff865804795d3dc7de12e75d22284b5ee71924fc073c04ead38"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/index.ts",
+      "sha256": "2251fbd4f2317cbfe0d3fe6f77ef73a3c5a8ddbb24ef691e34de838676113ba6"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-001-020.json",
+      "sha256": "8310108720bda674c1015fe2dcc08f114bda82330ccdeac21017a3a9c41ef22c"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-021-040.json",
+      "sha256": "70564db382746f84bdc0cf481b364f17d9ea1e09a37fd3374259db37bfb89e5f"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-041-060.json",
+      "sha256": "94f5db6d1c66b689e425114cbb56a584de854c46bf96afc3cc1c7cd67282bd85"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-061-080.json",
+      "sha256": "ee7afe78d0d8fa9d8af4f9ac81b8fc7aeb45c829b03a829ec67c832bfb7872a2"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-081-100.json",
+      "sha256": "c2fce63cafcd697671bd4068dbef82fa404002fb6292828df8bd8032e167faee"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-101-120.json",
+      "sha256": "136aaed77c628221a529605aa9e38211322b8b12eaa9716520ff4657604887fa"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-121-140.json",
+      "sha256": "cbf2fdd869bab6c27f72f1a1760f507df94cef98380d8e73e32868081e23182f"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-141-160.json",
+      "sha256": "dae0a3f36a6d0f88778c15133d679b496f26abe1793baad841e8ddfedc31b427"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-161-170.json",
+      "sha256": "65ce03ed02c0a23bfe4c8cce5e1f5cd3eb48c1445e846edbc4dd3eb9ff389728"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-171-180.json",
+      "sha256": "b3334f6eded213cc727bdf52064601a8a3d53cc6a293cd5e142e47b17c1cc2c3"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-181-200.json",
+      "sha256": "cd992a39c35e9d67ddfce5c63615a705294f7749bbf41e3774e96342685f3cc7"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-201-206.json",
+      "sha256": "a56467162e98d9a1b521d7d7b723a904f5f4a054ba9ff41d9c583ccfd02e981e"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-207-220.json",
+      "sha256": "c016979e3ecf8dac148974a9b28e2de64318bd2762bde89b4ba1e071d22e88d8"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-221-230.json",
+      "sha256": "dcff2e688b3985839331215acc7ac01c0b4f1a91405a9025187d1c4845b2a469"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-231-240.json",
+      "sha256": "d1eb45e0450ed6e2619319dda03a8ed60e60aa82eae7a0180cfc128ac1a4968d"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-241-250.json",
+      "sha256": "9987404fda4b030de4b83f4a538b569d3f24660aa42cde9aee2755547a70d57b"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-251-270.json",
+      "sha256": "05798a28a1bd8636dfc52b2b72774f6b1abc9e730f04c44e4d47192e64bc08a4"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-271-290.json",
+      "sha256": "4ea268065b05ce399e99ed8009acae6c09e4a5058cab6e1184f28258c1d81914"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-291-310.json",
+      "sha256": "acd7b71c25900ebc2b1f58530f4814c9641894ed8589a98c14ff4d9a66f8e3e3"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-313-328.json",
+      "sha256": "9affe1ba7b7b0a2bb188ddb0a8490ef2139ef687e61c97b0b3276c49bc5bbd76"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-331-350.json",
+      "sha256": "7159949bac144256823860192c5ae9080cc93b8e4334e2691440459be3ff48f9"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/prophets-351-375.json",
+      "sha256": "1f0cc2c32434dbd6611df3483364bb237c5d23d0e365fd594761c84c7a549cee"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-001-020.json",
+      "sha256": "894af8d2976523cb89f2eb99a41690b50c8b8ed8060aba26a27acaa442158157"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-021-040.json",
+      "sha256": "b6da33da36d9c5faa9f64780a802ed69168838dca8d01143fe3099554d6de040"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-041-060.json",
+      "sha256": "2a925a66f7a354619c3b054d6594023f83d549d10e787629bcac9297bdca6bfc"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-061-080.json",
+      "sha256": "444c6bc01f9b631e4d8bcfa5e565efb54c77d285db1ebf89553757d0c9817835"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-081-100.json",
+      "sha256": "0c28260fd1cb0b6527e8987b14b1fbd0e681fe5b936dcc29fa43e724d2c4b58b"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-101-120.json",
+      "sha256": "136272a3d5b8c6c43cc53e135c49bd46ff34e5bf9e26a0a04c00e48384c77159"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-121-140.json",
+      "sha256": "d8189d8b3d58aaa973d466e498d86017f1ac82c539ca5eef451caf20452c62fa"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-141-160.json",
+      "sha256": "5588636351eafc0b4aa20174facc88176c8cce4d14cb5a6990507a81c5309cba"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-161-180.json",
+      "sha256": "d279b0cbf0cdd7ef39e3eef557b9c36ebf7790cf2c3f30ccf2d87cfc42c98d9e"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-181-200.json",
+      "sha256": "a84f731980101905abeb2e3ebf71ec27acdcf81cb04180df597db0424bd3f2a3"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-201-220.json",
+      "sha256": "0efb337995e88b46939d63f8d24f32413c172e9ff29bb4e6646c6483b2cbedce"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-221-240.json",
+      "sha256": "bdbad89df96647e613f406112707dc8a0d35632b68c02c2c3c5b3ebde738e8f9"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-247-250.json",
+      "sha256": "168252352b054a3648daed013fa63af7ff290a0443dd496f173491b2558fbb77"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-251-270.json",
+      "sha256": "f22d59d0412449550e5f52caf9590d69fc250b706151db6c653f3dc372145e8b"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-271-281.json",
+      "sha256": "343dd1674f82b6a253684a34b46ae099e3c1bc0e3350b9329948badb71e72b4f"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-282-290.json",
+      "sha256": "55dbb9f759aa7230f5d51e747ed80a63f70f88a9a6fb52dcc9f03577fdd5e224"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-291-310.json",
+      "sha256": "a18205ad5174c1b90c64446ddabb6eacda85b7323da3055f5f3ed2fd10420eb0"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-311-320.json",
+      "sha256": "974d29c6fcb2e39f0bf440b49d25eb19b2ccce7cd4513c015febab19434e8a82"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-321-330.json",
+      "sha256": "5b54ffd309db9188d1031f4c0c306f84179054f20cd5ddc246d4ca54966710b2"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-331-350.json",
+      "sha256": "60740f3dceebc0495f11584b574285f01b5b4020e5262ab2306aa92fe6ef649a"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-351-363.json",
+      "sha256": "c0f3db8572e11c426a94c070d6f4099489b37f1c4ff6299fc02ae5ead84b20f4"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-364-368.json",
+      "sha256": "34b082c52bc787f1b3a3396514570d97d235ebfb559b6d4ca1d2986b12f621e1"
+    },
+    {
+      "path": "src/content/questions/expansion-v74/quran-369-375.json",
+      "sha256": "77a9f198447087852d87ce99b47b91edbea0801e12b64fafbe5a6ebf3eb19e4b"
+    },
+    {
+      "path": "src/content/questions/index.ts",
+      "sha256": "8e4c20c0020216b538a1f33a7719da24c54dd01dbeb57b2ae02921513096e518"
+    },
+    {
+      "path": "src/content/questions/learning-topics-v74.candidate.ts",
+      "sha256": "8a64f7febaf52cd12c39e94ce0351a4861fe7af62c56a14dc48b883229320f29"
+    },
+    {
+      "path": "src/content/questions/learning-topics-v74.ts",
+      "sha256": "4c09a667995af7e87713e8384f6bb120e91a4c8c646eddc53f9f42cf7ba6a8b6"
+    },
+    {
+      "path": "src/content/questions/questions-v74.candidate.ts",
+      "sha256": "937695e1741ebcd20de6b14c5472848842ebd767858313acf299392f23f3fad1"
+    },
+    {
+      "path": "src/content/questions/questions-v74.ts",
+      "sha256": "545fb5ae5015820d263073ef825d39a10375bfc30839f40894549b5054d118ec"
+    },
+    {
+      "path": "src/content/questions/registry.ts",
+      "sha256": "1e85918d4fa67870587cb7e120faa3a80877d29dcd40fae5a31f452bd0566ce6"
+    },
+    {
+      "path": "src/domain/game/learning.ts",
+      "sha256": "874ed9e5cf8b40d0398415bb75d5dffcadae064224d0c900b2cfc34afc481c2c"
+    },
+    {
+      "path": "src/domain/game/play-categories.ts",
+      "sha256": "d7d3aa81a0d40b4efde7cfbb5722368e6478a6201fea7f853d7f0e084d4bffc5"
+    },
+    {
+      "path": "src/storage/schema.ts",
+      "sha256": "40bbce3bceccb13a4b4234897487e4b3a949aad69b70c9d7cad98014ff829af0",
+      "initialCopySha256": "2960ac092b93b36317cf2ef130c65a7a9228d96058c6c1a02ee91e8eb554339c",
+      "postCopyValidation": "TypeScript, targeted lint and relevant regression tests in stable worktree"
+    },
+    {
+      "path": "tests/audit-published-questions.test.ts",
+      "sha256": "96fb7430be48f1eb32f16a36e68f30cbfcc52d672a33e4077d43c16241b73099"
+    },
+    {
+      "path": "tests/bank-integrity-600.test.ts",
+      "sha256": "0c000563d558abfcfb9f72a85a47c1006cfaccaf3dd14d65b11f85bad8ca9554"
+    },
+    {
+      "path": "tests/broad-categories-history.test.ts",
+      "sha256": "7b702e7c3422fe94942fee9dfc7c2746df2a40522cf0ef7e66e1083d636ed0ab"
+    },
+    {
+      "path": "tests/canonical-online-bank.test.ts",
+      "sha256": "79bf5f216139a71ef1e7e4b633d1b93dc939affc7ba46ef4fd42abc77a0d0abf"
+    },
+    {
+      "path": "tests/canonical-questions.test.ts",
+      "sha256": "ab07fdc629da79841184cff7728f2a3701ed3fe7b289d8517aed896678aa3ab4"
+    },
+    {
+      "path": "tests/category-visibility.test.ts",
+      "sha256": "5c0cadd522b974baa1ae913721ed0cd4e2d1ed449ab6daa86c1d027e302df89c"
+    },
+    {
+      "path": "tests/content-expansion-baseline.test.ts",
+      "sha256": "d9363766246f8debd14eaeeede881c1a7492281b99aba3524da67035d0ea3b74"
+    },
+    {
+      "path": "tests/content-expansion-integrity.test.ts",
+      "sha256": "ec68b78870a895db6e4efe72f11ee006752ac0af6d30aff90d2a2876725b1577"
+    },
+    {
+      "path": "tests/editorial-audit.test.ts",
+      "sha256": "ebdb2dfbab39d6e3543dcdd04fb6ef4f7c4a94ad9f5cd1fe47f4fc66d5700c0e"
+    },
+    {
+      "path": "tests/editorial-v73.test.ts",
+      "sha256": "17d5f3f06e3201a8e8763d9e7e92de24cae79f55c7bbf832361e8be5777a69ca"
+    },
+    {
+      "path": "tests/game.test.ts",
+      "sha256": "c3f4f647799b179e7b4e7479f88fe8832eab8b70ea318c320587acaba4927e07"
+    },
+    {
+      "path": "tests/kurban-eid-editorial-v2.test.ts",
+      "sha256": "f8029210359bb5811200e092eb91d947450ef68e8db871f4a1c81a80e561d0bd"
+    },
+    {
+      "path": "tests/learning-content.test.ts",
+      "sha256": "eaf0f3d82cb1b2f5a2c2c53a5f68e8a2e4e1d88bc7c4d713650fc20bcae2468e"
+    },
+    {
+      "path": "tests/learning-play.test.ts",
+      "sha256": "dc166b6bbf56805ebb814ffb2a25df79c1ad298e594eac6589a23716f248ff11"
+    },
+    {
+      "path": "tests/live-rooms.test.ts",
+      "sha256": "472bf4ac1b7a5be6ef5dac46fa1b2f1e4b549c1f66cbf447ca7ec37e3a367082"
+    },
+    {
+      "path": "tests/online-content.test.ts",
+      "sha256": "779a492493314c00dae4ad864590df05d94140f1907d613559ba35d047c5f667"
+    },
+    {
+      "path": "tests/player-stages.test.ts",
+      "sha256": "3946663ec5229cd61c2557556d87308e7e2e8631cf0dcb397f64c03b7484c9e2"
+    },
+    {
+      "path": "tests/preparation.test.ts",
+      "sha256": "f50ceffb6ce4596f1713231a8f041701971d62fa08013f5b9737d554d343d19a"
+    },
+    {
+      "path": "tests/questions-v42.test.ts",
+      "sha256": "96df8804e3831d5a1a3d4dfd0922d05cfa5eff15c7406415f015108efac403ed"
+    },
+    {
+      "path": "tests/questions-v43.test.ts",
+      "sha256": "f79d95a5c901e8cdb7d16ea4a95617864e0b0322d8df879df1f63ee1642515d4"
+    },
+    {
+      "path": "tests/questions-v44.test.ts",
+      "sha256": "7586f1ca70c790d0dfc7aff478e059f1d9a37c13d7db4e9f62a0084f2b76a362"
+    },
+    {
+      "path": "tests/questions-v45.test.ts",
+      "sha256": "8d01739e3e43a1450ffa264ca9997f0991923c663bd5a449458eaf9218bbe6d2"
+    },
+    {
+      "path": "tests/questions-v46.test.ts",
+      "sha256": "ba7da76168b4bf45ff44f32828a5544d19168dd62a989cc7ac0ce6bcc53be0c4"
+    },
+    {
+      "path": "tests/questions-v47.test.ts",
+      "sha256": "c00870684430a8a744f6cbfa195ac8aa3de9ae0f6574070465be11b30a61b15d"
+    },
+    {
+      "path": "tests/questions-v48.test.ts",
+      "sha256": "9a705108aed43a0881d17433f9ede1ec9750cbc62a8be1ea2d26266e21d3702a"
+    },
+    {
+      "path": "tests/questions-v49.test.ts",
+      "sha256": "f20ef2f70a2650e015b3be834d58f7b6c69ce342cc3ae2148fd47245f2dad8a3"
+    },
+    {
+      "path": "tests/questions-v50.test.ts",
+      "sha256": "4fa27641d592769af879fa7e155a4bc0c5b2a53e3d2d2ee2f5f89fa075e9c246"
+    },
+    {
+      "path": "tests/questions-v51.test.ts",
+      "sha256": "e9c31a8e6113459ea39889cc304d3e81dcd796918ba92ce3b793d5edb9678763"
+    },
+    {
+      "path": "tests/questions-v52.test.ts",
+      "sha256": "97d38f5b41b6402574766b295a50b802daccdbb5464c24afee084885597fe03b"
+    },
+    {
+      "path": "tests/questions-v53.test.ts",
+      "sha256": "0e471bff046e617e6d03c10502e856a4129bfc6536cf2d68b4eeb5e0c2c42fdb"
+    },
+    {
+      "path": "tests/questions-v54.test.ts",
+      "sha256": "764d9a53a361d5aeea6937d09fb32a674837bce4b85323b7ae2554f6e60e8378"
+    },
+    {
+      "path": "tests/questions-v55.test.ts",
+      "sha256": "53213d03227e28ada50ca1667dc7961324aca7a13feed0939232bedcb71691a8"
+    },
+    {
+      "path": "tests/questions-v56.test.ts",
+      "sha256": "066bfd67d1d6e9bb0c2d4030fbdf868e81197447d7474dbcaa0f5b18377e161f"
+    },
+    {
+      "path": "tests/questions-v57.test.ts",
+      "sha256": "97c0033e595dba8f6a9cba8aa19b050b8b9a9f321368a353d2e8c1f97ec20505"
+    },
+    {
+      "path": "tests/questions-v58.test.ts",
+      "sha256": "743c7cd25a8a79dc194df299b05a6661047f5a829a7bf4d5479f577097994457"
+    },
+    {
+      "path": "tests/questions-v59.test.ts",
+      "sha256": "8b73e6769c5fc6bc68fb6b00ec7e644c954be94770669d0920b09395833115e1"
+    },
+    {
+      "path": "tests/questions-v60.test.ts",
+      "sha256": "77c1301dabf547ba1708c3f3de3d2a2290250ffdc6b0d85c6d0f94991bd27cc7"
+    },
+    {
+      "path": "tests/questions-v61.test.ts",
+      "sha256": "cc4b1252cdd4f32fb02b778057c8b9177c3b517224ac5bc9286425c4c0f7d343"
+    },
+    {
+      "path": "tests/questions-v62.test.ts",
+      "sha256": "457ae8db22d156d41604097b9d0cba049012fa9429b4c4cd31a82438fbbcd693"
+    },
+    {
+      "path": "tests/questions-v63.test.ts",
+      "sha256": "c1fadc763f2369f8970908a1c9562ddbb4de4b87a9ea94f40bb4e2ad947d2b1e"
+    },
+    {
+      "path": "tests/questions-v64.test.ts",
+      "sha256": "0067bd82e5c0b6521e028b4daf2d0c4d720cfe2416c2764602573d3437764898"
+    },
+    {
+      "path": "tests/questions-v65.test.ts",
+      "sha256": "a08dcaa03f517dc8a3e6b1a4e7d2e3dd0327b959262d99bdd8cc29e47d67b1ee"
+    },
+    {
+      "path": "tests/questions-v66.test.ts",
+      "sha256": "d74119fc7bd345ebfa6febacba2712a104c29b860b7c7ca1f38635244b1d06eb"
+    },
+    {
+      "path": "tests/questions-v67.test.ts",
+      "sha256": "224a37ef3f5cc2a25924e9de12e7460d14f46f982d20af665dc38c10faa2480e"
+    },
+    {
+      "path": "tests/questions-v68.test.ts",
+      "sha256": "92e55cecdd467a727c1574224eab78bfde17db438adc0ee6f972a0c7cc94485f"
+    },
+    {
+      "path": "tests/questions-v69.test.ts",
+      "sha256": "f10554c7ae37a5e731fea41f102dde18ddaad4b57836363f2c92d7696963cd78"
+    },
+    {
+      "path": "tests/questions-v70.test.ts",
+      "sha256": "802eade2deeb87374786036b7e19b300cb8066da83a06cb3d2bb31801a132760"
+    },
+    {
+      "path": "tests/questions-v71.test.ts",
+      "sha256": "3a9271e90a7059fe4132403320fc66f79b76f11b3829888a798af8c2c6bee5ae"
+    },
+    {
+      "path": "tests/ramadan-curated-editorial-v2.test.ts",
+      "sha256": "80f68591845de7f16266ab3bfd9667a50c318c2bfd4ecc7bd5d99dc83452d86f"
+    },
+    {
+      "path": "tests/ramadan-easy-editorial.test.ts",
+      "sha256": "a427779f41f6901e1e09e96357bdb85c1985af56d32fedc0b6ac5ed56c2e52ad"
+    },
+    {
+      "path": "tests/religious-source-audit.test.ts",
+      "sha256": "0d6538a0a161a8d82a94e3e6163cb75a7474af8212b456c57da023fbb560b561"
+    },
+    {
+      "path": "tests/seasonal-content.test.ts",
+      "sha256": "a951693bcfc4e31e2cf68eebbab9608f58baa398f4798c5324257ebc3a2b0697"
+    },
+    {
+      "path": "tests/source-checked-release-v3.test.ts",
+      "sha256": "d9c9696353d0ffc4b59254755c8ad2640192428cd82fadb8b5674d436951ec98"
+    },
+    {
+      "path": "tests/source-review-batch02.test.ts",
+      "sha256": "35f9d8d91fe5f24d64c6a23751f17ef59f316d7622fb17b2061bbe8f09032bee"
+    },
+    {
+      "path": "tests/source-review-batch30.test.ts",
+      "sha256": "56d89c8459a3d7f17f26a324a7aa9e38634182733f7c1447615b8f60e07f74c0"
+    },
+    {
+      "path": "tests/topic-review-v71.test.ts",
+      "sha256": "f71e7fa58ffa76a5e0c8a35974dc2781c3554f02bbf884f01f69edcd55ddac82"
+    },
+    {
+      "path": "tests/v15-publish.test.ts",
+      "sha256": "d543ee76840d1e557addcedd2c43fcc4633f6bfc3ca4aebe3360f3d069810834"
+    },
+    {
+      "path": "tests/v16-release.test.ts",
+      "sha256": "f5ca9af6bc822397c78e247cbf197d0dadbe750e16dec8cce8f9655f2e87e6e9"
+    },
+    {
+      "path": "tests/v17-release.test.ts",
+      "sha256": "600d67cb10457143e67a37eef6af58ae969255bc1d8db2e4034b3ab23438079d"
+    },
+    {
+      "path": "tests/v18-release.test.ts",
+      "sha256": "63f987fe9f39fc9b1855adf7f5a0e33d2f88e238e5165aa5895f8b8e88c87469"
+    },
+    {
+      "path": "tests/v19-release.test.ts",
+      "sha256": "52673cab54bda28bca1afb7b13f08312065453740de835c5b60d0a3d14b53e9c"
+    },
+    {
+      "path": "tests/v20-release.test.ts",
+      "sha256": "410832e5b8287d826d71379150428c1f4ed5286388aa045e76611eab475c71ec"
+    },
+    {
+      "path": "tests/v21-release.test.ts",
+      "sha256": "a0db6c7f0e23d3c96208168c243900511ee11505d91a670b374b9c9fb073268f"
+    },
+    {
+      "path": "tests/v22-release.test.ts",
+      "sha256": "8b62789449950d0f3258f4d40df5fd532e2065b0108029b47cb4948e3fcb76ef"
+    },
+    {
+      "path": "tests/v23-release.test.ts",
+      "sha256": "6525a13bc41a593668310a07a2d6631458ab45f03f64f582cba2007a3960ecd9"
+    },
+    {
+      "path": "tests/v24-release.test.ts",
+      "sha256": "354b2c358b7fcb0ec77d54e96d88ed3e5447bc58a5de14b449faab29bdabee73"
+    },
+    {
+      "path": "tests/v25-release.test.ts",
+      "sha256": "2fa7388aaf7c35ce4d5b604336862a5466dbb770b2a85b6612ce7b918bd3b7dc"
+    },
+    {
+      "path": "tests/v26-release.test.ts",
+      "sha256": "7c426e8e8bc528b2ace303bbb327e8f50401f385f6034fb71a68638fc49c8b01"
+    },
+    {
+      "path": "tests/v27-release.test.ts",
+      "sha256": "c28c5826e4241f766c20bb28a6f902b7d37fcf22dc68801977731722bd85d336"
+    },
+    {
+      "path": "tests/v28-release.test.ts",
+      "sha256": "eae4490203a37d1ab9200c804a823f6d4d298693d51287a5686c0d072dc3a963"
+    },
+    {
+      "path": "tests/v29-release.test.ts",
+      "sha256": "7c2511802081201e34de88bec93081cfb81483eb9677b3316059c6e15a0046eb"
+    },
+    {
+      "path": "tests/v30-release.test.ts",
+      "sha256": "2f733a732a6da54efdc1d8007ef0072798f91fcd8c6965884cd3d59230b87de5"
+    },
+    {
+      "path": "tests/v31-release.test.ts",
+      "sha256": "b68c677cc00a0b1665ed0dca67a098ec48f47160cd6765966c234b028e12504c"
+    },
+    {
+      "path": "tests/v32-source-corrections.test.ts",
+      "sha256": "b76d6e309db06338d5e37e88bd460fada86fe6c8bca860bbbcbc3143adcc1f52"
+    },
+    {
+      "path": "tests/v41-source-corrections.test.ts",
+      "sha256": "081f9bf95ae2e1c82c532d6dc2f0d468c7491ed17cf074d62a8389e04b48db68"
+    },
+    {
+      "path": "tests/v72-release.test.ts",
+      "sha256": "880ba5c03820234658b5d38c292990ddae718a931b7559aff8c88a91ad4fd423"
+    },
+    {
+      "path": "tests/v73-release.test.ts",
+      "sha256": "85eafe3c2f8bedd9c7ee5370be78b3d3510252d3a111d6d3e0ddf619c9d95fc2"
+    },
+    {
+      "path": "tests/v74-integration.test.ts",
+      "sha256": "fa471784e9270f2bd092b6af6e84cc3a39d3c6fd7816d8abf7616585a0464782",
+      "initialCopySha256": "3d4640da6ecc32ceefcff09c6a01b74e23e6619ec7310e9054318946768362bc",
+      "postCopyValidation": "TypeScript, targeted lint and relevant regression tests in stable worktree"
+    },
+    {
+      "path": "src/features/online/types.ts",
+      "sha256": "5df4b2683dfc32ae8692fafaf370d4ab23f4c7cd52de88da250fac6d29060da7",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    },
+    {
+      "path": "src/features/online/OnlineScreen.tsx",
+      "sha256": "149309f73cfcccfa1721e052b8bedb1dca433a001b715db571729e82a5a0b615",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    },
+    {
+      "path": "scripts/live-integration.mjs",
+      "sha256": "2db9e296e8280a608ac370836c042417121cd69ced284465c156e18a936f5255",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    },
+    {
+      "path": "scripts/consolidate-questions.ts",
+      "sha256": "d069a3015deff98f0eebc39e1a01d3bd7b18ab6b86a9f4ea6a18e23bd75b77f5",
+      "postCopyValidation": "TypeScript, targeted lint and relevant online/canonical regression tests"
+    }
+  ],
+  "method": "Byte-for-byte copy of tested tracked source plus explicit working overlays. Desktop worktree and all other worktrees preserved.",
+  "scope": "Initial validated source copy plus final source/test refinements verified in this stable worktree. Final SHA-256 values below describe the committed implementation, not an assertion that later edits were present in the earlier temporary snapshot.",
+  "initialCopiedFiles": 180,
+  "finalSourceFiles": 184
+}

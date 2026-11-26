@@ -1,0 +1,2540 @@
+{
+  "date": "2026-11-26",
+  "algorithm": "TF-IDF cosine over normalised stems and double-weighted keys, Turkish accent folding and six-character token stems; top three candidates per record, undirected deduplication. Screening only, not automatic semantic proof.",
+  "screenedRecords": 3000,
+  "directedSuggestions": 9000,
+  "uniqueSuggestions": 6578,
+  "manualPairReviewCount": 168,
+  "manualThreshold": 0.5,
+  "confirmedPairsInThisReview": 23,
+  "furtherReviewPairs": 4,
+  "runtimeModified": false,
+  "pairs": [
+    {
+      "score": 0.879,
+      "a": {
+        "id": "pilot-prophets-001",
+        "question": "Kur’an’da Medyen halkına gönderildiği bildirilen peygamber kimdir?",
+        "answer": "Hz. Şuayb"
+      },
+      "b": {
+        "id": "q67-ankebut-36",
+        "question": "Ankebût 29/36'da Medyen halkına gönderilen peygamber kimdir?",
+        "answer": "Şuayb"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Shuayb sent to Medyen; same identity under two verse labels."
+    },
+    {
+      "score": 0.8301,
+      "a": {
+        "id": "pilot-history-001",
+        "question": "Bedir Gazvesi, hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "2."
+      },
+      "b": {
+        "id": "e150-history-020",
+        "question": "Uhud Gazvesi hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "3"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.8145,
+      "a": {
+        "id": "e150-quran-031",
+        "question": "Kehf suresi kaç âyetten oluşur?",
+        "answer": "110"
+      },
+      "b": {
+        "id": "e150-quran-033",
+        "question": "Meryem suresi kaç âyetten oluşur?",
+        "answer": "98"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.8058,
+      "a": {
+        "id": "e150-quran-033",
+        "question": "Meryem suresi kaç âyetten oluşur?",
+        "answer": "98"
+      },
+      "b": {
+        "id": "e150-quran-035",
+        "question": "Tâhâ suresi kaç âyetten oluşur?",
+        "answer": "135"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.8012,
+      "a": {
+        "id": "q69-abdullahbabbas-rivayet",
+        "question": "TDV'ye göre Abdullah b. Abbas'ın rivayet ettiği hadis sayısı kaçtır?",
+        "answer": "1660"
+      },
+      "b": {
+        "id": "q69-abdullahbomerbhattab-hadis",
+        "question": "TDV'ye göre Abdullah b. Ömer'in rivayet ettiği hadis sayısı kaçtır?",
+        "answer": "2630"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7997,
+      "a": {
+        "id": "e150-quran-031",
+        "question": "Kehf suresi kaç âyetten oluşur?",
+        "answer": "110"
+      },
+      "b": {
+        "id": "e150-quran-035",
+        "question": "Tâhâ suresi kaç âyetten oluşur?",
+        "answer": "135"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7997,
+      "a": {
+        "id": "e150-quran-033",
+        "question": "Meryem suresi kaç âyetten oluşur?",
+        "answer": "98"
+      },
+      "b": {
+        "id": "e150-quran-037",
+        "question": "Enbiyâ suresi kaç âyetten oluşur?",
+        "answer": "112"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7936,
+      "a": {
+        "id": "e150-quran-031",
+        "question": "Kehf suresi kaç âyetten oluşur?",
+        "answer": "110"
+      },
+      "b": {
+        "id": "e150-quran-037",
+        "question": "Enbiyâ suresi kaç âyetten oluşur?",
+        "answer": "112"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7916,
+      "a": {
+        "id": "e150-history-003",
+        "question": "TDV’nin genel Hicaz coğrafyası anlatımına göre Mekke, Arap yarımadasının hangi tarihî bölgesinde yer alır?",
+        "answer": "Hicaz"
+      },
+      "b": {
+        "id": "e150-history-008",
+        "question": "Medine şehri Arap yarımadasının hangi bölgesinde yer alır?",
+        "answer": "Hicaz"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7851,
+      "a": {
+        "id": "e150-quran-035",
+        "question": "Tâhâ suresi kaç âyetten oluşur?",
+        "answer": "135"
+      },
+      "b": {
+        "id": "e150-quran-037",
+        "question": "Enbiyâ suresi kaç âyetten oluşur?",
+        "answer": "112"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7782,
+      "a": {
+        "id": "v11-prophets-013",
+        "question": "Hûd 11/64'te Hz. Sâlih'in kavmine Allah'ın işareti olarak gösterdiği hayvan hangisidir?",
+        "answer": "Dişi deve"
+      },
+      "b": {
+        "id": "q61-salihpeygamber-deve",
+        "question": "Hz. Sâlih'e verilen ve Semûd kavmine gösterilen mûcize hangi hayvanla ilgilidir?",
+        "answer": "Dişi deve"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Salih’s camel sign; same tested fact."
+    },
+    {
+      "score": 0.7764,
+      "a": {
+        "id": "v10-quran-009",
+        "question": "Kur'an'ın adlarından 'furkān' kelimesinin anlamı hangisidir?",
+        "answer": "Hak ile bâtılı ayıran"
+      },
+      "b": {
+        "id": "q54-tarik-013",
+        "question": "Târık 86/13’te Kur’an’ın hangi işlevi açıkça vurgulanır?",
+        "answer": "Hak ile bâtılı ayıran"
+      },
+      "decision": "further-editorial-review",
+      "reason": "Furqan name definition versus fasl function: related same right/wrong distinction; inspect source and prefer a clearly different replacement."
+    },
+    {
+      "score": 0.7674,
+      "a": {
+        "id": "v11-history-010",
+        "question": "Keşfü'z-zunûn adlı kapsamlı bibliyografya eserini kim yazmıştır?",
+        "answer": "Kâtib Çelebi"
+      },
+      "b": {
+        "id": "q59-katib-dil",
+        "question": "Kâtib Çelebi Keşfü'z-Zunûn adlı bibliyografya eserini hangi dilde yazmıştır?",
+        "answer": "Arapça"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7546,
+      "a": {
+        "id": "v10-history-011",
+        "question": "Yermük Savaşı'nda Müslüman ordularının karşısındaki büyük güç hangisiydi?",
+        "answer": "Bizans İmparatorluğu"
+      },
+      "b": {
+        "id": "learn-history-004",
+        "question": "Malazgirt Savaşı'nda Büyük Selçukluların karşısındaki devlet hangisiydi?",
+        "answer": "Bizans İmparatorluğu"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7501,
+      "a": {
+        "id": "q68-ebudavud-vefat",
+        "question": "Kütüb-i Sitte müellifi Ebû Dâvûd es-Sicistânî'nin milâdî vefat yılı kaçtır?",
+        "answer": "889"
+      },
+      "b": {
+        "id": "q68-ibnmace-vefat",
+        "question": "Kütüb-i Sitte müellifi İbn Mâce'nin milâdî vefat yılı kaçtır?",
+        "answer": "887"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7398,
+      "a": {
+        "id": "pilot-quran-002",
+        "question": "İhlâs suresi kaç âyetten oluşur?",
+        "answer": "4"
+      },
+      "b": {
+        "id": "e150-quran-033",
+        "question": "Meryem suresi kaç âyetten oluşur?",
+        "answer": "98"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7342,
+      "a": {
+        "id": "pilot-quran-002",
+        "question": "İhlâs suresi kaç âyetten oluşur?",
+        "answer": "4"
+      },
+      "b": {
+        "id": "e150-quran-031",
+        "question": "Kehf suresi kaç âyetten oluşur?",
+        "answer": "110"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7263,
+      "a": {
+        "id": "pilot-quran-002",
+        "question": "İhlâs suresi kaç âyetten oluşur?",
+        "answer": "4"
+      },
+      "b": {
+        "id": "e150-quran-035",
+        "question": "Tâhâ suresi kaç âyetten oluşur?",
+        "answer": "135"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7256,
+      "a": {
+        "id": "v10-prophets-011",
+        "question": "Kur’an Yolu mealinde Kasas 28/30’da Mûsâ’ya hitabın geldiği yer vadinin hangi tarafıdır?",
+        "answer": "Sağ tarafı"
+      },
+      "b": {
+        "id": "q67-kasas-30",
+        "question": "Kasas 28/30'da Mûsâ'ya vadinin hangi tarafından hitap edildiği belirtilir?",
+        "answer": "Sağ tarafından"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Musa called from right side of valley in Kasas 28/30."
+    },
+    {
+      "score": 0.7238,
+      "a": {
+        "id": "quran-011",
+        "question": "Kevser suresi kaç ayetten oluşur?",
+        "answer": "3"
+      },
+      "b": {
+        "id": "e150-quran-033",
+        "question": "Meryem suresi kaç âyetten oluşur?",
+        "answer": "98"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7224,
+      "a": {
+        "id": "q68-muslim-vefat",
+        "question": "Muhaddis Müslim b. Haccâc'ın milâdî vefat yılı kaçtır?",
+        "answer": "875"
+      },
+      "b": {
+        "id": "q68-tirmizi-vefat",
+        "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
+        "answer": "892"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7183,
+      "a": {
+        "id": "quran-011",
+        "question": "Kevser suresi kaç ayetten oluşur?",
+        "answer": "3"
+      },
+      "b": {
+        "id": "e150-quran-031",
+        "question": "Kehf suresi kaç âyetten oluşur?",
+        "answer": "110"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7137,
+      "a": {
+        "id": "q52-fitre-017",
+        "question": "Hanefî mezhebine göre fitre vermenin dinî hükmü nedir?",
+        "answer": "Vâcip"
+      },
+      "b": {
+        "id": "new74-general-026",
+        "question": "Hanefî mezhebinde vitir namazının hükmü nedir?",
+        "answer": "Vâcip"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7116,
+      "a": {
+        "id": "e150-prophets-038",
+        "question": "Âd kavmine gönderilen peygamber kimdir?",
+        "answer": "Hûd"
+      },
+      "b": {
+        "id": "q61-hud-ad",
+        "question": "Hz. Hûd Kur'an'a göre hangi kavme peygamber gönderilmiştir?",
+        "answer": "Âd kavmine"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Hud and Ad tribe; definition reversal."
+    },
+    {
+      "score": 0.7106,
+      "a": {
+        "id": "quran-011",
+        "question": "Kevser suresi kaç ayetten oluşur?",
+        "answer": "3"
+      },
+      "b": {
+        "id": "e150-quran-035",
+        "question": "Tâhâ suresi kaç âyetten oluşur?",
+        "answer": "135"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7086,
+      "a": {
+        "id": "q48-yusuf-030",
+        "question": "Kur’an'da Hz. Yûsuf'un adı kaç defa geçer?",
+        "answer": "Yirmi yedi"
+      },
+      "b": {
+        "id": "q52-zekat-012",
+        "question": "TDV'ye göre Kur’an'da zekât kaç âyette namazla birlikte anılır?",
+        "answer": "Yirmi yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.7021,
+      "a": {
+        "id": "learn-history-007",
+        "question": "Kudüs'ün 1187'de Haçlılardan geri alınması hangi hükümdarla ilişkilidir?",
+        "answer": "Selâhaddîn-i Eyyûbî"
+      },
+      "b": {
+        "id": "learn-history-009",
+        "question": "Eyyûbîler hânedanının kurucusu kimdir?",
+        "answer": "Selâhaddîn-i Eyyûbî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6962,
+      "a": {
+        "id": "new74-general-114",
+        "question": "Hadislerde az kullanılan veya anlaşılması güç kelimeleri açıklayan çalışma alanı hangisidir?",
+        "answer": "Garîbü’l-hadîs"
+      },
+      "b": {
+        "id": "new74-quran-241",
+        "question": "Kur’an’da az kullanıldığı için anlaşılması güç kelimeleri açıklayan ilim dalı hangisidir?",
+        "answer": "Garîbü’l-Kur’ân"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6884,
+      "a": {
+        "id": "learn-women-025",
+        "question": "Cüveyriye bint Hâris'in Müslüman olmadan önceki adı hangisidir?",
+        "answer": "Berre"
+      },
+      "b": {
+        "id": "learn-women-028",
+        "question": "Hz. Peygamber'in hanımlarından Meymûne bint Hâris'in önceki adı neydi?",
+        "answer": "Berre"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6802,
+      "a": {
+        "id": "e150-history-027",
+        "question": "İkinci Akabe Biatı hangi milâdî yılda yapılmıştır?",
+        "answer": "622"
+      },
+      "b": {
+        "id": "q56-akabe-yil1",
+        "question": "Birinci Akabe Biatı hangi milâdî yılda gerçekleşmiştir?",
+        "answer": "621"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6785,
+      "a": {
+        "id": "v10-quran-001",
+        "question": "Neml sûresine adını veren 'neml' sözcüğü hangi canlıyı ifade eder?",
+        "answer": "Karınca"
+      },
+      "b": {
+        "id": "q66-neml-name",
+        "question": "Neml sûresinin adını aldığı 'neml' kelimesinin anlamı nedir?",
+        "answer": "Karınca"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Neml means ant; same definition."
+    },
+    {
+      "score": 0.6783,
+      "a": {
+        "id": "e150-prophets-023",
+        "question": "Hüdhüd kuşu Hz. Süleyman'a hangi ülkeden haber getirir?",
+        "answer": "Sebe'"
+      },
+      "b": {
+        "id": "q66-neml-22",
+        "question": "Neml 27/22'de hüdhüd hangi ülkeden haber getirdiğini söyler?",
+        "answer": "Sebe'"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Hoopoe brings news from Sebe; same event."
+    },
+    {
+      "score": 0.6767,
+      "a": {
+        "id": "q49-taberi-009",
+        "question": "Târîhu'l-ümem ve'l-mülûk adlı büyük tarih eserinin yazarı kimdir?",
+        "answer": "Taberî"
+      },
+      "b": {
+        "id": "q49-taberi-012",
+        "question": "Taberî'nin Târîhu'l-ümem ve'l-mülûk eserini tamamladığı yıllar hangileridir?",
+        "answer": "915–916"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6756,
+      "a": {
+        "id": "v10-prophets-013",
+        "question": "Meryem 19/25'te Meryem'den hangi ağacı kendine doğru silkelemesi istenir?",
+        "answer": "Hurma ağacını"
+      },
+      "b": {
+        "id": "q66-meryem-25",
+        "question": "Meryem 19/25'e göre Meryem'in hurma ağacından yararlanması için ne yapması istenir?",
+        "answer": "Gövdeyi kendine doğru silkelemesi"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Maryam shakes date-palm trunk; action/object reversal."
+    },
+    {
+      "score": 0.6728,
+      "a": {
+        "id": "v13-history-005",
+        "question": "Endülüs mimarisinin ünlü Elhamra Sarayı günümüzde hangi şehirde bulunur?",
+        "answer": "Granada (Gırnata)"
+      },
+      "b": {
+        "id": "learn-history-010",
+        "question": "Endülüs'te Nasrîler'in merkezi olan şehir hangisidir?",
+        "answer": "Gırnata (Granada)"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6697,
+      "a": {
+        "id": "learn-women-005",
+        "question": "Sahâbî Enes b. Mâlik'in annesi olan kadın sahâbî kimdir?",
+        "answer": "Ümmü Süleym"
+      },
+      "b": {
+        "id": "learn-women-018",
+        "question": "Ümmü Harâm'ın kız kardeşi olan kadın sahâbî kimdir?",
+        "answer": "Ümmü Süleym"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6643,
+      "a": {
+        "id": "v8-history-002",
+        "question": "Hz. Peygamber'in 'Seyfullah' unvanıyla andığı meşhur kumandan kimdir?",
+        "answer": "Hâlid b. Velîd"
+      },
+      "b": {
+        "id": "q48-ummu-seleme-012",
+        "question": "Ümmü Seleme'nin akrabası olarak TDV'de hangi ünlü kumandan anılır?",
+        "answer": "Hâlid b. Velîd"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.664,
+      "a": {
+        "id": "e150-history-022",
+        "question": "Hz. Hamza hangi savaşta şehit olmuştur?",
+        "answer": "Uhud"
+      },
+      "b": {
+        "id": "v8-history-004",
+        "question": "İslâm'ın Medine'deki ilk öğretmenlerinden Mus'ab b. Umeyr hangi savaşta şehit olmuştur?",
+        "answer": "Uhud"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6598,
+      "a": {
+        "id": "q47-beyat-014",
+        "question": "Bey‘atürrıdvân hangi yerde gerçekleşmiştir?",
+        "answer": "Hudeybiye"
+      },
+      "b": {
+        "id": "q47-beyat-015",
+        "question": "Hudeybiye'de Hz. Osman'ın öldürüldüğü haberi üzerine hangi olay gerçekleşti?",
+        "answer": "Bey‘atürrıdvân"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6584,
+      "a": {
+        "id": "prophets-012",
+        "question": "Hz. Zekeriyyâ’nın oğlu olan peygamber kimdir?",
+        "answer": "Hz. Yahyâ"
+      },
+      "b": {
+        "id": "q66-meryem-7",
+        "question": "Meryem 19/7'de Hz. Zekeriyyâ'ya müjdelenen çocuğun adı nedir?",
+        "answer": "Yahyâ"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Zekeriya’s son/mujde is Yahya; same parent-child identity."
+    },
+    {
+      "score": 0.639,
+      "a": {
+        "id": "e150-history-028",
+        "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "b": {
+        "id": "v9-history-003",
+        "question": "Medine'deki öğretim faaliyetinden önce Habeşistan'a hicret eden sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6384,
+      "a": {
+        "id": "v10-history-013",
+        "question": "İstanbul'daki Eyüp Sultan Külliyesi ilk olarak hangi hükümdar tarafından yaptırılmıştır?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "b": {
+        "id": "v12-history-006",
+        "question": "Sahn-ı Semân medreselerini İstanbul'da kurduran padişah kimdir?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6372,
+      "a": {
+        "id": "v10-history-013",
+        "question": "İstanbul'daki Eyüp Sultan Külliyesi ilk olarak hangi hükümdar tarafından yaptırılmıştır?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "b": {
+        "id": "v11-history-007",
+        "question": "Ali Kuşçu, İstanbul'a geldikten sonra hangi Osmanlı padişahı tarafından himaye edildi?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6359,
+      "a": {
+        "id": "v11-history-007",
+        "question": "Ali Kuşçu, İstanbul'a geldikten sonra hangi Osmanlı padişahı tarafından himaye edildi?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "b": {
+        "id": "v12-history-006",
+        "question": "Sahn-ı Semân medreselerini İstanbul'da kurduran padişah kimdir?",
+        "answer": "Fâtih Sultan Mehmed"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6353,
+      "a": {
+        "id": "history-009",
+        "question": "Mekke’de ilk Müslümanların eğitim ve tebliğ için toplandığı ev hangi adla bilinir?",
+        "answer": "Dârülerkam"
+      },
+      "b": {
+        "id": "q60-erkam-hizmet",
+        "question": "İlk Müslümanların Mekke’de toplandığı Dârülerkam hangi adla da bilinir?",
+        "answer": "Dârülislâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6315,
+      "a": {
+        "id": "v8-general-001",
+        "question": "Zekât için esas alınan asgarî zenginlik ölçüsüne ne denir?",
+        "answer": "Nisab"
+      },
+      "b": {
+        "id": "q62-nisab-anlam",
+        "question": "Zekât yükümlülüğündeki zenginlik sınırına ne ad verilir?",
+        "answer": "Nisab"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Nisab as minimum wealth threshold; same definition."
+    },
+    {
+      "score": 0.6297,
+      "a": {
+        "id": "q68-sitte-davud",
+        "question": "Kütüb-i Sitte’nin Sicistânî nisbesiyle tanınan Sünen müellifi kimdir?",
+        "answer": "Ebû Dâvûd"
+      },
+      "b": {
+        "id": "q68-ebudavud-vefat",
+        "question": "Kütüb-i Sitte müellifi Ebû Dâvûd es-Sicistânî'nin milâdî vefat yılı kaçtır?",
+        "answer": "889"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6293,
+      "a": {
+        "id": "q70-malik-b-enes-egitim",
+        "question": "İmam Mâlik hangi şehirde ilim hayatını geliştirmiştir?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "q70-malik-b-enes-vefat",
+        "question": "İmam Mâlik hangi şehirde vefat etmiştir?",
+        "answer": "Medine"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6292,
+      "a": {
+        "id": "q47-harun-032",
+        "question": "Hz. Hârûn'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Yirmi"
+      },
+      "b": {
+        "id": "q48-yusuf-030",
+        "question": "Kur’an'da Hz. Yûsuf'un adı kaç defa geçer?",
+        "answer": "Yirmi yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6257,
+      "a": {
+        "id": "v10-history-003",
+        "question": "Aşere-i mübeşşere arasında yer alan ve kumandanlık yapan sahâbî kimdir?",
+        "answer": "Ebû Ubeyde b. Cerrâh"
+      },
+      "b": {
+        "id": "new74-prophets-287",
+        "question": "Hz. Peygamber, Necrân halkına güvenilirliğini vurgulayarak hangi sahâbîyi göndermiştir?",
+        "answer": "Ebû Ubeyde b. Cerrâh’ı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6228,
+      "a": {
+        "id": "v9-history-003",
+        "question": "Medine'deki öğretim faaliyetinden önce Habeşistan'a hicret eden sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "b": {
+        "id": "q69-ebueyyubelensari-muahat",
+        "question": "Hicretten sonra Ebû Eyyûb el-Ensârî ile kardeş kılınan sahâbî kimdir?",
+        "answer": "Mus'ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6226,
+      "a": {
+        "id": "pilot-history-001",
+        "question": "Bedir Gazvesi, hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "2."
+      },
+      "b": {
+        "id": "pilot-history-004",
+        "question": "Mekke’nin fethi hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "8."
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6226,
+      "a": {
+        "id": "history-003",
+        "question": "Mescid-i Nebevî hangi şehirdedir?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "e150-history-010",
+        "question": "Medine’de Hücre-i Saâdet’in bulunduğu mescid hangisidir?",
+        "answer": "Mescid-i Nebevî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6213,
+      "a": {
+        "id": "q70-ahmed-b-hanbel-dogum",
+        "question": "Ahmed b. Hanbel'in TDV'de verilen doğum şehri hangisidir?",
+        "answer": "Bağdat"
+      },
+      "b": {
+        "id": "q70-ahmed-b-hanbel-vefat",
+        "question": "Ahmed b. Hanbel hangi şehirde vefat etmiştir?",
+        "answer": "Bağdat"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6201,
+      "a": {
+        "id": "e150-history-011",
+        "question": "Hz. Peygamber'in hicret yolculuğunda Medine'ye girmeden önce inşasına katıldığı mescid hangisidir?",
+        "answer": "Kubâ Mescidi"
+      },
+      "b": {
+        "id": "q56-hicret-konak",
+        "question": "Hicrette Hz. Peygamber’in Medine merkezine girmeden önce konakladığı yer hangisidir?",
+        "answer": "Kubâ"
+      },
+      "decision": "further-editorial-review",
+      "reason": "Quba mosque construction versus first stop at Quba: location/action are distinct, but keep under final review."
+    },
+    {
+      "score": 0.6163,
+      "a": {
+        "id": "prophets-009",
+        "question": "Hz. Süleyman’ın babası olan peygamber hangisidir?",
+        "answer": "Hz. Dâvûd"
+      },
+      "b": {
+        "id": "q66-neml-15",
+        "question": "Neml 27/15'te ilim verildiği belirtilen iki peygamber kimlerdir?",
+        "answer": "Dâvûd ve Süleyman"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.616,
+      "a": {
+        "id": "q47-hudeybiye-011",
+        "question": "Hudeybiye’den sonraki telâfi umresi hicretin kaçıncı yılında yapılmıştır?",
+        "answer": "Yedinci yıl"
+      },
+      "b": {
+        "id": "q57-hayberdate",
+        "question": "Hayber seferi hicretin kaçıncı yılında yapılmıştır?",
+        "answer": "Yedinci"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6157,
+      "a": {
+        "id": "v11-history-004",
+        "question": "İbn Haldûn’un tarihî ve toplumsal hayatı inceleyen yeni bilimine verdiği ad nedir?",
+        "answer": "Umran ilmi"
+      },
+      "b": {
+        "id": "q45-haldun-umran",
+        "question": "İbn Haldûn'un Mukaddime'de geliştirdiği 'umran ilmi' öncelikle neyi inceler?",
+        "answer": "İnsan toplumu ve toplumsal hayatı"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Umran as science of human society; definition reversal."
+    },
+    {
+      "score": 0.6116,
+      "a": {
+        "id": "pilot-history-004",
+        "question": "Mekke’nin fethi hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "8."
+      },
+      "b": {
+        "id": "e150-history-020",
+        "question": "Uhud Gazvesi hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "3"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6105,
+      "a": {
+        "id": "v10-prophets-013",
+        "question": "Meryem 19/25'te Meryem'den hangi ağacı kendine doğru silkelemesi istenir?",
+        "answer": "Hurma ağacını"
+      },
+      "b": {
+        "id": "q61-meryem-dogum",
+        "question": "Meryem 19/23'e göre doğum sancısı Meryem'i hangi ağacın gövdesine yöneltmiştir?",
+        "answer": "Hurma ağacına"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6018,
+      "a": {
+        "id": "q60-aksa-beyt",
+        "question": "Beytülmakdis adı hangi kutsal mekânla bağlantılıdır?",
+        "answer": "Mescid-i Aksâ"
+      },
+      "b": {
+        "id": "q60-aksa-isra",
+        "question": "İsrâ 17/1'de çevresinin bereketli kılındığı bildirilen mescid hangisidir?",
+        "answer": "Mescid-i Aksâ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6015,
+      "a": {
+        "id": "learn-women-015",
+        "question": "Ümmü Habîbe'nin babası olarak bilinen Kureyşli kişi kimdir?",
+        "answer": "Ebû Süfyân"
+      },
+      "b": {
+        "id": "q47-bedir-001",
+        "question": "Bedir seferinden önce Kureyş kervanını kim yönetiyordu?",
+        "answer": "Ebû Süfyân"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6006,
+      "a": {
+        "id": "v10-history-001",
+        "question": "Hicret hazırlığında kuşağını ikiye böldüğü için 'Zâtünnitâkayn' diye anılan sahâbî kimdir?",
+        "answer": "Esmâ bint Ebû Bekir"
+      },
+      "b": {
+        "id": "learn-women-002",
+        "question": "Hz. Âişe’nin baba bir ablası olan ve hicret hazırlıklarına yardım eden sahâbî kimdir?",
+        "answer": "Esmâ bint Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.6005,
+      "a": {
+        "id": "quran-001",
+        "question": "Kur’an’da kaç sure vardır?",
+        "answer": "114"
+      },
+      "b": {
+        "id": "q71-sure-28",
+        "question": "Yaygın sûre tasnifine göre Kur'an'da kaç Medenî sûre vardır?",
+        "answer": "28"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5995,
+      "a": {
+        "id": "q64-bedir-sancak",
+        "question": "TDV Bedir Gazvesi maddesinde sancaktar olarak adı anılan sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "b": {
+        "id": "q69-ebueyyubelensari-muahat",
+        "question": "Hicretten sonra Ebû Eyyûb el-Ensârî ile kardeş kılınan sahâbî kimdir?",
+        "answer": "Mus'ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5938,
+      "a": {
+        "id": "e150-prophets-021",
+        "question": "Hz. Süleyman'ın ordusunun geçtiği vadide hangi canlılardan söz edilir?",
+        "answer": "Karıncalar"
+      },
+      "b": {
+        "id": "q66-neml-18",
+        "question": "Neml 27/18’de vadideki canlıları yuvalarına çağıran hangisidir?",
+        "answer": "Karınca"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Ant identity in Suleyman valley scene."
+    },
+    {
+      "score": 0.5856,
+      "a": {
+        "id": "v8-history-005",
+        "question": "Hz. Peygamber'in amcasının oğlu olup tefsir ve fıkıh bilgisiyle tanınan sahâbî kimdir?",
+        "answer": "Abdullah b. Abbas"
+      },
+      "b": {
+        "id": "q69-abdullahbabbas-amca",
+        "question": "Abdullah b. Abbas’ın babası Abbas’ın Hz. Peygamber’e yakınlığı nedir?",
+        "answer": "Amcası"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5823,
+      "a": {
+        "id": "v7-quran-001",
+        "question": "Mushaflarda başında besmele bulunmayan sûre hangisidir?",
+        "answer": "Tevbe"
+      },
+      "b": {
+        "id": "q71-sure-besmele",
+        "question": "Mushaf sıralamasında hangi iki sûre arasına besmele yazılmaz?",
+        "answer": "Enfâl ile Tevbe"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5817,
+      "a": {
+        "id": "q66-neml-15",
+        "question": "Neml 27/15'te ilim verildiği belirtilen iki peygamber kimlerdir?",
+        "answer": "Dâvûd ve Süleyman"
+      },
+      "b": {
+        "id": "q66-neml-16",
+        "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+        "answer": "Dâvûd"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5805,
+      "a": {
+        "id": "v9-history-003",
+        "question": "Medine'deki öğretim faaliyetinden önce Habeşistan'a hicret eden sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "b": {
+        "id": "q64-bedir-sancak",
+        "question": "TDV Bedir Gazvesi maddesinde sancaktar olarak adı anılan sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5797,
+      "a": {
+        "id": "v10-prophets-006",
+        "question": "Neml 27/24'te hüdhüd, Sebe halkının hangi gök cismine secde ettiğini bildirir?",
+        "answer": "Güneşe"
+      },
+      "b": {
+        "id": "q66-neml-24",
+        "question": "Neml 27/24'e göre Sebe' halkı Allah yerine neye secde ediyordu?",
+        "answer": "Güneşe"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Sebe people worship the Sun; same statement."
+    },
+    {
+      "score": 0.5792,
+      "a": {
+        "id": "q47-harun-032",
+        "question": "Hz. Hârûn'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Yirmi"
+      },
+      "b": {
+        "id": "q50-suayb-006",
+        "question": "Kur’an'da Hz. Şuayb'ın adı kaç yerde geçer?",
+        "answer": "On bir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5784,
+      "a": {
+        "id": "prophets-009",
+        "question": "Hz. Süleyman’ın babası olan peygamber hangisidir?",
+        "answer": "Hz. Dâvûd"
+      },
+      "b": {
+        "id": "q66-neml-16",
+        "question": "Neml 27/16’nın Kur’an Yolu mealinde Süleyman’ın yerine geçtiği belirtilen peygamber kimdir?",
+        "answer": "Dâvûd"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5775,
+      "a": {
+        "id": "q69-bilalihabesi-vasita",
+        "question": "Bilâl-i Habeşî hangi sahâbî aracılığıyla İslâmiyet'i kabul etmiştir?",
+        "answer": "Ebû Bekir"
+      },
+      "b": {
+        "id": "q69-bilalihabesi-azat",
+        "question": "Bilâl-i Habeşî'yi kölelikten kurtarıp âzat eden sahâbî kimdir?",
+        "answer": "Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5763,
+      "a": {
+        "id": "v9-history-001",
+        "question": "Eyüp Sultan adıyla tanınan Ebû Eyyûb el-Ensârî’nin asıl adı hangisidir?",
+        "answer": "Hâlid b. Zeyd"
+      },
+      "b": {
+        "id": "v9-history-002",
+        "question": "Türkiye'de 'Eyüp Sultan' adıyla tanınan sahâbî kimdir?",
+        "answer": "Ebû Eyyûb el-Ensârî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5756,
+      "a": {
+        "id": "q63-istanbul-sul",
+        "question": "Süleymaniye Külliyesi'nin mimarı kimdir?",
+        "answer": "Mimar Sinan"
+      },
+      "b": {
+        "id": "new74-history-192",
+        "question": "İstanbul’un Kırkçeşme su tesislerini yapmak üzere görevlendirilen başmimar kimdir?",
+        "answer": "Mimar Sinan"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5736,
+      "a": {
+        "id": "q50-suayb-006",
+        "question": "Kur’an'da Hz. Şuayb'ın adı kaç yerde geçer?",
+        "answer": "On bir"
+      },
+      "b": {
+        "id": "q50-zekeriyya-022",
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5705,
+      "a": {
+        "id": "e150-history-028",
+        "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "b": {
+        "id": "q64-bedir-sancak",
+        "question": "TDV Bedir Gazvesi maddesinde sancaktar olarak adı anılan sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5696,
+      "a": {
+        "id": "e150-history-028",
+        "question": "Birinci Akabe Biatı'nın ardından Medine'ye Kur’an öğreticisi olarak gönderilen sahâbî kimdir?",
+        "answer": "Mus‘ab b. Umeyr"
+      },
+      "b": {
+        "id": "q69-ebueyyubelensari-muahat",
+        "question": "Hicretten sonra Ebû Eyyûb el-Ensârî ile kardeş kılınan sahâbî kimdir?",
+        "answer": "Mus'ab b. Umeyr"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5689,
+      "a": {
+        "id": "q47-vakfe-041",
+        "question": "Hacda uygulanan iki vakfenin adları hangileridir?",
+        "answer": "Arafat ve Müzdelife vakfesi"
+      },
+      "b": {
+        "id": "q62-vakfe-iki",
+        "question": "Hac ibadetinde vakfe yapılan iki temel yer hangileridir?",
+        "answer": "Arafat ve Müzdelife"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "The two hajj standing locations, Arafat/Muzdelife."
+    },
+    {
+      "score": 0.5686,
+      "a": {
+        "id": "v13-prophets-005",
+        "question": "Âl-i İmrân 3/37’nin mealinde Meryem’in yanında bulunan nimet hangi adla anılır?",
+        "answer": "Rızık"
+      },
+      "b": {
+        "id": "q43-mulk-15",
+        "question": "Mülk 67/15'te yararlanılması istenen nimet hangi kavramla anılır?",
+        "answer": "Rızık"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5683,
+      "a": {
+        "id": "q61-meryem-sus",
+        "question": "Kur'an Yolu mealinde Meryem 19/26'da Meryem'in adadığı davranış hangisidir?",
+        "answer": "İnsanlarla konuşmamak"
+      },
+      "b": {
+        "id": "q66-meryem-10",
+        "question": "Meryem 19/10’da Zekeriyyâ’ya verilen işaret hangi yetisini kullanamamasıdır?",
+        "answer": "İnsanlarla konuşma"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5674,
+      "a": {
+        "id": "learn-women-011",
+        "question": "Hz. Ömer'in kızı olan ve Hz. Peygamber'le evlenen sahâbî kimdir?",
+        "answer": "Hafsa"
+      },
+      "b": {
+        "id": "q69-abdullahbomerbhattab-hafsa",
+        "question": "Abdullah b. Ömer'in kız kardeşi ve Hz. Peygamber'in hanımı kimdir?",
+        "answer": "Hafsa"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5668,
+      "a": {
+        "id": "q47-hac-036",
+        "question": "Hanefî mezhebine göre haccın farzları arasında hangi tavaf yer alır?",
+        "answer": "Ziyaret tavafı"
+      },
+      "b": {
+        "id": "q62-tavaf-ziyaret",
+        "question": "Haccın temel rükünlerinden olan tavaf türü hangisidir?",
+        "answer": "Ziyaret (ifâza) tavafı"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Essential hajj tawaf as ziyarat/ifada."
+    },
+    {
+      "score": 0.566,
+      "a": {
+        "id": "e150-general-014",
+        "question": "İlk müezzinlerden biri olan sahâbî kimdir?",
+        "answer": "Bilâl-i Habeşî"
+      },
+      "b": {
+        "id": "q69-bilalihabesi-kabe",
+        "question": "Mekke'nin fethinde Kâbe'nin damından ezan okuyan sahâbî kimdir?",
+        "answer": "Bilâl-i Habeşî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.565,
+      "a": {
+        "id": "e150-prophets-037",
+        "question": "Semûd kavmine gönderilen ve dişi deveyi işaret olarak gösteren peygamber kimdir?",
+        "answer": "Sâlih"
+      },
+      "b": {
+        "id": "q61-salihpeygamber-semud",
+        "question": "Hz. Sâlih hangi kavme peygamber olarak gönderilmiştir?",
+        "answer": "Semûd"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Salih sent to Semud; identity reversal."
+    },
+    {
+      "score": 0.5643,
+      "a": {
+        "id": "v9-prophets-010",
+        "question": "A‘râf sûresi 7/83'e göre Hz. Lût'un ailesinden kim kurtarılanlar arasında yer almaz?",
+        "answer": "Eşi"
+      },
+      "b": {
+        "id": "q50-lut-015",
+        "question": "Hûd 11/81’e göre Lût’un ailesinden kim helâk edilenler arasında kalır?",
+        "answer": "Eşi"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Lut’s wife excluded from rescued family."
+    },
+    {
+      "score": 0.5635,
+      "a": {
+        "id": "v9-history-002",
+        "question": "Türkiye'de 'Eyüp Sultan' adıyla tanınan sahâbî kimdir?",
+        "answer": "Ebû Eyyûb el-Ensârî"
+      },
+      "b": {
+        "id": "q60-nebevi-misafir",
+        "question": "Hz. Peygamber Medine'ye gelişinde hangi sahâbînin evine misafir olmuştur?",
+        "answer": "Ebû Eyyûb el-Ensârî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5615,
+      "a": {
+        "id": "e150-prophets-037",
+        "question": "Semûd kavmine gönderilen ve dişi deveyi işaret olarak gösteren peygamber kimdir?",
+        "answer": "Sâlih"
+      },
+      "b": {
+        "id": "v11-prophets-013",
+        "question": "Hûd 11/64'te Hz. Sâlih'in kavmine Allah'ın işareti olarak gösterdiği hayvan hangisidir?",
+        "answer": "Dişi deve"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5601,
+      "a": {
+        "id": "e150-prophets-016",
+        "question": "Hz. Mûsâ Tâhâ sûresindeki duasında ilk olarak ne ister?",
+        "answer": "Göğsünün ferahlatılmasını"
+      },
+      "b": {
+        "id": "q44-insirah-1",
+        "question": "İnşirâh 94/1'de Hz. Peygamber'e verilen hangi manevî ferahlık hatırlatılır?",
+        "answer": "Göğsünün genişletilmesi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5595,
+      "a": {
+        "id": "history-003",
+        "question": "Mescid-i Nebevî hangi şehirdedir?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "e150-history-035",
+        "question": "Hz. Peygamber'in hicretten sonra Medine şehir merkezinde yaptırdığı, ibadet ve toplantıların yürütüldüğü mescid hangisidir?",
+        "answer": "Mescid-i Nebevî"
+      },
+      "decision": "further-editorial-review",
+      "reason": "Medina/Nabawi location versus construction context: examine for definition reversal; Hujra location question remains a separate fact."
+    },
+    {
+      "score": 0.5588,
+      "a": {
+        "id": "e150-general-030",
+        "question": "Kâbe'nin yer aldığı büyük mescidin adı hangisidir?",
+        "answer": "Mescid-i Harâm"
+      },
+      "b": {
+        "id": "q60-haram-uc",
+        "question": "Hadislerde özellikle ziyaret edilmesi anılan üç mescidden biri aşağıdakilerden hangisidir?",
+        "answer": "Mescid-i Harâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5587,
+      "a": {
+        "id": "q49-kutub-027",
+        "question": "Kütüb-i Sitte'de genel kabul gören altıncı kitabın müellifi kimdir?",
+        "answer": "İbn Mâce"
+      },
+      "b": {
+        "id": "q68-ibnmace-vefat",
+        "question": "Kütüb-i Sitte müellifi İbn Mâce'nin milâdî vefat yılı kaçtır?",
+        "answer": "887"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5568,
+      "a": {
+        "id": "v13-quran-008",
+        "question": "İsrâ 17/35'te ticarette hangi davranış öğütlenir?",
+        "answer": "Ölçüyü tam tutup adaletle tartmak"
+      },
+      "b": {
+        "id": "q65-isra-35",
+        "question": "İsrâ 17/35’te ticarî işlemle ilgili hangi iki öğüt birlikte yer alır?",
+        "answer": "Ölçüyü tam tutmak ve doğru tartmak"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Isra 17/35 full measure and fair weighing."
+    },
+    {
+      "score": 0.5565,
+      "a": {
+        "id": "new74-history-069",
+        "question": "Tarihî Ezher Camii ve eğitim külliyesi hangi şehirdedir?",
+        "answer": "Kahire"
+      },
+      "b": {
+        "id": "new74-history-089",
+        "question": "İbn Tolun Camii bugün hangi şehirde bulunur?",
+        "answer": "Kahire"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5554,
+      "a": {
+        "id": "e150-quran-033",
+        "question": "Meryem suresi kaç âyetten oluşur?",
+        "answer": "98"
+      },
+      "b": {
+        "id": "v11-quran-001",
+        "question": "Fâtiha sûresi kaç âyetten oluşur?",
+        "answer": "Yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5544,
+      "a": {
+        "id": "e150-prophets-006",
+        "question": "Hz. Yûsuf az bir bedelle hangi şey karşılığında satılır?",
+        "answer": "Gümüş para"
+      },
+      "b": {
+        "id": "q66-kehf-19",
+        "question": "Kehf 18/19'da gençlerden biri yiyecek almak için şehre neyle gönderilir?",
+        "answer": "Gümüş para ile"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5512,
+      "a": {
+        "id": "e150-quran-031",
+        "question": "Kehf suresi kaç âyetten oluşur?",
+        "answer": "110"
+      },
+      "b": {
+        "id": "v11-quran-001",
+        "question": "Fâtiha sûresi kaç âyetten oluşur?",
+        "answer": "Yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5476,
+      "a": {
+        "id": "q68-tirmizi-vefat",
+        "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
+        "answer": "892"
+      },
+      "b": {
+        "id": "q68-ibnmace-vefat",
+        "question": "Kütüb-i Sitte müellifi İbn Mâce'nin milâdî vefat yılı kaçtır?",
+        "answer": "887"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5471,
+      "a": {
+        "id": "e150-prophets-037",
+        "question": "Semûd kavmine gönderilen ve dişi deveyi işaret olarak gösteren peygamber kimdir?",
+        "answer": "Sâlih"
+      },
+      "b": {
+        "id": "q61-salihpeygamber-deve",
+        "question": "Hz. Sâlih'e verilen ve Semûd kavmine gösterilen mûcize hangi hayvanla ilgilidir?",
+        "answer": "Dişi deve"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5465,
+      "a": {
+        "id": "q53-gasiye-030",
+        "question": "Gâşiye 88/12’nin mealinde hangi su kaynağının adı geçer?",
+        "answer": "Akan pınar"
+      },
+      "b": {
+        "id": "new74-prophets-327",
+        "question": "Hz. Peygamber’in Hacer’le ilgili rivayetinde, zemzemin çevresi tutulmasaydı nasıl olacağı belirtilir?",
+        "answer": "Akan bir pınar olacağı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5456,
+      "a": {
+        "id": "q47-nuh-020",
+        "question": "Hz. Nûh'un adı Kur’an'da kaç yerde geçer?",
+        "answer": "Kırk üç"
+      },
+      "b": {
+        "id": "q50-suayb-006",
+        "question": "Kur’an'da Hz. Şuayb'ın adı kaç yerde geçer?",
+        "answer": "On bir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5453,
+      "a": {
+        "id": "q49-kutub-025",
+        "question": "Kütüb-i Sitte adı kaç hadis kitabını ifade eder?",
+        "answer": "Altı"
+      },
+      "b": {
+        "id": "q50-zekeriyya-022",
+        "question": "Kur’an'da Hz. Zekeriyyâ'nın adı kaç yerde geçer?",
+        "answer": "Altı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5453,
+      "a": {
+        "id": "e150-quran-035",
+        "question": "Tâhâ suresi kaç âyetten oluşur?",
+        "answer": "135"
+      },
+      "b": {
+        "id": "v11-quran-001",
+        "question": "Fâtiha sûresi kaç âyetten oluşur?",
+        "answer": "Yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5443,
+      "a": {
+        "id": "q59-kuscu-risale",
+        "question": "Ali Kuşçu'nun Fâtih'e ithaf ettiği hesap ilmine dair eseri hangisidir?",
+        "answer": "er-Risâletü’l-Muhammediyye"
+      },
+      "b": {
+        "id": "new74-history-158",
+        "question": "Ali Kuşçu’nun Fâtih’e ithaf ettiği er-Risâletü’l-fethiyye hangi alanla ilgilidir?",
+        "answer": "Astronomi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5432,
+      "a": {
+        "id": "learn-history-013",
+        "question": "Kahire’yi Fâtımîler adına kuran devlet adamı kimdir?",
+        "answer": "Cevher es-Sıkıllî"
+      },
+      "b": {
+        "id": "new74-history-071",
+        "question": "Ezher’i Halife Muiz-Lidînillâh’ın emriyle yaptıran kumandan kimdir?",
+        "answer": "Cevher es-Sıkıllî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.543,
+      "a": {
+        "id": "e150-general-023",
+        "question": "Tavaftaki her şavtın başlangıç ve bitişi Kâbe'nin hangi köşesi hizasındadır?",
+        "answer": "Hacerülesved köşesi"
+      },
+      "b": {
+        "id": "q62-tavaf-baslangic",
+        "question": "Tavafın her şavtında başlangıç ve bitiş hangi noktanın hizasındadır?",
+        "answer": "Hacerülesved"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Tawaf circuit starts/ends at Hajar al-Aswad."
+    },
+    {
+      "score": 0.5411,
+      "a": {
+        "id": "e150-history-010",
+        "question": "Medine’de Hücre-i Saâdet’in bulunduğu mescid hangisidir?",
+        "answer": "Mescid-i Nebevî"
+      },
+      "b": {
+        "id": "e150-history-035",
+        "question": "Hz. Peygamber'in hicretten sonra Medine şehir merkezinde yaptırdığı, ibadet ve toplantıların yürütüldüğü mescid hangisidir?",
+        "answer": "Mescid-i Nebevî"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5392,
+      "a": {
+        "id": "e150-history-031",
+        "question": "İkinci halife kimdir?",
+        "answer": "Ömer"
+      },
+      "b": {
+        "id": "v8-history-003",
+        "question": "Fârûk lakabıyla tanınan râşid halife kimdir?",
+        "answer": "Hz. Ömer"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.538,
+      "a": {
+        "id": "q64-veda-hak",
+        "question": "Vedâ Hutbesi'nde dokunulmazlığı özellikle vurgulanan iki insan hakkı hangisidir?",
+        "answer": "Can ve mal güvenliği"
+      },
+      "b": {
+        "id": "q65-isra-33",
+        "question": "İsrâ 17/33'te özellikle dokunulmazlığı vurgulanan hak hangisidir?",
+        "answer": "Can dokunulmazlığı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5379,
+      "a": {
+        "id": "prophets-001",
+        "question": "Hz. Muhammed hangi şehirde doğmuştur?",
+        "answer": "Mekke"
+      },
+      "b": {
+        "id": "general-003",
+        "question": "Namazda yönelinen Kâbe hangi şehirdedir?",
+        "answer": "Mekke"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5377,
+      "a": {
+        "id": "v13-general-007",
+        "question": "Hadis literatüründe 'Sahîhayn' adı hangi iki âlimin sahih hadis kitapları için kullanılır?",
+        "answer": "Buhârî ve Müslim"
+      },
+      "b": {
+        "id": "q49-kutub-026",
+        "question": "Hadis alanında 'Sahîhayn' ifadesi hangi iki eseri belirtir?",
+        "answer": "Buhârî ve Müslim’in sahihleri"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Sahihayn are Bukhari/Muslim collections; add third old member to existing group."
+    },
+    {
+      "score": 0.5368,
+      "a": {
+        "id": "learn-dua-018",
+        "question": "Âl-i İmrân 3/191'de göklerin ve yerin yaratılışını düşünenler Allah'tan ne ister?",
+        "answer": "Cehennem azabından korunmayı"
+      },
+      "b": {
+        "id": "new74-quran-264",
+        "question": "Mü’min 40/7’de arşı yüklenen ve çevresinde bulunanlar, müminler için ne diler?",
+        "answer": "Bağışlanma ve cehennem azabından korunma"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5365,
+      "a": {
+        "id": "q68-buhari-vefat",
+        "question": "Buhârî'nin vefat tarihi milâdî kaçtır?",
+        "answer": "870"
+      },
+      "b": {
+        "id": "q68-tirmizi-vefat",
+        "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
+        "answer": "892"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.536,
+      "a": {
+        "id": "e150-history-032",
+        "question": "Hz. Ebû Bekir döneminde Kur'an nüshalarının toplanması işinde öne çıkan sahâbî kimdir?",
+        "answer": "Zeyd b. Sâbit"
+      },
+      "b": {
+        "id": "q69-zeydbsabit-istinsah",
+        "question": "Hz. Osman döneminde Kur'an nüshalarının çoğaltılması heyetine kim başkanlık etti?",
+        "answer": "Zeyd b. Sâbit"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5345,
+      "a": {
+        "id": "prophets-010",
+        "question": "Bakara suresindeki anlatımda Hz. İbrâhim, Kâbe’nin temellerini kiminle birlikte yükseltir?",
+        "answer": "Hz. İsmâil"
+      },
+      "b": {
+        "id": "learn-dua-011",
+        "question": "Bakara 2/127'ye göre Kâbe'nin temellerini yükselten Hz. İbrâhim ve Hz. İsmâil'in duasındaki istek nedir?",
+        "answer": "İbadetlerinin kabul edilmesi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5342,
+      "a": {
+        "id": "q64-huneyn-kuman",
+        "question": "Huneyn'deki karşı kuvvetleri komuta eden kişi kimdi?",
+        "answer": "Mâlik b. Avf"
+      },
+      "b": {
+        "id": "q64-huneyn-esir",
+        "question": "Huneyn sonrasında Hevâzin kabilesine âmil olarak tayin edilen kişi kimdir?",
+        "answer": "Mâlik b. Avf"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5301,
+      "a": {
+        "id": "v13-quran-002",
+        "question": "Bakara 2/152'de hangi iki davranış birlikte emredilir?",
+        "answer": "Allah'ı anmak ve O'na şükretmek"
+      },
+      "b": {
+        "id": "new74-prophets-366",
+        "question": "Hz. Muâz’a her namazın ardından öğütlenen duada hangi üç iş için yardım istenir?",
+        "answer": "Allah’ı anmak, O’na şükretmek ve güzel kulluk etmek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5284,
+      "a": {
+        "id": "quran-meaning-v72-006",
+        "question": "Âl-i İmrân 3/134'te öfkelendiğinde hangi tutumu gösterenler övülür?",
+        "answer": "Öfkesini denetleyip insanları affedenler"
+      },
+      "b": {
+        "id": "user200-119",
+        "question": "'Hilim' erdemini gösteren bir kişi öfkelendiğinde nasıl davranır?",
+        "answer": "Öfkesini denetleyip yumuşaklığını korur"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5276,
+      "a": {
+        "id": "q68-buhari-dogum",
+        "question": "Muhammed b. İsmâil el-Buhârî hangi şehirde doğmuştur?",
+        "answer": "Buhara"
+      },
+      "b": {
+        "id": "q68-buhari-yil",
+        "question": "Muhammed b. İsmâil el-Buhârî hangi milâdî yılda doğmuştur?",
+        "answer": "810"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5275,
+      "a": {
+        "id": "v12-general-006",
+        "question": "Bakara 2/215'te anne babadan sonra yardım edilecek hangi grup anılır?",
+        "answer": "Yakın akrabalar"
+      },
+      "b": {
+        "id": "new74-prophets-098",
+        "question": "Şuarâ 26/214’te Hz. Peygamber’e uyarı görevi bakımından kimler özellikle hatırlatılır?",
+        "answer": "Yakın akrabası"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5266,
+      "a": {
+        "id": "q48-hicret-016",
+        "question": "Hz. Peygamber ve Hz. Ebû Bekir hicret yolunda Sevr Mağarası'nda kaç gün kaldılar?",
+        "answer": "Üç gün"
+      },
+      "b": {
+        "id": "q48-hicret-017",
+        "question": "Sevr Mağarası'nda kalınan üç gün boyunca haber getiren kimdi?",
+        "answer": "Abdullah b. Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.525,
+      "a": {
+        "id": "history-001",
+        "question": "Hz. Muhammed’in Mekke’den Medine’ye göçüne ne denir?",
+        "answer": "Hicret"
+      },
+      "b": {
+        "id": "history-002",
+        "question": "Mekke’den Medine’ye hicret miladi hangi yılda gerçekleşmiştir?",
+        "answer": "622"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.524,
+      "a": {
+        "id": "v13-history-008",
+        "question": "Mevlânâ'nın Mesnevî adlı eseri kaç defterden oluşur?",
+        "answer": "Altı"
+      },
+      "b": {
+        "id": "new74-history-003",
+        "question": "Mevlânâ’nın altı defterlik Mesnevî’si hangi dilde kaleme alınmıştır?",
+        "answer": "Farsça"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5239,
+      "a": {
+        "id": "new74-history-120",
+        "question": "Ümmü Süleym’in Uhud Gazvesi’ndeki hizmetleri arasında hangileri bulunur?",
+        "answer": "Yaralıları tedavi etmek ve su dağıtmak"
+      },
+      "b": {
+        "id": "new74-prophets-259",
+        "question": "Ümmü Atıyye’nin Hz. Peygamber’le katıldığı seferlerde anlattığı hizmetler arasında hangisi vardır?",
+        "answer": "Yemek hazırlamak ve yaralıları tedavi etmek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5237,
+      "a": {
+        "id": "q57-nuh950",
+        "question": "Ankebût 29/14'e göre Hz. Nûh kavmi arasında kaç yıl kalmıştır?",
+        "answer": "950 yıl"
+      },
+      "b": {
+        "id": "q69-enesbmalik-yil",
+        "question": "Enes b. Mâlik, Hz. Peygamber'e yaklaşık kaç yıl hizmet etmiştir?",
+        "answer": "On yıl"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5228,
+      "a": {
+        "id": "quran-meaning-v72-038",
+        "question": "Asr suresi 103/3'te birbirlerine öğütlenmesi vurgulanan iki değer hangisidir?",
+        "answer": "Hak ve sabır"
+      },
+      "b": {
+        "id": "q53-beled-017",
+        "question": "Beled 90/17'de iman edenlerin birbirlerine öğütlemesi istenen iki değer nedir?",
+        "answer": "Sabır ve merhamet"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5222,
+      "a": {
+        "id": "e150-history-009",
+        "question": "Hz. Muhammed'e hicrette arkadaşlık eden sahâbî kimdir?",
+        "answer": "Ebû Bekir"
+      },
+      "b": {
+        "id": "q69-bilalihabesi-azat",
+        "question": "Bilâl-i Habeşî'yi kölelikten kurtarıp âzat eden sahâbî kimdir?",
+        "answer": "Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5219,
+      "a": {
+        "id": "q65-isra-31",
+        "question": "İsrâ 17/31'de hangi endişeyle çocukların öldürülmesi yasaklanır?",
+        "answer": "Yoksulluk korkusu"
+      },
+      "b": {
+        "id": "new74-quran-321",
+        "question": "Bakara 2/268’de şeytanın insanın içine düşürdüğü korku hangisidir?",
+        "answer": "Yoksulluk korkusu"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5196,
+      "a": {
+        "id": "q42-lokman-29",
+        "question": "Lokmân 31/29'da belirli süreye kadar hareket ettirildiği bildirilen iki gök cismi hangisidir?",
+        "answer": "Güneş ve ay"
+      },
+      "b": {
+        "id": "q53-sems-019",
+        "question": "Şems 91/1'de hangi gök cismi üzerine yemin edilir?",
+        "answer": "Güneş"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5194,
+      "a": {
+        "id": "pilot-history-001",
+        "question": "Bedir Gazvesi, hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "2."
+      },
+      "b": {
+        "id": "e150-history-023",
+        "question": "Hudeybiye Antlaşması hicretin kaçıncı yılında yapılmıştır?",
+        "answer": "6"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5194,
+      "a": {
+        "id": "q47-hac-036",
+        "question": "Hanefî mezhebine göre haccın farzları arasında hangi tavaf yer alır?",
+        "answer": "Ziyaret tavafı"
+      },
+      "b": {
+        "id": "q62-hac-hanefi",
+        "question": "Hanefî mezhebine göre haccın üç temel farzı hangi gruptur?",
+        "answer": "İhram, Arafat vakfesi ve ziyaret tavafı"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5185,
+      "a": {
+        "id": "q68-tirmizi-vefat",
+        "question": "Muhaddis Tirmizî'nin milâdî vefat yılı kaçtır?",
+        "answer": "892"
+      },
+      "b": {
+        "id": "q68-ebudavud-vefat",
+        "question": "Kütüb-i Sitte müellifi Ebû Dâvûd es-Sicistânî'nin milâdî vefat yılı kaçtır?",
+        "answer": "889"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5184,
+      "a": {
+        "id": "q44-tin-6",
+        "question": "Tîn 95/6’da kesintisiz ödül kazananlar hangi iki özellikle birlikte anılır?",
+        "answer": "İman etmek ve iyi işler yapmak"
+      },
+      "b": {
+        "id": "q55-insikak-026",
+        "question": "İnşikâk 84/25'te hangi insanlara kesintisiz ödül müjdelenir?",
+        "answer": "İman edip iyi işler yapanlara"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Uninterrupted reward for faith plus good deeds; same promise."
+    },
+    {
+      "score": 0.5184,
+      "a": {
+        "id": "e150-history-017",
+        "question": "Bedir Gazvesi hicrî takvimin hangi ayında gerçekleşmiştir?",
+        "answer": "Ramazan"
+      },
+      "b": {
+        "id": "e150-general-003",
+        "question": "Ramazan hicrî takvimin kaçıncı ayıdır?",
+        "answer": "9"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5182,
+      "a": {
+        "id": "q55-infitar-017",
+        "question": "İnfitâr 82/10-11'de insanın yaptıklarını kaydedenler hangi sıfatla anılır?",
+        "answer": "Değerli yazıcılar"
+      },
+      "b": {
+        "id": "q55-infitar-018",
+        "question": "İnfitâr 82/12’de değerli yazıcılar hakkında ne bildirilir?",
+        "answer": "İnsanların yaptıklarını bilmeleri"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5177,
+      "a": {
+        "id": "history-012",
+        "question": "Hicretin resmî takvim başlangıcı kabul edilmesi hangi halife dönemindedir?",
+        "answer": "Hz. Ömer"
+      },
+      "b": {
+        "id": "e150-history-031",
+        "question": "İkinci halife kimdir?",
+        "answer": "Ömer"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5171,
+      "a": {
+        "id": "q60-aksa-beyt",
+        "question": "Beytülmakdis adı hangi kutsal mekânla bağlantılıdır?",
+        "answer": "Mescid-i Aksâ"
+      },
+      "b": {
+        "id": "q60-aksa-uzak",
+        "question": "Mescid-i Aksâ adındaki 'aksâ' kelimesinin anlamı nedir?",
+        "answer": "En uzak"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5171,
+      "a": {
+        "id": "history-010",
+        "question": "Halife Mansûr’un Abbâsî başşehri olarak kurduğu şehir hangisidir?",
+        "answer": "Bağdat"
+      },
+      "b": {
+        "id": "new74-history-045",
+        "question": "Mansûr’un kurduğu Bağdat için verdiği resmî ad hangisidir?",
+        "answer": "Medînetüsselâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5169,
+      "a": {
+        "id": "e150-quran-032",
+        "question": "Mushaf sıralamasında 18. sûre hangisidir?",
+        "answer": "Kehf"
+      },
+      "b": {
+        "id": "e150-quran-034",
+        "question": "Mushaf sıralamasında 19. sûre hangisidir?",
+        "answer": "Meryem"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5162,
+      "a": {
+        "id": "q69-zeydbsabit-dogum",
+        "question": "Zeyd b. Sâbit hangi şehirde doğmuştur?",
+        "answer": "Medine"
+      },
+      "b": {
+        "id": "q69-zeydbsabit-danisman",
+        "question": "TDV’ye göre Ömer’in Medine davalarında görüşünü aldığı ve şehirden ayrılınca vekâlet bıraktığı sahâbî kimdir?",
+        "answer": "Zeyd b. Sâbit"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5156,
+      "a": {
+        "id": "v10-history-002",
+        "question": "Hicret esnasında yardım eden Esmâ bint Ebû Bekir'in oğlu olan sahâbî kimdir?",
+        "answer": "Abdullah b. Zübeyr"
+      },
+      "b": {
+        "id": "q48-esma-003",
+        "question": "Esmâ bint Ebû Bekir hangi büyük sahâbînin eşiydi?",
+        "answer": "Zübeyr b. Avvâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5152,
+      "a": {
+        "id": "learn-dua-018",
+        "question": "Âl-i İmrân 3/191'de göklerin ve yerin yaratılışını düşünenler Allah'tan ne ister?",
+        "answer": "Cehennem azabından korunmayı"
+      },
+      "b": {
+        "id": "q65-furkan-65",
+        "question": "Furkân 25/65'te Rahmân'ın kulları Allah'tan hangi azabı uzaklaştırmasını diler?",
+        "answer": "Cehennem azabını"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Prayer to be protected from hell punishment; same requested protection."
+    },
+    {
+      "score": 0.5149,
+      "a": {
+        "id": "q49-kutub-028",
+        "question": "Rezîn b. Muâviye beş temel hadis kitabına altıncı olarak hangi eseri eklemiştir?",
+        "answer": "Mâlik’in el-Muvatta’ı"
+      },
+      "b": {
+        "id": "q68-sitte-alternatif",
+        "question": "Bazı hadis âlimleri Kütüb-i Sitte'nin altıncı eseri olarak İbn Mâce yerine hangi kitabı önermiştir?",
+        "answer": "İmam Mâlik'in el-Muvatta'ı"
+      },
+      "decision": "further-editorial-review",
+      "reason": "Named Rezin collection versus general Muwatta alternative; closely related bibliographic fact, review for a clearer difference."
+    },
+    {
+      "score": 0.5135,
+      "a": {
+        "id": "q43-abese-29",
+        "question": "Abese 80/29'da hangi iki ağaç birlikte anılır?",
+        "answer": "Zeytin ve hurma"
+      },
+      "b": {
+        "id": "new74-quran-299",
+        "question": "Nûr 24/35’te kandil benzetmesinde yağı anılan mübarek ağaç hangisidir?",
+        "answer": "Zeytin"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5125,
+      "a": {
+        "id": "q65-hadid-2",
+        "question": "Hadîd 57/2'de hükümranlıkla birlikte hangi karşıt fiiller anılır?",
+        "answer": "Diriltmek ve öldürmek"
+      },
+      "b": {
+        "id": "q67-rum-40",
+        "question": "Rûm 30/40'ta yaratma ve rızık vermenin ardından hangi iki fiil anılır?",
+        "answer": "Öldürmek ve diriltmek"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "God gives life and death; same paired divine act."
+    },
+    {
+      "score": 0.5109,
+      "a": {
+        "id": "q52-zekat-012",
+        "question": "TDV'ye göre Kur’an'da zekât kaç âyette namazla birlikte anılır?",
+        "answer": "Yirmi yedi"
+      },
+      "b": {
+        "id": "new74-general-303",
+        "question": "İbn Ömer’den gelen rivayette cemaatle namazın tek başına namaza göre fazileti kaç kat olarak bildirilir?",
+        "answer": "Yirmi yedi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5102,
+      "a": {
+        "id": "e150-history-020",
+        "question": "Uhud Gazvesi hicretin kaçıncı yılında gerçekleşmiştir?",
+        "answer": "3"
+      },
+      "b": {
+        "id": "e150-history-023",
+        "question": "Hudeybiye Antlaşması hicretin kaçıncı yılında yapılmıştır?",
+        "answer": "6"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5099,
+      "a": {
+        "id": "q47-hac-040",
+        "question": "Haccın yaygın menâsik sıralamasında Arafat vakfesinin ardından gidilen durak hangisidir?",
+        "answer": "Müzdelife"
+      },
+      "b": {
+        "id": "q47-vakfe-041",
+        "question": "Hacda uygulanan iki vakfenin adları hangileridir?",
+        "answer": "Arafat ve Müzdelife vakfesi"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5099,
+      "a": {
+        "id": "q58-tefsir-dirayet",
+        "question": "Rivayetin karşısında, re’y ve içtihada dayalı genel tefsir yöntemi hangi adla anılır?",
+        "answer": "Dirâyet tefsiri"
+      },
+      "b": {
+        "id": "new74-quran-279",
+        "question": "TDV’nin değerlendirmesinde Taberî tefsiri, rivayet ağırlığının yanında ne de içerir?",
+        "answer": "Dirâyete dayalı tahliller"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5095,
+      "a": {
+        "id": "e150-quran-034",
+        "question": "Mushaf sıralamasında 19. sûre hangisidir?",
+        "answer": "Meryem"
+      },
+      "b": {
+        "id": "e150-quran-040",
+        "question": "Mushaf sıralamasında 22. sûre hangisidir?",
+        "answer": "Hac"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5095,
+      "a": {
+        "id": "q60-aksa-uzak",
+        "question": "Mescid-i Aksâ adındaki 'aksâ' kelimesinin anlamı nedir?",
+        "answer": "En uzak"
+      },
+      "b": {
+        "id": "q60-aksa-isra",
+        "question": "İsrâ 17/1'de çevresinin bereketli kılındığı bildirilen mescid hangisidir?",
+        "answer": "Mescid-i Aksâ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5091,
+      "a": {
+        "id": "learn-women-017",
+        "question": "Türkler arasında 'Hala Sultan' adıyla tanınan kadın sahâbî kimdir?",
+        "answer": "Ümmü Harâm"
+      },
+      "b": {
+        "id": "learn-women-018",
+        "question": "Ümmü Harâm'ın kız kardeşi olan kadın sahâbî kimdir?",
+        "answer": "Ümmü Süleym"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5088,
+      "a": {
+        "id": "v12-history-011",
+        "question": "Kûfe’de Irak fıkhını öğrencileriyle sistemleştiren, İmâm-ı Âzam diye anılan âlim kimdir?",
+        "answer": "Ebû Hanîfe"
+      },
+      "b": {
+        "id": "q70-ebu-hanife-lakap",
+        "question": "'İmâm-ı Âzam' unvanıyla tanınan fıkıh âlimi kimdir?",
+        "answer": "Ebû Hanîfe"
+      },
+      "decision": "same-tested-fact-replacement-pending",
+      "reason": "Imam-i Azam identity as Abu Hanifa."
+    },
+    {
+      "score": 0.5087,
+      "a": {
+        "id": "new74-history-066",
+        "question": "Kurtuba Ulucamii iç mekânındaki kemerlerde hangi renkler dönüşümlü kullanılmıştır?",
+        "answer": "Kırmızı ve beyaz"
+      },
+      "b": {
+        "id": "new74-quran-136",
+        "question": "Fâtır 35/27’de dağların farklı renkli yolları anlatılırken hangi renkler açıkça sayılır?",
+        "answer": "Beyaz, kırmızı ve simsiyah"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5082,
+      "a": {
+        "id": "v8-quran-002",
+        "question": "Mâûn sûresi adını hangi âyetinde geçen kelimeden alır?",
+        "answer": "Son âyet"
+      },
+      "b": {
+        "id": "v10-quran-008",
+        "question": "Nûr sûresi adını hangi âyetinde geçen 'nûr' kelimesinden alır?",
+        "answer": "35. âyet"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5079,
+      "a": {
+        "id": "learn-dua-026",
+        "question": "Mü’minûn 23/29’un Diyanet mealinde, istenen yer hangi nitelemeyle anılır?",
+        "answer": "Bereketli bir yer"
+      },
+      "b": {
+        "id": "new74-prophets-162",
+        "question": "Enbiyâ 21/71’de İbrâhim ile Lût’un kurtarılarak ulaştırıldığı yer nasıl nitelenir?",
+        "answer": "Âlemler için bereketli kılınmış yer"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5067,
+      "a": {
+        "id": "e150-history-009",
+        "question": "Hz. Muhammed'e hicrette arkadaşlık eden sahâbî kimdir?",
+        "answer": "Ebû Bekir"
+      },
+      "b": {
+        "id": "e150-history-030",
+        "question": "Hz. Peygamber'den sonra ilk halife kim olmuştur?",
+        "answer": "Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.506,
+      "a": {
+        "id": "e150-history-007",
+        "question": "Ensarın mensup olduğu iki temel Medine kabilesi hangileridir?",
+        "answer": "Evs ve Hazrec"
+      },
+      "b": {
+        "id": "e150-history-029",
+        "question": "İkinci Akabe Biatı'na katılan Evs ve Hazrec mensupları, Hz. Peygamber'i hangi şehre davet etmiştir?",
+        "answer": "Medine"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5043,
+      "a": {
+        "id": "q53-fecr-003",
+        "question": "Fecr 89/14'te Allah hakkında hangi ifade yer alır?",
+        "answer": "Rabbin her şeyi gözetlemektedir"
+      },
+      "b": {
+        "id": "q54-tarik-009",
+        "question": "Târık 86/4'e göre her insanın üzerinde ne bulunur?",
+        "answer": "Bir gözetleyici"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5035,
+      "a": {
+        "id": "q53-beled-016",
+        "question": "Beled 90/15'te yardım edilmesi anılan yetim özellikle nasıl tanımlanır?",
+        "answer": "Yakın akraba olan yetim"
+      },
+      "b": {
+        "id": "new74-prophets-098",
+        "question": "Şuarâ 26/214’te Hz. Peygamber’e uyarı görevi bakımından kimler özellikle hatırlatılır?",
+        "answer": "Yakın akrabası"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5033,
+      "a": {
+        "id": "prophets-006",
+        "question": "Hz. Yûsuf’un babası olan peygamber kimdir?",
+        "answer": "Hz. Ya‘kūb"
+      },
+      "b": {
+        "id": "v9-prophets-001",
+        "question": "İslâmî kaynaklarda 'İsrâil' adıyla da anılan peygamber kimdir?",
+        "answer": "Hz. Ya‘kūb"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5031,
+      "a": {
+        "id": "v10-quran-004",
+        "question": "Ankebût sûresine adını veren 'ankebût' sözcüğünün karşılığı nedir?",
+        "answer": "Örümcek"
+      },
+      "b": {
+        "id": "q67-ankebut-41",
+        "question": "Ankebût 29/41'de Allah dışında dayanak edinenlerin durumu hangi canlıyla temsil edilir?",
+        "answer": "Örümcek"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5029,
+      "a": {
+        "id": "e150-quran-034",
+        "question": "Mushaf sıralamasında 19. sûre hangisidir?",
+        "answer": "Meryem"
+      },
+      "b": {
+        "id": "e150-quran-036",
+        "question": "Mushaf sıralamasında 20. sûre hangisidir?",
+        "answer": "Tâhâ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5028,
+      "a": {
+        "id": "new74-general-036",
+        "question": "Vakti belirlenmiş bir ibadeti kendi vakti içinde yerine getirme hangi terimle anlatılır?",
+        "answer": "Edâ"
+      },
+      "b": {
+        "id": "new74-general-040",
+        "question": "Vakti belirlenmiş bir ibadeti vakti geçtikten sonra yerine getirme hangi terimle anlatılır?",
+        "answer": "Kazâ"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5024,
+      "a": {
+        "id": "q47-bedir-006",
+        "question": "Bedir kuyularına kervan hakkında bilgi toplamak üzere gönderilenler arasında hangisi vardır?",
+        "answer": "Zübeyr b. Avvâm"
+      },
+      "b": {
+        "id": "q48-esma-003",
+        "question": "Esmâ bint Ebû Bekir hangi büyük sahâbînin eşiydi?",
+        "answer": "Zübeyr b. Avvâm"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5015,
+      "a": {
+        "id": "prophets-013",
+        "question": "Hz. Muhammed’in ilk eşinin adı nedir?",
+        "answer": "Hz. Hatice"
+      },
+      "b": {
+        "id": "e150-history-016",
+        "question": "Hz. Muhammed'e gelen ilk vahiy sonrasında ona destek olan eşi kimdir?",
+        "answer": "Hz. Hatice"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    },
+    {
+      "score": 0.5007,
+      "a": {
+        "id": "v10-history-002",
+        "question": "Hicret esnasında yardım eden Esmâ bint Ebû Bekir'in oğlu olan sahâbî kimdir?",
+        "answer": "Abdullah b. Zübeyr"
+      },
+      "b": {
+        "id": "learn-women-002",
+        "question": "Hz. Âişe’nin baba bir ablası olan ve hicret hazırlıklarına yardım eden sahâbî kimdir?",
+        "answer": "Esmâ bint Ebû Bekir"
+      },
+      "decision": "distinct-tested-information",
+      "reason": "Same person, answer, topic, numerical template or shared wording does not by itself duplicate the tested event/relation/property; both stems and keys compared."
+    }
+  ],
+  "additionalManualPairNotAboveThreshold": {
+    "a": "e150-prophets-034",
+    "b": "v12-prophets-001",
+    "decision": "same-tested-fact-replacement-pending",
+    "reason": "Yunus Enbiya 21/87 admission of own wrongdoing; paraphrase escaped this score threshold."
+  }
+}

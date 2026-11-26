@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-general-181",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Ebû Şurayh’tan nakledilen hadiste misafirlik hakkının genel süresi nasıl belirtilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Üç gün"
+      },
+      {
+        "id": "o2",
+        "text": "Bir hafta"
+      },
+      {
+        "id": "o3",
+        "text": "On gün"
+      },
+      {
+        "id": "o4",
+        "text": "Bir ay"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Hadiste üç günlük misafirlikten sonraki ikramın sadaka olduğu bildirilir; konunun fıkhî ayrıntıları ayrıca değerlendirilir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.257; B6135 Buhârî Edeb 85",
+        "supports": "Hadiste üç günlük misafirlikten sonraki ikramın sadaka olduğu bildirilir; konunun fıkhî ayrıntıları ayrıca değerlendirilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-misafir-hakki-uc-gun"
+  },
+  {
+    "id": "new74-general-182",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Misafirlik âdâbıyla ilgili hadiste misafir hangi tutumdan sakındırılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İkram için teşekkür etmekten"
+      },
+      {
+        "id": "o2",
+        "text": "Ev sahibini sıkıntıya sokacak kadar kalmaktan"
+      },
+      {
+        "id": "o3",
+        "text": "Ev sahibinin uygun zamanını gözetmekten"
+      },
+      {
+        "id": "o4",
+        "text": "Davet edildiğinde selâm vermekten"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Misafirperverlik öğüdü, misafirin de ev sahibine yük ve sıkıntı olmama sorumluluğuyla birlikte verilir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.257; B6135 Buhârî Edeb 85",
+        "supports": "Misafirperverlik öğüdü, misafirin de ev sahibine yük ve sıkıntı olmama sorumluluğuyla birlikte verilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-misafir-ev-sahibi-sikinti"
+  },
+  {
+    "id": "new74-general-183",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Anne babaya vefayı sürdürme konusunda hadiste hangi ziyaret özellikle övülür?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Babanın iş ortaklarını ziyaret"
+      },
+      {
+        "id": "o2",
+        "text": "Annenin komşularını ziyaret"
+      },
+      {
+        "id": "o3",
+        "text": "Babanın dostlarını ziyaret"
+      },
+      {
+        "id": "o4",
+        "text": "Ailenin eski evini ziyaret"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Hadis, evlâdın baba dostlarını ziyaretini güzel iyiliklerden sayar.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.283; M6513 Müslim Birr 11",
+        "supports": "Hadis, evlâdın baba dostlarını ziyaretini güzel iyiliklerden sayar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-baba-dostlarini-ziyaret"
+  },
+  {
+    "id": "new74-general-184",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Hadiste Allah’ın affeden kuluna ilişkin hangi sonuç bildirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Değerini mutlaka düşürmesi"
+      },
+      {
+        "id": "o2",
+        "text": "Bütün haklarını kaldırması"
+      },
+      {
+        "id": "o3",
+        "text": "Onu iyilikten uzaklaştırması"
+      },
+      {
+        "id": "o4",
+        "text": "Şerefini artırması"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Affetmek, bu rivayette insanı küçülten değil şerefini artıran bir erdem olarak anlatılır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.317; M6592 Müslim Birr 69",
+        "supports": "Affetmek, bu rivayette insanı küçülten değil şerefini artıran bir erdem olarak anlatılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-affetmek-serefi-artirir"
+  },
+  {
+    "id": "new74-general-185",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Kendisi için istediği hayrı kardeşi için de istemek hadiste neyle ilişkilendirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İmanın olgunluğuyla"
+      },
+      {
+        "id": "o2",
+        "text": "Malın miktarıyla"
+      },
+      {
+        "id": "o3",
+        "text": "Ailenin ünüyle"
+      },
+      {
+        "id": "o4",
+        "text": "Kişinin yaşıyla"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Hadisteki iman ifadesi ahlâkî kemale yöneliktir; bu davranıştaki her eksiklik kişinin dinden çıktığı anlamına getirilmez.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.351; B13 Buhârî Îmân 7",
+        "supports": "Hadisteki iman ifadesi ahlâkî kemale yöneliktir; bu davranıştaki her eksiklik kişinin dinden çıktığı anlamına getirilmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-kardesine-kendisi-gibi-hayir"
+  },
+  {
+    "id": "new74-general-186",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Müminlerin sevgi ve merhametle birbirinin acısını paylaşması hadiste neye benzetilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Birbirinden habersiz adalara"
+      },
+      {
+        "id": "o2",
+        "text": "Bir organı hastalanınca bütünü etkilenen bedene"
+      },
+      {
+        "id": "o3",
+        "text": "Her parçası ayrı kalan taşlara"
+      },
+      {
+        "id": "o4",
+        "text": "Yalnız kendi yükünü bilen araçlara"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Beden benzetmesi, müminlerin birbirine karşı duyarlılığını ve ortak acı hissini anlatır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.351; M6586 Müslim Birr 66",
+        "supports": "Beden benzetmesi, müminlerin birbirine karşı duyarlılığını ve ortak acı hissini anlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-muminler-beden-benzetme"
+  },
+  {
+    "id": "new74-general-187",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hadiste, kişisel kırgınlık nedeniyle bir Müslümanın kardeşine kaç günden fazla küs durmaması istenir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bir gün"
+      },
+      {
+        "id": "o2",
+        "text": "Yedi gün"
+      },
+      {
+        "id": "o3",
+        "text": "Üç gün"
+      },
+      {
+        "id": "o4",
+        "text": "Kırk gün"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Rivayette üç günden fazla kişisel küslük sürdürmekten sakındırılır. Bu öğüt zarar ve şiddetten korunmayı engelleyen bir kural gibi sunulmaz.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.359; B6076 Buhârî Edeb 62",
+        "supports": "Rivayette üç günden fazla kişisel küslük sürdürmekten sakındırılır. Bu öğüt zarar ve şiddetten korunmayı engelleyen bir kural gibi sunulmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-kisisel-kusluk-uc-gun"
+  },
+  {
+    "id": "new74-general-188",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Birbirine küs iki kişi arasında hadiste hangisi daha hayırlı sayılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Karşı tarafı daha çok bekleten"
+      },
+      {
+        "id": "o2",
+        "text": "Kırgınlığı herkese duyuran"
+      },
+      {
+        "id": "o3",
+        "text": "Yardımı bir özre bağlayan"
+      },
+      {
+        "id": "o4",
+        "text": "Önce selâm veren"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hadis, barışma yönünde ilk selâmı veren kişiyi över.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.361; B6237 Buhârî İsti’zân 9",
+        "supports": "Hadis, barışma yönünde ilk selâmı veren kişiyi över.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-kuslukte-ilk-selam"
+  },
+  {
+    "id": "new74-general-189",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Allah’a ve âhiret gününe imanla ilişkilendirilen konuşma ölçüsü hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Hayır söylemek veya susmak"
+      },
+      {
+        "id": "o2",
+        "text": "Her duyduğunu yaymak"
+      },
+      {
+        "id": "o3",
+        "text": "Her tartışmada son sözü söylemek"
+      },
+      {
+        "id": "o4",
+        "text": "Karşıdakini susturmayı amaçlamak"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Hadis, konuşmanın hayırlı olmasını, aksi durumda susmayı öğütler.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.371; B6475 Buhârî Rikāk 23 / M173 Müslim Îmân 74",
+        "supports": "Hadis, konuşmanın hayırlı olmasını, aksi durumda susmayı öğütler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hayir-soyle-yoksa-sus"
+  },
+  {
+    "id": "new74-general-190",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "“Kişiye yalan olarak yeter” ifadesiyle hangi kontrolsüz davranıştan sakındırılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Haberi araştırmak"
+      },
+      {
+        "id": "o2",
+        "text": "Her duyduğunu söylemek"
+      },
+      {
+        "id": "o3",
+        "text": "Bilmediğini belirtmek"
+      },
+      {
+        "id": "o4",
+        "text": "Yanlışını düzeltmek"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Duyulan her şeyi ayırt etmeden aktarmak, yanlış haber ve yalanın yayılmasına sebep olabilir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.395; D4992 Ebû Dâvûd Edeb 80",
+        "supports": "Duyulan her şeyi ayırt etmeden aktarmak, yanlış haber ve yalanın yayılmasına sebep olabilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-her-duydugunu-aktarma"
+  },
+  {
+    "id": "new74-general-191",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Doğru sözlülüğü öğütleyen hadiste hangi ilerleme sırası kurulur?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Doğruluk, kibir, üstünlük"
+      },
+      {
+        "id": "o2",
+        "text": "Yalan, iyilik, cennet"
+      },
+      {
+        "id": "o3",
+        "text": "Doğruluk, iyilik, cennet"
+      },
+      {
+        "id": "o4",
+        "text": "Gösteriş, kazanç, güven"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Hadis doğru sözlülüğün iyiliğe, iyiliğin de cennete götürdüğünü belirtir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.395; M6639 Müslim Birr 105",
+        "supports": "Hadis doğru sözlülüğün iyiliğe, iyiliğin de cennete götürdüğünü belirtir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-dogruluk-iyilik-cennet"
+  },
+  {
+    "id": "new74-general-192",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Bir kişinin ayıbını dünyada örtme davranışı hadiste hangi karşılıkla anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Her hukukî sorumluluğun kalkması"
+      },
+      {
+        "id": "o2",
+        "text": "Suçların daima gizlenmesi zorunluluğu"
+      },
+      {
+        "id": "o3",
+        "text": "Başkasının hakkını almasına izin verilmesi"
+      },
+      {
+        "id": "o4",
+        "text": "Allah’ın kıyamette onun ayıbını örtmesi"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Rivayet kişiyi teşhir etmemeyi över; bu, mağdurun hakkını ve güvenliği yok sayıp suçu örtme ruhsatı değildir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.481; M6595 Müslim Birr 72",
+        "supports": "Rivayet kişiyi teşhir etmemeyi över; bu, mağdurun hakkını ve güvenliği yok sayıp suçu örtme ruhsatı değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ayip-ortme-karsilik"
+  },
+  {
+    "id": "new74-general-193",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "“Mümin aynı delikten iki defa sokulmaz” sözü hangi bilinçli davranışı öğütler?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Yaşadığı aldanıştan ders almayı"
+      },
+      {
+        "id": "o2",
+        "text": "Hiç kimseye asla güvenmemeyi"
+      },
+      {
+        "id": "o3",
+        "text": "Her hatayı başkasına yüklemeyi"
+      },
+      {
+        "id": "o4",
+        "text": "Tedbiri bütünüyle bırakmayı"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Benzetme, aynı aldanışı tekrar yaşamamak için tecrübeden yararlanıp dikkatli olmayı anlatır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.505; B6133 Buhârî Edeb 83",
+        "supports": "Benzetme, aynı aldanışı tekrar yaşamamak için tecrübeden yararlanıp dikkatli olmayı anlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ayni-delikten-iki-kez"
+  },
+  {
+    "id": "new74-general-194",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Maddî imkânı daha iyi olanlara imrenen kişiye, nimeti değerlendirmek için hadiste hangi bakış önerilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kendisini mutlaka herkesten üstün görmek"
+      },
+      {
+        "id": "o2",
+        "text": "Bu açıdan daha az imkânı olanları da düşünmek"
+      },
+      {
+        "id": "o3",
+        "text": "Nimetleri yalnız başkalarına saymak"
+      },
+      {
+        "id": "o4",
+        "text": "Çalışmayı bırakıp şikâyet etmek"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Hadis, kişinin kendindeki nimeti küçümsememesi için imkânı daha sınırlı olanları da hatırlamasını öğütler.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.569; B6490 Buhârî Rikāk 30 / M7428 Müslim Zühd 8",
+        "supports": "Hadis, kişinin kendindeki nimeti küçümsememesi için imkânı daha sınırlı olanları da hatırlamasını öğütler.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-nimette-daha-azina-bakma"
+  },
+  {
+    "id": "new74-general-195",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "İnsanın yaşı ilerlerken beraberinde büyüdüğü belirtilen iki eğilim hadiste hangileridir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Bilgisizlik ve unutkanlık"
+      },
+      {
+        "id": "o2",
+        "text": "Misafirlik ve yolculuk"
+      },
+      {
+        "id": "o3",
+        "text": "Mal sevgisi ve uzun yaşama isteği"
+      },
+      {
+        "id": "o4",
+        "text": "Yalnızlık ve sessizlik"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Enes’ten nakledilen rivayet mal sevgisi ile uzun ömür arzusuna dikkat çeker.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.631; B6421 Buhârî Rikāk 5",
+        "supports": "Enes’ten nakledilen rivayet mal sevgisi ile uzun ömür arzusuna dikkat çeker.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-insanla-buyuyen-iki-arzu"
+  },
+  {
+    "id": "new74-general-196",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "“Malım, malım” diyen kişiye gerçek yararlanması hatırlatılırken hangi üç kullanım sayılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Saklamak, saymak ve övünmek"
+      },
+      {
+        "id": "o2",
+        "text": "Borcu gizlemek, malı yığmak ve israf etmek"
+      },
+      {
+        "id": "o3",
+        "text": "Satmak, tekrar almak ve yalnız miras bırakmak"
+      },
+      {
+        "id": "o4",
+        "text": "Yiyip tüketmek, giyip eskitmek ve sadaka vermek"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hadis malın insanın gerçekten faydalandığı veya hayır olarak önden gönderdiği yönlerini hatırlatır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.631; M7420 Müslim Zühd 3",
+        "supports": "Hadis malın insanın gerçekten faydalandığı veya hayır olarak önden gönderdiği yönlerini hatırlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-mal-yenen-giyilen-sadaka"
+  },
+  {
+    "id": "new74-general-197",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "“Üstteki el” veya “üstün el” ifadesi Hakîm b. Hizâm’a söylenen hadiste nasıl açıklanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Veren el"
+      },
+      {
+        "id": "o2",
+        "text": "İsteyen el"
+      },
+      {
+        "id": "o3",
+        "text": "Zorla alan el"
+      },
+      {
+        "id": "o4",
+        "text": "Malını gizleyen el"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Rivayette veren elin alan elden üstün olduğu belirtilerek yardımlaşma ve gönül zenginliği teşvik edilir.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.631; B1472 Buhârî Zekât 50",
+        "supports": "Rivayette veren elin alan elden üstün olduğu belirtilerek yardımlaşma ve gönül zenginliği teşvik edilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-veren-el-ustun"
+  },
+  {
+    "id": "new74-general-198",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Hadiste zenginliğin mal çokluğundan öte hangi nitelikte olduğu bildirilir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Herkesten çok istemekte"
+      },
+      {
+        "id": "o2",
+        "text": "Gönül tokluğunda"
+      },
+      {
+        "id": "o3",
+        "text": "Sürekli başkalarıyla yarışmakta"
+      },
+      {
+        "id": "o4",
+        "text": "Malı hiçbir faydada kullanmamakta"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Zenginlik, bu rivayette malın sayısından çok gönlün ihtiyaç ve tamah karşısındaki olgunluğuyla açıklanır.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.631; B6446 Buhârî Rikāk 15 / M2420 Müslim Zekât 120",
+        "supports": "Zenginlik, bu rivayette malın sayısından çok gönlün ihtiyaç ve tamah karşısındaki olgunluğuyla açıklanır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-gercek-zenginlik-gonul"
+  },
+  {
+    "id": "new74-general-199",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Musibet karşısındaki sabır için hadiste özellikle hangi an vurgulanır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Acısını başkalarına anlattığı an"
+      },
+      {
+        "id": "o2",
+        "text": "Kendisine yardım ulaştığı an"
+      },
+      {
+        "id": "o3",
+        "text": "Musibetin ilk başa geldiği an"
+      },
+      {
+        "id": "o4",
+        "text": "Kaybın telâfi edildiği an"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Rivayet, sabrın en belirgin sınandığı zamanın ilk sarsıntı anı olduğunu vurgular.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.205; B1283 Buhârî Cenâiz 31 / M2140 Müslim Cenâiz 15",
+        "supports": "Rivayet, sabrın en belirgin sınandığı zamanın ilk sarsıntı anı olduğunu vurgular.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sabir-ilk-sarsinti"
+  },
+  {
+    "id": "new74-general-200",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "easy",
+    "question": "Hz. Peygamber güçlü kimseyi güreşte başkasını yenmekten öte nasıl tanımlar?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Sesini en çok yükselten"
+      },
+      {
+        "id": "o2",
+        "text": "Her kavgayı büyüten"
+      },
+      {
+        "id": "o3",
+        "text": "İntikam fırsatını kaçırmayan"
+      },
+      {
+        "id": "o4",
+        "text": "Öfkelendiğinde kendine hâkim olan"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hadis, asıl gücü öfke anında kendini kontrol edebilmekle açıklar.",
+    "sources": [
+      {
+        "title": "Diyanet — Hadislerle İslâm",
+        "publisher": "Diyanet İşleri Başkanlığı",
+        "url": "https://hadislerleislam.diyanet.gov.tr/pdf/hadislerle_islam_cilt3.pdf",
+        "locator": "Cilt 3, basılı ve physical PDF s.205; M6643 Müslim Birr 107",
+        "supports": "Hadis, asıl gücü öfke anında kendini kontrol edebilmekle açıklar.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-gercek-guc-ofke-kontrol"
+  }
+]

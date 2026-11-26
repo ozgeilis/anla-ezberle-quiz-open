@@ -1,10 +1,10 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { questions } from "../src/content/questions";
+import { questionsV73 as questions } from "../src/content/questions/questions-v73";
 import { auditPublishedQuestions } from "../scripts/audit-published-questions";
 import editorial from "../docs/editorial-v73/audit-round2-summary.json";
 
-test("all 1500 current questions pass full structural audit without mutation", () => {
+test("all 1500 frozen v73 questions pass full structural audit without mutation", () => {
   const original = JSON.stringify(questions);
   const report = auditPublishedQuestions(questions);
   assert.equal(report.count, 1500);

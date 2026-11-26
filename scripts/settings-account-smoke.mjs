@@ -175,7 +175,10 @@ try {
             await p.getByRole("button", { name: /yarışmanı hazırla/ }).count(),
             0,
           );
-          const cta = await button(p, "Oyuna Başla").boundingBox();
+          const cta = await button(
+            p,
+            "Hemen Oyna, kategorilerden karışık 10 soru",
+          ).boundingBox();
           assert(
             cta.y + cta.height <= 844,
             "Primary play action must fit first screen",

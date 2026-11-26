@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   BANK_VERSION,
-  questions,
   questionById,
 } from "../src/content/questions";
 import { questions1500 } from "../src/content/questions/questions-1500";
@@ -13,8 +12,7 @@ import {
 import { reviewedTopicByQuestionIdV72 } from "../src/content/questions/learning-topics-v72";
 import { reviewedTopicByQuestionIdV71 } from "../src/content/questions/learning-topics-v71-reviewed";
 import { assignedLearningTopic } from "../src/domain/game/learning";
-import { categoryOptions } from "../src/features/categories/learning-options";
-import { belongsToPlayCategory } from "../src/domain/game/play-categories";
+import { playCategories, belongsToPlayCategory } from "../src/domain/game/play-categories";
 import {
   advanceQuestion,
   answerQuestion,
@@ -83,7 +81,7 @@ test("v72: all 38 candidate citations match rendered Diyanet source evidence; on
   }
 });
 test("v72: exact versioned topic partitions, six counts and difficulty filters retain frozen v71 membership", () => {
-  assert.equal(BANK_VERSION, 73);
+  assert.equal(BANK_VERSION, 74);
   assert.equal(Object.keys(reviewedTopicByQuestionIdV72).length, 1500);
   assert.equal(Object.keys(reviewedTopicByQuestionIdV71).length, 1500);
   for (const old of questions1500)
@@ -103,11 +101,11 @@ test("v72: exact versioned topic partitions, six counts and difficulty filters r
     assert(!belongsToPlayCategory(q.id, "quran_dualar", 1));
   }
   assert.deepEqual(
-    categoryOptions(questions).map((c) => c.count),
+    playCategories.map((c) => questionsV72.filter((q) => belongsToPlayCategory(q.id, c.id, 2)).length),
     [213, 313, 271, 161, 260, 282],
   );
   for (const difficulty of ["easy", "medium", "hard"] as const) {
-    const counts = categoryOptions(questions, difficulty);
+    const counts = playCategories.map((c) => ({ id: c.id, count: questionsV72.filter((q) => q.difficulty === difficulty && belongsToPlayCategory(q.id, c.id, 2)).length }));
     assert.equal(
       counts.reduce((n, c) => n + c.count, 0),
       { easy: 475, medium: 789, hard: 236 }[difficulty],
@@ -115,9 +113,9 @@ test("v72: exact versioned topic partitions, six counts and difficulty filters r
     for (const card of counts)
       assert.equal(
         card.count,
-        questions.filter(
+        questionsV72.filter(
           (q) =>
-            q.difficulty === difficulty && belongsToPlayCategory(q.id, card.id),
+            q.difficulty === difficulty && belongsToPlayCategory(q.id, card.id, 2),
         ).length,
       );
   }
@@ -127,16 +125,19 @@ test("v72: all 30 additions are reachable through real filtered games, completed
   const random = () =>
     (seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0) / 4294967296;
   const remaining = new Set(approvedNewQuestionsV72.map((q) => q.id));
+  const completedByDifficulty: Partial<Record<"easy" | "medium" | "hard", GameRecord[]>> = {};
   for (let round = 0; round < 450 && remaining.size; round++) {
     const difficulty = (["easy", "medium", "hard"] as const)[round % 3]!;
+    if (![...remaining].some((id) => questionById.get(id)!.difficulty === difficulty)) continue;
     const s = createSession("mixed", undefined, time, {
       playCategory: "quran_dualar",
       difficulty,
       random,
       channel: "production",
+      history: completedByDifficulty[difficulty] ?? [],
     });
-    assert.equal(s.bankVersion, 73);
-    assert.equal(s.playCategoryVersion, 2);
+    assert.equal(s.bankVersion, 74);
+    assert.equal(s.playCategoryVersion, 3);
     for (const id of s.questionIds) {
       assert(belongsToPlayCategory(id, "quran_dualar"));
       assert.equal(questionById.get(id)!.difficulty, difficulty);
@@ -147,10 +148,11 @@ test("v72: all 30 additions are reachable through real filtered games, completed
     );
     assert.equal(new Set(keys).size, keys.length);
     const g = complete(s);
+    (completedByDifficulty[difficulty] ??= []).push(g);
     assert.equal(stats(g).score, 700);
     assert(validRecord(g));
     const stored = { ...emptyData(), games: [g] };
-    assert.deepEqual(parseData(JSON.stringify(stored)), stored);
+    assert.deepEqual(parseData(JSON.stringify(stored)), JSON.parse(JSON.stringify(stored)));
   }
   assert.deepEqual(
     [...remaining],
@@ -195,6 +197,8 @@ test("v72: old broad and topic games, pre-fix PR82 previews, answer orders, scor
     .filter(
       (q) =>
         q.difficulty === "easy" &&
+        questionsV72.some((next) => next.id === q.id) &&
+        assignedLearningTopic(q.id, 2) === "quran" &&
         belongsToPlayCategory(q.id, "quran_dualar", 1),
     )
     .slice(0, 10)
@@ -240,20 +244,23 @@ test("v72: old broad and topic games, pre-fix PR82 previews, answer orders, scor
   );
   const previews = [
     {
-      ...current,
+      ...historical,
       id: "quiz-preview-broad-v72",
       bankVersion: 72,
       playCategoryVersion: 1 as const,
     },
     {
-      ...topic,
+      ...historical,
+      playCategory: undefined,
+      playCategoryVersion: undefined,
+      learningTopic: "quran" as const,
       id: "quiz-preview-topic-v72",
       bankVersion: 72,
       learningTopicVersion: 2 as const,
     },
   ];
   const stored = { ...emptyData(), games: [historical, current, ...previews] };
-  assert.deepEqual(parseData(JSON.stringify(stored)), stored);
+  assert.deepEqual(parseData(JSON.stringify(stored)), JSON.parse(JSON.stringify(stored)));
   assert.deepEqual(stats(stored.games[0]!), oldStats);
   assert.deepEqual(progress([stored.games[0]!]), oldProgress);
   assert(!validRecord({ ...historical, playCategoryVersion: 2 }));

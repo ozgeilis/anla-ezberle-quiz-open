@@ -17,14 +17,14 @@ const load = (name: string) =>
   JSON.parse(readFileSync(`docs/audits/${name}`, "utf8"));
 
 test("source audit cannot silently rewrite any published v31 question, options, answers or metadata", () => {
-  assert.equal(BANK_VERSION, 73);
+  assert.equal(BANK_VERSION, 74);
   assert.equal(questions.length, 600);
   assert.equal(
     createHash("sha256").update(JSON.stringify(questions)).digest("hex"),
     "a0a8b3ff481b2476ce46e542a1575a0fdb1b7407cbab1d6232ab4cb0408c9151",
   );
   for (const channel of ["production", "prototype"] as const)
-    assert.equal(playableQuestions(channel).length, 1500);
+    assert.equal(playableQuestions(channel).length, 3000);
   for (const proposal of religiousSourceCorrectionsV1) {
     const original = questions.find((q) => q.id === proposal.questionId)!;
     assert.equal(original.version, proposal.baseQuestionVersion);

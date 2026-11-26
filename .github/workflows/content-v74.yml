@@ -1,0 +1,100 @@
+name: v74 content and isolated server acceptance
+on:
+  pull_request:
+    paths:
+      - "src/content/questions/**"
+      - "src/domain/game/**"
+      - "src/storage/schema.ts"
+      - "src/storage/GameProvider.tsx"
+      - "src/features/home/**"
+      - "scripts/*bank*"
+      - "scripts/*content*"
+      - "scripts/quick-play-smoke.mjs"
+      - "supabase/migrations/*canonical_bank_v74.sql"
+      - "supabase/tests/canonical_bank_v74.sql"
+      - ".github/workflows/content-v74.yml"
+permissions:
+  contents: read
+concurrency:
+  group: v74-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  isolated-acceptance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413
+        with:
+          version: 11.25.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm exec tsx scripts/build-bank-v74.ts --check
+      - run: pnpm exec tsx --test tests/content-expansion-baseline.test.ts tests/content-expansion-integrity.test.ts tests/v74-integration.test.ts tests/quick-play.test.ts tests/canonical-online-bank.test.ts tests/canonical-questions.test.ts tests/broad-categories-history.test.ts
+      - name: Export guest-only browser fixture
+        env:
+          EXPO_NO_DOTENV: "1"
+          EXPO_PUBLIC_CONTENT_CHANNEL: production
+          EXPO_PUBLIC_SUPABASE_URL: http://127.0.0.1:55431
+          EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: sb_publishable_ui_fixture_only
+        run: pnpm exec expo export --platform web --max-workers 2
+      - name: Install isolated browser
+        timeout-minutes: 10
+        run: |
+          npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Real browser quick-play acceptance
+        timeout-minutes: 5
+        run: pnpm exec tsx scripts/quick-play-smoke.mjs
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: always()
+        with:
+          name: quick-play-browser-evidence
+          path: artifacts/quick-play/
+          if-no-files-found: ignore
+      - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359
+        with:
+          version: 2.121.0
+      - name: Initialize isolated fixture with unused host ports
+        run: |
+          python3 - <<'PY'
+          import os
+          import re
+          import socket
+          from pathlib import Path
+          p = Path("supabase/config.toml")
+          s = p.read_text()
+          setting = "[storage]\nenabled = false"
+          assert s.count(setting) == 1
+          s = s.replace(setting, "[storage]\nenabled = true", 1)
+          # CI-only identity and ports; never change another project's containers
+          # or rely on the developer machine's fixed Supabase ports being free.
+          project = f"anla-v74-{os.environ['GITHUB_RUN_ID']}-{os.environ['GITHUB_RUN_ATTEMPT']}"
+          s, count = re.subn(r'^project_id = "[^"]+"', f'project_id = "{project}"', s, count=1, flags=re.M)
+          assert count == 1
+          reserved = []
+          def unused_port(match):
+              sock = socket.socket()
+              sock.bind(("0.0.0.0", 0))
+              reserved.append(sock)
+              return match[1] + str(sock.getsockname()[1])
+          s = re.sub(r'^(\s*(?:port|shadow_port|inspector_port)\s*=\s*)\d+', unused_port, s, flags=re.M)
+          p.write_text(s)
+          for sock in reserved:
+              sock.close()
+          PY
+      - name: Start local-only fixture without hosted credentials
+        id: start_fixture
+        run: supabase start --exclude studio,imgproxy,postgres-meta,logflare,vector,supavisor,edge-runtime
+      - name: Validate v74, frozen banks, private keys, ACL and scoring
+        run: pnpm exec tsx scripts/check-canonical-bank-local.ts "$RUNNER_TEMP/v74-private"
+      - name: Stop isolated fixture
+        if: always() && (steps.start_fixture.outcome == 'success' || steps.start_fixture.outcome == 'failure')
+        run: supabase stop --no-backup

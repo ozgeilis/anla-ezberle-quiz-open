@@ -138,8 +138,8 @@ test("all 30 topic/level options use the real independent selector, without out-
         }
         const session = createSession("mixed", undefined, time, settings);
         assert.equal(session.learningTopic, topic.id);
-        assert.equal(session.learningTopicVersion, 3);
-        assert.equal(session.bankVersion, 73);
+        assert.equal(session.learningTopicVersion, 4);
+        assert.equal(session.bankVersion, 74);
         assert.equal(session.focus, undefined);
         assert.equal(new Set(session.questionIds).size, 10);
         const selected = session.questionIds.map((id) =>
@@ -188,7 +188,7 @@ test("all 30 topic/level options use the real independent selector, without out-
 
 test("100 unpublished drafts never enter topic pools, even in prototype or alongside approved questions", () => {
   assert.equal(drafts.length, 100);
-  assert.equal(questions.length, 1500);
+  assert.equal(questions.length, 3000);
   assert(drafts.every((q) => q.reviewStatus === "draft"));
   const combined = [...bank, ...drafts];
   for (const topic of learningTopicsV1) {
@@ -243,7 +243,7 @@ test("topic results round-trip with a frozen taxonomy; foreign topic IDs/version
       /doğrulanamadı/,
     );
   rejects({ ...record, learningTopic: "kadin_sahabeler" });
-  rejects({ ...record, learningTopicVersion: 4 });
+  rejects({ ...record, learningTopicVersion: 5 });
   rejects({ ...record, learningTopic: undefined });
   rejects({ ...record, learningTopicVersion: undefined });
   rejects({ ...record, bankVersion: 13 });
@@ -300,8 +300,8 @@ test("legacy v13/v14 games keep their bytes, scores and XP when learning-topic r
   assert.equal(JSON.stringify(stored), before);
 });
 
-test("all 1,500 approved current questions have exactly one playable learning topic", () => {
-  assert.equal(bank.length, 1500);
+test("all 3,000 approved current questions have exactly one playable learning topic", () => {
+  assert.equal(bank.length, 3000);
   const covered: string[] = [];
   for (const topic of learningTopicsV1) {
     const assigned = learningTopicPool(bank, topic.id);
@@ -312,18 +312,18 @@ test("all 1,500 approved current questions have exactly one playable learning to
   }
   assert.equal(
     covered.length,
-    1500,
+    3000,
     "Every approved question must appear in a subject card",
   );
   assert.equal(
     new Set(covered).size,
-    1500,
+    3000,
     "A question must never appear in two learning topics",
   );
   assert.deepEqual(new Set(covered), new Set(bank.map((q) => q.id)));
   const displayedCounts = learningOptions(bank).map((topic) => topic.count);
   assert.equal(
     displayedCounts.reduce((sum, count) => sum + count, 0),
-    1500,
+    3000,
   );
 });

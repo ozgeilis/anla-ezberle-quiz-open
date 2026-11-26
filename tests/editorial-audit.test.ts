@@ -178,6 +178,7 @@ test("Thirty reproducible batches cover all 1,500 actual category memberships; p
       belongsToPlayCategory(
         r.id,
         r.category as Parameters<typeof belongsToPlayCategory>[1],
+        2,
       ),
       r.id,
     );
@@ -194,7 +195,7 @@ test("Thirty reproducible batches cover all 1,500 actual category memberships; p
 
 test("The draft v73 cannot pass the unchanged canonical online export approval gate", () => {
   assert.throws(
-    () => buildOnlineContentRows(questionsV73Candidate),
+    () => buildOnlineContentRows(questionsV73Candidate, 73),
     /Source\/conditional-approval gate|Only the exact approved canonical/,
   );
 });

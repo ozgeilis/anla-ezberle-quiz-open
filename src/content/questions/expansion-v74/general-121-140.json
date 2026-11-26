@@ -1,0 +1,842 @@
+[
+  {
+    "id": "new74-general-121",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Satın alma niyeti olmadığı halde fiyatı yükseltmek için teklif vermeye fıkıhta ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Neceş"
+      },
+      {
+        "id": "o2",
+        "text": "Selem"
+      },
+      {
+        "id": "o3",
+        "text": "Karz"
+      },
+      {
+        "id": "o4",
+        "text": "Tevliye"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Neceş, gerçek alım niyeti olmadan fiyatı yükselten teklif vermektir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/neces",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 72 (basılı sayfa numarası değildir)",
+        "supports": "Neceş, gerçek alım niyeti olmadan fiyatı yükselten teklif vermektir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-najash-fake-bid-no-purchase-intent"
+  },
+  {
+    "id": "new74-general-122",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Kamuya zarar verecek şekilde malı piyasadan çekip kıtlık veya fiyat artışı bekleme hangi terimle anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İnfak"
+      },
+      {
+        "id": "o2",
+        "text": "İhtikâr"
+      },
+      {
+        "id": "o3",
+        "text": "İâre"
+      },
+      {
+        "id": "o4",
+        "text": "İbrâ"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "İhtikâr, karaborsacılık ve istifçilikle ilgili terimdir; her olağan stoklama bu kapsamda değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ihtikar",
+        "locator": "Tanım bölümü: tüketim mallarının kamuya zarar verecek şekilde piyasadan çekilmesi; erişilen TDV elektronik madde metni.",
+        "supports": "İhtikâr, karaborsacılık ve istifçilikle ilgili terimdir; her olağan stoklama bu kapsamda değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ihtikar-harmful-market-hoarding"
+  },
+  {
+    "id": "new74-general-123",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Klasik fıkıhta alış fiyatı veya maliyet açıklanıp üzerine belirli kâr eklenerek yapılan satış hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tevliye"
+      },
+      {
+        "id": "o2",
+        "text": "Vadîa"
+      },
+      {
+        "id": "o3",
+        "text": "Murâbaha"
+      },
+      {
+        "id": "o4",
+        "text": "Karz"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Murâbaha, maliyete bilinen bir kârın eklendiği güvene dayalı satış türüdür.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/murabaha",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,98 (basılı sayfa numarası değildir)",
+        "supports": "Murâbaha, maliyete bilinen bir kârın eklendiği güvene dayalı satış türüdür.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-murabaha-disclosed-cost-profit"
+  },
+  {
+    "id": "new74-general-124",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bir malın alış fiyatı veya maliyeti değiştirilmeden satılması hangi satış türüdür?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Murâbaha"
+      },
+      {
+        "id": "o2",
+        "text": "Vadîa"
+      },
+      {
+        "id": "o3",
+        "text": "Selem"
+      },
+      {
+        "id": "o4",
+        "text": "Tevliye"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Tevliyede mal maliyetine satılır; kâr veya indirim eklenmez.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tevliye",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "Tevliyede mal maliyetine satılır; kâr veya indirim eklenmez.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-tawliya-sale-at-cost"
+  },
+  {
+    "id": "new74-general-125",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Maliyeti açıklanan bir malın bu maliyetin altında satıldığı güvene dayalı işlem hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vadîa"
+      },
+      {
+        "id": "o2",
+        "text": "Murâbaha"
+      },
+      {
+        "id": "o3",
+        "text": "Tevliye"
+      },
+      {
+        "id": "o4",
+        "text": "Sarf"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Vadîa, malın alış bedeli veya maliyetinden düşük bir bedelle satılmasıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/vadia",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-97 (basılı sayfa numarası değildir)",
+        "supports": "Vadîa, malın alış bedeli veya maliyetinden düşük bir bedelle satılmasıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-wadia-sale-below-cost"
+  },
+  {
+    "id": "new74-general-126",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Satıcının maliyet beyanı esas alınmadan fiyatın tarafların pazarlığıyla belirlendiği satış hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tevliye"
+      },
+      {
+        "id": "o2",
+        "text": "Müsâveme"
+      },
+      {
+        "id": "o3",
+        "text": "Murâbaha"
+      },
+      {
+        "id": "o4",
+        "text": "Vadîa"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Müsâvemede bedel, satıcının maliyetini bildirmesine bağlı olmadan pazarlıkla belirlenir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/murabaha",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 97 (basılı sayfa numarası değildir)",
+        "supports": "Müsâvemede bedel, satıcının maliyetini bildirmesine bağlı olmadan pazarlıkla belirlenir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-musawama-price-independent-cost"
+  },
+  {
+    "id": "new74-general-127",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Bağlayıcı ve feshe elverişli bir akdin tarafların karşılıklı rızâsıyla kaldırılmasına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Havâle"
+      },
+      {
+        "id": "o2",
+        "text": "Kefâlet"
+      },
+      {
+        "id": "o3",
+        "text": "İkāle"
+      },
+      {
+        "id": "o4",
+        "text": "Rehin"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "İkāle, mevcut akdi karşılıklı anlaşmayla ortadan kaldıran işlemdir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ikale",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "İkāle, mevcut akdi karşılıklı anlaşmayla ortadan kaldıran işlemdir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-iqala-mutual-contract-rescission"
+  },
+  {
+    "id": "new74-general-128",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Sahibinin terk etmediği, fakat kaybolup başkasınca bulunan ve sahibi bilinmeyen mala ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Vakfiye"
+      },
+      {
+        "id": "o2",
+        "text": "Mehir"
+      },
+      {
+        "id": "o3",
+        "text": "Tereke"
+      },
+      {
+        "id": "o4",
+        "text": "Lukata"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Lukata, sahibi bilinmeyen buluntu maldır; onu bulmak sahibinin hakkını ortadan kaldırmaz.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/lukata",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,99 (basılı sayfa numarası değildir)",
+        "supports": "Lukata, sahibi bilinmeyen buluntu maldır; onu bulmak sahibinin hakkını ortadan kaldırmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-luqata-lost-property-owner-unknown"
+  },
+  {
+    "id": "new74-general-129",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Fıkıh literatüründe anne babası bilinmeyen, terk edilmiş veya kaybolmuş buluntu çocuk hangi terimle anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Lakīt"
+      },
+      {
+        "id": "o2",
+        "text": "Müsteftî"
+      },
+      {
+        "id": "o3",
+        "text": "Mükâteb"
+      },
+      {
+        "id": "o4",
+        "text": "Mûris"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Lakīt başlığı, böyle çocukların güvenle korunması ve mümkünse ailelerinin bulunmasıyla ilgilidir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/lakit",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96,99 (basılı sayfa numarası değildir)",
+        "supports": "Lakīt başlığı, böyle çocukların güvenle korunması ve mümkünse ailelerinin bulunmasıyla ilgilidir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-laqit-found-child-protection"
+  },
+  {
+    "id": "new74-general-130",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Belirli bir işi yapana ücret veya mükâfat vaad edilmesini anlatan fıkıh kavramı hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Şüf‘a"
+      },
+      {
+        "id": "o2",
+        "text": "Cuâle"
+      },
+      {
+        "id": "o3",
+        "text": "Vedîa"
+      },
+      {
+        "id": "o4",
+        "text": "Havâle"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Cuâle, bir iş için mükâfat vaadidir; geçerlilik şartları konusunda mezhepler farklı hükümler geliştirmiştir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/cuale",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-100 (basılı sayfa numarası değildir)",
+        "supports": "Cuâle, bir iş için mükâfat vaadidir; geçerlilik şartları konusunda mezhepler farklı hükümler geliştirmiştir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-juala-reward-promise-for-work"
+  },
+  {
+    "id": "new74-general-131",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Fıkıhta paranın para ile değişimini konu alan akid hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İcâre"
+      },
+      {
+        "id": "o2",
+        "text": "Âriyet"
+      },
+      {
+        "id": "o3",
+        "text": "Sarf"
+      },
+      {
+        "id": "o4",
+        "text": "İstisnâ‘"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Sarf, para türlerinin birbiriyle değişimine ilişkin akiddir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/sarf--fikih",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Sarf, para türlerinin birbiriyle değişimine ilişkin akiddir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-sarf-money-for-money-exchange"
+  },
+  {
+    "id": "new74-general-132",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "hard",
+    "question": "Hanefî tanımında kişinin sözlü tasarruflarının hukukî geçerliliğinin kısıtlanmasına ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İbrâ"
+      },
+      {
+        "id": "o2",
+        "text": "İcâzet"
+      },
+      {
+        "id": "o3",
+        "text": "İkrâr"
+      },
+      {
+        "id": "o4",
+        "text": "Hacir"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Hacir, belirli hukukî işlemlerin sonuç doğurmasının engellenmesi veya kısıtlanmasıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/hacir",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96-98 (basılı sayfa numarası değildir)",
+        "supports": "Hacir, belirli hukukî işlemlerin sonuç doğurmasının engellenmesi veya kısıtlanmasıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-hajr-legal-capacity-restriction"
+  },
+  {
+    "id": "new74-general-133",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Kişinin kendi aleyhine, başkasına ait bir hakkı kabul ederek bildirmesine ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İkrar"
+      },
+      {
+        "id": "o2",
+        "text": "İnkâr"
+      },
+      {
+        "id": "o3",
+        "text": "Havâle"
+      },
+      {
+        "id": "o4",
+        "text": "İkāle"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "İkrar, kişinin kendisi aleyhine bir hakkı haber vermesidir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ikrar--fikih",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "İkrar, kişinin kendisi aleyhine bir hakkı haber vermesidir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-iqrar-admit-another-right-against-self"
+  },
+  {
+    "id": "new74-general-134",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hukukî uyuşmazlığı çözmesi için tarafların üçüncü bir kişiyi hakem seçmesine ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Tevliye satışı"
+      },
+      {
+        "id": "o2",
+        "text": "Tahkîm"
+      },
+      {
+        "id": "o3",
+        "text": "İbrâ"
+      },
+      {
+        "id": "o4",
+        "text": "Teberru"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "Tahkîm, uyuşmazlığın çözümü için hakem tayin edilmesini ifade eder.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tahkim--fikih",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 96 (basılı sayfa numarası değildir)",
+        "supports": "Tahkîm, uyuşmazlığın çözümü için hakem tayin edilmesini ifade eder.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-tahkim-appoint-arbitrator-dispute"
+  },
+  {
+    "id": "new74-general-135",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Osmanlı miras hukukunda ölen kişinin geride bıraktığı mallar hangi terimle anılır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Nisap"
+      },
+      {
+        "id": "o2",
+        "text": "Mehir"
+      },
+      {
+        "id": "o3",
+        "text": "Tereke"
+      },
+      {
+        "id": "o4",
+        "text": "Fidye"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Tereke, vefat eden kişinin geride bıraktığı mal varlığını anlatır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/tereke",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 70-72 (basılı sayfa numarası değildir)",
+        "supports": "Tereke, vefat eden kişinin geride bıraktığı mal varlığını anlatır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-tereke-deceased-estate"
+  },
+  {
+    "id": "new74-general-136",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Kabul ile birlikte bir akdin kurulmasını sağlayan teklif niteliğindeki irade beyanı hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "İbrâ"
+      },
+      {
+        "id": "o2",
+        "text": "İstibrâ"
+      },
+      {
+        "id": "o3",
+        "text": "İhtikâr"
+      },
+      {
+        "id": "o4",
+        "text": "Îcap"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Îcap ve kabul, akdin kurulmasını sağlayan birbirine uygun irade beyanlarıdır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/icab",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 72 (basılı sayfa numarası değildir)",
+        "supports": "Îcap ve kabul, akdin kurulmasını sağlayan birbirine uygun irade beyanlarıdır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ijab-offer-with-acceptance"
+  },
+  {
+    "id": "new74-general-137",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Hukukî işlemle edinilen bir malı üzerinde tasarruf edebilecek biçimde teslim almaya ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kabz"
+      },
+      {
+        "id": "o2",
+        "text": "İkāle"
+      },
+      {
+        "id": "o3",
+        "text": "İnfak"
+      },
+      {
+        "id": "o4",
+        "text": "Hacir"
+      }
+    ],
+    "correctOptionId": "o1",
+    "explanation": "Kabz, hak sahibinin malı hâkimiyeti altına almasıdır; uygulanış biçimi malın türüne göre değişebilir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/kabz--fikih",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 98,100-102 (basılı sayfa numarası değildir)",
+        "supports": "Kabz, hak sahibinin malı hâkimiyeti altına almasıdır; uygulanış biçimi malın türüne göre değişebilir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-qabd-taking-legal-possession"
+  },
+  {
+    "id": "new74-general-138",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Alacaklının borçludaki hakkından karşılıksız vazgeçmesine ne denir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Havâle"
+      },
+      {
+        "id": "o2",
+        "text": "İbrâ"
+      },
+      {
+        "id": "o3",
+        "text": "Rehin"
+      },
+      {
+        "id": "o4",
+        "text": "Murâbaha"
+      }
+    ],
+    "correctOptionId": "o2",
+    "explanation": "İbrâda alacak hakkı düşürülür; borç başka bir kişiye aktarılmış olmaz.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/ibra",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 97 (basılı sayfa numarası değildir)",
+        "supports": "İbrâda alacak hakkı düşürülür; borç başka bir kişiye aktarılmış olmaz.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-ibra-forgiving-debt-right"
+  },
+  {
+    "id": "new74-general-139",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "İslâm miras hukukunu ve mirasçıların paylarını inceleyen ilim dalı hangisidir?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Garîbü’l-hadîs"
+      },
+      {
+        "id": "o2",
+        "text": "Tecvid"
+      },
+      {
+        "id": "o3",
+        "text": "Ferâiz"
+      },
+      {
+        "id": "o4",
+        "text": "İlm-i mîkāt"
+      }
+    ],
+    "correctOptionId": "o3",
+    "explanation": "Ferâiz, mirasın paylaşımını inceleyen ilim dalı olarak kullanılır.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/feraiz",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 71,98 (basılı sayfa numarası değildir)",
+        "supports": "Ferâiz, mirasın paylaşımını inceleyen ilim dalı olarak kullanılır.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-faraid-inheritance-science"
+  },
+  {
+    "id": "new74-general-140",
+    "version": 1,
+    "categoryId": "general",
+    "difficulty": "medium",
+    "question": "Fıkıhta aile ilişkilerinden doğan bakım yükümlülüğü ve bunun için yapılan harcamalar hangi kavramın kapsamındadır?",
+    "options": [
+      {
+        "id": "o1",
+        "text": "Kefâret"
+      },
+      {
+        "id": "o2",
+        "text": "Şüf‘a"
+      },
+      {
+        "id": "o3",
+        "text": "Lukata"
+      },
+      {
+        "id": "o4",
+        "text": "Nafaka"
+      }
+    ],
+    "correctOptionId": "o4",
+    "explanation": "Nafaka, bakım için gereken harcamaları kapsar; kavram yalnız boşanma sonrasıyla sınırlı değildir.",
+    "sources": [
+      {
+        "title": "TDV İslâm Ansiklopedisi",
+        "publisher": "TDV İslâm Araştırmaları Merkezi",
+        "url": "https://islamansiklopedisi.org.tr/nafaka",
+        "locator": "Elektronik madde, erişim anındaki metin satırları 71,96-99 (basılı sayfa numarası değildir)",
+        "supports": "Nafaka, bakım için gereken harcamaları kapsar; kavram yalnız boşanma sonrasıyla sınırlı değildir.",
+        "checkStatus": "supported",
+        "checkedAt": "2026-11-25"
+      }
+    ],
+    "reviewStatus": "reviewed",
+    "reviewNotes": "Açılmış resmî kaynak pasajıyla karşılaştırılmış adaydır; banka çapında tekrar, seçenek ve zorluk kabulü bekler. Uzman/yayın onayı değildir.",
+    "updatedAt": "2026-11-25",
+    "conceptGroup": "v74-nafaqa-maintenance-duty"
+  }
+]

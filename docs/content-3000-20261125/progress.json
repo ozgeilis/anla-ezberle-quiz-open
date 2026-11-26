@@ -1,0 +1,277 @@
+{
+  "baseCommit": "3a74086",
+  "bankVersion": 73,
+  "questionCount": 1500,
+  "uniqueIds": 1500,
+  "bankSha256": "917c721b152ce3d40c60cd1d37c6c45c0ac3aa73b5f05b2c4a0ffd871330e35d",
+  "distributionDecision": "2026-11-25: user chose 375 new questions per existing schema category; preserve old category assignments",
+  "categories": [
+    {
+      "id": "quran",
+      "title": "Kur’an",
+      "existing": 450,
+      "newTarget": 375,
+      "projectedTotal": 825,
+      "provisionalFinalDifficulty": {
+        "easy": 275,
+        "medium": 275,
+        "hard": 275
+      },
+      "provisionalNewDifficulty": {
+        "easy": 105,
+        "medium": 23,
+        "hard": 247
+      },
+      "existingDifficulty": {
+        "easy": 170,
+        "medium": 252,
+        "hard": 28
+      }
+    },
+    {
+      "id": "prophets",
+      "title": "Peygamberler",
+      "existing": 230,
+      "newTarget": 375,
+      "projectedTotal": 605,
+      "provisionalFinalDifficulty": {
+        "easy": 201,
+        "medium": 202,
+        "hard": 202
+      },
+      "provisionalNewDifficulty": {
+        "easy": 138,
+        "medium": 77,
+        "hard": 160
+      },
+      "existingDifficulty": {
+        "easy": 63,
+        "medium": 125,
+        "hard": 42
+      }
+    },
+    {
+      "id": "history",
+      "title": "İslam Tarihi",
+      "existing": 401,
+      "newTarget": 375,
+      "projectedTotal": 776,
+      "provisionalFinalDifficulty": {
+        "easy": 259,
+        "medium": 258,
+        "hard": 259
+      },
+      "provisionalNewDifficulty": {
+        "easy": 185,
+        "medium": 34,
+        "hard": 156
+      },
+      "existingDifficulty": {
+        "easy": 74,
+        "medium": 224,
+        "hard": 103
+      }
+    },
+    {
+      "id": "general",
+      "title": "Genel Bilgi",
+      "existing": 419,
+      "newTarget": 375,
+      "projectedTotal": 794,
+      "provisionalFinalDifficulty": {
+        "easy": 265,
+        "medium": 265,
+        "hard": 264
+      },
+      "provisionalNewDifficulty": {
+        "easy": 97,
+        "medium": 77,
+        "hard": 201
+      },
+      "existingDifficulty": {
+        "easy": 168,
+        "medium": 188,
+        "hard": 63
+      }
+    }
+  ],
+  "screenCategories": [
+    {
+      "id": "quran_dualar",
+      "title": "Kur'an ve Dualar",
+      "total": 213
+    },
+    {
+      "id": "siyer_sahabe",
+      "title": "Peygamberimizin Hayatı ve Sahabe",
+      "total": 313
+    },
+    {
+      "id": "peygamberler",
+      "title": "Peygamber Kıssaları",
+      "total": 271
+    },
+    {
+      "id": "fikih",
+      "title": "İbadet ve Fıkıh",
+      "total": 161
+    },
+    {
+      "id": "iman_ahlak",
+      "title": "İman ve Ahlak",
+      "total": 260
+    },
+    {
+      "id": "tarih_medeniyet",
+      "title": "İslam Tarihi ve Medeniyeti",
+      "total": 282
+    }
+  ],
+  "newQuestionsAdded": 1500,
+  "newQuestionsStaged": 1500,
+  "stagedByCategory": {
+    "quran": 375,
+    "prophets": 375,
+    "history": 375,
+    "general": 375
+  },
+  "stagedStructuralIssueCount": 0,
+  "newQuestionsRemaining": 0,
+  "existingReplacementsStaged": 146,
+  "sourceRechecks": 1500,
+  "answerSupportIssues": 1,
+  "stemScopeIssues": 7,
+  "fullExplanationRechecks": 1496,
+  "sourceChecksPending": 0,
+  "confirmedOverlappingFactGroups": 131,
+  "minimumRedundantEntries": 146,
+  "flaggedQuestions": 171,
+  "structuralIssueCount": 0,
+  "runtimeBankModified": true,
+  "readyForIntegration": true,
+  "limitations": [
+    "Independent theological expert approval is not claimed.",
+    "Difficulty is based on knowledge and options; original equal-third provisional plan was not forced by relabelling.",
+    "Similarity screening and manual review cannot prove every conceivable paraphrase unique.",
+    "Full suite: 482 tests; 481 passed, one failed due to the pre-existing missing ignored Google native source file.",
+    "Local Docker unavailable; final isolated GitHub SQL acceptance passed on run 45794437930. No hosted migration."
+  ],
+  "currentBankVersion": 74,
+  "currentQuestionCount": 3000,
+  "fullOldOptionAndDifficultyReviews": 1500,
+  "fullNewDifficultyReviews": 1500,
+  "existingPatchedRecords": 563,
+  "topicMappingsComplete": true,
+  "integrationStatus": "v74 wired and local engine/history tests passed in isolated content worktree; main/backend/store unchanged",
+  "difficultyDistribution": [
+    {
+      "id": "quran",
+      "old": 450,
+      "new": 375,
+      "total": 825,
+      "easy": 210,
+      "medium": 498,
+      "hard": 117
+    },
+    {
+      "id": "prophets",
+      "old": 230,
+      "new": 375,
+      "total": 605,
+      "easy": 220,
+      "medium": 232,
+      "hard": 153
+    },
+    {
+      "id": "history",
+      "old": 401,
+      "new": 375,
+      "total": 776,
+      "easy": 137,
+      "medium": 369,
+      "hard": 270
+    },
+    {
+      "id": "general",
+      "old": 419,
+      "new": 375,
+      "total": 794,
+      "easy": 327,
+      "medium": 319,
+      "hard": 148
+    }
+  ],
+  "screenDistribution": [
+    {
+      "id": "quran_dualar",
+      "total": 627,
+      "easy": 163,
+      "medium": 369,
+      "hard": 95
+    },
+    {
+      "id": "siyer_sahabe",
+      "total": 526,
+      "easy": 178,
+      "medium": 190,
+      "hard": 158
+    },
+    {
+      "id": "peygamberler",
+      "total": 409,
+      "easy": 94,
+      "medium": 225,
+      "hard": 90
+    },
+    {
+      "id": "fikih",
+      "total": 337,
+      "easy": 148,
+      "medium": 138,
+      "hard": 51
+    },
+    {
+      "id": "iman_ahlak",
+      "total": 401,
+      "easy": 200,
+      "medium": 169,
+      "hard": 32
+    },
+    {
+      "id": "tarih_medeniyet",
+      "total": 700,
+      "easy": 111,
+      "medium": 327,
+      "hard": 262
+    }
+  ],
+  "baselineNote": "bankVersion/questionCount/bankSha256 and original categories record the immutable v73 starting audit; currentBankVersion/currentQuestionCount/difficultyDistribution describe v74.",
+  "finalCiRun": 45794437930,
+  "finalQualityQuickPlay": {
+    "status": "COMPLETED_TARGETED_BROWSER_AND_ISOLATED_SQL_PASSED_NATIVE_RELEASE_BLOCKER_OPEN",
+    "reviewedSample": 56,
+    "targetedRefinements": 8,
+    "changedDifficultyLabels": 5,
+    "changedOptionSets": 3,
+    "newWrongKeysConfirmed": 0,
+    "questionIdsChanged": false,
+    "questionCount": 3000,
+    "newBranch": false,
+    "policy": "Existing XP levels only; level 1:10/0/0, level 2:9/1/0, level 5:6/4/0, level 10:3/6/1, level 15:2/6/2, level 20+:1/6/3 (easy/medium/hard). At most one new harder slot per level.",
+    "ci": {
+      "status": "PASSED",
+      "runId": 45794437930,
+      "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45794437930",
+      "sourceCommit": "cbde74c1ece3ca00fdfe6378231925e38fc0a846",
+      "typecheck": "PASSED",
+      "fullLint": "PASSED",
+      "sourceManifest": "PASSED",
+      "selectedContentHistoryAndQuickPlayTests": 40,
+      "realBrowser": "PASSED",
+      "isolatedSQLAcceptance": "PASSED",
+      "hostedChanged": false
+    },
+    "browserScreenshots": 12,
+    "readyForStore": false
+  }
+}

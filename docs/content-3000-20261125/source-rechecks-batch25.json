@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-25",
+  "method": "Manual source comparison",
+  "groups": [
+    {
+      "ids": [
+        "v10-history-009",
+        "q45-cezeri-kitap",
+        "q45-cezeri-saat",
+        "q45-cezeri-tulumba",
+        "q45-cezeri-amir"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/cezeri-ismail-b-rezzaz",
+      "locator": "TDV mechanical work, six sections, patron and pump conversion (96–97, 112); pin/slot detail not yet independently checked",
+      "partialIds": ["q45-cezeri-tulumba"],
+      "note": "Stem, four choices, key and explanation compared with actual article. Cezeri auxiliary mechanism detail remains partial."
+    },
+    {
+      "ids": [
+        "v11-history-003",
+        "q45-haldun-mukaddime",
+        "q45-haldun-umran",
+        "q45-haldun-bedevi",
+        "q45-haldun-ilim"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/mukaddime--ibn-haldun",
+      "locator": "TDV relation to Iber, umran, parts II/III and VI (96–105, 112–114)",
+      "partialIds": [],
+      "note": "Stem, four choices, keyed answer and explanation compared against actual paragraphs."
+    },
+    {
+      "ids": [
+        "q61-salihpeygamber-semud",
+        "q61-salihpeygamber-deve",
+        "q61-salihpeygamber-su",
+        "q61-salihpeygamber-hocr",
+        "q61-salihpeygamber-son"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/salih--peygamber",
+      "locator": "TDV Semud, Hicr, camel, drinking days, prohibition of harm and three days (96–107)",
+      "partialIds": [],
+      "note": "Stem, four choices, keyed answer and explanation compared against actual paragraphs."
+    },
+    {
+      "ids": [
+        "q69-abdullahbomerbhattab-hafsa",
+        "q69-abdullahbomerbhattab-uhud",
+        "q69-abdullahbomerbhattab-hendek",
+        "q69-abdullahbomerbhattab-hadis",
+        "q69-abdullahbomerbhattab-zincir"
+      ],
+      "url": "https://islamansiklopedisi.org.tr/abdullah-b-omer-b-hattab",
+      "locator": "TDV Hafsa, Uhud/Hendek age narrative, 2630 and isnad (96–97, 105–107)",
+      "partialIds": [],
+      "note": "Stem, four choices, keyed answer and explanation compared against actual paragraphs."
+    }
+  ]
+}
