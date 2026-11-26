@@ -143,7 +143,18 @@ export function AdProvider({ children }: React.PropsWithChildren) {
         return;
       await runtime.current.initialize();
       if (!alive.current || revision !== generation.current.value) return;
-      full.current = runtime.current.interstitial(setAdReady);
+      full.current = runtime.current.interstitial(
+        setAdReady,
+        () =>
+          alive.current &&
+          revision === generation.current.value &&
+          current.current.foreground &&
+          !current.current.session &&
+          ["/", "/results"].includes(current.current.path),
+      );
+      // Do not rely on a React state/route change to start an iOS preload:
+      // revalidation can finish with the same rendered ready/path values.
+      if (Platform.OS === "ios") full.current.load();
       setReadyRuntime(runtime.current);
       setReady(true);
       setError(

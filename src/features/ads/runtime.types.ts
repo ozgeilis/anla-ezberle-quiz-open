@@ -20,6 +20,9 @@ export interface AdsRuntime {
   consent(interactive: boolean): Promise<ConsentResult>;
   privacyOptions(): Promise<PrivacyOptionsResult>;
   initialize(): Promise<void>;
-  interstitial(onReady: (ready: boolean) => void): FullscreenAd;
+  interstitial(
+    onReady: (ready: boolean) => void,
+    canLoad?: () => boolean,
+  ): FullscreenAd;
   Banner: ComponentType<BannerProps>;
 }

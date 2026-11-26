@@ -1,7 +1,9 @@
 import React from "react";
+import { Platform } from "react-native";
 import type { AdsRuntime, BannerProps } from "./runtime.types";
 import { consentDecision } from "./consent";
-import { createInterstitial } from "./interstitial";
+import { createInterstitial, type InterstitialPort } from "./interstitial";
+import { createInterstitialCycle } from "./interstitialCycle";
 import { createAdInitializer } from "./initialization";
 import { adConfig } from "./adConfig";
 import { mayUseAdvertisingTracking } from "./tracking";
@@ -76,26 +78,28 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
       return { ...authorized, formPresented };
     },
     initialize,
-    interstitial(onReady) {
-      const ad = sdk.InterstitialAd.createForAdRequest(
-        adConfig.interstitialUnitId ?? sdk.TestIds.INTERSTITIAL,
-        requestOptions,
-      );
+    interstitial(onReady, canLoad = () => true) {
       const events = {
         loaded: sdk.AdEventType.LOADED,
         opened: sdk.AdEventType.OPENED,
         closed: sdk.AdEventType.CLOSED,
         error: sdk.AdEventType.ERROR,
       };
-      return createInterstitial(
-        {
+      const createPort = (): InterstitialPort => {
+        const ad = sdk.InterstitialAd.createForAdRequest(
+          adConfig.interstitialUnitId ?? sdk.TestIds.INTERSTITIAL,
+          requestOptions,
+        );
+        return {
           load: () => ad.load(),
           show: () => ad.show(),
           destroy: () => ad.destroy(),
           listen: (event, fn) => ad.addAdEventListener(events[event], fn),
-        },
-        onReady,
-      );
+        };
+      };
+      return Platform.OS === "ios"
+        ? createInterstitialCycle(createPort, onReady, canLoad)
+        : createInterstitial(createPort(), onReady);
     },
     Banner,
   };
