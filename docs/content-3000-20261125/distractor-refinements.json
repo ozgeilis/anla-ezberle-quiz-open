@@ -2578,6 +2578,706 @@
         "Ziyaretçileri isim sırasına koyardı"
       ],
       "reason": "Source-compared batch review: replace unrelated or trivially moral distractors with nearby, incorrect alternatives."
+    },
+    {
+      "id": "new74-quran-331",
+      "before": [
+        "Yalnız yolculukla",
+        "Sadece öğrenilen bilgilerin sayısıyla",
+        "Yalnız yaşadığı şehrin büyüklüğüyle"
+      ],
+      "after": [
+        "Yalnız uzun yolculuk ve yer değiştirmeyle",
+        "Sadece mal çoğalması ve nüfus artışıyla",
+        "Yalnız beden gücü ve yaşla"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-quran-336",
+      "before": [
+        "Sorumluluktan bütünüyle kaçacak yol",
+        "Sırf insanlar arasında şöhret",
+        "Yalnız daha yüksek makam"
+      ],
+      "after": [
+        "İnsanların bütün beğenilerini kazanacak yol",
+        "Sorumluluklarını tamamen kaldıracak ayrıcalık",
+        "Yalnız başkalarına üstünlük sağlayan makam"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-quran-339",
+      "before": [
+        "Sadece şehir surları",
+        "Yalnız ticaret defterleri",
+        "Sadece kapalı yollar"
+      ],
+      "after": [
+        "Yalnız şehir surlarının kapıları",
+        "Sadece ticaret kervanlarının yolları",
+        "Yalnız hükümdarların hazineleri"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-331",
+      "before": [
+        "Kendisini bütün namazlardan muaf tutmasını",
+        "Evini satın almasını",
+        "Köyünü başka yere taşımasını"
+      ],
+      "after": [
+        "Namazlarını bir sonraki yıla ertelemesine izin",
+        "Her vakitte kendisi için mescide araç gönderilmesi",
+        "Köy mescidinin bütünüyle başka yere taşınması"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-332",
+      "before": [
+        "Her durumda mutlaka ayakta",
+        "Yalnız yürürken",
+        "Sadece bir başkasına kıldırarak"
+      ],
+      "after": [
+        "Her durumda mutlaka ayakta durmak",
+        "Yalnız oturarak kılmak, yatışa hiç geçmemek",
+        "İyileşene kadar bütün namazları bırakmak"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-336",
+      "before": [
+        "Öğrenmeyi yalnız erkeklere bırakmıştır",
+        "Yalnız evde beklemelerini istemiştir",
+        "Sorularını cevapsız bırakmıştır"
+      ],
+      "after": [
+        "Sorularını sadece yazılı göndermelerini istemiştir",
+        "Yalnız erkek yakınlarından öğrenmelerini istemiştir",
+        "Öğrenim buluşmasını hacca kadar ertelemiştir"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-337",
+      "before": [
+        "Yalnız daha hızlı soğutmak için",
+        "Ticarete konu etmek için",
+        "Yemeği ertesi aya saklamak için"
+      ],
+      "after": [
+        "Çorbayı ertesi güne de saklayabilmek için",
+        "Yemeği daha çabuk soğutabilmek için",
+        "Pişirme süresini her zaman kısaltmak için"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-338",
+      "before": [
+        "Vergi için her yöntemin uygun olduğunu",
+        "Yalnız akrabalara eziyetin yasak olduğunu",
+        "Cezanın mevsime bağlı olduğunu"
+      ],
+      "after": [
+        "İşkencenin vergi borcunu kendiliğinden düşüreceğini",
+        "Yalnız aynı aileden olana eziyetin yasak olduğunu",
+        "Cezanın yazın uygulanması gerektiğini"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-340",
+      "before": [
+        "Yalnız fidye ödeyince su vermeleri",
+        "Bütün yiyeceğini kendi getirmesini istemeleri",
+        "Onu yemek vaktinde yalnız bırakmaları"
+      ],
+      "after": [
+        "Fidyeyi peşin ödedikten sonra sofraya almaları",
+        "Yemeği yalnız kendi akrabalarından istemesine izin vermeleri",
+        "Sadece suyu paylaşmaları, yiyeceği vermemeleri"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-342",
+      "before": [
+        "Bütün yolculuklarını bırakmasını",
+        "Kendiliğinden yazı yazmaya başlamasını",
+        "Sürekli ticaret kervanı yönetmesini"
+      ],
+      "after": [
+        "Uzun süreli bütün yolculuklarını bırakmasını",
+        "Kendi başına dinî hükümler yazmaya başlamasını",
+        "Yalnız Kâbe hizmetini üstlenmesini"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-345",
+      "before": [
+        "Yolculukta zikrin yasak olduğunu bildirerek",
+        "Tekbiri yalnız imamın duyabileceğini söyleyerek",
+        "Zikrin ancak gece yapılacağını belirterek"
+      ],
+      "after": [
+        "Tekbirin yalnız mescitte söylenebileceğini belirterek",
+        "Tekbiri yolculuk dönüşüne bırakmalarını isteyerek",
+        "Her tepenin yalnız bir kişiye ayrıldığını söyleyerek"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-349",
+      "before": [
+        "Her zaman ayrı yemek",
+        "Yemeği mutlaka gizlemek",
+        "Sofrada hiç kimseyle paylaşmamak"
+      ],
+      "after": [
+        "Her öğünde mutlaka yemek çeşidini artırmak",
+        "Her kişinin yemeğini ayrı hazırlamak",
+        "Yemeği yalnız akşamdan sonra yemek"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-332",
+      "before": [
+        "Yalnız mezar kitâbeleriyle",
+        "Sikke dökümleriyle",
+        "Duvar çinileriyle"
+      ],
+      "after": [
+        "Menzillere ait vakfiyelerle",
+        "Her şehir için yazdığı kasidelerle",
+        "Kale duvarlarına işlenen kabartmalarla"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-336",
+      "before": [
+        "Kara ordularını saymak",
+        "Vakıf gelirlerini hesaplamak",
+        "Medrese öğrencilerini kaydetmek"
+      ],
+      "after": [
+        "Yalnız Akdeniz limanlarının vergilerini kaydetmek",
+        "Kara seferlerinde ordu mevcudunu belirlemek",
+        "Hac kafilelerinin konaklama masraflarını hesaplamak"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-340",
+      "before": [
+        "Hastaların bakım ihtiyacının",
+        "Barınma ihtiyacının",
+        "Çalışma gücünün"
+      ],
+      "after": [
+        "Yalnız aynı şehirde doğanları kabul etmenin",
+        "Yalnız aynı mesleği yapanları kabul etmenin",
+        "Yalnız aynı cemiyete üye olanları kabul etmenin"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-342",
+      "before": [
+        "Yalnız hacı vergisi",
+        "Zorunlu lonca üyelik ücreti",
+        "Yalnız yabancı devlet borcu"
+      ],
+      "after": [
+        "Yalnız asker maaşlarından kesintiler",
+        "Sadece yabancı devlet kredileri",
+        "Yalnız esnaftan zorunlu üyelik ücretleri"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-346",
+      "before": [
+        "Yalnız hat sanatını",
+        "Yalnız gemi yapımını",
+        "Sadece savaş taktiklerini"
+      ],
+      "after": [
+        "Yalnız Arapça ve Farsça grameri",
+        "Sadece yazı ve tezhip sanatlarını",
+        "Yalnız askerî talim derslerini"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-336",
+      "before": [
+        "Gecenin yalnız ilk dakikası",
+        "Akşamdan hemen önceki süre",
+        "Öğle ile ikindi arası"
+      ],
+      "after": [
+        "Gecenin ilk üçte biri",
+        "Öğle ile ikindi arası",
+        "Güneşin tam tepe noktası"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-338",
+      "before": [
+        "Yalnız aynı hızdaki rüzgârlarla",
+        "Aynı ağırlıktaki taşlarla",
+        "Yalnız aynı büyüklükteki denizlerle"
+      ],
+      "after": [
+        "Aynı suyu taşıyan kapların büyüklükleriyle",
+        "Çeşitli meyvelerin olgunlaşma süreleriyle",
+        "Farklı yönlere esen rüzgârların hızlarıyla"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-339",
+      "before": [
+        "Servet, şöhret ve gösterişli mezar",
+        "Uzun ömür, güçlü beden ve unvan",
+        "Soy, meslek ve evin büyüklüğü"
+      ],
+      "after": [
+        "Miras bırakılan her mal, unvan ve şöhret",
+        "Her bağış, her konuşma ve her aile bağı",
+        "Yalnız meslek, kazanç ve uzun ömür"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-341",
+      "before": [
+        "Malını saklayan ve bilgisini gizleyen",
+        "Yalnız çok kazanan ve çok konuşan",
+        "Soyuyla övünen ve makamını gösteren"
+      ],
+      "after": [
+        "Malını çoğaltıp saklayan ve ilmini yalnız kendine ayıran",
+        "Serveti çok olan ve soyu tanınmış olan",
+        "Yalnız çok ezberleyen ve çok konuşan"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-342",
+      "before": [
+        "Her rüyanın kesin gelecek haberi olması",
+        "Her rüyanın hukukî hüküm koyması",
+        "Yalnız başkalarının gördüğünü tekrarlama"
+      ],
+      "after": [
+        "Her rüyanın gelecekten kesin haber oluşu",
+        "Rüyaların tamamının aynı kaynaktan gelişi",
+        "Rüyayla yeni dinî yükümlülük konulması"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-345",
+      "before": [
+        "Yalnız kendi soyundan kişilerle olmak",
+        "Dünyadaki evinin aynısını bulmak",
+        "Bütün hesapların başkalarına devredilmesi"
+      ],
+      "after": [
+        "Bütün yakınlarının hesabını üstlenmek",
+        "Dünyadaki makamını aynen sürdürmek",
+        "Yalnız kendi ailesiyle aynı yerde bulunmak"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-347",
+      "before": [
+        "Önceki bütün sevabının silindiği",
+        "Ancak mal verirse sevap kalacağı",
+        "Her ibadetin yerine başkasını tutması gerektiği"
+      ],
+      "after": [
+        "Yalnız kaçırdığı her işi yeniden yaparsa ecir alacağı",
+        "Mazereti uzadıkça eski ecrinin azalacağı",
+        "Yalnız başkasının onun adına yaptığı işin yazılacağı"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-349",
+      "before": [
+        "Herkesi dinlemekten",
+        "Adaletle karar vermekten",
+        "İşleri ehline vermekten"
+      ],
+      "after": [
+        "Dilekçeleri kayda geçirip sırayla değerlendirmek",
+        "İşleri uygun görevlilere dağıtmak",
+        "Kararlarda tarafları dinlemek"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-quran-331",
+      "before": [
+        "Yalnız uzun yolculuk ve yer değiştirmeyle",
+        "Sadece mal çoğalması ve nüfus artışıyla",
+        "Yalnız beden gücü ve yaşla"
+      ],
+      "after": [
+        "Yalnız uzun yolculuk ve yer değiştirmeyle",
+        "Sadece mal çoğalması ve nüfus artışıyla",
+        "Yalnız beden gücü ve yaşla"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-quran-336",
+      "before": [
+        "İnsanların bütün beğenilerini kazanacak yol",
+        "Sorumluluklarını tamamen kaldıracak ayrıcalık",
+        "Yalnız başkalarına üstünlük sağlayan makam"
+      ],
+      "after": [
+        "İnsanların bütün beğenilerini kazanacak yol",
+        "Sorumluluklarını tamamen kaldıracak ayrıcalık",
+        "Yalnız başkalarına üstünlük sağlayan makam"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-quran-339",
+      "before": [
+        "Yalnız şehir surlarının kapıları",
+        "Sadece ticaret kervanlarının yolları",
+        "Yalnız hükümdarların hazineleri"
+      ],
+      "after": [
+        "Yalnız şehir surlarının kapıları",
+        "Sadece ticaret kervanlarının yolları",
+        "Yalnız hükümdarların hazineleri"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-331",
+      "before": [
+        "Namazlarını bir sonraki yıla ertelemesine izin",
+        "Her vakitte kendisi için mescide araç gönderilmesi",
+        "Köy mescidinin bütünüyle başka yere taşınması"
+      ],
+      "after": [
+        "Namazlarını bir sonraki yıla ertelemesine izin",
+        "Her vakitte kendisi için mescide araç gönderilmesi",
+        "Köy mescidinin bütünüyle başka yere taşınması"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-332",
+      "before": [
+        "Her durumda mutlaka ayakta durmak",
+        "Yalnız oturarak kılmak, yatışa hiç geçmemek",
+        "İyileşene kadar bütün namazları bırakmak"
+      ],
+      "after": [
+        "Her durumda mutlaka ayakta durmak",
+        "Yalnız oturarak kılmak, yatışa hiç geçmemek",
+        "İyileşene kadar bütün namazları bırakmak"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-336",
+      "before": [
+        "Sorularını sadece yazılı göndermelerini istemiştir",
+        "Yalnız erkek yakınlarından öğrenmelerini istemiştir",
+        "Öğrenim buluşmasını hacca kadar ertelemiştir"
+      ],
+      "after": [
+        "Sorularını sadece yazılı göndermelerini istemiştir",
+        "Yalnız erkek yakınlarından öğrenmelerini istemiştir",
+        "Öğrenim buluşmasını hacca kadar ertelemiştir"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-337",
+      "before": [
+        "Çorbayı ertesi güne de saklayabilmek için",
+        "Yemeği daha çabuk soğutabilmek için",
+        "Pişirme süresini her zaman kısaltmak için"
+      ],
+      "after": [
+        "Çorbayı ertesi güne de saklayabilmek için",
+        "Yemeği daha çabuk soğutabilmek için",
+        "Pişirme süresini her zaman kısaltmak için"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-338",
+      "before": [
+        "İşkencenin vergi borcunu kendiliğinden düşüreceğini",
+        "Yalnız aynı aileden olana eziyetin yasak olduğunu",
+        "Cezanın yazın uygulanması gerektiğini"
+      ],
+      "after": [
+        "İşkencenin vergi borcunu kendiliğinden düşüreceğini",
+        "Yalnız aynı aileden olana eziyetin yasak olduğunu",
+        "Cezanın yazın uygulanması gerektiğini"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-340",
+      "before": [
+        "Fidyeyi peşin ödedikten sonra sofraya almaları",
+        "Yemeği yalnız kendi akrabalarından istemesine izin vermeleri",
+        "Sadece suyu paylaşmaları, yiyeceği vermemeleri"
+      ],
+      "after": [
+        "Fidyeyi peşin ödedikten sonra sofraya almaları",
+        "Yemeği yalnız kendi akrabalarından istemesine izin vermeleri",
+        "Sadece suyu paylaşmaları, yiyeceği vermemeleri"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-342",
+      "before": [
+        "Uzun süreli bütün yolculuklarını bırakmasını",
+        "Kendi başına dinî hükümler yazmaya başlamasını",
+        "Yalnız Kâbe hizmetini üstlenmesini"
+      ],
+      "after": [
+        "Uzun süreli bütün yolculuklarını bırakmasını",
+        "Kendi başına dinî hükümler yazmaya başlamasını",
+        "Yalnız Kâbe hizmetini üstlenmesini"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-345",
+      "before": [
+        "Tekbirin yalnız mescitte söylenebileceğini belirterek",
+        "Tekbiri yolculuk dönüşüne bırakmalarını isteyerek",
+        "Her tepenin yalnız bir kişiye ayrıldığını söyleyerek"
+      ],
+      "after": [
+        "Tekbirin yalnız mescitte söylenebileceğini belirterek",
+        "Tekbiri yolculuk dönüşüne bırakmalarını isteyerek",
+        "Her tepenin yalnız bir kişiye ayrıldığını söyleyerek"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-prophets-349",
+      "before": [
+        "Her öğünde mutlaka yemek çeşidini artırmak",
+        "Her kişinin yemeğini ayrı hazırlamak",
+        "Yemeği yalnız akşamdan sonra yemek"
+      ],
+      "after": [
+        "Her öğünde mutlaka yemek çeşidini artırmak",
+        "Her kişinin yemeğini ayrı hazırlamak",
+        "Yemeği yalnız akşamdan sonra yemek"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-332",
+      "before": [
+        "Menzillere ait vakfiyelerle",
+        "Her şehir için yazdığı kasidelerle",
+        "Kale duvarlarına işlenen kabartmalarla"
+      ],
+      "after": [
+        "Menzillere ait vakfiyelerle",
+        "Her şehir için yazdığı kasidelerle",
+        "Kale duvarlarına işlenen kabartmalarla"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-336",
+      "before": [
+        "Yalnız Akdeniz limanlarının vergilerini kaydetmek",
+        "Kara seferlerinde ordu mevcudunu belirlemek",
+        "Hac kafilelerinin konaklama masraflarını hesaplamak"
+      ],
+      "after": [
+        "Yalnız Akdeniz limanlarının vergilerini kaydetmek",
+        "Kara seferlerinde ordu mevcudunu belirlemek",
+        "Hac kafilelerinin konaklama masraflarını hesaplamak"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-340",
+      "before": [
+        "Yalnız aynı şehirde doğanları kabul etmenin",
+        "Yalnız aynı mesleği yapanları kabul etmenin",
+        "Yalnız aynı cemiyete üye olanları kabul etmenin"
+      ],
+      "after": [
+        "Yalnız aynı şehirde doğanları kabul etmenin",
+        "Yalnız aynı mesleği yapanları kabul etmenin",
+        "Yalnız aynı cemiyete üye olanları kabul etmenin"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-342",
+      "before": [
+        "Yalnız asker maaşlarından kesintiler",
+        "Sadece yabancı devlet kredileri",
+        "Yalnız esnaftan zorunlu üyelik ücretleri"
+      ],
+      "after": [
+        "Yalnız asker maaşlarından kesintiler",
+        "Sadece yabancı devlet kredileri",
+        "Yalnız esnaftan zorunlu üyelik ücretleri"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-history-346",
+      "before": [
+        "Yalnız Arapça ve Farsça grameri",
+        "Sadece yazı ve tezhip sanatlarını",
+        "Yalnız askerî talim derslerini"
+      ],
+      "after": [
+        "Yalnız Arapça ve Farsça grameri",
+        "Sadece yazı ve tezhip sanatlarını",
+        "Yalnız askerî talim derslerini"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-336",
+      "before": [
+        "Gecenin ilk üçte biri",
+        "Öğle ile ikindi arası",
+        "Güneşin tam tepe noktası"
+      ],
+      "after": [
+        "Gecenin ilk üçte biri",
+        "Öğle ile ikindi arası",
+        "Güneşin tam tepe noktası"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-338",
+      "before": [
+        "Aynı suyu taşıyan kapların büyüklükleriyle",
+        "Çeşitli meyvelerin olgunlaşma süreleriyle",
+        "Farklı yönlere esen rüzgârların hızlarıyla"
+      ],
+      "after": [
+        "Aynı suyu taşıyan kapların büyüklükleriyle",
+        "Çeşitli meyvelerin olgunlaşma süreleriyle",
+        "Farklı yönlere esen rüzgârların hızlarıyla"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-339",
+      "before": [
+        "Miras bırakılan her mal, unvan ve şöhret",
+        "Her bağış, her konuşma ve her aile bağı",
+        "Yalnız meslek, kazanç ve uzun ömür"
+      ],
+      "after": [
+        "Miras bırakılan her mal, unvan ve şöhret",
+        "Her bağış, her konuşma ve her aile bağı",
+        "Yalnız meslek, kazanç ve uzun ömür"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-341",
+      "before": [
+        "Malını çoğaltıp saklayan ve ilmini yalnız kendine ayıran",
+        "Serveti çok olan ve soyu tanınmış olan",
+        "Yalnız çok ezberleyen ve çok konuşan"
+      ],
+      "after": [
+        "Malını çoğaltıp saklayan ve ilmini yalnız kendine ayıran",
+        "Serveti çok olan ve soyu tanınmış olan",
+        "Yalnız çok ezberleyen ve çok konuşan"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-342",
+      "before": [
+        "Her rüyanın gelecekten kesin haber oluşu",
+        "Rüyaların tamamının aynı kaynaktan gelişi",
+        "Rüyayla yeni dinî yükümlülük konulması"
+      ],
+      "after": [
+        "Her rüyanın gelecekten kesin haber oluşu",
+        "Rüyaların tamamının aynı kaynaktan gelişi",
+        "Rüyayla yeni dinî yükümlülük konulması"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-345",
+      "before": [
+        "Bütün yakınlarının hesabını üstlenmek",
+        "Dünyadaki makamını aynen sürdürmek",
+        "Yalnız kendi ailesiyle aynı yerde bulunmak"
+      ],
+      "after": [
+        "Bütün yakınlarının hesabını üstlenmek",
+        "Dünyadaki makamını aynen sürdürmek",
+        "Yalnız kendi ailesiyle aynı yerde bulunmak"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-347",
+      "before": [
+        "Yalnız kaçırdığı her işi yeniden yaparsa ecir alacağı",
+        "Mazereti uzadıkça eski ecrinin azalacağı",
+        "Yalnız başkasının onun adına yaptığı işin yazılacağı"
+      ],
+      "after": [
+        "Yalnız kaçırdığı her işi yeniden yaparsa ecir alacağı",
+        "Mazereti uzadıkça eski ecrinin azalacağı",
+        "Yalnız başkasının onun adına yaptığı işin yazılacağı"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
+    },
+    {
+      "id": "new74-general-349",
+      "before": [
+        "Dilekçeleri kayda geçirip sırayla değerlendirmek",
+        "İşleri uygun görevlilere dağıtmak",
+        "Kararlarda tarafları dinlemek"
+      ],
+      "after": [
+        "Dilekçeleri kayda geçirip sırayla değerlendirmek",
+        "İşleri uygun görevlilere dağıtmak",
+        "Kararlarda tarafları dinlemek"
+      ],
+      "reason": "Topic-matched distractor review after checking the official source passage."
     }
   ],
   "semanticAcceptance": "pending",

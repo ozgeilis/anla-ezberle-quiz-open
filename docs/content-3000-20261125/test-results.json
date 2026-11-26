@@ -5,8 +5,8 @@
     "passed": 7,
     "failed": 0,
     "method": "node --import tsx -e require of content-expansion-baseline.test.ts, same-process node:test",
-    "scope": "1320 staged additions and 128 old editorial patches, including 98 duplicate replacements; after latest source, semantic and distractor refinements",
-    "durationMs": 117.929958
+    "scope": "1500 staged additions (375 per category) and 128 old editorial patches, including 98 duplicate replacements; after latest source, semantic and distractor refinements",
+    "durationMs": 118.470791
   },
   "targetedTypeScriptSemanticCheck": {
     "status": "PASSED",
@@ -41,7 +41,7 @@
       "question-similarity-audit",
       "audit-published-questions"
     ],
-    "note": "Completed on 500 staged additions and 126 old patches; selected suite only. Later changes are covered by the seven-test run on 1320 additions/128 old patches. No full application suite claim."
+    "note": "Completed on 500 staged additions and 126 old patches; selected suite only. Later changes are covered by the seven-test run on 1500 additions/128 old patches. No full application suite claim."
   },
   "fullProjectTypecheck": {
     "status": "PASSED",
@@ -63,7 +63,7 @@
   },
   "bank3000Integrity": {
     "status": "NOT_RUN",
-    "reason": "No 3000-question candidate exists yet; no new questions integrated."
+    "reason": "The 1500 additions now exist and their IDs, four-option shape and source receipts passed; final combined semantic/difficulty/topic/integration acceptance remains open."
   },
   "deviceTests": {
     "status": "NOT_RUN",
@@ -75,7 +75,7 @@
     "originalExplanationsSupported": 1496,
     "originalExplanationsRequiringCorrection": 4,
     "remainingExistingSourceChecks": 0,
-    "newSourceComparedStaged": 1320,
+    "newSourceComparedStaged": 1500,
     "existingDuplicateReplacementsStaged": 98,
     "bankWideSemanticAcceptance": "pending",
     "mediumHardFullDifficultyCalibration": "pending",
