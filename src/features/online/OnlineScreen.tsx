@@ -42,6 +42,7 @@ const contentScopeLabel: Record<OnlineMatch["scope"], string> = {
   owner_approved_v13: "Sunucuda doğrulanan yarışma",
   "bank-v72": "Sunucuda doğrulanan yarışma",
   "bank-v73": "Sunucuda doğrulanan yarışma",
+  "bank-v74": "Sunucuda doğrulanan yarışma",
 };
 
 const pendingKey = (actor: string, match: string) =>

@@ -53,7 +53,7 @@
     "unverifiedCandidateSources": 0
   },
   "serverSQL": {
-    "status": "NOT_RUN_LOCAL_DOCKER_TIMEOUT",
+    "status": "PASSED_INITIAL_ISOLATED_CI; LOCAL_DOCKER_UNAVAILABLE",
     "preparedCI": ".github/workflows/content-v74.yml",
     "hostedApplied": false
   },
@@ -76,5 +76,19 @@
   "canonicalGenerationCheck": {
     "status": "PASSED",
     "banks": "frozen v71/v72/v73 + current v74"
+  },
+  "initialServerCI": {
+    "status": "PASSED",
+    "sourceCommit": "7bf981c5faaa4327d7f9dffac634c7ac018ae433",
+    "runId": 45781366636,
+    "url": "https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45781366636",
+    "selectedUnitTests": 34,
+    "hostedCredentials": false,
+    "scope": "Isolated v72/v73/v74 staging, 264 live pools, server scoring, private keys/ACL/RLS, legacy history and safety regressions. Latest strengthened v73 cutover fixture is rechecked by the subsequent PR run."
+  },
+  "onlineClientRecheck": {
+    "status": "PASSED",
+    "tests": 26,
+    "scope": "v74 scope compatibility, canonical export, live, account and content tests"
   }
 }

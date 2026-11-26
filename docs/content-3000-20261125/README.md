@@ -106,5 +106,8 @@ mevcut; soru görevi adına kopyalanıp Auth değişikliği olarak commit edilme
 Tam testteki bu dosya eksikliği ayrıca raporlanır; yeni bankanın başarısı olarak gizlenmez.
 
 Yerel Docker API’si yanıt vermedi; Mac kilitli olduğu için durumu görüntülenemedi.
-SQL kabulü başarılı sayılmadı. Diğer projelerin Docker ortamı yeniden başlatılmadı.
+Yerel SQL kabulü çalışmadı; diğer projelerin Docker ortamı yeniden başlatılmadı.
+Bunun yerine [GitHub izole kabulü](https://github.com/ozgeilis/anla-ezberle-quiz-open/actions/runs/45781366636)
+geçti: 34 seçili test, v74 sunucu staging/sayım/havuz/ACL ve eski banka regresyonları.
+Sonraki dar v74 scope/gerçek v73 geçiş-fixture düzeltmesi için PR kontrolleri yeniden çalışır.
 Fiziksel cihaz testi, yeni IPA/AAB, main merge, canlı veri işlemi ve mağaza yayını yapılmadı.
