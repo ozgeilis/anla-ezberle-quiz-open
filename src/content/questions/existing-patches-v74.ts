@@ -1,4 +1,4 @@
-// Staged editorial corrections only; the active v73 bank remains unchanged.
+// Editorial inputs for v74. Historical v73 and earlier snapshots stay frozen.
 export const existingQuestionPatches = [
   {
     id: "e150-prophets-024",
@@ -3021,7 +3021,7 @@ export const existingQuestionPatches = [
     options: [
       {
         id: "o4",
-        text: "Mutlaka uzun süre nefes alarak",
+        text: "Nefes alıp kısa süre bekleyerek",
       },
       {
         id: "o2",
@@ -3029,11 +3029,11 @@ export const existingQuestionPatches = [
       },
       {
         id: "o1",
-        text: "Önceki kelimeyi silerek",
+        text: "Nefes almadan uzun süre susarak",
       },
       {
         id: "o3",
-        text: "Sonraki kelimeyi iki kez okuyarak",
+        text: "Nefes verip önceki kelimeden yeniden başlayarak",
       },
     ],
   },
@@ -3672,8 +3672,8 @@ export const existingQuestionPatches = [
   {
     id: "v9-general-007",
     reason:
-      "Full-option difficulty review: Common worship/recitation vocabulary, brief well-known surah or basic moral recognition.",
-    difficulty: "easy",
+      "Final beginner review: distinguishes the usul definition of Sunna from qiyas, istihsan and consensus; this technical framing belongs at intermediate level.",
+    difficulty: "medium",
   },
   {
     id: "v10-quran-001",

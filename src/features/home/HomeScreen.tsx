@@ -10,7 +10,7 @@ import { Button, Dialog, TextAction, Txt } from "../../components/ui";
 import { useAchievements } from "../achievements/AchievementProvider";
 import { dateKey, stats } from "../../domain/game/engine";
 import { useGameLibrary } from "../../storage/GameProvider";
-import { useTheme } from "../../theme/tokens";
+import { colors, useTheme } from "../../theme/tokens";
 import { HomeActionCard, HomePlayButton } from "./HomeActionCard";
 import { AdBanner } from "../ads/AdBanner";
 
@@ -43,7 +43,21 @@ export function HomeScreen() {
         <ReferenceHero>
           <PlayerHeader notifications />
           <HomeTitlePlaque dense />
-          <HomePlayButton onPress={() => router.push("/categories")} />
+          <HomePlayButton
+            onPress={() => {
+              if (
+                start("mixed", undefined, undefined, undefined, undefined, {
+                  quickPlay: true,
+                })
+              )
+                router.push("/quiz");
+            }}
+          />
+          <TextAction
+            title="Kategori ve zorluk seç"
+            color={colors.white}
+            onPress={() => router.push("/categories")}
+          />
         </ReferenceHero>
         <View style={{ paddingHorizontal: 16, gap: 20 }}>
           <View

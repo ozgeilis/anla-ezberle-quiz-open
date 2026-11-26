@@ -68,7 +68,7 @@ export function HomeActionCard({
 
 export function HomePlayButton({ onPress }: { onPress: () => void }) {
   return (
-    <Tap label="Oyuna Başla" onPress={onPress}>
+    <Tap label="Hemen Oyna, kategorilerden karışık 10 soru" onPress={onPress}>
       <ColorCardSurface
         tone="green"
         style={{
@@ -87,7 +87,7 @@ export function HomePlayButton({ onPress }: { onPress: () => void }) {
           color="#FFFFFF"
           style={{ flex: 1, textAlign: "center" }}
         >
-          Oyuna Başla
+          Hemen Oyna
         </Txt>
         <Icon name="chevron-right" size={18} color="#FFFFFF" />
       </ColorCardSurface>

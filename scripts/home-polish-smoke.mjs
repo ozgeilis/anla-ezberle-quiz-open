@@ -20,7 +20,7 @@ export async function homePolishSmoke(browser, root, baseline = false) {
       page.on("pageerror", (e) => errors.push(e.message));
       await page.goto("http://127.0.0.1:8117/", { waitUntil: "networkidle" });
       const play = page.getByRole("button", {
-        name: "Oyuna Başla",
+        name: "Hemen Oyna, kategorilerden karışık 10 soru",
         exact: true,
       });
       await play.waitFor();

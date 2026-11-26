@@ -7907,7 +7907,7 @@ export const questionsV74: readonly Question[] = [
     "options": [
       {
         "id": "o4",
-        "text": "Mutlaka uzun süre nefes alarak"
+        "text": "Nefes alıp kısa süre bekleyerek"
       },
       {
         "id": "o2",
@@ -7915,11 +7915,11 @@ export const questionsV74: readonly Question[] = [
       },
       {
         "id": "o1",
-        "text": "Önceki kelimeyi silerek"
+        "text": "Nefes almadan uzun süre susarak"
       },
       {
         "id": "o3",
-        "text": "Sonraki kelimeyi iki kez okuyarak"
+        "text": "Nefes verip önceki kelimeden yeniden başlayarak"
       }
     ],
     "correctOptionId": "o2",
@@ -12502,7 +12502,7 @@ export const questionsV74: readonly Question[] = [
     "id": "v9-general-007",
     "version": 3,
     "categoryId": "general",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question": "Fıkıh usulünde Hz. Peygamber'in söz, fiil ve onaylarını kapsayan terim hangisidir?",
     "options": [
       {
@@ -80013,7 +80013,7 @@ export const questionsV74: readonly Question[] = [
     "id": "new74-general-375",
     "version": 1,
     "categoryId": "general",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "question": "“Yıldızlar gökyüzünün güvenceleridir” hadisinde onların gitmesi hangi olayla ilişkilendirilir?",
     "options": [
       {
@@ -80139,7 +80139,7 @@ export const questionsV74: readonly Question[] = [
     "id": "new74-history-003",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question": "Mevlânâ’nın altı defterlik Mesnevî’si hangi dilde kaleme alınmıştır?",
     "options": [
       {
@@ -81105,7 +81105,7 @@ export const questionsV74: readonly Question[] = [
     "id": "new74-history-026",
     "version": 1,
     "categoryId": "history",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question": "Klasik minyatürün TDV’de belirtilen görsel özelliklerinden biri hangisidir?",
     "options": [
       {
@@ -111429,7 +111429,7 @@ export const questionsV74: readonly Question[] = [
     "id": "new74-prophets-373",
     "version": 1,
     "categoryId": "prophets",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "question": "Berâ b. Âzib’in tasvirinde Hz. Peygamber hangi renkte bir elbise içindedir?",
     "options": [
       {
@@ -126974,15 +126974,15 @@ export const questionsV74: readonly Question[] = [
     "options": [
       {
         "id": "o1",
-        "text": "Hepsini tartışmasız vahiy saymak"
+        "text": "Kur’an’a aykırı görünmeyen bütün ayrıntıları tasdik etmek"
       },
       {
         "id": "o2",
-        "text": "Hepsini kesin yalan saymak"
+        "text": "Aktaranın dindarlığına bakarak doğru kabul etmek"
       },
       {
         "id": "o3",
-        "text": "Onlarla yeni ibadet yükümlülüğü koymak"
+        "text": "Sözlü aktarılan ayrıntıları kesin olarak reddetmek"
       },
       {
         "id": "o4",
@@ -127142,15 +127142,15 @@ export const questionsV74: readonly Question[] = [
     "options": [
       {
         "id": "o1",
-        "text": "Denizde gemi yüzdürmek"
+        "text": "Allah’ın nurunu perdelerle örtmek"
       },
       {
         "id": "o2",
-        "text": "Toprağa tohum ekmek"
+        "text": "Allah’ın nurunu elleriyle gizlemek"
       },
       {
         "id": "o3",
-        "text": "Yolcuya gölge sağlamak"
+        "text": "Allah’ın nuruna sırtlarını dönmek"
       },
       {
         "id": "o4",

@@ -62,7 +62,10 @@ export async function referenceUiSmoke(browser, root) {
     };
     await page.goto("http://127.0.0.1:8117/", { waitUntil: "networkidle" });
     await page
-      .getByRole("button", { name: "Oyuna Başla", exact: true })
+      .getByRole("button", {
+        name: "Hemen Oyna, kategorilerden karışık 10 soru",
+        exact: true,
+      })
       .waitFor();
     await shot("home");
     // Category-first route and true 10-question round, with known right/wrong choices.

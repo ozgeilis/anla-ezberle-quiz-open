@@ -5,8 +5,11 @@ on:
       - "src/content/questions/**"
       - "src/domain/game/**"
       - "src/storage/schema.ts"
+      - "src/storage/GameProvider.tsx"
+      - "src/features/home/**"
       - "scripts/*bank*"
       - "scripts/*content*"
+      - "scripts/quick-play-smoke.mjs"
       - "supabase/migrations/*canonical_bank_v74.sql"
       - "supabase/tests/canonical_bank_v74.sql"
       - ".github/workflows/content-v74.yml"
@@ -34,7 +37,25 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm exec tsx scripts/build-bank-v74.ts --check
-      - run: pnpm exec tsx --test tests/content-expansion-baseline.test.ts tests/content-expansion-integrity.test.ts tests/v74-integration.test.ts tests/canonical-online-bank.test.ts tests/canonical-questions.test.ts tests/broad-categories-history.test.ts
+      - run: pnpm exec tsx --test tests/content-expansion-baseline.test.ts tests/content-expansion-integrity.test.ts tests/v74-integration.test.ts tests/quick-play.test.ts tests/canonical-online-bank.test.ts tests/canonical-questions.test.ts tests/broad-categories-history.test.ts
+      - name: Export guest-only browser fixture
+        env:
+          EXPO_NO_DOTENV: "1"
+          EXPO_PUBLIC_CONTENT_CHANNEL: production
+          EXPO_PUBLIC_SUPABASE_URL: http://127.0.0.1:55431
+          EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY: sb_publishable_ui_fixture_only
+        run: pnpm exec expo export --platform web --max-workers 2
+      - name: Real browser quick-play acceptance
+        run: |
+          npm install --prefix "$RUNNER_TEMP/visual-node" --no-save playwright@1.56.1
+          "$RUNNER_TEMP/visual-node/node_modules/.bin/playwright" install --with-deps chromium
+          pnpm exec tsx scripts/quick-play-smoke.mjs
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: always()
+        with:
+          name: quick-play-browser-evidence
+          path: artifacts/quick-play/
+          if-no-files-found: ignore
       - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359
         with:
           version: 2.121.0

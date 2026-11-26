@@ -19,3 +19,17 @@
 | İzole SQL kabulü | Son GitHub CI koşusu GEÇTİ; yerelde çalışmadı | 45783982572, kod 895624a; v73 maçı v74 geçişinden sonra eski anahtarlarıyla tamamlandı |
 | Gerçek cihaz / yeni iOS veya Android paketi | ÇALIŞTIRILMADI | Bu görevde build ve mağaza dağıtımı yapılmadı |
 | Main / canlı Supabase / mağazalar | Değiştirilmedi | Ayrı onay sınırı korunuyor |
+
+## Son kalite ve Hemen Oyna ek görevi
+
+| Gereksinim | Durum | Kanıt / kalan işlem |
+|---|---|---|
+| Mevcut PR ve kaynak koruması | Doğrulandı | PR #33, aynı dal; main ve diğer worktree’ler değişmedi |
+| Dört kategori / 3.000 ID | GEÇTİ | Son integrity testleri; her kategoriye 375 yeni kayıt korunuyor |
+| Son zorluk ve çeldirici kontrolü | İncelendi ve test edildi | 56 örnek; beş zorluk ve üç seçenek seti düzeltmesi |
+| Hemen Oyna | Kodlandı ve domain testleri geçti | Doğrudan karma tur, dört kategori, gerçek XP seviyesine göre yumuşak dağılım |
+| Tekrar Oyna devamlılığı | Kodlandı ve test edildi | Yeni kayıtların quickPlay işareti; eski kayıt formatı korunur |
+| XP / çözülenler / eski v1–v73 | GEÇTİ | 47 hedefli test içinde eski cevap/XP ve yeniden açılış |
+| Gerçek tarayıcı UI kabulü | CI bekleniyor | Yerel CUA iki tarayıcıda kapalı bildirdi; CI Chromium testi hazır |
+| Google native altyapı hatası | Yeniden doğrulandı, giderilmedi | ios/ ignore kuralı özgün podspec/Swift dosyalarını Git dışında bırakıyor; Auth yeniden yazılmadı |
+| IPA/AAB, main veya mağaza yayını | Yapılmadı | Son kabul/onay sınırı korunuyor |

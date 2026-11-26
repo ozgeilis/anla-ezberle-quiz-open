@@ -10,6 +10,8 @@ import {
   stageDefinition,
 } from "./stages";
 import { selectionConceptKeys } from "./concepts";
+import { quickPlayCounts } from "./quick-play";
+import { rewardSummary } from "../scoring/rewards";
 import { unseenQuestionPool } from "./history";
 import {
   PLAY_CATEGORY_VERSION,
@@ -46,6 +48,7 @@ export interface Answer {
   openedAt?: number;
 }
 export interface Session extends GameContent {
+  quickPlay?: true;
   timingVersion?: TimingVersion;
   questionOpenedAt?: number;
   playCategory?: PlayCategoryId;
@@ -281,6 +284,86 @@ export function assessDifficultyRound(
   };
 }
 
+// Reuse the existing independent-question solver. Four category witnesses keep
+// quick play mixed while the remaining six slots satisfy the same level quota.
+// Search alternative witnesses rather than greedily rejecting a valid pool.
+export function selectQuickPlayQuestions(
+  pool: readonly Question[],
+  counts: DifficultyCounts,
+  recentIds: readonly string[] = [],
+  random = Math.random,
+): Question[] {
+  if (
+    Object.values(counts).some((n) => !Number.isSafeInteger(n) || n < 0) ||
+    counts.easy + counts.medium + counts.hard !== 10
+  )
+    throw new Error(
+      "Hemen Oyna için 10 soruluk geçerli zorluk dağılımı gerekir.",
+    );
+  const recent = new Set(recentIds);
+  const candidates = shuffle(pool, random).sort(
+    (a, b) => Number(recent.has(a.id)) - Number(recent.has(b.id)),
+  );
+  const order = shuffle(
+    categories.map((c) => c.id),
+    random,
+  ).sort(
+    (a, b) =>
+      candidates.filter((q) => q.categoryId === a && counts[q.difficulty] > 0)
+        .length -
+      candidates.filter((q) => q.categoryId === b && counts[q.difficulty] > 0)
+        .length,
+  );
+  const search = (
+    remaining: readonly Question[],
+    quota: DifficultyCounts,
+    categoryIndex: number,
+  ): Question[] | null => {
+    if (categoryIndex === order.length)
+      return independentQuestions(remaining, quota, 6);
+    if (
+      (["easy", "medium", "hard"] as const).some(
+        (d) => remaining.filter((q) => q.difficulty === d).length < quota[d],
+      ) ||
+      order
+        .slice(categoryIndex)
+        .some(
+          (id) =>
+            !remaining.some(
+              (q) => q.categoryId === id && quota[q.difficulty] > 0,
+            ),
+        )
+    )
+      return null;
+    for (const q of remaining) {
+      if (q.categoryId !== order[categoryIndex] || quota[q.difficulty] === 0)
+        continue;
+      const used = new Set(selectionConceptKeys(q));
+      const tail = remaining.filter(
+        (next) =>
+          next.id !== q.id &&
+          !selectionConceptKeys(next).some((key) => used.has(key)),
+      );
+      const found = search(
+        tail,
+        { ...quota, [q.difficulty]: quota[q.difficulty] - 1 },
+        categoryIndex + 1,
+      );
+      if (found) return [q, ...found];
+    }
+    return null;
+  };
+  const result = search(candidates, counts, 0);
+  if (!result)
+    throw new Error(
+      "Bu seviyede dört kategoriden yeterli bağımsız yeni soru yok. Kategori ve zorluk seçerek devam edebilirsin.",
+    );
+  const rank = { easy: 0, medium: 1, hard: 2 };
+  return shuffle(result, random).sort(
+    (a, b) => rank[a.difficulty] - rank[b.difficulty],
+  );
+}
+
 // Difficulty rounds use all four subject areas, without demanding a rigid
 // 3/3/2/2 split that might exclude a sparse difficulty/category pairing.
 export function selectDifficultyQuestions(
@@ -398,8 +481,21 @@ export function createSession(
     playCategory?: PlayCategoryId;
     history?: readonly GameRecord[];
     allowReplay?: boolean;
+    quickPlay?: boolean;
   } = {},
 ): Session {
+  if (
+    options.quickPlay &&
+    (mode !== "mixed" ||
+      focus !== undefined ||
+      options.difficulty ||
+      options.stage ||
+      options.learningTopic ||
+      options.playCategory)
+  )
+    throw new Error(
+      "Hemen Oyna yalnız kategori seçilmemiş karma turda kullanılabilir.",
+    );
   if (
     options.stage !== undefined &&
     (!isGameStage(options.stage) ||
@@ -448,10 +544,32 @@ export function createSession(
     : options.learningTopic
       ? learningTopicPool(available, options.learningTopic)
       : available;
-  const status =
-    !key && options.history?.length
+  const quickCounts = options.quickPlay
+    ? quickPlayCounts(rewardSummary(options.history ?? []))
+    : undefined;
+  const status = quickCounts
+    ? {
+        exhausted: (() => {
+          try {
+            selectQuickPlayQuestions(
+              unseenQuestionPool(subjectQuestions, options.history ?? []),
+              quickCounts,
+              [],
+              () => 0.5,
+            );
+            return false;
+          } catch {
+            return true;
+          }
+        })(),
+      }
+    : !key && options.history?.length
       ? assessFreshRound(subjectQuestions, options, options.history)
       : { exhausted: false };
+  if (quickCounts && status.exhausted && !options.allowReplay)
+    throw new Error(
+      "Bu seviyede dört kategoriden yeterli bağımsız yeni soru kalmadı. Kategori ve zorluk seçerek devam edebilirsin.",
+    );
   if (!key && status.exhausted && !options.allowReplay)
     throw new NewQuestionsExhaustedError();
   const replay = !key && status.exhausted && options.allowReplay === true;
@@ -477,23 +595,31 @@ export function createSession(
       return fresh;
     }
   };
-  const pool = options.stage
-    ? selectStageQuestions(
+  const pool = quickCounts
+    ? selectQuickPlayQuestions(
         allQuestions,
-        options.stage,
+        quickCounts,
         options.recentIds,
         random,
       )
-    : options.difficulty
-      ? selectDifficultyQuestions(
+    : options.stage
+      ? selectStageQuestions(
           allQuestions,
-          options.difficulty,
+          options.stage,
           options.recentIds,
           random,
-          mode === "focus" ? focus : undefined,
         )
-      : mixedSelection();
+      : options.difficulty
+        ? selectDifficultyQuestions(
+            allQuestions,
+            options.difficulty,
+            options.recentIds,
+            random,
+            mode === "focus" ? focus : undefined,
+          )
+        : mixedSelection();
   return {
+    ...(options.quickPlay ? { quickPlay: true as const } : {}),
     ...(options.playCategory
       ? {
           playCategory: options.playCategory,

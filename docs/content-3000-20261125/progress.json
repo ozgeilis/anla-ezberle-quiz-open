@@ -179,16 +179,16 @@
       "new": 375,
       "total": 605,
       "easy": 220,
-      "medium": 233,
-      "hard": 152
+      "medium": 232,
+      "hard": 153
     },
     {
       "id": "history",
       "old": 401,
       "new": 375,
       "total": 776,
-      "easy": 139,
-      "medium": 367,
+      "easy": 137,
+      "medium": 369,
       "hard": 270
     },
     {
@@ -196,9 +196,9 @@
       "old": 419,
       "new": 375,
       "total": 794,
-      "easy": 328,
+      "easy": 327,
       "medium": 319,
-      "hard": 147
+      "hard": 148
     }
   ],
   "screenDistribution": [
@@ -213,8 +213,8 @@
       "id": "siyer_sahabe",
       "total": 526,
       "easy": 178,
-      "medium": 191,
-      "hard": 157
+      "medium": 190,
+      "hard": 158
     },
     {
       "id": "peygamberler",
@@ -226,25 +226,37 @@
     {
       "id": "fikih",
       "total": 337,
-      "easy": 149,
-      "medium": 137,
+      "easy": 148,
+      "medium": 138,
       "hard": 51
     },
     {
       "id": "iman_ahlak",
       "total": 401,
       "easy": 200,
-      "medium": 170,
-      "hard": 31
+      "medium": 169,
+      "hard": 32
     },
     {
       "id": "tarih_medeniyet",
       "total": 700,
-      "easy": 113,
-      "medium": 325,
+      "easy": 111,
+      "medium": 327,
       "hard": 262
     }
   ],
   "baselineNote": "bankVersion/questionCount/bankSha256 and original categories record the immutable v73 starting audit; currentBankVersion/currentQuestionCount/difficultyDistribution describe v74.",
-  "finalCiRun": 45783982572
+  "finalCiRun": 45783982572,
+  "finalQualityQuickPlay": {
+    "status": "CODED_TARGETED_TESTS_PASSED_BROWSER_CI_PENDING",
+    "reviewedSample": 56,
+    "targetedRefinements": 8,
+    "changedDifficultyLabels": 5,
+    "changedOptionSets": 3,
+    "newWrongKeysConfirmed": 0,
+    "questionIdsChanged": false,
+    "questionCount": 3000,
+    "newBranch": false,
+    "policy": "Existing XP levels only; level 1:10/0/0, level 2:9/1/0, level 5:6/4/0, level 10:3/6/1, level 15:2/6/2, level 20+:1/6/3 (easy/medium/hard). At most one new harder slot per level."
+  }
 }

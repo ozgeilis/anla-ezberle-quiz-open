@@ -15,10 +15,10 @@ konu haritası kullanır; bunlar dört veri kategorisiyle karıştırılmaz.
 | Kategori | Eski | Yeni | Toplam | Kolay | Orta | Zor |
 |---|---:|---:|---:|---:|---:|---:|
 | Kur’an | 450 | 375 | 825 | 210 | 498 | 117 |
-| Peygamberler | 230 | 375 | 605 | 220 | 233 | 152 |
-| İslam Tarihi | 401 | 375 | 776 | 139 | 367 | 270 |
-| Genel Bilgi | 419 | 375 | 794 | 328 | 319 | 147 |
-| TOPLAM | 1500 | 1500 | 3000 | 897 | 1417 | 686 |
+| Peygamberler | 230 | 375 | 605 | 220 | 232 | 153 |
+| İslam Tarihi | 401 | 375 | 776 | 137 | 369 | 270 |
+| Genel Bilgi | 419 | 375 | 794 | 327 | 319 | 148 |
+| TOPLAM | 1500 | 1500 | 3000 | 894 | 1418 | 688 |
 
 Zorluklar her soru ve gerçek seçenekleri üzerinden yeniden değerlendirildi.
 İlk planın 1.000/1.000/1.000 tahmini gerçekleşmiş gibi sunulmaz; sırf sayıları
@@ -126,3 +126,11 @@ Son gerçek worktree tam testi: **482 test; 481 geçti, 1 yukarıda belirtilen
 Google native Swift kaynak eksikliği nedeniyle başarısız**.
 Yerel Docker kontrolü başarısız kaldı; yerine kullanılan CI veritabanı sentetik ve izoledir.
 Main merge, canlı v74 etkinleştirmesi ve mağaza dağıtımı yapılmadı.
+
+## Son kalite ve Hemen Oyna ek görevi
+
+[Hedefli son inceleme ve Hemen Oyna raporu](FINAL-QUALITY-QUICK-PLAY.md).
+Mevcut 3.000 içerik korunarak 56 örnek yeniden okundu; beş zorluk ve üç
+çeldirici seti düzeltildi. Ana düğme kategori seçtirmeden mevcut XP seviyesine
+göre dört kategoriden karma tur açar; kategori/zorluk seçimi ayrı korunur.
+Bu ek görevin testleri `test-results.json/finalQualityQuickPlay` içinde izlenir.

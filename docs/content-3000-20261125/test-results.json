@@ -118,5 +118,29 @@
     "isolatedSQLAcceptance": "PASSED",
     "hostedChanged": false,
     "notes": "Unique CI project and seven unused host ports resolved preceding runner port collision. No local containers restarted."
+  },
+  "finalQualityQuickPlay": {
+    "targetedTests": {
+      "status": "PASSED",
+      "passed": 47,
+      "failed": 0,
+      "durationMs": 3565.549875
+    },
+    "typecheck": "PASSED",
+    "targetedLint": "PASSED",
+    "webExport": "PASSED",
+    "localBrowser": "NOT_RUN_DISABLED_IN_WORK_SETTINGS",
+    "isolatedBrowserCI": "PENDING",
+    "googleNativeRecheck": {
+      "status": "FAILED_BASELINE_MISSING_NATIVE_SOURCE",
+      "tests": 2,
+      "passed": 1,
+      "failed": 1,
+      "baselineCommit": "3a74086dfa8fc65b3ee2a7e5e91eee9e2b874fce",
+      "cause": "Unanchored ios/ rule in .gitignore ignores the module podspec and Swift implementation; Git records only the Expo module config. Existing release worktree contains the original files; they were neither recreated nor modified."
+    },
+    "fullSuiteRepeated": false,
+    "reason": "User requested targeted checks only; the earlier 482-test run is historical evidence for commit 895624a, not a fresh full-suite claim.",
+    "replayContinuation": "PASSED: quickPlay true is preserved in new v74 records; ResultsScreen passes it to the existing start operation. Legacy records need no new field."
   }
 }
