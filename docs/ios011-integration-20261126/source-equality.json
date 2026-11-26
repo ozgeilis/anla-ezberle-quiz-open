@@ -1,0 +1,87 @@
+{
+  "baseContentCommit": "a38d1eabb2144fccac1441aade2da5b60a9ba54a",
+  "integrationCommit": "db0b516db116ecd5bc7e5c60ce96c0a45035a258",
+  "protectedSourceEquality": [
+    {
+      "file": "src/features/online/googleAuth.ts",
+      "equal": true,
+      "sha256": "b81a64e04a52b1f1a1d712aee613f29661a72dc63c433f36e917a40e565b05d2"
+    },
+    {
+      "file": "src/features/online/googleNative.ts",
+      "equal": true,
+      "sha256": "8558cf22ab83c0a1c9706818c02869bc2c64089de8631a16b20238b98b07000b"
+    },
+    {
+      "file": "src/features/online/appleAuth.ts",
+      "equal": true,
+      "sha256": "2a9ebe2a552dce8ca60f0c23c741c38d478e1fe2370b2f5f27ad71175a00e6af"
+    },
+    {
+      "file": "src/features/ads/AdProvider.tsx",
+      "equal": true,
+      "sha256": "0470e37e5d13d796f94c329d42c4b583aff60776f6d5dfa93d11488a1b2539d6"
+    },
+    {
+      "file": "src/features/ads/adPolicy.ts",
+      "equal": true,
+      "sha256": "370ddbefce003e73321b8a3592457cf639849568e4cf9a09ef787b556d8007db"
+    },
+    {
+      "file": "src/storage/schema.ts",
+      "equal": true,
+      "sha256": "52a633be2af036bb0f0c25e5d8e298206bc045ef786975cd812ef69231291ec2"
+    },
+    {
+      "file": "src/domain/game/question-clock.ts",
+      "equal": true,
+      "sha256": "d965fe91b9bc276dd19fa40149756c75e1c2806bc72592ab89b012f51d38b004"
+    },
+    {
+      "file": "config/ios.js",
+      "equal": true,
+      "sha256": "726793f2cb1c69fb251740abdb88296a24ff969542e4f8882ed22f193e226dc7"
+    },
+    {
+      "file": "config/admob.js",
+      "equal": true,
+      "sha256": "9571c2715f24b742ae0421bbab05c61c7e853b610dad3e8f2c705f7d956f11f3"
+    },
+    {
+      "file": "eas.json",
+      "equal": true,
+      "sha256": "64e3547043e8a2f81adc5ae13ff257502fed5eb73cefffd46e59ff58794d46da"
+    },
+    {
+      "file": "app.json",
+      "equal": true,
+      "sha256": "cccc34646a8fc59fa5f1eee508c26dddee510f8f58ceceb8d843520a4220b2ed"
+    },
+    {
+      "file": "src/content/questions/questions-v74.ts",
+      "equal": true,
+      "sha256": "f78feafbf0f8c140200fcaa5c1f1e2be0a6845783c8d1922c9bb30380735600c"
+    },
+    {
+      "file": "src/domain/game/quick-play.ts",
+      "equal": true,
+      "sha256": "2f08f74e10fd8f9db386566e3e96eb0c82f141befe162bd63659f215cfaa398f"
+    }
+  ],
+  "originalNativeSources": [
+    {
+      "file": "modules/google-native-signin/ios/GoogleNativeSignInModule.swift",
+      "unchanged": true,
+      "sha256": "1536cf1fb3747cb1ac70c80a1f21e060c65cb39a2c378ee1f96e84a1ee348604"
+    },
+    {
+      "file": "modules/google-native-signin/ios/GoogleNativeSignIn.podspec",
+      "unchanged": true,
+      "sha256": "b3110e6a222f076443b316ef069e1b9c0822df11f998676e286934358d795f91"
+    }
+  ],
+  "reusedDependenciesManifestEquality": {
+    "package.json": true,
+    "pnpm-lock.yaml": true
+  }
+}

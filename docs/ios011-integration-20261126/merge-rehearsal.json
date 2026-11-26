@@ -1,0 +1,92 @@
+{
+  "main": "1c6a3d876a4ae01661feff22db5823cad4c1b926",
+  "dryRunOnly": true,
+  "remoteBranchesUnchanged": true,
+  "steps": [
+    {
+      "step": "PR25",
+      "source": "b861d6b9fce3e6d978d9d3eb9ac39b0929795a50",
+      "exitCode": 0,
+      "conflicts": [],
+      "tree": "d201e67ce1deb19a0604db2eedaa71c4f4f9c24a",
+      "syntheticCommit": "d3e7069c188194f4d309b52e2c3e147eddecab2a"
+    },
+    {
+      "step": "PR26",
+      "source": "f04199cf26a902190a3cb1ff06daaf43a15319aa",
+      "exitCode": 0,
+      "conflicts": [],
+      "tree": "21a9bbb79cb7ae2e57af652de184b80d4bff3649",
+      "syntheticCommit": "276bf7f6a6df93efaa318845240525e422db5d3e"
+    },
+    {
+      "step": "PR28",
+      "source": "e4437949d3946f46ea4501aa12c307184422f9b2",
+      "exitCode": 1,
+      "conflicts": [
+        "CONFLICT (content): Merge conflict in src/app/privacy.tsx"
+      ],
+      "rehearsalResolution": "Preserve current main privacy.tsx from merged PR32; no runtime code discarded.",
+      "tree": "7803450c04c9db98325cf9e59f70b076d7b3f92a",
+      "syntheticCommit": "485fdfbeea5c7622e3c992fe3fddf311400c07dd"
+    },
+    {
+      "step": "PR30",
+      "source": "bec601e4f892798073740828402e774021cda4d5",
+      "exitCode": 1,
+      "conflicts": [
+        "CONFLICT (content): Merge conflict in src/app/privacy.tsx"
+      ],
+      "rehearsalResolution": "Preserve current main privacy.tsx from merged PR32; no runtime code discarded.",
+      "tree": "d2d49fda6a65caa126ad6134d2d2d681b2165304",
+      "syntheticCommit": "7821e41ff6b1c6d71a1411fa755fbf9d0b3c530f"
+    },
+    {
+      "step": "missing-release-tail",
+      "source": "3a74086dfa8fc65b3ee2a7e5e91eee9e2b874fce",
+      "exitCode": 1,
+      "conflicts": [
+        "CONFLICT (content): Merge conflict in src/app/privacy.tsx"
+      ],
+      "rehearsalResolution": "Preserve current main privacy.tsx from merged PR32; no runtime code discarded.",
+      "tree": "73932f2fdc3888cf517cbc001d38195441ca785a",
+      "syntheticCommit": "5c3fd73adb5b210a90001da31c221068f2d77573"
+    },
+    {
+      "step": "PR33",
+      "source": "a38d1eabb2144fccac1441aade2da5b60a9ba54a",
+      "exitCode": 0,
+      "conflicts": [],
+      "tree": "9a2403048f67f1df7157e4bc973f9799b7133409",
+      "syntheticCommit": "8bb85ae898269480c5a7c347c1a63346afbd2e70"
+    },
+    {
+      "step": "native-source-fix",
+      "source": "c01884ad2bf6b298dc623af981f86bf0516a35d2",
+      "exitCode": 0,
+      "conflicts": [],
+      "tree": "ae75d94b5243b75c87ad8f9f5dc0e399840cabf3",
+      "syntheticCommit": "81a94f36fd87dc862a30386f62cd363c18147548"
+    }
+  ],
+  "finalTree": "ae75d94b5243b75c87ad8f9f5dc0e399840cabf3",
+  "finalVsIntegration": ["public/app-ads.txt", "src/app/privacy.tsx"],
+  "oldAndroidHeadsAlreadyInMain": [
+    {
+      "sha": "36e1a1b",
+      "isAncestor": true
+    },
+    {
+      "sha": "31e1278",
+      "isAncestor": true
+    },
+    {
+      "sha": "44a55eb",
+      "isAncestor": true
+    },
+    {
+      "sha": "8093c40",
+      "isAncestor": true
+    }
+  ]
+}

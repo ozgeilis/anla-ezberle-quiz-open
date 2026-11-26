@@ -1,0 +1,86 @@
+{
+  "source": "actual unsigned simulator Release application, GoogleSignIn 10.1.0",
+  "relativePath": "GoogleSignIn.bundle/PrivacyInfo.xcprivacy",
+  "sha256": "9300972853096f7d570d6c4a4bf7152a36c798e89c4f0d81d3b4c6b5dfaddfd0",
+  "privacyManifest": {
+    "NSPrivacyTracking": false,
+    "NSPrivacyTrackingDomains": [],
+    "NSPrivacyCollectedDataTypes": [
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeName",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeEmailAddress",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePhoneNumber",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeOtherDataTypes",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality",
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeCoarseLocation",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeUserID",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAppFunctionality",
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeDeviceID",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      },
+      {
+        "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeOtherUsageData",
+        "NSPrivacyCollectedDataTypeLinked": true,
+        "NSPrivacyCollectedDataTypeTracking": false,
+        "NSPrivacyCollectedDataTypePurposes": [
+          "NSPrivacyCollectedDataTypePurposeAnalytics"
+        ]
+      }
+    ],
+    "NSPrivacyAccessedAPITypes": [
+      {
+        "NSPrivacyAccessedAPITypeReasons": ["CA92.1"],
+        "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults"
+      }
+    ]
+  },
+  "currentAppStorePrivacyReconciled": false,
+  "appPrivacyChanged": false,
+  "note": "SDK manifest declares PhoneNumber and OtherDataTypes as well as existing identity/device/usage types; review current declarations before release. No assumption that tracking false for this SDK removes advertising SDK tracking disclosures."
+}

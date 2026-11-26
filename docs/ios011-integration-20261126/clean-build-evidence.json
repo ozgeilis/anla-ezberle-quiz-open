@@ -1,0 +1,30 @@
+{
+  "checkout": "/Users/ozge/.local/share/anla-quiz-build/anla-ezberle-ios011-clean-checkout-20261126",
+  "sourceCommit": "db0b516db116ecd5bc7e5c60ce96c0a45035a258",
+  "exitCode": 0,
+  "stopped": null,
+  "seconds": 480,
+  "sdk": "iphonesimulator",
+  "configuration": "Release",
+  "architecture": "arm64",
+  "signing": false,
+  "ipaCreated": false,
+  "sharedDependenciesOnly": true,
+  "localApplicationNativeSourcesReused": false,
+  "clientConfig": "synthetic compile-only, no live account testing",
+  "freeBytesAfter": 6047162368,
+  "logSha256": {
+    "prebuild": "760817c0abef0754ae42e2529d618519cf915fee2cdeec02b4741f131bac4111",
+    "pods": "f11944d0f9be694706c4a2b576faa3cea1f436b8a7326ca14f63ec3e8e9a560e",
+    "xcodebuild": "a31469254ad6d6ba1af3928e656daa68698b2fbe1f4774beb6afe098f64ccc36"
+  },
+  "sourceSwiftCompiledFromCleanCheckout": true,
+  "expoProviderHasGoogleNativeModule": true,
+  "appIdentity": {
+    "CFBundleIdentifier": "com.kovynelstudio.anlaezberle",
+    "CFBundleShortVersionString": "0.1.0",
+    "CFBundleVersion": "1"
+  },
+  "applicationBinarySha256": "9ba0929ab06e516b04dcb430ae0e7ddf0cdd05bd83a0429a9edbe6cb7d9ef630",
+  "privacyManifestCount": 24
+}

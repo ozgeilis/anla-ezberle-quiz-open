@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-26",
+  "sourceCommit": "db0b516",
+  "targetedTests": {
+    "status": "PASSED",
+    "tests": 80,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 2368.618458,
+    "logSha256": "22787bd64c3bc89cff36eef9409ef6c2f27bdeca3835c71855da35d017f901c2",
+    "files": [
+      "google-native.test.ts",
+      "google-auth.test.ts",
+      "apple-auth.test.ts",
+      "apple-deletion.test.ts",
+      "account-deletion.test.ts",
+      "native-client-config.test.ts",
+      "ios-ads.test.ts",
+      "ads.test.ts",
+      "ad-consent-flow.test.ts",
+      "quick-play.test.ts",
+      "v74-integration.test.ts",
+      "levels.test.ts"
+    ]
+  },
+  "typecheck": {
+    "status": "PASSED",
+    "exitCode": 0
+  },
+  "changedTestLint": {
+    "status": "PASSED",
+    "exitCode": 0
+  },
+  "nativePackagingRegression": {
+    "status": "PASSED",
+    "tests": 3,
+    "scope": "actual Git index native sources, Git/EAS ignore fixture, root generated-project and secret exclusion"
+  },
+  "prebuild": "PASSED",
+  "podInstall": "PASSED",
+  "appleAutolinking": "PASSED_CLEAN_CHECKOUT_PATH",
+  "androidAutolinking": "PASSED_NO_APPLE_ONLY_MODULE",
+  "unsignedSimulatorReleaseBuild": "PASSED",
+  "physicalIphoneAcceptance": "NOT_RUN_THIS_TASK",
+  "liveAccountLogin": "NOT_RUN_THIS_TASK",
+  "fullSuiteRepeated": false,
+  "ipaCreated": false,
+  "hostedMigration": false,
+  "mainChanged": false,
+  "storeChanged": false,
+  "cleanBuildEvidence": "clean-build-evidence.json",
+  "googleSdkPrivacyReconciliation": "REQUIRED_BEFORE_RELEASE; SDK manifest evidence recorded, no form changed"
+}
