@@ -1,0 +1,29 @@
+{
+  "baseline": "b172111ef16071c3d7bead97e3ce2372bb8cf692",
+  "profilesUnchanged": {
+    "production": true,
+    "preview": true,
+    "ads-closed-test": true,
+    "ads-preview": true,
+    "ads-development": true,
+    "ios-simulator-acceptance": true,
+    "ios-development": true,
+    "ios-testflight": true
+  },
+  "protectedFilesUnchanged": {
+    "package.json": true,
+    "pnpm-lock.yaml": true,
+    "modules/google-native-signin/ios/GoogleNativeSignInModule.swift": true,
+    "modules/google-native-signin/ios/GoogleNativeSignIn.podspec": true,
+    "modules/google-native-signin/expo-module.config.json": true,
+    "src/features/online/googleAuth.ts": true,
+    "src/features/online/googleFlow.ts": true,
+    "src/features/online/appleAuth.ts": true,
+    "src/content/questions/questions-v74.ts": true
+  },
+  "domainStorageContentUnchanged": true,
+  "androidPackage": "com.kovynelstudio.anlaezberle",
+  "buildNumberReserved": false,
+  "productionAabCreated": false,
+  "productionUploaded": false
+}
