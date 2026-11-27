@@ -111,7 +111,7 @@ onayı alındı. Üç dosyanın SHA256 değerleri önceden sunulan planla eşle�
   saved → ad → closed → results. Hazır olmayan reklam, save/presentation
   hatası, duplicate callback, background/disposal ve Results butonları kapsandı.
 - Fiziksel QA17 karşılığında 25 → **33** oyun; sekiz yeni turun her biri
-  10 soru, v74 ve Hemen Oyna. Eski kayıtlar/profil byte eşit korundu.
+  10 soru, v74 ve Hemen Oyna. Eski kayıtların/profilin alanları değişmeden korundu.
 - Sahibi **iki TEST reklamının sonuçtan önce açıldığını**, kapanınca sonuç
   geldiğini ve Home/Replay'in ek reklam açmadığını doğruladı. Son reklamsız
   turlarda sonuç/XP çalıştı. Reklam gelmemesinin SDK nedeni yakalanmadı;

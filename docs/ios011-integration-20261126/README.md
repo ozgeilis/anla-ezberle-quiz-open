@@ -1,5 +1,13 @@
 # iOS 0.1.1 entegrasyon hazırlığı — 26 Kasım 2026
 
+**27 Kasım — App Store gönderimi tamamlandı:** İslami Quiz **0.1.2 (18)**,
+Apple **Validated → Waiting for Review**. Manuel yayın seçili; public release
+yapılmadı. Paket uygulama kaynağı `c3212d0`; iOS'ta iki kalıcı turda bir,
+kayıttan sonra ve sonuçtan önce reklam denemesi. V74 her iki canlı bankada
+ayrı onaylarla 3.000 soruda etkin. [Gönderim, paket hash'i ve gerçek test
+sınırları](APPSTORE-012-RELEASE.md). Aşağıdaki önceki hazırlıklar tarihsel
+bağlamıyla korunur; main ve Android Alpha kanalı değiştirilmedi.
+
 **Güncel yayın tercihi:** iOS'ta iki kalıcı turda bir reklam denemesi, yine
 kayıttan sonra ve sonuçtan önce. Sonuç butonları reklam açmaz. Bu karar
 önceki “her tur” sıklığının yerini alır; ayrıntı IOS012-ROUND-END-ADS.md.
