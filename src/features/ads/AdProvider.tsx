@@ -11,6 +11,10 @@ import { usePathname } from "expo-router";
 import { useGame } from "../../storage/GameProvider";
 import { useSound } from "../audio/SoundProvider";
 import { adConfig } from "./adConfig";
+import {
+  createRoundEndAdBreak,
+  isSavedCompletedRound,
+} from "./roundCompletion";
 import { canOfferInterstitial, type AdPreferences } from "./adPolicy";
 import { loadAdsRuntime } from "./runtime";
 import type { AdsRuntime, FullscreenAd } from "./runtime.types";
@@ -28,11 +32,12 @@ interface AdContextValue {
   prepareConsent(): Promise<void>;
   openPrivacyOptions(): Promise<void>;
   transition(resultId: string, navigate: () => void): void;
+  completeRound(resultId: string): Promise<void>;
 }
 const Context = createContext<AdContextValue | null>(null);
 export function AdProvider({ children }: React.PropsWithChildren) {
   const path = usePathname();
-  const { session, data, result } = useGame();
+  const { session, data, result, getSnapshot } = useGame();
   const { setInterrupted } = useSound();
   const { preferences, loaded, storageError, persist, getPreferences } =
     useAdPreferences(adConfig.enabled, adConfig.preferencesKey);
@@ -44,6 +49,9 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     [error, setError] = useState("");
   const [privacyOptionsRequired, setPrivacyRequired] = useState(false);
   const [adReady, setAdReady] = useState(false);
+  const adReadyRef = useRef(false);
+  const completedRound = useRef<string | null>(null);
+  const roundEnd = useRef(createRoundEndAdBreak());
   const [readyRuntime, setReadyRuntime] = useState<AdsRuntime | null>(null);
   const runtime = useRef<AdsRuntime | null>(null),
     full = useRef<FullscreenAd | null>(null);
@@ -51,10 +59,10 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     navigationLock = useRef(false),
     generation = useRef({ value: 0 });
   const alive = useRef(true);
-  const current = useRef({ path, session, result, foreground });
+  const current = useRef({ path, session, result, foreground, ready, busy });
   useLayoutEffect(() => {
-    current.current = { path, session, result, foreground };
-  }, [path, session, result, foreground]);
+    current.current = { path, session, result, foreground, ready, busy };
+  }, [path, session, result, foreground, ready, busy]);
   const cooldownStart = useRef<number | null>(null);
   useEffect(() => {
     // A restart with an existing attempt gets a fresh conservative cooldown;
@@ -88,6 +96,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
   function invalidate() {
     generation.current.value++;
     setReady(false);
+    adReadyRef.current = false;
     setAdReady(false);
     full.current?.dispose();
     full.current = null;
@@ -144,13 +153,21 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       await runtime.current.initialize();
       if (!alive.current || revision !== generation.current.value) return;
       full.current = runtime.current.interstitial(
-        setAdReady,
+        (value) => {
+          adReadyRef.current = value;
+          setAdReady(value);
+        },
         () =>
           alive.current &&
           revision === generation.current.value &&
           current.current.foreground &&
-          !current.current.session &&
-          ["/", "/results"].includes(current.current.path),
+          (Platform.OS !== "ios" || AppState.currentState === "active") &&
+          !getSnapshot().session &&
+          (["/", "/results"].includes(current.current.path) ||
+            (Platform.OS === "ios" &&
+              current.current.path === "/quiz" &&
+              completedRound.current !== null &&
+              isSavedCompletedRound(completedRound.current, getSnapshot()))),
       );
       // Do not rely on a React state/route change to start an iOS preload:
       // revalidation can finish with the same rendered ready/path values.
@@ -196,17 +213,16 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       full.current?.load();
   }, [ready, foreground, session, path]);
 
-  function finishTransition(action: { id: string; navigate: () => void }) {
+  function finishTransition(action: { id: string; navigate?: () => void }) {
     if (
       alive.current &&
       current.current.path === "/results" &&
       current.current.result?.id === action.id
     )
-      action.navigate();
+      action.navigate?.();
   }
-  // Leaving a saved result is the natural break: when every privacy, cadence
-  // and gameplay guard passes, the interstitial is shown without an extra
-  // question. Otherwise navigation continues immediately without an ad.
+  // Android retains its existing result-exit placement and cadence.
+  // iOS eligibility rejects this placement even if an old caller invokes it.
   function transition(id: string, navigate: () => void) {
     if (navigationLock.current) return;
     navigationLock.current = true;
@@ -234,7 +250,30 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       return finishTransition(action);
     void present(action);
   }
-  async function present(action: { id: string; navigate: () => void }) {
+  function completeRound(id: string) {
+    return roundEnd.current(id, {
+      read: () => ({
+        platform: Platform.OS,
+        game: getSnapshot(),
+        path: current.current.path,
+        ready: current.current.ready && adReadyRef.current,
+        foreground:
+          current.current.foreground && AppState.currentState === "active",
+        busy: lock.current || current.current.busy,
+        preferences: getPreferences(),
+      }),
+      prepare: (completedId) => {
+        completedRound.current = completedId;
+      },
+      present: (completedId) => present({ id: completedId }, "round-complete"),
+    });
+  }
+  async function present(
+    action: { id: string; navigate?: () => void },
+    trigger: "results-exit" | "round-complete" = "results-exit",
+  ) {
+    const revision = generation.current.value;
+    const ad = full.current;
     lock.current = true;
     setBusy(true);
     const next = {
@@ -249,12 +288,17 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       if (
         alive.current &&
         current.current.foreground &&
-        current.current.path === "/results" &&
-        !current.current.session
+        (trigger === "round-complete"
+          ? current.current.path === "/quiz" &&
+            AppState.currentState === "active" &&
+            revision === generation.current.value &&
+            ad === full.current &&
+            isSavedCompletedRound(action.id, getSnapshot())
+          : current.current.path === "/results" && !current.current.session)
       ) {
         cooldownStart.current = performance.now();
         setInterrupted(true);
-        await full.current?.show();
+        await ad?.show();
       }
     } catch {
       /* Storage/presentation failure never blocks leaving the result. */
@@ -263,7 +307,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       lock.current = false;
       if (alive.current) {
         setBusy(false);
-        finishTransition(action);
+        if (trigger === "results-exit") finishTransition(action);
       }
     }
   }
@@ -283,6 +327,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
         prepareConsent: () => consent(true),
         openPrivacyOptions: () => consent(true, true),
         transition,
+        completeRound,
       }}
     >
       {children}

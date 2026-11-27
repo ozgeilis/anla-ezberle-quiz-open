@@ -36,6 +36,7 @@ export function parseAdPreferences(raw: string | null): AdPreferences {
 }
 export function canOfferInterstitial(input: {
   platform?: string;
+  trigger?: "results-exit" | "round-complete";
   completedRounds: number;
   resultId: string;
   saved: boolean;
@@ -54,7 +55,9 @@ export function canOfferInterstitial(input: {
     input.saved &&
     input.ready &&
     input.foreground &&
-    input.path === "/results" &&
+    (input.platform === "ios"
+      ? input.trigger === "round-complete" && input.path === "/quiz"
+      : input.trigger !== "round-complete" && input.path === "/results") &&
     !input.playing &&
     !input.busy &&
     !p.consumedResults.includes(input.resultId) &&

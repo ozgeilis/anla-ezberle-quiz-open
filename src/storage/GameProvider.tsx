@@ -40,6 +40,7 @@ import {
 interface GameContext {
   data: StoredData;
   ready: boolean;
+  getSnapshot(): Pick<GameContext, "data" | "session" | "result">;
   storageError: string | null;
   session: Session | null;
   result: GameRecord | null;
@@ -97,6 +98,14 @@ export function GameProvider({ children }: React.PropsWithChildren) {
   const [result, setResult] = useState<GameRecord | null>(null);
   const resultRef = useRef<GameRecord | null>(null);
   const [saving, setSaving] = useState(false);
+  const getSnapshot = useCallback(
+    () => ({
+      data: dataRef.current,
+      session: sessionRef.current,
+      result: resultRef.current,
+    }),
+    [],
+  );
   const queue = useRef(Promise.resolve());
   const retryRead = useCallback(async () => {
     try {
@@ -321,6 +330,7 @@ export function GameProvider({ children }: React.PropsWithChildren) {
             abandon,
             finish,
             saveResult,
+            getSnapshot,
             updateProfile,
             updateShowcase: (showcase) =>
               commit((current) => ({ ...current, showcase })),

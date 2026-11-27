@@ -1,3 +1,4 @@
+import { leaveResults } from "../ads/roundCompletion";
 import { brand } from "../../branding/identity";
 import { useSound } from "../audio/SoundProvider";
 import { stageDefinition } from "../../domain/game/stages";
@@ -92,6 +93,8 @@ export function ResultsScreen() {
         },
       });
   };
+  const exit = (navigate: () => void) =>
+    leaveResults(Platform.OS, result.id, navigate, ads.transition);
   const doShare = async () => {
     try {
       if (Platform.OS === "web") {
@@ -157,13 +160,13 @@ export function ResultsScreen() {
           }
           icon="play"
           disabled={saving || !saved}
-          onPress={() => ads.transition(result.id, replay)}
+          onPress={() => exit(replay)}
         />
         <Button
           title="Ana Sayfaya Dön"
           icon="home"
           variant="outline"
-          onPress={() => ads.transition(result.id, home)}
+          onPress={() => exit(home)}
         />
         <Txt
           accessibilityLiveRegion="polite"

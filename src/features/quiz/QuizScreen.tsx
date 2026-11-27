@@ -1,3 +1,5 @@
+import { useAds } from "../ads/AdProvider";
+import { oncePerRound, finishBeforeResults } from "../ads/roundCompletion";
 import { useSound } from "../audio/SoundProvider";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { quizAudioCues } from "../audio/events";
@@ -53,6 +55,15 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const router = useRouter();
   const { play } = useSound();
   const solo = useGame();
+  const ads = useAds();
+  const finishOnce = useRef(oncePerRound());
+  const alive = useRef(true);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+    };
+  }, []);
   const duel = useDuel();
   const role = duel.match?.activeRole;
   const player = role ? duel.match?.players[role] : undefined;
@@ -144,6 +155,33 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const goNext = async () => {
     if (!session || !chosen || finishing) return;
     if (session.cursor === 9) {
+      if (!demo && Platform.OS === "ios") {
+        await finishOnce
+          .current(session.id, () =>
+            finishBeforeResults(
+              async () => {
+                setFinishingSession(session);
+                await solo.finish();
+              },
+              () => ads.completeRound(session.id),
+              () => {
+                const latest = solo.getSnapshot();
+                if (
+                  !alive.current ||
+                  latest.session ||
+                  latest.result?.id !== session.id
+                )
+                  return;
+                disablePrevention();
+                router.replace("/results");
+              },
+            ),
+          )
+          .catch(() => {
+            /* Existing providers surface persistence errors. */
+          });
+        return;
+      }
       setFinishingSession(session);
       if (demo) {
         if (!command("finish")) {

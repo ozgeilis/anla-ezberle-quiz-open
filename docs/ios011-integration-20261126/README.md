@@ -1,5 +1,11 @@
 # iOS 0.1.1 entegrasyon hazırlığı — 26 Kasım 2026
 
+**27 Kasım — güncel 0.1.2 reklam yerleşimi:** iOS reklam denemesi artık tur
+kaydı sonrası, sonuç ekranından önce yapılır; Results Home/Replay reklam açmaz.
+53 hedefli test, TypeScript ve lint geçti; yeni yerleşimin fiziksel kabulü
+henüz yapılmadı. [Güncel davranış, dosyalar ve test sınırları](IOS012-ROUND-END-ADS.md).
+Aşağıdaki sonuçtan çıkış tarifleri ve önceki paket kayıtları tarihsel bağlamdır.
+
 **27 Kasım — 0.1.2 isim/logo:** İslami Quiz adı, sahibinin paylaştığı yeni logo,
 merkezi asset export ve mağaza metni taslakları aynı dalda hazırlandı.
 [Uygulanan alanlar, exportlar ve test sınırları](BRANDING-012.md).
