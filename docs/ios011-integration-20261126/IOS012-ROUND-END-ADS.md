@@ -3,7 +3,23 @@
 27 Kasım 2026. Mevcut entegrasyon dalında, marka kaynağı `49604bf` üzerine.
 Yeni IPA, imzalama, cihaz kurulumu, main merge, mağaza veya backend işlemi yok.
 
-## Güncel davranış
+## Son kullanıcı kararı — iki turda bir
+
+27 Kasım, yayın hazırlığı sırasında sıklık kullanıcı tarafından **iki tamamlanan
+turda bir** olarak değiştirildi. iOS'ta toplam kalıcı tur sayısı 2, 4, 6…
+olduğunda hazır reklam denenir; 1, 3, 5… olduğunda doğrudan sonuç açılır.
+Eski kayıtlar sayıya dahildir: bu cihazda önceki 23 turdan sonra ilk yeni tur
+24 olduğu için reklam denenebilir. Uygulamayı kapatmak fazı sıfırlamaz.
+Reklam yoksa bekletilmez ve aynı tur sonradan yeniden denenmez.
+Android'in üç tur/beş dakika davranışı korunur.
+
+Bu son tek satırlık politika değişikliği için 39 hedefli reklam/izin testi,
+TypeScript ve değişen dosyalar lint'i geçti. Beş tur / 50 soru fixture'ında
+1, 3, 5 doğrudan sonuç; 2 ve 4 saved → ad → closed → results olarak doğrulandı;
+2 creative kapatıldı, 2 yeni preload yapıldı. Aşağıdaki 53 test / her tur
+reklam kanıtı önceki f997dad kaynağının tarihsel kaydıdır.
+
+## Yerleşim davranışı
 
 Son sorunun mevcut cevap geri bildirimi tamamlanınca (doğru/yanlış/20 saniye
 timeout aynı bitiş yolunu kullanır):

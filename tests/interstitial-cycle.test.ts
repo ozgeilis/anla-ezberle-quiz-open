@@ -89,7 +89,7 @@ const flush = async () => {
   await Promise.resolve();
 };
 
-test("five rounds / fifty questions save first, show once before results, then preload; result buttons never advertise on iOS", async (t) => {
+test("five rounds / fifty questions save first; iOS rounds 2 and 4 advertise before results and preload; buttons never advertise", async (t) => {
   const driver = sdk();
   let data = emptyData();
   data.profile.name = "Korunan Oyuncu";
@@ -139,8 +139,10 @@ test("five rounds / fifty questions save first, show once before results, then p
   };
   let serialized = "";
   ad.load();
+  let adCount = 0;
   for (let round = 0; round < 5; round++) {
-    driver.requests[round]!.emit("loaded");
+    const eventOffset = events.length;
+    driver.requests[adCount]!.emit("loaded");
     assert.equal(ready, true);
     path = "/quiz";
     let at = 1_800_000_000_000 + round * 1_000_000;
@@ -204,19 +206,45 @@ test("five rounds / fifty questions save first, show once before results, then p
     );
     // Wait for the real persistence / completion promise chain, not wall time.
     for (let i = 0; i < 12; i++) await flush();
-    assert.deepEqual(events.slice(round * 4), ["saved", "ad"]);
+    if ((round + 1) % 2 !== 0) {
+      await done;
+      assert.deepEqual(events.slice(eventOffset), ["saved", "results"]);
+      assert.equal(driver.requests[adCount]!.stats().shows, 0);
+      let legacy = 0;
+      leaveResults(
+        "ios",
+        id,
+        () => {
+          path = "/";
+        },
+        () => {
+          legacy++;
+        },
+      );
+      leaveResults(
+        "ios",
+        id,
+        () => {},
+        () => {
+          legacy++;
+        },
+      );
+      assert.equal(legacy, 0);
+      continue;
+    }
+    assert.deepEqual(events.slice(eventOffset), ["saved", "ad"]);
     assert.equal(path, "/quiz", "Results remain hidden until native CLOSE");
     const saved = JSON.stringify(data),
       xp = rewardSummary(data.games);
     assert.equal(serialized, saved);
-    const current = driver.requests[round]!;
+    const current = driver.requests[adCount]!;
     current.emit("opened");
     await flush();
     assert.equal(path, "/quiz", "Native show() resolution is not CLOSE");
     current.emit("closed");
     await done;
     await flush();
-    assert.deepEqual(events.slice(round * 4), [
+    assert.deepEqual(events.slice(eventOffset), [
       "saved",
       "ad",
       "closed",
@@ -230,10 +258,10 @@ test("five rounds / fifty questions save first, show once before results, then p
     });
     assert.equal(
       driver.requests.length,
-      round + 2,
+      adCount + 2,
       "CLOSE preloads the next creative without a restart",
     );
-    assert.equal(driver.requests[round + 1]!.stats().loads, 1);
+    assert.equal(driver.requests[adCount + 1]!.stats().loads, 1);
     await roundEnd(id, ports);
     current.emit("closed");
     let home = 0,
@@ -260,7 +288,10 @@ test("five rounds / fifty questions save first, show once before results, then p
       "Presentation never changes score or XP",
     );
     path = "/";
+    adCount++;
   }
+  assert.equal(adCount, 2);
+  assert.equal(driver.requests.length, 3);
   assert.equal(parseData(serialized).games.length, 5);
   assert.equal(new Set(data.games.flatMap((g) => g.questionIds)).size, 50);
   assert.equal(data.profile.name, "Korunan Oyuncu");

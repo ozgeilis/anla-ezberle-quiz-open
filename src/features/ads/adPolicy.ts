@@ -61,10 +61,11 @@ export function canOfferInterstitial(input: {
     !input.playing &&
     !input.busy &&
     !p.consumedResults.includes(input.resultId) &&
-    (input.platform === "ios" ||
-      (input.completedRounds >= 3 &&
+    (input.platform === "ios"
+      ? input.completedRounds % 2 === 0
+      : input.completedRounds >= 3 &&
         input.monotonicElapsedMs >= AD_INTERVAL_MS &&
         (p.lastPresentedAt === 0 ||
-          input.now - p.lastPresentedAt >= AD_INTERVAL_MS)))
+          input.now - p.lastPresentedAt >= AD_INTERVAL_MS))
   );
 }

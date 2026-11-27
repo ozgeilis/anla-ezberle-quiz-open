@@ -233,13 +233,13 @@ test("no advertising during gameplay, review, auth, rooms, deletion, intro or ba
     assert.equal(canOfferInterstitial({ ...input, preferences: p }), false);
 });
 
-test("iOS only tries a completed round before results, without Android cadence limits", () => {
+test("iOS tries every second saved round before results; Android cadence is unchanged", () => {
   const input = {
     ...eligible(),
     platform: "ios",
     trigger: "round-complete" as const,
     path: "/quiz",
-    completedRounds: 1,
+    completedRounds: 2,
     monotonicElapsedMs: 0,
     preferences: { ...eligible().preferences, lastPresentedAt: 1_000_000 },
   };
@@ -254,11 +254,13 @@ test("iOS only tries a completed round before results, without Android cadence l
   );
   assert.equal(canOfferInterstitial({ ...input, playing: true }), false);
   assert.equal(canOfferInterstitial({ ...input, completedRounds: 0 }), false);
+  for (const completedRounds of [1, 3, 5])
+    assert.equal(canOfferInterstitial({ ...input, completedRounds }), false);
   assert.equal(canOfferInterstitial({ ...input, platform: "android" }), false);
   assert.equal(
     canOfferInterstitial({
       ...input,
-      completedRounds: 2,
+      completedRounds: 4,
       resultId: "next-round",
     }),
     true,

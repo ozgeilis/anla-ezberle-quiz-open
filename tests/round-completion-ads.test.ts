@@ -38,7 +38,10 @@ function fixture() {
     game: {
       session: null as typeof session | null,
       result: result as GameRecord | null,
-      data: appendGame(emptyData(), result),
+      data: appendGame(
+        appendGame(emptyData(), { ...result, id: "quiz-prior-round" }),
+        result,
+      ),
     },
     path: "/quiz",
     ready: true,
@@ -60,7 +63,10 @@ function fixture() {
 test("an unfinished persistence write cannot present an ad or reveal results", async () => {
   const f = fixture(),
     run = createRoundEndAdBreak();
-  f.state.game.data = emptyData();
+  f.state.game.data = appendGame(emptyData(), {
+    ...f.result,
+    id: "quiz-prior-round",
+  });
   let release!: () => void,
     results = 0;
   const written = new Promise<void>((resolve) => {

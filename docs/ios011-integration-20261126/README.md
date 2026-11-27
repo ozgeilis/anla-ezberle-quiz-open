@@ -1,5 +1,9 @@
 # iOS 0.1.1 entegrasyon hazırlığı — 26 Kasım 2026
 
+**Güncel yayın tercihi:** iOS'ta iki kalıcı turda bir reklam denemesi, yine
+kayıttan sonra ve sonuçtan önce. Sonuç butonları reklam açmaz. Bu karar
+önceki “her tur” sıklığının yerini alır; ayrıntı IOS012-ROUND-END-ADS.md.
+
 **27 Kasım — güncel 0.1.2 reklam yerleşimi:** iOS reklam denemesi artık tur
 kaydı sonrası, sonuç ekranından önce yapılır; Results Home/Replay reklam açmaz.
 53 hedefli test, TypeScript ve lint geçti; yeni yerleşimin fiziksel kabulü
