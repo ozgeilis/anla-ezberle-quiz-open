@@ -1,0 +1,23 @@
+{
+  "profile": "android-production",
+  "version": "0.1.2",
+  "package": "com.kovynelstudio.anlaezberle",
+  "mode": "live",
+  "androidAppId": "ca-app-pub-9642662711398587~8836643534",
+  "androidUnits": {
+    "banner": "ca-app-pub-9642662711398587/6077280493",
+    "interstitial": "ca-app-pub-9642662711398587/8188438512"
+  },
+  "delayAppMeasurementInit": true,
+  "googleIosNativeClientNotInjected": true,
+  "blockedPermissions": [
+    "android.permission.SYSTEM_ALERT_WINDOW",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS"
+  ],
+  "actualAabValidated": false
+}
