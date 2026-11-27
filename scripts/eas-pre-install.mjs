@@ -14,13 +14,25 @@ assert(
 assert(
   !(
     process.env.EAS_BUILD_PLATFORM === "ios" &&
-    ["production", "ads-closed-test"].includes(profile)
+    [
+      "production",
+      "ads-closed-test",
+      "android-production",
+      "android-production-qa",
+    ].includes(profile)
   ),
   "Use the separately gated ios-testflight profile for iOS store distribution",
 );
 const storeProfiles = ["production", "ads-closed-test"];
 if (
-  (android && ["preview", "ads-preview", ...storeProfiles].includes(profile)) ||
+  (android &&
+    [
+      "preview",
+      "ads-preview",
+      "android-production",
+      "android-production-qa",
+      ...storeProfiles,
+    ].includes(profile)) ||
   (ios &&
     ["ios-development", "ios-simulator-acceptance", "ios-testflight"].includes(
       profile,
@@ -48,6 +60,20 @@ if (
       "sb_publishable_",
     ),
     "Publishable client configuration required; no administrator keys",
+  );
+}
+if (android && profile === "android-production") {
+  const approval = JSON.parse(
+    readFileSync("config/android-production-approval.json", "utf8"),
+  );
+  const { expo } = JSON.parse(readFileSync("app.json", "utf8"));
+  assert(
+    approval.approved === true &&
+      approval.packageId === expo.android.package &&
+      /^[a-f0-9]{64}$/.test(approval.acceptedApkSha256 ?? "") &&
+      approval.acceptedSourceCommit ===
+        execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
+    "Production AAB requires acceptance of this source and the exact Android QA APK; old Alpha acceptance does not authorize Production.",
   );
 }
 if (android && storeProfiles.includes(profile)) {

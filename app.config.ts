@@ -31,6 +31,11 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     ...config,
     name: config.name!,
     slug: config.slug!,
+    ...(["android-production", "android-production-qa"].includes(
+      process.env.EAS_BUILD_PROFILE ?? "",
+    ) && process.env.EAS_BUILD_PLATFORM === "android"
+      ? { version: "0.1.2" }
+      : {}),
     icon: `./${brandAssets.outputs.icon}`,
     web: {
       ...config.web,
@@ -113,7 +118,7 @@ export default function ({ config }: ConfigContext): ExpoConfig {
         foregroundImage: `./${brandAssets.outputs.adaptiveForeground}`,
         backgroundColor: brandAssets.backgroundColor,
       },
-      // This test-only integration never requests the advertising ID.
+      // Keep advertising ID / AdServices permissions absent, including revenue.
       blockedPermissions: [
         ...(config.android?.blockedPermissions ?? []),
         "com.google.android.gms.permission.AD_ID",

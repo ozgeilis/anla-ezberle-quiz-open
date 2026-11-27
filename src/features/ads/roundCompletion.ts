@@ -30,6 +30,7 @@ export function oncePerRound() {
 
 type RoundEndState = {
   platform: string;
+  roundEndPlacement?: boolean;
   game: RoundSnapshot;
   path: string;
   ready: boolean;
@@ -49,7 +50,10 @@ export function createRoundEndAdBreak() {
   ): Promise<void> => {
     const initial = ports.read();
     // An old callback cannot replace the gate for a different current round.
-    if (initial.platform !== "ios" || initial.game.result?.id !== id)
+    if (
+      (initial.platform !== "ios" && !initial.roundEndPlacement) ||
+      initial.game.result?.id !== id
+    )
       return Promise.resolve();
     return once(id, async () => {
       const state = ports.read();
@@ -58,6 +62,7 @@ export function createRoundEndAdBreak() {
       if (
         !canOfferInterstitial({
           platform: state.platform,
+          roundEndPlacement: state.roundEndPlacement,
           trigger: "round-complete",
           resultId: id,
           completedRounds: state.game.data.games.length,
@@ -97,7 +102,8 @@ export function leaveResults(
   id: string,
   navigate: () => void,
   legacyExit: (id: string, navigate: () => void) => void,
+  roundEndPlacement = false,
 ) {
-  if (platform === "ios") navigate();
+  if (platform === "ios" || roundEndPlacement) navigate();
   else legacyExit(id, navigate);
 }

@@ -155,7 +155,7 @@ export function QuizScreen({ demo = false }: { demo?: boolean } = {}) {
   const goNext = async () => {
     if (!session || !chosen || finishing) return;
     if (session.cursor === 9) {
-      if (!demo && Platform.OS === "ios") {
+      if (!demo && ads.roundEndPlacement) {
         await finishOnce
           .current(session.id, () =>
             finishBeforeResults(

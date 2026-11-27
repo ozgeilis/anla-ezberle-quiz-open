@@ -1,5 +1,4 @@
 import React from "react";
-import { Platform } from "react-native";
 import type { AdsRuntime, BannerProps } from "./runtime.types";
 import { consentDecision } from "./consent";
 import { createInterstitial, type InterstitialPort } from "./interstitial";
@@ -18,12 +17,12 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
   const requestOptions = { requestNonPersonalizedAdsOnly: true };
   const initialize = createAdInitializer({
     configure: async () => {
-      if (adConfig.requiresTrackingAuthorization)
+      if (adConfig.roundEndPlacement)
         await sdk.default().setPublisherFirstPartyIdEnabled(false);
       await sdk.default().setRequestConfiguration({
         maxAdContentRating: sdk.MaxAdContentRating.G,
         tagForChildDirectedTreatment: false,
-        tagForUnderAgeOfConsent: false,
+        tagForUnderAgeOfConsent: adConfig.underAgeOfConsent,
         testDeviceIdentifiers: ["EMULATOR"],
       });
     },
@@ -31,7 +30,8 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
     mute: () => sdk.default().setAppMuted(true),
   });
   const consentOptions = {
-    tagForUnderAgeOfConsent: false,
+    // UMP does not forward TFUA to GMA: set it separately on both requests.
+    tagForUnderAgeOfConsent: adConfig.underAgeOfConsent,
     ...(adConfig.consentDebugEea
       ? { debugGeography: sdk.AdsConsentDebugGeography.EEA }
       : {}),
@@ -97,7 +97,7 @@ export async function loadAdsRuntime(): Promise<AdsRuntime> {
           listen: (event, fn) => ad.addAdEventListener(events[event], fn),
         };
       };
-      return Platform.OS === "ios"
+      return adConfig.roundEndPlacement
         ? createInterstitialCycle(createPort, onReady, canLoad)
         : createInterstitial(createPort(), onReady);
     },

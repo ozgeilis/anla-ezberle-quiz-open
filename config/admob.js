@@ -67,6 +67,53 @@ function resolveAdBuild(env) {
           : null,
     };
   }
+  const androidRelease =
+    env.EAS_BUILD_PLATFORM === "android" &&
+    ["android-production", "android-production-qa"].includes(profile);
+  if (androidRelease) {
+    const qa = profile === "android-production-qa";
+    const mode = qa ? "test" : "live";
+    const appId = env.ADMOB_ANDROID_APP_ID;
+    if (
+      env.ADS_MODE !== mode ||
+      appId !== "ca-app-pub-9642662711398587~8836643534"
+    )
+      throw Error(
+        "Android release requires its registered App ID and explicit ad mode",
+      );
+    const units = qa
+      ? null
+      : {
+          banner: env.ADMOB_ANDROID_BANNER_ID,
+          interstitial: env.ADMOB_ANDROID_INTERSTITIAL_ID,
+        };
+    if (units) {
+      for (const id of Object.values(units))
+        if (!/^ca-app-pub-9642662711398587\/\d{10}$/.test(id || ""))
+          throw Error(
+            "Android revenue requires matching registered Android units",
+          );
+      if (
+        units.banner === units.interstitial ||
+        [env.ADMOB_IOS_BANNER_ID, env.ADMOB_IOS_INTERSTITIAL_ID].some(
+          (id) => id && Object.values(units).includes(id),
+        )
+      )
+        throw Error(
+          "Android units must be distinct and must not reuse iOS units",
+        );
+    }
+    return {
+      platform: "android",
+      androidRelease: true,
+      mode,
+      realAdsEnabled: !qa,
+      androidAppId: appId,
+      androidUnits: units,
+      iosAppId: googleSampleApps.ios,
+      consentDebugGeography: qa && env.ADS_TEST_UMP_EEA === "1" ? "EEA" : null,
+    };
+  }
   const testBuild =
     profile === "ads-preview" ||
     profile === "ads-development" ||

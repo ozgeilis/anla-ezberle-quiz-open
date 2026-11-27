@@ -89,213 +89,217 @@ const flush = async () => {
   await Promise.resolve();
 };
 
-test("five rounds / fifty questions save first; iOS rounds 2 and 4 advertise before results and preload; buttons never advertise", async (t) => {
-  const driver = sdk();
-  let data = emptyData();
-  data.profile.name = "Korunan Oyuncu";
-  let session: Session | null = null,
-    result: GameRecord | null = null;
-  let preferences = { ...defaultAdPreferences },
-    ready = false,
-    path = "/";
-  const snapshot = () => ({ data, session, result });
-  let completedId: string | null = null;
-  const ad = createInterstitialCycle(
-    driver.create,
-    (value) => (ready = value),
-    () =>
-      !session &&
-      (["/", "/results"].includes(path) ||
-        (path === "/quiz" &&
-          completedId !== null &&
-          isSavedCompletedRound(completedId, snapshot()))),
-  );
-  t.after(() => ad.dispose());
-  const roundEnd = createRoundEndAdBreak(),
-    finishOnce = oncePerRound();
-  const events: string[] = [];
-  const ports = {
-    read: () => ({
-      platform: "ios",
-      game: snapshot(),
-      path,
-      ready,
-      foreground: true,
-      busy: false,
-      preferences,
-    }),
-    prepare: (id: string) => {
-      completedId = id;
-    },
-    present: async (id: string) => {
-      preferences = {
-        ...preferences,
-        consumedResults: [...preferences.consumedResults, id],
-      };
-      events.push("ad");
-      await ad.show();
-      events.push("closed");
-    },
-  };
-  let serialized = "";
-  ad.load();
-  let adCount = 0;
-  for (let round = 0; round < 5; round++) {
-    const eventOffset = events.length;
-    driver.requests[adCount]!.emit("loaded");
-    assert.equal(ready, true);
-    path = "/quiz";
-    let at = 1_800_000_000_000 + round * 1_000_000;
-    session = createSession("mixed", undefined, at, {
-      quickPlay: true,
-      timed: true,
-      history: data.games,
-    });
-    assert.equal(await ad.show(), false, "No ad while the quiz clock runs");
-    for (let i = 0; i < 10; i++) {
-      const q: NonNullable<ReturnType<typeof gameQuestion>> = gameQuestion(
-        session,
-        session.questionIds[i]!,
-      )!;
-      // Real engine final answers cover correct, wrong and the full 20s timeout.
-      session =
-        i === 9 && (round === 2 || round === 4)
-          ? expireQuestion(session, at + 20_000)
-          : answerQuestion(
-              session,
-              i === 9 && round === 1 ? (q.correct + 1) % 4 : q.correct,
-              at + 1000,
-            );
-      if (i < 9) {
-        at += 25_000;
-        session = advanceQuestion(session, at);
+for (const platform of ["ios", "android"] as const)
+  test(`${platform}: five rounds / fifty questions save before ads/results; fresh preload and buttons never advertise`, async (t) => {
+    const driver = sdk();
+    let data = emptyData();
+    data.profile.name = "Korunan Oyuncu";
+    let session: Session | null = null,
+      result: GameRecord | null = null;
+    let preferences = { ...defaultAdPreferences },
+      ready = false,
+      path = "/";
+    const snapshot = () => ({ data, session, result });
+    let completedId: string | null = null;
+    const ad = createInterstitialCycle(
+      driver.create,
+      (value) => (ready = value),
+      () =>
+        !session &&
+        (["/", "/results"].includes(path) ||
+          (path === "/quiz" &&
+            completedId !== null &&
+            isSavedCompletedRound(completedId, snapshot()))),
+    );
+    t.after(() => ad.dispose());
+    const roundEnd = createRoundEndAdBreak(),
+      finishOnce = oncePerRound();
+    const events: string[] = [];
+    const ports = {
+      read: () => ({
+        platform,
+        roundEndPlacement: platform === "android",
+        game: snapshot(),
+        path,
+        ready,
+        foreground: true,
+        busy: false,
+        preferences,
+      }),
+      prepare: (id: string) => {
+        completedId = id;
+      },
+      present: async (id: string) => {
+        preferences = {
+          ...preferences,
+          consumedResults: [...preferences.consumedResults, id],
+        };
+        events.push("ad");
+        await ad.show();
+        events.push("closed");
+      },
+    };
+    let serialized = "";
+    ad.load();
+    let adCount = 0;
+    for (let round = 0; round < 5; round++) {
+      const eventOffset = events.length;
+      driver.requests[adCount]!.emit("loaded");
+      assert.equal(ready, true);
+      path = "/quiz";
+      let at = 1_800_000_000_000 + round * 1_000_000;
+      session = createSession("mixed", undefined, at, {
+        quickPlay: true,
+        timed: true,
+        history: data.games,
+      });
+      assert.equal(await ad.show(), false, "No ad while the quiz clock runs");
+      for (let i = 0; i < 10; i++) {
+        const q: NonNullable<ReturnType<typeof gameQuestion>> = gameQuestion(
+          session,
+          session.questionIds[i]!,
+        )!;
+        // Real engine final answers cover correct, wrong and the full 20s timeout.
+        session =
+          i === 9 && (round === 2 || round === 4)
+            ? expireQuestion(session, at + 20_000)
+            : answerQuestion(
+                session,
+                i === 9 && round === 1 ? (q.correct + 1) % 4 : q.correct,
+                at + 1000,
+              );
+        if (i < 9) {
+          at += 25_000;
+          session = advanceQuestion(session, at);
+        }
       }
-    }
-    const answered = session;
-    assert.equal(answered.answers.length, 10);
-    if (round === 2 || round === 4)
-      assert.equal(answered.answers[9]!.timedOut, true);
-    const id = session.id;
-    const complete = () =>
-      finishOnce(id, () =>
-        finishBeforeResults(
-          async () => {
-            result = finishSession(answered);
-            session = null;
-            data = await persistChange(
-              data,
-              (current) => appendGame(current, result!),
-              async (raw) => {
-                serialized = raw;
-              },
-            );
-            events.push("saved");
-          },
-          () => roundEnd(id, ports),
+      const answered = session;
+      assert.equal(answered.answers.length, 10);
+      if (round === 2 || round === 4)
+        assert.equal(answered.answers[9]!.timedOut, true);
+      const id = session.id;
+      const complete = () =>
+        finishOnce(id, () =>
+          finishBeforeResults(
+            async () => {
+              result = finishSession(answered);
+              session = null;
+              data = await persistChange(
+                data,
+                (current) => appendGame(current, result!),
+                async (raw) => {
+                  serialized = raw;
+                },
+              );
+              events.push("saved");
+            },
+            () => roundEnd(id, ports),
+            () => {
+              path = "/results";
+              events.push("results");
+            },
+          ),
+        );
+      const done = complete();
+      assert.equal(
+        complete(),
+        done,
+        "Duplicate finish callbacks share the same work",
+      );
+      // Wait for the real persistence / completion promise chain, not wall time.
+      for (let i = 0; i < 12; i++) await flush();
+      if (platform === "ios" && (round + 1) % 2 !== 0) {
+        await done;
+        assert.deepEqual(events.slice(eventOffset), ["saved", "results"]);
+        assert.equal(driver.requests[adCount]!.stats().shows, 0);
+        let legacy = 0;
+        leaveResults(
+          platform,
+          id,
           () => {
-            path = "/results";
-            events.push("results");
+            path = "/";
           },
-        ),
-      );
-    const done = complete();
-    assert.equal(
-      complete(),
-      done,
-      "Duplicate finish callbacks share the same work",
-    );
-    // Wait for the real persistence / completion promise chain, not wall time.
-    for (let i = 0; i < 12; i++) await flush();
-    if ((round + 1) % 2 !== 0) {
+          () => {
+            legacy++;
+          },
+        );
+        leaveResults(
+          platform,
+          id,
+          () => {},
+          () => {
+            legacy++;
+          },
+        );
+        assert.equal(legacy, 0);
+        continue;
+      }
+      assert.deepEqual(events.slice(eventOffset), ["saved", "ad"]);
+      assert.equal(path, "/quiz", "Results remain hidden until native CLOSE");
+      const saved = JSON.stringify(data),
+        xp = rewardSummary(data.games);
+      assert.equal(serialized, saved);
+      const current = driver.requests[adCount]!;
+      current.emit("opened");
+      await flush();
+      assert.equal(path, "/quiz", "Native show() resolution is not CLOSE");
+      current.emit("closed");
       await done;
-      assert.deepEqual(events.slice(eventOffset), ["saved", "results"]);
-      assert.equal(driver.requests[adCount]!.stats().shows, 0);
-      let legacy = 0;
+      await flush();
+      assert.deepEqual(events.slice(eventOffset), [
+        "saved",
+        "ad",
+        "closed",
+        "results",
+      ]);
+      assert.deepEqual(current.stats(), {
+        loads: 1,
+        shows: 1,
+        destroys: 1,
+        listeners: 0,
+      });
+      assert.equal(
+        driver.requests.length,
+        adCount + 2,
+        "CLOSE preloads the next creative without a restart",
+      );
+      assert.equal(driver.requests[adCount + 1]!.stats().loads, 1);
+      await roundEnd(id, ports);
+      current.emit("closed");
+      let home = 0,
+        replay = 0,
+        legacyAds = 0;
       leaveResults(
-        "ios",
+        platform,
         id,
-        () => {
-          path = "/";
-        },
-        () => {
-          legacy++;
-        },
+        () => home++,
+        () => legacyAds++,
+        platform === "android",
       );
       leaveResults(
-        "ios",
+        platform,
         id,
-        () => {},
-        () => {
-          legacy++;
-        },
+        () => replay++,
+        () => legacyAds++,
+        platform === "android",
       );
-      assert.equal(legacy, 0);
-      continue;
+      assert.deepEqual([home, replay, legacyAds], [1, 1, 0]);
+      assert.equal(current.stats().shows, 1);
+      assert.equal(JSON.stringify(data), saved);
+      assert.equal(
+        rewardSummary(data.games),
+        xp,
+        "Presentation never changes score or XP",
+      );
+      path = "/";
+      adCount++;
     }
-    assert.deepEqual(events.slice(eventOffset), ["saved", "ad"]);
-    assert.equal(path, "/quiz", "Results remain hidden until native CLOSE");
-    const saved = JSON.stringify(data),
-      xp = rewardSummary(data.games);
-    assert.equal(serialized, saved);
-    const current = driver.requests[adCount]!;
-    current.emit("opened");
-    await flush();
-    assert.equal(path, "/quiz", "Native show() resolution is not CLOSE");
-    current.emit("closed");
-    await done;
-    await flush();
-    assert.deepEqual(events.slice(eventOffset), [
-      "saved",
-      "ad",
-      "closed",
-      "results",
-    ]);
-    assert.deepEqual(current.stats(), {
-      loads: 1,
-      shows: 1,
-      destroys: 1,
-      listeners: 0,
-    });
-    assert.equal(
-      driver.requests.length,
-      adCount + 2,
-      "CLOSE preloads the next creative without a restart",
-    );
-    assert.equal(driver.requests[adCount + 1]!.stats().loads, 1);
-    await roundEnd(id, ports);
-    current.emit("closed");
-    let home = 0,
-      replay = 0,
-      legacyAds = 0;
-    leaveResults(
-      "ios",
-      id,
-      () => home++,
-      () => legacyAds++,
-    );
-    leaveResults(
-      "ios",
-      id,
-      () => replay++,
-      () => legacyAds++,
-    );
-    assert.deepEqual([home, replay, legacyAds], [1, 1, 0]);
-    assert.equal(current.stats().shows, 1);
-    assert.equal(JSON.stringify(data), saved);
-    assert.equal(
-      rewardSummary(data.games),
-      xp,
-      "Presentation never changes score or XP",
-    );
-    path = "/";
-    adCount++;
-  }
-  assert.equal(adCount, 2);
-  assert.equal(driver.requests.length, 3);
-  assert.equal(parseData(serialized).games.length, 5);
-  assert.equal(new Set(data.games.flatMap((g) => g.questionIds)).size, 50);
-  assert.equal(data.profile.name, "Korunan Oyuncu");
-});
+    assert.equal(adCount, platform === "ios" ? 2 : 5);
+    assert.equal(driver.requests.length, adCount + 1);
+    assert.equal(parseData(serialized).games.length, 5);
+    assert.equal(new Set(data.games.flatMap((g) => g.questionIds)).size, 50);
+    assert.equal(data.profile.name, "Korunan Oyuncu");
+  });
 
 test("no-fill/offline releases readiness immediately and a safe later load creates a fresh request without a retry loop", async (t) => {
   const driver = sdk();

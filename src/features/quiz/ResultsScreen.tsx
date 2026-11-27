@@ -94,7 +94,13 @@ export function ResultsScreen() {
       });
   };
   const exit = (navigate: () => void) =>
-    leaveResults(Platform.OS, result.id, navigate, ads.transition);
+    leaveResults(
+      Platform.OS,
+      result.id,
+      navigate,
+      ads.transition,
+      ads.roundEndPlacement,
+    );
   const doShare = async () => {
     try {
       if (Platform.OS === "web") {

@@ -114,6 +114,28 @@
         "autoIncrement": "buildNumber",
         "buildConfiguration": "Release"
       }
+    },
+    "android-production": {
+      "extends": "production",
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
+        "ADS_MODE": "live",
+        "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534",
+        "ADMOB_ANDROID_BANNER_ID": "ca-app-pub-9642662711398587/6077280493",
+        "ADMOB_ANDROID_INTERSTITIAL_ID": "ca-app-pub-9642662711398587/8188438512"
+      }
+    },
+    "android-production-qa": {
+      "extends": "preview",
+      "autoIncrement": false,
+      "env": {
+        "EXPO_PUBLIC_CONTENT_CHANNEL": "production",
+        "ADS_MODE": "test",
+        "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534",
+        "ADMOB_ANDROID_BANNER_ID": "ca-app-pub-9642662711398587/6077280493",
+        "ADMOB_ANDROID_INTERSTITIAL_ID": "ca-app-pub-9642662711398587/8188438512"
+      },
+      "environment": "production"
     }
   }
 }

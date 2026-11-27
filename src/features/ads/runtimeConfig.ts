@@ -6,9 +6,14 @@ export function resolveRuntimeAds(
   development: boolean,
 ) {
   const ios = platform === "ios" && build?.platform === "ios";
-  const mode: "live" | "test" = build?.mode === "live" && ios ? "live" : "test";
+  const androidRelease =
+    platform === "android" &&
+    build?.platform === "android" &&
+    build?.androidRelease === true;
+  const mode: "live" | "test" =
+    build?.mode === "live" && (ios || androidRelease) ? "live" : "test";
   const appId = ios ? build?.iosAppId : build?.androidAppId;
-  const units = build?.iosUnits as {
+  const units = (ios ? build?.iosUnits : build?.androidUnits) as {
     banner?: string;
     interstitial?: string;
   } | null;
@@ -34,17 +39,24 @@ export function resolveRuntimeAds(
       mode === "test" &&
       build?.consentDebugGeography === "EEA" &&
       (development ||
+        androidRelease ||
         (ios &&
           build?.iosQaConsent === true &&
           build?.realAdsEnabled === false)),
     requiresTrackingAuthorization: ios,
+    // Play audience includes 13–17. With no neutral age screen, do not mark
+    // an unknown user as over the regional consent age. Never affects Alpha.
+    underAgeOfConsent: androidRelease,
+    roundEndPlacement: ios || androidRelease,
     bannerUnitId: mode === "live" ? units?.banner : undefined,
     interstitialUnitId: mode === "live" ? units?.interstitial : undefined,
     // Keep test/live local records separate. Neither record is UMP/ATT consent;
     // the SDK privacy state is checked before initializing/loading ads.
     preferencesKey:
-      ios && mode === "live"
-        ? "@anla-ezberle-quiz/ads/ios-live/v1"
-        : AD_PREFERENCES_KEY,
+      androidRelease && mode === "live"
+        ? "@anla-ezberle-quiz/ads/android-live/v1"
+        : ios && mode === "live"
+          ? "@anla-ezberle-quiz/ads/ios-live/v1"
+          : AD_PREFERENCES_KEY,
   };
 }

@@ -23,6 +23,7 @@ import { consentBlockMessage } from "./consentFlow";
 
 interface AdContextValue {
   enabled: boolean;
+  roundEndPlacement: boolean;
   ready: boolean;
   busy: boolean;
   error: string;
@@ -164,14 +165,14 @@ export function AdProvider({ children }: React.PropsWithChildren) {
           (Platform.OS !== "ios" || AppState.currentState === "active") &&
           !getSnapshot().session &&
           (["/", "/results"].includes(current.current.path) ||
-            (Platform.OS === "ios" &&
+            (adConfig.roundEndPlacement &&
               current.current.path === "/quiz" &&
               completedRound.current !== null &&
               isSavedCompletedRound(completedRound.current, getSnapshot()))),
       );
       // Do not rely on a React state/route change to start an iOS preload:
       // revalidation can finish with the same rendered ready/path values.
-      if (Platform.OS === "ios") full.current.load();
+      if (adConfig.roundEndPlacement) full.current.load();
       setReadyRuntime(runtime.current);
       setReady(true);
       setError(
@@ -231,6 +232,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
       lock.current ||
       !canOfferInterstitial({
         platform: Platform.OS,
+        roundEndPlacement: adConfig.roundEndPlacement,
         resultId: id,
         completedRounds: data.games.length,
         saved: data.games.some((g) => g.id === id),
@@ -254,6 +256,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     return roundEnd.current(id, {
       read: () => ({
         platform: Platform.OS,
+        roundEndPlacement: adConfig.roundEndPlacement,
         game: getSnapshot(),
         path: current.current.path,
         ready: current.current.ready && adReadyRef.current,
@@ -315,6 +318,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     <Context.Provider
       value={{
         enabled: adConfig.enabled,
+        roundEndPlacement: adConfig.roundEndPlacement,
         ready,
         busy,
         error: error || storageError,

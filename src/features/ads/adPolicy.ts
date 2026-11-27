@@ -36,6 +36,7 @@ export function parseAdPreferences(raw: string | null): AdPreferences {
 }
 export function canOfferInterstitial(input: {
   platform?: string;
+  roundEndPlacement?: boolean;
   trigger?: "results-exit" | "round-complete";
   completedRounds: number;
   resultId: string;
@@ -55,7 +56,7 @@ export function canOfferInterstitial(input: {
     input.saved &&
     input.ready &&
     input.foreground &&
-    (input.platform === "ios"
+    (input.platform === "ios" || input.roundEndPlacement
       ? input.trigger === "round-complete" && input.path === "/quiz"
       : input.trigger !== "round-complete" && input.path === "/results") &&
     !input.playing &&
@@ -63,9 +64,10 @@ export function canOfferInterstitial(input: {
     !p.consumedResults.includes(input.resultId) &&
     (input.platform === "ios"
       ? input.completedRounds % 2 === 0
-      : input.completedRounds >= 3 &&
-        input.monotonicElapsedMs >= AD_INTERVAL_MS &&
-        (p.lastPresentedAt === 0 ||
-          input.now - p.lastPresentedAt >= AD_INTERVAL_MS))
+      : input.roundEndPlacement ||
+        (input.completedRounds >= 3 &&
+          input.monotonicElapsedMs >= AD_INTERVAL_MS &&
+          (p.lastPresentedAt === 0 ||
+            input.now - p.lastPresentedAt >= AD_INTERVAL_MS)))
   );
 }

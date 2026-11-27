@@ -238,14 +238,11 @@ test("production screens wire iOS save/ad/results ordering and both result butto
   const quiz = readFileSync("src/features/quiz/QuizScreen.tsx", "utf8");
   const result = readFileSync("src/features/quiz/ResultsScreen.tsx", "utf8");
   const provider = readFileSync("src/features/ads/AdProvider.tsx", "utf8");
-  assert.match(quiz, /!demo && Platform.OS === "ios"/);
+  assert.match(quiz, /!demo && ads.roundEndPlacement/);
   assert.match(quiz, /finishBeforeResults/);
   assert.match(quiz, /await solo\.finish\(\)/);
   assert.match(quiz, /ads\.completeRound\(session.id\)/);
-  assert.match(
-    result,
-    /leaveResults\(Platform.OS, result.id, navigate, ads.transition\)/,
-  );
+  assert.match(result, /leaveResults\([\s\S]*ads.roundEndPlacement[\s\S]*\)/);
   assert.match(result, /onPress=\{\(\) => exit\(replay\)\}/);
   assert.match(result, /onPress=\{\(\) => exit\(home\)\}/);
   assert.match(provider, /revision === generation.current.value/);

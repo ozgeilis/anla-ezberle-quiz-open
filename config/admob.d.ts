@@ -5,7 +5,9 @@ export const googleSampleApps: {
 export function resolveAdBuild(env: Record<string, string | undefined>): {
   mode: "off" | "test" | "live";
   realAdsEnabled: boolean;
-  platform?: "ios";
+  platform?: "ios" | "android";
+  androidRelease?: boolean;
+  androidUnits?: { banner: string; interstitial: string } | null;
   iosQaConsent?: boolean;
   iosUnits?: { banner: string; interstitial: string } | null;
   androidAppId: string;

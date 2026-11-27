@@ -61,6 +61,7 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
     if (
       !expected.includes(name) &&
       name !== "production" &&
+      !["android-production", "android-production-qa"].includes(name) &&
       ![
         "ios-development",
         "ios-simulator-acceptance",
@@ -95,6 +96,45 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
     )
       issues.push(
         `${name}: only an isolated test-ad extension of the reviewed parent profile is permitted`,
+      );
+  }
+  for (const name of ["android-production", "android-production-qa"]) {
+    const profile = build[name];
+    if (!profile) continue;
+    const qa = name === "android-production-qa";
+    const keys = [
+      "ADS_MODE",
+      "ADMOB_ANDROID_APP_ID",
+      "ADMOB_ANDROID_BANNER_ID",
+      "ADMOB_ANDROID_INTERSTITIAL_ID",
+      "EXPO_PUBLIC_CONTENT_CHANNEL",
+    ];
+    if (
+      profile.extends !== (qa ? "preview" : "production") ||
+      !build[qa ? "preview" : "production"] ||
+      Object.keys(profile).some(
+        (key) =>
+          ![
+            "extends",
+            "env",
+            ...(qa ? ["environment", "autoIncrement"] : []),
+          ].includes(key),
+      ) ||
+      (qa &&
+        (profile.autoIncrement !== false ||
+          profile.environment !== "production")) ||
+      profile.env?.ADS_MODE !== (qa ? "test" : "live") ||
+      profile.env?.EXPO_PUBLIC_CONTENT_CHANNEL !== "production" ||
+      profile.env?.ADMOB_ANDROID_APP_ID !==
+        "ca-app-pub-9642662711398587~8836643534" ||
+      profile.env?.ADMOB_ANDROID_BANNER_ID !==
+        "ca-app-pub-9642662711398587/6077280493" ||
+      profile.env?.ADMOB_ANDROID_INTERSTITIAL_ID !==
+        "ca-app-pub-9642662711398587/8188438512" ||
+      Object.keys(profile.env ?? {}).some((key) => !keys.includes(key))
+    )
+      issues.push(
+        `${name}: only the separate guarded Android release/test configuration is permitted`,
       );
   }
   if (build["ads-closed-test"] && !build.production)
