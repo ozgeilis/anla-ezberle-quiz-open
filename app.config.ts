@@ -31,9 +31,13 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     ...config,
     name: config.name!,
     slug: config.slug!,
-    ...(["android-production", "android-production-qa"].includes(
-      process.env.EAS_BUILD_PROFILE ?? "",
-    ) && process.env.EAS_BUILD_PLATFORM === "android"
+    ...((["production", "qa"].includes(
+      process.env.ANDROID_BUILD_TARGET ?? "",
+    ) ||
+      ["android-production", "android-production-qa"].includes(
+        process.env.EAS_BUILD_PROFILE ?? "",
+      )) &&
+    process.env.EAS_BUILD_PLATFORM !== "ios"
       ? { version: "0.1.2" }
       : {}),
     icon: `./${brandAssets.outputs.icon}`,

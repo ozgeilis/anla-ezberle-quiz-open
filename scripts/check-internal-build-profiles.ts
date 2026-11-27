@@ -104,6 +104,7 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
     const qa = name === "android-production-qa";
     const keys = [
       "ADS_MODE",
+      "ANDROID_BUILD_TARGET",
       "ADMOB_ANDROID_APP_ID",
       "ADMOB_ANDROID_BANNER_ID",
       "ADMOB_ANDROID_INTERSTITIAL_ID",
@@ -124,6 +125,7 @@ export function internalBuildIssues(config: InternalEasConfig): string[] {
         (profile.autoIncrement !== false ||
           profile.environment !== "production")) ||
       profile.env?.ADS_MODE !== (qa ? "test" : "live") ||
+      profile.env?.ANDROID_BUILD_TARGET !== (qa ? "qa" : "production") ||
       profile.env?.EXPO_PUBLIC_CONTENT_CHANNEL !== "production" ||
       profile.env?.ADMOB_ANDROID_APP_ID !==
         "ca-app-pub-9642662711398587~8836643534" ||

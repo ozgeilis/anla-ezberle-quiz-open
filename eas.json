@@ -122,7 +122,8 @@
         "ADS_MODE": "live",
         "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534",
         "ADMOB_ANDROID_BANNER_ID": "ca-app-pub-9642662711398587/6077280493",
-        "ADMOB_ANDROID_INTERSTITIAL_ID": "ca-app-pub-9642662711398587/8188438512"
+        "ADMOB_ANDROID_INTERSTITIAL_ID": "ca-app-pub-9642662711398587/8188438512",
+        "ANDROID_BUILD_TARGET": "production"
       }
     },
     "android-production-qa": {
@@ -133,7 +134,8 @@
         "ADS_MODE": "test",
         "ADMOB_ANDROID_APP_ID": "ca-app-pub-9642662711398587~8836643534",
         "ADMOB_ANDROID_BANNER_ID": "ca-app-pub-9642662711398587/6077280493",
-        "ADMOB_ANDROID_INTERSTITIAL_ID": "ca-app-pub-9642662711398587/8188438512"
+        "ADMOB_ANDROID_INTERSTITIAL_ID": "ca-app-pub-9642662711398587/8188438512",
+        "ANDROID_BUILD_TARGET": "qa"
       },
       "environment": "production"
     }

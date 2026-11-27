@@ -5,7 +5,13 @@ const googleSampleApps = {
 };
 
 function resolveAdBuild(env) {
-  const profile = env.EAS_BUILD_PROFILE;
+  const profile =
+    env.EAS_BUILD_PROFILE ||
+    (env.ANDROID_BUILD_TARGET === "production"
+      ? "android-production"
+      : env.ANDROID_BUILD_TARGET === "qa"
+        ? "android-production-qa"
+        : undefined);
   const ios =
     env.EAS_BUILD_PLATFORM === "ios" ||
     (env.EAS_BUILD_PLATFORM !== "android" &&
@@ -68,7 +74,8 @@ function resolveAdBuild(env) {
     };
   }
   const androidRelease =
-    env.EAS_BUILD_PLATFORM === "android" &&
+    env.EAS_BUILD_PLATFORM !== "ios" &&
+    (env.EAS_BUILD_PLATFORM === "android" || !!env.ANDROID_BUILD_TARGET) &&
     ["android-production", "android-production-qa"].includes(profile);
   if (androidRelease) {
     const qa = profile === "android-production-qa";

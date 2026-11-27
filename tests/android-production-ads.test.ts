@@ -111,3 +111,24 @@ test("only the Android release placement attempts every saved round, never Resul
     true,
   );
 });
+
+test("EAS local config without a profile/platform uses the explicit Android target marker", () => {
+  const build = resolveAdBuild({
+    ...production,
+    EAS_BUILD_PROFILE: undefined,
+    EAS_BUILD_PLATFORM: undefined,
+    ANDROID_BUILD_TARGET: "production",
+  });
+  assert.equal(build.platform, "android");
+  assert.equal(build.mode, "live");
+  assert.equal(resolveRuntimeAds("android", build, false).enabled, true);
+  assert.equal(
+    resolveAdBuild({
+      ...production,
+      EAS_BUILD_PLATFORM: "ios",
+      ANDROID_BUILD_TARGET: "production",
+      IOS_ADS_MODE: "off",
+    }).platform,
+    "ios",
+  );
+});
