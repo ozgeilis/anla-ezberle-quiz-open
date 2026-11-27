@@ -125,16 +125,26 @@ export default function PrivacyScreen() {
           Google Analytics ve Firebase Analytics etkinleştirilmez.
         </Txt>
         <Txt>
-          Reklam testi içeren Android sürümlerinde Google Mobile Ads ve Google
-          User Messaging Platform kullanılır. Gerçek gelir sağlayan reklamlar
-          açık değildir. Test reklamları da Google’a ağ bağlantısı kurabilir; IP
-          adresi ve buna bağlı yaklaşık konum, cihaz veya uygulama
-          tanımlayıcıları, reklam etkileşimleri ve tanılama bilgileri reklam
-          sunumu, ölçüm ve kötüye kullanımı önleme için işlenebilir. Test
-          reklamı olması veri işlenmediği anlamına gelmez. Reklam isteğine hesap
-          e-postanı, quiz cevaplarını, skorunu veya dinî ilgi profili eklemeyiz.
-          Android reklam kimliği izni bu test sürümünde engellenir; bu durum
-          diğer teknik tanımlayıcıların hiç işlenmediği garantisi değildir.
+          Reklam özelliği etkin Android sürümlerinde Google Mobile Ads ve Google
+          User Messaging Platform kullanılır. Kapalı test ve kabul paketlerinde
+          Google test reklamları, yayımlanan reklam destekli Android paketinde
+          ise Android’e ait gerçek reklam birimleri kullanılır. Her iki tür
+          reklam da Google’a ağ bağlantısı kurabilir; IP adresi ve buna bağlı
+          yaklaşık konum, cihaz veya uygulama tanımlayıcıları, reklam
+          etkileşimleri ve tanılama bilgileri reklam sunumu, ölçüm ve kötüye
+          kullanımı önleme için işlenebilir. Test reklamı olması veri
+          işlenmediği anlamına gelmez. Reklam isteğine hesap e-postanı, quiz
+          cevaplarını, skorunu veya dinî ilgi profili eklemeyiz. Android reklam
+          kimliği ve AdServices izinleri engellenir; bu durum diğer teknik
+          tanımlayıcıların hiç işlenmediği garantisi değildir. Yeni Android
+          production adayında publisher first-party ID kapalıdır; yaş veya doğum
+          tarihi toplanmaz ve yaşı bilinmeyen kullanıcılar yetişkin sayılmaz.
+          Hem UMP hem reklam istekleri rıza yaşının altına uygun işleme
+          bayrağıyla, kişiselleştirilmemiş reklam ve genel izleyici (G) içerik
+          sınırıyla hazırlanır. Bu koruma reklam sunumunu sınırlayabilir. Google
+          gerekli izinlerin bulunduğunu doğrulamadan reklam isteği başlatılmaz;
+          reklam gelmemesi oyunu veya sonuç kaydını engellemez. Google Analytics
+          veya Firebase Analytics açılmaz.
         </Txt>
         <Txt>
           Reklam destekli iOS sürümünde yaş veya doğum tarihi istenmez ve yaşı

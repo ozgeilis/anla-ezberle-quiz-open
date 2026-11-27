@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import iosApproval from "../config/ios-approval.js";
+import androidSource from "../config/android-release-source.js";
 
 const profile = process.env.EAS_BUILD_PROFILE;
 const android = process.env.EAS_BUILD_PLATFORM === "android";
@@ -71,9 +72,9 @@ if (android && profile === "android-production") {
     approval.approved === true &&
       approval.packageId === expo.android.package &&
       /^[a-f0-9]{64}$/.test(approval.acceptedApkSha256 ?? "") &&
-      approval.acceptedSourceCommit ===
-        execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim(),
-    "Production AAB requires acceptance of this source and the exact Android QA APK; old Alpha acceptance does not authorize Production.",
+      approval.reviewedSourceSha256 ===
+        androidSource.androidReleaseSourceHash(),
+    "Production AAB requires matching reviewed source and exact Android QA APK evidence; old Alpha acceptance does not authorize Production.",
   );
 }
 if (android && storeProfiles.includes(profile)) {

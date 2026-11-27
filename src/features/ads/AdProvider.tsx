@@ -222,7 +222,7 @@ export function AdProvider({ children }: React.PropsWithChildren) {
     )
       action.navigate?.();
   }
-  // Android retains its existing result-exit placement and cadence.
+  // Legacy Android profiles retain their result-exit placement and cadence.
   // iOS eligibility rejects this placement even if an old caller invokes it.
   function transition(id: string, navigate: () => void) {
     if (navigationLock.current) return;

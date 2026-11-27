@@ -132,3 +132,48 @@ test("EAS local config without a profile/platform uses the explicit Android targ
     "ios",
   );
 });
+
+test("release acceptance hashes payload bytes without requiring a Git checkout or hashing its own approval record", async () => {
+  const { mkdtempSync, mkdirSync, writeFileSync, rmSync } =
+    await import("node:fs");
+  const { tmpdir } = await import("node:os");
+  const { join } = await import("node:path");
+  const { createRequire } = await import("node:module");
+  const { androidReleaseSourceHash } = createRequire(import.meta.url)(
+    "../config/android-release-source.js",
+  );
+  const root = mkdtempSync(join(tmpdir(), "anla-android-payload-"));
+  try {
+    for (const file of [
+      "app.json",
+      "app.config.ts",
+      "eas.json",
+      "package.json",
+      "pnpm-lock.yaml",
+      "metro.config.js",
+      "tsconfig.json",
+    ])
+      writeFileSync(join(root, file), file);
+    for (const dir of [
+      "src",
+      "assets",
+      "config",
+      "modules",
+      "plugins",
+      "scripts",
+      "public",
+    ])
+      mkdirSync(join(root, dir));
+    writeFileSync(join(root, "src", "game.ts"), "preserved game");
+    const before = androidReleaseSourceHash(root);
+    writeFileSync(
+      join(root, "config", "android-production-approval.json"),
+      JSON.stringify({ approved: true, reviewedSourceSha256: before }),
+    );
+    assert.equal(androidReleaseSourceHash(root), before);
+    writeFileSync(join(root, "src", "game.ts"), "different game");
+    assert.notEqual(androidReleaseSourceHash(root), before);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
