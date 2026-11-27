@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import React, { useRef, useState } from "react";
 import { TextInput, View } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
@@ -27,7 +28,7 @@ export function AuthEmailScreen({
   return (
     <Page
       title={recovery ? "Şifremi Unuttum" : "E-postanı doğrula"}
-      subtitle="Anla & Ezberle hesabın"
+      subtitle={`${brand.title} hesabın`}
     >
       <Card style={{ gap: 16 }}>
         <Txt>

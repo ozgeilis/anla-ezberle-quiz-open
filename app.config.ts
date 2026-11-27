@@ -2,6 +2,7 @@ import type { ConfigContext, ExpoConfig } from "expo/config";
 import { existsSync, readFileSync } from "node:fs";
 import { resolveAdBuild } from "./config/admob.js";
 import { resolveIosBuild } from "./config/ios.js";
+import brandAssets from "./config/brand-assets.json";
 import iosSkAdNetworkItems from "./config/ios-skadnetwork.json";
 export default function ({ config }: ConfigContext): ExpoConfig {
   const ads = resolveAdBuild(process.env);
@@ -30,6 +31,12 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     ...config,
     name: config.name!,
     slug: config.slug!,
+    icon: `./${brandAssets.outputs.icon}`,
+    web: {
+      ...config.web,
+      name: config.name!,
+      favicon: `./${brandAssets.outputs.favicon}`,
+    },
     extra: {
       ...config.extra,
       ads,
@@ -40,6 +47,7 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     },
     ios: {
       ...config.ios,
+      icon: `./${brandAssets.outputs.icon}`,
       bundleIdentifier: ios.bundleIdentifier,
       ...(ios.appleTeamId ? { appleTeamId: ios.appleTeamId } : {}),
       ...(ios.appleAuthentication ? { usesAppleSignIn: true } : {}),
@@ -47,21 +55,33 @@ export default function ({ config }: ConfigContext): ExpoConfig {
       ...(ios.googleIosUrlScheme ? { scheme: [ios.googleIosUrlScheme] } : {}),
       infoPlist: {
         ...config.ios?.infoPlist,
+        CFBundleDisplayName: config.name!,
         ITSAppUsesNonExemptEncryption: false,
         CFBundleDevelopmentRegion: "tr",
       },
     },
     plugins: [
-      ...(config.plugins ?? []).map((plugin) =>
-        ios.storeDistribution &&
-        Array.isArray(plugin) &&
-        plugin[0] === "expo-notifications"
-          ? ([plugin[0], { ...plugin[1], mode: "production" }] as [
-              string,
-              Record<string, unknown>,
-            ])
-          : plugin,
-      ),
+      ...(config.plugins ?? []).map((plugin) => {
+        if (!Array.isArray(plugin)) return plugin;
+        if (plugin[0] === "expo-splash-screen")
+          return [
+            plugin[0],
+            {
+              ...plugin[1],
+              image: `./${brandAssets.outputs.splash}`,
+              dark: {
+                ...plugin[1]?.dark,
+                image: `./${brandAssets.outputs.splash}`,
+              },
+            },
+          ] as [string, Record<string, unknown>];
+        if (ios.storeDistribution && plugin[0] === "expo-notifications")
+          return [plugin[0], { ...plugin[1], mode: "production" }] as [
+            string,
+            Record<string, unknown>,
+          ];
+        return plugin;
+      }),
       ...(ios.appleAuthentication ? ["expo-apple-authentication"] : []),
       "./plugins/with-admob-workmanager.js",
       ...(ios.googleIosClientId
@@ -88,6 +108,11 @@ export default function ({ config }: ConfigContext): ExpoConfig {
     ],
     android: {
       ...config.android,
+      adaptiveIcon: {
+        ...config.android?.adaptiveIcon,
+        foregroundImage: `./${brandAssets.outputs.adaptiveForeground}`,
+        backgroundColor: brandAssets.backgroundColor,
+      },
       // This test-only integration never requests the advertising ID.
       blockedPermissions: [
         ...(config.android?.blockedPermissions ?? []),

@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-27",
+  "baseCommit": "34e251087b83fa95251691df68204a99fa5dbc43",
+  "targetVersion": "0.1.2",
+  "displayName": "İslami Quiz",
+  "logoSource": "assets/branding/islami-quiz-logo.png",
+  "logoProvidedByOwner": true,
+  "iconOutputsDeterministicallyGenerated": true,
+  "legacyBrand": "Anla & Ezberle",
+  "legacyBrandLocations": [
+    "Settings help",
+    "Privacy identity line",
+    "App Store description",
+    "Google Play description"
+  ],
+  "developerBrand": "Kovynel Studio",
+  "sourceIdentityFieldsUnchanged": true,
+  "protectedFilesByteUnchanged": [
+    "config/admob.js",
+    "config/ios.js",
+    "eas.json",
+    "config/ios-store-approval.json",
+    "src/features/ads/AdProvider.tsx",
+    "src/features/ads/interstitialCycle.ts",
+    "src/features/ads/runtime.native.tsx",
+    "src/features/online/googleAuth.ts",
+    "src/features/online/appleAuth.ts",
+    "src/features/online/appleDeletion.ts",
+    "src/storage/schema.ts",
+    "src/content/questions/questions-v74.ts",
+    "src/domain/game/engine.ts",
+    "src/domain/scoring/levels.ts",
+    "modules/google-native-signin/ios/GoogleNativeSignInModule.swift",
+    "modules/google-native-signin/ios/GoogleNativeSignIn.podspec",
+    "public/app-ads.txt"
+  ],
+  "tests": {
+    "targeted": 57,
+    "passed": 57,
+    "failed": 0,
+    "finalBrandChecks": {
+      "tests": 2,
+      "passed": 2,
+      "note": "Same two identity tests, not two additional distinct tests"
+    },
+    "typecheck": "PASSED",
+    "changedFileEslint": "PASSED"
+  },
+  "nativeConfig": {
+    "iosIntrospection": "PASSED",
+    "CFBundleDisplayName": "İslami Quiz",
+    "androidIntrospection": "PASSED",
+    "androidAppName": "İslami Quiz",
+    "nativeCompilePerformed": false
+  },
+  "web": {
+    "export": "PASSED",
+    "title": "İslami Quiz",
+    "widthsChecked": [320, 390],
+    "horizontalOverflow": false,
+    "aboutLegacyAttributionVerified": true
+  },
+  "physicalDeviceForNewBranding": "NOT_RUN",
+  "stores": {
+    "appStoreLiveVersionObserved": "0.1.1",
+    "appStoreLiveNameObserved": "Anla & Ezberle: İslami Quiz",
+    "newMetadata": "local drafts only",
+    "nameAvailabilityValidatedInConnect": false,
+    "consoleSaved": false,
+    "submitted": false,
+    "published": false,
+    "androidAlphaChanged": false
+  },
+  "newIpa": false,
+  "mainMerge": false,
+  "supabaseChanged": false,
+  "logoSourceSha256": "2cd7ffd67f3173fc049ec545ecb8764259d39dadad02f0f682893320b27cbd2a",
+  "outputs": {
+    "assets/images/icon.png": {
+      "size": [1024, 1024],
+      "mode": "RGB",
+      "sha256": "4ef879c583a64d7ce6ef092fd2920dccc21862c7dabc198535e42008b672d6fe"
+    },
+    "assets/images/adaptive-foreground.png": {
+      "size": [1024, 1024],
+      "mode": "RGBA",
+      "sha256": "40c07d62f45266985f136e36e1e3eac00eaea1729600b5870ed9ea03bf92c4e0"
+    },
+    "assets/images/splash-mark.png": {
+      "size": [1024, 1024],
+      "mode": "RGB",
+      "sha256": "4ef879c583a64d7ce6ef092fd2920dccc21862c7dabc198535e42008b672d6fe"
+    },
+    "assets/images/favicon.png": {
+      "size": [64, 64],
+      "mode": "RGB",
+      "sha256": "f860102bd626fe7237e750579e11984b9c6e959419bba353159ef5db07e08cc4"
+    },
+    "store/google-play/icon-512.png": {
+      "size": [512, 512],
+      "mode": "RGBA",
+      "sha256": "220d45fbad08f0b6ebf962dd3ae18b17e9487ad0df985b32ab3177e4d636818d"
+    },
+    "assets/store/play-store-icon-512.png": {
+      "size": [512, 512],
+      "mode": "RGBA",
+      "sha256": "220d45fbad08f0b6ebf962dd3ae18b17e9487ad0df985b32ab3177e4d636818d"
+    }
+  },
+  "newNativeBuild": false,
+  "iconColorSpace": "sRGB PNG chunk, no pixel conversion",
+  "gitBranch": "integration/ios011-native-source-20261126"
+}

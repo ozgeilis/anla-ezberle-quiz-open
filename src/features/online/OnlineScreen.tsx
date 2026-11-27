@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import { OnlineQuestionTimer } from "./OnlineQuestionTimer";
 import { AppleSignInButton } from "./AppleSignInButton";
 import { GoogleSignInButton } from "./GoogleSignInButton";
@@ -492,7 +493,7 @@ function OnlineAccountScreen() {
         ) : !auth.session ? (
           <Card style={{ gap: 12 }}>
             <Txt size={18} weight="bold">
-              Anla &amp; Ezberle
+              {brand.title}
             </Txt>
             <Txt size={22} weight="heavy">
               {register ? "Hesap oluştur" : "Giriş yap"}

@@ -9,47 +9,55 @@ import argparse
 import hashlib
 import json
 
-from PIL import Image
+from PIL import Image, PngImagePlugin
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "assets/branding/approved-education-logo.png"
-# Discard only the outer white margin, keeping 24 px around all coloured artwork.
-CROP = (199, 151, 1078, 1136)
+CONFIG = json.loads((ROOT / "config/brand-assets.json").read_text())
+SOURCE = ROOT / CONFIG["source"]
+CROP = tuple(CONFIG["sourceCrop"])
+OUTPUTS = CONFIG["outputs"]
+ICC_PROFILE = Image.open(SOURCE).info.get("icc_profile")
+PNG_PROFILE = PngImagePlugin.PngInfo()
+if not ICC_PROFILE:
+    PNG_PROFILE.add(b"sRGB", b"\x00")
 
 
 def png(image):
     output = BytesIO()
-    image.save(output, format="PNG", optimize=True)
+    image.save(output, format="PNG", optimize=True, icc_profile=ICC_PROFILE, pnginfo=PNG_PROFILE)
     return output.getvalue()
 
 
 def panel(art, size, height):
     scaled = art.resize((round(art.width * height / art.height), height), Image.Resampling.LANCZOS)
-    result = Image.new("RGB", (size, size), "white")
+    result = Image.new("RGB", (size, size), CONFIG["backgroundColor"])
     result.paste(scaled, ((size - scaled.width) // 2, (size - scaled.height) // 2))
     return result
 
 
 def generate():
+    assert hashlib.sha256(SOURCE.read_bytes()).hexdigest() == CONFIG["sourceSha256"], "Source changed: review the approved logo and crop before generating"
     source = Image.open(SOURCE).convert("RGB")
+    assert list(source.size) == CONFIG["sourceSize"], "Unexpected source dimensions"
     art = source.crop(CROP)
-    icon = panel(art, 1024, 900)
+    icon = panel(art, 1024, CONFIG["iconArtworkHeight"])
     # All coloured logo pixels fit inside Android's central 66/108 safe circle.
-    foreground = panel(art, 1024, 502).convert("RGBA")
+    foreground = panel(art, 1024, CONFIG["adaptiveArtworkHeight"]).convert("RGBA")
     images = {
-        "assets/images/icon.png": icon,
-        "assets/images/adaptive-foreground.png": foreground,
-        "assets/images/splash-mark.png": icon,
-        "assets/images/favicon.png": icon.resize((64, 64), Image.Resampling.LANCZOS),
-        "store/google-play/icon-512.png": icon.resize((512, 512), Image.Resampling.LANCZOS).convert("RGBA"),
+        OUTPUTS["icon"]: icon,
+        OUTPUTS["adaptiveForeground"]: foreground,
+        OUTPUTS["splash"]: icon,
+        OUTPUTS["favicon"]: icon.resize((64, 64), Image.Resampling.LANCZOS),
+        OUTPUTS["playStore"]: icon.resize((512, 512), Image.Resampling.LANCZOS).convert("RGBA"),
     }
+    images[OUTPUTS["playStoreAlias"]] = images[OUTPUTS["playStore"]]
     outputs = {name: png(image) for name, image in images.items()}
     manifest = {
         "source": str(SOURCE.relative_to(ROOT)),
         "sourceSha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
         "sourceSize": list(source.size),
         "sourceCrop": list(CROP),
-        "operations": "Crop outer white margin, proportional Lanczos resize, centre on white; no redraw/recolour/background removal",
+        "operations": "Approved full source rectangle, proportional Lanczos resize, centre on configured background; no redraw/recolour/background removal",
         "adaptiveSafeCircleDiameter": "66/108 of 1024 px; coloured pixels verified by --check",
         "outputs": {name: {"size": list(images[name].size), "mode": images[name].mode, "sha256": hashlib.sha256(data).hexdigest()} for name, data in outputs.items()},
     }

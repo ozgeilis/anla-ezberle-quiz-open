@@ -1,5 +1,7 @@
 # Türkçe App Store taslağı
 
+> Tarihsel hazırlık kaydıdır. 0.1.2 ad/logo teslimi için `store/app-store/tr-TR/listing.json` ve `docs/ios011-integration-20261126/BRANDING-012.md` esas alınır; aşağıdaki geçmiş Console sonuçları değiştirilmedi.
+
 3 Kasım 2026: ad, alt başlık ve kategoriler App Information ekranında **Saved**
 olarak doğrulandı. Sürüm taslağında açıklama, tanıtım, anahtar kelimeler, destek
 URL'si, telif, 0.1.0 sürümü ve manuel yayın seçimi kaydedildi. Mevcut Build 4

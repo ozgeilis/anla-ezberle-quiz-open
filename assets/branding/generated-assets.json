@@ -1,17 +1,17 @@
 {
-  "source": "assets/branding/approved-education-logo.png",
-  "sourceSha256": "02e1ba008ec93291fb60829ac8daef676b0ef87f2cf1ede4915fbd4ce8500331",
+  "source": "assets/branding/islami-quiz-logo.png",
+  "sourceSha256": "2cd7ffd67f3173fc049ec545ecb8764259d39dadad02f0f682893320b27cbd2a",
   "sourceSize": [
     1254,
     1254
   ],
   "sourceCrop": [
-    199,
-    151,
-    1078,
-    1136
+    0,
+    0,
+    1254,
+    1254
   ],
-  "operations": "Crop outer white margin, proportional Lanczos resize, centre on white; no redraw/recolour/background removal",
+  "operations": "Approved full source rectangle, proportional Lanczos resize, centre on configured background; no redraw/recolour/background removal",
   "adaptiveSafeCircleDiameter": "66/108 of 1024 px; coloured pixels verified by --check",
   "outputs": {
     "assets/images/icon.png": {
@@ -20,7 +20,7 @@
         1024
       ],
       "mode": "RGB",
-      "sha256": "cf7885b10739d49130a8b0450ec06b9976191b7c3de659288a34c60707523b64"
+      "sha256": "4ef879c583a64d7ce6ef092fd2920dccc21862c7dabc198535e42008b672d6fe"
     },
     "assets/images/adaptive-foreground.png": {
       "size": [
@@ -28,7 +28,7 @@
         1024
       ],
       "mode": "RGBA",
-      "sha256": "986b7fb5ae9273bc260f38f252d8026b42e1c90e63db620edb2fe3bf4b54554e"
+      "sha256": "40c07d62f45266985f136e36e1e3eac00eaea1729600b5870ed9ea03bf92c4e0"
     },
     "assets/images/splash-mark.png": {
       "size": [
@@ -36,7 +36,7 @@
         1024
       ],
       "mode": "RGB",
-      "sha256": "cf7885b10739d49130a8b0450ec06b9976191b7c3de659288a34c60707523b64"
+      "sha256": "4ef879c583a64d7ce6ef092fd2920dccc21862c7dabc198535e42008b672d6fe"
     },
     "assets/images/favicon.png": {
       "size": [
@@ -44,7 +44,7 @@
         64
       ],
       "mode": "RGB",
-      "sha256": "50d58f550573a5a8aecbe6ec2b80eff202d790c698fe5d8629e664b616e5fc90"
+      "sha256": "f860102bd626fe7237e750579e11984b9c6e959419bba353159ef5db07e08cc4"
     },
     "store/google-play/icon-512.png": {
       "size": [
@@ -52,7 +52,15 @@
         512
       ],
       "mode": "RGBA",
-      "sha256": "1ee28c9464b60b30989060bfd7d4cdefddf32acd337252b0b0f303a23f3a9537"
+      "sha256": "220d45fbad08f0b6ebf962dd3ae18b17e9487ad0df985b32ab3177e4d636818d"
+    },
+    "assets/store/play-store-icon-512.png": {
+      "size": [
+        512,
+        512
+      ],
+      "mode": "RGBA",
+      "sha256": "220d45fbad08f0b6ebf962dd3ae18b17e9487ad0df985b32ab3177e4d636818d"
     }
   }
 }

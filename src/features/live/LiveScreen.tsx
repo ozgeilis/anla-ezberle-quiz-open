@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import { useAudioObservation } from "../audio/useAudioObservation";
 import { liveAudioCues } from "../audio/events";
 import React, { useEffect, useState } from "react";
@@ -259,7 +260,7 @@ function LiveController({
       : `anla-ezberle-quiz://live?code=${room.code}`
     : "";
   const inviteText = room
-    ? `Anla & Ezberle'de birlikte yarışalım! Oda kodu: ${room.code}\n${invite}`
+    ? `${brand.title}’de birlikte yarışalım! Oda kodu: ${room.code}\n${invite}`
     : "";
   const share = async () => {
     try {

@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import { useSound } from "../audio/SoundProvider";
 import { stageDefinition } from "../../domain/game/stages";
 import React, { useEffect, useState } from "react";
@@ -67,7 +68,7 @@ export function ResultsScreen() {
     saved && progress(data.games).level > progress(previous).level;
   const repeatedSet = awardedXp === 0 && summary.correct > 0;
   const isRecord = saved && summary.score > progress(previous).best;
-  const message = `Anla & Ezberle’de ${summary.score} puan kazandım! ${summary.correct}/${total} doğru · ${formatTime(summary.seconds)}. Bilgini sına, öğren, ilerle!`;
+  const message = `${brand.title}’de ${summary.score} puan kazandım! ${summary.correct}/${total} doğru · ${formatTime(summary.seconds)}. Bilgini sına, öğren, ilerle!`;
   const replay = () => {
     const started = start(
       result.mode === "daily" ? "mixed" : result.mode,

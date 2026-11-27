@@ -1,19 +1,21 @@
 # App Store Connect Türkçe içerik taslağı
 
+> Tarihsel hazırlık kaydıdır. 0.1.2 ad/logo teslimi için `store/app-store/tr-TR/listing.json` ve `docs/ios011-integration-20261126/BRANDING-012.md` esas alınır; aşağıdaki geçmiş Console sonuçları değiştirilmedi.
+
 Connect uygulama adı/Türkçe ana dil ve TestFlight beta açıklaması/feedback/gizlilik URL kaydedildi. Aşağıdaki tam App Store açıklaması, alt başlık, kategori ve review notları henüz gönderilmedi veya yayımlanmadı. Yalnız Türkçe desteklenir. Apple'a gönderim öncesi gerçek build ve erişilebilir çevrimiçi özelliklerle yeniden karşılaştırılmalı.
 
-| Alan | Metin |
-|---|---|
-| Ad (30 karakter sınırı) | Anla & Ezberle: İslami Quiz |
-| Alt başlık (30 karakter sınırı) | Bilgini sına, öğren ve ilerle |
-| Tanıtım metni | İslami bilgilerini kısa yarışmalarla pekiştir. Cevapların açıklamalarını incele, günlük yarışmaya katıl ve kendi ilerlemeni takip et. |
-| Anahtar kelimeler (100 karakter sınırı) | islami,bilgi,yarışma,quiz,kuran,dua,peygamber,tarih,ahlak,öğrenme |
-| Destek URL | https://anla-ezberle-quiz.vercel.app/settings/help |
-| Gizlilik URL | https://anla-ezberle-quiz.vercel.app/privacy |
-| Destek e-postası | kovynelstudio@gmail.com |
-| Birincil kategori | Oyunlar / Bilgi Yarışması |
-| İkincil kategori önerisi | Eğitim |
-| Telif | 2026 Kovynel Studio — hukuki yayıncı adı hesap sahibiyle teyit edilecek |
+| Alan                                    | Metin                                                                                                                                 |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Ad (30 karakter sınırı)                 | Anla & Ezberle: İslami Quiz                                                                                                           |
+| Alt başlık (30 karakter sınırı)         | Bilgini sına, öğren ve ilerle                                                                                                         |
+| Tanıtım metni                           | İslami bilgilerini kısa yarışmalarla pekiştir. Cevapların açıklamalarını incele, günlük yarışmaya katıl ve kendi ilerlemeni takip et. |
+| Anahtar kelimeler (100 karakter sınırı) | islami,bilgi,yarışma,quiz,kuran,dua,peygamber,tarih,ahlak,öğrenme                                                                     |
+| Destek URL                              | https://anla-ezberle-quiz.vercel.app/settings/help                                                                                    |
+| Gizlilik URL                            | https://anla-ezberle-quiz.vercel.app/privacy                                                                                          |
+| Destek e-postası                        | kovynelstudio@gmail.com                                                                                                               |
+| Birincil kategori                       | Oyunlar / Bilgi Yarışması                                                                                                             |
+| İkincil kategori önerisi                | Eğitim                                                                                                                                |
+| Telif                                   | 2026 Kovynel Studio — hukuki yayıncı adı hesap sahibiyle teyit edilecek                                                               |
 
 ## Tam açıklama
 

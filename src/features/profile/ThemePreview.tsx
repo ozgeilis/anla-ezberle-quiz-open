@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import React from "react";
 import { Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
@@ -77,7 +78,7 @@ export function ThemePreview({
               textShadowRadius: 2,
             }}
           >
-            Anla & Ezberle
+            {brand.title}
           </Text>
         </View>
         <View
@@ -136,10 +137,10 @@ export function ThemePreview({
           <Scene />
         </View>
         <Text style={{ fontFamily: fonts.heavy, fontSize: 15, color: c.white }}>
-          Anla &
+          {brand.titleLines[0]}
         </Text>
         <Text style={{ fontFamily: fonts.heavy, fontSize: 24, color: c.gold }}>
-          Ezberle
+          {brand.titleLines[1]}
         </Text>
         <Text
           style={{ ...caption, color: c.white, fontSize: 9, marginBottom: 9 }}

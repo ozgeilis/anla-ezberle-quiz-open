@@ -208,9 +208,10 @@ function SettingsContent({
       {section === "help" && (
         <Card style={{ gap: 12 }}>
           <Txt size={19} weight="heavy">
-            Anla & Ezberle
+            {brand.title}
           </Txt>
           <Txt>{brand.developer}</Txt>
+          <Txt size={12}>{brand.legacyTitle} bilgi oyunu</Txt>
           <Txt size={13}>
             Kategori ve zorluğu seç, yarışmanı tamamla. Çevrimiçi oyun için
             doğrulanmış hesabınla giriş yap. Hesap silme ve gizlilik bilgileri

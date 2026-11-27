@@ -1,5 +1,10 @@
 # iOS 0.1.1 entegrasyon hazırlığı — 26 Kasım 2026
 
+**27 Kasım — 0.1.2 isim/logo:** İslami Quiz adı, sahibinin paylaştığı yeni logo,
+merkezi asset export ve mağaza metni taslakları aynı dalda hazırlandı.
+[Uygulanan alanlar, exportlar ve test sınırları](BRANDING-012.md).
+Canlı mağaza değişikliği, yeni IPA ve bu ad/ikonla fiziksel kabul yapılmadı.
+
 **Yeni iOS 0.1.2 reklam düzeltmesi:** `6816a42` — kapanış sonrası yeni
 interstitial nesnesi/preload, yanıtsız yüklemeden kurtarma. 37 hedefli test,
 TypeScript ve lint geçti; aynı oturumda beş tur SDK olay fixture'ıyla sınandı.

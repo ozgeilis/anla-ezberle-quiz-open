@@ -127,7 +127,7 @@ export function HomeTitlePlaque({ dense = false }: { dense?: boolean }) {
           textShadowRadius: 1,
         }}
       >
-        Anla &
+        {brand.titleLines[0]}
       </Txt>
       {dense || fontScale > 1.2 ? (
         <Txt
@@ -136,13 +136,13 @@ export function HomeTitlePlaque({ dense = false }: { dense?: boolean }) {
           color={palette.goldLight}
           style={{ textAlign: "center" }}
         >
-          Ezberle
+          {brand.titleLines[1]}
         </Txt>
       ) : (
         <View
           accessible
           accessibilityRole="header"
-          accessibilityLabel="Ezberle"
+          accessibilityLabel={brand.titleLines[1]}
           style={{ width: "100%", height: compact ? 54 : 60 }}
         >
           <Svg
@@ -171,7 +171,7 @@ export function HomeTitlePlaque({ dense = false }: { dense?: boolean }) {
               stroke="#AD4B00"
               strokeWidth="2.5"
             >
-              Ezberle
+              {brand.titleLines[1]}
             </SvgText>
             <SvgText
               x="200"
@@ -185,7 +185,7 @@ export function HomeTitlePlaque({ dense = false }: { dense?: boolean }) {
               stroke="#FFE39B"
               strokeWidth="0.7"
             >
-              Ezberle
+              {brand.titleLines[1]}
             </SvgText>
           </Svg>
         </View>

@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import {
   beginAppleDeletion,
   proveAppleDeletion,
@@ -165,7 +166,7 @@ function AccountDeletionForm({
     }
   };
   return (
-    <Page title="Hesabımı Sil" subtitle="Anla & Ezberle · Kovynel Studio">
+    <Page title="Hesabımı Sil" subtitle={`${brand.title} · ${brand.developer}`}>
       <Card style={{ gap: 14 }}>
         <Txt size={20} weight="heavy">
           Hesabın üzerindeki kontrol sende
@@ -241,14 +242,16 @@ function AccountDeletionForm({
           />
         )}
         <Txt size={12}>
-          {hasAppleIdentity ? "Apple hesabını silerken iPhone uygulamasında yeniden Apple doğrulaması gerekir. Diğer cihazlarda destek adresimizden yardım isteyebilirsin." : "E-posta veya Google hesabını bu sayfadan da silebilirsin. İşlem durumu sunucu yanıtından sonra gösterilir."}
+          {hasAppleIdentity
+            ? "Apple hesabını silerken iPhone uygulamasında yeniden Apple doğrulaması gerekir. Diğer cihazlarda destek adresimizden yardım isteyebilirsin."
+            : "E-posta veya Google hesabını bu sayfadan da silebilirsin. İşlem durumu sunucu yanıtından sonra gösterilir."}
         </Txt>
         <Button
           title="Destek üzerinden silme talebi"
           variant="outline"
           onPress={() =>
             void Linking.openURL(
-              "mailto:kovynelstudio@gmail.com?subject=Anla%20%26%20Ezberle%20hesap%20silme%20talebi",
+              `mailto:kovynelstudio@gmail.com?subject=${encodeURIComponent(`${brand.title} hesap silme talebi`)}`,
             ).catch(() =>
               setMessage(
                 "E-posta uygulaması açılamadı. kovynelstudio@gmail.com adresine yazabilirsin; parola veya kod gönderme.",

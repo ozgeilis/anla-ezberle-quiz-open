@@ -1,3 +1,4 @@
+import { brand } from "../../branding/identity";
 import React, { useState } from "react";
 import { Linking, Switch, View } from "react-native";
 import { useRouter } from "expo-router";
@@ -156,7 +157,7 @@ export function NotificationSettings() {
             onPress={() =>
               void Linking.openSettings().catch(() =>
                 setSystemError(
-                  "Telefon Ayarları → Uygulamalar → Anla & Ezberle → Bildirimler yolundan izin verebilirsin.",
+                  `Telefon Ayarları → Uygulamalar → ${brand.title} → Bildirimler yolundan izin verebilirsin.`,
                 ),
               )
             }

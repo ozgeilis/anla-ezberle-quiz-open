@@ -18,6 +18,7 @@ const routes = [
   "/online/inbox",
   "/online/invitations",
 ];
+const { expo } = JSON.parse(readFileSync("app.json", "utf8"));
 let home;
 for (const path of routes) {
   const response = await fetch(new URL(path, origin), { redirect: "manual" });
@@ -26,9 +27,7 @@ for (const path of routes) {
   assert(response.headers.get("x-robots-tag")?.includes("noindex"));
   assert.equal(response.headers.get("referrer-policy"), "no-referrer");
   const html = await response.text();
-  assert(
-    html.includes("Anla &amp; Ezberle") || html.includes("Anla & Ezberle"),
-  );
+  assert(html.includes(expo.web.name));
   assert(!/vercel.*authentication required/i.test(html));
   if (path === "/") home = html;
 }

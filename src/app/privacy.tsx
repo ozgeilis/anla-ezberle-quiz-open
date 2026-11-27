@@ -1,3 +1,4 @@
+import { brand } from "../branding/identity";
 import React from "react";
 import { Linking } from "react-native";
 import { useRouter } from "expo-router";
@@ -8,7 +9,7 @@ export default function PrivacyScreen() {
   return (
     <Page
       title="Gizlilik Politikası"
-      subtitle="Anla & Ezberle · Kovynel Studio"
+      subtitle={`${brand.title} · ${brand.developer}`}
     >
       <Card style={{ gap: 14 }}>
         <Txt weight="heavy" size={20}>
@@ -16,10 +17,10 @@ export default function PrivacyScreen() {
         </Txt>
         <Txt size={12}>Son güncelleme: 9 Kasım 2026</Txt>
         <Txt>
-          Anla & Ezberle hizmetini Kovynel Studio sunar. Gizlilik, erişim,
-          düzeltme ve hesap silme talepleri için kovynelstudio@gmail.com
-          adresine ulaşabilirsin. Parola, doğrulama kodu veya oturum anahtarı
-          göndermeni istemeyiz.
+          {brand.title} ({brand.legacyTitle}) hizmetini {brand.developer} sunar.
+          Gizlilik, erişim, düzeltme ve hesap silme talepleri için
+          kovynelstudio@gmail.com adresine ulaşabilirsin. Parola, doğrulama kodu
+          veya oturum anahtarı göndermeni istemeyiz.
         </Txt>
         <Txt weight="heavy">Cihazındaki veriler</Txt>
         <Txt>
